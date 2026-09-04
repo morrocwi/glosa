@@ -1,0 +1,32 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: H3
+source_label: "Tan et al. (2025) — Too Consistent to Detect: A Study of Self-Consistent Errors in LLMs (EMNLP 2025, DOI 10.18653/v1/2025.emnlp-main.238)"
+how_it_sees_the_problem: >-
+  Frames the problem as a category of error invisible to same-model repeated sampling
+  ("self-consistency" checking): a "self-consistent error" is one the SAME model reproduces
+  reliably across many stochastic samples of itself, so majority-voting over its own outputs
+  cannot catch it -- structurally identical to the concern H3 raises about same-vendor re-check.
+what_it_separates: >-
+  Separates "inconsistent errors" (shrink as model scale grows, and are catchable by resampling
+  the same model) from "self-consistent errors" (stay stable or grow with scale, and resist all
+  four mainstream single-model detection methods tested) -- finer than H3's coarse I0/I1 vs I3
+  split, because it locates WHY same-source checking fails (the error is stable within-model, not
+  merely noisy) rather than treating "same vendor" as a monolithic category.
+what_it_assumes: >-
+  Assumes hidden-state signals from an external verifier LLM are a valid detection channel;
+  assumes findings on the three tested LLM families generalize to other model families and to
+  non-factual-QA task types (this paper's own domain is factual QA, not claim-card field review).
+agrees_with_h: "YES"
+disagrees_with_h: UNDETERMINED
+what_it_would_say_against_us: >-
+  Its own limitation, read honestly: the paper demonstrates that a DIFFERENT model's hidden states
+  help detect a same-model-persistent error, but "different model" here is an architecture-level
+  swap for a detection PROBE, not the vendor-level, session-level "different checker re-runs the
+  whole review" setup H3 describes -- so it supports the underlying mechanism (self-consistent
+  errors differ across models) without directly testing H3's operationalization (Q3/Q4 field-level
+  disclosure catch-rate by a different vendor's full review process).
+citation_card: cite-toohconsistent-003
+stance: "YES"
+verified:
+  metadata_verified: true
+  claim_match_verified: true

@@ -1,51 +1,52 @@
 $schema: citation_card.schema.json
 id: cite-rigour-without-infrastructure-009
 claim_ref: hypothesis-H2
-
 identifier:
   kind: OFFICIAL_URL
-  value: "https://thestandard.co/thailand-open-science-unlock-ai-big-data-platform/"
-
+  value: https://thestandard.co/thailand-open-science-unlock-ai-big-data-platform/
 fetch_status: FETCHED
-fetched_at: "2026-09-04"
-
+fetched_at: '2026-09-04'
 metadata_verified: true
-metadata_verified_by: "mechanical:webfetch"
-metadata_verified_at: "2026-09-04"
-
+metadata_verified_by: mechanical:webfetch
+metadata_verified_at: '2026-09-04'
 claim_match_verified: true
-claim_match_verified_by: "ai_route:same-session (I1)"
-claim_match_verified_at: "2026-09-04"
-
-exact_passage: >-
-  "ให้งานวิจัยที่รัฐลงทุน ไม่ถูกเก็บอยู่ในห้องสมุดหรือฐานข้อมูลปิดอีกต่อไป แต่ \"เปิด\" ให้ประชาชน
-  ภาคธุรกิจ และสื่อ เข้าถึงและนำไปใช้ได้จริง"
-page_or_locator: "thestandard.co, article body, byline THE STANDARD TEAM, dated 2025-11-17, as fetched 2026-09-04"
-
+claim_match_verified_by: ai_route:same-session (I1)
+claim_match_verified_at: '2026-09-04'
+exact_passage: '"ให้งานวิจัยที่รัฐลงทุน ไม่ถูกเก็บอยู่ในห้องสมุดหรือฐานข้อมูลปิดอีกต่อไป แต่ \"เปิด\"
+  ให้ประชาชน ภาคธุรกิจ และสื่อ เข้าถึงและนำไปใช้ได้จริง"'
+page_or_locator: thestandard.co, article body, byline THE STANDARD TEAM, dated 2025-11-17, as fetched
+  2026-09-04
 scope: SUPPORTS_GENERAL_CLAIM_ONLY
-
 evidence_tier: Dr
-
 independence_class: I1
-
-who_verified: "ai_route:same-session (I1)"
+who_verified: ai_route:same-session (I1)
 verification_method: MANUAL_READ
-
 status: METADATA_OK
-
 xenon_ledger_ref: null
-
-disclosure: >-
-  Thai-language news report (grey/community: journalism, not peer-reviewed), THE STANDARD,
-  2025-11-17, on the "Thailand Open Science for ALL" state-research-openness initiative led by
-  Thailand's National Research Council/Science Research and Innovation office. Only loosely
-  supports H2: it is about making state-funded research openly *accessible* to non-institutional
-  readers (public/business/media), not about whether an individual claim's own recorded
-  structure can substitute for institutional credentialing of that claim -- logged as
-  SUPPORTS_GENERAL_CLAIM_ONLY (general openness-beyond-institution climate in Thailand), not a
-  direct test of H2. independence_class I1 (same session AI) -- status METADATA_OK only.
-
+disclosure: 'Thai-language news report (grey/community: journalism, not peer-reviewed), THE STANDARD,
+  2025-11-17, on the "Thailand Open Science for ALL" state-research-openness initiative led by Thailand''s
+  National Research Council/Science Research and Innovation office. Only loosely supports H2: it is about
+  making state-funded research openly *accessible* to non-institutional readers (public/business/media),
+  not about whether an individual claim''s own recorded structure can substitute for institutional credentialing
+  of that claim -- logged as SUPPORTS_GENERAL_CLAIM_ONLY (general openness-beyond-institution climate
+  in Thailand), not a direct test of H2. independence_class I1 (same session AI) -- status METADATA_OK
+  only.'
 superseded_by: null
-notes: >-
-  Diversity: language=th, source_type=grey_literature (news), geography=Thailand,
-  search_route="web search: วิทยาศาสตร์เปิด Open Science นโยบายไทย ความโปร่งใส งานวิจัย สกสว".
+notes: 'Diversity: language=th, source_type=grey_literature (news), geography=Thailand, search_route="web
+  search: วิทยาศาสตร์เปิด Open Science นโยบายไทย ความโปร่งใส งานวิจัย สกสว".'
+citation_card_id: cite-rigour-without-infrastructure-009
+identifier_kind: OFFICIAL_URL
+claim_match_verification_route: NOT_YET
+retraction_check: UNCHECKED
+version_status: NOT_APPLICABLE
+dialogue_table_stance: orthogonal
+diversity:
+  language: th
+  discipline_or_tradition: science policy journalism
+  source_type: grey_literature
+  search_route_or_database: 'web search: วิทยาศาสตร์เปิด Open Science นโยบายไทย ความโปร่งใส งานวิจัย สกสว'
+  geography_or_institution: Thailand
+  venue_quality_index:
+    index_name: null
+    value: null
+    date_read: null

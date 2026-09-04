@@ -1,0 +1,35 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: H3
+source_label: "John, Singh & Panachakel (2026) — Can Legal AI Know When It Is Wrong? And Do Students Know When It Is? (arXiv:2608.21089, Sunrise University Rajasthan India + TU Dublin Ireland)"
+how_it_sees_the_problem: >-
+  Frames it through the lens of Indian legal practice: does an AI system know it is wrong
+  (confidence calibration), and separately, do the HUMAN checkers (law students) using it know
+  when it is wrong? Names the specific failure "inertia of confidence" -- high-confidence wrong
+  answers.
+what_it_separates: >-
+  Separates AI-system confidence calibration (measured per vendor: ChatGPT 6.7% high-confidence-
+  error-rate, Perplexity 15.0%, Meta AI 31.7%, all on the SAME 60 cases) from human-checker
+  verification skill (measured via a 380-student survey) -- this is itself a form of cross-system
+  comparison (three different vendors' error profiles on identical inputs differ by nearly 5x),
+  though the study's own frame is human-training-outcome, not cross-vendor-review-catch-rate.
+what_it_assumes: >-
+  Assumes self-reported verification-score survey items track actual verification behavior;
+  assumes 60 Indian contract-law cases generalize to broader legal-AI reliability; assumes prior
+  "encounters with fabricated citations" causes the higher self-reported verification score
+  rather than merely correlating with it (a causal claim the survey design cannot itself settle).
+agrees_with_h: UNDETERMINED
+disagrees_with_h: "NO"
+what_it_would_say_against_us: >-
+  The paper's actual lever for catching AI error is human EXPERIENCE/TRAINING (students who
+  previously hit a fabricated citation verify better afterward), not a different AI VENDOR
+  checking the first AI's output -- so even though the three-vendor error-rate spread (6.7% vs
+  15.0% vs 31.7%) is consistent with "different vendors miss different things" (a premise H3
+  needs), the paper's own causal story for improved catch rate is human learning-by-failure, which
+  could be read as a competing, cheaper mechanism than cross-vendor AI review for reaching the
+  same goal -- undermining H3's implicit "cross-vendor AI review is the/a preferred lever" framing
+  without undermining H3's narrower literal claim about catch RATE.
+citation_card: cite-legalai-india-006
+stance: UNDETERMINED
+verified:
+  metadata_verified: true
+  claim_match_verified: true

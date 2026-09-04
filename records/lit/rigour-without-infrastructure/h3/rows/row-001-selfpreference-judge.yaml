@@ -1,0 +1,28 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: H3
+source_label: "Wataoka, Takahashi & Ri (2024/2025) — Self-Preference Bias in LLM-as-a-Judge (arXiv:2410.21819)"
+how_it_sees_the_problem: >-
+  Frames the problem as a measurement gap: LLM judges systematically favor outputs more familiar
+  to them (lower perplexity), including but not limited to their own outputs -- a perplexity-based
+  bias, not narrowly "self vs other".
+what_it_separates: >-
+  Separates self-preference bias (judge favors the SAME model's own outputs) from a broader
+  familiarity/perplexity bias (judge favors LOW-PERPLEXITY outputs generally, whoever produced
+  them) -- finer-grained than H3's own same-vendor/cross-vendor split, since it locates the
+  mechanism in perplexity rather than in vendor identity per se.
+what_it_assumes: >-
+  Assumes GPT-4-style evaluators are representative enough of "an LLM judge" generally; assumes
+  perplexity as measured on the judge's own tokenizer is a valid proxy for "familiarity."
+agrees_with_h: UNDETERMINED
+disagrees_with_h: "NO"
+what_it_would_say_against_us: >-
+  If the bias is really about perplexity/familiarity rather than vendor identity, then a
+  cross-vendor checker whose training corpus happens to overlap heavily with the maker-vendor's
+  outputs (e.g. via distillation, shared pretraining data, or convergent style) might show LESS
+  benefit than H3 predicts -- the effective independent variable may not be "different vendor" but
+  "different familiarity profile," which does not always track vendor boundaries.
+citation_card: cite-selfpreference-judge-001
+stance: UNDETERMINED
+verified:
+  metadata_verified: true
+  claim_match_verified: true

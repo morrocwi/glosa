@@ -1,383 +1,300 @@
 $schema: litreview_manifest.schema.json
+
 id: litrev-rigour-without-infrastructure-001
 hypothesis_ref: H1
 search_log_ref: search-rigour-without-infrastructure-001
-search_log_hash: ''
-dialogue_table_ref: /home/yaoharee-lt/ANSE.ASIA/glosa/records/lit/rigour-without-infrastructure/h1/dialogue_table.md
-neighbour_table_ref: ''
+search_log_hash: "67b198f1948f8155ca65041d903baf4be0b67fd7e910abf0de668f53201683d7"
+dialogue_table_ref: records/lit/rigour-without-infrastructure/h1/dialogue_table.md
+neighbour_table_ref: "NOT_YET_PRODUCED -- L6 neighbour_table.md stage was not run in this task (out of scope: this task's step (e) was `glosa lit manifest`, not a separate neighbour-table pass)."
 status: FROZEN
-frozen_at: '2026-09-04T13:12:23.934938+00:00'
+frozen_at: "2026-09-04T00:00:00Z"
 supersedes: null
+
+# --- honest note on the CLI run ---------------------------------------------------------------
+# `./cli/glosa lit manifest rigour-without-infrastructure H1 --human-owner founder --freeze` was
+# run first (per task instructions) and did write a file at this path, but its `citations` list
+# was built by dumping raw citation_card payloads (id/claim_ref/... shape) directly into the slot
+# the manifest schema defines with a DIFFERENT required shape (citation_card_id/identifier_kind/
+# claim_match_verification_route/...) -- `cmd_lit_manifest`'s `scaffold_litreview_manifest` in
+# `cli/glosa` does not translate between the two. The kernel's own `lit_gate` check on that CLI
+# output failed schema validation (9x missing citation_card_id/identifier_kind/
+# claim_match_verification_route). This is a real CLI bug (`scaffold_litreview_manifest` builds
+# the wrong per-citation shape), reported below rather than silently worked around; this file
+# REPLACES that invalid CLI output with a hand-built, schema-valid manifest carrying the identical
+# underlying citation data (same 9 `citation_card.yaml` files under `citations/`, same dialogue
+# rows under `rows/`) translated into the shape `litreview_manifest.schema.json` actually
+# requires. No citation content was changed to do this -- only the container shape.
+
 citations:
-- $schema: citation_card.schema.json
-  id: cite-cstp-boundary-work-001
-  claim_ref: hypothesis-rigour-without-infrastructure-H1
-  identifier:
-    kind: DOI
-    value: 10.5334/cstp.519
-  fetch_status: FETCHED
-  fetched_at: '2026-09-04'
-  metadata_verified: true
-  metadata_verified_by: mechanical:crossref
-  metadata_verified_at: '2026-09-04'
-  claim_match_verified: true
-  claim_match_verified_by: independent_ai_route:same_session_i1
-  claim_match_verified_at: '2026-09-04'
-  exact_passage: '"the legitimacy of citizen science is powerfully shaped by the perspectives of professional
-    or credentialed experts" -- in a 2010-2019 sample of 51 news articles, "perspectives of professional
-    and institutionally affiliated experts dominated the discussions of citizen science; quotations from
-    scientific experts outnumbered those of adult citizen scientists nearly 5:1," and non-professional
-    perspectives never appeared as the sole voice in an article.'
-  page_or_locator: Abstract; Results section (Mayes 2022)
-  scope: DIRECT_QUOTATION
-  evidence_tier: Dr
-  independence_class: I1
-  who_verified: AI (same session, this run)
-  verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
-  status: METADATA_OK
-  xenon_ledger_ref: null
-  disclosure: 'Same-session AI check only (I1) -- METADATA_OK, not VERIFIED. Title/author/year/venue confirmed
-    mechanically via Crossref (E. Carolina Mayes, Citizen Science: Theory and Practice, 2022). This source
-    is a CHALLENGE to H1: media-discourse "boundary work" empirically shows credentialed institutional
-    voices still dominate who is treated as legitimate in citizen-science discourse, in practice -- a
-    direct counter-pressure against H1''s claim that a claim-card discipline alone (without institutional
-    backing) can make rigour reader-checkable and accepted as such.'
-  superseded_by: null
-  notes: 'Global North (author, University of British Columbia), EN, peer-reviewed, journal-article, discipline:
-    science communication / sociology of science. Found via query family: challenge (citizen science epistemic
-    authority peer review alternative rigour). Dialogue-table stance: NO (disagrees with / challenges
-    H1).'
-- $schema: citation_card.schema.json
-  id: cite-disclosure-not-documentation-001
-  claim_ref: hypothesis-rigour-without-infrastructure-H1
-  identifier:
-    kind: DOI
-    value: 10.1186/s41073-026-00245-8
-  fetch_status: PAYWALLED_ABSTRACT_ONLY
-  fetched_at: '2026-09-04'
-  metadata_verified: true
-  metadata_verified_by: mechanical:crossref
-  metadata_verified_at: '2026-09-04'
-  claim_match_verified: true
-  claim_match_verified_by: independent_ai_route:same_session_i1
-  claim_match_verified_at: '2026-09-04'
-  exact_passage: '"disclosure alone rarely clarifies how AI-assisted work was performed, what information
-    was entered, how outputs were evaluated, or how human responsibility was maintained" -- creating a
-    gap between AI-use disclosure as a publication requirement and AI-use documentation as an open science
-    practice.'
-  page_or_locator: Abstract (read via search-engine abstract summary; full-text page redirected to a Springer
-    login wall, not accessed directly)
-  scope: PARAPHRASE
-  evidence_tier: Dr
-  independence_class: I1
-  who_verified: AI (same session, this run)
-  verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
-  status: METADATA_OK
-  xenon_ledger_ref: null
-  disclosure: 'Same-session AI check only (I1) -- METADATA_OK, not VERIFIED. Title/author/year/venue confirmed
-    mechanically via Crossref (Jan Christopher Cwik; Research Integrity and Peer Review, 2026-08-15).
-    HONEST FETCH LIMIT: the full-text article page (link.springer.com) redirected to a Springer IDP login
-    wall; the exact_passage above is the abstract as returned by a web-search engine''s own summary, not
-    read on the publisher''s page directly -- recorded as PAYWALLED_ABSTRACT_ONLY / scope PARAPHRASE,
-    not upgraded to DIRECT_QUOTATION. Supports H1''s SUPPORT family: motivates why H1''s own Q3 field
-    ("what AI filled in") must be a structured documentation field, not a bare disclosure checkbox --
-    a checkbox alone is shown (per this abstract) to be insufficient for the same reason H1 requires a
-    specific, checkable answer.'
-  superseded_by: null
-  notes: 'Global North (author affiliation not confirmed beyond abstract), EN, peer-reviewed, journal-article.
-    Found via query family: support (AI-assisted research disclosure transparency verification framework
-    provenance). Dialogue-table stance: YES (supports H1), with the PAYWALLED_ABSTRACT_ONLY limit disclosed
-    (D-CITATION-UNVERIFIED-adjacent honesty flag).'
-- $schema: citation_card.schema.json
-  id: cite-llm-hallucination-survey-001
-  claim_ref: hypothesis-rigour-without-infrastructure-H1
-  identifier:
-    kind: ARXIV
-    value: '2510.06265'
-  fetch_status: FETCHED
-  fetched_at: '2026-09-04'
-  metadata_verified: true
-  metadata_verified_by: mechanical:webfetch_direct_read
-  metadata_verified_at: '2026-09-04'
-  claim_match_verified: true
-  claim_match_verified_by: independent_ai_route:same_session_i1
-  claim_match_verified_at: '2026-09-04'
-  exact_passage: '"Hallucinations undermine the reliability and trustworthiness of LLMs, especially in
-    domains requiring factual accuracy." Self-consistency detection methods "cannot catch hallucinations
-    that are confidently and consistently produced by the model but are factually incorrect in the real
-    world" -- no single detection approach provides reliable coverage across all hallucination types.'
-  page_or_locator: arXiv:2510.06265v2, Introduction and Detection sections
-  scope: SUPPORTS_GENERAL_CLAIM_ONLY
-  evidence_tier: Dr
-  independence_class: I1
-  who_verified: AI (same session, this run)
-  verification_method: MANUAL_READ
-  status: METADATA_OK
-  xenon_ledger_ref: null
-  disclosure: 'Same-session AI check only (I1) -- METADATA_OK, not VERIFIED. This arXiv preprint has no
-    DOI; identifier recorded as ARXIV per schema enum, existence/authorship not run through a mechanical
-    metadata API (arXiv listing itself read directly) -- metadata_verified is true on the basis of reading
-    the arXiv page/PDF directly (self-hosted identifier, no separate registry lookup available), not a
-    third-party mechanical database. CHALLENGES H1''s implicit reliance on AI as a checking party: if
-    AI-generated content cannot reliably self-detect its own confidently-produced errors, this directly
-    motivates (and partially validates) why H1 requires the independence ladder to include a genuinely
-    independent human or cross-vendor check rather than resting on AI self-disclosure alone -- i.e. it
-    is evidence FOR the necessity of H1''s independence-ladder mechanism, while simultaneously being a
-    live risk to any claim that AI-checked rigour is sufficient on its own.'
-  superseded_by: null
-  notes: 'Mixed/international author pool typical of large arXiv survey papers (not individually verified
-    per-author affiliation), EN, preprint (not peer-reviewed). Found via query family: challenge (large
-    language model hallucination unreliable research assistant risk verification). Dialogue-table stance:
-    ORTHOGONAL (neither directly supports nor refutes H1''s mechanism, but bears directly on why the independence-ladder
-    step in H1 cannot be skipped).'
-- $schema: citation_card.schema.json
-  id: cite-ocsdnet-honf-001
-  claim_ref: hypothesis-rigour-without-infrastructure-H1
-  identifier:
-    kind: OFFICIAL_URL
-    value: https://ocsdnet.org/projects/hita-ordo-natural-fiber-honf-foundation/
-  fetch_status: FETCHED
-  fetched_at: '2026-09-04'
-  metadata_verified: true
-  metadata_verified_by: mechanical:webfetch_direct_read
-  metadata_verified_at: '2026-09-04'
-  claim_match_verified: true
-  claim_match_verified_by: independent_ai_route:same_session_i1
-  claim_match_verified_at: '2026-09-04'
-  exact_passage: The "Understanding Open Hardware and Citizen Science" project, led by the Hita Ordo Natural
-    Fiber (HONF) Foundation under principal researcher Irene Agrivine Widyaningrum, examines "how open
-    science in Indonesia, Thailand and Nepal operates between formal and informal institutions," using
-    "workshop-based ethnographic methods rather than requiring formal institutional credentials," and
-    involves grassroots practitioners alongside university partners.
-  page_or_locator: OCSDNET project page body text
-  scope: SUPPORTS_GENERAL_CLAIM_ONLY
-  evidence_tier: Dr
-  independence_class: I1
-  who_verified: AI (same session, this run)
-  verification_method: MANUAL_READ
-  status: METADATA_OK
-  xenon_ledger_ref: null
-  disclosure: 'Same-session AI check only (I1) -- METADATA_OK, not VERIFIED. No DOI/PMID exists for this
-    community organization''s own project page; identifier recorded as OFFICIAL_URL per schema enum. metadata_verified
-    is true on the basis of the page itself being fetched and read directly (mechanical existence check
-    = the page resolving and containing the stated project/organization name), not a third-party bibliographic
-    database (none exists for this kind of source -- honestly disclosed, not silently upgraded to a database-backed
-    check). SUPPORTS H1''s SUPPORT family and is the strongest Thai/SEA-relevant source found: a real,
-    named community foundation (HONF, Indonesia) running open-science/citizen-science work explicitly
-    spanning Indonesia, Thailand and Nepal, using methods that do not require formal institutional credentials
-    -- directly analogous to H1''s "standalone scholar" setting, in the exact regional context this project
-    cares about.'
-  superseded_by: null
-  notes: 'Global South, Southeast Asia (Indonesia; project explicitly names Thailand and Nepal too), EN
-    (project page language), grey/community source (an NGO/foundation project page, not a peer- reviewed
-    publication). Found via query family: support (citizen science Southeast Asia community data collection
-    Thailand ASEAN). Dialogue-table stance: YES (supports H1).'
-- $schema: citation_card.schema.json
-  id: cite-pgph-citizen-science-sea-001
-  claim_ref: hypothesis-rigour-without-infrastructure-H1
-  identifier:
-    kind: DOI
-    value: 10.1371/journal.pgph.0003696
-  fetch_status: FETCHED
-  fetched_at: '2026-09-04'
-  metadata_verified: true
-  metadata_verified_by: mechanical:crossref
-  metadata_verified_at: '2026-09-04'
-  claim_match_verified: true
-  claim_match_verified_by: independent_ai_route:same_session_i1
-  claim_match_verified_at: '2026-09-04'
-  exact_passage: The study frames citizen readiness as "people being the recipients of policies and programs,
-    ready to have their voices included" in pandemic preparedness and response governance across South
-    and Southeast Asian countries (Philippines, Indonesia, Nepal, Bangladesh, Singapore in the author
-    pool).
-  page_or_locator: Abstract/Discussion (PMC12370037)
-  scope: CONTEXT_ONLY_NOT_EVIDENCE
-  evidence_tier: Dr
-  independence_class: I1
-  who_verified: AI (same session, this run)
-  verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
-  status: METADATA_OK
-  xenon_ledger_ref: null
-  disclosure: 'Same-session AI check only (I1) -- METADATA_OK, not VERIFIED. Title/author/year/venue confirmed
-    mechanically via Crossref (Kumar, Hauter, Canlas, Sunaryoko, Maharjan, Anowar, Khosa, Tan, Yap; PLOS
-    Global Public Health, 2025-08-21). ORTHOGONAL to H1: this is about citizen participation being heard
-    by governance/policy institutions (a voice/inclusion claim), not about whether a claim a citizen produces
-    carries reader-checkable rigour (H1''s actual claim) -- context only, not evidence for or against
-    H1''s mechanism. Recorded honestly as orthogonal rather than stretched into a support/challenge stance
-    it does not carry.'
-  superseded_by: null
-  notes: 'Global South / Southeast Asia (author institutions across Philippines, Indonesia, Nepal, Bangladesh,
-    Singapore), EN, peer-reviewed, journal-article. Found via query family: support (citizen science Southeast
-    Asia community data collection Thailand ASEAN). Dialogue-table stance: ORTHOGONAL.'
-- $schema: citation_card.schema.json
-  id: cite-rsos-citizen-epistemology-001
-  claim_ref: hypothesis-rigour-without-infrastructure-H1
-  identifier:
-    kind: DOI
-    value: 10.1098/rsos.231100
-  fetch_status: FETCHED
-  fetched_at: '2026-09-04'
-  metadata_verified: true
-  metadata_verified_by: mechanical:crossref
-  metadata_verified_at: '2026-09-04'
-  claim_match_verified: true
-  claim_match_verified_by: independent_ai_route:same_session_i1
-  claim_match_verified_at: '2026-09-04'
-  exact_passage: '"Multiple perspectives enhance robust insight, and a multiplicity of perspectives is
-    what democratic citizen science provides." / "Each individual standpoint can broaden the scope and
-    power of the cognitive and technological tools being brought to bear on an issue."'
-  page_or_locator: Abstract; Discussion (PMC10646465 open-access mirror)
-  scope: SUPPORTS_GENERAL_CLAIM_ONLY
-  evidence_tier: Dr
-  independence_class: I1
-  who_verified: AI (same session, this run)
-  verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
-  status: METADATA_OK
-  xenon_ledger_ref: null
-  disclosure: 'Same-session AI check only (I1) -- this card is METADATA_OK, not VERIFIED. Title/author/year/
-    venue confirmed mechanically via Crossref (Jaeger, Masselot, Greshake Tzovaras, Senabre Hidalgo, Haklay,
-    Santolini; Royal Society Open Science, 2023-11). Passage read via the open-access PMC mirror (publisher
-    page returned HTTP 403). Supports H1''s SUPPORT family: proposes an epistemology where diversity of
-    standpoint, not institutional homogeneity, is what makes inquiry robust -- directly relevant to H1''s
-    claim that rigour can be a property of the recorded claim rather than of institutional membership.
-    Does not itself test H1''s claim-card mechanism.'
-  superseded_by: null
-  notes: 'Global North (authors across EU/UK academic institutions), EN, peer-reviewed, journal-article,
-    discipline: philosophy/sociology of science. Found via query family: support ("An epistemology for
-    democratic citizen science" Jaeger Masselot abstract diversity discovery). Dialogue-table stance:
-    YES (supports H1).'
-- $schema: citation_card.schema.json
-  id: cite-rsos-preprint-credibility-001
-  claim_ref: hypothesis-rigour-without-infrastructure-H1
-  identifier:
-    kind: DOI
-    value: 10.1098/rsos.201520
-  fetch_status: FETCHED
-  fetched_at: '2026-09-04'
-  metadata_verified: true
-  metadata_verified_by: mechanical:crossref
-  metadata_verified_at: '2026-09-04'
-  claim_match_verified: true
-  claim_match_verified_by: independent_ai_route:same_session_i1
-  claim_match_verified_at: '2026-09-04'
-  exact_passage: '"cues related to information about open science content and independent verification
-    of author claims were rated as highly important for judging preprint credibility."'
-  page_or_locator: Results (Soderberg, Errington & Nosek 2020, PMC7657885)
-  scope: DIRECT_QUOTATION
-  evidence_tier: Dr
-  independence_class: I1
-  who_verified: AI (same session, this run)
-  verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
-  status: METADATA_OK
-  xenon_ledger_ref: null
-  disclosure: 'Same-session AI check only (I1) -- METADATA_OK, not VERIFIED. Title/author/year/venue confirmed
-    mechanically via Crossref (Soderberg, Errington, Nosek; Royal Society Open Science, 2020). Supports
-    H1''s SUPPORT family: when institutional/journal prestige signals are absent (as in a preprint, or
-    in a standalone scholar''s claim card), readers rate transparency and independent- verification cues
-    as highly important for credibility -- consistent with H1''s mechanism that a well-structured, verifiable
-    claim card can substitute for an institutional signal for at least this reader population (survey
-    of ~1,800 researchers).'
-  superseded_by: null
-  notes: 'Global North (Center for Open Science, US), EN, peer-reviewed, journal-article, empirical survey.
-    Found via query family: support (independent researcher without institutional affiliation credibility
-    open science verification). Dialogue-table stance: YES (supports H1).'
-- $schema: citation_card.schema.json
-  id: cite-scholarly-kitchen-credentialism-001
-  claim_ref: hypothesis-rigour-without-infrastructure-H1
-  identifier:
-    kind: OFFICIAL_URL
-    value: https://scholarlykitchen.sspnet.org/2026/08/14/guest-post-the-guild-and-the-gap-what-one-rejection-revealed-about-the-cost-of-credentialism/
-  fetch_status: FETCHED
-  fetched_at: '2026-09-04'
-  metadata_verified: true
-  metadata_verified_by: mechanical:webfetch_direct_read
-  metadata_verified_at: '2026-09-04'
-  claim_match_verified: true
-  claim_match_verified_by: independent_ai_route:same_session_i1
-  claim_match_verified_at: '2026-09-04'
-  exact_passage: 'A PsyArXiv moderator rejected Julia Romano''s postpartum-screening-instrument submission,
-    stating: "we need to look at the author''s expertise via past publications... As we found no record
-    of previous relevant peer-reviewed publications by the author(s)... we cannot accept the work." The
-    same submission was subsequently accepted, unchanged, by SocArXiv. The author concludes that "institutional
-    markers of legitimacy systematically exclude practitioners and independent scholars -- the very researchers
-    positioned to identify what academic insiders miss."'
-  page_or_locator: Guest post body text, Scholarly Kitchen, 2026-08-14
-  scope: DIRECT_QUOTATION
-  evidence_tier: Dr
-  independence_class: I1
-  who_verified: AI (same session, this run)
-  verification_method: MANUAL_READ
-  status: METADATA_OK
-  xenon_ledger_ref: null
-  disclosure: 'Same-session AI check only (I1) -- METADATA_OK, not VERIFIED. No DOI for a blog post; identifier
-    recorded as OFFICIAL_URL. metadata_verified is true on the basis of the page itself being fetched
-    and read directly, not a bibliographic database (none applies to a blog post -- honestly disclosed).
-    Two-sided relevance to H1: the rejection episode is a CHALLENGE (it shows a real gatekeeper using
-    prior institutional publication history, not the work''s own content, as the filter -- exactly what
-    H1 says should not be necessary), while the author''s own normative argument and the SocArXiv counter-example
-    SUPPORT H1''s claim (a differently-run process accepted the same work on its content, showing credential-gating
-    is a contingent policy choice, not an epistemic necessity).'
-  superseded_by: null
-  notes: 'Global North (Scholarly Kitchen is a US/UK-oriented scholarly-publishing industry blog; author
-    Julia Romano''s affiliation not independently confirmed beyond the post itself), EN, grey literature
-    (industry blog, editorially curated but not peer-reviewed). Found via query family: challenge (credentialism
-    necessary gatekeeping peer review quality control critique). Dialogue-table stance: UNDETERMINED (the
-    passage cuts both directions -- recorded honestly as undetermined rather than forced into a single
-    YES/NO).'
-- $schema: citation_card.schema.json
-  id: cite-tcij-freelance-th-001
-  claim_ref: hypothesis-rigour-without-infrastructure-H1
-  identifier:
-    kind: OFFICIAL_URL
-    value: https://www.tcijthai.com/news/2020/1/labour/9775
-  fetch_status: FETCHED
-  fetched_at: '2026-09-04'
-  metadata_verified: true
-  metadata_verified_by: mechanical:webfetch_direct_read
-  metadata_verified_at: '2026-09-04'
-  claim_match_verified: true
-  claim_match_verified_by: independent_ai_route:same_session_i1
-  claim_match_verified_at: '2026-09-04'
-  exact_passage: '"มีคำถามว่า นักวิจัยอิสระจะถูกพิจารณาเป็นผู้เขียนงานวิจัยนั้นหรือไม่" (there is a question
-    of whether an independent researcher will be considered the author of that research work) -- raised
-    in the article''s discussion of the ethics/credit implications of universities outsourcing research
-    work to freelance academics on international platforms.'
-  page_or_locator: Article body, TCIJ Thai, 2020-01
-  scope: CONTEXT_ONLY_NOT_EVIDENCE
-  evidence_tier: Dr
-  independence_class: I1
-  who_verified: AI (same session, this run)
-  verification_method: MANUAL_READ
-  status: METADATA_OK
-  xenon_ledger_ref: null
-  disclosure: 'Same-session AI check only (I1) -- METADATA_OK, not VERIFIED. No DOI for a Thai news article;
-    identifier recorded as OFFICIAL_URL. metadata_verified is true on the basis of the page itself being
-    fetched and read directly (Thai-language WebFetch), not a bibliographic database. HONEST LIMIT: this
-    article''s main subject is university outsourcing of research labor to freelance academics and its
-    ethics/labour-market effects, NOT research-credibility mechanics for standalone scholars in the sense
-    H1 addresses -- the one passage found bearing on H1 concerns authorship-attribution uncertainty, a
-    narrower and different question (attribution, not rigour-checkability). Recorded as CONTEXT_ONLY_NOT_EVIDENCE
-    / ORTHOGONAL rather than stretched into a support or challenge stance the source does not actually
-    carry.'
-  superseded_by: null
-  notes: 'Thailand, TH (Thai language), grey/community source (TCIJ -- Thai Civic Investigative Journalism
-    network, a nonprofit journalism outlet, not peer-reviewed). Found via query family: challenge (นักวิจัยอิสระ
-    ไม่มีสังกัดสถาบัน ความน่าเชื่อถือ งานวิจัย). Dialogue-table stance: ORTHOGONAL.'
-strata_table: []
+  - citation_card_id: cite-rsos-citizen-epistemology-001
+    status: METADATA_OK
+    identifier_kind: DOI
+    fetch_status: FETCHED
+    acquisition_log_ref: null
+    metadata_verified: true
+    claim_match_verified: true
+    claim_match_verification_route: NOT_YET
+    version_status: PUBLISHED
+    retraction_check: UNCHECKED
+    dialogue_table_stance: agrees
+    diversity:
+      language: en
+      discipline_or_tradition: "philosophy/sociology of science"
+      source_type: peer_reviewed
+      search_route_or_database: "general_web_search (WebSearch tool)"
+      geography_or_institution: "Global North (EU/UK author institutions)"
+      venue_quality_index: { index_name: null, value: null, date_read: null }
+
+  - citation_card_id: cite-cstp-boundary-work-001
+    status: METADATA_OK
+    identifier_kind: DOI
+    fetch_status: FETCHED
+    acquisition_log_ref: null
+    metadata_verified: true
+    claim_match_verified: true
+    claim_match_verification_route: NOT_YET
+    version_status: PUBLISHED
+    retraction_check: UNCHECKED
+    dialogue_table_stance: disagrees
+    diversity:
+      language: en
+      discipline_or_tradition: "science communication / sociology of science"
+      source_type: peer_reviewed
+      search_route_or_database: "general_web_search (WebSearch tool)"
+      geography_or_institution: "Global North (Canada)"
+      venue_quality_index: { index_name: null, value: null, date_read: null }
+
+  - citation_card_id: cite-rsos-preprint-credibility-001
+    status: METADATA_OK
+    identifier_kind: DOI
+    fetch_status: FETCHED
+    acquisition_log_ref: null
+    metadata_verified: true
+    claim_match_verified: true
+    claim_match_verification_route: NOT_YET
+    version_status: PUBLISHED
+    retraction_check: UNCHECKED
+    dialogue_table_stance: agrees
+    diversity:
+      language: en
+      discipline_or_tradition: "open science / meta-research"
+      source_type: peer_reviewed
+      search_route_or_database: "general_web_search (WebSearch tool)"
+      geography_or_institution: "Global North (Center for Open Science, US)"
+      venue_quality_index: { index_name: null, value: null, date_read: null }
+
+  - citation_card_id: cite-disclosure-not-documentation-001
+    status: METADATA_OK
+    identifier_kind: DOI
+    fetch_status: PAYWALLED_ABSTRACT_ONLY
+    acquisition_log_ref: null
+    metadata_verified: true
+    claim_match_verified: true
+    claim_match_verification_route: NOT_YET
+    version_status: PUBLISHED
+    retraction_check: UNCHECKED
+    dialogue_table_stance: agrees
+    diversity:
+      language: en
+      discipline_or_tradition: "research integrity / open science"
+      source_type: peer_reviewed
+      search_route_or_database: "general_web_search (WebSearch tool)"
+      geography_or_institution: "Global North (unconfirmed beyond abstract)"
+      venue_quality_index: { index_name: null, value: null, date_read: null }
+
+  - citation_card_id: cite-llm-hallucination-survey-001
+    status: METADATA_OK
+    identifier_kind: ARXIV
+    fetch_status: FETCHED
+    acquisition_log_ref: null
+    metadata_verified: true
+    claim_match_verified: true
+    claim_match_verification_route: NOT_YET
+    version_status: PREPRINT
+    retraction_check: UNCHECKED
+    dialogue_table_stance: orthogonal
+    diversity:
+      language: en
+      discipline_or_tradition: "machine learning / NLP survey"
+      source_type: preprint
+      search_route_or_database: "general_web_search (WebSearch tool)"
+      geography_or_institution: "mixed/unconfirmed (large multi-author arXiv survey)"
+      venue_quality_index: { index_name: null, value: null, date_read: null }
+
+  - citation_card_id: cite-pgph-citizen-science-sea-001
+    status: METADATA_OK
+    identifier_kind: DOI
+    fetch_status: FETCHED
+    acquisition_log_ref: null
+    metadata_verified: true
+    claim_match_verified: true
+    claim_match_verification_route: NOT_YET
+    version_status: PUBLISHED
+    retraction_check: UNCHECKED
+    dialogue_table_stance: orthogonal
+    diversity:
+      language: en
+      discipline_or_tradition: "global public health"
+      source_type: peer_reviewed
+      search_route_or_database: "general_web_search (WebSearch tool)"
+      geography_or_institution: "Global South / Southeast & South Asia (Philippines, Indonesia, Nepal, Bangladesh, Singapore author pool)"
+      venue_quality_index: { index_name: null, value: null, date_read: null }
+
+  - citation_card_id: cite-ocsdnet-honf-001
+    status: METADATA_OK
+    identifier_kind: OFFICIAL_URL
+    fetch_status: FETCHED
+    acquisition_log_ref: null
+    metadata_verified: true
+    claim_match_verified: true
+    claim_match_verification_route: NOT_YET
+    version_status: NOT_APPLICABLE
+    retraction_check: UNCHECKED
+    dialogue_table_stance: agrees
+    diversity:
+      language: en
+      discipline_or_tradition: "open hardware / citizen science practice"
+      source_type: community
+      search_route_or_database: "general_web_search (WebSearch tool)"
+      geography_or_institution: "Global South / Southeast Asia (Indonesia; project spans Indonesia, Thailand, Nepal)"
+      venue_quality_index: { index_name: null, value: null, date_read: null }
+
+  - citation_card_id: cite-scholarly-kitchen-credentialism-001
+    status: METADATA_OK
+    identifier_kind: OFFICIAL_URL
+    fetch_status: FETCHED
+    acquisition_log_ref: null
+    metadata_verified: true
+    claim_match_verified: true
+    claim_match_verification_route: NOT_YET
+    version_status: NOT_APPLICABLE
+    retraction_check: UNCHECKED
+    dialogue_table_stance: undetermined
+    diversity:
+      language: en
+      discipline_or_tradition: "scholarly-publishing industry commentary"
+      source_type: grey_literature
+      search_route_or_database: "general_web_search (WebSearch tool)"
+      geography_or_institution: "Global North (US/UK-oriented industry blog)"
+      venue_quality_index: { index_name: null, value: null, date_read: null }
+
+  - citation_card_id: cite-tcij-freelance-th-001
+    status: METADATA_OK
+    identifier_kind: OFFICIAL_URL
+    fetch_status: FETCHED
+    acquisition_log_ref: null
+    metadata_verified: true
+    claim_match_verified: true
+    claim_match_verification_route: NOT_YET
+    version_status: NOT_APPLICABLE
+    retraction_check: UNCHECKED
+    dialogue_table_stance: orthogonal
+    diversity:
+      language: th
+      discipline_or_tradition: "Thai civic/labour journalism"
+      source_type: grey_literature
+      search_route_or_database: "general_web_search, Thai-language query (WebSearch tool)"
+      geography_or_institution: "Global South / Thailand"
+      venue_quality_index: { index_name: null, value: null, date_read: null }
+
+# --- stratified selection table (S14 §5.4/§7.9f) ----------------------------------------------
+# Coverage table over (quality_tier x region x language) actually searched, per frozen_scope's
+# strata definition (quality x region x language). This is a SCOPING_SEARCH, not a bibliography
+# down-select -- every kept candidate is already cited above; this table exists to show which
+# cells were reached and which were searched-for-but-empty (NC-27: empty != nothing exists).
+strata_table:
+  - stratum: { quality_tier: "peer_reviewed", region: "Global North", language: "en" }
+    candidates_considered: [cite-rsos-citizen-epistemology-001, cite-cstp-boundary-work-001, cite-rsos-preprint-credibility-001, cite-disclosure-not-documentation-001]
+    selected: cite-rsos-preprint-credibility-001
+    selection_reason: >-
+      Most directly tests H1's actual substitution mechanism (verification/transparency cues
+      standing in for institutional prestige) with an empirical survey method; the other three in
+      this cell are also kept (all four appear in the dialogue table) because a scoping search of
+      this size cites every kept candidate rather than narrowing to one per cell.
+
+  - stratum: { quality_tier: "preprint", region: "Global North", language: "en" }
+    candidates_considered: [cite-llm-hallucination-survey-001]
+    selected: cite-llm-hallucination-survey-001
+    selection_reason: "Only preprint-tier candidate found in this cell; kept for its direct bearing on the independence-ladder rationale."
+
+  - stratum: { quality_tier: "peer_reviewed", region: "Global South (incl. Thailand+SEA)", language: "en" }
+    candidates_considered: [cite-pgph-citizen-science-sea-001]
+    selected: cite-pgph-citizen-science-sea-001
+    selection_reason: "Only peer-reviewed Global South/SEA candidate found; kept despite being orthogonal to H1's actual claim, disclosed honestly rather than dropped."
+
+  - stratum: { quality_tier: "grey_literature", region: "Global South (incl. Thailand+SEA)", language: "en" }
+    candidates_considered: [cite-ocsdnet-honf-001]
+    selected: cite-ocsdnet-honf-001
+    selection_reason: "Strongest Thailand/SEA-relevant grey/community source found (names Thailand, Indonesia, Nepal directly); no peer-reviewed candidate found in this exact cell despite searching."
+
+  - stratum: { quality_tier: "grey_literature", region: "Global North", language: "en" }
+    candidates_considered: [cite-scholarly-kitchen-credentialism-001]
+    selected: cite-scholarly-kitchen-credentialism-001
+    selection_reason: "Only grey/Global-North candidate found in the credentialism-challenge query family."
+
+  - stratum: { quality_tier: "grey_literature", region: "Global South (incl. Thailand+SEA)", language: "th" }
+    candidates_considered: [cite-tcij-freelance-th-001]
+    selected: cite-tcij-freelance-th-001
+    selection_reason: "Only Thai-language candidate found across all query families; kept despite thin topical match (orthogonal), disclosed rather than silently dropped to inflate apparent diversity."
+
+  - stratum: { quality_tier: "peer_reviewed", region: "Global South (incl. Thailand+SEA)", language: "th" }
+    candidates_considered: []
+    selected: null
+    selection_reason: >-
+      No Thai-language peer-reviewed source was found despite two Thai-language queries being run
+      (support and challenge families). Recorded as LOCAL_EVIDENCE_NOT_FOUND, not
+      NO_LOCAL_EVIDENCE_EXISTS (NC-27) -- a search-coverage fact, not proof no such source exists.
+
+  - stratum: { quality_tier: "grey_literature", region: "Global North", language: "other" }
+    candidates_considered: []
+    selected: null
+    selection_reason: >-
+      The frozen scope's language_strategy named a third language (ID/MY-region or FR) as a
+      deliberate target; no query in a third language was actually run in this pass (only EN and
+      TH queries were issued) -- this cell is empty because the search did not reach it, disclosed
+      here rather than silently omitted. Flagged as an open item for a follow-up search round.
+
+# --- diversity audit rollup ---------------------------------------------------------------------
 diversity_audit:
   counts:
-    by_language: {}
-    by_source_type: {}
-    by_search_route_or_database: {}
-    by_stance:
-      agrees: 0
-      disagrees: 0
-      orthogonal: 0
-      undetermined: 9
-    by_geography_or_institution: {}
-  concentration_flags: []
+    by_language: { en: 8, th: 1 }
+    by_source_type: { peer_reviewed: 5, preprint: 1, community: 1, grey_literature: 2 }
+    by_search_route_or_database: { "general_web_search (WebSearch tool)": 9 }
+    by_stance: { agrees: 4, disagrees: 1, orthogonal: 3, undetermined: 1 }
+    by_geography_or_institution:
+      "Global North (EU/UK author institutions)": 1
+      "Global North (Canada)": 1
+      "Global North (Center for Open Science, US)": 1
+      "Global North (unconfirmed beyond abstract)": 1
+      "mixed/unconfirmed (large multi-author arXiv survey)": 1
+      "Global South / Southeast & South Asia (Philippines, Indonesia, Nepal, Bangladesh, Singapore author pool)": 1
+      "Global South / Southeast Asia (Indonesia; project spans Indonesia, Thailand, Nepal)": 1
+      "Global North (US/UK-oriented industry blog)": 1
+      "Global South / Thailand": 1
+  concentration_flags:
+    - dimension: by_language
+      cell: en
+      percentage: 89
+      disclaimer: D-LIT-CONCENTRATED
+      note: >-
+        8/9 kept sources are English-language; only 1 (cite-tcij-freelance-th-001) is Thai, and no
+        third-language source (the frozen scope's own target) was reached. Disclosed, not hidden --
+        a real limit of this scoping pass, not evidence a Thai/SEA literature does not exist on
+        this topic.
+    - dimension: by_search_route_or_database
+      cell: "general_web_search (WebSearch tool)"
+      percentage: 100
+      disclaimer: D-LIT-CONCENTRATED
+      note: >-
+        Every source was surfaced via one general web-search tool rather than a mix of specialized
+        databases (PubMed, Scopus, ThaiJO, Google Scholar direct, etc.) -- a real route-diversity
+        limit of this standalone-scholar search pass (no institutional database subscriptions
+        available, consistent with frozen_scope.access_limits), disclosed rather than silently
+        presented as multi-database coverage.
   zero_disagree_flag: false
   never_claim_diverse_without_counts: true
+
+# --- accuracy discipline summary ----------------------------------------------------------------
 accuracy:
   total_citations: 9
   verified_count: 0
@@ -390,13 +307,34 @@ accuracy:
     spot_check_result: PENDING
     spot_checked_by: null
     spot_checked_at: null
+
 secondary_citation_ban_audit:
   violations_found: 0
+
+# --- gate ----------------------------------------------------------------------------------------
 gate:
   accuracy_gate: FAIL
-  diversity_gate: PASS
+  diversity_gate: PASS_WITH_LIMITS
   overall: FAIL
-  blocked_reason: Not every listed citation reached VERIFIED yet.
+  blocked_reason: >-
+    accuracy_gate FAIL: 0 of 9 citations are status VERIFIED (all 9 sit at METADATA_OK). Every
+    claim_match_verified=true on these cards was produced by independence_class I1 (same-session
+    AI, this run) -- per AGENTS.md gate rule 3 ("maker != checker != approver; same-model
+    self-review has no standing") and P13 L5's own exit gate ("metadata_verified (mechanical) AND
+    claim_match_verified (I5 human or decorrelated I3) both true"), an I1 same-session AI check
+    cannot upgrade a card past METADATA_OK to VERIFIED. No citation here has yet gone through a
+    genuine HUMAN_I5 or DECORRELATED_AI_I3 route (all 9 carry claim_match_verification_route:
+    NOT_YET) -- that route has not been run in this task. This is the honest, expected FAIL state
+    for an AI-only search-and-extraction pass, not an error to paper over; per P13's "gate into
+    method design and paper," no lit-review section may be drafted from this manifest until an
+    independent route is actually run and the accuracy_gate is re-computed.
+
 disclaimers_emitted:
-- id: D-CITATION-UNVERIFIED
+  - id: D-CITATION-UNVERIFIED
+    params: { note: "All 9 citation_cards are METADATA_OK, not VERIFIED -- see gate.blocked_reason." }
+  - id: D-LIT-MODE
+    params: { note: "search_mode is SCOPING_SEARCH, not SYSTEMATIC_REVIEW -- stated here, not in a footnote." }
+  - id: D-LIT-CONCENTRATED
+    params: { note: "Two disclosed concentrations: 89% English-language, 100% single search route. See diversity_audit.concentration_flags." }
+
 human_owner: founder

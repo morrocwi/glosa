@@ -13,7 +13,7 @@ what_it_assumes: >-
   Assumes "the same standards of credibility as academic science" are the target worth reaching,
   even while working "within a different context" -- i.e. academic-science credibility remains
   the reference point being approximated, not rejected.
-stance: YES
+stance: "YES"
 what_it_would_say_against_us: >-
   The paper frames this as a "framework for the necessary discussions between citizen science
   programs and potential users of their data... about shared expectations for credibility" --

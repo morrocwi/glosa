@@ -85,14 +85,111 @@ queries:
     - "การตรวจสอบ AI ข้ามผู้ให้บริการ ความน่าเชื่อถือ"
     - "Thailand AI governance independent review LLM output"
     - "Southeast Asia AI audit cross-vendor verification civil society"
-sources_found: []
+actual_queries_run:
+  # Verbatim record of every WebSearch tool call actually issued this session, in order (L2 exit
+  # gate requirement: record every query verbatim). These differ in exact wording from the
+  # pre-frozen `queries.support`/`queries.challenge`/`queries.thai_or_sea` families above (which
+  # were frozen as intended query FAMILIES before searching began) -- the frozen families were
+  # used as the search brief; these are the literal strings sent to WebSearch.
+  - "cross-model review catches errors self-review misses LLM different model evaluator"
+  - "LLM-as-judge self-preference bias same model evaluator study"
+  - "multi-agent debate different models improves factuality error detection arxiv"
+  - "self-refine LLM without external feedback limitations study no improvement"
+  - "Thailand AI governance verification independent audit LLM output ตรวจสอบ AI"
+  - "Global South AI verification independent review capacity building data annotation"
+  - "\"ปัญญาประดิษฐ์\" ตรวจสอบไขว้ ผู้ให้บริการ AI ความน่าเชื่อถือ งานวิจัย"
+  - "conflict of interest peer review same institution detection rate bias study"
+  - "Thai university research AI-assisted peer review verification independent checker LLM Chulalongkorn OR Mahidol OR Thammasat"
+  - "Southeast Asia AI safety evaluation independent verification ASEAN researchers arxiv"
+  - "Cofact Thailand AI ตรวจสอบข้อเท็จจริง ปัญญาประดิษฐ์ หลายโมเดล"
+  - "\"Too Consistent to Detect\" arxiv 2505.17656 authors affiliation"
+  - "Masakhane African NLP evaluation LLM bias independent review diverse models arxiv"
+  - "India AI audit independent evaluation LLM output verification research institute arxiv"
+  # Plus WebFetch (not WebSearch) opens of each kept source's own page/abstract, and two
+  # mechanical lookups (Crossref for the two DOI-bearing sources, Semantic Scholar for one
+  # candidate's DOI that was then NOT selected -- see search_log.rejected_candidates).
+
+sources_found:
+  - cite-selfpreference-judge-001
+  - cite-crossmodel-codereview-002
+  - cite-toohconsistent-003
+  - cite-multiagent-debate-004
+  - cite-selfcorrect-reasoning-005
+  - cite-legalai-india-006
+  - cite-bangladesh-readiness-007
+  - cite-iseas-sea-governance-008
+  - cite-cofact-thai-detector-009
+  - cite-mindstudio-crossvendor-010
+
+rejected_candidates:
+  # Candidates opened/considered but NOT turned into citation_cards, with an honest reason each
+  # (never silently dropped) -- part of the same-session L3/L4 record.
+  - label: "Png (2022), At the Tensions of South and North: Critical Roles of Global South Stakeholders in AI Governance (FAccT'22, DOI 10.1145/3531146.3533200)"
+    reason: >-
+      Fetched via Crossref (mechanical): sole author's affiliation is recorded as "Oxford Internet
+      Institute, United Kingdom" -- a Global North institution, despite the paper's own Global-
+      South-centered standpoint and subject matter. Not used toward the Global South stratum count
+      to avoid gaming diversity_audit by author-institution vs subject-matter conflation; not
+      otherwise on-topic enough for H3's mechanism to warrant a card on other grounds within this
+      SCOPING_SEARCH's stopping rule.
+  - label: "Adebara et al., Where Are We? Evaluating LLM Performance on African Languages (arXiv:2502.19582)"
+    reason: >-
+      Fetched (WebFetch of the HTML full text). Confirmed real, with named author affiliations
+      (UBC, MBZUAI). On reading, contains no passage comparing same-vs-different-model/vendor
+      error-catching -- topically about multilingual benchmark coverage, not verification
+      mechanism. Excluded per frozen_scope.inclusion_exclusion_rules ("model accuracy/capability
+      alone with no same-vs-different reviewer comparison").
+  - label: "nhimg.org, Cross-model AI code review exposes the limits of single-model judgment"
+    reason: >-
+      Surfaced in the same WebSearch result set as cite-mindstudio-crossvendor-010 (near-identical
+      claim) but this session did not independently WebFetch/open this specific URL -- not cited,
+      per the secondary-citation ban (FC-S14-1): never cite what this session did not itself open.
+
 prisma_counts: null
 global_track:
-  summary: ''
-  strength_note: ''
+  summary: >-
+    International/global literature clearly SUPPORTS the underlying MECHANISM H3 relies on
+    (same-model/same-source review shares the producing process's blind spots; a structurally
+    different model/process sometimes catches what the first misses -- cite-toohconsistent-003,
+    cite-selfpreference-judge-001, cite-selfcorrect-reasoning-005) but the ONE source found that
+    actually RUNS H3's own comparison (cross-vendor vs same-vendor catch/improvement rate,
+    cite-crossmodel-codereview-002) found an ASYMMETRIC, direction-dependent result, not a clean
+    uniform rise -- one cross-vendor direction helped a lot, the reverse direction hurt, and
+    same-vendor self-review also helped in one condition. No source found tests H3's own exact
+    operationalization (claim-card Q3/Q4 field-level AI-fill/assumption disclosure catch rate).
+  strength_note: >-
+    Weak-to-moderate support for the underlying mechanism, genuinely mixed/complicated support for
+    H3's literal comparative claim as stated (a uniform rise with cross-vendor/I3 review). This is
+    a SCOPING_SEARCH (bounded, 14 WebSearch rounds + fetches), not a systematic review -- absence
+    of a cleaner confirming study does not mean one does not exist; it means this scope did not
+    surface one within its stopping rule.
 local_track:
-  summary: ''
-  result: NOT_SEARCHED
-transfer_verdict: null
-summary_disclaimer: 'TODO: state explicitly what WAS and was NOT found on both support and challenge sides
-  once a search is actually run (S14 §2.2).'
+  summary: >-
+    Thai/SEA-specific literature found (cite-cofact-thai-detector-009, cite-iseas-sea-governance-008)
+    addresses a DIFFERENT, adjacent problem (AI-detection tool reliability; national regulatory-body
+    capacity) rather than H3's cross-vendor-vs-same-vendor claim-review mechanism directly, and
+    neither source measures a catch-rate comparison. No Thai/SEA source was found that tests H3's
+    mechanism locally.
+  result: LOCAL_EVIDENCE_NOT_FOUND
+transfer_verdict: UNASSESSED
+  # H3's global-track evidence itself is mixed/asymmetric (not a clean transferable finding), and
+  # no local Thai/SEA source tests the mechanism directly -- a transfer verdict of TRANSFERS_* or
+  # DOES_NOT_TRANSFER would overstate what this scoping search actually found; UNASSESSED is the
+  # honest value (NC-27: LOCAL_EVIDENCE_NOT_FOUND != NO_LOCAL_EVIDENCE_EXISTS).
+summary_disclaimer: >-
+  This is a SCOPING_SEARCH (not a systematic review): 10 sources kept from 14 WebSearch query
+  rounds plus targeted WebFetch opens, bounded by the pre-registered stopping rule. On the SUPPORT
+  side: several sources (cite-toohconsistent-003, cite-selfpreference-judge-001,
+  cite-selfcorrect-reasoning-005) support the general mechanism H3 depends on (same-source checking
+  under-detects a class of stable, self-consistent error; a structurally different model/process
+  sometimes does not share that blind spot), and one source (cite-mindstudio-crossvendor-010,
+  grey/practitioner, unstudied) states H3's claim almost verbatim as an unsupported assertion. On
+  the CHALLENGE side: the one source that actually measured H3's own comparison
+  (cite-crossmodel-codereview-002) found the effect is asymmetric and direction-dependent, not a
+  uniform "cross-vendor beats same-vendor" pattern, and found same-vendor self-review ALSO helped
+  in one tested condition -- a real complication to H3 as generally stated, not a clean refutation
+  either. No source in this search directly measures H3's precise operationalization (claim-card
+  Q3/false-AI-fill or Q4/false-assumption field disclosure, caught by I3 cross-vendor review vs
+  I0/I1 same-vendor re-check). Absence of a source testing that exact operationalization is a
+  search-coverage fact (this scope did not find one), never asserted as evidence that no such study
+  exists.

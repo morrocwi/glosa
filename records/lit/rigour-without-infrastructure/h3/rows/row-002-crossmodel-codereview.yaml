@@ -1,0 +1,33 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: H3
+source_label: "Xiang, Zhang, Zhang & Xu (2026) — Cross-Model LLM Code Review (arXiv:2607.21656)"
+how_it_sees_the_problem: >-
+  Frames it as a practical pairing-design question for coding agents: given two vendors' models,
+  is any cross-vendor review pairing worth its cost, and does the ORDER (who reviews whom) matter?
+  Measures pass-rate delta on a coding benchmark under six conditions (solo, both same-model
+  self-review directions, both cross-model directions).
+what_it_separates: >-
+  Separates "cross-vendor helps" into two DIFFERENT claims depending on direction (A reviews B vs
+  B reviews A) and separately measures same-model self-review as its own condition rather than
+  collapsing it into "not cross-vendor" -- a finer split than H3's binary I0/I1-vs-I3 framing,
+  because it shows same-vendor re-check is not uniformly worse.
+what_it_assumes: >-
+  Assumes pass-rate on 116 lcb (hard/medium) coding tasks generalizes as a proxy for "review
+  catches errors"; assumes the reviewer's inability to execute tests (review-only, not full
+  debugging loop) is a fair approximation of a human code-review step.
+agrees_with_h: NO
+disagrees_with_h: "YES"
+what_it_would_say_against_us: >-
+  Directly against H3 as stated: this is the one source found that actually RUNS the comparison
+  H3 predicts, and finds the effect is NOT a general "cross-vendor beats same-vendor" pattern --
+  it is asymmetric and direction-dependent (Claude reviewing Codex helps a lot; Codex reviewing
+  Claude actively HURTS, dropping the pass rate), and same-model self-review also produced a real
+  improvement for Codex drafts (71.6% -> 84.5%). If catch/improvement rate depends on WHICH pair
+  and WHICH direction rather than simply "cross-vendor vs same-vendor," H3 as a general, direction-
+  agnostic claim about independence level I3 vs I0/I1 is too coarse -- it may hold for some vendor
+  pairs and reverse for others, and this defeats a version of H3 that predicts a uniform rise.
+citation_card: cite-crossmodel-codereview-002
+stance: "NO"
+verified:
+  metadata_verified: true
+  claim_match_verified: true

@@ -1,0 +1,668 @@
+$schema: litreview_manifest.schema.json
+id: litrev-rigour-without-infrastructure-001
+hypothesis_ref: H2
+search_log_ref: search-rigour-without-infrastructure-001
+search_log_hash: ebf0e3067ef003ad4c665ba3a474596ca7a80351d7143d318855eb3f3d0a3987
+dialogue_table_ref: records/lit/rigour-without-infrastructure/h2/dialogue_table.md
+status: FROZEN
+frozen_at: '2026-09-04T13:14:54.533089+00:00'
+supersedes: null
+citations:
+- $schema: citation_card.schema.json
+  id: cite-rigour-without-infrastructure-001
+  claim_ref: hypothesis-H2
+  identifier:
+    kind: OFFICIAL_URL
+    value: https://en.wikipedia.org/wiki/Open-notebook_science
+  fetch_status: FETCHED
+  fetched_at: '2026-09-04'
+  metadata_verified: true
+  metadata_verified_by: mechanical:webfetch
+  metadata_verified_at: '2026-09-04'
+  claim_match_verified: true
+  claim_match_verified_by: ai_route:same-session (I1)
+  claim_match_verified_at: '2026-09-04'
+  exact_passage: '"Open-notebook science is the practice of making the entire primary record of a research
+    project publicly available online as it is recorded." (article also notes open-notebook projects have
+    been published in peer-reviewed venues, framed as compatible with, not a replacement for, institutional
+    peer review.)'
+  page_or_locator: Wikipedia article, lead section, as fetched 2026-09-04
+  scope: CONTEXT_ONLY_NOT_EVIDENCE
+  evidence_tier: definition
+  independence_class: I1
+  who_verified: ai_route:same-session (I1)
+  verification_method: MANUAL_READ
+  status: METADATA_OK
+  xenon_ledger_ref: null
+  disclosure: Encyclopedia (grey/community tertiary source), not a primary empirical study. Defines the
+    practice this hypothesis discusses (record-level transparency) but the fetched text does not itself
+    take a position on whether that record substitutes for institutional credentialing -- it frames open-notebook
+    publishing as compatible with peer review, not as a replacement for it. Read as context, not as direct
+    evidence for or against H2. independence_class I1 (same session AI) -- status METADATA_OK only, not
+    VERIFIED (would require an I3+ route).
+  superseded_by: null
+  notes: 'Diversity: language=en, source_type=grey_literature (encyclopedia/community-maintained), geography=global/no
+    fixed institution, search_route="web search: open notebook science trust without institutional affiliation
+    rigour".'
+  citation_card_id: cite-rigour-without-infrastructure-001
+  identifier_kind: OFFICIAL_URL
+  claim_match_verification_route: NOT_YET
+  retraction_check: UNCHECKED
+  version_status: NOT_APPLICABLE
+  dialogue_table_stance: orthogonal
+  diversity:
+    language: en
+    discipline_or_tradition: science communication / open science practice
+    source_type: grey_literature
+    search_route_or_database: 'web search: open notebook science trust without institutional affiliation
+      rigour'
+    geography_or_institution: global / no fixed institution
+    venue_quality_index:
+      index_name: null
+      value: null
+      date_read: null
+- $schema: citation_card.schema.json
+  id: cite-rigour-without-infrastructure-002
+  claim_ref: hypothesis-H2
+  identifier:
+    kind: DOI
+    value: 10.5334/cstp.207
+  fetch_status: FETCHED
+  fetched_at: '2026-09-04'
+  metadata_verified: true
+  metadata_verified_by: mechanical:crossref
+  metadata_verified_at: '2026-09-04'
+  claim_match_verified: true
+  claim_match_verified_by: ai_route:same-session (I1)
+  claim_match_verified_at: '2026-09-04'
+  exact_passage: '"the field lacks an overall, widely accepted approach to research integrity, which would
+    at least include training citizen scientists in concepts and methods of research integrity, establishing
+    mechanisms to protect the reliability of research results, and instituting processes to address instances
+    of research misconduct."'
+  page_or_locator: theoryandpractice.citizenscienceassociation.org/articles/10.5334/cstp.207/, as fetched
+    2026-09-04
+  scope: SUPPORTS_GENERAL_CLAIM_ONLY
+  evidence_tier: Dr
+  independence_class: I1
+  who_verified: ai_route:same-session (I1)
+  verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
+  status: METADATA_OK
+  xenon_ledger_ref: null
+  disclosure: 'Crossref-confirmed: Lisa M. Rasmussen (2019), "Confronting Research Misconduct in Citizen
+    Science", Citizen Science: Theory and Practice, DOI 10.5334/cstp.207. Ambiguous with respect to H2:
+    it names an accepted-principles basis for citizen-science trust (record/practice-level, not institutional)
+    but flags that a widely accepted integrity framework does not yet exist -- read honestly as UNDETERMINED
+    support, not a clean YES. independence_class I1 (same session AI) -- status METADATA_OK only, not
+    VERIFIED.'
+  superseded_by: null
+  notes: 'Diversity: language=en, source_type=peer_reviewed, geography=USA (Citizen Science Association),
+    search_route="web search: citizen science credibility trust independent verification not institution".'
+  citation_card_id: cite-rigour-without-infrastructure-002
+  identifier_kind: DOI
+  claim_match_verification_route: NOT_YET
+  retraction_check: UNCHECKED
+  version_status: PUBLISHED
+  dialogue_table_stance: undetermined
+  diversity:
+    language: en
+    discipline_or_tradition: research ethics / citizen science
+    source_type: peer_reviewed
+    search_route_or_database: 'web search: citizen science credibility trust independent verification
+      not institution'
+    geography_or_institution: USA (Citizen Science Association)
+    venue_quality_index:
+      index_name: null
+      value: null
+      date_read: null
+- $schema: citation_card.schema.json
+  id: cite-rigour-without-infrastructure-003
+  claim_ref: hypothesis-H2
+  identifier:
+    kind: DOI
+    value: 10.5334/cstp.6
+  fetch_status: FETCHED
+  fetched_at: '2026-09-04'
+  metadata_verified: true
+  metadata_verified_by: mechanical:crossref
+  metadata_verified_at: '2026-09-04'
+  claim_match_verified: true
+  claim_match_verified_by: ai_route:same-session (I1)
+  claim_match_verified_at: '2026-09-04'
+  exact_passage: '"We surveyed the credibility-building strategies of 30 citizen science programs that
+    monitor environmental aspects of the California coast. We identified a total of twelve strategies:
+    Three that are applied during training and planning; four that are applied during data collection;
+    and five that are applied during data analysis and program evaluation... Our results illustrate those
+    tradeoffs and provide a framework for the necessary discussions between citizen science programs and
+    potential users of their data -- including scientists and decision makers -- about shared expectations
+    for credibility."'
+  page_or_locator: theoryandpractice.citizenscienceassociation.org/article/10.5334/cstp.6/, abstract,
+    as fetched 2026-09-04
+  scope: DIRECT_QUOTATION
+  evidence_tier: Dr
+  independence_class: I1
+  who_verified: ai_route:same-session (I1)
+  verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
+  status: METADATA_OK
+  xenon_ledger_ref: null
+  disclosure: 'Crossref-confirmed: Amy Freitag, Ryan Meyer, Liz Whiteman (2016), "Strategies Employed
+    by Citizen Science Programs to Increase the Credibility of Their Data", Citizen Science: Theory and
+    Practice, DOI 10.5334/cstp.6. Supports H2: credibility is built through program-level, record/procedure-based
+    strategies (training, data-collection, and evaluation practices) rather than through the institutional
+    affiliation of the volunteers producing the data. independence_class I1 (same session AI) -- status
+    METADATA_OK only, not VERIFIED (would require an I3+ route).'
+  superseded_by: null
+  notes: 'Diversity: language=en, source_type=peer_reviewed, geography=USA, search_route="web search:
+    citizen science credibility trust independent verification not institution".'
+  citation_card_id: cite-rigour-without-infrastructure-003
+  identifier_kind: DOI
+  claim_match_verification_route: NOT_YET
+  retraction_check: UNCHECKED
+  version_status: PUBLISHED
+  dialogue_table_stance: agrees
+  diversity:
+    language: en
+    discipline_or_tradition: citizen science / environmental monitoring
+    source_type: peer_reviewed
+    search_route_or_database: 'web search: citizen science credibility trust independent verification
+      not institution'
+    geography_or_institution: USA (California coast programs)
+    venue_quality_index:
+      index_name: null
+      value: null
+      date_read: null
+- $schema: citation_card.schema.json
+  id: cite-rigour-without-infrastructure-004
+  claim_ref: hypothesis-H2
+  identifier:
+    kind: OFFICIAL_URL
+    value: https://scholarlykitchen.sspnet.org/2026/08/14/guest-post-the-guild-and-the-gap-what-one-rejection-revealed-about-the-cost-of-credentialism/
+  fetch_status: FETCHED
+  fetched_at: '2026-09-04'
+  metadata_verified: true
+  metadata_verified_by: mechanical:webfetch
+  metadata_verified_at: '2026-09-04'
+  claim_match_verified: true
+  claim_match_verified_by: ai_route:same-session (I1)
+  claim_match_verified_at: '2026-09-04'
+  exact_passage: 'Pamela Oliver, comment (2026-08-14): "I give much more scrutiny to someone with no prior
+    record and sketchy identity credentials than I do to a well-established academic." April Smith, comment
+    (2026-08-15): "Preparing manuscripts takes training, practice and experience. If someone has no experience,
+    no affiliation, no supervision or advisory colleagues, etc., then the system should be very careful
+    with that person, especially in today''s environment."'
+  page_or_locator: scholarlykitchen.sspnet.org, guest post 'The Guild and the Gap...' by Julia Romano,
+    2026-08-14, plus reader comments, as fetched 2026-09-04
+  scope: DIRECT_QUOTATION
+  evidence_tier: Dr
+  independence_class: I1
+  who_verified: ai_route:same-session (I1)
+  verification_method: MANUAL_READ
+  status: METADATA_OK
+  xenon_ledger_ref: null
+  disclosure: 'Grey/community source (practitioner blog with named-commenter discussion), The Scholarly
+    Kitchen (Society for Scholarly Publishing network), guest post dated 2026-08-14. Directly disagrees
+    with H2 as read: two named commenters explicitly argue that institutional affiliation/publication-history
+    functions as a necessary trust marker/gatekeeping signal that a record''s own quality alone does not
+    substitute for -- close to H2''s own falsifier language ("the credential does load-bearing work the
+    card''s own fields cannot substitute for"). independence_class I1 (same session AI) -- status METADATA_OK
+    only, not VERIFIED.'
+  superseded_by: null
+  notes: 'Diversity: language=en, source_type=practitioner/community (scholarly-publishing trade blog),
+    geography=USA/global scholarly-publishing community, search_route="web search: independent researcher
+    unaffiliated scholar credibility peer review credentialism". This is the CHALLENGE family member (search_log.yaml
+    queries.challenge) most directly on-point for H2''s falsifier.'
+  citation_card_id: cite-rigour-without-infrastructure-004
+  identifier_kind: OFFICIAL_URL
+  claim_match_verification_route: NOT_YET
+  retraction_check: UNCHECKED
+  version_status: NOT_APPLICABLE
+  dialogue_table_stance: disagrees
+  diversity:
+    language: en
+    discipline_or_tradition: scholarly publishing / peer review practice
+    source_type: practitioner
+    search_route_or_database: 'web search: independent researcher unaffiliated scholar credibility peer
+      review credentialism'
+    geography_or_institution: USA / global scholarly-publishing community
+    venue_quality_index:
+      index_name: null
+      value: null
+      date_read: null
+- $schema: citation_card.schema.json
+  id: cite-rigour-without-infrastructure-005
+  claim_ref: hypothesis-H2
+  identifier:
+    kind: DOI
+    value: 10.1093/joc/jqab027
+  fetch_status: FETCHED
+  fetched_at: '2026-09-04'
+  metadata_verified: true
+  metadata_verified_by: mechanical:crossref
+  metadata_verified_at: '2026-09-04'
+  claim_match_verified: true
+  claim_match_verified_by: ai_route:same-session (I1)
+  claim_match_verified_at: '2026-09-04'
+  exact_passage: '"Hegemonic Open Science, emergent from the circuits of knowledge production in the Global
+    North and serving the economic interests of platform capitalism, systematically erase the voices of
+    the subaltern margins from the Global South and the Southern margins inhabiting the North... These
+    decolonizing practices foreground data sovereignty, community ownership, and public ownership of knowledge
+    resources as the bases of resistance to the colonial-capitalist interests of hegemonic Open Science."'
+  page_or_locator: academic.oup.com/joc/advance-article/doi/10.1093/joc/jqab027/6364108, abstract, as
+    fetched 2026-09-04
+  scope: CONTEXT_ONLY_NOT_EVIDENCE
+  evidence_tier: Dr
+  independence_class: I1
+  who_verified: ai_route:same-session (I1)
+  verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
+  status: METADATA_OK
+  xenon_ledger_ref: null
+  disclosure: 'Crossref-confirmed: Mohan Dutta et al. (2021), "Decolonizing Open Science: Southern Interventions",
+    Journal of Communication, DOI 10.1093/joc/jqab027 (23 co-authors, Global-South and Global-South-diaspora
+    research collective). Orthogonal to H2 as read: this piece argues Open Science''s *governance/funding
+    infrastructure* remains Northern-institution-dominated and should instead be community/data-sovereignty-owned
+    -- a different question from whether a single claim''s own recorded structure can substitute for an
+    institutional credential at the claim level. Neither directly supports nor directly falsifies H2;
+    logged for Global-South diversity and as a genuinely different framing of "institution" (governance-of-the-field,
+    not credentialing-of-a-claim). independence_class I1 (same session AI) -- status METADATA_OK only.'
+  superseded_by: null
+  notes: 'Diversity: language=en, source_type=peer_reviewed, geography=Global South (author collective
+    spans India, Aotearoa/NZ, Bangladesh, Philippines and other Southern/diasporic institutions), search_route="web
+    search: open science Global South decolonizing science credibility without Northern institutions".'
+  citation_card_id: cite-rigour-without-infrastructure-005
+  identifier_kind: DOI
+  claim_match_verification_route: NOT_YET
+  retraction_check: UNCHECKED
+  version_status: PUBLISHED
+  dialogue_table_stance: orthogonal
+  diversity:
+    language: en
+    discipline_or_tradition: communication studies / decolonial science studies
+    source_type: peer_reviewed
+    search_route_or_database: 'web search: open science Global South decolonizing science credibility
+      without Northern institutions'
+    geography_or_institution: Global South (India, Aotearoa/NZ, Bangladesh, Philippines and other Southern/diasporic
+      institutions)
+    venue_quality_index:
+      index_name: null
+      value: null
+      date_read: null
+- $schema: citation_card.schema.json
+  id: cite-rigour-without-infrastructure-006
+  claim_ref: hypothesis-H2
+  identifier:
+    kind: DOI
+    value: 10.3389/frma.2022.855198
+  fetch_status: FETCHED
+  fetched_at: '2026-09-04'
+  metadata_verified: true
+  metadata_verified_by: mechanical:crossref
+  metadata_verified_at: '2026-09-04'
+  claim_match_verified: true
+  claim_match_verified_by: ai_route:same-session (I1)
+  claim_match_verified_at: '2026-09-04'
+  exact_passage: '"The advancement of scientific research and raising the next-generation scientists in
+    Africa depend largely on science access. The COVID-19 pandemic has caused discussions around open
+    science (OS) to reemerge globally, especially in resource-poor settings like Africa, where the practice
+    of OS is low... Addressing challenges of funding and leadership at different levels of educational,
+    research, and government parastatals may be pivotal in charting a new course for OS in Africa."'
+  page_or_locator: frontiersin.org/articles/10.3389/frma.2022.855198/full, abstract, as fetched 2026-09-04
+  scope: CONTEXT_ONLY_NOT_EVIDENCE
+  evidence_tier: Dr
+  independence_class: I1
+  who_verified: ai_route:same-session (I1)
+  verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
+  status: METADATA_OK
+  xenon_ledger_ref: null
+  disclosure: 'Crossref-confirmed: Okafor, Mbagwu, Chia, Hasim, Udokanma, Chandran (2022), "Institutionalizing
+    Open Science in Africa: Limitations and Prospects", Frontiers in Research Metrics and Analytics, DOI
+    10.3389/frma.2022.855198. Orthogonal to H2 as read from the abstract fetched: the piece is about funding/leadership/access
+    barriers to Open Science adoption across African institutions, not about whether a single claim''s
+    own recorded structure can substitute for credentialing. A prior (unfetched) WebSearch summary suggested
+    the full text discusses Western-standard publishing bias against African institutions, but that specific
+    passage was not independently confirmed by direct fetch/read in this pass and is therefore NOT used
+    as exact_passage or as a basis for this row''s stance -- flagged honestly rather than quoted secondhand.
+    independence_class I1 (same session AI) -- status METADATA_OK only.'
+  superseded_by: null
+  notes: 'Diversity: language=en, source_type=peer_reviewed, geography=Global South (Africa, author institutions
+    in Nigeria/South Africa/Malaysia/USA), search_route="web search: African open science community based
+    research credibility institutional gatekeeping".'
+  citation_card_id: cite-rigour-without-infrastructure-006
+  identifier_kind: DOI
+  claim_match_verification_route: NOT_YET
+  retraction_check: UNCHECKED
+  version_status: PUBLISHED
+  dialogue_table_stance: orthogonal
+  diversity:
+    language: en
+    discipline_or_tradition: science policy / open science in Africa
+    source_type: peer_reviewed
+    search_route_or_database: 'web search: African open science community based research credibility institutional
+      gatekeeping'
+    geography_or_institution: 'Global South (Africa: Nigeria/South Africa/Malaysia/USA author institutions)'
+    venue_quality_index:
+      index_name: null
+      value: null
+      date_read: null
+- $schema: citation_card.schema.json
+  id: cite-rigour-without-infrastructure-007
+  claim_ref: hypothesis-H2
+  identifier:
+    kind: DOI
+    value: 10.1371/journal.pgph.0003696
+  fetch_status: FETCHED
+  fetched_at: '2026-09-04'
+  metadata_verified: true
+  metadata_verified_by: mechanical:crossref
+  metadata_verified_at: '2026-09-04'
+  claim_match_verified: true
+  claim_match_verified_by: ai_route:same-session (I1)
+  claim_match_verified_at: '2026-09-04'
+  exact_passage: '"Citizen science (CS), a collaboration between people and scientists, is a viable approach
+    utilizing citizens experiences in COVID-19 pandemic to manage future response. This study aimed to
+    understand concepts, experiences, approaches, and sustainability issues of CS among citizens in five
+    South and Southeast Asian countries. A qualitative study was carried out in Nepal, Bangladesh, India,
+    Philippines, and Indonesia from October 2022 to March 2023... Some participants expressed lack of
+    confidence and language barriers as notable concerns while sharing their opinions with stakeholders
+    (policymakers and researchers)."'
+  page_or_locator: journals.plos.org/globalpublichealth/article?id=10.1371/journal.pgph.0003696, abstract,
+    as fetched 2026-09-04
+  scope: CONTEXT_ONLY_NOT_EVIDENCE
+  evidence_tier: Dr
+  independence_class: I1
+  who_verified: ai_route:same-session (I1)
+  verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
+  status: METADATA_OK
+  xenon_ledger_ref: null
+  disclosure: 'Crossref-confirmed: Kumar, Hauter, Canlas, Sunaryoko, Maharjan et al. (2025), "Community
+    perceptions of citizen science approach in pandemic preparedness and response in South and Southeast
+    Asian countries", PLOS Global Public Health, DOI 10.1371/journal.pgph.0003696. Orthogonal to H2 as
+    read: this is a qualitative study of participants'' own experience/motivation in citizen science (participation,
+    social responsibility, capacity building, language/ confidence barriers to being heard by "stakeholders
+    (policymakers and researchers)") -- it does not test whether a claim''s recorded structure can substitute
+    for institutional credentialing, though the barrier finding (confidence/language keeping community
+    members from being heard by institutional stakeholders) is adjacent context. independence_class I1
+    (same session AI) -- status METADATA_OK only.'
+  superseded_by: null
+  notes: 'Diversity: language=en (study conducted in Nepal, Bangladesh, India, Philippines, Indonesia),
+    source_type=peer_reviewed, geography=Global South/South & Southeast Asia, search_route="web search:
+    Southeast Asia citizen science community based knowledge production credibility Indonesia Philippines".'
+  citation_card_id: cite-rigour-without-infrastructure-007
+  identifier_kind: DOI
+  claim_match_verification_route: NOT_YET
+  retraction_check: UNCHECKED
+  version_status: PUBLISHED
+  dialogue_table_stance: orthogonal
+  diversity:
+    language: en
+    discipline_or_tradition: public health / citizen science
+    source_type: peer_reviewed
+    search_route_or_database: 'web search: Southeast Asia citizen science community based knowledge production
+      credibility Indonesia Philippines'
+    geography_or_institution: Global South (Nepal, Bangladesh, India, Philippines, Indonesia)
+    venue_quality_index:
+      index_name: null
+      value: null
+      date_read: null
+- $schema: citation_card.schema.json
+  id: cite-rigour-without-infrastructure-008
+  claim_ref: hypothesis-H2
+  identifier:
+    kind: OFFICIAL_URL
+    value: https://so05.tci-thaijo.org/index.php/JTPLC/article/view/283964
+  fetch_status: FETCHED
+  fetched_at: '2026-09-04'
+  metadata_verified: true
+  metadata_verified_by: mechanical:webfetch
+  metadata_verified_at: '2026-09-04'
+  claim_match_verified: true
+  claim_match_verified_by: ai_route:same-session (I1)
+  claim_match_verified_at: '2026-09-04'
+  exact_passage: '"ความเชื่อถือได้ (Trustworthiness) ซึ่งพัฒนาโดย Lincoln และ Guba (1985) เพื่อเป็นเกณฑ์ในการประเมิน
+    คุณภาพของงานวิจัย แนวคิดนี้เปรียบเสมือนมาตรฐานที่ยืนยันว่าข้อค้นพบจากงานวิจัยนั้น \"เชื่อถือได้ สอดคล้อง
+    และเกิดขึ้นจากข้อมูลจริง\" โดยประกอบด้วย 4 องค์ประกอบสำคัญ ได้แก่ 1) ความน่าเชื่อถือ (Credibility)
+    2) ความสามารถในการโอนย้าย (Transferability) 3) ความสอดคล้อง (Dependability) และ 4) ความสามารถใน การยืนยัน
+    (Confirmability)" (p. 67) -- English abstract on the same page: "the article presents the application
+    of the ''Trustworthiness'' framework developed by Lincoln and Guba (1985) as a standard for quality
+    assurance... Confirmability emphasizes neutrality, ensuring that interpretations are derived from
+    actual data rather than the researcher''s imagination, often documented through an audit trail."'
+  page_or_locator: PDF pp. 65-69 (title page, abstract, and section 4 'แนวคิดและความหมายของความ น่าเชื่อถือ
+    (Trustworthiness)'), downloaded and read directly, 2026-09-04
+  scope: DIRECT_QUOTATION
+  evidence_tier: Dr
+  independence_class: I1
+  who_verified: ai_route:same-session (I1)
+  verification_method: MANUAL_READ
+  status: METADATA_OK
+  xenon_ledger_ref: null
+  disclosure: 'Nattapong Srirot (Nakaepittayakhom School, Nakhon Phanom) and Pairoh Sohsomboon (Faculty
+    of Education, Nakhon Phanom University), "การสร้างความน่าเชื่อถือ (Trustworthiness) ของงานวิจัยเชิง
+    คุณภาพในบริบทห้องเรียนวิทยาศาสตร์ / Establishing Trustworthiness in Qualitative Research in Science
+    Classrooms", Journal of Teacher Professional Learning Community (JTPLC), Vol. 5 No. 2, pp. 65-76,
+    received 2025-09-30 / accepted 2025-12-30 (issue dated July-December 2568 BE = 2025 CE). No DOI found
+    on the article page; ThaiJO article URL used as OFFICIAL_URL identifier. Directly supports H2: the
+    paper argues that a qualitative study''s *own recorded structure* (triangulation, member checks, thick
+    description, audit trail for confirmability) is what makes it trustworthy -- not the institution the
+    researcher belongs to -- closely mirroring H2''s "carries the property in its own recorded structure"
+    language. independence_class I1 (same session AI) -- status METADATA_OK only, not VERIFIED.'
+  superseded_by: null
+  notes: 'Diversity: language=th, source_type=peer_reviewed, geography=Thailand (Nakhon Phanom), search_route="web
+    search: ความน่าเชื่อถือทางวิชาการ ผู้เชี่ยวชาญ สถาบัน การตรวจสอบ บทความวิชาการ ไทย". This is the strongest
+    Thai-language same-family (support) source found.'
+  citation_card_id: cite-rigour-without-infrastructure-008
+  identifier_kind: OFFICIAL_URL
+  claim_match_verification_route: NOT_YET
+  retraction_check: UNCHECKED
+  version_status: PUBLISHED
+  dialogue_table_stance: agrees
+  diversity:
+    language: th
+    discipline_or_tradition: qualitative research methodology / science education
+    source_type: peer_reviewed
+    search_route_or_database: 'web search: ความน่าเชื่อถือทางวิชาการ ผู้เชี่ยวชาญ สถาบัน การตรวจสอบ บทความวิชาการ
+      ไทย'
+    geography_or_institution: Thailand (Nakhon Phanom)
+    venue_quality_index:
+      index_name: null
+      value: null
+      date_read: null
+- $schema: citation_card.schema.json
+  id: cite-rigour-without-infrastructure-009
+  claim_ref: hypothesis-H2
+  identifier:
+    kind: OFFICIAL_URL
+    value: https://thestandard.co/thailand-open-science-unlock-ai-big-data-platform/
+  fetch_status: FETCHED
+  fetched_at: '2026-09-04'
+  metadata_verified: true
+  metadata_verified_by: mechanical:webfetch
+  metadata_verified_at: '2026-09-04'
+  claim_match_verified: true
+  claim_match_verified_by: ai_route:same-session (I1)
+  claim_match_verified_at: '2026-09-04'
+  exact_passage: '"ให้งานวิจัยที่รัฐลงทุน ไม่ถูกเก็บอยู่ในห้องสมุดหรือฐานข้อมูลปิดอีกต่อไป แต่ \"เปิด\"
+    ให้ประชาชน ภาคธุรกิจ และสื่อ เข้าถึงและนำไปใช้ได้จริง"'
+  page_or_locator: thestandard.co, article body, byline THE STANDARD TEAM, dated 2025-11-17, as fetched
+    2026-09-04
+  scope: SUPPORTS_GENERAL_CLAIM_ONLY
+  evidence_tier: Dr
+  independence_class: I1
+  who_verified: ai_route:same-session (I1)
+  verification_method: MANUAL_READ
+  status: METADATA_OK
+  xenon_ledger_ref: null
+  disclosure: 'Thai-language news report (grey/community: journalism, not peer-reviewed), THE STANDARD,
+    2025-11-17, on the "Thailand Open Science for ALL" state-research-openness initiative led by Thailand''s
+    National Research Council/Science Research and Innovation office. Only loosely supports H2: it is
+    about making state-funded research openly *accessible* to non-institutional readers (public/business/media),
+    not about whether an individual claim''s own recorded structure can substitute for institutional credentialing
+    of that claim -- logged as SUPPORTS_GENERAL_CLAIM_ONLY (general openness-beyond-institution climate
+    in Thailand), not a direct test of H2. independence_class I1 (same session AI) -- status METADATA_OK
+    only.'
+  superseded_by: null
+  notes: 'Diversity: language=th, source_type=grey_literature (news), geography=Thailand, search_route="web
+    search: วิทยาศาสตร์เปิด Open Science นโยบายไทย ความโปร่งใส งานวิจัย สกสว".'
+  citation_card_id: cite-rigour-without-infrastructure-009
+  identifier_kind: OFFICIAL_URL
+  claim_match_verification_route: NOT_YET
+  retraction_check: UNCHECKED
+  version_status: NOT_APPLICABLE
+  dialogue_table_stance: orthogonal
+  diversity:
+    language: th
+    discipline_or_tradition: science policy journalism
+    source_type: grey_literature
+    search_route_or_database: 'web search: วิทยาศาสตร์เปิด Open Science นโยบายไทย ความโปร่งใส งานวิจัย
+      สกสว'
+    geography_or_institution: Thailand
+    venue_quality_index:
+      index_name: null
+      value: null
+      date_read: null
+strata_table:
+- stratum:
+    quality_tier: peer_reviewed
+    region: Global North / international venue
+    language: en
+    source_type: peer_reviewed
+  candidates_considered:
+  - cite-rigour-without-infrastructure-002
+  - cite-rigour-without-infrastructure-003
+  selected: cite-rigour-without-infrastructure-003
+  selection_reason: Freitag et al. 2016 gives a direct, empirically-grounded account of record-level credibility
+    strategies (clean YES-family read); Rasmussen 2019 kept as a second, more ambiguous peer-reviewed
+    EN source in the same stratum rather than discarded.
+- stratum:
+    quality_tier: peer_reviewed
+    region: Global South (Africa)
+    language: en
+    source_type: peer_reviewed
+  candidates_considered:
+  - cite-rigour-without-infrastructure-006
+  selected: cite-rigour-without-infrastructure-006
+  selection_reason: Only Africa-based Global-South peer-reviewed candidate found in this scoping pass.
+- stratum:
+    quality_tier: peer_reviewed
+    region: Global South (South/Southeast Asia)
+    language: en
+    source_type: peer_reviewed
+  candidates_considered:
+  - cite-rigour-without-infrastructure-007
+  selected: cite-rigour-without-infrastructure-007
+  selection_reason: Only South/Southeast-Asia-based Global-South peer-reviewed candidate found in this
+    scoping pass.
+- stratum:
+    quality_tier: peer_reviewed
+    region: Global South (diasporic/multi-country collective)
+    language: en
+    source_type: peer_reviewed
+  candidates_considered:
+  - cite-rigour-without-infrastructure-005
+  selected: cite-rigour-without-infrastructure-005
+  selection_reason: Only candidate found engaging Open Science governance from a Global-South-authored
+    collective standpoint.
+- stratum:
+    quality_tier: peer_reviewed
+    region: Thailand
+    language: th
+    source_type: peer_reviewed
+  candidates_considered:
+  - cite-rigour-without-infrastructure-008
+  selected: cite-rigour-without-infrastructure-008
+  selection_reason: Only Thai-language peer-reviewed candidate found directly on-point for H2 (record-level
+    trustworthiness framework).
+- stratum:
+    quality_tier: grey_literature
+    region: Thailand
+    language: th
+    source_type: grey_literature
+  candidates_considered:
+  - cite-rigour-without-infrastructure-009
+  selected: cite-rigour-without-infrastructure-009
+  selection_reason: Only Thai-language grey/news candidate found on state open-science policy context.
+- stratum:
+    quality_tier: grey_literature
+    region: Global North / international
+    language: en
+    source_type: grey_literature
+  candidates_considered:
+  - cite-rigour-without-infrastructure-001
+  selected: cite-rigour-without-infrastructure-001
+  selection_reason: Only encyclopedia/tertiary candidate kept; used for definitional grounding of 'open-notebook
+    science'.
+- stratum:
+    quality_tier: practitioner
+    region: Global North / international scholarly-publishing community
+    language: en
+    source_type: practitioner
+  candidates_considered:
+  - cite-rigour-without-infrastructure-004
+  selected: cite-rigour-without-infrastructure-004
+  selection_reason: Only genuinely on-point CHALLENGE-family candidate found in this scoping pass; kept
+    precisely because it disagrees with H2, per the bidirectional-search discipline.
+- stratum:
+    quality_tier: peer_reviewed
+    region: Thailand
+    language: en
+    source_type: peer_reviewed
+  candidates_considered: []
+  selected: null
+  selection_reason: 'Empty stratum, disclosed: no EN-language peer-reviewed candidate authored from a
+    Thailand-based institution was found in this scoping pass (search surfaced Thai-language sources for
+    the Thailand region instead) -- a search-coverage fact, not proof none exists (NC-27).'
+diversity_audit:
+  counts:
+    by_language:
+      en: 7
+      th: 2
+    by_source_type:
+      grey_literature: 2
+      peer_reviewed: 6
+      practitioner: 1
+    by_search_route_or_database:
+      'web search: open notebook science trust without institutional affiliation rigour': 1
+      'web search: citizen science credibility trust independent verification not institution': 2
+      'web search: independent researcher unaffiliated scholar credibility peer review credentialism': 1
+      'web search: open science Global South decolonizing science credibility without Northern institutions': 1
+      'web search: African open science community based research credibility institutional gatekeeping': 1
+      'web search: Southeast Asia citizen science community based knowledge production credibility Indonesia Philippines': 1
+      'web search: ความน่าเชื่อถือทางวิชาการ ผู้เชี่ยวชาญ สถาบัน การตรวจสอบ บทความวิชาการ ไทย': 1
+      'web search: วิทยาศาสตร์เปิด Open Science นโยบายไทย ความโปร่งใส งานวิจัย สกสว': 1
+    by_stance:
+      agrees: 2
+      disagrees: 1
+      orthogonal: 5
+      undetermined: 1
+    by_geography_or_institution:
+      global / no fixed institution: 1
+      USA (Citizen Science Association): 1
+      USA (California coast programs): 1
+      USA / global scholarly-publishing community: 1
+      Global South (India, Aotearoa/NZ, Bangladesh, Philippines and other Southern/diasporic institutions): 1
+      'Global South (Africa: Nigeria/South Africa/Malaysia/USA author institutions)': 1
+      Global South (Nepal, Bangladesh, India, Philippines, Indonesia): 1
+      Thailand (Nakhon Phanom): 1
+      Thailand: 1
+  concentration_flags: []
+  zero_disagree_flag: false
+  never_claim_diverse_without_counts: true
+accuracy:
+  total_citations: 9
+  verified_count: 0
+  spot_check:
+    applicable: true
+    proposed_n_percent: 20
+    small_n_rule_applied: true
+    sampled_citation_ids: []
+    sample_size: 0
+    spot_check_result: PENDING
+    spot_checked_by: null
+    spot_checked_at: null
+secondary_citation_ban_audit:
+  violations_found: 0
+gate:
+  accuracy_gate: FAIL
+  diversity_gate: PASS
+  overall: FAIL
+  blocked_reason: Not every listed citation reached VERIFIED yet.
+disclaimers_emitted:
+- id: D-CITATION-UNVERIFIED
+human_owner: founder

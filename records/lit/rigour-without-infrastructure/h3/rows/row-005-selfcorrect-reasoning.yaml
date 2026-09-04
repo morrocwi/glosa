@@ -1,0 +1,31 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: H3
+source_label: "Huang, Chen, Mishra, Zheng, Yu, Song & Zhou (2023/2024) — Large Language Models Cannot Self-Correct Reasoning Yet (arXiv:2310.01798)"
+how_it_sees_the_problem: >-
+  Frames it as an "intrinsic self-correction" question: can a model fix its own reasoning errors
+  using only its own inherent capability, with NO external signal of any kind (not even a
+  different model)? Finds it generally cannot, and sometimes gets worse trying.
+what_it_separates: >-
+  Separates intrinsic self-correction (zero external input) from correction WITH external
+  feedback (which the paper's own related work shows can work) -- a coarser two-way split than
+  H3's four-way I0/I1/I3-plus-vendor-identity framing, since "external feedback" here is not
+  further divided into same-vendor-different-session vs cross-vendor.
+what_it_assumes: >-
+  Assumes the reasoning benchmarks tested (mostly math/logic) are representative of "reasoning"
+  broadly; assumes zero-external-signal self-correction is a fair test of what a same-vendor
+  RE-CHECK (which does at minimum get a fresh prompt/session, unlike this paper's intrinsic
+  setting) would do -- an analogy this session flags as imperfect, not a like-for-like test.
+agrees_with_h: UNDETERMINED
+disagrees_with_h: "NO"
+what_it_would_say_against_us: >-
+  A defender of "same-vendor re-check is enough" could argue this paper's finding does not touch
+  H3's actual comparison at all: a same-vendor RE-CHECK (a fresh session/prompt asked explicitly
+  to find errors) is not "intrinsic self-correction with the crutch of external feedback withheld"
+  -- it already IS a form of external structure (a new adversarial prompt), so this paper's
+  negative result about a much weaker condition (zero signal at all) cannot be used to predict
+  that same-vendor re-checking (a stronger condition than the one tested here) will fail too.
+citation_card: cite-selfcorrect-reasoning-005
+stance: UNDETERMINED
+verified:
+  metadata_verified: true
+  claim_match_verified: true

@@ -1,0 +1,31 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: H3
+source_label: "Cofact Thailand (2025) — เครื่องมือตรวจสอบภาพจากเอไอเชื่อถือได้แค่ไหน? [How reliable are AI-image-detection tools?] (blog.cofact.org/th)"
+how_it_sees_the_problem: >-
+  Frames verification as a civil-society, practitioner-facing problem: ordinary people and
+  volunteer fact-checkers need PRACTICAL tools and habits to tell whether media is AI-generated,
+  since no single detector is fully trustworthy -- a media-authenticity framing, not a claim-card-
+  field-honesty framing.
+what_it_separates: >-
+  Separates AI-DETECTION (is this content AI-made at all) from AI-CONTENT-VERIFICATION (is this
+  AI-made content's claims accurate/honest) -- H3 is squarely about the second category; this
+  source is squarely about the first, a genuinely different problem despite surface similarity
+  ("checking AI").
+what_it_assumes: >-
+  Assumes readers have access to try multiple detection tools plus manual visual/textual cues
+  (fingers, lighting, text coherence); assumes combining tools compensates for any single tool's
+  weakness -- a "use more than one checker" intuition that rhymes with H3's cross-vendor logic
+  but is not established with any measured comparison in the source itself.
+agrees_with_h: ORTHOGONAL
+disagrees_with_h: ORTHOGONAL
+what_it_would_say_against_us: >-
+  Not determinable from the fetched text as a direct objection to H3 -- the source's own domain
+  (detecting whether media IS AI-generated) is adjacent to but distinct from H3's domain
+  (whether an AI-authored claim's disclosed fields are honest), so it neither supports nor
+  defeats H3's specific mechanism; recorded honestly as ORTHOGONAL rather than stretched into a
+  stance the source does not actually take.
+citation_card: cite-cofact-thai-detector-009
+stance: ORTHOGONAL
+verified:
+  metadata_verified: true
+  claim_match_verified: true

@@ -1,0 +1,32 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: H3
+source_label: "MindStudio blog (2026) — Cross-Vendor AI Agent Review: Why Claude Should Review Codex's Code and Vice Versa (mindstudio.ai/blog)"
+how_it_sees_the_problem: >-
+  Frames it exactly as H3 does, in plain practitioner language: a model reviewing its own output
+  "tends to evaluate it through the same lens it used to create it," while a different vendor's
+  model, trained on different data/architecture/fine-tuning, has a different blind-spot profile
+  and so "often catches" what the first missed.
+what_it_separates: >-
+  Separates same-model review from cross-vendor review along exactly H3's axis (vendor identity)
+  -- the finest-grained match to H3's own framing of any source in this set -- but does NOT
+  separate direction (which vendor reviews which), unlike cite-crossmodel-codereview-002's actual
+  experiment, which found direction matters.
+what_it_assumes: >-
+  Assumes, without presenting a study or measurement of its own, that "genuinely different design
+  philosophies" between vendors reliably translates into complementary (not merely different, and
+  not sometimes WORSE) error-catching -- an assumption the empirical source in this same table
+  (row-002) shows does not hold symmetrically in at least one measured case.
+agrees_with_h: "YES"
+disagrees_with_h: UNDETERMINED
+what_it_would_say_against_us: >-
+  Its own content offers no counter-argument (it is written to support the cross-vendor-review
+  practice), but this session notes against IT: it is marketing/practitioner content from a
+  company selling AI-agent tooling, with no measurement, sample, or method disclosed -- exactly
+  the kind of "diverse sources" concentration risk (grey/community opinion echoing without a
+  study behind it) the manifest's diversity_audit must flag rather than silently count as
+  equivalent-weight evidence to a controlled study.
+citation_card: cite-mindstudio-crossvendor-010
+stance: "YES"
+verified:
+  metadata_verified: true
+  claim_match_verified: true

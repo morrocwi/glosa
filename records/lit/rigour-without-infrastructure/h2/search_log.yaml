@@ -77,16 +77,69 @@ frozen_scope:
     (scope restricted to SUPPORTS_GENERAL_CLAIM_ONLY / CONTEXT_ONLY_NOT_EVIDENCE, never quoted
     directly) per the secondary-citation ban.
 queries:
-  support: []
-  challenge: []
-sources_found: []
+  support:
+    - "open notebook science trust without institutional affiliation rigour"
+    - "citizen science credibility trust independent verification not institution"
+    - "open science Global South decolonizing science credibility without Northern institutions"
+    - "Southeast Asia citizen science community based knowledge production credibility Indonesia
+      Philippines"
+    - "วิทยาศาสตร์เปิด Open Science นโยบายไทย ความโปร่งใส งานวิจัย สกสว"
+    - "African open science community based research credibility institutional gatekeeping"
+    - "ความน่าเชื่อถือทางวิชาการ ผู้เชี่ยวชาญ สถาบัน การตรวจสอบ บทความวิชาการ ไทย"
+  challenge:
+    - "independent researcher unaffiliated scholar credibility peer review credentialism"
+    - "เปิดวิทยาศาสตร์ นักวิจัยอิสระ ความน่าเชื่อถือ ไม่มีสังกัดสถาบัน ประเทศไทย"
+    - "Thailand independent researcher academic credibility without university affiliation case"
+    - "independent scientist blog \"no institutional affiliation\" preprint trust record"
+    - "preregistration transparency record substitute institutional trust replication crisis"
+    - "ThaiJo นักวิจัยอิสระ วิทยาศาสตร์พลเมือง ความน่าเชื่อถือ"
+sources_found:
+  - cite-rigour-without-infrastructure-001
+  - cite-rigour-without-infrastructure-002
+  - cite-rigour-without-infrastructure-003
+  - cite-rigour-without-infrastructure-004
+  - cite-rigour-without-infrastructure-005
+  - cite-rigour-without-infrastructure-006
+  - cite-rigour-without-infrastructure-007
+  - cite-rigour-without-infrastructure-008
+  - cite-rigour-without-infrastructure-009
 prisma_counts: null
 global_track:
-  summary: ''
-  strength_note: ''
+  summary: >-
+    Nine candidate sources kept from a scoping (non-exhaustive) web search: strong,
+    directly-relevant hits on citizen-science credibility mechanics (EN, peer-reviewed) and one
+    directly-on-point CHALLENGE source (a grey/community scholarly-publishing blog whose named
+    commenters explicitly argue institutional record/affiliation is load-bearing beyond what a
+    submission's own quality can substitute for -- close to H2's own falsifier). Global-South
+    sources (Dutta et al. decolonizing-open-science, Okafor et al. Africa open-science) engage a
+    related but distinct question (governance/infrastructure of openness) rather than testing
+    H2's claim-level mechanism directly -- logged as ORTHOGONAL, not stretched into false
+    agreement/disagreement.
+  strength_note: >-
+    No source found makes H2's exact claim (a single claim card's own five-question record fully
+    substitutes for institutional credentialing) either as a tested finding or as a directly
+    refuted one; the closest direct engagement is the Scholarly Kitchen challenge thread (real
+    reader/gatekeeper practice contradicting the "record alone suffices" reading for at least one
+    class of reader) and the JTPLC/Thai qualitative-trustworthiness paper (a record-level
+    framework already substitutes for institutional say-so in that discipline, though the
+    researcher's own training is still assumed).
 local_track:
-  summary: ''
-  result: NOT_SEARCHED
-transfer_verdict: null
-summary_disclaimer: 'TODO: state explicitly what WAS and was NOT found on both support and challenge sides
-  once a search is actually run (S14 §2.2).'
+  summary: >-
+    Two Thai-language sources found and read directly: a Thai peer-reviewed education-journal
+    article (Srirot & Sohsomboon 2025, JTPLC) applying Lincoln & Guba's Trustworthiness framework
+    -- a genuinely on-point, same-family Thai academic source -- and a Thai news report on the
+    government's "Thailand Open Science for ALL" initiative (institution-led openness, orthogonal
+    to H2's claim-level question). No Thai source found that directly challenges H2 (the
+    strongest challenge found was English-language).
+  result: FOUND
+transfer_verdict: TRANSFERS_WITH_ADAPTATION
+summary_disclaimer: >-
+  This is a SCOPING_SEARCH (9 candidates from web search, not a systematic review) --
+  support-family queries surfaced sources broadly compatible with or orthogonal to H2 (open
+  notebook science, citizen-science credibility strategies, Thai qualitative-trustworthiness
+  framework); challenge-family queries surfaced one directly on-point disagreement (Scholarly
+  Kitchen guest post + commenters, arguing institutional record/affiliation IS load-bearing for
+  at least one class of reader/gatekeeper) plus adjacent Global-South critiques of Open Science
+  governance that do not test H2's specific claim-level mechanism. Absence of a stronger,
+  large-sample challenge source here does NOT mean none exists -- this is a small, non-exhaustive
+  scoping pass, disclosed as such.

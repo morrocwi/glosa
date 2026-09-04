@@ -1,56 +1,57 @@
 $schema: citation_card.schema.json
 id: cite-rigour-without-infrastructure-004
 claim_ref: hypothesis-H2
-
 identifier:
   kind: OFFICIAL_URL
-  value: "https://scholarlykitchen.sspnet.org/2026/08/14/guest-post-the-guild-and-the-gap-what-one-rejection-revealed-about-the-cost-of-credentialism/"
-
+  value: https://scholarlykitchen.sspnet.org/2026/08/14/guest-post-the-guild-and-the-gap-what-one-rejection-revealed-about-the-cost-of-credentialism/
 fetch_status: FETCHED
-fetched_at: "2026-09-04"
-
+fetched_at: '2026-09-04'
 metadata_verified: true
-metadata_verified_by: "mechanical:webfetch"
-metadata_verified_at: "2026-09-04"
-
+metadata_verified_by: mechanical:webfetch
+metadata_verified_at: '2026-09-04'
 claim_match_verified: true
-claim_match_verified_by: "ai_route:same-session (I1)"
-claim_match_verified_at: "2026-09-04"
-
-exact_passage: >-
-  Pamela Oliver, comment (2026-08-14): "I give much more scrutiny to someone with no prior
-  record and sketchy identity credentials than I do to a well-established academic." April Smith,
-  comment (2026-08-15): "Preparing manuscripts takes training, practice and experience. If
-  someone has no experience, no affiliation, no supervision or advisory colleagues, etc., then
-  the system should be very careful with that person, especially in today's environment."
-page_or_locator: "scholarlykitchen.sspnet.org, guest post 'The Guild and the Gap...' by Julia
-  Romano, 2026-08-14, plus reader comments, as fetched 2026-09-04"
-
+claim_match_verified_by: ai_route:same-session (I1)
+claim_match_verified_at: '2026-09-04'
+exact_passage: 'Pamela Oliver, comment (2026-08-14): "I give much more scrutiny to someone with no prior
+  record and sketchy identity credentials than I do to a well-established academic." April Smith, comment
+  (2026-08-15): "Preparing manuscripts takes training, practice and experience. If someone has no experience,
+  no affiliation, no supervision or advisory colleagues, etc., then the system should be very careful
+  with that person, especially in today''s environment."'
+page_or_locator: scholarlykitchen.sspnet.org, guest post 'The Guild and the Gap...' by Julia Romano, 2026-08-14,
+  plus reader comments, as fetched 2026-09-04
 scope: DIRECT_QUOTATION
-
 evidence_tier: Dr
-
 independence_class: I1
-
-who_verified: "ai_route:same-session (I1)"
+who_verified: ai_route:same-session (I1)
 verification_method: MANUAL_READ
-
 status: METADATA_OK
-
 xenon_ledger_ref: null
-
-disclosure: >-
-  Grey/community source (practitioner blog with named-commenter discussion), The Scholarly
-  Kitchen (Society for Scholarly Publishing network), guest post dated 2026-08-14. Directly
-  disagrees with H2 as read: two named commenters explicitly argue that institutional
-  affiliation/publication-history functions as a necessary trust marker/gatekeeping signal that
-  a record's own quality alone does not substitute for -- close to H2's own falsifier language
-  ("the credential does load-bearing work the card's own fields cannot substitute for").
-  independence_class I1 (same session AI) -- status METADATA_OK only, not VERIFIED.
-
+disclosure: 'Grey/community source (practitioner blog with named-commenter discussion), The Scholarly
+  Kitchen (Society for Scholarly Publishing network), guest post dated 2026-08-14. Directly disagrees
+  with H2 as read: two named commenters explicitly argue that institutional affiliation/publication-history
+  functions as a necessary trust marker/gatekeeping signal that a record''s own quality alone does not
+  substitute for -- close to H2''s own falsifier language ("the credential does load-bearing work the
+  card''s own fields cannot substitute for"). independence_class I1 (same session AI) -- status METADATA_OK
+  only, not VERIFIED.'
 superseded_by: null
-notes: >-
-  Diversity: language=en, source_type=practitioner/community (scholarly-publishing trade blog),
-  geography=USA/global scholarly-publishing community, search_route="web search: independent
-  researcher unaffiliated scholar credibility peer review credentialism". This is the CHALLENGE
-  family member (search_log.yaml queries.challenge) most directly on-point for H2's falsifier.
+notes: 'Diversity: language=en, source_type=practitioner/community (scholarly-publishing trade blog),
+  geography=USA/global scholarly-publishing community, search_route="web search: independent researcher
+  unaffiliated scholar credibility peer review credentialism". This is the CHALLENGE family member (search_log.yaml
+  queries.challenge) most directly on-point for H2''s falsifier.'
+citation_card_id: cite-rigour-without-infrastructure-004
+identifier_kind: OFFICIAL_URL
+claim_match_verification_route: NOT_YET
+retraction_check: UNCHECKED
+version_status: NOT_APPLICABLE
+dialogue_table_stance: disagrees
+diversity:
+  language: en
+  discipline_or_tradition: scholarly publishing / peer review practice
+  source_type: practitioner
+  search_route_or_database: 'web search: independent researcher unaffiliated scholar credibility peer
+    review credentialism'
+  geography_or_institution: USA / global scholarly-publishing community
+  venue_quality_index:
+    index_name: null
+    value: null
+    date_read: null

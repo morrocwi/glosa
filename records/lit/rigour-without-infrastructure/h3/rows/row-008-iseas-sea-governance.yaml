@@ -1,0 +1,29 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: H3
+source_label: "Fong (2026) — What is Shaping AI Governance Policies in Southeast Asia? (ISEAS Perspective 2025/13, Singapore)"
+how_it_sees_the_problem: >-
+  Frames independent verification as an INSTITUTIONAL/regulatory-body capacity question at the
+  national level (which body has authority and capability to act as a market-surveillance
+  authority for AI), not a technical model-checking question -- macro-institutional framing
+  versus H3's micro/technical framing.
+what_it_separates: >-
+  Separates countries by existing Data Protection Authority (DPA) capability across Southeast
+  Asia, arguing DPA-as-AI-oversight-body is viable for some states and not others -- a
+  country-level granularity H3 does not use at all (H3 operates at the level of individual
+  claim-card checks, not national regulatory capacity).
+what_it_assumes: >-
+  Assumes DPAs are the natural candidate institution for AI market surveillance in the region;
+  does not examine model-level or vendor-level review mechanisms.
+agrees_with_h: ORTHOGONAL
+disagrees_with_h: ORTHOGONAL
+what_it_would_say_against_us: >-
+  Similar to the Bangladesh source: this would not contest H3's empirical mechanism, but it names
+  a real constraint on H3's applicability within Southeast Asia specifically -- if national bodies
+  capable of mandating or auditing INDEPENDENT (let alone cross-vendor) AI review are themselves
+  under-resourced in parts of the region, a policy built on "just require cross-vendor checking"
+  faces an institutional-capacity gap this source documents directly for SEA states.
+citation_card: cite-iseas-sea-governance-008
+stance: ORTHOGONAL
+verified:
+  metadata_verified: true
+  claim_match_verified: true

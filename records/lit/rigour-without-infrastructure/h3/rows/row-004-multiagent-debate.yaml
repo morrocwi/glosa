@@ -1,0 +1,32 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: H3
+source_label: "Du, Li, Torralba, Tenenbaum & Mordatch (2023) — Improving Factuality and Reasoning in Language Models through Multiagent Debate (arXiv:2305.14325)"
+how_it_sees_the_problem: >-
+  Frames it as a "society of minds" problem: a single model instance's answer can be improved by
+  having MULTIPLE instances (of the same or similar underlying model) propose, critique, and
+  revise answers across rounds, converging on a better joint answer -- the operative variable is
+  plurality of reasoning traces, not vendor identity.
+what_it_separates: >-
+  Separates single-pass generation from multi-round multi-instance debate; does NOT separate
+  same-vendor multiplicity from cross-vendor multiplicity -- coarser than H3 on exactly the axis
+  H3 needs, since the debating instances in this paper's main experiments are not described as
+  different vendors.
+what_it_assumes: >-
+  Assumes that diversity of REASONING TRACES (achieved by re-sampling/re-prompting) is sufficient
+  to catch errors, without needing diversity of TRAINING SOURCE (different vendor/pretraining
+  corpus) -- an assumption that, if right, would work AGAINST H3's specific emphasis on cross-
+  vendor independence as the active ingredient.
+agrees_with_h: ORTHOGONAL
+disagrees_with_h: ORTHOGONAL
+what_it_would_say_against_us: >-
+  If multi-instance debate WITHIN one vendor already improves factuality and reduces
+  hallucination, then H3's claim that specifically CROSS-vendor independence (I3) is what drives
+  the rise in catch rate -- rather than mere plurality of an independent-enough re-run, regardless
+  of vendor -- is undercut: the active ingredient could be "more than one attempt/instance" rather
+  than "different vendor" per se. This paper cannot settle that question either way because it
+  never varies vendor identity as a factor.
+citation_card: cite-multiagent-debate-004
+stance: ORTHOGONAL
+verified:
+  metadata_verified: true
+  claim_match_verified: true

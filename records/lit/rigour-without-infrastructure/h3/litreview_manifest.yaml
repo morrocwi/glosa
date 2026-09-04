@@ -1,0 +1,380 @@
+$schema: litreview_manifest.schema.json
+id: litrev-rigour-without-infrastructure-001
+hypothesis_ref: H3
+search_log_ref: search-rigour-without-infrastructure-001
+search_log_hash: "sha256:7a0fb0b48019354448e7dd0cc6ecc8645f3d7b264fef1375b1afcf6862b08211"
+dialogue_table_ref: records/lit/rigour-without-infrastructure/h3/dialogue_table.md
+neighbour_table_ref: ""
+neighbour_table_not_produced_this_pass: >-
+  Not produced this LRS run -- task A2 scoped this pass to search_log, citation cards, dialogue
+  table, and manifest (S14 L1-L5 + the manifest half of L6), not the neighbour_table.md half of
+  L6. Flagged honestly as an open item rather than fabricated or silently left implicit.
+status: FROZEN
+frozen_at: '2026-09-04T13:17:07.564656+00:00'
+supersedes: null
+citations:
+- citation_card_id: cite-bangladesh-readiness-007
+  status: METADATA_OK
+  identifier_kind: ARXIV
+  fetch_status: FETCHED
+  acquisition_log_ref: null
+  metadata_verified: true
+  claim_match_verified: true
+  claim_match_verification_route: NOT_YET
+  version_status: PREPRINT
+  retraction_check: UNCHECKED
+  dialogue_table_stance: orthogonal
+  diversity:
+    language: en
+    discipline_or_tradition: AI governance / HCI / ICTD (Bangladesh)
+    source_type: preprint
+    search_route_or_database: WebSearch (general web, 'Global South AI verification...' query) -> arXiv
+      abstract page
+    geography_or_institution: Bangladesh (subject/title/abstract-confirmed; individual author institutions
+      not listed on the fetched page) -- Global South
+    venue_quality_index:
+      index_name: null
+      value: null
+      date_read: null
+- citation_card_id: cite-cofact-thai-detector-009
+  status: METADATA_OK
+  identifier_kind: OFFICIAL_URL
+  fetch_status: FETCHED
+  acquisition_log_ref: null
+  metadata_verified: true
+  claim_match_verified: true
+  claim_match_verification_route: NOT_YET
+  version_status: NOT_APPLICABLE
+  retraction_check: UNCHECKED
+  dialogue_table_stance: orthogonal
+  diversity:
+    language: th
+    discipline_or_tradition: civil-society fact-checking practice
+    search_route_or_database: WebSearch (Thai-language query, 'Cofact Thailand AI ตรวจสอบข้อเท็จจริง...')
+      -> Cofact publisher page
+    source_type: community
+    geography_or_institution: Cofact (โคแฟค), Thailand -- Thailand/SEA
+    venue_quality_index:
+      index_name: null
+      value: null
+      date_read: null
+- citation_card_id: cite-crossmodel-codereview-002
+  status: METADATA_OK
+  identifier_kind: ARXIV
+  fetch_status: FETCHED
+  acquisition_log_ref: null
+  metadata_verified: true
+  claim_match_verified: true
+  claim_match_verification_route: NOT_YET
+  version_status: PREPRINT
+  retraction_check: UNCHECKED
+  dialogue_table_stance: disagrees
+  diversity:
+    language: en
+    discipline_or_tradition: software engineering / AI-agent code review
+    source_type: preprint
+    search_route_or_database: WebSearch (general web) -> arXiv abstract page
+    geography_or_institution: not stated on fetched arXiv abstract page (undetermined)
+    venue_quality_index:
+      index_name: null
+      value: null
+      date_read: null
+- citation_card_id: cite-iseas-sea-governance-008
+  status: METADATA_OK
+  identifier_kind: OFFICIAL_URL
+  fetch_status: FETCHED
+  acquisition_log_ref: null
+  metadata_verified: true
+  claim_match_verified: true
+  claim_match_verification_route: NOT_YET
+  version_status: NOT_APPLICABLE
+  retraction_check: UNCHECKED
+  dialogue_table_stance: orthogonal
+  diversity:
+    language: en
+    discipline_or_tradition: AI policy / regulatory governance commentary
+    source_type: grey_literature
+    search_route_or_database: WebSearch (general web, 'Southeast Asia AI safety evaluation...' query)
+      -> ISEAS publisher page
+    geography_or_institution: ISEAS - Yusof Ishak Institute, Singapore -- Southeast Asia
+    venue_quality_index:
+      index_name: null
+      value: null
+      date_read: null
+- citation_card_id: cite-legalai-india-006
+  status: METADATA_OK
+  identifier_kind: ARXIV
+  fetch_status: FETCHED
+  acquisition_log_ref: null
+  metadata_verified: true
+  claim_match_verified: true
+  claim_match_verification_route: NOT_YET
+  version_status: PREPRINT
+  retraction_check: UNCHECKED
+  dialogue_table_stance: undetermined
+  diversity:
+    language: en
+    discipline_or_tradition: legal AI / human-computer interaction, Indian contract law
+    source_type: preprint
+    search_route_or_database: WebSearch (general web, 'India AI audit...' query) -> arXiv HTML full text
+    geography_or_institution: Sunrise University, Alwar, Rajasthan, India (two authors); Technological
+      University Dublin, Ireland (one author) -- Global South (India)
+    venue_quality_index:
+      index_name: null
+      value: null
+      date_read: null
+- citation_card_id: cite-mindstudio-crossvendor-010
+  status: METADATA_OK
+  identifier_kind: OFFICIAL_URL
+  fetch_status: FETCHED
+  acquisition_log_ref: null
+  metadata_verified: true
+  claim_match_verified: true
+  claim_match_verification_route: NOT_YET
+  version_status: NOT_APPLICABLE
+  retraction_check: UNCHECKED
+  dialogue_table_stance: agrees
+  diversity:
+    language: en
+    discipline_or_tradition: AI-agent tooling / practitioner engineering blog
+    source_type: practitioner
+    search_route_or_database: WebSearch (general web) -> MindStudio publisher blog page
+    geography_or_institution: MindStudio (AI agent platform vendor); country of incorporation not stated
+      on the fetched page (undetermined)
+    venue_quality_index:
+      index_name: null
+      value: null
+      date_read: null
+- citation_card_id: cite-multiagent-debate-004
+  status: METADATA_OK
+  identifier_kind: ARXIV
+  fetch_status: FETCHED
+  acquisition_log_ref: null
+  metadata_verified: true
+  claim_match_verified: true
+  claim_match_verification_route: NOT_YET
+  version_status: PREPRINT
+  retraction_check: UNCHECKED
+  dialogue_table_stance: orthogonal
+  diversity:
+    language: en
+    discipline_or_tradition: NLP / multi-agent reasoning
+    source_type: preprint
+    search_route_or_database: WebSearch (general web) -> arXiv abstract page
+    geography_or_institution: not stated on fetched arXiv abstract page (undetermined)
+    venue_quality_index:
+      index_name: null
+      value: null
+      date_read: null
+- citation_card_id: cite-selfcorrect-reasoning-005
+  status: METADATA_OK
+  identifier_kind: ARXIV
+  fetch_status: FETCHED
+  acquisition_log_ref: null
+  metadata_verified: true
+  claim_match_verified: true
+  claim_match_verification_route: NOT_YET
+  version_status: PREPRINT
+  retraction_check: UNCHECKED
+  dialogue_table_stance: undetermined
+  diversity:
+    language: en
+    discipline_or_tradition: NLP / LLM self-correction
+    source_type: preprint
+    search_route_or_database: WebSearch (general web) -> arXiv abstract page
+    geography_or_institution: not stated on fetched arXiv abstract page (undetermined)
+    venue_quality_index:
+      index_name: null
+      value: null
+      date_read: null
+- citation_card_id: cite-selfpreference-judge-001
+  status: METADATA_OK
+  identifier_kind: ARXIV
+  fetch_status: FETCHED
+  acquisition_log_ref: null
+  metadata_verified: true
+  claim_match_verified: true
+  claim_match_verification_route: NOT_YET
+  version_status: PREPRINT
+  retraction_check: UNCHECKED
+  dialogue_table_stance: undetermined
+  diversity:
+    language: en
+    discipline_or_tradition: NLP / LLM evaluation
+    source_type: preprint
+    search_route_or_database: WebSearch (general web) -> arXiv abstract page
+    geography_or_institution: not stated on fetched arXiv abstract page (undetermined)
+    venue_quality_index:
+      index_name: null
+      value: null
+      date_read: null
+- citation_card_id: cite-toohconsistent-003
+  status: METADATA_OK
+  identifier_kind: DOI
+  fetch_status: FETCHED
+  acquisition_log_ref: null
+  metadata_verified: true
+  claim_match_verified: true
+  claim_match_verification_route: NOT_YET
+  version_status: PUBLISHED
+  retraction_check: UNCHECKED
+  dialogue_table_stance: agrees
+  diversity:
+    language: en
+    discipline_or_tradition: NLP / LLM error detection
+    source_type: peer_reviewed
+    search_route_or_database: WebSearch (general web) -> Crossref (mechanical) + ACL Anthology page
+    geography_or_institution: not confirmed by any page this session directly opened (undetermined; an
+      unopened secondary source hinted at a Chinese Academy of Sciences affiliation but is not used, per
+      the secondary-citation ban)
+    venue_quality_index:
+      index_name: EMNLP main conference (peer-reviewed, ACL)
+      value: main track
+      date_read: '2026-09-04'
+strata_table:
+  - stratum: { quality_tier: "peer_reviewed", region: "global_north_or_undetermined", language: "en", source_type: "peer_reviewed" }
+    candidates_considered: [cite-toohconsistent-003]
+    selected: cite-toohconsistent-003
+    selection_reason: "Only peer-reviewed candidate found this scoping search (EMNLP 2025 main track, DOI-confirmed) that speaks to H3's mechanism (self-consistent errors differ across models)."
+  - stratum: { quality_tier: "preprint", region: "global_north_or_undetermined", language: "en", source_type: "preprint" }
+    candidates_considered: [cite-selfpreference-judge-001, cite-crossmodel-codereview-002, cite-multiagent-debate-004, cite-selfcorrect-reasoning-005]
+    selected: cite-crossmodel-codereview-002
+    selection_reason: "Selected as the single most on-point candidate in this stratum -- the only source that directly runs a cross-vendor-vs-same-vendor review comparison with a quantitative result -- while the other three are still kept and cited for the underlying mechanism (not dropped, per strata_table's own selection-within-stratum rule; all four appear in citations[] above and in the dialogue table)."
+  - stratum: { quality_tier: "preprint", region: "global_south", language: "en", source_type: "preprint" }
+    candidates_considered: [cite-bangladesh-readiness-007, cite-legalai-india-006]
+    selected: cite-legalai-india-006
+    selection_reason: "Both kept (both appear in citations[]); legalai-india is the more directly on-topic one (measures a per-vendor error-rate spread and human catch behaviour), bangladesh-readiness is context on review-capacity constraints -- distinct enough contributions that both were selected rather than dropping one."
+  - stratum: { quality_tier: "grey_literature", region: "sea_thailand", language: "en", source_type: "grey_literature" }
+    candidates_considered: [cite-iseas-sea-governance-008]
+    selected: cite-iseas-sea-governance-008
+    selection_reason: "Only SEA-region institutional grey-literature candidate found in this scoping search."
+  - stratum: { quality_tier: "community", region: "thailand", language: "th", source_type: "community" }
+    candidates_considered: [cite-cofact-thai-detector-009]
+    selected: cite-cofact-thai-detector-009
+    selection_reason: "Only Thai-language civil-society source found; fills the Thai-language cell that would otherwise be empty."
+  - stratum: { quality_tier: "practitioner", region: "global_north_or_undetermined", language: "en", source_type: "practitioner" }
+    candidates_considered: [cite-mindstudio-crossvendor-010]
+    selected: cite-mindstudio-crossvendor-010
+    selection_reason: "Only grey/practitioner source found stating H3's mechanism directly in plain terms; kept despite carrying no study of its own, precisely to demonstrate the diversity_audit's job of not over-weighting an unstudied assertion."
+  - stratum: { quality_tier: "any", region: "global_south_africa_latam", language: "any", source_type: "any" }
+    candidates_considered: []
+    selected: null
+    selection_reason: "EMPTY STRATUM, disclosed rather than omitted (NC-27): no African- or Latin-American-institution-confirmed source testing H3's mechanism (or a close structural analogue) was found within this scoping search's 14-query, 6-round budget. Candidates were opened (Png 2022 FAccT paper -- Oxford-affiliated per Crossref, not Global-South-institution; an African-NLP-evaluation paper -- topically off-scope, no same/cross-model catch-rate comparison) but neither qualified; see search_log.yaml `rejected_candidates` for the honest reasons. This is a LOCAL_EVIDENCE_NOT_FOUND-style coverage fact for this stratum, not evidence the literature does not exist."
+diversity_audit:
+  counts:
+    by_language:
+      en: 9
+      th: 1
+    by_source_type:
+      preprint: 6
+      peer_reviewed: 1
+      grey_literature: 1
+      community: 1
+      practitioner: 1
+    by_search_route_or_database:
+      webSearch_to_arxiv_page: 6
+      webSearch_to_crossref_plus_acl: 1
+      webSearch_to_publisher_page_non_arxiv: 3
+    by_stance:
+      agrees: 2
+      disagrees: 1
+      orthogonal: 4
+      undetermined: 3
+    by_geography_or_institution:
+      undetermined_not_stated_on_fetched_page: 6
+      bangladesh: 1
+      india_and_ireland: 1
+      singapore_sea: 1
+      thailand: 1
+  concentration_flags:
+    - dimension: by_language
+      cell: en
+      percent: 90
+      disclaimer_id: D-LIT-CONCENTRATED
+      note: >-
+        9 of 10 kept sources are English-language; the single Thai-language source
+        (cite-cofact-thai-detector-009) meets this project's ">=2 Thai-language OR
+        Thailand/SEA-based" floor only jointly with the SEA-based-but-English
+        cite-iseas-sea-governance-008 -- true Thai-language representation is thin (1/10) and
+        should not be described in prose as "diverse language coverage" without this caveat.
+    - dimension: by_geography_or_institution
+      cell: undetermined_not_stated_on_fetched_page
+      percent: 60
+      disclaimer_id: D-LIT-CONCENTRATED
+      note: >-
+        6 of 10 citation cards could not have author institution/country confirmed from the page
+        this session actually opened (arXiv abstract pages very rarely list affiliations; this
+        session declined to guess from unopened secondary sources, per the secondary-citation
+        ban). This is a real evidentiary gap in the diversity picture, not a neutral "spread
+        across many institutions" -- disclosed here rather than left implicit in an empty-looking
+        counts table.
+  zero_disagree_flag: false
+  never_claim_diverse_without_counts: true
+accuracy:
+  total_citations: 10
+  verified_count: 0
+  spot_check:
+    applicable: true
+    proposed_n_percent: 20
+    small_n_rule_applied: false
+    sampled_citation_ids: []
+    sample_size: 0
+    spot_check_result: PENDING
+    spot_checked_by: null
+    spot_checked_at: null
+secondary_citation_ban_audit:
+  violations_found: 0
+gate:
+  accuracy_gate: FAIL
+  # Honest FAIL, not an error state (S14 worked-example pattern): all 10 citations reached
+  # metadata_verified=true and claim_match_verified=true, but the verifying route was this SAME
+  # AI session (independence_class I1) -- per FOUNDATION_v0.5 S14 L5 and this task's own binding
+  # instruction, status may only reach VERIFIED via a genuinely decorrelated I3+ AI route or a
+  # human I5 route (claim_match_verification_route: HUMAN_I5 | DECORRELATED_AI_I3), never NOT_YET.
+  # This manifest has zero VERIFIED citations by construction of this pass; accuracy_gate == FAIL
+  # is the correct, undisguised state, matching D-SAME-VENDOR/D-CITATION-UNVERIFIED.
+  diversity_gate: PASS_WITH_LIMITS
+  # Corrected from the CLI scaffold's crude "PASS if total_citations > 0" placeholder (which does
+  # not itself compute concentration) after a manual diversity_audit pass found two real,
+  # disclosed concentrations (90% English-language; 60% undetermined author geography) --
+  # PASS_WITH_LIMITS is the honest value per S14's own rule ("a disclosed concentration downgrades
+  # to PASS_WITH_LIMITS ... a real, disclosed concentration is honest; a fabricated 'diverse'
+  # claim is not"). The stratification FLOOR this task set (>=2 Thai/SEA, >=2 Global South, >=1
+  # grey/community, >=8 total candidates) IS met -- see manifest-level counts below -- which is
+  # why this is PASS_WITH_LIMITS and not FAIL.
+  overall: FAIL
+  # overall FAIL is driven entirely by accuracy_gate == FAIL (S14 rule: diversity failing alone
+  # would only downgrade to PASS_WITH_LIMITS, but accuracy_gate itself must be in
+  # {PASS, PASS_WITH_LIMITS} for overall to reach anything but FAIL, and it is not).
+  blocked_reason: >-
+    accuracy_gate == FAIL: all 10 citations are status METADATA_OK (metadata_verified=true,
+    claim_match_verified=true, both confirmed only by this same AI session -- independence_class
+    I1). None has reached VERIFIED because none has a HUMAN_I5 or DECORRELATED_AI_I3
+    claim_match_verification_route yet (all currently NOT_YET). Per P13's gate ("no lit-review
+    section may be drafted ... until gate.overall in {PASS, PASS_WITH_LIMITS}"), this hypothesis's
+    lit-review section may NOT be drafted into paper/main.md on the strength of this manifest
+    alone -- the next required step is routing at least the spot-check sample (S14 5.4: 20% of
+    10 -> 2 citations, small_n_rule not applicable at n=10) through a genuinely decorrelated I3 AI
+    route or a human (founder) I5 read, per P13's "best a human can do" standard.
+disclaimers_emitted:
+- id: D-CITATION-UNVERIFIED
+- id: D-SAME-VENDOR
+- id: D-LIT-MODE
+- id: D-LIT-CONCENTRATED
+- id: D-COMPARISON
+disclaimers_full_text:
+  # disclaimer_ref only carries `id` per common.defs.json; full text kept here (additional,
+  # non-schema-required field) so the disclosure is not lost -- read alongside disclaimers_emitted.
+  D-CITATION-UNVERIFIED: >-
+    Every citation in this manifest is METADATA_OK, not VERIFIED -- claim_match_verified was
+    confirmed only by the same AI session that drafted this manifest (independence_class I1).
+    Treat every quoted passage/stance in this manifest and its dialogue_table.md as candidate
+    evidence pending an I3+ or human I5 check, not as settled.
+  D-SAME-VENDOR: >-
+    The sole verifying route for all 10 citations so far is this single Claude (Anthropic)
+    session -- no cross-vendor or cross-session AI route, and no human read, has yet independently
+    re-derived any exact_passage or stance in this manifest.
+  D-LIT-MODE: "This is a SCOPING_SEARCH (search_log.yaml search_mode), not a SYSTEMATIC_REVIEW -- bounded by a stopping rule (>=8 candidates + stratification floor, or 6 query rounds), not exhaustive."
+  D-LIT-CONCENTRATED: "Two disclosed concentrations in diversity_audit.concentration_flags: 90% of sources are English-language; 60% have undetermined author geography/institution (see diversity_audit above for both)."
+  D-COMPARISON: "Every neighbour/source comparison in dialogue_table.md is same/different/cited language only -- no novelty or priority claim is made for H3 or for glosa relative to any source here."
+human_owner: founder

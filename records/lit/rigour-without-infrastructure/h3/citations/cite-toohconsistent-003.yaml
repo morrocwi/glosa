@@ -1,63 +1,21 @@
-$schema: citation_card.schema.json
-id: cite-toohconsistent-003
-claim_ref: "H3"
-
-identifier:
-  kind: DOI
-  value: "10.18653/v1/2025.emnlp-main.238"
-
-fetch_status: FETCHED
-fetched_at: "2026-09-04"
-
-metadata_verified: true
-metadata_verified_by: "mechanical:crossref (curl https://api.crossref.org/works/10.18653/v1/2025.emnlp-main.238)"
-metadata_verified_at: "2026-09-04"
-
-claim_match_verified: true
-claim_match_verified_by: "ai_route:claude-same-session-WebFetch-2026-09-04"
-claim_match_verified_at: "2026-09-04"
-
-exact_passage: >-
-  "Motivated by the observation that self-consistent errors often differ across LLMs, we propose a
-  simple but effective cross-model probe method that fuses hidden state evidence from an external
-  verifier LLM. Our method significantly enhances performance on self-consistent errors across
-  three LLM families."
-page_or_locator: "Abstract, EMNLP 2025 Main (aclanthology.org/2025.emnlp-main.238)"
-
-scope: DIRECT_QUOTATION
-
-evidence_tier: fit_calibrated
-
-independence_class: I1
-
-who_verified: "ai_route:claude-same-session"
-verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
-
+citation_card_id: cite-toohconsistent-003
 status: METADATA_OK
-
-xenon_ledger_ref: null
-
-disclosure: >-
-  Metadata mechanically confirmed via Crossref (title/container-title/authors/publisher match
-  exactly: title, container-title "Proceedings of the 2025 Conference on Empirical Methods in
-  Natural Language Processing", publisher ACL). claim_match_verified true from the abstract text,
-  read directly via WebFetch of arxiv.org/abs/2505.17656 and aclanthology.org/2025.emnlp-main.238.
-  Supports H3's mechanism directly: same-model repeated sampling ("self-consistency") systematically
-  FAILS to catch a class of error the paper names "self-consistent errors" -- the model repeats
-  the same wrong answer -- while a DIFFERENT ("external verifier") model's hidden-state signal
-  helps detect them, because self-consistent errors "often differ across LLMs" (i.e. what one
-  model gets stably wrong, another model does not get wrong the same way, so cross-model checking
-  has traction that same-model re-sampling structurally lacks). This is a strong SUPPORT source
-  for H3's underlying mechanism, though its instrument is LLM factual-error detection via hidden
-  states, not human-legible claim-card field review -- domain gap flagged, not elided. Session-
-  internal I1 check only; status stays METADATA_OK.
-
-superseded_by: null
-notes: >-
-  Authors: Hexiang Tan, Fei Sun, Sha Liu, Du Su, Qi Cao, Xin Chen, Jingang Wang, Xunliang Cai,
-  Yuanzhuo Wang, Huawei Shen, Xueqi Cheng. EMNLP 2025 Main, Suzhou, China, Nov 2025 (peer-reviewed).
-  A prior web-search snippet (not itself fetched/opened by this session, and therefore NOT used
-  to fill any field here per the secondary-citation ban FC-S14-1) suggested a CAS-affiliated
-  author list; this session could not confirm that affiliation from either the arXiv abstract page
-  or the ACL Anthology page it actually opened, so geography_or_institution is recorded as
-  undetermined below rather than asserted from an unopened source.
+identifier_kind: DOI
+fetch_status: FETCHED
+acquisition_log_ref: null
+metadata_verified: true
+claim_match_verified: true
+claim_match_verification_route: NOT_YET
+version_status: PUBLISHED
+retraction_check: UNCHECKED
+dialogue_table_stance: agrees
+diversity:
+  language: en
+  discipline_or_tradition: "NLP / LLM error detection"
+  source_type: peer_reviewed
+  search_route_or_database: "WebSearch (general web) -> Crossref (mechanical) + ACL Anthology page"
+  geography_or_institution: "not confirmed by any page this session directly opened (undetermined; an unopened secondary source hinted at a Chinese Academy of Sciences affiliation but is not used, per the secondary-citation ban)"
+  venue_quality_index:
+    index_name: "EMNLP main conference (peer-reviewed, ACL)"
+    value: "main track"
+    date_read: "2026-09-04"

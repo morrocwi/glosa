@@ -1,55 +1,21 @@
-$schema: citation_card.schema.json
-id: cite-bangladesh-readiness-007
-claim_ref: "H3"
-
-identifier:
-  kind: ARXIV
-  value: "2601.12934"
-
-fetch_status: FETCHED
-fetched_at: "2026-09-04"
-
-metadata_verified: true
-metadata_verified_by: "mechanical:arxiv_abstract_page (WebFetch of https://arxiv.org/abs/2601.12934)"
-metadata_verified_at: "2026-09-04"
-
-claim_match_verified: true
-claim_match_verified_by: "ai_route:claude-same-session-WebFetch-2026-09-04"
-claim_match_verified_at: "2026-09-04"
-
-exact_passage: >-
-  "Bangladesh, ranked 82nd in the 2023 Oxford Insights AI Readiness Index, exhibits significant
-  deficits in technology capacity and research ecosystems, despite strong governmental visions...
-  Findings reveal outdated curricula, limited faculty upskilling, inadequate computing resources,
-  entrenched gender disparities, and the near-total absence of AI ethics instruction."
-page_or_locator: "Abstract, arXiv:2601.12934"
-
-scope: CONTEXT_ONLY_NOT_EVIDENCE
-
-evidence_tier: Dr
-
-independence_class: I1
-
-who_verified: "ai_route:claude-same-session"
-verification_method: MANUAL_READ
-
+citation_card_id: cite-bangladesh-readiness-007
 status: METADATA_OK
-
-xenon_ledger_ref: null
-
-disclosure: >-
-  Existence/metadata mechanically confirmed via the arXiv abstract page. claim_match_verified true
-  from text read directly. This is a Global South (Bangladesh) source but is CONTEXT_ONLY_NOT_
-  EVIDENCE for H3 specifically -- it documents institutional/workforce capacity constraints for
-  independent AI review and ethics oversight in a Global South setting (near-total absence of AI
-  ethics instruction, limited faculty upskilling), which bears on H3's EXTERNAL VALIDITY (can a
-  cross-vendor-review advantage, if real, actually be operationalized where independent-review
-  capacity is scarce) but does not itself measure any catch-rate comparison.
-
-superseded_by: null
-notes: >-
-  Authors: Sharifa Sultana, Rupali Samad, Mehzabin Haque, Zinnat Sultana, Zulkarin Jahangir, B M
-  Mainul Hossain, Rashed Mujib Noman, Syed Ishtiaque Ahmed. Submitted 2026-01-19. Institutional
-  affiliations were not listed on the fetched arXiv abstract page; country focus (Bangladesh) is
-  explicit in the title and abstract itself, which is the basis for the Global South stratum
-  classification, independent of any unconfirmed author-affiliation claim.
+identifier_kind: ARXIV
+fetch_status: FETCHED
+acquisition_log_ref: null
+metadata_verified: true
+claim_match_verified: true
+claim_match_verification_route: NOT_YET
+version_status: PREPRINT
+retraction_check: UNCHECKED
+dialogue_table_stance: orthogonal
+diversity:
+  language: en
+  discipline_or_tradition: "AI governance / HCI / ICTD (Bangladesh)"
+  source_type: preprint
+  search_route_or_database: "WebSearch (general web, 'Global South AI verification...' query) -> arXiv abstract page"
+  geography_or_institution: "Bangladesh (subject/title/abstract-confirmed; individual author institutions not listed on the fetched page) -- Global South"
+  venue_quality_index:
+    index_name: null
+    value: null
+    date_read: null

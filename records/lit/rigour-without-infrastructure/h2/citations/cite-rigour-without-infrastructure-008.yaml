@@ -1,63 +1,62 @@
 $schema: citation_card.schema.json
 id: cite-rigour-without-infrastructure-008
 claim_ref: hypothesis-H2
-
 identifier:
   kind: OFFICIAL_URL
-  value: "https://so05.tci-thaijo.org/index.php/JTPLC/article/view/283964"
-
+  value: https://so05.tci-thaijo.org/index.php/JTPLC/article/view/283964
 fetch_status: FETCHED
-fetched_at: "2026-09-04"
-
+fetched_at: '2026-09-04'
 metadata_verified: true
-metadata_verified_by: "mechanical:webfetch"
-metadata_verified_at: "2026-09-04"
-
+metadata_verified_by: mechanical:webfetch
+metadata_verified_at: '2026-09-04'
 claim_match_verified: true
-claim_match_verified_by: "ai_route:same-session (I1)"
-claim_match_verified_at: "2026-09-04"
-
-exact_passage: >-
-  "ความเชื่อถือได้ (Trustworthiness) ซึ่งพัฒนาโดย Lincoln และ Guba (1985) เพื่อเป็นเกณฑ์ในการประเมิน
+claim_match_verified_by: ai_route:same-session (I1)
+claim_match_verified_at: '2026-09-04'
+exact_passage: '"ความเชื่อถือได้ (Trustworthiness) ซึ่งพัฒนาโดย Lincoln และ Guba (1985) เพื่อเป็นเกณฑ์ในการประเมิน
   คุณภาพของงานวิจัย แนวคิดนี้เปรียบเสมือนมาตรฐานที่ยืนยันว่าข้อค้นพบจากงานวิจัยนั้น \"เชื่อถือได้ สอดคล้อง
-  และเกิดขึ้นจากข้อมูลจริง\" โดยประกอบด้วย 4 องค์ประกอบสำคัญ ได้แก่ 1) ความน่าเชื่อถือ (Credibility)
-  2) ความสามารถในการโอนย้าย (Transferability) 3) ความสอดคล้อง (Dependability) และ 4) ความสามารถใน
-  การยืนยัน (Confirmability)" (p. 67) -- English abstract on the same page: "the article presents
-  the application of the 'Trustworthiness' framework developed by Lincoln and Guba (1985) as a
-  standard for quality assurance... Confirmability emphasizes neutrality, ensuring that
-  interpretations are derived from actual data rather than the researcher's imagination, often
-  documented through an audit trail."
-page_or_locator: "PDF pp. 65-69 (title page, abstract, and section 4 'แนวคิดและความหมายของความ
-  น่าเชื่อถือ (Trustworthiness)'), downloaded and read directly, 2026-09-04"
-
+  และเกิดขึ้นจากข้อมูลจริง\" โดยประกอบด้วย 4 องค์ประกอบสำคัญ ได้แก่ 1) ความน่าเชื่อถือ (Credibility) 2)
+  ความสามารถในการโอนย้าย (Transferability) 3) ความสอดคล้อง (Dependability) และ 4) ความสามารถใน การยืนยัน
+  (Confirmability)" (p. 67) -- English abstract on the same page: "the article presents the application
+  of the ''Trustworthiness'' framework developed by Lincoln and Guba (1985) as a standard for quality
+  assurance... Confirmability emphasizes neutrality, ensuring that interpretations are derived from actual
+  data rather than the researcher''s imagination, often documented through an audit trail."'
+page_or_locator: PDF pp. 65-69 (title page, abstract, and section 4 'แนวคิดและความหมายของความ น่าเชื่อถือ
+  (Trustworthiness)'), downloaded and read directly, 2026-09-04
 scope: DIRECT_QUOTATION
-
 evidence_tier: Dr
-
 independence_class: I1
-
-who_verified: "ai_route:same-session (I1)"
+who_verified: ai_route:same-session (I1)
 verification_method: MANUAL_READ
-
 status: METADATA_OK
-
 xenon_ledger_ref: null
-
-disclosure: >-
-  Nattapong Srirot (Nakaepittayakhom School, Nakhon Phanom) and Pairoh Sohsomboon (Faculty of
-  Education, Nakhon Phanom University), "การสร้างความน่าเชื่อถือ (Trustworthiness) ของงานวิจัยเชิง
-  คุณภาพในบริบทห้องเรียนวิทยาศาสตร์ / Establishing Trustworthiness in Qualitative Research in
-  Science Classrooms", Journal of Teacher Professional Learning Community (JTPLC), Vol. 5 No. 2,
-  pp. 65-76, received 2025-09-30 / accepted 2025-12-30 (issue dated July-December 2568 BE =
-  2025 CE). No DOI found on the article page; ThaiJO article URL used as OFFICIAL_URL identifier.
-  Directly supports H2: the paper argues that a qualitative study's *own recorded structure*
-  (triangulation, member checks, thick description, audit trail for confirmability) is what
-  makes it trustworthy -- not the institution the researcher belongs to -- closely mirroring H2's
-  "carries the property in its own recorded structure" language. independence_class I1 (same
-  session AI) -- status METADATA_OK only, not VERIFIED.
-
+disclosure: 'Nattapong Srirot (Nakaepittayakhom School, Nakhon Phanom) and Pairoh Sohsomboon (Faculty
+  of Education, Nakhon Phanom University), "การสร้างความน่าเชื่อถือ (Trustworthiness) ของงานวิจัยเชิง
+  คุณภาพในบริบทห้องเรียนวิทยาศาสตร์ / Establishing Trustworthiness in Qualitative Research in Science
+  Classrooms", Journal of Teacher Professional Learning Community (JTPLC), Vol. 5 No. 2, pp. 65-76, received
+  2025-09-30 / accepted 2025-12-30 (issue dated July-December 2568 BE = 2025 CE). No DOI found on the
+  article page; ThaiJO article URL used as OFFICIAL_URL identifier. Directly supports H2: the paper argues
+  that a qualitative study''s *own recorded structure* (triangulation, member checks, thick description,
+  audit trail for confirmability) is what makes it trustworthy -- not the institution the researcher belongs
+  to -- closely mirroring H2''s "carries the property in its own recorded structure" language. independence_class
+  I1 (same session AI) -- status METADATA_OK only, not VERIFIED.'
 superseded_by: null
-notes: >-
-  Diversity: language=th, source_type=peer_reviewed, geography=Thailand (Nakhon Phanom),
-  search_route="web search: ความน่าเชื่อถือทางวิชาการ ผู้เชี่ยวชาญ สถาบัน การตรวจสอบ บทความวิชาการ
-  ไทย". This is the strongest Thai-language same-family (support) source found.
+notes: 'Diversity: language=th, source_type=peer_reviewed, geography=Thailand (Nakhon Phanom), search_route="web
+  search: ความน่าเชื่อถือทางวิชาการ ผู้เชี่ยวชาญ สถาบัน การตรวจสอบ บทความวิชาการ ไทย". This is the strongest
+  Thai-language same-family (support) source found.'
+citation_card_id: cite-rigour-without-infrastructure-008
+identifier_kind: OFFICIAL_URL
+claim_match_verification_route: NOT_YET
+retraction_check: UNCHECKED
+version_status: PUBLISHED
+dialogue_table_stance: agrees
+diversity:
+  language: th
+  discipline_or_tradition: qualitative research methodology / science education
+  source_type: peer_reviewed
+  search_route_or_database: 'web search: ความน่าเชื่อถือทางวิชาการ ผู้เชี่ยวชาญ สถาบัน การตรวจสอบ บทความวิชาการ
+    ไทย'
+  geography_or_institution: Thailand (Nakhon Phanom)
+  venue_quality_index:
+    index_name: null
+    value: null
+    date_read: null

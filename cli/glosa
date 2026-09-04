@@ -532,6 +532,15 @@ def _render_dialogue_table_rows(rows) -> str:
     return "".join(lines)
 
 
+def _rel(path) -> str:
+    """Repo-relative path string for refs written into public artifacts (never an absolute
+    /home/... path -- leak-scan regression, 2026-09-04)."""
+    try:
+        return str(Path(path).resolve().relative_to(REPO_ROOT.resolve()))
+    except ValueError:
+        return str(path)
+
+
 def scaffold_litreview_manifest(manifest_id, hypothesis_ref, search_log_ref, human_owner, citations) -> dict:
     total = len(citations)
     verified_count = sum(1 for c in citations if c.get("status") == "VERIFIED")
@@ -919,8 +928,8 @@ def cmd_lit_select(args):
             candidates.append({
                 "hypothesis_ref": hyp_ref,
                 "hypothesis_world": "",
-                "lrs_manifest_ref": str(manifest_path),
-                "dialogue_table_ref": str(hyp_dir / "dialogue_table.md"),
+                "lrs_manifest_ref": _rel(manifest_path),
+                "dialogue_table_ref": _rel(hyp_dir / "dialogue_table.md"),
                 "criteria": {},
                 "accuracy_gate_at_selection_time": (manifest.get("gate") or {}).get("accuracy_gate", "PENDING"),
                 "diversity_gate_at_selection_time": (manifest.get("gate") or {}).get("diversity_gate", "PENDING"),
@@ -984,7 +993,7 @@ def cmd_lit_manifest(args):
     existing_path = next(iter(sorted(out_dir.glob("litreview_manifest.*"))), None)
     manifest_id = load_instance(existing_path).get("id") if existing_path else _next_numbered_id(out_dir, lambda n: f"litrev-{slug}-{n:03d}")
     data = scaffold_litreview_manifest(manifest_id, args.hypothesis_ref, search_log.get("id"), args.human_owner, citations)
-    data["dialogue_table_ref"] = str(out_dir / "dialogue_table.md")
+    data["dialogue_table_ref"] = _rel(out_dir / "dialogue_table.md")
 
     if args.freeze:
         data["status"] = "FROZEN"

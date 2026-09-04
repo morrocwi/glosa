@@ -1,0 +1,32 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: H3
+source_label: "Sultana et al. (2026) — Bangladesh AI Readiness: Perspectives from the Academia, Industry, and Government (arXiv:2601.12934)"
+how_it_sees_the_problem: >-
+  Frames AI readiness in the Global South as a structural/institutional capacity problem
+  (curriculum, workforce, computing resources, AI-ethics instruction), not a per-output
+  verification-mechanism problem -- a different problem entirely from H3's catch-rate question,
+  one level up (whether the INFRASTRUCTURE for any independent review, cross-vendor or otherwise,
+  exists at all).
+what_it_separates: >-
+  Separates infrastructure readiness (compute, curricula, faculty capacity) from AI-ethics/
+  oversight readiness (near-total absence of AI ethics instruction found) -- a different
+  dimension of separation than H3's, which assumes review capacity already exists and asks only
+  which review ROUTE (same-vendor vs cross-vendor) catches more.
+what_it_assumes: >-
+  Assumes the 59 stakeholder interviews and curriculum benchmarking generalize across Bangladesh's
+  academic/industry/government sectors; does not attempt to measure any AI-output catch rate at
+  all.
+agrees_with_h: ORTHOGONAL
+disagrees_with_h: ORTHOGONAL
+what_it_would_say_against_us: >-
+  It would not directly argue against H3's mechanism, but it would argue against any downstream
+  POLICY conclusion drawn from H3 that assumes cross-vendor review is readily deployable
+  everywhere: if a setting has near-total absence of AI ethics instruction and inadequate
+  computing resources, running even a same-vendor re-check may already be aspirational, let alone
+  a decorrelated cross-vendor route requiring access to a second vendor's models/APIs -- a
+  resource/capacity defeater of H3's PRACTICAL reach, not of H3's empirical claim as stated.
+citation_card: cite-bangladesh-readiness-007
+stance: ORTHOGONAL
+verified:
+  metadata_verified: true
+  claim_match_verified: true

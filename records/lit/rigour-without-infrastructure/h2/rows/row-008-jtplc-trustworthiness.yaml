@@ -18,7 +18,7 @@ what_it_assumes: >-
   way; does not itself address AI-assisted or non-institutionally-affiliated claim production
   specifically, since it is about researcher bias generally, not about institution-optional
   authorship.
-stance: YES
+stance: "YES"
 what_it_would_say_against_us: >-
   Even this paper still calls the researcher "the primary instrument" (เครื่องมือหลัก) whose
   training and reflexivity underwrite the whole framework -- i.e. it substitutes trained

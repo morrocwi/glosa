@@ -11,8 +11,8 @@
 
 ## Hypothesis this table belongs to
 - hypothesis_id (claim_card.claim_id / r2_hypothesis_ref): H1
-- hypothesis_world (verbatim R2 text):
-- falsifier:
+- hypothesis_world (verbatim R2 text): If every claim a standalone scholar (no university, no lab, no research team) produces is recorded as a claim card that answers the founder's five questions (what was actually seen / what the data separates / what AI filled in / what is assumed / what independent test, if any, it has survived), tied to the Readout Condition's Existence-Attribution-Disclosure conditions, and passed through the independence ladder before any public release — then a person with no institutional affiliation can co-produce knowledge with AI whose rigour a reader can check for themselves, without an institutional credential serving as the thing that certifies it.
+- falsifier: A real claim card that passes every field the kernel can mechanically check (full schema pass) is nonetheless found by a genuine independent reviewer (I5) to have a false answer at Q2 (evidence/authority-to-believe test) or Q3 (AI-fill disclosure) — showing the mechanical check does not actually track the epistemic property it claims to track.
 
 ## Table
 
