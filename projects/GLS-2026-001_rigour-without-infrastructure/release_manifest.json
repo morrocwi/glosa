@@ -1,5 +1,5 @@
 {
- "manifest_id": "rel-glosa-concept-paper-0.2.0",
+ "manifest_id": "rel-glosa-concept-paper-0200",
  "artifact_refs": {
   "claim_ids": [
    "GLOSA-CC-20260904-0201",
@@ -96,7 +96,7 @@
  "independent_check_summary": {
   "maker_id": "founder+AI assistant",
   "checker_id": "cross-vendor routes R1-R3 (claims) + gate v2 (artifact)",
-  "approver_id": null,
+  "approver_id": "pending-founder",
   "independence_class": "I3",
   "mc_level": "L2",
   "approver_kind": "ai"
