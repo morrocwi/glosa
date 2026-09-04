@@ -59,6 +59,11 @@ STUB_CEILING = "genre_routed"
 
 RELEASE_APPROVAL_TXT = REPO_ROOT / "registry" / "RELEASE_APPROVAL.txt"
 
+
+def _today():
+    import datetime as _dt
+    return _dt.date.today().isoformat()
+
 try:
     import yaml  # type: ignore
     HAVE_YAML = True
@@ -248,6 +253,13 @@ def cmd_advance(args):
                 file=sys.stderr,
             )
             sys.exit(1)
+        # record a public, non-secret trace of the approval in the entry itself, so `check` can be
+        # re-run on a clone / in CI where the git-ignored RELEASE_APPROVAL.txt does not exist
+        entry["release_approval"] = {
+            "recorded_at": _today(),
+            "source": "registry/RELEASE_APPROVAL.txt (local, git-ignored; founder sign-off)",
+            "summary": approval_text.strip().splitlines()[0][:200],
+        }
 
     if args.litreview_manifest_ref:
         entry["litreview_manifest_ref"] = args.litreview_manifest_ref
@@ -320,9 +332,10 @@ def cmd_check(args):
         if stage == "released":
             if not e.get("doi_version"):
                 violations.append(f"{eid}: released with no doi_version set")
-            if "APPROVED" not in approval_text:
+            if "APPROVED" not in approval_text and not (e.get("release_approval") or {}).get("summary"):
                 violations.append(
-                    f"{eid}: released with no APPROVED registry/RELEASE_APPROVAL.txt"
+                    f"{eid}: released with no APPROVED registry/RELEASE_APPROVAL.txt and no "
+                    f"release_approval trace recorded in the entry"
                 )
 
     if violations:

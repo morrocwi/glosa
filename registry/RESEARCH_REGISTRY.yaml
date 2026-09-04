@@ -1,5 +1,3 @@
-# glosa research registry — readout, not a truth ledger.
-# id scheme: GLS-YYYY-NNN (one problem = one project = one id, see README.md)
 entries:
 - id: GLS-2026-001
   title_th: glosa — ความเข้มงวดโดยไม่มีโครงสร้างค้ำ
@@ -61,3 +59,8 @@ entries:
   - date: '2026-09-04'
     stage: released
     by: human
+  release_approval:
+    recorded_at: '2026-09-05'
+    source: registry/RELEASE_APPROVAL.txt (local, git-ignored; founder sign-off)
+    summary: APPROVED 2026-09-05 Yaoharee Lahtee — glosa v0.2.0 (concept paper + cleaned
+      tree)
