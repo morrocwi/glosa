@@ -1,64 +1,54 @@
 # glosa research registry — readout, not a truth ledger.
 # id scheme: GLS-YYYY-NNN (one problem = one project = one id, see README.md)
-# Fields per entry are the schema; do not add ad-hoc fields without updating README.md.
-
 entries:
-  - id: GLS-2026-001
-    title_th: "glosa — ความเข้มงวดโดยไม่มีโครงสร้างค้ำ"
-    title_en: "glosa — Rigour Without Infrastructure: A Standalone Scholar Methodology for Human–AI Knowledge Co-Production"
-    problem_ref: null
-    blackbox_ref: null
-    hypothesis_refs: []
-    spine_stage: genre_routed
-    k_state: K0
-    genre: design_science
-    venue_track: null
-    claim_card_count: 0
-    litreview_manifest_ref: null
-    doi_concept: "10.5281/zenodo.22301059"
-    doi_version: "10.5281/zenodo.22301060"
-    deposition_id: 22301060
-    repo_path: "~/ANSE.ASIA/glosa"
-    owner_role: human
-    created: "2026-09-04"
-    updated: "2026-09-04"
-    # 2026-09-04 correction (MUST-10, reviews/ARCH_lifecycle.md F3): this entry was previously
-    # hand-edited directly to spine_stage: paper_draft with a single fabricated-looking history
-    # row (no stub:true, no litreview_manifest_ref) -- a state `registry.py advance` itself
-    # refuses to produce. Re-recorded here honestly: history rows below log, on the date of this
-    # correction, the stages the work had actually reached (problem/blackbox/lens_in/analysis/
-    # lens_out are uncontested -- the design docs and blackbox notes for those stages exist in
-    # this repo); lrs/hypothesis_selected/genre_routed are logged with stub:true because no real
-    # litreview_manifest_ref exists and none is fabricated here. Current stage is capped at
-    # genre_routed -- the highest stage whose prerequisites are actually met under the tightened
-    # rule (litreview required from `lrs` onward, --stub only a valid escape through
-    # genre_routed) -- even though paper_draft-stage prose exists in the repo, because a real
-    # litreview_manifest_ref for it does not yet exist and paper_draft is past the stub ceiling.
-    history:
-      - date: "2026-09-04"
-        stage: problem
-        by: joint
-      - date: "2026-09-04"
-        stage: blackbox
-        by: joint
-      - date: "2026-09-04"
-        stage: lens_in
-        by: joint
-      - date: "2026-09-04"
-        stage: analysis
-        by: joint
-      - date: "2026-09-04"
-        stage: lens_out
-        by: joint
-      - date: "2026-09-04"
-        stage: lrs
-        by: joint
-        stub: true
-      - date: "2026-09-04"
-        stage: hypothesis_selected
-        by: joint
-        stub: true
-      - date: "2026-09-04"
-        stage: genre_routed
-        by: joint
-        stub: true
+- id: GLS-2026-001
+  title_th: glosa — ความเข้มงวดโดยไม่มีโครงสร้างค้ำ
+  title_en: 'glosa — Rigour Without Infrastructure: A Standalone Scholar Methodology
+    for Human–AI Knowledge Co-Production'
+  problem_ref: null
+  blackbox_ref: null
+  hypothesis_refs: []
+  spine_stage: method
+  k_state: K0
+  genre: design_science
+  venue_track: null
+  claim_card_count: 0
+  litreview_manifest_ref: records/lit/rigour-without-infrastructure/h1/litreview_manifest.yaml
+  doi_concept: 10.5281/zenodo.22301059
+  doi_version: 10.5281/zenodo.22301060
+  deposition_id: 22301060
+  repo_path: ~/ANSE.ASIA/glosa
+  owner_role: human
+  created: '2026-09-04'
+  updated: '2026-09-04'
+  history:
+  - date: '2026-09-04'
+    stage: problem
+    by: joint
+  - date: '2026-09-04'
+    stage: blackbox
+    by: joint
+  - date: '2026-09-04'
+    stage: lens_in
+    by: joint
+  - date: '2026-09-04'
+    stage: analysis
+    by: joint
+  - date: '2026-09-04'
+    stage: lens_out
+    by: joint
+  - date: '2026-09-04'
+    stage: lrs
+    by: joint
+    stub: true
+  - date: '2026-09-04'
+    stage: hypothesis_selected
+    by: joint
+    stub: true
+  - date: '2026-09-04'
+    stage: genre_routed
+    by: joint
+    stub: true
+  - date: '2026-09-04'
+    stage: method
+    by: human

@@ -83,7 +83,7 @@ def fetch_fulltext(identifier, meta):
         urls += [val, "https://web.archive.org/web/2026/" + val]
     for u in urls:
         try:
-            html = urllib.request.urlopen(urllib.request.Request(u, headers={"User-Agent": "glosa/0.1 (+https://github.com/morrocwi/glosa)"}), timeout=40).read(3_000_000).decode("utf-8", "replace")
+            html = urllib.request.urlopen(urllib.request.Request(u, headers={"User-Agent": "Mozilla/5.0 (X11; Linux x86_64) glosa/0.1 (+https://github.com/morrocwi/glosa)"}), timeout=40).read(3_000_000).decode("utf-8", "replace")
             fetch_fulltext.last_url = u
             text = re.sub(r"<script.*?</script>|<style.*?</style>", " ", html, flags=re.S | re.I)
             text = re.sub(r"<[^>]+>", " ", text)

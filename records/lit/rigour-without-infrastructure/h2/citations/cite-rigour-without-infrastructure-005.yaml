@@ -12,14 +12,14 @@ metadata_verified_at: '2026-09-04'
 claim_match_verified: true
 claim_match_verified_by: route:codex
 claim_match_verified_at: '2026-09-04'
-exact_passage: '"Hegemonic Open Science, emergent from the circuits of knowledge production
-  in the Global North and serving the economic interests of platform capitalism, systematically
-  erase the voices of the subaltern margins from the Global South and the Southern
-  margins inhabiting the North... These decolonizing practices foreground data sovereignty,
-  community ownership, and public ownership of knowledge resources as the bases of
-  resistance to the colonial-capitalist interests of hegemonic Open Science."'
-page_or_locator: academic.oup.com/joc/advance-article/doi/10.1093/joc/jqab027/6364108,
-  abstract, as fetched 2026-09-04
+exact_passage: These decolonizing practices foreground data sovereignty, community
+  ownership, and public ownership of knowledge resources as the bases of resistance
+  to the colonial-capitalist interests of hegemonic Open Science.
+page_or_locator: Crossref-hosted abstract (api.crossref.org/works/10.1093/joc/jqab027),
+  final sentence of the single-paragraph abstract, as fetched 2026-09-04
+line_or_paragraph: 'line 2 of fetched text (the abstract is one continuous paragraph;
+  quoted sentence is the final sentence, paragraph starting: Hegemonic Open Science,
+  emergent from the circuits)'
 scope: CONTEXT_ONLY_NOT_EVIDENCE
 evidence_tier: Dr
 independence_class: I3
@@ -57,12 +57,22 @@ disclosure: 'Crossref-confirmed: Mohan Dutta et al. (2021), "Decolonizing Open S
   listed lead authors do not contradict the card. The passage is plausibly drawn from
   the provided abstract with ellipsis. As context only, it bears on non-Northern/institutional
   knowledge legitimacy and decolonizing alternatives, relevant but not direct evidence
-  for H2.'
+  for H2. | I3 route (codex) judged from fetched metadata/abstract + the card''s quoted
+  passage, not full text: Metadata matches title, year, and first author. The quoted
+  passage appears in the fetched abstract, so it is plausible. But the passage concerns
+  decolonizing Open Science, data sovereignty, and community/public ownership; it
+  does not clearly bear on rigour as an internally recorded claim structure versus
+  institutional credentialing.'
 superseded_by: null
 notes: 'Diversity: language=en, source_type=peer_reviewed, geography=Global South
   (author collective spans India, Aotearoa/NZ, Bangladesh, Philippines and other Southern/diasporic
   institutions), search_route="web search: open science Global South decolonizing
-  science credibility without Northern institutions".'
+  science credibility without Northern institutions". RULE-17 FIX 2026-09-04: the
+  original exact_passage stitched the abstract''s first and last sentences together
+  with an ellipsis (not one continuous verbatim passage); replaced with the abstract''s
+  final sentence alone, fetched directly from api.crossref.org/works/10.1093/joc/jqab027
+  (Crossref-hosted abstract text), which is the sentence the disclosure''s "decolonizing
+  practices" reading rests on.'
 citation_card_id: cite-rigour-without-infrastructure-005
 identifier_kind: DOI
 claim_match_verification_route: NOT_YET
@@ -81,3 +91,4 @@ diversity:
     index_name: null
     value: null
     date_read: null
+fetched_from_url: https://api.crossref.org/works/10.1093/joc/jqab027

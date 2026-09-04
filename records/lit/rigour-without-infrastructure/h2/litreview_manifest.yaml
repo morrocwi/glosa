@@ -6,7 +6,7 @@ search_log_hash: ''
 dialogue_table_ref: records/lit/rigour-without-infrastructure/h2/dialogue_table.md
 neighbour_table_ref: ''
 status: FROZEN
-frozen_at: '2026-09-04T14:11:14.294924+00:00'
+frozen_at: '2026-09-04T14:19:03.665107+00:00'
 supersedes: null
 citations:
 - citation_card_id: cite-own-blackbox-log-h2-006
@@ -401,19 +401,19 @@ citations:
   claim_match_verified: true
   claim_match_verified_by: route:codex
   claim_match_verified_at: '2026-09-04'
-  exact_passage: '"Hegemonic Open Science, emergent from the circuits of knowledge production in the Global
-    North and serving the economic interests of platform capitalism, systematically erase the voices of
-    the subaltern margins from the Global South and the Southern margins inhabiting the North... These
-    decolonizing practices foreground data sovereignty, community ownership, and public ownership of knowledge
-    resources as the bases of resistance to the colonial-capitalist interests of hegemonic Open Science."'
-  page_or_locator: academic.oup.com/joc/advance-article/doi/10.1093/joc/jqab027/6364108, abstract, as
-    fetched 2026-09-04
+  exact_passage: These decolonizing practices foreground data sovereignty, community ownership, and public
+    ownership of knowledge resources as the bases of resistance to the colonial-capitalist interests of
+    hegemonic Open Science.
+  page_or_locator: Crossref-hosted abstract (api.crossref.org/works/10.1093/joc/jqab027), final sentence
+    of the single-paragraph abstract, as fetched 2026-09-04
+  line_or_paragraph: 'line 2 of fetched text (the abstract is one continuous paragraph; quoted sentence
+    is the final sentence, paragraph starting: Hegemonic Open Science, emergent from the circuits)'
   scope: CONTEXT_ONLY_NOT_EVIDENCE
   evidence_tier: Dr
   independence_class: I3
   who_verified: route:codex (cross-vendor AI; abstract/metadata level, not full text) -- see cite-rigour-without-infrastructure-005.i3.json
   verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
-  status: INVALID_SCHEMA
+  status: VERIFIED
   xenon_ledger_ref: null
   disclosure: 'Crossref-confirmed: Mohan Dutta et al. (2021), "Decolonizing Open Science: Southern Interventions",
     Journal of Communication, DOI 10.1093/joc/jqab027 (23 co-authors, Global-South and Global-South-diaspora
@@ -438,11 +438,20 @@ citations:
     route (codex) judged from fetched metadata/abstract + the card''s quoted passage, not full text: Metadata
     matches title/year/container and listed lead authors do not contradict the card. The passage is plausibly
     drawn from the provided abstract with ellipsis. As context only, it bears on non-Northern/institutional
-    knowledge legitimacy and decolonizing alternatives, relevant but not direct evidence for H2.'
+    knowledge legitimacy and decolonizing alternatives, relevant but not direct evidence for H2. | I3
+    route (codex) judged from fetched metadata/abstract + the card''s quoted passage, not full text: Metadata
+    matches title, year, and first author. The quoted passage appears in the fetched abstract, so it is
+    plausible. But the passage concerns decolonizing Open Science, data sovereignty, and community/public
+    ownership; it does not clearly bear on rigour as an internally recorded claim structure versus institutional
+    credentialing.'
   superseded_by: null
   notes: 'Diversity: language=en, source_type=peer_reviewed, geography=Global South (author collective
     spans India, Aotearoa/NZ, Bangladesh, Philippines and other Southern/diasporic institutions), search_route="web
-    search: open science Global South decolonizing science credibility without Northern institutions".'
+    search: open science Global South decolonizing science credibility without Northern institutions".
+    RULE-17 FIX 2026-09-04: the original exact_passage stitched the abstract''s first and last sentences
+    together with an ellipsis (not one continuous verbatim passage); replaced with the abstract''s final
+    sentence alone, fetched directly from api.crossref.org/works/10.1093/joc/jqab027 (Crossref-hosted
+    abstract text), which is the sentence the disclosure''s "decolonizing practices" reading rests on.'
   citation_card_id: cite-rigour-without-infrastructure-005
   identifier_kind: DOI
   claim_match_verification_route: NOT_YET
@@ -461,6 +470,7 @@ citations:
       index_name: null
       value: null
       date_read: null
+  fetched_from_url: https://api.crossref.org/works/10.1093/joc/jqab027
 - $schema: citation_card.schema.json
   id: cite-rigour-without-infrastructure-006
   claim_ref: hypothesis-H2
@@ -627,22 +637,17 @@ citations:
   claim_match_verified: true
   claim_match_verified_by: route:codex
   claim_match_verified_at: '2026-09-04'
-  exact_passage: '"ความเชื่อถือได้ (Trustworthiness) ซึ่งพัฒนาโดย Lincoln และ Guba (1985) เพื่อเป็นเกณฑ์ในการประเมิน
-    คุณภาพของงานวิจัย แนวคิดนี้เปรียบเสมือนมาตรฐานที่ยืนยันว่าข้อค้นพบจากงานวิจัยนั้น \"เชื่อถือได้ สอดคล้อง
-    และเกิดขึ้นจากข้อมูลจริง\" โดยประกอบด้วย 4 องค์ประกอบสำคัญ ได้แก่ 1) ความน่าเชื่อถือ (Credibility)
-    2) ความสามารถในการโอนย้าย (Transferability) 3) ความสอดคล้อง (Dependability) และ 4) ความสามารถใน การยืนยัน
-    (Confirmability)" (p. 67) -- English abstract on the same page: "the article presents the application
-    of the ''Trustworthiness'' framework developed by Lincoln and Guba (1985) as a standard for quality
-    assurance... Confirmability emphasizes neutrality, ensuring that interpretations are derived from
-    actual data rather than the researcher''s imagination, often documented through an audit trail."'
-  page_or_locator: PDF pp. 65-69 (title page, abstract, and section 4 'แนวคิดและความหมายของความ น่าเชื่อถือ
-    (Trustworthiness)'), downloaded and read directly, 2026-09-04
+  exact_passage: Confirmability emphasizes neutrality, ensuring that interpretations are derived from
+    actual data rather than the researcher's imagination, often documented through an audit trail.
+  page_or_locator: ThaiJO article abstract page (English abstract, item 4 of the four Trustworthiness
+    components), as fetched 2026-09-04
+  line_or_paragraph: char offset 1761 of normalized fetched text (~paragraph 1); verbatim prefix match
   scope: DIRECT_QUOTATION
   evidence_tier: Dr
   independence_class: I3
   who_verified: route:codex (cross-vendor AI; abstract/metadata level, not full text) -- see cite-rigour-without-infrastructure-008.i3.json
   verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
-  status: INVALID_SCHEMA
+  status: VERIFIED
   xenon_ledger_ref: null
   disclosure: 'Nattapong Srirot (Nakaepittayakhom School, Nakhon Phanom) and Pairoh Sohsomboon (Faculty
     of Education, Nakhon Phanom University), "การสร้างความน่าเชื่อถือ (Trustworthiness) ของงานวิจัยเชิง
@@ -669,11 +674,21 @@ citations:
     quoted passage, not full text: Metadata aligns: title/authors/source match the fetched page. The Thai
     quote was not mechanically found, but the fetched abstract closely matches its content about Lincoln
     and Guba trustworthiness criteria. This bears on H2 by supporting rigour/trustworthiness as structured
-    evidentiary features, especially credibility, dependability, confirmability, and audit trail.'
+    evidentiary features, especially credibility, dependability, confirmability, and audit trail. | I3
+    route (codex) judged from fetched metadata/abstract + the card''s quoted passage, not full text: Fetched
+    title/year/first author align with the card. The quoted passage appears in fetched text and fits the
+    abstract context. Its emphasis on confirmability through data-grounded interpretation and audit trail
+    supports the hypothesis that rigour can be carried by recorded structure rather than only institutional
+    credentialing.'
   superseded_by: null
   notes: 'Diversity: language=th, source_type=peer_reviewed, geography=Thailand (Nakhon Phanom), search_route="web
     search: ความน่าเชื่อถือทางวิชาการ ผู้เชี่ยวชาญ สถาบัน การตรวจสอบ บทความวิชาการ ไทย". This is the strongest
-    Thai-language same-family (support) source found.'
+    Thai-language same-family (support) source found. RULE-17 FIX 2026-09-04: the original exact_passage
+    joined a Thai PDF-page-67 quote and a separate English-abstract quote with "--", not one continuous
+    verbatim passage, and the PDF itself was not re-fetched this pass (only the ThaiJO article/abstract
+    page was). Replaced with a single continuous verbatim sentence from the English abstract on the fetched
+    article page (component 4, Confirmability) that still directly supports H2''s "own recorded structure"
+    language via the audit-trail detail.'
   citation_card_id: cite-rigour-without-infrastructure-008
   identifier_kind: OFFICIAL_URL
   claim_match_verification_route: NOT_YET
@@ -787,7 +802,7 @@ diversity_audit:
   never_claim_diverse_without_counts: true
 accuracy:
   total_citations: 16
-  verified_count: 14
+  verified_count: 16
   spot_check:
     applicable: true
     proposed_n_percent: 20
@@ -800,22 +815,9 @@ accuracy:
 secondary_citation_ban_audit:
   violations_found: 0
 gate:
-  accuracy_gate: FAIL
+  accuracy_gate: PASS
   diversity_gate: PASS
-  overall: FAIL
-  blocked_reason: 'Not every listed citation reached VERIFIED yet. | 2 citation card(s) do not conform
-    to schema/citation_card.schema.json (fail-closed; regression caught by the 2026-09-04 self-application
-    run): records/lit/rigour-without-infrastructure/h2/citations/cite-rigour-without-infrastructure-005.yaml,
-    records/lit/rigour-without-infrastructure/h2/citations/cite-rigour-without-infrastructure-008.yaml'
-disclaimers_emitted:
-- id: D-CITATION-UNVERIFIED
+  overall: PASS
+  blocked_reason: null
+disclaimers_emitted: []
 human_owner: founder
-invalid_citation_cards:
-- file: records/lit/rigour-without-infrastructure/h2/citations/cite-rigour-without-infrastructure-005.yaml
-  errors:
-  - 'rule17(source-first citation): status VERIFIED requires fetched_from_url, line_or_paragraph taken
-    from the opened source (never from memory)'
-- file: records/lit/rigour-without-infrastructure/h2/citations/cite-rigour-without-infrastructure-008.yaml
-  errors:
-  - 'rule17(source-first citation): status VERIFIED requires line_or_paragraph taken from the opened source
-    (never from memory)'

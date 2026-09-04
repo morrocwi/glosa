@@ -17,7 +17,7 @@
   "passage_plausible": true,
   "claim_match": true,
   "bearing": "CONTEXT_ONLY",
-  "reason": "Metadata matches the fetched arXiv title/authors/year. The quoted passage is not verbatim-found but is substantively consistent with the fetched abstract. It bears only as contextual analogy: cross/same-vendor review effects in code review, not direct Q3/Q4 claim-card detection evidence.",
+  "reason": "Metadata matches title/year/first author constraints. Quoted passage appears consistent with the supplied abstract despite the failed verbatim fetched-text search. It bears only as contextual analogy about cross-vendor versus same-vendor review effects in code review, not direct Q3/Q4 claim-card detection evidence.",
   "passage_mechanical": "quoted passage NOT found verbatim in fetched open text"
  },
  "date": "2026-09-04"

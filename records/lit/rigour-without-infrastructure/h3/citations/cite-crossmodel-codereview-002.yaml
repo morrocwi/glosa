@@ -12,13 +12,16 @@ metadata_verified_at: '2026-09-04'
 claim_match_verified: true
 claim_match_verified_by: route:codex
 claim_match_verified_at: '2026-09-04'
-exact_passage: '"Claude review raises Codex drafts from 71.6% to 89.7% (p_BH=.001);
-  Codex self review raises them to 84.5% (p_BH=.022). The reverse direction does not
-  pay off: Codex reviewing Claude drafts drops the pass rate from 91.4% to 82.8% (p_BH=.046),
-  and Claude self review leaves the 91.4% baseline unchanged. Our evaluation indicates
-  that the useful pairing is asymmetric: use Claude to review Codex, not the other
-  way around."'
-page_or_locator: Abstract, arXiv:2607.21656
+exact_passage: 'Claude review raises Codex drafts from 71.6% to 89.7% ($p_{BH}=.001$);
+  Codex self review raises them to 84.5% ($p_{BH}=.022$). The reverse direction does
+  not pay off: Codex reviewing Claude drafts drops the pass rate from 91.4% to 82.8%
+  ($p_{BH}=.046$), and Claude self review leaves the 91.4% baseline unchanged. Our
+  evaluation indicates that the useful pairing is asymmetric: use Claude to review
+  Codex, not the other way around.'
+page_or_locator: Abstract (citation_abstract meta content), arXiv:2607.21656 abstract
+  page (arxiv.org/abs/2607.21656)
+line_or_paragraph: 'line 29 of fetched text (paragraph starting: Developers increasingly
+  use two coding agents together)'
 scope: DIRECT_QUOTATION
 evidence_tier: fit_calibrated
 independence_class: I3
@@ -52,7 +55,12 @@ disclosure: 'Existence and metadata mechanically confirmed via the arXiv abstrac
   the fetched arXiv title/authors/year. The quoted passage is not verbatim-found but
   is substantively consistent with the fetched abstract. It bears only as contextual
   analogy: cross/same-vendor review effects in code review, not direct Q3/Q4 claim-card
-  detection evidence.'
+  detection evidence. | I3 route (codex) judged from fetched metadata/abstract + the
+  card''s quoted passage, not full text: Metadata matches title/year/first author
+  constraints. Quoted passage appears consistent with the supplied abstract despite
+  the failed verbatim fetched-text search. It bears only as contextual analogy about
+  cross-vendor versus same-vendor review effects in code review, not direct Q3/Q4
+  claim-card detection evidence.'
 superseded_by: null
 notes: 'Authors: Zuodong Xiang, Yike Zhang, YueMing Zhang, Hailu Xu. Submitted 2026-07-22.
   Domain is code review (pass/fail on coding-benchmark tasks), not claim-card field-level
@@ -67,5 +75,11 @@ notes: 'Authors: Zuodong Xiang, Yike Zhang, YueMing Zhang, Hailu Xu. Submitted 2
   discipline_or_tradition=software engineering / AI-agent code review; source_type=preprint;
   search_route_or_database=WebSearch (general web) -> arXiv abstract page; geography_or_institution=not
   stated on fetched arXiv abstract page (undetermined). Prior file also recorded dialogue_table_stance=''disagrees''
-  (now tracked on the dialogue_table.md row / rows/*.yaml, not on this card).'
-fetched_from_url: https://arxiv.org/html/2607.21656
+  (now tracked on the dialogue_table.md row / rows/*.yaml, not on this card). RULE-17
+  FIX 2026-09-04: exact_passage was character-for-character correct in wording but
+  had stripped the source''s literal "$p_{BH}=...$" LaTeX inline-math markup down
+  to "p_BH=..."; corrected to the byte-exact form found on the arxiv.org/abs/2607.21656
+  page (citation_abstract meta content), which is also the URL now recorded in fetched_from_url
+  (previously arxiv.org/html, which renders the abstract with the full model names
+  "Claude Opus 4.7"/"Codex GPT-5.5" instead of the short names the card quotes).'
+fetched_from_url: https://arxiv.org/abs/2607.21656

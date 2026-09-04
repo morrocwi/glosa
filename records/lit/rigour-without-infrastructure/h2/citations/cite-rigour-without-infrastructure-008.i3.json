@@ -10,8 +10,8 @@
   "passage_plausible": true,
   "claim_match": true,
   "bearing": "SUPPORTS",
-  "reason": "Metadata aligns: title/authors/source match the fetched page. The Thai quote was not mechanically found, but the fetched abstract closely matches its content about Lincoln and Guba trustworthiness criteria. This bears on H2 by supporting rigour/trustworthiness as structured evidentiary features, especially credibility, dependability, confirmability, and audit trail.",
-  "passage_mechanical": "quoted passage NOT found verbatim in fetched open text"
+  "reason": "Fetched title/year/first author align with the card. The quoted passage appears in fetched text and fits the abstract context. Its emphasis on confirmability through data-grounded interpretation and audit trail supports the hypothesis that rigour can be carried by recorded structure rather than only institutional credentialing.",
+  "passage_mechanical": "verbatim prefix found in fetched open text"
  },
  "date": "2026-09-04"
 }

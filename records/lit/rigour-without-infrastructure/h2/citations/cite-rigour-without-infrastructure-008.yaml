@@ -12,18 +12,13 @@ metadata_verified_at: '2026-09-04'
 claim_match_verified: true
 claim_match_verified_by: route:codex
 claim_match_verified_at: '2026-09-04'
-exact_passage: '"ความเชื่อถือได้ (Trustworthiness) ซึ่งพัฒนาโดย Lincoln และ Guba (1985)
-  เพื่อเป็นเกณฑ์ในการประเมิน คุณภาพของงานวิจัย แนวคิดนี้เปรียบเสมือนมาตรฐานที่ยืนยันว่าข้อค้นพบจากงานวิจัยนั้น
-  \"เชื่อถือได้ สอดคล้อง และเกิดขึ้นจากข้อมูลจริง\" โดยประกอบด้วย 4 องค์ประกอบสำคัญ
-  ได้แก่ 1) ความน่าเชื่อถือ (Credibility) 2) ความสามารถในการโอนย้าย (Transferability)
-  3) ความสอดคล้อง (Dependability) และ 4) ความสามารถใน การยืนยัน (Confirmability)"
-  (p. 67) -- English abstract on the same page: "the article presents the application
-  of the ''Trustworthiness'' framework developed by Lincoln and Guba (1985) as a standard
-  for quality assurance... Confirmability emphasizes neutrality, ensuring that interpretations
-  are derived from actual data rather than the researcher''s imagination, often documented
-  through an audit trail."'
-page_or_locator: PDF pp. 65-69 (title page, abstract, and section 4 'แนวคิดและความหมายของความ
-  น่าเชื่อถือ (Trustworthiness)'), downloaded and read directly, 2026-09-04
+exact_passage: Confirmability emphasizes neutrality, ensuring that interpretations
+  are derived from actual data rather than the researcher's imagination, often documented
+  through an audit trail.
+page_or_locator: ThaiJO article abstract page (English abstract, item 4 of the four
+  Trustworthiness components), as fetched 2026-09-04
+line_or_paragraph: char offset 1761 of normalized fetched text (~paragraph 1); verbatim
+  prefix match
 scope: DIRECT_QUOTATION
 evidence_tier: Dr
 independence_class: I3
@@ -63,12 +58,22 @@ disclosure: 'Nattapong Srirot (Nakaepittayakhom School, Nakhon Phanom) and Pairo
   found, but the fetched abstract closely matches its content about Lincoln and Guba
   trustworthiness criteria. This bears on H2 by supporting rigour/trustworthiness
   as structured evidentiary features, especially credibility, dependability, confirmability,
-  and audit trail.'
+  and audit trail. | I3 route (codex) judged from fetched metadata/abstract + the
+  card''s quoted passage, not full text: Fetched title/year/first author align with
+  the card. The quoted passage appears in fetched text and fits the abstract context.
+  Its emphasis on confirmability through data-grounded interpretation and audit trail
+  supports the hypothesis that rigour can be carried by recorded structure rather
+  than only institutional credentialing.'
 superseded_by: null
 notes: 'Diversity: language=th, source_type=peer_reviewed, geography=Thailand (Nakhon
   Phanom), search_route="web search: ความน่าเชื่อถือทางวิชาการ ผู้เชี่ยวชาญ สถาบัน
   การตรวจสอบ บทความวิชาการ ไทย". This is the strongest Thai-language same-family (support)
-  source found.'
+  source found. RULE-17 FIX 2026-09-04: the original exact_passage joined a Thai PDF-page-67
+  quote and a separate English-abstract quote with "--", not one continuous verbatim
+  passage, and the PDF itself was not re-fetched this pass (only the ThaiJO article/abstract
+  page was). Replaced with a single continuous verbatim sentence from the English
+  abstract on the fetched article page (component 4, Confirmability) that still directly
+  supports H2''s "own recorded structure" language via the audit-trail detail.'
 citation_card_id: cite-rigour-without-infrastructure-008
 identifier_kind: OFFICIAL_URL
 claim_match_verification_route: NOT_YET

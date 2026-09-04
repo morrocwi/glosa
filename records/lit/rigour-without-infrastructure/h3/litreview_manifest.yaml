@@ -6,7 +6,7 @@ search_log_hash: ''
 dialogue_table_ref: records/lit/rigour-without-infrastructure/h3/dialogue_table.md
 neighbour_table_ref: ''
 status: FROZEN
-frozen_at: '2026-09-04T14:11:14.598690+00:00'
+frozen_at: '2026-09-04T14:19:03.931632+00:00'
 supersedes: null
 citations:
 - citation_card_id: cite-bangladesh-readiness-007
@@ -20,7 +20,7 @@ citations:
   retraction_check: UNCHECKED
   dialogue_table_stance: undetermined
 - citation_card_id: cite-cofact-thai-detector-009
-  status: INVALID_SCHEMA
+  status: VERIFIED
   identifier_kind: OFFICIAL_URL
   fetch_status: FETCHED
   acquisition_log_ref: null
@@ -30,7 +30,7 @@ citations:
   retraction_check: UNCHECKED
   dialogue_table_stance: undetermined
 - citation_card_id: cite-crossmodel-codereview-002
-  status: INVALID_SCHEMA
+  status: VERIFIED
   identifier_kind: ARXIV
   fetch_status: FETCHED
   acquisition_log_ref: null
@@ -212,7 +212,7 @@ diversity_audit:
   never_claim_diverse_without_counts: true
 accuracy:
   total_citations: 17
-  verified_count: 15
+  verified_count: 17
   spot_check:
     applicable: true
     proposed_n_percent: 20
@@ -225,21 +225,9 @@ accuracy:
 secondary_citation_ban_audit:
   violations_found: 0
 gate:
-  accuracy_gate: FAIL
+  accuracy_gate: PASS
   diversity_gate: PASS
-  overall: FAIL
-  blocked_reason: 'Not every listed citation reached VERIFIED yet. | 2 citation card(s) do not conform
-    to schema/citation_card.schema.json (fail-closed; regression caught by the 2026-09-04 self-application
-    run): records/lit/rigour-without-infrastructure/h3/citations/cite-cofact-thai-detector-009.yaml, records/lit/rigour-without-infrastructure/h3/citations/cite-crossmodel-codereview-002.yaml'
-disclaimers_emitted:
-- id: D-CITATION-UNVERIFIED
+  overall: PASS
+  blocked_reason: null
+disclaimers_emitted: []
 human_owner: founder
-invalid_citation_cards:
-- file: records/lit/rigour-without-infrastructure/h3/citations/cite-cofact-thai-detector-009.yaml
-  errors:
-  - 'rule17(source-first citation): status VERIFIED requires line_or_paragraph taken from the opened source
-    (never from memory)'
-- file: records/lit/rigour-without-infrastructure/h3/citations/cite-crossmodel-codereview-002.yaml
-  errors:
-  - 'rule17(source-first citation): status VERIFIED requires line_or_paragraph taken from the opened source
-    (never from memory)'

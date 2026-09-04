@@ -15,6 +15,7 @@ claim_match_verified_at: '2026-09-04'
 exact_passage: นอกจากนี้ ยังมีคำถามว่า นักวิจัยอิสระจะถูกพิจารณาเป็นผู้เขียนงานวิจัยนั้นหรือไม่
 page_or_locator: Article body, TCIJ Thai, 2020-01, paragraph following the Upwork
   remark by ดร.เบนท์ลีย์ (fetched 2026-09-04)
+line_or_paragraph: 'line 62 of fetched text (paragraph starting: นอกจากนี้ ยังมีคำถามว่า)'
 scope: CONTEXT_ONLY_NOT_EVIDENCE
 evidence_tier: Dr
 independence_class: I3
@@ -51,7 +52,17 @@ disclosure: 'Same-session AI check only (I1) -- METADATA_OK, not VERIFIED. No DO
   passage, not full text: Metadata fits the TCIJ Thai 18 Jan 2020 article. The exact
   passage was not mechanically found, but it is plausible given the fetched text discusses
   academic freelancers and ethics. As context only, it bears on independent/freelance
-  scholar status, not on proving the proposed AI claim-card method.'
+  scholar status, not on proving the proposed AI claim-card method. | I3 route (codex)
+  judged from fetched metadata/abstract + the card''s quoted passage, not full text:
+  Metadata title/date/URL align. The exact Thai passage was not found by mechanical
+  verbatim search, so passage verification is uncertain. The fetched text still concerns
+  academic freelancers/independent academics and ethical authorship context, making
+  it relevant only as context for H1, not support. | I3 route (codex) judged from
+  fetched metadata/abstract + the card''s quoted passage, not full text: Title/year
+  and TCIJ URL match the card. The fetched excerpt discusses academic freelancers,
+  outsourcing, and ethical questions, so the quoted authorship concern is plausible
+  though not mechanically found verbatim. As context only, the source bears on independent/non-institutional
+  scholarly production, not as support for H1.'
 superseded_by: null
 notes: 'Thailand, TH (Thai language), grey/community source (TCIJ -- Thai Civic Investigative
   Journalism network, a nonprofit journalism outlet, not peer-reviewed). Found via

@@ -13,12 +13,12 @@ metadata_verified_at: '2026-09-04'
 claim_match_verified: true
 claim_match_verified_by: route:codex
 claim_match_verified_at: '2026-09-04'
-exact_passage: '"แม้ว่าเครื่องมือตรวจสอบภาพและวิดีโอที่สร้างจากเอไอจะเป็นเครื่องทุ่นแรง...เครื่องมือเหล่านี้ก็ยังอยู่ในช่วงกำลังพัฒนา"
-  (Thai, verbatim as fetched; approximate sense confirmed by the fetch: although AI-generated
-  image/video detection tools are helpful, they are still in a developing stage and
-  no single tool is fully reliable -- the article recommends combining multiple tools
-  with manual verification).'
-page_or_locator: Cofact Thailand blog post, published 2025-05-20
+exact_passage: 'แม้ว่าเครื่องมือตรวจสอบภาพและวิดีโอที่สร้างจากปัญญาประดิษฐ์ (Artificial
+  Intelligence: AI) จะเป็นเครื่องทุ่นแรงที่ช่วยตรวจสอบความจริงแท้ของเนื้อหาในยุคที่คนจำนวนไม่น้อยเลือกใช้เอไอในการสร้างรูปภาพและวิดีโอเผยแพร่ในโซเชียลมีเดียเพื่อเรียกยอดไลก์ยอดแชร์
+  แต่เครื่องมือเหล่านี้ก็ยังอยู่ในช่วงกำลังพัฒนาและยังมีข้อจำกัดหลายประการ เราจึงไม่สามารถใช้ผลการตรวจสอบจากเครื่องมือใดเครื่องมือหนึ่งเพียงแหล่งเดียวได้'
+page_or_locator: Cofact Thailand blog post, published 2025-05-20, opening paragraph
+line_or_paragraph: char offset 1550 of normalized fetched text (~paragraph 1); verbatim
+  prefix match
 scope: CONTEXT_ONLY_NOT_EVIDENCE
 evidence_tier: Dr
 independence_class: I3
@@ -53,7 +53,11 @@ disclosure: 'Thai-language grey/community source: Cofact (โคแฟค) is a 
   post dated 2025-05-20 about AI image/video detector reliability. The quoted passage
   is plausible despite non-verbatim ellipsis. But the source concerns detector limitations
   and mixed verification, not cross-vendor I3 review detecting undisclosed AI-fill
-  or assumptions in claim cards.'
+  or assumptions in claim cards. | I3 route (codex) judged from fetched metadata/abstract
+  + the card''s quoted passage, not full text: Metadata and quoted Thai passage are
+  mechanically consistent. The passage only says AI image/video detectors have limitations
+  and one should not rely on a single tool. It is broad context for multi-tool caution,
+  but does not address cross-vendor claim-card checking or Q3/Q4 detection rates.'
 superseded_by: null
 notes: 'Publisher: Cofact (โคแฟค), Thai fact-checking civil-society organization,
   inspired by the Taiwan Cofacts initiative. Published 2025-05-20.
@@ -65,5 +69,9 @@ notes: 'Publisher: Cofact (โคแฟค), Thai fact-checking civil-society or
   search_route_or_database=WebSearch (Thai-language query, ''Cofact Thailand AI ตรวจสอบข้อเท็จจริง...'')
   -> Cofact publisher page; geography_or_institution=Cofact (โคแฟค), Thailand -- Thailand/SEA.
   Prior file also recorded dialogue_table_stance=''orthogonal'' (now tracked on the
-  dialogue_table.md row / rows/*.yaml, not on this card).'
+  dialogue_table.md row / rows/*.yaml, not on this card). RULE-17 FIX 2026-09-04:
+  the original exact_passage used an ellipsis to skip the middle of the sentence and
+  also paraphrased "สร้างจากเอไอ" for the source''s actual "สร้างจากปัญญาประดิษฐ์
+  (Artificial Intelligence: AI)"; replaced with the full continuous verbatim opening
+  sentence from the re-fetched page.'
 fetched_from_url: https://blog.cofact.org/th/ai-detector-20052025/

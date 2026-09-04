@@ -10,8 +10,8 @@
   "passage_plausible": true,
   "claim_match": true,
   "bearing": "CONTEXT_ONLY",
-  "reason": "Metadata and excerpt align with a Cofact post dated 2025-05-20 about AI image/video detector reliability. The quoted passage is plausible despite non-verbatim ellipsis. But the source concerns detector limitations and mixed verification, not cross-vendor I3 review detecting undisclosed AI-fill or assumptions in claim cards.",
-  "passage_mechanical": "quoted passage NOT found verbatim in fetched open text"
+  "reason": "Metadata and quoted Thai passage are mechanically consistent. The passage only says AI image/video detectors have limitations and one should not rely on a single tool. It is broad context for multi-tool caution, but does not address cross-vendor claim-card checking or Q3/Q4 detection rates.",
+  "passage_mechanical": "verbatim prefix found in fetched open text"
  },
  "date": "2026-09-04"
 }
