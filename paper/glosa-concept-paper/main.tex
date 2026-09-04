@@ -159,11 +159,13 @@
   hypotheses (\Cref{sec:propositions}) --- a design mechanism (H1), a conceptual claim about where
   rigour lives (H2), and an empirical claim about cross-vendor AI checking (H3) --- propose that a
   claim-card discipline bound to Existence--Attribution--Disclosure and gated by an independence
-  ladder can make a standalone scholar's claim reader-checkable without an institutional
+  ladder could make a standalone scholar's claim reader-checkable without an institutional
   credential. \textbf{Method.} Each proposition carries a named falsifier and is placed against 48
   independently verified citation cards in a conversation-with-the-literature table
   (\Cref{sec:literature}), then the whole method is run on this paper's own construction as a
-  self-application demonstration (\Cref{sec:demonstration}). \textbf{Status.} All three
+  self-application demonstration (\Cref{sec:demonstration}), including an independent review of the
+  three claim cards themselves by three cross-vendor AI routes, which revised them
+  (\Cref{sec:self-review}). \textbf{Status.} All three
   propositions are carried as untested claims at tier \DrTier{}, none above knowledge state K0; H3
   is explicitly untested, and the self-application run itself surfaced real gate failures, not a
   clean pass (\Cref{sec:demonstration}, \Cref{sec:limitations}).
@@ -181,16 +183,19 @@ supplied. This paper states, as three falsifiable propositions and not as demons
 candidate answer: a \emph{claim card} that separately records what was seen, what the data
 separates, what AI filled in, what is assumed, and what independent check (if any) the claim has
 survived --- bound to a formal Existence--Attribution--Disclosure norm and passed through a named
-independence ladder (I0 self-check through I5 outside human review) before public release --- can
-carry the checkable property institutions have historically supplied, without requiring the
+independence ladder (I0 self-check through I5 outside human review) before public release ---
+could carry the checkable property institutions have historically supplied, without requiring the
 institution itself (H1, design; H2, conceptual). A third, narrower proposition (H3, empirical)
-holds that cross-vendor AI checking measurably outperforms same-vendor re-checking at catching
-undisclosed AI-fill; it is stated but not tested here. Each proposition is placed against a
-literature conversation built from 48 independently verified citation cards, and the whole method
-is applied reflexively to this paper's own construction, which surfaced real failures --- a
-validator warning, a manifest-detected search-mode gap, and a documented citation-verification
-correction --- reported as findings, not smoothed into a clean success story. Every claim here sits
-at tier \DrTier{} and knowledge state K0; none has passed an independent (I5) human check.
+holds, untested, that cross-vendor AI checking would measurably outperform same-vendor re-checking
+at catching undisclosed AI-fill; no measurement of that difference has been made (n=0). Each
+proposition is placed against a literature conversation built from 48 independently verified
+citation cards, and the whole method is applied reflexively to this paper's own construction, which
+surfaced real failures --- a validator warning, a manifest-detected search-mode gap, and a
+documented citation-verification correction --- reported as findings, not smoothed into a clean
+success story. The three claim cards carrying these propositions were themselves reviewed by three
+cross-vendor AI routes and revised in response before this draft (\Cref{sec:self-review}). Every
+claim here sits at tier \DrTier{} and knowledge state K0; none has passed an independent (I5) human
+check.
 \end{quote}
 \vspace{0.7em}
 ]
@@ -392,13 +397,18 @@ Candidates were drafted by AI from the lens translation above; the founder selec
 \subsection*{H1 --- Design: the claim-card mechanism (\claimref{C1})}
 \textbf{Statement.} If every claim a standalone scholar produces is recorded as a claim card
 answering the five questions, tied to E-A-D, and passed through the independence ladder before any
-public release, then a person with no institutional affiliation can co-produce knowledge with AI
-whose rigour a reader can check for themselves, without an institutional credential serving as the
-certifying step.
+public release, then a person with no institutional affiliation \emph{could, as a design
+proposition,} co-produce knowledge with AI whose rigour a reader can check for themselves, without
+an institutional credential serving as the certifying step. This is a proposed mechanism, not an
+established one: this project's own single self-application (n=1, this paper's own production run,
+\Cref{sec:demonstration}) is offered as one demonstration readout of the mechanism, not as a
+general test across standalone scholars.
 
 \textbf{Falsifier.} A claim card that passes every field the kernel can mechanically check is
 nonetheless found by a genuine independent reviewer (I5) to have a false answer at Q2 or Q3 ---
-showing the mechanical check does not track the epistemic property it claims to track.
+showing the mechanical check does not track the epistemic property it claims to track. Not yet run:
+this project has not secured an I5 (outside human, no stake) route, so this falsifier has not been
+tested in either direction.
 
 \textbf{What would count as evidence.} A corpus of claim cards run through the independence ladder
 to at least I3, with a subset reaching genuine I5, compared against a matched corpus produced
@@ -406,9 +416,12 @@ without the discipline, scored on whether an independent reader can recover the
 evidence/AI-fill boundary the maker recorded.
 
 \subsection*{H2 --- Conceptual: rigour as a portable claim-level property (\claimref{C2})}
-\textbf{Statement.} Rigour is not a property institutional machinery confers on a claim from the
-outside; it is a property a single claim can carry in its own recorded structure --- institutions
-are \emph{one} historical mechanism that has produced this property, not the only possible one.
+\textbf{Statement.} ``Rigour'' is not a property that institutional machinery (lab, department,
+review committee) confers on a claim from the outside; it is proposed here, as a conceptual
+contrast, to be \emph{at least in part} a property a single claim can carry in its own recorded
+structure --- institutions are one historical mechanism that has produced this property, not shown
+here to be the only possible one. This does not establish that institutions are non-load-bearing:
+the cited evidence for it is mixed and mostly same-lineage (\Cref{tab:h2-lit}).
 
 \textbf{Falsifier.} A claim card that answers all five questions honestly and completely, checked
 at I3, is shown to still require an institutional credential --- not just an independent human
@@ -420,9 +433,13 @@ editors, grant reviewers, a practitioner's own community) treats a well-formed c
 sufficient without also asking who backs it.
 
 \subsection*{H3 --- Empirical: cross-vendor checking raises AI-fill detection (\claimref{C3}, untested)}
-\textbf{Statement.} When claim cards are checked by a different AI vendor from the one that
-produced them (I3) instead of the same vendor re-checking (I0/I1), the rate at which undisclosed
-AI-fill (a false Q3 field) or undisclosed assumptions (a false Q4 field) is caught rises measurably.
+\textbf{Statement.} Hypothesis, not yet tested: when claim cards are checked by a different AI
+vendor from the one that produced them (cross-vendor, independence level I3) instead of being
+re-checked by the same vendor that produced the card (I0/I1), the rate at which undisclosed AI-fill
+(a false Q3 field) or undisclosed assumptions (a false Q4 field) is caught \emph{would rise}
+measurably compared to same-vendor re-checking. No seeded-error benchmark has been run by this
+project (n=0 own trials); the single most directly on-point source found the effect
+direction-dependent, not uniform (\Cref{tab:h3-lit}).
 
 \textbf{Falsifier.} A controlled comparison (claim cards seeded with a known number of undisclosed
 AI-fill/assumption instances, same-vendor vs.\ cross-vendor routes) shows no significant
@@ -433,9 +450,10 @@ rubric; tiered \FitCal{} at best until run, \DrTier{} until then. \textbf{This p
 that benchmark; H3 is stated, not tested.}
 
 All three propositions were drafted under the same lens (\Cref{sec:lens}); none has an evidence
-relation above independence class I3, and none of the underlying claim cards has yet passed
-founder sign-off (\texttt{independent\_check.status: NONE} on all three,
-\Cref{sec:claim-matrix}).
+relation above independence class I3, and none of the underlying claim cards has yet been approved
+by the founder for release (\texttt{independent\_check.status: PENDING} on all three --- checked by
+cross-vendor routes R1--R3 and revised accordingly, not yet re-checked by a new route or
+founder-approved, \Cref{sec:claim-matrix}).
 
 % ===========================================================================
 \section{Conversation with the literature}
@@ -462,8 +480,8 @@ support.
 \toprule
 \textbf{Citation card} & \textbf{Source} & \textbf{Relation} & \textbf{Bearing} \\
 \midrule
-\cite{cite-cstp-boundary-work-001} & Mayes 2022, Citizen Science and Scientific Authority & different & Directly: even a perfectly-documented claim card may still not be treated as legitimate if the surrounding discourse continues to grant authority by credential. \\
-\cite{cite-disclosure-not-documentation-001} & Cwik 2026, Disclosure is not documentation & same & Separates disclosure-as-compliance from documentation-as-verifiable-record --- the same separation H1 makes at Q3. \\
+\cite{cite-cstp-boundary-work-001} & Mayes 2022, Citizen Science and Scientific Authority & different & Moderate, scoped: credentialed-expert legitimacy-shaping work continues to matter in practice --- cross-vendor review narrowed this to bear only on credentialed legitimacy/acceptance pressure, not to be read as evidence the full claim-card + E-A-D + independence-ladder mechanism was tested and found wanting. \\
+\cite{cite-disclosure-not-documentation-001} & Cwik 2026, Disclosure is not documentation & same & Weak, component-only: supports the H1 component that AI-assisted work needs structured documentation beyond disclosure --- cross-vendor review downgraded this from moderate to weak and scoped it to \texttt{SUPPORTS\_COMPONENT\_ONLY}, not evidence the combined mechanism was tested. \\
 \cite{cite-llm-hallucination-survey-001} & LLM hallucination survey, arXiv:2510.06265 & cited & Shows AI cannot be trusted to flag its own errors --- exactly why H1 requires an external check rather than AI self-report. \\
 \cite{cite-ocsdnet-honf-001} & OCSDNET/HONF, Open Hardware and Citizen Science (Indonesia, Thailand, Nepal) & same & Grounds H1's premise that non-institutional knowledge production is a live regional practice, not a hypothetical. \\
 \cite{cite-own-blackbox-log-h1-006} & Blackbox Log (Lahtee, Zenodo) & own lineage, not independent & Documents the append-only raw-record practice H1 assumes is followed; no claim about rigour by itself. \\
@@ -473,7 +491,7 @@ support.
 \cite{cite-own-written-ai-h1-001} & Written by AI. Still True. (Lahtee) & own lineage, not independent & Names ``knower fetishism''; H1's card targets exactly the constitution-level property this paper argues authority derives from. \\
 \cite{cite-own-zero-readout-h1-004} & What a Zero Readout Certifies (Lahtee) & own lineage, not independent & Illustrates machine-checked discipline; H1's own mechanical checks (schema validation) are markedly weaker. \\
 \cite{cite-pgph-citizen-science-sea-001} & Kumar et al.\ 2025, Community perceptions of citizen science (South/SEA) & cited & Governance-inclusion framing, orthogonal to H1's rigour-checkability framing. \\
-\cite{cite-rsos-citizen-epistemology-001} & Jaeger et al.\ 2023, An epistemology for democratic citizen science & same & Locates robustness in diversity of standpoint/process --- could argue H1 over-individualizes rigour to one standalone scholar. \\
+\cite{cite-rsos-citizen-epistemology-001} & Jaeger et al.\ 2023, An epistemology for democratic citizen science & same & Weak, general-context only: robust knowledge can arise through plural/citizen epistemology outside narrow institutional credentialing --- cross-vendor review confirmed this as \texttt{SUPPORTS\_GENERAL\_CONTEXT} background support, not upgraded to a test of H1's mechanism. \\
 \cite{cite-rsos-preprint-credibility-001} & Soderberg, Errington \& Nosek 2020, Credibility of preprints & same & Researchers rate content/process cues over prestige when prestige is absent --- supports the premise, not H1's specific design. \\
 \cite{cite-scholarly-kitchen-credentialism-001} & Scholarly Kitchen 2026, The Guild and the Gap & cited & A real rejection episode on prior-publication grounds; whether a claim card would change the outcome is untested. \\
 \cite{cite-tcij-freelance-th-001} & TCIJ (TH) 2020, freelance-academic labour piece & cited & Adjacent labour/credit question, thinner on H1's actual rigour-verification topic than its search match suggested. \\
@@ -506,7 +524,7 @@ convention and the citation cards' own explicit notes). \texttt{concentration\_f
 \cite{cite-rigour-without-infrastructure-009} & THE STANDARD (TH) 2025, Thai Open Science policy piece & cited & Institution-led opening of an existing record --- the institution still decides what counts as legitimate, an access question not a rigour-provenance one. \\
 \cite{cite-own-blackbox-log-h2-006} & Blackbox Log (Lahtee) & own lineage, not independent & No claim about whether rigour is portable at claim level. \\
 \cite{cite-own-civilization-of-knowledge-h2-007} & The Civilization of Knowledge (Lahtee) & own lineage, not independent & Locates the stabilizing step historically in institutions --- would ask whether a claim card is a new non-institutional stabilizer or a mistaken substitute. \\
-\cite{cite-own-readout-condition-h2-002} & The Readout Condition (Lahtee) & own lineage, not independent & A claim satisfying E-A-D does not need an institution to vouch for it; does not itself argue institutions add nothing. \\
+\cite{cite-own-readout-condition-h2-002} & The Readout Condition (Lahtee) & own lineage, not independent & Weak, indirect: supports source-relative warrant architecture, not explicitly ``rigour'' or institutional non-conferment --- cross-vendor review downgraded this from moderate/direct to weak/indirect support; own lineage, not independent confirmation. \\
 \cite{cite-own-readout-genesis-h2-003} & Readout Genesis Standalone Synthesis (Lahtee) & own lineage, not independent & Institutions are one belief-scale among several, not a precondition for knowledge status. \\
 \cite{cite-own-standalone-scholar-h2-005} & The Standalone Scholar (Lahtee) & own lineage, not independent & Independent human friction is one specific historical route to stress-tested knowledge, not necessarily the only one --- would ask if H2 still needs some friction step. \\
 \cite{cite-own-written-ai-h2-001} & Written by AI. Still True. (Lahtee) & own lineage, not independent & Institutional authority is derivative, not a source, of epistemic value --- the same possession/constitution distinction H2 draws. \\
@@ -528,16 +546,16 @@ proposition of the three whose manifest itself records a nonzero disagree count.
 \toprule
 \textbf{Citation card} & \textbf{Source} & \textbf{Relation} & \textbf{Bearing} \\
 \midrule
-\cite{cite-selfpreference-judge-001} & Wataoka, Takahashi \& Ri 2024/25, Self-Preference Bias in LLM-as-a-Judge & cited & Bias tracks perplexity/familiarity, not narrowly vendor identity --- the effective variable may not always track vendor boundaries. \\
+\cite{cite-selfpreference-judge-001} & Wataoka, Takahashi \& Ri 2024/25, Self-Preference Bias in LLM-as-a-Judge & cited & Weak, context-only: finds familiarity/self-preference bias, a mechanism relevant to why same-vendor re-checking may under-detect, but does not itself run a cross-vendor-vs-same-vendor comparison --- cross-vendor review downgraded this from moderate to weak, scope narrowed to \texttt{CONTEXT\_ONLY}/\texttt{SUPPORTS\_GENERAL\_MECHANISM}. \\
 \cite{cite-crossmodel-codereview-002} & Xiang et al.\ 2026, Cross-Model LLM Code Review, arXiv:2607.21656 & different & The one source that actually runs H3's own comparison: the effect is asymmetric and direction-dependent (one direction helps a lot, the reverse hurts), and same-vendor re-review also improved one condition. \\
-\cite{cite-toohconsistent-003} & Tan et al.\ 2025, Too Consistent to Detect (EMNLP) & same & Same-model repeated sampling cannot catch ``self-consistent'' errors --- structurally the concern H3 raises about same-vendor re-check. \\
+\cite{cite-toohconsistent-003} & Tan et al.\ 2025, Too Consistent to Detect (EMNLP) & same & Weak, context-only: same-model repeated sampling cannot catch ``self-consistent'' errors, relevant to but not a direct test of H3's cross-vendor mechanism --- cross-vendor review downgraded this from moderate to weak, scope narrowed to \texttt{CONTEXT\_ONLY}/\texttt{SUPPORTS\_GENERAL\_MECHANISM}. \\
 \cite{cite-multiagent-debate-004} & Du et al.\ 2023, Multiagent Debate & cited & Multi-instance debate improves factuality without varying vendor identity --- the active ingredient could be plurality, not cross-vendor difference. \\
 \cite{cite-selfcorrect-reasoning-005} & Huang et al.\ 2023/24, LLMs Cannot Self-Correct Reasoning Yet & cited & Tests zero-external-signal correction, a weaker condition than a same-vendor re-check with a fresh adversarial prompt --- an imperfect analogy, flagged as such. \\
 \cite{cite-legalai-india-006} & John, Singh \& Panachakel 2026, Can Legal AI Know When It Is Wrong? & cited & Three vendors' error rates differ nearly 5x on identical inputs, consistent with H3's premise, but the paper's own lever for improved catching is human experience, not cross-vendor AI review. \\
 \cite{cite-bangladesh-readiness-007} & Sultana et al.\ 2026, Bangladesh AI Readiness & cited & Names a capacity defeater of H3's practical reach (infrastructure to run any independent review at all), not of H3's empirical claim. \\
 \cite{cite-iseas-sea-governance-008} & Fong 2026, AI Governance Policies in Southeast Asia & cited & Institutional-capacity constraint on deploying cross-vendor review as policy, orthogonal to H3's mechanism claim. \\
 \cite{cite-cofact-thai-detector-009} & Cofact Thailand 2025, AI-image-detection reliability & cited & Adjacent domain (detecting whether content is AI-made, not whether AI-authored claims are honest) --- genuinely different problem. \\
-\cite{cite-mindstudio-crossvendor-010} & MindStudio blog 2026, Cross-Vendor AI Agent Review & same & States H3's own mechanism in practitioner language, but with no measurement, sample, or method of its own --- flagged as concentration risk, not equivalent-weight evidence. \\
+\cite{cite-mindstudio-crossvendor-010} & MindStudio blog 2026, Cross-Vendor AI Agent Review & same & Weak, context-only: states H3's own mechanism in practitioner language, but with no measurement, sample, or method of its own --- cross-vendor review scoped this \texttt{CONTEXT\_ONLY}/\texttt{SUPPORTS\_GENERAL\_MECHANISM}, flagged as concentration risk, not equivalent-weight evidence. \\
 \cite{cite-own-blackbox-log-h3-006} & Blackbox Log (Lahtee) & own lineage, not independent & No claim about detection rates. \\
 \cite{cite-own-knowledge-stabilized-translation-h3-007} & Knowledge as Stabilized Translation (Lahtee) & own lineage, not independent & Stability under variation is the marker of knowing well --- conceptually the same move H3 makes; does not specify vendor identity as the variation dimension. \\
 \cite{cite-own-readout-condition-h3-002} & The Readout Condition (Lahtee) & own lineage, not independent & Disclosure is structural, not optional; does not specify the auditor must be a different AI vendor. \\
@@ -633,6 +651,32 @@ public-facing disclosures rely on, and its presence in CI --- rather than only a
 pre-publish step --- is itself part of what this paper's demonstration reports: a leak gate that
 runs on every push, not only when someone remembers to ask for it.
 
+\subsection*{Independent review of this paper's own claims}
+\label{sec:self-review}
+The three project claim cards behind this paper (\Cref{sec:claim-matrix}) were themselves put
+through the independence ladder before this draft was finalized: three cross-vendor AI review
+routes (R1 Falsifier, R2 HostileReviewer, R3 SourceAuditor; independence class I3), producing nine
+review reports in total (three routes $\times$ three cards,
+\texttt{projects/GLS-2026-001\_rigour-without-infrastructure/reviews/*.review\_report.json}), read
+each card independently of the session that drafted it. All nine converged on one defect class:
+statements written as results when the evidence behind them was one self-application run plus
+same-lineage or adjacent-domain citations, not a direct test of the mechanism stated. Concretely:
+H1's ``can co-produce knowledge'' was rewritten to ``could, as a design proposition,'' with the
+paper's own n=1 self-application named explicitly as one demonstration readout, not a general test;
+H2's categorical ``rigour is not conferred by institutions'' was rewritten to a hedged conceptual
+proposition (``proposed here $\ldots$ at least in part''), with every same-lineage supporting
+citation now carrying an explicit not-independent note; H3's asserted ``rises measurably'' was
+rewritten to an untested hypothesis, ``would rise $\ldots$ no measurement has been made, n=0.''
+Every individual finding from all three routes is logged as a resolved dissent record on its
+originating claim card (\texttt{five\_questions.tested.dissent\_records}), not silently absorbed
+into a cleaner-looking rewrite. As of this draft, each card's \texttt{independent\_check.status} is
+\textbf{PENDING}: checked by cross-vendor routes and revised accordingly, but not yet re-checked by
+a further independent route, and not yet approved by the founder for release
+(\Cref{sec:claim-matrix}). This section is offered as a working example of the independence ladder
+catching over-scope in this paper's own output --- one instance, at I3, on one paper --- not as
+proof that the ladder works in general; that broader claim would itself need the same discipline
+(H1's own falsifier, \Cref{sec:propositions}) before it could be asserted.
+
 % ===========================================================================
 \section{Limitations and disclaimers}
 \label{sec:limitations}
@@ -645,9 +689,10 @@ This paper's overall knowledge state is \textbf{K0} (internal working note): eve
 claim in it, including \Cref{sec:demonstration}'s findings, shares this K0 state. It is not K1
 (public-provisional with a named independence class per claim and no class-5 human check yet)
 because the three underlying claim cards' own \texttt{status} field is still \texttt{Draft} and
-\texttt{independent\_check.status: NONE} --- the founder has ruled on genre and selection at the
-project level but has not yet signed off on any specific card instance
-(\Cref{sec:claim-matrix}).
+\texttt{independent\_check.status: PENDING} (checked by three cross-vendor routes and revised, not
+yet re-checked by a further route or founder-approved, \Cref{sec:self-review}) --- the founder has
+ruled on genre and selection at the project level but has not yet signed off on any specific card
+instance (\Cref{sec:claim-matrix}).
 
 \section{AI-assistance disclosure}
 \label{sec:ai-disclosure}
@@ -722,8 +767,9 @@ C3 & H3: cross-vendor (I3) checking measurably outperforms same-vendor (I0/I1) c
 \bottomrule
 \end{tabularx}
 \caption{Claim Matrix. All three cards: \texttt{k\_state: K0}, \texttt{status: Draft},
-\texttt{independent\_check.status: NONE}, \texttt{independence\_class: I3} (the citation-verification
-route, not the card's own sign-off).}
+\texttt{independent\_check.status: PENDING} (checked by cross-vendor routes R1--R3 and revised,
+\Cref{sec:self-review}; not yet re-checked by a further route or founder-approved),
+\texttt{independence\_class: I3} (the citation-verification route, not the card's own sign-off).}
 \label{tab:claim-matrix}
 \end{table*}
 

@@ -53,15 +53,16 @@
     $I3$ (decorrelated cross-vendor AI route, \texttt{claim\_match\_verified\_by:
     route:cross-vendor-ai}) for \texttt{claim\_match}, and mechanically ($I3$-adjacent,
     Crossref/OpenAlex lookup) for \texttt{metadata\_verified}. The three
-    project claim cards themselves (\Cref{sec:claim-matrix}) sit at
-    \texttt{independent\_check.status: NONE} --- drafted and self-checked by
-    the authoring AI session, never yet reviewed by a route independent of
-    that session (this is $I0$ for the cards' own content, not to be conflated
-    with the $I3$ citation-level checks that feed them). No external or
-    institutional validation is sought or treated as available as a lever
-    that would make any claim here more true; an outside reader's input, if
-    it comes, is optional-level evidence at whatever independence class it
-    actually reaches, never a certification gate.
+    project claim cards themselves (\Cref{sec:claim-matrix}) have additionally
+    been read by three cross-vendor AI review routes at $I3$
+    (\Cref{sec:self-review}) and revised in response, and now sit at
+    \texttt{independent\_check.status: PENDING} --- checked and revised, but
+    not yet re-checked by a route independent of that review pass, and not
+    yet approved by the founder for release. No external or institutional
+    validation is sought or treated as available as a lever that would make
+    any claim here more true; an outside reader's input, if it comes, is
+    optional-level evidence at whatever independence class it actually
+    reaches, never a certification gate.
   \item[D-DVP-NOT-K2] A decorrelated-vendor AI review pass (DVP) is at most an
     $I3$ route. \textbf{DVP $\neq$ K2}: no combination of AI-only checks,
     however many vendors, raises this paper's claims to K2. This paper's
@@ -81,10 +82,15 @@
     English-only rule governs the paper's own prose, not the Blackbox Note's
     raw lines. Within the underlying claim cards, the Thai statement fields
     themselves carry \texttt{translation\_status: reviewed}.
-  \item[D-DISSENT-PRESERVED] None recorded to date for H1/H2/H3 specifically.
-    The literature-review dialogue tables (\Cref{tab:h1-lit,tab:h2-lit})
-    already carry the closest real dissent this project has found against its
-    own hypotheses (the Mayes 2022 boundary-work finding against H1
+  \item[D-DISSENT-PRESERVED] Nine dissent records are logged across the three
+    claim cards (three cross-vendor routes $\times$ three cards,
+    \Cref{sec:self-review}), each with a \texttt{resolved: true} entry naming
+    what was accepted and how the card changed --- none is deleted or
+    silently folded into a cleaner rewrite; every one remains readable in the
+    card's own \texttt{five\_questions.tested.dissent\_records} field. The
+    literature-review dialogue tables (\Cref{tab:h1-lit,tab:h2-lit}) separately
+    carry the closest real dissent this project has found against its own
+    hypotheses (the Mayes 2022 boundary-work finding against H1
     \citep{cite-cstp-boundary-work-001}; the Scholarly Kitchen credentialism
     case against H2 \citep{cite-rigour-without-infrastructure-004}); these are
     stated as open challenges in \Cref{sec:literature}, not resolved or
@@ -124,12 +130,13 @@
     for the author's judgment or responsibility
     (\textbf{AIContribution $\neq$ EpistemicResponsibility}).
   \item[D-REVISION-LIVE] The three underlying claim cards
-    (\texttt{GLOSA-CC-20260904-0201/0202/0203}) are at revision 2 of an
-    actively edited project; \texttt{status: Draft} and
-    \texttt{independent\_check.status: NONE} on all three reflect that the
-    founder has not yet signed off on any specific card instance, even though
-    the founder has already ruled on genre (BBL-097) and hypothesis selection
-    (BBL-095) at the project level.
+    (\texttt{GLOSA-CC-20260904-0201/0202/0203}) are at revision 3 of an
+    actively edited project, the second revision having been driven by the
+    nine cross-vendor review findings described in \Cref{sec:self-review};
+    \texttt{status: Draft} and \texttt{independent\_check.status: PENDING} on
+    all three reflect that the founder has not yet signed off on any specific
+    card instance, even though the founder has already ruled on genre
+    (BBL-097) and hypothesis selection (BBL-095) at the project level.
   \item[D-NO-EPISTEMIC-VETO] No agency --- including any AI vendor, reviewer,
     or institution named in this paper --- holds an epistemic veto over H1,
     H2, or H3 merely by title, credential, or infrastructure ownership; any

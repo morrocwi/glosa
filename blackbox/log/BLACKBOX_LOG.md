@@ -2,7 +2,7 @@
 
 > **นี่คือปูมเสียงดิบ ไม่ใช่บทความ** — ทุกบรรทัดคือคำพูดตามที่พูด (verbatim) ณ วันเวลานั้น ยังไม่ผ่านการปรุง ไม่ผ่านการตรวจอิสระ (tier: positional / Dr) บันทึกเพิ่มได้อย่างเดียว ไม่แก้ไม่ลบ (แก้ = บรรทัดใหม่ที่อ้างบรรทัดเดิม) เลนส์ที่ใช้มองปัญหา: **Readout Universe — Yaoharee Lahtee** (10.5281/zenodo.21529456, 10.5281/zenodo.22301318, 10.5281/zenodo.22301202; github.com/morrocwi/readout_universe) ระบบที่เก็บ: glosa (github.com/morrocwi/glosa) **ปูมนี้มีเฉพาะเสียงของผู้เขียนเท่านั้น** — ไม่มีบรรทัดที่ AI เขียน (คำตัดสินผู้เขียน 2026-09-04: บันทึกระบบที่ AI เคยใส่ไว้ 1 รายการถูกถอดออกและเก็บไว้ที่ blackbox/log/removed_ai_entries.json) ป้าย "เนื้อหาที่สร้างโดย AI" ที่ Facebook ติดให้บางโพสต์เกิดจากรูปประกอบที่ทำด้วย AI ไม่ใช่ตัวข้อความ จึงไม่ถูกนำมาบันทึก
 
-จำนวนบันทึก: 102 · อัปเดตล่าสุด: 2026-09-04T22:09:32+07:00
+จำนวนบันทึก: 105 · อัปเดตล่าสุด: 2026-09-04T22:42:54+07:00
 
 ## สารบัญตามหมวดความคิด (ไม่เรียงตามวันที่)
 
@@ -56,7 +56,7 @@
 - **BBL-2026-09-04-067** (2026-09-04, finding, cheapest-contextual-knowledge, cost-of-knowledge, dependence-on-authority) — ว่ากันตามจริงแล้ว ตอนนี้เรากำลังยุคที่ความรู้ที่สอดคล้องตามบริบท…
 - **BBL-2026-09-04-070** (2026-09-04, finding, global-labour, token-priced-labour, ai-brokers, white-collar-replacement, epistemic-reordering, chaotic-renaissance) — ในภาพรวมของแรงงานโลก หากแบ่งอย่างหยาบที่สุด อาจแบ่งได้เป็นสองประเภทใหญ่ ๆ คือ แรงงานที่ทัก…
 
-### วิธีวิทยา / ระบบ glosa (30)
+### วิธีวิทยา / ระบบ glosa (33)
 
 - **BBL-2026-09-04-001** (2026-09-04, ruling, spine, lens) — ที่สำคัญอย่าลืม ให้เริ่มจากมองปัญหาด้วยเลนส์ readout ก่อน แล้วแปลกลับเป็นภาษษโลกเพื่อสกัดส…
 - **BBL-2026-09-04-002** (2026-09-04, ruling, system) — ทำให้ทั้งหมดรวมเป็นระบบเดียวที่นิ่ง…
@@ -88,6 +88,9 @@
 - **BBL-2026-09-04-101** (2026-09-04, instruction, adopt, citation-rule) — อัพเดทเข้าระบบไปเลย…
 - **BBL-2026-09-04-102** (2026-09-04, instruction, zenodo, publish, from-problem-to-hypothesis, imagination, bounded-knower) — เอาเข้าา zenodo ให้หน่อย'/home/yaoharee-lt/Downloads/From_Problem_to_Hypothesis_BOUNDED_KN…
 - **BBL-2026-09-04-103** (2026-09-04, ruling, paper, english-only, no-thai-in-paper, GLS-2026-001) — ไม่ต้องใช้ภาษาไทยเอาอังกฤษล้วน…
+- **BBL-2026-09-04-104** (2026-09-04, ruling, attribution, no-ai-coauthor, zenodo, git) — co authore ที่แอบใส่ไว้ในระบบ zendo ว่าเป็น claude ให้ลบทั้งหมด…
+- **BBL-2026-09-04-105** (2026-09-04, ruling, attribution, permission-only, gate-rule) — ตั้งกติกาเลยว่าถ้าจะใส่อะไรพวกนีต้องขออนุญาติเท่านั้นใน claude.md…
+- **BBL-2026-09-04-106** (2026-09-04, instruction, zenodo, series, bounded-knower, paper-II, paper-III, linking) — เอาสองเอกสารนี้ เชื่อมกับเอกสารก่อนหน้าให้อ'/home/yaoharee-lt/Downloads/Before_Evidence_Ca…
 
 ### กล่องดำ / เสียงดิบ (7)
 
@@ -1943,4 +1946,16 @@
 **BBL-2026-09-04-103** · 22:09 · ผู้ก่อตั้ง · ruling · หมวด: วิธีวิทยา / ระบบ glosa · paper, english-only, no-thai-in-paper, GLS-2026-001 · ที่มา: chat 2026-09-05 ~00:15 — the concept paper carries no Thai text at all; founder lines appear as English gloss with pointers to the verbatim Thai in the Blackbox Log / Blackbox Note (the Thai-font engine problem becomes moot)
 
 > ไม่ต้องใช้ภาษาไทยเอาอังกฤษล้วน
+
+**BBL-2026-09-04-104** · 22:13 · ผู้ก่อตั้ง · ruling · หมวด: วิธีวิทยา / ระบบ glosa · attribution, no-ai-coauthor, zenodo, git · ที่มา: chat 2026-09-05 ~00:25 — remove every AI co-author attribution (git Co-Authored-By trailers, any vendor/model name as author/contributor)
+
+> co authore ที่แอบใส่ไว้ในระบบ zendo ว่าเป็น claude ให้ลบทั้งหมด
+
+**BBL-2026-09-04-105** · 22:13 · ผู้ก่อตั้ง · ruling · หมวด: วิธีวิทยา / ระบบ glosa · attribution, permission-only, gate-rule · ที่มา: chat 2026-09-05 ~00:26 — gate rule: any AI attribution requires explicit founder permission
+
+> ตั้งกติกาเลยว่าถ้าจะใส่อะไรพวกนีต้องขออนุญาติเท่านั้นใน claude.md
+
+**BBL-2026-09-04-106** · 22:42 · ผู้ก่อตั้ง · instruction · หมวด: วิธีวิทยา / ระบบ glosa · zenodo, series, bounded-knower, paper-II, paper-III, linking · ที่มา: chat 2026-09-05 ~01:40 — publish Paper II + III and link the three-paper sequence (I = 10.5281/zenodo.22307148) as one series on Zenodo
+
+> เอาสองเอกสารนี้ เชื่อมกับเอกสารก่อนหน้าให้อ'/home/yaoharee-lt/Downloads/Before_Evidence_Can_Decide_Paper_III_K0.pdf' '/home/yaoharee-lt/Downloads/Knowledge_Topology_First_Passage_Usable_Hypotheses_K0.pdf' ่ อ่านหากันได้ เข้า zenodo เป็นซีรีส์เดียวกัน
 
