@@ -1,0 +1,98 @@
+$schema: search_log.schema.json
+id: search-rigour-without-infrastructure-001
+claim_or_hypothesis_ref: H3
+search_mode: SCOPING_SEARCH
+frozen_scope:
+  hypothesis_or_falsifier: >-
+    H3 (EMPIRICAL): When claim cards are checked by a different AI vendor from the one that
+    produced them (cross-vendor, independence level I3) instead of being re-checked by the same
+    vendor that produced the card (I0/I1), the rate at which undisclosed AI-fill (a false Q3
+    field) or undisclosed assumptions (a false Q4 field) is caught rises measurably compared to
+    same-vendor re-checking. Falsifier: a controlled or quasi-controlled comparison (RCT, matched
+    cohort, or adversarial-testing study) that finds no measurable difference (or a reversed
+    direction) in catch rate between cross-vendor/cross-model independent review and same-model
+    self-review/re-check, on tasks structurally analogous to AI-fill or undisclosed-assumption
+    detection.
+  question_type: effect
+  concepts_synonyms_vocabulary:
+    - "cross-model review"
+    - "cross-vendor review"
+    - "LLM-as-judge"
+    - "self-critique / self-refine"
+    - "self-verification bias"
+    - "model diversity ensemble"
+    - "AI-assisted code review defect detection"
+    - "hallucination detection"
+    - "independent verification / maker-checker"
+    - "adversarial collaboration between models"
+    - "multi-agent debate"
+    - "same-model vs different-model grading"
+    - "peer review bias / conflict of interest"
+  inclusion_exclusion_rules: >-
+    INCLUDE: any empirical or theoretical study comparing detection/catch rate, error-finding
+    rate, or bias-correction rate of a check performed by the SAME generative process/model/rater
+    that produced the artifact versus a DIFFERENT (cross-model, cross-vendor, or structurally
+    independent human/organizational) process — in software code review, LLM-output grading,
+    scientific self-replication, or human conflict-of-interest/self-review literature (a
+    structural analogue, cited as analogue, never as direct AI evidence). Also include papers
+    describing why same-rater/same-source review under-detects (self-serving bias, blind spots,
+    confirmation bias) even outside AI, since H3's mechanism claim rests partly on this general
+    principle. EXCLUDE: papers about model accuracy/capability alone with no same-vs-different
+    reviewer comparison; papers about AI safety framed only as alignment/values (no detection-rate
+    data); marketing or vendor blog posts asserting superiority without a stated method; sources
+    this session could not itself open (secondary-citation ban, FC-S14-1).
+  time_window: "2018-2026 (LLM-as-judge / cross-model review literature is mostly 2022 onward; earlier work on same-source review bias in human peer review/code review dates back further and is included as structural-analogue background)."
+  language_strategy: "EN primary; deliberate TH and other-non-EN inclusion (>=2 Thai-language or Thailand/SEA-based sources, per project stratification requirement); no language exclusion applied at the query stage."
+  global_sources:
+    - "Google Scholar (web search proxy)"
+    - "arXiv (via web search)"
+    - "ACM Digital Library (via web search)"
+    - "General web (WebSearch tool) for grey/community/preprint sources (GitHub, engineering blogs, standards bodies)"
+  local_context_sources:
+    - "Thai-language web search (คำค้นภาษาไทย) for Thai AI-governance / civil-society / academic sources"
+    - "SEA-region institutional and NGO sources (e.g. regional digital-rights, AI-governance orgs)"
+  search_date: "2026-09-04"
+  stopping_rule: >-
+    Stop once >=8 distinct candidate sources are found meeting inclusion criteria AND the
+    stratification floor is met (>=2 Thai/SEA, >=2 Global South, >=1 grey/community), OR after 6
+    distinct WebSearch query rounds across the support/challenge families below, whichever comes
+    first (SCOPING_SEARCH mode — bounded by rounds and stratification floor, not exhaustive
+    coverage; this is a scoping search per glosa's honest-label rule, not a systematic review).
+  conflicts_of_interest: >-
+    None disclosed. The AI session running this search is Claude (Anthropic); no financial or
+    institutional interest in the outcome of H3. Founder (Yaoharee Lahtee) is the human owner of
+    the glosa project this hypothesis serves; this is disclosed as the standard glosa-project
+    relationship, not a conflict requiring exclusion of the search.
+  access_limits: >-
+    No institutional journal access available in this session; acquisition is limited to
+    open-access papers, arXiv/preprint versions, publisher abstract pages, and grey/community
+    sources reachable via WebSearch/WebFetch. Paywalled full text is recorded honestly as
+    abstract_only, never claimed as fully read.
+queries:
+  support:
+    - "cross-model review catches errors self-review misses LLM"
+    - "different LLM evaluator detects hallucination better than same model self-check"
+    - "cross-vendor code review defect detection rate comparison"
+    - "LLM-as-judge self-preference bias same model"
+    - "peer review conflict of interest same lab detection rate"
+    - "multi-agent debate different models improves error detection"
+  challenge:
+    - "self-refine LLM improves output without external model no difference"
+    - "cross-model review no improvement over self-review study"
+    - "LLM judge bias unreliable across models same result"
+    - "same-model self-critique sufficient error correction evidence"
+  thai_or_sea:
+    - "การตรวจสอบ AI ข้ามผู้ให้บริการ ความน่าเชื่อถือ"
+    - "Thailand AI governance independent review LLM output"
+    - "Southeast Asia AI audit cross-vendor verification civil society"
+sources_found: []
+prisma_counts: null
+global_track:
+  summary: ''
+  strength_note: ''
+local_track:
+  summary: ''
+  result: NOT_SEARCHED
+transfer_verdict: null
+summary_disclaimer: 'TODO: state explicitly what WAS and was NOT found on both support and challenge sides
+  once a search is actually run (S14 §2.2).'

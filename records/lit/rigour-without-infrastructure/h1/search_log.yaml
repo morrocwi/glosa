@@ -3,18 +3,73 @@ id: search-rigour-without-infrastructure-001
 claim_or_hypothesis_ref: H1
 search_mode: SCOPING_SEARCH
 frozen_scope:
-  hypothesis_or_falsifier: ''
-  question_type: mechanism
-  concepts_synonyms_vocabulary: []
-  inclusion_exclusion_rules: ''
-  time_window: ''
-  language_strategy: ''
-  global_sources: []
-  local_context_sources: []
-  search_date: ''
-  stopping_rule: ''
-  conflicts_of_interest: ''
-  access_limits: ''
+  hypothesis_or_falsifier: >-
+    H1 (DESIGN, GLS-2026-001): If every claim a standalone scholar (no university, no lab, no
+    research team) produces is recorded as a claim card that answers the founder's five questions
+    (what was actually seen / what the data separates / what AI filled in / what is assumed / what
+    independent test, if any, it has survived), tied to the Readout Condition's
+    Existence-Attribution-Disclosure conditions, and passed through the independence ladder before
+    any public release -- then a person with no institutional affiliation can co-produce knowledge
+    with AI whose rigour a reader can check for themselves, without an institutional credential
+    serving as the thing that certifies it. Falsifier: a real claim card that passes every
+    mechanically-checkable schema field is nonetheless found by a genuine independent reviewer
+    (I5) to have a false answer at Q2 (evidence/authority-to-believe) or Q3 (AI-fill disclosure).
+  question_type: implementation
+  concepts_synonyms_vocabulary:
+    - independent researcher
+    - unaffiliated scholar
+    - amateur scientist
+    - citizen science
+    - open science
+    - AI-assisted research
+    - human-AI co-authorship
+    - AI research assistant verification
+    - reproducibility crisis
+    - open notebook science
+    - preregistration
+    - credentialism
+    - epistemic authority
+    - peer review alternatives
+    - post-publication review
+    - grassroots research Thailand
+    - นักวิจัยอิสระ
+    - ไม่มีสังกัดสถาบัน
+    - วิทยาศาสตร์พลเมือง
+  inclusion_exclusion_rules: >-
+    INCLUDE: sources discussing (a) how researchers without institutional affiliation/lab/funding
+    produce or validate knowledge, (b) verification/provenance/disclosure mechanisms for AI-assisted
+    research output, (c) alternatives to institutional peer review as a legitimacy mechanism
+    (open review, post-publication review, preregistration, reproducibility checklists), (d)
+    citizen-science or community-science epistemic practice, especially Thai/SEA grassroots or
+    grey-literature examples. EXCLUDE: sources purely about AI capability benchmarks with no
+    epistemic/verification angle; sources that are themselves uncredentialed blog opinion with no
+    described method (may be logged as grey literature but not used to support/disagree with H1
+    without a readable method); marketing material for a commercial AI-detection product.
+  time_window: '2015-2026 (looser bound for foundational open-science/citizen-science framing texts)'
+  language_strategy: 'EN primary; TH and at least one other language (attempted: ID/MY-region or FR) deliberately searched, not incidental'
+  global_sources:
+    - Google Scholar
+    - general web search (WebSearch tool)
+    - publisher/preprint sites reached via search (arXiv, F1000, PLOS, eLife, Zenodo)
+  local_context_sources:
+    - Thai-language web search (คำค้นภาษาไทย ผ่าน WebSearch)
+    - Thailand/SEA grey literature and community/open-science initiative sites reached via search
+  search_date: '2026-09-04'
+  stopping_rule: >-
+    Stop once >=8 candidate sources are found satisfying: >=2 Thai-language or Thailand/SEA-based,
+    >=2 Global South, >=1 grey/community source, spanning both a support family and a challenge
+    family of queries -- or after 3 rounds of query reformulation per family, whichever comes first.
+  conflicts_of_interest: >-
+    None disclosed. Searcher (AI, this session) has no financial or institutional stake in any
+    candidate source. The hypothesis author (founder, Yaoharee Lahtee) is the sole human on this
+    project; this is a reflexive literature review of the founder's own design-science claim about
+    the project's own method, a structural conflict disclosed here rather than hidden -- sources
+    are being sought that could disagree with or defeat H1, not only sources that support it.
+  access_limits: >-
+    No institutional library subscription available (this is the standalone-scholar condition the
+    hypothesis itself is about). Only open-access, preprint, or search-engine-abstract-visible
+    sources can be fetched and read; a paywalled source found by search is logged as
+    PAYWALLED_ABSTRACT_ONLY / NOT_OBTAINED rather than skipped silently.
 queries:
   support: []
   challenge: []

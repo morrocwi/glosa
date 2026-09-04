@@ -1,0 +1,92 @@
+$schema: search_log.schema.json
+id: search-rigour-without-infrastructure-001
+claim_or_hypothesis_ref: H2
+search_mode: SCOPING_SEARCH
+frozen_scope:
+  hypothesis_or_falsifier: >-
+    H2 (CONCEPTUAL): "Rigour" is not a property that institutional machinery (lab, department,
+    review committee) confers on a claim from the outside; it is a property a single claim can
+    carry in its own recorded structure (what was seen, what separates, what AI filled, what is
+    assumed, what independent check it survived) -- institutions are one historical mechanism
+    that has produced this property, not the only possible one. Falsifier: a claim card that
+    answers all five questions honestly and completely, checked at I3, is shown to still require
+    an institutional credential (not just an independent human reviewer) to be treated as
+    rigorous by its actual intended readers -- the credential does load-bearing work the card's
+    own fields cannot substitute for, for at least one class of reader/decision this project
+    cares about.
+  question_type: descriptive_baseline
+  concepts_synonyms_vocabulary:
+    - rigour / rigor
+    - institutional trust / institutional legitimacy
+    - open science / open scholarship
+    - independent verification / audit trail
+    - credentialism / gatekeeping in science
+    - citizen science / amateur science / standalone scholar
+    - trust markers / epistemic trust
+    - peer review alternatives
+    - reproducibility / transparency (as a record-level property vs. an institutional stamp)
+    - Southern epistemologies / decolonial science / community-based knowledge production
+  inclusion_exclusion_rules: >-
+    INCLUDE: any source (peer-reviewed article, preprint, book chapter, grey-literature report,
+    blog/community post from a working scientist or science-policy body) that discusses whether
+    rigour/trustworthiness of a knowledge claim is (a) conferred by institutional affiliation or
+    formal peer review, or (b) can instead be a property of the claim's own recorded
+    structure/provenance/audit trail (open notebook science, open peer review, preregistration,
+    community-based/citizen science credibility, non-affiliated/independent researcher trust).
+    EXCLUDE: sources purely about scientific method pedagogy with no institutional-trust
+    dimension; sources about research misconduct detection only (different question); sources
+    behind a paywall with no abstract/summary reachable (logged as not_obtained, never quoted).
+    This is a SCOPING_SEARCH (not systematic): the goal is a representative, stratified spread of
+    neighbour positions, not exhaustive coverage.
+  time_window: '2000-2026 (no hard floor; institutional-trust-in-science literature predates 2000
+    but the open-science/citizen-science framing this hypothesis engages is largely post-2000)'
+  language_strategy: >-
+    EN primary; TH required (at least 2 Thai-language or Thailand/SEA-based sources per task
+    instruction); one additional language family represented indirectly via an EN-language
+    source reporting on non-EN/non-TH contexts (e.g. Indonesian/Filipino citizen-science or
+    Global-South open-science literature) rather than requiring a third search language directly.
+  global_sources:
+    - Google Scholar (general web search proxy, no institutional Scopus/WoS access in this
+      session)
+    - arXiv / bioRxiv / SocArXiv (preprint servers, for open-science and metascience preprints)
+    - PLOS / F1000Research / eLife (open-access venues that publish open-peer-review and
+      metascience pieces)
+    - Wikipedia / general web (grey-literature entry points, e.g. citizen science, open notebook
+      science overview pages, cited onward to primary sources where possible)
+  local_context_sources:
+    - Thai academic repositories / ThaiJo (Thai Journals Online) reachable via web search
+    - Thailand/SEA science-policy or open-science community blogs and reports (e.g. SEA-based
+      open-science advocacy, Thai PDPA/open-data policy discussion) reachable via web search
+    - general web search restricted to .th domains and Thai-language queries
+  search_date: '2026-09-04'
+  stopping_rule: >-
+    Stop once at least 8 distinct candidate sources have been logged spanning: at least 2
+    Thai-language or Thailand/SEA-based sources, at least 2 Global-South sources, at least 1
+    grey/community source, and at least one source in the "challenge" query family (a source
+    arguing institutional credentialing IS load-bearing / cannot be substituted) -- whichever of
+    these strata comes last determines when the search actually stops. This is a SCOPING_SEARCH,
+    not an exhaustive systematic review; a small_n stopping rule, disclosed as such.
+  conflicts_of_interest: >-
+    None disclosed. The founder (Yaoharee Lahtee) is not an author, reviewer, or funder of any
+    candidate source found in this pass; this project's own paper is the object under review, not
+    a party to the literature being searched.
+  access_limits: >-
+    No institutional library/Scopus/Web-of-Science/JSTOR access in this session -- open-access,
+    preprint, and grey-literature sources only, plus what is reachable via free web search and
+    WebFetch. Paywalled sources reachable only by abstract are logged as PAYWALLED_ABSTRACT_ONLY
+    (scope restricted to SUPPORTS_GENERAL_CLAIM_ONLY / CONTEXT_ONLY_NOT_EVIDENCE, never quoted
+    directly) per the secondary-citation ban.
+queries:
+  support: []
+  challenge: []
+sources_found: []
+prisma_counts: null
+global_track:
+  summary: ''
+  strength_note: ''
+local_track:
+  summary: ''
+  result: NOT_SEARCHED
+transfer_verdict: null
+summary_disclaimer: 'TODO: state explicitly what WAS and was NOT found on both support and challenge sides
+  once a search is actually run (S14 §2.2).'
