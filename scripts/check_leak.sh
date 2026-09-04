@@ -47,63 +47,38 @@ fi
 # pattern text, and skip binary files).
 mapfile -t TRACKED < <(git ls-files)
 
-TMP_FILELIST="$(mktemp)"
-trap 'rm -f "$TMP_FILELIST"' EXIT
+TMP_FILELIST="$(mktemp)"; PATFILE="$(mktemp)"
+trap 'rm -f "$TMP_FILELIST" "$PATFILE"' EXIT
 for f in "${TRACKED[@]}"; do
   case "$f" in
     scripts/check_leak.sh|scripts/leak_denylist.txt|scripts/leak_denylist.local.txt) continue ;;
   esac
-  [ -f "$f" ] || continue
-  # Skip obvious binaries.
-  if file --mime "$f" 2>/dev/null | grep -q 'charset=binary'; then
-    continue
-  fi
-  printf '%s\n' "$f" >> "$TMP_FILELIST"
+  [ -f "$f" ] && printf '%s\n' "$f" >> "$TMP_FILELIST"
 done
-
-# Load patterns (skip blank lines and comments).
-PATTERNS=()
-while IFS= read -r line; do
-  case "$line" in
-    ''|'#'*) continue ;;
-  esac
-  PATTERNS+=("$line")
-done < "$DENYLIST"
-
-say "-- scanning $(wc -l < "$TMP_FILELIST" | tr -d ' ') tracked files against ${#PATTERNS[@]} patterns --"
+# Load patterns (skip blank lines and comments) into one file for a single-pass grep.
+grep -vE '^\s*(#|$)' "$DENYLIST" > "$PATFILE"
+NPAT="$(wc -l < "$PATFILE" | tr -d ' ')"
+say "-- scanning $(wc -l < "$TMP_FILELIST" | tr -d ' ') tracked files against $NPAT patterns (single pass; binaries skipped by grep -I) --"
 say ""
-
 HITS=0
-while IFS= read -r f; do
-  [ -z "$f" ] && continue
-  for pat in "${PATTERNS[@]}"; do
-    MATCHES="$(grep -inE -- "$pat" "$f" 2>/dev/null || true)"
-    if [ -n "$MATCHES" ]; then
-      while IFS= read -r m; do
-        [ -z "$m" ] && continue
-        say "  [FOUND] $f:$m  (pattern: $pat)"
-        HITS=$((HITS + 1))
-        FAIL=1
-      done <<< "$MATCHES"
-    fi
-  done
-done < "$TMP_FILELIST"
+# One grep over every file (-I skips binaries); then attribute each hit line to its pattern(s).
+MATCHED="$(tr '\n' '\0' < "$TMP_FILELIST" | xargs -0 grep -inHIE -f "$PATFILE" -- 2>/dev/null || true)"
+if [ -n "$MATCHED" ]; then
+  while IFS= read -r m; do
+    [ -z "$m" ] && continue
+    line="${m#*:}"; line="${line#*:}"
+    pat="$(while IFS= read -r pt; do printf '%s' "$line" | grep -iqE -- "$pt" && { printf '%s' "$pt"; break; }; done < "$PATFILE")"
+    say "  [FOUND] $m  (pattern: $pat)"
+    HITS=$((HITS + 1)); FAIL=1
+  done <<< "$MATCHED"
+fi
 
 # Author's-own-email allow check: separately report every email match so a
 # human can confirm which lines (if any) are the intended public author line.
 say ""
 say "-- email addresses found (for human confirmation, not auto-failed) --"
 EMAIL_PATTERN='[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}'
-while IFS= read -r f; do
-  [ -z "$f" ] && continue
-  MATCHES="$(grep -nE -- "$EMAIL_PATTERN" "$f" 2>/dev/null || true)"
-  if [ -n "$MATCHES" ]; then
-    while IFS= read -r m; do
-      [ -z "$m" ] && continue
-      say "  [EMAIL] $f:$m"
-    done <<< "$MATCHES"
-  fi
-done < "$TMP_FILELIST"
+tr '\n' '\0' < "$TMP_FILELIST" | xargs -0 grep -nHIE -- "$EMAIL_PATTERN" 2>/dev/null | sed 's/^/  [EMAIL] /' || true
 
 say ""
 say "== summary =="
