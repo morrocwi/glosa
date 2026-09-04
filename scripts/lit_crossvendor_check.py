@@ -88,7 +88,7 @@ def fetch_fulltext(identifier, meta):
             text = re.sub(r"<script.*?</script>|<style.*?</style>", " ", html, flags=re.S | re.I)
             text = re.sub(r"<[^>]+>", " ", text)
             text = re.sub(r"&nbsp;|&#160;", " ", text); text = re.sub(r"&amp;", "&", text); text = re.sub(r"&quot;|&#8220;|&#8221;", '"', text)
-            text = re.sub(r"\s+", " ", text)
+            text = re.sub(r"\s+", " ", text).replace("\x00", "")
             if len(text) > 800:
                 return text
         except Exception:  # noqa: BLE001
@@ -104,7 +104,7 @@ def passage_found(exact_passage, fulltext):
     """Mechanical check: is (a decent prefix of) the quoted passage present verbatim in the fetched text?"""
     if not exact_passage or not fulltext:
         return None
-    p = _norm(exact_passage); f = _norm(fulltext)
+    p = _norm(exact_passage); f = _norm(fulltext.replace("\x00", ""))
     words = p.split()
     if len(words) < 4:
         return None

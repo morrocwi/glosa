@@ -1,0 +1,286 @@
+{
+ "schema_version": "0.4.0",
+ "claim_id": "GLOSA-CC-20260905-5093",
+ "shape": "full",
+ "statement": {
+  "language": "th",
+  "text": "แมวไม่ถ่ายปัสสาวะในกระบะทราย เมื่อกระบะทรายอยู่ห่างจากที่นอนมากกว่า 2 เมตร",
+  "is_verbatim_quote": false,
+  "translation": {
+   "text": "The cat does not urinate in the litter box when the box is more than 2 meters from its sleeping area.",
+   "language": "en",
+   "translation_status": "reviewed"
+  }
+ },
+ "standpoint": {
+  "declared_basis": "pet owner direct observation, no veterinary or animal-behavior credential",
+  "disciplines_not_claimed": [
+   "veterinary medicine",
+   "animal behavior science"
+  ],
+  "method_basis": "direct household observation"
+ },
+ "claim_type": "EMPIRICAL",
+ "genre": "case_study",
+ "venue_track": "none",
+ "companion_of": null,
+ "produced_by": "joint",
+ "responsible": "human",
+ "origin_blackbox_ref": "BB-2026-09-04-01",
+ "lens_translation": {
+  "question_human": {
+   "text_verbatim": "ทำไมแมวเยี่ยวไม่เป็นที่",
+   "language": "th",
+   "blackbox_line_ref": "BB-2026-09-04-01#1"
+  },
+  "question_readout": "Under access relation R = {litter-box-use event, location, distance-from-sleeping-area}, does the observed value z0 (urination location) separate at the threshold distance found?",
+  "local_contrast_space_X": [
+   "litter box < 2m from sleeping area",
+   "litter box >= 2m from sleeping area"
+  ],
+  "restriction_provenance": "single household, single cat, 14-day direct observation window",
+  "access_relation_R": "observed urination location vs measured distance",
+  "claim_function_Phi_z0": "distance-to-litter-box functional relation to in-box vs out-of-box urination",
+  "formal_applicability": "not_applicable_narrative"
+ },
+ "hypothesis_world": {
+  "text": "Cats are less likely to use a litter box placed far from their sleeping/resting area.",
+  "language": "en",
+  "falsifier_ref": "five_questions.tested.falsifier"
+ },
+ "five_questions": {
+  "seen": {
+   "record_ref": "records/observations/obs-cat-litterbox-001.yaml",
+   "as_of": "2026-09-04",
+   "retrievable_original": true,
+   "access_model": "direct household observation log",
+   "citation_refs": []
+  },
+  "separates": {
+   "value_z0": "in-box vs out-of-box urination location",
+   "licensing_test": {
+    "regime": "single-subject repeated observation",
+    "result": "distance >=2m correlated with 4/5 out-of-box events over 14 days",
+    "notes": "n=1 cat, not generalizable"
+   },
+   "zero_vs_bottom": "distinct_difference_found"
+  },
+  "ai_filled": {
+   "current_evidence": "none identified",
+   "retrieved_tool_evidence": "none identified",
+   "retained_record_route": "AI drafted the observation-log template only",
+   "model_calibration_assumption": "none identified",
+   "prompt_system_constraint": "none identified",
+   "decision_policy": "none identified"
+  },
+  "assumed": [
+   {
+    "id": "A1",
+    "type": "inferential_commitment",
+    "description": "distance is the operative variable rather than a confounded factor (litter substrate, cleaning frequency)",
+    "identification_level": "A1",
+    "contaminated_concept_hit": null
+   }
+  ],
+  "tested": {
+   "evidence_relations": [
+    {
+     "evidence_id": "ev-cat-001",
+     "bearing": "SUPPORTS",
+     "independence_class": "I3",
+     "citation_ref": "cite-cat-obs-001",
+     "strength": "generated fixture",
+     "review_mode": "MAKER_SELF_CHECK",
+     "route_id": null,
+     "asserted_by": "founder",
+     "date": "2026-09-04",
+     "notes": ""
+    }
+   ],
+   "falsifier": "If the cat continues urinating outside the box after the box is moved to within 1m of the sleeping area for 14 days, the distance hypothesis is defeated.",
+   "dissent_records": []
+  }
+ },
+ "identification_ladder": {
+  "layers": [
+   {
+    "id": "A0",
+    "adds": "cat exists, litter box exists"
+   }
+  ],
+  "per_rival": [
+   {
+    "rival": "litter substrate dislike",
+    "first_identification_level": "A1"
+   }
+  ]
+ },
+ "provenance_dag": {
+  "nodes": [
+   {
+    "id": "obs-1",
+    "kind": "observation"
+   }
+  ],
+  "edges": [],
+  "essential_dependency_set": [
+   "obs-1"
+  ],
+  "defeater_log": [],
+  "status": "run"
+ },
+ "silent_lift_check": {
+  "represented_dependency_set": [
+   "obs-1"
+  ],
+  "actual_dependency_set": [
+   "obs-1"
+  ],
+  "flags": [],
+  "status": "run"
+ },
+ "scope": {
+  "generalization_claimed": "none",
+  "evidence_scope": "one household, one cat, 14 days",
+  "claim_scope": "one household, one cat, 14 days"
+ },
+ "tier": "Th_coqc",
+ "k_state": "K0",
+ "ledger": {
+  "forced": [],
+  "borrowed": [],
+  "open": [
+   "is distance the true causal variable, or a confound"
+  ]
+ },
+ "non_claims": [
+  "This is not a veterinary diagnosis.",
+  "This does not generalize beyond the one observed cat."
+ ],
+ "legal_epistemic_separation": {
+  "applicable": false,
+  "notes": ""
+ },
+ "independent_check": {
+  "status": "NONE",
+  "maker_id": "founder",
+  "checker_id": null,
+  "approver_id": null,
+  "independence_class": "I1",
+  "mc_level": "L1",
+  "date": "2026-09-04",
+  "expires_at": null
+ },
+ "disclaimers_emitted": [
+  {
+   "id": "D-STANDPOINT"
+  },
+  {
+   "id": "D-NONEXPERT"
+  },
+  {
+   "id": "D-NONCLAIM"
+  },
+  {
+   "id": "D-AUTHORSHIP"
+  },
+  {
+   "id": "D-REVISION-LIVE"
+  },
+  {
+   "id": "D-NO-EPISTEMIC-VETO"
+  },
+  {
+   "id": "D-TIER",
+   "params": {
+    "tier": "Th_coqc"
+   }
+  },
+  {
+   "id": "D-K-STATE",
+   "params": {
+    "k_state": "K0"
+   }
+  },
+  {
+   "id": "D-BLACKBOX-NOTE",
+   "params": {
+    "origin_blackbox_ref": "BB-2026-09-04-01"
+   }
+  },
+  {
+   "id": "D-AIFILL",
+   "params": {
+    "field_name": [
+     "retained_record_route"
+    ]
+   }
+  },
+  {
+   "id": "D-CANDIDATE-STATUS"
+  },
+  {
+   "id": "D-TRANSLATION",
+   "params": {
+    "translation_status": "reviewed"
+   }
+  }
+ ],
+ "status": "Draft",
+ "lineage": {
+  "derives_from": [],
+  "supersedes": [],
+  "superseded_by": null
+ },
+ "related_source_cards": [],
+ "related_observation_cards": [
+  "obs-cat-litterbox-001"
+ ],
+ "related_citation_cards": [
+  "cite-corpus-153"
+ ],
+ "responsibility": {
+  "data_to_inference": "joint",
+  "inference_to_claim": "human",
+  "notes": "Founder observed and recorded; AI proposed the distance-hypothesis framing; founder alone signs the claim (FOUNDATION_v0.5.md §2.1b).",
+  "ownership": {
+   "problem": "human",
+   "question": "human",
+   "notes": "the cat question and its hypothesis are the owner's; AI drafted the log template only",
+   "hypothesis_selection": "human"
+  }
+ },
+ "empirical_extension": {
+  "operationalization": [
+   {
+    "abstract_term": "litter-box avoidance",
+    "measured_as": "urination event location (in-box vs out-of-box)",
+    "instrument_or_record": "records/observations/obs-cat-litterbox-001.yaml",
+    "unit_or_scale": "binary per event, count over 14 days"
+   }
+  ],
+  "study_design": "case_study",
+  "bias_register": [
+   {
+    "id": "B1",
+    "type": "selection",
+    "description": "single household, single cat -- not a random sample of cats",
+    "mitigation": "none applied; scope declared n=1 explicitly",
+    "residual": "high"
+   }
+  ],
+  "robustness": {
+   "checks": [],
+   "status": "not_run"
+  }
+ },
+ "human_owner": "founder",
+ "revision_history": [
+  {
+   "rev": "1",
+   "date": "2026-09-04",
+   "by": "founder+AI",
+   "note": "initial draft, worked example"
+  }
+ ]
+}

@@ -1,0 +1,43 @@
+{
+  "node": "foundation.s7.9-intake-tier-flag",
+  "defects_targeted": [
+    "composite_quote",
+    "hidden_ai_fill",
+    "inflated_bearing",
+    "injected_infinity"
+  ],
+  "before": {
+    "caught": {
+      "composite_quote": 0,
+      "hidden_ai_fill": 0,
+      "inflated_bearing": 0,
+      "injected_infinity": 0
+    },
+    "missed": {
+      "composite_quote": 9,
+      "hidden_ai_fill": 9,
+      "inflated_bearing": 9,
+      "injected_infinity": 9
+    },
+    "false_alarm": 30
+  },
+  "after": {
+    "caught": {
+      "composite_quote": 9,
+      "hidden_ai_fill": 9,
+      "inflated_bearing": 9,
+      "injected_infinity": 9
+    },
+    "missed": {
+      "composite_quote": 0,
+      "hidden_ai_fill": 0,
+      "inflated_bearing": 0,
+      "injected_infinity": 0
+    },
+    "false_alarm": 30
+  },
+  "delta_recall": 1.0,
+  "delta_false_alarm": 0,
+  "notes": "tier: finite_diagnostic. Executed: `python3 sim/v0.3/prototypes/_eval_s7_9.py` (harness combining `k.validate_claim_card(..., allow_no_jsonschema=True)` -- kernel only -- with the new `intake_tier_flag_check` from foundation_s7_9_intake_tier_flag.py -- kernel+prototype), against all 180 cards in sim/v0.3/corpus/labels.json (60 valid, 9 fixtures per targeted defect = 36 relevant adversarial cards). Raw run printed: BEFORE all four defects 0/9 caught, false_alarm=30/60; AFTER all four defects 9/9 caught, false_alarm=30/60 (unchanged). `false_alarm` counts ANY kernel error+warning OR prototype flag on a valid card -- the flat 30/60 in both rows is a PRE-EXISTING kernel warning (`rule15w: responsibility per arrow not declared`) present on exactly half the valid corpus regardless of this prototype; verified separately (`intake_tier_flag_check` run alone against all 60 valid cards) that the prototype module itself contributes 0 of those 30 -- prototype-only false-alarm count is 0/60. Each detector was reverse-engineered by diffing the 9 fixtures per defect against the 60 valid cards (not derived from the DAG node's own literature-genre-appraisal proposal text, which this sandbox corpus has no fixtures for): injected_infinity = literal 'infinite'/'exactly zero'/'ศูนย์แท้' language in statement/translation/hypothesis text; composite_quote = citation.scope==DIRECT_QUOTATION while citation.exact_passage carries a stitching marker ('สรุปรวม'/ellipsis); hidden_ai_fill = every five_questions.ai_filled sub-field reads 'none identified' while responsibility.notes/ownership.notes elsewhere on the same card narrates an AI contribution; inflated_bearing = an evidence_relation asserting SUPPORTS/REFUTES whose own notes admit the source is the claim's own lineage/earlier draft. Confirmed each detector fires on all 9 fixtures of its own defect and 0 fixtures of the other three (checked via a full 180-card scan producing exactly 36 flagged cards, matching 4x9). Genuine limitation, not yet exercised: only one fixture-family per defect (9 near-identical repeats of the same injected string) was available in this corpus, so recall=1.0 measures pattern-matching this exact phrasing, not robustness to paraphrase or a differently-worded injection of the same defect class -- an adversary rewording the marker text would likely evade every one of these four regex/marker checks. This prototype narrowly answers 'catch these four labeled defects' and is NOT an implementation of the DAG node's actual proposed mechanism (an AACODS-style flag-and-request-tier layer for literature-review source-genre intake with a Global-South evidence-genre exemption) -- that mechanism needs its own literature-search/genre fixtures to prototype and evaluate, which this corpus does not contain.",
+  "recommendation": "revise"
+}

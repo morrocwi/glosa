@@ -1,0 +1,30 @@
+{
+ "id": "cite-corpus-090",
+ "claim_ref": "GLOSA-CC-20260905-5030",
+ "identifier": {
+  "kind": "BLACKBOX_NOTE",
+  "value": "BB-2026-09-04-01"
+ },
+ "fetch_status": "FETCHED",
+ "fetched_at": "2026-09-04",
+ "metadata_verified": true,
+ "metadata_verified_by": "mechanical:verbatim_diff_against_note",
+ "metadata_verified_at": "2026-09-04",
+ "claim_match_verified": true,
+ "claim_match_verified_by": "founder",
+ "claim_match_verified_at": "2026-09-04",
+ "exact_passage": "ทำไมแมวเยี่ยว … ไม่เป็นที่ (สรุปรวมจากสองช่วงที่ไม่ติดกัน)",
+ "page_or_locator": "line 1",
+ "scope": "DIRECT_QUOTATION",
+ "evidence_tier": "Dr",
+ "independence_class": "I1",
+ "who_verified": "founder",
+ "verification_method": "verbatim_diff_against_note",
+ "status": "VERIFIED",
+ "xenon_ledger_ref": null,
+ "disclosure": "",
+ "superseded_by": null,
+ "notes": "backs the raw question itself, not the hypothesis",
+ "fetched_from_url": "blackbox/BLACKBOX_NOTE_glosa-paper_2026-09-04.md",
+ "line_or_paragraph": "line 1"
+}

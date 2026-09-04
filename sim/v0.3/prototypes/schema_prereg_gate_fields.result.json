@@ -1,0 +1,103 @@
+{
+ "node": "schema.prereg-gate-fields",
+ "defects_targeted": [],
+ "defects_reported": [
+  "composite_quote",
+  "hidden_ai_fill",
+  "inflated_bearing",
+  "injected_infinity"
+ ],
+ "before": {
+  "per_defect": {
+   "composite_quote": {
+    "n": 9,
+    "caught": 0,
+    "missed": 9
+   },
+   "hidden_ai_fill": {
+    "n": 9,
+    "caught": 0,
+    "missed": 9
+   },
+   "inflated_bearing": {
+    "n": 9,
+    "caught": 0,
+    "missed": 9
+   },
+   "injected_infinity": {
+    "n": 9,
+    "caught": 0,
+    "missed": 9
+   }
+  },
+  "caught": 0,
+  "missed": 36,
+  "n": 36,
+  "recall": 0.0,
+  "false_alarm": 0,
+  "false_alarm_n": 60,
+  "false_alarm_rate": 0.0
+ },
+ "after": {
+  "per_defect": {
+   "composite_quote": {
+    "n": 9,
+    "caught": 0,
+    "missed": 9
+   },
+   "hidden_ai_fill": {
+    "n": 9,
+    "caught": 0,
+    "missed": 9
+   },
+   "inflated_bearing": {
+    "n": 9,
+    "caught": 0,
+    "missed": 9
+   },
+   "injected_infinity": {
+    "n": 9,
+    "caught": 0,
+    "missed": 9
+   }
+  },
+  "caught": 0,
+  "missed": 36,
+  "n": 36,
+  "recall": 0.0,
+  "false_alarm": 0,
+  "false_alarm_n": 60,
+  "false_alarm_rate": 0.0,
+  "new_false_alarm_ids": []
+ },
+ "delta_recall": 0.0,
+ "delta_false_alarm": 0.0,
+ "field_presence_scan": {
+  "cards_scanned": 180,
+  "field_name_hits": []
+ },
+ "synthetic_acceptance_test_probes_not_scored_into_corpus_tally": [
+  {
+   "name": "accept_not_applicable_non_human_subjects",
+   "expect": "no finding (accepted)",
+   "findings": []
+  },
+  {
+   "name": "flag_out_of_sequence_registry_before_freeze",
+   "expect": "flagged, not rejected",
+   "findings": [
+    "WARNING: prereg-gate-fields (sequencing): registry_administrative_approval_at=2026-05-15 predates protocol_frozen_at=2026-06-01 -- out-of-sequence, route to human review; this flags sequencing only, it does not assert the registry approval itself is invalid or that the protocol content is unsound."
+   ]
+  },
+  {
+   "name": "flag_not_applicable_misapplied_to_human_subjects_work",
+   "expect": "flagged (NOT_APPLICABLE not accepted silently here)",
+   "findings": [
+    "WARNING: prereg-gate-fields (sequencing): ethics_approved_at=NOT_APPLICABLE but the card's own empirical_extension.study_design/standpoint does not read as declared non-human-subjects work -- route to human review to confirm the NOT_APPLICABLE claim; this is a sequencing/applicability flag only, not a verdict on whether ethics review was actually required or adequate."
+   ]
+  }
+ ],
+ "notes": "finite_diagnostic, exact tally over this fixed 180-card sim/v0.3 corpus (60 valid + 120 adversarial, 9 cards per defect id) only. This node's three proposed fields (protocol_frozen_at, ethics_approved_at, registry_administrative_approval_at) do not appear on ANY of the 180 corpus cards (field_presence_scan.field_name_hits is empty, confirmed by direct text scan of every claim_file/citation_file listed in labels.json, not assumed) -- the node targets pre-registration timestamp sequencing / human-subjects-ethics applicability, a defect class this corpus's generator never injects. The four defects this task brief names as baseline-missed (composite_quote: citation exact_passage splicing; hidden_ai_fill: five_questions.ai_filled provenance mismatch; inflated_bearing: evidence_relations bearing/independence mismatch; injected_infinity: continuum/non-readout-concept statement text) are each a different, unrelated defect family -- none involve prereg timestamps or ethics applicability in any of their 36 fixture cards, matching field_presence_scan. Consequently before==after on every reported number here: caught=0/36 unchanged, false_alarm=0/60 unchanged, delta_recall=0.0, delta_false_alarm=0.0 -- by corpus field-absence, not by a weak or buggy check function. check_prereg_gate_fields() is exercised separately via three synthetic probes (synthetic_acceptance_test_probes_not_scored_into_corpus_tally, not folded into the corpus numbers above) reproducing the node's own acceptance_test verbatim: (1) ethics_approved_at=NOT_APPLICABLE on declared non-human-subjects work -> accepted silently (0 findings), (2) registry_administrative_approval_at dated before protocol_frozen_at -> flagged with a WARNING string (never an ERROR string, so it never blocks), (3) an added negative-control probe -- ethics_approved_at=NOT_APPLICABLE claimed on work the card's own study_design reads as human-subjects -- correctly flagged rather than silently accepted, so the NOT_APPLICABLE carve-out cannot be used to bypass a real human-subjects case. Every emitted string is prefixed 'sequencing' and explicitly disclaims asserting ethics-substance verification, per the node's own closing clause.",
+ "recommendation": "drop",
+ "tier": "finite_diagnostic"
+}

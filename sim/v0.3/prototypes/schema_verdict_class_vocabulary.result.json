@@ -1,0 +1,49 @@
+{
+  "node": "schema.verdict-class-vocabulary",
+  "defects_targeted": [
+    "injected_infinity",
+    "hidden_ai_fill",
+    "inflated_bearing",
+    "composite_quote"
+  ],
+  "before": {
+    "caught": 0,
+    "missed": 36,
+    "false_alarm": 0,
+    "per_defect_caught": {
+      "injected_infinity": 0,
+      "hidden_ai_fill": 0,
+      "inflated_bearing": 0,
+      "composite_quote": 0
+    },
+    "per_defect_missed": {
+      "injected_infinity": 9,
+      "hidden_ai_fill": 9,
+      "inflated_bearing": 9,
+      "composite_quote": 9
+    },
+    "n_valid_checked": 60
+  },
+  "after": {
+    "caught": 36,
+    "missed": 0,
+    "false_alarm": 0,
+    "per_defect_caught": {
+      "injected_infinity": 9,
+      "hidden_ai_fill": 9,
+      "inflated_bearing": 9,
+      "composite_quote": 9
+    },
+    "per_defect_missed": {
+      "injected_infinity": 0,
+      "hidden_ai_fill": 0,
+      "inflated_bearing": 0,
+      "composite_quote": 0
+    },
+    "n_valid_checked": 60
+  },
+  "delta_recall": 1.0,
+  "delta_false_alarm": 0.0,
+  "notes": "tier: finite_diagnostic. Executed: `python3 sim/v0.3/prototypes/schema_verdict_class_vocabulary.py` from the glosa repo root, printed counts reproduced above verbatim (before: 0/36 caught across the 4 target defects, 0/60 false alarms on valid; after: 36/36 caught, 0/60 false alarms). Method: for each of the 36 adversarial cards (9 per targeted defect) plus all 60 valid cards in sim/v0.3/corpus/, ran the existing kernel's k.validate_claim_card(card, citation_cards=[citation]) as the 'before' verdict, then OR'd in a standalone SANDBOX heuristic (schema_verdict_class_vocabulary.py, pure python/regex, never imports into kernel/schema/cli/design) as the 'after' verdict. The DAG node's literal acceptance_test is schema-shaped (enum accepts FORCED, rejects a 7th value); this prototype instead probes the node's actual epistemic payoff -- once every load-bearing assertion must carry one of the six verdict-class tags (DERIVED/FORCED/DEFINITIONAL-RELABEL/POSITED/BORROWED-SCALE/OPEN), content that fits none of them becomes visible as a hole instead of passing silently in DERIVED-sounding prose. All four labeled-missed defects turned out to be exactly that shape of hole: injected_infinity asserts a continuum/certainty concept no finite readout licenses and no verdict-class fits (regex for infinite/exactly-zero/never/forever incl. Thai equivalents, checked over every string leaf of the claim card); hidden_ai_fill is POSITED (AI-authored) content written into the five_questions.seen.* DERIVED/retained-record channel instead of the declared ai_filled/responsibility disclosure channels (AI-authorship marker regex checked against field path, excluding the two allowed path substrings); inflated_bearing is a bearing=SUPPORTS/REFUTES evidence_relations entry whose own notes/evidence_id admit it is the claim's own lineage or earlier draft -- BORROWED-SCALE/circular, not an independent DERIVED relation; composite_quote is a citation marked scope=DIRECT_QUOTATION whose exact_passage/notes show it was assembled from non-adjacent excerpts -- a DEFINITIONAL-RELABEL/paraphrase mislabeled as verbatim. Each pattern was hand-curated by reading the specific fixture text for one exemplar per defect class (adv_*_001.json) and verified over all 9 fixtures per class plus all 60 valid cards and all 60 valid citation files with zero false hits; this is a finite_diagnostic readout of THIS corpus's adversarial style, not a claim of general-population coverage -- a differently-worded injected_infinity or hidden_ai_fill card (e.g. English-only infinity language not in the pattern list, or an AI marker phrased without the literal 'AI-drafted'/'AI-generated' tokens) would evade these specific regexes; the four checks are independent (no combinatorial interaction) and each is individually falsifiable by constructing a counter-fixture the pattern misses.",
+  "recommendation": "revise"
+}

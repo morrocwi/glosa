@@ -1,0 +1,44 @@
+{
+ "node": "kernel.pcs-red-flag",
+ "defects_targeted": [
+  "premature_category (semantic closure-timing axis, distinct from the corpus's existing structural premature_category label -- see prototype docstring)"
+ ],
+ "before": {
+  "caught": 8,
+  "missed": 0,
+  "n": 8,
+  "false_alarm": 0,
+  "note": "Kernel-only, from ../baseline.json: premature_category is the STRUCTURAL scope-exceeds-evidence defect (schema rule 6), already 100% caught. This is a different concept from the DAG node's closure-timing/absence-of-adaptation target -- the real-corpus run has zero cards that exercise the node's actual semantic concept."
+ },
+ "after": {
+  "caught": 8,
+  "missed": 0,
+  "n": 8,
+  "false_alarm": 0,
+  "note": "Kernel + prototype on the 180-card corpus: unchanged. Prototype fires on none of the 180 cards (no closure-timing prose present anywhere in this corpus) so introduces zero new catches and zero new false alarms on the 60 valid cards. Other reported baseline-missed defects (composite_quote, hidden_ai_fill, inflated_bearing, injected_infinity: 0/9 caught each) are out of this node's scope and remain unchanged -- this prototype does not touch them.",
+  "synthetic_acceptance_test": {
+   "description": "Node's own acceptance_test, run literally: N=60 synthetic cards, 20 per class -- (a) timing-only closure [closure language + adaptation evidence present], (b) timing+no-adaptation [closure language, no adaptation evidence], (c) neither [no closure language at all].",
+   "per_class": {
+    "a": {"n": 20, "flagged": 0},
+    "b": {"n": 20, "flagged": 20},
+    "c": {"n": 20, "flagged": 0}
+   },
+   "flags_only_class_b": true,
+   "precision_on_b": 1.0,
+   "recall_on_b": 1.0,
+   "acceptance_test_pass": true
+  }
+ },
+ "delta_recall": 0.0,
+ "delta_false_alarm": 0.0,
+ "notes": [
+  "tier=finite_diagnostic on every number above -- exact tallies over this fixed 180-card corpus and this fixed 60-card synthetic set, printed by running `python3 prototypes/kernel_pcs_red_flag.py`; not a claim about kernel/prototype behaviour on any other corpus or on real-world card text.",
+  "The DAG node's target concept (closure-timing language AND absence-of-adaptation/contextual-fit, held jointly, explicitly NOT the clinical term 'premature closure') does not correspond to any defect class already present in sim/v0.3/corpus/labels.json. The corpus's `premature_category` label is a purely structural scope-vs-evidence mismatch (gen_corpus.py) that the shipped kernel already catches via jsonschema rule 6 -- unrelated in mechanism to the DAG node's semantic red-flag. Because of this, the real-corpus before/after numbers show zero movement by construction: there is nothing in the 180-card corpus for this prototype to catch or to false-alarm on.",
+  "The only real evidence for or against this node is the synthetic set built directly from its own acceptance_test wording: on 60 deterministic synthetic cards (20 per class, built from the same closure/adaptation lexicon the check itself uses), the joint-condition design achieves exactly what the node specifies -- flags ONLY class (b), 100% precision and 100% recall on class (b), zero flags on (a) or (c). This is a same-lexicon self-test (the synthetic cards are built from CLOSURE_TIMING_MARKERS/ADAPTATION_TEXT_MARKERS, the same lists the check scans against), so it demonstrates internal logical consistency of the joint condition, not generalization to real, unseen prose phrased differently -- that gap is the main open risk.",
+  "The check is lexicon-based (bilingual th/en substring scan) plus one structural adaptation signal (non_claims/ledger.open/non-population scope). It will miss closure-timing language phrased outside the listed markers (false negative) and, being pure substring matching, could over-fire on incidental use of a marker phrase in an unrelated sentence (false positive) -- neither failure mode is exercised by either evaluation run here, so precision/recall above should not be read as bounds on unseen text.",
+  "No independent adversarial review has been run on this prototype or its lexicon (maker-checker-gate: same-model self-check has no standing) -- this result.json is a maker's finite_diagnostic readout only.",
+  "DAG node's own risk field: 'Medium -- real cross-domain support, but two independent counter-cases (decoupled closure, successful non-premature adoption) risk over-generalization if scoping is dropped.' The (a) class in the synthetic set is designed to be exactly one instance of 'decoupled closure' (closure language present, but adaptation evidence also present) and the check correctly does not fire on it -- consistent with, not a full test of, that risk note."
+ ],
+ "recommendation": "revise",
+ "recommendation_reasoning": "The joint-condition logic the node specifies is internally sound and passes its own acceptance_test perfectly on a same-lexicon synthetic set (60/60 correct classification, precision=recall=1.0 on class b). But the real 180-card corpus offers zero evidence either way -- it contains no cards exercising this semantic concept at all, so 'ships clean with no regression' is true only because nothing here tests it. Before this becomes a kernel rule (not just a sandbox prototype), it needs: (1) a held-out synthetic/real set built independently of this file's own marker lists (to test generalization, not lexicon self-consistency), (2) an independent adversarial review per maker-checker-gate, and (3) explicit non-English/non-listed-phrasing coverage given ANSE.ASIA's bilingual th/en corpus. Recommend revising the acceptance_test itself to require an out-of-lexicon holdout before promoting past prototype status, rather than shipping or dropping on the current evidence alone."
+}

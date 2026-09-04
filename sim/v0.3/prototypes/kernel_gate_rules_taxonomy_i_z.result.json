@@ -1,0 +1,24 @@
+{
+ "node": "kernel.gate-rules-taxonomy-i-z",
+ "defects_targeted": ["injected_infinity"],
+ "defects_targeted_note": "This node's own change: text (design/DAG_v0.3.yaml) names only the I1-I4/Z1-Z4 injected-infinity/zero taxonomy (kc-base-016) and the Fail-Able Gate Law Type-P/Type-U distinction (kc-base-008). Of the four defects the task brief lists as baseline-missed (composite_quote, hidden_ai_fill, inflated_bearing, injected_infinity), only injected_infinity is an I/Z non-readout injection; the other three are unrelated defect families (quote composition, hidden-AI authorship, evidence-bearing inflation) this node does not claim to cover, so they are excluded from the before/after table below rather than silently folded into one 'recall' number that would misrepresent this node's actual scope.",
+ "before": {
+  "caught": 0,
+  "missed": 9,
+  "n": 9,
+  "false_alarm": 0,
+  "false_alarm_of_n_valid": 60
+ },
+ "after": {
+  "caught": 9,
+  "missed": 0,
+  "n": 9,
+  "false_alarm": 0,
+  "false_alarm_of_n_valid": 60
+ },
+ "delta_recall": 1.0,
+ "delta_false_alarm": 0,
+ "notes": "finite_diagnostic tier: exact tally over the fixed 180-card sim/v0.3 corpus (labels.json), this run, this prototype version -- not a general claim about kernel or prototype quality beyond this corpus. Method: sim/v0.3/prototypes/kernel_gate_rules_taxonomy_i_z.py is a pure-python, kernel-untouched sandbox check that scans a fixed set of free-text claim-card fields (statement text+translation, hypothesis_world, five_questions.separates/tested/ai_filled strings, evidence_relations[].notes, non_claims) for bilingual (EN+TH) regex signals naming an I1-I4/Z1-Z4 non-readout (kc-base-016 verbatim taxonomy: I1 R-completeness, I2 h->0, I3 Re,Lambda->infinity, I4 actual +infinity, Z1 point r=0, Z2 exact-zero spacing, Z3 absolute rest, Z4 true void, plus the 1/0=infinity reciprocity) asserted as a reached/actual value rather than a bounded readout. Evaluated via sim/v0.3/prototypes/eval_kernel_gate_rules_taxonomy_i_z.py, re-deriving the same kernel-flags-not-ok logic as sim/v0.3/baseline.py (validate_claim_card + validate_citation_card + compute_disclaimers diff) for the BEFORE column, OR-ing in the prototype's own finding for AFTER. All 9 injected_infinity fixtures share one injected sentence ('...คือศูนย์แท้ (exactly zero), เป็นค่า infinite reliability...') hitting the I4 and Z2/Z3 codes; verified with an explicit passing control (a real injected_infinity fixture fires, 2 findings: I4 + Z2/Z3) and an explicit failing control (a clean valid card and the three unrelated-defect fixtures composite_quote/hidden_ai_fill/inflated_bearing all fire zero findings), satisfying the Fail-Able Gate Law (kc-base-008) Type-P requirement -- this is not a Type-U convention that only ever demonstrates passing cases. Grep-verified separately that none of the 60 valid cards nor the citation corpus contain any of the taxonomy keywords, so the 0 false-alarm result is not an artifact of a lucky sample order. Caveat/limitation: the regex patterns are narrow and literal (built from kc-base-016's own verbatim wording, not a general NLP classifier), so this specific implementation would not generalize to differently-worded infinity/zero injections beyond this corpus's fixture phrasing without adding more patterns -- that is a scope limitation of this sandbox prototype, not evidence against the underlying taxonomy rule itself.",
+ "recommendation": "ship",
+ "recommendation_rationale": "The gap is real (unmodified kernel has zero coverage for prose-level I1-I4/Z1-Z4 non-readout injection -- rule12/rule15/rule17/rule6(scope) and the schema allOf rules all validate structural fields, never free-text claim/hypothesis/evidence content), the fix is narrowly scoped to exactly what the DAG node's change: text describes (no scope creep into the other three unrelated missed defects), and it clears the Fail-Able Gate Law bar with both a passing and a failing control on this corpus with zero measured false alarms. Recommend porting this pure-python check into kernel/glosa_kernel.py as a new NAMED gate-rule category (not folding it silently into an existing rule number, per the node's own 'as named kernel gate-rule categories' instruction) -- but note the DAG node's own risk line ('currently Dr/untested per FOUNDATION §3.3 itself; shipping without S4 simulation coverage would violate the roadmap's own no-ship-without-measured-effect rule') is now partially answered by this S4-style measurement, not fully closed: this is one 180-card synthetic corpus with a single fixed injected-infinity sentence, not the 8-synthetic-card-per-I/Z-type acceptance test the node itself specifies. Before a real kernel PR, add distinct per-code (I1/I2/I3/I4/Z1/Z2/Z3/Z4) synthetic fixtures — the node's own acceptance_test — since this corpus's one fixture only exercises I4+Z2/Z3 and cannot demonstrate the other six codes actually fire."
+}

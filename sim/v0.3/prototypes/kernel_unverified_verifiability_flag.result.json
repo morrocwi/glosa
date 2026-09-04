@@ -1,0 +1,58 @@
+{
+ "node": "kernel.unverified-verifiability-flag",
+ "defects_targeted": [
+  "verifiable_no_procedure"
+ ],
+ "before": {
+  "caught": 8,
+  "missed": 0,
+  "n": 8,
+  "recall": 1.0,
+  "false_alarm": 0,
+  "false_alarm_n_valid": 60
+ },
+ "after": {
+  "caught": 8,
+  "missed": 0,
+  "n": 8,
+  "recall": 1.0,
+  "false_alarm": 0,
+  "false_alarm_n_valid": 60
+ },
+ "context_only_not_targeted": {
+  "composite_quote": {
+   "before_caught": 0,
+   "before_n": 9,
+   "after_caught": 0,
+   "after_n": 9
+  },
+  "hidden_ai_fill": {
+   "before_caught": 0,
+   "before_n": 9,
+   "after_caught": 0,
+   "after_n": 9
+  },
+  "inflated_bearing": {
+   "before_caught": 0,
+   "before_n": 9,
+   "after_caught": 0,
+   "after_n": 9
+  },
+  "injected_infinity": {
+   "before_caught": 0,
+   "before_n": 9,
+   "after_caught": 0,
+   "after_n": 9
+  }
+ },
+ "thai_only_probe_illustrative": {
+  "probe_text": "ผลสรุปนี้ผ่านการตรวจสอบแล้วโดยไม่มีขั้นตอนทำซ้ำที่ระบุไว้",
+  "kernel_english_only_regex_would_flag": false,
+  "prototype_extended_regex_flags": true
+ },
+ "delta_recall": 0.0,
+ "delta_false_alarm": 0,
+ "notes": "finite_diagnostic readout over this fixed 180-card corpus (sim/v0.3/corpus/) only. Targeted defect 'verifiable_no_procedure': kernel-only (before) already catches 8/8 via compute_disclaimers()'s existing D-DVP-NOT-K2 diff signal (kernel/glosa_kernel.py, unmodified, verified by direct inspection -- validate_claim_card returns ok=True on every one of these 8 cards, confirming the 'never auto-rejects' half of the acceptance_test already holds today). Prototype (after) adds a self-declaration-proof signal reading compute-side content directly (not diffed against the card's own declared disclaimers_emitted list) plus a Thai-language keyword extension; on THIS fixed corpus every one of the 8 adversarial cards already embeds the literal English loanword 'verified' inline, so the prototype's extension is UNEXERCISED here (delta_recall=0) -- the gap it closes is only visible on the synthetic Thai-only probe sentence recorded below, not on the shipped corpus. False alarms unchanged: 0/60 valid cards trip either signal, before or after. The four defects named in the task brief as 'baseline missed' (composite_quote, hidden_ai_fill, inflated_bearing, injected_infinity) are NOT targeted by this node -- checked directly, none of their corpus cards contain verification-claim language, so this prototype catches zero of them either; reported in 'context_only_not_targeted' for completeness per the task brief, not folded into delta_recall/delta_false_alarm. thai_only_probe (illustrative, not scored): a synthetic card using 'ผลสรุปนี้ผ่านการตรวจสอบแล้วโดยไม่มีขั้นตอนทำซ้ำที่ระบุไว้' (no English 'verified' loanword) -- kernel's own English-only regex would flag=False, this prototype's extended regex flags=True -- demonstrating the latent English-only blind spot this prototype closes, ahead of any future corpus expansion that would actually exercise it.",
+ "recommendation": "drop",
+ "tier": "finite_diagnostic"
+}

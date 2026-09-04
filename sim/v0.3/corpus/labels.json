@@ -1,0 +1,1462 @@
+{
+ "n_valid": 60,
+ "n_adversarial": 120,
+ "defects": [
+  "hidden_ai_fill",
+  "inflated_bearing",
+  "missing_locator",
+  "composite_quote",
+  "k_state_rounded_up",
+  "stub_public",
+  "signature_missing",
+  "injected_infinity",
+  "verifiable_no_procedure",
+  "premature_category",
+  "tier_overclaim",
+  "disclaimer_missing",
+  "ownership_ai",
+  "same_vendor_review"
+ ],
+ "cards": [
+  {
+   "id": "GLOSA-CC-20260905-0001",
+   "kind": "valid",
+   "defect": null,
+   "claim_file": "claims/valid_0001.json",
+   "citation_file": "citations/valid_0001.json",
+   "artifact_under_test": "claim"
+  },
+  {
+   "id": "GLOSA-CC-20260905-0002",
+   "kind": "valid",
+   "defect": null,
+   "claim_file": "claims/valid_0002.json",
+   "citation_file": "citations/valid_0002.json",
+   "artifact_under_test": "claim"
+  },
+  {
+   "id": "GLOSA-CC-20260905-0003",
+   "kind": "valid",
+   "defect": null,
+   "claim_file": "claims/valid_0003.json",
+   "citation_file": "citations/valid_0003.json",
+   "artifact_under_test": "claim"
+  },
+  {
+   "id": "GLOSA-CC-20260905-0004",
+   "kind": "valid",
+   "defect": null,
+   "claim_file": "claims/valid_0004.json",
+   "citation_file": "citations/valid_0004.json",
+   "artifact_under_test": "claim"
+  },
+  {
+   "id": "GLOSA-CC-20260905-0005",
+   "kind": "valid",
+   "defect": null,
+   "claim_file": "claims/valid_0005.json",
+   "citation_file": "citations/valid_0005.json",
+   "artifact_under_test": "claim"
+  },
+  {
+   "id": "GLOSA-CC-20260905-0006",
+   "kind": "valid",
+   "defect": null,
+   "claim_file": "claims/valid_0006.json",
+   "citation_file": "citations/valid_0006.json",
+   "artifact_under_test": "claim"
+  },
+  {
+   "id": "GLOSA-CC-20260905-0007",
+   "kind": "valid",
+   "defect": null,
+   "claim_file": "claims/valid_0007.json",
+   "citation_file": "citations/valid_0007.json",
+   "artifact_under_test": "claim"
+  },
+  {
+   "id": "GLOSA-CC-20260905-0008",
+   "kind": "valid",
+   "defect": null,
+   "claim_file": "claims/valid_0008.json",
+   "citation_file": "citations/valid_0008.json",
+   "artifact_under_test": "claim"
+  },
+  {
+   "id": "GLOSA-CC-20260905-0009",
+   "kind": "valid",
+   "defect": null,
+   "claim_file": "claims/valid_0009.json",
+   "citation_file": "citations/valid_0009.json",
+   "artifact_under_test": "claim"
+  },
+  {
+   "id": "GLOSA-CC-20260905-0010",
+   "kind": "valid",
+   "defect": null,
+   "claim_file": "claims/valid_0010.json",
+   "citation_file": "citations/valid_0010.json",
+   "artifact_under_test": "claim"
+  },
+  {
+   "id": "GLOSA-CC-20260905-0011",
+   "kind": "valid",
+   "defect": null,
+   "claim_file": "claims/valid_0011.json",
+   "citation_file": "citations/valid_0011.json",
+   "artifact_under_test": "claim"
+  },
+  {
+   "id": "GLOSA-CC-20260905-0012",
+   "kind": "valid",
+   "defect": null,
+   "claim_file": "claims/valid_0012.json",
+   "citation_file": "citations/valid_0012.json",
+   "artifact_under_test": "claim"
+  },
+  {
+   "id": "GLOSA-CC-20260905-0013",
+   "kind": "valid",
+   "defect": null,
+   "claim_file": "claims/valid_0013.json",
+   "citation_file": "citations/valid_0013.json",
+   "artifact_under_test": "claim"
+  },
+  {
+   "id": "GLOSA-CC-20260905-0014",
+   "kind": "valid",
+   "defect": null,
+   "claim_file": "claims/valid_0014.json",
+   "citation_file": "citations/valid_0014.json",
+   "artifact_under_test": "claim"
+  },
+  {
+   "id": "GLOSA-CC-20260905-0015",
+   "kind": "valid",
+   "defect": null,
+   "claim_file": "claims/valid_0015.json",
+   "citation_file": "citations/valid_0015.json",
+   "artifact_under_test": "claim"
+  },
+  {
+   "id": "GLOSA-CC-20260905-0016",
+   "kind": "valid",
+   "defect": null,
+   "claim_file": "claims/valid_0016.json",
+   "citation_file": "citations/valid_0016.json",
+   "artifact_under_test": "claim"
+  },
+  {
+   "id": "GLOSA-CC-20260905-0017",
+   "kind": "valid",
+   "defect": null,
+   "claim_file": "claims/valid_0017.json",
+   "citation_file": "citations/valid_0017.json",
+   "artifact_under_test": "claim"
+  },
+  {
+   "id": "GLOSA-CC-20260905-0018",
+   "kind": "valid",
+   "defect": null,
+   "claim_file": "claims/valid_0018.json",
+   "citation_file": "citations/valid_0018.json",
+   "artifact_under_test": "claim"
+  },
+  {
+   "id": "GLOSA-CC-20260905-0019",
+   "kind": "valid",
+   "defect": null,
+   "claim_file": "claims/valid_0019.json",
+   "citation_file": "citations/valid_0019.json",
+   "artifact_under_test": "claim"
+  },
+  {
+   "id": "GLOSA-CC-20260905-0020",
+   "kind": "valid",
+   "defect": null,
+   "claim_file": "claims/valid_0020.json",
+   "citation_file": "citations/valid_0020.json",
+   "artifact_under_test": "claim"
+  },
+  {
+   "id": "GLOSA-CC-20260905-0021",
+   "kind": "valid",
+   "defect": null,
+   "claim_file": "claims/valid_0021.json",
+   "citation_file": "citations/valid_0021.json",
+   "artifact_under_test": "claim"
+  },
+  {
+   "id": "GLOSA-CC-20260905-0022",
+   "kind": "valid",
+   "defect": null,
+   "claim_file": "claims/valid_0022.json",
+   "citation_file": "citations/valid_0022.json",
+   "artifact_under_test": "claim"
+  },
+  {
+   "id": "GLOSA-CC-20260905-0023",
+   "kind": "valid",
+   "defect": null,
+   "claim_file": "claims/valid_0023.json",
+   "citation_file": "citations/valid_0023.json",
+   "artifact_under_test": "claim"
+  },
+  {
+   "id": "GLOSA-CC-20260905-0024",
+   "kind": "valid",
+   "defect": null,
+   "claim_file": "claims/valid_0024.json",
+   "citation_file": "citations/valid_0024.json",
+   "artifact_under_test": "claim"
+  },
+  {
+   "id": "GLOSA-CC-20260905-0025",
+   "kind": "valid",
+   "defect": null,
+   "claim_file": "claims/valid_0025.json",
+   "citation_file": "citations/valid_0025.json",
+   "artifact_under_test": "claim"
+  },
+  {
+   "id": "GLOSA-CC-20260905-0026",
+   "kind": "valid",
+   "defect": null,
+   "claim_file": "claims/valid_0026.json",
+   "citation_file": "citations/valid_0026.json",
+   "artifact_under_test": "claim"
+  },
+  {
+   "id": "GLOSA-CC-20260905-0027",
+   "kind": "valid",
+   "defect": null,
+   "claim_file": "claims/valid_0027.json",
+   "citation_file": "citations/valid_0027.json",
+   "artifact_under_test": "claim"
+  },
+  {
+   "id": "GLOSA-CC-20260905-0028",
+   "kind": "valid",
+   "defect": null,
+   "claim_file": "claims/valid_0028.json",
+   "citation_file": "citations/valid_0028.json",
+   "artifact_under_test": "claim"
+  },
+  {
+   "id": "GLOSA-CC-20260905-0029",
+   "kind": "valid",
+   "defect": null,
+   "claim_file": "claims/valid_0029.json",
+   "citation_file": "citations/valid_0029.json",
+   "artifact_under_test": "claim"
+  },
+  {
+   "id": "GLOSA-CC-20260905-0030",
+   "kind": "valid",
+   "defect": null,
+   "claim_file": "claims/valid_0030.json",
+   "citation_file": "citations/valid_0030.json",
+   "artifact_under_test": "claim"
+  },
+  {
+   "id": "GLOSA-CC-20260905-0031",
+   "kind": "valid",
+   "defect": null,
+   "claim_file": "claims/valid_0031.json",
+   "citation_file": "citations/valid_0031.json",
+   "artifact_under_test": "claim"
+  },
+  {
+   "id": "GLOSA-CC-20260905-0032",
+   "kind": "valid",
+   "defect": null,
+   "claim_file": "claims/valid_0032.json",
+   "citation_file": "citations/valid_0032.json",
+   "artifact_under_test": "claim"
+  },
+  {
+   "id": "GLOSA-CC-20260905-0033",
+   "kind": "valid",
+   "defect": null,
+   "claim_file": "claims/valid_0033.json",
+   "citation_file": "citations/valid_0033.json",
+   "artifact_under_test": "claim"
+  },
+  {
+   "id": "GLOSA-CC-20260905-0034",
+   "kind": "valid",
+   "defect": null,
+   "claim_file": "claims/valid_0034.json",
+   "citation_file": "citations/valid_0034.json",
+   "artifact_under_test": "claim"
+  },
+  {
+   "id": "GLOSA-CC-20260905-0035",
+   "kind": "valid",
+   "defect": null,
+   "claim_file": "claims/valid_0035.json",
+   "citation_file": "citations/valid_0035.json",
+   "artifact_under_test": "claim"
+  },
+  {
+   "id": "GLOSA-CC-20260905-0036",
+   "kind": "valid",
+   "defect": null,
+   "claim_file": "claims/valid_0036.json",
+   "citation_file": "citations/valid_0036.json",
+   "artifact_under_test": "claim"
+  },
+  {
+   "id": "GLOSA-CC-20260905-0037",
+   "kind": "valid",
+   "defect": null,
+   "claim_file": "claims/valid_0037.json",
+   "citation_file": "citations/valid_0037.json",
+   "artifact_under_test": "claim"
+  },
+  {
+   "id": "GLOSA-CC-20260905-0038",
+   "kind": "valid",
+   "defect": null,
+   "claim_file": "claims/valid_0038.json",
+   "citation_file": "citations/valid_0038.json",
+   "artifact_under_test": "claim"
+  },
+  {
+   "id": "GLOSA-CC-20260905-0039",
+   "kind": "valid",
+   "defect": null,
+   "claim_file": "claims/valid_0039.json",
+   "citation_file": "citations/valid_0039.json",
+   "artifact_under_test": "claim"
+  },
+  {
+   "id": "GLOSA-CC-20260905-0040",
+   "kind": "valid",
+   "defect": null,
+   "claim_file": "claims/valid_0040.json",
+   "citation_file": "citations/valid_0040.json",
+   "artifact_under_test": "claim"
+  },
+  {
+   "id": "GLOSA-CC-20260905-0041",
+   "kind": "valid",
+   "defect": null,
+   "claim_file": "claims/valid_0041.json",
+   "citation_file": "citations/valid_0041.json",
+   "artifact_under_test": "claim"
+  },
+  {
+   "id": "GLOSA-CC-20260905-0042",
+   "kind": "valid",
+   "defect": null,
+   "claim_file": "claims/valid_0042.json",
+   "citation_file": "citations/valid_0042.json",
+   "artifact_under_test": "claim"
+  },
+  {
+   "id": "GLOSA-CC-20260905-0043",
+   "kind": "valid",
+   "defect": null,
+   "claim_file": "claims/valid_0043.json",
+   "citation_file": "citations/valid_0043.json",
+   "artifact_under_test": "claim"
+  },
+  {
+   "id": "GLOSA-CC-20260905-0044",
+   "kind": "valid",
+   "defect": null,
+   "claim_file": "claims/valid_0044.json",
+   "citation_file": "citations/valid_0044.json",
+   "artifact_under_test": "claim"
+  },
+  {
+   "id": "GLOSA-CC-20260905-0045",
+   "kind": "valid",
+   "defect": null,
+   "claim_file": "claims/valid_0045.json",
+   "citation_file": "citations/valid_0045.json",
+   "artifact_under_test": "claim"
+  },
+  {
+   "id": "GLOSA-CC-20260905-0046",
+   "kind": "valid",
+   "defect": null,
+   "claim_file": "claims/valid_0046.json",
+   "citation_file": "citations/valid_0046.json",
+   "artifact_under_test": "claim"
+  },
+  {
+   "id": "GLOSA-CC-20260905-0047",
+   "kind": "valid",
+   "defect": null,
+   "claim_file": "claims/valid_0047.json",
+   "citation_file": "citations/valid_0047.json",
+   "artifact_under_test": "claim"
+  },
+  {
+   "id": "GLOSA-CC-20260905-0048",
+   "kind": "valid",
+   "defect": null,
+   "claim_file": "claims/valid_0048.json",
+   "citation_file": "citations/valid_0048.json",
+   "artifact_under_test": "claim"
+  },
+  {
+   "id": "GLOSA-CC-20260905-0049",
+   "kind": "valid",
+   "defect": null,
+   "claim_file": "claims/valid_0049.json",
+   "citation_file": "citations/valid_0049.json",
+   "artifact_under_test": "claim"
+  },
+  {
+   "id": "GLOSA-CC-20260905-0050",
+   "kind": "valid",
+   "defect": null,
+   "claim_file": "claims/valid_0050.json",
+   "citation_file": "citations/valid_0050.json",
+   "artifact_under_test": "claim"
+  },
+  {
+   "id": "GLOSA-CC-20260905-0051",
+   "kind": "valid",
+   "defect": null,
+   "claim_file": "claims/valid_0051.json",
+   "citation_file": "citations/valid_0051.json",
+   "artifact_under_test": "claim"
+  },
+  {
+   "id": "GLOSA-CC-20260905-0052",
+   "kind": "valid",
+   "defect": null,
+   "claim_file": "claims/valid_0052.json",
+   "citation_file": "citations/valid_0052.json",
+   "artifact_under_test": "claim"
+  },
+  {
+   "id": "GLOSA-CC-20260905-0053",
+   "kind": "valid",
+   "defect": null,
+   "claim_file": "claims/valid_0053.json",
+   "citation_file": "citations/valid_0053.json",
+   "artifact_under_test": "claim"
+  },
+  {
+   "id": "GLOSA-CC-20260905-0054",
+   "kind": "valid",
+   "defect": null,
+   "claim_file": "claims/valid_0054.json",
+   "citation_file": "citations/valid_0054.json",
+   "artifact_under_test": "claim"
+  },
+  {
+   "id": "GLOSA-CC-20260905-0055",
+   "kind": "valid",
+   "defect": null,
+   "claim_file": "claims/valid_0055.json",
+   "citation_file": "citations/valid_0055.json",
+   "artifact_under_test": "claim"
+  },
+  {
+   "id": "GLOSA-CC-20260905-0056",
+   "kind": "valid",
+   "defect": null,
+   "claim_file": "claims/valid_0056.json",
+   "citation_file": "citations/valid_0056.json",
+   "artifact_under_test": "claim"
+  },
+  {
+   "id": "GLOSA-CC-20260905-0057",
+   "kind": "valid",
+   "defect": null,
+   "claim_file": "claims/valid_0057.json",
+   "citation_file": "citations/valid_0057.json",
+   "artifact_under_test": "claim"
+  },
+  {
+   "id": "GLOSA-CC-20260905-0058",
+   "kind": "valid",
+   "defect": null,
+   "claim_file": "claims/valid_0058.json",
+   "citation_file": "citations/valid_0058.json",
+   "artifact_under_test": "claim"
+  },
+  {
+   "id": "GLOSA-CC-20260905-0059",
+   "kind": "valid",
+   "defect": null,
+   "claim_file": "claims/valid_0059.json",
+   "citation_file": "citations/valid_0059.json",
+   "artifact_under_test": "claim"
+  },
+  {
+   "id": "GLOSA-CC-20260905-0060",
+   "kind": "valid",
+   "defect": null,
+   "claim_file": "claims/valid_0060.json",
+   "citation_file": "citations/valid_0060.json",
+   "artifact_under_test": "claim"
+  },
+  {
+   "id": "GLOSA-CC-20260905-5001",
+   "kind": "adversarial",
+   "defect": "hidden_ai_fill",
+   "claim_file": "claims/adv_hidden_ai_fill_001.json",
+   "citation_file": "citations/adv_hidden_ai_fill_001.json",
+   "artifact_under_test": "claim"
+  },
+  {
+   "id": "GLOSA-CC-20260905-5002",
+   "kind": "adversarial",
+   "defect": "hidden_ai_fill",
+   "claim_file": "claims/adv_hidden_ai_fill_002.json",
+   "citation_file": "citations/adv_hidden_ai_fill_002.json",
+   "artifact_under_test": "claim"
+  },
+  {
+   "id": "GLOSA-CC-20260905-5003",
+   "kind": "adversarial",
+   "defect": "hidden_ai_fill",
+   "claim_file": "claims/adv_hidden_ai_fill_003.json",
+   "citation_file": "citations/adv_hidden_ai_fill_003.json",
+   "artifact_under_test": "claim"
+  },
+  {
+   "id": "GLOSA-CC-20260905-5004",
+   "kind": "adversarial",
+   "defect": "hidden_ai_fill",
+   "claim_file": "claims/adv_hidden_ai_fill_004.json",
+   "citation_file": "citations/adv_hidden_ai_fill_004.json",
+   "artifact_under_test": "claim"
+  },
+  {
+   "id": "GLOSA-CC-20260905-5005",
+   "kind": "adversarial",
+   "defect": "hidden_ai_fill",
+   "claim_file": "claims/adv_hidden_ai_fill_005.json",
+   "citation_file": "citations/adv_hidden_ai_fill_005.json",
+   "artifact_under_test": "claim"
+  },
+  {
+   "id": "GLOSA-CC-20260905-5006",
+   "kind": "adversarial",
+   "defect": "hidden_ai_fill",
+   "claim_file": "claims/adv_hidden_ai_fill_006.json",
+   "citation_file": "citations/adv_hidden_ai_fill_006.json",
+   "artifact_under_test": "claim"
+  },
+  {
+   "id": "GLOSA-CC-20260905-5007",
+   "kind": "adversarial",
+   "defect": "hidden_ai_fill",
+   "claim_file": "claims/adv_hidden_ai_fill_007.json",
+   "citation_file": "citations/adv_hidden_ai_fill_007.json",
+   "artifact_under_test": "claim"
+  },
+  {
+   "id": "GLOSA-CC-20260905-5008",
+   "kind": "adversarial",
+   "defect": "hidden_ai_fill",
+   "claim_file": "claims/adv_hidden_ai_fill_008.json",
+   "citation_file": "citations/adv_hidden_ai_fill_008.json",
+   "artifact_under_test": "claim"
+  },
+  {
+   "id": "GLOSA-CC-20260905-5009",
+   "kind": "adversarial",
+   "defect": "hidden_ai_fill",
+   "claim_file": "claims/adv_hidden_ai_fill_009.json",
+   "citation_file": "citations/adv_hidden_ai_fill_009.json",
+   "artifact_under_test": "claim"
+  },
+  {
+   "id": "GLOSA-CC-20260905-5010",
+   "kind": "adversarial",
+   "defect": "inflated_bearing",
+   "claim_file": "claims/adv_inflated_bearing_001.json",
+   "citation_file": "citations/adv_inflated_bearing_001.json",
+   "artifact_under_test": "claim"
+  },
+  {
+   "id": "GLOSA-CC-20260905-5011",
+   "kind": "adversarial",
+   "defect": "inflated_bearing",
+   "claim_file": "claims/adv_inflated_bearing_002.json",
+   "citation_file": "citations/adv_inflated_bearing_002.json",
+   "artifact_under_test": "claim"
+  },
+  {
+   "id": "GLOSA-CC-20260905-5012",
+   "kind": "adversarial",
+   "defect": "inflated_bearing",
+   "claim_file": "claims/adv_inflated_bearing_003.json",
+   "citation_file": "citations/adv_inflated_bearing_003.json",
+   "artifact_under_test": "claim"
+  },
+  {
+   "id": "GLOSA-CC-20260905-5013",
+   "kind": "adversarial",
+   "defect": "inflated_bearing",
+   "claim_file": "claims/adv_inflated_bearing_004.json",
+   "citation_file": "citations/adv_inflated_bearing_004.json",
+   "artifact_under_test": "claim"
+  },
+  {
+   "id": "GLOSA-CC-20260905-5014",
+   "kind": "adversarial",
+   "defect": "inflated_bearing",
+   "claim_file": "claims/adv_inflated_bearing_005.json",
+   "citation_file": "citations/adv_inflated_bearing_005.json",
+   "artifact_under_test": "claim"
+  },
+  {
+   "id": "GLOSA-CC-20260905-5015",
+   "kind": "adversarial",
+   "defect": "inflated_bearing",
+   "claim_file": "claims/adv_inflated_bearing_006.json",
+   "citation_file": "citations/adv_inflated_bearing_006.json",
+   "artifact_under_test": "claim"
+  },
+  {
+   "id": "GLOSA-CC-20260905-5016",
+   "kind": "adversarial",
+   "defect": "inflated_bearing",
+   "claim_file": "claims/adv_inflated_bearing_007.json",
+   "citation_file": "citations/adv_inflated_bearing_007.json",
+   "artifact_under_test": "claim"
+  },
+  {
+   "id": "GLOSA-CC-20260905-5017",
+   "kind": "adversarial",
+   "defect": "inflated_bearing",
+   "claim_file": "claims/adv_inflated_bearing_008.json",
+   "citation_file": "citations/adv_inflated_bearing_008.json",
+   "artifact_under_test": "claim"
+  },
+  {
+   "id": "GLOSA-CC-20260905-5018",
+   "kind": "adversarial",
+   "defect": "inflated_bearing",
+   "claim_file": "claims/adv_inflated_bearing_009.json",
+   "citation_file": "citations/adv_inflated_bearing_009.json",
+   "artifact_under_test": "claim"
+  },
+  {
+   "id": "GLOSA-CC-20260905-5019",
+   "kind": "adversarial",
+   "defect": "missing_locator",
+   "claim_file": "claims/adv_missing_locator_001.json",
+   "citation_file": "citations/adv_missing_locator_001.json",
+   "artifact_under_test": "citation"
+  },
+  {
+   "id": "GLOSA-CC-20260905-5020",
+   "kind": "adversarial",
+   "defect": "missing_locator",
+   "claim_file": "claims/adv_missing_locator_002.json",
+   "citation_file": "citations/adv_missing_locator_002.json",
+   "artifact_under_test": "citation"
+  },
+  {
+   "id": "GLOSA-CC-20260905-5021",
+   "kind": "adversarial",
+   "defect": "missing_locator",
+   "claim_file": "claims/adv_missing_locator_003.json",
+   "citation_file": "citations/adv_missing_locator_003.json",
+   "artifact_under_test": "citation"
+  },
+  {
+   "id": "GLOSA-CC-20260905-5022",
+   "kind": "adversarial",
+   "defect": "missing_locator",
+   "claim_file": "claims/adv_missing_locator_004.json",
+   "citation_file": "citations/adv_missing_locator_004.json",
+   "artifact_under_test": "citation"
+  },
+  {
+   "id": "GLOSA-CC-20260905-5023",
+   "kind": "adversarial",
+   "defect": "missing_locator",
+   "claim_file": "claims/adv_missing_locator_005.json",
+   "citation_file": "citations/adv_missing_locator_005.json",
+   "artifact_under_test": "citation"
+  },
+  {
+   "id": "GLOSA-CC-20260905-5024",
+   "kind": "adversarial",
+   "defect": "missing_locator",
+   "claim_file": "claims/adv_missing_locator_006.json",
+   "citation_file": "citations/adv_missing_locator_006.json",
+   "artifact_under_test": "citation"
+  },
+  {
+   "id": "GLOSA-CC-20260905-5025",
+   "kind": "adversarial",
+   "defect": "missing_locator",
+   "claim_file": "claims/adv_missing_locator_007.json",
+   "citation_file": "citations/adv_missing_locator_007.json",
+   "artifact_under_test": "citation"
+  },
+  {
+   "id": "GLOSA-CC-20260905-5026",
+   "kind": "adversarial",
+   "defect": "missing_locator",
+   "claim_file": "claims/adv_missing_locator_008.json",
+   "citation_file": "citations/adv_missing_locator_008.json",
+   "artifact_under_test": "citation"
+  },
+  {
+   "id": "GLOSA-CC-20260905-5027",
+   "kind": "adversarial",
+   "defect": "missing_locator",
+   "claim_file": "claims/adv_missing_locator_009.json",
+   "citation_file": "citations/adv_missing_locator_009.json",
+   "artifact_under_test": "citation"
+  },
+  {
+   "id": "GLOSA-CC-20260905-5028",
+   "kind": "adversarial",
+   "defect": "composite_quote",
+   "claim_file": "claims/adv_composite_quote_001.json",
+   "citation_file": "citations/adv_composite_quote_001.json",
+   "artifact_under_test": "citation"
+  },
+  {
+   "id": "GLOSA-CC-20260905-5029",
+   "kind": "adversarial",
+   "defect": "composite_quote",
+   "claim_file": "claims/adv_composite_quote_002.json",
+   "citation_file": "citations/adv_composite_quote_002.json",
+   "artifact_under_test": "citation"
+  },
+  {
+   "id": "GLOSA-CC-20260905-5030",
+   "kind": "adversarial",
+   "defect": "composite_quote",
+   "claim_file": "claims/adv_composite_quote_003.json",
+   "citation_file": "citations/adv_composite_quote_003.json",
+   "artifact_under_test": "citation"
+  },
+  {
+   "id": "GLOSA-CC-20260905-5031",
+   "kind": "adversarial",
+   "defect": "composite_quote",
+   "claim_file": "claims/adv_composite_quote_004.json",
+   "citation_file": "citations/adv_composite_quote_004.json",
+   "artifact_under_test": "citation"
+  },
+  {
+   "id": "GLOSA-CC-20260905-5032",
+   "kind": "adversarial",
+   "defect": "composite_quote",
+   "claim_file": "claims/adv_composite_quote_005.json",
+   "citation_file": "citations/adv_composite_quote_005.json",
+   "artifact_under_test": "citation"
+  },
+  {
+   "id": "GLOSA-CC-20260905-5033",
+   "kind": "adversarial",
+   "defect": "composite_quote",
+   "claim_file": "claims/adv_composite_quote_006.json",
+   "citation_file": "citations/adv_composite_quote_006.json",
+   "artifact_under_test": "citation"
+  },
+  {
+   "id": "GLOSA-CC-20260905-5034",
+   "kind": "adversarial",
+   "defect": "composite_quote",
+   "claim_file": "claims/adv_composite_quote_007.json",
+   "citation_file": "citations/adv_composite_quote_007.json",
+   "artifact_under_test": "citation"
+  },
+  {
+   "id": "GLOSA-CC-20260905-5035",
+   "kind": "adversarial",
+   "defect": "composite_quote",
+   "claim_file": "claims/adv_composite_quote_008.json",
+   "citation_file": "citations/adv_composite_quote_008.json",
+   "artifact_under_test": "citation"
+  },
+  {
+   "id": "GLOSA-CC-20260905-5036",
+   "kind": "adversarial",
+   "defect": "composite_quote",
+   "claim_file": "claims/adv_composite_quote_009.json",
+   "citation_file": "citations/adv_composite_quote_009.json",
+   "artifact_under_test": "citation"
+  },
+  {
+   "id": "GLOSA-CC-20260905-5037",
+   "kind": "adversarial",
+   "defect": "k_state_rounded_up",
+   "claim_file": "claims/adv_k_state_rounded_up_001.json",
+   "citation_file": "citations/adv_k_state_rounded_up_001.json",
+   "artifact_under_test": "claim"
+  },
+  {
+   "id": "GLOSA-CC-20260905-5038",
+   "kind": "adversarial",
+   "defect": "k_state_rounded_up",
+   "claim_file": "claims/adv_k_state_rounded_up_002.json",
+   "citation_file": "citations/adv_k_state_rounded_up_002.json",
+   "artifact_under_test": "claim"
+  },
+  {
+   "id": "GLOSA-CC-20260905-5039",
+   "kind": "adversarial",
+   "defect": "k_state_rounded_up",
+   "claim_file": "claims/adv_k_state_rounded_up_003.json",
+   "citation_file": "citations/adv_k_state_rounded_up_003.json",
+   "artifact_under_test": "claim"
+  },
+  {
+   "id": "GLOSA-CC-20260905-5040",
+   "kind": "adversarial",
+   "defect": "k_state_rounded_up",
+   "claim_file": "claims/adv_k_state_rounded_up_004.json",
+   "citation_file": "citations/adv_k_state_rounded_up_004.json",
+   "artifact_under_test": "claim"
+  },
+  {
+   "id": "GLOSA-CC-20260905-5041",
+   "kind": "adversarial",
+   "defect": "k_state_rounded_up",
+   "claim_file": "claims/adv_k_state_rounded_up_005.json",
+   "citation_file": "citations/adv_k_state_rounded_up_005.json",
+   "artifact_under_test": "claim"
+  },
+  {
+   "id": "GLOSA-CC-20260905-5042",
+   "kind": "adversarial",
+   "defect": "k_state_rounded_up",
+   "claim_file": "claims/adv_k_state_rounded_up_006.json",
+   "citation_file": "citations/adv_k_state_rounded_up_006.json",
+   "artifact_under_test": "claim"
+  },
+  {
+   "id": "GLOSA-CC-20260905-5043",
+   "kind": "adversarial",
+   "defect": "k_state_rounded_up",
+   "claim_file": "claims/adv_k_state_rounded_up_007.json",
+   "citation_file": "citations/adv_k_state_rounded_up_007.json",
+   "artifact_under_test": "claim"
+  },
+  {
+   "id": "GLOSA-CC-20260905-5044",
+   "kind": "adversarial",
+   "defect": "k_state_rounded_up",
+   "claim_file": "claims/adv_k_state_rounded_up_008.json",
+   "citation_file": "citations/adv_k_state_rounded_up_008.json",
+   "artifact_under_test": "claim"
+  },
+  {
+   "id": "GLOSA-CC-20260905-5045",
+   "kind": "adversarial",
+   "defect": "k_state_rounded_up",
+   "claim_file": "claims/adv_k_state_rounded_up_009.json",
+   "citation_file": "citations/adv_k_state_rounded_up_009.json",
+   "artifact_under_test": "claim"
+  },
+  {
+   "id": "GLOSA-CC-20260905-5046",
+   "kind": "adversarial",
+   "defect": "stub_public",
+   "claim_file": "claims/adv_stub_public_001.json",
+   "citation_file": "citations/adv_stub_public_001.json",
+   "artifact_under_test": "claim"
+  },
+  {
+   "id": "GLOSA-CC-20260905-5047",
+   "kind": "adversarial",
+   "defect": "stub_public",
+   "claim_file": "claims/adv_stub_public_002.json",
+   "citation_file": "citations/adv_stub_public_002.json",
+   "artifact_under_test": "claim"
+  },
+  {
+   "id": "GLOSA-CC-20260905-5048",
+   "kind": "adversarial",
+   "defect": "stub_public",
+   "claim_file": "claims/adv_stub_public_003.json",
+   "citation_file": "citations/adv_stub_public_003.json",
+   "artifact_under_test": "claim"
+  },
+  {
+   "id": "GLOSA-CC-20260905-5049",
+   "kind": "adversarial",
+   "defect": "stub_public",
+   "claim_file": "claims/adv_stub_public_004.json",
+   "citation_file": "citations/adv_stub_public_004.json",
+   "artifact_under_test": "claim"
+  },
+  {
+   "id": "GLOSA-CC-20260905-5050",
+   "kind": "adversarial",
+   "defect": "stub_public",
+   "claim_file": "claims/adv_stub_public_005.json",
+   "citation_file": "citations/adv_stub_public_005.json",
+   "artifact_under_test": "claim"
+  },
+  {
+   "id": "GLOSA-CC-20260905-5051",
+   "kind": "adversarial",
+   "defect": "stub_public",
+   "claim_file": "claims/adv_stub_public_006.json",
+   "citation_file": "citations/adv_stub_public_006.json",
+   "artifact_under_test": "claim"
+  },
+  {
+   "id": "GLOSA-CC-20260905-5052",
+   "kind": "adversarial",
+   "defect": "stub_public",
+   "claim_file": "claims/adv_stub_public_007.json",
+   "citation_file": "citations/adv_stub_public_007.json",
+   "artifact_under_test": "claim"
+  },
+  {
+   "id": "GLOSA-CC-20260905-5053",
+   "kind": "adversarial",
+   "defect": "stub_public",
+   "claim_file": "claims/adv_stub_public_008.json",
+   "citation_file": "citations/adv_stub_public_008.json",
+   "artifact_under_test": "claim"
+  },
+  {
+   "id": "GLOSA-CC-20260905-5054",
+   "kind": "adversarial",
+   "defect": "stub_public",
+   "claim_file": "claims/adv_stub_public_009.json",
+   "citation_file": "citations/adv_stub_public_009.json",
+   "artifact_under_test": "claim"
+  },
+  {
+   "id": "GLOSA-CC-20260905-5055",
+   "kind": "adversarial",
+   "defect": "signature_missing",
+   "claim_file": "claims/adv_signature_missing_001.json",
+   "citation_file": "citations/adv_signature_missing_001.json",
+   "artifact_under_test": "claim"
+  },
+  {
+   "id": "GLOSA-CC-20260905-5056",
+   "kind": "adversarial",
+   "defect": "signature_missing",
+   "claim_file": "claims/adv_signature_missing_002.json",
+   "citation_file": "citations/adv_signature_missing_002.json",
+   "artifact_under_test": "claim"
+  },
+  {
+   "id": "GLOSA-CC-20260905-5057",
+   "kind": "adversarial",
+   "defect": "signature_missing",
+   "claim_file": "claims/adv_signature_missing_003.json",
+   "citation_file": "citations/adv_signature_missing_003.json",
+   "artifact_under_test": "claim"
+  },
+  {
+   "id": "GLOSA-CC-20260905-5058",
+   "kind": "adversarial",
+   "defect": "signature_missing",
+   "claim_file": "claims/adv_signature_missing_004.json",
+   "citation_file": "citations/adv_signature_missing_004.json",
+   "artifact_under_test": "claim"
+  },
+  {
+   "id": "GLOSA-CC-20260905-5059",
+   "kind": "adversarial",
+   "defect": "signature_missing",
+   "claim_file": "claims/adv_signature_missing_005.json",
+   "citation_file": "citations/adv_signature_missing_005.json",
+   "artifact_under_test": "claim"
+  },
+  {
+   "id": "GLOSA-CC-20260905-5060",
+   "kind": "adversarial",
+   "defect": "signature_missing",
+   "claim_file": "claims/adv_signature_missing_006.json",
+   "citation_file": "citations/adv_signature_missing_006.json",
+   "artifact_under_test": "claim"
+  },
+  {
+   "id": "GLOSA-CC-20260905-5061",
+   "kind": "adversarial",
+   "defect": "signature_missing",
+   "claim_file": "claims/adv_signature_missing_007.json",
+   "citation_file": "citations/adv_signature_missing_007.json",
+   "artifact_under_test": "claim"
+  },
+  {
+   "id": "GLOSA-CC-20260905-5062",
+   "kind": "adversarial",
+   "defect": "signature_missing",
+   "claim_file": "claims/adv_signature_missing_008.json",
+   "citation_file": "citations/adv_signature_missing_008.json",
+   "artifact_under_test": "claim"
+  },
+  {
+   "id": "GLOSA-CC-20260905-5063",
+   "kind": "adversarial",
+   "defect": "signature_missing",
+   "claim_file": "claims/adv_signature_missing_009.json",
+   "citation_file": "citations/adv_signature_missing_009.json",
+   "artifact_under_test": "claim"
+  },
+  {
+   "id": "GLOSA-CC-20260905-5064",
+   "kind": "adversarial",
+   "defect": "injected_infinity",
+   "claim_file": "claims/adv_injected_infinity_001.json",
+   "citation_file": "citations/adv_injected_infinity_001.json",
+   "artifact_under_test": "claim"
+  },
+  {
+   "id": "GLOSA-CC-20260905-5065",
+   "kind": "adversarial",
+   "defect": "injected_infinity",
+   "claim_file": "claims/adv_injected_infinity_002.json",
+   "citation_file": "citations/adv_injected_infinity_002.json",
+   "artifact_under_test": "claim"
+  },
+  {
+   "id": "GLOSA-CC-20260905-5066",
+   "kind": "adversarial",
+   "defect": "injected_infinity",
+   "claim_file": "claims/adv_injected_infinity_003.json",
+   "citation_file": "citations/adv_injected_infinity_003.json",
+   "artifact_under_test": "claim"
+  },
+  {
+   "id": "GLOSA-CC-20260905-5067",
+   "kind": "adversarial",
+   "defect": "injected_infinity",
+   "claim_file": "claims/adv_injected_infinity_004.json",
+   "citation_file": "citations/adv_injected_infinity_004.json",
+   "artifact_under_test": "claim"
+  },
+  {
+   "id": "GLOSA-CC-20260905-5068",
+   "kind": "adversarial",
+   "defect": "injected_infinity",
+   "claim_file": "claims/adv_injected_infinity_005.json",
+   "citation_file": "citations/adv_injected_infinity_005.json",
+   "artifact_under_test": "claim"
+  },
+  {
+   "id": "GLOSA-CC-20260905-5069",
+   "kind": "adversarial",
+   "defect": "injected_infinity",
+   "claim_file": "claims/adv_injected_infinity_006.json",
+   "citation_file": "citations/adv_injected_infinity_006.json",
+   "artifact_under_test": "claim"
+  },
+  {
+   "id": "GLOSA-CC-20260905-5070",
+   "kind": "adversarial",
+   "defect": "injected_infinity",
+   "claim_file": "claims/adv_injected_infinity_007.json",
+   "citation_file": "citations/adv_injected_infinity_007.json",
+   "artifact_under_test": "claim"
+  },
+  {
+   "id": "GLOSA-CC-20260905-5071",
+   "kind": "adversarial",
+   "defect": "injected_infinity",
+   "claim_file": "claims/adv_injected_infinity_008.json",
+   "citation_file": "citations/adv_injected_infinity_008.json",
+   "artifact_under_test": "claim"
+  },
+  {
+   "id": "GLOSA-CC-20260905-5072",
+   "kind": "adversarial",
+   "defect": "injected_infinity",
+   "claim_file": "claims/adv_injected_infinity_009.json",
+   "citation_file": "citations/adv_injected_infinity_009.json",
+   "artifact_under_test": "claim"
+  },
+  {
+   "id": "GLOSA-CC-20260905-5073",
+   "kind": "adversarial",
+   "defect": "verifiable_no_procedure",
+   "claim_file": "claims/adv_verifiable_no_procedure_001.json",
+   "citation_file": "citations/adv_verifiable_no_procedure_001.json",
+   "artifact_under_test": "claim"
+  },
+  {
+   "id": "GLOSA-CC-20260905-5074",
+   "kind": "adversarial",
+   "defect": "verifiable_no_procedure",
+   "claim_file": "claims/adv_verifiable_no_procedure_002.json",
+   "citation_file": "citations/adv_verifiable_no_procedure_002.json",
+   "artifact_under_test": "claim"
+  },
+  {
+   "id": "GLOSA-CC-20260905-5075",
+   "kind": "adversarial",
+   "defect": "verifiable_no_procedure",
+   "claim_file": "claims/adv_verifiable_no_procedure_003.json",
+   "citation_file": "citations/adv_verifiable_no_procedure_003.json",
+   "artifact_under_test": "claim"
+  },
+  {
+   "id": "GLOSA-CC-20260905-5076",
+   "kind": "adversarial",
+   "defect": "verifiable_no_procedure",
+   "claim_file": "claims/adv_verifiable_no_procedure_004.json",
+   "citation_file": "citations/adv_verifiable_no_procedure_004.json",
+   "artifact_under_test": "claim"
+  },
+  {
+   "id": "GLOSA-CC-20260905-5077",
+   "kind": "adversarial",
+   "defect": "verifiable_no_procedure",
+   "claim_file": "claims/adv_verifiable_no_procedure_005.json",
+   "citation_file": "citations/adv_verifiable_no_procedure_005.json",
+   "artifact_under_test": "claim"
+  },
+  {
+   "id": "GLOSA-CC-20260905-5078",
+   "kind": "adversarial",
+   "defect": "verifiable_no_procedure",
+   "claim_file": "claims/adv_verifiable_no_procedure_006.json",
+   "citation_file": "citations/adv_verifiable_no_procedure_006.json",
+   "artifact_under_test": "claim"
+  },
+  {
+   "id": "GLOSA-CC-20260905-5079",
+   "kind": "adversarial",
+   "defect": "verifiable_no_procedure",
+   "claim_file": "claims/adv_verifiable_no_procedure_007.json",
+   "citation_file": "citations/adv_verifiable_no_procedure_007.json",
+   "artifact_under_test": "claim"
+  },
+  {
+   "id": "GLOSA-CC-20260905-5080",
+   "kind": "adversarial",
+   "defect": "verifiable_no_procedure",
+   "claim_file": "claims/adv_verifiable_no_procedure_008.json",
+   "citation_file": "citations/adv_verifiable_no_procedure_008.json",
+   "artifact_under_test": "claim"
+  },
+  {
+   "id": "GLOSA-CC-20260905-5081",
+   "kind": "adversarial",
+   "defect": "premature_category",
+   "claim_file": "claims/adv_premature_category_001.json",
+   "citation_file": "citations/adv_premature_category_001.json",
+   "artifact_under_test": "claim"
+  },
+  {
+   "id": "GLOSA-CC-20260905-5082",
+   "kind": "adversarial",
+   "defect": "premature_category",
+   "claim_file": "claims/adv_premature_category_002.json",
+   "citation_file": "citations/adv_premature_category_002.json",
+   "artifact_under_test": "claim"
+  },
+  {
+   "id": "GLOSA-CC-20260905-5083",
+   "kind": "adversarial",
+   "defect": "premature_category",
+   "claim_file": "claims/adv_premature_category_003.json",
+   "citation_file": "citations/adv_premature_category_003.json",
+   "artifact_under_test": "claim"
+  },
+  {
+   "id": "GLOSA-CC-20260905-5084",
+   "kind": "adversarial",
+   "defect": "premature_category",
+   "claim_file": "claims/adv_premature_category_004.json",
+   "citation_file": "citations/adv_premature_category_004.json",
+   "artifact_under_test": "claim"
+  },
+  {
+   "id": "GLOSA-CC-20260905-5085",
+   "kind": "adversarial",
+   "defect": "premature_category",
+   "claim_file": "claims/adv_premature_category_005.json",
+   "citation_file": "citations/adv_premature_category_005.json",
+   "artifact_under_test": "claim"
+  },
+  {
+   "id": "GLOSA-CC-20260905-5086",
+   "kind": "adversarial",
+   "defect": "premature_category",
+   "claim_file": "claims/adv_premature_category_006.json",
+   "citation_file": "citations/adv_premature_category_006.json",
+   "artifact_under_test": "claim"
+  },
+  {
+   "id": "GLOSA-CC-20260905-5087",
+   "kind": "adversarial",
+   "defect": "premature_category",
+   "claim_file": "claims/adv_premature_category_007.json",
+   "citation_file": "citations/adv_premature_category_007.json",
+   "artifact_under_test": "claim"
+  },
+  {
+   "id": "GLOSA-CC-20260905-5088",
+   "kind": "adversarial",
+   "defect": "premature_category",
+   "claim_file": "claims/adv_premature_category_008.json",
+   "citation_file": "citations/adv_premature_category_008.json",
+   "artifact_under_test": "claim"
+  },
+  {
+   "id": "GLOSA-CC-20260905-5089",
+   "kind": "adversarial",
+   "defect": "tier_overclaim",
+   "claim_file": "claims/adv_tier_overclaim_001.json",
+   "citation_file": "citations/adv_tier_overclaim_001.json",
+   "artifact_under_test": "claim"
+  },
+  {
+   "id": "GLOSA-CC-20260905-5090",
+   "kind": "adversarial",
+   "defect": "tier_overclaim",
+   "claim_file": "claims/adv_tier_overclaim_002.json",
+   "citation_file": "citations/adv_tier_overclaim_002.json",
+   "artifact_under_test": "claim"
+  },
+  {
+   "id": "GLOSA-CC-20260905-5091",
+   "kind": "adversarial",
+   "defect": "tier_overclaim",
+   "claim_file": "claims/adv_tier_overclaim_003.json",
+   "citation_file": "citations/adv_tier_overclaim_003.json",
+   "artifact_under_test": "claim"
+  },
+  {
+   "id": "GLOSA-CC-20260905-5092",
+   "kind": "adversarial",
+   "defect": "tier_overclaim",
+   "claim_file": "claims/adv_tier_overclaim_004.json",
+   "citation_file": "citations/adv_tier_overclaim_004.json",
+   "artifact_under_test": "claim"
+  },
+  {
+   "id": "GLOSA-CC-20260905-5093",
+   "kind": "adversarial",
+   "defect": "tier_overclaim",
+   "claim_file": "claims/adv_tier_overclaim_005.json",
+   "citation_file": "citations/adv_tier_overclaim_005.json",
+   "artifact_under_test": "claim"
+  },
+  {
+   "id": "GLOSA-CC-20260905-5094",
+   "kind": "adversarial",
+   "defect": "tier_overclaim",
+   "claim_file": "claims/adv_tier_overclaim_006.json",
+   "citation_file": "citations/adv_tier_overclaim_006.json",
+   "artifact_under_test": "claim"
+  },
+  {
+   "id": "GLOSA-CC-20260905-5095",
+   "kind": "adversarial",
+   "defect": "tier_overclaim",
+   "claim_file": "claims/adv_tier_overclaim_007.json",
+   "citation_file": "citations/adv_tier_overclaim_007.json",
+   "artifact_under_test": "claim"
+  },
+  {
+   "id": "GLOSA-CC-20260905-5096",
+   "kind": "adversarial",
+   "defect": "tier_overclaim",
+   "claim_file": "claims/adv_tier_overclaim_008.json",
+   "citation_file": "citations/adv_tier_overclaim_008.json",
+   "artifact_under_test": "claim"
+  },
+  {
+   "id": "GLOSA-CC-20260905-5097",
+   "kind": "adversarial",
+   "defect": "disclaimer_missing",
+   "claim_file": "claims/adv_disclaimer_missing_001.json",
+   "citation_file": "citations/adv_disclaimer_missing_001.json",
+   "artifact_under_test": "claim"
+  },
+  {
+   "id": "GLOSA-CC-20260905-5098",
+   "kind": "adversarial",
+   "defect": "disclaimer_missing",
+   "claim_file": "claims/adv_disclaimer_missing_002.json",
+   "citation_file": "citations/adv_disclaimer_missing_002.json",
+   "artifact_under_test": "claim"
+  },
+  {
+   "id": "GLOSA-CC-20260905-5099",
+   "kind": "adversarial",
+   "defect": "disclaimer_missing",
+   "claim_file": "claims/adv_disclaimer_missing_003.json",
+   "citation_file": "citations/adv_disclaimer_missing_003.json",
+   "artifact_under_test": "claim"
+  },
+  {
+   "id": "GLOSA-CC-20260905-5100",
+   "kind": "adversarial",
+   "defect": "disclaimer_missing",
+   "claim_file": "claims/adv_disclaimer_missing_004.json",
+   "citation_file": "citations/adv_disclaimer_missing_004.json",
+   "artifact_under_test": "claim"
+  },
+  {
+   "id": "GLOSA-CC-20260905-5101",
+   "kind": "adversarial",
+   "defect": "disclaimer_missing",
+   "claim_file": "claims/adv_disclaimer_missing_005.json",
+   "citation_file": "citations/adv_disclaimer_missing_005.json",
+   "artifact_under_test": "claim"
+  },
+  {
+   "id": "GLOSA-CC-20260905-5102",
+   "kind": "adversarial",
+   "defect": "disclaimer_missing",
+   "claim_file": "claims/adv_disclaimer_missing_006.json",
+   "citation_file": "citations/adv_disclaimer_missing_006.json",
+   "artifact_under_test": "claim"
+  },
+  {
+   "id": "GLOSA-CC-20260905-5103",
+   "kind": "adversarial",
+   "defect": "disclaimer_missing",
+   "claim_file": "claims/adv_disclaimer_missing_007.json",
+   "citation_file": "citations/adv_disclaimer_missing_007.json",
+   "artifact_under_test": "claim"
+  },
+  {
+   "id": "GLOSA-CC-20260905-5104",
+   "kind": "adversarial",
+   "defect": "disclaimer_missing",
+   "claim_file": "claims/adv_disclaimer_missing_008.json",
+   "citation_file": "citations/adv_disclaimer_missing_008.json",
+   "artifact_under_test": "claim"
+  },
+  {
+   "id": "GLOSA-CC-20260905-5105",
+   "kind": "adversarial",
+   "defect": "ownership_ai",
+   "claim_file": "claims/adv_ownership_ai_001.json",
+   "citation_file": "citations/adv_ownership_ai_001.json",
+   "artifact_under_test": "claim"
+  },
+  {
+   "id": "GLOSA-CC-20260905-5106",
+   "kind": "adversarial",
+   "defect": "ownership_ai",
+   "claim_file": "claims/adv_ownership_ai_002.json",
+   "citation_file": "citations/adv_ownership_ai_002.json",
+   "artifact_under_test": "claim"
+  },
+  {
+   "id": "GLOSA-CC-20260905-5107",
+   "kind": "adversarial",
+   "defect": "ownership_ai",
+   "claim_file": "claims/adv_ownership_ai_003.json",
+   "citation_file": "citations/adv_ownership_ai_003.json",
+   "artifact_under_test": "claim"
+  },
+  {
+   "id": "GLOSA-CC-20260905-5108",
+   "kind": "adversarial",
+   "defect": "ownership_ai",
+   "claim_file": "claims/adv_ownership_ai_004.json",
+   "citation_file": "citations/adv_ownership_ai_004.json",
+   "artifact_under_test": "claim"
+  },
+  {
+   "id": "GLOSA-CC-20260905-5109",
+   "kind": "adversarial",
+   "defect": "ownership_ai",
+   "claim_file": "claims/adv_ownership_ai_005.json",
+   "citation_file": "citations/adv_ownership_ai_005.json",
+   "artifact_under_test": "claim"
+  },
+  {
+   "id": "GLOSA-CC-20260905-5110",
+   "kind": "adversarial",
+   "defect": "ownership_ai",
+   "claim_file": "claims/adv_ownership_ai_006.json",
+   "citation_file": "citations/adv_ownership_ai_006.json",
+   "artifact_under_test": "claim"
+  },
+  {
+   "id": "GLOSA-CC-20260905-5111",
+   "kind": "adversarial",
+   "defect": "ownership_ai",
+   "claim_file": "claims/adv_ownership_ai_007.json",
+   "citation_file": "citations/adv_ownership_ai_007.json",
+   "artifact_under_test": "claim"
+  },
+  {
+   "id": "GLOSA-CC-20260905-5112",
+   "kind": "adversarial",
+   "defect": "ownership_ai",
+   "claim_file": "claims/adv_ownership_ai_008.json",
+   "citation_file": "citations/adv_ownership_ai_008.json",
+   "artifact_under_test": "claim"
+  },
+  {
+   "id": "GLOSA-CC-20260905-5113",
+   "kind": "adversarial",
+   "defect": "same_vendor_review",
+   "claim_file": "claims/adv_same_vendor_review_001.json",
+   "citation_file": "citations/adv_same_vendor_review_001.json",
+   "artifact_under_test": "claim"
+  },
+  {
+   "id": "GLOSA-CC-20260905-5114",
+   "kind": "adversarial",
+   "defect": "same_vendor_review",
+   "claim_file": "claims/adv_same_vendor_review_002.json",
+   "citation_file": "citations/adv_same_vendor_review_002.json",
+   "artifact_under_test": "claim"
+  },
+  {
+   "id": "GLOSA-CC-20260905-5115",
+   "kind": "adversarial",
+   "defect": "same_vendor_review",
+   "claim_file": "claims/adv_same_vendor_review_003.json",
+   "citation_file": "citations/adv_same_vendor_review_003.json",
+   "artifact_under_test": "claim"
+  },
+  {
+   "id": "GLOSA-CC-20260905-5116",
+   "kind": "adversarial",
+   "defect": "same_vendor_review",
+   "claim_file": "claims/adv_same_vendor_review_004.json",
+   "citation_file": "citations/adv_same_vendor_review_004.json",
+   "artifact_under_test": "claim"
+  },
+  {
+   "id": "GLOSA-CC-20260905-5117",
+   "kind": "adversarial",
+   "defect": "same_vendor_review",
+   "claim_file": "claims/adv_same_vendor_review_005.json",
+   "citation_file": "citations/adv_same_vendor_review_005.json",
+   "artifact_under_test": "claim"
+  },
+  {
+   "id": "GLOSA-CC-20260905-5118",
+   "kind": "adversarial",
+   "defect": "same_vendor_review",
+   "claim_file": "claims/adv_same_vendor_review_006.json",
+   "citation_file": "citations/adv_same_vendor_review_006.json",
+   "artifact_under_test": "claim"
+  },
+  {
+   "id": "GLOSA-CC-20260905-5119",
+   "kind": "adversarial",
+   "defect": "same_vendor_review",
+   "claim_file": "claims/adv_same_vendor_review_007.json",
+   "citation_file": "citations/adv_same_vendor_review_007.json",
+   "artifact_under_test": "claim"
+  },
+  {
+   "id": "GLOSA-CC-20260905-5120",
+   "kind": "adversarial",
+   "defect": "same_vendor_review",
+   "claim_file": "claims/adv_same_vendor_review_008.json",
+   "citation_file": "citations/adv_same_vendor_review_008.json",
+   "artifact_under_test": "claim"
+  }
+ ]
+}

@@ -1,0 +1,39 @@
+{
+ "node": "cli.genre-router-layer-confusion-check",
+ "defects_targeted": ["composite_quote", "hidden_ai_fill", "inflated_bearing", "injected_infinity"],
+ "before": {
+  "caught": 0,
+  "missed": 36,
+  "false_alarm": 0,
+  "per_defect": {
+   "composite_quote": {"n": 9, "caught": 0, "missed": 9},
+   "hidden_ai_fill": {"n": 9, "caught": 0, "missed": 9},
+   "inflated_bearing": {"n": 9, "caught": 0, "missed": 9},
+   "injected_infinity": {"n": 9, "caught": 0, "missed": 9}
+  },
+  "source": "sim/v0.3/baseline.json (kernel-only run, unmodified glosa_kernel.py), tier finite_diagnostic"
+ },
+ "after": {
+  "caught": 36,
+  "missed": 0,
+  "false_alarm": 0,
+  "per_defect": {
+   "composite_quote": {"n": 9, "caught": 9, "missed": 0},
+   "hidden_ai_fill": {"n": 9, "caught": 9, "missed": 0},
+   "inflated_bearing": {"n": 9, "caught": 9, "missed": 0},
+   "injected_infinity": {"n": 9, "caught": 9, "missed": 0}
+  },
+  "source": "kernel result OR prototype check_genre_router_layer_confusion() result, executed via `python3 sim/v0.3/prototypes/cli_genre_router_layer_confusion_check.py` on sim/v0.3/corpus/ (180 cards: 60 valid + 120 adversarial); since kernel alone catches 0/9 on each of these 4 defects and 0 false alarms, the union equals the prototype's own standalone counts printed above",
+  "tier": "finite_diagnostic"
+ },
+ "delta_recall": 1.0,
+ "delta_false_alarm": 0,
+ "notes": [
+  "Executed: `python3 sim/v0.3/prototypes/cli_genre_router_layer_confusion_check.py` printed 'composite_quote 9 9 0 / hidden_ai_fill 9 9 0 / inflated_bearing 9 9 0 / injected_infinity 9 9 0' and 'valid cards: n=60 false_alarm=0' -- readout of this exact run, tier finite_diagnostic, not a general claim about the kernel or about cards this check has not seen.",
+  "The DAG node's own template ('genre/register does not match the tool/authority invoked on it, e.g. jurisprudential vs astronomical') has no literal astronomical/jurisprudential/institutional fields in this v0.3 corpus -- there is no fiqh/astronomy claim card yet. This prototype generalizes the template to 'a field DECLARES one evidentiary register/layer while its own content or a sibling field is actually written in a different layer', instantiated on the four layer-pairs the corpus actually contains: L1 quote-register (citation.scope=DIRECT_QUOTATION declared vs an ellipsis/composite-join actually present in exact_passage -> composite_quote), L2 authorship-register (an access/observation field's own text discloses '[AI-DRAFTED ...]' while the outer responsible/produced_by fields carry no field-level attribution there -> hidden_ai_fill), L3 independence-register (evidence_relations.independence_class in {I0,I1} declared vs its own notes saying own-lineage/self-authored/same-lineage -> inflated_bearing), L4 finiteness-register (an EMPIRICAL, non-formal_proof statement/hypothesis text asserting infinite/exactly-zero/always/never absolute vocabulary -> injected_infinity). Each pair is a genre-router layer confusion in the same structural sense as the DAG node's own example: the claim declares it belongs to one register but the content proves it is actually in another.",
+  "First cut of L3 also matched review_mode=='MAKER_SELF_CHECK' alone (without a lineage note) as a signal; running against the 60 valid cards immediately produced 9 false alarms (MAKER_SELF_CHECK legitimately co-occurs with independence_class=I1 on valid cards in this corpus) -- that signal was dropped, keeping only the explicit self-lineage/self-authored wording in notes. Reported here per the readout-not-truth discipline: verify before you repeat, this is what was actually executed, including the failed first attempt, not a clean-room design.",
+  "Coverage is narrow by construction: each layer's marker list (AI_AUTHORSHIP_MARKERS, SELF_LINEAGE_MARKERS, INFINITY_MARKERS, the ellipsis check) is a keyword/phrase match tuned to this corpus's own generator (sim/v0.3/gen_corpus.py) vocabulary, not a semantic detector. A differently-worded AI-disclosure string, a differently-worded self-lineage note, or an infinity claim phrased without any of the listed markers/regex would be MISSED by this prototype -- it would need a wider marker list or an LLM-assisted register classifier to generalize past this fixed vocabulary. It has not been tested against any corpus other than sim/v0.3/corpus/ (180 cards, single generator, single date-stamp), so 'zero false alarms' and '9/9 caught' are readouts of that one run, not evidence this generalizes to real (non-synthetic) claim cards or to other injected wordings of the same four defects.",
+  "The N=10 synthetic mismatched-layer + matched-layer-control acceptance test named in the DAG node's own acceptance_test line was NOT run as a separate fixture; this evaluation substitutes the already-existing 180-card sim/v0.3/corpus/ (36 targeted-defect adversarial cards + 60 valid/matched-layer cards) as the closest available proxy, which is a reasonable proxy in spirit (adversarial mismatched cards + valid matched-layer control) but not the literal fixture the acceptance test describes -- flagged as an open gap rather than silently substituted."
+ ],
+ "recommendation": "revise"
+}
