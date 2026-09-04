@@ -14,11 +14,8 @@ claim_match_verified_by: route:codex
 claim_match_verified_at: '2026-09-05'
 exact_passage: While 89% of reviews applied formal inclusion/exclusion criteria to
   gray literature, only 19% extracted gray literature separately from peer-reviewed
-  sources. ... There is an urgent need for standardized guidance, greater integration
-  of automation tools, and improved researcher training in accessing less visible
-  sources. Without these improvements, gray literature searching will remain inconsistent
-  and resource-intensive, with uncertain impact on review quality.
-page_or_locator: Abstract, Results and Conclusion sections (Europe PMC record MED/41862106)
+  sources. The influence of gray literature on review conclusions varied substantially.
+page_or_locator: Abstract, Results section (Europe PMC record MED/41862106)
 line_or_paragraph: char offset 3375 of normalized fetched text (~paragraph 1); verbatim
   prefix match
 scope: DIRECT_QUOTATION
@@ -64,7 +61,12 @@ disclosure: 'I0 only (same session, not independently checked). Title/authors/jo
   Metadata does not contradict title/year/first author rules, and fetched text contains
   the quoted passage. The source supports Q4 context by showing gray-literature handling
   and appraisal remain variable, opaque, and lacking standardized guidance, though
-  it does not specifically prove a flag-and-request-tier rule.'
+  it does not specifically prove a flag-and-request-tier rule. | I3 route (codex)
+  judged from fetched metadata/abstract + the card''s quoted passage, not full text:
+  Metadata title/year/first author align under the rule. The passage is present and
+  plausible against the fetched abstract. It directly bears on Q4 by showing gray-literature
+  handling is variable, often not separately extracted, and lacks accepted guidance,
+  supporting the need for a distinct intake rule.'
 superseded_by: null
 notes: 'Global North (Australia, La Trobe University), EN, peer-reviewed journal article,
   discipline: epidemiology/evidence synthesis methods. Found via query family: support

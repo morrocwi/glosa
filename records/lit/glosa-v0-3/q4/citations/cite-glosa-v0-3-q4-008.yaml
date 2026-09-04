@@ -14,9 +14,7 @@ claim_match_verified_by: route:codex
 claim_match_verified_at: '2026-09-05'
 exact_passage: Grey literature includes productions in print and electronic formats
   by governments, academics, business and industry that are not part of the peer-reviewed
-  publications from commercial publishers. ... The AACODS checklist (authority, accuracy,
-  coverage, objectivity, date, significance) is designed to enable evaluation and
-  critical appraisal of such grey literature (25).
+  publications from commercial publishers.
 page_or_locator: ANNEX 4. Selection of tools for appraising evidence, "Appraising
   grey literature" subsection (NCBI Bookshelf, from Karlsson LE, Takahashi R, WHO
   Health Evidence Network Synthesis Report No. 50, 2017)
@@ -47,7 +45,11 @@ disclosure: 'I0 only (same session, not independently checked). No DOI is presen
   from fetched metadata/abstract + the card''s quoted passage, not full text: finite_diagnostic:
   Fetched title does not contradict the card; excerpt contains the quoted grey-literature/AACODS
   passage. It bears only as context for Q4’s policy/grey-literature source genre,
-  not as hypothesis-proving evidence.'
+  not as hypothesis-proving evidence. | I3 route (codex) judged from fetched metadata/abstract
+  + the card''s quoted passage, not full text: Metadata shows no contradiction. The
+  quoted passage is mechanically found and coherent with the annex title. It defines
+  grey literature and identifies appraisal context, so it is relevant background for
+  Q4, but it does not support or challenge the proposed flag-and-request-tier rule.'
 superseded_by: null
 notes: 'Global North institutional authorship (WHO Regional Office for Europe) but
   globally-facing methods guidance intended for policy-making synthesis work, EN,

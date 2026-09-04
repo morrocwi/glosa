@@ -124,9 +124,12 @@ def _norm(t):
 
 
 def passage_found(exact_passage, fulltext):
-    """Mechanical check: is (a decent prefix of) the quoted passage present verbatim in the fetched text?"""
+    """Mechanical check: is (a decent prefix of) the quoted passage present verbatim in the fetched text?
+    A passage carrying a splice marker (ellipsis / ' -- ') is refused outright (kernel rule 26)."""
     if not exact_passage or not fulltext:
         return None
+    if re.search(r"\u2026|\.\.\.| -- ", exact_passage):
+        return False
     p = _norm(exact_passage); f = _norm(fulltext.replace("\x00", ""))
     words = p.split()
     if len(words) < 4:

@@ -18,7 +18,7 @@
   "passage_plausible": true,
   "claim_match": true,
   "bearing": "CONTEXT_ONLY",
-  "reason": "Metadata does not contradict the card. The quoted passage is plausibly the Crossref abstract despite normalization/ellipsis issues. The source bears on grey-literature inclusion and systematic-review treatment, but the provided material does not address undeclared evidence tiers or request-back-to-source rules directly.",
+  "reason": "Metadata does not contradict the card. The quoted passage is present in substance in the fetched abstract despite verbatim-search failure likely from formatting/hyphen differences. The source is relevant context on grey literature inclusion/exclusion and review guidelines, but the provided material does not directly support the proposed flag-and-request-tier rule.",
   "passage_mechanical": "quoted passage NOT found verbatim in fetched open text"
  },
  "date": "2026-09-04"

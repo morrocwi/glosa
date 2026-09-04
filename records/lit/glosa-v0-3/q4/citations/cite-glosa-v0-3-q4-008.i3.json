@@ -3,14 +3,15 @@
  "fetched": {
   "source": "url-fetch",
   "title": "ANNEX 4. SELECTION OF TOOLS FOR APPRAISING EVIDENCE - A Resource for Developing an Evidence Synthesis Report for Policy-Making - NCBI Bookshelf",
-  "abstract": "The tools outlined here are examples of existing tools; new tools are constantly appearing and existing ones are revised."
+  "abstract": "The tools outlined here are examples of existing tools; new tools are constantly appearing and existing ones are revised.",
+  "_card_url": "https://www.ncbi.nlm.nih.gov/books/NBK453537/"
  },
  "verdict": {
   "metadata_matches": true,
   "passage_plausible": true,
   "claim_match": true,
   "bearing": "CONTEXT_ONLY",
-  "reason": "finite_diagnostic: Fetched title does not contradict the card; excerpt contains the quoted grey-literature/AACODS passage. It bears only as context for Q4’s policy/grey-literature source genre, not as hypothesis-proving evidence.",
+  "reason": "Metadata shows no contradiction. The quoted passage is mechanically found and coherent with the annex title. It defines grey literature and identifies appraisal context, so it is relevant background for Q4, but it does not support or challenge the proposed flag-and-request-tier rule.",
   "passage_mechanical": "verbatim prefix found in fetched open text"
  },
  "date": "2026-09-04"

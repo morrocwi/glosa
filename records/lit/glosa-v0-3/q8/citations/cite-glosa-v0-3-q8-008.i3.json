@@ -3,14 +3,15 @@
  "fetched": {
   "source": "url-fetch",
   "title": "WorldAtNet - Global News, World Affairs, Technology & Analysis",
-  "abstract": "A deeply researched scholarly article on Al-Faqr &#8212; spiritual poverty in Islamic Tasawwuf &#8212; exploring its Quranic roots, Prophetic Hadith, and the teachings of Sultan Bahoo, Rumi, Al-Ghazali, and Ibn Arabi. Published on WorldAtNet.com."
+  "abstract": "A deeply researched scholarly article on Al-Faqr &#8212; spiritual poverty in Islamic Tasawwuf &#8212; exploring its Quranic roots, Prophetic Hadith, and the teachings of Sultan Bahoo, Rumi, Al-Ghazali, and Ibn Arabi. Published on WorldAtNet.com.",
+  "_card_url": "https://www.worldatnet.com/2026/05/al-faqr-prophets-ultimate-pride.html"
  },
  "verdict": {
   "metadata_matches": true,
   "passage_plausible": true,
   "claim_match": true,
   "bearing": "CONTEXT_ONLY",
-  "reason": "Fetched abstract and excerpt align with the card’s article/topic; no title/year/first-author contradiction is shown. The quoted passage is mechanically found and fits the surrounding text. As Open/grey devotional material, it provides contextual evidence that the source says faqr is universal created dependence, not independent support.",
+  "reason": "Metadata does not contradict the card, and the fetched excerpt contains the quoted passage in normalized form. The passage is relevant context for faqr as ongoing created dependence before God, but it is devotional theology-bound material, not evidence for a theology-neutral structural analogue.",
   "passage_mechanical": "verbatim prefix found in fetched open text"
  },
  "date": "2026-09-04"

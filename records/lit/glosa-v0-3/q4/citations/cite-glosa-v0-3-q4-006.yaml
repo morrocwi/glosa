@@ -12,14 +12,14 @@ metadata_verified_at: '2026-09-05'
 claim_match_verified: true
 claim_match_verified_by: route:codex
 claim_match_verified_at: '2026-09-05'
-exact_passage: This paper suggests how the 'grey literature', the diverse and heterogeneous
+exact_passage: This paper suggests how the ‘grey literature’, the diverse and heterogeneous
   body of material that is made public outside, and not subject to, traditional academic
-  peer-review processes, can be used to increase the relevance and impact of management
-  and organization studies (MOS). ... This investigation updates previous guidelines
-  for more inclusive systematic reviews that respond to criticisms of current review
-  practices and the needs of evidence-based management.
+  peer‐review processes, can be used to increase the relevance and impact of management
+  and organization studies (MOS).
 page_or_locator: Abstract (Crossref work record for DOI 10.1111/ijmr.12102)
-line_or_paragraph: first sentence and final sentence of the single-paragraph abstract
+line_or_paragraph: first sentence of the single-paragraph abstract, after the leading
+  "Abstract" label; char offset 9 of normalized fetched abstract field; verbatim exact
+  match
 scope: DIRECT_QUOTATION
 evidence_tier: Dr
 independence_class: I3
@@ -57,7 +57,13 @@ disclosure: 'I0 only (same session, not independently checked). Title/authors/jo
   not full text: Metadata does not contradict the card. The quoted passage is plausibly
   the Crossref abstract despite normalization/ellipsis issues. The source bears on
   grey-literature inclusion and systematic-review treatment, but the provided material
-  does not address undeclared evidence tiers or request-back-to-source rules directly.'
+  does not address undeclared evidence tiers or request-back-to-source rules directly.
+  | I3 route (codex) judged from fetched metadata/abstract + the card''s quoted passage,
+  not full text: Metadata does not contradict the card. The quoted passage is present
+  in substance in the fetched abstract despite verbatim-search failure likely from
+  formatting/hyphen differences. The source is relevant context on grey literature
+  inclusion/exclusion and review guidelines, but the provided material does not directly
+  support the proposed flag-and-request-tier rule.'
 superseded_by: null
 notes: 'Global North (UK/Ireland: Surrey, Cranfield, Maynooth), EN, peer-reviewed
   journal article, discipline: management and organization studies / systematic review

@@ -13,12 +13,10 @@ claim_match_verified: true
 claim_match_verified_by: route:codex
 claim_match_verified_at: '2026-09-05'
 exact_passage: The entire created order is, at every moment, in a state of Faqr before
-  its Creator. Faqr is not a spiritual achievement -- it is the truth of creation.
-  The achievement lies in recognizing it, accepting it, and building one's entire
-  inner life upon it.
+  its Creator. Faqr is not a spiritual achievement — it is the truth of creation.
 page_or_locator: 'worldatnet.com, article "Al-Faqr: The Prophet''s Ultimate Pride",
   section discussing the Quranic grounding of Faqr (after the Surah Al-Imran citation)'
-line_or_paragraph: char offset 7165 of normalized fetched text (~paragraph 1); verbatim
+line_or_paragraph: char offset 7296 of normalized fetched text (~paragraph 1); verbatim
   prefix match
 scope: DIRECT_QUOTATION
 evidence_tier: Open
@@ -45,7 +43,12 @@ disclosure: 'I0 only (same session, not independently checked). WorldAtNet.com i
   and excerpt align with the card’s article/topic; no title/year/first-author contradiction
   is shown. The quoted passage is mechanically found and fits the surrounding text.
   As Open/grey devotional material, it provides contextual evidence that the source
-  says faqr is universal created dependence, not independent support.'
+  says faqr is universal created dependence, not independent support. | I3 route (codex)
+  judged from fetched metadata/abstract + the card''s quoted passage, not full text:
+  Metadata does not contradict the card, and the fetched excerpt contains the quoted
+  passage in normalized form. The passage is relevant context for faqr as ongoing
+  created dependence before God, but it is devotional theology-bound material, not
+  evidence for a theology-neutral structural analogue.'
 superseded_by: null
 notes: 'EN language, grey/community source (devotional educational blog, explicitly
   non-peer-reviewed per its own disclaimer), Global-facing Islamic-educational content
