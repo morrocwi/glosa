@@ -1,0 +1,60 @@
+$schema: citation_card.schema.json
+id: cite-rigour-without-infrastructure-007
+claim_ref: hypothesis-H2
+
+identifier:
+  kind: DOI
+  value: "10.1371/journal.pgph.0003696"
+
+fetch_status: FETCHED
+fetched_at: "2026-09-04"
+
+metadata_verified: true
+metadata_verified_by: "mechanical:crossref"
+metadata_verified_at: "2026-09-04"
+
+claim_match_verified: true
+claim_match_verified_by: "ai_route:same-session (I1)"
+claim_match_verified_at: "2026-09-04"
+
+exact_passage: >-
+  "Citizen science (CS), a collaboration between people and scientists, is a viable approach
+  utilizing citizens experiences in COVID-19 pandemic to manage future response. This study
+  aimed to understand concepts, experiences, approaches, and sustainability issues of CS among
+  citizens in five South and Southeast Asian countries. A qualitative study was carried out in
+  Nepal, Bangladesh, India, Philippines, and Indonesia from October 2022 to March 2023... Some
+  participants expressed lack of confidence and language barriers as notable concerns while
+  sharing their opinions with stakeholders (policymakers and researchers)."
+page_or_locator: "journals.plos.org/globalpublichealth/article?id=10.1371/journal.pgph.0003696, abstract, as fetched 2026-09-04"
+
+scope: CONTEXT_ONLY_NOT_EVIDENCE
+
+evidence_tier: Dr
+
+independence_class: I1
+
+who_verified: "ai_route:same-session (I1)"
+verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
+
+status: METADATA_OK
+
+xenon_ledger_ref: null
+
+disclosure: >-
+  Crossref-confirmed: Kumar, Hauter, Canlas, Sunaryoko, Maharjan et al. (2025), "Community
+  perceptions of citizen science approach in pandemic preparedness and response in South and
+  Southeast Asian countries", PLOS Global Public Health, DOI 10.1371/journal.pgph.0003696.
+  Orthogonal to H2 as read: this is a qualitative study of participants' own experience/motivation
+  in citizen science (participation, social responsibility, capacity building, language/
+  confidence barriers to being heard by "stakeholders (policymakers and researchers)") -- it
+  does not test whether a claim's recorded structure can substitute for institutional
+  credentialing, though the barrier finding (confidence/language keeping community members from
+  being heard by institutional stakeholders) is adjacent context. independence_class I1 (same
+  session AI) -- status METADATA_OK only.
+
+superseded_by: null
+notes: >-
+  Diversity: language=en (study conducted in Nepal, Bangladesh, India, Philippines, Indonesia),
+  source_type=peer_reviewed, geography=Global South/South & Southeast Asia, search_route="web
+  search: Southeast Asia citizen science community based knowledge production credibility
+  Indonesia Philippines".

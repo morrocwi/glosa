@@ -1,0 +1,29 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: H2
+source_label: "Dutta et al. 2021, 'Decolonizing Open Science: Southern Interventions' (EN, peer-reviewed, Global South collective)"
+how_it_sees_the_problem: >-
+  Sees the problem at the level of *who governs the infrastructure of Open Science itself* --
+  arguing that even ostensibly "open" record-sharing systems remain built inside Northern
+  institutional/platform-capitalist circuits that "erase Southern epistemologies" -- a
+  structural/political-economy framing, not a claim-by-claim epistemic one.
+what_it_separates: >-
+  Separates "hegemonic Open Science" (Northern-governed openness that still gatekeeps via
+  infrastructure/funding/platform ownership) from "Southern practices of Openness" grounded in
+  "data sovereignty, community ownership, and public ownership of knowledge resources".
+what_it_assumes: >-
+  Assumes that openness/transparency of records is not automatically emancipatory -- it can be
+  co-opted by the same power structures it claims to bypass -- an assumption H2 does not itself
+  make or rule out, since H2 is scoped to a single claim's own recorded structure, not to who
+  owns the platform that structure lives on.
+stance: ORTHOGONAL
+what_it_would_say_against_us: >-
+  If H2's "record substitutes for institution" claim is read as applying to record-hosting
+  infrastructure and not just to the claim's own fields, this piece would say: whoever controls
+  the platform/repository the record lives on is itself a new institutional layer -- so
+  "institution-free" record-keeping may be an illusion at the infrastructure level even if true
+  at the single-claim level. Different question from H2 as scoped, but a real adjacent
+  objection.
+citation_card: cite-rigour-without-infrastructure-005
+verified:
+  metadata_verified: true
+  claim_match_verified: true

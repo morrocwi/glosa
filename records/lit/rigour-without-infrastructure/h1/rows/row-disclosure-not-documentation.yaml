@@ -1,0 +1,27 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: H1
+source_label: "Cwik 2026, Disclosure is not documentation: an open science framework for documenting generative AI use in scholarly research and publication workflows (Research Integrity and Peer Review)"
+how_it_sees_the_problem: >-
+  Frames the problem as a gap between two different obligations that get collapsed in practice: a
+  publication-policy "disclosure" requirement (a statement that AI was used) versus an open-science
+  "documentation" practice (a structured record of how AI was used, what was entered, how outputs
+  were evaluated, and how human responsibility was maintained).
+what_it_separates: >-
+  Separates disclosure-as-compliance from documentation-as-verifiable-record -- structurally the
+  same separation H1 makes between an unverified claim of AI involvement and a claim card's
+  specific Q3 field (what AI filled in) that a reader can actually check against.
+what_it_assumes: >-
+  Not fully determinable from the fetched abstract alone (full text was paywalled); the abstract
+  does not specify whether the proposed framework was tested with any standalone/unaffiliated
+  researcher population, or only within institutional publication workflows -- this is an honest
+  gap in what could be read, not an invented assumption.
+stance: "YES"
+what_it_would_say_against_us: >-
+  Could argue that a full documentation framework (this paper's proposal) is heavier machinery than
+  H1's five-question claim card assumes is sufficient -- if genuine AI-use documentation requires
+  the fuller apparatus this paper describes, H1's simpler card might under-specify what "what AI
+  filled in" actually needs to contain to be reader-checkable.
+citation_card: cite-disclosure-not-documentation-001
+verified:
+  metadata_verified: true
+  claim_match_verified: true

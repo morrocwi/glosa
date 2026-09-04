@@ -1,0 +1,29 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: H1
+source_label: "Jaeger et al. 2023, An epistemology for democratic citizen science (Royal Society Open Science)"
+how_it_sees_the_problem: >-
+  Frames the problem as one of epistemology, not access: contemporary science is still governed by
+  a naive-realist, individualist model of knowledge production that treats institutional/expert
+  homogeneity as the guarantee of rigour; the authors propose replacing it with a
+  perspectival-realist, process-based epistemology where a multiplicity of standpoints is itself
+  what makes discovery robust.
+what_it_separates: >-
+  Separates "who produced a claim" (credentialed institution vs. standalone/citizen participant)
+  from "what makes a claim epistemically robust" (diversity and process of inquiry) -- a distinction
+  finer than H1's own binary (institution-certified vs. claim-card-certified), since it locates
+  rigour in the diversity of the *process*, not only in the recorded structure of one claim.
+what_it_assumes: >-
+  Assumes participants are engaging in a genuinely deliberative, iterative inquiry process (not a
+  one-shot claim); does not address AI-assisted co-production at all, and does not address what
+  happens when only one standalone scholar (not a diverse group) is producing the claim -- H1's
+  "standalone scholar" case is narrower than this paper's "diverse community" case.
+stance: "YES"
+what_it_would_say_against_us: >-
+  Could argue H1 over-individualizes rigour: if what actually produces robustness is *diversity of
+  standpoint across many participants*, then a single standalone scholar (even with a perfect
+  claim card and AI check) may still lack the epistemic advantage this paper's mechanism depends
+  on -- rigour might require a community, not just a well-documented individual claim.
+citation_card: cite-rsos-citizen-epistemology-001
+verified:
+  metadata_verified: true
+  claim_match_verified: true

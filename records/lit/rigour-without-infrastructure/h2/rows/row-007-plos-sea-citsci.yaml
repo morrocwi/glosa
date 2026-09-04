@@ -1,0 +1,26 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: H2
+source_label: "Kumar et al. 2025, 'Community perceptions of citizen science... South and Southeast Asian countries' (EN, peer-reviewed, Global South/SEA)"
+how_it_sees_the_problem: >-
+  Sees citizen science from participants' own lived experience in five South/Southeast Asian
+  countries (Nepal, Bangladesh, India, Philippines, Indonesia) -- what CS means to them
+  ("participation", "social responsibility"), not from a verification/rigour-audit angle at all.
+what_it_separates: >-
+  Separates participants' own sense-making of their contribution (personal achievement, social
+  capital) from the barriers that keep that contribution from reaching institutional
+  "stakeholders (policymakers and researchers)" -- namely "lack of confidence and language
+  barriers".
+what_it_assumes: >-
+  Assumes policymakers/researchers are the relevant audience whose trust matters for CS data/
+  input to be acted on -- not determinable from the fetched abstract whether the paper considers
+  what would make community input itself carry legitimacy without institutional mediation.
+stance: ORTHOGONAL
+what_it_would_say_against_us: >-
+  The finding that "lack of confidence and language barriers" keeps community members from being
+  heard by "stakeholders (policymakers and researchers)" is adjacent evidence that access to
+  institutional audiences, not record quality, is often the actual bottleneck -- a real-world
+  friction H2's claim-card mechanism does not by itself resolve.
+citation_card: cite-rigour-without-infrastructure-007
+verified:
+  metadata_verified: true
+  claim_match_verified: true

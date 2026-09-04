@@ -1,0 +1,25 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: H1
+source_label: "Kumar et al. 2025, Community perceptions of citizen science approach in pandemic preparedness and response in South and Southeast Asian countries (PLOS Global Public Health)"
+how_it_sees_the_problem: >-
+  Frames the problem as governance participation: whether communities in South/Southeast Asian
+  countries are ready, and want, to have their own observations and voices included in pandemic
+  policy-making -- a citizen-science-as-civic-inclusion framing, not a citizen-science-as-
+  knowledge-rigour framing.
+what_it_separates: >-
+  Separates being heard/included in a policy process from producing a checkable knowledge claim --
+  a different axis from H1 entirely; this paper's own separation (readiness/willingness vs. actual
+  epistemic output) does not map onto H1's Q1-Q5 structure at all.
+what_it_assumes: >-
+  Assumes community perception/willingness data (qualitative interviews) is the right instrument
+  for the governance-inclusion question it asks; says nothing about AI assistance, claim
+  verification, or independence routes -- not applicable to H1's mechanism either way.
+stance: ORTHOGONAL
+what_it_would_say_against_us: >-
+  Not directly applicable -- this source neither defends nor challenges H1's mechanism; it answers
+  a different question (should communities be heard) than H1 asks (can a standalone scholar's
+  claim carry reader-checkable rigour). Recorded honestly as orthogonal rather than stretched.
+citation_card: cite-pgph-citizen-science-sea-001
+verified:
+  metadata_verified: true
+  claim_match_verified: true

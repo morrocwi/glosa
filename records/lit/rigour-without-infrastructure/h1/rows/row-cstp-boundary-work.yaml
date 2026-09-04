@@ -1,0 +1,28 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: H1
+source_label: "Mayes 2022, Citizen Science and Scientific Authority: Have You Checked the Boundary Work? (Citizen Science: Theory and Practice)"
+how_it_sees_the_problem: >-
+  Frames the problem sociologically as "boundary work": legitimacy in citizen science is not fixed
+  by any formal rule but is continuously negotiated in public discourse, and that negotiation is
+  empirically dominated by credentialed/institutional voices even in coverage of ostensibly
+  democratizing citizen-science projects.
+what_it_separates: >-
+  Separates the *stated ideal* of citizen science (democratized, non-hierarchical knowledge) from
+  its *empirical media reality* (credentialed experts quoted ~5x more often than citizen
+  participants; non-professional voices never stand alone in an article) -- a normative/empirical
+  gap H1 does not itself measure.
+what_it_assumes: >-
+  Assumes news-media discourse (a 51-article sample, 2010-2019) is a reasonable proxy for how
+  legitimacy is actually granted to non-institutional knowledge producers more broadly; does not
+  study AI-assisted claim cards, independence ladders, or any structured disclosure mechanism --
+  H1's specific mechanism is untested by this paper.
+stance: "NO"
+what_it_would_say_against_us: >-
+  Directly: even a perfectly-documented, mechanically-checkable claim card may still not be treated
+  as legitimate by readers/institutions if the surrounding discourse continues to grant authority
+  by credential rather than by the claim's own recorded rigour -- H1's mechanism could be
+  necessary-but-not-sufficient if audiences do not actually change how they attribute legitimacy.
+citation_card: cite-cstp-boundary-work-001
+verified:
+  metadata_verified: true
+  claim_match_verified: true

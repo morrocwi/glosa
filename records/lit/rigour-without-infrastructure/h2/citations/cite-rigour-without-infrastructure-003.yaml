@@ -1,0 +1,55 @@
+$schema: citation_card.schema.json
+id: cite-rigour-without-infrastructure-003
+claim_ref: hypothesis-H2
+
+identifier:
+  kind: DOI
+  value: "10.5334/cstp.6"
+
+fetch_status: FETCHED
+fetched_at: "2026-09-04"
+
+metadata_verified: true
+metadata_verified_by: "mechanical:crossref"
+metadata_verified_at: "2026-09-04"
+
+claim_match_verified: true
+claim_match_verified_by: "ai_route:same-session (I1)"
+claim_match_verified_at: "2026-09-04"
+
+exact_passage: >-
+  "We surveyed the credibility-building strategies of 30 citizen science programs that monitor
+  environmental aspects of the California coast. We identified a total of twelve strategies:
+  Three that are applied during training and planning; four that are applied during data
+  collection; and five that are applied during data analysis and program evaluation... Our
+  results illustrate those tradeoffs and provide a framework for the necessary discussions
+  between citizen science programs and potential users of their data -- including scientists and
+  decision makers -- about shared expectations for credibility."
+page_or_locator: "theoryandpractice.citizenscienceassociation.org/article/10.5334/cstp.6/, abstract, as fetched 2026-09-04"
+
+scope: DIRECT_QUOTATION
+
+evidence_tier: Dr
+
+independence_class: I1
+
+who_verified: "ai_route:same-session (I1)"
+verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
+
+status: METADATA_OK
+
+xenon_ledger_ref: null
+
+disclosure: >-
+  Crossref-confirmed: Amy Freitag, Ryan Meyer, Liz Whiteman (2016), "Strategies Employed by
+  Citizen Science Programs to Increase the Credibility of Their Data", Citizen Science: Theory
+  and Practice, DOI 10.5334/cstp.6. Supports H2: credibility is built through program-level,
+  record/procedure-based strategies (training, data-collection, and evaluation practices) rather
+  than through the institutional affiliation of the volunteers producing the data.
+  independence_class I1 (same session AI) -- status METADATA_OK only, not VERIFIED (would
+  require an I3+ route).
+
+superseded_by: null
+notes: >-
+  Diversity: language=en, source_type=peer_reviewed, geography=USA, search_route="web search:
+  citizen science credibility trust independent verification not institution".

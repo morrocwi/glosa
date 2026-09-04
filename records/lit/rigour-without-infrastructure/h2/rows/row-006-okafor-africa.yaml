@@ -1,0 +1,28 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: H2
+source_label: "Okafor et al. 2022, 'Institutionalizing Open Science in Africa: Limitations and Prospects' (EN, peer-reviewed, Global South/Africa)"
+how_it_sees_the_problem: >-
+  Sees Open Science adoption in Africa as gated by funding, leadership, and policy at
+  "educational, research, and government parastatal" levels -- i.e. institutional capacity
+  itself (not individual claim quality) as the binding constraint on whether open, checkable
+  records can even be produced and sustained.
+what_it_separates: >-
+  Separates "science access" (the precondition of being able to do and share research at all)
+  from "institutionalization of OS" (formal policy adoption) -- treating them as sequential
+  problems: access first, then formal open-science policy.
+what_it_assumes: >-
+  Assumes institutionalizing OS (via policy/leadership) is itself the goal, i.e. that more
+  institutional machinery, not less, is the path forward for African open science -- the
+  opposite emphasis from H2, though aimed at a different level (national research systems, not
+  individual claim legitimacy).
+stance: ORTHOGONAL
+what_it_would_say_against_us: >-
+  From what was actually fetched (the abstract), this source does not make a claim-level
+  argument either way; a stronger objection may exist in its full text (a prior, unfetched
+  WebSearch summary suggested a discussion of Western-standard publication bias against African
+  institutions) but that passage was not independently confirmed by direct read in this pass and
+  is deliberately not used here -- flagged as a real gap rather than quoted secondhand.
+citation_card: cite-rigour-without-infrastructure-006
+verified:
+  metadata_verified: true
+  claim_match_verified: true

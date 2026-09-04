@@ -1,0 +1,55 @@
+$schema: citation_card.schema.json
+id: cite-disclosure-not-documentation-001
+claim_ref: hypothesis-rigour-without-infrastructure-H1
+
+identifier:
+  kind: DOI
+  value: "10.1186/s41073-026-00245-8"
+
+fetch_status: PAYWALLED_ABSTRACT_ONLY
+fetched_at: "2026-09-04"
+
+metadata_verified: true
+metadata_verified_by: "mechanical:crossref"
+metadata_verified_at: "2026-09-04"
+
+claim_match_verified: true
+claim_match_verified_by: "independent_ai_route:same_session_i1"
+claim_match_verified_at: "2026-09-04"
+
+exact_passage: >-
+  "disclosure alone rarely clarifies how AI-assisted work was performed, what information was
+  entered, how outputs were evaluated, or how human responsibility was maintained" -- creating a
+  gap between AI-use disclosure as a publication requirement and AI-use documentation as an open
+  science practice.
+page_or_locator: "Abstract (read via search-engine abstract summary; full-text page redirected to a Springer login wall, not accessed directly)"
+
+scope: PARAPHRASE
+
+evidence_tier: Dr
+independence_class: I1
+
+who_verified: "AI (same session, this run)"
+verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
+
+status: METADATA_OK
+
+xenon_ledger_ref: null
+
+disclosure: >-
+  Same-session AI check only (I1) -- METADATA_OK, not VERIFIED. Title/author/year/venue confirmed
+  mechanically via Crossref (Jan Christopher Cwik; Research Integrity and Peer Review, 2026-08-15).
+  HONEST FETCH LIMIT: the full-text article page (link.springer.com) redirected to a Springer
+  IDP login wall; the exact_passage above is the abstract as returned by a web-search engine's own
+  summary, not read on the publisher's page directly -- recorded as PAYWALLED_ABSTRACT_ONLY /
+  scope PARAPHRASE, not upgraded to DIRECT_QUOTATION. Supports H1's SUPPORT family: motivates why
+  H1's own Q3 field ("what AI filled in") must be a structured documentation field, not a bare
+  disclosure checkbox -- a checkbox alone is shown (per this abstract) to be insufficient for the
+  same reason H1 requires a specific, checkable answer.
+
+superseded_by: null
+notes: >-
+  Global North (author affiliation not confirmed beyond abstract), EN, peer-reviewed,
+  journal-article. Found via query family: support (AI-assisted research disclosure transparency
+  verification framework provenance). Dialogue-table stance: YES (supports H1), with the
+  PAYWALLED_ABSTRACT_ONLY limit disclosed (D-CITATION-UNVERIFIED-adjacent honesty flag).

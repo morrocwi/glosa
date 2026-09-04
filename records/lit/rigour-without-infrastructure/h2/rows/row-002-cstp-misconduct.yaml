@@ -1,0 +1,26 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: H2
+source_label: "Rasmussen 2019, 'Confronting Research Misconduct in Citizen Science' (EN, peer-reviewed)"
+how_it_sees_the_problem: >-
+  Sees the problem as: citizen science lacks the institutional research-integrity infrastructure
+  (misconduct-detection processes, IRB-style oversight) that universities/labs have built up --
+  and asks what should replace it.
+what_it_separates: >-
+  Separates "commonly accepted principles of data collection and processing" (a record/practice
+  -level trust basis) from "an overall, widely accepted approach to research integrity"
+  (an institutional-style governance apparatus) -- and finds citizen science currently has the
+  former but not the latter.
+what_it_assumes: >-
+  Assumes trust ultimately requires *some* systematic framework, whether institutional or not;
+  does not fully resolve whether informal, distributed community norms can do the same job a lab
+  committee would.
+stance: UNDETERMINED
+what_it_would_say_against_us: >-
+  The very fact that the author calls for "instituting processes to address instances of
+  research misconduct" reads as a call to build institution-like machinery for citizen science,
+  which cuts against H2's claim that the property can be carried by the individual claim's own
+  record without needing an institutional mechanism at all.
+citation_card: cite-rigour-without-infrastructure-002
+verified:
+  metadata_verified: true
+  claim_match_verified: true

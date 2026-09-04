@@ -1,0 +1,28 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: H1
+source_label: "TCIJ Thai 2020, งานวิจัยต่างประเทศชี้ การขยายตัวจ้างงาน 'นักวิชาการฟรีแลนซ์' อาจทำลายวงการได้"
+how_it_sees_the_problem: >-
+  Frames the problem primarily as labour economics and academic-ethics: universities outsourcing
+  research tasks to freelance academics on gig platforms, and what that does to income precarity
+  and professional development for the freelancers, plus one raised question about authorship
+  credit.
+what_it_separates: >-
+  Separates "who performed the research work" from "who is credited/recognized as its author" --
+  a real but different distinction from H1's own separation of "what was actually seen" (Q1) from
+  "what AI filled in" (Q3); this article's separation is about labour/credit, not about
+  epistemic-content verification.
+what_it_assumes: >-
+  Assumes the reader already understands the university-outsourcing context described in the
+  cited foreign research (427 academic freelancers on a gig platform); the article does not discuss
+  AI assistance, claim verification, or research rigour mechanisms at all -- honestly, this source
+  is thinner on H1's actual topic than its query match suggested.
+stance: ORTHOGONAL
+what_it_would_say_against_us: >-
+  Not directly applicable to H1's rigour-verification mechanism; its one relevant point (authorship
+  attribution uncertainty for independent researchers) is adjacent to but not the same question as
+  whether a standalone scholar's claim can carry reader-checkable rigour. Recorded honestly as
+  orthogonal rather than forced into a stance the source does not support.
+citation_card: cite-tcij-freelance-th-001
+verified:
+  metadata_verified: true
+  claim_match_verified: true

@@ -1,0 +1,27 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: H1
+source_label: "LLM hallucination survey, arXiv:2510.06265"
+how_it_sees_the_problem: >-
+  Frames the problem purely technically: LLMs generate fluent, confident, but sometimes factually
+  ungrounded output, and current detection methods (retrieval-based, self-consistency) each have
+  structural blind spots -- none reliably catches every hallucination type.
+what_it_separates: >-
+  Separates "hallucination exists" from "hallucination is reliably detectable" -- a distinction
+  finer than most casual AI-risk discussion, and directly relevant to H1's Q3/independence-ladder
+  design: it shows AI cannot be trusted to flag its own errors, which is exactly why H1 requires an
+  external (human or cross-vendor) check rather than AI self-report.
+what_it_assumes: >-
+  Assumes a general-purpose LLM-usage context (chat, QA, generation); does not study the specific
+  case of AI assisting a standalone scholar's structured claim-card production, nor whether a
+  scaffolded five-question format reduces hallucination risk relative to open-ended generation --
+  untested by this survey.
+stance: ORTHOGONAL
+what_it_would_say_against_us: >-
+  Would say H1's independence ladder is necessary but possibly insufficient: if hallucinations can
+  be "confidently and consistently produced," even a human reviewer working from AI-drafted
+  material risks anchoring on a fabricated but fluent claim -- the check has to actually re-derive
+  from source, not just read the AI's summary, or H1's mechanism could give false reassurance.
+citation_card: cite-llm-hallucination-survey-001
+verified:
+  metadata_verified: true
+  claim_match_verified: true

@@ -1,0 +1,58 @@
+$schema: citation_card.schema.json
+id: cite-rigour-without-infrastructure-005
+claim_ref: hypothesis-H2
+
+identifier:
+  kind: DOI
+  value: "10.1093/joc/jqab027"
+
+fetch_status: FETCHED
+fetched_at: "2026-09-04"
+
+metadata_verified: true
+metadata_verified_by: "mechanical:crossref"
+metadata_verified_at: "2026-09-04"
+
+claim_match_verified: true
+claim_match_verified_by: "ai_route:same-session (I1)"
+claim_match_verified_at: "2026-09-04"
+
+exact_passage: >-
+  "Hegemonic Open Science, emergent from the circuits of knowledge production in the Global
+  North and serving the economic interests of platform capitalism, systematically erase the
+  voices of the subaltern margins from the Global South and the Southern margins inhabiting the
+  North... These decolonizing practices foreground data sovereignty, community ownership, and
+  public ownership of knowledge resources as the bases of resistance to the colonial-capitalist
+  interests of hegemonic Open Science."
+page_or_locator: "academic.oup.com/joc/advance-article/doi/10.1093/joc/jqab027/6364108, abstract, as fetched 2026-09-04"
+
+scope: CONTEXT_ONLY_NOT_EVIDENCE
+
+evidence_tier: Dr
+
+independence_class: I1
+
+who_verified: "ai_route:same-session (I1)"
+verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
+
+status: METADATA_OK
+
+xenon_ledger_ref: null
+
+disclosure: >-
+  Crossref-confirmed: Mohan Dutta et al. (2021), "Decolonizing Open Science: Southern
+  Interventions", Journal of Communication, DOI 10.1093/joc/jqab027 (23 co-authors, Global-South
+  and Global-South-diaspora research collective). Orthogonal to H2 as read: this piece argues
+  Open Science's *governance/funding infrastructure* remains Northern-institution-dominated and
+  should instead be community/data-sovereignty-owned -- a different question from whether a
+  single claim's own recorded structure can substitute for an institutional credential at the
+  claim level. Neither directly supports nor directly falsifies H2; logged for Global-South
+  diversity and as a genuinely different framing of "institution" (governance-of-the-field, not
+  credentialing-of-a-claim). independence_class I1 (same session AI) -- status METADATA_OK only.
+
+superseded_by: null
+notes: >-
+  Diversity: language=en, source_type=peer_reviewed, geography=Global South (author collective
+  spans India, Aotearoa/NZ, Bangladesh, Philippines and other Southern/diasporic institutions),
+  search_route="web search: open science Global South decolonizing science credibility without
+  Northern institutions".

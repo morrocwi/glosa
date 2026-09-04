@@ -1,0 +1,59 @@
+$schema: citation_card.schema.json
+id: cite-llm-hallucination-survey-001
+claim_ref: hypothesis-rigour-without-infrastructure-H1
+
+identifier:
+  kind: ARXIV
+  value: "2510.06265"
+
+fetch_status: FETCHED
+fetched_at: "2026-09-04"
+
+metadata_verified: true
+metadata_verified_by: "mechanical:webfetch_direct_read"
+metadata_verified_at: "2026-09-04"
+
+claim_match_verified: true
+claim_match_verified_by: "independent_ai_route:same_session_i1"
+claim_match_verified_at: "2026-09-04"
+
+exact_passage: >-
+  "Hallucinations undermine the reliability and trustworthiness of LLMs, especially in domains
+  requiring factual accuracy." Self-consistency detection methods "cannot catch hallucinations
+  that are confidently and consistently produced by the model but are factually incorrect in the
+  real world" -- no single detection approach provides reliable coverage across all hallucination
+  types.
+page_or_locator: "arXiv:2510.06265v2, Introduction and Detection sections"
+
+scope: SUPPORTS_GENERAL_CLAIM_ONLY
+
+evidence_tier: Dr
+independence_class: I1
+
+who_verified: "AI (same session, this run)"
+verification_method: MANUAL_READ
+
+status: METADATA_OK
+
+xenon_ledger_ref: null
+
+disclosure: >-
+  Same-session AI check only (I1) -- METADATA_OK, not VERIFIED. This arXiv preprint has no DOI;
+  identifier recorded as ARXIV per schema enum, existence/authorship not run through a mechanical
+  metadata API (arXiv listing itself read directly) -- metadata_verified is true on the basis of
+  reading the arXiv page/PDF directly (self-hosted identifier, no separate registry lookup
+  available), not a third-party mechanical database. CHALLENGES H1's implicit reliance on AI as a
+  checking party: if AI-generated content cannot reliably self-detect its own confidently-produced
+  errors, this directly motivates (and partially validates) why H1 requires the independence
+  ladder to include a genuinely independent human or cross-vendor check rather than resting on
+  AI self-disclosure alone -- i.e. it is evidence FOR the necessity of H1's independence-ladder
+  mechanism, while simultaneously being a live risk to any claim that AI-checked rigour is
+  sufficient on its own.
+
+superseded_by: null
+notes: >-
+  Mixed/international author pool typical of large arXiv survey papers (not individually verified
+  per-author affiliation), EN, preprint (not peer-reviewed). Found via query family: challenge
+  (large language model hallucination unreliable research assistant risk verification).
+  Dialogue-table stance: ORTHOGONAL (neither directly supports nor refutes H1's mechanism, but
+  bears directly on why the independence-ladder step in H1 cannot be skipped).

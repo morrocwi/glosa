@@ -1,0 +1,52 @@
+$schema: citation_card.schema.json
+id: cite-rigour-without-infrastructure-001
+claim_ref: hypothesis-H2
+
+identifier:
+  kind: OFFICIAL_URL
+  value: "https://en.wikipedia.org/wiki/Open-notebook_science"
+
+fetch_status: FETCHED
+fetched_at: "2026-09-04"
+
+metadata_verified: true
+metadata_verified_by: "mechanical:webfetch"
+metadata_verified_at: "2026-09-04"
+
+claim_match_verified: true
+claim_match_verified_by: "ai_route:same-session (I1)"
+claim_match_verified_at: "2026-09-04"
+
+exact_passage: >-
+  "Open-notebook science is the practice of making the entire primary record of a research
+  project publicly available online as it is recorded." (article also notes open-notebook
+  projects have been published in peer-reviewed venues, framed as compatible with, not a
+  replacement for, institutional peer review.)
+page_or_locator: "Wikipedia article, lead section, as fetched 2026-09-04"
+
+scope: CONTEXT_ONLY_NOT_EVIDENCE
+
+evidence_tier: definition
+
+independence_class: I1
+
+who_verified: "ai_route:same-session (I1)"
+verification_method: MANUAL_READ
+
+status: METADATA_OK
+
+xenon_ledger_ref: null
+
+disclosure: >-
+  Encyclopedia (grey/community tertiary source), not a primary empirical study. Defines the
+  practice this hypothesis discusses (record-level transparency) but the fetched text does not
+  itself take a position on whether that record substitutes for institutional credentialing --
+  it frames open-notebook publishing as compatible with peer review, not as a replacement for
+  it. Read as context, not as direct evidence for or against H2. independence_class I1 (same
+  session AI) -- status METADATA_OK only, not VERIFIED (would require an I3+ route).
+
+superseded_by: null
+notes: >-
+  Diversity: language=en, source_type=grey_literature (encyclopedia/community-maintained),
+  geography=global/no fixed institution, search_route="web search: open notebook science trust
+  without institutional affiliation rigour".

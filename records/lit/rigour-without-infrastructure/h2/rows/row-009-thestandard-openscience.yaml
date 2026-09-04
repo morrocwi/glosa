@@ -1,0 +1,24 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: H2
+source_label: "THE STANDARD, 'ไทย เดินหน้า Open Science...' (TH, grey/news, Thailand, 2025-11-17)"
+how_it_sees_the_problem: >-
+  Sees the problem as one of *access*: state-funded research sitting in closed institutional
+  libraries/databases, unreachable by the public/business/media -- the fix framed is opening the
+  existing institutional record, not replacing the institution's role in producing it.
+what_it_separates: >-
+  Separates "research existing" from "research being reachable/usable by non-institutional
+  readers" -- a distribution/access distinction, not a rigour-provenance distinction.
+what_it_assumes: >-
+  Assumes the state/สกสว. remains the institutional actor doing the opening -- i.e. the
+  institution is still the one deciding what counts as legitimate research to release, it is
+  just choosing to release it more widely.
+stance: ORTHOGONAL
+what_it_would_say_against_us: >-
+  Because the initiative is institution-led (a government research-council program unlocking its
+  own funded output), it could be read as evidence that institutions remain the actor who
+  confers reach/legitimacy even under an "open" banner -- access is being granted, not a
+  claim-level record substituting for the institution's role.
+citation_card: cite-rigour-without-infrastructure-009
+verified:
+  metadata_verified: true
+  claim_match_verified: true

@@ -1,0 +1,29 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: H2
+source_label: "Wikipedia, 'Open-notebook science' (EN, encyclopedia/grey)"
+how_it_sees_the_problem: >-
+  Frames the problem as one of research-record completeness: whether the entire primary record
+  (lab notebook, raw/processed data) is made public in real time, "without unreasonable delay or
+  filter" -- it treats openness as a property of the record-keeping practice, not of the
+  researcher's institutional standing.
+what_it_separates: >-
+  Separates "reporting the polished result" from "reporting the ongoing process, including error
+  corrections, failed experiments and ambiguous results" -- a distinction close to H2's own
+  "what was seen / what separates" but applied to lab-notebook granularity, not to a claim card's
+  five questions specifically.
+what_it_assumes: >-
+  Assumes an outside observer benefits from seeing the full process, and that open-notebook
+  projects remain compatible with (rather than a substitute for) conventional peer review --
+  not determinable from the fetched text whether the article's authors considered the
+  institution-optional case at all.
+stance: ORTHOGONAL
+what_it_would_say_against_us: >-
+  The fetched text explicitly frames open-notebook publishing as something that has been
+  "successfully published in peer-reviewed journals" -- i.e. compatible with institutional
+  review, not a replacement for it -- which could be read as tacitly assuming the institutional
+  channel is still the destination that confers legitimacy, contrary to H2's "not the only
+  possible one" claim.
+citation_card: cite-rigour-without-infrastructure-001
+verified:
+  metadata_verified: true
+  claim_match_verified: true

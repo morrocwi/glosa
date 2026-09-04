@@ -1,0 +1,27 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: H2
+source_label: "Freitag, Meyer & Whiteman 2016, 'Strategies Employed by Citizen Science Programs...' (EN, peer-reviewed)"
+how_it_sees_the_problem: >-
+  Sees credibility as something a program *builds*, empirically, through concrete choices at
+  three stages (training/planning, data collection, analysis/evaluation) -- a bottom-up,
+  practice-level account rather than a top-down institutional-certification account.
+what_it_separates: >-
+  Separates twelve distinct credibility-building strategies across three program phases, and
+  separately notes that program *structure and available resources* (not institutional
+  affiliation) drive which strategies get chosen.
+what_it_assumes: >-
+  Assumes "the same standards of credibility as academic science" are the target worth reaching,
+  even while working "within a different context" -- i.e. academic-science credibility remains
+  the reference point being approximated, not rejected.
+stance: YES
+what_it_would_say_against_us: >-
+  The paper frames this as a "framework for the necessary discussions between citizen science
+  programs and potential users of their data... about shared expectations for credibility" --
+  i.e. credibility is still something that must be negotiated with an external, more
+  institutionally-positioned audience (scientists, decision makers), not simply carried
+  self-sufficiently by the record; a strong reader could say the record-level strategies exist
+  precisely *because* institutional-style trust is the unmet bar being chased.
+citation_card: cite-rigour-without-infrastructure-003
+verified:
+  metadata_verified: true
+  claim_match_verified: true

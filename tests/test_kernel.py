@@ -491,7 +491,14 @@ class ComputeDisclaimersTest(unittest.TestCase):
     def test_d_derived_patterns_fires_on_private_repo_reference(self):
         card = load_example("claim_card.example.json")
         card["ledger"]["borrowed"] = ["pattern re-derived from cpg (private, patterns only)"]
-        ids = {d["id"] for d in k.compute_disclaimers(card)}
+        # private source names are NOT shipped in the public kernel (git-ignored registry file /
+        # env var) -- inject one for the test so it is environment-independent (CI has none).
+        saved = list(k._PRIVATE_REPO_NAMES)
+        k._PRIVATE_REPO_NAMES[:] = ["cpg"]
+        try:
+            ids = {d["id"] for d in k.compute_disclaimers(card)}
+        finally:
+            k._PRIVATE_REPO_NAMES[:] = saved
         self.assertIn("D-EXTERNAL-INPUT", ids)
         self.assertIn("D-DERIVED-PATTERNS", ids)
 

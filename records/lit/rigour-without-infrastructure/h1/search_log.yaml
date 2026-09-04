@@ -71,16 +71,88 @@ frozen_scope:
     sources can be fetched and read; a paywalled source found by search is logged as
     PAYWALLED_ABSTRACT_ONLY / NOT_OBTAINED rather than skipped silently.
 queries:
-  support: []
-  challenge: []
-sources_found: []
+  support:
+    - 'independent researcher without institutional affiliation credibility open science verification'
+    - 'AI-assisted research disclosure transparency verification framework provenance'
+    - 'preregistration open notebook science reproducibility independent verification checklist'
+    - 'citizen science Southeast Asia community data collection Thailand ASEAN'
+    - '"Disclosure is not documentation" Cwik generative AI open science framework abstract'
+    - '"An epistemology for democratic citizen science" Jaeger Masselot abstract diversity discovery'
+  challenge:
+    - 'citizen science epistemic authority peer review alternative rigour'
+    - 'credentialism necessary gatekeeping peer review quality control critique'
+    - 'large language model hallucination unreliable research assistant risk verification'
+    - 'Global South open science inequity institutional credential knowledge production'
+    - 'นักวิจัยอิสระ ไม่มีสังกัดสถาบัน ความน่าเชื่อถือ งานวิจัย'
+sources_found:
+  - cite-rsos-citizen-epistemology-001
+  - cite-cstp-boundary-work-001
+  - cite-rsos-preprint-credibility-001
+  - cite-disclosure-not-documentation-001
+  - cite-llm-hallucination-survey-001
+  - cite-pgph-citizen-science-sea-001
+  - cite-ocsdnet-honf-001
+  - cite-scholarly-kitchen-credentialism-001
+  - cite-tcij-freelance-th-001
 prisma_counts: null
 global_track:
-  summary: ''
-  strength_note: ''
+  summary: >-
+    A real, active scholarly conversation exists on both sides: philosophy-of-citizen-science work
+    (Jaeger et al. 2023) proposes an epistemology where diversity of standpoint substitutes for
+    institutional homogeneity; empirical work on preprint credibility (Soderberg et al. 2020) finds
+    readers rate open-science/verification cues as highly important precisely when institutional
+    signals (journal prestige) are absent -- both broadly SUPPORT H1's mechanism. Against this,
+    boundary-work sociology (Mayes 2022) finds citizen-science legitimacy in actual media discourse
+    is still granted mainly by credentialed experts (professional quotes outnumber citizen quotes
+    ~5:1), and a live editorial dispute (Scholarly Kitchen 2026) shows a preprint server rejecting
+    a submission specifically for lack of prior peer-reviewed authorship regardless of content
+    quality -- both CHALLENGE H1 by showing institutional/credential signals still do load-bearing
+    gatekeeping work in practice, not just in theory. The AI-specific literature (Cwik 2026 on
+    disclosure-vs-documentation; the LLM hallucination survey) is orthogonal-to-mixed: it supports
+    the *design* of Q3/Q4-style disclosure fields as necessary (checkbox disclosure alone is
+    insufficient) but also shows AI-generated content is not yet reliably self-verifying, which
+    directly motivates H1's own requirement that a claim pass an independent human/cross-vendor
+    check rather than resting on AI disclosure alone.
+  strength_note: >-
+    No source found is a direct empirical test of H1's actual mechanism (claim cards +
+    independence ladder + reader-recoverable rigour); the global literature establishes the
+    surrounding premises (credibility cues matter, institutional gatekeeping is real and
+    contested, AI disclosure needs documentation not just a checkbox) rather than testing the
+    combined system H1 describes. Evidence tier for the surrounding premises: Dr (well-specified
+    empirical/conceptual claims in peer-reviewed venues, not independently replicated by this
+    search).
 local_track:
-  summary: ''
-  result: NOT_SEARCHED
-transfer_verdict: null
-summary_disclaimer: 'TODO: state explicitly what WAS and was NOT found on both support and challenge sides
-  once a search is actually run (S14 §2.2).'
+  summary: >-
+    Thailand/SEA-specific material is thinner and skews toward citizen-science-as-data-collection
+    (biodiversity, pandemic response) rather than citizen-science-as-knowledge-legitimacy. The
+    OCSDNET/HONF Foundation project page is the one source that explicitly frames the
+    formal/informal-institution boundary as a live question in Indonesia, Thailand, and Nepal
+    together, using workshop-based methods that do not require university credentials -- directly
+    relevant to H1's setting. The PLOS Global Public Health study on South/SEA citizen-science
+    pandemic response documents citizen readiness to be heard by policy institutions, which is
+    adjacent to but not the same claim as H1 (H1 is about producing rigour-checkable claims, not
+    about being heard). The Thai-language TCIJ news piece on academic freelancers does not discuss
+    research-credibility mechanics directly; the one on-point quote found concerns authorship
+    attribution uncertainty for independent researchers, a narrower point than H1.
+  result: FOUND
+transfer_verdict: TRANSFERS_WITH_ADAPTATION
+  # The Global-North boundary-work and credibility-cue findings plausibly transfer to a Thai/SEA
+  # standalone-scholar setting (the underlying mechanism -- readers use verifiable signals when
+  # institutional prestige signals are absent -- is not shown to be culture-specific), but no
+  # source in this search directly tests it in a Thai/SEA institutional-trust context, so this is
+  # an adaptation claim, not a direct-transfer finding.
+summary_disclaimer: >-
+  This is a SCOPING_SEARCH (not a systematic review): 9 sources kept from ~10 queries across 2
+  query families (support/challenge) and one search episode (2026-09-04). WAS found: real
+  peer-reviewed and grey-literature material on (a) credibility cues substituting for
+  institutional prestige, (b) institutional/credentialed gatekeeping persisting in practice despite
+  democratizing rhetoric, (c) AI-disclosure-vs-documentation frameworks, (d) AI hallucination
+  limiting AI-only self-verification, (e) three Thai/SEA or Global-South sources including one
+  (OCSDNET/HONF) that names Thailand directly. NOT found: any source that tests H1's actual
+  combined mechanism (claim cards + Existence-Attribution-Disclosure + independence ladder) as a
+  system; any Thai-language source discussing research-credibility mechanics in depth (the one
+  Thai source found addresses authorship attribution, not rigour-checkability); any source, in
+  either family, that is itself produced under conditions resembling H1 (i.e. no example yet found
+  of a standalone-scholar-plus-AI knowledge product being evaluated by outside readers for
+  checkable rigour). Absence of a direct test is a search-coverage fact, not evidence H1 is
+  correct or incorrect (NC-27).

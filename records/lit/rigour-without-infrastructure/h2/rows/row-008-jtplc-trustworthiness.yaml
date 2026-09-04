@@ -1,0 +1,31 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: H2
+source_label: "Srirot & Sohsomboon 2025, 'การสร้างความน่าเชื่อถือ (Trustworthiness)...' (TH, peer-reviewed, Thailand)"
+how_it_sees_the_problem: >-
+  Sees the problem exactly as H2 frames it, from a different tradition: a qualitative study's
+  findings are doubted because of "researcher bias" (อคติของนักวิจัย), and the field's own answer
+  (Lincoln & Guba 1985's Trustworthiness framework) is a set of *record-level* techniques
+  (triangulation, member check, thick description, audit trail) that let a reader judge rigour
+  without appeal to the researcher's institutional standing.
+what_it_separates: >-
+  Separates four components -- Credibility, Transferability, Dependability, Confirmability --
+  each cashed out as a concrete recording/verification practice (e.g. Confirmability via a
+  documented "audit trail" showing "the researcher's thinking pathway", not via a committee's
+  say-so).
+what_it_assumes: >-
+  Assumes Lincoln & Guba's 1985 framework, developed for qualitative research broadly, transfers
+  cleanly to a science-classroom context and (implicitly) to any claim a researcher records this
+  way; does not itself address AI-assisted or non-institutionally-affiliated claim production
+  specifically, since it is about researcher bias generally, not about institution-optional
+  authorship.
+stance: YES
+what_it_would_say_against_us: >-
+  Even this paper still calls the researcher "the primary instrument" (เครื่องมือหลัก) whose
+  training and reflexivity underwrite the whole framework -- i.e. it substitutes trained
+  reflexive practice, not the absence of any trained practice at all, for institutional
+  certification; a critic could argue that training/practice is itself something institutions
+  historically provided, so this is not fully institution-independent either.
+citation_card: cite-rigour-without-infrastructure-008
+verified:
+  metadata_verified: true
+  claim_match_verified: true
