@@ -298,7 +298,7 @@ tests/test_kernel.py         # 84 tests as of v0.5 (stale figure not re-counted 
  tests/sim/combined.py      # combined ("if ship set X") harness, unchanged.
  tests/sim/prototypes/      # 8 S4 prototype scripts + *.result.json, unchanged.
  tests/sim/report.md        # this v0.3 K4-report, moved as historical record; future reports are tests/sim/report_vX.Y.md, append-only (never overwriting a prior pass's report).
- tests/sim/corpus_v2/       # the held-out, differently-worded fixture batch the v0.6 acceptance tests call for — not built.
+ tests/sim/corpus_v2/       # the held-out, differently-worded fixture batch the v0.6 acceptance tests call for — not built.  [planned]
  tests/test_sim_regression.py   # NEW — pytest wrapper running baseline.py + the ship-set from combined.py against tests/sim/corpus/, asserting recall/false_alarm do not regress below report.md's recorded numbers; makes the sim corpus part of the actual CI-run suite.
 tests/sim/                    # STILL AT THIS LOCATION as of this pass — the  tests/sim/ move above has not been executed; both paths named here rather than silently treating the move as done.
 cli/README.md                # Full command list — `./cli/glosa --help` is the live source.
