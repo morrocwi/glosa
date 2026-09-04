@@ -40,7 +40,25 @@
 \usepackage{xcolor}
 \usepackage{url}
 \usepackage[breaklinks=true]{hyperref}
+% xurl: url.sty's default break points (mainly after '/') leave long
+% hyphen-joined URL slugs (e.g. iseas.edu.sg's article-title-as-URL) as one
+% unbreakable run under hyperref's \url; xurl allows breaks at any
+% character so those DOI/URL bibliography entries no longer overflow the
+% column width (confirmed: without it, one entry alone was 330pt overfull).
+\usepackage{xurl}
 \usepackage{cleveref}
+\usepackage{etoolbox}
+\usepackage{seqsplit}
+% Long \texttt{...} citation-card filenames inside the reference list (e.g.
+% cite-own-knowledge-stabilized-translation-h3-007.yaml) have no natural
+% break point for plain \texttt -- a literal hyphen is not a break point in
+% TeX's own paragraph builder for tt text -- so one entry alone was 45pt
+% overfull. Scoped ONLY to thebibliography (natbib/plainnat's own generated
+% .bbl markup, left untouched) so nothing outside the reference list changes.
+\AtBeginEnvironment{thebibliography}{%
+  \let\RWIOrigTexttt\texttt
+  \renewcommand{\texttt}[1]{\seqsplit{#1}}%
+}
 \usepackage{titlesec}
 \usepackage{caption}
 \usepackage{float}
@@ -259,14 +277,12 @@ whole-artifact level (\texttt{AGENTS.md} gate rule 5).
 Founder's line, verbatim, first stated (\texttt{BBL-2026-09-04-086}) and then self-corrected
 (\texttt{BBL-2026-09-04-088}, the correction shown here is the one adopted):
 
-\begin{quote}\small
-\begin{leftbar}
-\includegraphics[width=\linewidth]{thai_imgs/ownership.png}\\
+\begin{leftbar}\small
+\includegraphics[width=\linewidth]{thai_imgs/ownership.png}\par
 \itshape\upshape --- ``if the problem is still ours, the question is still ours, and the \emph{selection} of
 the hypothesis is still ours, and it leads to solving our problem, then use AI, use a cat, use a
 bear, go ahead --- because that is the goal of knowledge: to solve a problem for someone.''
 \end{leftbar}
-\end{quote}
 
 Three acts on the spine are the human's: owning the \textbf{problem}, asking the
 \textbf{question}, and \textbf{selecting} the hypothesis. Every other node --- retrieval, drafting,
@@ -570,11 +586,9 @@ The single strongest gate finding this run: an I3 (decorrelated cross-vendor) ch
 citation pass caught \emph{composite quotes} --- citations assembled from memory rather than a
 locator taken from the opened source. The founder's ruling in direct response, verbatim
 (\texttt{BBL-2026-09-04-100}):
-\begin{quote}\small
-\begin{leftbar}
+\begin{leftbar}\small
 \includegraphics[width=\linewidth]{thai_imgs/bbl100.png}
 \end{leftbar}
-\end{quote}
 \noindent --- ``should we make it a hard rule: if a source is used it must carry a page and line locator plus
 a full link, never written from memory --- that reduces the problem at the source, before the
 check.'' Adopted immediately (\texttt{BBL-2026-09-04-101}, Thai verbatim in \texttt{entries.jsonl}; gloss: ``update it into the
@@ -815,8 +829,10 @@ is built on: the Readout Condition \citep{cite-own-readout-condition-h1-002}.
 \balance
 % References set \sloppy + \raggedright so long DOI/URL entries break at the
 % column edge instead of producing overfull \hbox warnings (natbib/plainnat
-% does not hyphenate URLs on its own); url package below loads with
+% does not hyphenate URLs on its own); url package above loads with
 % breaklinks so hyperref-wrapped URLs are also allowed to break mid-string.
+\sloppy
+\raggedright
 \bibliographystyle{plainnat}
 \bibliography{refs}
 
