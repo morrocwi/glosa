@@ -1,5 +1,80 @@
 [
  {
+  "id": 22307148,
+  "doi": "10.5281/zenodo.22307148",
+  "concept": "10.5281/zenodo.22307147",
+  "title": "From Problem to Hypothesis: Dynamic Semantic Mobility, Bounded Knowers, and the Readout-Discriminable Hypothesis Space",
+  "date": "2026-09-04",
+  "type": "Preprint",
+  "kw": [
+   "imagination",
+   "hypothesis generation",
+   "semantic mobility",
+   "semantic attraction",
+   "semantic momentum",
+   "knowledge structure",
+   "insight",
+   "einstellung",
+   "semantic control",
+   "scientific discovery",
+   "model discrimination",
+   "underdetermination",
+   "artificial intelligence",
+   "readout universe",
+   "readout genesis",
+   "glosa k0",
+   "bounded knower",
+   "standalone scholar"
+  ],
+  "desc": " Status. Bounded-knower final author draft under the Readout Universe / Readout Genesis architecture; GLOSA K0 — timestamped and citable, not independently reviewed, no priority claim. Claim tiers explicit: [definition], [Dr], [Open], [finite_diagnostic]. Produced with the glosa methodology (Rigour Without Infrastructure, DOI 10.5281/zenodo.22301060); the founder's raw lines behind it are in the Blackbox Log (concept DOI 10.5281/zenodo.22302518, e.g. entry BBL-2026-09-04-094 on imagination as reversible transport). Abstract. Scientific hypothesis generation is distributed across literatures on problem construction, abduction, analogy, model-based reasoning, semantic memory and control, insight, underdetermination, experimental discrimination, distributed cognition, and AI-assisted discovery. This paper proposes a readout-native architecture for the narrower domain of hypothesis-generating imagination. Its central thesis is that imagination can be modeled as bounded dynamic semantic mobility: not an infinite faculty and not a static set of reachable ideas, but a time-indexed process over semantic readouts whose transitions are provenance-audited, dynamically weighted, history-sensitive, and explicitly restructurable. Binary reachability is separated from graded accessibility; current constraints are typed by provenance so that forced distinctions cannot be silently erased while posited or borrowed constraints may be openly relaxed or retyped. Readout-semantic attraction and se",
+  "cluster": "ep",
+  "tags": [
+   "ai"
+  ]
+ },
+ {
+  "id": 22305396,
+  "doi": "10.5281/zenodo.22305396",
+  "concept": "10.5281/zenodo.22302518",
+  "title": "ปูมกล่องดำ — บันทึกเสียงดิบ ข้อค้นพบ และคำถามรายวันของ เยาฮารี แหละตี (Blackbox Log, Yaoharee Lahtee)",
+  "date": "2026-09-04",
+  "type": "Other",
+  "kw": [
+   "blackbox log",
+   "ปูมกล่องดำ",
+   "research diary",
+   "raw voice",
+   "readout universe",
+   "glosa",
+   "yaoharee lahtee"
+  ],
+  "desc": " ปูมกล่องดำ (Blackbox Log) — บันทึกเสียงดิบ ข้อค้นพบ และคำถามรายวันของผู้เขียน ตามที่พูดจริง (verbatim) ไม่ผ่านการปรุงและไม่ผ่านการตรวจอิสระ (tier: positional/Dr) บันทึกเพิ่มได้อย่างเดียว ไม่แก้ไม่ลบ; อัปเดตเป็นเวอร์ชันใหม่ของ record เดียวกัน เลนส์ที่ใช้มองปัญหา: Readout Universe — Yaoharee Lahtee. ระบบที่เก็บ: glosa (github.com/morrocwi/glosa). เวอร์ชันนี้: 93 บันทึก ถึง 2026-09-04. Blackbox Log — a daily, append-only, verbatim record of the author's raw voice (one pre-release correction is disclosed in BBL-2026-09-04-082), findings and questions (Thai is the source of truth). Not a paper; not reviewed; tier positional/Dr. Contains the author's own words only; the single AI-written line is a disclosed correction entry (by=ai, BBL-2026-09-04-082), never the author's voice. Each update is a new version of the same record. Lens: Readout Universe — Yaoharee Lahtee; kept by the glosa toolchain. ",
+  "cluster": "ep",
+  "tags": [
+   "ai"
+  ]
+ },
+ {
+  "id": 22301060,
+  "doi": "10.5281/zenodo.22301060",
+  "concept": "10.5281/zenodo.22301059",
+  "title": "glosa — Rigour Without Infrastructure: A Standalone Scholar Methodology for Human–AI Knowledge Co-Production",
+  "date": "2026-09-04",
+  "type": "Software",
+  "kw": [
+   "methodology",
+   "human-ai co-production",
+   "epistemic provenance",
+   "readout",
+   "standalone scholar"
+  ],
+  "desc": "v0.1.0 — K0 public working release — timestamped and citable, NOT peer reviewed, no independent check yet (K1 in glosa requires a cross-vendor I3 check that has not run), tier Dr. Methodology + skill + tools for co-producing rigorous knowledge with AI without institutional infrastructure. Every claim answers five questions bound to the Readout Condition. No priority claim.",
+  "cluster": "ep",
+  "tags": [
+   "ai"
+  ]
+ },
+ {
   "id": 22302410,
   "doi": "10.5281/zenodo.22302410",
   "concept": "10.5281/zenodo.22302409",

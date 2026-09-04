@@ -39,13 +39,14 @@
 \usepackage{graphicx}
 \usepackage{xcolor}
 \usepackage{url}
-\usepackage{hyperref}
+\usepackage[breaklinks=true]{hyperref}
 \usepackage{cleveref}
 \usepackage{titlesec}
 \usepackage{caption}
 \usepackage{float}
 \usepackage{balance}
 \usepackage{fancyhdr}
+\usepackage{framed}
 
 \definecolor{Ink}{RGB}{25,25,28}
 \definecolor{Slate}{RGB}{82,88,96}
@@ -63,8 +64,8 @@
 \setlength{\parskip}{0.2em}
 \setlist{nosep,leftmargin=*}
 \captionsetup{font=small,labelfont=bf}
-\titleformat{\section}{\large\bfseries\color{TitleBlue}}{\thesection}{0.6em}{}
-\titleformat{\subsection}{\normalsize\bfseries}{\thesubsection}{0.5em}{}
+\titleformat{\section}{\large\bfseries\scshape\color{TitleBlue}}{\thesection}{0.6em}{}
+\titleformat{\subsection}{\normalsize\bfseries\color{TitleBlue}}{\thesubsection}{0.5em}{}
 
 % ---- CPRMH-style running header/footer: small-caps grey preprint line ----
 \pagestyle{fancy}
@@ -94,14 +95,24 @@
 \newlist{disclaimers}{description}{1}
 \setlist[disclaimers]{style=nextline,leftmargin=1.4em,font=\bfseries}
 
+% ---- Thin blockquote-style left rule for the verbatim Thai passage images
+% (CPRMH-style quote rule; overrides framed.sty's default 3pt-wide bar) ----
+\renewenvironment{leftbar}{%
+  \def\FrameCommand{{\color{MetaRule}\vrule width 0.8pt}\hspace{8pt}}%
+  \MakeFramed{\advance\hsize-1em \FrameRestore}}%
+ {\endMakeFramed}
+
 \begin{document}
 \thispagestyle{plain}
 
 % ---------------------------------------------------------------------------
 % Full-width title / meta / "In brief" / abstract block (CPRMH page-1 theme)
+% \twocolumn[...] keeps this front matter full-width at the top of page 1 and
+% then resumes true two-column typesetting on the SAME page (a bare
+% \onecolumn ... \twocolumn pair instead forces a page break before the
+% column body, leaving page 1 half-empty -- avoid that).
 % ---------------------------------------------------------------------------
-\onecolumn
-
+\twocolumn[
 \begin{center}
 {\LARGE\bfseries\color{TitleBlue} Rigour Without Infrastructure}\\[0.35em]
 {\large\color{TitleBlue} Three Propositions on Claim-Card Discipline as a Substitute for Institutional Certification}\\[0.9em]
@@ -167,7 +178,8 @@ validator warning, a manifest-detected search-mode gap, and a documented citatio
 correction --- reported as findings, not smoothed into a clean success story. Every claim here sits
 at tier \DrTier{} and knowledge state K0; none has passed an independent (I5) human check.
 \end{quote}
-\twocolumn
+\vspace{0.7em}
+]
 
 \paragraph{Positioning.} We are not competing with knowledge-authority and make no priority claim;
 we state what we propose, what we build on, and what would make us wrong.
@@ -180,9 +192,11 @@ we state what we propose, what we build on, and what would make us wrong.
 (Blackbox Log \texttt{BBL-2026-09-04-083}, concept DOI \texttt{10.5281/zenodo.22302518}):
 
 \begin{quote}\small
+\begin{leftbar}
 \includegraphics[width=\linewidth]{thai_imgs/bbl083.png}\\
 \itshape\upshape --- ``the word `observation' is abstract, it is a verb; if we started from the \emph{problem}
 instead, is there a process like this? We propose focusing on the problem first.''
+\end{leftbar}
 \end{quote}
 
 A problematic state exists in the world \emph{before} any knower acts on it --- before it is
@@ -204,9 +218,11 @@ truth), Blackbox Note line 1
 (\texttt{blackbox/BLACKBOX\_NOTE\_glosa-paper\_2026-09-04.md\#L1}):
 
 \begin{quote}\small
+\begin{leftbar}
 ...\includegraphics[width=0.85\linewidth]{thai_imgs/l1.png}...\\
 \itshape\upshape --- ``...how can a person with no university, no lab, and no research team produce
 rigorous knowledge from their own site of practice...''
+\end{leftbar}
 \end{quote}
 
 The contaminated concept this question already flags: ``rigour'' ordinarily presupposes an
@@ -239,10 +255,12 @@ Founder's line, verbatim, first stated (\texttt{BBL-2026-09-04-086}) and then se
 (\texttt{BBL-2026-09-04-088}, the correction shown here is the one adopted):
 
 \begin{quote}\small
+\begin{leftbar}
 \includegraphics[width=\linewidth]{thai_imgs/ownership.png}\\
 \itshape\upshape --- ``if the problem is still ours, the question is still ours, and the \emph{selection} of
 the hypothesis is still ours, and it leads to solving our problem, then use AI, use a cat, use a
 bear, go ahead --- because that is the goal of knowledge: to solve a problem for someone.''
+\end{leftbar}
 \end{quote}
 
 Three acts on the spine are the human's: owning the \textbf{problem}, asking the
@@ -548,7 +566,9 @@ citation pass caught \emph{composite quotes} --- citations assembled from memory
 locator taken from the opened source. The founder's ruling in direct response, verbatim
 (\texttt{BBL-2026-09-04-100}):
 \begin{quote}\small
+\begin{leftbar}
 \includegraphics[width=\linewidth]{thai_imgs/bbl100.png}
+\end{leftbar}
 \end{quote}
 \noindent --- ``should we make it a hard rule: if a source is used it must carry a page and line locator plus
 a full link, never written from memory --- that reduces the problem at the source, before the
@@ -788,6 +808,10 @@ literature conversation and a self-application demonstration specific to this pr
 is built on: the Readout Condition \citep{cite-own-readout-condition-h1-002}.
 
 \balance
+% References set \sloppy + \raggedright so long DOI/URL entries break at the
+% column edge instead of producing overfull \hbox warnings (natbib/plainnat
+% does not hyphenate URLs on its own); url package below loads with
+% breaklinks so hyperref-wrapped URLs are also allowed to break mid-string.
 \bibliographystyle{plainnat}
 \bibliography{refs}
 

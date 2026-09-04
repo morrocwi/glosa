@@ -2,7 +2,7 @@
 
 > **นี่คือปูมเสียงดิบ ไม่ใช่บทความ** — ทุกบรรทัดคือคำพูดตามที่พูด (verbatim) ณ วันเวลานั้น ยังไม่ผ่านการปรุง ไม่ผ่านการตรวจอิสระ (tier: positional / Dr) บันทึกเพิ่มได้อย่างเดียว ไม่แก้ไม่ลบ (แก้ = บรรทัดใหม่ที่อ้างบรรทัดเดิม) เลนส์ที่ใช้มองปัญหา: **Readout Universe — Yaoharee Lahtee** (10.5281/zenodo.21529456, 10.5281/zenodo.22301318, 10.5281/zenodo.22301202; github.com/morrocwi/readout_universe) ระบบที่เก็บ: glosa (github.com/morrocwi/glosa) **ปูมนี้มีเฉพาะเสียงของผู้เขียนเท่านั้น** — ไม่มีบรรทัดที่ AI เขียน (คำตัดสินผู้เขียน 2026-09-04: บันทึกระบบที่ AI เคยใส่ไว้ 1 รายการถูกถอดออกและเก็บไว้ที่ blackbox/log/removed_ai_entries.json) ป้าย "เนื้อหาที่สร้างโดย AI" ที่ Facebook ติดให้บางโพสต์เกิดจากรูปประกอบที่ทำด้วย AI ไม่ใช่ตัวข้อความ จึงไม่ถูกนำมาบันทึก
 
-จำนวนบันทึก: 100 · อัปเดตล่าสุด: 2026-09-04T21:07:04+07:00
+จำนวนบันทึก: 102 · อัปเดตล่าสุด: 2026-09-04T22:09:32+07:00
 
 ## สารบัญตามหมวดความคิด (ไม่เรียงตามวันที่)
 
@@ -56,7 +56,7 @@
 - **BBL-2026-09-04-067** (2026-09-04, finding, cheapest-contextual-knowledge, cost-of-knowledge, dependence-on-authority) — ว่ากันตามจริงแล้ว ตอนนี้เรากำลังยุคที่ความรู้ที่สอดคล้องตามบริบท…
 - **BBL-2026-09-04-070** (2026-09-04, finding, global-labour, token-priced-labour, ai-brokers, white-collar-replacement, epistemic-reordering, chaotic-renaissance) — ในภาพรวมของแรงงานโลก หากแบ่งอย่างหยาบที่สุด อาจแบ่งได้เป็นสองประเภทใหญ่ ๆ คือ แรงงานที่ทัก…
 
-### วิธีวิทยา / ระบบ glosa (28)
+### วิธีวิทยา / ระบบ glosa (30)
 
 - **BBL-2026-09-04-001** (2026-09-04, ruling, spine, lens) — ที่สำคัญอย่าลืม ให้เริ่มจากมองปัญหาด้วยเลนส์ readout ก่อน แล้วแปลกลับเป็นภาษษโลกเพื่อสกัดส…
 - **BBL-2026-09-04-002** (2026-09-04, ruling, system) — ทำให้ทั้งหมดรวมเป็นระบบเดียวที่นิ่ง…
@@ -86,6 +86,8 @@
 - **BBL-2026-09-04-099** (2026-09-04, ruling, paper, language-en, arxiv-twocol, layout, GLS-2026-001) — โอเคแต่บทความเราเอาภาษาอังงกฤษนะไม่เอาไทย และ ธีมแบบ  ArXiv สองคอมลัม แบบ ใน zenodo เอาสวย…
 - **BBL-2026-09-04-100** (2026-09-04, ruling, citation, locator, link, no-memory-citation, source-first) — กำหนดไปเลยไหม ถ้าไปเอาไซตมาต้องมีหน้าและบรรทัดร และลิงค์มาครบห้ามเขียนจากคามจำแบบนั้นไปเลย…
 - **BBL-2026-09-04-101** (2026-09-04, instruction, adopt, citation-rule) — อัพเดทเข้าระบบไปเลย…
+- **BBL-2026-09-04-102** (2026-09-04, instruction, zenodo, publish, from-problem-to-hypothesis, imagination, bounded-knower) — เอาเข้าา zenodo ให้หน่อย'/home/yaoharee-lt/Downloads/From_Problem_to_Hypothesis_BOUNDED_KN…
+- **BBL-2026-09-04-103** (2026-09-04, ruling, paper, english-only, no-thai-in-paper, GLS-2026-001) — ไม่ต้องใช้ภาษาไทยเอาอังกฤษล้วน…
 
 ### กล่องดำ / เสียงดิบ (7)
 
@@ -1933,4 +1935,12 @@
 **BBL-2026-09-04-101** · 21:07 · ผู้ก่อตั้ง · instruction · หมวด: วิธีวิทยา / ระบบ glosa · adopt, citation-rule · ที่มา: chat 2026-09-04 ~23:21
 
 > อัพเดทเข้าระบบไปเลย
+
+**BBL-2026-09-04-102** · 22:09 · ผู้ก่อตั้ง · instruction · หมวด: วิธีวิทยา / ระบบ glosa · zenodo, publish, from-problem-to-hypothesis, imagination, bounded-knower · ที่มา: chat 2026-09-05 ~00:10 — publish the From Problem to Hypothesis paper (bounded-knower final, GLOSA K0) to Zenodo
+
+> เอาเข้าา zenodo ให้หน่อย'/home/yaoharee-lt/Downloads/From_Problem_to_Hypothesis_BOUNDED_KNOWER_FINAL_ArXiv_TwoColumn_K0.pdf'
+
+**BBL-2026-09-04-103** · 22:09 · ผู้ก่อตั้ง · ruling · หมวด: วิธีวิทยา / ระบบ glosa · paper, english-only, no-thai-in-paper, GLS-2026-001 · ที่มา: chat 2026-09-05 ~00:15 — the concept paper carries no Thai text at all; founder lines appear as English gloss with pointers to the verbatim Thai in the Blackbox Log / Blackbox Note (the Thai-font engine problem becomes moot)
+
+> ไม่ต้องใช้ภาษาไทยเอาอังกฤษล้วน
 
