@@ -1,0 +1,65 @@
+{
+ "file": "dist/glosa-concept-paper-0.2.0-draft.pdf",
+ "title": "Rigour Without Infrastructure: Three Propositions on Claim-Card Discipline as a Substitute for Institutional Certification (glosa concept paper, v0.2.0)",
+ "upload_type": "publication",
+ "publication_type": "preprint",
+ "publication_date": "2026-09-05",
+ "description_html": "<p><b>Status.</b> GLOSA K0 concept paper — timestamped and citable, not peer reviewed; the three claim cards behind it were reviewed by three cross-vendor AI routes (I3) and revised; independent_check PENDING (no external human check). Produced by running the glosa methodology on itself (repository DOI 10.5281/zenodo.22301060, GitHub morrocwi/glosa: project projects/GLS-2026-001_rigour-without-infrastructure, 48 citation cards VERIFIED under rule 17). The author's raw lines are in the Blackbox Log (concept DOI 10.5281/zenodo.22302518). No priority claim.</p><p><b>Abstract.</b> People who live daily with a problem often know it before researchers do, but turning that knowledge into a checkable claim has historically required a university, a lab, or a research team. Generative AI removes that requirement technically while introducing a new one epistemically: it becomes cheap to produce text that reads as rigorous without it being clear which part is observation, which part is inference, and which part the AI supplied. This paper states, as three falsifiable propositions and not as demonstrated results, a candidate answer: a claim card that separately records what was seen, what the data separates, what AI filled in, what is assumed, and what independent check (if any) the claim has survived — bound to a formal Existence– Attribution–Disclosure norm and passed through a named independence ladder (I0 self-check through I5 outside human review) before public release — could carry the checkable property institutions have historically supplied, without requiring the institution itself (H1, design; H2, conceptual). A third, narrower proposition (H3, empirical) holds, untested, that cross-vendor AI checking would measurably outperform same-vendor re-checking at catching undisclosed AI-fill; no measurement of that difference has been made (n=0). Each proposition is placed against a literature conversation built from 48 independently verified citation cards, and the whole method is applied reflexively to this paper’s own construction, which surfaced real failures — a validator warning, a manifest-detected search-mode gap, and a documented citation-verification correction — reported as findings, not smoothed into a clean success story. The three claim cards carrying these propositions were themselves reviewed by three cross-vendor AI routes and revised in response before this draft (Section 7). Every claim here sits at tier D R and knowledge state K0; none has passed an independent (I5) human check.</p>",
+ "keywords": [
+  "glosa",
+  "standalone scholar",
+  "human-AI knowledge co-production",
+  "claim card",
+  "readout",
+  "Existence-Attribution-Disclosure",
+  "independence ladder",
+  "literature review system",
+  "concept paper",
+  "GLOSA K0"
+ ],
+ "language": "eng",
+ "version": "0.2.0",
+ "related": [
+  {
+   "identifier": "10.5281/zenodo.22301060",
+   "relation": "isSupplementTo",
+   "resource_type": "software"
+  },
+  {
+   "identifier": "10.5281/zenodo.21529456",
+   "relation": "references"
+  },
+  {
+   "identifier": "10.5281/zenodo.21665100",
+   "relation": "references"
+  },
+  {
+   "identifier": "10.5281/zenodo.22301318",
+   "relation": "references"
+  },
+  {
+   "identifier": "10.5281/zenodo.22301202",
+   "relation": "references"
+  },
+  {
+   "identifier": "10.5281/zenodo.22163849",
+   "relation": "references"
+  },
+  {
+   "identifier": "10.5281/zenodo.22302518",
+   "relation": "references"
+  },
+  {
+   "identifier": "10.5281/zenodo.22307148",
+   "relation": "references"
+  },
+  {
+   "identifier": "10.5281/zenodo.22301459",
+   "relation": "isPartOf"
+  },
+  {
+   "identifier": "10.5281/zenodo.22301552",
+   "relation": "isPartOf"
+  }
+ ]
+}

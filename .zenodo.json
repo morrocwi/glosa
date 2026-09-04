@@ -8,7 +8,7 @@
       "orcid": "0009-0005-3861-0626"
     }
   ],
-  "description": "v0.1.0 — K0 public working release — timestamped and citable, NOT peer reviewed, no independent check yet (K1 in glosa requires a cross-vendor I3 check that has not run), tier Dr. Methodology + skill + tools for co-producing rigorous knowledge with AI without institutional infrastructure. Every claim answers five questions bound to the Readout Condition. No priority claim.",
+  "description": "v0.1.0 — K0 public working release (v0.2.0: glosa applied to itself — concept paper DOI 10.5281/zenodo.22307841, 48 VERIFIED citation cards, cross-vendor reviewed claim cards; rules 15-17 and gate rule 9 added) — timestamped and citable, NOT peer reviewed, no independent check yet (K1 in glosa requires a cross-vendor I3 check that has not run), tier Dr. Methodology + skill + tools for co-producing rigorous knowledge with AI without institutional infrastructure. Every claim answers five questions bound to the Readout Condition. No priority claim.",
   "keywords": [
     "methodology",
     "human-AI co-production",
@@ -51,6 +51,11 @@
       "identifier": "https://github.com/morrocwi/readout_universe",
       "relation": "references",
       "resource_type": "software"
+    },
+    {
+      "identifier": "10.5281/zenodo.22307841",
+      "relation": "isSupplementedBy",
+      "resource_type": "publication-preprint"
     }
   ],
   "version": "0.2.0"

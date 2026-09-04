@@ -6,4 +6,4 @@
 
 | id | title | stage | K | DOI | updated |
 |---|---|---|---|---|---|
-| GLS-2026-001 | glosa — Rigour Without Infrastructure: A Standalone Scholar Methodology for Human–AI Knowledge Co-Production | genre_routed | K0 | 10.5281/zenodo.22301060 | 2026-09-04 |
+| GLS-2026-001 | glosa — Rigour Without Infrastructure: A Standalone Scholar Methodology for Human–AI Knowledge Co-Production | released | K0 | 10.5281/zenodo.22307843 | 2026-09-04 |

@@ -14,5 +14,16 @@
  "status": "published",
  "version": "0.1.0",
  "doi": "10.5281/zenodo.22301060",
- "published_at": "2026-09-04"
+ "published_at": "2026-09-04",
+ "v0_2_0_draft": {
+  "deposition_id": 22307843,
+  "doi": "10.5281/zenodo.22307843",
+  "bucket": "https://zenodo.org/api/files/<bucket-redacted>"
+ },
+ "latest": {
+  "deposition_id": 22307843,
+  "doi": "10.5281/zenodo.22307843",
+  "version": "0.2.0",
+  "head_commit": "glosa-0.2.0-e6f9642.tar.gz"
+ }
 }

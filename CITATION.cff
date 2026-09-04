@@ -1,4 +1,4 @@
-# NOTE: DOI 10.5281/zenodo.22301060 is reserved and resolves only once the Zenodo record is
+# NOTE: DOI 10.5281/zenodo.22307843 is reserved and resolves only once the Zenodo record is
 # published, which happens at the same time as the public push of v0.1.0. K-state: K0
 # (public working release, not peer reviewed, no independent check yet). Tier: Dr.
 cff-version: 1.2.0
@@ -9,7 +9,7 @@ date-released: 2026-09-04
 license: CC-BY-4.0
 identifiers:
   - type: doi
-    value: 10.5281/zenodo.22301060
+    value: 10.5281/zenodo.22307843
     description: "Zenodo record (reserved 2026-09-04; version DOI; concept 10.5281/zenodo.22301059)"
 repository-code: "https://github.com/morrocwi/glosa"
 authors:

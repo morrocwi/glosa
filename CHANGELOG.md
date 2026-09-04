@@ -1,5 +1,6 @@
 # CHANGELOG
-## 0.2.0 — 2026-09-05 (in preparation)
+## 0.2.0 — 2026-09-05
+- Published: repository DOI 10.5281/zenodo.22307843 (archive tree = commit e6f9642; the tagged commit adds only the DOI pointers in CITATION.cff/README/CHANGELOG and the registry `released` row) (concept 10.5281/zenodo.22301059); concept paper DOI 10.5281/zenodo.22307841; GitHub tag v0.2.0.
 - glosa applied to itself: concept paper (English, arXiv two-column) produced through the full spine — problem card, Blackbox Note, lens translation, three hypotheses selected by the founder, literature review system with 48 citation cards VERIFIED by a cross-vendor route under rule 17 (link + page + line + verbatim), own-lineage collision rows, claim cards reviewed by nine cross-vendor routes and revised (dissent preserved), publish gate v2.
 - New rules from the run: rule 15/16 (responsibility per arrow, ownership of problem/question/hypothesis-selection, empirical extension), rule 17 (source-first citation), gate rule 9 (no AI attribution without permission); lit manifest fails closed on non-conformant cards; CLI writes repo-relative refs; pre-commit leak hook; install.sh / doctor / CI install test.
 - Vendor names removed from all attribution surfaces; public git history rewritten to strip AI co-author trailers (founder ruling 2026-09-05).

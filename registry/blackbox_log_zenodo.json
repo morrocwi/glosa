@@ -1,7 +1,7 @@
 {
- "deposition_id": 22307721,
+ "deposition_id": 22307891,
  "conceptdoi": "10.5281/zenodo.22302518",
- "latest_doi": "10.5281/zenodo.22307721",
+ "latest_doi": "10.5281/zenodo.22307891",
  "versions": [
   {
    "deposition_id": 22302519,
@@ -146,6 +146,15 @@
    "doi": "10.5281/zenodo.22307721",
    "conceptdoi": "10.5281/zenodo.22302518",
    "url": "https://zenodo.org/record/22307721"
+  },
+  {
+   "deposition_id": 22307891,
+   "status": "published",
+   "entries": 107,
+   "date": "2026-09-04",
+   "doi": "10.5281/zenodo.22307891",
+   "conceptdoi": "10.5281/zenodo.22302518",
+   "url": "https://zenodo.org/record/22307891"
   }
  ]
 }

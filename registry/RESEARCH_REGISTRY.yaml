@@ -8,14 +8,14 @@ entries:
   problem_ref: null
   blackbox_ref: null
   hypothesis_refs: []
-  spine_stage: paper_draft
+  spine_stage: released
   k_state: K0
   genre: design_science
   venue_track: null
   claim_card_count: 0
   litreview_manifest_ref: records/lit/rigour-without-infrastructure/h1/litreview_manifest.yaml
   doi_concept: 10.5281/zenodo.22301059
-  doi_version: 10.5281/zenodo.22301060
+  doi_version: 10.5281/zenodo.22307843
   deposition_id: 22301060
   repo_path: ~/ANSE.ASIA/glosa
   owner_role: human
@@ -55,3 +55,9 @@ entries:
   - date: '2026-09-04'
     stage: paper_draft
     by: joint
+  - date: '2026-09-04'
+    stage: review
+    by: joint
+  - date: '2026-09-04'
+    stage: released
+    by: human
