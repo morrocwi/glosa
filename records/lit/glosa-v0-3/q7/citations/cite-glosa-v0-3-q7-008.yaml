@@ -7,58 +7,69 @@ identifier:
 fetch_status: FETCHED
 fetched_at: '2026-09-05'
 metadata_verified: true
-metadata_verified_by: mechanical:curl+html-strip (mgronline.com page fetched directly, title/byline confirmed
-  on the fetched page)
+metadata_verified_by: mechanical:curl+html-strip (mgronline.com page fetched directly,
+  title/byline confirmed on the fetched page)
 metadata_verified_at: '2026-09-05'
 claim_match_verified: true
-claim_match_verified_by: self:same-session-read (I1, NOT independent -- awaiting a decorrelated I3 cross-vendor
-  route to upgrade status to VERIFIED per Rule 17/S14; task instruction caps status at METADATA_OK for
-  this pass)
+claim_match_verified_by: route:codex
 claim_match_verified_at: '2026-09-05'
-exact_passage: ผลงานนี้ทำให้ David Hilbert กล่าวสรรเสริญ Cantor ว่า เขาคือผู้สร้างสวนสวรรค์ Eden ให้นักคณิตศาสตร์รุ่นหลังได้อยู่ทำงานในสวนอย่างมีความสุข
-  จนแม้แต่พระเจ้าก็ไม่ทรงสามารถอัปเปหิใครออกจากสวนได้
-page_or_locator: mgronline.com (Manager Online, Thai mainstream news outlet), Science section, article
-  on George Cantor, as fetched 2026-09-05
-line_or_paragraph: line 7 of the fetched/stripped page text (single continuous paragraph)
+exact_passage: ผลงานนี้ทำให้ David Hilbert กล่าวสรรเสริญ Cantor ว่า เขาคือผู้สร้างสวนสวรรค์
+  Eden ให้นักคณิตศาสตร์รุ่นหลังได้อยู่ทำงานในสวนอย่างมีความสุข จนแม้แต่พระเจ้าก็ไม่ทรงสามารถอัปเปหิใครออกจากสวนได้
+page_or_locator: mgronline.com (Manager Online, Thai mainstream news outlet), Science
+  section, article on George Cantor, as fetched 2026-09-05
+line_or_paragraph: char offset 1324 of normalized fetched text (~paragraph 1); verbatim
+  prefix match
 scope: DIRECT_QUOTATION
 evidence_tier: Dr
-independence_class: I1
-who_verified: same-session AI (I1, non-independent) -- metadata confirmed mechanically, passage read and
-  matched to Q7 by the same session that ran the search; no cross-vendor I3 route run in this pass
+independence_class: I3
+who_verified: route:codex (cross-vendor AI; abstract/metadata level, not full text)
+  -- see cite-glosa-v0-3-q7-008.i3.json
 verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
-status: METADATA_OK
+status: VERIFIED
 xenon_ledger_ref: null
-disclosure: 'mgronline.com (Manager Online, Thai mainstream news outlet, popular-science section, grey/journalistic).
-  Fetched and read directly (curl + stdlib HTML stripper, one page kept in memory at a time per RAM limit)
-  2026-09-05. English translation of the exact_passage (translation provided for reviewer convenience,
-  NOT itself the citation source): "This work led David Hilbert to praise Cantor, saying he had created
-  a Garden of Eden for later mathematicians to live and work happily in -- so that even God could not expel
-  anyone from the garden." Read as: a Thai-language popular-science retelling of Hilbert''s "Cantor''s paradise"
-  epigram that keeps and foregrounds the theological framing (explicitly naming พระเจ้า/God) rather than
-  softening it into a purely secular metaphor, evidencing that the transcendental-ground framing of mathematical
-  infinity has diffused into Thai general-audience science writing. stance vs Q7 as read: ORTHOGONAL --
-  this is evidence of the RHETORICAL diffusion of theological infinity-talk into popular science, not itself
-  an argued epistemic position for or against infinity-as-transcendental-ground; it neither defends nor
-  reconciles the stance, it merely repeats an inherited quotation. independence_class I1 (same session)
-  -- status METADATA_OK only, not VERIFIED: no decorrelated I3 cross-vendor route has checked this card
-  yet. No novel/first/prior-art claim made about this source; comparison to Q7 is same/different/orthogonal
-  as stated in dialogue_table_stance.'
+disclosure: 'mgronline.com (Manager Online, Thai mainstream news outlet, popular-science
+  section, grey/journalistic). Fetched and read directly (curl + stdlib HTML stripper,
+  one page kept in memory at a time per RAM limit) 2026-09-05. English translation
+  of the exact_passage (translation provided for reviewer convenience, NOT itself
+  the citation source): "This work led David Hilbert to praise Cantor, saying he had
+  created a Garden of Eden for later mathematicians to live and work happily in --
+  so that even God could not expel anyone from the garden." Read as: a Thai-language
+  popular-science retelling of Hilbert''s "Cantor''s paradise" epigram that keeps
+  and foregrounds the theological framing (explicitly naming พระเจ้า/God) rather than
+  softening it into a purely secular metaphor, evidencing that the transcendental-ground
+  framing of mathematical infinity has diffused into Thai general-audience science
+  writing. stance vs Q7 as read: ORTHOGONAL -- this is evidence of the RHETORICAL
+  diffusion of theological infinity-talk into popular science, not itself an argued
+  epistemic position for or against infinity-as-transcendental-ground; it neither
+  defends nor reconciles the stance, it merely repeats an inherited quotation. independence_class
+  I1 (same session) -- status METADATA_OK only, not VERIFIED: no decorrelated I3 cross-vendor
+  route has checked this card yet. No novel/first/prior-art claim made about this
+  source; comparison to Q7 is same/different/orthogonal as stated in dialogue_table_stance.
+  | I3 route (codex) judged from fetched metadata/abstract + the card''s quoted passage,
+  not full text: Fetched title and excerpt align with the card; no title, year, or
+  first-author contradiction is shown. The exact Thai passage is mechanically found
+  in the fetched text. As framed, it provides contextual evidence that this outlet
+  repeats the Hilbert-Cantor Eden/God epigram, not direct support for Q7.'
 superseded_by: null
-notes: 'Diversity: language=th, source_type=grey_literature, geography_or_institution=Thailand (Manager
-  Online / mgronline.com, Bangkok-based outlet), search_route_or_database="web search (Thai query อนันต์ทางคณิตศาสตร์
-  พระเจ้า เทววิทยา ปรัชญา คันทอร์), glosa-v0-3 Q7 scoping pass". dialogue_table_stance: orthogonal. what_it_separates:
-  Separates Hilbert''s ORIGINAL epigram (a secular tribute to Cantor''s mathematical achievement, not a
-  theological claim) from its Thai popular retelling, which foregrounds "พระเจ้า" (God) in a way that reads,
-  to a Thai audience, as more overtly theological framing than the source English idiom usually carries.
-  what_it_assumes: Assumes the reader already knows who Hilbert and Cantor are and treats the "Eden"/"God"
-  language as a colorful rhetorical flourish rather than pausing to argue for or against a transcendence
-  reading of infinity -- i.e. it assumes rather than argues the theological metaphor is apt. what_it_would_say_against_us:
-  Popular-science diffusion of theologically-loaded infinity language (even outside a Christian-majority
-  context, in Thai Buddhist-majority general media) shows the transcendental-ground framing has cultural
-  reach beyond specialist philosophy/theology circles -- but because this source only REPEATS an inherited
-  quotation rather than arguing for the stance, it is weak evidence for "genuine rival epistemic stance"
-  and better read as evidence the metaphor is culturally familiar enough to need addressing (even if only
-  by a flagged note) rather than evidence it demands formal epistemic reconciliation.'
+notes: 'Diversity: language=th, source_type=grey_literature, geography_or_institution=Thailand
+  (Manager Online / mgronline.com, Bangkok-based outlet), search_route_or_database="web
+  search (Thai query อนันต์ทางคณิตศาสตร์ พระเจ้า เทววิทยา ปรัชญา คันทอร์), glosa-v0-3
+  Q7 scoping pass". dialogue_table_stance: orthogonal. what_it_separates: Separates
+  Hilbert''s ORIGINAL epigram (a secular tribute to Cantor''s mathematical achievement,
+  not a theological claim) from its Thai popular retelling, which foregrounds "พระเจ้า"
+  (God) in a way that reads, to a Thai audience, as more overtly theological framing
+  than the source English idiom usually carries. what_it_assumes: Assumes the reader
+  already knows who Hilbert and Cantor are and treats the "Eden"/"God" language as
+  a colorful rhetorical flourish rather than pausing to argue for or against a transcendence
+  reading of infinity -- i.e. it assumes rather than argues the theological metaphor
+  is apt. what_it_would_say_against_us: Popular-science diffusion of theologically-loaded
+  infinity language (even outside a Christian-majority context, in Thai Buddhist-majority
+  general media) shows the transcendental-ground framing has cultural reach beyond
+  specialist philosophy/theology circles -- but because this source only REPEATS an
+  inherited quotation rather than arguing for the stance, it is weak evidence for
+  "genuine rival epistemic stance" and better read as evidence the metaphor is culturally
+  familiar enough to need addressing (even if only by a flagged note) rather than
+  evidence it demands formal epistemic reconciliation.'
 citation_card_id: cite-glosa-v0-3-q7-008
 identifier_kind: OFFICIAL_URL
 claim_match_verification_route: NOT_YET

@@ -1,0 +1,17 @@
+{
+ "vendor": "codex",
+ "fetched": {
+  "source": "url-fetch",
+  "title": "Process Philosophy | Internet Encyclopedia of Philosophy",
+  "abstract": ""
+ },
+ "verdict": {
+  "metadata_matches": true,
+  "passage_plausible": true,
+  "claim_match": false,
+  "bearing": "CONTEXT_ONLY",
+  "reason": "Fetched title matches the card and the quoted passage is mechanically present in the excerpt. But the hypothesis content is only given as 'Q8', so I cannot verify that the passage challenges or otherwise bears on the hypothesis as claimed.",
+  "passage_mechanical": "verbatim prefix found in fetched open text"
+ },
+ "date": "2026-09-04"
+}

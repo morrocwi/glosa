@@ -7,59 +7,71 @@ identifier:
 fetch_status: FETCHED
 fetched_at: '2026-09-05'
 metadata_verified: true
-metadata_verified_by: mechanical:curl+html-strip (TCTR official Help Center page fetched and rendered
-  directly, tawk.help-hosted support knowledge base operated by the Thai Clinical Trials Registry)
+metadata_verified_by: mechanical:curl+html-strip (TCTR official Help Center page fetched
+  and rendered directly, tawk.help-hosted support knowledge base operated by the Thai
+  Clinical Trials Registry)
 metadata_verified_at: '2026-09-05'
 claim_match_verified: true
-claim_match_verified_by: self:same-session-read (I1, NOT independent -- awaiting a decorrelated I3
-  cross-vendor route to upgrade status to VERIFIED per Rule 17/S14; task instruction caps status at
-  METADATA_OK for this pass)
+claim_match_verified_by: route:codex
 claim_match_verified_at: '2026-09-05'
-exact_passage: 'Current Status: แสดงสถานะของการลงทะเบียนงานวิจัย โดยจะมีการแสดงสถานะดังนี้ In Progress:
-  อยู่ระหว่างการกรอกและแก้ไขข้อมูลลงทะเบียน Submitted for Approval: ได้ส่ง Submit เพื่อให้คณะกรรมการ
-  พิจารณาแล้วรออนุมัติเลขทะเบียน Released: ได้รับการอนุมัติเลขทะเบียนแล้ว'
-page_or_locator: 'tctr.tawk.help, "03: การลงทะเบียนงานวิจัยใหม่" (New Study Registration), TCTR Help
-  Center (Trials Registry knowledge base), as rendered on the page fetched 2026-09-05'
-line_or_paragraph: lines 26-29 of the fetched/stripped page text
+exact_passage: 'Current Status: แสดงสถานะของการลงทะเบียนงานวิจัย โดยจะมีการแสดงสถานะดังนี้
+  In Progress: อยู่ระหว่างการกรอกและแก้ไขข้อมูลลงทะเบียน Submitted for Approval: ได้ส่ง
+  Submit เพื่อให้คณะกรรมการ พิจารณาแล้วรออนุมัติเลขทะเบียน Released: ได้รับการอนุมัติเลขทะเบียนแล้ว'
+page_or_locator: 'tctr.tawk.help, "03: การลงทะเบียนงานวิจัยใหม่" (New Study Registration),
+  TCTR Help Center (Trials Registry knowledge base), as rendered on the page fetched
+  2026-09-05'
+line_or_paragraph: char offset 1700 of normalized fetched text (~paragraph 1); verbatim
+  prefix match
 scope: DIRECT_QUOTATION
 evidence_tier: Dr
-independence_class: I1
-who_verified: same-session AI (I1, non-independent) -- metadata confirmed mechanically, passage read
-  and matched to Q5 by the same session that ran the search; no cross-vendor I3 route run in this pass
+independence_class: I3
+who_verified: route:codex (cross-vendor AI; abstract/metadata level, not full text)
+  -- see cite-glosa-v0-3-q5-006.i3.json
 verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
-status: METADATA_OK
+status: VERIFIED
 xenon_ledger_ref: null
-disclosure: 'TCTR (Thai Clinical Trials Registry) official Help Center, "New Study Registration"
-  how-to article (TH, grey/community operational documentation, not a peer-reviewed source). Fetched
-  and read directly (curl + stdlib HTML stripper, one page kept in memory at a time per RAM limit)
-  2026-09-05. Read as: TCTR''s own registration record has an "Ethics Review" field (line 33) that the
-  researcher fills in as PART OF drafting the record while it is still "In Progress" -- i.e. a
-  researcher can open/freeze-draft a TCTR record before a committee has approved it, then the record
-  moves to "Submitted for Approval" and only becomes "Released" (assigned a registration number) once
-  TCTR''s own committee approves the FILING, a step separate from and not identical to the underlying
-  study''s own IRB/ethics-committee approval. This shows a real, currently-operating registry treats
-  "protocol drafted/frozen" and "ethics approved" as two independently-timestamped events that can
-  interleave, not a single strict before/after gate. stance vs Q5 as read: PARTIAL_SUPPORT (shows the
-  operational plausibility of tracking a freeze event separately from an ethics-approval event, which
-  is what a minimal timestamp-before field would need to do -- but does not itself mandate freeze
-  strictly before ethics). No novel/first/prior-art claim made about this source; comparison to Q5 is
-  same/different/orthogonal as stated in dialogue_table_stance. independence_class I1 (same session)
-  -- status METADATA_OK only, not VERIFIED.'
+disclosure: 'TCTR (Thai Clinical Trials Registry) official Help Center, "New Study
+  Registration" how-to article (TH, grey/community operational documentation, not
+  a peer-reviewed source). Fetched and read directly (curl + stdlib HTML stripper,
+  one page kept in memory at a time per RAM limit) 2026-09-05. Read as: TCTR''s own
+  registration record has an "Ethics Review" field (line 33) that the researcher fills
+  in as PART OF drafting the record while it is still "In Progress" -- i.e. a researcher
+  can open/freeze-draft a TCTR record before a committee has approved it, then the
+  record moves to "Submitted for Approval" and only becomes "Released" (assigned a
+  registration number) once TCTR''s own committee approves the FILING, a step separate
+  from and not identical to the underlying study''s own IRB/ethics-committee approval.
+  This shows a real, currently-operating registry treats "protocol drafted/frozen"
+  and "ethics approved" as two independently-timestamped events that can interleave,
+  not a single strict before/after gate. stance vs Q5 as read: PARTIAL_SUPPORT (shows
+  the operational plausibility of tracking a freeze event separately from an ethics-approval
+  event, which is what a minimal timestamp-before field would need to do -- but does
+  not itself mandate freeze strictly before ethics). No novel/first/prior-art claim
+  made about this source; comparison to Q5 is same/different/orthogonal as stated
+  in dialogue_table_stance. independence_class I1 (same session) -- status METADATA_OK
+  only, not VERIFIED. | I3 route (codex) judged from fetched metadata/abstract + the
+  card''s quoted passage, not full text: Fetched title matches the TCTR Help Center
+  article; no author/year contradiction is present. The quoted status passage is mechanically
+  found in the fetched text. The excerpt plausibly contextualizes separate registry
+  workflow status and ethics-review fields, so it bears as operational context, not
+  evidentiary support.'
 superseded_by: null
-notes: 'Diversity: language=th, source_type=grey_literature, geography_or_institution=Thailand (Global
-  South / SEA), search_route_or_database="web search (Thai-language query), glosa-v0-3 Q5 scoping
-  pass". dialogue_table_stance: yes. what_it_separates: Separates TCTR''s own record-workflow states
-  (In Progress / Submitted for Approval / Released) from the underlying study''s own IRB/ethics
-  committee approval -- two different approval events with two different timestamps, exactly the kind
-  of distinction a minimal schema field needs to keep straight (registry-record-approved-at vs
-  study-ethics-approved-at vs first-data-observed-at are three, not two, distinct clocks). what_it_assumes:
-  Assumes a researcher-facing UI walkthrough is representative of what the registry actually enforces
-  on the backend; does not itself state that Ethics Review data is validated against an independent
-  ethics-committee record before Release. what_it_would_say_against_us: If glosa''s hard gate only
-  distinguishes "protocol frozen" from "ethics approved," it is missing a third clock this real
-  registry already tracks separately -- the registry''s OWN administrative approval of the filing
-  (Released) is not the same event as the underlying study''s ethics-committee approval, and conflating
-  them in a two-field schema would misdescribe how an actual working registry sequences things.'
+notes: 'Diversity: language=th, source_type=grey_literature, geography_or_institution=Thailand
+  (Global South / SEA), search_route_or_database="web search (Thai-language query),
+  glosa-v0-3 Q5 scoping pass". dialogue_table_stance: yes. what_it_separates: Separates
+  TCTR''s own record-workflow states (In Progress / Submitted for Approval / Released)
+  from the underlying study''s own IRB/ethics committee approval -- two different
+  approval events with two different timestamps, exactly the kind of distinction a
+  minimal schema field needs to keep straight (registry-record-approved-at vs study-ethics-approved-at
+  vs first-data-observed-at are three, not two, distinct clocks). what_it_assumes:
+  Assumes a researcher-facing UI walkthrough is representative of what the registry
+  actually enforces on the backend; does not itself state that Ethics Review data
+  is validated against an independent ethics-committee record before Release. what_it_would_say_against_us:
+  If glosa''s hard gate only distinguishes "protocol frozen" from "ethics approved,"
+  it is missing a third clock this real registry already tracks separately -- the
+  registry''s OWN administrative approval of the filing (Released) is not the same
+  event as the underlying study''s ethics-committee approval, and conflating them
+  in a two-field schema would misdescribe how an actual working registry sequences
+  things.'
 citation_card_id: cite-glosa-v0-3-q5-006
 identifier_kind: OFFICIAL_URL
 claim_match_verification_route: NOT_YET
@@ -70,7 +82,8 @@ diversity:
   language: th
   discipline_or_tradition: clinical trial registry operations / practitioner documentation
   source_type: grey_literature
-  search_route_or_database: web search (Thai-language query), glosa-v0-3 Q5 scoping pass
+  search_route_or_database: web search (Thai-language query), glosa-v0-3 Q5 scoping
+    pass
   geography_or_institution: Thailand (Global South / SEA)
   venue_quality_index:
     index_name: null

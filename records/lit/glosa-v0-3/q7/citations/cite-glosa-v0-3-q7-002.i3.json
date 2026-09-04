@@ -1,0 +1,17 @@
+{
+ "vendor": "codex",
+ "fetched": {
+  "source": "url-fetch",
+  "title": "Infinity (philosophy) - Wikipedia",
+  "abstract": ""
+ },
+ "verdict": {
+  "metadata_matches": true,
+  "passage_plausible": true,
+  "claim_match": true,
+  "bearing": "CONTEXT_ONLY",
+  "reason": "Fetched title matches the card and the exact passage is present in the excerpt. The passage directly provides contextual separation between qualitative divine infinity and quantitative mathematical infinity, matching the card's described contextual use.",
+  "passage_mechanical": "verbatim prefix found in fetched open text"
+ },
+ "date": "2026-09-04"
+}

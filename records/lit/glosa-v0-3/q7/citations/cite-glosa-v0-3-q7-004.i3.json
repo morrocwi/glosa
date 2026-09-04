@@ -1,0 +1,17 @@
+{
+ "vendor": "codex",
+ "fetched": {
+  "source": "url-fetch",
+  "title": "Finitism - Wikipedia",
+  "abstract": ""
+ },
+ "verdict": {
+  "metadata_matches": true,
+  "passage_plausible": true,
+  "claim_match": false,
+  "bearing": "CONTEXT_ONLY",
+  "reason": "Metadata title matches the URL and the quoted passage appears verbatim in the fetched excerpt. But the content of hypothesis Q7 is not provided, so relevance to the hypothesis cannot be verified; at most this is context.",
+  "passage_mechanical": "verbatim prefix found in fetched open text"
+ },
+ "date": "2026-09-04"
+}

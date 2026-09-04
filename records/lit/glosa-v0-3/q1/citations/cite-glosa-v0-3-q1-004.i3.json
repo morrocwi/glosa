@@ -1,0 +1,23 @@
+{
+ "vendor": "codex",
+ "fetched": {
+  "source": "crossref",
+  "title": "Sorting Things Out",
+  "authors": [
+   "Bowker",
+   "Star"
+  ],
+  "year": 1999,
+  "container": "",
+  "abstract": " A revealing and surprising look at how classification systems can shape both worldviews and social interactions. \n                   What do a seventeenth-century mortality table (whose causes of death include \"fainted in a bath,\" \"frighted,\" and \"itch\"); the identification of South Africans during apartheid as European, Asian, colored, or black; and the separation of machine- from hand-washables have in common? All are examples of classification—the scaffolding of information infrastructures. \n                   In Sorting Things Out, Geoffrey C. Bowker and Susan Leigh Star explore the role of categories and standards in shaping the modern world. In a clear and lively style, they investigate a variety of classification systems, including the International Classification of Diseases, the Nursing Interventions Classification, race classification under apartheid in South Africa, and the classification of viruses and of tuberculosis. \n                   The authors emphasize the role of invisibility in the process by which classification orders human interaction. They examine how categories are made and kept invisible, and how people can change this invisibility when necessary. They also explore systems of classification as part of the built information environment. Much as an urban historian would review highway permits and zoning decisions to tell a city's story, the authors review archives of classification design to understand how decisions have been made. Sorting Things Ou"
+ },
+ "verdict": {
+  "metadata_matches": true,
+  "passage_plausible": false,
+  "claim_match": false,
+  "bearing": "CONTEXT_ONLY",
+  "reason": "Metadata title, first author, and year match. The quoted passage was not found mechanically and no fetched text excerpt is available to compare, so passage_plausible is false by rule. Hypothesis content is only 'Q1', so relevance/support cannot be independently established.",
+  "passage_mechanical": "no open full text fetched; abstract/metadata only"
+ },
+ "date": "2026-09-04"
+}

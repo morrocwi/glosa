@@ -1,0 +1,17 @@
+{
+ "vendor": "codex",
+ "fetched": {
+  "source": "url-fetch",
+  "title": "Thai Clinical Trials Registry (TCTR) Help Center | 03: การลงทะเบียนงานวิจัยใหม่",
+  "abstract": ""
+ },
+ "verdict": {
+  "metadata_matches": true,
+  "passage_plausible": true,
+  "claim_match": true,
+  "bearing": "CONTEXT_ONLY",
+  "reason": "Fetched title matches the TCTR Help Center article; no author/year contradiction is present. The quoted status passage is mechanically found in the fetched text. The excerpt plausibly contextualizes separate registry workflow status and ethics-review fields, so it bears as operational context, not evidentiary support.",
+  "passage_mechanical": "verbatim prefix found in fetched open text"
+ },
+ "date": "2026-09-04"
+}

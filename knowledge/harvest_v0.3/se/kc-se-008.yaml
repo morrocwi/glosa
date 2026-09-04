@@ -7,17 +7,19 @@ text: >
   it as if it already were knowledge. It names "Candidate Forgetting" — the failure occurs not when AI
   generates text, but when a human forwards, stores, and re-cites it until the fact that it was once only
   "an answer awaiting verification" is forgotten.
-verbatim: "เมื่อมันกลายเป็นสิ่งที่เราสัมผัสในชีวิตประจำวัน วิกฤติจริงๆ ที่เอไอมอบให้ จึงไม่ใช่เพียงเรื่องความแม่นยำของเอไอ
-  ไม่ใช่เพียง มีอคติหรือไม่ ไม่ใช่เพียงเอไอควรถูกกำกับดูแลอย่างไร ไม่ใช่เรื่องเพียงเอไอมีผลต่อองค์กรอย่างไร
-  แต่คือ การผลิตสิ่งที่คล้ายความรู้ และเราเอามันไปใช้ราวกับความรู้จริงๆ ... ปัญหาไม่ได้เกิดเฉพาะตอน AI สร้างข้อความ
-  แต่เกิดเมื่อมนุษย์ส่งต่อ จัดเก็บ และใช้ซ้ำ จนลืมว่าสิ่งนั้นเคยเป็นเพียง \"คำตอบที่รอตรวจสอบ\""
+verbatim: "ปัญหาไม่ได้เกิดเฉพาะตอน AI สร้างข้อความ
+  แต่เกิดเมื่อมนุษย์ส่งต่อ จัดเก็บ และใช้ซ้ำ
+  จนลืมว่าสิงนันเคยเปนเพียง \"คําตอบทีรอตรวจสอบ\""
 source:
   doi: 10.5281/zenodo.22302410
   title: "ปัญญาประดิษฐ์กับอารยธรรมความรู้: การลืมสถานะการเป็นตัวเลือกและความรับผิดชอบของมนุษย์ในสังคมที่ถูกสื่อกลางด้วยปัญญาประดิษฐ์
     (สไลด์นำเสนอระดับชาติ NIDA, 29 ส.ค. 2569)"
   year: 2026
-fetched_from_url: local (~/Downloads/AI_Knowledge_Civilization_.pdf)
-locator: slides "ข้อสังเกต" section and "องค์ 3 | ข้อเสนอหลัก — Candidate Forgetting" (pdftotext, lines ~90-118 of extracted body)
+fetched_from_url: "https://zenodo.org/records/18943971"
+locator: slide "องค์ 3 | ข้อเสนอหลัก — Candidate Forgetting" (the earlier card spliced two separate slides
+  together with "..."; trimmed to one genuinely continuous slide's text — spelling here matches the PDF's
+  own text layer exactly, including its tone-mark rendering, e.g. "สิงนัน"/"เปน" for สิ่งนั้น/เป็น, which
+  pdftotext extracts with dropped marks; this is the source's extracted text, not a transcription error)
 tier: Open
 base_relation: holds
 base_justification: An independently-worded convergent statement of the same core discipline as

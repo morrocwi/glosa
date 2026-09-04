@@ -1,0 +1,17 @@
+{
+ "vendor": "codex",
+ "fetched": {
+  "source": "url-fetch",
+  "title": "กองควบคุมเครื่องมือแพทย์",
+  "abstract": ""
+ },
+ "verdict": {
+  "metadata_matches": true,
+  "passage_plausible": true,
+  "claim_match": true,
+  "bearing": "CONTEXT_ONLY",
+  "reason": "Fetched title/institution does not contradict the card. The quoted Thai definition is mechanically found in the excerpt and matches the card’s described separation of standalone software/apps from software controlling or affecting medical-device hardware. Scope is contextual, not evidentiary support.",
+  "passage_mechanical": "verbatim prefix found in fetched open text"
+ },
+ "date": "2026-09-04"
+}

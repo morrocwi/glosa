@@ -11,62 +11,74 @@ metadata_verified_by: mechanical:curl (arXiv abstract page fetched directly for 
   metadata; PDF fetched directly for the full-text passage)
 metadata_verified_at: '2026-09-05'
 claim_match_verified: true
-claim_match_verified_by: self:same-session-read (I1, NOT independent -- awaiting a decorrelated I3 cross-vendor
-  route to upgrade status to VERIFIED per Rule 17/S14; task instruction caps status at METADATA_OK for
-  this pass)
+claim_match_verified_by: route:codex
 claim_match_verified_at: '2026-09-05'
-exact_passage: 'Scholastic philosophy took as its own Aristotle''s radical rejection of actual infinity
-  and expressed it in the famous thesis infinitum actu non datur. Most medieval and modern scholars adhered
-  to it, and until the end of the 19th century, only potential infinity was almost exclusively considered
-  acceptable. The question of actual infinity became at the time a theological question since infinity
-  was one of the attributes of God. Its use in mathematics was viewed with suspicion by theologians because
-  it might be an assault on the unique and absolute nature of God.'
-page_or_locator: arxiv.org/pdf/2407.18972 (Trlifajová, "Theological reasoning of Cantor's set theory"),
-  section 2, page 2 of the PDF as fetched 2026-09-05 (pdftotext -l 8)
-line_or_paragraph: lines 69-73 of the pdftotext-extracted text
+exact_passage: Scholastic philosophy took as its own Aristotle's radical rejection
+  of actual infinity and expressed it in the famous thesis infinitum actu non datur.
+  Most medieval and modern scholars adhered to it, and until the end of the 19th century,
+  only potential infinity was almost exclusively considered acceptable. The question
+  of actual infinity became at the time a theological question since infinity was
+  one of the attributes of God. Its use in mathematics was viewed with suspicion by
+  theologians because it might be an assault on the unique and absolute nature of
+  God.
+page_or_locator: arxiv.org/pdf/2407.18972 (Trlifajová, "Theological reasoning of Cantor's
+  set theory"), section 2, page 2 of the PDF as fetched 2026-09-05 (pdftotext -l 8)
+line_or_paragraph: char offset 5560 of normalized fetched text (~paragraph 1); verbatim
+  prefix match
 scope: DIRECT_QUOTATION
 evidence_tier: Dr
-independence_class: I1
-who_verified: same-session AI (I1, non-independent) -- metadata confirmed mechanically, passage read and
-  matched to Q7 by the same session that ran the search; no cross-vendor I3 route run in this pass
+independence_class: I3
+who_verified: route:codex (cross-vendor AI; abstract/metadata level, not full text)
+  -- see cite-glosa-v0-3-q7-005.i3.json
 verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
-status: METADATA_OK
+status: VERIFIED
 xenon_ledger_ref: null
-disclosure: 'arXiv:2407.18972 (math.HO), Trlifajová, "Theological reasoning of Cantor''s set theory" (EN
-  preprint; author''s translation of a paper originally in Filosofický časopis 53, 195-218, 2005). Fetched
-  directly (arXiv abstract page via curl for metadata; PDF via curl, pdftotext -l 8 for full text, one
-  page of extracted text kept in memory at a time per RAM limit) 2026-09-05. Read as: documents, as a historical-philosophical
-  claim, that actual infinity was explicitly a THEOLOGICAL question for a millennium (infinitum actu non
-  datur), because infinity was held to be an attribute of God -- directly on point for Q7''s premise that
-  the transcendental-ground stance is not a modern rhetorical add-on but the historically dominant framing
-  of the actual-infinity question itself. stance vs Q7 as read: SUPPORTS the premise that infinity-as-transcendental-ground
-  has been a genuine, historically load-bearing epistemic stance (not a metaphor) -- though the source
-  reports this as HISTORY, not as its own philosophical argument for the stance today. independence_class
-  I1 (same session) -- status METADATA_OK only, not VERIFIED: no decorrelated I3 cross-vendor route has
-  checked this card yet. No novel/first/prior-art claim made about this source; comparison to Q7 is same/different/orthogonal
-  as stated in dialogue_table_stance.'
+disclosure: 'arXiv:2407.18972 (math.HO), Trlifajová, "Theological reasoning of Cantor''s
+  set theory" (EN preprint; author''s translation of a paper originally in Filosofický
+  časopis 53, 195-218, 2005). Fetched directly (arXiv abstract page via curl for metadata;
+  PDF via curl, pdftotext -l 8 for full text, one page of extracted text kept in memory
+  at a time per RAM limit) 2026-09-05. Read as: documents, as a historical-philosophical
+  claim, that actual infinity was explicitly a THEOLOGICAL question for a millennium
+  (infinitum actu non datur), because infinity was held to be an attribute of God
+  -- directly on point for Q7''s premise that the transcendental-ground stance is
+  not a modern rhetorical add-on but the historically dominant framing of the actual-infinity
+  question itself. stance vs Q7 as read: SUPPORTS the premise that infinity-as-transcendental-ground
+  has been a genuine, historically load-bearing epistemic stance (not a metaphor)
+  -- though the source reports this as HISTORY, not as its own philosophical argument
+  for the stance today. independence_class I1 (same session) -- status METADATA_OK
+  only, not VERIFIED: no decorrelated I3 cross-vendor route has checked this card
+  yet. No novel/first/prior-art claim made about this source; comparison to Q7 is
+  same/different/orthogonal as stated in dialogue_table_stance. | I3 route (codex)
+  judged from fetched metadata/abstract + the card''s quoted passage, not full text:
+  Metadata title, year, and first author match. The quoted passage is mechanically
+  found and aligns with the abstract/title. The excerpt directly addresses actual
+  infinity as a mathematical question entangled with theological standpoint, matching
+  the card''s stated use.'
 superseded_by: null
-notes: 'Diversity: language=en, source_type=preprint, geography_or_institution=Czech Republic (Czech Academy
-  of Sciences-affiliated author, per arXiv submission), search_route_or_database="web search / direct fetch,
-  glosa-v0-3 Q7 scoping pass". dialogue_table_stance: yes. what_it_separates: Separates the mathematical
-  QUESTION (can an infinite set be a completed mathematical object) from the THEOLOGICAL STAKES that historically
-  made the question urgent (infinity as a divine attribute, so mathematizing it risked "assault on the
-  unique and absolute nature of God") -- the two are shown as historically entangled, not cleanly separable.
-  what_it_assumes: Assumes a Western Scholastic/Catholic framing of the theology-mathematics relationship;
-  does not survey non-Christian transcendence traditions (Islamic, Buddhist, Neoplatonist outside the Christian
-  reception) as parallel or rival cases. what_it_would_say_against_us: If the very possibility of actual
-  infinity in mathematics was historically SETTLED via theological argument (Vatican approval after neo-Thomist
-  advocacy, per this source''s abstract), then treating infinity-as-transcendental-ground as an optional
-  add-on tension rather than a formally engaged premise may understate how load-bearing that stance actually
-  was in getting actual infinity accepted into mathematics at all -- an argument for genuine reconciliation
-  rather than a flagged-open tension.'
+notes: 'Diversity: language=en, source_type=preprint, geography_or_institution=Czech
+  Republic (Czech Academy of Sciences-affiliated author, per arXiv submission), search_route_or_database="web
+  search / direct fetch, glosa-v0-3 Q7 scoping pass". dialogue_table_stance: yes.
+  what_it_separates: Separates the mathematical QUESTION (can an infinite set be a
+  completed mathematical object) from the THEOLOGICAL STAKES that historically made
+  the question urgent (infinity as a divine attribute, so mathematizing it risked
+  "assault on the unique and absolute nature of God") -- the two are shown as historically
+  entangled, not cleanly separable. what_it_assumes: Assumes a Western Scholastic/Catholic
+  framing of the theology-mathematics relationship; does not survey non-Christian
+  transcendence traditions (Islamic, Buddhist, Neoplatonist outside the Christian
+  reception) as parallel or rival cases. what_it_would_say_against_us: If the very
+  possibility of actual infinity in mathematics was historically SETTLED via theological
+  argument (Vatican approval after neo-Thomist advocacy, per this source''s abstract),
+  then treating infinity-as-transcendental-ground as an optional add-on tension rather
+  than a formally engaged premise may understate how load-bearing that stance actually
+  was in getting actual infinity accepted into mathematics at all -- an argument for
+  genuine reconciliation rather than a flagged-open tension.'
 citation_card_id: cite-glosa-v0-3-q7-005
 identifier_kind: ARXIV
 claim_match_verification_route: NOT_YET
 retraction_check: UNCHECKED
 version_status: PUBLISHED
 dialogue_table_stance: agrees
-fetched_from_url: https://arxiv.org/pdf/2407.18972
+fetched_from_url: https://arxiv.org/html/2407.18972
 diversity:
   language: en
   discipline_or_tradition: history and philosophy of mathematics / theology

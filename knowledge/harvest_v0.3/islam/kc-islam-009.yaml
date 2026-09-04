@@ -7,13 +7,12 @@ text: Explains recurring hilal-sighting disputes as layer confusion — applying
   jurisprudential plurality itself as a failure to converge. States its own proof obligations and limits.
 verbatim: "It shows that most hilal conflicts arise not within any single layer but from layer confusion: the
   application of the tools, standards, and authority claims of one layer to questions that properly belong to
-  another... Proof obligations and limits are specified."
+  another."
 source:
   doi: 10.5281/zenodo.19124963
   title: "Three Layers, One Moon: Premature Category Stabilization and the Structure of Hilal Disagreement"
   year: 2026
-fetched_from_url: local file ~/Downloads/hilal_three_layers_paper.pdf (matched by title and abstract text
-  against Zenodo record 19124963)
+fetched_from_url: https://zenodo.org/api/records/19124963/files/hilal_three_layers_paper.pdf/content
 locator: Abstract, p.1
 tier: Open
 base_relation: holds

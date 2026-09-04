@@ -7,50 +7,66 @@ identifier:
 fetch_status: FETCHED
 fetched_at: '2026-09-05'
 metadata_verified: true
-metadata_verified_by: mechanical:curl+html-strip (Wikipedia page fetched directly, title and section confirmed
-  on the fetched page)
+metadata_verified_by: mechanical:curl+html-strip (Wikipedia page fetched directly,
+  title and section confirmed on the fetched page)
 metadata_verified_at: '2026-09-05'
 claim_match_verified: true
-claim_match_verified_by: self:same-session-read (I1, NOT independent -- awaiting a decorrelated I3 cross-vendor
-  route to upgrade status to VERIFIED per Rule 17/S14; task instruction caps status at METADATA_OK for
-  this pass)
+claim_match_verified_by: route:codex
 claim_match_verified_at: '2026-09-05'
-exact_passage: In Christian theology, for example in the work of Duns Scotus, the infinite nature of God
-  invokes a sense of being without constraint, rather than a sense of being unlimited in quantity.
-page_or_locator: en.wikipedia.org, 'Infinity (philosophy)', introductory section, as fetched 2026-09-05
-line_or_paragraph: lines 219-223 of the fetched/stripped page text
+exact_passage: In Christian theology, for example in the work of Duns Scotus, the
+  infinite nature of God invokes a sense of being without constraint, rather than
+  a sense of being unlimited in quantity.
+page_or_locator: en.wikipedia.org, 'Infinity (philosophy)', introductory section,
+  as fetched 2026-09-05
+line_or_paragraph: char offset 2966 of normalized fetched text (~paragraph 1); verbatim
+  prefix match
 scope: DIRECT_QUOTATION
 evidence_tier: Dr
-independence_class: I1
-who_verified: same-session AI (I1, non-independent) -- metadata confirmed mechanically, passage read and
-  matched to Q7 by the same session that ran the search; no cross-vendor I3 route run in this pass
+independence_class: I3
+who_verified: route:codex (cross-vendor AI; abstract/metadata level, not full text)
+  -- see cite-glosa-v0-3-q7-002.i3.json
 verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
-status: METADATA_OK
+status: VERIFIED
 xenon_ledger_ref: null
-disclosure: 'Wikipedia, ''Infinity (philosophy)'' (EN, community-maintained reference). Fetched and read
-  directly (curl + stdlib HTML stripper, one page kept in memory at a time per RAM limit) 2026-09-05. Read
-  as: a directly on-point theological articulation -- Duns Scotus reading God''s infinity as a qualitative
-  mode of being-without-constraint, explicitly DISTINCT from mathematical/quantitative infinity, which
-  is exactly the transcendental-ground stance Q7 asks about, stated by a named historical authority as
-  a considered doctrine rather than a metaphor. stance vs Q7 as read: SUPPORTS the premise that infinity-as-transcendental-ground
-  is a genuine, actively-held theological position (not a rhetorical flourish), though it also shows the
-  position keeps itself explicitly SEPARATE from mathematical infinity rather than claiming to be a rival
-  account of the same mathematical concept. independence_class I1 (same session) -- status METADATA_OK
-  only, not VERIFIED: no decorrelated I3 cross-vendor route has checked this card yet. No novel/first/prior-art
-  claim made about this source; comparison to Q7 is same/different/orthogonal as stated in dialogue_table_stance.'
+disclosure: 'Wikipedia, ''Infinity (philosophy)'' (EN, community-maintained reference).
+  Fetched and read directly (curl + stdlib HTML stripper, one page kept in memory
+  at a time per RAM limit) 2026-09-05. Read as: a directly on-point theological articulation
+  -- Duns Scotus reading God''s infinity as a qualitative mode of being-without-constraint,
+  explicitly DISTINCT from mathematical/quantitative infinity, which is exactly the
+  transcendental-ground stance Q7 asks about, stated by a named historical authority
+  as a considered doctrine rather than a metaphor. stance vs Q7 as read: SUPPORTS
+  the premise that infinity-as-transcendental-ground is a genuine, actively-held theological
+  position (not a rhetorical flourish), though it also shows the position keeps itself
+  explicitly SEPARATE from mathematical infinity rather than claiming to be a rival
+  account of the same mathematical concept. independence_class I1 (same session) --
+  status METADATA_OK only, not VERIFIED: no decorrelated I3 cross-vendor route has
+  checked this card yet. No novel/first/prior-art claim made about this source; comparison
+  to Q7 is same/different/orthogonal as stated in dialogue_table_stance. | I3 route
+  (codex) judged from fetched metadata/abstract + the card''s quoted passage, not
+  full text: Metadata and fetched title align, and the quoted passage appears verbatim.
+  The passage is relevant context for qualitative versus quantitative infinity, but
+  the hypothesis content is only labeled Q7, so claim relevance to the hypothesis
+  cannot be confirmed from provided material. | I3 route (codex) judged from fetched
+  metadata/abstract + the card''s quoted passage, not full text: Fetched title matches
+  the card and the exact passage is present in the excerpt. The passage directly provides
+  contextual separation between qualitative divine infinity and quantitative mathematical
+  infinity, matching the card''s described contextual use.'
 superseded_by: null
-notes: 'Diversity: language=en, source_type=grey_literature, geography_or_institution=US (global reference),
-  search_route_or_database="web search / direct fetch, glosa-v0-3 Q7 scoping pass". dialogue_table_stance:
-  yes. what_it_separates: Separates being-without-constraint (God''s qualitative infinity, Scotus) from
-  being-unlimited-in-quantity (mathematical infinity) -- i.e. it explicitly denies the two are the same
-  concept, even while affirming both are legitimately called "infinite". what_it_assumes: Assumes a background
-  Christian theological framework (divine simplicity/attributes) in which "infinite" already has independent
-  theological content prior to and apart from any mathematical development. what_it_would_say_against_us:
-  If the theological and mathematical senses of "infinite" are, by this tradition''s own account, DIFFERENT
-  senses of the word rather than one concept two traditions dispute, then treating infinity-as-transcendental-ground
-  as a rival EPISTEMIC stance to reconcile within a mathematics/readout-first framework may be a category
-  error -- the honest framing may be two adjacent, non-competing uses of one word, which argues for a flagged
-  open note rather than a formal reconciliation section.'
+notes: 'Diversity: language=en, source_type=grey_literature, geography_or_institution=US
+  (global reference), search_route_or_database="web search / direct fetch, glosa-v0-3
+  Q7 scoping pass". dialogue_table_stance: yes. what_it_separates: Separates being-without-constraint
+  (God''s qualitative infinity, Scotus) from being-unlimited-in-quantity (mathematical
+  infinity) -- i.e. it explicitly denies the two are the same concept, even while
+  affirming both are legitimately called "infinite". what_it_assumes: Assumes a background
+  Christian theological framework (divine simplicity/attributes) in which "infinite"
+  already has independent theological content prior to and apart from any mathematical
+  development. what_it_would_say_against_us: If the theological and mathematical senses
+  of "infinite" are, by this tradition''s own account, DIFFERENT senses of the word
+  rather than one concept two traditions dispute, then treating infinity-as-transcendental-ground
+  as a rival EPISTEMIC stance to reconcile within a mathematics/readout-first framework
+  may be a category error -- the honest framing may be two adjacent, non-competing
+  uses of one word, which argues for a flagged open note rather than a formal reconciliation
+  section.'
 citation_card_id: cite-glosa-v0-3-q7-002
 identifier_kind: OFFICIAL_URL
 claim_match_verification_route: NOT_YET

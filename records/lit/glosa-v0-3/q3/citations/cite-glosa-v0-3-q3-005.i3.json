@@ -1,0 +1,23 @@
+{
+ "vendor": "codex",
+ "fetched": {
+  "source": "arxiv",
+  "title": "A Systematic Analysis of Declining Medical Safety Messaging in Generative AI Models",
+  "authors": [
+   "Sonali Sharma",
+   "Ahmed M. Alaa",
+   "Roxana Daneshjou"
+  ],
+  "year": "2025",
+  "abstract": "Generative AI models, including large language models (LLMs) and vision-language models (VLMs), are increasingly used to interpret medical images and answer clinical questions. Their responses often include inaccuracies; therefore, safety measures like medical disclaimers are critical to remind users that AI outputs are not professionally vetted or a substitute for medical advice. This study evaluated the presence of disclaimers in LLM and VLM outputs across model generations from 2022 to 2025. Using 500 mammograms, 500 chest X-rays, 500 dermatology images, and 500 medical questions, outputs were screened for disclaimer phrases. Medical disclaimer presence in LLM and VLM outputs dropped from 26.3% in 2022 to 0.97% in 2025, and from 19.6% in 2023 to 1.05% in 2025, respectively. By 2025, the majority of models displayed no disclaimers. As public models become more capable and authoritative, disclaimers must be implemented as a safeguard adapting to the clinical context of each output."
+ },
+ "verdict": {
+  "metadata_matches": true,
+  "passage_plausible": true,
+  "claim_match": true,
+  "bearing": "CONTEXT_ONLY",
+  "reason": "Title, year, and first author match. The passage is present in the fetched abstract and aligns with the metadata/excerpt. The source is relevant context for the card’s stated distinction between disclaimer policy/template existence and actual disclaimer appearance in model outputs.",
+  "passage_mechanical": "verbatim prefix found in fetched open text"
+ },
+ "date": "2026-09-04"
+}

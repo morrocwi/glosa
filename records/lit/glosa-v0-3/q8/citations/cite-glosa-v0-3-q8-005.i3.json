@@ -1,0 +1,17 @@
+{
+ "vendor": "codex",
+ "fetched": {
+  "source": "url-fetch",
+  "title": "الكسب و&quot;خلق الأفعال&quot; عند الأشاعرة | صحيفة الاقتصادية",
+  "abstract": "الكسب و&quot;خلق الأفعال&quot; عند الأشاعرة"
+ },
+ "verdict": {
+  "metadata_matches": true,
+  "passage_plausible": true,
+  "claim_match": true,
+  "bearing": "CHALLENGES",
+  "reason": "Title matches the card and no author/year contradiction is evidenced. Although the mechanical verbatim check says none, the fetched excerpt contains the quoted Arabic passage. The passage frames kasb as contradictory/obscure, matching the card’s claimed challenge/context stance for Q8.",
+  "passage_mechanical": "no open full text fetched; abstract/metadata only"
+ },
+ "date": "2026-09-04"
+}

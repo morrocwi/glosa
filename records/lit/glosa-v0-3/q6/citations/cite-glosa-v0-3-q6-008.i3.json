@@ -1,0 +1,17 @@
+{
+ "vendor": "codex",
+ "fetched": {
+  "source": "url-fetch",
+  "title": "Popper, Karl: Philosophy of Science | Internet Encyclopedia of Philosophy",
+  "abstract": ""
+ },
+ "verdict": {
+  "metadata_matches": true,
+  "passage_plausible": true,
+  "claim_match": true,
+  "bearing": "CONTEXT_ONLY",
+  "reason": "Title matches fetched metadata, and the fetched text contains the quoted passage. The passage directly concerns Popper’s distinction between falsifiable theories and theories compatible with any observation, matching the card’s context-only claim.",
+  "passage_mechanical": "verbatim prefix found in fetched open text"
+ },
+ "date": "2026-09-04"
+}

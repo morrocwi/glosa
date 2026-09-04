@@ -1,0 +1,22 @@
+{
+ "vendor": "codex",
+ "fetched": {
+  "source": "crossref",
+  "title": "What Drives Institutional Reforms in Regional Organisations? Diffusion, Contextual Conditions, and the Modular Design of ASEAN",
+  "authors": [
+   "Jetschke"
+  ],
+  "year": 2017,
+  "container": "TRaNS: Trans -Regional and -National Studies of Southeast Asia",
+  "abstract": " Abstract  What drives institutional reforms in regional organisations? And what explains the institutional design of ASEAN? Despite many differences, conventional approaches to the institutional design of regional organisations more generally and ASEAN in particular are united in regarding them as either determined by factors endogenous to the region − such as varying state interests or collective norms − or as exogenously driven, most importantly by hegemonic states like the US or China. This article offers a diffusion account of ASEAN's institutional design. Building on a more recent strand in the diffusion literature emphasising that diffusion rarely leads to convergence, the article makes two genuine contributions. First, it argues that members of regional organisations engage in modular adoption: they select institutional templates from a variety of regional as well as international organisations thereby taking advantage of available information on the costs and benefits of alternative institutions. Second, it argues that contextual conditions and cognitive priors influence what templates are chosen. The argument will be illustrated with a case study on ASEAN's adoption of a single market and a dispute settlement mechanism. Finally, and contrary to arguments that institutional borrowing might increase the expectations-deliverance gap within regional organisations, it argues that if conducted consistently, modular adoption can lead to substantial innovation and success. "
+ },
+ "verdict": {
+  "metadata_matches": true,
+  "passage_plausible": true,
+  "claim_match": true,
+  "bearing": "CHALLENGES",
+  "reason": "Metadata does not contradict the card. The quoted passage appears verbatim in the fetched abstract and fits the title/abstract. As context, it bears on Q1 by showing ASEAN institutional reform through modular template adoption, challenging a simple fixed-category/template-stability premise.",
+  "passage_mechanical": "verbatim prefix found in fetched open text"
+ },
+ "date": "2026-09-04"
+}

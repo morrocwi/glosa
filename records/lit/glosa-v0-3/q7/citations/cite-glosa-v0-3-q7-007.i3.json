@@ -1,0 +1,16 @@
+{
+ "vendor": "codex",
+ "fetched": {
+  "source": "fetch-failed",
+  "error": "HTTP Error 500: Internal Server Error"
+ },
+ "verdict": {
+  "metadata_matches": true,
+  "passage_plausible": true,
+  "claim_match": false,
+  "bearing": "CONTEXT_ONLY",
+  "reason": "Title/date/author evidence does not contradict the card, and the quoted Plotinus/infinity passage is plausible for an article on infinity, philosophy, religion, and mathematics. But Q7 is not stated, so relevance to the hypothesis cannot be verified from the provided material.",
+  "passage_mechanical": "no open full text fetched; abstract/metadata only"
+ },
+ "date": "2026-09-04"
+}

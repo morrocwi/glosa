@@ -10,31 +10,42 @@ metadata_verified: true
 metadata_verified_by: mechanical:direct-fetch-page-title
 metadata_verified_at: '2026-09-05'
 claim_match_verified: true
-claim_match_verified_by: self:same-session-AI (I1, not yet an independent I3/I5 route)
+claim_match_verified_by: route:codex
 claim_match_verified_at: '2026-09-05'
-exact_passage: Registered Reports is a publishing format that emphasizes the importance of the research
-  question and the quality of methodology by conducting peer review prior to data collection.
+exact_passage: Registered Reports is a publishing format that emphasizes the importance
+  of the research question and the quality of methodology by conducting peer review
+  prior to data collection.
 page_or_locator: main "Registered Reports" page (cos.io, fetched 2026-09-05)
 scope: DIRECT_QUOTATION
 evidence_tier: definition
-independence_class: I1
-who_verified: self (same-session AI, I1) -- not yet an independent cross-vendor or human route
+independence_class: I3
+who_verified: route:codex (cross-vendor AI; abstract/metadata level, not full text)
+  -- see cite-glosa-v0-3-q2-005.i3.json
 verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
-status: METADATA_OK
+status: VERIFIED
 xenon_ledger_ref: null
-disclosure: 'Same-session AI check only (I1) -- this card is METADATA_OK, not VERIFIED. No DOI/author
-  byline (organizational page, Center for Open Science, a nonprofit); page fetched directly and passage
-  read verbatim. Found under the support query family (''registered reports preregistration certification
-  peer review alternative''). Bearing on Q2: this is a PRIMARY description of one concrete certification-substitute
-  mechanism (a two-stage protocol review that shifts the checkable record from an opaque institutional
-  stamp to a public in-principle-acceptance decision plus a followed protocol) -- read as what the mechanism
-  itself claims to be, not as an independent evaluation of whether it works (see cite-glosa-v0-3-q2-001/002
-  for the evaluative/challenge side).'
+disclosure: 'Same-session AI check only (I1) -- this card is METADATA_OK, not VERIFIED.
+  No DOI/author byline (organizational page, Center for Open Science, a nonprofit);
+  page fetched directly and passage read verbatim. Found under the support query family
+  (''registered reports preregistration certification peer review alternative'').
+  Bearing on Q2: this is a PRIMARY description of one concrete certification-substitute
+  mechanism (a two-stage protocol review that shifts the checkable record from an
+  opaque institutional stamp to a public in-principle-acceptance decision plus a followed
+  protocol) -- read as what the mechanism itself claims to be, not as an independent
+  evaluation of whether it works (see cite-glosa-v0-3-q2-001/002 for the evaluative/challenge
+  side). | I3 route (codex) judged from fetched metadata/abstract + the card''s quoted
+  passage, not full text: Metadata does not contradict the card, and the quoted passage
+  is mechanically present. The source describes Registered Reports as pre-data-collection
+  peer review of research question and methodology, matching the card’s claimed use
+  as a mechanism description relevant to Q2.'
 superseded_by: null
-notes: 'Global North (Center for Open Science, US-based nonprofit), EN, grey/community organizational
-  source -- the mechanism''s own primary-source description, not a peer-reviewed evaluation. Found via
-  query family: support. Dialogue-table stance: YES-AS-MECHANISM-DESCRIPTION (supports that a structurally
-  claim-card-like, checkable public record can substitute for opaque institutional say-so in principle;
-  does not itself test whether it succeeds in practice). dialogue_table_stance: agrees. language: en.'
+notes: 'Global North (Center for Open Science, US-based nonprofit), EN, grey/community
+  organizational source -- the mechanism''s own primary-source description, not a
+  peer-reviewed evaluation. Found via query family: support. Dialogue-table stance:
+  YES-AS-MECHANISM-DESCRIPTION (supports that a structurally claim-card-like, checkable
+  public record can substitute for opaque institutional say-so in principle; does
+  not itself test whether it succeeds in practice). dialogue_table_stance: agrees.
+  language: en.'
 fetched_from_url: https://www.cos.io/initiatives/registered-reports
-line_or_paragraph: line 51 of the fetched-and-stripped page text (single continuous sentence)
+line_or_paragraph: char offset 816 of normalized fetched text (~paragraph 1); verbatim
+  prefix match

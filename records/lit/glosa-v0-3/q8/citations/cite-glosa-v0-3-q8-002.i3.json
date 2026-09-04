@@ -1,0 +1,17 @@
+{
+ "vendor": "codex",
+ "fetched": {
+  "source": "url-fetch",
+  "title": "Ontological Dependence (Stanford Encyclopedia of Philosophy)",
+  "abstract": ""
+ },
+ "verdict": {
+  "metadata_matches": true,
+  "passage_plausible": true,
+  "claim_match": false,
+  "bearing": "CONTEXT_ONLY",
+  "reason": "The fetched title matches and the quoted passage is mechanically present/plausible. But the hypothesis is only labeled Q8 with no substantive content, so I cannot verify that the passage supports the claimed dependent-identity analogue. Under the uncertainty rule, claim_match is false.",
+  "passage_mechanical": "verbatim prefix found in fetched open text"
+ },
+ "date": "2026-09-04"
+}

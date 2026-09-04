@@ -1,0 +1,15 @@
+{
+ "vendor": "codex",
+ "fetched": {
+  "source": "no-identifier"
+ },
+ "verdict": {
+  "metadata_matches": false,
+  "passage_plausible": false,
+  "claim_match": false,
+  "bearing": "CONTEXT_ONLY",
+  "reason": "Fetched metadata is only no-identifier and there is no fetched text excerpt to compare; mechanical passage check found none. With no source evidence, the quoted passage is not plausible and cannot be shown to bear on Q6.",
+  "passage_mechanical": "no open full text fetched; abstract/metadata only"
+ },
+ "date": "2026-09-04"
+}

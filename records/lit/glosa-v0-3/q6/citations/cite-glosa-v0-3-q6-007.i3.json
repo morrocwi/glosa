@@ -1,0 +1,22 @@
+{
+ "vendor": "codex",
+ "fetched": {
+  "source": "arxiv",
+  "title": "The Evolving Ecosystem of Predatory Journals: A Case Study in Indian Perspective",
+  "authors": [
+   "Naman Jain",
+   "Mayank Singh"
+  ],
+  "year": "2019",
+  "abstract": "Digital advancement in scholarly repositories has led to the emergence of a large number of open access predatory publishers that charge high article processing fees from authors but fail to provide necessary editorial and publishing services. Identifying and blacklisting such publishers has remained a research challenge due to the highly volatile scholarly publishing ecosystem. This paper presents a data-driven approach to study how potential predatory publishers are evolving and bypassing several regularity constraints. We empirically show the close resemblance of predatory publishers against reputed publishing groups. In addition to verifying standard constraints, we also propose distinctive signals gathered from network-centric properties to understand this evolving ecosystem better."
+ },
+ "verdict": {
+  "metadata_matches": true,
+  "passage_plausible": true,
+  "claim_match": true,
+  "bearing": "SUPPORTS",
+  "reason": "finite_diagnostic: Metadata matches title, year, and first author. Quoted passage is present and consistent with the abstract. The abstract supports the card’s general claim that predatory publishers can mimic reputable surface signals and bypass standard checkable constraints, requiring additional verification signals.",
+  "passage_mechanical": "verbatim prefix found in fetched open text"
+ },
+ "date": "2026-09-04"
+}

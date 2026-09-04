@@ -1,0 +1,17 @@
+{
+ "vendor": "codex",
+ "fetched": {
+  "source": "url-fetch",
+  "title": "Grant Dependency is Undermining Global Development: Here’s a Fundamentally New Architecture for Funding NGOs - NextBillion",
+  "abstract": "Why the global development sector needs a funding model that treats self-reliance as a mandatory financial milestone for NGOs."
+ },
+ "verdict": {
+  "metadata_matches": true,
+  "passage_plausible": true,
+  "claim_match": true,
+  "bearing": "CONTEXT_ONLY",
+  "reason": "Fetched title does not contradict the card, and no conflicting author/year metadata is shown. The quoted passage is mechanically found and matches the excerpt. It is relevant context for Q1’s described template-lock-in pattern, but as grey opinion/context rather than evidentiary support.",
+  "passage_mechanical": "verbatim prefix found in fetched open text"
+ },
+ "date": "2026-09-04"
+}

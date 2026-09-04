@@ -6,26 +6,17 @@ text: 'On a concrete rational weighted 3-node path graph, four named rival opera
   Laplacian D_W+W fails the same two; random-walk Laplacian I−D⁻¹W breaks symmetry (concrete numeral witness:
   entry (0,1)=−1 ≠ entry (1,0)=−2/5); the normalized (symmetric) Laplacian is refused outright because
   its entries require 1/√(d_i d_j), an ℝ-completeness injection not constructible on the rational carrier.'
-verbatim: '| `L_R = D_W − W` | ✓ | ✓ | ✓ | passes all three |
-
-  | adjacency (raw `W`) | ✓ | ✗ (row 1 sums to a+b=5≠0) | ✗ (entries +a, +b>0) | ruled out — `ADJ_fails_rowsum0`,
-  `ADJ_fails_offdiag_le0` |
-
-  | signless Laplacian `D_W+W` | ✓ | ✗ (row 1 sums to 2(a+b)=10≠0) | ✗ | ruled out — `QSL_fails_rowsum0`,
-  `QSL_fails_offdiag_le0` |
-
-  | random-walk Laplacian `I−D⁻¹W` | ✗ — `RW(0,1)=−1 ≠ RW(1,0)=−2/5` | ✓ | ✓ | ruled out — `RW_fails_symmetric`
-  (concrete numeral witness) |
-
-  | normalized (symmetric) Laplacian `D⁻¹ᐟ²(D−W)D⁻¹ᐟ²` | — | — | — | **[Refused]** before the 3-property
-  test can run: entries need `1/√(dᵢdⱼ)`, an I1 (√ / ℝ-completeness) injection, not constructible on the
-  `Q` carrier at all |'
+verbatim: 'The random-walk Laplacian I−D⁻¹W survives zero-row-sum and off-diagonal≤0 but breaks symmetry
+  outright — a concrete numeral witness shows entry (0,1) computes to −1 while entry (1,0) computes to
+  −2/5, two different readouts of what should be "the same fact from either end," exactly what a retained
+  distinction forbids.'
 source:
   path: readout_universe/philosophy.md
   title: Philosophy — Readout Universe
   year: 2026
-fetched_from_url: ~/ANSE.ASIA/readout_universe/philosophy.md
-locator: §5.2, lines ~730-737
+fetched_from_url: https://github.com/morrocwi/readout_universe/blob/main/philosophy.md
+locator: lines 736-739 (prose, not a table — the card's earlier table formatting was not a verbatim quote
+  and has been replaced with an actual continuous sentence from the source)
 tier: Th_coqc
 base_relation: holds
 base_justification: This IS a base card from the lens root text; base cards are the ground the ledger

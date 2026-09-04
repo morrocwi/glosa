@@ -1,0 +1,17 @@
+{
+ "vendor": "codex",
+ "fetched": {
+  "source": "url-fetch",
+  "title": "Lessons from Nigeria and Kenya on Digital Colonialism in AI Health Messaging | TechPolicy.Press",
+  "abstract": "The question isn&#x27;t whether Africa will be included in AI governance, but whether it will set the standards, write Yewande O. Addie and Jasmine E. McNealy."
+ },
+ "verdict": {
+  "metadata_matches": true,
+  "passage_plausible": true,
+  "claim_match": true,
+  "bearing": "SUPPORTS",
+  "reason": "Fetched metadata does not contradict title, year, or first author. The exact quoted passage appears in the fetched excerpt and aligns with surrounding text distinguishing general-purpose AI tools from health products with clinical, privacy, and community-design requirements.",
+  "passage_mechanical": "verbatim prefix found in fetched open text"
+ },
+ "date": "2026-09-04"
+}

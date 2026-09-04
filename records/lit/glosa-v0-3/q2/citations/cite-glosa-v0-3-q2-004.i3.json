@@ -1,0 +1,23 @@
+{
+ "vendor": "codex",
+ "fetched": {
+  "source": "arxiv",
+  "title": "Reproducibility, Replicability, and Transparency in Research: What 430 Professors Think in Universities across the USA and India",
+  "authors": [
+   "Tatiana Chakravorti",
+   "Sai Dileep Koneru",
+   "Sarah Rajtmajer"
+  ],
+  "year": "2024",
+  "abstract": "In the past decade, open science and science of science communities have initiated innovative efforts to address concerns about the reproducibility and replicability of published scientific research. In some respects, these efforts have been successful, yet there are still many pockets of researchers with little to no familiarity with these concerns, subsequent responses, or best practices for engaging in reproducible, replicable, and reliable scholarship. In this work, we survey 430 professors from Universities across the USA and India to understand perspectives on scientific processes and identify key points for intervention. Our findings reveal both national and disciplinary gaps in attention to reproducibility and replicability, aggravated by incentive misalignment and resource constraints. We suggest that solutions addressing scientific integrity should be culturally-centered, where definitions of culture should include both regional and domain-specific elements."
+ },
+ "verdict": {
+  "metadata_matches": true,
+  "passage_plausible": true,
+  "claim_match": false,
+  "bearing": "CONTEXT_ONLY",
+  "reason": "Metadata matches fetched arXiv fields and the quoted passage is present/plausible in the abstract. But the hypothesis is only labeled Q2 with no content, so relevance to the hypothesis cannot be independently established from the provided material.",
+  "passage_mechanical": "verbatim prefix found in fetched open text"
+ },
+ "date": "2026-09-04"
+}

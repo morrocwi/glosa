@@ -7,53 +7,67 @@ identifier:
 fetch_status: FETCHED
 fetched_at: '2026-09-05'
 metadata_verified: true
-metadata_verified_by: mechanical:curl (PDF fetched directly from dtam.moph.go.th) + pdftotext -l 8 (first
-  8 pages only, per RAM limit)
+metadata_verified_by: mechanical:curl (PDF fetched directly from dtam.moph.go.th)
+  + pdftotext -l 8 (first 8 pages only, per RAM limit)
 metadata_verified_at: '2026-09-05'
-claim_match_verified: true
-claim_match_verified_by: self:same-session-read (I1, NOT independent -- awaiting a decorrelated I3 cross-vendor
-  route to upgrade status to VERIFIED per Rule 17/S14; task instruction caps status at METADATA_OK for
-  this pass)
+claim_match_verified: false
+claim_match_verified_by: route:codex
 claim_match_verified_at: '2026-09-05'
 exact_passage: การตัดสินใจ (Decision) หรือการให้คำแนะนำ (Recommendation) บนพื้นฐานของข้อมูลที่ได้รับการฝึกฝน
-  (Train) มาก่อน การใช้ AI วินิจฉัยโรคปอดจากภาพเอกชเรย์ปอด และการใช้ AI แนะนำสินค้าและบริการ เป็นต้น
-page_or_locator: Application_Guidelines_AI.pdf (กรมการแพทย์แผนไทยและการแพทย์ทางเลือก, 'แนวทางการประยุกต์ใช้ปัญญาประดิษฐ์อย่างมีธรรมาภิบาล',
-  ประจำปีงบประมาณ พ.ศ. 2569), section 1 คำนิยาม, as extracted 2026-09-05 (pdftotext -l 8)
-line_or_paragraph: lines 81-82 of the pdftotext -l 8 extraction (one continuous sentence wrapped across
-  two PDF lines)
+  (Train) มาก่อน การใช้ AI วินิจฉัยโรคปอดจากภาพเอกชเรย์ปอด และการใช้ AI แนะนำสินค้าและบริการ
+  เป็นต้น
+page_or_locator: Application_Guidelines_AI.pdf (กรมการแพทย์แผนไทยและการแพทย์ทางเลือก,
+  'แนวทางการประยุกต์ใช้ปัญญาประดิษฐ์อย่างมีธรรมาภิบาล', ประจำปีงบประมาณ พ.ศ. 2569),
+  section 1 คำนิยาม, as extracted 2026-09-05 (pdftotext -l 8)
+line_or_paragraph: lines 81-82 of the pdftotext -l 8 extraction (one continuous sentence
+  wrapped across two PDF lines)
 scope: CONTEXT_ONLY_NOT_EVIDENCE
 evidence_tier: Dr
-independence_class: I1
-who_verified: same-session AI (I1, non-independent) -- metadata confirmed mechanically, passage read and
-  matched to Q3 by the same session that ran the search; no cross-vendor I3 route run in this pass
+independence_class: I3
+who_verified: route:codex (cross-vendor AI; abstract/metadata level, not full text)
+  -- see cite-glosa-v0-3-q3-004.i3.json
 verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
 status: METADATA_OK
 xenon_ledger_ref: null
-disclosure: 'กรมการแพทย์แผนไทยและการแพทย์ทางเลือก (Dept. of Thai Traditional and Alternative Medicine),
-  ''แนวทางการประยุกต์ใช้ปัญญาประดิษฐ์อย่างมีธรรมาภิบาล'' (TH, primary Thai government AI-governance guideline,
-  FY2569/2026). Fetched and read directly (curl + stdlib HTML stripper for web pages; pdftotext -l 8 for
-  the one PDF source) 2026-09-05, one page kept in memory at a time per RAM limit. Read as: A Thai government
-  department''s own general AI-governance guideline; frames ''Traditional AI'' generically via examples
-  spanning both a clinical use (diagnosing lung disease from chest X-ray) and a non-clinical use (recommending
-  goods/services) under the same technical category (Decision/Recommendation AI). stance vs Q3 as read:
-  ORTHOGONAL. independence_class I1 (same session) -- status METADATA_OK only, not VERIFIED: no decorrelated
-  I3 cross-vendor route has checked this card yet. No novel/first/prior-art claim made about this source;
-  comparison to Q3 is same/different/orthogonal as stated in dialogue_table_stance.'
+disclosure: 'กรมการแพทย์แผนไทยและการแพทย์ทางเลือก (Dept. of Thai Traditional and Alternative
+  Medicine), ''แนวทางการประยุกต์ใช้ปัญญาประดิษฐ์อย่างมีธรรมาภิบาล'' (TH, primary Thai
+  government AI-governance guideline, FY2569/2026). Fetched and read directly (curl
+  + stdlib HTML stripper for web pages; pdftotext -l 8 for the one PDF source) 2026-09-05,
+  one page kept in memory at a time per RAM limit. Read as: A Thai government department''s
+  own general AI-governance guideline; frames ''Traditional AI'' generically via examples
+  spanning both a clinical use (diagnosing lung disease from chest X-ray) and a non-clinical
+  use (recommending goods/services) under the same technical category (Decision/Recommendation
+  AI). stance vs Q3 as read: ORTHOGONAL. independence_class I1 (same session) -- status
+  METADATA_OK only, not VERIFIED: no decorrelated I3 cross-vendor route has checked
+  this card yet. No novel/first/prior-art claim made about this source; comparison
+  to Q3 is same/different/orthogonal as stated in dialogue_table_stance. | I3 route
+  (codex) judged from fetched metadata/abstract + the card''s quoted passage, not
+  full text: Fetched metadata is empty, so it does not contradict title/year/first
+  author. But there is no fetched text excerpt and verbatim passage check found nothing,
+  so the passage cannot be verified and the source as evidenced cannot be matched
+  to the hypothesis. | I3 route (codex) judged from fetched metadata/abstract + the
+  card''s quoted passage, not full text: Fetched metadata is empty, so it does not
+  contradict title, year, or first author. However, the mechanical passage check found
+  nothing and no fetched text excerpt is available to compare, so the quoted passage
+  is not plausible and evidenced relevance to Q3 cannot be confirmed.'
 superseded_by: null
-notes: 'Diversity: language=th, source_type=grey_literature, geography_or_institution=Thailand, search_route_or_database="web
-  search / direct regulator-site fetch, glosa-v0-3 Q3 scoping pass". dialogue_table_stance: orthogonal.
-  what_it_separates: Separates Generative AI (creates new content) from Traditional AI (Prediction/Decision/Recommendation
-  on trained data) as a technical taxonomy -- it does not separate clinical from non-clinical Traditional
-  AI, treating an X-ray diagnosis tool and a product-recommendation engine as the same technical class.
-  what_it_assumes: Assumes a general-audience primer purpose (defining AI/ML/DL/ANN/Generative AI for
-  department staff); does not address disclaimer wording, scope-of-practice boundaries, or whether a diagnostic
-  and a non-diagnostic ''Traditional AI'' example should be governed by the same or different disclaimer
-  text. what_it_would_say_against_us: By placing a diagnostic example (lung X-ray) and a non-diagnostic
-  example (product recommendation) side by side under one technical label without distinguishing their
-  disclaimer needs, this guideline -- if taken as representative of current Thai government AI literacy
-  material -- suggests the clinical/non-clinical boundary that Q3''s clause exists to mark is not yet
-  salient in at least one real domestic AI-governance document, which is itself evidence the boundary
-  needs active standardization rather than being already assumed.'
+notes: 'Diversity: language=th, source_type=grey_literature, geography_or_institution=Thailand,
+  search_route_or_database="web search / direct regulator-site fetch, glosa-v0-3 Q3
+  scoping pass". dialogue_table_stance: orthogonal. what_it_separates: Separates Generative
+  AI (creates new content) from Traditional AI (Prediction/Decision/Recommendation
+  on trained data) as a technical taxonomy -- it does not separate clinical from non-clinical
+  Traditional AI, treating an X-ray diagnosis tool and a product-recommendation engine
+  as the same technical class. what_it_assumes: Assumes a general-audience primer
+  purpose (defining AI/ML/DL/ANN/Generative AI for department staff); does not address
+  disclaimer wording, scope-of-practice boundaries, or whether a diagnostic and a
+  non-diagnostic ''Traditional AI'' example should be governed by the same or different
+  disclaimer text. what_it_would_say_against_us: By placing a diagnostic example (lung
+  X-ray) and a non-diagnostic example (product recommendation) side by side under
+  one technical label without distinguishing their disclaimer needs, this guideline
+  -- if taken as representative of current Thai government AI literacy material --
+  suggests the clinical/non-clinical boundary that Q3''s clause exists to mark is
+  not yet salient in at least one real domestic AI-governance document, which is itself
+  evidence the boundary needs active standardization rather than being already assumed.'
 citation_card_id: cite-glosa-v0-3-q3-004
 identifier_kind: OFFICIAL_URL
 claim_match_verification_route: NOT_YET
@@ -64,7 +78,8 @@ diversity:
   language: th
   discipline_or_tradition: health/AI regulation and disclaimer practice
   source_type: grey_literature
-  search_route_or_database: web search / direct regulator-site fetch, glosa-v0-3 Q3 scoping pass
+  search_route_or_database: web search / direct regulator-site fetch, glosa-v0-3 Q3
+    scoping pass
   geography_or_institution: Thailand
   venue_quality_index:
     index_name: null

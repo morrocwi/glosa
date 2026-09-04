@@ -10,49 +10,54 @@ metadata_verified: true
 metadata_verified_by: mechanical:page-metadata
 metadata_verified_at: '2026-09-05'
 claim_match_verified: true
-claim_match_verified_by: route:I0
+claim_match_verified_by: route:codex
 claim_match_verified_at: '2026-09-05'
-exact_passage: >-
-  In the background appears to be the widely held theological principle that "conservation is but
-  continuous creation", which, as we shall see, was most forcefully presented by Malebranche.
-page_or_locator: 'Stanford Encyclopedia of Philosophy, "Occasionalism" entry, section 2
-  (historical background on Berkeley/Malebranche), paragraph preceding the discussion of
-  Berkeley''s account of regularity'
-line_or_paragraph: paragraph beginning "God relates to bodies and their motion..." (roughly
-  line 560-568 of the fetched, HTML-stripped page text)
+exact_passage: In the background appears to be the widely held theological principle
+  that "conservation is but continuous creation", which, as we shall see, was most
+  forcefully presented by Malebranche.
+page_or_locator: Stanford Encyclopedia of Philosophy, "Occasionalism" entry, section
+  2 (historical background on Berkeley/Malebranche), paragraph preceding the discussion
+  of Berkeley's account of regularity
+line_or_paragraph: char offset 27576 of normalized fetched text (~paragraph 1); verbatim
+  prefix match
 scope: DIRECT_QUOTATION
 evidence_tier: Dr
-independence_class: I0
-who_verified: I0 (this session, same-session curl+strip read of the fetched SEP page; no
-  cross-vendor or independent human check has run yet)
+independence_class: I3
+who_verified: route:codex (cross-vendor AI; abstract/metadata level, not full text)
+  -- see cite-glosa-v0-3-q8-001.i3.json
 verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
-status: METADATA_OK
+status: VERIFIED
 xenon_ledger_ref: null
-disclosure: >-
-  I0 only (same session, not independently checked). Author/venue/title confirmed directly from
-  the fetched SEP page itself (Stanford Encyclopedia of Philosophy, entry "Occasionalism",
-  authored/maintained collectively per SEP editorial policy; no single named author byline on the
-  page distinct from the entry's own citation block). The same page (elsewhere, lines 140-153 of
-  the fetched text) explicitly names al-Ash'ari (873-935) as "particularly influential" among the
-  "Islamic occasionalists" and states Islamic occasionalism emerged from Ash'arite kalam
-  theologians -- i.e. this is a genuinely theology-neutral, non-devotional academic reference work
-  that (a) already treats Ash'ari occasionalism as one instance of a general philosophical
-  position alongside Malebranche/Berkeley/Descartes-tradition Western occasionalists, and (b)
-  the "conservation is but continuous creation" formula quoted here is the closest secular-
-  philosophy-literature analogue found to Q8's "Dependent Identity" construct (a thing's own
-  continued existence, not only its origination, being ongoingly contingent/dependent) --
-  SUPPORT for Q8: the underlying structural claim (existence is continuously, not just
-  originally, dependent) is already stated and analyzed in mainstream, non-confessional analytic
-  philosophy of religion/metaphysics, using the SAME formal shape as the Ash'ari construct,
-  though the SEP entry itself still frames the principle as "theological" rather than fully
-  secularized (it is presented as a philosophical position ABOUT theology/God, not one that
-  drops reference to a sustaining agent altogether).
+disclosure: 'I0 only (same session, not independently checked). Author/venue/title
+  confirmed directly from the fetched SEP page itself (Stanford Encyclopedia of Philosophy,
+  entry "Occasionalism", authored/maintained collectively per SEP editorial policy;
+  no single named author byline on the page distinct from the entry''s own citation
+  block). The same page (elsewhere, lines 140-153 of the fetched text) explicitly
+  names al-Ash''ari (873-935) as "particularly influential" among the "Islamic occasionalists"
+  and states Islamic occasionalism emerged from Ash''arite kalam theologians -- i.e.
+  this is a genuinely theology-neutral, non-devotional academic reference work that
+  (a) already treats Ash''ari occasionalism as one instance of a general philosophical
+  position alongside Malebranche/Berkeley/Descartes-tradition Western occasionalists,
+  and (b) the "conservation is but continuous creation" formula quoted here is the
+  closest secular- philosophy-literature analogue found to Q8''s "Dependent Identity"
+  construct (a thing''s own continued existence, not only its origination, being ongoingly
+  contingent/dependent) -- SUPPORT for Q8: the underlying structural claim (existence
+  is continuously, not just originally, dependent) is already stated and analyzed
+  in mainstream, non-confessional analytic philosophy of religion/metaphysics, using
+  the SAME formal shape as the Ash''ari construct, though the SEP entry itself still
+  frames the principle as "theological" rather than fully secularized (it is presented
+  as a philosophical position ABOUT theology/God, not one that drops reference to
+  a sustaining agent altogether). | I3 route (codex) judged from fetched metadata/abstract
+  + the card''s quoted passage, not full text: Metadata title matches fetched title,
+  and the quoted passage is mechanically present in the excerpt. The excerpt discusses
+  occasionalism, conservation as continuous creation, God as genuine cause, and regularity
+  as laws of nature, so it plausibly provides contextual bearing for the card''s claimed
+  structural analogue.'
 superseded_by: null
-notes: >-
-  Global North (Stanford University), EN, peer-reviewed/editorially-curated academic reference
-  encyclopedia, philosophy of religion / metaphysics. Found via query family: support
-  ('occasionalism causation philosophy regularity without necessity Malebranche Ash''ari').
-  Dialogue-table stance: YES (structural analogue exists in mainstream secular-adjacent
-  philosophy literature, with the caveat that the analogue is still framed theologically in this
-  source, not a value-free naturalistic one).
+notes: 'Global North (Stanford University), EN, peer-reviewed/editorially-curated
+  academic reference encyclopedia, philosophy of religion / metaphysics. Found via
+  query family: support (''occasionalism causation philosophy regularity without necessity
+  Malebranche Ash''''ari''). Dialogue-table stance: YES (structural analogue exists
+  in mainstream secular-adjacent philosophy literature, with the caveat that the analogue
+  is still framed theologically in this source, not a value-free naturalistic one).'
 fetched_from_url: https://plato.stanford.edu/entries/occasionalism/

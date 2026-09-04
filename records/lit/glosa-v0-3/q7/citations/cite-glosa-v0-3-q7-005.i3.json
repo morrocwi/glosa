@@ -1,0 +1,21 @@
+{
+ "vendor": "codex",
+ "fetched": {
+  "source": "arxiv",
+  "title": "Theological reasoning of Cantor's set theory",
+  "authors": [
+   "Kateřina Trlifajová"
+  ],
+  "year": "2024",
+  "abstract": "Discussions surrounding the nature of the infinite in mathematics have been underway for two millennia. Mathematicians, philosophers, and theologians have all taken part. The basic question has been whether the infinite exists only in potential or exists in actuality. Only at the end of the 19th century, a set theory was created that works with the actual infinite. Initially, this theory was rejected by other mathematicians. The creator behind the theory, the German mathematician Georg Cantor, felt all the more the need to challenge the long tradition that only recognised the potential infinite. In this, he received strong support from the interest among German neothomist philosophers, who, under the influence of the Encyclical of Pope Leo XIII, Aeterni Patris, began to take an interest in Cantor's work. Gradually, his theory even acquired approval from the Vatican theologians. Cantor was able to firmly defend his work and at the turn of the 20th century, he succeeded in gaining its acceptance. The storm that had accompanied its original rejection now accompanied its acceptance. The theory became the basis on which modern mathematics was and is still founded, even though the majority of mathematicians know nothing of its original theological justification. Set theory, which today rests on an axiomatic foundation, no longer poses the question of the existence of actual infinite sets. The answer is expressed in its basic axiom: natural numbers form an infinite set. No substanti"
+ },
+ "verdict": {
+  "metadata_matches": true,
+  "passage_plausible": true,
+  "claim_match": true,
+  "bearing": "SUPPORTS",
+  "reason": "Metadata title, year, and first author match. The quoted passage is mechanically found and aligns with the abstract/title. The excerpt directly addresses actual infinity as a mathematical question entangled with theological standpoint, matching the card's stated use.",
+  "passage_mechanical": "verbatim prefix found in fetched open text"
+ },
+ "date": "2026-09-04"
+}

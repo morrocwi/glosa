@@ -1,0 +1,17 @@
+{
+ "vendor": "codex",
+ "fetched": {
+  "source": "url-fetch",
+  "title": "",
+  "abstract": ""
+ },
+ "verdict": {
+  "metadata_matches": true,
+  "passage_plausible": false,
+  "claim_match": false,
+  "bearing": "CONTEXT_ONLY",
+  "reason": "No title/author/year metadata contradicts the card, but the fetched text is raw PDF/binary output and the quoted Thai passage was not mechanically found. With no comparable fetched text, passage plausibility and relevance to Q2 cannot be confirmed.",
+  "passage_mechanical": "quoted passage NOT found verbatim in fetched open text"
+ },
+ "date": "2026-09-04"
+}

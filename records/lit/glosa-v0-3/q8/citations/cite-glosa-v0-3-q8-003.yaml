@@ -9,46 +9,56 @@ fetched_at: '2026-09-05'
 metadata_verified: true
 metadata_verified_by: mechanical:page-metadata
 metadata_verified_at: '2026-09-05'
-claim_match_verified: true
-claim_match_verified_by: route:I0
+claim_match_verified: false
+claim_match_verified_by: route:codex
 claim_match_verified_at: '2026-09-05'
-exact_passage: >-
-  The metaphysical system requires a reason that actual occasions take on only a very specific
-  selection of the eternal objects that are available. Thus, God is introduced into the system as
-  the principle of limitation, which actual occasions require.
-page_or_locator: 'Internet Encyclopedia of Philosophy, "Process Philosophy" entry, section 5
-  ("God and the World")'
-line_or_paragraph: paragraph beginning "In his metaphysical works, Whitehead notes..." (roughly
-  line 158 of the fetched, HTML-stripped page text)
+exact_passage: The metaphysical system requires a reason that actual occasions take
+  on only a very specific selection of the eternal objects that are available. Thus,
+  God is introduced into the system as the principle of limitation, which actual occasions
+  require.
+page_or_locator: Internet Encyclopedia of Philosophy, "Process Philosophy" entry,
+  section 5 ("God and the World")
+line_or_paragraph: char offset 28415 of normalized fetched text (~paragraph 1); verbatim
+  prefix match
 scope: DIRECT_QUOTATION
 evidence_tier: Dr
-independence_class: I0
-who_verified: I0 (this session, same-session curl+strip read of the fetched IEP page; no
-  cross-vendor or independent human check has run yet)
+independence_class: I3
+who_verified: route:codex (cross-vendor AI; abstract/metadata level, not full text)
+  -- see cite-glosa-v0-3-q8-003.i3.json
 verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
 status: METADATA_OK
 xenon_ledger_ref: null
-disclosure: >-
-  I0 only (same session, not independently checked). Author/venue/title confirmed directly from
-  the fetched IEP page itself (peer-reviewed philosophy reference encyclopedia). This is a
-  CHALLENGE finding for Q8: process philosophy's account of "concrescence" -- an actual occasion
-  selecting/filtering among available possibilities ("eternal objects") to become determinate --
-  looks structurally identical to Q8's "Directed Selection" (why THIS possible outcome
-  actualizes among equally-possible alternatives), and superficially reads as a naturalistic,
-  non-Islamic account. But the SAME page states plainly that Whitehead's own system reintroduces
-  God specifically to do the selecting/limiting work ("God is introduced into the system as the
-  principle of limitation, which actual occasions require") -- i.e. even this apparently secular
-  process-philosophy framework does not achieve a theology-free structural analogue for Directed
-  Selection on its own terms; it relocates rather than removes the metaphysical dependence on a
-  privileged selecting agency. (The same page does note, at line 174, that some later process
-  philosophers such as Sherburne argue God can be excised from the system -- so this is a live,
-  unsettled internal debate within process philosophy itself, not a closed matter either way.)
+disclosure: 'I0 only (same session, not independently checked). Author/venue/title
+  confirmed directly from the fetched IEP page itself (peer-reviewed philosophy reference
+  encyclopedia). This is a CHALLENGE finding for Q8: process philosophy''s account
+  of "concrescence" -- an actual occasion selecting/filtering among available possibilities
+  ("eternal objects") to become determinate -- looks structurally identical to Q8''s
+  "Directed Selection" (why THIS possible outcome actualizes among equally-possible
+  alternatives), and superficially reads as a naturalistic, non-Islamic account. But
+  the SAME page states plainly that Whitehead''s own system reintroduces God specifically
+  to do the selecting/limiting work ("God is introduced into the system as the principle
+  of limitation, which actual occasions require") -- i.e. even this apparently secular
+  process-philosophy framework does not achieve a theology-free structural analogue
+  for Directed Selection on its own terms; it relocates rather than removes the metaphysical
+  dependence on a privileged selecting agency. (The same page does note, at line 174,
+  that some later process philosophers such as Sherburne argue God can be excised
+  from the system -- so this is a live, unsettled internal debate within process philosophy
+  itself, not a closed matter either way.) | I3 route (codex) judged from fetched
+  metadata/abstract + the card''s quoted passage, not full text: Metadata title matches
+  the fetched title and no author/year contradiction is shown. The exact passage is
+  mechanically found and plausible in the excerpt. But the actual content of hypothesis
+  Q8 is not provided, so I cannot verify that the source challenges or otherwise bears
+  on Q8 as claimed. | I3 route (codex) judged from fetched metadata/abstract + the
+  card''s quoted passage, not full text: Fetched title matches the card and the quoted
+  passage is mechanically present in the excerpt. But the hypothesis content is only
+  given as ''Q8'', so I cannot verify that the passage challenges or otherwise bears
+  on the hypothesis as claimed.'
 superseded_by: null
-notes: >-
-  Global North (University of Tennessee at Martin, hosting institution), EN, peer-reviewed
-  academic reference encyclopedia, metaphysics/philosophy of religion. Found via query family:
-  support ('process philosophy Whitehead actual entity concrescence selection among
-  possibilities') -- but the passage read functions as a CHALLENGE to Q8, not support.
-  Dialogue-table stance: NO (the closest available process-philosophy account of selection
-  reintroduces a God-equivalent "principle of limitation" rather than secularizing it cleanly).
+notes: 'Global North (University of Tennessee at Martin, hosting institution), EN,
+  peer-reviewed academic reference encyclopedia, metaphysics/philosophy of religion.
+  Found via query family: support (''process philosophy Whitehead actual entity concrescence
+  selection among possibilities'') -- but the passage read functions as a CHALLENGE
+  to Q8, not support. Dialogue-table stance: NO (the closest available process-philosophy
+  account of selection reintroduces a God-equivalent "principle of limitation" rather
+  than secularizing it cleanly).'
 fetched_from_url: https://iep.utm.edu/processp/

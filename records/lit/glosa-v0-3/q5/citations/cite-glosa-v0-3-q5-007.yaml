@@ -7,54 +7,62 @@ identifier:
 fetch_status: FETCHED
 fetched_at: '2026-09-05'
 metadata_verified: true
-metadata_verified_by: mechanical:curl+html-strip (CASRAI guide page fetched and rendered directly,
-  CASRAI is a research-data-standards nonprofit)
+metadata_verified_by: mechanical:curl+html-strip (CASRAI guide page fetched and rendered
+  directly, CASRAI is a research-data-standards nonprofit)
 metadata_verified_at: '2026-09-05'
 claim_match_verified: true
-claim_match_verified_by: self:same-session-read (I1, NOT independent -- awaiting a decorrelated I3
-  cross-vendor route to upgrade status to VERIFIED per Rule 17/S14; task instruction caps status at
-  METADATA_OK for this pass)
+claim_match_verified_by: route:codex
 claim_match_verified_at: '2026-09-05'
-exact_passage: It is not ethics approval. Institutional Review Board (IRB) or Research Ethics Committee
-  approval addresses participant protection and is a separate, usually mandatory, process; a preregistration
-  does not substitute for it, though many registries let you reference your ethics approval number.
-page_or_locator: 'casrai.org/guides/preregistration-of-a-study-protocol, "What preregistration is not"
-  section, as rendered on the page fetched 2026-09-05'
-line_or_paragraph: line 87 of the fetched/stripped page text
+exact_passage: It is not ethics approval. Institutional Review Board (IRB) or Research
+  Ethics Committee approval addresses participant protection and is a separate, usually
+  mandatory, process; a preregistration does not substitute for it, though many registries
+  let you reference your ethics approval number.
+page_or_locator: casrai.org/guides/preregistration-of-a-study-protocol, "What preregistration
+  is not" section, as rendered on the page fetched 2026-09-05
+line_or_paragraph: char offset 7291 of normalized fetched text (~paragraph 1); verbatim
+  prefix match
 scope: DIRECT_QUOTATION
 evidence_tier: Dr
-independence_class: I1
-who_verified: same-session AI (I1, non-independent) -- metadata confirmed mechanically, passage read
-  and matched to Q5 by the same session that ran the search; no cross-vendor I3 route run in this pass
+independence_class: I3
+who_verified: route:codex (cross-vendor AI; abstract/metadata level, not full text)
+  -- see cite-glosa-v0-3-q5-007.i3.json
 verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
-status: METADATA_OK
+status: VERIFIED
 xenon_ledger_ref: null
 disclosure: 'CASRAI "Preregistering a Study Protocol" guide (EN, grey/community methods-education
-  content, research-data-standards nonprofit). Fetched and read directly (curl + stdlib HTML stripper,
-  one page kept in memory at a time per RAM limit) 2026-09-05. Read as: explicitly warns against
-  conflating preregistration with ethics approval -- they are "a separate, usually mandatory, process"
-  and preregistration "does not substitute for it." This directly challenges any glosa gate design that
-  would treat a frozen-protocol timestamp as if it also certified ethics compliance, or that would let
-  a single combined field stand in for two genuinely independent approvals. stance vs Q5 as read: NO
-  (challenges collapsing the two into one gate/field; supports keeping ethics_approved_at and
-  protocol_frozen_at as separate, non-substitutable fields, consistent with what a minimal
-  timestamp-before check needs, but pushes back on treating the compound rule as a single clean
-  ordering). No novel/first/prior-art claim made about this source; comparison to Q5 is
-  same/different/orthogonal as stated in dialogue_table_stance. independence_class I1 (same session)
-  -- status METADATA_OK only, not VERIFIED.'
+  content, research-data-standards nonprofit). Fetched and read directly (curl + stdlib
+  HTML stripper, one page kept in memory at a time per RAM limit) 2026-09-05. Read
+  as: explicitly warns against conflating preregistration with ethics approval --
+  they are "a separate, usually mandatory, process" and preregistration "does not
+  substitute for it." This directly challenges any glosa gate design that would treat
+  a frozen-protocol timestamp as if it also certified ethics compliance, or that would
+  let a single combined field stand in for two genuinely independent approvals. stance
+  vs Q5 as read: NO (challenges collapsing the two into one gate/field; supports keeping
+  ethics_approved_at and protocol_frozen_at as separate, non-substitutable fields,
+  consistent with what a minimal timestamp-before check needs, but pushes back on
+  treating the compound rule as a single clean ordering). No novel/first/prior-art
+  claim made about this source; comparison to Q5 is same/different/orthogonal as stated
+  in dialogue_table_stance. independence_class I1 (same session) -- status METADATA_OK
+  only, not VERIFIED. | I3 route (codex) judged from fetched metadata/abstract + the
+  card''s quoted passage, not full text: Metadata title matches the fetched title
+  and no year/first-author contradiction is present. The passage is mechanically found
+  and consistent with the excerpt. It provides relevant context by distinguishing
+  preregistration from ethics approval, matching the card''s stated contextual use.'
 superseded_by: null
-notes: 'Diversity: language=en, source_type=grey_literature, geography_or_institution=Global (CASRAI,
-  Canada/UK-network research-standards nonprofit), search_route_or_database="web search / direct
-  org-site fetch, glosa-v0-3 Q5 scoping pass". dialogue_table_stance: no. what_it_separates: Separates
-  "preregistration" (a timestamped plan) from "ethics approval" (participant-protection review) as two
-  categorically different processes that happen to both produce a date, warning readers not to treat
-  one as evidence of the other. what_it_assumes: Assumes a general cross-disciplinary preregistration
-  audience (not specifically clinical/IRB-governed research), and that readers might otherwise conflate
-  registry timestamps with ethical clearance. what_it_would_say_against_us: A hard glosa gate keyed on
-  a single "timestamp-before" comparison risks implying that satisfying the timing check is itself
-  evidence of ethical soundness -- this source would say that is exactly the conflation to avoid; the
-  gate should check SEQUENCING only, and must not let a passed sequencing check be read as
-  ethics-substance verification.'
+notes: 'Diversity: language=en, source_type=grey_literature, geography_or_institution=Global
+  (CASRAI, Canada/UK-network research-standards nonprofit), search_route_or_database="web
+  search / direct org-site fetch, glosa-v0-3 Q5 scoping pass". dialogue_table_stance:
+  no. what_it_separates: Separates "preregistration" (a timestamped plan) from "ethics
+  approval" (participant-protection review) as two categorically different processes
+  that happen to both produce a date, warning readers not to treat one as evidence
+  of the other. what_it_assumes: Assumes a general cross-disciplinary preregistration
+  audience (not specifically clinical/IRB-governed research), and that readers might
+  otherwise conflate registry timestamps with ethical clearance. what_it_would_say_against_us:
+  A hard glosa gate keyed on a single "timestamp-before" comparison risks implying
+  that satisfying the timing check is itself evidence of ethical soundness -- this
+  source would say that is exactly the conflation to avoid; the gate should check
+  SEQUENCING only, and must not let a passed sequencing check be read as ethics-substance
+  verification.'
 citation_card_id: cite-glosa-v0-3-q5-007
 identifier_kind: OFFICIAL_URL
 claim_match_verification_route: NOT_YET
@@ -65,7 +73,8 @@ diversity:
   language: en
   discipline_or_tradition: research-data standards / meta-science methods education
   source_type: grey_literature
-  search_route_or_database: web search / direct org-site fetch, glosa-v0-3 Q5 scoping pass
+  search_route_or_database: web search / direct org-site fetch, glosa-v0-3 Q5 scoping
+    pass
   geography_or_institution: Global (CASRAI)
   venue_quality_index:
     index_name: null

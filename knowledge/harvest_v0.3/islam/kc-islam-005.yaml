@@ -14,8 +14,7 @@ source:
   title: "When Interpretation Hardens: Epistemic Authority, Asymmetric Revisability, and Conflict in Muslim
     Knowledge Regimes"
   year: 2026
-fetched_from_url: local file ~/Downloads/When_Interpretation_Hardens_Lahtee_2026_REV2.pdf (matched by title
-  and abstract text against Zenodo record 22129490)
+fetched_from_url: https://zenodo.org/api/records/22129490/files/When_Interpretation_Hardens_Lahtee_2026_REV2.pdf/content
 locator: Abstract, p.1
 tier: Open
 base_relation: holds

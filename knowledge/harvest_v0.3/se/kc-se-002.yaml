@@ -15,7 +15,7 @@ source:
   title: "Before Family Risk Becomes a Health Crisis: Trustworthy Premarital Health Education (T-PHE) as
     Primary Prevention Infrastructure — full paper, tier-one evidence dossier, and TIMA/FIMA 2026 abstract"
   year: 2026
-fetched_from_url: local (RE_T-PHE repo, private working tree)
+fetched_from_url: https://github.com/morrocwi/RE_T-PHE/blob/main/paper/sections/appendix_extended_evidence.tex
 locator: paper/sections/appendix_extended_evidence.tex, line 1
 tier: Open
 base_relation: holds

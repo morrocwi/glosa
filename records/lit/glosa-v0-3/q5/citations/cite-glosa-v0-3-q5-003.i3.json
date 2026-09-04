@@ -1,0 +1,15 @@
+{
+ "vendor": "codex",
+ "fetched": {
+  "source": "no-identifier"
+ },
+ "verdict": {
+  "metadata_matches": true,
+  "passage_plausible": false,
+  "claim_match": false,
+  "bearing": "CONTEXT_ONLY",
+  "reason": "No fetched text excerpt is available and the verbatim passage check found nothing, so the quotation cannot be verified or used for the claimed bearing. The provided mechanical metadata has no contradiction to title, year, or first author.",
+  "passage_mechanical": "no open full text fetched; abstract/metadata only"
+ },
+ "date": "2026-09-04"
+}

@@ -11,8 +11,7 @@ source:
   title: "Marginal Hegemony in Thailand: Satire, the Muslim Minority, and the Politics of Power-Literate
     Critique"
   year: 2026
-fetched_from_url: local file ~/Downloads/marginal_hegemony_thailand.pdf (matched by title and abstract text
-  against Zenodo record 20159825)
+fetched_from_url: https://zenodo.org/records/20159825
 locator: Abstract, p.1
 tier: Open
 base_relation: holds

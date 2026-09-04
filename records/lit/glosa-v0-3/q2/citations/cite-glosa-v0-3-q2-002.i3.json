@@ -1,0 +1,31 @@
+{
+ "vendor": "codex",
+ "fetched": {
+  "source": "crossref",
+  "title": "Analytic reproducibility in articles receiving open data badges at the journal\n                    <i>Psychological Science</i>\n                    : an observational study",
+  "authors": [
+   "Hardwicke",
+   "Bohn",
+   "MacDonald",
+   "Hembacher",
+   "Nuijten",
+   "Peloquin",
+   "deMayo",
+   "Long",
+   "Yoon",
+   "Frank"
+  ],
+  "year": 2021,
+  "container": "Royal Society Open Science",
+  "abstract": " \n                    For any scientific report, repeating the original analyses upon the original data should yield the original outcomes. We evaluated analytic reproducibility in 25\n                     Psychological Science \n                    articles awarded open data badges between 2014 and 2015. Initially, 16 (64%, 95% confidence interval [43,81]) articles contained at least one ‘major numerical discrepancy' (&gt;10% difference) prompting us to request input from original authors. Ultimately, target values were reproducible without author involvement for 9 (36% [20,59]) articles; reproducible with author involvement for 6 (24% [8,47]) articles; not fully reproducible with no substantive author response for 3 (12% [0,35]) articles; and not fully reproducible despite author involvement for 7 (28% [12,51]) articles. Overall, 37 major numerical discrepancies remained out of 789 checked values (5% [3,6]), but original conclusions did not appear affected. Non-reproducibility was primarily caused by unclear reporting of analytic procedures. These results highlight that open data alone is not sufficient to ensure analytic reproducibility.\n                   "
+ },
+ "verdict": {
+  "metadata_matches": true,
+  "passage_plausible": true,
+  "claim_match": true,
+  "bearing": "CHALLENGES",
+  "reason": "Metadata has no title/year/first-author contradiction. The quoted sentence appears in the fetched abstract and fits the study. The source evaluates reproducibility in open-data-badged articles and shows badges/open data did not ensure analytic reproducibility, so it challenges Q2 as described.",
+  "passage_mechanical": "verbatim prefix found in fetched open text"
+ },
+ "date": "2026-09-04"
+}

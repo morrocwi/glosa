@@ -7,53 +7,63 @@ identifier:
 fetch_status: FETCHED
 fetched_at: '2026-09-05'
 metadata_verified: true
-metadata_verified_by: mechanical:curl+html-strip (Wikipedia page fetched directly, title and section confirmed
-  on the fetched page)
+metadata_verified_by: mechanical:curl+html-strip (Wikipedia page fetched directly,
+  title and section confirmed on the fetched page)
 metadata_verified_at: '2026-09-05'
 claim_match_verified: true
-claim_match_verified_by: self:same-session-read (I1, NOT independent -- awaiting a decorrelated I3 cross-vendor
-  route to upgrade status to VERIFIED per Rule 17/S14; task instruction caps status at METADATA_OK for
-  this pass)
+claim_match_verified_by: route:codex
 claim_match_verified_at: '2026-09-05'
-exact_passage: Aristotle postulated that an actual infinity was impossible, because if it were possible,
-  then something would have attained infinite magnitude, and would be "bigger than the heavens." However,
-  he said, mathematics relating to infinity was not deprived of its applicability by this impossibility,
-  because mathematicians did not need the infinite for their theorems, just a finite, arbitrarily large
-  magnitude.
-page_or_locator: en.wikipedia.org, 'Actual and potential infinity', section on Aristotle, as fetched 2026-09-05
-line_or_paragraph: line 224 of the fetched/stripped page text
+exact_passage: Aristotle postulated that an actual infinity was impossible, because
+  if it were possible, then something would have attained infinite magnitude, and
+  would be "bigger than the heavens." However, he said, mathematics relating to infinity
+  was not deprived of its applicability by this impossibility, because mathematicians
+  did not need the infinite for their theorems, just a finite, arbitrarily large magnitude.
+page_or_locator: en.wikipedia.org, 'Actual and potential infinity', section on Aristotle,
+  as fetched 2026-09-05
+line_or_paragraph: char offset 4923 of normalized fetched text (~paragraph 1); verbatim
+  prefix match
 scope: DIRECT_QUOTATION
 evidence_tier: Dr
-independence_class: I1
-who_verified: same-session AI (I1, non-independent) -- metadata confirmed mechanically, passage read and
-  matched to Q7 by the same session that ran the search; no cross-vendor I3 route run in this pass
+independence_class: I3
+who_verified: route:codex (cross-vendor AI; abstract/metadata level, not full text)
+  -- see cite-glosa-v0-3-q7-001.i3.json
 verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
-status: METADATA_OK
+status: VERIFIED
 xenon_ledger_ref: null
-disclosure: 'Wikipedia, ''Actual and potential infinity'' (EN, community-maintained reference). Fetched
-  and read directly (curl + stdlib HTML stripper, one page kept in memory at a time per RAM limit) 2026-09-05.
-  Read as: Aristotle rejects actual infinity on a magnitude/coherence argument (nothing can be "bigger
-  than the heavens") -- explicitly NOT a theological or transcendence argument, and mathematics does not
-  need actual infinity to function. stance vs Q7 as read: CHALLENGES the premise that infinity-talk needs
-  a transcendent-ground framing at all -- the oldest and most influential rejection of actual infinity
-  in the Western tradition proceeds without invoking or denying a transcendent ground. independence_class
-  I1 (same session) -- status METADATA_OK only, not VERIFIED: no decorrelated I3 cross-vendor route has
-  checked this card yet. No novel/first/prior-art claim made about this source; comparison to Q7 is same/different/orthogonal
-  as stated in dialogue_table_stance.'
+disclosure: 'Wikipedia, ''Actual and potential infinity'' (EN, community-maintained
+  reference). Fetched and read directly (curl + stdlib HTML stripper, one page kept
+  in memory at a time per RAM limit) 2026-09-05. Read as: Aristotle rejects actual
+  infinity on a magnitude/coherence argument (nothing can be "bigger than the heavens")
+  -- explicitly NOT a theological or transcendence argument, and mathematics does
+  not need actual infinity to function. stance vs Q7 as read: CHALLENGES the premise
+  that infinity-talk needs a transcendent-ground framing at all -- the oldest and
+  most influential rejection of actual infinity in the Western tradition proceeds
+  without invoking or denying a transcendent ground. independence_class I1 (same session)
+  -- status METADATA_OK only, not VERIFIED: no decorrelated I3 cross-vendor route
+  has checked this card yet. No novel/first/prior-art claim made about this source;
+  comparison to Q7 is same/different/orthogonal as stated in dialogue_table_stance.
+  | I3 route (codex) judged from fetched metadata/abstract + the card''s quoted passage,
+  not full text: Fetched title matches the card URL/title, and the mechanical passage
+  check confirms the quoted passage appears in the fetched text. The excerpt is relevant
+  context for distinguishing actual infinite magnitude from potential infinite process,
+  but it is grey/reference context rather than direct evidence for the hypothesis.'
 superseded_by: null
-notes: 'Diversity: language=en, source_type=grey_literature, geography_or_institution=US (global reference),
-  search_route_or_database="web search / direct fetch, glosa-v0-3 Q7 scoping pass". dialogue_table_stance:
-  no. what_it_separates: Separates infinite MAGNITUDE (actual infinity, rejected as incoherent) from infinite
-  PROCESS (potential infinity, accepted and sufficient for mathematics) -- a purely mathematical/logical
-  separation with no transcendence category at all. what_it_assumes: Assumes "infinite" primarily means
-  a magnitude or a completed collection; does not consider infinity as an attribute of a non-spatial, non-quantitative
-  Absolute (the theological move Q7 asks about) as even a candidate reading. what_it_would_say_against_us:
-  The single most influential ancient argument about infinity in mathematics settles the actual/potential
-  question on purely magnitude-and-coherence grounds, never invoking or requiring a transcendent ground
-  -- this suggests the transcendental-ground reading of infinity is a SEPARATE tradition (theological/Neoplatonist)
-  layered onto the mathematical debate, not something the mathematical debate itself generates or needs,
-  which argues for treating Q7''s stance as an adjacent tension to flag rather than a rival the core mathematical-infinity
-  discourse must reconcile with.'
+notes: 'Diversity: language=en, source_type=grey_literature, geography_or_institution=US
+  (global reference), search_route_or_database="web search / direct fetch, glosa-v0-3
+  Q7 scoping pass". dialogue_table_stance: no. what_it_separates: Separates infinite
+  MAGNITUDE (actual infinity, rejected as incoherent) from infinite PROCESS (potential
+  infinity, accepted and sufficient for mathematics) -- a purely mathematical/logical
+  separation with no transcendence category at all. what_it_assumes: Assumes "infinite"
+  primarily means a magnitude or a completed collection; does not consider infinity
+  as an attribute of a non-spatial, non-quantitative Absolute (the theological move
+  Q7 asks about) as even a candidate reading. what_it_would_say_against_us: The single
+  most influential ancient argument about infinity in mathematics settles the actual/potential
+  question on purely magnitude-and-coherence grounds, never invoking or requiring
+  a transcendent ground -- this suggests the transcendental-ground reading of infinity
+  is a SEPARATE tradition (theological/Neoplatonist) layered onto the mathematical
+  debate, not something the mathematical debate itself generates or needs, which argues
+  for treating Q7''s stance as an adjacent tension to flag rather than a rival the
+  core mathematical-infinity discourse must reconcile with.'
 citation_card_id: cite-glosa-v0-3-q7-001
 identifier_kind: OFFICIAL_URL
 claim_match_verification_route: NOT_YET

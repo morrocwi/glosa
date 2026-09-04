@@ -1,0 +1,17 @@
+{
+ "vendor": "codex",
+ "fetched": {
+  "source": "url-fetch",
+  "title": "Preregistering a Study Protocol: A Guide — CASRAI",
+  "abstract": "What preregistration means, OSF Registries/AsPredicted/ClinicalTrials.gov, its link to Registered Reports, and why funders and journals now expect it."
+ },
+ "verdict": {
+  "metadata_matches": true,
+  "passage_plausible": true,
+  "claim_match": true,
+  "bearing": "CONTEXT_ONLY",
+  "reason": "Metadata title matches the fetched title and no year/first-author contradiction is present. The passage is mechanically found and consistent with the excerpt. It provides relevant context by distinguishing preregistration from ethics approval, matching the card's stated contextual use.",
+  "passage_mechanical": "verbatim prefix found in fetched open text"
+ },
+ "date": "2026-09-04"
+}

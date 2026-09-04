@@ -9,45 +9,52 @@ fetched_at: '2026-09-05'
 metadata_verified: true
 metadata_verified_by: mechanical:page-metadata
 metadata_verified_at: '2026-09-05'
-claim_match_verified: true
-claim_match_verified_by: route:I0
+claim_match_verified: false
+claim_match_verified_by: route:codex
 claim_match_verified_at: '2026-09-05'
-exact_passage: >-
-  there could not be electricity, now or ever, if there were no electrons. So the existence of
-  electricity depends on the existence of a very specific kind of particle, the electron. This
-  second type of dependence is also existential, but to separate it from the rigid dependence in
-  (1), we may call it generic existential dependence.
-page_or_locator: 'Stanford Encyclopedia of Philosophy, "Ontological Dependence" entry, section
-  distinguishing rigid vs. generic existential dependence, early in the main body (before
-  section 3, "Asymmetrical Existential Dependence")'
-line_or_paragraph: paragraph beginning "the type of dependence in question is as rigid
-  existential dependence..." (roughly line 215-228 of the fetched, HTML-stripped page text)
+exact_passage: there could not be electricity, now or ever, if there were no electrons.
+  So the existence of electricity depends on the existence of a very specific kind
+  of particle, the electron. This second type of dependence is also existential, but
+  to separate it from the rigid dependence in (1), we may call it generic existential
+  dependence.
+page_or_locator: Stanford Encyclopedia of Philosophy, "Ontological Dependence" entry,
+  section distinguishing rigid vs. generic existential dependence, early in the main
+  body (before section 3, "Asymmetrical Existential Dependence")
+line_or_paragraph: char offset 6974 of normalized fetched text (~paragraph 1); verbatim
+  prefix match
 scope: DIRECT_QUOTATION
 evidence_tier: Dr
-independence_class: I0
-who_verified: I0 (this session, same-session curl+strip read of the fetched SEP page; no
-  cross-vendor or independent human check has run yet)
+independence_class: I3
+who_verified: route:codex (cross-vendor AI; abstract/metadata level, not full text)
+  -- see cite-glosa-v0-3-q8-002.i3.json
 verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
 status: METADATA_OK
 xenon_ledger_ref: null
-disclosure: >-
-  I0 only (same session, not independently checked). Author/venue/title confirmed directly from
-  the fetched SEP page itself. This is a fully theology-neutral, formal analytic-metaphysics
-  vocabulary (rigid existential dependence, generic existential dependence, identity-dependence)
-  built entirely on secular illustrative cases (electrons/electricity, singleton sets) with no
-  reference to God, revelation, or any confessional commitment anywhere in the definitional
-  apparatus read here -- SUPPORT for Q8's "Dependent Identity" register specifically: the formal
-  shape (an entity's individuation/identity being constituted by, not merely caused by, another
-  entity) already has a mature, portable, non-theological technical vocabulary in contemporary
-  analytic philosophy (grounding theory / ontological dependence), independent of any Ash'ari or
-  other theological source. This does not by itself show the OTHER two Q8 constructs (Dependent
-  Order, Directed Selection) transfer equally cleanly -- this card supports only the Dependent
-  Identity register.
+disclosure: 'I0 only (same session, not independently checked). Author/venue/title
+  confirmed directly from the fetched SEP page itself. This is a fully theology-neutral,
+  formal analytic-metaphysics vocabulary (rigid existential dependence, generic existential
+  dependence, identity-dependence) built entirely on secular illustrative cases (electrons/electricity,
+  singleton sets) with no reference to God, revelation, or any confessional commitment
+  anywhere in the definitional apparatus read here -- SUPPORT for Q8''s "Dependent
+  Identity" register specifically: the formal shape (an entity''s individuation/identity
+  being constituted by, not merely caused by, another entity) already has a mature,
+  portable, non-theological technical vocabulary in contemporary analytic philosophy
+  (grounding theory / ontological dependence), independent of any Ash''ari or other
+  theological source. This does not by itself show the OTHER two Q8 constructs (Dependent
+  Order, Directed Selection) transfer equally cleanly -- this card supports only the
+  Dependent Identity register. | I3 route (codex) judged from fetched metadata/abstract
+  + the card''s quoted passage, not full text: Title and URL match the fetched metadata,
+  and the quoted passage is mechanically found in the excerpt. But the hypothesis
+  is only labeled Q8 with no content provided, so I cannot verify that the source
+  bears on it as claimed. | I3 route (codex) judged from fetched metadata/abstract
+  + the card''s quoted passage, not full text: The fetched title matches and the quoted
+  passage is mechanically present/plausible. But the hypothesis is only labeled Q8
+  with no substantive content, so I cannot verify that the passage supports the claimed
+  dependent-identity analogue. Under the uncertainty rule, claim_match is false.'
 superseded_by: null
-notes: >-
-  Global North (Stanford University), EN, peer-reviewed/editorially-curated academic reference
-  encyclopedia, analytic metaphysics. Found via query family: support ('relational ontology
-  grounding dependent identity metaphysics analytic philosophy'). Dialogue-table stance: YES
-  (direct, clean theology-neutral structural analogue for the Dependent Identity register
-  specifically).
+notes: 'Global North (Stanford University), EN, peer-reviewed/editorially-curated
+  academic reference encyclopedia, analytic metaphysics. Found via query family: support
+  (''relational ontology grounding dependent identity metaphysics analytic philosophy'').
+  Dialogue-table stance: YES (direct, clean theology-neutral structural analogue for
+  the Dependent Identity register specifically).'
 fetched_from_url: https://plato.stanford.edu/entries/dependence-ontological/

@@ -1,0 +1,24 @@
+{
+ "vendor": "codex",
+ "fetched": {
+  "source": "crossref",
+  "title": "Can institutional theory be refuted, replaced or modified?",
+  "authors": [
+   "Aksom",
+   "Zhylinska",
+   "Gaidai"
+  ],
+  "year": 2019,
+  "container": "International Journal of Organizational Analysis",
+  "abstract": " \n                     Purpose \n                     This paper aims to demonstrating that the former new institutional theory of isomorphism and decoupling cannot be extended, modified or refuted as it is a closed theory. By analyzing the structure of this former version of institutional theory and its numerous modern competitors (institutional entrepreneurship, institutional work and institutional logics theories) it is argued that these alternative theories demonstrate even less explanatory and predictive power and do not refute or extend their predecessor. The rise of new organizational theories can have no other effect on classic institutional theory than to limit the domain of its applicability. In turn, there are a number of principles and conditions that future theories should meet to be accepted as progressive advancements. \n                   \n                   \n                     Design/methodology/approach \n                     The paper provides a review of relevant organizational and philosophical literature on theory construction and scientific progress in organizational research and offers a set of principles and demands for those new theories that seek to challenge new institutionalism. \n                   \n                   \n                     Findings \n                     The authors show that the former institutional theory satisfies two main criteria that any scientific theory should conform with following it is useful and falsifiable in term of gi"
+ },
+ "verdict": {
+  "metadata_matches": true,
+  "passage_plausible": true,
+  "claim_match": true,
+  "bearing": "CHALLENGES",
+  "reason": "Metadata title, year, venue, and first author match. The quoted passage appears verbatim in the provided Crossref abstract. The passage bears on Q1 as described because it discusses limits on institutional theory’s domain of applicability, challenging broad cross-domain generalization.",
+  "passage_mechanical": "no open full text fetched; abstract/metadata only"
+ },
+ "date": "2026-09-04"
+}

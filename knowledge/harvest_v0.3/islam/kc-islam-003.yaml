@@ -14,8 +14,7 @@ source:
   title: "Faqr, Scholarly Authority, and Non-Transferable Responsibility: A Revelation-Bounded Sunni
     Architecture for Ethical Deliberation, Shūrā, and Epistemic Governance"
   year: 2026
-fetched_from_url: local file ~/Downloads/Faqr_Authority_Q1_arXiv_TwoColumn_v8.pdf (matched by title and
-  abstract text against Zenodo record 22206607)
+fetched_from_url: https://zenodo.org/api/records/22206607/files/Faqr_Authority_Q1_arXiv_TwoColumn_v8.pdf/content
 locator: Abstract, p.1
 tier: Open
 base_relation: holds

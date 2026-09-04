@@ -1,0 +1,17 @@
+{
+ "vendor": "codex",
+ "fetched": {
+  "source": "url-fetch",
+  "title": "Registered Reports",
+  "abstract": "Peer review before results are known to align scientific values and practices."
+ },
+ "verdict": {
+  "metadata_matches": true,
+  "passage_plausible": true,
+  "claim_match": true,
+  "bearing": "SUPPORTS",
+  "reason": "Metadata does not contradict the card, and the quoted passage is mechanically present. The source describes Registered Reports as pre-data-collection peer review of research question and methodology, matching the card’s claimed use as a mechanism description relevant to Q2.",
+  "passage_mechanical": "verbatim prefix found in fetched open text"
+ },
+ "date": "2026-09-04"
+}

@@ -1,0 +1,17 @@
+{
+ "vendor": "codex",
+ "fetched": {
+  "source": "url-fetch",
+  "title": "Actual and potential infinity - Wikipedia",
+  "abstract": ""
+ },
+ "verdict": {
+  "metadata_matches": true,
+  "passage_plausible": true,
+  "claim_match": true,
+  "bearing": "CONTEXT_ONLY",
+  "reason": "Fetched title matches the card URL/title, and the mechanical passage check confirms the quoted passage appears in the fetched text. The excerpt is relevant context for distinguishing actual infinite magnitude from potential infinite process, but it is grey/reference context rather than direct evidence for the hypothesis.",
+  "passage_mechanical": "verbatim prefix found in fetched open text"
+ },
+ "date": "2026-09-04"
+}

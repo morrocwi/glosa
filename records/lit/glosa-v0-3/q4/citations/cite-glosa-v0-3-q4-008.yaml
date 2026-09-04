@@ -10,43 +10,51 @@ metadata_verified: true
 metadata_verified_by: manual:I0
 metadata_verified_at: '2026-09-05'
 claim_match_verified: true
-claim_match_verified_by: route:I0
+claim_match_verified_by: route:codex
 claim_match_verified_at: '2026-09-05'
-exact_passage: >-
-  Grey literature includes productions in print and electronic formats by governments, academics,
-  business and industry that are not part of the peer-reviewed publications from commercial
-  publishers. ... The AACODS checklist (authority, accuracy, coverage, objectivity, date,
-  significance) is designed to enable evaluation and critical appraisal of such grey literature (25).
-page_or_locator: "ANNEX 4. Selection of tools for appraising evidence, \"Appraising grey literature\" subsection (NCBI Bookshelf, from Karlsson LE, Takahashi R, WHO Health Evidence Network Synthesis Report No. 50, 2017)"
-line_or_paragraph: paragraph immediately following the "Appraising grey literature" heading in the stripped HTML fetch
+exact_passage: Grey literature includes productions in print and electronic formats
+  by governments, academics, business and industry that are not part of the peer-reviewed
+  publications from commercial publishers. ... The AACODS checklist (authority, accuracy,
+  coverage, objectivity, date, significance) is designed to enable evaluation and
+  critical appraisal of such grey literature (25).
+page_or_locator: ANNEX 4. Selection of tools for appraising evidence, "Appraising
+  grey literature" subsection (NCBI Bookshelf, from Karlsson LE, Takahashi R, WHO
+  Health Evidence Network Synthesis Report No. 50, 2017)
+line_or_paragraph: char offset 3006 of normalized fetched text (~paragraph 1); verbatim
+  prefix match
 scope: DIRECT_QUOTATION
 evidence_tier: Dr
-independence_class: I0
-who_verified: I0 (this session, same-session read of the mechanically fetched HTML page; no
-  cross-vendor or independent human check has run yet)
+independence_class: I3
+who_verified: route:codex (cross-vendor AI; abstract/metadata level, not full text)
+  -- see cite-glosa-v0-3-q4-008.i3.json
 verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
-status: METADATA_OK
+status: VERIFIED
 xenon_ledger_ref: null
-disclosure: >-
-  I0 only (same session, not independently checked). No DOI is present on the NCBI Bookshelf page
-  itself; identifier is the official NCBI Bookshelf URL (fetched directly, HTTP 200). Authors/
-  publisher/year confirmed from the page's own reference list: Karlsson LE, Takahashi R, "A
-  Resource for Developing an Evidence Synthesis Report for Policy-Making" [Internet], Copenhagen:
-  WHO Regional Office for Europe; 2017 (Health Evidence Network Synthesis Report, No. 50). Full
-  text fetched and read directly (curl, HTML stripped to text). This is a grey/institutional WHO
+disclosure: 'I0 only (same session, not independently checked). No DOI is present
+  on the NCBI Bookshelf page itself; identifier is the official NCBI Bookshelf URL
+  (fetched directly, HTTP 200). Authors/ publisher/year confirmed from the page''s
+  own reference list: Karlsson LE, Takahashi R, "A Resource for Developing an Evidence
+  Synthesis Report for Policy-Making" [Internet], Copenhagen: WHO Regional Office
+  for Europe; 2017 (Health Evidence Network Synthesis Report, No. 50). Full text fetched
+  and read directly (curl, HTML stripped to text). This is a grey/institutional WHO
   methods guide (not a peer-reviewed journal article) built specifically for policy-relevant
-  evidence synthesis. It is a CHALLENGE to Q4's premise, consistent with card 005: rather than
-  proposing any distinct flag-and-request-tier step for tier-undeclared grey/policy sources, this
-  WHO guidance simply directs reviewers to the existing AACODS checklist as the standard appraisal
-  tool for all grey literature -- treating undeclared-tier policy documents as a category already
-  covered by generic critical-appraisal practice, not as a gap needing a new named intake rule.
+  evidence synthesis. It is a CHALLENGE to Q4''s premise, consistent with card 005:
+  rather than proposing any distinct flag-and-request-tier step for tier-undeclared
+  grey/policy sources, this WHO guidance simply directs reviewers to the existing
+  AACODS checklist as the standard appraisal tool for all grey literature -- treating
+  undeclared-tier policy documents as a category already covered by generic critical-appraisal
+  practice, not as a gap needing a new named intake rule. | I3 route (codex) judged
+  from fetched metadata/abstract + the card''s quoted passage, not full text: finite_diagnostic:
+  Fetched title does not contradict the card; excerpt contains the quoted grey-literature/AACODS
+  passage. It bears only as context for Q4’s policy/grey-literature source genre,
+  not as hypothesis-proving evidence.'
 superseded_by: null
-notes: >-
-  Global North institutional authorship (WHO Regional Office for Europe) but globally-facing
-  methods guidance intended for policy-making synthesis work, EN, grey/institutional report
-  (itself an example of the "policy-brief-style source" genre Q4 is about), discipline: evidence
-  synthesis methodology for policy. Found via query family: support ('GRADE evidence quality grey
-  literature policy brief undeclared tier appraisal'). Dialogue-table stance: NO. This card is a
-  second grey/community-tier source (alongside card 005) and is itself a worked example of the
-  Q4 genre (a policy-facing WHO technical report).
+notes: 'Global North institutional authorship (WHO Regional Office for Europe) but
+  globally-facing methods guidance intended for policy-making synthesis work, EN,
+  grey/institutional report (itself an example of the "policy-brief-style source"
+  genre Q4 is about), discipline: evidence synthesis methodology for policy. Found
+  via query family: support (''GRADE evidence quality grey literature policy brief
+  undeclared tier appraisal''). Dialogue-table stance: NO. This card is a second grey/community-tier
+  source (alongside card 005) and is itself a worked example of the Q4 genre (a policy-facing
+  WHO technical report).'
 fetched_from_url: https://www.ncbi.nlm.nih.gov/books/NBK453537/

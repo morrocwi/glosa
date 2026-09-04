@@ -9,43 +9,54 @@ fetched_at: '2026-09-05'
 metadata_verified: true
 metadata_verified_by: mechanical:europepmc
 metadata_verified_at: '2026-09-05'
-claim_match_verified: true
-claim_match_verified_by: route:I0
+claim_match_verified: false
+claim_match_verified_by: route:codex
 claim_match_verified_at: '2026-09-05'
-exact_passage: >-
-  The complete text evidence-based CPGs included was then classified according to the evidence
-  grading methodology employed: Oxford, Scottish Intercollegiate Guidelines Network (SIGN),
-  Grading of Recommendations Assessment, Development and Evaluation (GRADE), other methodologies
-  and others which did not define a specific methodology.
-page_or_locator: "Materials and methods, subsection \"Data extraction, synthesis and assessment\" (Europe PMC fullTextXML, PMC6380043)"
-line_or_paragraph: paragraph 34 of the stripped full-text (first sentence of the Data extraction, synthesis and assessment subsection)
+exact_passage: 'The complete text evidence-based CPGs included was then classified
+  according to the evidence grading methodology employed: Oxford, Scottish Intercollegiate
+  Guidelines Network (SIGN), Grading of Recommendations Assessment, Development and
+  Evaluation (GRADE), other methodologies and others which did not define a specific
+  methodology.'
+page_or_locator: Materials and methods, subsection "Data extraction, synthesis and
+  assessment" (Europe PMC fullTextXML, PMC6380043)
+line_or_paragraph: char offset 9860 of normalized fetched text (~paragraph 1); verbatim
+  prefix match
 scope: DIRECT_QUOTATION
 evidence_tier: Dr
-independence_class: I0
-who_verified: I0 (this session, same-session read of the mechanically fetched Europe PMC full-text
-  XML; no cross-vendor or independent human check has run yet)
+independence_class: I3
+who_verified: route:codex (cross-vendor AI; abstract/metadata level, not full text)
+  -- see cite-glosa-v0-3-q4-003.i3.json
 verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
 status: METADATA_OK
 xenon_ledger_ref: null
-disclosure: >-
-  I0 only (same session, not independently checked). Title/authors/journal/year/DOI/open-access
-  status confirmed mechanically via Europe PMC (query PMCID:PMC6380043, resultType=core; isOA=Y):
-  Cabrera PA, Pardo R, "Review of evidence based clinical practice guidelines developed in Latin
-  America and Caribbean during the last decade: an analysis of the methods for grading quality of
-  evidence and topic prioritization," Globalization and Health, 2019. Full text fetched and read
-  from Europe PMC's fullTextXML endpoint (open access, CC BY). This source is a Global South (Latin
-  America/Caribbean, corresponding author affiliation: Universidad Nacional de Colombia) empirical
-  study. It is a CHALLENGE to Q4's premise that a distinct flag-and-request-tier intake step is
-  needed: this real screening pipeline of 9776 documents already has a working, mechanical answer
-  to "no declared tier" -- it sorts every document into a named bucket, including an explicit
-  residual bucket "others which did not define a specific methodology," and proceeds with analysis
-  restricted to the buckets it can grade, rather than pausing the pipeline to flag-and-request a
-  tier from the source. This is evidence that existing practice already resolves Q4's case by
-  classify-and-set-aside rather than by a distinct request-back-to-source step.
+disclosure: 'I0 only (same session, not independently checked). Title/authors/journal/year/DOI/open-access
+  status confirmed mechanically via Europe PMC (query PMCID:PMC6380043, resultType=core;
+  isOA=Y): Cabrera PA, Pardo R, "Review of evidence based clinical practice guidelines
+  developed in Latin America and Caribbean during the last decade: an analysis of
+  the methods for grading quality of evidence and topic prioritization," Globalization
+  and Health, 2019. Full text fetched and read from Europe PMC''s fullTextXML endpoint
+  (open access, CC BY). This source is a Global South (Latin America/Caribbean, corresponding
+  author affiliation: Universidad Nacional de Colombia) empirical study. It is a CHALLENGE
+  to Q4''s premise that a distinct flag-and-request-tier intake step is needed: this
+  real screening pipeline of 9776 documents already has a working, mechanical answer
+  to "no declared tier" -- it sorts every document into a named bucket, including
+  an explicit residual bucket "others which did not define a specific methodology,"
+  and proceeds with analysis restricted to the buckets it can grade, rather than pausing
+  the pipeline to flag-and-request a tier from the source. This is evidence that existing
+  practice already resolves Q4''s case by classify-and-set-aside rather than by a
+  distinct request-back-to-source step. | I3 route (codex) judged from fetched metadata/abstract
+  + the card''s quoted passage, not full text: Metadata does not contradict title/year/first
+  author, and the fetched excerpt contains the quoted passage. But the hypothesis
+  is only labeled Q4 with no substantive claim, so relevance or support/challenge
+  cannot be independently established from the provided material. | I3 route (codex)
+  judged from fetched metadata/abstract + the card''s quoted passage, not full text:
+  Metadata title/year/first author align, and the fetched excerpt contains the quoted
+  passage. The passage concerns evidence-grading methods in Latin America/Caribbean
+  CPGs, but Q4 is undefined here, so I cannot verify that it matches the hypothesis.'
 superseded_by: null
-notes: >-
-  Global South (Colombia / Latin America and Caribbean), EN, peer-reviewed journal article,
-  open access (CC BY), discipline: health policy / clinical guideline methodology. Found via query
-  family: challenge ('health policy brief evidence grading Global South WHO PAHO grey literature
-  guidance'). Dialogue-table stance: NO. diversity: global_south
+notes: 'Global South (Colombia / Latin America and Caribbean), EN, peer-reviewed journal
+  article, open access (CC BY), discipline: health policy / clinical guideline methodology.
+  Found via query family: challenge (''health policy brief evidence grading Global
+  South WHO PAHO grey literature guidance''). Dialogue-table stance: NO. diversity:
+  global_south'
 fetched_from_url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6380043/fullTextXML

@@ -1,0 +1,27 @@
+{
+ "vendor": "codex",
+ "fetched": {
+  "source": "crossref",
+  "title": "Mapping the regulatory landscape of AI in healthcare in Africa",
+  "authors": [
+   "Townsend",
+   "Sihlahla",
+   "Naidoo",
+   "Naidoo",
+   "Donnelly",
+   "Thaldar"
+  ],
+  "year": 2023,
+  "container": "Frontiers in Pharmacology",
+  "abstract": " \n                     Introduction: \n                    Artificial intelligence (AI)-enhanced technology has seen unprecedented expansion in the recent past. This growth brings with it huge opportunities for the positive transformation of the economy, business, healthcare, and society. However, a critical question is whether, and to what extent, regulatory measures and mechanisms have been implemented to safeguard its design, development, and deployment. This paper offers a scoping exercise that maps the regulatory landscape of AI in healthcare (including health research) in certain African countries.\n                   \n                   \n                     Methods: \n                    This research is conducted across 12 African countries: Botswana, Cameroon, The Gambia, Ghana, Kenya, Malawi, Nigeria, Rwanda, South Africa, Tanzania, Uganda, and Zimbabwe. As limited specific AI legislation is found in these African countries, and because AI is informed by ancillary regulatory frameworks, we include data protection, digital health, consumer protection, and intellectual property in our research. A scoping review method was applied with a manual search of digital libraries with search terms customised for each repository consisting of core search terms for the various topics, including, among others, “law,” “regulation,” “artificial intelligence,” “data protection,” “intellectual property,” and “digital health”.\n                   \n                   \n                    "
+ },
+ "verdict": {
+  "metadata_matches": true,
+  "passage_plausible": true,
+  "claim_match": true,
+  "bearing": "CHALLENGES",
+  "reason": "Title, year, and first author match. The fetched excerpt contains the quoted passage verbatim and aligns with the article scope. The excerpt also supports the card’s described distinction: no explicit AI/algorithm definitions, with software included only in South Africa, Kenya, and Uganda.",
+  "passage_mechanical": "verbatim prefix found in fetched open text"
+ },
+ "date": "2026-09-04"
+}

@@ -1,0 +1,17 @@
+{
+ "vendor": "codex",
+ "fetched": {
+  "source": "url-fetch",
+  "title": "",
+  "abstract": ""
+ },
+ "verdict": {
+  "metadata_matches": true,
+  "passage_plausible": false,
+  "claim_match": false,
+  "bearing": "CONTEXT_ONLY",
+  "reason": "Metadata does not contradict the card, but fetched text is raw PDF/binary with no usable extracted text; verbatim passage search failed. With no comparable passage evidence, the contextual claim cannot be independently matched from the supplied material.",
+  "passage_mechanical": "quoted passage NOT found verbatim in fetched open text"
+ },
+ "date": "2026-09-04"
+}

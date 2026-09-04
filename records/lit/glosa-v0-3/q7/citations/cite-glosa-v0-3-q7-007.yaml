@@ -7,63 +7,81 @@ identifier:
 fetch_status: FETCHED
 fetched_at: '2026-09-05'
 metadata_verified: true
-metadata_verified_by: 'mechanical:curl (live ida2aat.com returned "Database Error / Error establishing
-  a database connection"; live mirror www.ida2at.com returned HTTP 403 Cloudflare block -- both logged
-  NOT_OBTAINED for the live URL; a Wayback Machine snapshot at web.archive.org, timestamp 20241211085532,
-  of the ida2aat.com article was fetched successfully via curl and used as fetched_from_url, title confirmed
-  on the archived page)'
+metadata_verified_by: mechanical:curl (live ida2aat.com returned "Database Error /
+  Error establishing a database connection"; live mirror www.ida2at.com returned HTTP
+  403 Cloudflare block -- both logged NOT_OBTAINED for the live URL; a Wayback Machine
+  snapshot at web.archive.org, timestamp 20241211085532, of the ida2aat.com article
+  was fetched successfully via curl and used as fetched_from_url, title confirmed
+  on the archived page)
 metadata_verified_at: '2026-09-05'
-claim_match_verified: true
-claim_match_verified_by: self:same-session-read (I1, NOT independent -- awaiting a decorrelated I3 cross-vendor
-  route to upgrade status to VERIFIED per Rule 17/S14; task instruction caps status at METADATA_OK for
-  this pass)
+claim_match_verified: false
+claim_match_verified_by: route:codex
 claim_match_verified_at: '2026-09-05'
-exact_passage: بعد أرسطو بستمائة عام، ظهرت أول إشارة للانهاية الفعلية في صورة دينية عند أفلوطين، فيلسوف
-  الأفلاطونية الجديدة، عندما ساوى بين الإله وبين المطلق اللانهائي بطريقة غير مباشرة. فقال إن أي فكرة نقوم
-  بتجريدها من خبراتنا المتناهية لا تنطبق على الإله؛ أي أن الإله مطلق لانهائي.
-page_or_locator: 'ida2aat.com (Arabic-language philosophy/culture magazine), «اللانهاية»: مفارقات الفلسفة
-  والدين والرياضيات (Infinity: Paradoxes of Philosophy, Religion and Mathematics), section on post-Aristotelian
-  religious readings of infinity, as archived by the Wayback Machine 2024-12-11'
+exact_passage: بعد أرسطو بستمائة عام، ظهرت أول إشارة للانهاية الفعلية في صورة دينية
+  عند أفلوطين، فيلسوف الأفلاطونية الجديدة، عندما ساوى بين الإله وبين المطلق اللانهائي
+  بطريقة غير مباشرة. فقال إن أي فكرة نقوم بتجريدها من خبراتنا المتناهية لا تنطبق على
+  الإله؛ أي أن الإله مطلق لانهائي.
+page_or_locator: 'ida2aat.com (Arabic-language philosophy/culture magazine), «اللانهاية»:
+  مفارقات الفلسفة والدين والرياضيات (Infinity: Paradoxes of Philosophy, Religion and
+  Mathematics), section on post-Aristotelian religious readings of infinity, as archived
+  by the Wayback Machine 2024-12-11'
 line_or_paragraph: line 45 of the fetched/stripped archived-page text
 scope: DIRECT_QUOTATION
 evidence_tier: Dr
-independence_class: I1
-who_verified: same-session AI (I1, non-independent) -- metadata confirmed mechanically, passage read and
-  matched to Q7 by the same session that ran the search; no cross-vendor I3 route run in this pass
+independence_class: I3
+who_verified: route:codex (cross-vendor AI; abstract/metadata level, not full text)
+  -- see cite-glosa-v0-3-q7-007.i3.json
 verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
 status: METADATA_OK
 xenon_ledger_ref: null
-disclosure: 'ida2aat.com (Arabic-language popular-philosophy/culture magazine, grey/community), «اللانهاية»:
-  مفارقات الفلسفة والدين والرياضيات ("Infinity: Paradoxes of Philosophy, Religion and Mathematics"). Fetched
-  via a Wayback Machine snapshot after live-site access failures (see metadata_verified_by), read directly
-  (curl + stdlib HTML stripper, one page kept in memory at a time per RAM limit) 2026-09-05. English translation
-  of the exact_passage (translation provided for reviewer convenience, NOT itself the citation source):
-  "Six hundred years after Aristotle, the first religious articulation of actual infinity appeared with
-  Plotinus, the Neoplatonist philosopher, when he indirectly equated God with the infinite Absolute. He
-  said that any idea we abstract from our finite experiences does not apply to God -- that is, God is an
-  infinite Absolute." stance vs Q7 as read: SUPPORTS the premise that infinity-as-transcendental-ground
-  is a genuine, historically continuous, non-Western-exclusive philosophical position (this Arabic-language
-  secondary source treats it as a serious historical episode in the philosophy of mathematics, not a curiosity).
-  independence_class I1 (same session) -- status METADATA_OK only, not VERIFIED: no decorrelated I3 cross-vendor
-  route has checked this card yet. No novel/first/prior-art claim made about this source; comparison to
-  Q7 is same/different/orthogonal as stated in dialogue_table_stance.'
+disclosure: 'ida2aat.com (Arabic-language popular-philosophy/culture magazine, grey/community),
+  «اللانهاية»: مفارقات الفلسفة والدين والرياضيات ("Infinity: Paradoxes of Philosophy,
+  Religion and Mathematics"). Fetched via a Wayback Machine snapshot after live-site
+  access failures (see metadata_verified_by), read directly (curl + stdlib HTML stripper,
+  one page kept in memory at a time per RAM limit) 2026-09-05. English translation
+  of the exact_passage (translation provided for reviewer convenience, NOT itself
+  the citation source): "Six hundred years after Aristotle, the first religious articulation
+  of actual infinity appeared with Plotinus, the Neoplatonist philosopher, when he
+  indirectly equated God with the infinite Absolute. He said that any idea we abstract
+  from our finite experiences does not apply to God -- that is, God is an infinite
+  Absolute." stance vs Q7 as read: SUPPORTS the premise that infinity-as-transcendental-ground
+  is a genuine, historically continuous, non-Western-exclusive philosophical position
+  (this Arabic-language secondary source treats it as a serious historical episode
+  in the philosophy of mathematics, not a curiosity). independence_class I1 (same
+  session) -- status METADATA_OK only, not VERIFIED: no decorrelated I3 cross-vendor
+  route has checked this card yet. No novel/first/prior-art claim made about this
+  source; comparison to Q7 is same/different/orthogonal as stated in dialogue_table_stance.
+  | I3 route (codex) judged from fetched metadata/abstract + the card''s quoted passage,
+  not full text: Metadata in fetched excerpt matches title and first author/year is
+  not contradicted. The passage was not mechanically found, but it is plausible within
+  the article topic. Because Q7 content is not provided beyond its label, relevance
+  to the hypothesis cannot be independently judged; uncertain means false. | I3 route
+  (codex) judged from fetched metadata/abstract + the card''s quoted passage, not
+  full text: Title/date/author evidence does not contradict the card, and the quoted
+  Plotinus/infinity passage is plausible for an article on infinity, philosophy, religion,
+  and mathematics. But Q7 is not stated, so relevance to the hypothesis cannot be
+  verified from the provided material.'
 superseded_by: null
-notes: 'Diversity: language=ar, source_type=grey_literature, geography_or_institution=Arab world (magazine
-  domain registration/content language; exact editorial home not independently confirmed from the archived
-  page), search_route_or_database="web search (Arabic-language query اللانهاية والتعالي في الفلسفة الإسلامية),
-  glosa-v0-3 Q7 scoping pass, live-site failure routed to Wayback Machine". dialogue_table_stance: yes.
-  what_it_separates: Separates Plotinus''s INDIRECT equation of God with the infinite Absolute (via negative/apophatic
-  reasoning -- no finite predicate applies to God, therefore God is unbounded/infinite) from a DIRECT positive
-  claim that God simply "is" a mathematical infinity -- the source is explicit that the move is apophatic/negative,
-  not a positive mathematical identification. what_it_assumes: Assumes a standard doxographical account
-  of Neoplatonism as popularized for a general Arabic-reading audience (not a specialist peer-reviewed
-  history-of-philosophy source); reads Aristotle-to-Cantor as one continuous Western lineage without separately
-  addressing the distinct اللانهاية/al-lā-nihāya discourse within classical Islamic philosophy (kalam,
-  falsafa) that the task''s own Arabic keyword names -- a gap this card does not close. what_it_would_say_against_us:
-  If even a general-audience popular-philosophy account independently converges on "infinity-as-transcendental-ground
-  is philosophically serious, apophatic, and pre-dates the mathematical concept by over a millennium," that
-  is modest but real evidence the stance is not a fringe or purely-rhetorical position confined to specialist
-  theology -- supporting engagement rather than a bare flag-and-leave-open.'
+notes: 'Diversity: language=ar, source_type=grey_literature, geography_or_institution=Arab
+  world (magazine domain registration/content language; exact editorial home not independently
+  confirmed from the archived page), search_route_or_database="web search (Arabic-language
+  query اللانهاية والتعالي في الفلسفة الإسلامية), glosa-v0-3 Q7 scoping pass, live-site
+  failure routed to Wayback Machine". dialogue_table_stance: yes. what_it_separates:
+  Separates Plotinus''s INDIRECT equation of God with the infinite Absolute (via negative/apophatic
+  reasoning -- no finite predicate applies to God, therefore God is unbounded/infinite)
+  from a DIRECT positive claim that God simply "is" a mathematical infinity -- the
+  source is explicit that the move is apophatic/negative, not a positive mathematical
+  identification. what_it_assumes: Assumes a standard doxographical account of Neoplatonism
+  as popularized for a general Arabic-reading audience (not a specialist peer-reviewed
+  history-of-philosophy source); reads Aristotle-to-Cantor as one continuous Western
+  lineage without separately addressing the distinct اللانهاية/al-lā-nihāya discourse
+  within classical Islamic philosophy (kalam, falsafa) that the task''s own Arabic
+  keyword names -- a gap this card does not close. what_it_would_say_against_us: If
+  even a general-audience popular-philosophy account independently converges on "infinity-as-transcendental-ground
+  is philosophically serious, apophatic, and pre-dates the mathematical concept by
+  over a millennium," that is modest but real evidence the stance is not a fringe
+  or purely-rhetorical position confined to specialist theology -- supporting engagement
+  rather than a bare flag-and-leave-open.'
 citation_card_id: cite-glosa-v0-3-q7-007
 identifier_kind: OFFICIAL_URL
 claim_match_verification_route: NOT_YET
@@ -75,7 +93,8 @@ diversity:
   language: other
   discipline_or_tradition: popular philosophy of mathematics / Neoplatonism (Arabic-language)
   source_type: grey_literature
-  search_route_or_database: web search (Arabic query), glosa-v0-3 Q7 scoping pass, via Wayback Machine
+  search_route_or_database: web search (Arabic query), glosa-v0-3 Q7 scoping pass,
+    via Wayback Machine
   geography_or_institution: Arab world (magazine, language-inferred)
   venue_quality_index:
     index_name: null

@@ -1,0 +1,17 @@
+{
+ "vendor": "codex",
+ "fetched": {
+  "source": "url-fetch",
+  "title": "Clinical Decision Support Software Frequently Asked Questions (FAQs) | FDA",
+  "abstract": "This graphic provides a visual overview of certain policies described in the Clinical Decision Support Software guidance."
+ },
+ "verdict": {
+  "metadata_matches": true,
+  "passage_plausible": true,
+  "claim_match": true,
+  "bearing": "CHALLENGES",
+  "reason": "Fetched title matches the FDA FAQ card, and the quoted Q3 answer is mechanically found in the fetched text. The passage directly distinguishes time-critical CDS from Non-Device CDS eligibility, matching the card’s stated separation and disagreeing/challenging as marked.",
+  "passage_mechanical": "verbatim prefix found in fetched open text"
+ },
+ "date": "2026-09-04"
+}

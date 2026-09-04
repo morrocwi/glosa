@@ -14,7 +14,7 @@ source:
   path: sources/READOUT_CONDITION_2026-08.txt
   title: 'The Readout Condition: Distinguishability, Access, and Epistemic Warrant'
   year: 2026
-fetched_from_url: /home/yaoharee-lt/ANSE.ASIA/glosa/sources/READOUT_CONDITION_2026-08.txt
+fetched_from_url: sources/READOUT_CONDITION_2026-08.txt
 locator: lines 27-33 (Abstract, non-transitive/stochastic extensions)
 tier: Dr
 base_relation: refined_by_later_work

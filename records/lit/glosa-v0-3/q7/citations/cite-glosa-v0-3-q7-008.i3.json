@@ -1,0 +1,17 @@
+{
+ "vendor": "codex",
+ "fetched": {
+  "source": "url-fetch",
+  "title": "George Cantor นักคณิตศาสตร์ผู้ให้กำเนิดทฤษฎีเซ็ต",
+  "abstract": "วงการคณิตศาสตร์เมื่อ 150 ปีก่อน มีอัจฉริยะที่เด่นสุดยอดท่านหนึ่ง ชื่อ George Cantor ผู้ให้กำเนิดทฤษฎีเซ็ตที่มีอิทธิพลต่อคณิตศาสตร์ในคริสต์ศตวรรษที่ 20 มาก ผลงานนี้ทำให้ David Hilbert กล่าวสรรเสริญ Cantor ว่า เขาคือผู้สร้างสวนสวรรค์ Eden ให้นักคณิตศาสตร์รุ่นหลังได้อยู่ทำงานในสวนอย่างมีความสุข"
+ },
+ "verdict": {
+  "metadata_matches": true,
+  "passage_plausible": true,
+  "claim_match": true,
+  "bearing": "CONTEXT_ONLY",
+  "reason": "Fetched title and excerpt align with the card; no title, year, or first-author contradiction is shown. The exact Thai passage is mechanically found in the fetched text. As framed, it provides contextual evidence that this outlet repeats the Hilbert-Cantor Eden/God epigram, not direct support for Q7.",
+  "passage_mechanical": "verbatim prefix found in fetched open text"
+ },
+ "date": "2026-09-04"
+}

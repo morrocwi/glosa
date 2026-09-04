@@ -13,7 +13,7 @@ source:
   title: 'Rigour Without Infrastructure: Three Propositions on Claim-Card Discipline as a Substitute for
     Institutional Certification (glosa concept paper, v0.2.0)'
   year: 2026
-fetched_from_url: local:dist/glosa-concept-paper-0.2.0-draft.pdf
+fetched_from_url: dist/glosa-concept-paper-0.2.0-draft.pdf
 locator: §1 Problem before observation
 tier: definition
 base_relation: holds

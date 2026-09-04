@@ -19,7 +19,7 @@ source:
   title: 'glosa — Rigour Without Infrastructure: A Standalone Scholar Methodology for Human–AI Knowledge
     Co-Production'
   year: 2026
-fetched_from_url: local:dist/glosa-paper-0.1.0-en.pdf
+fetched_from_url: dist/glosa-paper-0.1.0-en.pdf
 locator: p.1, Abstract
 tier: Dr
 base_relation: holds

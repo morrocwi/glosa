@@ -1,0 +1,15 @@
+{
+ "vendor": "codex",
+ "fetched": {
+  "source": "no-identifier"
+ },
+ "verdict": {
+  "metadata_matches": false,
+  "passage_plausible": false,
+  "claim_match": false,
+  "bearing": "CONTEXT_ONLY",
+  "reason": "Mechanical metadata provides no title, year, or first author, so the card cannot be verified. The verbatim passage check found nothing and the fetched excerpt is empty, leaving no text to compare. Therefore the contextual relevance to Q5 is not evidenced.",
+  "passage_mechanical": "no open full text fetched; abstract/metadata only"
+ },
+ "date": "2026-09-04"
+}

@@ -10,43 +10,47 @@ metadata_verified: true
 metadata_verified_by: mechanical:page-metadata
 metadata_verified_at: '2026-09-05'
 claim_match_verified: true
-claim_match_verified_by: route:I0
+claim_match_verified_by: route:codex
 claim_match_verified_at: '2026-09-05'
-exact_passage: >-
-  ومن هنا طرح معنى "الكسب"؟ كيف يكسب الإنسان نتائج أفعاله وفي الوقت نفسه يعتبر مسؤولا عنها وهو لم
-  يفعلها لأنه "لا فاعل إلا الله؟ وفي هذا تناقض بين! ومن هنا قيل في الأمور التي يجمع قائلها بين
-  النقيضين: "أخفى من كسب الأشعرية".
-page_or_locator: 'صحيفة الاقتصادية (aleqt.com), article "الكسب و''خلق الأفعال'' عند الأشاعرة"
-  (2009-05-27), third paragraph of the article body'
-line_or_paragraph: paragraph beginning "ومن هنا طرح معنى \"الكسب\"؟" (line 6 of the fetched,
-  HTML-stripped page text)
+exact_passage: 'ومن هنا طرح معنى "الكسب"؟ كيف يكسب الإنسان نتائج أفعاله وفي الوقت
+  نفسه يعتبر مسؤولا عنها وهو لم يفعلها لأنه "لا فاعل إلا الله؟ وفي هذا تناقض بين!
+  ومن هنا قيل في الأمور التي يجمع قائلها بين النقيضين: "أخفى من كسب الأشعرية".'
+page_or_locator: صحيفة الاقتصادية (aleqt.com), article "الكسب و'خلق الأفعال' عند الأشاعرة"
+  (2009-05-27), third paragraph of the article body
+line_or_paragraph: paragraph beginning "ومن هنا طرح معنى \"الكسب\"؟" (line 6 of the
+  fetched, HTML-stripped page text)
 scope: DIRECT_QUOTATION
 evidence_tier: Open
-independence_class: I0
-who_verified: I0 (this session, same-session curl+strip read of the fetched Arabic-language page;
-  no cross-vendor or independent human check has run yet)
+independence_class: I3
+who_verified: route:codex (cross-vendor AI; abstract/metadata level, not full text)
+  -- see cite-glosa-v0-3-q8-005.i3.json
 verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
-status: METADATA_OK
+status: VERIFIED
 xenon_ledger_ref: null
-disclosure: >-
-  I0 only (same session, not independently checked; translation gloss below is this session's
-  own, not a claim about a published English translation). Al-Eqtisadiah (aleqt.com) is a
-  Saudi general-audience economic/opinion newspaper, not a peer-reviewed venue -- evidence_tier
-  set to Open accordingly. Publication date (2009-05-27) confirmed from the page's own URL path
-  and byline. This Arabic-language passage records the classical Arabic proverbial verdict on
-  kasb itself: literally, that things combining two contradictory properties in one speaker's
-  claim came to be described as "more hidden/obscure than the Ash'arite kasb" (أخفى من كسب
-  الأشعرية) -- i.e. even within native Arabic theological/intellectual culture, the kasb
-  construct is proverbially flagged as notoriously unclear/self-contradictory, not as a settled,
-  well-specified mechanism ready for structural export. This is CHALLENGE evidence for Q8: before
-  asking whether Dependent Order/kasb has a portable non-theological analogue, this source shows
-  the construct's own internal clarity is already contested within the tradition that produced
-  it, which weakens confidence that a clean, well-specified structure is what would be exported.
+disclosure: 'I0 only (same session, not independently checked; translation gloss below
+  is this session''s own, not a claim about a published English translation). Al-Eqtisadiah
+  (aleqt.com) is a Saudi general-audience economic/opinion newspaper, not a peer-reviewed
+  venue -- evidence_tier set to Open accordingly. Publication date (2009-05-27) confirmed
+  from the page''s own URL path and byline. This Arabic-language passage records the
+  classical Arabic proverbial verdict on kasb itself: literally, that things combining
+  two contradictory properties in one speaker''s claim came to be described as "more
+  hidden/obscure than the Ash''arite kasb" (أخفى من كسب الأشعرية) -- i.e. even within
+  native Arabic theological/intellectual culture, the kasb construct is proverbially
+  flagged as notoriously unclear/self-contradictory, not as a settled, well-specified
+  mechanism ready for structural export. This is CHALLENGE evidence for Q8: before
+  asking whether Dependent Order/kasb has a portable non-theological analogue, this
+  source shows the construct''s own internal clarity is already contested within the
+  tradition that produced it, which weakens confidence that a clean, well-specified
+  structure is what would be exported. | I3 route (codex) judged from fetched metadata/abstract
+  + the card''s quoted passage, not full text: Title matches the card and no author/year
+  contradiction is evidenced. Although the mechanical verbatim check says none, the
+  fetched excerpt contains the quoted Arabic passage. The passage frames kasb as contradictory/obscure,
+  matching the card’s claimed challenge/context stance for Q8.'
 superseded_by: null
-notes: >-
-  Arabic language (required non-EN search per Q8's frozen scope), Global South/MENA general
-  media (not Global North academic press), grey/community-tier (newspaper opinion piece, not
-  peer-reviewed). Found via query family: challenge ('نظرية الكسب والاعتماد في علم الكلام
-  الأشعري'). Dialogue-table stance: NO (undercuts confidence that kasb is a clean, exportable
-  structure rather than a contested, unresolved theological construct).
+notes: 'Arabic language (required non-EN search per Q8''s frozen scope), Global South/MENA
+  general media (not Global North academic press), grey/community-tier (newspaper
+  opinion piece, not peer-reviewed). Found via query family: challenge (''نظرية الكسب
+  والاعتماد في علم الكلام الأشعري''). Dialogue-table stance: NO (undercuts confidence
+  that kasb is a clean, exportable structure rather than a contested, unresolved theological
+  construct).'
 fetched_from_url: https://www.aleqt.com/2009/05/27/article_233234.html

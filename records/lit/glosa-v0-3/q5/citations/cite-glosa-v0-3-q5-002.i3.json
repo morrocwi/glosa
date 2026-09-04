@@ -1,0 +1,17 @@
+{
+ "vendor": "codex",
+ "fetched": {
+  "source": "url-fetch",
+  "title": "Registered Reports | Scientific Reports",
+  "abstract": "Registered Reports"
+ },
+ "verdict": {
+  "metadata_matches": true,
+  "passage_plausible": true,
+  "claim_match": true,
+  "bearing": "CONTEXT_ONLY",
+  "reason": "Title/URL metadata do not contradict the card. The fetched excerpt contains the quoted policy language and also states protocol registration follows Stage 1 acceptance in principle, matching the card’s contextual claim about separating approvals-at-submission from later repository registration.",
+  "passage_mechanical": "verbatim prefix found in fetched open text"
+ },
+ "date": "2026-09-04"
+}

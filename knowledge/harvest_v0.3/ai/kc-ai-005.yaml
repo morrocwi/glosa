@@ -5,9 +5,8 @@ text: 'Describes glosa itself: a methodology/skill/toolchain for co-producing ri
   institutional infrastructure. Every claim it records must answer five bound questions (what was seen, what the
   data separates, what AI filled in, what is assumed, what independent check it survived) tied to the Readout Condition.
   Self-declared tier Dr, K0, not peer reviewed, no independent check yet at time of this release.'
-verbatim: v0.1.0 — K0 public working release... Methodology + skill + tools for co-producing rigorous knowledge
-  with AI without institutional infrastructure. Every claim answers five questions bound to the Readout Condition.
-  No priority claim.
+verbatim: Methodology + skill + tools for co-producing rigorous knowledge with AI without institutional infrastructure.
+  Every claim answers five questions bound to the Readout Condition. No priority claim.
 source:
   path: registry/zenodo_all_records.json
   title: 'glosa — Rigour Without Infrastructure: A Standalone Scholar Methodology for Human–AI Knowledge Co-Production'

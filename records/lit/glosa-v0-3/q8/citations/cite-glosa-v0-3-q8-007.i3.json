@@ -1,0 +1,17 @@
+{
+ "vendor": "codex",
+ "fetched": {
+  "source": "url-fetch",
+  "title": "Spiritual poverty – heavenly riches some reflections on faqr in the teachings of Ibn ʿArabi and Rumi\n    -\n    Journal of the Institute for Sufi Studies",
+  "abstract": ""
+ },
+ "verdict": {
+  "metadata_matches": true,
+  "passage_plausible": true,
+  "claim_match": true,
+  "bearing": "CONTEXT_ONLY",
+  "reason": "Fetched title and page text match the card. The quoted passage appears in the English abstract and fits the article topic. The source only contextualizes publication/diversity venue and abstract content as claimed, not direct evidential support for Q8.",
+  "passage_mechanical": "verbatim prefix found in fetched open text"
+ },
+ "date": "2026-09-04"
+}

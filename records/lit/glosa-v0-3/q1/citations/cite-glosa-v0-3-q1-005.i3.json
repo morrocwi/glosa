@@ -1,0 +1,24 @@
+{
+ "vendor": "codex",
+ "fetched": {
+  "source": "crossref",
+  "title": "The myth of institutional transplantation: disjunctions between formal structures and power distribution in university governance in Lao PDR",
+  "authors": [
+   "Li",
+   "Dewi",
+   "Shin"
+  ],
+  "year": 2025,
+  "container": "Higher Education",
+  "abstract": " Abstract \n                   The transplantation of developed institutions has been widely adopted by supranational organizations as an intervention mechanism for enhancing higher education governance in developing systems. It has served as a key channel for the diffusion of neoliberal structures in Southeast Asian nations. This study focuses on Lao universities, where neoliberal reforms characterized by top-down implementation of corporate governance models have been systematically promoted by supranational organizations since the 1990s. Through a comprehensive analysis of regulatory documents, virtual consultations with university managers, and faculty surveys across three national universities in Laos, this study identified a substantial disjunction between imported, unified governance structures and actual decision-making patterns. This disjunction is examined through the “glonacal” framework, highlighting the need to reconsider “good governance” prescriptions in international development projects. This study extends the current discourse on the globalization of higher education by examining the coercive implantation of neoliberal structures in less-developed systems dominated by supranational organizations. "
+ },
+ "verdict": {
+  "metadata_matches": true,
+  "passage_plausible": true,
+  "claim_match": false,
+  "bearing": "CONTEXT_ONLY",
+  "reason": "Metadata aligns with DOI title, 2025 year, journal, and first author. The quoted passage is present and consistent with the abstract. But the hypothesis is only labeled Q1 with no substantive claim, so relevance to the hypothesis cannot be independently judged.",
+  "passage_mechanical": "verbatim prefix found in fetched open text"
+ },
+ "date": "2026-09-04"
+}

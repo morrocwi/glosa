@@ -9,46 +9,50 @@ fetched_at: '2026-09-05'
 metadata_verified: true
 metadata_verified_by: mechanical:crossref
 metadata_verified_at: '2026-09-05'
-claim_match_verified: true
-claim_match_verified_by: route:I0
+claim_match_verified: false
+claim_match_verified_by: route:codex
 claim_match_verified_at: '2026-09-05'
-exact_passage: >-
-  Through a comprehensive analysis of regulatory documents, virtual consultations with university
-  managers, and faculty surveys across three national universities in Laos, this study identified
-  a substantial disjunction between imported, unified governance structures and actual
-  decision-making patterns.
+exact_passage: Through a comprehensive analysis of regulatory documents, virtual consultations
+  with university managers, and faculty surveys across three national universities
+  in Laos, this study identified a substantial disjunction between imported, unified
+  governance structures and actual decision-making patterns.
 page_or_locator: Abstract (Crossref metadata record for DOI 10.1007/s10734-025-01407-1)
-line_or_paragraph: middle sentence of the abstract, following the study's stated focus on Lao
-  universities
+line_or_paragraph: char offset 1598 of normalized fetched text (~paragraph 1); verbatim
+  prefix match
 scope: DIRECT_QUOTATION
 evidence_tier: Dr
-independence_class: I0
-who_verified: I0 (this session, same-session read of the mechanically fetched Crossref abstract;
-  no cross-vendor or independent human check has run yet)
+independence_class: I3
+who_verified: route:codex (cross-vendor AI; abstract/metadata level, not full text)
+  -- see cite-glosa-v0-3-q1-005.i3.json
 verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
 status: METADATA_OK
 xenon_ledger_ref: null
-disclosure: >-
-  I0 only (same session, not independently checked). Title/journal/DOI confirmed mechanically via
-  a direct Crossref works lookup on the DOI itself (10.1007/s10734-025-01407-1), returning
-  "The myth of institutional transplantation: disjunctions between formal structures and power
-  distribution in university governance in Lao PDR," Higher Education, 2026. Only the
-  Crossref-registered JATS abstract was read (mechanical metadata route); the Springer full text
-  was not fetched (no open-access full text obtained in this search episode). This source is a
-  CHALLENGE-with-nuance to Q1: it is a Global South/SEA empirical case (Laos) showing that an
-  imported institutional template (neoliberal "good governance" corporate structures, promoted by
-  supranational organizations since the 1990s) was formally adopted -- i.e. the category/template
-  WAS stabilized in the sense of being written into regulatory documents -- but the paper's own
-  framing calls this a "myth": actual decision-making power did not follow the formal template, so
-  the case argues the stabilized category is decoupled from practice rather than that it was
-  premature per se. This bears on Q1 by supplying a concrete non-EN-context (Lao) instance of the
-  general phenomenon Q1 is asking about, while complicating a simple "PCS = bad" framing with a
-  formal/substantive decoupling finding instead.
+disclosure: 'I0 only (same session, not independently checked). Title/journal/DOI
+  confirmed mechanically via a direct Crossref works lookup on the DOI itself (10.1007/s10734-025-01407-1),
+  returning "The myth of institutional transplantation: disjunctions between formal
+  structures and power distribution in university governance in Lao PDR," Higher Education,
+  2026. Only the Crossref-registered JATS abstract was read (mechanical metadata route);
+  the Springer full text was not fetched (no open-access full text obtained in this
+  search episode). This source is a CHALLENGE-with-nuance to Q1: it is a Global South/SEA
+  empirical case (Laos) showing that an imported institutional template (neoliberal
+  "good governance" corporate structures, promoted by supranational organizations
+  since the 1990s) was formally adopted -- i.e. the category/template WAS stabilized
+  in the sense of being written into regulatory documents -- but the paper''s own
+  framing calls this a "myth": actual decision-making power did not follow the formal
+  template, so the case argues the stabilized category is decoupled from practice
+  rather than that it was premature per se. This bears on Q1 by supplying a concrete
+  non-EN-context (Lao) instance of the general phenomenon Q1 is asking about, while
+  complicating a simple "PCS = bad" framing with a formal/substantive decoupling finding
+  instead. | I3 route (codex) judged from fetched metadata/abstract + the card''s
+  quoted passage, not full text: Metadata aligns with DOI title, 2025 year, journal,
+  and first author. The quoted passage is present and consistent with the abstract.
+  But the hypothesis is only labeled Q1 with no substantive claim, so relevance to
+  the hypothesis cannot be independently judged.'
 superseded_by: null
-notes: >-
-  Global South / Southeast Asia (Laos), EN-language publication, peer-reviewed journal article
-  (Higher Education, Springer), discipline: comparative/international higher-education governance.
-  Found via query family: challenge ('institutional template transplantation Southeast Asia
-  organizational reform isomorphism case study'). Dialogue-table stance: ORTHOGONAL (bears on the
-  question but complicates rather than simply supports/challenges the PCS-generalization premise).
-fetched_from_url: https://api.crossref.org/works/10.1007/s10734-025-01407-1
+notes: 'Global South / Southeast Asia (Laos), EN-language publication, peer-reviewed
+  journal article (Higher Education, Springer), discipline: comparative/international
+  higher-education governance. Found via query family: challenge (''institutional
+  template transplantation Southeast Asia organizational reform isomorphism case study'').
+  Dialogue-table stance: ORTHOGONAL (bears on the question but complicates rather
+  than simply supports/challenges the PCS-generalization premise).'
+fetched_from_url: https://doi.org/10.1007/s10734-025-01407-1

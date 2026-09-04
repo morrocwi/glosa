@@ -1,0 +1,17 @@
+{
+ "vendor": "codex",
+ "fetched": {
+  "source": "url-fetch",
+  "title": "Weasel Words | National Center for Science Education",
+  "abstract": "&quot;Weasel Words&quot; Chapter 3 is replete with &quot;weasel words&quot; --phrases that imply something without explicitly stating it, that make statements w"
+ },
+ "verdict": {
+  "metadata_matches": true,
+  "passage_plausible": true,
+  "claim_match": true,
+  "bearing": "SUPPORTS",
+  "reason": "Fetched title matches the card and no title/year/first-author contradiction is shown. The quoted passage is mechanically found in the fetched text. The passage directly supports the card’s stated use: vague unnamed sources prevent verification, while named/checkable sourcing enables source checking.",
+  "passage_mechanical": "verbatim prefix found in fetched open text"
+ },
+ "date": "2026-09-04"
+}

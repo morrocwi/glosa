@@ -8,16 +8,19 @@ text: The paper's illustrative case is the author's own registered social enterp
   population prevalence.
 verbatim: "One organisation — a Thai Islamic-marriage service recognised as a social enterprise in 2024 —
   appears throughout as illustration. It is the author's own, a fact disclosed here and weighed in Section 9.
-  It is used because the author knows its transactions from inside, not because it is exemplary. ...
-  Practice experience generates the problem and the proposition; it does not by itself establish population
-  prevalence, and the propositions are stated with the falsifiers that empirical work would need."
+  It is used because the author knows its transactions from inside, not because it is exemplary.
+  Methodologically, the paper is conceptual and comparative-institutional, and its practitioner component is
+  reflexive practitioner inquiry: the organisational experience is an observational site from which a
+  recurring structural problem is identified and translated into propositions. Practice experience generates
+  the problem and the proposition; it does not by itself establish population prevalence, and the
+  propositions are stated with the falsifiers that empirical work would need."
 source:
   doi: 10.5281/zenodo.22227005
   title: "Why We Became a Social Enterprise: Positional Governance, Dual Costs, and a Toolkit for the
     Class of Enterprises for Which the Form Is Not a Choice"
   year: 2026
-fetched_from_url: local (~/Downloads/Why_We_Became_a_Social_Enterprise_FINAL_v5.0.pdf)
-locator: p.1, end of the abstract/preface block introducing the illustrative case (pdftotext -l 6, lines ~55-90)
+fetched_from_url: "https://zenodo.org/api/records/22227005/files/Why_We_Became_a_Social_Enterprise_FINAL_v5.0-1.pdf/content"
+locator: p.2, §1, paragraph introducing the illustrative case
 tier: Open
 base_relation: holds
 base_justification: Same standpoint-disclosure discipline the corpus already applies elsewhere (see

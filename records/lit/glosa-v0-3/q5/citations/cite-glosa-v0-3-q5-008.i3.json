@@ -1,0 +1,23 @@
+{
+ "vendor": "codex",
+ "fetched": {
+  "source": "arxiv",
+  "title": "Preregistering NLP Research",
+  "authors": [
+   "Emiel van Miltenburg",
+   "Chris van der Lee",
+   "Emiel Krahmer"
+  ],
+  "year": "2021",
+  "abstract": "Preregistration refers to the practice of specifying what you are going to do, and what you expect to find in your study, before carrying out the study. This practice is increasingly common in medicine and psychology, but is rarely discussed in NLP. This paper discusses preregistration in more detail, explores how NLP researchers could preregister their work, and presents several preregistration questions for different kinds of studies. Finally, we argue in favour of registered reports, which could provide firmer grounds for slow science in NLP research. The goal of this paper is to elicit a discussion in the NLP community, which we hope to synthesise into a general NLP preregistration form in future research."
+ },
+ "verdict": {
+  "metadata_matches": true,
+  "passage_plausible": true,
+  "claim_match": true,
+  "bearing": "CONTEXT_ONLY",
+  "reason": "Metadata title, year, and first author match. The quoted passage is mechanically found in the abstract and is consistent with the title/abstract. It provides contextual relevance about preregistration being common in medicine/psychology but rarely discussed in NLP, without directly evidencing a stronger dialogue-table claim.",
+  "passage_mechanical": "verbatim prefix found in fetched open text"
+ },
+ "date": "2026-09-04"
+}

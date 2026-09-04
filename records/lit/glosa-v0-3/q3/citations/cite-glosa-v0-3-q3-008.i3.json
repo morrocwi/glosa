@@ -1,0 +1,17 @@
+{
+ "vendor": "codex",
+ "fetched": {
+  "source": "url-fetch",
+  "title": "How to Choose the Right AI Disclaimer for Your Business — The Legal Paige",
+  "abstract": "Do you have to disclose the use of AI? And how do you add an AI disclaimer to your contracts? Get these answers from an attorney, plus AI disclaimer templates."
+ },
+ "verdict": {
+  "metadata_matches": true,
+  "passage_plausible": true,
+  "claim_match": true,
+  "bearing": "CHALLENGES",
+  "reason": "Metadata is consistent enough with the cited Legal Paige page. The quoted passage is mechanically found and fits the title/abstract. It directly says AI disclaimer needs vary by service type and client, matching the card’s claim that it rejects a one-size-fits-all framing.",
+  "passage_mechanical": "verbatim prefix found in fetched open text"
+ },
+ "date": "2026-09-04"
+}

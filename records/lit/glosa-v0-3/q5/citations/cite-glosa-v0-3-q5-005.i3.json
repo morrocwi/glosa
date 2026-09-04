@@ -1,0 +1,17 @@
+{
+ "vendor": "codex",
+ "fetched": {
+  "source": "url-fetch",
+  "title": "การลงทะเบียนงานวิจัยทางคลินิกของไทย TCTR\n\t\t\t\t\t\t\t| Mahidol R2R e-Journal",
+  "abstract": ""
+ },
+ "verdict": {
+  "metadata_matches": true,
+  "passage_plausible": true,
+  "claim_match": true,
+  "bearing": "CONTEXT_ONLY",
+  "reason": "Fetched title matches the card and no year/first-author contradiction is shown. The quoted Thai passage is mechanically found verbatim and aligns with the article title/abstract context. It supports the card’s limited contextual use: TCTR’s transparency/ethics/quality mission, not a timestamp sequencing rule.",
+  "passage_mechanical": "verbatim prefix found in fetched open text"
+ },
+ "date": "2026-09-04"
+}

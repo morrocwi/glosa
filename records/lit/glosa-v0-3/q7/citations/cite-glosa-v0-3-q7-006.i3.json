@@ -1,0 +1,17 @@
+{
+ "vendor": "codex",
+ "fetched": {
+  "source": "url-fetch",
+  "title": "Apeiron - Wikipedia",
+  "abstract": ""
+ },
+ "verdict": {
+  "metadata_matches": true,
+  "passage_plausible": true,
+  "claim_match": false,
+  "bearing": "CONTEXT_ONLY",
+  "reason": "Metadata does not contradict the card, and the quoted passage appears verbatim in the fetched excerpt. However the hypothesis is only labeled Q7 with no substantive content, so relevance to that hypothesis cannot be independently verified from the provided material.",
+  "passage_mechanical": "verbatim prefix found in fetched open text"
+ },
+ "date": "2026-09-04"
+}

@@ -7,51 +7,64 @@ identifier:
 fetch_status: FETCHED
 fetched_at: '2026-09-05'
 metadata_verified: true
-metadata_verified_by: mechanical:curl+html-strip (ThaiJo/TCI journal abstract page fetched and rendered
-  directly; Mahidol R2R e-Journal, a Thai-indexed journal on ThaiJo/TCI)
+metadata_verified_by: mechanical:curl+html-strip (ThaiJo/TCI journal abstract page
+  fetched and rendered directly; Mahidol R2R e-Journal, a Thai-indexed journal on
+  ThaiJo/TCI)
 metadata_verified_at: '2026-09-05'
 claim_match_verified: true
-claim_match_verified_by: self:same-session-read (I1, NOT independent -- awaiting a decorrelated I3
-  cross-vendor route to upgrade status to VERIFIED per Rule 17/S14; task instruction caps status at
-  METADATA_OK for this pass)
+claim_match_verified_by: route:codex
 claim_match_verified_at: '2026-09-05'
-exact_passage: การลงทะเบียนงานวิจัยทางคลินิกของไทย (Thai Clinical Trials Registry, TCTR) จัดตั้งขึ้นโดยมูลนิธิส่งเสริมวิจัยทางการแพทย์
-  เพื่อเป็นฐานข้อมูลและเผยแพร่งานวิจัยทางคลินิกในประเทศไทย สนับสนุนและส่งเสริมการพัฒนางานวิจัยทางคลินิกให้โปร่งใส
-  มีคุณภาพ ประสิทธิภาพ ลดความซ้ำซ้อนของงานวิจัย และถูกต้องตามหลักจริยธรรมในการนำเสนอผลงาน
-page_or_locator: 'he01.tci-thaijo.org/index.php/mur2r/article/view/242096, "การลงทะเบียนงานวิจัยทางคลินิกของไทย
-  TCTR", Mahidol R2R e-Journal, abstract, as rendered on the page fetched 2026-09-05'
-line_or_paragraph: line 49 of the fetched/stripped page text
+exact_passage: การลงทะเบียนงานวิจัยทางคลินิกของไทย (Thai Clinical Trials Registry,
+  TCTR) จัดตั้งขึ้นโดยมูลนิธิส่งเสริมวิจัยทางการแพทย์ เพื่อเป็นฐานข้อมูลและเผยแพร่งานวิจัยทางคลินิกในประเทศไทย
+  สนับสนุนและส่งเสริมการพัฒนางานวิจัยทางคลินิกให้โปร่งใส มีคุณภาพ ประสิทธิภาพ ลดความซ้ำซ้อนของงานวิจัย
+  และถูกต้องตามหลักจริยธรรมในการนำเสนอผลงาน
+page_or_locator: he01.tci-thaijo.org/index.php/mur2r/article/view/242096, "การลงทะเบียนงานวิจัยทางคลินิกของไทย
+  TCTR", Mahidol R2R e-Journal, abstract, as rendered on the page fetched 2026-09-05
+line_or_paragraph: char offset 886 of normalized fetched text (~paragraph 1); verbatim
+  prefix match
 scope: DIRECT_QUOTATION
 evidence_tier: Dr
-independence_class: I1
-who_verified: same-session AI (I1, non-independent) -- metadata confirmed mechanically, passage read
-  and matched to Q5 by the same session that ran the search; no cross-vendor I3 route run in this pass
+independence_class: I3
+who_verified: route:codex (cross-vendor AI; abstract/metadata level, not full text)
+  -- see cite-glosa-v0-3-q5-005.i3.json
 verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
-status: METADATA_OK
+status: VERIFIED
 xenon_ledger_ref: null
-disclosure: 'TH-language ThaiJo/TCI-indexed Mahidol R2R e-Journal article describing TCTR (Thai
-  Clinical Trials Registry). Fetched and read directly (curl + stdlib HTML stripper, one page kept
-  in memory at a time per RAM limit) 2026-09-05; only the abstract page was reachable, full PDF not
-  fetched in this pass (logged honestly, not read beyond the abstract). Read as: names transparency,
-  quality, non-duplication, and ethical correctness of reporting as TCTR''s stated purposes, but the
-  abstract itself does not state a strict ethics-vs-registration sequencing rule -- that operational
-  detail is covered by cite-glosa-v0-3-q5-006 (the TCTR help-center workflow page) instead. stance vs
-  Q5 as read: ORTHOGONAL (establishes the Thai registry exists and why, but this specific passage does
-  not itself address timestamp sequencing). No novel/first/prior-art claim made about this source;
-  comparison to Q5 is same/different/orthogonal as stated in dialogue_table_stance. independence_class
-  I1 (same session) -- status METADATA_OK only, not VERIFIED.'
+disclosure: 'TH-language ThaiJo/TCI-indexed Mahidol R2R e-Journal article describing
+  TCTR (Thai Clinical Trials Registry). Fetched and read directly (curl + stdlib HTML
+  stripper, one page kept in memory at a time per RAM limit) 2026-09-05; only the
+  abstract page was reachable, full PDF not fetched in this pass (logged honestly,
+  not read beyond the abstract). Read as: names transparency, quality, non-duplication,
+  and ethical correctness of reporting as TCTR''s stated purposes, but the abstract
+  itself does not state a strict ethics-vs-registration sequencing rule -- that operational
+  detail is covered by cite-glosa-v0-3-q5-006 (the TCTR help-center workflow page)
+  instead. stance vs Q5 as read: ORTHOGONAL (establishes the Thai registry exists
+  and why, but this specific passage does not itself address timestamp sequencing).
+  No novel/first/prior-art claim made about this source; comparison to Q5 is same/different/orthogonal
+  as stated in dialogue_table_stance. independence_class I1 (same session) -- status
+  METADATA_OK only, not VERIFIED. | I3 route (codex) judged from fetched metadata/abstract
+  + the card''s quoted passage, not full text: Fetched title matches the card and
+  the quoted Thai passage is found verbatim. The excerpt describes TCTR''s general
+  mission and status, but HYPOTHESIS is only labeled Q5 with no substantive claim
+  provided, so relevance to the hypothesis cannot be confirmed. | I3 route (codex)
+  judged from fetched metadata/abstract + the card''s quoted passage, not full text:
+  Fetched title matches the card and no year/first-author contradiction is shown.
+  The quoted Thai passage is mechanically found verbatim and aligns with the article
+  title/abstract context. It supports the card’s limited contextual use: TCTR’s transparency/ethics/quality
+  mission, not a timestamp sequencing rule.'
 superseded_by: null
 notes: 'Diversity: language=th, source_type=peer_reviewed_journal_article, geography_or_institution=Thailand
-  (Global South / SEA), search_route_or_database="web search (Thai-language query), glosa-v0-3 Q5
-  scoping pass". dialogue_table_stance: orthogonal. what_it_separates: Separates TCTR''s general
-  transparency/ethics/quality mission from any single sequencing rule about timestamps -- a
-  mission-level statement, not a mechanism-level one. what_it_assumes: Assumes the reader already
-  knows what a clinical trial registry is and wants the TCTR-specific institutional history and
-  purpose; a companion piece to the operational how-to page (cite-006), not a substitute for it.
-  what_it_would_say_against_us: This abstract alone cannot be used to claim Thai research practice
-  requires (or does not require) freeze-before-ethics sequencing -- citing it for that specific claim
-  would overstate what a mission-statement passage actually supports; the sequencing evidence has to
-  come from the operational workflow source instead.'
+  (Global South / SEA), search_route_or_database="web search (Thai-language query),
+  glosa-v0-3 Q5 scoping pass". dialogue_table_stance: orthogonal. what_it_separates:
+  Separates TCTR''s general transparency/ethics/quality mission from any single sequencing
+  rule about timestamps -- a mission-level statement, not a mechanism-level one. what_it_assumes:
+  Assumes the reader already knows what a clinical trial registry is and wants the
+  TCTR-specific institutional history and purpose; a companion piece to the operational
+  how-to page (cite-006), not a substitute for it. what_it_would_say_against_us: This
+  abstract alone cannot be used to claim Thai research practice requires (or does
+  not require) freeze-before-ethics sequencing -- citing it for that specific claim
+  would overstate what a mission-statement passage actually supports; the sequencing
+  evidence has to come from the operational workflow source instead.'
 citation_card_id: cite-glosa-v0-3-q5-005
 identifier_kind: OFFICIAL_URL
 claim_match_verification_route: NOT_YET
@@ -62,7 +75,8 @@ diversity:
   language: th
   discipline_or_tradition: clinical research methodology / Thai research-ethics practice
   source_type: peer_reviewed
-  search_route_or_database: web search (Thai-language query), glosa-v0-3 Q5 scoping pass
+  search_route_or_database: web search (Thai-language query), glosa-v0-3 Q5 scoping
+    pass
   geography_or_institution: Thailand (Global South / SEA)
   venue_quality_index:
     index_name: null

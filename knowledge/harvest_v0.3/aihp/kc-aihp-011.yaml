@@ -16,7 +16,7 @@ source:
   doi: 10.5281/zenodo.22301318
   title: 'The Readout Condition: Distinguishability, Access, and Epistemic Warrant'
   year: 2026
-fetched_from_url: local:sources/READOUT_CONDITION_2026-08.txt
+fetched_from_url: sources/READOUT_CONDITION_2026-08.txt
 locator: lines 45-53
 tier: Th_coqc
 base_relation: holds

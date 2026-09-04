@@ -1,0 +1,27 @@
+{
+ "vendor": "codex",
+ "fetched": {
+  "source": "crossref",
+  "title": "Premature closure underlies bias in medical diagnosis in students: A randomised controlled experiment",
+  "authors": [
+   "Al Essa",
+   "Schmidt",
+   "Mamede",
+   "Knežević",
+   "Zwaan",
+   "Magzoub"
+  ],
+  "year": 2026,
+  "container": "Medical Education",
+  "abstract": " Abstract \n                   \n                     Objective \n                     \n                      The purpose of the study reported in this article was to shed light on the cognitive mechanism mediating between biasing information and diagnostic error. The literature suggests at least two different hypotheses: premature closure leading biased participants to spend\n                       less \n                      time on diagnosis or increased competition between diagnostic hypotheses. The latter hypothesis predicts that biased participants would spend\n                       more \n                      time reaching a diagnosis.\n                     \n                   \n                   \n                     Method \n                     Using the salient distracting findings (SDF) experimental paradigm, we biased 58 fourth‐year medical students while diagnosing 12 clinical vignettes in a within‐group incomplete block design under three conditions: cases presented without SDF, with SDF at the beginning and with SDF at the end. For each of these conditions, diagnostic accuracy, the number of SDF‐related mistakes and time per word needed to process the case were recorded. The data were analysed using linear mixed modelling. Estimated marginal mean scores were reported. \n                   \n                   \n                     Results \n                     \n                      Participants confronted with salient distracting features (SDFs) at the beginning of a"
+ },
+ "verdict": {
+  "metadata_matches": true,
+  "passage_plausible": false,
+  "claim_match": false,
+  "bearing": "CONTEXT_ONLY",
+  "reason": "Metadata does not contradict the card. The quoted passage was not found, and the provided fetched excerpt is only the abstract opening, so passage plausibility cannot be verified. The source concerns premature closure in medical diagnosis, but the card's exact contextual claim is not evidenced here.",
+  "passage_mechanical": "no open full text fetched; abstract/metadata only"
+ },
+ "date": "2026-09-04"
+}

@@ -1,0 +1,17 @@
+{
+ "vendor": "codex",
+ "fetched": {
+  "source": "url-fetch",
+  "title": "Signs of a Predatory Publisher - Journal Evaluation & Predatory Publishing - NOAA Library at National Oceanic and Atmospheric Administration",
+  "abstract": "NOAA Library: Journal Evaluation &amp; Predatory Publishing: Signs of a Predatory Publisher"
+ },
+ "verdict": {
+  "metadata_matches": true,
+  "passage_plausible": true,
+  "claim_match": true,
+  "bearing": "SUPPORTS",
+  "reason": "Fetched metadata matches the NOAA Library predatory publishing page, and the quoted passage is mechanically found in the excerpt. The passage directly concerns unverifiable or invented journal metrics and false Scopus/Web of Science indexing claims, matching the card’s stated relevance.",
+  "passage_mechanical": "verbatim prefix found in fetched open text"
+ },
+ "date": "2026-09-04"
+}

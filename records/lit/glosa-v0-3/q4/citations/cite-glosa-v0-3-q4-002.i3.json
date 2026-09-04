@@ -1,0 +1,31 @@
+{
+ "vendor": "codex",
+ "fetched": {
+  "source": "crossref",
+  "title": "GRADE guidelines: 3. Rating the quality of evidence",
+  "authors": [
+   "Balshem",
+   "Helfand",
+   "Schünemann",
+   "Oxman",
+   "Kunz",
+   "Brozek",
+   "Vist",
+   "Falck-Ytter",
+   "Meerpohl",
+   "Norris"
+  ],
+  "year": 2011,
+  "container": "Journal of Clinical Epidemiology",
+  "abstract": ""
+ },
+ "verdict": {
+  "metadata_matches": true,
+  "passage_plausible": false,
+  "claim_match": false,
+  "bearing": "CONTEXT_ONLY",
+  "reason": "Metadata does not contradict the card: title/first author align and no card year conflict is shown. Passage cannot be assessed because verbatim search found none and no fetched text excerpt is available. Without verified passage or hypothesis detail, claim_match is false.",
+  "passage_mechanical": "no open full text fetched; abstract/metadata only"
+ },
+ "date": "2026-09-04"
+}

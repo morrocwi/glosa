@@ -8,14 +8,15 @@ text: 'Concept paper states, as untested propositions not demonstrated results: 
 verbatim: Three candidate hypotheses (Section 5) — a design mechanism (H1), a conceptual claim about where
   rigour lives (H2), and an empirical claim about cross-vendor AI checking (H3) — propose that a claim-card
   discipline bound to Existence–Attribution–Disclosure and gated by an independence ladder could make
-  a standalone scholar's claim reader-checkable without an institutional credential. ... Each proposition
-  carries a named falsifier and is placed against 48 independently verified citation cards
+  a standalone scholar's claim reader-checkable without an institutional credential. Method. Each proposition
+  carries a named falsifier and is placed against 48 independently verified citation cards in a conversation-with-the-literature
+  table (Section 6).
 source:
   doi: 10.5281/zenodo.22307841
   title: 'Rigour Without Infrastructure: Three Propositions on Claim-Card Discipline as a Substitute for
     Institutional Certification (glosa concept paper, v0.2.0)'
   year: 2026
-fetched_from_url: local:dist/glosa-concept-paper-0.2.0-draft.pdf
+fetched_from_url: dist/glosa-concept-paper-0.2.0-draft.pdf
 locator: p.1, In brief
 tier: Dr
 base_relation: holds

@@ -1,0 +1,17 @@
+{
+ "vendor": "codex",
+ "fetched": {
+  "source": "url-fetch",
+  "title": "Annex III: High-Risk AI Systems Referred to in Article 6(2) | EU Artificial Intelligence Act",
+  "abstract": "High-risk AI systems pursuant to Article 6(2) are the AI systems listed in any of the following areas:"
+ },
+ "verdict": {
+  "metadata_matches": true,
+  "passage_plausible": true,
+  "claim_match": true,
+  "bearing": "CONTEXT_ONLY",
+  "reason": "Fetched title matches the cited Annex III page, and the quoted passage appears verbatim in the fetched excerpt. The passage is relevant context for distinguishing public-authority AI eligibility decisions involving healthcare services from other AI uses, matching the card's context-only scope.",
+  "passage_mechanical": "verbatim prefix found in fetched open text"
+ },
+ "date": "2026-09-04"
+}

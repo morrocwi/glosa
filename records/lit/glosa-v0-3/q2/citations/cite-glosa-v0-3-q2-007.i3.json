@@ -1,0 +1,17 @@
+{
+ "vendor": "codex",
+ "fetched": {
+  "source": "url-fetch",
+  "title": "Open Peer Review | Essential Information from F1000Research",
+  "abstract": "What is Open Peer Review? What are the benefits of Open Peer Review? Find out how the innovative F1000Research publication model works."
+ },
+ "verdict": {
+  "metadata_matches": true,
+  "passage_plausible": true,
+  "claim_match": true,
+  "bearing": "SUPPORTS",
+  "reason": "finite_diagnostic: Metadata does not contradict the card. The fetched excerpt contains the quoted passage and aligns with the page title/abstract. The passage supports the mechanism claim by describing explicit peer-review pass criteria and public indexing with review reports.",
+  "passage_mechanical": "verbatim prefix found in fetched open text"
+ },
+ "date": "2026-09-04"
+}

@@ -1,0 +1,24 @@
+{
+ "vendor": "codex",
+ "fetched": {
+  "source": "crossref",
+  "title": "Guidance to including gray literature in systematic reviews-recommendations from an epidemiological study",
+  "authors": [
+   "Khalil",
+   "Johns-Hayden",
+   "Kynoch"
+  ],
+  "year": 2026,
+  "container": "Journal of Clinical Epidemiology",
+  "abstract": ""
+ },
+ "verdict": {
+  "metadata_matches": true,
+  "passage_plausible": false,
+  "claim_match": false,
+  "bearing": "CONTEXT_ONLY",
+  "reason": "Metadata does not contradict title/year/first author rules. However, no fetched text or abstract is available and verbatim passage search found none, so the passage cannot be checked. The hypothesis content is only labeled Q4, so support for the claimed stance cannot be confirmed.",
+  "passage_mechanical": "no open full text fetched; abstract/metadata only"
+ },
+ "date": "2026-09-04"
+}

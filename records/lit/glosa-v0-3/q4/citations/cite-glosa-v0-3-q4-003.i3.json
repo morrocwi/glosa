@@ -1,0 +1,23 @@
+{
+ "vendor": "codex",
+ "fetched": {
+  "source": "crossref",
+  "title": "Review of evidence based clinical practice guidelines developed in Latin America and Caribbean during the last decade: an analysis of the methods for grading quality of evidence and topic prioritization",
+  "authors": [
+   "Cabrera",
+   "Pardo"
+  ],
+  "year": 2019,
+  "container": "Globalization and Health",
+  "abstract": ""
+ },
+ "verdict": {
+  "metadata_matches": true,
+  "passage_plausible": true,
+  "claim_match": false,
+  "bearing": "CONTEXT_ONLY",
+  "reason": "Metadata title/year/first author align, and the fetched excerpt contains the quoted passage. The passage concerns evidence-grading methods in Latin America/Caribbean CPGs, but Q4 is undefined here, so I cannot verify that it matches the hypothesis.",
+  "passage_mechanical": "verbatim prefix found in fetched open text"
+ },
+ "date": "2026-09-04"
+}

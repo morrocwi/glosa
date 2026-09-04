@@ -9,44 +9,54 @@ fetched_at: '2026-09-05'
 metadata_verified: true
 metadata_verified_by: mechanical:europepmc
 metadata_verified_at: '2026-09-05'
-claim_match_verified: true
-claim_match_verified_by: route:I0
+claim_match_verified: false
+claim_match_verified_by: route:codex
 claim_match_verified_at: '2026-09-05'
-exact_passage: >-
-  In addition to scientific evidence which typically includes research/surveys,
-  quantitative/statistical data, qualitative data, and analysis, evidence can also include
-  economic, attitudinal, behavioural and anecdotal information, along with knowledge and opinions
-  of experts, as well as judgements, insight/experience, history, analogies, local knowledge and
-  culture.
-page_or_locator: "Background section (Europe PMC fullTextXML, PMC7409627)"
-line_or_paragraph: paragraph 17 of the stripped full-text
+exact_passage: In addition to scientific evidence which typically includes research/surveys,
+  quantitative/statistical data, qualitative data, and analysis, evidence can also
+  include economic, attitudinal, behavioural and anecdotal information, along with
+  knowledge and opinions of experts, as well as judgements, insight/experience, history,
+  analogies, local knowledge and culture.
+page_or_locator: Background section (Europe PMC fullTextXML, PMC7409627)
+line_or_paragraph: char offset 5856 of normalized fetched text (~paragraph 1); verbatim
+  prefix match
 scope: DIRECT_QUOTATION
 evidence_tier: Dr
-independence_class: I0
-who_verified: I0 (this session, same-session read of the mechanically fetched Europe PMC full-text
-  XML; no cross-vendor or independent human check has run yet)
+independence_class: I3
+who_verified: route:codex (cross-vendor AI; abstract/metadata level, not full text)
+  -- see cite-glosa-v0-3-q4-004.i3.json
 verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
 status: METADATA_OK
 xenon_ledger_ref: null
-disclosure: >-
-  I0 only (same session, not independently checked). Title/authors/journal/year/DOI/open-access
-  status confirmed mechanically via Europe PMC (query PMCID:PMC7409627, resultType=core; isOA=Y):
-  Uneke CJ, Sombie I, Johnson E, Uneke BI, Okolo S, "Promoting the use of evidence in health
-  policymaking in the ECOWAS region: the development and contextualization of an evidence-based
-  policymaking guidance," Globalization and Health, 2020. Full text fetched and read from Europe
-  PMC's fullTextXML endpoint (open access, CC BY). This source is a Global South (West Africa /
-  ECOWAS, West African Health Organisation and Ebonyi State University Nigeria authors) grey/
-  institutional-guidance-informing empirical study. It is a CHALLENGE to Q4's premise: the
-  underlying policy-relevant "evidence" concept this Global South regional health body's own
-  guidance is built around deliberately includes non-graded forms (anecdotal information, expert
-  opinion, insight/experience, local knowledge) as legitimate evidence for policymaking by design,
-  not as a defect to be flagged -- suggesting a policy brief lacking a formal claim-tier
-  declaration may simply be operating in the normal, expected register of policy evidence rather
-  than presenting a gap that always needs a distinct flag-and-request-tier intake step.
+disclosure: 'I0 only (same session, not independently checked). Title/authors/journal/year/DOI/open-access
+  status confirmed mechanically via Europe PMC (query PMCID:PMC7409627, resultType=core;
+  isOA=Y): Uneke CJ, Sombie I, Johnson E, Uneke BI, Okolo S, "Promoting the use of
+  evidence in health policymaking in the ECOWAS region: the development and contextualization
+  of an evidence-based policymaking guidance," Globalization and Health, 2020. Full
+  text fetched and read from Europe PMC''s fullTextXML endpoint (open access, CC BY).
+  This source is a Global South (West Africa / ECOWAS, West African Health Organisation
+  and Ebonyi State University Nigeria authors) grey/ institutional-guidance-informing
+  empirical study. It is a CHALLENGE to Q4''s premise: the underlying policy-relevant
+  "evidence" concept this Global South regional health body''s own guidance is built
+  around deliberately includes non-graded forms (anecdotal information, expert opinion,
+  insight/experience, local knowledge) as legitimate evidence for policymaking by
+  design, not as a defect to be flagged -- suggesting a policy brief lacking a formal
+  claim-tier declaration may simply be operating in the normal, expected register
+  of policy evidence rather than presenting a gap that always needs a distinct flag-and-request-tier
+  intake step. | I3 route (codex) judged from fetched metadata/abstract + the card''s
+  quoted passage, not full text: Metadata does not contradict: 2020, first author
+  Uneke, title/topic match. The quoted passage is mechanically found and coherent
+  with the excerpt. But the hypothesis is only labeled Q4 with no substantive claim,
+  so relevance to that hypothesis cannot be independently judged from the provided
+  material. | I3 route (codex) judged from fetched metadata/abstract + the card''s
+  quoted passage, not full text: Metadata and passage are mechanically consistent.
+  But the hypothesis is only labeled Q4 with no substantive content provided, and
+  the card notes say I0 only / Dialogue-table stance NO. From the supplied material
+  alone, relevance to Q4 cannot be verified.'
 superseded_by: null
-notes: >-
-  Global South (Nigeria / West Africa, ECOWAS/WAHO), EN, peer-reviewed journal article, open
-  access (CC BY), discipline: health policy / evidence-to-policy guidance development. Found via
-  query family: challenge ('health policy brief evidence grading Global South WHO PAHO grey
-  literature guidance'). Dialogue-table stance: NO. diversity: global_south
+notes: 'Global South (Nigeria / West Africa, ECOWAS/WAHO), EN, peer-reviewed journal
+  article, open access (CC BY), discipline: health policy / evidence-to-policy guidance
+  development. Found via query family: challenge (''health policy brief evidence grading
+  Global South WHO PAHO grey literature guidance''). Dialogue-table stance: NO. diversity:
+  global_south'
 fetched_from_url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7409627/fullTextXML

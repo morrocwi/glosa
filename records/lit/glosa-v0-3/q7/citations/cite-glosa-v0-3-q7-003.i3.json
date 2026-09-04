@@ -1,0 +1,17 @@
+{
+ "vendor": "codex",
+ "fetched": {
+  "source": "url-fetch",
+  "title": "Intuitionism in the Philosophy of Mathematics (Stanford Encyclopedia of Philosophy)",
+  "abstract": ""
+ },
+ "verdict": {
+  "metadata_matches": true,
+  "passage_plausible": true,
+  "claim_match": false,
+  "bearing": "CONTEXT_ONLY",
+  "reason": "Metadata title aligns and the fetched text contains the passage; the excerpt supports the described intuitionism/Platonism contrast. But the hypothesis is only labeled Q7 with no substantive content, so relevance to the hypothesis cannot be independently judged.",
+  "passage_mechanical": "verbatim prefix found in fetched open text"
+ },
+ "date": "2026-09-04"
+}

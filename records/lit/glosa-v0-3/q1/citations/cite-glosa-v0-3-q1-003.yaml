@@ -10,41 +10,43 @@ metadata_verified: true
 metadata_verified_by: mechanical:crossref
 metadata_verified_at: '2026-09-05'
 claim_match_verified: true
-claim_match_verified_by: route:I0
+claim_match_verified_by: route:codex
 claim_match_verified_at: '2026-09-05'
-exact_passage: >-
-  The rise of new organizational theories can have no other effect on classic institutional
-  theory than to limit the domain of its applicability.
-page_or_locator: Abstract, Purpose section (Crossref metadata record for DOI
-  10.1108/ijoa-02-2019-1666)
+exact_passage: The rise of new organizational theories can have no other effect on
+  classic institutional theory than to limit the domain of its applicability.
+page_or_locator: Abstract, Purpose section (Crossref metadata record for DOI 10.1108/ijoa-02-2019-1666)
 line_or_paragraph: final sentence of the Purpose paragraph of the abstract
 scope: DIRECT_QUOTATION
 evidence_tier: Dr
-independence_class: I0
-who_verified: I0 (this session, same-session read of the mechanically fetched Crossref abstract;
-  no cross-vendor or independent human check has run yet)
+independence_class: I3
+who_verified: route:codex (cross-vendor AI; abstract/metadata level, not full text)
+  -- see cite-glosa-v0-3-q1-003.i3.json
 verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
-status: METADATA_OK
+status: VERIFIED
 xenon_ledger_ref: null
-disclosure: >-
-  I0 only (same session, not independently checked). Title/journal/DOI confirmed mechanically via
-  Crossref bibliographic search ("Can institutional theory be refuted, replaced or modified?"),
-  which returned this article in International Journal of Organizational Analysis (DOI
-  10.1108/ijoa-02-2019-1666) -- note the article was originally found via a WebSearch result
-  pointing to a sciencedirect.com URL, but Crossref's own registered record places it in an
-  Emerald-published journal, not Elsevier/ScienceDirect; the sciencedirect.com host returned a
-  Cloudflare block to a scripted fetch, so the publisher's own Crossref-registered JATS abstract
-  was read instead (a mechanical metadata route, not full text). This source is a CHALLENGE to
-  Q1's generalization premise: it argues institutional isomorphism theory is "a closed theory"
-  whose domain of applicability can only be narrowed, not extended, by newer theories -- i.e. an
-  explicit argument, from within organizational theory itself, against treating an
-  isomorphism/category-stabilization mechanism as freely portable to new domains without a fresh,
-  independently justified theory for that domain.
+disclosure: 'I0 only (same session, not independently checked). Title/journal/DOI
+  confirmed mechanically via Crossref bibliographic search ("Can institutional theory
+  be refuted, replaced or modified?"), which returned this article in International
+  Journal of Organizational Analysis (DOI 10.1108/ijoa-02-2019-1666) -- note the article
+  was originally found via a WebSearch result pointing to a sciencedirect.com URL,
+  but Crossref''s own registered record places it in an Emerald-published journal,
+  not Elsevier/ScienceDirect; the sciencedirect.com host returned a Cloudflare block
+  to a scripted fetch, so the publisher''s own Crossref-registered JATS abstract was
+  read instead (a mechanical metadata route, not full text). This source is a CHALLENGE
+  to Q1''s generalization premise: it argues institutional isomorphism theory is "a
+  closed theory" whose domain of applicability can only be narrowed, not extended,
+  by newer theories -- i.e. an explicit argument, from within organizational theory
+  itself, against treating an isomorphism/category-stabilization mechanism as freely
+  portable to new domains without a fresh, independently justified theory for that
+  domain. | I3 route (codex) judged from fetched metadata/abstract + the card''s quoted
+  passage, not full text: Metadata title, year, venue, and first author match. The
+  quoted passage appears verbatim in the provided Crossref abstract. The passage bears
+  on Q1 as described because it discusses limits on institutional theory’s domain
+  of applicability, challenging broad cross-domain generalization.'
 superseded_by: null
-notes: >-
-  Author affiliation not confirmed from this metadata-only read (Global North publication venue,
-  International Journal of Organizational Analysis / Emerald), EN, peer-reviewed journal article.
-  Found via query family: challenge ('institutional isomorphism critique domain-specific not
-  generalizable organizational theory limits'). Dialogue-table stance: NO (challenges Q1's
-  cross-domain-generalization premise).
+notes: 'Author affiliation not confirmed from this metadata-only read (Global North
+  publication venue, International Journal of Organizational Analysis / Emerald),
+  EN, peer-reviewed journal article. Found via query family: challenge (''institutional
+  isomorphism critique domain-specific not generalizable organizational theory limits'').
+  Dialogue-table stance: NO (challenges Q1''s cross-domain-generalization premise).'
 fetched_from_url: https://api.crossref.org/works?query.bibliographic=Can+institutional+theory+be+refuted+replaced+or+modified&rows=3

@@ -7,57 +7,73 @@ identifier:
 fetch_status: FETCHED
 fetched_at: '2026-09-05'
 metadata_verified: true
-metadata_verified_by: mechanical:curl+html-strip (arXiv abstract page fetched and rendered directly;
-  arXiv:2103.06944 [cs.CL], DOI 10.48550/arXiv.2103.06944 shown on the page)
+metadata_verified_by: mechanical:curl+html-strip (arXiv abstract page fetched and
+  rendered directly; arXiv:2103.06944 [cs.CL], DOI 10.48550/arXiv.2103.06944 shown
+  on the page)
 metadata_verified_at: '2026-09-05'
 claim_match_verified: true
-claim_match_verified_by: self:same-session-read (I1, NOT independent -- awaiting a decorrelated I3
-  cross-vendor route to upgrade status to VERIFIED per Rule 17/S14; task instruction caps status at
-  METADATA_OK for this pass)
+claim_match_verified_by: route:codex
 claim_match_verified_at: '2026-09-05'
-exact_passage: Preregistration refers to the practice of specifying what you are going to do, and what
-  you expect to find in your study, before carrying out the study. This practice is increasingly common
-  in medicine and psychology, but is rarely discussed in NLP.
-page_or_locator: 'arxiv.org/abs/2103.06944, "Preregistering NLP Research" (van Miltenburg, van der Lee,
-  Krahmer; accepted NAACL 2021), Abstract, as rendered on the page fetched 2026-09-05'
-line_or_paragraph: line 17 of the fetched/stripped page text
+exact_passage: Preregistration refers to the practice of specifying what you are going
+  to do, and what you expect to find in your study, before carrying out the study.
+  This practice is increasingly common in medicine and psychology, but is rarely discussed
+  in NLP.
+page_or_locator: arxiv.org/abs/2103.06944, "Preregistering NLP Research" (van Miltenburg,
+  van der Lee, Krahmer; accepted NAACL 2021), Abstract, as rendered on the page fetched
+  2026-09-05
+line_or_paragraph: char offset 1120 of normalized fetched text (~paragraph 1); verbatim
+  prefix match
 scope: DIRECT_QUOTATION
 evidence_tier: Dr
-independence_class: I1
-who_verified: same-session AI (I1, non-independent) -- metadata confirmed mechanically, passage read
-  and matched to Q5 by the same session that ran the search; no cross-vendor I3 route run in this pass
+independence_class: I3
+who_verified: route:codex (cross-vendor AI; abstract/metadata level, not full text)
+  -- see cite-glosa-v0-3-q5-008.i3.json
 verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
-status: METADATA_OK
+status: VERIFIED
 xenon_ledger_ref: null
-disclosure: 'van Miltenburg, van der Lee & Krahmer, "Preregistering NLP Research" (NAACL 2021 preprint,
-  arXiv:2103.06944, EN). Fetched and read directly (curl + stdlib HTML stripper, one page kept in memory
-  at a time per RAM limit) 2026-09-05, abstract-page only (full PDF/HTML not fetched in this pass,
-  logged honestly). Read as: names preregistration as "increasingly common in medicine and psychology,
-  but rarely discussed in NLP" -- i.e. an entire live research field (NLP) is actively importing
-  preregistration discipline while having NO analogue of human-subjects ethics/IRB approval for most
+disclosure: 'van Miltenburg, van der Lee & Krahmer, "Preregistering NLP Research"
+  (NAACL 2021 preprint, arXiv:2103.06944, EN). Fetched and read directly (curl + stdlib
+  HTML stripper, one page kept in memory at a time per RAM limit) 2026-09-05, abstract-page
+  only (full PDF/HTML not fetched in this pass, logged honestly). Read as: names preregistration
+  as "increasingly common in medicine and psychology, but rarely discussed in NLP"
+  -- i.e. an entire live research field (NLP) is actively importing preregistration
+  discipline while having NO analogue of human-subjects ethics/IRB approval for most
   of its studies at all. stance vs Q5 as read: NO (challenges universalizing a hard
-  freeze-before-ethics gate across ALL of glosa''s own work: for non-human-subjects genres -- formal
-  proof, computational/NLP-style empirical work, conceptual analysis -- there is often no
-  ethics_approved_at event to sequence against in the first place, so a hard gate keyed on that field
-  would need a documented exemption path, not a universal block). No novel/first/prior-art claim made
-  about this source; comparison to Q5 is same/different/orthogonal as stated in dialogue_table_stance.
-  independence_class I1 (same session) -- status METADATA_OK only, not VERIFIED.'
+  freeze-before-ethics gate across ALL of glosa''s own work: for non-human-subjects
+  genres -- formal proof, computational/NLP-style empirical work, conceptual analysis
+  -- there is often no ethics_approved_at event to sequence against in the first place,
+  so a hard gate keyed on that field would need a documented exemption path, not a
+  universal block). No novel/first/prior-art claim made about this source; comparison
+  to Q5 is same/different/orthogonal as stated in dialogue_table_stance. independence_class
+  I1 (same session) -- status METADATA_OK only, not VERIFIED. | I3 route (codex) judged
+  from fetched metadata/abstract + the card''s quoted passage, not full text: Metadata
+  matches title/year/first author and passage is verbatim in the abstract. It contextualizes
+  preregistration across medicine, psychology, and NLP, but the hypothesis is only
+  ''Q5'' and the excerpt does not address ethics-approval sequencing, so claim match
+  is uncertain. | I3 route (codex) judged from fetched metadata/abstract + the card''s
+  quoted passage, not full text: Metadata title, year, and first author match. The
+  quoted passage is mechanically found in the abstract and is consistent with the
+  title/abstract. It provides contextual relevance about preregistration being common
+  in medicine/psychology but rarely discussed in NLP, without directly evidencing
+  a stronger dialogue-table claim.'
 superseded_by: null
-notes: 'Diversity: language=en, source_type=preprint, geography_or_institution=Global (Tilburg
-  University, Netherlands-based authors; NAACL, international NLP venue), search_route_or_database="web
-  search, glosa-v0-3 Q5 scoping pass". dialogue_table_stance: no. what_it_separates: Separates fields
-  where preregistration and ethics approval are both routine and sequenced (medicine, psychology) from
-  a field (NLP) where preregistration is being newly proposed with no existing ethics-approval-timing
-  convention to hook into at all -- a domain-transfer boundary Q5''s FOUNDATION-wide gate design needs
-  to cross. what_it_assumes: Assumes NLP researchers reading this paper are unfamiliar with
-  preregistration mechanics and need the medicine/psychology analogy explained from scratch; does not
-  itself propose an ethics-timing field because its source fields (medicine/psychology) already have
-  one that NLP mostly lacks. what_it_would_say_against_us: If glosa''s hard gate hard-blocks ANY claim
-  card lacking ethics_approved_at, it would incorrectly block legitimate non-human-subjects work (proofs,
-  code analysis, NLP-style corpus studies) that has no ethics committee to seek approval from -- the
-  minimal schema field needs a null/NOT_APPLICABLE state for ethics_approved_at, not just a
-  before/after comparison, or the gate misfires on an entire class of real research this preprint
-  represents.'
+notes: 'Diversity: language=en, source_type=preprint, geography_or_institution=Global
+  (Tilburg University, Netherlands-based authors; NAACL, international NLP venue),
+  search_route_or_database="web search, glosa-v0-3 Q5 scoping pass". dialogue_table_stance:
+  no. what_it_separates: Separates fields where preregistration and ethics approval
+  are both routine and sequenced (medicine, psychology) from a field (NLP) where preregistration
+  is being newly proposed with no existing ethics-approval-timing convention to hook
+  into at all -- a domain-transfer boundary Q5''s FOUNDATION-wide gate design needs
+  to cross. what_it_assumes: Assumes NLP researchers reading this paper are unfamiliar
+  with preregistration mechanics and need the medicine/psychology analogy explained
+  from scratch; does not itself propose an ethics-timing field because its source
+  fields (medicine/psychology) already have one that NLP mostly lacks. what_it_would_say_against_us:
+  If glosa''s hard gate hard-blocks ANY claim card lacking ethics_approved_at, it
+  would incorrectly block legitimate non-human-subjects work (proofs, code analysis,
+  NLP-style corpus studies) that has no ethics committee to seek approval from --
+  the minimal schema field needs a null/NOT_APPLICABLE state for ethics_approved_at,
+  not just a before/after comparison, or the gate misfires on an entire class of real
+  research this preprint represents.'
 citation_card_id: cite-glosa-v0-3-q5-008
 identifier_kind: ARXIV
 claim_match_verification_route: NOT_YET
@@ -74,4 +90,4 @@ diversity:
     index_name: null
     value: null
     date_read: null
-fetched_from_url: https://arxiv.org/abs/2103.06944
+fetched_from_url: https://arxiv.org/html/2103.06944

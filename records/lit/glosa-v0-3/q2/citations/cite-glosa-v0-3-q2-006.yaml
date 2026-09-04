@@ -9,35 +9,45 @@ fetched_at: '2026-09-05'
 metadata_verified: true
 metadata_verified_by: mechanical:direct-fetch-pdf-title-page
 metadata_verified_at: '2026-09-05'
-claim_match_verified: true
-claim_match_verified_by: self:same-session-AI (I1, not yet an independent I3/I5 route)
+claim_match_verified: false
+claim_match_verified_by: route:codex
 claim_match_verified_at: '2026-09-05'
-exact_passage: 'วารสารกลุ่มที่ 1 : วารสารที่ผ่านการรับรองคุณภาพของ TCI (จนถึง 31 ธันวาคม 2562) และอยู่ใน
-  ฐานข้อมูล TCI และจะถูกคัดเลือกเข้าสู่ฐานข้อมูล ASEAN Citation Index (ACI) ต่อไป'
-page_or_locator: p.1 of the fetched PDF ("บทที่ ๑ TCI ให้ทำอย่างไร" section, pdftotext -l 8 extraction,
-  fetched 2026-09-05)
+exact_passage: 'วารสารกลุ่มที่ 1 : วารสารที่ผ่านการรับรองคุณภาพของ TCI (จนถึง 31 ธันวาคม
+  2562) และอยู่ใน ฐานข้อมูล TCI และจะถูกคัดเลือกเข้าสู่ฐานข้อมูล ASEAN Citation Index
+  (ACI) ต่อไป'
+page_or_locator: p.1 of the fetched PDF ("บทที่ ๑ TCI ให้ทำอย่างไร" section, pdftotext
+  -l 8 extraction, fetched 2026-09-05)
 scope: DIRECT_QUOTATION
 evidence_tier: definition
-independence_class: I1
-who_verified: self (same-session AI, I1) -- not yet an independent cross-vendor or human route
+independence_class: I3
+who_verified: route:codex (cross-vendor AI; abstract/metadata level, not full text)
+  -- see cite-glosa-v0-3-q2-006.i3.json
 verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
 status: METADATA_OK
 xenon_ledger_ref: null
-disclosure: 'Same-session AI check only (I1) -- this card is METADATA_OK, not VERIFIED. No DOI (institutional
-  PDF guide); byline confirmed by direct read (กองวิชาการ สำนักงานอธิการบดี มหาวิทยาลัยมหาจุฬาลงกรณราชวิทยาลัย
-  -- Mahachulalongkornrajavidyalaya University Office of Academic Affairs, author line: สุชญา ศิริธัญภร).
-  Passage read verbatim from the pdftotext extraction of the fetched PDF (1-page cover-and-preamble document
-  under an 8-page cap, per RAM-conscious rule). Found under the challenge/local-context query (''การรับรองทางวิชาการทางเลือก
-  การทบทวนหลังตีพิมพ์ วารสารวิชาการ''). Bearing on Q2: CONTEXT_ONLY -- this source does not discuss or
-  evaluate any certification-substitute mechanism; it documents what formal institutional certification
-  concretely is and confers in the Thai academic system this workspace operates in (TCI Group-1 accreditation
-  status feeding into ASEAN Citation Index inclusion), i.e. it names the "institutional certification"
-  side of Q2''s comparison in the workspace''s own local setting.'
+disclosure: 'Same-session AI check only (I1) -- this card is METADATA_OK, not VERIFIED.
+  No DOI (institutional PDF guide); byline confirmed by direct read (กองวิชาการ สำนักงานอธิการบดี
+  มหาวิทยาลัยมหาจุฬาลงกรณราชวิทยาลัย -- Mahachulalongkornrajavidyalaya University
+  Office of Academic Affairs, author line: สุชญา ศิริธัญภร). Passage read verbatim
+  from the pdftotext extraction of the fetched PDF (1-page cover-and-preamble document
+  under an 8-page cap, per RAM-conscious rule). Found under the challenge/local-context
+  query (''การรับรองทางวิชาการทางเลือก การทบทวนหลังตีพิมพ์ วารสารวิชาการ''). Bearing
+  on Q2: CONTEXT_ONLY -- this source does not discuss or evaluate any certification-substitute
+  mechanism; it documents what formal institutional certification concretely is and
+  confers in the Thai academic system this workspace operates in (TCI Group-1 accreditation
+  status feeding into ASEAN Citation Index inclusion), i.e. it names the "institutional
+  certification" side of Q2''s comparison in the workspace''s own local setting. |
+  I3 route (codex) judged from fetched metadata/abstract + the card''s quoted passage,
+  not full text: No title/author/year metadata contradicts the card, but the fetched
+  text is raw PDF/binary output and the quoted Thai passage was not mechanically found.
+  With no comparable fetched text, passage plausibility and relevance to Q2 cannot
+  be confirmed.'
 superseded_by: null
-notes: 'Thailand (Mahachulalongkornrajavidyalaya University), TH-language, grey/institutional guide document
-  (not peer-reviewed; an internal how-to guide). Found via query family: challenge (Thai-language). Dialogue-table
-  stance: ORTHOGONAL (defines the certification side of the comparison; does not itself argue for or against
-  a claim-card substitute). dialogue_table_stance: orthogonal. language: th.'
+notes: 'Thailand (Mahachulalongkornrajavidyalaya University), TH-language, grey/institutional
+  guide document (not peer-reviewed; an internal how-to guide). Found via query family:
+  challenge (Thai-language). Dialogue-table stance: ORTHOGONAL (defines the certification
+  side of the comparison; does not itself argue for or against a claim-card substitute).
+  dialogue_table_stance: orthogonal. language: th.'
 fetched_from_url: https://acd.mcu.ac.th/wp-content/uploads/2021/03/%E0%B8%84%E0%B8%B9%E0%B9%88%E0%B8%A1%E0%B8%B7%E0%B8%AD%E0%B8%88%E0%B8%B1%E0%B8%94%E0%B8%97%E0%B8%B3%E0%B8%A7%E0%B8%B2%E0%B8%A3%E0%B8%AA%E0%B8%B2%E0%B8%A3%E0%B8%97%E0%B8%B2%E0%B8%87%E0%B8%A7%E0%B8%B4%E0%B8%8A%E0%B8%B2%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%83%E0%B8%AB%E0%B9%89%E0%B9%80%E0%B8%82%E0%B9%89%E0%B8%B2%E0%B8%AA%E0%B8%B9%E0%B9%88%E0%B8%90%E0%B8%B2%E0%B8%99TCI%E0%B8%81%E0%B8%A5%E0%B8%B8%E0%B9%88%E0%B8%A1%E0%B9%91.pdf
-line_or_paragraph: lines 69-70 of the pdftotext -l 8 extraction (one sentence wrapped across the PDF's
-  two printed lines)
+line_or_paragraph: lines 69-70 of the pdftotext -l 8 extraction (one sentence wrapped
+  across the PDF's two printed lines)

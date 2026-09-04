@@ -1,0 +1,32 @@
+{
+ "vendor": "codex",
+ "fetched": {
+  "source": "crossref",
+  "title": "Open science interventions to improve reproducibility and replicability of research: a scoping review",
+  "authors": [
+   "Dudda",
+   "Kormann",
+   "Kozula",
+   "DeVito",
+   "Klebel",
+   "Dewi",
+   "Spijker",
+   "Stegeman",
+   "Van den Eynden",
+   "Ross-Hellauer",
+   "Leeflang"
+  ],
+  "year": 2025,
+  "container": "Royal Society Open Science",
+  "abstract": " \n                    Various open science practices have been proposed to improve the reproducibility and replicability of scientific research, but not for all practices, there may be evidence they are indeed effective. Therefore, we conducted a scoping review of the literature on interventions to improve reproducibility. We systematically searched\n                     Medline \n                     , \n                     Embase \n                     , \n                     Web of Science \n                     , \n                     PsycINFO \n                     , \n                     Scopus \n                     and \n                     Eric \n                     , \n                    on 18 August 2023. Any study empirically evaluating the effectiveness of interventions aimed at improving the reproducibility or replicability of scientific methods and findings was included. We summarized the retrieved evidence narratively and in evidence gap maps. Of the 105 distinct studies we included, 15 directly measured the effect of an intervention on reproducibility or replicability, while the remainder addressed a proxy outcome that might be expected to increase reproducibility or replicability, such as data sharing, methods transparency or pre-registration. Thirty studies were non-comparative and 27 were comparative but cross-sectional observational designs, precluding any causal inference. Despite studies investigating a range of interventions and addressing various outcomes, "
+ },
+ "verdict": {
+  "metadata_matches": true,
+  "passage_plausible": true,
+  "claim_match": true,
+  "bearing": "CONTEXT_ONLY",
+  "reason": "Metadata matches the fetched Crossref fields, and the passage is verbatim in the fetched excerpt. The passage provides contextual evidence about the limited number of direct reproducibility-intervention studies; it does not directly support or challenge Q2's claim-card-certification argument.",
+  "passage_mechanical": "verbatim prefix found in fetched open text"
+ },
+ "date": "2026-09-04"
+}

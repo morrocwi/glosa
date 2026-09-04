@@ -1,0 +1,23 @@
+{
+ "vendor": "codex",
+ "fetched": {
+  "source": "crossref",
+  "title": "What Constitutes “Good” Evidence for Public Health and Social Policy-making? From Hierarchies to Appropriateness",
+  "authors": [
+   "Parkhurst",
+   "Abeysinghe"
+  ],
+  "year": 2016,
+  "container": "Social Epistemology",
+  "abstract": ""
+ },
+ "verdict": {
+  "metadata_matches": true,
+  "passage_plausible": false,
+  "claim_match": false,
+  "bearing": "CONTEXT_ONLY",
+  "reason": "Metadata does not contradict the card. But the fetched abstract/text is empty and verbatim passage search found none, so the quotation cannot be checked. Title suggests relevant context on evidence hierarchies, but not enough to confirm the claimed quotation or support.",
+  "passage_mechanical": "no open full text fetched; abstract/metadata only"
+ },
+ "date": "2026-09-04"
+}

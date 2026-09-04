@@ -1,0 +1,17 @@
+{
+ "vendor": "codex",
+ "fetched": {
+  "source": "url-fetch",
+  "title": "Causation in Arabic and Islamic Thought (Stanford Encyclopedia of Philosophy)",
+  "abstract": ""
+ },
+ "verdict": {
+  "metadata_matches": true,
+  "passage_plausible": true,
+  "claim_match": true,
+  "bearing": "SUPPORTS",
+  "reason": "Fetched title matches the SEP entry named by the card. The quoted passage is mechanically present in the excerpt and aligns with the locator. The passage explicitly frames contingency as requiring preponderation toward existence over non-existence, which plausibly supports the card's Directed Selection relevance.",
+  "passage_mechanical": "verbatim prefix found in fetched open text"
+ },
+ "date": "2026-09-04"
+}

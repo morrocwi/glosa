@@ -5,17 +5,31 @@ text: The same slide deck proposes shifting the guiding question from AI Governa
   transparent? biased?) to Epistemic Governance (what status does this specific output have? who checks
   it? who certifies it? who is responsible once it is used?), splitting responsibility into an input side
   and an uptake side rather than leaving it solely on the system.
-verbatim: "จาก AI Governance สู่ Epistemic Governance ... AI Governance: ระบบปลอดภัยไหม? โปร่งใสไหม? มีอคติไหม?
-  Epistemic Governance: ผลลัพธ์นี้มีสถานะอะไร? ใครตรวจ? ใครรับรอง? ใครรับผิดชอบเมื่อนำไปใช้? Input Responsibility +
-  Uptake Responsibility คำถามชวนคิด: กำกับระบบ AI อย่างเดียวพอไหม หรือต้องกำกับสถานะของความรู้ด้วย?"
+verbatim: "จาก AI Governance สู่ Epistemic Governance
+
+  AI Governance
+
+  Epistemic Governance
+
+  ระบบปลอดภัยไหม?
+  โปร่งใสไหม?
+  มีอคติไหม?
+
+  ผลลัพธ์นี้มีสถานะอะไร?
+  ใครตรวจ? ใครรับรอง?
+  ใครรับผิดชอบเมือนําไปใช้?
+
+  Input Responsibility + Uptake Responsibility
+  คำถามชวนคิด: กํากับระบบ AI อย่างเดียวพอไหม หรือต้องกํากับสถานะของความรู้ด้วย?"
 source:
   doi: 10.5281/zenodo.22302410
   title: "ปัญญาประดิษฐ์กับอารยธรรมความรู้: การลืมสถานะการเป็นตัวเลือกและความรับผิดชอบของมนุษย์ในสังคมที่ถูกสื่อกลางด้วยปัญญาประดิษฐ์
     (สไลด์นำเสนอระดับชาติ NIDA, 29 ส.ค. 2569)"
   year: 2026
-fetched_from_url: local (~/Downloads/AI_Knowledge_Civilization_.pdf)
-locator: slide "องค์ 3 | คำตอบของบทความ — จาก AI Governance สู่ Epistemic Governance" (pdftotext, lines ~119-140
-  of extracted body)
+fetched_from_url: "https://zenodo.org/records/18943971"
+locator: slide "องค์ 3 | คำตอบของบทความ — จาก AI Governance สู่ Epistemic Governance"; this whole block is
+  genuinely continuous in pdftotext's extraction order (unlike kc-se-008's original ellipsis, no cut was
+  needed here)
 tier: Open
 base_relation: holds
 base_justification: Consistent with, and a policy-facing restatement of, the base's Bounded-Judge Law

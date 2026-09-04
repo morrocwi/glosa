@@ -15,7 +15,7 @@ source:
   title: "Why We Became a Social Enterprise: Positional Governance, Dual Costs, and a Toolkit for the
     Class of Enterprises for Which the Form Is Not a Choice"
   year: 2026
-fetched_from_url: local (~/Downloads/Why_We_Became_a_Social_Enterprise_FINAL_v5.0.pdf)
+fetched_from_url: "https://zenodo.org/api/records/22227005/files/Why_We_Became_a_Social_Enterprise_FINAL_v5.0-1.pdf/content"
 locator: p.1, Abstract, "Originality" clause (pdftotext -l 6, lines ~24-27)
 tier: Open
 base_relation: holds

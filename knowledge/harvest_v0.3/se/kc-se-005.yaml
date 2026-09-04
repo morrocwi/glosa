@@ -6,18 +6,17 @@ text: MOCA's core data model opens by naming the latent enterprise state relevan
   gain applied to a truncation of the state plus several named error terms — never the state itself. The
   mission-binding vector that follows is explicitly framed as an audit coordinate, not a claim that
   reality itself decomposes into exactly those dimensions.
-verbatim: "Let Et denote the latent enterprise state relevant to question Q. A source or institutional
-  channel a provides a readout map Ra,t = Ka θ(Et ) + ηa,tsel + ηa,tself . ... This vector is an audit
-  coordinate, not a claim that nature contains exactly these dimensions."
+verbatim: "This vector is an audit coordinate, not a claim that nature contains exactly these dimensions."
 source:
   doi: 10.5281/zenodo.22301882
   title: "Mission Opportunity–Constraint Architecture (MOCA): An AI-Executable Technical Management
     Framework for Social Enterprises — Equations, Dynamic Policy Paths, Binding, Readout Audit,
     Pseudocode, and DAG/Knowledge-Graph Specification"
   year: 2026
-fetched_from_url: local (~/Downloads/MOCA_AI_Executable_Technical_Paper_v0.2.pdf)
-locator: p.2, §2.1 "Reality, readout, and non-equivalence" and §3.1 "Mission-binding vector"
-  (pdftotext -l 6, near end of body text)
+fetched_from_url: "https://zenodo.org/api/records/22301882/files/MOCA_AI_Executable_Technical_Paper_v0.2.pdf/content"
+locator: §3.1 "Mission-binding vector", closing sentence (the earlier card's equation-spanning quote crossed
+  a two-column layout that pdftotext does not linearize in reading order, so it was not a genuinely
+  continuous extractable passage; trimmed to the closing sentence that is)
 tier: definition
 base_relation: refined_by_later_work
 base_justification: Structurally the same shape as the base's mother equation M_A[n]=K_A·θ(E[n])+η

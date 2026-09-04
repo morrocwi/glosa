@@ -10,32 +10,43 @@ metadata_verified: true
 metadata_verified_by: mechanical:crossref
 metadata_verified_at: '2026-09-05'
 claim_match_verified: true
-claim_match_verified_by: self:same-session-AI (I1, not yet an independent I3/I5 route)
+claim_match_verified_by: route:codex
 claim_match_verified_at: '2026-09-05'
-exact_passage: We are already starting to see some authors and publishers gaming laudable open science
-  initiatives in order to gain the credibility benefits of "being open" while not actually changing very
-  much.
-page_or_locator: main text, "Gaming" section (journals.plos.org HTML article, fetched 2026-09-05)
+exact_passage: We are already starting to see some authors and publishers gaming laudable
+  open science initiatives in order to gain the credibility benefits of "being open"
+  while not actually changing very much.
+page_or_locator: main text, "Gaming" section (journals.plos.org HTML article, fetched
+  2026-09-05)
 scope: DIRECT_QUOTATION
 evidence_tier: Dr
-independence_class: I1
-who_verified: self (same-session AI, I1) -- not yet an independent cross-vendor or human route
+independence_class: I3
+who_verified: route:codex (cross-vendor AI; abstract/metadata level, not full text)
+  -- see cite-glosa-v0-3-q2-001.i3.json
 verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
-status: METADATA_OK
+status: VERIFIED
 xenon_ledger_ref: null
-disclosure: 'Same-session AI check only (I1) -- this card is METADATA_OK, not VERIFIED (Rule 17: status
-  METADATA_OK max until an I3+ route re-checks it). Title/DOI/author/venue confirmed mechanically via
-  Crossref (Nicholas J. L. Brown; PLOS Biology; 2024-09-09). Passage read via a direct fetch of the publisher
-  HTML page. Found under the challenge query family (''"open science badges" criticism gaming incentive
-  credibility signal''). Bearing on Q2: CHALLENGES the optimistic reading -- documents a real, named certification-substitute
-  mechanism (the "Preregistered" open-science badge) being awarded for minimal-detail preregistration
-  and a journal (Psychological Science) discontinuing the badge over exactly this, i.e. the badge stopped
-  functioning as a checkable rigour signal in practice. Directly relevant to whether Rule 17''s claim
-  card could suffer the same gaming failure mode if not designed to resist it.'
+disclosure: 'Same-session AI check only (I1) -- this card is METADATA_OK, not VERIFIED
+  (Rule 17: status METADATA_OK max until an I3+ route re-checks it). Title/DOI/author/venue
+  confirmed mechanically via Crossref (Nicholas J. L. Brown; PLOS Biology; 2024-09-09).
+  Passage read via a direct fetch of the publisher HTML page. Found under the challenge
+  query family (''"open science badges" criticism gaming incentive credibility signal'').
+  Bearing on Q2: CHALLENGES the optimistic reading -- documents a real, named certification-substitute
+  mechanism (the "Preregistered" open-science badge) being awarded for minimal-detail
+  preregistration and a journal (Psychological Science) discontinuing the badge over
+  exactly this, i.e. the badge stopped functioning as a checkable rigour signal in
+  practice. Directly relevant to whether Rule 17''s claim card could suffer the same
+  gaming failure mode if not designed to resist it. | I3 route (codex) judged from
+  fetched metadata/abstract + the card''s quoted passage, not full text: Metadata
+  shown does not contradict the card. The passage is mechanically found and consistent
+  with the article’s open-science gaming theme. It bears on Q2 by challenging confidence
+  that formal openness/claim-card-like mechanisms reliably substitute for deeper certification
+  or practice change.'
 superseded_by: null
-notes: 'Global North (author affiliation: independent researcher, EU-based; venue: PLOS Biology, US/ UK
-  publisher), EN, peer-reviewed opinion/perspective piece. Found via query family: challenge. Dialogue-table
-  stance: NO (challenges Q2''s optimistic reading that a claim-card-shaped mechanism reliably substitutes
-  for institutional certification). dialogue_table_stance: disagrees. language: en.'
-fetched_from_url: https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3002816
-line_or_paragraph: line 20 of the fetched-and-stripped page text (single continuous sentence)
+notes: 'Global North (author affiliation: independent researcher, EU-based; venue:
+  PLOS Biology, US/ UK publisher), EN, peer-reviewed opinion/perspective piece. Found
+  via query family: challenge. Dialogue-table stance: NO (challenges Q2''s optimistic
+  reading that a claim-card-shaped mechanism reliably substitutes for institutional
+  certification). dialogue_table_stance: disagrees. language: en.'
+fetched_from_url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11412628/fullTextXML
+line_or_paragraph: char offset 3739 of normalized fetched text (~paragraph 1); verbatim
+  prefix match

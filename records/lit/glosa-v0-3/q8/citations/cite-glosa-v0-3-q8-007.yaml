@@ -10,46 +10,48 @@ metadata_verified: true
 metadata_verified_by: mechanical:page-metadata
 metadata_verified_at: '2026-09-05'
 claim_match_verified: true
-claim_match_verified_by: route:I0
+claim_match_verified_by: route:codex
 claim_match_verified_at: '2026-09-05'
-exact_passage: >-
-  It also looks at the way essential poverty is described as the fundamental underpinning of
-  praise and the celebration of Divine bounty.
-page_or_locator: >-
-  Journal of the Institute for Sufi Studies (dergipark.org.tr), article "Spiritual poverty -
-  heavenly riches: some reflections on faqr in the teachings of Ibn 'Arabi and Rumi",
-  English-language abstract, final sentence
-line_or_paragraph: last sentence of the English abstract (line 10 of the fetched, HTML-stripped
-  page text)
+exact_passage: It also looks at the way essential poverty is described as the fundamental
+  underpinning of praise and the celebration of Divine bounty.
+page_or_locator: 'Journal of the Institute for Sufi Studies (dergipark.org.tr), article
+  "Spiritual poverty - heavenly riches: some reflections on faqr in the teachings
+  of Ibn ''Arabi and Rumi", English-language abstract, final sentence'
+line_or_paragraph: char offset 1250 of normalized fetched text (~paragraph 1); verbatim
+  prefix match
 scope: DIRECT_QUOTATION
 evidence_tier: Dr
-independence_class: I0
-who_verified: I0 (this session, same-session curl+strip read of the fetched dergipark abstract
-  page; full-text PDF not fetched -- fetch_status reflects the abstract page only; no
-  cross-vendor or independent human check has run yet)
+independence_class: I3
+who_verified: route:codex (cross-vendor AI; abstract/metadata level, not full text)
+  -- see cite-glosa-v0-3-q8-007.i3.json
 verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
-status: METADATA_OK
+status: VERIFIED
 xenon_ledger_ref: null
-disclosure: >-
-  I0 only (same session, not independently checked). Journal of the Institute for Sufi Studies
-  is a peer-reviewed academic venue (dergipark.org.tr, Turkish national academic journal
-  index/host), non-Anglo-American publishing institution. Abstract text (EN and TR) confirmed
-  directly from the fetched page; this card is METADATA_OK / abstract-level, not a full-text
-  read, since only the article landing page (not the PDF) was fetched this session. CHALLENGE
-  evidence for Q8's "five registers of faqr": this peer-reviewed treatment of faqr in Ibn 'Arabi
-  and Rumi frames faqr's ontological content as inseparable from its devotional function --
-  "essential poverty" is explicitly the ground of "praise and the celebration of Divine bounty",
-  not a value-neutral structural description that could be restated without reference to a
-  Divine addressee. This weighs against treating the five registers of faqr as extractable into
-  a theology-neutral ontology-section primitive: in this source's own framing, the structural
-  and devotional/theological content are the same content, not separable layers.
+disclosure: 'I0 only (same session, not independently checked). Journal of the Institute
+  for Sufi Studies is a peer-reviewed academic venue (dergipark.org.tr, Turkish national
+  academic journal index/host), non-Anglo-American publishing institution. Abstract
+  text (EN and TR) confirmed directly from the fetched page; this card is METADATA_OK
+  / abstract-level, not a full-text read, since only the article landing page (not
+  the PDF) was fetched this session. CHALLENGE evidence for Q8''s "five registers
+  of faqr": this peer-reviewed treatment of faqr in Ibn ''Arabi and Rumi frames faqr''s
+  ontological content as inseparable from its devotional function -- "essential poverty"
+  is explicitly the ground of "praise and the celebration of Divine bounty", not a
+  value-neutral structural description that could be restated without reference to
+  a Divine addressee. This weighs against treating the five registers of faqr as extractable
+  into a theology-neutral ontology-section primitive: in this source''s own framing,
+  the structural and devotional/theological content are the same content, not separable
+  layers. | I3 route (codex) judged from fetched metadata/abstract + the card''s quoted
+  passage, not full text: Fetched title and page text match the card. The quoted passage
+  appears in the English abstract and fits the article topic. The source only contextualizes
+  publication/diversity venue and abstract content as claimed, not direct evidential
+  support for Q8.'
 superseded_by: null
-notes: >-
-  Non-Anglo-American academic venue (Turkish national journal-hosting platform), EN-language
-  abstract (with a parallel Turkish abstract on the same page) -- counted here as a secondary,
-  non-EN-adjacent Global-South/non-Western-publishing diversity point, not one of Q8's two
-  required non-English sources (those are cards 005 Arabic and 006 Indonesian). Found via query
-  family: challenge ('faqr ontological poverty Sufi metaphysics structural dependence
-  philosophy'). Dialogue-table stance: NO (supports keeping faqr's five registers as
-  islam-domain content, not a theology-neutral ontology primitive).
+notes: 'Non-Anglo-American academic venue (Turkish national journal-hosting platform),
+  EN-language abstract (with a parallel Turkish abstract on the same page) -- counted
+  here as a secondary, non-EN-adjacent Global-South/non-Western-publishing diversity
+  point, not one of Q8''s two required non-English sources (those are cards 005 Arabic
+  and 006 Indonesian). Found via query family: challenge (''faqr ontological poverty
+  Sufi metaphysics structural dependence philosophy''). Dialogue-table stance: NO
+  (supports keeping faqr''s five registers as islam-domain content, not a theology-neutral
+  ontology primitive).'
 fetched_from_url: https://dergipark.org.tr/en/pub/taed/article/1189433

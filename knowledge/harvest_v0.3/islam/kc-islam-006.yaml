@@ -6,15 +6,16 @@ text: A constructive-theology manuscript states, for each of its five main doctr
   theological register rather than an empirical one. The manuscript also explicitly declares it supersedes
   material first circulated in four unpublished preprints by the same author, naming which sections are new.
 verbatim: "The maḥall thesis holds that a formally valid judgment may be structurally precluded from bearing
-  wisdom (ḥikma) when what the case entrusted has not been carried, and is tested against three cases... For
-  every doctrine, the article states the conditions under which it would be defeated."
+  wisdom (ḥikma) when what the case entrusted has not been carried, and is
+  tested against three cases: the juristic condemnation of ḥiyal, ʿUmar's suspension of the theft penalty
+  in the Year of Ashes, and waqf maladministration. For every doctrine, the article states the conditions
+  under which it would be defeated."
 source:
   doi: 10.5281/zenodo.21439275
   title: "The Architecture of Faqr: Dependence, Trust, and the Appearance of Wisdom — A Unified Constructive
     Framework in Islamic Theology, Epistemology, and Legal Philosophy"
   year: 2026
-fetched_from_url: local file ~/Downloads/The_Architecture_of_Faqr_v4.pdf (matched by title and abstract text
-  against Zenodo record 21439275)
+fetched_from_url: https://zenodo.org/records/21439275
 locator: Abstract, p.1
 tier: Open
 base_relation: holds

@@ -7,49 +7,61 @@ identifier:
 fetch_status: FETCHED
 fetched_at: '2026-09-05'
 metadata_verified: true
-metadata_verified_by: mechanical:curl+html-strip (NOAA Central Library official page fetched directly)
+metadata_verified_by: mechanical:curl+html-strip (NOAA Central Library official page
+  fetched directly)
 metadata_verified_at: '2026-09-05'
 claim_match_verified: true
-claim_match_verified_by: self:same-session-read (I1, NOT independent -- awaiting a decorrelated I3 cross-vendor
-  route to upgrade status to VERIFIED per Rule 17/S14; task instruction caps status at METADATA_OK for
-  this pass)
+claim_match_verified_by: route:codex
 claim_match_verified_at: '2026-09-05'
-exact_passage: The metrics listed for the journal are not verifiable. Some predatory journals will “invent”
-  metrics, or claim to be indexed in Scopus or Web of Science when they aren’t.
-page_or_locator: library.noaa.gov, 'Signs of a Predatory Publisher' (NOAA Central Library, Journal Evaluation
-  & Predatory Publishing guide), red-flags list, as fetched 2026-09-05
-line_or_paragraph: line 61 of the fetched/stripped page text
+exact_passage: The metrics listed for the journal are not verifiable. Some predatory
+  journals will “invent” metrics, or claim to be indexed in Scopus or Web of Science
+  when they aren’t.
+page_or_locator: library.noaa.gov, 'Signs of a Predatory Publisher' (NOAA Central
+  Library, Journal Evaluation & Predatory Publishing guide), red-flags list, as fetched
+  2026-09-05
+line_or_paragraph: char offset 2328 of normalized fetched text (~paragraph 1); verbatim
+  prefix match
 scope: DIRECT_QUOTATION
 evidence_tier: Dr
-independence_class: I1
-who_verified: same-session AI (I1, non-independent) -- metadata confirmed mechanically, passage read and
-  matched to Q6 by the same session that ran the search; no cross-vendor I3 route run in this pass
+independence_class: I3
+who_verified: route:codex (cross-vendor AI; abstract/metadata level, not full text)
+  -- see cite-glosa-v0-3-q6-006.i3.json
 verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
-status: METADATA_OK
+status: VERIFIED
 xenon_ledger_ref: null
-disclosure: 'NOAA Central Library, ''Signs of a Predatory Publisher'' (EN, grey/institutional practitioner
-  checklist, US federal library). Fetched and read directly (curl + stdlib HTML stripper for web pages;
-  pdftotext -l 8 for the one PDF source) 2026-09-05, one page kept in memory at a time per RAM limit.
-  Read as: Names, as an operational checklist item in an entirely different domain (journal-quality evaluation),
-  almost exactly Q6''s proposed pattern: a source (here, a journal) CLAIMS something checkable (indexing
-  status, impact metrics) that turns out to have ''not verifiable'' status -- i.e. an institution already
-  runs this exact red flag in production, one domain over from glosa''s own. stance vs Q6 as read: YES.
-  independence_class I1 (same session) -- status METADATA_OK only, not VERIFIED: no decorrelated I3 cross-vendor
-  route has checked this card yet. No novel/first/prior-art claim made about this source; comparison to
-  Q6 is same/different/orthogonal as stated in dialogue_table_stance.'
+disclosure: 'NOAA Central Library, ''Signs of a Predatory Publisher'' (EN, grey/institutional
+  practitioner checklist, US federal library). Fetched and read directly (curl + stdlib
+  HTML stripper for web pages; pdftotext -l 8 for the one PDF source) 2026-09-05,
+  one page kept in memory at a time per RAM limit. Read as: Names, as an operational
+  checklist item in an entirely different domain (journal-quality evaluation), almost
+  exactly Q6''s proposed pattern: a source (here, a journal) CLAIMS something checkable
+  (indexing status, impact metrics) that turns out to have ''not verifiable'' status
+  -- i.e. an institution already runs this exact red flag in production, one domain
+  over from glosa''s own. stance vs Q6 as read: YES. independence_class I1 (same session)
+  -- status METADATA_OK only, not VERIFIED: no decorrelated I3 cross-vendor route
+  has checked this card yet. No novel/first/prior-art claim made about this source;
+  comparison to Q6 is same/different/orthogonal as stated in dialogue_table_stance.
+  | I3 route (codex) judged from fetched metadata/abstract + the card''s quoted passage,
+  not full text: Fetched metadata matches the NOAA Library predatory publishing page,
+  and the quoted passage is mechanically found in the excerpt. The passage directly
+  concerns unverifiable or invented journal metrics and false Scopus/Web of Science
+  indexing claims, matching the card’s stated relevance.'
 superseded_by: null
-notes: 'Diversity: language=en, source_type=grey_literature, geography_or_institution=US, search_route_or_database="web
-  search / direct fetch, glosa-v0-3 Q6 scoping pass". dialogue_table_stance: agrees. what_it_separates:
-  Separates a metric/claim a reader can independently confirm against a named registry (Scopus, Web of
-  Science) from one asserted with an invented label (''Universal Impact Factor'') that has no checkable
-  registry behind it at all. what_it_assumes: Assumes a researcher-evaluator manually cross-checking a
-  journal''s claims against known external registries; the check here is possible because a real registry
-  to compare against exists (Scopus/WoS) -- it does not address the harder case (Q6''s actual proposal)
-  where NO external registry exists to check against at all, only the claim itself. what_it_would_say_against_us:
-  Directly supports Q6: shows a real, already-operating institutional analogue of exactly the red flag
-  Q6 proposes (''claims verifiable metrics/indexing'' with the actual verifiability absent), which argues
-  FOR adding a named entry rather than treating the concern as redundant -- the strongest single piece
-  of transfer evidence in this pass, though from a different domain (journal evaluation, not general source
+notes: 'Diversity: language=en, source_type=grey_literature, geography_or_institution=US,
+  search_route_or_database="web search / direct fetch, glosa-v0-3 Q6 scoping pass".
+  dialogue_table_stance: agrees. what_it_separates: Separates a metric/claim a reader
+  can independently confirm against a named registry (Scopus, Web of Science) from
+  one asserted with an invented label (''Universal Impact Factor'') that has no checkable
+  registry behind it at all. what_it_assumes: Assumes a researcher-evaluator manually
+  cross-checking a journal''s claims against known external registries; the check
+  here is possible because a real registry to compare against exists (Scopus/WoS)
+  -- it does not address the harder case (Q6''s actual proposal) where NO external
+  registry exists to check against at all, only the claim itself. what_it_would_say_against_us:
+  Directly supports Q6: shows a real, already-operating institutional analogue of
+  exactly the red flag Q6 proposes (''claims verifiable metrics/indexing'' with the
+  actual verifiability absent), which argues FOR adding a named entry rather than
+  treating the concern as redundant -- the strongest single piece of transfer evidence
+  in this pass, though from a different domain (journal evaluation, not general source
   intake).'
 citation_card_id: cite-glosa-v0-3-q6-006
 identifier_kind: OFFICIAL_URL
@@ -60,7 +72,8 @@ dialogue_table_stance: agrees
 fetched_from_url: https://library.noaa.gov/predatorypublishing/red-flags
 diversity:
   language: en
-  discipline_or_tradition: epistemic hedging / verifiability / disclaimer-catalogue design
+  discipline_or_tradition: epistemic hedging / verifiability / disclaimer-catalogue
+    design
   source_type: grey_literature
   search_route_or_database: web search / direct fetch, glosa-v0-3 Q6 scoping pass
   geography_or_institution: US

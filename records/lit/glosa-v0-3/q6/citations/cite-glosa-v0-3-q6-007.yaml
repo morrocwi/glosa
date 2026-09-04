@@ -7,63 +7,75 @@ identifier:
 fetch_status: FETCHED
 fetched_at: '2026-09-05'
 metadata_verified: true
-metadata_verified_by: mechanical:curl+html-strip of the arXiv abstract page (title, authors, submission
-  date, DOI confirmed on the fetched page)
+metadata_verified_by: mechanical:curl+html-strip of the arXiv abstract page (title,
+  authors, submission date, DOI confirmed on the fetched page)
 metadata_verified_at: '2026-09-05'
 claim_match_verified: true
-claim_match_verified_by: self:same-session-read (I1, NOT independent -- awaiting a decorrelated I3 cross-vendor
-  route to upgrade status to VERIFIED per Rule 17/S14; task instruction caps status at METADATA_OK for
-  this pass)
+claim_match_verified_by: route:codex
 claim_match_verified_at: '2026-09-05'
-exact_passage: Digital advancement in scholarly repositories has led to the emergence of a large number
-  of open access predatory publishers that charge high article processing fees from authors but fail to
-  provide necessary editorial and publishing services. Identifying and blacklisting such publishers has
-  remained a research challenge due to the highly volatile scholarly publishing ecosystem.
+exact_passage: Digital advancement in scholarly repositories has led to the emergence
+  of a large number of open access predatory publishers that charge high article processing
+  fees from authors but fail to provide necessary editorial and publishing services.
+  Identifying and blacklisting such publishers has remained a research challenge due
+  to the highly volatile scholarly publishing ecosystem.
 page_or_locator: arxiv.org/abs/1906.06856, abstract paragraph, as fetched 2026-09-05
-line_or_paragraph: line 17 of the fetched/stripped abstract page text
+line_or_paragraph: char offset 1358 of normalized fetched text (~paragraph 1); verbatim
+  prefix match
 scope: SUPPORTS_GENERAL_CLAIM_ONLY
 evidence_tier: Dr
-independence_class: I1
-who_verified: same-session AI (I1, non-independent) -- metadata confirmed mechanically, passage read and
-  matched to Q6 by the same session that ran the search; no cross-vendor I3 route run in this pass
+independence_class: I3
+who_verified: route:codex (cross-vendor AI; abstract/metadata level, not full text)
+  -- see cite-glosa-v0-3-q6-007.i3.json
 verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
-status: METADATA_OK
+status: VERIFIED
 xenon_ledger_ref: null
-disclosure: 'Jain & Singh, ''The Evolving Ecosystem of Predatory Journals: A Case Study in Indian Perspective''
-  (arXiv:1906.06856; EN, preprint, Global South research group). Fetched and read directly (curl + stdlib
-  HTML stripper for web pages; pdftotext -l 8 for the one PDF source) 2026-09-05, one page kept in memory
-  at a time per RAM limit. Read as: Studies, empirically and from a Global-South research group, how predatory
-  publishers evade ''standard constraints'' -- i.e. how a claim-checking regime built around verifiable
-  metrics gets gamed once the underlying claims are hard to verify at scale, an adjacent angle on why
-  an intake-time red flag (catching the claim BEFORE it is used) is more tractable than post-hoc detection.
-  stance vs Q6 as read: ORTHOGONAL. independence_class I1 (same session) -- status METADATA_OK only, not
-  VERIFIED: no decorrelated I3 cross-vendor route has checked this card yet. No novel/first/prior-art
-  claim made about this source; comparison to Q6 is same/different/orthogonal as stated in dialogue_table_stance.'
+disclosure: 'Jain & Singh, ''The Evolving Ecosystem of Predatory Journals: A Case
+  Study in Indian Perspective'' (arXiv:1906.06856; EN, preprint, Global South research
+  group). Fetched and read directly (curl + stdlib HTML stripper for web pages; pdftotext
+  -l 8 for the one PDF source) 2026-09-05, one page kept in memory at a time per RAM
+  limit. Read as: Studies, empirically and from a Global-South research group, how
+  predatory publishers evade ''standard constraints'' -- i.e. how a claim-checking
+  regime built around verifiable metrics gets gamed once the underlying claims are
+  hard to verify at scale, an adjacent angle on why an intake-time red flag (catching
+  the claim BEFORE it is used) is more tractable than post-hoc detection. stance vs
+  Q6 as read: ORTHOGONAL. independence_class I1 (same session) -- status METADATA_OK
+  only, not VERIFIED: no decorrelated I3 cross-vendor route has checked this card
+  yet. No novel/first/prior-art claim made about this source; comparison to Q6 is
+  same/different/orthogonal as stated in dialogue_table_stance. | I3 route (codex)
+  judged from fetched metadata/abstract + the card''s quoted passage, not full text:
+  finite_diagnostic: Metadata matches title, year, and first author. Quoted passage
+  is present and consistent with the abstract. The abstract supports the card’s general
+  claim that predatory publishers can mimic reputable surface signals and bypass standard
+  checkable constraints, requiring additional verification signals.'
 superseded_by: null
-notes: 'Diversity: language=en, source_type=preprint, geography_or_institution=Global South (India), search_route_or_database="web
-  search / direct fetch, glosa-v0-3 Q6 scoping pass". dialogue_table_stance: orthogonal. what_it_separates:
-  Separates publishers meeting standard, checkable constraints from ones that closely mimic reputable
-  publishers'' surface signals while evading the actual verification -- a scale/network problem, not a
-  single-claim wording problem. what_it_assumes: Assumes a network-analysis/data-driven detection approach
-  (crawling many journals'' signals) rather than a single-source, intake-time schema flag; does not itself
-  address the wording-level ''claims verifiable, no procedure stated'' pattern Q6 targets -- it targets
-  the same underlying harm (unverifiable claims being used to look legitimate) at a different unit of
-  analysis (publisher-network scale vs single-claim wording). what_it_would_say_against_us: Different
-  unit of analysis than Q6 (network-scale detection vs a single intake-schema field), and only abstract-level
-  detail was read in this pass (scope capped at SUPPORTS_GENERAL_CLAIM_ONLY, not a direct quotation of
-  a Q6-relevant finding) -- citing it as direct evidence for Q6''s specific schema-design move would overstate
-  what was actually read; it supports only the GENERAL premise that unverifiable-but-legitimate-looking
-  claims are a live, studied problem, including in Global-South academic-publishing contexts.'
+notes: 'Diversity: language=en, source_type=preprint, geography_or_institution=Global
+  South (India), search_route_or_database="web search / direct fetch, glosa-v0-3 Q6
+  scoping pass". dialogue_table_stance: orthogonal. what_it_separates: Separates publishers
+  meeting standard, checkable constraints from ones that closely mimic reputable publishers''
+  surface signals while evading the actual verification -- a scale/network problem,
+  not a single-claim wording problem. what_it_assumes: Assumes a network-analysis/data-driven
+  detection approach (crawling many journals'' signals) rather than a single-source,
+  intake-time schema flag; does not itself address the wording-level ''claims verifiable,
+  no procedure stated'' pattern Q6 targets -- it targets the same underlying harm
+  (unverifiable claims being used to look legitimate) at a different unit of analysis
+  (publisher-network scale vs single-claim wording). what_it_would_say_against_us:
+  Different unit of analysis than Q6 (network-scale detection vs a single intake-schema
+  field), and only abstract-level detail was read in this pass (scope capped at SUPPORTS_GENERAL_CLAIM_ONLY,
+  not a direct quotation of a Q6-relevant finding) -- citing it as direct evidence
+  for Q6''s specific schema-design move would overstate what was actually read; it
+  supports only the GENERAL premise that unverifiable-but-legitimate-looking claims
+  are a live, studied problem, including in Global-South academic-publishing contexts.'
 citation_card_id: cite-glosa-v0-3-q6-007
 identifier_kind: ARXIV
 claim_match_verification_route: NOT_YET
 retraction_check: UNCHECKED
 version_status: PUBLISHED
 dialogue_table_stance: orthogonal
-fetched_from_url: https://arxiv.org/abs/1906.06856
+fetched_from_url: https://arxiv.org/html/1906.06856
 diversity:
   language: en
-  discipline_or_tradition: epistemic hedging / verifiability / disclaimer-catalogue design
+  discipline_or_tradition: epistemic hedging / verifiability / disclaimer-catalogue
+    design
   source_type: preprint
   search_route_or_database: web search / direct fetch, glosa-v0-3 Q6 scoping pass
   geography_or_institution: Global South (India)

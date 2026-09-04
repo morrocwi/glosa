@@ -10,34 +10,45 @@ metadata_verified: true
 metadata_verified_by: mechanical:direct-fetch-page-title
 metadata_verified_at: '2026-09-05'
 claim_match_verified: true
-claim_match_verified_by: self:same-session-AI (I1, not yet an independent I3/I5 route)
+claim_match_verified_by: route:codex
 claim_match_verified_at: '2026-09-05'
-exact_passage: An article passes peer review with two Approved ratings, or one Approved and two Approved
-  with reservations, and will be included in PubMed, Scopus, and other major indexes, along with its review
-  reports.
-page_or_locator: '"Open Peer Review" explainer page (think.f1000research.com, fetched 2026-09-05)'
+exact_passage: An article passes peer review with two Approved ratings, or one Approved
+  and two Approved with reservations, and will be included in PubMed, Scopus, and
+  other major indexes, along with its review reports.
+page_or_locator: '"Open Peer Review" explainer page (think.f1000research.com, fetched
+  2026-09-05)'
 scope: DIRECT_QUOTATION
 evidence_tier: definition
-independence_class: I1
-who_verified: self (same-session AI, I1) -- not yet an independent cross-vendor or human route
+independence_class: I3
+who_verified: route:codex (cross-vendor AI; abstract/metadata level, not full text)
+  -- see cite-glosa-v0-3-q2-007.i3.json
 verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
-status: METADATA_OK
+status: VERIFIED
 xenon_ledger_ref: null
-disclosure: 'Same-session AI check only (I1) -- this card is METADATA_OK, not VERIFIED. No DOI/individual
-  byline (organizational explainer page, F1000Research/Taylor & Francis); page fetched directly and passage
-  read verbatim. Found under the support query family (''"F1000Research" OR "eLife" post-publication review
-  model without traditional peer review certification''). Bearing on Q2: a second PRIMARY description
-  of a certification-substitute mechanism -- here the "pass" condition is a mechanically checkable rule
-  (a named threshold of Approved/Approved-with- reservations ratings) tied to a public, attributable review
-  report, rather than an opaque institutional say-so; a reader can verify the pass condition was actually
-  met by reading the linked reports themselves. Read as the mechanism''s own stated design, not as an
-  independent evaluation of whether it functions as claimed.'
+disclosure: 'Same-session AI check only (I1) -- this card is METADATA_OK, not VERIFIED.
+  No DOI/individual byline (organizational explainer page, F1000Research/Taylor &
+  Francis); page fetched directly and passage read verbatim. Found under the support
+  query family (''"F1000Research" OR "eLife" post-publication review model without
+  traditional peer review certification''). Bearing on Q2: a second PRIMARY description
+  of a certification-substitute mechanism -- here the "pass" condition is a mechanically
+  checkable rule (a named threshold of Approved/Approved-with- reservations ratings)
+  tied to a public, attributable review report, rather than an opaque institutional
+  say-so; a reader can verify the pass condition was actually met by reading the linked
+  reports themselves. Read as the mechanism''s own stated design, not as an independent
+  evaluation of whether it functions as claimed. | I3 route (codex) judged from fetched
+  metadata/abstract + the card''s quoted passage, not full text: finite_diagnostic:
+  Metadata does not contradict the card. The fetched excerpt contains the quoted passage
+  and aligns with the page title/abstract. The passage supports the mechanism claim
+  by describing explicit peer-review pass criteria and public indexing with review
+  reports.'
 superseded_by: null
-notes: 'Global North (F1000Research, part of Taylor & Francis, UK-headquartered publisher), EN, grey/community
-  organizational explainer -- primary-source description of the mechanism, not a peer-reviewed evaluation.
-  Found via query family: support. Dialogue-table stance: YES-AS-MECHANISM-DESCRIPTION (supports that
-  a rule-based, publicly checkable pass condition can in principle substitute for an opaque institutional
-  stamp; does not itself test whether readers actually rely on it, or whether it is gameable, in practice).
-  dialogue_table_stance: agrees. language: en.'
+notes: 'Global North (F1000Research, part of Taylor & Francis, UK-headquartered publisher),
+  EN, grey/community organizational explainer -- primary-source description of the
+  mechanism, not a peer-reviewed evaluation. Found via query family: support. Dialogue-table
+  stance: YES-AS-MECHANISM-DESCRIPTION (supports that a rule-based, publicly checkable
+  pass condition can in principle substitute for an opaque institutional stamp; does
+  not itself test whether readers actually rely on it, or whether it is gameable,
+  in practice). dialogue_table_stance: agrees. language: en.'
 fetched_from_url: https://think.f1000research.com/open-peer-review/
-line_or_paragraph: line 31 of the fetched-and-stripped page text (single continuous sentence)
+line_or_paragraph: char offset 3080 of normalized fetched text (~paragraph 1); verbatim
+  prefix match

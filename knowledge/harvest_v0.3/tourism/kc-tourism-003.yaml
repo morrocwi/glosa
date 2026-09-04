@@ -5,15 +5,17 @@ text: Before introducing its own contribution, the paper names precisely what th
   established (two named points) and precisely what it has not yet explained (the provider-side interpretive
   process), and only then states that this named gap is where the new article intervenes. This is a disclosed
   literature-gap move, distinct from simply asserting novelty.
-verbatim: "Taken together, the field foundations discussed above prove two important points... At the same
-  time, this literature still leaves an important explanatory gap. It does not yet fully explain why visible
-  assurance sometimes fails to become deeper trust, nor does it sufficiently theorize how operators internally
-  construct the Muslim traveler as a service object... This is precisely where the present article intervenes."
+verbatim: "At the same time, this literature still leaves an important explanatory gap. It does not yet
+  fully explain why visible assurance sometimes fails to become deeper trust, nor does it sufficiently
+  theorize how operators internally construct the Muslim traveler as a service object. In other words,
+  the literature is strong on the value of attributes and on the meaningfulness of Islamic hospitality,
+  but weaker on the provider-side process by which traveler diversity is interpreted, simplified, and
+  translated into operational templates. This is precisely where the present article intervenes."
 source:
   doi: 10.5281/zenodo.19059720
   title: 'Beyond Halal Labels: Premature Category Stabilization in Muslim-Friendly Tourism'
   year: 2026
-fetched_from_url: "file:///home/yaoharee-lt/Downloads/Beyond Halal Labels.pdf"
+fetched_from_url: "https://zenodo.org/records/19176260 Halal Labels.pdf"
 locator: '§2.3 "What This Literature Proves and What It Still Cannot Explain" (pp.5-6, extracted via
   pdftotext -l 6)'
 tier: Open

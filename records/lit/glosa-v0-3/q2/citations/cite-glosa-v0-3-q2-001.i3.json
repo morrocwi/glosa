@@ -1,0 +1,22 @@
+{
+ "vendor": "codex",
+ "fetched": {
+  "source": "crossref",
+  "title": "Fixing science means an end to gaming the system",
+  "authors": [
+   "Brown"
+  ],
+  "year": 2024,
+  "container": "PLOS Biology",
+  "abstract": " During the last decade, there has been a substantial acceleration in the open science movement. Most people would probably hope to have seen signs of positive change in that time, yet it seems that the process of improving the practice of science is moving at a glacial pace. "
+ },
+ "verdict": {
+  "metadata_matches": true,
+  "passage_plausible": true,
+  "claim_match": true,
+  "bearing": "CHALLENGES",
+  "reason": "Metadata shown does not contradict the card. The passage is mechanically found and consistent with the article’s open-science gaming theme. It bears on Q2 by challenging confidence that formal openness/claim-card-like mechanisms reliably substitute for deeper certification or practice change.",
+  "passage_mechanical": "verbatim prefix found in fetched open text"
+ },
+ "date": "2026-09-04"
+}

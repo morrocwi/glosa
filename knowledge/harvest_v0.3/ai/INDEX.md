@@ -1,7 +1,7 @@
 # AI hub knowledge cards — K1-ai (registry/zenodo_clusters.json hubs.ai)
 
 Hub DOI 10.5281/zenodo.22301552 (hub_id 22301552). 27 cards from 25 unique records (26 members minus one exact-duplicate deposit, 22301886, deduped against 22302410 — see kc-ai-016 notes).
-Every card judged against `/home/yaoharee-lt/ANSE.ASIA/glosa/knowledge/harvest_v0.3/base/INDEX.md`.
+Every card judged against `knowledge/harvest_v0.3/base/INDEX.md`.
 
 | id | kind | title | tier | base_relation | source |
 |---|---|---|---|---|---|

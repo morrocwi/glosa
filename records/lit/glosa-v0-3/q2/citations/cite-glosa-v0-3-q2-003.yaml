@@ -10,34 +10,44 @@ metadata_verified: true
 metadata_verified_by: mechanical:crossref
 metadata_verified_at: '2026-09-05'
 claim_match_verified: true
-claim_match_verified_by: self:same-session-AI (I1, not yet an independent I3/I5 route)
+claim_match_verified_by: route:codex
 claim_match_verified_at: '2026-09-05'
-exact_passage: Fifteen studies investigated the effect of an intervention on reproducibility or replicability
-  as direct outcomes.
-page_or_locator: Results §3.4 "Outcomes -- direct reproducibility" (Europe PMC PMC11979971 open-access
-  full-text mirror, fetched 2026-09-05)
+exact_passage: Fifteen studies investigated the effect of an intervention on reproducibility
+  or replicability as direct outcomes.
+page_or_locator: Results §3.4 "Outcomes -- direct reproducibility" (Europe PMC PMC11979971
+  open-access full-text mirror, fetched 2026-09-05)
 scope: DIRECT_QUOTATION
 evidence_tier: Dr
-independence_class: I1
-who_verified: self (same-session AI, I1) -- not yet an independent cross-vendor or human route
+independence_class: I3
+who_verified: route:codex (cross-vendor AI; abstract/metadata level, not full text)
+  -- see cite-glosa-v0-3-q2-003.i3.json
 verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
-status: METADATA_OK
+status: VERIFIED
 xenon_ledger_ref: null
-disclosure: 'Same-session AI check only (I1) -- this card is METADATA_OK, not VERIFIED. Title/DOI/authors/
-  venue confirmed mechanically via Crossref (Dudda, Kormann, Kozula and 8 others; Royal Society Open Science;
-  2025-04). Passage read via the Europe PMC open-access full-text XML mirror. Found under the support
-  query family (''open science badges replication rate effect''). Bearing on Q2: ORTHOGONAL-TO-CAUTIONARY
-  -- it does not itself argue for or against a certification- substitute clause, but it shows that of
-  a much larger set of proposed open-science interventions (registered reports, badges, journal policies,
-  etc.), only 15 studies in the whole reviewed literature directly measured an effect on reproducibility/replicability
-  at all; most of the surrounding literature (including the two badge sources also cited in this Q2 review)
-  is proxy-outcome evidence, not a direct test. Relevant to Q2 as a scope-of-evidence caution: the empirical
-  base for any single certification-substitute mechanism, badge or otherwise, is thinner than its public
-  advocacy suggests.'
+disclosure: 'Same-session AI check only (I1) -- this card is METADATA_OK, not VERIFIED.
+  Title/DOI/authors/ venue confirmed mechanically via Crossref (Dudda, Kormann, Kozula
+  and 8 others; Royal Society Open Science; 2025-04). Passage read via the Europe
+  PMC open-access full-text XML mirror. Found under the support query family (''open
+  science badges replication rate effect''). Bearing on Q2: ORTHOGONAL-TO-CAUTIONARY
+  -- it does not itself argue for or against a certification- substitute clause, but
+  it shows that of a much larger set of proposed open-science interventions (registered
+  reports, badges, journal policies, etc.), only 15 studies in the whole reviewed
+  literature directly measured an effect on reproducibility/replicability at all;
+  most of the surrounding literature (including the two badge sources also cited in
+  this Q2 review) is proxy-outcome evidence, not a direct test. Relevant to Q2 as
+  a scope-of-evidence caution: the empirical base for any single certification-substitute
+  mechanism, badge or otherwise, is thinner than its public advocacy suggests. | I3
+  route (codex) judged from fetched metadata/abstract + the card''s quoted passage,
+  not full text: Metadata matches the fetched Crossref fields, and the passage is
+  verbatim in the fetched excerpt. The passage provides contextual evidence about
+  the limited number of direct reproducibility-intervention studies; it does not directly
+  support or challenge Q2''s claim-card-certification argument.'
 superseded_by: null
-notes: 'Global North (11 authors, European-affiliated; Royal Society Open Science, UK), EN, peer-reviewed
-  scoping review. Found via query family: support. Dialogue-table stance: ORTHOGONAL (a meta-level evidence-quantity
-  finding, not itself a for/against test of Q2''s claim-card-substitutes-certification argument). dialogue_table_stance:
+notes: 'Global North (11 authors, European-affiliated; Royal Society Open Science,
+  UK), EN, peer-reviewed scoping review. Found via query family: support. Dialogue-table
+  stance: ORTHOGONAL (a meta-level evidence-quantity finding, not itself a for/against
+  test of Q2''s claim-card-substitutes-certification argument). dialogue_table_stance:
   orthogonal. language: en.'
 fetched_from_url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11979971/fullTextXML
-line_or_paragraph: line 1159 of the fetched-and-stripped XML text (single continuous sentence)
+line_or_paragraph: char offset 35688 of normalized fetched text (~paragraph 1); verbatim
+  prefix match
