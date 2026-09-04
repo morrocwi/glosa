@@ -55,7 +55,9 @@
    "retrievable_original": true,
    "access_model": "direct household observation log",
    "citation_refs": [],
-   "ai_assisted_fields": []
+   "ai_assisted_fields": [
+    "access_model"
+   ]
   },
   "separates": {
    "value_z0": "in-box vs out-of-box urination location",
@@ -69,7 +71,7 @@
   "ai_filled": {
    "current_evidence": "none identified",
    "retrieved_tool_evidence": "none identified",
-   "retained_record_route": "AI drafted the observation-log template only",
+   "retained_record_route": "none identified",
    "model_calibration_assumption": "none identified",
    "prompt_system_constraint": "none identified",
    "decision_policy": "none identified"
@@ -261,5 +263,6 @@
   "class": "direct_validation",
   "notes": "evidence bears directly on this household/cat, not read across from a different case"
  },
- "verdict_class": "DERIVED"
+ "verdict_class": "DERIVED",
+ "_fail_reason": "Violates FOUNDATION_v0.6_PATCH.md K-C2 rule27 (HIDDEN-AI-FILL): five_questions.seen.ai_assisted_fields names 'access_model' as having AI involvement, but every five_questions.ai_filled value reads a not-applicable placeholder ('none identified') -- the two disclosure records contradict each other. Base is otherwise the valid claim_card.example.json (whose ai_filled.retained_record_route is mutated here from a genuine disclosure to a placeholder, to isolate this one contradiction)."
 }

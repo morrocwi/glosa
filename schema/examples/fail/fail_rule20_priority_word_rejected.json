@@ -254,12 +254,13 @@
  ],
  "comparison": {
   "target": null,
-  "relation": "not_compared",
-  "basis": "single-household 14-day observation; no comparable prior case identified to compare against"
+  "relation": "same",
+  "basis": "this is the first study to observe this pattern"
  },
  "evidence_strength": {
   "class": "direct_validation",
   "notes": "evidence bears directly on this household/cat, not read across from a different case"
  },
- "verdict_class": "DERIVED"
+ "verdict_class": "DERIVED",
+ "_fail_reason": "Violates FOUNDATION_v0.6_PATCH.md §2 rule20 (forbidden-word-list rejection, gate rule 6; see scripts/check_forbidden_words.sh): comparison.basis contains a listed priority word ('first') -- schema-rejected at the schema layer (comparison.basis's own 'not':pattern), not only as prose guidance. Base is otherwise the valid claim_card.example.json."
 }

@@ -261,5 +261,6 @@
   "class": "direct_validation",
   "notes": "evidence bears directly on this household/cat, not read across from a different case"
  },
- "verdict_class": "DERIVED"
+ "verdict_class": "UNLISTED_SEVENTH_VALUE",
+ "_fail_reason": "Violates FOUNDATION_v0.6_PATCH.md §5 rule23 (VERDICT-CLASS-UNLISTED): verdict_class is 'UNLISTED_SEVENTH_VALUE', a seventh value outside the six-value enum (DERIVED|FORCED|DEFINITIONAL-RELABEL|POSITED|BORROWED-SCALE|OPEN). Fully schema-enforced, no kernel code needed. Base is otherwise the valid claim_card.example.json."
 }

@@ -1,4 +1,4 @@
-# K4-report — glosa sim/v0.3 prototype evaluation
+# K4-report — glosa tests/sim prototype evaluation
 
 Tier of every number in this report: **finite_diagnostic** — an exact tally over one fixed,
 printed 180-card synthetic corpus, this run, these files as they exist on disk today. Not a
@@ -6,22 +6,22 @@ general claim about kernel or prototype quality on any other corpus, on real-wor
 or on differently-worded injections of the same defects. Readout, not truth.
 
 Executed for this report (all commands run from the `glosa` repo root, no kernel/schema/cli/design
-files touched — writes confined to `sim/v0.3/`):
+files touched — writes confined to `tests/sim/`):
 
-- `python3 sim/v0.3/combined.py` — new harness written for this task, printed the combined table
-  reproduced in §4 and wrote `sim/v0.3/combined.json`.
-- Read (not re-executed) the eight `sim/v0.3/prototypes/*.result.json` files, each of which
-  itself records the exact command that produced it (e.g. `python3 sim/v0.3/prototypes/
-  kernel_gate_rules_taxonomy_i_z.py`, `python3 sim/v0.3/prototypes/_eval_s7_9.py`) — those runs
+- `python3 tests/sim/combined.py` — new harness written for this task, printed the combined table
+  reproduced in §4 and wrote `tests/sim/combined.json`.
+- Read (not re-executed) the eight `tests/sim/prototypes/*.result.json` files, each of which
+  itself records the exact command that produced it (e.g. `python3 tests/sim/prototypes/
+  kernel_gate_rules_taxonomy_i_z.py`, `python3 tests/sim/prototypes/_eval_s7_9.py`) — those runs
   are the S4 prototype step that preceded this report step and are not re-run here, only read
-  and cross-checked against `sim/v0.3/baseline.json`.
-- Read `sim/v0.3/baseline.json` and `sim/v0.3/baseline.py` (the baseline generation script) and
-  `sim/v0.3/gen_corpus.py` (the corpus generator) directly, to confirm how labels were assigned.
+  and cross-checked against `tests/sim/baseline.json`.
+- Read `tests/sim/baseline.json` and `tests/sim/baseline.py` (the baseline generation script) and
+  `tests/sim/gen_corpus.py` (the corpus generator) directly, to confirm how labels were assigned.
 
 ## 1. Corpus description and how labels were assigned
 
-`sim/v0.3/corpus/` holds 180 claim_card / citation_card pairs, generated once by
-`sim/v0.3/gen_corpus.py` from `schema/examples/claim_card.example.json` and
+`tests/sim/corpus/` holds 180 claim_card / citation_card pairs, generated once by
+`tests/sim/gen_corpus.py` from `schema/examples/claim_card.example.json` and
 `schema/examples/citation_card.example.json`:
 
 - **60 VALID cards** — legally varied tier / claim_type / genre / k_state / evidence-relation /
@@ -35,7 +35,7 @@ files touched — writes confined to `sim/v0.3/`):
   `k_state_rounded_up`, `stub_public`, `signature_missing`, `injected_infinity` (9 each);
   `verifiable_no_procedure`, `premature_category`, `tier_overclaim`, `disclaimer_missing`,
   `ownership_ai`, `same_vendor_review` (8 each).
-- Ground truth lives in `sim/v0.3/corpus/labels.json` — `{cards: [{id, claim_file, citation_file,
+- Ground truth lives in `tests/sim/corpus/labels.json` — `{cards: [{id, claim_file, citation_file,
   kind, defect|null, ...}]}` — written by the generator at construction time, not inferred after
   the fact.
 - This report's four "task-brief" defects of interest (`composite_quote`, `hidden_ai_fill`,
@@ -47,7 +47,7 @@ files touched — writes confined to `sim/v0.3/`):
 injected string per id) — recall numbers below measure catching *this exact phrasing*, not
 robustness to paraphrase.
 
-## 2. Baseline table (kernel only, unmodified) — from `sim/v0.3/baseline.json`
+## 2. Baseline table (kernel only, unmodified) — from `tests/sim/baseline.json`
 
 Method: every card run through `k.validate_claim_card(card, citation_cards=[citation])`,
 `k.validate_citation_card(citation)`, and `k.compute_disclaimers(card)` diffed against the card's
@@ -83,7 +83,7 @@ defect id is already 100% caught by the unmodified kernel on this corpus.
 
 ## 3. Per-prototype results
 
-Eight prototypes were run in the prior S4 step (`sim/v0.3/prototypes/*.py`, each with its own
+Eight prototypes were run in the prior S4 step (`tests/sim/prototypes/*.py`, each with its own
 `*.result.json`). This section reads those results (not re-executed here) and states delta_recall
 / delta_false_alarm exactly as each file reports, plus the reason for its recommendation. All
 deltas below are measured against `baseline.json`'s 120-adversarial / 60-valid corpus unless a
@@ -137,10 +137,10 @@ out-of-lexicon holdout + independent adversarial review) rather than "ship" or "
 
 Ship set for this combined run = the two nodes recommended **ship** in §3:
 `kernel.gate-rules-taxonomy-i-z` and `schema.claim-card-comparison-evidence-field`. Executed:
-`python3 sim/v0.3/combined.py` (new harness written for this task; imports the kernel and the two
+`python3 tests/sim/combined.py` (new harness written for this task; imports the kernel and the two
 ship-recommended prototype modules unmodified, OR's their findings with the kernel's own
 per-card verdict using `baseline.py`'s own `run_card`/`defect_caught` logic for the kernel half).
-Output written to `sim/v0.3/combined.json`; console table reproduced verbatim:
+Output written to `tests/sim/combined.json`; console table reproduced verbatim:
 
 | defect | n | caught | missed |
 |---|---:|---:|---:|
@@ -171,7 +171,7 @@ Output written to `sim/v0.3/combined.json`; console table reproduced verbatim:
 ## 5. Limits (read before trusting any number above)
 
 - **Synthetic corpus, single generator.** All 180 cards come from one generator
-  (`sim/v0.3/gen_corpus.py`) run once on one date-stamp. Every "recall" and "false_alarm" number
+  (`tests/sim/gen_corpus.py`) run once on one date-stamp. Every "recall" and "false_alarm" number
   above is a readout of catching *this generator's exact phrasing* of each defect, not a
   population-level detection rate. Several prototype notes independently confirm this: a
   synthetic Thai-only probe with no English "verified" loanword defeats the kernel's existing

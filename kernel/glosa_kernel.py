@@ -10,6 +10,9 @@ Implements FOUNDATION_v0.5.md §9 ("Callable layer"), the 12 kernel gate rules o
 original + rule 12, D-LENS-UNSIGNED, MUST-6), the independence ladder of §4.2, the genre router
 of §6.3b, the disclaimer catalogue lookup of §5, the citation-integrity / release-gate machinery
 of §7.4/§7.8, and the MC-01 human-Approver-identity extension (MUST-7, ARCH_integrity.md F1).
+Also implements design/FOUNDATION_v0.6_PATCH.md's rules 18/19/21/26/27/28 (rules 20/23 are
+schema-only, no kernel code needed; rules 22/24/25 are pending-founder, not built this pass --
+see the TODO comments at each site and schema/README.md's Rule numbering table).
 
 One-fact-one-home (FOUNDATION §8): every field name this module reads is DEFINED in
 `schema/*.schema.json`, never redeclared here (fields this module reads that a schema does not
@@ -643,6 +646,321 @@ def _empirical_extension_warning_for_card(card):
 
 
 # --------------------------------------------------------------------------------------------
+# Kernel rule 18 (design/FOUNDATION_v0.6_PATCH.md §1, `kernel.gate-rules-taxonomy-i-z`):
+# injected-infinity/zero I1-I4/Z1-Z4 taxonomy, ported from the disconnected sandbox prototype
+# `sim/v0.3/prototypes/kernel_gate_rules_taxonomy_i_z.py` into the real kernel, using kc-base-016's
+# own codes verbatim (NOT rule 8's EXTERNAL_VALIDATION_PROPOSED family -- a separate, unrelated
+# scan). I1 R-completeness (LUB/Dedekind); I2 h->0; I3 Re,Lambda->infinity; I4 actual +infinity.
+# Z1 the point r=0; Z2 reached continuum h=0; Z3 absolute rest v=0/T=0; Z4 the true void.
+# --------------------------------------------------------------------------------------------
+
+_INJECTED_IZ_TAXONOMY: list = [
+    (
+        "I1",
+        "R-completeness (LUB/Dedekind) asserted as a readout",
+        [
+            re.compile(r"\bDedekind\s+cut\b", re.IGNORECASE),
+            re.compile(r"\bleast\s+upper\s+bound\b", re.IGNORECASE),
+            re.compile(r"\bR-complet(e|eness)\b", re.IGNORECASE),
+        ],
+    ),
+    (
+        "I2",
+        "h->0 infinitesimal-limit treated as reached",
+        [
+            re.compile(r"(?:->|→)\s*0\b.*\blimit\b", re.IGNORECASE),
+            re.compile(r"\binfinitesimal(?:ly)?\b", re.IGNORECASE),
+        ],
+    ),
+    (
+        "I3",
+        "Re,Lambda->infinity asymptotic-to-infinity treated as reached",
+        [
+            re.compile(r"\bapproach(?:es|ing)?\s+infinity\b", re.IGNORECASE),
+            re.compile(r"as\s+\w+\s*(?:->|→)\s*(?:infinity|∞)", re.IGNORECASE),
+        ],
+    ),
+    (
+        "I4",
+        "actual +infinity asserted as a reached value",
+        [
+            re.compile(r"\binfinit(e|y)\b", re.IGNORECASE),
+            re.compile(r"∞"),
+            re.compile(r"อนันต์"),  # Thai: infinite/infinity
+        ],
+    ),
+    (
+        "Z1",
+        "the point r=0 asserted as a reached zero-dimensional readout",
+        [
+            re.compile(r"\br\s*=\s*0\b.*\bpoint\b", re.IGNORECASE),
+        ],
+    ),
+    (
+        "Z2",
+        "reached continuum h=0 asserted as an actual measured spacing",
+        [
+            re.compile(r"\bh\s*=\s*0\b", re.IGNORECASE),
+            re.compile(r"\bexact(?:ly)?\s+zero\s+spacing\b", re.IGNORECASE),
+            re.compile(r"ศูนย์แท้"),  # Thai: "true/exact zero"
+        ],
+    ),
+    (
+        "Z3",
+        "absolute rest (v=0, T=0) asserted as a reached readout",
+        [
+            re.compile(r"\bv\s*=\s*0\b", re.IGNORECASE),
+            re.compile(r"\bT\s*=\s*0\b"),
+            re.compile(r"\babsolute\s+rest\b", re.IGNORECASE),
+            re.compile(r"\babsolute\s+zero\b", re.IGNORECASE),
+        ],
+    ),
+    (
+        "Z4",
+        "the true void / absolute nothing asserted as a reached readout",
+        [
+            re.compile(r"\btrue\s+void\b", re.IGNORECASE),
+            re.compile(r"\babsolute\s+(?:nothing|vacuum)\b", re.IGNORECASE),
+        ],
+    ),
+]
+
+# Fields scanned for free text (deliberately explicit, not a blind recursive walk -- keeps the
+# false-alarm surface auditable, matching the ported prototype's own discipline).
+_INJECTED_IZ_TEXT_FIELD_PATHS: list = [
+    ("statement", "text"),
+    ("statement", "translation", "text"),
+    ("hypothesis_world", "text"),
+    ("five_questions", "separates", "licensing_test", "result"),
+    ("five_questions", "separates", "licensing_test", "notes"),
+    ("five_questions", "tested", "falsifier"),
+    ("five_questions", "ai_filled", "current_evidence"),
+    ("five_questions", "ai_filled", "retrieved_tool_evidence"),
+    ("five_questions", "ai_filled", "retained_record_route"),
+    ("five_questions", "ai_filled", "model_calibration_assumption"),
+    ("five_questions", "ai_filled", "prompt_system_constraint"),
+    ("five_questions", "ai_filled", "decision_policy"),
+    ("five_questions", "tested", "evidence_relations", "*", "notes"),
+    ("non_claims", "*"),
+]
+
+
+def _walk_text_fields(obj, path):
+    """Return [(dotted_path_str, text), ...] for every string reached by following `path`
+    through `obj`, expanding "*" over list items. Missing keys / wrong types are skipped
+    silently -- a missing field is not itself a taxonomy hit."""
+    out = []
+
+    def rec(node, remaining, path_so_far):
+        if not remaining:
+            if isinstance(node, str):
+                out.append((path_so_far, node))
+            return
+        key, rest = remaining[0], remaining[1:]
+        if key == "*":
+            if isinstance(node, list):
+                for i, item in enumerate(node):
+                    rec(item, rest, f"{path_so_far}[{i}]")
+            return
+        if isinstance(node, dict) and key in node:
+            rec(node[key], rest, f"{path_so_far}.{key}" if path_so_far else key)
+
+    rec(obj, path, "")
+    return out
+
+
+def _scan_for_injected_infinity_zero(card):
+    """Kernel rule 18 (TAXONOMY-UNTYPED, FOUNDATION_v0.6_PATCH.md §1): scan the free-text fields
+    named above for an I1-I4/Z1-Z4 non-readout presented as a reached value. Returns a list of
+    error strings, each naming the specific type per kc-base-016 -- never a generic, untyped
+    rejection (the acceptance bar this rule exists to meet)."""
+    errors = []
+    if not isinstance(card, dict):
+        return errors
+    hits_seen = set()
+    for path in _INJECTED_IZ_TEXT_FIELD_PATHS:
+        for field_path, text in _walk_text_fields(card, path):
+            for code, label, patterns in _INJECTED_IZ_TAXONOMY:
+                if (field_path, code) in hits_seen:
+                    continue
+                for pat in patterns:
+                    if pat.search(text):
+                        hits_seen.add((field_path, code))
+                        errors.append(
+                            "HEURISTIC: rule18(TAXONOMY-UNTYPED): rule18: injected-infinity/zero "
+                            "hard-fail requires a named I1-I4/Z1-Z4 type per kc-base-016, not a "
+                            f"generic rejection -- {code} non-readout injected as a reached value "
+                            f"({label}) in {field_path!r}: matched {pat.pattern!r}"
+                        )
+                        break
+    return errors
+
+
+# --------------------------------------------------------------------------------------------
+# Kernel rule 19 (design/FOUNDATION_v0.6_PATCH.md §1, kc-base-008 verbatim): Fail-Able Gate Law.
+# A gate may only be recorded Type-P once it has demonstrated, by construction, BOTH a
+# machine-derived passing control AND a machine-derived failing control it correctly rejected.
+# Reads the optional top-level `gate_construction_status` object (schema-additive, §1 above).
+# --------------------------------------------------------------------------------------------
+
+def _gate_construction_status_error(card):
+    """Kernel rule 19 (GATE-TYPE-UNSTATED): `gate_construction_status.type == "Type-P"` requires
+    a non-empty `failing_control_ref`. Returns an error string, or None when the field is absent
+    or the invariant holds."""
+    gcs = card.get("gate_construction_status")
+    if not isinstance(gcs, dict):
+        return None
+    if gcs.get("type") != "Type-P":
+        return None
+    ref = gcs.get("failing_control_ref")
+    if not (isinstance(ref, str) and ref.strip()):
+        return (
+            "rule19: a gate may not be recorded Type-P without a cited machine-derived failing "
+            "control it correctly rejected -- absent that, it stays Type-U"
+        )
+    return None
+
+
+# --------------------------------------------------------------------------------------------
+# Kernel rule 21 (design/FOUNDATION_v0.6_PATCH.md §3, `cli.genre-router-layer-confusion-check`):
+# genre/register layer-confusion diagnostic, warning-only (never auto-corrects). Uses the
+# existing three-layer split (astronomical / jurisprudential / institutional, §6.1) as a keyword
+# heuristic reading the card's own standpoint/evidence-relation text -- a diagnostic-only check,
+# HONEST LIMIT carried forward: keyword-calibrated against one corpus's own vocabulary, expected
+# to under-generalize on differently-worded real cards (finite_diagnostic, scoped to what was
+# actually run, never a general detection-rate claim -- see FOUNDATION_v0.6_PATCH.md §3).
+# --------------------------------------------------------------------------------------------
+
+_LAYER_KEYWORDS = {
+    "astronomical": re.compile(r"\b(telescope|ephemeris|hisab|moon\s+sighting|conjunction|azimuth|calculation)\b", re.IGNORECASE),
+    "jurisprudential": re.compile(r"\b(fiqh|fatwa|madh[ha]ab|ruling|jurisprudence)\b", re.IGNORECASE),
+    "institutional": re.compile(r"\b(committee|ministry|government|announced|official\s+announcement)\b", re.IGNORECASE),
+}
+
+
+def _layer_of(text):
+    for layer, pat in _LAYER_KEYWORDS.items():
+        if pat.search(text or ""):
+            return layer
+    return None
+
+
+def _layer_mismatch_warning(card):
+    """Kernel rule 21 (LAYER-MISMATCH-FLAGGED, warning): the layer named by the card's own
+    standpoint text (the layer *claimed*) does not match the layer named by its evidence
+    relations' notes (the layer/tool actually *invoked*). Diagnostic only -- routed to human
+    review, never auto-corrected. Returns a warning string, or None when neither text names a
+    layer, or both name the same one."""
+    standpoint = card.get("standpoint") or {}
+    claimed_text = str(standpoint.get("declared_basis") or "") + " " + str(standpoint.get("method_basis") or "")
+    layer_claimed = _layer_of(claimed_text)
+    if layer_claimed is None:
+        return None
+    ers = (card.get("five_questions") or {}).get("tested", {}).get("evidence_relations") or []
+    invoked_text = " ".join(str((er or {}).get("notes") or "") for er in ers)
+    layer_invoked = _layer_of(invoked_text)
+    if layer_invoked is None or layer_invoked == layer_claimed:
+        return None
+    return (
+        "HEURISTIC: rule21: genre/register layer does not match invoked tool/authority layer -- "
+        f"routed to human review, not auto-corrected (claimed={layer_claimed!r}, "
+        f"invoked={layer_invoked!r})"
+    )
+
+
+# --------------------------------------------------------------------------------------------
+# Kernel rule 27 (design/FOUNDATION_v0.6_PATCH.md K-C2, `five_questions.seen.ai_assisted_fields`
+# vs `five_questions.ai_filled`): hidden-AI-fill detector. A structural marker-field check, not a
+# prose scan -- see K-C2's own scope correction (`seen`/`ai_filled` share no key space).
+# --------------------------------------------------------------------------------------------
+
+_AI_FILLED_PLACEHOLDER_RE = re.compile(r"^\s*(none\s+identified|none|n/?a|not\s+applicable)\s*$", re.IGNORECASE)
+
+
+def _hidden_ai_fill_error(card):
+    """Kernel rule 27 (HIDDEN-AI-FILL): `five_questions.seen.ai_assisted_fields` names a field
+    with AI involvement while every `five_questions.ai_filled` value still reads a not-applicable
+    placeholder -- the two disclosure records contradict each other. Returns an error string, or
+    None when `ai_assisted_fields` is empty/absent or `ai_filled` discloses at least one
+    non-placeholder value."""
+    fq = card.get("five_questions") or {}
+    seen = fq.get("seen") or {}
+    ai_assisted_fields = seen.get("ai_assisted_fields") or []
+    if not isinstance(ai_assisted_fields, list) or not ai_assisted_fields:
+        return None
+    ai_filled = fq.get("ai_filled") or {}
+    values = [v for v in ai_filled.values() if isinstance(v, str)]
+    if not values:
+        return None
+    if all(_AI_FILLED_PLACEHOLDER_RE.match(v) for v in values):
+        return (
+            "rule27: five_questions.seen.ai_assisted_fields names a field with AI involvement "
+            f"({ai_assisted_fields!r}) that ai_filled does not correspondingly disclose -- "
+            "contradiction between disclosure records"
+        )
+    return None
+
+
+# --------------------------------------------------------------------------------------------
+# Kernel rule 28 (design/FOUNDATION_v0.6_PATCH.md K-C3, `tested.evidence_relations[]`): inflated-
+# bearing detector. Reads the CLAIM card's own evidence_relations (not a resolved citation
+# card's fields, per K-C3's own scope correction) plus, when supplied, the resolved citation
+# card's `scope`.
+# --------------------------------------------------------------------------------------------
+
+_SAME_LINEAGE_NOTES_RE = re.compile(
+    r"own[- ]lineage|same[- ]lineage|earlier\s+draft|same\s+author|same\s+project|context\s+note",
+    re.IGNORECASE,
+)
+
+
+def _inflated_bearing_errors(card, citation_cards):
+    """Kernel rule 28 (INFLATED-BEARING): a `bearing: SUPPORTS` evidence_relation without
+    `strength` stating "context" is a hard error when (a) `citation_ref` does not resolve against
+    the supplied `citation_cards`, (b) the resolved card's `scope` is
+    `CONTEXT_ONLY_NOT_EVIDENCE`, or (c) the claim card's own `notes` for that relation reads
+    same-lineage/own-lineage (a `finite_diagnostic` best-effort text scan, evadable by omission --
+    disclosed as such, not claimed as a structural guarantee).
+
+    Returns `(errors, not_checked)` -- `not_checked` is True when `citation_cards` was not
+    supplied, so clause (a)/(b) could not be evaluated for any SUPPORTS relation with an
+    otherwise-unflagged citation_ref; callers should surface that as a warning, not a silent pass.
+    """
+    errors = []
+    not_checked = False
+    ers = (card.get("five_questions") or {}).get("tested", {}).get("evidence_relations") or []
+    for i, er in enumerate(ers):
+        er = er or {}
+        if er.get("bearing") != "SUPPORTS":
+            continue
+        strength = str(er.get("strength") or "")
+        if "context" in strength.lower():
+            continue  # honestly scoped as background/context support -- rule28 does not fire
+        ref = er.get("citation_ref")
+        notes = str(er.get("notes") or "")
+        reason = None
+        if citation_cards is None:
+            not_checked = True
+        else:
+            match = next(
+                (c for c in citation_cards if isinstance(c, dict) and c.get("id") == ref), None
+            )
+            if match is None:
+                reason = f"citation_ref {ref!r} does not resolve to any known citation_card_id"
+            elif match.get("scope") == "CONTEXT_ONLY_NOT_EVIDENCE":
+                reason = f"citation_ref {ref!r} resolves to a citation_card with scope=CONTEXT_ONLY_NOT_EVIDENCE"
+        if reason is None and _SAME_LINEAGE_NOTES_RE.search(notes):
+            reason = f"HEURISTIC: evidence_relations[{i}].notes reads same-lineage/own-lineage ({notes!r})"
+        if reason:
+            errors.append(
+                f"rule28(INFLATED-BEARING): evidence_relation bearing=SUPPORTS has {reason}, "
+                "without strength='context' -- bearing is inflated relative to what the citation "
+                f"actually supports (evidence_relations[{i}])"
+            )
+    return errors, not_checked
+
+
+# --------------------------------------------------------------------------------------------
 # validate_claim_card
 # --------------------------------------------------------------------------------------------
 
@@ -652,7 +970,11 @@ def validate_claim_card(card, allow_no_jsonschema=False, citation_cards=None):
     arithmetic inside 4/9, and the MUST-7 MC-01 human-Approver-identity extension), plus the
     kernel rule 15 (responsibility.inference_to_claim must be "human" -- hard error -- and a
     warning `rule15w` when `responsibility` is absent) and rule16w (warning when claim_type is
-    EMPIRICAL but `empirical_extension` is absent). Returns a Result.
+    EMPIRICAL but `empirical_extension` is absent). Also implements FOUNDATION_v0.6_PATCH.md's
+    rule 18 (injected-infinity/zero I1-I4/Z1-Z4 taxonomy scan), rule 19 (Fail-Able Gate Law,
+    gate_construction_status Type-P/Type-U), rule 21 (layer-mismatch, warning-only diagnostic),
+    rule 27 (hidden-AI-fill, seen.ai_assisted_fields vs ai_filled), and rule 28 (inflated-bearing,
+    evidence_relations SUPPORTS vs resolved citation scope / own-lineage notes). Returns a Result.
 
     Schema-enforced rules (1, 2, 3-presence, 4-plain, 7-approximated, 9-plain, 10, 11, and the
     D-INDEPENDENCE disclaimer-trigger worked example) are checked by the schema itself when
@@ -732,6 +1054,37 @@ def validate_claim_card(card, allow_no_jsonschema=False, citation_cards=None):
     if emp_warn:
         warnings.append(emp_warn)
 
+    # Kernel rule 18 (TAXONOMY-UNTYPED, FOUNDATION_v0.6_PATCH.md §1): injected-infinity/zero scan
+    errors.extend(_scan_for_injected_infinity_zero(card))
+
+    # Kernel rule 19 (GATE-TYPE-UNSTATED, §1): Fail-Able Gate Law
+    gate_err = _gate_construction_status_error(card)
+    if gate_err:
+        errors.append(gate_err)
+
+    # Kernel rule 21 (LAYER-MISMATCH-FLAGGED, §3): warning-only, diagnostic, never auto-corrected
+    layer_warn = _layer_mismatch_warning(card)
+    if layer_warn:
+        warnings.append(layer_warn)
+
+    # TODO(kernel.pcs-red-flag): rule24 (Premature Category Stabilization) is pending-founder
+    # (PCS-scoping-confirmation) -- not implemented this pass, per FOUNDATION_v0.6_PATCH.md §6.
+
+    # Kernel rule 27 (HIDDEN-AI-FILL, K-C2): seen.ai_assisted_fields vs ai_filled contradiction
+    ai_fill_err = _hidden_ai_fill_error(card)
+    if ai_fill_err:
+        errors.append(ai_fill_err)
+
+    # Kernel rule 28 (INFLATED-BEARING, K-C3): evidence_relations bearing vs citation scope/notes
+    bearing_errs, bearing_not_checked = _inflated_bearing_errors(card, citation_cards)
+    errors.extend(bearing_errs)
+    if bearing_not_checked:
+        warnings.append(
+            "rule28(INFLATED-BEARING) not fully checked -- validate_claim_card was not given "
+            "citation_cards; a SUPPORTS evidence_relation's citation_ref resolution could not be "
+            "verified. Pass citation_cards=[...] to close this gap."
+        )
+
     return _result(ok=not errors, errors=errors, warnings=warnings, tier=tier)
 
 
@@ -789,17 +1142,39 @@ def _citation_source_first_errors(c):
     return errs
 
 
+_COMPOSITE_QUOTE_SPLICE_RE = re.compile(r"(\.\.\.|…|\s--\s)")
+
+
+def _composite_quote_error(citation):
+    """Kernel rule 26 (COMPOSITE-QUOTE, design/FOUNDATION_v0.6_PATCH.md K-C1): `exact_passage`
+    containing an ellipsis/splice marker ('…'/'...'/' -- ') splices across a boundary -- text
+    assembled from non-contiguous source material presented as one continuous passage. A
+    structural check on the field's own shape (not a keyword/prose match), so no lexicon-fragility
+    risk. Returns an error string, or None when `exact_passage` is absent/clean."""
+    exact_passage = citation.get("exact_passage")
+    if not isinstance(exact_passage, str):
+        return None
+    if _COMPOSITE_QUOTE_SPLICE_RE.search(exact_passage):
+        return (
+            "rule26: exact_passage contains an ellipsis/splice marker ('…'/'...'/' -- ') -- "
+            "composite quotes are not verifiable as a single continuous passage"
+        )
+    return None
+
+
 def validate_citation_card(citation, allow_no_jsonschema=False):
     """Validate a citation_card payload (§7.8 Citation Integrity subsystem). Returns a Result.
 
     The two Integrity Firewall booleans (`metadata_verified` != `claim_match_verified`, NC-18)
     and the VERIFIED-requires-both-booleans / exact_passage-requires-claim_match_verified rules
-    are schema-enforced (citation_card.schema.json's allOf); this function adds the one kernel-
-    only cross-check the schema cannot express standalone: a SCRAMMED card must carry a non-null
+    are schema-enforced (citation_card.schema.json's allOf); this function adds the kernel-only
+    cross-checks the schema cannot express standalone: a SCRAMMED card must carry a non-null
     `xenon_ledger_ref` (the Xenon Ledger, §7.8, is append-only and every SCRAMMED card must be
     findable there -- a structural completeness check on the card's own two fields, not a claim
     about whether the ledger row actually exists on disk; see `xenon_ledger_check` below for the
-    MUST-12 count/threshold half of this gate, run separately over a batch of citation_cards).
+    MUST-12 count/threshold half of this gate, run separately over a batch of citation_cards), and
+    rule 26 (COMPOSITE-QUOTE, FOUNDATION_v0.6_PATCH.md K-C1): `exact_passage` may not splice
+    across a boundary via an ellipsis marker.
 
     `allow_no_jsonschema` (MUST-4): see `_schema_validate_gated`'s docstring.
     """
@@ -817,6 +1192,11 @@ def validate_citation_card(citation, allow_no_jsonschema=False):
     r17 = _citation_source_first_errors(citation)
     errors.extend(e for e in r17 if e.startswith("rule17("))
     warnings.extend(e for e in r17 if e.startswith("rule17w"))
+
+    # Kernel rule 26 (COMPOSITE-QUOTE, K-C1)
+    quote_err = _composite_quote_error(citation)
+    if quote_err:
+        errors.append(quote_err)
 
     return _result(ok=not errors, errors=errors, warnings=warnings, tier=tier)
 
@@ -1670,9 +2050,20 @@ def self_test():
         for p in sorted(fail_dir.glob("*.json")):
             instance = json.loads(p.read_text(encoding="utf-8"))
             instance.pop("_fail_reason", None)
-            res = validate_claim_card(instance)
+            # Route by shape: a claim_card-shaped fixture carries "shape"; a citation_card-shaped
+            # fixture (K-C1/rule26) carries "identifier"/"claim_ref" and no "shape" (corrected --
+            # previously every fail fixture was routed through validate_claim_card regardless of
+            # its actual object type, which happened to still reject a citation_card-shaped
+            # instance, but for the wrong reason -- missing claim_card-required fields, not the
+            # rule the fixture actually names).
+            if "shape" in instance:
+                res = validate_claim_card(instance)
+            elif "identifier" in instance and "claim_ref" in instance:
+                res = validate_citation_card(instance)
+            else:
+                res = validate_claim_card(instance)
             if res["ok"]:
-                errors.append(f"self_test: {p.name} was expected to FAIL validate_claim_card but PASSED")
+                errors.append(f"self_test: {p.name} was expected to FAIL but PASSED")
 
     return _result(ok=not errors, errors=errors, warnings=warnings)
 

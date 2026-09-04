@@ -18,7 +18,7 @@
 #      MUST-1's own drift test (`ARCHITECTURE_REVIEW_v1.md`, scoped to 8 named entry-point files)
 #      was checking for). `lineage/` is exempt because its entire job is historical record.
 #
-#   2. PATH EXISTENCE — every path `design/REPO_SPEC_v0.5.md` lists inside a fenced tree diagram as
+#   2. PATH EXISTENCE — every path `$REPO_SPEC_FILE` lists inside a fenced tree diagram as
 #      existing (i.e. NOT under a `[planned...]` marker) is mechanically resolved from the tree's
 #      own indentation and checked against the real filesystem. A path under a `[planned...]`
 #      marker is skipped (it is explicitly declared not-yet-built, honestly, and this check exists
@@ -27,6 +27,7 @@
 # Exit 0 = both checks passed. Exit 1 = at least one failed (see output).
 
 set -u
+REPO_SPEC_FILE="design/$(grep -o "REPO_SPEC_v[0-9.]*\.md" design/CURRENT_SPEC.txt | head -1)"; [ -f "$REPO_SPEC_FILE" ] || REPO_SPEC_FILE="design/REPO_SPEC_v0.5.md"
 cd "$(git rev-parse --show-toplevel 2>/dev/null || echo .)" || exit 1
 
 FAIL=0
@@ -69,10 +70,10 @@ fi
 
 say ""
 
-# --- 2. path existence, parsed from design/REPO_SPEC_v0.5.md's own tree diagrams ---
-say "-- check 2: every non-[planned] path in design/REPO_SPEC_v0.5.md exists on disk --"
+# --- 2. path existence, parsed from $REPO_SPEC_FILE's own tree diagrams ---
+say "-- check 2: every non-[planned] path in $REPO_SPEC_FILE exists on disk --"
 
-SPEC="design/REPO_SPEC_v0.5.md"
+SPEC="$REPO_SPEC_FILE"
 if [ ! -f "$SPEC" ]; then
   bad "$SPEC not found"
 else

@@ -1,0 +1,5824 @@
+{
+  "generated_by": "docs/gen_kg_svg.py",
+  "source": {
+    "cards": "knowledge/harvest_v0.3/*/kc-*.yaml",
+    "edges": "knowledge/harvest_v0.3/kg_edges_v0.3.jsonl"
+  },
+  "tier": "Dr",
+  "counts": {
+    "n_nodes": 324,
+    "n_edges_total": 578,
+    "n_edges_card_to_card": 330,
+    "n_edges_pseudo_target": 248
+  },
+  "nodes": [
+    {
+      "id": "kc-ai-001",
+      "title": "The Readout Condition — Existence/Attribution/Disclosure norm",
+      "kind": "definition",
+      "base_relation": "holds",
+      "glosa_use": "adopt",
+      "hub": "ai",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-ai-002",
+      "title": "Readout Condition — defeater-routing and the identification ladder",
+      "kind": "method",
+      "base_relation": "refined_by_later_work",
+      "glosa_use": "adapt",
+      "hub": "ai",
+      "in_degree": 1
+    },
+    {
+      "id": "kc-ai-003",
+      "title": "Possession–Constitution Collapse and knower fetishism",
+      "kind": "definition",
+      "base_relation": "holds",
+      "glosa_use": "adopt",
+      "hub": "ai",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-ai-004",
+      "title": "Two constraints replacing knower-fetishism: channel over face",
+      "kind": "rule",
+      "base_relation": "refined_by_later_work",
+      "glosa_use": "adopt",
+      "hub": "ai",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-ai-005",
+      "title": "glosa — methodology answering five questions per claim",
+      "kind": "method",
+      "base_relation": "holds",
+      "glosa_use": "already_in_glosa",
+      "hub": "ai",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-ai-006",
+      "title": "Claim card as substitute for institutional certification (three propositions)",
+      "kind": "claim",
+      "base_relation": "open",
+      "glosa_use": "already_in_glosa",
+      "hub": "ai",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-ai-007",
+      "title": "Controlled epistemic chain reaction and the k_epi multiplication factor",
+      "kind": "claim",
+      "base_relation": "refined_by_later_work",
+      "glosa_use": "adapt",
+      "hub": "ai",
+      "in_degree": 1
+    },
+    {
+      "id": "kc-ai-008",
+      "title": "Blackbox Log — append-only verbatim positional record",
+      "kind": "tool",
+      "base_relation": "holds",
+      "glosa_use": "adopt",
+      "hub": "ai",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-ai-009",
+      "title": "Bounded dynamic semantic mobility for hypothesis generation",
+      "kind": "definition",
+      "base_relation": "refined_by_later_work",
+      "glosa_use": "adapt",
+      "hub": "ai",
+      "in_degree": 1
+    },
+    {
+      "id": "kc-ai-010",
+      "title": "MOCA — Readout Condition applied to mission-attributable sacrifice",
+      "kind": "method",
+      "base_relation": "refined_by_later_work",
+      "glosa_use": "adapt",
+      "hub": "ai",
+      "in_degree": 1
+    },
+    {
+      "id": "kc-ai-011",
+      "title": "Standalone Scholar — dual-track architecture (synthetic plurality vs validation)",
+      "kind": "definition",
+      "base_relation": "refined_by_later_work",
+      "glosa_use": "adopt",
+      "hub": "ai",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-ai-012",
+      "title": "Human LoRA Factorization Thesis — bounded-rank experiential update",
+      "kind": "claim",
+      "base_relation": "holds",
+      "glosa_use": "adopt",
+      "hub": "ai",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-ai-013",
+      "title": "AI expands potential only under disciplined revision (constraint-first epistemology)",
+      "kind": "claim",
+      "base_relation": "holds",
+      "glosa_use": "adopt",
+      "hub": "ai",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-ai-014",
+      "title": "Deep Authorship and Causal-Structural Alignment (replaces naked correspondence)",
+      "kind": "claim",
+      "base_relation": "holds",
+      "glosa_use": "adapt",
+      "hub": "ai",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-ai-015",
+      "title": "Knowledge history as succession of authorized interpretive agencies",
+      "kind": "claim",
+      "base_relation": "holds",
+      "glosa_use": "adopt",
+      "hub": "ai",
+      "in_degree": 1
+    },
+    {
+      "id": "kc-ai-016",
+      "title": "NIDA slides — forgetting one's status as chooser under AI mediation",
+      "kind": "claim",
+      "base_relation": "holds",
+      "glosa_use": "skip",
+      "hub": "ai",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-ai-017",
+      "title": "Knowledge as stabilized translation under bounded observation",
+      "kind": "definition",
+      "base_relation": "holds",
+      "glosa_use": "adopt",
+      "hub": "ai",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-ai-018",
+      "title": "Structural law: learning shifts from accumulation to discrimination under abundance",
+      "kind": "claim",
+      "base_relation": "refined_by_later_work",
+      "glosa_use": "adapt",
+      "hub": "ai",
+      "in_degree": 1
+    },
+    {
+      "id": "kc-ai-019",
+      "title": "Information access vs context access — AI does not reconstruct situational conditions",
+      "kind": "claim",
+      "base_relation": "holds",
+      "glosa_use": "adopt",
+      "hub": "ai",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-ai-020",
+      "title": "Admissibility-first AI-coached planning with explicit no-go conditions",
+      "kind": "method",
+      "base_relation": "refined_by_later_work",
+      "glosa_use": "adapt",
+      "hub": "ai",
+      "in_degree": 1
+    },
+    {
+      "id": "kc-ai-021",
+      "title": "CMG-F — diagnostic, non-optimizing structural graph fingerprinting",
+      "kind": "tool",
+      "base_relation": "holds",
+      "glosa_use": "adapt",
+      "hub": "ai",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-ai-022",
+      "title": "Causal Guardrails — pre-linguistic admissibility checks against hallucination/sycophancy",
+      "kind": "claim",
+      "base_relation": "refined_by_later_work",
+      "glosa_use": "adopt",
+      "hub": "ai",
+      "in_degree": 1
+    },
+    {
+      "id": "kc-ai-023",
+      "title": "SANA runtime — bounded, faith-safe, non-clinical crisis companion",
+      "kind": "tool",
+      "base_relation": "open",
+      "glosa_use": "skip",
+      "hub": "ai",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-ai-024",
+      "title": "Neurobiological mismatch between education design and adolescent reward system",
+      "kind": "claim",
+      "base_relation": "open",
+      "glosa_use": "skip",
+      "hub": "ai",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-ai-025",
+      "title": "Language as cognitive infrastructure — Elective Connectivity mechanism",
+      "kind": "claim",
+      "base_relation": "open",
+      "glosa_use": "skip",
+      "hub": "ai",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-ai-026",
+      "title": "Dialogue as a mirror of thought — sincerity vs haste determines its epistemic yield",
+      "kind": "claim",
+      "base_relation": "open",
+      "glosa_use": "skip",
+      "hub": "ai",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-ai-027",
+      "title": "Language bridge — LLMs as accelerants of human-capital-to-social-capital conversion",
+      "kind": "claim",
+      "base_relation": "superseded",
+      "glosa_use": "skip",
+      "hub": "ai",
+      "in_degree": 3
+    },
+    {
+      "id": "kc-aihp-001",
+      "title": "glosa's own paper applies claim-card discipline reflexively to itself (K0, tier Dr)",
+      "kind": "method",
+      "base_relation": "holds",
+      "glosa_use": "already_in_glosa",
+      "hub": "aihp",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-aihp-002",
+      "title": "Reflexive finding: glosa's own evidence is independence class I0, hence K0 not K1",
+      "kind": "claim",
+      "base_relation": "holds",
+      "glosa_use": "already_in_glosa",
+      "hub": "aihp",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-aihp-003",
+      "title": "Three falsifiable propositions (H1 design, H2 conceptual, H3 empirical) on claim-card discipline",
+      "kind": "claim",
+      "base_relation": "holds",
+      "glosa_use": "already_in_glosa",
+      "hub": "aihp",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-aihp-004",
+      "title": "'Problem before observation' spine node: RA = OA(W;ΠA) ≠ W as the first node, not 'Reality→'",
+      "kind": "definition",
+      "base_relation": "holds",
+      "glosa_use": "adopt",
+      "hub": "aihp",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-aihp-005",
+      "title": "Controlled epistemic chain reaction: human retains the question, AI recursively decomposes and gates candidates",
+      "kind": "method",
+      "base_relation": "holds",
+      "glosa_use": "adapt",
+      "hub": "aihp",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-aihp-006",
+      "title": "Shared evidence registry (Claim Registry E01-E25) for the 4-paper Bounded Knower programme, tier-honest 'Observed'",
+      "kind": "tool",
+      "base_relation": "holds",
+      "glosa_use": "adapt",
+      "hub": "aihp",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-aihp-007",
+      "title": "Blackbox Log entry BBL-2026-09-04-024: knowledge disputes outside institutions are usually about legitimacy, not truth",
+      "kind": "claim",
+      "base_relation": "holds",
+      "glosa_use": "already_in_glosa",
+      "hub": "aihp",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-aihp-008",
+      "title": "Before Evidence Can Decide: candidate-set formation and discovery routing precede evidential adjudication (agenda paper, [Open])",
+      "kind": "claim",
+      "base_relation": "open",
+      "glosa_use": "skip",
+      "hub": "aihp",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-aihp-009",
+      "title": "Knowledge Topology: discovery time and direction as a readout theory of the first passage to a usable hypothesis",
+      "kind": "claim",
+      "base_relation": "open",
+      "glosa_use": "skip",
+      "hub": "aihp",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-aihp-010",
+      "title": "Imagination as bounded dynamic semantic mobility: a readout-native architecture for hypothesis generation",
+      "kind": "method",
+      "base_relation": "holds",
+      "glosa_use": "adapt",
+      "hub": "aihp",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-aihp-011",
+      "title": "The Readout Condition: Existence, Attribution, Disclosure — three principles governing claim-level distinctions",
+      "kind": "rule",
+      "base_relation": "holds",
+      "glosa_use": "adopt",
+      "hub": "aihp",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-aihp-012",
+      "title": "Identification ladder + typed provenance DAG + defeater-routing result",
+      "kind": "method",
+      "base_relation": "holds",
+      "glosa_use": "adopt",
+      "hub": "aihp",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-aihp-013",
+      "title": "Possession–Constitution Collapse and 'knower fetishism': epistemic value does not require a human-like knower",
+      "kind": "claim",
+      "base_relation": "holds",
+      "glosa_use": "adopt",
+      "hub": "aihp",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-aihp-014",
+      "title": "Two constraints replacing knower-fetishism: provenance-only channel, and metadata must not be identified with the role it proxies",
+      "kind": "rule",
+      "base_relation": "holds",
+      "glosa_use": "adopt",
+      "hub": "aihp",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-aihp-015",
+      "title": "NIDA national-conference slides: AI-mediated society risks the human forgetting their own status as chooser and responsibility-bearer",
+      "kind": "claim",
+      "base_relation": "refined_by_later_work",
+      "glosa_use": "skip",
+      "hub": "aihp",
+      "in_degree": 3
+    },
+    {
+      "id": "kc-aihp-016",
+      "title": "NIDA national-conference slides (duplicate deposit): AI-mediated civilization of knowledge and human responsibility",
+      "kind": "claim",
+      "base_relation": "refined_by_later_work",
+      "glosa_use": "skip",
+      "hub": "aihp",
+      "in_degree": 1
+    },
+    {
+      "id": "kc-aihp-017",
+      "title": "Standalone Scholar: dual-track architecture separating AI-assisted formation from independent human friction",
+      "kind": "method",
+      "base_relation": "holds",
+      "glosa_use": "already_in_glosa",
+      "hub": "aihp",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-aihp-018",
+      "title": "Global-search bias correction: every socially relevant flagship needs both a global conversion route and a local one",
+      "kind": "rule",
+      "base_relation": "holds",
+      "glosa_use": "adapt",
+      "hub": "aihp",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-aihp-019",
+      "title": "Information Epistemic Foundation: knowledge as an auditable status of a claim, not a possession of a knower",
+      "kind": "definition",
+      "base_relation": "holds",
+      "glosa_use": "adopt",
+      "hub": "aihp",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-aihp-020",
+      "title": "Meta-readout governance operator: readout-of-readout composition with finite retention",
+      "kind": "method",
+      "base_relation": "holds",
+      "glosa_use": "adapt",
+      "hub": "aihp",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-aihp-021",
+      "title": "Human LoRA Factorization Thesis: durable experiential change is rank-bounded by a finite readout bottleneck",
+      "kind": "claim",
+      "base_relation": "holds",
+      "glosa_use": "skip",
+      "hub": "aihp",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-aihp-022",
+      "title": "Agency-Horizon Theorem: every agent under the framework's axioms exhibits five information-horizon properties",
+      "kind": "claim",
+      "base_relation": "holds",
+      "glosa_use": "skip",
+      "hub": "aihp",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-aihp-023",
+      "title": "Constraint-first epistemology: AI expands human potential only when machine-mediated dissonance becomes disciplined revision",
+      "kind": "claim",
+      "base_relation": "holds",
+      "glosa_use": "adopt",
+      "hub": "aihp",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-aihp-024",
+      "title": "Non-zero Kantian floor: finite cognition entails a structural, non-metaphysical floor of mediation",
+      "kind": "claim",
+      "base_relation": "holds",
+      "glosa_use": "skip",
+      "hub": "aihp",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-aihp-025",
+      "title": "Truth as Causal-Structural Alignment, not naked correspondence; the translation gap is the condition of agency, not a defect",
+      "kind": "claim",
+      "base_relation": "holds",
+      "glosa_use": "skip",
+      "hub": "aihp",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-aihp-026",
+      "title": "Knowledge crises are authority crises: the history of knowledge is the history of changing interpretive authority",
+      "kind": "claim",
+      "base_relation": "holds",
+      "glosa_use": "adopt",
+      "hub": "aihp",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-aihp-027",
+      "title": "Knowledge as stabilized translation under bounded observation, not direct access",
+      "kind": "definition",
+      "base_relation": "holds",
+      "glosa_use": "skip",
+      "hub": "aihp",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-aihp-028",
+      "title": "Structural law of epistemic stabilization: beyond a threshold of generative exposure, learning shifts from accumulation to discrimination",
+      "kind": "claim",
+      "base_relation": "holds",
+      "glosa_use": "skip",
+      "hub": "aihp",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-aihp-029",
+      "title": "AI expands information access without reconstructing full event-specific context",
+      "kind": "claim",
+      "base_relation": "holds",
+      "glosa_use": "skip",
+      "hub": "aihp",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-aihp-030",
+      "title": "AI-cognitive interaction and youth potential: reflective dialogue as a mechanism, pre-readout vocabulary",
+      "kind": "claim",
+      "base_relation": "refined_by_later_work",
+      "glosa_use": "skip",
+      "hub": "aihp",
+      "in_degree": 4
+    },
+    {
+      "id": "kc-aihp-031",
+      "title": "Operational Linguistic Wisdom: language as cognitive infrastructure activating linguistic capital via LLMs, pre-readout vocabulary",
+      "kind": "claim",
+      "base_relation": "refined_by_later_work",
+      "glosa_use": "skip",
+      "hub": "aihp",
+      "in_degree": 3
+    },
+    {
+      "id": "kc-aihp-032",
+      "title": "Dialogue as mirror of thought: sincerity/attentiveness produce wisdom, haste/bias produce epistemic distortion",
+      "kind": "claim",
+      "base_relation": "refined_by_later_work",
+      "glosa_use": "skip",
+      "hub": "aihp",
+      "in_degree": 2
+    },
+    {
+      "id": "kc-aihp-033",
+      "title": "The language bridge: human capital converts to social capital only by crossing disciplinary/professional dialects",
+      "kind": "claim",
+      "base_relation": "refined_by_later_work",
+      "glosa_use": "skip",
+      "hub": "aihp",
+      "in_degree": 2
+    },
+    {
+      "id": "kc-base-001",
+      "title": "Readout-not-truth (founding refusal)",
+      "kind": "definition",
+      "base_relation": "holds",
+      "glosa_use": "adopt",
+      "hub": "base",
+      "in_degree": 16
+    },
+    {
+      "id": "kc-base-002",
+      "title": "Q1 — No pre-existing magnitude",
+      "kind": "claim",
+      "base_relation": "holds",
+      "glosa_use": "adopt",
+      "hub": "base",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-base-003",
+      "title": "Q2 — Quantity as projection",
+      "kind": "claim",
+      "base_relation": "holds",
+      "glosa_use": "adopt",
+      "hub": "base",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-base-004",
+      "title": "Q3 — Identity by role, not by number (equal-number fallacy)",
+      "kind": "rule",
+      "base_relation": "holds",
+      "glosa_use": "adopt",
+      "hub": "base",
+      "in_degree": 2
+    },
+    {
+      "id": "kc-base-005",
+      "title": "Truth re-read as tracking, not correspondence",
+      "kind": "claim",
+      "base_relation": "holds",
+      "glosa_use": "adopt",
+      "hub": "base",
+      "in_degree": 9
+    },
+    {
+      "id": "kc-base-006",
+      "title": "no_decoder_recovers_state theorem (non-injective readout)",
+      "kind": "claim",
+      "base_relation": "holds",
+      "glosa_use": "adopt",
+      "hub": "base",
+      "in_degree": 8
+    },
+    {
+      "id": "kc-base-007",
+      "title": "Six-tier discipline (never collapsed)",
+      "kind": "definition",
+      "base_relation": "holds",
+      "glosa_use": "already_in_glosa",
+      "hub": "base",
+      "in_degree": 14
+    },
+    {
+      "id": "kc-base-008",
+      "title": "Fail-Able Gate Law (Type-P vs Type-U)",
+      "kind": "rule",
+      "base_relation": "holds",
+      "glosa_use": "adopt",
+      "hub": "base",
+      "in_degree": 6
+    },
+    {
+      "id": "kc-base-009",
+      "title": "δ_R — the one primitive (retained distinction)",
+      "kind": "definition",
+      "base_relation": "holds",
+      "glosa_use": "adopt",
+      "hub": "base",
+      "in_degree": 5
+    },
+    {
+      "id": "kc-base-010",
+      "title": "RD1–RD9 — the arithmetic genome",
+      "kind": "rule",
+      "base_relation": "holds",
+      "glosa_use": "skip",
+      "hub": "base",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-base-011",
+      "title": "L_R := D_W − W (the one derived link)",
+      "kind": "definition",
+      "base_relation": "holds",
+      "glosa_use": "skip",
+      "hub": "base",
+      "in_degree": 12
+    },
+    {
+      "id": "kc-base-012",
+      "title": "L_R forced by three properties of δ_R's own meaning",
+      "kind": "claim",
+      "base_relation": "holds",
+      "glosa_use": "skip",
+      "hub": "base",
+      "in_degree": 1
+    },
+    {
+      "id": "kc-base-013",
+      "title": "Witness table ruling out rival operators to L_R",
+      "kind": "method",
+      "base_relation": "holds",
+      "glosa_use": "skip",
+      "hub": "base",
+      "in_degree": 2
+    },
+    {
+      "id": "kc-base-014",
+      "title": "The one-line chain: δ_R → L_R → per-agency readout (N2)",
+      "kind": "claim",
+      "base_relation": "holds",
+      "glosa_use": "adopt",
+      "hub": "base",
+      "in_degree": 1
+    },
+    {
+      "id": "kc-base-015",
+      "title": "Discrete number ladder δ_R → D → ℤ → ℚ → ℝ",
+      "kind": "definition",
+      "base_relation": "holds",
+      "glosa_use": "adapt",
+      "hub": "base",
+      "in_degree": 2
+    },
+    {
+      "id": "kc-base-016",
+      "title": "Injected-infinity/zero taxonomy (I1–I4, Z1–Z4)",
+      "kind": "rule",
+      "base_relation": "holds",
+      "glosa_use": "adopt",
+      "hub": "base",
+      "in_degree": 4
+    },
+    {
+      "id": "kc-base-017",
+      "title": "Operator-grounding clause: + − × ÷ ∂ ∇ = < are retained-information operations",
+      "kind": "rule",
+      "base_relation": "holds",
+      "glosa_use": "adapt",
+      "hub": "base",
+      "in_degree": 3
+    },
+    {
+      "id": "kc-base-018",
+      "title": "Contaminated-concept → discrete-replacement table",
+      "kind": "rule",
+      "base_relation": "holds",
+      "glosa_use": "adopt",
+      "hub": "base",
+      "in_degree": 1
+    },
+    {
+      "id": "kc-base-019",
+      "title": "Pre-write CHECKLIST (5 steps, contaminated-concept gate)",
+      "kind": "method",
+      "base_relation": "holds",
+      "glosa_use": "adapt",
+      "hub": "base",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-base-020",
+      "title": "Mother equation — the record is a translation, never the truth itself",
+      "kind": "claim",
+      "base_relation": "holds",
+      "glosa_use": "adopt",
+      "hub": "base",
+      "in_degree": 4
+    },
+    {
+      "id": "kc-base-021",
+      "title": "Same-shaped formula, three different tiers — not silently reconciled",
+      "kind": "claim",
+      "base_relation": "holds",
+      "glosa_use": "adopt",
+      "hub": "base",
+      "in_degree": 3
+    },
+    {
+      "id": "kc-base-022",
+      "title": "The trunk equation (EQ-015)",
+      "kind": "definition",
+      "base_relation": "holds",
+      "glosa_use": "skip",
+      "hub": "base",
+      "in_degree": 7
+    },
+    {
+      "id": "kc-base-023",
+      "title": "Epistemic Nuclear Core N1–N5 (domain-independent)",
+      "kind": "definition",
+      "base_relation": "holds",
+      "glosa_use": "adapt",
+      "hub": "base",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-base-024",
+      "title": "Three Epistemic Scalars and the DECIDE/ABSTAIN/ESCALATE verdict gate",
+      "kind": "method",
+      "base_relation": "holds",
+      "glosa_use": "adapt",
+      "hub": "base",
+      "in_degree": 2
+    },
+    {
+      "id": "kc-base-025",
+      "title": "What this system explicitly does NOT claim",
+      "kind": "rule",
+      "base_relation": "holds",
+      "glosa_use": "adopt",
+      "hub": "base",
+      "in_degree": 13
+    },
+    {
+      "id": "kc-base-026",
+      "title": "RAR A1–A8 — logic of retention",
+      "kind": "definition",
+      "base_relation": "holds",
+      "glosa_use": "adapt",
+      "hub": "base",
+      "in_degree": 1
+    },
+    {
+      "id": "kc-base-027",
+      "title": "Bounded knower framing",
+      "kind": "definition",
+      "base_relation": "holds",
+      "glosa_use": "adopt",
+      "hub": "base",
+      "in_degree": 12
+    },
+    {
+      "id": "kc-base-028",
+      "title": "τ_c > 0 — persistence axiom, mass as a readout of τ_c",
+      "kind": "definition",
+      "base_relation": "holds",
+      "glosa_use": "skip",
+      "hub": "base",
+      "in_degree": 3
+    },
+    {
+      "id": "kc-base-029",
+      "title": "E00.1–E00.7 — the primordial root axioms",
+      "kind": "definition",
+      "base_relation": "holds",
+      "glosa_use": "adapt",
+      "hub": "base",
+      "in_degree": 1
+    },
+    {
+      "id": "kc-base-030",
+      "title": "Root-to-Trunk Progression (P0 → ... → Universal Spine PDE)",
+      "kind": "method",
+      "base_relation": "holds",
+      "glosa_use": "skip",
+      "hub": "base",
+      "in_degree": 1
+    },
+    {
+      "id": "kc-base-031",
+      "title": "What Part I does not yet claim (bounded-scope discipline)",
+      "kind": "rule",
+      "base_relation": "holds",
+      "glosa_use": "adopt",
+      "hub": "base",
+      "in_degree": 1
+    },
+    {
+      "id": "kc-base-032",
+      "title": "Doctrine reminder: readout-not-truth, symbols are finite discrete computable objects",
+      "kind": "rule",
+      "base_relation": "holds",
+      "glosa_use": "adopt",
+      "hub": "base",
+      "in_degree": 4
+    },
+    {
+      "id": "kc-base-033",
+      "title": "MQ.08 — discrete stepper (deepest operational equation)",
+      "kind": "definition",
+      "base_relation": "holds",
+      "glosa_use": "skip",
+      "hub": "base",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-base-034",
+      "title": "Term-by-term honest tier table (II.6)",
+      "kind": "method",
+      "base_relation": "holds",
+      "glosa_use": "adopt",
+      "hub": "base",
+      "in_degree": 1
+    },
+    {
+      "id": "kc-base-035",
+      "title": "Bounded-Judge Law (independent adversarial review requirement)",
+      "kind": "rule",
+      "base_relation": "holds",
+      "glosa_use": "already_in_glosa",
+      "hub": "base",
+      "in_degree": 10
+    },
+    {
+      "id": "kc-base-036",
+      "title": "Agrippa's trilemma applied to the tier system itself",
+      "kind": "claim",
+      "base_relation": "holds",
+      "glosa_use": "adopt",
+      "hub": "base",
+      "in_degree": 1
+    },
+    {
+      "id": "kc-base-037",
+      "title": "Case study — the tier discipline catching itself mid-flight (EQ-069–071 retraction)",
+      "kind": "claim",
+      "base_relation": "holds",
+      "glosa_use": "adopt",
+      "hub": "base",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-base-038",
+      "title": "Verdict-class vocabulary — DERIVED/FORCED/DEFINITIONAL-RELABEL/POSITED/BORROWED-SCALE/OPEN",
+      "kind": "method",
+      "base_relation": "holds",
+      "glosa_use": "adopt",
+      "hub": "base",
+      "in_degree": 4
+    },
+    {
+      "id": "kc-base-039",
+      "title": "Falsifiable claims table (C1–C7) and its own 'We do NOT claim'",
+      "kind": "claim",
+      "base_relation": "holds",
+      "glosa_use": "adopt",
+      "hub": "base",
+      "in_degree": 4
+    },
+    {
+      "id": "kc-base-040",
+      "title": "Sorites Paradox — the one node meeting the corpus's own strict three-file binding",
+      "kind": "claim",
+      "base_relation": "holds",
+      "glosa_use": "adopt",
+      "hub": "base",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-base-041",
+      "title": "Retraction discipline worked example — AP21/scope_correction",
+      "kind": "claim",
+      "base_relation": "holds",
+      "glosa_use": "adopt",
+      "hub": "base",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-base-042",
+      "title": "README Principles — Position, Lens Law, tier discipline, philosophy-leads",
+      "kind": "definition",
+      "base_relation": "holds",
+      "glosa_use": "adapt",
+      "hub": "base",
+      "in_degree": 1
+    },
+    {
+      "id": "kc-ep-001",
+      "title": "Dialogue as reflective interlocutor (human-AI)",
+      "kind": "claim",
+      "base_relation": "holds",
+      "glosa_use": "adapt",
+      "hub": "ep",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-ep-002",
+      "title": "The language bridge as human-to-social-capital conversion",
+      "kind": "claim",
+      "base_relation": "holds",
+      "glosa_use": "skip",
+      "hub": "ep",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-ep-003",
+      "title": "Operational Linguistic Wisdom: three-stage activation mechanism",
+      "kind": "method",
+      "base_relation": "holds",
+      "glosa_use": "skip",
+      "hub": "ep",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-ep-004",
+      "title": "Reflective Note: verbatim-preserved ethnographic self-observation",
+      "kind": "claim",
+      "base_relation": "refined_by_later_work",
+      "glosa_use": "adapt",
+      "hub": "ep",
+      "in_degree": 1
+    },
+    {
+      "id": "kc-ep-005",
+      "title": "Infinity as transcendental ground of meaning (contested vs. readout-not-truth)",
+      "kind": "claim",
+      "base_relation": "open",
+      "glosa_use": "skip",
+      "hub": "ep",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-ep-006",
+      "title": "Constructible ordering from a primitive step relation (precursor)",
+      "kind": "method",
+      "base_relation": "refined_by_later_work",
+      "glosa_use": "skip",
+      "hub": "ep",
+      "in_degree": 2
+    },
+    {
+      "id": "kc-ep-007",
+      "title": "Causal Calculus: primitive aggregation under finite causal access",
+      "kind": "method",
+      "base_relation": "refined_by_later_work",
+      "glosa_use": "skip",
+      "hub": "ep",
+      "in_degree": 2
+    },
+    {
+      "id": "kc-ep-008",
+      "title": "Causal Guardrails: pre-linguistic admissibility checks for LLMs",
+      "kind": "method",
+      "base_relation": "holds",
+      "glosa_use": "adapt",
+      "hub": "ep",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-ep-009",
+      "title": "Event-specific context vs. interpretive context in AI-mediated meaning access",
+      "kind": "claim",
+      "base_relation": "holds",
+      "glosa_use": "skip",
+      "hub": "ep",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-ep-010",
+      "title": "Learning under generative abundance: a structural regime shift",
+      "kind": "claim",
+      "base_relation": "holds",
+      "glosa_use": "adapt",
+      "hub": "ep",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-ep-011",
+      "title": "Invariance as condition of same-world discourse",
+      "kind": "claim",
+      "base_relation": "refined_by_later_work",
+      "glosa_use": "skip",
+      "hub": "ep",
+      "in_degree": 2
+    },
+    {
+      "id": "kc-ep-012",
+      "title": "CMP Knowledge Stability Theorem: three induction puzzles as one structural condition",
+      "kind": "method",
+      "base_relation": "holds",
+      "glosa_use": "adapt",
+      "hub": "ep",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-ep-013",
+      "title": "Knowledge as stabilization of representation under admissible variation",
+      "kind": "claim",
+      "base_relation": "holds",
+      "glosa_use": "adapt",
+      "hub": "ep",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-ep-014",
+      "title": "Knowledge as stabilized translation under bounded observation",
+      "kind": "claim",
+      "base_relation": "holds",
+      "glosa_use": "adopt",
+      "hub": "ep",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-ep-015",
+      "title": "Judicial neutrality as institutional achievement, not visual sameness",
+      "kind": "claim",
+      "base_relation": "holds",
+      "glosa_use": "skip",
+      "hub": "ep",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-ep-016",
+      "title": "The civilization of knowledge as a history of interpretive authority",
+      "kind": "claim",
+      "base_relation": "holds",
+      "glosa_use": "adopt",
+      "hub": "ep",
+      "in_degree": 2
+    },
+    {
+      "id": "kc-ep-017",
+      "title": "Causal Qualia: phenomenal interior as bounded causal organization, not brute privacy",
+      "kind": "claim",
+      "base_relation": "holds",
+      "glosa_use": "skip",
+      "hub": "ep",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-ep-018",
+      "title": "Beyond Halal Labels: premature category stabilization in Muslim-friendly tourism",
+      "kind": "method",
+      "base_relation": "open",
+      "glosa_use": "skip",
+      "hub": "ep",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-ep-019",
+      "title": "Three Layers, One Moon: PCS applied to hilal (crescent-sighting) disagreement",
+      "kind": "method",
+      "base_relation": "open",
+      "glosa_use": "skip",
+      "hub": "ep",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-ep-020",
+      "title": "PCS as a scale-invariant mechanism of cultural failure",
+      "kind": "method",
+      "base_relation": "open",
+      "glosa_use": "skip",
+      "hub": "ep",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-ep-021",
+      "title": "Constraint-first epistemology: a non-zero floor of mediation",
+      "kind": "claim",
+      "base_relation": "holds",
+      "glosa_use": "adopt",
+      "hub": "ep",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-ep-022",
+      "title": "สัจจะสัมพันธ์ (Relational Truth) — Thai restatement",
+      "kind": "definition",
+      "base_relation": "holds",
+      "glosa_use": "already_in_glosa",
+      "hub": "ep",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-ep-023",
+      "title": "Deep Authorship and Causal-Structural Alignment: beyond free-will misframing",
+      "kind": "claim",
+      "base_relation": "holds",
+      "glosa_use": "adopt",
+      "hub": "ep",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-ep-024",
+      "title": "Relational Alethic Realism: truth as disciplined answerability, not transparency",
+      "kind": "claim",
+      "base_relation": "holds",
+      "glosa_use": "adopt",
+      "hub": "ep",
+      "in_degree": 1
+    },
+    {
+      "id": "kc-ep-025",
+      "title": "AI expands human potential only via disciplined revision under constraint",
+      "kind": "claim",
+      "base_relation": "holds",
+      "glosa_use": "adopt",
+      "hub": "ep",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-ep-026",
+      "title": "θ(E): relational invariance without intrinsic nature",
+      "kind": "definition",
+      "base_relation": "holds",
+      "glosa_use": "adopt",
+      "hub": "ep",
+      "in_degree": 1
+    },
+    {
+      "id": "kc-ep-027",
+      "title": "Relational Alethic Realism as metaphysics-first reconstruction (book)",
+      "kind": "definition",
+      "base_relation": "holds",
+      "glosa_use": "adopt",
+      "hub": "ep",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-ep-028",
+      "title": "Mind as Information Horizon: telegraph equation to expertise on a discrete causal graph",
+      "kind": "method",
+      "base_relation": "refined_by_later_work",
+      "glosa_use": "skip",
+      "hub": "ep",
+      "in_degree": 2
+    },
+    {
+      "id": "kc-ep-029",
+      "title": "Catuskoti-on-Catuskoti: what survives Nāgārjuna's self-applied fourfold negation",
+      "kind": "claim",
+      "base_relation": "holds",
+      "glosa_use": "skip",
+      "hub": "ep",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-ep-030",
+      "title": "Dependent Order, Directed Selection, Dependent Identity (Ash'arī theology)",
+      "kind": "claim",
+      "base_relation": "open",
+      "glosa_use": "skip",
+      "hub": "ep",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-ep-031",
+      "title": "The explanatory insufficiency of randomness",
+      "kind": "claim",
+      "base_relation": "holds",
+      "glosa_use": "skip",
+      "hub": "ep",
+      "in_degree": 1
+    },
+    {
+      "id": "kc-ep-032",
+      "title": "Objective chance is not explanatorily primitive; modal difference is prior",
+      "kind": "claim",
+      "base_relation": "holds",
+      "glosa_use": "skip",
+      "hub": "ep",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-ep-033",
+      "title": "Experience Is the Human LoRA: readout-retention theory of selective model change",
+      "kind": "method",
+      "base_relation": "holds",
+      "glosa_use": "adopt",
+      "hub": "ep",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-ep-034",
+      "title": "The Architecture of Faqr (five registers of creaturely dependence)",
+      "kind": "claim",
+      "base_relation": "open",
+      "glosa_use": "skip",
+      "hub": "ep",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-ep-035",
+      "title": "Readout Genesis Standalone Synthesis: typed belief layer and meta-readout governance",
+      "kind": "definition",
+      "base_relation": "holds",
+      "glosa_use": "adopt",
+      "hub": "ep",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-ep-036",
+      "title": "The Declaration Bound: bit-accurate retained-state separation for deferred spectral queries",
+      "kind": "method",
+      "base_relation": "holds",
+      "glosa_use": "adopt",
+      "hub": "ep",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-ep-037",
+      "title": "What a zero readout certifies: zero as the failure locus of retained distinction",
+      "kind": "definition",
+      "base_relation": "holds",
+      "glosa_use": "adopt",
+      "hub": "ep",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-ep-038",
+      "title": "Epistemic hardening: asymmetric revisability in Muslim knowledge regimes",
+      "kind": "claim",
+      "base_relation": "holds",
+      "glosa_use": "adopt",
+      "hub": "ep",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-ep-039",
+      "title": "AI and the civilization of knowledge (NIDA 2026 slides, v1)",
+      "kind": "claim",
+      "base_relation": "holds",
+      "glosa_use": "already_in_glosa",
+      "hub": "ep",
+      "in_degree": 1
+    },
+    {
+      "id": "kc-ep-040",
+      "title": "AI and the civilization of knowledge (NIDA 2026 slides, v2)",
+      "kind": "claim",
+      "base_relation": "holds",
+      "glosa_use": "already_in_glosa",
+      "hub": "ep",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-ep-041",
+      "title": "The Standalone Scholar: dual-track architecture for AI-native scholarship",
+      "kind": "method",
+      "base_relation": "holds",
+      "glosa_use": "adopt",
+      "hub": "ep",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-ep-042",
+      "title": "The Readout Condition: existence, attribution, disclosure",
+      "kind": "definition",
+      "base_relation": "holds",
+      "glosa_use": "adopt",
+      "hub": "ep",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-ep-043",
+      "title": "Written by AI, still true: the Possession-Constitution Collapse and knower fetishism",
+      "kind": "claim",
+      "base_relation": "holds",
+      "glosa_use": "adopt",
+      "hub": "ep",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-ep-044",
+      "title": "Faqr, scholarly authority, and non-transferable responsibility",
+      "kind": "claim",
+      "base_relation": "holds",
+      "glosa_use": "adopt",
+      "hub": "ep",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-ep-045",
+      "title": "The Epistemic Chain Reaction: controlled human-AI amplification (Bounded Knower Paper IV)",
+      "kind": "method",
+      "base_relation": "holds",
+      "glosa_use": "adopt",
+      "hub": "ep",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-ep-046",
+      "title": "State of Evidence registry for the Readout hypothesis-generation programme (E01-E25)",
+      "kind": "method",
+      "base_relation": "holds",
+      "glosa_use": "adopt",
+      "hub": "ep",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-ep-047",
+      "title": "Blackbox Log: daily append-only verbatim voice record",
+      "kind": "tool",
+      "base_relation": "holds",
+      "glosa_use": "adopt",
+      "hub": "ep",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-ep-048",
+      "title": "Before Evidence Can Decide: candidate-set formation and discovery routing (Paper III)",
+      "kind": "method",
+      "base_relation": "holds",
+      "glosa_use": "adapt",
+      "hub": "ep",
+      "in_degree": 1
+    },
+    {
+      "id": "kc-ep-049",
+      "title": "Knowledge Topology and the First Passage to Usable Hypotheses (Paper II)",
+      "kind": "method",
+      "base_relation": "holds",
+      "glosa_use": "adapt",
+      "hub": "ep",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-ep-050",
+      "title": "From Problem to Hypothesis: bounded dynamic semantic mobility (Paper I)",
+      "kind": "method",
+      "base_relation": "holds",
+      "glosa_use": "adopt",
+      "hub": "ep",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-ep-051",
+      "title": "glosa v0.1.0/v0.2.0: methodology + skill + tools for human-AI knowledge co-production",
+      "kind": "definition",
+      "base_relation": "holds",
+      "glosa_use": "adopt",
+      "hub": "ep",
+      "in_degree": 1
+    },
+    {
+      "id": "kc-ep-052",
+      "title": "Rigour Without Infrastructure: three propositions on claim-card discipline",
+      "kind": "claim",
+      "base_relation": "holds",
+      "glosa_use": "adopt",
+      "hub": "ep",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-he-001",
+      "title": "Referral governance — separating clinical decision, information transfer, and payment authorization",
+      "kind": "method",
+      "base_relation": "holds",
+      "glosa_use": "adopt",
+      "hub": "he",
+      "in_degree": 1
+    },
+    {
+      "id": "kc-he-002",
+      "title": "SOMA-READ — frozen preregistration deposited before ethics approval, before any data",
+      "kind": "method",
+      "base_relation": "open",
+      "glosa_use": "adopt",
+      "hub": "he",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-he-003",
+      "title": "T-PHE — practitioner standpoint paired with a cited tier-one evidence dossier, no clinical recommendation",
+      "kind": "rule",
+      "base_relation": "holds",
+      "glosa_use": "already_in_glosa",
+      "hub": "he",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-he-004",
+      "title": "RRHM Open Lab — sealed prediction package with an independent reproduction and a recorded prior",
+      "kind": "method",
+      "base_relation": "holds",
+      "glosa_use": "adopt",
+      "hub": "he",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-he-005",
+      "title": "RRHM phobia model — pre-registering which falsification gates are simulable before any participant",
+      "kind": "method",
+      "base_relation": "holds",
+      "glosa_use": "adopt",
+      "hub": "he",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-he-006",
+      "title": "CPRMH — seventeen pre-specified falsifiers, locked before outcome access",
+      "kind": "method",
+      "base_relation": "holds",
+      "glosa_use": "adopt",
+      "hub": "he",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-he-007",
+      "title": "CPRMH — versioned living-evidence object with machine-assisted retrieval plus mandatory human adjudication",
+      "kind": "method",
+      "base_relation": "holds",
+      "glosa_use": "adopt",
+      "hub": "he",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-he-008",
+      "title": "Wellbeing from Informationism — repair-permissive causal-informational coherence, not symptom absence",
+      "kind": "definition",
+      "base_relation": "holds",
+      "glosa_use": "skip",
+      "hub": "he",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-he-009",
+      "title": "Health as constraint-admissible trajectory — identity redefined as admissible continuity, not static sameness",
+      "kind": "definition",
+      "base_relation": "holds",
+      "glosa_use": "skip",
+      "hub": "he",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-he-010",
+      "title": "AI-coached endurance training — admissibility-first, no-go conditions derived and empirically anchored, not optimized-for-performance",
+      "kind": "rule",
+      "base_relation": "holds",
+      "glosa_use": "adopt",
+      "hub": "he",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-he-011",
+      "title": "Autonomic Safety paper — operational guidance explicitly bounded to feasibility (GO/NO-GO), not clinical decision",
+      "kind": "rule",
+      "base_relation": "holds",
+      "glosa_use": "adopt",
+      "hub": "he",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-he-012",
+      "title": "High Capability, Low Execution — execution failure reframed as finite causal capacity, not motivation deficit",
+      "kind": "definition",
+      "base_relation": "holds",
+      "glosa_use": "skip",
+      "hub": "he",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-he-013",
+      "title": "Cellular Aging paper — falsifiable constraints derived without pathway-specific or clinical claims",
+      "kind": "rule",
+      "base_relation": "holds",
+      "glosa_use": "adopt",
+      "hub": "he",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-he-014",
+      "title": "Causal Psychology — apparent psychological failure reframed as environmental impossibility, not individual deficiency",
+      "kind": "definition",
+      "base_relation": "holds",
+      "glosa_use": "skip",
+      "hub": "he",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-he-015",
+      "title": "Life as Hazard Management — nondiagnostic white paper, no new biological constants or clinical prescriptions",
+      "kind": "rule",
+      "base_relation": "holds",
+      "glosa_use": "adopt",
+      "hub": "he",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-he-016",
+      "title": "SANA runtime — explicit non-medical/non-psychiatric/non-legal scope stated inside an operational AI spec",
+      "kind": "rule",
+      "base_relation": "holds",
+      "glosa_use": "adopt",
+      "hub": "he",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-he-017",
+      "title": "AI-Cognitive Interaction (youth potential) — K0 conceptual paper, SSRN-first, no priority claim, deposited unchanged",
+      "kind": "claim",
+      "base_relation": "holds",
+      "glosa_use": "adopt",
+      "hub": "he",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-he-018",
+      "title": "Strong, Warm & Safe Family Ecosystem — policy brief integrating ethics framework and social-innovation practice",
+      "kind": "definition",
+      "base_relation": "open",
+      "glosa_use": "skip",
+      "hub": "he",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-he-019",
+      "title": "Systemic Repair Capacity Theory — explicit no-novelty-at-mechanism-level claim, novelty scoped to architecture only",
+      "kind": "rule",
+      "base_relation": "holds",
+      "glosa_use": "adopt",
+      "hub": "he",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-islam-001",
+      "title": "Practitioner standpoint paired with cited evidence, no clinical recommendation (islam-hub angle)",
+      "kind": "rule",
+      "base_relation": "holds",
+      "glosa_use": "already_in_glosa",
+      "hub": "islam",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-islam-002",
+      "title": "Revelation is not fallible; the human juristic determination of it is — distinguishing revelation from juristic readouts",
+      "kind": "claim",
+      "base_relation": "holds",
+      "glosa_use": "adopt",
+      "hub": "islam",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-islam-003",
+      "title": "Functional sacralization of fiqh — human determinations acquiring practical sacred-normativity when institutions make dissent costly",
+      "kind": "claim",
+      "base_relation": "holds",
+      "glosa_use": "adopt",
+      "hub": "islam",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-islam-004",
+      "title": "AI-mediated society risks the human forgetting their own status as chooser and responsibility-bearer",
+      "kind": "claim",
+      "base_relation": "holds",
+      "glosa_use": "adopt",
+      "hub": "islam",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-islam-005",
+      "title": "Epistemic hardening — declining social revisability of human interpretive claims",
+      "kind": "definition",
+      "base_relation": "holds",
+      "glosa_use": "adopt",
+      "hub": "islam",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-islam-006",
+      "title": "Every doctrine states the conditions under which it would be defeated",
+      "kind": "method",
+      "base_relation": "holds",
+      "glosa_use": "adopt",
+      "hub": "islam",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-islam-007",
+      "title": "Power-literate satire framework offered as analytical tool, not normative verdict",
+      "kind": "method",
+      "base_relation": "holds",
+      "glosa_use": "adopt",
+      "hub": "islam",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-islam-008",
+      "title": "Knowledge as the residue of beliefs that survived the world's resistance",
+      "kind": "claim",
+      "base_relation": "holds",
+      "glosa_use": "adopt",
+      "hub": "islam",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-islam-009",
+      "title": "Layer confusion — applying one layer's tools/authority to a question belonging to another layer",
+      "kind": "rule",
+      "base_relation": "holds",
+      "glosa_use": "adopt",
+      "hub": "islam",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-islam-010",
+      "title": "Premature Category Stabilization as a scale-invariant mechanism; peace defined by three structural conditions",
+      "kind": "definition",
+      "base_relation": "holds",
+      "glosa_use": "adopt",
+      "hub": "islam",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-islam-011",
+      "title": "Premature category stabilization — provider-defined service templates precede and distort the diversity they claim to serve",
+      "kind": "claim",
+      "base_relation": "holds",
+      "glosa_use": "adapt",
+      "hub": "islam",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-islam-012",
+      "title": "Behavioral dataset explicitly withholds interpretive commentary",
+      "kind": "tool",
+      "base_relation": "holds",
+      "glosa_use": "adopt",
+      "hub": "islam",
+      "in_degree": 1
+    },
+    {
+      "id": "kc-islam-013",
+      "title": "Statistical dataset compiled from named sources, explicitly excludes interpretive analysis",
+      "kind": "tool",
+      "base_relation": "holds",
+      "glosa_use": "adopt",
+      "hub": "islam",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-islam-014",
+      "title": "Dialogue quality, not the interlocutor's nature, determines whether wisdom or distortion results",
+      "kind": "claim",
+      "base_relation": "holds",
+      "glosa_use": "adopt",
+      "hub": "islam",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-islam-015",
+      "title": "Cultural-Based Practitioners framework converts faith/cultural capital into verifiable social and economic value",
+      "kind": "method",
+      "base_relation": "holds",
+      "glosa_use": "skip",
+      "hub": "islam",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-islam-016",
+      "title": "Contribution declared theoretical/analytical, not empirical, up front",
+      "kind": "claim",
+      "base_relation": "holds",
+      "glosa_use": "adopt",
+      "hub": "islam",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-ph-001",
+      "title": "Dark Energy as Mean Damping: From Lyapunov Energy Decay to Cosmological Coherence",
+      "kind": "claim",
+      "base_relation": "superseded",
+      "glosa_use": "skip",
+      "hub": "ph",
+      "in_degree": 2
+    },
+    {
+      "id": "kc-ph-002",
+      "title": "The Yaoharee Proposal_ An Epistemic Architecture of Observable Reality",
+      "kind": "claim",
+      "base_relation": "superseded",
+      "glosa_use": "skip",
+      "hub": "ph",
+      "in_degree": 2
+    },
+    {
+      "id": "kc-ph-003",
+      "title": "Epistemic Coherence_Yaoharee_proposal",
+      "kind": "claim",
+      "base_relation": "open",
+      "glosa_use": "skip",
+      "hub": "ph",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-ph-004",
+      "title": "Empirical Calibration and Validation of the Epistemic Coherence Equation",
+      "kind": "claim",
+      "base_relation": "open",
+      "glosa_use": "skip",
+      "hub": "ph",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-ph-005",
+      "title": "MUS/Epistemic Framework: Quantum-Gravity Unification via Coherence Field Dynamics",
+      "kind": "method",
+      "base_relation": "superseded",
+      "glosa_use": "skip",
+      "hub": "ph",
+      "in_degree": 2
+    },
+    {
+      "id": "kc-ph-006",
+      "title": "MUS/Epistemic (MU) v1.5 — Technical Whitepaper",
+      "kind": "method",
+      "base_relation": "superseded",
+      "glosa_use": "skip",
+      "hub": "ph",
+      "in_degree": 2
+    },
+    {
+      "id": "kc-ph-007",
+      "title": "The Yaoharee Proposal — A Transdisciplinary Framework for Contextual Coherence Across Physical, Cognitive, and Ethical S",
+      "kind": "method",
+      "base_relation": "superseded",
+      "glosa_use": "skip",
+      "hub": "ph",
+      "in_degree": 2
+    },
+    {
+      "id": "kc-ph-008",
+      "title": "UFC Equation v1.3.4 — Mathematical Compact Edition",
+      "kind": "claim",
+      "base_relation": "superseded",
+      "glosa_use": "skip",
+      "hub": "ph",
+      "in_degree": 2
+    },
+    {
+      "id": "kc-ph-009",
+      "title": "Equation-of-Everything (V0.7) — SURE-∞ Framework",
+      "kind": "method",
+      "base_relation": "superseded",
+      "glosa_use": "skip",
+      "hub": "ph",
+      "in_degree": 2
+    },
+    {
+      "id": "kc-ph-010",
+      "title": "The Equation of Coherence — From Cosmic Order to Quantum Trace - The Yaoharee Proposal",
+      "kind": "claim",
+      "base_relation": "superseded",
+      "glosa_use": "skip",
+      "hub": "ph",
+      "in_degree": 2
+    },
+    {
+      "id": "kc-ph-011",
+      "title": "UB-ONE v6.3 (Minimal) — Full Reviewer Pack for",
+      "kind": "claim",
+      "base_relation": "open",
+      "glosa_use": "skip",
+      "hub": "ph",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-ph-012",
+      "title": "Reflective Note: Ten Days of Returning to the Language of Mathematics",
+      "kind": "method",
+      "base_relation": "open",
+      "glosa_use": "skip",
+      "hub": "ph",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-ph-013",
+      "title": "The Emergence of Mass Consistent with Both Relativity and Quantum Physics",
+      "kind": "claim",
+      "base_relation": "open",
+      "glosa_use": "skip",
+      "hub": "ph",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-ph-014",
+      "title": "Geometric Resolution to the Hierarchy Problem: The Scale‑Locked Identity",
+      "kind": "claim",
+      "base_relation": "open",
+      "glosa_use": "skip",
+      "hub": "ph",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-ph-015",
+      "title": "The Scale-Lock Breaking Paradox and the Origin of Λ",
+      "kind": "claim",
+      "base_relation": "superseded",
+      "glosa_use": "skip",
+      "hub": "ph",
+      "in_degree": 2
+    },
+    {
+      "id": "kc-ph-016",
+      "title": "A Tri-Domain Symmetry in Gravity-Frequency Scaling: A Testable Hypothesis from Mathematical Synthesis",
+      "kind": "claim",
+      "base_relation": "open",
+      "glosa_use": "skip",
+      "hub": "ph",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-ph-017",
+      "title": "Energy-Wavelength Tri-Domain Symmetry: A Testable Hypothesis Connecting Quantum, Relativistic, and Classical Regimes",
+      "kind": "claim",
+      "base_relation": "open",
+      "glosa_use": "skip",
+      "hub": "ph",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-ph-018",
+      "title": "Alpha-Closure: Scale-Invariant Coherence with Constant Coherence Time",
+      "kind": "claim",
+      "base_relation": "open",
+      "glosa_use": "skip",
+      "hub": "ph",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-ph-019",
+      "title": "Yaoharee Cosmo data collection 2025",
+      "kind": "claim",
+      "base_relation": "open",
+      "glosa_use": "skip",
+      "hub": "ph",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-ph-020",
+      "title": "Equation of Everything ∞ Final - Yaoharee Proposal",
+      "kind": "claim",
+      "base_relation": "superseded",
+      "glosa_use": "skip",
+      "hub": "ph",
+      "in_degree": 2
+    },
+    {
+      "id": "kc-ph-021",
+      "title": "K=32: Equation of Everything (EoE)",
+      "kind": "claim",
+      "base_relation": "superseded",
+      "glosa_use": "skip",
+      "hub": "ph",
+      "in_degree": 2
+    },
+    {
+      "id": "kc-ph-022",
+      "title": "EoE (K = 32): Core Proof of H0–H4 with Sharp Threshold",
+      "kind": "claim",
+      "base_relation": "superseded",
+      "glosa_use": "skip",
+      "hub": "ph",
+      "in_degree": 2
+    },
+    {
+      "id": "kc-ph-023",
+      "title": "EoE (K = 32): One-Document Core (H0–H9)",
+      "kind": "claim",
+      "base_relation": "superseded",
+      "glosa_use": "skip",
+      "hub": "ph",
+      "in_degree": 2
+    },
+    {
+      "id": "kc-ph-024",
+      "title": "Local-Only Derivation of an Emergent Coherence Field from the Seed Algebra 𝐴𝜀 = delta",
+      "kind": "claim",
+      "base_relation": "superseded",
+      "glosa_use": "skip",
+      "hub": "ph",
+      "in_degree": 2
+    },
+    {
+      "id": "kc-ph-025",
+      "title": "Scale-Lock from Lyapunov Dissipation in a Local-Only Framework",
+      "kind": "method",
+      "base_relation": "superseded",
+      "glosa_use": "skip",
+      "hub": "ph",
+      "in_degree": 2
+    },
+    {
+      "id": "kc-ph-026",
+      "title": "L2 Scale-Lock and Mass Emergence via Lyapunov Dissipation Numerical",
+      "kind": "claim",
+      "base_relation": "superseded",
+      "glosa_use": "skip",
+      "hub": "ph",
+      "in_degree": 2
+    },
+    {
+      "id": "kc-ph-027",
+      "title": "L0–L3: Minimal-Viable Foundation for the Emergent Coherence Field",
+      "kind": "claim",
+      "base_relation": "superseded",
+      "glosa_use": "skip",
+      "hub": "ph",
+      "in_degree": 2
+    },
+    {
+      "id": "kc-ph-028",
+      "title": "L4 — Phase–Amplitude Persistence in Human EEG (N=36) Empirical Validation of the Lyapunov–Scale–Lock Framework",
+      "kind": "method",
+      "base_relation": "superseded",
+      "glosa_use": "skip",
+      "hub": "ph",
+      "in_degree": 2
+    },
+    {
+      "id": "kc-ph-029",
+      "title": "Information Field Theory v0.1: Phase, Damp, Sync, and W0 Toward a Unified Framework Connecting Cosmos, Quantum, and Mind",
+      "kind": "method",
+      "base_relation": "superseded",
+      "glosa_use": "skip",
+      "hub": "ph",
+      "in_degree": 2
+    },
+    {
+      "id": "kc-ph-030",
+      "title": "A Proposed Gauge-Coupled Unification of Informational, Curvature, and Electromagnetic Dynamics",
+      "kind": "claim",
+      "base_relation": "superseded",
+      "glosa_use": "skip",
+      "hub": "ph",
+      "in_degree": 2
+    },
+    {
+      "id": "kc-ph-031",
+      "title": "Lyapunov Energy Decay for Gauge-Coupled Complex Scalar Fields with Covariant Friction : IFT_v0.1_LyapunovProof",
+      "kind": "claim",
+      "base_relation": "superseded",
+      "glosa_use": "skip",
+      "hub": "ph",
+      "in_degree": 2
+    },
+    {
+      "id": "kc-ph-032",
+      "title": "Lyapunov Energy Decay for Gauge-Coupled Complex Scalar Fields with Covariant Friction",
+      "kind": "claim",
+      "base_relation": "superseded",
+      "glosa_use": "skip",
+      "hub": "ph",
+      "in_degree": 2
+    },
+    {
+      "id": "kc-ph-033",
+      "title": "Long-Tail Energy Relaxation in an Old Polluted White Dwarf: A Theoretical Remark on LSPM J0207+3331",
+      "kind": "claim",
+      "base_relation": "open",
+      "glosa_use": "skip",
+      "hub": "ph",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-ph-034",
+      "title": "Theoretical Remark: Non-ideal Dissipation as the Missing Piece Bridging Ambipolar-Diffusive Winds in Red Giants and Long",
+      "kind": "claim",
+      "base_relation": "superseded",
+      "glosa_use": "skip",
+      "hub": "ph",
+      "in_degree": 2
+    },
+    {
+      "id": "kc-ph-035",
+      "title": "Theoretical Remark: Massive Star Evolution in Extremely Metal-Poor Environments under the Lyapunov–Scale–Log Framework",
+      "kind": "method",
+      "base_relation": "superseded",
+      "glosa_use": "skip",
+      "hub": "ph",
+      "in_degree": 2
+    },
+    {
+      "id": "kc-ph-036",
+      "title": "Theoretical Remark: A Possible Slowdown of Cosmic Expansion and a Self-Contained Lyapunov Mean-Damping Interpretation Co",
+      "kind": "claim",
+      "base_relation": "superseded",
+      "glosa_use": "skip",
+      "hub": "ph",
+      "in_degree": 2
+    },
+    {
+      "id": "kc-ph-037",
+      "title": "Axiom 4: Non-Equilibrium Information Physics",
+      "kind": "rule",
+      "base_relation": "superseded",
+      "glosa_use": "skip",
+      "hub": "ph",
+      "in_degree": 2
+    },
+    {
+      "id": "kc-ph-038",
+      "title": "Unified Equation v4.3-r1.5 (Stage II, ScopeTight)",
+      "kind": "claim",
+      "base_relation": "superseded",
+      "glosa_use": "skip",
+      "hub": "ph",
+      "in_degree": 2
+    },
+    {
+      "id": "kc-ph-039",
+      "title": "Unified Information Field Foundation (A Minimal Mathematical Framework Linking Energy, Information, and Stability)",
+      "kind": "method",
+      "base_relation": "superseded",
+      "glosa_use": "skip",
+      "hub": "ph",
+      "in_degree": 2
+    },
+    {
+      "id": "kc-ph-040",
+      "title": "Mass from the Informational Field",
+      "kind": "claim",
+      "base_relation": "superseded",
+      "glosa_use": "skip",
+      "hub": "ph",
+      "in_degree": 2
+    },
+    {
+      "id": "kc-ph-041",
+      "title": "When GR Is an Information Tensor, Not Matter: Resolving Dark Matter",
+      "kind": "claim",
+      "base_relation": "open",
+      "glosa_use": "skip",
+      "hub": "ph",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-ph-042",
+      "title": "Axiom 11 — Disk Before Mass",
+      "kind": "rule",
+      "base_relation": "superseded",
+      "glosa_use": "skip",
+      "hub": "ph",
+      "in_degree": 2
+    },
+    {
+      "id": "kc-ph-043",
+      "title": "Axiom 12 — Informational CP-Asymmetry",
+      "kind": "rule",
+      "base_relation": "superseded",
+      "glosa_use": "skip",
+      "hub": "ph",
+      "in_degree": 2
+    },
+    {
+      "id": "kc-ph-044",
+      "title": "Axioms 13–14: Informational Vacuum and Universal Couplings",
+      "kind": "rule",
+      "base_relation": "superseded",
+      "glosa_use": "skip",
+      "hub": "ph",
+      "in_degree": 2
+    },
+    {
+      "id": "kc-ph-045",
+      "title": "Informational Diffusivity of Black-Hole Ringdown: A Causally Constrained Telegraph-Based Surrogate Framework",
+      "kind": "method",
+      "base_relation": "refined_by_later_work",
+      "glosa_use": "skip",
+      "hub": "ph",
+      "in_degree": 1
+    },
+    {
+      "id": "kc-ph-046",
+      "title": "Concept note : Information Dynamics Across Scales: Telegraph Flow, Memory, and Boundary Capacity",
+      "kind": "method",
+      "base_relation": "refined_by_later_work",
+      "glosa_use": "skip",
+      "hub": "ph",
+      "in_degree": 1
+    },
+    {
+      "id": "kc-ph-047",
+      "title": "Non-Equilibrium Information Physics : Concept note",
+      "kind": "method",
+      "base_relation": "superseded",
+      "glosa_use": "skip",
+      "hub": "ph",
+      "in_degree": 2
+    },
+    {
+      "id": "kc-ph-048",
+      "title": "A Robust 2π-nat Upper Bound for Localized Fermions: From Barut's Lepton-Mass Prediction to Gravitational Entropy Account",
+      "kind": "claim",
+      "base_relation": "open",
+      "glosa_use": "skip",
+      "hub": "ph",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-ph-049",
+      "title": "Fine-Structure Constant as Geometric Necessity: First Derivation of α from Information-Theoretic Architecture",
+      "kind": "claim",
+      "base_relation": "open",
+      "glosa_use": "skip",
+      "hub": "ph",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-ph-050",
+      "title": "Elementary Fermions Carry Exactly 2π Nat of Information: A Horizon–Confinement Identity",
+      "kind": "claim",
+      "base_relation": "open",
+      "glosa_use": "skip",
+      "hub": "ph",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-ph-051",
+      "title": "A PDE–Based Proof that Every Compton-Localized Particle Carries Exactly 2π Nat of Information",
+      "kind": "claim",
+      "base_relation": "open",
+      "glosa_use": "skip",
+      "hub": "ph",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-ph-052",
+      "title": "A Short Note on a Striking Numerical Observation in Charged-Lepton Masses from a Minimal C5-Symmetric Five-Site Model",
+      "kind": "method",
+      "base_relation": "open",
+      "glosa_use": "skip",
+      "hub": "ph",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-ph-053",
+      "title": "Conservative, Falsifiable Claims for Electroweak Mixing at the Z Pole : Non-Equilibrium Informational Field Theory",
+      "kind": "claim",
+      "base_relation": "superseded",
+      "glosa_use": "skip",
+      "hub": "ph",
+      "in_degree": 2
+    },
+    {
+      "id": "kc-ph-054",
+      "title": "Phenomenological Discovery Note: Minimal-Claim Numerical Consistencies Across Gauge, Scalar, and Gravitational Sectors a",
+      "kind": "method",
+      "base_relation": "open",
+      "glosa_use": "skip",
+      "hub": "ph",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-ph-055",
+      "title": "An Informational-Pixel Ansatz for the Vacuum Energy: A Mathematical Invitation to Resolve the Vacuum Catastrophe",
+      "kind": "claim",
+      "base_relation": "superseded",
+      "glosa_use": "skip",
+      "hub": "ph",
+      "in_degree": 2
+    },
+    {
+      "id": "kc-ph-056",
+      "title": "Spectral–Geometric Constraint at the Z Pole: Couplings, Electroweak Masses, Fermion Ratios, and FAIR Verification of the",
+      "kind": "claim",
+      "base_relation": "open",
+      "glosa_use": "skip",
+      "hub": "ph",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-ph-057",
+      "title": "Operational Compactness: Unified One-Parameter Interfaces for Newtonian, Gravitational, and Micro-Informational Domains",
+      "kind": "claim",
+      "base_relation": "open",
+      "glosa_use": "skip",
+      "hub": "ph",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-ph-058",
+      "title": "Informational Pixel Field: Master Lagrangian and Nine-Domain Architecture",
+      "kind": "claim",
+      "base_relation": "superseded",
+      "glosa_use": "skip",
+      "hub": "ph",
+      "in_degree": 2
+    },
+    {
+      "id": "kc-ph-059",
+      "title": "Draf_Non-Equilibrium Informational Field Theory_physic_humanlife_ai_coherence",
+      "kind": "claim",
+      "base_relation": "superseded",
+      "glosa_use": "skip",
+      "hub": "ph",
+      "in_degree": 2
+    },
+    {
+      "id": "kc-ph-060",
+      "title": "Cosmological and Quantum Constraints on Scalar-Modulated Gauge Couplings from an Informational Field Framework",
+      "kind": "method",
+      "base_relation": "superseded",
+      "glosa_use": "skip",
+      "hub": "ph",
+      "in_degree": 2
+    },
+    {
+      "id": "kc-ph-061",
+      "title": "Information Inertia and Geometric Causality: A Structural Synthesis of Reality Beyond \"It from Bit\"",
+      "kind": "claim",
+      "base_relation": "open",
+      "glosa_use": "skip",
+      "hub": "ph",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-ph-062",
+      "title": "Causal Informational Ordering: On the Pre-Geometric Nature of Time and Change",
+      "kind": "claim",
+      "base_relation": "refined_by_later_work",
+      "glosa_use": "skip",
+      "hub": "ph",
+      "in_degree": 1
+    },
+    {
+      "id": "kc-ph-063",
+      "title": "Reality is the causal structure of a single informational field",
+      "kind": "claim",
+      "base_relation": "superseded",
+      "glosa_use": "skip",
+      "hub": "ph",
+      "in_degree": 2
+    },
+    {
+      "id": "kc-ph-064",
+      "title": "Mass as Inverse Causal Time: A Unified Resolution of Four Persistent Puzzles in Particle Physics and Cosmology",
+      "kind": "claim",
+      "base_relation": "open",
+      "glosa_use": "skip",
+      "hub": "ph",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-ph-065",
+      "title": "Causal Regularization of Newtonian Gravity via Maxwell–Cattaneo Transport",
+      "kind": "claim",
+      "base_relation": "refined_by_later_work",
+      "glosa_use": "skip",
+      "hub": "ph",
+      "in_degree": 1
+    },
+    {
+      "id": "kc-ph-066",
+      "title": "Mass as a Structural Necessity of Finite-Speed Causal Transport",
+      "kind": "claim",
+      "base_relation": "open",
+      "glosa_use": "skip",
+      "hub": "ph",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-ph-067",
+      "title": "Reframing Naturalness: The Hierarchy Problem as a Timescale Stability Question",
+      "kind": "claim",
+      "base_relation": "open",
+      "glosa_use": "skip",
+      "hub": "ph",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-ph-068",
+      "title": "The Social Life of Particles How Causal Memory Reveals Hidden Order in the Mass Spectrum",
+      "kind": "claim",
+      "base_relation": "refined_by_later_work",
+      "glosa_use": "skip",
+      "hub": "ph",
+      "in_degree": 1
+    },
+    {
+      "id": "kc-ph-069",
+      "title": "Mass as Causal Memory: A Structural Unication of Black Hole Physics",
+      "kind": "claim",
+      "base_relation": "refined_by_later_work",
+      "glosa_use": "skip",
+      "hub": "ph",
+      "in_degree": 1
+    },
+    {
+      "id": "kc-ph-070",
+      "title": "Pixel Gravity and the Structure of Causal Memory: Kernel Uniqueness and Planck-Limited Relaxation",
+      "kind": "claim",
+      "base_relation": "refined_by_later_work",
+      "glosa_use": "skip",
+      "hub": "ph",
+      "in_degree": 1
+    },
+    {
+      "id": "kc-ph-071",
+      "title": "CAUSAL MEMORY IN PHYSICS",
+      "kind": "claim",
+      "base_relation": "refined_by_later_work",
+      "glosa_use": "skip",
+      "hub": "ph",
+      "in_degree": 1
+    },
+    {
+      "id": "kc-ph-072",
+      "title": "The Causal-Memory Architecture of the Universe",
+      "kind": "claim",
+      "base_relation": "refined_by_later_work",
+      "glosa_use": "skip",
+      "hub": "ph",
+      "in_degree": 1
+    },
+    {
+      "id": "kc-ph-073",
+      "title": "Complexity from Causal Memory: A τc-Based Physics of Depth",
+      "kind": "claim",
+      "base_relation": "refined_by_later_work",
+      "glosa_use": "skip",
+      "hub": "ph",
+      "in_degree": 1
+    },
+    {
+      "id": "kc-ph-074",
+      "title": "Causal-Time Diagnostic: A Concise, Model-Independent Test of Late-Time Acceleration",
+      "kind": "claim",
+      "base_relation": "open",
+      "glosa_use": "skip",
+      "hub": "ph",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-ph-075",
+      "title": "Chronometry of the Degenerate State: White Dwarf Cooling Anomalies, Crystallization Kinetics, and the Q-Branch Phenomeno",
+      "kind": "claim",
+      "base_relation": "open",
+      "glosa_use": "skip",
+      "hub": "ph",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-ph-076",
+      "title": "The Telegraph–Causal Framework for Ultra-Fast Outflows in NGC 3783",
+      "kind": "method",
+      "base_relation": "refined_by_later_work",
+      "glosa_use": "skip",
+      "hub": "ph",
+      "in_degree": 1
+    },
+    {
+      "id": "kc-ph-077",
+      "title": "A Minimal Telegraph Representation of Finite-Speed Causal Transport",
+      "kind": "claim",
+      "base_relation": "refined_by_later_work",
+      "glosa_use": "skip",
+      "hub": "ph",
+      "in_degree": 1
+    },
+    {
+      "id": "kc-ph-078",
+      "title": "Hear the Noise Before You Fix It: A One–Page, CP–Safe, Memory–Aware QEC Upgrade",
+      "kind": "claim",
+      "base_relation": "open",
+      "glosa_use": "skip",
+      "hub": "ph",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-ph-079",
+      "title": "The Causal-Memory Program: Canon",
+      "kind": "method",
+      "base_relation": "refined_by_later_work",
+      "glosa_use": "skip",
+      "hub": "ph",
+      "in_degree": 1
+    },
+    {
+      "id": "kc-ph-080",
+      "title": "FOUNDATION Truth, Physics, and Cosmology from Causal Memory",
+      "kind": "claim",
+      "base_relation": "refined_by_later_work",
+      "glosa_use": "skip",
+      "hub": "ph",
+      "in_degree": 1
+    },
+    {
+      "id": "kc-ph-081",
+      "title": "Uniqueness of Telegraph Dynamics Under Minimal Causal-Dissipative Constraints",
+      "kind": "claim",
+      "base_relation": "refined_by_later_work",
+      "glosa_use": "skip",
+      "hub": "ph",
+      "in_degree": 1
+    },
+    {
+      "id": "kc-ph-082",
+      "title": "The Causal Accessibility Horizon: A Structural Limit on Finite-Time Reachability",
+      "kind": "claim",
+      "base_relation": "refined_by_later_work",
+      "glosa_use": "skip",
+      "hub": "ph",
+      "in_degree": 1
+    },
+    {
+      "id": "kc-ph-083",
+      "title": "Early Warning Necessitates Timely Controllability Under Finite-Speed Causal Response",
+      "kind": "claim",
+      "base_relation": "open",
+      "glosa_use": "skip",
+      "hub": "ph",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-ph-084",
+      "title": "Black Holes in the Causal-Memory Framework: A Sketch",
+      "kind": "method",
+      "base_relation": "refined_by_later_work",
+      "glosa_use": "skip",
+      "hub": "ph",
+      "in_degree": 1
+    },
+    {
+      "id": "kc-ph-085",
+      "title": "Causal–Memory Program: Short Talk (Two-Column Boxed)",
+      "kind": "method",
+      "base_relation": "open",
+      "glosa_use": "skip",
+      "hub": "ph",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-ph-086",
+      "title": "A Soft–Gated (Multiplier–Enforced) Energy–Flux Root Lagrangian: Variational Consistency, Universal Projection (Local), U",
+      "kind": "claim",
+      "base_relation": "open",
+      "glosa_use": "skip",
+      "hub": "ph",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-ph-087",
+      "title": "Causal Memory Transport Equations",
+      "kind": "claim",
+      "base_relation": "refined_by_later_work",
+      "glosa_use": "skip",
+      "hub": "ph",
+      "in_degree": 1
+    },
+    {
+      "id": "kc-ph-088",
+      "title": "InformationCausal Emergence of Physics: A Concept Note on Why Geometry, Mass, and Dynamics Are Not Fundamental",
+      "kind": "method",
+      "base_relation": "open",
+      "glosa_use": "skip",
+      "hub": "ph",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-ph-089",
+      "title": "Time as Causal Memory A Philosophical Synthesis from Newton to Quantum Gravity",
+      "kind": "claim",
+      "base_relation": "refined_by_later_work",
+      "glosa_use": "skip",
+      "hub": "ph",
+      "in_degree": 1
+    },
+    {
+      "id": "kc-ph-090",
+      "title": "Why Purely Markovian Ringdown Is Not Admissible Under Persistent Causal Memory",
+      "kind": "claim",
+      "base_relation": "refined_by_later_work",
+      "glosa_use": "skip",
+      "hub": "ph",
+      "in_degree": 1
+    },
+    {
+      "id": "kc-ph-091",
+      "title": "Post–2025 Cosmological Forecast Note under the Causal State History Principle",
+      "kind": "method",
+      "base_relation": "refined_by_later_work",
+      "glosa_use": "skip",
+      "hub": "ph",
+      "in_degree": 1
+    },
+    {
+      "id": "kc-ph-092",
+      "title": "Note: Causal State History as a Structural Constraint (Discussion Route)",
+      "kind": "method",
+      "base_relation": "refined_by_later_work",
+      "glosa_use": "skip",
+      "hub": "ph",
+      "in_degree": 1
+    },
+    {
+      "id": "kc-ph-093",
+      "title": "Physics Letter: A Structural No-Go on Bias without Record-Cost Asymmetry in Causal Memory Architectures",
+      "kind": "claim",
+      "base_relation": "refined_by_later_work",
+      "glosa_use": "skip",
+      "hub": "ph",
+      "in_degree": 1
+    },
+    {
+      "id": "kc-ph-094",
+      "title": "Tully–Fisher as Gravitational Memory: Why the Universe Remembers (with Spatial Diffusion)",
+      "kind": "claim",
+      "base_relation": "superseded",
+      "glosa_use": "skip",
+      "hub": "ph",
+      "in_degree": 2
+    },
+    {
+      "id": "kc-ph-095",
+      "title": "Kibble Balance as Operational Identity: Why ℏ is an Exchange Rate",
+      "kind": "claim",
+      "base_relation": "superseded",
+      "glosa_use": "skip",
+      "hub": "ph",
+      "in_degree": 2
+    },
+    {
+      "id": "kc-ph-096",
+      "title": "Non-Circular Operational Identification of the Gravitational Constant 𝐺 & ℏ in Causal Memory Gravity",
+      "kind": "claim",
+      "base_relation": "refined_by_later_work",
+      "glosa_use": "skip",
+      "hub": "ph",
+      "in_degree": 1
+    },
+    {
+      "id": "kc-ph-097",
+      "title": "Cosmology from Finite Causal Memory",
+      "kind": "claim",
+      "base_relation": "refined_by_later_work",
+      "glosa_use": "skip",
+      "hub": "ph",
+      "in_degree": 1
+    },
+    {
+      "id": "kc-ph-098",
+      "title": "Time as Irreversible Causal Record A Mathematical Derivation from Causality and Passivity",
+      "kind": "claim",
+      "base_relation": "refined_by_later_work",
+      "glosa_use": "skip",
+      "hub": "ph",
+      "in_degree": 1
+    },
+    {
+      "id": "kc-ph-099",
+      "title": "Interactive Causal Memory Theory: Emergent Noise, Shock, and Record Formation in Multi-Agent Systems",
+      "kind": "claim",
+      "base_relation": "refined_by_later_work",
+      "glosa_use": "skip",
+      "hub": "ph",
+      "in_degree": 1
+    },
+    {
+      "id": "kc-ph-100",
+      "title": "Bounded Causal Influence as a Structural Constraint Causal Physics Note",
+      "kind": "method",
+      "base_relation": "refined_by_later_work",
+      "glosa_use": "skip",
+      "hub": "ph",
+      "in_degree": 1
+    },
+    {
+      "id": "kc-ph-101",
+      "title": "Telegraph-on-Graph Bottleneck Stress Test : Causal Physic Note",
+      "kind": "method",
+      "base_relation": "refined_by_later_work",
+      "glosa_use": "skip",
+      "hub": "ph",
+      "in_degree": 1
+    },
+    {
+      "id": "kc-ph-102",
+      "title": "Causal Memory Graph Framework An AI-Implementable Specification for Boundary-Aware Structural Graph Analysis",
+      "kind": "method",
+      "base_relation": "refined_by_later_work",
+      "glosa_use": "skip",
+      "hub": "ph",
+      "in_degree": 1
+    },
+    {
+      "id": "kc-ph-103",
+      "title": "Emergence of Power–Law Memory from Linear Spectral Superposition Necessity of Long–Time Non–Markovianity without Fractio",
+      "kind": "claim",
+      "base_relation": "open",
+      "glosa_use": "skip",
+      "hub": "ph",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-ph-104",
+      "title": "Spectral Representation of Causal Memory Dynamics: A Practical Guide for Implementation",
+      "kind": "method",
+      "base_relation": "refined_by_later_work",
+      "glosa_use": "skip",
+      "hub": "ph",
+      "in_degree": 1
+    },
+    {
+      "id": "kc-ph-105",
+      "title": "Causal Memory Program: Generator Update Note",
+      "kind": "method",
+      "base_relation": "refined_by_later_work",
+      "glosa_use": "skip",
+      "hub": "ph",
+      "in_degree": 1
+    },
+    {
+      "id": "kc-ph-106",
+      "title": "Causal Memory Gravity Seed",
+      "kind": "claim",
+      "base_relation": "refined_by_later_work",
+      "glosa_use": "skip",
+      "hub": "ph",
+      "in_degree": 1
+    },
+    {
+      "id": "kc-ph-107",
+      "title": "Causal Quantum Gravity",
+      "kind": "claim",
+      "base_relation": "refined_by_later_work",
+      "glosa_use": "skip",
+      "hub": "ph",
+      "in_degree": 1
+    },
+    {
+      "id": "kc-ph-108",
+      "title": "Causal Memory Admissibility (CMAP): A Structural Necessity Classication Discrete-First, Primitives-Grounded, Domain-Inde",
+      "kind": "claim",
+      "base_relation": "refined_by_later_work",
+      "glosa_use": "skip",
+      "hub": "ph",
+      "in_degree": 1
+    },
+    {
+      "id": "kc-ph-109",
+      "title": "PRFT v28 Master Standalone – Full Detailed Rewrite: Q3 Null-Cone Geometry, Dissipative Readout, and Adapter-Limited Solv",
+      "kind": "claim",
+      "base_relation": "holds",
+      "glosa_use": "already_in_glosa",
+      "hub": "ph",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-ph-110",
+      "title": "Pixel Gravity Field Theory: A Clocked Retained-Readout Framework for Field-to-Channel Computation",
+      "kind": "method",
+      "base_relation": "holds",
+      "glosa_use": "already_in_glosa",
+      "hub": "ph",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-ph-111",
+      "title": "Synthesis of the Information Universe: Relativity and Mass as Readouts of Retained Distinctions, Assembled from Classica",
+      "kind": "claim",
+      "base_relation": "holds",
+      "glosa_use": "already_in_glosa",
+      "hub": "ph",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-ph-112",
+      "title": "black-hole-merger-information: the Davies point and black-hole merger remnants — a crossing locus, the observed populati",
+      "kind": "claim",
+      "base_relation": "holds",
+      "glosa_use": "already_in_glosa",
+      "hub": "ph",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-ph-113",
+      "title": "The Discrete Retention Lagrangian: Damping from a Variational Principle Forced by an Information-Retention Axiom",
+      "kind": "claim",
+      "base_relation": "holds",
+      "glosa_use": "already_in_glosa",
+      "hub": "ph",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-ph-114",
+      "title": "The Mystery Ladder: Compressing the Weakness of Gravity to Three Open Atoms, with an Information Semantics for the Atom ",
+      "kind": "claim",
+      "base_relation": "holds",
+      "glosa_use": "adapt",
+      "hub": "ph",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-ph-115",
+      "title": "Retention–Hodge–Dirac Closure: A Discrete Information Criterion for Three-Dimensional Directional Feedback, with Five Ex",
+      "kind": "claim",
+      "base_relation": "holds",
+      "glosa_use": "adapt",
+      "hub": "ph",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-ph-116",
+      "title": "Transform-Free Inertia Methods for Generalized Banded Symmetric Eigenproblems",
+      "kind": "method",
+      "base_relation": "open",
+      "glosa_use": "skip",
+      "hub": "ph",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-se-001",
+      "title": "Descriptive-only comparison table — no outperformance claim across adjacent frameworks",
+      "kind": "rule",
+      "base_relation": "holds",
+      "glosa_use": "adopt",
+      "hub": "se",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-se-002",
+      "title": "Adjacent evidence is not evidence the intervention itself works — a standing caveat, stated once",
+      "kind": "rule",
+      "base_relation": "holds",
+      "glosa_use": "adopt",
+      "hub": "se",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-se-003",
+      "title": "Five-tier claim ladder for a social-enterprise management framework (Th-coqc through NI/Open)",
+      "kind": "rule",
+      "base_relation": "holds",
+      "glosa_use": "adopt",
+      "hub": "se",
+      "in_degree": 2
+    },
+    {
+      "id": "kc-se-004",
+      "title": "Unidentified values return NI, never zero — a readout-audit layer over every calculated claim",
+      "kind": "rule",
+      "base_relation": "holds",
+      "glosa_use": "adopt",
+      "hub": "se",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-se-005",
+      "title": "Readout non-equivalence in an enterprise's own data model — a channel-specific lossy map, not the state",
+      "kind": "definition",
+      "base_relation": "refined_by_later_work",
+      "glosa_use": "adapt",
+      "hub": "se",
+      "in_degree": 1
+    },
+    {
+      "id": "kc-se-006",
+      "title": "Reflexive practitioner-inquiry disclosure — using one's own organisation as illustration, and saying why",
+      "kind": "rule",
+      "base_relation": "holds",
+      "glosa_use": "adopt",
+      "hub": "se",
+      "in_degree": 1
+    },
+    {
+      "id": "kc-se-007",
+      "title": "Systematic prior-art review reporting \"partially anticipated, not found in formulation\" — not a novelty claim",
+      "kind": "method",
+      "base_relation": "holds",
+      "glosa_use": "adopt",
+      "hub": "se",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-se-008",
+      "title": "Candidate Forgetting — the crisis is not AI's answer, it is losing track that the answer was a candidate",
+      "kind": "claim",
+      "base_relation": "holds",
+      "glosa_use": "adopt",
+      "hub": "se",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-se-009",
+      "title": "From AI Governance to Epistemic Governance — govern the output's status, not only the system",
+      "kind": "rule",
+      "base_relation": "holds",
+      "glosa_use": "adopt",
+      "hub": "se",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-se-010",
+      "title": "Faith-based Cultural-Based Practitioners as a governance framework, not a claim about outcomes",
+      "kind": "method",
+      "base_relation": "outdated",
+      "glosa_use": "skip",
+      "hub": "se",
+      "in_degree": 1
+    },
+    {
+      "id": "kc-se-011",
+      "title": "SWSF policy brief — eight dimensions, four mechanisms, framework-integration method, no outcome claim",
+      "kind": "method",
+      "base_relation": "outdated",
+      "glosa_use": "skip",
+      "hub": "se",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-se-012",
+      "title": "Simulation-battery evidence for social-enterprise survival — finite runs, stated consistency with empirical rates",
+      "kind": "method",
+      "base_relation": "refined_by_later_work",
+      "glosa_use": "adapt",
+      "hub": "se",
+      "in_degree": 1
+    },
+    {
+      "id": "kc-tourism-001",
+      "title": "Premature Category Stabilization generalized as a scale-invariant mechanism, framework's own limits named",
+      "kind": "claim",
+      "base_relation": "holds",
+      "glosa_use": "skip",
+      "hub": "tourism",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-tourism-002",
+      "title": "Premature category stabilization — provider-side interpretation as the mechanism, not certification sufficiency",
+      "kind": "claim",
+      "base_relation": "open",
+      "glosa_use": "skip",
+      "hub": "tourism",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-tourism-003",
+      "title": "Explicit 'proves vs. still cannot explain' gap statement before advancing a new mechanism",
+      "kind": "method",
+      "base_relation": "holds",
+      "glosa_use": "adapt",
+      "hub": "tourism",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-tourism-004",
+      "title": "Behavioral dataset compiled with interpretation deliberately excluded from the record",
+      "kind": "method",
+      "base_relation": "holds",
+      "glosa_use": "already_in_glosa",
+      "hub": "tourism",
+      "in_degree": 1
+    },
+    {
+      "id": "kc-tourism-005",
+      "title": "Statistical dataset sourced from named third-party institutions, analysis explicitly withheld",
+      "kind": "method",
+      "base_relation": "holds",
+      "glosa_use": "already_in_glosa",
+      "hub": "tourism",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-tourism-006",
+      "title": "Cultural-Based Practitioner framework built from cross-national case studies, not a single-site claim",
+      "kind": "claim",
+      "base_relation": "open",
+      "glosa_use": "skip",
+      "hub": "tourism",
+      "in_degree": 0
+    },
+    {
+      "id": "kc-tourism-007",
+      "title": "Contribution explicitly typed as theoretical/analytical, empirical findings explicitly disclaimed",
+      "kind": "rule",
+      "base_relation": "holds",
+      "glosa_use": "already_in_glosa",
+      "hub": "tourism",
+      "in_degree": 0
+    }
+  ],
+  "edges": [
+    {
+      "from": "kc-base-001",
+      "to": "base",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-base-002",
+      "to": "base",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-base-003",
+      "to": "base",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-base-004",
+      "to": "base",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-base-005",
+      "to": "base",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-base-006",
+      "to": "base",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-base-007",
+      "to": "base",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-base-008",
+      "to": "base",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-base-009",
+      "to": "base",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-base-010",
+      "to": "base",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-base-011",
+      "to": "base",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-base-012",
+      "to": "base",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-base-013",
+      "to": "base",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-base-014",
+      "to": "base",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-base-015",
+      "to": "base",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-base-016",
+      "to": "base",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-base-017",
+      "to": "base",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-base-018",
+      "to": "base",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-base-019",
+      "to": "base",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-base-020",
+      "to": "base",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-base-021",
+      "to": "base",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-base-022",
+      "to": "base",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-base-023",
+      "to": "base",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-base-024",
+      "to": "base",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-base-025",
+      "to": "base",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-base-026",
+      "to": "base",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-base-027",
+      "to": "base",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-base-028",
+      "to": "base",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-base-029",
+      "to": "base",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-base-030",
+      "to": "base",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-base-031",
+      "to": "base",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-base-032",
+      "to": "base",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-base-033",
+      "to": "base",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-base-034",
+      "to": "base",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-base-035",
+      "to": "base",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-base-036",
+      "to": "base",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-base-037",
+      "to": "base",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-base-038",
+      "to": "base",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-base-039",
+      "to": "base",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-base-040",
+      "to": "base",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-base-041",
+      "to": "base",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-base-042",
+      "to": "base",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-ep-001",
+      "to": "kc-base-027",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-ep-002",
+      "to": "base",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-ep-003",
+      "to": "base",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-ep-047",
+      "to": "kc-ep-004",
+      "relation": "refines"
+    },
+    {
+      "from": "kc-ep-005",
+      "to": "base",
+      "relation": "challenges"
+    },
+    {
+      "from": "kc-base-009",
+      "to": "kc-ep-006",
+      "relation": "refines"
+    },
+    {
+      "from": "kc-base-015",
+      "to": "kc-ep-006",
+      "relation": "refines"
+    },
+    {
+      "from": "kc-base-017",
+      "to": "kc-ep-007",
+      "relation": "refines"
+    },
+    {
+      "from": "kc-base-018",
+      "to": "kc-ep-007",
+      "relation": "refines"
+    },
+    {
+      "from": "kc-ep-008",
+      "to": "kc-base-027",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-ep-009",
+      "to": "kc-base-001",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-ep-009",
+      "to": "kc-base-027",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-ep-010",
+      "to": "kc-base-006",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-base-012",
+      "to": "kc-ep-011",
+      "relation": "refines"
+    },
+    {
+      "from": "kc-ep-026",
+      "to": "kc-ep-011",
+      "relation": "refines"
+    },
+    {
+      "from": "kc-ep-012",
+      "to": "kc-base-038",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-ep-013",
+      "to": "kc-base-005",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-ep-014",
+      "to": "kc-base-005",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-ep-014",
+      "to": "kc-base-027",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-ep-015",
+      "to": "kc-base-027",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-ep-016",
+      "to": "base",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-ep-017",
+      "to": "base",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-ep-018",
+      "to": "base",
+      "relation": "challenges"
+    },
+    {
+      "from": "kc-ep-019",
+      "to": "base",
+      "relation": "challenges"
+    },
+    {
+      "from": "kc-ep-020",
+      "to": "base",
+      "relation": "challenges"
+    },
+    {
+      "from": "kc-ep-021",
+      "to": "kc-base-009",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-ep-021",
+      "to": "kc-base-026",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-ep-022",
+      "to": "kc-base-001",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-ep-022",
+      "to": "kc-base-027",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-ep-023",
+      "to": "kc-base-006",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-ep-023",
+      "to": "kc-base-020",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-ep-024",
+      "to": "kc-base-005",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-ep-025",
+      "to": "kc-base-035",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-ep-026",
+      "to": "kc-base-011",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-ep-027",
+      "to": "kc-base-005",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-ep-027",
+      "to": "kc-ep-024",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-base-029",
+      "to": "kc-ep-028",
+      "relation": "refines"
+    },
+    {
+      "from": "kc-base-033",
+      "to": "kc-ep-028",
+      "relation": "refines"
+    },
+    {
+      "from": "kc-ep-029",
+      "to": "kc-base-012",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-ep-029",
+      "to": "kc-ep-026",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-ep-030",
+      "to": "base",
+      "relation": "challenges"
+    },
+    {
+      "from": "kc-ep-031",
+      "to": "kc-base-016",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-ep-032",
+      "to": "kc-base-016",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-ep-032",
+      "to": "kc-ep-031",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-ep-033",
+      "to": "kc-base-009",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-ep-033",
+      "to": "kc-base-015",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-ep-033",
+      "to": "kc-base-032",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-ep-034",
+      "to": "base",
+      "relation": "challenges"
+    },
+    {
+      "from": "kc-ep-035",
+      "to": "kc-base-011",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-ep-036",
+      "to": "kc-base-007",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-ep-036",
+      "to": "kc-base-017",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-ep-037",
+      "to": "kc-base-009",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-ep-037",
+      "to": "kc-base-017",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-ep-038",
+      "to": "base",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-ep-039",
+      "to": "kc-ep-016",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-ep-040",
+      "to": "kc-ep-016",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-ep-040",
+      "to": "kc-ep-039",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-ep-041",
+      "to": "kc-base-035",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-ep-041",
+      "to": "kc-ep-051",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-ep-042",
+      "to": "kc-base-006",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-ep-043",
+      "to": "base",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-ep-044",
+      "to": "kc-base-035",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-ep-045",
+      "to": "kc-base-007",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-ep-045",
+      "to": "kc-base-021",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-ep-046",
+      "to": "kc-base-007",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-ep-046",
+      "to": "kc-base-025",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-ep-047",
+      "to": "kc-base-001",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-ep-048",
+      "to": "base",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-ep-049",
+      "to": "kc-base-007",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-ep-049",
+      "to": "kc-ep-048",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-ep-050",
+      "to": "kc-base-007",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-ep-051",
+      "to": "base",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-ep-052",
+      "to": "base",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-ai-001",
+      "to": "kc-base-001",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-ai-001",
+      "to": "kc-base-006",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-base-006",
+      "to": "kc-ai-002",
+      "relation": "refines"
+    },
+    {
+      "from": "kc-ai-003",
+      "to": "kc-base-001",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-ai-003",
+      "to": "kc-base-005",
+      "relation": "holds"
+    },
+    {
+      "from": "base",
+      "to": "kc-ai-004",
+      "relation": "refines"
+    },
+    {
+      "from": "kc-ai-005",
+      "to": "base",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-ai-006",
+      "to": "base",
+      "relation": "challenges"
+    },
+    {
+      "from": "kc-base-023",
+      "to": "kc-ai-007",
+      "relation": "refines"
+    },
+    {
+      "from": "kc-ai-008",
+      "to": "kc-base-001",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-base-024",
+      "to": "kc-ai-009",
+      "relation": "refines"
+    },
+    {
+      "from": "kc-ai-001",
+      "to": "kc-ai-010",
+      "relation": "refines"
+    },
+    {
+      "from": "base",
+      "to": "kc-ai-011",
+      "relation": "refines"
+    },
+    {
+      "from": "kc-ai-012",
+      "to": "kc-base-015",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-ai-013",
+      "to": "kc-base-005",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-ai-014",
+      "to": "kc-base-005",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-ai-015",
+      "to": "base",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-ai-016",
+      "to": "kc-ai-015",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-ai-017",
+      "to": "kc-base-001",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-ai-017",
+      "to": "kc-ai-018",
+      "relation": "refines"
+    },
+    {
+      "from": "kc-ai-019",
+      "to": "kc-base-001",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-base-008",
+      "to": "kc-ai-020",
+      "relation": "refines"
+    },
+    {
+      "from": "kc-ai-021",
+      "to": "kc-base-011",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-ai-001",
+      "to": "kc-ai-022",
+      "relation": "refines"
+    },
+    {
+      "from": "kc-ai-023",
+      "to": "base",
+      "relation": "challenges"
+    },
+    {
+      "from": "kc-ai-024",
+      "to": "base",
+      "relation": "challenges"
+    },
+    {
+      "from": "kc-ai-025",
+      "to": "base",
+      "relation": "challenges"
+    },
+    {
+      "from": "kc-ai-026",
+      "to": "base",
+      "relation": "challenges"
+    },
+    {
+      "from": "kc-ai-001",
+      "to": "kc-ai-027",
+      "relation": "supersedes"
+    },
+    {
+      "from": "kc-ai-019",
+      "to": "kc-ai-027",
+      "relation": "supersedes"
+    },
+    {
+      "from": "kc-base-001",
+      "to": "kc-ai-027",
+      "relation": "supersedes"
+    },
+    {
+      "from": "kc-aihp-001",
+      "to": "kc-base-007",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-aihp-001",
+      "to": "kc-base-035",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-aihp-002",
+      "to": "kc-base-025",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-aihp-002",
+      "to": "kc-base-035",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-aihp-003",
+      "to": "kc-base-008",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-aihp-003",
+      "to": "kc-base-039",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-aihp-004",
+      "to": "kc-base-001",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-aihp-004",
+      "to": "kc-base-027",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-aihp-005",
+      "to": "kc-base-001",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-aihp-005",
+      "to": "kc-base-006",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-aihp-006",
+      "to": "kc-base-035",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-aihp-006",
+      "to": "kc-base-039",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-aihp-007",
+      "to": "kc-base-027",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-aihp-008",
+      "to": "base",
+      "relation": "challenges"
+    },
+    {
+      "from": "kc-aihp-009",
+      "to": "base",
+      "relation": "challenges"
+    },
+    {
+      "from": "kc-aihp-010",
+      "to": "kc-base-001",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-aihp-010",
+      "to": "kc-base-007",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-aihp-011",
+      "to": "kc-base-001",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-aihp-011",
+      "to": "kc-base-006",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-aihp-012",
+      "to": "kc-base-013",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-aihp-013",
+      "to": "kc-base-004",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-aihp-014",
+      "to": "kc-base-004",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-base-007",
+      "to": "kc-aihp-015",
+      "relation": "refines"
+    },
+    {
+      "from": "kc-base-027",
+      "to": "kc-aihp-015",
+      "relation": "refines"
+    },
+    {
+      "from": "kc-aihp-015",
+      "to": "kc-aihp-016",
+      "relation": "refines"
+    },
+    {
+      "from": "kc-aihp-017",
+      "to": "kc-base-025",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-aihp-017",
+      "to": "kc-base-035",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-aihp-018",
+      "to": "kc-base-027",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-aihp-019",
+      "to": "kc-base-001",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-aihp-019",
+      "to": "kc-base-009",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-aihp-019",
+      "to": "kc-base-011",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-aihp-019",
+      "to": "kc-base-032",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-aihp-020",
+      "to": "kc-base-013",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-aihp-020",
+      "to": "kc-base-014",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-aihp-021",
+      "to": "kc-base-009",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-aihp-021",
+      "to": "kc-base-011",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-aihp-021",
+      "to": "kc-base-032",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-aihp-022",
+      "to": "kc-base-028",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-aihp-022",
+      "to": "kc-base-030",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-aihp-023",
+      "to": "kc-base-025",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-aihp-023",
+      "to": "kc-base-035",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-aihp-024",
+      "to": "kc-base-028",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-aihp-024",
+      "to": "kc-base-029",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-aihp-025",
+      "to": "kc-base-005",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-aihp-025",
+      "to": "kc-base-028",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-aihp-026",
+      "to": "kc-aihp-015",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-aihp-026",
+      "to": "kc-base-020",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-aihp-026",
+      "to": "kc-base-021",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-aihp-027",
+      "to": "kc-base-020",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-aihp-027",
+      "to": "kc-base-027",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-aihp-028",
+      "to": "kc-base-006",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-aihp-029",
+      "to": "kc-base-006",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-aihp-011",
+      "to": "kc-aihp-030",
+      "relation": "refines"
+    },
+    {
+      "from": "kc-aihp-023",
+      "to": "kc-aihp-030",
+      "relation": "refines"
+    },
+    {
+      "from": "kc-base-001",
+      "to": "kc-aihp-030",
+      "relation": "refines"
+    },
+    {
+      "from": "kc-base-027",
+      "to": "kc-aihp-030",
+      "relation": "refines"
+    },
+    {
+      "from": "kc-aihp-030",
+      "to": "kc-aihp-031",
+      "relation": "refines"
+    },
+    {
+      "from": "kc-base-008",
+      "to": "kc-aihp-031",
+      "relation": "refines"
+    },
+    {
+      "from": "kc-base-018",
+      "to": "kc-aihp-031",
+      "relation": "refines"
+    },
+    {
+      "from": "kc-base-007",
+      "to": "kc-aihp-032",
+      "relation": "refines"
+    },
+    {
+      "from": "kc-base-035",
+      "to": "kc-aihp-032",
+      "relation": "refines"
+    },
+    {
+      "from": "kc-aihp-011",
+      "to": "kc-aihp-033",
+      "relation": "refines"
+    },
+    {
+      "from": "kc-base-018",
+      "to": "kc-aihp-033",
+      "relation": "refines"
+    },
+    {
+      "from": "kc-he-001",
+      "to": "kc-base-007",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-he-002",
+      "to": "base",
+      "relation": "challenges"
+    },
+    {
+      "from": "kc-he-003",
+      "to": "kc-base-008",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-he-004",
+      "to": "kc-base-008",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-he-005",
+      "to": "base",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-he-006",
+      "to": "kc-base-008",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-he-007",
+      "to": "kc-base-024",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-he-008",
+      "to": "base",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-he-009",
+      "to": "base",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-he-010",
+      "to": "kc-base-024",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-he-011",
+      "to": "base",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-he-012",
+      "to": "base",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-he-013",
+      "to": "kc-base-025",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-he-014",
+      "to": "base",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-he-015",
+      "to": "kc-base-007",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-he-016",
+      "to": "base",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-he-017",
+      "to": "base",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-he-018",
+      "to": "base",
+      "relation": "challenges"
+    },
+    {
+      "from": "kc-he-019",
+      "to": "base",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-islam-001",
+      "to": "kc-base-025",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-islam-001",
+      "to": "kc-base-042",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-islam-002",
+      "to": "kc-base-001",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-islam-003",
+      "to": "kc-base-025",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-islam-004",
+      "to": "kc-base-017",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-islam-004",
+      "to": "kc-base-027",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-islam-005",
+      "to": "kc-base-008",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-islam-005",
+      "to": "kc-base-035",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-islam-006",
+      "to": "kc-base-039",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-islam-007",
+      "to": "kc-base-007",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-islam-007",
+      "to": "kc-base-025",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-islam-008",
+      "to": "kc-base-005",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-islam-009",
+      "to": "kc-base-007",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-islam-009",
+      "to": "kc-base-021",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-islam-010",
+      "to": "kc-base-008",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-islam-011",
+      "to": "kc-base-016",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-islam-011",
+      "to": "kc-base-018",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-islam-012",
+      "to": "kc-base-001",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-islam-012",
+      "to": "kc-base-020",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-islam-013",
+      "to": "kc-islam-012",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-islam-014",
+      "to": "kc-base-025",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-islam-015",
+      "to": "kc-base-039",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-islam-016",
+      "to": "kc-base-007",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-base-020",
+      "to": "kc-ph-001",
+      "relation": "supersedes"
+    },
+    {
+      "from": "kc-base-022",
+      "to": "kc-ph-001",
+      "relation": "supersedes"
+    },
+    {
+      "from": "kc-base-020",
+      "to": "kc-ph-002",
+      "relation": "supersedes"
+    },
+    {
+      "from": "kc-base-022",
+      "to": "kc-ph-002",
+      "relation": "supersedes"
+    },
+    {
+      "from": "kc-ph-003",
+      "to": "base",
+      "relation": "challenges"
+    },
+    {
+      "from": "kc-ph-004",
+      "to": "base",
+      "relation": "challenges"
+    },
+    {
+      "from": "kc-base-020",
+      "to": "kc-ph-005",
+      "relation": "supersedes"
+    },
+    {
+      "from": "kc-base-022",
+      "to": "kc-ph-005",
+      "relation": "supersedes"
+    },
+    {
+      "from": "kc-base-020",
+      "to": "kc-ph-006",
+      "relation": "supersedes"
+    },
+    {
+      "from": "kc-base-022",
+      "to": "kc-ph-006",
+      "relation": "supersedes"
+    },
+    {
+      "from": "kc-base-020",
+      "to": "kc-ph-007",
+      "relation": "supersedes"
+    },
+    {
+      "from": "kc-base-022",
+      "to": "kc-ph-007",
+      "relation": "supersedes"
+    },
+    {
+      "from": "kc-base-020",
+      "to": "kc-ph-008",
+      "relation": "supersedes"
+    },
+    {
+      "from": "kc-base-022",
+      "to": "kc-ph-008",
+      "relation": "supersedes"
+    },
+    {
+      "from": "kc-base-020",
+      "to": "kc-ph-009",
+      "relation": "supersedes"
+    },
+    {
+      "from": "kc-base-022",
+      "to": "kc-ph-009",
+      "relation": "supersedes"
+    },
+    {
+      "from": "kc-base-020",
+      "to": "kc-ph-010",
+      "relation": "supersedes"
+    },
+    {
+      "from": "kc-base-022",
+      "to": "kc-ph-010",
+      "relation": "supersedes"
+    },
+    {
+      "from": "kc-ph-011",
+      "to": "base",
+      "relation": "challenges"
+    },
+    {
+      "from": "kc-ph-012",
+      "to": "base",
+      "relation": "challenges"
+    },
+    {
+      "from": "kc-ph-013",
+      "to": "base",
+      "relation": "challenges"
+    },
+    {
+      "from": "kc-ph-014",
+      "to": "base",
+      "relation": "challenges"
+    },
+    {
+      "from": "kc-base-020",
+      "to": "kc-ph-015",
+      "relation": "supersedes"
+    },
+    {
+      "from": "kc-base-022",
+      "to": "kc-ph-015",
+      "relation": "supersedes"
+    },
+    {
+      "from": "kc-ph-016",
+      "to": "base",
+      "relation": "challenges"
+    },
+    {
+      "from": "kc-ph-017",
+      "to": "base",
+      "relation": "challenges"
+    },
+    {
+      "from": "kc-ph-018",
+      "to": "base",
+      "relation": "challenges"
+    },
+    {
+      "from": "kc-ph-019",
+      "to": "base",
+      "relation": "challenges"
+    },
+    {
+      "from": "kc-base-020",
+      "to": "kc-ph-020",
+      "relation": "supersedes"
+    },
+    {
+      "from": "kc-base-022",
+      "to": "kc-ph-020",
+      "relation": "supersedes"
+    },
+    {
+      "from": "kc-base-020",
+      "to": "kc-ph-021",
+      "relation": "supersedes"
+    },
+    {
+      "from": "kc-base-022",
+      "to": "kc-ph-021",
+      "relation": "supersedes"
+    },
+    {
+      "from": "kc-base-020",
+      "to": "kc-ph-022",
+      "relation": "supersedes"
+    },
+    {
+      "from": "kc-base-022",
+      "to": "kc-ph-022",
+      "relation": "supersedes"
+    },
+    {
+      "from": "kc-base-020",
+      "to": "kc-ph-023",
+      "relation": "supersedes"
+    },
+    {
+      "from": "kc-base-022",
+      "to": "kc-ph-023",
+      "relation": "supersedes"
+    },
+    {
+      "from": "kc-base-020",
+      "to": "kc-ph-024",
+      "relation": "supersedes"
+    },
+    {
+      "from": "kc-base-022",
+      "to": "kc-ph-024",
+      "relation": "supersedes"
+    },
+    {
+      "from": "kc-base-020",
+      "to": "kc-ph-025",
+      "relation": "supersedes"
+    },
+    {
+      "from": "kc-base-022",
+      "to": "kc-ph-025",
+      "relation": "supersedes"
+    },
+    {
+      "from": "kc-base-020",
+      "to": "kc-ph-026",
+      "relation": "supersedes"
+    },
+    {
+      "from": "kc-base-022",
+      "to": "kc-ph-026",
+      "relation": "supersedes"
+    },
+    {
+      "from": "kc-base-020",
+      "to": "kc-ph-027",
+      "relation": "supersedes"
+    },
+    {
+      "from": "kc-base-022",
+      "to": "kc-ph-027",
+      "relation": "supersedes"
+    },
+    {
+      "from": "kc-base-020",
+      "to": "kc-ph-028",
+      "relation": "supersedes"
+    },
+    {
+      "from": "kc-base-022",
+      "to": "kc-ph-028",
+      "relation": "supersedes"
+    },
+    {
+      "from": "kc-base-020",
+      "to": "kc-ph-029",
+      "relation": "supersedes"
+    },
+    {
+      "from": "kc-base-022",
+      "to": "kc-ph-029",
+      "relation": "supersedes"
+    },
+    {
+      "from": "kc-base-020",
+      "to": "kc-ph-030",
+      "relation": "supersedes"
+    },
+    {
+      "from": "kc-base-022",
+      "to": "kc-ph-030",
+      "relation": "supersedes"
+    },
+    {
+      "from": "kc-base-020",
+      "to": "kc-ph-031",
+      "relation": "supersedes"
+    },
+    {
+      "from": "kc-base-022",
+      "to": "kc-ph-031",
+      "relation": "supersedes"
+    },
+    {
+      "from": "kc-base-020",
+      "to": "kc-ph-032",
+      "relation": "supersedes"
+    },
+    {
+      "from": "kc-base-022",
+      "to": "kc-ph-032",
+      "relation": "supersedes"
+    },
+    {
+      "from": "kc-ph-033",
+      "to": "base",
+      "relation": "challenges"
+    },
+    {
+      "from": "kc-base-020",
+      "to": "kc-ph-034",
+      "relation": "supersedes"
+    },
+    {
+      "from": "kc-base-022",
+      "to": "kc-ph-034",
+      "relation": "supersedes"
+    },
+    {
+      "from": "kc-base-020",
+      "to": "kc-ph-035",
+      "relation": "supersedes"
+    },
+    {
+      "from": "kc-base-022",
+      "to": "kc-ph-035",
+      "relation": "supersedes"
+    },
+    {
+      "from": "kc-base-020",
+      "to": "kc-ph-036",
+      "relation": "supersedes"
+    },
+    {
+      "from": "kc-base-022",
+      "to": "kc-ph-036",
+      "relation": "supersedes"
+    },
+    {
+      "from": "kc-base-020",
+      "to": "kc-ph-037",
+      "relation": "supersedes"
+    },
+    {
+      "from": "kc-base-022",
+      "to": "kc-ph-037",
+      "relation": "supersedes"
+    },
+    {
+      "from": "kc-base-020",
+      "to": "kc-ph-038",
+      "relation": "supersedes"
+    },
+    {
+      "from": "kc-base-022",
+      "to": "kc-ph-038",
+      "relation": "supersedes"
+    },
+    {
+      "from": "kc-base-020",
+      "to": "kc-ph-039",
+      "relation": "supersedes"
+    },
+    {
+      "from": "kc-base-022",
+      "to": "kc-ph-039",
+      "relation": "supersedes"
+    },
+    {
+      "from": "kc-base-020",
+      "to": "kc-ph-040",
+      "relation": "supersedes"
+    },
+    {
+      "from": "kc-base-022",
+      "to": "kc-ph-040",
+      "relation": "supersedes"
+    },
+    {
+      "from": "kc-ph-041",
+      "to": "base",
+      "relation": "challenges"
+    },
+    {
+      "from": "kc-base-020",
+      "to": "kc-ph-042",
+      "relation": "supersedes"
+    },
+    {
+      "from": "kc-base-022",
+      "to": "kc-ph-042",
+      "relation": "supersedes"
+    },
+    {
+      "from": "kc-base-020",
+      "to": "kc-ph-043",
+      "relation": "supersedes"
+    },
+    {
+      "from": "kc-base-022",
+      "to": "kc-ph-043",
+      "relation": "supersedes"
+    },
+    {
+      "from": "kc-base-020",
+      "to": "kc-ph-044",
+      "relation": "supersedes"
+    },
+    {
+      "from": "kc-base-022",
+      "to": "kc-ph-044",
+      "relation": "supersedes"
+    },
+    {
+      "from": "kc-base-028",
+      "to": "kc-ph-045",
+      "relation": "refines"
+    },
+    {
+      "from": "kc-base-028",
+      "to": "kc-ph-046",
+      "relation": "refines"
+    },
+    {
+      "from": "kc-base-020",
+      "to": "kc-ph-047",
+      "relation": "supersedes"
+    },
+    {
+      "from": "kc-base-022",
+      "to": "kc-ph-047",
+      "relation": "supersedes"
+    },
+    {
+      "from": "kc-ph-048",
+      "to": "base",
+      "relation": "challenges"
+    },
+    {
+      "from": "kc-ph-049",
+      "to": "base",
+      "relation": "challenges"
+    },
+    {
+      "from": "kc-ph-050",
+      "to": "base",
+      "relation": "challenges"
+    },
+    {
+      "from": "kc-ph-051",
+      "to": "base",
+      "relation": "challenges"
+    },
+    {
+      "from": "kc-ph-052",
+      "to": "base",
+      "relation": "challenges"
+    },
+    {
+      "from": "kc-base-020",
+      "to": "kc-ph-053",
+      "relation": "supersedes"
+    },
+    {
+      "from": "kc-base-022",
+      "to": "kc-ph-053",
+      "relation": "supersedes"
+    },
+    {
+      "from": "kc-ph-054",
+      "to": "base",
+      "relation": "challenges"
+    },
+    {
+      "from": "kc-base-020",
+      "to": "kc-ph-055",
+      "relation": "supersedes"
+    },
+    {
+      "from": "kc-base-022",
+      "to": "kc-ph-055",
+      "relation": "supersedes"
+    },
+    {
+      "from": "kc-ph-056",
+      "to": "base",
+      "relation": "challenges"
+    },
+    {
+      "from": "kc-ph-057",
+      "to": "base",
+      "relation": "challenges"
+    },
+    {
+      "from": "kc-base-020",
+      "to": "kc-ph-058",
+      "relation": "supersedes"
+    },
+    {
+      "from": "kc-base-022",
+      "to": "kc-ph-058",
+      "relation": "supersedes"
+    },
+    {
+      "from": "kc-base-020",
+      "to": "kc-ph-059",
+      "relation": "supersedes"
+    },
+    {
+      "from": "kc-base-022",
+      "to": "kc-ph-059",
+      "relation": "supersedes"
+    },
+    {
+      "from": "kc-base-020",
+      "to": "kc-ph-060",
+      "relation": "supersedes"
+    },
+    {
+      "from": "kc-base-022",
+      "to": "kc-ph-060",
+      "relation": "supersedes"
+    },
+    {
+      "from": "kc-ph-061",
+      "to": "base",
+      "relation": "challenges"
+    },
+    {
+      "from": "kc-base-028",
+      "to": "kc-ph-062",
+      "relation": "refines"
+    },
+    {
+      "from": "kc-base-020",
+      "to": "kc-ph-063",
+      "relation": "supersedes"
+    },
+    {
+      "from": "kc-base-022",
+      "to": "kc-ph-063",
+      "relation": "supersedes"
+    },
+    {
+      "from": "kc-ph-064",
+      "to": "base",
+      "relation": "challenges"
+    },
+    {
+      "from": "kc-base-028",
+      "to": "kc-ph-065",
+      "relation": "refines"
+    },
+    {
+      "from": "kc-ph-066",
+      "to": "base",
+      "relation": "challenges"
+    },
+    {
+      "from": "kc-ph-067",
+      "to": "base",
+      "relation": "challenges"
+    },
+    {
+      "from": "kc-base-028",
+      "to": "kc-ph-068",
+      "relation": "refines"
+    },
+    {
+      "from": "kc-base-028",
+      "to": "kc-ph-069",
+      "relation": "refines"
+    },
+    {
+      "from": "kc-base-028",
+      "to": "kc-ph-070",
+      "relation": "refines"
+    },
+    {
+      "from": "kc-base-028",
+      "to": "kc-ph-071",
+      "relation": "refines"
+    },
+    {
+      "from": "kc-base-028",
+      "to": "kc-ph-072",
+      "relation": "refines"
+    },
+    {
+      "from": "kc-base-028",
+      "to": "kc-ph-073",
+      "relation": "refines"
+    },
+    {
+      "from": "kc-ph-074",
+      "to": "base",
+      "relation": "challenges"
+    },
+    {
+      "from": "kc-ph-075",
+      "to": "base",
+      "relation": "challenges"
+    },
+    {
+      "from": "kc-base-028",
+      "to": "kc-ph-076",
+      "relation": "refines"
+    },
+    {
+      "from": "kc-base-028",
+      "to": "kc-ph-077",
+      "relation": "refines"
+    },
+    {
+      "from": "kc-ph-078",
+      "to": "base",
+      "relation": "challenges"
+    },
+    {
+      "from": "kc-base-028",
+      "to": "kc-ph-079",
+      "relation": "refines"
+    },
+    {
+      "from": "kc-base-028",
+      "to": "kc-ph-080",
+      "relation": "refines"
+    },
+    {
+      "from": "kc-base-028",
+      "to": "kc-ph-081",
+      "relation": "refines"
+    },
+    {
+      "from": "kc-base-028",
+      "to": "kc-ph-082",
+      "relation": "refines"
+    },
+    {
+      "from": "kc-ph-083",
+      "to": "base",
+      "relation": "challenges"
+    },
+    {
+      "from": "kc-base-028",
+      "to": "kc-ph-084",
+      "relation": "refines"
+    },
+    {
+      "from": "kc-ph-085",
+      "to": "base",
+      "relation": "challenges"
+    },
+    {
+      "from": "kc-ph-086",
+      "to": "base",
+      "relation": "challenges"
+    },
+    {
+      "from": "kc-base-028",
+      "to": "kc-ph-087",
+      "relation": "refines"
+    },
+    {
+      "from": "kc-ph-088",
+      "to": "base",
+      "relation": "challenges"
+    },
+    {
+      "from": "kc-base-028",
+      "to": "kc-ph-089",
+      "relation": "refines"
+    },
+    {
+      "from": "kc-base-028",
+      "to": "kc-ph-090",
+      "relation": "refines"
+    },
+    {
+      "from": "kc-base-028",
+      "to": "kc-ph-091",
+      "relation": "refines"
+    },
+    {
+      "from": "kc-base-028",
+      "to": "kc-ph-092",
+      "relation": "refines"
+    },
+    {
+      "from": "kc-base-028",
+      "to": "kc-ph-093",
+      "relation": "refines"
+    },
+    {
+      "from": "kc-base-020",
+      "to": "kc-ph-094",
+      "relation": "supersedes"
+    },
+    {
+      "from": "kc-base-022",
+      "to": "kc-ph-094",
+      "relation": "supersedes"
+    },
+    {
+      "from": "kc-base-020",
+      "to": "kc-ph-095",
+      "relation": "supersedes"
+    },
+    {
+      "from": "kc-base-022",
+      "to": "kc-ph-095",
+      "relation": "supersedes"
+    },
+    {
+      "from": "kc-base-028",
+      "to": "kc-ph-096",
+      "relation": "refines"
+    },
+    {
+      "from": "kc-base-028",
+      "to": "kc-ph-097",
+      "relation": "refines"
+    },
+    {
+      "from": "kc-base-028",
+      "to": "kc-ph-098",
+      "relation": "refines"
+    },
+    {
+      "from": "kc-base-028",
+      "to": "kc-ph-099",
+      "relation": "refines"
+    },
+    {
+      "from": "kc-base-028",
+      "to": "kc-ph-100",
+      "relation": "refines"
+    },
+    {
+      "from": "kc-base-028",
+      "to": "kc-ph-101",
+      "relation": "refines"
+    },
+    {
+      "from": "kc-base-028",
+      "to": "kc-ph-102",
+      "relation": "refines"
+    },
+    {
+      "from": "kc-ph-103",
+      "to": "base",
+      "relation": "challenges"
+    },
+    {
+      "from": "kc-base-028",
+      "to": "kc-ph-104",
+      "relation": "refines"
+    },
+    {
+      "from": "kc-base-028",
+      "to": "kc-ph-105",
+      "relation": "refines"
+    },
+    {
+      "from": "kc-base-028",
+      "to": "kc-ph-106",
+      "relation": "refines"
+    },
+    {
+      "from": "kc-base-028",
+      "to": "kc-ph-107",
+      "relation": "refines"
+    },
+    {
+      "from": "kc-base-028",
+      "to": "kc-ph-108",
+      "relation": "refines"
+    },
+    {
+      "from": "kc-ph-109",
+      "to": "kc-base-011",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-ph-109",
+      "to": "kc-base-022",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-ph-110",
+      "to": "kc-base-011",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-ph-110",
+      "to": "kc-base-022",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-ph-111",
+      "to": "kc-base-011",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-ph-111",
+      "to": "kc-base-022",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-ph-112",
+      "to": "kc-base-011",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-ph-112",
+      "to": "kc-base-022",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-ph-113",
+      "to": "kc-base-011",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-ph-113",
+      "to": "kc-base-022",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-ph-114",
+      "to": "kc-base-011",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-ph-114",
+      "to": "kc-base-022",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-ph-115",
+      "to": "kc-base-011",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-ph-115",
+      "to": "kc-base-022",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-ph-116",
+      "to": "base",
+      "relation": "challenges"
+    },
+    {
+      "from": "kc-se-001",
+      "to": "kc-base-038",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-se-002",
+      "to": "kc-base-032",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-se-002",
+      "to": "kc-base-034",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-se-003",
+      "to": "kc-base-007",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-se-004",
+      "to": "kc-base-016",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-base-020",
+      "to": "kc-se-005",
+      "relation": "refines"
+    },
+    {
+      "from": "kc-se-006",
+      "to": "kc-base-027",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-se-006",
+      "to": "kc-he-001",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-se-007",
+      "to": "base",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-se-008",
+      "to": "kc-base-001",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-se-009",
+      "to": "kc-base-035",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-se-010",
+      "to": "kc-base-007",
+      "relation": "outdated_by"
+    },
+    {
+      "from": "kc-se-010",
+      "to": "kc-base-038",
+      "relation": "outdated_by"
+    },
+    {
+      "from": "kc-se-010",
+      "to": "kc-se-003",
+      "relation": "outdated_by"
+    },
+    {
+      "from": "kc-se-010",
+      "to": "kc-se-006",
+      "relation": "outdated_by"
+    },
+    {
+      "from": "kc-se-011",
+      "to": "kc-se-003",
+      "relation": "outdated_by"
+    },
+    {
+      "from": "kc-se-011",
+      "to": "kc-se-010",
+      "relation": "outdated_by"
+    },
+    {
+      "from": "kc-se-003",
+      "to": "kc-se-012",
+      "relation": "refines"
+    },
+    {
+      "from": "kc-tourism-001",
+      "to": "kc-base-025",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-tourism-001",
+      "to": "kc-base-031",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-tourism-002",
+      "to": "base",
+      "relation": "challenges"
+    },
+    {
+      "from": "kc-tourism-003",
+      "to": "kc-base-025",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-tourism-003",
+      "to": "kc-base-036",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-tourism-004",
+      "to": "kc-base-025",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-tourism-005",
+      "to": "kc-base-025",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-tourism-005",
+      "to": "kc-tourism-004",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-tourism-006",
+      "to": "base",
+      "relation": "challenges"
+    },
+    {
+      "from": "kc-tourism-007",
+      "to": "kc-base-038",
+      "relation": "holds"
+    },
+    {
+      "from": "kc-base-001",
+      "to": "FOUNDATION",
+      "relation": "supports"
+    },
+    {
+      "from": "kc-base-002",
+      "to": "FOUNDATION",
+      "relation": "supports"
+    },
+    {
+      "from": "kc-base-003",
+      "to": "FOUNDATION",
+      "relation": "supports"
+    },
+    {
+      "from": "kc-base-004",
+      "to": "FOUNDATION",
+      "relation": "supports"
+    },
+    {
+      "from": "kc-base-005",
+      "to": "FOUNDATION",
+      "relation": "supports"
+    },
+    {
+      "from": "kc-base-006",
+      "to": "FOUNDATION",
+      "relation": "supports"
+    },
+    {
+      "from": "kc-base-008",
+      "to": "FOUNDATION",
+      "relation": "supports"
+    },
+    {
+      "from": "kc-base-009",
+      "to": "FOUNDATION",
+      "relation": "supports"
+    },
+    {
+      "from": "kc-base-014",
+      "to": "FOUNDATION",
+      "relation": "supports"
+    },
+    {
+      "from": "kc-base-015",
+      "to": "FOUNDATION",
+      "relation": "supports"
+    },
+    {
+      "from": "kc-base-016",
+      "to": "FOUNDATION",
+      "relation": "supports"
+    },
+    {
+      "from": "kc-base-017",
+      "to": "FOUNDATION",
+      "relation": "supports"
+    },
+    {
+      "from": "kc-base-018",
+      "to": "FOUNDATION",
+      "relation": "supports"
+    },
+    {
+      "from": "kc-base-019",
+      "to": "FOUNDATION",
+      "relation": "supports"
+    },
+    {
+      "from": "kc-base-020",
+      "to": "FOUNDATION",
+      "relation": "supports"
+    },
+    {
+      "from": "kc-base-021",
+      "to": "FOUNDATION",
+      "relation": "supports"
+    },
+    {
+      "from": "kc-base-023",
+      "to": "FOUNDATION",
+      "relation": "supports"
+    },
+    {
+      "from": "kc-base-024",
+      "to": "FOUNDATION",
+      "relation": "supports"
+    },
+    {
+      "from": "kc-base-025",
+      "to": "FOUNDATION",
+      "relation": "supports"
+    },
+    {
+      "from": "kc-base-026",
+      "to": "FOUNDATION",
+      "relation": "supports"
+    },
+    {
+      "from": "kc-base-027",
+      "to": "FOUNDATION",
+      "relation": "supports"
+    },
+    {
+      "from": "kc-base-029",
+      "to": "FOUNDATION",
+      "relation": "supports"
+    },
+    {
+      "from": "kc-base-031",
+      "to": "FOUNDATION",
+      "relation": "supports"
+    },
+    {
+      "from": "kc-base-032",
+      "to": "FOUNDATION",
+      "relation": "supports"
+    },
+    {
+      "from": "kc-base-034",
+      "to": "FOUNDATION",
+      "relation": "supports"
+    },
+    {
+      "from": "kc-base-036",
+      "to": "FOUNDATION",
+      "relation": "supports"
+    },
+    {
+      "from": "kc-base-037",
+      "to": "FOUNDATION",
+      "relation": "supports"
+    },
+    {
+      "from": "kc-base-038",
+      "to": "FOUNDATION",
+      "relation": "supports"
+    },
+    {
+      "from": "kc-base-039",
+      "to": "FOUNDATION",
+      "relation": "supports"
+    },
+    {
+      "from": "kc-base-040",
+      "to": "FOUNDATION",
+      "relation": "supports"
+    },
+    {
+      "from": "kc-base-041",
+      "to": "FOUNDATION",
+      "relation": "supports"
+    },
+    {
+      "from": "kc-base-042",
+      "to": "FOUNDATION",
+      "relation": "supports"
+    },
+    {
+      "from": "kc-ep-001",
+      "to": "FOUNDATION",
+      "relation": "supports"
+    },
+    {
+      "from": "kc-ep-004",
+      "to": "FOUNDATION",
+      "relation": "supports"
+    },
+    {
+      "from": "kc-ep-008",
+      "to": "FOUNDATION",
+      "relation": "supports"
+    },
+    {
+      "from": "kc-ep-010",
+      "to": "FOUNDATION",
+      "relation": "supports"
+    },
+    {
+      "from": "kc-ep-012",
+      "to": "FOUNDATION",
+      "relation": "supports"
+    },
+    {
+      "from": "kc-ep-013",
+      "to": "FOUNDATION",
+      "relation": "supports"
+    },
+    {
+      "from": "kc-ep-014",
+      "to": "FOUNDATION",
+      "relation": "supports"
+    },
+    {
+      "from": "kc-ep-016",
+      "to": "FOUNDATION",
+      "relation": "supports"
+    },
+    {
+      "from": "kc-ep-021",
+      "to": "FOUNDATION",
+      "relation": "supports"
+    },
+    {
+      "from": "kc-ep-023",
+      "to": "FOUNDATION",
+      "relation": "supports"
+    },
+    {
+      "from": "kc-ep-024",
+      "to": "FOUNDATION",
+      "relation": "supports"
+    },
+    {
+      "from": "kc-ep-025",
+      "to": "FOUNDATION",
+      "relation": "supports"
+    },
+    {
+      "from": "kc-ep-026",
+      "to": "FOUNDATION",
+      "relation": "supports"
+    },
+    {
+      "from": "kc-ep-027",
+      "to": "FOUNDATION",
+      "relation": "supports"
+    },
+    {
+      "from": "kc-ep-033",
+      "to": "FOUNDATION",
+      "relation": "supports"
+    },
+    {
+      "from": "kc-ep-035",
+      "to": "FOUNDATION",
+      "relation": "supports"
+    },
+    {
+      "from": "kc-ep-036",
+      "to": "FOUNDATION",
+      "relation": "supports"
+    },
+    {
+      "from": "kc-ep-037",
+      "to": "FOUNDATION",
+      "relation": "supports"
+    },
+    {
+      "from": "kc-ep-038",
+      "to": "FOUNDATION",
+      "relation": "supports"
+    },
+    {
+      "from": "kc-ep-041",
+      "to": "FOUNDATION",
+      "relation": "supports"
+    },
+    {
+      "from": "kc-ep-042",
+      "to": "FOUNDATION",
+      "relation": "supports"
+    },
+    {
+      "from": "kc-ep-043",
+      "to": "FOUNDATION",
+      "relation": "supports"
+    },
+    {
+      "from": "kc-ep-044",
+      "to": "FOUNDATION",
+      "relation": "supports"
+    },
+    {
+      "from": "kc-ep-045",
+      "to": "FOUNDATION",
+      "relation": "supports"
+    },
+    {
+      "from": "kc-ep-046",
+      "to": "FOUNDATION",
+      "relation": "supports"
+    },
+    {
+      "from": "kc-ep-047",
+      "to": "FOUNDATION",
+      "relation": "supports"
+    },
+    {
+      "from": "kc-ep-048",
+      "to": "FOUNDATION",
+      "relation": "supports"
+    },
+    {
+      "from": "kc-ep-049",
+      "to": "FOUNDATION",
+      "relation": "supports"
+    },
+    {
+      "from": "kc-ep-050",
+      "to": "FOUNDATION",
+      "relation": "supports"
+    },
+    {
+      "from": "kc-ep-051",
+      "to": "FOUNDATION",
+      "relation": "supports"
+    },
+    {
+      "from": "kc-ep-052",
+      "to": "FOUNDATION",
+      "relation": "supports"
+    },
+    {
+      "from": "kc-ai-001",
+      "to": "FOUNDATION",
+      "relation": "supports"
+    },
+    {
+      "from": "kc-ai-002",
+      "to": "FOUNDATION",
+      "relation": "supports"
+    },
+    {
+      "from": "kc-ai-003",
+      "to": "FOUNDATION",
+      "relation": "supports"
+    },
+    {
+      "from": "kc-ai-004",
+      "to": "FOUNDATION",
+      "relation": "supports"
+    },
+    {
+      "from": "kc-ai-007",
+      "to": "FOUNDATION",
+      "relation": "supports"
+    },
+    {
+      "from": "kc-ai-008",
+      "to": "FOUNDATION",
+      "relation": "supports"
+    },
+    {
+      "from": "kc-ai-009",
+      "to": "FOUNDATION",
+      "relation": "supports"
+    },
+    {
+      "from": "kc-ai-010",
+      "to": "FOUNDATION",
+      "relation": "supports"
+    },
+    {
+      "from": "kc-ai-011",
+      "to": "FOUNDATION",
+      "relation": "supports"
+    },
+    {
+      "from": "kc-ai-012",
+      "to": "FOUNDATION",
+      "relation": "supports"
+    },
+    {
+      "from": "kc-ai-013",
+      "to": "FOUNDATION",
+      "relation": "supports"
+    },
+    {
+      "from": "kc-ai-014",
+      "to": "FOUNDATION",
+      "relation": "supports"
+    },
+    {
+      "from": "kc-ai-015",
+      "to": "FOUNDATION",
+      "relation": "supports"
+    },
+    {
+      "from": "kc-ai-017",
+      "to": "FOUNDATION",
+      "relation": "supports"
+    },
+    {
+      "from": "kc-ai-018",
+      "to": "FOUNDATION",
+      "relation": "supports"
+    },
+    {
+      "from": "kc-ai-019",
+      "to": "FOUNDATION",
+      "relation": "supports"
+    },
+    {
+      "from": "kc-ai-020",
+      "to": "FOUNDATION",
+      "relation": "supports"
+    },
+    {
+      "from": "kc-ai-021",
+      "to": "FOUNDATION",
+      "relation": "supports"
+    },
+    {
+      "from": "kc-ai-022",
+      "to": "FOUNDATION",
+      "relation": "supports"
+    },
+    {
+      "from": "kc-aihp-004",
+      "to": "FOUNDATION",
+      "relation": "supports"
+    },
+    {
+      "from": "kc-aihp-005",
+      "to": "FOUNDATION",
+      "relation": "supports"
+    },
+    {
+      "from": "kc-aihp-006",
+      "to": "FOUNDATION",
+      "relation": "supports"
+    },
+    {
+      "from": "kc-aihp-010",
+      "to": "FOUNDATION",
+      "relation": "supports"
+    },
+    {
+      "from": "kc-aihp-011",
+      "to": "FOUNDATION",
+      "relation": "supports"
+    },
+    {
+      "from": "kc-aihp-012",
+      "to": "FOUNDATION",
+      "relation": "supports"
+    },
+    {
+      "from": "kc-aihp-013",
+      "to": "FOUNDATION",
+      "relation": "supports"
+    },
+    {
+      "from": "kc-aihp-014",
+      "to": "FOUNDATION",
+      "relation": "supports"
+    },
+    {
+      "from": "kc-aihp-018",
+      "to": "FOUNDATION",
+      "relation": "supports"
+    },
+    {
+      "from": "kc-aihp-019",
+      "to": "FOUNDATION",
+      "relation": "supports"
+    },
+    {
+      "from": "kc-aihp-020",
+      "to": "FOUNDATION",
+      "relation": "supports"
+    },
+    {
+      "from": "kc-aihp-023",
+      "to": "FOUNDATION",
+      "relation": "supports"
+    },
+    {
+      "from": "kc-aihp-026",
+      "to": "FOUNDATION",
+      "relation": "supports"
+    },
+    {
+      "from": "kc-he-001",
+      "to": "FOUNDATION",
+      "relation": "supports"
+    },
+    {
+      "from": "kc-he-002",
+      "to": "FOUNDATION",
+      "relation": "supports"
+    },
+    {
+      "from": "kc-he-004",
+      "to": "FOUNDATION",
+      "relation": "supports"
+    },
+    {
+      "from": "kc-he-005",
+      "to": "FOUNDATION",
+      "relation": "supports"
+    },
+    {
+      "from": "kc-he-006",
+      "to": "FOUNDATION",
+      "relation": "supports"
+    },
+    {
+      "from": "kc-he-007",
+      "to": "FOUNDATION",
+      "relation": "supports"
+    },
+    {
+      "from": "kc-he-010",
+      "to": "FOUNDATION",
+      "relation": "supports"
+    },
+    {
+      "from": "kc-he-011",
+      "to": "FOUNDATION",
+      "relation": "supports"
+    },
+    {
+      "from": "kc-he-013",
+      "to": "FOUNDATION",
+      "relation": "supports"
+    },
+    {
+      "from": "kc-he-015",
+      "to": "FOUNDATION",
+      "relation": "supports"
+    },
+    {
+      "from": "kc-he-016",
+      "to": "FOUNDATION",
+      "relation": "supports"
+    },
+    {
+      "from": "kc-he-017",
+      "to": "FOUNDATION",
+      "relation": "supports"
+    },
+    {
+      "from": "kc-he-019",
+      "to": "FOUNDATION",
+      "relation": "supports"
+    },
+    {
+      "from": "kc-islam-002",
+      "to": "FOUNDATION",
+      "relation": "supports"
+    },
+    {
+      "from": "kc-islam-003",
+      "to": "FOUNDATION",
+      "relation": "supports"
+    },
+    {
+      "from": "kc-islam-004",
+      "to": "FOUNDATION",
+      "relation": "supports"
+    },
+    {
+      "from": "kc-islam-005",
+      "to": "FOUNDATION",
+      "relation": "supports"
+    },
+    {
+      "from": "kc-islam-006",
+      "to": "FOUNDATION",
+      "relation": "supports"
+    },
+    {
+      "from": "kc-islam-007",
+      "to": "FOUNDATION",
+      "relation": "supports"
+    },
+    {
+      "from": "kc-islam-008",
+      "to": "FOUNDATION",
+      "relation": "supports"
+    },
+    {
+      "from": "kc-islam-009",
+      "to": "FOUNDATION",
+      "relation": "supports"
+    },
+    {
+      "from": "kc-islam-010",
+      "to": "FOUNDATION",
+      "relation": "supports"
+    },
+    {
+      "from": "kc-islam-011",
+      "to": "FOUNDATION",
+      "relation": "supports"
+    },
+    {
+      "from": "kc-islam-012",
+      "to": "FOUNDATION",
+      "relation": "supports"
+    },
+    {
+      "from": "kc-islam-013",
+      "to": "FOUNDATION",
+      "relation": "supports"
+    },
+    {
+      "from": "kc-islam-014",
+      "to": "FOUNDATION",
+      "relation": "supports"
+    },
+    {
+      "from": "kc-islam-016",
+      "to": "FOUNDATION",
+      "relation": "supports"
+    },
+    {
+      "from": "kc-ph-114",
+      "to": "FOUNDATION",
+      "relation": "supports"
+    },
+    {
+      "from": "kc-ph-115",
+      "to": "FOUNDATION",
+      "relation": "supports"
+    },
+    {
+      "from": "kc-se-001",
+      "to": "FOUNDATION",
+      "relation": "supports"
+    },
+    {
+      "from": "kc-se-002",
+      "to": "FOUNDATION",
+      "relation": "supports"
+    },
+    {
+      "from": "kc-se-003",
+      "to": "FOUNDATION",
+      "relation": "supports"
+    },
+    {
+      "from": "kc-se-004",
+      "to": "FOUNDATION",
+      "relation": "supports"
+    },
+    {
+      "from": "kc-se-005",
+      "to": "FOUNDATION",
+      "relation": "supports"
+    },
+    {
+      "from": "kc-se-006",
+      "to": "FOUNDATION",
+      "relation": "supports"
+    },
+    {
+      "from": "kc-se-007",
+      "to": "FOUNDATION",
+      "relation": "supports"
+    },
+    {
+      "from": "kc-se-008",
+      "to": "FOUNDATION",
+      "relation": "supports"
+    },
+    {
+      "from": "kc-se-009",
+      "to": "FOUNDATION",
+      "relation": "supports"
+    },
+    {
+      "from": "kc-se-012",
+      "to": "FOUNDATION",
+      "relation": "supports"
+    },
+    {
+      "from": "kc-tourism-003",
+      "to": "FOUNDATION",
+      "relation": "supports"
+    }
+  ]
+}

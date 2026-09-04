@@ -33,6 +33,22 @@ citations:
       # Crossref/Retraction Watch check result at freeze time; UNCHECKED is honest, not silently
       # treated as CLEAR
     dialogue_table_stance: agrees | disagrees | orthogonal | undetermined
+    # --- claim-tier intake flag (NEW v0.6, design/FOUNDATION_v0.6_PATCH.md §4 — PENDING FOUNDER
+    # DECISION: thin-layer-scope-confirmation, not yet ratified) -------------------------------
+    intake_tier: request_tier | not_flagged   # default not_flagged. request_tier = this source's
+                                              # own genre would normally suppress an AACODS
+                                              # trace-to-original+appraise pass (e.g. a policy
+                                              # brief, grey literature, an anecdotal/expert/
+                                              # local-knowledge account) -- requests a tier
+                                              # assignment, never rejects the source outright.
+    intake_tier_reason: null                  # required non-empty string when intake_tier ==
+                                              # request_tier; a flagged-and-tiered row is distinct
+                                              # from a rejected row (kernel rule 22,
+                                              # INTAKE-TIER-UNTIERED).
+    global_south_exempt: false                 # true suppresses the D-LIT-* suspicion framing --
+                                              # Global South anecdotal/expert/local-knowledge
+                                              # evidence genres are never automatically suspect by
+                                              # the intake_tier flag alone.
     # --- diversity dimensions (request 35e — recorded per source, aggregated below) -----------
     diversity:
       language: en | th | other
@@ -120,5 +136,22 @@ gate:
 
 disclaimers_emitted: []   # D-CITATION-UNVERIFIED, D-LIT-MODE, D-LIT-NOT-OBTAINED,
                           # D-LIT-CONCENTRATED, D-DVP-NOT-K2, D-COMPARISON, D-BLACKBOX-NOTE (§4)
+
+# --- discovery-routing extension (NEW v0.6, design/FOUNDATION_v0.6_PATCH.md §23 — PENDING
+# FOUNDER DECISION: discovery-routing-stage-adoption, not yet ratified) ------------------------
+discovery_routing:
+  used: false                              # default false. When true, this L1-L6 pipeline was
+                                            # preceded by a discovery-routing stage: the human
+                                            # retains ownership of the question; the AI
+                                            # recursively decomposes it into candidate
+                                            # sub-questions and gates each one before it enters L1.
+                                            # An EXTENSION, never a replacement -- every candidate
+                                            # that survives the gate still runs the full L1-L6
+                                            # pipeline unchanged (kernel rule 25,
+                                            # DISCOVERY-CANDIDATE-UNGATED).
+  candidate_questions: []                  # [string] -- every sub-question the AI proposed
+  k_epi_gate_log: []                       # [{question, gated_out: bool, reason}] -- required
+                                            # one row per candidate_questions entry before that
+                                            # candidate may enter L1, whenever used == true
 
 human_owner: string, minLength 1

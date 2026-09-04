@@ -2,13 +2,13 @@
 
 # methodology/ — protocol card index (P0–P14)
 
-One card = one file, one rule, prose only (`design/REPO_SPEC_v0.5.md` §"methodology/", L1). A
+One card = one file, one rule, prose only (`design/REPO_SPEC_v0.6.md` §"methodology/", L1). A
 protocol card narrates a rule; it never redeclares a field name — every field a card mentions is
 defined once, in the matching `schema/*.schema.json` file (one-fact-one-home, request 21). Machine-
 read rule *content* (disclaimer wording, genre-router tables, contaminated-concept table) lives
 under `methodology/data/`, cited by these cards, never restated inline.
 
-Full spine and schema: `design/FOUNDATION_v0.5.md` §2 (the round trip), §3 (the claim card), §4
+Full spine and schema: `design/FOUNDATION_v0.6.md` §2 (the round trip), §3 (the claim card), §4
 (tier/independence/K-state), §5 (disclaimer catalogue), §6 (genre router), §7 (gates/MIMCG/
 citation), §8 (one-fact-one-home layout), §9 (callable layer).
 
@@ -33,7 +33,7 @@ usually one CLI verb, e.g. `./cli/glosa intake new --project <name> --human-owne
 
 ## Owned by the other builder (not written in this batch)
 
-Per `design/REPO_SPEC_v0.5.md`'s methodology tree, cards P8–P14 (and the separately-tracked P15)
+Per `design/REPO_SPEC_v0.6.md`'s methodology tree, cards P8–P14 (and the separately-tracked P15)
 are owned by the other builder working this task in parallel. Listed here only as an index pointer
 — their content, rationale, and citations belong in their own files, not restated here:
 
@@ -66,7 +66,7 @@ above. Not silently reconciled here; a future pass should renumber one of the tw
 ## Flagged, not silently reconciled: filename numbering variance
 
 This batch's task instruction named files `P00_lens.md` … `P07_ai_fill_disclosure.md` (two-digit
-`P0`), while `design/REPO_SPEC_v0.5.md`'s methodology tree and the plugin `SKILL.md` pointers it
+`P0`), while `design/REPO_SPEC_v0.6.md`'s methodology tree and the plugin `SKILL.md` pointers it
 lists (e.g. `glosa-intake/SKILL.md → cites methodology/P2_intake.md`) use single-digit names
 (`P2_intake.md`, not `P02_intake.md`) for cards P0–P9. This batch follows the task instruction's
 exact filenames (`P00`–`P07`) as given. The two conventions do not yet resolve to the same file
@@ -78,7 +78,7 @@ built under.
 ## Cross-card invariants (apply to every card above, this batch included)
 
 - Every card's "why" cites a real founder ruling or reviewer finding from
-  `design/FOUNDATION_v0.5.md` or `design/HANDOFF_2026-09-04_founding-meeting.md` — never an
+  `design/FOUNDATION_v0.6.md` or `design/HANDOFF_2026-09-04_founding-meeting.md` — never an
   invented incident.
 - No card redeclares a schema field name — a card that needs to mention a field cites
   `schema/<name>.schema.json`, one home.

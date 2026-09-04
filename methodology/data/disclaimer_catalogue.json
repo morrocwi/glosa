@@ -8,7 +8,10 @@
       "design/FOUNDATION_v0.5.md Appendix A NC-64 (self-experience id)"
     ],
     "trigger_grammar_doc": "methodology/data/README.md#trigger-mini-grammar",
-    "generated": "2026-09-04"
+    "generated": "2026-09-04",
+    "_todo_pending_founder": [
+      "TODO(kernel.pcs-red-flag): design/FOUNDATION_v0.6_PATCH.md §6 -- Premature Category Stabilization (PCS) as a new contaminated-concept-table row (rule24/24w, PCS-JOINT-CONDITION), fires only when closure-timing AND absence-of-adaptation hold jointly. Pending-founder (PCS-scoping-confirmation); NOT built this pass."
+    ]
   },
   "disclaimers": [
     {

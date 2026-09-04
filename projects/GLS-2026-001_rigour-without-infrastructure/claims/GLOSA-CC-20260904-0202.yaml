@@ -194,9 +194,9 @@ five_questions:
   tested:
     evidence_relations:
       - evidence_id: cite-own-readout-condition-h2-002
-        bearing: SUPPORTS
+        bearing: NEUTRAL
         independence_class: I3
-        strength: "weak -- DIRECT_QUOTATION scope but indirect/limited support only (route R3 downgrade), same-lineage source (this project's own Readout Condition paper), not independent confirmation"
+        strength: "context (own lineage, not independent)"
         citation_ref: cite-own-readout-condition-h2-002
         review_mode: DECORRELATED_AI_ROUTE
         route_id: codex
@@ -206,14 +206,17 @@ five_questions:
           The Readout Condition's own E-A-D (existence/attribution/disclosure) architecture is a
           claim-level structure a single claim can carry. Cross-vendor review (route R3) found
           "directly supports H2's core mechanism" inflated: the passage supports source-relative
-          warrant architecture, not explicitly "rigour" or institutional non-conferment; downgraded
-          from moderate/direct to weak/indirect support. SAME-LINEAGE (this project's own prior
-          paper) -- read as context/same-lineage restatement, not independent SUPPORT
-          (h2/citations/cite-own-readout-condition-h2-002.yaml, .i3.json bearing SUPPORTS).
+          warrant architecture, not explicitly "rigour" or institutional non-conferment.
+          SAME-LINEAGE (this project's own prior paper) -- per FOUNDATION_v0.6 K-C3, an own-lineage
+          source may not carry bearing SUPPORTS; downgraded from SUPPORTS (weak/indirect) to
+          NEUTRAL/context, read as own-lineage restatement, not independent SUPPORT
+          (h2/citations/cite-own-readout-condition-h2-002.yaml, .i3.json bearing SUPPORTS --
+          i3.json's own bearing is a route-level relevance tag, not this card's evidentiary
+          bearing).
       - evidence_id: cite-own-written-ai-h2-001
-        bearing: SUPPORTS
+        bearing: NEUTRAL
         independence_class: I3
-        strength: "moderate -- DIRECT_QUOTATION scope, same-lineage source, not independent confirmation"
+        strength: "context (own lineage, not independent)"
         citation_ref: cite-own-written-ai-h2-001
         review_mode: DECORRELATED_AI_ROUTE
         route_id: codex
@@ -222,9 +225,11 @@ five_questions:
         notes: >-
           States that institutional authority is "derivative from epistemic work, not magical
           pedigree" -- route R3 confirmed this directly supports H2's institutional-authority-as-
-          derivative component. SAME-LINEAGE (this project's own prior paper) -- read as
-          context/same-lineage restatement of the same authorial position, not independent
-          confirmation of H2 (h2/citations/cite-own-written-ai-h2-001.yaml).
+          derivative component. SAME-LINEAGE (this project's own prior paper) -- per
+          FOUNDATION_v0.6 K-C3, an own-lineage source may not carry bearing SUPPORTS; downgraded
+          from SUPPORTS (moderate) to NEUTRAL/context, read as own-lineage restatement of the same
+          authorial position, not independent confirmation of H2
+          (h2/citations/cite-own-written-ai-h2-001.yaml).
       - evidence_id: cite-own-civilization-of-knowledge-h2-007
         bearing: CHALLENGES
         independence_class: I3
@@ -298,6 +303,20 @@ five_questions:
           downgraded from moderate/direct to weak/indirect, `notes` rewritten to state the
           narrower bearing explicitly. The other two relations' bearings were confirmed by R3 as
           acceptable and left as SUPPORTS/CHALLENGES with same-lineage notes added.
+      - by: "rule 28 (v0.3 kernel, `glosa claim validate --citation-cards`)"
+        date: "2026-09-05"
+        content: >-
+          rule 28 (v0.3 kernel) flagged own-lineage SUPPORTS; downgraded. Mechanical rule 28
+          (INFLATED-BEARING) run with the H2 citation cards resolved found both
+          `cite-own-readout-condition-h2-002` and `cite-own-written-ai-h2-001` carrying bearing
+          SUPPORTS while their own `notes` read same-lineage/own-lineage -- FOUNDATION_v0.6 K-C3:
+          an own-lineage or context-only source may not carry bearing SUPPORTS.
+        resolved: true
+        resolution: >-
+          Both relations' `bearing` changed SUPPORTS -> NEUTRAL, `strength` set to "context (own
+          lineage, not independent)", and `notes` reworded to name the K-C3 downgrade explicitly.
+          `cite-own-civilization-of-knowledge-h2-007` (bearing CHALLENGES) was not touched -- rule
+          28 only fires on bearing=SUPPORTS. Re-validated PASS with `--citation-cards`.
 identification_ladder:
   layers:
     - id: A0
@@ -534,3 +553,17 @@ revision_history:
       I3, mc_level: L2} (schema's `independent_check.status` enum has no "CHECKED" value; PASSED
       is the schema-legal reading). `status` stays Draft. `disclaimers_emitted` recomputed via
       `./cli/glosa claim disclaimers`. Responsibility/ownership/signature blocks left unchanged.
+  - rev: "4"
+    date: "2026-09-05"
+    by: ai-assistant
+    note: >-
+      `glosa claim validate --citation-cards "records/lit/rigour-without-infrastructure/h*/citations/*.yaml"
+      "paper/citations/*.json"` failed rule 28 (INFLATED-BEARING, v0.3 kernel, FOUNDATION_v0.6
+      K-C3): `cite-own-readout-condition-h2-002` and `cite-own-written-ai-h2-001` carried bearing
+      SUPPORTS while their own notes read same-lineage/own-lineage, and an own-lineage or
+      context-only source may not carry bearing SUPPORTS. Fixed the CARD, not the rule: both
+      relations' `bearing` changed SUPPORTS -> NEUTRAL, `strength` set to "context (own lineage,
+      not independent)", `notes` reworded to name the K-C3 downgrade explicitly.
+      `cite-own-civilization-of-knowledge-h2-007` (CHALLENGES) left unchanged -- rule 28 does not
+      fire on CHALLENGES. Added a `five_questions.tested.dissent_records` entry documenting the
+      finding and fix. Re-validated: PASS (0 errors) with `--citation-cards`.

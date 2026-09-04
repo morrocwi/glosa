@@ -95,7 +95,7 @@
      "route_id": null,
      "asserted_by": "founder",
      "date": "2026-09-04",
-     "notes": ""
+     "notes": "own-lineage source (this claim's own earlier draft / context note), marked SUPPORTS"
     }
    ],
    "falsifier": "If the cat continues urinating outside the box after the box is moved to within 1m of the sleeping area for 14 days, the distance hypothesis is defeated.",
@@ -261,5 +261,6 @@
   "class": "direct_validation",
   "notes": "evidence bears directly on this household/cat, not read across from a different case"
  },
- "verdict_class": "DERIVED"
+ "verdict_class": "DERIVED",
+ "_fail_reason": "Violates FOUNDATION_v0.6_PATCH.md K-C3 rule28 (INFLATED-BEARING): evidence_relations[0].bearing is SUPPORTS, strength does not read 'context', and the relation's own notes mark the source as own-lineage (this claim's own earlier draft) -- bearing is inflated relative to what a same-lineage source can actually support. Base is otherwise the valid claim_card.example.json."
 }

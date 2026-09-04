@@ -15,28 +15,28 @@ description: Record or extend a Blackbox Note — the verbatim, never-edited-in-
   `translation`/`review` steps).
 - `../../../../methodology/P00_lens.md` — the Lens Law: the lens translation that must happen
   before any Five Question is answered from a Blackbox Note line.
-- `../../../../design/FOUNDATION_v0.5.md` §2.3 — the `lens_used` block and hypothesis signature
+- `../../../../design/FOUNDATION_v0.6.md` §2.3 — the `lens_used` block and hypothesis signature
   rule in full (founder requests 38/38b/38c/38d, binding). Do not restate its wording here; read it
   there.
 - `../../../../templates/knowledge/blackbox_note.yaml` — fill-in template.
 
 ## Pending protocol card
 
-`../../../../design/REPO_SPEC_v0.5.md` names `methodology/P15_blackbox_note.md` as the owning
+`../../../../design/REPO_SPEC_v0.6.md` names `methodology/P15_blackbox_note.md` as the owning
 protocol card for this skill's full narrative (split out from the intake/claim-card cards it was
 previously implicit in). **That file does not exist yet in this checkout** — until it lands, use
-`P00_lens.md`, `P02_intake.md` §"Blackbox Note line" input, and `FOUNDATION_v0.5.md` §2.3 directly.
+`P00_lens.md`, `P02_intake.md` §"Blackbox Note line" input, and `FOUNDATION_v0.6.md` §2.3 directly.
 
 ## Hard rules (pointer only — full text in the sources above)
 
 1. Raw lines are verbatim, never edited or translated in place — a correction is a **new** line.
 2. `cooking:` is append-only.
 3. Every note carries a `lens_used` block; the required display string is exactly
-   `"Readout Universe — Yaoharee Lahtee"` (`FOUNDATION_v0.5.md` §2.3, §6.4). Missing or wrong ⇒
-   `D-LENS-UNCITED`/`D-LENS-UNSIGNED` (`FOUNDATION_v0.5.md` §5) — hard validation errors, not
+   `"Readout Universe — Yaoharee Lahtee"` (`FOUNDATION_v0.6.md` §2.3, §6.4). Missing or wrong ⇒
+   `D-LENS-UNCITED`/`D-LENS-UNSIGNED` (`FOUNDATION_v0.6.md` §5) — hard validation errors, not
    warnings.
 4. Every hypothesis statement carries a signature line naming the lens `lens_ref` points at
-   (`FOUNDATION_v0.5.md` §3.3 rule 12).
+   (`FOUNDATION_v0.6.md` §3.3 rule 12).
 5. `privacy_scan` must be `done`, not `pending`, before any line is marked `public`.
 
 ## Related

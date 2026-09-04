@@ -117,6 +117,39 @@ def dump_instance_text(data) -> str:
     return json.dumps(data, ensure_ascii=False, indent=2, sort_keys=False) + "\n"
 
 
+def _resolve_citation_card_paths(patterns) -> list:
+    """Expand a list of glob patterns and/or literal file paths into a deduplicated, sorted list
+    of citation_card file Paths. A pattern that matches nothing via glob but is itself an existing
+    file is taken literally (so a plain path with no glob metacharacters still works). Skips
+    *.i3.json / *.i5.json independent-route verdict sidecars (same convention as `glosa lit
+    manifest`) and anything whose suffix is not .yaml/.yml/.json. Never raises on a pattern that
+    matches nothing -- an empty result is reported by the caller, not swallowed silently."""
+    seen: dict[str, Path] = {}
+    for pattern in patterns or []:
+        matches = sorted(_glob.glob(pattern))
+        if not matches and Path(pattern).is_file():
+            matches = [pattern]
+        for m in matches:
+            p = Path(m)
+            if not p.is_file():
+                continue
+            if p.name.endswith(".i3.json") or p.name.endswith(".i5.json"):
+                continue
+            if p.suffix.lower() not in (".yaml", ".yml", ".json"):
+                continue
+            seen[str(p.resolve())] = p
+    return [seen[key] for key in sorted(seen)]
+
+
+def _load_citation_cards(patterns):
+    """Load citation cards named by --citation-cards (globs or literal paths). Returns None when
+    patterns is falsy (flag not given at all -- caller should fall back to its no-citation-cards
+    behavior), else a list (possibly empty, if every pattern matched nothing)."""
+    if not patterns:
+        return None
+    return [load_instance(p) for p in _resolve_citation_card_paths(patterns)]
+
+
 def write_new(out_dir: Path, stem: str, data: dict, extra_files: dict | None = None) -> dict:
     """Write one scaffolded instance to out_dir/<stem><ext()>, plus any extra_files
     ({relative_name: text_content}) alongside it (e.g. a companion dialogue_table.md). Returns
@@ -745,8 +778,15 @@ def cmd_claim_new(args):
 
 def cmd_claim_validate(args):
     instance = load_instance(args.path)
-    res = run_check(instance, "claim_card")
-    return (0 if res["ok"] else 1), {"action": "claim_validate", "path": args.path, "result": res}
+    citation_cards = _load_citation_cards(getattr(args, "citation_cards", None))
+    if citation_cards is not None and k is not None:
+        res = k.validate_claim_card(instance, citation_cards=citation_cards)
+    else:
+        res = run_check(instance, "claim_card")
+    out = {"action": "claim_validate", "path": args.path, "result": res}
+    if citation_cards is not None:
+        out["citation_cards_checked"] = len(citation_cards)
+    return (0 if res["ok"] else 1), out
 
 
 def cmd_claim_disclaimers(args):
@@ -825,9 +865,13 @@ def cmd_release_gate(args):
         }
     cards = [load_instance(p) for p in (args.cards or [])]
     reviews = [load_instance(p) for p in (args.reviews or [])]
-    result = k.gate_release(manifest, cards, reviews)
+    citation_cards = _load_citation_cards(getattr(args, "citation_cards", None))
+    result = k.gate_release(manifest, cards, reviews, citation_cards=citation_cards)
     exit_map = {"PASS": 0, "PASS_WITH_LIMITS": 0, "FAIL": 1, "HUMAN_REVIEW": 2}
-    return exit_map.get(result["verdict"], 1), {"action": "release_gate", "manifest": args.manifest, **result}
+    out = {"action": "release_gate", "manifest": args.manifest, **result}
+    if citation_cards is not None:
+        out["citation_cards_checked"] = len(citation_cards)
+    return exit_map.get(result["verdict"], 1), out
 
 
 def cmd_defeater_route(args):
@@ -1373,6 +1417,12 @@ def build_parser():
     a.set_defaults(func=cmd_claim_new)
     a = claim.add_parser("validate", help="validate a claim_card file")
     a.add_argument("path")
+    a.add_argument("--citation-cards", nargs="*", default=None,
+                    help="citation_card glob patterns and/or literal file paths (yaml/json; "
+                         "*.i3.json/*.i5.json sidecars skipped) -- passed to "
+                         "kernel.validate_claim_card(citation_cards=...) so D-LENS-UNCITED and "
+                         "rule 28 (inflated bearing) are actually checked instead of reported "
+                         "'not checked'.")
     a.set_defaults(func=cmd_claim_validate)
     a = claim.add_parser("disclaimers", help="compute_disclaimers() for a claim_card file")
     a.add_argument("path")
@@ -1406,6 +1456,10 @@ def build_parser():
     a.add_argument("manifest")
     a.add_argument("--cards", nargs="*", default=[], help="claim_card file paths named by the manifest")
     a.add_argument("--reviews", nargs="*", default=[], help="review_report file paths for those claims")
+    a.add_argument("--citation-cards", nargs="*", default=None,
+                    help="citation_card glob patterns and/or literal file paths (yaml/json; "
+                         "*.i3.json/*.i5.json sidecars skipped) -- passed to "
+                         "kernel.gate_release(citation_cards=...).")
     a.set_defaults(func=cmd_release_gate)
 
     # defeater -----------------------------------------------------------------------------------

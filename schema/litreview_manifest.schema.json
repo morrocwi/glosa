@@ -4,6 +4,7 @@
   "title": "glosa literature review manifest",
   "description": "tier: Dr (specified; independently unreviewed). Implements templates/knowledge/litreview_manifest.yaml (S14 literature-review-system, design/S14_literature-review-system.md): ONE manifest per LRS run (one lens-out hypothesis, R2). Frozen at status FROZEN -- a correction is a new manifest version with `supersedes` pointing at the old id. GATE: no lit-review section may be drafted/published for this hypothesis until gate.accuracy_gate is PASS or PASS_WITH_LIMITS. Namespace https://glosa.example/ is a placeholder.",
   "type": "object",
+  "$comment": "TODO(foundation.s7.9-intake-tier-flag): design/FOUNDATION_v0.6_PATCH.md §4 -- citations[].intake_tier / intake_tier_reason / global_south_exempt (rule22, INTAKE-TIER-UNTIERED) -- pending-founder (thin-layer-scope-confirmation), NOT built this pass. TODO(foundation.lrs-discovery-loop-extension): FOUNDATION_v0.6_PATCH.md §23 -- top-level discovery_routing{used, candidate_questions, k_epi_gate_log} (rule25, DISCOVERY-CANDIDATE-UNGATED) -- pending-founder (discovery-routing-stage-adoption), NOT built this pass.",
   "required": ["id", "hypothesis_ref", "search_log_ref", "status", "citations", "diversity_audit", "accuracy", "gate", "human_owner"],
   "additionalProperties": true,
   "properties": {

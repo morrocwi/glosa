@@ -85,11 +85,23 @@ source that is not the household's own Blackbox Note (`source_acquisition_log`,
 (`cite-example-ext-001`, `https://example.org/synthetic-example-source`) rather than inventing a
 realistic-looking fake citation.
 
-`schema/examples/fail/*.json` — six deliberate-FAIL fixtures, each a `claim_card`-shaped instance
-that is schema-valid everywhere **except** the one violation named in its own `_fail_reason` field
-(a documentation-only field the validation script strips before validating — it is not part of the
-schema). Each is built by minimally mutating the valid `claim_card.example.json`, so a diff against
-that file shows exactly what was changed to trigger the failure:
+`schema/examples/fail/*.json` — sixteen deliberate-FAIL fixtures, each a `claim_card`- or (rule26
+only) `citation_card`-shaped instance that is schema-valid everywhere **except** the one violation
+named in its own `_fail_reason` field (a documentation-only field the validation script strips
+before validating — it is not part of the schema). Each is built by minimally mutating the valid
+`claim_card.example.json` (or, for rule26, `citation_card.example.json`), so a diff against that
+file shows exactly what was changed to trigger the failure. `scripts/validate_examples.py` and
+`kernel/glosa_kernel.py`'s own `self_test()` route each fixture by shape: a `"shape"` key routes
+through `validate_claim_card`, an `"identifier"`+`"claim_ref"` pair (no `"shape"`) routes through
+`validate_citation_card` (corrected 2026-09-05 — previously every non-`"shape"` fixture fell
+through to `claim_card.schema.json` regardless of its actual object type, which happened to still
+reject a citation_card-shaped instance, but for the wrong reason: missing claim_card-required
+fields, not the rule the fixture actually names). The nine pre-existing fixtures cover §3.3 rules
+1/2/4/9/10/15/(§5 D-INDEPENDENCE) and rule17 (source-first citation); the seven new fixtures below
+(this pass, `design/FOUNDATION_v0.6_PATCH.md`) cover rules 18/19/20/23/26/27/28 (see the Rule
+numbering table further down — rules 21/22/24/25 have no dedicated fail-fixture file: 21 is a
+warning, never a hard fail, so it cannot be represented as a FAIL fixture, and 22/24/25 are
+pending-founder, not built this pass):
 
 | Fixture | Violates | §3.3 rule |
 |---|---|---|
@@ -100,6 +112,13 @@ that file shows exactly what was changed to trigger the failure:
 | `fail_stub_public.json` | `shape: stub` with `status: Approved-for-Live` (past Draft) | rule 10 |
 | `fail_k2_without_i5.json` | `k_state: K2` with only an I4 witness, no I5 | rule 4 |
 | `fail_ai_signs_claim.json` | `responsibility.inference_to_claim: "ai"` instead of the required `"human"` | task-scoped kernel rule 15, §2.1b (founder instruction 2026-09-04, BBL-2026-09-04-083/084) — also fails the schema's own `const: "human"` on the same field, so this fixture is rejected at both layers |
+| `fail_rule18_injected_infinity.json` | `hypothesis_world.text` asserts an actual +infinity (I4) as a reached value | rule18 (TAXONOMY-UNTYPED, kernel-only, `design/FOUNDATION_v0.6_PATCH.md` §1) |
+| `fail_rule19_gate_type_unstated.json` | `gate_construction_status.type: "Type-P"` with `failing_control_ref: null` | rule19 (GATE-TYPE-UNSTATED, kernel-only, §1) |
+| `fail_rule20_priority_word_rejected.json` | `comparison.basis` contains the word "first" | rule20 (forbidden-word-list rejection, schema-enforced, §2) |
+| `fail_rule23_verdict_class_unlisted.json` | `verdict_class: "UNLISTED_SEVENTH_VALUE"`, a seventh value outside the six-value enum | rule23 (VERDICT-CLASS-UNLISTED, schema-enforced, §5) |
+| `fail_rule26_composite_quote.json` (citation_card-shaped) | `exact_passage` splices across a boundary via an ellipsis marker | rule26 (COMPOSITE-QUOTE, kernel-only, K-C1) |
+| `fail_rule27_hidden_ai_fill.json` | `seen.ai_assisted_fields` names a field, but every `ai_filled` value is a placeholder | rule27 (HIDDEN-AI-FILL, kernel-only, K-C2) |
+| `fail_rule28_inflated_bearing.json` | `evidence_relations[0]` bearing=SUPPORTS, own-lineage notes, `strength` not "context" | rule28 (INFLATED-BEARING, kernel-only, K-C3) |
 
 ## How to validate
 
@@ -180,3 +199,33 @@ disclaimer trigger COULD be schema-checked; the other ~35 rows of `methodology/d
 disclaimer_catalogue.json`'s full catalogue (§5) are not individually re-implemented here — that
 full compute is `compute_disclaimers()`'s job (FOUNDATION §9), kernel-side, reading the catalogue's
 actual trigger conditions rather than having them re-typed once per row into every schema file.
+
+
+## Rule numbering, rules 12–28 (`design/FOUNDATION_v0.6_PATCH.md`'s own numbering table)
+
+Rules 1–11 above are FOUNDATION_v0.5.md §3.3's original numbered list. Rule 12 (D-LENS-UNSIGNED /
+D-LENS-UNCITED) ships in the kernel (`_lens_unsigned_error` / `_lens_uncited_error`). Rules 13–28
+below either predate this task (13/14, spec-only; 15–17, kernel-shipped ahead of FOUNDATION's own
+prose) or are this task's own K6-kernel additions (18–28, `design/FOUNDATION_v0.6_PATCH.md`).
+
+| # | Rule | Status | Where |
+|---|---|---|---|
+| 13–14 | `tested.evidence_relations[].channel` (Bridge Burden) / `bearing: CHALLENGES` | **spec-only** — stated in FOUNDATION §3.3 prose, no kernel/schema implementation on disk this pass (`grep -n "channel\|CHALLENGES" kernel/glosa_kernel.py` finds no rule-13/14 implementation) | FOUNDATION_v0.5.md §3.3 rules 13/14 |
+| 15 | `responsibility.inference_to_claim` must be `"human"` (hard error); `rule15w` warns when `responsibility` is absent | **shipped in kernel**, not yet folded into FOUNDATION §3.3's numbered prose | `kernel/glosa_kernel.py` `_responsibility_error_for_card` / `_responsibility_warning_for_card` |
+| 16 | `rule16w`: EMPIRICAL claim without `empirical_extension` (warning) | **shipped in kernel** | `kernel/glosa_kernel.py` `_empirical_extension_warning_for_card` |
+| 17 | Source-first citation (`rule17`/`rule17w`) | **shipped in kernel** | `kernel/glosa_kernel.py` `_citation_source_first_errors` |
+| 18 | Injected-infinity/zero I1–I4/Z1–Z4 taxonomy scan (`TAXONOMY-UNTYPED`), ported from `sim/v0.3/prototypes/kernel_gate_rules_taxonomy_i_z.py`, kc-base-016 codes verbatim — its own standalone kernel text-scan rule, NOT rule 8's `EXTERNAL_VALIDATION_PROPOSED` family | **shipped in kernel** | `kernel/glosa_kernel.py` `_scan_for_injected_infinity_zero`, `claim_card.schema.json`'s additive `gate_fail_taxonomy` field |
+| 19 | Fail-Able Gate Law (Type-P requires a cited machine-derived failing control; absent that, stays Type-U), kc-base-008 verbatim | **shipped in kernel** | `kernel/glosa_kernel.py` `_gate_construction_status_error`, `claim_card.schema.json`'s additive `gate_construction_status` field |
+| 20 | `comparison.basis`/`relation` schema-rejects the forbidden-word-list terms (see scripts/check_forbidden_words.sh), English + Thai (`ใหม่`/`ครั้งแรก`/`ดีที่สุด`/`เหนือกว่า`) | **shipped, fully schema-enforced** (no kernel code needed) | `claim_card.schema.json`'s additive `comparison` field |
+| 21 | Genre/register layer-mismatch diagnostic (warning, never auto-corrected) — HONEST LIMIT: keyword-calibrated against one corpus's own vocabulary, `finite_diagnostic` scoped to what was actually run, not a general detection-rate claim | **shipped in kernel, warning-only** | `kernel/glosa_kernel.py` `_layer_mismatch_warning` |
+| 22 | `citations[].intake_tier` / `intake_tier_reason` / `global_south_exempt` (INTAKE-TIER-UNTIERED) | **pending-founder** (`thin-layer-scope-confirmation`) — NOT built this pass | TODO(foundation.s7.9-intake-tier-flag) in `schema/litreview_manifest.schema.json`'s `$comment` |
+| 23 | `verdict_class` six-value enum (`DERIVED\|FORCED\|DEFINITIONAL-RELABEL\|POSITED\|BORROWED-SCALE\|OPEN`) | **shipped, fully schema-enforced** (no kernel code needed, parallels rule 1/2/10/11) | `claim_card.schema.json`'s additive `verdict_class` field |
+| 24 | Premature Category Stabilization (PCS), joint closure-timing + absence-of-adaptation | **pending-founder** (`PCS-scoping-confirmation`) — NOT built this pass | TODO(kernel.pcs-red-flag) in `methodology/data/disclaimer_catalogue.json`'s `_meta._todo_pending_founder`, and in `kernel/glosa_kernel.py`'s `validate_claim_card` body |
+| 25 | `discovery_routing{used, candidate_questions, k_epi_gate_log}` (DISCOVERY-CANDIDATE-UNGATED) | **pending-founder** (`discovery-routing-stage-adoption`) — NOT built this pass | TODO(foundation.lrs-discovery-loop-extension) in `schema/litreview_manifest.schema.json`'s `$comment` |
+| 26 | Composite-quote detector: `citation_card.exact_passage` may not splice across a boundary via an ellipsis/`" -- "` marker | **shipped in kernel** (structural check on the field's own shape, no lexicon-fragility risk) | `kernel/glosa_kernel.py` `_composite_quote_error`, wired into `validate_citation_card` |
+| 27 | Hidden-AI-fill detector: `five_questions.seen.ai_assisted_fields` vs `five_questions.ai_filled` contradiction | **shipped in kernel** | `kernel/glosa_kernel.py` `_hidden_ai_fill_error`, `claim_card.schema.json`'s additive `seen.ai_assisted_fields` field |
+| 28 | Inflated-bearing detector: a `bearing: SUPPORTS` evidence_relation without `strength: "context"`, unresolvable/disqualified citation, or same-lineage notes | **shipped in kernel** (the resolvability half is only checked when `citation_cards` is supplied — a warning discloses the gap otherwise, same convention as D-LENS-UNCITED) | `kernel/glosa_kernel.py` `_inflated_bearing_errors`, wired into `validate_claim_card` |
+
+Every rule 18–28 row above traces to `design/FOUNDATION_v0.6_PATCH.md`; rules 22/24/25 are
+deliberately unbuilt (pending-founder) — their TODO comments name the exact node id a future pass
+must resolve before building them, per this task's own instruction not to guess a founder ruling.

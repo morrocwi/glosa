@@ -333,7 +333,7 @@ nodes:
     human_decision_needed: true
 
   - id: foundation.disclaimer-catalogue-expand
-    title: Disclaimer catalogue — novelty-scoping and standpoint-disclosure patterns
+    title: Disclaimer catalogue — priority-scoping and standpoint-disclosure patterns
     change: >
       Add reusable disclaimer patterns to §5: "novelty scoped to architecture, not mechanism,"
       "analytical tool, not verdict," "theoretical/analytical, not empirical," and reflexive

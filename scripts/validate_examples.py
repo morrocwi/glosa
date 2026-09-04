@@ -115,6 +115,15 @@ def main() -> int:
                 result = k.validate_claim_card(instance)
                 rejected = not result["ok"]
                 errors = result["errors"]
+            elif "identifier" in instance and "claim_ref" in instance:
+                # citation_card-shaped fixture (K-C1/rule26) -- corrected 2026-09-05: previously
+                # every non-"shape" fixture fell through to claim_card schema validation
+                # regardless of its actual object type, which happened to still reject it, but
+                # for the wrong reason (missing claim_card-required fields), not the rule the
+                # fixture actually names.
+                result = k.validate_citation_card(instance)
+                rejected = not result["ok"]
+                errors = result["errors"]
             else:
                 errors, _used_fallback = k._schema_validate(instance, "claim_card.schema.json")
                 rejected = bool(errors)

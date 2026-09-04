@@ -13,7 +13,7 @@ rules bind every AI session regardless of vendor:
 
 1. Everything here is a readout, not truth. Tag your tier
    (`Th_coqc`/`finite_diagnostic`/`fit_calibrated`/`Dr`/`definition`/`Open`) on every verdict.
-2. Read `design/FOUNDATION_v0.5.md` §2 (spine) and §3 (claim card) before editing anything.
+2. Read `design/FOUNDATION_v0.6.md` §2 (spine) and §3 (claim card) before editing anything.
 3. Maker ≠ checker ≠ approver. Never certify what you produced. Same-model self-review has no
    standing.
 4. If pointed at `reviews/routes/*/PACKET.md` you are ONE route: read only your packet, write
@@ -50,7 +50,7 @@ text elsewhere — cite it.
 | Readiness | `methodology/P12_readiness.md` | `schema/readiness_report.schema.json` | — |
 | Literature review (LRS, L1-L6) | `methodology/P13_literature_review.md` + `design/S14_literature-review-system.md` | `schema/search_log.schema.json`, `source_acquisition_log.schema.json`, `citation_card.schema.json`, `dialogue_table_row.schema.json`, `neighbour_table_row.schema.json`, `litreview_manifest.schema.json`, `hypothesis_selection.schema.json` | `templates/knowledge/search_log.yaml`, `source_acquisition_log.yaml`, `citation_card.yaml`, `dialogue_table.md`, `neighbour_table.md`, `litreview_manifest.yaml`, `hypothesis_selection.yaml`, `sr_protocol_prisma_lite.md` |
 | Project advisor | `methodology/P14_project_advisor.md` | `schema/conversion_plan.schema.json` | `templates/knowledge/conversion_plan.yaml`, `advisor_prompt_packet.md` |
-| Blackbox Note | *pending* — `methodology/P15_blackbox_note.md` not yet written; use `P00_lens.md` + `P02_intake.md` + `design/FOUNDATION_v0.5.md` §2.3 meanwhile | `schema/blackbox_note.schema.json` | `templates/knowledge/blackbox_note.yaml` |
+| Blackbox Note | *pending* — `methodology/P15_blackbox_note.md` not yet written; use `P00_lens.md` + `P02_intake.md` + `design/FOUNDATION_v0.6.md` §2.3 meanwhile | `schema/blackbox_note.schema.json` | `templates/knowledge/blackbox_note.yaml` |
 
 ## Blackbox Note attribution (binding, every dialogue record)
 
@@ -61,9 +61,21 @@ Readout Universe — Yaoharee Lahtee
 ```
 
 cite the lens's DOI(s) via a `VERIFIED` citation card and its repo URL wherever the lens is named,
-or the document hard-fails `D-LENS-UNCITED` (`design/FOUNDATION_v0.5.md` §5). Every hypothesis
+or the document hard-fails `D-LENS-UNCITED` (`design/FOUNDATION_v0.6.md` §5). Every hypothesis
 statement carries a signature line naming the lens `lens_ref` points at, or the document hard-fails
-`D-LENS-UNSIGNED`. Full rule: `design/FOUNDATION_v0.5.md` §2.3, §3.2, §3.3 rule 12.
+`D-LENS-UNSIGNED`. Full rule: `design/FOUNDATION_v0.6.md` §2.3, §3.2, §3.3 rule 12.
+
+## New this pass (v0.6) — pointer only, rule bodies stay in FOUNDATION
+
+Kernel rules 18–28 (`design/FOUNDATION_v0.6.md` §3.3): injected-infinity/zero taxonomy, the
+Fail-Able Gate Law, forbidden-word-list rejection on `comparison.basis`, the genre-router layer-mismatch
+diagnostic, the LRS claim-tier intake flag, `verdict_class`, the PCS red-flag, the discovery-
+routing extension, and the composite-quote / hidden-AI-fill / inflated-bearing detectors. Several
+of these (§3.3 rules 21, 22, 24, 25) are `PENDING FOUNDER DECISION` — read the FOUNDATION section
+directly before treating them as binding. New claim-card fields (`comparison`, `evidence_strength`,
+`verdict_class`, `gate_fail_taxonomy`, `gate_construction_status`,
+`five_questions.seen.ai_assisted_fields`) are additive/optional, `schema/claim_card.schema.json`
+target `0.7.0` — not yet applied to the schema file on disk.
 
 ## Output discipline
 

@@ -15,7 +15,7 @@ Readout, not truth: every node traces to a knowledge-harvest card id (`knowledge
 | `foundation.s1.0-infinity-tension-flag` | Infinity-as-transcendental-ground stays a flagged [Open] tension | foundation | deferred | FOUNDATION §1.0 Pillars | kc-ep-005 | no |
 | `foundation.s1.0-ashari-ontology-analogue` | Partial theology-neutral ontology analogue (2 of 3 constructs) | foundation | proposed | FOUNDATION §1.0 Pillars — ontology | kc-ep-030, kc-ep-034 | yes |
 | `foundation.honest-edges-agrippa` | Agrippa's trilemma applied to the tier system itself | foundation | proposed | FOUNDATION §12 Honest edges | kc-base-025, kc-base-031, kc-base-036 | no |
-| `foundation.disclaimer-catalogue-expand` | Disclaimer catalogue — novelty-scoping and standpoint-disclosure patterns | foundation | proposed | FOUNDATION §5 Systematic disclaimer catalogue | kc-he-013, kc-he-015, kc-he-019, kc-islam-007, kc-islam-016, kc-se-006 | no |
+| `foundation.disclaimer-catalogue-expand` | Disclaimer catalogue — priority-scoping and standpoint-disclosure patterns | foundation | proposed | FOUNDATION §5 Systematic disclaimer catalogue | kc-he-013, kc-he-015, kc-he-019, kc-islam-007, kc-islam-016, kc-se-006 | no |
 | `kernel.rule17-source-first` | Rule 17 — source-first citation | kernel | done | kernel/glosa_kernel.py rule17 / rule17w (validate_citation_card) | kc-base-039, kc-ai-019, kc-ep-046 | no |
 | `foundation.pillars-readout-not-truth` | Pillars §1.0 cross-tradition citation set | foundation | proposed | FOUNDATION §1.0 Pillars — ontology/epistemology/methodology | kc-base-001, kc-base-005, kc-base-009, kc-base-027, kc-base-032, kc-ep-014, kc-ai-019, kc-islam-008 | no |
 | `foundation.s5-scope-boundary-per-instance` | Non-clinical/non-medical/non-legal scope clause stays per-instance | foundation | proposed | FOUNDATION §5 Systematic disclaimer catalogue | kc-ai-023, kc-he-016 | yes |
@@ -79,7 +79,7 @@ Readout, not truth: every node traces to a knowledge-harvest card id (`knowledge
 - **acceptance test:** §12 diff adds a named subsection citing Agrippa's trilemma with the three evidence card ids as sources.
 - **risk:** Low — citation-only addition to an already-existing honest-edges section.
 
-### `foundation.disclaimer-catalogue-expand` — Disclaimer catalogue — novelty-scoping and standpoint-disclosure patterns
+### `foundation.disclaimer-catalogue-expand` — Disclaimer catalogue — priority-scoping and standpoint-disclosure patterns
 - **kind / status:** foundation / proposed
 - **target:** FOUNDATION §5 Systematic disclaimer catalogue
 - **change:** Add reusable disclaimer patterns to §5: "novelty scoped to architecture, not mechanism," "analytical tool, not verdict," "theoretical/analytical, not empirical," and reflexive practitioner standpoint/conflict-of-interest disclosure.

@@ -80,3 +80,29 @@ methodology/data/	prior-art
 methodology/data/	concession
 methodology/data/	seminal
 methodology/data/	pioneering
+
+# data classes (added 2026-09-05): third-party verbatim passages and adversarial fixtures
+records/	novel
+records/	novelty
+records/	prior art
+records/	unprecedented
+records/	first
+records/	state-of-the-art
+records/	breakthrough
+knowledge/	novel
+knowledge/	novelty
+knowledge/	prior art
+knowledge/	unprecedented
+knowledge/	first
+knowledge/	state-of-the-art
+knowledge/	breakthrough
+tests/sim/	novel
+tests/sim/	novelty
+tests/sim/	prior art
+tests/sim/	unprecedented
+tests/sim/	first
+tests/sim/	state-of-the-art
+tests/sim/	breakthrough
+records/	prior-art
+knowledge/	prior-art
+tests/sim/	prior-art

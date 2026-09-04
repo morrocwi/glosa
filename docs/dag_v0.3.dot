@@ -26,7 +26,7 @@ digraph glosa_dag_v0_3 {
     "foundation.independence-ladder-i0-i5-source" [label="I0–I5 Independence Ladder named source citation\n[proposed]", fillcolor="#4c6ef5", style="rounded,filled,solid"];
     "foundation.k-state-standalone-scholar-cite" [label="K-state (Standalone Scholar) named-origin citation\n[proposed]", fillcolor="#4c6ef5", style="rounded,filled,solid"];
     "foundation.lrs-discovery-loop-extension" [label="Discovery-loop extension (candidate-set formation precedes evidential adjudication)\n[proposed]", fillcolor="#4c6ef5", style="rounded,filled,solid"];
-    "foundation.disclaimer-catalogue-expand" [label="Disclaimer catalogue — novelty-scoping and standpoint-disclosure patterns\n[proposed]", fillcolor="#4c6ef5", style="rounded,filled,solid"];
+    "foundation.disclaimer-catalogue-expand" [label="Disclaimer catalogue — priority-scoping and standpoint-disclosure patterns\n[proposed]", fillcolor="#4c6ef5", style="rounded,filled,solid"];
   }
   subgraph cluster_schema { label="schema"; style=dashed;
     "schema.prereg-gate-fields" [label="Frozen-preregistration gate as checkable fields, not a hard block\n[proposed]", fillcolor="#12b886", style="rounded,filled,solid"];

@@ -23,7 +23,8 @@
   "properties": {
     "schema_version": {
       "type": "string",
-      "default": "0.4.0"
+      "default": "0.7.0",
+      "description": "0.7.0 (this pass, design/FOUNDATION_v0.6_PATCH.md): comparison, evidence_strength, verdict_class, gate_fail_taxonomy, gate_construction_status, five_questions.seen.ai_assisted_fields (all additive/optional). Lands after the separately-queued, not-yet-applied 0.6.0 bump (tested.evidence_relations[].channel + rules 13/14, FOUNDATION_v0.5.md §3.2:467) so the two change sets do not collide on one version number."
     },
     "claim_id": {
       "type": "string",
@@ -228,6 +229,14 @@
               "items": {
                 "type": "string"
               }
+            },
+            "ai_assisted_fields": {
+              "description": "NEW this pass (design/FOUNDATION_v0.6_PATCH.md K-C2, rule27 HIDDEN-AI-FILL). Names which of the card's own fields had AI involvement in drafting their seen-recorded content -- a structural marker, not a prose scan. Default [].",
+              "type": "array",
+              "items": {
+                "type": "string"
+              },
+              "default": []
             }
           }
         },
@@ -779,6 +788,77 @@
           }
         }
       }
+    },
+    "comparison": {
+      "description": "NEW this pass (design/FOUNDATION_v0.6_PATCH.md §2, schema.claim-card-comparison-evidence-field). `relation` is a closed enum; the forbidden-word-list terms (see scripts/check_forbidden_words.sh; English + Thai, gate rule 6 -- CLAUDE.md/AGENTS.md's governance-file ban on those terms, disambiguated from FOUNDATION §3.3's own numbered kernel rule 6 scope.claim_scope<=scope.evidence_scope) are schema-rejected as `relation`/`basis` values, enforced by rule20. `not_compared` is legal and is the correct default when no comparison was attempted -- once `comparison` is present at all, an empty `basis` is itself a validation error (no silent 'not compared' via omission).",
+      "type": ["object", "null"],
+      "properties": {
+        "target": {
+          "type": ["string", "null"]
+        },
+        "relation": {
+          "enum": ["same", "different", "cited", "not_compared"]
+        },
+        "basis": {
+          "type": "string",
+          "minLength": 1,
+          "not": { "pattern": "(?i)\\b(novel|first|best|outperform)\\w*\\b|(ใหม่|ครั้งแรก|ดีที่สุด|เหนือกว่า)", "$comment": "this is the forbidden-word-list regex itself (scripts/check_forbidden_words.sh), not a claim -- never remove the literal terms here, they are what rule20 rejects" }
+        }
+      },
+      "required": ["relation", "basis"]
+    },
+    "evidence_strength": {
+      "description": "NEW this pass (design/FOUNDATION_v0.6_PATCH.md §2). `direct_validation` = the evidence bears on the intervention/claim itself; `adjacent_precedent` = the evidence bears on a related but distinct prior case, read across by analogy -- this class may never be silently promoted to `direct_validation` in prose that cites it (NC-72 Constraint!=evidence-for-us).",
+      "type": ["object", "null"],
+      "properties": {
+        "class": {
+          "enum": ["direct_validation", "adjacent_precedent"]
+        },
+        "notes": {
+          "type": "string"
+        }
+      },
+      "required": ["class"]
+    },
+    "verdict_class": {
+      "description": "NEW this pass (design/FOUNDATION_v0.6_PATCH.md §5, schema.verdict-class-vocabulary). A different axis from `base_relation`: `base_relation` states how a claim relates to a base text; `verdict_class` states what KIND of derivation the claim itself is, independent of any base-text relation. Rule23 (VERDICT-CLASS-UNLISTED): an unlisted seventh value is a hard schema-validation error -- fully schema-enforced, no kernel code needed (parallels rule 1/2/10/11's schema-only enforcement).",
+      "anyOf": [
+        {
+          "enum": ["DERIVED", "FORCED", "DEFINITIONAL-RELABEL", "POSITED", "BORROWED-SCALE", "OPEN"]
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "gate_fail_taxonomy": {
+      "description": "NEW this pass (design/FOUNDATION_v0.6_PATCH.md §1, rule18 TAXONOMY-UNTYPED, kc-base-016 verbatim). Names the specific injected-infinity/zero type when a hard-fail is raised on this card -- never a generic, untyped rejection.",
+      "type": ["object", "null"],
+      "properties": {
+        "injected_infinity_type": {
+          "enum": ["I1", "I2", "I3", "I4", null]
+        },
+        "injected_zero_type": {
+          "enum": ["Z1", "Z2", "Z3", "Z4", null]
+        }
+      }
+    },
+    "gate_construction_status": {
+      "description": "NEW this pass (design/FOUNDATION_v0.6_PATCH.md §1, rule19 GATE-TYPE-UNSTATED, kc-base-008 Fail-Able Gate Law verbatim). A per-gate construction/validation record, not a per-firing verdict -- Type-P requires a cited machine-derived failing control it correctly rejected; absent that the gate stays Type-U. `failing_control_ref` required non-null when type=Type-P (kernel-enforced, rule19).",
+      "type": ["object", "null"],
+      "properties": {
+        "gate_id": {
+          "type": "string"
+        },
+        "type": {
+          "enum": ["Type-P", "Type-U"]
+        },
+        "failing_control_ref": {
+          "type": ["string", "null"],
+          "description": "Required non-null when type=Type-P (kernel rule19)."
+        }
+      },
+      "required": ["gate_id", "type"]
     },
     "human_owner": {
       "type": "string",

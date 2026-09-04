@@ -44,7 +44,7 @@
   "formal_applicability": "not_applicable_narrative"
  },
  "hypothesis_world": {
-  "text": "Cats are less likely to use a litter box placed far from their sleeping/resting area.",
+  "text": "Cats have an infinite aversion to a litter box placed far from their sleeping area.",
   "language": "en",
   "falsifier_ref": "five_questions.tested.falsifier"
  },
@@ -261,5 +261,6 @@
   "class": "direct_validation",
   "notes": "evidence bears directly on this household/cat, not read across from a different case"
  },
- "verdict_class": "DERIVED"
+ "verdict_class": "DERIVED",
+ "_fail_reason": "Violates FOUNDATION_v0.6_PATCH.md §1 rule18 (TAXONOMY-UNTYPED): hypothesis_world.text asserts an actual +infinity (I4, kc-base-016) as a reached value instead of a bounded, dated, sourced readout. validate_claim_card must reject this via _scan_for_injected_infinity_zero, naming the specific type (I4), not a generic rejection. Base is otherwise the valid claim_card.example.json."
 }

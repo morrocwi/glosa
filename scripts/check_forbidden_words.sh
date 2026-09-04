@@ -44,7 +44,7 @@ is_allowlisted() {
     # below (see allowlist header): reviews/ (audit reports quoting hits), sources/ (third-party or
     # founder papers reproduced verbatim), registry/ (Zenodo metadata as data), blackbox/ (verbatim voice).
     case "$prefix" in
-      design/*|lineage/*|reviews/*|sources/*|registry/*|blackbox/*|methodology/data/*) : ;;
+      design/*|lineage/*|reviews/*|sources/*|registry/*|blackbox/*|methodology/data/*|records/*|knowledge/*|tests/sim/*) : ;;  # records/knowledge = verbatim third-party passages; tests/sim = adversarial fixtures that must contain the words
       *) continue ;;
     esac
     case "$file" in

@@ -261,5 +261,11 @@
   "class": "direct_validation",
   "notes": "evidence bears directly on this household/cat, not read across from a different case"
  },
- "verdict_class": "DERIVED"
+ "verdict_class": "DERIVED",
+ "_fail_reason": "Violates FOUNDATION_v0.6_PATCH.md §1 rule19 (GATE-TYPE-UNSTATED, kc-base-008 Fail-Able Gate Law): gate_construction_status.type is Type-P but failing_control_ref is null -- a gate that has only ever demonstrated passing cases has not shown it can tell signal from absence of signal and stays Type-U until a real failing control is produced. Base is otherwise the valid claim_card.example.json.",
+ "gate_construction_status": {
+  "gate_id": "gate-cat-litterbox-001",
+  "type": "Type-P",
+  "failing_control_ref": null
+ }
 }

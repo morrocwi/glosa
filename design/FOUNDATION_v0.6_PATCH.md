@@ -498,7 +498,7 @@ trilemma with the three evidence card ids as sources."
 
 ---
 
-## 13. `foundation.disclaimer-catalogue-expand` — novelty-scoping and standpoint-disclosure patterns
+## 13. `foundation.disclaimer-catalogue-expand` — priority-scoping and standpoint-disclosure patterns
 
 - **status:** ready (Low risk, additive catalogue entries)
 - **FOUNDATION target:** §5 Systematic disclaimer catalogue

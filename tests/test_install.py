@@ -86,3 +86,54 @@ class LitManifestFailClosedTest(unittest.TestCase):
             r = subprocess.run([sys.executable, str(ROOT / "cli/glosa"), "lit", "manifest", slug, hyp, "--human-owner", "founder"], cwd=td, env=env, capture_output=True, text=True)
             self.assertNotEqual(r.returncode, 0, r.stdout)
             self.assertIn("INVALID_SCHEMA", r.stdout + r.stderr)
+
+
+class ClaimValidateCitationCardsFlagTest(unittest.TestCase):
+    """`glosa claim validate --citation-cards <glob or paths...>` (this task): without the flag,
+    rule 28 (INFLATED-BEARING) and D-LENS-UNCITED cannot resolve any citation_ref and are left
+    "not checked"; with it, the CLI loads the named citation_card files (glob patterns and/or
+    literal paths, yaml/json, *.i3.json/*.i5.json sidecars skipped) and passes them through to
+    `kernel.validate_claim_card(citation_cards=[...])`. tier: finite_diagnostic."""
+
+    def test_citation_cards_flag_loads_and_is_reported(self):
+        r = subprocess.run(
+            [sys.executable, str(ROOT / "cli/glosa"), "claim", "validate",
+             str(ROOT / "schema/examples/claim_card.example.json"),
+             "--citation-cards", str(ROOT / "schema/examples/citation_card.example.json")],
+            capture_output=True, text=True,
+        )
+        self.assertEqual(r.returncode, 0, r.stdout + r.stderr)
+        out = json.loads(r.stdout)
+        self.assertEqual(out["citation_cards_checked"], 1, r.stdout)
+        self.assertEqual(out["result"]["verdict"], "PASS", r.stdout)
+
+    def test_without_citation_cards_flag_key_is_absent(self):
+        r = subprocess.run(
+            [sys.executable, str(ROOT / "cli/glosa"), "claim", "validate",
+             str(ROOT / "schema/examples/claim_card.example.json")],
+            capture_output=True, text=True,
+        )
+        self.assertEqual(r.returncode, 0, r.stdout + r.stderr)
+        out = json.loads(r.stdout)
+        self.assertNotIn("citation_cards_checked", out, r.stdout)
+
+    def test_citation_cards_glob_matches_and_skips_i3_sidecars(self):
+        # a glob against schema/examples/*.example.json would sweep in non-citation schemas too --
+        # use a glob that only ever matches the one real citation card plus a planted i3.json
+        # sidecar, and assert the sidecar was skipped (count stays 1, not 2).
+        import shutil
+        import tempfile
+        with tempfile.TemporaryDirectory() as td:
+            cards_dir = Path(td) / "citations"
+            cards_dir.mkdir()
+            shutil.copy(ROOT / "schema/examples/citation_card.example.json", cards_dir / "cite-cat-obs-001.json")
+            (cards_dir / "cite-cat-obs-001.i3.json").write_text("{}", encoding="utf-8")
+            r = subprocess.run(
+                [sys.executable, str(ROOT / "cli/glosa"), "claim", "validate",
+                 str(ROOT / "schema/examples/claim_card.example.json"),
+                 "--citation-cards", str(cards_dir / "*.json")],
+                capture_output=True, text=True,
+            )
+            self.assertEqual(r.returncode, 0, r.stdout + r.stderr)
+            out = json.loads(r.stdout)
+            self.assertEqual(out["citation_cards_checked"], 1, r.stdout)

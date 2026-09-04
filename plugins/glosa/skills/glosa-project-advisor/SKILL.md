@@ -14,7 +14,7 @@ description: Advise on a project's next conversion step after (never before) an 
 - `../../../../schema/conversion_plan.schema.json` — authoritative field list.
 - `../../../../templates/knowledge/conversion_plan.yaml` and
   `../../../../templates/knowledge/advisor_prompt_packet.md` — fill-in templates.
-- `../../../../design/FOUNDATION_v0.5.md` §7.7 and §1.2 (chair ruling B3) — why
+- `../../../../design/FOUNDATION_v0.6.md` §7.7 and §1.2 (chair ruling B3) — why
   `ai-native-scholarship` is cited by name+version+DOI here, never merged into `plugins/`.
 
 ## One-line rule (pointer only)

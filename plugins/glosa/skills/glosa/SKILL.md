@@ -12,7 +12,7 @@ description: Master entry point for the glosa methodology (Rigour Without Infras
 
 - `../../../../AGENTS.md` — the eight-rule gate, identical in `CLAUDE.md`/`GEMINI.md`. Binding on
   every session before touching anything in this repo.
-- `../../../../design/FOUNDATION_v0.5.md` §2 (spine) and §3 (claim card) — the whole system, read
+- `../../../../design/FOUNDATION_v0.6.md` §2 (spine) and §3 (claim card) — the whole system, read
   before editing anything.
 - `../../../../methodology/README.md` — index of every `P*.md` protocol card.
 
@@ -41,7 +41,7 @@ stranger without the **publish gate** (`glosa-publish-gate`, R1-R7) → only aft
 ## Pointers, not restatement
 
 Every rule body lives in exactly one place — do not copy protocol text into this file or any
-other `SKILL.md` (`../../../../design/REPO_SPEC_v0.5.md` §"one fact one home"):
+other `SKILL.md` (`../../../../design/REPO_SPEC_v0.6.md` §"one fact one home"):
 
 - Protocol cards: `../../../../methodology/P00_lens.md` … `P14_project_advisor.md`
   (`../../../../methodology/README.md` is the index; some ids referenced by design docs, e.g.

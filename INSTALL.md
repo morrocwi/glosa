@@ -54,6 +54,8 @@ glosa demo          # runs the worked example end to end
 | `/glosa` unknown in Claude Code | plugin installed mid-session | open a new session |
 | pip refuses (`externally-managed-environment`) | distro-managed python | the installer retries with `--break-system-packages`; or use a venv |
 
+See `docs/README.md` for the rendered DAG/knowledge-graph views once installed.
+
 ## Uninstall
 
 ```bash

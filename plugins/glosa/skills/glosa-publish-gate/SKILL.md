@@ -12,7 +12,7 @@ description: Run the glosa publish gate before anything leaves this repo's hands
 - `../../../../methodology/P10_publish_gate.md` — the full R1-R7 rule, run by an identity distinct
   from whoever produced the content (never a same-model self-check).
 - `../../../../schema/release_manifest.schema.json` — what a passed gate produces.
-- `../../../../design/FOUNDATION_v0.5.md` §7.4/§6.4 — the reflexive glosa-cites-glosa rule and the
+- `../../../../design/FOUNDATION_v0.6.md` §7.4/§6.4 — the reflexive glosa-cites-glosa rule and the
   K-state semantics this gate certifies into.
 - This workspace's own `PUB-ADVERSARIAL-REVIEW` standing rule (`~/.claude/CLAUDE.md`) — the
   org-wide version of the same invariant; `P10_publish_gate.md` is glosa's domain instance of it.
@@ -23,6 +23,14 @@ R1 leak scan · R2 license coverage · R3 tier fidelity · R4 citation accuracy 
 accuracy gate independently) · R5 anchor-preservation audit (`lineage/` `PRESERVE_EXACT`/
 `PRESERVE_FUNCTION` rows) · R6 overclaim/register scan (contaminated-concept table + priority-word
 list) · R7 completeness (every reference/field resolves).
+
+## New this pass (v0.6) — pointer only, rule bodies stay in FOUNDATION
+
+`../../../../design/FOUNDATION_v0.6.md` §7.8 adds three kernel-closure checks feeding R4/R6:
+composite-quote detector (rule 26), hidden-AI-fill detector (rule 27), inflated-bearing detector
+(rule 28) — none founder-gated, all shipped this pass. §3.3 rule 19 (Fail-Able Gate Law) also
+applies to this gate itself: a gate documented here as Type-P must cite a machine-derived failing
+control it correctly rejected, or it stays Type-U.
 
 ## K-state semantics at release
 

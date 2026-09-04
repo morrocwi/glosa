@@ -6,7 +6,7 @@ description: Run the glosa Literature Review System (LRS) - six stages (question
 # glosa-literature-review
 
 > tier: Dr (specified; independently unreviewed). Readout-not-truth applies to this file. LRS
-> itself is single-pass and unreviewed (`FOUNDATION_v0.5.md` §12) — its own worked example shows
+> itself is single-pass and unreviewed (`FOUNDATION_v0.6.md` §12) — its own worked example shows
 > the gate working, not passing.
 
 ## Load first
@@ -39,6 +39,15 @@ each with one owning artifact and one exit gate — full table in `P13_literatur
   check, not a self-check.
 - `glosa-publish-gate` — R4 re-runs this system's own accuracy gate independently at release time,
   never grandfathering a manifest that passed at freeze time.
+
+## New this pass (v0.6) — pointer only, PENDING FOUNDER DECISION
+
+`../../../../design/FOUNDATION_v0.6.md` §7.9 (`FOUNDATION_v0.6_PATCH.md` §4/§23): a claim-tier
+intake flag (`citations[].intake_tier`/`intake_tier_reason`/`global_south_exempt`) and a
+discovery-routing extension (`discovery_routing` block, `k_epi` gating) — both marked pending
+founder decision (thin-layer-scope-confirmation / discovery-routing-stage-adoption), not yet
+ratified. `templates/knowledge/litreview_manifest.yaml` already carries the fields; do not treat
+either mechanism as binding until the founder decision lands.
 
 ## Source-first citation (kernel rule 17, 2026-09-04)
 

@@ -73,6 +73,10 @@ jobs:
           else
             echo "no tests/ directory yet — skipping (not a failure)"
           fi
+      - name: Sim-corpus regression (tests/test_sim_regression.py — pytest-style, not unittest-discoverable)
+        run: |
+          python3 -m pip install --user pytest
+          python3 -m pytest -q tests/test_sim_regression.py
 
   schema-validate:
     name: jsonschema validate schema/examples

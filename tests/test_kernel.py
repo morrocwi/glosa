@@ -53,10 +53,26 @@ def load_fail(name):
 class ValidClaimCardTest(unittest.TestCase):
     def test_valid_claim_card_passes(self):
         card = load_example("claim_card.example.json")
-        res = k.validate_claim_card(card)
+        # rule28 (INFLATED-BEARING, K-C3) needs the resolvable citation set to confirm the
+        # card's own evidence_relations[0].citation_ref actually resolves; without it,
+        # validate_claim_card still passes (ok=True) but with a "not fully checked" warning
+        # (see test_valid_claim_card_passes_with_limits_when_citation_cards_omitted below) --
+        # PASS (no warnings at all) requires supplying the real citation set.
+        citation_cards = [load_example("citation_card.example.json")]
+        res = k.validate_claim_card(card, citation_cards=citation_cards)
         self.assertTrue(res["ok"], res["errors"])
         self.assertEqual(res["verdict"], "PASS")
         self.assertEqual(res["tier"], "finite_diagnostic")
+
+    def test_valid_claim_card_passes_with_limits_when_citation_cards_omitted(self):
+        """rule28 (INFLATED-BEARING) cannot confirm citation_ref resolution without
+        citation_cards; validate_claim_card still returns ok=True (never a fabricated hard
+        fail), but surfaces the gap as a warning -- PASS_WITH_LIMITS, not a silent PASS."""
+        card = load_example("claim_card.example.json")
+        res = k.validate_claim_card(card)
+        self.assertTrue(res["ok"], res["errors"])
+        self.assertEqual(res["verdict"], "PASS_WITH_LIMITS")
+        self.assertTrue(any("rule28" in w for w in res["warnings"]), res["warnings"])
 
     def test_result_shape(self):
         card = load_example("claim_card.example.json")
@@ -968,11 +984,17 @@ class LensSignatureCitationTest(unittest.TestCase):
 
     def test_positive_lens_uncited_passes_with_matching_verified_citation_card(self):
         card = self._card_with_valid_signature()
-        citation_cards = [{
-            "id": "cite-lens-001",
-            "identifier": {"kind": "DOI", "value": "readout_universe"},
-            "status": "VERIFIED",
-        }]
+        citation_cards = [
+            {
+                "id": "cite-lens-001",
+                "identifier": {"kind": "DOI", "value": "readout_universe"},
+                "status": "VERIFIED",
+            },
+            # rule28 (INFLATED-BEARING) resolution target for the card's own
+            # evidence_relations[0].citation_ref -- included so this positive fixture is not
+            # incidentally flagged as an unresolvable-reference bearing inflation.
+            load_example("citation_card.example.json"),
+        ]
         res = k.validate_claim_card(card, citation_cards=citation_cards)
         self.assertTrue(res["ok"], res["errors"])
         ids = {d["id"] for d in k.compute_disclaimers(card, citation_cards=citation_cards)}
@@ -1151,8 +1173,207 @@ class XenonLedgerTest(unittest.TestCase):
         manifest = load_example("release_manifest.example.json")
         card = load_example("claim_card.example.json")
         review = load_example("review_report.example.json")
-        result = k.gate_release(manifest, [card], [review], citation_cards=self._scrammed(1))
+        # rule28 (INFLATED-BEARING) needs card's own evidence_relations[0].citation_ref
+        # ("cite-cat-obs-001") to resolve -- included alongside the scrammed batch so this
+        # under-threshold fixture is not incidentally flagged as an unresolvable reference.
+        citation_cards = self._scrammed(1) + [load_example("citation_card.example.json")]
+        result = k.gate_release(manifest, [card], [review], citation_cards=citation_cards)
         self.assertIn(result["verdict"], ("PASS", "PASS_WITH_LIMITS"))
+
+
+class KernelRuleV06PatchTest(unittest.TestCase):
+    """design/FOUNDATION_v0.6_PATCH.md rules 18-28 (skipping 22/24/25, pending-founder). One
+    test per implemented rule, mirroring KernelRuleIsolationTest's own convention (minimal
+    mutation of the valid claim_card/citation_card example) plus a fail-fixture check for each
+    rule that has a dedicated schema/examples/fail/*.json file."""
+
+    def setUp(self):
+        self.card = load_example("claim_card.example.json")
+        self.citation = load_example("citation_card.example.json")
+
+    # -- rule18: injected-infinity/zero taxonomy (standalone kernel text-scan) --
+
+    def test_rule18_taxonomy_untyped(self):
+        card = load_fail("fail_rule18_injected_infinity.json")
+        res = k.validate_claim_card(card)
+        self.assertFalse(res["ok"])
+        self.assertTrue(any("rule18(TAXONOMY-UNTYPED)" in e and "I4" in e for e in res["errors"]), res["errors"])
+
+    def test_rule18_clean_prose_untouched(self):
+        res = k.validate_claim_card(self.card)
+        self.assertFalse(any("rule18" in e for e in res["errors"]), res["errors"])
+
+    def test_rule18_every_taxonomy_code_named(self):
+        """DAG acceptance test refinement: one synthetic card per I/Z code, each raises the
+        correctly-named type -- not merely caught untyped."""
+        probes = {
+            "I1": "the value is fixed by a Dedekind cut of the rationals",
+            "I2": "as the interval width -> 0 the limit is treated as reached",
+            "I3": "as the sample count -> infinity the estimate approaches infinity",
+            "I4": "the count is actually infinite",
+            "Z1": "r = 0 is the reached point",
+            "Z2": "h = 0 is the reached continuum spacing",
+            "Z3": "the system reaches absolute rest",
+            "Z4": "this is the true void",
+        }
+        for code, text in probes.items():
+            card = copy.deepcopy(self.card)
+            card["hypothesis_world"]["text"] = text
+            res = k.validate_claim_card(card)
+            self.assertFalse(res["ok"], f"{code}: expected a hard fail for {text!r}")
+            self.assertTrue(
+                any(f"rule18(TAXONOMY-UNTYPED)" in e and f"{code} non-readout" in e for e in res["errors"]),
+                f"{code}: expected a named-type rule18 error, got {res['errors']}",
+            )
+
+    # -- rule19: Fail-Able Gate Law (Type-P/Type-U) --
+
+    def test_rule19_gate_type_unstated(self):
+        card = load_fail("fail_rule19_gate_type_unstated.json")
+        res = k.validate_claim_card(card)
+        self.assertFalse(res["ok"])
+        self.assertTrue(any("rule19" in e for e in res["errors"]), res["errors"])
+
+    def test_rule19_type_p_with_failing_control_passes(self):
+        card = copy.deepcopy(self.card)
+        card["gate_construction_status"] = {
+            "gate_id": "gate-cat-litterbox-001", "type": "Type-P", "failing_control_ref": "fixture-neg-001",
+        }
+        res = k.validate_claim_card(card, citation_cards=[self.citation])
+        self.assertFalse(any("rule19" in e for e in res["errors"]), res["errors"])
+
+    def test_rule19_type_u_without_failing_control_passes(self):
+        card = copy.deepcopy(self.card)
+        card["gate_construction_status"] = {"gate_id": "gate-cat-litterbox-001", "type": "Type-U", "failing_control_ref": None}
+        res = k.validate_claim_card(card, citation_cards=[self.citation])
+        self.assertFalse(any("rule19" in e for e in res["errors"]), res["errors"])
+
+    # -- rule20: forbidden-word-list rejection (schema-enforced) --
+
+    def test_rule20_priority_word_rejected(self):
+        card = load_fail("fail_rule20_priority_word_rejected.json")
+        res = k.validate_claim_card(card)
+        self.assertFalse(res["ok"])
+
+    def test_rule20_thai_priority_word_rejected(self):
+        card = copy.deepcopy(self.card)
+        card["comparison"] = {"target": None, "relation": "same", "basis": "เป็นครั้งแรกที่พบรูปแบบนี้"}
+        res = k.validate_claim_card(card)
+        self.assertFalse(res["ok"])
+
+    def test_rule20_same_different_cited_not_compared_accepted(self):
+        for relation in ("same", "different", "cited", "not_compared"):
+            card = copy.deepcopy(self.card)
+            card["comparison"] = {"target": "GLOSA-CC-00000000-0000", "relation": relation, "basis": "compared against a prior single-household case, method differs"}
+            res = k.validate_claim_card(card, citation_cards=[self.citation])
+            self.assertTrue(res["ok"], (relation, res["errors"]))
+
+    def test_rule20_empty_basis_once_comparison_present_is_error(self):
+        card = copy.deepcopy(self.card)
+        card["comparison"] = {"target": None, "relation": "not_compared", "basis": ""}
+        res = k.validate_claim_card(card)
+        self.assertFalse(res["ok"])
+
+    # -- rule21: genre/register layer-mismatch (warning-only diagnostic) --
+
+    def test_rule21_layer_mismatch_warns_not_fails(self):
+        card = copy.deepcopy(self.card)
+        card["standpoint"]["declared_basis"] = "fatwa issued by the local jurisprudential committee"
+        card["five_questions"]["tested"]["evidence_relations"][0]["notes"] = "confirmed by telescope observation and ephemeris calculation"
+        res = k.validate_claim_card(card, citation_cards=[self.citation])
+        self.assertTrue(res["ok"], res["errors"])
+        self.assertTrue(any("rule21" in w for w in res["warnings"]), res["warnings"])
+
+    def test_rule21_matching_layers_silent(self):
+        card = copy.deepcopy(self.card)
+        card["standpoint"]["declared_basis"] = "fatwa issued by the local jurisprudential committee"
+        card["five_questions"]["tested"]["evidence_relations"][0]["notes"] = "fiqh ruling on this matter"
+        res = k.validate_claim_card(card, citation_cards=[self.citation])
+        self.assertFalse(any("rule21" in w for w in res["warnings"]), res["warnings"])
+
+    # -- rule23: verdict_class six-value enum (schema-enforced) --
+
+    def test_rule23_verdict_class_unlisted(self):
+        card = load_fail("fail_rule23_verdict_class_unlisted.json")
+        res = k.validate_claim_card(card)
+        self.assertFalse(res["ok"])
+
+    def test_rule23_verdict_class_forced_accepted(self):
+        card = copy.deepcopy(self.card)
+        card["verdict_class"] = "FORCED"
+        res = k.validate_claim_card(card, citation_cards=[self.citation])
+        self.assertTrue(res["ok"], res["errors"])
+
+    # -- rule26: composite-quote detector (citation_card, kernel-only) --
+
+    def test_rule26_composite_quote(self):
+        citation = load_fail("fail_rule26_composite_quote.json")
+        res = k.validate_citation_card(citation)
+        self.assertFalse(res["ok"])
+        self.assertTrue(any("rule26" in e for e in res["errors"]), res["errors"])
+
+    def test_rule26_splice_double_hyphen_variant(self):
+        citation = copy.deepcopy(self.citation)
+        citation["exact_passage"] = "first half of the quote -- second half glued on"
+        res = k.validate_citation_card(citation)
+        self.assertFalse(res["ok"])
+        self.assertTrue(any("rule26" in e for e in res["errors"]), res["errors"])
+
+    def test_rule26_clean_passage_passes(self):
+        res = k.validate_citation_card(self.citation)
+        self.assertTrue(res["ok"], res["errors"])
+
+    # -- rule27: hidden-AI-fill detector --
+
+    def test_rule27_hidden_ai_fill(self):
+        card = load_fail("fail_rule27_hidden_ai_fill.json")
+        res = k.validate_claim_card(card)
+        self.assertFalse(res["ok"])
+        self.assertTrue(any("rule27" in e for e in res["errors"]), res["errors"])
+
+    def test_rule27_disclosed_ai_involvement_passes(self):
+        card = copy.deepcopy(self.card)
+        card["five_questions"]["seen"]["ai_assisted_fields"] = ["access_model"]
+        # ai_filled.retained_record_route already discloses AI drafting in the valid example --
+        # not every value is a placeholder, so rule27 does not fire.
+        res = k.validate_claim_card(card, citation_cards=[self.citation])
+        self.assertFalse(any("rule27" in e for e in res["errors"]), res["errors"])
+
+    def test_rule27_empty_ai_assisted_fields_untouched(self):
+        res = k.validate_claim_card(self.card, citation_cards=[self.citation])
+        self.assertFalse(any("rule27" in e for e in res["errors"]), res["errors"])
+
+    # -- rule28: inflated-bearing detector --
+
+    def test_rule28_inflated_bearing(self):
+        card = load_fail("fail_rule28_inflated_bearing.json")
+        res = k.validate_claim_card(card)
+        self.assertFalse(res["ok"])
+        self.assertTrue(any("rule28" in e for e in res["errors"]), res["errors"])
+
+    def test_rule28_unresolvable_citation_ref_when_citation_cards_supplied(self):
+        card = copy.deepcopy(self.card)
+        res = k.validate_claim_card(card, citation_cards=[])  # cite-cat-obs-001 will not resolve
+        self.assertFalse(res["ok"])
+        self.assertTrue(any("rule28" in e and "does not resolve" in e for e in res["errors"]), res["errors"])
+
+    def test_rule28_context_only_citation_scope(self):
+        card = copy.deepcopy(self.card)
+        citation = copy.deepcopy(self.citation)
+        citation["scope"] = "CONTEXT_ONLY_NOT_EVIDENCE"
+        res = k.validate_claim_card(card, citation_cards=[citation])
+        self.assertFalse(res["ok"])
+        self.assertTrue(any("rule28" in e and "CONTEXT_ONLY_NOT_EVIDENCE" in e for e in res["errors"]), res["errors"])
+
+    def test_rule28_strength_context_is_honestly_scoped_and_passes(self):
+        card = copy.deepcopy(self.card)
+        card["five_questions"]["tested"]["evidence_relations"][0]["strength"] = "context"
+        res = k.validate_claim_card(card, citation_cards=[])
+        self.assertFalse(any("rule28" in e for e in res["errors"]), res["errors"])
+
+    def test_rule28_resolved_direct_evidence_passes(self):
+        res = k.validate_claim_card(self.card, citation_cards=[self.citation])
+        self.assertTrue(res["ok"], res["errors"])
 
 
 if __name__ == "__main__":
