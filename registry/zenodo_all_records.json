@@ -1,5 +1,55 @@
 [
  {
+  "id": 22307751,
+  "doi": "10.5281/zenodo.22307751",
+  "concept": "10.5281/zenodo.22307750",
+  "title": "The Epistemic Chain Reaction: Human-AI Multiplication from Questions to Readout-Distinguishable Hypotheses — A Controlled Amplification Architecture for Scientific Discovery",
+  "date": "2026-09-04",
+  "type": "Preprint",
+  "kw": [
+   "human-ai collaboration",
+   "scientific hypothesis generation",
+   "question formation",
+   "ai for science",
+   "epistemic chain reaction",
+   "candidate-set formation",
+   "semantic mobil-",
+   "epistemic chain reaction",
+   "human-ai augmentation",
+   "hypothesis generation",
+   "glosa k0",
+   "bounded knower",
+   "readout universe"
+  ],
+  "desc": " Series. Paper IV of the Bounded Knower sequence. Paper I: From Problem to Hypothesis (DOI 10.5281/zenodo.22307148). Paper II: Knowledge Topology and the First Passage to Usable Hypotheses (DOI 10.5281/zenodo.22307561). Paper III: Before Evidence Can Decide (DOI 10.5281/zenodo.22307564). Status. GLOSA K0 conceptual and agenda paper — timestamped and citable, not independently reviewed, no priority claim; central augmentation laws remain [Open]. Produced with the glosa methodology (DOI 10.5281/zenodo.22301060); the author's raw lines are in the Blackbox Log (concept DOI 10.5281/zenodo.22302518). Abstract. Readout Universe; Readout Genesis Large language models and multi-agent systems can already generate, critique, rank, refine, and experimentally update scientific hypotheses. Yet the strongest form of human-AI augmentation may not be one-shot idea generation or autonomous replacement of scientists. Building on three companion papers, this manuscript proposes a controlled epistemic chain reaction: a human retains the problem and question, while heterogeneous AI processes recursively decompose the question, traverse distant knowledge structures, generate candidate relations, critique them, collapse readout-equivalent variants, and propagate only new candidate classes that clear declared grounding and discriminability gates. Each retained frontier item can then seed new subquestions or rival hypotheses. A finite epistemic multiplication factor, kepi , is introduced as the number",
+  "cluster": "ep",
+  "tags": [
+   "ai"
+  ]
+ },
+ {
+  "id": 22307721,
+  "doi": "10.5281/zenodo.22307721",
+  "concept": "10.5281/zenodo.22302518",
+  "title": "ปูมกล่องดำ — บันทึกเสียงดิบ ข้อค้นพบ และคำถามรายวันของ เยาฮารี แหละตี (Blackbox Log, Yaoharee Lahtee)",
+  "date": "2026-09-04",
+  "type": "Other",
+  "kw": [
+   "blackbox log",
+   "ปูมกล่องดำ",
+   "research diary",
+   "raw voice",
+   "readout universe",
+   "glosa",
+   "yaoharee lahtee"
+  ],
+  "desc": " ปูมกล่องดำ (Blackbox Log) — บันทึกเสียงดิบ ข้อค้นพบ และคำถามรายวันของผู้เขียน ตามที่พูดจริง (verbatim) ไม่ผ่านการปรุงและไม่ผ่านการตรวจอิสระ (tier: positional/Dr) บันทึกเพิ่มได้อย่างเดียว ไม่แก้ไม่ลบ; อัปเดตเป็นเวอร์ชันใหม่ของ record เดียวกัน เลนส์ที่ใช้มองปัญหา: Readout Universe — Yaoharee Lahtee. ระบบที่เก็บ: glosa (github.com/morrocwi/glosa). เวอร์ชันนี้: 105 บันทึก ถึง 2026-09-04. Blackbox Log — a daily, append-only, verbatim record of the author's raw voice (one pre-release correction is disclosed in BBL-2026-09-04-082), findings and questions (Thai is the source of truth). Not a paper; not reviewed; tier positional/Dr. Contains the author's own words only; the single AI-written line is a disclosed correction entry (by=ai, BBL-2026-09-04-082), never the author's voice. Each update is a new version of the same record. Lens: Readout Universe — Yaoharee Lahtee; kept by the glosa toolchain. ",
+  "cluster": "ep",
+  "tags": [
+   "ai"
+  ]
+ },
+ {
   "id": 22307564,
   "doi": "10.5281/zenodo.22307564",
   "concept": "10.5281/zenodo.22307563",
@@ -16,7 +66,7 @@
    "bounded knower",
    "readout universe"
   ],
-  "desc": " Series. Paper III (agenda paper) of the three-paper Bounded Knower sequence. Paper I: From Problem to Hypothesis (DOI 10.5281/zenodo.22307148). Paper II: Knowledge Topology and the First Passage to Usable Hypotheses (DOI 10.5281/zenodo.22307561). Status. GLOSA K0 — timestamped and citable, not independently reviewed, no priority claim. Produced with the glosa methodology (DOI 10.5281/zenodo.22301060); the author's raw lines behind the sequence are in the Blackbox Log (concept DOI 10.5281/zenodo.22302518). Abstract. ",
+  "desc": " Series. Paper III (agenda paper) of the three-paper Bounded Knower sequence. Paper I: From Problem to Hypothesis (DOI 10.5281/zenodo.22307148). Paper II: Knowledge Topology and the First Passage to Usable Hypotheses (DOI 10.5281/zenodo.22307561). Paper IV: The Epistemic Chain Reaction (DOI 10.5281/zenodo.22307751). Status. GLOSA K0 — timestamped and citable, not independently reviewed, no priority claim. Produced with the glosa methodology (DOI 10.5281/zenodo.22301060); the author's raw lines behind the sequence are in the Blackbox Log (concept DOI 10.5281/zenodo.22302518). Abstract. ",
   "cluster": "ep",
   "tags": []
  },
@@ -36,7 +86,7 @@
    "bounded knower",
    "readout universe"
   ],
-  "desc": " Series. Paper II of the three-paper Bounded Knower sequence. Paper I: From Problem to Hypothesis (DOI 10.5281/zenodo.22307148). Paper III: Before Evidence Can Decide (DOI 10.5281/zenodo.22307564). Status. GLOSA K0 — timestamped and citable, not independently reviewed, no priority claim. Produced with the glosa methodology (DOI 10.5281/zenodo.22301060); the author's raw lines behind the sequence are in the Blackbox Log (concept DOI 10.5281/zenodo.22302518). Abstract. ",
+  "desc": " Series. Paper II of the three-paper Bounded Knower sequence. Paper I: From Problem to Hypothesis (DOI 10.5281/zenodo.22307148). Paper III: Before Evidence Can Decide (DOI 10.5281/zenodo.22307564). Paper IV: The Epistemic Chain Reaction (DOI 10.5281/zenodo.22307751). Status. GLOSA K0 — timestamped and citable, not independently reviewed, no priority claim. Produced with the glosa methodology (DOI 10.5281/zenodo.22301060); the author's raw lines behind the sequence are in the Blackbox Log (concept DOI 10.5281/zenodo.22302518). Abstract. ",
   "cluster": "ep",
   "tags": []
  },
@@ -67,29 +117,7 @@
    "bounded knower",
    "standalone scholar"
   ],
-  "desc": " Series. Paper I of the three-paper Bounded Knower sequence. Paper II: Knowledge Topology and the First Passage to Usable Hypotheses (DOI 10.5281/zenodo.22307561). Paper III: Before Evidence Can Decide (DOI 10.5281/zenodo.22307564). Status. Bounded-knower final author draft under the Readout Universe / Readout Genesis architecture; GLOSA K0 — timestamped and citable, not independently reviewed, no priority claim. Claim tiers explicit: [definition], [Dr], [Open], [finite_diagnostic]. Produced with the glosa methodology (Rigour Without Infrastructure, DOI 10.5281/zenodo.22301060); the founder's raw lines behind it are in the Blackbox Log (concept DOI 10.5281/zenodo.22302518, e.g. entry BBL-2026-09-04-094 on imagination as reversible transport). Abstract. Scientific hypothesis generation is distributed across literatures on problem construction, abduction, analogy, model-based reasoning, semantic memory and control, insight, underdetermination, experimental discrimination, distributed cognition, and AI-assisted discovery. This paper proposes a readout-native architecture for the narrower domain of hypothesis-generating imagination. Its central thesis is that imagination can be modeled as bounded dynamic semantic mobility: not an infinite faculty and not a static set of reachable ideas, but a time-indexed process over semantic readouts whose transitions are provenance-audited, dynamically weighted, history-sensitive, and explicitly restructurable. Binary reachability is separated",
-  "cluster": "ep",
-  "tags": [
-   "ai"
-  ]
- },
- {
-  "id": 22305396,
-  "doi": "10.5281/zenodo.22305396",
-  "concept": "10.5281/zenodo.22302518",
-  "title": "ปูมกล่องดำ — บันทึกเสียงดิบ ข้อค้นพบ และคำถามรายวันของ เยาฮารี แหละตี (Blackbox Log, Yaoharee Lahtee)",
-  "date": "2026-09-04",
-  "type": "Other",
-  "kw": [
-   "blackbox log",
-   "ปูมกล่องดำ",
-   "research diary",
-   "raw voice",
-   "readout universe",
-   "glosa",
-   "yaoharee lahtee"
-  ],
-  "desc": " ปูมกล่องดำ (Blackbox Log) — บันทึกเสียงดิบ ข้อค้นพบ และคำถามรายวันของผู้เขียน ตามที่พูดจริง (verbatim) ไม่ผ่านการปรุงและไม่ผ่านการตรวจอิสระ (tier: positional/Dr) บันทึกเพิ่มได้อย่างเดียว ไม่แก้ไม่ลบ; อัปเดตเป็นเวอร์ชันใหม่ของ record เดียวกัน เลนส์ที่ใช้มองปัญหา: Readout Universe — Yaoharee Lahtee. ระบบที่เก็บ: glosa (github.com/morrocwi/glosa). เวอร์ชันนี้: 93 บันทึก ถึง 2026-09-04. Blackbox Log — a daily, append-only, verbatim record of the author's raw voice (one pre-release correction is disclosed in BBL-2026-09-04-082), findings and questions (Thai is the source of truth). Not a paper; not reviewed; tier positional/Dr. Contains the author's own words only; the single AI-written line is a disclosed correction entry (by=ai, BBL-2026-09-04-082), never the author's voice. Each update is a new version of the same record. Lens: Readout Universe — Yaoharee Lahtee; kept by the glosa toolchain. ",
+  "desc": " Series. Paper I of the three-paper Bounded Knower sequence. Paper II: Knowledge Topology and the First Passage to Usable Hypotheses (DOI 10.5281/zenodo.22307561). Paper III: Before Evidence Can Decide (DOI 10.5281/zenodo.22307564). Paper IV: The Epistemic Chain Reaction (DOI 10.5281/zenodo.22307751). Status. Bounded-knower final author draft under the Readout Universe / Readout Genesis architecture; GLOSA K0 — timestamped and citable, not independently reviewed, no priority claim. Claim tiers explicit: [definition], [Dr], [Open], [finite_diagnostic]. Produced with the glosa methodology (Rigour Without Infrastructure, DOI 10.5281/zenodo.22301060); the founder's raw lines behind it are in the Blackbox Log (concept DOI 10.5281/zenodo.22302518, e.g. entry BBL-2026-09-04-094 on imagination as reversible transport). Abstract. Scientific hypothesis generation is distributed across literatures on problem construction, abduction, analogy, model-based reasoning, semantic memory and control, insight, underdetermination, experimental discrimination, distributed cognition, and AI-assisted discovery. This paper proposes a readout-native architecture for the narrower domain of hypothesis-generating imagination. Its central thesis is that imagination can be modeled as bounded dynamic semantic mobility: not an infinite faculty and not a static set of reachable ideas, but a time-indexed process over semantic readouts whose transitions are provenance-audited, dynamically weighted, history-sens",
   "cluster": "ep",
   "tags": [
    "ai"

@@ -1,0 +1,161 @@
+{
+ "manifest_id": "rel-glosa-concept-paper-0.2.0",
+ "artifact_refs": {
+  "claim_ids": [
+   "GLOSA-CC-20260904-0201",
+   "GLOSA-CC-20260904-0202",
+   "GLOSA-CC-20260904-0203"
+  ],
+  "citation_card_ids": [
+   "cite-bangladesh-readiness-007",
+   "cite-cofact-thai-detector-009",
+   "cite-crossmodel-codereview-002",
+   "cite-cstp-boundary-work-001",
+   "cite-disclosure-not-documentation-001",
+   "cite-iseas-sea-governance-008",
+   "cite-legalai-india-006",
+   "cite-llm-hallucination-survey-001",
+   "cite-mindstudio-crossvendor-010",
+   "cite-multiagent-debate-004",
+   "cite-ocsdnet-honf-001",
+   "cite-own-blackbox-log-h1-006",
+   "cite-own-blackbox-log-h2-006",
+   "cite-own-blackbox-log-h3-006",
+   "cite-own-civilization-of-knowledge-h2-007",
+   "cite-own-knowledge-stabilized-translation-h3-007",
+   "cite-own-readout-condition-h1-002",
+   "cite-own-readout-condition-h2-002",
+   "cite-own-readout-condition-h3-002",
+   "cite-own-readout-genesis-h1-003",
+   "cite-own-readout-genesis-h2-003",
+   "cite-own-readout-genesis-h3-003",
+   "cite-own-standalone-scholar-h1-005",
+   "cite-own-standalone-scholar-h2-005",
+   "cite-own-standalone-scholar-h3-005",
+   "cite-own-written-ai-h1-001",
+   "cite-own-written-ai-h2-001",
+   "cite-own-written-ai-h3-001",
+   "cite-own-zero-readout-h1-004",
+   "cite-own-zero-readout-h2-004",
+   "cite-own-zero-readout-h3-004",
+   "cite-pgph-citizen-science-sea-001",
+   "cite-rigour-without-infrastructure-001",
+   "cite-rigour-without-infrastructure-002",
+   "cite-rigour-without-infrastructure-003",
+   "cite-rigour-without-infrastructure-004",
+   "cite-rigour-without-infrastructure-005",
+   "cite-rigour-without-infrastructure-006",
+   "cite-rigour-without-infrastructure-007",
+   "cite-rigour-without-infrastructure-008",
+   "cite-rigour-without-infrastructure-009",
+   "cite-rsos-citizen-epistemology-001",
+   "cite-rsos-preprint-credibility-001",
+   "cite-scholarly-kitchen-credentialism-001",
+   "cite-selfcorrect-reasoning-005",
+   "cite-selfpreference-judge-001",
+   "cite-tcij-freelance-th-001",
+   "cite-toohconsistent-003"
+  ],
+  "project_ref": "projects/GLS-2026-001_rigour-without-infrastructure",
+  "genre": "conceptual",
+  "venue_track": "none"
+ },
+ "gate_verdict": "PASS_WITH_LIMITS",
+ "adversarial_review": {
+  "r1_leak_scan": {
+   "result": "PASS_WITH_LIMITS",
+   "notes": "gate v2 found local paths in two log entries + one upload spec (fixed: redacted; generic /home catch-all added to the denylist); check_leak.sh PASS after fix"
+  },
+  "r2_license_coverage": {
+   "result": "PASS_WITH_LIMITS",
+   "notes": "CC BY 4.0 whole repo; two verbatim source quotations had been damaged by a vendor-name scrub and were restored (quotations may name vendors; credits may not)"
+  },
+  "r3_tier_fidelity": {
+   "result": "PASS_WITH_LIMITS",
+   "notes": "no BLOCK; captions/claim-matrix/A2/rev-history warnings fixed; all claims Dr, K0, propositions not results"
+  },
+  "r4_citation_accuracy": {
+   "result": "PASS",
+   "notes": "48/48 citation cards VERIFIED (I3 route, rule 17: link+page+line+verbatim); spot-checks passed"
+  },
+  "r5_anchor_preservation_audit": {
+   "result": "PASS_WITH_LIMITS",
+   "notes": "README documents-of-record, registry line, version anchors 0.2.0, llms/paper README pointers fixed"
+  },
+  "r6_overclaim_register_scan": {
+   "result": "PASS_WITH_LIMITS",
+   "notes": "forbidden-word scan PASS; two damaged quotations restored"
+  },
+  "r7_completeness": {
+   "result": "PASS_WITH_LIMITS",
+   "notes": "Blackbox appendix, lens_used, disclaimers, cooking log, self-review subsection present; D-TRANSLATION text corrected to machine"
+  },
+  "reviewed_by": "adversarial gate v2 (7 independent AI review routes, 2 skeptics per BLOCK; not the maker)",
+  "reviewed_at": "2026-09-05"
+ },
+ "independent_check_summary": {
+  "maker_id": "founder+AI assistant",
+  "checker_id": "cross-vendor routes R1-R3 (claims) + gate v2 (artifact)",
+  "approver_id": null,
+  "independence_class": "I3",
+  "mc_level": "L2",
+  "approver_kind": "ai"
+ },
+ "blackbox_note_appendix_present": true,
+ "blackbox_note_appendix_ref": "paper/glosa-concept-paper/main.tex#appendix-b-blackbox-note",
+ "k_state_declared": "K0",
+ "status": "Pending Review",
+ "disclaimers_emitted": [
+  {
+   "id": "D-AIFILL"
+  },
+  {
+   "id": "D-AUTHORSHIP"
+  },
+  {
+   "id": "D-BLACKBOX-NOTE"
+  },
+  {
+   "id": "D-CANDIDATE-STATUS"
+  },
+  {
+   "id": "D-DISSENT-PRESERVED"
+  },
+  {
+   "id": "D-EXTERNAL-INPUT"
+  },
+  {
+   "id": "D-K-STATE"
+  },
+  {
+   "id": "D-NO-EPISTEMIC-VETO"
+  },
+  {
+   "id": "D-NONCLAIM"
+  },
+  {
+   "id": "D-NONEXPERT"
+  },
+  {
+   "id": "D-REVISION-LIVE"
+  },
+  {
+   "id": "D-STANDPOINT"
+  },
+  {
+   "id": "D-TIER"
+  },
+  {
+   "id": "D-TRANSLATION"
+  }
+ ],
+ "human_owner": "founder",
+ "revision_history": [
+  {
+   "rev": "1",
+   "date": "2026-09-05",
+   "by": "AI assistant",
+   "note": "assembled after gate v2 fixes; founder approval pending"
+  }
+ ]
+}

@@ -2,7 +2,7 @@
 
 > **นี่คือปูมเสียงดิบ ไม่ใช่บทความ** — ทุกบรรทัดคือคำพูดตามที่พูด (verbatim) ณ วันเวลานั้น ยังไม่ผ่านการปรุง ไม่ผ่านการตรวจอิสระ (tier: positional / Dr) บันทึกเพิ่มได้อย่างเดียว ไม่แก้ไม่ลบ (แก้ = บรรทัดใหม่ที่อ้างบรรทัดเดิม) เลนส์ที่ใช้มองปัญหา: **Readout Universe — Yaoharee Lahtee** (10.5281/zenodo.21529456, 10.5281/zenodo.22301318, 10.5281/zenodo.22301202; github.com/morrocwi/readout_universe) ระบบที่เก็บ: glosa (github.com/morrocwi/glosa) **ปูมนี้มีเฉพาะเสียงของผู้เขียนเท่านั้น** — ไม่มีบรรทัดที่ AI เขียน (คำตัดสินผู้เขียน 2026-09-04: บันทึกระบบที่ AI เคยใส่ไว้ 1 รายการถูกถอดออกและเก็บไว้ที่ blackbox/log/removed_ai_entries.json) ป้าย "เนื้อหาที่สร้างโดย AI" ที่ Facebook ติดให้บางโพสต์เกิดจากรูปประกอบที่ทำด้วย AI ไม่ใช่ตัวข้อความ จึงไม่ถูกนำมาบันทึก
 
-จำนวนบันทึก: 105 · อัปเดตล่าสุด: 2026-09-04T22:42:54+07:00
+จำนวนบันทึก: 106 · อัปเดตล่าสุด: 2026-09-04T23:00:38+07:00
 
 ## สารบัญตามหมวดความคิด (ไม่เรียงตามวันที่)
 
@@ -56,7 +56,7 @@
 - **BBL-2026-09-04-067** (2026-09-04, finding, cheapest-contextual-knowledge, cost-of-knowledge, dependence-on-authority) — ว่ากันตามจริงแล้ว ตอนนี้เรากำลังยุคที่ความรู้ที่สอดคล้องตามบริบท…
 - **BBL-2026-09-04-070** (2026-09-04, finding, global-labour, token-priced-labour, ai-brokers, white-collar-replacement, epistemic-reordering, chaotic-renaissance) — ในภาพรวมของแรงงานโลก หากแบ่งอย่างหยาบที่สุด อาจแบ่งได้เป็นสองประเภทใหญ่ ๆ คือ แรงงานที่ทัก…
 
-### วิธีวิทยา / ระบบ glosa (33)
+### วิธีวิทยา / ระบบ glosa (34)
 
 - **BBL-2026-09-04-001** (2026-09-04, ruling, spine, lens) — ที่สำคัญอย่าลืม ให้เริ่มจากมองปัญหาด้วยเลนส์ readout ก่อน แล้วแปลกลับเป็นภาษษโลกเพื่อสกัดส…
 - **BBL-2026-09-04-002** (2026-09-04, ruling, system) — ทำให้ทั้งหมดรวมเป็นระบบเดียวที่นิ่ง…
@@ -91,6 +91,7 @@
 - **BBL-2026-09-04-104** (2026-09-04, ruling, attribution, no-ai-coauthor, zenodo, git) — co authore ที่แอบใส่ไว้ในระบบ zendo ว่าเป็น claude ให้ลบทั้งหมด…
 - **BBL-2026-09-04-105** (2026-09-04, ruling, attribution, permission-only, gate-rule) — ตั้งกติกาเลยว่าถ้าจะใส่อะไรพวกนีต้องขออนุญาติเท่านั้นใน claude.md…
 - **BBL-2026-09-04-106** (2026-09-04, instruction, zenodo, series, bounded-knower, paper-II, paper-III, linking) — เอาสองเอกสารนี้ เชื่อมกับเอกสารก่อนหน้าให้อ'<local path redacted>/Before_Evidence_Can_Deci…
+- **BBL-2026-09-04-107** (2026-09-04, instruction, zenodo, series, paper-IV, epistemic-chain-reaction) — ต่ออันนี้เปเปอร์สี่'<local path redacted>/Epistemic_Chain_Reaction_Paper_IV_K0.pdf'…
 
 ### กล่องดำ / เสียงดิบ (7)
 
@@ -1958,4 +1959,8 @@
 **BBL-2026-09-04-106** · 22:42 · ผู้ก่อตั้ง · instruction · หมวด: วิธีวิทยา / ระบบ glosa · zenodo, series, bounded-knower, paper-II, paper-III, linking · ที่มา: chat 2026-09-05 ~01:40 — publish Paper II + III and link the three-paper sequence (I = 10.5281/zenodo.22307148) as one series on Zenodo ( | local filesystem paths in the pasted file references redacted for the public record (privacy gate R1, 2026-09-05); the founder's words are otherwise unchanged)
 
 > เอาสองเอกสารนี้ เชื่อมกับเอกสารก่อนหน้าให้อ'<local path redacted>/Before_Evidence_Can_Decide_Paper_III_K0.pdf' '<local path redacted>/Knowledge_Topology_First_Passage_Usable_Hypotheses_K0.pdf' ่ อ่านหากันได้ เข้า zenodo เป็นซีรีส์เดียวกัน
+
+**BBL-2026-09-04-107** · 23:00 · ผู้ก่อตั้ง · instruction · หมวด: วิธีวิทยา / ระบบ glosa · zenodo, series, paper-IV, epistemic-chain-reaction · ที่มา: chat 2026-09-05 ~02:20 — add Paper IV to the Bounded Knower series on Zenodo (local path redacted in the public record, privacy gate R1)
+
+> ต่ออันนี้เปเปอร์สี่'<local path redacted>/Epistemic_Chain_Reaction_Paper_IV_K0.pdf'
 
