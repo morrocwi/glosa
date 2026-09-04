@@ -1,53 +1,45 @@
 $schema: citation_card.schema.json
 id: cite-pgph-citizen-science-sea-001
 claim_ref: hypothesis-rigour-without-infrastructure-H1
-
 identifier:
   kind: DOI
-  value: "10.1371/journal.pgph.0003696"
-
+  value: 10.1371/journal.pgph.0003696
 fetch_status: FETCHED
-fetched_at: "2026-09-04"
-
+fetched_at: '2026-09-04'
 metadata_verified: true
-metadata_verified_by: "mechanical:crossref"
-metadata_verified_at: "2026-09-04"
-
+metadata_verified_by: mechanical:crossref
+metadata_verified_at: '2026-09-04'
 claim_match_verified: true
-claim_match_verified_by: "independent_ai_route:same_session_i1"
-claim_match_verified_at: "2026-09-04"
-
-exact_passage: >-
-  The study frames citizen readiness as "people being the recipients of policies and programs,
-  ready to have their voices included" in pandemic preparedness and response governance across
-  South and Southeast Asian countries (Philippines, Indonesia, Nepal, Bangladesh, Singapore in the
-  author pool).
-page_or_locator: "Abstract/Discussion (PMC12370037)"
-
+claim_match_verified_by: route:codex
+claim_match_verified_at: '2026-09-04'
+exact_passage: The study frames citizen readiness as "people being the recipients
+  of policies and programs, ready to have their voices included" in pandemic preparedness
+  and response governance across South and Southeast Asian countries (Philippines,
+  Indonesia, Nepal, Bangladesh, Singapore in the author pool).
+page_or_locator: Abstract/Discussion (PMC12370037)
 scope: CONTEXT_ONLY_NOT_EVIDENCE
-
 evidence_tier: Dr
-independence_class: I1
-
-who_verified: "AI (same session, this run)"
+independence_class: I3
+who_verified: route:codex (cross-vendor AI; abstract/metadata level, not full text)
+  -- see cite-pgph-citizen-science-sea-001.i3.json
 verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
-
-status: METADATA_OK
-
+status: VERIFIED
 xenon_ledger_ref: null
-
-disclosure: >-
-  Same-session AI check only (I1) -- METADATA_OK, not VERIFIED. Title/author/year/venue confirmed
-  mechanically via Crossref (Kumar, Hauter, Canlas, Sunaryoko, Maharjan, Anowar, Khosa, Tan, Yap;
-  PLOS Global Public Health, 2025-08-21). ORTHOGONAL to H1: this is about citizen participation
-  being heard by governance/policy institutions (a voice/inclusion claim), not about whether a
-  claim a citizen produces carries reader-checkable rigour (H1's actual claim) -- context only, not
-  evidence for or against H1's mechanism. Recorded honestly as orthogonal rather than stretched
-  into a support/challenge stance it does not carry.
-
+disclosure: 'Same-session AI check only (I1) -- METADATA_OK, not VERIFIED. Title/author/year/venue
+  confirmed mechanically via Crossref (Kumar, Hauter, Canlas, Sunaryoko, Maharjan,
+  Anowar, Khosa, Tan, Yap; PLOS Global Public Health, 2025-08-21). ORTHOGONAL to H1:
+  this is about citizen participation being heard by governance/policy institutions
+  (a voice/inclusion claim), not about whether a claim a citizen produces carries
+  reader-checkable rigour (H1''s actual claim) -- context only, not evidence for or
+  against H1''s mechanism. Recorded honestly as orthogonal rather than stretched into
+  a support/challenge stance it does not carry. | I3 route (codex) judged from fetched
+  metadata/abstract + the card''s quoted passage, not full text: Title/authors/year
+  do not contradict the card. Abstract supports a South/Southeast Asia citizen-science
+  pandemic-preparedness study and makes the quoted framing plausible, though not verified
+  verbatim. As scoped, it provides contextual background rather than evidence for
+  H1.'
 superseded_by: null
-notes: >-
-  Global South / Southeast Asia (author institutions across Philippines, Indonesia, Nepal,
-  Bangladesh, Singapore), EN, peer-reviewed, journal-article. Found via query family: support
-  (citizen science Southeast Asia community data collection Thailand ASEAN). Dialogue-table
-  stance: ORTHOGONAL.
+notes: 'Global South / Southeast Asia (author institutions across Philippines, Indonesia,
+  Nepal, Bangladesh, Singapore), EN, peer-reviewed, journal-article. Found via query
+  family: support (citizen science Southeast Asia community data collection Thailand
+  ASEAN). Dialogue-table stance: ORTHOGONAL.'

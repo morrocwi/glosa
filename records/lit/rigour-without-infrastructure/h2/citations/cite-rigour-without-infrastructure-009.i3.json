@@ -1,0 +1,16 @@
+{
+ "vendor": "codex",
+ "fetched": {
+  "source": "url-fetch",
+  "title": "ไทย เดินหน้า ‘Open Science’ เปิดงานวิจัยทั้งประเทศให้ทุกคนเข้าถึงได้จริง",
+  "abstract": "ไทย เดินหน้า ‘Open Science’ อย่างเต็มตัว! สกสว. ปลดล็อกงานวิจัย 500,000 บทความให้ประชาชนเข้าถึงได้จริงเหมือนข้อมูลอินเทอร์เน็ต ชูแพลตฟอร์ม AI/NLP"
+ },
+ "verdict": {
+  "metadata_matches": true,
+  "passage_plausible": false,
+  "claim_match": false,
+  "bearing": "CONTEXT_ONLY",
+  "reason": "Metadata does not contradict the card. However only title/abstract metadata is provided, with no fetched article body to verify the exact passage. H2 content is not stated, so support for the hypothesis cannot be confirmed."
+ },
+ "date": "2026-09-04"
+}

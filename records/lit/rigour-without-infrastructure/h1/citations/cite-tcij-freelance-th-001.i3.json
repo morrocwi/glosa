@@ -1,0 +1,16 @@
+{
+ "vendor": "codex",
+ "fetched": {
+  "source": "url-fetch",
+  "title": "งานวิจัยต่างประเทศชี้ การขยายตัวจ้างงาน ‘นักวิชาการฟรีแลนซ์’ อาจทำลายวงการได้ - ศูนย์ข้อมูล&amp;ข่าวสืบสวนเพื่อสิทธิพลเมือง (TCIJ)",
+  "abstract": "งานวิจัยในต่างประเทศระบุ การจ้าง Outsourcing ของมหาวิทยาลัยต่าง ๆ ก่อให้เกิดคำถามด้านจริยธรรมเกี่ยวกับการใช้เง�"
+ },
+ "verdict": {
+  "metadata_matches": true,
+  "passage_plausible": true,
+  "claim_match": true,
+  "bearing": "CONTEXT_ONLY",
+  "reason": "Metadata title/source align with the card's TCIJ Thai 2020 context. The quoted passage is plausible given the title/abstract about freelance academics and outsourcing ethics. Since H1 content is not supplied, it can only match the card's limited CONTEXT_ONLY_NOT_EVIDENCE scope."
+ },
+ "date": "2026-09-04"
+}

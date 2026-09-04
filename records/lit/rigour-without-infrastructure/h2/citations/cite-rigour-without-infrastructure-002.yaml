@@ -9,30 +9,38 @@ fetched_at: '2026-09-04'
 metadata_verified: true
 metadata_verified_by: mechanical:crossref
 metadata_verified_at: '2026-09-04'
-claim_match_verified: true
-claim_match_verified_by: ai_route:same-session (I1)
+claim_match_verified: false
+claim_match_verified_by: route:codex
 claim_match_verified_at: '2026-09-04'
-exact_passage: '"the field lacks an overall, widely accepted approach to research integrity, which would
-  at least include training citizen scientists in concepts and methods of research integrity, establishing
-  mechanisms to protect the reliability of research results, and instituting processes to address instances
-  of research misconduct."'
-page_or_locator: theoryandpractice.citizenscienceassociation.org/articles/10.5334/cstp.207/, as fetched
-  2026-09-04
+exact_passage: '"the field lacks an overall, widely accepted approach to research
+  integrity, which would at least include training citizen scientists in concepts
+  and methods of research integrity, establishing mechanisms to protect the reliability
+  of research results, and instituting processes to address instances of research
+  misconduct."'
+page_or_locator: theoryandpractice.citizenscienceassociation.org/articles/10.5334/cstp.207/,
+  as fetched 2026-09-04
 scope: SUPPORTS_GENERAL_CLAIM_ONLY
 evidence_tier: Dr
-independence_class: I1
-who_verified: ai_route:same-session (I1)
+independence_class: I3
+who_verified: route:codex (cross-vendor AI; abstract/metadata level, not full text)
+  -- see cite-rigour-without-infrastructure-002.i3.json
 verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
 status: METADATA_OK
 xenon_ledger_ref: null
-disclosure: 'Crossref-confirmed: Lisa M. Rasmussen (2019), "Confronting Research Misconduct in Citizen
-  Science", Citizen Science: Theory and Practice, DOI 10.5334/cstp.207. Ambiguous with respect to H2:
-  it names an accepted-principles basis for citizen-science trust (record/practice-level, not institutional)
-  but flags that a widely accepted integrity framework does not yet exist -- read honestly as UNDETERMINED
-  support, not a clean YES. independence_class I1 (same session AI) -- status METADATA_OK only, not VERIFIED.'
+disclosure: 'Crossref-confirmed: Lisa M. Rasmussen (2019), "Confronting Research Misconduct
+  in Citizen Science", Citizen Science: Theory and Practice, DOI 10.5334/cstp.207.
+  Ambiguous with respect to H2: it names an accepted-principles basis for citizen-science
+  trust (record/practice-level, not institutional) but flags that a widely accepted
+  integrity framework does not yet exist -- read honestly as UNDETERMINED support,
+  not a clean YES. independence_class I1 (same session AI) -- status METADATA_OK only,
+  not VERIFIED. | I3 route (codex) judged from fetched metadata/abstract + the card''s
+  quoted passage, not full text: Metadata does not contradict the card, but only metadata
+  is fetched; no abstract/full text is available to verify the quoted passage. H2
+  content is not provided, so support for the hypothesis cannot be confirmed.'
 superseded_by: null
-notes: 'Diversity: language=en, source_type=peer_reviewed, geography=USA (Citizen Science Association),
-  search_route="web search: citizen science credibility trust independent verification not institution".'
+notes: 'Diversity: language=en, source_type=peer_reviewed, geography=USA (Citizen
+  Science Association), search_route="web search: citizen science credibility trust
+  independent verification not institution".'
 citation_card_id: cite-rigour-without-infrastructure-002
 identifier_kind: DOI
 claim_match_verification_route: NOT_YET
@@ -43,8 +51,8 @@ diversity:
   language: en
   discipline_or_tradition: research ethics / citizen science
   source_type: peer_reviewed
-  search_route_or_database: 'web search: citizen science credibility trust independent verification not
-    institution'
+  search_route_or_database: 'web search: citizen science credibility trust independent
+    verification not institution'
   geography_or_institution: USA (Citizen Science Association)
   venue_quality_index:
     index_name: null

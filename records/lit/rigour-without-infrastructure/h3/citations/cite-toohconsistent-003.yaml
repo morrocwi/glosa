@@ -4,18 +4,30 @@ identifier_kind: DOI
 fetch_status: FETCHED
 acquisition_log_ref: null
 metadata_verified: true
-claim_match_verified: true
+claim_match_verified: false
 claim_match_verification_route: NOT_YET
 version_status: PUBLISHED
 retraction_check: UNCHECKED
 dialogue_table_stance: agrees
 diversity:
   language: en
-  discipline_or_tradition: "NLP / LLM error detection"
+  discipline_or_tradition: NLP / LLM error detection
   source_type: peer_reviewed
-  search_route_or_database: "WebSearch (general web) -> Crossref (mechanical) + ACL Anthology page"
-  geography_or_institution: "not confirmed by any page this session directly opened (undetermined; an unopened secondary source hinted at a Chinese Academy of Sciences affiliation but is not used, per the secondary-citation ban)"
+  search_route_or_database: WebSearch (general web) -> Crossref (mechanical) + ACL
+    Anthology page
+  geography_or_institution: not confirmed by any page this session directly opened
+    (undetermined; an unopened secondary source hinted at a Chinese Academy of Sciences
+    affiliation but is not used, per the secondary-citation ban)
   venue_quality_index:
-    index_name: "EMNLP main conference (peer-reviewed, ACL)"
-    value: "main track"
-    date_read: "2026-09-04"
+    index_name: EMNLP main conference (peer-reviewed, ACL)
+    value: main track
+    date_read: '2026-09-04'
+independence_class: I3
+who_verified: route:codex (cross-vendor AI; abstract/metadata level, not full text)
+  -- see cite-toohconsistent-003.i3.json
+verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
+claim_match_verified_by: route:codex
+disclosure: ' | I3 route (codex) judged from fetched metadata/abstract + the card''s
+  quoted passage, not full text: Card has no identifier, title, scope, passage, or
+  locator; fetched metadata contains only no-identifier. There is no fetched text
+  to compare, so passage plausibility and claim bearing on H3 cannot be established.'

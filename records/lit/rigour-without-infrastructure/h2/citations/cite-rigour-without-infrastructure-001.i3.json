@@ -1,0 +1,16 @@
+{
+ "vendor": "codex",
+ "fetched": {
+  "source": "url-fetch",
+  "title": "Open-notebook science - Wikipedia",
+  "abstract": ""
+ },
+ "verdict": {
+  "metadata_matches": true,
+  "passage_plausible": false,
+  "claim_match": false,
+  "bearing": "CONTEXT_ONLY",
+  "reason": "Fetched metadata title matches the cited Wikipedia page, with no title/year/author contradiction shown. But only title and empty abstract were fetched, so there is no fetched text to compare the exact passage against. H2 is unspecified here, so bearing on the hypothesis cannot be confirmed."
+ },
+ "date": "2026-09-04"
+}

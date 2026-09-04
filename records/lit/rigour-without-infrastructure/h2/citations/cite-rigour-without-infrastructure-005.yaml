@@ -9,35 +9,45 @@ fetched_at: '2026-09-04'
 metadata_verified: true
 metadata_verified_by: mechanical:crossref
 metadata_verified_at: '2026-09-04'
-claim_match_verified: true
-claim_match_verified_by: ai_route:same-session (I1)
+claim_match_verified: false
+claim_match_verified_by: route:codex
 claim_match_verified_at: '2026-09-04'
-exact_passage: '"Hegemonic Open Science, emergent from the circuits of knowledge production in the Global
-  North and serving the economic interests of platform capitalism, systematically erase the voices of
-  the subaltern margins from the Global South and the Southern margins inhabiting the North... These decolonizing
-  practices foreground data sovereignty, community ownership, and public ownership of knowledge resources
-  as the bases of resistance to the colonial-capitalist interests of hegemonic Open Science."'
-page_or_locator: academic.oup.com/joc/advance-article/doi/10.1093/joc/jqab027/6364108, abstract, as fetched
-  2026-09-04
+exact_passage: '"Hegemonic Open Science, emergent from the circuits of knowledge production
+  in the Global North and serving the economic interests of platform capitalism, systematically
+  erase the voices of the subaltern margins from the Global South and the Southern
+  margins inhabiting the North... These decolonizing practices foreground data sovereignty,
+  community ownership, and public ownership of knowledge resources as the bases of
+  resistance to the colonial-capitalist interests of hegemonic Open Science."'
+page_or_locator: academic.oup.com/joc/advance-article/doi/10.1093/joc/jqab027/6364108,
+  abstract, as fetched 2026-09-04
 scope: CONTEXT_ONLY_NOT_EVIDENCE
 evidence_tier: Dr
-independence_class: I1
-who_verified: ai_route:same-session (I1)
+independence_class: I3
+who_verified: route:codex (cross-vendor AI; abstract/metadata level, not full text)
+  -- see cite-rigour-without-infrastructure-005.i3.json
 verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
 status: METADATA_OK
 xenon_ledger_ref: null
-disclosure: 'Crossref-confirmed: Mohan Dutta et al. (2021), "Decolonizing Open Science: Southern Interventions",
-  Journal of Communication, DOI 10.1093/joc/jqab027 (23 co-authors, Global-South and Global-South-diaspora
-  research collective). Orthogonal to H2 as read: this piece argues Open Science''s *governance/funding
-  infrastructure* remains Northern-institution-dominated and should instead be community/data-sovereignty-owned
-  -- a different question from whether a single claim''s own recorded structure can substitute for an
-  institutional credential at the claim level. Neither directly supports nor directly falsifies H2; logged
-  for Global-South diversity and as a genuinely different framing of "institution" (governance-of-the-field,
-  not credentialing-of-a-claim). independence_class I1 (same session AI) -- status METADATA_OK only.'
+disclosure: 'Crossref-confirmed: Mohan Dutta et al. (2021), "Decolonizing Open Science:
+  Southern Interventions", Journal of Communication, DOI 10.1093/joc/jqab027 (23 co-authors,
+  Global-South and Global-South-diaspora research collective). Orthogonal to H2 as
+  read: this piece argues Open Science''s *governance/funding infrastructure* remains
+  Northern-institution-dominated and should instead be community/data-sovereignty-owned
+  -- a different question from whether a single claim''s own recorded structure can
+  substitute for an institutional credential at the claim level. Neither directly
+  supports nor directly falsifies H2; logged for Global-South diversity and as a genuinely
+  different framing of "institution" (governance-of-the-field, not credentialing-of-a-claim).
+  independence_class I1 (same session AI) -- status METADATA_OK only. | I3 route (codex)
+  judged from fetched metadata/abstract + the card''s quoted passage, not full text:
+  Metadata does not contradict the card, and the passage matches the fetched abstract
+  with ellipsis. But H2 content is not provided, so I cannot verify that the source
+  bears on the hypothesis beyond the card''s context-only scope; uncertain therefore
+  false.'
 superseded_by: null
-notes: 'Diversity: language=en, source_type=peer_reviewed, geography=Global South (author collective spans
-  India, Aotearoa/NZ, Bangladesh, Philippines and other Southern/diasporic institutions), search_route="web
-  search: open science Global South decolonizing science credibility without Northern institutions".'
+notes: 'Diversity: language=en, source_type=peer_reviewed, geography=Global South
+  (author collective spans India, Aotearoa/NZ, Bangladesh, Philippines and other Southern/diasporic
+  institutions), search_route="web search: open science Global South decolonizing
+  science credibility without Northern institutions".'
 citation_card_id: cite-rigour-without-infrastructure-005
 identifier_kind: DOI
 claim_match_verification_route: NOT_YET
@@ -48,10 +58,10 @@ diversity:
   language: en
   discipline_or_tradition: communication studies / decolonial science studies
   source_type: peer_reviewed
-  search_route_or_database: 'web search: open science Global South decolonizing science credibility without
-    Northern institutions'
-  geography_or_institution: Global South (India, Aotearoa/NZ, Bangladesh, Philippines and other Southern/diasporic
-    institutions)
+  search_route_or_database: 'web search: open science Global South decolonizing science
+    credibility without Northern institutions'
+  geography_or_institution: Global South (India, Aotearoa/NZ, Bangladesh, Philippines
+    and other Southern/diasporic institutions)
   venue_quality_index:
     index_name: null
     value: null

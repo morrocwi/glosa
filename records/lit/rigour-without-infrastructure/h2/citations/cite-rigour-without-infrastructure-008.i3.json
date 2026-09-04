@@ -1,0 +1,16 @@
+{
+ "vendor": "codex",
+ "fetched": {
+  "source": "url-fetch",
+  "title": "Establishing Trustworthiness in Qualitative Research in Science Classrooms\n\t\t\t\t\t\t\t|  Journal of Teacher Professional Learning Community (JTPLC) (Online)",
+  "abstract": ""
+ },
+ "verdict": {
+  "metadata_matches": true,
+  "passage_plausible": false,
+  "claim_match": false,
+  "bearing": "CONTEXT_ONLY",
+  "reason": "Metadata title does not contradict the card, but fetched data contains no body text and an empty abstract, so the quoted passage cannot be verified. H2 is not specified beyond its label, so support cannot be judged."
+ },
+ "date": "2026-09-04"
+}

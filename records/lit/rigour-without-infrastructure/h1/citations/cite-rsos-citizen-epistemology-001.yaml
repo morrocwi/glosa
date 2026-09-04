@@ -1,52 +1,45 @@
 $schema: citation_card.schema.json
 id: cite-rsos-citizen-epistemology-001
 claim_ref: hypothesis-rigour-without-infrastructure-H1
-
 identifier:
   kind: DOI
-  value: "10.1098/rsos.231100"
-
+  value: 10.1098/rsos.231100
 fetch_status: FETCHED
-fetched_at: "2026-09-04"
-
+fetched_at: '2026-09-04'
 metadata_verified: true
-metadata_verified_by: "mechanical:crossref"
-metadata_verified_at: "2026-09-04"
-
-claim_match_verified: true
-claim_match_verified_by: "independent_ai_route:same_session_i1"
-claim_match_verified_at: "2026-09-04"
-
-exact_passage: >-
-  "Multiple perspectives enhance robust insight, and a multiplicity of perspectives is what
-  democratic citizen science provides." / "Each individual standpoint can broaden the scope and
-  power of the cognitive and technological tools being brought to bear on an issue."
-page_or_locator: "Abstract; Discussion (PMC10646465 open-access mirror)"
-
+metadata_verified_by: mechanical:crossref
+metadata_verified_at: '2026-09-04'
+claim_match_verified: false
+claim_match_verified_by: route:codex
+claim_match_verified_at: '2026-09-04'
+exact_passage: '"Multiple perspectives enhance robust insight, and a multiplicity
+  of perspectives is what democratic citizen science provides." / "Each individual
+  standpoint can broaden the scope and power of the cognitive and technological tools
+  being brought to bear on an issue."'
+page_or_locator: Abstract; Discussion (PMC10646465 open-access mirror)
 scope: SUPPORTS_GENERAL_CLAIM_ONLY
-
 evidence_tier: Dr
-independence_class: I1
-
-who_verified: "AI (same session, this run)"
+independence_class: I3
+who_verified: route:codex (cross-vendor AI; abstract/metadata level, not full text)
+  -- see cite-rsos-citizen-epistemology-001.i3.json
 verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
-
 status: METADATA_OK
-
 xenon_ledger_ref: null
-
-disclosure: >-
-  Same-session AI check only (I1) -- this card is METADATA_OK, not VERIFIED. Title/author/year/
-  venue confirmed mechanically via Crossref (Jaeger, Masselot, Greshake Tzovaras, Senabre Hidalgo,
-  Haklay, Santolini; Royal Society Open Science, 2023-11). Passage read via the open-access PMC
-  mirror (publisher page returned HTTP 403). Supports H1's SUPPORT family: proposes an epistemology
-  where diversity of standpoint, not institutional homogeneity, is what makes inquiry robust --
-  directly relevant to H1's claim that rigour can be a property of the recorded claim rather than
-  of institutional membership. Does not itself test H1's claim-card mechanism.
-
+disclosure: 'Same-session AI check only (I1) -- this card is METADATA_OK, not VERIFIED.
+  Title/author/year/ venue confirmed mechanically via Crossref (Jaeger, Masselot,
+  Greshake Tzovaras, Senabre Hidalgo, Haklay, Santolini; Royal Society Open Science,
+  2023-11). Passage read via the open-access PMC mirror (publisher page returned HTTP
+  403). Supports H1''s SUPPORT family: proposes an epistemology where diversity of
+  standpoint, not institutional homogeneity, is what makes inquiry robust -- directly
+  relevant to H1''s claim that rigour can be a property of the recorded claim rather
+  than of institutional membership. Does not itself test H1''s claim-card mechanism.
+  | I3 route (codex) judged from fetched metadata/abstract + the card''s quoted passage,
+  not full text: Metadata matches fetched title/authors/year. The quoted passage is
+  not directly verified in the abstract but is plausible and consistent with the abstract’s
+  diversity/perspectival-realism theme. However H1 is unspecified, so the card’s SUPPORTS_GENERAL_CLAIM_ONLY
+  bearing cannot be confirmed.'
 superseded_by: null
-notes: >-
-  Global North (authors across EU/UK academic institutions), EN, peer-reviewed, journal-article,
-  discipline: philosophy/sociology of science. Found via query family: support ("An epistemology
-  for democratic citizen science" Jaeger Masselot abstract diversity discovery). Dialogue-table
-  stance: YES (supports H1).
+notes: 'Global North (authors across EU/UK academic institutions), EN, peer-reviewed,
+  journal-article, discipline: philosophy/sociology of science. Found via query family:
+  support ("An epistemology for democratic citizen science" Jaeger Masselot abstract
+  diversity discovery). Dialogue-table stance: YES (supports H1).'

@@ -4,18 +4,29 @@ identifier_kind: ARXIV
 fetch_status: FETCHED
 acquisition_log_ref: null
 metadata_verified: true
-claim_match_verified: true
+claim_match_verified: false
 claim_match_verification_route: NOT_YET
 version_status: PREPRINT
 retraction_check: UNCHECKED
 dialogue_table_stance: orthogonal
 diversity:
   language: en
-  discipline_or_tradition: "AI governance / HCI / ICTD (Bangladesh)"
+  discipline_or_tradition: AI governance / HCI / ICTD (Bangladesh)
   source_type: preprint
-  search_route_or_database: "WebSearch (general web, 'Global South AI verification...' query) -> arXiv abstract page"
-  geography_or_institution: "Bangladesh (subject/title/abstract-confirmed; individual author institutions not listed on the fetched page) -- Global South"
+  search_route_or_database: WebSearch (general web, 'Global South AI verification...'
+    query) -> arXiv abstract page
+  geography_or_institution: Bangladesh (subject/title/abstract-confirmed; individual
+    author institutions not listed on the fetched page) -- Global South
   venue_quality_index:
     index_name: null
     value: null
     date_read: null
+independence_class: I3
+who_verified: route:codex (cross-vendor AI; abstract/metadata level, not full text)
+  -- see cite-bangladesh-readiness-007.i3.json
+verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
+claim_match_verified_by: route:codex
+disclosure: ' | I3 route (codex) judged from fetched metadata/abstract + the card''s
+  quoted passage, not full text: No identifier, citation metadata, exact passage,
+  scope, or fetched text is available. With no text to compare and no evidenced relation
+  to H3, all uncertain checks fail.'

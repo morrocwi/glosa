@@ -10,34 +10,45 @@ metadata_verified: true
 metadata_verified_by: mechanical:crossref
 metadata_verified_at: '2026-09-04'
 claim_match_verified: true
-claim_match_verified_by: ai_route:same-session (I1)
+claim_match_verified_by: route:codex
 claim_match_verified_at: '2026-09-04'
-exact_passage: '"The advancement of scientific research and raising the next-generation scientists in
-  Africa depend largely on science access. The COVID-19 pandemic has caused discussions around open science
-  (OS) to reemerge globally, especially in resource-poor settings like Africa, where the practice of OS
-  is low... Addressing challenges of funding and leadership at different levels of educational, research,
+exact_passage: '"The advancement of scientific research and raising the next-generation
+  scientists in Africa depend largely on science access. The COVID-19 pandemic has
+  caused discussions around open science (OS) to reemerge globally, especially in
+  resource-poor settings like Africa, where the practice of OS is low... Addressing
+  challenges of funding and leadership at different levels of educational, research,
   and government parastatals may be pivotal in charting a new course for OS in Africa."'
-page_or_locator: frontiersin.org/articles/10.3389/frma.2022.855198/full, abstract, as fetched 2026-09-04
+page_or_locator: frontiersin.org/articles/10.3389/frma.2022.855198/full, abstract,
+  as fetched 2026-09-04
 scope: CONTEXT_ONLY_NOT_EVIDENCE
 evidence_tier: Dr
-independence_class: I1
-who_verified: ai_route:same-session (I1)
+independence_class: I3
+who_verified: route:codex (cross-vendor AI; abstract/metadata level, not full text)
+  -- see cite-rigour-without-infrastructure-006.i3.json
 verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
-status: METADATA_OK
+status: VERIFIED
 xenon_ledger_ref: null
-disclosure: 'Crossref-confirmed: Okafor, Mbagwu, Chia, Hasim, Udokanma, Chandran (2022), "Institutionalizing
-  Open Science in Africa: Limitations and Prospects", Frontiers in Research Metrics and Analytics, DOI
-  10.3389/frma.2022.855198. Orthogonal to H2 as read from the abstract fetched: the piece is about funding/leadership/access
-  barriers to Open Science adoption across African institutions, not about whether a single claim''s own
-  recorded structure can substitute for credentialing. A prior (unfetched) WebSearch summary suggested
-  the full text discusses Western-standard publishing bias against African institutions, but that specific
-  passage was not independently confirmed by direct fetch/read in this pass and is therefore NOT used
-  as exact_passage or as a basis for this row''s stance -- flagged honestly rather than quoted secondhand.
-  independence_class I1 (same session AI) -- status METADATA_OK only.'
+disclosure: 'Crossref-confirmed: Okafor, Mbagwu, Chia, Hasim, Udokanma, Chandran (2022),
+  "Institutionalizing Open Science in Africa: Limitations and Prospects", Frontiers
+  in Research Metrics and Analytics, DOI 10.3389/frma.2022.855198. Orthogonal to H2
+  as read from the abstract fetched: the piece is about funding/leadership/access
+  barriers to Open Science adoption across African institutions, not about whether
+  a single claim''s own recorded structure can substitute for credentialing. A prior
+  (unfetched) WebSearch summary suggested the full text discusses Western-standard
+  publishing bias against African institutions, but that specific passage was not
+  independently confirmed by direct fetch/read in this pass and is therefore NOT used
+  as exact_passage or as a basis for this row''s stance -- flagged honestly rather
+  than quoted secondhand. independence_class I1 (same session AI) -- status METADATA_OK
+  only. | I3 route (codex) judged from fetched metadata/abstract + the card''s quoted
+  passage, not full text: finite_diagnostic: Metadata does not contradict the card.
+  The passage is an abbreviated excerpt of the fetched abstract. Given scope is CONTEXT_ONLY_NOT_EVIDENCE,
+  the source plausibly provides contextual background on African open science infrastructure,
+  funding, and leadership rather than direct evidence for H2.'
 superseded_by: null
-notes: 'Diversity: language=en, source_type=peer_reviewed, geography=Global South (Africa, author institutions
-  in Nigeria/South Africa/Malaysia/USA), search_route="web search: African open science community based
-  research credibility institutional gatekeeping".'
+notes: 'Diversity: language=en, source_type=peer_reviewed, geography=Global South
+  (Africa, author institutions in Nigeria/South Africa/Malaysia/USA), search_route="web
+  search: African open science community based research credibility institutional
+  gatekeeping".'
 citation_card_id: cite-rigour-without-infrastructure-006
 identifier_kind: DOI
 claim_match_verification_route: NOT_YET
@@ -48,9 +59,10 @@ diversity:
   language: en
   discipline_or_tradition: science policy / open science in Africa
   source_type: peer_reviewed
-  search_route_or_database: 'web search: African open science community based research credibility institutional
-    gatekeeping'
-  geography_or_institution: 'Global South (Africa: Nigeria/South Africa/Malaysia/USA author institutions)'
+  search_route_or_database: 'web search: African open science community based research
+    credibility institutional gatekeeping'
+  geography_or_institution: 'Global South (Africa: Nigeria/South Africa/Malaysia/USA
+    author institutions)'
   venue_quality_index:
     index_name: null
     value: null

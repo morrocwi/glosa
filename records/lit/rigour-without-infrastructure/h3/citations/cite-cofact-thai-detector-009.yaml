@@ -4,18 +4,28 @@ identifier_kind: OFFICIAL_URL
 fetch_status: FETCHED
 acquisition_log_ref: null
 metadata_verified: true
-claim_match_verified: true
+claim_match_verified: false
 claim_match_verification_route: NOT_YET
 version_status: NOT_APPLICABLE
 retraction_check: UNCHECKED
 dialogue_table_stance: orthogonal
 diversity:
   language: th
-  discipline_or_tradition: "civil-society fact-checking practice"
-  search_route_or_database: "WebSearch (Thai-language query, 'Cofact Thailand AI ตรวจสอบข้อเท็จจริง...') -> Cofact publisher page"
+  discipline_or_tradition: civil-society fact-checking practice
+  search_route_or_database: WebSearch (Thai-language query, 'Cofact Thailand AI ตรวจสอบข้อเท็จจริง...')
+    -> Cofact publisher page
   source_type: community
-  geography_or_institution: "Cofact (โคแฟค), Thailand -- Thailand/SEA"
+  geography_or_institution: Cofact (โคแฟค), Thailand -- Thailand/SEA
   venue_quality_index:
     index_name: null
     value: null
     date_read: null
+independence_class: I3
+who_verified: route:codex (cross-vendor AI; abstract/metadata level, not full text)
+  -- see cite-cofact-thai-detector-009.i3.json
+verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
+claim_match_verified_by: route:codex
+disclosure: ' | I3 route (codex) judged from fetched metadata/abstract + the card''s
+  quoted passage, not full text: Card has no identifier, metadata, scope, passage,
+  or fetched text. With only source=no-identifier, metadata cannot be verified, passage
+  plausibility cannot be compared, and relevance to H3 is unsupported.'

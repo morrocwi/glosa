@@ -4,18 +4,28 @@ identifier_kind: OFFICIAL_URL
 fetch_status: FETCHED
 acquisition_log_ref: null
 metadata_verified: true
-claim_match_verified: true
+claim_match_verified: false
 claim_match_verification_route: NOT_YET
 version_status: NOT_APPLICABLE
 retraction_check: UNCHECKED
 dialogue_table_stance: agrees
 diversity:
   language: en
-  discipline_or_tradition: "AI-agent tooling / practitioner engineering blog"
+  discipline_or_tradition: AI-agent tooling / practitioner engineering blog
   source_type: practitioner
-  search_route_or_database: "WebSearch (general web) -> MindStudio publisher blog page"
-  geography_or_institution: "MindStudio (AI agent platform vendor); country of incorporation not stated on the fetched page (undetermined)"
+  search_route_or_database: WebSearch (general web) -> MindStudio publisher blog page
+  geography_or_institution: MindStudio (AI agent platform vendor); country of incorporation
+    not stated on the fetched page (undetermined)
   venue_quality_index:
     index_name: null
     value: null
     date_read: null
+independence_class: I3
+who_verified: route:codex (cross-vendor AI; abstract/metadata level, not full text)
+  -- see cite-mindstudio-crossvendor-010.i3.json
+verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
+claim_match_verified_by: route:codex
+disclosure: ' | I3 route (codex) judged from fetched metadata/abstract + the card''s
+  quoted passage, not full text: Card has no identifier, title, scope, passage, or
+  locator, and fetched metadata contains only source=no-identifier. There is no fetched
+  text to compare, so passage plausibility and H3 claim bearing cannot be established.'

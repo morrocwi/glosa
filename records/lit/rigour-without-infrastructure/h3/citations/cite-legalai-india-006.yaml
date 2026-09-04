@@ -4,18 +4,30 @@ identifier_kind: ARXIV
 fetch_status: FETCHED
 acquisition_log_ref: null
 metadata_verified: true
-claim_match_verified: true
+claim_match_verified: false
 claim_match_verification_route: NOT_YET
 version_status: PREPRINT
 retraction_check: UNCHECKED
 dialogue_table_stance: undetermined
 diversity:
   language: en
-  discipline_or_tradition: "legal AI / human-computer interaction, Indian contract law"
+  discipline_or_tradition: legal AI / human-computer interaction, Indian contract
+    law
   source_type: preprint
-  search_route_or_database: "WebSearch (general web, 'India AI audit...' query) -> arXiv HTML full text"
-  geography_or_institution: "Sunrise University, Alwar, Rajasthan, India (two authors); Technological University Dublin, Ireland (one author) -- Global South (India)"
+  search_route_or_database: WebSearch (general web, 'India AI audit...' query) ->
+    arXiv HTML full text
+  geography_or_institution: Sunrise University, Alwar, Rajasthan, India (two authors);
+    Technological University Dublin, Ireland (one author) -- Global South (India)
   venue_quality_index:
     index_name: null
     value: null
     date_read: null
+independence_class: I3
+who_verified: route:codex (cross-vendor AI; abstract/metadata level, not full text)
+  -- see cite-legalai-india-006.i3.json
+verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
+claim_match_verified_by: route:codex
+disclosure: ' | I3 route (codex) judged from fetched metadata/abstract + the card''s
+  quoted passage, not full text: No identifier, title, authors, year, passage, locator,
+  or fetched text are available. Metadata cannot be verified, passage plausibility
+  cannot be compared, and there is no evidenced source content bearing on H3.'

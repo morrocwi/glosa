@@ -42,6 +42,7 @@ from pathlib import Path
 
 CLI_DIR = Path(__file__).resolve().parent
 REPO_ROOT = CLI_DIR.parent
+RECORDS_ROOT = Path(os.environ["GLOSA_RECORDS_ROOT"]) if os.environ.get("GLOSA_RECORDS_ROOT") else REPO_ROOT  # tests / external projects
 KERNEL_DIR = REPO_ROOT / "kernel"
 SCHEMA_DIR = REPO_ROOT / "schema"
 TEMPLATES_DIR = REPO_ROOT / "templates" / "knowledge"
@@ -839,7 +840,7 @@ def cmd_cite_check(args):
 def cmd_lit_new(args):
     slug = _slugify(args.problem_slug)
     hyp_dir = _slugify(args.hypothesis_ref)
-    out_dir = REPO_ROOT / "records" / "lit" / slug / hyp_dir
+    out_dir = RECORDS_ROOT / "records" / "lit" / slug / hyp_dir
     search_id = _next_numbered_id(out_dir, lambda n: f"search-{slug}-{n:03d}")
     data = scaffold_search_log(search_id, args.hypothesis_ref, args.search_mode)
     table_text = scaffold_dialogue_table_text(args.hypothesis_ref)
@@ -854,7 +855,7 @@ def cmd_lit_new(args):
 def cmd_lit_freeze(args):
     slug = _slugify(args.problem_slug)
     hyp_dir = _slugify(args.hypothesis_ref)
-    out_dir = REPO_ROOT / "records" / "lit" / slug / hyp_dir
+    out_dir = RECORDS_ROOT / "records" / "lit" / slug / hyp_dir
     sl_path = next(iter(sorted(out_dir.glob("search_log.*"))), None)
     if sl_path is None:
         return 1, {"action": "lit_freeze", "error": f"no search_log found under {out_dir} -- run `glosa lit new` first."}
@@ -881,7 +882,7 @@ def cmd_lit_table(args):
         return 1, {"action": "lit_table", "result": err}
     slug = _slugify(args.problem_slug)
     hyp_dir = _slugify(args.hypothesis_ref)
-    out_dir = REPO_ROOT / "records" / "lit" / slug / hyp_dir
+    out_dir = RECORDS_ROOT / "records" / "lit" / slug / hyp_dir
     rows_dir = out_dir / "rows"
     valid_rows, invalid_rows = [], []
     if rows_dir.is_dir():
@@ -914,7 +915,7 @@ def cmd_lit_table(args):
 
 def cmd_lit_select(args):
     slug = _slugify(args.problem_slug)
-    lit_root = REPO_ROOT / "records" / "lit" / slug
+    lit_root = RECORDS_ROOT / "records" / "lit" / slug
     candidates = []
     discovered = {}
     if lit_root.is_dir():
@@ -977,18 +978,24 @@ def cmd_lit_manifest(args):
         return 1, {"action": "lit_manifest", "result": err}
     slug = _slugify(args.problem_slug)
     hyp_dir_name = _slugify(args.hypothesis_ref)
-    out_dir = REPO_ROOT / "records" / "lit" / slug / hyp_dir_name
+    out_dir = RECORDS_ROOT / "records" / "lit" / slug / hyp_dir_name
     sl_path = next(iter(sorted(out_dir.glob("search_log.*"))), None)
     if sl_path is None:
         return 1, {"action": "lit_manifest", "error": f"no search_log found under {out_dir} -- run `glosa lit new` first."}
     search_log = load_instance(sl_path)
 
     citations = []
+    invalid_cards = []  # fail-closed: a citation card that does not conform to the schema cannot count
     citations_dir = out_dir / "citations"
     if citations_dir.is_dir():
         for p in sorted(citations_dir.glob("*")):
             if p.suffix in (".yaml", ".yml", ".json"):
-                citations.append(load_instance(p))
+                inst = load_instance(p)
+                v = k.validate_citation_card(inst)
+                if not v.get("ok"):
+                    invalid_cards.append({"file": _rel(p), "errors": v.get("errors", [])[:3]})
+                    inst = dict(inst, status="INVALID_SCHEMA", id=inst.get("id") or inst.get("citation_card_id") or p.stem)
+                citations.append(inst)
 
     existing_path = next(iter(sorted(out_dir.glob("litreview_manifest.*"))), None)
     manifest_id = load_instance(existing_path).get("id") if existing_path else _next_numbered_id(out_dir, lambda n: f"litrev-{slug}-{n:03d}")
@@ -999,10 +1006,15 @@ def cmd_lit_manifest(args):
         data["status"] = "FROZEN"
         data["frozen_at"] = _now_iso()
 
+    if invalid_cards:
+        data["gate"]["accuracy_gate"] = "FAIL"
+        data["gate"]["overall"] = "FAIL"
+        data["gate"]["blocked_reason"] = ((data["gate"].get("blocked_reason") or "") + " | %d citation card(s) do not conform to schema/citation_card.schema.json (fail-closed; regression caught by the 2026-09-04 self-application run): %s" % (len(invalid_cards), ", ".join(c["file"] for c in invalid_cards))).strip(" |")
+        data["invalid_citation_cards"] = invalid_cards
     res = k.lit_gate(data)
     written = write_new(out_dir, "litreview_manifest", data)
-    return (0 if res["ok"] else 1), {"action": "lit_manifest", "manifest_id": manifest_id, "written": written,
-                                      "gate": data["gate"], "lit_gate_check": res}
+    return (0 if res["ok"] and not invalid_cards else 1), {"action": "lit_manifest", "manifest_id": manifest_id, "written": written,
+                                      "gate": data["gate"], "invalid_citation_cards": invalid_cards, "lit_gate_check": res}
 
 
 def cmd_kg_validate(args):

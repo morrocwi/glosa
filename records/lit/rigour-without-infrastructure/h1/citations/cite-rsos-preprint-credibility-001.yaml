@@ -1,50 +1,44 @@
 $schema: citation_card.schema.json
 id: cite-rsos-preprint-credibility-001
 claim_ref: hypothesis-rigour-without-infrastructure-H1
-
 identifier:
   kind: DOI
-  value: "10.1098/rsos.201520"
-
+  value: 10.1098/rsos.201520
 fetch_status: FETCHED
-fetched_at: "2026-09-04"
-
+fetched_at: '2026-09-04'
 metadata_verified: true
-metadata_verified_by: "mechanical:crossref"
-metadata_verified_at: "2026-09-04"
-
-claim_match_verified: true
-claim_match_verified_by: "independent_ai_route:same_session_i1"
-claim_match_verified_at: "2026-09-04"
-
-exact_passage: >-
-  "cues related to information about open science content and independent verification of author
-  claims were rated as highly important for judging preprint credibility."
-page_or_locator: "Results (Soderberg, Errington & Nosek 2020, PMC7657885)"
-
+metadata_verified_by: mechanical:crossref
+metadata_verified_at: '2026-09-04'
+claim_match_verified: false
+claim_match_verified_by: route:codex
+claim_match_verified_at: '2026-09-04'
+exact_passage: '"cues related to information about open science content and independent
+  verification of author claims were rated as highly important for judging preprint
+  credibility."'
+page_or_locator: Results (Soderberg, Errington & Nosek 2020, PMC7657885)
 scope: DIRECT_QUOTATION
-
 evidence_tier: Dr
-independence_class: I1
-
-who_verified: "AI (same session, this run)"
+independence_class: I3
+who_verified: route:codex (cross-vendor AI; abstract/metadata level, not full text)
+  -- see cite-rsos-preprint-credibility-001.i3.json
 verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
-
 status: METADATA_OK
-
 xenon_ledger_ref: null
-
-disclosure: >-
-  Same-session AI check only (I1) -- METADATA_OK, not VERIFIED. Title/author/year/venue confirmed
-  mechanically via Crossref (Soderberg, Errington, Nosek; Royal Society Open Science, 2020).
-  Supports H1's SUPPORT family: when institutional/journal prestige signals are absent (as in a
-  preprint, or in a standalone scholar's claim card), readers rate transparency and independent-
-  verification cues as highly important for credibility -- consistent with H1's mechanism that a
-  well-structured, verifiable claim card can substitute for an institutional signal for at least
-  this reader population (survey of ~1,800 researchers).
-
+disclosure: 'Same-session AI check only (I1) -- METADATA_OK, not VERIFIED. Title/author/year/venue
+  confirmed mechanically via Crossref (Soderberg, Errington, Nosek; Royal Society
+  Open Science, 2020). Supports H1''s SUPPORT family: when institutional/journal prestige
+  signals are absent (as in a preprint, or in a standalone scholar''s claim card),
+  readers rate transparency and independent- verification cues as highly important
+  for credibility -- consistent with H1''s mechanism that a well-structured, verifiable
+  claim card can substitute for an institutional signal for at least this reader population
+  (survey of ~1,800 researchers). | I3 route (codex) judged from fetched metadata/abstract
+  + the card''s quoted passage, not full text: Metadata matches and the quoted passage
+  appears verbatim in the fetched abstract. However, the evidenced text is about cues
+  for judging preprint credibility and independent verification of claims; it does
+  not directly address independent researchers without institutional affiliation,
+  so support for H1 is uncertain.'
 superseded_by: null
-notes: >-
-  Global North (Center for Open Science, US), EN, peer-reviewed, journal-article, empirical survey.
-  Found via query family: support (independent researcher without institutional affiliation
-  credibility open science verification). Dialogue-table stance: YES (supports H1).
+notes: 'Global North (Center for Open Science, US), EN, peer-reviewed, journal-article,
+  empirical survey. Found via query family: support (independent researcher without
+  institutional affiliation credibility open science verification). Dialogue-table
+  stance: YES (supports H1).'

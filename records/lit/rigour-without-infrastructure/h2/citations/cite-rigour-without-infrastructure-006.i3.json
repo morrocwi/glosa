@@ -1,0 +1,26 @@
+{
+ "vendor": "codex",
+ "fetched": {
+  "source": "crossref",
+  "title": "Institutionalizing Open Science in Africa: Limitations and Prospects",
+  "authors": [
+   "Okafor",
+   "Mbagwu",
+   "Chia",
+   "Hasim",
+   "Udokanma",
+   "Chandran"
+  ],
+  "year": 2022,
+  "container": "Frontiers in Research Metrics and Analytics",
+  "abstract": " The advancement of scientific research and raising the next-generation scientists in Africa depend largely on science access. The COVID-19 pandemic has caused discussions around open science (OS) to reemerge globally, especially in resource-poor settings like Africa, where the practice of OS is low. The authors highlighted the elements, benefits, and existing initiatives of OS in Africa. More importantly, the article critically appraised the challenges, opportunities, and future considerations of OS in Africa. Addressing challenges of funding and leadership at different levels of educational, research, and government parastatals may be pivotal in charting a new course for OS in Africa. This review serves as an advocacy strategy and an informative guide to policymaking and institutionalization of OS in Africa. "
+ },
+ "verdict": {
+  "metadata_matches": true,
+  "passage_plausible": true,
+  "claim_match": true,
+  "bearing": "CONTEXT_ONLY",
+  "reason": "finite_diagnostic: Metadata does not contradict the card. The passage is an abbreviated excerpt of the fetched abstract. Given scope is CONTEXT_ONLY_NOT_EVIDENCE, the source plausibly provides contextual background on African open science infrastructure, funding, and leadership rather than direct evidence for H2."
+ },
+ "date": "2026-09-04"
+}

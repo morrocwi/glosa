@@ -1,0 +1,16 @@
+{
+ "vendor": "codex",
+ "fetched": {
+  "source": "url-fetch",
+  "title": "Guest Post — The Guild and the Gap: What One Rejection Revealed About the Cost of Credentialism - The Scholarly Kitchen",
+  "abstract": "Today&#039;s guest post asks: Do trust markers and other systematic fraud-prevention practices exclude unaffiliated authors from contributing to the scholarly record?"
+ },
+ "verdict": {
+  "metadata_matches": true,
+  "passage_plausible": false,
+  "claim_match": false,
+  "bearing": "CONTEXT_ONLY",
+  "reason": "Title and URL metadata align with the card, but only metadata/abstract were provided; there is no fetched article/comment text to verify the exact quoted comments. H2 is not stated, so claim match and directional bearing cannot be confirmed."
+ },
+ "date": "2026-09-04"
+}

@@ -1,0 +1,26 @@
+{
+ "vendor": "codex",
+ "fetched": {
+  "source": "crossref",
+  "title": "Community perceptions of citizen science approach in pandemic preparedness and response in South and Southeast Asian countries",
+  "authors": [
+   "Kumar",
+   "Hauter",
+   "Canlas",
+   "Sunaryoko",
+   "Maharjan",
+   "Anowar"
+  ],
+  "year": 2025,
+  "container": "PLOS Global Public Health",
+  "abstract": " Citizen science (CS), a collaboration between people and scientists, is a viable approach utilizing citizens experiences in COVID-19 pandemic to manage future response. This study aimed to understand concepts, experiences, approaches, and sustainability issues of CS among citizens in five South and Southeast Asian countries. A qualitative study was carried out in Nepal, Bangladesh, India, Philippines, and Indonesia from October 2022 to March 2023. A total of 130 participants took part in four focus group discussions per country. Content analysis was done on narrative responses of participants for extraction of themes. Participants associated CS with the term “participation”. Additionally, CS was related to “social responsibility” and “capacity building”. During the COVID-19 pandemic, community participation was expressed by participants as a compliance measure with guidelines, helping to create awareness, and providing support (food, sanitizers, money, etc.) to fellow citizens. These experiences were related to CS and valued for personal achievement, satisfaction, and happiness with a chance to build social capital. Some participants expressed lack of confidence and language barriers as notable concerns while sharing their opinions with stakeholders (policymakers and researchers). Sustainability of CS activities was associated with creation of an organizations or networks, securing budget, incentivise participation, and assisting transportation. Participants considered CS as"
+ },
+ "verdict": {
+  "metadata_matches": true,
+  "passage_plausible": true,
+  "claim_match": true,
+  "bearing": "CONTEXT_ONLY",
+  "reason": "Title/authors/year do not contradict the card. Abstract supports a South/Southeast Asia citizen-science pandemic-preparedness study and makes the quoted framing plausible, though not verified verbatim. As scoped, it provides contextual background rather than evidence for H1."
+ },
+ "date": "2026-09-04"
+}

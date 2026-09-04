@@ -1,0 +1,38 @@
+$schema: hypothesis_selection.schema.json
+id: hsel-rigour-without-infrastructure-001
+problem_ref: GLOSA-PC-20260904-0001
+decided_by: founder
+decided_at: '2026-09-04'
+candidates:
+- hypothesis_ref: H1
+  hypothesis_world: ''
+  lrs_manifest_ref: records/lit/rigour-without-infrastructure/h1/litreview_manifest.yaml
+  dialogue_table_ref: records/lit/rigour-without-infrastructure/h1/dialogue_table.md
+  criteria: {}
+  accuracy_gate_at_selection_time: FAIL
+  diversity_gate_at_selection_time: PASS_WITH_LIMITS
+- hypothesis_ref: H2
+  hypothesis_world: ''
+  lrs_manifest_ref: records/lit/rigour-without-infrastructure/h2/litreview_manifest.yaml
+  dialogue_table_ref: records/lit/rigour-without-infrastructure/h2/dialogue_table.md
+  criteria: {}
+  accuracy_gate_at_selection_time: FAIL
+  diversity_gate_at_selection_time: PASS
+- hypothesis_ref: H3
+  hypothesis_world: ''
+  lrs_manifest_ref: records/lit/rigour-without-infrastructure/h3/litreview_manifest.yaml
+  dialogue_table_ref: records/lit/rigour-without-infrastructure/h3/dialogue_table.md
+  criteria: {}
+  accuracy_gate_at_selection_time: FAIL
+  diversity_gate_at_selection_time: PASS_WITH_LIMITS
+selection:
+  chosen:
+  - H1
+  - H2
+  - H3
+  reason: 'founder ruling 2026-09-04 (BBL-2026-09-04-095): combine all three — H1 design claim carries
+    the paper, H2 is its conceptual ground, H3 its measurable mechanism'
+  parked: []
+cooking_log_ref: projects/GLS-2026-001_rigour-without-infrastructure/blackbox_note.yaml
+routes_to: 'genre router input: problem_ref=GLOSA-PC-20260904-0001, selection.chosen=[''H1'', ''H2'',
+  ''H3'']'

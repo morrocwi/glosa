@@ -1,0 +1,21 @@
+{
+ "vendor": "codex",
+ "fetched": {
+  "source": "crossref",
+  "title": "Disclosure is not documentation: an open science framework for documenting generative AI use in scholarly research and publication workflows",
+  "authors": [
+   "Cwik"
+  ],
+  "year": 2026,
+  "container": "Research Integrity and Peer Review",
+  "abstract": " Abstract \n                   \n                     Background \n                     Generative AI is increasingly used in scholarly research, writing, and publication workflows. Many journal and publisher policies ask authors to disclose relevant AI use, but disclosure alone rarely clarifies how AI-assisted work was performed, what information was entered, how outputs were evaluated, or how human responsibility was maintained. This creates a gap between AI-use disclosure as a publication requirement and AI-use documentation as an open science practice. \n                   \n                   \n                     Methods \n                     This article develops a conceptual and practical framework for documenting generative AI use in scholarly workflows. The framework was informed by exploratory, non-systematic source and policy mapping, AI-assisted exploratory evidence mapping, manual review of selected recent literature, and development of accompanying Open Science Framework materials. These steps were used to identify recurring documentation expectations and unresolved policy gaps and to translate them into practical documentation domains, with particular attention to task specificity, proportionality, role-specific documentation, privacy-sensitive transparency, and clinically sensitive contexts. \n                   \n                   \n                     Results \n                     The framework distinguishes disclosure from documentation and proposes documentatio"
+ },
+ "verdict": {
+  "metadata_matches": true,
+  "passage_plausible": true,
+  "claim_match": false,
+  "bearing": "CONTEXT_ONLY",
+  "reason": "Metadata does not contradict the card, and the quoted/paraphrased passage is directly reflected in the fetched abstract. But H1 is not defined beyond its label, so support for the hypothesis cannot be independently assessed from the provided material."
+ },
+ "date": "2026-09-04"
+}

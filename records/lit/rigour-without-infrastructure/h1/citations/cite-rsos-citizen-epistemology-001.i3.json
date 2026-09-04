@@ -1,0 +1,26 @@
+{
+ "vendor": "codex",
+ "fetched": {
+  "source": "crossref",
+  "title": "An epistemology for democratic citizen science",
+  "authors": [
+   "Jaeger",
+   "Masselot",
+   "Greshake Tzovaras",
+   "Senabre Hidalgo",
+   "Haklay",
+   "Santolini"
+  ],
+  "year": 2023,
+  "container": "Royal Society Open Science",
+  "abstract": " More than ever, humanity relies on robust scientific knowledge of the world and our place within it. Unfortunately, our contemporary view of science is still suffused with outdated ideas about scientific knowledge production based on a naive kind of realism. These ideas persist among members of the public and scientists alike. They contribute to an ultra-competitive system of academic research, which sacrifices long-term productivity through an excessive obsession with short-term efficiency. Efforts to diversify this system come from a movement called democratic citizen science, which can serve as a model for scientific inquiry in general. Democratic citizen science requires an alternative theory of knowledge with a focus on the role that diversity plays in the process of discovery. Here, we present such an epistemology, based on three central philosophical pillars: perspectival realism, a naturalistic process-based epistemology, and deliberative social practices. They broaden our focus from immediate research outcomes towards cognitive and social processes which facilitate sustainable long-term productivity and scientific innovation. This marks a shift from an industrial to an ecological vision of how scientific research should be done, and how it should be assessed. At the core of this vision are research communities that are diverse, representative, and democratic. "
+ },
+ "verdict": {
+  "metadata_matches": true,
+  "passage_plausible": true,
+  "claim_match": false,
+  "bearing": "CONTEXT_ONLY",
+  "reason": "Metadata matches fetched title/authors/year. The quoted passage is not directly verified in the abstract but is plausible and consistent with the abstract’s diversity/perspectival-realism theme. However H1 is unspecified, so the card’s SUPPORTS_GENERAL_CLAIM_ONLY bearing cannot be confirmed."
+ },
+ "date": "2026-09-04"
+}

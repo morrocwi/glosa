@@ -67,3 +67,22 @@ class InstallScriptTest(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class LitManifestFailClosedTest(unittest.TestCase):
+    """Regression from the 2026-09-04 self-application run: a citation card written in the wrong
+    shape must make `glosa lit manifest` report accuracy_gate FAIL, never pass silently."""
+
+    def test_nonconformant_card_fails_manifest(self):
+        import shutil
+        import tempfile
+        with tempfile.TemporaryDirectory() as td:
+            slug, hyp = "t-slug", "H9"
+            lit = Path(td) / "records" / "lit" / slug / hyp.lower()
+            (lit / "citations").mkdir(parents=True)
+            (lit / "citations" / "cite-bad-001.yaml").write_text("citation_card_id: cite-bad-001\nidentifier_kind: DOI\nstatus: METADATA_OK\n", encoding="utf-8")
+            env = dict(os.environ, GLOSA_RECORDS_ROOT=td)
+            r = subprocess.run([sys.executable, str(ROOT / "cli/glosa"), "lit", "new", slug, hyp, "--search-mode", "SCOPING_SEARCH"], cwd=td, env=env, capture_output=True, text=True)
+            r = subprocess.run([sys.executable, str(ROOT / "cli/glosa"), "lit", "manifest", slug, hyp, "--human-owner", "founder"], cwd=td, env=env, capture_output=True, text=True)
+            self.assertNotEqual(r.returncode, 0, r.stdout)
+            self.assertIn("INVALID_SCHEMA", r.stdout + r.stderr)

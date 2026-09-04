@@ -1,53 +1,45 @@
 $schema: citation_card.schema.json
 id: cite-cstp-boundary-work-001
 claim_ref: hypothesis-rigour-without-infrastructure-H1
-
 identifier:
   kind: DOI
-  value: "10.5334/cstp.519"
-
+  value: 10.5334/cstp.519
 fetch_status: FETCHED
-fetched_at: "2026-09-04"
-
+fetched_at: '2026-09-04'
 metadata_verified: true
-metadata_verified_by: "mechanical:crossref"
-metadata_verified_at: "2026-09-04"
-
-claim_match_verified: true
-claim_match_verified_by: "independent_ai_route:same_session_i1"
-claim_match_verified_at: "2026-09-04"
-
-exact_passage: >-
-  "the legitimacy of citizen science is powerfully shaped by the perspectives of professional or
-  credentialed experts" -- in a 2010-2019 sample of 51 news articles, "perspectives of professional
-  and institutionally affiliated experts dominated the discussions of citizen science; quotations
-  from scientific experts outnumbered those of adult citizen scientists nearly 5:1," and
-  non-professional perspectives never appeared as the sole voice in an article.
-page_or_locator: "Abstract; Results section (Mayes 2022)"
-
+metadata_verified_by: mechanical:crossref
+metadata_verified_at: '2026-09-04'
+claim_match_verified: false
+claim_match_verified_by: route:codex
+claim_match_verified_at: '2026-09-04'
+exact_passage: '"the legitimacy of citizen science is powerfully shaped by the perspectives
+  of professional or credentialed experts" -- in a 2010-2019 sample of 51 news articles,
+  "perspectives of professional and institutionally affiliated experts dominated the
+  discussions of citizen science; quotations from scientific experts outnumbered those
+  of adult citizen scientists nearly 5:1," and non-professional perspectives never
+  appeared as the sole voice in an article.'
+page_or_locator: Abstract; Results section (Mayes 2022)
 scope: DIRECT_QUOTATION
-
 evidence_tier: Dr
-independence_class: I1
-
-who_verified: "AI (same session, this run)"
+independence_class: I3
+who_verified: route:codex (cross-vendor AI; abstract/metadata level, not full text)
+  -- see cite-cstp-boundary-work-001.i3.json
 verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
-
 status: METADATA_OK
-
 xenon_ledger_ref: null
-
-disclosure: >-
-  Same-session AI check only (I1) -- METADATA_OK, not VERIFIED. Title/author/year/venue confirmed
-  mechanically via Crossref (E. Carolina Mayes, Citizen Science: Theory and Practice, 2022). This
-  source is a CHALLENGE to H1: media-discourse "boundary work" empirically shows credentialed
-  institutional voices still dominate who is treated as legitimate in citizen-science discourse,
-  in practice -- a direct counter-pressure against H1's claim that a claim-card discipline alone
-  (without institutional backing) can make rigour reader-checkable and accepted as such.
-
+disclosure: 'Same-session AI check only (I1) -- METADATA_OK, not VERIFIED. Title/author/year/venue
+  confirmed mechanically via Crossref (E. Carolina Mayes, Citizen Science: Theory
+  and Practice, 2022). This source is a CHALLENGE to H1: media-discourse "boundary
+  work" empirically shows credentialed institutional voices still dominate who is
+  treated as legitimate in citizen-science discourse, in practice -- a direct counter-pressure
+  against H1''s claim that a claim-card discipline alone (without institutional backing)
+  can make rigour reader-checkable and accepted as such. | I3 route (codex) judged
+  from fetched metadata/abstract + the card''s quoted passage, not full text: Title/authors/year
+  do not contradict the card. However fetched abstract is empty and no passage text
+  is provided, so the quoted passage and claimed 5:1 result cannot be verified from
+  the supplied evidence. Therefore claim match is uncertain.'
 superseded_by: null
-notes: >-
-  Global North (author, University of British Columbia), EN, peer-reviewed, journal-article,
-  discipline: science communication / sociology of science. Found via query family: challenge
-  (citizen science epistemic authority peer review alternative rigour). Dialogue-table stance: NO
-  (disagrees with / challenges H1).
+notes: 'Global North (author, University of British Columbia), EN, peer-reviewed,
+  journal-article, discipline: science communication / sociology of science. Found
+  via query family: challenge (citizen science epistemic authority peer review alternative
+  rigour). Dialogue-table stance: NO (disagrees with / challenges H1).'

@@ -1,0 +1,23 @@
+{
+ "vendor": "codex",
+ "fetched": {
+  "source": "crossref",
+  "title": "Credibility of preprints: an interdisciplinary survey of researchers",
+  "authors": [
+   "Soderberg",
+   "Errington",
+   "Nosek"
+  ],
+  "year": 2020,
+  "container": "Royal Society Open Science",
+  "abstract": " Preprints increase accessibility and can speed scholarly communication if researchers view them as credible enough to read and use. Preprint services do not provide the heuristic cues of a journal's reputation, selection, and peer-review processes that, regardless of their flaws, are often used as a guide for deciding what to read. We conducted a survey of 3759 researchers across a wide range of disciplines to determine the importance of different cues for assessing the credibility of individual preprints and preprint services. We found that cues related to information about open science content and independent verification of author claims were rated as highly important for judging preprint credibility, and peer views and author information were rated as less important. As of early 2020, very few preprint services display any of the most important cues. By adding such cues, services may be able to help researchers better assess the credibility of preprints, enabling scholars to more confidently use preprints, thereby accelerating scientific communication and discovery. "
+ },
+ "verdict": {
+  "metadata_matches": true,
+  "passage_plausible": true,
+  "claim_match": false,
+  "bearing": "CONTEXT_ONLY",
+  "reason": "Metadata matches and the quoted passage appears verbatim in the fetched abstract. However, the evidenced text is about cues for judging preprint credibility and independent verification of claims; it does not directly address independent researchers without institutional affiliation, so support for H1 is uncertain."
+ },
+ "date": "2026-09-04"
+}

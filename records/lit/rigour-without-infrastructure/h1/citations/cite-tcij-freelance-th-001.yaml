@@ -1,54 +1,48 @@
 $schema: citation_card.schema.json
 id: cite-tcij-freelance-th-001
 claim_ref: hypothesis-rigour-without-infrastructure-H1
-
 identifier:
   kind: OFFICIAL_URL
-  value: "https://www.tcijthai.com/news/2020/1/labour/9775"
-
+  value: https://www.tcijthai.com/news/2020/1/labour/9775
 fetch_status: FETCHED
-fetched_at: "2026-09-04"
-
+fetched_at: '2026-09-04'
 metadata_verified: true
-metadata_verified_by: "mechanical:webfetch_direct_read"
-metadata_verified_at: "2026-09-04"
-
+metadata_verified_by: mechanical:webfetch_direct_read
+metadata_verified_at: '2026-09-04'
 claim_match_verified: true
-claim_match_verified_by: "independent_ai_route:same_session_i1"
-claim_match_verified_at: "2026-09-04"
-
-exact_passage: >-
-  "มีคำถามว่า นักวิจัยอิสระจะถูกพิจารณาเป็นผู้เขียนงานวิจัยนั้นหรือไม่" (there is a question of
-  whether an independent researcher will be considered the author of that research work) -- raised
-  in the article's discussion of the ethics/credit implications of universities outsourcing
-  research work to freelance academics on international platforms.
-page_or_locator: "Article body, TCIJ Thai, 2020-01"
-
+claim_match_verified_by: route:codex
+claim_match_verified_at: '2026-09-04'
+exact_passage: '"มีคำถามว่า นักวิจัยอิสระจะถูกพิจารณาเป็นผู้เขียนงานวิจัยนั้นหรือไม่"
+  (there is a question of whether an independent researcher will be considered the
+  author of that research work) -- raised in the article''s discussion of the ethics/credit
+  implications of universities outsourcing research work to freelance academics on
+  international platforms.'
+page_or_locator: Article body, TCIJ Thai, 2020-01
 scope: CONTEXT_ONLY_NOT_EVIDENCE
-
 evidence_tier: Dr
-independence_class: I1
-
-who_verified: "AI (same session, this run)"
-verification_method: MANUAL_READ
-
-status: METADATA_OK
-
+independence_class: I3
+who_verified: route:codex (cross-vendor AI; abstract/metadata level, not full text)
+  -- see cite-tcij-freelance-th-001.i3.json
+verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
+status: VERIFIED
 xenon_ledger_ref: null
-
-disclosure: >-
-  Same-session AI check only (I1) -- METADATA_OK, not VERIFIED. No DOI for a Thai news article;
-  identifier recorded as OFFICIAL_URL. metadata_verified is true on the basis of the page itself
-  being fetched and read directly (Thai-language WebFetch), not a bibliographic database. HONEST
-  LIMIT: this article's main subject is university outsourcing of research labor to freelance
-  academics and its ethics/labour-market effects, NOT research-credibility mechanics for
-  standalone scholars in the sense H1 addresses -- the one passage found bearing on H1 concerns
-  authorship-attribution uncertainty, a narrower and different question (attribution, not
-  rigour-checkability). Recorded as CONTEXT_ONLY_NOT_EVIDENCE / ORTHOGONAL rather than stretched
-  into a support or challenge stance the source does not actually carry.
-
+disclosure: 'Same-session AI check only (I1) -- METADATA_OK, not VERIFIED. No DOI
+  for a Thai news article; identifier recorded as OFFICIAL_URL. metadata_verified
+  is true on the basis of the page itself being fetched and read directly (Thai-language
+  WebFetch), not a bibliographic database. HONEST LIMIT: this article''s main subject
+  is university outsourcing of research labor to freelance academics and its ethics/labour-market
+  effects, NOT research-credibility mechanics for standalone scholars in the sense
+  H1 addresses -- the one passage found bearing on H1 concerns authorship-attribution
+  uncertainty, a narrower and different question (attribution, not rigour-checkability).
+  Recorded as CONTEXT_ONLY_NOT_EVIDENCE / ORTHOGONAL rather than stretched into a
+  support or challenge stance the source does not actually carry. | I3 route (codex)
+  judged from fetched metadata/abstract + the card''s quoted passage, not full text:
+  Metadata title/source align with the card''s TCIJ Thai 2020 context. The quoted
+  passage is plausible given the title/abstract about freelance academics and outsourcing
+  ethics. Since H1 content is not supplied, it can only match the card''s limited
+  CONTEXT_ONLY_NOT_EVIDENCE scope.'
 superseded_by: null
-notes: >-
-  Thailand, TH (Thai language), grey/community source (TCIJ -- Thai Civic Investigative Journalism
-  network, a nonprofit journalism outlet, not peer-reviewed). Found via query family: challenge
-  (นักวิจัยอิสระ ไม่มีสังกัดสถาบัน ความน่าเชื่อถือ งานวิจัย). Dialogue-table stance: ORTHOGONAL.
+notes: 'Thailand, TH (Thai language), grey/community source (TCIJ -- Thai Civic Investigative
+  Journalism network, a nonprofit journalism outlet, not peer-reviewed). Found via
+  query family: challenge (นักวิจัยอิสระ ไม่มีสังกัดสถาบัน ความน่าเชื่อถือ งานวิจัย).
+  Dialogue-table stance: ORTHOGONAL.'

@@ -1,0 +1,23 @@
+{
+ "vendor": "codex",
+ "fetched": {
+  "source": "crossref",
+  "title": "Strategies Employed by Citizen Science Programs to Increase the Credibility of Their Data",
+  "authors": [
+   "Freitag",
+   "Meyer",
+   "Whiteman"
+  ],
+  "year": 2016,
+  "container": "Citizen Science: Theory and Practice",
+  "abstract": ""
+ },
+ "verdict": {
+  "metadata_matches": true,
+  "passage_plausible": false,
+  "claim_match": false,
+  "bearing": "CONTEXT_ONLY",
+  "reason": "Metadata does not contradict the card. However, the fetched abstract is empty, so there is no fetched text to compare against the quoted passage. Under the rules, passage_plausible is false; without validated passage evidence, claim_match is also false."
+ },
+ "date": "2026-09-04"
+}

@@ -1,0 +1,14 @@
+{
+ "vendor": "codex",
+ "fetched": {
+  "source": "no-identifier"
+ },
+ "verdict": {
+  "metadata_matches": false,
+  "passage_plausible": false,
+  "claim_match": false,
+  "bearing": "CONTEXT_ONLY",
+  "reason": "Open: card has no identifier, metadata, scope, passage, or fetched text. With only source=no-identifier, metadata cannot be confirmed, passage plausibility cannot be compared, and no evidenced bearing on H3 is shown."
+ },
+ "date": "2026-09-04"
+}

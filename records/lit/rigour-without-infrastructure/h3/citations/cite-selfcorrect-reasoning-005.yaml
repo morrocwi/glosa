@@ -4,18 +4,28 @@ identifier_kind: ARXIV
 fetch_status: FETCHED
 acquisition_log_ref: null
 metadata_verified: true
-claim_match_verified: true
+claim_match_verified: false
 claim_match_verification_route: NOT_YET
 version_status: PREPRINT
 retraction_check: UNCHECKED
 dialogue_table_stance: undetermined
 diversity:
   language: en
-  discipline_or_tradition: "NLP / LLM self-correction"
+  discipline_or_tradition: NLP / LLM self-correction
   source_type: preprint
-  search_route_or_database: "WebSearch (general web) -> arXiv abstract page"
-  geography_or_institution: "not stated on fetched arXiv abstract page (undetermined)"
+  search_route_or_database: WebSearch (general web) -> arXiv abstract page
+  geography_or_institution: not stated on fetched arXiv abstract page (undetermined)
   venue_quality_index:
     index_name: null
     value: null
     date_read: null
+independence_class: I3
+who_verified: route:codex (cross-vendor AI; abstract/metadata level, not full text)
+  -- see cite-selfcorrect-reasoning-005.i3.json
+verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
+claim_match_verified_by: route:codex
+disclosure: ' | I3 route (codex) judged from fetched metadata/abstract + the card''s
+  quoted passage, not full text: No identifier, metadata, exact passage, locator,
+  scope, or fetched text is provided. With no text to compare and no evidenced connection
+  to H3, metadata cannot be verified, passage plausibility fails, and claim match
+  is false.'

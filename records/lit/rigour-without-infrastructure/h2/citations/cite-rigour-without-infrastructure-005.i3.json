@@ -1,0 +1,26 @@
+{
+ "vendor": "codex",
+ "fetched": {
+  "source": "crossref",
+  "title": "Decolonizing Open Science: Southern Interventions",
+  "authors": [
+   "Dutta",
+   "Ramasubramanian",
+   "Barrett",
+   "Elers",
+   "Sarwatay",
+   "Raghunath"
+  ],
+  "year": 2021,
+  "container": "Journal of Communication",
+  "abstract": " Abstract \n                   Hegemonic Open Science, emergent from the circuits of knowledge production in the Global North and serving the economic interests of platform capitalism, systematically erase the voices of the subaltern margins from the Global South and the Southern margins inhabiting the North. Framed within an overarching emancipatory narrative of creating access for and empowering the margins through data exchanged on the global free market, hegemonic Open Science processes co-opt and erase Southern epistemologies, working to create and reproduce new enclosures of extraction that serve data colonialism-capitalism. In this essay, drawing on our ongoing negotiations of community-led culture-centered advocacy and activist strategies that resist the racist, gendered, and classed structures of neocolonial knowledge production in the metropole in the North, we attend to Southern practices of Openness that radically disrupt the whiteness of hegemonic Open Science. These decolonizing practices foreground data sovereignty, community ownership, and public ownership of knowledge resources as the bases of resistance to the colonial-capitalist interests of hegemonic Open Science. "
+ },
+ "verdict": {
+  "metadata_matches": true,
+  "passage_plausible": true,
+  "claim_match": false,
+  "bearing": "CONTEXT_ONLY",
+  "reason": "Metadata does not contradict the card, and the passage matches the fetched abstract with ellipsis. But H2 content is not provided, so I cannot verify that the source bears on the hypothesis beyond the card's context-only scope; uncertain therefore false."
+ },
+ "date": "2026-09-04"
+}

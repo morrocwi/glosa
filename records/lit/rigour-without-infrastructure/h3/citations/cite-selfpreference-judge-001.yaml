@@ -4,18 +4,27 @@ identifier_kind: ARXIV
 fetch_status: FETCHED
 acquisition_log_ref: null
 metadata_verified: true
-claim_match_verified: true
+claim_match_verified: false
 claim_match_verification_route: NOT_YET
 version_status: PREPRINT
 retraction_check: UNCHECKED
 dialogue_table_stance: undetermined
 diversity:
   language: en
-  discipline_or_tradition: "NLP / LLM evaluation"
+  discipline_or_tradition: NLP / LLM evaluation
   source_type: preprint
-  search_route_or_database: "WebSearch (general web) -> arXiv abstract page"
-  geography_or_institution: "not stated on fetched arXiv abstract page (undetermined)"
+  search_route_or_database: WebSearch (general web) -> arXiv abstract page
+  geography_or_institution: not stated on fetched arXiv abstract page (undetermined)
   venue_quality_index:
     index_name: null
     value: null
     date_read: null
+independence_class: I3
+who_verified: route:codex (cross-vendor AI; abstract/metadata level, not full text)
+  -- see cite-selfpreference-judge-001.i3.json
+verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
+claim_match_verified_by: route:codex
+disclosure: ' | I3 route (codex) judged from fetched metadata/abstract + the card''s
+  quoted passage, not full text: No identifier, card metadata, scope, exact passage,
+  or fetched text is available. With nothing to compare, metadata cannot be verified,
+  passage plausibility fails, and the source cannot be shown to bear on H3.'
