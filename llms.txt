@@ -22,5 +22,6 @@
 - plugins/glosa/skills/glosa-publish-gate/SKILL.md : R1–R7 publish gate, leak scan, K-state semantics (K0 today; K1 needs I3; K2 needs I5)
 - plugins/glosa/skills/glosa-project-advisor/SKILL.md : post-release conversion-plan advisor (third role)
 ## Paper
+- paper/glosa-concept-paper/main.tex : the glosa concept paper (v0.2.0, English, produced by glosa on itself); claims in projects/GLS-2026-001_rigour-without-infrastructure/claims/
 - paper/latex/, paper/claims/ : the glosa methodology paper itself (in progress, owned by other agents in this pass — not restated here)
 - templates/paper/arxiv-onecol/ and templates/paper/arxiv-twocol/ : the reusable LaTeX skeletons a new paper starts from, with the mandatory Blackbox Note appendix

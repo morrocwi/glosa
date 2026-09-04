@@ -39,9 +39,10 @@ Every real command lives in one place — no guessing which doc is current: the 
 argparse dispatch, so it cannot go stale the way prose can). Starting example:
 `./cli/glosa intake new --project <name> --human-owner <you>`.
 
-## Documents of record (v0.1.0)
-- Paper PDF: `dist/glosa-paper-0.1.0-en.pdf` (EN) · `dist/glosa-paper-0.1.0-th.pdf` (TH, source of truth). Source: `paper/main_en.md`, `paper/main_th.md`.
+## Documents of record (v0.2.0)
+- **Concept paper (current, v0.2.0):** `dist/glosa-concept-paper-0.2.0-draft.pdf` — English, arXiv two-column; source `paper/glosa-concept-paper/main.tex`; claims `projects/GLS-2026-001_rigour-without-infrastructure/claims/`; literature review `records/lit/rigour-without-infrastructure/` (48 VERIFIED citation cards); nine cross-vendor review reports in `projects/GLS-2026-001_rigour-without-infrastructure/reviews/`.
+- Earlier design-science draft (v0.1.0, superseded): `dist/glosa-paper-0.1.0-en.pdf` / `-th.pdf`, source `paper/main_en.md` / `main_th.md` — kept for lineage.
 - Blackbox Log (ปูมกล่องดำ, founder voice only, Thai): concept DOI 10.5281/zenodo.22302518 · local `blackbox/log/`.
 - Installable skills: `plugins/glosa/skills/` (Claude plugin), `mcp/glosa_mcp_server.py` (MCP), `cli/glosa` (CLI). Toolchain list: `TOOLCHAIN.md`.
-- K-state of this release: **K0** (public working release, timestamped, citable, not peer reviewed, no independent check). The Zenodo DOI in `CITATION.cff` resolves only once the record is published, which happens at the same time as the public push.
-- Registry self-report: `registry/RESEARCH_REGISTRY.yaml` GLS-2026-001 is at `genre_routed`, not `released` — the state machine refuses to advance without an LRS manifest, and this paper has none (positioning table only). Known gap, stated by the tool itself.
+- K-state of this release: **K0**; the three claim cards behind the concept paper were reviewed by cross-vendor routes (I3) and revised; `independent_check` is PENDING (not re-checked, not founder-approved) (public working release, timestamped, citable, not peer reviewed, no independent check). The Zenodo DOI in `CITATION.cff` resolves only once the record is published, which happens at the same time as the public push.
+- Registry: `registry/RESEARCH_REGISTRY.yaml` GLS-2026-001 is at `paper_draft` — it reached `method` only once a real literature-review manifest existed (the state machine refused earlier); `released` requires the publish gate + a DOI version.

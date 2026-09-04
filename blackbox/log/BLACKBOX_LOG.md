@@ -86,11 +86,11 @@
 - **BBL-2026-09-04-099** (2026-09-04, ruling, paper, language-en, arxiv-twocol, layout, GLS-2026-001) — โอเคแต่บทความเราเอาภาษาอังงกฤษนะไม่เอาไทย และ ธีมแบบ  ArXiv สองคอมลัม แบบ ใน zenodo เอาสวย…
 - **BBL-2026-09-04-100** (2026-09-04, ruling, citation, locator, link, no-memory-citation, source-first) — กำหนดไปเลยไหม ถ้าไปเอาไซตมาต้องมีหน้าและบรรทัดร และลิงค์มาครบห้ามเขียนจากคามจำแบบนั้นไปเลย…
 - **BBL-2026-09-04-101** (2026-09-04, instruction, adopt, citation-rule) — อัพเดทเข้าระบบไปเลย…
-- **BBL-2026-09-04-102** (2026-09-04, instruction, zenodo, publish, from-problem-to-hypothesis, imagination, bounded-knower) — เอาเข้าา zenodo ให้หน่อย'/home/yaoharee-lt/Downloads/From_Problem_to_Hypothesis_BOUNDED_KN…
+- **BBL-2026-09-04-102** (2026-09-04, instruction, zenodo, publish, from-problem-to-hypothesis, imagination, bounded-knower) — เอาเข้าา zenodo ให้หน่อย'<local path redacted>/From_Problem_to_Hypothesis_BOUNDED_KNOWER_F…
 - **BBL-2026-09-04-103** (2026-09-04, ruling, paper, english-only, no-thai-in-paper, GLS-2026-001) — ไม่ต้องใช้ภาษาไทยเอาอังกฤษล้วน…
 - **BBL-2026-09-04-104** (2026-09-04, ruling, attribution, no-ai-coauthor, zenodo, git) — co authore ที่แอบใส่ไว้ในระบบ zendo ว่าเป็น claude ให้ลบทั้งหมด…
 - **BBL-2026-09-04-105** (2026-09-04, ruling, attribution, permission-only, gate-rule) — ตั้งกติกาเลยว่าถ้าจะใส่อะไรพวกนีต้องขออนุญาติเท่านั้นใน claude.md…
-- **BBL-2026-09-04-106** (2026-09-04, instruction, zenodo, series, bounded-knower, paper-II, paper-III, linking) — เอาสองเอกสารนี้ เชื่อมกับเอกสารก่อนหน้าให้อ'/home/yaoharee-lt/Downloads/Before_Evidence_Ca…
+- **BBL-2026-09-04-106** (2026-09-04, instruction, zenodo, series, bounded-knower, paper-II, paper-III, linking) — เอาสองเอกสารนี้ เชื่อมกับเอกสารก่อนหน้าให้อ'<local path redacted>/Before_Evidence_Can_Deci…
 
 ### กล่องดำ / เสียงดิบ (7)
 
@@ -1939,9 +1939,9 @@
 
 > อัพเดทเข้าระบบไปเลย
 
-**BBL-2026-09-04-102** · 22:09 · ผู้ก่อตั้ง · instruction · หมวด: วิธีวิทยา / ระบบ glosa · zenodo, publish, from-problem-to-hypothesis, imagination, bounded-knower · ที่มา: chat 2026-09-05 ~00:10 — publish the From Problem to Hypothesis paper (bounded-knower final, GLOSA K0) to Zenodo
+**BBL-2026-09-04-102** · 22:09 · ผู้ก่อตั้ง · instruction · หมวด: วิธีวิทยา / ระบบ glosa · zenodo, publish, from-problem-to-hypothesis, imagination, bounded-knower · ที่มา: chat 2026-09-05 ~00:10 — publish the From Problem to Hypothesis paper (bounded-knower final, GLOSA K0) to Zenodo ( | local filesystem paths in the pasted file references redacted for the public record (privacy gate R1, 2026-09-05); the founder's words are otherwise unchanged)
 
-> เอาเข้าา zenodo ให้หน่อย'/home/yaoharee-lt/Downloads/From_Problem_to_Hypothesis_BOUNDED_KNOWER_FINAL_ArXiv_TwoColumn_K0.pdf'
+> เอาเข้าา zenodo ให้หน่อย'<local path redacted>/From_Problem_to_Hypothesis_BOUNDED_KNOWER_FINAL_ArXiv_TwoColumn_K0.pdf'
 
 **BBL-2026-09-04-103** · 22:09 · ผู้ก่อตั้ง · ruling · หมวด: วิธีวิทยา / ระบบ glosa · paper, english-only, no-thai-in-paper, GLS-2026-001 · ที่มา: chat 2026-09-05 ~00:15 — the concept paper carries no Thai text at all; founder lines appear as English gloss with pointers to the verbatim Thai in the Blackbox Log / Blackbox Note (the Thai-font engine problem becomes moot)
 
@@ -1955,7 +1955,7 @@
 
 > ตั้งกติกาเลยว่าถ้าจะใส่อะไรพวกนีต้องขออนุญาติเท่านั้นใน claude.md
 
-**BBL-2026-09-04-106** · 22:42 · ผู้ก่อตั้ง · instruction · หมวด: วิธีวิทยา / ระบบ glosa · zenodo, series, bounded-knower, paper-II, paper-III, linking · ที่มา: chat 2026-09-05 ~01:40 — publish Paper II + III and link the three-paper sequence (I = 10.5281/zenodo.22307148) as one series on Zenodo
+**BBL-2026-09-04-106** · 22:42 · ผู้ก่อตั้ง · instruction · หมวด: วิธีวิทยา / ระบบ glosa · zenodo, series, bounded-knower, paper-II, paper-III, linking · ที่มา: chat 2026-09-05 ~01:40 — publish Paper II + III and link the three-paper sequence (I = 10.5281/zenodo.22307148) as one series on Zenodo ( | local filesystem paths in the pasted file references redacted for the public record (privacy gate R1, 2026-09-05); the founder's words are otherwise unchanged)
 
-> เอาสองเอกสารนี้ เชื่อมกับเอกสารก่อนหน้าให้อ'/home/yaoharee-lt/Downloads/Before_Evidence_Can_Decide_Paper_III_K0.pdf' '/home/yaoharee-lt/Downloads/Knowledge_Topology_First_Passage_Usable_Hypotheses_K0.pdf' ่ อ่านหากันได้ เข้า zenodo เป็นซีรีส์เดียวกัน
+> เอาสองเอกสารนี้ เชื่อมกับเอกสารก่อนหน้าให้อ'<local path redacted>/Before_Evidence_Can_Decide_Paper_III_K0.pdf' '<local path redacted>/Knowledge_Topology_First_Passage_Usable_Hypotheses_K0.pdf' ่ อ่านหากันได้ เข้า zenodo เป็นซีรีส์เดียวกัน
 

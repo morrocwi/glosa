@@ -6,6 +6,7 @@
 # username, or real session id — patterns only.
 
 # --- local filesystem paths that leak this workstation's identity ---
+/home/[A-Za-z0-9_.-]+/[A-Za-z0-9_.]   # generic catch-all (gate v2 R1, 2026-09-05)
 /home/[A-Za-z0-9_.-]+/ANSE\.ASIA
 /home/[A-Za-z0-9_.-]+/\.config/glosa
 /home/[A-Za-z0-9_.-]+/\.claude

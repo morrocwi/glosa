@@ -1,3 +1,5 @@
+> **Current paper (v0.2.0): `paper/glosa-concept-paper/`** — English concept paper produced by running glosa on itself (see `projects/GLS-2026-001_rigour-without-infrastructure/`). The files described below are the earlier v0.1.0 draft, kept for lineage.
+
 # `paper/` — glosa's own paper (R1)
 
 **Status: K0 draft.** Not released, not independently reviewed, not peer reviewed. Will move to

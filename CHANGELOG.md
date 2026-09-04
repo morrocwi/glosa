@@ -1,4 +1,9 @@
 # CHANGELOG
+## 0.2.0 — 2026-09-05 (in preparation)
+- glosa applied to itself: concept paper (English, arXiv two-column) produced through the full spine — problem card, Blackbox Note, lens translation, three hypotheses selected by the founder, literature review system with 48 citation cards VERIFIED by a cross-vendor route under rule 17 (link + page + line + verbatim), own-lineage collision rows, claim cards reviewed by nine cross-vendor routes and revised (dissent preserved), publish gate v2.
+- New rules from the run: rule 15/16 (responsibility per arrow, ownership of problem/question/hypothesis-selection, empirical extension), rule 17 (source-first citation), gate rule 9 (no AI attribution without permission); lit manifest fails closed on non-conformant cards; CLI writes repo-relative refs; pre-commit leak hook; install.sh / doctor / CI install test.
+- Vendor names removed from all attribution surfaces; public git history rewritten to strip AI co-author trailers (founder ruling 2026-09-05).
+- Zenodo: Bounded Knower series (Papers I–III) published and cross-linked; Blackbox Log updated through v15+.
 ## 0.1.0 — 2026-09-04
 - Published: Zenodo DOI 10.5281/zenodo.22301060 (concept 10.5281/zenodo.22301059); GitHub morrocwi/glosa tag v0.1.0.
 - Registry self-report: GLS-2026-001 stays at stage `genre_routed` — the registry state machine refuses `method…released` without a literature-review manifest, and this paper was released with a positioning table, not an LRS run (D-LIT-MODE). The system reports the gap on itself; closing it = run the LRS for this paper in 0.2.
