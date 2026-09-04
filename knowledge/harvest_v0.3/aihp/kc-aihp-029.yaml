@@ -1,0 +1,27 @@
+id: kc-aihp-029
+kind: claim
+title: AI expands information access without reconstructing full event-specific context
+text: 'Conceptual, non-empirical framework distinguishing information access from context access: while
+  AI substantially expands access to interpreted information and linguistic synthesis, it does not reconstruct
+  the full situational, temporal, relational, and agency-bearing conditions of an actual event. Introduces
+  the external context-frame and interaction efficiency as theoretical constructs, plus a boundary set
+  for when AI interaction supports or degrades human agency.'
+verbatim: 'It argues that while AI systems substantially expand access to interpreted information and
+  linguistic synthesis, they do not reconstruct the full situational, temporal, relational, and agency-bearing
+  conditions of events. The contribution is fourfold: (i) a structural distinction between information
+  access and context access; (ii) a historical–structural model of context transformation across offline,
+  searchbased, social-media, and AI-mediated epochs'
+source:
+  doi: 10.5281/zenodo.18517054
+  title: AI, Translation, and Access to Event-Specific Contex
+  year: 2026
+fetched_from_url: https://zenodo.org/api/records/18517054
+locator: Abstract
+tier: Dr
+base_relation: holds
+base_justification: The information-access/context-access split is a domain-specific instance of kc-base-006
+  (a non-injective readout leaves no decoder able to recover collapsed states) — AI output is a lossy
+  readout of an event, not the event reconstructed.
+glosa_use: skip
+glosa_target: n/a — media/translation-theory domain paper, background grounding only
+notes: Title as recorded on Zenodo carries a typo ('Contex' for 'Context'); reproduced verbatim.

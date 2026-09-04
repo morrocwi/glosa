@@ -1,0 +1,28 @@
+id: kc-ph-085
+kind: method
+title: 'Causal–Memory Program: Short Talk (Two-Column Boxed)'
+text: 'Self-published Zenodo preprint (single-author physics/information-theory program, 2025-12-27). Abstract
+  reports: Causal–Memory Program: Short Talk (Two-Column Boxed) This document addresses a single question
+  throughout: the limits of control in the real world . It asks, in simple terms, that if any system has a
+  finite response time and if influences within that system cannot propagate instantaneously, which aspects of
+  the system remain controllable, and which inevitably...'
+verbatim: 'Causal–Memory Program: Short Talk (Two-Column Boxed) This document addresses a single question throughout:
+  the limits of control in the real world . It asks, in simple terms, that if any system has a finite response
+  time and if influences within that system cannot propagate instantaneously, which aspects of the system
+  remain controllable, and which inevitably fall beyond control. The work does not attempt to explain new
+  phenomena, propose new physics, or compete with existing theories. Instead, it organizes a set of
+  fundamental considerations that all physical systems necessarily face. When'
+source:
+  doi: 10.5281/zenodo.18065304
+  title: 'Causal–Memory Program: Short Talk (Two-Column Boxed)'
+  year: 2025
+fetched_from_url: 'https://zenodo.org/api/records/18065304'
+locator: Zenodo record abstract (desc field), via API, from registry/zenodo_all_records.json
+tier: Open
+base_relation: open
+base_justification: Domain physics content (a specific claim/derivation/observational note) not directly addressed by any base
+  card; carries no base-card contradiction but also no base endorsement — left open.
+glosa_use: skip
+glosa_target: n/a — domain physics claim outside glosa's method-layer scope
+notes: Part of the single-author 'ph' hub iterative physics-theory series (Zenodo id 18065304, 2025-12-27);
+  method-layer extraction only (self-publication + no-peer-review posture), not the physics content itself.

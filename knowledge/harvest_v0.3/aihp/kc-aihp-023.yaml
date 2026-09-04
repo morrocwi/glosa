@@ -1,0 +1,28 @@
+id: kc-aihp-023
+kind: claim
+title: 'Constraint-first epistemology: AI expands human potential only when machine-mediated dissonance
+  becomes disciplined revision'
+text: AI is reframed as a mediating layer within finite inquiry whose significance lies in whether it
+  deepens or degrades epistemic agency by altering encounters with friction, alternative formulations,
+  latent assumptions, and revision pressure. AI expands human potential only when machine-mediated dissonance
+  becomes disciplined revision under world-answerable conditions — requiring corrigibility, route-openness,
+  criticizability, and domain-sensitive validation; AI cannot by itself certify truth.
+verbatim: On the view defended here, AI expands human potential only when machine-mediated dissonance
+  becomes disciplined revision under world-answerable conditions. This requires corrigibility, route-openness,
+  criticizability, and domain-sensitive validation. AI can accelerate candidate generation, comparison,
+  and conceptual reframing, but it cannot by itself certify truth, remove irreducible mediation, or replace
+  target- domain assessment.
+source:
+  doi: 10.5281/zenodo.19215748
+  title: 'When AI Expands Human Potential: Reflective Dissonance, Epistemic Agency, and Constraint'
+  year: 2026
+fetched_from_url: https://zenodo.org/api/records/19215748
+locator: Abstract
+tier: Dr
+base_relation: holds
+base_justification: '''AI cannot by itself certify truth'' matches kc-base-025 (no outside-validation
+  epistemic authority) and kc-base-035 (Bounded-Judge Law — independent review, not the producing agent,
+  does certification); this is the hub''s own anchor paper (registry anchors list) for the whole cluster.'
+glosa_use: adopt
+glosa_target: FOUNDATION §2 AI-disclosure norm — AI drafts, never certifies
+notes: Listed as one of three cluster anchors in registry/zenodo_clusters.json aihp.anchors.

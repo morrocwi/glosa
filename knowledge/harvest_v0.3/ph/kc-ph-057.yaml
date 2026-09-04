@@ -1,0 +1,31 @@
+id: kc-ph-057
+kind: claim
+title: 'Operational Compactness: Unified One-Parameter Interfaces for Newtonian, Gravitational, and
+  Micro-Informational Domains'
+text: 'Self-published Zenodo preprint (single-author physics/information-theory program, 2025-11-22). Abstract
+  reports: Technical Note. We review the standard Newton-to-GR compactness u = 2GM/(Rc2) for static spherical
+  systems and introduce three minimal notation-level extensions for cross-domain usage: (i) a generalized
+  compactness u(X)gen , (ii) a domain-priority selector, and (iii) a micro-informationalscaling law. All
+  non-standard structures are marked *[Assumed]* and introduce no new gravitational physics. Lineage. The
+  notation extensions...'
+verbatim: 'Technical Note. We review the standard Newton-to-GR compactness u = 2GM/(Rc2) for static spherical systems
+  and introduce three minimal notation-level extensions for cross-domain usage: (i) a generalized compactness
+  u(X)gen , (ii) a domain-priority selector, and (iii) a micro-informationalscaling law. All non-standard
+  structures are marked *[Assumed]* and introduce no new gravitational physics. Lineage. The notation
+  extensions descend from the informational-axiomatic program of Lahtee [1], while the GR sector remains
+  textbook Schwarzschild physics.'
+source:
+  doi: 10.5281/zenodo.17679504
+  title: 'Operational Compactness: Unified One-Parameter Interfaces for Newtonian, Gravitational, and
+    Micro-Informational Domains'
+  year: 2025
+fetched_from_url: 'https://zenodo.org/api/records/17679504'
+locator: Zenodo record abstract (desc field), via API, from registry/zenodo_all_records.json
+tier: Open
+base_relation: open
+base_justification: Domain physics content (a specific claim/derivation/observational note) not directly addressed by any base
+  card; carries no base-card contradiction but also no base endorsement — left open.
+glosa_use: skip
+glosa_target: n/a — domain physics claim outside glosa's method-layer scope
+notes: Part of the single-author 'ph' hub iterative physics-theory series (Zenodo id 17679504, 2025-11-22);
+  method-layer extraction only (self-publication + no-peer-review posture), not the physics content itself.

@@ -1,0 +1,24 @@
+id: kc-ep-019
+kind: method
+title: 'Three Layers, One Moon: PCS applied to hilal (crescent-sighting) disagreement'
+text: 'Argues recurring hilal-sighting disagreements stem not from astronomical uncertainty or institutional
+  failure but from Premature Category Stabilization: applying the tools/standards/authority of one layer
+  (astronomical, jurisprudential, institutional) to questions belonging to another; recommends a repair-permissive
+  community architecture over enforced uniformity.'
+verbatim: Disagreements over the sighting of the new crescent moon (hilal) recur annually across Muslim
+  communities worldwide, generating persistent conict even among actors who share sincere religious commitment
+  and access to the same astronomical data.
+source:
+  doi: 10.5281/zenodo.19124963
+  title: 'Three Layers, One Moon: Premature Category Stabilization and the Structure of Hilal Disagreement'
+  year: 2026
+fetched_from_url: https://zenodo.org/api/records/19124963
+locator: Zenodo record abstract (desc field), via API
+tier: Open
+base_relation: open
+base_justification: Extends the PCS construct from kc-ep-018 (19059720) to a new domain; not judged against
+  the epistemic base cards directly, though the 'layer confusion' diagnosis parallels the base's contaminated-concept-table
+  discipline of not conflating levels (kc-base-018).
+glosa_use: skip
+glosa_target: (domain hub islam, method-layer only)
+notes: 2026-03-20.

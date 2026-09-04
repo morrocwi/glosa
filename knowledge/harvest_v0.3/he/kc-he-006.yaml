@@ -1,0 +1,23 @@
+id: kc-he-006
+kind: method
+title: CPRMH — seventeen pre-specified falsifiers, locked before outcome access
+text: The plaque-remodeling coordination theory pre-specifies, for each stage, a load-bearing set, a
+  negative-modality blocker set, a measurement model, and decision thresholds BEFORE outcome data is seen, and
+  explicitly bars redefining the measurement model or thresholds after a result "merely to rescue the current
+  architecture." Seventeen named falsifiers (F1-F17) are enumerated as the operational test battery.
+verbatim: 'Once 𝑀𝑠 and 𝑇𝑠 pass their pre-specified adequacy rules, they cannot be redefined after the result
+  merely to rescue the current architecture.'
+source:
+  path: sources/CPRMH_v12.txt
+  title: "Coordinated Plaque Remodeling Modalities: A Falsifiable Synthesis from Material-Specific Plaque Remodeling to Sleep-Anchored, Low-Cost State-Setting"
+  year: 2026
+fetched_from_url: sources/CPRMH_v12.txt
+locator: lines ~408-410 (near Proposition C5, "Minimum Core Identity and Core-Collapse Criterion")
+tier: Open
+base_relation: holds
+base_justification: This is a direct domain instantiation of the Fail-Able Gate Law (kc-base-008) — a
+  pre-specified failing criterion (F1-F17) locked before outcome access, not a passing-only convention.
+glosa_use: adopt
+glosa_target: "FOUNDATION §3.3 Kernel gate rules and §7.3 Bounded-Judge Law"
+notes: Directly reusable phrasing for a glosa kernel-gate rule ("thresholds/measurement model, once locked,
+  cannot be redefined post-hoc to rescue a claim").

@@ -1,0 +1,28 @@
+id: kc-islam-010
+kind: definition
+title: Premature Category Stabilization as a scale-invariant mechanism; peace defined by three structural conditions
+text: Generalizes Premature Category Stabilization (PCS) — freezing diverse persons/groups into simplified
+  institutional templates before encounter — from tourism to family mediation, community institutions, and
+  state policy. Defines peace structurally through three necessary conditions (pathway openness, feasibility
+  preservation, repair-permissiveness) and states its own limits and proof obligations up front.
+verbatim: "It further defines peace structurally through three necessary conditions: pathway openness,
+  feasibility preservation, and repair-permissiveness... The article concludes by specifying the framework's
+  limits, proof obligations, and implications for intercultural governance, policy design, and comparative
+  research."
+source:
+  doi: 10.5281/zenodo.19115417
+  title: "From Intercultural Marriage to State Policy: Premature Category Stabilization as a Scale-Invariant
+    Mechanism of Cultural Failure"
+  year: 2026
+fetched_from_url: local file ~/Downloads/PCS_scale_bridging_paper.pdf (matched by title and abstract text
+  against Zenodo record 19115417)
+locator: Abstract, p.1
+tier: Open
+base_relation: holds
+base_justification: Naming a mechanism's own limits and proof obligations up front matches the base's
+  Fail-Able Gate Law (kc-base-008) — a claim only counts as checkable once its own failing/limiting conditions
+  are stated, not just its successes.
+glosa_use: adopt
+glosa_target: FOUNDATION §12 honest edges (what is still Dr/untested, what was NOT read) — reusable pattern
+  for stating a framework's own limits inline rather than only in a separate caveats section.
+notes: PCS family paper (see kc-islam-009, kc-islam-011).

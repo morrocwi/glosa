@@ -1,0 +1,29 @@
+id: kc-ph-030
+kind: claim
+title: A Proposed Gauge-Coupled Unification of Informational, Curvature, and Electromagnetic Dynamics
+text: 'Self-published Zenodo preprint (single-author physics/information-theory program, 2025-11-04). Abstract
+  reports: We present a complete, informational gauge theory that unifies informational dynamics,
+  gravitational curvature (GR), and electromagnetism (EM). We postulate a connection between electromagnetism
+  and the gauge symmetry of the informational field’s phase (Psi = rho * exp(i*theta)). The dynamics of the
+  coupled system are governed by a single, dimensionally consistent Master Equation (U_alpha-ME). We prove...'
+verbatim: We present a complete, informational gauge theory that unifies informational dynamics, gravitational
+  curvature (GR), and electromagnetism (EM). We postulate a connection between electromagnetism and the gauge
+  symmetry of the informational field’s phase (Psi = rho * exp(i*theta)). The dynamics of the coupled system
+  are governed by a single, dimensionally consistent Master Equation (U_alpha-ME). We prove that the total
+  energy functional E[Psi, A_mu] (including the (1/4) * F_munu * F^munu term) universally obeys a covariant
+  Lyapunov law (dE/dt <= 0). This paper presents the complete theoretical framework and proposes a registry
+source:
+  doi: 10.5281/zenodo.17520367
+  title: A Proposed Gauge-Coupled Unification of Informational, Curvature, and Electromagnetic Dynamics
+  year: 2025
+fetched_from_url: 'https://zenodo.org/api/records/17520367'
+locator: Zenodo record abstract (desc field), via API, from registry/zenodo_all_records.json
+tier: Open
+base_relation: superseded
+base_justification: Uses an earlier, since-abandoned working name/formalism (this program cycled through several framework names
+  before settling on retained-information/δ_R vocabulary); the base corpus's mother equation (kc-base-020) and
+  trunk equation (kc-base-022) replace this formulation.
+glosa_use: skip
+glosa_target: n/a — abandoned vocabulary, replaced by base mother/trunk equation
+notes: Part of the single-author 'ph' hub iterative physics-theory series (Zenodo id 17520367, 2025-11-04);
+  method-layer extraction only (self-publication + no-peer-review posture), not the physics content itself.

@@ -1,0 +1,33 @@
+id: kc-base-037
+kind: claim
+title: Case study — the tier discipline catching itself mid-flight (EQ-069–071 retraction)
+text: 'Three finite_diagnostic entries reported a fermion-mass mechanism with dynamic ranges up to 449808x
+  logged as evidence of structure. Independent review located the actual shape: the readout was a smooth
+  bijection Θ↔R — a coordinate on a knob, not an observable — so the large ranges were an artifact of
+  timesteps, not signal. The founder ruled retraction: the entries stay in the ledger by number (the stream
+  must not renumber around a mistake), but their content is replaced in place by the retraction rationale,
+  with the original reasoning preserved in a standing error note rather than deleted.'
+verbatim: 'On 2026-07-26 the founder ruled retraction:
+
+  EQ-069/070/071 stay in the ledger *by number* — the stream must not
+
+  renumber around a mistake — but their content is replaced in place by the
+
+  retraction rationale, with the original reasoning and its transferable
+
+  lessons preserved in a standing error note rather than deleted.'
+source:
+  path: readout_universe/philosophy.md
+  title: Philosophy — Readout Universe
+  year: 2026
+fetched_from_url: ~/ANSE.ASIA/readout_universe/philosophy.md
+locator: §2.1, lines ~206-232
+tier: Dr
+base_relation: holds
+base_justification: This IS a base card from the lens root text; base cards are the ground the ledger
+  is judged against.
+glosa_use: adopt
+glosa_target: FOUNDATION §7.6 K1→K2 conversion ledger
+notes: 'A directly reusable ledger-discipline pattern for glosa: a retracted card keeps its id number
+  and is replaced in place by the retraction rationale, never silently deleted or renumbered — glosa''s
+  K1->K2 ledger should adopt this exact mechanic.'

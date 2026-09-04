@@ -1,0 +1,27 @@
+id: kc-ep-031
+kind: claim
+title: The explanatory insufficiency of randomness
+text: 'Argues objective chance cannot be the terminal explanans of natural order: every contentful chance
+  ascription presupposes a determinate space of possibilities plus a measure over it, so chance explains
+  at most which possibility is actualized, never that the possibility-space and its measure obtain; surveys
+  and rebuts the standard escape routes (law-without-law, self-organisation, multiverse, quantum indeterminacy,
+  brute fact).'
+verbatim: 'It is sometimes proposed that objective chance is the terminal explanans of natural order:
+  that laws and their stability are, at bottom, products of brute randomness with nothing more fundamental
+  beneath them. I argue that this position is incoherent as stated. Every contentful ascription of objective
+  chance—whether construed as a property of a process or of a product—presupposes a determinate space
+  of possibilities together with a measure over it.'
+source:
+  doi: 10.5281/zenodo.20473230
+  title: The Explanatory Insufficiency of Randomness
+  year: 2026
+fetched_from_url: https://zenodo.org/api/records/20473230
+locator: Zenodo record abstract (desc field), via API
+tier: Open
+base_relation: holds
+base_justification: 'Consistent with the base''s rejection of injected non-readouts (kc-base-016): treating
+  chance/probability-space as something that must itself be established rather than assumed as a free-standing
+  ground echoes the base''s discipline against smuggling in unexamined continuum/measure structure.'
+glosa_use: skip
+glosa_target: (background metaphysics, no direct FOUNDATION hook)
+notes: 2026-05-31.

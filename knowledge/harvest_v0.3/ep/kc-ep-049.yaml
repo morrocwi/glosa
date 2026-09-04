@@ -1,0 +1,25 @@
+id: kc-ep-049
+kind: method
+title: Knowledge Topology and the First Passage to Usable Hypotheses (Paper II)
+text: 'Paper II of the Bounded Knower sequence: a readout theory of discovery time and direction via knowledge-topology
+  and first-passage framing for hypothesis accessibility; GLOSA K0, not independently reviewed, no priority
+  claim.'
+verbatim: 'Series. Paper II of the three-paper Bounded Knower sequence. Paper I: From Problem to Hypothesis
+  (DOI 10.5281/zenodo.22307148). Paper III: Before Evidence Can Decide (DOI 10.5281/zenodo.22307564).
+  Paper IV: The Epistemic Chain Reaction (DOI 10.5281/zenodo.22307751). Status. GLOSA K0 — timestamped
+  and citable, not independently reviewed, no priority claim.'
+source:
+  doi: 10.5281/zenodo.22307561
+  title: 'Knowledge Topology and the First Passage to Usable Hypotheses: A Readout Theory of Discovery
+    Time and Direction'
+  year: 2026
+fetched_from_url: https://zenodo.org/api/records/22307561
+locator: Zenodo record abstract (desc field), via API
+tier: Open
+base_relation: holds
+base_justification: Same series/status relation to base as kc-ep-048; consistent with the base's tier
+  discipline (kc-base-007).
+glosa_use: adapt
+glosa_target: FOUNDATION §7.9 Literature Review System (LRS)
+notes: 2026-09-04; series Paper II of IV; registry desc field carries only series/status metadata, no
+  populated abstract text at time of harvest.

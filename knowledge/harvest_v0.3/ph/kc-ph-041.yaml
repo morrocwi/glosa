@@ -1,0 +1,28 @@
+id: kc-ph-041
+kind: claim
+title: 'When GR Is an Information Tensor, Not Matter: Resolving Dark Matter'
+text: 'Self-published Zenodo preprint (single-author physics/information-theory program, 2025-11-12). Abstract
+  reports: We keep General Relativity (GR) fully intact but extend its source of curvature with an
+  informational scalar field ( s(x) ). In the informational vacuum (( s = 0 )), GR is exactly recovered. In
+  galactic halos (( s \neq 0 )), the field forms a non-equilibrium steady state (NESS) that yields an
+  effective density...'
+verbatim: 'We keep General Relativity (GR) fully intact but extend its source of curvature with an informational
+  scalar field ( s(x) ). In the informational vacuum (( s = 0 )), GR is exactly recovered. In galactic halos
+  (( s \neq 0 )), the field forms a non-equilibrium steady state (NESS) that yields an effective density (
+  \rho_{\mathrm{HSD}} \propto r^{-2} ), naturally producing flat rotation curves and consistent lensing —
+  without invoking any new dark-matter particles. A single diagnostic equation connects rotation velocity and
+  the informational amplitude: ( v_{\mathrm{flat}}^{2} = 4'
+source:
+  doi: 10.5281/zenodo.17588162
+  title: 'When GR Is an Information Tensor, Not Matter: Resolving Dark Matter'
+  year: 2025
+fetched_from_url: 'https://zenodo.org/api/records/17588162'
+locator: Zenodo record abstract (desc field), via API, from registry/zenodo_all_records.json
+tier: Open
+base_relation: open
+base_justification: Domain physics content (a specific claim/derivation/observational note) not directly addressed by any base
+  card; carries no base-card contradiction but also no base endorsement — left open.
+glosa_use: skip
+glosa_target: n/a — domain physics claim outside glosa's method-layer scope
+notes: Part of the single-author 'ph' hub iterative physics-theory series (Zenodo id 17588162, 2025-11-12);
+  method-layer extraction only (self-publication + no-peer-review posture), not the physics content itself.

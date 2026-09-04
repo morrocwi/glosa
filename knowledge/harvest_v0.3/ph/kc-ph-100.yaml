@@ -1,0 +1,32 @@
+id: kc-ph-100
+kind: method
+title: Bounded Causal Influence as a Structural Constraint Causal Physics Note
+text: 'Self-published Zenodo preprint (single-author physics/information-theory program, 2026-01-13). Abstract
+  reports: Finite propagation constraints are often introduced as dynamical or geometrical features of
+  specific physical theories, most notably in relativity. We argue that a stronger, pre-dynamical claim holds:
+  before introducing time parameters, metric distance, spacetime geometry, or any specific propagation
+  constant, objective causal discourse already demands a nontrivial bound on causal influence. Using a purely
+  intervention-based...'
+verbatim: 'Finite propagation constraints are often introduced as dynamical or geometrical features of specific
+  physical theories, most notably in relativity. We argue that a stronger, pre-dynamical claim holds: before
+  introducing time parameters, metric distance, spacetime geometry, or any specific propagation constant,
+  objective causal discourse already demands a nontrivial bound on causal influence. Using a purely
+  intervention-based formulation, we demonstrate that unbounded causal reach—meaning every event is
+  intervention-accessible from every other event—leads to invariant modal collapse: no observer-independent
+  distinction between influenceable and noninfluenceable event pairs survives representational relabelling.
+  This no-go result establishes'
+source:
+  doi: 10.5281/zenodo.18234573
+  title: Bounded Causal Influence as a Structural Constraint Causal Physics Note
+  year: 2026
+fetched_from_url: 'https://zenodo.org/api/records/18234573'
+locator: Zenodo record abstract (desc field), via API, from registry/zenodo_all_records.json
+tier: Open
+base_relation: refined_by_later_work
+base_justification: Precursor step in the same program's iterative build-up toward what the base corpus fixes as the τ_c>0
+  persistence axiom / mass-as-readout-of-τ_c (kc-base-028); vocabulary and claims here are provisional working
+  drafts later folded into and re-derived under that axiom.
+glosa_use: skip
+glosa_target: n/a — superseded within its own program before reaching base corpus
+notes: Part of the single-author 'ph' hub iterative physics-theory series (Zenodo id 18234573, 2026-01-13);
+  method-layer extraction only (self-publication + no-peer-review posture), not the physics content itself.

@@ -1,0 +1,31 @@
+id: kc-ep-043
+kind: claim
+title: 'Written by AI, still true: the Possession-Constitution Collapse and knower fetishism'
+text: 'Confidence-drop on learning a text was AI-generated, after provenance has done its legitimate work,
+  is often a further slide from ''knowing is a state of a subject'' (Possession) to ''epistemic value
+  requires a human-like knower'' (Constitution) — the Possession-Constitution Collapse; its social form,
+  knower fetishism, converts an earned relation among evidence/reliability/accountability into an intrinsic
+  property of the knower. Proposes: provenance matters only via an identifiable channel; metadata is never
+  epistemic status.'
+verbatim: Suppose a proposition survives source checking, inferential scrutiny, and independent reconstruction.
+  You accept it. Then you learn that an artificial-intelligence system generated the draft, and your confidence
+  falls. What, exactly, became epistemically worse? The familiar answer is that provenance can carry higher-order
+  evidence about reliability. Correct. This paper grants that point and then asks what remains after provenance
+  has done all the legitimate epistemic work available to it.
+source:
+  doi: 10.5281/zenodo.22301202
+  title: Written by AI. Still True. Knower Fetishism, Epistemic Pedigree, and the Human Face as a Bad
+    Theory of Truth
+  year: 2026
+fetched_from_url: local:sources/WRITTEN_BY_AI_STILL_TRUE_v6.txt (also https://zenodo.org/api/records/22301202)
+locator: Abstract, sources/WRITTEN_BY_AI_STILL_TRUE_v6.txt lines ~17-23
+tier: Open
+base_relation: holds
+base_justification: Direct philosophical grounding for glosa/base's own stance that AI-authored claim
+  cards can carry real epistemic weight when the E-A-D provenance chain is intact — matches the base's
+  rejection of authority-by-title (EPIS-KNOWLEDGE-VALIDATION) applied specifically to AI authorship. Local
+  full text available (sources/WRITTEN_BY_AI_STILL_TRUE_v6.txt).
+glosa_use: adopt
+glosa_target: FOUNDATION §3.2b formal_applicability / §7 Gates & review — named source for the Possession-Constitution
+  Collapse / knower-fetishism distinction glosa's AI-authorship rules should cite
+notes: ''

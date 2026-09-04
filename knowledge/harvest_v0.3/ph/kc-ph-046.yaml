@@ -1,0 +1,31 @@
+id: kc-ph-046
+kind: method
+title: 'Concept note : Information Dynamics Across Scales: Telegraph Flow, Memory, and Boundary Capacity'
+text: 'Self-published Zenodo preprint (single-author physics/information-theory program, 2025-11-16). Abstract
+  reports: This short note proposes a conceptual layer—not a complete theory—for thinking about information
+  dynamics across very different physical and biological systems. We collect a set ofstructured observations
+  suggesting that systems with confined information, non-zero memory time, and finite-speed propagation often
+  exhibit similar mathematical structures: a conservation law with input and forgetting, a telegraph-type
+  evolution equation...'
+verbatim: 'This short note proposes a conceptual layer—not a complete theory—for thinking about information dynamics
+  across very different physical and biological systems. We collect a set ofstructured observations suggesting
+  that systems with confined information, non-zero memory time, and finite-speed propagation often exhibit
+  similar mathematical structures: a conservation law with input and forgetting, a telegraph-type evolution
+  equation for the information current, and a boundary-limited capacity reminiscent of black-hole area laws.
+  This research is grounded in the framework of informationism, consistent with Wheeler’s “It from Bit”
+  concept (1990) and the informational ontology (Floridi,'
+source:
+  doi: 10.5281/zenodo.17624695
+  title: 'Concept note : Information Dynamics Across Scales: Telegraph Flow, Memory, and Boundary Capacity'
+  year: 2025
+fetched_from_url: 'https://zenodo.org/api/records/17624695'
+locator: Zenodo record abstract (desc field), via API, from registry/zenodo_all_records.json
+tier: Open
+base_relation: refined_by_later_work
+base_justification: Precursor step in the same program's iterative build-up toward what the base corpus fixes as the τ_c>0
+  persistence axiom / mass-as-readout-of-τ_c (kc-base-028); vocabulary and claims here are provisional working
+  drafts later folded into and re-derived under that axiom.
+glosa_use: skip
+glosa_target: n/a — superseded within its own program before reaching base corpus
+notes: Part of the single-author 'ph' hub iterative physics-theory series (Zenodo id 17624695, 2025-11-16);
+  method-layer extraction only (self-publication + no-peer-review posture), not the physics content itself.

@@ -1,0 +1,31 @@
+id: kc-base-019
+kind: method
+title: Pre-write CHECKLIST (5 steps, contaminated-concept gate)
+text: 'Run before committing any equation, proof, or number: (1) is a left-column contaminated concept
+  present? replace with the discrete right-column form first. (2) Is the quantity about to be called physical
+  actually a smooth bijection of a free knob? then it is a coordinate, not an observable. (3) About to
+  tag something Open/hard/paradoxical? diagnose which I1–I4/Z1–Z4 was injected before deferring. (4) Is
+  a refused endpoint being treated as a wall? it is correctly-refused; approach, never reach. (5) Tier
+  every resulting claim — never collapse.'
+verbatim: "**Pre-write CHECKLIST** (run before committing any equation, proof, or\nnumber to this ledger):\n\
+  1. Left-column concept present (angle in degrees, real coordinate, landing\n   limit, zero-size point,\
+  \ singular `1/0`, `N→∞`, inverse trig)? → replace\n   with right column first.\n2. Is the quantity about\
+  \ to be called physical actually a smooth bijection\n   of a free knob? → it is a coordinate, not an\
+  \ observable.\n3. About to tag something `Open`/hard/paradoxical? → diagnose which\n   I1–I4/Z1–Z4 was\
+  \ injected before deferring.\n4. A refused endpoint (`Θ=1`, `T=0`, `r=0`, `Λ→∞`) being treated as a\
+  \ wall?\n   → it is correctly-refused; approach, never reach.\n5. Tier every resulting claim (`Th_coqc`/`finite_diagnostic`/`Dr`/`Open`+reals)\n\
+  \   — never collapse."
+source:
+  path: readout_universe/logic.md
+  title: Logic — Equation & Operator Ledger
+  year: 2026
+fetched_from_url: ~/ANSE.ASIA/readout_universe/logic.md
+locator: §0.6, lines ~258-268
+tier: Dr
+base_relation: holds
+base_justification: This IS a base card from the lens root text; base cards are the ground the ledger
+  is judged against.
+glosa_use: adapt
+glosa_target: FOUNDATION §3.3 Kernel gate rules (specified, Dr, untested)
+notes: A generic 5-step checklist glosa's own claim-card kernel gate could adapt directly for any numeric/quantitative
+  claim card, math-specific wording aside.

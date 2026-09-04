@@ -1,0 +1,20 @@
+id: kc-ph-019
+kind: claim
+title: Yaoharee Cosmo data collection 2025
+text: 'Self-published Zenodo preprint (single-author physics/information-theory program, 2025-10-28). Abstract
+  reports: Yaoharee Cosmo data collection 2025...'
+verbatim: Yaoharee Cosmo data collection 2025
+source:
+  doi: 10.5281/zenodo.17464990
+  title: Yaoharee Cosmo data collection 2025
+  year: 2025
+fetched_from_url: 'https://zenodo.org/api/records/17464990'
+locator: Zenodo record abstract (desc field), via API, from registry/zenodo_all_records.json
+tier: Open
+base_relation: open
+base_justification: Domain physics content (a specific claim/derivation/observational note) not directly addressed by any base
+  card; carries no base-card contradiction but also no base endorsement — left open.
+glosa_use: skip
+glosa_target: n/a — domain physics claim outside glosa's method-layer scope
+notes: Part of the single-author 'ph' hub iterative physics-theory series (Zenodo id 17464990, 2025-10-28);
+  method-layer extraction only (self-publication + no-peer-review posture), not the physics content itself.

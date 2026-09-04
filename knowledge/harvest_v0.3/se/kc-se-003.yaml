@@ -1,0 +1,36 @@
+id: kc-se-003
+kind: rule
+title: Five-tier claim ladder for a social-enterprise management framework (Th-coqc through NI/Open)
+text: >
+  MOCA states its own claim boundary before any equation — it is a technical synthesis, not a theorem
+  all social enterprises obey, and imports the discipline of not equating a readout with a latent state
+  from a companion Coq repository without claiming a machine proof of social-enterprise economics. It
+  then declares five explicit claim tiers (machine-checked structural claims; established math/game-theory
+  constructions; MOCA's own conditional definitions; retrospective case batteries; and unidentified
+  distinctions) and states finite batteries must never be promoted to "all enterprises" claims.
+verbatim: "MOCA is a technical synthesis, not a theorem that all social enterprises obey. The accompanying
+  Universal Solver repository contains generic Coq artifacts showing, among other things, that a record
+  can be invariant to admissible relabeling while still being strictly lossy; MOCA imports the discipline
+  of not equating readout with latent state, not a machine proof of social-enterprise economics ... We
+  therefore distinguish: • Th-coqc: axiom-free machine-checked generic structural claims in the formal
+  repository; ... • finite-diagnostic: retrospective or prediction-frozen case batteries; • NI/Open:
+  distinctions not identified by the current evidence or bridge assumptions. Finite batteries must never
+  be promoted to \"all enterprises\" claims."
+source:
+  doi: 10.5281/zenodo.22301882
+  title: "Mission Opportunity–Constraint Architecture (MOCA): An AI-Executable Technical Management
+    Framework for Social Enterprises — Equations, Dynamic Policy Paths, Binding, Readout Audit,
+    Pseudocode, and DAG/Knowledge-Graph Specification"
+  year: 2026
+fetched_from_url: local (~/Downloads/MOCA_AI_Executable_Technical_Paper_v0.2.pdf)
+locator: p.1, §1.1 "Claim tiers and the formal boundary" (pdftotext -l 6, first ~40 lines of body text)
+tier: definition
+base_relation: holds
+base_justification: A near-direct, independently-arrived-at parallel to the base six-tier discipline
+  (kc-base-007) and the Bounded-Judge/finite-diagnostic-never-generalizes stance — same author corpus,
+  same discipline, applied to a management-science domain rather than physics.
+glosa_use: adopt
+glosa_target: "FOUNDATION §2 spine — tier vocabulary cross-reference table (glosa's Th_coqc/finite_diagnostic/Dr/Open vs MOCA's Th-coqc/standard-math/model/finite-diagnostic/NI-Open)"
+notes: Worth a side-by-side vocabulary mapping note in FOUNDATION since MOCA's tier names differ in
+  spelling/granularity (splits "model" out as its own tier) from glosa's own six-tier list — same
+  intent, not identical taxonomy; comparison = different, cited.

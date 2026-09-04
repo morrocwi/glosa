@@ -1,0 +1,29 @@
+id: kc-ph-073
+kind: claim
+title: 'Complexity from Causal Memory: A τc-Based Physics of Depth'
+text: 'Self-published Zenodo preprint (single-author physics/information-theory program, 2025-12-12). Abstract
+  reports: Conventional measures of quantum complexity are difficult to connect to finite-precision
+  observables across different physical domains. We propose a complementary notion of physical complexity
+  based on causal memory: the microscopic time scale τ micro c that limits how fast a system can update under
+  perturbation. Mass and causal memory are linked by the identity m...'
+verbatim: 'Conventional measures of quantum complexity are difficult to connect to finite-precision observables across
+  different physical domains. We propose a complementary notion of physical complexity based on causal memory:
+  the microscopic time scale τ micro c that limits how fast a system can update under perturbation. Mass and
+  causal memory are linked by the identity m = ℏ/(2c 2 τ micro c ), and low-energy response is governed by
+  telegraph-type equations. Complexity Physics 2.0 is defined by four axioms. Global complexity is the
+  dimensionless depth C(t) = t/τ micro c .'
+source:
+  doi: 10.5281/zenodo.17913256
+  title: 'Complexity from Causal Memory: A τc-Based Physics of Depth'
+  year: 2025
+fetched_from_url: 'https://zenodo.org/api/records/17913256'
+locator: Zenodo record abstract (desc field), via API, from registry/zenodo_all_records.json
+tier: Open
+base_relation: refined_by_later_work
+base_justification: Precursor step in the same program's iterative build-up toward what the base corpus fixes as the τ_c>0
+  persistence axiom / mass-as-readout-of-τ_c (kc-base-028); vocabulary and claims here are provisional working
+  drafts later folded into and re-derived under that axiom.
+glosa_use: skip
+glosa_target: n/a — superseded within its own program before reaching base corpus
+notes: Part of the single-author 'ph' hub iterative physics-theory series (Zenodo id 17913256, 2025-12-12);
+  method-layer extraction only (self-publication + no-peer-review posture), not the physics content itself.

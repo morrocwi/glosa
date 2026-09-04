@@ -1,0 +1,31 @@
+id: kc-ph-106
+kind: claim
+title: Causal Memory Gravity Seed
+text: 'Self-published Zenodo preprint (single-author physics/information-theory program, 2026-02-01). Abstract
+  reports: We demonstrate that graph-based telegraph dynamics exhibit structural localization that
+  statistically selects dynamical regimes (underdamped vs. overdamped), and that this selection is
+  operationally detectable from partial, noisy timeseries observations without spectral knowledge. Using 50
+  independent graph realizations (500 graphs total, n = 60-103 nodes) and analyzing 18 nontrivial Laplacian
+  eigenmodes per graph, we establish three...'
+verbatim: 'We demonstrate that graph-based telegraph dynamics exhibit structural localization that statistically
+  selects dynamical regimes (underdamped vs. overdamped), and that this selection is operationally detectable
+  from partial, noisy timeseries observations without spectral knowledge. Using 50 independent graph
+  realizations (500 graphs total, n = 60-103 nodes) and analyzing 18 nontrivial Laplacian eigenmodes per
+  graph, we establish three core findings via multi-seed validation: (C1) Certain topologies generate
+  localized eigenmodes (272/500 graphs, 54% hit rate), (C2) localization exhibits population-level coupling to
+  regime selection (∆r = 0.211, CI95 = [0.175, 0.247], p < 0.001) with'
+source:
+  doi: 10.5281/zenodo.18449869
+  title: Causal Memory Gravity Seed
+  year: 2026
+fetched_from_url: 'https://zenodo.org/api/records/18449869'
+locator: Zenodo record abstract (desc field), via API, from registry/zenodo_all_records.json
+tier: Open
+base_relation: refined_by_later_work
+base_justification: Precursor step in the same program's iterative build-up toward what the base corpus fixes as the τ_c>0
+  persistence axiom / mass-as-readout-of-τ_c (kc-base-028); vocabulary and claims here are provisional working
+  drafts later folded into and re-derived under that axiom.
+glosa_use: skip
+glosa_target: n/a — superseded within its own program before reaching base corpus
+notes: Part of the single-author 'ph' hub iterative physics-theory series (Zenodo id 18449869, 2026-02-01);
+  method-layer extraction only (self-publication + no-peer-review posture), not the physics content itself.

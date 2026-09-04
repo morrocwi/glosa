@@ -1,0 +1,33 @@
+id: kc-ph-075
+kind: claim
+title: 'Chronometry of the Degenerate State: White Dwarf Cooling Anomalies, Crystallization Kinetics, and the
+  Q-Branch Phenomeno'
+text: 'Self-published Zenodo preprint (single-author physics/information-theory program, 2025-12-13). Abstract
+  reports: White dwarfs constitute the most reliable stellar chronometers for Galactic archaeology. Long
+  assumed to cool monotonically, their evolution has revealed unexpected substructures in the Gaia era,
+  including crystallization-induced pile-ups and the transverse Q-branch of massive white dwarfs. We present
+  an equation-centered, phenomenology-first synthesis of white dwarf cooling theory, from the canonical Mestel
+  framework to modern...'
+verbatim: White dwarfs constitute the most reliable stellar chronometers for Galactic archaeology. Long assumed to
+  cool monotonically, their evolution has revealed unexpected substructures in the Gaia era, including
+  crystallization-induced pile-ups and the transverse Q-branch of massive white dwarfs. We present an
+  equation-centered, phenomenology-first synthesis of white dwarf cooling theory, from the canonical Mestel
+  framework to modern treatments incorporating crystallization, phase separation, and additional cooling or
+  heating channels. Observed anomalies are recast as discrepancies in cooling timescales, enabling
+  model-independent constraints on microscopic mechanisms. This chronometric formulation preserves the utility
+  of white dwarfs
+source:
+  doi: 10.5281/zenodo.17921185
+  title: 'Chronometry of the Degenerate State: White Dwarf Cooling Anomalies, Crystallization Kinetics, and the
+    Q-Branch Phenomenon'
+  year: 2025
+fetched_from_url: 'https://zenodo.org/api/records/17921185'
+locator: Zenodo record abstract (desc field), via API, from registry/zenodo_all_records.json
+tier: Open
+base_relation: open
+base_justification: Domain physics content (a specific claim/derivation/observational note) not directly addressed by any base
+  card; carries no base-card contradiction but also no base endorsement — left open.
+glosa_use: skip
+glosa_target: n/a — domain physics claim outside glosa's method-layer scope
+notes: Part of the single-author 'ph' hub iterative physics-theory series (Zenodo id 17921185, 2025-12-13);
+  method-layer extraction only (self-publication + no-peer-review posture), not the physics content itself.

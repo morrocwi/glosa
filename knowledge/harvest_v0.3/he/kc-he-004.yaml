@@ -1,0 +1,27 @@
+id: kc-he-004
+kind: method
+title: RRHM Open Lab — sealed prediction package with an independent reproduction and a recorded prior
+text: A computational companion repo "seals" a frozen, falsifiable numeric prediction against a named external
+  dataset (Staveland et al. 2026) before that data is used for confirmation, records the prior probability
+  explicitly (0.45) and binary failure criteria in a frozen text, and separately reports an independent
+  reproduction of the original paper's own coefficient as a distinct check from the new prediction.
+verbatim: 'Seals targets/staveland_2026 — an operationally frozen, falsifiable prediction about the public data
+  of Staveland et al., Nature Communications 2026 (doi:10.1038/s41467-026-70287-5): a task-geometry
+  escape-recoverability margin is predicted to add out-of-sample information about turnaround timing (recorded
+  prior 0.45; binary failure criteria in the frozen text). Includes an independent reproduction of the paper''s
+  turnaround-by-reward coefficient (0.1114 vs original 0.1115) from the publisher Source Data.'
+source:
+  doi: 10.5281/zenodo.22255211
+  title: "RRHM Open Lab — sealed prediction package for Staveland et al. 2026 (staveland-lock-v4)"
+  year: 2026
+fetched_from_url: https://zenodo.org/api/records/22255211
+locator: abstract (Zenodo record metadata.description)
+tier: finite_diagnostic
+base_relation: holds
+base_justification: Recording a numeric prior and binary failure criteria BEFORE checking external data is a
+  concrete instance of the Fail-Able Gate Law (kc-base-008) — a passing control alone would not suffice, a
+  failing criterion is pre-declared.
+glosa_use: adopt
+glosa_target: "FOUNDATION §7.3 Bounded-Judge Law and §3.3 Kernel gate rules"
+notes: Worth citing as a real external "lock a prediction, then check it" mechanism glosa's own gate design
+  could point to as precedent, distinct from glosa's own internal registration mechanism.

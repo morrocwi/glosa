@@ -1,0 +1,25 @@
+id: kc-aihp-018
+kind: rule
+title: 'Global-search bias correction: every socially relevant flagship needs both a global conversion
+  route and a local one'
+text: The paper argues that global scholarly search and AI recommendation routes may share Anglophone
+  and database-distribution biases; accordingly every socially relevant flagship claim is assigned both
+  a global conversion route and a local one, so a standalone scholar's work is not epistemically stranded
+  by search-engine bias.
+verbatim: It further argues that global scholarly search and AI recommendation routes may share Anglophone
+  and database- distribution biases; accordingly, every socially relevant flagship is assigned both a
+  global conversion route and a local
+source:
+  doi: 10.5281/zenodo.22163849
+  title: 'The Standalone Scholar: A Dual-Track Architecture for AI-Native Scholarship'
+  year: 2026
+fetched_from_url: https://zenodo.org/api/records/22163849
+locator: Abstract
+tier: Dr
+base_relation: holds
+base_justification: An access-bias correction consistent with kc-base-027 (bounded knower framing — every
+  knower's access is finite and structured, so a finite knower's search route can be structurally biased)
+  rather than a rival claim.
+glosa_use: adapt
+glosa_target: FOUNDATION discovery-routing note (not yet a kernel rule)
+notes: ''

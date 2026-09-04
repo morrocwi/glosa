@@ -1,0 +1,33 @@
+id: kc-ph-112
+kind: claim
+title: 'black-hole-merger-information: the Davies point and black-hole merger remnants — a crossing locus, the
+  observed populati'
+text: 'Self-published Zenodo preprint (single-author physics/information-theory program, 2026-07-18). Abstract
+  reports: Deterministic, standard-library instruments and frozen reference outputs behind the manuscript
+  ''The Davies Point and Black-Hole Merger Remnants''. Contents: the Davies-crossing locus chi*(q) on the
+  Barausse-Rezzolla aligned-spin fit; the measure analysis (band fraction 0.049 wide grid vs 0.300
+  astrophysical box); the maxent/NR crossing error budget; two pre-registered falsifiable predictions (P1,
+  P1b) about the forthcoming spinning-binary extension...'
+verbatim: 'Deterministic, standard-library instruments and frozen reference outputs behind the manuscript ''The Davies
+  Point and Black-Hole Merger Remnants''. Contents: the Davies-crossing locus chi*(q) on the Barausse-Rezzolla
+  aligned-spin fit; the measure analysis (band fraction 0.049 wide grid vs 0.300 astrophysical box); the
+  maxent/NR crossing error budget; two pre-registered falsifiable predictions (P1, P1b) about the forthcoming
+  spinning-binary extension of the maximum entropy conjecture (PRL 137, 021406, 2026), with commit-graph
+  warrant; an audit brief with per-claim refutation conditions and a standing retraction pledge; a
+  chronological logbook including this work''s own corrected errors. One-command verification:'
+source:
+  doi: 10.5281/zenodo.21431683
+  title: 'black-hole-merger-information: the Davies point and black-hole merger remnants — a crossing locus, the
+    observed population, and a pre-registered test'
+  year: 2026
+fetched_from_url: 'https://zenodo.org/api/records/21431683'
+locator: Zenodo record abstract (desc field), via API, from registry/zenodo_all_records.json
+tier: Open
+base_relation: holds
+base_justification: Contemporaneous companion paper in the same single-author program that also produced the base corpus;
+  already uses base vocabulary (δ_R / retained information / L_R-style operators), so it is read as consistent
+  with, not prior to, kc-base-011/012 (L_R) and kc-base-022 (trunk equation).
+glosa_use: already_in_glosa
+glosa_target: FOUNDATION spine (δ_R→L_R chain) / trunk-equation tier table — same-program companion, no new gloss content
+notes: Part of the single-author 'ph' hub iterative physics-theory series (Zenodo id 21431683, 2026-07-18);
+  method-layer extraction only (self-publication + no-peer-review posture), not the physics content itself.

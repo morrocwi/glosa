@@ -1,0 +1,27 @@
+id: kc-ep-040
+kind: claim
+title: AI and the civilization of knowledge (NIDA 2026 slides, v2)
+text: 'A second slide-deck record (same NIDA 2026 talk, same title/date/author, distinct concept DOI from
+  kc-ep-039) presenting the same argument: forgetting the human''s status as chooser and responsibility-holder
+  in an AI-mediated society, companion to 18943971.'
+verbatim: 'สไลด์นำเสนอผลงานระดับชาติ (NIDA, 29 สิงหาคม 2569) โดย เยาฮารี แหละตี (Yaoharee Lahtee), ARAYA
+  Nikah Social Enterprise / Open Civil Science Initiative. เนื้อหาเป็นการนำเสนอเชิงแนวคิดว่าด้วยปัญญาประดิษฐ์กับอารยธรรมความรู้
+  — การที่มนุษย์ลืมสถานะการเป็นผู้เลือกและความรับผิดชอบของตนในสังคมที่ถูกสื่อกลางด้วย AI; เป็นเอกสารนำเสนอ
+  ไม่ใช่บทความที่ผ่านการประเมิน Presentation slides (Thai) for a national conference presentation, NIDA,
+  29 August 2026: Artificial Intelligence and the Civilization of Knowledge — forgetting the h'
+source:
+  doi: 10.5281/zenodo.22301886
+  title: 'ปัญญาประดิษฐ์กับอารยธรรมความรู้: การลืมสถานะการเป็นตัวเลือกและความรับผิดชอบของมนุษย์ในสังคมที่ถูกสื่อกลางด้วยปัญญาประดิษฐ์
+    (สไลด์นำเสนอระดับชาติ NIDA, 29 ส.ค. 2569)'
+  year: 2026
+fetched_from_url: https://zenodo.org/api/records/22301886
+locator: Zenodo record abstract (desc field), via API
+tier: Open
+base_relation: holds
+base_justification: Identical relation to base as kc-ep-039; both slide records restate kc-ep-016's paper
+  argument.
+glosa_use: already_in_glosa
+glosa_target: FOUNDATION §7.2 (duplicate content; card kept for registry completeness, not double-counted
+  as independent evidence)
+notes: 2026-08-29; distinct Zenodo concept id from kc-ep-039 despite identical title/date — likely two
+  deposit routes for the same talk, not two different talks.

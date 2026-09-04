@@ -1,0 +1,31 @@
+id: kc-islam-014
+kind: claim
+title: Dialogue quality, not the interlocutor's nature, determines whether wisdom or distortion results
+text: Compares dialogical epistemology across Buddhist, Islamic, and Christian traditions and extends it to
+  human-AI conversation, arguing that wisdom depends on the dialogue's own quality (sincerity, attentiveness,
+  moral intention) rather than on whether the interlocutor is human or an AI acting as "reflective
+  interlocutor"; haste or bias in either case produces superficial reasoning and epistemic distortion instead.
+verbatim: 'When grounded in reflection and critical inquiry, such dialogue fosters cognitive transformation and
+  self-awareness, but when driven by haste or bias, it produces superficial reasoning and epistemic
+  distortion.'
+source:
+  doi: 10.5281/zenodo.22308451
+  title: "The Dialogue as the Ground of Enlightenment: Religious and Cognitive Frameworks for Understanding
+    Wisdom through Human-AI Conversations"
+  year: 2025
+fetched_from_url: https://zenodo.org/api/records/22308451
+locator: abstract (Zenodo record metadata.description)
+tier: Open
+base_relation: holds
+base_justification: A cross-tradition statement of the same discipline the base applies formally — what
+  matters is whether the process (a dialogue, or a Th_coqc proof) tracks correctly, not the identity/authority
+  of who performs it; kc-base-025's refusal of vertical/title-based epistemic authority applies symmetrically
+  to AI-as-interlocutor here.
+glosa_use: adopt
+glosa_target: FOUNDATION §9 callable layer (human-AI interaction design) / Non-Collapse Table Family G
+  "AI/Authorship" — supports treating an AI dialogue partner's epistemic contribution as judged by process
+  quality, not by source identity.
+notes: Concept record is a series member (hub DOI 10.5281/zenodo.22308201, "When AI Expands Human Potential");
+  first published on SSRN 2025-10-06, deposited unchanged to Zenodo 2026-09-05 per the record's own note — the
+  Zenodo `date` field (2025-10-06) reflects the SSRN publication event the record itself declares, not the
+  Zenodo deposit event.

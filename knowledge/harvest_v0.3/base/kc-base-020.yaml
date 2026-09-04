@@ -1,0 +1,29 @@
+id: kc-base-020
+kind: claim
+title: Mother equation — the record is a translation, never the truth itself
+text: θ(E[n]) names the true state a record is about; M_A[n] names what an agency A actually retains at
+  tick n. M_A[n]=K_A·θ(E[n])+η_sel+η_map+η_self — the record is a translation of the true state, never
+  the state itself. M_A[n]≠θ(E) for all n; the total error ε_tot=η_sel+η_map+η_self>0 for all n — the
+  translation gap between record and truth never closes to zero.
+verbatim: '`M_A[n] = K_A·θ(E[n]) + η_sel + η_map + η_self` — the record is a translation
+
+  of the true state `θ(E[n])`, never the state itself (`η_sel` selection
+
+  noise, `η_map` mapping/translation noise, `η_self` self-referential noise)
+
+  ... `M_A[n] ≠ θ(E) ∀n`; `ε_tot = η_sel+η_map+η_self > 0 ∀n` — the translation gap between record and
+  truth never closes to zero.'
+source:
+  path: readout_universe/logic.md
+  title: Logic — Equation & Operator Ledger
+  year: 2026
+fetched_from_url: ~/ANSE.ASIA/readout_universe/logic.md
+locator: '''The mother equation'', EQ-027/EQ-028, lines ~31-38'
+tier: Th_coqc
+base_relation: holds
+base_justification: This IS a base card from the lens root text; base cards are the ground the ledger
+  is judged against.
+glosa_use: adopt
+glosa_target: 'FOUNDATION §2.1b Responsibility per arrow: Data → Inference → Claim'
+notes: This is the formal (equation, not prose) restatement of readout-not-truth; directly grounds the
+  Data->Inference->Claim responsibility split's warrant that no step ever closes the gap to θ itself.

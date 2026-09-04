@@ -1,0 +1,24 @@
+id: kc-base-028
+kind: definition
+title: τ_c > 0 — persistence axiom, mass as a readout of τ_c
+text: 'E00.5: τ_c > 0 — something is retained between distinguishable events. τ_c is not a late derived
+  quantity dressed up as fundamental; it is asserted at the root, before mass, force, or any domain leaf.
+  Mass, introduced later as m = ħ/(2c²τ_c), is a readout of the persistence already posited here — never
+  the other way around. Getting this ordering backward (deriving τ_c from mass) would violate the root
+  axiom''s own priority.'
+verbatim: "E00.5  persistence / causal memory\n       τ_c > 0                                        \
+  \            [Ax]\n       Something is retained between distinguishable events."
+source:
+  path: readout_genesis/READOUT_GENESIS_CORE.md
+  title: Genesis of the Universe, Step by Step — Genesis Step-by-Step v3.1
+  year: 2026
+fetched_from_url: ~/ANSE.ASIA/readout_genesis/READOUT_GENESIS_CORE.md
+locator: Part I §I.1, E00.5, lines ~544-546 (discussion ~586-596)
+tier: Ax
+base_relation: holds
+base_justification: This IS a base card from the lens root text; base cards are the ground the ledger
+  is judged against.
+glosa_use: skip
+glosa_target: FOUNDATION §1.0 Pillars
+notes: Deep physics-lens axiom (mass/memory ordering); recorded for completeness. Not directly reusable
+  for glosa's document-schema work, which has no mass/memory content.

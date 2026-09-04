@@ -1,0 +1,29 @@
+id: kc-base-033
+kind: definition
+title: MQ.08 — discrete stepper (deepest operational equation)
+text: 'The deepest operational equation in the book: a discrete stepper a machine can literally execute,
+  not a continuum PDE discretized as an afterthought. Continuum forms are readouts of this stepper, never
+  the other way around. Includes an explicit CFL/stability condition bounding the timestep Δθ by the damping
+  and diffusion coefficients.'
+verbatim: 'V[n+1] = V[n] + Δθ · ( −γ·V[n]  −  D_s · (L_R @ X[n]) )    # velocity update
+
+  X[n+1] = X[n] + Δθ · V[n+1]                                  # state update
+
+
+  # CFL / stability condition
+
+  Δθ  ≤  2 / ( γ + sqrt(γ² + 4·λ_max·D_s) )'
+source:
+  path: readout_genesis/READOUT_GENESIS_CORE.md
+  title: Genesis of the Universe, Step by Step — Genesis Step-by-Step v3.1
+  year: 2026
+fetched_from_url: ~/ANSE.ASIA/readout_genesis/READOUT_GENESIS_CORE.md
+locator: Part II §II.1, lines ~871-899
+tier: Dr
+base_relation: holds
+base_justification: This IS a base card from the lens root text; base cards are the ground the ledger
+  is judged against.
+glosa_use: skip
+glosa_target: FOUNDATION §1.0 Pillars
+notes: Physics-lens executable stepper; recorded for lineage/citation, no direct reuse in glosa's document
+  schema.

@@ -1,0 +1,26 @@
+id: kc-ep-012
+kind: method
+title: 'CMP Knowledge Stability Theorem: three induction puzzles as one structural condition'
+text: Unifies Hume's induction problem, Goodman's grue riddle, and Hempel's raven paradox as manifestations
+  of observer-indexed underdetermination; proves that under an equivariance + Lyapunov-ascent condition,
+  every stable attractor of a learning dynamics lies in the hypothesis set invariant under the operative
+  regime's transformation group.
+verbatim: 'Three foundational problems in the philosophy of science—Hume’s problem of induction, Goodman’s
+  new riddle of projectibility, and Hempel’s raven paradox—are standardly treated as independent puzzles
+  requiring separate solutions. We argue that they are unified manifestations of a single structural condition:
+  observer-indexed underdetermination in hypothesis spaces that are delimited by finite causal memory
+  and finite propagation speed.'
+source:
+  doi: 10.5281/zenodo.18870302
+  title: Symmetry-Invariant Knowledge as Fixed Points of Observer-Translation Dynamics
+  year: 2026
+fetched_from_url: https://zenodo.org/api/records/18870302
+locator: Zenodo record abstract (desc field), via API
+tier: Dr
+base_relation: holds
+base_justification: A proved (stated as 'central result') theorem within its own framework; compatible
+  with base's verdict-class vocabulary (kc-base-038, FORCED-type results) though not itself part of the
+  base corpus.
+glosa_use: adapt
+glosa_target: FOUNDATION Appendix A Non-Collapse Table — Family B Access/Inference
+notes: 2026-03-05; imports δsym, εrec from a companion Causal Memory Physics framework.

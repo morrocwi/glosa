@@ -1,0 +1,27 @@
+id: kc-ai-018
+kind: claim
+title: 'Structural law: learning shifts from accumulation to discrimination under abundance'
+text: 'Argues AI-driven near-zero-cost generation of coherent expression produces a structural (not merely pedagogical)
+  law: degradation of inferential signals, escalating conceptual volatility, and selective stabilization; beyond
+  a critical generative-exposure threshold, learning undergoes a regime shift from accumulation to discrimination
+  — learning redefined as preserving structural stability once expressive output no longer uniquely indicates internal
+  organization.'
+verbatim: Beyond a critical threshold of generative exposure, learning undergoes a regime shift — from accumulation
+  to discrimination. Learning is therefore redefined as the capacity to preserve structural stability when expressive
+  production no longer uniquely indicates internal organization.
+source:
+  path: registry/zenodo_all_records.json
+  title: 'Learning Under Generative Abundance: A Structural Law of Epistemic Stabilization'
+  year: 2026
+fetched_from_url: https://zenodo.org/api/records/18711408
+locator: record 18711408, metadata.description (Abstract)
+tier: Dr
+base_relation: refined_by_later_work
+base_justification: A specific corollary of kc-ai-017's stabilized-translation view, applied to education; later
+  papers in this hub (Standalone Scholar, Readout Condition) generalize the same discrimination-under-abundance
+  point beyond education.
+glosa_use: adapt
+glosa_target: FOUNDATION methodology — discrimination-under-abundance as a named failure mode for any AI-saturated
+  evidence stream
+notes: 'Reads as a precursor to kc-ai-001''s Readout Condition: ''discrimination'' here is what ''distinguishability''
+  formalizes there.'

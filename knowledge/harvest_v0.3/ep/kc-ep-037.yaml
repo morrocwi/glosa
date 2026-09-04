@@ -1,0 +1,28 @@
+id: kc-ep-037
+kind: definition
+title: 'What a zero readout certifies: zero as the failure locus of retained distinction'
+text: 'Shows that in a finite-discrete retained-difference setting, a zero readout is not an absence but
+  a classification: for the retained-information operator on a positively weighted comparison graph, the
+  zero locus coincides (both directions) with the locus where no difference is retained across the declared
+  structure — machine-checked over the rationals without classical axioms; the class is relative to the
+  declared structure, not absolute.'
+verbatim: 'rithmetic supplies the symbol 0. It does not, by itself, say what a measurement returning that
+  symbol has established. This paper answers that question for a setting whose primitive is the retained
+  difference—the assertion that two things are told apart under finite access—and whose readings are finite
+  and rational. In such a setting zero is anomalous: it arrives in the same register as every other value,
+  yet reports that the primitive did not fire.'
+source:
+  doi: 10.5281/zenodo.21665100
+  title: What a Zero Readout Certifies Zero as the failure locus of retained distinction
+  year: 2026
+fetched_from_url: https://zenodo.org/api/records/21665100
+locator: Zenodo record abstract (desc field), via API
+tier: Th_coqc
+base_relation: holds
+base_justification: A machine-checked companion result directly for the base's retained-information operator
+  and δ_R primitive (kc-base-009, kc-base-017); per user memory this is a published Coq companion to information-discrete-math
+  machine-checking the base's own zero-fibre/HOLD-discipline soundness floor.
+glosa_use: adopt
+glosa_target: FOUNDATION §4.1 Tier ladder (Th_coqc anchor — zero-readout classification result)
+notes: 2026-07-29; anchor record for the ep hub; cite-don't-copy per prior founder ruling — say "audited
+  results," not "theorems," in gate-scanned docs.

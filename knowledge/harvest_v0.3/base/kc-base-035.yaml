@@ -1,0 +1,32 @@
+id: kc-base-035
+kind: rule
+title: Bounded-Judge Law (independent adversarial review requirement)
+text: 'The discipline is enforced, not merely declared: no numeric claim may enter a document without
+  an executed check first (pytest/assert), logged in a verified-runs record; every change goes through
+  one round of independent adversarial review — the Bounded-Judge Law; a claim of ''machine-checked''
+  must actually resolve against the live Coq theorem corpus, and a miss auto-downgrades Th_coqc to Dr.'
+verbatim: 'The discipline is enforced, not merely declared: no numeric claim may enter a document without
+  an *executed check* first (pytest/assert), logged in
+
+  `docs/VERIFIED_RUNS.md`; every PR passes one round of independent adversarial
+
+  review (the "Bounded-Judge Law", [`v2/POSITION.md`] §3); and a claim of
+
+  "machine-checked" must actually resolve against the live Coq theorem corpus
+
+  (gate G9 below) — a miss auto-downgrades `Th_coqc → Dr`.'
+source:
+  path: readout_universe/philosophy.md
+  title: Philosophy — Readout Universe
+  year: 2026
+fetched_from_url: ~/ANSE.ASIA/readout_universe/philosophy.md
+locator: §2, lines ~168-176
+tier: Dr
+base_relation: holds
+base_justification: This IS a base card from the lens root text; base cards are the ground the ledger
+  is judged against.
+glosa_use: already_in_glosa
+glosa_target: FOUNDATION §7.3 Bounded-Judge Law
+notes: glosa's FOUNDATION already names a 'Bounded-Judge Law' at §7.3 — this card is the direct source
+  citation confirming the name and the auto-downgrade mechanic (Th_coqc -> Dr on a miss) glosa's own version
+  should preserve.

@@ -1,0 +1,22 @@
+id: kc-ai-016
+kind: claim
+title: NIDA slides — forgetting one's status as chooser under AI mediation
+text: 'Thai-language national-conference presentation (not peer reviewed) restating the companion English paper''s
+  thesis in a civic register: AI-mediated society risks humans forgetting their own status as choosers and their
+  responsibility, inside the same interpretive-authority framework as the Civilization of Knowledge paper.'
+verbatim: เนื้อหาเป็นการนำเสนอเชิงแนวคิดว่าด้วยปัญญาประดิษฐ์กับอารยธรรมความรู้ — การที่มนุษย์ลืมสถานะการเป็นผู้เลือกและความรับผิดชอบของตนในสังคมที่ถูกสื่อกลางด้วย
+  AI; เป็นเอกสารนำเสนอ ไม่ใช่บทความที่ผ่านการประเมิน
+source:
+  path: registry/zenodo_all_records.json
+  title: ปัญญาประดิษฐ์กับอารยธรรมความรู้ (สไลด์นำเสนอระดับชาติ NIDA)
+  year: 2026
+fetched_from_url: https://zenodo.org/api/records/22302410
+locator: record 22302410, metadata.description
+tier: Dr
+base_relation: holds
+base_justification: Slide restatement of kc-ai-015's thesis for a national civic audience; same base_relation as
+  its companion paper.
+glosa_use: skip
+glosa_target: n/a — presentation slides, not a distinct methodological source
+notes: A near-duplicate deposit (22301886, same date/desc) exists under a different concept id and was DEDUPED OUT
+  of this harvest as the same content — kept this (22302410) as representative.

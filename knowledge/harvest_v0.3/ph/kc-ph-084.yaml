@@ -1,0 +1,30 @@
+id: kc-ph-084
+kind: method
+title: 'Black Holes in the Causal-Memory Framework: A Sketch'
+text: 'Self-published Zenodo preprint (single-author physics/information-theory program, 2025-12-26). Abstract
+  reports: We sketch the complete lifecycle of black holes within the Causal-Memory (CM) framework, where
+  spacetime dynamics obey telegraph-type equations with finite memory time tau rather than parabolic heat-type
+  equations. This modification-motivated by requiring strict causality at all scales-leads to: (i) horizon
+  formation via local causal criteria, (ii) singularity regularization at r_min ~ (GM tau^2)^(1/3), (iii)...'
+verbatim: 'We sketch the complete lifecycle of black holes within the Causal-Memory (CM) framework, where spacetime
+  dynamics obey telegraph-type equations with finite memory time tau rather than parabolic heat-type
+  equations. This modification-motivated by requiring strict causality at all scales-leads to: (i) horizon
+  formation via local causal criteria, (ii) singularity regularization at r_min ~ (GM tau^2)^(1/3), (iii)
+  information preservation through tau-regulated Hawking emission, and (iv) finite-time complete evaporation
+  with unitary S-matrix. We identify key open problems, distinguish proven results from conjectures, and
+  propose near-term observational tests accessible to LISA, Einstein Telescope, and'
+source:
+  doi: 10.5281/zenodo.18059378
+  title: 'Black Holes in the Causal-Memory Framework: A Sketch'
+  year: 2025
+fetched_from_url: 'https://zenodo.org/api/records/18059378'
+locator: Zenodo record abstract (desc field), via API, from registry/zenodo_all_records.json
+tier: Open
+base_relation: refined_by_later_work
+base_justification: Precursor step in the same program's iterative build-up toward what the base corpus fixes as the τ_c>0
+  persistence axiom / mass-as-readout-of-τ_c (kc-base-028); vocabulary and claims here are provisional working
+  drafts later folded into and re-derived under that axiom.
+glosa_use: skip
+glosa_target: n/a — superseded within its own program before reaching base corpus
+notes: Part of the single-author 'ph' hub iterative physics-theory series (Zenodo id 18059378, 2025-12-26);
+  method-layer extraction only (self-publication + no-peer-review posture), not the physics content itself.

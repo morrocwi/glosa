@@ -1,0 +1,27 @@
+id: kc-tourism-002
+kind: claim
+title: Premature category stabilization — provider-side interpretation as the mechanism, not certification sufficiency
+text: Reframes underperformance in Muslim-friendly tourism as a category-stabilization problem (providers freeze
+  diverse travelers into rigid service categories too early) rather than a certification-sufficiency problem,
+  and proposes a readiness-first, interaction-sensitive, segment-specific governance model as the methodological
+  alternative to certification-first approaches.
+verbatim: "This article argues that a central source of underperformance lies in premature category
+  stabilization: the early reduction of diverse Muslim travelers into rigid, provider-defined service
+  categories. It proposes a mechanism in which provider-centered category projection shapes service templates,
+  promise framing, and interactional conduct in ways that generate expectation mismatch, relational
+  miscalibration, and trust erosion across the tourism journey."
+source:
+  doi: 10.5281/zenodo.19059720
+  title: 'Beyond Halal Labels: Premature Category Stabilization in Muslim-Friendly Tourism'
+  year: 2026
+fetched_from_url: "file:///home/yaoharee-lt/Downloads/Beyond Halal Labels.pdf"
+locator: 'p.1, Abstract (extracted via pdftotext -l 6)'
+tier: Open
+base_relation: open
+base_justification: A novel unverified mechanism proposal in a social-science domain (self-marked "preprint —
+  not peer reviewed" on the title page); no base card asserts or contradicts this specific mechanism, so it is
+  judged on its own declared terms — Open, not yet checked against a base claim.
+glosa_use: skip
+glosa_target: "n/a — domain tourism-governance content, not a rule about how knowledge itself is made/checked"
+notes: Anchor record of the tourism hub (hub_doi 10.5281/zenodo.22301562); 33-page PDF, only pages 1-6 read per
+  RAM-slice instruction; author Yaoharee Lahtee, Open Civil Science Initiative, dated 2026-03-17.

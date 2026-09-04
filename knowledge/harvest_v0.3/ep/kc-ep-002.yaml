@@ -1,0 +1,25 @@
+id: kc-ep-002
+kind: claim
+title: The language bridge as human-to-social-capital conversion
+text: Frames language as never-neutral and fragmented by discipline/culture; proposes a 'language bridge'
+  converting individual human capital into social capital, with LLMs accelerating this by re-articulating
+  thought across linguistic/disciplinary walls without replacing the human voice.
+verbatim: 'Human capital, as Yaoharee Lahtee describes it, is not a statistic of productivity but the
+  living potential within each person—the capacity to know, to feel, to connect, and to create meaning.
+  Yet potential alone does not transform societies. It requires a medium that allows inner values to be
+  shared and understood. That medium is language. Language, however, is never neutral. It is fragmented
+  by professions, disciplines, and cultures: the language of law, the language of bureaucracy, the language
+  of technology.'
+source:
+  doi: 10.5281/zenodo.17280546
+  title: 'The Language Bridge: Expanding Human Potential in the Age of AI'
+  year: 2025
+fetched_from_url: https://zenodo.org/api/records/17280546
+locator: Zenodo record abstract (desc field), via API
+tier: Open
+base_relation: holds
+base_justification: Independent compatible claim about mediation; does not touch base's formal machinery,
+  no conflict with readout-not-truth lens.
+glosa_use: skip
+glosa_target: (background theory, no direct FOUNDATION hook)
+notes: Earliest ep-hub record (2025-10-06), concept-abstract style, not empirical.

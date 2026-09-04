@@ -1,0 +1,32 @@
+id: kc-ph-102
+kind: method
+title: Causal Memory Graph Framework An AI-Implementable Specification for Boundary-Aware Structural Graph Analysis
+text: 'Self-published Zenodo preprint (single-author physics/information-theory program, 2026-01-26). Abstract
+  reports: This document specifies the Causal Memory Graph Framework (CMG-F) as an AIimplementable,
+  domain-agnostic pipeline for structural graph analysis under finite-response (causal memory) constraints.
+  CMG-F defines canonical inputs, deterministic construction steps, structural fingerprints, and
+  boundary-aware evaluation rules that distinguish bounded operational regimes from catastrophic failures. The
+  framework is diagnostic rather than optimizing: it does not train...'
+verbatim: 'This document specifies the Causal Memory Graph Framework (CMG-F) as an AIimplementable, domain-agnostic
+  pipeline for structural graph analysis under finite-response (causal memory) constraints. CMG-F defines
+  canonical inputs, deterministic construction steps, structural fingerprints, and boundary-aware evaluation
+  rules that distinguish bounded operational regimes from catastrophic failures. The framework is diagnostic
+  rather than optimizing: it does not train models, tune parameters against targets, or claim predictive
+  validity beyond structural constraints. Instead, CMG-F provides a reproducible protocol for computing graph
+  fingerprints (inverse participation ratio, spectral gaps, localization indices) and evaluating ensemble
+  performance under quantile-based'
+source:
+  doi: 10.5281/zenodo.18372525
+  title: Causal Memory Graph Framework An AI-Implementable Specification for Boundary-Aware Structural Graph Analysis
+  year: 2026
+fetched_from_url: 'https://zenodo.org/api/records/18372525'
+locator: Zenodo record abstract (desc field), via API, from registry/zenodo_all_records.json
+tier: Open
+base_relation: refined_by_later_work
+base_justification: Precursor step in the same program's iterative build-up toward what the base corpus fixes as the τ_c>0
+  persistence axiom / mass-as-readout-of-τ_c (kc-base-028); vocabulary and claims here are provisional working
+  drafts later folded into and re-derived under that axiom.
+glosa_use: skip
+glosa_target: n/a — superseded within its own program before reaching base corpus
+notes: Part of the single-author 'ph' hub iterative physics-theory series (Zenodo id 18372525, 2026-01-26);
+  method-layer extraction only (self-publication + no-peer-review posture), not the physics content itself.

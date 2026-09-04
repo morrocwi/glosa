@@ -1,0 +1,30 @@
+id: kc-ph-017
+kind: claim
+title: 'Energy-Wavelength Tri-Domain Symmetry: A Testable Hypothesis Connecting Quantum, Relativistic, and
+  Classical Regimes'
+text: 'Self-published Zenodo preprint (single-author physics/information-theory program, 2025-10-27). Abstract
+  reports: We propose a testable hypothesis relating energy E to characteristic wavelength λ across quantum,
+  relativistic, and classical domains through a universal power-law E ∝ λ β with domain-dependent exponent β.
+  Mathematical synthesis of established physics reveals an exact inverse symmetry: for particles, the
+  Planck-Einstein relation E = hc/λ yields βquantum = −1 with invariant product...'
+verbatim: 'We propose a testable hypothesis relating energy E to characteristic wavelength λ across quantum,
+  relativistic, and classical domains through a universal power-law E ∝ λ β with domain-dependent exponent β.
+  Mathematical synthesis of established physics reveals an exact inverse symmetry: for particles, the
+  Planck-Einstein relation E = hc/λ yields βquantum = −1 with invariant product Eλ = hc = 1.986×10−25 J·m; for
+  black holes, combining rest mass energy E = M c2 with the Schwarzschild radius λ = 2GM/c2 produces βBH = +1
+  with invariant ratio E/λ = c 4/(2G)'
+source:
+  doi: 10.5281/zenodo.17457923
+  title: 'Energy-Wavelength Tri-Domain Symmetry: A Testable Hypothesis Connecting Quantum, Relativistic, and
+    Classical Regimes'
+  year: 2025
+fetched_from_url: 'https://zenodo.org/api/records/17457923'
+locator: Zenodo record abstract (desc field), via API, from registry/zenodo_all_records.json
+tier: Open
+base_relation: open
+base_justification: Domain physics content (a specific claim/derivation/observational note) not directly addressed by any base
+  card; carries no base-card contradiction but also no base endorsement — left open.
+glosa_use: skip
+glosa_target: n/a — domain physics claim outside glosa's method-layer scope
+notes: Part of the single-author 'ph' hub iterative physics-theory series (Zenodo id 17457923, 2025-10-27);
+  method-layer extraction only (self-publication + no-peer-review posture), not the physics content itself.

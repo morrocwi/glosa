@@ -1,0 +1,24 @@
+id: kc-ep-007
+kind: method
+title: 'Causal Calculus: primitive aggregation under finite causal access'
+text: Introduces a primitive aggregation operator for Causal Calculus formalizing aggregation under finite
+  causal/epistemic access, not presupposing discrete-vs-continuous ontology; classical summation/integration
+  arise only as declared limiting cases under extra assumptions.
+verbatim: This note introduces a primitive aggregation operator within Causal Calculus, designed to formalize
+  aggregation under finite causal and epistemic access. The operator does not presuppose an underlying
+  discrete or continuous ontology. Classical summation and integration may arise only as declared limiting
+  cases under additional structural assumptions
+source:
+  doi: 10.5281/zenodo.18164015
+  title: 'Causal Calculus: Primitive Aggregation under Finite Causal Access'
+  year: 2026
+fetched_from_url: https://zenodo.org/api/records/18164015
+locator: Zenodo record abstract (desc field), via API
+tier: Dr
+base_relation: refined_by_later_work
+base_justification: 'Precursor to the base''s operator-grounding clause (kc-base-017: +,−,×,÷,∂,∇ as retained-information
+  operations) and contaminated-concept table (kc-base-018); later corpus states the same ''continuum as
+  declared limit, not default'' move with the fuller δ_R/L_R apparatus.'
+glosa_use: skip
+glosa_target: (superseded by base operator-grounding clause)
+notes: Short note, 2026-01-06.

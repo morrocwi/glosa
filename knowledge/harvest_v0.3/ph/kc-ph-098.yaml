@@ -1,0 +1,29 @@
+id: kc-ph-098
+kind: claim
+title: Time as Irreversible Causal Record A Mathematical Derivation from Causality and Passivity
+text: 'Self-published Zenodo preprint (single-author physics/information-theory program, 2026-01-11). Abstract
+  reports: Before the Frame of Reality: Why Time Must Be an Irreversible Causal Record In recent years, the
+  idea of viewing reality through the notion of a frame has gained increasing attention across physics,
+  philosophy, and information theory. From block-universe interpretations in relativity to correlation-based
+  views of time in quantum foundations, many contemporary approaches suggest that...'
+verbatim: 'Before the Frame of Reality: Why Time Must Be an Irreversible Causal Record In recent years, the idea of
+  viewing reality through the notion of a frame has gained increasing attention across physics, philosophy,
+  and information theory. From block-universe interpretations in relativity to correlation-based views of time
+  in quantum foundations, many contemporary approaches suggest that reality may be better understood not as
+  something that flows , but as something that exists all at once , structured into a static or quasi-static
+  whole. This shift has been productive. It has helped'
+source:
+  doi: 10.5281/zenodo.18210933
+  title: Time as Irreversible Causal Record A Mathematical Derivation from Causality and Passivity
+  year: 2026
+fetched_from_url: 'https://zenodo.org/api/records/18210933'
+locator: Zenodo record abstract (desc field), via API, from registry/zenodo_all_records.json
+tier: Open
+base_relation: refined_by_later_work
+base_justification: Precursor step in the same program's iterative build-up toward what the base corpus fixes as the τ_c>0
+  persistence axiom / mass-as-readout-of-τ_c (kc-base-028); vocabulary and claims here are provisional working
+  drafts later folded into and re-derived under that axiom.
+glosa_use: skip
+glosa_target: n/a — superseded within its own program before reaching base corpus
+notes: Part of the single-author 'ph' hub iterative physics-theory series (Zenodo id 18210933, 2026-01-11);
+  method-layer extraction only (self-publication + no-peer-review posture), not the physics content itself.

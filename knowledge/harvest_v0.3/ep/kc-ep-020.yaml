@@ -1,0 +1,27 @@
+id: kc-ep-020
+kind: method
+title: PCS as a scale-invariant mechanism of cultural failure
+text: Generalizes Premature Category Stabilization from tourism to a scale-bridging mechanism recurring
+  in family mediation, community institutions, public services and state policy; reconceives culture as
+  a stable eigenmode cluster of shared decoders/value-weights, and defines peace via pathway openness,
+  feasibility preservation, and repair-permissiveness.
+verbatim: This article develops a scale-bridging theory of Premature Category Stabilization (PCS). First
+  articulated in the context of Muslim-friendly tourism, PCS names the process by which diverse persons
+  and groups are frozen into simplied institutional templates prior to encounter. The article argues that
+  this is not a sectorbound service failure but a general mechanism of intercultural breakdown recurring
+  across family mediation, community institutions, public services, tourism systems, and state policy.
+source:
+  doi: 10.5281/zenodo.19115417
+  title: 'From Intercultural Marriage to State Policy: Premature Category Stabilization as a Scale-Invariant
+    Mechanism of Cultural Failure'
+  year: 2026
+fetched_from_url: https://zenodo.org/api/records/19115417
+locator: Zenodo record abstract (desc field), via API
+tier: Open
+base_relation: open
+base_justification: Third and most general PCS paper in the hub; independent construct not judged directly
+  by base cards, though the 'eigenmode cluster' vocabulary echoes the base's spectral/graph-Laplacian
+  machinery (kc-base-011) without formally deriving from it.
+glosa_use: skip
+glosa_target: (domain hub islam/tourism, method-layer only)
+notes: 2026-03-20; completes the three PCS-construct papers (kc-ep-018/019/020).

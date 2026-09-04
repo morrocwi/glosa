@@ -1,0 +1,25 @@
+id: kc-aihp-006
+kind: tool
+title: Shared evidence registry (Claim Registry E01-E25) for the 4-paper Bounded Knower programme, tier-honest
+  'Observed'
+text: 'Companion evidence registry: 25 evidence claims (id, status, evidence strength, primary paper,
+  decisive test) cross-checked against literature. ''Observed'' is explicitly defined to mean only that
+  cited literature reported a neighbouring phenomenon, never that a paper-specific Readout variable was
+  itself validated. No independent checker has certified the registry.'
+verbatim: '"Observed" means the cited literature reported the neighbouring phenomenon, never that a paper-specific
+  Readout variable was validated. No independent checker has certified the registry. No priority claim.'
+source:
+  doi: 10.5281/zenodo.22308066
+  title: 'State of Evidence for the Readout Hypothesis-Generation Programme: A Shared Evidence Registry
+    for Papers I–IV (with Claim Registry E01–E25)'
+  year: 2026
+fetched_from_url: https://zenodo.org/api/records/22308066
+locator: Status paragraph
+tier: Dr
+base_relation: holds
+base_justification: Same tier-honest registry pattern as kc-base-039 (falsifiable claims table C1–C7 +
+  its own 'We do NOT claim'); the explicit 'no independent checker has certified' line matches kc-base-035
+  Bounded-Judge Law's no-check⇒no-upgrade invariant.
+glosa_use: adapt
+glosa_target: FOUNDATION §7 claim-registry template (evidence-strength column)
+notes: ''

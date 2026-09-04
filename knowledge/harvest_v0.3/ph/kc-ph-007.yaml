@@ -1,0 +1,34 @@
+id: kc-ph-007
+kind: method
+title: The Yaoharee Proposal — A Transdisciplinary Framework for Contextual Coherence Across Physical, Cognitive,
+  and Ethical S
+text: 'Self-published Zenodo preprint (single-author physics/information-theory program, 2025-10-17). Abstract
+  reports: This study proposes a unified informational-coherence framework that bridges physics, cognition,
+  and ethics through a general continuity principle. The Coherence Field Equation, expressed as
+  \(\frac{∂Ψ}{∂t}=−∇·J+Γ(Ψ^q)\) with \(J=ρD∇Φ_I+J_{fb}−∇B(π)\), extends conservation dynamics into
+  informational and moral domains. Within Regulatory Stability Theory (RST), the boundary term \(B(π)\)
+  represents reflective regulation that sustains equilibrium. Three core case studies—AI ethics,...'
+verbatim: This study proposes a unified informational-coherence framework that bridges physics, cognition, and ethics
+  through a general continuity principle. The Coherence Field Equation, expressed as
+  \(\frac{∂Ψ}{∂t}=−∇·J+Γ(Ψ^q)\) with \(J=ρD∇Φ_I+J_{fb}−∇B(π)\), extends conservation dynamics into
+  informational and moral domains. Within Regulatory Stability Theory (RST), the boundary term \(B(π)\)
+  represents reflective regulation that sustains equilibrium. Three core case studies—AI ethics, social
+  polarization, and ecological resilience—demonstrate coherence retention across adaptive contexts. Additional
+  discussions outline cosmological and quantum applications as higher-order validations. Findings suggest that
+  coherence preservation functions as a universal condition for systemic stability across physical
+source:
+  doi: 10.5281/zenodo.17378613
+  title: The Yaoharee Proposal — A Transdisciplinary Framework for Contextual Coherence Across Physical, Cognitive,
+    and Ethical Systems
+  year: 2025
+fetched_from_url: 'https://zenodo.org/api/records/17378613'
+locator: Zenodo record abstract (desc field), via API, from registry/zenodo_all_records.json
+tier: Open
+base_relation: superseded
+base_justification: Uses an earlier, since-abandoned working name/formalism (this program cycled through several framework names
+  before settling on retained-information/δ_R vocabulary); the base corpus's mother equation (kc-base-020) and
+  trunk equation (kc-base-022) replace this formulation.
+glosa_use: skip
+glosa_target: n/a — abandoned vocabulary, replaced by base mother/trunk equation
+notes: Part of the single-author 'ph' hub iterative physics-theory series (Zenodo id 17378613, 2025-10-17);
+  method-layer extraction only (self-publication + no-peer-review posture), not the physics content itself.

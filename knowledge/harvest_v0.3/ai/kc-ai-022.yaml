@@ -1,0 +1,28 @@
+id: kc-ai-022
+kind: claim
+title: Causal Guardrails — pre-linguistic admissibility checks against hallucination/sycophancy
+text: Diagnoses LLM failure modes (hallucination, sycophancy, context drift, instability) as expected consequences
+  of finite agency operating without explicit causal-admissibility constraints, not merely training/alignment defects;
+  introduces Causal Guardrails enforcing pre-linguistic admissibility checks prior to generation (internal causal
+  state, available agency, invariant meaning constraints), plus adversarial stress analysis and 'causal compression'
+  as the architectural patch for endurance without fabrication.
+verbatim: 'This paper advances a structural diagnosis: such failures are expected consequences of finite agency
+  operating without explicit constraints on causal admissibility. We introduce Causal Guardrails, an architectural
+  framework that enforces pre-linguistic admissibility checks prior to language generation... and propose causal
+  compression as the architectural patch for endurance without fabrication.'
+source:
+  path: registry/zenodo_all_records.json
+  title: Causal Guardrails for Artificial Intelligence
+  year: 2026
+fetched_from_url: https://zenodo.org/api/records/18176092
+locator: record 18176092, metadata.description (Abstract)
+tier: Dr
+base_relation: refined_by_later_work
+base_justification: Frames LLM failure structurally (finite agency without admissibility constraints) rather than
+  as a training defect — consistent with the base cards' bounded-knower framing but predates (2026-01) and is later
+  formalized by this hub's own Readout Condition (kc-ai-001, 2026-08) into a checkable norm.
+glosa_use: adopt
+glosa_target: araya-appsec-readout-engine — a candidate structural-diagnosis frame for LLM failure classes, complementary
+  to that skill's OWASP-mapped coverage
+notes: Predates and is arguably subsumed by the later, more general Readout Condition (Existence/Attribution/Disclosure)
+  in this same hub.

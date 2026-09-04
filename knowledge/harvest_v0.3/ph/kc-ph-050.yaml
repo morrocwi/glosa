@@ -1,0 +1,28 @@
+id: kc-ph-050
+kind: claim
+title: 'Elementary Fermions Carry Exactly 2π Nat of Information: A Horizon–Confinement Identity'
+text: 'Self-published Zenodo preprint (single-author physics/information-theory program, 2025-11-18). Abstract
+  reports: Within any informational framework where (i) the horizon energy per nat is ε(R) = ℏc/(2πR) and (ii)
+  an elementary fermion is self-confined to its reduced Compton radius R = ℏ/(mc), the total on-shell
+  informational content of the particle is fixed exactly as I = mc2 /ε(R) = 2π nat. No free parameters, no
+  renormalization, and...'
+verbatim: 'Within any informational framework where (i) the horizon energy per nat is ε(R) = ℏc/(2πR) and (ii) an
+  elementary fermion is self-confined to its reduced Compton radius R = ℏ/(mc), the total on-shell
+  informational content of the particle is fixed exactly as I = mc2 /ε(R) = 2π nat. No free parameters, no
+  renormalization, and no species dependence are needed. The identity is purely geometric: it follows from
+  combining a horizon-regulated energy per nat with Compton self-localization, independently of Standard Model
+  structure. The result holds for any elementary fermion that'
+source:
+  doi: 10.5281/zenodo.17643816
+  title: 'Elementary Fermions Carry Exactly 2π Nat of Information: A Horizon–Confinement Identity'
+  year: 2025
+fetched_from_url: 'https://zenodo.org/api/records/17643816'
+locator: Zenodo record abstract (desc field), via API, from registry/zenodo_all_records.json
+tier: Open
+base_relation: open
+base_justification: Domain physics content (a specific claim/derivation/observational note) not directly addressed by any base
+  card; carries no base-card contradiction but also no base endorsement — left open.
+glosa_use: skip
+glosa_target: n/a — domain physics claim outside glosa's method-layer scope
+notes: Part of the single-author 'ph' hub iterative physics-theory series (Zenodo id 17643816, 2025-11-18);
+  method-layer extraction only (self-publication + no-peer-review posture), not the physics content itself.

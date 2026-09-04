@@ -1,0 +1,27 @@
+id: kc-he-001
+kind: method
+title: Referral governance — separating clinical decision, information transfer, and payment authorization
+text: A policy working paper on Thailand's expired-referral problem proposes governance design that splits
+  three distinct functions (clinical necessity, data transfer, payment approval) so a single administrative
+  failure (an expired referral slip) cannot silently override an unchanged clinical need. The author explicitly
+  flags the equations/DAG/simulated impacts as testable proposals, not proven results, and the sentinel case as
+  a failure-mode finder, not an incidence rate or liability finding, speaking from a social-enterprise/citizen
+  standpoint rather than a medical or legal one.
+verbatim: 'Status (EN): conceptual and policy working paper proposing a referral-governance design for Thailand
+  that separates clinical decision, information transfer, and payment authorization; not an empirical result,
+  not a legal determination; equations/DAG/simulations are proposals for testing. Not peer reviewed.'
+source:
+  doi: 10.5281/zenodo.22302173
+  title: "เมื่อความจำเป็นทางคลินิกยังอยู่ แต่ใบส่งตัวหมดอายุ: การออกแบบธรรมาภิบาลการส่งต่อผู้ป่วยที่แยกการตัดสินใจทางคลินิก การส่งข้อมูล และการอนุมัติการจ่ายเงินออกจากกัน (Towards Smart Standing Referral, Thailand) — Full Working Paper v3.0"
+  year: 2026
+fetched_from_url: https://zenodo.org/api/records/22302173
+locator: abstract (Zenodo record metadata.description, EN half)
+tier: Open
+base_relation: holds
+base_justification: Consistent with the tier discipline (base card kc-base-007) — the author explicitly
+  separates proposals-for-testing from empirical result and legal determination, refusing to let one status
+  bleed into the other.
+glosa_use: adopt
+glosa_target: "FOUNDATION §2.1c ownership criterion (problem/question/hypothesis-selection stays human) and §5 disclaimer catalogue"
+notes: Good worked example of the standpoint disclaimer pattern (author speaks as social-entrepreneur/citizen,
+  not physician/lawyer) that glosa's disclaimer catalogue already codifies elsewhere.

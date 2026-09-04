@@ -1,0 +1,29 @@
+id: kc-se-009
+kind: rule
+title: From AI Governance to Epistemic Governance — govern the output's status, not only the system
+text: The same slide deck proposes shifting the guiding question from AI Governance (is the system safe?
+  transparent? biased?) to Epistemic Governance (what status does this specific output have? who checks
+  it? who certifies it? who is responsible once it is used?), splitting responsibility into an input side
+  and an uptake side rather than leaving it solely on the system.
+verbatim: "จาก AI Governance สู่ Epistemic Governance ... AI Governance: ระบบปลอดภัยไหม? โปร่งใสไหม? มีอคติไหม?
+  Epistemic Governance: ผลลัพธ์นี้มีสถานะอะไร? ใครตรวจ? ใครรับรอง? ใครรับผิดชอบเมื่อนำไปใช้? Input Responsibility +
+  Uptake Responsibility คำถามชวนคิด: กำกับระบบ AI อย่างเดียวพอไหม หรือต้องกำกับสถานะของความรู้ด้วย?"
+source:
+  doi: 10.5281/zenodo.22302410
+  title: "ปัญญาประดิษฐ์กับอารยธรรมความรู้: การลืมสถานะการเป็นตัวเลือกและความรับผิดชอบของมนุษย์ในสังคมที่ถูกสื่อกลางด้วยปัญญาประดิษฐ์
+    (สไลด์นำเสนอระดับชาติ NIDA, 29 ส.ค. 2569)"
+  year: 2026
+fetched_from_url: local (~/Downloads/AI_Knowledge_Civilization_.pdf)
+locator: slide "องค์ 3 | คำตอบของบทความ — จาก AI Governance สู่ Epistemic Governance" (pdftotext, lines ~119-140
+  of extracted body)
+tier: Open
+base_relation: holds
+base_justification: Consistent with, and a policy-facing restatement of, the base's Bounded-Judge Law
+  (kc-base-035, mandatory independent adversarial review) and glosa's own maker≠checker≠approver rule —
+  both insist governance attach to the specific output/claim's checked status, not only to the producing
+  system.
+glosa_use: adopt
+glosa_target: "FOUNDATION §1 gate rules 3, 8 (maker/checker/approver split; no independent check ⇒ no
+  release) — Input Responsibility / Uptake Responsibility split as a naming pair worth reusing"
+notes: The Input/Uptake Responsibility split maps cleanly onto glosa's existing maker/checker split and
+  could be cited as convergent external naming for the same discipline.

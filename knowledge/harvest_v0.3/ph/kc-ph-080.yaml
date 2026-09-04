@@ -1,0 +1,28 @@
+id: kc-ph-080
+kind: claim
+title: FOUNDATION Truth, Physics, and Cosmology from Causal Memory
+text: 'Self-published Zenodo preprint (single-author physics/information-theory program, 2025-12-22). Abstract
+  reports: This book is an invitation to examine the architecture of physical truth. It asks not “What might
+  be true?” but “What must be true?” The answer may be narrower than expected—and that narrowness is the
+  message. If the constraints are accepted, the structure follows. If the structure is rejected, some
+  constraint must be abandoned. This...'
+verbatim: 'This book is an invitation to examine the architecture of physical truth. It asks not “What might be true?”
+  but “What must be true?” The answer may be narrower than expected—and that narrowness is the message. If the
+  constraints are accepted, the structure follows. If the structure is rejected, some constraint must be
+  abandoned. This is the discipline of foundational physics: to trace necessity and distinguish it from
+  choice. Yaoharee Lahtee'
+source:
+  doi: 10.5281/zenodo.18013670
+  title: FOUNDATION Truth, Physics, and Cosmology from Causal Memory
+  year: 2025
+fetched_from_url: 'https://zenodo.org/api/records/18013670'
+locator: Zenodo record abstract (desc field), via API, from registry/zenodo_all_records.json
+tier: Open
+base_relation: refined_by_later_work
+base_justification: Precursor step in the same program's iterative build-up toward what the base corpus fixes as the τ_c>0
+  persistence axiom / mass-as-readout-of-τ_c (kc-base-028); vocabulary and claims here are provisional working
+  drafts later folded into and re-derived under that axiom.
+glosa_use: skip
+glosa_target: n/a — superseded within its own program before reaching base corpus
+notes: Part of the single-author 'ph' hub iterative physics-theory series (Zenodo id 18013670, 2025-12-22);
+  method-layer extraction only (self-publication + no-peer-review posture), not the physics content itself.

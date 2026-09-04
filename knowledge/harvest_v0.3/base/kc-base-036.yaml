@@ -1,0 +1,29 @@
+id: kc-base-036
+kind: claim
+title: Agrippa's trilemma applied to the tier system itself
+text: 'The tier discipline is held to the same reflexive standard it imposes on physics claims: the corpus''s
+  own self-assessment of its philosophical novelty is tagged Open+stance pending independent literature
+  check and blind trials — the system holds its own marketing claims to the same bar as a physics equation.'
+verbatim: 'This discipline is applied reflexively, not just outward: the corpus''s own
+
+  self-assessment of its philosophical novelty ("no other philosophy packs this
+
+  five-property bundle") is itself tagged `[Open + stance]` pending independent
+
+  literature check and blind trials ([`v2/POSITION.md`] §5) — the system holds
+
+  its own marketing claims to the same bar as a physics equation.'
+source:
+  path: readout_universe/philosophy.md
+  title: Philosophy — Readout Universe
+  year: 2026
+fetched_from_url: ~/ANSE.ASIA/readout_universe/philosophy.md
+locator: §2.1, lines ~199-204
+tier: Dr
+base_relation: holds
+base_justification: This IS a base card from the lens root text; base cards are the ground the ledger
+  is judged against.
+glosa_use: adopt
+glosa_target: FOUNDATION §12 Honest edges — what is still Dr/untested, and what was NOT read
+notes: 'Directly relevant precedent: glosa''s own claims about itself (novelty, rigor) should be tiered
+  by the same discipline it applies to user claim cards — cite this as the worked precedent for that reflexivity.'

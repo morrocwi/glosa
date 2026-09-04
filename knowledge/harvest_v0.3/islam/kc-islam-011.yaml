@@ -1,0 +1,28 @@
+id: kc-islam-011
+kind: claim
+title: Premature category stabilization — provider-defined service templates precede and distort the diversity they claim to serve
+text: Origin paper for the "premature category stabilization" mechanism — the early reduction of heterogeneous
+  Muslim travelers into rigid, provider-defined service categories, which then shapes service templates and
+  promise-framing in ways that produce expectation mismatch and trust erosion, rather than certification alone
+  building trust.
+verbatim: 'This article argues that a central source of underperformance lies in premature category
+  stabilization: the early reduction of diverse Muslim travelers into rigid, provider-defined service
+  categories.'
+source:
+  doi: 10.5281/zenodo.19059720
+  title: "Beyond Halal Labels: Premature Category Stabilization in Muslim-Friendly Tourism"
+  year: 2026
+fetched_from_url: "local file ~/Downloads/Beyond Halal Labels.pdf (matched by title and abstract text against
+  Zenodo record 19059720)"
+locator: Abstract, p.1
+tier: Open
+base_relation: holds
+base_justification: The founding case of a discrete-category-frozen-too-early failure mode, structurally
+  parallel to the base's injected-infinity/zero taxonomy (kc-base-016) and contaminated-concept table
+  (kc-base-018) — both catalogue a non-readout (an unwarranted stabilized category) smuggled in as if it were
+  the readout itself.
+glosa_use: adapt
+glosa_target: FOUNDATION §5 disclaimer catalogue / §6 genre router — Premature Category Stabilization could
+  be cited as a named failure mode when a glosa template locks a claim's category too early.
+notes: Earliest / origin PCS paper of the three PCS-family records in this hub (kc-islam-009, kc-islam-010);
+  base_relation judged against BASE cards only, not against these sibling records, per task instructions.

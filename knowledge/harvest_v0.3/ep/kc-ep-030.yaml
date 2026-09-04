@@ -1,0 +1,28 @@
+id: kc-ep-030
+kind: claim
+title: Dependent Order, Directed Selection, Dependent Identity (Ash'arī theology)
+text: 'Proposes three repairs to classical Ash''arī theology: Dependent Order (a three-tiered causality
+  account preserving divine sovereignty while making a sustained world epistemically respectable — the
+  world resists misunderstanding because God made it resistant, and knowledge is the residue of beliefs
+  surviving that resistance), Directed Selection (thickening kasb with intention/orientation), and Dependent
+  Identity (personal continuity via God''s preserved moral biography).'
+verbatim: This paper proposes three coordinated repairs to classical Ashʿarī theology, each aimed at a
+  structural weakness that the tradition has carried forward without resolving. The first, Dependent Order,
+  offers a three-tiered account of causality that preserves the absolute sovereignty of God at the metaphysical
+  level while making the intelligibility of a sustained world epistemically respectable.
+source:
+  doi: 10.5281/zenodo.19951961
+  title: 'Sovereignty, Selection, and Self: A Constructive Ashʿarī Theology of Dependent Order, Directed
+    Selection, and Dependent Identity'
+  year: 2026
+fetched_from_url: https://zenodo.org/api/records/19951961
+locator: Zenodo record abstract (desc field), via API
+tier: Open
+base_relation: open
+base_justification: Theological-domain claim outside the epistemic base's scope of assessment; its 'knowledge
+  as residue of beliefs surviving resistance' phrase parallels the base's truth-as-tracking idea (kc-base-005)
+  but the paper does not build on or cite the base corpus, so relation is left open rather than asserted
+  as holding.
+glosa_use: skip
+glosa_target: (domain hub islam, theological content)
+notes: 2026-05-01.

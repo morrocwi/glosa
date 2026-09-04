@@ -1,0 +1,27 @@
+id: kc-base-027
+kind: definition
+title: Bounded knower framing
+text: 'The corpus''s epistemic subject is named explicitly, not left implicit: a ''bounded knower'' who
+  is themselves a finite retained structure, receiving only the finite discrete readout an operator returns
+  — never the world as it truly, exactly is.'
+verbatim: 'never "the world as it truly, exactly
+
+  is." This is not a claim that the world doesn''t exist; it is a claim about
+
+  what is ever *available* to a knower who is themselves a finite retained
+
+  structure.'
+source:
+  path: readout_universe/philosophy.md
+  title: Philosophy — Readout Universe
+  year: 2026
+fetched_from_url: ~/ANSE.ASIA/readout_universe/philosophy.md
+locator: §1, lines ~51-55
+tier: Dr
+base_relation: holds
+base_justification: This IS a base card from the lens root text; base cards are the ground the ledger
+  is judged against.
+glosa_use: adopt
+glosa_target: FOUNDATION §1.0 Pillars — ontology/epistemology/methodology
+notes: The 'bounded knower' phrase is the direct vocabulary match for glosa's own reviewer/author-as-bounded-knower
+  framing; reuse the term rather than inventing a synonym.

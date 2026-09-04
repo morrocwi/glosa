@@ -1,0 +1,26 @@
+id: kc-ep-008
+kind: method
+title: 'Causal Guardrails: pre-linguistic admissibility checks for LLMs'
+text: Diagnoses LLM failure modes (hallucination, sycophancy, context drift) as expected consequences
+  of finite agency without causal-admissibility constraints; proposes Causal Guardrails enforcing pre-generation
+  checks on causal state/agency/invariant-meaning, plus Causal-Access-Constrained Learning (CA-CL) and
+  adversarial stress tests.
+verbatim: 'Large Language Models (LLMs) optimize next-token predictability and achieve remarkable fluency,
+  yet exhibit persistent failure modes including hallucination, sycophancy, context drift, and behavioral
+  instability. These are often treated as defects of training, alignment, or evaluation. This paper advances
+  a structural diagnosis: such failures are expected consequences of finite agency operating without explicit
+  constraints on causal admissibility.'
+source:
+  doi: 10.5281/zenodo.18176092
+  title: Causal Guardrails for Artificial Intelligence
+  year: 2026
+fetched_from_url: https://zenodo.org/api/records/18176092
+locator: Zenodo record abstract (desc field), via API
+tier: Open
+base_relation: holds
+base_justification: Compatible extension applying bounded-knower/finite-agency framing (kc-base-027) to
+  AI-generation specifically; does not restate or contradict a base card, offers a downstream application.
+glosa_use: adapt
+glosa_target: araya-appsec-readout-engine skill / AI-output admissibility checks (outside glosa core,
+  adjacent domain)
+notes: '2026-01-07; tags: ai.'

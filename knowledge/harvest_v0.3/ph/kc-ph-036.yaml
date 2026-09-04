@@ -1,0 +1,32 @@
+id: kc-ph-036
+kind: claim
+title: 'Theoretical Remark: A Possible Slowdown of Cosmic Expansion and a Self-Contained Lyapunov Mean-Damping
+  Interpretation Co'
+text: 'Self-published Zenodo preprint (single-author physics/information-theory program, 2025-11-06). Abstract
+  reports: Recent analyses motivated by recalibration of Type Ia supernovae (SNe Ia)—in particular
+  host/progenitor-age correlations—suggest that the late-time expansion of the Universe may be slowing
+  relative to the canonical constant-Λ picture. We present a self-contained theoretical remark linking this
+  trend to a weak redshift evolution of the effective vacuum energy that emerges from Lyapunov-type mean
+  damping...'
+verbatim: 'Recent analyses motivated by recalibration of Type Ia supernovae (SNe Ia)—in particular host/progenitor-age
+  correlations—suggest that the late-time expansion of the Universe may be slowing relative to the canonical
+  constant-Λ picture. We present a self-contained theoretical remark linking this trend to a weak redshift
+  evolution of the effective vacuum energy that emerges from Lyapunov-type mean damping of a covariant field.
+  The manuscript is rewritten to be readable without prior exposure to our earlier work: we define all
+  symbols, sketch the derivation of the mean-damping form, and clarify the relation between the'
+source:
+  doi: 10.5281/zenodo.17539731
+  title: 'Theoretical Remark: A Possible Slowdown of Cosmic Expansion and a Self-Contained Lyapunov Mean-Damping
+    Interpretation Consistent with External Data'
+  year: 2025
+fetched_from_url: 'https://zenodo.org/api/records/17539731'
+locator: Zenodo record abstract (desc field), via API, from registry/zenodo_all_records.json
+tier: Open
+base_relation: superseded
+base_justification: Uses an earlier, since-abandoned working name/formalism (this program cycled through several framework names
+  before settling on retained-information/δ_R vocabulary); the base corpus's mother equation (kc-base-020) and
+  trunk equation (kc-base-022) replace this formulation.
+glosa_use: skip
+glosa_target: n/a — abandoned vocabulary, replaced by base mother/trunk equation
+notes: Part of the single-author 'ph' hub iterative physics-theory series (Zenodo id 17539731, 2025-11-06);
+  method-layer extraction only (self-publication + no-peer-review posture), not the physics content itself.

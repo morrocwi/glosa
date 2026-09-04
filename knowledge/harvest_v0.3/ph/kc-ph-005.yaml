@@ -1,0 +1,31 @@
+id: kc-ph-005
+kind: method
+title: 'MUS/Epistemic Framework: Quantum-Gravity Unification via Coherence Field Dynamics'
+text: 'Self-published Zenodo preprint (single-author physics/information-theory program, 2025-10-13). Abstract
+  reports: The MUS/Epistemic framework introduces a minimal extension to standard physics via a
+  coherence-valued scalar field C(x,t) that couples to both gravitational and quantum sectors through
+  well-defined interaction terms. This framework quantitatively resolves five major anomalies: the Hubble
+  tension by modifying late-time expansion through C-field contributions to the stress-energy tensor; the muon
+  g-2 anomaly via C-mediated...'
+verbatim: 'The MUS/Epistemic framework introduces a minimal extension to standard physics via a coherence-valued
+  scalar field C(x,t) that couples to both gravitational and quantum sectors through well-defined interaction
+  terms. This framework quantitatively resolves five major anomalies: the Hubble tension by modifying
+  late-time expansion through C-field contributions to the stress-energy tensor; the muon g-2 anomaly via
+  C-mediated loop corrections to the magnetic moment; the JWST early massive galaxy problem by enhancing
+  structure formation rates through C-field driven gravitational instability; the primordial lithium
+  discrepancy by shifting nuclear reaction resonances during Big Bang Nucleosynthesis;'
+source:
+  doi: 10.5281/zenodo.17343968
+  title: 'MUS/Epistemic Framework: Quantum-Gravity Unification via Coherence Field Dynamics'
+  year: 2025
+fetched_from_url: 'https://zenodo.org/api/records/17343968'
+locator: Zenodo record abstract (desc field), via API, from registry/zenodo_all_records.json
+tier: Open
+base_relation: superseded
+base_justification: Uses an earlier, since-abandoned working name/formalism (this program cycled through several framework names
+  before settling on retained-information/δ_R vocabulary); the base corpus's mother equation (kc-base-020) and
+  trunk equation (kc-base-022) replace this formulation.
+glosa_use: skip
+glosa_target: n/a — abandoned vocabulary, replaced by base mother/trunk equation
+notes: Part of the single-author 'ph' hub iterative physics-theory series (Zenodo id 17343968, 2025-10-13);
+  method-layer extraction only (self-publication + no-peer-review posture), not the physics content itself.

@@ -1,0 +1,29 @@
+id: kc-ep-051
+kind: definition
+title: 'glosa v0.1.0/v0.2.0: methodology + skill + tools for human-AI knowledge co-production'
+text: Methodology, skill, and tools for co-producing rigorous knowledge with AI without institutional
+  infrastructure; every claim answers five questions bound to the Readout Condition (kc-ep-042); v0.1.0
+  K0 public working release, v0.2.0 applies glosa to itself with 48 VERIFIED citation cards and cross-vendor
+  reviewed claim cards; explicitly timestamped/citable, NOT peer reviewed, no independent check yet (K1
+  requires a cross-vendor I3 check not yet run), tier Dr; no priority claim.
+verbatim: 'v0.1.0 — K0 public working release (v0.2.0: glosa applied to itself — concept paper DOI 10.5281/zenodo.22307841,
+  48 VERIFIED citation cards, cross-vendor reviewed claim cards; rules 15-17 and gate rule 9 added) —
+  timestamped and citable, NOT peer reviewed, no independent check yet (K1 in glosa requires a cross-vendor
+  I3 check that has not run), tier Dr. Methodology + skill + tools for co-producing rigorous knowledge
+  with AI without institutional infrastructure.'
+source:
+  doi: 10.5281/zenodo.22307843
+  title: 'glosa — Rigour Without Infrastructure: A Standalone Scholar Methodology for Human–AI Knowledge
+    Co-Production'
+  year: 2026
+fetched_from_url: https://zenodo.org/api/records/22307843
+locator: Zenodo record abstract (desc field), via API
+tier: Dr
+base_relation: holds
+base_justification: This IS the glosa methodology that produced the present K1-hub-ep harvest task itself
+  — it is the base's own operational tool, not merely compatible with it; the record's own stated tier
+  (Dr) and open independent-check status are taken as-is rather than upgraded.
+glosa_use: adopt
+glosa_target: FOUNDATION (whole document) — this record is the software release of the FOUNDATION.md this
+  harvest is built to feed
+notes: 2026-09-05; this repository IS glosa (github.com/morrocwi/glosa) — self-referential record.

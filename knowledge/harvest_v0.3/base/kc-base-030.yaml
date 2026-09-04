@@ -1,0 +1,25 @@
+id: kc-base-030
+kind: method
+title: Root-to-Trunk Progression (P0 → ... → Universal Spine PDE)
+text: 'The progression P0 (∃a,b: a≠b) → distinguishability → asymmetry → temporal ordering → retention/causal
+  memory (τ_c>0) → finite causal graph (L_R) → ROOT-3 discrete stepper (MQ.08) → telegraph coarse-grain
+  → Universal Spine PDE. Each arrow is itself a small commuting-square check, not an elided silent step,
+  per the book''s own tier discipline.'
+verbatim: "```\nP0: ∃ a,b : a ≠ b\n  └─ distinguishability → asymmetry → temporal ordering\n       └─\
+  \ retention / causal memory  τ_c > 0\n            └─ finite causal graph  L_R\n                 └─ ROOT-3:\
+  \ discrete stepper MQ.08\n                      └─ telegraph coarse-grain\n                        \
+  \   └─ UNIVERSAL SPINE PDE\n```"
+source:
+  path: readout_genesis/READOUT_GENESIS_CORE.md
+  title: Genesis of the Universe, Step by Step — Genesis Step-by-Step v3.1
+  year: 2026
+fetched_from_url: ~/ANSE.ASIA/readout_genesis/READOUT_GENESIS_CORE.md
+locator: Part I §I.2, lines ~702-711
+tier: Dr
+base_relation: holds
+base_justification: This IS a base card from the lens root text; base cards are the ground the ledger
+  is judged against.
+glosa_use: skip
+glosa_target: FOUNDATION §1.0 Pillars
+notes: Physics-lens derivation chain; recorded for lineage, no direct reuse in glosa's own document/claim-card
+  schema.

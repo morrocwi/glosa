@@ -1,0 +1,29 @@
+id: kc-ph-087
+kind: claim
+title: Causal Memory Transport Equations
+text: 'Self-published Zenodo preprint (single-author physics/information-theory program, 2025-12-28). Abstract
+  reports: Casual Memory PDE ✓ Relativistic Fields — Covariant dynamics ✓ General Relativity — Effective
+  sources ✓ Causal Transport — Finite speed ✓ Stability Control — Lyapunov ✓ Galaxy Dynamics — No new DM ✓
+  Dark Energy — Emergent ✓ Cosmology — Self-consistent evolution ✓ Numerical Simulation — Stable, efficient ✓
+  Non-Equilibrium Physics — Time-asymmetric ✓...'
+verbatim: Casual Memory PDE ✓ Relativistic Fields — Covariant dynamics ✓ General Relativity — Effective sources ✓
+  Causal Transport — Finite speed ✓ Stability Control — Lyapunov ✓ Galaxy Dynamics — No new DM ✓ Dark Energy —
+  Emergent ✓ Cosmology — Self-consistent evolution ✓ Numerical Simulation — Stable, efficient ✓
+  Non-Equilibrium Physics — Time-asymmetric ✓ Quantum Extensions — EFT-ready This document proposes a physical
+  framework and a set of equations designed as a complete dynamical system for spacetime , rather than a
+  collection of isolated equations. The framework consists of
+source:
+  doi: 10.5281/zenodo.18075029
+  title: Causal Memory Transport Equations
+  year: 2025
+fetched_from_url: 'https://zenodo.org/api/records/18075029'
+locator: Zenodo record abstract (desc field), via API, from registry/zenodo_all_records.json
+tier: Open
+base_relation: refined_by_later_work
+base_justification: Precursor step in the same program's iterative build-up toward what the base corpus fixes as the τ_c>0
+  persistence axiom / mass-as-readout-of-τ_c (kc-base-028); vocabulary and claims here are provisional working
+  drafts later folded into and re-derived under that axiom.
+glosa_use: skip
+glosa_target: n/a — superseded within its own program before reaching base corpus
+notes: Part of the single-author 'ph' hub iterative physics-theory series (Zenodo id 18075029, 2025-12-28);
+  method-layer extraction only (self-publication + no-peer-review posture), not the physics content itself.

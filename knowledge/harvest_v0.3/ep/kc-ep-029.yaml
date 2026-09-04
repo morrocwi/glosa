@@ -1,0 +1,24 @@
+id: kc-ep-029
+kind: claim
+title: 'Catuskoti-on-Catuskoti: what survives Nāgārjuna''s self-applied fourfold negation'
+text: Applies Nāgārjuna's fourfold negation (catuskoti) to the logical procedure itself; argues no horn
+  of the tetralemma accounts for how catuskoti functions as a tool, yet it functions reproducibly — the
+  functional residue is identified with θ(E) (no svabhāva, non-emptiness, asymmetric constraint, specifiable
+  limits).
+verbatim: This paper introduces the move of catus.kot. i-on-catus.kot. i—the application of N¯ag¯arjuna’s
+  own fourfold negation to the logical procedure itself. The argument shows that no horn of the tetralemma
+  can coherently account for how the catus.kot. i functions as a logical tool, yet the tool continues
+  to function in a reproducible and nonarbitrary way.
+source:
+  doi: 10.5281/zenodo.20035321
+  title: 'Catus.kot. i-on-Catus.kot. i: What Survives the Self-Fold of N¯ag¯arjuna''s Method'
+  year: 2026
+fetched_from_url: https://zenodo.org/api/records/20035321
+locator: Zenodo record abstract (desc field), via API
+tier: Open
+base_relation: holds
+base_justification: Uses θ(E) (kc-ep-026) as its residue-concept, so inherits that construct's compatibility
+  with the base's L_R-type forced-invariant reasoning (kc-base-012).
+glosa_use: skip
+glosa_target: (philosophy-of-logic domain application, no new FOUNDATION hook beyond θ(E))
+notes: 2026-05-01.

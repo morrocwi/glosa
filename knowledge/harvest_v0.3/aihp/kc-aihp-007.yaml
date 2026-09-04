@@ -1,0 +1,29 @@
+id: kc-aihp-007
+kind: claim
+title: 'Blackbox Log entry BBL-2026-09-04-024: knowledge disputes outside institutions are usually about
+  legitimacy, not truth'
+text: A founder's raw, append-only voice log entry (tier positional/Dr, verbatim, no AI-authored lines)
+  argues that most disputes about knowledge outside academic institutions concern constructed legitimacy
+  rather than phenomenological truth or falsity, and that horizontal (peer-to-peer, networked) knowledge
+  production can now outpace vertical institutional certification, though vertical growth still matters
+  for strengthening a claim's roots.
+verbatim: รีรั นเก็บไว้หน่อย ตอนเขียนไม่มีสติ ....... จึงอาจกล่าวได้ว่า ศูนย์กลางข้อถกเถียงเกี่ยวกับความรู้ส่วนใหญ่
+  นอกสถานบันความรู้ มักเป็นข้อถกเถียงเกี่ยวกับความชอบธรรม (ที่ถูกประกอบสร้างจากสถาบัน) ไม่ใช่ ความเป็นเท็จ
+  หรือเป็นจริง ทางปรากฏการณ์ ... เพราะเครือข่ายแนวราบทำให้ข้อเสนอทางความรู้สามารถถูกผลิต ประกอบสร้าง แลกเปลี่ยน
+  และแพร่กระจายได้รวดเร็วกว่ากระบวนการรั บรองแบบแนวดิ่ง อย่างไรก็ดี ไม่ใช่ กระบวนการแนวดิ่ง จะไม่มีความสำคัญ
+  เพราะ ขณะเดียวกันสิ่งคล้ายความรู้เหล่านี้ ต้องอาศัยการเติบโตแนวดิ่ง เพื่อทำให้ตัวมันเข้มแข็งขึ้น
+source:
+  doi: 10.5281/zenodo.22307891
+  title: ปูมกล่องดำ — บันทึกเสียงดิบ ข้อค้นพบ และคำถามรายวันของ เยาฮารี แหละตี (Blackbox Log, Yaoharee
+    Lahtee)
+  year: 2026
+fetched_from_url: local:blackbox/log/BLACKBOX_LOG.pdf
+locator: entry BBL-2026-09-04-024, 17:35
+tier: Dr
+base_relation: holds
+base_justification: Restates, in the founder's own voice and independently of any base-card text, the
+  same horizontal/vertical distinction the workspace gate rule EPIS-KNOWLEDGE-VALIDATION and kc-base-027
+  (bounded knower framing) already hold — a convergent, not contradicting, source.
+glosa_use: already_in_glosa
+glosa_target: Blackbox Log is glosa's own raw-source tier (design/FOUNDATION_v0.5.md); already the ground
+notes: Log entry is verbatim founder speech per repo's own append-only, no-AI-lines rule (see file header).

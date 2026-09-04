@@ -1,0 +1,29 @@
+id: kc-islam-004
+kind: claim
+title: AI-mediated society risks the human forgetting their own status as chooser and responsibility-bearer
+text: A national-conference presentation argues that in an AI-mediated society, the primary risk is the human
+  forgetting their own status as the one who chooses and who bears responsibility for the choice — not the AI
+  system replacing that role. Slides accompanying a full English companion paper; not itself a peer-reviewed
+  article.
+verbatim: "Artificial Intelligence and the Civilization of Knowledge — forgetting the human's status as chooser
+  and the human's responsibility in an AI-mediated society... Companion English paper: The Civilization of
+  Knowledge: Who Has the Authority to Interpret the World (10.5281/zenodo.18943971)."
+source:
+  doi: 10.5281/zenodo.22302410
+  title: "ปัญญาประดิษฐ์กับอารยธรรมความรู้: การลืมสถานะการเป็นตัวเลือกและความรับผิดชอบของมนุษย์ในสังคมที่ถูกสื่อกลาง
+    ด้วยปัญญาประดิษฐ์ (สไลด์นำเสนอระดับชาติ NIDA, 29 ส.ค. 2569)"
+  year: 2026
+fetched_from_url: https://zenodo.org/api/records/22302410
+locator: abstract (Zenodo record metadata.description, EN half)
+tier: Open
+base_relation: holds
+base_justification: Directly consonant with the base's "bounded knower" framing (kc-base-027) and the
+  operator-grounding refusal to erase the agent doing the reading (kc-base-017) — names the same risk (losing
+  the chooser/responsible-agent) the base's whole apparatus is built to keep visible.
+glosa_use: adopt
+glosa_target: FOUNDATION §2.1c ownership criterion (problem/question/hypothesis-selection stays human) —
+  direct thematic match.
+notes: A byte-identical duplicate Zenodo deposit exists at 10.5281/zenodo.22301886 (same title, same date
+  2026-08-29, `desc` field verified identical). Treated as the same concept-record version per the dedupe
+  instruction (keep the newest of duplicate versions) — this card covers both DOIs; 22301886 is not given
+  its own card.

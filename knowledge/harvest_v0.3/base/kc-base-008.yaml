@@ -1,0 +1,34 @@
+id: kc-base-008
+kind: rule
+title: Fail-Able Gate Law (Type-P vs Type-U)
+text: A gate only earns the Type-P (genuinely evidence-bearing) label if it carries both a machine-derived
+  passing control and a machine-derived failing control. A gate that only ever demonstrates passing cases
+  has not shown it can tell signal from absence of signal, and stays Type-U — a convention wearing evidence's
+  clothes — until a real failing control is produced and correctly rejected.
+verbatim: 'The law: a gate only earns the label **Type-P** — genuinely
+
+  evidence-bearing — if it carries *both* a machine-derived passing control
+
+  *and* a machine-derived failing control. A gate that only ever demonstrates
+
+  passing cases, no matter how many, has not yet shown it can tell signal from
+
+  the absence of signal; it stays **Type-U** — a convention or definition
+
+  wearing evidence''s clothes — until a real failing control is produced and
+
+  correctly rejected.'
+source:
+  path: readout_universe/philosophy.md
+  title: Philosophy — Readout Universe
+  year: 2026
+fetched_from_url: ~/ANSE.ASIA/readout_universe/philosophy.md
+locator: §2.1, lines ~178-197
+tier: Dr
+base_relation: holds
+base_justification: This IS a base card from the lens root text; base cards are the ground the ledger
+  is judged against.
+glosa_use: adopt
+glosa_target: FOUNDATION §3.3 Kernel gate rules (specified, Dr, untested)
+notes: 'Directly reusable as a kernel-gate design rule: any glosa gate claiming Type-P status needs a
+  demonstrated failing control, not just accumulated passes.'

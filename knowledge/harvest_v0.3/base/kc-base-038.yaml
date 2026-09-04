@@ -1,0 +1,28 @@
+id: kc-base-038
+kind: method
+title: Verdict-class vocabulary — DERIVED/FORCED/DEFINITIONAL-RELABEL/POSITED/BORROWED-SCALE/OPEN
+text: 'Every physics element quoted anywhere in the wider corpus must carry its verdict class alongside
+  it: DERIVED, FORCED, DEFINITIONAL-RELABEL, POSITED, BORROWED-SCALE, or OPEN — several cross-domain ''=''
+  signs are definitional relabels, not derivations, and must be named as such rather than silently presented
+  as equalities.'
+verbatim: 'every physics element quoted anywhere in v2 must carry
+
+  its verdict class (DERIVED / FORCED / DEFINITIONAL-RELABEL / POSITED /
+
+  BORROWED-SCALE / OPEN) alongside it.'
+source:
+  path: readout_universe/philosophy.md
+  title: Philosophy — Readout Universe
+  year: 2026
+fetched_from_url: ~/ANSE.ASIA/readout_universe/philosophy.md
+locator: §6, lines ~1855-1858
+tier: Dr
+base_relation: holds
+base_justification: This IS a base card from the lens root text; base cards are the ground the ledger
+  is judged against.
+glosa_use: adopt
+glosa_target: FOUNDATION field base_relation (holds|refined_by_later_work|superseded|outdated|open)
+notes: This is the closest direct precedent for the base_relation vocabulary this very task's card schema
+  uses (holds/refined_by_later_work/superseded/outdated/open) — a sibling verdict-class vocabulary from
+  the same lens family; worth cross-referencing explicitly in FOUNDATION so the two vocabularies are not
+  silently conflated.

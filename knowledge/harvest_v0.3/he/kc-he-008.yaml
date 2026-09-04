@@ -1,0 +1,24 @@
+id: kc-he-008
+kind: definition
+title: Wellbeing from Informationism — repair-permissive causal-informational coherence, not symptom absence
+text: The monograph rejects reducing wellbeing to subjective happiness, symptom absence, or isolated
+  biomarkers on the ground that each fails to explain chronic dysfunction, recovery failure, or irreversibility
+  of accumulated biological burden, and instead defines wellbeing operationally as repair-permissive
+  coherence across matter/body/mind/meaning/environment/social relation under finite causal access and memory.
+verbatim: "Wellbeing lacks a principled ontological definition. Dominant framings reduce it to subjective
+  happiness, symptom absence, or isolated biomarkers — each insufficient to explain chronic dysfunction,
+  recovery failure, or the irreversibility of accumulated biological burden."
+source:
+  doi: 10.5281/zenodo.20283074
+  title: "Wellbeing from Informationism"
+  year: 2026
+fetched_from_url: https://zenodo.org/api/records/20283074
+locator: abstract (Zenodo record metadata.description)
+tier: Open
+base_relation: holds
+base_justification: Frames wellbeing under "finite causal access and memory," the same bounded-knower framing
+  the base lens uses (readout-not-truth); no conflict with base cards, an application to a new domain.
+glosa_use: skip
+glosa_target: "n/a — domain (health theory) content, not a methodology/gate rule glosa's own kernel needs"
+notes: Definitional/domain content rather than method-of-knowledge-making; kept as one card to cover the
+  record per the one-card-minimum rule, not proposed for adoption into glosa's kernel.

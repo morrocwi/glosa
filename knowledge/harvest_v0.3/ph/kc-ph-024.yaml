@@ -1,0 +1,30 @@
+id: kc-ph-024
+kind: claim
+title: Local-Only Derivation of an Emergent Coherence Field from the Seed Algebra 𝐴𝜀 = delta
+text: 'Self-published Zenodo preprint (single-author physics/information-theory program, 2025-10-30). Abstract
+  reports: We present a dimensionless, local-only framework to derive an emergent coherence field from the
+  seed algebra 𝐴𝜀 = 𝛿. The approach integrates residual-space inference, Lyapunov-stable dynamics, and a
+  telegraph-stable field layer with local phase coupling. The framework is non-circular, falsifiable, and
+  scale-aware (rad/s). Crossdomain applications in neural dynamics, materials, and fluids demonstrate
+  portability via explicit...'
+verbatim: We present a dimensionless, local-only framework to derive an emergent coherence field from the seed algebra
+  𝐴𝜀 = 𝛿. The approach integrates residual-space inference, Lyapunov-stable dynamics, and a telegraph-stable
+  field layer with local phase coupling. The framework is non-circular, falsifiable, and scale-aware (rad/s).
+  Crossdomain applications in neural dynamics, materials, and fluids demonstrate portability via explicit
+  similarity rules. All equations are unit-free, with physical units introduced only for reporting. This work
+  adheres to FAIR principles and is openly accessible under CC BY 4.0.
+source:
+  doi: 10.5281/zenodo.17486875
+  title: Local-Only Derivation of an Emergent Coherence Field from the Seed Algebra 𝐴𝜀 = delta
+  year: 2025
+fetched_from_url: 'https://zenodo.org/api/records/17486875'
+locator: Zenodo record abstract (desc field), via API, from registry/zenodo_all_records.json
+tier: Open
+base_relation: superseded
+base_justification: Uses an earlier, since-abandoned working name/formalism (this program cycled through several framework names
+  before settling on retained-information/δ_R vocabulary); the base corpus's mother equation (kc-base-020) and
+  trunk equation (kc-base-022) replace this formulation.
+glosa_use: skip
+glosa_target: n/a — abandoned vocabulary, replaced by base mother/trunk equation
+notes: Part of the single-author 'ph' hub iterative physics-theory series (Zenodo id 17486875, 2025-10-30);
+  method-layer extraction only (self-publication + no-peer-review posture), not the physics content itself.

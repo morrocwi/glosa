@@ -1,0 +1,26 @@
+id: kc-base-006
+kind: claim
+title: no_decoder_recovers_state theorem (non-injective readout)
+text: 'Machine-checked, axiom-free theorem: whenever a readout operator maps two distinct true states
+  to the same recorded value, both states still exist, but no decoder can recover both from the record
+  alone. This is a general fact about non-injective maps — it grounds the shape of readout-not-truth,
+  but is not independent evidence the stance is true of the physical world.'
+verbatim: 'whenever a readout operator maps two distinct true states to the same
+
+  recorded value, both states still exist, but no decoder can recover both
+
+  from the record alone.'
+source:
+  path: readout_universe/philosophy.md
+  title: Philosophy — Readout Universe
+  year: 2026
+fetched_from_url: ~/ANSE.ASIA/readout_universe/philosophy.md
+locator: §1, lines ~90-93 (citing readout_genesis/formal/InfoTrueRecordUnreadable_attempt.v)
+tier: Th_coqc
+base_relation: holds
+base_justification: This IS a base card from the lens root text; base cards are the ground the ledger
+  is judged against.
+glosa_use: adopt
+glosa_target: FOUNDATION §3.3 Kernel gate rules (specified, Dr, untested)
+notes: Explicitly flagged 'supporting, not independent' evidence in-source — carry that caveat forward,
+  never cite alone as proof of readout-not-truth about the world.

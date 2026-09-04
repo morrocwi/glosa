@@ -1,0 +1,31 @@
+id: kc-ph-110
+kind: method
+title: 'Pixel Gravity Field Theory: A Clocked Retained-Readout Framework for Field-to-Channel Computation'
+text: 'Self-published Zenodo preprint (single-author physics/information-theory program, 2026-06-09). Abstract
+  reports: We introduce Pixel Gravity Field Theory, a clocked retained-readout field framework in which
+  gravitational and cross-domain forces are represented through retained distinguishability, graph-induced
+  field operators, explicit clock sectors, gauge-aware field readouts, obstruction-gradient forces, and
+  domain-specific native solver cards. The mandatory master spine runs from non-identity and retained
+  difference to graph structure, clocked retained fields, readout...'
+verbatim: We introduce Pixel Gravity Field Theory, a clocked retained-readout field framework in which gravitational
+  and cross-domain forces are represented through retained distinguishability, graph-induced field operators,
+  explicit clock sectors, gauge-aware field readouts, obstruction-gradient forces, and domain-specific native
+  solver cards. The mandatory master spine runs from non-identity and retained difference to graph structure,
+  clocked retained fields, readout gates, obstruction ledgers, force gradients, weak-field Poisson gravity,
+  and a gravitational-coupling policy gate. This v0.5 revision adds an action functional, an Euler–Lagrange
+  envelope, a graph-to-continuum gate, a three-mode gauge registry, a minimal toy calculation, a
+source:
+  doi: 10.5281/zenodo.20615715
+  title: 'Pixel Gravity Field Theory: A Clocked Retained-Readout Framework for Field-to-Channel Computation'
+  year: 2026
+fetched_from_url: 'https://zenodo.org/api/records/20615715'
+locator: Zenodo record abstract (desc field), via API, from registry/zenodo_all_records.json
+tier: Open
+base_relation: holds
+base_justification: Contemporaneous companion paper in the same single-author program that also produced the base corpus;
+  already uses base vocabulary (δ_R / retained information / L_R-style operators), so it is read as consistent
+  with, not prior to, kc-base-011/012 (L_R) and kc-base-022 (trunk equation).
+glosa_use: already_in_glosa
+glosa_target: FOUNDATION spine (δ_R→L_R chain) / trunk-equation tier table — same-program companion, no new gloss content
+notes: Part of the single-author 'ph' hub iterative physics-theory series (Zenodo id 20615715, 2026-06-09);
+  method-layer extraction only (self-publication + no-peer-review posture), not the physics content itself.

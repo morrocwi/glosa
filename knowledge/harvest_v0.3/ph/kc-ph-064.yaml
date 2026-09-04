@@ -1,0 +1,30 @@
+id: kc-ph-064
+kind: claim
+title: 'Mass as Inverse Causal Time: A Unified Resolution of Four Persistent Puzzles in Particle Physics and
+  Cosmology'
+text: 'Self-published Zenodo preprint (single-author physics/information-theory program, 2025-12-05). Abstract
+  reports: Accept just one idea and ten problems unravel. If you accept just one idea that mass is not
+  fundamental , but rather the result of how long a system takes to equilibrate under causal constraints you
+  gain a quietly radical perspective that reshapes physics at its core. When mass becomes simply the rate of
+  causal...'
+verbatim: Accept just one idea and ten problems unravel. If you accept just one idea that mass is not fundamental ,
+  but rather the result of how long a system takes to equilibrate under causal constraints you gain a quietly
+  radical perspective that reshapes physics at its core. When mass becomes simply the rate of causal
+  relaxation in an informational field, we can explain the origin of the proton’s mass, the universal
+  correlation between mass and lifetime for all unstable particles, the smallness of the dark energy density,
+  and the puzzling
+source:
+  doi: 10.5281/zenodo.17828120
+  title: 'Mass as Inverse Causal Time: A Unified Resolution of Four Persistent Puzzles in Particle Physics and
+    Cosmology'
+  year: 2025
+fetched_from_url: 'https://zenodo.org/api/records/17828120'
+locator: Zenodo record abstract (desc field), via API, from registry/zenodo_all_records.json
+tier: Open
+base_relation: open
+base_justification: Domain physics content (a specific claim/derivation/observational note) not directly addressed by any base
+  card; carries no base-card contradiction but also no base endorsement — left open.
+glosa_use: skip
+glosa_target: n/a — domain physics claim outside glosa's method-layer scope
+notes: Part of the single-author 'ph' hub iterative physics-theory series (Zenodo id 17828120, 2025-12-05);
+  method-layer extraction only (self-publication + no-peer-review posture), not the physics content itself.

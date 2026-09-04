@@ -1,0 +1,36 @@
+id: kc-base-025
+kind: rule
+title: What this system explicitly does NOT claim
+text: finite_diagnostic ≠ proof (an executed numeric PASS is evidence, not a theorem). The Coq floor is
+  narrow — do not extend its scope by inference. No B1 uniqueness claim. Gödel/Liar/ethics are not solved,
+  only relocated. No supersession of any tradition — the relationship is dialogue, never replacement.
+  No machine-independent timing claims. 'Of everything' is a candidacy label with an open boundary, never
+  a declared result. The trunk equation's form is posited, not forced by the root; cross-domain '=' signs
+  are often definitional relabels, not derivations. No domain is 'covered' without a running artifact
+  at a canonical path. No epistemic authority is claimed from outside validation — external peer review
+  or institutional recognition is never a lever that makes a claim more known, only one more input held
+  to the same review as any in-house reviewer.
+verbatim: "- **`finite_diagnostic` ≠ proof.** An executed numeric PASS is evidence, not\n  a theorem.\n\
+  - **The Coq floor is narrow.**...\n- **No B1 uniqueness claim.**\n- **Gödel, the Liar, and ethics are\
+  \ not \"solved.**\"...\n- **No supersession of any tradition**...\n- **No machine-independent timing\
+  \ claims.**\n- **\"Of everything\" is a candidacy label with an open boundary — never a\n  declared\
+  \ result.**...\n- **The trunk equation's form is posited, not forced by the root**...\n- **No domain\
+  \ is \"covered\" without a running artifact** at a canonical\n  path...\n- **No epistemic authority\
+  \ is claimed from outside validation.** Per this\n  workspace's own standing rule, external peer review\
+  \ or institutional\n  recognition is never proposed as a lever that *makes* a claim more known\n  —\
+  \ only as one more input, held to the same review as any in-house\n  adversarial reviewer."
+source:
+  path: readout_universe/philosophy.md
+  title: Philosophy — Readout Universe
+  year: 2026
+fetched_from_url: ~/ANSE.ASIA/readout_universe/philosophy.md
+locator: §6 'What this system explicitly does NOT claim', lines ~1826-1888
+tier: Dr
+base_relation: holds
+base_justification: This IS a base card from the lens root text; base cards are the ground the ledger
+  is judged against.
+glosa_use: adopt
+glosa_target: FOUNDATION §12 Honest edges — what is still Dr/untested, and what was NOT read
+notes: The 'no epistemic authority from outside validation' line is the exact same stance already enshrined
+  verbatim in this user's own global CLAUDE.md EPIS-KNOWLEDGE-VALIDATION node — worth citing as convergent,
+  independently-held doctrine across two of the user's own corpora.

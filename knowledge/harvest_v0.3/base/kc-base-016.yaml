@@ -1,0 +1,25 @@
+id: kc-base-016
+kind: rule
+title: Injected-infinity/zero taxonomy (I1–I4, Z1–Z4)
+text: 'A named taxonomy of eight non-readouts routinely smuggled in as if they were readouts: I1 ℝ-completeness
+  (LUB/Dedekind), I2 h→0, I3 Re,Λ→∞, I4 actual +∞, and on the zero side Z1 the point r=0, Z2 exact-zero
+  spacing, Z3 absolute rest/exact vacuum, Z4 the true void. Reciprocity 1/0=∞ names zero and infinity
+  as one non-readout seen from two sides, never two separate facts.'
+verbatim: 'Injected-infinity/zero taxonomy: **I1** ℝ-completeness (LUB/Dedekind) · **I2** `h→0` · **I3**
+  `Re,Λ→∞` · **I4** actual `+∞` · **Z1** the point `r=0` · **Z2** reached continuum `h=0` · **Z3** absolute
+  rest `v=0,T=0` · **Z4** the true void; reciprocity `1/0=∞` names zero and infinity as one non-readout
+  seen from two sides'
+source:
+  path: readout_universe/logic.md
+  title: Logic — Equation & Operator Ledger
+  year: 2026
+fetched_from_url: ~/ANSE.ASIA/readout_universe/logic.md
+locator: §0.5 'LAD-INF', lines ~198
+tier: Dr
+base_relation: holds
+base_justification: This IS a base card from the lens root text; base cards are the ground the ledger
+  is judged against.
+glosa_use: adopt
+glosa_target: FOUNDATION §3.3 Kernel gate rules (specified, Dr, untested)
+notes: 'A directly reusable checklist item for any glosa gate reviewing a claim: does it silently inject
+  I1-I4/Z1-Z4 as if it were a readout?'

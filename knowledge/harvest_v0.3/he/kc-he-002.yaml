@@ -1,0 +1,25 @@
+id: kc-he-002
+kind: method
+title: SOMA-READ — frozen preregistration deposited before ethics approval, before any data
+text: A human empirical protocol is time-stamped and deposited on Zenodo as a FROZEN draft explicitly BEFORE
+  ethics-committee submission and before enrolling any participant, so the prediction (informational-window
+  manipulation changes a candidate readout before fear/behaviour changes) cannot be retrofitted after seeing
+  results. The deposit itself functions as the falsifiability commitment device, not the eventual paper.
+verbatim: 'Status: FROZEN protocol draft v1.0 (2 September 2026), deposited as a time-stamped preregistration
+  record BEFORE ethics submission and before any data collection. Not a result; no participants have been
+  enrolled; the study must not run until an ethics committee approves it.'
+source:
+  doi: 10.5281/zenodo.22302190
+  title: "SOMA-READ v1.0: A Preregistered Causal Readout Perturbation Study of Somatic Agency and Endpoint Observability — Flagship Human Empirical Protocol (FROZEN draft, pre-ethics)"
+  year: 2026
+fetched_from_url: https://zenodo.org/api/records/22302190
+locator: abstract (Zenodo record metadata.description)
+tier: Open
+base_relation: open
+base_justification: The record's own epistemic status is explicitly pending (pre-ethics, pre-data) — it commits
+  to but has not yet earned a Fail-Able Gate Law (kc-base-008) passing/failing control; the prediction stands
+  as an open, not-yet-tested claim relative to the base tier ladder.
+glosa_use: adopt
+glosa_target: "FOUNDATION §2.1a Problem before observation and §7.3 Bounded-Judge Law"
+notes: A clean real-world instance of the "deposit the frozen prediction before the check exists" pattern that
+  glosa's own K1-registration-before-work discipline mirrors — worth citing as a non-glosa precedent.

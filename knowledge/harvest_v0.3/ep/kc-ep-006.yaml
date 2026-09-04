@@ -1,0 +1,26 @@
+id: kc-ep-006
+kind: method
+title: Constructible ordering from a primitive step relation (precursor)
+text: Defines an ordering value t(s) as minimal steps to reach state s from a reference point on a state
+  space with a step relation ⇒, proves a characterization theorem (sufficiency+necessity) for when such
+  ordering is well-defined, independent of time/dynamics/probability/physics.
+verbatim: We present a self-contained characterization of when a well-dened ordering can be constructed
+  from a primitive step relation on a state space, without presupposing time, dynamics, probability, or
+  physical structure. Starting from a nonempty state space S equipped with a binary relation ⇒ (the step
+  relation), we dene an ordering value t(s) as the minimal number of steps required to reach state s from
+  a xed reference.
+source:
+  doi: 10.5281/zenodo.18133010
+  title: Constructible Ordering from Distinguishable Steps
+  year: 2026
+fetched_from_url: https://zenodo.org/api/records/18133010
+locator: Zenodo record abstract (desc field), via API
+tier: Dr
+base_relation: refined_by_later_work
+base_justification: This step-counting construction is a precursor to the base's discrete number ladder
+  and δ_R retained-difference primitive (kc-base-009, kc-base-015); the later corpus formalizes ordering
+  via δ_R→L_R machinery rather than a bare step-relation graph-distance argument.
+glosa_use: skip
+glosa_target: (superseded by base δ_R/L_R formalism for glosa purposes)
+notes: 2026-01-02; author explicitly notes the underlying construction (min path length in digraph) is
+  well-known, contribution is conceptual reframing.

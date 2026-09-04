@@ -1,0 +1,32 @@
+id: kc-aihp-030
+kind: claim
+title: 'AI-cognitive interaction and youth potential: reflective dialogue as a mechanism, pre-readout
+  vocabulary'
+text: Earliest-dated record in the hub (Oct 2025, first published on SSRN). Conceptual paper connecting
+  adolescent neurodevelopmental asymmetry (reward system outpacing prefrontal self-control) to a proposed
+  structural gap between theoretical learning and real-world application, arguing AI-mediated reflective
+  dialogue and Work-Based Learning framings could re-align motivation and economic potential. Written
+  before the corpus's readout/E-A-D vocabulary existed.
+verbatim: Research in developmental neuroscience indicates that during adolescence, the brain's reward
+  system (limbic–dopaminergic system) develops faster than the self-control center (prefrontal cortex),
+  making young learners more responsive to immediate rewards than to abstract thinking processes (Steinberg,
+  2010; Shulman et al., 2016). If educational systems fail to align with this neurobiological balance,
+  learners may lose motivation and psychological stability.
+source:
+  doi: 10.5281/zenodo.22308448
+  title: 'AI–Cognitive Interaction: Activating Youth Potential through Reflective Dialogue and Linguistic
+    Capital'
+  year: 2025
+fetched_from_url: https://zenodo.org/api/records/22308448
+locator: Abstract
+tier: Open
+base_relation: refined_by_later_work
+base_justification: Predates the corpus's own readout/bounded-knower/E-A-D formalization (kc-base-001,
+  kc-base-027) by roughly 5 months; its claims about AI-mediated dialogue and epistemic benefit are later
+  given a checkable mechanism (tiers, falsifiers, independence ladder) in this hub's 2026 papers, e.g.
+  kc-aihp-023 (19215748) and kc-aihp-011 (22301318). No direct contradiction, just no formal apparatus
+  yet.
+glosa_use: skip
+glosa_target: n/a — pre-formal precursor paper, superseded in method (not content) by later hub papers
+notes: Deposited on Zenodo 2026-09-05 unchanged for the series record, though first published/dated 2025-10-09
+  on SSRN; date field reflects original publication.

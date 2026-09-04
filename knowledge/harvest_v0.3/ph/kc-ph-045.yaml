@@ -1,0 +1,33 @@
+id: kc-ph-045
+kind: method
+title: 'Informational Diffusivity of Black-Hole Ringdown: A Causally Constrained Telegraph-Based Surrogate
+  Framework'
+text: 'Self-published Zenodo preprint (single-author physics/information-theory program, 2025-11-15). Abstract
+  reports: The ringdown of perturbed Kerr black holes exhibits exponentially damped oscillations with
+  frequencies and decay times that agree with quasinormal mode (QNM) predictions across LIGO– Virgo–KAGRA
+  catalogs. We introduce a strictly phenomenological surrogate in which the observed damping time τ220 is
+  reinterpreted as an effective causal relaxation time in a Maxwell–Cattaneo (telegraph-type) transport
+  system. Enforcing...'
+verbatim: The ringdown of perturbed Kerr black holes exhibits exponentially damped oscillations with frequencies and
+  decay times that agree with quasinormal mode (QNM) predictions across LIGO– Virgo–KAGRA catalogs. We
+  introduce a strictly phenomenological surrogate in which the observed damping time τ220 is reinterpreted as
+  an effective causal relaxation time in a Maxwell–Cattaneo (telegraph-type) transport system. Enforcing the
+  luminal constraint for the characteristic propagation speed yields the algebraic mapping Dring = c2 τ220,
+  which defines an informational diffusivity directly from posterior QNM parameters without modifying general
+  relativity, Kerr perturbation theory, or gravitational-wave
+source:
+  doi: 10.5281/zenodo.17616410
+  title: 'Informational Diffusivity of Black-Hole Ringdown: A Causally Constrained Telegraph-Based Surrogate
+    Framework'
+  year: 2025
+fetched_from_url: 'https://zenodo.org/api/records/17616410'
+locator: Zenodo record abstract (desc field), via API, from registry/zenodo_all_records.json
+tier: Open
+base_relation: refined_by_later_work
+base_justification: Precursor step in the same program's iterative build-up toward what the base corpus fixes as the τ_c>0
+  persistence axiom / mass-as-readout-of-τ_c (kc-base-028); vocabulary and claims here are provisional working
+  drafts later folded into and re-derived under that axiom.
+glosa_use: skip
+glosa_target: n/a — superseded within its own program before reaching base corpus
+notes: Part of the single-author 'ph' hub iterative physics-theory series (Zenodo id 17616410, 2025-11-15);
+  method-layer extraction only (self-publication + no-peer-review posture), not the physics content itself.

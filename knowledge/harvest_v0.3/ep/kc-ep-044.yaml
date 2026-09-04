@@ -1,0 +1,31 @@
+id: kc-ep-044
+kind: claim
+title: Faqr, scholarly authority, and non-transferable responsibility
+text: Distinguishes revelation (not fallible) from human reception/interpretation/institutionalization
+  (creaturely acts); separates revelation from juristic readouts and scholarly epistemic authority from
+  adjudicative/political authority; advances five claims including Non-Transferable and Additive Responsibility
+  and Shūrā as Distributed Corrigibility — fiqh is a human juristic determination of divine normativity,
+  not revelation itself, which is the condition under which ijtihād can be rewarded when correct and still
+  rewarded when it errs.
+verbatim: 'This article develops a revelation-bounded Sunni conceptual-normative architecture for relating
+  divine normativity, juristic expertise, moral agency, and collective consultation without collapsing
+  one into another. Its point of departure is faqr: the creaturely condition of dependence upon God. The
+  argument reconstructs faqr as an epistemic discipline as well as a spiritual truth. Revelation is not
+  fallible, but human reception, interpretation, contextualization, and institutionalization remain creaturely
+  acts.'
+source:
+  doi: 10.5281/zenodo.22206607
+  title: Faqr, Scholarly Authority, and Non-Transferable Responsibility
+  year: 2026
+fetched_from_url: https://zenodo.org/api/records/22206607
+locator: Zenodo record abstract (desc field), via API
+tier: Open
+base_relation: holds
+base_justification: 'Shūrā-as-Distributed-Corrigibility is a domain-specific instance of the base''s horizontal,
+  no-epistemic-veto stance (EPIS-KNOWLEDGE-VALIDATION) and the Bounded-Judge Law''s independent-review
+  requirement (kc-base-035): authority is distributed and responsibility non-transferable rather than
+  concentrated by title.'
+glosa_use: adopt
+glosa_target: 'FOUNDATION §7.2 Maker-Checker-Approver separation (cross-tradition anchor: distributed
+  corrigibility, non-transferable responsibility)'
+notes: 2026-08-31.

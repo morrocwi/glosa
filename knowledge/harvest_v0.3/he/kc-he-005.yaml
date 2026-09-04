@@ -1,0 +1,26 @@
+id: kc-he-005
+kind: method
+title: RRHM phobia model — pre-registering which falsification gates are simulable before any participant
+text: Of eleven pre-committed falsification gates for a phobia hypothesis, ten are declared simulable and all
+  ten are run before recruiting any participant; the record reports that six earlier simulated runs (v6-v8)
+  produced four failures that forced a design change and a construct's algebraic form to be rewritten, and
+  states this revision history rather than only the final passing battery.
+verbatim: "Of the eleven falsification gates this hypothesis commits to, ten are simulable and all ten have now
+  been run before any participant was recruited (K1 is a procedural rule, not a simulation target). Six were
+  run in v6-v8: four of those failed, the design and one construct's algebraic form were changed, and the
+  repaired battery discriminates."
+source:
+  doi: 10.5281/zenodo.22227003
+  title: "Why We Phobia? The Regulatory Recoverability Horizon Model of Specific Phobia"
+  year: 2026
+fetched_from_url: https://zenodo.org/api/records/22227003
+locator: abstract (Zenodo record metadata.description)
+tier: finite_diagnostic
+base_relation: holds
+base_justification: Reporting the four prior failed simulations rather than only the final repaired battery is
+  the same discipline the base's Bounded-Judge Law and no-silent-overclaim stance require — a gate must show a
+  real failing control, and here failures are disclosed, not erased.
+glosa_use: adopt
+glosa_target: "FOUNDATION §7.3 Bounded-Judge Law and §7.6 K1→K2 conversion ledger"
+notes: Good exemplar for a "revision history disclosed, not laundered" clause in glosa's own K1->K2 ledger
+  guidance.

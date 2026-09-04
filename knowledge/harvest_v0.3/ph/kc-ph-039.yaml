@@ -1,0 +1,33 @@
+id: kc-ph-039
+kind: method
+title: Unified Information Field Foundation (A Minimal Mathematical Framework Linking Energy, Information, and
+  Stability)
+text: 'Self-published Zenodo preprint (single-author physics/information-theory program, 2025-11-10). Abstract
+  reports: This paper introduces the foundational structure of the Unified Information Field (UIF) framework
+  within Non-Equilibrium Information Physics —a mathematically consistent approach that joins energy,
+  information, and stability under one dimensionally verified form. Built on three verifiable relations—the
+  Energy–Information Law , the Lyapunov–Λ Bridge , and the Mass–Coherence Law —the framework demonstrates that
+  informational dynamics can...'
+verbatim: This paper introduces the foundational structure of the Unified Information Field (UIF) framework within
+  Non-Equilibrium Information Physics —a mathematically consistent approach that joins energy, information,
+  and stability under one dimensionally verified form. Built on three verifiable relations—the
+  Energy–Information Law , the Lyapunov–Λ Bridge , and the Mass–Coherence Law —the framework demonstrates that
+  informational dynamics can be expressed through standard physical units and validated by reproducible
+  mathematical analysis. Readers are invited to examine these results as an open contribution toward a
+  coherent, testable unification of energy and information across physical domains.
+source:
+  doi: 10.5281/zenodo.17566315
+  title: Unified Information Field Foundation (A Minimal Mathematical Framework Linking Energy, Information, and
+    Stability)
+  year: 2025
+fetched_from_url: 'https://zenodo.org/api/records/17566315'
+locator: Zenodo record abstract (desc field), via API, from registry/zenodo_all_records.json
+tier: Open
+base_relation: superseded
+base_justification: Uses an earlier, since-abandoned working name/formalism (this program cycled through several framework names
+  before settling on retained-information/δ_R vocabulary); the base corpus's mother equation (kc-base-020) and
+  trunk equation (kc-base-022) replace this formulation.
+glosa_use: skip
+glosa_target: n/a — abandoned vocabulary, replaced by base mother/trunk equation
+notes: Part of the single-author 'ph' hub iterative physics-theory series (Zenodo id 17566315, 2025-11-10);
+  method-layer extraction only (self-publication + no-peer-review posture), not the physics content itself.

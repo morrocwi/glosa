@@ -1,0 +1,28 @@
+id: kc-se-001
+kind: rule
+title: Descriptive-only comparison table — no outperformance claim across adjacent frameworks
+text: A social-enterprise health-education paper places its own proposal (T-PHE) alongside six adjacent
+  bodies of practice/evidence in one table, stating only what each is documented to do, measure, and
+  not do, and what T-PHE adds — explicitly refusing to let the table imply T-PHE outperforms any row,
+  since no effectiveness evidence exists yet for T-PHE itself. Rows the author has not reviewed at
+  manual/curriculum level are marked "not examined here" rather than silently rated.
+verbatim: "\\tphe{} is not proposed into an empty field. Table~\\ref{tab:novelty} places it alongside six
+  adjacent bodies of practice and evidence already reviewed in \\S4.3, stating only what each is
+  documented to do, measure, and not do, and what \\tphe{} adds on top of it. The comparison is not a
+  claim that \\tphe{} outperforms any row; no effectiveness evidence exists for \\tphe{} itself."
+source:
+  doi: 10.5281/zenodo.22302161
+  title: "Before Family Risk Becomes a Health Crisis: Trustworthy Premarital Health Education (T-PHE) as
+    Primary Prevention Infrastructure — full paper, tier-one evidence dossier, and TIMA/FIMA 2026 abstract"
+  year: 2026
+fetched_from_url: local (RE_T-PHE repo, private working tree)
+locator: paper/sections/discussion_novelty.tex, opening paragraph (lines 1-4)
+tier: Open
+base_relation: holds
+base_justification: Matches the comparison discipline in glosa's own gate (never claim novel/first;
+  compare only as same/different/cited) and the base's verdict-class discipline (kc-base-038) — a
+  comparison table stating only documented function, never a ranking claim.
+glosa_use: adopt
+glosa_target: "FOUNDATION §3 claim card — the comparison field (same/different/cited, never novel/first/best)"
+notes: Directly usable worked example for the glosa comparison-field template; the "not examined here"
+  marking for unreviewed rows is a clean pattern for honest gap-flagging.

@@ -1,0 +1,29 @@
+id: kc-ph-070
+kind: claim
+title: 'Pixel Gravity and the Structure of Causal Memory: Kernel Uniqueness and Planck-Limited Relaxation'
+text: 'Self-published Zenodo preprint (single-author physics/information-theory program, 2025-12-11). Abstract
+  reports: When examining the behaviour of physical systems under perturbation—from quantum fields at the
+  particle scale to the ringdown of black holes after merger—one finds that their relaxation patterns display
+  a level of consistency that invites closer attention. This led us to revisit the response equations of
+  systems with memory and to ask directly: under the...'
+verbatim: 'When examining the behaviour of physical systems under perturbation—from quantum fields at the particle
+  scale to the ringdown of black holes after merger—one finds that their relaxation patterns display a level
+  of consistency that invites closer attention. This led us to revisit the response equations of systems with
+  memory and to ask directly: under the constraints of causality and finite signal speed, what form must such
+  an equation take? Analysis via Laplace transforms and transfer-function comparison gives a clear answer:
+  only an exponential relaxation kernel reduces the memory-response equation to'
+source:
+  doi: 10.5281/zenodo.17890616
+  title: 'Pixel Gravity and the Structure of Causal Memory: Kernel Uniqueness and Planck-Limited Relaxation'
+  year: 2025
+fetched_from_url: 'https://zenodo.org/api/records/17890616'
+locator: Zenodo record abstract (desc field), via API, from registry/zenodo_all_records.json
+tier: Open
+base_relation: refined_by_later_work
+base_justification: Precursor step in the same program's iterative build-up toward what the base corpus fixes as the τ_c>0
+  persistence axiom / mass-as-readout-of-τ_c (kc-base-028); vocabulary and claims here are provisional working
+  drafts later folded into and re-derived under that axiom.
+glosa_use: skip
+glosa_target: n/a — superseded within its own program before reaching base corpus
+notes: Part of the single-author 'ph' hub iterative physics-theory series (Zenodo id 17890616, 2025-12-11);
+  method-layer extraction only (self-publication + no-peer-review posture), not the physics content itself.

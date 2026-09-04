@@ -1,0 +1,28 @@
+id: kc-islam-005
+kind: definition
+title: Epistemic hardening — declining social revisability of human interpretive claims
+text: "Names a sociology-of-knowledge mechanism, 'epistemic hardening' — interpretive judgments become
+  institutionally certified, accumulate authority, and grow costly to question, producing 'asymmetric
+  revisability' (an unequal practical capacity to question or correct a claim). Explicitly scopes the concept
+  away from religious authority, orthodoxy, or doctrinal certainty as such — its object is narrower, the
+  declining revisability of the human interpretive layer specifically, not the revealed content itself."
+verbatim: 'I call this process epistemic hardening. The concept does not designate religious authority,
+  orthodoxy, taqlid, doctrinal certainty, or sacred commitment as such. Its object is narrower: the declining
+  social revisability of human interpretive claims.'
+source:
+  doi: 10.5281/zenodo.22129490
+  title: "When Interpretation Hardens: Epistemic Authority, Asymmetric Revisability, and Conflict in Muslim
+    Knowledge Regimes"
+  year: 2026
+fetched_from_url: local file ~/Downloads/When_Interpretation_Hardens_Lahtee_2026_REV2.pdf (matched by title
+  and abstract text against Zenodo record 22129490)
+locator: Abstract, p.1
+tier: Open
+base_relation: holds
+base_justification: "'Asymmetric revisability' is a domain-specific name for exactly what the base's Fail-Able
+  Gate Law and Bounded-Judge Law (kc-base-008, kc-base-035) are built to prevent — a claim that has stopped
+  being checkable against evidence; the two frameworks reach the same warning from different vocabularies."
+glosa_use: adopt
+glosa_target: "FOUNDATION §4.2 Independence Ladder / §7.3 Bounded-Judge Law — 'asymmetric revisability' is a
+  usable term for a glosa red-flag (a claim whose challengers face rising cost while its holders face none)."
+notes: —

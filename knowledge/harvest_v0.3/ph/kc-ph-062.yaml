@@ -1,0 +1,31 @@
+id: kc-ph-062
+kind: claim
+title: 'Causal Informational Ordering: On the Pre-Geometric Nature of Time and Change'
+text: 'Self-published Zenodo preprint (single-author physics/information-theory program, 2025-12-03). Abstract
+  reports: This document establishes the epistemological foundations for treating causal informational
+  ordering (CIO) as the pre-geometric substrate from which time, change, and physical law emerge. We argue, on
+  purely epistemological grounds, that: (i) any empirically accessible physics presupposes a notion of
+  distinguishable states and lawful transitions between them; (ii) the ordering induced by such transitions
+  is...'
+verbatim: 'This document establishes the epistemological foundations for treating causal informational ordering (CIO)
+  as the pre-geometric substrate from which time, change, and physical law emerge. We argue, on purely
+  epistemological grounds, that: (i) any empirically accessible physics presupposes a notion of
+  distinguishable states and lawful transitions between them; (ii) the ordering induced by such transitions is
+  logically prior to geometric notions of time; (iii) this ordering constitutes the minimal structure required
+  for physics to be possible at all. The framework does not compete with general relativity or quantum
+  mechanics but identies'
+source:
+  doi: 10.5281/zenodo.17807792
+  title: 'Causal Informational Ordering: On the Pre-Geometric Nature of Time and Change'
+  year: 2025
+fetched_from_url: 'https://zenodo.org/api/records/17807792'
+locator: Zenodo record abstract (desc field), via API, from registry/zenodo_all_records.json
+tier: Open
+base_relation: refined_by_later_work
+base_justification: Precursor step in the same program's iterative build-up toward what the base corpus fixes as the τ_c>0
+  persistence axiom / mass-as-readout-of-τ_c (kc-base-028); vocabulary and claims here are provisional working
+  drafts later folded into and re-derived under that axiom.
+glosa_use: skip
+glosa_target: n/a — superseded within its own program before reaching base corpus
+notes: Part of the single-author 'ph' hub iterative physics-theory series (Zenodo id 17807792, 2025-12-03);
+  method-layer extraction only (self-publication + no-peer-review posture), not the physics content itself.

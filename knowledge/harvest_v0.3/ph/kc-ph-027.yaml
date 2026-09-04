@@ -1,0 +1,30 @@
+id: kc-ph-027
+kind: claim
+title: 'L0–L3: Minimal-Viable Foundation for the Emergent Coherence Field'
+text: 'Self-published Zenodo preprint (single-author physics/information-theory program, 2025-10-31). Abstract
+  reports: This paper establishes the Minimal-Viable Foundation (L0–L3) of the Yaoharee Cosmo v3.2 system.
+  Rather than a closed-form final theorem set, it provides Testable Axioms that link local residual dynamics,
+  Lyapunov dissipation, and emergent scale-lock coherence across domains. The formulation is unit-free
+  (K-free) and designed for iterative refinement through empirical feedback (L4–L7). Three axioms—(I) the
+  algebra...'
+verbatim: This paper establishes the Minimal-Viable Foundation (L0–L3) of the Yaoharee Cosmo v3.2 system. Rather than
+  a closed-form final theorem set, it provides Testable Axioms that link local residual dynamics, Lyapunov
+  dissipation, and emergent scale-lock coherence across domains. The formulation is unit-free (K-free) and
+  designed for iterative refinement through empirical feedback (L4–L7). Three axioms—(I) the algebra Aε = δ,
+  (II) the Lyapunov metric V , and (III) the dissipative path V˙ ≤ 0—define a coherence engine whose stability
+  is mathematically guaranteed under stated conditions and explicitly falsifiable
+source:
+  doi: 10.5281/zenodo.17495915
+  title: 'L0–L3: Minimal-Viable Foundation for the Emergent Coherence Field'
+  year: 2025
+fetched_from_url: 'https://zenodo.org/api/records/17495915'
+locator: Zenodo record abstract (desc field), via API, from registry/zenodo_all_records.json
+tier: Open
+base_relation: superseded
+base_justification: Uses an earlier, since-abandoned working name/formalism (this program cycled through several framework names
+  before settling on retained-information/δ_R vocabulary); the base corpus's mother equation (kc-base-020) and
+  trunk equation (kc-base-022) replace this formulation.
+glosa_use: skip
+glosa_target: n/a — abandoned vocabulary, replaced by base mother/trunk equation
+notes: Part of the single-author 'ph' hub iterative physics-theory series (Zenodo id 17495915, 2025-10-31);
+  method-layer extraction only (self-publication + no-peer-review posture), not the physics content itself.

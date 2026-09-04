@@ -1,0 +1,28 @@
+id: kc-ph-008
+kind: claim
+title: UFC Equation v1.3.4 — Mathematical Compact Edition
+text: 'Self-published Zenodo preprint (single-author physics/information-theory program, 2025-10-18). Abstract
+  reports: The UFC (Unified Field of Coherence) equation models the evolution of an informational field under
+  Friedmann–Robertson–Walker (FRW) expansion, introducing Fick diffusion and Hubble-drag terms to test pattern
+  stability. Numerical validation shows that in 1D the spectral slope is significant (slope ≈ – 66.016), while
+  2D runs show no false trend. The model is falsifiable, reproducible,...'
+verbatim: The UFC (Unified Field of Coherence) equation models the evolution of an informational field under
+  Friedmann–Robertson–Walker (FRW) expansion, introducing Fick diffusion and Hubble-drag terms to test pattern
+  stability. Numerical validation shows that in 1D the spectral slope is significant (slope ≈ – 66.016), while
+  2D runs show no false trend. The model is falsifiable, reproducible, and applicable to systems where
+  coherent structure must persist under diffusion or contextual expansion.
+source:
+  doi: 10.5281/zenodo.17382545
+  title: UFC Equation v1.3.4 — Mathematical Compact Edition
+  year: 2025
+fetched_from_url: 'https://zenodo.org/api/records/17382545'
+locator: Zenodo record abstract (desc field), via API, from registry/zenodo_all_records.json
+tier: Open
+base_relation: superseded
+base_justification: Uses an earlier, since-abandoned working name/formalism (this program cycled through several framework names
+  before settling on retained-information/δ_R vocabulary); the base corpus's mother equation (kc-base-020) and
+  trunk equation (kc-base-022) replace this formulation.
+glosa_use: skip
+glosa_target: n/a — abandoned vocabulary, replaced by base mother/trunk equation
+notes: Part of the single-author 'ph' hub iterative physics-theory series (Zenodo id 17382545, 2025-10-18);
+  method-layer extraction only (self-publication + no-peer-review posture), not the physics content itself.

@@ -1,0 +1,24 @@
+id: kc-he-015
+kind: rule
+title: Life as Hazard Management — nondiagnostic white paper, no new biological constants or clinical prescriptions
+text: The white paper offers a structural view of living systems as hazard-managers over time, translated into
+  two everyday control classes (reset, rhythm), while explicitly stating the document is nondiagnostic and does
+  not propose new biological constants or clinical prescriptions — its stated purpose is a shared
+  interdisciplinary vocabulary, not a claim to new measured quantities.
+verbatim: "This document is nondiagnostic and does not propose new biological constants or clinical
+  prescriptions; its purpose is to provide a shared interdisciplinary language for biology and health practice."
+source:
+  doi: 10.5281/zenodo.18174493
+  title: "Life as Hazard Management: A Physical and Biological White Paper (Conceptual Framework)"
+  year: 2026
+fetched_from_url: https://zenodo.org/api/records/18174493
+locator: abstract (Zenodo record metadata.description)
+tier: Open
+base_relation: holds
+base_justification: A vocabulary/language contribution explicitly disclaiming any new-constant or clinical
+  claim is exactly the kind of scope-honest disclosure the base's tier discipline (kc-base-007) requires before
+  anything is allowed to read as more than Open/definitional.
+glosa_use: adopt
+glosa_target: "FOUNDATION §5 disclaimer catalogue"
+notes: Another reusable disclaimer-clause template ("this document provides shared vocabulary, not new
+  constants/prescriptions").

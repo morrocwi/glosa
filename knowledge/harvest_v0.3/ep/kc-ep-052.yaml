@@ -1,0 +1,30 @@
+id: kc-ep-052
+kind: claim
+title: 'Rigour Without Infrastructure: three propositions on claim-card discipline'
+text: States, as three falsifiable propositions rather than demonstrated results, that a claim card separately
+  recording what was seen / what the data separates / what AI filled in / what is assumed / what independent
+  check (if any) the claim survived, bound to a formal Existence-Attribution-Disclosure norm (from kc-ep-042)
+  and passed through a named independence ladder (I0 self-check through I5 outside human review) before
+  public release, could carry a checkable rigour property that institutional certification otherwise supplies.
+verbatim: 'Status. GLOSA K0 concept paper — timestamped and citable, not peer reviewed; the three claim
+  cards behind it were reviewed by three cross-vendor AI routes (I3) and revised; independent_check PENDING
+  (no external human check). Produced by running the glosa methodology on itself (repository DOI 10.5281/zenodo.22301060,
+  GitHub morrocwi/glosa: project projects/GLS-2026-001_rigour-without-infrastructure, 48 citation cards
+  VERIFIED under rule 17).'
+source:
+  doi: 10.5281/zenodo.22307841
+  title: 'Rigour Without Infrastructure: Three Propositions on Claim-Card Discipline as a Substitute for
+    Institutional Certification (glosa concept paper, v0.2.0)'
+  year: 2026
+fetched_from_url: https://zenodo.org/api/records/22307841
+locator: Zenodo record abstract (desc field), via API
+tier: Open
+base_relation: holds
+base_justification: This is the concept paper directly behind the FOUNDATION's I0-I5 Independence Ladder
+  (§4.2) and the E-A-D field crosswalk (§3.1) — a primary source for glosa's own core schema, explicitly
+  built by 'running the glosa methodology on itself.'
+glosa_use: adopt
+glosa_target: FOUNDATION §4.2 Independence Ladder I0–I5 — named source for the I0–I5 ladder and the falsifiable-propositions
+  framing of claim-card discipline
+notes: 2026-09-05; three claim cards behind this paper were reviewed by three cross-vendor AI routes (I3);
+  independent_check PENDING (no external human check yet).

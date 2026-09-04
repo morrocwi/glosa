@@ -1,0 +1,23 @@
+id: kc-base-002
+kind: claim
+title: Q1 — No pre-existing magnitude
+text: A quantity is not a real number the world holds in advance, waiting to be measured; this is one
+  of three consequences (Q1-Q3) the corpus draws from readout-not-truth, tiered Dr on citation strength
+  (no worked case yet given for Q1 itself).
+verbatim: '**Q1 — No pre-existing magnitude.** A quantity is not a real number the
+
+  world holds in advance, waiting to be measured.'
+source:
+  path: readout_universe/philosophy.md
+  title: Philosophy — Readout Universe
+  year: 2026
+fetched_from_url: ~/ANSE.ASIA/readout_universe/philosophy.md
+locator: §1, lines ~56-58
+tier: Dr
+base_relation: holds
+base_justification: This IS a base card from the lens root text; base cards are the ground the ledger
+  is judged against.
+glosa_use: adopt
+glosa_target: FOUNDATION §3.2b formal_applicability plain-language definitions
+notes: Only Q3 has a worked body in-source; Q1/Q2 stay one tier lighter — glosa should not silently upgrade
+  them if it cites Q1/Q2.

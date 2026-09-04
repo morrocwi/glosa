@@ -1,0 +1,31 @@
+id: kc-ph-093
+kind: claim
+title: 'Physics Letter: A Structural No-Go on Bias without Record-Cost Asymmetry in Causal Memory Architectures'
+text: 'Self-published Zenodo preprint (single-author physics/information-theory program, 2026-01-01). Abstract
+  reports: We present a deliberately minimal, non-dynamical toy framework whose purpose is to isolate a
+  structural condition for persistent class bias under compositional constraints. States are connected by
+  directed morphisms carrying non-negative additive costs, and admissible paths are filtered by a
+  record-persistence requirement formulated as a lax functor to relations. Analysis is performed at fixed
+  composition...'
+verbatim: We present a deliberately minimal, non-dynamical toy framework whose purpose is to isolate a structural
+  condition for persistent class bias under compositional constraints. States are connected by directed
+  morphisms carrying non-negative additive costs, and admissible paths are filtered by a record-persistence
+  requirement formulated as a lax functor to relations. Analysis is performed at fixed composition depth,
+  which explicitly does not represent physical or cosmological time. Selection over paths is modeled by a
+  broad family of sharp monotone weights depending on total cost, with Gibbs-type measures treated as a
+  representative but
+source:
+  doi: 10.5281/zenodo.18113633
+  title: 'Physics Letter: A Structural No-Go on Bias without Record-Cost Asymmetry in Causal Memory Architectures'
+  year: 2026
+fetched_from_url: 'https://zenodo.org/api/records/18113633'
+locator: Zenodo record abstract (desc field), via API, from registry/zenodo_all_records.json
+tier: Open
+base_relation: refined_by_later_work
+base_justification: Precursor step in the same program's iterative build-up toward what the base corpus fixes as the τ_c>0
+  persistence axiom / mass-as-readout-of-τ_c (kc-base-028); vocabulary and claims here are provisional working
+  drafts later folded into and re-derived under that axiom.
+glosa_use: skip
+glosa_target: n/a — superseded within its own program before reaching base corpus
+notes: Part of the single-author 'ph' hub iterative physics-theory series (Zenodo id 18113633, 2026-01-01);
+  method-layer extraction only (self-publication + no-peer-review posture), not the physics content itself.

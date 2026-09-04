@@ -1,0 +1,24 @@
+id: kc-ai-023
+kind: tool
+title: SANA runtime — bounded, faith-safe, non-clinical crisis companion
+text: Specifies SANA, a Family-Field Safety Companion combining a cross-faith emotional field model with telegraph-type
+  dynamics, predictive-coding corrections, and a Lyapunov stability framework; all mathematics stays internal, human-facing
+  output follows a gentle short-first style, and the system is explicitly declared not a medical, psychiatric, or
+  legal service.
+verbatim: All mathematics remains internal. Human-facing responses follow SANA's gentle, non-judgmental short-first
+  style. SANA is not a medical, psychiatric, or legal service.
+source:
+  path: registry/zenodo_all_records.json
+  title: 'SANA: A Family–Field Lagrangian and Crisis-Safe AI Runtime'
+  year: 2026
+fetched_from_url: https://zenodo.org/api/records/17825408
+locator: record 17825408, metadata.description
+tier: Dr
+base_relation: open
+base_justification: The internal Lagrangian/field-model claims are not independently checked against the base machine-checked
+  chain (kc-base-010/011); scope boundary (not medical/psychiatric/legal) is a definition-tier disclosure worth
+  keeping, the underlying dynamics claim is Open relative to the base's Th_coqc standard.
+glosa_use: skip
+glosa_target: n/a — outside this hub's epistemic-method scope; the boundary disclosure is the only reusable piece
+notes: Its method layer is a domain-specific stability model rather than a general epistemic-method contribution;
+  kept for the explicit non-clinical-scope disclosure pattern only.

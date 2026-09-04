@@ -1,0 +1,27 @@
+id: kc-islam-006
+kind: method
+title: Every doctrine states the conditions under which it would be defeated
+text: A constructive-theology manuscript states, for each of its five main doctrinal claims, the explicit
+  conditions that would count as defeating it — a falsifiability-style discipline applied in a normative/
+  theological register rather than an empirical one. The manuscript also explicitly declares it supersedes
+  material first circulated in four unpublished preprints by the same author, naming which sections are new.
+verbatim: "The maḥall thesis holds that a formally valid judgment may be structurally precluded from bearing
+  wisdom (ḥikma) when what the case entrusted has not been carried, and is tested against three cases... For
+  every doctrine, the article states the conditions under which it would be defeated."
+source:
+  doi: 10.5281/zenodo.21439275
+  title: "The Architecture of Faqr: Dependence, Trust, and the Appearance of Wisdom — A Unified Constructive
+    Framework in Islamic Theology, Epistemology, and Legal Philosophy"
+  year: 2026
+fetched_from_url: local file ~/Downloads/The_Architecture_of_Faqr_v4.pdf (matched by title and abstract text
+  against Zenodo record 21439275)
+locator: Abstract, p.1
+tier: Open
+base_relation: holds
+base_justification: "A normative-register analogue of the base's falsifiable claims table (kc-base-039, C1-C7
+  — one row = claim + check + expected result) — the same discipline (name the condition that would prove you
+  wrong) applied to doctrinal rather than physical claims."
+glosa_use: adopt
+glosa_target: FOUNDATION §3.2 claim-card field list — supports citing this pattern for a "defeat condition"
+  field on non-empirical (conceptual/normative) claim cards.
+notes: —

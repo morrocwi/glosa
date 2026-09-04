@@ -1,0 +1,26 @@
+id: kc-ai-021
+kind: tool
+title: CMG-F — diagnostic, non-optimizing structural graph fingerprinting
+text: 'Specifies an AI-implementable, domain-agnostic pipeline (CMG-F) for structural graph analysis under finite-response
+  constraints: canonical inputs, deterministic construction, structural fingerprints (inverse participation ratio,
+  spectral gaps, localization indices), boundary-aware evaluation. Explicitly diagnostic, not optimizing — it does
+  not train models or tune parameters against targets.'
+verbatim: 'The framework is diagnostic rather than optimizing: it does not train models, tune parameters against
+  targets, or claim predictive validity beyond structural constraints. Instead, CMG-F provides a reproducible protocol
+  for computing graph fingerprints... and evaluating ensemble performance under quantile-based boundary criteria.'
+source:
+  path: registry/zenodo_all_records.json
+  title: Causal Memory Graph Framework — An AI-Implementable Specification for Boundary-Aware Structural Graph Analysis
+  year: 2026
+fetched_from_url: https://zenodo.org/api/records/18372525
+locator: record 18372525, metadata.description (Abstract)
+tier: definition
+base_relation: holds
+base_justification: Uses the graph-Laplacian/spectral-fingerprint vocabulary the base corpus grounds in kc-base-011/012
+  (L_R := D_W - W, forced by δ_R's own meaning); an applied diagnostic tool on top of, not a revision of, that base
+  result.
+glosa_use: adapt
+glosa_target: tooling reference — diagnostic-not-optimizing pattern for any AI graph-analysis component in ANSE.ASIA
+  repos
+notes: Deterministic JSON interface spec makes this directly implementable; worth flagging to any repo doing graph-based
+  diagnosis.

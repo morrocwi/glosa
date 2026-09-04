@@ -1,0 +1,23 @@
+id: kc-he-012
+kind: definition
+title: High Capability, Low Execution — execution failure reframed as finite causal capacity, not motivation deficit
+text: The paper rejects motivation/personality/isolated-neurochemical explanations for capable people failing
+  to complete extended tasks and reframes execution as a load-capacity causal system with a derived
+  Lyapunov-based admissibility condition for persistence, extended to an operational specification letting AI
+  systems reason about execution failure without anthropomorphic assumptions.
+verbatim: "We propose that execution failure is not a deficit of intelligence, willpower, or desire, but a
+  necessary consequence of finite causal capacity for state maintenance."
+source:
+  doi: 10.5281/zenodo.18264276
+  title: "High Capability, Low Execution: A Causal Life Architecture of Finite State Maintenance Integrating Psychology, Neuroscience, Endocrinology, Stability Theory, and Artificial Agents"
+  year: 2026
+fetched_from_url: https://zenodo.org/api/records/18264276
+locator: abstract (Zenodo record metadata.description)
+tier: Open
+base_relation: holds
+base_justification: The finite-causal-capacity framing (a bounded system, not an infinite-willpower agent) is
+  consistent with the base's finite-bounded-knower stance, applied to a psychological rather than epistemic
+  quantity — no conflict.
+glosa_use: skip
+glosa_target: "n/a — domain psychology content, not a methodology rule for glosa's own kernel"
+notes: Domain-content card kept for one-per-record coverage.

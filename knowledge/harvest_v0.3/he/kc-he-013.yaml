@@ -1,0 +1,25 @@
+id: kc-he-013
+kind: rule
+title: Cellular Aging paper — falsifiable constraints derived without pathway-specific or clinical claims
+text: The paper builds a constraints-first architecture treating cellular aging as accumulation of irreversible
+  records under finite causal memory, explicitly stating it does NOT propose molecular pathways or therapeutic
+  mechanisms, and derives falsifiable constraints on cellular time-series data while withholding pathway-level
+  or clinical claims the underlying constraints do not license.
+verbatim: "Rather than proposing molecular pathways or therapeutic mechanisms, the work makes explicit a set of
+  admissibility conditions already implicit in successful cellular models. [...] The framework yields
+  falsifiable constraints on cellular time-series data without pathway-specific or clinical claims."
+source:
+  doi: 10.5281/zenodo.18212478
+  title: "Cellular Aging as Irreversible Record Accumulation under Finite Causal Memory"
+  year: 2026
+fetched_from_url: https://zenodo.org/api/records/18212478
+locator: abstract (Zenodo record metadata.description)
+tier: Open
+base_relation: holds
+base_justification: A clean instance of scope discipline — deriving only what the constraints actually license
+  and refusing to smuggle in an unlicensed pathway/clinical claim, matching the base's non-claims discipline
+  (kc-base-025-style "what the system does NOT claim").
+glosa_use: adopt
+glosa_target: "FOUNDATION §5 disclaimer catalogue"
+notes: Good phrasing template for a glosa disclaimer entry — "derives X constraints without claiming Y" as a
+  reusable clause shape.

@@ -1,0 +1,32 @@
+id: kc-se-012
+kind: method
+title: Simulation-battery evidence for social-enterprise survival — finite runs, stated consistency with empirical rates
+text: A dynamical-systems paper (TTD v3) models social-enterprise survival under realistic ~10% margins,
+  reporting a lifecycle survival rate from 60 simulations over 120 steps, stating the survivor cash median
+  and noting the result is "consistent with" (not validated against) empirical startup survival rates; it
+  also reports a stress-test degradation under ±30% quarterly shocks. The evidence offered is explicitly a
+  bounded simulation battery, not a claim about real enterprises drawn as a population sample.
+verbatim: "We present Translated Trust Dynamics v3 (TTD v3), a minimal dynamical-systems framework for
+  social enterprise (SE) survival under capitalist market conditions with realistic margins (∼10%). ...
+  Under these realistic conditions, lifecycle survival from seed stage is 45% (60 simulations, 120 steps),
+  with survivors reaching median cash 3.9M—consistent with empirical startup survival rates. All deaths
+  occur at t ≤ 19 (early-stage mortality). Under ±30% quarterly shocks, survival degrades gracefully to"
+source:
+  doi: 10.5281/zenodo.18506938
+  title: "Social Enterprise Survival Under Realistic Margins via Lead Multiplier, Growth Cost, and Action Lag"
+  year: 2025
+fetched_from_url: https://zenodo.org/api/records/18506938
+locator: abstract (Zenodo record metadata.description, truncated mid-sentence at API description limit)
+tier: finite_diagnostic
+base_relation: refined_by_later_work
+base_justification: MOCA's own text (kc-se-003/004/005) names TTD as one of its four preceding
+  constructions ("TTD separates operational from symbolic trust and models survival under margins, action
+  lag, hazard, and growth cost (Lahtee, 2026b)") and folds it into MOCA's explicit five-tier claim ladder
+  — TTD's simulation-battery result is a finite_diagnostic input later given an explicit tier label by
+  the corpus's own subsequent paper, not contradicted or dropped.
+glosa_use: adapt
+glosa_target: "FOUNDATION §3 claim card — finite_diagnostic tier worked example (simulation battery, stated
+  run-count, explicit stress-test degradation, no population claim)"
+notes: The abstract text is cut off mid-sentence at the API's description-length limit ("degrades
+  gracefully to..."); the continuation (numeric shock-survival value) is not available from this source
+  and is not asserted here.

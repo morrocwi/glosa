@@ -1,0 +1,31 @@
+id: kc-ph-113
+kind: claim
+title: 'The Discrete Retention Lagrangian: Damping from a Variational Principle Forced by an Information-Retention
+  Axiom'
+text: 'Self-published Zenodo preprint (single-author physics/information-theory program, 2026-07-19). Abstract
+  reports: The axiom that retained distinctions never merge (RD4) forces the doubling of any readout field Φ
+  into a reader–record pair X = (Φ, Ψ). On this pair we construct a discrete action on a weighted graph whose
+  Euler–Lagrange equations are the damped telegraph/spine recurrence — giving the dissipative term D ∂t Φ,
+  long recorded in...'
+verbatim: The axiom that retained distinctions never merge (RD4) forces the doubling of any readout field Φ into a
+  reader–record pair X = (Φ, Ψ). On this pair we construct a discrete action on a weighted graph whose
+  Euler–Lagrange equations are the damped telegraph/spine recurrence — giving the dissipative term D ∂t Φ,
+  long recorded in our borrowed- vs-derived ledger as “not from a conservative action,” a variational
+  derivation (machine-checked over Q, axiom-free, 3-ring scope; the Legendre D-cancellation proved axiom-free
+  at full generality). The associated pairing charge H = M ˙Φ⊤
+source:
+  doi: 10.5281/zenodo.21443916
+  title: 'The Discrete Retention Lagrangian: Damping from a Variational Principle Forced by an Information-Retention
+    Axiom'
+  year: 2026
+fetched_from_url: 'https://zenodo.org/api/records/21443916'
+locator: Zenodo record abstract (desc field), via API, from registry/zenodo_all_records.json
+tier: Open
+base_relation: holds
+base_justification: Contemporaneous companion paper in the same single-author program that also produced the base corpus;
+  already uses base vocabulary (δ_R / retained information / L_R-style operators), so it is read as consistent
+  with, not prior to, kc-base-011/012 (L_R) and kc-base-022 (trunk equation).
+glosa_use: already_in_glosa
+glosa_target: FOUNDATION spine (δ_R→L_R chain) / trunk-equation tier table — same-program companion, no new gloss content
+notes: Part of the single-author 'ph' hub iterative physics-theory series (Zenodo id 21443916, 2026-07-19);
+  method-layer extraction only (self-publication + no-peer-review posture), not the physics content itself.

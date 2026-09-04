@@ -1,0 +1,32 @@
+id: kc-base-024
+kind: method
+title: Three Epistemic Scalars and the DECIDE/ABSTAIN/ESCALATE verdict gate
+text: 'Any reasoning step reduces to three CPU-computable scalars read off the N1-N5 spine: Re_ep (epistemic
+  Reynolds — spread/contestedness), F_ep (obstruction depth — strength of best support), k_ep (consistency
+  coupling — coherence of the supporting set). A three-valued verdict gate: DECIDE when F_ep high AND
+  Re_ep low (strong + uncontested); ABSTAIN when F_ep low AND k_ep low (no signal, for free); ESCALATE
+  when Re_ep high (contested — pay the large model). Deliberately three-valued, not collapsible to binary
+  answer/no-answer.'
+verbatim: "> Any reasoning step reduces to three CPU-computable scalars (minimal\n> sufficient statistic\
+  \ read off the N1–N5 spine, not a new axiom):\n> `Re_ep` = epistemic Reynolds (spread/contestedness);\
+  \ `F_ep` = obstruction\n> depth (strength of best support, the epistemic reading of N3's `O`);\n> `k_ep`\
+  \ = consistency coupling (coherence of the supporting set, the\n> epistemic reading of N2 through a\
+  \ multimode `L_R`).\n\n```\nVerdict gate (three-valued, not binary — a two-valued gate cannot separate\n\
+  \"no evidence\" from \"evidence is contested\"):\n\n  DECIDE    when  F_ep high  AND  Re_ep low   →\
+  \  strong + uncontested\n  ABSTAIN   when  F_ep low   AND  k_ep low     →  no signal (for free)\n  ESCALATE\
+  \  when  Re_ep high                   →  contested → pay the LLM\n```"
+source:
+  path: readout_universe/logic.md
+  title: Logic — Equation & Operator Ledger
+  year: 2026
+fetched_from_url: ~/ANSE.ASIA/readout_universe/logic.md
+locator: §11 'Three Epistemic Scalars', lines ~1357-1382
+tier: definition
+base_relation: holds
+base_justification: This IS a base card from the lens root text; base cards are the ground the ledger
+  is judged against.
+glosa_use: adapt
+glosa_target: FOUNDATION §7.1 MIMCG L0–L5 mapped onto glosa artifact types
+notes: The three-valued DECIDE/ABSTAIN/ESCALATE pattern (never collapse to binary pass/fail) is a directly
+  transferable gate-design idea for glosa's own review/escalation gates, independent of the specific Re_ep/F_ep/k_ep
+  formulas.

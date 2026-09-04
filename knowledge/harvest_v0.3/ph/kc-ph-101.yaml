@@ -1,0 +1,29 @@
+id: kc-ph-101
+kind: method
+title: 'Telegraph-on-Graph Bottleneck Stress Test : Causal Physic Note'
+text: 'Self-published Zenodo preprint (single-author physics/information-theory program, 2026-01-23). Abstract
+  reports: When System Memory Meets a Bottleneck: Why the Most Dangerous Stress Can Be Invisible . We often
+  describe the spread of information, signals, or even epidemics using a familiar picture: diffusion, like a
+  drop of ink slowly dissolving into water. In this view, obstacles or narrow passages merely slow the flow,
+  but the process remains...'
+verbatim: 'When System Memory Meets a Bottleneck: Why the Most Dangerous Stress Can Be Invisible . We often describe
+  the spread of information, signals, or even epidemics using a familiar picture: diffusion, like a drop of
+  ink slowly dissolving into water. In this view, obstacles or narrow passages merely slow the flow, but the
+  process remains smooth, gradual, and predictable. This intuition is deeply embedded in many physical and
+  social models. . Recent simulations under the Telegraph-on-Graph Bottleneck Stress Test (ToG-BST) reveal a
+  very different reality once the system has memory,'
+source:
+  doi: 10.5281/zenodo.18345135
+  title: 'Telegraph-on-Graph Bottleneck Stress Test : Causal Physic Note'
+  year: 2026
+fetched_from_url: 'https://zenodo.org/api/records/18345135'
+locator: Zenodo record abstract (desc field), via API, from registry/zenodo_all_records.json
+tier: Open
+base_relation: refined_by_later_work
+base_justification: Precursor step in the same program's iterative build-up toward what the base corpus fixes as the τ_c>0
+  persistence axiom / mass-as-readout-of-τ_c (kc-base-028); vocabulary and claims here are provisional working
+  drafts later folded into and re-derived under that axiom.
+glosa_use: skip
+glosa_target: n/a — superseded within its own program before reaching base corpus
+notes: Part of the single-author 'ph' hub iterative physics-theory series (Zenodo id 18345135, 2026-01-23);
+  method-layer extraction only (self-publication + no-peer-review posture), not the physics content itself.

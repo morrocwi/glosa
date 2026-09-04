@@ -1,0 +1,28 @@
+id: kc-ph-066
+kind: claim
+title: Mass as a Structural Necessity of Finite-Speed Causal Transport
+text: 'Self-published Zenodo preprint (single-author physics/information-theory program, 2025-12-08). Abstract
+  reports: Mass as a Structural Necessity of Finite-Speed Causal Transport This work argues that mass is not
+  an arbitrary input but a structural consequence of finite-speed, causal, and stable transport dynamics.
+  Under these constraints, the only admissible evolution law is the telegraph form, which maps into a
+  Klein–Gordon field with a strictly positive mass gap—without inserting...'
+verbatim: 'Mass as a Structural Necessity of Finite-Speed Causal Transport This work argues that mass is not an
+  arbitrary input but a structural consequence of finite-speed, causal, and stable transport dynamics. Under
+  these constraints, the only admissible evolution law is the telegraph form, which maps into a Klein–Gordon
+  field with a strictly positive mass gap—without inserting a mass by hand. The light-cone (causality) is
+  preserved under minimal gauge coupling, and one-loop on-shell renormalization retains both the cone and the
+  positive gap. In short: mass appears because causality and stability leave nature'
+source:
+  doi: 10.5281/zenodo.17855403
+  title: Mass as a Structural Necessity of Finite-Speed Causal Transport
+  year: 2025
+fetched_from_url: 'https://zenodo.org/api/records/17855403'
+locator: Zenodo record abstract (desc field), via API, from registry/zenodo_all_records.json
+tier: Open
+base_relation: open
+base_justification: Domain physics content (a specific claim/derivation/observational note) not directly addressed by any base
+  card; carries no base-card contradiction but also no base endorsement — left open.
+glosa_use: skip
+glosa_target: n/a — domain physics claim outside glosa's method-layer scope
+notes: Part of the single-author 'ph' hub iterative physics-theory series (Zenodo id 17855403, 2025-12-08);
+  method-layer extraction only (self-publication + no-peer-review posture), not the physics content itself.

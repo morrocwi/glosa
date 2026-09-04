@@ -1,0 +1,24 @@
+id: kc-base-022
+kind: definition
+title: The trunk equation (EQ-015)
+text: 'M ∂²Φ + D ∂Φ + K·L_R Φ + ∇V(Φ) = J − η, with mixed per-term tier: M∂²Φ is Dr (M is posited, not
+  derived — 8 forcing attempts failed); D∂Φ is finite_diagnostic; K·L_RΦ is Th_coqc for the admissibility/eigenmode
+  structure, Open for the full multimode extension; ∇V(Φ) is finite_diagnostic (audit only, this is where
+  turbulence actually lives, not in the M term); J is Dr (boundary data, always supplied externally);
+  η is finite_diagnostic where measured, Open in general — the slot that must never quietly become the
+  term nobody checks.'
+verbatim: '**M ∂²Φ + D ∂Φ + K·L_R Φ + ∇V(Φ) = J − η**  (EQ-015)'
+source:
+  path: readout_universe/logic.md
+  title: Logic — Equation & Operator Ledger
+  year: 2026
+fetched_from_url: ~/ANSE.ASIA/readout_universe/logic.md
+locator: §1 'The trunk equation', line ~292
+tier: Dr
+base_relation: holds
+base_justification: This IS a base card from the lens root text; base cards are the ground the ledger
+  is judged against.
+glosa_use: skip
+glosa_target: FOUNDATION §1.0 Pillars
+notes: Deep physics-lens spine equation; recorded for lineage/citation completeness. See kc-base-034 for
+  the fuller per-term tier table (from genesis CORE II.6) which is the more citable honest-audit artifact.

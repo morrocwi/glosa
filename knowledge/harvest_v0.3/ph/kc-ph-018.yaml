@@ -1,0 +1,30 @@
+id: kc-ph-018
+kind: claim
+title: 'Alpha-Closure: Scale-Invariant Coherence with Constant Coherence Time'
+text: 'Self-published Zenodo preprint (single-author physics/information-theory program, 2025-10-28). Abstract
+  reports: This work establishes a phenomenological closure of the fine-structure constant (𝛼) using a
+  universal constant coherence time 𝑇⋆coh. Two scale-invariant quantities, Λ𝐸/𝑅 (energy-distance invariant)
+  and Λ𝐸⋅𝑅 (energy-wavelength invariant), define 𝐺,ℎ, and 𝛼 through dimensionally consistent relations. All
+  predictions are testableidentities with falsification criteria (Δ > 1%) and reproducible numerical
+  paths(Appendices C, D, E, F). The...'
+verbatim: This work establishes a phenomenological closure of the fine-structure constant (𝛼) using a universal
+  constant coherence time 𝑇⋆coh. Two scale-invariant quantities, Λ𝐸/𝑅 (energy-distance invariant) and Λ𝐸⋅𝑅
+  (energy-wavelength invariant), define 𝐺,ℎ, and 𝛼 through dimensionally consistent relations. All predictions
+  are testableidentities with falsification criteria (Δ > 1%) and reproducible numerical paths(Appendices C,
+  D, E, F). The model reproduces 𝛼obs exactly, yields no measurable drift, and suggests that macroscopic
+  regularities (e.g., rotation curves, lensing) may emerge without additional dark-sector parameters.
+  Open-science practices include seed=42, SHA256 checksums, YAML manifests, and AI-assisted unit audits.1
+source:
+  doi: 10.5281/zenodo.17463932
+  title: 'Alpha-Closure: Scale-Invariant Coherence with Constant Coherence Time'
+  year: 2025
+fetched_from_url: 'https://zenodo.org/api/records/17463932'
+locator: Zenodo record abstract (desc field), via API, from registry/zenodo_all_records.json
+tier: Open
+base_relation: open
+base_justification: Domain physics content (a specific claim/derivation/observational note) not directly addressed by any base
+  card; carries no base-card contradiction but also no base endorsement — left open.
+glosa_use: skip
+glosa_target: n/a — domain physics claim outside glosa's method-layer scope
+notes: Part of the single-author 'ph' hub iterative physics-theory series (Zenodo id 17463932, 2025-10-28);
+  method-layer extraction only (self-publication + no-peer-review posture), not the physics content itself.

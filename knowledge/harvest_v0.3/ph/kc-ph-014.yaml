@@ -1,0 +1,29 @@
+id: kc-ph-014
+kind: claim
+title: 'Geometric Resolution to the Hierarchy Problem: The Scale‑Locked Identity'
+text: 'Self-published Zenodo preprint (single-author physics/information-theory program, 2025-10-25). Abstract
+  reports: The Hierarchy Problem—the \~ gap between the Planck scale and the electroweak scale — is reframed
+  as a stable geometric identity rather than an unstable fine‑tuning. Within the Uα‑Master v2.0 framework we
+  separate a universal geometric constant α_YC ≈ 0.978 (enforcing log‑linear Scale‑Lock) from
+  interaction‑specific couplings (e.g., α ≈ 1/137). Confronting the common “ ”...'
+verbatim: 'The Hierarchy Problem—the \~ gap between the Planck scale and the electroweak scale — is reframed as a
+  stable geometric identity rather than an unstable fine‑tuning. Within the Uα‑Master v2.0 framework we
+  separate a universal geometric constant α_YC ≈ 0.978 (enforcing log‑linear Scale‑Lock) from
+  interaction‑specific couplings (e.g., α ≈ 1/137). Confronting the common “ ” heuristic with the physical
+  target set by resolves the apparent discrepancy: the model’s required ratio equals the measured energy
+  ratio. The hierarchy thereby condenses into the Scale‑Locked Identity . We complement this with the
+  Bridging'
+source:
+  doi: 10.5281/zenodo.17442210
+  title: 'Geometric Resolution to the Hierarchy Problem: The Scale‑Locked Identity'
+  year: 2025
+fetched_from_url: 'https://zenodo.org/api/records/17442210'
+locator: Zenodo record abstract (desc field), via API, from registry/zenodo_all_records.json
+tier: Open
+base_relation: open
+base_justification: Domain physics content (a specific claim/derivation/observational note) not directly addressed by any base
+  card; carries no base-card contradiction but also no base endorsement — left open.
+glosa_use: skip
+glosa_target: n/a — domain physics claim outside glosa's method-layer scope
+notes: Part of the single-author 'ph' hub iterative physics-theory series (Zenodo id 17442210, 2025-10-25);
+  method-layer extraction only (self-publication + no-peer-review posture), not the physics content itself.

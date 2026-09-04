@@ -1,0 +1,24 @@
+id: kc-aihp-002
+kind: claim
+title: 'Reflexive finding: glosa''s own evidence is independence class I0, hence K0 not K1'
+text: Applying the method to itself, the paper finds every evidence relation behind its own ten claim
+  cards is I0 (same-session self-read), so the paper's own knowledge state is K0, not K1, by its own rule
+  — reported as a structural finding rather than an embarrassing exception.
+verbatim: 'Its single most important limitation is structural, not incidental: every evidence relation
+  behind its own ten claims is independence class I0 (same-session self-read), so its own knowledge state
+  is K0 by its own rule, not K1 — a reflexive finding, not an exception.'
+source:
+  doi: 10.5281/zenodo.22307843
+  title: 'glosa — Rigour Without Infrastructure: A Standalone Scholar Methodology for Human–AI Knowledge
+    Co-Production'
+  year: 2026
+fetched_from_url: local:dist/glosa-paper-0.1.0-en.pdf
+locator: p.1, Abstract
+tier: finite_diagnostic
+base_relation: holds
+base_justification: 'Directly matches kc-base-025 (what this system explicitly does NOT claim) and kc-base-035
+  (Bounded-Judge Law: no independent check ⇒ no upgrade) — the same discipline the base applies to its
+  own theorem status.'
+glosa_use: already_in_glosa
+glosa_target: FOUNDATION §7 independence ladder — I0..I5 classes
+notes: ''

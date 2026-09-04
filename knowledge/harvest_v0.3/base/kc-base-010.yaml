@@ -1,0 +1,39 @@
+id: kc-base-010
+kind: rule
+title: RD1–RD9 — the arithmetic genome
+text: 'Nine axioms generating, in strict order: existence (0 exists), generation (every state can step),
+  direction (a step never returns to null), retention/memory (distinct histories never merge — RD4), induction,
+  composition ⊕, layering ⊗. Machine-checked consequences (well-ordering, strong induction, second-order
+  categoricity) are Th_coqc over ~183 and ~678 Theorem/Lemma declarations.'
+verbatim: '| RD1 | `0 : 𝔇` (the empty retention exists) | `Ax` | `v2/INFORMATION_DNA.md` |
+
+  | RD2 | `x:𝔇 ⇒ σx:𝔇` (every state can take one more step) | `Ax` | same |
+
+  | RD3 | `σx ≠ 0` (a step never erases back to nothing) | `Ax` | same |
+
+  | RD4 | `σx = σy ⇒ x = y` (retention = injectivity: distinct histories stay distinct) | `Ax` | same
+  |
+
+  | RD5 | `[φ(0) ∧ ∀x(φ(x)→φ(σx))] ⇒ ∀x φ(x)` (induction) | `Ax` | same |
+
+  | RD6 | `x ⊕ 0 = x` (concat base) | `Ax` | same |
+
+  | RD7 | `x ⊕ σy = σ(x ⊕ y)` (concat step) | `Ax` | same |
+
+  | RD8 | `x ⊗ 0 = 0` (layer base) | `Ax` | same |
+
+  | RD9 | `x ⊗ σy = (x ⊗ y) ⊕ x` (layer step) | `Ax` | same |'
+source:
+  path: readout_universe/logic.md
+  title: Logic — Equation & Operator Ledger (Readout Universe v2.0-dev)
+  year: 2026
+fetched_from_url: ~/ANSE.ASIA/readout_universe/logic.md
+locator: §0 'RD1–RD9 — the arithmetic genome', lines ~139-151
+tier: Ax
+base_relation: holds
+base_justification: This IS a base card from the lens root text; base cards are the ground the ledger
+  is judged against.
+glosa_use: skip
+glosa_target: FOUNDATION §1.0 Pillars
+notes: Deep formal machinery from a sibling repo (RD.v/URCF_RD_All.v); glosa's own FOUNDATION does not
+  need to re-derive arithmetic — recorded for completeness/citation only, not for direct reuse.

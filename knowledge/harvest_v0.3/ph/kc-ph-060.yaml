@@ -1,0 +1,31 @@
+id: kc-ph-060
+kind: method
+title: Cosmological and Quantum Constraints on Scalar-Modulated Gauge Couplings from an Informational Field
+  Framework
+text: 'Self-published Zenodo preprint (single-author physics/information-theory program, 2025-11-25). Abstract
+  reports: The foundational models we use to understand the universe—such as the ΛCDM model in cosmology and
+  the Standard Model in particle physics—have been remarkably successful in explaining phenomena across an
+  enormous range of scales, from the tiniest particles to the largest cosmic structures. Yet, some of the most
+  fundamental questions remain unanswered: Why do nature’s...'
+verbatim: 'The foundational models we use to understand the universe—such as the ΛCDM model in cosmology and the
+  Standard Model in particle physics—have been remarkably successful in explaining phenomena across an
+  enormous range of scales, from the tiniest particles to the largest cosmic structures. Yet, some of the most
+  fundamental questions remain unanswered: Why do nature’s constants take the values they do? What is the
+  force driving the accelerated expansion of the universe? And more profoundly—could all these seemingly
+  unrelated phenomena be linked by a single underlying mechanism? One emerging idea'
+source:
+  doi: 10.5281/zenodo.17715539
+  title: Cosmological and Quantum Constraints on Scalar-Modulated Gauge Couplings from an Informational Field
+    Framework
+  year: 2025
+fetched_from_url: 'https://zenodo.org/api/records/17715539'
+locator: Zenodo record abstract (desc field), via API, from registry/zenodo_all_records.json
+tier: Open
+base_relation: superseded
+base_justification: Uses an earlier, since-abandoned working name/formalism (this program cycled through several framework names
+  before settling on retained-information/δ_R vocabulary); the base corpus's mother equation (kc-base-020) and
+  trunk equation (kc-base-022) replace this formulation.
+glosa_use: skip
+glosa_target: n/a — abandoned vocabulary, replaced by base mother/trunk equation
+notes: Part of the single-author 'ph' hub iterative physics-theory series (Zenodo id 17715539, 2025-11-25);
+  method-layer extraction only (self-publication + no-peer-review posture), not the physics content itself.

@@ -1,0 +1,26 @@
+id: kc-ep-013
+kind: claim
+title: Knowledge as stabilization of representation under admissible variation
+text: 'Reframes Gettier non-convergence as a mislocated explanandum: proposition-level theories evaluate
+  completed beliefs and omit formation-path fragility; proposes knowledge as stabilization of representation
+  under admissible variation, with epistemic luck reconstructed as representational instability, applied
+  to fake-barn/stopped-clock/Smith-Jones cases.'
+verbatim: Since Gettier, epistemologists have repeatedly attempted to repair the justifiedtrue-belief
+  model by adding further conditions designed to exclude accidental truth. Yet the most striking feature
+  of post-Gettier epistemology is not the ingenuity of these repairs but their failure to converge. This
+  paper argues that the persistent non-convergence of post-Gettier analyses is best explained by a mislocation
+  of the explanandum.
+source:
+  doi: 10.5281/zenodo.18907015
+  title: Gettier, Instability, and the Structural Condition on Knowledge
+  year: 2026
+fetched_from_url: https://zenodo.org/api/records/18907015
+locator: Zenodo record abstract (desc field), via API
+tier: Open
+base_relation: holds
+base_justification: 'Resonates with base''s truth-as-tracking reframing (kc-base-005: V stays low under
+  evidence) — both replace a static correspondence/possession notion with a stability-under-perturbation
+  notion.'
+glosa_use: adapt
+glosa_target: FOUNDATION Appendix A — Family A Truth/Warrant
+notes: 2026-03-08.

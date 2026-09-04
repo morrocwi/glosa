@@ -1,0 +1,29 @@
+id: kc-ph-072
+kind: claim
+title: The Causal-Memory Architecture of the Universe
+text: 'Self-published Zenodo preprint (single-author physics/information-theory program, 2025-12-11). Abstract
+  reports: The universe exhibits characteristic relaxation scales in seemingly unrelated regimes: particle
+  masses, black-hole quasi-normal modes, and cosmological expansion. We show these are all controlled by a
+  single timescale: the causal-memory time τc. We derive τc from first principles using finite capacity and
+  finitespeed causality, leading to a unique single-pole kernel and thus the telegraph equation...'
+verbatim: 'The universe exhibits characteristic relaxation scales in seemingly unrelated regimes: particle masses,
+  black-hole quasi-normal modes, and cosmological expansion. We show these are all controlled by a single
+  timescale: the causal-memory time τc. We derive τc from first principles using finite capacity and
+  finitespeed causality, leading to a unique single-pole kernel and thus the telegraph equation as the
+  universal IR law. A dephasing map transforms telegraph dynamics into a Klein–Gordon equation, fixing the
+  emergent mass term. This establishes mass not as a primitive parameter but as the encoded causal delay of'
+source:
+  doi: 10.5281/zenodo.17901698
+  title: The Causal-Memory Architecture of the Universe
+  year: 2025
+fetched_from_url: 'https://zenodo.org/api/records/17901698'
+locator: Zenodo record abstract (desc field), via API, from registry/zenodo_all_records.json
+tier: Open
+base_relation: refined_by_later_work
+base_justification: Precursor step in the same program's iterative build-up toward what the base corpus fixes as the τ_c>0
+  persistence axiom / mass-as-readout-of-τ_c (kc-base-028); vocabulary and claims here are provisional working
+  drafts later folded into and re-derived under that axiom.
+glosa_use: skip
+glosa_target: n/a — superseded within its own program before reaching base corpus
+notes: Part of the single-author 'ph' hub iterative physics-theory series (Zenodo id 17901698, 2025-12-11);
+  method-layer extraction only (self-publication + no-peer-review posture), not the physics content itself.

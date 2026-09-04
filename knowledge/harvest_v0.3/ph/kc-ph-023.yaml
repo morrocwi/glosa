@@ -1,0 +1,30 @@
+id: kc-ph-023
+kind: claim
+title: 'EoE (K = 32): One-Document Core (H0–H9)'
+text: 'Self-published Zenodo preprint (single-author physics/information-theory program, 2025-10-29). Abstract
+  reports: This document provides a self-contained proof of hypotheses H0--H4 in the $K=32$
+  Equation-of-Everything (EoE) framework, establishes falsifiable criteria for H5--H9 (cross-domain
+  universality, lock-threshold propagation, bridge-pair ratios, Lyapunov stability, and
+  calibrate-once/validate-elsewhere), and includes ready-to-fill reporting templates. Numerical anchors use
+  the CODATA-2022 fine-structure constant. The proofs and criteria are independent of prior series materials,
+  listed as related...'
+verbatim: This document provides a self-contained proof of hypotheses H0--H4 in the $K=32$ Equation-of-Everything
+  (EoE) framework, establishes falsifiable criteria for H5--H9 (cross-domain universality, lock-threshold
+  propagation, bridge-pair ratios, Lyapunov stability, and calibrate-once/validate-elsewhere), and includes
+  ready-to-fill reporting templates. Numerical anchors use the CODATA-2022 fine-structure constant. The proofs
+  and criteria are independent of prior series materials, listed as related work for context only.
+source:
+  doi: 10.5281/zenodo.17475434
+  title: 'EoE (K = 32): One-Document Core (H0–H9)'
+  year: 2025
+fetched_from_url: 'https://zenodo.org/api/records/17475434'
+locator: Zenodo record abstract (desc field), via API, from registry/zenodo_all_records.json
+tier: Open
+base_relation: superseded
+base_justification: Uses an earlier, since-abandoned working name/formalism (this program cycled through several framework names
+  before settling on retained-information/δ_R vocabulary); the base corpus's mother equation (kc-base-020) and
+  trunk equation (kc-base-022) replace this formulation.
+glosa_use: skip
+glosa_target: n/a — abandoned vocabulary, replaced by base mother/trunk equation
+notes: Part of the single-author 'ph' hub iterative physics-theory series (Zenodo id 17475434, 2025-10-29);
+  method-layer extraction only (self-publication + no-peer-review posture), not the physics content itself.

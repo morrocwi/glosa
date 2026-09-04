@@ -1,0 +1,46 @@
+id: kc-base-007
+kind: definition
+title: Six-tier discipline (never collapsed)
+text: Every claim in the corpus carries exactly one of six tags — Th_coqc (machine-checked axiom-free),
+  finite_diagnostic (executed numeric run, not proof), Dr (declared-bridge/human narrative), Open (not
+  established, always paired with stance+falsifier), fit_calibrated (fit to data, not derived), definition
+  (declared object/gate) — and the tags must never collapse into each other.
+verbatim: 'Every claim in this corpus must carry one of six tags, and the tags are
+
+  **never allowed to collapse into each other**:
+
+
+  | Tier | Meaning | What it is NOT |
+
+  |---|---|---|
+
+  | `Th_coqc` | machine-checked, axiom-free (Coq, `Print Assumptions` ⇒ Closed) | not "true"; a formal
+  system closing under stated axioms/scope |
+
+  | `finite_diagnostic` | measured / executed numeric run (pytest, assert) | not proof; a single executed
+  instance |
+
+  | `Dr` | declared-bridge / human narrative reading | not established fact; an interpretation with a
+  named bridge |
+
+  | `Open` | not established | never bare — always paired with a stance and a falsifier |
+
+  | `fit_calibrated` | fit to data, not derived (e.g. §1''s mass-ratio geometric-mean fit against measured
+  PDG masses) | not `Th_coqc`; a calibration, not a first-principles derivation |
+
+  | `definition` | declared object/gate — a stipulated/definitional statement, not derived or measured
+  | not `Dr`; a naming/setup move, not a narrative-bridge reading |'
+source:
+  path: readout_universe/philosophy.md
+  title: Philosophy — Readout Universe
+  year: 2026
+fetched_from_url: ~/ANSE.ASIA/readout_universe/philosophy.md
+locator: §2, lines ~152-166
+tier: definition
+base_relation: holds
+base_justification: This IS a base card from the lens root text; base cards are the ground the ledger
+  is judged against.
+glosa_use: already_in_glosa
+glosa_target: FOUNDATION §4.1 Tier ladder (six values, never collapsed)
+notes: glosa's own tier ladder is a sibling/descendant of this exact six-tag table; card exists to make
+  the lineage citable rather than re-derive it.

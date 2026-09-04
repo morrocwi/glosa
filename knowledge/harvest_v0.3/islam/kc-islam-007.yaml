@@ -1,0 +1,25 @@
+id: kc-islam-007
+kind: method
+title: Power-literate satire framework offered as analytical tool, not normative verdict
+text: An anonymized case study of one public incident is used to build a diagnostic framework
+  ("power-literate satire") distinguishing critique of specific conduct by identifiable actors with power from
+  critique that converts a marginalized identity into collective stigma. The author explicitly limits the
+  claim's status — the framework is an analytical tool, not a normative verdict on the case it was built from.
+verbatim: 'The framework is offered as an analytical tool, not a normative verdict.'
+source:
+  doi: 10.5281/zenodo.20159825
+  title: "Marginal Hegemony in Thailand: Satire, the Muslim Minority, and the Politics of Power-Literate
+    Critique"
+  year: 2026
+fetched_from_url: local file ~/Downloads/marginal_hegemony_thailand.pdf (matched by title and abstract text
+  against Zenodo record 20159825)
+locator: Abstract, p.1
+tier: Open
+base_relation: holds
+base_justification: Same discipline as the base's tier ladder (kc-base-007) and "what the system does NOT
+  claim" block (kc-base-025) — a tool/method is kept separate from a verdict about the world, refusing to let
+  an analytical construct silently become a truth-claim about the case it was built on.
+glosa_use: adopt
+glosa_target: FOUNDATION §5 disclaimer catalogue — reusable "analytical tool, not verdict" disclaimer pattern
+  for glosa case analyses.
+notes: —

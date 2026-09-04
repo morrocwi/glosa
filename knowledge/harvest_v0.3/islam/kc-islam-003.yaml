@@ -1,0 +1,29 @@
+id: kc-islam-003
+kind: claim
+title: Functional sacralization of fiqh — human determinations acquiring practical sacred-normativity when institutions make dissent costly
+text: The paper's structured evidence review names a recurrent transregional mechanism, "functional
+  sacralization of fiqh" — human juristic determinations can acquire the practical weight of sacred normativity
+  once religious attribution combines with legal, political, organizational, or communal mechanisms that make
+  dissent costly, deviant, or institutionally inaudible. Documented across several national settings, explicitly
+  not asserted as a universal or identical-belief claim.
+verbatim: '...this article terms functional sacralization of fiqh: human juristic determinations may acquire
+  practical attributes of sacred normativity when religious attribution is combined with legal, political,
+  organizational, or communal mechanisms that make dissent costly, deviant, or institutionally inaudible.'
+source:
+  doi: 10.5281/zenodo.22206607
+  title: "Faqr, Scholarly Authority, and Non-Transferable Responsibility: A Revelation-Bounded Sunni
+    Architecture for Ethical Deliberation, Shūrā, and Epistemic Governance"
+  year: 2026
+fetched_from_url: local file ~/Downloads/Faqr_Authority_Q1_arXiv_TwoColumn_v8.pdf (matched by title and
+  abstract text against Zenodo record 22206607)
+locator: Abstract, p.1
+tier: Open
+base_relation: holds
+base_justification: A concrete domain instance of the base's refusal of vertical/institutional epistemic
+  authority (kc-base-025) — names the exact mechanism by which a human readout can be mistaken for the truth
+  it reads, i.e. a failure mode the base's tier discipline exists to prevent.
+glosa_use: adopt
+glosa_target: FOUNDATION §7 gates & review — a named failure-mode ("dissent made institutionally inaudible")
+  worth citing in the Bounded-Judge Law / independent-review rationale.
+notes: Second card from the same record as kc-islam-002 — the record carries two distinct method-layer
+  claims (a non-collapse architecture, and a named authority-hardening failure mode) worth separate cards.

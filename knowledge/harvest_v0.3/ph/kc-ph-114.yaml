@@ -1,0 +1,31 @@
+id: kc-ph-114
+kind: claim
+title: 'The Mystery Ladder: Compressing the Weakness of Gravity to Three Open Atoms, with an Information Semantics
+  for the Atom '
+text: 'Self-published Zenodo preprint (single-author physics/information-theory program, 2026-07-19). Abstract
+  reports: Applying the philosophy-first discipline of the companion paper [1] (“the lens”) to the question
+  why is gravity weak compresses the 39-digit puzzle stepwise: αG = 1 4 (tP/τc,p)2 (a memory-hierarchy ratio)
+  → e−accumulated update impedance → slopes (b1, b2, b3) → representation counting × three kinematic atoms →
+  one formula, (−1)2s(2s)2 − 1/d. We then...'
+verbatim: 'Applying the philosophy-first discipline of the companion paper [1] (“the lens”) to the question why is
+  gravity weak compresses the 39-digit puzzle stepwise: αG = 1 4 (tP/τc,p)2 (a memory-hierarchy ratio) →
+  e−accumulated update impedance → slopes (b1, b2, b3) → representation counting × three kinematic atoms → one
+  formula, (−1)2s(2s)2 − 1/d. We then translate every operator in that formula — quotient, subtraction,
+  square, parity exponent, product — into the vocabulary of retained information, and state precisely which
+  readings are exact, which are borrowed, and which are open. The'
+source:
+  doi: 10.5281/zenodo.21443942
+  title: 'The Mystery Ladder: Compressing the Weakness of Gravity to Three Open Atoms, with an Information Semantics
+    for the Atom Formula'
+  year: 2026
+fetched_from_url: 'https://zenodo.org/api/records/21443942'
+locator: Zenodo record abstract (desc field), via API, from registry/zenodo_all_records.json
+tier: Open
+base_relation: holds
+base_justification: Contemporaneous companion paper in the same single-author program that also produced the base corpus;
+  already uses base vocabulary (δ_R / retained information / L_R-style operators), so it is read as consistent
+  with, not prior to, kc-base-011/012 (L_R) and kc-base-022 (trunk equation).
+glosa_use: adapt
+glosa_target: FOUNDATION §3 claim card / kc-base-034 term-by-term tier table — worked example of exact/borrowed/open term-by-term tagging on one formula, usable as an illustrative pattern
+notes: Part of the single-author 'ph' hub iterative physics-theory series (Zenodo id 21443942, 2026-07-19);
+  method-layer extraction only (self-publication + no-peer-review posture), not the physics content itself.

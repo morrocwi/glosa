@@ -1,0 +1,23 @@
+id: kc-he-014
+kind: definition
+title: Causal Psychology — apparent psychological failure reframed as environmental impossibility, not individual deficiency
+text: The framework repositions the mind as a predictive, resource-bounded system operating under finite causal
+  access, anatomical constraints, and temporal uncertainty, and explicitly does not propose new diagnoses or
+  therapies — instead asking under what causal conditions a mind can operate at all, so that "failure" can be
+  read as environmental impossibility rather than a deficiency internal to the person.
+verbatim: "Rather than proposing new diagnoses or therapies, the framework repositions the mind as a predictive,
+  resource-bounded system whose apparent failures often reflect environmental impossibility rather than
+  individual deficiency."
+source:
+  doi: 10.5281/zenodo.18175678
+  title: "Causal Psychology: Toward a Constraint-Based Science of Mind"
+  year: 2026
+fetched_from_url: https://zenodo.org/api/records/18175678
+locator: abstract (Zenodo record metadata.description)
+tier: Open
+base_relation: holds
+base_justification: A resource-bounded, finite-access framing of the mind mirrors the base's bounded-knower
+  framing applied to a psychological subject rather than an epistemic one — consistent, not conflicting.
+glosa_use: skip
+glosa_target: "n/a — domain psychology content, not a methodology rule for glosa's own kernel"
+notes: Domain-content card kept for one-per-record coverage.

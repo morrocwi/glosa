@@ -1,0 +1,23 @@
+id: kc-aihp-020
+kind: method
+title: 'Meta-readout governance operator: readout-of-readout composition with finite retention'
+text: A meta-readout governance operator is developed from the current-state readout, readout-of-readout
+  composition, and finite retention — a mechanism for governing how readouts about readouts (e.g. a review
+  of a claim, a review of a review) compose without an infinite regress, staying finite.
+verbatim: Finally, a meta-readout governance operator is developed from current-state readout, readout-of-readout
+  composition, finite retention
+source:
+  doi: 10.5281/zenodo.21529456
+  title: 'Readout Genesis Standalone Synthesis: Information Epistemic Foundation, Conditioned Agency,
+    and Meta-Readout Governance'
+  year: 2026
+fetched_from_url: https://zenodo.org/api/records/21529456
+locator: Abstract, final sentence
+tier: Open
+base_relation: holds
+base_justification: A generalization of kc-base-014 (the one-line chain δ_R→L_R→per-agency readout) to
+  the review-of-review case; consistent extension, not a rival operator (compare kc-base-013's witness-based
+  rejection method for how a rival WOULD be ruled out).
+glosa_use: adapt
+glosa_target: FOUNDATION §7.3 review-of-review / meta-check composition (open item)
+notes: ''

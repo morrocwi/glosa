@@ -1,0 +1,27 @@
+id: kc-islam-001
+kind: rule
+title: Practitioner standpoint paired with cited evidence, no clinical recommendation (islam-hub angle)
+text: "A premarital-education programme-theory paper speaks explicitly as a social-enterprise practitioner
+  standpoint, not a clinician, and pairs every substantive claim with cited medical-science evidence while
+  making no clinical recommendation of its own. Method layer relevant to the islam hub - the standpoint
+  disclaimer keeps a faith-based practitioner's programme theory from silently borrowing clinical authority
+  it has not earned."
+verbatim: 'Standpoint: social-enterprise practitioner (ARAYA Nikah Social Enterprise, Bangkok), not a clinician;
+  the paper pairs every claim with the cited medical-science evidence and makes no clinical recommendation.'
+source:
+  doi: 10.5281/zenodo.22302161
+  title: "Before Family Risk Becomes a Health Crisis: Trustworthy Premarital Health Education (T-PHE) as
+    Primary Prevention Infrastructure — full paper, tier-one evidence dossier, and TIMA/FIMA 2026 abstract"
+  year: 2026
+fetched_from_url: https://zenodo.org/api/records/22302161
+locator: abstract (Zenodo record metadata.description)
+tier: Open
+base_relation: holds
+base_justification: Standpoint-disclaimer discipline matches kc-base-025's refusal to claim outside
+  epistemic authority and kc-base-042's Position-as-control-layer principle.
+glosa_use: already_in_glosa
+glosa_target: FOUNDATION §5 disclaimer catalogue
+notes: Cross-hub duplicate record — the same DOI already has a card in the `he` hub (kc-he-003), extracted
+  there for the health-epistemics angle. Kept here as a thin card for K1-hub-islam completeness since this
+  record is also a member of hubs["islam"].members; no new extraction performed beyond confirming the same
+  standpoint-disclaimer passage.

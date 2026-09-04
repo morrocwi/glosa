@@ -1,0 +1,30 @@
+id: kc-aihp-021
+kind: claim
+title: 'Human LoRA Factorization Thesis: durable experiential change is rank-bounded by a finite readout
+  bottleneck'
+text: 'Developed inside a finite-discrete readout framework (every accessible state a finite retained
+  difference on a finite graph, time indexed by n∈N, rational update matrices, no continuum limit): if
+  an experience-mediated update factors through an active readout space of dimension m inside a d-dimensional
+  operational organization, its update rank is bounded by m. Under m<d, event-level change is low-rank
+  — the Human LoRA Factorization Thesis.'
+verbatim: 'The argument is developed inside a finite-discrete readout framework: every accessible state
+  is a finite retained difference on a finite graph; time is indexed by n ∈ N; formal state and update
+  matrices are rational; and no continuum limit is required. If an experience-mediated update factors
+  through an active readout space of dimension m inside an operational organization of dimension d, then
+  its update rank is bounded by m. Under the finite-bottleneck condition m < d, event-level change is
+  low- rank.'
+source:
+  doi: 10.5281/zenodo.21425420
+  title: 'Experience Is the Human LoRA: A Readout–Retention Theory of Selective Model Change'
+  year: 2026
+fetched_from_url: https://zenodo.org/api/records/21425420
+locator: Abstract
+tier: Th_coqc
+base_relation: holds
+base_justification: 'Explicitly restates the base''s own finite-discrete-readout doctrine (kc-base-032:
+  symbols are finite discrete computable objects, no continuum limit run) as its own stated method, and
+  composes it with kc-base-009 (δ_R retained distinction) and kc-base-011 (L_R) machinery for a new domain
+  (experiential learning).'
+glosa_use: skip
+glosa_target: n/a — cognitive-science domain application, not a claim-card kernel mechanism
+notes: ''

@@ -1,0 +1,30 @@
+id: kc-ph-042
+kind: rule
+title: Axiom 11 — Disk Before Mass
+text: 'Self-published Zenodo preprint (single-author physics/information-theory program, 2025-11-13). Abstract
+  reports: The study entitled Axiom 11 — Disk Before Mass by Yaoharee Lahtee introduces a compelling shift in
+  how geometric organization and mass stabilization are causally ordered in complex information-field systems.
+  The central claim—that disk-like geometry forms before any mass equilibrium is achieved—challenges the
+  traditional physical intuition where structure emerges only after matter distribution becomes steady....'
+verbatim: The study entitled Axiom 11 — Disk Before Mass by Yaoharee Lahtee introduces a compelling shift in how
+  geometric organization and mass stabilization are causally ordered in complex information-field systems. The
+  central claim—that disk-like geometry forms before any mass equilibrium is achieved—challenges the
+  traditional physical intuition where structure emerges only after matter distribution becomes steady. Within
+  the causal transport framework defined in Axiom 10, the work demonstrates that when diffusion and decay are
+  directionally unequal and angular momentum is conserved, a flattening effect naturally arises. The system’s
+  internal flux reorganizes
+source:
+  doi: 10.5281/zenodo.17599562
+  title: Axiom 11 — Disk Before Mass
+  year: 2025
+fetched_from_url: 'https://zenodo.org/api/records/17599562'
+locator: Zenodo record abstract (desc field), via API, from registry/zenodo_all_records.json
+tier: Open
+base_relation: superseded
+base_justification: Uses an earlier, since-abandoned working name/formalism (this program cycled through several framework names
+  before settling on retained-information/δ_R vocabulary); the base corpus's mother equation (kc-base-020) and
+  trunk equation (kc-base-022) replace this formulation.
+glosa_use: skip
+glosa_target: n/a — abandoned vocabulary, replaced by base mother/trunk equation
+notes: Part of the single-author 'ph' hub iterative physics-theory series (Zenodo id 17599562, 2025-11-13);
+  method-layer extraction only (self-publication + no-peer-review posture), not the physics content itself.

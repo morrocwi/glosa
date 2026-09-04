@@ -1,0 +1,27 @@
+id: kc-ep-024
+kind: claim
+title: 'Relational Alethic Realism: truth as disciplined answerability, not transparency'
+text: Develops truth as a relation of disciplined answerability between finite representation and a mind-independent
+  order that exceeds present representation while constraining it — neither transparent correspondence
+  nor mere coherence/warranted-assertibility; defends a minimal ontological floor (distinction, persistence,
+  causal efficacy, resistance) required for world-answerability.
+verbatim: This article develops Relational Alethic Realism as a purely metaphysical account of truth under
+  conditions of finite access. Its central claim is that truth is neither transparent identity between
+  thought and world nor the mere outcome of coherence, usefulness, warranted assertibility, or public
+  authorization. Rather, truth is a relation of disciplined answerability between finite representation
+  and a mindindependent order that exceeds present representation while nevertheless constraining it.
+source:
+  doi: 10.5281/zenodo.19209662
+  title: 'Relational Alethic Realism: Truth, Mediation, and Finite World-Tracking after Transparency'
+  year: 2026
+fetched_from_url: https://zenodo.org/api/records/19209662
+locator: Zenodo record abstract (desc field), via API
+tier: Open
+base_relation: holds
+base_justification: 'Formalizes, in independent philosophical vocabulary, the same move as the base''s
+  truth-re-read-as-tracking result (kc-base-005): both replace correspondence-to-the-infinite with a bounded,
+  constraint-responsive relation.'
+glosa_use: adopt
+glosa_target: FOUNDATION Appendix A — Family A Truth/Warrant (primary citation for the truth-as-answerability
+  formulation)
+notes: 2026-03-24.

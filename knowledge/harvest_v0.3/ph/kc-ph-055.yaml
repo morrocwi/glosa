@@ -1,0 +1,31 @@
+id: kc-ph-055
+kind: claim
+title: 'An Informational-Pixel Ansatz for the Vacuum Energy: A Mathematical Invitation to Resolve the Vacuum
+  Catastrophe'
+text: 'Self-published Zenodo preprint (single-author physics/information-theory program, 2025-11-20). Abstract
+  reports: Abstract The discrepancy between the vacuum energy density predicted by quantum field theory and
+  the value observed in cosmology—often spanning 120 orders of magnitude—remains one of the most significant
+  theoretical impasses in modern physics. This note proposes a structural resolution based not on the
+  introduction of new particles or fine-tuning, but on a fundamental shift...'
+verbatim: Abstract The discrepancy between the vacuum energy density predicted by quantum field theory and the value
+  observed in cosmology—often spanning 120 orders of magnitude—remains one of the most significant theoretical
+  impasses in modern physics. This note proposes a structural resolution based not on the introduction of new
+  particles or fine-tuning, but on a fundamental shift in the counting of degrees of freedom. By redefining
+  the physical vacuum as a holographically bounded informational substrate rather than a continuous volume, we
+  demonstrate that the predicted energy density naturally collapses from the Planck
+source:
+  doi: 10.5281/zenodo.17664596
+  title: 'An Informational-Pixel Ansatz for the Vacuum Energy: A Mathematical Invitation to Resolve the Vacuum
+    Catastrophe'
+  year: 2025
+fetched_from_url: 'https://zenodo.org/api/records/17664596'
+locator: Zenodo record abstract (desc field), via API, from registry/zenodo_all_records.json
+tier: Open
+base_relation: superseded
+base_justification: Uses an earlier, since-abandoned working name/formalism (this program cycled through several framework names
+  before settling on retained-information/δ_R vocabulary); the base corpus's mother equation (kc-base-020) and
+  trunk equation (kc-base-022) replace this formulation.
+glosa_use: skip
+glosa_target: n/a — abandoned vocabulary, replaced by base mother/trunk equation
+notes: Part of the single-author 'ph' hub iterative physics-theory series (Zenodo id 17664596, 2025-11-20);
+  method-layer extraction only (self-publication + no-peer-review posture), not the physics content itself.

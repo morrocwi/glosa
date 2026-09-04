@@ -1,0 +1,26 @@
+id: kc-ai-002
+kind: method
+title: Readout Condition — defeater-routing and the identification ladder
+text: 'Beyond the three-part norm, the paper gives a machinery for handling non-exact cases: pointwise licensing
+  for non-transitive indiscriminability (blocks illicit transitive closure), a Blackwell-garbling access audit for
+  stochastic settings plus a complementary identification ladder, and a defeater-routing result — source-specific
+  defeaters propagate only along the distinctions that actually depend on that source.'
+verbatim: 'For non-transitive indiscriminability, the correct extension is pointwise: a claim token at an actual
+  alternative is licensed only if its local indiscriminability neighbourhood lies inside the claim-value fiber,
+  avoiding an illicit transitive closure. In stochastic settings, Blackwell garbling provides an access audit but
+  cannot by itself detect assumption-driven silent lifts; a complementary identification ladder tracks the weakest
+  augmentation layer at which a distinction becomes identified.'
+source:
+  path: sources/READOUT_CONDITION_2026-08.txt
+  title: 'The Readout Condition: Distinguishability, Access, and Epistemic Warrant'
+  year: 2026
+fetched_from_url: /home/yaoharee-lt/ANSE.ASIA/glosa/sources/READOUT_CONDITION_2026-08.txt
+locator: lines 27-33 (Abstract, non-transitive/stochastic extensions)
+tier: Dr
+base_relation: refined_by_later_work
+base_justification: Extends kc-base-006 (non-injective readout / no decoder recovers state) from the exact/functional
+  case into non-transitive and stochastic settings the base cards state only for the exact case.
+glosa_use: adapt
+glosa_target: FOUNDATION §4.2 (defeater routing) / kernel rule on source misattribution
+notes: The base non-injective-readout theorem (kc-base-006) is stated for the exact functional case; this paper's
+  pointwise/stochastic extension is the later, more general treatment of the same limit.

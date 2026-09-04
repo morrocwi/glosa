@@ -1,0 +1,25 @@
+id: kc-ep-034
+kind: claim
+title: The Architecture of Faqr (five registers of creaturely dependence)
+text: 'Organizes a constructive Sunni framework around faqr (creaturely dependence) as the positive ontological
+  mode of created being across five registers: Dependent Order, Directed Selection, Dependent Identity,
+  Fahm al-ʿabd (the receptive stance of the creaturely knower), and ikhtilāl al-maqām (its structural
+  failure mode); tests the framework against three juristic cases.'
+verbatim: 'This article presents a unified constructive framework, within the broad heritage of ahl al-sunna
+  wa-l-jamāʿa, organized by a single insight: creaturely dependence (faqr) is not a defect to be minimized
+  but the positive ontological mode of created being— reality does not entail independence, and the creature
+  is most fully itself where it is most perfectly held. The insight is specified across five registers.'
+source:
+  doi: 10.5281/zenodo.21439275
+  title: The Architecture of Faqr
+  year: 2026
+fetched_from_url: https://zenodo.org/api/records/21439275
+locator: Zenodo record abstract (desc field), via API
+tier: Open
+base_relation: open
+base_justification: Theological-domain paper; the Fahm al-'abd (receptive-knower) and ikhtilāl al-maqām
+  (failure-mode) constructs are epistemically suggestive but not built on the base corpus, so relation
+  is left open.
+glosa_use: skip
+glosa_target: (domain hub islam, theological content)
+notes: 2026-07-19; companion/precursor to kc-ep-044 (22206607) Faqr, Scholarly Authority.

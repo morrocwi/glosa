@@ -1,0 +1,33 @@
+id: kc-se-010
+kind: method
+title: Faith-based Cultural-Based Practitioners as a governance framework, not a claim about outcomes
+text: A journal article proposes a "Cultural-Based Practitioner" (CBP) framework describing individuals who
+  operate between state, market, and religion, arguing faith functions as an ethical/human-centric
+  foundation for service systems rather than an obstacle to development. The abstract frames the paper's
+  contribution as a descriptive/comparative framework (three case studies) built from cultural skills,
+  bridging, and governance — a naming and structuring exercise, not an effectiveness or outcome claim.
+verbatim: "This article examines the role of Cultural-Based Practitioners (CBP) who operate at the
+  intersection of state, market, and religion amid the rapid transformations of the ASEAN digital
+  economy. ... The paper introduces the CBP framework, integrating cultural skills, cultural bridging,
+  and cultural governance to form a Living Soft Infrastructure —a model for transforming faith-based and
+  cultural capital into verifiable social and economic value. Case studies from Thailand, Singapore, and
+  Taiwan demonstrate how individual, institutional, and state-level practitioners can sustain coexistence
+  through transparency, justice, and shared ethical values."
+source:
+  doi: 10.5281/zenodo.17281646
+  title: "Faith in Service Systems: Dynamics of Cultural-Based Practitioners in Creating Shared Spaces
+    among State, Market, and Religion"
+  year: 2025
+fetched_from_url: https://zenodo.org/api/records/17281646
+locator: abstract (Zenodo record metadata.description, full text)
+tier: Open
+base_relation: outdated
+base_justification: This 2025-10-06 paper carries no explicit tier marking or claim-boundary statement
+  (unlike the same author's later se-hub work — kc-se-003 MOCA, kc-se-006/007 Why We Became — which
+  explicitly separate Th-coqc/finite-diagnostic/model claims and disclose reflexive-inquiry scope). Its
+  vocabulary ("verifiable ... value", "Living Soft Infrastructure") is superseded in the corpus's own
+  later tier-discipline nodes (kc-base-007 six-tier; kc-base-038 verdict-class vocabulary).
+glosa_use: skip
+glosa_target: "n/a — logged as a superseded-vocabulary example only"
+notes: No local full text found under sources/ or ~/Downloads; abstract only via the Zenodo API. Case-study
+  detail (Thailand/Singapore/Taiwan) unavailable for closer inspection at this pass.

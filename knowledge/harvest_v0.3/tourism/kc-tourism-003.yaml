@@ -1,0 +1,30 @@
+id: kc-tourism-003
+kind: method
+title: Explicit 'proves vs. still cannot explain' gap statement before advancing a new mechanism
+text: Before introducing its own contribution, the paper names precisely what the existing literature has
+  established (two named points) and precisely what it has not yet explained (the provider-side interpretive
+  process), and only then states that this named gap is where the new article intervenes. This is a disclosed
+  literature-gap move, distinct from simply asserting novelty.
+verbatim: "Taken together, the field foundations discussed above prove two important points... At the same
+  time, this literature still leaves an important explanatory gap. It does not yet fully explain why visible
+  assurance sometimes fails to become deeper trust, nor does it sufficiently theorize how operators internally
+  construct the Muslim traveler as a service object... This is precisely where the present article intervenes."
+source:
+  doi: 10.5281/zenodo.19059720
+  title: 'Beyond Halal Labels: Premature Category Stabilization in Muslim-Friendly Tourism'
+  year: 2026
+fetched_from_url: "file:///home/yaoharee-lt/Downloads/Beyond Halal Labels.pdf"
+locator: '§2.3 "What This Literature Proves and What It Still Cannot Explain" (pp.5-6, extracted via
+  pdftotext -l 6)'
+tier: Open
+base_relation: holds
+base_justification: The explicit "proves X / still cannot explain Y" split before claiming a contribution
+  mirrors the base's honest-tier discipline of naming what is settled vs. what remains Open before advancing a
+  claim (kc-base-025 'what this system does NOT claim', kc-base-036/037 Agrippa's-trilemma self-application and
+  the retraction case study) — same underlying practice of bounding a claim's warrant before extending it.
+glosa_use: adapt
+glosa_target: "FOUNDATION §7.9 Literature Review System (LRS) and §12 'Honest edges — what is still Dr/untested,
+  and what was NOT read' — adapt the paper's two-part 'proves / still cannot explain' split as a required
+  sub-field of a glosa literature-review entry, distinct from a bare novelty claim"
+notes: Same PDF as kc-tourism-002; distinct passage and distinct methodological move (gap-disclosure, not the
+  mechanism claim itself), kept as a separate card per the 'up to 4 for foundational' allowance.

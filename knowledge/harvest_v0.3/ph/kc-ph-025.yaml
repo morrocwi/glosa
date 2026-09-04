@@ -1,0 +1,29 @@
+id: kc-ph-025
+kind: method
+title: Scale-Lock from Lyapunov Dissipation in a Local-Only Framework
+text: 'Self-published Zenodo preprint (single-author physics/information-theory program, 2025-10-30). Abstract
+  reports: We prove that Scale-Lock, the alignment of phase and frequency to a central cadence Ω0, emerges
+  from Lyapunov dissipation (V˙ ≤ 0) in a K-free, local-only framework based on the seed algebra Aε = δ. The
+  proof links residual dynamics (ε˙ = −ΛA⊤W(Aε − δ)) to a damped pendulum equation for the locking phase
+  ϕ,...'
+verbatim: 'We prove that Scale-Lock, the alignment of phase and frequency to a central cadence Ω0, emerges from
+  Lyapunov dissipation (V˙ ≤ 0) in a K-free, local-only framework based on the seed algebra Aε = δ. The proof
+  links residual dynamics (ε˙ = −ΛA⊤W(Aε − δ)) to a damped pendulum equation for the locking phase ϕ,
+  converging to ϕ = 0. The framework is falsifiable, scale-aware (rad/s), and adheres to FAIR principles and
+  CC BY 4.0, with materials at https://github.com/ morrocwi/yaoharee-proposal. Scale-Lock, Lyapunov
+  dissipation, seed algebra, phase dynamics, open science'
+source:
+  doi: 10.5281/zenodo.17487171
+  title: Scale-Lock from Lyapunov Dissipation in a Local-Only Framework
+  year: 2025
+fetched_from_url: 'https://zenodo.org/api/records/17487171'
+locator: Zenodo record abstract (desc field), via API, from registry/zenodo_all_records.json
+tier: Open
+base_relation: superseded
+base_justification: Uses an earlier, since-abandoned working name/formalism (this program cycled through several framework names
+  before settling on retained-information/δ_R vocabulary); the base corpus's mother equation (kc-base-020) and
+  trunk equation (kc-base-022) replace this formulation.
+glosa_use: skip
+glosa_target: n/a — abandoned vocabulary, replaced by base mother/trunk equation
+notes: Part of the single-author 'ph' hub iterative physics-theory series (Zenodo id 17487171, 2025-10-30);
+  method-layer extraction only (self-publication + no-peer-review posture), not the physics content itself.

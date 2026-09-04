@@ -1,0 +1,31 @@
+id: kc-aihp-019
+kind: definition
+title: 'Information Epistemic Foundation: knowledge as an auditable status of a claim, not a possession
+  of a knower'
+text: A journal-form synthesis of the Information Epistemic Foundation as a bounded domain translation
+  of Readout Genesis. The root contains retained distinctions, a graph-Laplacian operator, ordered dynamics,
+  context, and lineage — it does not contain belief, knowledge, truth, mind, institution, or consciousness
+  as primitives; those become admissible only after a declared quotient and readout. Knowledge is proposed
+  to be attributed as an auditable status of a claim, not a possession/reputation/authority of a knower.
+verbatim: The root contains retained distinctions, a graph-Laplacian operator, ordered dynamics, context,
+  and lineage; it does not contain belief, knowledge, truth, mind, institution, or consciousness as primitive
+  objects. Those terms become admissible only after a declared quotient and readout. On that basis, the
+  paper inserts a typed belief layer between memory and claim evaluation, defines belief as a multidimensional
+  agency–claim relation, and proposes that knowledge be attributed as an auditable status of a claim rather
+  than as a possession, reputation, or authority of a knower.
+source:
+  doi: 10.5281/zenodo.21529456
+  title: 'Readout Genesis Standalone Synthesis: Information Epistemic Foundation, Conditioned Agency,
+    and Meta-Readout Governance'
+  year: 2026
+fetched_from_url: https://zenodo.org/api/records/21529456
+locator: Abstract
+tier: Dr
+base_relation: holds
+base_justification: A direct downstream translation of kc-base-011 (L_R the derived link) and kc-base-009
+  (δ_R the one primitive) into an epistemic-agency layer; states explicitly that belief/knowledge/truth
+  are not primitives, matching kc-base-032 (doctrine reminder) and kc-base-001 (Readout-not-truth).
+glosa_use: adopt
+glosa_target: FOUNDATION §7 'knowledge as auditable claim status' — direct grounding for why glosa never
+  marks a claim card 'known', only tiered/checked
+notes: ''

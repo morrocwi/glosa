@@ -1,0 +1,27 @@
+id: kc-ep-016
+kind: claim
+title: The civilization of knowledge as a history of interpretive authority
+text: Argues knowledge history is not only truth-accumulation but a succession of agencies authorized
+  to interpret signals and stabilize interpretations as social reality; traces shifts from oral/priestly
+  interpreters through scientific/professional institutions to platforms/algorithms/AI-mediated systems,
+  framing knowledge crises as authority crises.
+verbatim: Standard accounts of knowledge history often describe human civilization as a gradual ascent
+  from myth to reason, from religion to science, and from science to artificial intelligence. This article
+  argues that such narratives remain incomplete. What changes across civilizations is not only the accumulation
+  of truths, but the succession of agencies authorized to interpret the world’s signals and stabilize
+  those interpretations as social reality.
+source:
+  doi: 10.5281/zenodo.18943971
+  title: 'The Civilization of Knowledge: Who Has the Authority to Interpret the World'
+  year: 2026
+fetched_from_url: https://zenodo.org/api/records/18943971
+locator: Zenodo record abstract (desc field), via API
+tier: Open
+base_relation: holds
+base_justification: Directly compatible with EPIS-KNOWLEDGE-VALIDATION's horizontal-authority stance (no
+  agency has epistemic veto by title/institution) — this paper supplies the historical argument for why
+  interpretive authority is contingent/social rather than intrinsic to any knower.
+glosa_use: adopt
+glosa_target: FOUNDATION §7.2 Maker-Checker-Approver separation / horizontal-authority framing (cross-reference
+  for the no-external-validation stance)
+notes: 2026-03-10; companion Thai NIDA conference slides at kc-ep-039/040 (22302410/22301886).

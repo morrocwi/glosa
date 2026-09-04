@@ -1,0 +1,29 @@
+id: kc-ep-038
+kind: claim
+title: 'Epistemic hardening: asymmetric revisability in Muslim knowledge regimes'
+text: Develops a sociology-of-knowledge account of 'epistemic hardening' — the declining social revisability
+  of human interpretive claims once revelation, interpretation and institutional authority become socially
+  compressed; the core relational contribution is asymmetric revisability (unequal practical capacity
+  to question/correct/reclassify claims), which under some conditions shifts moral delegation toward protected
+  displacement and contributes to conflict closure.
+verbatim: 'This article develops a sociology-of-knowledge account of how human religious interpretation
+  can become unusu- ally resistant to correction and, under specific political conditions, contribute
+  to conflict persistence. It begins from a distinction that is doctrinally elementary but sociologically
+  consequential: revelation, human interpre- tation, and institutional authority are not equivalent forms
+  of knowledge.'
+source:
+  doi: 10.5281/zenodo.22129490
+  title: 'When Interpretation Hardens: Epistemic Authority, Asymmetric Revisability, and Conflict in Muslim
+    Knowledge Regimes'
+  year: 2026
+fetched_from_url: https://zenodo.org/api/records/22129490
+locator: Zenodo record abstract (desc field), via API
+tier: Open
+base_relation: holds
+base_justification: Directly supports EPIS-KNOWLEDGE-VALIDATION's horizontal-authority stance and its
+  warning against title/institution conferring an epistemic veto — this paper supplies an independent
+  sociological mechanism (asymmetric revisability) for exactly the failure mode that rule guards against.
+glosa_use: adopt
+glosa_target: FOUNDATION §7.2/§7.3 (asymmetric revisability as the named failure mode the maker-checker/Bounded-Judge
+  machinery is designed to prevent)
+notes: 2026-08-27.

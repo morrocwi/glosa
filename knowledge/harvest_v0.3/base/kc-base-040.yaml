@@ -1,0 +1,33 @@
+id: kc-base-040
+kind: claim
+title: Sorites Paradox — the one node meeting the corpus's own strict three-file binding
+text: 'The vague-boundary question translates to: where does the readout policy Π sit relative to the
+  τ_c* knife-edge? This is the only node in the whole corpus meeting its own strict binding criterion
+  (chapter ↔ Coq file ↔ executable diagnostic, all three at once). Verdict: genuinely resolved, but only
+  inside the declared monotone scope — a smooth, one-directional world. The general Sorites (non-monotone,
+  adversarial orderings) is not covered, and extending the claim beyond monotone would itself be the kind
+  of overclaim the corpus''s own discipline forbids.'
+verbatim: '**Verdict:** genuinely resolved, but only inside the declared monotone
+
+  scope — a smooth, one-directional world. The general Sorites (non-monotone,
+
+  adversarial orderings of the heap) is not covered and the corpus is
+
+  explicit that extending the claim beyond monotone would itself be the kind
+
+  of overclaim its own discipline forbids.'
+source:
+  path: readout_universe/paradoxes.md
+  title: Paradoxes — a worked stress-test (Readout Universe v2.0-dev)
+  year: 2026
+fetched_from_url: ~/ANSE.ASIA/readout_universe/paradoxes.md
+locator: §1 Sorites Paradox, lines ~55-80
+tier: Th_coqc
+base_relation: holds
+base_justification: This IS a base card from the lens root text; base cards are the ground the ledger
+  is judged against.
+glosa_use: adopt
+glosa_target: FOUNDATION §7.8 Citation integrity subsystem
+notes: A worked, citable example of a claim resolved exactly at its own declared scope boundary, with
+  the boundary named in the same breath as the resolution — the pattern glosa's citation-integrity subsystem
+  should hold every closed claim card to.

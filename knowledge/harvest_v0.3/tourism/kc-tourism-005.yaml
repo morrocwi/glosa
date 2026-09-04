@@ -1,0 +1,32 @@
+id: kc-tourism-005
+kind: method
+title: Statistical dataset sourced from named third-party institutions, analysis explicitly withheld
+text: Compiles Muslim-relevant and Malaysia-origin tourism statistics for Thailand from five named
+  institutional sources (TAT, Mastercard & CrescentRating GMTI, Pew Research Center, DinarStandard SGIE,
+  Malaysian/Gulf statistical bodies), and states no behavioral or interpretive analysis is included — the
+  stated purpose is a transparent structured dataset for others to analyze, not a pre-analyzed finding.
+verbatim: "This paper presents a verified dataset related to Muslim-relevant and Malaysia-origin tourism to
+  Thailand between 2024 and 2025, including GCC-region Muslim visitors. It compiles official data from the
+  Tourism Authority of Thailand (TAT), Mastercard & CrescentRating (GMTI 2025), Pew Research Center,
+  DinarStandard (SGIE 2024/25), and Malaysian and Gulf statistical sources... No behavioral or interpretive
+  analysis is included. The purpose is to provide a transparent, structured dataset for researchers and
+  tourism planners."
+source:
+  doi: 10.5281/zenodo.17305534
+  title: Statistical Dataset of Muslim and Malaysia-Origin Tourists Visiting Thailand (2024–2025)
+  year: 2025
+fetched_from_url: https://zenodo.org/api/records/17305534
+locator: abstract (metadata.description field), via Zenodo API
+tier: Open
+base_relation: holds
+base_justification: Same data/inference separation discipline as kc-tourism-004, applied to a second-hand
+  compiled statistical (rather than observational) dataset; each source institution is named per figure rather
+  than laundered into an unattributed number, consistent with the base's readout-attribution stance
+  (kc-base-025).
+glosa_use: already_in_glosa
+glosa_target: "FOUNDATION §2.1b 'Responsibility per arrow: Data → Inference → Claim' — same Data-stage
+  discipline as kc-tourism-004, plus a per-source attribution pattern (naming which institution each figure
+  traces to) relevant to §7.8 Citation integrity subsystem"
+notes: Companion dataset record to kc-tourism-004, same hub, dated 2025-10-09; the word 'verified' in the
+  abstract describes the compiler's own claim about the compilation, not an independent check performed by
+  this harvest — carried at Open tier, not elevated on the source's own say-so (per readout-not-truth lens).

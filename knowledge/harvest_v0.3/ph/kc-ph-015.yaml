@@ -1,0 +1,29 @@
+id: kc-ph-015
+kind: claim
+title: The Scale-Lock Breaking Paradox and the Origin of Λ
+text: 'Self-published Zenodo preprint (single-author physics/information-theory program, 2025-10-25). Abstract
+  reports: We address the most severe paradox in modern cosmology — the apparent breaking of the Scale-Lock
+  Law (F ∝ E²) when confronted with the observed cosmological constant Λ. While General Relativity yields Λ ∝
+  M_Pl⁻² M_vac⁴, seemingly inconsistent with the quadratic energy scaling, we prove that this relation
+  naturally emerges once the Scale-Lock , Bridging...'
+verbatim: We address the most severe paradox in modern cosmology — the apparent breaking of the Scale-Lock Law (F ∝
+  E²) when confronted with the observed cosmological constant Λ. While General Relativity yields Λ ∝ M_Pl⁻²
+  M_vac⁴, seemingly inconsistent with the quadratic energy scaling, we prove that this relation naturally
+  emerges once the Scale-Lock , Bridging , and TeV-Window laws operate together. Λ is thus not a fine-tuned
+  constant but a derived quantity representing the gravitationally suppressed manifestation of the true vacuum
+  force. This unifies the Hierarchy Problem and the Cosmological
+source:
+  doi: 10.5281/zenodo.17443390
+  title: The Scale-Lock Breaking Paradox and the Origin of Λ
+  year: 2025
+fetched_from_url: 'https://zenodo.org/api/records/17443390'
+locator: Zenodo record abstract (desc field), via API, from registry/zenodo_all_records.json
+tier: Open
+base_relation: superseded
+base_justification: Uses an earlier, since-abandoned working name/formalism (this program cycled through several framework names
+  before settling on retained-information/δ_R vocabulary); the base corpus's mother equation (kc-base-020) and
+  trunk equation (kc-base-022) replace this formulation.
+glosa_use: skip
+glosa_target: n/a — abandoned vocabulary, replaced by base mother/trunk equation
+notes: Part of the single-author 'ph' hub iterative physics-theory series (Zenodo id 17443390, 2025-10-25);
+  method-layer extraction only (self-publication + no-peer-review posture), not the physics content itself.

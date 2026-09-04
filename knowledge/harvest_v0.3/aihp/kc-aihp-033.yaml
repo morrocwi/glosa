@@ -1,0 +1,32 @@
+id: kc-aihp-033
+kind: claim
+title: 'The language bridge: human capital converts to social capital only by crossing disciplinary/professional
+  dialects'
+text: 'Conceptual reflection arguing language is never neutral — fragmented by profession, discipline,
+  and culture into isolating dialects (law, bureaucracy, technology) — and proposing the ''language bridge'':
+  a dynamic process converting human capital into social capital by transcending those linguistic/disciplinary
+  walls. LLMs are framed as accelerating this bridge by interpreting and re-articulating human thought
+  across those borders, extending rather than replacing the human voice.'
+verbatim: 'Language, however, is never neutral. It is fragmented by professions, disciplines, and cultures:
+  the language of law, the language of bureaucracy, the language of technology. These dialects often isolate
+  knowledge rather than circulate it. Lahtee therefore proposes a new paradigm: the language bridge—a
+  dynamic process through which human capital is converted into social capital by transcending linguistic
+  and disciplinary walls.'
+source:
+  doi: 10.5281/zenodo.17280546
+  title: 'The Language Bridge: Expanding Human Potential in the Age of AI'
+  year: 2025
+fetched_from_url: https://zenodo.org/api/records/17280546
+locator: Abstract
+tier: Open
+base_relation: refined_by_later_work
+base_justification: Earliest-vintage (Oct 2025) narrative treatment of AI-mediated knowledge circulation,
+  predating the corpus's own readout formalism; the same concern (dialect fragmentation blocking knowledge
+  circulation) is later given a checkable mechanism by kc-base-018 (contaminated-concept table) and this
+  hub's E-A-D papers (kc-aihp-011). This particular member's Zenodo API fetch returned a 400 validation
+  error per registry/zenodo_clusters.json aihp.failed — the cached description already held in registry/zenodo_all_records.json
+  was used instead.
+glosa_use: skip
+glosa_target: n/a — pre-formal precursor paper
+notes: This is the one 'failed' member in registry/zenodo_clusters.json aihp.failed (400, invalid metadata.dates)
+  — record data still came from the pre-existing local registry cache, not a live re-fetch.

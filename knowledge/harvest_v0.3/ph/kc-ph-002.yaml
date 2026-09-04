@@ -1,0 +1,31 @@
+id: kc-ph-002
+kind: claim
+title: The Yaoharee Proposal_ An Epistemic Architecture of Observable Reality
+text: 'Self-published Zenodo preprint (single-author physics/information-theory program, 2025-10-12). Abstract
+  reports: This paper introduces The Yaoharee Proposal, a conceptual framework that reframes observation as an
+  epistemic rather than ontological process. It argues that reality, as encountered, is sustained through
+  informational coherence between observers and the systems observed. The framework specifies a three‑tier
+  epistemic architecture: Primary Observer — a field-like condition of awareness that makes observables
+  possible;...'
+verbatim: 'This paper introduces The Yaoharee Proposal, a conceptual framework that reframes observation as an
+  epistemic rather than ontological process. It argues that reality, as encountered, is sustained through
+  informational coherence between observers and the systems observed. The framework specifies a three‑tier
+  epistemic architecture: Primary Observer — a field-like condition of awareness that makes observables
+  possible; Universal Canvas — the total informational manifold of potential configurations; and Secondary
+  Observers — localized cognitive or computational renderers that select and sequence experience. Dialoguing
+  with quantum cognition (Pothos & Busemeyer, 2022), Integrated Information Theory'
+source:
+  doi: 10.5281/zenodo.17334604
+  title: The Yaoharee Proposal_ An Epistemic Architecture of Observable Reality
+  year: 2025
+fetched_from_url: 'https://zenodo.org/api/records/17334604'
+locator: Zenodo record abstract (desc field), via API, from registry/zenodo_all_records.json
+tier: Open
+base_relation: superseded
+base_justification: Uses an earlier, since-abandoned working name/formalism (this program cycled through several framework names
+  before settling on retained-information/δ_R vocabulary); the base corpus's mother equation (kc-base-020) and
+  trunk equation (kc-base-022) replace this formulation.
+glosa_use: skip
+glosa_target: n/a — abandoned vocabulary, replaced by base mother/trunk equation
+notes: Part of the single-author 'ph' hub iterative physics-theory series (Zenodo id 17334604, 2025-10-12);
+  method-layer extraction only (self-publication + no-peer-review posture), not the physics content itself.

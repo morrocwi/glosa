@@ -1,0 +1,29 @@
+id: kc-ph-038
+kind: claim
+title: Unified Equation v4.3-r1.5 (Stage II, ScopeTight)
+text: 'Self-published Zenodo preprint (single-author physics/information-theory program, 2025-11-06). Abstract
+  reports: This Stage II manuscript delivers a scopetight, dimensionally sealed NEIP closed form that unifies:
+  (i) a covariant scalar with comoving linear damping and a scalelog moderator embedded in the S2 covariant
+  derivative, (ii) a Lyapunov energy decay identity under perfect-conductor boundaries, and (iii) a
+  meandamping closure that maps dissipative power to a time-varying cosmological term...'
+verbatim: 'This Stage II manuscript delivers a scopetight, dimensionally sealed NEIP closed form that unifies: (i) a
+  covariant scalar with comoving linear damping and a scalelog moderator embedded in the S2 covariant
+  derivative, (ii) a Lyapunov energy decay identity under perfect-conductor boundaries, and (iii) a
+  meandamping closure that maps dissipative power to a time-varying cosmological term via the factor 8πG/c4 .
+  The main text adopts the background-field regime (no Maxwell evolution, no compensating current), which
+  suffices to prove Lyapunov decay and pass the V1V6 dimensional checks. For completeness and Stage III'
+source:
+  doi: 10.5281/zenodo.17543503
+  title: Unified Equation v4.3-r1.5 (Stage II, ScopeTight)
+  year: 2025
+fetched_from_url: 'https://zenodo.org/api/records/17543503'
+locator: Zenodo record abstract (desc field), via API, from registry/zenodo_all_records.json
+tier: Open
+base_relation: superseded
+base_justification: Uses an earlier, since-abandoned working name/formalism (this program cycled through several framework names
+  before settling on retained-information/δ_R vocabulary); the base corpus's mother equation (kc-base-020) and
+  trunk equation (kc-base-022) replace this formulation.
+glosa_use: skip
+glosa_target: n/a — abandoned vocabulary, replaced by base mother/trunk equation
+notes: Part of the single-author 'ph' hub iterative physics-theory series (Zenodo id 17543503, 2025-11-06);
+  method-layer extraction only (self-publication + no-peer-review posture), not the physics content itself.

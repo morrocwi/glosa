@@ -1,0 +1,24 @@
+id: kc-ai-013
+kind: claim
+title: AI expands potential only under disciplined revision (constraint-first epistemology)
+text: Argues AI expands human potential — rather than merely accelerating output — only when machine-mediated dissonance
+  becomes disciplined revision under world-answerable conditions, requiring corrigibility, route-openness, criticizability,
+  and domain-sensitive validation. AI can accelerate candidate generation and reframing but cannot itself certify
+  truth, remove mediation, or replace target-domain assessment.
+verbatim: AI expands human potential only when machine-mediated dissonance becomes disciplined revision under world-answerable
+  conditions. This requires corrigibility, route-openness, criticizability, and domain-sensitive validation. AI
+  can accelerate candidate generation, comparison, and conceptual reframing, but it cannot by itself certify truth,
+  remove irreducible mediation, or replace target-domain assessment.
+source:
+  path: registry/zenodo_all_records.json
+  title: 'When AI Expands Human Potential: Reflective Dissonance, Epistemic Agency, and Constraint'
+  year: 2026
+fetched_from_url: https://zenodo.org/api/records/19215748
+locator: record 19215748, metadata.description (Abstract)
+tier: Dr
+base_relation: holds
+base_justification: 'Consistent with EPIS-KNOWLEDGE-VALIDATION and kc-base-005 (truth as tracking, not correspondence):
+  AI cannot ''certify truth'' by itself, matching the base cards'' refusal of any single-party epistemic veto.'
+glosa_use: adopt
+glosa_target: FOUNDATION §2 (bounded knower) — human-AI epistemic-agency boundary condition
+notes: Named a hub anchor of a small 'When AI Expands Human Potential' series alongside 22308448/22308446/22308451/17280546.

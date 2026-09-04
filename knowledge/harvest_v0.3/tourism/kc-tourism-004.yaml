@@ -1,0 +1,27 @@
+id: kc-tourism-004
+kind: method
+title: Behavioral dataset compiled with interpretation deliberately excluded from the record
+text: The dataset paper compiles documented behaviors of Muslim tourists in Thailand from academic/institutional
+  sources and explicitly states it carries no interpretive or inferential commentary — the compiled record is
+  kept separate from any analysis performed on it.
+verbatim: "This paper compiles behavioral datasets and observational findings of Muslim tourists visiting
+  Thailand between 2011 and 2025, focusing on real-world behaviors documented by academic and institutional
+  sources... The dataset does not include any interpretive or inferential commentary"
+source:
+  doi: 10.5281/zenodo.17305576
+  title: Behavioral Dataset of Muslim Tourists in Thailand (2024–2025)
+  year: 2025
+fetched_from_url: https://zenodo.org/api/records/17305576
+locator: abstract (metadata.description field), via Zenodo API
+tier: Open
+base_relation: holds
+base_justification: The explicit separation of compiled raw record from interpretive commentary is a concrete
+  instance of the base's discipline against silently mixing observation and inference (kc-base-025 'what this
+  system explicitly does NOT claim'); it does not touch the base's formal δ_R/tier machinery directly, so it
+  holds rather than refines it.
+glosa_use: already_in_glosa
+glosa_target: "FOUNDATION §2.1b 'Responsibility per arrow: Data → Inference → Claim' — direct real-world
+  instance of the Data-stage discipline this section already specifies (raw compiled record, no inference
+  attached)"
+notes: Dataset-type Zenodo record, no local full text (a compiled dataset paper, not a PDF manuscript in
+  sources/ or ~/Downloads); dated 2025-10-09.

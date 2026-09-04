@@ -1,0 +1,30 @@
+id: kc-ph-020
+kind: claim
+title: Equation of Everything ∞ Final - Yaoharee Proposal
+text: 'Self-published Zenodo preprint (single-author physics/information-theory program, 2025-10-28). Abstract
+  reports: Equation of Everything Checklist The following milestones have been achieved in the development of
+  the Equation of Everything (EoE): ✓ Developed a unified theoretical framework combining GR and QFT. ✓
+  Embedded the Standard Model with gauge dynamics and Yukawa couplings. ✓ Established Universal Balance Units
+  (UB-Units) for energy, time, and information. ✓ Derived key constants...'
+verbatim: 'Equation of Everything Checklist The following milestones have been achieved in the development of the
+  Equation of Everything (EoE): ✓ Developed a unified theoretical framework combining GR and QFT. ✓ Embedded
+  the Standard Model with gauge dynamics and Yukawa couplings. ✓ Established Universal Balance Units
+  (UB-Units) for energy, time, and information. ✓ Derived key constants (Λnorm, κc, T∗coh) systematically from
+  information-theoretic principles. ✓ Validated alpha-closure mechanism with exponent 32 (2 5).1 ✓
+  Demonstrated recovery of GR and QFT limits. ✓ Provided three testable predictions (clock ∆α/α, Th-229
+  transition, GW–EM phaselag).'
+source:
+  doi: 10.5281/zenodo.17468593
+  title: Equation of Everything ∞ Final - Yaoharee Proposal
+  year: 2025
+fetched_from_url: 'https://zenodo.org/api/records/17468593'
+locator: Zenodo record abstract (desc field), via API, from registry/zenodo_all_records.json
+tier: Open
+base_relation: superseded
+base_justification: Uses an earlier, since-abandoned working name/formalism (this program cycled through several framework names
+  before settling on retained-information/δ_R vocabulary); the base corpus's mother equation (kc-base-020) and
+  trunk equation (kc-base-022) replace this formulation.
+glosa_use: skip
+glosa_target: n/a — abandoned vocabulary, replaced by base mother/trunk equation
+notes: Part of the single-author 'ph' hub iterative physics-theory series (Zenodo id 17468593, 2025-10-28);
+  method-layer extraction only (self-publication + no-peer-review posture), not the physics content itself.

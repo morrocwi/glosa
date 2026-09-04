@@ -1,0 +1,26 @@
+id: kc-ai-007
+kind: claim
+title: Controlled epistemic chain reaction and the k_epi multiplication factor
+text: 'Paper IV of the Bounded Knower sequence: proposes that the strongest human-AI augmentation is not one-shot
+  idea generation but a controlled chain reaction — a human retains the problem/question while AI processes recursively
+  decompose it, traverse distant knowledge structures, generate and critique candidate relations, collapse readout-equivalent
+  variants, and propagate only candidates that clear declared grounding/discriminability gates. A finite multiplication
+  factor k_epi counts the propagated frontier.'
+verbatim: 'this manuscript proposes a controlled epistemic chain reaction: a human retains the problem and question,
+  while heterogeneous AI processes recursively decompose the question, traverse distant knowledge structures, generate
+  candidate relations, critique them, collapse readout-equivalent variants, and propagate only new candidate classes
+  that clear declared grounding and discriminability gates.'
+source:
+  path: registry/zenodo_all_records.json
+  title: 'The Epistemic Chain Reaction: Human-AI Multiplication from Questions to Readout-Distinguishable Hypotheses'
+  year: 2026
+fetched_from_url: https://zenodo.org/api/records/22308072
+locator: record 22308072, metadata.description (Abstract)
+tier: Open
+base_relation: refined_by_later_work
+base_justification: Central augmentation laws are explicitly [Open] per the record's own status line; extends kc-base-023
+  (Epistemic Nuclear Core N1-N5) into a specific human-AI hypothesis-generation architecture, not yet closed.
+glosa_use: adapt
+glosa_target: FOUNDATION methodology section — candidate discovery-loop architecture, pending its own [Open] closure
+notes: 'Paper IV of a four-paper series (I: 22307148 kc-ai-009 below, II/III not in this hub''s member list under
+  these ids).'

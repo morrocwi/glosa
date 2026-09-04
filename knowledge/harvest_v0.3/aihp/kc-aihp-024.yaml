@@ -1,0 +1,25 @@
+id: kc-aihp-024
+kind: claim
+title: 'Non-zero Kantian floor: finite cognition entails a structural, non-metaphysical floor of mediation'
+text: 'Both Kantian philosophy and Buddhist thought reject epistemic immediacy. The paper derives a non-zero
+  floor of mediation from three minimal premises (distinguishability, causal connectivity, finite propagation
+  speed) — not as a metaphysical essence but as a structural condition of corrigible inquiry — and argues
+  normativity is constitutive rather than optional: without responsiveness to constraint, inquiry collapses.'
+verbatim: 'I argue that finite cognition entails a non-zero floor of mediation—not as a metaphysical essence,
+  but as a structural condition of corrigible inquiry derivable from three minimal premises concerning
+  distinguishability, causal connectivity, and finite propagation speed. From this, normativity is derived
+  as constitutive rather than optional: without responsiveness to constraint, inquiry collapses.'
+source:
+  doi: 10.5281/zenodo.19205869
+  title: 'Constraint-First Epistemology: Normativity, Conditioned Agency, and the Non-Zero Kantian Floor'
+  year: 2026
+fetched_from_url: https://zenodo.org/api/records/19205869
+locator: Abstract
+tier: Dr
+base_relation: holds
+base_justification: The three minimal premises (distinguishability, causal connectivity, finite propagation
+  speed) are the same generating set as kc-base-029 (E00.1-E00.7 primordial root axioms) and kc-base-028
+  (τ_c persistence); a philosophical companion derivation from the same root, not a rival.
+glosa_use: skip
+glosa_target: n/a — comparative-philosophy domain paper, background grounding only
+notes: ''

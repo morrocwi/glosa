@@ -1,0 +1,29 @@
+id: kc-ph-078
+kind: claim
+title: 'Hear the Noise Before You Fix It: A One–Page, CP–Safe, Memory–Aware QEC Upgrade'
+text: 'Self-published Zenodo preprint (single-author physics/information-theory program, 2025-12-15). Abstract
+  reports: We introduce a lightweight, CP-preserving control strategy for quantum error correction (QEC) under
+  non-Markovian noise, based on the insight that excessive correction can be detrimental when environmental
+  dynamics exhibit memory and backflow. By modeling noise using pseudomode dilation, we derive timing and
+  triggering conditions that adapt syndrome cadence to the noise correlation times, and apply...'
+verbatim: We introduce a lightweight, CP-preserving control strategy for quantum error correction (QEC) under
+  non-Markovian noise, based on the insight that excessive correction can be detrimental when environmental
+  dynamics exhibit memory and backflow. By modeling noise using pseudomode dilation, we derive timing and
+  triggering conditions that adapt syndrome cadence to the noise correlation times, and apply recovery
+  operations only when they provably enhance code performance. The resulting policy layer compiles into a
+  simple IIR form suitable for FPGA or real-time controllers, requires no changes to the code or hardware, and
+  shows
+source:
+  doi: 10.5281/zenodo.17942505
+  title: 'Hear the Noise Before You Fix It: A One–Page, CP–Safe, Memory–Aware QEC Upgrade'
+  year: 2025
+fetched_from_url: 'https://zenodo.org/api/records/17942505'
+locator: Zenodo record abstract (desc field), via API, from registry/zenodo_all_records.json
+tier: Open
+base_relation: open
+base_justification: Domain physics content (a specific claim/derivation/observational note) not directly addressed by any base
+  card; carries no base-card contradiction but also no base endorsement — left open.
+glosa_use: skip
+glosa_target: n/a — domain physics claim outside glosa's method-layer scope
+notes: Part of the single-author 'ph' hub iterative physics-theory series (Zenodo id 17942505, 2025-12-15);
+  method-layer extraction only (self-publication + no-peer-review posture), not the physics content itself.

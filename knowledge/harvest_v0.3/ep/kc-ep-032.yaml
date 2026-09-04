@@ -1,0 +1,25 @@
+id: kc-ep-032
+kind: claim
+title: Objective chance is not explanatorily primitive; modal difference is prior
+text: 'Argues against chance-fundamentalism: every objective-chance attribution assigns a weight to an
+  outcome within a field of alternatives, which requires non-identity among members that remain structurally
+  available for comparison/weighting (''modal difference''); establishes modal difference''s conceptual/explanatory
+  priority over chance without denying chance itself.'
+verbatim: 'This paper argues that objective chance is not explanatorily primitive. The target is chance-fundamentalism:
+  the view that chance can serve as the primitive explanatory floor of the modal structure in which alternatives
+  and weights are defined. Against this view, I argue that every contentful objective-chance attribution
+  assigns a normalized or measure-like weight to an outcome within a field of alternatives.'
+source:
+  doi: 10.5281/zenodo.20537309
+  title: Objective Chance and the Priority of Modal Difference
+  year: 2026
+fetched_from_url: https://zenodo.org/api/records/20537309
+locator: Zenodo record abstract (desc field), via API
+tier: Open
+base_relation: holds
+base_justification: Companion/refinement of kc-ep-031 (20473230); same relation to base — consistent with
+  the discipline of not treating an unexamined structure (here, the space of alternatives) as a free primitive
+  (kc-base-016 spirit).
+glosa_use: skip
+glosa_target: (background metaphysics, no direct FOUNDATION hook)
+notes: 2026-06-04.

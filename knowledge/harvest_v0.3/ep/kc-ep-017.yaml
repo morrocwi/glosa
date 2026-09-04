@@ -1,0 +1,25 @@
+id: kc-ep-017
+kind: claim
+title: 'Causal Qualia: phenomenal interior as bounded causal organization, not brute privacy'
+text: Argues privacy alone cannot explain phenomenality; proposes phenomenal interior arises from an embodied
+  agent modeling its own condition under bounded access, regulatory dependence and affective stakes —
+  components include bounded interior horizon, self-indexed modeling, homeostatic coupling, valence, ownership
+  binding.
+verbatim: Why internal information processing should ever be accompanied by phenomenal experience remains
+  one of the central questions in philosophy of mind. Yet the hard problem is often posed in a form so
+  broad that it obscures distinctions that matter theoretically. This article develops a constraint-based
+  approach intended to sharpen that terrain.
+source:
+  doi: 10.5281/zenodo.18968098
+  title: 'Causal Qualia: A Constraint Theory of Phenomenal Interior'
+  year: 2026
+fetched_from_url: https://zenodo.org/api/records/18968098
+locator: Zenodo record abstract (desc field), via API
+tier: Open
+base_relation: holds
+base_justification: Consistent with base's explicit stance that phenomenality is left open as a downstream
+  typed readout with the bridge to lived experience unresolved (kc-base cf. 21529456/22301202 description
+  of phenomenality); this paper is one candidate account, not itself asserted as settled by base.
+glosa_use: skip
+glosa_target: (open philosophical question, no direct FOUNDATION hook)
+notes: 2026-03-11.

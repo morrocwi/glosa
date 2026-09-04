@@ -1,0 +1,31 @@
+id: kc-aihp-013
+kind: claim
+title: 'Possession–Constitution Collapse and ''knower fetishism'': epistemic value does not require a
+  human-like knower'
+text: Modern epistemology often slides from the plausible claim that knowing is a state of a subject to
+  the much stronger, usually undefended claim that epistemically significant content only acquires standing
+  through a human or human-like knower — the Possession–Constitution Collapse. Its social form, knower
+  fetishism, converts an earned relation among evidence/reliability/accountability into an apparently
+  intrinsic property of the recognized knower.
+verbatim: 'I argue that modern epistemology often slides from a plausible claim about the possession of
+  knowledge—that knowing is a state or standing of a subject—to a much stronger and usually undefended
+  claim about the constitution of epistemic value—that epistemically significant content, processes, records,
+  or sources acquire standing only through a human or human-like knower. I call this the Possession–Constitution
+  Collapse. Its social form is knower fetishism: the conversion of an earned relation among evidence,
+  reliability, accountability, and inquiry into an apparently intrinsic property of the recognized knower.'
+source:
+  doi: 10.5281/zenodo.22301202
+  title: Written by AI. Still True. Knower Fetishism, Epistemic Pedigree, and the Human Face as a Bad
+    Theory of Truth
+  year: 2026
+fetched_from_url: local:sources/WRITTEN_BY_AI_STILL_TRUE_v6.txt
+locator: lines 21-27
+tier: Dr
+base_relation: holds
+base_justification: 'Direct analogue of kc-base-004 (Q3 — identity by role, not by number: the equal-number
+  fallacy) generalized from numeric identity to knower identity: both ban treating a superficial credential/digit-match
+  as the thing itself rather than checking the underlying role/warrant.'
+glosa_use: adopt
+glosa_target: FOUNDATION §2 AI-disclosure norm — grounds why an AI-drafted claim card is not disqualified
+  by authorship alone
+notes: ''

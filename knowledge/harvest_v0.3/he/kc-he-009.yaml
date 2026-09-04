@@ -1,0 +1,24 @@
+id: kc-he-009
+kind: definition
+title: Health as constraint-admissible trajectory — identity redefined as admissible continuity, not static sameness
+text: The paper defines health domain-restrictedly as maintained dispositional capacity of a temporally exposed,
+  vulnerable process to preserve its identity-pattern through constraint-admissible reconstitution across
+  state-transitions, rejecting equilibrium/statistical-normality/moral-fitness framings, and redefines identity
+  itself as admissible continuity of identity-defining integration rather than static structural sameness.
+verbatim: "Health is defined not as equilibrium, statistical normality, or moral fitness, but as the maintained
+  dispositional capacity of a temporally exposed vulnerable integrated process to preserve its identity-pattern
+  through constraint-admissible reconstitution across state-transitions."
+source:
+  doi: 10.5281/zenodo.18813886
+  title: "Health as Constraint-Admissible Trajectory: A Genesis–CMP Aligned Minimal Metaphysics of Health"
+  year: 2026
+fetched_from_url: https://zenodo.org/api/records/18813886
+locator: abstract (Zenodo record metadata.description)
+tier: Open
+base_relation: holds
+base_justification: Explicitly aligned by the author with the Genesis/CMP process-structural ontology that
+  underlies the base cards' own framing; a compatible domain extension, not a contradiction of any base card.
+glosa_use: skip
+glosa_target: "n/a — domain metaphysics of health, not a methodology rule for glosa's own kernel"
+notes: One of the two named "anchors" of the he hub cluster (per registry/zenodo_clusters.json); kept as a
+  single card since its content is domain ontology rather than evidence/disclosure method.

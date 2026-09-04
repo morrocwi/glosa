@@ -1,0 +1,29 @@
+id: kc-ep-033
+kind: method
+title: 'Experience Is the Human LoRA: readout-retention theory of selective model change'
+text: Argues experience is a selective, low-rank transformation of the observer (a cross-level identity
+  with the engineering LoRA procedure), developed inside a finite-discrete readout framework where every
+  accessible state is a finite retained difference on a finite graph, time is indexed by n∈N, and state/update
+  matrices are rational with no continuum limit required; if an update factors through an active readout
+  space of dimension m inside a d-dimensional organization, update rank is bounded by m (finite-bottleneck
+  condition m<d).
+verbatim: This paper argues that experience is the human LoRA. The identity is not a claim that the brain
+  is a transformer, that phenomenal character is matrix multiplication, or that biological learning implements
+  the engineering procedure introduced as Low-Rank Adaptation. It is a cross-level identity claim about
+  one finite event. From the first-person side, an experience is a temporally bounded, embodied, affectively
+  weighted, world-directed appearance.
+source:
+  doi: 10.5281/zenodo.21425420
+  title: 'Experience Is the Human LoRA: A Readout–Retention Theory of Selective Model Change'
+  year: 2026
+fetched_from_url: https://zenodo.org/api/records/21425420
+locator: Zenodo record abstract (desc field), via API
+tier: Dr
+base_relation: holds
+base_justification: Explicitly built inside the base's own finite-discrete readout framework (matches
+  kc-base-009 δ_R, kc-base-015 discrete ladder, kc-base-032 doctrine of finite discrete computable objects)
+  — a direct application/extension, not merely compatible.
+glosa_use: adopt
+glosa_target: FOUNDATION §1.0 Pillars (methodology) — worked example of the finite-discrete-readout formalism
+  applied to learning
+notes: 2026-07-18; tags ai, aihp.

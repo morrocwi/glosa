@@ -1,0 +1,27 @@
+id: kc-aihp-003
+kind: claim
+title: Three falsifiable propositions (H1 design, H2 conceptual, H3 empirical) on claim-card discipline
+text: 'Concept paper states, as untested propositions not demonstrated results: a claim card bound to
+  an Existence–Attribution–Disclosure norm and gated by an independence ladder could substitute for institutional
+  certification (H1/H2); cross-vendor AI checking would outperform same-vendor re-checking at catching
+  undisclosed AI-fill (H3, n=0, untested). Each proposition carries a named falsifier.'
+verbatim: Three candidate hypotheses (Section 5) — a design mechanism (H1), a conceptual claim about where
+  rigour lives (H2), and an empirical claim about cross-vendor AI checking (H3) — propose that a claim-card
+  discipline bound to Existence–Attribution–Disclosure and gated by an independence ladder could make
+  a standalone scholar's claim reader-checkable without an institutional credential. ... Each proposition
+  carries a named falsifier and is placed against 48 independently verified citation cards
+source:
+  doi: 10.5281/zenodo.22307841
+  title: 'Rigour Without Infrastructure: Three Propositions on Claim-Card Discipline as a Substitute for
+    Institutional Certification (glosa concept paper, v0.2.0)'
+  year: 2026
+fetched_from_url: local:dist/glosa-concept-paper-0.2.0-draft.pdf
+locator: p.1, In brief
+tier: Dr
+base_relation: holds
+base_justification: 'Each proposition names a falsifier before being carried as a claim — matches kc-base-008
+  (Fail-Able Gate Law: a gate needs a machine-derived failing control) and kc-base-039 (falsifiable claims
+  table pattern C1–C7).'
+glosa_use: already_in_glosa
+glosa_target: FOUNDATION §5 propositions/hypothesis registry
+notes: ''

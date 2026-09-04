@@ -1,0 +1,30 @@
+id: kc-ph-049
+kind: claim
+title: 'Fine-Structure Constant as Geometric Necessity: First Derivation of α from Information-Theoretic
+  Architecture'
+text: 'Self-published Zenodo preprint (single-author physics/information-theory program, 2025-11-18). Abstract
+  reports: Building on our earlier work — [Y. Lahtee, Zenodo (2025), doi:10.5281/zenodo.17624144 ] — where we
+  showed that the gravitational constant G and the Planck constant ℏ arise naturally from the geometry,
+  topology, and information structure of spacetime, we now extend the same reasoning to explain the
+  fine-structure constant α and the entire hierarchy of gauge...'
+verbatim: 'Building on our earlier work — [Y. Lahtee, Zenodo (2025), doi:10.5281/zenodo.17624144 ] — where we showed
+  that the gravitational constant G and the Planck constant ℏ arise naturally from the geometry, topology, and
+  information structure of spacetime, we now extend the same reasoning to explain the fine-structure constant
+  α and the entire hierarchy of gauge couplings. In this new framework, the strengths of the fundamental
+  forces are not arbitrary numbers. They emerge from the way space itself is organized — how it curves, loops,
+  and transmits information. Step by step,'
+source:
+  doi: 10.5281/zenodo.17636870
+  title: 'Fine-Structure Constant as Geometric Necessity: First Derivation of α from Information-Theoretic
+    Architecture'
+  year: 2025
+fetched_from_url: 'https://zenodo.org/api/records/17636870'
+locator: Zenodo record abstract (desc field), via API, from registry/zenodo_all_records.json
+tier: Open
+base_relation: open
+base_justification: Domain physics content (a specific claim/derivation/observational note) not directly addressed by any base
+  card; carries no base-card contradiction but also no base endorsement — left open.
+glosa_use: skip
+glosa_target: n/a — domain physics claim outside glosa's method-layer scope
+notes: Part of the single-author 'ph' hub iterative physics-theory series (Zenodo id 17636870, 2025-11-18);
+  method-layer extraction only (self-publication + no-peer-review posture), not the physics content itself.

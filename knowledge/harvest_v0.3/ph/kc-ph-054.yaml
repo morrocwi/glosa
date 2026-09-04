@@ -1,0 +1,31 @@
+id: kc-ph-054
+kind: method
+title: 'Phenomenological Discovery Note: Minimal-Claim Numerical Consistencies Across Gauge, Scalar, and
+  Gravitational Sectors a'
+text: 'Self-published Zenodo preprint (single-author physics/information-theory program, 2025-11-20). Abstract
+  reports: This note reports a set of reproducible numerical consistencies across selected observables at the
+  electroweak scale µ = mZ . No theoretical mechanism is proposed. The relations presented are empirical
+  ansatzes constructed from simple geometric constants (φ, π) and integer factors, designed solely to test
+  whether compact forms can reproduce measured quantities within known experimental...'
+verbatim: 'This note reports a set of reproducible numerical consistencies across selected observables at the
+  electroweak scale µ = mZ . No theoretical mechanism is proposed. The relations presented are empirical
+  ansatzes constructed from simple geometric constants (φ, π) and integer factors, designed solely to test
+  whether compact forms can reproduce measured quantities within known experimental uncertainties. All results
+  are fully reproducible by direct substitution of the stated values. This work does not derive any physical
+  law, field equation, or coupling structure. Keywords: phenomenology, electroweak scale, scalar mass, strong
+  coupling'
+source:
+  doi: 10.5281/zenodo.17663564
+  title: 'Phenomenological Discovery Note: Minimal-Claim Numerical Consistencies Across Gauge, Scalar, and
+    Gravitational Sectors at µ = mZ'
+  year: 2025
+fetched_from_url: 'https://zenodo.org/api/records/17663564'
+locator: Zenodo record abstract (desc field), via API, from registry/zenodo_all_records.json
+tier: Open
+base_relation: open
+base_justification: Domain physics content (a specific claim/derivation/observational note) not directly addressed by any base
+  card; carries no base-card contradiction but also no base endorsement — left open.
+glosa_use: skip
+glosa_target: n/a — domain physics claim outside glosa's method-layer scope
+notes: Part of the single-author 'ph' hub iterative physics-theory series (Zenodo id 17663564, 2025-11-20);
+  method-layer extraction only (self-publication + no-peer-review posture), not the physics content itself.

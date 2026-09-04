@@ -1,0 +1,25 @@
+id: kc-aihp-012
+kind: method
+title: Identification ladder + typed provenance DAG + defeater-routing result
+text: A complementary identification ladder tracks the weakest augmentation layer at which a distinction
+  becomes identified; the resulting typed provenance DAG supports a defeater-routing result — source-specific
+  defeaters propagate exactly along the distinctions that depend on that source, while misattribution
+  misroutes defeat and correction.
+verbatim: 'a complementary identification ladder tracks the weakest augmentation layer at which a distinction
+  becomes identified. The resulting typed provenance DAG supports a defeater-routing result: source-specific
+  defeaters propagate exactly along the distinctions that depend on that source, while misattribution
+  misroutes defeat and correction.'
+source:
+  doi: 10.5281/zenodo.22301318
+  title: 'The Readout Condition: Distinguishability, Access, and Epistemic Warrant'
+  year: 2026
+fetched_from_url: local:sources/READOUT_CONDITION_2026-08.txt
+locator: lines 32-36
+tier: Th_coqc
+base_relation: holds
+base_justification: The defeater-routing/misattribution mechanism is a direct analogue of kc-base-013
+  (witness table ruling out rival operators — a concrete, traceable per-node audit rather than a global
+  assertion) applied to citation-graph correction rather than an operator-graph.
+glosa_use: adopt
+glosa_target: FOUNDATION §7.2 defeater/correction routing for claim cards
+notes: ''

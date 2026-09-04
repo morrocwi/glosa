@@ -1,0 +1,31 @@
+id: kc-ph-022
+kind: claim
+title: 'EoE (K = 32): Core Proof of H0–H4 with Sharp Threshold'
+text: 'Self-published Zenodo preprint (single-author physics/information-theory program, 2025-10-29). Abstract
+  reports: This paper provides a concise, self-contained proof of hypotheses H0--H4 in the $K=32$
+  Equation-of-Everything (EoE) framework. We define the HG-free invariant $\CT = \Tcoh\,\alp^{32}$ (H0),
+  establish invertibility between $\Tcoh$ and $\alp$ (H1--H2), introduce dimensionless bridge variables (H3),
+  and prove the lock criterion $\rholock = \betayc \ge 0.95$ (H4). The proof leverages a sharp threshold
+  $\alp...'
+verbatim: 'This paper provides a concise, self-contained proof of hypotheses H0--H4 in the $K=32$
+  Equation-of-Everything (EoE) framework. We define the HG-free invariant $\CT = \Tcoh\,\alp^{32}$ (H0),
+  establish invertibility between $\Tcoh$ and $\alp$ (H1--H2), introduce dimensionless bridge variables (H3),
+  and prove the lock criterion $\rholock = \betayc \ge 0.95$ (H4). The proof leverages a sharp threshold $\alp
+  \le 0.05/\pi$, with numerical anchors based on the CODATA-2022 fine-structure constant. Dimensional
+  consistency, monotonicity, and sensitivity margins are rigorously analyzed. This work links to the broader
+  EoE series: Lahtee (2025), \emph{K=32: Equation of Everything}, Zenodo,'
+source:
+  doi: 10.5281/zenodo.17475130
+  title: 'EoE (K = 32): Core Proof of H0–H4 with Sharp Threshold'
+  year: 2025
+fetched_from_url: 'https://zenodo.org/api/records/17475130'
+locator: Zenodo record abstract (desc field), via API, from registry/zenodo_all_records.json
+tier: Open
+base_relation: superseded
+base_justification: Uses an earlier, since-abandoned working name/formalism (this program cycled through several framework names
+  before settling on retained-information/δ_R vocabulary); the base corpus's mother equation (kc-base-020) and
+  trunk equation (kc-base-022) replace this formulation.
+glosa_use: skip
+glosa_target: n/a — abandoned vocabulary, replaced by base mother/trunk equation
+notes: Part of the single-author 'ph' hub iterative physics-theory series (Zenodo id 17475130, 2025-10-29);
+  method-layer extraction only (self-publication + no-peer-review posture), not the physics content itself.

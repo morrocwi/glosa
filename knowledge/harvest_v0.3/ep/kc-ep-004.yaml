@@ -1,0 +1,25 @@
+id: kc-ep-004
+kind: claim
+title: 'Reflective Note: verbatim-preserved ethnographic self-observation'
+text: An ethnographic/phenomenological self-observation of an ordinary trader's worldview shaped by AI,
+  explicitly preserved with 'no sentences or meanings altered from the original Thai version' — an early
+  instance of the verbatim-preservation discipline later formalized as the Blackbox Log.
+verbatim: This note represents an ethnographic reflection within the Wisdom Context framework — a phenomenological
+  and epistemic self-observation through the life and language of an ordinary trader whose worldview was
+  gradually shaped by words, meaning, and artificial intelligence. No sentences or meanings have been
+  altered from the original Thai version. The structure below follows the academic format for archival
+  publication on Zenodo.
+source:
+  doi: 10.5281/zenodo.17341231
+  title: 'Reflective Note: The Horizon of Reason and the Anxiety of Reality'
+  year: 2025
+fetched_from_url: https://zenodo.org/api/records/17341231
+locator: Zenodo record abstract (desc field), via API
+tier: Open
+base_relation: refined_by_later_work
+base_justification: The ad hoc verbatim-preservation practice here is later formalized into the dedicated
+  Blackbox Log artifact and tier (positional/Dr) described in kc-ep-047 (22307891); base cards do not
+  yet cover this practice directly.
+glosa_use: adapt
+glosa_target: FOUNDATION §2.3 Blackbox Note and R0/R1/R2 internal registers
+notes: No keywords in registry; short methodological note.

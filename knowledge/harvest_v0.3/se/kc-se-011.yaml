@@ -1,0 +1,33 @@
+id: kc-se-011
+kind: method
+title: SWSF policy brief — eight dimensions, four mechanisms, framework-integration method, no outcome claim
+text: A policy brief proposes the "Strong, Warm & Safe Family Ecosystem" (SWSF) framework for Thailand's
+  multicultural context, structured as eight dimensions and four mechanisms, integrating Islamic ethics,
+  social innovation, and family-systems thinking. It names the issues addressed (trafficking, domestic
+  violence, mental health, digital safety) and the SDGs it aligns with, but the abstract states no
+  evaluation or effectiveness result — it presents the framework's structure only.
+verbatim: "Families are the foundation of society, shaping individual well-being and social stability. The
+  Strong, Warm & Safe Family Ecosystem (SWSF) Framework presents eight dimensions and four mechanisms to
+  strengthen families in Thailand's multicultural context. The framework addresses issues such as human
+  trafficking, domestic violence, mental health, and digital safety while aligning with SDGs 3, 5, and 16.
+  Developed by Araya Nikah Social Enterprise, this policy brief integrates Islamic ethics, social
+  innovation, and family systems thinking to create a holistic model for social sustainability."
+source:
+  doi: 10.5281/zenodo.17280895
+  title: "Strong, Warm & Safe Family Ecosystem"
+  year: 2025
+fetched_from_url: https://zenodo.org/api/records/17280895
+locator: abstract (Zenodo record metadata.description, full text)
+tier: Open
+base_relation: outdated
+base_justification: Same as kc-se-010 — this earlier (2025-10-06) policy-brief abstract carries no
+  explicit claim-tier language, and its "holistic model" framing is superseded, in this same author's
+  later work, by the explicit multi-tier claim boundary the corpus's se-hub foundational papers state
+  (kc-se-003 MOCA's five-tier ladder).
+glosa_use: skip
+glosa_target: "n/a — logged as a superseded-vocabulary example only"
+notes: >
+  This DOI's Zenodo API record failed validation per registry/zenodo_clusters.json (its "failed" map
+  lists a 400 error on metadata.dates for id 17280895) at cluster-build time, but the abstract text
+  was already captured in registry/zenodo_all_records.json from an earlier successful fetch — used that
+  cached text as the source per task instructions (Zenodo abstract fallback), not a fresh curl.

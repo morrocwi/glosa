@@ -1,0 +1,31 @@
+id: kc-ph-034
+kind: claim
+title: 'Theoretical Remark: Non-ideal Dissipation as the Missing Piece Bridging Ambipolar-Diffusive Winds in Red
+  Giants and Long'
+text: 'Self-published Zenodo preprint (single-author physics/information-theory program, 2025-11-05). Abstract
+  reports: The old, cool white dwarf LSPM J0207+3331, discovered through the Backyard Worlds: Planet 9 project
+  (2019), has been reanalyzed using Keck spectroscopy (NASA/Keck, 2025), confirming strong photospheric
+  pollution by over a dozen heavy elements (Fe, Si, Ca, Ni, Mg). Such long-lived accretion, over 3 Gyr after
+  the star’s nuclear death, implies that its debris ring–white...'
+verbatim: 'The old, cool white dwarf LSPM J0207+3331, discovered through the Backyard Worlds: Planet 9 project (2019),
+  has been reanalyzed using Keck spectroscopy (NASA/Keck, 2025), confirming strong photospheric pollution by
+  over a dozen heavy elements (Fe, Si, Ca, Ni, Mg). Such long-lived accretion, over 3 Gyr after the star’s
+  nuclear death, implies that its debris ring–white dwarf system constitutes an open, weakly dissipative
+  system. We argue that its energy loss follows a long-tail Lyapunov-type relaxation, where dE/dt ≤ 0, E(t) =
+  E0e −t/τeff , and τeff ∼ 109 yr. This slow'
+source:
+  doi: 10.5281/zenodo.17535369
+  title: 'Theoretical Remark: Non-ideal Dissipation as the Missing Piece Bridging Ambipolar-Diffusive Winds in Red
+    Giants and Long-Tail Lyapunov Accretion in LSPM J0207+3331'
+  year: 2025
+fetched_from_url: 'https://zenodo.org/api/records/17535369'
+locator: Zenodo record abstract (desc field), via API, from registry/zenodo_all_records.json
+tier: Open
+base_relation: superseded
+base_justification: Uses an earlier, since-abandoned working name/formalism (this program cycled through several framework names
+  before settling on retained-information/δ_R vocabulary); the base corpus's mother equation (kc-base-020) and
+  trunk equation (kc-base-022) replace this formulation.
+glosa_use: skip
+glosa_target: n/a — abandoned vocabulary, replaced by base mother/trunk equation
+notes: Part of the single-author 'ph' hub iterative physics-theory series (Zenodo id 17535369, 2025-11-05);
+  method-layer extraction only (self-publication + no-peer-review posture), not the physics content itself.

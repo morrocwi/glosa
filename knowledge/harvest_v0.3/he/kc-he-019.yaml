@@ -1,0 +1,25 @@
+id: kc-he-019
+kind: rule
+title: Systemic Repair Capacity Theory — explicit no-novelty-at-mechanism-level claim, novelty scoped to architecture only
+text: The paper states plainly that it does NOT claim novelty at the level of individual biological mechanisms
+  (vagus nerve, lymphatic system, glymphatic exchange, etc. are all already established) and scopes its own
+  contribution narrowly to the architectural/epistemological act of integrating known mechanisms into one
+  repair-capacity model plus a measurement strategy, rather than letting integration read as mechanism discovery.
+verbatim: "The theory does not claim novelty at the level of individual biological mechanisms; the vagus nerve,
+  the lymphatic system, glymphatic exchange, neuroimmune signaling, interoception, and circadian metabolism are
+  all established. Its contribution is architectural and epistemological."
+source:
+  doi: 10.5281/zenodo.20229203
+  title: "Systemic Repair Capacity Theory: A Blood–Lymph–Neural Architecture of Human Health and Chronic Dysregulation"
+  year: 2025
+fetched_from_url: https://zenodo.org/api/records/20229203
+locator: abstract (Zenodo record metadata.description)
+tier: Open
+base_relation: holds
+base_justification: A textbook instance of the base's ban on the novel/first/prior-art framing this task's own
+  Rule 17 encodes for glosa cards — the source paper polices its own novelty claim the same way glosa's cards
+  must, scoping the claim to reorganization/architecture rather than to underlying mechanism.
+glosa_use: adopt
+glosa_target: "FOUNDATION §5 disclaimer catalogue (novelty-scoping clause)"
+notes: One of the two named "anchors" of the he hub cluster (per registry/zenodo_clusters.json). Directly
+  citable precedent for how a glosa claim card should scope its own novelty language.

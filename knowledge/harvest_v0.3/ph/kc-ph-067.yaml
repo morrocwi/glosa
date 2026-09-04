@@ -1,0 +1,28 @@
+id: kc-ph-067
+kind: claim
+title: 'Reframing Naturalness: The Hierarchy Problem as a Timescale Stability Question'
+text: 'Self-published Zenodo preprint (single-author physics/information-theory program, 2025-12-10). Abstract
+  reports: Have you ever felt that the numbers in our universe look almost randomly assembled? In the Standard
+  Model of particle physics, we are forced to accept 19 fundamental input parameters whose values appear
+  scattered without pattern. The particle masses span enormous ranges, from extremely light to extraordinarily
+  heavy, with puzzling gaps and unexplained hierarchies. Physicists...'
+verbatim: Have you ever felt that the numbers in our universe look almost randomly assembled? In the Standard Model of
+  particle physics, we are forced to accept 19 fundamental input parameters whose values appear scattered
+  without pattern. The particle masses span enormous ranges, from extremely light to extraordinarily heavy,
+  with puzzling gaps and unexplained hierarchies. Physicists have spent decades searching for a deeper
+  principle behind this messy landscape, yet the more we look, the more chaotic it appears. I began wondering
+  whether nature is truly hiding deep secrets—or whether we have
+source:
+  doi: 10.5281/zenodo.17873797
+  title: 'Reframing Naturalness: The Hierarchy Problem as a Timescale Stability Question'
+  year: 2025
+fetched_from_url: 'https://zenodo.org/api/records/17873797'
+locator: Zenodo record abstract (desc field), via API, from registry/zenodo_all_records.json
+tier: Open
+base_relation: open
+base_justification: Domain physics content (a specific claim/derivation/observational note) not directly addressed by any base
+  card; carries no base-card contradiction but also no base endorsement — left open.
+glosa_use: skip
+glosa_target: n/a — domain physics claim outside glosa's method-layer scope
+notes: Part of the single-author 'ph' hub iterative physics-theory series (Zenodo id 17873797, 2025-12-10);
+  method-layer extraction only (self-publication + no-peer-review posture), not the physics content itself.

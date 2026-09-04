@@ -1,0 +1,31 @@
+id: kc-ai-001
+kind: definition
+title: The Readout Condition — Existence/Attribution/Disclosure norm
+text: 'Defines the Readout Condition: a three-part norm (Existence, Attribution, Disclosure) that any claim-level
+  distinction must satisfy to carry epistemic warrant — it must have a provenance path, be licensed by the source
+  it is credited to, and any essential augmentation beyond that source must stay declared/recoverable in an audit.'
+verbatim: 'Principle 1 (Existence). Every claim-level distinction that bears epistemic weight must have an epistemic
+  provenance path.
+
+  Principle 2 (Attribution). If a claim attributes a distinction to a source S, then S must license that distinction
+  under the relevant access condition.
+
+  Principle 3 (Disclosure). If a distinction depends essentially on an augmentation beyond the attributed source,
+  that augmentation must remain declared or recoverable in an epistemic audit.
+
+  The conjunction is the Readout Condition.'
+source:
+  path: sources/READOUT_CONDITION_2026-08.txt
+  title: 'The Readout Condition: Distinguishability, Access, and Epistemic Warrant'
+  year: 2026
+fetched_from_url: /home/yaoharee-lt/ANSE.ASIA/glosa/sources/READOUT_CONDITION_2026-08.txt
+locator: lines 44-52 (Principles 1-3, 'The Readout Condition')
+tier: definition
+base_relation: holds
+base_justification: Direct formalization of kc-base-001's readout-not-truth stance and kc-base-006's non-injective-readout
+  limit, cast as a named three-part warrant norm; does not revise the base cards, applies them.
+glosa_use: adopt
+glosa_target: FOUNDATION §4 (tier/warrant discipline) — candidate source for a formal Existence/Attribution/Disclosure
+  gate alongside the six-tier ladder
+notes: Zenodo record 10.5281/zenodo.22301318; concept DOI 10.5281/zenodo.22301317. This is the paper glosa's own
+  card schema (source/fetched_from_url/locator/verbatim fields) is itself an operational instance of.

@@ -1,0 +1,27 @@
+id: kc-aihp-015
+kind: claim
+title: 'NIDA national-conference slides: AI-mediated society risks the human forgetting their own status
+  as chooser and responsibility-bearer'
+text: 'Thai-language conference slides (NIDA, 29 Aug 2026) presenting, informally, the same concern as
+  the companion English paper ''The Civilization of Knowledge'' (18943971): in a society increasingly
+  mediated by AI, the human risks forgetting their status as chooser and their attendant responsibility.
+  Presentation slides, not independently reviewed.'
+verbatim: เนื้อหาเป็นการนำเสนอเชิงแนวคิดว่าด้วยปัญญาประดิษฐ์กับอารยธรรมความรู้ — การที่มนุษย์ลืมสถานะการเป็นผู้เลือกและความรับผิดชอบของตนในสังคมที่ถูกสื่อกลางด้วย
+  AI; เป็นเอกสารนำเสนอ ไม่ใช่บทความที่ผ่านการประเมิน
+source:
+  doi: 10.5281/zenodo.22302410
+  title: 'ปัญญาประดิษฐ์กับอารยธรรมความรู้: การลืมสถานะการเป็นตัวเลือกและความรับผิดชอบของมนุษย์ในสังคมที่ถูกสื่อกลางด้วยปัญญาประดิษฐ์
+    (สไลด์นำเสนอระดับชาติ NIDA, 29 ส.ค. 2569)'
+  year: 2026
+fetched_from_url: https://zenodo.org/api/records/22302410
+locator: description (Thai block)
+tier: Open
+base_relation: refined_by_later_work
+base_justification: Pre-formal, narrative-register treatment of agency/responsibility without the readout
+  apparatus; the same concern is later given a checkable mechanism by kc-base-027 (bounded knower framing)
+  and the six-tier discipline (kc-base-007) that this hub's own later papers (e.g. 22301202, 22301318)
+  apply. Presentation-only artifact, not independently reviewed.
+glosa_use: skip
+glosa_target: n/a — slide deck, no new mechanism beyond companion paper 18943971
+notes: Concept-duplicate of kc-aihp-016 (22301886) — same title/date/description, different Zenodo concept
+  id; kept as a separate record per the harvest's own dedupe-by-concept rule.

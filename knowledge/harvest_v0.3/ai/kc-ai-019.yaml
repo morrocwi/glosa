@@ -1,0 +1,25 @@
+id: kc-ai-019
+kind: claim
+title: Information access vs context access — AI does not reconstruct situational conditions
+text: Distinguishes event-specific context (the real-world event's situational/temporal/relational/agency-bearing
+  conditions) from interpretive context available to human agents; argues AI substantially expands access to interpreted
+  information and linguistic synthesis but does NOT reconstruct the full situational conditions of events — a structural
+  distinction between information access and context access.
+verbatim: 'It argues that while AI systems substantially expand access to interpreted information and linguistic
+  synthesis, they do not reconstruct the full situational, temporal, relational, and agency-bearing conditions of
+  events. The contribution is fourfold: (i) a structural distinction between information access and context access'
+source:
+  path: registry/zenodo_all_records.json
+  title: AI, Translation, and Access to Event-Specific Context
+  year: 2026
+fetched_from_url: https://zenodo.org/api/records/18517054
+locator: record 18517054, metadata.description (Abstract)
+tier: Dr
+base_relation: holds
+base_justification: 'A domain instance of the readout-not-truth lens (kc-base-001): ''information'' delivered by
+  AI is itself a finite readout, never the event''s full situational state — consistent with, not revising, that
+  stance.'
+glosa_use: adopt
+glosa_target: FOUNDATION §1 — information-access vs context-access distinction, useful for the glosa harvest task's
+  own 'never from memory, always cite locator' discipline
+notes: Self-declared conceptual/non-empirical, Open Civil Science framework, not peer reviewed at release.

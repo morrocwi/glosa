@@ -1,0 +1,30 @@
+id: kc-ep-035
+kind: definition
+title: 'Readout Genesis Standalone Synthesis: typed belief layer and meta-readout governance'
+text: 'A journal-form synthesis of the Information Epistemic Foundation: the root (retained distinctions,
+  graph-Laplacian operator, ordered dynamics) contains no belief/knowledge/truth/mind/institution/consciousness
+  as primitives — these become admissible only after a declared quotient and readout; inserts a typed
+  belief layer, defines knowledge as an auditable status of a claim (not a knower''s possession/authority),
+  and separates provenance/contact/method/inference/uncertainty/objection/correction/independence/transport/lineage
+  as admission-architecture fields.'
+verbatim: This paper presents a journal-form synthesis of the Information Epistemic Foundation as a bounded
+  domain translation of Readout Genesis. The root contains retained distinctions, a graph-Laplacian operator,
+  ordered dynamics, context, and lineage; it does not contain belief, knowledge, truth, mind, institution,
+  or consciousness as primitive objects. Those terms become admissible only after a declared quotient
+  and readout.
+source:
+  doi: 10.5281/zenodo.21529456
+  title: 'Readout Genesis Standalone Synthesis: Information Epistemic Foundation, Conditioned Agency,
+    and Meta-Readout Governance'
+  year: 2026
+fetched_from_url: https://zenodo.org/api/records/21529456
+locator: Zenodo record abstract (desc field), via API
+tier: Dr
+base_relation: holds
+base_justification: This IS the base's own synthesis restated in journal form — the graph-Laplacian root
+  and 'knowledge as auditable status not possession' claim map directly onto kc-base-011 (L_R) and the
+  EPIS-KNOWLEDGE-VALIDATION horizontal-authority stance; treat as a primary base-adjacent source, not
+  merely compatible.
+glosa_use: adopt
+glosa_target: 'FOUNDATION §3.2 Field list (claim-card admission architecture: provenance/method/inference/uncertainty/objection/correction/independence/transport/lineage)'
+notes: 2026-07-24; one of the ep hub's three cluster anchors.

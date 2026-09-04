@@ -1,0 +1,25 @@
+id: kc-ep-018
+kind: method
+title: 'Beyond Halal Labels: premature category stabilization in Muslim-friendly tourism'
+text: Argues visible halal-friendly assurances do not reliably convert into trust/revisit/performance
+  because providers prematurely reduce heterogeneous Muslim travelers into rigid service categories (premature
+  category stabilization), generating expectation mismatch and trust erosion; proposes a framework linking
+  symbolic assurance to operational coherence.
+verbatim: Muslim-friendly tourism has expanded from a niche market concern into a visible strategic domain
+  in global tourism and hospitality. Existing scholarship has established that halal-friendly attributes,
+  Islamic destination features, and Muslim-compatible service provisions can influence destination choice,
+  perceived value, and tourist satisfaction.
+source:
+  doi: 10.5281/zenodo.19059720
+  title: 'Beyond Halal Labels: Premature Category Stabilization in Muslim-Friendly Tourism'
+  year: 2026
+fetched_from_url: https://zenodo.org/api/records/19059720
+locator: Zenodo record abstract (desc field), via API
+tier: Open
+base_relation: open
+base_justification: A domain (tourism) mechanism paper; not built on or judged directly by the epistemic
+  base cards — it introduces its own construct (PCS) independently. No direct base relation to assess.
+glosa_use: skip
+glosa_target: (domain hub tourism, method-layer only relevant if PCS construct is reused elsewhere)
+notes: First appearance of the Premature Category Stabilization (PCS) construct that recurs across kc-ep-019/020
+  below; tags islam, tourism.

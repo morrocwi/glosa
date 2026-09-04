@@ -1,0 +1,23 @@
+id: kc-base-032
+kind: rule
+title: 'Doctrine reminder: readout-not-truth, symbols are finite discrete computable objects'
+text: Every symbol in the universal equation is a finite, discrete, computable object. SI units, c, ħ,
+  continuum limits are adapters applied at the boundary when a human or instrument needs a familiar dial.
+  The native unit is RD.
+verbatim: 'Doctrine reminder before the equations: this is **readout-not-truth**. Every symbol below is
+  a finite, discrete, computable object. SI units, `c`, `ħ`, continuum limits — these are *adapters* applied
+  at the boundary when a human or an instrument needs a familiar dial. The native unit is `RD`.'
+source:
+  path: readout_genesis/READOUT_GENESIS_CORE.md
+  title: Genesis of the Universe, Step by Step — Genesis Step-by-Step v3.1
+  year: 2026
+fetched_from_url: ~/ANSE.ASIA/readout_genesis/READOUT_GENESIS_CORE.md
+locator: Part II §II.0, lines ~865-869
+tier: Dr
+base_relation: holds
+base_justification: This IS a base card from the lens root text; base cards are the ground the ledger
+  is judged against.
+glosa_use: adopt
+glosa_target: FOUNDATION §1.0 Pillars — ontology/epistemology/methodology
+notes: A crisp restatement of readout-not-truth in equation-writing practice ('units are adapters, not
+  the native object') — directly reusable framing for any glosa card that must present a formula or number.

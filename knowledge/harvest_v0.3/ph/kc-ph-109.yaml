@@ -1,0 +1,33 @@
+id: kc-ph-109
+kind: claim
+title: 'PRFT v28 Master Standalone – Full Detailed Rewrite: Q3 Null-Cone Geometry, Dissipative Readout, and
+  Adapter-Limited Solv'
+text: 'Self-published Zenodo preprint (single-author physics/information-theory program, 2026-06-05). Abstract
+  reports: This document is a full detailed rewrite of the PRFT v28 master standalone manuscript. It
+  consolidates the hardened dissipative PDE/Lagrangian layer, the positivity-safe turnover-rate readout, the
+  theorem-level Q3–Koide– angle equivalence, the chamber-conditioned locked-half selector, the v26 chamber
+  audit, the v27-to-v28 correction path, and the current solver-architecture discipline developed through
+  benchmark testing. The central public claim...'
+verbatim: 'This document is a full detailed rewrite of the PRFT v28 master standalone manuscript. It consolidates the
+  hardened dissipative PDE/Lagrangian layer, the positivity-safe turnover-rate readout, the theorem-level
+  Q3–Koide– angle equivalence, the chamber-conditioned locked-half selector, the v26 chamber audit, the
+  v27-to-v28 correction path, and the current solver-architecture discipline developed through benchmark
+  testing. The central public claim is deliberately conservative: PRFT is an effective, chamber-aware,
+  dissipative projective readout framework with a native Q3 hierarchy solver and an explicit adapter
+  architecture for external physics and mathematics. It is not presented as a completed'
+source:
+  doi: 10.5281/zenodo.20552148
+  title: 'PRFT v28 Master Standalone – Full Detailed Rewrite: Q3 Null-Cone Geometry, Dissipative Readout, and
+    Adapter-Limited Solver Architecture'
+  year: 2026
+fetched_from_url: 'https://zenodo.org/api/records/20552148'
+locator: Zenodo record abstract (desc field), via API, from registry/zenodo_all_records.json
+tier: Open
+base_relation: holds
+base_justification: Contemporaneous companion paper in the same single-author program that also produced the base corpus;
+  already uses base vocabulary (δ_R / retained information / L_R-style operators), so it is read as consistent
+  with, not prior to, kc-base-011/012 (L_R) and kc-base-022 (trunk equation).
+glosa_use: already_in_glosa
+glosa_target: FOUNDATION spine (δ_R→L_R chain) / trunk-equation tier table — same-program companion, no new gloss content
+notes: Part of the single-author 'ph' hub iterative physics-theory series (Zenodo id 20552148, 2026-06-05);
+  method-layer extraction only (self-publication + no-peer-review posture), not the physics content itself.

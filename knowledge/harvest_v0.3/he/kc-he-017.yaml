@@ -1,0 +1,24 @@
+id: kc-he-017
+kind: claim
+title: AI-Cognitive Interaction (youth potential) — K0 conceptual paper, SSRN-first, no priority claim, deposited unchanged
+text: This series record (member of the "When AI Expands Human Potential" hub) discloses its own provenance
+  chain explicitly — first published on SSRN on a stated date under a stated abstract id, deposited on Zenodo
+  later "unchanged for the series record," tiered K0 (not peer reviewed), and carrying an explicit no-priority-
+  claim statement rather than an implicit claim to have been first.
+verbatim: "First published on SSRN (2025-10-09) as abstract id 5581350; deposited on Zenodo 2026-09-05 unchanged
+  for the series record. Conceptual paper; K0 — not peer reviewed; no priority claim."
+source:
+  doi: 10.5281/zenodo.22308448
+  title: "AI–Cognitive Interaction: Activating Youth Potential through Reflective Dialogue and Linguistic Capital"
+  year: 2025
+fetched_from_url: https://zenodo.org/api/records/22308448
+locator: abstract (Zenodo record metadata.description), opening provenance line
+tier: Open
+base_relation: holds
+base_justification: Explicit provenance-chain disclosure (where first published, when re-deposited, tier, no
+  priority claim) is exactly the kind of self-honesty about status the base's tier discipline and
+  Agrippa's-trilemma-applied-reflexively stance require of any record about itself.
+glosa_use: adopt
+glosa_target: "FOUNDATION §2.5 Bilingual handling / provenance and §7.6 K1→K2 conversion ledger"
+notes: Reusable provenance-line template for glosa's own K1 records that started life elsewhere (SSRN, arXiv,
+  etc.) before landing on Zenodo — "first published X as Y; deposited unchanged; no priority claim."

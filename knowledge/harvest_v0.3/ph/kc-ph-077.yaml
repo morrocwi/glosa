@@ -1,0 +1,29 @@
+id: kc-ph-077
+kind: claim
+title: A Minimal Telegraph Representation of Finite-Speed Causal Transport
+text: 'Self-published Zenodo preprint (single-author physics/information-theory program, 2025-12-14). Abstract
+  reports: This work gives a no-equations picture: the “telegraph equation” is a transport equation where
+  signals move at a finite speed, and the author builds a simple energy measure (a Lyapunov functional) that
+  accounts for both the time-rate of change of the signal and its spatial slope, then proves this quantity
+  never increases as time goes...'
+verbatim: 'This work gives a no-equations picture: the “telegraph equation” is a transport equation where signals move
+  at a finite speed, and the author builds a simple energy measure (a Lyapunov functional) that accounts for
+  both the time-rate of change of the signal and its spatial slope, then proves this quantity never increases
+  as time goes on under periodic or no-flux boundary conditions (which make the spatial boundary terms
+  vanish). The upshot is that the system’s energy steadily decreases in an orderly way, so solutions are
+  “dissipatively stable”—no heavy machinery required—just'
+source:
+  doi: 10.5281/zenodo.17926609
+  title: A Minimal Telegraph Representation of Finite-Speed Causal Transport
+  year: 2025
+fetched_from_url: 'https://zenodo.org/api/records/17926609'
+locator: Zenodo record abstract (desc field), via API, from registry/zenodo_all_records.json
+tier: Open
+base_relation: refined_by_later_work
+base_justification: Precursor step in the same program's iterative build-up toward what the base corpus fixes as the τ_c>0
+  persistence axiom / mass-as-readout-of-τ_c (kc-base-028); vocabulary and claims here are provisional working
+  drafts later folded into and re-derived under that axiom.
+glosa_use: skip
+glosa_target: n/a — superseded within its own program before reaching base corpus
+notes: Part of the single-author 'ph' hub iterative physics-theory series (Zenodo id 17926609, 2025-12-14);
+  method-layer extraction only (self-publication + no-peer-review posture), not the physics content itself.

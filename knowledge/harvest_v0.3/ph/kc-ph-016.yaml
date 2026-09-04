@@ -1,0 +1,28 @@
+id: kc-ph-016
+kind: claim
+title: 'A Tri-Domain Symmetry in Gravity-Frequency Scaling: A Testable Hypothesis from Mathematical Synthesis'
+text: 'Self-published Zenodo preprint (single-author physics/information-theory program, 2025-10-27). Abstract
+  reports: Contemporary physics lacks a unified mathematical framework connecting gravitational phenomena
+  across quantum, stellar, and relativistic domains. We propose a testable hypothesis: surface gravity g
+  exhibits a universal power-law relationship with characteristic frequency f of the form g ∝ f β , where the
+  exponent β takes discrete values (+2, +1, −1) corresponding to stellar, black-hole,...'
+verbatim: 'Contemporary physics lacks a unified mathematical framework connecting gravitational phenomena across
+  quantum, stellar, and relativistic domains. We propose a testable hypothesis: surface gravity g exhibits a
+  universal power-law relationship with characteristic frequency f of the form g ∝ f β , where the exponent β
+  takes discrete values (+2, +1, −1) corresponding to stellar, black-hole, and particle domains respectively.
+  This tri-domain symmetry emerges naturally from synthesizing established physics: for black holes, equating
+  gBH = c 4/(4GM) with the quasinormal mode relation fQNM ∝ M−1 yields β = +1 exactly; for'
+source:
+  doi: 10.5281/zenodo.17457748
+  title: 'A Tri-Domain Symmetry in Gravity-Frequency Scaling: A Testable Hypothesis from Mathematical Synthesis'
+  year: 2025
+fetched_from_url: 'https://zenodo.org/api/records/17457748'
+locator: Zenodo record abstract (desc field), via API, from registry/zenodo_all_records.json
+tier: Open
+base_relation: open
+base_justification: Domain physics content (a specific claim/derivation/observational note) not directly addressed by any base
+  card; carries no base-card contradiction but also no base endorsement — left open.
+glosa_use: skip
+glosa_target: n/a — domain physics claim outside glosa's method-layer scope
+notes: Part of the single-author 'ph' hub iterative physics-theory series (Zenodo id 17457748, 2025-10-27);
+  method-layer extraction only (self-publication + no-peer-review posture), not the physics content itself.

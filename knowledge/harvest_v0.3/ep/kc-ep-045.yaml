@@ -1,0 +1,30 @@
+id: kc-ep-045
+kind: method
+title: 'The Epistemic Chain Reaction: controlled human-AI amplification (Bounded Knower Paper IV)'
+text: Paper IV of the Bounded Knower sequence; proposes a controlled epistemic chain reaction where a
+  human retains the problem/question while heterogeneous AI processes recursively decompose it, traverse
+  distant knowledge structures, generate/critique candidate relations, collapse readout-equivalent variants,
+  and propagate only new candidate classes clearing declared grounding/discriminability gates; introduces
+  a finite epistemic multiplication factor k_epi.
+verbatim: 'Series. Paper IV of the Bounded Knower sequence. Paper I: From Problem to Hypothesis (DOI 10.5281/zenodo.22307148).
+  Paper II: Knowledge Topology and the First Passage to Usable Hypotheses (DOI 10.5281/zenodo.22307561).
+  Paper III: Before Evidence Can Decide (DOI 10.5281/zenodo.22307564). Status. GLOSA K0 conceptual and
+  agenda paper — timestamped and citable, not independently reviewed, no priority claim; central augmentation
+  laws remain [Open].'
+source:
+  doi: 10.5281/zenodo.22308072
+  title: 'The Epistemic Chain Reaction: Human-AI Multiplication from Questions to Readout-Distinguishable
+    Hypotheses — A Controlled Amplification Architecture for Scientific Discovery'
+  year: 2026
+fetched_from_url: https://zenodo.org/api/records/22308072
+locator: Zenodo record abstract (desc field), via API
+tier: Open
+base_relation: holds
+base_justification: Direct extension of the base's meta-readout governance operator (kc-base-021's synthesis
+  in 21529456) to a human-AI hypothesis-generation pipeline; GLOSA K0 status explicitly stated, central
+  augmentation laws marked [Open] by the paper itself — matches base's tier discipline (kc-base-007) rather
+  than overclaiming.
+glosa_use: adopt
+glosa_target: FOUNDATION §7.9 Literature Review System (LRS) — k_epi as the epistemic-multiplication construct
+  behind glosa's own human-retains-the-question design
+notes: 2026-09-04; series Paper IV of IV.

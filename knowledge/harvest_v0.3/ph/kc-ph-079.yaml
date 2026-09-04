@@ -1,0 +1,29 @@
+id: kc-ph-079
+kind: method
+title: 'The Causal-Memory Program: Canon'
+text: 'Self-published Zenodo preprint (single-author physics/information-theory program, 2025-12-20). Abstract
+  reports: What This Work Does This work does not report the discovery of a new phenomenon. Rather, it shows
+  in a systematic way that when one accepts a set of basic assumptions already widely shared in physics—finite
+  speed of influence propagation, a single characteristic memory scale, dynamical stability without
+  self-generated energy, and the absence of hidden...'
+verbatim: What This Work Does This work does not report the discovery of a new phenomenon. Rather, it shows in a
+  systematic way that when one accepts a set of basic assumptions already widely shared in physics—finite
+  speed of influence propagation, a single characteristic memory scale, dynamical stability without
+  self-generated energy, and the absence of hidden degrees of freedom—the space of mathematically consistent
+  frameworks becomes extremely constrained, to the point that it collapses to a single structure. The key
+  finding is that many of the “choices” we usually believe to be
+source:
+  doi: 10.5281/zenodo.17993686
+  title: 'The Causal-Memory Program: Canon'
+  year: 2025
+fetched_from_url: 'https://zenodo.org/api/records/17993686'
+locator: Zenodo record abstract (desc field), via API, from registry/zenodo_all_records.json
+tier: Open
+base_relation: refined_by_later_work
+base_justification: Precursor step in the same program's iterative build-up toward what the base corpus fixes as the τ_c>0
+  persistence axiom / mass-as-readout-of-τ_c (kc-base-028); vocabulary and claims here are provisional working
+  drafts later folded into and re-derived under that axiom.
+glosa_use: skip
+glosa_target: n/a — superseded within its own program before reaching base corpus
+notes: Part of the single-author 'ph' hub iterative physics-theory series (Zenodo id 17993686, 2025-12-20);
+  method-layer extraction only (self-publication + no-peer-review posture), not the physics content itself.

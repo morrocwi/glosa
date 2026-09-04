@@ -1,0 +1,25 @@
+id: kc-he-010
+kind: rule
+title: AI-coached endurance training — admissibility-first, no-go conditions derived and empirically anchored, not optimized-for-performance
+text: Using 42,766 real training days from 74 runners over seven years, the specification states its objective
+  is NOT injury prediction or performance optimization but admissible scheduling under finite recovery; it
+  derives explicit no-go conditions that invalidate unsafe plans and keeps all optimization layers (intensity,
+  tapering) modular/optional so they can never weaken the conservative safety guarantees.
+verbatim: "The objective is not injury prediction or performance optimization, but admissible scheduling under
+  finite recovery and delayed adaptation. [...] All optimization-oriented layers (e.g., intensity structuring
+  and tapering) are modular, optional, and do not weaken conservative safety guarantees."
+source:
+  doi: 10.5281/zenodo.18404721
+  title: "A Causal–Spectral Planning Specification for AI-Coached Endurance Training: Admissible Load–Recovery Design with No-Go Constraints and Environment Derating"
+  year: 2026
+fetched_from_url: https://zenodo.org/api/records/18404721
+locator: abstract (Zenodo record metadata.description)
+tier: finite_diagnostic
+base_relation: holds
+base_justification: An "admissibility/no-go first, optimization strictly optional and non-weakening" ordering
+  is the same abstain-over-decide caution the base's three-scalar DECIDE/ABSTAIN/ESCALATE gate (kc-base-024)
+  encodes for a different domain.
+glosa_use: adopt
+glosa_target: "FOUNDATION §3.3 Kernel gate rules (safety-first gate ordering pattern)"
+notes: Reusable design pattern for any glosa gate stack — keep the conservative/no-go layer load-bearing and
+  make any "helpful optimization" layer strictly additive and non-weakening.

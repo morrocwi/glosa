@@ -1,0 +1,24 @@
+id: kc-ep-009
+kind: claim
+title: Event-specific context vs. interpretive context in AI-mediated meaning access
+text: Distinguishes event-specific context (tied to real-world events) from interpretive context available
+  to human agents; argues AI expands access to interpreted information/synthesis but does not reconstruct
+  the full situational/temporal/relational conditions of events; introduces external context-frame and
+  interaction-efficiency constructs.
+verbatim: This article is published under an Open Civil Science framework by the author as an independent
+  scholarly work. It has not undergone formal journal peer review at the time of release. All claims are
+  explicitly framed as conceptual and non-empirical. This paper presents a conceptual framework for analyzing
+  how artificial intelligence reshapes human access to meaning through changes in contextual mediation.
+source:
+  doi: 10.5281/zenodo.18517054
+  title: AI, Translation, and Access to Event-Specific Contex
+  year: 2026
+fetched_from_url: https://zenodo.org/api/records/18517054
+locator: Zenodo record abstract (desc field), via API
+tier: Open
+base_relation: holds
+base_justification: Consistent with base's readout-not-truth stance that access is always partial/mediated
+  (kc-base-001, kc-base-027); no conflict.
+glosa_use: skip
+glosa_target: (background theory, no direct FOUNDATION hook)
+notes: Journal article, not peer reviewed at release per its own disclaimer; 2026-02-07.

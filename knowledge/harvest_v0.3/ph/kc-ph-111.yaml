@@ -1,0 +1,31 @@
+id: kc-ph-111
+kind: claim
+title: 'Synthesis of the Information Universe: Relativity and Mass as Readouts of Retained Distinctions, Assembled
+  from Classica'
+text: 'Self-published Zenodo preprint (single-author physics/information-theory program, 2026-07-05). Abstract
+  reports: We synthesize an information-first account of relativity and mass from equations whose owners span
+  Euler and Lagrange to Jacobson, anchored — joint by joint — on a machine-checked kernel of exact
+  rational-arithmetic theorems (Coq 8.18.0, axiom-free at Tier 0; every Print Assumptions reported). The
+  kernel establishes, as theorems: a double stationarity principle in which the...'
+verbatim: 'We synthesize an information-first account of relativity and mass from equations whose owners span Euler
+  and Lagrange to Jacobson, anchored — joint by joint — on a machine-checked kernel of exact
+  rational-arithmetic theorems (Coq 8.18.0, axiom-free at Tier 0; every Print Assumptions reported). The
+  kernel establishes, as theorems: a double stationarity principle in which the field recurrence and the
+  retention of graph edges are the two first-variation readouts of one quadratic action; an exact two-way
+  balance between per-edge field strain and an affine function of Forman curvature; monotone laws of'
+source:
+  doi: 10.5281/zenodo.21203637
+  title: 'Synthesis of the Information Universe: Relativity and Mass as Readouts of Retained Distinctions, Assembled
+    from Classical Equations over a Machine-Checked Kernel'
+  year: 2026
+fetched_from_url: 'https://zenodo.org/api/records/21203637'
+locator: Zenodo record abstract (desc field), via API, from registry/zenodo_all_records.json
+tier: Open
+base_relation: holds
+base_justification: Contemporaneous companion paper in the same single-author program that also produced the base corpus;
+  already uses base vocabulary (δ_R / retained information / L_R-style operators), so it is read as consistent
+  with, not prior to, kc-base-011/012 (L_R) and kc-base-022 (trunk equation).
+glosa_use: already_in_glosa
+glosa_target: FOUNDATION spine (δ_R→L_R chain) / trunk-equation tier table — same-program companion, no new gloss content
+notes: Part of the single-author 'ph' hub iterative physics-theory series (Zenodo id 21203637, 2026-07-05);
+  method-layer extraction only (self-publication + no-peer-review posture), not the physics content itself.

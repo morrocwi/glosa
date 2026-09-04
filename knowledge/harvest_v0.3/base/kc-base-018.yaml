@@ -1,0 +1,56 @@
+id: kc-base-018
+kind: rule
+title: Contaminated-concept → discrete-replacement table
+text: 'A pre-write gate table mapping contaminated continuum concepts to their discrete-correct replacements:
+  angle/degree -> overlap fraction (rational +,·,÷ only); the point r=0 -> node/retained distinction;
+  0 as an occupied state -> refused non-readout or L_R kernel = indistinguishability; +∞/N→∞/a landing
+  limit -> finite approach only; infinite divisibility h→0 -> finite step/τ_c floor; continuity/''smooth''
+  -> discrete Lipschitz/non-expansive map; distance = √Σ(Δxᵢ)² -> accumulated retained resistance along
+  the optimal graph path; π,e,φ as numbers -> readout-invariants, only finite ℚ-approximants; derivative/integral
+  as continuum limit -> discrete Δ+Σ+discrete FTC+Leibniz rule; operator on a continuum (∂², d''Alembertian)
+  -> graph Laplacian L_R.'
+verbatim: '| Contaminated concept | Discrete-correct replacement | Tier |
+
+  |---|---|---|
+
+  | ℝ / completeness (LUB/Dedekind) | readout of Bishop regular Cauchy sequences over ℚ; only finite ℚ-approximants
+  appear | `Th_coqc` (D→ℤ→ℚ→ℝ ladder, axiom-free, per source) |
+
+  | the point (`r=0`) | node / retained distinction (graph vertex, has neighbours) | `Dr` |
+
+  | `0` as an occupied state | refused non-readout (approached, never reached); or the `L_R` kernel =
+  indistinguishability | `Dr` |
+
+  | `+∞` / `N→∞` / a limit that "lands" | finite approach only; ℚ has no `+∞` | `Dr` |
+
+  | infinite divisibility `h→0` | finite step / `τ_c` floor | `Dr` |
+
+  | angle/degree (`acos`/`atan2`) | overlap fraction `‖⟨v,e⟩_G‖²/(⟨v,v⟩_G·⟨e,e⟩_G)` (rational `+,·,÷`
+  only) or rational turning number | `Dr` |
+
+  | continuity/"smooth" (ε–δ over ℝ) | discrete Lipschitz / non-expansive map | `Dr` |
+
+  | distance `= √Σ(Δxᵢ)²` (coordinate difference) | accumulated retained resistance along the optimal
+  path (graph geodesic) | `Dr` |
+
+  | π, e, φ as "numbers" | readout-invariants; only finite ℚ-approximants appear | `Dr` |
+
+  | derivative/integral = continuum limit | discrete `Δ` + `Σ` + discrete FTC + Leibniz rule | `Th_coqc`
+  (discrete FTC, per source, not re-verified in this repo) |
+
+  | operator on a continuum (`∂²`, d''Alembertian) | graph Laplacian `L_R` (symmetric, PSD, kernel ⊇ constants)
+  — `∂²` is a declared `+ℝ-axioms` readout of it | `Th_coqc` (axiom-free, matches R-L §0)'
+source:
+  path: readout_universe/logic.md
+  title: Logic — Equation & Operator Ledger
+  year: 2026
+fetched_from_url: ~/ANSE.ASIA/readout_universe/logic.md
+locator: §0.6 'Operator grounding — the contaminated-concept checklist', lines ~237-256
+tier: Dr
+base_relation: holds
+base_justification: This IS a base card from the lens root text; base cards are the ground the ledger
+  is judged against.
+glosa_use: adopt
+glosa_target: FOUNDATION §3.3 Kernel gate rules (specified, Dr, untested)
+notes: This is the exact table SKILL-MATH-DISCRETE (global CLAUDE.md) requires be loaded before any math/physics/geometry
+  writing — glosa's own kernel gate rules should reference it by name rather than re-deriving.

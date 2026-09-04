@@ -1,0 +1,30 @@
+id: kc-aihp-005
+kind: method
+title: 'Controlled epistemic chain reaction: human retains the question, AI recursively decomposes and
+  gates candidates'
+text: 'Paper IV of the Bounded Knower sequence proposes a controlled human-AI epistemic multiplication:
+  a human retains the problem/question while heterogeneous AI processes recursively decompose it, traverse
+  distant knowledge structures, generate and critique candidate relations, collapse readout-equivalent
+  variants, and propagate only candidate classes that clear declared grounding and discriminability gates.
+  A finite multiplication factor k_epi is introduced.'
+verbatim: 'this manuscript proposes a controlled epistemic chain reaction: a human retains the problem
+  and question, while heterogeneous AI processes recursively decompose the question, traverse distant
+  knowledge structures, generate candidate relations, critique them, collapse readout-equivalent variants,
+  and propagate only new candidate classes that clear declared grounding and discriminability gates. Each
+  retained frontier item can then seed new subquestions or rival hypotheses. A finite epistemic multiplication
+  factor, kepi , is introduced as the number'
+source:
+  doi: 10.5281/zenodo.22308072
+  title: 'The Epistemic Chain Reaction: Human-AI Multiplication from Questions to Readout-Distinguishable
+    Hypotheses — A Controlled Amplification Architecture for Scientific Discovery'
+  year: 2026
+fetched_from_url: https://zenodo.org/api/records/22308072
+locator: Abstract
+tier: Open
+base_relation: holds
+base_justification: '''Collapse readout-equivalent variants'' directly uses the collapse/decoder vocabulary
+  of kc-base-006 (non-injective readout theorem); the gating step before propagation matches kc-base-001
+  readout-not-truth discipline. Central augmentation laws remain [Open] per the record''s own status note.'
+glosa_use: adapt
+glosa_target: FOUNDATION §6 discovery/hypothesis-generation extension (not yet in kernel)
+notes: Paper IV of a 4-paper series with Papers I-III also in this hub (22307148, 22307561, 22307564).

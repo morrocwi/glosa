@@ -1,0 +1,30 @@
+id: kc-ph-096
+kind: claim
+title: Non-Circular Operational Identification of the Gravitational Constant 𝐺 & ℏ in Causal Memory Gravity
+text: 'Self-published Zenodo preprint (single-author physics/information-theory program, 2026-01-10). Abstract
+  reports: We provide a non-circular, necessity-level identity-by-protocol theorem: in a weak/intermediate,
+  coarse-grained regime, the unique universal coupling κ∗\kappa_\ast κ ∗ selected by the observable law and
+  its calibration must equal the metrologically defined constant κ\kappa κ . In the gravitational instance
+  this identifies κ∗\kappa_\ast κ ∗ with Newton’s constant GG G (within the Causal Memory Gravity...'
+verbatim: 'We provide a non-circular, necessity-level identity-by-protocol theorem: in a weak/intermediate,
+  coarse-grained regime, the unique universal coupling κ∗\kappa_\ast κ ∗ selected by the observable law and
+  its calibration must equal the metrologically defined constant κ\kappa κ . In the gravitational instance
+  this identifies κ∗\kappa_\ast κ ∗ with Newton’s constant GG G (within the Causal Memory Gravity framework);
+  in the interferometric/spectroscopic instance it identifies κ∗\kappa_\ast κ ∗ with Planck’s constant ℏ\hbar
+  ℏ (via the phase–action, energy–frequency, and momentum–wavevector interfaces). Equality follows from the
+  uniqueness of the admissible observable relations and the shared'
+source:
+  doi: 10.5281/zenodo.18202581
+  title: Non-Circular Operational Identification of the Gravitational Constant 𝐺 & ℏ in Causal Memory Gravity
+  year: 2026
+fetched_from_url: 'https://zenodo.org/api/records/18202581'
+locator: Zenodo record abstract (desc field), via API, from registry/zenodo_all_records.json
+tier: Open
+base_relation: refined_by_later_work
+base_justification: Precursor step in the same program's iterative build-up toward what the base corpus fixes as the τ_c>0
+  persistence axiom / mass-as-readout-of-τ_c (kc-base-028); vocabulary and claims here are provisional working
+  drafts later folded into and re-derived under that axiom.
+glosa_use: skip
+glosa_target: n/a — superseded within its own program before reaching base corpus
+notes: Part of the single-author 'ph' hub iterative physics-theory series (Zenodo id 18202581, 2026-01-10);
+  method-layer extraction only (self-publication + no-peer-review posture), not the physics content itself.

@@ -1,0 +1,28 @@
+id: kc-ep-047
+kind: tool
+title: 'Blackbox Log: daily append-only verbatim voice record'
+text: The Blackbox Log is a daily, append-only, verbatim record of the author's own raw voice/findings/questions
+  (Thai is the source of truth); not a paper, not reviewed, tier positional/Dr; contains only the author's
+  own words except one disclosed AI-written correction entry (by=ai, marked, never presented as the author's
+  voice); each update is a new version of the same record (107 entries as of 2026-09-04); kept by the
+  glosa toolchain.
+verbatim: 'ปูมกล่องดำ (Blackbox Log) — บันทึกเสียงดิบ ข้อค้นพบ และคำถามรายวันของผู้เขียน ตามที่พูดจริง
+  (verbatim) ไม่ผ่านการปรุงและไม่ผ่านการตรวจอิสระ (tier: positional/Dr) บันทึกเพิ่มได้อย่างเดียว ไม่แก้ไม่ลบ;
+  อัปเดตเป็นเวอร์ชันใหม่ของ record เดียวกัน เลนส์ที่ใช้มองปัญหา: Readout Universe — Yaoharee Lahtee. ระบบที่เก็บ:
+  glosa (github.com/morrocwi/glosa). เวอร์ชันนี้: 107 บันทึก ถึง 2026-09-04.'
+source:
+  doi: 10.5281/zenodo.22307891
+  title: ปูมกล่องดำ — บันทึกเสียงดิบ ข้อค้นพบ และคำถามรายวันของ เยาฮารี แหละตี (Blackbox Log, Yaoharee
+    Lahtee)
+  year: 2026
+fetched_from_url: https://zenodo.org/api/records/22307891
+locator: Zenodo record abstract (desc field), via API
+tier: Dr
+base_relation: holds
+base_justification: This is glosa's own primary-source discipline in action — the base's rule that everything
+  read is a retained readout, never memory (kc-base-001) is enforced here by requiring verbatim, unaltered
+  capture with disclosed AI intervention.
+glosa_use: adopt
+glosa_target: FOUNDATION §2.3 Blackbox Note and R0/R1/R2 internal registers — this IS the named artifact
+  that section formalizes
+notes: 2026-09-04; type Other; Thai title ปูมกล่องดำ.

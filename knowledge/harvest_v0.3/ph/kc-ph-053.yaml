@@ -1,0 +1,31 @@
+id: kc-ph-053
+kind: claim
+title: 'Conservative, Falsifiable Claims for Electroweak Mixing at the Z Pole : Non-Equilibrium Informational Field
+  Theory'
+text: 'Self-published Zenodo preprint (single-author physics/information-theory program, 2025-11-20). Abstract
+  reports: We apply the Non-Equilibrium Informational Field Theory (NIFT) framework to electroweak precision
+  observables at the Z pole. A minimally curved informational pixel modifies the SU(2)L gauge kinetic term,
+  yielding (i) a parameter-free tree-level prediction sˆ2W = 3/13 ≃ 0.23077 and (ii)a single geometric
+  curvature parameter K that brings the prediction into full agreement with the...'
+verbatim: We apply the Non-Equilibrium Informational Field Theory (NIFT) framework to electroweak precision
+  observables at the Z pole. A minimally curved informational pixel modifies the SU(2)L gauge kinetic term,
+  yielding (i) a parameter-free tree-level prediction sˆ2W = 3/13 ≃ 0.23077 and (ii)a single geometric
+  curvature parameter K that brings the prediction into full agreement with the measured weak mixing angle in
+  the MS scheme at µ = mZ . The same curvature induces a correlated custodial-breaking shift in the W-boson
+  mass. All claims are deliberately conservative, restricted to the electroweak precision
+source:
+  doi: 10.5281/zenodo.17660702
+  title: 'Conservative, Falsifiable Claims for Electroweak Mixing at the Z Pole : Non-Equilibrium Informational Field
+    Theory'
+  year: 2025
+fetched_from_url: 'https://zenodo.org/api/records/17660702'
+locator: Zenodo record abstract (desc field), via API, from registry/zenodo_all_records.json
+tier: Open
+base_relation: superseded
+base_justification: Uses an earlier, since-abandoned working name/formalism (this program cycled through several framework names
+  before settling on retained-information/δ_R vocabulary); the base corpus's mother equation (kc-base-020) and
+  trunk equation (kc-base-022) replace this formulation.
+glosa_use: skip
+glosa_target: n/a — abandoned vocabulary, replaced by base mother/trunk equation
+notes: Part of the single-author 'ph' hub iterative physics-theory series (Zenodo id 17660702, 2025-11-20);
+  method-layer extraction only (self-publication + no-peer-review posture), not the physics content itself.

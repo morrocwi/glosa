@@ -1,0 +1,24 @@
+id: kc-islam-012
+kind: tool
+title: Behavioral dataset explicitly withholds interpretive commentary
+text: A compiled behavioral dataset of Muslim tourists in Thailand (2011-2025) drawn from documented
+  academic/institutional sources, restricted to observed behaviors (family decision-making, gendered
+  preferences, trust-based consumption, hybrid behavior); the paper states plainly that it carries no
+  interpretive or inferential layer.
+verbatim: 'The dataset does not include any interpretive or inferential commentary'
+source:
+  doi: 10.5281/zenodo.17305576
+  title: "Behavioral Dataset of Muslim Tourists in Thailand (2024–2025)"
+  year: 2025
+fetched_from_url: https://zenodo.org/api/records/17305576
+locator: abstract (Zenodo record metadata.description)
+tier: Dr
+base_relation: holds
+base_justification: "Keeping observation separate from inference matches the base's own separation of a
+  readout from its interpretation (kc-base-001, kc-base-020 mother equation — the record is a translation, not
+  the truth) — the dataset stops at the readout and declares it stops there."
+glosa_use: adopt
+glosa_target: "FOUNDATION §2.1b responsibility per arrow (Data → Inference → Claim) — a clean worked example of
+  a Data-only artifact that explicitly refuses to cross into Inference."
+notes: Zenodo record type "Data paper"; tier Dr (finite, documented compilation, not yet independently
+  re-verified by glosa).

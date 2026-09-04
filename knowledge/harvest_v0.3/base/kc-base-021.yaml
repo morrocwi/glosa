@@ -1,0 +1,35 @@
+id: kc-base-021
+kind: claim
+title: Same-shaped formula, three different tiers — not silently reconciled
+text: 'The exact M_A=K_A·θ+η formula appears under three names/provenances in the corpus with three different
+  tiers: N2 (definition, the general epistemic schema, deliberately withheld from Th_coqc per the corpus''s
+  own argument that N3 alone earns that tag among the nuclear core), Face 10''s untagged record-law rendering,
+  and EQ-027/EQ-028 (Th_coqc, per a different source file''s own grounding tag). The corpus states plainly:
+  this is read as real information, not noise, and is left unresolved on purpose rather than silently
+  averaged to one tier.'
+verbatim: 'Three renderings of the same formula, three different
+
+  provenances, three different tiers — `definition` (N2...), untagged
+
+  (Face 10...), and `Th_coqc` (EQ-027/EQ-028...). This file''s own rule is to carry every
+
+  source''s tier exactly as given, never upgrading and never silently
+
+  averaging — so all three stand, side by side, rather than one replacing
+
+  the others.'
+source:
+  path: readout_universe/logic.md
+  title: Logic — Equation & Operator Ledger
+  year: 2026
+fetched_from_url: ~/ANSE.ASIA/readout_universe/logic.md
+locator: '''The mother equation'', lines ~68-92'
+tier: Dr
+base_relation: holds
+base_justification: This IS a base card from the lens root text; base cards are the ground the ledger
+  is judged against.
+glosa_use: adopt
+glosa_target: FOUNDATION Appendix A Non-Collapse Table
+notes: 'A direct worked example of the non-collapse discipline: the same equation is allowed to carry
+  different tiers in different source contexts, and the corpus deliberately does not force one winner
+  — a pattern glosa''s own Non-Collapse Table should be able to cite.'

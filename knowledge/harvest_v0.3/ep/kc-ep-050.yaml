@@ -1,0 +1,29 @@
+id: kc-ep-050
+kind: method
+title: 'From Problem to Hypothesis: bounded dynamic semantic mobility (Paper I)'
+text: 'Paper I of the Bounded Knower sequence: proposes imagination-for-hypothesis-generation as bounded
+  dynamic semantic mobility — a time-indexed process over semantic readouts whose transitions are provenance-audited,
+  dynamically weighted and history-sensitive, not an infinite faculty nor a static reachable set; claim
+  tiers explicit throughout as [definition]/[Dr]/[Open]/[finite_diagnostic].'
+verbatim: 'Series. Paper I of the three-paper Bounded Knower sequence. Paper II: Knowledge Topology and
+  the First Passage to Usable Hypotheses (DOI 10.5281/zenodo.22307561). Paper III: Before Evidence Can
+  Decide (DOI 10.5281/zenodo.22307564). Paper IV: The Epistemic Chain Reaction (DOI 10.5281/zenodo.22307751).
+  Status. Bounded-knower final author draft under the Readout Universe / Readout Genesis architecture;
+  GLOSA K0 — timestamped and citable, not independently reviewed, no priority claim.'
+source:
+  doi: 10.5281/zenodo.22307148
+  title: 'From Problem to Hypothesis: Dynamic Semantic Mobility, Bounded Knowers, and the Readout-Discriminable
+    Hypothesis Space'
+  year: 2026
+fetched_from_url: https://zenodo.org/api/records/22307148
+locator: Zenodo record abstract (desc field), via API
+tier: Open
+base_relation: holds
+base_justification: Uses the base's own tier vocabulary explicitly ([definition]/[Dr]/[Open]/[finite_diagnostic],
+  matching kc-base-007's six-tier discipline) and is built under the 'Readout Universe / Readout Genesis
+  architecture' by the paper's own status line — direct base-consistent application.
+glosa_use: adopt
+glosa_target: FOUNDATION §4.1 Tier ladder — worked non-formal example of applying [definition]/[Dr]/[Open]/[finite_diagnostic]
+  tags inline through a philosophy paper
+notes: 2026-09-04; series Paper I of IV; cites the Blackbox Log entry BBL-2026-09-04-094 on imagination
+  as reversible transport.

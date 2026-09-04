@@ -1,0 +1,28 @@
+id: kc-se-007
+kind: method
+title: Systematic prior-art review reporting "partially anticipated, not found in formulation" — not a novelty claim
+text: The paper reports running two systematic prior-art reviews across nine adjacent literatures and
+  states the finding as a bounded comparison — the paper's four claims are "partially anticipated" in
+  their motivations and components by that literature and "not found in their formulations within the
+  stated search scope" — rather than asserting the work is first, novel, or unprecedented outright.
+verbatim: "Two systematic prior-art reviews --- across social-enterprise typology, gatekeeper theory,
+  legal-form-as-commitment, safeguarding evaluation, mission-drift measurement, steward-ownership,
+  legitimacy theory, certification economics, and comparative promotion policy --- find the paper's four
+  claims partially anticipated in their motivations and components and not found in their formulations
+  within the stated search scope."
+source:
+  doi: 10.5281/zenodo.22227005
+  title: "Why We Became a Social Enterprise: Positional Governance, Dual Costs, and a Toolkit for the
+    Class of Enterprises for Which the Form Is Not a Choice"
+  year: 2026
+fetched_from_url: local (~/Downloads/Why_We_Became_a_Social_Enterprise_FINAL_v5.0.pdf)
+locator: p.1, Abstract, "Originality" clause (pdftotext -l 6, lines ~24-27)
+tier: Open
+base_relation: holds
+base_justification: Directly implements glosa's own gate rule (never write "novel/first/prior art";
+  comparison = same/different/cited) as a scoped, search-bounded finding rather than an unqualified
+  originality claim — a worked example of the rule glosa's CLAUDE.md already states as policy.
+glosa_use: adopt
+glosa_target: "FOUNDATION §3 claim card — comparison/originality field wording template"
+notes: Strong candidate wording template for glosa's own claim-card originality field, since it already
+  states scope ("within the stated search scope") instead of a blanket claim.

@@ -1,0 +1,32 @@
+id: kc-aihp-017
+kind: method
+title: 'Standalone Scholar: dual-track architecture separating AI-assisted formation from independent
+  human friction'
+text: For a scholar outside a university, AI can produce plausible scholarly objects abundantly before
+  independent criticism, human relationships, certification, or institutional access become abundant.
+  The paper's dual-track architecture routes AI-assisted formation, open preprint staging, provenance
+  controls, and machine-constrained checks into defensible provisional assets, while independent human
+  friction and review convert those assets into socially stress-tested knowledge — distinguishing synthetic
+  plurality from independent validation, and legitimacy from truth.
+verbatim: It develops a dual-track architecture in which AI-assisted formation, open preprint staging,
+  provenance controls, and machine-constrained checks generate defensible provisional assets, while indepen-
+  dent human friction, repeat correspondence, journal review, and local epistemic participation convert
+  those assets into socially stress-tested knowledge. The framework distinguishes synthetic plurality
+  from independent validation, production criticality from scholarly-credit criticality, attention from
+  uptake, legiti- macy from truth
+source:
+  doi: 10.5281/zenodo.22163849
+  title: 'The Standalone Scholar: A Dual-Track Architecture for AI-Native Scholarship'
+  year: 2026
+fetched_from_url: https://zenodo.org/api/records/22163849
+locator: Abstract
+tier: Dr
+base_relation: holds
+base_justification: '''Synthetic plurality vs independent validation'' and ''legitimacy vs truth'' are
+  the same distinction kc-base-035 (Bounded-Judge Law) and kc-base-025 (no outside-validation epistemic
+  authority) already hold; this is the macro scholar-career architecture glosa''s own K-state ladder is
+  cited from (per sources/README.md''s own dependency note).'
+glosa_use: already_in_glosa
+glosa_target: FOUNDATION §1.2 K-state ladder, DVP mechanics, Human Mastery Gate, SCRAM condition
+notes: glosa's FOUNDATION_v0.5.md §1.2 already cites this paper as an existing dependency (sources/README.md
+  row for STANDALONE_SCHOLAR_v3.txt).

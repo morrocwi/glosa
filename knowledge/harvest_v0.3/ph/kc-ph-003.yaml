@@ -1,0 +1,28 @@
+id: kc-ph-003
+kind: claim
+title: Epistemic Coherence_Yaoharee_proposal
+text: 'Self-published Zenodo preprint (single-author physics/information-theory program, 2025-10-12). Abstract
+  reports: Author’s Note (Open Invitation) This paper is released as a perpetual preprint — not as a final
+  statement, but as an open mathematical challenge . It aims to provoke formal reflection, critique, and
+  expansion by mathematicians, physicists, and philosophers of science. The Epistemic Coherence Equation (ECE)
+  is not presented as an absolute theory but as...'
+verbatim: Author’s Note (Open Invitation) This paper is released as a perpetual preprint — not as a final statement,
+  but as an open mathematical challenge . It aims to provoke formal reflection, critique, and expansion by
+  mathematicians, physicists, and philosophers of science. The Epistemic Coherence Equation (ECE) is not
+  presented as an absolute theory but as an initial condition for thought . Scholars are invited to derive,
+  refute, generalize, or geometrize its structure within their own mathematical language and frameworks.
+  Abstract The Epistemic Coherence Equation (ECE) is a mathematically formalized extension
+source:
+  doi: 10.5281/zenodo.17335199
+  title: Epistemic Coherence_Yaoharee_proposal
+  year: 2025
+fetched_from_url: 'https://zenodo.org/api/records/17335199'
+locator: Zenodo record abstract (desc field), via API, from registry/zenodo_all_records.json
+tier: Open
+base_relation: open
+base_justification: Domain physics content (a specific claim/derivation/observational note) not directly addressed by any base
+  card; carries no base-card contradiction but also no base endorsement — left open.
+glosa_use: skip
+glosa_target: n/a — domain physics claim outside glosa's method-layer scope
+notes: Part of the single-author 'ph' hub iterative physics-theory series (Zenodo id 17335199, 2025-10-12);
+  method-layer extraction only (self-publication + no-peer-review posture), not the physics content itself.

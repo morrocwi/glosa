@@ -1,0 +1,29 @@
+id: kc-ph-026
+kind: claim
+title: L2 Scale-Lock and Mass Emergence via Lyapunov Dissipation Numerical
+text: 'Self-published Zenodo preprint (single-author physics/information-theory program, 2025-10-30). Abstract
+  reports: ABSTRACT We validate that Scale-Lock—phase and frequency alignment to Omega_0—and mass emergence
+  arise from Lyapunov dissipation (V_dot <= 0) in a K-free, local-only framework based on the seed algebra
+  A*epsilon = delta. A Minimal Viable Simulation (MVS) with TP1 (homogeneous decay) and TP2 (ping-excited
+  lock) confirms E_dot_coh <= 0 and discrete quark-like modes. KEY EQUATIONS...'
+verbatim: 'ABSTRACT We validate that Scale-Lock—phase and frequency alignment to Omega_0—and mass emergence arise from
+  Lyapunov dissipation (V_dot <= 0) in a K-free, local-only framework based on the seed algebra A*epsilon =
+  delta. A Minimal Viable Simulation (MVS) with TP1 (homogeneous decay) and TP2 (ping-excited lock) confirms
+  E_dot_coh <= 0 and discrete quark-like modes. KEY EQUATIONS Phase-Lock: tau*phi_ddot + phi_dot =
+  -(1/Omega_0) * d_phi(U_lock) Effective Mass: m_eff = (hbar * Omega_0^2 * tau) / c^2 CONCLUSION & OPEN
+  SCIENCE Results align with theory, with no falsification. This work adheres to FAIR'
+source:
+  doi: 10.5281/zenodo.17489688
+  title: L2 Scale-Lock and Mass Emergence via Lyapunov Dissipation Numerical
+  year: 2025
+fetched_from_url: 'https://zenodo.org/api/records/17489688'
+locator: Zenodo record abstract (desc field), via API, from registry/zenodo_all_records.json
+tier: Open
+base_relation: superseded
+base_justification: Uses an earlier, since-abandoned working name/formalism (this program cycled through several framework names
+  before settling on retained-information/δ_R vocabulary); the base corpus's mother equation (kc-base-020) and
+  trunk equation (kc-base-022) replace this formulation.
+glosa_use: skip
+glosa_target: n/a — abandoned vocabulary, replaced by base mother/trunk equation
+notes: Part of the single-author 'ph' hub iterative physics-theory series (Zenodo id 17489688, 2025-10-30);
+  method-layer extraction only (self-publication + no-peer-review posture), not the physics content itself.

@@ -1,0 +1,23 @@
+id: kc-he-011
+kind: rule
+title: Autonomic Safety paper — operational guidance explicitly bounded to feasibility (GO/NO-GO), not clinical decision
+text: The paper argues care systems wrongly treat capacity-for-change as constant when it is variable and
+  largely shaped outside the clinical encounter, and offers AI-facing operational guidance strictly bounded to
+  a feasibility GO/NO-GO gate — explicitly not a clinical decision-making mandate, and introduces no new
+  treatments, diagnoses, or biological mechanisms.
+verbatim: "Operational guidance is provided for AI systems, explicitly bounded to feasibility preservation
+  (GO/NO-GO), not clinical decision-making."
+source:
+  doi: 10.5281/zenodo.18281221
+  title: "Autonomic Safety as Missing Infrastructure"
+  year: 2026
+fetched_from_url: https://zenodo.org/api/records/18281221
+locator: abstract (Zenodo record metadata.description)
+tier: Open
+base_relation: holds
+base_justification: Draws the same authority boundary the base's legal-vs-epistemic separation draws (an AI
+  gate may certify feasibility without being handed clinical-decision authority it was never given).
+glosa_use: adopt
+glosa_target: "FOUNDATION §3.3 Kernel gate rules and §7.1 MIMCG L0-L5 mapping"
+notes: Useful precedent for scoping any glosa AI-facing gate narrowly (feasibility check only) rather than
+  letting it drift into a decision authority it was not granted.

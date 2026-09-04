@@ -1,0 +1,33 @@
+id: kc-base-014
+kind: claim
+title: 'The one-line chain: δ_R → L_R → per-agency readout (N2)'
+text: 'δ_R is the primitive act of retaining one difference; L_R is what that retention accumulates into
+  once many distinctions are kept and related — the shared structure, not any agency''s private view.
+  No agency reads L_R directly; every agency A''s actual readout is a lossy linear read of it (N2: M_A
+  = K_A·θ + η — ''knowing is a lossy linear read of a latent state, never the latent state itself'').'
+verbatim: 'So the one-line chain is: **δ_R is retained → accumulates into
+
+  L_R (identified with θ(E) at `Dr` tier — a declared cross-reference
+
+  between two of the founder''s own works, matched by equation-form, not a
+
+  machine-checked identity...) → each
+
+  agency reads only its own lossy M_A of that shared structure, never the
+
+  structure itself.**'
+source:
+  path: readout_universe/philosophy.md
+  title: Philosophy — Readout Universe
+  year: 2026
+fetched_from_url: ~/ANSE.ASIA/readout_universe/philosophy.md
+locator: §5.2, lines ~751-763
+tier: Dr
+base_relation: holds
+base_justification: This IS a base card from the lens root text; base cards are the ground the ledger
+  is judged against.
+glosa_use: adopt
+glosa_target: 'FOUNDATION §2.1b Responsibility per arrow: Data → Inference → Claim'
+notes: N2's shape (knowing is a lossy linear read, never the latent state) is the exact epistemic warrant
+  glosa's own Data→Inference→Claim responsibility split is built to honor — reuse the phrase 'lossy read,
+  never the latent state itself.'

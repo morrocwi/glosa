@@ -1,0 +1,26 @@
+id: kc-islam-015
+kind: method
+title: Cultural-Based Practitioners framework converts faith/cultural capital into verifiable social and economic value
+text: Introduces a Cultural-Based Practitioner (CBP) framework — cultural skills, cultural bridging, cultural
+  governance — as a method for transforming faith-based and cultural capital into value that can be verified,
+  illustrated by case studies across three countries, positioning faith as a foundation for service-system
+  design rather than an obstacle to it.
+verbatim: 'The paper introduces the CBP framework, integrating cultural skills, cultural bridging, and cultural
+  governance to form a Living Soft Infrastructure — a model for transforming faith-based and cultural capital
+  into verifiable social and economic value.'
+source:
+  doi: 10.5281/zenodo.17281646
+  title: "Faith in Service Systems: Dynamics of Cultural-Based Practitioners in Creating Shared Spaces among
+    State, Market, and Religion"
+  year: 2025
+fetched_from_url: https://zenodo.org/api/records/17281646
+locator: abstract (Zenodo record metadata.description)
+tier: Open
+base_relation: holds
+base_justification: "'Verifiable' value is the operative word — the framework is only useful to the base's
+  discipline insofar as its value-transformation claims stay checkable (kc-base-039 falsifiable claims table),
+  which the abstract signals but does not yet demonstrate at method-layer detail."
+glosa_use: skip
+glosa_target: —
+notes: Method-layer content is thin at the abstract level (a named framework, no stated check/verification
+  procedure); would need the full paper before adopting a concrete pattern into a glosa template.

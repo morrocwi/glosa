@@ -1,0 +1,27 @@
+id: kc-ep-014
+kind: claim
+title: Knowledge as stabilized translation under bounded observation
+text: Proposes epistemology begin from bounded observers forming world-models under constraint rather
+  than direct access; knowledge is stabilized translation under bounded observation — a representation
+  stable across admissible variation, calibration and cross-checking — giving a common grammar for human
+  and machine model-based knowing.
+verbatim: 'Epistemology has often treated knowledge as a matter of access: a subject seeks justified,
+  reliable, or rational contact with reality. This article argues that such accounts remain incomplete
+  because they understate the constitutive role of mediation, finite access, selective encoding, and structured
+  error. The problem becomes sharper in the age of artificial intelligence, where systems generate reliable
+  and action-guiding outputs without fitting inherited models of reflective belief or transparent justification.'
+source:
+  doi: 10.5281/zenodo.18925129
+  title: 'Knowledge as Stabilized Translation: Toward an Observer-Constrained Epistemology'
+  year: 2026
+fetched_from_url: https://zenodo.org/api/records/18925129
+locator: Zenodo record abstract (desc field), via API
+tier: Open
+base_relation: holds
+base_justification: Near-restatement of base's bounded-knower framing (kc-base-027) and truth-as-tracking
+  (kc-base-005) in independent philosophical vocabulary ('stabilized translation' vs 'readout'); consistent,
+  not contradicting.
+glosa_use: adopt
+glosa_target: FOUNDATION §1.0 Pillars — ontology/epistemology/methodology (cross-vocabulary anchor for
+  'bounded observer')
+notes: 2026-03-09; tags ai, aihp.

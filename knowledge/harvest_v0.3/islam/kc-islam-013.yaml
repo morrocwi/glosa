@@ -1,0 +1,26 @@
+id: kc-islam-013
+kind: tool
+title: Statistical dataset compiled from named sources, explicitly excludes interpretive analysis
+text: A structured statistical dataset on Muslim/Malaysia-origin tourism to Thailand, compiled from named
+  official sources (TAT, Mastercard & CrescentRating, Pew Research Center, DinarStandard, Malaysian/Gulf
+  statistics), covering arrivals, population ratios, religiosity levels, and destination coordinates. States
+  explicitly it carries no behavioral or interpretive analysis, offered as a transparent structured resource
+  for researchers and planners.
+verbatim: 'The dataset includes country-wise arrivals, Muslim population ratios, levels of religious
+  observance, and province-level destination coordinates within Thailand. No behavioral or interpretive
+  analysis is included. The purpose is to provide a transparent, structured dataset for researchers and
+  tourism planners.'
+source:
+  doi: 10.5281/zenodo.17305534
+  title: "Statistical Dataset of Muslim and Malaysia-Origin Tourists Visiting Thailand (2024–2025)"
+  year: 2025
+fetched_from_url: https://zenodo.org/api/records/17305534
+locator: abstract (Zenodo record metadata.description)
+tier: Dr
+base_relation: holds
+base_justification: Same Data-vs-Inference separation as kc-islam-012; also names its sources by name,
+  matching the base's insistence on stated, checkable provenance rather than an unattributed number.
+glosa_use: adopt
+glosa_target: FOUNDATION §2.1b responsibility per arrow (Data → Inference → Claim) / §7.8 citation integrity
+  subsystem — sourced-by-name dataset pattern.
+notes: Zenodo record type "Data paper"; tier Dr.

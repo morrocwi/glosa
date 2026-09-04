@@ -1,0 +1,28 @@
+id: kc-ep-046
+kind: method
+title: State of Evidence registry for the Readout hypothesis-generation programme (E01-E25)
+text: 'Companion living evidence registry for Papers I-IV of the Bounded Knower programme: a Claim Registry
+  of 25 evidence claims (id, status, evidence strength, primary paper, decisive test) plus a synthesis
+  PDF; explicitly states ''Observed'' means the cited literature reported a neighbouring phenomenon, never
+  that a paper-specific Readout variable was validated, and no independent checker has certified the registry.'
+verbatim: 'Series. Companion evidence registry for the four-paper Bounded Knower / Readout hypothesis-generation
+  programme: Paper I (DOI 10.5281/zenodo.22307148), Paper II (DOI 10.5281/zenodo.22307561), Paper III
+  (DOI 10.5281/zenodo.22307564), Paper IV (DOI 10.5281/zenodo.22307751). Files: the State of Evidence
+  synthesis (PDF) and Claim_Registry_E01_E25.csv (25 evidence claims: id, status, evidence strength, primary
+  paper, decisive test). Status.'
+source:
+  doi: 10.5281/zenodo.22308066
+  title: 'State of Evidence for the Readout Hypothesis-Generation Programme: A Shared Evidence Registry
+    for Papers I–IV (with Claim Registry E01–E25)'
+  year: 2026
+fetched_from_url: https://zenodo.org/api/records/22308066
+locator: Zenodo record abstract (desc field), via API
+tier: Open
+base_relation: holds
+base_justification: A worked instance of exactly the claim-registry + explicit-non-validation-disclaimer
+  pattern the base's tier discipline demands (kc-base-007, kc-base-025 'what this system does not claim')
+  — directly reusable as a template.
+glosa_use: adopt
+glosa_target: FOUNDATION §7.9 Literature Review System (LRS) — Claim Registry E01-E25 as a template for
+  glosa's own evidence/claim registries
+notes: 2026-09-04.

@@ -1,0 +1,26 @@
+id: kc-ep-025
+kind: claim
+title: AI expands human potential only via disciplined revision under constraint
+text: Argues AI expands human potential only when machine-mediated dissonance becomes disciplined revision
+  under world-answerable conditions, requiring corrigibility, route-openness, criticizability and domain-sensitive
+  validation; AI can accelerate candidate generation but cannot itself certify truth or replace target-domain
+  assessment.
+verbatim: 'This paper asks a precise question that becomes unavoidable once artificial intelligence is
+  integrated into ordinary thinking, writing, learning, and judgment: when, if ever, does AI expand human
+  potential rather than merely accelerate output? I argue that the answer cannot be given in terms of
+  productivity, convenience, or self-expression alone. AI should instead be understood as a new mediating
+  layer within finite inquiry.'
+source:
+  doi: 10.5281/zenodo.19215748
+  title: 'When AI Expands Human Potential: Reflective Dissonance, Epistemic Agency, and Constraint'
+  year: 2026
+fetched_from_url: https://zenodo.org/api/records/19215748
+locator: Zenodo record abstract (desc field), via API
+tier: Open
+base_relation: holds
+base_justification: Directly consistent with EPIS-KNOWLEDGE-VALIDATION's stance that context/the-issue-in-front-of-it
+  (not authority) proves knowledge, and with the base's Bounded-Judge Law requiring independent review
+  (kc-base-035) rather than AI self-certification.
+glosa_use: adopt
+glosa_target: FOUNDATION §7.3 Bounded-Judge Law / §7.2 Maker-Checker-Approver separation
+notes: 2026-03-25; tags ai, aihp.

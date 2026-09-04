@@ -1,0 +1,27 @@
+id: kc-he-018
+kind: definition
+title: Strong, Warm & Safe Family Ecosystem — policy brief integrating ethics framework and social-innovation practice
+text: A policy brief presents eight dimensions and four mechanisms for strengthening families in Thailand's
+  multicultural context, aligning to three named SDGs and integrating an ethics framework with social-innovation
+  and family-systems thinking. It is offered as a policy/practice framework rather than as a tested empirical
+  model — no evidence base or falsification mechanism is stated in the abstract.
+verbatim: "The Strong, Warm & Safe Family Ecosystem (SWSF) Framework presents eight dimensions and four
+  mechanisms to strengthen families in Thailand's multicultural context. [...] this policy brief integrates
+  Islamic ethics, social innovation, and family systems thinking to create a holistic model for social
+  sustainability."
+source:
+  doi: 10.5281/zenodo.17280895
+  title: "Strong, Warm & Safe Family Ecosystem"
+  year: 2025
+fetched_from_url: https://zenodo.org/api/records/17280895
+locator: abstract (Zenodo record metadata.description)
+tier: Open
+base_relation: open
+base_justification: Unlike sibling records in this hub, the abstract states no falsification mechanism,
+  pre-specification, or evidence-tiering for the eight-dimension/four-mechanism model — its epistemic status
+  stays open/undeclared relative to the base's tier discipline (kc-base-007), not yet placed on the ladder.
+glosa_use: skip
+glosa_target: "n/a — policy-brief content; flagged only for its missing tier declaration"
+notes: Zenodo link for this DOI failed at cluster time (registry/zenodo_clusters.json he.failed.17280895 —
+  metadata.dates validation error); record was still found intact in registry/zenodo_all_records.json, used
+  here.

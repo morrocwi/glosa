@@ -1,0 +1,28 @@
+id: kc-ai-012
+kind: claim
+title: Human LoRA Factorization Thesis — bounded-rank experiential update
+text: 'Cross-level identity claim: an experience, first-person a bounded embodied appearance and third-person a
+  selective transformation of the observer, is developed inside a finite-discrete readout framework (finite retained
+  differences on a finite graph, n in N, rational matrices, no continuum limit). If update factors through an active
+  readout space of dimension m inside an organization of dimension d, with m<d, event-level change is low-rank —
+  the Human LoRA Factorization Thesis.'
+verbatim: 'The argument is developed inside a finite-discrete readout framework: every accessible state is a finite
+  retained difference on a finite graph; time is indexed by n ∈ N; formal state and update matrices are rational;
+  and no continuum limit is required. If an experience-mediated update factors through an active readout space of
+  dimension m inside an operational organization of dimension d, then its update rank is bounded by m. Under the
+  finite-bottleneck condition m < d, event-level change is low-rank.'
+source:
+  path: registry/zenodo_all_records.json
+  title: 'Experience Is the Human LoRA: A Readout–Retention Theory of Selective Model Change'
+  year: 2026
+fetched_from_url: https://zenodo.org/api/records/21425420
+locator: record 21425420, metadata.description (Abstract)
+tier: Dr
+base_relation: holds
+base_justification: Explicit restatement of kc-base-015/017 (discrete number ladder, no continuum limit, retained-information
+  operators) applied to human experiential update; consistent with, not revising, the base finite-discrete stance.
+glosa_use: adopt
+glosa_target: FOUNDATION §5 (retention/update discipline) — candidate cross-domain analogy for bounded-rank knowledge
+  update
+notes: Earliest (2026-07-18) of the ai-hub papers explicitly built on the finite-discrete readout framework named
+  in the base cards.

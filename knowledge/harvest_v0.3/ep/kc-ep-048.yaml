@@ -1,0 +1,26 @@
+id: kc-ep-048
+kind: method
+title: 'Before Evidence Can Decide: candidate-set formation and discovery routing (Paper III)'
+text: Paper III (agenda paper) of the Bounded Knower sequence, on candidate-set formation, discovery routing,
+  and unconceived alternatives as questions for a pre-evidential epistemology of science; GLOSA K0, not
+  independently reviewed, no priority claim.
+verbatim: 'Series. Paper III (agenda paper) of the three-paper Bounded Knower sequence. Paper I: From
+  Problem to Hypothesis (DOI 10.5281/zenodo.22307148). Paper II: Knowledge Topology and the First Passage
+  to Usable Hypotheses (DOI 10.5281/zenodo.22307561). Paper IV: The Epistemic Chain Reaction (DOI 10.5281/zenodo.22307751).
+  Status. GLOSA K0 — timestamped and citable, not independently reviewed, no priority claim.'
+source:
+  doi: 10.5281/zenodo.22307564
+  title: 'Before Evidence Can Decide: Candidate-Set Formation, Discovery Routing, and Unconceived Alternatives
+    — Questions for a Pre-Evidential Epistemology of Science'
+  year: 2026
+fetched_from_url: https://zenodo.org/api/records/22307564
+locator: Zenodo record abstract (desc field), via API
+tier: Open
+base_relation: holds
+base_justification: Extends the base's meta-readout governance layer (21529456) to the pre-evidential
+  stage of inquiry — consistent with the base's tier discipline; abstract itself is not populated in the
+  registry snapshot beyond the series/status boilerplate.
+glosa_use: adapt
+glosa_target: FOUNDATION §7.9 Literature Review System (LRS)
+notes: 2026-09-04; series Paper III of IV; registry desc field carries only series/status metadata, no
+  populated abstract text at time of harvest.

@@ -1,0 +1,31 @@
+id: kc-ph-115
+kind: claim
+title: 'Retention–Hodge–Dirac Closure: A Discrete Information Criterion for Three-Dimensional Directional Feedback,
+  with Five Ex'
+text: 'Self-published Zenodo preprint (single-author physics/information-theory program, 2026-07-19). Abstract
+  reports: he five open flags of Papers I–II — the posited pair tensors (G, Ω); the axis decomposition
+  supplied to the dimension readout; the borrowed (2s)2 paramagnetic law; the borrowed statistics sign; and
+  the unexplained d = 3 — are re-read here as five shadows of one missing object: a graded first-order
+  retention operator DR whose...'
+verbatim: 'he five open flags of Papers I–II — the posited pair tensors (G, Ω); the axis decomposition supplied to the
+  dimension readout; the borrowed (2s)2 paramagnetic law; the borrowed statistics sign; and the unexplained d
+  = 3 — are re-read here as five shadows of one missing object: a graded first-order retention operator DR
+  whose square is the observed Laplacian, LR ≃ D2 R|C0 . We execute five rungs of this program. (i) (G, Ω)
+  uniqueness: any bilinear composition readout on the reader–record pair space, with no-self-norm on its
+  exchange-even'
+source:
+  doi: 10.5281/zenodo.21444163
+  title: 'Retention–Hodge–Dirac Closure: A Discrete Information Criterion for Three-Dimensional Directional Feedback,
+    with Five Executed Rungs'
+  year: 2026
+fetched_from_url: 'https://zenodo.org/api/records/21444163'
+locator: Zenodo record abstract (desc field), via API, from registry/zenodo_all_records.json
+tier: Open
+base_relation: holds
+base_justification: Contemporaneous companion paper in the same single-author program that also produced the base corpus;
+  already uses base vocabulary (δ_R / retained information / L_R-style operators), so it is read as consistent
+  with, not prior to, kc-base-011/012 (L_R) and kc-base-022 (trunk equation).
+glosa_use: adapt
+glosa_target: FOUNDATION §3 claim card / kc-base-034 term-by-term tier table — explicit [Th_sym]-style per-step tagging and an honest boundary admission (code given axis decomposition, not recovering it), usable as a worked tier-discipline pattern
+notes: Part of the single-author 'ph' hub iterative physics-theory series (Zenodo id 21444163, 2026-07-19);
+  method-layer extraction only (self-publication + no-peer-review posture), not the physics content itself.

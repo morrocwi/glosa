@@ -1,0 +1,27 @@
+id: kc-ep-036
+kind: method
+title: 'The Declaration Bound: bit-accurate retained-state separation for deferred spectral queries'
+text: Studies exact eigenvalue counting for a streamed tridiagonal matrix under before- vs after-traversal
+  query declaration, measured in bits/machine words; shows a sharp Θ(1) vs Θ(n) retained-space separation
+  depending on when the query is declared, and that the classical constant-register Sturm bound must not
+  be identified with constant bit space without a stated precision model.
+verbatim: We study exact eigenvalue counting for a streamed real symmetric tridiagonal matrix when the
+  spectral query is announced either before or after the record is read. The principal revision over an
+  arithmetic-register formulation is that retained state is measured in bits and machine words throughout.
+  We construct a 𝑞-ary family of irreducible tridiagonal matrices whose entries and admissible shifts
+  occupy 𝑤 = Θ(log(𝑛𝑞)) bits.
+source:
+  doi: 10.5281/zenodo.21634023
+  title: 'The Declaration Bound: A Bit-Accurate Retained-State Separation for Deferred Spectral Queries'
+  year: 2026
+fetched_from_url: https://zenodo.org/api/records/21634023
+locator: Zenodo record abstract (desc field), via API
+tier: Th_coqc
+base_relation: holds
+base_justification: Directly extends the base's Th_coqc/finite_diagnostic tier machinery and retained-information
+  operator (kc-base-017) with a bit-accurate, machine-checkable retained-state result — a concrete worked
+  instance of the tier discipline the base mandates never be collapsed (kc-base-007).
+glosa_use: adopt
+glosa_target: 'FOUNDATION §4.1 Tier ladder (Th_coqc worked example: declared-query-timing changes the
+  retained-state tier)'
+notes: 2026-07-28; anchor record for the ep hub.

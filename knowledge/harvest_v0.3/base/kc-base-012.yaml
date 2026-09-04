@@ -1,0 +1,33 @@
+id: kc-base-012
+kind: claim
+title: L_R forced by three properties of δ_R's own meaning
+text: 'A retained distinction already carries three properties before any physics is hung on it: symmetric
+  (reading a distinction from either end returns the same retained fact), zero-row-sum (a uniform state
+  retains nothing to distinguish), off-diagonal ≤ 0 (the operator reads difference, not connection). Machine-checked
+  over Q, these three properties alone force any operator satisfying them into exactly the D_W − W shape.'
+verbatim: 'A retained distinction, δ_R = (a ♯ b), already carries three properties
+
+  before any physics is hung on it. **Symmetric**... **Zero-row-sum**...
+
+  **Off-diagonal ≤
+
+  0**... Machine-checked over `Q` (`forced_into_DW_minus_W`,
+
+  `Th_coqc`, axiom-free), those three properties alone force any operator
+
+  satisfying them into exactly the `D_W − W` shape.'
+source:
+  path: readout_universe/philosophy.md
+  title: Philosophy — Readout Universe
+  year: 2026
+fetched_from_url: ~/ANSE.ASIA/readout_universe/philosophy.md
+locator: §5.2, lines ~712-727
+tier: Th_coqc
+base_relation: holds
+base_justification: This IS a base card from the lens root text; base cards are the ground the ledger
+  is judged against.
+glosa_use: skip
+glosa_target: FOUNDATION §1.0 Pillars
+notes: Forcing argument relocates but does not close the 'why this operator' regress — the primitive's
+  meaning stays the irreducible Dr root. Recorded for lineage; not directly reusable in glosa's document
+  schema.

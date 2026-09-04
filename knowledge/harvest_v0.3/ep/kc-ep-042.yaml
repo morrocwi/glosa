@@ -1,0 +1,29 @@
+id: kc-ep-042
+kind: definition
+title: 'The Readout Condition: existence, attribution, disclosure'
+text: 'Develops the Readout Condition as a necessary architecture for source-relative epistemic warrant:
+  existence (every claim-level distinction has an epistemic provenance path), attribution (a distinction
+  credited to a source must be licensed by that source), and disclosure (essential augmentations must
+  remain visible to audit); in the exact functional case, source attribution requires constancy on readout
+  fibers and factorization through the readout, extended pointwise for non-transitive indiscriminability
+  and via an identification ladder for stochastic (Blackwell-garbling) settings.'
+verbatim: 'This paper develops the Readout Condition as a necessary architecture for source-relative epistemic
+  warrant. Its core is a three-part norm: existence (every claim-level distinction has an epistemic provenance
+  path), attribution (a distinction credited to a source must be licensed by that source), and disclosure
+  (essential augmentations must remain visible to audit). In the exact functional case, source attribution
+  requires constancy on readout fibers and hence factorization through the readout.'
+source:
+  doi: 10.5281/zenodo.22301318
+  title: 'The Readout Condition: Distinguishability, Access, and Epistemic Warrant'
+  year: 2026
+fetched_from_url: local:sources/READOUT_CONDITION_2026-08.txt (also https://zenodo.org/api/records/22301318)
+locator: Abstract, sources/READOUT_CONDITION_2026-08.txt lines ~9-16
+tier: Dr
+base_relation: holds
+base_justification: 'Direct formal generalization of the base''s non-injective-readout theorem (kc-base-006):
+  factorization-through-the-readout as the licensing condition for attribution is the same fiber/quotient
+  structure the base uses for L_R and δ_R. Local full text available (sources/READOUT_CONDITION_2026-08.txt).'
+glosa_use: adopt
+glosa_target: FOUNDATION §3.1 Five Questions ⇄ E-A-D ⇄ field crosswalk — this paper is the named source
+  of the Existence-Attribution-Disclosure (E-A-D) norm glosa's own schema is built on
+notes: ''

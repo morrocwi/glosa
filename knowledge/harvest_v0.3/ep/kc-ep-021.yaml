@@ -1,0 +1,26 @@
+id: kc-ep-021
+kind: claim
+title: 'Constraint-first epistemology: a non-zero floor of mediation'
+text: Argues finite cognition entails a non-zero floor of mediation derived from three minimal premises
+  (distinguishability, causal connectivity, finite propagation speed), from which normativity is derived
+  as constitutive rather than optional; engages Kantian and Madhyamaka (Buddhist) frameworks and Thompson/Garfield/Siderits
+  directly.
+verbatim: Both Kantian philosophy and Buddhist thought reject the possibility of epistemic immediacy.
+  Yet contemporary comparative philosophy still lacks a stable account of how normativity survives once
+  cognition is fully acknowledged to be conditioned. If all cognition is mediated, and if agency does
+  not originate from an unconditioned subject, why are some frameworks better than others? This article
+  develops a constraint-first epistemology to address this problem.
+source:
+  doi: 10.5281/zenodo.19205869
+  title: 'Constraint-First Epistemology: Normativity, Conditioned Agency, and the Non-Zero Kantian Floor'
+  year: 2026
+fetched_from_url: https://zenodo.org/api/records/19205869
+locator: Zenodo record abstract (desc field), via API
+tier: Dr
+base_relation: holds
+base_justification: Independently derives from premises that closely parallel the base's RAR A1-A8 distinguishability/retention
+  axioms (kc-base-026) and δ_R primitive (kc-base-009); a convergent, non-contradicting parallel derivation
+  from the philosophy-of-mind literature.
+glosa_use: adopt
+glosa_target: FOUNDATION Appendix A — Family A Truth/Warrant (cross-tradition convergence evidence)
+notes: 2026-03-23; tags aihp.

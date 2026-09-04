@@ -1,0 +1,31 @@
+id: kc-ph-089
+kind: claim
+title: Time as Causal Memory A Philosophical Synthesis from Newton to Quantum Gravity
+text: 'Self-published Zenodo preprint (single-author physics/information-theory program, 2025-12-29). Abstract
+  reports: What is time? This question has generated incompatible answers across four centuries of physics:
+  Newton’s absolute background, Einstein’s dynamical geometry, Boltzmann’s statistical arrow, and
+  Wheeler-DeWitt’s frozen formalism where time seemingly vanishes. Rather than treating these as competing
+  theories, I propose they are complementary perspectives on a single phenomenon, distinguished only by
+  different memory regimes. The...'
+verbatim: 'What is time? This question has generated incompatible answers across four centuries of physics: Newton’s
+  absolute background, Einstein’s dynamical geometry, Boltzmann’s statistical arrow, and Wheeler-DeWitt’s
+  frozen formalism where time seemingly vanishes. Rather than treating these as competing theories, I propose
+  they are complementary perspectives on a single phenomenon, distinguished only by different memory regimes.
+  The unifying idea is this: physical time—time as operationally meaningful—emerges when systems exhibit both
+  finite-speed causal propagation and persistent memory of past influences. Where memory is infinite, we
+  recover Newtonian absolute time. Where memory decays statistically,'
+source:
+  doi: 10.5281/zenodo.18081443
+  title: Time as Causal Memory A Philosophical Synthesis from Newton to Quantum Gravity
+  year: 2025
+fetched_from_url: 'https://zenodo.org/api/records/18081443'
+locator: Zenodo record abstract (desc field), via API, from registry/zenodo_all_records.json
+tier: Open
+base_relation: refined_by_later_work
+base_justification: Precursor step in the same program's iterative build-up toward what the base corpus fixes as the τ_c>0
+  persistence axiom / mass-as-readout-of-τ_c (kc-base-028); vocabulary and claims here are provisional working
+  drafts later folded into and re-derived under that axiom.
+glosa_use: skip
+glosa_target: n/a — superseded within its own program before reaching base corpus
+notes: Part of the single-author 'ph' hub iterative physics-theory series (Zenodo id 18081443, 2025-12-29);
+  method-layer extraction only (self-publication + no-peer-review posture), not the physics content itself.

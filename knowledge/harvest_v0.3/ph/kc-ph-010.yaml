@@ -1,0 +1,31 @@
+id: kc-ph-010
+kind: claim
+title: The Equation of Coherence — From Cosmic Order to Quantum Trace - The Yaoharee Proposal
+text: 'Self-published Zenodo preprint (single-author physics/information-theory program, 2025-10-21). Abstract
+  reports: We present the Equation of Coherence (SURE–∞ Canonical v1.2), a metriplectic (GENERIC) framework
+  unifying conservative (Hamiltonian) and dissipative (metric) dynamics under a single Lyapunov-stable energy
+  functional (dE/dt <= 0). The formulation reproduces three non-contradictory regimes — Quantum/Unitary (Q),
+  Relativistic correspondence (R), and Diffusive/Classical (D). Public sandbox verification (grid 32^3, 120
+  steps) confirms energy conservation in...'
+verbatim: We present the Equation of Coherence (SURE–∞ Canonical v1.2), a metriplectic (GENERIC) framework unifying
+  conservative (Hamiltonian) and dissipative (metric) dynamics under a single Lyapunov-stable energy
+  functional (dE/dt <= 0). The formulation reproduces three non-contradictory regimes — Quantum/Unitary (Q),
+  Relativistic correspondence (R), and Diffusive/Classical (D). Public sandbox verification (grid 32^3, 120
+  steps) confirms energy conservation in Q/R and strict energy decrease in D, yielding Consistency Index CI =
+  1.00. We disclose complete mathematical structure and proofs sufficient for peer verification while
+  redacting application-specific calibration constants under a Public Privacy policy.
+source:
+  doi: 10.5281/zenodo.17403714
+  title: The Equation of Coherence — From Cosmic Order to Quantum Trace - The Yaoharee Proposal
+  year: 2025
+fetched_from_url: 'https://zenodo.org/api/records/17403714'
+locator: Zenodo record abstract (desc field), via API, from registry/zenodo_all_records.json
+tier: Open
+base_relation: superseded
+base_justification: Uses an earlier, since-abandoned working name/formalism (this program cycled through several framework names
+  before settling on retained-information/δ_R vocabulary); the base corpus's mother equation (kc-base-020) and
+  trunk equation (kc-base-022) replace this formulation.
+glosa_use: skip
+glosa_target: n/a — abandoned vocabulary, replaced by base mother/trunk equation
+notes: Part of the single-author 'ph' hub iterative physics-theory series (Zenodo id 17403714, 2025-10-21);
+  method-layer extraction only (self-publication + no-peer-review posture), not the physics content itself.

@@ -1,0 +1,26 @@
+id: kc-aihp-009
+kind: claim
+title: 'Knowledge Topology: discovery time and direction as a readout theory of the first passage to a
+  usable hypothesis'
+text: 'Paper II of the Bounded Knower sequence frames scientific discovery as a first-passage process
+  over a knowledge topology: how long it takes and which direction a bounded knower reaches a usable hypothesis
+  depends on the shape of that topology, not only on evidence strength. GLOSA K0, not independently reviewed.'
+verbatim: 'Series. Paper II of the three-paper Bounded Knower sequence. Paper I: From Problem to Hypothesis
+  (DOI 10.5281/zenodo.22307148). Paper III: Before Evidence Can Decide (DOI 10.5281/zenodo.22307564).
+  Paper IV: The Epistemic Chain Reaction (DOI 10.5281/zenodo.22307751). Status. GLOSA K0 — timestamped
+  and citable, not independently reviewed, no priority claim.'
+source:
+  doi: 10.5281/zenodo.22307561
+  title: 'Knowledge Topology and the First Passage to Usable Hypotheses: A Readout Theory of Discovery
+    Time and Direction'
+  year: 2026
+fetched_from_url: https://zenodo.org/api/records/22307561
+locator: Series/Status metadata block
+tier: Open
+base_relation: open
+base_justification: 'Same status as kc-aihp-008: no completed derivation yet to weigh against a base card,
+  so judged ''open'' rather than ''holds'' or ''refined_by_later_work''.'
+glosa_use: skip
+glosa_target: n/a — agenda paper, no operationalizable mechanism yet
+notes: Zenodo abstract field is empty for this record; the Series/Status metadata paragraph is the only
+  continuous text the record itself carries.

@@ -1,0 +1,31 @@
+id: kc-aihp-001
+kind: method
+title: glosa's own paper applies claim-card discipline reflexively to itself (K0, tier Dr)
+text: glosa (Rigour Without Infrastructure) is a Standalone Scholar methodology forcing every claim to
+  record what was seen, what data separates, what AI filled in, what was assumed, and what independent
+  check it met. The paper is itself genre-routed design_science (Problem->Objectives->Design->Demonstration->Evaluation),
+  reaching tier Dr on design claims and finite_diagnostic on one mechanically executed check (its own
+  LaTeX build).
+verbatim: 'This paper reports glosa (Rigour Without Infrastructure), a Standalone Scholar methodology
+  for human–AI knowledge co-production: a person with no university, no lab, and no research team needs
+  a mechanism that forces every claim to answer, for one claim at a time, what was actually seen, what
+  the data separates, what AI filled in, what was assumed, and whether it has met independent evidence
+  or objection. The paper is itself an instance of the method it describes: it is genre-routed as design_science
+  (Problem → Objectives → Design → Demonstration → Evaluation), reaches tier Dr on its design claims and
+  finite_diagnostic on one mechanically executed check (its own LaTeX build), and states plainly what
+  was executed versus what remains specified.'
+source:
+  doi: 10.5281/zenodo.22307843
+  title: 'glosa — Rigour Without Infrastructure: A Standalone Scholar Methodology for Human–AI Knowledge
+    Co-Production'
+  year: 2026
+fetched_from_url: local:dist/glosa-paper-0.1.0-en.pdf
+locator: p.1, Abstract
+tier: Dr
+base_relation: holds
+base_justification: Operationalizes kc-base-007 (six-tier discipline) and kc-base-035 (Bounded-Judge Law)
+  as a concrete claim-card mechanism; does not contradict either, it instantiates them for the human-AI
+  co-production domain.
+glosa_use: already_in_glosa
+glosa_target: FOUNDATION §7.1 independence ladder / claim-card kernel schema
+notes: glosa's own primary methodology paper; this hub is largely glosa citing its own research trail.

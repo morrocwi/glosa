@@ -1,0 +1,28 @@
+id: kc-ep-005
+kind: claim
+title: Infinity as transcendental ground of meaning (contested vs. readout-not-truth)
+text: 'Argues infinity must exist as ground of meaning (P1: finitude''s intelligibility presupposes an
+  infinite horizon) but cannot exist as a participant in physically constrained reality (P2); states falsifiability
+  criteria and separates formal (ZFC) from physical admissibility.'
+verbatim: 'This paper advances a meta-foundational thesis concerning the ontological status of innity:
+  innity must exist as the ground of meaning, but cannot exist as a participant in constrained physical
+  reality. We establish this through two postulates: (P1) the intelligibility of nitude presupposes an
+  innite horizon as a transcendental condition, and (P2) the interpretation of innity as a participant
+  in physically constrained domainsas opposed to its formal use in mathematics generates paradox.'
+source:
+  doi: 10.5281/zenodo.18085092
+  title: Infinity as the Ground of Meaning A Meta-Foundational Framework for the Ontological Status of
+    the Innite Across Mathematics, Physics, and Metaphysics
+  year: 2025
+fetched_from_url: https://zenodo.org/api/records/18085092
+locator: Zenodo record abstract (desc field), via API
+tier: Open
+base_relation: open
+base_justification: 'Directly in tension with the base''s injected-infinity taxonomy (kc-base-016, I1-I4)
+  and discrete-readout doctrine (kc-base-032): this paper treats infinity as a required transcendental
+  condition rather than a non-readout to be flagged and avoided. Neither corpus explicitly adjudicates
+  the other; flagged unresolved rather than assumed reconciled.'
+glosa_use: skip
+glosa_target: (tension noted, not adopted without reconciliation)
+notes: Pre-dates the readout-genesis/readout_universe corpus's injected-infinity taxonomy; own project,
+  not framed as extending it.

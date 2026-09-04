@@ -1,0 +1,24 @@
+id: kc-ep-023
+kind: claim
+title: 'Deep Authorship and Causal-Structural Alignment: beyond free-will misframing'
+text: Argues the determinism/libertarianism binary is a structural misframing that ignores the observer's
+  eigenstructure; redefines agency as Deep Authorship (a self-model with inherent error εtot > 0) and
+  truth as Causal-Structural Alignment rather than naked correspondence, treating the translation gap
+  as the condition of agency, not a defect.
+verbatim: This article challenges the foundational assumptions of the centuries-old debate on free will
+  and truth by introducing a unified framework of Epistemic Mediation. We argue that the traditional binary
+  between determinism and libertarianism is a structural misframing (Misframing) that ignores the irreducible
+  role of the observer’s eigenstructure.
+source:
+  doi: 10.5281/zenodo.19176260
+  title: 'The Architecture of Mediated Agency: Beyond the Misframing of Free Will and Truth'
+  year: 2026
+fetched_from_url: https://zenodo.org/api/records/19176260
+locator: Zenodo record abstract (desc field), via API
+tier: Open
+base_relation: holds
+base_justification: The εtot > 0 irreducible-error claim directly parallels the base's non-injective-readout
+  theorem (kc-base-006) and the mother equation's permanent translation gap (kc-base-020).
+glosa_use: adopt
+glosa_target: FOUNDATION Appendix A — Family A Truth/Warrant
+notes: 2026-03-23; tags ai, aihp.

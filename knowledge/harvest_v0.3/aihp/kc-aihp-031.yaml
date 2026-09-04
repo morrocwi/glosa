@@ -1,0 +1,28 @@
+id: kc-aihp-031
+kind: claim
+title: 'Operational Linguistic Wisdom: language as cognitive infrastructure activating linguistic capital
+  via LLMs, pre-readout vocabulary'
+text: Conceptual-reflective synthesis (grounded in Bourdieu, Nonaka, Floridi) proposing a three-stage
+  mechanism — Elective Connectivity, Capability Activation, Reflexive Reconfiguration — for how language,
+  when LLM-enabled, becomes cognitive infrastructure activating an organization's linguistic capital,
+  contingent on connection being elective and governed. No empirical claims made.
+verbatim: This paper articulates a three-stage mechanism—Elective Connectivity, Capability Activation,
+  and Reflexive Reconfiguration—that operationalizes this shift. ... Language can function as cognitive
+  infrastructure when (i) connection to LLMs is elective and governed, (ii) dialogic prompting routines
+  surface tacit knowledge and align values, and (iii) reflective insights are institutionalized into policies
+  and processes.
+source:
+  doi: 10.5281/zenodo.22308446
+  title: 'Operational Linguistic Wisdom: Elective Connectivity and Linguistic Capital Activation in the
+    Age of LLMs'
+  year: 2025
+fetched_from_url: https://zenodo.org/api/records/22308446
+locator: Abstract
+tier: Open
+base_relation: refined_by_later_work
+base_justification: Same pre-formal Oct 2025 vintage as kc-aihp-030; 'connection must be elective and
+  governed' is an early, informal version of the disclosure/gating discipline kc-base-008 (Fail-Able Gate
+  Law) and kc-base-018 (contaminated-concept gate table) later make mechanical and checkable.
+glosa_use: skip
+glosa_target: n/a — pre-formal precursor paper
+notes: ''

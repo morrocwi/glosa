@@ -1,0 +1,28 @@
+id: kc-tourism-006
+kind: claim
+title: Cultural-Based Practitioner framework built from cross-national case studies, not a single-site claim
+text: Proposes a Cultural-Based Practitioner (CBP) framework for actors operating at the intersection of state,
+  market, and religion, evidenced through comparative case studies across three named jurisdictions (Thailand,
+  Singapore, Taiwan) rather than a single-site or single-country claim.
+verbatim: "The paper introduces the CBP framework, integrating cultural skills, cultural bridging, and cultural
+  governance to form a Living Soft Infrastructure—a model for transforming faith-based and cultural capital
+  into verifiable social and economic value. Case studies from Thailand, Singapore, and Taiwan demonstrate how
+  individual, institutional, and state-level practitioners can sustain coexistence through transparency,
+  justice, and shared ethical values."
+source:
+  doi: 10.5281/zenodo.17281646
+  title: 'Faith in Service Systems: Dynamics of Cultural-Based Practitioners in Creating Shared Spaces among
+    State, Market, and Religion'
+  year: 2025
+fetched_from_url: https://zenodo.org/api/records/17281646
+locator: abstract (metadata.description field), via Zenodo API
+tier: Open
+base_relation: open
+base_justification: A novel comparative-case framework claim ('verifiable social and economic value') without
+  a stated verification method in the abstract itself; no base card asserts or contradicts the CBP construct,
+  so it is carried Open pending its own methodology being read past the abstract.
+glosa_use: skip
+glosa_target: "n/a — domain social-governance content (Cultural-Based Practitioners), not itself a rule about
+  how knowledge is made/checked; the word 'verifiable' in the abstract is a claim to watch, not adopt, since
+  no verification procedure is stated at abstract depth"
+notes: No local full text found; dated 2025-10-06.

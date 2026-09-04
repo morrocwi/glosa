@@ -1,0 +1,30 @@
+id: kc-ph-094
+kind: claim
+title: 'Tully–Fisher as Gravitational Memory: Why the Universe Remembers (with Spatial Diffusion)'
+text: 'Self-published Zenodo preprint (single-author physics/information-theory program, 2026-01-09). Abstract
+  reports: We frame TF/BTFR as correlations between two coarse-grainings of a common history—light as a
+  short-term report, gravity as a long-term ledger. We extend local kernels to spatiotemporal diffusion
+  (including fractional order) so that accumulated memory propagates to large radii and sustains extended flat
+  curves. To avoid overfitting we adopt a minimal parameterization with hierarchical Bayesian...'
+verbatim: We frame TF/BTFR as correlations between two coarse-grainings of a common history—light as a short-term
+  report, gravity as a long-term ledger. We extend local kernels to spatiotemporal diffusion (including
+  fractional order) so that accumulated memory propagates to large radii and sustains extended flat curves. To
+  avoid overfitting we adopt a minimal parameterization with hierarchical Bayesian priors and provide a
+  real-data fitting protocol (SPARC/IFS) with ∆AIC/∆BIC comparisons to NFW and MOND. Key falsifiable
+  signatures include residual–history correlations, phase lags ∼ τ , diffusion-length control of the flat
+  extent, and outer-slope diagnostics
+source:
+  doi: 10.5281/zenodo.18202473
+  title: 'Tully–Fisher as Gravitational Memory: Why the Universe Remembers (with Spatial Diffusion)'
+  year: 2026
+fetched_from_url: 'https://zenodo.org/api/records/18202473'
+locator: Zenodo record abstract (desc field), via API, from registry/zenodo_all_records.json
+tier: Open
+base_relation: superseded
+base_justification: Uses an earlier, since-abandoned working name/formalism (this program cycled through several framework names
+  before settling on retained-information/δ_R vocabulary); the base corpus's mother equation (kc-base-020) and
+  trunk equation (kc-base-022) replace this formulation.
+glosa_use: skip
+glosa_target: n/a — abandoned vocabulary, replaced by base mother/trunk equation
+notes: Part of the single-author 'ph' hub iterative physics-theory series (Zenodo id 18202473, 2026-01-09);
+  method-layer extraction only (self-publication + no-peer-review posture), not the physics content itself.

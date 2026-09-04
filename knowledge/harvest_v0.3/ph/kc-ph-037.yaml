@@ -1,0 +1,31 @@
+id: kc-ph-037
+kind: rule
+title: 'Axiom 4: Non-Equilibrium Information Physics'
+text: 'Self-published Zenodo preprint (single-author physics/information-theory program, 2025-11-06). Abstract
+  reports: We hypothesize that physical reality can be reformulated with an Information Field $\Psi$ as the
+  fundamental ontological substrate, from which mass, energy, spacetime, and thermodynamic entropy emerge as
+  phenomenological manifestations. Building on rigorously proven Lyapunov energy decay $(\dot{E} \le 0)$ in
+  gauge-coupled dissipative field dynamics, we construct a Non-Equilibrium Information Physics (NEIP)
+  framework satisfying the...'
+verbatim: 'We hypothesize that physical reality can be reformulated with an Information Field $\Psi$ as the
+  fundamental ontological substrate, from which mass, energy, spacetime, and thermodynamic entropy emerge as
+  phenomenological manifestations. Building on rigorously proven Lyapunov energy decay $(\dot{E} \le 0)$ in
+  gauge-coupled dissipative field dynamics, we construct a Non-Equilibrium Information Physics (NEIP)
+  framework satisfying the generalized second law $\Delta S_{\text{total}} + \Delta I_{\text{Fisher}} \ge 0$.
+  Key postulates: (1) Mass represents stable, low-entropy information patterns with locked phase coherence;
+  (2) Energy represents propagating information updates as temporal coherence waves; (3) Vacuum'
+source:
+  doi: 10.5281/zenodo.17543179
+  title: 'Axiom 4: Non-Equilibrium Information Physics'
+  year: 2025
+fetched_from_url: 'https://zenodo.org/api/records/17543179'
+locator: Zenodo record abstract (desc field), via API, from registry/zenodo_all_records.json
+tier: Open
+base_relation: superseded
+base_justification: Uses an earlier, since-abandoned working name/formalism (this program cycled through several framework names
+  before settling on retained-information/δ_R vocabulary); the base corpus's mother equation (kc-base-020) and
+  trunk equation (kc-base-022) replace this formulation.
+glosa_use: skip
+glosa_target: n/a — abandoned vocabulary, replaced by base mother/trunk equation
+notes: Part of the single-author 'ph' hub iterative physics-theory series (Zenodo id 17543179, 2025-11-06);
+  method-layer extraction only (self-publication + no-peer-review posture), not the physics content itself.

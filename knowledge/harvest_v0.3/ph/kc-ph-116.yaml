@@ -1,0 +1,27 @@
+id: kc-ph-116
+kind: method
+title: Transform-Free Inertia Methods for Generalized Banded Symmetric Eigenproblems
+text: 'Self-published Zenodo preprint (single-author physics/information-theory program, 2026-07-28). Abstract
+  reports: We compute the k lowest eigenvalues of the generalized banded symmetric problem Kx = λ Mx by
+  bisection on the inertia of the pencil shift K − σ M, evaluated by a banded LDL⊤ factorization in O(nb2 )
+  work per shift. No Cholesky factor of M, no congruence transform, and no tridiagonal form is ever...'
+verbatim: 'We compute the k lowest eigenvalues of the generalized banded symmetric problem Kx = λ Mx by bisection on
+  the inertia of the pencil shift K − σ M, evaluated by a banded LDL⊤ factorization in O(nb2 ) work per shift.
+  No Cholesky factor of M, no congruence transform, and no tridiagonal form is ever constructed. The method is
+  simultaneously faster and more accurate than the reduction-based route, and for the same reason: the
+  transforms that were skipped are precisely the ones that amplify κ(M). Against LAPACK’s dsbgvx the measured'
+source:
+  doi: 10.5281/zenodo.21635722
+  title: Transform-Free Inertia Methods for Generalized Banded Symmetric Eigenproblems
+  year: 2026
+fetched_from_url: 'https://zenodo.org/api/records/21635722'
+locator: Zenodo record abstract (desc field), via API, from registry/zenodo_all_records.json
+tier: Open
+base_relation: open
+base_justification: Pure numerical-linear-algebra method paper (banded eigenproblem inertia-counting/bisection);
+  abstract carries no epistemic/tier claim and is not addressed by any base card despite the shared program
+  authorship.
+glosa_use: skip
+glosa_target: n/a — domain numerical-methods content outside glosa's method-layer scope
+notes: Part of the single-author 'ph' hub iterative physics-theory series (Zenodo id 21635722, 2026-07-28);
+  method-layer extraction only (self-publication + no-peer-review posture), not the physics content itself.

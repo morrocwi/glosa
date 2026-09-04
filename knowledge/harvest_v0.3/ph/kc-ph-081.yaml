@@ -1,0 +1,31 @@
+id: kc-ph-081
+kind: claim
+title: Uniqueness of Telegraph Dynamics Under Minimal Causal-Dissipative Constraints
+text: 'Self-published Zenodo preprint (single-author physics/information-theory program, 2025-12-25). Abstract
+  reports: Parabolic diffusion equations predict infinite propagation speed, violating relativistic
+  causality—a mathematical inconsistency known since Cattaneo’s work in 1948. We address a precise
+  mathematical question: within the class of second-order linear constantcoefficient partial differential
+  equations, which structures are compatible with both finite propagation speed and asymptotic stability? We
+  prove that the telegraph equation is the unique...'
+verbatim: 'Parabolic diffusion equations predict infinite propagation speed, violating relativistic causality—a
+  mathematical inconsistency known since Cattaneo’s work in 1948. We address a precise mathematical question:
+  within the class of second-order linear constantcoefficient partial differential equations, which structures
+  are compatible with both finite propagation speed and asymptotic stability? We prove that the telegraph
+  equation is the unique admissible structure satisfying three minimal axioms: finite-speed causality,
+  dissipative stability, and source-free dynamics. Furthermore, we establish that these axioms are logically
+  independent—none follows from the others. This uniqueness is a theorem of mathematical necessity, not'
+source:
+  doi: 10.5281/zenodo.18051281
+  title: Uniqueness of Telegraph Dynamics Under Minimal Causal-Dissipative Constraints
+  year: 2025
+fetched_from_url: 'https://zenodo.org/api/records/18051281'
+locator: Zenodo record abstract (desc field), via API, from registry/zenodo_all_records.json
+tier: Open
+base_relation: refined_by_later_work
+base_justification: Precursor step in the same program's iterative build-up toward what the base corpus fixes as the τ_c>0
+  persistence axiom / mass-as-readout-of-τ_c (kc-base-028); vocabulary and claims here are provisional working
+  drafts later folded into and re-derived under that axiom.
+glosa_use: skip
+glosa_target: n/a — superseded within its own program before reaching base corpus
+notes: Part of the single-author 'ph' hub iterative physics-theory series (Zenodo id 18051281, 2025-12-25);
+  method-layer extraction only (self-publication + no-peer-review posture), not the physics content itself.

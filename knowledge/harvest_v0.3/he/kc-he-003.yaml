@@ -1,0 +1,25 @@
+id: kc-he-003
+kind: rule
+title: T-PHE — practitioner standpoint paired with a cited tier-one evidence dossier, no clinical recommendation
+text: A practitioner-led (social-enterprise, not clinician) programme-theory paper for premarital health
+  education explicitly pairs every claim with cited medical-science evidence in a separate tier-one dossier
+  (search cut-off dated) and refuses to issue clinical recommendations itself. This is a worked separation of
+  standpoint (who is speaking) from evidence-grounding (what backs the claim) and from action authority (what
+  may be recommended).
+verbatim: "Standpoint: social-enterprise practitioner (ARAYA Nikah Social Enterprise, Bangkok), not a clinician;
+  the paper pairs every claim with the cited medical-science evidence and makes no clinical recommendation."
+source:
+  doi: 10.5281/zenodo.22302161
+  title: "Before Family Risk Becomes a Health Crisis: Trustworthy Premarital Health Education (T-PHE) as Primary Prevention Infrastructure — full paper, tier-one evidence dossier, and TIMA/FIMA 2026 abstract"
+  year: 2026
+fetched_from_url: https://zenodo.org/api/records/22302161
+locator: abstract (Zenodo record metadata.description)
+tier: Open
+base_relation: holds
+base_justification: Matches the base "legal ≠ epistemic, credential ≠ warrant" discipline in spirit — a
+  non-clinician standpoint does not borrow clinical authority; it cites clinical evidence and stops short of
+  clinical action, consistent with kc-base-008's evidence-vs-convention separation.
+glosa_use: already_in_glosa
+glosa_target: "FOUNDATION §5 disclaimer catalogue and §7.9 Literature Review System"
+notes: Already-familiar case (RE_T-PHE is a tracked ANSE.ASIA project per session memory); logged here only
+  for its method-layer content on standpoint/evidence/action separation, not as new information.

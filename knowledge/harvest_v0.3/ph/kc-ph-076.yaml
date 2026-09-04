@@ -1,0 +1,29 @@
+id: kc-ph-076
+kind: method
+title: The Telegraph–Causal Framework for Ultra-Fast Outflows in NGC 3783
+text: 'Self-published Zenodo preprint (single-author physics/information-theory program, 2025-12-13). Abstract
+  reports: Ultra-fast outflows (UFOs) from active galactic nuclei (AGN) are commonly modeled as steady or
+  quasi-steady winds driven by radiation and/or magnetohydrodynamic (MHD) stresses. A recent joint XRISM
+  (Resolve microcalorimeter) + XMM-Newton campaign on the Seyfert 1 galaxy NGC 3783 reported a transient UFO
+  with v ≃ 0.19c emerging during the decay of a soft flare...'
+verbatim: Ultra-fast outflows (UFOs) from active galactic nuclei (AGN) are commonly modeled as steady or quasi-steady
+  winds driven by radiation and/or magnetohydrodynamic (MHD) stresses. A recent joint XRISM (Resolve
+  microcalorimeter) + XMM-Newton campaign on the Seyfert 1 galaxy NGC 3783 reported a transient UFO with v ≃
+  0.19c emerging during the decay of a soft flare with a sub-day lag, a regime where standard parabolic
+  (diffusive) closures become causality-unsafe for impulsive dynamics. We formulate a minimal telegraph–causal
+  closure for stress/flux transport in a magnetized corona/disc atmosphere, map the observed delay to
+source:
+  doi: 10.5281/zenodo.17922382
+  title: The Telegraph–Causal Framework for Ultra-Fast Outflows in NGC 3783
+  year: 2025
+fetched_from_url: 'https://zenodo.org/api/records/17922382'
+locator: Zenodo record abstract (desc field), via API, from registry/zenodo_all_records.json
+tier: Open
+base_relation: refined_by_later_work
+base_justification: Precursor step in the same program's iterative build-up toward what the base corpus fixes as the τ_c>0
+  persistence axiom / mass-as-readout-of-τ_c (kc-base-028); vocabulary and claims here are provisional working
+  drafts later folded into and re-derived under that axiom.
+glosa_use: skip
+glosa_target: n/a — superseded within its own program before reaching base corpus
+notes: Part of the single-author 'ph' hub iterative physics-theory series (Zenodo id 17922382, 2025-12-13);
+  method-layer extraction only (self-publication + no-peer-review posture), not the physics content itself.

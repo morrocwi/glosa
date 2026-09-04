@@ -1,0 +1,29 @@
+id: kc-aihp-011
+kind: rule
+title: 'The Readout Condition: Existence, Attribution, Disclosure — three principles governing claim-level
+  distinctions'
+text: 'Formalizes the epistemic engine glosa''s own claim card operationalizes: Principle 1 (Existence)
+  every claim-level distinction with epistemic weight must have a traceable provenance path; Principle
+  2 (Attribution) a claim''s attributed source must actually license the distinction; Principle 3 (Disclosure)
+  any augmentation beyond the attributed source must stay declared or recoverable in audit. The conjunction
+  is the Readout Condition.'
+verbatim: Principle 1 (Existence). Every claim-level distinction that bears epistemic weight must have
+  an epistemic provenance path. Principle 2 (Attribution). If a claim attributes a distinction to a source
+  S, then S must license that distinction under the relevant access condition. Principle 3 (Disclosure).
+  If a distinction depends essentially on an augmentation beyond the attributed source, that augmentation
+  must remain declared or recoverable in an epistemic audit. The conjunction is the Readout Condition.
+source:
+  doi: 10.5281/zenodo.22301318
+  title: 'The Readout Condition: Distinguishability, Access, and Epistemic Warrant'
+  year: 2026
+fetched_from_url: local:sources/READOUT_CONDITION_2026-08.txt
+locator: lines 45-53
+tier: Th_coqc
+base_relation: holds
+base_justification: 'A formal operationalization of kc-base-001 (Readout-not-truth) and kc-base-006 (non-injective
+  readout theorem) at the level of citable claims: ''provenance path'' and ''declared or recoverable augmentation''
+  are the same discipline the base applies to numbers and equations, applied to citations.'
+glosa_use: adopt
+glosa_target: FOUNDATION §3.1 Five-Questions crosswalk (E-A-D norm) — cited directly per own header
+notes: This is the paper FOUNDATION_v0.5.md §3.1 already cites directly as its Five-Questions crosswalk
+  source (per sources/README.md).

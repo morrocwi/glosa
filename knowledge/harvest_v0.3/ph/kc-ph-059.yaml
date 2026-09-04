@@ -1,0 +1,30 @@
+id: kc-ph-059
+kind: claim
+title: Draf_Non-Equilibrium Informational Field Theory_physic_humanlife_ai_coherence
+text: 'Self-published Zenodo preprint (single-author physics/information-theory program, 2025-11-25). Abstract
+  reports: This treatise presents the Non-Equilibrium Informational Field Theory (NIFT) Axioms, a foundational
+  framework positing that the universe is fundamentally composed not of matter or energy, but of physically
+  real patterns of information evolving within a dissipative substrate. We establish a comprehensive set of
+  axioms across three categories: Ontological, defining the informational pixel and the asymmetry...'
+verbatim: 'This treatise presents the Non-Equilibrium Informational Field Theory (NIFT) Axioms, a foundational
+  framework positing that the universe is fundamentally composed not of matter or energy, but of physically
+  real patterns of information evolving within a dissipative substrate. We establish a comprehensive set of
+  axioms across three categories: Ontological, defining the informational pixel and the asymmetry principle as
+  the origin of time; Dynamical, describing the universe through telegraph causality and the informational
+  coherence law; and Structural, explaining the emergence of spacetime geometry via holographic constraints
+  and soliton closures. NIFT unifies the'
+source:
+  doi: 10.5281/zenodo.17711131
+  title: Draf_Non-Equilibrium Informational Field Theory_physic_humanlife_ai_coherence
+  year: 2025
+fetched_from_url: 'https://zenodo.org/api/records/17711131'
+locator: Zenodo record abstract (desc field), via API, from registry/zenodo_all_records.json
+tier: Open
+base_relation: superseded
+base_justification: Uses an earlier, since-abandoned working name/formalism (this program cycled through several framework names
+  before settling on retained-information/δ_R vocabulary); the base corpus's mother equation (kc-base-020) and
+  trunk equation (kc-base-022) replace this formulation.
+glosa_use: skip
+glosa_target: n/a — abandoned vocabulary, replaced by base mother/trunk equation
+notes: Part of the single-author 'ph' hub iterative physics-theory series (Zenodo id 17711131, 2025-11-25);
+  method-layer extraction only (self-publication + no-peer-review posture), not the physics content itself.

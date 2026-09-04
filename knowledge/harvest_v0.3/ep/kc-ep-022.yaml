@@ -1,0 +1,22 @@
+id: kc-ep-022
+kind: definition
+title: สัจจะสัมพันธ์ (Relational Truth) — Thai restatement
+text: 'A Thai-language book restating relational-truth themes: ''everything we know is not absolute truth
+  as such, but a truth translated through us'' — knowing itself is choosing and holding a position between
+  the world outside and the world we cannot know fully without distortion.'
+verbatim: เพราะทุกการรับรู้ของเรา มิใช่ความจริงสมบูรณ์โดยตรง แต่คือความจริงที่ถูกแปลความผ่านตัวเราเสมอ
+  ชีวิตจึงเป็นการเลือกและดำรงอยู่ ระหว่างโลกภายในกับโลกภายนอก ภายใต้ความจริงที่เราไม่อาจล่วงรู้ได้ครบถ้วน
+  โดยไม่ละทิ้งจินตภาพ ซึ่งถือกำเนิดจากทั้งเหตุผลและศรัทธา
+source:
+  doi: 10.5281/zenodo.19183837
+  title: สัจจะสัมพันธ์
+  year: 2026
+fetched_from_url: https://zenodo.org/api/records/19183837
+locator: Zenodo record abstract (desc field), via API
+tier: Open
+base_relation: holds
+base_justification: Direct Thai restatement of the base's readout-not-truth founding refusal (kc-base-001)
+  and bounded-knower framing (kc-base-027); consistent, same author/lens.
+glosa_use: already_in_glosa
+glosa_target: FOUNDATION §2.5 Bilingual handling (Thai source-of-truth precedent)
+notes: 2026-03-23; type Book; no keywords in registry.

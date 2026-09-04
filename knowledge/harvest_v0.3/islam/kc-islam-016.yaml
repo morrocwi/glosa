@@ -1,0 +1,24 @@
+id: kc-islam-016
+kind: claim
+title: Contribution declared theoretical/analytical, not empirical, up front
+text: Reframes Muslim tourism as a systemic uncertainty-management problem (via the SalamXP concept) rather
+  than a niche religious-amenities market, and explicitly scopes its own contribution as theoretical and
+  analytical rather than a report of empirical findings.
+verbatim: 'The contribution is theoretical and analytical in nature, aiming to clarify conditions of
+  possibility for cross-cultural tourism rather than to report empirical findings.'
+source:
+  doi: 10.5281/zenodo.18258377
+  title: "From Ritual Compliance to Predictable Cultural Experience: A Conceptual Framework for Cross-Cultural
+    Tourism Linking Muslim Travelers and Thai Cultural Contexts"
+  year: 2025
+fetched_from_url: https://zenodo.org/api/records/18258377
+locator: abstract (Zenodo record metadata.description)
+tier: Open
+base_relation: holds
+base_justification: Declaring "theoretical, not empirical" up front matches the base's six-tier discipline
+  (kc-base-007) insistence that a claim's tier be stated rather than left ambiguous or borrowed from adjacent
+  empirical work.
+glosa_use: adopt
+glosa_target: FOUNDATION §5 disclaimer catalogue — reusable "theoretical/analytical, not empirical" scoping
+  sentence.
+notes: —

@@ -1,0 +1,42 @@
+id: kc-base-031
+kind: rule
+title: What Part I does not yet claim (bounded-scope discipline)
+text: Part I does not establish that any particular physical constant, force, or particle exists. It does
+  not establish that L_R takes any specific numerical or matrix form. It does not establish that the telegraph
+  coarse-grain or spine PDE it feeds is unique. Above all, Part I does not claim that any of E00.1–E00.7
+  is true of the actual physical universe in the laboratory-measurement sense — it claims only that this
+  is the minimal Type-U convention from which the rest of the book's Type-P, gate-passing claims are built.
+verbatim: 'Above all, Part I does **not** claim that any of E00.1–E00.7 is *true* of
+
+  the actual physical universe in the laboratory-measurement sense. It claims
+
+  only that this is the minimal convention
+
+  (`Type-U`, per §I.0) from which the rest of the book''s `Type-P`, gate-passing
+
+  claims are built, and
+
+  that the convention has been kept as weak, as domain-free, and as free of
+
+  smuggled continuum content as the founder ontology demands. Whether the
+
+  universe *is* this way remains, honestly and
+
+  permanently, a readout question — never a settled one — for every part of
+
+  this book that follows.'
+source:
+  path: readout_genesis/READOUT_GENESIS_CORE.md
+  title: Genesis of the Universe, Step by Step — Genesis Step-by-Step v3.1
+  year: 2026
+fetched_from_url: ~/ANSE.ASIA/readout_genesis/READOUT_GENESIS_CORE.md
+locator: Part I §I.3, lines ~798-826
+tier: Dr
+base_relation: holds
+base_justification: This IS a base card from the lens root text; base cards are the ground the ledger
+  is judged against.
+glosa_use: adopt
+glosa_target: FOUNDATION §12 Honest edges — what is still Dr/untested, and what was NOT read
+notes: A model instance of a section that states, immediately after making claims, exactly what those
+  claims do NOT establish — glosa's own §12 'Honest edges' should follow this same closing-discipline
+  pattern for every FOUNDATION part.

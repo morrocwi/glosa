@@ -1,0 +1,32 @@
+id: kc-ph-028
+kind: method
+title: L4 — Phase–Amplitude Persistence in Human EEG (N=36) Empirical Validation of the Lyapunov–Scale–Lock
+  Framework
+text: 'Self-published Zenodo preprint (single-author physics/information-theory program, 2025-11-01). Abstract
+  reports: Highlights: L4 Empirical Validation This study provides the first large-scale empirical validation
+  (N=36) for a novel theoretical framework (L0–L3) of emergent coherence based on Lyapunov dissipation. Core
+  Finding: We demonstrate that in human EEG, informational structure (phase coherence, τφ) persists
+  significantly longer than energetic structure (amplitude envelope, τenv). Key Points for Academics &
+  Reviewers: •...'
+verbatim: 'Highlights: L4 Empirical Validation This study provides the first large-scale empirical validation (N=36)
+  for a novel theoretical framework (L0–L3) of emergent coherence based on Lyapunov dissipation. Core Finding:
+  We demonstrate that in human EEG, informational structure (phase coherence, τφ) persists significantly
+  longer than energetic structure (amplitude envelope, τenv). Key Points for Academics & Reviewers: • A
+  Testable Theory: We test a core prediction from the L0–L3 Lyapunov–Scale–Lock framework: that any coherent
+  system following a dissipative path (Axiom III: V˙ ≤ 0) must exhibit τφ > τenv. • Robust Methodology: We'
+source:
+  doi: 10.5281/zenodo.17498858
+  title: L4 — Phase–Amplitude Persistence in Human EEG (N=36) Empirical Validation of the Lyapunov–Scale–Lock
+    Framework
+  year: 2025
+fetched_from_url: 'https://zenodo.org/api/records/17498858'
+locator: Zenodo record abstract (desc field), via API, from registry/zenodo_all_records.json
+tier: Open
+base_relation: superseded
+base_justification: Uses an earlier, since-abandoned working name/formalism (this program cycled through several framework names
+  before settling on retained-information/δ_R vocabulary); the base corpus's mother equation (kc-base-020) and
+  trunk equation (kc-base-022) replace this formulation.
+glosa_use: skip
+glosa_target: n/a — abandoned vocabulary, replaced by base mother/trunk equation
+notes: Part of the single-author 'ph' hub iterative physics-theory series (Zenodo id 17498858, 2025-11-01);
+  method-layer extraction only (self-publication + no-peer-review posture), not the physics content itself.

@@ -1,0 +1,26 @@
+id: kc-ep-001
+kind: claim
+title: Dialogue as reflective interlocutor (human-AI)
+text: Argues wisdom arises from dialogue rooted in sincerity/attentiveness across Buddhist, Islamic and
+  Christian traditions, extending this to AI as a 'reflective interlocutor' that can prompt metacognitive
+  awareness through iterative questioning, but produces distortion when driven by haste or bias.
+verbatim: Series. Member of the Zenodo library When AI Expands Human Potential (hub DOI 10.5281/zenodo.22308201).
+  First published on SSRN (2025-10-06) as abstract id 5571719; deposited on Zenodo 2026-09-05 unchanged
+  for the series record. Conceptual paper; K0 — not peer reviewed; no priority claim. Abstract. This study
+  explores whether wisdom arises from effective dialogue—a question that bridges theology, philosophy,
+  and cognitive science.
+source:
+  doi: 10.5281/zenodo.22308451
+  title: 'The Dialogue as the Ground of Enlightenment: Religious and Cognitive Frameworks for Understanding
+    Wisdom through Human-AI Conversations'
+  year: 2025
+fetched_from_url: https://zenodo.org/api/records/22308451
+locator: Zenodo record abstract (desc field), via API
+tier: Open
+base_relation: holds
+base_justification: 'Compatible with base''s bounded-knower framing (kc-base-027): dialogue-as-mirror
+  is a readout process, not access to settled wisdom; no base card contradicted.'
+glosa_use: adapt
+glosa_target: FOUNDATION §2.1 the round-trip / human-AI dialogue framing
+notes: K0 series record, part of "When AI Expands Human Potential" library; SSRN-first, Zenodo-deposited
+  unchanged.

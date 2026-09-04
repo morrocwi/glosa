@@ -1,0 +1,28 @@
+id: kc-se-002
+kind: rule
+title: Adjacent evidence is not evidence the intervention itself works — a standing caveat, stated once
+text: >
+  The same paper's extended-evidence appendix opens with a single blanket disclaimer covering every
+  subsection that follows — every citation offers adjacent, analogous, or precedent support for a
+  construct the paper's intervention uses, never evidence that the intervention or any of its rules
+  actually works. Stated once instead of repeated per-subsection, so a reader cannot mistake supporting
+  literature for a validation trial.
+verbatim: "Unless flagged otherwise, every citation below offers adjacent, analogous, or precedent
+  evidence for a construct \\tphe{} uses --- never evidence that \\tphe{} itself, or any of its five
+  rules, works; this single sentence replaces a per-subsection restatement of that caveat."
+source:
+  doi: 10.5281/zenodo.22302161
+  title: "Before Family Risk Becomes a Health Crisis: Trustworthy Premarital Health Education (T-PHE) as
+    Primary Prevention Infrastructure — full paper, tier-one evidence dossier, and TIMA/FIMA 2026 abstract"
+  year: 2026
+fetched_from_url: local (RE_T-PHE repo, private working tree)
+locator: paper/sections/appendix_extended_evidence.tex, line 1
+tier: Open
+base_relation: holds
+base_justification: Same discipline as the base's operator-grounding / tier-honesty stance (kc-base-032,
+  kc-base-034) applied to citation evidence rather than equation terms — never let a supporting citation
+  be silently promoted to a validation result.
+glosa_use: adopt
+glosa_target: "FOUNDATION §3 claim card — evidence field (adjacent/precedent vs direct validation distinction)"
+notes: Reusable one-line disclaimer pattern glosa could cite verbatim in its own evidence-citation
+  guidance to avoid repeating the caveat per source.

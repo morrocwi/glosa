@@ -1,0 +1,30 @@
+id: kc-aihp-026
+kind: claim
+title: 'Knowledge crises are authority crises: the history of knowledge is the history of changing interpretive
+  authority'
+text: Human beings encounter partial traces, anomalies, records, and mediated signs, not a complete transparent
+  reality; these become knowledge only after translation, stabilization through repeatable durable forms,
+  and social authorization through institutions or recognized interpreters. What changes across civilizations,
+  the paper argues, is not only accumulated truths but the succession of agencies authorized to interpret
+  the world's signals — so knowledge crises are typically authority crises.
+verbatim: 'Human beings do not encounter reality as a complete and transparent whole; they encounter partial
+  traces, anomalies, records, measurements, and mediated signs. These do not become knowledge by themselves.
+  They must be translated into meaningful accounts, stabilized through repeatable and durable forms, and
+  socially authorized through institutions, procedures, or recognized interpreters. ... Its central claim
+  is that knowledge crises are often authority crises: moments in which the legitimacy of interpreters
+  is contested'
+source:
+  doi: 10.5281/zenodo.18943971
+  title: 'The Civilization of Knowledge: Who Has the Authority to Interpret the World'
+  year: 2026
+fetched_from_url: https://zenodo.org/api/records/18943971
+locator: Abstract
+tier: Dr
+base_relation: holds
+base_justification: Companion (English) version of the NIDA slides (kc-aihp-015/016); 'partial traces...must
+  be translated' matches kc-base-020/kc-base-021 (mother equation — the record is a translation, gap to
+  truth never closes) applied to institutional authority rather than to physical measurement.
+glosa_use: adopt
+glosa_target: FOUNDATION positioning — why glosa explicitly rejects institutional certification as the
+  licensing step (EPIS-KNOWLEDGE-VALIDATION gate rule)
+notes: ''

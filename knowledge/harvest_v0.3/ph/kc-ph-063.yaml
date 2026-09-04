@@ -1,0 +1,29 @@
+id: kc-ph-063
+kind: claim
+title: Reality is the causal structure of a single informational field
+text: 'Self-published Zenodo preprint (single-author physics/information-theory program, 2025-12-04). Abstract
+  reports: Reality is the causal structure of a single informational field, beginning with distinguishable
+  states and asymmetric transitions that generate a before–after ordering without requiring spacetime. When
+  this ordering is constrained by finite capacity, it forms local geometry, matter, and field behavior. If a
+  pattern cannot respond instantly, the causal delay appears as mass; if it...'
+verbatim: Reality is the causal structure of a single informational field, beginning with distinguishable states and
+  asymmetric transitions that generate a before–after ordering without requiring spacetime. When this ordering
+  is constrained by finite capacity, it forms local geometry, matter, and field behavior. If a pattern cannot
+  respond instantly, the causal delay appears as mass; if it departs from equilibrium, the field’s restoration
+  appears as force; the propagated causal difference is energy; and the entire sequence of transitions that
+  places one event after another is what we call time yaoharee 2025
+source:
+  doi: 10.5281/zenodo.17812102
+  title: Reality is the causal structure of a single informational field
+  year: 2025
+fetched_from_url: 'https://zenodo.org/api/records/17812102'
+locator: Zenodo record abstract (desc field), via API, from registry/zenodo_all_records.json
+tier: Open
+base_relation: superseded
+base_justification: Uses an earlier, since-abandoned working name/formalism (this program cycled through several framework names
+  before settling on retained-information/δ_R vocabulary); the base corpus's mother equation (kc-base-020) and
+  trunk equation (kc-base-022) replace this formulation.
+glosa_use: skip
+glosa_target: n/a — abandoned vocabulary, replaced by base mother/trunk equation
+notes: Part of the single-author 'ph' hub iterative physics-theory series (Zenodo id 17812102, 2025-12-04);
+  method-layer extraction only (self-publication + no-peer-review posture), not the physics content itself.

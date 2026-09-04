@@ -1,0 +1,28 @@
+id: kc-ep-041
+kind: method
+title: 'The Standalone Scholar: dual-track architecture for AI-native scholarship'
+text: For scholars outside institutional infrastructure, AI can make plausible scholarly-object production
+  abundant before independent criticism/certification/institutional-access become abundant; proposes a
+  dual-track architecture — AI-assisted formation/open-preprint-staging/provenance-controls/machine-constrained
+  checks producing defensible provisional assets, converted to socially stress-tested knowledge via independent
+  human friction/repeat correspondence/journal review — distinguishing synthetic plurality from independent
+  validation and legitimacy from truth.
+verbatim: Generative AI lowers the cost of literature exploration, argu- ment recombination, drafting,
+  coding scaffolds, and adversarial questioning. For scholars embedded in universities, these gains are
+  absorbed into pre-existing laboratories, seminars, editorial networks, ethics systems, and disciplinary
+  communities.
+source:
+  doi: 10.5281/zenodo.22163849
+  title: 'The Standalone Scholar: A Dual-Track Architecture for AI-Native Scholarship'
+  year: 2026
+fetched_from_url: https://zenodo.org/api/records/22163849
+locator: Zenodo record abstract (desc field), via API
+tier: Dr
+base_relation: holds
+base_justification: This is the direct conceptual precursor of glosa's own K-state/independence-ladder
+  machinery (kc-ep-051/052); consistent with the base's Bounded-Judge Law (kc-base-035) requiring independent
+  review before elevation.
+glosa_use: adopt
+glosa_target: FOUNDATION §4.4 K-state (Standalone Scholar, PRESERVE_EXACT) — named origin of the K-state
+  concept
+notes: 2026-08-29.

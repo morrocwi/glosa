@@ -1,0 +1,28 @@
+id: kc-islam-009
+kind: rule
+title: Layer confusion — applying one layer's tools/authority to a question belonging to another layer
+text: Explains recurring hilal-sighting disputes as layer confusion — applying the astronomical layer's
+  evidentiary standards, the jurisprudential layer's determination methods, or the institutional layer's
+  authority claims to a question that properly belongs to a different layer — rather than treating
+  jurisprudential plurality itself as a failure to converge. States its own proof obligations and limits.
+verbatim: "It shows that most hilal conflicts arise not within any single layer but from layer confusion: the
+  application of the tools, standards, and authority claims of one layer to questions that properly belong to
+  another... Proof obligations and limits are specified."
+source:
+  doi: 10.5281/zenodo.19124963
+  title: "Three Layers, One Moon: Premature Category Stabilization and the Structure of Hilal Disagreement"
+  year: 2026
+fetched_from_url: local file ~/Downloads/hilal_three_layers_paper.pdf (matched by title and abstract text
+  against Zenodo record 19124963)
+locator: Abstract, p.1
+tier: Open
+base_relation: holds
+base_justification: "'Layer confusion' names, in a religious-practice domain, exactly the base's own recurring
+  warning against mixing tiers/registers (kc-base-007 six-tier discipline, kc-base-021 same-shaped formula
+  carrying different tiers) — the same diagnosis of a category error, different subject matter."
+glosa_use: adopt
+glosa_target: FOUNDATION §6 genre router — the astronomical/jurisprudential/institutional three-layer split is
+  a usable template for glosa's own layer-confusion diagnostics when routing a claim to the wrong genre/register.
+notes: One of three "premature category stabilization" (PCS) family papers in this hub (see also kc-islam-010,
+  kc-islam-011); base_relation is judged against the BASE cards only, not against these sibling records, per
+  task instructions.

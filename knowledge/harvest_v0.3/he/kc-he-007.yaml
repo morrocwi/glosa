@@ -1,0 +1,26 @@
+id: kc-he-007
+kind: method
+title: CPRMH — versioned living-evidence object with machine-assisted retrieval plus mandatory human adjudication
+text: The paper specifies each load-bearing claim as a structured, versionable record (claim text, locked
+  parameters, evidence layer, supporting/discordant studies, kill condition) maintained as a "living evidence
+  object" rather than a static citation list, and states plainly that automated literature retrieval can assist
+  but cannot replace human adjudication, because keyword-based harm detection both over-flags and under-detects.
+verbatim: "Automated literature retrieval can assist this process but cannot replace human adjudication:
+  conservative keyword-based harm detection can over-flag background sentences, while genuine discordant
+  signals can otherwise be missed. The desired workflow is therefore machine-assisted retrieval + human reading
+  + versioned adjudication."
+source:
+  path: sources/CPRMH_v12.txt
+  title: "Coordinated Plaque Remodeling Modalities: A Falsifiable Synthesis from Material-Specific Plaque Remodeling to Sleep-Anchored, Low-Cost State-Setting"
+  year: 2026
+fetched_from_url: sources/CPRMH_v12.txt
+locator: "§16.10 'Versioned evidence provenance and living falsifiability', lines ~2864-2874"
+tier: Open
+base_relation: holds
+base_justification: A direct precedent for glosa's own machine-assisted-retrieval-plus-human-adjudication
+  posture in the Literature Review System — matches the base stance that no automated readout substitutes for
+  a bounded knower's own check (kc-base-024 verdict-gate spirit).
+glosa_use: adopt
+glosa_target: "FOUNDATION §7.9 Literature Review System (LRS)"
+notes: This is the strongest single card in the he hub for the LRS section — cites the exact machine-assisted
+  vs human-adjudication boundary glosa needs to state for its own citation pipeline.

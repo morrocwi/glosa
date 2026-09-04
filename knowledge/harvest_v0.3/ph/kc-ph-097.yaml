@@ -1,0 +1,32 @@
+id: kc-ph-097
+kind: claim
+title: Cosmology from Finite Causal Memory
+text: 'Self-published Zenodo preprint (single-author physics/information-theory program, 2026-01-10). Abstract
+  reports: This project develops a cosmological framework derived from a single physical principle: finite
+  causal accessibility. Rather than postulating spacetime geometry, gravitational dynamics, or dark
+  components, the framework begins from minimal causal requirements—locality, continuity, and finite signal
+  propagation—and investigates their unavoidable consequences at cosmological scales. The project proceeds in
+  three logically connected steps. First, a no-go...'
+verbatim: 'This project develops a cosmological framework derived from a single physical principle: finite causal
+  accessibility. Rather than postulating spacetime geometry, gravitational dynamics, or dark components, the
+  framework begins from minimal causal requirements—locality, continuity, and finite signal propagation—and
+  investigates their unavoidable consequences at cosmological scales. The project proceeds in three logically
+  connected steps. First, a no-go theorem establishes that any cosmological theory based on diffusive
+  (parabolic) dynamics necessarily violates finite causality and is therefore physically inadmissible. Second,
+  a standalone cosmological framework is constructed from finite causal memory, in which expansion,
+  attraction-like'
+source:
+  doi: 10.5281/zenodo.18208238
+  title: Cosmology from Finite Causal Memory
+  year: 2026
+fetched_from_url: 'https://zenodo.org/api/records/18208238'
+locator: Zenodo record abstract (desc field), via API, from registry/zenodo_all_records.json
+tier: Open
+base_relation: refined_by_later_work
+base_justification: Precursor step in the same program's iterative build-up toward what the base corpus fixes as the τ_c>0
+  persistence axiom / mass-as-readout-of-τ_c (kc-base-028); vocabulary and claims here are provisional working
+  drafts later folded into and re-derived under that axiom.
+glosa_use: skip
+glosa_target: n/a — superseded within its own program before reaching base corpus
+notes: Part of the single-author 'ph' hub iterative physics-theory series (Zenodo id 18208238, 2026-01-10);
+  method-layer extraction only (self-publication + no-peer-review posture), not the physics content itself.

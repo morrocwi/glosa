@@ -1,0 +1,29 @@
+id: kc-ph-068
+kind: claim
+title: The Social Life of Particles How Causal Memory Reveals Hidden Order in the Mass Spectrum
+text: 'Self-published Zenodo preprint (single-author physics/information-theory program, 2025-12-10). Abstract
+  reports: The Social Life of Particles: When Time Unlocks 7 Hidden Behavior The subatomic world often looks
+  like a chaotic zoo, with particle masses scattered across thirteen orders of magnitude for no apparent
+  reason. But this disorder is an illusion caused by how we measure it. When we switch our lens from "energy"
+  to "Causal Memory...'
+verbatim: 'The Social Life of Particles: When Time Unlocks 7 Hidden Behavior The subatomic world often looks like a
+  chaotic zoo, with particle masses scattered across thirteen orders of magnitude for no apparent reason. But
+  this disorder is an illusion caused by how we measure it. When we switch our lens from "energy" to "Causal
+  Memory Time"—measuring how long a particle retains information—the chaos vanishes. All 42 known particles
+  suddenly align on a single perfect line. This reveals that the universe isn''t random; it’s a deeply
+  organized structure where "mass" is'
+source:
+  doi: 10.5281/zenodo.17875968
+  title: The Social Life of Particles How Causal Memory Reveals Hidden Order in the Mass Spectrum
+  year: 2025
+fetched_from_url: 'https://zenodo.org/api/records/17875968'
+locator: Zenodo record abstract (desc field), via API, from registry/zenodo_all_records.json
+tier: Open
+base_relation: refined_by_later_work
+base_justification: Precursor step in the same program's iterative build-up toward what the base corpus fixes as the τ_c>0
+  persistence axiom / mass-as-readout-of-τ_c (kc-base-028); vocabulary and claims here are provisional working
+  drafts later folded into and re-derived under that axiom.
+glosa_use: skip
+glosa_target: n/a — superseded within its own program before reaching base corpus
+notes: Part of the single-author 'ph' hub iterative physics-theory series (Zenodo id 17875968, 2025-12-10);
+  method-layer extraction only (self-publication + no-peer-review posture), not the physics content itself.

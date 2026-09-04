@@ -1,0 +1,25 @@
+id: kc-ep-015
+kind: claim
+title: Judicial neutrality as institutional achievement, not visual sameness
+text: 'Argues the assumption that visible religious attire threatens judicial impartiality rests on a
+  mistaken premise: cognitive distortions (anchoring, framing, hindsight, implicit bias) arise from the
+  architecture of human cognition, not visible identity; neutrality is an institutional achievement via
+  procedural safeguards, not visual uniformity.'
+verbatim: Debates about judicial neutrality frequently assume that visible religious attire threatens
+  impartial adjudication. Yet existing legal debates about religious symbols rarely integrate empirical
+  research on judicial cognition and decision-making. This article argues that the assumption linking
+  visible identity to judicial bias rests on a mistaken premise.
+source:
+  doi: 10.5281/zenodo.18918275
+  title: 'Neutrality Beyond Visual Sameness: Judicial Impartiality, Human Fallibility, and Institutional
+    Design'
+  year: 2026
+fetched_from_url: https://zenodo.org/api/records/18918275
+locator: Zenodo record abstract (desc field), via API
+tier: Open
+base_relation: holds
+base_justification: Consistent with base's bounded-knower framing applied to judges as finite knowers
+  subject to structural bias (kc-base-027); a domain application, not extending the formal machinery.
+glosa_use: skip
+glosa_target: (legal-domain application, no direct FOUNDATION hook)
+notes: 2026-03-09.

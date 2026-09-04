@@ -1,0 +1,26 @@
+id: kc-ai-009
+kind: definition
+title: Bounded dynamic semantic mobility for hypothesis generation
+text: 'Paper I of the Bounded Knower sequence: proposes modeling hypothesis-generating imagination as bounded dynamic
+  semantic mobility — not an infinite faculty and not a static reachable set, but a time-indexed process over semantic
+  readouts whose transitions are provenance-audited, dynamically weighted, and history-sensitive, situated in a
+  readout-discriminable hypothesis space.'
+verbatim: 'This paper proposes a readout-native architecture for the narrower domain of hypothesis-generating imagination.
+  Its central thesis is that imagination can be modeled as bounded dynamic semantic mobility: not an infinite faculty
+  and not a static set of reachable ideas, but a time-indexed process over semantic readouts whose transitions are
+  provenance-audited, dynamically weighted, history-sens[itive]'
+source:
+  path: registry/zenodo_all_records.json
+  title: 'From Problem to Hypothesis: Dynamic Semantic Mobility, Bounded Knowers, and the Readout-Discriminable
+    Hypothesis Space'
+  year: 2026
+fetched_from_url: https://zenodo.org/api/records/22307148
+locator: record 22307148, metadata.description (Abstract)
+tier: Dr
+base_relation: refined_by_later_work
+base_justification: Applies kc-base-024's (Three Epistemic Scalars/DECIDE-ABSTAIN-ESCALATE) bounded-knower framing
+  to hypothesis generation specifically; claim tiers explicit ([definition],[Dr],[Open],[finite_diagnostic]) per
+  the record's own status line.
+glosa_use: adapt
+glosa_target: FOUNDATION methodology — hypothesis-generation stage of the discovery loop
+notes: Paper I of the four-paper Bounded Knower sequence; paper IV is kc-ai-007 (22308072).

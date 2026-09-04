@@ -1,0 +1,29 @@
+id: kc-ph-095
+kind: claim
+title: 'Kibble Balance as Operational Identity: Why ℏ is an Exchange Rate'
+text: 'Self-published Zenodo preprint (single-author physics/information-theory program, 2026-01-09). Abstract
+  reports: We formulate a metrology-grade, non-circular operational identity for Planck’s constant, in the
+  same spirit as our G-identity and TF/BTFR memory program. The Kibble balance serves as a power ledger
+  equating gravitational mechanical power to quantum electrical power (Josephson+quantum Hall), thereby
+  enforcing a unique universal coupling ℏ∗ that links (i) phase and action, (ii) energy and...'
+verbatim: We formulate a metrology-grade, non-circular operational identity for Planck’s constant, in the same spirit
+  as our G-identity and TF/BTFR memory program. The Kibble balance serves as a power ledger equating
+  gravitational mechanical power to quantum electrical power (Josephson+quantum Hall), thereby enforcing a
+  unique universal coupling ℏ∗ that links (i) phase and action, (ii) energy and frequency, and (iii) momentum
+  and wavevector. The rectangle-loop lemma proves single-coupling consistency across these three interfaces.
+  In the post-2019 SI, where h and e are fixed, the balance realizes the kilogram by tying gravity to
+source:
+  doi: 10.5281/zenodo.18202644
+  title: 'Kibble Balance as Operational Identity: Why ℏ is an Exchange Rate'
+  year: 2026
+fetched_from_url: 'https://zenodo.org/api/records/18202644'
+locator: Zenodo record abstract (desc field), via API, from registry/zenodo_all_records.json
+tier: Open
+base_relation: superseded
+base_justification: Uses an earlier, since-abandoned working name/formalism (this program cycled through several framework names
+  before settling on retained-information/δ_R vocabulary); the base corpus's mother equation (kc-base-020) and
+  trunk equation (kc-base-022) replace this formulation.
+glosa_use: skip
+glosa_target: n/a — abandoned vocabulary, replaced by base mother/trunk equation
+notes: Part of the single-author 'ph' hub iterative physics-theory series (Zenodo id 18202644, 2026-01-09);
+  method-layer extraction only (self-publication + no-peer-review posture), not the physics content itself.

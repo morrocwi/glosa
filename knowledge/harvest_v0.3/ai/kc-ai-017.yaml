@@ -1,0 +1,25 @@
+id: kc-ai-017
+kind: definition
+title: Knowledge as stabilized translation under bounded observation
+text: Proposes epistemology begin not from direct access to reality but from bounded observers forming world-models
+  under constraint; knowledge is redefined as stabilized translation under bounded observation — a representation
+  stable across admissible variation, calibration, and cross-checking — giving realism without naivety, fallibilism
+  without skepticism, for both human and machine model-based knowing.
+verbatim: 'I propose that epistemology should begin not from direct access to reality, but from bounded observers
+  who form world-models under constraint. On this view, knowledge is best understood as stabilized translation under
+  bounded observation: a representation that remains stable across admissible variation, calibration, and cross-checking.'
+source:
+  path: registry/zenodo_all_records.json
+  title: 'Knowledge as Stabilized Translation: Toward an Observer-Constrained Epistemology'
+  year: 2026
+fetched_from_url: https://zenodo.org/api/records/18925129
+locator: record 18925129, metadata.description (Abstract)
+tier: definition
+base_relation: holds
+base_justification: Near-restatement of kc-base-001/005 (readout-not-truth; truth as tracking) in 'stabilized translation'
+  vocabulary; the 'bounded observer' matches the base cards' own 'bounded knower' framing exactly.
+glosa_use: adopt
+glosa_target: FOUNDATION §1-2 (readout-not-truth + bounded knower) — a clean alternate phrasing worth citing alongside
+  the base text
+notes: Companion mother-equation language ('M_A translation, gap to truth never closes') in the base corpus reads
+  as the formal version of this paper's 'stabilized translation' claim.

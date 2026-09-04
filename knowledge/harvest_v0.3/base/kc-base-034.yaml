@@ -1,0 +1,36 @@
+id: kc-base-034
+kind: method
+title: Term-by-term honest tier table (II.6)
+text: 'Every term of the trunk equation is tiered individually, not once for the whole equation: M∂²Φ
+  is Dr with failed finite_diagnostic forcing attempts (M is posited, mass is a readout of τ_c via m=ħ/(2c²τ_c));
+  D∂Φ is finite_diagnostic (well-behaved linear damping); K·L_RΦ is Th_coqc for the admissibility/eigenmode
+  structure, Open for the full multimode extension; ∇V(Φ) is finite_diagnostic audit-only (this is where
+  turbulence actually lives, corrected 2026-07-21 away from the M term); J is Dr (external boundary data,
+  never derived from the other terms); η is finite_diagnostic where measured, Open in general — the term
+  that must never quietly become the one nobody checks.'
+verbatim: 'The honest summary of this table: three of six terms (`D`, transport''s admissibility skeleton,
+  and the
+
+  state-space bookkeeping) are on solid `[finite_diagnostic]`/`[Th_coqc]` footing; `M` is a positioned
+
+  placeholder whose *derivation* has failed every attempt so far while its *readout relation* to `τ_c`
+  is
+
+  locked; `∇V` carries a tier-honest correction about where turbulence actually lives; and `η` is, by
+
+  design, the term that must never be allowed to quietly become "the term nobody checks."'
+source:
+  path: readout_genesis/READOUT_GENESIS_CORE.md
+  title: Genesis of the Universe, Step by Step — Genesis Step-by-Step v3.1
+  year: 2026
+fetched_from_url: ~/ANSE.ASIA/readout_genesis/READOUT_GENESIS_CORE.md
+locator: Part II §II.6, lines ~1099-1122
+tier: Dr
+base_relation: holds
+base_justification: This IS a base card from the lens root text; base cards are the ground the ledger
+  is judged against.
+glosa_use: adopt
+glosa_target: FOUNDATION §3.3 Kernel gate rules (specified, Dr, untested)
+notes: The discipline 'the trunk is universal, only parameters change is a claim that must survive being
+  checked term by term, not asserted once and left unaudited' is a directly transferable principle for
+  glosa's own multi-part claim cards — audit each field, not the card as a whole.

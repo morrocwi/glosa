@@ -1,0 +1,28 @@
+id: kc-ai-027
+kind: claim
+title: Language bridge — LLMs as accelerants of human-capital-to-social-capital conversion
+text: Frames human capital as living potential (capacity to know/feel/connect/create meaning) that requires a medium
+  — language — to become social capital across disciplinary/professional/cultural dialects; argues LLMs accelerate
+  this conversion by interpreting and re-articulating human thought across those borders without replacing its essence,
+  in a register drawing on Habermas's communicative action and Vygotsky's mediated understanding.
+verbatim: Today, Large Language Models (LLMs) accelerate this process by interpreting and re-articulating human
+  thought across borders of language, culture, and expertise. They extend the range of the human voice without replacing
+  its essence. Thus, Lahtee argues that the language bridge is the true infrastructure of human development—the
+  bridge between solitude and society, between knowledge and empathy, between human capital and collective growth.
+source:
+  path: registry/zenodo_all_records.json
+  title: 'The Language Bridge: Expanding Human Potential in the Age of AI'
+  year: 2026
+fetched_from_url: https://zenodo.org/api/records/17280546
+locator: record 17280546, metadata.description
+tier: Dr
+base_relation: superseded
+base_justification: Earliest paper in this hub (2025-10-06), written before the finite-discrete readout/Readout-Condition
+  vocabulary appears in this author's later work; its 'human capital'/'language bridge' framing is superseded in
+  vocabulary by kc-base-001/kc-ai-001's readout/provenance formalism, though the underlying human-AI-mediation concern
+  carries forward unchanged into kc-ai-019 (AI, Translation, and Access to Event-Specific Context).
+glosa_use: skip
+glosa_target: n/a — pre-formalism essay; superseded in vocabulary, not in underlying concern, by kc-ai-001/kc-ai-019
+notes: Zenodo API fetch for this record's live metadata failed (400, invalid metadata.dates) per registry/zenodo_clusters.json
+  'failed' block; title/date/desc used here come from the cached registry/zenodo_all_records.json instead, not a
+  live re-fetch.

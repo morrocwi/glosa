@@ -1,0 +1,28 @@
+id: kc-aihp-028
+kind: claim
+title: 'Structural law of epistemic stabilization: beyond a threshold of generative exposure, learning
+  shifts from accumulation to discrimination'
+text: Generative AI lets coherent-looking text be produced externally at near-zero marginal cost. A single
+  underlying dynamic produces degraded inferential signals, escalating conceptual volatility, and selective
+  stabilization; beyond a critical threshold of generative exposure, learning undergoes a regime shift
+  from accumulation to discrimination — redefining learning as preserving structural stability once expressive
+  production no longer uniquely indicates internal organization.
+verbatim: 'A single underlying dynamic gives rise to three observable effects: degradation of inferential
+  signals, escalation of conceptual volatility, and the emergence of selective stabilization. Beyond a
+  critical threshold of generative exposure, learning undergoes a regime shift — from accumulation to
+  discrimination. Learning is therefore redefined as the capacity to preserve structural stability when
+  expressive production no longer uniquely indicates internal organization.'
+source:
+  doi: 10.5281/zenodo.18711408
+  title: 'Learning Under Generative Abundance: A Structural Law of Epistemic Stabilization'
+  year: 2026
+fetched_from_url: https://zenodo.org/api/records/18711408
+locator: Abstract
+tier: Dr
+base_relation: holds
+base_justification: '''Expressive production no longer uniquely indicates internal organization'' is the
+  same non-injectivity concern as kc-base-006 (a non-injective readout leaves no decoder able to recover
+  both collapsed states) applied to text generation as a readout of a learner''s internal state.'
+glosa_use: skip
+glosa_target: n/a — education-theory domain paper, background grounding only
+notes: ''

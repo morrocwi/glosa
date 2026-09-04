@@ -1,0 +1,25 @@
+id: kc-ai-020
+kind: method
+title: Admissibility-first AI-coached planning with explicit no-go conditions
+text: Specifies a minimal, conservative AI-coached training-planning framework (74 runners, 42,766 training days)
+  whose objective is admissible scheduling under finite recovery, not prediction or optimization; derives explicit
+  no-go conditions that invalidate unsafe plans from causal-spectral master equations, with all optimization layers
+  modular/optional and never weakening the conservative safety guarantee.
+verbatim: The objective is not injury prediction or performance optimization, but admissible scheduling under finite
+  recovery and delayed adaptation. We formalize load–recovery dynamics using a small set of causal–spectral master
+  equations, derive explicit no-go conditions that invalidate unsafe plans... The framework is explicitly admissibility-first.
+source:
+  path: registry/zenodo_all_records.json
+  title: A Causal–Spectral Planning Specification for AI-Coached Endurance Training
+  year: 2026
+fetched_from_url: https://zenodo.org/api/records/18404721
+locator: record 18404721, metadata.description (Abstract)
+tier: finite_diagnostic
+base_relation: refined_by_later_work
+base_justification: An applied instance of kc-base-008's Fail-Able Gate Law (a gate needs both a passing and a machine-derived
+  failing control) — here realized as explicit no-go conditions anchored in empirical (finite_diagnostic) load data.
+glosa_use: adapt
+glosa_target: araya-webops/salamxp domain analogy — admissibility-first (block unsafe) over optimization-first design
+  pattern
+notes: Domain-specific (sports science) but its 'admissibility-first, optimization optional/modular' pattern generalizes
+  to any AI-coached recommendation system.

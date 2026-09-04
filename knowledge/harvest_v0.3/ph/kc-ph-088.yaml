@@ -1,0 +1,29 @@
+id: kc-ph-088
+kind: method
+title: 'InformationCausal Emergence of Physics: A Concept Note on Why Geometry, Mass, and Dynamics Are Not
+  Fundamental'
+text: 'Self-published Zenodo preprint (single-author physics/information-theory program, 2025-12-28). Abstract
+  reports: This note presents a structural ordering of physical concepts derived from information causal
+  constraints. The central insight is that nite admissibility, causal memory, and nite propagation form a
+  single constraint bundlethey cannot be imposed separately. From this bundle, geometry, mass, force, and
+  spacetime physics emerge as derived structures, not postulates. The ordering is logical, not...'
+verbatim: This note presents a structural ordering of physical concepts derived from information causal constraints.
+  The central insight is that nite admissibility, causal memory, and nite propagation form a single constraint
+  bundlethey cannot be imposed separately. From this bundle, geometry, mass, force, and spacetime physics
+  emerge as derived structures, not postulates. The ordering is logical, not temporal. Spacetime is
+  reinterpreted as a bookkeeping language for causal accessibility, not as fundamental substance.
+source:
+  doi: 10.5281/zenodo.18076195
+  title: 'InformationCausal Emergence of Physics: A Concept Note on Why Geometry, Mass, and Dynamics Are Not
+    Fundamental'
+  year: 2025
+fetched_from_url: 'https://zenodo.org/api/records/18076195'
+locator: Zenodo record abstract (desc field), via API, from registry/zenodo_all_records.json
+tier: Open
+base_relation: open
+base_justification: Domain physics content (a specific claim/derivation/observational note) not directly addressed by any base
+  card; carries no base-card contradiction but also no base endorsement — left open.
+glosa_use: skip
+glosa_target: n/a — domain physics claim outside glosa's method-layer scope
+notes: Part of the single-author 'ph' hub iterative physics-theory series (Zenodo id 18076195, 2025-12-28);
+  method-layer extraction only (self-publication + no-peer-review posture), not the physics content itself.

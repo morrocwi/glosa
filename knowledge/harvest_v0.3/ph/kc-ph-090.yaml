@@ -1,0 +1,30 @@
+id: kc-ph-090
+kind: claim
+title: Why Purely Markovian Ringdown Is Not Admissible Under Persistent Causal Memory
+text: 'Self-published Zenodo preprint (single-author physics/information-theory program, 2025-12-30). Abstract
+  reports: We prove a strict admissibility theorem: if (i) propagation is finite-speed (causal cone) and (ii)
+  persistent records exist (nonzero causal-memory time), then late-time dynamics cannot be \emph{purely
+  Markovian} on the declared fundamental state space. The proof closes the Markov embedding loophole by fixing
+  the admissible state space and shows semigroup incompatibility for Volterra-type memory with...'
+verbatim: 'We prove a strict admissibility theorem: if (i) propagation is finite-speed (causal cone) and (ii)
+  persistent records exist (nonzero causal-memory time), then late-time dynamics cannot be \emph{purely
+  Markovian} on the declared fundamental state space. The proof closes the Markov embedding loophole by fixing
+  the admissible state space and shows semigroup incompatibility for Volterra-type memory with $K\neq 0$. The
+  conclusion is structural and model-independent, preserving all foundations (no new fields or equations).
+  Exponential ringdown remains an \emph{effective} description under order-of-limits (OOL-1) when memory falls
+  below resolution. This necessity fails if a'
+source:
+  doi: 10.5281/zenodo.18098346
+  title: Why Purely Markovian Ringdown Is Not Admissible Under Persistent Causal Memory
+  year: 2025
+fetched_from_url: 'https://zenodo.org/api/records/18098346'
+locator: Zenodo record abstract (desc field), via API, from registry/zenodo_all_records.json
+tier: Open
+base_relation: refined_by_later_work
+base_justification: Precursor step in the same program's iterative build-up toward what the base corpus fixes as the τ_c>0
+  persistence axiom / mass-as-readout-of-τ_c (kc-base-028); vocabulary and claims here are provisional working
+  drafts later folded into and re-derived under that axiom.
+glosa_use: skip
+glosa_target: n/a — superseded within its own program before reaching base corpus
+notes: Part of the single-author 'ph' hub iterative physics-theory series (Zenodo id 18098346, 2025-12-30);
+  method-layer extraction only (self-publication + no-peer-review posture), not the physics content itself.

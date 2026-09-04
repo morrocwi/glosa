@@ -1,0 +1,50 @@
+id: kc-base-017
+kind: rule
+title: 'Operator-grounding clause: + − × ÷ ∂ ∇ = < are retained-information operations'
+text: Every arithmetic/calculus operator is, first, a mode of retained distinction on readouts, and only
+  secondarily its familiar textbook shadow. '=' is mutual indistinguishability to every reader, not metaphysical
+  identity. '<' is a decidable finite comparison, only cotransitive (not trichotomous) once lifted to
+  ℝ. '+' is accumulation (merging two retained records). '−' is cancellation/debt, partial on D — its
+  refusal below zero is exactly what births ℤ. '×' is replication of distinction-structure. '÷' is equal
+  partition; ÷0 is refused, not patched. A derivative is a finite-difference readout Δf(n)=f(n+1)⊖f(n),
+  computed by exact rational algebra with no limiting process run; the continuum derivative/integral are
+  recovered last, as the h→0 readout, flagged +ℝ.
+verbatim: '`=` is not metaphysical identity, it is mutual indistinguishability to
+
+  every reader... `<` is not an ℝ-order relation
+
+  handed down whole, it is a decidable, finite comparison of accumulated
+
+  record, total on `D/ℤ/ℚ`, and only *cotransitive* — not trichotomous — once
+
+  lifted to `ℝ`. `+` (`⊕`) is accumulation... `−`
+
+  (`⊖`) is cancellation/debt of retained distinction, and its *partiality* on
+
+  `D` — undefined below zero — is not a
+
+  gap to be embarrassed about; it is the exact mechanism that forces `ℤ` into
+
+  existence... And a derivative is not a limit
+
+  smuggled in as a primitive: it is a finite-difference readout, `Δf(n) =
+
+  f(n+1) ⊖ f(n)`... The continuum derivative and integral are recovered — deliberately —
+
+  *last*, as the `h→0` readout of this same `Δ/Σ` machinery, flagged `+ℝ`
+
+  throughout, never handed the primitive slot.'
+source:
+  path: readout_universe/philosophy.md
+  title: Philosophy — Readout Universe
+  year: 2026
+fetched_from_url: ~/ANSE.ASIA/readout_universe/philosophy.md
+locator: §5.2a, lines ~845-863
+tier: Th_coqc
+base_relation: holds
+base_justification: This IS a base card from the lens root text; base cards are the ground the ledger
+  is judged against.
+glosa_use: adapt
+glosa_target: FOUNDATION §3.3 Kernel gate rules (specified, Dr, untested)
+notes: This clause is the exact discipline glosa's kernel gate rules should apply whenever a card writes
+  an operator symbol — the operator itself must carry a tier, per §2.5's title.

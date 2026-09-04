@@ -1,0 +1,28 @@
+id: kc-ai-011
+kind: definition
+title: Standalone Scholar — dual-track architecture (synthetic plurality vs validation)
+text: 'Names the condition where AI makes plausible scholarly output abundant before independent criticism, human
+  relationships, certification and institutional access become abundant, and proposes a dual-track architecture:
+  AI-assisted formation/preprint staging/provenance controls produce defensible provisional assets, while independent
+  human friction and review convert those into socially stress-tested knowledge — distinguishing synthetic plurality
+  from independent validation, and legitimacy from truth.'
+verbatim: the production of plausible scholarly objects can become abundant before independent criticism, human
+  relationships, certification, and institutional access become abundant... It develops a dual-track architecture
+  in which AI-assisted formation, open preprint staging, provenance controls, and machine-constrained checks generate
+  defensible provisional assets, while independent human friction, repeat correspondence, journal review, and local
+  epistemic participation convert those assets into socially stress-tested knowledge.
+source:
+  path: registry/zenodo_all_records.json
+  title: 'The Standalone Scholar: A Dual-Track Architecture for AI-Native Scholarship'
+  year: 2026
+fetched_from_url: https://zenodo.org/api/records/22163849
+locator: record 22163849, metadata.description (Abstract)
+tier: Dr
+base_relation: refined_by_later_work
+base_justification: Elaborates EPIS-KNOWLEDGE-VALIDATION's horizontal-authority stance into an operational two-track
+  pipeline (production vs stress-testing) that the base cards state only as a general principle, not a workflow.
+glosa_use: adopt
+glosa_target: doc-ecosystem / project-onboard workflow — production-criticality vs scholarly-credit-criticality
+  distinction
+notes: This is the architecture glosa itself instantiates (preprint staging + independent I0-I5 check ladder from
+  kc-ai-006).

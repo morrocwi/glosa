@@ -1,0 +1,35 @@
+id: kc-base-041
+kind: claim
+title: Retraction discipline worked example — AP21/scope_correction
+text: 'A proposed PR title/body correction, marked explicitly as PROPOSAL ONLY, walks back an overstated
+  claim (''derives...the sharpest remaining falsifier'') to its accurate status: a finite-diagnostic toy
+  computation that borrows standard, already-known machinery (kinship disclosed to a 1981/''t Hooft result)
+  and does not close the falsifier the frontier document itself names as still requiring a different,
+  undone derivation. The correction quotes the author''s own retraction verbatim as the operative status
+  superseding the original framing.'
+verbatim: '## Author''s own retraction (operative status)
+
+
+  Quoting the author''s PR comment, which supersedes the original title/body
+
+  framing:
+
+
+  > "its self-interaction unit is borrowed through the non-Abelian curvature
+
+  > expansion. Do not treat or merge it as the foundational closure."'
+source:
+  path: readout_universe/scope_correction.md
+  title: 'Proposed PR title/body correction for PR #23 (NOT applied)'
+  year: 2026
+fetched_from_url: ~/ANSE.ASIA/readout_universe/scope_correction.md
+locator: whole file, lines 1-96
+tier: Dr
+base_relation: holds
+base_justification: This IS a base card from the lens root text; base cards are the ground the ledger
+  is judged against.
+glosa_use: adopt
+glosa_target: FOUNDATION §7.8 Citation integrity subsystem
+notes: 'A concrete worked instance of the corpus''s own overclaim-correction culture: distinguishing DERIVED
+  from BORROWED-SCALE from POSITED, and treating an author''s own retraction as authoritative over the
+  original framing — directly relevant to glosa''s citation-integrity/overclaim discipline.'

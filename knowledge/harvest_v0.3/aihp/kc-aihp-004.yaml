@@ -1,0 +1,24 @@
+id: kc-aihp-004
+kind: definition
+title: '''Problem before observation'' spine node: RA = OA(W;ΠA) ≠ W as the first node, not ''Reality→'''
+text: The paper's claim spine deliberately does not start with 'Reality→' as its first node because the
+  lens never grants direct access to reality, only to what was read out — the readout operator formalism
+  RA = OA(W;ΠA) ≠ W is adopted as the starting node instead of an abstract verb 'observation'.
+verbatim: A problematic state exists in the world before any knower acts on it — before it is looked at,
+  named, or measured. The spine this paper's claims are built on (adopted this pass into design/FOUNDATION_v0.5.md
+  §2.1a, BBL-2026-09-04-084) therefore does not start with "Reality →" as its first node — the lens never
+  grants direct access to reality, only to what was read out (RA = OA (W ; ΠA ) ̸= W ) — it starts one
+source:
+  doi: 10.5281/zenodo.22307841
+  title: 'Rigour Without Infrastructure: Three Propositions on Claim-Card Discipline as a Substitute for
+    Institutional Certification (glosa concept paper, v0.2.0)'
+  year: 2026
+fetched_from_url: local:dist/glosa-concept-paper-0.2.0-draft.pdf
+locator: §1 Problem before observation
+tier: definition
+base_relation: holds
+base_justification: This is a direct restatement of kc-base-001 (Readout-not-truth) and kc-base-027 (bounded
+  knower framing) applied to the problem-formation stage of scholarship, not a rival formalism.
+glosa_use: adopt
+glosa_target: FOUNDATION §2.1a claim spine
+notes: ''

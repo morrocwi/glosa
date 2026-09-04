@@ -1,0 +1,32 @@
+id: kc-base-042
+kind: definition
+title: README Principles — Position, Lens Law, tier discipline, philosophy-leads
+text: 'Four working principles: (1) Position is a control layer, not a knowledge store — the real asset
+  is the operator that forces direction (Gates G1-G13 force the right question in the right order). (2)
+  The Lens Law: every problem is translated into the book''s own information-philosophy vocabulary before
+  it is solved — arguing in a foreign vocabulary past step 1 is disallowed. (3) Readout-not-truth with
+  an enforced tier discipline; no number enters documentation without an executed run behind it; every
+  change goes through adversarial review. (5) Every new result is Open until it survives external, independent
+  review; kinship to prior work is always disclosed and a falsifier is attached to every claim.'
+verbatim: "2. **The Lens Law.** Every problem is translated into this book's\n   information-philosophy\
+  \ language (Information DNA: `RD1`–`RD9` +\n   `RAR A1`–`A8`) before it is solved — arguing in a foreign\
+  \ vocabulary past\n   step 1 is disallowed (`v2/TRANSLATION_PROTOCOL.md`).\n3. **Readout-not-truth,\
+  \ with a tier discipline that is enforced, not just\n   declared.** Every claim carries `Th_coqc` /\
+  \ `finite_diagnostic` / `Dr` /\n   `Open` / `fit_calibrated` / `definition`, and no number enters the\n\
+  \   documentation without an executed run standing behind it\n   (`docs/VERIFIED_RUNS.md`); every change\
+  \ goes through adversarial review."
+source:
+  path: readout_universe/README.md
+  title: Readout Universe (README)
+  year: 2026
+fetched_from_url: ~/ANSE.ASIA/readout_universe/README.md
+locator: '''Principles'', lines ~84-117'
+tier: Dr
+base_relation: holds
+base_justification: This IS a base card from the lens root text; base cards are the ground the ledger
+  is judged against.
+glosa_use: adapt
+glosa_target: FOUNDATION §1.0 Pillars — ontology/epistemology/methodology
+notes: The Lens Law ('translate into declared vocabulary before solving; arguing in a foreign vocabulary
+  past step 1 is disallowed') is a directly reusable methodology-pillar statement for glosa's own §1.0/§1.1
+  positioning language.

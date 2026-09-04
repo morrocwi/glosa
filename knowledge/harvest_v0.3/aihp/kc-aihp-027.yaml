@@ -1,0 +1,25 @@
+id: kc-aihp-027
+kind: definition
+title: Knowledge as stabilized translation under bounded observation, not direct access
+text: 'Epistemology should begin not from direct access to reality but from bounded observers forming
+  world-models under constraint. Knowledge is proposed as stabilized translation under bounded observation:
+  a representation that remains stable across admissible variation, calibration, and cross-checking —
+  giving a common grammar for human and machine model-based knowing.'
+verbatim: 'I propose that epistemology should begin not from direct access to reality, but from bounded
+  observers who form world-models under constraint. On this view, knowledge is best understood as stabilized
+  translation under bounded observation: a representation that remains stable across admissible variation,
+  calibration, and cross-checking.'
+source:
+  doi: 10.5281/zenodo.18925129
+  title: 'Knowledge as Stabilized Translation: Toward an Observer-Constrained Epistemology'
+  year: 2026
+fetched_from_url: https://zenodo.org/api/records/18925129
+locator: Abstract
+tier: Dr
+base_relation: holds
+base_justification: '''Bounded observers forming world-models under constraint'' is close to a restatement
+  of kc-base-027 (bounded knower framing); ''stabilized translation'' echoes kc-base-020 (mother equation
+  — the record is a translation, the gap to truth never closes to zero).'
+glosa_use: skip
+glosa_target: n/a — background epistemology paper, no new mechanism beyond base
+notes: ''

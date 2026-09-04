@@ -1,0 +1,28 @@
+id: kc-islam-008
+kind: claim
+title: Knowledge as the residue of beliefs that survived the world's resistance
+text: A constructive-theology paper proposes that the world's intelligibility is itself upheld ("the causal
+  order of the world is real as the divinely upheld structure of dependable succession"), and offers an
+  epistemic bridge from experience to truth in which knowledge is what remains after belief has been tested
+  against a world made resistant to misunderstanding. Framed as a repair to gaps in a classical tradition,
+  not as an empirical result.
+verbatim: 'The same tier supports an epistemic bridge from experience to truth: the world resists
+  misunderstanding because God has made it resistant, and knowledge is the residue of beliefs that have
+  survived this resistance.'
+source:
+  doi: 10.5281/zenodo.19951961
+  title: "Sovereignty, Selection, and Self: A Constructive Ashʿarī Theology of Dependent Order, Directed
+    Selection, and Dependent Identity"
+  year: 2026
+fetched_from_url: https://zenodo.org/api/records/19951961
+locator: abstract (Zenodo record metadata.description)
+tier: Open
+base_relation: holds
+base_justification: "'Knowledge as residue of beliefs that survived resistance' is structurally the same move
+  as the base's truth-as-tracking reframe (kc-base-005 — residual energy V stays low under evidence) — both
+  replace correspondence-truth with a survives-testing criterion, reached from independent theological vs.
+  δ_R roots."
+glosa_use: adopt
+glosa_target: FOUNDATION §1.0 pillars (ontology/epistemology/methodology) — a worked non-mathematical example
+  of a tracking-style truth criterion, useful for the pillars section's cross-tradition framing.
+notes: —

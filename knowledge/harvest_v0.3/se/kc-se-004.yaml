@@ -1,0 +1,28 @@
+id: kc-se-004
+kind: rule
+title: Unidentified values return NI, never zero — a readout-audit layer over every calculated claim
+text: MOCA's abstract commits to a readout layer that forces every calculated claim to expose its
+  identification set and minimal sufficient support bundle; where a value cannot be identified from the
+  available evidence, the framework returns "NI" (not identified) rather than defaulting it to zero,
+  and treats development-stage real-enterprise batteries only as finite diagnostics, never population
+  validation.
+verbatim: "A readout layer requires every calculated claim to expose its identification set and minimal
+  sufficient support bundle; unidentified values are returned as NI, not zero. ... Development-stage
+  real-enterprise batteries are treated only as finite diagnostics, not population validation."
+source:
+  doi: 10.5281/zenodo.22301882
+  title: "Mission Opportunity–Constraint Architecture (MOCA): An AI-Executable Technical Management
+    Framework for Social Enterprises — Equations, Dynamic Policy Paths, Binding, Readout Audit,
+    Pseudocode, and DAG/Knowledge-Graph Specification"
+  year: 2026
+fetched_from_url: local (~/Downloads/MOCA_AI_Executable_Technical_Paper_v0.2.pdf)
+locator: p.1, Abstract (pdftotext -l 6, lines ~40-56 of body text)
+tier: definition
+base_relation: holds
+base_justification: A direct structural cousin of the base's injected-zero taxonomy (kc-base-016, Z-series
+  "injected zero smuggled in as if real") — MOCA independently bans the same silent-zero move in a
+  management-accounting context by naming an explicit NI sentinel instead of defaulting to 0.
+glosa_use: adopt
+glosa_target: "FOUNDATION §3 claim card — 'unidentified ≠ zero' guard, alongside the base contaminated-concept table (kc-base-018)"
+notes: Good candidate for a glosa pre-write checklist line ("if a value is not identified by current
+  evidence, mark NI — never write 0") mirroring MOCA's own rule.

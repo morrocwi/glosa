@@ -1,0 +1,27 @@
+id: kc-ph-021
+kind: claim
+title: 'K=32: Equation of Everything (EoE)'
+text: 'Self-published Zenodo preprint (single-author physics/information-theory program, 2025-10-29). Abstract
+  reports: We posit a dyadic structural level \( K=32=2^5 \) . The data layer is confined to a single
+  universal exponent \( a \) in \( \tilde{\Lambda}_T(K) = 4\pi \alpha^{-aK} \) fixed once by one baseline
+  observable and \emph{never} re-tuned thereafter. The HG-free closure \( C_T := T^* \alpha^{aK} = 4\pi \lP/c
+  \) is invariant across...'
+verbatim: 'We posit a dyadic structural level \( K=32=2^5 \) . The data layer is confined to a single universal
+  exponent \( a \) in \( \tilde{\Lambda}_T(K) = 4\pi \alpha^{-aK} \) fixed once by one baseline observable and
+  \emph{never} re-tuned thereafter. The HG-free closure \( C_T := T^* \alpha^{aK} = 4\pi \lP/c \) is invariant
+  across domains.'
+source:
+  doi: 10.5281/zenodo.17473885
+  title: 'K=32: Equation of Everything (EoE)'
+  year: 2025
+fetched_from_url: 'https://zenodo.org/api/records/17473885'
+locator: Zenodo record abstract (desc field), via API, from registry/zenodo_all_records.json
+tier: Open
+base_relation: superseded
+base_justification: Uses an earlier, since-abandoned working name/formalism (this program cycled through several framework names
+  before settling on retained-information/δ_R vocabulary); the base corpus's mother equation (kc-base-020) and
+  trunk equation (kc-base-022) replace this formulation.
+glosa_use: skip
+glosa_target: n/a — abandoned vocabulary, replaced by base mother/trunk equation
+notes: Part of the single-author 'ph' hub iterative physics-theory series (Zenodo id 17473885, 2025-10-29);
+  method-layer extraction only (self-publication + no-peer-review posture), not the physics content itself.

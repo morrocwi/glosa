@@ -1,0 +1,23 @@
+id: kc-he-016
+kind: rule
+title: SANA runtime — explicit non-medical/non-psychiatric/non-legal scope stated inside an operational AI spec
+text: A crisis-safe AI runtime specification integrating multiple emotional-dynamics models states plainly,
+  inside its own operational spec (not only in a separate disclaimer document), that SANA is not a medical,
+  psychiatric, or legal service, alongside naming its Crisis-Strengthening Layer and External-Support
+  Soft-Bridge as hand-off mechanisms rather than treatment mechanisms.
+verbatim: "SANA is not a medical, psychiatric, or legal service."
+source:
+  doi: 10.5281/zenodo.17825408
+  title: "SANA: A Family–Field Lagrangian and Crisis-Safe AI Runtime"
+  year: 2025
+fetched_from_url: https://zenodo.org/api/records/17825408
+locator: abstract (Zenodo record metadata.description), closing sentence
+tier: Open
+base_relation: holds
+base_justification: Same legal/epistemic authority-boundary discipline as the base's "credential/office confers
+  no epistemic veto, and does not transfer authority to unrelated claims" clause (kc-base part of
+  EPIS-KNOWLEDGE-VALIDATION) applied operationally to an AI runtime's own self-scoping.
+glosa_use: adopt
+glosa_target: "FOUNDATION §5 disclaimer catalogue (AI-runtime scope clause)"
+notes: A worked example of putting the non-claim INSIDE the operational spec rather than only in a separate
+  README — relevant if glosa ever ships a runtime-facing gate of its own.

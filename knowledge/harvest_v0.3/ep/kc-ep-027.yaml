@@ -1,0 +1,26 @@
+id: kc-ep-027
+kind: definition
+title: Relational Alethic Realism as metaphysics-first reconstruction (book)
+text: A book-length reconstruction of truth, knowledge, intelligence, language, context, selfhood, agency,
+  ethics and wisdom under mediation, starting from awareness-already-underway; knowledge is corrigible
+  alignment under constraint rather than possession, language is an epistemic transport structure, and
+  the AI-mediated future of epistemology depends on preserving fallibility/corrigibility/answerability/public
+  criticizability.
+verbatim: This book advances Relational Alethic Realism as a metaphysics-first re- construction of truth,
+  knowledge, intelligence, language, context, selfhood, agency, ethics, and wisdom under conditions of
+  mediation. It begins from the irreducible actuality that awareness is already underway, not to abso-
+  lutize consciousness, but to identify the nearest non-self-canceling starting point for finite reflection.
+source:
+  doi: 10.5281/zenodo.19537197
+  title: 'Relational Alethic Realism: A Causal Metaphysics'
+  year: 2026
+fetched_from_url: https://zenodo.org/api/records/19537197
+locator: Zenodo record abstract (desc field), via API
+tier: Open
+base_relation: holds
+base_justification: Book-length consolidation of the truth-as-answerability line (kc-ep-024) consistent
+  with base's tracking-not-correspondence result (kc-base-005) and its emphasis on retained fallibility
+  over possession.
+glosa_use: adopt
+glosa_target: FOUNDATION Appendix A — Family A Truth/Warrant (book-level anchor)
+notes: 2026-04-12; type Book.

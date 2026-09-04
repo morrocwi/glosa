@@ -1,0 +1,30 @@
+id: kc-ph-091
+kind: method
+title: Post–2025 Cosmological Forecast Note under the Causal State History Principle
+text: 'Self-published Zenodo preprint (single-author physics/information-theory program, 2025-12-31). Abstract
+  reports: This document is a structural forecast for the post–2025 era of cosmology, written on 31 December
+  2025, at a point where observational precision has intensified (rather than reduced) foundational
+  inconsistencies across scales. The core claim is not a new force, particle, or modified gravity model.
+  Instead, we propose an admissibility filter—the Causal State History Principle...'
+verbatim: This document is a structural forecast for the post–2025 era of cosmology, written on 31 December 2025, at a
+  point where observational precision has intensified (rather than reduced) foundational inconsistencies
+  across scales. The core claim is not a new force, particle, or modified gravity model. Instead, we propose
+  an admissibility filter—the Causal State History Principle (CSHP)—asserting that (i) physical influence is
+  bounded by finite causal propagation and (ii) effective evolution laws must retain persistent state history
+  (non-Markovianity) whenever coarse-graining occurs under finite causal access. We argue that several
+  contemporary tensions
+source:
+  doi: 10.5281/zenodo.18103092
+  title: Post–2025 Cosmological Forecast Note under the Causal State History Principle
+  year: 2025
+fetched_from_url: 'https://zenodo.org/api/records/18103092'
+locator: Zenodo record abstract (desc field), via API, from registry/zenodo_all_records.json
+tier: Open
+base_relation: refined_by_later_work
+base_justification: Precursor step in the same program's iterative build-up toward what the base corpus fixes as the τ_c>0
+  persistence axiom / mass-as-readout-of-τ_c (kc-base-028); vocabulary and claims here are provisional working
+  drafts later folded into and re-derived under that axiom.
+glosa_use: skip
+glosa_target: n/a — superseded within its own program before reaching base corpus
+notes: Part of the single-author 'ph' hub iterative physics-theory series (Zenodo id 18103092, 2025-12-31);
+  method-layer extraction only (self-publication + no-peer-review posture), not the physics content itself.

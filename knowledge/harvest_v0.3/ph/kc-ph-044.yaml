@@ -1,0 +1,30 @@
+id: kc-ph-044
+kind: rule
+title: 'Axioms 13–14: Informational Vacuum and Universal Couplings'
+text: 'Self-published Zenodo preprint (single-author physics/information-theory program, 2025-11-13). Abstract
+  reports: We define an informational vacuum where, in the absence of sources, the informational geometry is
+  flat and test bodies feel no acceleration; no source means no force in the weak-field limit. A universal
+  coupling then links informational density to an informational potential that is mapped to the Newtonian
+  potential through a single calibration constant, recovering...'
+verbatim: 'We define an informational vacuum where, in the absence of sources, the informational geometry is flat and
+  test bodies feel no acceleration; no source means no force in the weak-field limit. A universal coupling
+  then links informational density to an informational potential that is mapped to the Newtonian potential
+  through a single calibration constant, recovering the standard inverse-radius gravitational law for point
+  masses without extra assumptions. The construction is consistent with established physics. Electromagnetism
+  and quantum matter retain gauge invariance: couplings are introduced either via constitutive responses that
+  depend on'
+source:
+  doi: 10.5281/zenodo.17601814
+  title: 'Axioms 13–14: Informational Vacuum and Universal Couplings'
+  year: 2025
+fetched_from_url: 'https://zenodo.org/api/records/17601814'
+locator: Zenodo record abstract (desc field), via API, from registry/zenodo_all_records.json
+tier: Open
+base_relation: superseded
+base_justification: Uses an earlier, since-abandoned working name/formalism (this program cycled through several framework names
+  before settling on retained-information/δ_R vocabulary); the base corpus's mother equation (kc-base-020) and
+  trunk equation (kc-base-022) replace this formulation.
+glosa_use: skip
+glosa_target: n/a — abandoned vocabulary, replaced by base mother/trunk equation
+notes: Part of the single-author 'ph' hub iterative physics-theory series (Zenodo id 17601814, 2025-11-13);
+  method-layer extraction only (self-publication + no-peer-review posture), not the physics content itself.

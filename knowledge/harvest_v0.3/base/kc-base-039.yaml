@@ -1,0 +1,38 @@
+id: kc-base-039
+kind: claim
+title: Falsifiable claims table (C1–C7) and its own 'We do NOT claim'
+text: 'Seven falsifiable claims, each with an executable check and expected result: C1 inference-as-descent
+  converges monotonically under constant evidence; C2 a settled conclusion revises under an evidence flip;
+  C3 residual floor never reaches zero under noise; C4 Sorites: smooth world, exactly one readout jump,
+  jump tracks Pi; C5 bounded inference diverges iff discarded difference is load-bearing; C6 distinct
+  worlds with identical records, Fisher singular; C7 Sorites core machine-checked axiom-free (monotone
+  scope). The corpus states explicitly what it does not claim from these: finite_diagnostic ≠ proof; Coq
+  scope beyond monotone g; B1 uniqueness; Gödel/liar/ethics solved; supersession of any tradition; machine-independent
+  timings.'
+verbatim: '| C1 | Inference-as-descent converges monotonically under constant evidence | `python3 code/LTP1_logic_as_residual_flow.py`
+  | C1 PASS; V -> 8.2e-26; 0 violations |
+
+  | C7 | Sorites core machine-checked axiom-free (monotone scope) | `coqc code/UPL_Sorites.v` | exit 0;
+  3x Closed |
+
+
+  ## We do NOT claim
+
+  finite_diagnostic = proof; Coq scope beyond monotone g; B1 uniqueness; Goedel/liar/ethics solved;
+
+  supersession of any tradition in Part IV; machine-independent timings.'
+source:
+  path: readout_universe/claims.md
+  title: CLAIMS — one falsifiable statement per row (v1.0, 2026-07-19)
+  year: 2026
+fetched_from_url: ~/ANSE.ASIA/readout_universe/claims.md
+locator: whole file, lines 1-14
+tier: finite_diagnostic
+base_relation: holds
+base_justification: This IS a base card from the lens root text; base cards are the ground the ledger
+  is judged against.
+glosa_use: adopt
+glosa_target: FOUNDATION §3.2 Field list (Five Questions ⇄ E-A-D ⇄ field crosswalk)
+notes: The row shape '#|Claim|Check|Expected' is a minimal, directly reusable claim-card template — one
+  falsifiable statement, one executable check, one expected printed result — a good sanity-check pattern
+  against glosa's own claim-card field list.

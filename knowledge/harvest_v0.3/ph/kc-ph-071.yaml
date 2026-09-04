@@ -1,0 +1,29 @@
+id: kc-ph-071
+kind: claim
+title: CAUSAL MEMORY IN PHYSICS
+text: 'Self-published Zenodo preprint (single-author physics/information-theory program, 2025-12-11). Abstract
+  reports: Prologue: The Zeroth Law of Reality A Hidden Line of Order Guiding Insight Physics appears diverse,
+  yet its patterns of change follow a single logic. To see it is not to invent new laws, but to notice a
+  structure that was always present. Instantaneity never appears in nature. Every system takes time to update
+  itself....'
+verbatim: 'Prologue: The Zeroth Law of Reality A Hidden Line of Order Guiding Insight Physics appears diverse, yet its
+  patterns of change follow a single logic. To see it is not to invent new laws, but to notice a structure
+  that was always present. Instantaneity never appears in nature. Every system takes time to update itself.
+  Heat requires duration to spread. Light requires duration to travel. A particle requires duration to
+  respond. A black hole requires duration to ring down. This quiet fact—so obvious that it escapes
+  attention—will guide the entire'
+source:
+  doi: 10.5281/zenodo.17899050
+  title: CAUSAL MEMORY IN PHYSICS
+  year: 2025
+fetched_from_url: 'https://zenodo.org/api/records/17899050'
+locator: Zenodo record abstract (desc field), via API, from registry/zenodo_all_records.json
+tier: Open
+base_relation: refined_by_later_work
+base_justification: Precursor step in the same program's iterative build-up toward what the base corpus fixes as the τ_c>0
+  persistence axiom / mass-as-readout-of-τ_c (kc-base-028); vocabulary and claims here are provisional working
+  drafts later folded into and re-derived under that axiom.
+glosa_use: skip
+glosa_target: n/a — superseded within its own program before reaching base corpus
+notes: Part of the single-author 'ph' hub iterative physics-theory series (Zenodo id 17899050, 2025-12-11);
+  method-layer extraction only (self-publication + no-peer-review posture), not the physics content itself.

@@ -1,0 +1,25 @@
+id: kc-ai-008
+kind: tool
+title: Blackbox Log — append-only verbatim positional record
+text: 'Describes the Blackbox Log: a daily, append-only, verbatim record of the author''s own raw voice, findings
+  and questions, tier positional/Dr, not reviewed, not a paper. Entries are never edited or deleted, only added;
+  each update republishes as a new version of the same record; any AI-written line must be a disclosed correction
+  entry, never mistaken for the author''s own voice.'
+verbatim: Blackbox Log — a daily, append-only, verbatim record of the author's raw voice... findings and questions
+  (Thai is the source of truth). Not a paper; not reviewed; tier positional/Dr. Contains the author's own words
+  only; the single AI-written line is a disclosed correction entry (by=ai, BBL-2026-09-04-082), never the author's
+  voice. Each update is a new version of the same record.
+source:
+  path: registry/zenodo_all_records.json
+  title: ปูมกล่องดำ — บันทึกเสียงดิบ ข้อค้นพบ และคำถามรายวันของ เยาฮารี แหละตี (Blackbox Log)
+  year: 2026
+fetched_from_url: https://zenodo.org/api/records/22307891
+locator: record 22307891, metadata.description
+tier: definition
+base_relation: holds
+base_justification: 'Operational instance of kc-base-001''s readout-not-truth stance applied to the author''s own
+  voice: the log is declared a finite, append-only, disclosed readout of the author, not upgraded to truth by repetition.'
+glosa_use: adopt
+glosa_target: kernel rule (positional/Dr tier + append-only provenance for first-person source material)
+notes: Human-vs-AI voice disclosure discipline here is a direct analogue of the card schema's own source/verbatim
+  requirement.

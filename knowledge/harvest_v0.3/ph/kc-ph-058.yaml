@@ -1,0 +1,29 @@
+id: kc-ph-058
+kind: claim
+title: 'Informational Pixel Field: Master Lagrangian and Nine-Domain Architecture'
+text: 'Self-published Zenodo preprint (single-author physics/information-theory program, 2025-11-22). Abstract
+  reports: We present a compact first-draft specification of the Informational Pixel Field (IPF) framework.
+  The theory is driven by a Master Lagrangian with fundamental pixel scales (ℓP , εP , c) and a scalar
+  informational field ΦI that modulates gauge and matter sectors via the profiles (Z1(ΦI ), Zs(ΦI ), m(ΦI )).
+  We list the field...'
+verbatim: We present a compact first-draft specification of the Informational Pixel Field (IPF) framework. The theory
+  is driven by a Master Lagrangian with fundamental pixel scales (ℓP , εP , c) and a scalar informational
+  field ΦI that modulates gauge and matter sectors via the profiles (Z1(ΦI ), Zs(ΦI ), m(ΦI )). We list the
+  field equations, the nine-domain decomposition, pixel principles and capacity triad, proton mass structure,
+  operational constraints, a symbol glossary, and an appendix table mapping domains to observables. This draft
+  includes an explicit Scope & Limitations section (no
+source:
+  doi: 10.5281/zenodo.17682481
+  title: 'Informational Pixel Field: Master Lagrangian and Nine-Domain Architecture'
+  year: 2025
+fetched_from_url: 'https://zenodo.org/api/records/17682481'
+locator: Zenodo record abstract (desc field), via API, from registry/zenodo_all_records.json
+tier: Open
+base_relation: superseded
+base_justification: Uses an earlier, since-abandoned working name/formalism (this program cycled through several framework names
+  before settling on retained-information/δ_R vocabulary); the base corpus's mother equation (kc-base-020) and
+  trunk equation (kc-base-022) replace this formulation.
+glosa_use: skip
+glosa_target: n/a — abandoned vocabulary, replaced by base mother/trunk equation
+notes: Part of the single-author 'ph' hub iterative physics-theory series (Zenodo id 17682481, 2025-11-22);
+  method-layer extraction only (self-publication + no-peer-review posture), not the physics content itself.

@@ -1,0 +1,31 @@
+id: kc-ph-040
+kind: claim
+title: Mass from the Informational Field
+text: 'Self-published Zenodo preprint (single-author physics/information-theory program, 2025-11-11). Abstract
+  reports: Executive Summary This work presents a fully revised framework of Unified Information Field Theory
+  (UIFT) , a modern physics-of-information model that connects thermodynamics, field theory, and information
+  geometry into a single coherent structure. The theory treats information density and information flux as
+  genuine physical fields obeying causal telegraph-type transport laws —eliminating the non-physical,
+  instantaneous propagation...'
+verbatim: Executive Summary This work presents a fully revised framework of Unified Information Field Theory (UIFT) ,
+  a modern physics-of-information model that connects thermodynamics, field theory, and information geometry
+  into a single coherent structure. The theory treats information density and information flux as genuine
+  physical fields obeying causal telegraph-type transport laws —eliminating the non-physical, instantaneous
+  propagation implied by classical diffusion models. Central to the revision is a Lyapunov-consistent
+  free-energy decay law with dimensionally verified coefficients, ensuring that informational processes
+  respect energy and causality constraints. The informational geometry is defined on a
+source:
+  doi: 10.5281/zenodo.17581909
+  title: Mass from the Informational Field
+  year: 2025
+fetched_from_url: 'https://zenodo.org/api/records/17581909'
+locator: Zenodo record abstract (desc field), via API, from registry/zenodo_all_records.json
+tier: Open
+base_relation: superseded
+base_justification: Uses an earlier, since-abandoned working name/formalism (this program cycled through several framework names
+  before settling on retained-information/δ_R vocabulary); the base corpus's mother equation (kc-base-020) and
+  trunk equation (kc-base-022) replace this formulation.
+glosa_use: skip
+glosa_target: n/a — abandoned vocabulary, replaced by base mother/trunk equation
+notes: Part of the single-author 'ph' hub iterative physics-theory series (Zenodo id 17581909, 2025-11-11);
+  method-layer extraction only (self-publication + no-peer-review posture), not the physics content itself.

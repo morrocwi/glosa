@@ -1,0 +1,29 @@
+id: kc-ph-032
+kind: claim
+title: Lyapunov Energy Decay for Gauge-Coupled Complex Scalar Fields with Covariant Friction
+text: 'Self-published Zenodo preprint (single-author physics/information-theory program, 2025-11-04). Abstract
+  reports: We prove a Lyapunov energy decay theorem for complex scalar fields minimally coupled to U(1) gauge
+  potentials in curved spacetime, subject to covariant linear damping. The damping term (1/tau) u^mu D_mu Psi,
+  where u^mu is a timelike unit vector and D_mu is the gauge-covariant derivative, preserves local U(1)
+  invariance while inducing energy dissipation. We establish...'
+verbatim: We prove a Lyapunov energy decay theorem for complex scalar fields minimally coupled to U(1) gauge
+  potentials in curved spacetime, subject to covariant linear damping. The damping term (1/tau) u^mu D_mu Psi,
+  where u^mu is a timelike unit vector and D_mu is the gauge-covariant derivative, preserves local U(1)
+  invariance while inducing energy dissipation. We establish rigorously that the total energy functional
+  (scalar kinetic plus potential plus electromagnetic) satisfies dE/dt = - integral of ( (1/tau) * |u^mu D_mu
+  Psi|^2 ) d^3x <= 0 under standard boundary conditions. The proof employs
+source:
+  doi: 10.5281/zenodo.17524006
+  title: Lyapunov Energy Decay for Gauge-Coupled Complex Scalar Fields with Covariant Friction
+  year: 2025
+fetched_from_url: 'https://zenodo.org/api/records/17524006'
+locator: Zenodo record abstract (desc field), via API, from registry/zenodo_all_records.json
+tier: Open
+base_relation: superseded
+base_justification: Uses an earlier, since-abandoned working name/formalism (this program cycled through several framework names
+  before settling on retained-information/δ_R vocabulary); the base corpus's mother equation (kc-base-020) and
+  trunk equation (kc-base-022) replace this formulation.
+glosa_use: skip
+glosa_target: n/a — abandoned vocabulary, replaced by base mother/trunk equation
+notes: Part of the single-author 'ph' hub iterative physics-theory series (Zenodo id 17524006, 2025-11-04);
+  method-layer extraction only (self-publication + no-peer-review posture), not the physics content itself.

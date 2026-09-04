@@ -1,0 +1,25 @@
+id: kc-aihp-016
+kind: claim
+title: 'NIDA national-conference slides (duplicate deposit): AI-mediated civilization of knowledge and
+  human responsibility'
+text: A second Zenodo concept record carrying the identical NIDA slide deck and description as 22302410
+  (kc-aihp-015) — same title, date, and Thai abstract text, distinct concept DOI. Kept as its own card
+  because the harvest task dedupes by concept id, and these are two distinct concepts, not two versions
+  of one concept.
+verbatim: เนื้อหาเป็นการนำเสนอเชิงแนวคิดว่าด้วยปัญญาประดิษฐ์กับอารยธรรมความรู้ — การที่มนุษย์ลืมสถานะการเป็นผู้เลือกและความรับผิดชอบของตนในสังคมที่ถูกสื่อกลางด้วย
+  AI; เป็นเอกสารนำเสนอ ไม่ใช่บทความที่ผ่านการประเมิน
+source:
+  doi: 10.5281/zenodo.22301886
+  title: 'ปัญญาประดิษฐ์กับอารยธรรมความรู้: การลืมสถานะการเป็นตัวเลือกและความรับผิดชอบของมนุษย์ในสังคมที่ถูกสื่อกลางด้วยปัญญาประดิษฐ์
+    (สไลด์นำเสนอระดับชาติ NIDA, 29 ส.ค. 2569)'
+  year: 2026
+fetched_from_url: https://zenodo.org/api/records/22301886
+locator: description (Thai block)
+tier: Open
+base_relation: refined_by_later_work
+base_justification: Same justification as kc-aihp-015; a duplicate deposit of the same content under a
+  distinct concept DOI, refined the same way by the hub's later formal papers.
+glosa_use: skip
+glosa_target: n/a — duplicate slide deck
+notes: Concept-duplicate of kc-aihp-015 (22302410); registry/zenodo_clusters.json lists both as distinct
+  members with distinct concept ids, so both are recorded rather than silently dropped.

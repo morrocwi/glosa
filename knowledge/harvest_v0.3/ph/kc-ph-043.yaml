@@ -1,0 +1,29 @@
+id: kc-ph-043
+kind: rule
+title: Axiom 12 — Informational CP-Asymmetry
+text: 'Self-published Zenodo preprint (single-author physics/information-theory program, 2025-11-13). Abstract
+  reports: Axiom 12 says that when an information-driven system launches in a messy, out-of-equilibrium phase,
+  even tiny, well-placed differences in dissipation and causal delay will tip the race between two otherwise
+  symmetric modes. That nudge becomes a genuine bias before the system “locks” into its stable configuration,
+  so the winner is effectively chosen early—while amplification is...'
+verbatim: Axiom 12 says that when an information-driven system launches in a messy, out-of-equilibrium phase, even
+  tiny, well-placed differences in dissipation and causal delay will tip the race between two otherwise
+  symmetric modes. That nudge becomes a genuine bias before the system “locks” into its stable configuration,
+  so the winner is effectively chosen early—while amplification is strongest and intervention is cheapest. In
+  practice, this means we don’t have to rewrite fundamental physics or micromanage every step. We shape
+  outcomes by tuning informational dynamics—how fast signals travel, how quickly patterns fade, and
+source:
+  doi: 10.5281/zenodo.17600798
+  title: Axiom 12 — Informational CP-Asymmetry
+  year: 2025
+fetched_from_url: 'https://zenodo.org/api/records/17600798'
+locator: Zenodo record abstract (desc field), via API, from registry/zenodo_all_records.json
+tier: Open
+base_relation: superseded
+base_justification: Uses an earlier, since-abandoned working name/formalism (this program cycled through several framework names
+  before settling on retained-information/δ_R vocabulary); the base corpus's mother equation (kc-base-020) and
+  trunk equation (kc-base-022) replace this formulation.
+glosa_use: skip
+glosa_target: n/a — abandoned vocabulary, replaced by base mother/trunk equation
+notes: Part of the single-author 'ph' hub iterative physics-theory series (Zenodo id 17600798, 2025-11-13);
+  method-layer extraction only (self-publication + no-peer-review posture), not the physics content itself.

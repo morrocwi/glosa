@@ -1,0 +1,24 @@
+id: kc-ai-025
+kind: claim
+title: Language as cognitive infrastructure — Elective Connectivity mechanism
+text: Proposes a three-stage mechanism (Elective Connectivity, Capability Activation, Reflexive Reconfiguration)
+  under which language functions as cognitive infrastructure activating organizational linguistic capital when LLM
+  connection is elective and governed, dialogic prompting surfaces tacit knowledge, and reflective insights get
+  institutionalized; explicitly conceptual-reflective synthesis, no empirical claims made.
+verbatim: Language can function as cognitive infrastructure when (i) connection to LLMs is elective and governed,
+  (ii) dialogic prompting routines surface tacit knowledge and align values, and (iii) reflective insights are institutionalized
+  into policies and processes.
+source:
+  path: registry/zenodo_all_records.json
+  title: 'Operational Linguistic Wisdom: Elective Connectivity and Linguistic Capital Activation in the Age of LLMs'
+  year: 2026
+fetched_from_url: https://zenodo.org/api/records/22308446
+locator: record 22308446, metadata.description (Abstract)
+tier: Open
+base_relation: open
+base_justification: Self-declared conceptual-reflective synthesis with explicit 'no empirical claims are made';
+  the three-stage mechanism is a proposition to test, not yet checked against any base or independent evidence.
+glosa_use: skip
+glosa_target: n/a — proposed conceptual mechanism, no method-layer contribution beyond the elective-governance emphasis
+notes: The 'elective and governed' AI-connection condition echoes EPIS-KNOWLEDGE-VALIDATION's insistence that no
+  party gets an automatic epistemic veto/authority — connection to AI must stay opt-in and governed, not default.

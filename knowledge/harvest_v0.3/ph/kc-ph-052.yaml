@@ -1,0 +1,32 @@
+id: kc-ph-052
+kind: method
+title: A Short Note on a Striking Numerical Observation in Charged-Lepton Masses from a Minimal C5-Symmetric
+  Five-Site Model
+text: 'Self-published Zenodo preprint (single-author physics/information-theory program, 2025-11-19). Abstract
+  reports: Within our developing non-equilibrium theory of information in physics—where local informational
+  imbalances evolve under strict global information and entropy constraints—we analyze a minimal discrete
+  geometry capable of supporting topologically protected eigenmodes: a five-site pixel ring with exact C5
+  rotational symmetry, two gauge-phase forbidden slots, and a globally enforced information budget of 2π
+  natural units. Discretizing...'
+verbatim: 'Within our developing non-equilibrium theory of information in physics—where local informational imbalances
+  evolve under strict global information and entropy constraints—we analyze a minimal discrete geometry
+  capable of supporting topologically protected eigenmodes: a five-site pixel ring with exact C5 rotational
+  symmetry, two gauge-phase forbidden slots, and a globally enforced information budget of 2π natural units.
+  Discretizing the informational PDE on this constrained geometry yields a spectrum whose allowed winding
+  numbers are tightly restricted by symmetry and nodal structure. The first admissible values, n = 1, 4, 20,
+  95, . . .,'
+source:
+  doi: 10.5281/zenodo.17647053
+  title: A Short Note on a Striking Numerical Observation in Charged-Lepton Masses from a Minimal C5-Symmetric
+    Five-Site Model
+  year: 2025
+fetched_from_url: 'https://zenodo.org/api/records/17647053'
+locator: Zenodo record abstract (desc field), via API, from registry/zenodo_all_records.json
+tier: Open
+base_relation: open
+base_justification: Domain physics content (a specific claim/derivation/observational note) not directly addressed by any base
+  card; carries no base-card contradiction but also no base endorsement — left open.
+glosa_use: skip
+glosa_target: n/a — domain physics claim outside glosa's method-layer scope
+notes: Part of the single-author 'ph' hub iterative physics-theory series (Zenodo id 17647053, 2025-11-19);
+  method-layer extraction only (self-publication + no-peer-review posture), not the physics content itself.

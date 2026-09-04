@@ -1,0 +1,27 @@
+id: kc-base-009
+kind: definition
+title: δ_R — the one primitive (retained distinction)
+text: 'δ_R = (a ♯ b): ''there is a difference, and it is kept.'' A declared axiom, like ZFC declares its
+  own axiom list — chosen, not proven; its fruitfulness and machine-checked categoricity are the offered
+  evidence.'
+verbatim: '**δ_R = (a ♯ b)** — "there is a difference, and it is kept." (`definition`
+
+  — a declared axiom, like ZFC declares its own axiom list; chosen, not proven;
+
+  its fruitfulness and machine-checked categoricity are the offered
+
+  evidence.)'
+source:
+  path: readout_universe/philosophy.md
+  title: Philosophy — Readout Universe
+  year: 2026
+fetched_from_url: ~/ANSE.ASIA/readout_universe/philosophy.md
+locator: §5.1, lines ~648-652
+tier: definition
+base_relation: holds
+base_justification: This IS a base card from the lens root text; base cards are the ground the ledger
+  is judged against.
+glosa_use: adopt
+glosa_target: FOUNDATION §1.0 Pillars — ontology/epistemology/methodology
+notes: The single-line ontological root the rest of the lens hangs from; useful as the ontology pillar's
+  own citable primitive.

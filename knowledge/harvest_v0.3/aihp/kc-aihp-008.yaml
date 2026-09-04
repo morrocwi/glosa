@@ -1,0 +1,27 @@
+id: kc-aihp-008
+kind: claim
+title: 'Before Evidence Can Decide: candidate-set formation and discovery routing precede evidential adjudication
+  (agenda paper, [Open])'
+text: Paper III of the Bounded Knower sequence is an agenda paper asking how a candidate hypothesis set
+  gets formed and routed toward some hypotheses rather than others before evidence can ever adjudicate
+  between them — a pre-evidential epistemology of unconceived alternatives. Marked GLOSA K0, central augmentation
+  laws remain [Open].
+verbatim: 'Series. Paper III (agenda paper) of the three-paper Bounded Knower sequence. Paper I: From
+  Problem to Hypothesis (DOI 10.5281/zenodo.22307148). Paper II: Knowledge Topology and the First Passage
+  to Usable Hypotheses (DOI 10.5281/zenodo.22307561). Paper IV: The Epistemic Chain Reaction (DOI 10.5281/zenodo.22307751).
+  Status. GLOSA K0 — timestamped and citable, not independently reviewed, no priority claim.'
+source:
+  doi: 10.5281/zenodo.22307564
+  title: 'Before Evidence Can Decide: Candidate-Set Formation, Discovery Routing, and Unconceived Alternatives
+    — Questions for a Pre-Evidential Epistemology of Science'
+  year: 2026
+fetched_from_url: https://zenodo.org/api/records/22307564
+locator: Series/Status metadata block
+tier: Open
+base_relation: open
+base_justification: Record's own status explicitly marks its central claims [Open], matching kc-base-007's
+  Open rung; no completed derivation to compare against a base card yet, so 'open' rather than 'holds'.
+glosa_use: skip
+glosa_target: n/a — agenda paper, no operationalizable mechanism yet
+notes: Zenodo abstract field is empty for this record; the Series/Status metadata paragraph is the only
+  continuous text the record itself carries.

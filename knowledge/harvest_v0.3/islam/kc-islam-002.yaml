@@ -1,0 +1,29 @@
+id: kc-islam-002
+kind: claim
+title: Revelation is not fallible; the human juristic determination of it is — distinguishing revelation from juristic readouts
+text: The paper's foundational architecture separates revelation itself (held infallible within the tradition)
+  from the human juristic determination of it — "fiqh is a human juristic determination of divine normativity,
+  not revelation itself." Scholarly epistemic authority, adjudicative authority, and political authority are
+  kept as distinct, non-identical human trusts, each answerable to revelation but none equal to it; consultation
+  never extinguishes the acting agent's own moral responsibility.
+verbatim: 'Its foundational thesis is deliberately strong: fiqh is a human juristic determination of divine
+  normativity, not revelation itself. This does not secularize fiqh or diminish its authority; it states the
+  very condition under which ijtihād can be rewarded when correct and still rewarded when it errs.'
+source:
+  doi: 10.5281/zenodo.22206607
+  title: "Faqr, Scholarly Authority, and Non-Transferable Responsibility: A Revelation-Bounded Sunni
+    Architecture for Ethical Deliberation, Shūrā, and Epistemic Governance"
+  year: 2026
+fetched_from_url: local file ~/Downloads/Faqr_Authority_Q1_arXiv_TwoColumn_v8.pdf (matched by title and
+  abstract text against Zenodo record 22206607; no PDF was found in `sources/` for this hub)
+locator: Abstract, p.1
+tier: Open
+base_relation: holds
+base_justification: Structurally parallel to kc-base-001's readout-not-truth split (the record vs. the thing
+  recorded) — here revelation is the source, fiqh the fallible human "readout" of it; the paper never conflates
+  the two, matching the base's own refusal to conflate a readout with the truth it reads.
+glosa_use: adopt
+glosa_target: "FOUNDATION §2.1c ownership criterion / §5 disclaimer catalogue — a ready-made non-collapse
+  pattern (source vs. a human's fallible reading of it) for any glosa disclaimer distinguishing an authoritative
+  source from a claim made about it."
+notes: —

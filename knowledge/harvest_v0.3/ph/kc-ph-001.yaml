@@ -1,0 +1,29 @@
+id: kc-ph-001
+kind: claim
+title: 'Dark Energy as Mean Damping: From Lyapunov Energy Decay to Cosmological Coherence'
+text: 'Self-published Zenodo preprint (single-author physics/information-theory program, 2025-10-06). Abstract
+  reports: Executive Summary: A New Origin for Dark Energy To: Interested Stakeholders From: Yaoharee Lahtee,
+  Cosmo @ Home Subject: A Testable New Theory for Cosmic Acceleration (Paper 2a) 1. The Problem We Solve One
+  of the deepest mysteries in modern physics is "Dark Energy"—a force causing our universe to expand at an
+  accelerating rate. The standard...'
+verbatim: 'Executive Summary: A New Origin for Dark Energy To: Interested Stakeholders From: Yaoharee Lahtee, Cosmo @
+  Home Subject: A Testable New Theory for Cosmic Acceleration (Paper 2a) 1. The Problem We Solve One of the
+  deepest mysteries in modern physics is "Dark Energy"—a force causing our universe to expand at an
+  accelerating rate. The standard model explains this with a "cosmological constant" (Lambda), but this value
+  is unexplained, unpredicted, and simply accepted as a fact. It is one of the most profound gaps in our
+  understanding of the cosmos. 2.'
+source:
+  doi: 10.5281/zenodo.17534299
+  title: 'Dark Energy as Mean Damping: From Lyapunov Energy Decay to Cosmological Coherence'
+  year: 2025
+fetched_from_url: 'https://zenodo.org/api/records/17534299'
+locator: Zenodo record abstract (desc field), via API, from registry/zenodo_all_records.json
+tier: Open
+base_relation: superseded
+base_justification: Uses an earlier, since-abandoned working name/formalism (this program cycled through several framework names
+  before settling on retained-information/δ_R vocabulary); the base corpus's mother equation (kc-base-020) and
+  trunk equation (kc-base-022) replace this formulation.
+glosa_use: skip
+glosa_target: n/a — abandoned vocabulary, replaced by base mother/trunk equation
+notes: Part of the single-author 'ph' hub iterative physics-theory series (Zenodo id 17534299, 2025-10-06);
+  method-layer extraction only (self-publication + no-peer-review posture), not the physics content itself.

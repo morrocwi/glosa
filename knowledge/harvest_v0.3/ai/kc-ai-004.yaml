@@ -1,0 +1,24 @@
+id: kc-ai-004
+kind: rule
+title: 'Two constraints replacing knower-fetishism: channel over face'
+text: 'Proposes two constraints to replace face-based epistemic crediting: (1) provenance matters only through an
+  identifiable epistemic channel, never through the identity of the producer as such; (2) source metadata must never
+  be identified with the epistemic role for which it is merely a proxy (e.g. ''human-authored'' standing in for
+  ''reliable'', when the two can come apart).'
+verbatim: 'the paper... proposes two constraints: provenance matters only through an identifiable epistemic channel,
+  and source metadata must never be identified with the epistemic role for which it is merely a proxy.'
+source:
+  path: sources/WRITTEN_BY_AI_STILL_TRUE_v6.txt
+  title: Written by AI. Still True. Knower Fetishism, Epistemic Pedigree, and the Human Face as a Bad Theory of
+    Truth
+  year: 2026
+fetched_from_url: /home/yaoharee-lt/ANSE.ASIA/glosa/sources/WRITTEN_BY_AI_STILL_TRUE_v6.txt
+locator: lines 27-30 (Abstract)
+tier: Dr
+base_relation: refined_by_later_work
+base_justification: Sharpens the horizontal-authority stance of EPIS-KNOWLEDGE-VALIDATION into a checkable rule
+  about provenance-as-proxy, narrower than the base cards' general readout-not-truth claim.
+glosa_use: adopt
+glosa_target: kernel rule (source-attribution) — feeds Rule 17-style 'source, not face' discipline
+notes: This is the paper the CLAUDE.md gate's own horizontal-knowledge stance (no vertical/face-based authority)
+  converges with independently; worth citing as an external convergent source.

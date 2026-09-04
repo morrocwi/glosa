@@ -1,0 +1,29 @@
+id: kc-base-011
+kind: definition
+title: L_R := D_W − W (the one derived link)
+text: L_R is the weighted graph Laplacian, built from a cost-based relational graph (retained states as
+  nodes, retained relations as weighted edges). Named explicitly 'the ONE genuinely derived link' among
+  the whole root-to-trunk chain — everything downstream of it is comparatively more posited.
+verbatim: '**L_R := D_W − W** — the weighted graph Laplacian, built from a cost-based
+
+  relational graph (retained states → nodes; retained relations → weighted
+
+  edges). This is named explicitly as **"the ONE genuinely derived link"**
+
+  (`readout_genesis/README.md`) among the whole chain from root to trunk —
+
+  everything downstream of it is comparatively more posited.'
+source:
+  path: readout_universe/philosophy.md
+  title: Philosophy — Readout Universe
+  year: 2026
+fetched_from_url: ~/ANSE.ASIA/readout_universe/philosophy.md
+locator: §5.2, lines ~678-682
+tier: Th_coqc
+base_relation: holds
+base_justification: This IS a base card from the lens root text; base cards are the ground the ledger
+  is judged against.
+glosa_use: skip
+glosa_target: FOUNDATION §1.0 Pillars
+notes: Deep physics-lens machinery; glosa records it for lineage/citation but has no direct use for a
+  graph-Laplacian operator in its own document schema.

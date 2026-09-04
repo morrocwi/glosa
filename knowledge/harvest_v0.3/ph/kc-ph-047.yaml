@@ -1,0 +1,30 @@
+id: kc-ph-047
+kind: method
+title: 'Non-Equilibrium Information Physics : Concept note'
+text: 'Self-published Zenodo preprint (single-author physics/information-theory program, 2025-11-17). Abstract
+  reports: Non-Equilibrium Information Physics (NEIP) proposes that the universe is fundamentally composed of
+  informational pixels at the Planck scale. Information, not matter or energy, is the primary physical
+  quantity. Patterns of information generate potentials; changes in potential induce energetic rearrangements;
+  and mass emerges from stable informational density. This note summarizes the core conceptual flow and
+  governing...'
+verbatim: Non-Equilibrium Information Physics (NEIP) proposes that the universe is fundamentally composed of
+  informational pixels at the Planck scale. Information, not matter or energy, is the primary physical
+  quantity. Patterns of information generate potentials; changes in potential induce energetic rearrangements;
+  and mass emerges from stable informational density. This note summarizes the core conceptual flow and
+  governing equations of NEIP, together with unit definitions and consistency checks with GR, QFT,
+  thermodynamics, and causality.
+source:
+  doi: 10.5281/zenodo.17625342
+  title: 'Non-Equilibrium Information Physics : Concept note'
+  year: 2025
+fetched_from_url: 'https://zenodo.org/api/records/17625342'
+locator: Zenodo record abstract (desc field), via API, from registry/zenodo_all_records.json
+tier: Open
+base_relation: superseded
+base_justification: Uses an earlier, since-abandoned working name/formalism (this program cycled through several framework names
+  before settling on retained-information/δ_R vocabulary); the base corpus's mother equation (kc-base-020) and
+  trunk equation (kc-base-022) replace this formulation.
+glosa_use: skip
+glosa_target: n/a — abandoned vocabulary, replaced by base mother/trunk equation
+notes: Part of the single-author 'ph' hub iterative physics-theory series (Zenodo id 17625342, 2025-11-17);
+  method-layer extraction only (self-publication + no-peer-review posture), not the physics content itself.

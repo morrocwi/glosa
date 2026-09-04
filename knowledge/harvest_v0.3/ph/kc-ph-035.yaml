@@ -1,0 +1,33 @@
+id: kc-ph-035
+kind: method
+title: 'Theoretical Remark: Massive Star Evolution in Extremely Metal-Poor Environments under the
+  Lyapunov–Scale–Log Framework'
+text: 'Self-published Zenodo preprint (single-author physics/information-theory program, 2025-11-06). Abstract
+  reports: The evolution of massive stars in extremely metal-poor environments (Z . 0.1 Z ) remains a frontier
+  problem linking stellar feedback to early-Universe enrichment. Recent and anticipated observations by
+  Senchyna (2025) indicate sub-quadratic feedback scaling that challenges canonical opacity-driven models. We
+  present a covariant formulation in which dissipative field dynamics, described by the Lyapunov
+  energy-decay...'
+verbatim: The evolution of massive stars in extremely metal-poor environments (Z . 0.1 Z ) remains a frontier problem
+  linking stellar feedback to early-Universe enrichment. Recent and anticipated observations by Senchyna
+  (2025) indicate sub-quadratic feedback scaling that challenges canonical opacity-driven models. We present a
+  covariant formulation in which dissipative field dynamics, described by the Lyapunov energy-decay equation,
+  lead naturally to the logarithmically moderated Scale–Log law. The approach defines force and feedback
+  directly from the stress–energy tensor and reproduces the empirically observed exponent p ' 1.8 reported for
+  metal-poor systems such as
+source:
+  doi: 10.5281/zenodo.17539048
+  title: 'Theoretical Remark: Massive Star Evolution in Extremely Metal-Poor Environments under the
+    Lyapunov–Scale–Log Framework'
+  year: 2025
+fetched_from_url: 'https://zenodo.org/api/records/17539048'
+locator: Zenodo record abstract (desc field), via API, from registry/zenodo_all_records.json
+tier: Open
+base_relation: superseded
+base_justification: Uses an earlier, since-abandoned working name/formalism (this program cycled through several framework names
+  before settling on retained-information/δ_R vocabulary); the base corpus's mother equation (kc-base-020) and
+  trunk equation (kc-base-022) replace this formulation.
+glosa_use: skip
+glosa_target: n/a — abandoned vocabulary, replaced by base mother/trunk equation
+notes: Part of the single-author 'ph' hub iterative physics-theory series (Zenodo id 17539048, 2025-11-06);
+  method-layer extraction only (self-publication + no-peer-review posture), not the physics content itself.

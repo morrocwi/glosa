@@ -1,0 +1,30 @@
+id: kc-ph-013
+kind: claim
+title: The Emergence of Mass Consistent with Both Relativity and Quantum Physics
+text: 'Self-published Zenodo preprint (single-author physics/information-theory program, 2025-10-25). Abstract
+  reports: Executive Summary We present a falsifiable, human–AI co‑authored framework in which mass emerges
+  from coherent synchronization of an information field. The proposal integrates three layers: (i) a minimal
+  scalar backbone (UB‑ONE), (ii) a restorative open‑system layer (URE), and (iii) curvature‑consistent
+  conservation (SURE‑GUT). The Unified Mass–Sync Law links phase‑lock coherence to effective mass and provides
+  cross‑domain...'
+verbatim: 'Executive Summary We present a falsifiable, human–AI co‑authored framework in which mass emerges from
+  coherent synchronization of an information field. The proposal integrates three layers: (i) a minimal scalar
+  backbone (UB‑ONE), (ii) a restorative open‑system layer (URE), and (iii) curvature‑consistent conservation
+  (SURE‑GUT). The Unified Mass–Sync Law links phase‑lock coherence to effective mass and provides cross‑domain
+  acceptance thresholds. The package includes LaTeX, code, and a generated figure so reviewers can replicate
+  in minutes. Core claim (concise): When phase‑lock coherence ρ crosses a domain threshold ρ_c, the system
+  acquires effective mass that'
+source:
+  doi: 10.5281/zenodo.17439693
+  title: The Emergence of Mass Consistent with Both Relativity and Quantum Physics
+  year: 2025
+fetched_from_url: 'https://zenodo.org/api/records/17439693'
+locator: Zenodo record abstract (desc field), via API, from registry/zenodo_all_records.json
+tier: Open
+base_relation: open
+base_justification: Domain physics content (a specific claim/derivation/observational note) not directly addressed by any base
+  card; carries no base-card contradiction but also no base endorsement — left open.
+glosa_use: skip
+glosa_target: n/a — domain physics claim outside glosa's method-layer scope
+notes: Part of the single-author 'ph' hub iterative physics-theory series (Zenodo id 17439693, 2025-10-25);
+  method-layer extraction only (self-publication + no-peer-review posture), not the physics content itself.

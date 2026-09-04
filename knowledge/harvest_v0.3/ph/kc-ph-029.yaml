@@ -1,0 +1,32 @@
+id: kc-ph-029
+kind: method
+title: 'Information Field Theory v0.1: Phase, Damp, Sync, and W0 Toward a Unified Framework Connecting Cosmos,
+  Quantum, and Mind'
+text: 'Self-published Zenodo preprint (single-author physics/information-theory program, 2025-11-03). Abstract
+  reports: Across domains—from cosmology to quantum systems to the human brain— scientists encounter the same
+  paradox: coherent order emerges and persists in noisy, dissipative environments. Standard models explain
+  fragments of this phenomenon but leave gaps between them. This paper introduces Information Field Theory
+  (IFT), a unifying conceptual framework describing the universe as a single field of...'
+verbatim: 'Across domains—from cosmology to quantum systems to the human brain— scientists encounter the same paradox:
+  coherent order emerges and persists in noisy, dissipative environments. Standard models explain fragments of
+  this phenomenon but leave gaps between them. This paper introduces Information Field Theory (IFT), a
+  unifying conceptual framework describing the universe as a single field of information that self-organizes
+  through three interacting mechanisms: Phase, Damp, and Sync, governed by a universal reference scale W0.
+  Rather than replacing existing physics, IFT proposes pathways to complete it by offering potential
+  explanations where current'
+source:
+  doi: 10.5281/zenodo.17516592
+  title: 'Information Field Theory v0.1: Phase, Damp, Sync, and W0 Toward a Unified Framework Connecting Cosmos,
+    Quantum, and Mind'
+  year: 2025
+fetched_from_url: 'https://zenodo.org/api/records/17516592'
+locator: Zenodo record abstract (desc field), via API, from registry/zenodo_all_records.json
+tier: Open
+base_relation: superseded
+base_justification: Uses an earlier, since-abandoned working name/formalism (this program cycled through several framework names
+  before settling on retained-information/δ_R vocabulary); the base corpus's mother equation (kc-base-020) and
+  trunk equation (kc-base-022) replace this formulation.
+glosa_use: skip
+glosa_target: n/a — abandoned vocabulary, replaced by base mother/trunk equation
+notes: Part of the single-author 'ph' hub iterative physics-theory series (Zenodo id 17516592, 2025-11-03);
+  method-layer extraction only (self-publication + no-peer-review posture), not the physics content itself.

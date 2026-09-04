@@ -1,0 +1,23 @@
+id: kc-base-003
+kind: claim
+title: Q2 — Quantity as projection
+text: A quantity is one coordinate on the space of readouts a system's operator can give, not a Platonic
+  magnitude sitting behind the phenomenon.
+verbatim: '**Q2 — Quantity = projection.** A quantity is one coordinate on the space
+
+  of readouts a system''s operator *can* give — not a Platonic magnitude
+
+  behind the phenomenon.'
+source:
+  path: readout_universe/philosophy.md
+  title: Philosophy — Readout Universe
+  year: 2026
+fetched_from_url: ~/ANSE.ASIA/readout_universe/philosophy.md
+locator: §1, lines ~59-61
+tier: Dr
+base_relation: holds
+base_justification: This IS a base card from the lens root text; base cards are the ground the ledger
+  is judged against.
+glosa_use: adopt
+glosa_target: FOUNDATION §3.2b formal_applicability plain-language definitions
+notes: 'Same evidential caveat as Q1: Dr on citation strength, no worked case yet in this source.'

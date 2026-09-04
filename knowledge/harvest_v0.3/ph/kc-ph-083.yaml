@@ -1,0 +1,29 @@
+id: kc-ph-083
+kind: claim
+title: Early Warning Necessitates Timely Controllability Under Finite-Speed Causal Response
+text: 'Self-published Zenodo preprint (single-author physics/information-theory program, 2025-12-25). Abstract
+  reports: Early warning is often treated as an operational preference. We establish a single structural
+  necessity: in systems with finite-speed causal influence, there exist interventions that are theoretically
+  valid but structurally impossible if detection occurs too late. We formalize this as an early-warning
+  necessity theorem: if the remaining time after detection is smaller than the propagation-limited...'
+verbatim: 'Early warning is often treated as an operational preference. We establish a single structural necessity: in
+  systems with finite-speed causal influence, there exist interventions that are theoretically valid but
+  structurally impossible if detection occurs too late. We formalize this as an early-warning necessity
+  theorem: if the remaining time after detection is smaller than the propagation-limited accessibility time
+  (in the optical/control metric) to the vulnerable region, no controller—regardless of sophistication or
+  energy—can avert the imminent transition there. This constraint is geometric (hard) rather than energetic
+  (soft): dissipation controls amplitude inside the'
+source:
+  doi: 10.5281/zenodo.18055068
+  title: Early Warning Necessitates Timely Controllability Under Finite-Speed Causal Response
+  year: 2025
+fetched_from_url: 'https://zenodo.org/api/records/18055068'
+locator: Zenodo record abstract (desc field), via API, from registry/zenodo_all_records.json
+tier: Open
+base_relation: open
+base_justification: Domain physics content (a specific claim/derivation/observational note) not directly addressed by any base
+  card; carries no base-card contradiction but also no base endorsement — left open.
+glosa_use: skip
+glosa_target: n/a — domain physics claim outside glosa's method-layer scope
+notes: Part of the single-author 'ph' hub iterative physics-theory series (Zenodo id 18055068, 2025-12-25);
+  method-layer extraction only (self-publication + no-peer-review posture), not the physics content itself.

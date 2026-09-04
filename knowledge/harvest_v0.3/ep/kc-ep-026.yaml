@@ -1,0 +1,27 @@
+id: kc-ep-026
+kind: definition
+title: 'θ(E): relational invariance without intrinsic nature'
+text: 'Names θ(E), the world-side causal-structural organisation finite knowers track without possessing,
+  characterized by four properties: absence of intrinsic nature, non-emptiness, asymmetric constraint,
+  and specifiable limits; argues structural realism captures (ii)-(iv) but risks reifying structure, while
+  Madhyamaka captures (i) but struggles to ground (iii)-(iv).'
+verbatim: Both structural realism and Madhyamaka philosophy identify naive realism as untenable, but they
+  reach for dierent remedies. Structural realism retains mindindependent structural invariants as the
+  real furniture of the world; Madhyamaka extends the ± unyat a diagnosis to structures themselves, risking
+  anti-realist collapse. This paper argues that neither position systematically achieves the four-property
+  cluster required for a coherent account of world-constrained, mediated knowing.
+source:
+  doi: 10.5281/zenodo.19474326
+  title: Relational Invariance without Intrinsic Nature
+  year: 2026
+fetched_from_url: https://zenodo.org/api/records/19474326
+locator: Zenodo record abstract (desc field), via API
+tier: Open
+base_relation: holds
+base_justification: 'θ(E) plays the same structural role as the base''s L_R operator (kc-base-011/012):
+  a forced, relationally-defined invariant that is not itself a Platonic magnitude — compatible parallel
+  construction in a different vocabulary.'
+glosa_use: adopt
+glosa_target: FOUNDATION Appendix A — Family B Access/Inference (θ(E) as cross-reference for L_R-type
+  invariants)
+notes: 2026-04-08; refines kc-ep-011 (18798732).

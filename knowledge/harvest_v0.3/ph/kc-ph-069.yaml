@@ -1,0 +1,29 @@
+id: kc-ph-069
+kind: claim
+title: 'Mass as Causal Memory: A Structural Unication of Black Hole Physics'
+text: 'Self-published Zenodo preprint (single-author physics/information-theory program, 2025-12-10). Abstract
+  reports: Reframing Naturalness: Could a Black Hole Be “Massless”? Seeing Gravity Through the Lens of Causal
+  Memory For decades, theoretical physics has wrestled with deep inconsistencies in how we describe black
+  holes. We treat them as “massive objects,” yet several observations refuse to fit neatly into that picture.
+  The ringdown signals measured by LIGO last a...'
+verbatim: 'Reframing Naturalness: Could a Black Hole Be “Massless”? Seeing Gravity Through the Lens of Causal Memory
+  For decades, theoretical physics has wrestled with deep inconsistencies in how we describe black holes. We
+  treat them as “massive objects,” yet several observations refuse to fit neatly into that picture. The
+  ringdown signals measured by LIGO last a few milliseconds, while the quantum time-scale one would compute
+  from the same black hole is smaller by almost 70 orders of magnitude . General Relativity predicts a
+  curvature singularity—usually taken as a sign that something'
+source:
+  doi: 10.5281/zenodo.17878952
+  title: 'Mass as Causal Memory: A Structural Unication of Black Hole Physics'
+  year: 2025
+fetched_from_url: 'https://zenodo.org/api/records/17878952'
+locator: Zenodo record abstract (desc field), via API, from registry/zenodo_all_records.json
+tier: Open
+base_relation: refined_by_later_work
+base_justification: Precursor step in the same program's iterative build-up toward what the base corpus fixes as the τ_c>0
+  persistence axiom / mass-as-readout-of-τ_c (kc-base-028); vocabulary and claims here are provisional working
+  drafts later folded into and re-derived under that axiom.
+glosa_use: skip
+glosa_target: n/a — superseded within its own program before reaching base corpus
+notes: Part of the single-author 'ph' hub iterative physics-theory series (Zenodo id 17878952, 2025-12-10);
+  method-layer extraction only (self-publication + no-peer-review posture), not the physics content itself.

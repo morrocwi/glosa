@@ -1,0 +1,38 @@
+id: kc-base-023
+kind: definition
+title: Epistemic Nuclear Core N1–N5 (domain-independent)
+text: 'Five equations the source calls irreducible in a strict sense: none of the five is derivable from
+  the other four without smuggling in a sixth assumption, and none names a domain. N1 is dynamics with
+  no commitment to what Φ is; N2 is epistemology with no commitment to what is measured; N3 is the arrow
+  with no commitment to what dissipates; N4 is the bridge with no commitment to which two domains are
+  bridged; N5 is the residue with no commitment to which experiment produced the ratio. N3 is the only
+  one of the five carrying a machine-checked (Th_coqc) tag.'
+verbatim: 'Five equations the source calls irreducible in the strict sense used throughout that book:
+  **none of the five is derivable from the
+
+  other four without smuggling in a sixth assumption; and none names a
+
+  domain.** N1 is dynamics with no commitment to what Φ *is*; N2 is
+
+  epistemology with no commitment to what is measured; N3 is the arrow with
+
+  no commitment to what dissipates; N4 is the bridge with no commitment to
+
+  which two domains are bridged; N5 is the residue with no commitment to
+
+  which experiment produced the ratio.'
+source:
+  path: readout_universe/logic.md
+  title: Logic — Equation & Operator Ledger
+  year: 2026
+fetched_from_url: ~/ANSE.ASIA/readout_universe/logic.md
+locator: §10 'The Epistemic Nuclear Core — N1–N5', lines ~1261-1271
+tier: Dr
+base_relation: holds
+base_justification: This IS a base card from the lens root text; base cards are the ground the ledger
+  is judged against.
+glosa_use: adapt
+glosa_target: FOUNDATION §3.2 Field list / §3.3 Kernel gate rules
+notes: 'The irreducibility framing (5 orthogonal roles: dynamics/epistemology/arrow/bridge/residue) is
+  a reusable structural pattern for organizing glosa''s own kernel gates, even though the concrete N1-N5
+  content is physics-lens-specific.'

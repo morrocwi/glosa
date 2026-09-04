@@ -1,0 +1,25 @@
+id: kc-ep-011
+kind: claim
+title: Invariance as condition of same-world discourse
+text: Argues that claiming distinct descriptions concern 'the same world' presupposes a non-empty invariant
+  structural core stable under admissible transformations; the invariance requirement is a condition-of-intelligibility
+  necessity, not empirical or analytic.
+verbatim: 'When distinct descriptions are said to concern the same world, what makes this claim more than
+  pragmatic coordination or mutual translation? Absent structural constraint, world-identity risks collapsing
+  into representationindexing or community agreement. This paper argues that same-world discourse presupposes
+  a non-empty invariant structural core: at least some claims must remain stable under independently motivated
+  admissible transformations.'
+source:
+  doi: 10.5281/zenodo.18798732
+  title: Invariance and the Identity of a World A Minimal Structural Necessity Thesis
+  year: 2026
+fetched_from_url: https://zenodo.org/api/records/18798732
+locator: Zenodo record abstract (desc field), via API
+tier: Open
+base_relation: refined_by_later_work
+base_justification: This minimal-invariance argument is the direct precursor of the θ(E) operator formalized
+  in kc-ep-026 (19474326, Relational Invariance without Intrinsic Nature) within the same hub; judged
+  against base cards it is compatible with, but not itself using, the L_R invariance results (kc-base-012).
+glosa_use: skip
+glosa_target: (superseded within-hub by later θ(E) formalization)
+notes: 2026-02-27.

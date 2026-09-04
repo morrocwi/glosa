@@ -1,0 +1,28 @@
+id: kc-ph-074
+kind: claim
+title: 'Causal-Time Diagnostic: A Concise, Model-Independent Test of Late-Time Acceleration'
+text: 'Self-published Zenodo preprint (single-author physics/information-theory program, 2025-12-12). Abstract
+  reports: We present a “single-number” gauge for reading the Universe’s expansion history directly from real
+  data. Think of it as a simple scale that tells you which mode the cosmos is in: if the value sits above the
+  standard matter-only level, today’s Universe isn’t in a matter-dominated phase and is consistent with
+  accelerated expansion no guesses...'
+verbatim: 'We present a “single-number” gauge for reading the Universe’s expansion history directly from real data.
+  Think of it as a simple scale that tells you which mode the cosmos is in: if the value sits above the
+  standard matter-only level, today’s Universe isn’t in a matter-dominated phase and is consistent with
+  accelerated expansion no guesses about dark energy or its equation of state required. The strength is
+  clarity and falsifiability: if anyone measures a value at or below the matter benchmark, this frame is ruled
+  out on the spot. We’re'
+source:
+  doi: 10.5281/zenodo.17914472
+  title: 'Causal-Time Diagnostic: A Concise, Model-Independent Test of Late-Time Acceleration'
+  year: 2025
+fetched_from_url: 'https://zenodo.org/api/records/17914472'
+locator: Zenodo record abstract (desc field), via API, from registry/zenodo_all_records.json
+tier: Open
+base_relation: open
+base_justification: Domain physics content (a specific claim/derivation/observational note) not directly addressed by any base
+  card; carries no base-card contradiction but also no base endorsement — left open.
+glosa_use: skip
+glosa_target: n/a — domain physics claim outside glosa's method-layer scope
+notes: Part of the single-author 'ph' hub iterative physics-theory series (Zenodo id 17914472, 2025-12-12);
+  method-layer extraction only (self-publication + no-peer-review posture), not the physics content itself.

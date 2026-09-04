@@ -1,0 +1,29 @@
+id: kc-ep-028
+kind: method
+title: 'Mind as Information Horizon: telegraph equation to expertise on a discrete causal graph'
+text: Derives a full chain from three postulates (distinguishability, causal closure, finite propagation
+  speed) to the telegraph equation on a finite discrete graph as the unique minimal governing dynamics;
+  derives an Agency-Horizon Theorem (event horizon, privacy, emission constraint, partial self-access,
+  information persistence) and grounds expertise as the mature regime of coupled information-horizon/embodied-process
+  dynamics.
+verbatim: What must reality minimally be if knowingand therefore expertiseare to be possible at all? This
+  paper derives a complete architectonic chain from primordial dierence through the formation of world-class
+  expertise, within a discrete causalinformational ontology. The argument proceeds in ve movements.
+source:
+  doi: 10.5281/zenodo.19640361
+  title: 'Mind as Information Horizon: From Primordial Difference to Expertise Formation on the Discrete
+    Causal Graph'
+  year: 2026
+fetched_from_url: https://zenodo.org/api/records/19640361
+locator: Zenodo record abstract (desc field), via API
+tier: Open
+base_relation: refined_by_later_work
+base_justification: This paper's three postulates and telegraph-equation derivation are the direct precursor
+  of the base's E00.1-E00.7 primordial root axioms and MQ.08 discrete stepper (kc-base-029, kc-base-033),
+  which later formalize the same chain within the readout_genesis corpus's own tier-audited machinery
+  — treat this record as prior art the base later subsumed and reformalized, not as itself part of the
+  audited base ledger.
+glosa_use: skip
+glosa_target: (superseded by base kc-base-029/030/033 for glosa citation purposes)
+notes: 2026-04-18; states its theorem as 'formal, not a metaphor' but tier not independently verifiable
+  here from abstract alone — treat cautiously as Th_coqc-claimed rather than Th_coqc-confirmed.

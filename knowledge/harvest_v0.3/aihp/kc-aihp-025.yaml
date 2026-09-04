@@ -1,0 +1,28 @@
+id: kc-aihp-025
+kind: claim
+title: Truth as Causal-Structural Alignment, not naked correspondence; the translation gap is the condition
+  of agency, not a defect
+text: Redefines agency as 'Deep Authorship' — a generative causal organization functioning through a self-model
+  with inherent error (ε_tot>0) — and proposes truth as a Causal-Structural Alignment between an observer's
+  representation and the world's generative organization, rather than naked correspondence. The translation
+  gap is argued to be the very condition of human agency and knowledge, not a failure to be corrected.
+verbatim: we propose that truth is not a 'naked correspondence' but a Causal-Structural Alignment between
+  the observer's representation and the world's generative organization. This framework 'swallows' the
+  insights of structural realism, predictive coding, and crosscivilizational epistemology, providing a
+  robust account of responsibility without transparency. We demonstrate that the 'gap' of translation
+  is not a failure to be corrected, but the very condition of human agency and knowledge.
+source:
+  doi: 10.5281/zenodo.19176260
+  title: 'The Architecture of Mediated Agency: Beyond the Misframing of Free Will and Truth'
+  year: 2026
+fetched_from_url: https://zenodo.org/api/records/19176260
+locator: Abstract
+tier: Dr
+base_relation: holds
+base_justification: 'Directly parallels kc-base-005 (Truth re-read as tracking, not correspondence to
+  the infinite): both replace naked/infinite correspondence with a bounded, structural relation. ε_tot>0
+  matches kc-base-028''s τ_c>0 persistence-axiom style of a non-zero floor as a positive claim, not a
+  gap.'
+glosa_use: skip
+glosa_target: n/a — philosophy-of-mind domain paper, background grounding only
+notes: ''

@@ -1,0 +1,30 @@
+id: kc-ph-061
+kind: claim
+title: 'Information Inertia and Geometric Causality: A Structural Synthesis of Reality Beyond "It from Bit"'
+text: 'Self-published Zenodo preprint (single-author physics/information-theory program, 2025-11-30). Abstract
+  reports: Contemporary physics faces a profound ontological tension between the continuous spacetime of
+  General Relativity and the discrete quanta of quantum theory. Extending Wheeler’s “It from Bit” through
+  phenomenological structural realism, we propose that reality’s fundamental substrate is a single
+  informationfield governed by non-Markovian causal dynamics. We prove that any causal field propagating at
+  finite speed...'
+verbatim: Contemporary physics faces a profound ontological tension between the continuous spacetime of General
+  Relativity and the discrete quanta of quantum theory. Extending Wheeler’s “It from Bit” through
+  phenomenological structural realism, we propose that reality’s fundamental substrate is a single
+  informationfield governed by non-Markovian causal dynamics. We prove that any causal field propagating at
+  finite speed must possess information inertia (memory kernel). Elevating the Heaviside–Cattaneo formalism to
+  a fully relativistic level yields an ontology in which mass emerges as inertia of information flux, time as
+  irreversible entropic relaxation, and space as
+source:
+  doi: 10.5281/zenodo.17767416
+  title: 'Information Inertia and Geometric Causality: A Structural Synthesis of Reality Beyond "It from Bit"'
+  year: 2025
+fetched_from_url: 'https://zenodo.org/api/records/17767416'
+locator: Zenodo record abstract (desc field), via API, from registry/zenodo_all_records.json
+tier: Open
+base_relation: open
+base_justification: Domain physics content (a specific claim/derivation/observational note) not directly addressed by any base
+  card; carries no base-card contradiction but also no base endorsement — left open.
+glosa_use: skip
+glosa_target: n/a — domain physics claim outside glosa's method-layer scope
+notes: Part of the single-author 'ph' hub iterative physics-theory series (Zenodo id 17767416, 2025-11-30);
+  method-layer extraction only (self-publication + no-peer-review posture), not the physics content itself.

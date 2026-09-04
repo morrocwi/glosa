@@ -1,0 +1,27 @@
+id: kc-ai-024
+kind: claim
+title: Neurobiological mismatch between education design and adolescent reward system
+text: 'Conceptual K0 paper in the ''When AI Expands Human Potential'' series: argues educational systems that stay
+  theory-focused and fragmented, disconnected from the adolescent brain''s faster-maturing limbic-dopaminergic reward
+  system relative to the prefrontal self-control center, produce lost motivation and psychological instability;
+  proposes AI-mediated reflective dialogue and linguistic capital as a corrective mechanism.'
+verbatim: Research in developmental neuroscience indicates that during adolescence, the brain's reward system (limbic–dopaminergic
+  system) develops faster than the self-control center (prefrontal cortex), making young learners more responsive
+  to immediate rewards than to abstract thinking processes (Steinberg, 2010; Shulman et al., 2016). If educational
+  systems fail to align with this neurobiological balance, learners may lose motivation and psychological stability.
+source:
+  path: registry/zenodo_all_records.json
+  title: 'AI–Cognitive Interaction: Activating Youth Potential through Reflective Dialogue and Linguistic Capital'
+  year: 2026
+fetched_from_url: https://zenodo.org/api/records/22308448
+locator: record 22308448, metadata.description (Abstract)
+tier: Dr
+base_relation: open
+base_justification: Conceptual, K0, not peer reviewed, no priority claim per the record's own status line; borrows
+  external empirical citations (Steinberg 2010 etc.) it does not itself verify — sits at Open/Dr, not adopted as
+  a base-adjacent claim.
+glosa_use: skip
+glosa_target: n/a — domain (youth education) claim outside this task's epistemic-method extraction scope beyond
+  the K0 disclosure itself
+notes: Series member of hub DOI 10.5281/zenodo.22308201; first published on SSRN 2025-10-09, deposited to Zenodo
+  unchanged 2026-09-05.

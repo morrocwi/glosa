@@ -1,0 +1,35 @@
+id: kc-base-029
+kind: definition
+title: E00.1–E00.7 — the primordial root axioms
+text: 'The root axioms, in order: E00.1 primordial difference (∃a,b: a≠b, Ax); E00.2 distinguishability
+  needs a distinguisher (∃A: A discriminates E1≠E2, Ax→Th); E00.3 asymmetry (A→B ≠ B→A, Th, forced not
+  chosen); E00.4 temporal ordering (t(s):=min #steps(s0→s)∈ℕ — time is not a container, it is the ordering
+  of admissible transitions, Th); E00.5 persistence (τ_c>0, Ax); E00.6 discrete world before continuum
+  (t=nΔθ, n∈ℕ, Δθ>0; Δθ=0 is undefined — continuum is a controlled readout limit, Ax); E00.7 finite causal
+  propagation (v=√(D/τ_c)<∞, Ax/Th; L_R = retained graph/operator of admissible transport).'
+verbatim: "E00.1  P0: primordial difference\n       ∃ a,b : a ≠ b                                    \
+  \          [Ax]\n\nE00.2  distinguishability\n       ∃ A : A discriminates E₁ ≠ E₂                 \
+  \             [Ax→Th]\n\nE00.3  asymmetry\n       A → B  ≠  B → A                                  \
+  \          [Th]\n\nE00.4  temporal ordering\n       t(s) := min #steps(s₀ → s) ∈ ℕ                 \
+  \            [Th]\n       Time is not a container; it is the ordering of admissible transitions.\n\n\
+  E00.5  persistence / causal memory\n       τ_c > 0                                                 \
+  \   [Ax]\n       Something is retained between distinguishable events.\n\nE00.6  discrete world before\
+  \ continuum\n       t = nΔθ,   n ∈ ℕ,   Δθ > 0                                 [Ax]\n       Δθ = 0 ⇒\
+  \ undefined. Continuum is a controlled readout limit.\n\nE00.7  finite causal propagation on graph\n\
+  \       v = √(D/τ_c) < ∞                                           [Ax/Th]\n       L_R = retained graph/operator\
+  \ of admissible transport"
+source:
+  path: readout_genesis/READOUT_GENESIS_CORE.md
+  title: Genesis of the Universe, Step by Step — Genesis Step-by-Step v3.1
+  year: 2026
+fetched_from_url: ~/ANSE.ASIA/readout_genesis/READOUT_GENESIS_CORE.md
+locator: Part I §I.1, lines ~526-546
+tier: Ax
+base_relation: holds
+base_justification: This IS a base card from the lens root text; base cards are the ground the ledger
+  is judged against.
+glosa_use: adapt
+glosa_target: FOUNDATION §1.0 Pillars — ontology/epistemology/methodology
+notes: E00.4's 'time is not a container, it is the ordering of admissible transitions' and E00.6's discreteness-before-continuum
+  framing are the general-purpose readout-first moves worth citing even outside physics; the rest (τ_c,
+  causal graph) is domain-specific.

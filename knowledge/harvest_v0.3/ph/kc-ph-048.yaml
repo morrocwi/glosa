@@ -1,0 +1,31 @@
+id: kc-ph-048
+kind: claim
+title: 'A Robust 2π-nat Upper Bound for Localized Fermions: From Barut''s Lepton-Mass Prediction to Gravitational
+  Entropy Account'
+text: 'Self-published Zenodo preprint (single-author physics/information-theory program, 2025-11-17). Abstract
+  reports: General Relativity (GR) and Quantum Mechanics (QM) have long remained conceptually disjoint: one
+  geometric, one probabilistic. A minimal informational coherence condition emerges when two established
+  physical results are expressed in a shared accounting language. (1) The Bekenstein-type entropy bound
+  implies a minimum energy-per-nat cost on any bounded region, ε(R) = ℏc/(2πR). (2) A massive fermion...'
+verbatim: 'General Relativity (GR) and Quantum Mechanics (QM) have long remained conceptually disjoint: one geometric,
+  one probabilistic. A minimal informational coherence condition emerges when two established physical results
+  are expressed in a shared accounting language. (1) The Bekenstein-type entropy bound implies a minimum
+  energy-per-nat cost on any bounded region, ε(R) = ℏc/(2πR). (2) A massive fermion is operationally confined
+  to its reduced Compton radius, R = ℏ/(mc). Placing these side by side yields a species-independent identity:
+  every localized elementary fermion carries exactly 2π Nature (London) of information. This identity does
+  not'
+source:
+  doi: 10.5281/zenodo.17645741
+  title: 'A Robust 2π-nat Upper Bound for Localized Fermions: From Barut''s Lepton-Mass Prediction to Gravitational
+    Entropy Accounting'
+  year: 2025
+fetched_from_url: 'https://zenodo.org/api/records/17645741'
+locator: Zenodo record abstract (desc field), via API, from registry/zenodo_all_records.json
+tier: Open
+base_relation: open
+base_justification: Domain physics content (a specific claim/derivation/observational note) not directly addressed by any base
+  card; carries no base-card contradiction but also no base endorsement — left open.
+glosa_use: skip
+glosa_target: n/a — domain physics claim outside glosa's method-layer scope
+notes: Part of the single-author 'ph' hub iterative physics-theory series (Zenodo id 17645741, 2025-11-17);
+  method-layer extraction only (self-publication + no-peer-review posture), not the physics content itself.

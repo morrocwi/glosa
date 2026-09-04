@@ -1,0 +1,28 @@
+id: kc-ph-033
+kind: claim
+title: 'Long-Tail Energy Relaxation in an Old Polluted White Dwarf: A Theoretical Remark on LSPM J0207+3331'
+text: 'Self-published Zenodo preprint (single-author physics/information-theory program, 2025-11-05). Abstract
+  reports: This note accompanies our theoretical remark on the old, polluted white dwarf LSPM J0207+3331. The
+  core observational paradox is well-known: a cool white dwarf with a cooling age of $\approx 3$ Gyr continues
+  to exhibit significant heavy-element pollution (Fe, Si, Ca), orders of magnitude longer than standard
+  gravitational settling timescales ($10^6-10^7$ yr) would permit. The...'
+verbatim: 'This note accompanies our theoretical remark on the old, polluted white dwarf LSPM J0207+3331. The core
+  observational paradox is well-known: a cool white dwarf with a cooling age of $\approx 3$ Gyr continues to
+  exhibit significant heavy-element pollution (Fe, Si, Ca), orders of magnitude longer than standard
+  gravitational settling timescales ($10^6-10^7$ yr) would permit. The standard conclusion is that the star
+  must be undergoing continuous, long-lived accretion from a circumstellar debris disk. Our remark accepts
+  this premise but focuses on the physical interpretation of its timescale . We propose that'
+source:
+  doi: 10.5281/zenodo.17535103
+  title: 'Long-Tail Energy Relaxation in an Old Polluted White Dwarf: A Theoretical Remark on LSPM J0207+3331'
+  year: 2025
+fetched_from_url: 'https://zenodo.org/api/records/17535103'
+locator: Zenodo record abstract (desc field), via API, from registry/zenodo_all_records.json
+tier: Open
+base_relation: open
+base_justification: Domain physics content (a specific claim/derivation/observational note) not directly addressed by any base
+  card; carries no base-card contradiction but also no base endorsement — left open.
+glosa_use: skip
+glosa_target: n/a — domain physics claim outside glosa's method-layer scope
+notes: Part of the single-author 'ph' hub iterative physics-theory series (Zenodo id 17535103, 2025-11-05);
+  method-layer extraction only (self-publication + no-peer-review posture), not the physics content itself.

@@ -1,0 +1,29 @@
+id: kc-ph-082
+kind: claim
+title: 'The Causal Accessibility Horizon: A Structural Limit on Finite-Time Reachability'
+text: 'Self-published Zenodo preprint (single-author physics/information-theory program, 2025-12-25). Abstract
+  reports: Across physics, chemistry, biology, and engineered systems, the operationally significant question
+  is often not whether a system will eventually reach a particular state, but whether it can be brought there
+  within the time available. This paper establishes a single structural necessity: when causal response
+  propagates at finite speed, there exist states that are theoretically admissible...'
+verbatim: 'Across physics, chemistry, biology, and engineered systems, the operationally significant question is often
+  not whether a system will eventually reach a particular state, but whether it can be brought there within
+  the time available. This paper establishes a single structural necessity: when causal response propagates at
+  finite speed, there exist states that are theoretically admissible but practically unreachable within any
+  finite time horizon. We formalize this as the causal accessibility horizon—a geometric boundary determined
+  solely by propagation speed and actuation geometry, beyond which no control action can have effect by'
+source:
+  doi: 10.5281/zenodo.18053352
+  title: 'The Causal Accessibility Horizon: A Structural Limit on Finite-Time Reachability'
+  year: 2025
+fetched_from_url: 'https://zenodo.org/api/records/18053352'
+locator: Zenodo record abstract (desc field), via API, from registry/zenodo_all_records.json
+tier: Open
+base_relation: refined_by_later_work
+base_justification: Precursor step in the same program's iterative build-up toward what the base corpus fixes as the τ_c>0
+  persistence axiom / mass-as-readout-of-τ_c (kc-base-028); vocabulary and claims here are provisional working
+  drafts later folded into and re-derived under that axiom.
+glosa_use: skip
+glosa_target: n/a — superseded within its own program before reaching base corpus
+notes: Part of the single-author 'ph' hub iterative physics-theory series (Zenodo id 18053352, 2025-12-25);
+  method-layer extraction only (self-publication + no-peer-review posture), not the physics content itself.

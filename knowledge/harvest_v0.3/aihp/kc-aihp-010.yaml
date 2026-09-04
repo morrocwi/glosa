@@ -1,0 +1,27 @@
+id: kc-aihp-010
+kind: method
+title: 'Imagination as bounded dynamic semantic mobility: a readout-native architecture for hypothesis
+  generation'
+text: 'Paper I of the Bounded Knower sequence proposes that hypothesis-generating imagination is not an
+  infinite faculty nor a static set of reachable ideas, but a time-indexed process over semantic readouts
+  whose transitions are provenance-audited, dynamically weighted, and history-sensitive. Claim tiers are
+  explicit: [definition], [Dr], [Open], [finite_diagnostic].'
+verbatim: 'Its central thesis is that imagination can be modeled as bounded dynamic semantic mobility:
+  not an infinite faculty and not a static set of reachable ideas, but a time-indexed process over semantic
+  readouts whose transitions are provenance-audited, dynamically weighted, history-sens'
+source:
+  doi: 10.5281/zenodo.22307148
+  title: 'From Problem to Hypothesis: Dynamic Semantic Mobility, Bounded Knowers, and the Readout-Discriminable
+    Hypothesis Space'
+  year: 2026
+fetched_from_url: https://zenodo.org/api/records/22307148
+locator: Abstract
+tier: Dr
+base_relation: holds
+base_justification: Uses the base's own explicit tier vocabulary ([definition]/[Dr]/[Open]/[finite_diagnostic])
+  matching kc-base-007 six-tier discipline, and frames 'imagination' as a readout process rather than
+  an unbounded faculty, consistent with kc-base-001 Readout-not-truth (no continuum/infinite faculty smuggled
+  in).
+glosa_use: adapt
+glosa_target: FOUNDATION §6 discovery extension
+notes: ''

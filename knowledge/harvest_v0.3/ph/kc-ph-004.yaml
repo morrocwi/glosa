@@ -1,0 +1,29 @@
+id: kc-ph-004
+kind: claim
+title: Empirical Calibration and Validation of the Epistemic Coherence Equation
+text: 'Self-published Zenodo preprint (single-author physics/information-theory program, 2025-10-13). Abstract
+  reports: This study offers an exploratory evaluation of the Epistemic Coherence Equation (ECE) , a
+  theoretical framework integrating informational coherence with astrophysical modeling. By using direct
+  H-alpha flux measurements and accounting for temporal variability, we present a refined approach for
+  assessing the ECE’s empirical consistency. While the model demonstrates 7–25× comparative improvement over
+  classical accretion formulations...'
+verbatim: This study offers an exploratory evaluation of the Epistemic Coherence Equation (ECE) , a theoretical
+  framework integrating informational coherence with astrophysical modeling. By using direct H-alpha flux
+  measurements and accounting for temporal variability, we present a refined approach for assessing the ECE’s
+  empirical consistency. While the model demonstrates 7–25× comparative improvement over classical accretion
+  formulations under uncertainty propagation, these results represent a demonstration of potential rather than
+  definitive validation. The ECE remains a theoretical hypothesis requiring further peer verification.
+source:
+  doi: 10.5281/zenodo.17335909
+  title: Empirical Calibration and Validation of the Epistemic Coherence Equation
+  year: 2025
+fetched_from_url: 'https://zenodo.org/api/records/17335909'
+locator: Zenodo record abstract (desc field), via API, from registry/zenodo_all_records.json
+tier: Open
+base_relation: open
+base_justification: Domain physics content (a specific claim/derivation/observational note) not directly addressed by any base
+  card; carries no base-card contradiction but also no base endorsement — left open.
+glosa_use: skip
+glosa_target: n/a — domain physics claim outside glosa's method-layer scope
+notes: Part of the single-author 'ph' hub iterative physics-theory series (Zenodo id 17335909, 2025-10-13);
+  method-layer extraction only (self-publication + no-peer-review posture), not the physics content itself.

@@ -1,0 +1,29 @@
+id: kc-ai-006
+kind: claim
+title: Claim card as substitute for institutional certification (three propositions)
+text: States as three falsifiable propositions (not demonstrated results) that a claim card recording what was observed
+  / what data separates / what AI supplied / what is assumed / what independent check it survived, bound to the
+  Existence-Attribution-Disclosure norm and passed through a named independence ladder (I0 self-check through I5
+  outside human review), could carry a checkable-rigour property historically requiring a university, lab, or research
+  team.
+verbatim: 'This paper states, as three falsifiable propositions and not as demonstrated results, a candidate answer:
+  a claim card that separately records what was seen, what the data separates, what AI filled in, what is assumed,
+  and what independent check (if any) the claim has survived — bound to a formal Existence–Attribution–Disclosure
+  norm and passed through a named independence ladder (I0 self-check through I5 outside human review) before public
+  release — could carry the checkable property'
+source:
+  path: registry/zenodo_all_records.json
+  title: 'Rigour Without Infrastructure: Three Propositions on Claim-Card Discipline as a Substitute for Institutional
+    Certification (glosa concept paper, v0.2.0)'
+  year: 2026
+fetched_from_url: https://zenodo.org/api/records/22307841
+locator: record 22307841, metadata.description (Abstract)
+tier: Open
+base_relation: open
+base_justification: Direct methodological extension of kc-base-001/007 (readout-not-truth, six-tier discipline)
+  into an institution-substitute claim; framed openly as falsifiable propositions, matching kc-base-008's Fail-Able
+  Gate Law requirement of paired stance+falsifier for Open claims.
+glosa_use: already_in_glosa
+glosa_target: kernel rule 17 (claim-card discipline) / independence ladder I0-I5
+notes: 48 citation cards VERIFIED under this paper's own rule 17; independent_check still PENDING per the record's
+  own status line.

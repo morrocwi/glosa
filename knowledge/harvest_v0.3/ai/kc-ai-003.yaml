@@ -1,0 +1,29 @@
+id: kc-ai-003
+kind: definition
+title: Possession–Constitution Collapse and knower fetishism
+text: Names a slide from a claim about knowledge-possession (knowing is a state of a subject) to an undefended claim
+  about the constitution of epistemic value (content/process/record only counts through a human-like knower). The
+  social form of that slide is 'knower fetishism' — an earned relation among evidence, reliability, accountability,
+  and inquiry misread as an intrinsic property of the recognized knower.
+verbatim: 'I argue that modern epistemology often slides from a plausible claim about the possession of knowledge
+  — that knowing is a state or standing of a subject — to a much stronger and usually undefended claim about the
+  constitution of epistemic value — that epistemically significant content, processes, records, or sources acquire
+  standing only through a human or human-like knower. I call this the Possession–Constitution Collapse. Its social
+  form is knower fetishism: the conversion of an earned relation among evidence, reliability, accountability, and
+  inquiry into an apparently intrinsic property of the recognized knower.'
+source:
+  path: sources/WRITTEN_BY_AI_STILL_TRUE_v6.txt
+  title: Written by AI. Still True. Knower Fetishism, Epistemic Pedigree, and the Human Face as a Bad Theory of
+    Truth
+  year: 2026
+fetched_from_url: /home/yaoharee-lt/ANSE.ASIA/glosa/sources/WRITTEN_BY_AI_STILL_TRUE_v6.txt
+locator: lines 21-27 (Abstract)
+tier: definition
+base_relation: holds
+base_justification: 'Direct social/psychological corollary of kc-base-001 (readout-not-truth): if truth-tracking
+  (kc-base-005) does not require a human-like knower, then reserving epistemic standing for one is the fetish this
+  paper names.'
+glosa_use: adopt
+glosa_target: FOUNDATION §2 (epistemic subject / bounded knower framing) — names the failure mode of over-crediting
+  the knower
+notes: Zenodo record 10.5281/zenodo.22301202; concept DOI 10.5281/zenodo.22301201.

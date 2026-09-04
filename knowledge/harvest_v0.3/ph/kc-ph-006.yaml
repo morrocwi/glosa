@@ -1,0 +1,30 @@
+id: kc-ph-006
+kind: method
+title: MUS/Epistemic (MU) v1.5 — Technical Whitepaper
+text: 'Self-published Zenodo preprint (single-author physics/information-theory program, 2025-10-13). Abstract
+  reports: This whitepaper upgrades the MUS/Epistemic framework to MU v1.5 , transforming a conceptual
+  proposal into a quantitatively testable effective theory . We introduce a minimally coupled C‑field with a
+  stabilizing potential, a piecewise activation law that is linear at tiny and saturating at large , and
+  domain‑specific source terms that coherently tie nuclear, quantum, astrophysical,...'
+verbatim: This whitepaper upgrades the MUS/Epistemic framework to MU v1.5 , transforming a conceptual proposal into a
+  quantitatively testable effective theory . We introduce a minimally coupled C‑field with a stabilizing
+  potential, a piecewise activation law that is linear at tiny and saturating at large , and domain‑specific
+  source terms that coherently tie nuclear, quantum, astrophysical, and cosmological regimes. A single
+  parameter set —calibrated by five independent problems (Hubble tension, muon , JWST early galaxies, BBN/Li/,
+  and the pair‑instability threshold)—yields cross‑scale consistency and near‑term falsifiable predictions
+  (5–10 years) across laboratory, astrophysical,
+source:
+  doi: 10.5281/zenodo.17344093
+  title: MUS/Epistemic (MU) v1.5 — Technical Whitepaper
+  year: 2025
+fetched_from_url: 'https://zenodo.org/api/records/17344093'
+locator: Zenodo record abstract (desc field), via API, from registry/zenodo_all_records.json
+tier: Open
+base_relation: superseded
+base_justification: Uses an earlier, since-abandoned working name/formalism (this program cycled through several framework names
+  before settling on retained-information/δ_R vocabulary); the base corpus's mother equation (kc-base-020) and
+  trunk equation (kc-base-022) replace this formulation.
+glosa_use: skip
+glosa_target: n/a — abandoned vocabulary, replaced by base mother/trunk equation
+notes: Part of the single-author 'ph' hub iterative physics-theory series (Zenodo id 17344093, 2025-10-13);
+  method-layer extraction only (self-publication + no-peer-review posture), not the physics content itself.

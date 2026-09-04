@@ -1,0 +1,27 @@
+id: kc-aihp-014
+kind: rule
+title: 'Two constraints replacing knower-fetishism: provenance-only channel, and metadata must not be
+  identified with the role it proxies'
+text: 'The paper''s positive proposal: (1) provenance matters only through an identifiable epistemic channel;
+  (2) source metadata must never be identified with the epistemic role for which it is merely a proxy.
+  AI is philosophically useful because it removes the human face from a claim and reveals how much epistemic
+  credit was quietly attached to the face.'
+verbatim: 'and proposes two constraints: provenance matters only through an identifiable epistemic channel,
+  and source metadata must never be identified with the epistemic role for which it is merely a proxy.
+  The thesis is not that machines know. It is that before anyone knew a fact there was already something
+  to get right or wrong about it'
+source:
+  doi: 10.5281/zenodo.22301202
+  title: Written by AI. Still True. Knower Fetishism, Epistemic Pedigree, and the Human Face as a Bad
+    Theory of Truth
+  year: 2026
+fetched_from_url: local:sources/WRITTEN_BY_AI_STILL_TRUE_v6.txt
+locator: lines 29-33
+tier: Dr
+base_relation: holds
+base_justification: '''Source metadata must never be identified with the epistemic role it proxies'' restates
+  kc-base-004''s identity-by-role principle in the specific vocabulary of citation/authorship metadata,
+  a compatible domain extension, not a contradiction.'
+glosa_use: adopt
+glosa_target: FOUNDATION §2 AI-disclosure norm
+notes: ''

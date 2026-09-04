@@ -1,0 +1,44 @@
+id: kc-base-015
+kind: definition
+title: Discrete number ladder δ_R → D → ℤ → ℚ → ℝ
+text: 'The move is a ladder, not a given: each rung defined from the one before, Th_coqc (machine-checked,
+  axiom-free) at every step through ℚ. Density (a third number always between two others) is provably
+  absent at the root — it can only ever be a later readout, never a primitive fact. ℝ is defined as Bishop
+  regular Cauchy sequences of ℚ, with Cauchy-completeness proved by an explicit constructed limit — the
+  continuum point read off its discrete rational approximants, mechanically, digit by digit. Full trichotomy,
+  a total ≤, and the classical least-upper-bound property are NOT constructively valid on this ℝ.'
+verbatim: 'The move is a **ladder, not a given**: `δ_R → D → ℤ → ℚ → ℝ`, each rung
+
+  *defined from* the one before, `Th_coqc` (machine-checked, axiom-free) at
+
+  every step through `ℚ`. ... Density — the intuition that between any two numbers
+
+  there is a third — is *provably absent* at the root; it can only ever be a
+
+  later readout, never a primitive fact about number. ... And
+
+  `ℝ` — the rung this book''s whole "readout,
+
+  not substrate" stance stakes everything on — is defined as **Bishop regular
+
+  Cauchy sequences of `ℚ`**, with Cauchy-completeness proved by an *explicit
+
+  constructed limit*, not an appeal to a completed totality: the continuum
+
+  point is read off its discrete rational approximants, mechanically, digit
+
+  by digit.'
+source:
+  path: readout_universe/philosophy.md
+  title: Philosophy — Readout Universe
+  year: 2026
+fetched_from_url: ~/ANSE.ASIA/readout_universe/philosophy.md
+locator: §5.2a, lines ~789-820
+tier: Th_coqc
+base_relation: holds
+base_justification: This IS a base card from the lens root text; base cards are the ground the ledger
+  is judged against.
+glosa_use: adapt
+glosa_target: FOUNDATION §12 Honest edges — what is still Dr/untested, and what was NOT read
+notes: Directly relevant floor for any glosa card that writes +, -, x, /, derivative, limit, or a continuum
+  symbol — should govern how glosa's own kernel gate rules phrase numeric claims.

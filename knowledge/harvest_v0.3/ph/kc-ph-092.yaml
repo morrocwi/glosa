@@ -1,0 +1,31 @@
+id: kc-ph-092
+kind: method
+title: 'Note: Causal State History as a Structural Constraint (Discussion Route)'
+text: 'Self-published Zenodo preprint (single-author physics/information-theory program, 2025-12-31). Abstract
+  reports: The three problems share a common structural vulnerability: standard formulations do not enforce
+  temporal causality as a binding constraint. By treating an instantaneous state as sufficient for future
+  evolution, they allow history-free, arbitrarily fast reconfigurations that real processes cannot realize.
+  This idealization makes the dynamics effectively Markovian even where no physical mechanism supports it.
+  That...'
+verbatim: 'The three problems share a common structural vulnerability: standard formulations do not enforce temporal
+  causality as a binding constraint. By treating an instantaneous state as sufficient for future evolution,
+  they allow history-free, arbitrarily fast reconfigurations that real processes cannot realize. This
+  idealization makes the dynamics effectively Markovian even where no physical mechanism supports it. That
+  latitude fuels familiar tensions. In Yang–Mills theory, a mass gap looks mysterious if low-energy
+  configurations are deemed reachable without cumulative cost. In three-dimensional Navier–Stokes, extreme
+  concentration is not ruled out when cross-scale transfer is left'
+source:
+  doi: 10.5281/zenodo.18105213
+  title: 'Note: Causal State History as a Structural Constraint (Discussion Route)'
+  year: 2025
+fetched_from_url: 'https://zenodo.org/api/records/18105213'
+locator: Zenodo record abstract (desc field), via API, from registry/zenodo_all_records.json
+tier: Open
+base_relation: refined_by_later_work
+base_justification: Precursor step in the same program's iterative build-up toward what the base corpus fixes as the τ_c>0
+  persistence axiom / mass-as-readout-of-τ_c (kc-base-028); vocabulary and claims here are provisional working
+  drafts later folded into and re-derived under that axiom.
+glosa_use: skip
+glosa_target: n/a — superseded within its own program before reaching base corpus
+notes: Part of the single-author 'ph' hub iterative physics-theory series (Zenodo id 18105213, 2025-12-31);
+  method-layer extraction only (self-publication + no-peer-review posture), not the physics content itself.

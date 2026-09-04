@@ -1,0 +1,30 @@
+id: kc-ph-086
+kind: claim
+title: 'A Soft–Gated (Multiplier–Enforced) Energy–Flux Root Lagrangian: Variational Consistency, Universal
+  Projection (Local), U'
+text: 'Self-published Zenodo preprint (single-author physics/information-theory program, 2025-12-28). Abstract
+  reports: For researchers working in cosmology and dark energy, this work introduces a Minimal Variational
+  Layer designed to isolate the least structure required for consistent energy dynamics. The guiding question
+  is deliberately fundamental: if all model-specific assumptions about dark matter, dark energy, or modified
+  gravity are stripped away, what is the minimal variational structure that still...'
+verbatim: 'For researchers working in cosmology and dark energy, this work introduces a Minimal Variational Layer
+  designed to isolate the least structure required for consistent energy dynamics. The guiding question is
+  deliberately fundamental: if all model-specific assumptions about dark matter, dark energy, or modified
+  gravity are stripped away, what is the minimal variational structure that still guarantees energetic
+  consistency on a Lorentzian spacetime? To address this question, we construct a Root Lagrangian formulated
+  solely in terms of two primitive variables: a local energy density ee e and an associated energy flux'
+source:
+  doi: 10.5281/zenodo.18073917
+  title: 'A Soft–Gated (Multiplier–Enforced) Energy–Flux Root Lagrangian: Variational Consistency, Universal
+    Projection (Local), Usage Conditions, Limits, and Correspondence with Standard Hydrodynamic Actions'
+  year: 2025
+fetched_from_url: 'https://zenodo.org/api/records/18073917'
+locator: Zenodo record abstract (desc field), via API, from registry/zenodo_all_records.json
+tier: Open
+base_relation: open
+base_justification: Domain physics content (a specific claim/derivation/observational note) not directly addressed by any base
+  card; carries no base-card contradiction but also no base endorsement — left open.
+glosa_use: skip
+glosa_target: n/a — domain physics claim outside glosa's method-layer scope
+notes: Part of the single-author 'ph' hub iterative physics-theory series (Zenodo id 18073917, 2025-12-28);
+  method-layer extraction only (self-publication + no-peer-review posture), not the physics content itself.

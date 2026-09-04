@@ -1,0 +1,41 @@
+id: kc-base-026
+kind: definition
+title: RAR A1–A8 — logic of retention
+text: 'A second formal stratum on top of the arithmetic genome: A1 distinguishability (a question is a
+  set of candidate distinctions), A2 transport (no inference without an admissible grammar), A3 retention
+  (only distinctions kept above a threshold count as structure), A4 accessibility (derivability ≠ existence),
+  A5 admissibility (the comparison metric is positive), A6 identity-locking (the same entity tracked through
+  every inference), A7 obstruction (target of inference is consistency O=0, not annihilation — contradiction
+  registers as O>0, evidence to revise, never license for ex-falso explosion), A8 lens (validate through
+  a lens that does not distort). Declared a Dr-tier correspondence to the book''s own logic, not yet a
+  proven formal unification.'
+verbatim: '| A1 | distinguishability | a question is a set of candidate distinctions |
+
+  | A2 | transport | no inference without an admissible grammar (units/types match) |
+
+  | A3 | retention | only distinctions kept above a threshold count as structure |
+
+  | A4 | accessibility | derivability ≠ existence (direct/composite/inaccessible) |
+
+  | A5 | admissibility | the comparison metric is positive... |
+
+  | A6 | identity-locking | the same entity tracked through every inference |
+
+  | A7 | obstruction | target of inference is consistency O=0, not annihilation — O(Γ,φ) is a measured
+  residual, not a truth value... |
+
+  | A8 | lens | validate through a lens that does not distort |'
+source:
+  path: readout_universe/logic.md
+  title: Logic — Equation & Operator Ledger
+  year: 2026
+fetched_from_url: ~/ANSE.ASIA/readout_universe/logic.md
+locator: §0 'RAR A1–A8', lines ~154-173
+tier: Dr
+base_relation: holds
+base_justification: This IS a base card from the lens root text; base cards are the ground the ledger
+  is judged against.
+glosa_use: adapt
+glosa_target: FOUNDATION §3.3 Kernel gate rules (specified, Dr, untested)
+notes: A7 (obstruction, not explosion — contradiction is evidence to revise, never license to derive anything)
+  is a directly reusable principle for how glosa's own gates should treat a failed/contested claim card.

@@ -1,0 +1,28 @@
+id: kc-ai-010
+kind: method
+title: MOCA — Readout Condition applied to mission-attributable sacrifice
+text: 'Specifies a calculation architecture answering, for a social enterprise: given declared mission, state, feasible
+  actions, evidence base and horizon, which choices/sacrifices/allocations are mission-attributable, what binding
+  mechanisms hold the mission, and which conclusions are actually identified by the available readouts (as opposed
+  to merely asserted). Explicitly anchored in the Readout Condition''s provenance/attribution norm.'
+verbatim: 'It specifies a calculation architecture for a narrower operational question: given a declared mission,
+  organizational state, feasible actions, evidence base, and time horizon, what choices are admissible, what private
+  economic opportunities and sacrifices are mission-attributable, what binding mechanisms hold the mission, whether
+  the enterprise remains viable, and which of those conclusions are actually identified by the available readouts?'
+source:
+  path: registry/zenodo_all_records.json
+  title: 'Mission Opportunity–Constraint Architecture (MOCA): An AI-Executable Technical Management Framework for
+    Social Enterprises'
+  year: 2026
+fetched_from_url: https://zenodo.org/api/records/22301882
+locator: record 22301882, metadata.description
+tier: Dr
+base_relation: refined_by_later_work
+base_justification: Directly imports kc-ai-001/002's Readout Condition (identification/attribution) as the epistemic
+  gate on mission-attribution claims; a domain (social-enterprise) application, not a revision, of the base readout
+  lens.
+glosa_use: adapt
+glosa_target: SETH/MOCA integration note — the Readout Condition is the AI calculation contract MOCA claims should
+  follow
+notes: Cross-references the SETH skill's own MOCA framework; useful as the AI-executable technical companion to
+  that skill.

@@ -1,0 +1,25 @@
+id: kc-ep-003
+kind: method
+title: 'Operational Linguistic Wisdom: three-stage activation mechanism'
+text: Proposes a three-stage mechanism (Elective Connectivity, Capability Activation, Reflexive Reconfiguration)
+  for ethically activating organizational linguistic capital via LLMs; explicitly conceptual-reflective
+  synthesis with construct clarity, propositions and boundary conditions, no empirical claims made.
+verbatim: Series. Member of the Zenodo library When AI Expands Human Potential (hub DOI 10.5281/zenodo.22308201).
+  First published on SSRN (2025-10-08) as abstract id 5579291; deposited on Zenodo 2026-09-05 unchanged
+  for the series record. Conceptual paper; K0 — not peer reviewed; no priority claim. Abstract. Prior
+  scholarship largely treats language as a communication channel. In LLM-enabled contexts, language can
+  be designed as cognitive infrastructure that activates organizational linguistic capital.
+source:
+  doi: 10.5281/zenodo.22308446
+  title: 'Operational Linguistic Wisdom: Elective Connectivity and Linguistic Capital Activation in the
+    Age of LLMs'
+  year: 2025
+fetched_from_url: https://zenodo.org/api/records/22308446
+locator: Zenodo record abstract (desc field), via API
+tier: Open
+base_relation: holds
+base_justification: Consistent with base's tiering discipline in spirit (explicitly labels itself conceptual,
+  no empirical claim) though not itself part of the readout formalism.
+glosa_use: skip
+glosa_target: (background theory)
+notes: K0 series record; explicitly disclaims empirical claims.

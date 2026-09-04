@@ -1,0 +1,34 @@
+id: kc-ph-108
+kind: claim
+title: 'Causal Memory Admissibility (CMAP): A Structural Necessity Classication Discrete-First,
+  Primitives-Grounded, Domain-Inde'
+text: 'Self-published Zenodo preprint (single-author physics/information-theory program, 2026-02-24). Abstract
+  reports: What constitutive memory structures are compatible with causality and passivity under finite
+  resources? Starting from two pre-theoretic primitives -- retardation (causal order prior to geometry) and
+  finite-resource admissibility -- we prove the Causal Memory Admissibility Theorem (CMAP): a bidirectional
+  necessity-and-uniqueness classification of retarded constitutive memory operators on finite records. Under a
+  finite-resource admissible class (H1-H4)...'
+verbatim: 'What constitutive memory structures are compatible with causality and passivity under finite resources?
+  Starting from two pre-theoretic primitives -- retardation (causal order prior to geometry) and
+  finite-resource admissibility -- we prove the Causal Memory Admissibility Theorem (CMAP): a bidirectional
+  necessity-and-uniqueness classification of retarded constitutive memory operators on finite records. Under a
+  finite-resource admissible class (H1-H4) and five structural gates (P1) retardation, (P2) operator
+  passivity, (F1+F2) genuine fading, (N) non-negativity, and (A) diffusive admissibility, admissible memory is
+  uniquely constrained to be Completely Monotone Finite-resource (CMF): a non-negative-weight superposition of
+  geometric-decay channels,'
+source:
+  doi: 10.5281/zenodo.18757034
+  title: 'Causal Memory Admissibility (CMAP): A Structural Necessity Classication Discrete-First,
+    Primitives-Grounded, Domain-Independent'
+  year: 2026
+fetched_from_url: 'https://zenodo.org/api/records/18757034'
+locator: Zenodo record abstract (desc field), via API, from registry/zenodo_all_records.json
+tier: Open
+base_relation: refined_by_later_work
+base_justification: Precursor step in the same program's iterative build-up toward what the base corpus fixes as the τ_c>0
+  persistence axiom / mass-as-readout-of-τ_c (kc-base-028); vocabulary and claims here are provisional working
+  drafts later folded into and re-derived under that axiom.
+glosa_use: skip
+glosa_target: n/a — superseded within its own program before reaching base corpus
+notes: Part of the single-author 'ph' hub iterative physics-theory series (Zenodo id 18757034, 2026-02-24);
+  method-layer extraction only (self-publication + no-peer-review posture), not the physics content itself.

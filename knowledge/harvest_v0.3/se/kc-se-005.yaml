@@ -1,0 +1,33 @@
+id: kc-se-005
+kind: definition
+title: Readout non-equivalence in an enterprise's own data model — a channel-specific lossy map, not the state
+text: MOCA's core data model opens by naming the latent enterprise state relevant to a question, then
+  defines any source or institutional channel's report of it as a readout produced through a channel-specific
+  gain applied to a truncation of the state plus several named error terms — never the state itself. The
+  mission-binding vector that follows is explicitly framed as an audit coordinate, not a claim that
+  reality itself decomposes into exactly those dimensions.
+verbatim: "Let Et denote the latent enterprise state relevant to question Q. A source or institutional
+  channel a provides a readout map Ra,t = Ka θ(Et ) + ηa,tsel + ηa,tself . ... This vector is an audit
+  coordinate, not a claim that nature contains exactly these dimensions."
+source:
+  doi: 10.5281/zenodo.22301882
+  title: "Mission Opportunity–Constraint Architecture (MOCA): An AI-Executable Technical Management
+    Framework for Social Enterprises — Equations, Dynamic Policy Paths, Binding, Readout Audit,
+    Pseudocode, and DAG/Knowledge-Graph Specification"
+  year: 2026
+fetched_from_url: local (~/Downloads/MOCA_AI_Executable_Technical_Paper_v0.2.pdf)
+locator: p.2, §2.1 "Reality, readout, and non-equivalence" and §3.1 "Mission-binding vector"
+  (pdftotext -l 6, near end of body text)
+tier: definition
+base_relation: refined_by_later_work
+base_justification: Structurally the same shape as the base's mother equation M_A[n]=K_A·θ(E[n])+η
+  (kc-base-020) — same K·θ(E)+η form, ported into a social-enterprise readout channel. Marked
+  refined_by_later_work (not plain "holds") because MOCA adds a channel-specific gain K_a and two named
+  error terms the base's single-instance formula does not carry, so it is a domain-specific elaboration
+  of the same base template rather than a bare restatement.
+glosa_use: adapt
+glosa_target: "FOUNDATION §2 spine — worked cross-domain instance of the mother equation for the
+  social-enterprise domain leaf"
+notes: Same author, same K·θ(E)+η lineage as kc-base-020/kc-base-021 (mother equation, three tiers
+  unreconciled) — a candidate second worked instance alongside whatever domain leaves FOUNDATION already
+  cites, useful for showing the formula is reused, not re-derived, across domains.

@@ -1,0 +1,27 @@
+id: kc-tourism-007
+kind: rule
+title: Contribution explicitly typed as theoretical/analytical, empirical findings explicitly disclaimed
+text: The conceptual framework paper states its own contribution type directly in the abstract — theoretical
+  and analytical, aiming to clarify conditions of possibility — and explicitly disclaims that it is reporting
+  empirical findings, rather than leaving the reader to infer the claim's evidentiary weight from framing alone.
+verbatim: "The contribution is theoretical and analytical in nature, aiming to clarify conditions of
+  possibility for cross-cultural tourism rather than to report empirical findings."
+source:
+  doi: 10.5281/zenodo.18258377
+  title: 'From Ritual Compliance to Predictable Cultural Experience: A Conceptual Framework for Cross-Cultural
+    Tourism Linking Muslim Travelers and Thai Cultural Contexts'
+  year: 2025
+fetched_from_url: https://zenodo.org/api/records/18258377
+locator: abstract (metadata.description field), via Zenodo API
+tier: Open
+base_relation: holds
+base_justification: A self-declared claim-type disclosure (theoretical/analytical, explicitly not empirical)
+  is the same discipline the base applies to its own verdict classes (kc-base-038 DERIVED/FORCED/
+  DEFINITIONAL-RELABEL/POSITED/BORROWED-SCALE/OPEN) — naming the kind of claim being made rather than letting
+  register alone imply an evidentiary tier.
+glosa_use: already_in_glosa
+glosa_target: "FOUNDATION §3.2b 'formal_applicability — plain-language definitions' and §4.1 Tier ladder —
+  concrete instance of an author self-disclosing claim-type (theoretical vs empirical) in the abstract itself,
+  matching the field glosa already requires per claim card"
+notes: No local full text found; dated 2025-01-15; the SalamXP framework named in this abstract is the
+  conceptual precursor referenced by the salamxp_agent internal skill (unrelated to this harvest task).

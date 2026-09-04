@@ -1,0 +1,30 @@
+id: kc-ph-065
+kind: claim
+title: Causal Regularization of Newtonian Gravity via Maxwell–Cattaneo Transport
+text: 'Self-published Zenodo preprint (single-author physics/information-theory program, 2025-12-07). Abstract
+  reports: This paper offers a new picture of Newtonian gravity: it emerges from three tangible, minimal
+  ingredients— (1) a conserved, transportable physical “information” content; (2) a transport law with a
+  finite response speed (no instantaneous spreading); and (3) a Poisson-type link that ties the “intensity of
+  information” to a dimensionless potential. Assembled systematically, these yield the...'
+verbatim: 'This paper offers a new picture of Newtonian gravity: it emerges from three tangible, minimal ingredients—
+  (1) a conserved, transportable physical “information” content; (2) a transport law with a finite response
+  speed (no instantaneous spreading); and (3) a Poisson-type link that ties the “intensity of information” to
+  a dimensionless potential. Assembled systematically, these yield the familiar Newtonian potential in the
+  weak-field, quasi-static regime—without touching or modifying general relativity. The contribution is not
+  just a concept but a method. A finite relaxation time in the transport dynamics produces wavefronts that
+  move'
+source:
+  doi: 10.5281/zenodo.17846399
+  title: Causal Regularization of Newtonian Gravity via Maxwell–Cattaneo Transport
+  year: 2025
+fetched_from_url: 'https://zenodo.org/api/records/17846399'
+locator: Zenodo record abstract (desc field), via API, from registry/zenodo_all_records.json
+tier: Open
+base_relation: refined_by_later_work
+base_justification: Precursor step in the same program's iterative build-up toward what the base corpus fixes as the τ_c>0
+  persistence axiom / mass-as-readout-of-τ_c (kc-base-028); vocabulary and claims here are provisional working
+  drafts later folded into and re-derived under that axiom.
+glosa_use: skip
+glosa_target: n/a — superseded within its own program before reaching base corpus
+notes: Part of the single-author 'ph' hub iterative physics-theory series (Zenodo id 17846399, 2025-12-07);
+  method-layer extraction only (self-publication + no-peer-review posture), not the physics content itself.

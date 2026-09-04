@@ -1,0 +1,26 @@
+id: kc-ep-010
+kind: claim
+title: 'Learning under generative abundance: a structural regime shift'
+text: Argues AI-driven near-zero-cost coherent-expression production degrades inferential signals and
+  escalates conceptual volatility until a critical threshold triggers a regime shift from accumulation
+  to discrimination; redefines learning as preserving structural stability when expressive output no longer
+  uniquely indicates internal organization.
+verbatim: 'Artificial intelligence creates an epistemic environment in which coherent expressions can
+  be produced externally at near-zero marginal cost. This paper argues that the consequences for education
+  stem not primarily from pedagogical choice, but from a structural law governing inference under conditions
+  of generative abundance. A single underlying dynamic gives rise to three observable effects: degradation
+  of inferential signals, escalation of conceptual volatility, and the emergence of selective stabilization.'
+source:
+  doi: 10.5281/zenodo.18711408
+  title: 'Learning Under Generative Abundance: A Structural Law of Epistemic Stabilization'
+  year: 2026
+fetched_from_url: https://zenodo.org/api/records/18711408
+locator: Zenodo record abstract (desc field), via API
+tier: Open
+base_relation: holds
+base_justification: 'Compatible with base''s non-injective-readout theorem (kc-base-006): abundant AI
+  output is a many-to-one readout that a learner must discriminate through, echoing the same non-injectivity
+  concern in an education setting.'
+glosa_use: adapt
+glosa_target: FOUNDATION §7.9 Literature Review System (LRS) — discrimination-under-abundance framing
+notes: 2026-02-20.

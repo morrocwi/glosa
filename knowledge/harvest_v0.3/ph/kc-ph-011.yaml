@@ -1,0 +1,28 @@
+id: kc-ph-011
+kind: claim
+title: UB-ONE v6.3 (Minimal) — Full Reviewer Pack for
+text: 'Self-published Zenodo preprint (single-author physics/information-theory program, 2025-10-22). Abstract
+  reports: UB-ONE v6.3 (Minimal) — Full Reviewer Pack for Mathematical/Physical Falsification Author’s claim
+  (to be tested) There exists a single real scalar field ω(t,x) on (t,x) ∈ ℝ × ℝ^d (d = 1,2,3) obeying the
+  defocusing nonlinear Klein–Gordon root equation: (Eq.R) ∂²_t ω − Δω + Λω³ = 0, Λ > 0 (constant) with
+  finite-energy initial...'
+verbatim: 'UB-ONE v6.3 (Minimal) — Full Reviewer Pack for Mathematical/Physical Falsification Author’s claim (to be
+  tested) There exists a single real scalar field ω(t,x) on (t,x) ∈ ℝ × ℝ^d (d = 1,2,3) obeying the defocusing
+  nonlinear Klein–Gordon root equation: (Eq.R) ∂²_t ω − Δω + Λω³ = 0, Λ > 0 (constant) with finite-energy
+  initial data (ω(0,·), ∂_tω(0,·)) ∈ H¹(ℝ^d) × L²(ℝ^d). This document supplies all math needed to (i) derive
+  testable quantities, (ii) anchor to common physics limits, and (iii) falsify the model from data
+  {ω_meas(t,x)} without appealing to'
+source:
+  doi: 10.5281/zenodo.17419226
+  title: UB-ONE v6.3 (Minimal) — Full Reviewer Pack for
+  year: 2025
+fetched_from_url: 'https://zenodo.org/api/records/17419226'
+locator: Zenodo record abstract (desc field), via API, from registry/zenodo_all_records.json
+tier: Open
+base_relation: open
+base_justification: Domain physics content (a specific claim/derivation/observational note) not directly addressed by any base
+  card; carries no base-card contradiction but also no base endorsement — left open.
+glosa_use: skip
+glosa_target: n/a — domain physics claim outside glosa's method-layer scope
+notes: Part of the single-author 'ph' hub iterative physics-theory series (Zenodo id 17419226, 2025-10-22);
+  method-layer extraction only (self-publication + no-peer-review posture), not the physics content itself.

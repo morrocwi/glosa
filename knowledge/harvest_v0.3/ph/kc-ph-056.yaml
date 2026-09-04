@@ -1,0 +1,30 @@
+id: kc-ph-056
+kind: claim
+title: 'Spectral–Geometric Constraint at the Z Pole: Couplings, Electroweak Masses, Fermion Ratios, and FAIR
+  Verification of the'
+text: 'Self-published Zenodo preprint (single-author physics/information-theory program, 2025-11-21). Abstract
+  reports: This note presents four strictly reproducible numerical results derived from a spectral–geometric
+  ansatz at the Z pole: (1) a one-parameter relation for the inverse gauge couplings of U(1)Y , SU(2)L, and
+  SU(3)c; (2) tree-level electroweak boson masses from Layer–1 output; (3) golden-ratio integer patterns
+  reproducing selected fermion mass ratios at the O(10%) level; (4) an...'
+verbatim: 'This note presents four strictly reproducible numerical results derived from a spectral–geometric ansatz at
+  the Z pole: (1) a one-parameter relation for the inverse gauge couplings of U(1)Y , SU(2)L, and SU(3)c; (2)
+  tree-level electroweak boson masses from Layer–1 output; (3) golden-ratio integer patterns reproducing
+  selected fermion mass ratios at the O(10%) level; (4) an unbiased (FAIR) integer scan over n = 1 . . . 106
+  identifying a strong local resonance near the 27th Fibonacci number F27 = 196,418, while the global minimum
+  of |r(n)−1| in the scanned domain'
+source:
+  doi: 10.5281/zenodo.17674631
+  title: 'Spectral–Geometric Constraint at the Z Pole: Couplings, Electroweak Masses, Fermion Ratios, and FAIR
+    Verification of the Up–27 Resonance'
+  year: 2025
+fetched_from_url: 'https://zenodo.org/api/records/17674631'
+locator: Zenodo record abstract (desc field), via API, from registry/zenodo_all_records.json
+tier: Open
+base_relation: open
+base_justification: Domain physics content (a specific claim/derivation/observational note) not directly addressed by any base
+  card; carries no base-card contradiction but also no base endorsement — left open.
+glosa_use: skip
+glosa_target: n/a — domain physics claim outside glosa's method-layer scope
+notes: Part of the single-author 'ph' hub iterative physics-theory series (Zenodo id 17674631, 2025-11-21);
+  method-layer extraction only (self-publication + no-peer-review posture), not the physics content itself.

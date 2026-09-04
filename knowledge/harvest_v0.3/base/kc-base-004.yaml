@@ -1,0 +1,30 @@
+id: kc-base-004
+kind: rule
+title: Q3 — Identity by role, not by number (equal-number fallacy)
+text: Two projections that compute to the same digits can still be different quantities, because identity
+  is fixed by causal/inferential role in the bounded readout graph, not by the digits displayed. Substituting
+  one for the other on the strength of equal numbers is banned as the 'equal-number fallacy.' A worked
+  case (three PDG mass-ratio numbers from one formula) gives this fit_calibrated numeric weight.
+verbatim: '**Q3 — Identity by role, not by number.** Two projections that compute to
+
+  the same digits can still be *different quantities* — their identity is
+
+  their causal/inferential role in the bounded readout graph, not the number
+
+  they happen to display. Substituting one for the other on the strength of
+
+  equal digits is banned ("the equal-number fallacy").'
+source:
+  path: readout_universe/philosophy.md
+  title: Philosophy — Readout Universe
+  year: 2026
+fetched_from_url: ~/ANSE.ASIA/readout_universe/philosophy.md
+locator: §1, lines ~62-66
+tier: Dr
+base_relation: holds
+base_justification: This IS a base card from the lens root text; base cards are the ground the ledger
+  is judged against.
+glosa_use: adopt
+glosa_target: FOUNDATION Appendix A Non-Collapse Table
+notes: The 'equal-number fallacy' is a directly reusable named error-class for glosa's own non-collapse
+  table / citation-integrity checks.

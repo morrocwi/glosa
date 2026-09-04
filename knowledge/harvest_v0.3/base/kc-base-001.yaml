@@ -1,0 +1,24 @@
+id: kc-base-001
+kind: definition
+title: Readout-not-truth (founding refusal)
+text: 'The corpus''s founding move: no ℝ-value hides behind the dial. What ever exists to a knower is
+  the finite, bounded, discrete readout an operator returns to a bounded knower who is themselves a finite
+  retained structure — never ''the world as it truly, exactly is.'''
+verbatim: there is no ℝ-value hiding behind the dial. What exists, ever, is the finite, bounded, discrete
+  *readout* an operator returns to a bounded knower — never "the world as it truly, exactly is." This
+  is not a claim that the world doesn't exist; it is a claim about what is ever *available* to a knower
+  who is themselves a finite retained structure.
+source:
+  path: readout_universe/philosophy.md
+  title: Philosophy — Readout Universe (v1.0 → v2.0-dev)
+  year: 2026
+fetched_from_url: ~/ANSE.ASIA/readout_universe/philosophy.md
+locator: §1, lines ~48-55
+tier: Dr
+base_relation: holds
+base_justification: This IS a base card from the lens root text; base cards are the ground the ledger
+  is judged against.
+glosa_use: adopt
+glosa_target: FOUNDATION §1.0 Pillars — ontology/epistemology/methodology
+notes: This is the single sentence glosa's own epistemology pillar should cite verbatim; 'bounded knower'
+  is the phrase to reuse instead of inventing new vocabulary.

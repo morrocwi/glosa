@@ -1,0 +1,25 @@
+id: kc-ai-015
+kind: claim
+title: Knowledge history as succession of authorized interpretive agencies
+text: Argues civilizational knowledge history is not only accumulation of truths but succession of agencies authorized
+  to interpret the world's signals and stabilize interpretations as social reality; traces interpretive authority
+  from embodied/oral interpreters through priestly/archival regimes, philosophical and scientific institutions,
+  to platforms/algorithms/AI-mediated systems; knowledge crises are often authority crises.
+verbatim: 'What changes across civilizations is not only the accumulation of truths, but the succession of agencies
+  authorized to interpret the world''s signals and stabilize those interpretations as social reality... Its central
+  claim is that knowledge crises are often authority crises: moments in which the legitimacy of interpreters is
+  contested'
+source:
+  path: registry/zenodo_all_records.json
+  title: 'The Civilization of Knowledge: Who Has the Authority to Interpret the World'
+  year: 2026
+fetched_from_url: https://zenodo.org/api/records/18943971
+locator: record 18943971, metadata.description (Abstract)
+tier: Dr
+base_relation: holds
+base_justification: Directly consonant with EPIS-KNOWLEDGE-VALIDATION's rejection of vertical/institutional epistemic
+  authority — reframes authority itself as historically contingent agency-succession rather than a fixed hierarchy.
+glosa_use: adopt
+glosa_target: FOUNDATION §3 (agency/authority framing) — historical case for the horizontal-authority stance
+notes: Companion Thai conference-slide record 22302410 (kc-ai-016) restates this paper's thesis for a NIDA national
+  audience.
