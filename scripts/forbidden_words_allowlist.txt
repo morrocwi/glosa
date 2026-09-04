@@ -1,0 +1,82 @@
+# glosa — forbidden-words allowlist
+#
+# Read by scripts/check_forbidden_words.sh. Each line is
+# "<path-prefix><TAB><exact matched word, lowercase>" and exempts every
+# occurrence of that word inside that path prefix from failing the gate.
+#
+# Scope of the exemption, per AGENTS.md rule 6 and FOUNDATION_v0.5: the
+# repo may DISCUSS these words historically (e.g. narrating what a chair
+# ruling forbade, or quoting another document's own vocabulary in
+# design/lineage material) without that discussion itself becoming an
+# overclaim. This allowlist exists ONLY for design/ and lineage/ — no path
+# outside those two directories may be added here. Do not add paper/,
+# methodology/, README.md, or any public-claim-bearing file: forbidden
+# words there are always a real finding, not a historical mention.
+#
+# Format: <path-prefix><TAB><word>
+# path-prefix matches as a prefix of the repo-relative file path.
+# word matches case-insensitively against the grep hit.
+
+design/	novel
+design/	novelty
+design/	unprecedented
+design/	prior art
+design/	prior-art
+design/	concession
+design/	seminal
+design/	pioneering
+lineage/	novel
+lineage/	novelty
+lineage/	unprecedented
+lineage/	prior art
+lineage/	prior-art
+lineage/	concession
+lineage/	seminal
+lineage/	pioneering
+
+# --- Quoted / data / verbatim classes (added 2026-09-04, MUST-13 triage: every hit in these
+# paths was classified (c) not a glosa-authored claim). reviews/ = audit reports quoting hits;
+# sources/ = papers reproduced verbatim (their own vocabulary); registry/ = Zenodo metadata as data
+# (record titles); blackbox/ = the founder's verbatim voice, never edited. Lines that state the
+# ban itself (META regex in the scanner) are skipped everywhere.
+reviews/	novel
+reviews/	novelty
+reviews/	unprecedented
+reviews/	prior art
+reviews/	prior-art
+reviews/	concession
+reviews/	seminal
+reviews/	pioneering
+sources/	novel
+sources/	novelty
+sources/	unprecedented
+sources/	prior art
+sources/	prior-art
+sources/	concession
+sources/	seminal
+sources/	pioneering
+registry/	novel
+registry/	novelty
+registry/	unprecedented
+registry/	prior art
+registry/	prior-art
+registry/	concession
+registry/	seminal
+registry/	pioneering
+blackbox/	novel
+blackbox/	novelty
+blackbox/	unprecedented
+blackbox/	prior art
+blackbox/	prior-art
+blackbox/	concession
+blackbox/	seminal
+blackbox/	pioneering
+# methodology/data/ = rule tables (contaminated-concept phrases, disclaimer wordings) — data, not claims
+methodology/data/	novel
+methodology/data/	novelty
+methodology/data/	unprecedented
+methodology/data/	prior art
+methodology/data/	prior-art
+methodology/data/	concession
+methodology/data/	seminal
+methodology/data/	pioneering

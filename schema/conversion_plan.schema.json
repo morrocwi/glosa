@@ -1,0 +1,228 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://glosa.example/schema/conversion_plan.schema.json",
+  "title": "glosa conversion plan",
+  "description": "tier: Dr, FIXED (schema rejects any other value -- S12 §7). Implements FOUNDATION_v0.5.md §7.7 (the Project Advisor role, a third role distinct from Maker/Checker/Approver). Binding invariants: this file NEVER raises the artifact's K-state by itself (D-ADVISOR-NOT-K2); next_3_actions must be ADDRESSED actions with a named, non-null target, never 'post and wait'. Preconditions the advisor kernel function `advise()` enforces before this file may legally exist (kernel-only, not schema-checkable): the linked release_manifest.gate_verdict is PASS/PASS_WITH_LIMITS and no SCRAM condition is active -- if either fails, the advisor emits status BLOCKED instead of a plan (schema's own if/then below covers the BLOCKED-collapses-the-rest-of-the-file half of that rule). Namespace https://glosa.example/ is a placeholder.",
+  "type": "object",
+  "required": ["plan_id", "artifact_ref", "status", "tier", "generated_by", "expires_at", "scram_check", "disclaimer_ids"],
+  "additionalProperties": true,
+  "properties": {
+    "schema_version": { "type": "string" },
+    "plan_id": { "type": "string", "pattern": "^cp-[a-z0-9-]+-[0-9]{3,4}$" },
+    "artifact_ref": {
+      "type": "object",
+      "required": ["release_manifest_id"],
+      "properties": {
+        "release_manifest_id": { "type": "string", "minLength": 1 },
+        "claim_ids": { "type": "array", "items": { "type": "string" } },
+        "kg_cluster_id": { "type": ["string", "null"] },
+        "genre": { "type": "string" }
+      }
+    },
+    "status": { "enum": ["DRAFT", "READY", "BLOCKED", "EXPIRED", "SUPERSEDED"] },
+    "tier": { "const": "Dr" },
+    "generated_by": {
+      "type": "object",
+      "required": ["identity", "is_ai"],
+      "description": "identity MUST differ from the artifact's maker and L3-checker identity (kernel-enforced, string-inequality across files -- not schema-expressible).",
+      "properties": {
+        "identity": { "type": "string", "minLength": 1 },
+        "is_ai": { "type": "boolean" },
+        "model_or_vendor": { "type": "string" }
+      }
+    },
+    "generated_at": { "type": "string" },
+    "expires_at": { "type": "string", "minLength": 1 },
+    "k_state_now": {
+      "type": "object",
+      "properties": {
+        "value": { "const": "K1" },
+        "public_disclaimer_present": { "type": "boolean" },
+        "note": { "type": "string" }
+      }
+    },
+    "global_route": {
+      "type": "object",
+      "properties": {
+        "venue_candidates": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": { "type": "string" },
+              "type": { "enum": ["JOURNAL", "CONFERENCE", "PREPRINT_SERVER", "WORKING_PAPER_REPO", "REPLY_VENUE", "WORKSHOP"] },
+              "field_fit_score": { "enum": ["LOW", "MED", "HIGH"] },
+              "field_fit_rationale": { "type": "string" },
+              "face_independence": { "type": "boolean" },
+              "policy_audit": {
+                "type": "object",
+                "properties": {
+                  "ai_use_policy_checked": { "type": "boolean" },
+                  "authorship_policy_checked": { "type": "boolean" },
+                  "disclosure_wording_checked": { "type": "boolean" },
+                  "preprint_policy_checked": { "type": "boolean" },
+                  "repository_version_policy_checked": { "type": "boolean" },
+                  "data_code_policy_checked": { "type": "boolean" },
+                  "conflict_of_interest_policy_checked": { "type": "boolean" },
+                  "human_subject_ethics_checked": { "type": "boolean" },
+                  "copyright_archiving_rights_checked": { "type": "boolean" },
+                  "result": { "enum": ["POLICY_AUDIT_PENDING", "CLEAR", "DISCLOSURE_GAP", "INELIGIBLE"] }
+                }
+              },
+              "status": { "enum": ["CANDIDATE", "ADDRESSED", "SUBMITTED", "REJECTED", "ACCEPTED", "WITHDRAWN"] }
+            }
+          }
+        },
+        "correspondent_types": { "type": "array", "items": { "type": "string" } },
+        "reply_venues": { "type": "array", "items": { "type": "string" } },
+        "preprint_or_repository_choice": {
+          "type": "object",
+          "properties": { "choice": { "type": "string" }, "rationale": { "type": "string" } }
+        }
+      }
+    },
+    "thai_route": {
+      "type": "object",
+      "properties": {
+        "companion_artifact_type": { "type": "string" },
+        "local_node_types": { "type": "array", "items": { "type": "string" } },
+        "gda_answers": {
+          "type": "object",
+          "properties": {
+            "q1_local_institution": { "type": "string" },
+            "q2_global_south_gap": { "type": "string" },
+            "q3_english_only_blindspot": { "type": "string" },
+            "q4_situated_record": { "type": "string" },
+            "q5_asymmetry_or_map_density": { "type": "string" },
+            "q6_overturning_local_source": { "type": "string" }
+          }
+        },
+        "author_run_correction_note": { "type": "string" }
+      }
+    },
+    "next_3_actions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["action", "target", "route", "qualifies_as_conversion"],
+        "properties": {
+          "action": { "type": "string", "minLength": 1 },
+          "target": {
+            "description": "REQUIRED non-null -- a named venue/correspondent-type/route (S12 §6 structural enforcement); never 'post publicly and wait'.",
+            "type": "string", "minLength": 1
+          },
+          "route": { "enum": ["GLOBAL", "THAI", "MECHANICAL_CHECK", "HUMAN_MASTERY_GATE"] },
+          "qualifies_as_conversion": { "type": "boolean" },
+          "follow_up_check_after": { "type": "string" }
+        }
+      }
+    },
+    "survival_buffer": {
+      "type": "object",
+      "properties": {
+        "rejection_rounds_budgeted": { "type": "integer" },
+        "rejection_rounds_used": { "type": "integer" },
+        "rule": { "type": "string" },
+        "pivot_options_if_exhausted": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "do_not": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": { "id": { "type": "string" }, "text": { "type": "string" } }
+      }
+    },
+    "formula_governance_check": {
+      "type": "object",
+      "properties": {
+        "mint_convert_coupling": {
+          "type": "object",
+          "properties": {
+            "mint_count_window": { "type": "integer" },
+            "conversion_count_window": { "type": "integer" },
+            "lambda": { "type": ["number", "null"] },
+            "lambda_calibration": {
+              "type": "object",
+              "properties": {
+                "calibrated": { "type": "boolean" },
+                "calibrated_at": { "type": ["string", "null"] },
+                "calibrated_from": { "type": "string" }
+              }
+            },
+            "new_flagship_recommendation_allowed": { "type": "boolean" }
+          }
+        },
+        "reactivity_license": {
+          "type": "object",
+          "properties": {
+            "beta_d_status": { "enum": ["LOW", "EMERGING", "ESTABLISHED"] },
+            "integrity_clean": { "type": "boolean" },
+            "xenon_below_threshold": { "type": "boolean" },
+            "conversion_log_operational": { "type": "boolean" },
+            "increase_mint_rate_allowed": { "type": "boolean" }
+          }
+        }
+      }
+    },
+    "k1_k2_ledger_row": {
+      "type": "object",
+      "properties": {
+        "asset": { "type": "string" },
+        "k_state": { "const": "K1" },
+        "programme_cluster": { "type": "string" },
+        "legibility_path": { "type": "string" },
+        "global_route": { "type": "string" },
+        "thai_local_route": { "type": "string" },
+        "named_interlocutor": { "type": "string" },
+        "addressed_action": { "type": "string" },
+        "human_response": { "type": "string" },
+        "k2": {
+          "description": "Only a class-4 external-human event may ever set this true.",
+          "const": false
+        },
+        "objection": { "type": "string" },
+        "revision": { "type": "string" },
+        "next_action": { "type": "string" }
+      }
+    },
+    "disclaimer_ids": {
+      "type": "array",
+      "minItems": 2,
+      "contains": { "const": "D-ADVISOR" },
+      "items": { "$ref": "common.defs.json#/definitions/disclaimer_id" }
+    },
+    "scram_check": {
+      "type": "object",
+      "required": ["status"],
+      "properties": {
+        "status": { "enum": ["CLEAR", "BLOCKED"] },
+        "reasons": {
+          "type": "array",
+          "items": { "enum": ["UNVERIFIED_CITATION_IN_SCOPE", "K_STATE_MISREPRESENTED", "VENUE_DISCLOSURE_GAP", "ADVISOR_IDENTITY_CONFLICT", "XENON_THRESHOLD"] }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "description": "disclaimer_ids must always carry D-ADVISOR-NOT-K2 in addition to D-ADVISOR (S12 §7, unconditional).",
+      "properties": { "disclaimer_ids": { "type": "array", "contains": { "const": "D-ADVISOR-NOT-K2" } } }
+    },
+    {
+      "description": "scram_check.status BLOCKED requires >=1 reason and status DRAFT/BLOCKED; sections 1-8 are then INVALID (template's own rule) -- schema-checkable half: reasons non-empty and status is BLOCKED.",
+      "if": { "properties": { "scram_check": { "type": "object", "properties": { "status": { "const": "BLOCKED" } } } } },
+      "then": {
+        "properties": {
+          "scram_check": { "type": "object", "properties": { "reasons": { "type": "array", "minItems": 1 } }, "required": ["reasons"] },
+          "status": { "const": "BLOCKED" }
+        }
+      }
+    },
+    {
+      "description": "next_3_actions carrying fewer than 3 entries requires D-PARTIAL-SET disclosure, never silent padding.",
+      "if": { "required": ["next_3_actions"], "properties": { "next_3_actions": { "type": "array", "maxItems": 2 } } },
+      "then": { "properties": { "disclaimer_ids": { "type": "array", "contains": { "const": "D-PARTIAL-SET" } } } }
+    }
+  ]
+}

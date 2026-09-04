@@ -1,0 +1,189 @@
+# conversion_plan.yaml — RWI S12 template (Dr, unreviewed proposed schema)
+# One plan per release-gated artifact/cluster, produced by the PROJECT ADVISOR role
+# (advisor != maker != checker; see design/S12_project-advisor-agent.md).
+#
+# Preconditions the advisor kernel function `advise()` enforces before this file may exist:
+#   - the linked release_manifest.gate_verdict is PASS or PASS_WITH_LIMITS (S4 L3+, S7 gate_release)
+#   - no SCRAM condition (S12 §8) is active for this artifact
+# If either fails, the advisor emits status: BLOCKED instead of a plan (see bottom of this file).
+#
+# Binding invariants this file must never violate:
+#   - tier is ALWAYS "Dr" (a conversion plan is a strategic recommendation, not evidence — S12 §7)
+#   - this file NEVER raises the artifact's K-state by itself (D-ADVISOR-NOT-K2)
+#   - PromptAttention != ReactivityLicense: next_3_actions must be ADDRESSED actions with a named
+#     target, never "post and wait" (S12 §3.4)
+
+schema_version: "0.1.0"
+plan_id: cp-<slug>-<nnnn>            # required, stable; a revision gets a NEW id, never overwrites in place
+artifact_ref:
+  release_manifest_id: ""            # required — the release_manifest this plan concerns
+  claim_ids: []                      # claim_card ids in scope
+  kg_cluster_id: null                # S8 citemap/kggraph programme-cluster id, if the artifact belongs to one
+  genre: ""                          # copied from claim_card.genre — informs venue matching, not re-decided here
+
+status: DRAFT                        # enum: DRAFT | READY | BLOCKED | EXPIRED | SUPERSEDED
+tier: Dr                             # fixed — schema rejects any other value (S12 §7)
+generated_by:
+  identity: ""                       # advisor session/agent identity — MUST differ from maker and L3-checker identity
+  is_ai: true
+  model_or_vendor: ""                # e.g. "claude-sonnet", "codex", "gemini", "human:<name>" — vendor-neutral field
+generated_at: ""                     # ISO 8601
+expires_at: ""                       # required — approvals expire (MC's T4); re-run advisor after any artifact revision
+
+# ---------------------------------------------------------------------------
+# 1. K-STATE NOW
+# ---------------------------------------------------------------------------
+k_state_now:
+  value: K1                          # this stage only ever sees K1 by construction (S12 §0)
+  public_disclaimer_present: false   # is D-K-STATE (S6 §9) actually visible on the public surface right now?
+  note: ""                           # bilingual free text, e.g. what specifically is K1 here
+
+# ---------------------------------------------------------------------------
+# 2. GLOBAL ROUTE
+# ---------------------------------------------------------------------------
+global_route:
+  venue_candidates:
+    - name: ""                       # journal / conference / repository name
+      type: JOURNAL                  # enum: JOURNAL | CONFERENCE | PREPRINT_SERVER | WORKING_PAPER_REPO |
+                                      #       REPLY_VENUE | WORKSHOP
+      field_fit_score: MED           # enum: LOW | MED | HIGH — scope/community match to genre+kg cluster only
+      field_fit_rationale: ""        # why — must cite the venue's own stated scope, not prestige
+      face_independence: true        # bool — is this outside the project's existing repeat-fellowship circle?
+      policy_audit:                  # mandatory venue audit (SKILL.md §16) — every field required before READY
+        ai_use_policy_checked: false
+        authorship_policy_checked: false
+        disclosure_wording_checked: false
+        preprint_policy_checked: false
+        repository_version_policy_checked: false
+        data_code_policy_checked: false
+        conflict_of_interest_policy_checked: false
+        human_subject_ethics_checked: false
+        copyright_archiving_rights_checked: false
+        result: POLICY_AUDIT_PENDING # enum: POLICY_AUDIT_PENDING | CLEAR | DISCLOSURE_GAP | INELIGIBLE
+      status: CANDIDATE               # enum: CANDIDATE | ADDRESSED | SUBMITTED | REJECTED | ACCEPTED | WITHDRAWN
+  correspondent_types: []             # named ROLES not named individuals unless founder already named one
+                                       # e.g. "editor of a field-matched journal", "author of nearest-construct paper"
+  reply_venues: []                    # e.g. PREreview, SERRC, Lean/Rocq/Coq community, LessWrong — matched by claim type
+  preprint_or_repository_choice:
+    choice: ""                       # e.g. Zenodo | SSRN | arXiv — by genre, not by default habit
+    rationale: ""
+
+# ---------------------------------------------------------------------------
+# 3. THAI / LOCAL ROUTE  (dual-track invariant — Thai track != PR)
+# ---------------------------------------------------------------------------
+thai_route:
+  companion_artifact_type: ""        # a DISTINCT artifact, not a translation of the global one
+  local_node_types: []               # TYPES (university institute, professional association, NGO), not a
+                                      # frozen named list — see S12 §1 PRESERVE_DIAGNOSTIC note on the atlas
+  gda_answers:                       # Geographic Distribution Audit — all six required, protocols/dual-track.md
+    q1_local_institution: ""         # What Thai/local institution/community should see this claim?
+    q2_global_south_gap: ""          # What Global South literature is absent from Anglophone-heavy search?
+    q3_english_only_blindspot: ""    # What disappears under English-only search?
+    q4_situated_record: ""           # What situated record is visible from the researcher's position?
+    q5_asymmetry_or_map_density: ""  # Is global/local asymmetry reality or map-density imbalance?
+    q6_overturning_local_source: ""  # What local source could overturn the global recommendation?
+  author_run_correction_note: "Author-run positional correction improves route diversity but is NOT external K2."
+
+# ---------------------------------------------------------------------------
+# 4. NEXT 3 ADDRESSED CONVERSION ACTIONS  (never "post publicly and wait")
+# ---------------------------------------------------------------------------
+next_3_actions:
+  - action: ""
+    target: ""                       # REQUIRED non-null — a named venue/correspondent-type/route; schema
+                                      # rejects an action with an empty target (S12 §6 structural enforcement)
+    route: GLOBAL                    # enum: GLOBAL | THAI | MECHANICAL_CHECK | HUMAN_MASTERY_GATE
+    qualifies_as_conversion: true    # per protocols/conversion-first.md's "qualified conversion action" list
+    follow_up_check_after: ""        # date — when a SEPARATE later review compares prediction to ledger outcome
+  - action: ""
+    target: ""
+    route: THAI
+    qualifies_as_conversion: true
+    follow_up_check_after: ""
+  - action: ""
+    target: ""
+    route: MECHANICAL_CHECK
+    qualifies_as_conversion: true
+    follow_up_check_after: ""
+  # exactly 3 entries are required; a shorter (PARTIAL_n) set must carry the D-PARTIAL-SET disclaimer, never silent padding
+
+# ---------------------------------------------------------------------------
+# 5. REJECTION BUDGET / SURVIVAL BUFFER
+# ---------------------------------------------------------------------------
+survival_buffer:
+  rejection_rounds_budgeted: 0       # pre-committed, project-local number — not a universal constant
+  rejection_rounds_used: 0
+  rule: "Each rejection must produce Objection -> Revision -> stated delta-quality. Repeated resubmission without a stated delta is flagged, not celebrated as persistence."
+  pivot_options_if_exhausted: []     # e.g. merge construct, narrow scope, change venue class, co-authorship-first
+
+# ---------------------------------------------------------------------------
+# 6. WHAT NOT TO DO  (typed, not free prose)
+# ---------------------------------------------------------------------------
+do_not:
+  - id: NO_SALAMI
+    text: "Do not split this contribution into artificial series/salami outputs to raise paper count."
+  - id: NO_PRESTIGE_SPENDING
+    text: "Do not pay an APC or choose a venue for prestige alone; field fit and epistemic function govern venue choice, not prestige."
+  - id: NO_ATTENTION_AS_CREDIT
+    text: "Views, likes, downloads, and AI praise are prompt channels, not delayed independent channels. They do not license an increased mint rate and are never logged as conversion events."
+  - id: NO_MINT_WITHOUT_CONVERSION
+    text: "Do not recommend new flagship production while mint_count_window > lambda * conversion_count_window for this project, or while lambda has never been calibrated (default: 0 new flagships)."
+  - id: NO_QUERY_SHOPPING
+    text: "Do not re-word the same claim to a route/reviewer/model that already disagreed, hoping for a different answer."
+
+# ---------------------------------------------------------------------------
+# 7. FORMULA GOVERNANCE CHECK (S12 §4 — computed, finite_diagnostic tier)
+# ---------------------------------------------------------------------------
+formula_governance_check:
+  mint_convert_coupling:
+    mint_count_window: 0             # finite_diagnostic — a measured count from this project's own ledger
+    conversion_count_window: 0       # finite_diagnostic
+    lambda: null                     # null unless explicitly calibrated for THIS project — see lambda_calibration
+    lambda_calibration:
+      calibrated: false
+      calibrated_at: null
+      calibrated_from: ""            # what data/window it was calibrated from
+    new_flagship_recommendation_allowed: false   # computed: false whenever lambda_calibration.calibrated == false
+  reactivity_license:
+    beta_d_status: LOW               # enum: LOW | EMERGING | ESTABLISHED (qualitative before weights are frozen)
+    integrity_clean: true
+    xenon_below_threshold: true
+    conversion_log_operational: false
+    increase_mint_rate_allowed: false  # computed AND of the four fields above
+
+# ---------------------------------------------------------------------------
+# 8. K1 -> K2 LEDGER ROW (written here, then mirrored into RWI_K1_K2_LEDGER.md, S6 §8 columns)
+# ---------------------------------------------------------------------------
+k1_k2_ledger_row:
+  asset: ""                          # this artifact/cluster
+  k_state: K1
+  programme_cluster: ""              # kg_cluster_id
+  legibility_path: ""
+  global_route: ""
+  thai_local_route: ""
+  named_interlocutor: ""
+  addressed_action: ""               # one of next_3_actions, once actually attempted
+  human_response: ""
+  k2: false                          # only a class-4 external-human event (S4 §2) may ever set this true
+  objection: ""
+  revision: ""
+  next_action: ""
+
+# ---------------------------------------------------------------------------
+# 9. DISCLAIMERS (mandatory, unconditional — S12 §7)
+# ---------------------------------------------------------------------------
+disclaimer_ids:
+  - D-ADVISOR
+  - D-ADVISOR-NOT-K2
+  # D-ADVISOR-EXPIRED is added automatically once expires_at passes; do not hand-set it here
+
+# ---------------------------------------------------------------------------
+# 10. SCRAM CHECK (S12 §8 — must be CLEAR for status to be READY)
+# ---------------------------------------------------------------------------
+scram_check:
+  status: CLEAR                      # enum: CLEAR | BLOCKED
+  reasons: []                        # non-empty only when status == BLOCKED; one of the S12 §8 condition ids:
+                                      # UNVERIFIED_CITATION_IN_SCOPE | K_STATE_MISREPRESENTED |
+                                      # VENUE_DISCLOSURE_GAP | ADVISOR_IDENTITY_CONFLICT | XENON_THRESHOLD
+
+# If scram_check.status == BLOCKED, every section above 1-8 is INVALID and must not be acted on.
+# The only valid output in that case is this file with status: BLOCKED and scram_check.reasons filled in.

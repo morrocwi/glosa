@@ -1,0 +1,76 @@
+# Blackbox Note (บันทึกกล่องดำ) — raw human voice record + the record of how it was later "cooked"
+# Founder-named 2026-09-04 (supersedes "Register Zero / เสียงสด"): the name states a sociology-of-knowledge stance —
+# to understand a piece of knowledge you must look at the moment it was made (open the black box), and we keep
+# the whole processing of it (การปรุง: lens-in, analysis, lens-out, revisions) in the document forever, never sealed.
+# Register labels R0/R1/R2 remain as the internal stage names inside the note. Tier: positional / Dr. Rules: verbatim (typos kept), never edited,
+# never polished, never translated in place; translations/readout formulations live in R1/R2 beside it.
+# Every claim/rule that grew from a line points back here (claim_card.origin_blackbox_ref). Paper appendix
+# "Blackbox Note: how this work was made" is a CURATED subset of these lines (only lines with a `became:`),
+# selected by the human owner of the voice; the full record is archived and cited by id.
+# Fixed FOUNDATION_v0.5 §12: this header used to name the pre-rename appendix title
+# ("Human-AI dialogue before this work"); corrected to match chair ruling A1 and
+# paper/BLACKBOX_NOTE_APPENDIX.md's actual title.
+blackbox_note:
+  id: BB-YYYY-MM-DD-NN            # e.g. BB-2026-09-04-01
+  project: <project_id>            # one problem = one project
+  session_ref: <transcript id / file path, private allowed>
+  participants:
+    - role: founder | practitioner | community-member | AI-<vendor>/<model>   # people by ROLE, not name, unless owner opts in
+  language: th | en | mixed
+  privacy_scan: pending | done      # required before any line goes public
+  public_lines_selected_by: <human role>   # AI may propose candidates only (mark ai_proposed: true)
+  lines:
+    - n: 1
+      ts: "2026-09-04T07:20:08Z"    # time received (mid-turn lines) or sent -- quoted: schema types ts as
+                                     # string (common ISO-8601 style), and an unquoted YAML timestamp parses
+                                     # to a python datetime object instead, which fails that check
+      speaker: founder
+      kind: question | proposal | correction | ruling | experience | reply
+      text_verbatim: |
+        <exact words, untranslated, typos kept>
+      distinction_introduced: <what this line made visible that was not visible before, one sentence>
+      became:                        # forward links (empty = candidate for exclusion from appendix)
+        - claim_card: <id>
+        - rule: <protocol card / field / gate id>
+      public: true | false
+      ai_proposed: false
+  lens_used:                        # REQUIRED (founder rule 2026-09-04): name the lens that looked at the problem and extracted the hypothesis
+    display: "Readout Universe — Yaoharee Lahtee"     # short form used in cards, appendix, front-matter (founder-approved wording)
+    description: "readout-not-truth; retained distinction; Readout Condition E–A–D (Readout Universe / Readout Genesis)"
+    author: "Yaoharee Lahtee"
+    orcid: "0009-0005-3861-0626"
+    references:                     # cite what was actually read (citation_card ids once verified)
+      - "10.5281/zenodo.21529456"   # Readout Genesis Standalone Synthesis
+      - "10.5281/zenodo.21665100"   # What a Zero Readout Certifies
+      - "10.5281/zenodo.22301318"   # The Readout Condition (Aug 2026)
+      - "10.5281/zenodo.22301202"   # Written by AI. Still True. (pillars)
+      - "github.com/morrocwi/readout_universe"
+    repo_urls:                      # REQUIRED — always cite the lens's git repo in the document too
+      - "https://github.com/morrocwi/readout_universe"
+      - "https://github.com/morrocwi/readout_genesis"
+    repo_ref: <commit/tag or date read>
+    must_appear_in_document: true   # gate: lens citation (DOI) + repo URL must be in the reference list, else D-LENS-UNCITED → FAIL
+    version_or_date_read: <YYYY-MM-DD>
+    what_it_did_here:
+      lens_in: <which distinctions became visible when the problem was read as a readout>
+      lens_out: <how the hypothesis was extracted back into world language>
+    if_other_lens: "if a different lens was used, write that lens and its author here instead; a work may list more than one"
+    note: "attribution ≠ authority — naming the lens credits its source and lets a reader replace it; it does not make the lens true"
+  cooking:                          # การปรุง — every transformation of the raw lines, kept forever, append-only
+    - step: lens_in | analysis | lens_out | revision | translation | review
+      ts: <when>
+      by: human | ai-<vendor>/<model> | joint
+      input_lines: [1, 3]
+      output_ref: <file/claim_card id produced>
+      what_changed: "<one sentence — which distinction was added/removed/re-attributed>"
+  r1_readout_ref: <file of the lens-in formulation>      # never inline here
+  r2_hypothesis_ref: <file of the world-language hypothesis>
+  translation_status: none | machine | reviewed | verified   # for any rendering of these lines elsewhere
+  disclaimers: [D-BLACKBOX-NOTE, D-STANDPOINT]
+  # Fixed FOUNDATION_v0.5 §12: dropped D-SELF-EXPERIENCE-NOT-GENERAL-EVIDENCE, an id that did not
+  # exist in FOUNDATION §5's master catalogue (the nearest match, NC-64, is a Non-Collapse Table
+  # row, not a disclaimer id, and the two vocabularies are never interchangeable). D-STANDPOINT
+  # already covers this trigger (a first-person, positional record) and is already mandatory on
+  # every claim card this note feeds, so no new id was minted (one-fact-one-home, request 21).
+  # D-LENS-UNCITED (FOUNDATION §5/§7.4, request 38c) fires whenever lens_used is present but its
+  # citation card is not VERIFIED or repo_urls is not represented in the document's reference list.

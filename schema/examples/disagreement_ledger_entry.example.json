@@ -1,0 +1,17 @@
+{
+  "disagreement_id": "dis-cat-0001",
+  "claim_ref": "GLOSA-CC-20260904-0001",
+  "project": "cases/worked-example-cat",
+  "nature": "mechanism",
+  "positions": [
+    { "held_by": "founder", "route_id": null, "statement": "distance to the litter box is the operative variable" },
+    { "held_by": "route R2 (HostileReviewer)", "route_id": "R2", "statement": "a litter-substrate or cleanliness confound has not been ruled out" }
+  ],
+  "outcome": "RESOLVED",
+  "decisive_record": "records/observations/obs-cat-litterbox-002.yaml (substrate held constant, distance varied, same result)",
+  "resulting_tier_if_declared": null,
+  "raised_by": "route R2",
+  "date": "2026-09-06",
+  "disclaimers_emitted": [],
+  "notes": ""
+}

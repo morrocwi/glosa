@@ -1,0 +1,16 @@
+{
+  "claim_ref": "GLOSA-CC-20260904-0001",
+  "route_id": "R1",
+  "reviewer_identity": "AI-openai/gpt-5.1 (route R1)",
+  "independence_class": "I3",
+  "mc_level": "L2",
+  "role": "Falsifier",
+  "review_mode": "DECORRELATED_AI_ROUTE",
+  "verdict": "The falsifier is reachable but the n=1 sample cannot license more than a Dr-tier pattern candidate.",
+  "verdict_tier": "Dr",
+  "evidence_consulted": ["claim card fields as pasted into PACKET.md"],
+  "shared_dependency_disclosure": "none known to me",
+  "disagreement_ledger_ref": null,
+  "date": "2026-09-05",
+  "approver_kind": "ai"
+}

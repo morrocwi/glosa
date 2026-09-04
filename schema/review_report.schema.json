@@ -1,0 +1,55 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://glosa.example/schema/review_report.schema.json",
+  "title": "glosa review report",
+  "description": "tier: Dr (specified; independently unreviewed). Implements FOUNDATION_v0.5.md §4.3 (vendor-neutral cross-vendor execution / templates/knowledge/cross_vendor_review_packet.md's `review_report.yaml` output shape) and §7.3 (Bounded-Judge Law: an untiered verdict is invalid, verdict_tier is REQUIRED and uses the SIX-value tier ladder, chair ruling C4 -- not the four-value set an earlier draft, S10, shipped). Field renamed from the packet template's `independence_level` to `independence_class` to match chair ruling C1 ('independence_class is the string ladder I0..I5 in EVERY schema that carries it -- claim card, evidence relation, review report, citation card, kg edge'). Namespace https://glosa.example/ is a placeholder.",
+  "type": "object",
+  "required": ["claim_ref", "route_id", "independence_class", "role", "verdict", "verdict_tier", "reviewer_identity", "date"],
+  "additionalProperties": true,
+  "properties": {
+    "claim_ref": { "type": "string", "minLength": 1 },
+    "route_id": { "type": "string", "minLength": 1 },
+    "reviewer_identity": {
+      "description": "MC-01: must differ from the artifact's maker_id and approver_id -- a string-inequality check across three separate fields is NOT expressible in JSON Schema draft-07 (kernel-enforced only, §3.3 rule 5's twin for review_report).",
+      "$ref": "common.defs.json#/definitions/role_or_human"
+    },
+    "independence_class": { "$ref": "common.defs.json#/definitions/independence_class" },
+    "mc_level": {
+      "anyOf": [ { "$ref": "common.defs.json#/definitions/mc_level" }, { "type": "null" } ]
+    },
+    "role": {
+      "enum": ["Advocate", "NearestConceptProsecutor", "Falsifier", "SourceAuditor", "HostileReviewer", "TranslationReviewer", "MethodEmpiricalDesigner"]
+    },
+    "review_mode": {
+      "anyOf": [ { "$ref": "common.defs.json#/definitions/review_mode" }, { "type": "null" } ]
+    },
+    "verdict": { "type": "string", "minLength": 1 },
+    "verdict_tier": {
+      "description": "Bounded-Judge Law (§7.3): a review_report with no verdict_tier is invalid and cannot back any tested: entry, regardless of independence level. SIX values (chair ruling C4).",
+      "$ref": "common.defs.json#/definitions/tier"
+    },
+    "evidence_consulted": { "type": "array", "items": { "type": "string" } },
+    "shared_dependency_disclosure": { "type": "string" },
+    "disagreement_ledger_ref": { "type": ["string", "null"] },
+    "date": { "type": "string" },
+    "approver_kind": {
+      "description": "MUST-7 (ARCH_integrity.md F1 / kernel/glosa_kernel.py's _human_approver_error_for_review): names whether this check was actually performed by a human or an AI identity. Required, and must be 'human', once mc_level reaches L5 or independence_class is I5 (FOUNDATION_v0.5.md §7.1's Class-5-never-substitutes-for-I5 rule -- no AI reviewer_identity, however cross-vendor-decorrelated, satisfies an I5/L5 requirement).",
+      "enum": ["human", "ai"]
+    }
+  },
+  "allOf": [
+    {
+      "description": "MUST-7: mc_level L5 or independence_class I5 requires a human check -- approver_kind must be 'human', not merely present (Class-5-never-substitutes-for-I5, FOUNDATION_v0.5.md §7.1).",
+      "if": {
+        "anyOf": [
+          { "properties": { "mc_level": { "const": "L5" } }, "required": ["mc_level"] },
+          { "properties": { "independence_class": { "const": "I5" } }, "required": ["independence_class"] }
+        ]
+      },
+      "then": {
+        "properties": { "approver_kind": { "const": "human" } },
+        "required": ["approver_kind"]
+      }
+    }
+  ]
+}

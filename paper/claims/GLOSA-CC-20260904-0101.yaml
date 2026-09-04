@@ -1,0 +1,207 @@
+# tier: Dr (specified claim card; independently unreviewed, k_state K0, independence I0)
+# Written for glosa's own R1 paper (paper/main_th.md / paper/main_en.md), 2026-09-04.
+claim_card:
+  schema_version: 0.5.0
+  claim_id: GLOSA-CC-20260904-0101
+  shape: full
+  statement:
+    language: th
+    text: การ์ดข้ออ้าง (claim card) ที่ตอบห้าคำถามของผู้ก่อตั้ง (เราเห็นอะไรจริง / ข้อมูลแยกอะไรได้ /
+      AI เติมอะไร / สมมติอะไรไว้ / เจอหลักฐานอิสระหรือยัง) เป็นการนำเงื่อนไข Existence-Attribution-Disclosure
+      (E-A-D) ของ Readout Condition มาใช้งานได้จริงที่ระดับข้ออ้างเดียว โดยไม่ต้องมีมหาวิทยาลัย แล็บ หรือทีมวิจัย
+    is_verbatim_quote: false
+    translation:
+      text: A claim card answering the five founder questions (what was seen, what the data separates,
+        what AI filled in, what was assumed, whether independent evidence exists) is a usable claim-level
+        instantiation of the Readout Condition's Existence-Attribution-Disclosure (E-A-D) norm, usable
+        without a university, a lab, or a research team.
+      language: en
+      translation_status: reviewed
+  standpoint:
+    declared_basis: 'founder: social-enterprise practitioner + citizen, not a substitute expert in any
+      discipline this paper touches; AI: drafting assistant, never author'
+    disciplines_not_claimed:
+    - medicine
+    - religion/fiqh authority
+    - law
+    - engineering
+    - anthropology
+    - political science
+    - academic credential
+    method_basis: research method + root questioning (philosophy); readout-not-truth lens (Readout Universe
+      / Readout Genesis)
+  claim_type: INTERPRETIVE
+  genre: design_science
+  venue_track: none
+  companion_of: null
+  produced_by: joint
+  responsible: human
+  origin_blackbox_ref: blackbox/BLACKBOX_NOTE_glosa-paper_2026-09-04.md#L1
+  litreview_manifest_ref: null
+  hypothesis_selection_ref: null
+  lens_translation:
+    lens_ref: "10.5281/zenodo.21529456"   # lens root DOI; VERIFIED I3 card paper/citations/cite-lens-001.json
+    question_human:
+      text_verbatim: กำลังพัฒนา Rigour Without Infrastructure ... คนที่ไม่มีมหาวิทยาลัย ไม่มีแล็บ และไม่มีทีมวิจัย
+        จะผลิตความรู้จากพื้นที่ของตนเองอย่างเข้มงวดได้อย่างไร
+      language: th
+      blackbox_line_ref: blackbox/BLACKBOX_NOTE_glosa-paper_2026-09-04.md#L1
+    question_readout: Under the access this session actually has (the FOUNDATION_v0.5.md text and this
+      repository, no live human-participant study, no lab instrument), what does a 'usable claim-level
+      E-A-D instantiation' currently separate from a document that merely asserts rigour in prose?
+    local_contrast_space_X:
+    - a claim card with every five_questions field filled
+    - a plain prose paragraph asserting the same rigour with no typed fields
+    restriction_provenance: this synthesis session's own reading of design/FOUNDATION_v0.5.md and this
+      repository's files, 2026-09-04; no external human consultation performed for this specific claim
+    access_relation_R: direct reading of the named repository file(s) by this session (human-directed
+      AI read), not a live instrument or a search
+    claim_function_Phi_z0: whether the claim-card mechanism, as specified, actually forces the E-A-D disclosure
+      a plain paragraph would let slide
+    formal_applicability: not_applicable_narrative
+  hypothesis_world:
+    text: IF a claim is recorded as a full-shape claim card per FOUNDATION_v0.5.md §3 (statement, standpoint,
+      five_questions with a required ai_filled block, tested.falsifier, non_claims), THEN a reader without
+      institutional standing can mechanically check that every load-bearing E-A-D field is at least present,
+      which a narrative paragraph making the same claim does not offer.
+    language: en
+    falsifier_ref: five_questions.tested.falsifier (this file)
+    signature: Hypothesis derived with Readout Universe — Yaoharee Lahtee (lens, DOI 10.5281/zenodo.21529456); co-produced by founder
+      + Claude Sonnet (Fable orchestration seat); 2026-09-04
+  five_questions:
+    seen:
+      record_ref: design/FOUNDATION_v0.5.md §3 (claim card field list, §3.1 five-questions crosswalk)
+      as_of: '2026-09-04'
+      retrievable_original: true
+      access_model: direct file read within this repository, same session
+      citation_refs: &id001
+      - design/FOUNDATION_v0.5.md#section-3
+      - schema/claim_card.schema.json
+    separates:
+      value_z0: the claim-card schema (schema/claim_card.schema.json) mechanically requires five_questions.ai_filled's
+        six sub-fields to be non-empty strings when shape:full — a plain paragraph has no such requirement
+      licensing_test:
+        regime: textual/specification presence check (this claim is about a specified rule, not a run
+          instrument)
+        result: the rule/mechanism is present in the cited file as specified text; whether it holds up
+          in a real run is untested (Open, see falsifier)
+        notes: presence-checkable only, per chair ruling D2 applied here to this claim's own evidentiary
+          base
+      zero_vs_bottom: distinct_difference_found
+    ai_filled:
+      current_evidence: This claim rests on the FOUNDATION_v0.5.md/REPO_SPEC_v0.5.md text as read in this
+        session, and on files this same session wrote or read directly (paths named in evidence_relations
+        below); no live external tool call backs this specific claim beyond that.
+      retrieved_tool_evidence: none identified beyond local filesystem reads (Read/Bash) of the named
+        files in this repository; no web search was performed for this claim.
+      retained_record_route: The claim card itself, plus the cited FOUNDATION_v0.5.md section and repository
+        path, are the retained record; no separate logbook entry exists yet for this specific claim.
+      model_calibration_assumption: The AI drafting this claim assumes the cited FOUNDATION_v0.5.md section
+        states the rule as currently binding (not superseded by a founder ruling this session has not
+        seen); this is a model prior about document currency, not a verified fact about future rulings.
+      prompt_system_constraint: Drafted under the R1 task instructions issued to this subagent (readout-not-truth,
+        no forbidden words, same/different/cited comparison discipline, human-as-author-only) which shaped
+        which claims were selected and how they are worded.
+      decision_policy: Which of the ~10 claims to foreground, and how to word each falsifier, was an AI
+        drafting choice; the founder has not yet reviewed or selected among them (this is disclosed, not
+        concealed, per D-AIFILL).
+    assumed:
+    - id: A1
+      type: inferential_commitment
+      description: Assumes design/FOUNDATION_v0.5.md's cited section is the founder's currently-binding
+        intent and has not been silently superseded by a later, unread ruling.
+      identification_level: A1
+      contaminated_concept_hit: false
+    tested:
+      evidence_relations:
+      - evidence_id: self-read-foundation-v0.4
+        bearing: SUPPORTS
+        independence_class: I0
+        strength: same-session self-read; no standing as an independent check (§4.2 table)
+        citation_ref: design/FOUNDATION_v0.5.md
+      falsifier: A real, filled-in full-shape claim card that satisfies every kernel-checkable field (schema/claim_card.schema.json
+        passes) while an independent I5 reviewer finds the underlying licensing test (Q2) or the AI-fill
+        disclosure (Q3) actually false — showing the mechanical check does not track the epistemic property
+        it names.
+      dissent_records: []
+  identification_ladder:
+    layers:
+    - id: L0
+      adds: same-session self-read of the specification text
+    per_rival: []
+  provenance_dag:
+    nodes:
+    - id: n1
+      kind: specification_text
+    edges: []
+    essential_dependency_set:
+    - design/FOUNDATION_v0.5.md
+    defeater_log: []
+    status: not_run
+  silent_lift_check:
+    represented_dependency_set:
+    - design/FOUNDATION_v0.5.md
+    - this paper
+    actual_dependency_set:
+    - design/FOUNDATION_v0.5.md
+    - this paper
+    flags: []
+    status: not_run
+  scope:
+    generalization_claimed: none
+    evidence_scope: this repository's own specification and worked-example files, as read 2026-09-04
+    claim_scope: this repository's own specification and worked-example files, as read 2026-09-04
+  tier: Dr
+  k_state: K0
+  ledger:
+    forced: []
+    borrowed:
+    - Readout Condition E-A-D norm (cited, not re-proved)
+    open:
+    - whether this mechanism holds under a real independent (I3+) check
+  non_claims:
+  - Does not claim the kernel can verify Q2/Q3/Q4 for correctness, only for presence (chair ruling D2,
+    FOUNDATION_v0.5.md §3.1).
+  - Does not claim any real-world claim card (this repository's own included) has actually passed an independent
+    check yet — none has.
+  - Does not claim this mechanism is validated empirically; it is a specified design, tier Dr.
+  legal_epistemic_separation:
+    applicable: false
+    notes: no license/permit/certification is cited by this claim
+  independent_check:
+    status: NONE
+    maker_id: ai-anthropic/claude-sonnet-5 (Fable orchestration, R1 fixer seat)
+    checker_id: none-yet
+    approver_id: none-yet
+    independence_class: I0
+    mc_level: L0
+    date: '2026-09-04'
+    expires_at: null
+  disclaimers_emitted:
+  - id: D-STANDPOINT
+  - id: D-NONEXPERT
+  - id: D-TIER
+  - id: D-NONCLAIM
+  - id: D-INDEPENDENCE
+  - id: D-K-STATE
+  - id: D-AIFILL
+  - id: D-NO-VERTICAL-AUTHORITY
+  - id: D-CANDIDATE-STATUS
+  - id: D-BLACKBOX-NOTE
+  - id: D-SILENT-LIFT-GUARD
+  status: Draft
+  lineage:
+    derives_from:
+    - design/FOUNDATION_v0.5.md
+    supersedes: []
+    superseded_by: null
+  related_source_cards: []
+  related_observation_cards: []
+  related_citation_cards: *id001
+  human_owner: founder (Yaoharee Lahtee)
+  revision_history:
+  - rev: '0.1'
+    date: '2026-09-04'
+    by: ai-anthropic/claude-sonnet-5
+    note: First draft of this claim card, written for paper/main_th.md + main_en.md R1 task; not yet reviewed
+      by the founder or any independent checker.

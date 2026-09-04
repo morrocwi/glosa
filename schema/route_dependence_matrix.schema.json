@@ -1,0 +1,67 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://glosa.example/schema/route_dependence_matrix.schema.json",
+  "title": "glosa route dependence matrix",
+  "description": "tier: Dr (specified; independently unreviewed). Implements FOUNDATION_v0.5.md §4.3 (DVP mechanics) and templates/knowledge/route_dependence_matrix.yaml: makes residual correlation between DVP routes VISIBLE (never zeroed out). Binding invariants: ManyModels != Independence (NC-31); the max claim tier a route set can support is bounded by the HIGHEST independence level reached, never by route count. Namespace https://glosa.example/ is a placeholder.",
+  "type": "object",
+  "required": ["claim_ref", "acceptance_criteria_ref", "routes", "highest_independence_level_reached", "operator_decorrelation_control"],
+  "additionalProperties": true,
+  "properties": {
+    "claim_ref": { "type": "string", "minLength": 1 },
+    "acceptance_criteria_ref": {
+      "description": "Must be frozen BEFORE the first route ran -- this file records only the path, not the criteria text, so the two cannot silently drift apart.",
+      "type": "string", "minLength": 1
+    },
+    "routes": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["route_id", "vendor", "model", "operator", "role", "independence_level", "shared_with"],
+        "properties": {
+          "route_id": { "type": "string", "minLength": 1 },
+          "vendor": { "enum": ["anthropic", "openai", "google", "local", "other"] },
+          "model": { "type": "string", "minLength": 1 },
+          "prompt_ancestry": { "type": "string" },
+          "operator": { "type": "string", "minLength": 1 },
+          "role": {
+            "enum": ["Advocate", "NearestConceptProsecutor", "Falsifier", "SourceAuditor", "HostileReviewer", "TranslationReviewer", "MethodEmpiricalDesigner"]
+          },
+          "evidence_base": { "type": "string" },
+          "external_anchor": { "type": ["string", "null"] },
+          "shared_with": { "type": "array", "items": { "type": "string" } },
+          "independence_level": { "$ref": "common.defs.json#/definitions/independence_class" },
+          "review_report_ref": { "type": "string" }
+        }
+      }
+    },
+    "highest_independence_level_reached": { "$ref": "common.defs.json#/definitions/independence_class" },
+    "local_model_attempted": { "type": "boolean" },
+    "operator_decorrelation_control": {
+      "type": "object",
+      "required": ["acceptance_criteria_frozen_before_first_route", "route_identity_blinded_for_synthesis", "presentation_order_randomized", "query_stop_rule_respected"],
+      "properties": {
+        "acceptance_criteria_frozen_before_first_route": { "type": "boolean" },
+        "route_identity_blinded_for_synthesis": { "type": "boolean" },
+        "presentation_order_randomized": { "type": "boolean" },
+        "query_stop_rule_respected": { "type": "boolean" }
+      }
+    },
+    "geographic_distribution_audit_applied": { "type": ["boolean", "null"] },
+    "disagreement_ledger_refs": { "type": "array", "items": { "type": "string" } },
+    "resulting_disclaimers": { "type": "array", "items": { "$ref": "common.defs.json#/definitions/disclaimer_id" } },
+    "notes": { "type": "string" }
+  },
+  "allOf": [
+    {
+      "description": "Fewer than 3 materially different routes for an L2+ claim is a partial set (D-PARTIAL-SET), never silently padded -- schema-checkable minItems only; whether 3 routes are MATERIALLY different is kernel/human-judged.",
+      "if": { "properties": { "routes": { "type": "array", "minItems": 1, "maxItems": 2 } } },
+      "then": { "properties": { "resulting_disclaimers": { "type": "array", "contains": { "const": "D-PARTIAL-SET" } } } }
+    },
+    {
+      "description": "query_stop_rule_respected: false is a SCRAM-listed answer-shopping condition (S10 §9) -- must surface as a disclaimer, never silently pass.",
+      "if": { "properties": { "operator_decorrelation_control": { "type": "object", "properties": { "query_stop_rule_respected": { "const": false } } } } },
+      "then": { "properties": { "resulting_disclaimers": { "type": "array", "minItems": 1 } } }
+    }
+  ]
+}

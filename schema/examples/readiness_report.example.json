@@ -1,0 +1,23 @@
+{
+  "report_id": "rr-glosa-schema-20260904-0001",
+  "project": "schema-build (Task B1)",
+  "scope": "Write schema/*.schema.json for the 20 named glosa objects, plus one valid example and the required fail fixtures, then validate all of them with jsonschema.",
+  "cards_read": [
+    "design/FOUNDATION_v0.5.md",
+    "design/REPO_SPEC_v0.5.md",
+    "design/S14_literature-review-system.md",
+    "AGENTS.md",
+    "templates/knowledge/*.yaml|md"
+  ],
+  "blockers": [ { "text": "none", "resolved": true } ],
+  "negatives": [
+    "FOUNDATION_v0.5.md §12 records several field vocabularies still undecided (e.g. licensing_test.regime) that this schema pass had to fill in with a reasonable, flagged default"
+  ],
+  "positives": [
+    "templates/knowledge/*.yaml give exact field names to reuse for most of the 20 schemas"
+  ],
+  "verdict": "READY",
+  "checked_by": "AI assistant (fixer seat)",
+  "checked_at": "2026-09-04",
+  "tier": "Dr"
+}

@@ -1,0 +1,39 @@
+# glosa — leak denylist (SAFE generic patterns only, no real secrets, no real values)
+#
+# Read by scripts/check_leak.sh. One extended-regex (grep -E) pattern per line.
+# Blank lines and lines starting with # are ignored.
+# This file must never contain a real credential, real hostname, real IP, real
+# username, or real session id — patterns only.
+
+# --- local filesystem paths that leak this workstation's identity ---
+/home/[A-Za-z0-9_.-]+/ANSE\.ASIA
+/home/[A-Za-z0-9_.-]+/\.config/glosa
+/home/[A-Za-z0-9_.-]+/\.claude
+
+# --- private/internal network ranges ---
+\b192\.168\.[0-9]{1,3}\.[0-9]{1,3}\b
+\b10\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\b
+
+# --- session-id shape: 8-4-4-4-12 lowercase-hex UUID (e.g. 01234567-89ab-...) ---
+\b[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}\b
+
+# --- internal org / vendor / infra names not for public disclosure ---
+packetlove
+ARAYAVAULT
+newsati\.packetlove\.com
+
+# --- private repo names, only when they appear as path fragments ---
+(^|[/ (])cpg(/|$)
+
+# --- self-hosted git host ---
+forgejo\.[A-Za-z0-9_.-]*\.(local|lan)
+:3000/anse/
+git@[A-Za-z0-9_.-]+:2222
+
+# --- token-looking strings (long opaque base64/hex secrets) ---
+\bAKIA[0-9A-Z]{16}\b
+\bghp_[A-Za-z0-9]{36}\b
+\bxox[baprs]-[A-Za-z0-9-]{10,}\b
+\bsk-[A-Za-z0-9]{20,}\b
+\b[A-Za-z0-9_-]{32,}\.[A-Za-z0-9_-]{6,}\.[A-Za-z0-9_-]{20,}\b
+# private names live in scripts/leak_denylist.local.txt (git-ignored), read by check_leak.sh when present

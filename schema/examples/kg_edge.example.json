@@ -1,0 +1,12 @@
+{
+  "id": "edge-0001",
+  "from": "claim-cat-0001",
+  "to": "cite-cat-obs-001",
+  "relation": "cites",
+  "strength": null,
+  "asserted_by": "founder",
+  "asserted_at": "2026-09-04",
+  "independence_class": "I1",
+  "status": "ACTIVE",
+  "notes": ""
+}

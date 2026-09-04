@@ -1,0 +1,21 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://glosa.example/schema/kg_edge.schema.json",
+  "title": "glosa kg edge",
+  "description": "tier: Dr (specified; independently unreviewed). Implements FOUNDATION_v0.5.md §8.1: one edge per typed relation between two kg nodes, append-only (a correction is a NEW line with status RETRACTED on the old edge, never an in-place edit). `derives_from` vs `borrows` is deliberate and non-collapsible (forced/borrowed/Open ledger): derives_from = a shown, checkable derivation step; borrows = an imported anchor taken on trust, not re-derived. Namespace https://glosa.example/ is a placeholder.",
+  "type": "object",
+  "required": ["id", "from", "to", "relation", "asserted_by", "independence_class", "status"],
+  "additionalProperties": true,
+  "properties": {
+    "id": { "type": "string", "minLength": 1 },
+    "from": { "type": "string", "minLength": 1 },
+    "to": { "type": "string", "minLength": 1 },
+    "relation": { "enum": ["supports", "challenges", "derives_from", "borrows", "supersedes", "cites"] },
+    "strength": { "type": ["string", "null"] },
+    "asserted_by": { "$ref": "common.defs.json#/definitions/role_or_human" },
+    "asserted_at": { "type": "string" },
+    "independence_class": { "$ref": "common.defs.json#/definitions/independence_class" },
+    "status": { "enum": ["ACTIVE", "DISPUTED", "RETRACTED"] },
+    "notes": { "type": "string" }
+  }
+}

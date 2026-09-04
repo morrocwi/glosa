@@ -1,0 +1,47 @@
+{
+  "schema": "glosa/author_profile v0.1",
+  "recorded": "2026-09-04",
+  "source": "<where this came from>",
+  "creators": [
+    {
+      "person_or_org": {
+        "type": "personal",
+        "family_name": "<FAMILY>",
+        "given_name": "<GIVEN>",
+        "identifiers": [
+          {
+            "scheme": "orcid",
+            "identifier": "<0000-0000-0000-0000>"
+          }
+        ]
+      },
+      "affiliations": [
+        {
+          "name": "<affiliation or 'Independent'>"
+        }
+      ]
+    }
+  ],
+  "author": {
+    "given_name": "<GIVEN>",
+    "family_name": "<FAMILY>",
+    "orcid": "<...>",
+    "affiliation": "<...>",
+    "email_role": "corresponding author (email in secrets.env)"
+  },
+  "standpoint": {
+    "declared_basis": "<who speaks, from what basis>",
+    "disciplines_not_claimed": [
+      "<...>"
+    ],
+    "method_basis": "<...>"
+  },
+  "attribution_rule": "Research direction and core ideas: Yaoharee Lahtee (human author). AI assistance (survey, drafting, structuring, adversarial review): disclosed in the work, never in authorship.",
+  "defaults": {
+    "license": "CC-BY-4.0",
+    "zenodo_upload_type": "software",
+    "github_owner": "morrocwi",
+    "forgejo_org": "anse",
+    "language_source_of_truth": "th"
+  }
+}

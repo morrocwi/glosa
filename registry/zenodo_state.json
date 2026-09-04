@@ -1,0 +1,18 @@
+{
+ "bucket_url": "https://zenodo.org/api/files/<uuid>",
+ "conceptrecid": "22301059",
+ "created": "2026-09-04T09:23:45.199361+00:00",
+ "deposition_id": 22301060,
+ "files_uploaded": [
+  "glosa-0.1.0-a9c0487.tar.gz",
+  "glosa-paper-0.1.0-th.pdf",
+  "glosa-paper-0.1.0-en.pdf"
+ ],
+ "head_commit": "a9c0487",
+ "prereserved_doi": "10.5281/zenodo.22301060",
+ "sandbox": false,
+ "status": "published",
+ "version": "0.1.0",
+ "doi": "10.5281/zenodo.22301060",
+ "published_at": "2026-09-04"
+}

@@ -1,0 +1,121 @@
+name: glosa CI
+
+# Readout, not truth: these jobs report what they mechanically checked.
+# Green CI is not a certification of the methodology's correctness or of
+# release-readiness — see RELEASE_CHECKLIST.md for the actual publish gate
+# (which requires an independent human/adversarial review this workflow
+# cannot substitute for).
+
+on:
+  push:
+    branches: ["main", "design/**"]
+  pull_request:
+    branches: ["main", "design/**"]
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+
+jobs:
+  repo-consistency:
+    name: check_repo.sh
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Run check_repo.sh
+        run: bash scripts/check_repo.sh
+
+  version-consistency:
+    name: check_version.py
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+      - name: Run check_version.py
+        run: python3 scripts/check_version.py
+
+  forbidden-words:
+    name: check_forbidden_words.sh
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run check_forbidden_words.sh
+        run: bash scripts/check_forbidden_words.sh
+
+  leak-scan:
+    name: check_leak.sh
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run check_leak.sh
+        run: bash scripts/check_leak.sh
+
+  unit-tests:
+    name: python unit tests
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+      - name: Discover tests/ (skip if absent)
+        run: |
+          if [ -d tests ]; then
+            python3 -m unittest discover -s tests -v
+          else
+            echo "no tests/ directory yet — skipping (not a failure)"
+          fi
+
+  schema-validate:
+    name: jsonschema validate schema/examples
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+      - name: Install jsonschema
+        run: pip install jsonschema
+      - name: Validate every schema/examples/* against its schema (fails if 0 checked)
+        run: python3 scripts/validate_examples.py
+
+  jsonschema-uninstalled:
+    name: unit tests without jsonschema (MUST-4 fail-closed regression guard)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+      - name: Confirm jsonschema is NOT importable in this job
+        run: |
+          python3 -c "import jsonschema" && { echo "jsonschema IS importable — this job must run without it"; exit 1; } || true
+      - name: Run tests/ with jsonschema uninstalled (skip if tests/ absent)
+        run: |
+          if [ -d tests ]; then
+            python3 -m unittest discover -s tests -v
+          else
+            echo "no tests/ directory yet — skipping (not a failure)"
+          fi
+
+  latex-build:
+    name: LaTeX build (optional, only if paper/latex/main.tex exists)
+    runs-on: ubuntu-latest
+    container:
+      image: texlive/texlive:latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Compile paper/latex/main.tex if present
+        run: |
+          if [ -f paper/latex/main.tex ]; then
+            cd paper/latex
+            latexmk -pdf -interaction=nonstopmode -halt-on-error main.tex
+          else
+            echo "no paper/latex/main.tex yet — skipping (not a failure)"
+          fi

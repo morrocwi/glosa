@@ -1,0 +1,126 @@
+{
+  "_meta": {
+    "tier": "Dr (specified; independently unreviewed)",
+    "one_fact_one_home": "This table generalizes the pre-write-checklist pattern from information-discrete-math's contaminated-concept table (mathematics-specific) to glosa's own domain (knowledge-legitimacy phrasing). Pattern only — no private text copied.",
+    "source": [
+      "information-discrete-math skill (pattern: phrase -> smuggled non-readout -> disciplined replacement), re-derived for RWI's own domain",
+      "design/FOUNDATION_v0.5.md §5 (D-NO-VERTICAL-AUTHORITY, D-COMPARISON) and Appendix A (NC-03, NC-13, NC-31, NC-60)"
+    ],
+    "how_to_use": "Before writing a claim, a review_report, or a public-facing sentence: grep the draft for the `phrase` column. If found, replace with the `disciplined_replacement` and cite the `enforced_by` field/gate it now routes through.",
+    "generated": "2026-09-04"
+  },
+  "contaminated_concepts": [
+    {
+      "phrase": "consensus",
+      "what_it_smuggles": "That agreement among a group of people is itself evidence the claim is true — silently promotes headcount to a truth oracle.",
+      "disciplined_replacement": "State who agrees, on what basis, at what independence level (I0-I5), and whether their agreement was reached independently or by shared exposure to the same source.",
+      "enforced_by": "independence_ladder.json; D-INDEPENDENCE-LEVEL",
+      "nc_ref": [
+        "NC-31",
+        "NC-41"
+      ]
+    },
+    {
+      "phrase": "obvious",
+      "what_it_smuggles": "Skips stating any warrant at all — presents a claim as needing no evidence because the author finds it self-evident.",
+      "disciplined_replacement": "Name the actual evidence relation and its tier, or mark the claim Dr/Open if no warrant is on file.",
+      "enforced_by": "claim_card.tier; claim_card.tested.falsifier (required, non-empty)",
+      "nc_ref": [
+        "NC-06",
+        "NC-08"
+      ]
+    },
+    {
+      "phrase": "well known",
+      "what_it_smuggles": "Substitutes a vague appeal to shared background belief for a checkable citation.",
+      "disciplined_replacement": "Cite the specific source(s) this is well known from, with citation_card.status, or drop the phrase.",
+      "enforced_by": "citation_card; D-CITATION-UNVERIFIED",
+      "nc_ref": [
+        "NC-18",
+        "NC-47"
+      ]
+    },
+    {
+      "phrase": "proven",
+      "what_it_smuggles": "Collapses the tier ladder — implies Th_coqc-grade machine-checked certainty regardless of what was actually done.",
+      "disciplined_replacement": "Name the actual tier (Th_coqc / finite_diagnostic / fit_calibrated / Dr / definition) that was actually reached.",
+      "enforced_by": "claim_card.tier (closed enum); D-TIER",
+      "nc_ref": [
+        "NC-10",
+        "NC-11"
+      ]
+    },
+    {
+      "phrase": "validated by experts",
+      "what_it_smuggles": "Imports institutional/credentialed authority as if it were an epistemic lever, and hides which independence level (if any) the validation reached.",
+      "disciplined_replacement": "Name who reviewed it, in what role (maker/checker/approver), at what independence_class — or state that no such review has occurred.",
+      "enforced_by": "D-NO-VERTICAL-AUTHORITY; independence_ladder.json",
+      "nc_ref": [
+        "NC-03",
+        "NC-28",
+        "NC-45"
+      ]
+    },
+    {
+      "phrase": "peer reviewed therefore true",
+      "what_it_smuggles": "Treats institutional acceptance as a truth oracle rather than a channel-opener; conflates legitimacy with truth.",
+      "disciplined_replacement": "State that peer review is a legitimacy/channel fact (D-NO-VERTICAL-AUTHORITY) and separately state the claim's own tier and independence class.",
+      "enforced_by": "D-NO-VERTICAL-AUTHORITY; D-DVP-NOT-K2",
+      "nc_ref": [
+        "NC-03",
+        "NC-13",
+        "NC-32"
+      ]
+    },
+    {
+      "phrase": "novel",
+      "what_it_smuggles": "Frames the work as a priority/originality contest instead of describing what it actually does — forbidden word (§ binding rules).",
+      "disciplined_replacement": "Describe the mechanism and cite neighbours as same/different/cited (never a novelty claim).",
+      "enforced_by": "D-COMPARISON; neighbour_table.md",
+      "nc_ref": [
+        "NC-38",
+        "NC-39"
+      ]
+    },
+    {
+      "phrase": "first",
+      "what_it_smuggles": "Asserts historical priority, which is rarely checkable and is a forbidden framing in this repo regardless of accuracy.",
+      "disciplined_replacement": "State only what the artifact does and how it compares (same/different/cited) — never a priority claim.",
+      "enforced_by": "D-COMPARISON; neighbour_table.md",
+      "nc_ref": [
+        "NC-38",
+        "NC-39"
+      ]
+    },
+    {
+      "phrase": "gold standard",
+      "what_it_smuggles": "Implies an uncontested, maximal-tier benchmark exists and this claim meets or was measured against it, without naming the actual comparator or its own tier.",
+      "disciplined_replacement": "Name the specific comparator, its tier, and the measurement that was actually run.",
+      "enforced_by": "claim_card.tier; claim_card.tested",
+      "nc_ref": [
+        "NC-10",
+        "NC-11"
+      ]
+    },
+    {
+      "phrase": "best practice",
+      "what_it_smuggles": "Smuggles institutional/professional-consensus authority as settled fact without naming who set the practice or on what evidence.",
+      "disciplined_replacement": "Name the source of the practice recommendation and its own tier/independence class, or state it is the author's own judgment (Dr).",
+      "enforced_by": "D-NO-VERTICAL-AUTHORITY; claim_card.tier",
+      "nc_ref": [
+        "NC-03",
+        "NC-13"
+      ]
+    },
+    {
+      "phrase": "settled science",
+      "what_it_smuggles": "Collapses an entire research programme's open questions into a single closed verdict.",
+      "disciplined_replacement": "Name the specific claim, its tier, and its own non_claims — a programme is never one tier.",
+      "enforced_by": "claim_card.tier; claim_card.non_claims",
+      "nc_ref": [
+        "NC-11",
+        "NC-35"
+      ]
+    }
+  ]
+}

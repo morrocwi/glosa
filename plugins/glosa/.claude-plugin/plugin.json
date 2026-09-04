@@ -1,0 +1,11 @@
+{
+  "name": "glosa",
+  "version": "0.1.0",
+  "description": "Rigour Without Infrastructure: claim cards, Blackbox Note discipline, independent-check ladder (I0-I5), literature review system, publish gate, and project advisor for solo human-AI knowledge co-production. Tier Dr, K0 public working release: timestamped and citable, not peer reviewed, no independent check yet.",
+  "author": {
+    "name": "Yaoharee Lahtee",
+    "url": "https://orcid.org/0009-0005-3861-0626"
+  },
+  "license": "CC-BY-4.0",
+  "homepage": "https://github.com/morrocwi/glosa"
+}

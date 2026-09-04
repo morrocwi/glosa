@@ -1,0 +1,31 @@
+{
+ "route": "codex-cli 0.143.0 (OpenAI) — cross-vendor, read-only, judged from Zenodo API metadata only",
+ "independence_class": "I3",
+ "date": "2026-09-04",
+ "verdicts": [
+  {
+   "doi": "10.5281/zenodo.21529456",
+   "metadata_matches_lens_reference": true,
+   "claim_match": true,
+   "reason": "The title and abstract explicitly describe Readout Genesis, retained distinctions, declared quotients/readouts, and deny truth/knowledge as primitives, matching the readout-not-truth and retained-distinction parts of the lens."
+  },
+  {
+   "doi": "10.5281/zenodo.21665100",
+   "metadata_matches_lens_reference": true,
+   "claim_match": true,
+   "reason": "The abstract explicitly centers retained difference/distinction and explains zero readout as the failure of retained distinction, matching the retained-distinction claim."
+  },
+  {
+   "doi": "10.5281/zenodo.22301318",
+   "metadata_matches_lens_reference": true,
+   "claim_match": true,
+   "reason": "The abstract explicitly defines the Readout Condition as existence, attribution, and disclosure, matching the Existence-Attribution-Disclosure claim."
+  },
+  {
+   "doi": "10.5281/zenodo.22301202",
+   "metadata_matches_lens_reference": true,
+   "claim_match": true,
+   "reason": "The title and abstract explicitly address AI authorship, truth, epistemic pedigree, and the human knower as a mistaken basis for truth, matching the knower-fetishism claim."
+  }
+ ]
+}

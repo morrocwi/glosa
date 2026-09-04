@@ -1,0 +1,24 @@
+# Publish gate v1 — public summary (glosa v0.1.0, 2026-09-04)
+
+Route: independent multi-agent adversarial gate (R1 leak · R2 license · R3 tier fidelity ·
+R4 citation · R5 anchor consistency · R6 register/overclaim · R7 completeness), each finding
+challenged by skeptics; then a second independent re-verify pass on the fixes. Maker ≠ checker.
+Tier of every verdict: finite_diagnostic. K-state of the release: K0.
+
+| id | class | finding (sanitized) | status |
+|----|-------|---------------------|--------|
+| B-1 | leak | session drafts and a session-id fragment tracked | fixed: drafts untracked, fragment redacted, denylist extended (local) |
+| B-2 | leak | internal survey/plan/review files named private repositories | fixed: files untracked; remaining names generalized; private-name patterns moved to a git-ignored local denylist |
+| B-3 | leak | local file inventory tracked | fixed: untracked |
+| B-4 | accuracy | sources/ status table overstated what is present | fixed: PRESENT / NOT_PRESENT stated per file |
+| B-5 | consistency | K-state asserted as K1 without an I3 route | fixed: K0 everywhere; K1 requires I3 |
+| B-6 | self-consistency | paper said it could not clear its own lens-citation gate | fixed: VERIFIED I3 lens citation cards; EN/TH/LaTeX aligned |
+| B-7 | citation | reserved DOI resolves only after publish | disclosed; published at push time |
+| B-8 | citation | no VERIFIED citation card for the lens DOIs | fixed: cross-vendor (I3) claim-match, record in registry/verification/ |
+| B-9 | metadata | invalid Zenodo relation | fixed |
+| B-10 | provenance | Blackbox Log pre-release history had a removal + restore | disclosed as append-only correction entry; rule text qualified |
+| B-11 | release | stale draft archive on Zenodo | fixed: HEAD archive + PDFs uploaded before publish |
+
+Warnings (non-blocking) were fixed where mechanical (CHANGELOG, README pointers, duplicated
+wording) and otherwise carried in RELEASE_CHECKLIST.md. The verbatim packets exist locally and
+can be shown to any reviewer on request; they are not public because of what they quote.

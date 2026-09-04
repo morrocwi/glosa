@@ -1,0 +1,124 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://glosa.example/schema/release_manifest.schema.json",
+  "title": "glosa release manifest",
+  "description": "tier: Dr (specified; independently unreviewed). Implements FOUNDATION_v0.5.md §7.4 (release state machine + PUB-ADVERSARIAL-REVIEW's seven dimensions R1-R7) and the mandatory Blackbox Note appendix precondition on every genre's Publish node (§6.4). Read by the Project Advisor's `advise()` precondition check (templates/knowledge/advisor_prompt_packet.md step 1: 'Confirm gate_verdict is PASS or PASS_WITH_LIMITS'). Namespace https://glosa.example/ is a placeholder.",
+  "type": "object",
+  "required": ["manifest_id", "artifact_refs", "gate_verdict", "adversarial_review", "status", "blackbox_note_appendix_present", "human_owner"],
+  "additionalProperties": true,
+  "properties": {
+    "manifest_id": { "type": "string", "pattern": "^rel-[a-z0-9-]+-[0-9]{3,4}$" },
+    "artifact_refs": {
+      "type": "object",
+      "required": ["claim_ids"],
+      "properties": {
+        "claim_ids": { "type": "array", "minItems": 1, "items": { "type": "string" } },
+        "citation_card_ids": { "type": "array", "items": { "type": "string" } },
+        "project_ref": { "type": "string" },
+        "genre": { "$ref": "common.defs.json#/definitions/genre" },
+        "venue_track": { "$ref": "common.defs.json#/definitions/venue_track" }
+      }
+    },
+    "gate_verdict": { "$ref": "common.defs.json#/definitions/gate_verdict" },
+    "adversarial_review": {
+      "type": "object",
+      "description": "PUB-ADVERSARIAL-REVIEW, seven dimensions (§7.4) -- run by an independent pass, never the maker.",
+      "required": ["r1_leak_scan", "r2_license_coverage", "r3_tier_fidelity", "r4_citation_accuracy", "r5_anchor_preservation_audit", "r6_overclaim_register_scan", "r7_completeness", "reviewed_by"],
+      "properties": {
+        "r1_leak_scan": { "$ref": "#/definitions/dimension_result" },
+        "r2_license_coverage": { "$ref": "#/definitions/dimension_result" },
+        "r3_tier_fidelity": { "$ref": "#/definitions/dimension_result" },
+        "r4_citation_accuracy": { "$ref": "#/definitions/dimension_result" },
+        "r5_anchor_preservation_audit": { "$ref": "#/definitions/dimension_result" },
+        "r6_overclaim_register_scan": { "$ref": "#/definitions/dimension_result" },
+        "r7_completeness": { "$ref": "#/definitions/dimension_result" },
+        "reviewed_by": { "$ref": "common.defs.json#/definitions/role_or_human" },
+        "reviewed_at": { "type": "string" }
+      }
+    },
+    "independent_check_summary": {
+      "type": "object",
+      "properties": {
+        "maker_id": { "type": "string" },
+        "checker_id": { "type": "string" },
+        "approver_id": { "type": "string" },
+        "independence_class": { "$ref": "common.defs.json#/definitions/independence_class" },
+        "mc_level": { "$ref": "common.defs.json#/definitions/mc_level" },
+        "approver_kind": {
+          "description": "MUST-7 (ARCH_integrity.md F1 / kernel/glosa_kernel.py's _human_approver_error_for_manifest): names whether the approver_id above is a human or an AI identity. Required, and must be 'human', once status reaches Approved-for-Live, k_state_declared reaches K2/K3, or mc_level reaches L5 -- an AI identity never satisfies the Approver role at these gates (FOUNDATION_v0.5.md §7.1; AGENTS.md rule 5, 'AI is never an author').",
+          "enum": ["human", "ai"]
+        }
+      }
+    },
+    "blackbox_note_appendix_present": {
+      "description": "Hard precondition on every genre's Publish node (§6.4) -- a release with this false must not reach Approved-for-Live.",
+      "type": "boolean"
+    },
+    "blackbox_note_appendix_ref": { "type": ["string", "null"] },
+    "k_state_declared": { "$ref": "common.defs.json#/definitions/k_state" },
+    "status": { "$ref": "common.defs.json#/definitions/release_status" },
+    "disclaimers_emitted": {
+      "type": "array",
+      "items": { "$ref": "common.defs.json#/definitions/disclaimer_ref" }
+    },
+    "human_owner": { "type": "string", "minLength": 1 },
+    "revision_history": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": { "rev": { "type": "string" }, "date": { "type": "string" }, "by": { "type": "string" }, "note": { "type": "string" } }
+      }
+    }
+  },
+  "definitions": {
+    "dimension_result": {
+      "type": "object",
+      "required": ["result"],
+      "properties": {
+        "result": { "$ref": "common.defs.json#/definitions/gate_verdict" },
+        "notes": { "type": "string" }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "description": "The mandatory Blackbox Note appendix precondition (§2.4, §6.4): a manifest may not reach Approved-for-Live without it.",
+      "if": { "properties": { "status": { "const": "Approved-for-Live" } } },
+      "then": { "properties": { "blackbox_note_appendix_present": { "const": true } } }
+    },
+    {
+      "description": "gate_verdict FAIL cannot coexist with an Approved-for-Live/Approved-for-Test status.",
+      "if": { "properties": { "gate_verdict": { "const": "FAIL" } } },
+      "then": { "properties": { "status": { "enum": ["Draft", "Pending Review", "Rollback"] } } }
+    },
+    {
+      "description": "MUST-7: status Approved-for-Live, k_state_declared K2/K3, or independent_check_summary.mc_level L5 requires a human Approver -- independent_check_summary.approver_kind must be 'human', not merely present.",
+      "if": {
+        "anyOf": [
+          { "properties": { "status": { "const": "Approved-for-Live" } }, "required": ["status"] },
+          { "properties": { "k_state_declared": { "enum": ["K2", "K3"] } }, "required": ["k_state_declared"] },
+          {
+            "properties": {
+              "independent_check_summary": {
+                "type": "object",
+                "properties": { "mc_level": { "const": "L5" } },
+                "required": ["mc_level"]
+              }
+            },
+            "required": ["independent_check_summary"]
+          }
+        ]
+      },
+      "then": {
+        "properties": {
+          "independent_check_summary": {
+            "type": "object",
+            "properties": { "approver_kind": { "const": "human" } },
+            "required": ["approver_kind"]
+          }
+        },
+        "required": ["independent_check_summary"]
+      }
+    }
+  ]
+}

@@ -1,0 +1,114 @@
+{
+  "_meta": {
+    "tier": "Dr (specified; independently unreviewed)",
+    "one_fact_one_home": "independence_class is the string ladder I0..I5 in every schema that carries it (claim card, evidence relation, review report, citation card, kg edge). Any 0-5 ordinal is a derived mapping computed in the kernel only, never a second schema-level field.",
+    "source": [
+      "design/FOUNDATION_v0.5.md §4.2 (chair ruling C1)"
+    ],
+    "bounded_i2_i4_exception": {
+      "rule": "A scholar reaching only one vendor may publish at K1 only with I2 plus an I4 mechanical/original-record check, carrying D-SAME-VENDOR and independent_check.expires_at <= 90 days from date. After expiry, either an I3+ route replaces it or the card drops to K0.",
+      "source": "FOUNDATION_v0.5.md §4.2 chair ruling B4"
+    },
+    "local_model_dvp_route": {
+      "rule": "A local-model route counts as I3 only when its model family is vendor-distinct from every other route in the set; otherwise it is treated as I2.",
+      "source": "FOUNDATION_v0.5.md §4.2 chair ruling B5"
+    },
+    "orthogonal_role_not_on_ladder": {
+      "role": "Founder as Approver",
+      "definition": "Release authority, never a verification level.",
+      "can_raise": "Authorizes release",
+      "cannot_raise": "Never substitutes for I5 as a check",
+      "mc_ordinal": 5
+    },
+    "ordering_rule": "The maximum claim tier a route set can support is bounded by the highest independence level actually reached, never by the count of routes at a lower level (ManyModels ⇏ Independence, NC-31).",
+    "generated": "2026-09-04"
+  },
+  "independence_ladder": [
+    {
+      "level": "I0",
+      "name": "Self",
+      "definition": "Same session re-reads its own output.",
+      "can_raise": [],
+      "cannot_raise": [
+        "tier",
+        "k_state"
+      ],
+      "k_ceiling": "K0",
+      "mc_ordinal": 0,
+      "note": "Not a `tested:` entry at all."
+    },
+    {
+      "level": "I1",
+      "name": "Same model, new session",
+      "definition": "Fresh conversation, identical model.",
+      "can_raise": [
+        "L1 \"2nd reader\" only"
+      ],
+      "cannot_raise": [
+        "L2+ DVP minimum",
+        "K1 floor"
+      ],
+      "k_ceiling": "K0",
+      "mc_ordinal": 1,
+      "note": null
+    },
+    {
+      "level": "I2",
+      "name": "Same vendor, other model",
+      "definition": "Different model, same vendor.",
+      "can_raise": [
+        "One DVP route toward L2's >=3 minimum; part of the bounded I2+I4 exception"
+      ],
+      "cannot_raise": [
+        "K1 floor alone (I3+ or the bounded exception required)",
+        "Th_coqc/finite_diagnostic alone"
+      ],
+      "k_ceiling": "K0 -> K1 only combined with I3+, or the bounded I2+I4 exception",
+      "mc_ordinal": "2 (weak)",
+      "note": null
+    },
+    {
+      "level": "I3",
+      "name": "Different vendor",
+      "definition": "Materially different model family/vendor.",
+      "can_raise": [
+        "Founder-set minimum bar for K1 public-provisional — a minimum, never sufficient alone (Bounded-Judge Law)",
+        "finite_diagnostic/Dr where routes reproduce a mechanical result"
+      ],
+      "cannot_raise": [
+        "Never K2 (DVP != K2)",
+        "never Th_coqc alone"
+      ],
+      "k_ceiling": "K1 (floor), never K2",
+      "mc_ordinal": "2 (strong)",
+      "note": "I3 is the K1 floor per §2.2/§6.4; never sufficient by itself."
+    },
+    {
+      "level": "I4",
+      "name": "Mechanical / original-record",
+      "definition": "Proof kernel, executed test, schema validator, direct original-source lookup.",
+      "can_raise": [
+        "Th_coqc (proof) or finite_diagnostic (executed, reproducible)",
+        "paired with I2 under the bounded I2+I4 exception"
+      ],
+      "cannot_raise": [
+        "K-state alone (no human friction occurred)"
+      ],
+      "k_ceiling": "K1 unless combined with I5",
+      "mc_ordinal": 3,
+      "note": null
+    },
+    {
+      "level": "I5",
+      "name": "Independent external human (non-founder)",
+      "definition": "A person outside this session's authorship.",
+      "can_raise": [
+        "The only route to K2 (and, with formal/empirical constraint, K3)"
+      ],
+      "cannot_raise": [],
+      "k_ceiling": "K2/K3",
+      "mc_ordinal": 4,
+      "note": null
+    }
+  ]
+}

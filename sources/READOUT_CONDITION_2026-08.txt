@@ -1,0 +1,1674 @@
+The Readout Condition
+
+Distinguishability, Access, and Epistemic Warrant
+Yaoharee Lahtee1
+1
+
+Independent Scholar, Bangkok, Thailand, ORCID: 0009-0005-3861-0626
+August 2026
+
+Abstract
+
+not whether all downstream specificity is forbidden, but
+what supplied it and whether it is attributed correctly.
+This paper calls the governing requirement the Readout Condition. The mature form defended here has
+three logically distinct components.
+
+Claims routinely distinguish more finely than the access
+sources invoked on their behalf. The central epistemic
+problem is not merely whether the resulting claim is
+true or justified, but whether each distinction in it is
+correctly attributed to the source, model, background
+evidence, relevance restriction, or decision rule that actually supplied the discrimination. This paper develops
+the Readout Condition as a necessary architecture for
+source-relative epistemic warrant. Its core is a threepart norm: existence (every claim-level distinction has
+an epistemic provenance path), attribution (a distinction
+credited to a source must be licensed by that source), and
+disclosure (essential augmentations must remain visible to
+audit). In the exact functional case, source attribution requires constancy on readout fibers and hence factorization
+through the readout. For non-transitive indiscriminability, the correct extension is pointwise: a claim token at
+an actual alternative is licensed only if its local indiscriminability neighbourhood lies inside the claim-value
+fiber, avoiding an illicit transitive closure. In stochastic settings, Blackwell garbling provides an access audit
+but cannot by itself detect assumption-driven silent lifts;
+a complementary identification ladder tracks the weakest augmentation layer at which a distinction becomes
+identified. The resulting typed provenance DAG supports a defeater-routing result: source-specific defeaters
+propagate exactly along the distinctions that depend
+on that source, while misattribution misroutes defeat
+and correction. Classical and pre-modern pressure tests
+from Dignāga–Dharmakı̄rti, Madhyamaka, Avicenna, and
+Suhrawardı̄ constrain the framework’s neutrality. The
+proposed contribution is not a new factorization theorem, data-processing inequality, or general notion of
+provenance, but a unified distinction-level architecture
+linking access, identification, attribution, disclosure, and
+epistemic revision.
+
+Principle 1 (Existence). Every claim-level distinction
+that bears epistemic weight must have an epistemic provenance path.
+Principle 2 (Attribution). If a claim attributes a distinction to a source S, then S must license that distinction
+under the relevant access condition.
+Principle 3 (Disclosure). If a distinction depends essentially on an augmentation beyond the attributed source,
+that augmentation must remain declared or recoverable
+in an epistemic audit.
+The conjunction is the Readout Condition. It is
+stronger than a generic demand for provenance and
+weaker than a complete theory of knowledge. It permits
+theory, priors, models, testimony, background evidence,
+relevance restrictions, and decision policies; what it forbids is an epistemically consequential distinction with no
+traceable ground, a false attribution of that distinction to
+the wrong ground, or a representation of an augmented
+conclusion as though it were contained in the original
+source.
+The distinction between truth, source support, and
+source attribution is crucial. A claim may be true while
+its source attribution is false. A claim may also be well
+warranted overall through a plurality of grounds while
+not being warranted by the source to which it is credited.
+The title’s reference to epistemic warrant is therefore not
+the claim that factorization is a sufficient condition for
+knowledge. Rather, the paper argues that source-relative
+warrant is a genuine component of epistemic evaluation,
+and that misattribution can become a warrant defeater
+when the alleged source is an essential ground of the
+subject’s justification or assertion.
+
+1. Introduction
+Conceptual and operational lineage. The Readout
+Condition is a standalone philosophical extraction from a
+broader public Readout Universe programme rather than
+a vocabulary assembled for this manuscript. The repository’s July 2026 Information DNA already treated distinguishability, retention, accessibility, identity-locking, and
+lens discipline as distinct requirements; its Translation
+Protocol imposed an identifiability gate before an answer
+
+Epistemic practices routinely transform limited access
+into specific claims. A thermometer produces a reading;
+a clinician receives a test result; a witness reports an
+event; a classifier emits a label; an institution converts
+records into a decision. In each case, a later claim may
+distinguish more finely than the immediate readout. Such
+sharpening is often legitimate. The difficult question is
+1
+
+could be asserted, returning “structurally unanswerable
+from these records” rather than guessing across a null
+direction; its Gate Typing Law required an evidential
+gate to possess actual discriminating power; and by 3
+August 2026 its Claim IR represented claims with explicit
+dependencies, tiers, and bridge classes and refused silent
+promotion of untranslated or bridge-dependent material
+(Lahtee, 2026). Public commit history timestamps these
+components before the present Paper Zero.1 These artifacts do not prove the Readout Condition. They matter
+because they establish the independent architecture from
+which the present distinction-level epistemology is being
+abstracted.
+The philosophical problem nevertheless has many near
+neighbours. Discrimination, relevant alternatives, and
+margin-for-error constraints are established themes in
+epistemology (Dretske, 1970; Goldman, 1976; Pritchard,
+2010; Williamson, 2000, 2013; Melchior, 2021). Toulmin’s argument model already distinguishes data, warrant, backing, qualifier, and rebuttal (Toulmin, 1958).
+Contrastivism makes the question and its alternatives
+constitutive of knowledge attribution (Schaffer, 2005,
+2007). Manski’s partial-identification programme explicitly distinguishes what data identify from what stronger
+assumptions identify (Manski, 2003, 2007). Blackwell
+comparison, statistical sufficiency, and data-processing
+results constrain what processing can add; philosophy of
+measurement distinguishes indication, model, calibration,
+and phenomenon; testimony and provenance research distinguish transmission, generation, assertion, and source
+history. The burden of this paper is therefore not to rediscover any of these components. It is to show that their
+conjunction still leaves a distinct object: the typed provenance of each discriminative commitment in a claim and
+the way epistemic defeat propagates through that provenance structure.
+The formal development has four parts. First, exact
+readouts yield a fiber/factorization condition. Second,
+non-transitive indiscriminability requires a pointwise condition on an actual claim token rather than a global equivalence closure. Third, stochastic garbling is retained but
+explicitly demoted to what it can actually test: whether a
+downstream channel uses target-sensitive access not available through the stated source. A second, identificationbased audit is required to locate assumption-driven specificity. Fourth, claim distinctions are placed in a typed
+provenance DAG whose dependency structure determines
+where defeaters and corrections propagate.
+The cross-traditional route is not decorative. Dignāga–
+Dharmakı̄rti force a separation between access and
+conceptual uptake; Madhyamaka forces constitutionneutrality and, through the Vigrahavyāvartanı̄, presses
+the meta-question of how a purported means of knowledge
+is itself warranted; Avicenna tests whether supplementation can be classified by epistemic role rather than faculty;
+and Suhrawardı̄ blocks any definition of readout that presupposes representation. Importantly, these pressures
+
+changed the framework: earlier global, representational,
+and faculty-typed formulations are not retained merely
+to make the tests pass.
+The resulting thesis can be stated without inflation:
+No epistemic discrimination without provenance. (1)
+The rest of the paper specifies what that maxim means,
+what it does not mean, and what would falsify the proposed architecture.
+
+2. Literature Review: Classical Pressure
+Tests and Contemporary Collisions
+2.1 Scope and comparative method
+The Readout Condition addresses a problem that predates contemporary epistemology: how far may a claim
+legitimately distinguish among alternatives, given the
+way its target becomes epistemically accessible? This
+section develops a problem-driven comparative architecture around four classical and pre-modern pressure
+tests—Dignāga–Dharmakı̄rti, Madhyamaka, Avicenna,
+and Suhrawardı̄—while placing the closest contemporary
+theories alongside them.
+The comparison is deliberately non-reductive.
+pratyaks.a is not identified with readout; Madhyamaka
+is not redescribed as contrastive semantics; Avicennian
+intellection is not assimilated to Bayesian inference;
+and ‘ilm al-h.ud.ūrı̄ is not treated as an early theory of
+information channels. Each tradition is used because
+it destabilizes a different assumption that a general
+theory of epistemic access might otherwise import
+unnoticed. The four pressures are deliberately distinct:
+Dignāga–Dharmakı̄rti test whether access can be
+separated from conceptual uptake; Madhyamaka tests
+whether discrimination can remain neutral about
+intrinsic constitution; Avicenna tests the classification of
+supplementation; and Suhrawardı̄ tests whether access
+must be representational.
+These traditions constrain the neutrality of the Readout Condition rather than supplying its historical ancestry. Contemporary theories are introduced as collision tests: they determine which parts of the framework
+are already present in epistemology, semantics, statistics, information theory, philosophy of measurement, and
+provenance research.
+2.2 Dignāga–Dharmakı̄rti: access and conceptual
+uptake
+Dignāga’s Pramanasamuccaya and Dharmakı̄rti’s subsequent epistemological programme distinguish perception
+and inference as fundamental modes of warranted cognition. In the perceptual chapter of the Pramanasamuccaya,
+Dignāga characterizes perception through freedom from
+conceptual construction; Dharmakı̄rti develops a richer
+account involving particulars, causal efficacy, conceptual
+cognition, and exclusion (Dignaga, 1968; Dunne, 2004).
+These doctrines should not be simplified into a modern
+contrast between raw data and interpretation. Their
+value here is structural: what becomes available in cog-
+
+1 For lineage rather than evidential support: the v2 Information
+DNA/Translation scaffold entered the public repository in commit
+1b1ca4f (19 July 2026); Claim IR with explicit dependency fields
+entered in commit a871db7 (3 August 2026). The present paper
+does not import the broader programme’s physical or metaphysical
+commitments.
+
+2
+
+nition and what conceptual activity later predicates or
+classifies need not be the same epistemic operation.
+The Readout Condition therefore does not identify
+pratyaks.a with R. It extracts a narrower pressure: In
+compressed form, the distinction is: what access makes
+available need not exhaust what is later asserted on its basis. If a later claim contains distinctions not attributable
+to the original mode of access, those distinctions require
+an epistemic account of how they entered.
+This pressure immediately collides with contemporary
+discrimination-based epistemology. Goldman places reliable discriminatory mechanisms near the centre of perceptual knowledge (Goldman, 1976). Pritchard distinguishes
+discriminating from favouring epistemic support, weakening any simple identification of support with direct
+discriminatory capacity (Pritchard, 2010). Melchior develops discrimination itself as a modal epistemic capacity
+rather than merely a component of a theory of knowledge
+(Melchior, 2021). These works block any novelty claim
+that epistemology has neglected discrimination. The
+residual question is narrower: not merely whether discrimination occurs, but what licenses each discrimination
+asserted by a claim.
+
+2.4 Avicenna: the classification of supplementation
+Avicenna’s psychology does not permit a simple model
+in which sensory input contains a complete epistemic
+message that intellect merely decodes. The Kitab al-Nafs
+distinguishes external and internal senses, imagination,
+memory, estimation, and intellectual activity; the acquisition of intelligibles also involves syllogistic reasoning,
+middle terms, and the Active Intellect (Avicenna, 1959;
+McGinnis, 2010). Specialist scholarship emphasizes the
+complexity of the relationship between abstraction and
+the Active Intellect rather than reducing one to the other
+(Alpina, 2014).
+This makes Avicenna a pressure test for the proposed
+distinction between access augmentation and assumption
+augmentation. He is not invoked as though he already endorsed that taxonomy. Instead, his theory asks whether
+greater cognitive discrimination can be classified by epistemic role rather than by faculty. An additional sensory
+channel is not automatically “access,” nor is intellectual activity automatically “assumption.” The relevant
+question is what the addition contributes to the claim’s
+epistemic basis.
+A successful taxonomy must therefore classify supplementation functionally: does it make new targetsupported distinctions available, or does it increase specificity by adding inferential commitments to what is already available? If a case cannot be assigned without
+distortion, the framework rather than Avicenna requires
+revision.
+
+2.3 Madhyamaka: constitution-neutrality
+In the Mulamadhyamakakarika, Nāgārjuna attacks explanations that depend on svabhāva, an intrinsic or independently grounded nature. Major contemporary interpretations differ over the exact reconstruction of the
+target, but dependence and the rejection of an ontologically self-sufficient terminus remain central (Garfield,
+1995; Siderits and Katsura, 2013; Westerhoff, 2009). The
+Readout Condition does not derive local contrast spaces
+from Madhyamaka. Its narrower role is to pressure an
+unnoticed metaphysical assumption: epistemically relevant distinctions need not be treated as intrinsic divisions
+already carved into a fully specified target.
+Thus the notation R : X → Y must not silently turn
+X into a global inventory of independently determinate
+world states. X may instead be local to the question
+a claim undertakes to answer. Madhyamaka motivates
+constitution-neutrality: the framework should remain
+agnostic about whether relevant alternatives correspond
+to intrinsic joints of reality, relational structures, conventional individuations, or some combination thereof.
+A different problem remains: if X is local, what fixes
+it? Here the formal resources come from contemporary
+work on subject matter and questions under discussion.
+Yablo develops subject matter through structured partitions of logical space (Yablo, 2014); Roberts models
+discourse around questions represented through alternative answers (Roberts, 2012). The Readout Condition
+uses this literature to constrain the contrast space without
+adopting a global possible-world ontology. The contrast
+space must preserve distinctions constitutive of the question the claim undertakes to settle; removing otherwise
+relevant alternatives is itself an epistemically significant
+restriction.
+
+2.5 Suhrawardı̄: selectivity without representation
+Suhrawardı̄ provides the strongest pressure against identifying readout with representation. In .Hikmat al-Ishrāq,
+he develops an Illuminationist account of self-awareness
+and presence while criticizing Peripatetic accounts in
+which knowledge is explained through an acquired form
+in the knower (al Din Yahya Suhrawardi, 1999). Kaukua’s
+reconstruction places this development within a sustained
+Islamic philosophical debate over first-person awareness
+and presence (Kaukua, 2015).
+If a readout were defined as an internal representation,
+the claimed generality of the Readout Condition would
+fail. The weaker conception required here is relational:
+a readout is epistemically relevant insofar as an access
+relation preserves or makes available distinctions that can
+support a claim. Representation may implement such
+a relation, but it is not constitutive of it. This yields a
+central distinction:
+Representationality ̸= Selectivity.
+
+(2)
+
+Even granting a maximally strong case of unmediated
+presence, the Readout Condition would simply become
+non-restrictive with respect to distinctions fully available under that relation. This is a conditional result
+of the framework, not a historical thesis attributed to
+Suhrawardı̄.
+3
+
+2.6 Nearest-neighbour collision audit
+
+2.6.3 Blackwell, Dretske, measurement, and robust access
+
+The historical pressure tests establish neutrality requirements, not novelty. The novelty question requires collision
+with the nearest contemporary architectures, including
+several that are closer than a generic provenance survey.
+
+Blackwell’s comparison of experiments and the dataprocessing inequality formalize monotonicity under postprocessing (Blackwell, 1951, 1953; Cover and Thomas,
+2006). Dretske’s information theory stresses that what a
+signal carries is relative to channel conditions (Dretske,
+1981). Suppes, Bogen and Woodward, Tal, Giere, and
+Massimi distinguish data, phenomena, measurement models, calibration, and perspective (Suppes, 1962; Bogen
+and Woodward, 1988; Tal, 2017; Giere, 2006; Massimi,
+2022). Hacking and Wimsatt make independent routes
+and robustness epistemically important (Hacking, 1983;
+Wimsatt, 1981). These are not competitors to be displaced; they identify distinct typed nodes in the provenance graph. The Readout Condition’s claim is that those
+nodes must not be silently collapsed when downstream
+specificity is represented.
+
+2.6.1 Argument warrants, contrastive knowledge, and discrimination
+Toulmin’s model already decomposes argument into data,
+claim, warrant, backing, qualifier, and rebuttal (Toulmin,
+1958). It is therefore a serious predecessor for any claim
+about “warrant” and claim-level support. The Readout
+Condition does not replace that architecture. Its different
+object is the discriminative capacity of the attributed
+source: a Toulmin warrant can state why data support
+a claim without representing which target alternatives
+the data fail to distinguish or whether a specific claim
+distinction has been credited to the wrong source.
+Likewise, Hintikka, Dretske, Goldman, Pritchard,
+Williamson, and Melchior provide powerful accounts
+of epistemic alternatives, information, discrimination,
+and indiscriminability (Hintikka, 1962; Dretske, 1970,
+1981; Goldman, 1976; Pritchard, 2010; Williamson, 2000,
+2013; Melchior, 2021). Schaffer’s contrastivism makes an
+explicit contrast constitutive of knowledge attribution
+and later treats knowing-wh as knowing an answer to a
+question (Schaffer, 2005, 2007). These literatures defeat
+any novelty claim for discrimination or local alternatives.
+They do not yet yield a typed ledger saying which source,
+access-model, background claim, relevance restriction,
+or policy node is responsible for each distinction in the
+downstream claim.
+
+2.6.4 Testimony and assertion provenance
+Lackey’s rejection of simple transmission shows that testimonial epistemic status can be generated or transformed
+rather than merely passed intact from speaker to hearer
+(Lackey, 2008). Nanopublications and related provenance
+infrastructures already package assertions with contextual provenance (Groth et al., 2010; Chhetri et al., 2025).
+These developments defeat any claim that assertion-level
+provenance or dependency is new. The residual distinction is finer: documentary or assertion provenance can be
+correct while the discriminative dependency of an assertion remains misdescribed. A claim may cite the correct
+dataset and still represent a prior-induced distinction as
+though the dataset itself distinguished it.
+The novelty claim is therefore a conjunction claim.
+No individual mathematical or philosophical component
+is presented as unprecedented. What is proposed is a
+domain-neutral architecture in which (i) the audit unit
+is an individual claim distinction, (ii) source attribution
+has an explicit licensing condition, (iii) assumptions are
+located by an identification ladder, (iv) provenance is
+a typed dependency DAG, and (v) source-specific defeaters propagate through that DAG. The public Readout Universe lineage supplies an operational precursor for
+this conjunction—identifiability gates, bridge classes, tier
+downgrades, and explicit claim dependencies—but the
+present paper is the first place in that programme where
+those components are reconstructed as a standalone epistemic condition.
+
+2.6.2 Partial identification and statistical sufficiency
+Manski is the closest neighbour for the assumption side of
+the architecture. Partial identification begins by asking
+what the data alone identify and then studies how identification regions shrink under additional assumptions
+(Manski, 2003, 2007). This paper adopts that lesson directly: a stochastic garbling relation cannot reveal an
+undeclared prior or model assumption when the downstream rule consumes only the observed readout. An assumption audit therefore requires an identification ladder,
+not merely an information-ordering test. The residual
+contribution is to integrate this assumption ladder with
+source attribution, disclosure, readout models, iterated
+provenance, and defeater routing at the level of claim
+distinctions.
+Classical Fisher–Neyman sufficiency also blocks any
+suggestion that preserving all information relevant to a
+target parameter is new (Fisher, 1922; Neyman, 1935).
+A sufficient statistic is a compression that loses no information about the parameter under a specified statistical
+model. The Readout Condition is neither a rival definition of sufficiency nor a claim that its deterministic
+factorization theorem is new. Its target is broader and differently typed: what an epistemic source may be credited
+with across deterministic, relational, stochastic, testimonial, model-mediated, and institutional routes.
+
+3. Conceptual Method
+3.1 Methodological status
+This is a work of conceptual and formal philosophy, not
+an empirical study. The method combines problem reconstruction, formal reconstruction, cross-traditional pressure testing, nearest-neighbour collision testing, and selfapplication to the paper’s own claims. The last component matters: a provenance theory that exempts its own
+models, citations, or formal bridges from audit would
+reproduce the very silent lift it criticizes.
+4
+
+Table 1: Nearest-neighbour collision audit. The contribution defended here is the conjunction, not the individual
+components.
+Neighbour
+
+Already provides
+
+Toulmin
+
+Data–claim warrants, backing,
+rebuttal
+Schaffer / QUD
+Explicit contrast structure
+Goldman / Pritchard Discrimination, support,
+/ Melchior /
+non-transitivity
+Williamson
+Manski
+Data-only vs
+assumption-dependent
+identification
+Blackwell / DPI /
+Informativeness and lossless
+sufficiency
+processing
+Dretske /
+Channel conditions, model
+measurement
+mediation
+Lackey / robustness Generation, transmission,
+independent routes
+Nanopublications /
+Assertion and source lineage
+provenance
+
+What the Readout Condition
+concedes
+
+Residual task
+
+Claim-level licensing is not new
+
+Test source discrimination and misattribution
+
+Local alternatives are not new
+Discrimination is not new
+
+Track provenance of each resolved contrast
+Pointwise source licensing plus provenance
+
+Assumption burden is not new
+
+Type the weakest augmentation layer for each
+distinction
+
+Monotonicity/factorization are not
+new
+Source models are not transparent
+
+Separate access audit from assumption audit
+
+Epistemic routes may transform
+status
+Provenance simpliciter is not new
+
+Represent branching and recursive access
+Distinction-level dependency and defeater
+propagation
+
+Williamson-style non-transitivity objection. These are
+theory revisions, not retroactive declarations that every
+tradition “passes.”
+
+3.2 Units and roles
+Let Q determine a local contrast space X . Let R denote
+a deterministic readout, IR a relational access structure,
+or K ∗ a stochastic access experiment. Let Φ represent a
+categorical claim structure. The unit of audit is not only
+the whole proposition but a claim distinction. For an
+actual alternative x0 , define
+DΦ (x0 ) = {d0x′ = (x0 , x′ ) : Φ(x′ ) ̸= Φ(x0 )}.
+
+e and route defeat
+Distinguish K ∗ from K
+
+3.4 Collision criteria
+For each neighbour the paper asks: does it analyze the
+same object, impose the same constraint, type the same
+epistemic sources, locate assumption dependence, and
+determine how defeat propagates? Novelty survives only
+at the residual conjunction after the strongest relevant
+results are granted.
+
+(3)
+
+Each d0x′ is one contrast the actual claim token resolves
+against a rival alternative.
+A provenance analysis assigns each such distinction a
+directed acyclic dependency graph
+
+P(d) = Vd , Ed , τd ,
+(4)
+
+3.5 Failure and revision conditions
+
+where the typing map τd distinguishes at least: access
+source, access model, background-evidence claim, contrast/relevance operation, inferential commitment, and
+decision policy. A single object may occupy different
+types in different audits; the types are epistemic roles,
+not ontological kinds.
+This formal move is directly continuous with the public
+programme’s earlier Claim IR, which already represented
+claims with dependencies, tiers, and bridge classes and automatically prevented untranslated or bridge-dependent
+material from being silently promoted. The present graph
+generalizes that operational discipline from whole claims
+to discriminative commitments.
+
+The architecture fails, rather than merely losing elegance,
+if (i) a source can be correctly credited with a distinction
+it does not locally discriminate without any other epistemic ground; (ii) the provenance graph cannot represent
+an important supplementation case without ad hoc typing; (iii) two genuinely different dependency structures
+always generate identical patterns of rational defeat and
+correction; or (iv) an existing theory already supplies
+the same distinction-level licensing, identification, provenance, and defeat architecture at comparable generality.
+e or
+Application-level opacity is different: when K ∗ , K,
+the historical dependency graph cannot be recovered, the
+correct output is provenance indeterminacy, not forced
+classification.
+
+3.3 Internal reconstruction and pressure-driven
+revision
+
+4. The Readout Condition
+
+Historical comparison proceeds by internal reconstruction
+→ controlled abstraction → pressure test. A pressure
+test counts only if it can force a change. In fact, the
+present framework records four such changes: a global
+contrast-space formulation was replaced by a local one
+under Madhyamaka/QUD pressure; a representationdefined readout was replaced by a selectivity role under
+Suhrawardı̄ pressure; a faculty-based supplementation
+taxonomy was replaced by role typing under Avicennian
+pressure; and the original global relational condition was
+replaced by a pointwise claim-token condition after the
+
+4.1 Local contrasts and claim discrimination
+Let Q be a question or epistemic task. Its relevant alternatives determine a local contrast space XQ , abbreviated
+X . The local qualification matters. A claim is never
+audited against every imaginable difference in reality; it
+is audited against the distinctions it undertakes to settle.
+At the same time, the claimant cannot freely shrink X
+after inspecting the evidence. A relevance restriction that
+removes otherwise constitutive alternatives is itself an
+epistemically significant commitment.
+5
+
+A claim structure Φ can be represented, in the exact
+categorical case, as a function
+
+Let IR ⊆ X × X and define the local indiscriminability
+neighbourhood of an actual alternative x0 as
+
+Φ : X → Z,
+
+NR (x0 ) = {x′ ∈ X : (x0 , x′ ) ∈ IR }.
+
+(5)
+
+Let the actual claim token have value z0 = Φ(x0 ).
+
+where Z indexes the distinctions made by the claim.
+Two alternatives x, x′ ∈ X are claim-equivalent when
+Φ(x) = Φ(x′ ) and claim-distinguished otherwise.
+A readout R specifies what the relevant access relation
+preserves. The exact deterministic case is the simplest:
+R : X → Y.
+
+Principle 5 (Pointwise Relational Readout Condition).
+The claim token z0 = Φ(x0 ) is licensed by relational access
+R alone only if
+NR (x0 ) ⊆ Φ−1 (z0 ).
+
+(6)
+
+(9)
+
+Equivalently, the claim token may not exclude any alternative that remains locally indiscriminable from the
+actual case under the attributed source.
+
+Nothing in this notation implies that the target is metaphysically discrete or that the readout is a representation.
+The functions describe the contrastive role played by the
+access structure relative to the current question.
+
+The quantifier is deliberately pointwise. A global requirement IR ⊆ IΦ would indeed force every equivalence
+relation containing IR to contain its transitive closure
+and would collapse a Sorites chain. Equation (9) does
+not iterate licenses from one centre to another: licensing
+at x0 constrains NR (x0 ) but does not imply licensing at
+every x′ ∈ NR (x0 ). The local geometry therefore remains
+visible.
+
+4.2 Exact functional case
+Definition 1 (Readout-admissible discrimination). A
+categorical claim structure Φ : X → Z is readoutadmissible relative to R : X → Y when it is constant on
+every fiber of R:
+R(x) = R(x′ ) ⇒ Φ(x) = Φ(x′ ).
+
+(8)
+
+(7)
+
+Proposition 2 (Reduction to the deterministic case).
+If IR is induced by a deterministic readout R through
+xIR x′ ⇐⇒ R(x) = R(x′ ), then requiring (9) for every
+x0 ∈ X is equivalent to fiber constancy and hence to
+factorization Φ = ḡ ◦ R on im(R).
+
+Proposition 1 (Factorization). For functions R : X →
+Y and Φ : X → Z, the following are equivalent:
+(i) Φ is constant on every fiber of R;
+(ii) ker R ⊆ ker Φ;
+(iii) there exists a function ḡ : im(R) → Z such that
+Φ = ḡ ◦ R.
+
+This is the appropriate sense in which the relational
+condition extends the exact case: not by replacing a
+non-transitive relation with an equivalence closure, but
+by changing the object of licensing from a global claim
+function to an actual claim token.
+
+Proof. If Φ = ḡ ◦ R, then R(x) = R(x′ ) implies Φ(x) =
+Φ(x′ ), so (iii)⇒(i). Statement (i) is exactly the inclusion
+of the equivalence relation induced by R in that induced
+by Φ, giving (i)⇔(ii). For (i)⇒(iii), define ḡ(y) = Φ(x)
+for any x such that R(x) = y. Fiber constancy makes
+this well-defined on im(R).
+
+4.4 Stochastic readouts: access audit, not assumption audit
+Let the actual source relation be a Markov kernel
+
+The proposition is elementary mathematics. The philosophical claim is not that factorization is new, but that
+factorization marks a boundary on source attribution. If
+R(x) = R(x′ ) while Φ(x) ̸= Φ(x′ ), the distinction in Φ
+did not come from R alone. A broader epistemic case may
+still justify the claim, but the additional discrimination
+requires another source.
+This yields the exact Readout Condition:
+
+and a stochastic downstream output be a channel C : Z |
+X . For the finite case, Blackwell comparison gives the
+following access test; for more general experiment spaces
+the relevant extensions belong to the Le Cam–Torgersen
+theory of statistical experiments (Blackwell, 1951, 1953;
+Cam, 1964; Torgersen, 1991).
+
+Principle 4 (Exact Readout Condition). If a categorical
+distinction in Φ is licensed by R alone, then Φ must be
+readout-admissible relative to R.
+
+Principle 6 (Stochastic access admissibility). A downstream channel uses no target-sensitive access beyond K ∗
+only if there exists a Markov kernel G : Z | Y such that
+
+The direction is intentionally one-way. Factorization
+is sufficient for formal admissibility, not for epistemic
+warrant as a whole.
+
+C = G ◦ K ∗.
+
+K∗ : Y | X ,
+
+(10)
+
+(11)
+
+The wording is intentionally precise. Equation (11) is
+an access audit, not a complete provenance audit. Any
+rule that consumes only y—including one that uses an
+undeclared prior, model class, or loss function—can be absorbed into G. Garbling therefore detects an undeclared
+target-sensitive route that bypasses the stated source; it
+does not by itself detect silent assumption augmentation.
+
+4.3 Relational readouts: pointwise licensing
+Many access relations cannot be represented adequately
+by partitions. Indiscriminability may be reflexive and
+symmetric without being transitive (Williamson, 2013).
+6
+
+Treating it as a full source-only warrant condition would
+be a category error.
+Practical inference also distinguishes the actual access
+process from its model:
+K ∗ ̸= e
+K.
+
+5.2 Identification ladder: where a distinction first
+becomes available
+Manski’s partial-identification programme supplies the
+right mathematical resource for the assumption side of the
+audit (Manski, 2003, 2007). Let A0 denote the weakest
+declared commitment set compatible with the access
+model, and let
+
+(12)
+
+e not
+Likelihood ratios are ordinarily computed under K,
+∗
+read directly from K :
+′
+ΛK
+e (y; x, x ) =
+
+e
+K(y | x)
+.
+e
+K(y | x′ )
+
+A0 ⊆ A1 ⊆ · · · ⊆ Am
+
+represent increasingly strong augmentation layers. For
+each layer let Γj be the set of target alternatives not
+excluded by the access model plus commitments through
+Aj .
+For an actual claim token z0 = Φ(x0 ), define the firstidentification level
+
+(13)
+
+In a Bayesian representation,
+log
+
+P (x)
+P (x | y)
+′
+= log
++ log ΛK
+e (y; x, x ).
+P (x′ | y)
+P (x′ )
+
+(15)
+
+(14)
+
+The decomposition already shows that source model and
+prior occupy different provenance roles. The next section
+supplies the missing assumption audit.
+
+ℓ(d0x′ ) = min{j : x′ ∈
+/ Γj },
+
+(16)
+
+whenever the rival x′ is excluded at some layer. The provenance of that discrimination is not “the data” simpliciter;
+it includes the weakest augmentation layer at which the
+rival becomes excludable. If x′ is already excluded at
+j = 0, the discrimination is access-model licensed at baseline. If exclusion begins only after a prior, structural
+model, or relevance restriction enters, the distinction is
+assumption-dependent. If no declared layer excludes it,
+the distinction remains unidentified.
+Equation (16) is deliberately an audit definition rather
+than a new theorem in partial-identification theory. Its
+contribution is to attach assumption strength to individual claim distinctions and then connect those distinctions
+to attribution and defeat.
+
+5. Augmentation and Epistemic Provenance
+5.1 Typed augmentation grammar
+The phrase “assumption augmentation” is too coarse if
+it treats every downstream addition as the same operation. The provenance graph therefore distinguishes four
+signatures.
+Definition 2 (Access augmentation). A new targetsensitive route is added to the epistemic basis, for example a second measurement, testimony, retrieved record,
+sensor, or retained upstream observation. Formally, the
+observation structure expands, e.g. Y1 7→ (Y1 , Y2 ).
+
+5.3 The E–A–D form of the Readout Condition
+
+Definition 3 (Contrast or relevance operation). The
+contrast domain changes, X 7→ X ′ ⊆ X . Such restriction
+can be legitimate when fixed by the question or independently justified. A restriction selected after inspecting the
+readout requires its own provenance because it reuses the
+observed result in defining what alternatives count.
+
+Let P(d) be the typed provenance DAG for distinction d.
+The mature condition is:
+Principle 7 (E: provenance existence). For every
+epistemically load-bearing claim distinction d, P(d) is
+nonempty or the claim is explicitly marked provenanceindeterminate.
+
+Definition 4 (Inferential commitment). A model, prior,
+theory, bridge principle, calibration assumption, or other
+rule changes what can be inferred from an existing access
+basis without constituting new current access to the target.
+
+Principle 8 (A: provenance attribution). If the public
+b
+or doxastic attribution map λ(d)
+credits distinction d to
+source S, then S must pass the appropriate licensing test
+for d: fiber discrimination in the exact case, pointwise
+neighbourhood exclusion in the relational case, or access
+admissibility/identification in the stochastic case.
+
+Definition 5 (Decision-policy augmentation). A loss
+function, threshold, utility, or institutional rule maps an
+epistemic state into an action or classification. It can
+change the decision while leaving the evidential discrimination unchanged.
+
+Principle 9 (D: provenance disclosure). Every nonsource node on an essential dependency path to d must
+remain declared or recoverable at the level relevant to the
+epistemic practice. Omitting such a node while representing d as source-generated is a silent lift.
+
+Background evidence is represented recursively rather
+than forced into a “mere assumption” box. A population
+prior may be an imported commitment relative to today’s
+patient test while itself being the conclusion of an earlier
+evidence graph. This recursion is essential to the architecture inherited from the Readout Universe claim/tier
+discipline: a bridge-dependent claim may be usable, but
+the bridge never disappears from its lineage.
+
+The Readout Condition is E ∧ A ∧ D. This separation
+closes an ambiguity in weaker formulations: the mere
+existence of a valid augmentation does not rescue a false
+attribution to the original source.
+7
+
+represented vulnerability of d differs from its actual dependency vulnerability. Silent lift can therefore generate
+under-revision when a hidden essential node is defeated,
+and over-revision when an innocent represented node is
+treated as essential.
+
+5.4 Epistemic overreach and silent lift
+Definition 6 (Epistemic overreach). A claim-level distinction exhibits epistemic overreach when it lacks an adequate provenance path, is attributed to a node that does
+not license it, or depends on an essential augmentation
+that is concealed in the relevant epistemic representation.
+
+This result formalizes a discipline that the public Readout Universe implemented operationally before this paper:
+bridge-dependent claims carry dependency and tier information; untranslated terms are forced to Open rather
+than silently promoted; the identifiability gate blocks answers outside the record’s row space; and a gate with no
+discriminating controls is classified as convention rather
+than evidence. Those rules are not proofs of Proposition 3, but they are working instances of the same
+dependency-sensitive norm.
+
+Definition 7 (Silent lift). Let λ(d) denote the actual
+b
+essential dependency set of distinction d and λ(d)
+the
+dependency set represented to oneself or others. A silent
+lift occurs when an essential node v ∈ λ(d) is omitted
+or a source S is credited with d despite failing the corresponding licensing condition.
+This is not an anti-inference principle. A modeldependent or prior-dependent distinction can be fully
+warranted when the dependency is genuine and the supporting background claims are themselves adequate. The
+target is false provenance, not epistemic sophistication.
+
+5.6 From provenance error to epistemic warrant
+Why does false attribution matter to warrant rather than
+merely to reporting? Consider a subject who accepts
+distinction d partly because she believes the test, witness,
+or dataset S itself discriminates the relevant alternatives.
+If correcting that meta-belief—learning that S did not
+discriminate them and that the result depended on an
+undeclared bridge—would rationally require withdrawal
+or suspension of d absent another ground, then the false
+attribution is an essential ground in her justificatory
+structure. Debates over inference from falsehood show
+that false premises need not always destroy knowledge,
+but they make the essentiality of the false ground the
+relevant issue (Warfield, 2005; Klein, 2008). The Readout
+Condition therefore identifies a class of genuine warrant
+failures: cases in which a false provenance belief is loadbearing for justification.
+The framework also has an assertoric face. A privately
+warranted belief may rely on a model or prior without
+defect, yet asserting that “the test showed d” can misrepresent the epistemic basis when the test alone did
+not. Testimonial epistemology already distinguishes the
+epistemic status of speakers, statements, and hearers and
+rejects simple transmission pictures (Lackey, 2008). The
+Readout Condition adds a provenance norm on how the
+discriminative basis of an assertion is represented. Doxastic warrant and assertoric disclosure are related but
+not identical obligations.
+
+5.5 Defeater routing on the provenance DAG
+The payoff of distinction-level provenance is not documentary neatness but revision structure. For a distinction d,
+let Π(d) be the set of currently adequate licensing paths
+in P(d), each running from epistemic leaves to d. Define
+the essential dependency set
+\
+Ess(d) =
+V (p).
+(17)
+p∈Π(d)
+
+Thus a node is essential exactly when every currently
+adequate licensing path for d passes through it.
+Let ∆v be a node-specific defeater that defeats provenance node v while leaving all other nodes and edges
+initially unchanged.
+Proposition 3 (Defeater Routing). After ∆v , the surviving licensing paths for distinction d are
+Π∆v (d) = {p ∈ Π(d) : v ∈
+/ V (p)}.
+
+(18)
+
+Consequently, d loses provenance support under the nodespecific defeat iff Π∆v (d) = ∅, equivalently iff v ∈ Ess(d).
+Argument. A path that contains the defeated node cannot remain an adequate licensing path; a path that does
+not contain it is untouched by a defeater whose stipulated
+target is v alone. Equation (18) follows by path deletion.
+The distinction loses all current provenance support exactly when no licensing path survives, which is equivalent
+to v belonging to every path in Π(d), i.e. v ∈ Ess(d). The
+epistemic interpretation is substantive even though the
+graph step is elementary: equal propositional content can
+survive different challenges because its licensing paths
+differ.
+
+6. Iterated Readout Chains
+6.1 Deterministic composition
+Readouts frequently occur in chains. A record may be
+produced by an instrument, transformed by software,
+summarized in a database, processed by a model, and
+interpreted by a human. Let
+R
+
+R
+
+R
+
+1
+2
+n
+X −−→
+Y1 −−→
+Y2 −
+→ · · · −−→
+Yn .
+
+(19)
+
+If R1 (x) = R1 (x′ ), then every deterministic downstream
+composition also maps x and x′ to the same result. More
+generally, if an upstream stage has already collapsed a
+pair, post-processing alone cannot recreate that pairwise
+distinction.
+
+Corollary 1 (Misrouted defeat under silent lift). Let
+d
+Ess(d) be the actual essential dependency set and Ess(d)
+the represented one. If the symmetric difference is
+nonempty, then for any epistemically possible nodespecific defeater aimed at a node in that difference, the
+8
+
+Typed provenance DAG for one discriminative commitment
+claim distinction d
+
+access source
+S / K∗
+
+additional
+access
+
+access model
+e
+K
+
+commitment
+prior/model/theory
+
+contrast / policy
+restriction, loss
+
+Figure 1: A claim distinction can depend on several differently typed nodes. The Readout Condition audits existence,
+attribution, and disclosure; Proposition 3 uses the same graph to route defeat and correction.
+Corollary 2 (Upstream monotonicity). For a deterministic chain R1:n = Rn ◦ · · · ◦ R1 ,
+ker R1 ⊆ ker R1:n .
+
+as epistemic roles even when the model is excellent.
+This distinction prevents a subtle silent lift in stochastic
+e is evidence
+inference. A likelihood ratio computed from K
+under a model of the source; it is not literally read off
+from K ∗ . Calibration evidence can license the use of e
+K,
+but its contribution must remain visible.
+At least three failure modes follow. In an access failure, R∗ or K ∗ does not preserve the distinction required
+e or K
+e
+by the claim. In an access-model failure, R
+mischaracterizes what the source preserves. In an attribution failure, a distinction introduced by another
+source or commitment is credited to the original source.
+These failures require different remedies: additional or improved access, recalibration/model revision, or corrected
+provenance attribution.
+
+(20)
+
+At any stage j, distinctions collapsed by R1:j remain
+collapsed under later deterministic processing unless additional access enters the chain.
+This is the precise form of the claim that targetsupported discrimination cannot increase downstream
+merely through processing. The formulation avoids talk
+of a single “coarsest link,” which is not generally welldefined across heterogeneous stages.
+6.2 Stochastic composition
+For stochastic chains, let the actual upstream experiment
+be K1∗ : Y1 | X and let later stages be Markov kernels.
+∗
+Whenever Kj+1
+= Gj ◦ Kj∗ , each downstream experiment is a garbling of the preceding one and is therefore
+weakly less informative in the Blackwell order. Standard data-processing inequalities provide metric-specific
+consequences, for example
+I(X; Yj+1 ) ≤ I(X; Yj )
+
+7. Classical Pressure Tests Revisited
+A pressure test earns methodological force only if it can
+change the theory. Table 2 records the revisions produced
+by the four traditions rather than simply declaring that
+the final framework “passes.”
+
+(21)
+
+7.1 Dignāga–Dharmakı̄rti: access, apoha, and
+perceptual judgment
+
+for mutual information in a Markov chain (Cover and
+Thomas, 2006). The Readout Condition does not depend on mutual information as the unique measure of
+distinguishability; the Blackwell relation is used because
+it expresses the more general experiment-level ordering.
+A downstream channel C passes the accessadmissibility test relative to Kj∗ only if C = G ◦ Kj∗ for
+some post-processing kernel G. This establishes that no
+extra target-sensitive access route is required; it does not
+establish that the downstream specificity is assumptionfree. The identification ladder and provenance DAG
+perform that second audit. Additional access changes
+the architecture by forming a joint experiment with a
+genuinely new evidential path.
+
+The relevant pressure is sharper than a generic perception/inference contrast. Dignāga’s and Dharmakı̄rti’s
+accounts of conceptual exclusion (apoha) and later perceptual judgment make it impossible to assume that
+every discrimination present in a conceptual claim was already present in the same form in non-conceptual perception (Dignaga, 1968; Dunne, 2004; Arnold, 2005; Kellner,
+2004). The Readout Condition therefore places conceptual uptake downstream of access and demands provenance for distinctions introduced by classificatory rules.
+It does not identify apoha with the Readout Condition;
+it accepts the historical challenge that discrimination
+can be generated by conceptual organization rather than
+simply copied from perception.
+
+6.3 Calibration and the model of the readout
+7.2 Madhyamaka and the warrant of the means
+of access
+
+A claimant rarely knows the actual access structure directly. Let R∗ or K ∗ denote the source relation under
+e or K
+e denote the claimant’s model of
+analysis and let R
+it. Tal’s analysis of calibration is important here because
+calibration constructs and tests models that connect indications with measurement outcomes (Tal, 2017). The
+Readout Condition therefore distinguishes
+e
+R∗ ̸= R,
+
+e
+K ∗ ̸= K
+
+The Mūlamadhyamakakārikā blocks an unargued move
+from epistemic contrasts to intrinsic target constitution
+(Garfield, 1995; Siderits and Katsura, 2013; Westerhoff,
+2009). The Vigrahavyāvartanı̄ adds a meta-epistemic
+pressure: if a means of knowledge is invoked to establish
+an object, the status of that means cannot simply be
+exempted from scrutiny (Westerhoff, 2010). The parallel
+
+(22)
+9
+
+Table 2: Pressure-driven revisions of the Readout Condition.
+Pressure
+
+Earlier vulnerable formulation
+
+Failure
+
+Revision retained here
+
+Dignāga–
+Dharmakı̄rti
+Madhyamaka
+
+downstream classification folded into
+“what perception gives”
+global state space read as intrinsic constitution
+sensory faculty = access; intellect =
+assumption
+readout defined as internal representation
+
+conceptual uptake inherits source status automatically
+formal contrast structure becomes
+covert metaphysics
+faculty names substitute for epistemic
+roles
+knowledge by presence is excluded by
+definition
+
+access/readout and claim uptake are
+separate nodes
+local XQ plus constitution-neutrality
+
+global IR ⊆ IΦ
+
+transitive closure erases non-transitive
+geometry
+
+Avicenna
+Suhrawardı̄
+
+Williamson-style objection
+
+here is controlled rather than identificatory. The Readout
+e makes the model or
+Condition’s distinction K ∗ ̸= K
+calibration of access itself a claim with provenance; a
+failed access-model audit is not self-undermining, but a
+higher-level readout failure to be diagnosed under the
+same rules.
+
+role-typed augmentation with provenance indeterminacy
+readout = selectivity/access role; presence itself is not forced into a representation model
+pointwise
+claim-token
+condition
+NR (x0 ) ⊆ Φ−1 (z0 )
+
+8.1 Worked audit I: a positive diagnostic test
+Suppose a test has sensitivity 0.90, specificity 0.91, and is
+used in a population with prevalence 0.01. For a positive
+result y = +, Bayes’ rule gives
+P (D | +) =
+
+7.3 Avicenna: the wahm test
+
+0.90(0.01)
+≈ 0.0917.
+0.90(0.01) + 0.09(0.99)
+
+(23)
+
+The immediate source contribution is the positive test
+e specifying sensitivresult together with an access model K
+ity and specificity. The posterior discrimination between
+disease and no disease additionally depends on the prevalence prior. A decision to treat may depend further on a
+loss function or threshold.
+The sentence “the test shows that the patient has the
+disease” therefore compresses at least three typed nodes:
+
+Avicenna’s estimative faculty (wahm) is a concrete stress
+test because the sheep’s apprehension of the wolf’s hostility is not straightforwardly one more sensible quality
+(Avicenna, 1959; McGinnis, 2010; Alpina, 2014). The
+Readout Condition does not decide the historical psychology by fiat. It supplies a criterion. If the additional
+faculty constitutes a target-sensitive route whose output
+varies with the relevant ma‘nā while the previous sensory
+readout is held fixed, it plays an access-augmentation role.
+If the hostility classification is generated from the existing
+readout by a standing rule or learned commitment, it
+plays an inferential-commitment role. If the historical
+evidence does not resolve which dependence obtains, the
+audit returns provenance indeterminacy. The taxonomy
+therefore answers the case conditionally by role rather
+than hiding the difficulty under a faculty label.
+
+(y, e
+K) + π + L −→ belief/action.
+
+(24)
+
+With the stated numbers the positive predictive value
+is only about 9.2%. The Readout Condition does not
+say that using the prior is illegitimate; it says that the
+posterior specificity cannot be attributed to the positive
+readout alone. If prevalence changes while sensitivity and
+specificity remain fixed, the claim can change without
+any change in the individual test result. That counterfactual identifies the prior as load-bearing. A calibration
+e a prevalence defeater targets π; a new
+defeater targets K;
+imaging result constitutes additional access; a threshold
+objection targets L. Proposition 3 therefore yields different correction routes for superficially similar diagnostic
+disagreement.
+
+7.4 Suhrawardı̄: presence before claim
+Knowledge by presence should not be forced into a contrastive channel when the doctrine itself denies representational mediation. The correct boundary is therefore stronger than saying that the Readout Condition
+becomes “non-restrictive.” Presence as such can be preclaim and hence outside the condition’s immediate domain. The Readout Condition applies when a categorical
+or otherwise discriminative claim is made on the basis
+of presence—for example, when “I exist” or a further
+articulated judgment excludes alternatives. At that point
+the audit asks what distinctions the presence relation
+licenses and what conceptual articulation adds. This preserves representation-independence without pretending
+to formalize the metaphysics of presence itself (al Din
+Yahya Suhrawardi, 1999; Kaukua, 2015; Yazdi, 1992).
+
+8.2 Worked audit II: AI-assisted inference and
+retained-record contamination
+Let K ∗ represent current case-visible evidence and let a
+fixed trained model with training corpus D implement a
+downstream rule GD . If D is fixed independently of the
+current case x, then
+CD = GD ◦ K ∗
+
+(25)
+
+8. Applications and Portability
+
+can pass the stochastic access-admissibility test even
+though training-derived structure materially shapes the
+output. This is exactly why garbling cannot serve as
+an assumption audit: fixed background structure can be
+absorbed into GD .
+
+Portability is demonstrated here by running the audit to
+verdict rather than merely listing domains.
+
+Proposition 4 (Retained-record route). If a supposedly
+fixed background corpus contains a current-case-specific
+10
+
+retained record D(x) that varies with the target alternative and is available to the model through a route not
+contained in the stated current source K ∗ , then the effective architecture contains additional access. Relative
+to K ∗ alone the output need not admit a representation
+C = G ◦ K ∗ with G independent of that retained record.
+
+payoff: two identical propositions can rationally react differently to the same challenge because their provenance
+graphs differ. A provenance error therefore changes defeater sensitivity, not merely metadata.
+
+This separates two phenomena often conflated under
+“model knowledge.” Ordinary training-derived structure
+is a background commitment/provenance node relative
+to the current episode. Memorization, contamination,
+retrieval, or tool access that carries current-case-specific
+information is an additional access route. The same final
+answer can therefore have different epistemic vulnerability
+depending on which route generated its specificity.
+A complete AI audit should record at least: current evidence, retrieved/tool evidence, retained-record
+routes, model/calibration assumptions, prompt/system
+constraints, and decision policy. Calling all of this “the
+AI’s answer” erases the dependency structure that determines what can be defeated and repaired.
+
+The same typed questions can be asked of testimony,
+measurement, historical inference, peer review, and institutional classification. Portability here means invariance
+of the audit questions and dependency types, not empirical validation of identical mechanisms across domains.
+
+A reliabilist may object that a reliable process can yield
+warrant regardless of whether the subject can articulate
+its provenance. The Readout Condition need not deny
+this. The distinction is between having a reliable route
+and crediting a specific source with a discrimination. If
+the process is reliable because of hidden model structure,
+background data, or another route, then the overall belief
+may be warranted while the source attribution is false.
+Where that attribution is itself load-bearing for justification, explanation, or assertion, the false provenance
+becomes epistemically consequential. The framework
+therefore complements rather than replaces process reliabilism.
+The audit also applies to itself. Any verdict about
+K ∗ is normally mediated by e
+K; a mistaken access model
+produces an access-model failure, not a paradox that exempts meta-claims from the condition. The public Readout Universe’s own discipline—tier downgrades, explicit
+bridge classes, identifiability gates, and gate controls—is
+best understood as a self-application protocol: meta-level
+readouts remain readouts rather than being promoted to
+truth by their supervisory role.
+
+9. Discussion
+
+9.4 Epistemic and assertoric faces
+
+9.3 Reliabilism and the meta-level objection
+
+8.3 Portability claim
+
+The condition has a doxastic face and an assertoric face.
+Doxastically, a distinction is vulnerable when its actual
+dependency graph contains a defeated or falsely represented essential ground. Assertorically, a speaker can
+misrepresent a well-supported conclusion by describing
+an assumption- or model-dependent discrimination as
+“what the data show.” The first concerns warrant and
+revision; the second concerns epistemic representation
+to others. Keeping them separate prevents “undisclosed”
+from doing ambiguous work.
+
+9.1 What is actually new
+The paper does not claim novelty for factorization, statistical sufficiency, Blackwell garbling, partial identification,
+contrastive knowledge, argument warrants, measurementmodel dependence, testimony, robustness, or provenance.
+The contribution is the conjunction:
+distinction-token audit + source licensing
++ identification layer + typed provenance DAG (26)
++ E–A–D norms + defeater routing
+
+10. Limitations and Open Problems
+
+This is not a verbal restatement of any single neighbour.
+Toulmin does not provide a target-discrimination test;
+Manski does not provide source-attribution/disclosure
+norms or defeater routing; Blackwell cannot expose a
+hidden prior inside G; nanopublications do not determine
+which contrast within an assertion depends on which
+epistemic node. The Readout Condition integrates these
+partial structures around a single audit object: the discriminative commitments of a claim.
+
+The elevated architecture creates sharper, not weaker,
+falsifiers.
+First, the pointwise relational condition is categorical.
+A full theory of graded local discrimination may require
+tolerance structures, similarity orderings, or margin functions. What is fixed here is the quantifier structure
+needed to avoid transitive collapse.
+Second, the identification ladder requires an explicit ordering or nesting of augmentation sets. In complex scientific practice, assumptions may be partially ordered rather
+than linearly nested. The natural extension is a provenance lattice in which a distinction’s first-identification
+set may contain several incomparable minimal bundles.
+Third, provenance DAGs can contain causal and epistemic dependencies that are difficult to distinguish empirically. The graph is therefore a normative dependency
+representation, not automatically a discovered causal
+
+9.2 Why this is not tautological bookkeeping
+“A source cannot support what it does not distinguish”
+sounds trivial until a real inference contains models, priors, restrictions, retained records, thresholds, and institutional policies. The non-trivial content lies in preserving
+the types through composition and deriving revision consequences from them. Proposition 3 is the key normative
+11
+
+graph. When the dependency type cannot be established,
+the honest state is provenance indeterminacy.
+Fourth, the stochastic access condition is stated transparently as an access audit. Its inability to detect fixed
+background assumptions is not a residual defect but the
+reason for the identification layer. A counterexample
+would require a target-sensitive route not represented
+in K ∗ that nevertheless always passes the access audit
+without being absorbable into the declared architecture.
+Fifth, the warrant bridge is intentionally conditional
+on essentiality. False provenance need not destroy every
+possible form of externalist warrant. The stronger claim
+defended is that false source attribution is a genuine
+defeater whenever that attribution is load-bearing for
+the subject’s justification, for an assertion’s represented
+basis, or for downstream correction.
+Finally, novelty is a falsifiable conjunction claim. Finding prior work that already combines distinction-token
+source licensing, assumption-identification levels, typed
+provenance dependencies, attribution/disclosure norms,
+and defeater routing at comparable domain neutrality
+would defeat the originality claim. The paper does not
+pre-emptively narrow itself merely because adjacent components have predecessors; it states exactly what conjunction a challenger would need to match.
+
+has been settled.
+The four classical pressure tests remain part of the
+architecture because they forced real revisions: local
+rather than globally metaphysical contrasts, selectivity
+rather than representationality, role-typed rather than
+faculty-typed supplementation, and a boundary between
+pre-claim presence and discriminative assertion. Modern neighbours contribute equally essential constraints:
+Toulmin on warrants, Schaffer on contrast, Manski on
+identification under assumptions, Dretske and measurement theory on channel/model conditions, Blackwell and
+sufficiency on information-preserving processing, Lackey
+on non-simple transmission, and provenance infrastructures on assertion lineage. The Readout Condition is not
+a replacement for any of them. It is the architecture produced when their partial lessons are made simultaneously
+binding at the level of individual claim distinctions.
+Its three practical questions remain simple:
+What does the attributed source distinguish?
+Which distinction does the claim add?
+
+(27)
+(28)
+
+Which provenance path makes that addition licit?
+(29)
+The paper’s governing maxim can therefore be retained
+without qualification:
+
+11. Conclusion
+
+No epistemic discrimination
+without provenance.
+
+The Readout Condition began as a simple question—what
+does a source actually distinguish?—but the adversarial development of the framework shows why a one-line
+factorization principle is not enough. A mature audit
+must distinguish the existence of epistemic grounds from
+their attribution, and attribution from disclosure. It
+e by
+must distinguish actual access K ∗ from the model K
+which that access is interpreted. It must prevent nontransitive relational access from being destroyed by a
+global closure. It must recognize that Blackwell garbling
+audits additional access but is blind to fixed assumptions
+inside post-processing. And it must say why provenance
+matters after a claim has already been formed.
+The resulting architecture answers those demands. Exact source attribution is constrained by fiber factorization.
+Relational claim tokens are constrained pointwise by their
+local indiscriminability neighbourhoods. Stochastic access is audited by experiment ordering, while assumption
+dependence is located through an identification ladder. Individual claim distinctions carry typed provenance DAGs
+linking access, models of access, background evidence,
+relevance operations, inferential commitments, and policies. The E–A–D form of the condition then requires
+provenance existence, correct source attribution, and
+recoverable essential augmentation.
+The strongest result is normative rather than algebraic:
+provenance determines the topology of rational revision.
+Under Proposition 3, a defeater propagates along the
+distinctions that depend on its target node; independent paths can preserve content; and silent lift misroutes
+defeat and correction. This is why equal propositional
+content can have unequal epistemic vulnerability and
+why provenance is not metadata appended after warrant
+
+(30)
+
+Author Note
+The author is solely responsible for the arguments, formalizations, interpretations, and citations in this manuscript.
+Generative AI tools were used for literature mapping,
+adversarial review, LaTeX assistance, and editorial restructuring; the author selected the research direction,
+checked the formal claims and sources, revised the arguments, and endorses the final manuscript. Public Readout
+Universe repository artifacts are cited as intellectual and
+operational lineage, not as independent validation of the
+theory.
+
+A. Formal Notes
+A.1 Why the deterministic condition is local
+The factorization proposition requires no global possibleworld space. For any local contrast set XQ fixed by a
+question Q, the condition is evaluated only over that
+domain. If Q changes, the relevant XQ may change.
+This makes the audit contrast-sensitive without making
+contrast selection arbitrary: exclusions that alter the
+question’s constitutive alternatives must be separately
+justified.
+A.2 Pointwise relational reduction
+If deterministic R : X → Y induces xIR x′ ⇐⇒ R(x) =
+R(x′ ), then
+NR (x0 ) = R−1 (R(x0 )).
+(31)
+12
+
+The pointwise condition NR (x0 ) ⊆ Φ−1 (Φ(x0 )) for every
+x0 is therefore exactly fiber constancy. Conversely, fiber
+constancy implies the pointwise condition at every centre.
+No transitive closure is required. For genuinely nontransitive IR , the condition is evaluated at the actual
+centre and is not iterated to neighbours.
+
+beyond K ∗ ; Blackwell garbling tests this but does
+not audit hidden assumptions.
+Access model
+e or K
+e of the actual
+A claimant’s representation R
+access structure R∗ or K ∗ .
+Access augmentation
+Addition of a new target-sensitive route.
+Contrast/relevance operation
+A change in the alternatives under audit, such as
+X 7→ X ′ .
+Inferential commitment
+A prior, model, theory, bridge, calibration assumption, or other rule applied to an existing basis.
+Decision-policy augmentation
+A loss, threshold, utility, or institutional rule mapping epistemic states to actions.
+Identification level
+The weakest declared augmentation layer at which
+a claim distinction becomes excludable/identified.
+Typed provenance DAG
+A dependency graph whose nodes are typed by epistemic role and whose root is an individual claim
+distinction.
+Epistemic overreach
+Failure of provenance existence, correct attribution,
+or essential disclosure.
+Silent lift
+A mismatch between actual and represented essential provenance, especially the representation of an
+augmented distinction as source-generated.
+Defeater routing
+Propagation of source-specific defeat along the distinctions that depend on the defeated provenance
+node.
+
+A.3 Distinction-level attribution map
+For a claim token at x0 , the audit domain DΦ (x0 ) from (3)
+contains all rival pairs the claim excludes. An attribution
+map
+b : DΦ (x0 ) → 2V
+λ
+(32)
+records the nodes represented as supporting each distinction. Correct attribution requires every credited access
+node to pass its appropriate local licensing test and every omitted essential dependency to be non-load-bearing.
+The provenance DAG is thus strictly more informative
+than a single citation list attached to the whole proposition.
+A.4 Blackwell monotonicity and additional access
+Let K2 = G ◦ K1 . Then K2 is a garbling of K1 and
+cannot dominate K1 in every decision problem unless
+the experiments are Blackwell-equivalent. By contrast, a
+joint experiment J : (Y1 , Y2 ) | X can strictly dominate its
+marginal K1 because the projection from J to Y1 is itself
+a garbling. This formal difference matches the distinction
+between post-processing and access augmentation.
+A.5 Stochastic reduction to the deterministic case
+Let a deterministic readout R : X → Y induce the
+kernel KR (y | x) = 1[y = R(x)], and let a deterministic
+claim Φ : X → Z induce CΦ (z | x) = 1[z = Φ(x)].
+If CΦ = G ◦ KR , then for every y in im(R) the kernel
+G(· | y) must concentrate on a single value shared by all
+x with R(x) = y. Hence Φ is constant on the fibers of
+R and factors as Φ = ḡ ◦ R. The stochastic condition
+therefore extends rather than replaces the deterministic
+source-only licensing condition.
+
+References
+Shihab al Din Yahya Suhrawardi. The Philosophy of
+Illumination: Hikmat al-Ishraq. Brigham Young University Press, Provo, UT, 1999. Critical edition and
+English translation by John Walbridge and Hossein
+Ziai.
+
+B. Canonical Terminology
+
+Tommaso Alpina. Intellectual knowledge, active intellect,
+and intellectual memory in avicenna’s kitab al-nafs and
+its aristotelian background. Documenti e studi sulla
+tradizione filosofica medievale, 25:131–184, 2014.
+
+Readout
+The distinctions preserved or made available under a
+specified access relation. The map/relation/channel
+is the readout structure; a realized y is a readout
+value. The terms are not interchangeable.
+Claim distinction
+For an actual alternative x0 , a rival pair d0x′ =
+(x0 , x′ ) excluded by the actual claim token.
+Source-relative licensing
+Entitlement to credit a specified epistemic source
+with a specified claim distinction.
+Pointwise relational licensing
+The condition NR (x0 ) ⊆ Φ−1 (Φ(x0 )) at an actual
+claim token.
+Access admissibility
+In stochastic settings, the condition that a downstream channel requires no target-sensitive route
+
+Dan Arnold. Buddhists, Brahmins, and Belief: Epistemology in South Asian Philosophy of Religion. Columbia
+University Press, New York, 2005. doi: 10.7312/
+arno13280.
+Avicenna. Avicenna’s De Anima: Being the Psychological Part of Kitab al-Shifa’. Oxford University Press,
+London, 1959. Arabic text edited by Fazlur Rahman.
+David Blackwell. Comparison of experiments. In Jerzy
+Neyman, editor, Proceedings of the Second Berkeley
+Symposium on Mathematical Statistics and Probability,
+pages 93–102, Berkeley, 1951. University of California
+Press. doi: 10.1525/9780520411586-009.
+13
+
+David Blackwell. Equivalent comparisons of experiments.
+The Annals of Mathematical Statistics, 24(2):265–272,
+1953. doi: 10.1214/aoms/1177729032.
+
+Jaakko Hintikka. Knowledge and Belief: An Introduction
+to the Logic of the Two Notions. Cornell University
+Press, Ithaca, NY, 1962.
+
+James Bogen and James Woodward. Saving the phenomena. The Philosophical Review, 97(3):303–352, 1988.
+doi: 10.2307/2185445.
+
+Jari Kaukua. Self-Awareness in Islamic Philosophy: Avicenna and Beyond. Cambridge University Press, Cambridge, 2015. doi: 10.1017/CBO9781316105238.
+
+Lucien Le Cam. Sufficiency and approximate sufficiency.
+The Annals of Mathematical Statistics, 35(4):1419–
+1455, 1964.
+
+Birgit Kellner. Why infer and not just look? dharmakı̄rti
+on the psychology of inferential processes. In Shōryū
+Katsura and Ernst Steinkellner, editors, The Role of
+the Example (dr.stānta) in Classical Indian Logic, volume 58 of Wiener Studien zur Tibetologie und Buddhismuskunde, pages 1–51. Arbeitskreis für Tibetische
+und Buddhistische Studien Universität Wien, Vienna,
+2004.
+
+Tek Raj Chhetri, Yaroslav O. Halchenko, Dorota Jarecka,
+Puja Trivedi, Satrajit S. Ghosh, Patrick Ray, and Lydia Ng. Bridging the scientific knowledge gap and
+reproducibility: A survey of provenance, assertion
+and evidence ontologies. In Companion Proceedings
+of the ACM Web Conference 2025, pages 924–928.
+Association for Computing Machinery, 2025. doi:
+10.1145/3701716.3715483.
+
+Peter D. Klein. Useful false beliefs. In Quentin Smith,
+editor, Epistemology: New Essays, pages 25–62. Oxford
+University Press, Oxford, 2008. doi: 10.1093/acprof:
+oso/9780199264933.003.0003.
+
+Thomas M. Cover and Joy A. Thomas. Elements of
+Information Theory. Wiley-Interscience, Hoboken, NJ,
+2nd edition, 2006.
+
+Jennifer Lackey. Learning from Words: Testimony as
+a Source of Knowledge. Oxford University Press, Oxford, 2008. doi: 10.1093/acprof:oso/9780199219162.
+001.0001.
+
+Dignaga. Dignaga, On Perception: Being the Pratyaksapariccheda of Dignaga’s Pramanasamuccaya from
+the Sanskrit Fragments and the Tibetan Versions, volume 47 of Harvard Oriental Series. Harvard University
+Press, Cambridge, MA, 1968. Translated and annotated by Masaaki Hattori.
+
+Yaoharee Lahtee. Readout Universe: A philosophy and
+logic for grounding claims. https://github.com/
+morrocwi/readout_universe, 2026. Public GitHub
+repository; v1.0 frozen and v2.0-dev in active development.
+
+Fred I. Dretske. Epistemic operators. The Journal of
+Philosophy, 67(24):1007–1023, 1970. doi: 10.2307/
+2024710.
+
+Charles F. Manski. Partial Identification of Probability
+Distributions. Springer Series in Statistics. Springer,
+New York, 2003. doi: 10.1007/b97478.
+
+Fred I. Dretske. Knowledge and the Flow of Information.
+MIT Press, Cambridge, MA, 1981.
+John D. Dunne. Foundations of Dharmakirti’s Philosophy.
+Wisdom Publications, Boston, 2004.
+
+Charles F. Manski. Identification for Prediction and
+Decision. Harvard University Press, Cambridge, MA,
+2007.
+
+R. A. Fisher. On the mathematical foundations of theoretical statistics. Philosophical Transactions of the
+Royal Society of London. Series A, 222:309–368, 1922.
+doi: 10.1098/rsta.1922.0009.
+
+Michela Massimi. Perspectival Realism. Oxford University
+Press, Oxford, 2022. doi: 10.1093/oso/9780197555620.
+001.0001.
+Jon McGinnis. Avicenna. Oxford University Press, Oxford, 2010. doi: 10.1093/acprof:oso/9780195331479.
+001.0001.
+
+Jay L. Garfield. The Fundamental Wisdom of the Middle
+Way: Nagarjuna’s Mulamadhyamakakarika. Oxford
+University Press, New York, 1995. doi: 10.1093/oso/
+9780195103175.001.0001.
+
+Guido Melchior. A modal theory of discrimination.
+Synthese, 198(11):10661–10684, 2021. doi: 10.1007/
+s11229-020-02747-4.
+
+Ronald N. Giere. Scientific Perspectivism. University of
+Chicago Press, Chicago, 2006. doi: 10.7208/chicago/
+9780226292144.001.0001.
+
+Jerzy Neyman. Su un teorema concernente le cosiddette
+statistiche sufficienti. Giornale dell’Istituto Italiano
+degli Attuari, 6:320–334, 1935.
+
+Alvin I. Goldman. Discrimination and perceptual knowledge. The Journal of Philosophy, 73(20):771–791, 1976.
+doi: 10.2307/2025679.
+
+Duncan Pritchard. Relevant alternatives, perceptual
+knowledge and discrimination. Noûs, 44(2):245–268,
+2010. doi: 10.1111/j.1468-0068.2010.00739.x.
+
+Paul Groth, Andrew Gibson, and Jan Velterop. The
+anatomy of a nanopublication. Information Services &
+Use, 30(1–2):51–56, 2010. doi: 10.3233/ISU-2010-0613.
+
+Craige Roberts. Information structure in discourse:
+Towards an integrated formal theory of pragmatics.
+Semantics and Pragmatics, 5(6):1–69, 2012. doi:
+10.3765/sp.5.6. Original manuscript circulated in 1996.
+
+Ian Hacking. Representing and Intervening: Introductory
+Topics in the Philosophy of Natural Science. Cambridge
+University Press, Cambridge, 1983.
+14
+
+Jonathan Schaffer. Contrastive knowledge. In Tamar Szabó Gendler and John Hawthorne, editors, Oxford
+Studies in Epistemology, Volume 1, pages 235–271. Oxford University Press, Oxford, 2005. doi: 10.1093/oso/
+9780199285891.003.0009.
+Jonathan Schaffer. Knowing the answer. Philosophy and
+Phenomenological Research, 75(2):383–403, 2007. doi:
+10.1111/j.1933-1592.2007.00081.x.
+Mark Siderits and Shoryu Katsura. Nagarjuna’s Middle
+Way: Mulamadhyamakakarika. Wisdom Publications,
+Somerville, MA, 2013.
+Patrick Suppes. Models of data. In Ernest Nagel, Patrick
+Suppes, and Alfred Tarski, editors, Logic, Methodology
+and Philosophy of Science: Proceedings of the 1960
+International Congress, pages 252–261. Stanford University Press, Stanford, CA, 1962.
+Eran Tal. Calibration: Modelling the measurement process. Studies in History and Philosophy of Science
+Part A, 65–66:33–45, 2017. doi: 10.1016/j.shpsa.2017.
+09.001.
+Erik Torgersen. Comparison of Statistical Experiments.
+Cambridge University Press, Cambridge, 1991.
+Stephen E. Toulmin. The Uses of Argument. Cambridge
+University Press, Cambridge, 1958.
+Ted A. Warfield. Knowledge from falsehood. Philosophical Perspectives, 19(1):405–416, 2005. doi: 10.1111/j.
+1520-8583.2005.00067.x.
+Jan Westerhoff. Nagarjuna’s Madhyamaka: A Philosophical Introduction. Oxford University Press, Oxford, 2009.
+doi: 10.1093/acprof:oso/9780195375213.001.0001.
+Jan Westerhoff. The Dispeller of Disputes: Nagarjuna’s Vigrahavyavartani. Oxford University Press,
+Oxford, 2010. doi: 10.1093/acprof:oso/9780199732692.
+001.0001.
+Timothy Williamson. Knowledge and Its Limits. Oxford
+University Press, Oxford, 2000.
+Timothy Williamson. Identity and Discrimination. WileyBlackwell, Chichester, reissued and updated ed. edition,
+2013. doi: 10.1002/9781118503591. First published
+1990.
+William C. Wimsatt. Robustness, reliability, and overdetermination. In Marilynn B. Brewer and Barry E.
+Collins, editors, Scientific Inquiry and the Social Sciences, pages 124–163. Jossey-Bass, San Francisco, 1981.
+Stephen Yablo.
+Aboutness.
+Princeton University
+Press, Princeton, NJ, 2014. doi: 10.23943/princeton/
+9780691144955.001.0001.
+Mehdi Ha’iri Yazdi. The Principles of Epistemology in
+Islamic Philosophy: Knowledge by Presence. State
+University of New York Press, Albany, 1992.
+
+15
+
+

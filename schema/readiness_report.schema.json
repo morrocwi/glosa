@@ -1,0 +1,51 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://glosa.example/schema/readiness_report.schema.json",
+  "title": "glosa readiness report",
+  "description": "tier: Dr (specified; independently unreviewed). Backs the kernel's `validate_readiness` function (FOUNDATION_v0.5.md §9) and `templates/readiness_report.md` (REPO_SPEC_v0.5.md). A pre-work, fail-closed self-check that a session is actually ready to start work in a glosa project (doc-ecosystem / project-onboard pattern applied to glosa itself): an overview of the work about to start, which methodology cards/skills were actually read, and a typed blockers/negatives/positives list -- distinct from problem_card.readiness, which is S1's own narrower two-question-intake self-check. Namespace https://glosa.example/ is a placeholder.",
+  "type": "object",
+  "required": ["report_id", "project", "scope", "cards_read", "blockers", "verdict", "checked_by", "checked_at"],
+  "additionalProperties": true,
+  "properties": {
+    "report_id": { "type": "string", "minLength": 1 },
+    "project": { "type": "string", "minLength": 1 },
+    "scope": {
+      "description": "What work is about to start.",
+      "type": "string", "minLength": 1
+    },
+    "cards_read": {
+      "description": "methodology/ protocol cards, skills, or FOUNDATION sections actually read before this report -- not merely referenced.",
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "blockers": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["text"],
+        "properties": { "text": { "type": "string", "minLength": 1 }, "resolved": { "type": "boolean" } }
+      }
+    },
+    "negatives": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "positives": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "verdict": { "enum": ["READY", "READY_WITH_CAVEATS", "NOT_READY"] },
+    "checked_by": { "$ref": "common.defs.json#/definitions/role_or_human" },
+    "checked_at": { "type": "string" },
+    "tier": { "$ref": "common.defs.json#/definitions/tier" }
+  },
+  "allOf": [
+    {
+      "description": "Fail-closed: an unresolved blocker forbids a READY verdict.",
+      "if": {
+        "properties": { "blockers": { "type": "array", "contains": { "type": "object", "properties": { "resolved": { "const": false } } } } }
+      },
+      "then": { "properties": { "verdict": { "enum": ["READY_WITH_CAVEATS", "NOT_READY"] } } }
+    }
+  ]
+}

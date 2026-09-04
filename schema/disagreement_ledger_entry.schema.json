@@ -1,0 +1,59 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://glosa.example/schema/disagreement_ledger_entry.schema.json",
+  "title": "glosa disagreement ledger entry",
+  "description": "tier: Dr (specified; independently unreviewed). Implements FOUNDATION_v0.5.md §4.3's 'Disagreement Ledger -- Resolve or Declare, never averaged, never silently dropped' and §8.1's per-project-home-with-merged-view pattern (chair ruling B6): canonical rows live in a project's own DISAGREEMENT_LEDGER.md; `glosa ledger merge` renders the repo-wide view. One entry per disagreement between two or more DVP routes/reviewers on one claim. Namespace https://glosa.example/ is a placeholder.",
+  "type": "object",
+  "required": ["disagreement_id", "claim_ref", "nature", "positions", "outcome", "raised_by", "date"],
+  "additionalProperties": true,
+  "properties": {
+    "disagreement_id": { "type": "string", "minLength": 1 },
+    "claim_ref": { "type": "string", "minLength": 1 },
+    "project": { "type": "string" },
+    "nature": {
+      "enum": ["construct", "source", "mechanism", "boundary", "venue", "epistemic_tier"]
+    },
+    "positions": {
+      "type": "array",
+      "minItems": 2,
+      "items": {
+        "type": "object",
+        "required": ["held_by", "statement"],
+        "properties": {
+          "held_by": { "type": "string", "minLength": 1 },
+          "route_id": { "type": ["string", "null"] },
+          "statement": { "type": "string", "minLength": 1 }
+        }
+      }
+    },
+    "outcome": { "enum": ["RESOLVED", "DECLARED"] },
+    "decisive_record": {
+      "description": "Required, non-null, whenever outcome == RESOLVED.",
+      "type": ["string", "null"]
+    },
+    "resulting_tier_if_declared": {
+      "anyOf": [ { "$ref": "common.defs.json#/definitions/tier" }, { "type": "null" } ]
+    },
+    "raised_by": { "$ref": "common.defs.json#/definitions/role_or_human" },
+    "date": { "type": "string" },
+    "disclaimers_emitted": { "type": "array", "items": { "$ref": "common.defs.json#/definitions/disclaimer_id" } },
+    "notes": { "type": "string" }
+  },
+  "allOf": [
+    {
+      "description": "RESOLVED requires a decisive_record, never null (§4.3) -- a laundered consensus is not RESOLVED.",
+      "if": { "properties": { "outcome": { "const": "RESOLVED" } } },
+      "then": { "properties": { "decisive_record": { "type": "string", "minLength": 1 } }, "required": ["decisive_record"] }
+    },
+    {
+      "description": "DECLARED disagreements fire D-DISAGREEMENT-OPEN and tier the disputed point Open (§5).",
+      "if": { "properties": { "outcome": { "const": "DECLARED" } } },
+      "then": {
+        "properties": {
+          "resulting_tier_if_declared": { "const": "Open" },
+          "disclaimers_emitted": { "type": "array", "contains": { "const": "D-DISAGREEMENT-OPEN" } }
+        }
+      }
+    }
+  ]
+}

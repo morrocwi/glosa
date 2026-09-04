@@ -1,0 +1,92 @@
+{
+  "schema_version": "0.1.0",
+  "plan_id": "cp-cat-worked-example-0001",
+  "artifact_ref": {
+    "release_manifest_id": "rel-cat-worked-example-0001",
+    "claim_ids": ["GLOSA-CC-20260904-0001"],
+    "kg_cluster_id": null,
+    "genre": "case_study"
+  },
+  "status": "DRAFT",
+  "tier": "Dr",
+  "generated_by": {
+    "identity": "Project Advisor route (distinct from this artifact's maker and checker)",
+    "is_ai": true,
+    "model_or_vendor": "claude-sonnet-5"
+  },
+  "generated_at": "2026-09-07",
+  "expires_at": "2026-12-06",
+  "k_state_now": {
+    "value": "K1",
+    "public_disclaimer_present": false,
+    "note": "Hypothetical continuation of the worked example for schema-illustration purposes -- the actual cat claim above is K0, not yet K1."
+  },
+  "global_route": {
+    "venue_candidates": [
+      {
+        "name": "a field-matched practitioner newsletter (illustrative, type not a verified live name)",
+        "type": "WORKING_PAPER_REPO",
+        "field_fit_score": "LOW",
+        "field_fit_rationale": "an n=1 household case does not fit a peer-reviewed animal-behavior journal's evidentiary bar",
+        "face_independence": true,
+        "policy_audit": {
+          "ai_use_policy_checked": true, "authorship_policy_checked": true, "disclosure_wording_checked": true,
+          "preprint_policy_checked": true, "repository_version_policy_checked": true, "data_code_policy_checked": true,
+          "conflict_of_interest_policy_checked": true, "human_subject_ethics_checked": true, "copyright_archiving_rights_checked": true,
+          "result": "CLEAR"
+        },
+        "status": "CANDIDATE"
+      }
+    ],
+    "correspondent_types": ["editor of a field-matched practitioner newsletter"],
+    "reply_venues": [],
+    "preprint_or_repository_choice": { "choice": "Zenodo", "rationale": "case_study genre, K1 public-provisional record" }
+  },
+  "thai_route": {
+    "companion_artifact_type": "Thai-language companion case note",
+    "local_node_types": ["community pet-owner group"],
+    "gda_answers": {
+      "q1_local_institution": "UNKNOWN", "q2_global_south_gap": "UNKNOWN", "q3_english_only_blindspot": "UNKNOWN",
+      "q4_situated_record": "the household's own floor plan and routine", "q5_asymmetry_or_map_density": "UNKNOWN",
+      "q6_overturning_local_source": "UNKNOWN"
+    },
+    "author_run_correction_note": "Author-run positional correction improves route diversity but is NOT external K2."
+  },
+  "next_3_actions": [
+    { "action": "post the worked example to a reply venue for pet-behavior practitioners", "target": "a named pet-behavior practitioner community (type, not yet a verified live name)", "route": "THAI", "qualifies_as_conversion": true, "follow_up_check_after": "2026-10-07" },
+    { "action": "invite an independent household to replicate the distance manipulation", "target": "a named independent replicator (I5 candidate)", "route": "GLOBAL", "qualifies_as_conversion": true, "follow_up_check_after": "2026-11-07" },
+    { "action": "run the mechanical distance-threshold check on a second cat", "target": "records/observations/obs-cat-litterbox-002.yaml", "route": "MECHANICAL_CHECK", "qualifies_as_conversion": true, "follow_up_check_after": "2026-10-15" }
+  ],
+  "survival_buffer": {
+    "rejection_rounds_budgeted": 2,
+    "rejection_rounds_used": 0,
+    "rule": "Each rejection must produce Objection -> Revision -> stated delta-quality.",
+    "pivot_options_if_exhausted": ["narrow scope to a single-subject case report only"]
+  },
+  "do_not": [
+    { "id": "NO_SALAMI", "text": "Do not split this contribution into artificial series/salami outputs to raise paper count." },
+    { "id": "NO_PRESTIGE_SPENDING", "text": "Do not pay an APC or choose a venue for prestige alone." },
+    { "id": "NO_ATTENTION_AS_CREDIT", "text": "Views, likes, downloads, and AI praise do not license an increased mint rate." },
+    { "id": "NO_MINT_WITHOUT_CONVERSION", "text": "Do not recommend new flagship production while lambda has never been calibrated." },
+    { "id": "NO_QUERY_SHOPPING", "text": "Do not re-word the same claim to a route/reviewer/model that already disagreed." }
+  ],
+  "formula_governance_check": {
+    "mint_convert_coupling": {
+      "mint_count_window": 0, "conversion_count_window": 0, "lambda": null,
+      "lambda_calibration": { "calibrated": false, "calibrated_at": null, "calibrated_from": "" },
+      "new_flagship_recommendation_allowed": false
+    },
+    "reactivity_license": {
+      "beta_d_status": "LOW", "integrity_clean": true, "xenon_below_threshold": true,
+      "conversion_log_operational": false, "increase_mint_rate_allowed": false
+    }
+  },
+  "k1_k2_ledger_row": {
+    "asset": "cases/worked-example-cat", "k_state": "K1", "programme_cluster": "", "legibility_path": "",
+    "global_route": "Zenodo preprint (illustrative)", "thai_local_route": "community pet-owner group (type)",
+    "named_interlocutor": "", "addressed_action": "", "human_response": "", "k2": false,
+    "objection": "", "revision": "", "next_action": ""
+  },
+  "disclaimer_ids": ["D-ADVISOR", "D-ADVISOR-NOT-K2"],
+  "scram_check": { "status": "CLEAR", "reasons": [] }
+}

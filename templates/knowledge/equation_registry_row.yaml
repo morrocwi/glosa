@@ -1,0 +1,45 @@
+# equation_registry_row.yaml — RWI S8 template (Dr, unreviewed proposed schema)
+# One row per named equation/definition, registered ONCE at first use, before it appears in
+# any paper draft. Re-derived pattern from an internal equation-library repo's
+# organizing structure (PRIVATE source — pattern only, no text copied) + workspace rule
+# "equation registry = canonical, register owner + year of first use."
+# Registration rule: a second project reusing this equation adds itself to used_in_projects
+# and creates a kg `derives_from`/`borrows` edge — it never re-registers under a new id
+# (Buckingham-trap guard: never re-derive an equation's identity silently).
+
+id: eq-<slug>-<nnn>
+
+name: ""                            # short display name
+
+statement: ""
+  # the equation/definition itself, LaTeX or plain math notation
+
+owner: <person_role-node-id>
+  # who first introduced it IN RWI'S OWN CORPUS, or "borrowed_from_external" if not RWI-original
+
+first_use_year: null
+  # year first used in an RWI-lineage document — NOT necessarily the year it was first
+  # published anywhere in the world (see external_first_publication below)
+
+external_first_publication: null
+  # nullable citation_card.yaml id — REQUIRED when borrowed_vs_derived_status == BORROWED
+  # or DERIVED_FROM_BORROWED_ANCHOR
+
+source_citation_card_id: null
+  # the citation_card.yaml id backing this equation's origin claim — every equation citing an
+  # external source goes through the same Integrity Firewall as any other citation (S8 §1)
+
+tier: Dr
+  # enum: Th_coqc | finite_diagnostic | Dr | definition | Open
+
+borrowed_vs_derived_status: DERIVED
+  # enum: BORROWED | DERIVED | DERIVED_FROM_BORROWED_ANCHOR
+  # (forced/borrowed/Open ledger vocabulary, readout_genesis, re-derived)
+
+superseded_by: null
+  # id of the row that replaces this one — old rows are never deleted, only superseded
+
+used_in_projects: []
+  # list of project ids — populated by `rwi kg build`, not hand-maintained
+
+notes: ""

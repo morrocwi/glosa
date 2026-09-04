@@ -1,0 +1,402 @@
+% RWI arXiv template — TWO COLUMN
+% Rigour Without Infrastructure (RWI) — Standalone Scholar Methodology
+% Standard packages only (pdflatex + bibtex, TeX Live 2025). Compiled and
+% verified by the S5 design stage on 2026-09-04 — see
+% design/S5_paper-and-academic-templates.md for the compile log.
+%
+% Same RWI-required content as arxiv-onecol/main.tex; differences are format
+% only (two-column layout, manual full-width title/abstract block via
+% \twocolumn[...], table* for wide tables). Keep the two templates in sync
+% by hand when the disclaimer catalogue or tier legend changes upstream.
+
+\documentclass[10pt,twocolumn]{article}
+
+\usepackage[margin=0.75in,columnsep=0.25in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{mathptmx}
+\usepackage{microtype}
+\usepackage{amsmath,amssymb,mathtools}
+\usepackage{natbib}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{enumitem}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{url}
+\usepackage{hyperref}
+\usepackage{cleveref}
+\usepackage{titlesec}
+\usepackage{caption}
+\usepackage{fancyhdr}
+\usepackage{float}
+\usepackage{balance}
+
+\definecolor{Ink}{RGB}{25,25,28}
+\definecolor{Slate}{RGB}{82,88,96}
+\hypersetup{
+  colorlinks=true, linkcolor=Ink, citecolor=Ink, urlcolor=Slate,
+  pdfauthor={Yaoharee Lahtee},
+  pdftitle={Rigour Without Infrastructure: A Standalone Scholar Methodology for Human--AI Knowledge Co-Production}
+}
+\setlength{\parindent}{1em}
+\setlength{\parskip}{0.2em}
+\setlist{nosep,leftmargin=*}
+\captionsetup{font=small,labelfont=bf}
+\titleformat{\section}{\large\bfseries}{\thesection}{0.6em}{}
+\titleformat{\subsection}{\normalsize\bfseries}{\thesubsection}{0.5em}{}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\footnotesize RIGOUR WITHOUT INFRASTRUCTURE}
+\fancyhead[R]{\footnotesize DRAFT --- \textsc{Dr} TIER --- NOT INDEPENDENTLY REVIEWED}
+\fancyfoot[C]{\footnotesize \thepage}
+\renewcommand{\headrulewidth}{0.3pt}
+
+% ---- RWI tier-tag macros (readout_genesis + readout_universe tier ladder) ----
+\newcommand{\ThCoqc}{\textsc{Th\_coqc}}
+\newcommand{\FiniteDiag}{\textsc{finite\_diagnostic}}
+\newcommand{\FitCal}{\textsc{fit\_calibrated}}
+\newcommand{\DrTier}{\textsc{Dr}}
+\newcommand{\DefTier}{\textsc{definition}}
+\newcommand{\OpenTier}{\textsc{Open}}
+\newcommand{\tier}[1]{\textsc{#1}}
+\newcommand{\claimref}[1]{\textsuperscript{[#1]}}
+
+% ---- Disclaimer-catalogue environment: a typed, enumerable list, not prose ----
+\newlist{disclaimers}{description}{1}
+\setlist[disclaimers]{style=nextline,leftmargin=1.4em,font=\bfseries}
+
+\begin{document}
+
+% Full-width title block. NOTE: the usual "\twocolumn[...]" trick is UNSAFE
+% here because its optional argument is scanned for a bare "]" without
+% bracket-depth counting -- any literal "[FILL: ... ]" placeholder text (or
+% even a "\\[len]" line break) inside that argument truncates it early and
+% cascades into brace-mismatch errors. Verified failure mode; see the S5
+% design doc, Part 3, "compile pitfalls". Safer standard-package technique:
+% switch to \onecolumn for the title/abstract block, then back to \twocolumn.
+\onecolumn
+\begin{center}
+  {\LARGE\bfseries Rigour Without Infrastructure}\\[0.4em]
+  {\large A Standalone Scholar Methodology for Human--AI Knowledge Co-Production}\\[0.9em]
+  {\normalsize Yaoharee Lahtee}\\[0.15em]
+  {\small Independent researcher / social enterprise practitioner (standpoint in \S\ref{sec:standpoint})}\\[0.6em]
+  {\small Draft of \today\ --- genre: [FILL: CONCEPTUAL / EMPIRICAL / FORMAL\_PROOF /
+  CASE\_STUDY / ARCHIVAL\_DOCUMENTARY / DESIGN\_SCIENCE\_ARTIFACT / PRACTICE\_REPORT,
+  see \S\ref{sec:genre}]}
+\end{center}
+\vspace{0.6em}
+\begin{quote}
+\small\noindent\textbf{Abstract.} [FILL: 150--250 words. State the phenomenon or
+problem, the precise inadequacy in existing explanations/tools, the mechanism
+or method this paper contributes, the claim ceiling this paper reaches (name
+the tier, \Cref{tab:tiers}), and the single most important limitation. Do not
+use the abstract to claim a tier the body does not support.]
+\end{quote}
+\twocolumn
+
+\paragraph{Positioning.} We are not competing with knowledge-authority and make
+no priority claim; we state what we propose, what we build on, and what would
+make us wrong.
+
+\section{Standpoint}
+\label{sec:standpoint}
+This paper is written from the standpoint of [FILL: e.g., \emph{a social-enterprise
+practitioner and citizen, not a substitute expert in the discipline the paper
+touches}]. The standpoint is declared here, once, and governs how every claim
+below should be read: findings are offered from this position and at this
+access level, not from institutional authority or disciplinary credential.
+This is disclaimer \textbf{D-STANDPOINT} in \Cref{sec:disclaimers}; it is
+mandatory in every genre (\Cref{sec:genre}). \textbf{Disciplines not claimed:}
+[FILL: name the disciplines this paper's standpoint does \emph{not} extend
+competence into --- e.g.\ \emph{clinical medicine, law, formal mathematics
+beyond what is machine-checked here}. This list is disclosure D-NONEXPERT
+(\Cref{sec:disclaimers}) and must not be left as "none"; every paper touches
+at least one discipline it does not have standing in.]
+
+\section{Question as lived / Question as readout / Hypothesis}
+\label{sec:question-lens}
+This section is the round-trip translation the paper's claims are built on
+(readout-then-world-language, never the reverse): the problem as it was met,
+the same problem re-stated in the readout vocabulary, and the world-language
+hypothesis extracted from that readout analysis.
+\begin{description}[style=nextline,leftmargin=1.4em,font=\bfseries]
+  \item[Question as lived] [FILL: the human-language question exactly as
+    first asked, verbatim, with a language tag, e.g.\ \emph{(th)} or
+    \emph{(en)}. Do not polish it into academic register here.]
+  \item[Question as readout] [FILL: the same question translated into the
+    declared readout vocabulary --- access source, what that source
+    distinguishes, what it does not (same-fiber) distinguish, and any
+    contaminated concept it hides.]
+  \item[Hypothesis] [FILL: the world-language hypothesis extracted from the
+    readout analysis, plus its falsifier --- what observation would make this
+    paper wrong.]
+\end{description}
+Blackbox Note line(s) this section traces to: [FILL: \texttt{BB-YYYY-MM-DD-NN}
+line number(s), see \Cref{sec:blackbox}].
+
+\section{Claim-tier legend}
+\label{sec:tiers}
+Every claim in this paper (main text, tables, appendices) carries exactly one
+tier tag. Tiers are never collapsed and never silently upgraded between
+drafts; a tier change is a logged decision (see \Cref{sec:provenance}).
+
+\begin{table*}[t]
+\centering
+\small
+\begin{tabularx}{\linewidth}{@{}l X@{}}
+\toprule
+\textbf{Tag} & \textbf{Meaning} \\
+\midrule
+\ThCoqc{} & Machine-checked, axiom-free formal result (e.g. Coq/Lean). \\
+\FiniteDiag{} & Measured or computed on a finite, retained, reproducible input; not a limit or population claim. \\
+\FitCal{} & A model or heuristic calibrated against declared data; accuracy is conditional on that fit. \\
+\DrTier{} & Declared bridge / human narrative synthesis; a design or interpretive judgment, not a proof or a measurement. \\
+\DefTier{} & A stipulated definition used only where it is decision-bearing (a gate, threshold, or rule), never decorative. \\
+\OpenTier{} & Not established. Named as a real open question, not smoothed over. \\
+\bottomrule
+\end{tabularx}
+\caption{RWI claim-tier legend (readout\_genesis + readout\_universe ladder).}
+\label{tab:tiers}
+\end{table*}
+
+\section{Introduction}
+\label{sec:intro}
+[FILL: phenomenon/problem statement. Ground the motivating question in the
+founder's own framing where applicable: \emph{a person with no university, no
+lab, and no research team --- how can they produce knowledge from their own
+site of practice, rigorously?} Every load-bearing factual claim in this
+section must carry a claim-card id \claimref{Cn} resolving in the Claim
+Matrix, \Cref{sec:claim-matrix}.]
+
+\section{Genre and evidence standard}
+\label{sec:genre}
+This paper is routed through the RWI genre router (design/S5, \S2) as
+\textbf{[FILL: GENRE NAME]}. State here: the router question(s) that selected
+this genre, the required sections that follow from it, its evidence standard,
+and its claim ceiling for this paper (\Cref{tab:tiers}). If more than one
+genre applies to different sections, name the governing (tightest) ceiling
+and mark the mixed sections explicitly (\texttt{MIXED\_GENRE}).
+
+\section{Related work}
+\label{sec:related}
+This section is descriptive comparison, not a priority contest (disclaimer
+\textbf{D-COMPARISON}, \Cref{sec:disclaimers}). It answers exactly three
+questions and no more: which problem this paper solves, by which method, and
+how the nearest neighbours do it the same or differently. Wording rule: say
+\emph{same} / \emph{different} / \emph{cited} for every neighbour relation;
+never as a claim of priority, precedence, or being without a predecessor.
+"Adopted from" is written only where a human explicitly instructed the
+adoption and a Blackbox Note line or decision id names it.
+
+\paragraph{(1) Which problem we solve.} [FILL: one paragraph, plain
+statement, no comparison yet.]
+
+\paragraph{(2) By which method.} [FILL: one paragraph naming the mechanism
+or method from \Cref{sec:method}, at the level of detail needed to compare
+against neighbours below.]
+
+\paragraph{(3) Neighbour table.} Every row needs a citation card id (source
+card / citation-accuracy subsystem) with \texttt{metadata\_verified} and
+\texttt{claim\_match\_verified}; a row without a fetched, verified citation
+is tiered \OpenTier{} (\Cref{sec:disclaimers}, D-CITATION-UNVERIFIED), never
+written as "no tool does X".
+
+\begin{table*}[t]
+\centering
+\scriptsize
+\begin{tabularx}{\linewidth}{@{}p{0.1\linewidth} X X p{0.13\linewidth} p{0.13\linewidth} p{0.09\linewidth} p{0.09\linewidth}@{}}
+\toprule
+\textbf{Neighbour} & \textbf{Problem they solve} & \textbf{Their method} & \textbf{Same as ours} & \textbf{Different from ours} & \textbf{Citation card} & \textbf{Fetched/verified} \\
+\midrule
+\citet{schaffer2005contrastive} & [FILL] & [FILL] & [FILL] & [FILL] & [FILL] & [FILL] \\
+\citet{jaakkola2020designing} & [FILL] & [FILL] & [FILL] & [FILL] & [FILL] & [FILL] \\
+\bottomrule
+\end{tabularx}
+\caption{Neighbour table (descriptive comparison only; \Cref{sec:disclaimers} D-COMPARISON). Format after \texttt{templates/knowledge/neighbour\_table.md}.}
+\label{tab:neighbours}
+\end{table*}
+
+\section{Method / mechanism}
+\label{sec:method}
+[FILL: per the genre selected in \Cref{sec:genre} --- the mechanism
+(conceptual), the design and analysis plan (empirical), the claim-to-theorem
+map (formal/proof), the case protocol (case study), the acquisition/retention
+protocol (archival), the artifact build-and-evaluate loop (design-science),
+or the operating context and what was actually done (practice report).]
+
+\section{Findings / propositions}
+\label{sec:findings}
+[FILL: propositions or findings, each tagged with a tier (\Cref{tab:tiers})
+and a claim-card id \claimref{Cn}. State for each one what would defeat it
+(a named falsifier), per the independent-evidence discipline in
+D-INDEPENDENCE.]
+
+\section{Limitations}
+\label{sec:limitations}
+\label{sec:disclaimers}
+This section is the rendered disclaimer catalogue, not ad hoc prose. Every
+item below must be filled in; an item with nothing to disclose is stated as
+\emph{none identified}, never omitted.
+
+\input{disclaimers.tex}
+
+\section{AI-assistance disclosure}
+\label{sec:ai-disclosure}
+This paper is a human--AI co-production (disclaimer \textbf{D-AUTHORSHIP},
+\Cref{sec:disclaimers}), not AI-only automation and not human-only
+authorship. Generative AI assisted with [FILL: e.g.\ literature scaffolding,
+drafting, repository/template construction, and review-checklist support].
+Per the route-level disclosure standard \citep{lahtee2026zeroreadout}:
+\textbf{AI output is not treated as evidence.} Every claim above is accepted
+only when it matches a retained source record or a machine-checkable result
+described in the Claim Matrix (\Cref{sec:claim-matrix}), which records, per
+claim, who produced it and who is responsible (\texttt{produced\_by},
+\texttt{responsible}). The human holds the standpoint, the conceptual
+commitment, verification of load-bearing citations, the falsifier judgment,
+and the final public commitment; AI's role was assistive (exploration,
+drafting, structuring, adversarial routes, mechanical checks, logging),
+never substitutive for the author's own judgment, standpoint, or final
+commitment (Human Mastery Gate, \Cref{sec:mastery-gate};
+\textbf{AIContribution $\neq$ EpistemicResponsibility}).
+
+\section{Conclusion}
+\label{sec:conclusion}
+[FILL.]
+
+\appendix
+
+\section{Claim matrix}
+\label{sec:claim-matrix}
+Every claim-card id referenced above (\claimref{Cn}) resolves to exactly one
+row below. No prose claim in the main text may lack a row here; no row here
+may claim a tier its evidence column does not support. Per Chair Ruling v1
+\S B2, this compact table is a print-space compression of the full claim
+card (\texttt{claim\_card}, \texttt{shape: full}); it is not the record of
+correctness itself --- field-presence here is mechanically checkable, the
+content's correctness is what the independent check (Q5, \Cref{sec:five-questions}) exists for.
+
+\begin{table*}[t]
+\centering
+\scriptsize
+\begin{tabularx}{\linewidth}{@{}p{0.035\linewidth} X p{0.16\linewidth} p{0.06\linewidth} p{0.09\linewidth} p{0.08\linewidth}@{}}
+\toprule
+\textbf{ID} & \textbf{Informal statement} & \textbf{Evidence / formal support} & \textbf{Tier} & \textbf{Produced by} & \textbf{Responsible} \\
+\midrule
+C1 & [FILL] & [FILL: source id / theorem name / dataset ref] & [FILL] & [FILL: human / ai / joint] & human \\
+C2 & [FILL] & [FILL] & [FILL] & [FILL] & human \\
+\bottomrule
+\end{tabularx}
+\caption{Claim Matrix (format after \citealp{lahtee2026zeroreadout}), extended with co-production columns \texttt{produced\_by}/\texttt{responsible} per Chair Ruling v1 \S A3.}
+\label{tab:claim-matrix}
+\end{table*}
+
+\subsection{Five-questions detail (per claim)}
+\label{sec:five-questions}
+For every row in \Cref{tab:claim-matrix}, this sub-table answers the five
+founder questions the kernel can check for presence but not, beyond Q5, for
+correctness (Mechanical validity $\neq$ Semantic validity):
+\texttt{seen} (what was observed), \texttt{separates} (what the observation
+distinguishes), \texttt{ai\_filled} (what AI supplied, never omitted),
+\texttt{assumed} (what was taken as given), and \texttt{tested}
+(what independent check it received, named by independence class
+\(I0\)--\(I5\)).
+
+\begin{table*}[t]
+\centering
+\scriptsize
+\begin{tabularx}{\linewidth}{@{}p{0.035\linewidth} X X X X p{0.09\linewidth}@{}}
+\toprule
+\textbf{ID} & \textbf{seen} & \textbf{separates} & \textbf{ai\_filled} & \textbf{assumed} & \textbf{tested (indep.\ level)} \\
+\midrule
+C1 & [FILL] & [FILL] & [FILL: none identified, or what] & [FILL] & [FILL: I0--I5] \\
+C2 & [FILL] & [FILL] & [FILL] & [FILL] & [FILL: I0--I5] \\
+\bottomrule
+\end{tabularx}
+\caption{Five-questions detail, keyed to \Cref{tab:claim-matrix} by ID (S5\_anchor Must-fix 1, option (a)).}
+\label{tab:five-questions}
+\end{table*}
+
+Full claim card (every field, not just this print compression): [FILL:
+\texttt{<repo path>/claims/<claim-id>.claim\_card.json>}] (S5\_anchor
+Must-fix 1, option (b)).
+
+\section{Blackbox Note: how this work was made}
+\label{sec:blackbox}
+\emph{(Thai project term: ``Bantuek Klong Dam'' / the black-box note.)} This appendix is mandatory (Chair Ruling v1 \S A1;
+disclaimer \textbf{D-BLACKBOX-NOTE}). It is a curated subset of the raw
+human voice record that produced this paper's claims --- selected by the
+human owner of the voice, verbatim (typos kept), never polished or
+translated in place --- followed by the cooking log of every transformation
+applied to those lines. The full record is archived separately and cited by
+id; a line appears here only if removing it would change a claim card.
+
+\begin{table*}[t]
+\centering
+\scriptsize
+\begin{tabularx}{\linewidth}{@{}p{0.08\linewidth} p{0.08\linewidth} p{0.06\linewidth} p{0.07\linewidth} X p{0.14\linewidth} p{0.08\linewidth}@{}}
+\toprule
+\textbf{ID} & \textbf{Timestamp} & \textbf{Role} & \textbf{Kind} & \textbf{Verbatim text} & \textbf{Distinction introduced} & \textbf{Became $\to$ claim} \\
+\midrule
+BB-YYYY-MM-DD-01 & [FILL] & [FILL: founder / practitioner / community-member] & [FILL: question / proposal / correction / ruling] & [FILL: exact words, untranslated] & [FILL] & [FILL: claim-card id / rule id] \\
+\bottomrule
+\end{tabularx}
+\caption{Blackbox Note --- curated verbatim lines (\texttt{templates/knowledge/blackbox\_note.yaml}).}
+\label{tab:blackbox-lines}
+\end{table*}
+
+\begin{table*}[t]
+\centering
+\scriptsize
+\begin{tabularx}{\linewidth}{@{}p{0.09\linewidth} p{0.09\linewidth} p{0.12\linewidth} X X@{}}
+\toprule
+\textbf{Step} & \textbf{By} & \textbf{Input lines} & \textbf{Output} & \textbf{What changed} \\
+\midrule
+lens\_in & [FILL: human / ai / joint] & [FILL: line n's] & [FILL: file/claim-card id] & [FILL: one sentence] \\
+\bottomrule
+\end{tabularx}
+\caption{Cooking log (Thai project term: ``karn pung'') --- every transformation of the raw lines, append-only.}
+\label{tab:cooking-log}
+\end{table*}
+
+\section{Knowledge state}
+\label{sec:kstate}
+This paper's overall knowledge state, and the state of each load-bearing
+claim where it differs from the overall state (disclaimer
+\textbf{D-K-STATE}, \Cref{sec:disclaimers}):
+\texttt{K0} internal working note, \texttt{K1} public-provisional,
+\texttt{K2} externally certified (requires a named class-5 independent human
+check --- \textbf{DVP $\neq$ K2}, disclaimer D-DVP-NOT-K2), or \texttt{K3}
+superseded/withdrawn. [FILL: overall K-state, and any per-claim exceptions
+by claim-card id.]
+
+\section{Human Mastery Gate}
+\label{sec:mastery-gate}
+Before submission the author confirms they can defend, without AI assistance,
+each of the following (adapted from the Standalone Scholar Human Mastery
+Gate; unresolved items block submission, they do not get silently dropped):
+\begin{enumerate}[itemsep=0.1em]
+  \item the problem \item the major literature families \item the closest
+  constructs \item the precise inadequacy \item the proposed mechanism
+  \item the boundary conditions \item the strongest counterargument
+  \item the strongest counterexample \item the falsifying record
+  \item the discriminating empirical test
+\end{enumerate}
+Gate status: [FILL: PASS / PASS WITH NAMED GAPS / NOT READY --- list gaps].
+
+\section{Provenance and lineage}
+\label{sec:provenance}
+This paper is positioned relative to prior work per the anchor-preservation
+protocol (status vocabulary: \textsc{PRESERVE\_EXACT}, \textsc{PRESERVE\_FUNCTION},
+\textsc{EXPAND}, \textsc{SUPERSEDE}). [FILL: table of inherited mechanisms and
+their status, or a pointer to \texttt{lineage/RELATION\_TO\_STANDALONE\_SCHOLAR.md}.]
+Direct ancestor: \citet{lahtee2026standalone}. Core epistemic engine this
+paper's provenance apparatus is built on: \citet{lahtee2026readoutcondition}.
+
+\balance
+\bibliographystyle{plainnat}
+\bibliography{refs}
+
+\end{document}

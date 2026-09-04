@@ -1,0 +1,81 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://glosa.example/schema/problem_card.schema.json",
+  "title": "glosa problem card",
+  "description": "tier: Dr (specified; independently unreviewed). Implements FOUNDATION_v0.5.md §2.2 stage S1 (Problem intake, ปัญหา): the two-question intake gate (issue as a retained difference; the human's own proposal, 'none' a legal, never-inferred answer) plus standpoint declaration, before any analysis starts. This is the `intake.schema.json` REPO_SPEC_v0.5.md names as 'S1's problem_card.schema.json, one object, one name' -- filed here under its problem_card name per this task's own naming. Exit gate is a self-check readiness verdict (READY_FOR_S2), not a release gate -- contrast with schema/readiness_report.schema.json, which is the general pre-work project-readiness self-check. Namespace https://glosa.example/ is a placeholder.",
+  "type": "object",
+  "required": ["problem_id", "project", "intake", "standpoint", "origin_blackbox_ref", "produced_by", "responsible", "readiness", "human_owner"],
+  "additionalProperties": true,
+  "properties": {
+    "problem_id": { "type": "string", "pattern": "^GLOSA-PC-[0-9]{8}-[0-9]{4}$" },
+    "project": { "type": "string", "minLength": 1 },
+    "intake": {
+      "type": "object",
+      "required": ["q1_issue", "q2_user_proposal"],
+      "description": "The two-question intake gate: Q1 states the issue as a retained difference (not a bare label); Q2 is the human's own proposal or explicitly 'none' -- an AI session may never infer Q2's answer on the human's behalf (§2.2 co-production split).",
+      "properties": {
+        "q1_issue": {
+          "type": "object",
+          "required": ["text_verbatim", "retained_difference_statement"],
+          "properties": {
+            "text_verbatim": { "type": "string", "minLength": 1 },
+            "retained_difference_statement": {
+              "description": "The issue restated as: a difference that survives under a declared agency/context/query -- not merely a name for a topic.",
+              "type": "string", "minLength": 1
+            },
+            "agency": { "type": "string" },
+            "context": { "type": "string" },
+            "query": { "type": "string" },
+            "blackbox_line_ref": { "type": "string" }
+          }
+        },
+        "q2_user_proposal": {
+          "type": "object",
+          "required": ["text", "stated_by"],
+          "properties": {
+            "text": {
+              "description": "'none' is a legal, honest value -- never silently filled in by an AI session on the human's behalf.",
+              "type": "string"
+            },
+            "stated_by": { "$ref": "common.defs.json#/definitions/role_or_human" },
+            "blackbox_line_ref": { "type": "string" }
+          }
+        }
+      }
+    },
+    "standpoint": {
+      "type": "object",
+      "required": ["declared_basis"],
+      "properties": {
+        "declared_basis": { "type": "string", "minLength": 1 },
+        "disciplines_not_claimed": { "type": "array", "items": { "type": "string" } },
+        "method_basis": { "type": "string" }
+      }
+    },
+    "origin_blackbox_ref": { "type": ["string", "null"] },
+    "produced_by": { "$ref": "common.defs.json#/definitions/produced_by" },
+    "responsible": { "const": "human" },
+    "readiness": {
+      "type": "object",
+      "required": ["verdict"],
+      "description": "Self-check verdict only -- explicitly NOT a release gate (§2.2 S1 exit-gate column).",
+      "properties": {
+        "verdict": { "enum": ["READY_FOR_S2", "NOT_READY"] },
+        "reason": { "type": "string" },
+        "checked_by": { "$ref": "common.defs.json#/definitions/role_or_human" },
+        "checked_at": { "type": "string" }
+      }
+    },
+    "k_state": { "const": "K0" },
+    "status": { "$ref": "common.defs.json#/definitions/release_status" },
+    "human_owner": { "type": "string", "minLength": 1 },
+    "notes": { "type": "string" }
+  },
+  "allOf": [
+    {
+      "description": "READY_FOR_S2 requires the reason for readiness to actually be stated (an honest self-check names why, not just a bare verdict).",
+      "if": { "properties": { "readiness": { "type": "object", "properties": { "verdict": { "const": "READY_FOR_S2" } } } } },
+      "then": { "properties": { "readiness": { "type": "object", "required": ["reason"], "properties": { "reason": { "type": "string", "minLength": 1 } } } } }
+    }
+  ]
+}

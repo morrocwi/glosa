@@ -1,0 +1,64 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://glosa.example/schema/neighbour_table_row.schema.json",
+  "title": "glosa neighbour table row",
+  "description": "tier: Dr (specified; independently unreviewed). Implements templates/knowledge/neighbour_table.md and design/S13_neighbour-table.md (founder ruling 31d/31e, chair ruling A2): descriptive comparison, no priority/novelty contest. Wording rule: comparison is same/different/cited by default; `relation: adopted_from` is legal ONLY when a human explicitly instructed adoption (a Blackbox Note line or DECISIONS.yaml id required) -- AI-detected similarity is never 'adopted'. Every row needs a citation_card id with metadata_verified + claim_match_verified. Namespace https://glosa.example/ is a placeholder.",
+  "type": "object",
+  "required": ["neighbour", "problem_they_solve", "their_method", "relation", "citation_card", "tier", "fetched_verified"],
+  "additionalProperties": true,
+  "properties": {
+    "neighbour": { "type": "string", "minLength": 1 },
+    "problem_they_solve": { "type": "string", "minLength": 1 },
+    "their_method": { "type": "string", "minLength": 1 },
+    "same_as_ours": { "type": "string" },
+    "different_from_ours": { "type": "string" },
+    "relation": {
+      "description": "Descriptive comparison vocabulary. 'adopted_from' requires adoption_authorization below (founder ruling 31g-31i).",
+      "enum": ["same", "different", "cited", "adopted_from"]
+    },
+    "adoption_authorization": {
+      "description": "Required, non-null, when relation == adopted_from -- a Blackbox Note line or DECISIONS.yaml row id that named the adoption explicitly.",
+      "type": ["object", "null"],
+      "properties": {
+        "blackbox_line_ref": { "type": ["string", "null"] },
+        "decision_id": { "type": ["string", "null"] }
+      }
+    },
+    "related_work_we_cite": { "type": "string" },
+    "citation_card": { "type": "string", "minLength": 1 },
+    "tier": {
+      "description": "finite_diagnostic if fetched & verified; Open if not fetched (template's own rule) -- schema restricts to those two, since a neighbour-table row is never asserted at a higher tier than that.",
+      "enum": ["finite_diagnostic", "Open"]
+    },
+    "fetched_verified": {
+      "type": "object",
+      "required": ["metadata_verified", "claim_match_verified"],
+      "properties": {
+        "metadata_verified": { "type": "boolean" },
+        "claim_match_verified": { "type": "boolean" }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "if": { "properties": { "relation": { "const": "adopted_from" } } },
+      "then": {
+        "required": ["adoption_authorization"],
+        "properties": {
+          "adoption_authorization": {
+            "type": "object",
+            "anyOf": [
+              { "required": ["blackbox_line_ref"], "properties": { "blackbox_line_ref": { "type": "string", "minLength": 1 } } },
+              { "required": ["decision_id"], "properties": { "decision_id": { "type": "string", "minLength": 1 } } }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "description": "tier finite_diagnostic requires both verification booleans true (fetched & verified).",
+      "if": { "properties": { "tier": { "const": "finite_diagnostic" } } },
+      "then": { "properties": { "fetched_verified": { "type": "object", "properties": { "metadata_verified": { "const": true }, "claim_match_verified": { "const": true } } } } }
+    }
+  ]
+}

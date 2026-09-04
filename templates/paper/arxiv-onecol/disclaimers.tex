@@ -1,0 +1,96 @@
+% disclaimers.tex — the RWI disclaimer catalogue, rendered.
+% Shared \input by main.tex Section "Limitations". Typed and enumerable,
+% not ad hoc prose. IDs are the semantic ids of the single disclaimer
+% catalogue (methodology/data/disclaimer_catalogue.json per Chair Ruling v1
+% §C2) -- there is no numeric D1-D12 scheme in this repo. See
+% design/S5_paper-and-academic-templates.md Part 2 for the canonical
+% definition of each item and which are mandatory per genre, and
+% design/CHAIR_RULING_v1.md §A2/§C2 for the id-scheme ruling. Fill every
+% [FILL]; write "none identified" rather than deleting an item.
+
+\begin{disclaimers}
+  \item[D-STANDPOINT] See \Cref{sec:standpoint}. [FILL: restate in one
+    sentence for a reader who skips to Limitations.]
+  \item[D-NONEXPERT] The author writes from the standpoint declared in
+    \Cref{sec:standpoint} and is \emph{not} a substitute for a credentialed
+    expert in any discipline this paper touches. [FILL: name the specific
+    disciplines this paper draws on, and the disciplines it explicitly does
+    not claim competence in --- see the Standpoint paragraph's "disciplines
+    not claimed" list.]
+  \item[D-SCOPE] [FILL if EMPIRICAL genre: n, population, sampling method,
+    and the boundary past which findings should not be generalized. Else:
+    not applicable to this genre.]
+  \item[D-NONCLAIM] [FILL: an explicit "we do NOT claim ..." ledger. List at
+    least the claims a reader might mistakenly infer from the title or
+    abstract that this paper does not make.]
+  \item[D-AIFILL] See \Cref{sec:ai-disclosure}. [FILL: name specifically
+    which passages, tables, or code were AI-drafted vs. author-verified.
+    Every field is stated explicitly as "none identified", never omitted.]
+  \item[D-TIER] [FILL: name the single highest tier claimed anywhere in this
+    paper (\Cref{tab:tiers}) and the one reason it cannot go higher yet.]
+  \item[D-INDEPENDENCE] [FILL: name the independence class (\(I0\)--\(I5\):
+    self / same-model AI / same-vendor other model / decorrelated-vendor AI /
+    mechanical or original-record check / external human) of every check
+    this paper's claims received, per claim-card (\Cref{sec:five-questions}).
+    This paper does not seek, and does not treat as available,
+    any external or institutional validation as a lever that would make its
+    claims more true on its own say-so; an outside reader's input, if used,
+    is optional-level evidence at the independence level it actually reaches,
+    never a certification gate. Same-model self-approval is \(I0\) and is not
+    counted as an independent check.]
+  \item[D-DVP-NOT-K2] A decorrelated-vendor AI review pass (DVP) is at most
+    an \(I3\) route. \textbf{DVP $\neq$ K2}: no combination of AI-only
+    checks, however many vendors, raises a claim to the K2 (externally
+    certified) knowledge state (\Cref{sec:kstate}) --- only a named, class-5
+    independent human check does. [FILL: state this paper's actual K-state
+    and the independence class each load-bearing claim reached, or: no
+    claim in this paper is asserted above K1.]
+  \item[D-LEGAL-NEQ-EPISTEMIC] [FILL, or: none identified.] Any license,
+    permit, certification, or regulatory approval referenced in this paper
+    makes an action lawful; it does not raise this paper's epistemic warrant
+    and does not certify any claim as true.
+  \item[D-NOT-DIAGNOSTIC] [FILL if health/clinical-adjacent, else: not
+    applicable --- this paper makes no health, clinical, or treatment
+    recommendation.]
+  \item[D-TRANSLATION] [FILL if a Thai-language companion exists: missing /
+    machine / reviewed / verified, per record. Else: not applicable ---
+    single-language artifact.]
+  \item[D-DISSENT-PRESERVED] [FILL: pointer to any dissent or deviation
+    record connected to this paper's claims, or: none recorded to date. A
+    dissent record is never silently deleted by a later draft.]
+  \item[D-COMPARISON] This paper does not claim priority or precedence over
+    other work. \Cref{sec:related} answers exactly three questions --- which
+    problem this paper solves, by which method, and how the nearest
+    neighbours do it the same or differently (\Cref{tab:neighbours}) --- and
+    every neighbour relation is stated as \emph{same}, \emph{different}, or
+    \emph{cited}, never as a priority contest. "Adopted from" is written only
+    where a human instructed the adoption and a Blackbox Note line or
+    decision id names it (\Cref{sec:blackbox}).
+  \item[D-CITATION-UNVERIFIED] [FILL, or: none identified.] Every citation in
+    \Cref{sec:related} and elsewhere carries a \texttt{fetch\_status}
+    (\texttt{FETCHED\_VERIFIED} / \texttt{NOT\_FETCHED} / \texttt{FETCH\_
+    FAILED} / \texttt{MISMATCH} / \texttt{CHALLENGED} / \texttt{SUPERSEDED}).
+    Source existence does not, by itself, mean the cited source supports the
+    claim attached to it (metadata verification $\neq$ claim-match
+    verification). Any row without a verified citation card is tiered
+    \OpenTier{}, not upgraded on the strength of the citation alone.
+  \item[D-BLACKBOX-NOTE] This paper carries the mandatory Blackbox Note
+    appendix (\Cref{sec:blackbox}, "how this work was made"): the curated
+    verbatim human lines that produced this paper's claims and the cooking
+    log of every transformation applied to them. [FILL: Blackbox Note id(s),
+    e.g.\ \texttt{BB-YYYY-MM-DD-NN}.]
+  \item[D-K-STATE] [FILL: state this paper's overall knowledge state
+    (\Cref{sec:kstate}): \texttt{K0} internal working note, \texttt{K1}
+    public-provisional (published, independence class named per claim, no
+    class-5 human check yet), \texttt{K2} externally certified (a named
+    class-5 human independently checked the load-bearing claims), or
+    \texttt{K3} superseded/withdrawn. A paper may mix K-states across claims;
+    if so, name the K-state per claim-card row in \Cref{tab:claim-matrix}
+    instead of one blanket value.]
+  \item[D-AUTHORSHIP] See \Cref{sec:ai-disclosure}. The research direction,
+    standpoint, and final public commitment are the human author's; AI
+    contribution is disclosed per claim (\texttt{produced\_by},
+    \Cref{tab:claim-matrix}) and never substitutes for the author's own
+    judgment or responsibility (\textbf{AIContribution $\neq$
+    EpistemicResponsibility}).
+\end{disclaimers}

@@ -1,0 +1,37 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://glosa.example/schema/dialogue_table_row.schema.json",
+  "title": "glosa dialogue table row",
+  "description": "tier: Dr (specified; independently unreviewed). Implements templates/knowledge/dialogue_table.md (S14, founder 35c): one row per source, placed by how it talks to OUR problem/hypothesis -- never by who came first, never 'seminal'/'pioneering' (date is metadata only, never row order). A stance (agrees/disagrees) may only be recorded once the backing citation_card's claim_match_verified is true. Namespace https://glosa.example/ is a placeholder.",
+  "type": "object",
+  "required": ["hypothesis_ref", "source_label", "citation_card", "stance", "verified"],
+  "additionalProperties": true,
+  "properties": {
+    "hypothesis_ref": { "type": "string", "minLength": 1 },
+    "source_label": { "type": "string", "minLength": 1 },
+    "how_it_sees_the_problem": { "type": "string" },
+    "what_it_separates": { "type": "string" },
+    "what_it_assumes": { "type": "string" },
+    "stance": {
+      "description": "Renders the template's paired 'agrees with H'/'disagrees with H' columns as one typed field; ORTHOGONAL means neither supports nor challenges H (different question), UNDETERMINED means the passage was ambiguous or not fully read -- never silently rounded to a stance.",
+      "enum": ["YES", "NO", "ORTHOGONAL", "UNDETERMINED"]
+    },
+    "what_it_would_say_against_us": { "type": "string" },
+    "citation_card": { "type": "string", "minLength": 1 },
+    "verified": {
+      "type": "object",
+      "required": ["metadata_verified", "claim_match_verified"],
+      "properties": {
+        "metadata_verified": { "type": "boolean" },
+        "claim_match_verified": { "type": "boolean" }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "description": "A stance other than UNDETERMINED requires claim_match_verified true (template's forbidden-list rule: never write a stance for a row whose citation_card is not claim_match_verified).",
+      "if": { "properties": { "stance": { "enum": ["YES", "NO", "ORTHOGONAL"] } } },
+      "then": { "properties": { "verified": { "type": "object", "properties": { "claim_match_verified": { "const": true } } } } }
+    }
+  ]
+}

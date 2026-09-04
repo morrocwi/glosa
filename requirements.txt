@@ -1,0 +1,10 @@
+# glosa rendering + validation toolchain — pip (user-level: `pip install --user -r requirements.txt`)
+# Pin ranges loosely; verified working versions noted 2026-09-04.
+markdown>=3.7          # md2html/md2pdf/md2docx/md2pptx source parsing (verified: 3.10.3)
+python-docx>=1.1.0     # md2docx direct build (verified: 1.2.0)
+python-pptx>=0.6.23    # md2pptx (verified: 1.0.2)
+jsonschema>=4.0        # schema/*.schema.json validation (scripts/check_*.sh consumers)
+PyYAML>=6.0            # DECISIONS.yaml / manifest / front-matter adjacent tooling
+
+# Optional (not required by tools/render.py; used by other parts of the cycle)
+# pandoc-python-bindings are NOT used — pandoc itself is an external binary, not a pip package.

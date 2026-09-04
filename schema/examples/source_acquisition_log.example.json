@@ -1,0 +1,14 @@
+{
+  "id": "acq-example-ext-001",
+  "citation_card_ref": "cite-example-ext-001",
+  "search_log_ref": "search-cat-litterbox-001",
+  "identifier": { "kind": "OFFICIAL_URL", "value": "https://example.org/synthetic-example-source" },
+  "acquisition_route": "OPEN_ACCESS_DIRECT",
+  "acquisition_status": "obtained",
+  "attempted_at": "2026-09-05",
+  "attempted_by": "founder",
+  "verification_of_status": "MECHANICAL_HTTP_CHECK",
+  "secondary_citation_check": "PASSED",
+  "no_local_leak_check": { "contains_local_path": false, "contains_zotero_key": false, "contains_rl_internal_id": false },
+  "notes": "SYNTHETIC placeholder source for schema-example purposes only; not a real publication."
+}

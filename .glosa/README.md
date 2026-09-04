@@ -1,0 +1,2 @@
+# .glosa/ — local author profile + secrets (system-wide, outside git)
+Real files live in `~/.config/glosa/` (mode 600): `author_profile.json` (Zenodo creators, ORCID, affiliation, standpoint, attribution rule, defaults) and `secrets.env` (Zenodo/Forgejo tokens, author email). This directory holds only EXAMPLE files. Anything named `author_profile.json` or `secrets.env` here is git-ignored. Load with `. scripts/load_secrets.sh`. Tokens are added to the USB vault by the founder (`update-vault.sh`), never stored in any repo.

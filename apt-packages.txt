@@ -1,0 +1,33 @@
+# glosa toolchain — informational apt list (Debian/Ubuntu package names).
+# This file is INFORMATION ONLY: it documents what a system administrator would
+# install; it is not run by any glosa tool, and no glosa tool ever calls sudo.
+# "requires admin" = needs `sudo apt install`; everything else in TOOLCHAIN.md
+# is user-level (pip --user, plugin installers, LibreOffice's own headless mode).
+
+# core
+python3
+python3-pip
+git
+
+# rendering (choose the LibreOffice route; it is the one verified working here)
+libreoffice
+fonts-noto-core        # Latin/EN coverage
+fonts-noto-thai         # Thai coverage: Noto Sans/Serif Thai (verified present 2026-09-04)
+fonts-noto-looped-thai  # Noto Looped Thai (verified present 2026-09-04)
+
+# optional: pandoc alternate markdown route (not required by tools/render.py)
+pandoc
+
+# optional: full TeX Live with Thai-capable XeTeX (xelatex) — large install, NOT verified
+# working in this environment as of 2026-09-04 (xelatex binary absent; lualatex present
+# but fontspec/luaotfload broken for Thai). Only install if a future admin wants to
+# re-attempt Thai LaTeX; the working Thai route in this toolchain is md2pdf (soffice).
+texlive-xetex
+texlive-lang-other
+texlive-fonts-extra
+
+# citation checking
+curl
+
+# GitHub workflow
+gh

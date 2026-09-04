@@ -1,0 +1,26 @@
+{
+  "_fail_reason": "Violates claim_card.schema.json's shape:stub allOf block (FOUNDATION_v0.5.md §3.3 rule 10, chair ruling B2): shape is stub, but status is Approved-for-Live -- a stub cannot advance status past Draft or be cited publicly.",
+  "claim_id": "GLOSA-CC-20260904-0002",
+  "shape": "stub",
+  "statement": {
+    "language": "th",
+    "text": "แมวอีกตัวก็เยี่ยวไม่เป็นที่เหมือนกัน",
+    "is_verbatim_quote": true
+  },
+  "standpoint": { "declared_basis": "pet owner direct observation", "disciplines_not_claimed": ["veterinary medicine"], "method_basis": "casual household note" },
+  "claim_type": "EMPIRICAL",
+  "produced_by": "human",
+  "responsible": "human",
+  "origin_blackbox_ref": "BB-2026-09-04-01",
+  "five_questions": {
+    "ai_filled": { "used": false, "note": "" },
+    "tested": {
+      "evidence_relations": [],
+      "falsifier": "If this second cat uses the box normally once it is moved closer, the same distance pattern is corroborated; if not, it is a different mechanism."
+    }
+  },
+  "non_claims": ["This does not generalize beyond casual household notes."],
+  "human_owner": "founder",
+  "tier": "Dr",
+  "status": "Approved-for-Live"
+}

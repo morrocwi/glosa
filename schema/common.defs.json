@@ -1,0 +1,372 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://glosa.example/schema/common.defs.json",
+  "title": "glosa common definitions",
+  "description": "tier: Dr (specified; independently unreviewed). Shared enum/shape definitions reused by every other schema/*.schema.json file via relative $ref, so a shared vocabulary (tier ladder, independence ladder, k_state, ...) has exactly one home per FOUNDATION_v0.5.md's one-fact-one-home rule (§8) even though JSON Schema draft-07 has no native cross-file merge. NOT itself one of the 20 schemas the task named; added because every one of those 20 references at least one definition here. Namespace https://glosa.example/ is a placeholder — glosa has no public domain yet (REPO_SPEC_v0.5.md: local Forgejo only, no public remote).",
+  "definitions": {
+    "tier": {
+      "description": "FOUNDATION_v0.5.md §4.1 — six-value tier ladder, never collapsed.",
+      "enum": [
+        "Th_coqc",
+        "finite_diagnostic",
+        "fit_calibrated",
+        "Dr",
+        "definition",
+        "Open"
+      ]
+    },
+    "independence_class": {
+      "description": "FOUNDATION_v0.5.md §4.2 — ONE string ladder I0..I5, chair ruling C1, reused verbatim by claim card, evidence relation, review report, citation card, kg edge, route dependence matrix. Never a numeric ordinal at schema level.",
+      "enum": [
+        "I0",
+        "I1",
+        "I2",
+        "I3",
+        "I4",
+        "I5"
+      ]
+    },
+    "independence_class_or_none": {
+      "enum": [
+        "I0",
+        "I1",
+        "I2",
+        "I3",
+        "I4",
+        "I5",
+        "none"
+      ]
+    },
+    "k_state": {
+      "description": "FOUNDATION_v0.5.md §4.4 — Standalone Scholar K-ladder, PRESERVE_EXACT.",
+      "enum": [
+        "K0",
+        "K1",
+        "K2",
+        "K3"
+      ]
+    },
+    "mc_level": {
+      "description": "FOUNDATION_v0.5.md §7.1 — MIMCG L0-L5 mapped onto glosa artifacts.",
+      "enum": [
+        "L0",
+        "L1",
+        "L2",
+        "L3",
+        "L4",
+        "L5"
+      ]
+    },
+    "bearing": {
+      "enum": [
+        "SUPPORTS",
+        "CHALLENGES",
+        "NEUTRAL",
+        "UNRESOLVED"
+      ]
+    },
+    "review_mode": {
+      "description": "FOUNDATION_v0.5.md §7.8, chair ruling C5 — SIX values, INTERNAL_DATA_AUDIT restored.",
+      "enum": [
+        "MAKER_SELF_CHECK",
+        "DECORRELATED_AI_ROUTE",
+        "HUMAN_REVIEW",
+        "MECHANICAL_CHECK",
+        "SYSTEMATIC_LITERATURE_SEARCH",
+        "INTERNAL_DATA_AUDIT"
+      ]
+    },
+    "search_mode": {
+      "description": "search_log.yaml's search-episode label, kept a DISTINCT field name `search_mode` from `review_mode` (FOUNDATION_v0.5.md §7.8's verification-route label) — resolves the name collision S14_literature-review-system.md §12 open-question-1 flagged, per this task's explicit instruction. Same five-value enum content as the S8 template's field, renamed only.",
+      "enum": [
+        "SYSTEMATIC_REVIEW",
+        "TARGETED_SEARCH",
+        "SCOPING_SEARCH",
+        "RAPID_EVIDENCE_CHALLENGE",
+        "FIELD_OBSERVATION_LOG"
+      ]
+    },
+    "fetch_status": {
+      "description": "FOUNDATION_v0.5.md §7.8, chair ruling C3 — ONE enum, reused by citation card and neighbour table.",
+      "enum": [
+        "FETCHED",
+        "NOT_FETCHED",
+        "FETCH_FAILED",
+        "PAYWALLED_ABSTRACT_ONLY",
+        "UNCHECKED_OFFLINE"
+      ]
+    },
+    "citation_status": {
+      "description": "FOUNDATION_v0.5.md §7.8 six-value citation card status. Supersedes templates/knowledge/citation_card.yaml's older broader draft enum (that S8 draft also listed CLAIM_MISMATCH/FETCH_FAILED as status values); this schema follows the more recent, binding FOUNDATION_v0.5.md §7.8 text.",
+      "enum": [
+        "CANDIDATE",
+        "METADATA_OK",
+        "VERIFIED",
+        "CHALLENGED",
+        "SCRAMMED",
+        "SUPERSEDED"
+      ]
+    },
+    "identifier_kind": {
+      "description": "FOUNDATION_v0.5.md §7.8, chair ruling C8 — adds BLACKBOX_NOTE.",
+      "enum": [
+        "DOI",
+        "PMID",
+        "PMCID",
+        "ISBN",
+        "ARXIV",
+        "OFFICIAL_URL",
+        "BLACKBOX_NOTE",
+        "OTHER_STABLE"
+      ]
+    },
+    "citation_scope": {
+      "enum": [
+        "DIRECT_QUOTATION",
+        "PARAPHRASE",
+        "SUPPORTS_GENERAL_CLAIM_ONLY",
+        "CONTEXT_ONLY_NOT_EVIDENCE"
+      ]
+    },
+    "genre": {
+      "description": "FOUNDATION_v0.5.md §6.1, chair ruling B1 — 9 rows + MIXED_GENRE.",
+      "enum": [
+        "conceptual",
+        "empirical_quant",
+        "empirical_qual_practice",
+        "case_study",
+        "formal_proof",
+        "systematic_review",
+        "design_science",
+        "archival",
+        "position_reply",
+        "MIXED_GENRE"
+      ]
+    },
+    "venue_track": {
+      "description": "FOUNDATION_v0.5.md §3.2 / must-fix 8 — `none` legal for K0 work never headed to any venue.",
+      "enum": [
+        "international",
+        "thai_tci",
+        "none"
+      ]
+    },
+    "claim_type": {
+      "enum": [
+        "EMPIRICAL",
+        "FORMAL",
+        "INTERPRETIVE",
+        "NORMATIVE",
+        "CONVENTIONAL_LEGAL",
+        "DECISION",
+        "SOCIAL",
+        "HUMAN_PARTICIPANT"
+      ]
+    },
+    "formal_applicability": {
+      "description": "FOUNDATION_v0.5.md §3.2b, must-fix 6.",
+      "enum": [
+        "exact_functional",
+        "relational_pointwise",
+        "stochastic",
+        "not_applicable_narrative"
+      ]
+    },
+    "release_status": {
+      "description": "FOUNDATION_v0.5.md §7.4 — one canonical release state machine name set.",
+      "enum": [
+        "Draft",
+        "Pending Review",
+        "Approved-for-Test",
+        "Approved-for-Live",
+        "Monitor",
+        "Rollback"
+      ]
+    },
+    "gate_verdict": {
+      "description": "FOUNDATION_v0.5.md §7.4 PUB-ADVERSARIAL-REVIEW verdict vocabulary, one vocabulary reused everywhere.",
+      "enum": [
+        "PASS",
+        "PASS_WITH_LIMITS",
+        "FAIL",
+        "HUMAN_REVIEW"
+      ]
+    },
+    "translation_status": {
+      "enum": [
+        "missing",
+        "machine",
+        "reviewed",
+        "verified"
+      ]
+    },
+    "lang": {
+      "enum": [
+        "th",
+        "en"
+      ]
+    },
+    "produced_by": {
+      "enum": [
+        "human",
+        "ai",
+        "joint"
+      ]
+    },
+    "study_design": {
+      "description": "FOUNDATION_v0.5.md §2 problem-first spine, empirical_extension (founder instruction 2026-09-04, BBL-2026-09-04-083/084) -- claim_card.empirical_extension.study_design.",
+      "enum": [
+        "experiment",
+        "rct",
+        "cohort",
+        "case_control",
+        "cross_sectional_survey",
+        "qualitative",
+        "case_study",
+        "simulation",
+        "design_science",
+        "document_analysis",
+        "mixed",
+        "other"
+      ]
+    },
+    "bias_type": {
+      "description": "claim_card.empirical_extension.bias_register[].type.",
+      "enum": [
+        "selection",
+        "measurement",
+        "confounding",
+        "reporting",
+        "analyst",
+        "tool_ai",
+        "other"
+      ]
+    },
+    "bias_residual": {
+      "description": "claim_card.empirical_extension.bias_register[].residual.",
+      "enum": [
+        "none",
+        "low",
+        "unknown",
+        "high"
+      ]
+    },
+    "robustness_what_varied": {
+      "description": "claim_card.empirical_extension.robustness.checks[].what_varied -- distinct from the independence ladder I0-I5 (who checked); this axis answers whether the result survives varying data/method/analyst/tool/time.",
+      "enum": [
+        "data",
+        "method",
+        "analyst",
+        "tool",
+        "time"
+      ]
+    },
+    "robustness_result": {
+      "description": "claim_card.empirical_extension.robustness.checks[].result. Comparison vocabulary only -- same/different/not_run, per AGENTS.md gate rule 6, never a novelty/priority word.",
+      "enum": [
+        "same",
+        "different",
+        "not_run"
+      ]
+    },
+    "disclaimer_id": {
+      "type": "string",
+      "pattern": "^D-[A-Z0-9-]+$",
+      "description": "FOUNDATION_v0.5.md §5 — one master disclaimer catalogue; no id may resolve to a catch-all OTHER bucket, so a bare shape check (pattern) is all the schema layer can enforce. The catalogue's own content (which ids exist) lives in methodology/data/disclaimer_catalogue.json (kernel-enforced, not schema-enforced).",
+      "enum": [
+        "D-ADVISOR",
+        "D-ADVISOR-EXPIRED",
+        "D-ADVISOR-NOT-K2",
+        "D-AIFILL",
+        "D-AUTHORSHIP",
+        "D-BLACKBOX-NOTE",
+        "D-CANDIDATE-STATUS",
+        "D-CITATION-UNVERIFIED",
+        "D-COMPARISON",
+        "D-DERIVED-PATTERNS",
+        "D-DISAGREEMENT-OPEN",
+        "D-DISSENT-PRESERVED",
+        "D-DVP-NOT-K2",
+        "D-EXTERNAL-INPUT",
+        "D-INDEPENDENCE",
+        "D-INDEPENDENCE-LEVEL",
+        "D-K-STATE",
+        "D-LEGAL-NEQ-EPISTEMIC",
+        "D-LENS-UNCITED",
+        "D-LENS-UNSIGNED",
+        "D-LIT-CONCENTRATED",
+        "D-LIT-MODE",
+        "D-LIT-NOT-OBTAINED",
+        "D-NO-EPISTEMIC-VETO",
+        "D-NO-NEGATIVE-UNVERIFIED-PERSON",
+        "D-NO-VERTICAL-AUTHORITY",
+        "D-NONCLAIM",
+        "D-NONEXPERT",
+        "D-NOT-DIAGNOSTIC",
+        "D-OPERATOR-SHARED",
+        "D-PARTIAL-SET",
+        "D-REVISION-LIVE",
+        "D-SAME-VENDOR",
+        "D-SCOPE",
+        "D-SELF-EXPERIENCE-NOT-GENERAL-EVIDENCE",
+        "D-SILENT-LIFT-GUARD",
+        "D-STANDPOINT",
+        "D-TIER",
+        "D-TRANSLATION"
+      ]
+    },
+    "disclaimer_ref": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/definitions/disclaimer_id"
+        },
+        "params": {
+          "type": "object"
+        }
+      }
+    },
+    "bilingual_text": {
+      "type": "object",
+      "required": [
+        "language",
+        "text"
+      ],
+      "properties": {
+        "language": {
+          "$ref": "#/definitions/lang"
+        },
+        "text": {
+          "type": "string"
+        },
+        "translation": {
+          "type": "object",
+          "properties": {
+            "text": {
+              "type": "string"
+            },
+            "language": {
+              "$ref": "#/definitions/lang"
+            },
+            "translation_status": {
+              "$ref": "#/definitions/translation_status"
+            }
+          }
+        }
+      }
+    },
+    "role_or_human": {
+      "type": "string",
+      "minLength": 1,
+      "description": "People by ROLE, not name, unless the founder's own name is used for authorship (the one named-attribution exception, kg_node.yaml's own rule)."
+    },
+    "yyyymmdd_id": {
+      "type": "string",
+      "pattern": "^[A-Za-z]+-[A-Za-z]+-[0-9]{8}-[0-9]{4}$"
+    }
+  }
+}

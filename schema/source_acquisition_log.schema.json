@@ -1,0 +1,50 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://glosa.example/schema/source_acquisition_log.schema.json",
+  "title": "glosa source acquisition log",
+  "description": "tier: Dr (specified; independently unreviewed). Implements templates/knowledge/source_acquisition_log.yaml (S14): bridges search_log.sources_found to a citation_card's fetch_status, public-repo-safe by construction (every field is a public identifier/status/date; a local path is never recorded, only a public-safe fact in `notes`). Append-only: a re-attempt after a fetch_status change is a new row. Namespace https://glosa.example/ is a placeholder.",
+  "type": "object",
+  "required": ["id", "citation_card_ref", "search_log_ref", "identifier", "acquisition_route", "acquisition_status", "verification_of_status", "secondary_citation_check", "no_local_leak_check"],
+  "additionalProperties": true,
+  "properties": {
+    "id": { "type": "string", "pattern": "^acq-[a-z0-9-]+-[0-9]{3}$" },
+    "citation_card_ref": { "type": "string", "minLength": 1 },
+    "search_log_ref": { "type": "string", "minLength": 1 },
+    "identifier": {
+      "type": "object",
+      "required": ["kind", "value"],
+      "properties": {
+        "kind": { "$ref": "common.defs.json#/definitions/identifier_kind" },
+        "value": { "type": "string", "minLength": 1 }
+      }
+    },
+    "acquisition_route": {
+      "enum": ["RL_PRIVATE_SHELF", "OPEN_ACCESS_DIRECT", "INSTITUTIONAL_ACCESS", "PREPRINT_SERVER", "OFFICIAL_PUBLISHER_PAGE", "NOT_ATTEMPTED"]
+    },
+    "acquisition_status": { "enum": ["obtained", "abstract_only", "not_obtained"] },
+    "attempted_at": { "type": ["string", "null"] },
+    "attempted_by": { "type": ["string", "null"] },
+    "verification_of_status": { "enum": ["MECHANICAL_HTTP_CHECK", "HUMAN_CONFIRMED", "AI_REPORTED_UNCONFIRMED"] },
+    "secondary_citation_check": {
+      "description": "FAILED is a hard block on this source entering a dialogue_table row with any agrees/disagrees stance (secondary-citation ban).",
+      "enum": ["NOT_APPLICABLE", "PASSED", "FAILED"]
+    },
+    "no_local_leak_check": {
+      "type": "object",
+      "required": ["contains_local_path", "contains_zotero_key", "contains_rl_internal_id"],
+      "properties": {
+        "contains_local_path": { "const": false },
+        "contains_zotero_key": { "const": false },
+        "contains_rl_internal_id": { "const": false }
+      }
+    },
+    "notes": { "type": "string" }
+  },
+  "allOf": [
+    {
+      "description": "acquisition_status/route/fetch_status mapping consistency (kernel asserts this mapping; schema checks the acquisition_route side is not NOT_ATTEMPTED when acquisition_status claims obtained).",
+      "if": { "properties": { "acquisition_status": { "const": "obtained" } } },
+      "then": { "properties": { "acquisition_route": { "not": { "const": "NOT_ATTEMPTED" } } } }
+    }
+  ]
+}
