@@ -100,10 +100,18 @@
    "18085092": "ok",
    "17341231": "ok",
    "22302410": "ok",
-   "22301886": "ok"
+   "22301886": "ok",
+   "22308072": "ok",
+   "22308066": "ok",
+   "22307891": "ok",
+   "22307843": "ok",
+   "22307841": "ok",
+   "22307564": "ok",
+   "22307561": "ok",
+   "22307148": "ok"
   },
   "failed": {
-   "17280546": "fixed 2026-09-04 via API (dates.start/end added; isPartOf hubs linked; republished)"
+   "17280546": "400 {\"status\": 400, \"message\": \"A validation error occurred.\", \"errors\": [{\"field\": \"metadata.dates\", \"messages\": [\"Inva"
   }
  },
  "he": {
@@ -151,7 +159,7 @@
    "22302161": "ok"
   },
   "failed": {
-   "17280895": "fixed 2026-09-04 via API (dates.start/end added; isPartOf hubs linked; republished)"
+   "17280895": "400 {\"status\": 400, \"message\": \"A validation error occurred.\", \"errors\": [{\"field\": \"metadata.dates\", \"messages\": [\"Inva"
   }
  },
  "ph": {
@@ -448,10 +456,15 @@
    "17825408": "ok",
    "22301882": "ok",
    "22302410": "ok",
-   "22301886": "ok"
+   "22301886": "ok",
+   "22308072": "ok",
+   "22307891": "ok",
+   "22307843": "ok",
+   "22307841": "ok",
+   "22307148": "ok"
   },
   "failed": {
-   "17280546": "fixed 2026-09-04 via API (dates.start/end added; isPartOf hubs linked; republished)"
+   "17280546": "400 {\"status\": 400, \"message\": \"A validation error occurred.\", \"errors\": [{\"field\": \"metadata.dates\", \"messages\": [\"Inva"
   }
  },
  "islam": {
@@ -548,7 +561,66 @@
    "22301886": "ok"
   },
   "failed": {
-   "17280895": "fixed 2026-09-04 via API (dates.start/end added; isPartOf hubs linked; republished)"
+   "17280895": "400 {\"status\": 400, \"message\": \"A validation error occurred.\", \"errors\": [{\"field\": \"metadata.dates\", \"messages\": [\"Inva"
+  }
+ },
+ "aihp": {
+  "hub_doi": "10.5281/zenodo.22308201",
+  "hub_id": 22308201,
+  "members": [
+   "10.5281/zenodo.22307843",
+   "10.5281/zenodo.22307841",
+   "10.5281/zenodo.22308072",
+   "10.5281/zenodo.22308066",
+   "10.5281/zenodo.22307891",
+   "10.5281/zenodo.22307564",
+   "10.5281/zenodo.22307561",
+   "10.5281/zenodo.22307148",
+   "10.5281/zenodo.22301318",
+   "10.5281/zenodo.22301202",
+   "10.5281/zenodo.22302410",
+   "10.5281/zenodo.22301886",
+   "10.5281/zenodo.22163849",
+   "10.5281/zenodo.21529456",
+   "10.5281/zenodo.21425420",
+   "10.5281/zenodo.19215748",
+   "10.5281/zenodo.19176260",
+   "10.5281/zenodo.18943971",
+   "10.5281/zenodo.18925129",
+   "10.5281/zenodo.18711408",
+   "10.5281/zenodo.18517054",
+   "10.5281/zenodo.17280546"
+  ],
+  "anchors": [
+   "10.5281/zenodo.19215748",
+   "10.5281/zenodo.22163849",
+   "10.5281/zenodo.22307843"
+  ],
+  "linked": {
+   "22308072": "ok",
+   "22308066": "ok",
+   "22307891": "ok",
+   "22307843": "ok",
+   "22307841": "ok",
+   "22307564": "ok",
+   "22307561": "ok",
+   "22307148": "ok",
+   "22302410": "ok",
+   "22301886": "ok",
+   "22301318": "ok",
+   "22301202": "ok",
+   "22163849": "ok",
+   "21529456": "ok",
+   "21425420": "ok",
+   "19215748": "ok",
+   "19176260": "ok",
+   "18943971": "ok",
+   "18925129": "ok",
+   "18711408": "ok",
+   "18517054": "ok"
+  },
+  "failed": {
+   "17280546": "400 {\"status\": 400, \"message\": \"A validation error occurred.\", \"errors\": [{\"field\": \"metadata.dates\", \"messages\": [\"Inva"
   }
  }
 }

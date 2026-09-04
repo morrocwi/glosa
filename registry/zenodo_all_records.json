@@ -27,7 +27,8 @@
   "desc": " Series. Paper IV of the Bounded Knower sequence. Paper I: From Problem to Hypothesis (DOI 10.5281/zenodo.22307148). Paper II: Knowledge Topology and the First Passage to Usable Hypotheses (DOI 10.5281/zenodo.22307561). Paper III: Before Evidence Can Decide (DOI 10.5281/zenodo.22307564). Status. GLOSA K0 conceptual and agenda paper — timestamped and citable, not independently reviewed, no priority claim; central augmentation laws remain [Open]. Produced with the glosa methodology (DOI 10.5281/zenodo.22301060); the author's raw lines are in the Blackbox Log (concept DOI 10.5281/zenodo.22302518). Abstract. Readout Universe; Readout Genesis Large language models and multi-agent systems can already generate, critique, rank, refine, and experimentally update scientific hypotheses. Yet the strongest form of human-AI augmentation may not be one-shot idea generation or autonomous replacement of scientists. Building on three companion papers, this manuscript proposes a controlled epistemic chain reaction: a human retains the problem and question, while heterogeneous AI processes recursively decompose the question, traverse distant knowledge structures, generate candidate relations, critique them, collapse readout-equivalent variants, and propagate only new candidate classes that clear declared grounding and discriminability gates. Each retained frontier item can then seed new subquestions or rival hypotheses. A finite epistemic multiplication factor, kepi , is introduced as the number",
   "cluster": "ep",
   "tags": [
-   "ai"
+   "ai",
+   "aihp"
   ]
  },
  {
@@ -49,7 +50,9 @@
   ],
   "desc": " Series. Companion evidence registry for the four-paper Bounded Knower / Readout hypothesis-generation programme: Paper I (DOI 10.5281/zenodo.22307148), Paper II (DOI 10.5281/zenodo.22307561), Paper III (DOI 10.5281/zenodo.22307564), Paper IV (DOI 10.5281/zenodo.22307751). Files: the State of Evidence synthesis (PDF) and Claim_Registry_E01_E25.csv (25 evidence claims: id, status, evidence strength, primary paper, decisive test). Status. Living GLOSA K0 evidence synthesis; targeted and system-oriented, not preregistered or systematic. \"Observed\" means the cited literature reported the neighbouring phenomenon, never that a paper-specific Readout variable was validated. No independent checker has certified the registry. No priority claim. Abstract. work of the programme, but it is not itself an observed fact. The four-paper Readout hypothesis-generation programme spans problem formation, bounded semantic mobility, knowledge organization, candidate-set formation, and human–AI amplification. Most local mechanisms invoked by the programme are not new discoveries. Problem representation affects later solving; semantic-memory organization relates to creative and convergent retrieval; domain knowledge changes early diagnostic hypothesis generation; search behavior depends jointly on representation and process; recent inference history biases later inference; expertise can accelerate familiar reasoning while inducing fixation; representational change can resolve impasse; scientific-hyp",
   "cluster": "ep",
-  "tags": []
+  "tags": [
+   "aihp"
+  ]
  },
  {
   "id": 22307891,
@@ -70,7 +73,8 @@
   "desc": " ปูมกล่องดำ (Blackbox Log) — บันทึกเสียงดิบ ข้อค้นพบ และคำถามรายวันของผู้เขียน ตามที่พูดจริง (verbatim) ไม่ผ่านการปรุงและไม่ผ่านการตรวจอิสระ (tier: positional/Dr) บันทึกเพิ่มได้อย่างเดียว ไม่แก้ไม่ลบ; อัปเดตเป็นเวอร์ชันใหม่ของ record เดียวกัน เลนส์ที่ใช้มองปัญหา: Readout Universe — Yaoharee Lahtee. ระบบที่เก็บ: glosa (github.com/morrocwi/glosa). เวอร์ชันนี้: 107 บันทึก ถึง 2026-09-04. Blackbox Log — a daily, append-only, verbatim record of the author's raw voice (one pre-release correction is disclosed in BBL-2026-09-04-082), findings and questions (Thai is the source of truth). Not a paper; not reviewed; tier positional/Dr. Contains the author's own words only; the single AI-written line is a disclosed correction entry (by=ai, BBL-2026-09-04-082), never the author's voice. Each update is a new version of the same record. Lens: Readout Universe — Yaoharee Lahtee; kept by the glosa toolchain. ",
   "cluster": "ep",
   "tags": [
-   "ai"
+   "ai",
+   "aihp"
   ]
  },
  {
@@ -90,7 +94,8 @@
   "desc": "v0.1.0 — K0 public working release (v0.2.0: glosa applied to itself — concept paper DOI 10.5281/zenodo.22307841, 48 VERIFIED citation cards, cross-vendor reviewed claim cards; rules 15-17 and gate rule 9 added) — timestamped and citable, NOT peer reviewed, no independent check yet (K1 in glosa requires a cross-vendor I3 check that has not run), tier Dr. Methodology + skill + tools for co-producing rigorous knowledge with AI without institutional infrastructure. Every claim answers five questions bound to the Readout Condition. No priority claim.",
   "cluster": "ep",
   "tags": [
-   "ai"
+   "ai",
+   "aihp"
   ]
  },
  {
@@ -115,7 +120,8 @@
   "desc": " Status. GLOSA K0 concept paper — timestamped and citable, not peer reviewed; the three claim cards behind it were reviewed by three cross-vendor AI routes (I3) and revised; independent_check PENDING (no external human check). Produced by running the glosa methodology on itself (repository DOI 10.5281/zenodo.22301060, GitHub morrocwi/glosa: project projects/GLS-2026-001_rigour-without-infrastructure, 48 citation cards VERIFIED under rule 17). The author's raw lines are in the Blackbox Log (concept DOI 10.5281/zenodo.22302518). No priority claim. Abstract. People who live daily with a problem often know it before researchers do, but turning that knowledge into a checkable claim has historically required a university, a lab, or a research team. Generative AI removes that requirement technically while introducing a new one epistemically: it becomes cheap to produce text that reads as rigorous without it being clear which part is observation, which part is inference, and which part the AI supplied. This paper states, as three falsifiable propositions and not as demonstrated results, a candidate answer: a claim card that separately records what was seen, what the data separates, what AI filled in, what is assumed, and what independent check (if any) the claim has survived — bound to a formal Existence– Attribution–Disclosure norm and passed through a named independence ladder (I0 self-check through I5 outside human review) before public release — could carry the checkable property",
   "cluster": "ep",
   "tags": [
-   "ai"
+   "ai",
+   "aihp"
   ]
  },
  {
@@ -137,7 +143,9 @@
   ],
   "desc": " Series. Paper III (agenda paper) of the three-paper Bounded Knower sequence. Paper I: From Problem to Hypothesis (DOI 10.5281/zenodo.22307148). Paper II: Knowledge Topology and the First Passage to Usable Hypotheses (DOI 10.5281/zenodo.22307561). Paper IV: The Epistemic Chain Reaction (DOI 10.5281/zenodo.22307751). Status. GLOSA K0 — timestamped and citable, not independently reviewed, no priority claim. Produced with the glosa methodology (DOI 10.5281/zenodo.22301060); the author's raw lines behind the sequence are in the Blackbox Log (concept DOI 10.5281/zenodo.22302518). Abstract. ",
   "cluster": "ep",
-  "tags": []
+  "tags": [
+   "aihp"
+  ]
  },
  {
   "id": 22307561,
@@ -157,7 +165,9 @@
   ],
   "desc": " Series. Paper II of the three-paper Bounded Knower sequence. Paper I: From Problem to Hypothesis (DOI 10.5281/zenodo.22307148). Paper III: Before Evidence Can Decide (DOI 10.5281/zenodo.22307564). Paper IV: The Epistemic Chain Reaction (DOI 10.5281/zenodo.22307751). Status. GLOSA K0 — timestamped and citable, not independently reviewed, no priority claim. Produced with the glosa methodology (DOI 10.5281/zenodo.22301060); the author's raw lines behind the sequence are in the Blackbox Log (concept DOI 10.5281/zenodo.22302518). Abstract. ",
   "cluster": "ep",
-  "tags": []
+  "tags": [
+   "aihp"
+  ]
  },
  {
   "id": 22307148,
@@ -189,7 +199,8 @@
   "desc": " Series. Paper I of the three-paper Bounded Knower sequence. Paper II: Knowledge Topology and the First Passage to Usable Hypotheses (DOI 10.5281/zenodo.22307561). Paper III: Before Evidence Can Decide (DOI 10.5281/zenodo.22307564). Paper IV: The Epistemic Chain Reaction (DOI 10.5281/zenodo.22307751). Status. Bounded-knower final author draft under the Readout Universe / Readout Genesis architecture; GLOSA K0 — timestamped and citable, not independently reviewed, no priority claim. Claim tiers explicit: [definition], [Dr], [Open], [finite_diagnostic]. Produced with the glosa methodology (Rigour Without Infrastructure, DOI 10.5281/zenodo.22301060); the founder's raw lines behind it are in the Blackbox Log (concept DOI 10.5281/zenodo.22302518, e.g. entry BBL-2026-09-04-094 on imagination as reversible transport). Abstract. Scientific hypothesis generation is distributed across literatures on problem construction, abduction, analogy, model-based reasoning, semantic memory and control, insight, underdetermination, experimental discrimination, distributed cognition, and AI-assisted discovery. This paper proposes a readout-native architecture for the narrower domain of hypothesis-generating imagination. Its central thesis is that imagination can be modeled as bounded dynamic semantic mobility: not an infinite faculty and not a static set of reachable ideas, but a time-indexed process over semantic readouts whose transitions are provenance-audited, dynamically weighted, history-sens",
   "cluster": "ep",
   "tags": [
-   "ai"
+   "ai",
+   "aihp"
   ]
  },
  {
@@ -213,7 +224,8 @@
   "tags": [
    "ai",
    "islam",
-   "se"
+   "se",
+   "aihp"
   ]
  },
  {
@@ -237,7 +249,8 @@
   "tags": [
    "ai",
    "islam",
-   "se"
+   "se",
+   "aihp"
   ]
  },
  {
@@ -499,7 +512,8 @@
   "desc": " Claims routinely distinguish more finely than the access sources invoked on their behalf. The central epistemic problem is not merely whether the resulting claim is true or justified, but whether each distinction in it is correctly attributed to the source, model, background evidence, relevance restriction, or decision rule that actually supplied the discrimination. This paper develops the Readout Condition as a necessary architecture for source-relative epistemic warrant. Its core is a threepart norm: existence (every claim-level distinction has an epistemic provenance path), attribution (a distinction credited to a source must be licensed by that source), and disclosure (essential augmentations must remain visible to audit). In the exact functional case, source attribution requires constancy on readout fibers and hence factorization through the readout. For non-transitive indiscriminability, the correct extension is pointwise: a claim token at an actual alternative is licensed only if its local indiscriminability neighbourhood lies inside the claim-value fiber, avoiding an illicit transitive closure. In stochastic settings, Blackwell garbling provides an access audit but cannot by itself detect assumption-driven silent lifts; a complementary identification ladder tracks the weakest augmentation layer at which a distinction becomes identified. The resulting typed provenance DAG supports a defeater-routing result: source-specific defeaters propagate exactly along the distinc",
   "cluster": "ep",
   "tags": [
-   "ai"
+   "ai",
+   "aihp"
   ]
  },
  {
@@ -523,7 +537,8 @@
   "desc": " Suppose a proposition survives source checking, inferential scrutiny, and independent reconstruction. You accept it. Then you learn that an artificial-intelligence system generated the draft, and your confidence falls. What, exactly, became epistemically worse? The familiar answer is that provenance can carry higher-order evidence about reliability. Correct. This paper grants that point and then asks what remains after provenance has done all the legitimate epistemic work available to it. The resulting problem is larger than AI. I argue that modern epistemology often slides from a plausible claim about the possession of knowledge—that knowing is a state or standing of a subject—to a much stronger and usually undefended claim about the constitution of epistemic value—that epistemically significant content, processes, records, or sources acquire standing only through a human or human-like knower. I call this the Possession–Constitution Collapse. Its social form is knower fetishism: the conversion of an earned relation among evidence, reliability, accountability, and inquiry into an apparently intrinsic property of the recognized knower. The paper develops a pre-subjective notion of constraint structure, stages the argument against knowledge-first epistemology, testimony, reliabilism, higher-order evidence, objective knowledge, information-theoretic epistemology, distributed cognition, and social epistemology, and proposes two constraints: provenance matters only through an ide",
   "cluster": "ep",
   "tags": [
-   "ai"
+   "ai",
+   "aihp"
   ]
  },
  {
@@ -595,7 +610,8 @@
   "desc": " Generative AI lowers the cost of literature exploration, argu- ment recombination, drafting, coding scaffolds, and adversarial questioning. For scholars embedded in universities, these gains are absorbed into pre-existing laboratories, seminars, editorial networks, ethics systems, and disciplinary communities. For a standalone scholar, however, AI can create a structurally dif- ferent condition: the production of plausible scholarly objects can become abundant before independent criticism, human relationships, certification, and institutional access become abundant. This article conceptualizes that condition as a prob- lem of scholarly infrastructure reconstruction. It develops a dual-track architecture in which AI-assisted formation, open preprint staging, provenance controls, and machine-constrained checks generate defensible provisional assets, while indepen- dent human friction, repeat correspondence, journal review, and local epistemic participation convert those assets into socially stress-tested knowledge. The framework distinguishes synthetic plurality from independent validation, production criticality from scholarly-credit criticality, attention from uptake, legiti- macy from truth, and latent programme coherence from public legibility. It further argues that global scholarly search and AI recommendation routes may share Anglophone and database- distribution biases; accordingly, every socially relevant flagship is assigned both a global conversion route and a local",
   "cluster": "ep",
   "tags": [
-   "ai"
+   "ai",
+   "aihp"
   ]
  },
  {
@@ -670,7 +686,9 @@
   "kw": [],
   "desc": " This paper presents a journal-form synthesis of the Information Epistemic Foundation as a bounded domain translation of Readout Genesis. The root contains retained distinctions, a graph-Laplacian operator, ordered dynamics, context, and lineage; it does not contain belief, knowledge, truth, mind, institution, or consciousness as primitive objects. Those terms become admissible only after a declared quotient and readout. On that basis, the paper inserts a typed belief layer between memory and claim evaluation, defines belief as a multidimensional agency–claim relation, and proposes that knowledge be attributed as an auditable status of a claim rather than as a possession, reputation, or authority of a knower. The admission architecture separates provenance, world or domain contact, method, inference, uncertainty, objection, correction, independence, practical performance, transport, and lineage. It further distinguishes personal, local, institutional, and globalized belief from local and transportable knowledge. A conditioned-agency layer then connects contact, valence, drive, identity binding, policy, action, and renewed state. Identity is modeled as a lineage-preserving orbit of a self-returning agency; phenomenality is introduced only as a downstream typed readout, with the bridge from structural accessibility to lived experience left open. Finally, a meta-readout governance operator is developed from current-state readout, readout-of-readout composition, finite retention,",
   "cluster": "ep",
-  "tags": []
+  "tags": [
+   "aihp"
+  ]
  },
  {
   "id": 21444163,
@@ -753,7 +771,8 @@
   "desc": " This paper argues that experience is the human LoRA. The identity is not a claim that the brain is a transformer, that phenomenal character is matrix multiplication, or that biological learning implements the engineering procedure introduced as Low-Rank Adaptation. It is a cross-level identity claim about one finite event. From the first-person side, an experience is a temporally bounded, embodied, affectively weighted, world-directed appearance. From the third-person side, the same event is a selective transformation of the observer that changes how later worlds can be read and acted upon. The argument is developed inside a finite-discrete readout framework: every accessible state is a finite retained difference on a finite graph; time is indexed by n ∈ N; formal state and update matrices are rational; and no continuum limit is required. If an experience-mediated update factors through an active readout space of dimension m inside an operational organization of dimension d, then its update rank is bounded by m. Under the finite-bottleneck condition m < d, event-level change is low- rank. This yields the Human LoRA Factorization Thesis. Durable learning is obtained by a discrete retention gate; cumulative and transformative change can arise through the composition and interaction of many bounded updates. The paper connects this thesis to complementary learning systems, memory consolidation, sampled neural geometry, neurophenomenology, enactivism, psychological flexibility, a",
   "cluster": "ep",
   "tags": [
-   "ai"
+   "ai",
+   "aihp"
   ]
  },
  {
@@ -939,7 +958,8 @@
   "desc": " This paper asks a precise question that becomes unavoidable once artificial intelligence is integrated into ordinary thinking, writing, learning, and judgment: when, if ever, does AI expand human potential rather than merely accelerate output? I argue that the answer cannot be given in terms of productivity, convenience, or self-expression alone. AI should instead be understood as a new mediating layer within finite inquiry. Its philosophical significance lies in its capacity either to deepen or to degrade epistemic agency by altering how agents encounter friction, alternative formulations, latent assumptions, and revision pressure. The original intuition that cognitive dissonance with AI can be developmentally fruitful is retained, but it is reconstructed within a stronger framework: constraint-first epistemology. On the view defended here, AI expands human potential only when machine-mediated dissonance becomes disciplined revision under world-answerable conditions. This requires corrigibility, route-openness, criticizability, and domain-sensitive validation. AI can accelerate candidate generation, comparison, and conceptual reframing, but it cannot by itself certify truth, remove irreducible mediation, or replace target- domain assessment. The paper thus offers a middle path between naive AI optimism, pessimistic deskilling narratives, and merely psychological reflectionism. What expands is not intelligence in the abstract, but the human capacity for answerable, revisable",
   "cluster": "ep",
   "tags": [
-   "ai"
+   "ai",
+   "aihp"
   ]
  },
  {
@@ -989,7 +1009,8 @@
   "desc": " This article challenges the foundational assumptions of the centuries-old debate on free will and truth by introducing a unified framework of Epistemic Mediation. We argue that the traditional binary between determinism and libertarianism is a structural misframing (Misframing) that ignores the irreducible role of the observer’s eigenstructure. By redefining agency as Deep Authorship—a generative causal organization that functions through a self-model with inherent errors (εtot > 0)— we move beyond the requirement for acausal miracles. Furthermore, we propose that truth is not a ’naked correspondence’ but a Causal-Structural Alignment between the observer’s representation and the world’s generative organization. This framework ’swallows’ the insights of structural realism, predictive coding, and crosscivilizational epistemology, providing a robust account of responsibility without transparency. We demonstrate that the ’gap’ of translation is not a failure to be corrected, but the very condition of human agency and knowledge. ",
   "cluster": "ep",
   "tags": [
-   "ai"
+   "ai",
+   "aihp"
   ]
  },
  {
@@ -1059,7 +1080,8 @@
   "desc": " Standard accounts of knowledge history often describe human civilization as a gradual ascent from myth to reason, from religion to science, and from science to artificial intelligence. This article argues that such narratives remain incomplete. What changes across civilizations is not only the accumulation of truths, but the succession of agencies authorized to interpret the world’s signals and stabilize those interpretations as social reality. The article develops a comparative framework organized around five linked terms: signal, translation, stabilization, agency, and conflict. Human beings do not encounter reality as a complete and transparent whole; they encounter partial traces, anomalies, records, measurements, and mediated signs. These do not become knowledge by themselves. They must be translated into meaningful accounts, stabilized through repeatable and durable forms, and socially authorized through institutions, procedures, or recognized interpreters. The history of knowledge can therefore be read as the history of changing interpretive authority. Across the longue duree, this article traces major shifts from embodied and oral interpreters to priestly and archival regimes, from philosophical and translational formations to scientific, professional, and media institutions, and finally to platforms, algorithms, and AI-mediated systems. Its central claim is that knowledge crises are often authority crises: moments in which the legitimacy of interpreters is contested",
   "cluster": "ep",
   "tags": [
-   "ai"
+   "ai",
+   "aihp"
   ]
  },
  {
@@ -1073,7 +1095,8 @@
   "desc": " Epistemology has often treated knowledge as a matter of access: a subject seeks justified, reliable, or rational contact with reality. This article argues that such accounts remain incomplete because they understate the constitutive role of mediation, finite access, selective encoding, and structured error. The problem becomes sharper in the age of artificial intelligence, where systems generate reliable and action-guiding outputs without fitting inherited models of reflective belief or transparent justification. I propose that epistemology should begin not from direct access to reality, but from bounded observers who form world-models under constraint. On this view, knowledge is best understood as stabilized translation under bounded observation: a representation that remains stable across admissible variation, calibration, and cross-checking. The result is a framework that preserves realism without naïvety, fallibilism without skepticism, and provides a common grammar for human and machine forms of model-based knowing. Keywords: epistemology; knowledge; observation; mediation; artificial intelligence; translation; realism ",
   "cluster": "ep",
   "tags": [
-   "ai"
+   "ai",
+   "aihp"
   ]
  },
  {
@@ -1183,7 +1206,8 @@
   "desc": " Artificial intelligence creates an epistemic environment in which coherent expressions can be produced externally at near-zero marginal cost. This paper argues that the consequences for education stem not primarily from pedagogical choice, but from a structural law governing inference under conditions of generative abundance. A single underlying dynamic gives rise to three observable effects: degradation of inferential signals, escalation of conceptual volatility, and the emergence of selective stabilization. Beyond a critical threshold of generative exposure, learning undergoes a regime shift — from accumulation to discrimination. Learning is therefore redefined as the capacity to preserve structural stability when expressive production no longer uniquely indicates internal organization. Keywords: Generative AI, epistemic stabilization, open science, civil science, regime transition, discrimination learnin ",
   "cluster": "ep",
   "tags": [
-   "ai"
+   "ai",
+   "aihp"
   ]
  },
  {
@@ -1232,7 +1256,8 @@
   "desc": " This article is published under an Open Civil Science framework by the author as an independent scholarly work. It has not undergone formal journal peer review at the time of release. All claims are explicitly framed as conceptual and non-empirical. This paper presents a conceptual framework for analyzing how artificial intelligence reshapes human access to meaning through changes in contextual mediation. Situating AI within a historical and socio-technical evolution of interpretation, the paper distinguishes between eventspecific context associated with real-world events and interpretive context available to human agents. It argues that while AI systems substantially expand access to interpreted information and linguistic synthesis, they do not reconstruct the full situational, temporal, relational, and agency-bearing conditions of events. The contribution is fourfold: (i) a structural distinction between information access and context access; (ii) a historical–structural model of context transformation across offline, searchbased, social-media, and AI-mediated epochs; (iii) explicit theoretical constructs including the external context-frame (), interaction efficiency (), and a principled separation between grounding and embodiment; and (iv) a hypothesis and boundary set specifying conditions under which AI interaction tends to support or degrade human agency. The paper advances an Open Civil Science orientation and makes no empirical claims. Keywords: AI; translation and ",
   "cluster": "ep",
   "tags": [
-   "ai"
+   "ai",
+   "aihp"
   ]
  },
  {
@@ -2780,7 +2805,8 @@
   "desc": " Human capital, as Yaoharee Lahtee describes it, is not a statistic of productivity but the living potential within each person—the capacity to know, to feel, to connect, and to create meaning. Yet potential alone does not transform societies. It requires a medium that allows inner values to be shared and understood. That medium is language. Language, however, is never neutral. It is fragmented by professions, disciplines, and cultures: the language of law, the language of bureaucracy, the language of technology. These dialects often isolate knowledge rather than circulate it. Lahtee therefore proposes a new paradigm: the language bridge—a dynamic process through which human capital is converted into social capital by transcending linguistic and disciplinary walls. In this reflection, language becomes not merely a system of signs but a structure of human relationship. It enables trust, empathy, and collaboration, echoing Habermas’s vision of communicative action and Vygotsky’s notion of mediated understanding. Today, Large Language Models (LLMs) accelerate this process by interpreting and re-articulating human thought across borders of language, culture, and expertise. They extend the range of the human voice without replacing its essence. Thus, Lahtee argues that the language bridge is the true infrastructure of human development—the bridge between solitude and society, between knowledge and empathy, between human capital and collective growth. This conceptual abstract itsel",
   "cluster": "ep",
   "tags": [
-   "ai"
+   "ai",
+   "aihp"
   ]
  }
 ]

@@ -2,7 +2,7 @@
 
 > **นี่คือปูมเสียงดิบ ไม่ใช่บทความ** — ทุกบรรทัดคือคำพูดตามที่พูด (verbatim) ณ วันเวลานั้น ยังไม่ผ่านการปรุง ไม่ผ่านการตรวจอิสระ (tier: positional / Dr) บันทึกเพิ่มได้อย่างเดียว ไม่แก้ไม่ลบ (แก้ = บรรทัดใหม่ที่อ้างบรรทัดเดิม) เลนส์ที่ใช้มองปัญหา: **Readout Universe — Yaoharee Lahtee** (10.5281/zenodo.21529456, 10.5281/zenodo.22301318, 10.5281/zenodo.22301202; github.com/morrocwi/readout_universe) ระบบที่เก็บ: glosa (github.com/morrocwi/glosa) **ปูมนี้มีเฉพาะเสียงของผู้เขียนเท่านั้น** — ไม่มีบรรทัดที่ AI เขียน (คำตัดสินผู้เขียน 2026-09-04: บันทึกระบบที่ AI เคยใส่ไว้ 1 รายการถูกถอดออกและเก็บไว้ที่ blackbox/log/removed_ai_entries.json) ป้าย "เนื้อหาที่สร้างโดย AI" ที่ Facebook ติดให้บางโพสต์เกิดจากรูปประกอบที่ทำด้วย AI ไม่ใช่ตัวข้อความ จึงไม่ถูกนำมาบันทึก
 
-จำนวนบันทึก: 109 · อัปเดตล่าสุด: 2026-09-04T23:29:17+07:00
+จำนวนบันทึก: 110 · อัปเดตล่าสุด: 2026-09-04T23:38:33+07:00
 
 ## สารบัญตามหมวดความคิด (ไม่เรียงตามวันที่)
 
@@ -56,7 +56,7 @@
 - **BBL-2026-09-04-067** (2026-09-04, finding, cheapest-contextual-knowledge, cost-of-knowledge, dependence-on-authority) — ว่ากันตามจริงแล้ว ตอนนี้เรากำลังยุคที่ความรู้ที่สอดคล้องตามบริบท…
 - **BBL-2026-09-04-070** (2026-09-04, finding, global-labour, token-priced-labour, ai-brokers, white-collar-replacement, epistemic-reordering, chaotic-renaissance) — ในภาพรวมของแรงงานโลก หากแบ่งอย่างหยาบที่สุด อาจแบ่งได้เป็นสองประเภทใหญ่ ๆ คือ แรงงานที่ทัก…
 
-### วิธีวิทยา / ระบบ glosa (37)
+### วิธีวิทยา / ระบบ glosa (38)
 
 - **BBL-2026-09-04-001** (2026-09-04, ruling, spine, lens) — ที่สำคัญอย่าลืม ให้เริ่มจากมองปัญหาด้วยเลนส์ readout ก่อน แล้วแปลกลับเป็นภาษษโลกเพื่อสกัดส…
 - **BBL-2026-09-04-002** (2026-09-04, ruling, system) — ทำให้ทั้งหมดรวมเป็นระบบเดียวที่นิ่ง…
@@ -95,6 +95,7 @@
 - **BBL-2026-09-04-108** (2026-09-04, instruction, release, v0.2.0, approved) — go…
 - **BBL-2026-09-04-109** (2026-09-04, instruction, zenodo, series, evidence-registry, same-doi, paper-IV) — ลงเอกสารสองตัวนี้ใน doi เดียวกันต่อจาก เอกสารก่อนหน้า'<local path redacted>/Claim_Registry…
 - **BBL-2026-09-04-110** (2026-09-04, ruling, zenodo, evidence-registry, separate-record) — ต้องแยกกับ สี่…
+- **BBL-2026-09-04-111** (2026-09-04, instruction, zenodo, series, when-ai-expands-human-potential, epistemic-fusion, library, hub) — เราจะสร้าง series นี้ When AI Expands Human Potential: ที่รวมงานที่ เอาไว้พัฒนา การขยายศัก…
 
 ### กล่องดำ / เสียงดิบ (7)
 
@@ -1978,4 +1979,8 @@
 **BBL-2026-09-04-110** · 23:29 · ผู้ก่อตั้ง · ruling · หมวด: วิธีวิทยา / ระบบ glosa · zenodo, evidence-registry, separate-record · ที่มา: chat 2026-09-05 ~03:40 — the State of Evidence registry must be its own Zenodo record, separate from Paper IV
 
 > ต้องแยกกับ สี่
+
+**BBL-2026-09-04-111** · 23:38 · ผู้ก่อตั้ง · instruction · หมวด: วิธีวิทยา / ระบบ glosa · zenodo, series, when-ai-expands-human-potential, epistemic-fusion, library, hub · ที่มา: chat 2026-09-05 ~04:10 — build a Zenodo library/series "When AI Expands Human Potential": sweep all works on expanding human potential with AI (Context Wisdom etc.), select those enabling human–AI epistemic fusion, include the Bounded Knower I–IV + State of Evidence and glosa / Standalone Scholar
+
+> เราจะสร้าง series นี้ When AI Expands Human Potential: ที่รวมงานที่ เอาไว้พัฒนา การขยายศักยภาพของมนุษยืด้วยเอไอทั้งหมด มาก เช่น context wisdom อื่นๆ นายกวาดทั้งหมด แล้วเอามารวมเป็ยซีรีสเดียวกันนะ เลือกที่ สมากรที่ำให้เกิด ปฏิกริยานิวเคลียร์ฟิวชั่นทางญานวทิยาได้ระหว่าง human-ai ไล่ตรวจบทคามเก่้าๆทาำเป็นซีรีสเลย รวมไอ้ 5เองการก่อนหน้านี และ golas standalon scholar ด้วย ที่ทำให้มนุษย์พัฒนความรุ้ด้วยเอไอได้ระเบิดมากที่สุดหนก รวมเป็นห้องสุมดใน  zenodo อีกนหึ่งหัวข้อ
 

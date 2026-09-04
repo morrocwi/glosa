@@ -31,6 +31,7 @@ TAGS = {
  'ai': r'\bai\b|artificial intelligence|\bllm|language model|lora\b|generative|ai-native|ai-mediated|ai-coached|machine learning|chatbot|ปัญญาประดิษฐ',
  'islam': r'islam|muslim|halal|hilal|nikah|faqr|ash.ar|imam|shar[iī]|mosque|qur|ummah|มุสลิม|อิสลาม',
  'tourism': r'touris|travel|hospitality|service systems|ท่องเที่ยว',
+ 'aihp': r'(?!x)x',  # curated series: membership by OVERRIDE_TAGS_ADD only (founder BBL-2026-09-04-111)
  'se': r'social enterprise|social-enterprise|entrepreneur|enterprise survival|mission drift|social business|วิสาหกิจ',
 }
 # manual overrides by Zenodo record id (founder/chair readout 2026-09-04)
@@ -41,7 +42,8 @@ OVERRIDE_PRIMARY = {
  'other': [22301882, 17305576, 17305534, 20159825, 18444260, 18897585, 18925131, 22099526, 22227005, 18383439],
 }
 OVERRIDE_TAGS_REMOVE = {'tourism': [17899050, 17600798], 'ai': [17439693, 17393189, 17378613, 17341231, 18897585, 18213737], 'islam': [17280895]}
-OVERRIDE_TAGS_ADD = {'se': [17281646, 22301882], 'islam': [17281646], 'ai': [22301882, 22302410], 'ep': []}
+OVERRIDE_TAGS_ADD = {
+ 'aihp': [19215748, 17280546, 22163849, 22307843, 22307841, 22307148, 22307561, 22307564, 22308072, 22308066, 22301202, 22301318, 21425420, 18711408, 18517054, 18925129, 18943971, 19176260, 22302410, 22301886, 22307891, 21529456],'se': [17281646, 22301882], 'islam': [17281646], 'ai': [22301882, 22302410], 'ep': []}
 HUBS = {
  'ep': dict(title='Readout Universe — Epistemology programme index (Yaoharee Lahtee, 2026)', th='ญาณวิทยา / ทฤษฎีความรู้', anchors=['10.5281/zenodo.21529456', '10.5281/zenodo.22301202', '10.5281/zenodo.22301318']),
  'he': dict(title='Readout Universe — Health & mind programme index (Yaoharee Lahtee, 2026)', th='สุขภาพ / จิตใจ', anchors=['10.5281/zenodo.20229203', '10.5281/zenodo.18813886']),
@@ -49,6 +51,7 @@ HUBS = {
  'ai': dict(title='Readout Universe — Artificial intelligence & knowledge programme index (Yaoharee Lahtee, 2026)', th='ปัญญาประดิษฐ์กับความรู้', anchors=['10.5281/zenodo.22301202', '10.5281/zenodo.22163849', '10.5281/zenodo.19215748']),
  'islam': dict(title='Readout Universe — Islam, Muslim society & knowledge authority programme index (Yaoharee Lahtee, 2026)', th='อิสลาม / สังคมมุสลิม / อำนาจความรู้', anchors=['10.5281/zenodo.22206607', '10.5281/zenodo.22129490', '10.5281/zenodo.18943971']),
  'tourism': dict(title='Readout Universe — Muslim-friendly tourism & service programme index (Yaoharee Lahtee, 2026)', th='ท่องเที่ยว / บริการ', anchors=['10.5281/zenodo.19059720', '10.5281/zenodo.18258377']),
+ 'aihp': dict(title='When AI Expands Human Potential — series index: human–AI epistemic fusion, standalone scholarship, and the Readout hypothesis-generation programme (Yaoharee Lahtee, 2025–2026)', th='เมื่อ AI ขยายศักยภาพมนุษย์ — ซีรีส์งานที่ทำให้มนุษย์กับ AI ผลิตความรู้ร่วมกันได้ (ฟิวชันทางญาณวิทยา): Standalone Scholar, glosa, Bounded Knower I–IV + State of Evidence, Written by AI Still True, Readout Condition, Human LoRA และงานที่เกี่ยวข้อง', anchors=['10.5281/zenodo.19215748', '10.5281/zenodo.22163849', '10.5281/zenodo.22307843']),
  'se': dict(title='Readout Universe — Social enterprise programme index (Yaoharee Lahtee, 2026)', th='วิสาหกิจเพื่อสังคม', anchors=['10.5281/zenodo.22227005', '10.5281/zenodo.18506938']),
 }
 SCRATCH = os.environ.get('GLOSA_SCRATCH', tempfile.gettempdir())
