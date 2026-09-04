@@ -12,8 +12,7 @@
   this pass) folded into FOUNDATION §3.3's numbered prose for the first time. New schema fields
   (additive/optional, target `schema_version: "0.7.0"`): `comparison`, `evidence_strength`,
   `verdict_class`, `gate_fail_taxonomy`, `gate_construction_status`,
-  `five_questions.seen.ai_assisted_fields` — spec only, not yet applied to `schema/
-  claim_card.schema.json` on disk. `templates/knowledge/litreview_manifest.yaml` gains
+  `five_questions.seen.ai_assisted_fields` — applied to `schema/claim_card.schema.json` (schema_version 0.7.0) on disk. `templates/knowledge/litreview_manifest.yaml` gains
   `citations[].intake_tier`/`intake_tier_reason`/`global_south_exempt` and a `discovery_routing`
   block. Appendix A gains Family J (`NC-74`..`NC-76`; 76 rows across nine families).
 - **Pending founder decision (recommended text specified, not ratified):** genre-router

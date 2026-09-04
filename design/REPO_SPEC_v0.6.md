@@ -291,16 +291,16 @@ reviews/RELEASE_PREP_CHECK.md   # NOT the YYYY-MM-DD_<stage>_<route>.md + routes
 ```
 kernel/glosa_kernel.py       # validate_*, gate_release, mc01_check, route_genre, kg_merge, cite_check, demo_run, self_test, and more — one file, not a package (REPO_SPEC_v0.4 showed kernel/tests/ nested here; the real test suite lives at top-level tests/, see below).
 tests/test_kernel.py         # 84 tests as of v0.5 (stale figure not re-counted this pass, flagged not fixed — REPO_SPEC_v0.6_PATCH.md's own Review response leaves this SHOULD item open). EXTENDED this pass (not yet applied) — one new test function per rule 18-28: test_rule18_taxonomy_untyped, test_rule19_gate_type_unstated, test_rule20_novelty_word_rejected, test_rule21_layer_mismatch, test_rule22_intake_tier_untiered, test_rule23_verdict_class_unlisted, test_rule24_pcs_joint_condition, test_rule25_discovery_candidate_ungated, test_rule26_composite_quote, test_rule27_hidden_ai_fill, test_rule28_inflated_bearing.
-[done 2026-09-05] tests/sim/                 # was tests/sim/ (see below) — moved+renamed, version-stripped; `git mv sim tests/sim` not yet run.
-[done 2026-09-05] tests/sim/corpus/          # 180 claim_card/citation_card pairs + labels.json (ground truth) — unchanged content, moved location only.
-[done 2026-09-05] tests/sim/gen_corpus.py    # corpus generator, unchanged.
-[done 2026-09-05] tests/sim/baseline.py      # baseline harness (kernel-only pass), unchanged.
-[done 2026-09-05] tests/sim/combined.py      # combined ("if ship set X") harness, unchanged.
-[done 2026-09-05] tests/sim/prototypes/      # 8 S4 prototype scripts + *.result.json, unchanged.
-[done 2026-09-05] tests/sim/report.md        # this v0.3 K4-report, moved as historical record; future reports are tests/sim/report_vX.Y.md, append-only (never overwriting a prior pass's report).
-[done 2026-09-05] tests/sim/corpus_v2/       # the held-out, differently-worded fixture batch the v0.6 acceptance tests call for — not built.
-[done 2026-09-05] tests/test_sim_regression.py   # NEW — pytest wrapper running baseline.py + the ship-set from combined.py against tests/sim/corpus/, asserting recall/false_alarm do not regress below report.md's recorded numbers; makes the sim corpus part of the actual CI-run suite.
-tests/sim/                    # STILL AT THIS LOCATION as of this pass — the [done 2026-09-05] tests/sim/ move above has not been executed; both paths named here rather than silently treating the move as done.
+ tests/sim/                 # was tests/sim/ (see below) — moved+renamed, version-stripped; `git mv sim tests/sim` not yet run.
+ tests/sim/corpus/          # 180 claim_card/citation_card pairs + labels.json (ground truth) — unchanged content, moved location only.
+ tests/sim/gen_corpus.py    # corpus generator, unchanged.
+ tests/sim/baseline.py      # baseline harness (kernel-only pass), unchanged.
+ tests/sim/combined.py      # combined ("if ship set X") harness, unchanged.
+ tests/sim/prototypes/      # 8 S4 prototype scripts + *.result.json, unchanged.
+ tests/sim/report.md        # this v0.3 K4-report, moved as historical record; future reports are tests/sim/report_vX.Y.md, append-only (never overwriting a prior pass's report).
+ tests/sim/corpus_v2/       # the held-out, differently-worded fixture batch the v0.6 acceptance tests call for — not built.
+ tests/test_sim_regression.py   # NEW — pytest wrapper running baseline.py + the ship-set from combined.py against tests/sim/corpus/, asserting recall/false_alarm do not regress below report.md's recorded numbers; makes the sim corpus part of the actual CI-run suite.
+tests/sim/                    # STILL AT THIS LOCATION as of this pass — the  tests/sim/ move above has not been executed; both paths named here rather than silently treating the move as done.
 cli/README.md                # Full command list — `./cli/glosa --help` is the live source.
 cli/glosa                    # Console entry point.
 mcp/README.md

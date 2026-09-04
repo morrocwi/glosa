@@ -178,8 +178,7 @@ released`, `k_state: K0` — read that file directly for anything more current t
   rule 19 (Fail-Able Gate Law, Type-P/Type-U), rule 20 (rejects the forbidden-word list on the new
   `comparison` field), rule 21 (genre/register layer-confusion diagnostic, warning-only), rule 23
   (verdict-class six-value enum, schema-only), rule 26 (composite-quote detector), rule 27
-  (hidden-AI-fill detector), rule 28 (inflated-bearing detector) — rules 26–28 close the three K4
-  sim-report defect classes (`composite_quote`, `hidden_ai_fill`, `inflated_bearing`) that survived
+  (hidden-AI-fill detector), rule 28 (inflated-bearing detector) — rules 26 and 28 close two of the three K4 sim-report defect classes (composite_quote, inflated_bearing: 9/9 on the tracked corpus); rule 27 (hidden_ai_fill) fires only when a card declares five_questions.seen.ai_assisted_fields — the tracked corpus fixture predates that marker, so the current sim still reports 0/9 for it (open S4b item) that survived
   the two ship-recommended S4 prototypes.
 - **Rules 22, 24, 25 — pending-founder, specified not built:** rule 22 (LRS claim-tier intake
   flag), rule 24 (Premature Category Stabilization red-flag), rule 25 (LRS discovery-routing gate)

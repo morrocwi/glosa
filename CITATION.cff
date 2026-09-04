@@ -1,5 +1,5 @@
-# NOTE: DOI 10.5281/zenodo.22307843 is reserved and resolves only once the Zenodo record is
-# published, which happens at the same time as the public push of v0.1.0. K-state: K0
+# NOTE: DOI 10.5281/zenodo.22307843 is reserved and resolves once the matching Zenodo version is
+# published (v0.3.0 is published together with the v0.3.0 push).
 # (public working release, not peer reviewed, no independent check yet). Tier: Dr.
 cff-version: 1.2.0
 message: "If you use this methodology, cite it. AI assistance is disclosed in the work itself, never in authorship."
