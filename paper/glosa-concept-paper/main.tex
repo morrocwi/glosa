@@ -11,20 +11,12 @@
 \documentclass[10pt,twocolumn]{article}
 
 \usepackage[margin=0.75in,columnsep=0.25in]{geometry}
-% Engine note (honest edge, tier finite_diagnostic): this build system has no
-% Unicode-Thai-capable LaTeX engine available -- no luaotfload package, no
-% xelatex format, and no root access to install either (checked this
-% session: `kpsewhich luaotfload.sty` empty, `fmtutil --byfmt xelatex` finds
-% no such format). pdfLaTeX/mathptmx cannot set Thai glyphs directly.
-% Work-around: the Blackbox Note's four longer verbatim Thai passages quoted
-% in the body are rendered to PNG images (thai_imgs/*.png, generated
-% byte-for-byte from the same source strings as
-% blackbox/BLACKBOX_NOTE_glosa-paper_2026-09-04.md and
-% blackbox/log/entries.jsonl -- not edited or transliterated) and included
-% via \includegraphics; every other Blackbox Note reference in this document
-% is given as an English gloss with a pointer to the verbatim Thai in the
-% source file, rather than reproduced a second time as raw Unicode this
-% engine cannot render.
+% Language note: this paper is English only, no Thai edition, by founder
+% ruling BBL-2026-09-04-103. Every Blackbox Note line quoted in the body is
+% given as an English gloss (the AI assistant's translation, tier Dr, not
+% the founder's own words) with a pointer to the verbatim Thai record --
+% the Blackbox Log (DOI 10.5281/zenodo.22302518) or the cited note-file
+% line -- rather than reproduced here in Thai.
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage{mathptmx}
@@ -113,7 +105,7 @@
 \newlist{disclaimers}{description}{1}
 \setlist[disclaimers]{style=nextline,leftmargin=1.4em,font=\bfseries}
 
-% ---- Thin blockquote-style left rule for the verbatim Thai passage images
+% ---- Thin blockquote-style left rule for founder's-line English glosses
 % (CPRMH-style quote rule; overrides framed.sty's default 3pt-wide bar) ----
 \renewenvironment{leftbar}{%
   \def\FrameCommand{{\color{MetaRule}\vrule width 0.8pt}\hspace{8pt}}%
@@ -210,8 +202,8 @@ we state what we propose, what we build on, and what would make us wrong.
 \section{Problem before observation}
 \label{sec:problem}
 
-``Observation'' is abstract; it is a verb, not a starting node. Founder's own line, verbatim
-(Blackbox Log \texttt{BBL-2026-09-04-083}, concept DOI \texttt{10.5281/zenodo.22302518}):
+``Observation'' is abstract; it is a verb, not a starting node. Founder's line, English gloss
+below (Blackbox Log \texttt{BBL-2026-09-04-083}, concept DOI \texttt{10.5281/zenodo.22302518}):
 
 % leftbar (framed.sty, trivlist-based) is used bare, not nested inside
 % \begin{quote}: nesting two list-based environments here triggers a LaTeX
@@ -219,7 +211,8 @@ we state what we propose, what we build on, and what would make us wrong.
 % reproduction) -- leftbar's own hsize-narrowing already gives the
 % blockquote look on its own.
 \begin{leftbar}\small
-\includegraphics[width=\linewidth]{thai_imgs/bbl083.png}\par
+\textit{Founder's line (English gloss; verbatim Thai in the Blackbox Log, DOI
+\texttt{10.5281/zenodo.22302518}, entry \texttt{BBL-2026-09-04-083}):}\par
 \itshape\upshape --- ``the word `observation' is abstract, it is a verb; if we started from the \emph{problem}
 instead, is there a process like this? We propose focusing on the problem first.''
 \end{leftbar}
@@ -238,14 +231,15 @@ hypothesis (lens-out, signed) $\rightarrow$ evidence $\rightarrow$ provisional k
 
 This paper's own problem state, before it was read out at all: a person who lives daily with a
 problem, has no university appointment, no certified lab, and no standing research team, and now
-has general-purpose AI assistance. The first human readout of that state, verbatim (Thai, source of
-truth), Blackbox Note line 1
+has general-purpose AI assistance. The first human readout of that state (Thai, source of
+truth), Blackbox Note line 1, English gloss below
 (\texttt{blackbox/BLACKBOX\_NOTE\_glosa-paper\_2026-09-04.md\#L1}):
 
 \begin{leftbar}\small
-...\includegraphics[width=0.85\linewidth]{thai_imgs/l1.png}...\par
-\itshape\upshape --- ``...how can a person with no university, no lab, and no research team produce
-rigorous knowledge from their own site of practice...''
+\textit{Founder's line (English gloss; verbatim Thai in
+\texttt{blackbox/BLACKBOX\_NOTE\_glosa-paper\_2026-09-04.md\#L1}):}\par
+\itshape\upshape --- ``how can a person with no university, no lab, and no research team produce
+rigorous knowledge from their own site of practice?''
 \end{leftbar}
 
 The contaminated concept this question already flags: ``rigour'' ordinarily presupposes an
@@ -274,11 +268,12 @@ rule so much as this pass naming, per arrow, a distinction the repo already held
 whole-artifact level (\texttt{AGENTS.md} gate rule 5).
 
 \subsection{Ownership: problem, question, and the selection of the hypothesis stay human}
-Founder's line, verbatim, first stated (\texttt{BBL-2026-09-04-086}) and then self-corrected
+Founder's line, English gloss, first stated (\texttt{BBL-2026-09-04-086}) and then self-corrected
 (\texttt{BBL-2026-09-04-088}, the correction shown here is the one adopted):
 
 \begin{leftbar}\small
-\includegraphics[width=\linewidth]{thai_imgs/ownership.png}\par
+\textit{Founder's line (English gloss; verbatim Thai in the Blackbox Log, DOI
+\texttt{10.5281/zenodo.22302518}, entry \texttt{BBL-2026-09-04-088}):}\par
 \itshape\upshape --- ``if the problem is still ours, the question is still ours, and the \emph{selection} of
 the hypothesis is still ours, and it leads to solving our problem, then use AI, use a cat, use a
 bear, go ahead --- because that is the goal of knowledge: to solve a problem for someone.''
@@ -351,18 +346,18 @@ claim card is built to record, field by field, against the founder's own five qu
 \toprule
 \textbf{\#} & \textbf{Founder's question} & \textbf{Mechanically checkable?} \\
 \midrule
-Q1 & \raisebox{-0.2em}{\includegraphics[height=0.9em]{thai_imgs/q1.png}} --- what was actually seen & presence only \\
-Q2 & \raisebox{-0.2em}{\includegraphics[height=0.9em]{thai_imgs/q2.png}} --- what the data separates & presence only \\
-Q3 & AI \raisebox{-0.2em}{\includegraphics[height=0.9em]{thai_imgs/q3.png}} --- what AI filled in & presence only \\
-Q4 & \raisebox{-0.2em}{\includegraphics[height=0.9em]{thai_imgs/q4.png}} --- what is assumed & presence only \\
-Q5 & \raisebox{-0.2em}{\includegraphics[height=0.9em]{thai_imgs/q5a.png}}/\raisebox{-0.2em}{\includegraphics[height=0.9em]{thai_imgs/q5b.png}} --- what independent evidence/objection & \textbf{the one genuinely enforceable check} \\
+Q1 & what was actually seen & presence only \\
+Q2 & what the data separates & presence only \\
+Q3 & what AI filled in & presence only \\
+Q4 & what is assumed & presence only \\
+Q5 & what independent evidence/objection & \textbf{the one genuinely enforceable check} \\
 \bottomrule
 \end{tabularx}
 \caption{Founder's five questions $\Leftrightarrow$ E-A-D $\Leftrightarrow$ claim-card field group
 (\texttt{design/FOUNDATION\_v0.5.md} \S3.1). A card that answers Q1/Q2/Q4 honestly but misattributes
 Q3 --- crediting the source with a distinction AI actually supplied --- fails the Readout Condition
 even though every field looks filled; \texttt{silent\_lift\_check} is the mechanized test for
-exactly this.}
+exactly this. Thai originals: Blackbox Log \texttt{BBL-2026-09-04-083} ff.}
 \label{tab:five-q}
 \end{table}
 
@@ -584,14 +579,16 @@ cross-checked the lens DOIs against the citation-card apparatus described in \Cr
 \subsection*{Composite quotes caught by the cross-vendor route}
 The single strongest gate finding this run: an I3 (decorrelated cross-vendor) check on an earlier
 citation pass caught \emph{composite quotes} --- citations assembled from memory rather than a
-locator taken from the opened source. The founder's ruling in direct response, verbatim
+locator taken from the opened source. The founder's ruling in direct response, English gloss
 (\texttt{BBL-2026-09-04-100}):
 \begin{leftbar}\small
-\includegraphics[width=\linewidth]{thai_imgs/bbl100.png}
-\end{leftbar}
-\noindent --- ``should we make it a hard rule: if a source is used it must carry a page and line locator plus
+\textit{Founder's line (English gloss; verbatim Thai in the Blackbox Log, DOI
+\texttt{10.5281/zenodo.22302518}, entry \texttt{BBL-2026-09-04-100}):}\par
+\itshape\upshape --- ``should we make it a hard rule: if a source is used it must carry a page and line locator plus
 a full link, never written from memory --- that reduces the problem at the source, before the
-check.'' Adopted immediately (\texttt{BBL-2026-09-04-101}, Thai verbatim in \texttt{entries.jsonl}; gloss: ``update it into the
+check.''
+\end{leftbar}
+\noindent Adopted immediately (\texttt{BBL-2026-09-04-101}, Thai verbatim in \texttt{entries.jsonl}; gloss: ``update it into the
 system''), this became the rule under which every one of the 48 citation cards behind
 \Cref{sec:literature} was subsequently built: each carries \texttt{page\_or\_locator} and
 \texttt{fetched\_from\_url}, and each \texttt{exact\_passage} is a source-first quotation, not a
@@ -762,25 +759,27 @@ polished or translated in place --- followed by the cooking log. Full record arc
 \begin{table*}[t]
 \centering
 \scriptsize
-\begin{tabularx}{\linewidth}{@{}p{0.1\linewidth} p{0.07\linewidth} X p{0.15\linewidth} p{0.13\linewidth}@{}}
+\begin{tabularx}{\linewidth}{@{}p{0.09\linewidth} p{0.08\linewidth} X p{0.22\linewidth}@{}}
 \toprule
-\textbf{ID} & \textbf{Kind} & \textbf{Thai verbatim} & \textbf{Distinction introduced} & \textbf{Became} \\
+\textbf{ID} & \textbf{Kind} & \textbf{English gloss (AI assistant's translation, tier \DrTier{}; effect on this paper)} & \textbf{Pointer} \\
 \midrule
-BBL-083 & proposal & see \Cref{sec:problem} image above & Separates ``observation'' (abstract verb) from ``problem state'' (concrete pre-existing thing) & FOUNDATION \S2.1a (\Cref{sec:problem}) \\
-BBL-086/088 & finding / correction & see \Cref{sec:standpoint-and-ownership} image above & Which spine nodes must stay human: problem, question, and the \emph{selection} of the hypothesis (088 corrects 086) & FOUNDATION \S2.1c \\
-BBL-089 & ruling & \texttt{entries.jsonl} (not reproduced here; column-width) & Ratifies the finer-grained spine diagram (AI-drafted wording, human-ratified agreement) & FOUNDATION \S2.1a diagram \\
-BBL-091 & instruction & \texttt{entries.jsonl} (not reproduced here) & Install and use the skill to build this article in full & task B1/B2 launch \\
-BBL-095 & ruling & \texttt{entries.jsonl} (not reproduced here) & Selects all three hypotheses (H1, H2, H3) together & \texttt{hypothesis\_selection.yaml} \\
-BBL-097 & ruling & \texttt{entries.jsonl} (not reproduced here) & Sets genre to CONCEPTUAL, overriding the router's \texttt{systematic\_review} output & \texttt{genre\_decision.yaml} (\Cref{sec:genre}) \\
-BBL-098 & instruction & \texttt{entries.jsonl} (not reproduced here) & Requires colliding own prior papers against world literature, not silence & own-lineage rows, \Cref{sec:literature} \\
-BBL-099 & ruling & \texttt{entries.jsonl} (not reproduced here) & English only, no Thai edition; arXiv two-column theme, polished & this document's language and theme \\
-BBL-100 & ruling & see \Cref{sec:demonstration} image above & Mandates locator+link, source-first citation, after I3 caught composite quotes & rule 17, \S7.8; \Cref{sec:demonstration} \\
-BBL-101 & instruction & \texttt{entries.jsonl} (not reproduced here) & Adopt the citation rule into the system immediately & rule 17 adoption \\
+BBL-083 & proposal & ``the word `observation' is abstract, it is a verb; if we started from the problem instead, is there a process like this? We propose focusing on the problem first.'' --- separates ``observation'' (abstract verb) from ``problem state'' (concrete pre-existing thing); became FOUNDATION \S2.1a (\Cref{sec:problem}) & DOI \texttt{10.5281/zenodo.22302518}, entry \texttt{BBL-2026-09-04-083} \\
+BBL-086/088 & finding / correction & ``if the problem is still ours, the question is still ours, and the selection of the hypothesis is still ours, and it leads to solving our problem, then use AI, use a cat, use a bear, go ahead --- because that is the goal of knowledge: to solve a problem for someone.'' (088 corrects 086) --- fixes which spine nodes must stay human: problem, question, and the \emph{selection} of the hypothesis; became FOUNDATION \S2.1c & DOI \texttt{10.5281/zenodo.22302518}, entry \texttt{BBL-2026-09-04-088} (corrects 086) \\
+BBL-089 & ruling & Ratifies the finer-grained spine diagram wording (AI-drafted, human-ratified) --- became the spine diagram, FOUNDATION \S2.1a & \texttt{blackbox/log/entries.jsonl}, entry \texttt{BBL-2026-09-04-089} \\
+BBL-091 & instruction & Install and use the skill to build this article in full --- became task B1/B2 launch & \texttt{blackbox/log/entries.jsonl}, entry \texttt{BBL-2026-09-04-091} \\
+BBL-095 & ruling & ``bring all three together'' --- selects all three hypotheses (H1, H2, H3); became \texttt{hypothesis\_selection.yaml} & \texttt{blackbox/log/entries.jsonl}, entry \texttt{BBL-2026-09-04-095} \\
+BBL-097 & ruling & ``make this document an academic article, a concept paper'' --- sets genre to CONCEPTUAL, overriding the router's \texttt{systematic\_review} output; became \texttt{genre\_decision.yaml} (\Cref{sec:genre}) & \texttt{blackbox/log/entries.jsonl}, entry \texttt{BBL-2026-09-04-097} \\
+BBL-098 & instruction & Requires colliding own prior papers against world literature, not silence --- became own-lineage rows, \Cref{sec:literature} & \texttt{blackbox/log/entries.jsonl}, entry \texttt{BBL-2026-09-04-098} \\
+BBL-099 & ruling & English only, no Thai edition; arXiv two-column theme, polished --- became this document's language and theme & \texttt{blackbox/log/entries.jsonl}, entry \texttt{BBL-2026-09-04-099} \\
+BBL-100 & ruling & ``should we make it a hard rule: if a source is used it must carry a page and line locator plus a full link, never written from memory --- that reduces the problem at the source, before the check.'' --- mandates locator+link, source-first citation, after I3 caught composite quotes; became rule 17, \S7.8 (\Cref{sec:demonstration}) & DOI \texttt{10.5281/zenodo.22302518}, entry \texttt{BBL-2026-09-04-100} \\
+BBL-101 & instruction & ``update it into the system'' --- adopts the citation rule immediately; became rule 17 adoption & \texttt{blackbox/log/entries.jsonl}, entry \texttt{BBL-2026-09-04-101} \\
 \bottomrule
 \end{tabularx}
-\caption{Blackbox Note --- curated verbatim lines relevant to this paper's own construction (full
-Thai retained; English gloss given inline in the surrounding text per section, not translated here
-in place).}
+\caption{Blackbox Note --- every row is id / English gloss / pointer. Verbatim Thai lines are kept
+only in the cited records (the Blackbox Log, DOI \texttt{10.5281/zenodo.22302518}, or
+\texttt{blackbox/log/entries.jsonl}), by founder ruling \texttt{BBL-2026-09-04-103} (English-only
+paper); the glosses shown here are the AI assistant's translations, not the founder's own words,
+tier \DrTier{}.}
 \label{tab:blackbox-lines}
 \end{table*}
 

@@ -1,0 +1,34 @@
+{
+ "claim_ref": "GLOSA-CC-20260904-0203",
+ "route_id": "R1",
+ "reviewer_identity": "cross-vendor AI route R1 (vendor recorded locally, not named: gate rule 9)",
+ "independence_class": "I3",
+ "mc_level": "L2",
+ "role": "Falsifier",
+ "review_mode": "DECORRELATED_AI_ROUTE",
+ "verdict": "R1 finite_diagnostic: the card does not establish the stated measurable increase. Its own readout says n=0 own trials and Phi_z0 is not computed; all three cited relations support only adjacent mechanisms, not Q3/Q4 claim-card detection rates. A seeded benchmark showing equal, lower, or direction-dependent cross-vendor detection would defeat the claim, and the card identifies such direction-dependence as already present in the closest analogous study.",
+ "verdict_tier": "finite_diagnostic",
+ "evidence_consulted": [
+  "claim card as pasted into PACKET.md",
+  "citation card cite-mindstudio-crossvendor-010",
+  "citation card cite-selfpreference-judge-001",
+  "citation card cite-toohconsistent-003"
+ ],
+ "shared_dependency_disclosure": "same operator machine and same packet text as the maker; different vendor; no shared session",
+ "disagreement_ledger_ref": null,
+ "date": "2026-09-04",
+ "approver_kind": "ai",
+ "route_findings": {
+  "defeaters_found": [
+   "A controlled seeded-error benchmark on claim cards where I3 catches false Q3/Q4 fields at a rate not measurably higher than I0/I1.",
+   "Direction-dependent results where one vendor-pair helps but the reverse hurts, making the unconditional cross-vendor > same-vendor statement false."
+  ],
+  "overclaims_found": [
+   "The statement says detection rises measurably, but the card reports no seeded-error benchmark and n=0 own experimental trials.",
+   "The tested evidence_relations are labeled SUPPORTS, but their own scopes are general mechanism or adjacent-domain evidence, not the claimed detection-rate comparison.",
+   "Citation-card disclosures contain standing tension: top-level status says VERIFIED while some disclosure text says status stays METADATA_OK or claim_match false."
+  ],
+  "evidence_relations_ok": false,
+  "notes": "The falsifier is reachable in principle by the proposed seeded benchmark, but not reached by the supplied evidence."
+ }
+}
