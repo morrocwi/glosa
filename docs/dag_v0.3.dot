@@ -1,0 +1,67 @@
+digraph glosa_dag_v0_3 {
+  rankdir=TB;
+  node [shape=box, style="rounded,filled", fontname="Helvetica"];
+  subgraph cluster_process { label="process"; style=dashed;
+    "eng.registry-check-ci-safe" [label="Registry check made CI-safe\n[done]", fillcolor="#495057", style="rounded,filled,solid"];
+  }
+  subgraph cluster_kernel { label="kernel"; style=dashed;
+    "eng.lit-manifest-fail-closed" [label="Literature-review manifest fails closed\n[done]", fillcolor="#f76707", style="rounded,filled,solid"];
+    "kernel.rule17-source-first" [label="Rule 17 — source-first citation\n[done]", fillcolor="#f76707", style="rounded,filled,solid"];
+    "kernel.pcs-red-flag" [label="Premature Category Stabilization (PCS) as a scoped kernel red-flag\n[proposed]", fillcolor="#f76707", style="rounded,filled,solid"];
+    "rule17.claim-card-certification-open" [label="Claim card replaces institutional certification: kept [Open]\n[deferred]", fillcolor="#f76707", style="rounded,filled,dashed"];
+    "kernel.unverified-verifiability-flag" [label="'Verifiable with no stated procedure' as a named narrow sub-case\n[proposed]", fillcolor="#f76707", style="rounded,filled,solid"];
+    "kernel.gate-rules-taxonomy-i-z" [label="I1–I4/Z1–Z4 injected-infinity/zero taxonomy in kernel gate rules\n[proposed]", fillcolor="#f76707", style="rounded,filled,solid"];
+  }
+  subgraph cluster_foundation { label="foundation"; style=dashed;
+    "foundation.s5-scope-boundary-per-instance" [label="Non-clinical/non-medical/non-legal scope clause stays per-instance\n[proposed]", fillcolor="#4c6ef5", style="rounded,filled,solid"];
+    "foundation.s7.9-intake-tier-flag" [label="Claim-tier intake flag — thin addition, not a new mechanism\n[proposed]", fillcolor="#4c6ef5", style="rounded,filled,solid"];
+    "foundation.s1.0-infinity-tension-flag" [label="Infinity-as-transcendental-ground stays a flagged [Open] tension\n[deferred]", fillcolor="#4c6ef5", style="rounded,filled,dashed"];
+    "foundation.s1.0-ashari-ontology-analogue" [label="Partial theology-neutral ontology analogue (2 of 3 constructs)\n[proposed]", fillcolor="#4c6ef5", style="rounded,filled,solid"];
+    "foundation.pillars-readout-not-truth" [label="Pillars §1.0 cross-tradition citation set\n[proposed]", fillcolor="#4c6ef5", style="rounded,filled,solid"];
+    "foundation.non-collapse-table-expand" [label="Non-Collapse Table Appendix A — cross-tradition rows\n[proposed]", fillcolor="#4c6ef5", style="rounded,filled,solid"];
+    "foundation.responsibility-arrow-mother-eq" [label="Mother-equation framing for the Data→Inference→Claim arrow\n[proposed]", fillcolor="#4c6ef5", style="rounded,filled,solid"];
+    "foundation.honest-edges-agrippa" [label="Agrippa's trilemma applied to the tier system itself\n[proposed]", fillcolor="#4c6ef5", style="rounded,filled,solid"];
+    "foundation.ead-crosswalk" [label="Existence-Attribution-Disclosure (E-A-D) norm as the named source of §3.1 crosswalk\n[proposed]", fillcolor="#4c6ef5", style="rounded,filled,solid"];
+    "foundation.possession-constitution-collapse" [label="Possession-Constitution Collapse / knower-fetishism as the named AI-authorship rule source\n[proposed]", fillcolor="#4c6ef5", style="rounded,filled,solid"];
+    "foundation.independence-ladder-i0-i5-source" [label="I0–I5 Independence Ladder named source citation\n[proposed]", fillcolor="#4c6ef5", style="rounded,filled,solid"];
+    "foundation.k-state-standalone-scholar-cite" [label="K-state (Standalone Scholar) named-origin citation\n[proposed]", fillcolor="#4c6ef5", style="rounded,filled,solid"];
+    "foundation.lrs-discovery-loop-extension" [label="Discovery-loop extension (candidate-set formation precedes evidential adjudication)\n[proposed]", fillcolor="#4c6ef5", style="rounded,filled,solid"];
+    "foundation.disclaimer-catalogue-expand" [label="Disclaimer catalogue — novelty-scoping and standpoint-disclosure patterns\n[proposed]", fillcolor="#4c6ef5", style="rounded,filled,solid"];
+  }
+  subgraph cluster_schema { label="schema"; style=dashed;
+    "schema.prereg-gate-fields" [label="Frozen-preregistration gate as checkable fields, not a hard block\n[proposed]", fillcolor="#12b886", style="rounded,filled,solid"];
+    "schema.verdict-class-vocabulary" [label="Verdict-class vocabulary field (DERIVED/FORCED/DEFINITIONAL-RELABEL/POSITED/BORROWED-SCALE/OPEN)\n[proposed]", fillcolor="#12b886", style="rounded,filled,solid"];
+    "schema.claim-card-comparison-evidence-field" [label="Comparison/evidence-strength field — descriptive-only, no outperformance claim\n[proposed]", fillcolor="#12b886", style="rounded,filled,solid"];
+  }
+  subgraph cluster_docs { label="docs"; style=dashed;
+    "docs.blackbox-log-formalize-source" [label="Blackbox Log named-origin citation\n[proposed]", fillcolor="#868e96", style="rounded,filled,solid"];
+  }
+  subgraph cluster_cli { label="cli"; style=dashed;
+    "cli.genre-router-layer-confusion-check" [label="Genre-router layer-confusion diagnostic\n[proposed]", fillcolor="#7048e8", style="rounded,filled,solid"];
+  }
+  "eng.lit-manifest-fail-closed" -> "kernel.rule17-source-first" [label="requires", color="#1c1c1c", style=solid];
+  "kernel.rule17-source-first" -> "kernel.gate-rules-taxonomy-i-z" [label="informs", color="#868e96", style=dashed];
+  "kernel.rule17-source-first" -> "docs.blackbox-log-formalize-source" [label="informs", color="#868e96", style=dashed];
+  "eng.registry-check-ci-safe" -> "schema.prereg-gate-fields" [label="informs", color="#868e96", style=dashed];
+  "foundation.pillars-readout-not-truth" -> "foundation.non-collapse-table-expand" [label="requires", color="#1c1c1c", style=solid];
+  "foundation.pillars-readout-not-truth" -> "foundation.responsibility-arrow-mother-eq" [label="requires", color="#1c1c1c", style=solid];
+  "foundation.honest-edges-agrippa" -> "foundation.pillars-readout-not-truth" [label="informs", color="#868e96", style=dashed];
+  "foundation.s1.0-infinity-tension-flag" -> "foundation.pillars-readout-not-truth" [label="conflicts", color="#e03131", style=solid];
+  "foundation.s1.0-ashari-ontology-analogue" -> "foundation.pillars-readout-not-truth" [label="informs", color="#868e96", style=dashed];
+  "foundation.non-collapse-table-expand" -> "schema.verdict-class-vocabulary" [label="requires", color="#1c1c1c", style=solid];
+  "schema.verdict-class-vocabulary" -> "foundation.ead-crosswalk" [label="requires", color="#1c1c1c", style=solid];
+  "schema.verdict-class-vocabulary" -> "schema.claim-card-comparison-evidence-field" [label="informs", color="#868e96", style=dashed];
+  "foundation.ead-crosswalk" -> "foundation.possession-constitution-collapse" [label="requires", color="#1c1c1c", style=solid];
+  "foundation.ead-crosswalk" -> "foundation.independence-ladder-i0-i5-source" [label="requires", color="#1c1c1c", style=solid];
+  "foundation.ead-crosswalk" -> "cli.genre-router-layer-confusion-check" [label="informs", color="#868e96", style=dashed];
+  "foundation.independence-ladder-i0-i5-source" -> "foundation.k-state-standalone-scholar-cite" [label="requires", color="#1c1c1c", style=solid];
+  "foundation.independence-ladder-i0-i5-source" -> "rule17.claim-card-certification-open" [label="informs", color="#868e96", style=dashed];
+  "foundation.independence-ladder-i0-i5-source" -> "foundation.lrs-discovery-loop-extension" [label="requires", color="#1c1c1c", style=solid];
+  "foundation.non-collapse-table-expand" -> "kernel.pcs-red-flag" [label="informs", color="#868e96", style=dashed];
+  "kernel.pcs-red-flag" -> "kernel.gate-rules-taxonomy-i-z" [label="informs", color="#868e96", style=dashed];
+  "foundation.disclaimer-catalogue-expand" -> "foundation.s5-scope-boundary-per-instance" [label="requires", color="#1c1c1c", style=solid];
+  "foundation.disclaimer-catalogue-expand" -> "kernel.unverified-verifiability-flag" [label="informs", color="#868e96", style=dashed];
+  "foundation.disclaimer-catalogue-expand" -> "foundation.s7.9-intake-tier-flag" [label="informs", color="#868e96", style=dashed];
+  "foundation.lrs-discovery-loop-extension" -> "foundation.s7.9-intake-tier-flag" [label="informs", color="#868e96", style=dashed];
+  "foundation.responsibility-arrow-mother-eq" -> "schema.prereg-gate-fields" [label="informs", color="#868e96", style=dashed];
+}

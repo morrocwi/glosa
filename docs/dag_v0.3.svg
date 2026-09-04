@@ -1,0 +1,155 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="3400" height="1160" viewBox="0 0 3400 1160" font-family="Helvetica,Arial,sans-serif">
+<rect x="0" y="0" width="3400" height="1160" fill="#ffffff"/>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#495057"/></marker><marker id="arrow-conflict" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#e03131"/></marker></defs>
+<text x="40" y="28" font-size="13" fill="#495057" font-weight="bold">process</text>
+<text x="40" y="208" font-size="13" fill="#495057" font-weight="bold">kernel</text>
+<text x="40" y="388" font-size="13" fill="#495057" font-weight="bold">schema</text>
+<text x="40" y="568" font-size="13" fill="#495057" font-weight="bold">foundation</text>
+<text x="40" y="748" font-size="13" fill="#495057" font-weight="bold">docs</text>
+<text x="40" y="928" font-size="13" fill="#495057" font-weight="bold">cli</text>
+<line x1="240.0" y1="255.0" x2="760.0" y2="255.0" stroke="#495057" stroke-width="1.6" marker-end="url(#arrow)"/>
+<line x1="760.0" y1="255.0" x2="480.0" y2="255.0" stroke="#adb5bd" stroke-width="1.6" stroke-dasharray="6,4" marker-end="url(#arrow)"/>
+<line x1="860.0" y1="290.0" x2="140.0" y2="760.0" stroke="#adb5bd" stroke-width="1.6" stroke-dasharray="6,4" marker-end="url(#arrow)"/>
+<line x1="140.0" y1="110.0" x2="380.0" y2="400.0" stroke="#adb5bd" stroke-width="1.6" stroke-dasharray="6,4" marker-end="url(#arrow)"/>
+<line x1="1720.0" y1="615.0" x2="1680.0" y2="615.0" stroke="#495057" stroke-width="1.6" marker-end="url(#arrow)"/>
+<line x1="1920.0" y1="615.0" x2="2200.0" y2="615.0" stroke="#495057" stroke-width="1.6" marker-end="url(#arrow)"/>
+<line x1="720.0" y1="615.0" x2="1720.0" y2="615.0" stroke="#adb5bd" stroke-width="1.6" stroke-dasharray="6,4" marker-end="url(#arrow)"/>
+<line x1="2680.0" y1="615.0" x2="1920.0" y2="615.0" stroke="#e03131" stroke-width="1.6" marker-end="url(#arrow-conflict)"/>
+<line x1="2440.0" y1="615.0" x2="1920.0" y2="615.0" stroke="#adb5bd" stroke-width="1.6" stroke-dasharray="6,4" marker-end="url(#arrow)"/>
+<line x1="1580.0" y1="580.0" x2="620.0" y2="470.0" stroke="#495057" stroke-width="1.6" marker-end="url(#arrow)"/>
+<line x1="620.0" y1="470.0" x2="380.0" y2="580.0" stroke="#495057" stroke-width="1.6" marker-end="url(#arrow)"/>
+<line x1="520.0" y1="435.0" x2="240.0" y2="435.0" stroke="#adb5bd" stroke-width="1.6" stroke-dasharray="6,4" marker-end="url(#arrow)"/>
+<line x1="480.0" y1="615.0" x2="1960.0" y2="615.0" stroke="#495057" stroke-width="1.6" marker-end="url(#arrow)"/>
+<line x1="480.0" y1="615.0" x2="760.0" y2="615.0" stroke="#495057" stroke-width="1.6" marker-end="url(#arrow)"/>
+<line x1="380.0" y1="650.0" x2="140.0" y2="940.0" stroke="#adb5bd" stroke-width="1.6" stroke-dasharray="6,4" marker-end="url(#arrow)"/>
+<line x1="960.0" y1="615.0" x2="1000.0" y2="615.0" stroke="#495057" stroke-width="1.6" marker-end="url(#arrow)"/>
+<line x1="860.0" y1="580.0" x2="1340.0" y2="290.0" stroke="#adb5bd" stroke-width="1.6" stroke-dasharray="6,4" marker-end="url(#arrow)"/>
+<line x1="960.0" y1="615.0" x2="1240.0" y2="615.0" stroke="#495057" stroke-width="1.6" marker-end="url(#arrow)"/>
+<line x1="1580.0" y1="580.0" x2="620.0" y2="290.0" stroke="#adb5bd" stroke-width="1.6" stroke-dasharray="6,4" marker-end="url(#arrow)"/>
+<line x1="520.0" y1="255.0" x2="480.0" y2="255.0" stroke="#adb5bd" stroke-width="1.6" stroke-dasharray="6,4" marker-end="url(#arrow)"/>
+<line x1="240.0" y1="615.0" x2="2920.0" y2="615.0" stroke="#495057" stroke-width="1.6" marker-end="url(#arrow)"/>
+<line x1="140.0" y1="580.0" x2="1100.0" y2="290.0" stroke="#adb5bd" stroke-width="1.6" stroke-dasharray="6,4" marker-end="url(#arrow)"/>
+<line x1="240.0" y1="615.0" x2="3160.0" y2="615.0" stroke="#adb5bd" stroke-width="1.6" stroke-dasharray="6,4" marker-end="url(#arrow)"/>
+<line x1="1440.0" y1="615.0" x2="3160.0" y2="615.0" stroke="#adb5bd" stroke-width="1.6" stroke-dasharray="6,4" marker-end="url(#arrow)"/>
+<line x1="2300.0" y1="580.0" x2="380.0" y2="470.0" stroke="#adb5bd" stroke-width="1.6" stroke-dasharray="6,4" marker-end="url(#arrow)"/>
+<rect x="40" y="40" width="200" height="70" rx="8" fill="#495057" fill-opacity="0.85" stroke="#2f9e44" stroke-width="2"/>
+<text x="140.0" y="58" font-size="10.5" fill="white" text-anchor="middle" font-weight="600">Registry check made CI-safe</text>
+<text x="140.0" y="104" font-size="9" fill="white" text-anchor="middle" font-style="italic">[done]</text>
+<rect x="40" y="220" width="200" height="70" rx="8" fill="#f76707" fill-opacity="0.85" stroke="#2f9e44" stroke-width="2"/>
+<text x="140.0" y="238" font-size="10.5" fill="white" text-anchor="middle" font-weight="600">Literature-review manifest</text>
+<text x="140.0" y="251" font-size="10.5" fill="white" text-anchor="middle" font-weight="600">fails closed</text>
+<text x="140.0" y="284" font-size="9" fill="white" text-anchor="middle" font-style="italic">[done]</text>
+<rect x="760" y="220" width="200" height="70" rx="8" fill="#f76707" fill-opacity="0.85" stroke="#2f9e44" stroke-width="2"/>
+<text x="860.0" y="238" font-size="10.5" fill="white" text-anchor="middle" font-weight="600">Rule 17 — source-first</text>
+<text x="860.0" y="251" font-size="10.5" fill="white" text-anchor="middle" font-weight="600">citation</text>
+<text x="860.0" y="284" font-size="9" fill="white" text-anchor="middle" font-style="italic">[done]</text>
+<rect x="520" y="220" width="200" height="70" rx="8" fill="#f76707" fill-opacity="1" stroke="#1c1c1c" stroke-width="2"/>
+<text x="620.0" y="238" font-size="10.5" fill="white" text-anchor="middle" font-weight="600">Premature Category</text>
+<text x="620.0" y="251" font-size="10.5" fill="white" text-anchor="middle" font-weight="600">Stabilization (PCS) as a</text>
+<text x="620.0" y="264" font-size="10.5" fill="white" text-anchor="middle" font-weight="600">scoped kernel red-flag</text>
+<text x="620.0" y="284" font-size="9" fill="white" text-anchor="middle" font-style="italic">[proposed] ⚑H</text>
+<rect x="1240" y="220" width="200" height="70" rx="8" fill="#f76707" fill-opacity="0.55" stroke="#adb5bd" stroke-width="2" stroke-dasharray="5,3"/>
+<text x="1340.0" y="238" font-size="10.5" fill="white" text-anchor="middle" font-weight="600">Claim card replaces</text>
+<text x="1340.0" y="251" font-size="10.5" fill="white" text-anchor="middle" font-weight="600">institutional certification:</text>
+<text x="1340.0" y="264" font-size="10.5" fill="white" text-anchor="middle" font-weight="600">kept [Open]</text>
+<text x="1340.0" y="284" font-size="9" fill="white" text-anchor="middle" font-style="italic">[deferred]</text>
+<rect x="2920" y="580" width="200" height="70" rx="8" fill="#4c6ef5" fill-opacity="1" stroke="#1c1c1c" stroke-width="2"/>
+<text x="3020.0" y="598" font-size="10.5" fill="white" text-anchor="middle" font-weight="600">Non-clinical/non-medical/non-legal</text>
+<text x="3020.0" y="611" font-size="10.5" fill="white" text-anchor="middle" font-weight="600">scope clause stays</text>
+<text x="3020.0" y="624" font-size="10.5" fill="white" text-anchor="middle" font-weight="600">per-instance</text>
+<text x="3020.0" y="644" font-size="9" fill="white" text-anchor="middle" font-style="italic">[proposed] ⚑H</text>
+<rect x="3160" y="580" width="200" height="70" rx="8" fill="#4c6ef5" fill-opacity="1" stroke="#1c1c1c" stroke-width="2"/>
+<text x="3260.0" y="598" font-size="10.5" fill="white" text-anchor="middle" font-weight="600">Claim-tier intake flag —</text>
+<text x="3260.0" y="611" font-size="10.5" fill="white" text-anchor="middle" font-weight="600">thin addition, not a new</text>
+<text x="3260.0" y="624" font-size="10.5" fill="white" text-anchor="middle" font-weight="600">mechanism</text>
+<text x="3260.0" y="644" font-size="9" fill="white" text-anchor="middle" font-style="italic">[proposed] ⚑H</text>
+<rect x="280" y="400" width="200" height="70" rx="8" fill="#12b886" fill-opacity="1" stroke="#1c1c1c" stroke-width="2"/>
+<text x="380.0" y="418" font-size="10.5" fill="white" text-anchor="middle" font-weight="600">Frozen-preregistration gate</text>
+<text x="380.0" y="431" font-size="10.5" fill="white" text-anchor="middle" font-weight="600">as checkable fields, not a</text>
+<text x="380.0" y="444" font-size="10.5" fill="white" text-anchor="middle" font-weight="600">hard block</text>
+<text x="380.0" y="464" font-size="9" fill="white" text-anchor="middle" font-style="italic">[proposed] ⚑H</text>
+<rect x="1000" y="220" width="200" height="70" rx="8" fill="#f76707" fill-opacity="1" stroke="#1c1c1c" stroke-width="2"/>
+<text x="1100.0" y="238" font-size="10.5" fill="white" text-anchor="middle" font-weight="600">&quot;Verifiable with no stated</text>
+<text x="1100.0" y="251" font-size="10.5" fill="white" text-anchor="middle" font-weight="600">procedure&quot; as a named narrow</text>
+<text x="1100.0" y="264" font-size="10.5" fill="white" text-anchor="middle" font-weight="600">sub-case</text>
+<text x="1100.0" y="284" font-size="9" fill="white" text-anchor="middle" font-style="italic">[proposed]</text>
+<rect x="2680" y="580" width="200" height="70" rx="8" fill="#4c6ef5" fill-opacity="0.55" stroke="#adb5bd" stroke-width="2" stroke-dasharray="5,3"/>
+<text x="2780.0" y="598" font-size="10.5" fill="white" text-anchor="middle" font-weight="600">Infinity-as-transcendental-ground</text>
+<text x="2780.0" y="611" font-size="10.5" fill="white" text-anchor="middle" font-weight="600">stays a flagged [Open]</text>
+<text x="2780.0" y="624" font-size="10.5" fill="white" text-anchor="middle" font-weight="600">tension</text>
+<text x="2780.0" y="644" font-size="9" fill="white" text-anchor="middle" font-style="italic">[deferred]</text>
+<rect x="2440" y="580" width="200" height="70" rx="8" fill="#4c6ef5" fill-opacity="1" stroke="#1c1c1c" stroke-width="2"/>
+<text x="2540.0" y="598" font-size="10.5" fill="white" text-anchor="middle" font-weight="600">Partial theology-neutral</text>
+<text x="2540.0" y="611" font-size="10.5" fill="white" text-anchor="middle" font-weight="600">ontology analogue (2 of 3</text>
+<text x="2540.0" y="624" font-size="10.5" fill="white" text-anchor="middle" font-weight="600">constructs)</text>
+<text x="2540.0" y="644" font-size="9" fill="white" text-anchor="middle" font-style="italic">[proposed] ⚑H</text>
+<rect x="1720" y="580" width="200" height="70" rx="8" fill="#4c6ef5" fill-opacity="1" stroke="#1c1c1c" stroke-width="2"/>
+<text x="1820.0" y="598" font-size="10.5" fill="white" text-anchor="middle" font-weight="600">Pillars §1.0 cross-tradition</text>
+<text x="1820.0" y="611" font-size="10.5" fill="white" text-anchor="middle" font-weight="600">citation set</text>
+<text x="1820.0" y="644" font-size="9" fill="white" text-anchor="middle" font-style="italic">[proposed]</text>
+<rect x="1480" y="580" width="200" height="70" rx="8" fill="#4c6ef5" fill-opacity="1" stroke="#1c1c1c" stroke-width="2"/>
+<text x="1580.0" y="598" font-size="10.5" fill="white" text-anchor="middle" font-weight="600">Non-Collapse Table Appendix</text>
+<text x="1580.0" y="611" font-size="10.5" fill="white" text-anchor="middle" font-weight="600">A — cross-tradition rows</text>
+<text x="1580.0" y="644" font-size="9" fill="white" text-anchor="middle" font-style="italic">[proposed]</text>
+<rect x="280" y="220" width="200" height="70" rx="8" fill="#f76707" fill-opacity="1" stroke="#1c1c1c" stroke-width="2"/>
+<text x="380.0" y="238" font-size="10.5" fill="white" text-anchor="middle" font-weight="600">I1–I4/Z1–Z4</text>
+<text x="380.0" y="251" font-size="10.5" fill="white" text-anchor="middle" font-weight="600">injected-infinity/zero</text>
+<text x="380.0" y="264" font-size="10.5" fill="white" text-anchor="middle" font-weight="600">taxonomy in kernel gate</text>
+<text x="380.0" y="284" font-size="9" fill="white" text-anchor="middle" font-style="italic">[proposed]</text>
+<rect x="2200" y="580" width="200" height="70" rx="8" fill="#4c6ef5" fill-opacity="1" stroke="#1c1c1c" stroke-width="2"/>
+<text x="2300.0" y="598" font-size="10.5" fill="white" text-anchor="middle" font-weight="600">Mother-equation framing for</text>
+<text x="2300.0" y="611" font-size="10.5" fill="white" text-anchor="middle" font-weight="600">the Data→Inference→Claim</text>
+<text x="2300.0" y="624" font-size="10.5" fill="white" text-anchor="middle" font-weight="600">arrow</text>
+<text x="2300.0" y="644" font-size="9" fill="white" text-anchor="middle" font-style="italic">[proposed]</text>
+<rect x="520" y="580" width="200" height="70" rx="8" fill="#4c6ef5" fill-opacity="1" stroke="#1c1c1c" stroke-width="2"/>
+<text x="620.0" y="598" font-size="10.5" fill="white" text-anchor="middle" font-weight="600">Agrippa&#x27;s trilemma applied</text>
+<text x="620.0" y="611" font-size="10.5" fill="white" text-anchor="middle" font-weight="600">to the tier system itself</text>
+<text x="620.0" y="644" font-size="9" fill="white" text-anchor="middle" font-style="italic">[proposed]</text>
+<rect x="520" y="400" width="200" height="70" rx="8" fill="#12b886" fill-opacity="1" stroke="#1c1c1c" stroke-width="2"/>
+<text x="620.0" y="418" font-size="10.5" fill="white" text-anchor="middle" font-weight="600">Verdict-class vocabulary</text>
+<text x="620.0" y="431" font-size="10.5" fill="white" text-anchor="middle" font-weight="600">field</text>
+<text x="620.0" y="444" font-size="10.5" fill="white" text-anchor="middle" font-weight="600">(DERIVED/FORCED/DEFINITIONAL-RELABEL/POSITED/BORROWED-SCALE/OPEN)</text>
+<text x="620.0" y="464" font-size="9" fill="white" text-anchor="middle" font-style="italic">[proposed]</text>
+<rect x="280" y="580" width="200" height="70" rx="8" fill="#4c6ef5" fill-opacity="1" stroke="#1c1c1c" stroke-width="2"/>
+<text x="380.0" y="598" font-size="10.5" fill="white" text-anchor="middle" font-weight="600">Existence-Attribution-Disclosure</text>
+<text x="380.0" y="611" font-size="10.5" fill="white" text-anchor="middle" font-weight="600">(E-A-D) norm as the named</text>
+<text x="380.0" y="624" font-size="10.5" fill="white" text-anchor="middle" font-weight="600">source of §3.1 crosswalk</text>
+<text x="380.0" y="644" font-size="9" fill="white" text-anchor="middle" font-style="italic">[proposed]</text>
+<rect x="1960" y="580" width="200" height="70" rx="8" fill="#4c6ef5" fill-opacity="1" stroke="#1c1c1c" stroke-width="2"/>
+<text x="2060.0" y="598" font-size="10.5" fill="white" text-anchor="middle" font-weight="600">Possession-Constitution</text>
+<text x="2060.0" y="611" font-size="10.5" fill="white" text-anchor="middle" font-weight="600">Collapse / knower-fetishism</text>
+<text x="2060.0" y="624" font-size="10.5" fill="white" text-anchor="middle" font-weight="600">as the named AI-authorship</text>
+<text x="2060.0" y="644" font-size="9" fill="white" text-anchor="middle" font-style="italic">[proposed]</text>
+<rect x="760" y="580" width="200" height="70" rx="8" fill="#4c6ef5" fill-opacity="1" stroke="#1c1c1c" stroke-width="2"/>
+<text x="860.0" y="598" font-size="10.5" fill="white" text-anchor="middle" font-weight="600">I0–I5 Independence Ladder</text>
+<text x="860.0" y="611" font-size="10.5" fill="white" text-anchor="middle" font-weight="600">named source citation</text>
+<text x="860.0" y="644" font-size="9" fill="white" text-anchor="middle" font-style="italic">[proposed]</text>
+<rect x="1000" y="580" width="200" height="70" rx="8" fill="#4c6ef5" fill-opacity="1" stroke="#1c1c1c" stroke-width="2"/>
+<text x="1100.0" y="598" font-size="10.5" fill="white" text-anchor="middle" font-weight="600">K-state (Standalone Scholar)</text>
+<text x="1100.0" y="611" font-size="10.5" fill="white" text-anchor="middle" font-weight="600">named-origin citation</text>
+<text x="1100.0" y="644" font-size="9" fill="white" text-anchor="middle" font-style="italic">[proposed]</text>
+<rect x="40" y="760" width="200" height="70" rx="8" fill="#868e96" fill-opacity="1" stroke="#1c1c1c" stroke-width="2"/>
+<text x="140.0" y="778" font-size="10.5" fill="white" text-anchor="middle" font-weight="600">Blackbox Log named-origin</text>
+<text x="140.0" y="791" font-size="10.5" fill="white" text-anchor="middle" font-weight="600">citation</text>
+<text x="140.0" y="824" font-size="9" fill="white" text-anchor="middle" font-style="italic">[proposed]</text>
+<rect x="1240" y="580" width="200" height="70" rx="8" fill="#4c6ef5" fill-opacity="1" stroke="#1c1c1c" stroke-width="2"/>
+<text x="1340.0" y="598" font-size="10.5" fill="white" text-anchor="middle" font-weight="600">Discovery-loop extension</text>
+<text x="1340.0" y="611" font-size="10.5" fill="white" text-anchor="middle" font-weight="600">(candidate-set formation</text>
+<text x="1340.0" y="624" font-size="10.5" fill="white" text-anchor="middle" font-weight="600">precedes evidential</text>
+<text x="1340.0" y="644" font-size="9" fill="white" text-anchor="middle" font-style="italic">[proposed] ⚑H</text>
+<rect x="40" y="580" width="200" height="70" rx="8" fill="#4c6ef5" fill-opacity="1" stroke="#1c1c1c" stroke-width="2"/>
+<text x="140.0" y="598" font-size="10.5" fill="white" text-anchor="middle" font-weight="600">Disclaimer catalogue —</text>
+<text x="140.0" y="611" font-size="10.5" fill="white" text-anchor="middle" font-weight="600">novelty-scoping and</text>
+<text x="140.0" y="624" font-size="10.5" fill="white" text-anchor="middle" font-weight="600">standpoint-disclosure</text>
+<text x="140.0" y="644" font-size="9" fill="white" text-anchor="middle" font-style="italic">[proposed]</text>
+<rect x="40" y="400" width="200" height="70" rx="8" fill="#12b886" fill-opacity="1" stroke="#1c1c1c" stroke-width="2"/>
+<text x="140.0" y="418" font-size="10.5" fill="white" text-anchor="middle" font-weight="600">Comparison/evidence-strength</text>
+<text x="140.0" y="431" font-size="10.5" fill="white" text-anchor="middle" font-weight="600">field — descriptive-only, no</text>
+<text x="140.0" y="444" font-size="10.5" fill="white" text-anchor="middle" font-weight="600">outperformance claim</text>
+<text x="140.0" y="464" font-size="9" fill="white" text-anchor="middle" font-style="italic">[proposed]</text>
+<rect x="40" y="940" width="200" height="70" rx="8" fill="#7048e8" fill-opacity="1" stroke="#1c1c1c" stroke-width="2"/>
+<text x="140.0" y="958" font-size="10.5" fill="white" text-anchor="middle" font-weight="600">Genre-router layer-confusion</text>
+<text x="140.0" y="971" font-size="10.5" fill="white" text-anchor="middle" font-weight="600">diagnostic</text>
+<text x="140.0" y="1004" font-size="9" fill="white" text-anchor="middle" font-style="italic">[proposed]</text>
+<text x="40" y="1125" font-size="10" fill="#495057">solid=requires, dashed-gray=informs, red=conflicts; dashed border=deferred; ⚑H=human_decision_needed</text>
+</svg>

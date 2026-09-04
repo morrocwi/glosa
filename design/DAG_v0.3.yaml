@@ -1,0 +1,415 @@
+# glosa v0.3 — S3 improvement DAG
+# Readout, not truth: every node below is a proposed readout of what the S1 harvest (324 cards,
+# knowledge/harvest_v0.3/KNOWLEDGE_STATUS_v0.3.md) and the S2 literature review
+# (records/lit/glosa-v0-3/DIGEST.md) already say, plus the WARN items closed in CHANGELOG 0.2.0
+# / design/TODO_v0.3.md and the reviews/PUBLISH_GATE_v1_public.md findings. Nothing here is a
+# decision; every `proposed` node needs `cpg/research/coordination/DECISIONS.yaml` before S6 build.
+# No novelty words used (no "first"/"best"/"novel"/"outperform").
+
+nodes:
+  # --- already done (v0.2 self-application lineage; carried forward for DAG lineage only) ---
+  - id: eng.registry-check-ci-safe
+    title: Registry check made CI-safe
+    change: >
+      Registry self-report state-machine check (rule blocking method→released without a
+      literature-review manifest) runs in CI, not only at release time, so a stage-skip
+      (e.g. D-LIT-MODE) is caught before merge, not after tagging.
+    kind: process
+    target: kernel/glosa_kernel.py (validate_release_manifest) + CI workflow
+    evidence: [kc-ep-051]
+    acceptance_test: "CI job fails a PR that advances registry stage past genre_routed without a PASS lit manifest."
+    risk: Low — mechanical CI gate, already exercised by v0.1.0→v0.2.0 self-report gap it was built to catch.
+    status: done
+    human_decision_needed: false
+
+  - id: eng.lit-manifest-fail-closed
+    title: Literature-review manifest fails closed
+    change: >
+      A literature-review manifest with any non-conformant citation card (missing locator,
+      wrong status) fails the whole manifest rather than silently dropping the bad card.
+    kind: kernel
+    target: kernel/glosa_kernel.py (validate_citation_card, validate_release_manifest)
+    evidence: [kc-base-039, kc-ep-046]
+    acceptance_test: "Unit test: manifest with one card missing a locator field returns overall FAIL, not PASS-with-warning."
+    risk: Low — already the shipped v0.2.0 behavior; carried here only to show DAG lineage into S3/S4.
+    status: done
+    human_decision_needed: false
+
+  - id: kernel.rule17-source-first
+    title: Rule 17 — source-first citation
+    change: >
+      A citation card cannot leave CANDIDATE status unless quote/page/line/link fields were
+      filled from the opened source at read-time, never reconstructed from memory afterward.
+    kind: kernel
+    target: kernel/glosa_kernel.py rule17 / rule17w (validate_citation_card)
+    evidence: [kc-base-039, kc-ai-019, kc-ep-046]
+    acceptance_test: "Unit test: card with status VERIFIED but empty verbatim/locator field raises rule17 error, not rule17w warning."
+    risk: Low — shipped 0.2.0; this DAG's own S1/S2 harvest cards were produced under this rule.
+    status: done
+    human_decision_needed: false
+
+  # --- DIGEST "Implications for the v0.3 DAG" table (records/lit/glosa-v0-3/DIGEST.md) ---
+  - id: kernel.pcs-red-flag
+    title: Premature Category Stabilization (PCS) as a scoped kernel red-flag
+    change: >
+      Add PCS to the contaminated-concept/red-flag table, but only when BOTH closure-timing
+      AND absence-of-adaptation/contextual-fit hold jointly; explicitly not merged with the
+      clinical term "premature closure."
+    kind: kernel
+    target: FOUNDATION §5/§6 disclaimer+genre-router; kernel contaminated-concept table (base-018)
+    evidence: [kc-ep-018, kc-ep-019, kc-ep-020, kc-islam-011, kc-tourism-002]
+    acceptance_test: >
+      finite_diagnostic sim: run N synthetic claim cards with (a) timing-only closure,
+      (b) timing+no-adaptation, (c) neither — kernel flags only class (b); precision on
+      class (b) must be 100% on the synthetic set before this ships.
+    risk: Medium — real cross-domain support, but two independent counter-cases (decoupled closure, successful non-premature adoption) risk over-generalization if scoping is dropped.
+    status: proposed
+    human_decision_needed: true
+
+  - id: rule17.claim-card-certification-open
+    title: "Claim card replaces institutional certification: kept [Open]"
+    change: >
+      Do NOT formalize "claim card substitutes for institutional certification" into kernel
+      rule 17 or the I0–I5 ladder this pass; keep it logged [Open] pending a falsifier that
+      tests claim cards directly (not badges/Registered Reports by analogy).
+    kind: kernel
+    target: kernel rule 17 / FOUNDATION §4.2 Independence Ladder I0–I5
+    evidence: [kc-ai-006, kc-aihp-002, kc-aihp-003]
+    acceptance_test: "design/TODO_v0.3.md carries an explicit [Open] line with the falsifier condition; no kernel diff lands for this claim in v0.3."
+    risk: Low (no change made) — flagged risk is silent drift if this stays unaddressed across future minor versions without a scoped falsifier ever getting written.
+    status: deferred
+    human_decision_needed: false
+
+  - id: foundation.s5-scope-boundary-per-instance
+    title: Non-clinical/non-medical/non-legal scope clause stays per-instance
+    change: >
+      Do not standardize one reusable disclaimer text across all AI-runtime instances;
+      require each instance to pair its disclaimer with an explicit context/jurisdiction
+      check (time-criticality, deployment jurisdiction, legal-category availability).
+    kind: foundation
+    target: FOUNDATION §5 Systematic disclaimer catalogue
+    evidence: [kc-ai-023, kc-he-016]
+    acceptance_test: "FOUNDATION §5 diff reviewed: every disclaimer entry carries a jurisdiction/time-criticality field, not just boilerplate text."
+    risk: Medium — the evidence largely defeats a single standardized clause; risk is per-instance variation becoming unmanaged per-hub duplication.
+    status: proposed
+    human_decision_needed: true
+
+  - id: foundation.s7.9-intake-tier-flag
+    title: Claim-tier intake flag — thin addition, not a new mechanism
+    change: >
+      Add a flag-and-request-tier step only as a thin layer on the existing AACODS-style
+      checklist (trace-to-original + appraise); explicitly exempt Global South
+      anecdotal/expert/local-knowledge evidence genres from being treated as automatically
+      suspect.
+    kind: foundation
+    target: FOUNDATION §7.9 Literature Review System (LRS)
+    evidence: [kc-ai-024, kc-he-018]
+    acceptance_test: "LRS run on a policy-brief-only source set produces a flagged-not-blocked intake row, distinct from a rejected row."
+    risk: Medium — real gap exists, but the mechanism as posed risks duplicating existing checklist machinery or over-policing legitimate non-graded evidence.
+    status: proposed
+    human_decision_needed: true
+
+  - id: schema.prereg-gate-fields
+    title: Frozen-preregistration gate as checkable fields, not a hard block
+    change: >
+      Add protocol_frozen_at, ethics_approved_at (nullable/NOT_APPLICABLE for non-human-subjects
+      work), and a separate registry-administrative-approval timestamp; violations are flagged,
+      not blocked; a passed sequencing check is never read as ethics-substance verification.
+    kind: schema
+    target: FOUNDATION §2.1a Problem before observation / §7.3 Bounded-Judge Law
+    evidence: [kc-he-002, kc-he-004, kc-he-005, kc-he-006, kc-he-007]
+    acceptance_test: "Schema validator accepts a card with ethics_approved_at=NOT_APPLICABLE for a non-human-subjects claim and flags (not rejects) an out-of-sequence pair."
+    risk: High if implemented as a hard universal block — real registries do not hard-block this way; a naive implementation would misdescribe practice and could block legitimate research.
+    status: proposed
+    human_decision_needed: true
+
+  - id: kernel.unverified-verifiability-flag
+    title: "\"Verifiable with no stated procedure\" as a named narrow sub-case"
+    change: >
+      Nest "claims verifiable/checkable with no stated procedure" under the existing
+      vague-attribution disclaimer-catalogue entry as a named narrower sub-case; do not make
+      it a purely mechanical/keyword-triggered check (intent-dependence defeats pure automation).
+    kind: kernel
+    target: FOUNDATION §5 disclaimer catalogue / kernel rule 17
+    evidence: [kc-tourism-006]
+    acceptance_test: "finite_diagnostic sim: a hand-labeled set of 'verifiable'-claim sentences with/without a stated procedure — flag routes to human review, never auto-rejects."
+    risk: Low-medium — well-supported as a narrow addition; main risk is over-automating detection given intent-dependence.
+    status: proposed
+    human_decision_needed: false
+
+  - id: foundation.s1.0-infinity-tension-flag
+    title: Infinity-as-transcendental-ground stays a flagged [Open] tension
+    change: >
+      Keep infinity-as-transcendental-ground logged as an explicitly flagged [Open] tension
+      in FOUNDATION §1.0 rather than building a formal reconciliation section this pass; the
+      flag must note the stance's historical load-bearing role and cross-cultural diffusion.
+    kind: foundation
+    target: FOUNDATION §1.0 Pillars
+    evidence: [kc-ep-005]
+    acceptance_test: "FOUNDATION §1.0 contains an [Open] block naming the rival stance and citing its historical-priority sources, not a silent omission."
+    risk: Medium — defensible default, but two strong historical-priority sources mean a future version may need to revisit rather than leave permanently deferred.
+    status: deferred
+    human_decision_needed: false
+
+  - id: foundation.s1.0-ashari-ontology-analogue
+    title: Partial theology-neutral ontology analogue (2 of 3 constructs)
+    change: >
+      Adopt a theology-neutral structural analogue for "Dependent Identity" (grounding/
+      ontological-dependence theory) and "Directed Selection" (Principle of Sufficient
+      Reason) as FOUNDATION §1.0 ontology primitives; do NOT attempt the same move for
+      "Dependent Order"/kasb or the five registers of faqr as a whole — those stay islam-domain.
+    kind: foundation
+    target: FOUNDATION §1.0 Pillars — ontology
+    evidence: [kc-ep-030, kc-ep-034]
+    acceptance_test: "FOUNDATION §1.0 diff cites grounding-theory and PSR sources directly, with an explicit line excluding kasb/faqr from the analogue."
+    risk: Medium — partial adoption is defensible from the evidence but risks looking arbitrary without the full reasoning carried into the commit message.
+    status: proposed
+    human_decision_needed: true
+
+  # --- clusters drawn from KNOWLEDGE_STATUS_v0.3.md §4 Adopt/Adapt candidates ---
+  - id: foundation.pillars-readout-not-truth
+    title: Pillars §1.0 cross-tradition citation set
+    change: >
+      Cite the cross-tradition convergence set (readout-not-truth, bounded knower, tracking
+      truth, δ_R primitive) directly in FOUNDATION §1.0 alongside the base texts, as
+      independently-arrived-at parallel formulations, not as external validation.
+    kind: foundation
+    target: FOUNDATION §1.0 Pillars — ontology/epistemology/methodology
+    evidence: [kc-base-001, kc-base-005, kc-base-009, kc-base-027, kc-base-032, kc-ep-014, kc-ai-019, kc-islam-008]
+    acceptance_test: "FOUNDATION §1.0 diff adds citation lines for each evidence card id with no wording change to the base doctrine text."
+    risk: Low — citation-only addition, no doctrinal change to the already-adopted base texts.
+    status: proposed
+    human_decision_needed: false
+
+  - id: foundation.non-collapse-table-expand
+    title: Non-Collapse Table Appendix A — cross-tradition rows
+    change: >
+      Add rows to Appendix A Family A (Truth/Warrant) and Family B (Access/Inference) citing
+      the equal-number fallacy, same-shaped-formula-three-tiers, and θ(E) relational-invariance
+      cards as parallel non-collapse cases outside the base corpus.
+    kind: foundation
+    target: FOUNDATION Appendix A Non-Collapse Table
+    evidence: [kc-base-004, kc-base-021, kc-ep-021, kc-ep-023, kc-ep-024, kc-ep-026, kc-ep-027]
+    acceptance_test: "Appendix A table has ≥3 new rows, each with a card id + source DOI, no row lacking a locator (rule 17)."
+    risk: Low — additive table rows; requires foundation.pillars-readout-not-truth land first so terminology matches.
+    status: proposed
+    human_decision_needed: false
+
+  - id: kernel.gate-rules-taxonomy-i-z
+    title: I1–I4/Z1–Z4 injected-infinity/zero taxonomy in kernel gate rules
+    change: >
+      Encode the injected-infinity/zero taxonomy (I1–I4 infinity types, Z1–Z4 zero types) and
+      the Fail-Able Gate Law (Type-P vs Type-U) as named kernel gate-rule categories, alongside
+      the existing contaminated-concept table.
+    kind: kernel
+    target: FOUNDATION §3.3 Kernel gate rules (specified, Dr, untested)
+    evidence: [kc-base-006, kc-base-008, kc-base-016, kc-base-018, kc-base-034]
+    acceptance_test: "Unit tests: 8 synthetic claim cards (one per I/Z type) each raise the correctly-named gate error, not a generic rejection."
+    risk: Medium — currently Dr/untested per FOUNDATION §3.3 itself; shipping without S4 simulation coverage would violate the roadmap's own no-ship-without-measured-effect rule.
+    status: proposed
+    human_decision_needed: false
+
+  - id: foundation.responsibility-arrow-mother-eq
+    title: Mother-equation framing for the Data→Inference→Claim arrow
+    change: >
+      Cite the "record is a translation, never the truth itself" mother-equation framing
+      directly in §2.1b to strengthen the existing Data→Inference→Claim responsibility text.
+    kind: foundation
+    target: FOUNDATION §2.1b Responsibility per arrow
+    evidence: [kc-base-014, kc-base-020]
+    acceptance_test: "§2.1b diff adds the mother-equation citation without altering the existing rule 15/16w wording."
+    risk: Low — citation-only; requires foundation.pillars-readout-not-truth for shared vocabulary.
+    status: proposed
+    human_decision_needed: false
+
+  - id: foundation.honest-edges-agrippa
+    title: Agrippa's trilemma applied to the tier system itself
+    change: >
+      Cite Agrippa's-trilemma-applied-to-the-tier-system and "what this system explicitly does
+      NOT claim" cards in §12 Honest edges, as the named philosophical grounding for why the
+      tier ladder is never treated as self-certifying.
+    kind: foundation
+    target: FOUNDATION §12 Honest edges
+    evidence: [kc-base-025, kc-base-031, kc-base-036]
+    acceptance_test: "§12 diff adds a named subsection citing Agrippa's trilemma with the three evidence card ids as sources."
+    risk: Low — citation-only addition to an already-existing honest-edges section.
+    status: proposed
+    human_decision_needed: false
+
+  - id: schema.verdict-class-vocabulary
+    title: Verdict-class vocabulary field (DERIVED/FORCED/DEFINITIONAL-RELABEL/POSITED/BORROWED-SCALE/OPEN)
+    change: >
+      Add the six-value verdict-class vocabulary as an enum on the `base_relation` field
+      (currently holds/refined_by_later_work/superseded/outdated/open) so a claim card can
+      state which verdict class a derivation belongs to, not only its relation to a base text.
+    kind: schema
+    target: "FOUNDATION field base_relation (holds|refined_by_later_work|superseded|outdated|open)"
+    evidence: [kc-base-038]
+    acceptance_test: "JSON schema validates a claim card with verdict_class=FORCED and rejects an unlisted seventh value."
+    risk: Low-medium — additive enum field; requires foundation.non-collapse-table-expand to land first so Appendix A rows can reference the new field consistently.
+    status: proposed
+    human_decision_needed: false
+
+  - id: foundation.ead-crosswalk
+    title: Existence-Attribution-Disclosure (E-A-D) norm as the named source of §3.1 crosswalk
+    change: >
+      Cite The Readout Condition papers directly as the named source of the existing
+      Five-Questions ⇄ E-A-D ⇄ field crosswalk in §3.1, rather than leaving the crosswalk
+      uncredited.
+    kind: foundation
+    target: FOUNDATION §3.1 Five Questions ⇄ E-A-D ⇄ field crosswalk
+    evidence: [kc-ep-042, kc-aihp-011, kc-ai-001]
+    acceptance_test: "§3.1 diff adds a citation line naming the E-A-D source papers directly above the crosswalk table."
+    risk: Low — citation-only; requires schema.verdict-class-vocabulary land first for consistent field naming.
+    status: proposed
+    human_decision_needed: false
+
+  - id: foundation.possession-constitution-collapse
+    title: Possession-Constitution Collapse / knower-fetishism as the named AI-authorship rule source
+    change: >
+      Cite "Possession-Constitution Collapse" and "knower fetishism" directly as the named
+      source for why an AI-drafted claim card is not disqualified by authorship alone, and for
+      the "channel over face" / provenance-only-metadata rule already implicit in rule 17.
+    kind: foundation
+    target: FOUNDATION §3.2b / §7 Gates & review (AI-authorship rules)
+    evidence: [kc-ep-043, kc-ai-003, kc-ai-004, kc-aihp-013, kc-aihp-014]
+    acceptance_test: "§3.2b/§7 diff cites the named source papers alongside the existing rule-17 provenance-only-channel text."
+    risk: Low-medium — citation-only, but touches AI-authorship rules directly tied to CHANGELOG 0.2.0 gate rule 9 (no AI attribution without permission); requires foundation.ead-crosswalk land first.
+    status: proposed
+    human_decision_needed: false
+
+  - id: foundation.independence-ladder-i0-i5-source
+    title: I0–I5 Independence Ladder named source citation
+    change: >
+      Cite "Rigour Without Infrastructure" directly as the named source of the I0–I5
+      Independence Ladder and the falsifiable-propositions framing already used in §4.2.
+    kind: foundation
+    target: FOUNDATION §4.2 Independence Ladder I0–I5
+    evidence: [kc-ep-052, kc-ai-002]
+    acceptance_test: "§4.2 diff adds the named citation without renumbering or redefining the existing I0–I5 classes."
+    risk: Low — citation-only; requires foundation.ead-crosswalk land first for a consistent citation block.
+    status: proposed
+    human_decision_needed: false
+
+  - id: foundation.k-state-standalone-scholar-cite
+    title: K-state (Standalone Scholar) named-origin citation
+    change: >
+      Cite "The Standalone Scholar" directly as the named origin of the K-state concept and
+      PRESERVE_EXACT dual-track architecture already used in §4.4.
+    kind: foundation
+    target: FOUNDATION §4.4 K-state (Standalone Scholar, PRESERVE_EXACT)
+    evidence: [kc-ep-041, kc-aihp-017, kc-ai-011]
+    acceptance_test: "§4.4 diff adds the named citation without altering the existing K-state/PRESERVE_EXACT definitions."
+    risk: Low — citation-only; requires foundation.independence-ladder-i0-i5-source for a consistent citation block ordering.
+    status: proposed
+    human_decision_needed: false
+
+  - id: docs.blackbox-log-formalize-source
+    title: Blackbox Log named-origin citation
+    change: >
+      Cite "Blackbox Log: daily append-only verbatim voice record" directly as the named
+      artifact §2.3 already formalizes, resolving the currently uncredited Blackbox Note
+      appendix language.
+    kind: docs
+    target: FOUNDATION §2.3 Blackbox Note and R0/R1/R2 internal registers
+    evidence: [kc-ep-047, kc-ai-008]
+    acceptance_test: "§2.3 diff adds the named citation line; PUBLISH_GATE_v1 finding B-10 (Blackbox Log provenance disclosure) cross-referenced, not contradicted."
+    risk: Low — citation-only; must stay consistent with the B-10 disclosed removal+restore correction entry already on record.
+    status: proposed
+    human_decision_needed: false
+
+  - id: foundation.lrs-discovery-loop-extension
+    title: Discovery-loop extension (candidate-set formation precedes evidential adjudication)
+    change: >
+      Extend §7.9 LRS with a discovery-routing stage (human retains the question, AI
+      recursively decomposes and gates candidates; k_epi as the epistemic-multiplication
+      construct) — gated as an extension, not a replacement of the existing LRS pipeline.
+    kind: foundation
+    target: FOUNDATION §7.9 Literature Review System (LRS) / §6 discovery extension
+    evidence: [kc-ep-045, kc-ep-046, kc-ep-048, kc-ep-049, kc-aihp-005, kc-aihp-006, kc-aihp-010, kc-aihp-020]
+    acceptance_test: "S4 finite_diagnostic sim compares LRS precision/recall on the same question set with and without the discovery-routing stage; ship only if recall improves without a precision drop."
+    risk: Medium — DIGEST logs the underlying agenda-paper claim as still open (kc-aihp-008/009 not adopted here); this node only operationalizes the already-'holds'/'adapt' cards, not the open agenda claim.
+    status: proposed
+    human_decision_needed: true
+
+  - id: foundation.disclaimer-catalogue-expand
+    title: Disclaimer catalogue — novelty-scoping and standpoint-disclosure patterns
+    change: >
+      Add reusable disclaimer patterns to §5: "novelty scoped to architecture, not mechanism,"
+      "analytical tool, not verdict," "theoretical/analytical, not empirical," and reflexive
+      practitioner standpoint/conflict-of-interest disclosure.
+    kind: foundation
+    target: FOUNDATION §5 Systematic disclaimer catalogue
+    evidence: [kc-he-013, kc-he-015, kc-he-019, kc-islam-007, kc-islam-016, kc-se-006]
+    acceptance_test: "§5 diff adds 4 named reusable clause patterns, each with a worked source example distinct from foundation.s5-scope-boundary-per-instance's per-instance jurisdiction clause."
+    risk: Low — additive catalogue entries with existing worked examples; distinct scope from the AI-runtime-specific clause in foundation.s5-scope-boundary-per-instance.
+    status: proposed
+    human_decision_needed: false
+
+  - id: schema.claim-card-comparison-evidence-field
+    title: Comparison/evidence-strength field — descriptive-only, no outperformance claim
+    change: >
+      Add a comparison field to the claim-card schema restricted to same/different/cited
+      values (never novel/first/best), and an evidence-strength field distinguishing adjacent/
+      precedent evidence from direct validation of the intervention itself.
+    kind: schema
+    target: FOUNDATION §3.2 Field list (claim card schema)
+    evidence: [kc-se-001, kc-se-002, kc-se-007, kc-se-009]
+    acceptance_test: "JSON schema rejects a claim card whose comparison field contains 'novel'/'first'/'best'/'outperforms'; accepts same/different/cited."
+    risk: Low — directly enforces this repo's own no-novelty-words rule at the schema layer instead of only as prose guidance.
+    status: proposed
+    human_decision_needed: false
+
+  - id: cli.genre-router-layer-confusion-check
+    title: Genre-router layer-confusion diagnostic
+    change: >
+      Add a CLI check that flags when a claim card's genre/register (e.g. jurisprudential)
+      does not match the tool/authority being invoked on it (e.g. astronomical), using the
+      three-layer split (astronomical/jurisprudential/institutional) as the template.
+    kind: cli
+    target: FOUNDATION §6 Genre router
+    evidence: [kc-islam-009]
+    acceptance_test: "CLI run against a synthetic mismatched-layer card set (N=10) flags all mismatches with zero false positives on a matched-layer control set."
+    risk: Low-medium — diagnostic-only (no auto-correction), consistent with the diagnostic-not-optimizing pattern already adopted elsewhere in this DAG.
+    status: proposed
+    human_decision_needed: false
+
+edges:
+  # lineage: done nodes feed the proposed rule-17-adjacent work
+  - {from: eng.lit-manifest-fail-closed, to: kernel.rule17-source-first, kind: requires}
+  - {from: kernel.rule17-source-first, to: kernel.gate-rules-taxonomy-i-z, kind: informs}
+  - {from: kernel.rule17-source-first, to: docs.blackbox-log-formalize-source, kind: informs}
+  - {from: eng.registry-check-ci-safe, to: schema.prereg-gate-fields, kind: informs}
+
+  # pillars must land before citation-only additions that assume its vocabulary
+  - {from: foundation.pillars-readout-not-truth, to: foundation.non-collapse-table-expand, kind: requires}
+  - {from: foundation.pillars-readout-not-truth, to: foundation.responsibility-arrow-mother-eq, kind: requires}
+  - {from: foundation.honest-edges-agrippa, to: foundation.pillars-readout-not-truth, kind: informs}
+  - {from: foundation.s1.0-infinity-tension-flag, to: foundation.pillars-readout-not-truth, kind: conflicts}
+  - {from: foundation.s1.0-ashari-ontology-analogue, to: foundation.pillars-readout-not-truth, kind: informs}
+
+  # non-collapse table -> schema field -> downstream citation chain
+  - {from: foundation.non-collapse-table-expand, to: schema.verdict-class-vocabulary, kind: requires}
+  - {from: schema.verdict-class-vocabulary, to: foundation.ead-crosswalk, kind: requires}
+  - {from: schema.verdict-class-vocabulary, to: schema.claim-card-comparison-evidence-field, kind: informs}
+  - {from: foundation.ead-crosswalk, to: foundation.possession-constitution-collapse, kind: requires}
+  - {from: foundation.ead-crosswalk, to: foundation.independence-ladder-i0-i5-source, kind: requires}
+  - {from: foundation.ead-crosswalk, to: cli.genre-router-layer-confusion-check, kind: informs}
+  - {from: foundation.independence-ladder-i0-i5-source, to: foundation.k-state-standalone-scholar-cite, kind: requires}
+  - {from: foundation.independence-ladder-i0-i5-source, to: rule17.claim-card-certification-open, kind: informs}
+  - {from: foundation.independence-ladder-i0-i5-source, to: foundation.lrs-discovery-loop-extension, kind: requires}
+
+  # kernel red-flag scoping depends on the non-collapse table being current
+  - {from: foundation.non-collapse-table-expand, to: kernel.pcs-red-flag, kind: informs}
+  - {from: kernel.pcs-red-flag, to: kernel.gate-rules-taxonomy-i-z, kind: informs}
+
+  # disclaimer catalogue is a shared dependency for two DIGEST nodes
+  - {from: foundation.disclaimer-catalogue-expand, to: foundation.s5-scope-boundary-per-instance, kind: requires}
+  - {from: foundation.disclaimer-catalogue-expand, to: kernel.unverified-verifiability-flag, kind: informs}
+  - {from: foundation.disclaimer-catalogue-expand, to: foundation.s7.9-intake-tier-flag, kind: informs}
+
+  # LRS/discovery loop feeds the intake-tier-flag question
+  - {from: foundation.lrs-discovery-loop-extension, to: foundation.s7.9-intake-tier-flag, kind: informs}
+
+  # schema prereg gate ties to the responsibility-arrow / problem-before-observation section
+  - {from: foundation.responsibility-arrow-mother-eq, to: schema.prereg-gate-fields, kind: informs}
