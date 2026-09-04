@@ -9,7 +9,7 @@ fetched_at: '2026-09-05'
 metadata_verified: true
 metadata_verified_by: mechanical:europepmc
 metadata_verified_at: '2026-09-05'
-claim_match_verified: false
+claim_match_verified: true
 claim_match_verified_by: route:codex
 claim_match_verified_at: '2026-09-05'
 exact_passage: While 89% of reviews applied formal inclusion/exclusion criteria to
@@ -19,15 +19,15 @@ exact_passage: While 89% of reviews applied formal inclusion/exclusion criteria 
   sources. Without these improvements, gray literature searching will remain inconsistent
   and resource-intensive, with uncertain impact on review quality.
 page_or_locator: Abstract, Results and Conclusion sections (Europe PMC record MED/41862106)
-line_or_paragraph: Results paragraph (sentence on the 89%/19% figures) and the final
-  sentence of the Conclusion paragraph
+line_or_paragraph: char offset 3375 of normalized fetched text (~paragraph 1); verbatim
+  prefix match
 scope: DIRECT_QUOTATION
 evidence_tier: Dr
 independence_class: I3
 who_verified: route:codex (cross-vendor AI; abstract/metadata level, not full text)
   -- see cite-glosa-v0-3-q4-001.i3.json
 verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
-status: METADATA_OK
+status: VERIFIED
 xenon_ledger_ref: null
 disclosure: 'I0 only (same session, not independently checked). Title/authors/journal/year/DOI
   confirmed mechanically via Europe PMC (query DOI:10.1016/j.jclinepi.2026.112222,
@@ -59,7 +59,12 @@ disclosure: 'I0 only (same session, not independently checked). Title/authors/jo
   quoted passage, not full text: Metadata does not contradict title/year/first author
   rules. Passage check found no fetched open text or matching excerpt, so plausibility
   cannot be verified. With only title/metadata and unknown Q4 content, the source
-  cannot be judged to match the claimed direct-quotation support.'
+  cannot be judged to match the claimed direct-quotation support. | I3 route (codex)
+  judged from fetched metadata/abstract + the card''s quoted passage, not full text:
+  Metadata does not contradict title/year/first author rules, and fetched text contains
+  the quoted passage. The source supports Q4 context by showing gray-literature handling
+  and appraisal remain variable, opaque, and lacking standardized guidance, though
+  it does not specifically prove a flag-and-request-tier rule.'
 superseded_by: null
 notes: 'Global North (Australia, La Trobe University), EN, peer-reviewed journal article,
   discipline: epidemiology/evidence synthesis methods. Found via query family: support

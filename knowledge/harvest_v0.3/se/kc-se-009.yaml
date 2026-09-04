@@ -5,17 +5,16 @@ text: The same slide deck proposes shifting the guiding question from AI Governa
   transparent? biased?) to Epistemic Governance (what status does this specific output have? who checks
   it? who certifies it? who is responsible once it is used?), splitting responsibility into an input side
   and an uptake side rather than leaving it solely on the system.
-verbatim: "If hybrid systems increasingly shape the informational environments within which
-  interpretation occurs, then the governance of these systems becomes central to the future of
-  epistemic order."
+verbatim: "It is whether the authority to pre-select, rank, and narrate the visible world is
+  increasingly shifting beyond recognizably human institutions."
 source:
   doi: 10.5281/zenodo.22302410
   title: "ปัญญาประดิษฐ์กับอารยธรรมความรู้: การลืมสถานะการเป็นตัวเลือกและความรับผิดชอบของมนุษย์ในสังคมที่ถูกสื่อกลางด้วยปัญญาประดิษฐ์
     (สไลด์นำเสนอระดับชาติ NIDA, 29 ส.ค. 2569)"
   year: 2026
 fetched_from_url: "https://zenodo.org/api/records/18943971/files/main_knowing_civil.pdf/content"
-locator: p.59 of the PDF currently served at fetched_from_url (section "13. Comparative Synthesis,
-  Crisis Forms, and Conclusion")
+locator: p.2 of the PDF currently served at fetched_from_url ("Present Stakes" paragraph, framework
+  section)
 tier: Open
 base_relation: holds
 base_justification: Consistent with, and a policy-facing restatement of, the base's Bounded-Judge Law
@@ -31,11 +30,14 @@ notes: "VERSION MISMATCH (2026-09-05 spot-check): same issue as kc-se-008 — fe
   text), not the Thai NIDA slide deck named in source.title/doi (22302410). The original Thai
   'AI Governance → Epistemic Governance / ผลลัพธ์นี้มีสถานะอะไร? ใครตรวจ? ใครรับรอง?' slide content could
   not be located in the PDF this URL now returns. Per spot-check task instructions, `verbatim` above
-  is a continuous sentence taken from the PDF actually at fetched_from_url stating a related but
-  weaker point (systems governance matters for epistemic order) — it does NOT state the specific
-  output-status / who-checks / who-certifies / who-is-responsible split this card's title/text
-  describe. This card's title/text/base_relation/glosa_use are left untouched (out of scope for a
-  mechanical verbatim fix) but a human should re-source or downgrade this card. The Input/Uptake
-  Responsibility naming pair from the original (unverifiable) source is not confirmed present in the
-  document actually reachable at fetched_from_url. This record and kc-se-008 were meant to form one
-  two-part argument from the same slide deck; that pairing is now unverified for both."
+  is a continuous sentence taken from the PDF actually at fetched_from_url (from the same 'Present
+  Stakes' paragraph used for kc-se-008's replacement verbatim, since both cards' original passages
+  are unrecoverable there) stating a related but weaker point (authority over what gets shown/
+  narrated is shifting) — it does NOT state the specific output-status / who-checks / who-certifies
+  / who-is-responsible split this card's title/text describe, nor the 'AI Governance → Epistemic
+  Governance' framing. This card's title/text/base_relation/glosa_use are left untouched (out of
+  scope for a mechanical verbatim fix) but a human should re-source or downgrade this card. The
+  Input/Uptake Responsibility naming pair from the original (unverifiable) source is not confirmed
+  present in the document actually reachable at fetched_from_url. This record and kc-se-008 were
+  meant to form one two-part argument from the same slide deck; that pairing is now unverified for
+  both, and both now cite the same substitute source paragraph rather than two distinct slides."

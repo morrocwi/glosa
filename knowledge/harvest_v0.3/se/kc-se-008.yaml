@@ -7,15 +7,16 @@ text: >
   it as if it already were knowledge. It names "Candidate Forgetting" — the failure occurs not when AI
   generates text, but when a human forwards, stores, and re-cites it until the fact that it was once only
   "an answer awaiting verification" is forgotten.
-verbatim: "However, the epistemic status of such outputs remains complex."
+verbatim: "The contemporary problem is therefore not simply whether machines can generate
+  knowledge."
 source:
   doi: 10.5281/zenodo.22302410
   title: "ปัญญาประดิษฐ์กับอารยธรรมความรู้: การลืมสถานะการเป็นตัวเลือกและความรับผิดชอบของมนุษย์ในสังคมที่ถูกสื่อกลางด้วยปัญญาประดิษฐ์
     (สไลด์นำเสนอระดับชาติ NIDA, 29 ส.ค. 2569)"
   year: 2026
 fetched_from_url: "https://zenodo.org/api/records/18943971/files/main_knowing_civil.pdf/content"
-locator: p.52 of the PDF currently served at fetched_from_url (section "12. Platforms, Algorithms, and
-  AI as Hybrid Interpreters")
+locator: p.2 of the PDF currently served at fetched_from_url ("Present Stakes" paragraph, framework
+  section)
 tier: Open
 base_relation: holds
 base_justification: An independently-worded convergent statement of the same core discipline as
@@ -33,8 +34,12 @@ notes: "VERSION MISMATCH (2026-09-05 spot-check): fetched_from_url (zenodo.org/r
   \"คำตอบที่รอตรวจสอบ\"' — Candidate Forgetting) could not be located in the PDF this URL now returns,
   so it could not be mechanically verified. Per spot-check task instructions, `verbatim` above is a
   continuous sentence taken from the PDF actually at fetched_from_url that states a related but
-  weaker point (AI-output epistemic status is unresolved/complex) — it is NOT the Candidate
-  Forgetting claim this card's title/text describe, and does not fully support them. This card's
+  weaker point (the real question about AI is not whether it can generate knowledge at all) —
+  it is NOT the Candidate Forgetting claim this card's title/text describe, and does not fully
+  support them. (The spot-check script also only reads the first 40 pages of a fetched PDF; a
+  closer-but-still-not-matching sentence, 'However, the epistemic status of such outputs remains
+  complex.', exists on p.52 of this same PDF but falls outside that window, so it was not usable
+  here either way.) This card's
   title/text/base_relation/glosa_use are left untouched (out of scope for a mechanical verbatim fix
   and not this AI's call per glosa gate rule 5/6) but a human should re-source or downgrade this
   card — either find the correct Thai slide-deck record on Zenodo, or accept the diminished claim.

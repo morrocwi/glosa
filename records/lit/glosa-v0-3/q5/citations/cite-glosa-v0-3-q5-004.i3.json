@@ -1,14 +1,27 @@
 {
  "vendor": "codex",
  "fetched": {
-  "source": "no-identifier"
+  "source": "europepmc",
+  "title": "Practices and trends in clinical trial registration in the Pan African Clinical Trials Registry (PACTR): a descriptive analysis of registration data.",
+  "authors": [
+   "Ndwandwe DE",
+   "Runeyi S",
+   "Pienaar E",
+   "Mathebula L",
+   "Hohlfeld A",
+   "Wiysonge CS"
+  ],
+  "year": "2022",
+  "container": "",
+  "abstract": "<h4>Background</h4>The Pan African Clinical Trials Registry (PACTR) is a WHO International Clinical Trials Registry Platform primary register, which caters for clinical trials conducted in Africa. PACTR is the first and, at present, the only member of the Network of WHO Primary Registers in Africa. The aim is to describe and report on the trends of trial records registered in PACTR.<h4>Methods</h4>PACTR was established in 2007 as the AIDS, Tuberculosis, and Malaria Clinical Trials Registry. The scope of the registry was then expanded in 2009 to include all diseases. This is a cross-sectional study of trials registered in PACTR from inception to 18 August 2021. A descriptive analysis of the use and trends of the following data fields: study intervention, disease condition, sex of the participants, sample size, ethics, funding and availability of results was conducted using Microsoft Excel.<h4>Results</h4>The number of trials registered has increased year on year, reaching 606 trials registered in 2020. The total number of trials registered at the time of the analysis was 2998. More than half of the trials in the registry (1655 of 2998, ie, 55%) were prospectively registered. Ethical approval was received by 90% (2691 of 2998) of the registered trials. Factorial assignment as an intervention model was in 20% (589 of 2998) of the trials registered. There were 36% (1083 of 2998) completed trials, of which 3% (94 of 1083) had results available in the registry. The most dominant funding source indicated was self-funding in 23% (693 of 2998) of the registered trials, and 55% (1639 of 2998) had no funding.<h4>Conclusion</h4>Registration on PACTR continues to grow; however, our analysis shows that researchers' capacity-building is needed to understand the importance of the registry and how this information informs healthcare decisions. Promoting prospective trial registration remains critical to avoid selective reporting bias to inform research gaps.",
+  "_card_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8796231/"
  },
  "verdict": {
-  "metadata_matches": false,
+  "metadata_matches": true,
   "passage_plausible": false,
   "claim_match": false,
   "bearing": "CONTEXT_ONLY",
-  "reason": "Fetched metadata provides no title/year/first-author check, and the fetched text excerpt is empty. With no text to compare, the exact passage is not plausible under the rule, and the source as evidenced cannot bear on Q5.",
+  "reason": "Metadata matches title/year/first author. However the quoted passage was not found verbatim and no fetched text excerpt is provided to compare, so passage plausibility fails. Without the passage, the evidenced material only broadly concerns PACTR registration/ethics and does not substantiate the card's timing claim.",
   "passage_mechanical": "no open full text fetched; abstract/metadata only"
  },
  "date": "2026-09-04"

@@ -10,15 +10,16 @@
   ],
   "year": 2016,
   "container": "International Journal of Management Reviews",
-  "abstract": " Abstract \n                   This paper suggests how the ‘grey literature’, the diverse and heterogeneous body of material that is made public outside, and not subject to, traditional academic peer‐review processes, can be used to increase the relevance and impact of management and organization studies (MOS). The authors clarify the possibilities by reviewing 140 systematic reviews published in academic and practitioner outlets to answer the following three questions: (i) Why is grey literature excluded from/included in systematic reviews in MOS? (ii) What types of grey material have been included in systematic reviews since guidelines for practice were first established in this discipline? (iii) How is the grey literature treated currently to advance management and organization scholarship and knowledge? This investigation updates previous guidelines for more inclusive systematic reviews that respond to criticisms of current review practices and the needs of evidence‐based management. "
+  "abstract": " Abstract \n                   This paper suggests how the ‘grey literature’, the diverse and heterogeneous body of material that is made public outside, and not subject to, traditional academic peer‐review processes, can be used to increase the relevance and impact of management and organization studies (MOS). The authors clarify the possibilities by reviewing 140 systematic reviews published in academic and practitioner outlets to answer the following three questions: (i) Why is grey literature excluded from/included in systematic reviews in MOS? (ii) What types of grey material have been included in systematic reviews since guidelines for practice were first established in this discipline? (iii) How is the grey literature treated currently to advance management and organization scholarship and knowledge? This investigation updates previous guidelines for more inclusive systematic reviews that respond to criticisms of current review practices and the needs of evidence‐based management. ",
+  "_card_url": "https://api.crossref.org/works/10.1111/ijmr.12102"
  },
  "verdict": {
   "metadata_matches": true,
   "passage_plausible": true,
-  "claim_match": false,
+  "claim_match": true,
   "bearing": "CONTEXT_ONLY",
-  "reason": "Metadata matches fetched Crossref title, year, and first author. The quoted passage is plausible because its substance appears in the fetched abstract despite verbatim-search failure. But the hypothesis is only labeled Q4 with no content, so relevance/support cannot be independently assessed from the provided material.",
-  "passage_mechanical": "no open full text fetched; abstract/metadata only"
+  "reason": "Metadata does not contradict the card. The quoted passage is plausibly the Crossref abstract despite normalization/ellipsis issues. The source bears on grey-literature inclusion and systematic-review treatment, but the provided material does not address undeclared evidence tiers or request-back-to-source rules directly.",
+  "passage_mechanical": "quoted passage NOT found verbatim in fetched open text"
  },
  "date": "2026-09-04"
 }

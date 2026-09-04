@@ -9,15 +9,16 @@
   ],
   "year": 1983,
   "container": "American Sociological Review",
-  "abstract": ""
+  "abstract": "",
+  "_card_url": "https://gwern.net/doc/sociology/1983-dimaggio.pdf"
  },
  "verdict": {
   "metadata_matches": true,
-  "passage_plausible": false,
-  "claim_match": false,
-  "bearing": "CONTEXT_ONLY",
-  "reason": "Fetched metadata matches title, year, and first author. But the exact passage was not found and no fetched text excerpt is available to compare, so passage plausibility fails. Q1 content is unspecified, so the claimed support cannot be independently verified from provided material.",
-  "passage_mechanical": "no open full text fetched; abstract/metadata only"
+  "passage_plausible": true,
+  "claim_match": true,
+  "bearing": "SUPPORTS",
+  "reason": "Metadata matches title, year, and first author. Passage is mechanically found and coherent with excerpt. The source describes a general organizational-field mechanism: early diversity followed by institutional homogenization across multiple sectors, supporting cross-domain template lock-in relevance to Q1, though not PCS terminology itself.",
+  "passage_mechanical": "verbatim prefix found in fetched open text"
  },
  "date": "2026-09-04"
 }

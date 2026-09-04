@@ -6,7 +6,7 @@ search_log_hash: ''
 dialogue_table_ref: records/lit/glosa-v0-3/q3/dialogue_table.md
 neighbour_table_ref: ''
 status: FROZEN
-frozen_at: '2026-09-04T19:19:52.959472+00:00'
+frozen_at: '2026-09-04T19:28:06.953411+00:00'
 supersedes: null
 citations:
 - $schema: citation_card.schema.json
@@ -273,7 +273,11 @@ citations:
     Q3 cannot be confirmed. | I3 route (codex) judged from fetched metadata/abstract + the card''s quoted
     passage, not full text: Fetched metadata is empty, so it does not contradict the card. However, no
     fetched text or matched passage is available to compare against the quoted Thai passage, so passage
-    plausibility and relevance to Q3 cannot be verified from the provided evidence.'
+    plausibility and relevance to Q3 cannot be verified from the provided evidence. | I3 route (codex)
+    judged from fetched metadata/abstract + the card''s quoted passage, not full text: URL matches and
+    empty fetched metadata gives no title/year/author contradiction. But the mechanical passage check
+    found nothing and there is no fetched text excerpt to compare, so the passage cannot be treated as
+    plausible or as evidenced context for the hypothesis.'
   superseded_by: null
   notes: 'Diversity: language=th, source_type=grey_literature, geography_or_institution=Thailand, search_route_or_database="web
     search / direct regulator-site fetch, glosa-v0-3 Q3 scoping pass". dialogue_table_stance: orthogonal.

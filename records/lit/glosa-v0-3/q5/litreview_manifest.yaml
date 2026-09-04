@@ -6,7 +6,7 @@ search_log_hash: ''
 dialogue_table_ref: records/lit/glosa-v0-3/q5/dialogue_table.md
 neighbour_table_ref: ''
 status: FROZEN
-frozen_at: '2026-09-04T19:18:40.907776+00:00'
+frozen_at: '2026-09-04T19:31:25.854664+00:00'
 supersedes: null
 citations:
 - $schema: citation_card.schema.json
@@ -166,7 +166,7 @@ citations:
   metadata_verified_by: mechanical:Europe PMC REST API (europepmc.org/webservices/rest/search?query=PMC6371709)
     -- confirms pmid=30834204, doi=10.4103/picr.picr_163_17, journalTitle=Perspect Clin Res, pubYear=2019
   metadata_verified_at: '2026-09-05'
-  claim_match_verified: false
+  claim_match_verified: true
   claim_match_verified_by: route:codex
   claim_match_verified_at: '2026-09-05'
   exact_passage: A total of N = 1147 studies were registered with CTRI in 2016. Among these, n = 719 (63%)
@@ -176,14 +176,13 @@ citations:
     PMC full-text mirror pmc.ncbi.nlm.nih.gov/articles/PMC6371709/, RESULTS > Demographics, first sentence,
     as rendered on the page fetched 2026-09-05 and re-confirmed verbatim 2026-09-05 via direct curl fetch
     of https://pmc.ncbi.nlm.nih.gov/articles/PMC6371709/'
-  line_or_paragraph: first sentence of the "Demographics" subsection under RESULTS (line 100 of the tag-stripped
-    full-text page as fetched 2026-09-05)
+  line_or_paragraph: char offset 8571 of normalized fetched text (~paragraph 1); verbatim prefix match
   scope: DIRECT_QUOTATION
   evidence_tier: Dr
   independence_class: I3
   who_verified: route:codex (cross-vendor AI; abstract/metadata level, not full text) -- see cite-glosa-v0-3-q5-003.i3.json
   verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
-  status: METADATA_OK
+  status: VERIFIED
   xenon_ledger_ref: null
   disclosure: 'Birajdar et al. 2019, Perspectives in Clinical Research (peer-reviewed, India, PMC open-access
     full text). Fetched and read directly (curl + stdlib HTML stripper, one page kept in memory at a time
@@ -206,7 +205,11 @@ citations:
     or first author. | I3 route (codex) judged from fetched metadata/abstract + the card''s quoted passage,
     not full text: No fetched metadata contradicts title/year/first author, but mechanical metadata is
     no-identifier and no fetched text/excerpt is available; verbatim passage check failed. Without source
-    text, passage plausibility and claimed relevance to Q5 cannot be verified.'
+    text, passage plausibility and claimed relevance to Q5 cannot be verified. | I3 route (codex) judged
+    from fetched metadata/abstract + the card''s quoted passage, not full text: Metadata and quoted passage
+    match the supplied fetched checks. The source bears on prospective versus retrospective registration
+    relative to participant enrolment, so it is relevant to the before-data part of the hypothesis, but
+    it does not address protocol-freeze before ethics approval or registry/IRB timestamp comparability.'
   superseded_by: null
   notes: 'Diversity: language=en, source_type=peer_reviewed_journal_article, geography_or_institution=India
     (Global South), search_route_or_database="web search + Europe PMC REST API, glosa-v0-3 Q5 scoping
@@ -290,7 +293,11 @@ citations:
     Therefore the contextual relevance to Q5 is not evidenced. | I3 route (codex) judged from fetched
     metadata/abstract + the card''s quoted passage, not full text: Fetched metadata provides no title/year/first-author
     check, and the fetched text excerpt is empty. With no text to compare, the exact passage is not plausible
-    under the rule, and the source as evidenced cannot bear on Q5.'
+    under the rule, and the source as evidenced cannot bear on Q5. | I3 route (codex) judged from fetched
+    metadata/abstract + the card''s quoted passage, not full text: Metadata matches title/year/first author.
+    However the quoted passage was not found verbatim and no fetched text excerpt is provided to compare,
+    so passage plausibility fails. Without the passage, the evidenced material only broadly concerns PACTR
+    registration/ethics and does not substantiate the card''s timing claim.'
   superseded_by: null
   notes: 'Diversity: language=en, source_type=peer_reviewed_journal_article, geography_or_institution=Africa
     (Pan-African, Global South), search_route_or_database="web search + Europe PMC REST API, glosa-v0-3
@@ -649,7 +656,7 @@ diversity_audit:
   never_claim_diverse_without_counts: true
 accuracy:
   total_citations: 8
-  verified_count: 6
+  verified_count: 7
   spot_check:
     applicable: true
     proposed_n_percent: 20

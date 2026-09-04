@@ -9,14 +9,15 @@
   ],
   "year": 2019,
   "container": "Globalization and Health",
-  "abstract": ""
+  "abstract": "<h4>Background</h4>In the last decade, efforts have been made in Latin America and the Caribbean to advance in the methodological development of evidence based clinical practice guidelines, among other strategies to improve the health provision of services and indicators.<h4>Objectives</h4>To build an evidence map to show the regional GRADE impact in developing clinical practice guidelines and contrast the results with current needs.<h4>Methods</h4>A systematic literature search was conducted in databases, developer's websites, health ministries, repositories and grey literature. Documents were included when they were evidence based clinical practice guidelines developed in Latin American and Caribbean countries in the last decade. Data from the Global Burden of Disease was used to highlight relevant health conditions.<h4>Results</h4>Nine thousand seven hundred seventy-six documents were retrieved. 98 guidelines, with specific mention of the use of GRADE methodology were identified. 81% of the guidelines were developed within the last 4 years. 68% are from Colombia, 13% from Peru, 9% from Chile, 3% from Argentina and Costa Rica and Brazil, Honduras and Dominican Republic account 1%. 67% were developed for non-communicable diseases, 10% for communicable diseases, 9% for neonatal pathologies and 5% for maternal problems, 1% injuries and 7% other topics (nutrition, oral health).<h4>Discussion</h4>Our findings show a slow and increasing incorporation of the GRADE methodology in the region. GRADE guidelines have been adopted mainly by Colombia and slowly by other countries. Topics for guidelines continue to be comparable to the high-income countries and they don't address communicable diseases or other relevant health issues in the region, such as violence or malnutrition; thus, the evidence based guidelines for clinical practice are only a tool within a complex multimodal strategy to tackle the challenges of the health determinants.<h4>Conclusions</h4>A prioritizing strategy for relevant regional health topics and the use of robust methodological approaches must be in the political agenda in the region. GRADE methods could help to improve the quality and validity of recommendations not only for chronic pathologies but also for ancient and challenging maladies prevalent in the region, as part of a multimodalintersectoral strategy.",
+  "_card_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6380043/fullTextXML"
  },
  "verdict": {
   "metadata_matches": true,
   "passage_plausible": true,
-  "claim_match": false,
+  "claim_match": true,
   "bearing": "CONTEXT_ONLY",
-  "reason": "Metadata and fetched passage align with the card. But the hypothesis is only labeled Q4, with no substantive proposition provided, so I cannot verify that this source bears on it as claimed. Per rule, uncertainty makes claim_match false.",
+  "reason": "Metadata and passage align with fetched material. The passage shows CPGs were classified by evidence-grading methodology, including documents with no specific methodology, which is relevant context for no-declared-tier handling but does not directly support or refute a flag-and-request-tier rule for policy briefs.",
   "passage_mechanical": "verbatim prefix found in fetched open text"
  },
  "date": "2026-09-04"

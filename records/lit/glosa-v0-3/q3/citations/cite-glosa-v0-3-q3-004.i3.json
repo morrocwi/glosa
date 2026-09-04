@@ -3,14 +3,15 @@
  "fetched": {
   "source": "url-fetch",
   "title": "",
-  "abstract": ""
+  "abstract": "",
+  "_card_url": "https://www.dtam.moph.go.th/wp-content/uploads/dtam-plan/AI/Application_Guidelines_AI.pdf"
  },
  "verdict": {
   "metadata_matches": true,
   "passage_plausible": false,
   "claim_match": false,
   "bearing": "CONTEXT_ONLY",
-  "reason": "Fetched metadata is empty, so it does not contradict the card. However, no fetched text or matched passage is available to compare against the quoted Thai passage, so passage plausibility and relevance to Q3 cannot be verified from the provided evidence.",
+  "reason": "URL matches and empty fetched metadata gives no title/year/author contradiction. But the mechanical passage check found nothing and there is no fetched text excerpt to compare, so the passage cannot be treated as plausible or as evidenced context for the hypothesis.",
   "passage_mechanical": "no open full text fetched; abstract/metadata only"
  },
  "date": "2026-09-04"

@@ -9,20 +9,21 @@ fetched_at: '2026-09-05'
 metadata_verified: true
 metadata_verified_by: mechanical:europepmc
 metadata_verified_at: '2026-09-05'
-claim_match_verified: false
+claim_match_verified: true
 claim_match_verified_by: route:codex
 claim_match_verified_at: '2026-09-05'
 exact_passage: Premature closure can therefore be directly observed rather than inferred,
   inviting further research.
 page_or_locator: Abstract, Conclusion section (Europe PMC record MED/42051011)
-line_or_paragraph: final sentence of the Conclusion paragraph of the abstract
+line_or_paragraph: char offset 3458 of normalized fetched text (~paragraph 1); verbatim
+  prefix match
 scope: DIRECT_QUOTATION
 evidence_tier: Dr
 independence_class: I3
 who_verified: route:codex (cross-vendor AI; abstract/metadata level, not full text)
   -- see cite-glosa-v0-3-q1-001.i3.json
 verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
-status: METADATA_OK
+status: VERIFIED
 xenon_ledger_ref: null
 disclosure: 'I0 only (same session, not independently checked). Title/authors/journal/year/DOI
   confirmed mechanically via Europe PMC (query EXT_ID:42051011, resultType=core):
@@ -50,7 +51,12 @@ disclosure: 'I0 only (same session, not independently checked). Title/authors/jo
   passage, not full text: Metadata does not contradict the card. The exact passage
   was not found, and no fetched excerpt around it is available to verify plausibility.
   The title and abstract opening concern premature closure in medical diagnosis, so
-  it is relevant context, but the quoted claim is not independently evidenced here.'
+  it is relevant context, but the quoted claim is not independently evidenced here.
+  | I3 route (codex) judged from fetched metadata/abstract + the card''s quoted passage,
+  not full text: Metadata matches title, year, and first author. The quoted sentence
+  is present and consistent with the abstract conclusion. The source concerns premature
+  closure as a medical diagnostic bias, so it is relevant context for PCS generalization,
+  but the provided material does not support kernel-level cross-domain generalization.'
 superseded_by: null
 notes: 'Global North (authors: Erasmus MC Rotterdam / Qatar affiliations mixed), EN,
   peer-reviewed journal article, discipline: medical education / clinical cognitive

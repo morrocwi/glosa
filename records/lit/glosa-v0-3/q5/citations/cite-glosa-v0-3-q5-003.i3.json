@@ -1,15 +1,28 @@
 {
  "vendor": "codex",
  "fetched": {
-  "source": "no-identifier"
+  "source": "europepmc",
+  "title": "An audit of studies registered retrospectively with the Clinical Trials Registry of India: A one year analysis.",
+  "authors": [
+   "Birajdar AR",
+   "Bose D",
+   "Nishandar TB",
+   "Shende AA",
+   "Thatte UM",
+   "Gogtay NJ"
+  ],
+  "year": "2019",
+  "container": "",
+  "abstract": "<h4>Background</h4>The Clinical Trials Registry of India (CTRI) was launched in July 2007 and will enter its tenth year in 2017. While its mission is to encourage prospective trial registration, CTRI does permit retrospective trial registration. Against this backdrop, the present audit was carried out with the primary objective of assessing the nature and extent of trials retrospectively registered with CTRI.<h4>Methods</h4>All studies registered in the year 2016 were searched within CTRI using the keyword \"CTRI/2016.\" The total number of trials registered in that year, their phase, the source of funding and their nature (Interventional or observational; whether postgraduate theses or otherwise, source of funding (pharmaceutical industry/Government of India/Institute Funded), whether prospectively or retrospectively registered were noted. We also tested for the association between the nature of the trial and retrospective registration using the Chi-square test and generated crude odds ratios with 95% confidence intervals.<h4>Results</h4>A total of 1147 studies were registered in 2016, of which 719 (63%) were retrospectively registered. Interventional studies formed the majority of studies at <i>n</i> = 926 (81%), while postgraduate theses constituted half of the studies (384; 53%). Postgraduate theses (relative to all other studies) were twice as likely to be retrospectively registered (cOR 2.4 [1.8, 3.0], <i>p</i> < 0.0001). Studies funded by the pharmaceutical industry were four times more likely to be registered prospectively relative to nonindustry funded studies (cOR 4.4 [3.2, 5.9], <i>p</i> < 0.0001).<h4>Conclusion</h4>Given that CTRI will be insisting on prospective registration effective April 1, 2018, and as trial registration is an ethical, scientific and moral imperative, prospective registration must always be done as prerequisite to participant protection.",
+  "_card_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6371709/"
  },
  "verdict": {
   "metadata_matches": true,
-  "passage_plausible": false,
-  "claim_match": false,
+  "passage_plausible": true,
+  "claim_match": true,
   "bearing": "CONTEXT_ONLY",
-  "reason": "No fetched metadata contradicts title/year/first author, but mechanical metadata is no-identifier and no fetched text/excerpt is available; verbatim passage check failed. Without source text, passage plausibility and claimed relevance to Q5 cannot be verified.",
-  "passage_mechanical": "no open full text fetched; abstract/metadata only"
+  "reason": "Metadata and quoted passage match the supplied fetched checks. The source bears on prospective versus retrospective registration relative to participant enrolment, so it is relevant to the before-data part of the hypothesis, but it does not address protocol-freeze before ethics approval or registry/IRB timestamp comparability.",
+  "passage_mechanical": "verbatim prefix found in fetched open text"
  },
  "date": "2026-09-04"
 }

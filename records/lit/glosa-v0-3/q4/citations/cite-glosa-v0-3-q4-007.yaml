@@ -18,7 +18,8 @@ exact_passage: Rather than adhering to a single hierarchy of evidence to judge w
   categories and variables, and the weight given to any piece of evidence, must suit
   the policy needs at hand.
 page_or_locator: Abstract (Semantic Scholar Graph API record for DOI 10.1080/02691728.2016.1172365)
-line_or_paragraph: penultimate and final sentences of the abstract
+line_or_paragraph: char offset 2315 of normalized fetched text (~paragraph 1); verbatim
+  prefix match
 scope: DIRECT_QUOTATION
 evidence_tier: Dr
 independence_class: I3
@@ -50,7 +51,12 @@ disclosure: 'I0 only (same session, not independently checked). Title/authors/ve
   quoted passage, not full text: Metadata does not contradict the card. However, the
   fetched text excerpt is empty and the verbatim passage check found nothing, so the
   quoted passage cannot be checked. With only title/metadata and an unspecified Q4
-  hypothesis, the claimed evidential match is uncertain.'
+  hypothesis, the claimed evidential match is uncertain. | I3 route (codex) judged
+  from fetched metadata/abstract + the card''s quoted passage, not full text: Metadata
+  does not contradict the card, and the quoted passage appears in the fetched excerpt.
+  The passage is relevant context on evidence hierarchies versus appropriateness in
+  policy evidence, but it does not address grey-literature intake, undeclared tiers,
+  automatic exclusion/downgrading, or a request-back-to-source rule.'
 superseded_by: null
 notes: 'Global North (LSE / University of Edinburgh), EN, peer-reviewed journal article,
   discipline: philosophy of science / health policy studies. Found via query family:

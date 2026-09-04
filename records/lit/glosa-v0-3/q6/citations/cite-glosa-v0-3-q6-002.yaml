@@ -13,7 +13,7 @@ metadata_verified_by: mechanical:PubMed record cross-check by title/author (Ott 
   pdftotext -l 8 of an open mirrored copy of the same article hosted by nonpartisaneducation.org
   (title, author, and text match the PubMed-indexed article)
 metadata_verified_at: '2026-09-05'
-claim_match_verified: false
+claim_match_verified: true
 claim_match_verified_by: route:codex
 claim_match_verified_at: '2026-09-05'
 exact_passage: In reading articles, authors try to influence understanding using language
@@ -23,15 +23,15 @@ page_or_locator: Ott, J.S., 'Hedging, Weasel Words, and Truthiness in Scientific
   (mirrored PDF, nonpartisaneducation.org/Review/Resources/Ott1.pdf), page 1, re-extracted
   and re-confirmed 2026-09-05 via direct curl + `pdftotext -l 1` (4-page PDF; passage
   is on page 1, second paragraph of the Introduction)
-line_or_paragraph: lines 21-24 of the `pdftotext -l 1` extraction (verified verbatim
-  against the freshly downloaded PDF)
+line_or_paragraph: char offset 826 of normalized fetched text (~paragraph 1); verbatim
+  prefix match
 scope: DIRECT_QUOTATION
 evidence_tier: Dr
 independence_class: I3
 who_verified: route:codex (cross-vendor AI; abstract/metadata level, not full text)
   -- see cite-glosa-v0-3-q6-002.i3.json
 verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
-status: METADATA_OK
+status: VERIFIED
 xenon_ledger_ref: null
 disclosure: 'Ott, J.S., ''Hedging, Weasel Words, and Truthiness in Scientific Writing''
   (PMID 30607107; EN, peer-reviewed-indexed, read via an open mirrored PDF since direct
@@ -58,7 +58,12 @@ disclosure: 'Ott, J.S., ''Hedging, Weasel Words, and Truthiness in Scientific Wr
   the card''s quoted passage, not full text: Mechanical metadata has no identifier
   details to verify the card, and the fetched text excerpt is empty. The quoted passage
   was not found, so plausibility and claim bearing cannot be confirmed from the provided
-  evidence.'
+  evidence. | I3 route (codex) judged from fetched metadata/abstract + the card''s
+  quoted passage, not full text: No title or first-author contradiction appears in
+  the supplied text; passage is mechanically found and consistent with the excerpt.
+  The passage bears on the hypothesis by linking hedging/weasel wording to unverifiable
+  statements and reader misdirection, supporting a red-flag concern, though not the
+  exact proposed rule wording.'
 superseded_by: null
 notes: 'Diversity: language=en, source_type=peer_reviewed, geography_or_institution=US,
   search_route_or_database="web search / direct fetch, glosa-v0-3 Q6 scoping pass".

@@ -14,11 +14,16 @@
 
 **Why:** `sim/v0.3/` currently holds the S4 prototype harness, the 180-card synthetic corpus, and
 `report.md` — a real, checkable evaluation artifact — but it sits outside `tests/`, which
-`REPO_SPEC_v0.5.md` §9 names as the repo's actual test suite location (`tests/test_kernel.py`,
-`tests/test_registry.py`, `tests/test_install.py` already there, 84-test suite per
-`ARCHITECTURE_REVIEW_v1.md`). A finite, printed, regenerable corpus that measures kernel behavior
-belongs in the test suite's own directory, not in a versioned `sim/vX.Y/` scratch area that a
-future minor version would otherwise leave orphaned once `v0.4` scratch work starts.
+`REPO_SPEC_v0.5.md` **§8** (corrected 2026-09-05 — the test-suite listing sits under "## 8.
+Callable layer," not "## 9.," which is titled "`scripts/`, `tools/` — repo maintenance and
+rendering") names as the repo's actual test suite location. **Correction:** `REPO_SPEC_v0.5.md` §8
+names only `tests/test_kernel.py` ("84 tests... One file") — `tests/test_registry.py` and
+`tests/test_install.py` do exist on disk today but are not named anywhere in `REPO_SPEC_v0.5.md`
+(confirmed by full-file grep, zero hits); the earlier draft's claim that v0.5 "already there[s]"
+them was a fabricated citation, dropped here per rule 17 source-first. A finite, printed,
+regenerable corpus that measures kernel behavior belongs in the test suite's own directory, not in
+a versioned `sim/vX.Y/` scratch area that a future minor version would otherwise leave orphaned
+once `v0.4` scratch work starts.
 
 **Diff:**
 ```
@@ -207,11 +212,22 @@ schema-owning fixer, not edited by this patch itself:
 
 ```
 schema/claim_card.schema.json       # + comparison, evidence_strength, verdict_class,
-                                     # gate_fail_taxonomy (all additive/optional)
+                                     # gate_fail_taxonomy, gate_construction_status,
+                                     # five_questions.seen.ai_assisted_fields (all additive/optional)
 schema/citation_card.schema.json    # no field change this pass (K-C1/K-C3 are kernel-only
-                                     # cross-object checks reading existing fields)
-templates/knowledge/litreview_manifest.yaml   # + sources_found[].intake_tier /
-                                     # intake_tier_reason / global_south_exempt,
+                                     # cross-object checks reading existing fields -- confirmed:
+                                     # the earlier draft's `locators` field was dropped, see
+                                     # FOUNDATION_v0.6_PATCH.md K-C1 correction, 2026-09-05)
+schema/litreview_manifest.schema.json   # NEW this pass (corrected 2026-09-05 -- omitted from the
+                                     # original draft even though schema/README.md states schema/
+                                     # is the only place a field's shape may be defined): +
+                                     # citations[].intake_tier / intake_tier_reason /
+                                     # global_south_exempt, + discovery_routing block (both
+                                     # additive to the existing citations[] item shape)
+templates/knowledge/litreview_manifest.yaml   # + citations[].intake_tier / intake_tier_reason /
+                                     # global_south_exempt (corrected 2026-09-05 from
+                                     # `sources_found[]`, which does not exist on this file --
+                                     # see FOUNDATION_v0.6_PATCH.md §4 correction),
                                      # + discovery_routing block (both additive)
 ```
 
@@ -246,3 +262,20 @@ templates/knowledge/litreview_manifest.yaml   # + sources_found[].intake_tier /
    file path) is surfaced by the generator (FOUNDATION §7.9's public/private boundary rule).
 6. An I2+ (cross-vendor or human) check of this repo-spec patch has not run — Dr, single-pass,
    same-model, per this session's own maker-checker-gate finding.
+
+---
+
+## Review response (2026-09-05)
+
+Applies the upheld MUST findings from `design/ARCH_REVIEW_v0.6.json` that target this file. Tier:
+`finite_diagnostic` (verified directly against `design/REPO_SPEC_v0.5.md` and the schema files on
+disk). No independent second-pass check has run on this response yet.
+
+| MUST finding | What changed | Where |
+|---|---|---|
+| consistency: §1 cites `REPO_SPEC_v0.5.md` §9 as the source of the test-suite listing (it's actually §8; §9 is "`scripts/`, `tools/`") and fabricates that v0.5 already names `tests/test_registry.py`/`tests/test_install.py` (it names only `tests/test_kernel.py`) | Corrected the section reference to §8 and dropped the false claim about test_registry.py/test_install.py being already named in v0.5 | §1 "Why" paragraph |
+| consistency: §6 repeats `FOUNDATION_v0.6_PATCH.md`'s `sources_found[]` field-path error and omits `schema/litreview_manifest.schema.json` from the list of touched files, even though `schema/README.md` states schema/ is the sole one-fact-one-home for field shape | Retargeted the `litreview_manifest.yaml` line to `citations[].intake_tier` / `intake_tier_reason` / `global_south_exempt`; added `schema/litreview_manifest.schema.json` as its own touched-file entry; noted the K-C1 `locators` field was dropped (see the companion FOUNDATION patch) so `citation_card.schema.json`'s "no field change" line is now confirmed rather than incidentally true | §6 Schema files touched |
+
+**Not applied this pass:** the SHOULD-level findings not named as one-line clarifications in this
+task's scope (the stale "84-test suite" figure vs. today's actual count, and the incomplete
+`prototypes/` file count in §1's diff listing) are left open for a future pass.

@@ -57,7 +57,11 @@ disclosure: 'I0 only (same session, not independently checked). Title/authors/jo
   passage check align with the supplied material. The excerpt plausibly concerns evidence-to-policy
   guidance in ECOWAS/West Africa. But the hypothesis is only labeled Q4 with no content,
   so the source''s relevance to the hypothesis cannot be independently judged; uncertain
-  claim_match is false.'
+  claim_match is false. | I3 route (codex) judged from fetched metadata/abstract +
+  the card''s quoted passage, not full text: Metadata and quoted passage match the
+  supplied checks. The passage is relevant background on broad forms of evidence in
+  health policymaking, but it does not address undeclared evidence tiers, grey-literature
+  intake, automatic downgrading, or request-back-to-source rules.'
 superseded_by: null
 notes: 'Global South (Nigeria / West Africa, ECOWAS/WAHO), EN, peer-reviewed journal
   article, open access (CC BY), discipline: health policy / evidence-to-policy guidance

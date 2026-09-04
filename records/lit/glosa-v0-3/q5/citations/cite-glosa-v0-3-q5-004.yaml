@@ -60,7 +60,12 @@ disclosure: 'Ndwandwe et al. 2022, BMJ Open (peer-reviewed, Africa/PACTR, PMC op
   fetched metadata/abstract + the card''s quoted passage, not full text: Fetched metadata
   provides no title/year/first-author check, and the fetched text excerpt is empty.
   With no text to compare, the exact passage is not plausible under the rule, and
-  the source as evidenced cannot bear on Q5.'
+  the source as evidenced cannot bear on Q5. | I3 route (codex) judged from fetched
+  metadata/abstract + the card''s quoted passage, not full text: Metadata matches
+  title/year/first author. However the quoted passage was not found verbatim and no
+  fetched text excerpt is provided to compare, so passage plausibility fails. Without
+  the passage, the evidenced material only broadly concerns PACTR registration/ethics
+  and does not substantiate the card''s timing claim.'
 superseded_by: null
 notes: 'Diversity: language=en, source_type=peer_reviewed_journal_article, geography_or_institution=Africa
   (Pan-African, Global South), search_route_or_database="web search + Europe PMC REST

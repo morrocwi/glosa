@@ -11,7 +11,7 @@ metadata_verified_by: mechanical:Europe PMC REST API (europepmc.org/webservices/
   -- confirms pmid=30834204, doi=10.4103/picr.picr_163_17, journalTitle=Perspect Clin
   Res, pubYear=2019
 metadata_verified_at: '2026-09-05'
-claim_match_verified: false
+claim_match_verified: true
 claim_match_verified_by: route:codex
 claim_match_verified_at: '2026-09-05'
 exact_passage: A total of N = 1147 studies were registered with CTRI in 2016. Among
@@ -22,15 +22,15 @@ page_or_locator: 'Birajdar AR et al., "An audit of studies registered retrospect
   Res 2019;10(1):26-30 (doi:10.4103/picr.picr_163_17), PMC full-text mirror pmc.ncbi.nlm.nih.gov/articles/PMC6371709/,
   RESULTS > Demographics, first sentence, as rendered on the page fetched 2026-09-05
   and re-confirmed verbatim 2026-09-05 via direct curl fetch of https://pmc.ncbi.nlm.nih.gov/articles/PMC6371709/'
-line_or_paragraph: first sentence of the "Demographics" subsection under RESULTS (line
-  100 of the tag-stripped full-text page as fetched 2026-09-05)
+line_or_paragraph: char offset 8571 of normalized fetched text (~paragraph 1); verbatim
+  prefix match
 scope: DIRECT_QUOTATION
 evidence_tier: Dr
 independence_class: I3
 who_verified: route:codex (cross-vendor AI; abstract/metadata level, not full text)
   -- see cite-glosa-v0-3-q5-003.i3.json
 verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
-status: METADATA_OK
+status: VERIFIED
 xenon_ledger_ref: null
 disclosure: 'Birajdar et al. 2019, Perspectives in Clinical Research (peer-reviewed,
   India, PMC open-access full text). Fetched and read directly (curl + stdlib HTML
@@ -58,7 +58,12 @@ disclosure: 'Birajdar et al. 2019, Perspectives in Clinical Research (peer-revie
   not full text: No fetched metadata contradicts title/year/first author, but mechanical
   metadata is no-identifier and no fetched text/excerpt is available; verbatim passage
   check failed. Without source text, passage plausibility and claimed relevance to
-  Q5 cannot be verified.'
+  Q5 cannot be verified. | I3 route (codex) judged from fetched metadata/abstract
+  + the card''s quoted passage, not full text: Metadata and quoted passage match the
+  supplied fetched checks. The source bears on prospective versus retrospective registration
+  relative to participant enrolment, so it is relevant to the before-data part of
+  the hypothesis, but it does not address protocol-freeze before ethics approval or
+  registry/IRB timestamp comparability.'
 superseded_by: null
 notes: 'Diversity: language=en, source_type=peer_reviewed_journal_article, geography_or_institution=India
   (Global South), search_route_or_database="web search + Europe PMC REST API, glosa-v0-3

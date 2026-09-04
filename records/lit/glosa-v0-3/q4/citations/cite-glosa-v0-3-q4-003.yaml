@@ -9,7 +9,7 @@ fetched_at: '2026-09-05'
 metadata_verified: true
 metadata_verified_by: mechanical:europepmc
 metadata_verified_at: '2026-09-05'
-claim_match_verified: false
+claim_match_verified: true
 claim_match_verified_by: route:codex
 claim_match_verified_at: '2026-09-05'
 exact_passage: 'The complete text evidence-based CPGs included was then classified
@@ -19,7 +19,7 @@ exact_passage: 'The complete text evidence-based CPGs included was then classifi
   methodology.'
 page_or_locator: Materials and methods, subsection "Data extraction, synthesis and
   assessment" (Europe PMC fullTextXML, PMC6380043)
-line_or_paragraph: char offset 9860 of normalized fetched text (~paragraph 1); verbatim
+line_or_paragraph: char offset 9862 of normalized fetched text (~paragraph 1); verbatim
   prefix match
 scope: DIRECT_QUOTATION
 evidence_tier: Dr
@@ -27,7 +27,7 @@ independence_class: I3
 who_verified: route:codex (cross-vendor AI; abstract/metadata level, not full text)
   -- see cite-glosa-v0-3-q4-003.i3.json
 verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
-status: METADATA_OK
+status: VERIFIED
 xenon_ledger_ref: null
 disclosure: 'I0 only (same session, not independently checked). Title/authors/journal/year/DOI/open-access
   status confirmed mechanically via Europe PMC (query PMCID:PMC6380043, resultType=core;
@@ -57,7 +57,12 @@ disclosure: 'I0 only (same session, not independently checked). Title/authors/jo
   not full text: Metadata and fetched passage align with the card. But the hypothesis
   is only labeled Q4, with no substantive proposition provided, so I cannot verify
   that this source bears on it as claimed. Per rule, uncertainty makes claim_match
-  false.'
+  false. | I3 route (codex) judged from fetched metadata/abstract + the card''s quoted
+  passage, not full text: Metadata and passage align with fetched material. The passage
+  shows CPGs were classified by evidence-grading methodology, including documents
+  with no specific methodology, which is relevant context for no-declared-tier handling
+  but does not directly support or refute a flag-and-request-tier rule for policy
+  briefs.'
 superseded_by: null
 notes: 'Global South (Colombia / Latin America and Caribbean), EN, peer-reviewed journal
   article, open access (CC BY), discipline: health policy / clinical guideline methodology.

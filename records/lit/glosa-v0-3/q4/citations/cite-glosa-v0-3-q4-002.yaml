@@ -9,20 +9,21 @@ fetched_at: '2026-09-05'
 metadata_verified: true
 metadata_verified_by: mechanical:europepmc
 metadata_verified_at: '2026-09-05'
-claim_match_verified: false
+claim_match_verified: true
 claim_match_verified_by: route:codex
 claim_match_verified_at: '2026-09-05'
 exact_passage: GRADE specifies four categories-high, moderate, low, and very low-that
   are applied to a body of evidence, not to individual studies.
 page_or_locator: Abstract (Europe PMC record MED/21208779)
-line_or_paragraph: second sentence of the abstract
+line_or_paragraph: char offset 2006 of normalized fetched text (~paragraph 1); verbatim
+  prefix match
 scope: DIRECT_QUOTATION
 evidence_tier: Dr
 independence_class: I3
 who_verified: route:codex (cross-vendor AI; abstract/metadata level, not full text)
   -- see cite-glosa-v0-3-q4-002.i3.json
 verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
-status: METADATA_OK
+status: VERIFIED
 xenon_ledger_ref: null
 disclosure: 'I0 only (same session, not independently checked). Title/authors/journal/year/DOI
   confirmed mechanically via Europe PMC (query DOI:10.1016/j.jclinepi.2010.07.015,
@@ -54,7 +55,12 @@ disclosure: 'I0 only (same session, not independently checked). Title/authors/jo
   Metadata does not contradict the card on title/year/first author. But the mechanical
   passage check found nothing and no fetched text excerpt is available, so the quoted
   passage cannot be verified. With no confirmed passage and unclear hypothesis bearing,
-  claim_match is false.'
+  claim_match is false. | I3 route (codex) judged from fetched metadata/abstract +
+  the card''s quoted passage, not full text: Metadata and quoted passage match the
+  fetched record. The passage explains GRADE evidence-quality categories and their
+  application to bodies of evidence, giving relevant context for the hypothesis/falsifier
+  about declared tiers, but it does not address grey-literature policy briefs or automatic
+  exclusion/downgrading.'
 superseded_by: null
 notes: 'Global North (multi-country GRADE working group authors), EN, peer-reviewed
   methods paper, discipline: evidence-based medicine / clinical epidemiology. Found

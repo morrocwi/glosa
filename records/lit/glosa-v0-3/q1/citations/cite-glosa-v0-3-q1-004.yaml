@@ -17,8 +17,8 @@ exact_passage: The formal, bureaucratic ones trail behind them the entourage of 
   organizations run smoothly.
 page_or_locator: Introduction, "To Classify Is Human," p.3 (Bowker & Star, Sorting
   Things Out, MIT Press, 1999)
-line_or_paragraph: 2nd paragraph of the Introduction section, sentence following the
-  opening claim that classifications are "ordinarily invisible"
+line_or_paragraph: char offset 5446 of normalized fetched text (~paragraph 1); verbatim
+  prefix match
 scope: DIRECT_QUOTATION
 evidence_tier: Dr
 independence_class: I3
@@ -52,7 +52,12 @@ disclosure: 'I0 only (same session, not independently checked). Title/authors/pu
   full text: Metadata matches title, first author, and year. The quoted passage was
   not found, and no fetched text excerpt is available to compare, so passage plausibility
   fails. Hypothesis Q1 is unspecified here, so the source’s evidenced relation to
-  the claimed support cannot be verified.'
+  the claimed support cannot be verified. | I3 route (codex) judged from fetched metadata/abstract
+  + the card''s quoted passage, not full text: Metadata and passage check out. The
+  excerpt and abstract show classifications as cross-domain infrastructures with organizational
+  effects, but they do not evidence premature closure, categories fixed before sufficient
+  evidence, or downstream reasoning treating them as settled. Relevant context, not
+  support for PCS as claimed.'
 superseded_by: null
 notes: 'Global North (authors at University of Illinois / UC San Diego at time of
   writing), EN, peer-reviewed academic monograph (MIT Press, "Inside Technology" series),

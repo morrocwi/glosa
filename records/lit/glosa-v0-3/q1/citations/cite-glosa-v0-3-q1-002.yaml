@@ -9,7 +9,7 @@ fetched_at: '2026-09-05'
 metadata_verified: true
 metadata_verified_by: mechanical:crossref
 metadata_verified_at: '2026-09-05'
-claim_match_verified: false
+claim_match_verified: true
 claim_match_verified_by: route:codex
 claim_match_verified_at: '2026-09-05'
 exact_passage: In the initialstages of theirlife cycle, organizationalfields display
@@ -17,14 +17,15 @@ exact_passage: In the initialstages of theirlife cycle, organizationalfields dis
   however, there is an inexorable push towards homogenization.
 page_or_locator: p.148 (American Sociological Review 48(2):147-160, 1983 pagination);
   text section beginning "We begin by asking why there is such..."
-line_or_paragraph: 2nd paragraph of the article body, immediately after the abstract
+line_or_paragraph: char offset 5122 of normalized fetched text (~paragraph 1); verbatim
+  prefix match
 scope: DIRECT_QUOTATION
 evidence_tier: Dr
 independence_class: I3
 who_verified: route:codex (cross-vendor AI; abstract/metadata level, not full text)
   -- see cite-glosa-v0-3-q1-002.i3.json
 verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
-status: METADATA_OK
+status: VERIFIED
 xenon_ledger_ref: null
 disclosure: 'I0 only (same session, not independently checked). Title/authors/journal/year/DOI
   confirmed mechanically via Crossref bibliographic search (query "Iron Cage Revisited
@@ -55,7 +56,12 @@ disclosure: 'I0 only (same session, not independently checked). Title/authors/jo
   metadata matches title, year, and first author. But the exact passage was not found
   and no fetched text excerpt is available to compare, so passage plausibility fails.
   Q1 content is unspecified, so the claimed support cannot be independently verified
-  from provided material.'
+  from provided material. | I3 route (codex) judged from fetched metadata/abstract
+  + the card''s quoted passage, not full text: Metadata matches title, year, and first
+  author. Passage is mechanically found and coherent with excerpt. The source describes
+  a general organizational-field mechanism: early diversity followed by institutional
+  homogenization across multiple sectors, supporting cross-domain template lock-in
+  relevance to Q1, though not PCS terminology itself.'
 superseded_by: null
 notes: 'Global North (Yale University, authors DiMaggio & Powell), EN, peer-reviewed
   journal article (American Sociological Review), foundational/highly-cited text in

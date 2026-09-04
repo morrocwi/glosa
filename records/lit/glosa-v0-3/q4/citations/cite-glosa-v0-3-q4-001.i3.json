@@ -10,15 +10,16 @@
   ],
   "year": 2026,
   "container": "Journal of Clinical Epidemiology",
-  "abstract": ""
+  "abstract": "<h4>Background and objectives</h4>Gray literature studies are materials produced outside traditional academic or commercial publishing such as theses, conference proceedings, technical reports, and government documents. Gray literature is often underrepresented in systematic reviews due to limited accessibility and lack of standardized search methodologies. Despite its potential to reduce publication bias and broaden evidence bases, there is no universally accepted guidance for identifying or appraising gray literature. This study aimed to inform methodological guidance for incorporating gray literature into evidence synthesis.<h4>Methods</h4>We conducted a descriptive cross-sectional analysis of 100 systematic reviews published between January 2022 and June 2025 in high-impact journals across public health, education, health services, and social care. Reviews were identified via PubMed. Two independent reviewers used a piloted data extraction form to collect information on gray literature identification, extraction, appraisal, and synthesis. Descriptive statistics were used for categorical variables, and thematic content analysis was employed to explore reporting practices. Findings informed the development of a structured, step-by-step guidance and checklist for gray literature identification, appraisal, extraction, and reporting.<h4>Results</h4>Systematic reviews primarily originated from medical and health sciences disciplines. The most common gray literature search strategies were hand searching (58%), use of organizational or government websites (42%), and Google Scholar (39%). While 89% of reviews applied formal inclusion/exclusion criteria to gray literature, only 19% extracted gray literature separately from peer-reviewed sources. The influence of gray literature on review conclusions varied substantially.<h4>Conclusion</h4>Gray literature searching in systematic reviews remains highly variable and often lacks transparency. There is an urgent need for standardized guidance, greater integration of automation tools, and improved researcher training in accessing less visible sources. Without these improvements, gray literature searching will remain inconsistent and resource-intensive, with uncertain impact on review quality.",
+  "_card_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI:10.1016/j.jclinepi.2026.112222&resultType=core&format=json"
  },
  "verdict": {
   "metadata_matches": true,
-  "passage_plausible": false,
-  "claim_match": false,
-  "bearing": "CONTEXT_ONLY",
-  "reason": "Metadata does not contradict title/year/first author rules. Passage check found no fetched open text or matching excerpt, so plausibility cannot be verified. With only title/metadata and unknown Q4 content, the source cannot be judged to match the claimed direct-quotation support.",
-  "passage_mechanical": "no open full text fetched; abstract/metadata only"
+  "passage_plausible": true,
+  "claim_match": true,
+  "bearing": "SUPPORTS",
+  "reason": "Metadata does not contradict title/year/first author rules, and fetched text contains the quoted passage. The source supports Q4 context by showing gray-literature handling and appraisal remain variable, opaque, and lacking standardized guidance, though it does not specifically prove a flag-and-request-tier rule.",
+  "passage_mechanical": "verbatim prefix found in fetched open text"
  },
  "date": "2026-09-04"
 }

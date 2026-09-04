@@ -9,21 +9,22 @@ fetched_at: '2026-09-05'
 metadata_verified: true
 metadata_verified_by: manual:I0
 metadata_verified_at: '2026-09-05'
-claim_match_verified: false
+claim_match_verified: true
 claim_match_verified_by: route:codex
 claim_match_verified_at: '2026-09-05'
 exact_passage: If item is secondary material (e.g. a policy brief of a technical report)
   refer to the original. Is it an accurate, unbiased interpretation or analysis?
 page_or_locator: AACODS checklist, "Accuracy" section (PDF, page 1-2 per pdftotext
   -l 8)
-line_or_paragraph: lines 61-62 of the pdftotext -l 8 extraction
+line_or_paragraph: char offset 2029 of normalized fetched text (~paragraph 1); verbatim
+  prefix match
 scope: DIRECT_QUOTATION
 evidence_tier: Dr
 independence_class: I3
 who_verified: route:codex (cross-vendor AI; abstract/metadata level, not full text)
   -- see cite-glosa-v0-3-q4-005.i3.json
 verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
-status: METADATA_OK
+status: VERIFIED
 xenon_ledger_ref: null
 disclosure: 'I0 only (same session, not independently checked). No DOI exists for
   this checklist; identifier is the official Flinders Academic Commons repository
@@ -48,7 +49,13 @@ disclosure: 'I0 only (same session, not independently checked). No DOI exists fo
   card''s quoted passage, not full text: finite_diagnostic: Metadata is blank, so
   no title/year/first-author contradiction. Passage cannot be checked because fetched
   content is raw PDF/compressed text, not usable extracted text; verbatim search failed.
-  With no verified passage and unclear Q4 bearing, claim_match is false.'
+  With no verified passage and unclear Q4 bearing, claim_match is false. | I3 route
+  (codex) judged from fetched metadata/abstract + the card''s quoted passage, not
+  full text: No fetched metadata contradicts title/year/first author. The quoted passage
+  is mechanically found in the fetched text. It is relevant context because it shows
+  a grey-literature appraisal checklist treating policy briefs as secondary material
+  requiring referral to the original, but it does not by itself establish the proposed
+  glosa rule.'
 superseded_by: null
 notes: 'Global North (Australia, Flinders University), EN, grey/institutional checklist
   (not peer-reviewed journal article, itself grey literature), discipline: library/information

@@ -9,7 +9,7 @@ fetched_at: '2026-09-05'
 metadata_verified: true
 metadata_verified_by: mechanical:crossref
 metadata_verified_at: '2026-09-05'
-claim_match_verified: false
+claim_match_verified: true
 claim_match_verified_by: route:codex
 claim_match_verified_at: '2026-09-05'
 exact_passage: This paper suggests how the 'grey literature', the diverse and heterogeneous
@@ -26,7 +26,7 @@ independence_class: I3
 who_verified: route:codex (cross-vendor AI; abstract/metadata level, not full text)
   -- see cite-glosa-v0-3-q4-006.i3.json
 verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
-status: METADATA_OK
+status: VERIFIED
 xenon_ledger_ref: null
 disclosure: 'I0 only (same session, not independently checked). Title/authors/journal/year/DOI
   confirmed mechanically via Crossref (https://api.crossref.org/works/10.1111/ijmr.12102):
@@ -52,7 +52,12 @@ disclosure: 'I0 only (same session, not independently checked). Title/authors/jo
   full text: Metadata matches fetched Crossref title, year, and first author. The
   quoted passage is plausible because its substance appears in the fetched abstract
   despite verbatim-search failure. But the hypothesis is only labeled Q4 with no content,
-  so relevance/support cannot be independently assessed from the provided material.'
+  so relevance/support cannot be independently assessed from the provided material.
+  | I3 route (codex) judged from fetched metadata/abstract + the card''s quoted passage,
+  not full text: Metadata does not contradict the card. The quoted passage is plausibly
+  the Crossref abstract despite normalization/ellipsis issues. The source bears on
+  grey-literature inclusion and systematic-review treatment, but the provided material
+  does not address undeclared evidence tiers or request-back-to-source rules directly.'
 superseded_by: null
 notes: 'Global North (UK/Ireland: Surrey, Cranfield, Maynooth), EN, peer-reviewed
   journal article, discipline: management and organization studies / systematic review

@@ -17,15 +17,16 @@
   ],
   "year": 2011,
   "container": "Journal of Clinical Epidemiology",
-  "abstract": ""
+  "abstract": "This article introduces the approach of GRADE to rating quality of evidence. GRADE specifies four categories-high, moderate, low, and very low-that are applied to a body of evidence, not to individual studies. In the context of a systematic review, quality reflects our confidence that the estimates of the effect are correct. In the context of recommendations, quality reflects our confidence that the effect estimates are adequate to support a particular recommendation. Randomized trials begin as high-quality evidence, observational studies as low quality. \"Quality\" as used in GRADE means more than risk of bias and so may also be compromised by imprecision, inconsistency, indirectness of study results, and publication bias. In addition, several factors can increase our confidence in an estimate of effect. GRADE provides a systematic approach for considering and reporting each of these factors. GRADE separates the process of assessing quality of evidence from the process of making recommendations. Judgments about the strength of a recommendation depend on more than just the quality of evidence.",
+  "_card_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI:10.1016/j.jclinepi.2010.07.015&resultType=core&format=json"
  },
  "verdict": {
   "metadata_matches": true,
-  "passage_plausible": false,
-  "claim_match": false,
+  "passage_plausible": true,
+  "claim_match": true,
   "bearing": "CONTEXT_ONLY",
-  "reason": "Metadata does not contradict the card on title/year/first author. But the mechanical passage check found nothing and no fetched text excerpt is available, so the quoted passage cannot be verified. With no confirmed passage and unclear hypothesis bearing, claim_match is false.",
-  "passage_mechanical": "no open full text fetched; abstract/metadata only"
+  "reason": "Metadata and quoted passage match the fetched record. The passage explains GRADE evidence-quality categories and their application to bodies of evidence, giving relevant context for the hypothesis/falsifier about declared tiers, but it does not address grey-literature policy briefs or automatic exclusion/downgrading.",
+  "passage_mechanical": "verbatim prefix found in fetched open text"
  },
  "date": "2026-09-04"
 }

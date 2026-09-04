@@ -10,7 +10,7 @@ metadata_verified: true
 metadata_verified_by: mechanical:curl+html-strip (Cofact, Thai civic fact-checking
   platform, official how-to page fetched directly)
 metadata_verified_at: '2026-09-05'
-claim_match_verified: false
+claim_match_verified: true
 claim_match_verified_by: route:codex
 claim_match_verified_at: '2026-09-05'
 exact_passage: ไม่อยู่ในขอบเขตการตรวจสอบ (หมายถึง เรื่องนี้ไม่ใช่ข่าวที่อยู่ในวิสัยที่จะตรวจสอบได้)
@@ -18,16 +18,15 @@ page_or_locator: cofact.org/howto, 'วิธีการ Comment ข่าว�
   list of 4 comment categories, re-fetched and re-confirmed 2026-09-05 via direct
   curl (https://cofact.org/howto); the phrase sits inside a <strong> tag in the raw
   HTML
-line_or_paragraph: char offset 3591 of normalized fetched text; verbatim match confirmed
-  against the raw HTML (bold-tag markup around the phrase, stripped for the normalized
-  text)
+line_or_paragraph: char offset 3474 of normalized fetched text (~paragraph 1); verbatim
+  prefix match
 scope: DIRECT_QUOTATION
 evidence_tier: Dr
 independence_class: I3
 who_verified: route:codex (cross-vendor AI; abstract/metadata level, not full text)
   -- see cite-glosa-v0-3-q6-005.i3.json
 verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
-status: METADATA_OK
+status: VERIFIED
 xenon_ledger_ref: null
 disclosure: 'Cofact (โคแฟค) (TH, grey/community civic fact-checking platform, Thailand).
   Fetched and read directly (curl + stdlib HTML stripper for web pages; pdftotext
@@ -54,7 +53,12 @@ disclosure: 'Cofact (โคแฟค) (TH, grey/community civic fact-checking pl
   does not contradict the card. But the mechanical verbatim search did not find the
   quoted passage in fetched text, and the excerpt does not evidence the four-category/checkability
   distinction. Under uncertainty, the direct-quotation and relevance claim cannot
-  be confirmed.'
+  be confirmed. | I3 route (codex) judged from fetched metadata/abstract + the card''s
+  quoted passage, not full text: Metadata does not contradict the card. The quoted
+  Thai passage is mechanically found and fits the excerpt. It shows a fact-checking
+  platform distinguishing truth categories from a separate checkability/out-of-scope
+  category, making it relevant context for the hypothesis but not direct support or
+  challenge.'
 superseded_by: null
 notes: 'Diversity: language=th, source_type=community, geography_or_institution=Thailand,
   search_route_or_database="web search / direct fetch, glosa-v0-3 Q6 scoping pass".

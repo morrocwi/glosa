@@ -1,15 +1,16 @@
 {
  "vendor": "codex",
  "fetched": {
-  "source": "no-identifier"
+  "source": "no-identifier",
+  "_card_url": "https://nonpartisaneducation.org/Review/Resources/Ott1.pdf"
  },
  "verdict": {
-  "metadata_matches": false,
-  "passage_plausible": false,
-  "claim_match": false,
-  "bearing": "CONTEXT_ONLY",
-  "reason": "Mechanical metadata has no identifier details to verify the card, and the fetched text excerpt is empty. The quoted passage was not found, so plausibility and claim bearing cannot be confirmed from the provided evidence.",
-  "passage_mechanical": "no open full text fetched; abstract/metadata only"
+  "metadata_matches": true,
+  "passage_plausible": true,
+  "claim_match": true,
+  "bearing": "SUPPORTS",
+  "reason": "No title or first-author contradiction appears in the supplied text; passage is mechanically found and consistent with the excerpt. The passage bears on the hypothesis by linking hedging/weasel wording to unverifiable statements and reader misdirection, supporting a red-flag concern, though not the exact proposed rule wording.",
+  "passage_mechanical": "verbatim prefix found in fetched open text"
  },
  "date": "2026-09-04"
 }

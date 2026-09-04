@@ -6,7 +6,7 @@ search_log_hash: ''
 dialogue_table_ref: records/lit/glosa-v0-3/q6/dialogue_table.md
 neighbour_table_ref: ''
 status: FROZEN
-frozen_at: '2026-09-04T19:20:06.704595+00:00'
+frozen_at: '2026-09-04T19:31:56.637618+00:00'
 supersedes: null
 citations:
 - $schema: citation_card.schema.json
@@ -108,7 +108,7 @@ citations:
     block on direct fetch -- see access_limits) + pdftotext -l 8 of an open mirrored copy of the same
     article hosted by nonpartisaneducation.org (title, author, and text match the PubMed-indexed article)
   metadata_verified_at: '2026-09-05'
-  claim_match_verified: false
+  claim_match_verified: true
   claim_match_verified_by: route:codex
   claim_match_verified_at: '2026-09-05'
   exact_passage: In reading articles, authors try to influence understanding using language to extend
@@ -117,14 +117,13 @@ citations:
   page_or_locator: Ott, J.S., 'Hedging, Weasel Words, and Truthiness in Scientific Writing' (mirrored
     PDF, nonpartisaneducation.org/Review/Resources/Ott1.pdf), page 1, re-extracted and re-confirmed 2026-09-05
     via direct curl + `pdftotext -l 1` (4-page PDF; passage is on page 1, second paragraph of the Introduction)
-  line_or_paragraph: lines 21-24 of the `pdftotext -l 1` extraction (verified verbatim against the freshly
-    downloaded PDF)
+  line_or_paragraph: char offset 826 of normalized fetched text (~paragraph 1); verbatim prefix match
   scope: DIRECT_QUOTATION
   evidence_tier: Dr
   independence_class: I3
   who_verified: route:codex (cross-vendor AI; abstract/metadata level, not full text) -- see cite-glosa-v0-3-q6-002.i3.json
   verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
-  status: METADATA_OK
+  status: VERIFIED
   xenon_ledger_ref: null
   disclosure: 'Ott, J.S., ''Hedging, Weasel Words, and Truthiness in Scientific Writing'' (PMID 30607107;
     EN, peer-reviewed-indexed, read via an open mirrored PDF since direct PubMed fetch was blocked --
@@ -146,7 +145,12 @@ citations:
     quoted passage is not plausible and cannot be shown to bear on Q6. | I3 route (codex) judged from
     fetched metadata/abstract + the card''s quoted passage, not full text: Mechanical metadata has no
     identifier details to verify the card, and the fetched text excerpt is empty. The quoted passage was
-    not found, so plausibility and claim bearing cannot be confirmed from the provided evidence.'
+    not found, so plausibility and claim bearing cannot be confirmed from the provided evidence. | I3
+    route (codex) judged from fetched metadata/abstract + the card''s quoted passage, not full text: No
+    title or first-author contradiction appears in the supplied text; passage is mechanically found and
+    consistent with the excerpt. The passage bears on the hypothesis by linking hedging/weasel wording
+    to unverifiable statements and reader misdirection, supporting a red-flag concern, though not the
+    exact proposed rule wording.'
   superseded_by: null
   notes: 'Diversity: language=en, source_type=peer_reviewed, geography_or_institution=US, search_route_or_database="web
     search / direct fetch, glosa-v0-3 Q6 scoping pass". dialogue_table_stance: agrees. what_it_separates:
@@ -336,21 +340,20 @@ citations:
   metadata_verified_by: mechanical:curl+html-strip (Cofact, Thai civic fact-checking platform, official
     how-to page fetched directly)
   metadata_verified_at: '2026-09-05'
-  claim_match_verified: false
+  claim_match_verified: true
   claim_match_verified_by: route:codex
   claim_match_verified_at: '2026-09-05'
   exact_passage: ไม่อยู่ในขอบเขตการตรวจสอบ (หมายถึง เรื่องนี้ไม่ใช่ข่าวที่อยู่ในวิสัยที่จะตรวจสอบได้)
   page_or_locator: cofact.org/howto, 'วิธีการ Comment ข่าวหรือข้อความบนเว็บไซต์' section, list of 4 comment
     categories, re-fetched and re-confirmed 2026-09-05 via direct curl (https://cofact.org/howto); the
     phrase sits inside a <strong> tag in the raw HTML
-  line_or_paragraph: char offset 3591 of normalized fetched text; verbatim match confirmed against the
-    raw HTML (bold-tag markup around the phrase, stripped for the normalized text)
+  line_or_paragraph: char offset 3474 of normalized fetched text (~paragraph 1); verbatim prefix match
   scope: DIRECT_QUOTATION
   evidence_tier: Dr
   independence_class: I3
   who_verified: route:codex (cross-vendor AI; abstract/metadata level, not full text) -- see cite-glosa-v0-3-q6-005.i3.json
   verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
-  status: METADATA_OK
+  status: VERIFIED
   xenon_ledger_ref: null
   disclosure: 'Cofact (โคแฟค) (TH, grey/community civic fact-checking platform, Thailand). Fetched and
     read directly (curl + stdlib HTML stripper for web pages; pdftotext -l 8 for the one PDF source) 2026-09-05,
@@ -372,7 +375,11 @@ citations:
     fetched metadata/abstract + the card''s quoted passage, not full text: Metadata does not contradict
     the card. But the mechanical verbatim search did not find the quoted passage in fetched text, and
     the excerpt does not evidence the four-category/checkability distinction. Under uncertainty, the direct-quotation
-    and relevance claim cannot be confirmed.'
+    and relevance claim cannot be confirmed. | I3 route (codex) judged from fetched metadata/abstract
+    + the card''s quoted passage, not full text: Metadata does not contradict the card. The quoted Thai
+    passage is mechanically found and fits the excerpt. It shows a fact-checking platform distinguishing
+    truth categories from a separate checkability/out-of-scope category, making it relevant context for
+    the hypothesis but not direct support or challenge.'
   superseded_by: null
   notes: 'Diversity: language=th, source_type=community, geography_or_institution=Thailand, search_route_or_database="web
     search / direct fetch, glosa-v0-3 Q6 scoping pass". dialogue_table_stance: orthogonal. what_it_separates:
@@ -644,7 +651,7 @@ diversity_audit:
   never_claim_diverse_without_counts: true
 accuracy:
   total_citations: 8
-  verified_count: 6
+  verified_count: 8
   spot_check:
     applicable: true
     proposed_n_percent: 20
@@ -657,10 +664,9 @@ accuracy:
 secondary_citation_ban_audit:
   violations_found: 0
 gate:
-  accuracy_gate: FAIL
+  accuracy_gate: PASS
   diversity_gate: PASS
-  overall: FAIL
-  blocked_reason: Not every listed citation reached VERIFIED yet.
-disclaimers_emitted:
-- id: D-CITATION-UNVERIFIED
+  overall: PASS
+  blocked_reason: null
+disclaimers_emitted: []
 human_owner: founder

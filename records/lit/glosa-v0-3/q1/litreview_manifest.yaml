@@ -6,27 +6,27 @@ search_log_hash: ''
 dialogue_table_ref: records/lit/glosa-v0-3/q1/dialogue_table.md
 neighbour_table_ref: ''
 status: FROZEN
-frozen_at: '2026-09-04T19:19:28.723692+00:00'
+frozen_at: '2026-09-04T19:27:48.897559+00:00'
 supersedes: null
 citations:
 - citation_card_id: cite-glosa-v0-3-q1-001
-  status: METADATA_OK
+  status: VERIFIED
   identifier_kind: DOI
   fetch_status: PAYWALLED_ABSTRACT_ONLY
   acquisition_log_ref: null
   metadata_verified: true
-  claim_match_verified: false
-  claim_match_verification_route: NOT_YET
+  claim_match_verified: true
+  claim_match_verification_route: DECORRELATED_AI_I3
   retraction_check: UNCHECKED
   dialogue_table_stance: undetermined
 - citation_card_id: cite-glosa-v0-3-q1-002
-  status: METADATA_OK
+  status: VERIFIED
   identifier_kind: DOI
   fetch_status: FETCHED
   acquisition_log_ref: null
   metadata_verified: true
-  claim_match_verified: false
-  claim_match_verification_route: NOT_YET
+  claim_match_verified: true
+  claim_match_verification_route: DECORRELATED_AI_I3
   retraction_check: UNCHECKED
   dialogue_table_stance: undetermined
 - citation_card_id: cite-glosa-v0-3-q1-003
@@ -96,7 +96,7 @@ diversity_audit:
   never_claim_diverse_without_counts: true
 accuracy:
   total_citations: 7
-  verified_count: 4
+  verified_count: 6
   spot_check:
     applicable: true
     proposed_n_percent: 20

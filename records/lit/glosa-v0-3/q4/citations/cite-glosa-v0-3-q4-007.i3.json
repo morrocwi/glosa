@@ -9,15 +9,16 @@
   ],
   "year": 2016,
   "container": "Social Epistemology",
-  "abstract": ""
+  "abstract": "",
+  "_card_url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1080/02691728.2016.1172365?fields=title,abstract,authors,year,venue"
  },
  "verdict": {
   "metadata_matches": true,
-  "passage_plausible": false,
+  "passage_plausible": true,
   "claim_match": false,
   "bearing": "CONTEXT_ONLY",
-  "reason": "Metadata does not contradict the card. However, the fetched text excerpt is empty and the verbatim passage check found nothing, so the quoted passage cannot be checked. With only title/metadata and an unspecified Q4 hypothesis, the claimed evidential match is uncertain.",
-  "passage_mechanical": "no open full text fetched; abstract/metadata only"
+  "reason": "Metadata does not contradict the card, and the quoted passage appears in the fetched excerpt. The passage is relevant context on evidence hierarchies versus appropriateness in policy evidence, but it does not address grey-literature intake, undeclared tiers, automatic exclusion/downgrading, or a request-back-to-source rule.",
+  "passage_mechanical": "verbatim prefix found in fetched open text"
  },
  "date": "2026-09-04"
 }
