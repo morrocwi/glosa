@@ -5,7 +5,7 @@ text: Explains recurring hilal-sighting disputes as layer confusion — applying
   evidentiary standards, the jurisprudential layer's determination methods, or the institutional layer's
   authority claims to a question that properly belongs to a different layer — rather than treating
   jurisprudential plurality itself as a failure to converge. States its own proof obligations and limits.
-verbatim: "It shows that most hilal con icts arise not within any single layer but from layer confusion : the
+verbatim: "It shows that most hilal conflicts arise not within any single layer but from layer confusion : the
   application of the tools, standards, and authority claims of one layer to questions that properly belong to
   another."
 source:
@@ -15,7 +15,7 @@ source:
 fetched_from_url: https://zenodo.org/api/records/19124963/files/hilal_three_layers_paper.pdf/content
 locator: Abstract, p.1 (pdftotext on this PDF's subset font renders the "fl" ligature as a raw control
   byte (0x1d) rather than the two letters, so "conflicts" extracts as "con<0x1d>icts" — represented
-  above as "con icts" with a literal space, since the mechanical spot-check's own norm() function
+  above as "conflicts" with a literal space, since the mechanical spot-check's own norm() function
   collapses that control byte to a space anyway; "confusion:" likewise extracts as "confusion :" —
   this is the source's extracted text, not a transcription error)
 tier: Open

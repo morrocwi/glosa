@@ -7,7 +7,15 @@ from pathlib import Path
 import yaml
 ROOT = Path(__file__).resolve().parent.parent
 H = ROOT / "knowledge/harvest_v0.3"
-def norm(t): return re.sub(r"[^a-z0-9฀-๿]+", " ", (t or "").lower()).strip()
+LIG = "\uFFFD"
+def norm(t):
+    t = (t or "").lower().replace("\x1c", LIG).replace("\x1d", LIG).replace("\x1e", LIG).replace("\x1f", LIG)
+    return re.sub(r"[^a-z0-9฀-๿\uFFFD]+", " ", t).strip()
+def norm_passage_for(text_norm, passage):
+    p = norm(passage)
+    if LIG in text_norm:  # source PDF lost ligature glyphs: compare with fi/fl/ff collapsed to the marker
+        p = re.sub(r"ffi|ffl|ff|fi|fl", LIG, p)
+    return p
 # some LaTeX-built PDFs subset their font so ligatures (ff/fi/fl/ffi/ffl) extract via pdftotext as
 # low control bytes (0x1b-0x1e) instead of the letter pairs; restore them before matching, else
 # words like "conflict"/"specified"/"sufficient" silently lose the ligature and never match.
@@ -53,7 +61,7 @@ rows = []; ok = miss = err = 0
 for f in sorted(H.glob("*/kc-*.yaml")):
     if only and f.parent.name not in only: continue
     c = yaml.safe_load(f.read_text(encoding="utf-8")) or {}
-    txt = fetch(c); v = norm(c.get("verbatim")); words = v.split()
+    txt = fetch(c); v = norm_passage_for(norm(txt) if txt and not txt.startswith("ERR:") else "", c.get("verbatim")); words = v.split()
     if txt.startswith("ERR:") or not txt: status = "no-source"; err += 1
     elif len(words) < 4: status = "no-verbatim"; miss += 1
     elif " ".join(words[:10]) in norm(txt): status = "verbatim-found"; ok += 1

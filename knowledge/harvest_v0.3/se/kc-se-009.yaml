@@ -1,43 +1,47 @@
 id: kc-se-009
 kind: rule
-title: From AI Governance to Epistemic Governance — govern the output's status, not only the system
-text: The same slide deck proposes shifting the guiding question from AI Governance (is the system safe?
-  transparent? biased?) to Epistemic Governance (what status does this specific output have? who checks
-  it? who certifies it? who is responsible once it is used?), splitting responsibility into an input side
-  and an uptake side rather than leaving it solely on the system.
-verbatim: "It is whether the authority to pre-select, rank, and narrate the visible world is
-  increasingly shifting beyond recognizably human institutions."
+title: From AI Governance to Epistemic Governance — govern the output's status, not
+  only the system
+text: The same slide deck proposes shifting the guiding question from AI Governance
+  (is the system safe? transparent? biased?) to Epistemic Governance (what status
+  does this specific output have? who checks it? who certifies it? who is responsible
+  once it is used?), splitting responsibility into an input side and an uptake side
+  rather than leaving it solely on the system.
+verbatim: |-
+  อเสนอของบทความจ งเสนอใ ขยายจาก AI Governance
+  Epistemic Governance ทักษะการตังคําถามของคนรุ่นใหม่
 source:
   doi: 10.5281/zenodo.22302410
-  title: "ปัญญาประดิษฐ์กับอารยธรรมความรู้: การลืมสถานะการเป็นตัวเลือกและความรับผิดชอบของมนุษย์ในสังคมที่ถูกสื่อกลางด้วยปัญญาประดิษฐ์
-    (สไลด์นำเสนอระดับชาติ NIDA, 29 ส.ค. 2569)"
+  title: 'ปัญญาประดิษฐ์กับอารยธรรมความรู้: การลืมสถานะการเป็นตัวเลือกและความรับผิดชอบของมนุษย์ในสังคมที่ถูกสื่อกลางด้วยปัญญาประดิษฐ์
+    (สไลด์นำเสนอระดับชาติ NIDA, 29 ส.ค. 2569)'
   year: 2026
-fetched_from_url: "https://zenodo.org/api/records/18943971/files/main_knowing_civil.pdf/content"
-locator: p.2 of the PDF currently served at fetched_from_url ("Present Stakes" paragraph, framework
-  section)
+fetched_from_url: https://zenodo.org/api/records/22302410/files/AI_Knowledge_Civilization_NIDA_2026-08-29.pdf/content
+locator: p.39 of the PDF (the "AI Governance → Epistemic Governance" framing slide
+  — headline sentence, wrapped by pdftotext across the 2 lines shown)
 tier: Open
 base_relation: holds
-base_justification: Consistent with, and a policy-facing restatement of, the base's Bounded-Judge Law
-  (kc-base-035, mandatory independent adversarial review) and glosa's own maker≠checker≠approver rule —
-  both insist governance attach to the specific output/claim's checked status, not only to the producing
-  system.
+base_justification: Consistent with, and a policy-facing restatement of, the base's
+  Bounded-Judge Law (kc-base-035, mandatory independent adversarial review) and glosa's
+  own maker≠checker≠approver rule — both insist governance attach to the specific
+  output/claim's checked status, not only to the producing system.
 glosa_use: adopt
-glosa_target: "FOUNDATION §1 gate rules 3, 8 (maker/checker/approver split; no independent check ⇒ no
-  release) — Input Responsibility / Uptake Responsibility split as a naming pair worth reusing"
-notes: "VERSION MISMATCH (2026-09-05 spot-check): same issue as kc-se-008 — fetched_from_url
-  (zenodo.org/records/18943971, main_knowing_civil.pdf) currently serves a different English-language
-  paper, 'The Civilization of Knowledge: Who Has the Authority to Interpret the World' (63pp, no Thai
-  text), not the Thai NIDA slide deck named in source.title/doi (22302410). The original Thai
-  'AI Governance → Epistemic Governance / ผลลัพธ์นี้มีสถานะอะไร? ใครตรวจ? ใครรับรอง?' slide content could
-  not be located in the PDF this URL now returns. Per spot-check task instructions, `verbatim` above
-  is a continuous sentence taken from the PDF actually at fetched_from_url (from the same 'Present
-  Stakes' paragraph used for kc-se-008's replacement verbatim, since both cards' original passages
-  are unrecoverable there) stating a related but weaker point (authority over what gets shown/
-  narrated is shifting) — it does NOT state the specific output-status / who-checks / who-certifies
-  / who-is-responsible split this card's title/text describe, nor the 'AI Governance → Epistemic
-  Governance' framing. This card's title/text/base_relation/glosa_use are left untouched (out of
-  scope for a mechanical verbatim fix) but a human should re-source or downgrade this card. The
-  Input/Uptake Responsibility naming pair from the original (unverifiable) source is not confirmed
-  present in the document actually reachable at fetched_from_url. This record and kc-se-008 were
-  meant to form one two-part argument from the same slide deck; that pairing is now unverified for
-  both, and both now cite the same substitute source paragraph rather than two distinct slides."
+glosa_target: FOUNDATION §1 gate rules 3, 8 (maker/checker/approver split; no independent
+  check ⇒ no release) — Input Responsibility / Uptake Responsibility split as a naming
+  pair worth reusing
+notes: 'Source re-pointed and re-quoted on 2026-09-05 (same re-fetch as kc-se-008:
+  Zenodo record 22302410, 42pp, genuine Thai NIDA slide deck confirmed; zenodo.org
+  blocked direct curl from this network with a 403, so WebFetch + `pdftotext` in
+  full was used instead). `verbatim` above (p.39) is the deck''s own AI-Governance-to-Epistemic-Governance
+  slide, whose two question lists match this card''s text almost word for word —
+  "ระบบปลอดภัยไหม? / โปร่งใสไหม? / มีอคติไหม?" = "is the system safe? / transparent?
+  / biased?", and "ผลลัพธ์นี้มีสถานะอะไร? ... ใครตรวจ? ใครรับรอง? ใครรับผิดชอบเมื่อนำไปใช้?"
+  = "what status does this output have? ... who checks it? who certifies it? who
+  is responsible once it is used?" — so the core AI-Governance-vs-Epistemic-Governance
+  claim in this card''s title is directly confirmed. However a full-document grep
+  (English "input"/"uptake" and Thai ต้นทาง/ปลายทาง/นำเข้า/รับเข้า) found NO occurrence
+  anywhere in the 42-page deck of an explicit "input side / uptake side" responsibility
+  split — that specific naming pair in this card''s text and glosa_target appears
+  to be glosa''s own restatement, not something stated in this source; left `glosa_use:
+  adopt` because the title''s core claim is confirmed, but a human should either
+  drop the input/uptake clause or locate its actual source. Thai extraction has the
+  same tone-mark/font gaps noted on kc-se-008 (copied exactly as pdftotext gives it).'

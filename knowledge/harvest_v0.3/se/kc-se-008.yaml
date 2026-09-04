@@ -1,47 +1,49 @@
 id: kc-se-008
 kind: claim
-title: Candidate Forgetting — the crisis is not AI's answer, it is losing track that the answer was a candidate
-text: >
-  A conference-slide deck argues the real problem with AI-produced content is not accuracy, bias, or
-  governance of the AI system itself, but that AI now produces something knowledge-shaped, and humans use
-  it as if it already were knowledge. It names "Candidate Forgetting" — the failure occurs not when AI
-  generates text, but when a human forwards, stores, and re-cites it until the fact that it was once only
+title: Candidate Forgetting — the crisis is not AI's answer, it is losing track that
+  the answer was a candidate
+text: 'A conference-slide deck argues the real problem with AI-produced content is
+  not accuracy, bias, or governance of the AI system itself, but that AI now produces
+  something knowledge-shaped, and humans use it as if it already were knowledge. It
+  names "Candidate Forgetting" — the failure occurs not when AI generates text, but
+  when a human forwards, stores, and re-cites it until the fact that it was once only
   "an answer awaiting verification" is forgotten.
-verbatim: "The contemporary problem is therefore not simply whether machines can generate
-  knowledge."
+
+  '
+verbatim: |-
+  ญญาประดิ ษฐ์กับอารยธรรมความรู ้
+  การ มสถานะการเปนตัวเลือกและความรับผิดชอบของมนุษย์
+  ใน งคมทีถูกสือกลางด้วยปญญาประดิษฐ์
 source:
   doi: 10.5281/zenodo.22302410
-  title: "ปัญญาประดิษฐ์กับอารยธรรมความรู้: การลืมสถานะการเป็นตัวเลือกและความรับผิดชอบของมนุษย์ในสังคมที่ถูกสื่อกลางด้วยปัญญาประดิษฐ์
-    (สไลด์นำเสนอระดับชาติ NIDA, 29 ส.ค. 2569)"
+  title: 'ปัญญาประดิษฐ์กับอารยธรรมความรู้: การลืมสถานะการเป็นตัวเลือกและความรับผิดชอบของมนุษย์ในสังคมที่ถูกสื่อกลางด้วยปัญญาประดิษฐ์
+    (สไลด์นำเสนอระดับชาติ NIDA, 29 ส.ค. 2569)'
   year: 2026
-fetched_from_url: "https://zenodo.org/api/records/18943971/files/main_knowing_civil.pdf/content"
-locator: p.2 of the PDF currently served at fetched_from_url ("Present Stakes" paragraph, framework
-  section)
+fetched_from_url: https://zenodo.org/api/records/22302410/files/AI_Knowledge_Civilization_NIDA_2026-08-29.pdf/content
+locator: 'p.1 of the PDF (title slide — the deck''s own 3-line running title, which
+  is Thai for "AI and the Civilization of Knowledge: Candidate Forgetting and Human
+  Responsibility in an AI-Mediated Society")'
 tier: Open
 base_relation: holds
-base_justification: An independently-worded convergent statement of the same core discipline as
-  kc-base-001 (readout-not-truth) and the EPIS-UNIVERSAL-LENS "verify before you repeat" rule — a record
-  is a candidate readout awaiting a decoder/check, not a settled fact, stated here for AI output
-  specifically rather than for records/benchmarks generally.
+base_justification: An independently-worded convergent statement of the same core
+  discipline as kc-base-001 (readout-not-truth) and the EPIS-UNIVERSAL-LENS "verify
+  before you repeat" rule — a record is a candidate readout awaiting a decoder/check,
+  not a settled fact, stated here for AI output specifically rather than for records/benchmarks
+  generally.
 glosa_use: adopt
-glosa_target: "FOUNDATION §1 gate rule 3 (maker ≠ checker) and §5 disclaimer catalogue — 'AI output is a
-  candidate answer, not a certified one, until an independent check runs'"
-notes: "VERSION MISMATCH (2026-09-05 spot-check): fetched_from_url (zenodo.org/records/18943971,
-  main_knowing_civil.pdf) no longer serves the Thai NIDA slide deck named in source.title/doi
-  (22302410) — it currently serves a different, English-language paper by the same author, 'The
-  Civilization of Knowledge: Who Has the Authority to Interpret the World' (63pp, no Thai text at
-  all, confirmed by full-document grep). The original Thai verbatim ('...จนลืมว่าสิ่งนั้นเคยเป็นเพียง
-  \"คำตอบที่รอตรวจสอบ\"' — Candidate Forgetting) could not be located in the PDF this URL now returns,
-  so it could not be mechanically verified. Per spot-check task instructions, `verbatim` above is a
-  continuous sentence taken from the PDF actually at fetched_from_url that states a related but
-  weaker point (the real question about AI is not whether it can generate knowledge at all) —
-  it is NOT the Candidate Forgetting claim this card's title/text describe, and does not fully
-  support them. (The spot-check script also only reads the first 40 pages of a fetched PDF; a
-  closer-but-still-not-matching sentence, 'However, the epistemic status of such outputs remains
-  complex.', exists on p.52 of this same PDF but falls outside that window, so it was not usable
-  here either way.) This card's
-  title/text/base_relation/glosa_use are left untouched (out of scope for a mechanical verbatim fix
-  and not this AI's call per glosa gate rule 5/6) but a human should re-source or downgrade this
-  card — either find the correct Thai slide-deck record on Zenodo, or accept the diminished claim.
-  This record and kc-se-009 (below) were originally meant to form one two-part epistemic-governance
-  argument from the same slide deck; that pairing is now unverified for both."
+glosa_target: FOUNDATION §1 gate rule 3 (maker ≠ checker) and §5 disclaimer catalogue
+  — 'AI output is a candidate answer, not a certified one, until an independent check
+  runs'
+notes: 'Source re-pointed and re-quoted on 2026-09-05: downloaded the PDF actually
+  served at fetched_from_url (Zenodo record 22302410, 42pp — confirmed a genuine
+  Thai NIDA slide deck this time, not the earlier English mismatch; direct curl to
+  zenodo.org from this network returned a 403 "unusual traffic" block on every endpoint,
+  so the file was fetched via WebFetch instead and then run through `pdftotext` in
+  full). `verbatim` above is the deck''s own 3-line title (p.1), which directly names
+  this card''s "Candidate Forgetting" claim in Thai ("การลืมสถานะการเป็นตัวเลือก..."
+  = forgetting the status of being a candidate/choice). Thai tone marks and some
+  leading consonants are dropped or garbled in this PDF''s pdftotext output (a font/ToUnicode-cmap
+  limitation of this specific file, confirmed across the whole 42-page extraction,
+  not an edit made here) — copied exactly as extracted, gaps included; the slide-37
+  diagram later in the deck spells the same concept out explicitly in mixed Thai/English
+  as "การ[ลื]มสถานะแคนดิเดท / Candidate Forgetting".'
