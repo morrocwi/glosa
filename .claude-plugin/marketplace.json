@@ -11,10 +11,7 @@
   "plugins": [
     {
       "name": "glosa",
-      "source": {
-        "source": "github",
-        "repo": "morrocwi/glosa"
-      },
+      "source": "./plugins/glosa",
       "description": "Rigour Without Infrastructure: claim cards, Blackbox Note discipline, independent-check ladder (I0-I5), literature review system, publish gate, and project advisor for solo human-AI knowledge work. CC BY 4.0.",
       "author": {
         "name": "Yaoharee Lahtee"
