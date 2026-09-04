@@ -1,0 +1,169 @@
+# hypothesis_selection.yaml -- GLS-2026-001 rigour-without-infrastructure (S14/S3c, Dr, unreviewed)
+# AI proposed this comparison table (task A3); selection itself is the founder's non-delegable act
+# (matches claim_card.responsible: human). chosen is PRE-FILLED from the founder's own abstract
+# (BBL-2026-09-04-091, paper/main_th.md) but is NOT yet a confirmed founder decision -- see
+# selection.reason and decided_by below for the explicit PENDING marker.
+
+id: hsel-rigour-without-infrastructure-001
+problem_ref: GLOSA-PC-20260904-0001
+decided_by: "founder (PENDING explicit confirmation; pre-filled from the founder abstract BBL-2026-09-04-091)"
+decided_at: "2026-09-04"
+
+candidates:
+  - hypothesis_ref: H1
+    hypothesis_world: >-
+      If every claim a standalone scholar (no university, no lab, no research team) produces is
+      recorded as a claim card that answers the founder's five questions (what was actually seen /
+      what the data separates / what AI filled in / what is assumed / what independent test, if
+      any, it has survived), tied to the Readout Condition's Existence-Attribution-Disclosure
+      conditions, and passed through the independence ladder before any public release -- then a
+      person with no institutional affiliation can co-produce knowledge with AI whose rigour a
+      reader can check for themselves, without an institutional credential serving as the thing
+      that certifies it.
+    lrs_manifest_ref: /home/yaoharee-lt/ANSE.ASIA/glosa/records/lit/rigour-without-infrastructure/h1/litreview_manifest.yaml
+    dialogue_table_ref: /home/yaoharee-lt/ANSE.ASIA/glosa/records/lit/rigour-without-infrastructure/h1/dialogue_table.md
+    criteria:
+      developability:
+        unresolved_space_shown_by_dialogue_table: >-
+          No source in the H1 scoping pass tests the full combined mechanism (claim cards +
+          Existence-Attribution-Disclosure + independence ladder) as one system; Mayes 2022 and the
+          Scholarly Kitchen credentialism case both show institutional/credential signals still do
+          real gatekeeping work today, directly countering H1's "without an institutional
+          credential" claim -- a live, disclosed tension, not a closed question.
+        note: "matches this project's own design-science genre (H1 is the hypothesis the founder's abstract already implies)."
+      access_evidence_available:
+        can_we_get_new_access: partial
+        note: >-
+          This project can build and run more claim cards on itself (reflexive corpus already
+          exists in paper/main_th.md at I0), but reaching I5 (a genuine outside human reviewer with
+          no stake) is not yet secured -- access exists for I0-I3, not yet confirmed for I5.
+      falsifier_reachable_with_our_resources:
+        value: partial
+        note: >-
+          The stated falsifier (an I5 reviewer finds a schema-passing card false at Q2 or Q3)
+          needs an outside human reviewer this project does not yet have lined up; I3 cross-vendor
+          checking is reachable now with existing AI-vendor access.
+      independence_routes_available:
+        max_reachable_independence_class: I3
+        note: "I3 (cross-vendor AI) reachable now; I5 (outside human, no stake) not yet arranged."
+      risk_and_ethics:
+        human_participant_or_vulnerable_subject: "no"
+        domain_safety_flags: []
+        note: "no human-subject or vulnerable-population involvement; this is a documentation/methodology mechanism."
+      genre_fit:
+        candidate_genres: ["design_science"]
+        note: "H1 proposes and specifies a mechanism (claim card + E-A-D + independence ladder) -- design-science fit."
+    accuracy_gate_at_selection_time: FAIL
+    diversity_gate_at_selection_time: PASS_WITH_LIMITS
+
+  - hypothesis_ref: H2
+    hypothesis_world: >-
+      "Rigour" is not conferred on a claim by institutional machinery from the outside; it is a
+      property a single claim can carry in its own recorded structure (what was seen, what
+      separates, what AI filled, what is assumed, what independent check it survived) --
+      institutions are one historical mechanism that has produced this property, not the only
+      possible one.
+    lrs_manifest_ref: /home/yaoharee-lt/ANSE.ASIA/glosa/records/lit/rigour-without-infrastructure/h2/litreview_manifest.yaml
+    dialogue_table_ref: /home/yaoharee-lt/ANSE.ASIA/glosa/records/lit/rigour-without-infrastructure/h2/dialogue_table.md
+    criteria:
+      developability:
+        unresolved_space_shown_by_dialogue_table: >-
+          The Scholarly Kitchen source is logged as the closest real-world instance of H2's own
+          falsifier (credential/affiliation as a scrutiny signal a record's own quality cannot
+          substitute for) -- a genuinely open challenge, not explained away. Six of nine sources
+          are orthogonal/undetermined (infrastructure/governance/access questions, not claim-level
+          rigour), leaving the core mechanism under-tested by this pass.
+        note: "conceptual claim -- narrower, more abstract than H1; would need its own reader study to move past Dr."
+      access_evidence_available:
+        can_we_get_new_access: "no"
+        note: >-
+          What evidence would separate it (reader studies on whether journal editors/grant
+          reviewers/practitioner communities treat a card as sufficient without asking "who backs
+          this") requires access to an external reader population this project does not currently
+          have a route to recruit.
+      falsifier_reachable_with_our_resources:
+        value: "no"
+        note: "the falsifier needs a field study of real readers' credential-reliance behaviour, outside this project's current resources."
+      independence_routes_available:
+        max_reachable_independence_class: I3
+        note: "same AI-vendor access as H1 for card-level checking, but the falsifier itself needs reader-study access this project lacks."
+      risk_and_ethics:
+        human_participant_or_vulnerable_subject: "yes"
+        domain_safety_flags: []
+        note: "a reader study (editors/reviewers/practitioners) would involve human participants if ever run; not yet designed or approved."
+      genre_fit:
+        candidate_genres: ["conceptual"]
+        note: "H2 states a portable-property claim about what rigour is, not a mechanism design -- conceptual fit."
+    accuracy_gate_at_selection_time: FAIL
+    diversity_gate_at_selection_time: PASS
+
+  - hypothesis_ref: H3
+    hypothesis_world: >-
+      When claim cards are checked by a different AI vendor from the one that produced them
+      (cross-vendor, independence level I3) instead of being re-checked by the same vendor that
+      produced the card (I0/I1), the rate at which undisclosed AI-fill (a false Q3 field) or
+      undisclosed assumptions (a false Q4 field) is caught rises measurably compared to
+      same-vendor re-checking.
+    lrs_manifest_ref: /home/yaoharee-lt/ANSE.ASIA/glosa/records/lit/rigour-without-infrastructure/h3/litreview_manifest.yaml
+    dialogue_table_ref: /home/yaoharee-lt/ANSE.ASIA/glosa/records/lit/rigour-without-infrastructure/h3/dialogue_table.md
+    criteria:
+      developability:
+        unresolved_space_shown_by_dialogue_table: >-
+          The one source that actually ran H3's own comparison (Cross-Model LLM Code Review,
+          arXiv:2607.21656) found an asymmetric, direction-dependent effect -- one cross-vendor
+          direction helped a lot, the reverse hurt, same-vendor also improved one condition -- a
+          real complication left open, not a clean confirmation. H3 is the most empirically
+          concrete and most directly testable of the three.
+        note: "narrowest scope of the three -- a mechanism-internal claim about the independence ladder itself, not the whole H1 design."
+      access_evidence_available:
+        can_we_get_new_access: "yes"
+        note: >-
+          A seeded-error benchmark (known, logged undisclosed AI-fill/assumption instances, split
+          same-vendor vs cross-vendor check arms) can be constructed now with existing AI-vendor
+          access -- no new external access required.
+      falsifier_reachable_with_our_resources:
+        value: "yes"
+        note: "the seeded-error benchmark design is buildable and runnable with this project's own resources and existing AI-vendor accounts."
+      independence_routes_available:
+        max_reachable_independence_class: I3
+        note: "cross-vendor AI checking (I3) is exactly the mechanism under test and is reachable now."
+      risk_and_ethics:
+        human_participant_or_vulnerable_subject: "no"
+        domain_safety_flags: []
+        note: "a seeded-error benchmark on AI-produced claim cards; no human-subject involvement."
+      genre_fit:
+        candidate_genres: ["empirical_quant"]
+        note: "H3 is a measurable-rate comparison with a pre-registerable scoring rubric -- empirical_quant fit."
+    accuracy_gate_at_selection_time: FAIL
+    diversity_gate_at_selection_time: PASS_WITH_LIMITS
+
+selection:
+  chosen: ["H1"]
+  reason: >-
+    PENDING founder confirmation. Pre-filled as H1 because H1 is the hypothesis the founder's own
+    paper abstract already implies (paper/main_th.md, BBL-2026-09-04-091) and is the DESIGN-type
+    candidate that names the actual mechanism (claim card + E-A-D + independence ladder) this whole
+    project (GLS-2026-001) exists to specify and demonstrate -- H2 and H3 are narrower slices of the
+    same space (H2 the conceptual claim underneath H1, H3 one mechanism-internal empirical piece of
+    it) rather than competitors to it. This pre-fill is an AI proposal only; per hypotheses.md's own
+    "Selection status" section and Blackbox Note line 12 (BBL-2026-09-04-088), the founder's actual
+    selection act (zero, one, or more than one candidate) has not yet been recorded and must
+    overwrite this field explicitly before it is treated as decided.
+  parked:
+    - hypothesis_ref: H2
+      reason: >-
+        Conceptual claim underneath H1, not yet a separately resourced track -- its own falsifier
+        needs a reader/field study (editors, grant reviewers, practitioner communities) this
+        project has no current route to run; kept as a live candidate, not dropped, because the
+        Scholarly Kitchen source already shows a real open challenge to it worth returning to.
+    - hypothesis_ref: H3
+      reason: >-
+        Narrower, empirically concrete piece of H1's own mechanism (does the independence-ladder's
+        cross-vendor step actually work) rather than a competing hypothesis; parked as a strong
+        follow-on empirical study to run once/if H1 is confirmed as the project's chosen design,
+        since H3's seeded-error benchmark could then directly evidence H1's own independence-ladder
+        assumption.
+
+cooking_log_ref: "BB-2026-09-04-GLOSA-PAPER#cooking-3 (this hypothesis_selection.yaml draft, task A3, appended by AI; founder confirmation still open)"
+
+routes_to: "design_science genre (S6.1 9-row table), per H1's own genre_fit.candidate_genres -- PENDING founder confirmation of selection.chosen"
