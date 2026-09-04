@@ -8,7 +8,7 @@ entries:
   problem_ref: null
   blackbox_ref: null
   hypothesis_refs: []
-  spine_stage: method
+  spine_stage: paper_draft
   k_state: K0
   genre: design_science
   venue_track: null
@@ -52,3 +52,6 @@ entries:
   - date: '2026-09-04'
     stage: method
     by: human
+  - date: '2026-09-04'
+    stage: paper_draft
+    by: joint
