@@ -2,7 +2,7 @@
 
 > **นี่คือปูมเสียงดิบ ไม่ใช่บทความ** — ทุกบรรทัดคือคำพูดตามที่พูด (verbatim) ณ วันเวลานั้น ยังไม่ผ่านการปรุง ไม่ผ่านการตรวจอิสระ (tier: positional / Dr) บันทึกเพิ่มได้อย่างเดียว ไม่แก้ไม่ลบ (แก้ = บรรทัดใหม่ที่อ้างบรรทัดเดิม) เลนส์ที่ใช้มองปัญหา: **Readout Universe — Yaoharee Lahtee** (10.5281/zenodo.21529456, 10.5281/zenodo.22301318, 10.5281/zenodo.22301202; github.com/morrocwi/readout_universe) ระบบที่เก็บ: glosa (github.com/morrocwi/glosa) **ปูมนี้มีเฉพาะเสียงของผู้เขียนเท่านั้น** — ไม่มีบรรทัดที่ AI เขียน (คำตัดสินผู้เขียน 2026-09-04: บันทึกระบบที่ AI เคยใส่ไว้ 1 รายการถูกถอดออกและเก็บไว้ที่ blackbox/log/removed_ai_entries.json) ป้าย "เนื้อหาที่สร้างโดย AI" ที่ Facebook ติดให้บางโพสต์เกิดจากรูปประกอบที่ทำด้วย AI ไม่ใช่ตัวข้อความ จึงไม่ถูกนำมาบันทึก
 
-จำนวนบันทึก: 108 · อัปเดตล่าสุด: 2026-09-04T23:24:15+07:00
+จำนวนบันทึก: 109 · อัปเดตล่าสุด: 2026-09-04T23:29:17+07:00
 
 ## สารบัญตามหมวดความคิด (ไม่เรียงตามวันที่)
 
@@ -56,7 +56,7 @@
 - **BBL-2026-09-04-067** (2026-09-04, finding, cheapest-contextual-knowledge, cost-of-knowledge, dependence-on-authority) — ว่ากันตามจริงแล้ว ตอนนี้เรากำลังยุคที่ความรู้ที่สอดคล้องตามบริบท…
 - **BBL-2026-09-04-070** (2026-09-04, finding, global-labour, token-priced-labour, ai-brokers, white-collar-replacement, epistemic-reordering, chaotic-renaissance) — ในภาพรวมของแรงงานโลก หากแบ่งอย่างหยาบที่สุด อาจแบ่งได้เป็นสองประเภทใหญ่ ๆ คือ แรงงานที่ทัก…
 
-### วิธีวิทยา / ระบบ glosa (36)
+### วิธีวิทยา / ระบบ glosa (37)
 
 - **BBL-2026-09-04-001** (2026-09-04, ruling, spine, lens) — ที่สำคัญอย่าลืม ให้เริ่มจากมองปัญหาด้วยเลนส์ readout ก่อน แล้วแปลกลับเป็นภาษษโลกเพื่อสกัดส…
 - **BBL-2026-09-04-002** (2026-09-04, ruling, system) — ทำให้ทั้งหมดรวมเป็นระบบเดียวที่นิ่ง…
@@ -94,6 +94,7 @@
 - **BBL-2026-09-04-107** (2026-09-04, instruction, zenodo, series, paper-IV, epistemic-chain-reaction) — ต่ออันนี้เปเปอร์สี่'<local path redacted>/Epistemic_Chain_Reaction_Paper_IV_K0.pdf'…
 - **BBL-2026-09-04-108** (2026-09-04, instruction, release, v0.2.0, approved) — go…
 - **BBL-2026-09-04-109** (2026-09-04, instruction, zenodo, series, evidence-registry, same-doi, paper-IV) — ลงเอกสารสองตัวนี้ใน doi เดียวกันต่อจาก เอกสารก่อนหน้า'<local path redacted>/Claim_Registry…
+- **BBL-2026-09-04-110** (2026-09-04, ruling, zenodo, evidence-registry, separate-record) — ต้องแยกกับ สี่…
 
 ### กล่องดำ / เสียงดิบ (7)
 
@@ -1973,4 +1974,8 @@
 **BBL-2026-09-04-109** · 23:24 · ผู้ก่อตั้ง · instruction · หมวด: วิธีวิทยา / ระบบ glosa · zenodo, series, evidence-registry, same-doi, paper-IV · ที่มา: chat 2026-09-05 ~03:30 — add the State of Evidence registry (PDF + CSV E01–E25) as a new version under the previous record's DOI (Paper IV, concept DOI) rather than a new record; local paths redacted
 
 > ลงเอกสารสองตัวนี้ใน doi เดียวกันต่อจาก เอกสารก่อนหน้า'<local path redacted>/Claim_Registry_E01_E25.csv' '<local path redacted>/State_of_Evidence_Readout_Hypothesis_Programme_K0.pdf'
+
+**BBL-2026-09-04-110** · 23:29 · ผู้ก่อตั้ง · ruling · หมวด: วิธีวิทยา / ระบบ glosa · zenodo, evidence-registry, separate-record · ที่มา: chat 2026-09-05 ~03:40 — the State of Evidence registry must be its own Zenodo record, separate from Paper IV
+
+> ต้องแยกกับ สี่
 

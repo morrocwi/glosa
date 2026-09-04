@@ -1,10 +1,10 @@
 [
  {
-  "id": 22307989,
-  "doi": "10.5281/zenodo.22307989",
+  "id": 22308072,
+  "doi": "10.5281/zenodo.22308072",
   "concept": "10.5281/zenodo.22307750",
-  "title": "The Epistemic Chain Reaction: Human-AI Multiplication from Questions to Readout-Distinguishable Hypotheses — A Controlled Amplification Architecture for Scientific Discovery — with the State of Evidence registry for Papers I–IV (v2)",
-  "date": "2026-09-05",
+  "title": "The Epistemic Chain Reaction: Human-AI Multiplication from Questions to Readout-Distinguishable Hypotheses — A Controlled Amplification Architecture for Scientific Discovery",
+  "date": "2026-09-04",
   "type": "Preprint",
   "kw": [
    "human-ai collaboration",
@@ -29,6 +29,27 @@
   "tags": [
    "ai"
   ]
+ },
+ {
+  "id": 22308066,
+  "doi": "10.5281/zenodo.22308066",
+  "concept": "10.5281/zenodo.22308065",
+  "title": "State of Evidence for the Readout Hypothesis-Generation Programme: A Shared Evidence Registry for Papers I–IV (with Claim Registry E01–E25)",
+  "date": "2026-09-04",
+  "type": "Report",
+  "kw": [
+   "state of evidence",
+   "evidence registry",
+   "claim registry",
+   "living review",
+   "hypothesis generation",
+   "bounded knower",
+   "glosa k0",
+   "readout universe"
+  ],
+  "desc": " Series. Companion evidence registry for the four-paper Bounded Knower / Readout hypothesis-generation programme: Paper I (DOI 10.5281/zenodo.22307148), Paper II (DOI 10.5281/zenodo.22307561), Paper III (DOI 10.5281/zenodo.22307564), Paper IV (DOI 10.5281/zenodo.22307751). Files: the State of Evidence synthesis (PDF) and Claim_Registry_E01_E25.csv (25 evidence claims: id, status, evidence strength, primary paper, decisive test). Status. Living GLOSA K0 evidence synthesis; targeted and system-oriented, not preregistered or systematic. \"Observed\" means the cited literature reported the neighbouring phenomenon, never that a paper-specific Readout variable was validated. No independent checker has certified the registry. No priority claim. Abstract. work of the programme, but it is not itself an observed fact. The four-paper Readout hypothesis-generation programme spans problem formation, bounded semantic mobility, knowledge organization, candidate-set formation, and human–AI amplification. Most local mechanisms invoked by the programme are not new discoveries. Problem representation affects later solving; semantic-memory organization relates to creative and convergent retrieval; domain knowledge changes early diagnostic hypothesis generation; search behavior depends jointly on representation and process; recent inference history biases later inference; expertise can accelerate familiar reasoning while inducing fixation; representational change can resolve impasse; scientific-hyp",
+  "cluster": "ep",
+  "tags": []
  },
  {
   "id": 22307891,

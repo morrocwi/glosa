@@ -17,14 +17,13 @@
    "n": 4,
    "doi": "10.5281/zenodo.22307751",
    "doi_v2": "10.5281/zenodo.22307989",
-   "conceptdoi": "10.5281/zenodo.22307750"
+   "conceptdoi": "10.5281/zenodo.22307750",
+   "doi_v3": "10.5281/zenodo.22308072"
   }
  ],
  "evidence_registry": {
-  "doi": "10.5281/zenodo.22307989",
-  "files": [
-   "State_of_Evidence_Readout_Hypothesis_Programme_K0.pdf",
-   "Claim_Registry_E01_E25.csv"
-  ]
+  "doi": "10.5281/zenodo.22308066",
+  "separate_record": true,
+  "note": "v2 of Paper IV briefly carried these files (Zenodo versions cannot be deleted); v3 restored Paper IV alone"
  }
 }
