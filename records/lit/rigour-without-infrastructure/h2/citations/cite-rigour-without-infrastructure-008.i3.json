@@ -7,10 +7,11 @@
  },
  "verdict": {
   "metadata_matches": true,
-  "passage_plausible": false,
+  "passage_plausible": true,
   "claim_match": false,
   "bearing": "CONTEXT_ONLY",
-  "reason": "Metadata title does not contradict the card, but fetched data contains no body text and an empty abstract, so the quoted passage cannot be verified. H2 is not specified beyond its label, so support cannot be judged."
+  "reason": "Metadata shown does not contradict the card. The Thai passage is plausible because it matches the fetched title and English abstract themes, though verbatim search failed. H2 itself is not provided, so claim_match cannot be confirmed under the rule: if uncertain, answer false.",
+  "passage_mechanical": "quoted passage NOT found verbatim in fetched open text"
  },
  "date": "2026-09-04"
 }

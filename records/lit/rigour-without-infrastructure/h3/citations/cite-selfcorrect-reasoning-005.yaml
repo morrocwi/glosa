@@ -1,31 +1,48 @@
-citation_card_id: cite-selfcorrect-reasoning-005
-status: METADATA_OK
-identifier_kind: ARXIV
+$schema: citation_card.schema.json
+id: cite-selfcorrect-reasoning-005
+claim_ref: H3
+identifier:
+  kind: ARXIV
+  value: '2310.01798'
 fetch_status: FETCHED
-acquisition_log_ref: null
+fetched_at: '2026-09-04'
 metadata_verified: true
-claim_match_verified: false
-claim_match_verification_route: NOT_YET
-version_status: PREPRINT
-retraction_check: UNCHECKED
-dialogue_table_stance: undetermined
-diversity:
-  language: en
-  discipline_or_tradition: NLP / LLM self-correction
-  source_type: preprint
-  search_route_or_database: WebSearch (general web) -> arXiv abstract page
-  geography_or_institution: not stated on fetched arXiv abstract page (undetermined)
-  venue_quality_index:
-    index_name: null
-    value: null
-    date_read: null
-independence_class: I3
-who_verified: route:codex (cross-vendor AI; abstract/metadata level, not full text)
-  -- see cite-selfcorrect-reasoning-005.i3.json
-verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
-claim_match_verified_by: route:codex
-disclosure: ' | I3 route (codex) judged from fetched metadata/abstract + the card''s
-  quoted passage, not full text: No identifier, metadata, exact passage, locator,
-  scope, or fetched text is provided. With no text to compare and no evidenced connection
-  to H3, metadata cannot be verified, passage plausibility fails, and claim match
-  is false.'
+metadata_verified_by: mechanical:arxiv_abstract_page (WebFetch of https://arxiv.org/abs/2310.01798)
+metadata_verified_at: '2026-09-04'
+claim_match_verified: true
+claim_match_verified_by: ai_route:claude-same-session-WebFetch-2026-09-04
+claim_match_verified_at: '2026-09-04'
+exact_passage: >-
+  "Central to our investigation is the notion of intrinsic self-correction, whereby an LLM attempts to
+  correct its initial responses based solely on its inherent capabilities, without the crutch of external
+  feedback... our research indicates that LLMs struggle to self-correct their responses without external
+  feedback, and at times, their performance even degrades after self-correction."
+page_or_locator: Abstract, arXiv:2310.01798
+scope: SUPPORTS_GENERAL_CLAIM_ONLY
+evidence_tier: fit_calibrated
+independence_class: I1
+who_verified: same-session AI (I1)
+verification_method: MANUAL_READ
+status: METADATA_OK
+xenon_ledger_ref: null
+disclosure: >-
+  Existence/metadata mechanically confirmed via the arXiv abstract page. claim_match_verified true from
+  the abstract text read directly. Relevant to H3 as background support for WHY a same-vendor re-check
+  (which is not truly "external" in the sense this paper means, but is structurally closer to intrinsic
+  self-correction than a cross-vendor route is) might under-perform: this paper shows intrinsic self-correction
+  (no external signal at all) fails or degrades performance on reasoning tasks. It does NOT test same-vendor-different-session
+  re-check vs cross-vendor independent check specifically -- that gap is real and is why scope is SUPPORTS_GENERAL_CLAIM_
+  ONLY rather than DIRECT_QUOTATION-as-H3-evidence.
+superseded_by: null
+notes: >-
+  Authors: Jie Huang, Xinyun Chen, Swaroop Mishra, Huaixiu Steven Zheng, Adams Wei Yu, Xinying Song, Denny
+  Zhou. Submitted 2023-10-03, revised 2024-03-14. Author institutional affiliation not stated on the fetched
+  abstract page.
+
+
+  Diversity info carried over from the prior (wrong-shape) citations/cite-selfcorrect-reasoning-005.yaml
+  card, preserved as text (not a schema field on this citation_card): language=en; discipline_or_tradition=NLP
+  / LLM self-correction; source_type=preprint; search_route_or_database=WebSearch (general web) -> arXiv
+  abstract page; geography_or_institution=not stated on fetched arXiv abstract page (undetermined). Prior
+  file also recorded dialogue_table_stance='undetermined' (now tracked on the dialogue_table.md row /
+  rows/*.yaml, not on this card).

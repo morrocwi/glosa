@@ -15,7 +15,8 @@
   "passage_plausible": true,
   "claim_match": false,
   "bearing": "CONTEXT_ONLY",
-  "reason": "Metadata does not contradict the card, and the quoted/paraphrased passage is directly reflected in the fetched abstract. But H1 is not defined beyond its label, so support for the hypothesis cannot be independently assessed from the provided material."
+  "reason": "Metadata does not contradict the card, and the quoted passage appears verbatim in the fetched text. However, H1 is not stated beyond its label, so the source’s support for that hypothesis cannot be independently checked from the provided material.",
+  "passage_mechanical": "verbatim prefix found in fetched open text"
  },
  "date": "2026-09-04"
 }

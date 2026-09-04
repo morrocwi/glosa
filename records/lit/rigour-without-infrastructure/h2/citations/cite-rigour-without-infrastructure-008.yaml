@@ -47,7 +47,12 @@ disclosure: 'Nattapong Srirot (Nakaepittayakhom School, Nakhon Phanom) and Pairo
   | I3 route (codex) judged from fetched metadata/abstract + the card''s quoted passage,
   not full text: Metadata title does not contradict the card, but fetched data contains
   no body text and an empty abstract, so the quoted passage cannot be verified. H2
-  is not specified beyond its label, so support cannot be judged.'
+  is not specified beyond its label, so support cannot be judged. | I3 route (codex)
+  judged from fetched metadata/abstract + the card''s quoted passage, not full text:
+  Metadata shown does not contradict the card. The Thai passage is plausible because
+  it matches the fetched title and English abstract themes, though verbatim search
+  failed. H2 itself is not provided, so claim_match cannot be confirmed under the
+  rule: if uncertain, answer false.'
 superseded_by: null
 notes: 'Diversity: language=th, source_type=peer_reviewed, geography=Thailand (Nakhon
   Phanom), search_route="web search: ความน่าเชื่อถือทางวิชาการ ผู้เชี่ยวชาญ สถาบัน

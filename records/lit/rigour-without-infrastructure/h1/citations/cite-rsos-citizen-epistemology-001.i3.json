@@ -17,10 +17,11 @@
  },
  "verdict": {
   "metadata_matches": true,
-  "passage_plausible": true,
+  "passage_plausible": false,
   "claim_match": false,
   "bearing": "CONTEXT_ONLY",
-  "reason": "Metadata matches fetched title/authors/year. The quoted passage is not directly verified in the abstract but is plausible and consistent with the abstract’s diversity/perspectival-realism theme. However H1 is unspecified, so the card’s SUPPORTS_GENERAL_CLAIM_ONLY bearing cannot be confirmed."
+  "reason": "Metadata does not contradict the card. However the quoted exact passages were not found by the mechanical check and no fetched surrounding text is provided. The abstract only generally discusses diversity in democratic citizen science, so the card’s quoted support and match to H1 cannot be confirmed from the supplied material.",
+  "passage_mechanical": "no open full text fetched; abstract/metadata only"
  },
  "date": "2026-09-04"
 }

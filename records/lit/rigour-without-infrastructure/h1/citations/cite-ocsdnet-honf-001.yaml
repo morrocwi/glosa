@@ -42,7 +42,12 @@ disclosure: 'Same-session AI check only (I1) -- METADATA_OK, not VERIFIED. No DO
   + the card''s quoted passage, not full text: Fetched metadata only gives a matching
   title and empty abstract; no fetched body text is available to compare against the
   quoted passage. The hypothesis content is not provided beyond H1, so support cannot
-  be verified from the supplied evidence.'
+  be verified from the supplied evidence. | I3 route (codex) judged from fetched metadata/abstract
+  + the card''s quoted passage, not full text: Metadata title matches and no author/year
+  contradiction is shown. The fetched excerpt supports only the project title, HONF,
+  and Indonesia/Thailand/Nepal objective; the quoted passage is not verbatim and adds
+  methods/participants not evidenced here. H1 is unspecified, so claim match cannot
+  be confirmed.'
 superseded_by: null
 notes: 'Global South, Southeast Asia (Indonesia; project explicitly names Thailand
   and Nepal too), EN (project page language), grey/community source (an NGO/foundation

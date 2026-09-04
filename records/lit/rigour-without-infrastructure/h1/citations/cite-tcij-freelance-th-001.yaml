@@ -40,7 +40,12 @@ disclosure: 'Same-session AI check only (I1) -- METADATA_OK, not VERIFIED. No DO
   Metadata title/source align with the card''s TCIJ Thai 2020 context. The quoted
   passage is plausible given the title/abstract about freelance academics and outsourcing
   ethics. Since H1 content is not supplied, it can only match the card''s limited
-  CONTEXT_ONLY_NOT_EVIDENCE scope.'
+  CONTEXT_ONLY_NOT_EVIDENCE scope. | I3 route (codex) judged from fetched metadata/abstract
+  + the card''s quoted passage, not full text: Metadata and excerpt match a 2020 TCIJ
+  article on academic freelancers/outsourcing. Exact quoted passage was not mechanically
+  found, but it is plausible within the shown topic. The card scopes it as context
+  only/orthogonal, and the evidenced source supports that contextual bearing, not
+  evidentiary support for H1.'
 superseded_by: null
 notes: 'Thailand, TH (Thai language), grey/community source (TCIJ -- Thai Civic Investigative
   Journalism network, a nonprofit journalism outlet, not peer-reviewed). Found via

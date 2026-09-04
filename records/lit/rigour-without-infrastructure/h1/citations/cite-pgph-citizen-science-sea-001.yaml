@@ -9,7 +9,7 @@ fetched_at: '2026-09-04'
 metadata_verified: true
 metadata_verified_by: mechanical:crossref
 metadata_verified_at: '2026-09-04'
-claim_match_verified: true
+claim_match_verified: false
 claim_match_verified_by: route:codex
 claim_match_verified_at: '2026-09-04'
 exact_passage: The study frames citizen readiness as "people being the recipients
@@ -23,7 +23,7 @@ independence_class: I3
 who_verified: route:codex (cross-vendor AI; abstract/metadata level, not full text)
   -- see cite-pgph-citizen-science-sea-001.i3.json
 verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
-status: VERIFIED
+status: METADATA_OK
 xenon_ledger_ref: null
 disclosure: 'Same-session AI check only (I1) -- METADATA_OK, not VERIFIED. Title/author/year/venue
   confirmed mechanically via Crossref (Kumar, Hauter, Canlas, Sunaryoko, Maharjan,
@@ -37,7 +37,11 @@ disclosure: 'Same-session AI check only (I1) -- METADATA_OK, not VERIFIED. Title
   do not contradict the card. Abstract supports a South/Southeast Asia citizen-science
   pandemic-preparedness study and makes the quoted framing plausible, though not verified
   verbatim. As scoped, it provides contextual background rather than evidence for
-  H1.'
+  H1. | I3 route (codex) judged from fetched metadata/abstract + the card''s quoted
+  passage, not full text: Metadata title/authors/year do not contradict the card.
+  The quoted exact passage was not found, and the excerpt/abstract only broadly discusses
+  citizen science participation, so passage plausibility is uncertain. H1 has no substantive
+  content here, so the context-only bearing cannot be confirmed as matching the hypothesis.'
 superseded_by: null
 notes: 'Global South / Southeast Asia (author institutions across Philippines, Indonesia,
   Nepal, Bangladesh, Singapore), EN, peer-reviewed, journal-article. Found via query

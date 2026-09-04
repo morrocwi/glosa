@@ -36,7 +36,12 @@ disclosure: 'Crossref-confirmed: Lisa M. Rasmussen (2019), "Confronting Research
   not VERIFIED. | I3 route (codex) judged from fetched metadata/abstract + the card''s
   quoted passage, not full text: Metadata does not contradict the card, but only metadata
   is fetched; no abstract/full text is available to verify the quoted passage. H2
-  content is not provided, so support for the hypothesis cannot be confirmed.'
+  content is not provided, so support for the hypothesis cannot be confirmed. | I3
+  route (codex) judged from fetched metadata/abstract + the card''s quoted passage,
+  not full text: Metadata does not contradict the card, and the quoted passage is
+  mechanically found and consistent with the title. But the substantive content of
+  H2 is not provided, so support for the hypothesis cannot be independently confirmed
+  from the supplied material.'
 superseded_by: null
 notes: 'Diversity: language=en, source_type=peer_reviewed, geography=USA (Citizen
   Science Association), search_route="web search: citizen science credibility trust

@@ -39,7 +39,12 @@ disclosure: 'Grey/community source (practitioner blog with named-commenter discu
   from fetched metadata/abstract + the card''s quoted passage, not full text: Title
   and URL metadata align with the card, but only metadata/abstract were provided;
   there is no fetched article/comment text to verify the exact quoted comments. H2
-  is not stated, so claim match and directional bearing cannot be confirmed.'
+  is not stated, so claim match and directional bearing cannot be confirmed. | I3
+  route (codex) judged from fetched metadata/abstract + the card''s quoted passage,
+  not full text: Metadata aligns with the fetched title/date/author context. The quoted
+  comments are topically plausible for an article about credentialism and unaffiliated
+  authors, but the verbatim passage check failed, so the direct-quotation claim is
+  not evidenced here.'
 superseded_by: null
 notes: 'Diversity: language=en, source_type=practitioner/community (scholarly-publishing
   trade blog), geography=USA/global scholarly-publishing community, search_route="web

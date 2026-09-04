@@ -12,10 +12,11 @@
  },
  "verdict": {
   "metadata_matches": true,
-  "passage_plausible": false,
-  "claim_match": false,
-  "bearing": "CONTEXT_ONLY",
-  "reason": "Title/authors/year do not contradict the card. However fetched abstract is empty and no passage text is provided, so the quoted passage and claimed 5:1 result cannot be verified from the supplied evidence. Therefore claim match is uncertain."
+  "passage_plausible": true,
+  "claim_match": true,
+  "bearing": "SUPPORTS",
+  "reason": "Metadata title/author/year align. Fetched text contains the key passage about citizen science legitimacy being shaped by professional experts, and the described evidence directly supports H1 as a boundary-work/epistemic-authority citation.",
+  "passage_mechanical": "verbatim prefix found in fetched open text"
  },
  "date": "2026-09-04"
 }

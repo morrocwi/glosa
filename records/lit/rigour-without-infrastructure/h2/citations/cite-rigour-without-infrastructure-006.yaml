@@ -9,7 +9,7 @@ fetched_at: '2026-09-04'
 metadata_verified: true
 metadata_verified_by: mechanical:crossref
 metadata_verified_at: '2026-09-04'
-claim_match_verified: true
+claim_match_verified: false
 claim_match_verified_by: route:codex
 claim_match_verified_at: '2026-09-04'
 exact_passage: '"The advancement of scientific research and raising the next-generation
@@ -26,7 +26,7 @@ independence_class: I3
 who_verified: route:codex (cross-vendor AI; abstract/metadata level, not full text)
   -- see cite-rigour-without-infrastructure-006.i3.json
 verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
-status: VERIFIED
+status: METADATA_OK
 xenon_ledger_ref: null
 disclosure: 'Crossref-confirmed: Okafor, Mbagwu, Chia, Hasim, Udokanma, Chandran (2022),
   "Institutionalizing Open Science in Africa: Limitations and Prospects", Frontiers
@@ -43,7 +43,11 @@ disclosure: 'Crossref-confirmed: Okafor, Mbagwu, Chia, Hasim, Udokanma, Chandran
   passage, not full text: finite_diagnostic: Metadata does not contradict the card.
   The passage is an abbreviated excerpt of the fetched abstract. Given scope is CONTEXT_ONLY_NOT_EVIDENCE,
   the source plausibly provides contextual background on African open science infrastructure,
-  funding, and leadership rather than direct evidence for H2.'
+  funding, and leadership rather than direct evidence for H2. | I3 route (codex) judged
+  from fetched metadata/abstract + the card''s quoted passage, not full text: Metadata
+  does not contradict the card, and the quoted passage is present/plausible in the
+  fetched abstract. But H2 is not described beyond its label, so I cannot verify that
+  this source bears on the hypothesis as claimed.'
 superseded_by: null
 notes: 'Diversity: language=en, source_type=peer_reviewed, geography=Global South
   (Africa, author institutions in Nigeria/South Africa/Malaysia/USA), search_route="web

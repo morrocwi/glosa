@@ -1,30 +1,51 @@
-citation_card_id: cite-selfpreference-judge-001
-status: METADATA_OK
-identifier_kind: ARXIV
+$schema: citation_card.schema.json
+id: cite-selfpreference-judge-001
+claim_ref: H3
+identifier:
+  kind: ARXIV
+  value: '2410.21819'
 fetch_status: FETCHED
-acquisition_log_ref: null
+fetched_at: '2026-09-04'
 metadata_verified: true
-claim_match_verified: false
-claim_match_verification_route: NOT_YET
-version_status: PREPRINT
-retraction_check: UNCHECKED
-dialogue_table_stance: undetermined
-diversity:
-  language: en
-  discipline_or_tradition: NLP / LLM evaluation
-  source_type: preprint
-  search_route_or_database: WebSearch (general web) -> arXiv abstract page
-  geography_or_institution: not stated on fetched arXiv abstract page (undetermined)
-  venue_quality_index:
-    index_name: null
-    value: null
-    date_read: null
-independence_class: I3
-who_verified: route:codex (cross-vendor AI; abstract/metadata level, not full text)
-  -- see cite-selfpreference-judge-001.i3.json
-verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
-claim_match_verified_by: route:codex
-disclosure: ' | I3 route (codex) judged from fetched metadata/abstract + the card''s
-  quoted passage, not full text: No identifier, card metadata, scope, exact passage,
-  or fetched text is available. With nothing to compare, metadata cannot be verified,
-  passage plausibility fails, and the source cannot be shown to bear on H3.'
+metadata_verified_by: mechanical:arxiv_abstract_page (WebFetch of https://arxiv.org/abs/2410.21819)
+metadata_verified_at: '2026-09-04'
+claim_match_verified: true
+claim_match_verified_by: ai_route:claude-same-session-WebFetch-2026-09-04
+claim_match_verified_at: '2026-09-04'
+exact_passage: >-
+  "Our findings reveal that LLMs assign significantly higher evaluations to outputs with lower perplexity
+  than human evaluators, regardless of whether the outputs were self-generated. This suggests that the
+  essence of the bias lies in perplexity and that the self-preference bias exists because LLMs prefer
+  texts more familiar to them."
+page_or_locator: Abstract, arXiv:2410.21819
+scope: SUPPORTS_GENERAL_CLAIM_ONLY
+evidence_tier: fit_calibrated
+independence_class: I1
+who_verified: same-session AI (I1)
+verification_method: MANUAL_READ
+status: METADATA_OK
+xenon_ledger_ref: null
+disclosure: >-
+  Existence and metadata mechanically confirmed by fetching the arXiv abstract page directly (title/authors/abstract/date
+  match). claim_match_verified is true because the abstract's own text was read directly and supports
+  the general mechanism this hypothesis relies on (models systematically favor outputs more familiar to
+  themselves, i.e. produced by their own generative process) -- but the verifying route was this SAME
+  AI session (independence_class I1, same vendor as would later re-check a claim card), so status stays
+  METADATA_OK, never VERIFIED -- VERIFIED requires an I3+ decorrelated route (D-CITATION-UNVERIFIED, D-SAME-VENDOR).
+  This paper measures self-preference bias in an LLM judging its own vs. others' outputs; it does not
+  itself run a cross-vendor-review-vs-same-vendor-re-check comparison, so it SUPPORTS a mechanism H3 depends
+  on rather than testing H3's comparison directly (scope: SUPPORTS_GENERAL_CLAIM_ONLY).
+superseded_by: null
+notes: >-
+  Authors: Koki Wataoka, Tsubasa Takahashi, Ryokan Ri. Submitted 2024-10-29, revised 2025-06-21. Author
+  institutional affiliation was not stated on the fetched arXiv abstract page and was not independently
+  confirmed by this session -- geography/institution left undetermined rather than guessed (see litreview_manifest
+  diversity block).
+
+
+  Diversity info carried over from the prior (wrong-shape) citations/cite-selfpreference-judge-001.yaml
+  card, preserved as text (not a schema field on this citation_card): language=en; discipline_or_tradition=NLP
+  / LLM evaluation; source_type=preprint; search_route_or_database=WebSearch (general web) -> arXiv abstract
+  page; geography_or_institution=not stated on fetched arXiv abstract page (undetermined). Prior file
+  also recorded dialogue_table_stance='undetermined' (now tracked on the dialogue_table.md row / rows/*.yaml,
+  not on this card).

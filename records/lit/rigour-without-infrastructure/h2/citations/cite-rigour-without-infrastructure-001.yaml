@@ -36,7 +36,11 @@ disclosure: 'Encyclopedia (grey/community tertiary source), not a primary empiri
   title matches the cited Wikipedia page, with no title/year/author contradiction
   shown. But only title and empty abstract were fetched, so there is no fetched text
   to compare the exact passage against. H2 is unspecified here, so bearing on the
-  hypothesis cannot be confirmed.'
+  hypothesis cannot be confirmed. | I3 route (codex) judged from fetched metadata/abstract
+  + the card''s quoted passage, not full text: Metadata title matches the Wikipedia
+  card and the quoted passage is present in fetched text. However H2 is only named,
+  not stated, so the source’s relevance to that hypothesis cannot be verified from
+  the provided material.'
 superseded_by: null
 notes: 'Diversity: language=en, source_type=grey_literature (encyclopedia/community-maintained),
   geography=global/no fixed institution, search_route="web search: open notebook science

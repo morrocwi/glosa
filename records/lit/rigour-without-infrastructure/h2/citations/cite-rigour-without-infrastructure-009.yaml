@@ -36,7 +36,11 @@ disclosure: 'Thai-language news report (grey/community: journalism, not peer-rev
   + the card''s quoted passage, not full text: Metadata does not contradict the card.
   However only title/abstract metadata is provided, with no fetched article body to
   verify the exact passage. H2 content is not stated, so support for the hypothesis
-  cannot be confirmed.'
+  cannot be confirmed. | I3 route (codex) judged from fetched metadata/abstract +
+  the card''s quoted passage, not full text: Metadata and quoted passage match the
+  fetched title/byline/date/excerpt. The passage plausibly supports a general claim
+  about Thai Open Science access. However H2 is only named, not stated, so the source’s
+  bearing on the actual hypothesis cannot be verified from the provided material.'
 superseded_by: null
 notes: 'Diversity: language=th, source_type=grey_literature (news), geography=Thailand,
   search_route="web search: วิทยาศาสตร์เปิด Open Science นโยบายไทย ความโปร่งใส งานวิจัย

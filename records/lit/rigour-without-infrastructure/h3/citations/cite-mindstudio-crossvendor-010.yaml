@@ -1,31 +1,53 @@
-citation_card_id: cite-mindstudio-crossvendor-010
-status: METADATA_OK
-identifier_kind: OFFICIAL_URL
+$schema: citation_card.schema.json
+id: cite-mindstudio-crossvendor-010
+claim_ref: H3
+identifier:
+  kind: OFFICIAL_URL
+  value: https://www.mindstudio.ai/blog/cross-vendor-ai-agent-review-claude-codex
 fetch_status: FETCHED
-acquisition_log_ref: null
+fetched_at: '2026-09-04'
 metadata_verified: true
-claim_match_verified: false
-claim_match_verification_route: NOT_YET
-version_status: NOT_APPLICABLE
-retraction_check: UNCHECKED
-dialogue_table_stance: agrees
-diversity:
-  language: en
-  discipline_or_tradition: AI-agent tooling / practitioner engineering blog
-  source_type: practitioner
-  search_route_or_database: WebSearch (general web) -> MindStudio publisher blog page
-  geography_or_institution: MindStudio (AI agent platform vendor); country of incorporation
-    not stated on the fetched page (undetermined)
-  venue_quality_index:
-    index_name: null
-    value: null
-    date_read: null
-independence_class: I3
-who_verified: route:codex (cross-vendor AI; abstract/metadata level, not full text)
-  -- see cite-mindstudio-crossvendor-010.i3.json
-verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
-claim_match_verified_by: route:codex
-disclosure: ' | I3 route (codex) judged from fetched metadata/abstract + the card''s
-  quoted passage, not full text: Card has no identifier, title, scope, passage, or
-  locator, and fetched metadata contains only source=no-identifier. There is no fetched
-  text to compare, so passage plausibility and H3 claim bearing cannot be established.'
+metadata_verified_by: mechanical:webfetch_of_publisher_page (WebFetch of the MindStudio blog page itself)
+metadata_verified_at: '2026-09-04'
+claim_match_verified: true
+claim_match_verified_by: ai_route:claude-same-session-WebFetch-2026-09-04
+claim_match_verified_at: '2026-09-04'
+exact_passage: >-
+  "OpenAI's Codex and Anthropic's Claude don't share training data, architectures, or fine-tuning pipelines.
+  When Codex tends to miss a particular class of security issue...Claude often catches it, and vice versa."
+  ... "When you ask the same model to review that output, it tends to evaluate it through the same lens
+  it used to create it."
+page_or_locator: MindStudio blog post, edited by Luis Chavez-Mattos, published 2026-06-18
+scope: SUPPORTS_GENERAL_CLAIM_ONLY
+evidence_tier: Open
+independence_class: I1
+who_verified: same-session AI (I1)
+verification_method: MANUAL_READ
+status: METADATA_OK
+xenon_ledger_ref: null
+disclosure: >-
+  Grey/community source: a vendor/practitioner engineering blog post (MindStudio, an AI-agent platform
+  company), not peer-reviewed, no stated methodology, empirical basis, or citations of its own -- an assertion
+  of practitioner experience/opinion, not a study. Metadata confirmed by fetching the publisher page directly;
+  claim_match_verified true from text read there. Tier set to Open (not fit_calibrated/Dr) because the
+  source itself presents no measurement or method behind its claim -- it directly states H3's proposed
+  mechanism in plain language (same-vendor review shares the producing model's blind spots; cross-vendor
+  review does not) but as an unsupported assertion, so it counts toward SUPPORTS_GENERAL_CLAIM_ONLY scope
+  and toward the diversity gate's grey/community and source-type spread, not toward accuracy-bearing evidence
+  weight.
+superseded_by: null
+notes: >-
+  Publisher: MindStudio (AI agent-building platform vendor). Author/editor credited: Luis Chavez-Mattos,
+  Director of Product. Published 2026-06-18. A related nearly-identical piece (nhimg.org, "Cross-model
+  AI code review exposes the limits of single-model judgment") appeared in the same search but was NOT
+  independently opened/verified by this session and is therefore not cited here (secondary-citation ban,
+  FC-S14-1) -- only the source this session actually fetched is cited.
+
+
+  Diversity info carried over from the prior (wrong-shape) citations/cite-mindstudio-crossvendor-010.yaml
+  card, preserved as text (not a schema field on this citation_card): language=en; discipline_or_tradition=AI-agent
+  tooling / practitioner engineering blog; source_type=practitioner; search_route_or_database=WebSearch
+  (general web) -> MindStudio publisher blog page; geography_or_institution=MindStudio (AI agent platform
+  vendor); country of incorporation not stated on the fetched page (undetermined). Prior file also recorded
+  dialogue_table_stance='agrees' (now tracked on the dialogue_table.md row / rows/*.yaml, not on this
+  card).

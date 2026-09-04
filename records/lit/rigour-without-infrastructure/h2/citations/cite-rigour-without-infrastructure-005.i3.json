@@ -18,9 +18,10 @@
  "verdict": {
   "metadata_matches": true,
   "passage_plausible": true,
-  "claim_match": false,
+  "claim_match": true,
   "bearing": "CONTEXT_ONLY",
-  "reason": "Metadata does not contradict the card, and the passage matches the fetched abstract with ellipsis. But H2 content is not provided, so I cannot verify that the source bears on the hypothesis beyond the card's context-only scope; uncertain therefore false."
+  "reason": "Metadata does not contradict the card. The quoted passage is not a continuous verbatim hit because of the ellipsis, but both quoted parts appear in the fetched abstract. The source provides contextual discussion of Global South/decolonizing open science, matching the card’s CONTEXT_ONLY scope.",
+  "passage_mechanical": "no open full text fetched; abstract/metadata only"
  },
  "date": "2026-09-04"
 }

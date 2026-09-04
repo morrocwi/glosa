@@ -533,6 +533,46 @@ def _render_dialogue_table_rows(rows) -> str:
     return "".join(lines)
 
 
+def _manifest_row_from_card(card):
+    """Map a full citation_card (schema/citation_card.schema.json) onto the narrower embedded row
+    shape that litreview_manifest.schema.json expects. One fact, one home: the card stays the
+    source of truth; the manifest row is a derived summary (regression from the 2026-09-04
+    self-application run, where the two shapes were being confused)."""
+    if "citation_card_id" in card:  # already a manifest row
+        return card
+    ind = card.get("independence_class") or "I0"
+    cm = bool(card.get("claim_match_verified"))
+    if cm and ind == "I5":
+        route = "HUMAN_I5"
+    elif cm and ind in ("I3", "I4"):
+        route = "DECORRELATED_AI_I3"
+    else:
+        route = "NOT_YET"
+    row = {
+        "citation_card_id": card.get("id"),
+        "status": card.get("status", "CANDIDATE"),
+        "identifier_kind": (card.get("identifier") or {}).get("kind", "OTHER"),
+        "fetch_status": card.get("fetch_status", "NOT_FETCHED"),
+        "acquisition_log_ref": None,
+        "metadata_verified": bool(card.get("metadata_verified")),
+        "claim_match_verified": cm,
+        "claim_match_verification_route": route,
+        "retraction_check": "UNCHECKED",
+        "dialogue_table_stance": "undetermined",
+    }
+    notes = str(card.get("notes") or "")
+    for stance in ("agrees", "disagrees", "orthogonal"):
+        if ("stance: " + stance) in notes or ("dialogue_table_stance: " + stance) in notes:
+            row["dialogue_table_stance"] = stance
+    m = None
+    for lang in ("th", "en"):
+        if ("language: " + lang) in notes:
+            m = lang
+    if m:
+        row["diversity"] = {"language": m}
+    return row
+
+
 def _rel(path) -> str:
     """Repo-relative path string for refs written into public artifacts (never an absolute
     /home/... path -- leak-scan regression, 2026-09-04)."""
@@ -995,7 +1035,7 @@ def cmd_lit_manifest(args):
                 if not v.get("ok"):
                     invalid_cards.append({"file": _rel(p), "errors": v.get("errors", [])[:3]})
                     inst = dict(inst, status="INVALID_SCHEMA", id=inst.get("id") or inst.get("citation_card_id") or p.stem)
-                citations.append(inst)
+                citations.append(_manifest_row_from_card(inst))
 
     existing_path = next(iter(sorted(out_dir.glob("litreview_manifest.*"))), None)
     manifest_id = load_instance(existing_path).get("id") if existing_path else _next_numbered_id(out_dir, lambda n: f"litrev-{slug}-{n:03d}")

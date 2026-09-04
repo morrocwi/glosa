@@ -36,7 +36,11 @@ disclosure: 'Same-session AI check only (I1) -- METADATA_OK, not VERIFIED. Title
   appears verbatim in the fetched abstract. However, the evidenced text is about cues
   for judging preprint credibility and independent verification of claims; it does
   not directly address independent researchers without institutional affiliation,
-  so support for H1 is uncertain.'
+  so support for H1 is uncertain. | I3 route (codex) judged from fetched metadata/abstract
+  + the card''s quoted passage, not full text: Metadata does not contradict title/authors/year.
+  The quoted wording appears consistent with the abstract, but the mechanical passage
+  check found none and no fetched text excerpt is provided. H1 content is unspecified,
+  so claim_match cannot be verified.'
 superseded_by: null
 notes: 'Global North (Center for Open Science, US), EN, peer-reviewed, journal-article,
   empirical survey. Found via query family: support (independent researcher without

@@ -12,10 +12,11 @@
  },
  "verdict": {
   "metadata_matches": true,
-  "passage_plausible": false,
+  "passage_plausible": true,
   "claim_match": false,
   "bearing": "CONTEXT_ONLY",
-  "reason": "Metadata does not contradict the card, but only metadata is fetched; no abstract/full text is available to verify the quoted passage. H2 content is not provided, so support for the hypothesis cannot be confirmed."
+  "reason": "Metadata does not contradict the card, and the quoted passage is mechanically found and consistent with the title. But the substantive content of H2 is not provided, so support for the hypothesis cannot be independently confirmed from the supplied material.",
+  "passage_mechanical": "verbatim prefix found in fetched open text"
  },
  "date": "2026-09-04"
 }

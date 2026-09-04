@@ -1,31 +1,54 @@
-citation_card_id: cite-crossmodel-codereview-002
-status: METADATA_OK
-identifier_kind: ARXIV
+$schema: citation_card.schema.json
+id: cite-crossmodel-codereview-002
+claim_ref: H3
+identifier:
+  kind: ARXIV
+  value: '2607.21656'
 fetch_status: FETCHED
-acquisition_log_ref: null
+fetched_at: '2026-09-04'
 metadata_verified: true
-claim_match_verified: false
-claim_match_verification_route: NOT_YET
-version_status: PREPRINT
-retraction_check: UNCHECKED
-dialogue_table_stance: disagrees
-diversity:
-  language: en
-  discipline_or_tradition: software engineering / AI-agent code review
-  source_type: preprint
-  search_route_or_database: WebSearch (general web) -> arXiv abstract page
-  geography_or_institution: not stated on fetched arXiv abstract page (undetermined)
-  venue_quality_index:
-    index_name: null
-    value: null
-    date_read: null
-independence_class: I3
-who_verified: route:codex (cross-vendor AI; abstract/metadata level, not full text)
-  -- see cite-crossmodel-codereview-002.i3.json
-verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
-claim_match_verified_by: route:codex
-disclosure: ' | I3 route (codex) judged from fetched metadata/abstract + the card''s
-  quoted passage, not full text: Card has no identifier, metadata, scope, locator,
-  or exact passage; fetched metadata contains only no-identifier and no text. With
-  no fetched text to compare and no evidenced connection to H3, all uncertain checks
-  fail.'
+metadata_verified_by: mechanical:arxiv_abstract_page (WebFetch of https://arxiv.org/abs/2607.21656)
+metadata_verified_at: '2026-09-04'
+claim_match_verified: true
+claim_match_verified_by: ai_route:claude-same-session-WebFetch-2026-09-04
+claim_match_verified_at: '2026-09-04'
+exact_passage: >-
+  "Claude review raises Codex drafts from 71.6% to 89.7% (p_BH=.001); Codex self review raises them to
+  84.5% (p_BH=.022). The reverse direction does not pay off: Codex reviewing Claude drafts drops the pass
+  rate from 91.4% to 82.8% (p_BH=.046), and Claude self review leaves the 91.4% baseline unchanged. Our
+  evaluation indicates that the useful pairing is asymmetric: use Claude to review Codex, not the other
+  way around."
+page_or_locator: Abstract, arXiv:2607.21656
+scope: DIRECT_QUOTATION
+evidence_tier: fit_calibrated
+independence_class: I1
+who_verified: same-session AI (I1)
+verification_method: MANUAL_READ
+status: METADATA_OK
+xenon_ledger_ref: null
+disclosure: >-
+  Existence and metadata mechanically confirmed via the arXiv abstract page. claim_match_verified is true
+  (abstract text read directly). This is the single most DIRECTLY on-point source found: a controlled
+  experiment (116 tasks, six conditions: solo, cross-model both directions, same-model both directions)
+  comparing cross-vendor vs same-vendor review/re-check pass rates -- exactly H3's comparison. It is also
+  H3's strongest available complication, not a clean confirmation: (a) one cross-vendor direction helps
+  (Claude reviewing Codex), (b) the OTHER cross-vendor direction hurts (Codex reviewing Claude, pass rate
+  drops), and (c) SAME-model self-review also raised the pass rate for Codex drafts (71.6% -> 84.5%),
+  which is evidence a same-vendor re-check is not simply worse across the board -- direction and model
+  identity both matter, not "cross-vendor" as a single undifferentiated lever. Verified this session only
+  (I1); METADATA_OK, not VERIFIED.
+superseded_by: null
+notes: >-
+  Authors: Zuodong Xiang, Yike Zhang, YueMing Zhang, Hailu Xu. Submitted 2026-07-22. Domain is code review
+  (pass/fail on coding-benchmark tasks), not claim-card field-level AI-fill/assumption detection -- a
+  domain gap from H3's exact operationalization (Q3/Q4 field catch rate), flagged as an analogy, not a
+  direct test of H3's own instrument. Author institutional affiliation not stated on the fetched abstract
+  page.
+
+
+  Diversity info carried over from the prior (wrong-shape) citations/cite-crossmodel-codereview-002.yaml
+  card, preserved as text (not a schema field on this citation_card): language=en; discipline_or_tradition=software
+  engineering / AI-agent code review; source_type=preprint; search_route_or_database=WebSearch (general
+  web) -> arXiv abstract page; geography_or_institution=not stated on fetched arXiv abstract page (undetermined).
+  Prior file also recorded dialogue_table_stance='disagrees' (now tracked on the dialogue_table.md row
+  / rows/*.yaml, not on this card).

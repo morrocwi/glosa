@@ -41,7 +41,11 @@ disclosure: 'Crossref-confirmed: Amy Freitag, Ryan Meyer, Liz Whiteman (2016), "
   Metadata does not contradict the card. However, the fetched abstract is empty, so
   there is no fetched text to compare against the quoted passage. Under the rules,
   passage_plausible is false; without validated passage evidence, claim_match is also
-  false.'
+  false. | I3 route (codex) judged from fetched metadata/abstract + the card''s quoted
+  passage, not full text: Metadata and fetched excerpt align with the DOI, title,
+  authors, year, peer-reviewed status, and quoted abstract passage. But the hypothesis
+  is only labeled H2 with no substantive claim provided, so the source''s bearing
+  on that hypothesis cannot be verified from the supplied material.'
 superseded_by: null
 notes: 'Diversity: language=en, source_type=peer_reviewed, geography=USA, search_route="web
   search: citizen science credibility trust independent verification not institution".'

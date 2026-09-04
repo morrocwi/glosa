@@ -17,10 +17,11 @@
  },
  "verdict": {
   "metadata_matches": true,
-  "passage_plausible": true,
-  "claim_match": true,
+  "passage_plausible": false,
+  "claim_match": false,
   "bearing": "CONTEXT_ONLY",
-  "reason": "Title/authors/year do not contradict the card. Abstract supports a South/Southeast Asia citizen-science pandemic-preparedness study and makes the quoted framing plausible, though not verified verbatim. As scoped, it provides contextual background rather than evidence for H1."
+  "reason": "Metadata title/authors/year do not contradict the card. The quoted exact passage was not found, and the excerpt/abstract only broadly discusses citizen science participation, so passage plausibility is uncertain. H1 has no substantive content here, so the context-only bearing cannot be confirmed as matching the hypothesis.",
+  "passage_mechanical": "quoted passage NOT found verbatim in fetched open text"
  },
  "date": "2026-09-04"
 }

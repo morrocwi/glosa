@@ -14,10 +14,11 @@
  },
  "verdict": {
   "metadata_matches": true,
-  "passage_plausible": false,
+  "passage_plausible": true,
   "claim_match": false,
   "bearing": "CONTEXT_ONLY",
-  "reason": "Metadata does not contradict the card. However, the fetched abstract is empty, so there is no fetched text to compare against the quoted passage. Under the rules, passage_plausible is false; without validated passage evidence, claim_match is also false."
+  "reason": "Metadata and fetched excerpt align with the DOI, title, authors, year, peer-reviewed status, and quoted abstract passage. But the hypothesis is only labeled H2 with no substantive claim provided, so the source's bearing on that hypothesis cannot be verified from the supplied material.",
+  "passage_mechanical": "verbatim prefix found in fetched open text"
  },
  "date": "2026-09-04"
 }

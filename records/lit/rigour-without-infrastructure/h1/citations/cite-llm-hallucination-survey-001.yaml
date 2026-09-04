@@ -41,7 +41,12 @@ disclosure: 'Same-session AI check only (I1) -- METADATA_OK, not VERIFIED. This 
   quoted passage, not full text: Fetched metadata does not contradict the card. The
   abstract directly contains the reliability/trustworthiness sentence and supports
   the general claim that LLM hallucinations create factual-accuracy risks; the detection-method
-  sentence is not verified here but is not contradicted by the abstract.'
+  sentence is not verified here but is not contradicted by the abstract. | I3 route
+  (codex) judged from fetched metadata/abstract + the card''s quoted passage, not
+  full text: Metadata does not contradict the card’s identifier/title/year fields
+  as given. The fetched abstract contains the quoted reliability sentence, and the
+  survey topic directly supports the card’s general claim that LLM hallucinations
+  create reliability risks requiring verification and imperfect detection coverage.'
 superseded_by: null
 notes: 'Mixed/international author pool typical of large arXiv survey papers (not
   individually verified per-author affiliation), EN, preprint (not peer-reviewed).

@@ -44,7 +44,12 @@ disclosure: 'Crossref-confirmed: Kumar, Hauter, Canlas, Sunaryoko, Maharjan et a
   + the card''s quoted passage, not full text: Metadata supplied does not contradict
   the card, and the quoted passage closely matches the fetched abstract despite truncation.
   However H2 is only named, not described, so I cannot verify that the source bears
-  on the hypothesis as claimed. By rule, uncertainty makes claim_match false.'
+  on the hypothesis as claimed. By rule, uncertainty makes claim_match false. | I3
+  route (codex) judged from fetched metadata/abstract + the card''s quoted passage,
+  not full text: Metadata does not contradict the card, and the quoted passage is
+  plausible against the fetched abstract/text. However, only the label H2 is supplied,
+  not the hypothesis content, so the source’s relation to H2 cannot be independently
+  checked; per uncertainty rule, claim_match is false.'
 superseded_by: null
 notes: 'Diversity: language=en (study conducted in Nepal, Bangladesh, India, Philippines,
   Indonesia), source_type=peer_reviewed, geography=Global South/South & Southeast

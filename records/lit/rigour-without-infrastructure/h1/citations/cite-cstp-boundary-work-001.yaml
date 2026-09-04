@@ -9,7 +9,7 @@ fetched_at: '2026-09-04'
 metadata_verified: true
 metadata_verified_by: mechanical:crossref
 metadata_verified_at: '2026-09-04'
-claim_match_verified: false
+claim_match_verified: true
 claim_match_verified_by: route:codex
 claim_match_verified_at: '2026-09-04'
 exact_passage: '"the legitimacy of citizen science is powerfully shaped by the perspectives
@@ -25,7 +25,7 @@ independence_class: I3
 who_verified: route:codex (cross-vendor AI; abstract/metadata level, not full text)
   -- see cite-cstp-boundary-work-001.i3.json
 verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
-status: METADATA_OK
+status: VERIFIED
 xenon_ledger_ref: null
 disclosure: 'Same-session AI check only (I1) -- METADATA_OK, not VERIFIED. Title/author/year/venue
   confirmed mechanically via Crossref (E. Carolina Mayes, Citizen Science: Theory
@@ -37,7 +37,11 @@ disclosure: 'Same-session AI check only (I1) -- METADATA_OK, not VERIFIED. Title
   from fetched metadata/abstract + the card''s quoted passage, not full text: Title/authors/year
   do not contradict the card. However fetched abstract is empty and no passage text
   is provided, so the quoted passage and claimed 5:1 result cannot be verified from
-  the supplied evidence. Therefore claim match is uncertain.'
+  the supplied evidence. Therefore claim match is uncertain. | I3 route (codex) judged
+  from fetched metadata/abstract + the card''s quoted passage, not full text: Metadata
+  title/author/year align. Fetched text contains the key passage about citizen science
+  legitimacy being shaped by professional experts, and the described evidence directly
+  supports H1 as a boundary-work/epistemic-authority citation.'
 superseded_by: null
 notes: 'Global North (author, University of British Columbia), EN, peer-reviewed,
   journal-article, discipline: science communication / sociology of science. Found

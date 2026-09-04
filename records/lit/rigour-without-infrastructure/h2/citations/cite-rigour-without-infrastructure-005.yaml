@@ -9,7 +9,7 @@ fetched_at: '2026-09-04'
 metadata_verified: true
 metadata_verified_by: mechanical:crossref
 metadata_verified_at: '2026-09-04'
-claim_match_verified: false
+claim_match_verified: true
 claim_match_verified_by: route:codex
 claim_match_verified_at: '2026-09-04'
 exact_passage: '"Hegemonic Open Science, emergent from the circuits of knowledge production
@@ -26,7 +26,7 @@ independence_class: I3
 who_verified: route:codex (cross-vendor AI; abstract/metadata level, not full text)
   -- see cite-rigour-without-infrastructure-005.i3.json
 verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
-status: METADATA_OK
+status: VERIFIED
 xenon_ledger_ref: null
 disclosure: 'Crossref-confirmed: Mohan Dutta et al. (2021), "Decolonizing Open Science:
   Southern Interventions", Journal of Communication, DOI 10.1093/joc/jqab027 (23 co-authors,
@@ -42,7 +42,11 @@ disclosure: 'Crossref-confirmed: Mohan Dutta et al. (2021), "Decolonizing Open S
   Metadata does not contradict the card, and the passage matches the fetched abstract
   with ellipsis. But H2 content is not provided, so I cannot verify that the source
   bears on the hypothesis beyond the card''s context-only scope; uncertain therefore
-  false.'
+  false. | I3 route (codex) judged from fetched metadata/abstract + the card''s quoted
+  passage, not full text: Metadata does not contradict the card. The quoted passage
+  is not a continuous verbatim hit because of the ellipsis, but both quoted parts
+  appear in the fetched abstract. The source provides contextual discussion of Global
+  South/decolonizing open science, matching the card’s CONTEXT_ONLY scope.'
 superseded_by: null
 notes: 'Diversity: language=en, source_type=peer_reviewed, geography=Global South
   (author collective spans India, Aotearoa/NZ, Bangladesh, Philippines and other Southern/diasporic

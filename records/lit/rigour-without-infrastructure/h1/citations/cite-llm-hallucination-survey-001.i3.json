@@ -15,7 +15,8 @@
   "passage_plausible": true,
   "claim_match": true,
   "bearing": "SUPPORTS",
-  "reason": "Fetched metadata does not contradict the card. The abstract directly contains the reliability/trustworthiness sentence and supports the general claim that LLM hallucinations create factual-accuracy risks; the detection-method sentence is not verified here but is not contradicted by the abstract."
+  "reason": "Metadata does not contradict the card’s identifier/title/year fields as given. The fetched abstract contains the quoted reliability sentence, and the survey topic directly supports the card’s general claim that LLM hallucinations create reliability risks requiring verification and imperfect detection coverage.",
+  "passage_mechanical": "verbatim prefix found in fetched open text"
  },
  "date": "2026-09-04"
 }

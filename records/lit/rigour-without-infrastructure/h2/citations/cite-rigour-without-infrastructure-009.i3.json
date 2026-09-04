@@ -7,10 +7,11 @@
  },
  "verdict": {
   "metadata_matches": true,
-  "passage_plausible": false,
+  "passage_plausible": true,
   "claim_match": false,
   "bearing": "CONTEXT_ONLY",
-  "reason": "Metadata does not contradict the card. However only title/abstract metadata is provided, with no fetched article body to verify the exact passage. H2 content is not stated, so support for the hypothesis cannot be confirmed."
+  "reason": "Metadata and quoted passage match the fetched title/byline/date/excerpt. The passage plausibly supports a general claim about Thai Open Science access. However H2 is only named, not stated, so the source’s bearing on the actual hypothesis cannot be verified from the provided material.",
+  "passage_mechanical": "verbatim prefix found in fetched open text"
  },
  "date": "2026-09-04"
 }

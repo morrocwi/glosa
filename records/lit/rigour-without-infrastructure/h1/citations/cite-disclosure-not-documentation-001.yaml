@@ -39,7 +39,12 @@ disclosure: 'Same-session AI check only (I1) -- METADATA_OK, not VERIFIED. Title
   from fetched metadata/abstract + the card''s quoted passage, not full text: Metadata
   does not contradict the card, and the quoted/paraphrased passage is directly reflected
   in the fetched abstract. But H1 is not defined beyond its label, so support for
-  the hypothesis cannot be independently assessed from the provided material.'
+  the hypothesis cannot be independently assessed from the provided material. | I3
+  route (codex) judged from fetched metadata/abstract + the card''s quoted passage,
+  not full text: Metadata does not contradict the card, and the quoted passage appears
+  verbatim in the fetched text. However, H1 is not stated beyond its label, so the
+  source’s support for that hypothesis cannot be independently checked from the provided
+  material.'
 superseded_by: null
 notes: 'Global North (author affiliation not confirmed beyond abstract), EN, peer-reviewed,
   journal-article. Found via query family: support (AI-assisted research disclosure

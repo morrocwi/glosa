@@ -20,8 +20,8 @@ candidates:
       person with no institutional affiliation can co-produce knowledge with AI whose rigour a
       reader can check for themselves, without an institutional credential serving as the thing
       that certifies it.
-    lrs_manifest_ref: /home/yaoharee-lt/ANSE.ASIA/glosa/records/lit/rigour-without-infrastructure/h1/litreview_manifest.yaml
-    dialogue_table_ref: /home/yaoharee-lt/ANSE.ASIA/glosa/records/lit/rigour-without-infrastructure/h1/dialogue_table.md
+    lrs_manifest_ref: records/lit/rigour-without-infrastructure/h1/litreview_manifest.yaml
+    dialogue_table_ref: records/lit/rigour-without-infrastructure/h1/dialogue_table.md
     criteria:
       developability:
         unresolved_space_shown_by_dialogue_table: >-
@@ -63,8 +63,8 @@ candidates:
       separates, what AI filled, what is assumed, what independent check it survived) --
       institutions are one historical mechanism that has produced this property, not the only
       possible one.
-    lrs_manifest_ref: /home/yaoharee-lt/ANSE.ASIA/glosa/records/lit/rigour-without-infrastructure/h2/litreview_manifest.yaml
-    dialogue_table_ref: /home/yaoharee-lt/ANSE.ASIA/glosa/records/lit/rigour-without-infrastructure/h2/dialogue_table.md
+    lrs_manifest_ref: records/lit/rigour-without-infrastructure/h2/litreview_manifest.yaml
+    dialogue_table_ref: records/lit/rigour-without-infrastructure/h2/dialogue_table.md
     criteria:
       developability:
         unresolved_space_shown_by_dialogue_table: >-
@@ -104,8 +104,8 @@ candidates:
       produced the card (I0/I1), the rate at which undisclosed AI-fill (a false Q3 field) or
       undisclosed assumptions (a false Q4 field) is caught rises measurably compared to
       same-vendor re-checking.
-    lrs_manifest_ref: /home/yaoharee-lt/ANSE.ASIA/glosa/records/lit/rigour-without-infrastructure/h3/litreview_manifest.yaml
-    dialogue_table_ref: /home/yaoharee-lt/ANSE.ASIA/glosa/records/lit/rigour-without-infrastructure/h3/dialogue_table.md
+    lrs_manifest_ref: records/lit/rigour-without-infrastructure/h3/litreview_manifest.yaml
+    dialogue_table_ref: records/lit/rigour-without-infrastructure/h3/dialogue_table.md
     criteria:
       developability:
         unresolved_space_shown_by_dialogue_table: >-
