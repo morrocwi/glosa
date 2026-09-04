@@ -1,0 +1,253 @@
+$schema: blackbox_note.schema.json
+# Blackbox Note for project GLS-2026-001 (rigour-without-infrastructure) -- glosa run ON its own
+# paper (dogfood, founder instruction BBL-2026-09-04-091). Raw lines below are verbatim, never
+# edited in place; a correction is a new line (§2.3, chair ruling A1). Sources: (a) the 9 public
+# founder lines already curated into blackbox/BLACKBOX_NOTE_glosa-paper_2026-09-04.md, and (b) the
+# public Blackbox Log entries BBL-2026-09-04-083, -086, -088 (correction of -086), -089
+# (blackbox/log/entries.jsonl), which the founder instructed (BBL-2026-09-04-084/087) be folded
+# into glosa's own spine (§2.1a/§2.1b/§2.1c of design/FOUNDATION_v0.5.md).
+id: BB-2026-09-04-01
+project: GLS-2026-001
+session_ref: "local session transcript, 2026-09-04 (glosa dogfood run); not public beyond the curated lines below and the public Blackbox Log entries cited by id"
+participants:
+  - role: founder
+  - role: AI-anthropic/claude-fable
+language: mixed
+privacy_scan: done
+public_lines_selected_by: founder
+lines:
+  # --- 9 lines curated by the founder into blackbox/BLACKBOX_NOTE_glosa-paper_2026-09-04.md ---
+  - n: 1
+    ts: "2026-09-04"
+    speaker: founder
+    kind: question
+    text_verbatim: |
+      ...คนที่ไม่มีมหาวิทยาลัย ไม่มีแล็บ และไม่มีทีมวิจัย จะผลิตความรู้จากพื้นที่ของตนเองอย่างเข้มงวดได้อย่างไร...
+    distinction_introduced: >-
+      Separates "knows the problem" from "can turn that knowing into rigorous, checkable
+      knowledge" -- the gap is institutional infrastructure (university/lab/team), not
+      knowledge itself. This is the paper abstract's seed question (paper/main_th.md).
+    became:
+      - claim_card: "H0 (paper hypothesis, paper/main_th.md); [C101]"
+    public: true
+    ai_proposed: false
+  - n: 2
+    ts: "2026-09-04"
+    speaker: founder
+    kind: proposal
+    text_verbatim: |
+      และสร้าง เทมเพลทวิชาการ ไว้เลยว่าต้องเป็นแบบไหน arxiv 1 คอลัม สองคอมลัม์อะไรก็ว่าไป
+    distinction_introduced: "Names a concrete deliverable (a fixed academic template) as part of the methodology, not left implicit."
+    became:
+      - claim_card: "[C108]; this LaTeX build"
+    public: true
+    ai_proposed: false
+  - n: 3
+    ts: "2026-09-04"
+    speaker: founder
+    kind: proposal
+    text_verbatim: |
+      วิธีวิทยาสำคัญมากนะ ตอ้ง disclraim อะไรต่างๆให้ชัดและเป็นระบบ
+    distinction_introduced: "Separates 'method exists' from 'method's limits are disclosed systematically' -- disclaimers are not optional decoration."
+    became:
+      - claim_card: "§Limitations; [C107]"
+    public: true
+    ai_proposed: false
+  - n: 4
+    ts: "2026-09-04"
+    speaker: founder
+    kind: proposal
+    text_verbatim: |
+      เรื่อง cite ที่แม่นยำสำคัญมากในะรดบบ standalone scholar
+    distinction_introduced: "Names citation accuracy as load-bearing specifically for a standalone scholar (no institutional citation-checking apparatus behind them)."
+    became:
+      - claim_card: "§Demonstration; [C109]"
+    public: true
+    ai_proposed: false
+  - n: 5
+    ts: "2026-09-04"
+    speaker: founder
+    kind: proposal
+    text_verbatim: |
+      เอาตาราง non-collapse ทั้งหมดใส่เข้า foundation ด้วย และ ทำระบบ ว่าตอ้งตรวจข้าม เอไอคนละยี่ห้อ ถึงจะเพิ่มความแม่นยำเพิ่ม...
+    distinction_introduced: "Separates checking by the same AI vendor (no gain) from checking across different AI vendors (the independence ladder) as what actually raises confidence."
+    became:
+      - claim_card: "§By which method (Independence Ladder); [C102]"
+    public: true
+    ai_proposed: false
+  - n: 6
+    ts: "2026-09-04"
+    speaker: founder
+    kind: proposal
+    text_verbatim: |
+      ยังมีเรื่องของ โครงสร้างงานวิจัยด้วย... และ IMRAD เหมากับแบบไหน
+    distinction_introduced: "Raises that manuscript structure/genre is itself a design choice (which genre a given claim-type fits), not one-size-fits-all IMRAD."
+    became:
+      - claim_card: "§By which method; §Genre and evidence standard; [C103]"
+    public: true
+    ai_proposed: false
+  - n: 7
+    ts: "2026-09-04"
+    speaker: founder
+    kind: proposal
+    text_verbatim: |
+      ใส่ nearest-neighbour collision audit กับเครื่องมือในตลาดเข้า foundation ด้วย
+    distinction_introduced: "Requires an explicit same/different/cited comparison against existing tools, rather than silence on neighbours (never 'novel/first')."
+    became:
+      - claim_card: "§How neighbours do it; [C104]"
+    public: true
+    ai_proposed: false
+  - n: 8
+    ts: "2026-09-04"
+    speaker: founder
+    kind: question
+    text_verbatim: |
+      ถ้าเราถามว่า คำถามวิจัยก่อนเปลี่ยนเป็นภาษาางานวิชาการคือ ทำไมแมวเยี่ยวไม่เป็นที่
+    distinction_introduced: >-
+      Worked demonstration line: shows a raw household-decision question ("ไม่เป็นที่" is a
+      human decision policy, not a neutral observation) that must not be silently collapsed
+      into an unlensed diagnosis (cases/worked-example-cat.md).
+    became:
+      - claim_card: "§Demonstration; cases/worked-example-cat.md; [C105]"
+    public: true
+    ai_proposed: false
+  - n: 9
+    ts: "2026-09-04"
+    speaker: founder
+    kind: ruling
+    text_verbatim: |
+      ทำให้เป็นเกณฑ์บังคับ
+    distinction_introduced: "Turns the preceding proposal from optional guidance into a mandatory gate."
+    became:
+      - rule: "Appendix B itself (this appendix)"
+    public: true
+    ai_proposed: false
+  # --- Blackbox Log entries the founder instructed folded into the spine (public log ids kept) ---
+  - n: 10
+    ts: "2026-09-04T19:14:18+07:00"
+    speaker: founder
+    kind: proposal
+    text_verbatim: |
+      แต่คำว่าสังเกต มันเป็นนามธรรม คือเป็นกริยา ถ้าเราเริ่มจำปัญหาหละ มันมีกระบวนการแบบนี้ไหม เราก็เลยเสนอให้โฟกัสปัญหาแถน
+    distinction_introduced: >-
+      Separates "observation" (an abstract verb, not a starting node) from "problem state"
+      (a concrete pre-existing thing a knower encounters) -- proposes the spine start from
+      the problem rather than from an undifferentiated "observe."
+    became:
+      - rule: "design/FOUNDATION_v0.5.md §2.1a (Problem before observation)"
+    public: true
+    ai_proposed: false
+    # id: BBL-2026-09-04-083 (blackbox/log/entries.jsonl; concept DOI 10.5281/zenodo.22302518)
+  - n: 11
+    ts: "2026-09-04T19:26:39+07:00"
+    speaker: founder
+    kind: proposal
+    text_verbatim: |
+      หรืออีกทางหนึ่งก็คือ
+      ถ้าปัญหายังเป็นของเรา
+      คำถามยังเป็นของเรา
+      และ สมมุติฐานยังเป็นของเรา
+      แล้วนำไปสู่การแก้ปัญหาให้เรา จะใช้เอไอใช้แมวใช้หมี
+      ก็ใช้ไปเถอะ เพราะนั่นคือเป้าหมายของความรู้
+      แก้ปัญหาให้ใครสักคน
+    distinction_introduced: >-
+      First statement of the ownership criterion: which nodes on the spine must stay human
+      (problem, question, hypothesis) vs. which may be performed by any tool. Corrected by
+      line 12 below (hypothesis -> 'selection' of the hypothesis).
+    became:
+      - rule: "design/FOUNDATION_v0.5.md §2.1c (superseded by its own correction, line 12)"
+    public: true
+    ai_proposed: false
+    # id: BBL-2026-09-04-086, corrected by BBL-2026-09-04-088
+  - n: 12
+    ts: "2026-09-04T19:39:10+07:00"
+    speaker: founder
+    kind: correction
+    text_verbatim: |
+      หรืออีกทางหนึ่งก็คือ
+      ถ้าปัญหายังเป็นของเรา
+      คำถามยังเป็นของเรา
+      และ 'การเลือก'สมมุติฐานยังเป็นของเรา
+      แล้วนำไปสู่การแก้ปัญหาให้เรา จะใช้เอไอใช้แมวใช้หมี
+      ก็ใช้ไปเถอะ เพราะนั่นคือเป้าหมายของความรู้
+      แก้ปัญหาให้ใครสักคน
+    distinction_introduced: >-
+      Corrects line 11: it is specifically the SELECTION of the hypothesis (not the drafting
+      of candidates) that must stay human -- AI may propose candidate hypotheses, only the
+      founder chooses among them. This is the criterion this task's TASK A1 (do NOT select) runs
+      under.
+    became:
+      - rule: "design/FOUNDATION_v0.5.md §2.1c (ownership criterion, final wording)"
+    public: true
+    ai_proposed: false
+    # id: BBL-2026-09-04-088 (corrects BBL-2026-09-04-086)
+  - n: 13
+    ts: "2026-09-04T19:42:57+07:00"
+    speaker: founder
+    kind: ruling
+    text_verbatim: |
+      "สภาวะปัญหา (ยังไม่ถูกอ่าน) → การอ่านออกครั้งแรกโดยมนุษย์ → คำถามภาษามนุษย์ → lens-in → สมมติฐาน (lens-out, เซ็น) → หลักฐาน → ความรู้ชั่วคราว (K0…)" ซึ่งก็คือแกนเดิมของเรา เขียนให้เห็นชั้น "ก่อนการอ่าน" ชัดขึ้นหนึ่งชั้น อันนี้เราเห็นด้วยนะ
+    distinction_introduced: >-
+      Founder ruling agreeing to the finer-grained spine diagram that shows the pre-readout
+      problem-state layer explicitly (the quoted spine wording was AI-drafted; the agreement
+      that ratifies it is the founder's own act).
+    became:
+      - rule: "design/FOUNDATION_v0.5.md §2.1a diagram"
+    public: true
+    ai_proposed: false
+    # id: BBL-2026-09-04-089
+lens_used:
+  display: "Readout Universe — Yaoharee Lahtee"
+  description: "readout-not-truth; retained distinction; Readout Condition E–A–D (Readout Universe / Readout Genesis)"
+  author: "Yaoharee Lahtee"
+  orcid: "0009-0005-3861-0626"
+  references:
+    - "10.5281/zenodo.21529456"
+    - "10.5281/zenodo.21665100"
+    - "10.5281/zenodo.22301318"
+    - "10.5281/zenodo.22301202"
+    - "github.com/morrocwi/readout_universe"
+  repo_urls:
+    - "https://github.com/morrocwi/readout_universe"
+    - "https://github.com/morrocwi/readout_genesis"
+  repo_ref: "2026-09-04"
+  must_appear_in_document: true
+  version_or_date_read: "2026-09-04"
+  what_it_did_here:
+    lens_in: >-
+      Read the founder's L1 question and the paper abstract as a readout problem: which
+      distinctions (evidence seen / data separated / AI-filled / assumed / independently
+      tested) does a standalone scholar's claim currently fail to carry, versus what an
+      institutionally-backed claim implicitly borrows from lab/department/committee
+      machinery to carry the same distinctions.
+    lens_out: >-
+      Translated back into world/discipline language as three candidate hypotheses
+      (hypotheses.md) about whether a claim-card discipline (the founder's five questions +
+      E-A-D + independence ladder) can substitute for institutional infrastructure as what
+      lets a claim be checked.
+  if_other_lens: "no other lens was used for this project's lens_translation/hypotheses this pass"
+  note: "attribution ≠ authority — naming the lens credits its source and lets a reader replace it; it does not make the lens true"
+cooking:
+  - step: lens_in
+    ts: "2026-09-04"
+    by: "ai-anthropic/claude-fable"
+    input_lines: [1]
+    output_ref: "lens_translation.md"
+    what_changed: >-
+      Drafted question_readout, local_contrast_space_X, access_relation_R, and
+      claim_function_Phi_z0 from line 1's raw question, under the Readout Universe lens
+      (P00_lens.md ordering rule); not yet reviewed by an independent route.
+  - step: lens_out
+    ts: "2026-09-04"
+    by: "ai-anthropic/claude-fable"
+    input_lines: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
+    output_ref: "hypotheses.md"
+    what_changed: >-
+      Drafted three candidate world-language hypotheses (H1 design-science claim implied by
+      the paper abstract, H2, H3) from the readout formulation; candidates only -- selection
+      among them is reserved to the founder (line 12 / BBL-2026-09-04-088), not performed
+      here.
+r1_readout_ref: "lens_translation.md"
+r2_hypothesis_ref: "hypotheses.md"
+translation_status: missing
+disclaimers: [D-BLACKBOX-NOTE, D-STANDPOINT]

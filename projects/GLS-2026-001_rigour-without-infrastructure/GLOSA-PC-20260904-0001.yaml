@@ -1,0 +1,64 @@
+$schema: problem_card.schema.json
+problem_id: GLOSA-PC-20260904-0001
+project: GLS-2026-001
+intake:
+  q1_issue:
+    text_verbatim: "...คนที่ไม่มีมหาวิทยาลัย ไม่มีแล็บ และไม่มีทีมวิจัย จะผลิตความรู้จากพื้นที่ของตนเองอย่างเข้มงวดได้อย่างไร..."
+    retained_difference_statement: >-
+      Under the agency of a standalone practitioner/citizen (no university affiliation, no
+      certified lab, no research team) working in their own local context, and the query "can this
+      person's own knowledge become rigorous, checkable knowledge, or not" -- the difference that
+      survives: people who live daily with a problem (marginalized people, frontline workers,
+      communities) typically know the problem before researchers do, but converting that knowing
+      into "knowledge" hits walls of language, method, funding, institution, and expertise. AI
+      lowers those walls quickly, but a second difference then survives: now anyone can produce
+      output that looks smart and academic, while it remains unknown which part is evidence, which
+      part is interpretation, and which part AI smoothed over past what the actual data supports.
+      This is a difference that survives under this agency/context/query, not merely a topic label
+      ("AI and research" or "citizen science").
+    agency: standalone practitioner / citizen without institutional research infrastructure (no
+      university, no lab, no research team), assisted by AI
+    context: producing knowledge from one's own local/practice area, with AI assistance available
+      but no institutional status of one's own
+    query: can a claim this person produces be made rigorous and checkable by a reader, without an
+      institutional credential as the thing that certifies it?
+    blackbox_line_ref: blackbox/BLACKBOX_NOTE_glosa-paper_2026-09-04.md#L1
+  q2_user_proposal:
+    text: none
+    stated_by: founder
+    blackbox_line_ref: blackbox/BLACKBOX_NOTE_glosa-paper_2026-09-04.md#L1
+standpoint:
+  declared_basis: >-
+    Written from the standpoint of a social entrepreneur and citizen (founder, Yaoharee Lahtee),
+    not as a substitute expert in computer science, philosophy of science, or information science.
+    AI assistance (Claude, seated as "Fable" this session) drafts structure, content, and claim
+    cards; disclosed throughout; never counted as an author. Per paper/main_th.md standpoint
+    section and glosa gate rule 5 (human holds standpoint, falsifier judgment, ethics, public
+    commitment; AI drafts/routes/checks/logs only).
+  disciplines_not_claimed:
+    - medicine
+    - religious/fiqh authority
+    - law
+    - engineering
+    - anthropology
+    - political science
+    - formal computer science beyond what actually runs in this project
+  method_basis: glosa methodology itself (claim cards answering the founder's five questions, tied
+    to the Readout Condition's Existence-Attribution-Disclosure, gated through the independence
+    ladder before public release) -- this project runs glosa on glosa's own paper (dogfood, BBL-2026-09-04-091).
+origin_blackbox_ref: blackbox/BLACKBOX_NOTE_glosa-paper_2026-09-04.md#L1
+produced_by: joint
+responsible: human
+readiness:
+  verdict: READY_FOR_S2
+  reason: Q1 issue and Q2 proposal filled from the founder's own verbatim line (L1) and the paper
+    abstract (paper/main_th.md); standpoint declared from paper/main_th.md's own standpoint
+    section; no analysis performed yet -- this is intake only, self-check not a release gate.
+  checked_by: founder
+  checked_at: '2026-09-04'
+k_state: K0
+status: Draft
+human_owner: founder
+notes: This problem card exists because glosa is being run ON its own paper (dogfood, founder
+  instruction BBL-2026-09-04-091). The "problem" here is the founder's own research problem stated
+  in the paper abstract (paper/main_th.md), not a problem about the glosa tool itself.

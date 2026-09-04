@@ -1,0 +1,32 @@
+name: install-test
+# Regression guard (founder ruling 2026-09-04): an ordinary person must be able to install glosa
+# with one HTTPS command; no ssh, no root. Runs the installer from a fresh clone into a temp dir.
+on:
+  push: { branches: [main] }
+  pull_request:
+  workflow_dispatch:
+jobs:
+  install:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix: { python: ["3.10", "3.12"] }
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "${{ matrix.python }}" }
+      - name: unit + install tests (in repo)
+        run: |
+          python -m pip install --user -r requirements.txt
+          python -m pytest -q tests
+      - name: fresh install into a temp HOME from the checked-out source (HTTPS-only script)
+        run: |
+          export HOME=$(mktemp -d)
+          GLOSA_DIR=$HOME/glosa GLOSA_SOURCE=$GITHUB_WORKSPACE bash install.sh
+          $HOME/.local/bin/glosa doctor
+          $HOME/.local/bin/glosa demo >/dev/null
+      - name: fresh install straight from GitHub over HTTPS (what a stranger runs)
+        if: github.event_name != 'pull_request'
+        run: |
+          export HOME=$(mktemp -d)
+          GLOSA_DIR=$HOME/glosa GLOSA_REF=${GITHUB_REF_NAME} bash install.sh
+          $HOME/.local/bin/glosa doctor

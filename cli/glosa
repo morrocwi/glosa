@@ -1189,6 +1189,54 @@ def cmd_self_test(args):
     return (0 if res["ok"] else 1), {"action": "self_test", "result": res}
 
 
+def cmd_doctor(args):
+    """Install health check for ordinary users: PASS/FAIL per item, exit 1 on any FAIL.
+    Founder ruling 2026-09-04 (BBL-2026-09-04-092/093): install must work for non-experts and be
+    regression-tested. Everything printed is a readout of this machine, not truth."""
+    import importlib
+    import platform
+    rows = []
+
+    def row(name, ok, detail=""):
+        rows.append((name, bool(ok), detail))
+
+    vi = sys.version_info
+    row("python >= 3.10", vi >= (3, 10), platform.python_version())
+    for mod, why in (("jsonschema", "schema validation"), ("yaml", "YAML manifests"), ("markdown", "render (optional)")):
+        try:
+            importlib.import_module(mod)
+            row("pip: " + mod, True, why)
+        except Exception:
+            row("pip: " + mod, mod == "markdown", why + (" — optional" if mod == "markdown" else " — run: python3 -m pip install --user -r requirements.txt"))
+    for rel in ("kernel/glosa_kernel.py", "schema/claim_card.schema.json", "design/FOUNDATION_v0.5.md",
+                "plugins/glosa/.claude-plugin/plugin.json", ".claude-plugin/marketplace.json",
+                "plugins/glosa/PROMPT_PACKET.md", "mcp/glosa_mcp_server.py", "requirements.txt"):
+        row("file: " + rel, (REPO_ROOT / rel).exists())
+    try:
+        mk = json.loads((REPO_ROOT / ".claude-plugin/marketplace.json").read_text(encoding="utf-8"))
+        srcs = [pl.get("source") for pl in mk.get("plugins", [])]
+        local_ok = all(isinstance(src, str) and src.startswith("./") and (REPO_ROOT / src).is_dir() for src in srcs)
+        row("plugin manifest: in-repo source (no remote clone / no ssh)", local_ok, str(srcs))
+    except Exception as e:  # noqa: BLE001
+        row("plugin manifest parse", False, str(e))
+    skills = REPO_ROOT / "plugins/glosa/skills"
+    missing = [d.name for d in skills.iterdir() if d.is_dir() and not (d / "SKILL.md").exists()] if skills.exists() else ["(no skills dir)"]
+    row("skills: every skill has SKILL.md", not missing, ", ".join(missing) or "%d skills" % len(list(skills.iterdir())))
+    err = _need_kernel()
+    if err:
+        row("kernel import", False, str(err))
+    else:
+        res = k.self_test()
+        row("kernel self_test", res.get("ok"), res.get("verdict"))
+    link = Path.home() / ".local/bin/glosa"
+    ok_all = all(r[1] for r in rows)
+    for name, ok, detail in rows:
+        print("%s  %-58s %s" % ("PASS" if ok else "FAIL", name, detail))
+    print("INFO  %-58s %s" % ("cli link ~/.local/bin/glosa", str(link.resolve()) if link.exists() else "not linked (install.sh creates it; optional)"))
+    print("glosa doctor:", "PASS — ใช้งานได้" if ok_all else "FAIL — see FAIL lines above (ดูบรรทัด FAIL)")
+    return (0 if ok_all else 1), {"action": "doctor", "ok": ok_all, "checks": [{"name": n, "ok": o, "detail": d} for n, o, d in rows]}
+
+
 def cmd_demo(args):
     err = _need_kernel()
     if err:
@@ -1385,6 +1433,9 @@ def build_parser():
 
     a = sub.add_parser("demo", help="run the cat worked example end-to-end and print every verdict")
     a.set_defaults(func=cmd_demo)
+
+    a = sub.add_parser("doctor", help="install health check: PASS/FAIL per item (python, deps, files, plugin manifest, kernel)")
+    a.set_defaults(func=cmd_doctor)
 
     return p
 

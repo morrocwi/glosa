@@ -6,6 +6,13 @@
 
 งานนี้ตอบแค่ 3 คำถาม: **แก้ปัญหาอะไร · ด้วยวิธีไหน · เพื่อนบ้านใกล้เคียงทำเหมือนหรือต่างอย่างไร** เราไม่อ้างความใหม่ ไม่แข่งกับอำนาจความรู้ และบอกไว้ว่าอะไรจะทำให้เราผิด
 
+
+## Install (ติดตั้ง — one line, no ssh, no root)
+```bash
+curl -fsSL https://raw.githubusercontent.com/morrocwi/glosa/main/install.sh | bash
+```
+Then `glosa doctor` · Claude Code: `claude plugin marketplace add morrocwi/glosa` + `claude plugin install glosa@yaoharee-lahtee-glosa` (new session) · other AIs: `plugins/glosa/PROMPT_PACKET.md` · full guide: `INSTALL.md`.
+
 ## เริ่มอ่านที่ไหน
 - มนุษย์: `design/FOUNDATION_v0.5.md` (รากฐานทั้งระบบ — ยังเป็นร่าง; สเปกเดียวที่ใช้งานจริง ดู `design/CURRENT_SPEC.txt`) → `templates/knowledge/blackbox_note.yaml` (บันทึกกล่องดำ: เสียงดิบ + การปรุง) → `templates/paper/` (LaTeX arXiv 1/2 คอลัมน์ compile แล้ว)
 - AI ทุกยี่ห้อ: `AGENTS.md` / `CLAUDE.md` / `GEMINI.md` (บล็อกเดียวกัน) และ `llms.txt`
