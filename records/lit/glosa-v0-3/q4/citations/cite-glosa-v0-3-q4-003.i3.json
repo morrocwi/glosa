@@ -16,7 +16,7 @@
   "passage_plausible": true,
   "claim_match": false,
   "bearing": "CONTEXT_ONLY",
-  "reason": "Metadata title/year/first author align, and the fetched excerpt contains the quoted passage. The passage concerns evidence-grading methods in Latin America/Caribbean CPGs, but Q4 is undefined here, so I cannot verify that it matches the hypothesis.",
+  "reason": "Metadata and fetched passage align with the card. But the hypothesis is only labeled Q4, with no substantive proposition provided, so I cannot verify that this source bears on it as claimed. Per rule, uncertainty makes claim_match false.",
   "passage_mechanical": "verbatim prefix found in fetched open text"
  },
  "date": "2026-09-04"

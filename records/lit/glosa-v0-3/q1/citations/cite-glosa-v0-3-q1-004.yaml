@@ -47,7 +47,12 @@ disclosure: 'I0 only (same session, not independently checked). Title/authors/pu
   + the card''s quoted passage, not full text: Metadata title, first author, and year
   match. The quoted passage was not found mechanically and no fetched text excerpt
   is available to compare, so passage_plausible is false by rule. Hypothesis content
-  is only ''Q1'', so relevance/support cannot be independently established.'
+  is only ''Q1'', so relevance/support cannot be independently established. | I3 route
+  (codex) judged from fetched metadata/abstract + the card''s quoted passage, not
+  full text: Metadata matches title, first author, and year. The quoted passage was
+  not found, and no fetched text excerpt is available to compare, so passage plausibility
+  fails. Hypothesis Q1 is unspecified here, so the source’s evidenced relation to
+  the claimed support cannot be verified.'
 superseded_by: null
 notes: 'Global North (authors at University of Illinois / UC San Diego at time of
   writing), EN, peer-reviewed academic monograph (MIT Press, "Inside Technology" series),

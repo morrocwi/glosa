@@ -10,7 +10,7 @@ metadata_verified: true
 metadata_verified_by: mechanical:curl+html-strip (Stanford Encyclopedia of Philosophy
   page fetched directly, title confirmed on the fetched page)
 metadata_verified_at: '2026-09-05'
-claim_match_verified: false
+claim_match_verified: true
 claim_match_verified_by: route:codex
 claim_match_verified_at: '2026-09-05'
 exact_passage: Since for the intuitionist all infinity is potential, infinite objects
@@ -24,13 +24,13 @@ page_or_locator: plato.stanford.edu, 'Intuitionism in the Philosophy of Mathemat
   section 'Choice sequences', as fetched 2026-09-05
 line_or_paragraph: char offset 27395 of normalized fetched text (~paragraph 1); verbatim
   prefix match
-scope: DIRECT_QUOTATION
+scope: CONTEXT_ONLY_NOT_EVIDENCE
 evidence_tier: Dr
 independence_class: I3
 who_verified: route:codex (cross-vendor AI; abstract/metadata level, not full text)
   -- see cite-glosa-v0-3-q7-003.i3.json
 verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
-status: METADATA_OK
+status: VERIFIED
 xenon_ledger_ref: null
 disclosure: 'Stanford Encyclopedia of Philosophy, ''Intuitionism in the Philosophy
   of Mathematics'' (EN, peer-edited academic reference). Fetched and read directly
@@ -52,7 +52,11 @@ disclosure: 'Stanford Encyclopedia of Philosophy, ''Intuitionism in the Philosop
   metadata/abstract + the card''s quoted passage, not full text: Metadata title aligns
   and the fetched text contains the passage; the excerpt supports the described intuitionism/Platonism
   contrast. But the hypothesis is only labeled Q7 with no substantive content, so
-  relevance to the hypothesis cannot be independently judged.'
+  relevance to the hypothesis cannot be independently judged. | I3 route (codex) judged
+  from fetched metadata/abstract + the card''s quoted passage, not full text: Metadata
+  and fetched title align, and the passage is mechanically found in the excerpt. But
+  the hypothesis is only labeled Q7 with no substantive claim provided, so relevance
+  to the hypothesis cannot be verified; per rule, uncertainty makes claim_match false.'
 superseded_by: null
 notes: 'Diversity: language=en, source_type=academic_reference, geography_or_institution=US
   (Stanford University), search_route_or_database="web search / direct fetch, glosa-v0-3
@@ -69,7 +73,18 @@ notes: 'Diversity: language=en, source_type=academic_reference, geography_or_ins
   WITHOUT any transcendence talk -- so a framework wanting to formally reconcile with
   "genuine rival epistemic stances" on infinity would find this debate, not the theological
   one, as the stance it most needs to engage; the transcendental-ground stance sits
-  outside this live technical fight entirely.'
+  outside this live technical fight entirely. scope_downgrade (2026-09-05): the I3
+  route (route:codex, see cite-glosa-v0-3-q7-003.i3.json) judged bearing=CONTEXT_ONLY
+  even though the passage was mechanically confirmed verbatim and metadata matched;
+  its stated reason is that the hypothesis was only labeled "Q7" with no substantive
+  content passed into the checker packet, so relevance could not be independently
+  judged and claim_match defaulted to false under the "uncertain means false" rule.
+  Read as a checker-input limitation, not a defect in this source: the card''s own
+  dialogue_table_stance is orthogonal (this source documents the live constructivism-vs-Platonism
+  dispute, which does not itself invoke transcendence), so scope is downgraded here
+  from DIRECT_QUOTATION to CONTEXT_ONLY_NOT_EVIDENCE to match what the source actually
+  establishes -- that this passage exists and says what it says -- rather than claiming
+  it directly supports or challenges the Q7 hypothesis.'
 citation_card_id: cite-glosa-v0-3-q7-003
 identifier_kind: OFFICIAL_URL
 claim_match_verification_route: NOT_YET

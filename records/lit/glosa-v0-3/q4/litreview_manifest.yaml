@@ -6,7 +6,7 @@ search_log_hash: ''
 dialogue_table_ref: records/lit/glosa-v0-3/q4/dialogue_table.md
 neighbour_table_ref: ''
 status: FROZEN
-frozen_at: '2026-09-04T18:03:50.346352+00:00'
+frozen_at: '2026-09-04T19:25:25.924246+00:00'
 supersedes: null
 citations:
 - citation_card_id: cite-glosa-v0-3-q4-001
@@ -15,7 +15,7 @@ citations:
   fetch_status: PAYWALLED_ABSTRACT_ONLY
   acquisition_log_ref: null
   metadata_verified: true
-  claim_match_verified: true
+  claim_match_verified: false
   claim_match_verification_route: NOT_YET
   retraction_check: UNCHECKED
   dialogue_table_stance: undetermined
@@ -25,7 +25,7 @@ citations:
   fetch_status: PAYWALLED_ABSTRACT_ONLY
   acquisition_log_ref: null
   metadata_verified: true
-  claim_match_verified: true
+  claim_match_verified: false
   claim_match_verification_route: NOT_YET
   retraction_check: UNCHECKED
   dialogue_table_stance: undetermined
@@ -35,7 +35,7 @@ citations:
   fetch_status: FETCHED
   acquisition_log_ref: null
   metadata_verified: true
-  claim_match_verified: true
+  claim_match_verified: false
   claim_match_verification_route: NOT_YET
   retraction_check: UNCHECKED
   dialogue_table_stance: undetermined
@@ -45,7 +45,7 @@ citations:
   fetch_status: FETCHED
   acquisition_log_ref: null
   metadata_verified: true
-  claim_match_verified: true
+  claim_match_verified: false
   claim_match_verification_route: NOT_YET
   retraction_check: UNCHECKED
   dialogue_table_stance: undetermined
@@ -55,7 +55,7 @@ citations:
   fetch_status: FETCHED
   acquisition_log_ref: null
   metadata_verified: true
-  claim_match_verified: true
+  claim_match_verified: false
   claim_match_verification_route: NOT_YET
   retraction_check: UNCHECKED
   dialogue_table_stance: undetermined
@@ -65,7 +65,7 @@ citations:
   fetch_status: PAYWALLED_ABSTRACT_ONLY
   acquisition_log_ref: null
   metadata_verified: true
-  claim_match_verified: true
+  claim_match_verified: false
   claim_match_verification_route: NOT_YET
   retraction_check: UNCHECKED
   dialogue_table_stance: undetermined
@@ -75,18 +75,18 @@ citations:
   fetch_status: PAYWALLED_ABSTRACT_ONLY
   acquisition_log_ref: null
   metadata_verified: true
-  claim_match_verified: true
+  claim_match_verified: false
   claim_match_verification_route: NOT_YET
   retraction_check: UNCHECKED
   dialogue_table_stance: undetermined
 - citation_card_id: cite-glosa-v0-3-q4-008
-  status: METADATA_OK
+  status: VERIFIED
   identifier_kind: OFFICIAL_URL
   fetch_status: FETCHED
   acquisition_log_ref: null
   metadata_verified: true
   claim_match_verified: true
-  claim_match_verification_route: NOT_YET
+  claim_match_verification_route: DECORRELATED_AI_I3
   retraction_check: UNCHECKED
   dialogue_table_stance: undetermined
 strata_table: []
@@ -106,7 +106,7 @@ diversity_audit:
   never_claim_diverse_without_counts: true
 accuracy:
   total_citations: 8
-  verified_count: 0
+  verified_count: 1
   spot_check:
     applicable: true
     proposed_n_percent: 20

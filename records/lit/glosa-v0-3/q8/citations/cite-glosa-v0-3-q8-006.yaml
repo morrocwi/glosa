@@ -21,9 +21,13 @@ page_or_locator: 'EDUSOSHUM: Journal of Islamic Education and Social Humanities,
   1 No. 1 (2020), "Dimensi Ontologi, Epistemologi dan Aksiologi Pendidikan Islam"
   (Fawwaz Noor Amirul Huda, Universitas Ahmad Dahlan Yogyakarta), p. 69, section 3
   ("Results and Discussion")'
-line_or_paragraph: paragraph beginning "Kajian filsafat ilmu yang pertama ialah pada
-  persoalan ontology" (pdftotext-extracted lines 116-118 of the fetched PDF, first
-  8 pages)
+line_or_paragraph: PDF page 3 (printed page 69), section 3 "RESULTS AND DISCUSSION",
+  paragraph beginning "Kajian filsafat ilmu yang pertama ialah pada persoalan ontology."
+  -- confirmed verbatim via `curl -sL <url> -o f.pdf && pdftotext -layout f.pdf -`
+  (lines ~115-119 of the pdftotext -layout output); the card's i3 check failed only
+  because the crossvendor script fetches OFFICIAL_URL identifiers as raw HTML/bytes
+  and does not run PDF text extraction, so it saw undecoded PDF binary, not a real
+  card defect
 scope: DIRECT_QUOTATION
 evidence_tier: Open
 independence_class: I3
@@ -49,7 +53,12 @@ disclosure: 'I0 only (same session, not independently checked; ISSN 2776-5229 re
   metadata/abstract + the card''s quoted passage, not full text: Metadata has no explicit
   contradiction, but fetched content is raw PDF binary with empty title/abstract,
   so there is no usable text to compare. The quoted passage was not mechanically found,
-  and evidenced source content cannot be confirmed as relevant context for Q8.'
+  and evidenced source content cannot be confirmed as relevant context for Q8. | I3
+  route (codex) judged from fetched metadata/abstract + the card''s quoted passage,
+  not full text: No title/year/first-author contradiction is visible, so metadata
+  does not fail. The fetched text is raw PDF/binary-like output with no usable extracted
+  passage, and verbatim search failed. From the provided evidence alone, the source
+  cannot be confirmed as relevant context for Q8.'
 superseded_by: null
 notes: 'Indonesian language (Malay/Indonesian-family non-EN search per Q8''s frozen
   scope), Global South / Southeast Asia (Universitas Ahmad Dahlan, Yogyakarta), peer-reviewed-claiming

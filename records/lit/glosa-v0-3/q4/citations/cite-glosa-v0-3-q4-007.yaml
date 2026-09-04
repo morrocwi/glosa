@@ -46,7 +46,11 @@ disclosure: 'I0 only (same session, not independently checked). Title/authors/ve
   does not contradict the card. But the fetched abstract/text is empty and verbatim
   passage search found none, so the quotation cannot be checked. Title suggests relevant
   context on evidence hierarchies, but not enough to confirm the claimed quotation
-  or support.'
+  or support. | I3 route (codex) judged from fetched metadata/abstract + the card''s
+  quoted passage, not full text: Metadata does not contradict the card. However, the
+  fetched text excerpt is empty and the verbatim passage check found nothing, so the
+  quoted passage cannot be checked. With only title/metadata and an unspecified Q4
+  hypothesis, the claimed evidential match is uncertain.'
 superseded_by: null
 notes: 'Global North (LSE / University of Edinburgh), EN, peer-reviewed journal article,
   discipline: philosophy of science / health policy studies. Found via query family:

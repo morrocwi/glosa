@@ -10,7 +10,7 @@
   "passage_plausible": false,
   "claim_match": false,
   "bearing": "CONTEXT_ONLY",
-  "reason": "Metadata title does not contradict the card. But the quoted Thai passage was not found by verbatim search in the fetched text, so the direct-quotation claim is not evidenced. Without the passage, the claimed checkability/truth-value separation is uncertain.",
+  "reason": "Metadata does not contradict the card. But the mechanical verbatim search did not find the quoted passage in fetched text, and the excerpt does not evidence the four-category/checkability distinction. Under uncertainty, the direct-quotation and relevance claim cannot be confirmed.",
   "passage_mechanical": "no open full text fetched; abstract/metadata only"
  },
  "date": "2026-09-04"

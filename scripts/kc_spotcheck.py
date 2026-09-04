@@ -24,11 +24,16 @@ def fetch(card):
         u = str(ROOT / u)
     src = card.get("source") or {}
     try:
+        if u.startswith("http") and (u.lower().endswith(".pdf") or "/files/" in u):
+            import tempfile, os as _os
+            data = urllib.request.urlopen(urllib.request.Request(u, headers={"User-Agent": "Mozilla/5.0 glosa"}), timeout=90).read()
+            tf = tempfile.NamedTemporaryFile(suffix=".pdf", delete=False); tf.write(data); tf.close()
+            out = subprocess.run(["pdftotext", "-l", "40", tf.name, "-"], capture_output=True, text=True).stdout; _os.unlink(tf.name); return out
         if u.startswith("http"):
             time.sleep(0.4)  # avoid bursty rate-limiting on repeated zenodo API calls
             for attempt in range(3):
                 try:
-                    raw = urllib.request.urlopen(urllib.request.Request(u, headers={"User-Agent": "Mozilla/5.0 glosa"}), timeout=30).read(2_000_000).decode("utf-8", "replace")
+                    raw = urllib.request.urlopen(urllib.request.Request(u, headers={"User-Agent": "Mozilla/5.0 glosa"}), timeout=90).read(4_000_000).decode("utf-8", "replace")
                     break
                 except Exception:
                     if attempt == 2: raise
@@ -43,8 +48,10 @@ def fetch(card):
     except Exception as e:  # noqa
         return "ERR:" + str(e)[:80]
     return ""
+only = [a.split("=",1)[1] for a in sys.argv[1:] if a.startswith("--only-hub=")]
 rows = []; ok = miss = err = 0
 for f in sorted(H.glob("*/kc-*.yaml")):
+    if only and f.parent.name not in only: continue
     c = yaml.safe_load(f.read_text(encoding="utf-8")) or {}
     txt = fetch(c); v = norm(c.get("verbatim")); words = v.split()
     if txt.startswith("ERR:") or not txt: status = "no-source"; err += 1

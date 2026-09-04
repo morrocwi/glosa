@@ -9,7 +9,7 @@ fetched_at: '2026-09-05'
 metadata_verified: true
 metadata_verified_by: mechanical:crossref
 metadata_verified_at: '2026-09-05'
-claim_match_verified: false
+claim_match_verified: true
 claim_match_verified_by: route:codex
 claim_match_verified_at: '2026-09-05'
 exact_passage: Through a comprehensive analysis of regulatory documents, virtual consultations
@@ -25,7 +25,7 @@ independence_class: I3
 who_verified: route:codex (cross-vendor AI; abstract/metadata level, not full text)
   -- see cite-glosa-v0-3-q1-005.i3.json
 verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
-status: METADATA_OK
+status: VERIFIED
 xenon_ledger_ref: null
 disclosure: 'I0 only (same session, not independently checked). Title/journal/DOI
   confirmed mechanically via a direct Crossref works lookup on the DOI itself (10.1007/s10734-025-01407-1),
@@ -47,7 +47,12 @@ disclosure: 'I0 only (same session, not independently checked). Title/journal/DO
   quoted passage, not full text: Metadata aligns with DOI title, 2025 year, journal,
   and first author. The quoted passage is present and consistent with the abstract.
   But the hypothesis is only labeled Q1 with no substantive claim, so relevance to
-  the hypothesis cannot be independently judged.'
+  the hypothesis cannot be independently judged. | I3 route (codex) judged from fetched
+  metadata/abstract + the card''s quoted passage, not full text: Metadata and passage
+  align with the fetched record. The source concerns Laos, Global South/Southeast
+  Asia, and institutional transplantation in higher-education governance, matching
+  the card''s contextual/orthogonal stance rather than directly supporting or challenging
+  Q1.'
 superseded_by: null
 notes: 'Global South / Southeast Asia (Laos), EN-language publication, peer-reviewed
   journal article (Higher Education, Springer), discipline: comparative/international

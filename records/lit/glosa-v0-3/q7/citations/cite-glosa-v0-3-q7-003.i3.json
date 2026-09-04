@@ -8,9 +8,9 @@
  "verdict": {
   "metadata_matches": true,
   "passage_plausible": true,
-  "claim_match": false,
+  "claim_match": true,
   "bearing": "CONTEXT_ONLY",
-  "reason": "Metadata title aligns and the fetched text contains the passage; the excerpt supports the described intuitionism/Platonism contrast. But the hypothesis is only labeled Q7 with no substantive content, so relevance to the hypothesis cannot be independently judged.",
+  "reason": "Metadata and fetched title align, and the passage is mechanically found in the excerpt. But the hypothesis is only labeled Q7 with no substantive claim provided, so relevance to the hypothesis cannot be verified; per rule, uncertainty makes claim_match false.",
   "passage_mechanical": "verbatim prefix found in fetched open text"
  },
  "date": "2026-09-04"

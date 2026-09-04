@@ -24,7 +24,7 @@
   "passage_plausible": false,
   "claim_match": false,
   "bearing": "CONTEXT_ONLY",
-  "reason": "Metadata does not contradict the card: title/first author align and no card year conflict is shown. Passage cannot be assessed because verbatim search found none and no fetched text excerpt is available. Without verified passage or hypothesis detail, claim_match is false.",
+  "reason": "Metadata does not contradict the card on title/year/first author. But the mechanical passage check found nothing and no fetched text excerpt is available, so the quoted passage cannot be verified. With no confirmed passage and unclear hypothesis bearing, claim_match is false.",
   "passage_mechanical": "no open full text fetched; abstract/metadata only"
  },
  "date": "2026-09-04"

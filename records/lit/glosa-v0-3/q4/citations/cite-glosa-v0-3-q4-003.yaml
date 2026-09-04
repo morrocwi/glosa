@@ -52,7 +52,12 @@ disclosure: 'I0 only (same session, not independently checked). Title/authors/jo
   judged from fetched metadata/abstract + the card''s quoted passage, not full text:
   Metadata title/year/first author align, and the fetched excerpt contains the quoted
   passage. The passage concerns evidence-grading methods in Latin America/Caribbean
-  CPGs, but Q4 is undefined here, so I cannot verify that it matches the hypothesis.'
+  CPGs, but Q4 is undefined here, so I cannot verify that it matches the hypothesis.
+  | I3 route (codex) judged from fetched metadata/abstract + the card''s quoted passage,
+  not full text: Metadata and fetched passage align with the card. But the hypothesis
+  is only labeled Q4, with no substantive proposition provided, so I cannot verify
+  that this source bears on it as claimed. Per rule, uncertainty makes claim_match
+  false.'
 superseded_by: null
 notes: 'Global South (Colombia / Latin America and Caribbean), EN, peer-reviewed journal
   article, open access (CC BY), discipline: health policy / clinical guideline methodology.

@@ -16,7 +16,7 @@
   "passage_plausible": false,
   "claim_match": false,
   "bearing": "CONTEXT_ONLY",
-  "reason": "Metadata title, first author, and year match. The quoted passage was not found mechanically and no fetched text excerpt is available to compare, so passage_plausible is false by rule. Hypothesis content is only 'Q1', so relevance/support cannot be independently established.",
+  "reason": "Metadata matches title, first author, and year. The quoted passage was not found, and no fetched text excerpt is available to compare, so passage plausibility fails. Hypothesis Q1 is unspecified here, so the source’s evidenced relation to the claimed support cannot be verified.",
   "passage_mechanical": "no open full text fetched; abstract/metadata only"
  },
  "date": "2026-09-04"

@@ -55,7 +55,11 @@ disclosure: 'I0 only (same session, not independently checked). Title/authors/jo
   does not contradict title/year/first author rules. However, no fetched text or abstract
   is available and verbatim passage search found none, so the passage cannot be checked.
   The hypothesis content is only labeled Q4, so support for the claimed stance cannot
-  be confirmed.'
+  be confirmed. | I3 route (codex) judged from fetched metadata/abstract + the card''s
+  quoted passage, not full text: Metadata does not contradict title/year/first author
+  rules. Passage check found no fetched open text or matching excerpt, so plausibility
+  cannot be verified. With only title/metadata and unknown Q4 content, the source
+  cannot be judged to match the claimed direct-quotation support.'
 superseded_by: null
 notes: 'Global North (Australia, La Trobe University), EN, peer-reviewed journal article,
   discipline: epidemiology/evidence synthesis methods. Found via query family: support

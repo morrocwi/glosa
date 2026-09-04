@@ -6,7 +6,7 @@ search_log_hash: ''
 dialogue_table_ref: records/lit/glosa-v0-3/q3/dialogue_table.md
 neighbour_table_ref: ''
 status: FROZEN
-frozen_at: '2026-09-04T17:52:44.551164+00:00'
+frozen_at: '2026-09-04T19:19:52.959472+00:00'
 supersedes: null
 citations:
 - $schema: citation_card.schema.json
@@ -22,23 +22,20 @@ citations:
     text)
   metadata_verified_at: '2026-09-05'
   claim_match_verified: true
-  claim_match_verified_by: self:same-session-read (I1, NOT independent -- awaiting a decorrelated I3 cross-vendor
-    route to upgrade status to VERIFIED per Rule 17/S14; task instruction caps status at METADATA_OK for
-    this pass)
+  claim_match_verified_by: route:codex
   claim_match_verified_at: '2026-09-05'
   exact_passage: AI systems intended to be used by public authorities or on behalf of public authorities
     to evaluate the eligibility of natural persons for essential public assistance benefits and services,
     including healthcare services, as well as to grant, reduce, revoke, or reclaim such benefits and services;
   page_or_locator: 'artificialintelligenceact.eu, ''Annex III: High-Risk AI Systems Referred to in Article
     6(2)'', point 5(a), as rendered on the page fetched 2026-09-05'
-  line_or_paragraph: line 318 of the fetched/stripped page text (list item under Annex III point 5)
+  line_or_paragraph: char offset 15163 of normalized fetched text (~paragraph 1); verbatim prefix match
   scope: CONTEXT_ONLY_NOT_EVIDENCE
   evidence_tier: Dr
-  independence_class: I1
-  who_verified: same-session AI (I1, non-independent) -- metadata confirmed mechanically, passage read
-    and matched to Q3 by the same session that ran the search; no cross-vendor I3 route run in this pass
+  independence_class: I3
+  who_verified: route:codex (cross-vendor AI; abstract/metadata level, not full text) -- see cite-glosa-v0-3-q3-001.i3.json
   verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
-  status: METADATA_OK
+  status: VERIFIED
   xenon_ledger_ref: null
   disclosure: 'EU AI Act, Annex III point 5(a) (EN, primary regulatory text, artificialintelligenceact.eu
     explainer mirror). Fetched and read directly (curl + stdlib HTML stripper for web pages; pdftotext
@@ -48,7 +45,11 @@ citations:
     a health-adjacent AI system needs the heaviest regulatory disclosure. stance vs Q3 as read: ORTHOGONAL.
     independence_class I1 (same session) -- status METADATA_OK only, not VERIFIED: no decorrelated I3
     cross-vendor route has checked this card yet. No novel/first/prior-art claim made about this source;
-    comparison to Q3 is same/different/orthogonal as stated in dialogue_table_stance.'
+    comparison to Q3 is same/different/orthogonal as stated in dialogue_table_stance. | I3 route (codex)
+    judged from fetched metadata/abstract + the card''s quoted passage, not full text: Fetched title matches
+    the cited Annex III page, and the quoted passage appears verbatim in the fetched excerpt. The passage
+    is relevant context for distinguishing public-authority AI eligibility decisions involving healthcare
+    services from other AI uses, matching the card''s context-only scope.'
   superseded_by: null
   notes: 'Diversity: language=en, source_type=grey_literature, geography_or_institution=EU, search_route_or_database="web
     search / direct regulator-site fetch, glosa-v0-3 Q3 scoping pass". dialogue_table_stance: orthogonal.
@@ -91,9 +92,7 @@ citations:
   metadata_verified_by: mechanical:curl+html-strip (official fda.gov guidance FAQ page fetched directly)
   metadata_verified_at: '2026-09-05'
   claim_match_verified: true
-  claim_match_verified_by: self:same-session-read (I1, NOT independent -- awaiting a decorrelated I3 cross-vendor
-    route to upgrade status to VERIFIED per Rule 17/S14; task instruction caps status at METADATA_OK for
-    this pass)
+  claim_match_verified_by: route:codex
   claim_match_verified_at: '2026-09-05'
   exact_passage: 'A: Software that is meant to support time-critical decision making does not meet the
     definition of Non-Device CDS. Often, time sensitive or critical outputs detect life-threatening and/or
@@ -103,14 +102,13 @@ citations:
     CDS software.'
   page_or_locator: fda.gov, 'Clinical Decision Support Software Frequently Asked Questions (FAQs)', Q3
     answer, as fetched 2026-09-05
-  line_or_paragraph: line 105 of the fetched/stripped page text
+  line_or_paragraph: char offset 8528 of normalized fetched text (~paragraph 1); verbatim prefix match
   scope: DIRECT_QUOTATION
   evidence_tier: Dr
-  independence_class: I1
-  who_verified: same-session AI (I1, non-independent) -- metadata confirmed mechanically, passage read
-    and matched to Q3 by the same session that ran the search; no cross-vendor I3 route run in this pass
+  independence_class: I3
+  who_verified: route:codex (cross-vendor AI; abstract/metadata level, not full text) -- see cite-glosa-v0-3-q3-002.i3.json
   verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
-  status: METADATA_OK
+  status: VERIFIED
   xenon_ledger_ref: null
   disclosure: 'U.S. FDA, Clinical Decision Support Software FAQs (EN, primary regulatory guidance). Fetched
     and read directly (curl + stdlib HTML stripper for web pages; pdftotext -l 8 for the one PDF source)
@@ -119,7 +117,11 @@ citations:
     -- not on the software''s topic area or a fixed disclaimer string. stance vs Q3 as read: NO. independence_class
     I1 (same session) -- status METADATA_OK only, not VERIFIED: no decorrelated I3 cross-vendor route
     has checked this card yet. No novel/first/prior-art claim made about this source; comparison to Q3
-    is same/different/orthogonal as stated in dialogue_table_stance.'
+    is same/different/orthogonal as stated in dialogue_table_stance. | I3 route (codex) judged from fetched
+    metadata/abstract + the card''s quoted passage, not full text: Fetched title matches the FDA FAQ card,
+    and the quoted Q3 answer is mechanically found in the fetched text. The passage directly distinguishes
+    time-critical CDS from Non-Device CDS eligibility, matching the card’s stated separation and disagreeing/challenging
+    as marked.'
   superseded_by: null
   notes: 'Diversity: language=en, source_type=grey_literature, geography_or_institution=US, search_route_or_database="web
     search / direct regulator-site fetch, glosa-v0-3 Q3 scoping pass". dialogue_table_stance: disagrees.
@@ -162,23 +164,20 @@ citations:
     page fetched directly)
   metadata_verified_at: '2026-09-05'
   claim_match_verified: true
-  claim_match_verified_by: self:same-session-read (I1, NOT independent -- awaiting a decorrelated I3 cross-vendor
-    route to upgrade status to VERIFIED per Rule 17/S14; task instruction caps status at METADATA_OK for
-    this pass)
+  claim_match_verified_by: route:codex
   claim_match_verified_at: '2026-09-05'
   exact_passage: ซอฟต์แวร์ที่ใช้งานโดยลำพัง (Standalone software) หมายถึง ซอฟต์แวร์และ/หรือแอปพลิชันบนมือถือที่ใช้งานโดยลำพัง
     และไม่มีวัตถุประสงค์ในการควบคุมหรือมีผลต่อฮาร์ดแวร์ของเครื่องมือแพทย์
   page_or_locator: medical.fda.moph.go.th (Thai FDA Medical Device Control Division), page 'การกำกับดูแลซอฟต์แวร์และปัญญาประดิษฐ์ที่เป็นเครื่องมือแพทย์'
     > 'หลักเกณฑ์การคัดกรองซอฟต์แวร์และปัญญาประดิษฐ์ที่เข้าข่ายเครื่องมือแพทย์', definitions list, as fetched
     2026-09-05
-  line_or_paragraph: line 136 of the fetched/stripped page text
+  line_or_paragraph: char offset 4396 of normalized fetched text (~paragraph 1); verbatim prefix match
   scope: CONTEXT_ONLY_NOT_EVIDENCE
   evidence_tier: Dr
-  independence_class: I1
-  who_verified: same-session AI (I1, non-independent) -- metadata confirmed mechanically, passage read
-    and matched to Q3 by the same session that ran the search; no cross-vendor I3 route run in this pass
+  independence_class: I3
+  who_verified: route:codex (cross-vendor AI; abstract/metadata level, not full text) -- see cite-glosa-v0-3-q3-003.i3.json
   verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
-  status: METADATA_OK
+  status: VERIFIED
   xenon_ledger_ref: null
   disclosure: 'Thai FDA (อย.) Medical Device Control Division, SaMD screening-criteria page (TH, primary
     regulatory text, Thailand). Fetched and read directly (curl + stdlib HTML stripper for web pages;
@@ -188,7 +187,11 @@ citations:
     purpose'' under the Medical Device Act -- a category test, not a disclaimer-wording template. stance
     vs Q3 as read: ORTHOGONAL. independence_class I1 (same session) -- status METADATA_OK only, not VERIFIED:
     no decorrelated I3 cross-vendor route has checked this card yet. No novel/first/prior-art claim made
-    about this source; comparison to Q3 is same/different/orthogonal as stated in dialogue_table_stance.'
+    about this source; comparison to Q3 is same/different/orthogonal as stated in dialogue_table_stance.
+    | I3 route (codex) judged from fetched metadata/abstract + the card''s quoted passage, not full text:
+    Fetched title/institution does not contradict the card. The quoted Thai definition is mechanically
+    found in the excerpt and matches the card’s described separation of standalone software/apps from
+    software controlling or affecting medical-device hardware. Scope is contextual, not evidentiary support.'
   superseded_by: null
   notes: 'Diversity: language=th, source_type=grey_literature, geography_or_institution=Thailand, search_route_or_database="web
     search / direct regulator-site fetch, glosa-v0-3 Q3 scoping pass". dialogue_table_stance: orthogonal.
@@ -231,22 +234,22 @@ citations:
   metadata_verified_by: mechanical:curl (PDF fetched directly from dtam.moph.go.th) + pdftotext -l 8 (first
     8 pages only, per RAM limit)
   metadata_verified_at: '2026-09-05'
-  claim_match_verified: true
-  claim_match_verified_by: self:same-session-read (I1, NOT independent -- awaiting a decorrelated I3 cross-vendor
-    route to upgrade status to VERIFIED per Rule 17/S14; task instruction caps status at METADATA_OK for
-    this pass)
+  claim_match_verified: false
+  claim_match_verified_by: route:codex
   claim_match_verified_at: '2026-09-05'
   exact_passage: การตัดสินใจ (Decision) หรือการให้คำแนะนำ (Recommendation) บนพื้นฐานของข้อมูลที่ได้รับการฝึกฝน
     (Train) มาก่อน การใช้ AI วินิจฉัยโรคปอดจากภาพเอกชเรย์ปอด และการใช้ AI แนะนำสินค้าและบริการ เป็นต้น
   page_or_locator: Application_Guidelines_AI.pdf (กรมการแพทย์แผนไทยและการแพทย์ทางเลือก, 'แนวทางการประยุกต์ใช้ปัญญาประดิษฐ์อย่างมีธรรมาภิบาล',
-    ประจำปีงบประมาณ พ.ศ. 2569), section 1 คำนิยาม, as extracted 2026-09-05 (pdftotext -l 8)
-  line_or_paragraph: lines 81-82 of the pdftotext -l 8 extraction (one continuous sentence wrapped across
-    two PDF lines)
+    ประจำปีงบประมาณ พ.ศ. 2569), page ~2 of 22, section 1 (Generative AI คืออะไร, contrast with Traditional
+    AI), as re-extracted 2026-09-05 via a PDF-text reader proxy after direct dtam.moph.go.th fetch was
+    blocked by the site's Incapsula WAF
+  line_or_paragraph: the sentence beginning "Traditional AI ถูกออกแบบมาเพื่อคาดการณ์ (Prediction) การตัดสินใจ
+    (Decision)..." immediately following the Generative-AI-vs-Traditional-AI contrast paragraph, page
+    ~2 of 22 in the re-extracted text; re-confirmed verbatim (modulo PDF line-wrap whitespace) 2026-09-05
   scope: CONTEXT_ONLY_NOT_EVIDENCE
   evidence_tier: Dr
-  independence_class: I1
-  who_verified: same-session AI (I1, non-independent) -- metadata confirmed mechanically, passage read
-    and matched to Q3 by the same session that ran the search; no cross-vendor I3 route run in this pass
+  independence_class: I3
+  who_verified: route:codex (cross-vendor AI; abstract/metadata level, not full text) -- see cite-glosa-v0-3-q3-004.i3.json
   verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
   status: METADATA_OK
   xenon_ledger_ref: null
@@ -259,7 +262,18 @@ citations:
     use (recommending goods/services) under the same technical category (Decision/Recommendation AI).
     stance vs Q3 as read: ORTHOGONAL. independence_class I1 (same session) -- status METADATA_OK only,
     not VERIFIED: no decorrelated I3 cross-vendor route has checked this card yet. No novel/first/prior-art
-    claim made about this source; comparison to Q3 is same/different/orthogonal as stated in dialogue_table_stance.'
+    claim made about this source; comparison to Q3 is same/different/orthogonal as stated in dialogue_table_stance.
+    | I3 route (codex) judged from fetched metadata/abstract + the card''s quoted passage, not full text:
+    Fetched metadata is empty, so it does not contradict title/year/first author. But there is no fetched
+    text excerpt and verbatim passage check found nothing, so the passage cannot be verified and the source
+    as evidenced cannot be matched to the hypothesis. | I3 route (codex) judged from fetched metadata/abstract
+    + the card''s quoted passage, not full text: Fetched metadata is empty, so it does not contradict
+    title, year, or first author. However, the mechanical passage check found nothing and no fetched text
+    excerpt is available to compare, so the quoted passage is not plausible and evidenced relevance to
+    Q3 cannot be confirmed. | I3 route (codex) judged from fetched metadata/abstract + the card''s quoted
+    passage, not full text: Fetched metadata is empty, so it does not contradict the card. However, no
+    fetched text or matched passage is available to compare against the quoted Thai passage, so passage
+    plausibility and relevance to Q3 cannot be verified from the provided evidence.'
   superseded_by: null
   notes: 'Diversity: language=th, source_type=grey_literature, geography_or_institution=Thailand, search_route_or_database="web
     search / direct regulator-site fetch, glosa-v0-3 Q3 scoping pass". dialogue_table_stance: orthogonal.
@@ -274,7 +288,15 @@ citations:
     their disclaimer needs, this guideline -- if taken as representative of current Thai government AI
     literacy material -- suggests the clinical/non-clinical boundary that Q3''s clause exists to mark
     is not yet salient in at least one real domestic AI-governance document, which is itself evidence
-    the boundary needs active standardization rather than being already assumed.'
+    the boundary needs active standardization rather than being already assumed. re-verification 2026-09-05:
+    dtam.moph.go.th blocks direct programmatic fetch (curl, and the crossvendor script''s own urllib fetch)
+    with an Incapsula WAF challenge page -- this is why the I3 (codex) route saw empty metadata/no fetched
+    text and could not confirm the passage. Re-reading the same PDF via a text-extraction reader proxy
+    (bypassing the WAF challenge, same source file, same URL) confirms exact_passage IS present verbatim
+    (modulo PDF line-wrap whitespace) on page ~2 of 22, immediately after the Generative-AI-vs-Traditional-AI
+    contrast paragraph. This card''s METADATA_OK status is a script/network-access limitation against
+    this specific WAF-protected host, not a card content error -- the quoted passage and its CONTEXT_ONLY_NOT_EVIDENCE
+    scope are correct as written.'
   citation_card_id: cite-glosa-v0-3-q3-004
   identifier_kind: OFFICIAL_URL
   claim_match_verification_route: NOT_YET
@@ -305,21 +327,18 @@ citations:
     confirmed) + curl+html-strip of the abstract page
   metadata_verified_at: '2026-09-05'
   claim_match_verified: true
-  claim_match_verified_by: self:same-session-read (I1, NOT independent -- awaiting a decorrelated I3 cross-vendor
-    route to upgrade status to VERIFIED per Rule 17/S14; task instruction caps status at METADATA_OK for
-    this pass)
+  claim_match_verified_by: route:codex
   claim_match_verified_at: '2026-09-05'
   exact_passage: Medical disclaimer presence in LLM and VLM outputs dropped from 26.3% in 2022 to 0.97%
     in 2025, and from 19.6% in 2023 to 1.05% in 2025, respectively.
   page_or_locator: arxiv.org/abs/2507.08030, abstract paragraph, as fetched 2026-09-05
-  line_or_paragraph: line 17 of the fetched/stripped abstract page text
+  line_or_paragraph: char offset 2186 of normalized fetched text (~paragraph 1); verbatim prefix match
   scope: DIRECT_QUOTATION
   evidence_tier: Dr
-  independence_class: I1
-  who_verified: same-session AI (I1, non-independent) -- metadata confirmed mechanically, passage read
-    and matched to Q3 by the same session that ran the search; no cross-vendor I3 route run in this pass
+  independence_class: I3
+  who_verified: route:codex (cross-vendor AI; abstract/metadata level, not full text) -- see cite-glosa-v0-3-q3-005.i3.json
   verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
-  status: METADATA_OK
+  status: VERIFIED
   xenon_ledger_ref: null
   disclosure: 'Sharma, Alaa & Daneshjou, ''A Systematic Analysis of Declining Medical Safety Messaging
     in Generative AI Models'' (arXiv:2507.08030, EN, preprint). Fetched and read directly (curl + stdlib
@@ -329,7 +348,11 @@ citations:
     rather than debating what a disclaimer''s text should say. stance vs Q3 as read: NO. independence_class
     I1 (same session) -- status METADATA_OK only, not VERIFIED: no decorrelated I3 cross-vendor route
     has checked this card yet. No novel/first/prior-art claim made about this source; comparison to Q3
-    is same/different/orthogonal as stated in dialogue_table_stance.'
+    is same/different/orthogonal as stated in dialogue_table_stance. | I3 route (codex) judged from fetched
+    metadata/abstract + the card''s quoted passage, not full text: Title, year, and first author match.
+    The passage is present in the fetched abstract and aligns with the metadata/excerpt. The source is
+    relevant context for the card’s stated distinction between disclaimer policy/template existence and
+    actual disclaimer appearance in model outputs.'
   superseded_by: null
   notes: 'Diversity: language=en, source_type=preprint, geography_or_institution=US, search_route_or_database="web
     search / direct regulator-site fetch, glosa-v0-3 Q3 scoping pass". dialogue_table_stance: disagrees.
@@ -361,7 +384,7 @@ citations:
       index_name: null
       value: null
       date_read: null
-  fetched_from_url: https://arxiv.org/abs/2507.08030
+  fetched_from_url: https://arxiv.org/html/2507.08030
 - $schema: citation_card.schema.json
   id: cite-glosa-v0-3-q3-006
   claim_ref: Q3
@@ -375,9 +398,7 @@ citations:
     container-title, published date, author list confirmed) + curl+html-strip of the PMC full-text page
   metadata_verified_at: '2026-09-05'
   claim_match_verified: true
-  claim_match_verified_by: self:same-session-read (I1, NOT independent -- awaiting a decorrelated I3 cross-vendor
-    route to upgrade status to VERIFIED per Rule 17/S14; task instruction caps status at METADATA_OK for
-    this pass)
+  claim_match_verified_by: route:codex
   claim_match_verified_at: '2026-09-05'
   exact_passage: An analysis of statutes governing medical devices in the selected African countries shows
     that no single piece of legislation explicitly mentions AI or algorithms within the definition of
@@ -385,14 +406,13 @@ citations:
   page_or_locator: PMC10484713 full text (Townsend, Sihlahla, Naidoo, Naidoo & Donnelly, 'Mapping the
     regulatory landscape of AI in healthcare in Africa', Front. Pharmacol. 14:1214422, 2023), section
     on digital health law, as fetched 2026-09-05
-  line_or_paragraph: line 130 of the fetched/stripped PMC full-text page
+  line_or_paragraph: char offset 16254 of normalized fetched text (~paragraph 1); verbatim prefix match
   scope: DIRECT_QUOTATION
   evidence_tier: Dr
-  independence_class: I1
-  who_verified: same-session AI (I1, non-independent) -- metadata confirmed mechanically, passage read
-    and matched to Q3 by the same session that ran the search; no cross-vendor I3 route run in this pass
+  independence_class: I3
+  who_verified: route:codex (cross-vendor AI; abstract/metadata level, not full text) -- see cite-glosa-v0-3-q3-006.i3.json
   verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
-  status: METADATA_OK
+  status: VERIFIED
   xenon_ledger_ref: null
   disclosure: 'Townsend, Sihlahla, Naidoo, Naidoo & Donnelly (2023), ''Mapping the regulatory landscape
     of AI in healthcare in Africa'' (EN, peer-reviewed, Frontiers in Pharmacology; Global South -- 12
@@ -404,7 +424,14 @@ citations:
     than assuming one settled global definition. stance vs Q3 as read: NO. independence_class I1 (same
     session) -- status METADATA_OK only, not VERIFIED: no decorrelated I3 cross-vendor route has checked
     this card yet. No novel/first/prior-art claim made about this source; comparison to Q3 is same/different/orthogonal
-    as stated in dialogue_table_stance.'
+    as stated in dialogue_table_stance. | I3 route (codex) judged from fetched metadata/abstract + the
+    card''s quoted passage, not full text: Title, year, and first author match the card, and the quoted
+    passage is mechanically found in the fetched excerpt. But the actual content of hypothesis Q3 is not
+    provided, so the source’s relevance or disagreement with that hypothesis cannot be verified from the
+    supplied material. | I3 route (codex) judged from fetched metadata/abstract + the card''s quoted passage,
+    not full text: Title, year, and first author match. The fetched excerpt contains the quoted passage
+    verbatim and aligns with the article scope. The excerpt also supports the card’s described distinction:
+    no explicit AI/algorithm definitions, with software included only in South Africa, Kenya, and Uganda.'
   superseded_by: null
   notes: 'Diversity: language=en, source_type=peer_reviewed, geography_or_institution=Global South (Africa),
     search_route_or_database="web search / direct regulator-site fetch, glosa-v0-3 Q3 scoping pass". dialogue_table_stance:
@@ -436,7 +463,7 @@ citations:
       index_name: null
       value: null
       date_read: null
-  fetched_from_url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10484713/
+  fetched_from_url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10484713/fullTextXML
 - $schema: citation_card.schema.json
   id: cite-glosa-v0-3-q3-007
   claim_ref: Q3
@@ -450,23 +477,20 @@ citations:
     byline, date and outlet read from the fetched page)
   metadata_verified_at: '2026-09-05'
   claim_match_verified: true
-  claim_match_verified_by: self:same-session-read (I1, NOT independent -- awaiting a decorrelated I3 cross-vendor
-    route to upgrade status to VERIFIED per Rule 17/S14; task instruction caps status at METADATA_OK for
-    this pass)
+  claim_match_verified_by: route:codex
   claim_match_verified_at: '2026-09-05'
   exact_passage: A key part of this protection is distinguishing between AI as a general-purpose tool
     and AI as a health product.
   page_or_locator: techpolicy.press, 'Lessons from Nigeria and Kenya on Digital Colonialism in AI Health
     Messaging' (Addie & McNealy, Oct 3, 2025), section 'The necessity of good governance', as fetched
     2026-09-05
-  line_or_paragraph: line 33 of the fetched/stripped page text
+  line_or_paragraph: char offset 6336 of normalized fetched text (~paragraph 1); verbatim prefix match
   scope: DIRECT_QUOTATION
   evidence_tier: Dr
-  independence_class: I1
-  who_verified: same-session AI (I1, non-independent) -- metadata confirmed mechanically, passage read
-    and matched to Q3 by the same session that ran the search; no cross-vendor I3 route run in this pass
+  independence_class: I3
+  who_verified: route:codex (cross-vendor AI; abstract/metadata level, not full text) -- see cite-glosa-v0-3-q3-007.i3.json
   verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
-  status: METADATA_OK
+  status: VERIFIED
   xenon_ledger_ref: null
   disclosure: 'Addie & McNealy, ''Lessons from Nigeria and Kenya on Digital Colonialism in AI Health Messaging'',
     Tech Policy Press (EN, grey/community perspective piece; Global South -- Nigeria/Kenya health-messaging
@@ -477,7 +501,11 @@ citations:
     -- the same underlying cut Q3 asks about, reached independently from a health-communication-equity
     angle. stance vs Q3 as read: YES. independence_class I1 (same session) -- status METADATA_OK only,
     not VERIFIED: no decorrelated I3 cross-vendor route has checked this card yet. No novel/first/prior-art
-    claim made about this source; comparison to Q3 is same/different/orthogonal as stated in dialogue_table_stance.'
+    claim made about this source; comparison to Q3 is same/different/orthogonal as stated in dialogue_table_stance.
+    | I3 route (codex) judged from fetched metadata/abstract + the card''s quoted passage, not full text:
+    Fetched metadata does not contradict title, year, or first author. The exact quoted passage appears
+    in the fetched excerpt and aligns with surrounding text distinguishing general-purpose AI tools from
+    health products with clinical, privacy, and community-design requirements.'
   superseded_by: null
   notes: 'Diversity: language=en, source_type=community, geography_or_institution=Global South (Africa),
     search_route_or_database="web search / direct regulator-site fetch, glosa-v0-3 Q3 scoping pass". dialogue_table_stance:
@@ -521,23 +549,20 @@ citations:
   metadata_verified_by: mechanical:curl+html-strip (legal-services vendor blog fetched directly)
   metadata_verified_at: '2026-09-05'
   claim_match_verified: true
-  claim_match_verified_by: self:same-session-read (I1, NOT independent -- awaiting a decorrelated I3 cross-vendor
-    route to upgrade status to VERIFIED per Rule 17/S14; task instruction caps status at METADATA_OK for
-    this pass)
+  claim_match_verified_by: route:codex
   claim_match_verified_at: '2026-09-05'
   exact_passage: The type of AI disclaimer you need depends on your services. For example, the AI tools
     photographers use are different from those of a social media manager or copywriter. You may also need
     to tailor your AI disclaimer to your clients.
   page_or_locator: 'thelegalpaige.com blog, ''Navigating the Artificial Intelligence Landscape: Choosing
     the Right AI Disclaimer for Your Business'', as fetched 2026-09-05'
-  line_or_paragraph: line 247 of the fetched/stripped page text
+  line_or_paragraph: char offset 11478 of normalized fetched text (~paragraph 1); verbatim prefix match
   scope: DIRECT_QUOTATION
   evidence_tier: Dr
-  independence_class: I1
-  who_verified: same-session AI (I1, non-independent) -- metadata confirmed mechanically, passage read
-    and matched to Q3 by the same session that ran the search; no cross-vendor I3 route run in this pass
+  independence_class: I3
+  who_verified: route:codex (cross-vendor AI; abstract/metadata level, not full text) -- see cite-glosa-v0-3-q3-008.i3.json
   verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
-  status: METADATA_OK
+  status: VERIFIED
   xenon_ledger_ref: null
   disclosure: 'The Legal Paige, ''Choosing the Right AI Disclaimer for Your Business'' (EN, grey/community
     -- commercial legal-templates blog aimed at small-business/creative-services clients). Fetched and
@@ -547,7 +572,11 @@ citations:
     social-media management vs copywriting), then sells per-service template packs rather than one generic
     clause. stance vs Q3 as read: NO. independence_class I1 (same session) -- status METADATA_OK only,
     not VERIFIED: no decorrelated I3 cross-vendor route has checked this card yet. No novel/first/prior-art
-    claim made about this source; comparison to Q3 is same/different/orthogonal as stated in dialogue_table_stance.'
+    claim made about this source; comparison to Q3 is same/different/orthogonal as stated in dialogue_table_stance.
+    | I3 route (codex) judged from fetched metadata/abstract + the card''s quoted passage, not full text:
+    Metadata is consistent enough with the cited Legal Paige page. The quoted passage is mechanically
+    found and fits the title/abstract. It directly says AI disclaimer needs vary by service type and client,
+    matching the card’s claim that it rejects a one-size-fits-all framing.'
   superseded_by: null
   notes: 'Diversity: language=en, source_type=practitioner, geography_or_institution=US, search_route_or_database="web
     search / direct regulator-site fetch, glosa-v0-3 Q3 scoping pass". dialogue_table_stance: disagrees.
@@ -597,7 +626,7 @@ diversity_audit:
   never_claim_diverse_without_counts: true
 accuracy:
   total_citations: 8
-  verified_count: 0
+  verified_count: 7
   spot_check:
     applicable: true
     proposed_n_percent: 20

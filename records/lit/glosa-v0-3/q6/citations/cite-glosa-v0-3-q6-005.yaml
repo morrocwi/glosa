@@ -15,8 +15,12 @@ claim_match_verified_by: route:codex
 claim_match_verified_at: '2026-09-05'
 exact_passage: ไม่อยู่ในขอบเขตการตรวจสอบ (หมายถึง เรื่องนี้ไม่ใช่ข่าวที่อยู่ในวิสัยที่จะตรวจสอบได้)
 page_or_locator: cofact.org/howto, 'วิธีการ Comment ข่าวหรือข้อความบนเว็บไซต์' section,
-  list of 4 comment categories, as fetched 2026-09-05
-line_or_paragraph: line 57 of the fetched/stripped page text
+  list of 4 comment categories, re-fetched and re-confirmed 2026-09-05 via direct
+  curl (https://cofact.org/howto); the phrase sits inside a <strong> tag in the raw
+  HTML
+line_or_paragraph: char offset 3591 of normalized fetched text; verbatim match confirmed
+  against the raw HTML (bold-tag markup around the phrase, stripped for the normalized
+  text)
 scope: DIRECT_QUOTATION
 evidence_tier: Dr
 independence_class: I3
@@ -45,7 +49,12 @@ disclosure: 'Cofact (โคแฟค) (TH, grey/community civic fact-checking pl
   card''s quoted passage, not full text: Metadata title does not contradict the card.
   But the quoted Thai passage was not found by verbatim search in the fetched text,
   so the direct-quotation claim is not evidenced. Without the passage, the claimed
-  checkability/truth-value separation is uncertain.'
+  checkability/truth-value separation is uncertain. | I3 route (codex) judged from
+  fetched metadata/abstract + the card''s quoted passage, not full text: Metadata
+  does not contradict the card. But the mechanical verbatim search did not find the
+  quoted passage in fetched text, and the excerpt does not evidence the four-category/checkability
+  distinction. Under uncertainty, the direct-quotation and relevance claim cannot
+  be confirmed.'
 superseded_by: null
 notes: 'Diversity: language=th, source_type=community, geography_or_institution=Thailand,
   search_route_or_database="web search / direct fetch, glosa-v0-3 Q6 scoping pass".

@@ -8,9 +8,9 @@
  "verdict": {
   "metadata_matches": true,
   "passage_plausible": true,
-  "claim_match": false,
+  "claim_match": true,
   "bearing": "CONTEXT_ONLY",
-  "reason": "Fetched title matches the card’s Wikipedia page/redirect description, and the quoted passage appears verbatim in the fetched excerpt. But the hypothesis is only labeled Q6 with no substantive content, so bearing on the hypothesis cannot be verified; per rule, uncertain claim_match is false.",
+  "reason": "Metadata title matches the redirected Wikipedia page; no year/author contradiction. The passage is found verbatim in fetched text and fits the section. It is relevant as context for distinguishing vague authority from checkable attribution, not as direct evidence for Q6.",
   "passage_mechanical": "verbatim prefix found in fetched open text"
  },
  "date": "2026-09-04"

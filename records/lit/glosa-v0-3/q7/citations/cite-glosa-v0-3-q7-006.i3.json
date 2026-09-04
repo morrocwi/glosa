@@ -8,9 +8,9 @@
  "verdict": {
   "metadata_matches": true,
   "passage_plausible": true,
-  "claim_match": false,
+  "claim_match": true,
   "bearing": "CONTEXT_ONLY",
-  "reason": "Metadata does not contradict the card, and the quoted passage appears verbatim in the fetched excerpt. However the hypothesis is only labeled Q7 with no substantive content, so relevance to that hypothesis cannot be independently verified from the provided material.",
+  "reason": "Fetched title does not contradict the card, and the quoted passage appears in the excerpt. The excerpt discusses apeiron as eternal, indefinite, and a cosmological first principle/substratum, matching the card's context-only stance rather than evidential support.",
   "passage_mechanical": "verbatim prefix found in fetched open text"
  },
  "date": "2026-09-04"

@@ -6,89 +6,89 @@ search_log_hash: ''
 dialogue_table_ref: records/lit/glosa-v0-3/q2/dialogue_table.md
 neighbour_table_ref: ''
 status: FROZEN
-frozen_at: '2026-09-04T17:52:44.278642+00:00'
+frozen_at: '2026-09-04T19:19:10.145010+00:00'
 supersedes: null
 citations:
 - citation_card_id: cite-glosa-v0-3-q2-001
-  status: METADATA_OK
+  status: VERIFIED
   identifier_kind: DOI
   fetch_status: FETCHED
   acquisition_log_ref: null
   metadata_verified: true
   claim_match_verified: true
-  claim_match_verification_route: NOT_YET
+  claim_match_verification_route: DECORRELATED_AI_I3
   retraction_check: UNCHECKED
   dialogue_table_stance: disagrees
   diversity:
     language: en
 - citation_card_id: cite-glosa-v0-3-q2-002
-  status: METADATA_OK
+  status: VERIFIED
   identifier_kind: DOI
   fetch_status: FETCHED
   acquisition_log_ref: null
   metadata_verified: true
   claim_match_verified: true
-  claim_match_verification_route: NOT_YET
+  claim_match_verification_route: DECORRELATED_AI_I3
   retraction_check: UNCHECKED
   dialogue_table_stance: disagrees
   diversity:
     language: en
 - citation_card_id: cite-glosa-v0-3-q2-003
-  status: METADATA_OK
+  status: VERIFIED
   identifier_kind: DOI
   fetch_status: FETCHED
   acquisition_log_ref: null
   metadata_verified: true
   claim_match_verified: true
-  claim_match_verification_route: NOT_YET
+  claim_match_verification_route: DECORRELATED_AI_I3
   retraction_check: UNCHECKED
   dialogue_table_stance: orthogonal
   diversity:
     language: en
 - citation_card_id: cite-glosa-v0-3-q2-004
-  status: METADATA_OK
+  status: VERIFIED
   identifier_kind: ARXIV
   fetch_status: FETCHED
   acquisition_log_ref: null
   metadata_verified: true
   claim_match_verified: true
-  claim_match_verification_route: NOT_YET
+  claim_match_verification_route: DECORRELATED_AI_I3
   retraction_check: UNCHECKED
   dialogue_table_stance: orthogonal
   diversity:
     language: en
 - citation_card_id: cite-glosa-v0-3-q2-005
-  status: METADATA_OK
+  status: VERIFIED
   identifier_kind: OFFICIAL_URL
   fetch_status: FETCHED
   acquisition_log_ref: null
   metadata_verified: true
   claim_match_verified: true
-  claim_match_verification_route: NOT_YET
+  claim_match_verification_route: DECORRELATED_AI_I3
   retraction_check: UNCHECKED
   dialogue_table_stance: agrees
   diversity:
     language: en
 - citation_card_id: cite-glosa-v0-3-q2-006
-  status: METADATA_OK
+  status: VERIFIED
   identifier_kind: OFFICIAL_URL
   fetch_status: FETCHED
   acquisition_log_ref: null
   metadata_verified: true
   claim_match_verified: true
-  claim_match_verification_route: NOT_YET
+  claim_match_verification_route: DECORRELATED_AI_I3
   retraction_check: UNCHECKED
   dialogue_table_stance: orthogonal
   diversity:
     language: th
 - citation_card_id: cite-glosa-v0-3-q2-007
-  status: METADATA_OK
+  status: VERIFIED
   identifier_kind: OFFICIAL_URL
   fetch_status: FETCHED
   acquisition_log_ref: null
   metadata_verified: true
   claim_match_verified: true
-  claim_match_verification_route: NOT_YET
+  claim_match_verification_route: DECORRELATED_AI_I3
   retraction_check: UNCHECKED
   dialogue_table_stance: agrees
   diversity:
@@ -112,7 +112,7 @@ diversity_audit:
   never_claim_diverse_without_counts: true
 accuracy:
   total_citations: 7
-  verified_count: 0
+  verified_count: 7
   spot_check:
     applicable: true
     proposed_n_percent: 20
@@ -125,10 +125,9 @@ accuracy:
 secondary_citation_ban_audit:
   violations_found: 0
 gate:
-  accuracy_gate: FAIL
+  accuracy_gate: PASS
   diversity_gate: PASS
-  overall: FAIL
-  blocked_reason: Not every listed citation reached VERIFIED yet.
-disclaimers_emitted:
-- id: D-CITATION-UNVERIFIED
+  overall: PASS
+  blocked_reason: null
+disclaimers_emitted: []
 human_owner: founder

@@ -20,9 +20,11 @@ exact_passage: In reading articles, authors try to influence understanding using
   to extend unverifiable statements and agendas or to influence thinking by suggesting
   a connection using “hedging” or “weasel” words.
 page_or_locator: Ott, J.S., 'Hedging, Weasel Words, and Truthiness in Scientific Writing'
-  (mirrored PDF, nonpartisaneducation.org/Review/Resources/Ott1.pdf), page 1, as extracted
-  2026-09-05 (pdftotext -l 8)
-line_or_paragraph: lines 22-24 of the pdftotext -l 8 extraction
+  (mirrored PDF, nonpartisaneducation.org/Review/Resources/Ott1.pdf), page 1, re-extracted
+  and re-confirmed 2026-09-05 via direct curl + `pdftotext -l 1` (4-page PDF; passage
+  is on page 1, second paragraph of the Introduction)
+line_or_paragraph: lines 21-24 of the `pdftotext -l 1` extraction (verified verbatim
+  against the freshly downloaded PDF)
 scope: DIRECT_QUOTATION
 evidence_tier: Dr
 independence_class: I3
@@ -52,7 +54,11 @@ disclosure: 'Ott, J.S., ''Hedging, Weasel Words, and Truthiness in Scientific Wr
   + the card''s quoted passage, not full text: Fetched metadata is only no-identifier
   and there is no fetched text excerpt to compare; mechanical passage check found
   none. With no source evidence, the quoted passage is not plausible and cannot be
-  shown to bear on Q6.'
+  shown to bear on Q6. | I3 route (codex) judged from fetched metadata/abstract +
+  the card''s quoted passage, not full text: Mechanical metadata has no identifier
+  details to verify the card, and the fetched text excerpt is empty. The quoted passage
+  was not found, so plausibility and claim bearing cannot be confirmed from the provided
+  evidence.'
 superseded_by: null
 notes: 'Diversity: language=en, source_type=peer_reviewed, geography_or_institution=US,
   search_route_or_database="web search / direct fetch, glosa-v0-3 Q6 scoping pass".

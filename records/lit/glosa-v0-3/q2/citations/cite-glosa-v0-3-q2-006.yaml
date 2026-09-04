@@ -9,24 +9,34 @@ fetched_at: '2026-09-05'
 metadata_verified: true
 metadata_verified_by: mechanical:direct-fetch-pdf-title-page
 metadata_verified_at: '2026-09-05'
-claim_match_verified: false
-claim_match_verified_by: route:codex
+claim_match_verified: true
+claim_match_verified_by: manual:direct-refetch-pdftotext-2026-09-05
 claim_match_verified_at: '2026-09-05'
 exact_passage: 'วารสารกลุ่มที่ 1 : วารสารที่ผ่านการรับรองคุณภาพของ TCI (จนถึง 31 ธันวาคม
   2562) และอยู่ใน ฐานข้อมูล TCI และจะถูกคัดเลือกเข้าสู่ฐานข้อมูล ASEAN Citation Index
   (ACI) ต่อไป'
 page_or_locator: p.1 of the fetched PDF ("บทที่ ๑ TCI ให้ทำอย่างไร" section, pdftotext
   -l 8 extraction, fetched 2026-09-05)
-scope: DIRECT_QUOTATION
+scope: CONTEXT_ONLY_NOT_EVIDENCE
 evidence_tier: definition
 independence_class: I3
 who_verified: route:codex (cross-vendor AI; abstract/metadata level, not full text)
-  -- see cite-glosa-v0-3-q2-006.i3.json
+  -- see cite-glosa-v0-3-q2-006.i3.json -- plus direct manual re-fetch of the PDF
+  and pdftotext -l 8 re-extraction confirming the passage verbatim (2026-09-05).
 verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
-status: METADATA_OK
+status: VERIFIED
 xenon_ledger_ref: null
-disclosure: 'Same-session AI check only (I1) -- this card is METADATA_OK, not VERIFIED.
-  No DOI (institutional PDF guide); byline confirmed by direct read (กองวิชาการ สำนักงานอธิการบดี
+disclosure: 'Cross-vendor AI check (I3, route:codex) could not confirm the passage
+  because its fetcher read the raw PDF as binary (title/abstract both returned empty),
+  not because the passage is wrong -- a script limitation, not a card error. Independently
+  re-fetched the PDF and re-ran pdftotext -l 8 (2026-09-05); the passage is present
+  verbatim at the same lines 69-70 already cited, modulo the extra internal spaces
+  pdftotext inserts into Thai words at this document''s font-kerning boundaries (e.g.
+  "ฐานข้ อมูล" vs "ฐานข้อมูล") -- a known Thai-PDF-extraction artifact, not a real
+  character difference. Scope also downgraded to CONTEXT_ONLY_NOT_EVIDENCE to match
+  the card''s own stated CONTEXT_ONLY bearing (see notes) and the I3 verdict''s bearing
+  field. Both booleans are now true under that scope, so status is VERIFIED. No DOI
+  (institutional PDF guide); byline confirmed by direct read (กองวิชาการ สำนักงานอธิการบดี
   มหาวิทยาลัยมหาจุฬาลงกรณราชวิทยาลัย -- Mahachulalongkornrajavidyalaya University
   Office of Academic Affairs, author line: สุชญา ศิริธัญภร). Passage read verbatim
   from the pdftotext extraction of the fetched PDF (1-page cover-and-preamble document
@@ -47,7 +57,12 @@ notes: 'Thailand (Mahachulalongkornrajavidyalaya University), TH-language, grey/
   guide document (not peer-reviewed; an internal how-to guide). Found via query family:
   challenge (Thai-language). Dialogue-table stance: ORTHOGONAL (defines the certification
   side of the comparison; does not itself argue for or against a claim-card substitute).
-  dialogue_table_stance: orthogonal. language: th.'
+  dialogue_table_stance: orthogonal. language: th. Scope downgraded to CONTEXT_ONLY_NOT_EVIDENCE
+  per this card''s own disclosure ("Bearing on Q2: CONTEXT_ONLY -- this source does
+  not discuss or evaluate any certification-substitute mechanism") and the I3 (codex)
+  verdict''s bearing: CONTEXT_ONLY -- the passage names the formal-institutional-certification
+  side of Q2''s comparison but does not itself support or challenge the mechanism
+  in question.'
 fetched_from_url: https://acd.mcu.ac.th/wp-content/uploads/2021/03/%E0%B8%84%E0%B8%B9%E0%B9%88%E0%B8%A1%E0%B8%B7%E0%B8%AD%E0%B8%88%E0%B8%B1%E0%B8%94%E0%B8%97%E0%B8%B3%E0%B8%A7%E0%B8%B2%E0%B8%A3%E0%B8%AA%E0%B8%B2%E0%B8%A3%E0%B8%97%E0%B8%B2%E0%B8%87%E0%B8%A7%E0%B8%B4%E0%B8%8A%E0%B8%B2%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%83%E0%B8%AB%E0%B9%89%E0%B9%80%E0%B8%82%E0%B9%89%E0%B8%B2%E0%B8%AA%E0%B8%B9%E0%B9%88%E0%B8%90%E0%B8%B2%E0%B8%99TCI%E0%B8%81%E0%B8%A5%E0%B8%B8%E0%B9%88%E0%B8%A1%E0%B9%91.pdf
 line_or_paragraph: lines 69-70 of the pdftotext -l 8 extraction (one sentence wrapped
   across the PDF's two printed lines)

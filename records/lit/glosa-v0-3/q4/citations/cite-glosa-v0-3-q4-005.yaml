@@ -44,7 +44,11 @@ disclosure: 'I0 only (same session, not independently checked). No DOI exists fo
   not full text: Metadata does not contradict the card, but fetched text is raw PDF/binary
   with no usable extracted text; verbatim passage search failed. With no comparable
   passage evidence, the contextual claim cannot be independently matched from the
-  supplied material.'
+  supplied material. | I3 route (codex) judged from fetched metadata/abstract + the
+  card''s quoted passage, not full text: finite_diagnostic: Metadata is blank, so
+  no title/year/first-author contradiction. Passage cannot be checked because fetched
+  content is raw PDF/compressed text, not usable extracted text; verbatim search failed.
+  With no verified passage and unclear Q4 bearing, claim_match is false.'
 superseded_by: null
 notes: 'Global North (Australia, Flinders University), EN, grey/institutional checklist
   (not peer-reviewed journal article, itself grey literature), discipline: library/information

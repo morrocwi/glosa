@@ -52,7 +52,11 @@ disclosure: 'I0 only (same session, not independently checked). Author/venue/tit
   card''s quoted passage, not full text: Fetched title matches the card and the quoted
   passage is mechanically present in the excerpt. But the hypothesis content is only
   given as ''Q8'', so I cannot verify that the passage challenges or otherwise bears
-  on the hypothesis as claimed.'
+  on the hypothesis as claimed. | I3 route (codex) judged from fetched metadata/abstract
+  + the card''s quoted passage, not full text: Fetched title matches the card and
+  the quoted passage is mechanically found in the excerpt. But the substantive content
+  of hypothesis Q8 is not provided, so the claimed CHALLENGE bearing cannot be independently
+  verified from the supplied material.'
 superseded_by: null
 notes: 'Global North (University of Tennessee at Martin, hosting institution), EN,
   peer-reviewed academic reference encyclopedia, metaphysics/philosophy of religion.

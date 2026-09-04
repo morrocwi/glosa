@@ -17,7 +17,7 @@
   "passage_plausible": true,
   "claim_match": false,
   "bearing": "CONTEXT_ONLY",
-  "reason": "Metadata matches Crossref title, year, and first author. The quoted passage is plausibly the Crossref abstract despite typography/ellipsis preventing verbatim match. However Q4 is not stated, so relevance to the hypothesis cannot be independently judged; under uncertainty, claim_match is false.",
+  "reason": "Metadata matches fetched Crossref title, year, and first author. The quoted passage is plausible because its substance appears in the fetched abstract despite verbatim-search failure. But the hypothesis is only labeled Q4 with no content, so relevance/support cannot be independently assessed from the provided material.",
   "passage_mechanical": "no open full text fetched; abstract/metadata only"
  },
  "date": "2026-09-04"

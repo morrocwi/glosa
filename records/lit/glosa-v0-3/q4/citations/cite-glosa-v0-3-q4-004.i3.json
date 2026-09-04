@@ -19,7 +19,7 @@
   "passage_plausible": true,
   "claim_match": false,
   "bearing": "CONTEXT_ONLY",
-  "reason": "Metadata and passage are mechanically consistent. But the hypothesis is only labeled Q4 with no substantive content provided, and the card notes say I0 only / Dialogue-table stance NO. From the supplied material alone, relevance to Q4 cannot be verified.",
+  "reason": "Metadata and verbatim passage check align with the supplied material. The excerpt plausibly concerns evidence-to-policy guidance in ECOWAS/West Africa. But the hypothesis is only labeled Q4 with no content, so the source's relevance to the hypothesis cannot be independently judged; uncertain claim_match is false.",
   "passage_mechanical": "verbatim prefix found in fetched open text"
  },
  "date": "2026-09-04"

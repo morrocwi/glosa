@@ -6,7 +6,7 @@ search_log_hash: ''
 dialogue_table_ref: records/lit/glosa-v0-3/q5/dialogue_table.md
 neighbour_table_ref: ''
 status: FROZEN
-frozen_at: '2026-09-04T18:03:13.530060+00:00'
+frozen_at: '2026-09-04T19:18:40.907776+00:00'
 supersedes: null
 citations:
 - $schema: citation_card.schema.json
@@ -22,21 +22,18 @@ citations:
     for Open Science initiative page)
   metadata_verified_at: '2026-09-05'
   claim_match_verified: true
-  claim_match_verified_by: self:same-session-read (I1, NOT independent -- awaiting a decorrelated I3 cross-vendor
-    route to upgrade status to VERIFIED per Rule 17/S14; task instruction caps status at METADATA_OK for
-    this pass)
+  claim_match_verified_by: route:codex
   claim_match_verified_at: '2026-09-05'
   exact_passage: When Can You Preregister? Right before your next round of data collection
   page_or_locator: cos.io/initiatives/prereg, "When Can You Preregister?" section, as rendered on the
     page fetched 2026-09-05
-  line_or_paragraph: lines 62-63 of the fetched/stripped page text
+  line_or_paragraph: char offset 1914 of normalized fetched text (~paragraph 1); verbatim prefix match
   scope: DIRECT_QUOTATION
   evidence_tier: Dr
-  independence_class: I1
-  who_verified: same-session AI (I1, non-independent) -- metadata confirmed mechanically, passage read
-    and matched to Q5 by the same session that ran the search; no cross-vendor I3 route run in this pass
+  independence_class: I3
+  who_verified: route:codex (cross-vendor AI; abstract/metadata level, not full text) -- see cite-glosa-v0-3-q5-001.i3.json
   verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
-  status: METADATA_OK
+  status: VERIFIED
   xenon_ledger_ref: null
   disclosure: 'Center for Open Science (COS), "Preregistration" initiative page (EN, primary, global open-science
     infrastructure org). Fetched and read directly (curl + stdlib HTML stripper, one page kept in memory
@@ -45,7 +42,14 @@ citations:
     but says nothing about ethics-approval timing relative to that freeze. stance vs Q5 as read: PARTIAL_SUPPORT
     (backs the "before data" half of the compound rule; silent on the "before ethics" half). No novel/first/prior-art
     claim made about this source; comparison to Q5 is same/different/orthogonal as stated in dialogue_table_stance.
-    independence_class I1 (same session) -- status METADATA_OK only, not VERIFIED.'
+    independence_class I1 (same session) -- status METADATA_OK only, not VERIFIED. | I3 route (codex)
+    judged from fetched metadata/abstract + the card''s quoted passage, not full text: Metadata and fetched
+    passage match the card. The excerpt clearly discusses preregistration timing, but the hypothesis content
+    is only labeled Q5 and not stated here, so I cannot verify that the source bears on the hypothesis
+    as claimed. | I3 route (codex) judged from fetched metadata/abstract + the card''s quoted passage,
+    not full text: Metadata title matches and no author/year contradiction is present. The fetched excerpt
+    contains the quoted timing passage. As scoped, the source provides contextual evidence about when
+    preregistration occurs relative to data collection, not direct support for a substantive hypothesis.'
   superseded_by: null
   notes: 'Diversity: language=en, source_type=grey_literature, geography_or_institution=Global (COS, USA-based
     nonprofit infrastructure org), search_route_or_database="web search / direct org-site fetch, glosa-v0-3
@@ -88,9 +92,7 @@ citations:
     policy text, Scientific Reports / Springer Nature)
   metadata_verified_at: '2026-09-05'
   claim_match_verified: true
-  claim_match_verified_by: self:same-session-read (I1, NOT independent -- awaiting a decorrelated I3 cross-vendor
-    route to upgrade status to VERIFIED per Rule 17/S14; task instruction caps status at METADATA_OK for
-    this pass)
+  claim_match_verified_by: route:codex
   claim_match_verified_at: '2026-09-05'
   exact_passage: A statement confirming that all necessary support (e.g. funding, facilities) and approvals
     (e.g. ethics) are in place for the proposed research. Note that manuscripts will be generally considered
@@ -98,14 +100,13 @@ citations:
   page_or_locator: 'nature.com/srep/journal-policies/registered-reports, "Stage 1: Initial manuscript
     submission and review" section, Stage 1 cover-letter requirements list, as rendered on the page fetched
     2026-09-05'
-  line_or_paragraph: line 48 of the fetched/stripped page text
+  line_or_paragraph: char offset 3675 of normalized fetched text (~paragraph 1); verbatim prefix match
   scope: DIRECT_QUOTATION
   evidence_tier: Dr
-  independence_class: I1
-  who_verified: same-session AI (I1, non-independent) -- metadata confirmed mechanically, passage read
-    and matched to Q5 by the same session that ran the search; no cross-vendor I3 route run in this pass
+  independence_class: I3
+  who_verified: route:codex (cross-vendor AI; abstract/metadata level, not full text) -- see cite-glosa-v0-3-q5-002.i3.json
   verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
-  status: METADATA_OK
+  status: VERIFIED
   xenon_ledger_ref: null
   disclosure: 'Scientific Reports (Springer Nature), Registered Reports journal-policy page (EN, primary,
     journal policy text). Fetched and read directly (curl + stdlib HTML stripper, one page kept in memory
@@ -118,7 +119,11 @@ citations:
     the proposed strict "freeze before ethics" ordering as the real-world norm in the one methodology
     most closely associated with frozen-protocol discipline). No novel/first/prior-art claim made about
     this source; comparison to Q5 is same/different/orthogonal as stated in dialogue_table_stance. independence_class
-    I1 (same session) -- status METADATA_OK only, not VERIFIED.'
+    I1 (same session) -- status METADATA_OK only, not VERIFIED. | I3 route (codex) judged from fetched
+    metadata/abstract + the card''s quoted passage, not full text: Title/URL metadata do not contradict
+    the card. The fetched excerpt contains the quoted policy language and also states protocol registration
+    follows Stage 1 acceptance in principle, matching the card’s contextual claim about separating approvals-at-submission
+    from later repository registration.'
   superseded_by: null
   notes: 'Diversity: language=en, source_type=grey_literature, geography_or_institution=Global (Springer
     Nature, UK/Germany-based publisher), search_route_or_database="web search / direct journal-site fetch,
@@ -161,24 +166,22 @@ citations:
   metadata_verified_by: mechanical:Europe PMC REST API (europepmc.org/webservices/rest/search?query=PMC6371709)
     -- confirms pmid=30834204, doi=10.4103/picr.picr_163_17, journalTitle=Perspect Clin Res, pubYear=2019
   metadata_verified_at: '2026-09-05'
-  claim_match_verified: true
-  claim_match_verified_by: self:same-session-read (I1, NOT independent -- awaiting a decorrelated I3 cross-vendor
-    route to upgrade status to VERIFIED per Rule 17/S14; task instruction caps status at METADATA_OK for
-    this pass)
+  claim_match_verified: false
+  claim_match_verified_by: route:codex
   claim_match_verified_at: '2026-09-05'
   exact_passage: A total of N = 1147 studies were registered with CTRI in 2016. Among these, n = 719 (63%)
     were retrospectively registered and the remainder n = 428 (37%) were prospectively registered.
   page_or_locator: 'Birajdar AR et al., "An audit of studies registered retrospectively with the Clinical
     Trials Registry of India: A one year analysis", Perspect Clin Res 2019;10(1):26-30 (doi:10.4103/picr.picr_163_17),
-    PMC full-text mirror pmc.ncbi.nlm.nih.gov/articles/PMC6371709/, Results section, as rendered on the
-    page fetched 2026-09-05'
-  line_or_paragraph: line 112 of the fetched/stripped PMC full-text page
+    PMC full-text mirror pmc.ncbi.nlm.nih.gov/articles/PMC6371709/, RESULTS > Demographics, first sentence,
+    as rendered on the page fetched 2026-09-05 and re-confirmed verbatim 2026-09-05 via direct curl fetch
+    of https://pmc.ncbi.nlm.nih.gov/articles/PMC6371709/'
+  line_or_paragraph: first sentence of the "Demographics" subsection under RESULTS (line 100 of the tag-stripped
+    full-text page as fetched 2026-09-05)
   scope: DIRECT_QUOTATION
   evidence_tier: Dr
-  independence_class: I1
-  who_verified: same-session AI (I1, non-independent) -- metadata confirmed mechanically via Europe PMC
-    API, passage read and matched to Q5 by the same session that ran the search; no cross-vendor I3 route
-    run in this pass
+  independence_class: I3
+  who_verified: route:codex (cross-vendor AI; abstract/metadata level, not full text) -- see cite-glosa-v0-3-q5-003.i3.json
   verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
   status: METADATA_OK
   xenon_ledger_ref: null
@@ -193,7 +196,17 @@ citations:
     motivation Q5 asks about, though for registration-before-data rather than freeze-before-ethics specifically).
     No novel/first/prior-art claim made about this source; comparison to Q5 is same/different/orthogonal
     as stated in dialogue_table_stance. independence_class I1 (same session) -- status METADATA_OK only,
-    not VERIFIED.'
+    not VERIFIED. | I3 route (codex) judged from fetched metadata/abstract + the card''s quoted passage,
+    not full text: No supplied metadata contradicts title, year, or first author, but the fetched metadata
+    is non-informative and the fetched text excerpt is empty. With no text to compare, the direct quotation
+    is not plausible under the rule, and relevance to Q5 cannot be established. | I3 route (codex) judged
+    from fetched metadata/abstract + the card''s quoted passage, not full text: No fetched text excerpt
+    is available and the verbatim passage check found nothing, so the quotation cannot be verified or
+    used for the claimed bearing. The provided mechanical metadata has no contradiction to title, year,
+    or first author. | I3 route (codex) judged from fetched metadata/abstract + the card''s quoted passage,
+    not full text: No fetched metadata contradicts title/year/first author, but mechanical metadata is
+    no-identifier and no fetched text/excerpt is available; verbatim passage check failed. Without source
+    text, passage plausibility and claimed relevance to Q5 cannot be verified.'
   superseded_by: null
   notes: 'Diversity: language=en, source_type=peer_reviewed_journal_article, geography_or_institution=India
     (Global South), search_route_or_database="web search + Europe PMC REST API, glosa-v0-3 Q5 scoping
@@ -236,24 +249,22 @@ citations:
   metadata_verified_by: mechanical:Europe PMC REST API (europepmc.org/webservices/rest/search?query=PMC8796231)
     -- confirms pmid=35078852, doi=10.1136/bmjopen-2021-057474, journalTitle=BMJ Open, pubYear=2022
   metadata_verified_at: '2026-09-05'
-  claim_match_verified: true
-  claim_match_verified_by: self:same-session-read (I1, NOT independent -- awaiting a decorrelated I3 cross-vendor
-    route to upgrade status to VERIFIED per Rule 17/S14; task instruction caps status at METADATA_OK for
-    this pass)
+  claim_match_verified: false
+  claim_match_verified_by: route:codex
   claim_match_verified_at: '2026-09-05'
   exact_passage: Clinical trials may be registered without ethics approval, provided that recruitment
     of study participants has not commenced.
   page_or_locator: 'Ndwandwe DE et al., "Practices and trends in clinical trial registration in the Pan
     African Clinical Trials Registry (PACTR): a descriptive analysis of registration data", BMJ Open 2022;12:e057474
     (doi:10.1136/bmjopen-2021-057474), PMC full-text mirror pmc.ncbi.nlm.nih.gov/articles/PMC8796231/,
-    Introduction section, as rendered on the page fetched 2026-09-05'
-  line_or_paragraph: line 109 of the fetched/stripped PMC full-text page
+    Introduction/Discussion transition paragraph, as rendered on the page fetched 2026-09-05 and re-confirmed
+    verbatim 2026-09-05 via direct curl fetch of https://pmc.ncbi.nlm.nih.gov/articles/PMC8796231/'
+  line_or_paragraph: mid-paragraph sentence beginning "Clinical trials may be registered without ethics
+    approval..." (line 102 of the tag-stripped full-text page as fetched 2026-09-05)
   scope: DIRECT_QUOTATION
   evidence_tier: Dr
-  independence_class: I1
-  who_verified: same-session AI (I1, non-independent) -- metadata confirmed mechanically via Europe PMC
-    API, passage read and matched to Q5 by the same session that ran the search; no cross-vendor I3 route
-    run in this pass
+  independence_class: I3
+  who_verified: route:codex (cross-vendor AI; abstract/metadata level, not full text) -- see cite-glosa-v0-3-q5-004.i3.json
   verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
   status: METADATA_OK
   xenon_ledger_ref: null
@@ -269,7 +280,17 @@ citations:
     workable and already practiced at a continental registry, while showing freeze-before-data compliance
     is the still-unsolved half). No novel/first/prior-art claim made about this source; comparison to
     Q5 is same/different/orthogonal as stated in dialogue_table_stance. independence_class I1 (same session)
-    -- status METADATA_OK only, not VERIFIED.'
+    -- status METADATA_OK only, not VERIFIED. | I3 route (codex) judged from fetched metadata/abstract
+    + the card''s quoted passage, not full text: No fetched text was provided and the verbatim passage
+    check found nothing, so the quotation cannot be checked. The metadata shown does not contradict title,
+    year, or first author, but the source as evidenced does not substantiate the claimed contextual bearing.
+    | I3 route (codex) judged from fetched metadata/abstract + the card''s quoted passage, not full text:
+    Mechanical metadata provides no title, year, or first author, so the card cannot be verified. The
+    verbatim passage check found nothing and the fetched excerpt is empty, leaving no text to compare.
+    Therefore the contextual relevance to Q5 is not evidenced. | I3 route (codex) judged from fetched
+    metadata/abstract + the card''s quoted passage, not full text: Fetched metadata provides no title/year/first-author
+    check, and the fetched text excerpt is empty. With no text to compare, the exact passage is not plausible
+    under the rule, and the source as evidenced cannot bear on Q5.'
   superseded_by: null
   notes: 'Diversity: language=en, source_type=peer_reviewed_journal_article, geography_or_institution=Africa
     (Pan-African, Global South), search_route_or_database="web search + Europe PMC REST API, glosa-v0-3
@@ -315,23 +336,20 @@ citations:
     directly; Mahidol R2R e-Journal, a Thai-indexed journal on ThaiJo/TCI)
   metadata_verified_at: '2026-09-05'
   claim_match_verified: true
-  claim_match_verified_by: self:same-session-read (I1, NOT independent -- awaiting a decorrelated I3 cross-vendor
-    route to upgrade status to VERIFIED per Rule 17/S14; task instruction caps status at METADATA_OK for
-    this pass)
+  claim_match_verified_by: route:codex
   claim_match_verified_at: '2026-09-05'
   exact_passage: การลงทะเบียนงานวิจัยทางคลินิกของไทย (Thai Clinical Trials Registry, TCTR) จัดตั้งขึ้นโดยมูลนิธิส่งเสริมวิจัยทางการแพทย์
     เพื่อเป็นฐานข้อมูลและเผยแพร่งานวิจัยทางคลินิกในประเทศไทย สนับสนุนและส่งเสริมการพัฒนางานวิจัยทางคลินิกให้โปร่งใส
     มีคุณภาพ ประสิทธิภาพ ลดความซ้ำซ้อนของงานวิจัย และถูกต้องตามหลักจริยธรรมในการนำเสนอผลงาน
   page_or_locator: he01.tci-thaijo.org/index.php/mur2r/article/view/242096, "การลงทะเบียนงานวิจัยทางคลินิกของไทย
     TCTR", Mahidol R2R e-Journal, abstract, as rendered on the page fetched 2026-09-05
-  line_or_paragraph: line 49 of the fetched/stripped page text
+  line_or_paragraph: char offset 886 of normalized fetched text (~paragraph 1); verbatim prefix match
   scope: DIRECT_QUOTATION
   evidence_tier: Dr
-  independence_class: I1
-  who_verified: same-session AI (I1, non-independent) -- metadata confirmed mechanically, passage read
-    and matched to Q5 by the same session that ran the search; no cross-vendor I3 route run in this pass
+  independence_class: I3
+  who_verified: route:codex (cross-vendor AI; abstract/metadata level, not full text) -- see cite-glosa-v0-3-q5-005.i3.json
   verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
-  status: METADATA_OK
+  status: VERIFIED
   xenon_ledger_ref: null
   disclosure: 'TH-language ThaiJo/TCI-indexed Mahidol R2R e-Journal article describing TCTR (Thai Clinical
     Trials Registry). Fetched and read directly (curl + stdlib HTML stripper, one page kept in memory
@@ -343,7 +361,14 @@ citations:
     registry exists and why, but this specific passage does not itself address timestamp sequencing).
     No novel/first/prior-art claim made about this source; comparison to Q5 is same/different/orthogonal
     as stated in dialogue_table_stance. independence_class I1 (same session) -- status METADATA_OK only,
-    not VERIFIED.'
+    not VERIFIED. | I3 route (codex) judged from fetched metadata/abstract + the card''s quoted passage,
+    not full text: Fetched title matches the card and the quoted Thai passage is found verbatim. The excerpt
+    describes TCTR''s general mission and status, but HYPOTHESIS is only labeled Q5 with no substantive
+    claim provided, so relevance to the hypothesis cannot be confirmed. | I3 route (codex) judged from
+    fetched metadata/abstract + the card''s quoted passage, not full text: Fetched title matches the card
+    and no year/first-author contradiction is shown. The quoted Thai passage is mechanically found verbatim
+    and aligns with the article title/abstract context. It supports the card’s limited contextual use:
+    TCTR’s transparency/ethics/quality mission, not a timestamp sequencing rule.'
   superseded_by: null
   notes: 'Diversity: language=th, source_type=peer_reviewed_journal_article, geography_or_institution=Thailand
     (Global South / SEA), search_route_or_database="web search (Thai-language query), glosa-v0-3 Q5 scoping
@@ -385,23 +410,20 @@ citations:
     directly, tawk.help-hosted support knowledge base operated by the Thai Clinical Trials Registry)
   metadata_verified_at: '2026-09-05'
   claim_match_verified: true
-  claim_match_verified_by: self:same-session-read (I1, NOT independent -- awaiting a decorrelated I3 cross-vendor
-    route to upgrade status to VERIFIED per Rule 17/S14; task instruction caps status at METADATA_OK for
-    this pass)
+  claim_match_verified_by: route:codex
   claim_match_verified_at: '2026-09-05'
   exact_passage: 'Current Status: แสดงสถานะของการลงทะเบียนงานวิจัย โดยจะมีการแสดงสถานะดังนี้ In Progress:
     อยู่ระหว่างการกรอกและแก้ไขข้อมูลลงทะเบียน Submitted for Approval: ได้ส่ง Submit เพื่อให้คณะกรรมการ
     พิจารณาแล้วรออนุมัติเลขทะเบียน Released: ได้รับการอนุมัติเลขทะเบียนแล้ว'
   page_or_locator: 'tctr.tawk.help, "03: การลงทะเบียนงานวิจัยใหม่" (New Study Registration), TCTR Help
     Center (Trials Registry knowledge base), as rendered on the page fetched 2026-09-05'
-  line_or_paragraph: lines 26-29 of the fetched/stripped page text
+  line_or_paragraph: char offset 1700 of normalized fetched text (~paragraph 1); verbatim prefix match
   scope: DIRECT_QUOTATION
   evidence_tier: Dr
-  independence_class: I1
-  who_verified: same-session AI (I1, non-independent) -- metadata confirmed mechanically, passage read
-    and matched to Q5 by the same session that ran the search; no cross-vendor I3 route run in this pass
+  independence_class: I3
+  who_verified: route:codex (cross-vendor AI; abstract/metadata level, not full text) -- see cite-glosa-v0-3-q5-006.i3.json
   verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
-  status: METADATA_OK
+  status: VERIFIED
   xenon_ledger_ref: null
   disclosure: 'TCTR (Thai Clinical Trials Registry) official Help Center, "New Study Registration" how-to
     article (TH, grey/community operational documentation, not a peer-reviewed source). Fetched and read
@@ -417,7 +439,11 @@ citations:
     event separately from an ethics-approval event, which is what a minimal timestamp-before field would
     need to do -- but does not itself mandate freeze strictly before ethics). No novel/first/prior-art
     claim made about this source; comparison to Q5 is same/different/orthogonal as stated in dialogue_table_stance.
-    independence_class I1 (same session) -- status METADATA_OK only, not VERIFIED.'
+    independence_class I1 (same session) -- status METADATA_OK only, not VERIFIED. | I3 route (codex)
+    judged from fetched metadata/abstract + the card''s quoted passage, not full text: Fetched title matches
+    the TCTR Help Center article; no author/year contradiction is present. The quoted status passage is
+    mechanically found in the fetched text. The excerpt plausibly contextualizes separate registry workflow
+    status and ethics-review fields, so it bears as operational context, not evidentiary support.'
   superseded_by: null
   notes: 'Diversity: language=th, source_type=grey_literature, geography_or_institution=Thailand (Global
     South / SEA), search_route_or_database="web search (Thai-language query), glosa-v0-3 Q5 scoping pass".
@@ -463,23 +489,20 @@ citations:
     is a research-data-standards nonprofit)
   metadata_verified_at: '2026-09-05'
   claim_match_verified: true
-  claim_match_verified_by: self:same-session-read (I1, NOT independent -- awaiting a decorrelated I3 cross-vendor
-    route to upgrade status to VERIFIED per Rule 17/S14; task instruction caps status at METADATA_OK for
-    this pass)
+  claim_match_verified_by: route:codex
   claim_match_verified_at: '2026-09-05'
   exact_passage: It is not ethics approval. Institutional Review Board (IRB) or Research Ethics Committee
     approval addresses participant protection and is a separate, usually mandatory, process; a preregistration
     does not substitute for it, though many registries let you reference your ethics approval number.
   page_or_locator: casrai.org/guides/preregistration-of-a-study-protocol, "What preregistration is not"
     section, as rendered on the page fetched 2026-09-05
-  line_or_paragraph: line 87 of the fetched/stripped page text
+  line_or_paragraph: char offset 7291 of normalized fetched text (~paragraph 1); verbatim prefix match
   scope: DIRECT_QUOTATION
   evidence_tier: Dr
-  independence_class: I1
-  who_verified: same-session AI (I1, non-independent) -- metadata confirmed mechanically, passage read
-    and matched to Q5 by the same session that ran the search; no cross-vendor I3 route run in this pass
+  independence_class: I3
+  who_verified: route:codex (cross-vendor AI; abstract/metadata level, not full text) -- see cite-glosa-v0-3-q5-007.i3.json
   verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
-  status: METADATA_OK
+  status: VERIFIED
   xenon_ledger_ref: null
   disclosure: 'CASRAI "Preregistering a Study Protocol" guide (EN, grey/community methods-education content,
     research-data-standards nonprofit). Fetched and read directly (curl + stdlib HTML stripper, one page
@@ -492,7 +515,11 @@ citations:
     fields, consistent with what a minimal timestamp-before check needs, but pushes back on treating the
     compound rule as a single clean ordering). No novel/first/prior-art claim made about this source;
     comparison to Q5 is same/different/orthogonal as stated in dialogue_table_stance. independence_class
-    I1 (same session) -- status METADATA_OK only, not VERIFIED.'
+    I1 (same session) -- status METADATA_OK only, not VERIFIED. | I3 route (codex) judged from fetched
+    metadata/abstract + the card''s quoted passage, not full text: Metadata title matches the fetched
+    title and no year/first-author contradiction is present. The passage is mechanically found and consistent
+    with the excerpt. It provides relevant context by distinguishing preregistration from ethics approval,
+    matching the card''s stated contextual use.'
   superseded_by: null
   notes: 'Diversity: language=en, source_type=grey_literature, geography_or_institution=Global (CASRAI,
     Canada/UK-network research-standards nonprofit), search_route_or_database="web search / direct org-site
@@ -535,23 +562,20 @@ citations:
     arXiv:2103.06944 [cs.CL], DOI 10.48550/arXiv.2103.06944 shown on the page)
   metadata_verified_at: '2026-09-05'
   claim_match_verified: true
-  claim_match_verified_by: self:same-session-read (I1, NOT independent -- awaiting a decorrelated I3 cross-vendor
-    route to upgrade status to VERIFIED per Rule 17/S14; task instruction caps status at METADATA_OK for
-    this pass)
+  claim_match_verified_by: route:codex
   claim_match_verified_at: '2026-09-05'
   exact_passage: Preregistration refers to the practice of specifying what you are going to do, and what
     you expect to find in your study, before carrying out the study. This practice is increasingly common
     in medicine and psychology, but is rarely discussed in NLP.
   page_or_locator: arxiv.org/abs/2103.06944, "Preregistering NLP Research" (van Miltenburg, van der Lee,
     Krahmer; accepted NAACL 2021), Abstract, as rendered on the page fetched 2026-09-05
-  line_or_paragraph: line 17 of the fetched/stripped page text
+  line_or_paragraph: char offset 1120 of normalized fetched text (~paragraph 1); verbatim prefix match
   scope: DIRECT_QUOTATION
   evidence_tier: Dr
-  independence_class: I1
-  who_verified: same-session AI (I1, non-independent) -- metadata confirmed mechanically, passage read
-    and matched to Q5 by the same session that ran the search; no cross-vendor I3 route run in this pass
+  independence_class: I3
+  who_verified: route:codex (cross-vendor AI; abstract/metadata level, not full text) -- see cite-glosa-v0-3-q5-008.i3.json
   verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
-  status: METADATA_OK
+  status: VERIFIED
   xenon_ledger_ref: null
   disclosure: 'van Miltenburg, van der Lee & Krahmer, "Preregistering NLP Research" (NAACL 2021 preprint,
     arXiv:2103.06944, EN). Fetched and read directly (curl + stdlib HTML stripper, one page kept in memory
@@ -565,7 +589,15 @@ citations:
     first place, so a hard gate keyed on that field would need a documented exemption path, not a universal
     block). No novel/first/prior-art claim made about this source; comparison to Q5 is same/different/orthogonal
     as stated in dialogue_table_stance. independence_class I1 (same session) -- status METADATA_OK only,
-    not VERIFIED.'
+    not VERIFIED. | I3 route (codex) judged from fetched metadata/abstract + the card''s quoted passage,
+    not full text: Metadata matches title/year/first author and passage is verbatim in the abstract. It
+    contextualizes preregistration across medicine, psychology, and NLP, but the hypothesis is only ''Q5''
+    and the excerpt does not address ethics-approval sequencing, so claim match is uncertain. | I3 route
+    (codex) judged from fetched metadata/abstract + the card''s quoted passage, not full text: Metadata
+    title, year, and first author match. The quoted passage is mechanically found in the abstract and
+    is consistent with the title/abstract. It provides contextual relevance about preregistration being
+    common in medicine/psychology but rarely discussed in NLP, without directly evidencing a stronger
+    dialogue-table claim.'
   superseded_by: null
   notes: 'Diversity: language=en, source_type=preprint, geography_or_institution=Global (Tilburg University,
     Netherlands-based authors; NAACL, international NLP venue), search_route_or_database="web search,
@@ -597,7 +629,7 @@ citations:
       index_name: null
       value: null
       date_read: null
-  fetched_from_url: https://arxiv.org/abs/2103.06944
+  fetched_from_url: https://arxiv.org/html/2103.06944
 strata_table: []
 diversity_audit:
   counts:
@@ -617,7 +649,7 @@ diversity_audit:
   never_claim_diverse_without_counts: true
 accuracy:
   total_citations: 8
-  verified_count: 0
+  verified_count: 6
   spot_check:
     applicable: true
     proposed_n_percent: 20

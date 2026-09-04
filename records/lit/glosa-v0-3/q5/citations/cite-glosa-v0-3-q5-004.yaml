@@ -19,9 +19,12 @@ exact_passage: Clinical trials may be registered without ethics approval, provid
 page_or_locator: 'Ndwandwe DE et al., "Practices and trends in clinical trial registration
   in the Pan African Clinical Trials Registry (PACTR): a descriptive analysis of registration
   data", BMJ Open 2022;12:e057474 (doi:10.1136/bmjopen-2021-057474), PMC full-text
-  mirror pmc.ncbi.nlm.nih.gov/articles/PMC8796231/, Introduction section, as rendered
-  on the page fetched 2026-09-05'
-line_or_paragraph: line 109 of the fetched/stripped PMC full-text page
+  mirror pmc.ncbi.nlm.nih.gov/articles/PMC8796231/, Introduction/Discussion transition
+  paragraph, as rendered on the page fetched 2026-09-05 and re-confirmed verbatim
+  2026-09-05 via direct curl fetch of https://pmc.ncbi.nlm.nih.gov/articles/PMC8796231/'
+line_or_paragraph: mid-paragraph sentence beginning "Clinical trials may be registered
+  without ethics approval..." (line 102 of the tag-stripped full-text page as fetched
+  2026-09-05)
 scope: DIRECT_QUOTATION
 evidence_tier: Dr
 independence_class: I3
@@ -53,7 +56,11 @@ disclosure: 'Ndwandwe et al. 2022, BMJ Open (peer-reviewed, Africa/PACTR, PMC op
   + the card''s quoted passage, not full text: Mechanical metadata provides no title,
   year, or first author, so the card cannot be verified. The verbatim passage check
   found nothing and the fetched excerpt is empty, leaving no text to compare. Therefore
-  the contextual relevance to Q5 is not evidenced.'
+  the contextual relevance to Q5 is not evidenced. | I3 route (codex) judged from
+  fetched metadata/abstract + the card''s quoted passage, not full text: Fetched metadata
+  provides no title/year/first-author check, and the fetched text excerpt is empty.
+  With no text to compare, the exact passage is not plausible under the rule, and
+  the source as evidenced cannot bear on Q5.'
 superseded_by: null
 notes: 'Diversity: language=en, source_type=peer_reviewed_journal_article, geography_or_institution=Africa
   (Pan-African, Global South), search_route_or_database="web search + Europe PMC REST

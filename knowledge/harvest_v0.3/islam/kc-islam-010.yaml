@@ -5,15 +5,18 @@ text: Generalizes Premature Category Stabilization (PCS) — freezing diverse pe
   institutional templates before encounter — from tourism to family mediation, community institutions, and
   state policy. Defines peace structurally through three necessary conditions (pathway openness, feasibility
   preservation, repair-permissiveness) and states its own limits and proof obligations up front.
-verbatim: "It further defines peace structurally through three necessary conditions: pathway openness,
-  feasibility preservation, and repair-permissiveness."
+verbatim: "It further denes peace structurally through three necessary conditions: pathway openness,
+  feasibility preservation, and repairpermissiveness."
 source:
   doi: 10.5281/zenodo.19115417
   title: "From Intercultural Marriage to State Policy: Premature Category Stabilization as a Scale-Invariant
     Mechanism of Cultural Failure"
   year: 2026
 fetched_from_url: https://zenodo.org/api/records/19115417/files/PCS_scale_bridging_paper.pdf/content
-locator: Abstract, p.1
+locator: Abstract, p.1 (pdftotext on this PDF's subset font drops the "fi" ligature outright, so
+  "defines" extracts as "denes"; it also drops the hyphen at the "repair-\npermissiveness" line-wrap,
+  joining it into "repairpermissiveness" — verbatim above is copied exactly as pdftotext renders it,
+  not a transcription error)
 tier: Open
 base_relation: holds
 base_justification: Naming a mechanism's own limits and proof obligations up front matches the base's

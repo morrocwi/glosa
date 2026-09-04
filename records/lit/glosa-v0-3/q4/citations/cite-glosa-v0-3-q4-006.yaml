@@ -47,7 +47,12 @@ disclosure: 'I0 only (same session, not independently checked). Title/authors/jo
   card''s quoted passage, not full text: Metadata matches Crossref title, year, and
   first author. The quoted passage is plausibly the Crossref abstract despite typography/ellipsis
   preventing verbatim match. However Q4 is not stated, so relevance to the hypothesis
-  cannot be independently judged; under uncertainty, claim_match is false.'
+  cannot be independently judged; under uncertainty, claim_match is false. | I3 route
+  (codex) judged from fetched metadata/abstract + the card''s quoted passage, not
+  full text: Metadata matches fetched Crossref title, year, and first author. The
+  quoted passage is plausible because its substance appears in the fetched abstract
+  despite verbatim-search failure. But the hypothesis is only labeled Q4 with no content,
+  so relevance/support cannot be independently assessed from the provided material.'
 superseded_by: null
 notes: 'Global North (UK/Ireland: Surrey, Cranfield, Maynooth), EN, peer-reviewed
   journal article, discipline: management and organization studies / systematic review

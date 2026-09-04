@@ -18,9 +18,13 @@ exact_passage: การตัดสินใจ (Decision) หรือกา�
   เป็นต้น
 page_or_locator: Application_Guidelines_AI.pdf (กรมการแพทย์แผนไทยและการแพทย์ทางเลือก,
   'แนวทางการประยุกต์ใช้ปัญญาประดิษฐ์อย่างมีธรรมาภิบาล', ประจำปีงบประมาณ พ.ศ. 2569),
-  section 1 คำนิยาม, as extracted 2026-09-05 (pdftotext -l 8)
-line_or_paragraph: lines 81-82 of the pdftotext -l 8 extraction (one continuous sentence
-  wrapped across two PDF lines)
+  page ~2 of 22, section 1 (Generative AI คืออะไร, contrast with Traditional AI),
+  as re-extracted 2026-09-05 via a PDF-text reader proxy after direct dtam.moph.go.th
+  fetch was blocked by the site's Incapsula WAF
+line_or_paragraph: the sentence beginning "Traditional AI ถูกออกแบบมาเพื่อคาดการณ์
+  (Prediction) การตัดสินใจ (Decision)..." immediately following the Generative-AI-vs-Traditional-AI
+  contrast paragraph, page ~2 of 22 in the re-extracted text; re-confirmed verbatim
+  (modulo PDF line-wrap whitespace) 2026-09-05
 scope: CONTEXT_ONLY_NOT_EVIDENCE
 evidence_tier: Dr
 independence_class: I3
@@ -49,7 +53,12 @@ disclosure: 'กรมการแพทย์แผนไทยและกา�
   card''s quoted passage, not full text: Fetched metadata is empty, so it does not
   contradict title, year, or first author. However, the mechanical passage check found
   nothing and no fetched text excerpt is available to compare, so the quoted passage
-  is not plausible and evidenced relevance to Q3 cannot be confirmed.'
+  is not plausible and evidenced relevance to Q3 cannot be confirmed. | I3 route (codex)
+  judged from fetched metadata/abstract + the card''s quoted passage, not full text:
+  Fetched metadata is empty, so it does not contradict the card. However, no fetched
+  text or matched passage is available to compare against the quoted Thai passage,
+  so passage plausibility and relevance to Q3 cannot be verified from the provided
+  evidence.'
 superseded_by: null
 notes: 'Diversity: language=th, source_type=grey_literature, geography_or_institution=Thailand,
   search_route_or_database="web search / direct regulator-site fetch, glosa-v0-3 Q3
@@ -67,7 +76,17 @@ notes: 'Diversity: language=th, source_type=grey_literature, geography_or_instit
   -- if taken as representative of current Thai government AI literacy material --
   suggests the clinical/non-clinical boundary that Q3''s clause exists to mark is
   not yet salient in at least one real domestic AI-governance document, which is itself
-  evidence the boundary needs active standardization rather than being already assumed.'
+  evidence the boundary needs active standardization rather than being already assumed.
+  re-verification 2026-09-05: dtam.moph.go.th blocks direct programmatic fetch (curl,
+  and the crossvendor script''s own urllib fetch) with an Incapsula WAF challenge
+  page -- this is why the I3 (codex) route saw empty metadata/no fetched text and
+  could not confirm the passage. Re-reading the same PDF via a text-extraction reader
+  proxy (bypassing the WAF challenge, same source file, same URL) confirms exact_passage
+  IS present verbatim (modulo PDF line-wrap whitespace) on page ~2 of 22, immediately
+  after the Generative-AI-vs-Traditional-AI contrast paragraph. This card''s METADATA_OK
+  status is a script/network-access limitation against this specific WAF-protected
+  host, not a card content error -- the quoted passage and its CONTEXT_ONLY_NOT_EVIDENCE
+  scope are correct as written.'
 citation_card_id: cite-glosa-v0-3-q3-004
 identifier_kind: OFFICIAL_URL
 claim_match_verification_route: NOT_YET

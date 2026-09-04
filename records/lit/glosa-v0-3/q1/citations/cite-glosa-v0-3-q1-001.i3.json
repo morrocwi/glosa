@@ -20,7 +20,7 @@
   "passage_plausible": false,
   "claim_match": false,
   "bearing": "CONTEXT_ONLY",
-  "reason": "Metadata does not contradict the card. The quoted passage was not found, and the provided fetched excerpt is only the abstract opening, so passage plausibility cannot be verified. The source concerns premature closure in medical diagnosis, but the card's exact contextual claim is not evidenced here.",
+  "reason": "Metadata does not contradict the card. The exact passage was not found, and no fetched excerpt around it is available to verify plausibility. The title and abstract opening concern premature closure in medical diagnosis, so it is relevant context, but the quoted claim is not independently evidenced here.",
   "passage_mechanical": "no open full text fetched; abstract/metadata only"
  },
  "date": "2026-09-04"

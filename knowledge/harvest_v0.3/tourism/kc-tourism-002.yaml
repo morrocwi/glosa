@@ -14,7 +14,7 @@ source:
   doi: 10.5281/zenodo.19059720
   title: 'Beyond Halal Labels: Premature Category Stabilization in Muslim-Friendly Tourism'
   year: 2026
-fetched_from_url: "https://zenodo.org/records/19176260 Halal Labels.pdf"
+fetched_from_url: "https://zenodo.org/api/records/19059720/files/Beyond%20Halal%20Labels.pdf/content"
 locator: 'p.1, Abstract (extracted via pdftotext -l 6)'
 tier: Open
 base_relation: open

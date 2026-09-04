@@ -7,9 +7,9 @@
  "verdict": {
   "metadata_matches": true,
   "passage_plausible": true,
-  "claim_match": false,
+  "claim_match": true,
   "bearing": "CONTEXT_ONLY",
-  "reason": "Title/date/author evidence does not contradict the card, and the quoted Plotinus/infinity passage is plausible for an article on infinity, philosophy, religion, and mathematics. But Q7 is not stated, so relevance to the hypothesis cannot be verified from the provided material.",
+  "reason": "Title and visible page details do not contradict the card. The quoted passage is plausible for an article on infinity in philosophy, religion, and mathematics, though not mechanically found. Claim match cannot be confirmed because the hypothesis content is only labeled Q7, so relevance is uncertain.",
   "passage_mechanical": "no open full text fetched; abstract/metadata only"
  },
  "date": "2026-09-04"

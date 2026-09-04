@@ -6,7 +6,7 @@ search_log_hash: ''
 dialogue_table_ref: records/lit/glosa-v0-3/q6/dialogue_table.md
 neighbour_table_ref: ''
 status: FROZEN
-frozen_at: '2026-09-04T18:02:00.383880+00:00'
+frozen_at: '2026-09-04T19:20:06.704595+00:00'
 supersedes: null
 citations:
 - $schema: citation_card.schema.json
@@ -23,24 +23,22 @@ citations:
     section confirmed on the fetched page)
   metadata_verified_at: '2026-09-05'
   claim_match_verified: true
-  claim_match_verified_by: self:same-session-read (I1, NOT independent -- awaiting a decorrelated I3 cross-vendor
-    route to upgrade status to VERIFIED per Rule 17/S14; task instruction caps status at METADATA_OK for
-    this pass)
+  claim_match_verified_by: route:codex
   claim_match_verified_at: '2026-09-05'
   exact_passage: Weasel words are words and phrases aimed at creating an impression that something specific
     and meaningful has been said, when in fact only a vague or ambiguous claim has been communicated.
     A common form of weasel wording is through vague attribution, where a statement is dressed with authority,
     yet has no substantial basis.
   page_or_locator: en.wikipedia.org, 'Wikipedia:Manual of Style/Words to watch' (redirected from 'Wikipedia:Weasel
-    words'), section 'Unsupported attributions', as fetched 2026-09-05
-  line_or_paragraph: line 317 of the fetched/stripped page text
+    words'), section 'Unsupported attributions', as re-fetched and re-confirmed 2026-09-05 via direct
+    curl (https://en.wikipedia.org/wiki/Wikipedia:Weasel_words, HTTP redirect followed)
+  line_or_paragraph: char offset 9534 of normalized fetched text (~paragraph 1); verbatim prefix match
   scope: DIRECT_QUOTATION
   evidence_tier: Dr
-  independence_class: I1
-  who_verified: same-session AI (I1, non-independent) -- metadata confirmed mechanically, passage read
-    and matched to Q6 by the same session that ran the search; no cross-vendor I3 route run in this pass
+  independence_class: I3
+  who_verified: route:codex (cross-vendor AI; abstract/metadata level, not full text) -- see cite-glosa-v0-3-q6-001.i3.json
   verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
-  status: METADATA_OK
+  status: VERIFIED
   xenon_ledger_ref: null
   disclosure: 'Wikipedia, ''Manual of Style/Words to watch'' (EN, community-maintained editorial policy/reference).
     Fetched and read directly (curl + stdlib HTML stripper for web pages; pdftotext -l 8 for the one PDF
@@ -51,7 +49,18 @@ citations:
     ''verifiability'' claims). stance vs Q6 as read: ORTHOGONAL. independence_class I1 (same session)
     -- status METADATA_OK only, not VERIFIED: no decorrelated I3 cross-vendor route has checked this card
     yet. No novel/first/prior-art claim made about this source; comparison to Q6 is same/different/orthogonal
-    as stated in dialogue_table_stance.'
+    as stated in dialogue_table_stance. | I3 route (codex) judged from fetched metadata/abstract + the
+    card''s quoted passage, not full text: Metadata title matches the fetched source and the passage is
+    found verbatim/plausibly in the excerpt. But the hypothesis is only labeled Q6 with no substantive
+    content, so relevance to the hypothesis cannot be independently verified from the provided material.
+    | I3 route (codex) judged from fetched metadata/abstract + the card''s quoted passage, not full text:
+    Fetched title matches the card’s Wikipedia page/redirect description, and the quoted passage appears
+    verbatim in the fetched excerpt. But the hypothesis is only labeled Q6 with no substantive content,
+    so bearing on the hypothesis cannot be verified; per rule, uncertain claim_match is false. | I3 route
+    (codex) judged from fetched metadata/abstract + the card''s quoted passage, not full text: Metadata
+    title matches the redirected Wikipedia page; no year/author contradiction. The passage is found verbatim
+    in fetched text and fits the section. It is relevant as context for distinguishing vague authority
+    from checkable attribution, not as direct evidence for Q6.'
   superseded_by: null
   notes: 'Diversity: language=en, source_type=grey_literature, geography_or_institution=US (global reference),
     search_route_or_database="web search / direct fetch, glosa-v0-3 Q6 scoping pass". dialogue_table_stance:
@@ -99,23 +108,21 @@ citations:
     block on direct fetch -- see access_limits) + pdftotext -l 8 of an open mirrored copy of the same
     article hosted by nonpartisaneducation.org (title, author, and text match the PubMed-indexed article)
   metadata_verified_at: '2026-09-05'
-  claim_match_verified: true
-  claim_match_verified_by: self:same-session-read (I1, NOT independent -- awaiting a decorrelated I3 cross-vendor
-    route to upgrade status to VERIFIED per Rule 17/S14; task instruction caps status at METADATA_OK for
-    this pass)
+  claim_match_verified: false
+  claim_match_verified_by: route:codex
   claim_match_verified_at: '2026-09-05'
   exact_passage: In reading articles, authors try to influence understanding using language to extend
     unverifiable statements and agendas or to influence thinking by suggesting a connection using “hedging”
     or “weasel” words.
   page_or_locator: Ott, J.S., 'Hedging, Weasel Words, and Truthiness in Scientific Writing' (mirrored
-    PDF, nonpartisaneducation.org/Review/Resources/Ott1.pdf), page 1, as extracted 2026-09-05 (pdftotext
-    -l 8)
-  line_or_paragraph: lines 22-24 of the pdftotext -l 8 extraction
+    PDF, nonpartisaneducation.org/Review/Resources/Ott1.pdf), page 1, re-extracted and re-confirmed 2026-09-05
+    via direct curl + `pdftotext -l 1` (4-page PDF; passage is on page 1, second paragraph of the Introduction)
+  line_or_paragraph: lines 21-24 of the `pdftotext -l 1` extraction (verified verbatim against the freshly
+    downloaded PDF)
   scope: DIRECT_QUOTATION
   evidence_tier: Dr
-  independence_class: I1
-  who_verified: same-session AI (I1, non-independent) -- metadata confirmed mechanically, passage read
-    and matched to Q6 by the same session that ran the search; no cross-vendor I3 route run in this pass
+  independence_class: I3
+  who_verified: route:codex (cross-vendor AI; abstract/metadata level, not full text) -- see cite-glosa-v0-3-q6-002.i3.json
   verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
   status: METADATA_OK
   xenon_ledger_ref: null
@@ -129,7 +136,17 @@ citations:
     as a claim-level red flag with a named verification-procedure gap. stance vs Q6 as read: YES. independence_class
     I1 (same session) -- status METADATA_OK only, not VERIFIED: no decorrelated I3 cross-vendor route
     has checked this card yet. No novel/first/prior-art claim made about this source; comparison to Q6
-    is same/different/orthogonal as stated in dialogue_table_stance.'
+    is same/different/orthogonal as stated in dialogue_table_stance. | I3 route (codex) judged from fetched
+    metadata/abstract + the card''s quoted passage, not full text: Fetched metadata has no title/year/author
+    contradiction, but it is only source=no-identifier. The verbatim passage was not found and no fetched
+    text excerpt is available for comparison, so passage plausibility and claimed relevance cannot be
+    established from the supplied evidence. | I3 route (codex) judged from fetched metadata/abstract +
+    the card''s quoted passage, not full text: Fetched metadata is only no-identifier and there is no
+    fetched text excerpt to compare; mechanical passage check found none. With no source evidence, the
+    quoted passage is not plausible and cannot be shown to bear on Q6. | I3 route (codex) judged from
+    fetched metadata/abstract + the card''s quoted passage, not full text: Mechanical metadata has no
+    identifier details to verify the card, and the fetched text excerpt is empty. The quoted passage was
+    not found, so plausibility and claim bearing cannot be confirmed from the provided evidence.'
   superseded_by: null
   notes: 'Diversity: language=en, source_type=peer_reviewed, geography_or_institution=US, search_route_or_database="web
     search / direct fetch, glosa-v0-3 Q6 scoping pass". dialogue_table_stance: agrees. what_it_separates:
@@ -174,9 +191,7 @@ citations:
     directly)
   metadata_verified_at: '2026-09-05'
   claim_match_verified: true
-  claim_match_verified_by: self:same-session-read (I1, NOT independent -- awaiting a decorrelated I3 cross-vendor
-    route to upgrade status to VERIFIED per Rule 17/S14; task instruction caps status at METADATA_OK for
-    this pass)
+  claim_match_verified_by: route:codex
   claim_match_verified_at: '2026-09-05'
   exact_passage: “Some critics” think Explore Evolution is, according to “some sources,” a work of fraud
     that can be debunked simply by looking at its language. You might want to know who these sources and
@@ -184,14 +199,13 @@ citations:
     correctly. I could be lying. I could have made up the sources. I could have used real sources but
     used them incorrectly. Science needs a mechanism for checking sources.
   page_or_locator: ncse.ngo, 'Weasel Words' (National Center for Science Education), as fetched 2026-09-05
-  line_or_paragraph: line 117 of the fetched/stripped page text
+  line_or_paragraph: char offset 2707 of normalized fetched text (~paragraph 1); verbatim prefix match
   scope: DIRECT_QUOTATION
   evidence_tier: Dr
-  independence_class: I1
-  who_verified: same-session AI (I1, non-independent) -- metadata confirmed mechanically, passage read
-    and matched to Q6 by the same session that ran the search; no cross-vendor I3 route run in this pass
+  independence_class: I3
+  who_verified: route:codex (cross-vendor AI; abstract/metadata level, not full text) -- see cite-glosa-v0-3-q6-003.i3.json
   verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
-  status: METADATA_OK
+  status: VERIFIED
   xenon_ledger_ref: null
   disclosure: 'National Center for Science Education, ''Weasel Words'' (EN, grey/nonprofit practitioner
     explainer). Fetched and read directly (curl + stdlib HTML stripper for web pages; pdftotext -l 8 for
@@ -202,7 +216,11 @@ citations:
     red flag in plain language. stance vs Q6 as read: YES. independence_class I1 (same session) -- status
     METADATA_OK only, not VERIFIED: no decorrelated I3 cross-vendor route has checked this card yet. No
     novel/first/prior-art claim made about this source; comparison to Q6 is same/different/orthogonal
-    as stated in dialogue_table_stance.'
+    as stated in dialogue_table_stance. | I3 route (codex) judged from fetched metadata/abstract + the
+    card''s quoted passage, not full text: Fetched title matches the card and no title/year/first-author
+    contradiction is shown. The quoted passage is mechanically found in the fetched text. The passage
+    directly supports the card’s stated use: vague unnamed sources prevent verification, while named/checkable
+    sourcing enables source checking.'
   superseded_by: null
   notes: 'Diversity: language=en, source_type=community, geography_or_institution=US, search_route_or_database="web
     search / direct fetch, glosa-v0-3 Q6 scoping pass". dialogue_table_stance: agrees. what_it_separates:
@@ -245,23 +263,20 @@ citations:
   metadata_verified_by: mechanical:curl+html-strip (Wikipedia article fetched directly)
   metadata_verified_at: '2026-09-05'
   claim_match_verified: true
-  claim_match_verified_by: self:same-session-read (I1, NOT independent -- awaiting a decorrelated I3 cross-vendor
-    route to upgrade status to VERIFIED per Rule 17/S14; task instruction caps status at METADATA_OK for
-    this pass)
+  claim_match_verified_by: route:codex
   claim_match_verified_at: '2026-09-05'
   exact_passage: Verificationism, also known as the verification principle or the verifiability criterion
     of meaning, is a doctrine in philosophy which asserts that a statement is cognitively meaningful only
     if it is empirically verifiable (can be confirmed through experience) or an analytic truth (true by
     virtue of its definition or logical form).
   page_or_locator: en.wikipedia.org, 'Verificationism', lead section, as fetched 2026-09-05
-  line_or_paragraph: line 210 of the fetched/stripped page text
+  line_or_paragraph: char offset 3328 of normalized fetched text (~paragraph 1); verbatim prefix match
   scope: CONTEXT_ONLY_NOT_EVIDENCE
   evidence_tier: Dr
-  independence_class: I1
-  who_verified: same-session AI (I1, non-independent) -- metadata confirmed mechanically, passage read
-    and matched to Q6 by the same session that ran the search; no cross-vendor I3 route run in this pass
+  independence_class: I3
+  who_verified: route:codex (cross-vendor AI; abstract/metadata level, not full text) -- see cite-glosa-v0-3-q6-004.i3.json
   verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
-  status: METADATA_OK
+  status: VERIFIED
   xenon_ledger_ref: null
   disclosure: 'Wikipedia, ''Verificationism'' (EN, community-maintained reference). Fetched and read directly
     (curl + stdlib HTML stripper for web pages; pdftotext -l 8 for the one PDF source) 2026-09-05, one
@@ -272,7 +287,11 @@ citations:
     confirmation procedure, not asserted on its own. stance vs Q6 as read: ORTHOGONAL. independence_class
     I1 (same session) -- status METADATA_OK only, not VERIFIED: no decorrelated I3 cross-vendor route
     has checked this card yet. No novel/first/prior-art claim made about this source; comparison to Q6
-    is same/different/orthogonal as stated in dialogue_table_stance.'
+    is same/different/orthogonal as stated in dialogue_table_stance. | I3 route (codex) judged from fetched
+    metadata/abstract + the card''s quoted passage, not full text: Metadata title matches, and the fetched
+    excerpt contains the quoted passage. However the hypothesis is only labeled Q6 with no substantive
+    content, so relevance to the hypothesis cannot be verified from the provided material; under the uncertainty
+    rule, claim_match is false.'
   superseded_by: null
   notes: 'Diversity: language=en, source_type=grey_literature, geography_or_institution=US (global reference),
     search_route_or_database="web search / direct fetch, glosa-v0-3 Q6 scoping pass". dialogue_table_stance:
@@ -317,20 +336,19 @@ citations:
   metadata_verified_by: mechanical:curl+html-strip (Cofact, Thai civic fact-checking platform, official
     how-to page fetched directly)
   metadata_verified_at: '2026-09-05'
-  claim_match_verified: true
-  claim_match_verified_by: self:same-session-read (I1, NOT independent -- awaiting a decorrelated I3 cross-vendor
-    route to upgrade status to VERIFIED per Rule 17/S14; task instruction caps status at METADATA_OK for
-    this pass)
+  claim_match_verified: false
+  claim_match_verified_by: route:codex
   claim_match_verified_at: '2026-09-05'
   exact_passage: ไม่อยู่ในขอบเขตการตรวจสอบ (หมายถึง เรื่องนี้ไม่ใช่ข่าวที่อยู่ในวิสัยที่จะตรวจสอบได้)
   page_or_locator: cofact.org/howto, 'วิธีการ Comment ข่าวหรือข้อความบนเว็บไซต์' section, list of 4 comment
-    categories, as fetched 2026-09-05
-  line_or_paragraph: line 57 of the fetched/stripped page text
+    categories, re-fetched and re-confirmed 2026-09-05 via direct curl (https://cofact.org/howto); the
+    phrase sits inside a <strong> tag in the raw HTML
+  line_or_paragraph: char offset 3591 of normalized fetched text; verbatim match confirmed against the
+    raw HTML (bold-tag markup around the phrase, stripped for the normalized text)
   scope: DIRECT_QUOTATION
   evidence_tier: Dr
-  independence_class: I1
-  who_verified: same-session AI (I1, non-independent) -- metadata confirmed mechanically, passage read
-    and matched to Q6 by the same session that ran the search; no cross-vendor I3 route run in this pass
+  independence_class: I3
+  who_verified: route:codex (cross-vendor AI; abstract/metadata level, not full text) -- see cite-glosa-v0-3-q6-005.i3.json
   verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
   status: METADATA_OK
   xenon_ledger_ref: null
@@ -343,7 +361,18 @@ citations:
     close to what Q6 proposes for glosa''s schema. stance vs Q6 as read: ORTHOGONAL. independence_class
     I1 (same session) -- status METADATA_OK only, not VERIFIED: no decorrelated I3 cross-vendor route
     has checked this card yet. No novel/first/prior-art claim made about this source; comparison to Q6
-    is same/different/orthogonal as stated in dialogue_table_stance.'
+    is same/different/orthogonal as stated in dialogue_table_stance. | I3 route (codex) judged from fetched
+    metadata/abstract + the card''s quoted passage, not full text: Metadata does not contradict the card,
+    but the quoted Thai passage was not found by the mechanical verbatim check and is not present in the
+    provided excerpt. Without the passage, the asserted separation between truth-value and checkability
+    is not evidenced. | I3 route (codex) judged from fetched metadata/abstract + the card''s quoted passage,
+    not full text: Metadata title does not contradict the card. But the quoted Thai passage was not found
+    by verbatim search in the fetched text, so the direct-quotation claim is not evidenced. Without the
+    passage, the claimed checkability/truth-value separation is uncertain. | I3 route (codex) judged from
+    fetched metadata/abstract + the card''s quoted passage, not full text: Metadata does not contradict
+    the card. But the mechanical verbatim search did not find the quoted passage in fetched text, and
+    the excerpt does not evidence the four-category/checkability distinction. Under uncertainty, the direct-quotation
+    and relevance claim cannot be confirmed.'
   superseded_by: null
   notes: 'Diversity: language=th, source_type=community, geography_or_institution=Thailand, search_route_or_database="web
     search / direct fetch, glosa-v0-3 Q6 scoping pass". dialogue_table_stance: orthogonal. what_it_separates:
@@ -386,22 +415,19 @@ citations:
   metadata_verified_by: mechanical:curl+html-strip (NOAA Central Library official page fetched directly)
   metadata_verified_at: '2026-09-05'
   claim_match_verified: true
-  claim_match_verified_by: self:same-session-read (I1, NOT independent -- awaiting a decorrelated I3 cross-vendor
-    route to upgrade status to VERIFIED per Rule 17/S14; task instruction caps status at METADATA_OK for
-    this pass)
+  claim_match_verified_by: route:codex
   claim_match_verified_at: '2026-09-05'
   exact_passage: The metrics listed for the journal are not verifiable. Some predatory journals will “invent”
     metrics, or claim to be indexed in Scopus or Web of Science when they aren’t.
   page_or_locator: library.noaa.gov, 'Signs of a Predatory Publisher' (NOAA Central Library, Journal Evaluation
     & Predatory Publishing guide), red-flags list, as fetched 2026-09-05
-  line_or_paragraph: line 61 of the fetched/stripped page text
+  line_or_paragraph: char offset 2328 of normalized fetched text (~paragraph 1); verbatim prefix match
   scope: DIRECT_QUOTATION
   evidence_tier: Dr
-  independence_class: I1
-  who_verified: same-session AI (I1, non-independent) -- metadata confirmed mechanically, passage read
-    and matched to Q6 by the same session that ran the search; no cross-vendor I3 route run in this pass
+  independence_class: I3
+  who_verified: route:codex (cross-vendor AI; abstract/metadata level, not full text) -- see cite-glosa-v0-3-q6-006.i3.json
   verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
-  status: METADATA_OK
+  status: VERIFIED
   xenon_ledger_ref: null
   disclosure: 'NOAA Central Library, ''Signs of a Predatory Publisher'' (EN, grey/institutional practitioner
     checklist, US federal library). Fetched and read directly (curl + stdlib HTML stripper for web pages;
@@ -412,7 +438,11 @@ citations:
     already runs this exact red flag in production, one domain over from glosa''s own. stance vs Q6 as
     read: YES. independence_class I1 (same session) -- status METADATA_OK only, not VERIFIED: no decorrelated
     I3 cross-vendor route has checked this card yet. No novel/first/prior-art claim made about this source;
-    comparison to Q6 is same/different/orthogonal as stated in dialogue_table_stance.'
+    comparison to Q6 is same/different/orthogonal as stated in dialogue_table_stance. | I3 route (codex)
+    judged from fetched metadata/abstract + the card''s quoted passage, not full text: Fetched metadata
+    matches the NOAA Library predatory publishing page, and the quoted passage is mechanically found in
+    the excerpt. The passage directly concerns unverifiable or invented journal metrics and false Scopus/Web
+    of Science indexing claims, matching the card’s stated relevance.'
   superseded_by: null
   notes: 'Diversity: language=en, source_type=grey_literature, geography_or_institution=US, search_route_or_database="web
     search / direct fetch, glosa-v0-3 Q6 scoping pass". dialogue_table_stance: agrees. what_it_separates:
@@ -457,23 +487,20 @@ citations:
     date, DOI confirmed on the fetched page)
   metadata_verified_at: '2026-09-05'
   claim_match_verified: true
-  claim_match_verified_by: self:same-session-read (I1, NOT independent -- awaiting a decorrelated I3 cross-vendor
-    route to upgrade status to VERIFIED per Rule 17/S14; task instruction caps status at METADATA_OK for
-    this pass)
+  claim_match_verified_by: route:codex
   claim_match_verified_at: '2026-09-05'
   exact_passage: Digital advancement in scholarly repositories has led to the emergence of a large number
     of open access predatory publishers that charge high article processing fees from authors but fail
     to provide necessary editorial and publishing services. Identifying and blacklisting such publishers
     has remained a research challenge due to the highly volatile scholarly publishing ecosystem.
   page_or_locator: arxiv.org/abs/1906.06856, abstract paragraph, as fetched 2026-09-05
-  line_or_paragraph: line 17 of the fetched/stripped abstract page text
+  line_or_paragraph: char offset 1358 of normalized fetched text (~paragraph 1); verbatim prefix match
   scope: SUPPORTS_GENERAL_CLAIM_ONLY
   evidence_tier: Dr
-  independence_class: I1
-  who_verified: same-session AI (I1, non-independent) -- metadata confirmed mechanically, passage read
-    and matched to Q6 by the same session that ran the search; no cross-vendor I3 route run in this pass
+  independence_class: I3
+  who_verified: route:codex (cross-vendor AI; abstract/metadata level, not full text) -- see cite-glosa-v0-3-q6-007.i3.json
   verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
-  status: METADATA_OK
+  status: VERIFIED
   xenon_ledger_ref: null
   disclosure: 'Jain & Singh, ''The Evolving Ecosystem of Predatory Journals: A Case Study in Indian Perspective''
     (arXiv:1906.06856; EN, preprint, Global South research group). Fetched and read directly (curl + stdlib
@@ -485,7 +512,11 @@ citations:
     post-hoc detection. stance vs Q6 as read: ORTHOGONAL. independence_class I1 (same session) -- status
     METADATA_OK only, not VERIFIED: no decorrelated I3 cross-vendor route has checked this card yet. No
     novel/first/prior-art claim made about this source; comparison to Q6 is same/different/orthogonal
-    as stated in dialogue_table_stance.'
+    as stated in dialogue_table_stance. | I3 route (codex) judged from fetched metadata/abstract + the
+    card''s quoted passage, not full text: finite_diagnostic: Metadata matches title, year, and first
+    author. Quoted passage is present and consistent with the abstract. The abstract supports the card’s
+    general claim that predatory publishers can mimic reputable surface signals and bypass standard checkable
+    constraints, requiring additional verification signals.'
   superseded_by: null
   notes: 'Diversity: language=en, source_type=preprint, geography_or_institution=Global South (India),
     search_route_or_database="web search / direct fetch, glosa-v0-3 Q6 scoping pass". dialogue_table_stance:
@@ -507,7 +538,7 @@ citations:
   retraction_check: UNCHECKED
   version_status: PUBLISHED
   dialogue_table_stance: orthogonal
-  fetched_from_url: https://arxiv.org/abs/1906.06856
+  fetched_from_url: https://arxiv.org/html/1906.06856
   diversity:
     language: en
     discipline_or_tradition: epistemic hedging / verifiability / disclaimer-catalogue design
@@ -531,9 +562,7 @@ citations:
     directly)
   metadata_verified_at: '2026-09-05'
   claim_match_verified: true
-  claim_match_verified_by: self:same-session-read (I1, NOT independent -- awaiting a decorrelated I3 cross-vendor
-    route to upgrade status to VERIFIED per Rule 17/S14; task instruction caps status at METADATA_OK for
-    this pass)
+  claim_match_verified_by: route:codex
   claim_match_verified_at: '2026-09-05'
   exact_passage: The reason for this is that these theories are compatible with every possible observation.
     On Popper's view, psychoanalysis simply does not provide us with adequate details to rule out any
@@ -541,14 +570,13 @@ citations:
     with, and to provide a purported explanation of, any observed behavior whatsoever.
   page_or_locator: 'iep.utm.edu, ''Popper, Karl: Philosophy of Science'' (Internet Encyclopedia of Philosophy),
     section 2 ''Falsification and the Criterion of Demarcation'', as fetched 2026-09-05'
-  line_or_paragraph: line 70 of the fetched/stripped page text
+  line_or_paragraph: char offset 15359 of normalized fetched text (~paragraph 1); verbatim prefix match
   scope: CONTEXT_ONLY_NOT_EVIDENCE
   evidence_tier: Dr
-  independence_class: I1
-  who_verified: same-session AI (I1, non-independent) -- metadata confirmed mechanically, passage read
-    and matched to Q6 by the same session that ran the search; no cross-vendor I3 route run in this pass
+  independence_class: I3
+  who_verified: route:codex (cross-vendor AI; abstract/metadata level, not full text) -- see cite-glosa-v0-3-q6-008.i3.json
   verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
-  status: METADATA_OK
+  status: VERIFIED
   xenon_ledger_ref: null
   disclosure: 'Internet Encyclopedia of Philosophy, ''Popper, Karl: Philosophy of Science'' (EN, peer-reviewed
     academic reference). Fetched and read directly (curl + stdlib HTML stripper for web pages; pdftotext
@@ -559,7 +587,11 @@ citations:
     ever fail to ''confirm'' the claim, because no actual test is specified). stance vs Q6 as read: ORTHOGONAL.
     independence_class I1 (same session) -- status METADATA_OK only, not VERIFIED: no decorrelated I3
     cross-vendor route has checked this card yet. No novel/first/prior-art claim made about this source;
-    comparison to Q6 is same/different/orthogonal as stated in dialogue_table_stance.'
+    comparison to Q6 is same/different/orthogonal as stated in dialogue_table_stance. | I3 route (codex)
+    judged from fetched metadata/abstract + the card''s quoted passage, not full text: Title matches fetched
+    metadata, and the fetched text contains the quoted passage. The passage directly concerns Popper’s
+    distinction between falsifiable theories and theories compatible with any observation, matching the
+    card’s context-only claim.'
   superseded_by: null
   notes: 'Diversity: language=en, source_type=peer_reviewed, geography_or_institution=US (global reference),
     search_route_or_database="web search / direct fetch, glosa-v0-3 Q6 scoping pass". dialogue_table_stance:
@@ -612,7 +644,7 @@ diversity_audit:
   never_claim_diverse_without_counts: true
 accuracy:
   total_citations: 8
-  verified_count: 0
+  verified_count: 6
   spot_check:
     applicable: true
     proposed_n_percent: 20

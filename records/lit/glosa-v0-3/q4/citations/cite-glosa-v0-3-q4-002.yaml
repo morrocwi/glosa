@@ -49,7 +49,12 @@ disclosure: 'I0 only (same session, not independently checked). Title/authors/jo
   + the card''s quoted passage, not full text: Metadata does not contradict the card:
   title/first author align and no card year conflict is shown. Passage cannot be assessed
   because verbatim search found none and no fetched text excerpt is available. Without
-  verified passage or hypothesis detail, claim_match is false.'
+  verified passage or hypothesis detail, claim_match is false. | I3 route (codex)
+  judged from fetched metadata/abstract + the card''s quoted passage, not full text:
+  Metadata does not contradict the card on title/year/first author. But the mechanical
+  passage check found nothing and no fetched text excerpt is available, so the quoted
+  passage cannot be verified. With no confirmed passage and unclear hypothesis bearing,
+  claim_match is false.'
 superseded_by: null
 notes: 'Global North (multi-country GRADE working group authors), EN, peer-reviewed
   methods paper, discipline: evidence-based medicine / clinical epidemiology. Found

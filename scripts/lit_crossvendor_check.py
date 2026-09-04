@@ -43,9 +43,21 @@ def fetch_meta(identifier):
                     "year": (z.get("publication_date") or "")[:4], "container": "Zenodo", "abstract": re.sub(r"<[^>]+>", " ", z.get("description", ""))[:1500]}
         if kind == "DOI" and val:
             j = json.load(urllib.request.urlopen("https://api.crossref.org/works/" + urllib.parse.quote(val), timeout=30))["message"]
+            ab = re.sub(r"<[^>]+>", " ", j.get("abstract", ""))
+            if not ab.strip():
+                try:  # Europe PMC often has the abstract Crossref lacks
+                    q = json.load(urllib.request.urlopen("https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI:" + urllib.parse.quote(val) + "&format=json&resultType=core", timeout=30))
+                    ab = ((q.get("resultList", {}).get("result") or [{}])[0].get("abstractText") or "")
+                except Exception:  # noqa: BLE001
+                    pass
             return {"source": "crossref", "title": " ".join(j.get("title", [])), "authors": [a.get("family", "") for a in j.get("author", [])],
                     "year": (j.get("issued", {}).get("date-parts") or [[None]])[0][0], "container": " ".join(j.get("container-title", [])),
-                    "abstract": re.sub(r"<[^>]+>", " ", j.get("abstract", ""))[:1500]}
+                    "abstract": ab[:2500]}
+        if kind in ("PMCID", "PMC") and val:
+            pmc = val if val.upper().startswith("PMC") else "PMC" + val
+            q = json.load(urllib.request.urlopen(f"https://www.ebi.ac.uk/europepmc/webservices/rest/search?query={pmc}&format=json&resultType=core", timeout=30))
+            r = (q.get("resultList", {}).get("result") or [{}])[0]
+            return {"source": "europepmc", "title": r.get("title", ""), "authors": [a.get("fullName", "") for a in (r.get("authorList", {}).get("author") or [])], "year": r.get("pubYear"), "container": r.get("journalTitle", ""), "abstract": (r.get("abstractText") or "")[:2500]}
         if kind == "ARXIV" and val:
             aid = re.sub(r"^(arxiv:|https?://arxiv\.org/abs/)", "", val, flags=re.I)
             xml = urllib.request.urlopen("https://export.arxiv.org/api/query?id_list=" + urllib.parse.quote(aid), timeout=30).read().decode("utf-8", "replace")
@@ -67,6 +79,8 @@ def fetch_fulltext(identifier, meta):
     Returns normalized text or ''. Mechanical only."""
     kind = (identifier or {}).get("kind", ""); val = (identifier or {}).get("value", "")
     urls = []
+    if isinstance(meta, dict) and meta.get("_card_url"):
+        urls.append(meta["_card_url"])
     if kind == "ARXIV" and val:
         aid = re.sub(r"^(arxiv:|https?://arxiv\.org/abs/)", "", val, flags=re.I)
         urls += [f"https://arxiv.org/html/{aid}", f"https://arxiv.org/abs/{aid}"]
@@ -83,8 +97,17 @@ def fetch_fulltext(identifier, meta):
         urls += [val, "https://web.archive.org/web/2026/" + val]
     for u in urls:
         try:
-            html = urllib.request.urlopen(urllib.request.Request(u, headers={"User-Agent": "Mozilla/5.0 (X11; Linux x86_64) glosa/0.1 (+https://github.com/morrocwi/glosa)"}), timeout=40).read(3_000_000).decode("utf-8", "replace")
+            raw = urllib.request.urlopen(urllib.request.Request(u, headers={"User-Agent": "Mozilla/5.0 (X11; Linux x86_64) glosa/0.1 (+https://github.com/morrocwi/glosa)"}), timeout=40).read(6_000_000)
             fetch_fulltext.last_url = u
+            if raw[:5] == b"%PDF-":
+                import tempfile, os as _os, subprocess as _sp
+                tf = tempfile.NamedTemporaryFile(suffix=".pdf", delete=False); tf.write(raw); tf.close()
+                text = _sp.run(["pdftotext", "-l", "40", tf.name, "-"], capture_output=True, text=True).stdout; _os.unlink(tf.name)
+                text = re.sub(r"\s+", " ", text).replace("\x00", "")
+                if len(text) > 800:
+                    return text
+                continue
+            html = raw.decode("utf-8", "replace")
             text = re.sub(r"<script.*?</script>|<style.*?</style>", " ", html, flags=re.S | re.I)
             text = re.sub(r"<[^>]+>", " ", text)
             text = re.sub(r"&nbsp;|&#160;", " ", text); text = re.sub(r"&amp;", "&", text); text = re.sub(r"&quot;|&#8220;|&#8221;", '"', text)
@@ -97,7 +120,7 @@ def fetch_fulltext(identifier, meta):
 
 
 def _norm(t):
-    return re.sub(r"[^a-z0-9\u0e00-\u0e7f]+", " ", (t or "").lower()).strip()
+    return re.sub(r"[\W_]+", " ", (t or "").lower(), flags=re.UNICODE).strip()
 
 
 def passage_found(exact_passage, fulltext):
@@ -152,7 +175,8 @@ def main():
     a = ap.parse_args()
     hdir = ROOT / "records" / "lit" / a.slug / a.hyp.lower()
     sl = yaml.safe_load((hdir / "search_log.yaml").read_text(encoding="utf-8"))
-    hyp_text = (sl.get("frozen_scope") or {}).get("question") or sl.get("hypothesis_text") or a.hyp
+    fs_ = sl.get("frozen_scope") or {}
+    hyp_text = fs_.get("question") or fs_.get("hypothesis_or_falsifier") or sl.get("hypothesis_text") or a.hyp
     # prefer the hypothesis statement itself (projects/*/hypotheses.md) over the search question
     for hp in (ROOT / "projects").glob("*" + a.slug + "*/hypotheses.md"):
         txt = hp.read_text(encoding="utf-8")
@@ -172,6 +196,8 @@ def main():
         if a.dry_run:
             print(cp.name, meta.get("source"), (meta.get("title") or "")[:70]); continue
         fetch_fulltext.last_url = None
+        if card.get("fetched_from_url") and str(card["fetched_from_url"]).startswith("http"):
+            meta = dict(meta, _card_url=str(card["fetched_from_url"]))
         full = fetch_fulltext(card.get("identifier"), meta)
         hit = passage_found(card.get("exact_passage"), full)
         if hit:

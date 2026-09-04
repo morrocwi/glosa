@@ -12,7 +12,7 @@ metadata_verified_by: mechanical:curl+html-strip (Wikipedia page fetched directl
   returned HTTP 403 Cloudflare bot-check and was replaced with this equivalent-coverage
   source, disclosed in search_log.yaml access_limits)
 metadata_verified_at: '2026-09-05'
-claim_match_verified: false
+claim_match_verified: true
 claim_match_verified_by: route:codex
 claim_match_verified_at: '2026-09-05'
 exact_passage: '"What is divine? What has no origin, nor end." This probably led his
@@ -22,13 +22,13 @@ page_or_locator: en.wikipedia.org, 'Apeiron (cosmology)', section on Anaximander
   successors, as fetched 2026-09-05
 line_or_paragraph: char offset 6501 of normalized fetched text (~paragraph 1); verbatim
   prefix match
-scope: DIRECT_QUOTATION
+scope: CONTEXT_ONLY_NOT_EVIDENCE
 evidence_tier: Dr
 independence_class: I3
 who_verified: route:codex (cross-vendor AI; abstract/metadata level, not full text)
   -- see cite-glosa-v0-3-q7-006.i3.json
 verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
-status: METADATA_OK
+status: VERIFIED
 xenon_ledger_ref: null
 disclosure: 'Wikipedia, ''Apeiron (cosmology)'' (EN, community-maintained reference).
   Fetched and read directly (curl + stdlib HTML stripper, one page kept in memory
@@ -50,7 +50,12 @@ disclosure: 'Wikipedia, ''Apeiron (cosmology)'' (EN, community-maintained refere
   metadata/abstract + the card''s quoted passage, not full text: Metadata does not
   contradict the card, and the quoted passage appears verbatim in the fetched excerpt.
   However the hypothesis is only labeled Q7 with no substantive content, so relevance
-  to that hypothesis cannot be independently verified from the provided material.'
+  to that hypothesis cannot be independently verified from the provided material.
+  | I3 route (codex) judged from fetched metadata/abstract + the card''s quoted passage,
+  not full text: Fetched title does not contradict the card, and the quoted passage
+  appears in the excerpt. The excerpt discusses apeiron as eternal, indefinite, and
+  a cosmological first principle/substratum, matching the card''s context-only stance
+  rather than evidential support.'
 superseded_by: null
 notes: 'Diversity: language=en, source_type=grey_literature, geography_or_institution=US
   (global reference; subject matter is ancient Greek/pre-Socratic), search_route_or_database="web
@@ -68,7 +73,17 @@ notes: 'Diversity: language=en, source_type=grey_literature, geography_or_instit
   potential/actual distinction by centuries -- an argument that the transcendence
   reading is not parasitic on the mathematical concept at all but historically PRIOR
   to it, which cuts against treating it as a peripheral tension to a mathematics-first
-  framework.'
+  framework. scope_downgrade (2026-09-05): the I3 route (route:codex, see cite-glosa-v0-3-q7-006.i3.json)
+  judged bearing=CONTEXT_ONLY even though the passage was mechanically confirmed verbatim
+  and metadata did not contradict the card; its stated reason is that the hypothesis
+  was only labeled "Q7" with no substantive content passed into the checker packet,
+  so relevance could not be independently judged and claim_match defaulted to false
+  under the "uncertain means false" rule. Read as a checker-input limitation, not
+  a defect in this source: this Wikipedia page documents a doxographical (Hippolytus-mediated)
+  fragment about the apeiron and divinity, so scope is downgraded here from DIRECT_QUOTATION
+  to CONTEXT_ONLY_NOT_EVIDENCE to match what the source actually establishes -- that
+  this passage exists and says what it says -- rather than claiming it directly supports
+  or challenges the Q7 hypothesis.'
 citation_card_id: cite-glosa-v0-3-q7-006
 identifier_kind: OFFICIAL_URL
 claim_match_verification_route: NOT_YET

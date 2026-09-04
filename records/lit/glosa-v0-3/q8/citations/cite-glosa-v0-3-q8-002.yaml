@@ -50,7 +50,12 @@ disclosure: 'I0 only (same session, not independently checked). Author/venue/tit
   + the card''s quoted passage, not full text: The fetched title matches and the quoted
   passage is mechanically present/plausible. But the hypothesis is only labeled Q8
   with no substantive content, so I cannot verify that the passage supports the claimed
-  dependent-identity analogue. Under the uncertainty rule, claim_match is false.'
+  dependent-identity analogue. Under the uncertainty rule, claim_match is false. |
+  I3 route (codex) judged from fetched metadata/abstract + the card''s quoted passage,
+  not full text: Metadata title does not contradict the card, and the fetched text
+  contains the quoted passage. But the actual Q8 hypothesis content is not provided,
+  so I cannot verify that this source bears on Q8 as claimed; under the rules, uncertainty
+  makes claim_match false.'
 superseded_by: null
 notes: 'Global North (Stanford University), EN, peer-reviewed/editorially-curated
   academic reference encyclopedia, analytic metaphysics. Found via query family: support

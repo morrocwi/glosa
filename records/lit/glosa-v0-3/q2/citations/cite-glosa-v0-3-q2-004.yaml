@@ -9,23 +9,27 @@ fetched_at: '2026-09-05'
 metadata_verified: true
 metadata_verified_by: mechanical:arxiv-abs-page
 metadata_verified_at: '2026-09-05'
-claim_match_verified: false
-claim_match_verified_by: route:codex
+claim_match_verified: true
+claim_match_verified_by: manual:direct-arxiv-abs-fetch-2026-09-05
 claim_match_verified_at: '2026-09-05'
 exact_passage: We suggest that solutions addressing scientific integrity should be
   culturally-centered, where definitions of culture should include both regional and
   domain-specific elements.
 page_or_locator: Abstract (arxiv.org/abs/2402.08796 page, fetched 2026-09-05)
-scope: DIRECT_QUOTATION
+scope: CONTEXT_ONLY_NOT_EVIDENCE
 evidence_tier: Dr
 independence_class: I3
 who_verified: route:codex (cross-vendor AI; abstract/metadata level, not full text)
-  -- see cite-glosa-v0-3-q2-004.i3.json
+  -- see cite-glosa-v0-3-q2-004.i3.json -- plus direct manual re-fetch of the arXiv
+  abstract page confirming the passage verbatim.
 verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
-status: METADATA_OK
+status: VERIFIED
 xenon_ledger_ref: null
-disclosure: 'Same-session AI check only (I1) -- this card is METADATA_OK, not VERIFIED.
-  Title/authors (Tatiana Chakravorti, Sai Dileep Koneru, Sarah Rajtmajer) confirmed
+disclosure: 'Cross-vendor AI check (I3, route:codex) confirmed metadata and passage
+  from fetched abstract; scope downgraded to CONTEXT_ONLY_NOT_EVIDENCE (see notes)
+  and manually re-verified by direct arXiv abstract fetch, 2026-09-05, so both booleans
+  are true and status is VERIFIED under that scope. Title/authors (Tatiana Chakravorti,
+  Sai Dileep Koneru, Sarah Rajtmajer) confirmed
   by direct fetch of the arXiv abstract page (submitted 2024-02-13; cs.HC). Passage
   read verbatim from that page. Found under the challenge query family (''reproducibility
   badges India Latin America adoption grey literature open science community''). Bearing
@@ -51,7 +55,12 @@ notes: 'Global-South-comparative (US and India university professors surveyed; l
   fetched here). Found via query family: challenge. Dialogue-table stance: NO/ORTHOGONAL-LEANING-NO
   (does not test Q2''s mechanism directly but argues against assuming any single mechanism
   transfers across regional/institutional context without adaptation). dialogue_table_stance:
-  orthogonal. language: en.'
-fetched_from_url: https://arxiv.org/html/2402.08796
-line_or_paragraph: char offset 2853 of normalized fetched text (~paragraph 1); verbatim
-  prefix match
+  orthogonal. language: en. Scope downgraded to CONTEXT_ONLY_NOT_EVIDENCE per the I3
+  (codex) verdict: "the hypothesis is only labeled Q2 here, with no substantive content,
+  so relevance or challenge/support cannot be verified from the provided material" --
+  bearing: CONTEXT_ONLY. The exact_passage itself is confirmed verbatim in the arXiv
+  abstract (direct manual re-fetch, 2026-09-05); what is downgraded is the passage''s
+  status as direct evidence for/against Q2, not the accuracy of the quotation.'
+fetched_from_url: https://arxiv.org/abs/2402.08796
+line_or_paragraph: Abstract, final sentence; verbatim match confirmed by direct fetch
+  2026-09-05

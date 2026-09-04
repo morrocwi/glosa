@@ -50,7 +50,12 @@ disclosure: 'I0 only (same session, not independently checked). Title/authors/jo
   + the card''s quoted passage, not full text: Metadata matches title, year, journal,
   and first author. Passage cannot be validated because the verbatim check found none
   and no fetched text excerpt is available. With no hypothesis detail beyond Q1 and
-  no comparable passage, the claimed support is uncertain.'
+  no comparable passage, the claimed support is uncertain. | I3 route (codex) judged
+  from fetched metadata/abstract + the card''s quoted passage, not full text: Fetched
+  metadata matches title, year, and first author. But the exact passage was not found
+  and no fetched text excerpt is available to compare, so passage plausibility fails.
+  Q1 content is unspecified, so the claimed support cannot be independently verified
+  from provided material.'
 superseded_by: null
 notes: 'Global North (Yale University, authors DiMaggio & Powell), EN, peer-reviewed
   journal article (American Sociological Review), foundational/highly-cited text in

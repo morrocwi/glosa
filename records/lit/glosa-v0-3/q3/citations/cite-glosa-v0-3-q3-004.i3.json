@@ -10,7 +10,7 @@
   "passage_plausible": false,
   "claim_match": false,
   "bearing": "CONTEXT_ONLY",
-  "reason": "Fetched metadata is empty, so it does not contradict title, year, or first author. However, the mechanical passage check found nothing and no fetched text excerpt is available to compare, so the quoted passage is not plausible and evidenced relevance to Q3 cannot be confirmed.",
+  "reason": "Fetched metadata is empty, so it does not contradict the card. However, no fetched text or matched passage is available to compare against the quoted Thai passage, so passage plausibility and relevance to Q3 cannot be verified from the provided evidence.",
   "passage_mechanical": "no open full text fetched; abstract/metadata only"
  },
  "date": "2026-09-04"

@@ -52,7 +52,12 @@ disclosure: 'I0 only (same session, not independently checked). Title/authors/jo
   quoted passage, not full text: Metadata and passage are mechanically consistent.
   But the hypothesis is only labeled Q4 with no substantive content provided, and
   the card notes say I0 only / Dialogue-table stance NO. From the supplied material
-  alone, relevance to Q4 cannot be verified.'
+  alone, relevance to Q4 cannot be verified. | I3 route (codex) judged from fetched
+  metadata/abstract + the card''s quoted passage, not full text: Metadata and verbatim
+  passage check align with the supplied material. The excerpt plausibly concerns evidence-to-policy
+  guidance in ECOWAS/West Africa. But the hypothesis is only labeled Q4 with no content,
+  so the source''s relevance to the hypothesis cannot be independently judged; uncertain
+  claim_match is false.'
 superseded_by: null
 notes: 'Global South (Nigeria / West Africa, ECOWAS/WAHO), EN, peer-reviewed journal
   article, open access (CC BY), discipline: health policy / evidence-to-policy guidance

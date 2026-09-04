@@ -46,7 +46,11 @@ disclosure: 'I0 only (same session, not independently checked). Title/authors/jo
   The quoted passage was not found, and the provided fetched excerpt is only the abstract
   opening, so passage plausibility cannot be verified. The source concerns premature
   closure in medical diagnosis, but the card''s exact contextual claim is not evidenced
-  here.'
+  here. | I3 route (codex) judged from fetched metadata/abstract + the card''s quoted
+  passage, not full text: Metadata does not contradict the card. The exact passage
+  was not found, and no fetched excerpt around it is available to verify plausibility.
+  The title and abstract opening concern premature closure in medical diagnosis, so
+  it is relevant context, but the quoted claim is not independently evidenced here.'
 superseded_by: null
 notes: 'Global North (authors: Erasmus MC Rotterdam / Qatar affiliations mixed), EN,
   peer-reviewed journal article, discipline: medical education / clinical cognitive

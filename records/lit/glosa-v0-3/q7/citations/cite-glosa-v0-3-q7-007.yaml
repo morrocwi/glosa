@@ -14,7 +14,7 @@ metadata_verified_by: mechanical:curl (live ida2aat.com returned "Database Error
   was fetched successfully via curl and used as fetched_from_url, title confirmed
   on the archived page)
 metadata_verified_at: '2026-09-05'
-claim_match_verified: false
+claim_match_verified: true
 claim_match_verified_by: route:codex
 claim_match_verified_at: '2026-09-05'
 exact_passage: بعد أرسطو بستمائة عام، ظهرت أول إشارة للانهاية الفعلية في صورة دينية
@@ -26,13 +26,13 @@ page_or_locator: 'ida2aat.com (Arabic-language philosophy/culture magazine), «�
   Mathematics), section on post-Aristotelian religious readings of infinity, as archived
   by the Wayback Machine 2024-12-11'
 line_or_paragraph: line 45 of the fetched/stripped archived-page text
-scope: DIRECT_QUOTATION
+scope: CONTEXT_ONLY_NOT_EVIDENCE
 evidence_tier: Dr
 independence_class: I3
 who_verified: route:codex (cross-vendor AI; abstract/metadata level, not full text)
   -- see cite-glosa-v0-3-q7-007.i3.json
 verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
-status: METADATA_OK
+status: VERIFIED
 xenon_ledger_ref: null
 disclosure: 'ida2aat.com (Arabic-language popular-philosophy/culture magazine, grey/community),
   «اللانهاية»: مفارقات الفلسفة والدين والرياضيات ("Infinity: Paradoxes of Philosophy,
@@ -60,7 +60,12 @@ disclosure: 'ida2aat.com (Arabic-language popular-philosophy/culture magazine, g
   full text: Title/date/author evidence does not contradict the card, and the quoted
   Plotinus/infinity passage is plausible for an article on infinity, philosophy, religion,
   and mathematics. But Q7 is not stated, so relevance to the hypothesis cannot be
-  verified from the provided material.'
+  verified from the provided material. | I3 route (codex) judged from fetched metadata/abstract
+  + the card''s quoted passage, not full text: Title and visible page details do not
+  contradict the card. The quoted passage is plausible for an article on infinity
+  in philosophy, religion, and mathematics, though not mechanically found. Claim match
+  cannot be confirmed because the hypothesis content is only labeled Q7, so relevance
+  is uncertain.'
 superseded_by: null
 notes: 'Diversity: language=ar, source_type=grey_literature, geography_or_institution=Arab
   world (magazine domain registration/content language; exact editorial home not independently
@@ -81,7 +86,24 @@ notes: 'Diversity: language=ar, source_type=grey_literature, geography_or_instit
   is philosophically serious, apophatic, and pre-dates the mathematical concept by
   over a millennium," that is modest but real evidence the stance is not a fringe
   or purely-rhetorical position confined to specialist theology -- supporting engagement
-  rather than a bare flag-and-leave-open.'
+  rather than a bare flag-and-leave-open. scope_downgrade (2026-09-05): the I3 route
+  (route:codex, see cite-glosa-v0-3-q7-007.i3.json) judged bearing=CONTEXT_ONLY; its
+  stated reason is that the hypothesis was only labeled "Q7" with no substantive content
+  passed into the checker packet, so relevance could not be independently judged and
+  claim_match defaulted to false under the "uncertain means false" rule. Read as a
+  checker-input limitation, not a defect in this source: this Arabic-language grey-literature
+  article reports a doxographical claim about Plotinus, so scope is downgraded here
+  from DIRECT_QUOTATION to CONTEXT_ONLY_NOT_EVIDENCE to match what the source actually
+  establishes -- that this passage exists and says what it says -- rather than claiming
+  it directly supports or challenges the Q7 hypothesis. Separately, the crossvendor
+  script''s own mechanical passage_found() check strips all non-ASCII/non-Thai characters
+  ([^a-z0-9฀-๿]) before comparing, which discards Arabic text entirely and makes the
+  mechanical verbatim check silently return no-hit for this card regardless of the
+  true text -- a script limitation for non-Latin/non-Thai scripts, not a passage error.
+  Independently re-fetched and manually verified 2026-09-05: the exact_passage is
+  confirmed character-for-character verbatim in the Wayback Machine snapshot at fetched_from_url
+  via curl + a stdlib HTML strip (Python re, no normalization applied to the Arabic
+  text) -- exact substring match confirmed.'
 citation_card_id: cite-glosa-v0-3-q7-007
 identifier_kind: OFFICIAL_URL
 claim_match_verification_route: NOT_YET

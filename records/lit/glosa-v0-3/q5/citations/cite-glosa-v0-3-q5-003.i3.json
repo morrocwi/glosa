@@ -8,7 +8,7 @@
   "passage_plausible": false,
   "claim_match": false,
   "bearing": "CONTEXT_ONLY",
-  "reason": "No fetched text excerpt is available and the verbatim passage check found nothing, so the quotation cannot be verified or used for the claimed bearing. The provided mechanical metadata has no contradiction to title, year, or first author.",
+  "reason": "No fetched metadata contradicts title/year/first author, but mechanical metadata is no-identifier and no fetched text/excerpt is available; verbatim passage check failed. Without source text, passage plausibility and claimed relevance to Q5 cannot be verified.",
   "passage_mechanical": "no open full text fetched; abstract/metadata only"
  },
  "date": "2026-09-04"

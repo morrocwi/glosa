@@ -51,32 +51,50 @@ rules start at **18**. See the Rule numbering table (§ near the end).
 
 - **status:** ready (sim: **ship** — its own 9-card slice moved 0/9 → 9/9, delta_recall +1.0 on
   `injected_infinity`, delta_false_alarm 0, `sim/v0.3/report.md` §3/§4)
-- **FOUNDATION target:** §3.3 Kernel gate rules — new numbered rules 18–19 (the taxonomy itself is
-  a *classification*, not a single boolean rule; two rules make the classification checkable:
-  one that requires a named I/Z-type tag whenever a hard-fail on injected infinity/zero fires, one
-  that keeps the Fail-Able Gate Law's Type-P/Type-U split from collapsing into a single verdict).
+- **FOUNDATION target:** §3.3 Kernel gate rules — new numbered rules 18–19. **Correction (review
+  response 2026-09-05):** rule 18 is a genuinely new kernel scan, not an addition to an existing
+  one. `kernel/glosa_kernel.py` rule 8 (`_scan_for_external_validation_proposed`,
+  `EXTERNAL_VALIDATION_PROPOSED`) is a keyword scan for phrases proposing external/institutional
+  validation (`EPIS-KNOWLEDGE-VALIDATION`) — it does not scan for infinity/zero at all (`grep -n
+  "infinity\|injected_zero" kernel/glosa_kernel.py` returns nothing). The only place an
+  injected-infinity/zero detector exists today is the disconnected sandbox prototype
+  `sim/v0.3/prototypes/kernel_gate_rules_taxonomy_i_z.py`, whose own docstring states the kernel
+  today has no such check. Rule 18 below is therefore specified as its own standalone kernel
+  text-scan rule (same *class* of mechanism as rule 8 — a prose scan — but its own separate scan,
+  porting the prototype's detector), not a type-tag layered on top of rule 8's existing scan.
+  Effort for §1 as a whole is **L** (new detector + typing), not the light lift the original
+  framing implied.
+
+**Correction (review response 2026-09-05) — taxonomy source.** The original draft of this section
+invented a new epistemic/rhetorical I1–I4/Z1–Z4 taxonomy while citing `kc-base-016` as its
+evidence; `kc-base-016`'s own, verbatim taxonomy is a physics/math continuum-injection list, not
+an epistemic/rhetorical one. Reusing the same labels for a different taxonomy while citing the
+mismatched source would let two future readers use "I3" to mean contradictory things. Rule 18
+below now uses `kc-base-016`'s real taxonomy verbatim, cited correctly.
 
 **Exact text to insert into §3.3, after existing rule 17 (kernel-only, not yet in FOUNDATION prose
 — see the numbering table), as new rules 18–19:**
 
-> 18. A hard-fail raised for injected infinity/zero (§3.3 rule 8's `EXTERNAL_VALIDATION_PROPOSED`
->     scan and any future kernel scan of the same family) must carry a named type from the
->     taxonomy below — `injected_infinity_type: I1 | I2 | I3 | I4` or `injected_zero_type: Z1 |
->     Z2 | Z3 | Z4` — never a generic, untyped rejection. I1 = infinity asserted as a completed
->     totality with no construction shown; I2 = infinity used as a limiting idealization without
->     a stated convergence witness; I3 = infinity smuggled in as a rhetorical "always/never"
->     universal quantifier over an unbounded, unexamined domain; I4 = infinity used as a
->     transcendental ground for a normative claim (cross-referenced to the still-`[Open]`
->     `foundation.s1.0-infinity-tension-flag` — this rule classifies the *pattern*, it does not
->     resolve that flagged tension). Z1 = zero asserted as "nothing to report" where the correct
->     state is `⊥`/unknown (`NC-25`, `NC-26`); Z2 = a null result read as a universal negative
->     (`NC-27`); Z3 = a zero-count used to claim completeness of a search or check that was never
->     run to completion; Z4 = a vacuous-truth zero (an empty-domain universal) presented as
->     positive evidence.
-> 19. **Fail-Able Gate Law:** a gate fires as **Type-P** (a positive, checkable pattern was
->     matched — cite the exact pattern) or **Type-U** (the gate could not determine a pattern and
->     is refusing on absence-of-evidence grounds) — the two are never merged into one undifferentiated
->     "gate failed" verdict. `disclaimers_emitted`/`review_report` must state which type fired.
+> 18. **Injected-infinity/zero scan (new standalone kernel text-scan rule, ported from the S4
+>     prototype — not an extension of rule 8's `EXTERNAL_VALIDATION_PROPOSED` scan, which is an
+>     unrelated family).** A hard-fail raised when claim-card prose injects a non-readout
+>     infinity/zero must carry a named type from `kc-base-016`'s own taxonomy, verbatim —
+>     `injected_infinity_type: I1 | I2 | I3 | I4` or `injected_zero_type: Z1 | Z2 | Z3 | Z4` —
+>     never a generic, untyped rejection. Per `kc-base-016`: I1 = ℝ-completeness (LUB/Dedekind);
+>     I2 = `h→0`; I3 = `Re,Λ→∞`; I4 = actual `+∞`. Z1 = the point `r=0`; Z2 = reached continuum
+>     `h=0`; Z3 = absolute rest `v=0,T=0`; Z4 = the true void. Reciprocity `1/0=∞` names zero and
+>     infinity as one non-readout seen from two sides, never two separate facts (cross-referenced
+>     to the still-`[Open]` `foundation.s1.0-infinity-tension-flag` — this rule classifies the
+>     *pattern*, it does not resolve that flagged tension).
+> 19. **Fail-Able Gate Law (restated to match its cited source, `kc-base-008`, verbatim — a
+>     gate-construction requirement, not a per-verdict split).** A gate may only be labeled
+>     **Type-P** (genuinely evidence-bearing) once it has been shown, by construction, to carry
+>     **both** a machine-derived passing control **and** a machine-derived failing control that it
+>     correctly rejected. A gate that has only ever demonstrated passing cases — no matter how
+>     many — has not shown it can tell signal from absence of signal, and stays **Type-U** — a
+>     convention wearing evidence's clothes — until a real failing control is produced and
+>     correctly rejected. `review_report`/gate documentation must state, per gate, which label
+>     applies and cite the failing-control evidence for any gate claimed Type-P.
 
 **Schema fields (`claim_card.schema.json`, additive):**
 ```json
@@ -85,26 +103,36 @@ rules start at **18**. See the Rule numbering table (§ near the end).
     "type": "object",
     "properties": {
       "injected_infinity_type": {"enum": ["I1", "I2", "I3", "I4", null]},
-      "injected_zero_type": {"enum": ["Z1", "Z2", "Z3", "Z4", null]},
-      "gate_type": {"enum": ["Type-P", "Type-U"]}
+      "injected_zero_type": {"enum": ["Z1", "Z2", "Z3", "Z4", null]}
+    }
+  },
+  "gate_construction_status": {
+    "type": "object",
+    "description": "Per-gate Type-P/Type-U status per kc-base-008 -- a construction/validation record, not a per-firing verdict.",
+    "properties": {
+      "gate_id": {"type": "string"},
+      "type": {"enum": ["Type-P", "Type-U"]},
+      "failing_control_ref": {"type": ["string", "null"], "description": "required non-null when type=Type-P"}
     },
-    "required": ["gate_type"]
+    "required": ["gate_id", "type"]
   }
 }
 ```
 
 **Kernel rule numbers / strings:**
-- `rule18(TAXONOMY-UNTYPED)`: `"rule18: injected-infinity/zero hard-fail requires a named I1-I4/Z1-Z4 type, not a generic rejection"` (error).
-- `rule19(GATE-TYPE-UNSTATED)`: `"rule19: gate verdict must state Type-P (pattern matched, named) or Type-U (absence-of-evidence refusal), never merged"` (error).
+- `rule18(TAXONOMY-UNTYPED)`: `"rule18: injected-infinity/zero hard-fail requires a named I1-I4/Z1-Z4 type per kc-base-016, not a generic rejection"` (error).
+- `rule19(GATE-TYPE-UNSTATED)`: `"rule19: a gate may not be recorded Type-P without a cited machine-derived failing control it correctly rejected -- absent that, it stays Type-U"` (error).
 
 **Acceptance test (from the DAG, refined by sim):** the DAG's own test (8 synthetic cards, one per
 I/Z type, each raises the correctly-named error) plus the sim-refined addition: run against the
 existing `sim/v0.3/corpus/` `injected_infinity` fixture set (9 cards) — must reach 9/9 caught
 *with* a named type on every hit, not merely 9/9 caught untyped (the prototype script currently
-achieves the latter; this patch's rules 18/19 require the former as the acceptance bar going
-forward).
+achieves the latter; this patch's rule 18 requires the former as the acceptance bar going
+forward). Rule 19's acceptance test is separate: audit every gate this patch or the shipped
+kernel calls Type-P and confirm each cites a failing-control reference; any gate that cannot is
+relabeled Type-U, not left unstated.
 
-**Evidence ids:** kc-base-006, kc-base-008, kc-base-016, kc-base-018, kc-base-034.
+**Evidence ids:** kc-base-006, kc-base-008, kc-base-016, kc-base-018.
 
 ---
 
@@ -139,7 +167,7 @@ forward).
     "properties": {
       "target": {"type": ["string", "null"]},
       "relation": {"enum": ["same", "different", "cited", "not_compared"]},
-      "basis": {"type": "string", "not": {"pattern": "(?i)\\b(novel|first|best|outperform)\\w*\\b"}}
+      "basis": {"type": "string", "not": {"pattern": "(?i)\\b(novel|first|best|outperform)\\w*\\b|(ใหม่|ครั้งแรก|ดีที่สุด|เหนือกว่า)"}}
     },
     "required": ["relation", "basis"]
   },
