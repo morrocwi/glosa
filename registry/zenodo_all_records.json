@@ -1,5 +1,96 @@
 [
  {
+  "id": 22308451,
+  "doi": "10.5281/zenodo.22308451",
+  "concept": "10.5281/zenodo.22308450",
+  "title": "The Dialogue as the Ground of Enlightenment: Religious and Cognitive Frameworks for Understanding Wisdom through Human-AI Conversations",
+  "date": "2025-10-06",
+  "type": "Preprint",
+  "kw": [
+   "dialogue",
+   "enlightenment",
+   "wisdom",
+   "human-ai conversation",
+   "religious frameworks",
+   "cognitive frameworks",
+   "when ai expands human potential",
+   "human-ai",
+   "glosa k0"
+  ],
+  "desc": " Series. Member of the Zenodo library When AI Expands Human Potential (hub DOI 10.5281/zenodo.22308201). First published on SSRN (2025-10-06) as abstract id 5571719; deposited on Zenodo 2026-09-05 unchanged for the series record. Conceptual paper; K0 — not peer reviewed; no priority claim. Abstract. This study explores whether wisdom arises from effective dialogue—a question that bridges theology, philosophy, and cognitive science. It examines the epistemic and transformative role of dialogue both in classical religious traditions and in contemporary human–AI interaction. Drawing from Buddhist yonisomanasikāra (wise reflection), Islamic sohbah (sincere companionship), and Christian I–Thou theology (Buber, 1970), this paper argues that true wisdom emerges from dialogical processes rooted in sincerity, attentiveness, and moral intention. In the modern context, this study extends the discussion to artificial intelligence as a \"reflective interlocutor,\" capable of prompting metacognitive awareness through iterative questioning. Using conceptual analysis and comparative interpretation, the paper concludes that dialogue—whether with humans or AI—functions as a mirror of thought. When grounded in reflection and critical inquiry, such dialogue fosters cognitive transformation and self-awareness, but when driven by haste or bias, it produces superficial reasoning and epistemic distortion. ",
+  "cluster": "ep",
+  "tags": [
+   "ai",
+   "islam",
+   "aihp"
+  ]
+ },
+ {
+  "id": 22308448,
+  "doi": "10.5281/zenodo.22308448",
+  "concept": "10.5281/zenodo.22308447",
+  "title": "AI–Cognitive Interaction: Activating Youth Potential through Reflective Dialogue and Linguistic Capital",
+  "date": "2025-10-09",
+  "type": "Preprint",
+  "kw": [
+   "youth potential",
+   "reflective dialogue",
+   "ai-cognitive interaction",
+   "linguistic capital",
+   "education",
+   "when ai expands human potential",
+   "human-ai",
+   "glosa k0"
+  ],
+  "desc": " Series. Member of the Zenodo library When AI Expands Human Potential (hub DOI 10.5281/zenodo.22308201). First published on SSRN (2025-10-09) as abstract id 5581350; deposited on Zenodo 2026-09-05 unchanged for the series record. Conceptual paper; K0 — not peer reviewed; no priority claim. Abstract. In a digital society where educational systems remain focused on theoretical learning and fragmented assessments, a significant number of youths face persistent mental health challenges, stress, and a continuous loss of economic potential. These issues reflect a structural gap between \"learning\" and \"real-world application,\" causing many young individuals to learn content disconnected from practical or economic skills. This results in a lack of value-based motivation, prolonged dependency on family, and emotional and financial instability during the transition to the labor market. Research in developmental neuroscience indicates that during adolescence, the brain's reward system (limbic–dopaminergic system) develops faster than the self-control center (prefrontal cortex), making young learners more responsive to immediate rewards than to abstract thinking processes (Steinberg, 2010; Shulman et al., 2016). If educational systems fail to align with this neurobiological balance, learners may lose motivation and psychological stability. Studies from Nordic countries show that Work-Based Learning (WBL) can significantly reduce the proportion of youth not in education, employment, or tr",
+  "cluster": "he",
+  "tags": [
+   "ai",
+   "aihp"
+  ]
+ },
+ {
+  "id": 22308446,
+  "doi": "10.5281/zenodo.22308446",
+  "concept": "10.5281/zenodo.22308445",
+  "title": "Operational Linguistic Wisdom: Elective Connectivity and Linguistic Capital Activation in the Age of LLMs",
+  "date": "2025-10-08",
+  "type": "Preprint",
+  "kw": [
+   "linguistic capital",
+   "elective connectivity",
+   "language as cognitive infrastructure",
+   "llm",
+   "wisdom",
+   "when ai expands human potential",
+   "human-ai",
+   "glosa k0"
+  ],
+  "desc": " Series. Member of the Zenodo library When AI Expands Human Potential (hub DOI 10.5281/zenodo.22308201). First published on SSRN (2025-10-08) as abstract id 5579291; deposited on Zenodo 2026-09-05 unchanged for the series record. Conceptual paper; K0 — not peer reviewed; no priority claim. Abstract. Prior scholarship largely treats language as a communication channel. In LLM-enabled contexts, language can be designed as cognitive infrastructure that activates organizational linguistic capital. This paper articulates a three-stage mechanism—Elective Connectivity, Capability Activation, and Reflexive Reconfiguration—that operationalizes this shift. Purpose. To formalize a testable conceptual model extending Operational Linguistic Wisdom (OLW) and the AI Value Reflection Hypothesis (AVRH) by specifying how linguistic capital can be ethically activated with LLMs. Design/methodology. Conceptual–reflective synthesis grounded in established theory (Bourdieu; Nonaka; Floridi). The paper provides construct clarity, propositions, boundary conditions, risks, and an illustrative vignette. No empirical claims are made. Findings (conceptual). Language can function as cognitive infrastructure when (i) connection to LLMs is elective and governed, (ii) dialogic prompting routines surface tacit knowledge and align values, and (iii) reflective insights are institutionalized into policies and processes. Originality/value. Reframes language from a carrier to an operable substrate for value reflec",
+  "cluster": "ep",
+  "tags": [
+   "ai",
+   "aihp"
+  ]
+ },
+ {
+  "id": 22308201,
+  "doi": "10.5281/zenodo.22308201",
+  "concept": "10.5281/zenodo.22308200",
+  "title": "When AI Expands Human Potential — series index: human–AI epistemic fusion, standalone scholarship, and the Readout hypothesis-generation programme (Yaoharee Lahtee, 2025–2026)",
+  "date": "2026-09-04",
+  "type": "Other",
+  "kw": [
+   "programme index",
+   "readout universe",
+   "yaoharee lahtee",
+   "เมื่อ ai ขยายศักยภาพมนุษย์ — ซีรีส์งานที่ทำให้มนุษย์กับ ai ผลิตความรู้ร่วมกันได้ (ฟิวชันทางญาณวิทยา): standalone scholar, glosa, bounded knower i–iv + state of evidence, written by ai still true, readout condition, human lora และงานที่เกี่ยวข้อง"
+  ],
+  "desc": " Programme index — เมื่อ AI ขยายศักยภาพมนุษย์ — ซีรีส์งานที่ทำให้มนุษย์กับ AI ผลิตความรู้ร่วมกันได้ (ฟิวชันทางญาณวิทยา): Standalone Scholar, glosa, Bounded Knower I–IV + State of Evidence, Written by AI Still True, Readout Condition, Human LoRA และงานที่เกี่ยวข้อง. A navigation aid listing 22 works by the author in this programme area (a work may appear in several programme indexes). Inclusion is a readout of the author's own classification (assisted by the glosa toolchain, github.com/morrocwi/glosa), not an evaluation; each record keeps its own status and disclaimers. Anchor works: 10.5281/zenodo.19215748, 10.5281/zenodo.22163849, 10.5281/zenodo.22307843. glosa — Rigour Without Infrastructure: A Standalone Scholar Methodology for Human–AI Knowledge Co-Production (2026-09-05) — 10.5281/zenodo.22307843 Rigour Without Infrastructure: Three Propositions on Claim-Card Discipline as a Substitute for Institutional Certification (glosa concept paper, v0.2.0) (2026-09-05) — 10.5281/zenodo.22307841 The Epistemic Chain Reaction: Human-AI Multiplication from Questions to Readout-Distinguishable Hypotheses — A Controlled Amplification Architecture for Scientific Discovery (2026-09-04) — 10.5281/zenodo.22308072 State of Evidence for the Readout Hypothesis-Generation Programme: A Shared Evidence Registry for Papers I–IV (with Claim Registry E01–E25) (2026-09-04) — 10.5281/zenodo.22308066 ปูมกล่องดำ — บันทึกเสียงดิบ ข้อค้นพบ และคำถามรายวันของ เยาฮารี แหละตี (Blackbox Log, Yaoharee Lahtee) (",
+  "cluster": "hub",
+  "tags": []
+ },
+ {
   "id": 22308072,
   "doi": "10.5281/zenodo.22308072",
   "concept": "10.5281/zenodo.22307750",

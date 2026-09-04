@@ -2,7 +2,7 @@
 
 > **นี่คือปูมเสียงดิบ ไม่ใช่บทความ** — ทุกบรรทัดคือคำพูดตามที่พูด (verbatim) ณ วันเวลานั้น ยังไม่ผ่านการปรุง ไม่ผ่านการตรวจอิสระ (tier: positional / Dr) บันทึกเพิ่มได้อย่างเดียว ไม่แก้ไม่ลบ (แก้ = บรรทัดใหม่ที่อ้างบรรทัดเดิม) เลนส์ที่ใช้มองปัญหา: **Readout Universe — Yaoharee Lahtee** (10.5281/zenodo.21529456, 10.5281/zenodo.22301318, 10.5281/zenodo.22301202; github.com/morrocwi/readout_universe) ระบบที่เก็บ: glosa (github.com/morrocwi/glosa) **ปูมนี้มีเฉพาะเสียงของผู้เขียนเท่านั้น** — ไม่มีบรรทัดที่ AI เขียน (คำตัดสินผู้เขียน 2026-09-04: บันทึกระบบที่ AI เคยใส่ไว้ 1 รายการถูกถอดออกและเก็บไว้ที่ blackbox/log/removed_ai_entries.json) ป้าย "เนื้อหาที่สร้างโดย AI" ที่ Facebook ติดให้บางโพสต์เกิดจากรูปประกอบที่ทำด้วย AI ไม่ใช่ตัวข้อความ จึงไม่ถูกนำมาบันทึก
 
-จำนวนบันทึก: 110 · อัปเดตล่าสุด: 2026-09-04T23:38:33+07:00
+จำนวนบันทึก: 113 · อัปเดตล่าสุด: 2026-09-05T00:07:34+07:00
 
 ## สารบัญตามหมวดความคิด (ไม่เรียงตามวันที่)
 
@@ -56,7 +56,7 @@
 - **BBL-2026-09-04-067** (2026-09-04, finding, cheapest-contextual-knowledge, cost-of-knowledge, dependence-on-authority) — ว่ากันตามจริงแล้ว ตอนนี้เรากำลังยุคที่ความรู้ที่สอดคล้องตามบริบท…
 - **BBL-2026-09-04-070** (2026-09-04, finding, global-labour, token-priced-labour, ai-brokers, white-collar-replacement, epistemic-reordering, chaotic-renaissance) — ในภาพรวมของแรงงานโลก หากแบ่งอย่างหยาบที่สุด อาจแบ่งได้เป็นสองประเภทใหญ่ ๆ คือ แรงงานที่ทัก…
 
-### วิธีวิทยา / ระบบ glosa (38)
+### วิธีวิทยา / ระบบ glosa (41)
 
 - **BBL-2026-09-04-001** (2026-09-04, ruling, spine, lens) — ที่สำคัญอย่าลืม ให้เริ่มจากมองปัญหาด้วยเลนส์ readout ก่อน แล้วแปลกลับเป็นภาษษโลกเพื่อสกัดส…
 - **BBL-2026-09-04-002** (2026-09-04, ruling, system) — ทำให้ทั้งหมดรวมเป็นระบบเดียวที่นิ่ง…
@@ -96,6 +96,9 @@
 - **BBL-2026-09-04-109** (2026-09-04, instruction, zenodo, series, evidence-registry, same-doi, paper-IV) — ลงเอกสารสองตัวนี้ใน doi เดียวกันต่อจาก เอกสารก่อนหน้า'<local path redacted>/Claim_Registry…
 - **BBL-2026-09-04-110** (2026-09-04, ruling, zenodo, evidence-registry, separate-record) — ต้องแยกกับ สี่…
 - **BBL-2026-09-04-111** (2026-09-04, instruction, zenodo, series, when-ai-expands-human-potential, epistemic-fusion, library, hub) — เราจะสร้าง series นี้ When AI Expands Human Potential: ที่รวมงานที่ เอาไว้พัฒนา การขยายศัก…
+- **BBL-2026-09-05-112** (2026-09-05, instruction, zenodo, ssrn, series) — ดาวโหลดมาใส่…
+- **BBL-2026-09-05-113** (2026-09-05, instruction, glosa, v0.3, knowledge-review, hub, readout-universe, readout-genesis, dag, simulation, architecture, ultracode, ram) — พอแน่ใจว่าครบแล้ว ให้เริ่มพัฒนา repo golus อีกครั้งโดยทบทวนความรุ้ทั้งหมดใhub เอา readout …
+- **BBL-2026-09-05-114** (2026-09-05, instruction, ram, todolist, steps) — อย่าลืมระวังแรมและวางแผน todolist เป็นสเต๊ปนะ…
 
 ### กล่องดำ / เสียงดิบ (7)
 
@@ -1983,4 +1986,19 @@
 **BBL-2026-09-04-111** · 23:38 · ผู้ก่อตั้ง · instruction · หมวด: วิธีวิทยา / ระบบ glosa · zenodo, series, when-ai-expands-human-potential, epistemic-fusion, library, hub · ที่มา: chat 2026-09-05 ~04:10 — build a Zenodo library/series "When AI Expands Human Potential": sweep all works on expanding human potential with AI (Context Wisdom etc.), select those enabling human–AI epistemic fusion, include the Bounded Knower I–IV + State of Evidence and glosa / Standalone Scholar
 
 > เราจะสร้าง series นี้ When AI Expands Human Potential: ที่รวมงานที่ เอาไว้พัฒนา การขยายศักยภาพของมนุษยืด้วยเอไอทั้งหมด มาก เช่น context wisdom อื่นๆ นายกวาดทั้งหมด แล้วเอามารวมเป็ยซีรีสเดียวกันนะ เลือกที่ สมากรที่ำให้เกิด ปฏิกริยานิวเคลียร์ฟิวชั่นทางญานวทิยาได้ระหว่าง human-ai ไล่ตรวจบทคามเก่้าๆทาำเป็นซีรีสเลย รวมไอ้ 5เองการก่อนหน้านี และ golas standalon scholar ด้วย ที่ทำให้มนุษย์พัฒนความรุ้ด้วยเอไอได้ระเบิดมากที่สุดหนก รวมเป็นห้องสุมดใน  zenodo อีกนหึ่งหัวข้อ
+
+
+## 2026-09-05
+
+**BBL-2026-09-05-112** · 00:07 · ผู้ก่อตั้ง · instruction · หมวด: วิธีวิทยา / ระบบ glosa · zenodo, ssrn, series · ที่มา: chat 2026-09-05 ~00:05 — download the three SSRN-only papers and add them to the series
+
+> ดาวโหลดมาใส่
+
+**BBL-2026-09-05-113** · 00:07 · ผู้ก่อตั้ง · instruction · หมวด: วิธีวิทยา / ระบบ glosa · glosa, v0.3, knowledge-review, hub, readout-universe, readout-genesis, dag, simulation, architecture, ultracode, ram · ที่มา: chat 2026-09-05 ~00:10 — glosa v0.3 programme: review all hub knowledge with Readout Universe/Genesis as the base, extract what still holds vs outdated, ultracode literature review, plan an improvement DAG, simulate for accuracy, design architecture first, then ultracode build + release; watch RAM
+
+> พอแน่ใจว่าครบแล้ว ให้เริ่มพัฒนา repo golus อีกครั้งโดยทบทวนความรุ้ทั้งหมดใhub เอา readout universe และ  regout genisis เป็นหลัก และสกัดความรุ้ว่าอะไรเอามาใช้ได้ บางอันใช้ไม่ได้เพราะเป็นความรุ้เก่า เอามายกระดับหงานน ultracode ทบวนวรรณกรรม ที่เกี่ยวข้อ วางแผน dag  ที่จะปรับปรุง  จำลองสถานการณ์เพื่อความแม่นยำ และวาว   สถาปัตยกรรม่ก่อนเริ่ม แม่นแล้ว ultracode อีกรอบ ยกระดับงานและออก release ใหม่ ระวังแรมให้ดี
+
+**BBL-2026-09-05-114** · 00:07 · ผู้ก่อตั้ง · instruction · หมวด: วิธีวิทยา / ระบบ glosa · ram, todolist, steps · ที่มา: chat 2026-09-05 ~00:11
+
+> อย่าลืมระวังแรมและวางแผน todolist เป็นสเต๊ปนะ
 
