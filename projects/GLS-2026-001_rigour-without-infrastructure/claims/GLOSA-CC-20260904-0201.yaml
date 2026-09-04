@@ -202,8 +202,10 @@ five_questions:
       description: >-
         The 15 citation cards found via the H1 LRS search (targeted/scoping search, per
         search_log.yaml) are a representative-enough sample of the relevant literature to inform
-        H1's developability, even though the litreview_manifest.yaml's diversity_gate is recorded
-        at PASS_WITH_LIMITS, not a clean PASS.
+        H1's developability. The litreview_manifest.yaml gate block records
+        accuracy_gate: PASS, diversity_gate: PASS, overall: PASS, blocked_reason: null --
+        a clean PASS, not PASS_WITH_LIMITS -- so this assumption rests on a gate that already
+        cleared, not on a limited/conditional pass.
       identification_level: A1
       contaminated_concept_hit: null
   tested:
@@ -552,3 +554,19 @@ revision_history:
       routes, not yet founder-approved"). `status` stays Draft (founder has not approved release).
       `disclaimers_emitted` recomputed via `./cli/glosa claim disclaimers`.
       Responsibility/ownership/signature blocks left unchanged.
+  - rev: "4"
+    date: "2026-09-04"
+    by: ai-assistant
+    note: >-
+      Correction to rev 3: `independent_check.status` set to PASSED in rev 3 was wrong -- PASSED
+      is not the schema-legal reading of "checked by cross-vendor routes, not yet founder-approved";
+      PENDING is. Cross-vendor routes R1-R3 checked and revised this card (nine independent review
+      reports, dissent_records + defeater_log entries), but that is a checked-and-revised state, not
+      a passed/approved one -- no route or human has re-checked the revised card, and the founder has
+      not approved release. `independent_check.status` corrected to PENDING (as currently live in
+      this field); rev 3's own text is left unchanged as the historical record of what was actually
+      done at that revision, not rewritten. Also corrected assumption A2 (`five_questions.tested
+      .assumptions_used`): it misstated `litreview_manifest.yaml`'s gate block as
+      `diversity_gate: PASS_WITH_LIMITS`; the live gate block records `accuracy_gate: PASS,
+      diversity_gate: PASS, overall: PASS, blocked_reason: null` -- a clean PASS. A2 reworded to
+      quote the gate block correctly.

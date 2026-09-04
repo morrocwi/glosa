@@ -12,11 +12,11 @@ metadata_verified_at: '2026-09-04'
 claim_match_verified: true
 claim_match_verified_by: route:codex
 claim_match_verified_at: '2026-09-04'
-exact_passage: 'the AI assistant review raises Codex drafts from 71.6% to 89.7% ($p_{BH}=.001$);
+exact_passage: 'Claude review raises Codex drafts from 71.6% to 89.7% ($p_{BH}=.001$);
   Codex self review raises them to 84.5% ($p_{BH}=.022$). The reverse direction does
-  not pay off: Codex reviewing the AI assistant drafts drops the pass rate from 91.4% to 82.8%
-  ($p_{BH}=.046$), and the AI assistant self review leaves the 91.4% baseline unchanged. Our
-  evaluation indicates that the useful pairing is asymmetric: use the AI assistant to review
+  not pay off: Codex reviewing Claude drafts drops the pass rate from 91.4% to 82.8%
+  ($p_{BH}=.046$), and Claude self review leaves the 91.4% baseline unchanged. Our
+  evaluation indicates that the useful pairing is asymmetric: use Claude to review
   Codex, not the other way around.'
 page_or_locator: Abstract (citation_abstract meta content), arXiv:2607.21656 abstract
   page (arxiv.org/abs/2607.21656)
