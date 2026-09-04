@@ -1,0 +1,639 @@
+$schema: litreview_manifest.schema.json
+id: litrev-glosa-v0-3-001
+hypothesis_ref: Q5
+search_log_ref: search-glosa-v0-3-001
+search_log_hash: ''
+dialogue_table_ref: records/lit/glosa-v0-3/q5/dialogue_table.md
+neighbour_table_ref: ''
+status: FROZEN
+frozen_at: '2026-09-04T18:03:13.530060+00:00'
+supersedes: null
+citations:
+- $schema: citation_card.schema.json
+  id: cite-glosa-v0-3-q5-001
+  claim_ref: Q5
+  identifier:
+    kind: OFFICIAL_URL
+    value: https://www.cos.io/initiatives/prereg
+  fetch_status: FETCHED
+  fetched_at: '2026-09-05'
+  metadata_verified: true
+  metadata_verified_by: mechanical:curl+html-strip (page fetched and rendered directly, primary Center
+    for Open Science initiative page)
+  metadata_verified_at: '2026-09-05'
+  claim_match_verified: true
+  claim_match_verified_by: self:same-session-read (I1, NOT independent -- awaiting a decorrelated I3 cross-vendor
+    route to upgrade status to VERIFIED per Rule 17/S14; task instruction caps status at METADATA_OK for
+    this pass)
+  claim_match_verified_at: '2026-09-05'
+  exact_passage: When Can You Preregister? Right before your next round of data collection
+  page_or_locator: cos.io/initiatives/prereg, "When Can You Preregister?" section, as rendered on the
+    page fetched 2026-09-05
+  line_or_paragraph: lines 62-63 of the fetched/stripped page text
+  scope: DIRECT_QUOTATION
+  evidence_tier: Dr
+  independence_class: I1
+  who_verified: same-session AI (I1, non-independent) -- metadata confirmed mechanically, passage read
+    and matched to Q5 by the same session that ran the search; no cross-vendor I3 route run in this pass
+  verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
+  status: METADATA_OK
+  xenon_ledger_ref: null
+  disclosure: 'Center for Open Science (COS), "Preregistration" initiative page (EN, primary, global open-science
+    infrastructure org). Fetched and read directly (curl + stdlib HTML stripper, one page kept in memory
+    at a time per RAM limit) 2026-09-05. Read as: names the timing rule as "before your next round of
+    data collection" -- a single canonical timing edge (registration freeze precedes data collection),
+    but says nothing about ethics-approval timing relative to that freeze. stance vs Q5 as read: PARTIAL_SUPPORT
+    (backs the "before data" half of the compound rule; silent on the "before ethics" half). No novel/first/prior-art
+    claim made about this source; comparison to Q5 is same/different/orthogonal as stated in dialogue_table_stance.
+    independence_class I1 (same session) -- status METADATA_OK only, not VERIFIED.'
+  superseded_by: null
+  notes: 'Diversity: language=en, source_type=grey_literature, geography_or_institution=Global (COS, USA-based
+    nonprofit infrastructure org), search_route_or_database="web search / direct org-site fetch, glosa-v0-3
+    Q5 scoping pass". dialogue_table_stance: yes. what_it_separates: Separates the timing question "when
+    relative to data collection" (answered: right before) from "when relative to ethics/IRB approval"
+    (not addressed on this page at all) -- a partial cut, not the full compound rule Q5 proposes. what_it_assumes:
+    Assumes the reader already has ethics/institutional clearance in place and is asking purely about
+    registry mechanics and analysis-plan timing, not about a compliance-gate ordering against an ethics
+    committee. what_it_would_say_against_us: This page never states an ethics-approval-timing requirement
+    at all -- citing it as backing for the "before ethics" half of Q5''s proposed compound gate would
+    overstate what COS''s own guidance actually commits to; it is evidence for one half of the compound
+    rule only.'
+  citation_card_id: cite-glosa-v0-3-q5-001
+  identifier_kind: OFFICIAL_URL
+  claim_match_verification_route: NOT_YET
+  retraction_check: UNCHECKED
+  version_status: PUBLISHED
+  dialogue_table_stance: agrees
+  diversity:
+    language: en
+    discipline_or_tradition: open-science methodology / meta-science
+    source_type: grey_literature
+    search_route_or_database: web search / direct org-site fetch, glosa-v0-3 Q5 scoping pass
+    geography_or_institution: Global (COS, USA-based)
+    venue_quality_index:
+      index_name: null
+      value: null
+      date_read: null
+  fetched_from_url: https://www.cos.io/initiatives/prereg
+- $schema: citation_card.schema.json
+  id: cite-glosa-v0-3-q5-002
+  claim_ref: Q5
+  identifier:
+    kind: OFFICIAL_URL
+    value: https://www.nature.com/srep/journal-policies/registered-reports
+  fetch_status: FETCHED
+  fetched_at: '2026-09-05'
+  metadata_verified: true
+  metadata_verified_by: mechanical:curl+html-strip (page fetched and rendered directly, primary journal
+    policy text, Scientific Reports / Springer Nature)
+  metadata_verified_at: '2026-09-05'
+  claim_match_verified: true
+  claim_match_verified_by: self:same-session-read (I1, NOT independent -- awaiting a decorrelated I3 cross-vendor
+    route to upgrade status to VERIFIED per Rule 17/S14; task instruction caps status at METADATA_OK for
+    this pass)
+  claim_match_verified_at: '2026-09-05'
+  exact_passage: A statement confirming that all necessary support (e.g. funding, facilities) and approvals
+    (e.g. ethics) are in place for the proposed research. Note that manuscripts will be generally considered
+    only for studies that are able to commence immediately
+  page_or_locator: 'nature.com/srep/journal-policies/registered-reports, "Stage 1: Initial manuscript
+    submission and review" section, Stage 1 cover-letter requirements list, as rendered on the page fetched
+    2026-09-05'
+  line_or_paragraph: line 48 of the fetched/stripped page text
+  scope: DIRECT_QUOTATION
+  evidence_tier: Dr
+  independence_class: I1
+  who_verified: same-session AI (I1, non-independent) -- metadata confirmed mechanically, passage read
+    and matched to Q5 by the same session that ran the search; no cross-vendor I3 route run in this pass
+  verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
+  status: METADATA_OK
+  xenon_ledger_ref: null
+  disclosure: 'Scientific Reports (Springer Nature), Registered Reports journal-policy page (EN, primary,
+    journal policy text). Fetched and read directly (curl + stdlib HTML stripper, one page kept in memory
+    at a time per RAM limit) 2026-09-05. Read as: in this real, currently-operating Registered Reports
+    workflow, ethics approval must already be in place at the moment of Stage 1 (protocol-freeze) submission
+    -- and the same page (line 51) separately states that authors commit to registering the approved protocol
+    on a recognized repository only AFTER Stage 1 acceptance in principle. That is the reverse of Q5''s
+    proposed strict order (freeze, then ethics, then data): here ethics precedes the Stage 1 submission,
+    and the formal registry deposit follows Stage 1 acceptance. stance vs Q5 as read: NO (directly challenges
+    the proposed strict "freeze before ethics" ordering as the real-world norm in the one methodology
+    most closely associated with frozen-protocol discipline). No novel/first/prior-art claim made about
+    this source; comparison to Q5 is same/different/orthogonal as stated in dialogue_table_stance. independence_class
+    I1 (same session) -- status METADATA_OK only, not VERIFIED.'
+  superseded_by: null
+  notes: 'Diversity: language=en, source_type=grey_literature, geography_or_institution=Global (Springer
+    Nature, UK/Germany-based publisher), search_route_or_database="web search / direct journal-site fetch,
+    glosa-v0-3 Q5 scoping pass". dialogue_table_stance: no. what_it_separates: Separates the Stage 1 manuscript
+    submission (which requires ethics already in place) from the formal repository registration of the
+    approved protocol (which happens only after Stage 1 acceptance in principle) -- two distinct freeze-like
+    events, neither of which is "before ethics" in Q5''s proposed sense. what_it_assumes: Assumes a journal-mediated
+    peer-review gate exists between drafting a protocol and its formal registry deposit; does not address
+    glosa''s own self-service, no-external-journal workflow. what_it_would_say_against_us: A hard glosa
+    gate requiring the timestamp-before field to read protocol_frozen_at < ethics_approved_at would misdescribe
+    how the flagship Registered Reports format itself actually sequences things -- citing Registered Reports
+    as precedent for "freeze strictly before ethics" would be a same/different mismatch, not a same-claim
+    citation.'
+  citation_card_id: cite-glosa-v0-3-q5-002
+  identifier_kind: OFFICIAL_URL
+  claim_match_verification_route: NOT_YET
+  retraction_check: UNCHECKED
+  version_status: PUBLISHED
+  dialogue_table_stance: disagrees
+  diversity:
+    language: en
+    discipline_or_tradition: journal methodology policy / Registered Reports
+    source_type: grey_literature
+    search_route_or_database: web search / direct journal-site fetch, glosa-v0-3 Q5 scoping pass
+    geography_or_institution: Global (Springer Nature)
+    venue_quality_index:
+      index_name: null
+      value: null
+      date_read: null
+  fetched_from_url: https://www.nature.com/srep/journal-policies/registered-reports
+- $schema: citation_card.schema.json
+  id: cite-glosa-v0-3-q5-003
+  claim_ref: Q5
+  identifier:
+    kind: PMCID
+    value: PMC6371709
+  fetch_status: FETCHED
+  fetched_at: '2026-09-05'
+  metadata_verified: true
+  metadata_verified_by: mechanical:Europe PMC REST API (europepmc.org/webservices/rest/search?query=PMC6371709)
+    -- confirms pmid=30834204, doi=10.4103/picr.picr_163_17, journalTitle=Perspect Clin Res, pubYear=2019
+  metadata_verified_at: '2026-09-05'
+  claim_match_verified: true
+  claim_match_verified_by: self:same-session-read (I1, NOT independent -- awaiting a decorrelated I3 cross-vendor
+    route to upgrade status to VERIFIED per Rule 17/S14; task instruction caps status at METADATA_OK for
+    this pass)
+  claim_match_verified_at: '2026-09-05'
+  exact_passage: A total of N = 1147 studies were registered with CTRI in 2016. Among these, n = 719 (63%)
+    were retrospectively registered and the remainder n = 428 (37%) were prospectively registered.
+  page_or_locator: 'Birajdar AR et al., "An audit of studies registered retrospectively with the Clinical
+    Trials Registry of India: A one year analysis", Perspect Clin Res 2019;10(1):26-30 (doi:10.4103/picr.picr_163_17),
+    PMC full-text mirror pmc.ncbi.nlm.nih.gov/articles/PMC6371709/, Results section, as rendered on the
+    page fetched 2026-09-05'
+  line_or_paragraph: line 112 of the fetched/stripped PMC full-text page
+  scope: DIRECT_QUOTATION
+  evidence_tier: Dr
+  independence_class: I1
+  who_verified: same-session AI (I1, non-independent) -- metadata confirmed mechanically via Europe PMC
+    API, passage read and matched to Q5 by the same session that ran the search; no cross-vendor I3 route
+    run in this pass
+  verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
+  status: METADATA_OK
+  xenon_ledger_ref: null
+  disclosure: 'Birajdar et al. 2019, Perspectives in Clinical Research (peer-reviewed, India, PMC open-access
+    full text). Fetched and read directly (curl + stdlib HTML stripper, one page kept in memory at a time
+    per RAM limit) 2026-09-05. Read as: a one-year audit of India''s national trial registry (CTRI) found
+    63% of studies registered in 2016 were registered retrospectively (after enrolment began), with a
+    median lag time of 428 days and a maximum of 5399 days (line 155 of the fetched text) -- direct empirical
+    evidence that an unenforced "register before you start" norm is widely gamed/ignored in a real, large,
+    Global-South research system even where a timestamp field already exists in the registry. stance vs
+    Q5 as read: YES (supports the need for a hard, checkable gate rather than a norm alone -- the exact
+    motivation Q5 asks about, though for registration-before-data rather than freeze-before-ethics specifically).
+    No novel/first/prior-art claim made about this source; comparison to Q5 is same/different/orthogonal
+    as stated in dialogue_table_stance. independence_class I1 (same session) -- status METADATA_OK only,
+    not VERIFIED.'
+  superseded_by: null
+  notes: 'Diversity: language=en, source_type=peer_reviewed_journal_article, geography_or_institution=India
+    (Global South), search_route_or_database="web search + Europe PMC REST API, glosa-v0-3 Q5 scoping
+    pass". dialogue_table_stance: yes. what_it_separates: Separates studies that comply with the timing
+    norm from those that do not, by measuring the actual lag between enrolment and registration -- an
+    empirical readout of gate failure, not a proposal for a gate. what_it_assumes: Assumes CTRI''s own
+    registration-date field is itself trustworthy/unfalsified (the audit does not itself independently
+    verify the registered dates against a separate source); does not address ethics-approval timing at
+    all, only registration-vs-enrolment timing. what_it_would_say_against_us: A norm alone ("should preregister
+    before data") demonstrably does not produce compliance at scale (63% failed it here) -- so a hard
+    glosa gate needs the checkable field AND an enforcement mechanism (like CTRI''s own post-2018 mandatory-prospective-registration
+    policy shift cited in this same paper''s discussion), not just a schema field nobody is forced to
+    satisfy.'
+  citation_card_id: cite-glosa-v0-3-q5-003
+  identifier_kind: PMCID
+  claim_match_verification_route: NOT_YET
+  retraction_check: UNCHECKED
+  version_status: PUBLISHED
+  dialogue_table_stance: agrees
+  diversity:
+    language: en
+    discipline_or_tradition: clinical research methodology / research integrity
+    source_type: peer_reviewed
+    search_route_or_database: web search + Europe PMC REST API, glosa-v0-3 Q5 scoping pass
+    geography_or_institution: India (Global South)
+    venue_quality_index:
+      index_name: null
+      value: null
+      date_read: null
+  fetched_from_url: https://pmc.ncbi.nlm.nih.gov/articles/PMC6371709/
+- $schema: citation_card.schema.json
+  id: cite-glosa-v0-3-q5-004
+  claim_ref: Q5
+  identifier:
+    kind: PMCID
+    value: PMC8796231
+  fetch_status: FETCHED
+  fetched_at: '2026-09-05'
+  metadata_verified: true
+  metadata_verified_by: mechanical:Europe PMC REST API (europepmc.org/webservices/rest/search?query=PMC8796231)
+    -- confirms pmid=35078852, doi=10.1136/bmjopen-2021-057474, journalTitle=BMJ Open, pubYear=2022
+  metadata_verified_at: '2026-09-05'
+  claim_match_verified: true
+  claim_match_verified_by: self:same-session-read (I1, NOT independent -- awaiting a decorrelated I3 cross-vendor
+    route to upgrade status to VERIFIED per Rule 17/S14; task instruction caps status at METADATA_OK for
+    this pass)
+  claim_match_verified_at: '2026-09-05'
+  exact_passage: Clinical trials may be registered without ethics approval, provided that recruitment
+    of study participants has not commenced.
+  page_or_locator: 'Ndwandwe DE et al., "Practices and trends in clinical trial registration in the Pan
+    African Clinical Trials Registry (PACTR): a descriptive analysis of registration data", BMJ Open 2022;12:e057474
+    (doi:10.1136/bmjopen-2021-057474), PMC full-text mirror pmc.ncbi.nlm.nih.gov/articles/PMC8796231/,
+    Introduction section, as rendered on the page fetched 2026-09-05'
+  line_or_paragraph: line 109 of the fetched/stripped PMC full-text page
+  scope: DIRECT_QUOTATION
+  evidence_tier: Dr
+  independence_class: I1
+  who_verified: same-session AI (I1, non-independent) -- metadata confirmed mechanically via Europe PMC
+    API, passage read and matched to Q5 by the same session that ran the search; no cross-vendor I3 route
+    run in this pass
+  verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
+  status: METADATA_OK
+  xenon_ledger_ref: null
+  disclosure: 'Ndwandwe et al. 2022, BMJ Open (peer-reviewed, Africa/PACTR, PMC open-access full text).
+    Fetched and read directly (curl + stdlib HTML stripper, one page kept in memory at a time per RAM
+    limit) 2026-09-05. Read as: the continental African trial registry PACTR explicitly permits registration
+    to happen BEFORE ethics approval is granted, gated only on recruitment not having started yet -- i.e.
+    in this real Global-South registry, "freeze before ethics, before data" is already an accepted, working
+    sequence for the freeze-vs-ethics half specifically (registration can precede ethics), while the same
+    paper reports 90% of registered trials do eventually carry ethics approval (line 97) and 45% are still
+    registered retrospectively relative to enrolment (line 132) -- so the "before data" half is the harder-to-enforce
+    one. stance vs Q5 as read: PARTIAL_SUPPORT (backs the specific claim that freeze-before-ethics is
+    workable and already practiced at a continental registry, while showing freeze-before-data compliance
+    is the still-unsolved half). No novel/first/prior-art claim made about this source; comparison to
+    Q5 is same/different/orthogonal as stated in dialogue_table_stance. independence_class I1 (same session)
+    -- status METADATA_OK only, not VERIFIED.'
+  superseded_by: null
+  notes: 'Diversity: language=en, source_type=peer_reviewed_journal_article, geography_or_institution=Africa
+    (Pan-African, Global South), search_route_or_database="web search + Europe PMC REST API, glosa-v0-3
+    Q5 scoping pass". dialogue_table_stance: yes. what_it_separates: Separates "registered before ethics
+    approval is finalised" (explicitly permitted by PACTR, gated on recruitment not yet starting) from
+    "registered before data collection/recruitment" (the harder norm, still failing in 45% of registered
+    trials) -- Q5''s compound rule bundles two separately-enforceable conditions that this registry''s
+    own policy already treats as distinct. what_it_assumes: Assumes a registry staff verification step
+    exists to check ethics documents after the fact ("PACTR staff also ensure that the ethics approval
+    is verified", line 249) -- i.e. the timestamp field alone is not self-enforcing even where it exists.
+    what_it_would_say_against_us: If glosa''s hard gate demands protocol_frozen_at strictly BEFORE ethics_approved_at
+    as a blocking precondition, that is stricter than what the largest working African trial registry
+    actually requires (which only requires ethics has been "applied for", not yet granted, and verifies
+    it post hoc) -- the minimal schema field should probably record both timestamps and let a checker
+    flag the compound violation, not hard-block on ethics timing alone.'
+  citation_card_id: cite-glosa-v0-3-q5-004
+  identifier_kind: PMCID
+  claim_match_verification_route: NOT_YET
+  retraction_check: UNCHECKED
+  version_status: PUBLISHED
+  dialogue_table_stance: agrees
+  diversity:
+    language: en
+    discipline_or_tradition: clinical trial registry policy / research integrity
+    source_type: peer_reviewed
+    search_route_or_database: web search + Europe PMC REST API, glosa-v0-3 Q5 scoping pass
+    geography_or_institution: Africa / Pan-African (Global South)
+    venue_quality_index:
+      index_name: null
+      value: null
+      date_read: null
+  fetched_from_url: https://pmc.ncbi.nlm.nih.gov/articles/PMC8796231/
+- $schema: citation_card.schema.json
+  id: cite-glosa-v0-3-q5-005
+  claim_ref: Q5
+  identifier:
+    kind: OFFICIAL_URL
+    value: https://he01.tci-thaijo.org/index.php/mur2r/article/view/242096
+  fetch_status: FETCHED
+  fetched_at: '2026-09-05'
+  metadata_verified: true
+  metadata_verified_by: mechanical:curl+html-strip (ThaiJo/TCI journal abstract page fetched and rendered
+    directly; Mahidol R2R e-Journal, a Thai-indexed journal on ThaiJo/TCI)
+  metadata_verified_at: '2026-09-05'
+  claim_match_verified: true
+  claim_match_verified_by: self:same-session-read (I1, NOT independent -- awaiting a decorrelated I3 cross-vendor
+    route to upgrade status to VERIFIED per Rule 17/S14; task instruction caps status at METADATA_OK for
+    this pass)
+  claim_match_verified_at: '2026-09-05'
+  exact_passage: การลงทะเบียนงานวิจัยทางคลินิกของไทย (Thai Clinical Trials Registry, TCTR) จัดตั้งขึ้นโดยมูลนิธิส่งเสริมวิจัยทางการแพทย์
+    เพื่อเป็นฐานข้อมูลและเผยแพร่งานวิจัยทางคลินิกในประเทศไทย สนับสนุนและส่งเสริมการพัฒนางานวิจัยทางคลินิกให้โปร่งใส
+    มีคุณภาพ ประสิทธิภาพ ลดความซ้ำซ้อนของงานวิจัย และถูกต้องตามหลักจริยธรรมในการนำเสนอผลงาน
+  page_or_locator: he01.tci-thaijo.org/index.php/mur2r/article/view/242096, "การลงทะเบียนงานวิจัยทางคลินิกของไทย
+    TCTR", Mahidol R2R e-Journal, abstract, as rendered on the page fetched 2026-09-05
+  line_or_paragraph: line 49 of the fetched/stripped page text
+  scope: DIRECT_QUOTATION
+  evidence_tier: Dr
+  independence_class: I1
+  who_verified: same-session AI (I1, non-independent) -- metadata confirmed mechanically, passage read
+    and matched to Q5 by the same session that ran the search; no cross-vendor I3 route run in this pass
+  verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
+  status: METADATA_OK
+  xenon_ledger_ref: null
+  disclosure: 'TH-language ThaiJo/TCI-indexed Mahidol R2R e-Journal article describing TCTR (Thai Clinical
+    Trials Registry). Fetched and read directly (curl + stdlib HTML stripper, one page kept in memory
+    at a time per RAM limit) 2026-09-05; only the abstract page was reachable, full PDF not fetched in
+    this pass (logged honestly, not read beyond the abstract). Read as: names transparency, quality, non-duplication,
+    and ethical correctness of reporting as TCTR''s stated purposes, but the abstract itself does not
+    state a strict ethics-vs-registration sequencing rule -- that operational detail is covered by cite-glosa-v0-3-q5-006
+    (the TCTR help-center workflow page) instead. stance vs Q5 as read: ORTHOGONAL (establishes the Thai
+    registry exists and why, but this specific passage does not itself address timestamp sequencing).
+    No novel/first/prior-art claim made about this source; comparison to Q5 is same/different/orthogonal
+    as stated in dialogue_table_stance. independence_class I1 (same session) -- status METADATA_OK only,
+    not VERIFIED.'
+  superseded_by: null
+  notes: 'Diversity: language=th, source_type=peer_reviewed_journal_article, geography_or_institution=Thailand
+    (Global South / SEA), search_route_or_database="web search (Thai-language query), glosa-v0-3 Q5 scoping
+    pass". dialogue_table_stance: orthogonal. what_it_separates: Separates TCTR''s general transparency/ethics/quality
+    mission from any single sequencing rule about timestamps -- a mission-level statement, not a mechanism-level
+    one. what_it_assumes: Assumes the reader already knows what a clinical trial registry is and wants
+    the TCTR-specific institutional history and purpose; a companion piece to the operational how-to page
+    (cite-006), not a substitute for it. what_it_would_say_against_us: This abstract alone cannot be used
+    to claim Thai research practice requires (or does not require) freeze-before-ethics sequencing --
+    citing it for that specific claim would overstate what a mission-statement passage actually supports;
+    the sequencing evidence has to come from the operational workflow source instead.'
+  citation_card_id: cite-glosa-v0-3-q5-005
+  identifier_kind: OFFICIAL_URL
+  claim_match_verification_route: NOT_YET
+  retraction_check: UNCHECKED
+  version_status: PUBLISHED
+  dialogue_table_stance: orthogonal
+  diversity:
+    language: th
+    discipline_or_tradition: clinical research methodology / Thai research-ethics practice
+    source_type: peer_reviewed
+    search_route_or_database: web search (Thai-language query), glosa-v0-3 Q5 scoping pass
+    geography_or_institution: Thailand (Global South / SEA)
+    venue_quality_index:
+      index_name: null
+      value: null
+      date_read: null
+  fetched_from_url: https://he01.tci-thaijo.org/index.php/mur2r/article/view/242096
+- $schema: citation_card.schema.json
+  id: cite-glosa-v0-3-q5-006
+  claim_ref: Q5
+  identifier:
+    kind: OFFICIAL_URL
+    value: https://tctr.tawk.help/th/article/%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%A5%E0%B8%87%E0%B8%97%E0%B8%B0%E0%B9%80%E0%B8%9A%E0%B8%B5%E0%B8%A2%E0%B8%99%E0%B8%87%E0%B8%B2%E0%B8%99%E0%B8%A7%E0%B8%B4%E0%B8%88%E0%B8%B1%E0%B8%A2%E0%B9%83%E0%B8%AB%E0%B8%A1%E0%B9%88
+  fetch_status: FETCHED
+  fetched_at: '2026-09-05'
+  metadata_verified: true
+  metadata_verified_by: mechanical:curl+html-strip (TCTR official Help Center page fetched and rendered
+    directly, tawk.help-hosted support knowledge base operated by the Thai Clinical Trials Registry)
+  metadata_verified_at: '2026-09-05'
+  claim_match_verified: true
+  claim_match_verified_by: self:same-session-read (I1, NOT independent -- awaiting a decorrelated I3 cross-vendor
+    route to upgrade status to VERIFIED per Rule 17/S14; task instruction caps status at METADATA_OK for
+    this pass)
+  claim_match_verified_at: '2026-09-05'
+  exact_passage: 'Current Status: แสดงสถานะของการลงทะเบียนงานวิจัย โดยจะมีการแสดงสถานะดังนี้ In Progress:
+    อยู่ระหว่างการกรอกและแก้ไขข้อมูลลงทะเบียน Submitted for Approval: ได้ส่ง Submit เพื่อให้คณะกรรมการ
+    พิจารณาแล้วรออนุมัติเลขทะเบียน Released: ได้รับการอนุมัติเลขทะเบียนแล้ว'
+  page_or_locator: 'tctr.tawk.help, "03: การลงทะเบียนงานวิจัยใหม่" (New Study Registration), TCTR Help
+    Center (Trials Registry knowledge base), as rendered on the page fetched 2026-09-05'
+  line_or_paragraph: lines 26-29 of the fetched/stripped page text
+  scope: DIRECT_QUOTATION
+  evidence_tier: Dr
+  independence_class: I1
+  who_verified: same-session AI (I1, non-independent) -- metadata confirmed mechanically, passage read
+    and matched to Q5 by the same session that ran the search; no cross-vendor I3 route run in this pass
+  verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
+  status: METADATA_OK
+  xenon_ledger_ref: null
+  disclosure: 'TCTR (Thai Clinical Trials Registry) official Help Center, "New Study Registration" how-to
+    article (TH, grey/community operational documentation, not a peer-reviewed source). Fetched and read
+    directly (curl + stdlib HTML stripper, one page kept in memory at a time per RAM limit) 2026-09-05.
+    Read as: TCTR''s own registration record has an "Ethics Review" field (line 33) that the researcher
+    fills in as PART OF drafting the record while it is still "In Progress" -- i.e. a researcher can open/freeze-draft
+    a TCTR record before a committee has approved it, then the record moves to "Submitted for Approval"
+    and only becomes "Released" (assigned a registration number) once TCTR''s own committee approves the
+    FILING, a step separate from and not identical to the underlying study''s own IRB/ethics-committee
+    approval. This shows a real, currently-operating registry treats "protocol drafted/frozen" and "ethics
+    approved" as two independently-timestamped events that can interleave, not a single strict before/after
+    gate. stance vs Q5 as read: PARTIAL_SUPPORT (shows the operational plausibility of tracking a freeze
+    event separately from an ethics-approval event, which is what a minimal timestamp-before field would
+    need to do -- but does not itself mandate freeze strictly before ethics). No novel/first/prior-art
+    claim made about this source; comparison to Q5 is same/different/orthogonal as stated in dialogue_table_stance.
+    independence_class I1 (same session) -- status METADATA_OK only, not VERIFIED.'
+  superseded_by: null
+  notes: 'Diversity: language=th, source_type=grey_literature, geography_or_institution=Thailand (Global
+    South / SEA), search_route_or_database="web search (Thai-language query), glosa-v0-3 Q5 scoping pass".
+    dialogue_table_stance: yes. what_it_separates: Separates TCTR''s own record-workflow states (In Progress
+    / Submitted for Approval / Released) from the underlying study''s own IRB/ethics committee approval
+    -- two different approval events with two different timestamps, exactly the kind of distinction a
+    minimal schema field needs to keep straight (registry-record-approved-at vs study-ethics-approved-at
+    vs first-data-observed-at are three, not two, distinct clocks). what_it_assumes: Assumes a researcher-facing
+    UI walkthrough is representative of what the registry actually enforces on the backend; does not itself
+    state that Ethics Review data is validated against an independent ethics-committee record before Release.
+    what_it_would_say_against_us: If glosa''s hard gate only distinguishes "protocol frozen" from "ethics
+    approved," it is missing a third clock this real registry already tracks separately -- the registry''s
+    OWN administrative approval of the filing (Released) is not the same event as the underlying study''s
+    ethics-committee approval, and conflating them in a two-field schema would misdescribe how an actual
+    working registry sequences things.'
+  citation_card_id: cite-glosa-v0-3-q5-006
+  identifier_kind: OFFICIAL_URL
+  claim_match_verification_route: NOT_YET
+  retraction_check: UNCHECKED
+  version_status: PUBLISHED
+  dialogue_table_stance: agrees
+  diversity:
+    language: th
+    discipline_or_tradition: clinical trial registry operations / practitioner documentation
+    source_type: grey_literature
+    search_route_or_database: web search (Thai-language query), glosa-v0-3 Q5 scoping pass
+    geography_or_institution: Thailand (Global South / SEA)
+    venue_quality_index:
+      index_name: null
+      value: null
+      date_read: null
+  fetched_from_url: https://tctr.tawk.help/th/article/%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%A5%E0%B8%87%E0%B8%97%E0%B8%B0%E0%B9%80%E0%B8%9A%E0%B8%B5%E0%B8%A2%E0%B8%99%E0%B8%87%E0%B8%B2%E0%B8%99%E0%B8%A7%E0%B8%B4%E0%B8%88%E0%B8%B1%E0%B8%A2%E0%B9%83%E0%B8%AB%E0%B8%A1%E0%B9%88
+- $schema: citation_card.schema.json
+  id: cite-glosa-v0-3-q5-007
+  claim_ref: Q5
+  identifier:
+    kind: OFFICIAL_URL
+    value: https://casrai.org/guides/preregistration-of-a-study-protocol
+  fetch_status: FETCHED
+  fetched_at: '2026-09-05'
+  metadata_verified: true
+  metadata_verified_by: mechanical:curl+html-strip (CASRAI guide page fetched and rendered directly, CASRAI
+    is a research-data-standards nonprofit)
+  metadata_verified_at: '2026-09-05'
+  claim_match_verified: true
+  claim_match_verified_by: self:same-session-read (I1, NOT independent -- awaiting a decorrelated I3 cross-vendor
+    route to upgrade status to VERIFIED per Rule 17/S14; task instruction caps status at METADATA_OK for
+    this pass)
+  claim_match_verified_at: '2026-09-05'
+  exact_passage: It is not ethics approval. Institutional Review Board (IRB) or Research Ethics Committee
+    approval addresses participant protection and is a separate, usually mandatory, process; a preregistration
+    does not substitute for it, though many registries let you reference your ethics approval number.
+  page_or_locator: casrai.org/guides/preregistration-of-a-study-protocol, "What preregistration is not"
+    section, as rendered on the page fetched 2026-09-05
+  line_or_paragraph: line 87 of the fetched/stripped page text
+  scope: DIRECT_QUOTATION
+  evidence_tier: Dr
+  independence_class: I1
+  who_verified: same-session AI (I1, non-independent) -- metadata confirmed mechanically, passage read
+    and matched to Q5 by the same session that ran the search; no cross-vendor I3 route run in this pass
+  verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
+  status: METADATA_OK
+  xenon_ledger_ref: null
+  disclosure: 'CASRAI "Preregistering a Study Protocol" guide (EN, grey/community methods-education content,
+    research-data-standards nonprofit). Fetched and read directly (curl + stdlib HTML stripper, one page
+    kept in memory at a time per RAM limit) 2026-09-05. Read as: explicitly warns against conflating preregistration
+    with ethics approval -- they are "a separate, usually mandatory, process" and preregistration "does
+    not substitute for it." This directly challenges any glosa gate design that would treat a frozen-protocol
+    timestamp as if it also certified ethics compliance, or that would let a single combined field stand
+    in for two genuinely independent approvals. stance vs Q5 as read: NO (challenges collapsing the two
+    into one gate/field; supports keeping ethics_approved_at and protocol_frozen_at as separate, non-substitutable
+    fields, consistent with what a minimal timestamp-before check needs, but pushes back on treating the
+    compound rule as a single clean ordering). No novel/first/prior-art claim made about this source;
+    comparison to Q5 is same/different/orthogonal as stated in dialogue_table_stance. independence_class
+    I1 (same session) -- status METADATA_OK only, not VERIFIED.'
+  superseded_by: null
+  notes: 'Diversity: language=en, source_type=grey_literature, geography_or_institution=Global (CASRAI,
+    Canada/UK-network research-standards nonprofit), search_route_or_database="web search / direct org-site
+    fetch, glosa-v0-3 Q5 scoping pass". dialogue_table_stance: no. what_it_separates: Separates "preregistration"
+    (a timestamped plan) from "ethics approval" (participant-protection review) as two categorically different
+    processes that happen to both produce a date, warning readers not to treat one as evidence of the
+    other. what_it_assumes: Assumes a general cross-disciplinary preregistration audience (not specifically
+    clinical/IRB-governed research), and that readers might otherwise conflate registry timestamps with
+    ethical clearance. what_it_would_say_against_us: A hard glosa gate keyed on a single "timestamp-before"
+    comparison risks implying that satisfying the timing check is itself evidence of ethical soundness
+    -- this source would say that is exactly the conflation to avoid; the gate should check SEQUENCING
+    only, and must not let a passed sequencing check be read as ethics-substance verification.'
+  citation_card_id: cite-glosa-v0-3-q5-007
+  identifier_kind: OFFICIAL_URL
+  claim_match_verification_route: NOT_YET
+  retraction_check: UNCHECKED
+  version_status: PUBLISHED
+  dialogue_table_stance: disagrees
+  diversity:
+    language: en
+    discipline_or_tradition: research-data standards / meta-science methods education
+    source_type: grey_literature
+    search_route_or_database: web search / direct org-site fetch, glosa-v0-3 Q5 scoping pass
+    geography_or_institution: Global (CASRAI)
+    venue_quality_index:
+      index_name: null
+      value: null
+      date_read: null
+  fetched_from_url: https://casrai.org/guides/preregistration-of-a-study-protocol
+- $schema: citation_card.schema.json
+  id: cite-glosa-v0-3-q5-008
+  claim_ref: Q5
+  identifier:
+    kind: ARXIV
+    value: '2103.06944'
+  fetch_status: FETCHED
+  fetched_at: '2026-09-05'
+  metadata_verified: true
+  metadata_verified_by: mechanical:curl+html-strip (arXiv abstract page fetched and rendered directly;
+    arXiv:2103.06944 [cs.CL], DOI 10.48550/arXiv.2103.06944 shown on the page)
+  metadata_verified_at: '2026-09-05'
+  claim_match_verified: true
+  claim_match_verified_by: self:same-session-read (I1, NOT independent -- awaiting a decorrelated I3 cross-vendor
+    route to upgrade status to VERIFIED per Rule 17/S14; task instruction caps status at METADATA_OK for
+    this pass)
+  claim_match_verified_at: '2026-09-05'
+  exact_passage: Preregistration refers to the practice of specifying what you are going to do, and what
+    you expect to find in your study, before carrying out the study. This practice is increasingly common
+    in medicine and psychology, but is rarely discussed in NLP.
+  page_or_locator: arxiv.org/abs/2103.06944, "Preregistering NLP Research" (van Miltenburg, van der Lee,
+    Krahmer; accepted NAACL 2021), Abstract, as rendered on the page fetched 2026-09-05
+  line_or_paragraph: line 17 of the fetched/stripped page text
+  scope: DIRECT_QUOTATION
+  evidence_tier: Dr
+  independence_class: I1
+  who_verified: same-session AI (I1, non-independent) -- metadata confirmed mechanically, passage read
+    and matched to Q5 by the same session that ran the search; no cross-vendor I3 route run in this pass
+  verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
+  status: METADATA_OK
+  xenon_ledger_ref: null
+  disclosure: 'van Miltenburg, van der Lee & Krahmer, "Preregistering NLP Research" (NAACL 2021 preprint,
+    arXiv:2103.06944, EN). Fetched and read directly (curl + stdlib HTML stripper, one page kept in memory
+    at a time per RAM limit) 2026-09-05, abstract-page only (full PDF/HTML not fetched in this pass, logged
+    honestly). Read as: names preregistration as "increasingly common in medicine and psychology, but
+    rarely discussed in NLP" -- i.e. an entire live research field (NLP) is actively importing preregistration
+    discipline while having NO analogue of human-subjects ethics/IRB approval for most of its studies
+    at all. stance vs Q5 as read: NO (challenges universalizing a hard freeze-before-ethics gate across
+    ALL of glosa''s own work: for non-human-subjects genres -- formal proof, computational/NLP-style empirical
+    work, conceptual analysis -- there is often no ethics_approved_at event to sequence against in the
+    first place, so a hard gate keyed on that field would need a documented exemption path, not a universal
+    block). No novel/first/prior-art claim made about this source; comparison to Q5 is same/different/orthogonal
+    as stated in dialogue_table_stance. independence_class I1 (same session) -- status METADATA_OK only,
+    not VERIFIED.'
+  superseded_by: null
+  notes: 'Diversity: language=en, source_type=preprint, geography_or_institution=Global (Tilburg University,
+    Netherlands-based authors; NAACL, international NLP venue), search_route_or_database="web search,
+    glosa-v0-3 Q5 scoping pass". dialogue_table_stance: no. what_it_separates: Separates fields where
+    preregistration and ethics approval are both routine and sequenced (medicine, psychology) from a field
+    (NLP) where preregistration is being newly proposed with no existing ethics-approval-timing convention
+    to hook into at all -- a domain-transfer boundary Q5''s FOUNDATION-wide gate design needs to cross.
+    what_it_assumes: Assumes NLP researchers reading this paper are unfamiliar with preregistration mechanics
+    and need the medicine/psychology analogy explained from scratch; does not itself propose an ethics-timing
+    field because its source fields (medicine/psychology) already have one that NLP mostly lacks. what_it_would_say_against_us:
+    If glosa''s hard gate hard-blocks ANY claim card lacking ethics_approved_at, it would incorrectly
+    block legitimate non-human-subjects work (proofs, code analysis, NLP-style corpus studies) that has
+    no ethics committee to seek approval from -- the minimal schema field needs a null/NOT_APPLICABLE
+    state for ethics_approved_at, not just a before/after comparison, or the gate misfires on an entire
+    class of real research this preprint represents.'
+  citation_card_id: cite-glosa-v0-3-q5-008
+  identifier_kind: ARXIV
+  claim_match_verification_route: NOT_YET
+  retraction_check: UNCHECKED
+  version_status: PUBLISHED
+  dialogue_table_stance: disagrees
+  diversity:
+    language: en
+    discipline_or_tradition: computational linguistics / NLP methodology (non-human-subjects)
+    source_type: preprint
+    search_route_or_database: web search, glosa-v0-3 Q5 scoping pass
+    geography_or_institution: Global (Tilburg University, Netherlands / NAACL)
+    venue_quality_index:
+      index_name: null
+      value: null
+      date_read: null
+  fetched_from_url: https://arxiv.org/abs/2103.06944
+strata_table: []
+diversity_audit:
+  counts:
+    by_language:
+      en: 6
+      th: 2
+    by_source_type: {}
+    by_search_route_or_database: {}
+    by_stance:
+      agrees: 4
+      disagrees: 3
+      orthogonal: 1
+      undetermined: 0
+    by_geography_or_institution: {}
+  concentration_flags: []
+  zero_disagree_flag: false
+  never_claim_diverse_without_counts: true
+accuracy:
+  total_citations: 8
+  verified_count: 0
+  spot_check:
+    applicable: true
+    proposed_n_percent: 20
+    small_n_rule_applied: true
+    sampled_citation_ids: []
+    sample_size: 0
+    spot_check_result: PENDING
+    spot_checked_by: null
+    spot_checked_at: null
+secondary_citation_ban_audit:
+  violations_found: 0
+gate:
+  accuracy_gate: FAIL
+  diversity_gate: PASS
+  overall: FAIL
+  blocked_reason: Not every listed citation reached VERIFIED yet.
+disclaimers_emitted:
+- id: D-CITATION-UNVERIFIED
+human_owner: founder

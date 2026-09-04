@@ -1,0 +1,24 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: Q7
+source_label: Wikipedia, 'Finitism' (EN, community-maintained reference)
+how_it_sees_the_problem: Finitism denies infinite sets exist as mathematical objects at all -- a flat rejection
+  of actual infinity grounded in ontological economy, with no transcendence claim on either side (it does
+  not deny God's infinity; it simply has nothing to say about it, staying entirely within mathematical
+  ontology).
+what_it_separates: Separates individual natural numbers (each finite, accepted) from "the set of all natural
+  numbers" as a completed object (rejected) -- a set-theoretic/ontological separation with no transcendence
+  category.
+what_it_assumes: Assumes mathematical existence claims must be finitely groundable; does not address whether
+  infinity, as a concept, could still be meaningful OUTSIDE mathematics (e.g. theologically) even while
+  being rejected WITHIN mathematics -- the source is silent on that question rather than taking a position
+  against it.
+stance: 'NO'
+what_it_would_say_against_us: A mathematics-only actual-infinity rejection (finitism) that never engages
+  transcendence at all is itself already a full rival epistemic stance glosa would need to reconcile with
+  on strictly mathematical grounds -- which suggests glosa's §1.0 Pillars work has a nearer, more load-bearing
+  rival (finitism/constructivism vs Platonism) to formally reconcile with BEFORE reaching the transcendental-ground
+  question, supporting the "flag Q7 and leave open, prioritize the mathematical dispute" reading.
+citation_card: cite-glosa-v0-3-q7-004
+verified:
+  metadata_verified: true
+  claim_match_verified: true

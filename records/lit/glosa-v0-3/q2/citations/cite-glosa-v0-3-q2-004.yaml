@@ -1,0 +1,42 @@
+$schema: citation_card.schema.json
+id: cite-glosa-v0-3-q2-004
+claim_ref: Q2
+identifier:
+  kind: ARXIV
+  value: '2402.08796'
+fetch_status: FETCHED
+fetched_at: '2026-09-05'
+metadata_verified: true
+metadata_verified_by: mechanical:arxiv-abs-page
+metadata_verified_at: '2026-09-05'
+claim_match_verified: true
+claim_match_verified_by: self:same-session-AI (I1, not yet an independent I3/I5 route)
+claim_match_verified_at: '2026-09-05'
+exact_passage: We suggest that solutions addressing scientific integrity should be culturally-centered,
+  where definitions of culture should include both regional and domain-specific elements.
+page_or_locator: Abstract (arxiv.org/abs/2402.08796 page, fetched 2026-09-05)
+scope: DIRECT_QUOTATION
+evidence_tier: Dr
+independence_class: I1
+who_verified: self (same-session AI, I1) -- not yet an independent cross-vendor or human route
+verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
+status: METADATA_OK
+xenon_ledger_ref: null
+disclosure: 'Same-session AI check only (I1) -- this card is METADATA_OK, not VERIFIED. Title/authors
+  (Tatiana Chakravorti, Sai Dileep Koneru, Sarah Rajtmajer) confirmed by direct fetch of the arXiv abstract
+  page (submitted 2024-02-13; cs.HC). Passage read verbatim from that page. Found under the challenge
+  query family (''reproducibility badges India Latin America adoption grey literature open science community'').
+  Bearing on Q2: CAUTIONS AGAINST a universal/one-size-fits-all reading of any certification-substitute
+  clause -- a 430-professor survey across US and India universities finds national and disciplinary gaps
+  in reproducibility/replicability attention and argues interventions need to be culturally-centered,
+  i.e. a claim-card mechanism designed and validated in one setting is not shown to transfer automatically
+  to another without adaptation. This is the review''s clearest Global-South-comparative empirical source.'
+superseded_by: null
+notes: 'Global-South-comparative (US and India university professors surveyed; lead author US-affiliated),
+  EN, preprint (Computer Science, Human-Computer Interaction; also carries a PLOS One published version
+  per the original search result, not separately fetched here). Found via query family: challenge. Dialogue-table
+  stance: NO/ORTHOGONAL-LEANING-NO (does not test Q2''s mechanism directly but argues against assuming
+  any single mechanism transfers across regional/institutional context without adaptation). dialogue_table_stance:
+  orthogonal. language: en.'
+fetched_from_url: https://arxiv.org/abs/2402.08796
+line_or_paragraph: line 13 of the fetched-and-stripped page text (last sentence of the Abstract paragraph)

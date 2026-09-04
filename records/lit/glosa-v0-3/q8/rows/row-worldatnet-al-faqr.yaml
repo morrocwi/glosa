@@ -1,0 +1,29 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: Q8
+source_label: "WorldAtNet.com, \"Al-Faqr: The Prophet's Ultimate Pride\" (grey/community devotional-educational article)"
+how_it_sees_the_problem: >-
+  Frames faqr, at the level of ordinary devotional/pedagogical usage (not academic theory), as
+  the "truth of creation": the entire created order is, at every moment, in a state of neediness
+  "before its Creator" -- a plain-language, community-facing restatement of exactly Q8's
+  "Dependent Identity" shape (ongoing, not merely originating, dependence).
+what_it_separates: >-
+  Separates faqr-as-achievement (something a spiritually advanced person attains) from
+  faqr-as-truth-of-creation (a condition every created thing is already in, recognized or not) --
+  useful for distinguishing which of Q8's "five registers" describe an ontological baseline
+  versus a spiritual attainment, though this source does not itself enumerate all five.
+what_it_assumes: >-
+  Assumes its Muslim/Islamic-educated readership already accepts God as the term of relation
+  ("its Creator"); is explicit in its own disclaimer that it is not a fatwa and that at least one
+  hadith it cites has a scholarly-debated chain of transmission -- i.e. openly a devotional, not
+  authoritative-theological, source.
+stance: "NO"
+what_it_would_say_against_us: >-
+  Directly: even at the most ordinary, non-technical level of usage (not academic Sufi
+  metaphysics), faqr's structural content ("in a state of Faqr...") is expressed with "its
+  Creator" built into the claim itself, not as decoration on a separable neutral fact --
+  suggesting a theology-neutral restatement would have to actively strip out, not merely
+  translate, the relational term, which is a stronger move than "finding an analogue."
+citation_card: cite-glosa-v0-3-q8-008
+verified:
+  metadata_verified: true
+  claim_match_verified: true

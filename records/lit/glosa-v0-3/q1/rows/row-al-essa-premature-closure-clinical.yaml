@@ -1,0 +1,33 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: Q1
+source_label: "Al Essa A, Schmidt HG, Mamede S, Knezevic K, Zwaan L, Magzoub M (2026), Premature
+  closure underlies bias in medical diagnosis in students: A randomised controlled experiment
+  (Medical Education)"
+how_it_sees_the_problem: >-
+  Frames premature closure as a clinical cognitive-bias mechanism: early acceptance of a
+  diagnostic hypothesis followed by curtailed search, measured experimentally by whether salient
+  distracting findings shorten a medical student's per-word processing time before reaching a
+  diagnosis.
+what_it_separates: >-
+  Separates "premature closure directly observed" (reduced processing time under early biasing
+  information, the paper's actual finding) from "premature closure inferred from an outcome"
+  (the older, weaker evidentiary standard the paper says its design improves on) -- a
+  within-clinical-domain distinction, not a general/domain-independent one.
+what_it_assumes: >-
+  Assumes the salient-distracting-findings paradigm (58 fourth-year medical students, 12 clinical
+  vignettes) is a valid operationalization of premature closure specifically for single-case
+  time-pressured diagnosis; does not address category/template stabilization over an extended
+  evidence base, an organization, or a genre the way Q1's PCS case studies (tourism, hilal,
+  service-template) do.
+stance: "NO"
+what_it_would_say_against_us: >-
+  Directly: the term "premature closure" already has a well-defined, narrower, empirically-tested
+  meaning inside clinical cognitive-bias research; treating it as if it were already a
+  cross-domain kernel concept risks conflating two different things under one name (a specific,
+  measured clinical bias vs. a proposed general organizational/epistemic failure mode) unless
+  glosa explicitly defines PCS as a distinct, broader construct rather than borrowing the clinical
+  term's authority.
+citation_card: cite-glosa-v0-3-q1-001
+verified:
+  metadata_verified: true
+  claim_match_verified: true

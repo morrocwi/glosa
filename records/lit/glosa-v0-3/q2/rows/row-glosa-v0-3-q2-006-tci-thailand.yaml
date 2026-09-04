@@ -1,0 +1,29 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: Q2
+source_label: "MCU กองวิชาการ, คู่มือจัดทำวารสารทางวิชาการให้เข้าสู่ฐาน TCI กลุ่ม ๑ (Mahachulalongkornrajavidyalaya University guide to Thai Journal Citation Index Group-1 accreditation)"
+how_it_sees_the_problem: >-
+  Frames the problem from the institutional-certification side, not the substitute side: what a
+  Thai academic journal must do (peer review by >=3 external qualified reviewers, sustained
+  regular publication for years) to be certified TCI Group 1 and thereby feed into the ASEAN
+  Citation Index.
+what_it_separates: >-
+  Separates a journal simply publishing from a journal being FORMALLY CERTIFIED (TCI Group 1
+  status, with a named downstream consequence -- ASEAN Citation Index inclusion) -- this names,
+  concretely, what "institutional certification" actually is and confers in the workspace's own
+  Thai setting, which Q2's argument needs a real referent for, not an abstract one.
+what_it_assumes: >-
+  Assumes the reader wants to reach TCI Group 1 status specifically (it is a practical how-to
+  guide, not a critique or evaluation of the TCI system); says nothing about claim cards, AI-
+  assisted research, or any certification-substitute mechanism.
+stance: ORTHOGONAL
+what_it_would_say_against_us: >-
+  Does not argue against Q2 directly (it does not address certification substitutes at all), but
+  it is a useful reality check: in this workspace's own country, "institutional certification"
+  is not a vague foil but a concrete, actively-used, multi-year peer-review-gated accreditation
+  system with real downstream stakes (regional citation-index inclusion) -- if Rule 17's clause
+  is formalized, it is substituting for something with this much institutional weight locally,
+  not for an abstract or already-weak gatekeeper.
+citation_card: cite-glosa-v0-3-q2-006
+verified:
+  metadata_verified: true
+  claim_match_verified: true

@@ -1,0 +1,25 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: Q6
+source_label: NOAA Central Library, 'Signs of a Predatory Publisher' (EN, grey/institutional practitioner
+  checklist, US federal science-library guide)
+how_it_sees_the_problem: 'Names, as an operational checklist item in an entirely different domain (journal-quality
+  evaluation), almost exactly Q6''s proposed pattern: a source (here, a journal) CLAIMS something checkable
+  (indexing status, impact metrics) that turns out to have ''not verifiable'' status -- i.e. an institution
+  already runs this exact red flag in production, one domain over from glosa''s own.'
+what_it_separates: Separates a metric/claim a reader can independently confirm against a named registry
+  (Scopus, Web of Science) from one asserted with an invented label ('Universal Impact Factor') that has
+  no checkable registry behind it at all.
+what_it_assumes: Assumes a researcher-evaluator manually cross-checking a journal's claims against known
+  external registries; the check here is possible because a real registry to compare against exists (Scopus/WoS)
+  -- it does not address the harder case (Q6's actual proposal) where NO external registry exists to check
+  against at all, only the claim itself.
+stance: 'YES'
+what_it_would_say_against_us: 'Directly supports Q6: shows a real, already-operating institutional analogue
+  of exactly the red flag Q6 proposes (''claims verifiable metrics/indexing'' with the actual verifiability
+  absent), which argues FOR adding a named entry rather than treating the concern as redundant -- the
+  strongest single piece of transfer evidence in this pass, though from a different domain (journal evaluation,
+  not general source intake).'
+citation_card: cite-glosa-v0-3-q6-006
+verified:
+  metadata_verified: true
+  claim_match_verified: true

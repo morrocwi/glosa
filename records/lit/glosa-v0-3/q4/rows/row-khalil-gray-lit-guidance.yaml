@@ -1,0 +1,30 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: Q4
+source_label: "Khalil H, Johns-Hayden A, Kynoch K (2026), Guidance to including gray literature in
+  systematic reviews-recommendations from an epidemiological study (Journal of Clinical
+  Epidemiology)"
+how_it_sees_the_problem: >-
+  Frames the problem empirically: a cross-sectional analysis of 100 high-impact systematic
+  reviews (2022-2025) shows what reviewers actually do with grey literature today, rather than
+  what a normative framework prescribes.
+what_it_separates: >-
+  Separates formal inclusion/exclusion screening of grey literature (applied in 89% of reviews)
+  from separate extraction/appraisal of grey literature distinct from peer-reviewed sources
+  (done in only 19%) -- a screening-vs-appraisal distinction Q4's proposed intake rule would sit
+  inside.
+what_it_assumes: >-
+  Assumes 100 PubMed-indexed, high-impact-journal systematic reviews from public health,
+  education, health services and social care are representative of current gray-literature
+  practice; does not itself study policy briefs specifically or propose a flag-and-request-tier
+  mechanism -- it documents the gap Q4 is asking whether to fill.
+stance: "YES"
+what_it_would_say_against_us: >-
+  It would not defeat Q4 directly, but it would caution that any new intake rule must close a
+  measured, real gap (81% of reviews do NOT separately appraise grey literature, and "there is no
+  universally accepted guidance for identifying or appraising gray literature") rather than a
+  hypothetical one -- if glosa's flag-and-request-tier rule duplicates existing informal screening
+  without adding a distinct appraisal step, it would not move the needle this paper measured.
+citation_card: cite-glosa-v0-3-q4-001
+verified:
+  metadata_verified: true
+  claim_match_verified: true

@@ -1,0 +1,28 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: Q2
+source_label: "Brown 2024, Fixing science means an end to gaming the system (PLOS Biology)"
+how_it_sees_the_problem: >-
+  Frames the problem as incentive-driven gaming: open-science initiatives (badges, Registered
+  Reports) create checkable signals, but individual scientists' career incentives still push
+  toward the appearance of rigour rather than the substance of it, so any new checkable signal
+  gets gamed unless the underlying incentive is fixed.
+what_it_separates: >-
+  Separates a mechanism's DESIGN (a badge that is supposed to certify preregistration/data
+  sharing) from its OPERATION in practice (a badge awarded for minimal-detail preregistration,
+  or applying to only one of several reported studies) -- exactly the gap Q2 needs closed before
+  a claim-card mechanism could be trusted as a certification substitute.
+what_it_assumes: >-
+  Assumes the reader already accepts the open-science-movement diagnosis (replication crisis,
+  publication bias); does not model or test any AI-assisted or claim-card-shaped mechanism
+  specifically -- it is about existing human-only badge/Registered-Report practice.
+stance: "NO"
+what_it_would_say_against_us: >-
+  Directly: a claim card is itself a checkable-signal mechanism of the same shape as a badge; if
+  scientists (or, by extension, whoever fills out a claim card) face incentive to look rigorous
+  rather than be rigorous, the same gaming failure mode applies -- Rule 17's fields could be
+  filled out to pass the schema check without the underlying rigour they are meant to certify,
+  unless an independent I3+/I5 route actually checks the substance, not just the form.
+citation_card: cite-glosa-v0-3-q2-001
+verified:
+  metadata_verified: true
+  claim_match_verified: true

@@ -1,0 +1,32 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: Q1
+source_label: "What Drives Institutional Reforms in Regional Organisations? Diffusion,
+  Contextual Conditions, and the Modular Design of ASEAN (TRaNS: Trans-Regional and -National
+  Studies of Southeast Asia, DOI 10.1017/trn.2016.30)"
+how_it_sees_the_problem: >-
+  Frames ASEAN's institutional design as "modular adoption": member states select and stabilize
+  institutional templates from a menu of regional/international models based on contextual
+  conditions and cognitive priors, illustrated with ASEAN's single-market and dispute-settlement
+  mechanism case studies.
+what_it_separates: >-
+  Separates template SELECTION (choosing among available modular templates) from template
+  ADAPTATION (conducting the adoption "consistently" so it produces genuine innovation) --
+  arguing the two together, not adoption alone, determine whether the outcome is success or an
+  "expectations-deliverance gap."
+what_it_assumes: >-
+  Assumes state/regional-organization decision-makers have meaningful choice among templates
+  (not forced imitation) and that consistency of implementation, not the mere act of selecting a
+  template, is the operative variable; is specific to regional-organization design, so its
+  transfer to Q1's tourism/hilal/service-template cases is by structural analogy only.
+stance: "NO"
+what_it_would_say_against_us: >-
+  Directly: naming category/template stabilization itself (PCS) as a standing red-flag risks
+  over-generalizing from cases where the adoption was premature or careless to cases like ASEAN's
+  own, where template selection plus consistent adaptation produced "substantial innovation and
+  success" -- this source would defeat an unqualified "template stabilization = failure mode"
+  framing and would push glosa toward a red-flag defined by absence of contextual fit/adaptation,
+  not by category-closure timing alone.
+citation_card: cite-glosa-v0-3-q1-006
+verified:
+  metadata_verified: true
+  claim_match_verified: true

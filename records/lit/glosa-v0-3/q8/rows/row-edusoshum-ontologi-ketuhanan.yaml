@@ -1,0 +1,30 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: Q8
+source_label: "Fawwaz Noor Amirul Huda (2020), \"Dimensi Ontologi, Epistemologi dan Aksiologi Pendidikan Islam\" (EDUSOSHUM, Universitas Ahmad Dahlan Yogyakarta)"
+how_it_sees_the_problem: >-
+  Frames "ontology" itself, within Indonesian Islamic-education philosophy literature, as
+  synonymous with "filsafat ketuhanan" (the philosophy/theology of God) -- its own definitional
+  list mixes cause-and-effect, ultimate reality, and "God with all His attributes" as one
+  undivided vocabulary, not a layered structure with a separable secular core.
+what_it_separates: >-
+  Does NOT separate ontology from theology -- that is precisely the point this source
+  illustrates: in this Global South/Southeast Asian Islamic-studies context, the two are treated
+  as one and the same "filsafat yang pertama" (first philosophy), unlike the Western analytic
+  sources (cards 001-004) that do maintain a working ontology/theology distinction.
+what_it_assumes: >-
+  Assumes an Indonesian Islamic-education-studies framing (drawing on Baharuddin 2011) is
+  representative of how ontology is locally taught/understood; is a qualitative
+  library-research article, not a comparative or critical philosophical study of the
+  separability question itself.
+stance: ORTHOGONAL
+what_it_would_say_against_us: >-
+  It complicates a simple "yes, a non-theological analogue exists" answer with a different kind
+  of caution than the Western sources: even where a Western secular vocabulary CAN restate the
+  structure (grounding theory, PSR), the local Southeast Asian Islamic-education literature this
+  session found does not itself draw the ontology/theology line at all -- so calling the result
+  "theology-neutral" needs to be a claim about the borrowing vocabulary, not a claim that the
+  source tradition already treats these as separable domains.
+citation_card: cite-glosa-v0-3-q8-006
+verified:
+  metadata_verified: true
+  claim_match_verified: true

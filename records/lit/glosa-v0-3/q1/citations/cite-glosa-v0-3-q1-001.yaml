@@ -1,0 +1,52 @@
+$schema: citation_card.schema.json
+id: cite-glosa-v0-3-q1-001
+claim_ref: Q1
+identifier:
+  kind: DOI
+  value: 10.1111/medu.70229
+fetch_status: PAYWALLED_ABSTRACT_ONLY
+fetched_at: '2026-09-05'
+metadata_verified: true
+metadata_verified_by: mechanical:europepmc
+metadata_verified_at: '2026-09-05'
+claim_match_verified: true
+claim_match_verified_by: route:I0
+claim_match_verified_at: '2026-09-05'
+exact_passage: >-
+  Premature closure can therefore be directly observed rather than inferred, inviting further
+  research.
+page_or_locator: Abstract, Conclusion section (Europe PMC record MED/42051011)
+line_or_paragraph: final sentence of the Conclusion paragraph of the abstract
+scope: DIRECT_QUOTATION
+evidence_tier: Dr
+independence_class: I0
+who_verified: I0 (this session, same-session read of the mechanically fetched abstract; no
+  cross-vendor or independent human check has run yet)
+verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
+status: METADATA_OK
+xenon_ledger_ref: null
+disclosure: >-
+  I0 only (same session, not independently checked). Title/authors/journal/year/DOI confirmed
+  mechanically via Europe PMC (query EXT_ID:42051011, resultType=core): Al Essa A, Schmidt HG,
+  Mamede S, Knezevic K, Zwaan L, Magzoub M, "Premature closure underlies bias in medical
+  diagnosis in students: A randomised controlled experiment," Medical Education, 2026. Full text
+  is not open access (isOpenAccess: N on the Europe PMC record; Wiley-hosted, and the PubMed
+  abstract page itself returned a cookie/JS wall to a scripted fetch) so this card is
+  PAYWALLED_ABSTRACT_ONLY / METADATA_OK, not VERIFIED -- the abstract text quoted here was read
+  from the mechanically fetched Europe PMC record itself, not from memory. This source is a
+  CHALLENGE to Q1's premise that "premature closure" is already a portable, cross-domain
+  mechanism: the paper studies it strictly as a clinical diagnostic-reasoning phenomenon
+  (biasing salient distracting findings shortening case-processing time in medical students),
+  with a mechanism specific to time-pressured single-case diagnosis, not category formation over
+  a corpus of evidence or an institutional field -- it neither supports nor tests the
+  organizational/institutional-template sense of Q1's PCS pattern, and its own abstract frames
+  "premature closure" as a term of art within clinical cognitive-bias research inviting further
+  research within that domain, not a claim about a general, domain-independent mechanism.
+superseded_by: null
+notes: >-
+  Global North (authors: Erasmus MC Rotterdam / Qatar affiliations mixed), EN, peer-reviewed
+  journal article, discipline: medical education / clinical cognitive psychology. Found via
+  query family: support ('"premature closure" category formation cognitive bias mechanism').
+  Dialogue-table stance: NO (the paper's own use of the term is domain-bound, challenging
+  unqualified generalization).
+fetched_from_url: https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:42051011&resultType=core&format=json

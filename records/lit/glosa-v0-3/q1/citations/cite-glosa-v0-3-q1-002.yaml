@@ -1,0 +1,56 @@
+$schema: citation_card.schema.json
+id: cite-glosa-v0-3-q1-002
+claim_ref: Q1
+identifier:
+  kind: DOI
+  value: 10.2307/2095101
+fetch_status: FETCHED
+fetched_at: '2026-09-05'
+metadata_verified: true
+metadata_verified_by: mechanical:crossref
+metadata_verified_at: '2026-09-05'
+claim_match_verified: true
+claim_match_verified_by: route:I0
+claim_match_verified_at: '2026-09-05'
+exact_passage: >-
+  In the initialstages of theirlife cycle, organizationalfields display considerable diversity
+  in approachand form. Once a field becomes well established, however, there is an inexorable
+  push towards homogenization.
+page_or_locator: p.148 (American Sociological Review 48(2):147-160, 1983 pagination); text
+  section beginning "We begin by asking why there is such..."
+line_or_paragraph: 2nd paragraph of the article body, immediately after the abstract
+scope: DIRECT_QUOTATION
+evidence_tier: Dr
+independence_class: I0
+who_verified: I0 (this session, same-session read; no cross-vendor or independent human check
+  has run yet)
+verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
+status: METADATA_OK
+xenon_ledger_ref: null
+disclosure: >-
+  I0 only (same session, not independently checked). Title/authors/journal/year/DOI confirmed
+  mechanically via Crossref bibliographic search (query "Iron Cage Revisited DiMaggio Powell
+  American Sociological Review 1983"), which returned DOI 10.2307/2095101, matching the JSTOR
+  stable-id (2095101) found independently via web search. JSTOR itself served a Cloudflare
+  bot-challenge page to a scripted fetch (no full text obtained there), so the full text was
+  instead read from an openly hosted PDF mirror of the same article
+  (ics.uci.edu/~corps/phaseii/DiMaggioPowell-IronCageRevisited-ASR.pdf did not carry an
+  extractable text layer -- image-scanned pages -- so a second mirror, gwern.net/doc/sociology/
+  1983-dimaggio.pdf, was used; its text layer extracted cleanly via `pdftotext -l 8`, i.e. within
+  the first 8 pages of the 15-page article, well inside the article's own main argument). The
+  exact_passage above is quoted verbatim from that extracted text, including the source PDF's own
+  run-together word artifacts (e.g. "initialstages", "organizationalfields") -- these are
+  preserved rather than silently corrected, per Rule 17's "verbatim from the opened text"
+  requirement; they are OCR/extraction artifacts of the mirror, not edits by this session. This
+  source SUPPORTS Q1's premise that a "field becomes well established" / homogenizes pattern is a
+  real, named, cross-domain mechanism (the paper documents it independently in publishing,
+  law, hospitals, public schools, radio, and high-culture institutions in one theory) -- directly
+  relevant to whether Premature Category Stabilization generalizes as a kernel-level pattern
+  the way institutional isomorphism already has in organizational sociology.
+superseded_by: null
+notes: >-
+  Global North (Yale University, authors DiMaggio & Powell), EN, peer-reviewed journal article
+  (American Sociological Review), foundational/highly-cited text in organizational sociology.
+  Found via query family: support ('institutional isomorphism template lock-in organizational
+  studies DiMaggio Powell'). Dialogue-table stance: YES (supports Q1's generalization premise).
+fetched_from_url: https://gwern.net/doc/sociology/1983-dimaggio.pdf

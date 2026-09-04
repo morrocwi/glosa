@@ -1,0 +1,54 @@
+$schema: citation_card.schema.json
+id: cite-glosa-v0-3-q4-001
+claim_ref: Q4
+identifier:
+  kind: DOI
+  value: 10.1016/j.jclinepi.2026.112222
+fetch_status: PAYWALLED_ABSTRACT_ONLY
+fetched_at: '2026-09-05'
+metadata_verified: true
+metadata_verified_by: mechanical:europepmc
+metadata_verified_at: '2026-09-05'
+claim_match_verified: true
+claim_match_verified_by: route:I0
+claim_match_verified_at: '2026-09-05'
+exact_passage: >-
+  While 89% of reviews applied formal inclusion/exclusion criteria to gray literature, only 19%
+  extracted gray literature separately from peer-reviewed sources. ... There is an urgent need
+  for standardized guidance, greater integration of automation tools, and improved researcher
+  training in accessing less visible sources. Without these improvements, gray literature
+  searching will remain inconsistent and resource-intensive, with uncertain impact on review
+  quality.
+page_or_locator: Abstract, Results and Conclusion sections (Europe PMC record MED/41862106)
+line_or_paragraph: Results paragraph (sentence on the 89%/19% figures) and the final sentence of the Conclusion paragraph
+scope: DIRECT_QUOTATION
+evidence_tier: Dr
+independence_class: I0
+who_verified: I0 (this session, same-session read of the mechanically fetched abstract; no
+  cross-vendor or independent human check has run yet)
+verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
+status: METADATA_OK
+xenon_ledger_ref: null
+disclosure: >-
+  I0 only (same session, not independently checked). Title/authors/journal/year/DOI confirmed
+  mechanically via Europe PMC (query DOI:10.1016/j.jclinepi.2026.112222, resultType=core): Khalil
+  H, Johns-Hayden A, Kynoch K, "Guidance to including gray literature in systematic
+  reviews-recommendations from an epidemiological study," Journal of Clinical Epidemiology, 2026.
+  Full text is not open access (isOpenAccess: N on the Europe PMC record; the publisher page
+  itself returned a Cloudflare "Just a moment..." interstitial to a scripted curl fetch and a 403
+  to WebFetch) so this card is PAYWALLED_ABSTRACT_ONLY / METADATA_OK, not VERIFIED -- the abstract
+  text quoted here was read from the mechanically fetched Europe PMC record itself, not from
+  memory. This source SUPPORTS Q4's premise (indirectly): it is a descriptive cross-sectional
+  analysis of 100 published systematic reviews' own gray-literature practice, finding formal
+  inclusion/exclusion criteria applied to gray literature (89%) far outstrips separate
+  extraction/appraisal treatment (19%), and explicitly states "there is no universally accepted
+  guidance for identifying or appraising gray literature" -- i.e. even in indexed, high-impact
+  systematic reviews, undeclared-tier grey/policy sources are mostly folded into standard
+  screening without a distinct appraisal step, which is close to the status quo Q4 argues needs a
+  named intake rule rather than being left implicit.
+superseded_by: null
+notes: >-
+  Global North (Australia, La Trobe University), EN, peer-reviewed journal article, discipline:
+  epidemiology/evidence synthesis methods. Found via query family: support (empirical review of
+  100 systematic reviews' gray-literature handling). Dialogue-table stance: YES.
+fetched_from_url: https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI:10.1016/j.jclinepi.2026.112222&resultType=core&format=json

@@ -1,0 +1,27 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: Q3
+source_label: Townsend, Sihlahla, Naidoo, Naidoo & Donnelly (2023), 'Mapping the regulatory landscape
+  of AI in healthcare in Africa' (EN, peer-reviewed, Frontiers in Pharmacology; Global South -- 12 African
+  countries studied)
+how_it_sees_the_problem: A scoping legal-mapping study across 12 African countries (Botswana, Cameroon,
+  Gambia, Ghana, Kenya, Malawi, Nigeria, Rwanda, South Africa, Tanzania, Uganda, Zimbabwe) treating the
+  medical-device/AI regulatory boundary as an empirical legislative-text question, jurisdiction by jurisdiction,
+  rather than assuming one settled global definition.
+what_it_separates: Separates the 9 of 12 countries where 'software' appears nowhere in the medical-device
+  definition from the 3 (South Africa, Kenya, Uganda) where software is broadly construed to include SaMD
+  -- and even there, notes the frameworks lack AI-specific risk classification, lifecycle oversight, or
+  algorithm-validation guidance.
+what_it_assumes: Assumes national statute text is the right unit of analysis for 'is this AI a medical
+  device'; does not itself address disclaimer wording or runtime scope-boundary clauses, only whether
+  the underlying legal category a disclaimer would reference exists at all in these jurisdictions.
+stance: 'NO'
+what_it_would_say_against_us: A reusable scope-boundary clause of the EU/US SaMD kind presupposes a legal
+  category ('medical device' covering AI/algorithms) that, per this peer-reviewed mapping, is explicitly
+  absent from the medical-device statutes of 9 of the 12 African countries studied -- a template built
+  against the EU AI Act / FDA SaMD framing may simply not travel to jurisdictions where the underlying
+  legal hook it references does not yet exist, a concrete Global-South limit on 'standardize across all
+  our disclaimers'.
+citation_card: cite-glosa-v0-3-q3-006
+verified:
+  metadata_verified: true
+  claim_match_verified: true

@@ -1,0 +1,50 @@
+$schema: citation_card.schema.json
+id: cite-glosa-v0-3-q4-002
+claim_ref: Q4
+identifier:
+  kind: DOI
+  value: 10.1016/j.jclinepi.2010.07.015
+fetch_status: PAYWALLED_ABSTRACT_ONLY
+fetched_at: '2026-09-05'
+metadata_verified: true
+metadata_verified_by: mechanical:europepmc
+metadata_verified_at: '2026-09-05'
+claim_match_verified: true
+claim_match_verified_by: route:I0
+claim_match_verified_at: '2026-09-05'
+exact_passage: >-
+  GRADE specifies four categories-high, moderate, low, and very low-that are applied to a body of
+  evidence, not to individual studies.
+page_or_locator: Abstract (Europe PMC record MED/21208779)
+line_or_paragraph: second sentence of the abstract
+scope: DIRECT_QUOTATION
+evidence_tier: Dr
+independence_class: I0
+who_verified: I0 (this session, same-session read of the mechanically fetched abstract; no
+  cross-vendor or independent human check has run yet)
+verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
+status: METADATA_OK
+xenon_ledger_ref: null
+disclosure: >-
+  I0 only (same session, not independently checked). Title/authors/journal/year/DOI confirmed
+  mechanically via Europe PMC (query DOI:10.1016/j.jclinepi.2010.07.015, resultType=core): Balshem
+  H, Helfand M, Schunemann HJ, Oxman AD, Kunz R, Brozek J, Vist GE, Falck-Ytter Y, Meerpohl J,
+  Norris S, "GRADE guidelines: 3. Rating the quality of evidence," Journal of Clinical
+  Epidemiology, 2011. Full text is not open access (isOpenAccess: N on the Europe PMC record;
+  publisher page paywalled) so this card is PAYWALLED_ABSTRACT_ONLY / METADATA_OK, not VERIFIED --
+  the abstract text quoted here was read from the mechanically fetched Europe PMC record itself,
+  not from memory. This source establishes the baseline definition Q4's question needs: GRADE's
+  own tiering (high/moderate/low/very low) is designed to be applied to a body of evidence
+  assembled and assessed by a review team, not to be self-declared by an individual source
+  document -- so a policy brief "lacking an explicit claim-tier declaration" is not a departure
+  from GRADE practice at all (GRADE never expected individual documents to self-declare a tier);
+  the appraisal burden falls on the reviewer/intake process, which is closer to a CHALLENGE to
+  Q4's framing that treats "no declared tier" as an anomaly needing a special flag-and-request
+  step, rather than the normal, expected state of any single source.
+superseded_by: null
+notes: >-
+  Global North (multi-country GRADE working group authors), EN, peer-reviewed methods paper,
+  discipline: evidence-based medicine / clinical epidemiology. Found via query family: support
+  ('GRADE evidence quality grey literature policy brief undeclared tier appraisal'). Dialogue-table
+  stance: NO.
+fetched_from_url: https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI:10.1016/j.jclinepi.2010.07.015&resultType=core&format=json

@@ -1,0 +1,70 @@
+$schema: citation_card.schema.json
+id: cite-glosa-v0-3-q3-005
+claim_ref: Q3
+identifier:
+  kind: ARXIV
+  value: '2507.08030'
+fetch_status: FETCHED
+fetched_at: '2026-09-05'
+metadata_verified: true
+metadata_verified_by: mechanical:arxiv-api (export.arxiv.org/api/query?id_list=2507.08030, title/authors/date
+  confirmed) + curl+html-strip of the abstract page
+metadata_verified_at: '2026-09-05'
+claim_match_verified: true
+claim_match_verified_by: self:same-session-read (I1, NOT independent -- awaiting a decorrelated I3 cross-vendor
+  route to upgrade status to VERIFIED per Rule 17/S14; task instruction caps status at METADATA_OK for
+  this pass)
+claim_match_verified_at: '2026-09-05'
+exact_passage: Medical disclaimer presence in LLM and VLM outputs dropped from 26.3% in 2022 to 0.97%
+  in 2025, and from 19.6% in 2023 to 1.05% in 2025, respectively.
+page_or_locator: arxiv.org/abs/2507.08030, abstract paragraph, as fetched 2026-09-05
+line_or_paragraph: line 17 of the fetched/stripped abstract page text
+scope: DIRECT_QUOTATION
+evidence_tier: Dr
+independence_class: I1
+who_verified: same-session AI (I1, non-independent) -- metadata confirmed mechanically, passage read and
+  matched to Q3 by the same session that ran the search; no cross-vendor I3 route run in this pass
+verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
+status: METADATA_OK
+xenon_ledger_ref: null
+disclosure: 'Sharma, Alaa & Daneshjou, ''A Systematic Analysis of Declining Medical Safety Messaging in
+  Generative AI Models'' (arXiv:2507.08030, EN, preprint). Fetched and read directly (curl + stdlib HTML
+  stripper for web pages; pdftotext -l 8 for the one PDF source) 2026-09-05, one page kept in memory at
+  a time per RAM limit. Read as: Frames the disclaimer problem empirically: it measures whether medical
+  disclaimers actually appear in model outputs across 2022-2025, on 2,000 real image/question prompts,
+  rather than debating what a disclaimer''s text should say. stance vs Q3 as read: NO. independence_class
+  I1 (same session) -- status METADATA_OK only, not VERIFIED: no decorrelated I3 cross-vendor route has
+  checked this card yet. No novel/first/prior-art claim made about this source; comparison to Q3 is same/different/orthogonal
+  as stated in dialogue_table_stance.'
+superseded_by: null
+notes: 'Diversity: language=en, source_type=preprint, geography_or_institution=US, search_route_or_database="web
+  search / direct regulator-site fetch, glosa-v0-3 Q3 scoping pass". dialogue_table_stance: disagrees.
+  what_it_separates: Separates ''a disclaimer policy/template exists'' from ''a disclaimer actually appears
+  in the deployed output the end user sees'' -- the paper''s whole finding is that this gap widened sharply
+  (most models show 0 disclaimers by 2025) even though disclaimer language and guidance have existed for
+  years. what_it_assumes: Assumes disclaimer PRESENCE (a phrase-detection screen) is a meaningful proxy
+  for safety messaging; does not evaluate whether the disclaimers that DID appear used a standardized
+  clause or ad hoc wording, so it cannot directly confirm or refute standardization''s wording-level benefit,
+  only that having any template is not self-enforcing. what_it_would_say_against_us: Directly defeats
+  a naive reading of Q3: even where a reusable non-diagnostic disclaimer clause already exists and is
+  well understood industry-wide, this paper''s own measurement shows it is not showing up in practice
+  at industrial scale and is actively declining -- standardizing the CLAUSE TEXT alone, without a runtime
+  enforcement mechanism, does not solve the underlying scope-boundary problem this question is trying
+  to close.'
+citation_card_id: cite-glosa-v0-3-q3-005
+identifier_kind: ARXIV
+claim_match_verification_route: NOT_YET
+retraction_check: UNCHECKED
+version_status: PUBLISHED
+dialogue_table_stance: disagrees
+diversity:
+  language: en
+  discipline_or_tradition: health/AI regulation and disclaimer practice
+  source_type: preprint
+  search_route_or_database: web search / direct regulator-site fetch, glosa-v0-3 Q3 scoping pass
+  geography_or_institution: US
+  venue_quality_index:
+    index_name: null
+    value: null
+    date_read: null
+fetched_from_url: https://arxiv.org/abs/2507.08030

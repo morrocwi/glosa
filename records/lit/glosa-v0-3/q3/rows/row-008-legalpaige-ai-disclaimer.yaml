@@ -1,0 +1,23 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: Q3
+source_label: The Legal Paige, 'Choosing the Right AI Disclaimer for Your Business' (EN, grey/community
+  -- commercial legal-templates blog aimed at small-business/creative-services clients)
+how_it_sees_the_problem: 'A commercial legal-templates vendor''s practical advice: frames disclaimer choice
+  as a function of WHICH SERVICE the AI is used for (photography vs social-media management vs copywriting),
+  then sells per-service template packs rather than one generic clause.'
+what_it_separates: Separates disclaimer needs by professional service category and by client relationship
+  ('tailor your AI disclaimer to your clients'), explicitly rejecting a one-size-fits-all clause even
+  within the single non-clinical/non-legal small-business domain this vendor serves.
+what_it_assumes: Assumes a US small-business/creative-freelancer audience needing contract-embedded disclaimers
+  for client work; not a health or legal-advice context specifically, and not itself peer-reviewed or
+  regulatory -- a commercial vendor's own sales framing, disclosed as such and read for its stated reasoning
+  only.
+stance: 'NO'
+what_it_would_say_against_us: A direct, if commercially motivated, statement that even a single non-clinical/non-medical/non-legal-advice
+  domain (creative freelance services) already needs SERVICE-SPECIFIC and CLIENT-SPECIFIC disclaimer variants
+  in this vendor's own practice -- a concrete instance of the standardization move failing to hold even
+  within one non-regulated domain, before crossing into health/legal territory at all.
+citation_card: cite-glosa-v0-3-q3-008
+verified:
+  metadata_verified: true
+  claim_match_verified: true

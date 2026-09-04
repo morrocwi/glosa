@@ -1,0 +1,28 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: Q8
+source_label: "Stanford Encyclopedia of Philosophy, \"Causation in Arabic and Islamic Thought\" (plato.stanford.edu/entries/arabic-islamic-causation/)"
+how_it_sees_the_problem: >-
+  Frames al-Razi's Ash'ari-associated "principle of preponderation" (a contingent thing poised
+  equally between existing and not existing needs something to tip/preponderate it into
+  existence) as one historical instance of the general Principle of Sufficient Reason (PSR), a
+  standard, theology-independent topic in analytic metaphysics also associated with Leibniz.
+what_it_separates: >-
+  Separates the FORMAL shape of the preponderation/PSR principle (a contingent thing needs a
+  sufficient reason to be actualized one way rather than another) from its THEOLOGICAL
+  application (the preponderating factor specifically being God's will/action in al-Razi's own
+  framework) -- exactly the separation Q8 asks whether "Directed Selection" can sustain.
+what_it_assumes: >-
+  Assumes the PSR, as a general epistemic/metaphysical principle, is a legitimate object of
+  cross-traditional philosophical comparison independent of any one tradition's theology; does
+  not itself argue that al-Razi's specific formulation can be used theology-free, only that the
+  FORM of the principle recurs outside Islamic theology (e.g. Leibniz).
+stance: "YES"
+what_it_would_say_against_us: >-
+  If Q8's "Directed Selection" stayed islam-domain-only, this source would say that misses an
+  already-established secular formal home for exactly this structure: the Principle of
+  Sufficient Reason literature in general analytic metaphysics, which is theology-independent
+  even though this particular Ash'ari articulation of it is not.
+citation_card: cite-glosa-v0-3-q8-004
+verified:
+  metadata_verified: true
+  claim_match_verified: true

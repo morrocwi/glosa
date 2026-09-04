@@ -1,0 +1,22 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: Q7
+source_label: Wikipedia, 'Infinity (philosophy)' (EN, community-maintained reference)
+how_it_sees_the_problem: A directly on-point theological articulation -- Duns Scotus reading God's infinity
+  as a qualitative mode of being-without-constraint, explicitly distinct from mathematical/quantitative
+  infinity, stated by a named historical authority as a considered doctrine rather than a metaphor.
+what_it_separates: Separates being-without-constraint (God's qualitative infinity, Scotus) from being-unlimited-in-quantity
+  (mathematical infinity) -- i.e. it explicitly denies the two are the same concept, even while affirming
+  both are legitimately called "infinite".
+what_it_assumes: Assumes a background Christian theological framework (divine simplicity/attributes) in
+  which "infinite" already has independent theological content prior to and apart from any mathematical
+  development.
+stance: 'YES'
+what_it_would_say_against_us: If the theological and mathematical senses of "infinite" are, by this tradition's
+  own account, different senses of the word rather than one concept two traditions dispute, then treating
+  infinity-as-transcendental-ground as a rival EPISTEMIC stance to reconcile within a mathematics/readout-first
+  framework may be a category error -- the honest framing may be two adjacent, non-competing uses of one
+  word, which argues for a flagged open note rather than a formal reconciliation section.
+citation_card: cite-glosa-v0-3-q7-002
+verified:
+  metadata_verified: true
+  claim_match_verified: true

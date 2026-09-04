@@ -1,0 +1,202 @@
+$schema: search_log.schema.json
+id: search-glosa-v0-3-001
+claim_or_hypothesis_ref: Q8
+search_mode: SCOPING_SEARCH
+frozen_scope:
+  hypothesis_or_falsifier: >-
+    Q8 (glosa-v0-3, K2-lrs): the three Ash'ari theological constructs used in glosa's islam-domain
+    material -- Dependent Order (tartib i'tiyadi / God-instituted regularity, as opposed to
+    necessary causation), Directed Selection (takhsis -- why THIS possible outcome among
+    equally-possible alternatives actualizes), and Dependent Identity (the createdness/
+    contingency of a thing's own continued existence, not only its origination) -- plus the five
+    registers of faqr (ontological poverty/neediness before God) have a non-theological
+    STRUCTURAL analogue (a general pattern: X depends on Y for its individuation/actualization/
+    persistence, describable without reference to God or revelation) that could be lifted into
+    glosa's ontology section (FOUNDATION §1.0 Pillars) as a theology-neutral structural
+    primitive, OR whether these constructs remain islam-domain content that stays out of
+    FOUNDATION and belongs only in domain-specific case material. Falsifier: the world literature
+    on occasionalism, dependent/relational ontology, and process-philosophy structural dependency
+    is found to describe the SAME formal shape (non-necessitating regularity; selection among
+    equally-possible alternatives; ongoing existential dependence) using theology-independent
+    vocabulary and mechanism -- in which case a structural analogue exists and Q8 answers
+    "yes, non-theological analogue usable in ontology". If instead every non-theological framework
+    found either (a) does not address selection-among-equal-possibles / sustained-dependence at
+    all, or (b) only reproduces the pattern by smuggling in an equivalent metaphysically-loaded
+    commitment (a designer, a privileged actual-entity, an occasionalist God-substitute) rather
+    than a genuinely theology-neutral structure, then Q8 answers "no, domain-only" and these three
+    constructs + five registers of faqr stay islam-domain content outside FOUNDATION.
+  question_type: mechanism
+  concepts_synonyms_vocabulary:
+    - occasionalism
+    - occasionalist causation
+    - kasb iktisab Ash'ari theory of acquisition
+    - dependent origination
+    - relational ontology
+    - dependent identity
+    - process philosophy
+    - structural dependency metaphysics
+    - grounding relation metaphysics
+    - actual entity concrescence Whitehead
+    - contingency continued existence
+    - selection among possibles
+    - habitual causation custom-based causation (al-'ada)
+    - نظرية الكسب والاعتماد في علم الكلام الأشعري
+    - العلية عند الأشاعرة
+    - التخصيص بلا مخصص
+    - kebergantungan ontologi filsafat proses
+    - metafizik pergantungan
+  inclusion_exclusion_rules: >-
+    INCLUDE: sources describing (a) occasionalism or custom-based/habitual causation as a
+    philosophical (not confessionally-bound) account of regularity without necessity, with a
+    described mechanism, from any tradition (Ash'ari kalam, Malebranche, Hume-adjacent regularity
+    theory, or a general philosophy-of-causation survey treating occasionalism structurally); (b)
+    relational/dependent ontology or grounding-theory work (analytic metaphysics) on an entity's
+    identity/individuation being constituted by dependence on something else; (c) process
+    philosophy (Whitehead and successors) on actualization/selection among possibilities and
+    perishing/re-creation (subjective/objective immortality, prehension); (d) Global South,
+    Arabic-language, or Southeast Asian/Malay-Indonesian philosophical treatments of any of the
+    above, including direct Arabic kalam-studies literature on kasb/takhsis. EXCLUDE: purely
+    devotional/homiletic faqr or tawakkul content with no structural/philosophical mechanism
+    description; sources using "dependent" or "occasionalism" only as a passing label without
+    describing how selection or persistence works; apologetic content whose sole purpose is
+    confessional argument rather than describing the structure.
+  time_window: >-
+    1674-2026 (Malebranche's occasionalism, De la Recherche de la Vérité, 1674, as one Western
+    comparator anchor; classical Ash'ari kalam sources predate this but are reached here via
+    modern secondary/survey literature, not by searching primary medieval Arabic manuscripts
+    directly; Whitehead's process philosophy from 1929 Process and Reality)
+  language_strategy: >-
+    EN primary; Arabic searched directly (as named in the task's own keyword list, نظرية الكسب
+    والاعتماد في علم الكلام الأشعري) via WebSearch for kalam-studies material on kasb/takhsis;
+    Malay/Indonesian (metafizik pergantungan, filsafat proses) attempted as a second non-EN /
+    Global-South-SEA-region language given glosa's own Thailand/SEA remit, since indexed
+    Malay/Indonesian academic philosophy content is more searchable than Thai-language academic
+    metaphysics content for this specific technical topic.
+  global_sources:
+    - Google Scholar (via WebSearch)
+    - general web search (WebSearch tool)
+    - Crossref (mechanical metadata)
+    - Stanford Encyclopedia of Philosophy (survey/reference, non-devotional)
+    - arXiv (checked, low expected yield for philosophy of religion)
+  local_context_sources:
+    - Arabic-language web/academic search (kalam studies, Islamic philosophy departments)
+    - Malay/Indonesian-language web search (filsafat/metafizik)
+    - Southeast Asian/Global-South Islamic-studies grey literature reached via search
+  search_date: '2026-09-05'
+  stopping_rule: >-
+    Stop once >=8 candidate sources are found satisfying: >=2 non-English (Arabic and/or
+    Malay/Indonesian) or Global-South-based, >=1 grey/community source, spanning both a support
+    family (a genuine theology-neutral structural analogue exists) and a challenge family (the
+    analogue either does not hold formally or smuggles in an equivalent metaphysical commitment)
+    -- or after 3 rounds of query reformulation per family, whichever comes first.
+  conflicts_of_interest: >-
+    None disclosed. Searcher (AI, this session) has no financial, doctrinal, or institutional
+    stake in any candidate source or in whether Q8 resolves as "structural analogue exists" or
+    "domain-only." This is a reflexive literature review for glosa's own kernel/ontology design
+    question; sources are being sought that could argue against lifting these constructs into
+    FOUNDATION, not only sources that support doing so.
+  access_limits: >-
+    No institutional library subscription. Only open-access, preprint, encyclopedia-entry, or
+    search-engine-visible abstract/full-text sources can be fetched and read per Rule 17
+    (own-hands verbatim read, no PDFs beyond pdftotext -l 8); a paywalled source found by search
+    is logged as PAYWALLED_ABSTRACT_ONLY / NOT_OBTAINED rather than silently skipped.
+queries:
+  support:
+    - 'occasionalism causation philosophy regularity without necessity Malebranche Ash''ari'
+    - 'process philosophy Whitehead actual entity concrescence selection among possibilities'
+    - 'relational ontology grounding dependent identity metaphysics analytic philosophy'
+    - 'kasb Ash''ari theory of acquisition causation habitual custom al-''ada philosophy'
+  challenge:
+    - 'occasionalism critique cannot be secularized theological commitment necessary'
+    - 'نظرية الكسب والاعتماد في علم الكلام الأشعري'
+    - 'grounding theory metaphysics objections fundamentality dependence circularity'
+    - 'metafizik pergantungan ontologi filsafat proses kajian Islam'
+    - 'process philosophy Whitehead God actual entity necessary for concrescence critique'
+    - 'faqr ontological poverty Sufi metaphysics structural dependence philosophy'
+sources_found:
+  - cite-glosa-v0-3-q8-001
+  - cite-glosa-v0-3-q8-002
+  - cite-glosa-v0-3-q8-003
+  - cite-glosa-v0-3-q8-004
+  - cite-glosa-v0-3-q8-005
+  - cite-glosa-v0-3-q8-006
+  - cite-glosa-v0-3-q8-007
+  - cite-glosa-v0-3-q8-008
+prisma_counts: null
+global_track:
+  summary: >-
+    A real, substantial scholarly conversation exists, but no source found uses glosa's own
+    labels (Dependent Order, Directed Selection, Dependent Identity) or tests the tri-construct
+    package as a unit. SUPPORT: SEP's "Occasionalism" entry independently frames Ash'ari
+    occasionalism and Western (Malebranche/Berkeley) occasionalism as instances of one general
+    philosophical position, with "conservation is but continuous creation" as a recurring
+    formula close to Dependent Identity; SEP's "Ontological Dependence" entry supplies a fully
+    secular, theology-free formal vocabulary (rigid/generic existential dependence) that maps
+    cleanly onto Dependent Identity specifically; SEP's "Causation in Arabic and Islamic Thought"
+    entry places al-Razi's Ash'ari-associated "principle of preponderation" inside the general,
+    theology-independent Principle of Sufficient Reason (PSR) literature, giving Directed
+    Selection a real secular formal home. CHALLENGE: IEP's "Process Philosophy" entry -- the
+    single most naturalistic-looking candidate analogue for Directed Selection -- shows its own
+    account of selection-among-possibilities (concrescence) has to reintroduce God as "the
+    principle of limitation" to do the actual selecting work, i.e. even this candidate does not
+    achieve full secularization on its own terms, only relocation.
+  strength_note: >-
+    Evidence tier for the surrounding secular-philosophy premises: Dr (well-specified,
+    peer-reviewed/editorially-curated encyclopedia entries, not independently replicated by this
+    search). No source tests glosa's specific three-construct package or the five registers of
+    faqr as a set.
+local_track:
+  summary: >-
+    Both required non-English languages were searched directly and yielded on-topic sources
+    (unlike Q1's local track, which found no Thai-language source at all). Arabic
+    (aleqt.com, a Saudi general-audience newspaper) supplied a CHALLENGE finding: even within
+    native Arabic intellectual culture, kasb is proverbially flagged as "more hidden than the
+    Ash'arite kasb" (أخفى من كسب الأشعرية) -- i.e. contested/unclear within its own tradition,
+    which weakens confidence that a clean structure is available to export in the first place.
+    Indonesian (edusoshum.org, Universitas Ahmad Dahlan Yogyakarta, open-access journal) supplied
+    an ORTHOGONAL/CHALLENGE finding: in this Global South/Southeast Asian Islamic-education
+    philosophy literature's own framing, "ontology" is directly glossed as "filsafat ketuhanan"
+    (the philosophy/theology of God), with no separation drawn between ontological and
+    theological vocabulary at all -- a different kind of caution than the Western analytic
+    sources, since it shows the source tradition itself (at least in this SEA pedagogical
+    register) does not treat the two domains as separable, independent of whether an external
+    secular vocabulary happens to redescribe the structure anyway. A Turkish peer-reviewed
+    source (dergipark.org.tr, Journal of the Institute for Sufi Studies) and a grey/community
+    devotional site (worldatnet.com) were also kept as additional CHALLENGE evidence specifically
+    on the five registers of faqr, both framing faqr's ontological content as inseparable from
+    its relation to God/"its Creator," at both the academic and ordinary-devotional register.
+  result: FOUND
+transfer_verdict: TRANSFERS_WITH_ADAPTATION
+  # SPLIT VERDICT BY CONSTRUCT, not one answer for all of Q8: Dependent Identity (SEP ontological
+  # dependence, card 002) and, more provisionally, Directed Selection (SEP PSR/preponderation,
+  # card 004) each have a real, theology-neutral, already-mature formal vocabulary in secular
+  # analytic philosophy that a glosa ontology-section primitive could cite/adapt without
+  # theological content. Dependent Order (kasb) is both contested within its own source tradition
+  # (card 005, Arabic) and its closest naturalistic-looking analogue (process philosophy's
+  # concrescence, card 003) turns out to reintroduce a God-equivalent selecting principle rather
+  # than secularize cleanly -- so Dependent Order stays weakly supported at best. The five
+  # registers of faqr (cards 006, 007, 008, across three independent sources spanning academic
+  # Indonesian, academic Turkish, and grey/community English registers) show the LEAST transfer:
+  # every source that engages faqr's actual content, in every language and register searched,
+  # keeps its ontological claim fused to a relation-to-God, not stated as a free-standing
+  # structural fact. This is an adaptation-with-caveats verdict, not a clean transfer for the
+  # whole package, and explicitly NOT a transfer at all for the five registers of faqr as
+  # currently specified.
+summary_disclaimer: >-
+  This is a SCOPING_SEARCH (not a systematic review): 8 sources kept from 10 queries across 2
+  query families (support/challenge, including one required Arabic query and one
+  Malay/Indonesian-family query) and one search episode (2026-09-05). WAS found: (a) two
+  Stanford Encyclopedia of Philosophy entries supplying genuinely secular, theology-free formal
+  vocabulary that maps cleanly onto Dependent Identity (ontological/existential dependence
+  theory) and, more provisionally, Directed Selection (PSR/preponderation literature); (b) a
+  process-philosophy source whose own most naturalistic-looking account of selection reintroduces
+  a God-equivalent principle rather than secularizing cleanly; (c) an Arabic-language source
+  showing kasb (Dependent Order) is proverbially contested even within its own tradition; (d)
+  an Indonesian-language source showing ontology and theology are not separated at all in at
+  least one Global South Islamic-education pedagogical register; (e) two further sources (Turkish
+  academic, English grey/community) on faqr specifically, both keeping its ontological content
+  fused to relation-with-God. NOT found: any source using Q8's own construct labels or testing
+  the three-construct package or five-register faqr set as glosa specifies them; any source
+  offering a ready-made, already-secularized version of "Dependent Order" or the five registers
+  of faqr as a unit. NC-27 applies: absence of a source naming glosa's own constructs is a
+  search-coverage fact, not itself a verdict on whether the constructs generalize.

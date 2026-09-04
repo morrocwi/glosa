@@ -1,0 +1,52 @@
+$schema: citation_card.schema.json
+id: cite-glosa-v0-3-q8-008
+claim_ref: Q8
+identifier:
+  kind: OFFICIAL_URL
+  value: https://www.worldatnet.com/2026/05/al-faqr-prophets-ultimate-pride.html
+fetch_status: FETCHED
+fetched_at: '2026-09-05'
+metadata_verified: true
+metadata_verified_by: mechanical:page-metadata
+metadata_verified_at: '2026-09-05'
+claim_match_verified: true
+claim_match_verified_by: route:I0
+claim_match_verified_at: '2026-09-05'
+exact_passage: >-
+  The entire created order is, at every moment, in a state of Faqr before its Creator. Faqr is
+  not a spiritual achievement -- it is the truth of creation. The achievement lies in
+  recognizing it, accepting it, and building one's entire inner life upon it.
+page_or_locator: 'worldatnet.com, article "Al-Faqr: The Prophet''s Ultimate Pride", section
+  discussing the Quranic grounding of Faqr (after the Surah Al-Imran citation)'
+line_or_paragraph: paragraph beginning "This theme of created beings' utter dependence on God
+  runs throughout the Quran" (line 74-76 of the fetched, HTML-stripped page text)
+scope: DIRECT_QUOTATION
+evidence_tier: Open
+independence_class: I0
+who_verified: I0 (this session, same-session curl+strip read of the fetched page; no
+  cross-vendor or independent human check has run yet)
+verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
+status: METADATA_OK
+xenon_ledger_ref: null
+disclosure: >-
+  I0 only (same session, not independently checked). WorldAtNet.com is a grey/community
+  devotional-educational website, not a peer-reviewed venue -- evidence_tier set to Open
+  accordingly (the page's own disclaimer, read in the same fetch, states it is "published for
+  educational, scholarly, and spiritual enrichment purposes" and explicitly notes at least one
+  cited hadith's chain of transmission is scholarly-debated). CHALLENGE evidence for Q8: this
+  community-facing source states the ontological-dependence content of faqr in explicitly
+  relational-to-God terms ("before its Creator") as intrinsic to the claim itself, not as an
+  optional gloss over a religion-neutral structural fact -- the passage's own formal content
+  (created order in a permanent state of neediness) is presented as inseparable from "its
+  Creator" as the term of relation, illustrating from ordinary devotional/community-facing usage
+  (not just formal academic sources) that faqr as popularly and pedagogically used is
+  theology-bound rather than a free-standing structural claim.
+superseded_by: null
+notes: >-
+  EN language, grey/community source (devotional educational blog, explicitly non-peer-reviewed
+  per its own disclaimer), Global-facing Islamic-educational content (author/institution
+  location not stated on the page). Found via query family: challenge ('faqr ontological
+  poverty Sufi metaphysics structural dependence philosophy'). Dialogue-table stance: NO
+  (illustrates faqr as theology-bound in ordinary/community usage, not a neutral structural
+  primitive).
+fetched_from_url: https://www.worldatnet.com/2026/05/al-faqr-prophets-ultimate-pride.html

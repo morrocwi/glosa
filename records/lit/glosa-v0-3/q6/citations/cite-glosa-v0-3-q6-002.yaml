@@ -1,0 +1,75 @@
+$schema: citation_card.schema.json
+id: cite-glosa-v0-3-q6-002
+claim_ref: Q6
+identifier:
+  kind: PMID
+  value: '30607107'
+fetch_status: FETCHED
+fetched_at: '2026-09-05'
+metadata_verified: true
+metadata_verified_by: mechanical:PubMed record cross-check by title/author (Ott JS, 'Hedging, Weasel Words,
+  and Truthiness in Scientific Writing', PMID 30607107; PubMed page itself returned a cookie-gate block
+  on direct fetch -- see access_limits) + pdftotext -l 8 of an open mirrored copy of the same article
+  hosted by nonpartisaneducation.org (title, author, and text match the PubMed-indexed article)
+metadata_verified_at: '2026-09-05'
+claim_match_verified: true
+claim_match_verified_by: self:same-session-read (I1, NOT independent -- awaiting a decorrelated I3 cross-vendor
+  route to upgrade status to VERIFIED per Rule 17/S14; task instruction caps status at METADATA_OK for
+  this pass)
+claim_match_verified_at: '2026-09-05'
+exact_passage: In reading articles, authors try to influence understanding using language to extend unverifiable
+  statements and agendas or to influence thinking by suggesting a connection using “hedging” or “weasel”
+  words.
+page_or_locator: Ott, J.S., 'Hedging, Weasel Words, and Truthiness in Scientific Writing' (mirrored PDF,
+  nonpartisaneducation.org/Review/Resources/Ott1.pdf), page 1, as extracted 2026-09-05 (pdftotext -l 8)
+line_or_paragraph: lines 22-24 of the pdftotext -l 8 extraction
+scope: DIRECT_QUOTATION
+evidence_tier: Dr
+independence_class: I1
+who_verified: same-session AI (I1, non-independent) -- metadata confirmed mechanically, passage read and
+  matched to Q6 by the same session that ran the search; no cross-vendor I3 route run in this pass
+verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
+status: METADATA_OK
+xenon_ledger_ref: null
+disclosure: 'Ott, J.S., ''Hedging, Weasel Words, and Truthiness in Scientific Writing'' (PMID 30607107;
+  EN, peer-reviewed-indexed, read via an open mirrored PDF since direct PubMed fetch was blocked -- see
+  access_limits). Fetched and read directly (curl + stdlib HTML stripper for web pages; pdftotext -l 8
+  for the one PDF source) 2026-09-05, one page kept in memory at a time per RAM limit. Read as: Frames
+  hedging/weasel language as an active mechanism authors use to ''extend unverifiable statements'' --
+  i.e. the harm is precisely a claim being made to feel more supported/checkable than it actually is,
+  matching Q6''s concern almost exactly, though framed at the sentence-rhetoric level rather than as a
+  claim-level red flag with a named verification-procedure gap. stance vs Q6 as read: YES. independence_class
+  I1 (same session) -- status METADATA_OK only, not VERIFIED: no decorrelated I3 cross-vendor route has
+  checked this card yet. No novel/first/prior-art claim made about this source; comparison to Q6 is same/different/orthogonal
+  as stated in dialogue_table_stance.'
+superseded_by: null
+notes: 'Diversity: language=en, source_type=peer_reviewed, geography_or_institution=US, search_route_or_database="web
+  search / direct fetch, glosa-v0-3 Q6 scoping pass". dialogue_table_stance: agrees. what_it_separates:
+  Separates ordinary hedging (politeness, appropriate uncertainty-marking) from weasel wording that misleads
+  a reader into ''truthiness'' -- a belief mistaken for a checked fact -- based on the AUTHOR''S INTENT
+  to deceive, which the paper says is often unknowable from the text alone. what_it_assumes: Assumes a
+  human reader alert to rhetorical mechanism; does not offer a mechanical/schema-level detection rule
+  glosa could implement directly -- ''depends on intent to deceive'' is explicitly NOT a mechanically
+  checkable criterion, which is a caution against expecting Q6''s red flag to be cleanly automatable.
+  what_it_would_say_against_us: Supports Q6''s underlying concern (unverifiable-sounding claims are a
+  real writing hazard) but undercuts a purely mechanical schema flag: the paper''s own account makes whether
+  language is ''weasel'' (harmful) versus ''hedging'' (legitimate caution) depend on author intent, which
+  a schema-level pattern match cannot read -- Q6''s red flag, if implemented as a keyword/pattern trigger,
+  risks flagging legitimate epistemic hedging as if it were deceptive weasel wording.'
+citation_card_id: cite-glosa-v0-3-q6-002
+identifier_kind: PMID
+claim_match_verification_route: NOT_YET
+retraction_check: UNCHECKED
+version_status: PUBLISHED
+dialogue_table_stance: agrees
+fetched_from_url: https://nonpartisaneducation.org/Review/Resources/Ott1.pdf
+diversity:
+  language: en
+  discipline_or_tradition: epistemic hedging / verifiability / disclaimer-catalogue design
+  source_type: peer_reviewed
+  search_route_or_database: web search / direct fetch, glosa-v0-3 Q6 scoping pass
+  geography_or_institution: US
+  venue_quality_index:
+    index_name: null
+    value: null
+    date_read: null

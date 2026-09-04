@@ -1,0 +1,19 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: Q5
+source_label: Center for Open Science, "Preregistration" initiative page (EN, primary, cos.io/initiatives/prereg)
+how_it_sees_the_problem: Names the timing rule as "right before your next round of data collection" --
+  a single canonical timing edge (registration freeze precedes data collection) -- but says nothing
+  about ethics-approval timing relative to that freeze.
+what_it_separates: Separates the timing question "when relative to data collection" (answered directly)
+  from "when relative to ethics/IRB approval" (not addressed on this page at all).
+what_it_assumes: Assumes the reader already has ethics/institutional clearance in place and is asking
+  purely about registry mechanics and analysis-plan timing, not about a compliance-gate ordering
+  against an ethics committee.
+stance: "YES"
+what_it_would_say_against_us: This page never states an ethics-approval-timing requirement at all --
+  citing it as backing for the "before ethics" half of Q5's proposed compound gate would overstate
+  what COS's own guidance actually commits to; it is evidence for one half of the compound rule only.
+citation_card: cite-glosa-v0-3-q5-001
+verified:
+  metadata_verified: true
+  claim_match_verified: true

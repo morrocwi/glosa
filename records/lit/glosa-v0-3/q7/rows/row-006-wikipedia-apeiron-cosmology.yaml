@@ -1,0 +1,23 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: Q7
+source_label: Wikipedia, 'Apeiron (cosmology)' (EN, community-maintained reference)
+how_it_sees_the_problem: The oldest attested Western identification of the infinite/unlimited (apeiron)
+  with the divine -- the apeiron is called divine precisely because it is without origin or end, making
+  infinity itself the ground of transcendence rather than a separate attribute layered onto an already-transcendent
+  God.
+what_it_separates: Separates the apeiron as a cosmological-material first principle (an unlimited "stuff"
+  things arise from and return to) from the apeiron as a theological predicate (divine because unoriginated/unending)
+  -- the source shows both readings coexisting in Anaximander's own fragment rather than a later import.
+what_it_assumes: Assumes a reconstruction of a fragmentary pre-Socratic text (via secondary doxography,
+  Hippolytus) rather than a surviving primary treatise -- the philosophical content is mediated and reconstructed,
+  a weaker evidentiary base than the Scholastic or Cantorian material.
+stance: 'YES'
+what_it_would_say_against_us: This is the earliest attested case of infinity-as-transcendental-ground in
+  the Western tradition, predating both mathematics' formal treatment of actual infinity (Cantor, 19th
+  century) and Aristotle's potential/actual distinction by centuries -- an argument that the transcendence
+  reading is not parasitic on the mathematical concept at all but historically PRIOR to it, which cuts against
+  treating it as a peripheral tension to a mathematics-first framework.
+citation_card: cite-glosa-v0-3-q7-006
+verified:
+  metadata_verified: true
+  claim_match_verified: true

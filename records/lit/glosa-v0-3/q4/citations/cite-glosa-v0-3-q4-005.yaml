@@ -1,0 +1,49 @@
+$schema: citation_card.schema.json
+id: cite-glosa-v0-3-q4-005
+claim_ref: Q4
+identifier:
+  kind: OFFICIAL_URL
+  value: https://fac.flinders.edu.au/dspace/api/core/bitstreams/e94a96eb-0334-4300-8880-c836d4d9a676/content
+fetch_status: FETCHED
+fetched_at: '2026-09-05'
+metadata_verified: true
+metadata_verified_by: manual:I0
+metadata_verified_at: '2026-09-05'
+claim_match_verified: true
+claim_match_verified_by: route:I0
+claim_match_verified_at: '2026-09-05'
+exact_passage: >-
+  If item is secondary material (e.g. a policy brief of a technical report) refer to the original.
+  Is it an accurate, unbiased interpretation or analysis?
+page_or_locator: "AACODS checklist, \"Accuracy\" section (PDF, page 1-2 per pdftotext -l 8)"
+line_or_paragraph: lines 61-62 of the pdftotext -l 8 extraction
+scope: DIRECT_QUOTATION
+evidence_tier: Dr
+independence_class: I0
+who_verified: I0 (this session, same-session read of the mechanically fetched PDF via pdftotext;
+  no cross-vendor or independent human check has run yet)
+verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
+status: METADATA_OK
+xenon_ledger_ref: null
+disclosure: >-
+  I0 only (same session, not independently checked). No DOI exists for this checklist; identifier
+  is the official Flinders Academic Commons repository bitstream URL (fetched directly, HTTP 200,
+  PDF/1.5). Author/title/institution/year confirmed from the document's own text and cross-checked
+  against the NCBI Bookshelf ANNEX 4 citation of the same work (Tyndall J. "AACODS checklist for
+  appraising grey literature." Adelaide: Flinders University; 2010). Full text fetched and read
+  directly (pdftotext -l 8, first 8 pages). This is a CHALLENGE to Q4's premise: AACODS is a
+  general-purpose, widely-used grey-literature appraisal checklist that explicitly names "a policy
+  brief" as a worked example under its "Accuracy" criterion, instructing the reviewer to trace
+  secondary material like a policy brief back to its original source and judge whether the
+  interpretation is accurate and unbiased -- i.e. it already has a working, generic mechanism for
+  handling a tier-undeclared policy brief (trace-to-original-and-judge), rather than a distinct
+  flag-and-request-declared-tier step. This is direct evidence that at least one established
+  appraisal framework treats this case as already covered, not as needing a new named intake rule.
+superseded_by: null
+notes: >-
+  Global North (Australia, Flinders University), EN, grey/institutional checklist (not
+  peer-reviewed journal article, itself grey literature), discipline: library/information
+  science methodology for evidence synthesis. Found via query family: challenge ('AACODS checklist
+  grey literature appraisal criteria authority accuracy currency'). Dialogue-table stance: NO.
+  This card is itself the "grey/community source" required by Rule 17/K2-lrs stratification.
+fetched_from_url: https://fac.flinders.edu.au/dspace/api/core/bitstreams/e94a96eb-0334-4300-8880-c836d4d9a676/content

@@ -1,0 +1,51 @@
+$schema: citation_card.schema.json
+id: cite-glosa-v0-3-q4-007
+claim_ref: Q4
+identifier:
+  kind: DOI
+  value: 10.1080/02691728.2016.1172365
+fetch_status: PAYWALLED_ABSTRACT_ONLY
+fetched_at: '2026-09-05'
+metadata_verified: true
+metadata_verified_by: mechanical:semanticscholar
+metadata_verified_at: '2026-09-05'
+claim_match_verified: true
+claim_match_verified_by: route:I0
+claim_match_verified_at: '2026-09-05'
+exact_passage: >-
+  Rather than adhering to a single hierarchy of evidence to judge what constitutes "good"
+  evidence for policy, it is more useful to examine evidence through the lens of appropriateness.
+  The form of evidence, the determination of relevant categories and variables, and the weight
+  given to any piece of evidence, must suit the policy needs at hand.
+page_or_locator: Abstract (Semantic Scholar Graph API record for DOI 10.1080/02691728.2016.1172365)
+line_or_paragraph: penultimate and final sentences of the abstract
+scope: DIRECT_QUOTATION
+evidence_tier: Dr
+independence_class: I0
+who_verified: I0 (this session, same-session read of the mechanically fetched Semantic Scholar
+  abstract field; no cross-vendor or independent human check has run yet)
+verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
+status: METADATA_OK
+xenon_ledger_ref: null
+disclosure: >-
+  I0 only (same session, not independently checked). Title/authors/venue/year/DOI confirmed
+  mechanically via the Semantic Scholar Graph API
+  (https://api.semanticscholar.org/graph/v1/paper/DOI:10.1080/02691728.2016.1172365): Parkhurst
+  JO, Abeysinghe S, "What Constitutes 'Good' Evidence for Public Health and Social Policy-making?
+  From Hierarchies to Appropriateness," Social Epistemology, 2016. Full text is not open access
+  (Taylor & Francis / tandfonline.com returned a Cloudflare "Just a moment..." interstitial to a
+  scripted curl fetch; not indexed in Europe PMC) so this card is PAYWALLED_ABSTRACT_ONLY /
+  METADATA_OK, not VERIFIED -- the abstract text quoted here was read from the mechanically
+  fetched Semantic Scholar record, not from memory. This source SUPPORTS Q4's premise: it argues
+  directly that a single evidence-quality hierarchy is the wrong tool for judging policy-relevant
+  evidence, and that appropriateness (form, category, and weight suited to the specific policy
+  need) should govern instead -- which implies a source like a policy brief cannot be handled by
+  a blanket tier-check or silent skip at intake; it needs deliberate, case-specific handling,
+  consistent with Q4's proposed flag-and-request-tier step rather than either uniform grading or
+  silent exclusion.
+superseded_by: null
+notes: >-
+  Global North (LSE / University of Edinburgh), EN, peer-reviewed journal article, discipline:
+  philosophy of science / health policy studies. Found via query family: support ('evidence
+  hierarchy policy brief no methods section appraisal challenge'). Dialogue-table stance: YES.
+fetched_from_url: https://api.semanticscholar.org/graph/v1/paper/DOI:10.1080/02691728.2016.1172365?fields=title,abstract,authors,year,venue

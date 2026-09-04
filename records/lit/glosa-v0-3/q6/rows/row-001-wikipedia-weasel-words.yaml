@@ -1,0 +1,26 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: Q6
+source_label: Wikipedia, 'Manual of Style/Words to watch' -- 'Unsupported attributions' (weasel words)
+  section (EN, community-maintained editorial policy/reference)
+how_it_sees_the_problem: 'Names ''vague attribution'' as the general pattern: a statement dressed with
+  authority (an implied source, method, or backing) with no substantial basis given -- the closest existing
+  NAMED pattern to Q6''s proposed ''claims verifiable with no stated procedure'' red flag, but broader
+  (covers any unsupported authority claim, not specifically ''verifiability'' claims).'
+what_it_separates: Separates statements that ARE attributed to a specific, checkable source from statements
+  dressed with vague authority ('some critics', 'it is widely held', by extension 'this is verifiable')
+  that give the appearance of backing without a checkable source.
+what_it_assumes: Assumes a human editor reading prose and judging attribution strength case by case; does
+  not propose a mechanical/schema-level flagging rule the way Q6 does, and does not single out the word
+  'verifiable' specifically -- it covers a broader family of authority-dressing language.
+stance: ORTHOGONAL
+what_it_would_say_against_us: This existing, decades-old named pattern ('vague attribution' / weasel words)
+  already covers most of what Q6's narrower proposal would catch -- 'claims verifiable with no stated
+  procedure' is one specific instance of vague attribution (attributing backing to an implied verification
+  method rather than an implied source). Citing Q6 as a wholly NEW pattern would overstate its novelty;
+  the honest framing is a narrower, named sub-case of an existing broader pattern, which argues for extending
+  glosa's existing disclaimer catalogue entry (if one already tracks vague attribution) rather than adding
+  an unrelated new one.
+citation_card: cite-glosa-v0-3-q6-001
+verified:
+  metadata_verified: true
+  claim_match_verified: true

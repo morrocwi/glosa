@@ -1,0 +1,31 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: Q8
+source_label: "Internet Encyclopedia of Philosophy, \"Process Philosophy\" (iep.utm.edu/processp/)"
+how_it_sees_the_problem: >-
+  Frames actualization as "concrescence": an actual occasion selects and integrates data from
+  available possibilities ("eternal objects") to become determinate -- structurally close to
+  Q8's "Directed Selection" (why THIS possible outcome actualizes among equal alternatives) --
+  presented initially as a naturalistic, non-confessional metaphysical system.
+what_it_separates: >-
+  Separates the field of bare possibility (eternal objects, unordered) from the actualized,
+  determinate occasion (post-concrescence); but the same source then has to separately introduce
+  a further principle ("principle of limitation") to explain why only SOME possibilities become
+  available/ordered for any given occasion -- splitting "what could happen" from "what fixes
+  which of those can happen here," which Q8's Directed Selection collapses into one construct.
+what_it_assumes: >-
+  Assumes a fully general, secular-sounding process ontology can explain selection among
+  possibilities without theology; but its own account of WHY selection is constrained/ordered
+  requires reintroducing God as "the principle of limitation, which actual occasions require" --
+  an assumption the source itself does not fully secularize, though it notes (line 174) some
+  process philosophers dispute this.
+stance: "NO"
+what_it_would_say_against_us: >-
+  Directly: naming "Directed Selection" as a ready-made theology-neutral ontology-section
+  primitive on the strength of process philosophy's apparent naturalism would be premature --
+  process philosophy's own most developed account of selection-among-possibilities reintroduces
+  a God-equivalent "principle of limitation" to do the actual selecting work, so the analogue is
+  not yet secularized on its own terms, only relocated.
+citation_card: cite-glosa-v0-3-q8-003
+verified:
+  metadata_verified: true
+  claim_match_verified: true

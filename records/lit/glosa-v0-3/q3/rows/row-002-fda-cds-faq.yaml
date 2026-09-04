@@ -1,0 +1,21 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: Q3
+source_label: U.S. FDA, Clinical Decision Support Software FAQs (EN, primary regulatory guidance)
+how_it_sees_the_problem: Frames the non-device/device boundary as depending on a specific situational
+  criterion -- whether the decision context is time-critical -- not on the software's topic area or a
+  fixed disclaimer string.
+what_it_separates: Separates time-critical CDS (cannot be Non-Device CDS, regulated) from non-time-critical
+  CDS meeting all four criteria (can be Non-Device CDS) -- the same underlying software function can fall
+  on either side depending on deployment context.
+what_it_assumes: Assumes a US regulatory audience already applying the four-criterion Non-Device CDS test;
+  does not address whether the disclaimer WORDING itself needs to vary by context or can stay a fixed
+  reusable string once the regulatory classification is settled.
+stance: 'NO'
+what_it_would_say_against_us: 'Directly defeats a naive reading of Q3: if the underlying regulatory boundary
+  this disclaimer is supposed to signal shifts with deployment context (time-critical vs not), a single
+  reusable clause text cannot by itself carry that context-dependent classification -- the clause would
+  need to be paired with a context check, not stand alone as boilerplate.'
+citation_card: cite-glosa-v0-3-q3-002
+verified:
+  metadata_verified: true
+  claim_match_verified: true

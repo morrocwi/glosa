@@ -1,0 +1,30 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: Q2
+source_label: "Center for Open Science, Registered Reports (cos.io/initiatives/registered-reports)"
+how_it_sees_the_problem: >-
+  Frames the problem as a publishing-workflow redesign: move peer review to BEFORE results are
+  known (Stage 1 protocol review, in-principle acceptance) so the checkable record is the
+  protocol-plus-methodology, not the outcome or an after-the-fact institutional endorsement.
+what_it_separates: >-
+  Separates the SIGNAL an institution gives (a journal's name/prestige) from a MECHANISTIC,
+  publicly inspectable pass condition (did the study follow its accepted protocol?) --
+  structurally the same move Q2's argument makes for claim cards: replace an opaque
+  institutional say-so with a checkable, reader-inspectable record.
+what_it_assumes: >-
+  Assumes the reader/editor community actually treats "followed the pre-accepted protocol" as
+  the operative pass/fail criterion rather than reverting to outcome-based judgment; does not
+  address AI-assisted claim production, disclosure of AI fill-in, or an I0-I5-style independence
+  ladder -- it is a primary description of the mechanism's own design, not an evaluation.
+stance: "YES"
+what_it_would_say_against_us: >-
+  As a primary-source description this source supports the mechanism-design side of Q2 (a
+  checkable public record CAN substitute structurally for an opaque institutional stamp), but it
+  says nothing about whether such a mechanism resists gaming or scales to a standalone scholar
+  without institutional backing -- for that, this row must be read together with
+  cite-glosa-v0-3-q2-001/002 (which show badges/Registered-Reports-adjacent mechanisms being
+  gamed or failing to guarantee reproducibility in practice), so this source alone cannot carry
+  Q2 to a formalized kernel rule.
+citation_card: cite-glosa-v0-3-q2-005
+verified:
+  metadata_verified: true
+  claim_match_verified: true

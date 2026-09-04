@@ -1,0 +1,72 @@
+$schema: citation_card.schema.json
+id: cite-glosa-v0-3-q7-004
+claim_ref: Q7
+identifier:
+  kind: OFFICIAL_URL
+  value: https://en.wikipedia.org/wiki/Finitism
+fetch_status: FETCHED
+fetched_at: '2026-09-05'
+metadata_verified: true
+metadata_verified_by: mechanical:curl+html-strip (Wikipedia page fetched directly, title confirmed on
+  the fetched page)
+metadata_verified_at: '2026-09-05'
+claim_match_verified: true
+claim_match_verified_by: self:same-session-read (I1, NOT independent -- awaiting a decorrelated I3 cross-vendor
+  route to upgrade status to VERIFIED per Rule 17/S14; task instruction caps status at METADATA_OK for
+  this pass)
+claim_match_verified_at: '2026-09-05'
+exact_passage: The main idea of finitistic mathematics is not accepting the existence of infinite objects
+  such as infinite sets. While all natural numbers are accepted as existing, the set of all natural numbers
+  is not considered to exist as a mathematical object. Therefore quantification over infinite domains is
+  not considered meaningful.
+page_or_locator: en.wikipedia.org, 'Finitism', introductory section, as fetched 2026-09-05
+line_or_paragraph: lines 155-159 of the fetched/stripped page text
+scope: DIRECT_QUOTATION
+evidence_tier: Dr
+independence_class: I1
+who_verified: same-session AI (I1, non-independent) -- metadata confirmed mechanically, passage read and
+  matched to Q7 by the same session that ran the search; no cross-vendor I3 route run in this pass
+verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
+status: METADATA_OK
+xenon_ledger_ref: null
+disclosure: 'Wikipedia, ''Finitism'' (EN, community-maintained reference). Fetched and read directly (curl
+  + stdlib HTML stripper, one page kept in memory at a time per RAM limit) 2026-09-05. Read as: finitism
+  denies infinite sets exist as mathematical objects at all -- a flat rejection of actual infinity grounded
+  in ontological economy, with no transcendence claim on either side (it does not deny God''s infinity;
+  it simply has nothing to say about it, staying entirely within mathematical ontology). stance vs Q7 as
+  read: NO -- finitism gives a genuine rival stance to actual infinity that competes with glosa''s readout-first
+  discipline on purely mathematical-ontology grounds, independent of and unhelped by any transcendence
+  framing. independence_class I1 (same session) -- status METADATA_OK only, not VERIFIED: no decorrelated
+  I3 cross-vendor route has checked this card yet. No novel/first/prior-art claim made about this source;
+  comparison to Q7 is same/different/orthogonal as stated in dialogue_table_stance.'
+superseded_by: null
+notes: 'Diversity: language=en, source_type=grey_literature, geography_or_institution=US (global reference),
+  search_route_or_database="web search / direct fetch, glosa-v0-3 Q7 scoping pass". dialogue_table_stance:
+  no. what_it_separates: Separates individual natural numbers (each finite, accepted) from "the set of
+  all natural numbers" as a completed object (rejected) -- a set-theoretic/ontological separation with
+  no transcendence category. what_it_assumes: Assumes mathematical existence claims must be finitely groundable;
+  does not address whether infinity, as a concept, could still be meaningful OUTSIDE mathematics (e.g.
+  theologically) even while being rejected WITHIN mathematics -- the source is silent on that question
+  rather than taking a position against it. what_it_would_say_against_us: A mathematics-only actual-infinity
+  rejection (finitism) that never engages transcendence at all is itself already a full rival epistemic
+  stance glosa would need to reconcile with on strictly mathematical grounds -- which suggests glosa''s
+  §1.0 Pillars work has a nearer, more load-bearing rival (finitism/constructivism vs Platonism) to formally
+  reconcile with BEFORE reaching the transcendental-ground question, supporting the "flag Q7 and leave
+  open, prioritize the mathematical dispute" reading.'
+citation_card_id: cite-glosa-v0-3-q7-004
+identifier_kind: OFFICIAL_URL
+claim_match_verification_route: NOT_YET
+retraction_check: UNCHECKED
+version_status: PUBLISHED
+dialogue_table_stance: disagrees
+fetched_from_url: https://en.wikipedia.org/wiki/Finitism
+diversity:
+  language: en
+  discipline_or_tradition: philosophy of mathematics (finitism)
+  source_type: grey_literature
+  search_route_or_database: web search / direct fetch, glosa-v0-3 Q7 scoping pass
+  geography_or_institution: US (global reference)
+  venue_quality_index:
+    index_name: null
+    value: null
+    date_read: null

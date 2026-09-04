@@ -1,0 +1,40 @@
+$schema: citation_card.schema.json
+id: cite-glosa-v0-3-q2-002
+claim_ref: Q2
+identifier:
+  kind: DOI
+  value: 10.1098/rsos.201494
+fetch_status: FETCHED
+fetched_at: '2026-09-05'
+metadata_verified: true
+metadata_verified_by: mechanical:crossref
+metadata_verified_at: '2026-09-05'
+claim_match_verified: true
+claim_match_verified_by: self:same-session-AI (I1, not yet an independent I3/I5 route)
+claim_match_verified_at: '2026-09-05'
+exact_passage: These results highlight that open data alone is not sufficient to ensure analytic reproducibility.
+page_or_locator: Abstract (Europe PMC PMC7890505 open-access full-text mirror, fetched 2026-09-05)
+scope: DIRECT_QUOTATION
+evidence_tier: Dr
+independence_class: I1
+who_verified: self (same-session AI, I1) -- not yet an independent cross-vendor or human route
+verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
+status: METADATA_OK
+xenon_ledger_ref: null
+disclosure: 'Same-session AI check only (I1) -- this card is METADATA_OK, not VERIFIED. Title/DOI/authors/
+  venue confirmed mechanically via Crossref (Hardwicke, Bohn, MacDonald, Hembacher, Nuijten, Peloquin,
+  deMayo, Long, Yoon, Frank; Royal Society Open Science; 2021-01). Passage read via the Europe PMC open-access
+  full-text XML mirror. Found under the challenge query family (''"open science badges" criticism gaming
+  incentive credibility signal'', reinforced by ''reproducibility badges India Latin America adoption
+  grey literature open science community''). Bearing on Q2: CHALLENGES the optimistic reading directly
+  and empirically -- of 25 articles that had already received an "open data badge" (a certification-substitute
+  credential), 16 (64%) contained at least one major numerical discrepancy on re-check, and non-reproducibility
+  persisted for 7 (28%) even after author involvement; the badge itself did not guarantee the checkable
+  rigour it certified.'
+superseded_by: null
+notes: 'Global North (US-based authors; Royal Society Open Science, UK), EN, peer-reviewed empirical observational
+  study. Found via query family: challenge. Dialogue-table stance: NO (empirically challenges the claim
+  that a badge-shaped certification-substitute mechanism reliably delivers checkable rigour). dialogue_table_stance:
+  disagrees. language: en.'
+fetched_from_url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7890505/fullTextXML
+line_or_paragraph: line 132 of the fetched-and-stripped XML text (single continuous sentence, end of abstract)

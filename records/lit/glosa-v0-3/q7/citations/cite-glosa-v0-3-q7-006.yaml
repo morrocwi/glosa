@@ -1,0 +1,72 @@
+$schema: citation_card.schema.json
+id: cite-glosa-v0-3-q7-006
+claim_ref: Q7
+identifier:
+  kind: OFFICIAL_URL
+  value: https://en.wikipedia.org/wiki/Apeiron_(cosmology)
+fetch_status: FETCHED
+fetched_at: '2026-09-05'
+metadata_verified: true
+metadata_verified_by: mechanical:curl+html-strip (Wikipedia page fetched directly, title confirmed on
+  the fetched page; original candidate britannica.com/topic/apeiron returned HTTP 403 Cloudflare bot-check
+  and was replaced with this equivalent-coverage source, disclosed in search_log.yaml access_limits)
+metadata_verified_at: '2026-09-05'
+claim_match_verified: true
+claim_match_verified_by: self:same-session-read (I1, NOT independent -- awaiting a decorrelated I3 cross-vendor
+  route to upgrade status to VERIFIED per Rule 17/S14; task instruction caps status at METADATA_OK for
+  this pass)
+claim_match_verified_at: '2026-09-05'
+exact_passage: '"What is divine? What has no origin, nor end." This probably led his student to his final
+  decision for apeiron, because the divinity applied to it implies that it always existed.'
+page_or_locator: en.wikipedia.org, 'Apeiron (cosmology)', section on Anaximander's successors, as fetched
+  2026-09-05
+line_or_paragraph: lines 373-375 of the fetched/stripped page text
+scope: DIRECT_QUOTATION
+evidence_tier: Dr
+independence_class: I1
+who_verified: same-session AI (I1, non-independent) -- metadata confirmed mechanically, passage read and
+  matched to Q7 by the same session that ran the search; no cross-vendor I3 route run in this pass
+verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
+status: METADATA_OK
+xenon_ledger_ref: null
+disclosure: 'Wikipedia, ''Apeiron (cosmology)'' (EN, community-maintained reference). Fetched and read
+  directly (curl + stdlib HTML stripper, one page kept in memory at a time per RAM limit) 2026-09-05. Read
+  as: the oldest attested Western identification of the infinite/unlimited (apeiron) with the divine --
+  the apeiron is called divine precisely BECAUSE it is without origin or end, making infinity itself the
+  ground of transcendence rather than a separate attribute layered onto an already-transcendent God. stance
+  vs Q7 as read: SUPPORTS the premise that infinity-as-transcendental-ground is a genuine, ancient, actively-reasoned
+  position (a cosmological-metaphysical argument, not a late rhetorical add-on). independence_class I1
+  (same session) -- status METADATA_OK only, not VERIFIED: no decorrelated I3 cross-vendor route has checked
+  this card yet. No novel/first/prior-art claim made about this source; comparison to Q7 is same/different/orthogonal
+  as stated in dialogue_table_stance.'
+superseded_by: null
+notes: 'Diversity: language=en, source_type=grey_literature, geography_or_institution=US (global reference;
+  subject matter is ancient Greek/pre-Socratic), search_route_or_database="web search / direct fetch, glosa-v0-3
+  Q7 scoping pass". dialogue_table_stance: yes. what_it_separates: Separates the apeiron as a cosmological-material
+  first principle (an unlimited "stuff" things arise from and return to) from the apeiron as a theological
+  predicate (divine because unoriginated/unending) -- the source shows both readings coexisting in Anaximander''s
+  own fragment rather than a later import. what_it_assumes: Assumes a reconstruction of a fragmentary pre-Socratic
+  text (via secondary doxography, Hippolytus) rather than a surviving primary treatise -- the philosophical
+  content is mediated and reconstructed, a weaker evidentiary base than the Scholastic or Cantorian material.
+  what_it_would_say_against_us: This is the earliest attested case of infinity-as-transcendental-ground
+  in the Western tradition, predating both mathematics'' formal treatment of actual infinity (Cantor, 19th
+  century) and Aristotle''s potential/actual distinction by centuries -- an argument that the transcendence
+  reading is not parasitic on the mathematical concept at all but historically PRIOR to it, which cuts against
+  treating it as a peripheral tension to a mathematics-first framework.'
+citation_card_id: cite-glosa-v0-3-q7-006
+identifier_kind: OFFICIAL_URL
+claim_match_verification_route: NOT_YET
+retraction_check: UNCHECKED
+version_status: PUBLISHED
+dialogue_table_stance: agrees
+fetched_from_url: https://en.wikipedia.org/wiki/Apeiron_(cosmology)
+diversity:
+  language: en
+  discipline_or_tradition: ancient Greek (pre-Socratic) philosophy
+  source_type: grey_literature
+  search_route_or_database: web search / direct fetch, glosa-v0-3 Q7 scoping pass
+  geography_or_institution: US (global reference)
+  venue_quality_index:
+    index_name: null
+    value: null
+    date_read: null

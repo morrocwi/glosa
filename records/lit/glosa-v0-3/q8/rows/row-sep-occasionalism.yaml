@@ -1,0 +1,30 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: Q8
+source_label: "Stanford Encyclopedia of Philosophy, \"Occasionalism\" (plato.stanford.edu/entries/occasionalism/)"
+how_it_sees_the_problem: >-
+  Frames occasionalism as a general philosophical position about causation (God, or in some
+  variants no created thing, is the sole true cause) that has been independently developed by
+  multiple traditions -- Islamic Ash'arite kalam (naming al-Ash'ari as particularly influential)
+  and Western early-modern philosophy (Malebranche, Berkeley) -- and treats "conservation is but
+  continuous creation" as a recurring theological principle across both.
+what_it_separates: >-
+  Separates a thing's origination (being brought into existence) from its conservation (being
+  kept in existence moment to moment), and treats the latter as requiring the same kind of
+  ongoing dependence as the former -- exactly the distinction Q8's "Dependent Identity" register
+  needs (continued existence, not only origination, is what is contingent).
+what_it_assumes: >-
+  Assumes causal necessitation and regularity are genuinely competing philosophical options
+  worth comparing across traditions without treating either tradition's theology as
+  authoritative; does not itself attempt to fully secularize the principle -- it still presents
+  "conservation is but continuous creation" as a theological claim, not a value-neutral one.
+stance: "YES"
+what_it_would_say_against_us: >-
+  If Q8's constructs stayed islam-domain-only, this source would say that under-states how much
+  cross-traditional philosophical convergence already exists: mainstream, non-devotional
+  academic philosophy of religion already treats Ash'ari occasionalism and Western occasionalism
+  as instances of one general position, supporting a structural-analogue answer for at least the
+  Dependent-Identity/continuous-dependence shape of Q8's claim.
+citation_card: cite-glosa-v0-3-q8-001
+verified:
+  metadata_verified: true
+  claim_match_verified: true

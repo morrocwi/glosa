@@ -1,0 +1,160 @@
+$schema: search_log.schema.json
+id: search-glosa-v0-3-001
+claim_or_hypothesis_ref: Q1
+search_mode: SCOPING_SEARCH
+frozen_scope:
+  hypothesis_or_falsifier: >-
+    Q1 (glosa-v0-3, K2-lrs): "Premature Category Stabilization" (PCS) -- the pattern where a
+    working category/label is fixed before enough evidence has accumulated to justify closing
+    it, then downstream reasoning treats the category as settled -- generalizes beyond its
+    tourism/hilal/service-template case studies into a named, cross-domain glosa kernel
+    failure-mode/red-flag that belongs in the base-hub contaminated-concept table (alongside
+    kc-base-018), informing whether FOUNDATION §5's disclaimer catalogue / §6 genre router gets
+    a new named red-flag. Falsifier: the world literature on premature closure / categorization
+    bias / institutional template lock-in is found to describe a domain-bound phenomenon only
+    (e.g. clinical diagnostic reasoning, or single-institution isomorphism) with no
+    cross-domain/general mechanism independent of subject matter -- in which case PCS stays
+    domain content confined to its originating case studies rather than becoming a kernel-level
+    red-flag.
+  question_type: mechanism
+  concepts_synonyms_vocabulary:
+    - premature closure
+    - premature category stabilization
+    - categorization bias
+    - schema formation
+    - cognitive closure
+    - institutional isomorphism
+    - template lock-in
+    - boundary object
+    - anchoring bias category formation
+    - sensemaking premature convergence
+    - การปิดหมวดหมู่ก่อนเวลาอันควร
+    - อคติในการจัดหมวดหมู่
+    - การล็อกรูปแบบสถาบัน
+  inclusion_exclusion_rules: >-
+    INCLUDE: sources discussing (a) premature closure / early category-fixing as a cognitive or
+    organizational bias with a described mechanism (not just a named phenomenon), (b)
+    institutional isomorphism / template lock-in where an organizational form gets adopted and
+    then treated as settled before fit is tested, (c) boundary-object / classification-theory
+    work on category stabilization in science & technology studies, (d) Global South or
+    Thailand/SEA empirical cases of institutional template transplantation. EXCLUDE: sources
+    using "premature closure" only in the narrow clinical-diagnosis sense (a specific DSM/medical
+    decision-making literature) with no generalizable mechanism claim; pure marketing/consulting
+    content with no method or citation; sources that only use "category" in a database/software
+    schema sense unrelated to belief/classification stabilization.
+  time_window: '1977-2026 (institutional isomorphism traces to DiMaggio & Powell 1983; category
+    theory in STS traces to Bowker & Star; looser lower bound to admit foundational texts)'
+  language_strategy: 'EN primary; TH searched directly (คำค้นภาษาไทย ผ่าน WebSearch) as the
+    required non-EN language; ID/MY-region search attempted as a second non-EN/Global-South
+    context where EN-language coverage of local cases exists'
+  global_sources:
+    - Google Scholar (via WebSearch)
+    - general web search (WebSearch tool)
+    - Crossref (mechanical metadata)
+    - arXiv
+  local_context_sources:
+    - Thai-language web search (คำค้นภาษาไทย)
+    - Thailand/SEA institutional/organizational-studies grey literature reached via search
+  search_date: '2026-09-05'
+  stopping_rule: >-
+    Stop once >=8 candidate sources are found satisfying: >=2 Thai-language or Thailand/SEA-based
+    or otherwise Global-South, >=1 grey/community source, spanning both a support family (PCS is
+    a real, generalizable, named mechanism) and a challenge family (the phenomenon is domain-bound
+    / not portable) -- or after 3 rounds of query reformulation per family, whichever comes first.
+  conflicts_of_interest: >-
+    None disclosed. Searcher (AI, this session) has no financial or institutional stake in any
+    candidate source. This is a reflexive literature review for the glosa project's own kernel
+    design question (whether to name PCS as a base-hub red-flag); sources are being sought that
+    could disagree with generalizing PCS, not only sources that support it.
+  access_limits: >-
+    No institutional library subscription. Only open-access, preprint, or search-engine-visible
+    abstract/full-text sources can be fetched and read per Rule 17 (own-hands verbatim read,
+    no PDFs beyond pdftotext -l 8); a paywalled source found by search is logged as
+    PAYWALLED_ABSTRACT_ONLY / NOT_OBTAINED rather than silently skipped.
+queries:
+  support:
+    - '"premature closure" category formation cognitive bias mechanism'
+    - 'institutional isomorphism template lock-in organizational studies DiMaggio Powell'
+    - 'categorization bias premature category commitment cognitive science'
+    - 'boundary objects category stabilization science technology studies Bowker Star'
+  challenge:
+    - 'institutional isomorphism critique domain-specific not generalizable organizational theory limits'
+    - 'การปิดหมวดหมู่ก่อนเวลาอันควร อคติในการจัดหมวดหมู่ การตัดสินใจ'
+    - 'institutional template transplantation Southeast Asia organizational reform isomorphism case study'
+    - 'premature closure Klein naturalistic decision making sensemaking category lock-in'
+    - 'การครอบงำรูปแบบสถาบัน isomorphism องค์กรไทย เลียนแบบสถาบัน ต่างประเทศ'
+    - 'development NGO "best practice" template lock-in premature adoption blueprint Global South report'
+sources_found:
+  - cite-glosa-v0-3-q1-001
+  - cite-glosa-v0-3-q1-002
+  - cite-glosa-v0-3-q1-003
+  - cite-glosa-v0-3-q1-004
+  - cite-glosa-v0-3-q1-005
+  - cite-glosa-v0-3-q1-006
+  - cite-glosa-v0-3-q1-007
+prisma_counts: null
+global_track:
+  summary: >-
+    A genuine, real scholarly conversation exists on both sides, but it turns out to run through
+    organizational sociology/STS rather than through any literature already using the term
+    "Premature Category Stabilization" (no such term was found used as-is anywhere in this
+    search). SUPPORT: institutional isomorphism theory (DiMaggio & Powell 1983) independently
+    documents the identical structural pattern -- initial diversity collapsing into field-wide
+    homogenization via named, portable mechanisms -- across half a dozen unrelated domains
+    (publishing, legal education, hospitals, schools, radio, high culture), and classification
+    theory (Bowker & Star 1999) supplies a decades-old, general cross-domain vocabulary
+    (boundary objects, category invisibility, closure-on-contention) for exactly this kind of
+    phenomenon. CHALLENGE: a clinical-cognition paper (Al Essa et al. 2026) shows "premature
+    closure" already has a narrower, empirically-tested, domain-specific meaning in medical
+    diagnosis that should not be silently merged with an organizational-template sense without
+    saying so; a philosophy-of-organizational-theory paper argues institutional isomorphism is
+    itself a "closed theory" whose domain can only be narrowed, not freely extended, by newer
+    constructs -- a direct methodological objection to naming PCS as a kernel-level
+    generalization on the strength of three convergent case studies alone.
+  strength_note: >-
+    No source found tests "Premature Category Stabilization" by that name or as glosa's specific
+    tri-domain construct (tourism/hilal/service-template); the global literature establishes
+    close structural analogues (isomorphism, classification stabilization) and a real
+    methodological objection to over-generalizing them, rather than testing Q1's exact claim.
+    Evidence tier for the surrounding premises: Dr (well-specified peer-reviewed conceptual/
+    empirical claims, not independently replicated by this search).
+local_track:
+  summary: >-
+    No Thai-language source was found that discusses category/institutional-template
+    stabilization in a form usable for Q1 (Thai-language queries surfaced only general
+    decision-making self-help content, excluded per the frozen inclusion/exclusion rule). Two
+    Global South/Southeast Asia English-language empirical sources were found instead: a Lao PDR
+    university-governance case (Springer, Higher Education) showing an imported governance
+    template was formally stabilized in regulation while actual decision-making power stayed
+    decoupled from it -- complicating a purely "closed-too-early" framing of PCS with a
+    formal-vs-substantive distinction; and an ASEAN regional-institutions case (Cambridge, TRaNS)
+    showing template/category adoption ("modular adoption") can produce "substantial innovation
+    and success" when conducted consistently, directly challenging an unqualified
+    template-stabilization-is-bad framing. One grey/community source (NextBillion.net, a
+    development-sector trade-press opinion piece) was also kept as a Global-South-facing
+    illustration of template lock-in in NGO funding practice, at Open (not Dr) evidence tier.
+  result: FOUND
+transfer_verdict: TRANSFERS_WITH_ADAPTATION
+  # The organizational-isomorphism/classification-theory mechanism plausibly transfers to Q1's
+  # tourism/hilal/service-template setting (the underlying structural pattern -- early diversity
+  # collapsing into a stabilized category/template via a nameable mechanism -- is not shown to be
+  # culture- or sector-specific), and the SEA/Global-South cases found (Laos, ASEAN) confirm the
+  # broad pattern recurs in a non-Global-North setting; but no source tests glosa's own PCS
+  # construct directly, and two sources (the closed-theory critique, the ASEAN success case)
+  # actively push back against an unqualified generalization, so this is an adaptation-with-
+  # caveats verdict, not a direct-transfer finding.
+summary_disclaimer: >-
+  This is a SCOPING_SEARCH (not a systematic review): 7 sources kept from 10 queries across 2
+  query families (support/challenge, including 2 Thai-language queries) and one search episode
+  (2026-09-05). WAS found: (a) a foundational cross-domain theory (institutional isomorphism)
+  and a foundational cross-domain vocabulary (classification/boundary-object theory) that closely
+  match the structural shape of Q1's PCS pattern; (b) a direct methodological objection to
+  extending a domain-bound theory/term into new domains without independent justification; (c)
+  two Global South/SEA empirical cases (Laos, ASEAN) showing the pattern recurs outside the
+  Global North but with important complications (formal/substantive decoupling; successful,
+  non-premature template adoption); (d) one grey/community illustration from development-sector
+  trade press. NOT found: any source using "Premature Category Stabilization" by that name; any
+  source that tests glosa's own tri-domain (tourism/hilal/service-template) construct directly;
+  any Thai-language source on-topic for this question despite two dedicated Thai-language query
+  attempts (this is a real local-context gap, not evidence against Q1 -- absence of a Thai
+  source is a search-coverage fact, not a verdict on PCS itself, NC-27).

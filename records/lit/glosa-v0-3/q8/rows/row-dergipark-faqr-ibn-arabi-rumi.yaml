@@ -1,0 +1,27 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: Q8
+source_label: "Journal of the Institute for Sufi Studies (dergipark.org.tr), \"Spiritual poverty - heavenly riches: some reflections on faqr in the teachings of Ibn 'Arabi and Rumi\""
+how_it_sees_the_problem: >-
+  Frames faqr as a "cosmic ontological principle" (per the abstract) about created beings'
+  moment-by-moment contingent dependence, but frames that dependence's whole point as grounding
+  "praise and the celebration of Divine bounty" -- i.e. the ontological content and the
+  devotional/theological function are presented as one thing, not two separable layers.
+what_it_separates: >-
+  Separates voluntary poverty (an ascetic practice) from "true poverty of spirit" (the
+  ontological condition all beings already share) -- a distinction relevant to Q8's five
+  registers of faqr -- but does not separate the ontological claim itself from its theological
+  addressee (God) anywhere in the abstract read.
+what_it_assumes: >-
+  Assumes Ibn 'Arabi's and Rumi's own textual framing (via a story from Ismail Hakki Bursevi) is
+  the right lens; this card reflects an abstract-level read only (the full PDF was not fetched
+  this session), so deeper argumentative structure is not captured here.
+stance: "NO"
+what_it_would_say_against_us: >-
+  Directly: this peer-reviewed treatment of faqr's own content states the ontological claim
+  (contingent dependence) IS the ground of a devotional relation (praise, Divine bounty), not a
+  neutral structural fact dressed in devotional language on top -- weighing against extracting
+  the five registers of faqr into a theology-neutral ontology-section primitive.
+citation_card: cite-glosa-v0-3-q8-007
+verified:
+  metadata_verified: true
+  claim_match_verified: true

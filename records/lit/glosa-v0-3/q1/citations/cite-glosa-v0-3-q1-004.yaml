@@ -1,0 +1,54 @@
+$schema: citation_card.schema.json
+id: cite-glosa-v0-3-q1-004
+claim_ref: Q1
+identifier:
+  kind: DOI
+  value: 10.7551/mitpress/6352.001.0001
+fetch_status: FETCHED
+fetched_at: '2026-09-05'
+metadata_verified: true
+metadata_verified_by: mechanical:crossref
+metadata_verified_at: '2026-09-05'
+claim_match_verified: true
+claim_match_verified_by: route:I0
+claim_match_verified_at: '2026-09-05'
+exact_passage: >-
+  The formal, bureaucratic ones trail behind them the entourage of permits, forms, numerals, and
+  the sometimes-visible work of people who adjust them to make organizations run smoothly.
+page_or_locator: Introduction, "To Classify Is Human," p.3 (Bowker & Star, Sorting Things Out,
+  MIT Press, 1999)
+line_or_paragraph: 2nd paragraph of the Introduction section, sentence following the opening
+  claim that classifications are "ordinarily invisible"
+scope: DIRECT_QUOTATION
+evidence_tier: Dr
+independence_class: I0
+who_verified: I0 (this session, same-session read; no cross-vendor or independent human check
+  has run yet)
+verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
+status: METADATA_OK
+xenon_ledger_ref: null
+disclosure: >-
+  I0 only (same session, not independently checked). Title/authors/publisher/DOI confirmed
+  mechanically via Crossref bibliographic search ("Sorting Things Out Classification and Its
+  Consequences Bowker Star"), which returned the MIT Press monograph DOI
+  10.7551/mitpress/6352.001.0001. Full text of the entire book was not obtained (behind
+  copyright, no full open-access edition located); instead the openly hosted Introduction
+  excerpt PDF at museumofdata.org (a data-museum educational resource, not the publisher) was
+  fetched and read via `pdftotext -l 8` (first 8 pages), which covers pp.1-4+ of the book's own
+  Introduction chapter. The exact_passage is quoted verbatim from that extracted text (minor
+  hyphenation/line-wrap artifacts from the PDF's justified typesetting are visible elsewhere in
+  the same extraction but this particular sentence extracted cleanly). This source SUPPORTS Q1's
+  premise that category/classification stabilization is a real, named, cross-domain phenomenon
+  independent of subject matter: Bowker & Star's foundational STS argument is explicitly that
+  classification systems (medical, legal, technical, bureaucratic alike) become embedded,
+  taken-for-granted infrastructure that "trails behind" formal decisions and becomes visible again
+  only when it "breaks down or become[s] objects of contention" -- directly analogous to Q1's PCS
+  pattern of a category fixed before it should be, then treated as settled.
+superseded_by: null
+notes: >-
+  Global North (authors at University of Illinois / UC San Diego at time of writing), EN,
+  peer-reviewed academic monograph (MIT Press, "Inside Technology" series), foundational text in
+  science & technology studies / classification theory. Found via query family: support
+  ('boundary objects category stabilization science technology studies Bowker Star').
+  Dialogue-table stance: YES (supports Q1's generalization premise).
+fetched_from_url: https://museumofdata.org/wp-content/uploads/2019/03/Bowker_and_Star_-_Sorting_Things_Out_Intro.pdf

@@ -1,0 +1,33 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: Q4
+source_label: "Adams RJ, Smart P, Huff AS (2016/2017), Shades of Grey: Guidelines for Working with
+  the Grey Literature in Systematic Reviews for Management and Organizational Studies
+  (International Journal of Management Reviews)"
+how_it_sees_the_problem: >-
+  Frames the problem historically/disciplinarily: management and organization studies (MOS)
+  systematic reviews inherited grey-literature inclusion practice piecemeal, and this paper
+  reviews 140 prior systematic reviews to work out why grey material is included or excluded and
+  how it is currently treated, in order to propose updated, more explicit guidelines.
+what_it_separates: >-
+  Separates the historical/ad-hoc treatment of grey literature in MOS systematic reviews (the
+  status quo the paper reviews) from a proposed, more systematic and explicit set of guidelines
+  (the paper's contribution) -- the same before/after distinction Q4's proposed intake rule would
+  create for glosa if adopted.
+what_it_assumes: >-
+  Assumes 140 systematic reviews in academic and practitioner outlets are a representative window
+  onto MOS review practice; is scoped to management/organization studies specifically, not to
+  glosa's own citation-card intake mechanics or to policy briefs as a distinct genre -- transfer
+  to Q4 is by structural analogy (a field noticing an intake-practice gap and building explicit
+  guidance to close it), not direct subject-matter overlap.
+stance: "YES"
+what_it_would_say_against_us: >-
+  It would not defeat Q4, but it would caution that "more inclusive" was this paper's own stated
+  goal (responding to criticisms that reviews under-use grey literature) -- if glosa's new
+  flag-and-request-tier rule functions in practice as a gatekeeping step that silently excludes
+  more policy-brief-style sources rather than surfacing them for explicit handling, that would
+  run against the direction this paper argues management scholarship should move (toward more,
+  not less, considered use of grey material).
+citation_card: cite-glosa-v0-3-q4-006
+verified:
+  metadata_verified: true
+  claim_match_verified: true

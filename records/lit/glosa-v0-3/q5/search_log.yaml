@@ -1,0 +1,179 @@
+$schema: search_log.schema.json
+id: search-glosa-v0-3-001
+claim_or_hypothesis_ref: Q5
+search_mode: SCOPING_SEARCH
+frozen_scope:
+  hypothesis_or_falsifier: >-
+    Q5 (DESIGN/NORMATIVE): Should "frozen preregistration before ethics, before data" become
+    a hard glosa gate rule (FOUNDATION §2.1a problem-before-observation / §7.3 Bounded-Judge
+    Law), and what minimal card-schema field (a timestamp-before field, e.g. a
+    protocol_frozen_at / preregistration_timestamp that must sequence strictly before both
+    ethics_approved_at and first_data_observed_at) is needed to check it mechanically?
+    Falsifier: the world literature on preregistration, Registered Reports, and research-ethics
+    timing shows that (a) mandating protocol-freeze strictly BEFORE ethics approval is not
+    actually how any real Registered-Reports or preregistration workflow sequences things
+    (ethics approval routinely precedes or is decoupled from the registry timestamp, or the
+    reverse order is shown to be unworkable/harmful in practice), or (b) a single
+    timestamp-before field cannot actually be checked/verified from real registry outputs
+    (OSF/AsPredicted/journal RR timestamps are not reliably comparable to IRB/REC approval
+    dates), which would mean a hard glosa gate keyed on that field would be either
+    unenforceable or would misdescribe the methodology it claims to enforce.
+  question_type: mechanism
+  concepts_synonyms_vocabulary:
+    - preregistration timestamp
+    - Registered Reports (Stage 1 protocol, in-principle acceptance)
+    - frozen protocol deposit / time-stamped protocol
+    - IRB approval date / research ethics committee (REC) approval date
+    - protocol registration before data collection
+    - study registry (OSF Registries, AsPredicted, ClinicalTrials.gov, PROSPERO)
+    - p-hacking / HARKing (hypothesizing after results known) prevention
+    - "การจดทะเบียนล่วงหน้าก่อนขออนุมัติจริยธรรม"
+    - คณะกรรมการจริยธรรมการวิจัยในมนุษย์ (IRB/REC ไทย)
+    - pre-analysis plan (PAP) timing relative to ethics/IRB approval
+    - registration-to-publication timestamp audit / preregistration verification
+  inclusion_exclusion_rules: >-
+    INCLUDE: any source (peer-reviewed methodology article, preprint, registry policy
+    document, journal Registered Reports policy, funder/regulator preregistration
+    guidance, grey-literature methods commentary, community/blog piece from a
+    working researcher or open-science practitioner, Thai or SEA research-ethics
+    guidance) that discusses (a) the actual sequencing of protocol
+    registration/freeze relative to ethics/IRB approval and to first data
+    collection/observation, or (b) whether a single machine-checkable timestamp
+    field is sufficient/practical evidence of that sequencing. EXCLUDE: sources
+    purely about preregistration's effect on publication bias or effect-size
+    inflation with no timing/sequencing-mechanism angle; sources about
+    post-hoc/exploratory-analysis best practice with no registration-timestamp
+    dimension; paywalled sources reachable only by abstract are logged as
+    PAYWALLED_ABSTRACT_ONLY (scope restricted to CONTEXT_ONLY_NOT_EVIDENCE, never
+    quoted beyond the abstract). This is a SCOPING_SEARCH (not systematic): goal is
+    a representative, stratified spread of neighbour positions, not exhaustive
+    methodology-literature coverage.
+  time_window: '2013-2026 (Registered Reports format formalized ~2013 (Chambers);
+    OSF Registries and COS TOP Guidelines era 2015-2018; Thai NECAST/NRCT
+    human-subjects preregistration guidance and COVID-era registry-audit
+    literature concentrated 2020-2026)'
+  language_strategy: >-
+    EN primary; TH required (at least 2 Thai-language or Thailand/SEA-based
+    sources per task instruction, covering how Thai research-ethics committees or
+    Thai funders frame protocol-registration-before-approval, or Thai-language
+    open-science/preregistration guidance); one additional non-EN/Global-South
+    angle sought via an EN-language source reporting on non-EN/non-TH contexts
+    (e.g. a Global-South clinical-trial-registry timing audit, or an African/South
+    Asian research-integrity discussion of registration-vs-ethics-approval order)
+    rather than requiring a third search language directly.
+  global_sources:
+    - Google Scholar / general web search proxy (no institutional Scopus/WoS
+      access in this session)
+    - Center for Open Science (OSF Registries, TOP Guidelines) primary
+      policy/help pages reachable via web search
+    - PubMed / Europe PMC (clinical-trial-registry and Registered-Reports
+      methodology venues)
+    - arXiv / preprint servers (meta-science and open-science preprints)
+    - >-
+      General web (grey-literature entry points: journal Registered-Reports
+      policy pages, ClinicalTrials.gov / PROSPERO / WHO ICTRP registry policy
+      text, open-science practitioner blogs)
+  local_context_sources:
+    - Thai National Research Council of Thailand (วช./NRCT) or Thai human-subjects
+      research-ethics guidance reachable via web search
+    - ThaiJo (Thai Journals Online) reachable via web search, for Thai
+      research-methodology or clinical-trial-registry articles on
+      preregistration-vs-ethics-approval sequencing
+    - Thailand/SEA-based open-science or research-integrity commentary reachable
+      via web search, restricted to .th domains and Thai-language queries where
+      useful
+  search_date: '2026-09-05'
+  stopping_rule: >-
+    Stop once at least 8 distinct candidate sources have been logged spanning: at
+    least 2 Thai-language or Thailand/SEA-based sources, at least 2 Global-South
+    sources (Thailand/SEA counts toward this), at least 1 grey/community source,
+    and at least one source in the "challenge" query family (a source arguing
+    strict protocol-freeze-before-ethics-approval sequencing is not how real
+    Registered Reports/preregistration workflows operate, or is impractical) --
+    whichever of these strata comes last determines when the search actually
+    stops. This is a SCOPING_SEARCH, not an exhaustive systematic/regulatory
+    review; a small_n stopping rule, disclosed as such.
+  conflicts_of_interest: >-
+    None disclosed. The founder (Yaoharee Lahtee) is not an author, reviewer,
+    registry operator, or funder of any candidate source found in this pass;
+    glosa's own FOUNDATION §2.1a / §7.3 gate design is the object this question
+    informs, not a party to the outside literature being searched.
+  access_limits: >-
+    No institutional library/Scopus/Web-of-Science/JSTOR access in this session
+    -- open-access, registry/funder, preprint, and grey-literature sources only,
+    plus what is reachable via free web search and curl. Paywalled sources
+    reachable only by abstract are logged as PAYWALLED_ABSTRACT_ONLY (scope
+    restricted to SUPPORTS_GENERAL_CLAIM_ONLY / CONTEXT_ONLY_NOT_EVIDENCE, never
+    quoted beyond the abstract) per the secondary-citation ban.
+queries:
+  support:
+    - "Registered Reports Stage 1 protocol timestamp before ethics approval"
+    - "preregistration timestamp verification OSF registry before data collection"
+    - "การจดทะเบียนงานวิจัยล่วงหน้า จริยธรรมการวิจัยในมนุษย์ ประเทศไทย"
+    - "clinical trial registration date before IRB approval date audit Africa Asia"
+  challenge:
+    - "preregistration after IRB approval sequencing not required registered reports"
+    - "preregistration timestamp cannot be verified registry gaming spin"
+sources_found:
+  - cite-glosa-v0-3-q5-001
+  - cite-glosa-v0-3-q5-002
+  - cite-glosa-v0-3-q5-003
+  - cite-glosa-v0-3-q5-004
+  - cite-glosa-v0-3-q5-005
+  - cite-glosa-v0-3-q5-006
+  - cite-glosa-v0-3-q5-007
+  - cite-glosa-v0-3-q5-008
+prisma_counts: null
+global_track:
+  summary: >-
+    Eight candidate sources kept from a scoping (non-exhaustive) web search: the COS/OSF
+    preregistration FAQ (EN) states a "before data collection" timing rule but is silent on
+    ethics-approval timing; the Scientific Reports Registered Reports policy (EN, primary
+    journal-policy text) shows the flagship frozen-protocol methodology actually requires
+    ethics approval BEFORE Stage 1 submission and defers formal registry deposit until AFTER
+    Stage 1 acceptance -- the reverse of a strict freeze-before-ethics order; an India CTRI
+    retrospective-registration audit (EN, peer-reviewed, Global South) shows 63% of a national
+    registry's 2016 cohort was registered after enrolment began (median lag 428 days), empirical
+    evidence that an unenforced timing norm is widely gamed; a Pan-African PACTR descriptive
+    analysis (EN, peer-reviewed, Global South) shows the continental African registry explicitly
+    permits registration before ethics approval is finalised (gated only on recruitment not
+    having started), while 45% of its own registrations are still retrospective relative to
+    enrolment; and the CASRAI preregistration guide (EN, grey/community) and an arXiv NLP
+    preregistration preprint (EN) both push back on a universal hard gate -- the former warns
+    against treating a passed timing check as ethics-substance verification, the latter shows an
+    entire live research field (NLP) has no ethics-approval event to sequence against at all.
+  strength_note: >-
+    No source found tests Q5's exact compound claim (frozen preregistration strictly before
+    BOTH ethics approval and data, as one hard glosa gate) as a single studied proposition --
+    every real working system found (Registered Reports, CTRI, PACTR) treats "before ethics" and
+    "before data" as two separately-enforced conditions, and the two Global-South registries show
+    they can be sequenced in either order in practice, with "before data" being the harder,
+    more-often-violated one. This is a design/normative question the literature bears on
+    indirectly (via how existing registries actually sequence approvals) rather than one any
+    source directly settles either way.
+  small_n_stopping_rule_disclosed: true
+local_track:
+  summary: >-
+    Two Thai-language sources found and read directly: a ThaiJo/TCI-indexed Mahidol R2R
+    e-Journal article on TCTR (Thai Clinical Trials Registry) naming transparency, quality,
+    non-duplication and ethical-reporting correctness as TCTR's institutional purposes (abstract
+    only fetched, logged honestly); and TCTR's own official Help Center "New Study Registration"
+    how-to page, which shows a TCTR record can be drafted ("In Progress") and have its Ethics
+    Review field filled in before the record itself is administratively "Released" -- i.e. a
+    real, currently-operating Thai registry already separates "record drafted/frozen" from "study
+    ethics approved" from "registry's own approval of the filing" as three distinct, independently
+    timestamped events, not two.
+  result: FOUND
+transfer_verdict: TRANSFERS_WITH_ADAPTATION
+summary_disclaimer: >-
+  This is a SCOPING_SEARCH (8 kept candidates from web search, not a systematic review) --
+  support-family queries surfaced the COS/OSF timing FAQ and two Global-South registry-audit
+  studies (India CTRI, Pan-African PACTR) showing both that timing gates are gameable without
+  enforcement and that "before ethics" and "before data" are already treated as separable
+  conditions by real registries; challenge-family queries surfaced the Registered Reports
+  journal-policy text (ethics precedes protocol freeze, not the reverse), the CASRAI guide
+  (preregistration must not be conflated with ethics approval), and an arXiv NLP preprint
+  (an entire research field lacking any ethics-approval event to sequence against). No source
+  directly tests Q5's own proposed compound gate as a single studied claim; absence of a source
+  testing that exact move does NOT mean none exists -- this is a small, non-exhaustive scoping
+  pass, disclosed as such.

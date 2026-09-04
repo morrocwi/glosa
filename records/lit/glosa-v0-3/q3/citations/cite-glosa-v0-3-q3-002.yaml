@@ -1,0 +1,69 @@
+$schema: citation_card.schema.json
+id: cite-glosa-v0-3-q3-002
+claim_ref: Q3
+identifier:
+  kind: OFFICIAL_URL
+  value: https://www.fda.gov/medical-devices/software-medical-device-samd/clinical-decision-support-software-frequently-asked-questions-faqs
+fetch_status: FETCHED
+fetched_at: '2026-09-05'
+metadata_verified: true
+metadata_verified_by: mechanical:curl+html-strip (official fda.gov guidance FAQ page fetched directly)
+metadata_verified_at: '2026-09-05'
+claim_match_verified: true
+claim_match_verified_by: self:same-session-read (I1, NOT independent -- awaiting a decorrelated I3 cross-vendor
+  route to upgrade status to VERIFIED per Rule 17/S14; task instruction caps status at METADATA_OK for
+  this pass)
+claim_match_verified_at: '2026-09-05'
+exact_passage: 'A: Software that is meant to support time-critical decision making does not meet the definition
+  of Non-Device CDS. Often, time sensitive or critical outputs detect life-threatening and/or time critical
+  conditions. In such situations, it is difficult to support that a clinician is not meant to solely rely
+  on a provided recommendation or that the clinician will spend time to understand its specific basis.
+  Therefore, these kinds of software generally cannot meet all the criteria for Non-Device CDS software.'
+page_or_locator: fda.gov, 'Clinical Decision Support Software Frequently Asked Questions (FAQs)', Q3 answer,
+  as fetched 2026-09-05
+line_or_paragraph: line 105 of the fetched/stripped page text
+scope: DIRECT_QUOTATION
+evidence_tier: Dr
+independence_class: I1
+who_verified: same-session AI (I1, non-independent) -- metadata confirmed mechanically, passage read and
+  matched to Q3 by the same session that ran the search; no cross-vendor I3 route run in this pass
+verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
+status: METADATA_OK
+xenon_ledger_ref: null
+disclosure: 'U.S. FDA, Clinical Decision Support Software FAQs (EN, primary regulatory guidance). Fetched
+  and read directly (curl + stdlib HTML stripper for web pages; pdftotext -l 8 for the one PDF source)
+  2026-09-05, one page kept in memory at a time per RAM limit. Read as: Frames the non-device/device boundary
+  as depending on a specific situational criterion -- whether the decision context is time-critical --
+  not on the software''s topic area or a fixed disclaimer string. stance vs Q3 as read: NO. independence_class
+  I1 (same session) -- status METADATA_OK only, not VERIFIED: no decorrelated I3 cross-vendor route has
+  checked this card yet. No novel/first/prior-art claim made about this source; comparison to Q3 is same/different/orthogonal
+  as stated in dialogue_table_stance.'
+superseded_by: null
+notes: 'Diversity: language=en, source_type=grey_literature, geography_or_institution=US, search_route_or_database="web
+  search / direct regulator-site fetch, glosa-v0-3 Q3 scoping pass". dialogue_table_stance: disagrees.
+  what_it_separates: Separates time-critical CDS (cannot be Non-Device CDS, regulated) from non-time-critical
+  CDS meeting all four criteria (can be Non-Device CDS) -- the same underlying software function can fall
+  on either side depending on deployment context. what_it_assumes: Assumes a US regulatory audience already
+  applying the four-criterion Non-Device CDS test; does not address whether the disclaimer WORDING itself
+  needs to vary by context or can stay a fixed reusable string once the regulatory classification is settled.
+  what_it_would_say_against_us: Directly defeats a naive reading of Q3: if the underlying regulatory boundary
+  this disclaimer is supposed to signal shifts with deployment context (time-critical vs not), a single
+  reusable clause text cannot by itself carry that context-dependent classification -- the clause would
+  need to be paired with a context check, not stand alone as boilerplate.'
+citation_card_id: cite-glosa-v0-3-q3-002
+identifier_kind: OFFICIAL_URL
+claim_match_verification_route: NOT_YET
+retraction_check: UNCHECKED
+version_status: PUBLISHED
+dialogue_table_stance: disagrees
+diversity:
+  language: en
+  discipline_or_tradition: health/AI regulation and disclaimer practice
+  source_type: grey_literature
+  search_route_or_database: web search / direct regulator-site fetch, glosa-v0-3 Q3 scoping pass
+  geography_or_institution: US
+  venue_quality_index:
+    index_name: null
+    value: null
+    date_read: null
+fetched_from_url: https://www.fda.gov/medical-devices/software-medical-device-samd/clinical-decision-support-software-frequently-asked-questions-faqs

@@ -1,0 +1,26 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: Q5
+source_label: 'TCTR Help Center, "03: การลงทะเบียนงานวิจัยใหม่" (New Study Registration), tctr.tawk.help
+  (TH, grey/community operational documentation)'
+how_it_sees_the_problem: TCTR's own registration record has an "Ethics Review" field the researcher
+  fills in while the record is still "In Progress" -- a record can be drafted before a committee has
+  approved the underlying study, then moves to "Submitted for Approval" and only becomes "Released"
+  (assigned a registration number) once TCTR's own committee approves the FILING, a step separate from
+  the study's own IRB/ethics-committee approval.
+what_it_separates: Separates TCTR's own record-workflow states (In Progress / Submitted for Approval /
+  Released) from the underlying study's own IRB/ethics committee approval -- two different approval
+  events with two different timestamps, exactly the distinction a minimal schema field needs to keep
+  straight.
+what_it_assumes: Assumes a researcher-facing UI walkthrough is representative of what the registry
+  actually enforces on the backend; does not itself state that Ethics Review data is validated against
+  an independent ethics-committee record before Release.
+stance: "YES"
+what_it_would_say_against_us: If glosa's hard gate only distinguishes "protocol frozen" from "ethics
+  approved," it is missing a third clock this real registry already tracks separately -- the registry's
+  OWN administrative approval of the filing (Released) is not the same event as the underlying study's
+  ethics-committee approval, and conflating them in a two-field schema would misdescribe how an actual
+  working registry sequences things.
+citation_card: cite-glosa-v0-3-q5-006
+verified:
+  metadata_verified: true
+  claim_match_verified: true

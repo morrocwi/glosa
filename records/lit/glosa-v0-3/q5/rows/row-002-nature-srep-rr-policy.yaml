@@ -1,0 +1,21 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: Q5
+source_label: Scientific Reports (Springer Nature), Registered Reports journal policy page (EN, primary,
+  nature.com/srep/journal-policies/registered-reports)
+how_it_sees_the_problem: In this real, currently-operating Registered Reports workflow, ethics approval
+  must already be in place at the moment of Stage 1 (protocol-freeze) submission, and formal registry
+  deposit of the approved protocol happens only AFTER Stage 1 acceptance in principle.
+what_it_separates: Separates the Stage 1 manuscript submission (requires ethics already in place) from
+  the formal repository registration of the approved protocol (happens only after Stage 1 acceptance
+  in principle) -- two distinct freeze-like events, neither "before ethics" in Q5's proposed sense.
+what_it_assumes: Assumes a journal-mediated peer-review gate exists between drafting a protocol and its
+  formal registry deposit; does not address glosa's own self-service, no-external-journal workflow.
+stance: "NO"
+what_it_would_say_against_us: A hard glosa gate requiring the timestamp-before field to read
+  protocol_frozen_at < ethics_approved_at would misdescribe how the flagship Registered Reports format
+  itself actually sequences things -- citing Registered Reports as precedent for "freeze strictly
+  before ethics" would be a same/different mismatch, not a same-claim citation.
+citation_card: cite-glosa-v0-3-q5-002
+verified:
+  metadata_verified: true
+  claim_match_verified: true

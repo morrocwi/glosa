@@ -1,0 +1,23 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: Q7
+source_label: Wikipedia, 'Actual and potential infinity' (EN, community-maintained reference)
+how_it_sees_the_problem: Aristotle rejects actual infinity on a magnitude/coherence argument (nothing can
+  be "bigger than the heavens") -- explicitly NOT a theological or transcendence argument, and mathematics
+  does not need actual infinity to function.
+what_it_separates: Separates infinite MAGNITUDE (actual infinity, rejected as incoherent) from infinite
+  PROCESS (potential infinity, accepted and sufficient for mathematics) -- a purely mathematical/logical
+  separation with no transcendence category at all.
+what_it_assumes: Assumes "infinite" primarily means a magnitude or a completed collection; does not consider
+  infinity as an attribute of a non-spatial, non-quantitative Absolute (the theological move Q7 asks about)
+  as even a candidate reading.
+stance: 'NO'
+what_it_would_say_against_us: The single most influential ancient argument about infinity in mathematics
+  settles the actual/potential question on purely magnitude-and-coherence grounds, never invoking or requiring
+  a transcendent ground -- this suggests the transcendental-ground reading of infinity is a SEPARATE tradition
+  (theological/Neoplatonist) layered onto the mathematical debate, not something the mathematical debate
+  itself generates or needs, which argues for treating Q7's stance as an adjacent tension to flag rather
+  than a rival the core mathematical-infinity discourse must reconcile with.
+citation_card: cite-glosa-v0-3-q7-001
+verified:
+  metadata_verified: true
+  claim_match_verified: true

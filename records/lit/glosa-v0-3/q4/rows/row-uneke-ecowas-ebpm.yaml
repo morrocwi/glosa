@@ -1,0 +1,35 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: Q4
+source_label: "Uneke CJ, Sombie I, Johnson E, Uneke BI, Okolo S (2020), Promoting the use of
+  evidence in health policymaking in the ECOWAS region: the development and contextualization of
+  an evidence-based policymaking guidance (Globalization and Health)"
+how_it_sees_the_problem: >-
+  Frames "evidence for policy" from the demand side, as the West African Health Organisation's own
+  guidance-development process defines it for 15 West African countries -- a deliberately broad
+  concept assembled from a literature review plus direct consultation with policymakers, not a
+  narrow, gradable research-evidence definition.
+what_it_separates: >-
+  Separates graded scientific evidence (research, quantitative/statistical data) from a wider
+  penumbra of legitimately usable policy evidence (economic, attitudinal, behavioural, anecdotal
+  information, expert judgement, insight/experience, local knowledge and culture) -- a
+  separation Q4's proposed rule needs to make explicit if it is not to treat all ungraded content
+  as automatically suspect.
+what_it_assumes: >-
+  Assumes policymakers and health-system practitioners in West Africa legitimately draw on this
+  wider evidence base as a matter of practice, not error; does not address glosa's specific
+  citation-intake mechanics or propose any flag-and-request-tier step -- it is a guidance
+  document about the policymaking process itself, not about how a third party should intake or
+  cite policy documents.
+stance: "NO"
+what_it_would_say_against_us: >-
+  Directly: if glosa's new intake rule treats "no declared claim-tier" as inherently a red flag
+  requiring the source to be challenged before ingestion, that risks misreading how policy-facing
+  evidence is meant to work in institutions like WAHO/ECOWAS -- anecdotal, expert, and local
+  knowledge are admitted evidence for policy by design, not gaps. A blanket flag-and-request-tier
+  rule could over-police exactly the kind of source this Global South regional body considers
+  legitimate, unless the rule is scoped to glosa's own claim-verification needs rather than to
+  policy-evidence legitimacy generally.
+citation_card: cite-glosa-v0-3-q4-004
+verified:
+  metadata_verified: true
+  claim_match_verified: true

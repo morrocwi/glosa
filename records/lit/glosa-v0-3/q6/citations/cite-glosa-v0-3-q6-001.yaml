@@ -1,0 +1,76 @@
+$schema: citation_card.schema.json
+id: cite-glosa-v0-3-q6-001
+claim_ref: Q6
+identifier:
+  kind: OFFICIAL_URL
+  value: https://en.wikipedia.org/wiki/Wikipedia:Weasel_words
+fetch_status: FETCHED
+fetched_at: '2026-09-05'
+metadata_verified: true
+metadata_verified_by: mechanical:curl+html-strip (Wikipedia Manual of Style page fetched directly; page
+  redirects internally from the 'Weasel words' shortcut to 'Manual of Style/Words to watch', title and
+  section confirmed on the fetched page)
+metadata_verified_at: '2026-09-05'
+claim_match_verified: true
+claim_match_verified_by: self:same-session-read (I1, NOT independent -- awaiting a decorrelated I3 cross-vendor
+  route to upgrade status to VERIFIED per Rule 17/S14; task instruction caps status at METADATA_OK for
+  this pass)
+claim_match_verified_at: '2026-09-05'
+exact_passage: Weasel words are words and phrases aimed at creating an impression that something specific
+  and meaningful has been said, when in fact only a vague or ambiguous claim has been communicated. A
+  common form of weasel wording is through vague attribution, where a statement is dressed with authority,
+  yet has no substantial basis.
+page_or_locator: en.wikipedia.org, 'Wikipedia:Manual of Style/Words to watch' (redirected from 'Wikipedia:Weasel
+  words'), section 'Unsupported attributions', as fetched 2026-09-05
+line_or_paragraph: line 317 of the fetched/stripped page text
+scope: DIRECT_QUOTATION
+evidence_tier: Dr
+independence_class: I1
+who_verified: same-session AI (I1, non-independent) -- metadata confirmed mechanically, passage read and
+  matched to Q6 by the same session that ran the search; no cross-vendor I3 route run in this pass
+verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
+status: METADATA_OK
+xenon_ledger_ref: null
+disclosure: 'Wikipedia, ''Manual of Style/Words to watch'' (EN, community-maintained editorial policy/reference).
+  Fetched and read directly (curl + stdlib HTML stripper for web pages; pdftotext -l 8 for the one PDF
+  source) 2026-09-05, one page kept in memory at a time per RAM limit. Read as: Names ''vague attribution''
+  as the general pattern: a statement dressed with authority (an implied source, method, or backing) with
+  no substantial basis given -- the closest existing NAMED pattern to Q6''s proposed ''claims verifiable
+  with no stated procedure'' red flag, but broader (covers any unsupported authority claim, not specifically
+  ''verifiability'' claims). stance vs Q6 as read: ORTHOGONAL. independence_class I1 (same session) --
+  status METADATA_OK only, not VERIFIED: no decorrelated I3 cross-vendor route has checked this card yet.
+  No novel/first/prior-art claim made about this source; comparison to Q6 is same/different/orthogonal
+  as stated in dialogue_table_stance.'
+superseded_by: null
+notes: 'Diversity: language=en, source_type=grey_literature, geography_or_institution=US (global reference),
+  search_route_or_database="web search / direct fetch, glosa-v0-3 Q6 scoping pass". dialogue_table_stance:
+  orthogonal. what_it_separates: Separates statements that ARE attributed to a specific, checkable source
+  from statements dressed with vague authority (''some critics'', ''it is widely held'', by extension
+  ''this is verifiable'') that give the appearance of backing without a checkable source. what_it_assumes:
+  Assumes a human editor reading prose and judging attribution strength case by case; does not propose
+  a mechanical/schema-level flagging rule the way Q6 does, and does not single out the word ''verifiable''
+  specifically -- it covers a broader family of authority-dressing language. what_it_would_say_against_us:
+  This existing, decades-old named pattern (''vague attribution'' / weasel words) already covers most
+  of what Q6''s narrower proposal would catch -- ''claims verifiable with no stated procedure'' is one
+  specific instance of vague attribution (attributing backing to an implied verification method rather
+  than an implied source). Citing Q6 as a wholly NEW pattern would overstate its novelty; the honest framing
+  is a narrower, named sub-case of an existing broader pattern, which argues for extending glosa''s existing
+  disclaimer catalogue entry (if one already tracks vague attribution) rather than adding an unrelated
+  new one.'
+citation_card_id: cite-glosa-v0-3-q6-001
+identifier_kind: OFFICIAL_URL
+claim_match_verification_route: NOT_YET
+retraction_check: UNCHECKED
+version_status: PUBLISHED
+dialogue_table_stance: orthogonal
+fetched_from_url: https://en.wikipedia.org/wiki/Wikipedia:Weasel_words
+diversity:
+  language: en
+  discipline_or_tradition: epistemic hedging / verifiability / disclaimer-catalogue design
+  source_type: grey_literature
+  search_route_or_database: web search / direct fetch, glosa-v0-3 Q6 scoping pass
+  geography_or_institution: US (global reference)
+  venue_quality_index:
+    index_name: null
+    value: null
+    date_read: null

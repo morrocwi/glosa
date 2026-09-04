@@ -1,0 +1,30 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: Q8
+source_label: "الاقتصادية (aleqt.com), \"الكسب و'خلق الأفعال' عند الأشاعرة\" (2009-05-27)"
+how_it_sees_the_problem: >-
+  Frames kasb (acquisition, the Ash'ari construct closest to Q8's "Dependent Order") from within
+  Arabic intellectual/media culture itself as a historically contested, proverbially obscure
+  doctrine -- not a settled, well-specified mechanism -- citing the classical Arabic saying that
+  something notoriously unclear is "more hidden than the Ash'arite kasb" (أخفى من كسب
+  الأشعرية).
+what_it_separates: >-
+  Separates the DOCTRINE's stated purpose (reconciling divine sole-agency with human moral
+  responsibility) from its actual philosophical clarity (which the article says the Ash'arites
+  themselves could never pin down, retreating stage by stage toward Mu'tazilite and even
+  philosopher positions) -- a purpose-vs-clarity gap Q8 must address before claiming kasb has a
+  well-specified structure to export.
+what_it_assumes: >-
+  Assumes the reader already has background in the free-will/predestination debate in Islamic
+  theology; is a general-audience newspaper opinion piece (not peer-reviewed), so its own
+  historical claims about al-Baqillani/Mu'tazila are asserted rather than fully sourced within
+  the article itself.
+stance: "NO"
+what_it_would_say_against_us: >-
+  Directly: before asking whether kasb/Dependent Order has a portable NON-theological analogue,
+  this source says the construct is not even well-specified WITHIN its own theological tradition
+  -- proverbially "more hidden" than any other Ash'ari doctrine -- so any structural extraction
+  risks exporting an ambiguity rather than a clean mechanism.
+citation_card: cite-glosa-v0-3-q8-005
+verified:
+  metadata_verified: true
+  claim_match_verified: true

@@ -1,0 +1,30 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: Q2
+source_label: "Chakravorti, Koneru & Rajtmajer 2024, Reproducibility, Replicability, and Transparency in Research: What 430 Professors Think in Universities across the USA and India (arXiv:2402.08796)"
+how_it_sees_the_problem: >-
+  Frames the problem as culturally and institutionally situated: reproducibility/replicability
+  attention and incentive alignment are not uniform across countries or disciplines, so a
+  solution designed and validated in one setting (typically US/EU) is not automatically the
+  right or sufficient solution elsewhere.
+what_it_separates: >-
+  Separates a UNIVERSAL mechanism claim (any given intervention "solves" reproducibility) from a
+  CULTURALLY-CENTERED one (interventions must account for regional and domain-specific
+  incentive/resource context) -- directly relevant to whether Q2's clause, if formalized, should
+  be stated as a universal kernel rule or one that names its own scope conditions.
+what_it_assumes: >-
+  Assumes a 430-professor self-report survey (US and India universities) captures real
+  differences in attention/incentive rather than only differences in survey response framing;
+  does not study or mention claim cards, badges, or Registered Reports specifically -- it is
+  about the general reproducibility-culture gap, not any one certification-substitute mechanism.
+stance: ORTHOGONAL
+what_it_would_say_against_us: >-
+  Would caution against formalizing Q2's clause as a universal, context-free kernel rule: if
+  incentive misalignment and resource constraints differ meaningfully by country/institution (as
+  this survey finds between the USA and India), a claim-card mechanism validated only in this
+  workspace's own Thai/founder-specific setting has not been shown to transfer to other
+  standalone-scholar contexts without adaptation -- an argument for keeping the clause scoped
+  or [Open] pending broader testing, rather than declaring it solved everywhere.
+citation_card: cite-glosa-v0-3-q2-004
+verified:
+  metadata_verified: true
+  claim_match_verified: true

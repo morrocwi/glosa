@@ -1,0 +1,32 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: Q4
+source_label: "Tyndall J (2010), AACODS checklist for appraising grey literature (Flinders
+  University, grey/institutional checklist)"
+how_it_sees_the_problem: >-
+  Frames the problem as: any single grey-literature item, regardless of type (thesis, conference
+  paper, report, or "secondary material" like a policy brief), can be evaluated by a reviewer
+  applying six fixed criteria (Authority, Accuracy, Coverage, Objectivity, Date, Significance)
+  without needing the source itself to have declared any tier or methodology up front.
+what_it_separates: >-
+  Separates primary grey material from secondary grey material (explicitly naming "a policy
+  brief of a technical report" as the example of the latter) and instructs the reviewer, for
+  secondary material, to trace back to the original and judge whether the interpretation is
+  accurate and unbiased -- a trace-to-original step distinct from Q4's proposed
+  flag-and-request-tier step.
+what_it_assumes: >-
+  Assumes the reviewer (not the source) does the appraisal work and that a checklist-based,
+  criterion-by-criterion judgment (yes/no/unclear per item) is sufficient without needing the
+  source to self-declare an evidence tier; does not propose pausing intake to request a
+  declaration from the source's author.
+stance: "NO"
+what_it_would_say_against_us: >-
+  Directly: this is a widely-used, generic tool that already names "a policy brief" as its
+  worked example for undeclared/secondary grey material, and its answer is "trace it to the
+  original and judge accuracy yourself" -- not "flag and request the source declare a tier
+  before use." If glosa adopts AACODS or an equivalent checklist as part of standard intake, a
+  distinct new flag-and-request-tier rule for policy briefs specifically would duplicate a
+  mechanism this checklist already provides in general form.
+citation_card: cite-glosa-v0-3-q4-005
+verified:
+  metadata_verified: true
+  claim_match_verified: true

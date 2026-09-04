@@ -1,0 +1,25 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: Q5
+source_label: Ndwandwe et al. 2022, "Practices and trends in clinical trial registration in the Pan
+  African Clinical Trials Registry (PACTR)", BMJ Open 12:e057474 (PMC8796231)
+how_it_sees_the_problem: The continental African trial registry PACTR explicitly permits registration
+  to happen BEFORE ethics approval is granted, gated only on recruitment not having started -- i.e.
+  freeze-before-ethics is already an accepted, working sequence there, while 45% of trials are still
+  registered retrospectively relative to enrolment, so freeze-before-data remains the harder-to-enforce
+  half.
+what_it_separates: Separates "registered before ethics approval is finalised" (explicitly permitted,
+  gated on recruitment not yet starting) from "registered before data collection/recruitment" (the
+  harder norm, still failing in 45% of registered trials) -- Q5's compound rule bundles two
+  separately-enforceable conditions PACTR's own policy already treats as distinct.
+what_it_assumes: Assumes a registry staff verification step exists to check ethics documents after the
+  fact -- i.e. the timestamp field alone is not self-enforcing even where it exists.
+stance: "YES"
+what_it_would_say_against_us: If glosa's hard gate demands protocol_frozen_at strictly BEFORE
+  ethics_approved_at as a blocking precondition, that is stricter than what the largest working African
+  trial registry actually requires (only that ethics has been applied for, not yet granted, verified
+  post hoc) -- the minimal schema field should record both timestamps and let a checker flag the
+  compound violation, not hard-block on ethics timing alone.
+citation_card: cite-glosa-v0-3-q5-004
+verified:
+  metadata_verified: true
+  claim_match_verified: true

@@ -1,0 +1,25 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: Q3
+source_label: Addie & McNealy, 'Lessons from Nigeria and Kenya on Digital Colonialism in AI Health Messaging',
+  Tech Policy Press (EN, grey/community perspective piece; Global South -- Nigeria/Kenya health-messaging
+  study)
+how_it_sees_the_problem: Frames the general-purpose-vs-health-product distinction as a GOVERNANCE requirement
+  (grounded in a comparative study of WHO's S.A.R.A.H. chatbot and ChatGPT against 80 traditional health
+  campaigns in Nigeria and Kenya), not a legal-liability clause -- the same underlying cut Q3 asks about,
+  reached independently from a health-communication-equity angle.
+what_it_separates: Separates AI systems 'designed for broad tasks' (ChatGPT, Gemini) from AI as a 'health
+  product' requiring 'alignment with clinical guidelines, rigorous privacy safeguards, and community co-design'
+  -- explicitly naming this distinction as a protective mechanism against exploitative or careless deployment.
+what_it_assumes: Assumes the distinction, once made, should drive downstream GOVERNANCE obligations (consultation,
+  impact assessment, co-design) rather than settling for disclaimer text; does not specify what a reusable
+  disclaimer clause implementing this distinction would actually say.
+stance: 'YES'
+what_it_would_say_against_us: Supports the general shape of Q3's question -- a general-purpose/health-product
+  distinction is treated here as necessary and reusable across contexts -- but frames it as a governance-process
+  requirement embedded in deployment practice, not a standardized disclaimer string; citing this source
+  as backing for a TEXT-level template would overstate what the source actually recommends (process obligations,
+  not boilerplate).
+citation_card: cite-glosa-v0-3-q3-007
+verified:
+  metadata_verified: true
+  claim_match_verified: true

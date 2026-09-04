@@ -1,0 +1,34 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: Q1
+source_label: "Bowker GC, Star SL (1999), Sorting Things Out: Classification and Its
+  Consequences (MIT Press), Introduction"
+how_it_sees_the_problem: >-
+  Frames classification/category systems as ordinarily invisible infrastructure that "trails
+  behind" formal decisions across radically different domains at once (medical diagnosis codes,
+  government regulatory categories, pharmaceutical taxonomies, a bathroom cabinet's own local
+  categories) and becomes visible again only when it "breaks down or become[s] objects of
+  contention."
+what_it_separates: >-
+  Separates a category's formal/bureaucratic existence (permits, forms, numerals) from its
+  moral/social order effects (who is helped or hurt by a classification, e.g. gendered
+  toilet-classification, ICD disease codes, apartheid-era racial classification, cited elsewhere
+  in the book) -- the category-as-artifact vs. category-as-consequence distinction Q1's PCS
+  concept would need to make explicit if generalized.
+what_it_assumes: >-
+  Assumes classification is a fundamentally general, cross-domain human practice ("to classify is
+  human," the chapter's own title) rather than something specific to any one professional field;
+  does not itself name or test "Premature Category Stabilization," "premature closure," or any of
+  Q1's specific case studies -- it supplies the general theoretical vocabulary (boundary object,
+  torque, category invisibility) that a PCS red-flag could be built on top of, not a direct test.
+stance: "YES"
+what_it_would_say_against_us: >-
+  If PCS stayed confined to its three domain case studies, this text would say that under-uses an
+  already-available, decades-old, cross-domain vocabulary (classification theory / boundary
+  objects / infrastructure studies) for exactly this phenomenon -- supporting Q1's premise that a
+  named, portable pattern exists and belongs at the kernel level, though it would also caution
+  that "premature" (Q1's own framing) adds a normative-timing claim beyond what Bowker & Star's
+  purely descriptive category-stabilization framework asserts.
+citation_card: cite-glosa-v0-3-q1-004
+verified:
+  metadata_verified: true
+  claim_match_verified: true

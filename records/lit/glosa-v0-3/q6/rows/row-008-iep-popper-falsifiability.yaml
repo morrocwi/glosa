@@ -1,0 +1,26 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: Q6
+source_label: 'Internet Encyclopedia of Philosophy, ''Popper, Karl: Philosophy of Science'' (EN, peer-reviewed
+  academic reference encyclopedia)'
+how_it_sees_the_problem: 'Gives the mirror-image philosophical case: a theory compatible with EVERY possible
+  observation cannot be checked against anything, so it is unfalsifiable -- structurally the same failure
+  mode as a claim asserted ''verifiable'' with no stated procedure (in both cases, nothing the reader
+  could do would ever fail to ''confirm'' the claim, because no actual test is specified).'
+what_it_separates: 'Separates a theory with genuine ''potential falsifiers'' (specific predictions that
+  COULD fail) from one that can always be reconciled with any outcome after the fact -- the same logical
+  gap Q6 targets at the single-claim level: a claim that would always look ''verified'' regardless of
+  what a reader actually did to check it.'
+what_it_assumes: 'Assumes a philosophy-of-science reader thinking about whole THEORIES and demarcation
+  between science and pseudoscience; does not itself address single empirical claims embedded in ordinary
+  prose, source-intake schemas, or writing-red-flag checklists -- transfers to Q6 only as a structural
+  analogy (unfalsifiable theory : unverifiable-as-stated claim), not as direct evidence.'
+stance: ORTHOGONAL
+what_it_would_say_against_us: This is a structural/philosophical analogy, not evidence about glosa's specific
+  schema-design question or about ordinary academic-writing red flags; treating Popper's falsifiability
+  criterion as if it directly recommended Q6's move would overstate the transfer -- it supports the CONCEPTUAL
+  legitimacy of flagging 'unfalsifiable-in-practice' patterns generally, without addressing whether a
+  NEW named glosa entry (versus extending an existing one) is the right implementation.
+citation_card: cite-glosa-v0-3-q6-008
+verified:
+  metadata_verified: true
+  claim_match_verified: true

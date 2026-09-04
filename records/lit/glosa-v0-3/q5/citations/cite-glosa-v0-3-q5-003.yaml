@@ -1,0 +1,75 @@
+$schema: citation_card.schema.json
+id: cite-glosa-v0-3-q5-003
+claim_ref: Q5
+identifier:
+  kind: PMCID
+  value: PMC6371709
+fetch_status: FETCHED
+fetched_at: '2026-09-05'
+metadata_verified: true
+metadata_verified_by: 'mechanical:Europe PMC REST API (europepmc.org/webservices/rest/search?query=PMC6371709)
+  -- confirms pmid=30834204, doi=10.4103/picr.picr_163_17, journalTitle=Perspect Clin Res, pubYear=2019'
+metadata_verified_at: '2026-09-05'
+claim_match_verified: true
+claim_match_verified_by: self:same-session-read (I1, NOT independent -- awaiting a decorrelated I3
+  cross-vendor route to upgrade status to VERIFIED per Rule 17/S14; task instruction caps status at
+  METADATA_OK for this pass)
+claim_match_verified_at: '2026-09-05'
+exact_passage: A total of N = 1147 studies were registered with CTRI in 2016. Among these, n = 719
+  (63%) were retrospectively registered and the remainder n = 428 (37%) were prospectively registered.
+page_or_locator: 'Birajdar AR et al., "An audit of studies registered retrospectively with the Clinical
+  Trials Registry of India: A one year analysis", Perspect Clin Res 2019;10(1):26-30 (doi:10.4103/picr.picr_163_17),
+  PMC full-text mirror pmc.ncbi.nlm.nih.gov/articles/PMC6371709/, Results section, as rendered on the
+  page fetched 2026-09-05'
+line_or_paragraph: line 112 of the fetched/stripped PMC full-text page
+scope: DIRECT_QUOTATION
+evidence_tier: Dr
+independence_class: I1
+who_verified: same-session AI (I1, non-independent) -- metadata confirmed mechanically via Europe PMC
+  API, passage read and matched to Q5 by the same session that ran the search; no cross-vendor I3
+  route run in this pass
+verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
+status: METADATA_OK
+xenon_ledger_ref: null
+disclosure: 'Birajdar et al. 2019, Perspectives in Clinical Research (peer-reviewed, India, PMC open-access
+  full text). Fetched and read directly (curl + stdlib HTML stripper, one page kept in memory at a
+  time per RAM limit) 2026-09-05. Read as: a one-year audit of India''s national trial registry (CTRI)
+  found 63% of studies registered in 2016 were registered retrospectively (after enrolment began), with
+  a median lag time of 428 days and a maximum of 5399 days (line 155 of the fetched text) -- direct
+  empirical evidence that an unenforced "register before you start" norm is widely gamed/ignored in a
+  real, large, Global-South research system even where a timestamp field already exists in the registry.
+  stance vs Q5 as read: YES (supports the need for a hard, checkable gate rather than a norm alone --
+  the exact motivation Q5 asks about, though for registration-before-data rather than
+  freeze-before-ethics specifically). No novel/first/prior-art claim made about this source; comparison
+  to Q5 is same/different/orthogonal as stated in dialogue_table_stance. independence_class I1 (same
+  session) -- status METADATA_OK only, not VERIFIED.'
+superseded_by: null
+notes: 'Diversity: language=en, source_type=peer_reviewed_journal_article, geography_or_institution=India
+  (Global South), search_route_or_database="web search + Europe PMC REST API, glosa-v0-3 Q5 scoping
+  pass". dialogue_table_stance: yes. what_it_separates: Separates studies that comply with the
+  timing norm from those that do not, by measuring the actual lag between enrolment and registration
+  -- an empirical readout of gate failure, not a proposal for a gate. what_it_assumes: Assumes CTRI''s
+  own registration-date field is itself trustworthy/unfalsified (the audit does not itself independently
+  verify the registered dates against a separate source); does not address ethics-approval timing at
+  all, only registration-vs-enrolment timing. what_it_would_say_against_us: A norm alone ("should
+  preregister before data") demonstrably does not produce compliance at scale (63% failed it here) --
+  so a hard glosa gate needs the checkable field AND an enforcement mechanism (like CTRI''s own
+  post-2018 mandatory-prospective-registration policy shift cited in this same paper''s discussion),
+  not just a schema field nobody is forced to satisfy.'
+citation_card_id: cite-glosa-v0-3-q5-003
+identifier_kind: PMCID
+claim_match_verification_route: NOT_YET
+retraction_check: UNCHECKED
+version_status: PUBLISHED
+dialogue_table_stance: agrees
+diversity:
+  language: en
+  discipline_or_tradition: clinical research methodology / research integrity
+  source_type: peer_reviewed
+  search_route_or_database: web search + Europe PMC REST API, glosa-v0-3 Q5 scoping pass
+  geography_or_institution: India (Global South)
+  venue_quality_index:
+    index_name: null
+    value: null
+    date_read: null
+fetched_from_url: https://pmc.ncbi.nlm.nih.gov/articles/PMC6371709/

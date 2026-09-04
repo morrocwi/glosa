@@ -1,0 +1,54 @@
+$schema: citation_card.schema.json
+id: cite-glosa-v0-3-q1-007
+claim_ref: Q1
+identifier:
+  kind: OFFICIAL_URL
+  value: https://nextbillion.net/grant-dependency-is-undermining-global-development-fundamentally-new-architecture-for-funding-ngos/
+fetch_status: FETCHED
+fetched_at: '2026-09-05'
+metadata_verified: true
+metadata_verified_by: mechanical:page-metadata
+metadata_verified_at: '2026-09-05'
+claim_match_verified: true
+claim_match_verified_by: route:I0
+claim_match_verified_at: '2026-09-05'
+exact_passage: >-
+  To break this cycle of self-preservation, the sector does not need better grant proposals with
+  tighter logical framework templates and better compliance metrics. It needs a whole new grant
+  deployment model that treats self-reliance not as an aspiration, but as a mandatory financial
+  milestone.
+page_or_locator: NextBillion.net article body, section arguing against incremental
+  grant-compliance reform
+line_or_paragraph: paragraph immediately following the article's description of donors funding
+  only "basic administrative compliance"
+scope: DIRECT_QUOTATION
+evidence_tier: Open
+independence_class: I0
+who_verified: I0 (this session, same-session read of the fetched page HTML; no cross-vendor or
+  independent human check has run yet)
+verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
+status: METADATA_OK
+xenon_ledger_ref: null
+disclosure: >-
+  I0 only (same session, not independently checked). This is a grey-literature / trade-press
+  opinion piece, not peer-reviewed -- evidence_tier is set to Open (not Dr) accordingly. Author
+  ("Chapin Leacock"), title, and publication date ("2026-06-01") were confirmed mechanically from
+  the page's own embedded metadata (<meta name="author">, JSON-LD "datePublished") in the fetched
+  HTML, not asserted from memory. NextBillion is a development-sector trade-press/blog site
+  (grey/community literature per this task's stopping rule), distinct from a peer-reviewed venue.
+  This source bears on Q1 as a CHALLENGE-style illustration from development-sector grey
+  literature: it argues that a standardized template response ("tighter logical framework
+  templates and better compliance metrics") is an inadequate, entrenched fix that the sector keeps
+  reaching for -- i.e. an example, from a Global-development-facing community publication, of
+  template/category responses being adopted and re-adopted as the default fix before the
+  underlying funding-architecture question is examined, which is directly the shape of pattern Q1
+  is asking whether to name as a standing kernel red-flag.
+superseded_by: null
+notes: >-
+  Grey/community source (development-sector trade blog, not peer-reviewed), Global-development
+  focus (not Thailand/SEA-specific but explicitly Global-South-facing NGO funding context), EN.
+  Found via query family: challenge ('development NGO "best practice" template lock-in premature
+  adoption blueprint Global South report'). Dialogue-table stance: YES (illustrates the
+  template-lock-in pattern Q1 asks about, supporting its real-world recurrence, though as an
+  opinion piece rather than an empirical/theoretical generalization claim).
+fetched_from_url: https://nextbillion.net/grant-dependency-is-undermining-global-development-fundamentally-new-architecture-for-funding-ngos/

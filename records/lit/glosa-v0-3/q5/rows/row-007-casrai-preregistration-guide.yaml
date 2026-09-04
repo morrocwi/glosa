@@ -1,0 +1,21 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: Q5
+source_label: CASRAI, "Preregistering a Study Protocol" guide (EN, grey/community, casrai.org/guides/preregistration-of-a-study-protocol)
+how_it_sees_the_problem: Explicitly warns against conflating preregistration with ethics approval --
+  IRB/REC approval is "a separate, usually mandatory, process" and preregistration "does not substitute
+  for it," though many registries let you reference an ethics-approval number.
+what_it_separates: Separates "preregistration" (a timestamped plan) from "ethics approval"
+  (participant-protection review) as two categorically different processes that happen to both
+  produce a date, warning readers not to treat one as evidence of the other.
+what_it_assumes: Assumes a general cross-disciplinary preregistration audience (not specifically
+  clinical/IRB-governed research), and that readers might otherwise conflate registry timestamps with
+  ethical clearance.
+stance: "NO"
+what_it_would_say_against_us: A hard glosa gate keyed on a single "timestamp-before" comparison risks
+  implying that satisfying the timing check is itself evidence of ethical soundness -- this source
+  would say that is exactly the conflation to avoid; the gate should check SEQUENCING only, and must
+  not let a passed sequencing check be read as ethics-substance verification.
+citation_card: cite-glosa-v0-3-q5-007
+verified:
+  metadata_verified: true
+  claim_match_verified: true

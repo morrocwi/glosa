@@ -1,0 +1,67 @@
+$schema: citation_card.schema.json
+id: cite-glosa-v0-3-q5-001
+claim_ref: Q5
+identifier:
+  kind: OFFICIAL_URL
+  value: https://www.cos.io/initiatives/prereg
+fetch_status: FETCHED
+fetched_at: '2026-09-05'
+metadata_verified: true
+metadata_verified_by: mechanical:curl+html-strip (page fetched and rendered directly, primary Center
+  for Open Science initiative page)
+metadata_verified_at: '2026-09-05'
+claim_match_verified: true
+claim_match_verified_by: self:same-session-read (I1, NOT independent -- awaiting a decorrelated I3
+  cross-vendor route to upgrade status to VERIFIED per Rule 17/S14; task instruction caps status at
+  METADATA_OK for this pass)
+claim_match_verified_at: '2026-09-05'
+exact_passage: 'When Can You Preregister? Right before your next round of data collection'
+page_or_locator: 'cos.io/initiatives/prereg, "When Can You Preregister?" section, as rendered on the
+  page fetched 2026-09-05'
+line_or_paragraph: lines 62-63 of the fetched/stripped page text
+scope: DIRECT_QUOTATION
+evidence_tier: Dr
+independence_class: I1
+who_verified: same-session AI (I1, non-independent) -- metadata confirmed mechanically, passage read
+  and matched to Q5 by the same session that ran the search; no cross-vendor I3 route run in this pass
+verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
+status: METADATA_OK
+xenon_ledger_ref: null
+disclosure: 'Center for Open Science (COS), "Preregistration" initiative page (EN, primary, global
+  open-science infrastructure org). Fetched and read directly (curl + stdlib HTML stripper, one page
+  kept in memory at a time per RAM limit) 2026-09-05. Read as: names the timing rule as "before your
+  next round of data collection" -- a single canonical timing edge (registration freeze precedes
+  data collection), but says nothing about ethics-approval timing relative to that freeze. stance vs
+  Q5 as read: PARTIAL_SUPPORT (backs the "before data" half of the compound rule; silent on the
+  "before ethics" half). No novel/first/prior-art claim made about this source; comparison to Q5 is
+  same/different/orthogonal as stated in dialogue_table_stance. independence_class I1 (same session)
+  -- status METADATA_OK only, not VERIFIED.'
+superseded_by: null
+notes: 'Diversity: language=en, source_type=grey_literature, geography_or_institution=Global (COS,
+  USA-based nonprofit infrastructure org), search_route_or_database="web search / direct org-site
+  fetch, glosa-v0-3 Q5 scoping pass". dialogue_table_stance: yes. what_it_separates: Separates the
+  timing question "when relative to data collection" (answered: right before) from "when relative to
+  ethics/IRB approval" (not addressed on this page at all) -- a partial cut, not the full compound
+  rule Q5 proposes. what_it_assumes: Assumes the reader already has ethics/institutional clearance in
+  place and is asking purely about registry mechanics and analysis-plan timing, not about a
+  compliance-gate ordering against an ethics committee. what_it_would_say_against_us: This page never
+  states an ethics-approval-timing requirement at all -- citing it as backing for the "before ethics"
+  half of Q5''s proposed compound gate would overstate what COS''s own guidance actually commits to;
+  it is evidence for one half of the compound rule only.'
+citation_card_id: cite-glosa-v0-3-q5-001
+identifier_kind: OFFICIAL_URL
+claim_match_verification_route: NOT_YET
+retraction_check: UNCHECKED
+version_status: PUBLISHED
+dialogue_table_stance: agrees
+diversity:
+  language: en
+  discipline_or_tradition: open-science methodology / meta-science
+  source_type: grey_literature
+  search_route_or_database: web search / direct org-site fetch, glosa-v0-3 Q5 scoping pass
+  geography_or_institution: Global (COS, USA-based)
+  venue_quality_index:
+    index_name: null
+    value: null
+    date_read: null
+fetched_from_url: https://www.cos.io/initiatives/prereg

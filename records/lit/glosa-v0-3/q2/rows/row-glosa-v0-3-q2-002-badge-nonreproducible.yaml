@@ -1,0 +1,29 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: Q2
+source_label: "Hardwicke et al. 2021, Analytic reproducibility in articles receiving open data badges at the journal Psychological Science: an observational study (Royal Society Open Science)"
+how_it_sees_the_problem: >-
+  Frames the problem empirically and mechanically: take articles that already carry a
+  certification-substitute credential (an open-data badge) and directly re-run the analyses on
+  the shared data to see whether the badge's implicit claim -- "this result is independently
+  reproducible" -- actually holds.
+what_it_separates: >-
+  Separates data being AVAILABLE (what the badge certifies) from a result being ANALYTICALLY
+  REPRODUCIBLE (what a reader actually needs) -- a distinction with a direct parallel in Q2:
+  a claim card can certify that a field was filled in without certifying that the underlying
+  claim is actually correct or checkable end-to-end.
+what_it_assumes: >-
+  Assumes the badge's own stated criterion (data sufficient for an independent researcher to
+  reproduce the result) is the right bar to test against; does not test any non-badge
+  certification-substitute mechanism (Registered Reports, open peer review, or a claim card).
+stance: "NO"
+what_it_would_say_against_us: >-
+  Directly, as an existence proof: even when a mechanism's rules are followed and its badge is
+  awarded, downstream checkable rigour is not guaranteed -- 16 of 25 badged articles (64%) had
+  a major numerical discrepancy on re-check, and 7 (28%) remained non-reproducible even with
+  author help. If Q2's clause is formalized without an actual independent re-derivation step
+  built in (not just a schema-field check), a claim card could suffer the identical failure:
+  formally complete, substantively unchecked.
+citation_card: cite-glosa-v0-3-q2-002
+verified:
+  metadata_verified: true
+  claim_match_verified: true

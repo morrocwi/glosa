@@ -1,0 +1,149 @@
+$schema: search_log.schema.json
+id: search-glosa-v0-3-001
+claim_or_hypothesis_ref: Q6
+search_mode: SCOPING_SEARCH
+frozen_scope:
+  hypothesis_or_falsifier: 'Q6 (DESIGN/POLICY): Should glosa''s intake schema flag the pattern of a source
+    claiming something is "verifiable" with no stated verification procedure as a standing red flag (a
+    new named disclaimer-catalogue / Rule 17 entry, alongside FOUNDATION §5''s existing disclaimer catalogue)?
+    Falsifier: the world literature on weasel/hedging language, the verifiability criterion in philosophy
+    of language, and practitioner red-flag checklists (predatory-publishing, fact-checking) shows that
+    "claims verifiability without a stated procedure" is either (a) already fully covered by an existing
+    named pattern (so a new entry is redundant) or (b) too broad/ill-defined a pattern to flag mechanically
+    without false-positiving on ordinary hedged academic prose -- i.e. the proposed new red flag is shown
+    to be either redundant or unworkable as stated.'
+  question_type: mechanism
+  concepts_synonyms_vocabulary:
+  - weasel words / vague attribution
+  - epistemic hedging / hedging language in academic writing
+  - verifiability criterion / verification principle (logical positivism, Vienna Circle)
+  - falsifiability / unfalsifiable claim (Popper)
+  - '"peacock terms" / unsupported attribution'
+  - predatory-journal red flags / unverifiable editorial board or metrics
+  - fact-checking "unverifiable claim" category (ตรวจสอบไม่ได้ / ไม่อยู่ในขอบเขตการตรวจสอบ)
+  - claims something "has been shown/proven/verified" with no method cited
+  - คำกำกวมเชิงวิชาการ (ambiguous academic phrasing)
+  inclusion_exclusion_rules: 'INCLUDE: any source (dictionary/policy page, peer-reviewed article, preprint,
+    standards/style guide, grey-literature practitioner guide, fact-checking-platform methodology page,
+    philosophy reference) that discusses (a) language patterns that assert something is verifiable, checkable,
+    proven, or shown without stating how to check it, or (b) the general category of vague-attribution
+    / weasel / hedging language, or (c) verifiability/falsifiability as a philosophical criterion of meaning,
+    or (d) practitioner checklists that name "unverifiable claim" as a red flag. EXCLUDE: sources purely
+    about statistical/measurement verification techniques with no language-pattern or red-flag-checklist
+    dimension; sources about unrelated meanings of "weasel word" (e.g. purely stylistic guides with no
+    verifiability angle); paywalled sources reachable only by abstract are logged as PAYWALLED_ABSTRACT_ONLY
+    (scope restricted to SUPPORTS_GENERAL_CLAIM_ONLY / CONTEXT_ONLY_NOT_EVIDENCE, never quoted beyond
+    the abstract). This is a SCOPING_SEARCH (not systematic): goal is a representative, stratified spread
+    of neighbour positions, not exhaustive linguistic-corpus coverage.'
+  time_window: 1936-2026 (Ayer's Language, Truth and Logic and the Vienna Circle verifiability lineage
+    is 1920s-1950s; weasel-word/hedging style guidance and fact-checking-platform practice is largely
+    2000s-2026)
+  language_strategy: EN primary; TH required (at least 1 Thai-language or Thailand/SEA-based source per
+    task instruction, covering how a Thai fact-checking or academic-writing source frames an unverifiable/no-stated-procedure
+    claim); one additional non-EN/Global-South angle sought via an EN-language source reporting on a non-EN/non-TH
+    Global-South context (predatory-publishing literature specifically studying India, a documented Global-South
+    publishing hub) rather than requiring a third search language directly.
+  global_sources:
+  - Google Scholar / general web search proxy (no institutional Scopus/WoS access in this session)
+  - 'Reference/policy pages reachable via web search: Wikipedia Manual of Style "Words to watch" (weasel
+    words), Wikipedia "Verificationism", Internet Encyclopedia of Philosophy "Popper: Philosophy of Science"'
+  - PubMed / general web (health/science-writing venues for hedging-and-truthiness literature)
+  - arXiv / preprint servers (predatory-publishing and hedge-detection preprints)
+  - 'General web (grey-literature entry points: science-education nonprofit pages, library/archives red-flag
+    checklists, fact-checking-platform methodology pages)'
+  local_context_sources:
+  - Cofact (Thai civic fact-checking platform, cofact.org) reachable via web search, for how a Thai fact-checking
+    workflow frames "not within scope to verify" as a distinct category from "true"/"false"
+  - ThaiJo (Thai Journals Online) and ResearchGate reachable via web search, for Thai academic-writing-hedging
+    literature (attempted; see local_track for access outcome)
+  search_date: '2026-09-05'
+  stopping_rule: 'Stop once at least 8 distinct candidate sources have been logged spanning: at least
+    1 Thai-language or Thailand/SEA-based source, at least 1 additional Global-South source, at least
+    1 grey/community source, and at least one source in the "challenge" query family (a source treating
+    hedging/vague attribution as sometimes legitimate/unavoidable rather than always a red flag) -- whichever
+    of these strata comes last determines when the search actually stops. This is a SCOPING_SEARCH, not
+    an exhaustive systematic/corpus-linguistic review; a small_n stopping rule, disclosed as such.'
+  conflicts_of_interest: None disclosed. The founder (Yaoharee Lahtee) is not an author, reviewer, regulator,
+    or funder of any candidate source found in this pass; glosa's own Rule 17 / FOUNDATION §5 disclaimer
+    catalogue is the object this question is about, not a party to the outside literature being searched.
+  access_limits: 'No institutional library/Scopus/Web-of-Science/JSTOR access in this session -- open-access,
+    reference, preprint, and grey-literature sources only, plus what is reachable via free web search
+    and curl. PubMed (pubmed.ncbi.nlm.nih.gov) and ResearchGate both returned access-restricted pages
+    (PubMed: cookie-gate; ResearchGate: CAPTCHA/rate-limit block) for two attempted candidates in this
+    pass and are logged as NOT_OBTAINED, never quoted; a mirrored open PDF of the PubMed-indexed article
+    was found and used instead (see cite-...-002). A parked/expired domain (songsue.co, found via search
+    as a Thai fact-checking commentary piece) was attempted and is logged as NOT_OBTAINED. Paywalled sources
+    reachable only by abstract are logged as PAYWALLED_ABSTRACT_ONLY (scope restricted to SUPPORTS_GENERAL_CLAIM_ONLY
+    / CONTEXT_ONLY_NOT_EVIDENCE, never quoted beyond the abstract) per the secondary-citation ban.'
+queries:
+  support:
+  - weasel words scientific claims verifiability academic writing
+  - epistemic hedging language academic writing red flag
+  - predatory journal red flag claims verifiable no methodology unfalsifiable
+  - falsifiability Popper unfalsifiable claim red flag pseudoscience
+  - India Nigeria predatory publishing unverifiable claims red flag study peer-reviewed
+  challenge:
+  - verifiability criterion philosophy of language logical positivism
+  - Wikipedia weasel word policy "unsupported attributions"
+  - คำกำกวมเชิงวิชาการ งานวิจัย
+  - ภาษากำกวม hedging งานเขียนวิชาการภาษาไทย
+  - ThaiJo hedging ภาษาศาสตร์ วาทกรรมวิชาการ ความคลุมเครือ
+  - ข่าวปลอม ตรวจสอบได้ อ้างว่า verifiable แต่ไม่มีแหล่งที่มา cofact ไทย
+  - Cofact เกณฑ์ตรวจสอบข่าวลวง อ้างแหล่งที่มาไม่ชัดเจน สังเกตอย่างไร
+sources_found:
+- cite-glosa-v0-3-q6-001
+- cite-glosa-v0-3-q6-002
+- cite-glosa-v0-3-q6-003
+- cite-glosa-v0-3-q6-004
+- cite-glosa-v0-3-q6-005
+- cite-glosa-v0-3-q6-006
+- cite-glosa-v0-3-q6-007
+- cite-glosa-v0-3-q6-008
+prisma_counts: null
+global_track:
+  summary: 'Eight candidate sources kept from a scoping (non-exhaustive) web search: two EN reference/policy
+    pages (Wikipedia "Words to watch" weasel-words section; Wikipedia "Verificationism") giving the two
+    closest named prior patterns to Q6''s proposal; one EN peer-reviewed-but-mirrored article (Ott, "Hedging,
+    Weasel Words, and Truthiness in Scientific Writing") framing unverifiable extension of statements
+    via hedging/weasel language as an active writing hazard; one EN grey/nonprofit practitioner page (NCSE
+    "Weasel Words") giving a worked example of exactly Q6''s pattern -- an unnamed "some critics" claim
+    the reader cannot verify; one EN grey/institutional checklist (NOAA Library predatory-publisher red
+    flags) naming "the metrics listed... are not verifiable" as an explicit checklist item, the closest
+    existing analogue to a Rule-17-style catalogue entry; one EN preprint (arXiv:1906.06856, Jain & Singh)
+    studying predatory-publisher verification-evasion patterns empirically from a Global-South (India)
+    research group; one EN encyclopedia article (IEP, "Popper: Philosophy of Science") giving the falsifiability
+    contrast -- a theory "compatible with every possible observation" cannot be checked, which is the
+    philosophical mirror image of a claim asserted "verifiable" with no stated procedure; and one TH grey/community
+    source (Cofact, cofact.org/howto) showing a working Thai fact-checking platform already distinguishes
+    "unverifiable / not within the scope that can be checked" (ไม่อยู่ในขอบเขตการตรวจสอบ) as its own comment
+    category, separate from true/false/partly-true.'
+  strength_note: No source found tests Q6's exact proposed move (a NEW named glosa red-flag entry specifically
+    for "claims verifiable with no stated procedure") as a design decision -- this is a schema/catalogue-design
+    question, not itself studied in the literature found. The closest direct engagement is NOAA's predatory-journal
+    checklist (an existing, unrelated-domain instance of exactly this red flag already being named and
+    used operationally) and the Wikipedia weasel-words guideline (an existing, broader pattern -- "vague
+    attribution" -- that a reader could argue already subsumes Q6's narrower pattern, making a new entry
+    potentially redundant rather than novel). Neither source settles whether glosa's catalogue needs a
+    NEW entry versus extending an existing one; that remains a design judgment for the human owner.
+  small_n_stopping_rule_disclosed: true
+local_track:
+  summary: 'One Thai-language source found and read directly: Cofact (cofact.org/howto), the Thai civic
+    fact-checking platform''s own how-to page, which lists "ไม่อยู่ในขอบเขตการตรวจสอบ" (not within the
+    scope that can be checked) as one of four comment categories distinct from "fully true", "partly true",
+    and "deceptive" -- an operational, non-academic Thai precedent for treating checkability-status itself
+    as a first-class tag, close in spirit to Q6''s proposed red flag. Two attempted Thai/Thailand-adjacent
+    academic sources could not be fetched: a ResearchGate page for a 2014 Thai academic-writing-hedging
+    book chapter (อมรา ประสิทธิ์รัฐสินธุ์) returned a CAPTCHA/rate-limit block (logged NOT_OBTAINED, never
+    quoted), and a Thai fact-checking commentary piece found via search (songsue.co) resolved to a parked/expired
+    domain (logged NOT_OBTAINED, never quoted).'
+  result: FOUND
+transfer_verdict: TRANSFERS_WITH_ADAPTATION
+summary_disclaimer: This is a SCOPING_SEARCH (8 kept candidates from web search, not a systematic review)
+  -- support-family queries surfaced worked examples and checklists where "claims verifiable/proven with
+  no stated procedure" is already treated as a red flag in unrelated domains (predatory publishing, Wikipedia
+  editorial policy, Popper's falsifiability contrast); challenge-family queries surfaced the closest prior-art
+  pattern (Wikipedia's broader "weasel words / unsupported attribution" guideline) that could make a narrower
+  new glosa entry redundant, plus a Thai fact-checking platform (Cofact) that already treats "not within
+  scope to check" as its own category rather than folding it into true/false. No source directly tests
+  glosa's own proposed catalogue-design move; absence of a source testing that exact move does NOT mean
+  none exists -- this is a small, non-exhaustive scoping pass, disclosed as such.

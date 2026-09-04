@@ -1,0 +1,22 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: Q3
+source_label: Thai FDA (อย.) Medical Device Control Division, SaMD screening-criteria page (TH, primary
+  regulatory text, Thailand)
+how_it_sees_the_problem: Gives Thailand's own definitional split for medical-device software (embedded
+  / standalone / accessory / non-device), then routes classification through whether the product has a
+  'medical purpose' under the Medical Device Act -- a category test, not a disclaimer-wording template.
+what_it_separates: Separates standalone software/apps with no intent to control or affect medical-device
+  hardware from software that is itself, or an accessory to, a medical device -- a structural/functional
+  split, not a language-of-disclaimer split.
+what_it_assumes: Assumes the reader is a manufacturer/importer running the Thai medical-device intake
+  flowchart; says nothing about how a product that falls OUTSIDE this definition (e.g. a general information/wellness
+  assistant) should word its own non-medical scope disclaimer to end users.
+stance: ORTHOGONAL
+what_it_would_say_against_us: Shows that even the prior legal question a scope-boundary clause would need
+  to track -- 'is this software a medical device at all under Thai law' -- is itself a multi-part, jurisdiction-specific
+  test, not a single settled line; a reusable clause would still need to sit on top of a classification
+  this granular, which this page does not by itself resolve.
+citation_card: cite-glosa-v0-3-q3-003
+verified:
+  metadata_verified: true
+  claim_match_verified: true

@@ -1,0 +1,36 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: Q1
+source_label: "The myth of institutional transplantation: disjunctions between formal structures
+  and power distribution in university governance in Lao PDR (Higher Education, DOI
+  10.1007/s10734-025-01407-1)"
+how_it_sees_the_problem: >-
+  Frames the problem as a Global South/SEA empirical case: a formal governance template
+  (neoliberal corporate governance, promoted by supranational organizations since the 1990s) was
+  written into Lao university regulatory documents, but actual decision-making power in the
+  studied universities did not follow that template -- a "disjunction" the paper calls the "myth"
+  of transplantation, analyzed through a "glonacal" (global/national/local) framework.
+what_it_separates: >-
+  Separates the formal stabilization of a category/template (it IS written into regulation, i.e.
+  the category did close) from the substantive/practical stabilization of the underlying reality
+  it claims to describe (actual power distribution, which did not follow) -- a formal-vs-
+  substantive split Q1's own framing (does PCS become a "named" kernel construct) does not yet
+  make explicit.
+what_it_assumes: >-
+  Assumes regulatory documents, manager consultations, and faculty surveys across three Lao
+  national universities are a valid window onto actual governance practice; is specific to
+  higher-education governance and supranational-organization-driven reform, not to tourism/
+  hilal/service-template genres -- so it transfers to Q1 only by structural analogy, not by
+  direct subject-matter overlap.
+stance: ORTHOGONAL
+what_it_would_say_against_us: >-
+  It would complicate a simple "PCS = closing too early" framing: here the category closed (was
+  formally adopted) exactly on schedule from the reformers' point of view, yet the paper still
+  calls it a failure -- because the closure was decoupled from ground truth, not because it
+  happened "too early" in time. If glosa names PCS as a kernel red-flag defined purely by
+  timing (closing before enough evidence), this source would say that misses a distinct and
+  arguably more common failure mode (formal closure decoupled from substance) that a single
+  "premature" framing does not capture.
+citation_card: cite-glosa-v0-3-q1-005
+verified:
+  metadata_verified: true
+  claim_match_verified: true

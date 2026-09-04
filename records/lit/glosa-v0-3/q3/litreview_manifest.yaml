@@ -1,0 +1,619 @@
+$schema: litreview_manifest.schema.json
+id: litrev-glosa-v0-3-001
+hypothesis_ref: Q3
+search_log_ref: search-glosa-v0-3-001
+search_log_hash: ''
+dialogue_table_ref: records/lit/glosa-v0-3/q3/dialogue_table.md
+neighbour_table_ref: ''
+status: FROZEN
+frozen_at: '2026-09-04T17:52:44.551164+00:00'
+supersedes: null
+citations:
+- $schema: citation_card.schema.json
+  id: cite-glosa-v0-3-q3-001
+  claim_ref: Q3
+  identifier:
+    kind: OFFICIAL_URL
+    value: https://artificialintelligenceact.eu/annex/3/
+  fetch_status: FETCHED
+  fetched_at: '2026-09-05'
+  metadata_verified: true
+  metadata_verified_by: mechanical:curl+html-strip (page fetched and rendered directly, primary EU legislative-explainer
+    text)
+  metadata_verified_at: '2026-09-05'
+  claim_match_verified: true
+  claim_match_verified_by: self:same-session-read (I1, NOT independent -- awaiting a decorrelated I3 cross-vendor
+    route to upgrade status to VERIFIED per Rule 17/S14; task instruction caps status at METADATA_OK for
+    this pass)
+  claim_match_verified_at: '2026-09-05'
+  exact_passage: AI systems intended to be used by public authorities or on behalf of public authorities
+    to evaluate the eligibility of natural persons for essential public assistance benefits and services,
+    including healthcare services, as well as to grant, reduce, revoke, or reclaim such benefits and services;
+  page_or_locator: 'artificialintelligenceact.eu, ''Annex III: High-Risk AI Systems Referred to in Article
+    6(2)'', point 5(a), as rendered on the page fetched 2026-09-05'
+  line_or_paragraph: line 318 of the fetched/stripped page text (list item under Annex III point 5)
+  scope: CONTEXT_ONLY_NOT_EVIDENCE
+  evidence_tier: Dr
+  independence_class: I1
+  who_verified: same-session AI (I1, non-independent) -- metadata confirmed mechanically, passage read
+    and matched to Q3 by the same session that ran the search; no cross-vendor I3 route run in this pass
+  verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
+  status: METADATA_OK
+  xenon_ledger_ref: null
+  disclosure: 'EU AI Act, Annex III point 5(a) (EN, primary regulatory text, artificialintelligenceact.eu
+    explainer mirror). Fetched and read directly (curl + stdlib HTML stripper for web pages; pdftotext
+    -l 8 for the one PDF source) 2026-09-05, one page kept in memory at a time per RAM limit. Read as:
+    Classifies AI as high-risk by function (evaluating eligibility for public benefits/services, including
+    healthcare) rather than by domain label alone -- the EU''s own boundary-drawing exercise for when
+    a health-adjacent AI system needs the heaviest regulatory disclosure. stance vs Q3 as read: ORTHOGONAL.
+    independence_class I1 (same session) -- status METADATA_OK only, not VERIFIED: no decorrelated I3
+    cross-vendor route has checked this card yet. No novel/first/prior-art claim made about this source;
+    comparison to Q3 is same/different/orthogonal as stated in dialogue_table_stance.'
+  superseded_by: null
+  notes: 'Diversity: language=en, source_type=grey_literature, geography_or_institution=EU, search_route_or_database="web
+    search / direct regulator-site fetch, glosa-v0-3 Q3 scoping pass". dialogue_table_stance: orthogonal.
+    what_it_separates: Separates ''AI used by/for public authorities to gate access to healthcare services''
+    (this Annex III point, high-risk) from a general-purpose AI system that merely discusses health topics
+    without gating benefits -- a functional, not topical, cut. what_it_assumes: Assumes the reader is
+    a legal/compliance audience classifying a specific deployed system against a fixed high-risk list,
+    not a product team drafting a runtime disclaimer string for end users; does not itself address a reusable
+    scope-boundary clause''s wording. what_it_would_say_against_us: This point governs public-authority
+    benefit-eligibility systems, not a general non-diagnostic AI assistant like glosa''s own runtime --
+    citing it as backing for a ''reusable clause'' would overstate what this specific Annex III point
+    actually covers; the boundary it draws is jurisdiction- and function-specific, one data point against
+    a single clause traveling everywhere.'
+  citation_card_id: cite-glosa-v0-3-q3-001
+  identifier_kind: OFFICIAL_URL
+  claim_match_verification_route: NOT_YET
+  retraction_check: UNCHECKED
+  version_status: PUBLISHED
+  dialogue_table_stance: orthogonal
+  diversity:
+    language: en
+    discipline_or_tradition: health/AI regulation and disclaimer practice
+    source_type: grey_literature
+    search_route_or_database: web search / direct regulator-site fetch, glosa-v0-3 Q3 scoping pass
+    geography_or_institution: EU
+    venue_quality_index:
+      index_name: null
+      value: null
+      date_read: null
+  fetched_from_url: https://artificialintelligenceact.eu/annex/3/
+- $schema: citation_card.schema.json
+  id: cite-glosa-v0-3-q3-002
+  claim_ref: Q3
+  identifier:
+    kind: OFFICIAL_URL
+    value: https://www.fda.gov/medical-devices/software-medical-device-samd/clinical-decision-support-software-frequently-asked-questions-faqs
+  fetch_status: FETCHED
+  fetched_at: '2026-09-05'
+  metadata_verified: true
+  metadata_verified_by: mechanical:curl+html-strip (official fda.gov guidance FAQ page fetched directly)
+  metadata_verified_at: '2026-09-05'
+  claim_match_verified: true
+  claim_match_verified_by: self:same-session-read (I1, NOT independent -- awaiting a decorrelated I3 cross-vendor
+    route to upgrade status to VERIFIED per Rule 17/S14; task instruction caps status at METADATA_OK for
+    this pass)
+  claim_match_verified_at: '2026-09-05'
+  exact_passage: 'A: Software that is meant to support time-critical decision making does not meet the
+    definition of Non-Device CDS. Often, time sensitive or critical outputs detect life-threatening and/or
+    time critical conditions. In such situations, it is difficult to support that a clinician is not meant
+    to solely rely on a provided recommendation or that the clinician will spend time to understand its
+    specific basis. Therefore, these kinds of software generally cannot meet all the criteria for Non-Device
+    CDS software.'
+  page_or_locator: fda.gov, 'Clinical Decision Support Software Frequently Asked Questions (FAQs)', Q3
+    answer, as fetched 2026-09-05
+  line_or_paragraph: line 105 of the fetched/stripped page text
+  scope: DIRECT_QUOTATION
+  evidence_tier: Dr
+  independence_class: I1
+  who_verified: same-session AI (I1, non-independent) -- metadata confirmed mechanically, passage read
+    and matched to Q3 by the same session that ran the search; no cross-vendor I3 route run in this pass
+  verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
+  status: METADATA_OK
+  xenon_ledger_ref: null
+  disclosure: 'U.S. FDA, Clinical Decision Support Software FAQs (EN, primary regulatory guidance). Fetched
+    and read directly (curl + stdlib HTML stripper for web pages; pdftotext -l 8 for the one PDF source)
+    2026-09-05, one page kept in memory at a time per RAM limit. Read as: Frames the non-device/device
+    boundary as depending on a specific situational criterion -- whether the decision context is time-critical
+    -- not on the software''s topic area or a fixed disclaimer string. stance vs Q3 as read: NO. independence_class
+    I1 (same session) -- status METADATA_OK only, not VERIFIED: no decorrelated I3 cross-vendor route
+    has checked this card yet. No novel/first/prior-art claim made about this source; comparison to Q3
+    is same/different/orthogonal as stated in dialogue_table_stance.'
+  superseded_by: null
+  notes: 'Diversity: language=en, source_type=grey_literature, geography_or_institution=US, search_route_or_database="web
+    search / direct regulator-site fetch, glosa-v0-3 Q3 scoping pass". dialogue_table_stance: disagrees.
+    what_it_separates: Separates time-critical CDS (cannot be Non-Device CDS, regulated) from non-time-critical
+    CDS meeting all four criteria (can be Non-Device CDS) -- the same underlying software function can
+    fall on either side depending on deployment context. what_it_assumes: Assumes a US regulatory audience
+    already applying the four-criterion Non-Device CDS test; does not address whether the disclaimer WORDING
+    itself needs to vary by context or can stay a fixed reusable string once the regulatory classification
+    is settled. what_it_would_say_against_us: Directly defeats a naive reading of Q3: if the underlying
+    regulatory boundary this disclaimer is supposed to signal shifts with deployment context (time-critical
+    vs not), a single reusable clause text cannot by itself carry that context-dependent classification
+    -- the clause would need to be paired with a context check, not stand alone as boilerplate.'
+  citation_card_id: cite-glosa-v0-3-q3-002
+  identifier_kind: OFFICIAL_URL
+  claim_match_verification_route: NOT_YET
+  retraction_check: UNCHECKED
+  version_status: PUBLISHED
+  dialogue_table_stance: disagrees
+  diversity:
+    language: en
+    discipline_or_tradition: health/AI regulation and disclaimer practice
+    source_type: grey_literature
+    search_route_or_database: web search / direct regulator-site fetch, glosa-v0-3 Q3 scoping pass
+    geography_or_institution: US
+    venue_quality_index:
+      index_name: null
+      value: null
+      date_read: null
+  fetched_from_url: https://www.fda.gov/medical-devices/software-medical-device-samd/clinical-decision-support-software-frequently-asked-questions-faqs
+- $schema: citation_card.schema.json
+  id: cite-glosa-v0-3-q3-003
+  claim_ref: Q3
+  identifier:
+    kind: OFFICIAL_URL
+    value: https://medical.fda.moph.go.th/samd-head
+  fetch_status: FETCHED
+  fetched_at: '2026-09-05'
+  metadata_verified: true
+  metadata_verified_by: mechanical:curl+html-strip (Thai FDA Medical Device Control Division official
+    page fetched directly)
+  metadata_verified_at: '2026-09-05'
+  claim_match_verified: true
+  claim_match_verified_by: self:same-session-read (I1, NOT independent -- awaiting a decorrelated I3 cross-vendor
+    route to upgrade status to VERIFIED per Rule 17/S14; task instruction caps status at METADATA_OK for
+    this pass)
+  claim_match_verified_at: '2026-09-05'
+  exact_passage: ซอฟต์แวร์ที่ใช้งานโดยลำพัง (Standalone software) หมายถึง ซอฟต์แวร์และ/หรือแอปพลิชันบนมือถือที่ใช้งานโดยลำพัง
+    และไม่มีวัตถุประสงค์ในการควบคุมหรือมีผลต่อฮาร์ดแวร์ของเครื่องมือแพทย์
+  page_or_locator: medical.fda.moph.go.th (Thai FDA Medical Device Control Division), page 'การกำกับดูแลซอฟต์แวร์และปัญญาประดิษฐ์ที่เป็นเครื่องมือแพทย์'
+    > 'หลักเกณฑ์การคัดกรองซอฟต์แวร์และปัญญาประดิษฐ์ที่เข้าข่ายเครื่องมือแพทย์', definitions list, as fetched
+    2026-09-05
+  line_or_paragraph: line 136 of the fetched/stripped page text
+  scope: CONTEXT_ONLY_NOT_EVIDENCE
+  evidence_tier: Dr
+  independence_class: I1
+  who_verified: same-session AI (I1, non-independent) -- metadata confirmed mechanically, passage read
+    and matched to Q3 by the same session that ran the search; no cross-vendor I3 route run in this pass
+  verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
+  status: METADATA_OK
+  xenon_ledger_ref: null
+  disclosure: 'Thai FDA (อย.) Medical Device Control Division, SaMD screening-criteria page (TH, primary
+    regulatory text, Thailand). Fetched and read directly (curl + stdlib HTML stripper for web pages;
+    pdftotext -l 8 for the one PDF source) 2026-09-05, one page kept in memory at a time per RAM limit.
+    Read as: Gives Thailand''s own definitional split for medical-device software (embedded / standalone
+    / accessory / non-device), then routes classification through whether the product has a ''medical
+    purpose'' under the Medical Device Act -- a category test, not a disclaimer-wording template. stance
+    vs Q3 as read: ORTHOGONAL. independence_class I1 (same session) -- status METADATA_OK only, not VERIFIED:
+    no decorrelated I3 cross-vendor route has checked this card yet. No novel/first/prior-art claim made
+    about this source; comparison to Q3 is same/different/orthogonal as stated in dialogue_table_stance.'
+  superseded_by: null
+  notes: 'Diversity: language=th, source_type=grey_literature, geography_or_institution=Thailand, search_route_or_database="web
+    search / direct regulator-site fetch, glosa-v0-3 Q3 scoping pass". dialogue_table_stance: orthogonal.
+    what_it_separates: Separates standalone software/apps with no intent to control or affect medical-device
+    hardware from software that is itself, or an accessory to, a medical device -- a structural/functional
+    split, not a language-of-disclaimer split. what_it_assumes: Assumes the reader is a manufacturer/importer
+    running the Thai medical-device intake flowchart; says nothing about how a product that falls OUTSIDE
+    this definition (e.g. a general information/wellness assistant) should word its own non-medical scope
+    disclaimer to end users. what_it_would_say_against_us: Shows that even the prior legal question a
+    scope-boundary clause would need to track -- ''is this software a medical device at all under Thai
+    law'' -- is itself a multi-part, jurisdiction-specific test, not a single settled line; a reusable
+    clause would still need to sit on top of a classification this granular, which this page does not
+    by itself resolve.'
+  citation_card_id: cite-glosa-v0-3-q3-003
+  identifier_kind: OFFICIAL_URL
+  claim_match_verification_route: NOT_YET
+  retraction_check: UNCHECKED
+  version_status: PUBLISHED
+  dialogue_table_stance: orthogonal
+  diversity:
+    language: th
+    discipline_or_tradition: health/AI regulation and disclaimer practice
+    source_type: grey_literature
+    search_route_or_database: web search / direct regulator-site fetch, glosa-v0-3 Q3 scoping pass
+    geography_or_institution: Thailand
+    venue_quality_index:
+      index_name: null
+      value: null
+      date_read: null
+  fetched_from_url: https://medical.fda.moph.go.th/samd-head
+- $schema: citation_card.schema.json
+  id: cite-glosa-v0-3-q3-004
+  claim_ref: Q3
+  identifier:
+    kind: OFFICIAL_URL
+    value: https://www.dtam.moph.go.th/wp-content/uploads/dtam-plan/AI/Application_Guidelines_AI.pdf
+  fetch_status: FETCHED
+  fetched_at: '2026-09-05'
+  metadata_verified: true
+  metadata_verified_by: mechanical:curl (PDF fetched directly from dtam.moph.go.th) + pdftotext -l 8 (first
+    8 pages only, per RAM limit)
+  metadata_verified_at: '2026-09-05'
+  claim_match_verified: true
+  claim_match_verified_by: self:same-session-read (I1, NOT independent -- awaiting a decorrelated I3 cross-vendor
+    route to upgrade status to VERIFIED per Rule 17/S14; task instruction caps status at METADATA_OK for
+    this pass)
+  claim_match_verified_at: '2026-09-05'
+  exact_passage: การตัดสินใจ (Decision) หรือการให้คำแนะนำ (Recommendation) บนพื้นฐานของข้อมูลที่ได้รับการฝึกฝน
+    (Train) มาก่อน การใช้ AI วินิจฉัยโรคปอดจากภาพเอกชเรย์ปอด และการใช้ AI แนะนำสินค้าและบริการ เป็นต้น
+  page_or_locator: Application_Guidelines_AI.pdf (กรมการแพทย์แผนไทยและการแพทย์ทางเลือก, 'แนวทางการประยุกต์ใช้ปัญญาประดิษฐ์อย่างมีธรรมาภิบาล',
+    ประจำปีงบประมาณ พ.ศ. 2569), section 1 คำนิยาม, as extracted 2026-09-05 (pdftotext -l 8)
+  line_or_paragraph: lines 81-82 of the pdftotext -l 8 extraction (one continuous sentence wrapped across
+    two PDF lines)
+  scope: CONTEXT_ONLY_NOT_EVIDENCE
+  evidence_tier: Dr
+  independence_class: I1
+  who_verified: same-session AI (I1, non-independent) -- metadata confirmed mechanically, passage read
+    and matched to Q3 by the same session that ran the search; no cross-vendor I3 route run in this pass
+  verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
+  status: METADATA_OK
+  xenon_ledger_ref: null
+  disclosure: 'กรมการแพทย์แผนไทยและการแพทย์ทางเลือก (Dept. of Thai Traditional and Alternative Medicine),
+    ''แนวทางการประยุกต์ใช้ปัญญาประดิษฐ์อย่างมีธรรมาภิบาล'' (TH, primary Thai government AI-governance
+    guideline, FY2569/2026). Fetched and read directly (curl + stdlib HTML stripper for web pages; pdftotext
+    -l 8 for the one PDF source) 2026-09-05, one page kept in memory at a time per RAM limit. Read as:
+    A Thai government department''s own general AI-governance guideline; frames ''Traditional AI'' generically
+    via examples spanning both a clinical use (diagnosing lung disease from chest X-ray) and a non-clinical
+    use (recommending goods/services) under the same technical category (Decision/Recommendation AI).
+    stance vs Q3 as read: ORTHOGONAL. independence_class I1 (same session) -- status METADATA_OK only,
+    not VERIFIED: no decorrelated I3 cross-vendor route has checked this card yet. No novel/first/prior-art
+    claim made about this source; comparison to Q3 is same/different/orthogonal as stated in dialogue_table_stance.'
+  superseded_by: null
+  notes: 'Diversity: language=th, source_type=grey_literature, geography_or_institution=Thailand, search_route_or_database="web
+    search / direct regulator-site fetch, glosa-v0-3 Q3 scoping pass". dialogue_table_stance: orthogonal.
+    what_it_separates: Separates Generative AI (creates new content) from Traditional AI (Prediction/Decision/Recommendation
+    on trained data) as a technical taxonomy -- it does not separate clinical from non-clinical Traditional
+    AI, treating an X-ray diagnosis tool and a product-recommendation engine as the same technical class.
+    what_it_assumes: Assumes a general-audience primer purpose (defining AI/ML/DL/ANN/Generative AI for
+    department staff); does not address disclaimer wording, scope-of-practice boundaries, or whether a
+    diagnostic and a non-diagnostic ''Traditional AI'' example should be governed by the same or different
+    disclaimer text. what_it_would_say_against_us: By placing a diagnostic example (lung X-ray) and a
+    non-diagnostic example (product recommendation) side by side under one technical label without distinguishing
+    their disclaimer needs, this guideline -- if taken as representative of current Thai government AI
+    literacy material -- suggests the clinical/non-clinical boundary that Q3''s clause exists to mark
+    is not yet salient in at least one real domestic AI-governance document, which is itself evidence
+    the boundary needs active standardization rather than being already assumed.'
+  citation_card_id: cite-glosa-v0-3-q3-004
+  identifier_kind: OFFICIAL_URL
+  claim_match_verification_route: NOT_YET
+  retraction_check: UNCHECKED
+  version_status: PUBLISHED
+  dialogue_table_stance: orthogonal
+  diversity:
+    language: th
+    discipline_or_tradition: health/AI regulation and disclaimer practice
+    source_type: grey_literature
+    search_route_or_database: web search / direct regulator-site fetch, glosa-v0-3 Q3 scoping pass
+    geography_or_institution: Thailand
+    venue_quality_index:
+      index_name: null
+      value: null
+      date_read: null
+  fetched_from_url: https://www.dtam.moph.go.th/wp-content/uploads/dtam-plan/AI/Application_Guidelines_AI.pdf
+- $schema: citation_card.schema.json
+  id: cite-glosa-v0-3-q3-005
+  claim_ref: Q3
+  identifier:
+    kind: ARXIV
+    value: '2507.08030'
+  fetch_status: FETCHED
+  fetched_at: '2026-09-05'
+  metadata_verified: true
+  metadata_verified_by: mechanical:arxiv-api (export.arxiv.org/api/query?id_list=2507.08030, title/authors/date
+    confirmed) + curl+html-strip of the abstract page
+  metadata_verified_at: '2026-09-05'
+  claim_match_verified: true
+  claim_match_verified_by: self:same-session-read (I1, NOT independent -- awaiting a decorrelated I3 cross-vendor
+    route to upgrade status to VERIFIED per Rule 17/S14; task instruction caps status at METADATA_OK for
+    this pass)
+  claim_match_verified_at: '2026-09-05'
+  exact_passage: Medical disclaimer presence in LLM and VLM outputs dropped from 26.3% in 2022 to 0.97%
+    in 2025, and from 19.6% in 2023 to 1.05% in 2025, respectively.
+  page_or_locator: arxiv.org/abs/2507.08030, abstract paragraph, as fetched 2026-09-05
+  line_or_paragraph: line 17 of the fetched/stripped abstract page text
+  scope: DIRECT_QUOTATION
+  evidence_tier: Dr
+  independence_class: I1
+  who_verified: same-session AI (I1, non-independent) -- metadata confirmed mechanically, passage read
+    and matched to Q3 by the same session that ran the search; no cross-vendor I3 route run in this pass
+  verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
+  status: METADATA_OK
+  xenon_ledger_ref: null
+  disclosure: 'Sharma, Alaa & Daneshjou, ''A Systematic Analysis of Declining Medical Safety Messaging
+    in Generative AI Models'' (arXiv:2507.08030, EN, preprint). Fetched and read directly (curl + stdlib
+    HTML stripper for web pages; pdftotext -l 8 for the one PDF source) 2026-09-05, one page kept in memory
+    at a time per RAM limit. Read as: Frames the disclaimer problem empirically: it measures whether medical
+    disclaimers actually appear in model outputs across 2022-2025, on 2,000 real image/question prompts,
+    rather than debating what a disclaimer''s text should say. stance vs Q3 as read: NO. independence_class
+    I1 (same session) -- status METADATA_OK only, not VERIFIED: no decorrelated I3 cross-vendor route
+    has checked this card yet. No novel/first/prior-art claim made about this source; comparison to Q3
+    is same/different/orthogonal as stated in dialogue_table_stance.'
+  superseded_by: null
+  notes: 'Diversity: language=en, source_type=preprint, geography_or_institution=US, search_route_or_database="web
+    search / direct regulator-site fetch, glosa-v0-3 Q3 scoping pass". dialogue_table_stance: disagrees.
+    what_it_separates: Separates ''a disclaimer policy/template exists'' from ''a disclaimer actually
+    appears in the deployed output the end user sees'' -- the paper''s whole finding is that this gap
+    widened sharply (most models show 0 disclaimers by 2025) even though disclaimer language and guidance
+    have existed for years. what_it_assumes: Assumes disclaimer PRESENCE (a phrase-detection screen) is
+    a meaningful proxy for safety messaging; does not evaluate whether the disclaimers that DID appear
+    used a standardized clause or ad hoc wording, so it cannot directly confirm or refute standardization''s
+    wording-level benefit, only that having any template is not self-enforcing. what_it_would_say_against_us:
+    Directly defeats a naive reading of Q3: even where a reusable non-diagnostic disclaimer clause already
+    exists and is well understood industry-wide, this paper''s own measurement shows it is not showing
+    up in practice at industrial scale and is actively declining -- standardizing the CLAUSE TEXT alone,
+    without a runtime enforcement mechanism, does not solve the underlying scope-boundary problem this
+    question is trying to close.'
+  citation_card_id: cite-glosa-v0-3-q3-005
+  identifier_kind: ARXIV
+  claim_match_verification_route: NOT_YET
+  retraction_check: UNCHECKED
+  version_status: PUBLISHED
+  dialogue_table_stance: disagrees
+  diversity:
+    language: en
+    discipline_or_tradition: health/AI regulation and disclaimer practice
+    source_type: preprint
+    search_route_or_database: web search / direct regulator-site fetch, glosa-v0-3 Q3 scoping pass
+    geography_or_institution: US
+    venue_quality_index:
+      index_name: null
+      value: null
+      date_read: null
+  fetched_from_url: https://arxiv.org/abs/2507.08030
+- $schema: citation_card.schema.json
+  id: cite-glosa-v0-3-q3-006
+  claim_ref: Q3
+  identifier:
+    kind: DOI
+    value: 10.3389/fphar.2023.1214422
+  fetch_status: FETCHED
+  fetched_at: '2026-09-05'
+  metadata_verified: true
+  metadata_verified_by: mechanical:crossref (api.crossref.org/works/10.3389/fphar.2023.1214422 -- title,
+    container-title, published date, author list confirmed) + curl+html-strip of the PMC full-text page
+  metadata_verified_at: '2026-09-05'
+  claim_match_verified: true
+  claim_match_verified_by: self:same-session-read (I1, NOT independent -- awaiting a decorrelated I3 cross-vendor
+    route to upgrade status to VERIFIED per Rule 17/S14; task instruction caps status at METADATA_OK for
+    this pass)
+  claim_match_verified_at: '2026-09-05'
+  exact_passage: An analysis of statutes governing medical devices in the selected African countries shows
+    that no single piece of legislation explicitly mentions AI or algorithms within the definition of
+    a medical device.
+  page_or_locator: PMC10484713 full text (Townsend, Sihlahla, Naidoo, Naidoo & Donnelly, 'Mapping the
+    regulatory landscape of AI in healthcare in Africa', Front. Pharmacol. 14:1214422, 2023), section
+    on digital health law, as fetched 2026-09-05
+  line_or_paragraph: line 130 of the fetched/stripped PMC full-text page
+  scope: DIRECT_QUOTATION
+  evidence_tier: Dr
+  independence_class: I1
+  who_verified: same-session AI (I1, non-independent) -- metadata confirmed mechanically, passage read
+    and matched to Q3 by the same session that ran the search; no cross-vendor I3 route run in this pass
+  verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
+  status: METADATA_OK
+  xenon_ledger_ref: null
+  disclosure: 'Townsend, Sihlahla, Naidoo, Naidoo & Donnelly (2023), ''Mapping the regulatory landscape
+    of AI in healthcare in Africa'' (EN, peer-reviewed, Frontiers in Pharmacology; Global South -- 12
+    African countries studied). Fetched and read directly (curl + stdlib HTML stripper for web pages;
+    pdftotext -l 8 for the one PDF source) 2026-09-05, one page kept in memory at a time per RAM limit.
+    Read as: A scoping legal-mapping study across 12 African countries (Botswana, Cameroon, Gambia, Ghana,
+    Kenya, Malawi, Nigeria, Rwanda, South Africa, Tanzania, Uganda, Zimbabwe) treating the medical-device/AI
+    regulatory boundary as an empirical legislative-text question, jurisdiction by jurisdiction, rather
+    than assuming one settled global definition. stance vs Q3 as read: NO. independence_class I1 (same
+    session) -- status METADATA_OK only, not VERIFIED: no decorrelated I3 cross-vendor route has checked
+    this card yet. No novel/first/prior-art claim made about this source; comparison to Q3 is same/different/orthogonal
+    as stated in dialogue_table_stance.'
+  superseded_by: null
+  notes: 'Diversity: language=en, source_type=peer_reviewed, geography_or_institution=Global South (Africa),
+    search_route_or_database="web search / direct regulator-site fetch, glosa-v0-3 Q3 scoping pass". dialogue_table_stance:
+    disagrees. what_it_separates: Separates the 9 of 12 countries where ''software'' appears nowhere in
+    the medical-device definition from the 3 (South Africa, Kenya, Uganda) where software is broadly construed
+    to include SaMD -- and even there, notes the frameworks lack AI-specific risk classification, lifecycle
+    oversight, or algorithm-validation guidance. what_it_assumes: Assumes national statute text is the
+    right unit of analysis for ''is this AI a medical device''; does not itself address disclaimer wording
+    or runtime scope-boundary clauses, only whether the underlying legal category a disclaimer would reference
+    exists at all in these jurisdictions. what_it_would_say_against_us: A reusable scope-boundary clause
+    of the EU/US SaMD kind presupposes a legal category (''medical device'' covering AI/algorithms) that,
+    per this peer-reviewed mapping, is explicitly absent from the medical-device statutes of 9 of the
+    12 African countries studied -- a template built against the EU AI Act / FDA SaMD framing may simply
+    not travel to jurisdictions where the underlying legal hook it references does not yet exist, a concrete
+    Global-South limit on ''standardize across all our disclaimers''.'
+  citation_card_id: cite-glosa-v0-3-q3-006
+  identifier_kind: DOI
+  claim_match_verification_route: NOT_YET
+  retraction_check: UNCHECKED
+  version_status: PUBLISHED
+  dialogue_table_stance: disagrees
+  diversity:
+    language: en
+    discipline_or_tradition: health/AI regulation and disclaimer practice
+    source_type: peer_reviewed
+    search_route_or_database: web search / direct regulator-site fetch, glosa-v0-3 Q3 scoping pass
+    geography_or_institution: Global South (Africa)
+    venue_quality_index:
+      index_name: null
+      value: null
+      date_read: null
+  fetched_from_url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10484713/
+- $schema: citation_card.schema.json
+  id: cite-glosa-v0-3-q3-007
+  claim_ref: Q3
+  identifier:
+    kind: OFFICIAL_URL
+    value: https://www.techpolicy.press/lessons-from-nigeria-and-kenya-on-digital-colonialism-in-ai-health-messaging/
+  fetch_status: FETCHED
+  fetched_at: '2026-09-05'
+  metadata_verified: true
+  metadata_verified_by: mechanical:curl+html-strip (Tech Policy Press perspective article fetched directly;
+    byline, date and outlet read from the fetched page)
+  metadata_verified_at: '2026-09-05'
+  claim_match_verified: true
+  claim_match_verified_by: self:same-session-read (I1, NOT independent -- awaiting a decorrelated I3 cross-vendor
+    route to upgrade status to VERIFIED per Rule 17/S14; task instruction caps status at METADATA_OK for
+    this pass)
+  claim_match_verified_at: '2026-09-05'
+  exact_passage: A key part of this protection is distinguishing between AI as a general-purpose tool
+    and AI as a health product.
+  page_or_locator: techpolicy.press, 'Lessons from Nigeria and Kenya on Digital Colonialism in AI Health
+    Messaging' (Addie & McNealy, Oct 3, 2025), section 'The necessity of good governance', as fetched
+    2026-09-05
+  line_or_paragraph: line 33 of the fetched/stripped page text
+  scope: DIRECT_QUOTATION
+  evidence_tier: Dr
+  independence_class: I1
+  who_verified: same-session AI (I1, non-independent) -- metadata confirmed mechanically, passage read
+    and matched to Q3 by the same session that ran the search; no cross-vendor I3 route run in this pass
+  verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
+  status: METADATA_OK
+  xenon_ledger_ref: null
+  disclosure: 'Addie & McNealy, ''Lessons from Nigeria and Kenya on Digital Colonialism in AI Health Messaging'',
+    Tech Policy Press (EN, grey/community perspective piece; Global South -- Nigeria/Kenya health-messaging
+    study). Fetched and read directly (curl + stdlib HTML stripper for web pages; pdftotext -l 8 for the
+    one PDF source) 2026-09-05, one page kept in memory at a time per RAM limit. Read as: Frames the general-purpose-vs-health-product
+    distinction as a GOVERNANCE requirement (grounded in a comparative study of WHO''s S.A.R.A.H. chatbot
+    and ChatGPT against 80 traditional health campaigns in Nigeria and Kenya), not a legal-liability clause
+    -- the same underlying cut Q3 asks about, reached independently from a health-communication-equity
+    angle. stance vs Q3 as read: YES. independence_class I1 (same session) -- status METADATA_OK only,
+    not VERIFIED: no decorrelated I3 cross-vendor route has checked this card yet. No novel/first/prior-art
+    claim made about this source; comparison to Q3 is same/different/orthogonal as stated in dialogue_table_stance.'
+  superseded_by: null
+  notes: 'Diversity: language=en, source_type=community, geography_or_institution=Global South (Africa),
+    search_route_or_database="web search / direct regulator-site fetch, glosa-v0-3 Q3 scoping pass". dialogue_table_stance:
+    agrees. what_it_separates: Separates AI systems ''designed for broad tasks'' (ChatGPT, Gemini) from
+    AI as a ''health product'' requiring ''alignment with clinical guidelines, rigorous privacy safeguards,
+    and community co-design'' -- explicitly naming this distinction as a protective mechanism against
+    exploitative or careless deployment. what_it_assumes: Assumes the distinction, once made, should drive
+    downstream GOVERNANCE obligations (consultation, impact assessment, co-design) rather than settling
+    for disclaimer text; does not specify what a reusable disclaimer clause implementing this distinction
+    would actually say. what_it_would_say_against_us: Supports the general shape of Q3''s question --
+    a general-purpose/health-product distinction is treated here as necessary and reusable across contexts
+    -- but frames it as a governance-process requirement embedded in deployment practice, not a standardized
+    disclaimer string; citing this source as backing for a TEXT-level template would overstate what the
+    source actually recommends (process obligations, not boilerplate).'
+  citation_card_id: cite-glosa-v0-3-q3-007
+  identifier_kind: OFFICIAL_URL
+  claim_match_verification_route: NOT_YET
+  retraction_check: UNCHECKED
+  version_status: PUBLISHED
+  dialogue_table_stance: agrees
+  diversity:
+    language: en
+    discipline_or_tradition: health/AI regulation and disclaimer practice
+    source_type: community
+    search_route_or_database: web search / direct regulator-site fetch, glosa-v0-3 Q3 scoping pass
+    geography_or_institution: Global South (Africa)
+    venue_quality_index:
+      index_name: null
+      value: null
+      date_read: null
+  fetched_from_url: https://www.techpolicy.press/lessons-from-nigeria-and-kenya-on-digital-colonialism-in-ai-health-messaging/
+- $schema: citation_card.schema.json
+  id: cite-glosa-v0-3-q3-008
+  claim_ref: Q3
+  identifier:
+    kind: OFFICIAL_URL
+    value: https://thelegalpaige.com/blogs/blog/navigating-the-artificial-intelligence-landscape-choosing-the-right-ai-disclaimer-for-your-business
+  fetch_status: FETCHED
+  fetched_at: '2026-09-05'
+  metadata_verified: true
+  metadata_verified_by: mechanical:curl+html-strip (legal-services vendor blog fetched directly)
+  metadata_verified_at: '2026-09-05'
+  claim_match_verified: true
+  claim_match_verified_by: self:same-session-read (I1, NOT independent -- awaiting a decorrelated I3 cross-vendor
+    route to upgrade status to VERIFIED per Rule 17/S14; task instruction caps status at METADATA_OK for
+    this pass)
+  claim_match_verified_at: '2026-09-05'
+  exact_passage: The type of AI disclaimer you need depends on your services. For example, the AI tools
+    photographers use are different from those of a social media manager or copywriter. You may also need
+    to tailor your AI disclaimer to your clients.
+  page_or_locator: 'thelegalpaige.com blog, ''Navigating the Artificial Intelligence Landscape: Choosing
+    the Right AI Disclaimer for Your Business'', as fetched 2026-09-05'
+  line_or_paragraph: line 247 of the fetched/stripped page text
+  scope: DIRECT_QUOTATION
+  evidence_tier: Dr
+  independence_class: I1
+  who_verified: same-session AI (I1, non-independent) -- metadata confirmed mechanically, passage read
+    and matched to Q3 by the same session that ran the search; no cross-vendor I3 route run in this pass
+  verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
+  status: METADATA_OK
+  xenon_ledger_ref: null
+  disclosure: 'The Legal Paige, ''Choosing the Right AI Disclaimer for Your Business'' (EN, grey/community
+    -- commercial legal-templates blog aimed at small-business/creative-services clients). Fetched and
+    read directly (curl + stdlib HTML stripper for web pages; pdftotext -l 8 for the one PDF source) 2026-09-05,
+    one page kept in memory at a time per RAM limit. Read as: A commercial legal-templates vendor''s practical
+    advice: frames disclaimer choice as a function of WHICH SERVICE the AI is used for (photography vs
+    social-media management vs copywriting), then sells per-service template packs rather than one generic
+    clause. stance vs Q3 as read: NO. independence_class I1 (same session) -- status METADATA_OK only,
+    not VERIFIED: no decorrelated I3 cross-vendor route has checked this card yet. No novel/first/prior-art
+    claim made about this source; comparison to Q3 is same/different/orthogonal as stated in dialogue_table_stance.'
+  superseded_by: null
+  notes: 'Diversity: language=en, source_type=practitioner, geography_or_institution=US, search_route_or_database="web
+    search / direct regulator-site fetch, glosa-v0-3 Q3 scoping pass". dialogue_table_stance: disagrees.
+    what_it_separates: Separates disclaimer needs by professional service category and by client relationship
+    (''tailor your AI disclaimer to your clients''), explicitly rejecting a one-size-fits-all clause even
+    within the single non-clinical/non-legal small-business domain this vendor serves. what_it_assumes:
+    Assumes a US small-business/creative-freelancer audience needing contract-embedded disclaimers for
+    client work; not a health or legal-advice context specifically, and not itself peer-reviewed or regulatory
+    -- a commercial vendor''s own sales framing, disclosed as such and read for its stated reasoning only.
+    what_it_would_say_against_us: A direct, if commercially motivated, statement that even a single non-clinical/non-medical/non-legal-advice
+    domain (creative freelance services) already needs SERVICE-SPECIFIC and CLIENT-SPECIFIC disclaimer
+    variants in this vendor''s own practice -- a concrete instance of the standardization move failing
+    to hold even within one non-regulated domain, before crossing into health/legal territory at all.'
+  citation_card_id: cite-glosa-v0-3-q3-008
+  identifier_kind: OFFICIAL_URL
+  claim_match_verification_route: NOT_YET
+  retraction_check: UNCHECKED
+  version_status: PUBLISHED
+  dialogue_table_stance: disagrees
+  diversity:
+    language: en
+    discipline_or_tradition: health/AI regulation and disclaimer practice
+    source_type: practitioner
+    search_route_or_database: web search / direct regulator-site fetch, glosa-v0-3 Q3 scoping pass
+    geography_or_institution: US
+    venue_quality_index:
+      index_name: null
+      value: null
+      date_read: null
+  fetched_from_url: https://thelegalpaige.com/blogs/blog/navigating-the-artificial-intelligence-landscape-choosing-the-right-ai-disclaimer-for-your-business
+strata_table: []
+diversity_audit:
+  counts:
+    by_language:
+      en: 6
+      th: 2
+    by_source_type: {}
+    by_search_route_or_database: {}
+    by_stance:
+      agrees: 1
+      disagrees: 4
+      orthogonal: 3
+      undetermined: 0
+    by_geography_or_institution: {}
+  concentration_flags: []
+  zero_disagree_flag: false
+  never_claim_diverse_without_counts: true
+accuracy:
+  total_citations: 8
+  verified_count: 0
+  spot_check:
+    applicable: true
+    proposed_n_percent: 20
+    small_n_rule_applied: true
+    sampled_citation_ids: []
+    sample_size: 0
+    spot_check_result: PENDING
+    spot_checked_by: null
+    spot_checked_at: null
+secondary_citation_ban_audit:
+  violations_found: 0
+gate:
+  accuracy_gate: FAIL
+  diversity_gate: PASS
+  overall: FAIL
+  blocked_reason: Not every listed citation reached VERIFIED yet.
+disclaimers_emitted:
+- id: D-CITATION-UNVERIFIED
+human_owner: founder

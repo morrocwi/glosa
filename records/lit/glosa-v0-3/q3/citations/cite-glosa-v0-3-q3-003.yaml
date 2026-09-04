@@ -1,0 +1,69 @@
+$schema: citation_card.schema.json
+id: cite-glosa-v0-3-q3-003
+claim_ref: Q3
+identifier:
+  kind: OFFICIAL_URL
+  value: https://medical.fda.moph.go.th/samd-head
+fetch_status: FETCHED
+fetched_at: '2026-09-05'
+metadata_verified: true
+metadata_verified_by: mechanical:curl+html-strip (Thai FDA Medical Device Control Division official page
+  fetched directly)
+metadata_verified_at: '2026-09-05'
+claim_match_verified: true
+claim_match_verified_by: self:same-session-read (I1, NOT independent -- awaiting a decorrelated I3 cross-vendor
+  route to upgrade status to VERIFIED per Rule 17/S14; task instruction caps status at METADATA_OK for
+  this pass)
+claim_match_verified_at: '2026-09-05'
+exact_passage: ซอฟต์แวร์ที่ใช้งานโดยลำพัง (Standalone software) หมายถึง ซอฟต์แวร์และ/หรือแอปพลิชันบนมือถือที่ใช้งานโดยลำพัง
+  และไม่มีวัตถุประสงค์ในการควบคุมหรือมีผลต่อฮาร์ดแวร์ของเครื่องมือแพทย์
+page_or_locator: medical.fda.moph.go.th (Thai FDA Medical Device Control Division), page 'การกำกับดูแลซอฟต์แวร์และปัญญาประดิษฐ์ที่เป็นเครื่องมือแพทย์'
+  > 'หลักเกณฑ์การคัดกรองซอฟต์แวร์และปัญญาประดิษฐ์ที่เข้าข่ายเครื่องมือแพทย์', definitions list, as fetched
+  2026-09-05
+line_or_paragraph: line 136 of the fetched/stripped page text
+scope: CONTEXT_ONLY_NOT_EVIDENCE
+evidence_tier: Dr
+independence_class: I1
+who_verified: same-session AI (I1, non-independent) -- metadata confirmed mechanically, passage read and
+  matched to Q3 by the same session that ran the search; no cross-vendor I3 route run in this pass
+verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
+status: METADATA_OK
+xenon_ledger_ref: null
+disclosure: 'Thai FDA (อย.) Medical Device Control Division, SaMD screening-criteria page (TH, primary
+  regulatory text, Thailand). Fetched and read directly (curl + stdlib HTML stripper for web pages; pdftotext
+  -l 8 for the one PDF source) 2026-09-05, one page kept in memory at a time per RAM limit. Read as: Gives
+  Thailand''s own definitional split for medical-device software (embedded / standalone / accessory /
+  non-device), then routes classification through whether the product has a ''medical purpose'' under
+  the Medical Device Act -- a category test, not a disclaimer-wording template. stance vs Q3 as read:
+  ORTHOGONAL. independence_class I1 (same session) -- status METADATA_OK only, not VERIFIED: no decorrelated
+  I3 cross-vendor route has checked this card yet. No novel/first/prior-art claim made about this source;
+  comparison to Q3 is same/different/orthogonal as stated in dialogue_table_stance.'
+superseded_by: null
+notes: 'Diversity: language=th, source_type=grey_literature, geography_or_institution=Thailand, search_route_or_database="web
+  search / direct regulator-site fetch, glosa-v0-3 Q3 scoping pass". dialogue_table_stance: orthogonal.
+  what_it_separates: Separates standalone software/apps with no intent to control or affect medical-device
+  hardware from software that is itself, or an accessory to, a medical device -- a structural/functional
+  split, not a language-of-disclaimer split. what_it_assumes: Assumes the reader is a manufacturer/importer
+  running the Thai medical-device intake flowchart; says nothing about how a product that falls OUTSIDE
+  this definition (e.g. a general information/wellness assistant) should word its own non-medical scope
+  disclaimer to end users. what_it_would_say_against_us: Shows that even the prior legal question a scope-boundary
+  clause would need to track -- ''is this software a medical device at all under Thai law'' -- is itself
+  a multi-part, jurisdiction-specific test, not a single settled line; a reusable clause would still need
+  to sit on top of a classification this granular, which this page does not by itself resolve.'
+citation_card_id: cite-glosa-v0-3-q3-003
+identifier_kind: OFFICIAL_URL
+claim_match_verification_route: NOT_YET
+retraction_check: UNCHECKED
+version_status: PUBLISHED
+dialogue_table_stance: orthogonal
+diversity:
+  language: th
+  discipline_or_tradition: health/AI regulation and disclaimer practice
+  source_type: grey_literature
+  search_route_or_database: web search / direct regulator-site fetch, glosa-v0-3 Q3 scoping pass
+  geography_or_institution: Thailand
+  venue_quality_index:
+    index_name: null
+    value: null
+    date_read: null
+fetched_from_url: https://medical.fda.moph.go.th/samd-head

@@ -1,0 +1,25 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: Q6
+source_label: Cofact (โคแฟค), 'How to use cofact.org' (TH, grey/community civic fact-checking platform,
+  Thailand)
+how_it_sees_the_problem: Shows a live, operational Thai fact-checking workflow that already treats 'not
+  within the scope that can be checked' as its OWN comment category -- distinct from 'fully true', 'partly
+  true', and 'deceptive' -- i.e. the platform independently arrived at needing a checkability-status tag
+  separate from a truth-value tag, which is structurally close to what Q6 proposes for glosa's schema.
+what_it_separates: Separates a truth-value judgment (true/partly true/false) from a CHECKABILITY judgment
+  (whether the claim is even the kind of thing this platform's process can verify at all) -- four distinct
+  categories, not a binary.
+what_it_assumes: Assumes a crowd-sourced comment workflow where volunteers tag individual claims after
+  reading them; does not itself address a source-level or claim-card-level schema flag for 'claims verifiable
+  with no stated procedure' the way Q6 does -- it is a downstream categorization tool, not an intake-time
+  red flag.
+stance: ORTHOGONAL
+what_it_would_say_against_us: Supports the general idea that checkability-status deserves its OWN category
+  rather than being folded into true/false, lending some structural precedent to Q6's proposal; but Cofact's
+  category answers 'can WE check this claim', not 'does the SOURCE itself claim checkability without showing
+  how' -- the two are related but not identical, so citing this as direct support for Q6's specific wording
+  would overstate the match.
+citation_card: cite-glosa-v0-3-q6-005
+verified:
+  metadata_verified: true
+  claim_match_verified: true

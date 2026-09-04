@@ -1,0 +1,69 @@
+$schema: citation_card.schema.json
+id: cite-glosa-v0-3-q6-005
+claim_ref: Q6
+identifier:
+  kind: OFFICIAL_URL
+  value: https://cofact.org/howto
+fetch_status: FETCHED
+fetched_at: '2026-09-05'
+metadata_verified: true
+metadata_verified_by: mechanical:curl+html-strip (Cofact, Thai civic fact-checking platform, official
+  how-to page fetched directly)
+metadata_verified_at: '2026-09-05'
+claim_match_verified: true
+claim_match_verified_by: self:same-session-read (I1, NOT independent -- awaiting a decorrelated I3 cross-vendor
+  route to upgrade status to VERIFIED per Rule 17/S14; task instruction caps status at METADATA_OK for
+  this pass)
+claim_match_verified_at: '2026-09-05'
+exact_passage: ไม่อยู่ในขอบเขตการตรวจสอบ (หมายถึง เรื่องนี้ไม่ใช่ข่าวที่อยู่ในวิสัยที่จะตรวจสอบได้)
+page_or_locator: cofact.org/howto, 'วิธีการ Comment ข่าวหรือข้อความบนเว็บไซต์' section, list of 4 comment
+  categories, as fetched 2026-09-05
+line_or_paragraph: line 57 of the fetched/stripped page text
+scope: DIRECT_QUOTATION
+evidence_tier: Dr
+independence_class: I1
+who_verified: same-session AI (I1, non-independent) -- metadata confirmed mechanically, passage read and
+  matched to Q6 by the same session that ran the search; no cross-vendor I3 route run in this pass
+verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
+status: METADATA_OK
+xenon_ledger_ref: null
+disclosure: 'Cofact (โคแฟค) (TH, grey/community civic fact-checking platform, Thailand). Fetched and read
+  directly (curl + stdlib HTML stripper for web pages; pdftotext -l 8 for the one PDF source) 2026-09-05,
+  one page kept in memory at a time per RAM limit. Read as: Shows a live, operational Thai fact-checking
+  workflow that already treats ''not within the scope that can be checked'' as its OWN comment category
+  -- distinct from ''fully true'', ''partly true'', and ''deceptive'' -- i.e. the platform independently
+  arrived at needing a checkability-status tag separate from a truth-value tag, which is structurally
+  close to what Q6 proposes for glosa''s schema. stance vs Q6 as read: ORTHOGONAL. independence_class
+  I1 (same session) -- status METADATA_OK only, not VERIFIED: no decorrelated I3 cross-vendor route has
+  checked this card yet. No novel/first/prior-art claim made about this source; comparison to Q6 is same/different/orthogonal
+  as stated in dialogue_table_stance.'
+superseded_by: null
+notes: 'Diversity: language=th, source_type=community, geography_or_institution=Thailand, search_route_or_database="web
+  search / direct fetch, glosa-v0-3 Q6 scoping pass". dialogue_table_stance: orthogonal. what_it_separates:
+  Separates a truth-value judgment (true/partly true/false) from a CHECKABILITY judgment (whether the
+  claim is even the kind of thing this platform''s process can verify at all) -- four distinct categories,
+  not a binary. what_it_assumes: Assumes a crowd-sourced comment workflow where volunteers tag individual
+  claims after reading them; does not itself address a source-level or claim-card-level schema flag for
+  ''claims verifiable with no stated procedure'' the way Q6 does -- it is a downstream categorization
+  tool, not an intake-time red flag. what_it_would_say_against_us: Supports the general idea that checkability-status
+  deserves its OWN category rather than being folded into true/false, lending some structural precedent
+  to Q6''s proposal; but Cofact''s category answers ''can WE check this claim'', not ''does the SOURCE
+  itself claim checkability without showing how'' -- the two are related but not identical, so citing
+  this as direct support for Q6''s specific wording would overstate the match.'
+citation_card_id: cite-glosa-v0-3-q6-005
+identifier_kind: OFFICIAL_URL
+claim_match_verification_route: NOT_YET
+retraction_check: UNCHECKED
+version_status: PUBLISHED
+dialogue_table_stance: orthogonal
+fetched_from_url: https://cofact.org/howto
+diversity:
+  language: th
+  discipline_or_tradition: epistemic hedging / verifiability / disclaimer-catalogue design
+  source_type: community
+  search_route_or_database: web search / direct fetch, glosa-v0-3 Q6 scoping pass
+  geography_or_institution: Thailand
+  venue_quality_index:
+    index_name: null
+    value: null
+    date_read: null

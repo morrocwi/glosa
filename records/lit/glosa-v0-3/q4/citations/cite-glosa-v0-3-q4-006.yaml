@@ -1,0 +1,52 @@
+$schema: citation_card.schema.json
+id: cite-glosa-v0-3-q4-006
+claim_ref: Q4
+identifier:
+  kind: DOI
+  value: 10.1111/ijmr.12102
+fetch_status: PAYWALLED_ABSTRACT_ONLY
+fetched_at: '2026-09-05'
+metadata_verified: true
+metadata_verified_by: mechanical:crossref
+metadata_verified_at: '2026-09-05'
+claim_match_verified: true
+claim_match_verified_by: route:I0
+claim_match_verified_at: '2026-09-05'
+exact_passage: >-
+  This paper suggests how the 'grey literature', the diverse and heterogeneous body of material
+  that is made public outside, and not subject to, traditional academic peer-review processes,
+  can be used to increase the relevance and impact of management and organization studies (MOS).
+  ... This investigation updates previous guidelines for more inclusive systematic reviews that
+  respond to criticisms of current review practices and the needs of evidence-based management.
+page_or_locator: Abstract (Crossref work record for DOI 10.1111/ijmr.12102)
+line_or_paragraph: first sentence and final sentence of the single-paragraph abstract
+scope: DIRECT_QUOTATION
+evidence_tier: Dr
+independence_class: I0
+who_verified: I0 (this session, same-session read of the mechanically fetched Crossref abstract
+  field; no cross-vendor or independent human check has run yet)
+verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
+status: METADATA_OK
+xenon_ledger_ref: null
+disclosure: >-
+  I0 only (same session, not independently checked). Title/authors/journal/year/DOI confirmed
+  mechanically via Crossref (https://api.crossref.org/works/10.1111/ijmr.12102): Adams RJ, Smart
+  P, Huff AS, "Shades of Grey: Guidelines for Working with the Grey Literature in Systematic
+  Reviews for Management and Organizational Studies," International Journal of Management
+  Reviews, 2016/2017. Full text is not open access (Wiley Online Library returned a Cloudflare
+  "Just a moment..." interstitial to a scripted curl fetch); this card is
+  PAYWALLED_ABSTRACT_ONLY / METADATA_OK, not VERIFIED. The abstract text quoted here was itself
+  returned directly by the Crossref metadata API in its `abstract` field -- read as fetched, not
+  from memory. This source SUPPORTS Q4's premise: the paper's own framing ("updates previous
+  guidelines... that respond to criticisms of current review practices") documents that, prior to
+  this 2016/2017 methodological intervention, management/organization-studies systematic reviews
+  lacked settled, explicit guidance for how to treat grey literature -- i.e. the field itself
+  identified an intake-rule gap for undeclared/informal sources and had to build new guidance to
+  close it, directly analogous to what Q4 proposes for glosa's own intake gate.
+superseded_by: null
+notes: >-
+  Global North (UK/Ireland: Surrey, Cranfield, Maynooth), EN, peer-reviewed journal article,
+  discipline: management and organization studies / systematic review methodology. Found via
+  query family: challenge ('grey literature systematic review inclusion criteria quality
+  appraisal framework'). Dialogue-table stance: YES.
+fetched_from_url: https://api.crossref.org/works/10.1111/ijmr.12102

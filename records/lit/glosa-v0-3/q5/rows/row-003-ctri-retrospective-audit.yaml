@@ -1,0 +1,22 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: Q5
+source_label: Birajdar et al. 2019, "An audit of studies registered retrospectively with the Clinical
+  Trials Registry of India", Perspect Clin Res 10(1):26-30 (PMC6371709)
+how_it_sees_the_problem: A one-year audit of India's national trial registry (CTRI) found 63% of
+  studies registered in 2016 were registered retrospectively (after enrolment began), with a median
+  lag time of 428 days and a maximum of 5399 days -- direct empirical evidence that an unenforced
+  "register before you start" norm is widely gamed even where a timestamp field already exists.
+what_it_separates: Separates studies that comply with the timing norm from those that do not, by
+  measuring the actual lag between enrolment and registration -- an empirical readout of gate failure,
+  not a proposal for a gate.
+what_it_assumes: Assumes CTRI's own registration-date field is itself trustworthy/unfalsified (the
+  audit does not independently verify the registered dates against a separate source); does not
+  address ethics-approval timing at all, only registration-vs-enrolment timing.
+stance: "YES"
+what_it_would_say_against_us: A norm alone ("should preregister before data") demonstrably does not
+  produce compliance at scale (63% failed it here) -- so a hard glosa gate needs the checkable field
+  AND an enforcement mechanism, not just a schema field nobody is forced to satisfy.
+citation_card: cite-glosa-v0-3-q5-003
+verified:
+  metadata_verified: true
+  claim_match_verified: true

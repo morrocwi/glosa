@@ -1,0 +1,31 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: Q1
+source_label: "DiMaggio PJ, Powell WW (1983), The Iron Cage Revisited: Institutional Isomorphism
+  and Collective Rationality in Organizational Fields (American Sociological Review)"
+how_it_sees_the_problem: >-
+  Frames the problem as: once a set of organizations forms a recognizable "field," an initially
+  diverse range of approaches gives way to an "inexorable push towards homogenization" via three
+  named mechanisms (coercive, mimetic, normative) -- a single theory documented across
+  publishing, legal education, hospitals, public schools, radio, and high-culture institutions.
+what_it_separates: >-
+  Separates the field's early, diverse stage from its post-stabilization, homogenized stage, and
+  further separates the three distinct causal mechanisms (coercion, mimicry, professional
+  normativity) that drive the same surface outcome -- a mechanism-level distinction Q1's PCS
+  concept (as currently described) does not yet make.
+what_it_assumes: >-
+  Assumes "organizational field" is a coherent unit of analysis and that homogenization, once a
+  field is established, is close to inevitable rather than contingent; does not itself address
+  epistemics, categorization of belief/claims, or non-organizational domains (tourism narrative,
+  religious-calendar categories) the way Q1's source case studies do.
+stance: "YES"
+what_it_would_say_against_us: >-
+  If PCS stayed domain content confined to tourism/hilal/service-template cases, this paper would
+  say that is an under-generalization: the identical structural pattern (early diversity ->
+  field-wide lock-in via named, portable mechanisms) is already independently documented and
+  named across half a dozen unrelated domains in organizational sociology, which is direct
+  evidence in favor of Q1's premise that PCS belongs at the kernel/base-hub level, not confined to
+  its three originating cases.
+citation_card: cite-glosa-v0-3-q1-002
+verified:
+  metadata_verified: true
+  claim_match_verified: true

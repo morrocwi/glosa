@@ -1,0 +1,26 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: Q7
+source_label: mgronline.com (Manager Online, TH mainstream news outlet, popular-science section), article
+  on George Cantor
+how_it_sees_the_problem: A Thai-language popular-science retelling of Hilbert's "Cantor's paradise" epigram
+  that keeps and foregrounds the theological framing (explicitly naming พระเจ้า/God) rather than softening
+  it into a purely secular metaphor, evidencing that the transcendental-ground framing of mathematical
+  infinity has diffused into Thai general-audience science writing.
+what_it_separates: Separates Hilbert's ORIGINAL epigram (a secular tribute to Cantor's mathematical achievement,
+  not a theological claim) from its Thai popular retelling, which foregrounds "พระเจ้า" (God) in a way
+  that reads, to a Thai audience, as more overtly theological framing than the source English idiom usually
+  carries.
+what_it_assumes: Assumes the reader already knows who Hilbert and Cantor are and treats the "Eden"/"God"
+  language as a colorful rhetorical flourish rather than pausing to argue for or against a transcendence
+  reading of infinity -- i.e. it assumes rather than argues the theological metaphor is apt.
+stance: ORTHOGONAL
+what_it_would_say_against_us: Popular-science diffusion of theologically-loaded infinity language (even
+  outside a Christian-majority context, in Thai Buddhist-majority general media) shows the transcendental-ground
+  framing has cultural reach beyond specialist philosophy/theology circles -- but because this source only
+  REPEATS an inherited quotation rather than arguing for the stance, it is weak evidence for "genuine rival
+  epistemic stance" and better read as evidence the metaphor is culturally familiar enough to need addressing
+  (even if only by a flagged note) rather than evidence it demands formal epistemic reconciliation.
+citation_card: cite-glosa-v0-3-q7-008
+verified:
+  metadata_verified: true
+  claim_match_verified: true

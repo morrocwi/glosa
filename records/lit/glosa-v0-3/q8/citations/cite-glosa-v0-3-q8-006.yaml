@@ -1,0 +1,57 @@
+$schema: citation_card.schema.json
+id: cite-glosa-v0-3-q8-006
+claim_ref: Q8
+identifier:
+  kind: OFFICIAL_URL
+  value: https://edusoshum.org/index.php/EDU/article/download/4/29
+fetch_status: FETCHED
+fetched_at: '2026-09-05'
+metadata_verified: true
+metadata_verified_by: mechanical:page-metadata
+metadata_verified_at: '2026-09-05'
+claim_match_verified: true
+claim_match_verified_by: route:I0
+claim_match_verified_at: '2026-09-05'
+exact_passage: >-
+  ontology sering diidentikan dengan metafisika dan juga disebut dengan proto-filsafat atau
+  filsafat yang pertama atau filsafat ketuhanan yang bahasanya ialah hakikat sesuatu, keesaan,
+  persekutuan, sebab dan akibat, realita, prima atau tuhan dengan segala sifatnya, malaikat,
+  relasi atau segala sesuatu yang ada di bumi dengan tenaga yang ada di lanit, wahyu, akhirat,
+  dosa, neraka, pahala dan surge
+page_or_locator: 'EDUSOSHUM: Journal of Islamic Education and Social Humanities, Vol. 1 No. 1
+  (2020), "Dimensi Ontologi, Epistemologi dan Aksiologi Pendidikan Islam" (Fawwaz Noor Amirul
+  Huda, Universitas Ahmad Dahlan Yogyakarta), p. 69, section 3 ("Results and Discussion")'
+line_or_paragraph: paragraph beginning "Kajian filsafat ilmu yang pertama ialah pada persoalan
+  ontology" (pdftotext-extracted lines 116-118 of the fetched PDF, first 8 pages)
+scope: DIRECT_QUOTATION
+evidence_tier: Open
+independence_class: I0
+who_verified: I0 (this session, same-session curl fetch + pdftotext -l 8 extraction; no
+  cross-vendor or independent human check has run yet)
+verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
+status: METADATA_OK
+xenon_ledger_ref: null
+disclosure: >-
+  I0 only (same session, not independently checked; ISSN 2776-5229 read directly off the PDF's
+  own front matter). This is an Indonesian-language open-access journal article, non-peer-review
+  status not independently confirmed beyond the journal's own self-presentation --
+  evidence_tier set to Open accordingly. CHALLENGE/orthogonal evidence for Q8: in this
+  Indonesian Islamic-education philosophy literature's own framing, "ontology" is directly
+  glossed AS "filsafat ketuhanan" (the philosophy/theology of God) whose very vocabulary
+  ("bahasanya") includes cause-and-effect, ultimate reality, and God with all His attributes in
+  one undivided list -- i.e. this Global South/Southeast Asian source does not itself treat
+  ontology and theology as separable domains at all, which is evidence (from within an
+  Indonesian Islamic-studies context, not a Western secular one) against the premise that
+  extracting a theology-neutral structural layer from Islamic ontological constructs is a
+  straightforward move even in principle, independent of whether Western secular philosophy
+  (cards 001-004 above) happens to supply an external analogue anyway.
+superseded_by: null
+notes: >-
+  Indonesian language (Malay/Indonesian-family non-EN search per Q8's frozen scope),
+  Global South / Southeast Asia (Universitas Ahmad Dahlan, Yogyakarta), peer-reviewed-claiming
+  open-access journal article (independence of the review process not separately verified this
+  session). Found via query family: challenge ('metafizik pergantungan ontologi filsafat proses
+  kajian Islam'). Dialogue-table stance: ORTHOGONAL (complicates the question rather than
+  directly answering it -- speaks to whether ontology/theology separation is even locally
+  intelligible, not directly to whether a Western-philosophy analogue transfers).
+fetched_from_url: https://edusoshum.org/index.php/EDU/article/download/4/29

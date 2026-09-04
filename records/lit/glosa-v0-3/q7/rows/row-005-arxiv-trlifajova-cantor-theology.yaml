@@ -1,0 +1,24 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: Q7
+source_label: 'arXiv:2407.18972, Trlifajová, "Theological reasoning of Cantor''s set theory" (EN preprint)'
+how_it_sees_the_problem: Documents, as a historical-philosophical claim, that actual infinity was explicitly
+  a THEOLOGICAL question for a millennium (infinitum actu non datur), because infinity was held to be an
+  attribute of God -- directly on point for Q7's premise that the transcendental-ground stance is not a
+  modern rhetorical add-on but the historically dominant framing of the actual-infinity question itself.
+what_it_separates: Separates the mathematical QUESTION (can an infinite set be a completed mathematical
+  object) from the THEOLOGICAL STAKES that historically made the question urgent (infinity as a divine
+  attribute, so mathematizing it risked "assault on the unique and absolute nature of God") -- the two
+  are shown as historically entangled, not cleanly separable.
+what_it_assumes: Assumes a Western Scholastic/Catholic framing of the theology-mathematics relationship;
+  does not survey non-Christian transcendence traditions (Islamic, Buddhist, Neoplatonist outside the Christian
+  reception) as parallel or rival cases.
+stance: 'YES'
+what_it_would_say_against_us: If the very possibility of actual infinity in mathematics was historically
+  SETTLED via theological argument (Vatican approval after neo-Thomist advocacy, per this source's abstract),
+  then treating infinity-as-transcendental-ground as an optional add-on tension rather than a formally
+  engaged premise may understate how load-bearing that stance actually was in getting actual infinity accepted
+  into mathematics at all -- an argument for genuine reconciliation rather than a flagged-open tension.
+citation_card: cite-glosa-v0-3-q7-005
+verified:
+  metadata_verified: true
+  claim_match_verified: true

@@ -1,0 +1,53 @@
+$schema: citation_card.schema.json
+id: cite-glosa-v0-3-q1-006
+claim_ref: Q1
+identifier:
+  kind: DOI
+  value: 10.1017/trn.2016.30
+fetch_status: FETCHED
+fetched_at: '2026-09-05'
+metadata_verified: true
+metadata_verified_by: mechanical:crossref
+metadata_verified_at: '2026-09-05'
+claim_match_verified: true
+claim_match_verified_by: route:I0
+claim_match_verified_at: '2026-09-05'
+exact_passage: >-
+  it argues that members of regional organisations engage in modular adoption: they select
+  institutional templates from a variety of regional as well as international organisations
+  thereby taking advantage of available information on the costs and benefits of alternative
+  institutions.
+page_or_locator: Abstract (Crossref metadata record for DOI 10.1017/trn.2016.30)
+line_or_paragraph: 3rd sentence of the abstract, describing the article's first contribution
+scope: DIRECT_QUOTATION
+evidence_tier: Dr
+independence_class: I0
+who_verified: I0 (this session, same-session read of the mechanically fetched Crossref abstract;
+  no cross-vendor or independent human check has run yet)
+verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
+status: METADATA_OK
+xenon_ledger_ref: null
+disclosure: >-
+  I0 only (same session, not independently checked). Title/journal/DOI confirmed mechanically via
+  Crossref bibliographic search ("What Drives Institutional Reforms in Regional Organisations
+  Diffusion Contextual Conditions Modular Design ASEAN"), returning TRaNS: Trans-Regional and
+  -National Studies of Southeast Asia, DOI 10.1017/trn.2016.30. Only the Crossref-registered
+  JATS abstract was read (mechanical metadata route); the Cambridge Core full text was not
+  fetched. This source bears on Q1 as a Global South/SEA (ASEAN) case: it documents that
+  regional-organization "templates" are selected and stabilized ("modular adoption") based on
+  contextual conditions and cognitive priors, and -- notably for Q1 -- explicitly argues AGAINST
+  the view that institutional borrowing/template adoption necessarily produces a bad
+  ("expectations-deliverance gap") outcome, instead finding that "if conducted consistently,
+  modular adoption can lead to substantial innovation and success." This is a genuine CHALLENGE
+  to an unqualified PCS-as-red-flag framing: it shows the same category-adoption mechanism Q1
+  is asking about can be adaptive rather than a failure mode, at least in the ASEAN case studied
+  (single market, dispute settlement mechanism).
+superseded_by: null
+notes: >-
+  Global South / Southeast Asia (ASEAN), EN-language publication, peer-reviewed journal article
+  (Cambridge University Press), discipline: international relations / regional institutions.
+  Found via query family: challenge ('institutional template transplantation Southeast Asia
+  organizational reform isomorphism case study'). Dialogue-table stance: NO (challenges the
+  premise that category/template stabilization is inherently premature or a defect worth a
+  standing red-flag).
+fetched_from_url: https://api.crossref.org/works?query.bibliographic=What+Drives+Institutional+Reforms+in+Regional+Organisations+Diffusion+Contextual+Conditions+Modular+Design+ASEAN&rows=3

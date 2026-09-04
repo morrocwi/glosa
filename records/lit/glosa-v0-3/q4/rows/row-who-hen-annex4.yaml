@@ -1,0 +1,33 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: Q4
+source_label: "Karlsson LE, Takahashi R (2017), A Resource for Developing an Evidence Synthesis
+  Report for Policy-Making, ANNEX 4: Selection of tools for appraising evidence (WHO Regional
+  Office for Europe, Health Evidence Network Synthesis Report No. 50; NCBI Bookshelf, grey/
+  institutional report)"
+how_it_sees_the_problem: >-
+  Frames the problem operationally, from inside a WHO methods guide built specifically to help
+  reviewers assemble evidence syntheses FOR policy-making: it is a directly on-genre worked
+  example (a policy-facing WHO technical document) that itself tells reviewers what to do with
+  other grey/policy sources encountered downstream.
+what_it_separates: >-
+  Separates appraisal-tool selection by evidence type (its Annex 4 lists distinct tools for
+  RCTs, qualitative studies, economic evaluations, and grey literature) from any special
+  procedure for sources lacking a declared claim-tier -- grey literature (which would include
+  most policy briefs) gets one generic pointer (the AACODS checklist), not its own sub-branch.
+what_it_assumes: >-
+  Assumes a reviewer building a policy-facing evidence synthesis has the capacity and mandate to
+  apply AACODS-style critical appraisal to any grey source encountered; does not discuss what to
+  do if a source cannot be traced to an original, or address glosa's automated/intake-gate
+  use case specifically.
+stance: "NO"
+what_it_would_say_against_us: >-
+  Directly, and consistent with card 005 (AACODS itself): a live WHO methods guide meant for
+  exactly this kind of work does not carve out a distinct flag-and-request-tier step for
+  tier-undeclared grey/policy sources -- it simply routes all grey literature to one existing
+  checklist. If glosa builds a separate, more elaborate flag-and-request-tier rule than what this
+  institutional precedent uses, glosa would need to justify why its own intake process needs more
+  machinery than the WHO guide it is implicitly being compared against.
+citation_card: cite-glosa-v0-3-q4-008
+verified:
+  metadata_verified: true
+  claim_match_verified: true

@@ -1,0 +1,33 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: Q1
+source_label: "Leacock C (2026), Grant Dependency is Undermining Global Development: Here's a
+  Fundamentally New Architecture for Funding NGOs (NextBillion.net, grey/community
+  development-sector trade press)"
+how_it_sees_the_problem: >-
+  Frames the problem as sector-wide entrenchment: donors default to funding "basic administrative
+  compliance" and the sector keeps reaching for incremental fixes ("tighter logical framework
+  templates and better compliance metrics") instead of questioning the underlying grant-dependency
+  architecture -- a lived-practitioner account, not a formal theory.
+what_it_separates: >-
+  Separates surface-level template tightening (the fix the sector keeps re-adopting) from a
+  structural redesign of the funding model itself (the fix the author argues is actually needed)
+  -- an incremental-fix-vs-structural-fix distinction close to what a PCS red-flag would need to
+  operationalize as a checkable pattern.
+what_it_assumes: >-
+  Assumes the author's own practitioner experience/observation of the development-funding sector
+  is representative; provides no citations, data, or described method of its own -- this is
+  opinion/advocacy grey literature, not an empirical or peer-reviewed claim, and Rule 17's
+  inclusion criteria admit it only as an illustrative grey/community data point, not as
+  supporting evidence with the same evidential weight as the peer-reviewed cards above.
+stance: "YES"
+what_it_would_say_against_us: >-
+  If PCS stayed confined to tourism/hilal/service-template case studies, this source would say
+  the same "default to the familiar template instead of questioning it" pattern is visible,
+  independently, in a completely different Global-South-facing sector (international NGO
+  funding) -- weak support (opinion-tier, not Dr-tier) for Q1's premise that PCS recurs across
+  domains, but it would not by itself defeat a decision to keep PCS domain-confined, since it
+  offers illustration rather than a tested mechanism.
+citation_card: cite-glosa-v0-3-q1-007
+verified:
+  metadata_verified: true
+  claim_match_verified: true

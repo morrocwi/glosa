@@ -1,0 +1,24 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: Q7
+source_label: 'ida2aat.com (AR, popular-philosophy/culture magazine, via Wayback Machine), «اللانهاية»:
+  مفارقات الفلسفة والدين والرياضيات ("Infinity: Paradoxes of Philosophy, Religion and Mathematics")'
+how_it_sees_the_problem: 'Reports Plotinus as the first to indirectly equate God with the infinite Absolute
+  via apophatic reasoning: no idea abstracted from finite experience applies to God, therefore God is an
+  infinite Absolute -- an on-point, non-Western-exclusive secondary account treating the transcendental-ground
+  move as a serious historical episode, six centuries after Aristotle.'
+what_it_separates: Separates Plotinus's INDIRECT equation of God with the infinite Absolute (via negative/apophatic
+  reasoning) from a DIRECT positive claim that God simply "is" a mathematical infinity -- the source is
+  explicit that the move is apophatic/negative, not a positive mathematical identification.
+what_it_assumes: Assumes a standard doxographical account of Neoplatonism as popularized for a general
+  Arabic-reading audience (not a specialist peer-reviewed history-of-philosophy source); reads Aristotle-to-Cantor
+  as one continuous Western lineage without separately addressing the distinct classical-Islamic-philosophy
+  discourse on infinity that the task's own Arabic keyword names -- a gap this card does not close.
+stance: 'YES'
+what_it_would_say_against_us: If even a general-audience popular-philosophy account independently converges
+  on "infinity-as-transcendental-ground is philosophically serious, apophatic, and pre-dates the mathematical
+  concept by over a millennium," that is modest but real evidence the stance is not a fringe or purely-rhetorical
+  position confined to specialist theology -- supporting engagement rather than a bare flag-and-leave-open.
+citation_card: cite-glosa-v0-3-q7-007
+verified:
+  metadata_verified: true
+  claim_match_verified: true

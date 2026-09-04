@@ -1,0 +1,25 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: Q5
+source_label: van Miltenburg, van der Lee & Krahmer 2021, "Preregistering NLP Research" (NAACL 2021,
+  arXiv:2103.06944)
+how_it_sees_the_problem: Names preregistration as "increasingly common in medicine and psychology, but
+  rarely discussed in NLP" -- an entire live research field (NLP) is actively importing preregistration
+  discipline while having no analogue of human-subjects ethics/IRB approval for most of its studies at
+  all.
+what_it_separates: Separates fields where preregistration and ethics approval are both routine and
+  sequenced (medicine, psychology) from a field (NLP) where preregistration is newly proposed with no
+  existing ethics-approval-timing convention to hook into -- a domain-transfer boundary a
+  FOUNDATION-wide gate design needs to cross.
+what_it_assumes: Assumes NLP researchers reading this paper are unfamiliar with preregistration
+  mechanics and need the medicine/psychology analogy explained from scratch; does not propose an
+  ethics-timing field because its source fields already have one that NLP mostly lacks.
+stance: "NO"
+what_it_would_say_against_us: If glosa's hard gate hard-blocks ANY claim card lacking ethics_approved_at,
+  it would incorrectly block legitimate non-human-subjects work (proofs, code analysis, NLP-style
+  corpus studies) that has no ethics committee to seek approval from -- the minimal schema field needs
+  a null/NOT_APPLICABLE state for ethics_approved_at, not just a before/after comparison, or the gate
+  misfires on an entire class of real research this preprint represents.
+citation_card: cite-glosa-v0-3-q5-008
+verified:
+  metadata_verified: true
+  claim_match_verified: true

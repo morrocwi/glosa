@@ -1,0 +1,173 @@
+$schema: search_log.schema.json
+id: search-glosa-v0-3-001
+claim_or_hypothesis_ref: Q4
+search_mode: SCOPING_SEARCH
+frozen_scope:
+  hypothesis_or_falsifier: >-
+    Q4 (glosa-v0-3, K2-lrs): policy-brief-style sources (grey literature that makes an
+    evidence-based recommendation but does not itself declare a claim-tier / evidence-quality
+    grade the way a GRADE-assessed guideline or a peer-reviewed paper's methods section does)
+    need a DISTINCT glosa intake rule -- flag-and-request-tier before ingestion -- rather than
+    being silently skipped by the existing intake gate, informing FOUNDATION §7.9's Literature
+    Review System (LRS) intake rule. Falsifier: the world literature on grey-literature appraisal
+    and evidence-hierarchy practice (GRADE, AGREE II, health-policy grey-lit guidance) is found to
+    already treat "no declared tier" as equivalent to "excluded/low-confidence by default" with no
+    separate flag-and-request-tier step needed -- i.e. existing appraisal frameworks already
+    resolve this case by automatic downgrading, not by a distinct request-back-to-source step --
+    in which case Q4's proposed new intake rule is redundant with existing practice rather than a
+    genuine gap.
+  question_type: mechanism
+  concepts_synonyms_vocabulary:
+    - GRADE evidence quality
+    - grey literature appraisal
+    - policy brief evidence hierarchy
+    - AGREE II guideline appraisal
+    - evidence grading unstructured sources
+    - claim tiering intake
+    - grey literature systematic review inclusion
+    - evidence quality rating policy documents
+    - การจัดระดับหลักฐานเชิงนโยบาย
+    - เอกสารสรุปนโยบาย หลักฐานเชิงประจักษ์
+    - เกรดคุณภาพหลักฐาน GRADE
+  inclusion_exclusion_rules: >-
+    INCLUDE: sources discussing (a) formal evidence-grading frameworks (GRADE, AGREE II, or
+    equivalent) and how they treat sources that do not self-declare an evidence tier, (b)
+    methodological guidance specifically for appraising/including grey literature (policy briefs,
+    NGO reports, government technical notes) in a systematic or scoping review, (c) health-policy
+    or development-policy grey literature (a working policy brief itself) usable as a worked
+    example of a tier-undeclared source, (d) Global South or Thailand/SEA policy-brief practice or
+    grey-literature appraisal guidance. EXCLUDE: sources about evidence grading in a purely
+    clinical-trial context with no grey-literature/policy-brief angle; general "how to write a
+    policy brief" style guides with no evidence-quality/appraisal content; sources using "tier"
+    only in an unrelated sense (pricing tiers, org-chart tiers).
+  time_window: '2004-2026 (GRADE working group traces to Guyatt et al. 2004 BMJ; loose lower
+    bound to admit the foundational GRADE texts; open upper bound for current grey-lit guidance)'
+  language_strategy: 'EN primary; TH searched directly (คำค้นภาษาไทย ผ่าน WebSearch) as the
+    required non-EN language; a Latin American Spanish-language source counted as a second
+    non-EN/Global-South data point when found via English-language search of translated/bilingual
+    grey literature'
+  global_sources:
+    - Google Scholar / general web search (via WebSearch)
+    - Crossref (mechanical metadata)
+    - Europe PMC (mechanical metadata)
+    - GRADE working group public materials
+  local_context_sources:
+    - Thai-language web search (คำค้นภาษาไทย)
+    - WHO/PAHO and other multilateral grey-literature appraisal guidance with Global South scope
+  search_date: '2026-09-05'
+  stopping_rule: >-
+    Stop once >=8 candidate sources are found satisfying: >=2 non-English or Global-South sources,
+    >=1 grey/community source, spanning both a support family (a distinct flag-and-request-tier
+    intake rule is needed) and a challenge family (existing appraisal practice already handles
+    this without a new rule) -- or after 3 rounds of query reformulation per family, whichever
+    comes first.
+  conflicts_of_interest: >-
+    None disclosed. Searcher (AI, this session) has no financial or institutional stake in any
+    candidate source. This is a reflexive literature review for the glosa project's own kernel
+    design question (whether §7.9's LRS intake rule needs a new flag-and-request-tier step);
+    sources are being sought that could disagree with adding a distinct new rule, not only sources
+    that support it.
+  access_limits: >-
+    No institutional library subscription. Only open-access, preprint, or search-engine-visible
+    abstract/full-text sources can be fetched and read per Rule 17 (own-hands verbatim read, no
+    PDFs beyond pdftotext -l 8); a paywalled source found by search is logged as
+    PAYWALLED_ABSTRACT_ONLY / NOT_OBTAINED rather than silently skipped.
+queries:
+  support:
+    - 'GRADE evidence quality grey literature policy brief undeclared tier appraisal'
+    - 'grey literature systematic review inclusion criteria quality appraisal framework'
+    - 'AGREE II guideline appraisal instrument grey literature health policy'
+    - 'evidence hierarchy policy brief no methods section appraisal challenge'
+  challenge:
+    - 'grey literature quality appraisal tool automatic downgrade unrated sources systematic review'
+    - 'การจัดระดับหลักฐานเชิงนโยบาย เอกสารสรุปนโยบาย คุณภาพหลักฐาน'
+    - 'health policy brief evidence grading Global South WHO PAHO grey literature guidance'
+    - 'AACODS checklist grey literature appraisal criteria authority accuracy currency'
+    - 'เอกสารนโยบายสาธารณสุข หลักฐานเชิงประจักษ์ การประเมินคุณภาพ'
+    - 'policy brief evidence tier missing declaration systematic review protocol exclusion default'
+sources_found:
+  - cite-glosa-v0-3-q4-001
+  - cite-glosa-v0-3-q4-002
+  - cite-glosa-v0-3-q4-003
+  - cite-glosa-v0-3-q4-004
+  - cite-glosa-v0-3-q4-005
+  - cite-glosa-v0-3-q4-006
+  - cite-glosa-v0-3-q4-007
+  - cite-glosa-v0-3-q4-008
+prisma_counts: null
+global_track:
+  summary: >-
+    A real methodological literature exists, but no source found uses Q4's own phrase
+    ("flag-and-request-tier before ingestion") or tests glosa's specific intake-gate mechanism.
+    SUPPORT: an empirical review of 100 recent systematic reviews (Khalil et al. 2026) finds
+    formal grey-literature screening (89%) far outpaces separate appraisal (19%) and states there
+    is "no universally accepted guidance" for appraising grey literature -- a real, measured gap;
+    the MOS field's own history (Adams, Smart & Huff 2016/2017) shows a discipline noticing this
+    exact gap and building explicit new guidelines to close it; and a philosophy-of-policy-evidence
+    paper (Parkhurst & Abeysinghe 2016) argues policy evidence needs case-specific
+    "appropriateness" judgment rather than a single hierarchy check, which favors a distinct,
+    deliberate handling step over silent skip. CHALLENGE: GRADE's own foundational text (Balshem
+    et al. 2011) treats tiering as inherently the reviewer's/review-team's job applied to a body
+    of evidence, not something an individual source is expected to self-declare, so "lacking a
+    declared tier" may be the normal state, not an anomaly; and two independently-converging grey-
+    literature appraisal tools -- the AACODS checklist (Tyndall 2010) and a WHO evidence-synthesis-
+    for-policy methods guide that points reviewers to AACODS (Karlsson & Takahashi 2017) -- both
+    explicitly name "a policy brief" as their worked example and answer it with a generic
+    trace-to-original-and-judge appraisal step, not a distinct request-a-tier-from-the-source step.
+  strength_note: >-
+    No source tests glosa's own K2-lrs intake-gate design directly; the global literature
+    establishes (a) a real, measured appraisal gap for grey literature generally and (b) at least
+    two established generic checklists that already claim to cover the policy-brief case without a
+    distinct request-tier mechanism, so this is a genuine unresolved methodological tension in the
+    literature itself, not a one-sided answer. Evidence tier for the surrounding premises: Dr
+    (well-specified peer-reviewed/institutional claims, not independently replicated by this
+    search).
+local_track:
+  summary: >-
+    No Thai-language source was found on-topic for Q4 despite two dedicated Thai-language query
+    attempts (results were general Thai public-policy-process and ISO-quality-policy content,
+    excluded per the frozen inclusion/exclusion rule -- a real local-context gap, not evidence
+    against Q4). Two Global South/English-language empirical sources were found instead and kept:
+    a Latin America/Caribbean clinical-guideline mapping study (Cabrera & Pardo 2019, Colombia-
+    based, Globalization and Health) showing a real 9776-document regional screening pipeline
+    already resolves "no declared grading methodology" by sorting into an explicit residual
+    classification bucket rather than pausing to request a declaration; and a West African
+    regional-health-body guidance-development study (Uneke et al. 2020, Nigeria/WAHO,
+    Globalization and Health) showing ECOWAS's own evidence-based-policymaking guidance
+    deliberately treats a wide range of ungraded evidence (anecdotal, expert judgement, local
+    knowledge) as legitimate policy evidence by design -- both complicate a framing that treats
+    "no declared tier" as inherently suspect. One grey/institutional source with clear policy-
+    synthesis intent (Karlsson & Takahashi 2017, WHO Regional Office for Europe Health Evidence
+    Network Synthesis Report No. 50) and one grey/institutional checklist itself (AACODS, Tyndall
+    2010) were also kept, both directly naming "a policy brief" as their worked example.
+  result: FOUND
+transfer_verdict: TRANSFERS_WITH_ADAPTATION
+  # The measured appraisal-practice gap (Khalil et al.) and the "appropriateness not hierarchy"
+  # argument (Parkhurst & Abeysinghe) plausibly transfer to Q4's glosa-intake-gate setting -- the
+  # underlying problem (a source with no self-declared evidence quality needs SOME deliberate
+  # handling) is not shown to be domain- or discipline-specific. But two independently-converging
+  # generic checklists (AACODS; the WHO HEN guide that routes to it) already claim coverage of
+  # exactly the policy-brief case via a trace-to-original appraisal step rather than a distinct
+  # request-tier step, and GRADE's own foundational text treats tiering as the reviewer's job, not
+  # the source's -- so this is an adaptation-with-caveats verdict: the literature supports SOME
+  # deliberate, non-silent handling of tier-undeclared policy-brief-style sources, but does not
+  # clearly support Q4's SPECIFIC proposed mechanism (flag-and-request-tier back to the source)
+  # over the alternative already used elsewhere (reviewer-side generic critical appraisal without
+  # contacting the source).
+summary_disclaimer: >-
+  This is a SCOPING_SEARCH (not a systematic review): 8 sources kept from 10 queries across 2
+  query families (support/challenge, including 2 Thai-language queries) and one search episode
+  (2026-09-05). WAS found: (a) a measured, real gap in current systematic-review practice between
+  formal screening and separate appraisal of grey literature; (b) a disciplinary precedent (MOS
+  studies) of a field noticing this exact gap and building new explicit guidance; (c) a
+  philosophy-of-policy-evidence argument that case-specific appropriateness, not a single
+  hierarchy check, should govern judging policy evidence; (d) GRADE's own foundational framing
+  that tiering is reviewer-side, not source-side; (e) two independently-converging generic
+  grey-literature checklists that already name "a policy brief" as their worked example and route
+  it through trace-to-original appraisal, not a request-tier step; (f) two Global South empirical/
+  institutional sources (Latin America/Caribbean, West Africa/ECOWAS) showing real institutional
+  practice classifies tier-undeclared sources into explicit buckets or treats ungraded evidence as
+  legitimate by design, rather than defaulting to silent exclusion. NOT found: any source testing
+  glosa's own K2-lrs intake-gate mechanism directly; any source using the phrase
+  "flag-and-request-tier"; any on-topic Thai-language source despite two dedicated Thai-language
+  query attempts (a real search-coverage gap, not a verdict on Q4 itself, NC-27).

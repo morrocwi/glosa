@@ -1,0 +1,23 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: Q7
+source_label: Stanford Encyclopedia of Philosophy, 'Intuitionism in the Philosophy of Mathematics' (EN,
+  academic reference)
+how_it_sees_the_problem: Brouwer's intuitionism grounds its rejection of actual/completed infinity in mental
+  constructibility (a generating process), contrasted explicitly with Platonism's completed totalities
+  -- both live options in the actual finitism-vs-Platonism dispute proceed with zero theological content.
+what_it_separates: Separates infinite objects reached by a step-by-step mental generating process (intuitionism,
+  accepted) from infinite objects accepted as completed totalities without a known generating rule (Platonism,
+  rejected by intuitionists) -- a constructibility axis, not a transcendence axis.
+what_it_assumes: Assumes mathematics is "a creation of the free mind" -- an epistemic-constructivist starting
+  point that has no need for, and does not engage, a transcendent ground either as support or as target
+  of critique.
+stance: ORTHOGONAL
+what_it_would_say_against_us: The actual rival-stance debate mathematicians and philosophers of mathematics
+  fight over today (constructivism/finitism vs Platonism) is fully specified and actively contested WITHOUT
+  any transcendence talk -- so a framework wanting to formally reconcile with "genuine rival epistemic stances"
+  on infinity would find this debate, not the theological one, as the stance it most needs to engage; the
+  transcendental-ground stance sits outside this live technical fight entirely.
+citation_card: cite-glosa-v0-3-q7-003
+verified:
+  metadata_verified: true
+  claim_match_verified: true

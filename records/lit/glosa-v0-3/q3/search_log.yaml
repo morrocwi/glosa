@@ -1,0 +1,166 @@
+$schema: search_log.schema.json
+id: search-glosa-v0-3-001
+claim_or_hypothesis_ref: Q3
+search_mode: SCOPING_SEARCH
+frozen_scope:
+  hypothesis_or_falsifier: >-
+    Q3 (DESCRIPTIVE/DESIGN): Is there a reusable non-clinical/non-medical/non-legal AI
+    scope-boundary clause glosa should standardize across all its own AI-runtime
+    disclaimers (a common template), beyond the SANA-specific instances (kc-ai-023,
+    kc-he-016) already logged? Falsifier: the world literature on AI scope-of-practice /
+    non-diagnostic disclaimers and the AI Act / SaMD high-risk-medical-device boundary
+    shows that a single reusable clause cannot actually travel across domains (health,
+    legal, financial, safety-critical) without domain-specific legal content that makes a
+    shared template either too vague to do the disclaiming work or too domain-bound to
+    reuse -- i.e. the standardization move itself is shown to be unworkable or actively
+    misleading in at least one class of real deployment guidance.
+  question_type: mechanism
+  concepts_synonyms_vocabulary:
+    - AI scope of practice / scope-of-practice disclaimer
+    - non-diagnostic / non-clinical AI disclaimer
+    - '"this is not medical/legal advice" boilerplate'
+    - software as a medical device (SaMD) / FDA SaMD guidance
+    - EU AI Act high-risk system / Annex III medical-device boundary
+    - clinical decision support (CDS) disclaimer requirements
+    - chatbot health information disclaimer / wellness app boundary
+    - legal-tech AI "not legal advice" disclaimer
+    - informed consent for AI-assisted tools
+    - scope creep / mission creep in AI-assisted advice tools
+    - standardized disclaimer template / boilerplate reuse across products
+  inclusion_exclusion_rules: >-
+    INCLUDE: any source (regulation, regulatory guidance, peer-reviewed article,
+    preprint, standards body publication, grey-literature legal/health-tech
+    commentary, community/blog piece from a practitioner or regulator) that discusses
+    (a) how AI-facing scope-of-practice or non-diagnostic/non-legal-advice disclaimers
+    are worded or required, or (b) whether such disclaimers can be standardized/reused
+    across products versus needing to stay domain-specific and product-specific.
+    EXCLUDE: sources purely about AI accuracy/performance benchmarking with no
+    disclaimer/scope-boundary language dimension; sources about liability litigation
+    outcomes only, with no reusable-template angle; paywalled sources reachable only
+    by abstract are logged as PAYWALLED_ABSTRACT_ONLY (scope restricted to
+    CONTEXT_ONLY_NOT_EVIDENCE, never quoted beyond the abstract). This is a
+    SCOPING_SEARCH (not systematic): goal is a representative, stratified spread of
+    neighbour positions, not exhaustive regulatory coverage.
+  time_window: '2016-2026 (EU AI Act and FDA SaMD guidance lineage is largely
+    2016-2024; chatbot/LLM-era health-and-legal-disclaimer discussion is 2022-2026)'
+  language_strategy: >-
+    EN primary; TH required (at least 2 Thai-language or Thailand/SEA-based sources
+    per task instruction, covering how Thai health/legal AI tools state their scope
+    boundary or how Thai regulators frame the medical-device/AI boundary); one
+    additional non-EN/Global-South angle sought via an EN-language source reporting on
+    non-EN/non-TH contexts (e.g. an EU-language regulatory text in English translation,
+    or African/South Asian digital-health AI scope-of-practice discussion) rather than
+    requiring a third search language directly.
+  global_sources:
+    - Google Scholar / general web search proxy (no institutional Scopus/WoS access
+      in this session)
+    - >-
+      Regulator/standards-body primary text reachable via web search: EU AI Act
+      (Annex III / high-risk classification text), FDA Digital Health / SaMD guidance
+      pages, WHO digital-health guidance
+    - PubMed / Europe PMC (health-informatics and clinical-AI-governance venues)
+    - arXiv / preprint servers (AI-governance and health-informatics preprints)
+    - >-
+      General web (grey-literature entry points: legal-tech and health-tech vendor
+      disclaimer pages, health-informatics practitioner blogs, standards commentary)
+  local_context_sources:
+    - Thai FDA (อย.) / Ministry of Public Health digital-health or AI-device guidance
+      reachable via web search
+    - ThaiJo (Thai Journals Online) reachable via web search, for Thai health-informatics
+      or medical-law articles on AI/telemedicine scope of practice
+    - Thailand/SEA-based legal-tech or health-tech commentary reachable via web search,
+      restricted to .th domains and Thai-language queries where useful
+  search_date: '2026-09-05'
+  stopping_rule: >-
+    Stop once at least 8 distinct candidate sources have been logged spanning: at
+    least 2 Thai-language or Thailand/SEA-based sources, at least 2 Global-South
+    sources (Thailand/SEA counts toward this), at least 1 grey/community source, and
+    at least one source in the "challenge" query family (a source arguing a shared
+    disclaimer template is NOT viable / must stay domain-specific) -- whichever of
+    these strata comes last determines when the search actually stops. This is a
+    SCOPING_SEARCH, not an exhaustive systematic/regulatory review; a small_n stopping
+    rule, disclosed as such.
+  conflicts_of_interest: >-
+    None disclosed. The founder (Yaoharee Lahtee) is not an author, reviewer,
+    regulator, or funder of any candidate source found in this pass; glosa's own SANA
+    runtime disclaimer instances (kc-ai-023, kc-he-016) are the object this question is
+    about, not a party to the outside literature being searched.
+  access_limits: >-
+    No institutional library/Scopus/Web-of-Science/JSTOR access in this session --
+    open-access, government/regulator, preprint, and grey-literature sources only,
+    plus what is reachable via free web search and curl. Paywalled sources reachable
+    only by abstract are logged as PAYWALLED_ABSTRACT_ONLY (scope restricted to
+    SUPPORTS_GENERAL_CLAIM_ONLY / CONTEXT_ONLY_NOT_EVIDENCE, never quoted beyond the
+    abstract) per the secondary-citation ban.
+queries:
+  support:
+    - "AI scope of practice disclaimer non-diagnostic non-clinical wording"
+    - "software as a medical device FDA disclaimer wellness app clinical decision support"
+    - "ขอบเขตการใช้ปัญญาประดิษฐ์ทางการแพทย์ อย ประเทศไทย"
+    - "Africa digital health AI chatbot disclaimer scope regulation Kenya Nigeria"
+  challenge:
+    - "EU AI Act Annex III high-risk medical device boundary chatbot"
+    - "standardized disclaimer template AI legal advice domain specific cannot generalize"
+sources_found:
+  - cite-glosa-v0-3-q3-001
+  - cite-glosa-v0-3-q3-002
+  - cite-glosa-v0-3-q3-003
+  - cite-glosa-v0-3-q3-004
+  - cite-glosa-v0-3-q3-005
+  - cite-glosa-v0-3-q3-006
+  - cite-glosa-v0-3-q3-007
+  - cite-glosa-v0-3-q3-008
+prisma_counts: null
+global_track:
+  summary: >-
+    Eight candidate sources kept from a scoping (non-exhaustive) web search: two EN primary
+    regulatory texts (EU AI Act Annex III explainer, US FDA Clinical Decision Support Software
+    FAQs) showing the actual high-risk/device boundary is drawn by function and situational
+    criteria (public-authority benefit eligibility; time-critical vs non-time-critical decision
+    support), not by a single fixed disclaimer string; one EN preprint (arXiv:2507.08030)
+    showing empirically that medical-disclaimer presence in generative-AI outputs collapsed from
+    ~26% (2022) to ~1% (2025) even though disclaimer guidance already existed -- a template alone
+    does not enforce itself; one EN peer-reviewed Global-South legal-mapping study (Frontiers in
+    Pharmacology, 12 African countries) showing the underlying "medical device" legal category a
+    disclaimer would reference is absent from 9 of 12 African countries' statutes; one EN
+    grey/community perspective piece (Tech Policy Press, Nigeria/Kenya health-messaging study)
+    supporting a general-purpose-vs-health-product distinction as a governance requirement (not
+    disclaimer text); and one EN grey/community commercial legal-templates blog showing even a
+    single non-clinical/non-legal domain (creative freelance services) already needs
+    service-specific and client-specific disclaimer variants in that vendor's own practice.
+  strength_note: >-
+    No source found makes Q3's exact claim (a single reusable clause, standardized once, would
+    suffice across all of glosa's own AI-runtime disclaimers) either as a tested finding or as a
+    directly refuted one -- this is a design/standardization question, not yet studied as such in
+    the literature found. The closest direct engagement is the FDA CDS FAQ (Q3 in the source's own
+    FAQ) and the arXiv declining-disclaimer-presence paper, both of which push toward "a clause
+    needs a context-check and an enforcement mechanism, not just standardized text" rather than
+    toward "yes, standardize the string alone." The Tech Policy Press piece is the strongest
+    SUPPORT-leaning source, but for a governance distinction, not a disclaimer template per se.
+  small_n_stopping_rule_disclosed: true
+local_track:
+  summary: >-
+    Two Thai-language sources found and read directly: the Thai FDA (อย.) Medical Device Control
+    Division's own SaMD screening-criteria page (medical.fda.moph.go.th/samd-head) -- a genuine
+    primary Thai regulatory source, giving Thailand's own standalone/embedded/accessory/non-device
+    software split -- and a Thai government AI-governance guideline PDF from the Department of
+    Thai Traditional and Alternative Medicine (FY2569/2026), which names a diagnostic example
+    (lung X-ray AI) and a non-diagnostic example (product recommendation) under one technical
+    label without distinguishing their disclaimer needs. Two attempted Thai grey/news sources
+    (hfocus.org, an apparently stale ctat.or.th redirect) could not be fetched (hfocus.org
+    returned a Cloudflare JS challenge, HTTP 403; ctat.or.th redirected to an unrelated
+    shipping-association homepage) and are logged as NOT_OBTAINED, never quoted.
+  result: FOUND
+transfer_verdict: TRANSFERS_WITH_ADAPTATION
+summary_disclaimer: >-
+  This is a SCOPING_SEARCH (8 kept candidates from web search, not a systematic review) --
+  support-family queries surfaced primary regulatory texts and Thai-government sources that treat
+  the disclaimer/scope boundary as function- and context-dependent rather than as a single fixed
+  string; challenge-family queries surfaced a direct US-regulatory example (FDA CDS FAQ
+  time-critical criterion) and a commercial legal-blog example (per-service disclaimer tailoring)
+  both arguing against a single reusable clause traveling unmodified across contexts, plus a
+  Global-South legal-mapping study showing the underlying legal category a clause would reference
+  is itself jurisdiction-dependent. No source directly tests Q3's own proposed move (standardizing
+  glosa's specific non-clinical/non-medical/non-legal clause across its own disclaimer catalogue);
+  absence of a source testing that exact move does NOT mean none exists -- this is a small,
+  non-exhaustive scoping pass, disclosed as such.

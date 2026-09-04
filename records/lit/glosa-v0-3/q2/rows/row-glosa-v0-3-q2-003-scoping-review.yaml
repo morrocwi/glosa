@@ -1,0 +1,31 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: Q2
+source_label: "Dudda et al. 2025, Open science interventions to improve reproducibility and replicability of research: a scoping review (Royal Society Open Science)"
+how_it_sees_the_problem: >-
+  Frames the problem at the meta-evidence level: across the whole open-science-intervention
+  literature (69 candidate interventions catalogued), how many studies actually measured an
+  effect on reproducibility/replicability directly, versus measuring a proxy outcome (data
+  sharing, transparency) and assuming it helps.
+what_it_separates: >-
+  Separates a PROXY outcome (an intervention increases data sharing, or badge uptake) from a
+  DIRECT outcome (the intervention actually improves whether results reproduce) -- the same
+  separation Q2 needs to hold onto: a claim card being filled out correctly (proxy) is not the
+  same as the underlying claim being checkable/correct (direct outcome).
+what_it_assumes: >-
+  Assumes the 69-intervention catalogue and included-study set are a representative sample of
+  the open-science-intervention literature as of the review's search date; does not itself
+  evaluate any single mechanism's effectiveness, including badges, Registered Reports, or a
+  claim-card-shaped mechanism -- it counts evidence, it does not weigh it.
+stance: ORTHOGONAL
+what_it_would_say_against_us: >-
+  Would caution that whatever evidence base Rule 17 leans on for "claim cards work as a
+  certification substitute" is likely to be proxy-level (schema conformance, field completion)
+  rather than a direct test of whether claim-card-certified claims actually hold up -- only 15
+  of many candidate open-science interventions in this review's full literature had any direct
+  reproducibility/replicability outcome measured at all, so the base rate for direct evidence on
+  any single new mechanism, claim cards included, should be assumed thin until specifically
+  tested.
+citation_card: cite-glosa-v0-3-q2-003
+verified:
+  metadata_verified: true
+  claim_match_verified: true

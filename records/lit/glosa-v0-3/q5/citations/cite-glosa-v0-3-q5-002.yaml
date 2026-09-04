@@ -1,0 +1,74 @@
+$schema: citation_card.schema.json
+id: cite-glosa-v0-3-q5-002
+claim_ref: Q5
+identifier:
+  kind: OFFICIAL_URL
+  value: https://www.nature.com/srep/journal-policies/registered-reports
+fetch_status: FETCHED
+fetched_at: '2026-09-05'
+metadata_verified: true
+metadata_verified_by: mechanical:curl+html-strip (page fetched and rendered directly, primary journal
+  policy text, Scientific Reports / Springer Nature)
+metadata_verified_at: '2026-09-05'
+claim_match_verified: true
+claim_match_verified_by: self:same-session-read (I1, NOT independent -- awaiting a decorrelated I3
+  cross-vendor route to upgrade status to VERIFIED per Rule 17/S14; task instruction caps status at
+  METADATA_OK for this pass)
+claim_match_verified_at: '2026-09-05'
+exact_passage: A statement confirming that all necessary support (e.g. funding, facilities) and approvals
+  (e.g. ethics) are in place for the proposed research. Note that manuscripts will be generally considered
+  only for studies that are able to commence immediately
+page_or_locator: 'nature.com/srep/journal-policies/registered-reports, "Stage 1: Initial manuscript
+  submission and review" section, Stage 1 cover-letter requirements list, as rendered on the page fetched
+  2026-09-05'
+line_or_paragraph: line 48 of the fetched/stripped page text
+scope: DIRECT_QUOTATION
+evidence_tier: Dr
+independence_class: I1
+who_verified: same-session AI (I1, non-independent) -- metadata confirmed mechanically, passage read
+  and matched to Q5 by the same session that ran the search; no cross-vendor I3 route run in this pass
+verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
+status: METADATA_OK
+xenon_ledger_ref: null
+disclosure: 'Scientific Reports (Springer Nature), Registered Reports journal-policy page (EN, primary,
+  journal policy text). Fetched and read directly (curl + stdlib HTML stripper, one page kept in memory
+  at a time per RAM limit) 2026-09-05. Read as: in this real, currently-operating Registered Reports
+  workflow, ethics approval must already be in place at the moment of Stage 1 (protocol-freeze) submission
+  -- and the same page (line 51) separately states that authors commit to registering the approved
+  protocol on a recognized repository only AFTER Stage 1 acceptance in principle. That is the reverse
+  of Q5''s proposed strict order (freeze, then ethics, then data): here ethics precedes the Stage 1
+  submission, and the formal registry deposit follows Stage 1 acceptance. stance vs Q5 as read: NO
+  (directly challenges the proposed strict "freeze before ethics" ordering as the real-world norm in
+  the one methodology most closely associated with frozen-protocol discipline). No novel/first/prior-art
+  claim made about this source; comparison to Q5 is same/different/orthogonal as stated in
+  dialogue_table_stance. independence_class I1 (same session) -- status METADATA_OK only, not VERIFIED.'
+superseded_by: null
+notes: 'Diversity: language=en, source_type=grey_literature, geography_or_institution=Global (Springer
+  Nature, UK/Germany-based publisher), search_route_or_database="web search / direct journal-site
+  fetch, glosa-v0-3 Q5 scoping pass". dialogue_table_stance: no. what_it_separates: Separates the Stage
+  1 manuscript submission (which requires ethics already in place) from the formal repository
+  registration of the approved protocol (which happens only after Stage 1 acceptance in principle) --
+  two distinct freeze-like events, neither of which is "before ethics" in Q5''s proposed sense.
+  what_it_assumes: Assumes a journal-mediated peer-review gate exists between drafting a protocol and
+  its formal registry deposit; does not address glosa''s own self-service, no-external-journal
+  workflow. what_it_would_say_against_us: A hard glosa gate requiring the timestamp-before field to
+  read protocol_frozen_at < ethics_approved_at would misdescribe how the flagship Registered Reports
+  format itself actually sequences things -- citing Registered Reports as precedent for "freeze
+  strictly before ethics" would be a same/different mismatch, not a same-claim citation.'
+citation_card_id: cite-glosa-v0-3-q5-002
+identifier_kind: OFFICIAL_URL
+claim_match_verification_route: NOT_YET
+retraction_check: UNCHECKED
+version_status: PUBLISHED
+dialogue_table_stance: disagrees
+diversity:
+  language: en
+  discipline_or_tradition: journal methodology policy / Registered Reports
+  source_type: grey_literature
+  search_route_or_database: web search / direct journal-site fetch, glosa-v0-3 Q5 scoping pass
+  geography_or_institution: Global (Springer Nature)
+  venue_quality_index:
+    index_name: null
+    value: null
+    date_read: null
+fetched_from_url: https://www.nature.com/srep/journal-policies/registered-reports

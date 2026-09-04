@@ -1,0 +1,71 @@
+$schema: citation_card.schema.json
+id: cite-glosa-v0-3-q3-007
+claim_ref: Q3
+identifier:
+  kind: OFFICIAL_URL
+  value: https://www.techpolicy.press/lessons-from-nigeria-and-kenya-on-digital-colonialism-in-ai-health-messaging/
+fetch_status: FETCHED
+fetched_at: '2026-09-05'
+metadata_verified: true
+metadata_verified_by: mechanical:curl+html-strip (Tech Policy Press perspective article fetched directly;
+  byline, date and outlet read from the fetched page)
+metadata_verified_at: '2026-09-05'
+claim_match_verified: true
+claim_match_verified_by: self:same-session-read (I1, NOT independent -- awaiting a decorrelated I3 cross-vendor
+  route to upgrade status to VERIFIED per Rule 17/S14; task instruction caps status at METADATA_OK for
+  this pass)
+claim_match_verified_at: '2026-09-05'
+exact_passage: A key part of this protection is distinguishing between AI as a general-purpose tool and
+  AI as a health product.
+page_or_locator: techpolicy.press, 'Lessons from Nigeria and Kenya on Digital Colonialism in AI Health
+  Messaging' (Addie & McNealy, Oct 3, 2025), section 'The necessity of good governance', as fetched 2026-09-05
+line_or_paragraph: line 33 of the fetched/stripped page text
+scope: DIRECT_QUOTATION
+evidence_tier: Dr
+independence_class: I1
+who_verified: same-session AI (I1, non-independent) -- metadata confirmed mechanically, passage read and
+  matched to Q3 by the same session that ran the search; no cross-vendor I3 route run in this pass
+verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
+status: METADATA_OK
+xenon_ledger_ref: null
+disclosure: 'Addie & McNealy, ''Lessons from Nigeria and Kenya on Digital Colonialism in AI Health Messaging'',
+  Tech Policy Press (EN, grey/community perspective piece; Global South -- Nigeria/Kenya health-messaging
+  study). Fetched and read directly (curl + stdlib HTML stripper for web pages; pdftotext -l 8 for the
+  one PDF source) 2026-09-05, one page kept in memory at a time per RAM limit. Read as: Frames the general-purpose-vs-health-product
+  distinction as a GOVERNANCE requirement (grounded in a comparative study of WHO''s S.A.R.A.H. chatbot
+  and ChatGPT against 80 traditional health campaigns in Nigeria and Kenya), not a legal-liability clause
+  -- the same underlying cut Q3 asks about, reached independently from a health-communication-equity angle.
+  stance vs Q3 as read: YES. independence_class I1 (same session) -- status METADATA_OK only, not VERIFIED:
+  no decorrelated I3 cross-vendor route has checked this card yet. No novel/first/prior-art claim made
+  about this source; comparison to Q3 is same/different/orthogonal as stated in dialogue_table_stance.'
+superseded_by: null
+notes: 'Diversity: language=en, source_type=community, geography_or_institution=Global South (Africa),
+  search_route_or_database="web search / direct regulator-site fetch, glosa-v0-3 Q3 scoping pass". dialogue_table_stance:
+  agrees. what_it_separates: Separates AI systems ''designed for broad tasks'' (ChatGPT, Gemini) from
+  AI as a ''health product'' requiring ''alignment with clinical guidelines, rigorous privacy safeguards,
+  and community co-design'' -- explicitly naming this distinction as a protective mechanism against exploitative
+  or careless deployment. what_it_assumes: Assumes the distinction, once made, should drive downstream
+  GOVERNANCE obligations (consultation, impact assessment, co-design) rather than settling for disclaimer
+  text; does not specify what a reusable disclaimer clause implementing this distinction would actually
+  say. what_it_would_say_against_us: Supports the general shape of Q3''s question -- a general-purpose/health-product
+  distinction is treated here as necessary and reusable across contexts -- but frames it as a governance-process
+  requirement embedded in deployment practice, not a standardized disclaimer string; citing this source
+  as backing for a TEXT-level template would overstate what the source actually recommends (process obligations,
+  not boilerplate).'
+citation_card_id: cite-glosa-v0-3-q3-007
+identifier_kind: OFFICIAL_URL
+claim_match_verification_route: NOT_YET
+retraction_check: UNCHECKED
+version_status: PUBLISHED
+dialogue_table_stance: agrees
+diversity:
+  language: en
+  discipline_or_tradition: health/AI regulation and disclaimer practice
+  source_type: community
+  search_route_or_database: web search / direct regulator-site fetch, glosa-v0-3 Q3 scoping pass
+  geography_or_institution: Global South (Africa)
+  venue_quality_index:
+    index_name: null
+    value: null
+    date_read: null
+fetched_from_url: https://www.techpolicy.press/lessons-from-nigeria-and-kenya-on-digital-colonialism-in-ai-health-messaging/

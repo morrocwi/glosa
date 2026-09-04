@@ -1,0 +1,172 @@
+$schema: search_log.schema.json
+id: search-glosa-v0-3-001
+claim_or_hypothesis_ref: Q2
+search_mode: SCOPING_SEARCH
+frozen_scope:
+  hypothesis_or_falsifier: >-
+    Q2 (records/lit/glosa-v0-3/QUESTIONS.md): the argument "a claim card (Rule 17 fields +
+    the I0-I5 independence ladder) can stand in for institutional certification (a university
+    affiliation, a journal's peer-review stamp, a credentialed reviewer's say-so) as what makes
+    a claim checkable" -- can this be formalized into a kernel rule inside Rule 17 / the I0-I5
+    Independence Ladder, or does it stay a logged [Open] agenda item pending a testable
+    falsifier? Falsifier sought: a real, existing certification-substitute mechanism (registered
+    reports, open-science badges, post-publication/open peer review, a national journal-quality
+    index) that world literature shows either (a) genuinely functions as claimed -- checkable
+    rigour without an institutional say-so -- which would support formalizing the clause, or
+    (b) is shown empirically to be gameable, non-checkable in practice, or to still smuggle in
+    institutional/credentialed gatekeeping -- which would keep Q2 [Open] pending a sharper
+    falsifier.
+  question_type: mechanism
+  concepts_synonyms_vocabulary:
+    - registered reports
+    - preregistration
+    - open science badges
+    - open data badge
+    - post-publication peer review
+    - open peer review
+    - alternatives to peer review
+    - certification of research
+    - credentialism
+    - peer review alternative
+    - reproducibility badge gaming
+    - journal accreditation index
+    - Thai Journal Citation Index TCI
+    - ASEAN Citation Index
+    - การรับรองทางวิชาการทางเลือก
+    - การทบทวนหลังตีพิมพ์
+    - ดัชนีการอ้างอิงวารสารไทย
+  inclusion_exclusion_rules: >-
+    INCLUDE: sources discussing (a) a concrete mechanism proposed or used as a substitute or
+    supplement for traditional pre-publication institutional peer-review certification
+    (registered reports, open-science/open-data badges, post-publication open peer review
+    platforms such as F1000Research/PubPeer, national journal-quality indices), (b) empirical
+    evidence on whether such a mechanism actually delivers checkable rigour or is gameable/
+    ineffective, (c) Thai/SEA or other Global-South material on what institutional academic
+    certification requires or how it is being adapted locally. EXCLUDE: sources purely about
+    peer review's general history/definition with no certification-substitute angle; marketing
+    material for a commercial credentialing product with no independent evaluation; sources
+    that only discuss AI capability with no certification/verification angle (that is Q1/H1
+    territory, not Q2).
+  time_window: '2014-2026 (open science badges/Registered Reports era to present)'
+  language_strategy: 'EN primary; TH deliberately searched as the required second language (Thai academic-journal accreditation material)'
+  global_sources:
+    - WebSearch tool (general web + Google Scholar-indexed results)
+    - Crossref API (mechanical metadata)
+    - arXiv
+    - Europe PMC (open-access full text)
+    - Center for Open Science (cos.io) and F1000Research (think.f1000research.com) as primary organizational/community sources for the mechanisms themselves
+  local_context_sources:
+    - Thai-language web search (คำค้นภาษาไทย ผ่าน WebSearch) for TCI (Thai Journal Citation Index) accreditation material
+    - India-focused empirical survey (Global South comparative case) reached via WebSearch/arXiv
+  search_date: '2026-09-05'
+  stopping_rule: >-
+    Stop once >=8 candidate sources are found across the support/challenge query families,
+    with >=2 Thai-language-or-Global-South and >=1 grey/community source among those kept --
+    or after 3 rounds of query reformulation per family, whichever comes first.
+  conflicts_of_interest: >-
+    None disclosed. Searcher (AI, this session) has no financial or institutional stake in any
+    candidate source. This is a reflexive review of the project's own Rule 17 / I0-I5 design
+    question; sources that would defeat Q2's optimistic reading (that a claim card can replace
+    certification) were deliberately searched for, not only sources that support it.
+  access_limits: >-
+    Only open-access, preprint, arXiv, PMC-mirror, or organizational-page content actually
+    fetched and read (curl + a small local HTML/XML stripper, per Rule 17 -- never from
+    memory). No institutional library subscription used. Abstract-only Crossref metadata is
+    logged as PAYWALLED_ABSTRACT_ONLY / METADATA_OK, never silently upgraded past what was
+    actually read.
+strata_intent: >-
+  Quality x region strata deliberately sampled: (1) high-quality-tier peer-reviewed EN/Global-
+  North (PLOS Biology gaming-badges piece; Royal Society Open Science empirical badge-
+  reproducibility study; Royal Society Open Science scoping review) -- direct empirical tests
+  of whether a certification-substitute mechanism delivers checkable rigour; (2) Global-South
+  peer-reviewed/preprint (arXiv/PLOS-One India-USA professors survey) -- whether the same
+  mechanisms transfer outside the Global-North setting they were built in; (3) Thai/SEA grey
+  institutional material (TH-language TCI journal-accreditation guide) -- what the institutional
+  certification side of the comparison actually requires in this workspace's own country
+  context; (4) grey/community organizational sources (Center for Open Science Registered
+  Reports page; F1000Research open-peer-review explainer) -- the mechanisms' own stated design,
+  read as a primary source about the mechanism itself, not as an independent evaluation of it.
+queries:
+  support:
+    - 'registered reports preregistration certification peer review alternative'
+    - 'open science badges replication rate effect'
+    - '"F1000Research" OR "eLife" post-publication review model without traditional peer review certification'
+  challenge:
+    - 'post-publication peer review PubPeer alternatives to journal peer review certification legitimacy'
+    - '"open science badges" criticism gaming incentive credibility signal'
+    - 'reproducibility badges India Latin America adoption grey literature open science community'
+    - 'open badges credentialing blockchain verification alternative certification Africa Global South science'
+    - 'การรับรองทางวิชาการทางเลือก การทบทวนหลังตีพิมพ์ วารสารวิชาการ'
+sources_found:
+  - cite-glosa-v0-3-q2-001
+  - cite-glosa-v0-3-q2-002
+  - cite-glosa-v0-3-q2-003
+  - cite-glosa-v0-3-q2-004
+  - cite-glosa-v0-3-q2-005
+  - cite-glosa-v0-3-q2-006
+  - cite-glosa-v0-3-q2-007
+prisma_counts: null
+global_track:
+  summary: >-
+    Real, mixed empirical literature exists on whether a certification-substitute mechanism
+    actually delivers checkable rigour without an institutional say-so. On the mechanism-design
+    side, Registered Reports (Center for Open Science) and F1000Research's open-peer-review
+    model both publish a mechanically-checkable record (an in-principle-accepted protocol; an
+    open review report tied to a named Approved/Approved-with-reservations/Not-approved rating)
+    in place of an opaque institutional stamp -- structurally close to what Q2 asks whether a
+    claim card can do. Against this, the strongest direct empirical test found (Hardwicke et al.
+    2021, R. Soc. Open Sci.) checked articles that had already received an open-data badge and
+    found open data alone did not ensure the results were actually analytically reproducible;
+    Brown (2024, PLOS Biology) documents badges and Registered Reports being gamed in practice
+    (a "Preregistered" badge awarded for minimal-detail preregistration; a journal discontinuing
+    the badge over exactly this). Dudda et al. (2025, R. Soc. Open Sci.) scoping-reviews the
+    wider open-science-intervention literature and finds only a small fraction of studies (15 of
+    many candidate interventions) directly measured an effect on reproducibility/replicability
+    at all -- most evidence is proxy-outcome, not a direct test of the certification-substitute
+    claim.
+  strength_note: >-
+    No source found is a direct test of Q2's specific object (a Rule-17-style claim card +
+    I0-I5 independence ladder); the literature tests structurally similar but not identical
+    mechanisms (badges, Registered Reports, open review). Evidence tier for the empirical
+    badge-reproducibility findings: Dr (well-specified peer-reviewed empirical studies, not
+    independently replicated by this search). The mechanism-design sources (COS, F1000) are
+    read as primary descriptions of the mechanism, evidence_tier definition/Dr as appropriate,
+    not as independent evaluations.
+local_track:
+  summary: >-
+    Thai-language material found is thin and off-angle for Q2's specific question: the one
+    kept source (a Mahachulalongkornrajavidyalaya University internal guide to reaching Thai
+    Journal Citation Index [TCI] Group 1) documents what formal institutional certification
+    actually requires and confers in the Thai academic system (TCI Group-1 status feeds into
+    ASEAN Citation Index inclusion) -- useful as CONTEXT_ONLY for what Q2's "institutional
+    certification" side concretely is in this workspace's own country, but it does not discuss
+    or evaluate any certification-substitute mechanism. The India-USA professors survey
+    (Chakravorti et al. 2024, arXiv/PLOS One) is the clearest Global-South-relevant empirical
+    source: it finds reproducibility/replicability attention and incentive alignment differ by
+    country and argues any intervention (implicitly including a certification substitute) needs
+    to be culturally centered rather than assumed to transfer directly.
+  result: FOUND
+transfer_verdict: TRANSFERS_WITH_ADAPTATION
+  # The badge/Registered-Reports gaming and non-reproducibility findings are mechanism-level
+  # (about what the badge/protocol process does or fails to enforce), not shown to be
+  # Global-North-specific in cause -- but the one Global-South-comparative source found
+  # (Chakravorti et al.) explicitly argues incentive/resource context differs by country and
+  # institution, and the one Thai source found shows Thailand's own institutional-certification
+  # side (TCI) is itself a going, actively-used mechanism, not an absence Q2's argument would be
+  # filling -- so a certification-substitute clause would need local adaptation, not a
+  # direct drop-in, before it could be said to transfer to this workspace's own setting.
+summary_disclaimer: >-
+  This is a SCOPING_SEARCH (not a systematic review): 7 sources kept from 8 queries across 2
+  query families (support/challenge), one search episode (2026-09-05). WAS found: real
+  peer-reviewed empirical evidence that at least one concrete certification-substitute
+  mechanism (open-data badges) does not by itself guarantee the checkable rigour it is meant to
+  signal, and that badges/Registered Reports are demonstrably gameable in practice; the two
+  mechanisms' own primary design descriptions (Registered Reports, F1000Research open review);
+  a scoping review showing direct reproducibility-effect evidence for open-science interventions
+  generally is thin; one Global-South comparative empirical source; one Thai institutional
+  source describing the certification side of the comparison. NOT found: any source that tests
+  Q2's actual object (a Rule-17 claim card + I0-I5 ladder) as a certification substitute; any
+  source, Thai or otherwise, proposing or evaluating a claim-card-shaped mechanism specifically;
+  a source that resolves the gaming/non-reproducibility findings in the substitute-mechanism's
+  favor rather than the institutional-certification side's favor. Absence of a direct test is a
+  search-coverage fact, not evidence Q2's clause should or should not be formalized (NC-27).

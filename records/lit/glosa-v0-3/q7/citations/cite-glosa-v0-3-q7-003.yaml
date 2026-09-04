@@ -1,0 +1,74 @@
+$schema: citation_card.schema.json
+id: cite-glosa-v0-3-q7-003
+claim_ref: Q7
+identifier:
+  kind: OFFICIAL_URL
+  value: https://plato.stanford.edu/entries/intuitionism/
+fetch_status: FETCHED
+fetched_at: '2026-09-05'
+metadata_verified: true
+metadata_verified_by: mechanical:curl+html-strip (Stanford Encyclopedia of Philosophy page fetched directly,
+  title confirmed on the fetched page)
+metadata_verified_at: '2026-09-05'
+claim_match_verified: true
+claim_match_verified_by: self:same-session-read (I1, NOT independent -- awaiting a decorrelated I3 cross-vendor
+  route to upgrade status to VERIFIED per Rule 17/S14; task instruction caps status at METADATA_OK for
+  this pass)
+claim_match_verified_at: '2026-09-05'
+exact_passage: Since for the intuitionist all infinity is potential, infinite objects can only be grasped
+  via a process that generates them step-by-step. What will be allowed as a legitimate construction therefore
+  decides which infinite objects are to be accepted. For example, in most other forms of constructivism
+  only computable rules for generating such objects are allowed, while in Platonism infinities are considered
+  to be completed totalities whose existence is accepted even in cases when no generating rules are known.
+page_or_locator: plato.stanford.edu, 'Intuitionism in the Philosophy of Mathematics', section 'Choice sequences',
+  as fetched 2026-09-05
+line_or_paragraph: lines 570-576 of the fetched/stripped page text
+scope: DIRECT_QUOTATION
+evidence_tier: Dr
+independence_class: I1
+who_verified: same-session AI (I1, non-independent) -- metadata confirmed mechanically, passage read and
+  matched to Q7 by the same session that ran the search; no cross-vendor I3 route run in this pass
+verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
+status: METADATA_OK
+xenon_ledger_ref: null
+disclosure: 'Stanford Encyclopedia of Philosophy, ''Intuitionism in the Philosophy of Mathematics'' (EN,
+  peer-edited academic reference). Fetched and read directly (curl + stdlib HTML stripper, one page kept
+  in memory at a time per RAM limit) 2026-09-05. Read as: Brouwer''s intuitionism grounds its rejection
+  of actual/completed infinity in mental constructibility (a generating process), contrasted explicitly
+  with Platonism''s completed totalities -- both live options in the actual finitism-vs-Platonism dispute
+  proceed with zero theological content. stance vs Q7 as read: ORTHOGONAL -- this is the live rival-stance
+  debate (constructivism vs Platonism) that mathematics actually runs on, and it neither needs nor invokes
+  transcendence in either direction. independence_class I1 (same session) -- status METADATA_OK only, not
+  VERIFIED: no decorrelated I3 cross-vendor route has checked this card yet. No novel/first/prior-art claim
+  made about this source; comparison to Q7 is same/different/orthogonal as stated in dialogue_table_stance.'
+superseded_by: null
+notes: 'Diversity: language=en, source_type=academic_reference, geography_or_institution=US (Stanford University),
+  search_route_or_database="web search / direct fetch, glosa-v0-3 Q7 scoping pass". dialogue_table_stance:
+  orthogonal. what_it_separates: Separates infinite objects reached by a step-by-step mental generating
+  process (intuitionism, accepted) from infinite objects accepted as completed totalities without a known
+  generating rule (Platonism, rejected by intuitionists) -- a constructibility axis, not a transcendence
+  axis. what_it_assumes: Assumes mathematics is "a creation of the free mind" (per the source''s own framing
+  elsewhere) -- an epistemic-constructivist starting point that has no need for, and does not engage, a
+  transcendent ground either as support or as target of critique. what_it_would_say_against_us: The actual
+  rival-stance debate mathematicians and philosophers of mathematics fight over today (constructivism/finitism
+  vs Platonism) is fully specified and actively contested WITHOUT any transcendence talk -- so a framework
+  wanting to formally reconcile with "genuine rival epistemic stances" on infinity would find this debate,
+  not the theological one, as the stance it most needs to engage; the transcendental-ground stance sits
+  outside this live technical fight entirely.'
+citation_card_id: cite-glosa-v0-3-q7-003
+identifier_kind: OFFICIAL_URL
+claim_match_verification_route: NOT_YET
+retraction_check: UNCHECKED
+version_status: PUBLISHED
+dialogue_table_stance: orthogonal
+fetched_from_url: https://plato.stanford.edu/entries/intuitionism/
+diversity:
+  language: en
+  discipline_or_tradition: philosophy of mathematics (intuitionism/constructivism)
+  source_type: peer_reviewed
+  search_route_or_database: web search / direct fetch, glosa-v0-3 Q7 scoping pass
+  geography_or_institution: US (Stanford University)
+  venue_quality_index:
+    index_name: null
+    value: null
+    date_read: null

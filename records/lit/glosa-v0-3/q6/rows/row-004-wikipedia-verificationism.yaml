@@ -1,0 +1,26 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: Q6
+source_label: Wikipedia, 'Verificationism' (EN, community-maintained reference summarizing the logical-positivist
+  verifiability criterion)
+how_it_sees_the_problem: 'Gives the formal philosophical background Q6''s own wording (''verifiable'')
+  echoes: the Vienna Circle''s verifiability criterion required a statement to be CONFIRMABLE THROUGH
+  EXPERIENCE to count as meaningful at all -- i.e. classical philosophy of language already treats ''verifiable''
+  as a term that only does work when paired with an actual empirical confirmation procedure, not asserted
+  on its own.'
+what_it_separates: Separates a statement's being verifiable-in-principle (an epistemic property requiring
+  a stated confirmation method) from a statement's merely being ASSERTED as verifiable -- the whole point
+  of the historical criterion was to give a workable procedure, and its own later collapse (noted in the
+  article) came from failing to state one precisely.
+what_it_assumes: Assumes a reader interested in the historical/technical meaning-criterion debate (Vienna
+  Circle, Ayer, Carnap, Hempel, Popper's critique); does not itself address practical writing red flags
+  or fact-checking practice -- it is background/definitional context for WHY 'verifiable' is a loaded
+  word, not direct evidence about Q6's proposed schema entry.
+stance: ORTHOGONAL
+what_it_would_say_against_us: This is philosophical background, not itself a claim about glosa's schema
+  design; using it as if it directly recommended Q6's move would overstate its relevance -- it supplies
+  vocabulary and historical grounding (why 'verifiable' without a procedure is philosophically empty)
+  rather than evidence for or against adding a new red-flag entry.
+citation_card: cite-glosa-v0-3-q6-004
+verified:
+  metadata_verified: true
+  claim_match_verified: true

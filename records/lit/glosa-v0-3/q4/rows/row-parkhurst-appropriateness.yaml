@@ -1,0 +1,32 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: Q4
+source_label: "Parkhurst JO, Abeysinghe S (2016), What Constitutes 'Good' Evidence for Public
+  Health and Social Policy-making? From Hierarchies to Appropriateness (Social Epistemology)"
+how_it_sees_the_problem: >-
+  Frames the problem as a category error in the field generally: policy actors and reviewers
+  often import the evidence-based-medicine "hierarchy of evidence" wholesale into policy
+  judgments, when policy questions need evidence judged by fitness-for-purpose (appropriateness),
+  not by a single ranked ladder built for clinical-trial questions.
+what_it_separates: >-
+  Separates the FORM a piece of evidence takes (e.g. an RCT vs. a policy brief) from its
+  APPROPRIATENESS to the specific policy question at hand -- arguing that a fixed hierarchy
+  conflates the two, whereas Q4's proposed intake rule (flag-and-request-tier) implicitly still
+  treats "declared tier" as the primary axis of adequacy.
+what_it_assumes: >-
+  Assumes political science, philosophy of science, and sociology-of-knowledge perspectives
+  jointly justify replacing a single evidence hierarchy with case-specific appropriateness
+  judgments; does not address glosa's specific citation-card mechanics, GRADE, or grey-literature
+  checklists directly -- it is a general argument about what "good evidence for policy" should
+  mean, not a tested intake procedure.
+stance: "YES"
+what_it_would_say_against_us: >-
+  It would not defeat Q4's core premise, but it would push back against a version of the rule
+  that reduces to "does this source declare a GRADE-style tier, yes/no" -- this paper argues that
+  test alone is the wrong lens for policy evidence. If glosa's flag-and-request-tier rule asks
+  every policy-brief-style source for a single-hierarchy-style tier rather than for an
+  appropriateness-scoped account of its own evidence base, this source would say the rule
+  reproduces exactly the category error it is arguing against.
+citation_card: cite-glosa-v0-3-q4-007
+verified:
+  metadata_verified: true
+  claim_match_verified: true

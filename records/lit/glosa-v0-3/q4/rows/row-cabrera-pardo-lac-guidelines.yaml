@@ -1,0 +1,33 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: Q4
+source_label: "Cabrera PA, Pardo R (2019), Review of evidence based clinical practice guidelines
+  developed in Latin America and Caribbean during the last decade: an analysis of the methods for
+  grading quality of evidence and topic prioritization (Globalization and Health)"
+how_it_sees_the_problem: >-
+  Frames the problem as a real, large-scale (9776-document) regional screening pipeline that must
+  process documents of unknown or unstated evidence-grading methodology alongside GRADE/SIGN/
+  Oxford-graded ones, in order to map regional GRADE adoption in Latin America and the Caribbean.
+what_it_separates: >-
+  Separates documents by their declared grading methodology into named buckets (Oxford, SIGN,
+  GRADE, other methodologies) and a residual bucket "others which did not define a specific
+  methodology" -- directly the case Q4 asks about (a source lacking a declared tier), but treated
+  as one classification outcome among several rather than a blocking condition.
+what_it_assumes: >-
+  Assumes a document's grading methodology (or its absence) can be determined by reading the
+  document itself during screening; assumes documents with no defined methodology can still be
+  classified and set aside for a narrower downstream analysis (which was restricted to
+  GRADE-methodology guidelines) rather than requiring the pipeline to pause and request
+  clarification from the source.
+stance: "NO"
+what_it_would_say_against_us: >-
+  Directly: a real, large-scale evidence-screening operation already has a working answer to
+  "source lacking a declared tier" -- classify it into an explicit residual category and proceed,
+  narrowing analysis to the graded subset as needed -- without pausing to flag-and-request a tier
+  declaration from the source. This would defeat an unqualified version of Q4's proposed rule
+  unless glosa can show its own use case (a live intake gate deciding whether to admit a single
+  source now) differs enough from this retrospective mapping exercise (classify thousands of
+  already-collected documents) to still need a request-back step.
+citation_card: cite-glosa-v0-3-q4-003
+verified:
+  metadata_verified: true
+  claim_match_verified: true

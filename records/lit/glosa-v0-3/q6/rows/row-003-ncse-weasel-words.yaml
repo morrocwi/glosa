@@ -1,0 +1,23 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: Q6
+source_label: National Center for Science Education, 'Weasel Words' (EN, grey/nonprofit practitioner explainer
+  -- science-education advocacy organization)
+how_it_sees_the_problem: 'Gives a worked, first-person example of Q6''s exact pattern: a claim (''this
+  can be debunked/verified'') made with vague attribution and NO stated procedure for the reader to check
+  it, then explicitly names the missing piece as ''a mechanism for checking sources'' -- almost a direct
+  restatement of Q6''s proposed red flag in plain language.'
+what_it_separates: Separates a claim that IS checkable (named source, stated method) from one that only
+  SOUNDS checkable (vague 'some critics'/'some sources' attribution) -- the reader cannot tell fabrication
+  from real-but-misused sourcing without a checking mechanism.
+what_it_assumes: Assumes a general public-science-communication audience; frames the issue as source-attribution
+  generally, not specifically as the word 'verifiable' or a formal claim-card schema field -- transfers
+  to Q6's narrower schema-design question only by analogy, not by direct address of it.
+stance: 'YES'
+what_it_would_say_against_us: Directly supports the SUBSTANCE of Q6 (an assertion that sounds checkable
+  but withholds the actual checking mechanism is a real, recurring problem worth flagging), giving Q6
+  concrete grounding outside glosa's own domain; does not itself address whether glosa's schema should
+  implement this as a NEW named entry versus extending an existing vague-attribution entry.
+citation_card: cite-glosa-v0-3-q6-003
+verified:
+  metadata_verified: true
+  claim_match_verified: true

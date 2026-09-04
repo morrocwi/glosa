@@ -1,0 +1,31 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: Q2
+source_label: "F1000Research, Open Peer Review (think.f1000research.com/open-peer-review)"
+how_it_sees_the_problem: >-
+  Frames the problem as a rule-plus-transparency redesign of "did this pass review": publish
+  first, then attach named, public reviewer reports with a defined rating scale, and define
+  "passed peer review" as a specific, checkable combination of ratings tied to those public
+  reports.
+what_it_separates: >-
+  Separates the ARTICLE'S EXISTENCE (published immediately, always) from its CERTIFICATION
+  STATUS (passed peer review, defined by a specific public rule over public reports) -- close in
+  shape to how a claim card could separate a claim's existence from its verification status
+  (METADATA_OK vs VERIFIED vs CHALLENGED) rather than gating existence on institutional approval.
+what_it_assumes: >-
+  Assumes readers/indexers will actually use the public reports rather than just the pass/fail
+  label; does not address whether reviewers themselves need institutional credentials to be
+  trusted (they are still expert reviewers, just named and public rather than anonymous and
+  gatekeeping pre-publication) -- so this mechanism substitutes TRANSPARENCY for opacity, not
+  necessarily EXPERTISE for no-expertise, which is a narrower claim than Q2's full argument.
+stance: "YES"
+what_it_would_say_against_us: >-
+  Supports the structural move (public, rule-based, reader-checkable pass condition instead of
+  opaque institutional say-so) but is a caution against over-claiming: F1000's "Approved" rating
+  is still awarded by invited expert reviewers, not eliminated -- so this source shows
+  transparency can substitute for opacity in institutional certification, but does not show
+  expertise/credential can be fully substituted away, which is a narrower, more defensible
+  version of Q2's clause than "claim cards replace certification" stated without qualification.
+citation_card: cite-glosa-v0-3-q2-007
+verified:
+  metadata_verified: true
+  claim_match_verified: true

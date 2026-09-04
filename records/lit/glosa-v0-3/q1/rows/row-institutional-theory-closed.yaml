@@ -1,0 +1,31 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: Q1
+source_label: "Can institutional theory be refuted, replaced or modified? (International Journal
+  of Organizational Analysis, DOI 10.1108/ijoa-02-2019-1666)"
+how_it_sees_the_problem: >-
+  Frames institutional (isomorphism/decoupling) theory as a "closed theory" from a philosophy-of-
+  science standpoint: a theory that is useful and falsifiable within its own domain but whose
+  scope cannot be legitimately extended or modified by newer competing theories (institutional
+  entrepreneurship, institutional work, institutional logics) -- it can only be narrowed.
+what_it_separates: >-
+  Separates a theory's original, validated domain of applicability from an unjustified
+  extension of that theory (or its named phenomena) into new domains by later theorists --
+  precisely the move Q1 is asking whether to make with Premature Category Stabilization.
+what_it_assumes: >-
+  Assumes an instrumentalist philosophy-of-science criterion (falsifiability + explanatory/
+  predictive power) is the right test for whether a theory's domain can be extended; does not
+  discuss PCS, categorization bias, or Q1's specific tourism/hilal/service-template cases at all
+  -- it is a general methodological argument, not a direct empirical test of PCS.
+stance: "NO"
+what_it_would_say_against_us: >-
+  Directly: naming Premature Category Stabilization as a general, cross-domain kernel red-flag on
+  the strength of three convergent case studies (kc-ep-018/019/020, kc-tourism-002, kc-islam-011)
+  without a further, independently-justified theoretical account of why the SAME mechanism
+  applies outside those cases would be exactly the kind of illegitimate domain-extension this
+  paper argues against -- it would defeat Q1's premise unless glosa can show PCS is a genuinely
+  new/general construct rather than a re-labeling of institutional isomorphism reaching beyond its
+  validated domain.
+citation_card: cite-glosa-v0-3-q1-003
+verified:
+  metadata_verified: true
+  claim_match_verified: true

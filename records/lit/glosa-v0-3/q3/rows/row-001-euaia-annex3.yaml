@@ -1,0 +1,22 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: Q3
+source_label: EU AI Act, Annex III point 5(a) (EN, primary regulatory text, artificialintelligenceact.eu
+  explainer mirror)
+how_it_sees_the_problem: Classifies AI as high-risk by function (evaluating eligibility for public benefits/services,
+  including healthcare) rather than by domain label alone -- the EU's own boundary-drawing exercise for
+  when a health-adjacent AI system needs the heaviest regulatory disclosure.
+what_it_separates: Separates 'AI used by/for public authorities to gate access to healthcare services'
+  (this Annex III point, high-risk) from a general-purpose AI system that merely discusses health topics
+  without gating benefits -- a functional, not topical, cut.
+what_it_assumes: Assumes the reader is a legal/compliance audience classifying a specific deployed system
+  against a fixed high-risk list, not a product team drafting a runtime disclaimer string for end users;
+  does not itself address a reusable scope-boundary clause's wording.
+stance: ORTHOGONAL
+what_it_would_say_against_us: This point governs public-authority benefit-eligibility systems, not a general
+  non-diagnostic AI assistant like glosa's own runtime -- citing it as backing for a 'reusable clause'
+  would overstate what this specific Annex III point actually covers; the boundary it draws is jurisdiction-
+  and function-specific, one data point against a single clause traveling everywhere.
+citation_card: cite-glosa-v0-3-q3-001
+verified:
+  metadata_verified: true
+  claim_match_verified: true

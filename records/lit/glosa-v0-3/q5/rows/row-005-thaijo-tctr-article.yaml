@@ -1,0 +1,20 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: Q5
+source_label: 'ThaiJo/TCI, "การลงทะเบียนงานวิจัยทางคลินิกของไทย TCTR", Mahidol R2R e-Journal (TH,
+  he01.tci-thaijo.org/index.php/mur2r/article/view/242096)'
+how_it_sees_the_problem: Names transparency, quality, non-duplication of research, and ethically-correct
+  reporting as TCTR's stated institutional purposes, establishing why a Thai clinical-trial registry
+  exists at all.
+what_it_separates: Separates TCTR's general transparency/ethics/quality mission from any single
+  sequencing rule about timestamps -- a mission-level statement, not a mechanism-level one.
+what_it_assumes: Assumes the reader already knows what a clinical trial registry is and wants the
+  TCTR-specific institutional history and purpose; a companion piece to the operational how-to page
+  (row-006), not a substitute for it.
+stance: ORTHOGONAL
+what_it_would_say_against_us: This abstract alone cannot be used to claim Thai research practice
+  requires (or does not require) freeze-before-ethics sequencing -- citing it for that specific claim
+  would overstate what a mission-statement passage actually supports.
+citation_card: cite-glosa-v0-3-q5-005
+verified:
+  metadata_verified: true
+  claim_match_verified: true

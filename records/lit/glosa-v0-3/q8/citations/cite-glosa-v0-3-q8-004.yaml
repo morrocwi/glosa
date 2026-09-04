@@ -1,0 +1,52 @@
+$schema: citation_card.schema.json
+id: cite-glosa-v0-3-q8-004
+claim_ref: Q8
+identifier:
+  kind: OFFICIAL_URL
+  value: https://plato.stanford.edu/entries/arabic-islamic-causation/
+fetch_status: FETCHED
+fetched_at: '2026-09-05'
+metadata_verified: true
+metadata_verified_by: mechanical:page-metadata
+metadata_verified_at: '2026-09-05'
+claim_match_verified: true
+claim_match_verified_by: route:I0
+claim_match_verified_at: '2026-09-05'
+exact_passage: >-
+  the contingent is that to which existence and non-existence relate equally. Such a thing cannot
+  enter into existence unless its existence is preponderated over its non-existence
+page_or_locator: 'Stanford Encyclopedia of Philosophy, "Causation in Arabic and Islamic Thought"
+  entry, section 3.1, discussing Fakhr al-Din al-Razi''s "principle of preponderation"'
+line_or_paragraph: paragraph beginning "After Avicenna, Fakhr al-Din al-Razi..." (roughly
+  line 887-896 of the fetched, HTML-stripped page text)
+scope: DIRECT_QUOTATION
+evidence_tier: Dr
+independence_class: I0
+who_verified: I0 (this session, same-session curl+strip read of the fetched SEP page; no
+  cross-vendor or independent human check has run yet)
+verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
+status: METADATA_OK
+xenon_ledger_ref: null
+disclosure: >-
+  I0 only (same session, not independently checked). Author/venue/title confirmed directly from
+  the fetched SEP page itself. This is SUPPORT for Q8's "Directed Selection" register: the
+  "principle of preponderation" (taken by the entry from Ash'ari-associated theologian
+  al-Razi, quoting Adamson & Benevich 2023) is presented in this secular reference-philosophy
+  entry as one historical articulation of the Principle of Sufficient Reason (PSR) -- a
+  well-known, theology-independent principle in general analytic metaphysics (also associated
+  with Leibniz in the Western tradition, per the same page's broader discussion) that a
+  contingent thing, equally poised between existing and not existing, needs SOMETHING to tip
+  ("preponderate") it into actuality rather than non-actuality. This gives Q8's "Directed
+  Selection" (why THIS possible outcome actualizes among equal alternatives) a genuine
+  theology-neutral formal home in the PSR literature -- though the page frames al-Razi's own
+  version specifically within a causal/creationist context (the preponderating cause producing
+  existence), so full secularization still requires substituting a non-agential
+  sufficient-reason relation for the "cause" role al-Razi assumes.
+superseded_by: null
+notes: >-
+  Global North (Stanford University), EN, peer-reviewed/editorially-curated academic reference
+  encyclopedia, philosophy of religion / history of Islamic philosophy. Found via query family:
+  support ('occasionalism causation philosophy regularity without necessity Malebranche
+  Ash''ari' search thread, cross-referenced). Dialogue-table stance: YES (Directed Selection has
+  a real theology-neutral formal analogue in PSR/preponderation literature).
+fetched_from_url: https://plato.stanford.edu/entries/arabic-islamic-causation/

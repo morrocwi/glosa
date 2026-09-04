@@ -1,0 +1,31 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: Q4
+source_label: "Balshem H, Helfand M, Schunemann HJ, Oxman AD, Kunz R, Brozek J, Vist GE,
+  Falck-Ytter Y, Meerpohl J, Norris S (2011), GRADE guidelines: 3. Rating the quality of evidence
+  (Journal of Clinical Epidemiology)"
+how_it_sees_the_problem: >-
+  Frames evidence-quality rating as an operation the review team performs on an assembled body of
+  evidence (a pooled outcome across studies), not as a label an individual source is expected to
+  attach to itself.
+what_it_separates: >-
+  Separates quality-of-evidence (confidence in an effect estimate) from strength-of-recommendation
+  (whether to act on it), and separates rating a body of evidence from rating an individual study
+  or document -- a distinction Q4's framing ("sources lacking an explicit claim-tier declaration")
+  partly elides by implying individual sources ought to self-declare a tier.
+what_it_assumes: >-
+  Assumes a systematic review context with pooled, comparable studies (GRADE's home domain);
+  does not address grey literature, policy briefs, or intake gating for single documents outside
+  a formal review process at all.
+stance: "NO"
+what_it_would_say_against_us: >-
+  Directly: under GRADE's own design, no individual source -- policy brief or otherwise -- is
+  expected to self-declare a claim tier; tiering is the reviewer's job applied to a body of
+  evidence. Q4's framing of "lacking an explicit claim-tier declaration" as an anomaly needing a
+  special flag-and-request step may misdiagnose the normal division of labor: it is glosa's own
+  intake process, not the source, that should assign the tier, which argues against a distinct
+  request-back-to-source rule and toward simply having glosa's own graders do the work GRADE
+  always assumed they would.
+citation_card: cite-glosa-v0-3-q4-002
+verified:
+  metadata_verified: true
+  claim_match_verified: true

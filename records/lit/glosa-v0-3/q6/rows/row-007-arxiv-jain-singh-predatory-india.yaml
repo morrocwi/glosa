@@ -1,0 +1,27 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: Q6
+source_label: 'Jain & Singh, ''The Evolving Ecosystem of Predatory Journals: A Case Study in Indian Perspective''
+  (arXiv:1906.06856; EN, preprint, Global South -- Indian research group studying a domain where India
+  is a documented major hub of predatory publishing)'
+how_it_sees_the_problem: Studies, empirically and from a Global-South research group, how predatory publishers
+  evade 'standard constraints' -- i.e. how a claim-checking regime built around verifiable metrics gets
+  gamed once the underlying claims are hard to verify at scale, an adjacent angle on why an intake-time
+  red flag (catching the claim BEFORE it is used) is more tractable than post-hoc detection.
+what_it_separates: Separates publishers meeting standard, checkable constraints from ones that closely
+  mimic reputable publishers' surface signals while evading the actual verification -- a scale/network
+  problem, not a single-claim wording problem.
+what_it_assumes: Assumes a network-analysis/data-driven detection approach (crawling many journals' signals)
+  rather than a single-source, intake-time schema flag; does not itself address the wording-level 'claims
+  verifiable, no procedure stated' pattern Q6 targets -- it targets the same underlying harm (unverifiable
+  claims being used to look legitimate) at a different unit of analysis (publisher-network scale vs single-claim
+  wording).
+stance: ORTHOGONAL
+what_it_would_say_against_us: Different unit of analysis than Q6 (network-scale detection vs a single
+  intake-schema field), and only abstract-level detail was read in this pass (scope capped at SUPPORTS_GENERAL_CLAIM_ONLY,
+  not a direct quotation of a Q6-relevant finding) -- citing it as direct evidence for Q6's specific schema-design
+  move would overstate what was actually read; it supports only the GENERAL premise that unverifiable-but-legitimate-looking
+  claims are a live, studied problem, including in Global-South academic-publishing contexts.
+citation_card: cite-glosa-v0-3-q6-007
+verified:
+  metadata_verified: true
+  claim_match_verified: true
