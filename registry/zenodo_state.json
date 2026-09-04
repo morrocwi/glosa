@@ -21,9 +21,9 @@
   "bucket": "https://zenodo.org/api/files/<bucket-redacted>"
  },
  "latest": {
-  "deposition_id": 22307843,
-  "doi": "10.5281/zenodo.22307843",
-  "version": "0.2.0",
-  "head_commit": "glosa-0.2.0-e6f9642.tar.gz"
+  "deposition_id": 22310837,
+  "doi": "10.5281/zenodo.22310837",
+  "version": "0.3.0",
+  "head_commit": "67ebe44"
  }
 }

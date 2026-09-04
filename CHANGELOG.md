@@ -1,5 +1,6 @@
 # CHANGELOG
 ## 0.3.0 — 2026-09-05
+- Published: repository DOI 10.5281/zenodo.22310837 (concept 10.5281/zenodo.22301059); GitHub tag v0.3.0.
 - Publish gate v3 (7 dimensions, skeptic-verified): 17 upheld BLOCKs fixed before release (see reviews/PUBLISH_GATE_v1_public.md); 6 DAG nodes remain pending founder decision, marked in FOUNDATION v0.6.
 - FOUNDATION_v0.6.md / REPO_SPEC_v0.6.md: assembled from FOUNDATION_v0.5.md/REPO_SPEC_v0.5.md +
   every READY section of `design/FOUNDATION_v0.6_PATCH.md`/`design/REPO_SPEC_v0.6_PATCH.md`.
