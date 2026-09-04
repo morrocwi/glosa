@@ -1,0 +1,204 @@
+# tier: Dr (specified claim card; independently unreviewed, k_state K0, independence I0)
+# Written for glosa's own R1 paper (paper/main_th.md / paper/main_en.md), 2026-09-04.
+claim_card:
+  schema_version: 0.5.0
+  claim_id: GLOSA-CC-20260904-0102
+  shape: full
+  statement:
+    language: th
+    text: บันไดความเป็นอิสระ I0-I5 พร้อมเพดานระดับชั้น (tier ceiling) ที่ผูกไว้ในกฎประตูของ kernel (§3.3)
+      ป้องกันไม่ให้ AI เซสชันเดียวไปถึงสถานะความรู้ K2 ได้ด้วยตัวเอง
+    is_verbatim_quote: false
+    translation:
+      text: The Independence Ladder I0-I5 with tier ceilings, bound into the kernel gate rules (§3.3),
+        prevents a solo AI session from reaching knowledge-state K2 on its own.
+      language: en
+      translation_status: reviewed
+  standpoint:
+    declared_basis: 'founder: social-enterprise practitioner + citizen, not a substitute expert in any
+      discipline this paper touches; AI: drafting assistant, never author'
+    disciplines_not_claimed:
+    - medicine
+    - religion/fiqh authority
+    - law
+    - engineering
+    - anthropology
+    - political science
+    - academic credential
+    method_basis: research method + root questioning (philosophy); readout-not-truth lens (Readout Universe
+      / Readout Genesis)
+  claim_type: INTERPRETIVE
+  genre: design_science
+  venue_track: none
+  companion_of: null
+  produced_by: joint
+  responsible: human
+  origin_blackbox_ref: blackbox/BLACKBOX_NOTE_glosa-paper_2026-09-04.md#L20
+  litreview_manifest_ref: null
+  hypothesis_selection_ref: null
+  lens_translation:
+    lens_ref: "10.5281/zenodo.21529456"   # lens root DOI; VERIFIED I3 card paper/citations/cite-lens-001.json
+    question_human:
+      text_verbatim: เอาตาราง non-collapse ทั้งหมดใส่เข้า foundation ด้วย และ ทำระบบ ว่าต้องตรวจข้ามเอไอคนละยี่ห้อ
+        ถึงจะเพิ่มความแม่นยำเพิ่มแม้จะยังไม่คุยกับมนุษย์
+      language: th
+      blackbox_line_ref: blackbox/BLACKBOX_NOTE_glosa-paper_2026-09-04.md#L20
+    question_readout: Under the access a solo AI session has (its own outputs, re-read any number of times),
+      what does re-reading one's own output separate from a genuinely different-vendor route, and what
+      does neither separate from an external human's engagement?
+    local_contrast_space_X:
+    - I0/I1 same-session or same-model re-read
+    - I2/I3 cross-vendor AI route
+    - I5 external human route
+    restriction_provenance: this synthesis session's own reading of design/FOUNDATION_v0.5.md and this
+      repository's files, 2026-09-04; no external human consultation performed for this specific claim
+    access_relation_R: direct reading of the named repository file(s) by this session (human-directed
+      AI read), not a live instrument or a search
+    claim_function_Phi_z0: whether stacking more same-vendor or cross-vendor AI routes can ever substitute
+      for the one route (I5) the schema requires for K2
+    formal_applicability: not_applicable_narrative
+  hypothesis_world:
+    text: IF k_state advancement to K2/K3 is schema-gated on the presence of at least one evidence_relation
+      carrying independence_class == I5, THEN no finite stack of I0-I4 (including many cross-vendor AI)
+      routes can mechanically satisfy that gate ('ManyModels⇏Independence', NC-31).
+    language: en
+    falsifier_ref: five_questions.tested.falsifier (this file)
+    signature: Hypothesis derived with Readout Universe — Yaoharee Lahtee (lens, DOI 10.5281/zenodo.21529456); co-produced by founder
+      + Claude Sonnet (Fable orchestration seat); 2026-09-04
+  five_questions:
+    seen:
+      record_ref: design/FOUNDATION_v0.5.md §4.2 (Independence Ladder), §3.3 rule 4
+      as_of: '2026-09-04'
+      retrievable_original: true
+      access_model: direct file read within this repository, same session
+      citation_refs: &id001
+      - design/FOUNDATION_v0.5.md#section-4.2
+      - schema/claim_card.schema.json
+    separates:
+      value_z0: schema/claim_card.schema.json's allOf rule 4 requires k_state ∈ {K2,K3} to have ≥ 1 evidence_relation
+        at independence_class == I5 specifically — no combination of I0-I4 routes satisfies this JSON
+        Schema 'contains' check
+      licensing_test:
+        regime: textual/specification presence check (this claim is about a specified rule, not a run
+          instrument)
+        result: the rule/mechanism is present in the cited file as specified text; whether it holds up
+          in a real run is untested (Open, see falsifier)
+        notes: presence-checkable only, per chair ruling D2 applied here to this claim's own evidentiary
+          base
+      zero_vs_bottom: distinct_difference_found
+    ai_filled:
+      current_evidence: This claim rests on the FOUNDATION_v0.5.md/REPO_SPEC_v0.5.md text as read in this
+        session, and on files this same session wrote or read directly (paths named in evidence_relations
+        below); no live external tool call backs this specific claim beyond that.
+      retrieved_tool_evidence: none identified beyond local filesystem reads (Read/Bash) of the named
+        files in this repository; no web search was performed for this claim.
+      retained_record_route: The claim card itself, plus the cited FOUNDATION_v0.5.md section and repository
+        path, are the retained record; no separate logbook entry exists yet for this specific claim.
+      model_calibration_assumption: The AI drafting this claim assumes the cited FOUNDATION_v0.5.md section
+        states the rule as currently binding (not superseded by a founder ruling this session has not
+        seen); this is a model prior about document currency, not a verified fact about future rulings.
+      prompt_system_constraint: Drafted under the R1 task instructions issued to this subagent (readout-not-truth,
+        no forbidden words, same/different/cited comparison discipline, human-as-author-only) which shaped
+        which claims were selected and how they are worded.
+      decision_policy: Which of the ~10 claims to foreground, and how to word each falsifier, was an AI
+        drafting choice; the founder has not yet reviewed or selected among them (this is disclosed, not
+        concealed, per D-AIFILL).
+    assumed:
+    - id: A1
+      type: inferential_commitment
+      description: Assumes design/FOUNDATION_v0.5.md's cited section is the founder's currently-binding
+        intent and has not been silently superseded by a later, unread ruling.
+      identification_level: A1
+      contaminated_concept_hit: false
+    tested:
+      evidence_relations:
+      - evidence_id: self-read-foundation-v0.4
+        bearing: SUPPORTS
+        independence_class: I0
+        strength: same-session self-read; no standing as an independent check (§4.2 table)
+        citation_ref: design/FOUNDATION_v0.5.md
+      falsifier: 'A real claim-card payload that validates against schema/claim_card.schema.json with
+        k_state: K2 or K3 and zero I5 evidence_relations — i.e. a schema bug or an unenforced code path
+        that lets a solo-AI stack reach K2 despite the stated rule.'
+      dissent_records: []
+  identification_ladder:
+    layers:
+    - id: L0
+      adds: same-session self-read of the specification text
+    per_rival: []
+  provenance_dag:
+    nodes:
+    - id: n1
+      kind: specification_text
+    edges: []
+    essential_dependency_set:
+    - design/FOUNDATION_v0.5.md
+    defeater_log: []
+    status: not_run
+  silent_lift_check:
+    represented_dependency_set:
+    - design/FOUNDATION_v0.5.md
+    - this paper
+    actual_dependency_set:
+    - design/FOUNDATION_v0.5.md
+    - this paper
+    flags: []
+    status: not_run
+  scope:
+    generalization_claimed: none
+    evidence_scope: this repository's own specification and worked-example files, as read 2026-09-04
+    claim_scope: this repository's own specification and worked-example files, as read 2026-09-04
+  tier: Dr
+  k_state: K0
+  ledger:
+    forced: []
+    borrowed:
+    - Readout Condition E-A-D norm (cited, not re-proved)
+    open:
+    - whether this mechanism holds under a real independent (I3+) check
+  non_claims:
+  - Does not claim the schema's allOf blocks are exhaustive of FOUNDATION §3.3's eleven rules — schema/claim_card.schema.json's
+    own header states rules 5, 6, 8, and the 90-day exception arithmetic of rules 4/9 are kernel-only,
+    not schema-expressible.
+  - Does not claim a kernel implementing these rules exists yet (kernel/ is unrun in this session, §9).
+  legal_epistemic_separation:
+    applicable: false
+    notes: no license/permit/certification is cited by this claim
+  independent_check:
+    status: NONE
+    maker_id: ai-anthropic/claude-sonnet-5 (Fable orchestration, R1 fixer seat)
+    checker_id: none-yet
+    approver_id: none-yet
+    independence_class: I0
+    mc_level: L0
+    date: '2026-09-04'
+    expires_at: null
+  disclaimers_emitted:
+  - id: D-STANDPOINT
+  - id: D-NONEXPERT
+  - id: D-TIER
+  - id: D-NONCLAIM
+  - id: D-INDEPENDENCE
+  - id: D-K-STATE
+  - id: D-AIFILL
+  - id: D-NO-VERTICAL-AUTHORITY
+  - id: D-CANDIDATE-STATUS
+  - id: D-BLACKBOX-NOTE
+  - id: D-DVP-NOT-K2
+  - id: D-SAME-VENDOR
+  status: Draft
+  lineage:
+    derives_from:
+    - design/FOUNDATION_v0.5.md
+    supersedes: []
+    superseded_by: null
+  related_source_cards: []
+  related_observation_cards: []
+  related_citation_cards: *id001
+  human_owner: founder (Yaoharee Lahtee)
+  revision_history:
+  - rev: '0.1'
+    date: '2026-09-04'
+    by: ai-anthropic/claude-sonnet-5
+    note: First draft of this claim card, written for paper/main_th.md + main_en.md R1 task; not yet reviewed
+      by the founder or any independent checker.

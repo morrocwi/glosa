@@ -1,0 +1,13 @@
+{
+  "neighbour": "a Thai pet-owner forum thread describing the same household fix (moving the litter box closer)",
+  "problem_they_solve": "cat urinating outside the litter box",
+  "their_method": "anecdotal forum advice, no controlled observation",
+  "same_as_ours": "both name box-to-sleeping-area distance as the variable to try changing first",
+  "different_from_ours": "the forum thread reports no falsifier and no distance measurement, only 'moved it closer and it worked'",
+  "relation": "cited",
+  "adoption_authorization": null,
+  "related_work_we_cite": "cited as a same-conclusion informal precedent, not adopted from",
+  "citation_card": "cite-example-ext-001",
+  "tier": "Open",
+  "fetched_verified": { "metadata_verified": false, "claim_match_verified": false }
+}

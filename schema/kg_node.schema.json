@@ -1,0 +1,35 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://glosa.example/schema/kg_node.schema.json",
+  "title": "glosa kg node",
+  "description": "tier: Dr (specified; independently unreviewed). Implements FOUNDATION_v0.5.md §8.1 (Citemap + kggraph): one node per graph entity, a GRAPH-VIEW POINTER never the canonical content (one fact, one home -- the canonical content lives in the card file at `ref`). Stored append-only, one JSON object per line, in `<project>/kg/nodes.jsonl`; `glosa kg merge` renders the repo-wide `kg/nodes.jsonl` view. Namespace https://glosa.example/ is a placeholder.",
+  "type": "object",
+  "required": ["id", "type", "label", "created_at", "status", "ref"],
+  "additionalProperties": true,
+  "properties": {
+    "id": { "type": "string", "minLength": 1 },
+    "type": { "enum": ["claim", "source", "equation", "project", "person_role", "concept"] },
+    "label": { "type": "string", "minLength": 1 },
+    "tier": {
+      "anyOf": [ { "$ref": "common.defs.json#/definitions/tier" }, { "type": "null" } ]
+    },
+    "created_at": { "type": "string" },
+    "status": { "enum": ["ACTIVE", "SUPERSEDED", "DEPRECATED", "SCRAMMED"] },
+    "ref": { "type": "string", "minLength": 1 },
+    "standpoint": { "type": ["string", "null"] },
+    "superseded_by": { "type": ["string", "null"] },
+    "notes": { "type": "string" }
+  },
+  "allOf": [
+    {
+      "description": "tier is required for claim and equation nodes (template's own rule).",
+      "if": { "properties": { "type": { "enum": ["claim", "equation"] } } },
+      "then": { "required": ["tier"], "properties": { "tier": { "$ref": "common.defs.json#/definitions/tier" } } }
+    },
+    {
+      "description": "status SUPERSEDED requires superseded_by to name the replacing node.",
+      "if": { "properties": { "status": { "const": "SUPERSEDED" } } },
+      "then": { "properties": { "superseded_by": { "type": "string", "minLength": 1 } }, "required": ["superseded_by"] }
+    }
+  ]
+}

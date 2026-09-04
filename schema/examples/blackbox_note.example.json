@@ -1,0 +1,39 @@
+{
+  "id": "BB-2026-09-04-01",
+  "project": "cases/worked-example-cat",
+  "session_ref": "cases/worked-example-cat.md",
+  "participants": [
+    { "role": "founder" },
+    { "role": "AI-anthropic/claude-sonnet-5" }
+  ],
+  "language": "mixed",
+  "privacy_scan": "done",
+  "public_lines_selected_by": "founder",
+  "lines": [
+    {
+      "n": 1,
+      "ts": "2026-09-04T07:20:08Z",
+      "speaker": "founder",
+      "kind": "question",
+      "text_verbatim": "ทำไมแมวเยี่ยวไม่เป็นที่",
+      "distinction_introduced": "the cat's litter-box location relative to the sleeping area became a candidate variable, not just 'the cat is being bad'",
+      "became": [ { "claim_card": "GLOSA-CC-20260904-0001" } ],
+      "public": true,
+      "ai_proposed": false
+    }
+  ],
+  "cooking": [
+    {
+      "step": "lens_in",
+      "ts": "2026-09-04T07:25:00Z",
+      "by": "joint",
+      "input_lines": [1],
+      "output_ref": "GLOSA-CC-20260904-0001",
+      "what_changed": "translated the raw question into a distance-to-litter-box access relation R and a contrast space X = {<2m, >=2m}"
+    }
+  ],
+  "r1_readout_ref": "cases/worked-example-cat.md#r1",
+  "r2_hypothesis_ref": "cases/worked-example-cat.md#r2",
+  "translation_status": "reviewed",
+  "disclaimers": ["D-BLACKBOX-NOTE", "D-STANDPOINT"]
+}

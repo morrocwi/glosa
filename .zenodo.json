@@ -1,0 +1,57 @@
+{
+  "title": "glosa — Rigour Without Infrastructure: A Standalone Scholar Methodology for Human–AI Knowledge Co-Production",
+  "upload_type": "software",
+  "license": "CC-BY-4.0",
+  "creators": [
+    {
+      "name": "Lahtee, Yaoharee",
+      "orcid": "0009-0005-3861-0626"
+    }
+  ],
+  "description": "v0.1.0 — K0 public working release — timestamped and citable, NOT peer reviewed, no independent check yet (K1 in glosa requires a cross-vendor I3 check that has not run), tier Dr. Methodology + skill + tools for co-producing rigorous knowledge with AI without institutional infrastructure. Every claim answers five questions bound to the Readout Condition. No priority claim.",
+  "keywords": [
+    "methodology",
+    "human-AI co-production",
+    "epistemic provenance",
+    "readout",
+    "standalone scholar"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "10.5281/zenodo.22163849",
+      "relation": "references",
+      "resource_type": "publication-preprint"
+    },
+    {
+      "identifier": "10.5281/zenodo.21529456",
+      "relation": "references",
+      "resource_type": "publication-preprint"
+    },
+    {
+      "identifier": "10.5281/zenodo.21665100",
+      "relation": "references",
+      "resource_type": "publication-preprint"
+    },
+    {
+      "identifier": "10.5281/zenodo.22301318",
+      "relation": "references",
+      "resource_type": "publication-preprint"
+    },
+    {
+      "identifier": "10.5281/zenodo.22301202",
+      "relation": "references",
+      "resource_type": "publication-preprint"
+    },
+    {
+      "identifier": "10.5281/zenodo.22302518",
+      "relation": "isSupplementedBy",
+      "resource_type": "publication-other"
+    },
+    {
+      "identifier": "https://github.com/morrocwi/readout_universe",
+      "relation": "references",
+      "resource_type": "software"
+    }
+  ],
+  "version": "0.1.0"
+}

@@ -1,0 +1,143 @@
+% disclaimers.tex — the glosa disclaimer catalogue, rendered, FILLED for the R1 paper.
+% IDs are the semantic ids of the single disclaimer catalogue
+% (methodology/data/disclaimer_catalogue.json; design/FOUNDATION_v0.5.md §5). Filled by hand
+% against the specification this session (kernel compute_disclaimers() was not run — see
+% paper/README.md §Evaluation); tier Dr for the selection judgment itself.
+
+\begin{disclaimers}
+  \item[D-STANDPOINT] See \Cref{sec:standpoint}: founder = social-enterprise practitioner and
+    citizen, not a credentialed expert in the disciplines this paper touches; AI = drafting
+    assistant, disclosed throughout, never an author.
+  \item[D-NONEXPERT] Disciplines this paper draws on: applied epistemology/provenance design,
+    software specification, LaTeX/document engineering. Disciplines explicitly \emph{not} claimed:
+    medicine, religious/fiqh authority, law, engineering, anthropology, political science, formal
+    computer science beyond the mechanically executed checks in \Cref{sec:evaluation}.
+  \item[D-SCOPE] Not applicable to \texttt{EMPIRICAL} genre thresholds (this is
+    \texttt{design\_science}); the one \texttt{n=1} demonstration this paper reports
+    (\Cref{sec:demonstration}) is explicitly scoped to a single worked example, one household, one
+    cat, and is never generalized past that (\texttt{D-SCOPE(n=1)}, matching the cat worked
+    example's own wording).
+  \item[D-NONCLAIM] This paper does \emph{not} claim: that glosa's kernel/CLI/MCP layer exists as
+    running code (\Cref{sec:evaluation}); that any claim card in this repository, including its own
+    ten, has passed an independent ($I2$+) check; that the cat worked example demonstrates the
+    method works for problems of any other shape or stakes; that any neighbour-table row's
+    capabilities were independently re-verified beyond a single fetched page; that this paper is
+    ready for any venue or is peer reviewed in any sense.
+  \item[D-AIFILL] See \Cref{sec:ai-disclosure}. AI drafted: this document's prose throughout, all
+    ten claim cards in \Cref{sec:claim-matrix}, the LaTeX build, the Blackbox Note line selection
+    in \Cref{sec:blackbox} (candidate only, \texttt{ai\_proposed: true}), and the neighbour-table
+    excerpt in \Cref{sec:related}. Founder-authored/decided: the underlying methodology's direction
+    (prior sessions, \texttt{design/FOUNDATION\_v0.4.md}), every Blackbox Note line's original
+    content, and the standpoint declaration. Not yet founder-reviewed: this specific draft's
+    wording and claim selection (\Cref{sec:mastery-gate}).
+  \item[D-TIER] Highest tier claimed anywhere in this paper: \FiniteDiag{} (\claimref{C108}, the
+    LaTeX build's own compile-and-grep result — a real, reproducible, executed check). It cannot go
+    higher (e.g. to \ThCoqc{}) because no formal, machine-checked proof is offered anywhere in this
+    paper; every other claim is \DrTier{} because it is a design/interpretive judgment about
+    glosa's own specification, not a proof or an independently repeated measurement.
+  \item[D-INDEPENDENCE] Every claim in \Cref{sec:claim-matrix} except \claimref{C108} carries
+    exactly one evidence relation, at independence class $I0$ (same-session self-read — not a
+    \texttt{tested:} entry at all per \S4.2's own table). \claimref{C108} additionally carries one
+    $I4$ (mechanical/executed) evidence relation, the compile-and-grep result itself. This paper
+    does not seek, and does not treat as available, any external or institutional validation as a
+    lever that would make its claims more true on its own say-so.
+  \item[D-DVP-NOT-K2] No claim in this paper is asserted above K1, and in fact none reaches even
+    K1: this paper's own $k\_state$ is K0 throughout (\Cref{sec:kstate}), since no evidence relation
+    anywhere in it reaches $I3$ (cross-vendor AI) or $I5$ (external human). \textbf{DVP $\neq$ K2}
+    applies with extra force here: no DVP pass of any kind has even been run yet.
+  \item[D-SAME-VENDOR] Not applicable in the sense the id names (no Route Dependence Matrix with
+    $I1$/$I2$-only routes was built for this paper) — but the underlying condition it guards
+    against is present in a stronger form: every route here is the \emph{same session}, not merely
+    the same vendor ($I0$, not $I2$). Named plainly rather than marked ``none identified,'' since
+    the id's spirit (same-source concentration) clearly applies even though its literal Route
+    Dependence Matrix trigger was never built.
+  \item[D-LEGAL-NEQ-EPISTEMIC] None identified: no license, permit, certification, or regulatory
+    approval is cited by any claim in this paper as raising its epistemic warrant. (CC BY 4.0
+    governs this repository's reuse rights only, per \texttt{LICENSE}; it certifies nothing about
+    any claim's truth.)
+  \item[D-NOT-DIAGNOSTIC] Applicable: \Cref{sec:demonstration} discusses a health-adjacent rival
+    (possible feline illness) as part of the worked example. This paper makes \emph{no} veterinary,
+    medical, or treatment recommendation; the medical rival is explicitly handed off to a
+    veterinarian in the underlying worked example (\texttt{cases/worked-example-cat.md} Step 2) and
+    is never resolved here.
+  \item[D-TRANSLATION] Applicable: a Thai companion exists (\texttt{../main\_th.md}, source of
+    truth) and this English document (\texttt{../main\_en.md} / this LaTeX build) is a rewrite of
+    meaning, never a word-for-word translation, per record (\texttt{translation\_status: reviewed}
+    on the underlying claim cards). Quoted Blackbox Note lines in \Cref{sec:blackbox} are
+    romanized-glossed in this LaTeX build specifically because this TeX installation has no
+    configured Thai font — the Thai script itself is never altered and lives in
+    \texttt{../main\_th.md} and the underlying dialogue file.
+  \item[D-DISSENT-PRESERVED] None recorded to date for this paper specifically. glosa's own design
+    history records several resolved disputes (\texttt{design/FOUNDATION\_v0.4.md} \S10, six
+    disputes resolved by chair ruling, explicitly flagged as overturnable by the founder) — none of
+    those disputes bears directly on this paper's own ten claims.
+  \item[D-COMPARISON] This paper does not claim priority or precedence over other work.
+    \Cref{sec:related} answers exactly three questions — which problem this paper solves, by which
+    method, and how the nearest neighbours do it the same or differently (\Cref{tab:neighbours}) —
+    and every neighbour relation is stated as \emph{same}, \emph{different}, or \emph{cited}, never
+    as a priority contest.
+  \item[D-CITATION-UNVERIFIED] Applicable throughout \Cref{sec:related}: every neighbour-table
+    citation carries \texttt{citation\_card: PENDING} (not yet a schema-conformant, verified
+    object); every row is tiered \OpenTier{} on that basis. The two lens DOIs
+    (\citep{lahtee2026genesis,lahtee2026zeroreadout}) are the exception: each now has a
+    \texttt{status: VERIFIED} citation card at independence \(I3\) (see \textbf{D-LENS-UNCITED}
+    below).
+  \item[D-LENS-UNCITED --- closed 2026-09-04] \texttt{lens\_used} is present in this paper's own
+    front matter (\Cref{sec:question-lens}) and in every one of its ten claim cards. Both required
+    DOIs (\texttt{10.5281/zenodo.21529456}, \texttt{10.5281/zenodo.21665100}) and both repository
+    URLs (\url{https://github.com/morrocwi/readout_universe},
+    \url{https://github.com/morrocwi/readout_genesis}) are present in this paper's own reference
+    list and front matter, and a \texttt{status: VERIFIED} \texttt{citation\_card} now exists for
+    each lens DOI in \texttt{paper/citations/} (metadata fetched from the Zenodo API; claim-match
+    judged by a cross-vendor route, independence \(I3\), record in
+    \texttt{registry/verification/lens\_2026-09-04/}). Claim-match was judged from title and
+    abstract only, not full text; no external human (\(I5\)) has checked it. The \S7.4 hard block
+    no longer applies; what remains is the narrower disclosure just stated.
+  \item[D-LENS-UNSIGNED] Not triggered: every claim card's \texttt{hypothesis\_world.signature} is
+    non-empty and names the lens \texttt{lens\_ref} points at (``Hypothesis derived with Readout
+    Universe --- Yaoharee Lahtee (lens); co-produced by founder + Claude Sonnet ...''), satisfying
+    \S3.3 rule 12 as specified.
+  \item[D-LIT-MODE] Applicable to \Cref{sec:demonstration}'s LRS stub: its
+    \texttt{search\_log.search\_mode} is honestly \texttt{TARGETED\_SEARCH}, not
+    \texttt{SYSTEMATIC\_REVIEW}, and this is stated next to the demonstration itself, not in a
+    methods footnote.
+  \item[D-LIT-NOT-OBTAINED] Applicable: the LRS stub in the underlying worked example lists zero
+    \texttt{sources\_found} — nothing is named as known-but-unread, because no search was actually
+    run (it is a stub, disclosed as such).
+  \item[D-K-STATE] This paper's overall knowledge state is \texttt{K0} (\Cref{sec:kstate}); no
+    per-claim exception raises the paper's own state, though one fact within it
+    (\claimref{C108}) is independently tiered \FiniteDiag{}/$I4$.
+  \item[D-AUTHORSHIP] See \Cref{sec:ai-disclosure}. The founder (Yaoharee Lahtee) is the sole
+    formal author; AI contribution is disclosed per claim (\texttt{produced\_by: joint} on every
+    card in \Cref{sec:claim-matrix}) and never substitutes for the founder's own judgment or
+    responsibility.
+  \item[D-NO-VERTICAL-AUTHORITY] This paper does not seek, and would not treat as raising any
+    claim's warrant, peer review, publication venue acceptance, or institutional recognition —
+    consistent with \texttt{CLAIM\_BOUNDARY.md} and \texttt{AGENTS.md} gate rule 6. Its own
+    unreviewed status (\Cref{sec:mastery-gate}) is stated as an honest gap, not something outside
+    validation would fix.
+  \item[D-CANDIDATE-STATUS] Every artifact this paper names — its own ten claim cards, this LaTeX
+    build, the Blackbox Note selection — is \texttt{status: Draft}, none has passed an $I4$/$I5$
+    check beyond the one mechanical LaTeX-build fact (\claimref{C108}).
+  \item[D-PARTIAL-SET] Not triggered by a 3-lane structure in this paper specifically; named here
+    as ``none identified'' for completeness rather than omitted.
+  \item[D-SILENT-LIFT-GUARD] Applicable to \claimref{C101}: this paper's own drafting session
+    assumed, without independently re-deriving, that \texttt{design/FOUNDATION\_v0.4.md}'s cited
+    text is the founder's currently-binding intent (\texttt{assumed[].id: A1} on every claim card).
+  \item[D-BLACKBOX-NOTE] This paper carries the mandatory Blackbox Note appendix
+    (\Cref{sec:blackbox}, ``how this work was made''): curated verbatim human lines and the
+    cooking log of every transformation applied to them. Blackbox id:
+    \texttt{BB-2026-09-04-GLOSA-PAPER} (\texttt{blackbox/BLACKBOX\_NOTE\_glosa-paper\_2026-09-04.md});
+    the curated selection in \Cref{sec:blackbox} is AI-\emph{proposed} only and awaits founder
+    approval (\Cref{sec:ai-disclosure}).
+  \item[D-NO-EPISTEMIC-VETO] Always on: no agency (the founder, this AI, a future reviewer, or any
+    other party) holds an epistemic veto over this paper's claims merely by title, credential, or
+    institutional position; any agency may propose/use/test/challenge/fork/translate/revise/
+    restrict/withdraw a claim card here without needing permission, provided lineage is preserved.
+  \item[D-DERIVED-PATTERNS] Applicable: this paper's method (\Cref{sec:method}) re-derives
+    patterns from private ANSE.ASIA repositories/skills not themselves public — the
+    maker-checker-gate (MIMCG) L0--L5 table and MC-01--05 rules, and the
+    \texttt{grr-epistemic-foundation} Claim/Evidence/Warrant vocabulary pattern (not its literal
+    enum strings). See \texttt{lineage/RELATION\_TO\_ANSE\_SKILLS.md} for the full ledger; not
+    restated here.
+\end{disclaimers}

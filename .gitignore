@@ -1,0 +1,39 @@
+*.aux
+*.log
+*.out
+*.bbl
+*.blg
+*.synctex.gz
+__pycache__/
+.DS_Store
+
+# local author profile + secrets (real files live in ~/.config/glosa/)
+.glosa/author_profile.json
+.glosa/secrets.env
+*.env
+!*.env.EXAMPLE
+logbook.jsonl
+
+# release approval must be written by the founder in person, never committed pre-filled
+registry/RELEASE_APPROVAL.txt
+
+# obsidian bridge (tools/obsidian_bridge.py), self mode: <repo>/obsidian/glosa/ generated notes
+# ARE tracked (they're a harmless, useful view of the repo — claim/blackbox/kg links a reader can
+# browse without Obsidian installed). Only the bridge's own bookkeeping manifest is ignored, since
+# it is a local cache keyed to one machine's sync history, not repo content.
+obsidian/glosa/.glosa_bridge_manifest.json
+
+# internal working drafts (kept locally, not public until the founder curates them)
+blackbox/DIALOGUE_*_DRAFT.md
+design/SURVEY_*.md
+design/HANDOFF_*.md
+registry/downloads_scan_*.json
+
+# internal review packets / plans (local audit trail; quote private material) — only the sanitized summary is public
+reviews/*
+!reviews/README.md
+!reviews/PUBLISH_GATE_v1_public.md
+design/PLAN_*.md
+# local-only leak patterns naming private things (never public)
+scripts/leak_denylist.local.txt
+registry/private_source_names.txt

@@ -1,0 +1,37 @@
+{
+  "manifest_id": "rel-cat-worked-example-0001",
+  "artifact_refs": {
+    "claim_ids": ["GLOSA-CC-20260904-0001"],
+    "citation_card_ids": ["cite-cat-obs-001"],
+    "project_ref": "cases/worked-example-cat",
+    "genre": "case_study",
+    "venue_track": "none"
+  },
+  "gate_verdict": "PASS_WITH_LIMITS",
+  "adversarial_review": {
+    "r1_leak_scan": { "result": "PASS", "notes": "no local paths/usernames found" },
+    "r2_license_coverage": { "result": "PASS", "notes": "CC BY 4.0, whole repository" },
+    "r3_tier_fidelity": { "result": "PASS", "notes": "tier Dr matches the underlying n=1 evidence" },
+    "r4_citation_accuracy": { "result": "PASS", "notes": "1/1 citation VERIFIED" },
+    "r5_anchor_preservation_audit": { "result": "PASS", "notes": "no ancestor claim touched by this artifact" },
+    "r6_overclaim_register_scan": { "result": "PASS", "notes": "no forbidden words found" },
+    "r7_completeness": { "result": "PASS_WITH_LIMITS", "notes": "n=1 sample size explicitly disclosed in non_claims" },
+    "reviewed_by": "independent reviewer (not the maker)",
+    "reviewed_at": "2026-09-05"
+  },
+  "independent_check_summary": {
+    "maker_id": "founder+AI",
+    "checker_id": "independent reviewer route R1",
+    "approver_id": "founder",
+    "independence_class": "I3",
+    "mc_level": "L3",
+    "approver_kind": "human"
+  },
+  "blackbox_note_appendix_present": true,
+  "blackbox_note_appendix_ref": "cases/worked-example-cat.md#blackbox-note-appendix",
+  "k_state_declared": "K0",
+  "status": "Pending Review",
+  "disclaimers_emitted": [ { "id": "D-K-STATE" }, { "id": "D-BLACKBOX-NOTE" } ],
+  "human_owner": "founder",
+  "revision_history": []
+}

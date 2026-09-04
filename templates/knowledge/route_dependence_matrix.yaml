@@ -1,0 +1,122 @@
+# route_dependence_matrix.yaml — RWI S10 template (Dr, unreviewed proposed schema)
+# One matrix per CLAIM that cites more than one AI route as evidence (any claim reaching
+# independence level I2+, S10 §1). Lives at reviews/routes/<claim_id>/ROUTE_DEPENDENCE_MATRIX.yaml.
+#
+# Job of this file, stated once: make residual correlation between routes VISIBLE, not zero it
+# out (S10 §2). A matrix where every `shared_with` list is empty is a claim, not a proof, and is
+# itself subject to audit by a Hostile Reviewer / Falsifier route (S10 §5).
+#
+# Binding invariants this file exists to check (see design/S9_non-collapse-table.md):
+#   ManyModels ⇏ Independence (NC-31) — many routes only decorrelate if they actually differ.
+#   DVP != K2 (NC-32) — no matrix, however clean, raises a claim past K1 by itself.
+
+claim_ref: claim-<id>              # required — the claim card this matrix backs
+
+acceptance_criteria_ref: reviews/routes/<claim_id>/ACCEPTANCE_CRITERIA.md
+  # required — must be frozen BEFORE the first route ran (S10 §3.1); this file records only
+  # the path, not the criteria text itself, so the two cannot silently drift apart
+
+# --- one entry per route; minimum 3 materially different routes for any L2+ claim (S4 §3) ---
+routes:
+  - route_id: R1                   # stable id, used everywhere else instead of vendor name
+                                    # (supports blind route identity, S10 §3.2)
+
+    vendor: anthropic              # required enum: anthropic | openai | google | local | other
+                                    # kept here; BLINDED in the packet shown to other reviewing routes
+
+    model: ""                      # required — exact pinned model id/version, e.g.
+                                    # "claude-sonnet-5-1", "gpt-5.1-codex", "gemini-3-pro",
+                                    # "llama-3.3-70b-local" — never "the current model"
+
+    prompt_ancestry: ""            # id/hash of the PACKET.md version this route was given
+                                    # (reviews/routes/<claim_id>/<route_id>/PACKET.md)
+
+    operator: ""                   # person or agent id who wrote the prompt and ran this route —
+                                    # THE field most likely to be under-reported; a matrix where
+                                    # every route lists the same operator AND that operator wrote
+                                    # the acceptance criteria after seeing another route's output
+                                    # fails Operator-Decorrelation Control (S10 §3) regardless of
+                                    # how many vendors were nominally used
+
+    role: Falsifier                # enum (S10 §5, reused verbatim, do not rename):
+                                    # Advocate | NearestConceptProsecutor | Falsifier
+                                    # | SourceAuditor | HostileReviewer | TranslationReviewer
+                                    # | MethodEmpiricalDesigner
+
+    evidence_base: ""               # what this route was given: claim card only | claim card +
+                                     # named source files | live web search | none (pure model
+                                     # judgment)
+
+    external_anchor: null           # if this route bottomed out in a mechanical/original-record
+                                     # check (independence level I4), name it here: file path,
+                                     # DOI, test name, `coqc` target. null if pure generative
+                                     # judgment.
+
+    shared_with: []                 # list of other route_id values this route shares training
+                                     # data lineage, conversation context, operator, or prompt
+                                     # ancestry with — filled in HONESTLY by a Hostile Reviewer or
+                                     # Falsifier role, not by the route's own operator
+
+    independence_level: I0          # required enum: I0 | I1 | I2 | I3 | I4 | I5 (S10 §1)
+                                     # — the level AFTER `shared_with` is accounted for; two
+                                     # routes that individually look I3 but share operator +
+                                     # prompt_ancestry may be downgraded to I2 for the PAIR
+
+    review_report_ref: reviews/routes/<claim_id>/R1/review_report.yaml
+
+  - route_id: R2
+    vendor: openai
+    model: ""
+    prompt_ancestry: ""
+    operator: ""
+    role: HostileReviewer
+    evidence_base: ""
+    external_anchor: null
+    shared_with: []
+    independence_level: I0
+    review_report_ref: reviews/routes/<claim_id>/R2/review_report.yaml
+
+  - route_id: R3
+    vendor: google
+    model: ""
+    prompt_ancestry: ""
+    operator: ""
+    role: SourceAuditor
+    evidence_base: ""
+    external_anchor: null
+    shared_with: []
+    independence_level: I0
+    review_report_ref: reviews/routes/<claim_id>/R3/review_report.yaml
+
+# --- summary fields, computed from `routes` above, not hand-edited ---
+highest_independence_level_reached: I0
+  # required — the single ceiling this matrix supports (S10 §1's governing rule: the max claim
+  # tier a route set can support is bounded by the HIGHEST level reached, not by route count)
+
+local_model_attempted: false
+  # required — see S10 open question 2; records whether a local open-weight model route was even
+  # tried, so its absence is visible rather than silently missing
+
+operator_decorrelation_control:
+  acceptance_criteria_frozen_before_first_route: false   # required boolean
+  route_identity_blinded_for_synthesis: false             # required boolean
+  presentation_order_randomized: false                    # required boolean
+  query_stop_rule_respected: true                         # required boolean; false = SCRAM-listed
+                                                            # answer-shopping/model-shopping (S10 §9)
+
+geographic_distribution_audit_applied: null
+  # boolean | null — required (non-null) whenever the claim touches Thai/local social,
+  # religious, or policy material (S10 §6 GDA carry-over from Standalone Scholar §15)
+
+disagreement_ledger_refs: []
+  # list of disagreement_id values (see disagreement_ledger.yaml entries) raised while building
+  # this matrix — empty is valid only if every route actually agreed, not if disagreement was
+  # averaged away or dropped (S10 §4)
+
+resulting_disclaimers: []
+  # list of disclaimer ids fired by this matrix's state (S10 §8), e.g.
+  # ["D-INDEPENDENCE", "D-SAME-VENDOR"] — auto-derivable from the fields above by
+  # scripts/validate_claim_card.py (S7), recorded here for the human-readable copy
+
+notes: ""                          # free text — honest edges, known gaps, anything a reviewer
+                                    # should see before trusting `highest_independence_level_reached`

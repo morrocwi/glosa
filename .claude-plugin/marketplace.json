@@ -1,0 +1,25 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "yaoharee-lahtee-glosa",
+  "owner": {
+    "name": "Yaoharee Lahtee",
+    "url": "https://orcid.org/0009-0005-3861-0626"
+  },
+  "metadata": {
+    "description": "Marketplace for the glosa methodology plugin (Rigour Without Infrastructure — a standalone scholar methodology for human-AI knowledge co-production). K0 public working release (not peer reviewed; no independent check yet), tier Dr, not peer reviewed."
+  },
+  "plugins": [
+    {
+      "name": "glosa",
+      "source": {
+        "source": "github",
+        "repo": "morrocwi/glosa"
+      },
+      "description": "Rigour Without Infrastructure: claim cards, Blackbox Note discipline, independent-check ladder (I0-I5), literature review system, publish gate, and project advisor for solo human-AI knowledge work. CC BY 4.0.",
+      "author": {
+        "name": "Yaoharee Lahtee"
+      },
+      "strict": false
+    }
+  ]
+}

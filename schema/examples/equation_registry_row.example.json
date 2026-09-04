@@ -1,0 +1,14 @@
+{
+  "id": "eq-litterbox-distance-001",
+  "name": "Litter-box distance threshold (worked example)",
+  "statement": "d_threshold = the distance beyond which P(out-of-box) > P(in-box) for a given cat, as read off the observation log",
+  "owner": "role-founder-direction",
+  "first_use_year": 2026,
+  "external_first_publication": null,
+  "source_citation_card_id": null,
+  "tier": "Dr",
+  "borrowed_vs_derived_status": "DERIVED",
+  "superseded_by": null,
+  "used_in_projects": ["cases/worked-example-cat"],
+  "notes": "stipulative definition for the worked example, not a veterinary or animal-behavior-science claim"
+}

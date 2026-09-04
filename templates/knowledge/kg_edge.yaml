@@ -1,0 +1,44 @@
+# kg_edge.yaml — RWI S8 template (Dr, unreviewed proposed schema)
+# One edge per typed relation between two kg nodes. Stored append-only, one JSON object per
+# line, in kg/edges.jsonl (this file shows one record expanded to YAML for readability).
+# A correction is a NEW line with `status: RETRACTED` on the old edge and a new edge added —
+# never an in-place edit that destroys history (doc-ecosystem append-only logbook discipline).
+
+id: edge-<nnn>
+
+from: <node-id>                    # source node id
+to: <node-id>                      # target node id
+
+relation: supports
+  # required enum: supports | challenges | derives_from | borrows | supersedes | cites
+  #
+  # derives_from vs borrows is DELIBERATE and non-collapsible (forced/borrowed/Open ledger,
+  # readout_genesis, re-derived):
+  #   derives_from = a shown, checkable derivation step exists (commutes under independent
+  #                  re-derivation)
+  #   borrows      = an imported anchor taken on trust, not re-derived by RWI
+
+strength: null
+  # nullable — meaningful only for supports/challenges. Descriptive only, never a single score
+  # that by itself passes a gate (grr-epistemic-foundation Warrant Profile discipline: no
+  # single number overrides a critical defect elsewhere).
+
+asserted_by: <person_role-node-id>
+asserted_at: ""                     # ISO 8601
+
+independence_class: I0
+  # required enum: I0 | I1 | I2 | I3 | I4 | I5 — the ONE string ladder used in every schema that
+  # carries this field (claim card, evidence relation, review report, citation card, kg edge;
+  # chair ruling C1). Fixed this pass: this field previously used a distinct five-value string set
+  # (self|same_model_ai|decorrelated_ai_route|mechanical|external_human) that was never reconciled
+  # against C1's own "every schema" instruction — a pre-existing fork, not one of the two v0.2
+  # reviews' 12 numbered must-fix items, caught and fixed here while checking this directory for
+  # independence_class forks (I0 ≈ old "self", I2 ≈ "same_model_ai", I3 ≈ "decorrelated_ai_route",
+  # I4 ≈ "mechanical", I5 ≈ "external_human" — see §4.2 of FOUNDATION for the definitions).
+  # An edge's own warrant is auditable the same way a claim's is; I0/I1 self-approval is NOT an
+  # independent check (maker-checker-gate MC-02).
+
+status: ACTIVE
+  # enum: ACTIVE | DISPUTED | RETRACTED
+
+notes: ""

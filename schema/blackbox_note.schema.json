@@ -1,0 +1,85 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://glosa.example/schema/blackbox_note.schema.json",
+  "title": "glosa blackbox note",
+  "description": "tier: positional/Dr (specified; independently unreviewed). Implements FOUNDATION_v0.5.md §2.3 (Blackbox Note, chair ruling A1 -- supersedes Register Zero/R0). Raw verbatim human lines, never edited in place (a correction is a new line) or translated in place, plus the append-only `cooking:` log. Renamed from schema/r0_record.schema.json per chair ruling A1 (REPO_SPEC_v0.5.md). Namespace https://glosa.example/ is a placeholder.",
+  "type": "object",
+  "required": ["id", "project", "participants", "language", "privacy_scan", "lines", "cooking"],
+  "additionalProperties": true,
+  "properties": {
+    "id": { "type": "string", "pattern": "^BB-[0-9]{4}-[0-9]{2}-[0-9]{2}-[0-9]{2}$" },
+    "project": { "type": "string", "minLength": 1 },
+    "session_ref": { "type": "string" },
+    "participants": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["role"],
+        "properties": { "role": { "type": "string", "minLength": 1 } }
+      }
+    },
+    "language": { "enum": ["th", "en", "mixed"] },
+    "privacy_scan": {
+      "description": "Required before any line goes public (template's own gate).",
+      "enum": ["pending", "done"]
+    },
+    "public_lines_selected_by": { "type": "string" },
+    "lines": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["n", "ts", "speaker", "kind", "text_verbatim", "public", "ai_proposed"],
+        "properties": {
+          "n": { "type": "integer", "minimum": 1 },
+          "ts": { "type": "string" },
+          "speaker": { "type": "string", "minLength": 1 },
+          "kind": { "enum": ["question", "proposal", "correction", "ruling", "experience", "reply"] },
+          "text_verbatim": { "type": "string", "minLength": 1 },
+          "distinction_introduced": { "type": "string" },
+          "became": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": { "claim_card": { "type": "string" }, "rule": { "type": "string" } }
+            }
+          },
+          "public": { "type": "boolean" },
+          "ai_proposed": { "type": "boolean" }
+        }
+      }
+    },
+    "cooking": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["step", "ts", "by", "input_lines", "what_changed"],
+        "properties": {
+          "step": { "enum": ["lens_in", "analysis", "lens_out", "revision", "translation", "review"] },
+          "ts": { "type": "string" },
+          "by": { "type": "string", "minLength": 1 },
+          "input_lines": { "type": "array", "items": { "type": "integer" } },
+          "output_ref": { "type": ["string", "null"] },
+          "what_changed": { "type": "string", "minLength": 1 }
+        }
+      }
+    },
+    "r1_readout_ref": { "type": ["string", "null"] },
+    "r2_hypothesis_ref": { "type": ["string", "null"] },
+    "translation_status": { "$ref": "common.defs.json#/definitions/translation_status" },
+    "disclaimers": {
+      "type": "array",
+      "items": { "$ref": "common.defs.json#/definitions/disclaimer_id" }
+    }
+  },
+  "allOf": [
+    {
+      "description": "privacy_scan must be 'done' before any line in this note is marked public (a schema-checkable subset of the template's own gate).",
+      "if": {
+        "properties": { "lines": { "type": "array", "contains": { "type": "object", "properties": { "public": { "const": true } } } } }
+      },
+      "then": { "properties": { "privacy_scan": { "const": "done" } } }
+    }
+  ]
+}

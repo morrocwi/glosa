@@ -1,0 +1,37 @@
+{
+  "problem_id": "GLOSA-PC-20260904-0001",
+  "project": "cases/worked-example-cat",
+  "intake": {
+    "q1_issue": {
+      "text_verbatim": "ทำไมแมวเยี่ยวไม่เป็นที่",
+      "retained_difference_statement": "the cat urinates outside the litter box under some household layouts but not others -- a difference that survives under the agency of this specific cat, the context of this household's floor plan, and the query of whether relocating the box changes the outcome",
+      "agency": "this specific cat and household",
+      "context": "household floor-plan / litter-box placement",
+      "query": "does box placement change in-box vs out-of-box urination",
+      "blackbox_line_ref": "BB-2026-09-04-01#1"
+    },
+    "q2_user_proposal": {
+      "text": "none",
+      "stated_by": "founder",
+      "blackbox_line_ref": "BB-2026-09-04-01#1"
+    }
+  },
+  "standpoint": {
+    "declared_basis": "pet owner direct observation, no veterinary or animal-behavior credential",
+    "disciplines_not_claimed": ["veterinary medicine", "animal behavior science"],
+    "method_basis": "direct household observation"
+  },
+  "origin_blackbox_ref": "BB-2026-09-04-01",
+  "produced_by": "human",
+  "responsible": "human",
+  "readiness": {
+    "verdict": "READY_FOR_S2",
+    "reason": "issue restated as a retained difference; standpoint declared; no analysis has started yet",
+    "checked_by": "founder",
+    "checked_at": "2026-09-04"
+  },
+  "k_state": "K0",
+  "status": "Draft",
+  "human_owner": "founder",
+  "notes": ""
+}

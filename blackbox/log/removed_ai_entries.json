@@ -1,0 +1,17 @@
+[
+ {
+  "id": "BBL-2026-09-04-009",
+  "ts": "2026-09-04T17:22:51+07:00",
+  "by": "ai:claude-fable-5.1",
+  "kind": "finding",
+  "tags": [
+   "system"
+  ],
+  "text_verbatim": "ระบบนี้ (ปูมกล่องดำ) สร้างโดย AI ตามคำสั่งข้างต้น: บันทึกเพิ่มได้อย่างเดียว ไม่แก้ไม่ลบ, ไทยเป็นต้นฉบับ, แต่ละการอัปเดต = version ใหม่ของ record เดียวกันบน Zenodo, บรรทัดของ AI ติดป้าย by: ai เสมอ",
+  "corrects": null,
+  "source": "session (id redacted)",
+  "lens_used": null,
+  "category": "method",
+  "source_note": null
+ }
+]

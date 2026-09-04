@@ -1,0 +1,63 @@
+# hypothesis_selection.yaml — RWI S14 template (Dr, unreviewed proposed schema)
+# RULE (founder 2026-09-04, 38d): every candidate hypothesis carries `signature: "Hypothesis derived with Readout Universe — Yaoharee Lahtee (lens); co-produced by <human role> + <AI vendor/model>; <date>"` at the point it is stated; missing signature while a lens is used = D-LENS-UNSIGNED → validation error.
+# Founder addition (HANDOFF 35d): after n LRS runs (one per lens-out hypothesis, R2), a human
+# compares the candidates and selects which one(s) carry forward into the genre router. This is
+# a HUMAN decision (non-delegable, matches claim_card.human_owner / responsible: human) — an AI
+# route may PROPOSE the comparison table below, never make the selection.
+
+id: hsel-<slug>-<nnn>
+problem_ref: <problem_card id>              # S1 — the one problem all candidate hypotheses answer
+decided_by: string, minLength 1             # human name/role — required, non-delegable
+decided_at: ISO date
+
+candidates:
+  - hypothesis_ref: <claim_id, R2>          # one per lens-out hypothesis
+    hypothesis_world: ""                    # verbatim R2 text, for readability without a lookup
+    lrs_manifest_ref: <litreview_manifest id>  # the frozen manifest this candidate's LRS run produced
+    dialogue_table_ref: <path>
+    criteria:
+      developability:
+        unresolved_space_shown_by_dialogue_table: ""   # what the dialogue table's ORTHOGONAL/
+                                                          # UNDETERMINED/disagree rows leave open —
+                                                          # a hypothesis with NOTHING left open after
+                                                          # its own lit review is a flag, not a win
+        note: ""
+      access_evidence_available:
+        can_we_get_new_access: yes | no | partial       # e.g. urinalysis, a new observation window
+        note: ""
+      falsifier_reachable_with_our_resources:
+        value: yes | no | partial
+        note: ""                                        # cost/time/equipment/permission realism
+      independence_routes_available:
+        max_reachable_independence_class: I0 | I1 | I2 | I3 | I4 | I5   # §4.2 ladder — honest ceiling
+        note: ""
+      risk_and_ethics:
+        human_participant_or_vulnerable_subject: yes | no
+        domain_safety_flags: []             # e.g. D-NOT-DIAGNOSTIC triggers
+        note: ""
+      genre_fit:
+        candidate_genres: []                # from the 9-row §6 table
+        note: ""
+    accuracy_gate_at_selection_time: PASS | PASS_WITH_LIMITS | FAIL | PENDING
+      # copied from litreview_manifest_ref.gate.accuracy_gate — a candidate whose manifest is not
+      # at least PASS_WITH_LIMITS may still be selected (a promising but under-evidenced hypothesis
+      # is a legitimate choice) but MUST be selected with disclosure, never silently
+    diversity_gate_at_selection_time: PASS | PASS_WITH_LIMITS | FAIL | PENDING
+
+selection:
+  chosen: [ <hypothesis_ref>, ... ]         # zero, one, or more than one may be chosen (parallel
+                                             # tracks are legal); empty is legal ("none ready, return
+                                             # to lens-in" is itself a decision, recorded here)
+  reason: string, minLength 1               # required — why THESE, in the human's own words
+  parked:
+    - hypothesis_ref: <>
+      reason: string, minLength 1           # required per parked candidate — never deleted, never
+                                             # silently dropped; a parked hypothesis's LRS manifest
+                                             # and dialogue table stay in the repo, cross-linked
+
+cooking_log_ref: <blackbox_note id, cooking[] entry>
+  # this selection event MUST be appended to the Blackbox Note's cooking log (request 32) — the
+  # choice among hypotheses is exactly the kind of transformation the cooking log exists to keep
+  # visible: by whom, which candidates were in, what was chosen and what was set aside and why
+
+routes_to: <genre router input — problem_ref + selection.chosen -> S6.1 9-row table>

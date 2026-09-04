@@ -1,0 +1,144 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://glosa.example/schema/litreview_manifest.schema.json",
+  "title": "glosa literature review manifest",
+  "description": "tier: Dr (specified; independently unreviewed). Implements templates/knowledge/litreview_manifest.yaml (S14 literature-review-system, design/S14_literature-review-system.md): ONE manifest per LRS run (one lens-out hypothesis, R2). Frozen at status FROZEN -- a correction is a new manifest version with `supersedes` pointing at the old id. GATE: no lit-review section may be drafted/published for this hypothesis until gate.accuracy_gate is PASS or PASS_WITH_LIMITS. Namespace https://glosa.example/ is a placeholder.",
+  "type": "object",
+  "required": ["id", "hypothesis_ref", "search_log_ref", "status", "citations", "diversity_audit", "accuracy", "gate", "human_owner"],
+  "additionalProperties": true,
+  "properties": {
+    "id": { "type": "string", "pattern": "^litrev-[a-z0-9-]+-[0-9]{3}$" },
+    "hypothesis_ref": { "type": "string", "minLength": 1 },
+    "search_log_ref": { "type": "string", "minLength": 1 },
+    "search_log_hash": { "type": "string" },
+    "dialogue_table_ref": { "type": "string" },
+    "neighbour_table_ref": { "type": "string" },
+    "status": { "enum": ["DRAFTING", "FROZEN", "SUPERSEDED"] },
+    "frozen_at": { "type": ["string", "null"] },
+    "supersedes": { "type": ["string", "null"] },
+    "citations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["citation_card_id", "status", "identifier_kind", "fetch_status", "metadata_verified", "claim_match_verified", "claim_match_verification_route"],
+        "properties": {
+          "citation_card_id": { "type": "string" },
+          "status": { "$ref": "common.defs.json#/definitions/citation_status" },
+          "identifier_kind": { "$ref": "common.defs.json#/definitions/identifier_kind" },
+          "fetch_status": { "$ref": "common.defs.json#/definitions/fetch_status" },
+          "acquisition_log_ref": { "type": ["string", "null"] },
+          "metadata_verified": { "type": "boolean" },
+          "claim_match_verified": { "type": "boolean" },
+          "claim_match_verification_route": { "enum": ["HUMAN_I5", "DECORRELATED_AI_I3", "NOT_YET"] },
+          "version_status": { "enum": ["PREPRINT", "PUBLISHED", "BOTH_LINKED", "NOT_APPLICABLE"] },
+          "retraction_check": { "enum": ["CLEAR", "RETRACTED", "UNCHECKED"] },
+          "dialogue_table_stance": { "enum": ["agrees", "disagrees", "orthogonal", "undetermined"] },
+          "diversity": {
+            "type": "object",
+            "properties": {
+              "language": { "enum": ["en", "th", "other"] },
+              "discipline_or_tradition": { "type": "string" },
+              "source_type": { "enum": ["peer_reviewed", "preprint", "grey_literature", "practitioner", "community", "archival", "field_observation"] },
+              "search_route_or_database": { "type": "string" },
+              "geography_or_institution": { "type": "string" },
+              "venue_quality_index": {
+                "type": "object",
+                "properties": {
+                  "index_name": { "type": ["string", "null"] },
+                  "value": { "type": ["string", "null"] },
+                  "date_read": { "type": ["string", "null"] }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "strata_table": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "stratum": {
+            "type": "object",
+            "properties": {
+              "quality_tier": { "type": "string" }, "region": { "type": "string" },
+              "language": { "type": "string" }, "source_type": { "type": "string" }
+            }
+          },
+          "candidates_considered": { "type": "array", "items": { "type": "string" } },
+          "selected": { "type": ["string", "null"] },
+          "selection_reason": { "type": "string" }
+        }
+      }
+    },
+    "diversity_audit": {
+      "type": "object",
+      "required": ["counts", "concentration_flags", "zero_disagree_flag"],
+      "properties": {
+        "counts": {
+          "type": "object",
+          "properties": {
+            "by_language": { "type": "object" },
+            "by_source_type": { "type": "object" },
+            "by_search_route_or_database": { "type": "object" },
+            "by_stance": { "type": "object" },
+            "by_geography_or_institution": { "type": "object" }
+          }
+        },
+        "concentration_flags": { "type": "array" },
+        "zero_disagree_flag": { "type": "boolean" },
+        "never_claim_diverse_without_counts": { "const": true }
+      }
+    },
+    "accuracy": {
+      "type": "object",
+      "required": ["total_citations", "verified_count", "spot_check"],
+      "properties": {
+        "total_citations": { "type": "integer" },
+        "verified_count": { "type": "integer" },
+        "spot_check": {
+          "type": "object",
+          "properties": {
+            "applicable": { "type": "boolean" },
+            "proposed_n_percent": { "type": "number" },
+            "small_n_rule_applied": { "type": "boolean" },
+            "sampled_citation_ids": { "type": "array", "items": { "type": "string" } },
+            "sample_size": { "type": "integer" },
+            "spot_check_result": { "enum": ["PASS", "FAIL", "PENDING"] },
+            "spot_checked_by": { "type": ["string", "null"] },
+            "spot_checked_at": { "type": ["string", "null"] }
+          }
+        }
+      }
+    },
+    "secondary_citation_ban_audit": {
+      "type": "object",
+      "properties": { "violations_found": { "type": "integer", "minimum": 0 } }
+    },
+    "gate": {
+      "type": "object",
+      "required": ["accuracy_gate", "diversity_gate", "overall"],
+      "properties": {
+        "accuracy_gate": { "$ref": "common.defs.json#/definitions/gate_verdict" },
+        "diversity_gate": { "$ref": "common.defs.json#/definitions/gate_verdict" },
+        "overall": { "$ref": "common.defs.json#/definitions/gate_verdict" },
+        "blocked_reason": { "type": ["string", "null"] }
+      }
+    },
+    "disclaimers_emitted": { "type": "array", "items": { "$ref": "common.defs.json#/definitions/disclaimer_ref" } },
+    "human_owner": { "type": "string", "minLength": 1 }
+  },
+  "allOf": [
+    {
+      "description": "gate.overall FAIL requires blocked_reason non-null (template's own rule).",
+      "if": { "properties": { "gate": { "type": "object", "properties": { "overall": { "const": "FAIL" } } } } },
+      "then": { "properties": { "gate": { "type": "object", "required": ["blocked_reason"], "properties": { "blocked_reason": { "type": "string", "minLength": 1 } } } } }
+    },
+    {
+      "description": "secondary_citation_ban_audit.violations_found > 0 is a hard block (never a warning) -- overall may not be PASS while violations exist.",
+      "if": { "required": ["secondary_citation_ban_audit"], "properties": { "secondary_citation_ban_audit": { "type": "object", "properties": { "violations_found": { "type": "integer", "minimum": 1 } }, "required": ["violations_found"] } } },
+      "then": { "properties": { "gate": { "type": "object", "properties": { "overall": { "enum": ["FAIL", "HUMAN_REVIEW"] } } } } }
+    }
+  ]
+}

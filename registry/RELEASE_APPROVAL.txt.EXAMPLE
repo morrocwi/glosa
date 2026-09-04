@@ -1,0 +1,9 @@
+NOT APPROVED — founder writes APPROVED <date> <name> here
+
+# Example only. The real registry/RELEASE_APPROVAL.txt is git-ignored and must be written by the
+# founder (Yaoharee Lahtee) in person before scripts/zenodo_deposit.py publish will run. Format:
+#
+#   APPROVED 2026-09-04 Yaoharee Lahtee
+#
+# The word APPROVED (uppercase, exact) must be present. Anything else in this file is free text
+# for the founder's own record (what was approved, which deposition id, any conditions).

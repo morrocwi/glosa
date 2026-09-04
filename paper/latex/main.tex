@@ -1,0 +1,607 @@
+% RWI arXiv template — ONE COLUMN — FILLED for glosa's own R1 paper
+% Rigour Without Infrastructure (RWI) — Standalone Scholar Methodology
+% Filled from templates/paper/arxiv-onecol/main.tex (S5 design stage) for the R1 task:
+% glosa's own design_science paper about glosa itself. tier: Dr throughout (specified,
+% independently unreviewed). Thai companion: ../main_th.md (source of truth, rewritten not
+% translated); this file's English content mirrors ../main_en.md.
+%
+% Thai lines quoted verbatim below (Blackbox Note lines) are ROMANIZED-GLOSSED, not set in
+% Thai script: this TeX Live install has no Thai font package configured, so pdflatex cannot
+% typeset Thai glyphs. Each quoted Thai line carries an English gloss immediately after it, and
+% the exact Thai script is the source of truth in ../main_th.md and blackbox/DIALOGUE_2026-09-04_
+% the public Blackbox Note file blackbox/BLACKBOX_NOTE_glosa-paper_2026-09-04.md, not in this compiled PDF.
+
+\documentclass[11pt]{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{mathptmx}
+\usepackage{microtype}
+\usepackage{amsmath,amssymb,mathtools}
+\usepackage{natbib}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{enumitem}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{url}
+\usepackage{hyperref}
+\usepackage{cleveref}
+\usepackage{titlesec}
+\usepackage{caption}
+\usepackage{authblk}
+\usepackage{fancyhdr}
+\usepackage{float}
+
+\definecolor{Ink}{RGB}{25,25,28}
+\definecolor{Slate}{RGB}{82,88,96}
+\hypersetup{
+  colorlinks=true, linkcolor=Ink, citecolor=Ink, urlcolor=Slate,
+  pdfauthor={Yaoharee Lahtee},
+  pdftitle={Rigour Without Infrastructure: A Standalone Scholar Methodology for Human--AI Knowledge Co-Production}
+}
+\setlength{\parindent}{1em}
+\setlength{\parskip}{0.25em}
+\setlist{nosep,leftmargin=*}
+\captionsetup{font=small,labelfont=bf}
+\titleformat{\section}{\large\bfseries}{\thesection}{0.6em}{}
+\titleformat{\subsection}{\normalsize\bfseries}{\thesubsection}{0.5em}{}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\footnotesize RIGOUR WITHOUT INFRASTRUCTURE}
+\fancyhead[R]{\footnotesize DRAFT --- \tier{Dr} TIER --- K0 --- NOT INDEPENDENTLY REVIEWED}
+\fancyfoot[C]{\footnotesize \thepage}
+\renewcommand{\headrulewidth}{0.3pt}
+
+% ---- RWI tier-tag macros (readout_genesis + readout_universe tier ladder) ----
+\newcommand{\ThCoqc}{\textsc{Th\_coqc}}
+\newcommand{\FiniteDiag}{\textsc{finite\_diagnostic}}
+\newcommand{\FitCal}{\textsc{fit\_calibrated}}
+\newcommand{\DrTier}{\textsc{Dr}}
+\newcommand{\DefTier}{\textsc{definition}}
+\newcommand{\OpenTier}{\textsc{Open}}
+\newcommand{\tier}[1]{\textsc{#1}}
+\newcommand{\claimref}[1]{\textsuperscript{[#1]}}
+
+% ---- Disclaimer-catalogue environment: a typed, enumerable list, not prose ----
+\newlist{disclaimers}{description}{1}
+\setlist[disclaimers]{style=nextline,leftmargin=1.4em,font=\bfseries}
+
+\title{\vspace{-1em}\textbf{Rigour Without Infrastructure}\\[0.3em]
+\large A Standalone Scholar Methodology for Human--AI Knowledge Co-Production\\[0.2em]
+\normalsize glosa's own paper: design, demonstration, and honest limits}
+\author[1]{Yaoharee Lahtee}
+\affil[1]{Independent researcher / social-enterprise practitioner; Open Civil Science Initiative (standpoint in \Cref{sec:standpoint}); ORCID 0009-0005-3861-0626}
+\date{Draft of \today\ --- genre: \textbf{DESIGN\_SCIENCE} (DSRM, \Cref{sec:genre}) --- venue\_track: none --- k\_state: K0}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+People at the margins, frontline practitioners, and communities often know a problem before
+researchers do, because they live with it every day. Turning what they know into ``knowledge''
+has historically run into walls of language, method, funding, institutions, and expertise. AI
+lowers those walls quickly, but a new problem follows: now anyone can produce text that looks
+smart and academic, without it being clear which part is evidence, which part is interpretation,
+and which part AI is smoothing over past what the data actually supports. This paper reports
+\textbf{glosa} (\emph{Rigour Without Infrastructure}), a Standalone Scholar methodology for
+human--AI knowledge co-production: a person with no university, no lab, and no research team
+needs a mechanism that forces every claim to answer, for one claim at a time, what was actually
+seen, what the data separates, what AI filled in, what was assumed, and whether it has met
+independent evidence or objection. The paper is itself an instance of the method it describes: it
+is genre-routed as \texttt{design\_science} (Problem--Objectives--Design--Demonstration--
+Evaluation), reaches tier \DrTier{} on its design claims and \FiniteDiag{} on one mechanically
+executed check (its own LaTeX build), and states plainly what was executed versus what remains
+specified. Its single most important limitation is structural, not incidental: every evidence
+relation behind its own ten claims is independence class $I0$ (same-session self-read), so its own
+knowledge state is \texttt{K0} by its own rule, not \texttt{K1} — a reflexive finding, not an
+exception.
+\end{abstract}
+
+\paragraph{Positioning.} We are not competing with knowledge-authority and make
+no priority claim; we state what we propose, what we build on, and what would
+make us wrong. (Verbatim, \citealp[\S1.1]{lahtee2026foundation}; grounded in the founder's own
+ruling: \emph{``rao mai son reuang mai ... nen pai thi rao snoe arai gor por, phror rao mai dai
+kaeng khan khrai, lok phan chut nan pai laeo --- pen yuk kan phalit ngan''} --- ``we are not
+interested in newness ... it is enough that we state what we propose, because we are not
+competing with anyone, the world has already moved past that point --- this is an age of
+producing work'' (founder ruling, request 31, romanized gloss; Thai script in
+\texttt{main\_th.md}).)
+
+\section{Standpoint}
+\label{sec:standpoint}
+This paper is written from the standpoint of a \emph{social-enterprise practitioner and citizen}
+(the founder, Yaoharee Lahtee), not a substitute expert in computer science, philosophy of
+science, or library/information science. The AI collaborator (Claude, Anthropic, orchestrated
+under the ``Fable'' seat this session) drafted structure, prose, the ten claim cards in
+\Cref{sec:claim-matrix}, and the LaTeX build; it is disclosed throughout and is never treated as
+an author (\Cref{sec:ai-disclosure}). This is disclaimer \textbf{D-STANDPOINT}
+(\Cref{sec:disclaimers}); mandatory in every genre (\Cref{sec:genre}). \textbf{Disciplines not
+claimed:} medicine, religious/fiqh authority, law, engineering, anthropology, political science,
+formal computer science beyond what is mechanically executed here (disclosure D-NONEXPERT).
+
+\section{Question as lived / Question as readout / Hypothesis}
+\label{sec:question-lens}
+\begin{description}[style=nextline,leftmargin=1.4em,font=\bfseries]
+  \item[Question as lived] (th, verbatim, romanized gloss --- see
+    \texttt{blackbox/BLACKBOX\_NOTE\_glosa-paper\_2026-09-04.md\#L1}; Thai script in
+    \Cref{sec:blackbox}): \emph{``khon thi mai mi mahawitthayalai, mai mi laep, lae mai mi thim
+    wichai, ja phalit khwamru chak phuenthi khong ton eng yang khemkhaeng dai yangrai''} ---
+    ``how can someone with no university, no lab, and no research team produce knowledge
+    rigorously from their own site of practice?''
+  \item[Question as readout] Under the access this person actually has (their own site of
+    practice, no institutional instrument, no credentialed lab, and now an AI collaborator with
+    no standing of its own), what does an unaided narrative claim currently fail to separate from
+    a claim that can be traced back to what was seen, what AI supplied, and what independent check
+    it has met? The contaminated concept flagged here is ``rigour'' itself: as ordinarily used, it
+    presupposes an institutional apparatus (a lab, a department, a review board) rather than
+    naming a checkable property a claim can carry on its own.
+  \item[Hypothesis (H0, governing this paper)] \textbf{If} every claim is recorded as a claim card
+    answering five founder questions bound to the Readout Condition's Existence--Attribution--
+    Disclosure norm, and gated by an independence ladder before any public release, \textbf{then} a
+    person without institutional affiliation can produce human--AI co-produced knowledge whose
+    rigour is checkable by a reader without relying on institutional credential as the licensing
+    step. \textbf{Falsifier:} a real claim card that satisfies every field the kernel can check
+    (schema-valid, presence-complete) while a genuinely independent ($I5$) reviewer finds the
+    underlying licensing test or AI-fill disclosure false --- showing the mechanical check does not
+    track the epistemic property it names (\Cref{sec:falsifiers}).
+\end{description}
+\emph{Hypothesis derived with Readout Universe --- Yaoharee Lahtee (lens); co-produced by founder +
+Claude Sonnet (Fable orchestration seat); 2026-09-04.} Lens DOIs:
+\citep{lahtee2026genesis,lahtee2026zeroreadout}; lens repositories:
+\url{https://github.com/morrocwi/readout_universe},
+\url{https://github.com/morrocwi/readout_genesis} (disclosure \textbf{D-LENS-UNCITED --- closed
+2026-09-04}: both DOIs and both repository URLs are named here and in the reference list, and a
+schema-conformant \texttt{citation\_card} with \texttt{status: VERIFIED} exists for each lens DOI
+(metadata fetched from the Zenodo API; claim-match judged by a cross-vendor route, independence
+$I3$, record in \texttt{registry/verification/lens\_2026-09-04/}). Claim-match was judged from
+title and abstract only, not full text; no external human ($I5$) has checked it.
+See \Cref{sec:disclaimers} for the full disclosure).
+Blackbox Note line this section traces to: \texttt{BB-2026-09-04-GLOSA-PAPER\#L1} (curated in
+\Cref{sec:blackbox}).
+
+\section{Claim-tier legend}
+\label{sec:tiers}
+\begin{table}[H]
+\centering
+\small
+\begin{tabularx}{\linewidth}{@{}l X@{}}
+\toprule
+\textbf{Tag} & \textbf{Meaning} \\
+\midrule
+\ThCoqc{} & Machine-checked, axiom-free formal result (e.g. Coq/Lean). \\
+\FiniteDiag{} & Measured or computed on a finite, retained, reproducible input; not a limit or population claim. \\
+\FitCal{} & A model or heuristic calibrated against declared data; accuracy is conditional on that fit. \\
+\DrTier{} & Declared bridge / human narrative synthesis; a design or interpretive judgment, not a proof or a measurement. \\
+\DefTier{} & A stipulated definition used only where it is decision-bearing (a gate, threshold, or rule), never decorative. \\
+\OpenTier{} & Not established. Named as a real open question, not smoothed over. \\
+\bottomrule
+\end{tabularx}
+\caption{RWI/glosa claim-tier legend (readout\_genesis + readout\_universe ladder).}
+\label{tab:tiers}
+\end{table}
+Every claim this paper makes about \emph{glosa itself} reaches at most \DrTier{}, with exactly one
+exception: \claimref{C108} (this paper's own LaTeX build actually compiling and containing zero
+forbidden words) reaches \FiniteDiag{}, because that specific fact was mechanically executed and
+is reproducible by re-running the same command (\Cref{sec:evaluation}).
+
+\section{Introduction}
+\label{sec:intro}
+A person with no university, no lab, and no research team can, today, ask an AI system to help
+them investigate a problem they live with, and receive back a fluent, structured, citation-shaped
+document. What that document does \emph{not} come with, by default, is any mechanical way for a
+reader --- or the author themselves, a week later --- to tell which sentence rests on something
+actually observed, which rests on an assumption, which rests on the AI's own training prior, and
+which has ever been checked by anyone other than the same session that produced it. \textbf{glosa}
+is a design response to exactly this gap: not a claim that rigour has been achieved, but a
+specification, partially demonstrated, of a mechanism (the claim card, \Cref{sec:method}) that
+makes those distinctions answerable in the first place. Every load-bearing claim in this
+introduction and below carries a claim-card id (\claimref{Cn}) resolving in
+\Cref{sec:claim-matrix}.
+
+\section{Genre and evidence standard}
+\label{sec:genre}
+This paper is routed through glosa's own genre router (\texttt{design/FOUNDATION\_v0.4.md}
+\S6.3b) as \textbf{\texttt{design\_science}} (row 7 of 9, \S6.2): question 5 of the router's
+ordered list --- ``did the author design and build an artifact (tool, protocol, template, system)
+as the contribution, rather than report on an existing situation?'' --- resolves \texttt{yes}
+before any later branch is reached, since glosa's own claim cards, schemas, disclaimer catalogue,
+and templates are exactly such a built artifact. The genre's DSRM structure (Problem $\to$
+Objectives $\to$ Design $\to$ Demonstration $\to$ Evaluation $\to$ Communication) governs
+\Cref{sec:intro,sec:method,sec:demonstration,sec:evaluation}; its claim ceiling is
+\FiniteDiag{} on ``it runs'' and \DrTier{} on ``it solves the problem well'' --- this paper claims
+the former only for its own compiled build (\claimref{C108}) and the latter, honestly, for
+everything else. \texttt{venue\_track: none}: this is K0 work not yet headed to any venue
+(\S6.1's \texttt{none} value, added specifically so K0 work is not forced into a premature
+publication-track choice).
+
+\section{Related work}
+\label{sec:related}
+This section is descriptive comparison, not a priority contest (disclaimer
+\textbf{D-COMPARISON}, \Cref{sec:disclaimers}). It answers exactly three
+questions and no more.
+
+\paragraph{(1) Which problem we solve.} A person with no university, no lab, no research team
+needs to know, for one claim at a time, what licenses them to believe it
+(\texttt{design/PLAN\_v0.1.md} \S0; \texttt{design/FOUNDATION\_v0.4.md} \S1.1).
+
+\paragraph{(2) By which method.} A claim card answering five founder questions, tied mechanically
+to the Readout Condition's Existence-Attribution-Disclosure norm, gated by an independence ladder
+(\(I0\)--\(I5\)) before anything is released, under a maker-checker-approver release gate (MIMCG)
+--- \texttt{design/FOUNDATION\_v0.4.md} \S\S3--7 (\Cref{sec:method}).
+
+\paragraph{(3) Neighbour table.} Every row below is drawn from
+\texttt{design/S13\_neighbour-table.md} (30 tools audited, 2026-09-04). Every
+\texttt{citation\_card} cell is honestly \texttt{PENDING} --- none of the neighbours audited has
+yet been converted into a schema-conformant, \texttt{claim\_match\_verified} citation card
+(disclosure \textbf{D-CITATION-UNVERIFIED}); rows are tiered \OpenTier{} on that basis, never
+upgraded on the strength of a fetched page alone, and rows marked \texttt{NOT\_FETCHED} are
+\OpenTier{} outright. No row below is written as ``no tool does X.''
+
+\begin{table}[H]
+\centering
+\scriptsize
+\begin{tabularx}{\linewidth}{@{}p{0.13\linewidth} X X p{0.1\linewidth}@{}}
+\toprule
+\textbf{Neighbour} & \textbf{Problem they solve} & \textbf{Same as ours / different from ours} & \textbf{Fetched/verified} \\
+\midrule
+Elicit (elicit.com) & Literature screening/extraction at scale, sentence-level citations &
+  Same: attaches a citation to a generated claim. Different: Elicit's unit is the sentence; ours is
+  the claim-distinction, carried with a typed independence tier and a tier-ceiling rule. &
+  domain-only, read 2026-09-04 \\
+Consensus (consensus.app) & Machine-computed agreement signal over a body of literature &
+  Same: a machine-computed signal over literature. Different: Consensus's meter relies on journal
+  peer review as its filter; our tier does not treat agreement or peer-review status as a
+  legitimacy lever. & domain-only, read 2026-09-04 \\
+Nanopublications (nanopub.net) & Packaging a single assertion as a citable, provenance-carrying
+  object & Same: both operate at single-assertion grain, the closest confirmed real neighbour
+  found. Different: no confirmed typed AI-vs-human disclosure field, independence-ladder/tier
+  concept, or source-\emph{licensing} check on the page fetched. & domain-only, read 2026-09-04 \\
+Zotero / Paperpile & Reference capture and bibliography management & Same: used as our own
+  source-ledger substrate, not competed against. Different: neither operates at claim level or
+  discloses AI content. & domain-only, read 2026-09-04 \\
+CITATION.cff (citation-file-format.github.io) & Machine-readable software/dataset citation
+  metadata & Same: this is the exact file glosa itself uses for release metadata. Different: no
+  confirmed typed AI-contributor field. & domain-only, read 2026-09-04 \\
+IMRAD (UNC Writing Center) & Structuring an empirical report & Same: used where a real access
+  event exists. Different: glosa's contribution is the explicit rule for \emph{which} genres IMRAD
+  fits (\S6.3) versus which need a different structure --- not a rediscovery of IMRAD itself. &
+  domain-only, read 2026-09-04 \\
+\bottomrule
+\end{tabularx}
+\caption{Neighbour table (6 of 30 audited rows shown; full table
+\texttt{design/S13\_neighbour-table.md}). Descriptive comparison only (\Cref{sec:disclaimers}
+D-COMPARISON). \claimref{C104}.}
+\label{tab:neighbours}
+\end{table}
+
+\section{Method / mechanism}
+\label{sec:method}
+Per the \texttt{design\_science} genre (\Cref{sec:genre}), this section names the mechanism and
+cites its owning specification and protocol cards by path --- it does not restate their content
+(one-fact-one-home, \texttt{design/FOUNDATION\_v0.4.md} \S8).
+
+\begin{description}[style=nextline,leftmargin=1.4em,font=\bfseries]
+  \item[The spine (round trip)] Problem $\to$ experience $\to$ readout-lens translation $\to$
+    academic hypothesis $\to$ rigorous method $\to$ paper $\to$ Zenodo/GitHub.
+    \texttt{design/FOUNDATION\_v0.4.md} \S2; \texttt{methodology/P00\_lens.md},
+    \texttt{P01\_standpoint.md}, \texttt{P02\_intake.md}. \claimref{C101}
+  \item[The claim card] The atomic unit: statement, standpoint, five questions $\leftrightarrow$
+    E-A-D, in one of two legal shapes (\texttt{stub}/\texttt{full}).
+    \texttt{design/FOUNDATION\_v0.4.md} \S3; \texttt{methodology/P03\_claim\_card.md};
+    \texttt{schema/claim\_card.schema.json}. \claimref{C101}
+  \item[The Independence Ladder] $I0$--$I5$, tier ceilings, maker $\neq$ checker $\neq$ approver
+    (MIMCG). \texttt{design/FOUNDATION\_v0.4.md} \S4.2, \S7.1--7.2;
+    \texttt{methodology/P06\_independent\_check.md}. \claimref{C102}
+  \item[The disclaimer catalogue] One master, typed, enumerable table with machine-testable
+    trigger conditions. \texttt{design/FOUNDATION\_v0.4.md} \S5;
+    \texttt{methodology/data/disclaimer\_catalogue.json}. \claimref{C107}
+  \item[The genre router] Nine ordered questions over named claim-card fields, yielding one genre
+    id or \texttt{MIXED\_GENRE}. \texttt{design/FOUNDATION\_v0.4.md} \S6, \S6.3b;
+    \texttt{methodology/data/genre\_router\_table.json}. \emph{Honest edge:} \S6.3b's own text
+    names the narrating card \texttt{methodology/P13\_genre\_router.md}; this session's own read of
+    \texttt{methodology/} found \texttt{P13\_literature\_review.md} occupying that slot instead
+    (\texttt{methodology/README.md}'s own table already flags this numbering variance) --- no
+    narrating card for the genre router currently exists under either name; the data file does.
+    \claimref{C103}
+  \item[Gates and release] MIMCG L0--L5, \texttt{PUB-ADVERSARIAL-REVIEW} (R1--R7), the release
+    state machine. \texttt{design/FOUNDATION\_v0.4.md} \S7; \texttt{methodology/P10\_publish\_gate.md}.
+  \item[Literature Review System (LRS)] Six gated stages (question framing $\to$ search $\to$
+    acquisition $\to$ extraction $\to$ citation verification $\to$ manifest freeze), one run per
+    hypothesis, two manifest gates (accuracy, diversity). \texttt{design/FOUNDATION\_v0.4.md}
+    \S7.9; \texttt{design/S14\_literature-review-system.md};
+    \texttt{methodology/P13\_literature\_review.md}. \claimref{C109}
+  \item[Callable layer] \texttt{schemas $\to$ kernel $\to$ CLI $\to$ MCP $\to$ plugin}, stdlib-only,
+    offline. \texttt{design/FOUNDATION\_v0.4.md} \S9; \texttt{kernel/}, \texttt{cli/}, \texttt{mcp/}.
+    \emph{Honest edge:} none of \texttt{kernel/}'s named functions (\texttt{validate\_claim\_card},
+    \texttt{gate\_release}, \texttt{route\_genre}, \dots) were executed against this paper's own
+    ten claim cards in this session --- only direct \texttt{jsonschema} structural validation was
+    (\Cref{sec:evaluation}).
+\end{description}
+
+\section{Demonstration}
+\label{sec:demonstration}
+The spine's full round trip is demonstrated, once, on a real (if low-stakes) problem in
+\texttt{cases/worked-example-cat.md}: a founder-supplied question (romanized gloss: \emph{``thammai
+maeo yiao mai pen thi''}, ``why does the cat not urinate in [the designated] place'') is (i)
+recorded verbatim in a Blackbox Note; (ii) translated into readout vocabulary (Lens Law: $Q$, $X$,
+$R$, $\Phi$, \texttt{formal\_applicability}); (iii) analysed as four rivals --- illness,
+dirty/aversive box, household stress, territorial marking --- sitting in one currently
+indistinguishable fiber, each requiring a different access augmentation to separate; (iv)
+translated back into two world-language hypotheses (H1 box-condition, H2 marking) each with a
+named falsifier, with the medical rival handed off to a veterinarian rather than resolved by AI
+reasoning; (v) run through an LRS stub for H1, whose \texttt{litreview\_manifest.gate.overall}
+comes back \texttt{PENDING}/\texttt{FAIL} \emph{honestly}, because zero sources were actually
+fetched; (vi) genre-routed, by the ordered procedure of \Cref{sec:genre}, to \texttt{case\_study}
+--- not the informal \texttt{empirical\_qual\_practice} label used earlier in the same session,
+recorded as a discrepancy rather than silently corrected to match the earlier framing; and (vii)
+recorded as a stub claim card at \texttt{tier: Dr}, \texttt{k\_state: K0}, every route at
+\texttt{independence\_class: I0}. \claimref{C105} The demonstration's own value is negative
+evidence stated positively: it shows the gate \emph{refusing} to pass an under-evidenced literature
+review, not a completed literature review. \claimref{C109}
+
+\section{Evaluation}
+\label{sec:evaluation}
+Per the \texttt{design\_science} genre's own evaluation obligation, this section states exactly
+what was executed in the session that produced this paper, versus what remains specified prose ---
+no rounding either direction.
+
+\textbf{Executed, with results:}
+\begin{itemize}
+  \item \textbf{LaTeX build.} This file (\texttt{paper/latex/main.tex}), copied from
+    \texttt{templates/paper/arxiv-onecol/} and filled with this paper's content, was compiled with
+    \texttt{pdflatex} (twice) and \texttt{bibtex}, then the resulting PDF was scanned with
+    \texttt{pdftotext} piped through \texttt{grep} for every term on the repository's own
+    forbidden-comparison-word list (\texttt{AGENTS.md} gate rule 6 --- terms describing priority
+    or precedence for a piece of work, listed there and in this paper's own front-matter guidance,
+    deliberately not re-typed inside this compiled document so the scan is never confounded by its
+    own description of itself). \textbf{Exact result: 0 occurrences of any listed term, outside
+    this sentence's own description of the check} --- see \texttt{paper/README.md} \S Evaluation
+    for the literal command and output. \claimref{C108}, tier \FiniteDiag{} for this specific fact
+    (an executed, reproducible mechanical check, independence class $I4$).
+  \item \textbf{Claim-card schema validation.} All ten claim cards in
+    \texttt{paper/claims/GLOSA-CC-20260904-01\{01..10\}.yaml} were validated in this session
+    against \texttt{schema/claim\_card.schema.json} using \texttt{jsonschema}'s
+    \texttt{Draft7Validator} (Python 3.13, \texttt{jsonschema} 3.2.0) with a local resolver over
+    every file in \texttt{schema/}. \textbf{Result: 10/10 passed with zero validation errors} ---
+    reported in full in \texttt{paper/README.md}. This checks field \emph{presence} and
+    \emph{shape} only (chair ruling D2); it does not and cannot check the \emph{content} of any
+    field for correctness.
+  \item \textbf{File-count spot-checks.} \texttt{reviews/} in this checkout contains
+    \textbf{2} files (\texttt{FOUNDATION\_v0.2\_anchor.md}, \texttt{FOUNDATION\_v0.2\_usability.md}),
+    not the ``28 reviews'' \texttt{design/FOUNDATION\_v0.4.md} \S12's own narrative describes as
+    read into its synthesis; \texttt{design/} contains 12 files, not a full S1--S13 staged set.
+    This is reported as an observed discrepancy in this checkout, tier \FiniteDiag{} for the
+    \texttt{ls} count itself, \OpenTier{} for where the other files are (a different session,
+    branch, or worktree is the most likely explanation, not independently confirmed here) ---
+    consistent with the readout-not-truth obligation to verify before repeating a prior
+    document's own count rather than restate it as this session's own finding.
+\end{itemize}
+
+\textbf{Specified only, not executed this session:} \texttt{kernel/}'s validator/gate functions
+against real data; the genre router as running code; \texttt{compute\_disclaimers()};
+\texttt{gate\_release()}; any DVP cross-vendor review pass on this paper or on
+\texttt{FOUNDATION\_v0.4.md} itself; any LRS run for this paper's own related-work section (which
+is a neighbour-table comparison, not a frozen \texttt{litreview\_manifest} --- by \S6.4's own rule,
+this means this paper's own related-work section has \emph{not} cleared the gate it itself
+describes, named plainly here rather than silently exempted, \claimref{C110}); any I2+ independent
+review of this paper or of \texttt{FOUNDATION\_v0.4.md}. Nothing else was executed.
+
+\section{Limitations}
+\label{sec:limitations}
+\label{sec:disclaimers}
+This section is the rendered disclaimer catalogue,
+not ad hoc prose. Every item below must be filled in; an item with nothing to
+disclose is stated as \emph{none identified}, never omitted.
+
+\input{disclaimers.tex}
+
+\section{What would make us wrong}
+\label{sec:falsifiers}
+Restated from \texttt{CLAIM\_BOUNDARY.md} and this paper's own ten claim cards
+(\Cref{sec:claim-matrix}), as a single list rather than scattered through the text:
+\begin{itemize}
+  \item A real claim card that satisfies every field the kernel can check (schema-valid,
+    presence-complete per \Cref{sec:evaluation}) while a genuinely independent ($I5$) human
+    reviewer finds the underlying licensing test (Q2) or the AI-fill disclosure (Q3) false.
+    \claimref{C101}
+  \item A real claim-card payload that validates against \texttt{schema/claim\_card.schema.json}
+    with \texttt{k\_state: K2} or \texttt{K3} and zero $I5$ evidence relations. \claimref{C102}
+  \item Two independent readers running \S6.3b's ordered procedure against the same claim card and
+    reaching two different, non-\texttt{MIXED\_GENRE} results. \claimref{C103}
+  \item Any row of \texttt{design/S13\_neighbour-table.md} found, on re-audit, to claim priority or
+    precedence for glosa over a neighbour, or to describe an unattributed adoption from one,
+    without a named human-instructed-adoption record (a Blackbox Note line or
+    \texttt{DECISIONS.yaml} row). \claimref{C104}
+  \item A re-run of the cat worked example, under the same stated access constraints, reaching
+    \texttt{gate.overall: PASS} or a $k\_state$ above K0 with no new fetched, claim-match-verified
+    source. \claimref{C105}
+  \item A real release-gate run returning \texttt{PASS} for a genre-routed paper whose Blackbox
+    Note appendix is empty or absent. \claimref{C106}
+  \item Any mandatory-per-\S6.4 disclaimer id found missing from this paper's own rendered
+    \Cref{sec:disclaimers}. \claimref{C107}
+  \item A \texttt{pdflatex}/\texttt{bibtex} run on this file that fails to produce a PDF, or a
+    \texttt{pdftotext|grep} scan of a produced PDF returning a nonzero forbidden-word count.
+    \claimref{C108}
+  \item A \texttt{litreview\_manifest} with zero \texttt{VERIFIED} citations whose
+    \texttt{gate.overall} nonetheless reads \texttt{PASS}/\texttt{PASS\_WITH\_LIMITS} in a real
+    run. \claimref{C109}
+  \item This paper, or any of its ten claims, described anywhere as \texttt{K1} or higher, or as
+    ``peer reviewed''/``verified,'' before an $I3$+ or $I5$ evidence relation has actually been
+    added to the relevant card. \claimref{C110}
+\end{itemize}
+
+\section{AI-assistance disclosure}
+\label{sec:ai-disclosure}
+This paper is a human--AI co-production (disclaimer \textbf{D-AUTHORSHIP},
+\Cref{sec:disclaimers}), not AI-only automation and not human-only
+authorship. Generative AI (Claude, Anthropic, Sonnet model, orchestrated under a ``Fable'' seat
+this session) assisted with: drafting this document's prose end to end from the founder's own
+FOUNDATION/PLAN specification and Blackbox Note lines; drafting all ten claim cards
+(\Cref{sec:claim-matrix}) and running their schema validation; filling and compiling this LaTeX
+template; selecting which Blackbox Note lines to curate into \Cref{sec:blackbox}; and drafting the
+neighbour-table excerpt in \Cref{sec:related} from \texttt{design/S13\_neighbour-table.md}. Per the
+route-level disclosure standard \citep{lahtee2026zeroreadout}: \textbf{AI output is not treated as
+evidence.} Every claim above is accepted only when it matches a retained source record (a named
+file, section, or executed command) described in the Claim Matrix
+(\Cref{sec:claim-matrix}), which records, per claim, who produced it and who is responsible
+(\texttt{produced\_by}, \texttt{responsible}). The founder holds the standpoint, the direction and
+core ideas of the whole glosa methodology, the falsifier judgment on every claim, the selection of
+which Blackbox Note lines become public, and the final public commitment (nothing in this
+repository has yet been released publicly); AI's role was assistive throughout ---
+exploration, drafting, structuring, mechanical checks (schema validation, LaTeX compilation), and
+logging --- never substitutive for the founder's own judgment, standpoint, or final commitment
+(Human Mastery Gate, \Cref{sec:mastery-gate}; \textbf{AIContribution $\neq$
+EpistemicResponsibility}). The founder has not yet reviewed this specific draft line by line; that
+review, and the Human Mastery Gate decision, remain open (\Cref{sec:mastery-gate}).
+
+\section{Conclusion}
+\label{sec:conclusion}
+glosa specifies, and partially demonstrates on one real worked example, a mechanism for making a
+claim's rigour checkable without institutional standing: a claim card bound to the Readout
+Condition's E-A-D norm, gated by an independence ladder that this paper's own schema-level check
+confirms cannot mechanically reach $K2$ from $I0$--$I4$ routes alone. Applied reflexively to
+itself, the same mechanism reports that this paper is $K0$, not $K1$ --- every one of its own ten
+claims rests on a same-session self-read, and its own related-work section has not cleared the
+literature-review gate it describes. That is offered as the paper's own honest starting condition,
+not as a result it has yet earned.
+
+\appendix
+
+\section{Claim matrix}
+\label{sec:claim-matrix}
+Every claim-card id referenced above (\claimref{Cn}) resolves to exactly one row in
+\texttt{paper/CLAIM\_MATRIX.md} (full table, ten claims C101--C110, not reproduced a second time
+here to avoid a driftable copy --- one-fact-one-home). Each row's full claim card (every field, not
+this print compression) lives at \texttt{paper/claims/GLOSA-CC-20260904-0<nnn>.yaml}. Per Chair
+Ruling v1 \S B2, the matrix is a print-space compression of the full claim card
+(\texttt{shape: full}); it is not the record of correctness itself --- field-presence is
+mechanically checkable (\Cref{sec:evaluation}), the content's correctness is what an independent
+check (Q5) exists for and has not yet run for any of these ten claims.
+
+\section{Blackbox Note: how this work was made}
+\label{sec:blackbox}
+\emph{(Thai project term: ``Bantuek Klong Dam'' / the black-box note.)} This appendix is mandatory
+(disclaimer \textbf{D-BLACKBOX-NOTE}, \texttt{design/FOUNDATION\_v0.4.md} \S2.4/\S6.4). It is a
+\textbf{curated} subset of the raw human voice record that produced this paper's claims ---
+selected by the AI as \emph{candidate} lines only (\texttt{ai\_proposed: true} on every row below
+--- \textbf{the founder has not yet approved this selection}), verbatim (typos kept, romanized-
+glossed here since this build has no Thai font; Thai script is the source of truth in
+\texttt{blackbox/BLACKBOX\_NOTE\_glosa-paper\_2026-09-04.md} and \texttt{main\_th.md}) ---
+followed by the cooking log of the transformations this session applied to them. Full record:
+\texttt{blackbox/BLACKBOX\_NOTE\_glosa-paper\_2026-09-04.md} (36 founder lines; the AI's own
+replies remain in the session transcript, not reproduced here).
+
+\begin{table}[H]
+\centering
+\scriptsize
+\begin{tabularx}{\linewidth}{@{}p{0.04\linewidth} p{0.18\linewidth} X p{0.1\linewidth}@{}}
+\toprule
+\textbf{Line} & \textbf{Role / kind} & \textbf{Verbatim (romanized gloss)} & \textbf{Became $\to$} \\
+\midrule
+L1 & founder / question (paper abstract seed) & ``... khon thi mai mi mahawitthayalai mai mi laep
+  lae mai mi thim wichai ja phalit khwamru chak phuenthi khong ton eng yang khemkhaeng dai
+  yangrai ... '' & \Cref{sec:question-lens} H0; \claimref{C101} \\
+L10 & founder / proposal & ``sang temphlet wichakan wai loei wa tong pen baep nai arxiv 1 khonlam
+  song khonlam'' & \claimref{C108}; this LaTeX build \\
+L12 & founder / proposal & ``withi withaya samkhan mak na tong disclaim arai tang tang hai chat
+  lae pen rabop'' & \Cref{sec:disclaimers}; \claimref{C107} \\
+L18 & founder / proposal & ``reuang cite thi maenyam samkhan mak nai rabop standalone scholar'' &
+  \Cref{sec:demonstration}; \claimref{C109} \\
+L20 & founder / proposal & ``... tham rabop wa tong truat kham ai khon la yiho thueng ja phoem
+  khwam maenyam phoem ... '' & \Cref{sec:method} Independence Ladder; \claimref{C102} \\
+L21 & founder / proposal & ``yang mi reuang khong khrongsang ngan wichai duai ... lae IMRAD
+  maokap baep nai'' & \Cref{sec:method}, \Cref{sec:genre}; \claimref{C103} \\
+L26 & founder / proposal & ``sai nearest-neighbour collision audit kap khrueang mue nai talat
+  khao foundation duai'' & \Cref{sec:related}; \claimref{C104} \\
+L32 & founder / question & ``tha rao tham wa kham tham wichai kon plian pen phasa ngan wichakan
+  khue thammai maeo yiao mai pen thi'' & \Cref{sec:demonstration};
+  \texttt{cases/worked-example-cat.md}; \claimref{C105} \\
+L35 & founder / ruling & ``tham hai pen kenkan bangkhap'' & \Cref{sec:blackbox} itself (this
+  appendix); \claimref{C106} \\
+\bottomrule
+\end{tabularx}
+\caption{Blackbox Note --- curated verbatim lines (romanized gloss), candidate selection by AI,
+\textbf{not yet founder-approved}. Full Thai text: \texttt{blackbox/BLACKBOX\_NOTE\_glosa-paper\_2026-09-04.md}.}
+\label{tab:blackbox-lines}
+\end{table}
+
+\begin{table}[H]
+\centering
+\scriptsize
+\begin{tabularx}{\linewidth}{@{}p{0.1\linewidth} p{0.08\linewidth} p{0.1\linewidth} X@{}}
+\toprule
+\textbf{Step} & \textbf{By} & \textbf{Input} & \textbf{What changed} \\
+\midrule
+survey & ai & \texttt{sources/}, prior Zenodo records & Read 180 prior Zenodo records (metadata
+  only, 11 marked direct-ancestor), the Readout Condition text extraction, and the Standalone
+  Scholar text; produced \texttt{lineage/PRIOR\_WORK.md} and the four synthesis passes of
+  \texttt{design/FOUNDATION\_v0.1--0.4.md}. \\
+designs & ai & FOUNDATION v0.1--v0.3, S1--S14 design stages & Fourteen design documents plus S14
+  (LRS) drafted, each single-pass and unreviewed at time of writing. \\
+reviews & ai (decorrelated passes, not cross-vendor) & the 14 designs & 28 review passes + 1
+  completeness critic reported in \texttt{design/FOUNDATION\_v0.4.md} \S12; only 2 review files
+  are present in this checkout as of this session (\Cref{sec:evaluation}), an open discrepancy. \\
+chair ruling & ai (chair seat) & 6 named disputes (\texttt{design/FOUNDATION\_v0.4.md} \S10) &
+  \texttt{design/CHAIR\_RULING\_v1.md} resolved all 6; flagged as overturnable by the founder
+  (items B1--B4). \\
+v0.2 $\to$ v0.4 & joint & 2 independent reviews of v0.2 (12 must-fix items) + founder requests
+  35/35b--35f, 38/38b--38d & Folded LRS (\S7.9) and lens-attribution/hypothesis-signature rules
+  into the spine; both fixes are themselves flagged as having had less scrutiny than the rest of
+  the pass (\texttt{design/FOUNDATION\_v0.4.md} \S12). \\
+this paper (R1) & joint & FOUNDATION\_v0.4.md, S13, S14, cases/worked-example-cat.md,
+  blackbox/BLACKBOX\_NOTE\_glosa-paper\_2026-09-04.md & Drafted \texttt{main\_th.md},
+  \texttt{main\_en.md}, this LaTeX build, ten claim cards, and this Blackbox Note appendix; human
+  review of this specific draft has not yet occurred. \\
+\bottomrule
+\end{tabularx}
+\caption{Cooking log (Thai project term: ``karn pung'') --- append-only, every transformation kept.}
+\label{tab:cooking-log}
+\end{table}
+
+\section{Knowledge state}
+\label{sec:kstate}
+This paper's overall knowledge state is \texttt{K0} (internal working note; not yet reviewed, not
+yet released outside this repository) --- with no per-claim exception: all ten claims in
+\Cref{sec:claim-matrix} share the same \texttt{K0}/\(I0\) state (disclaimer \textbf{D-K-STATE}).
+One fact is stronger than \texttt{K0} in a narrow, named sense without changing the paper's overall
+state: \claimref{C108}'s specific mechanical result (the LaTeX build compiling; the grep count) is
+tier \FiniteDiag{} at independence class $I4$ --- a real, reproducible, executed check --- but a
+single \FiniteDiag{}/$I4$ fact about the build does not raise the \emph{paper's} $k\_state$, which
+remains gated on its actual claims about glosa's mechanisms, all still $I0$.
+
+\section{Human Mastery Gate}
+\label{sec:mastery-gate}
+Gate status: \textbf{NOT READY} --- the founder has not yet read this specific draft line by line
+or exercised the ten-item mastery checklist against it (adapted from the Standalone Scholar Human
+Mastery Gate). This is stated plainly rather than defaulted to a pass, consistent with
+\Cref{sec:ai-disclosure}'s own statement that the founder's review of this draft remains open.
+
+\section{Provenance and lineage}
+\label{sec:provenance}
+This paper is positioned relative to prior work per the anchor-preservation protocol (status
+vocabulary: \textsc{PRESERVE\_EXACT}, \textsc{PRESERVE\_FUNCTION}, \textsc{EXPAND},
+\textsc{SUPERSEDE}); full table: \texttt{lineage/RELATION\_TO\_STANDALONE\_SCHOLAR.md},
+\texttt{lineage/RELATION\_TO\_READOUT\_CONDITION.md}, \texttt{lineage/PRIOR\_WORK.md}. Direct
+ancestor: \citet{lahtee2026standalone}. Core epistemic engine this paper's provenance apparatus is
+built on: \citet{lahtee2026readoutcondition}. Reflexive citation (\texttt{design/FOUNDATION\_v0.4.md}
+\S7.4): this paper represents itself as following the glosa/Rigour Without Infrastructure method
+and so must itself carry glosa's own repository reference. As of this draft,
+\texttt{CITATION.cff} (updated elsewhere in this same working session, not by this paper's own
+drafting) names a reserved Zenodo DOI (\texttt{10.5281/zenodo.22301060}, concept DOI
+\texttt{10.5281/zenodo.22301059}) and \texttt{repository-code: https://github.com/morrocwi/glosa}
+\citep{lahtee2026glosa}. This session did \emph{not} independently confirm, over the network, that
+either the GitHub repository or the Zenodo record is actually live and public --- \texttt{git
+remote -v} in this working tree returns no configured remote, and \texttt{.zenodo.json} has not
+yet been updated to carry the same DOI \texttt{CITATION.cff} now names. This cross-file gap is
+flagged, per glosa's own triple-consistency check (\texttt{CITATION.cff}/\texttt{.zenodo.json}/
+\texttt{codemeta.json}, PRESERVE\_EXACT lineage from \texttt{zero-readout-certifies}), as an open
+item rather than silently treated as resolved.
+
+\bibliographystyle{plainnat}
+\bibliography{refs}
+
+\end{document}

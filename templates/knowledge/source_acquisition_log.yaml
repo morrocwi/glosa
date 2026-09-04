@@ -1,0 +1,59 @@
+# source_acquisition_log.yaml — RWI S14 template (Dr, unreviewed proposed schema)
+#
+# Bridges search_log.yaml's `sources_found` (candidate identifiers) to a citation_card's
+# `fetch_status`, recording HOW acquisition was attempted via the private research-library stack
+# (`rl` — Zotero+Calibre+Paperless) WITHOUT ever crossing a local path, Zotero item key, or
+# rl-internal id into this file. This file is public-repo-safe by construction: every field is
+# either a public identifier, a public-facing status, or a date. If a field would require a local
+# path to fill in honestly, leave it null and write the fact in `notes` using only public terms
+# ("obtained via institutional access", "obtained via open-access repository") — never a path.
+#
+# One row per acquisition ATTEMPT (a re-attempt after a fetch_status change is a new row, this
+# file is append-only like the Xenon/Disagreement ledgers — a correction is a new row, not an edit).
+
+id: acq-<slug>-<nnn>
+citation_card_ref: cite-<slug>-<nnn>       # required — the citation_card.yaml this acquisition backs
+search_log_ref: search-<slug>-<nnn>        # required — which search episode produced this candidate
+
+identifier:
+  kind: DOI                                 # same enum as citation_card.identifier.kind
+  value: "10.xxxx/xxxxx"
+
+acquisition_route: RL_PRIVATE_SHELF | OPEN_ACCESS_DIRECT | INSTITUTIONAL_ACCESS | PREPRINT_SERVER | OFFICIAL_PUBLISHER_PAGE | NOT_ATTEMPTED
+  # RL_PRIVATE_SHELF = the founder's own Zotero/Calibre/Paperless stack already holds it
+  # (checked via `rl` locally); every other value = acquisition attempted directly from the public
+  # web. RWI never records *which* rl collection/folder/key was used — only that the route was
+  # RL_PRIVATE_SHELF.
+
+acquisition_status: obtained | abstract_only | not_obtained
+  # PUBLIC vocabulary required by request 35 ("acquisition ... status obtained|abstract_only|
+  # not_obtained"). This maps onto (never replaces) citation_card.fetch_status:
+  #   obtained       -> fetch_status: FETCHED
+  #   abstract_only  -> fetch_status: PAYWALLED_ABSTRACT_ONLY
+  #   not_obtained   -> fetch_status: NOT_FETCHED  (or FETCH_FAILED if a real attempt errored)
+  # Mapping is asserted by the kernel validator, never hand-typed twice.
+
+attempted_at: null                          # ISO date
+attempted_by: null                          # human name/role, or "ai_route:<label>" (an AI route may
+                                             # ATTEMPT acquisition — search, request, resolve a URL —
+                                             # but never SELF-CERTIFY acquisition_status; a human or
+                                             # a mechanical HTTP-status check confirms it, per §3 firewall)
+
+verification_of_status: MECHANICAL_HTTP_CHECK | HUMAN_CONFIRMED | AI_REPORTED_UNCONFIRMED
+  # AI_REPORTED_UNCONFIRMED is legal but downgrades: a citation_card whose only acquisition
+  # evidence is AI_REPORTED_UNCONFIRMED may not advance past fetch_status candidate weight —
+  # matches the Integrity Firewall rule that an AI route's say-so never substitutes for a check.
+
+secondary_citation_check: NOT_APPLICABLE | PASSED | FAILED
+  # PASSED only if the passage that will be quoted was read directly from the acquired text, not
+  # copied from another paper's citation of it. FAILED is a hard block on this source entering a
+  # dialogue_table.md row with any agrees/disagrees stance (secondary-citation ban, request 35:
+  # "never cite what was not opened").
+
+no_local_leak_check:
+  contains_local_path: false                # kernel/reviewer MUST verify false before this file is
+                                             # ever committed to a public repo — R1 leak-scan item
+  contains_zotero_key: false
+  contains_rl_internal_id: false
+
+notes: ""                                   # public-safe free text only

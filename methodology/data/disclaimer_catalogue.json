@@ -1,0 +1,448 @@
+{
+  "_meta": {
+    "tier": "Dr (specified; independently unreviewed)",
+    "one_fact_one_home": "Field names referenced in `trigger` are defined only in schema/*.schema.json; this file never redefines them, it only reads them.",
+    "source": [
+      "design/FOUNDATION_v0.5.md §5 (Systematic disclaimer catalogue)",
+      "design/S14_literature-review-system.md §8 (LRS-specific ids)",
+      "design/FOUNDATION_v0.5.md Appendix A NC-64 (self-experience id)"
+    ],
+    "trigger_grammar_doc": "methodology/data/README.md#trigger-mini-grammar",
+    "generated": "2026-09-04"
+  },
+  "disclaimers": [
+    {
+      "id": "D-STANDPOINT",
+      "category": "Standpoint",
+      "trigger": "ALWAYS",
+      "wording_th": "ผู้เขียนพูดในฐานะผู้ปฏิบัติ/พลเมือง ไม่ใช่ผู้เชี่ยวชาญเฉพาะทางในเรื่องนี้ ข้อความนี้บอกจุดยืนที่ข้ออ้างถูกเขียนขึ้น ไม่ใช่คำกล่าวอ้างอำนาจทางวิชาการ",
+      "wording_en": "The author writes from a declared standpoint (practitioner/citizen), not as a domain-credentialed expert on this topic; this states the vantage point the claim was written from, not an authority claim.",
+      "placement": "Paper front matter; README; every claim_card.standpoint block",
+      "mandatory": true,
+      "params": []
+    },
+    {
+      "id": "D-NONEXPERT",
+      "category": "Standpoint",
+      "trigger": "ALWAYS",
+      "wording_th": "สาขาวิชาที่ผู้เขียนไม่ได้อ้างความเชี่ยวชาญถูกระบุไว้อย่างชัดเจน (ดู standpoint.disciplines_not_claimed) เพื่อไม่ให้ผู้อ่านเข้าใจผิดว่าครอบคลุมทุกด้าน",
+      "wording_en": "Disciplines the author explicitly does not claim expertise in are named (see standpoint.disciplines_not_claimed) so a reader does not infer blanket coverage.",
+      "placement": "Standpoint section, next to D-STANDPOINT",
+      "mandatory": true,
+      "params": []
+    },
+    {
+      "id": "D-SCOPE",
+      "category": "Scope",
+      "trigger": "claim_card.scope.generalization_claimed != \"none\"",
+      "wording_th": "ขอบเขตของข้ออ้าง (claim_scope) ต้องไม่กว้างกว่าขอบเขตของหลักฐานที่มีจริง (evidence_scope) ระบุขนาดตัวอย่าง/บริบทที่ตรวจสอบไว้ตรงนี้",
+      "wording_en": "The claim's stated scope (claim_scope) must never exceed what the evidence actually covers (evidence_scope); the sample/context actually examined is named here.",
+      "placement": "Immediately after the claim in paper/main.md; claim_card.scope field",
+      "mandatory": true,
+      "params": [
+        "n",
+        "generalization_claimed"
+      ]
+    },
+    {
+      "id": "D-NONCLAIM",
+      "category": "Scope",
+      "trigger": "ALWAYS (paired with every claim_card.non_claims entry)",
+      "wording_th": "สิ่งที่ข้ออ้างนี้ *ไม่ได้* กล่าวอ้าง ถูกระบุไว้เป็นรายการแยกต่างหาก เพื่อกันการตีความเกินขอบเขต",
+      "wording_en": "What this claim does NOT assert is listed separately, to prevent an over-broad reading.",
+      "placement": "NON_CLAIMS.md; paper abstract pointer",
+      "mandatory": true,
+      "params": []
+    },
+    {
+      "id": "D-AIFILL",
+      "category": "AI-fill",
+      "trigger": "ANY(claim_card.five_questions.ai_filled.* != \"none identified\")",
+      "wording_th": "จุดใดในข้ออ้างนี้ที่ AI เป็นผู้เติมเต็ม (ไม่ใช่มนุษย์สังเกตหรือแหล่งอ้างอิงโดยตรง) ถูกระบุไว้ทีละจุด ไม่ใช่ย่อหน้าเดียวรวมทั้งหมด",
+      "wording_en": "Every point where AI supplied content (rather than a human observation or a direct source) is disclosed at that specific point — never as one blanket paragraph.",
+      "placement": "Route-level, next to the specific claim it applies to",
+      "mandatory": true,
+      "params": [
+        "field_name"
+      ]
+    },
+    {
+      "id": "D-TIER",
+      "category": "Tier",
+      "trigger": "ALWAYS (every quantitative/factual claim)",
+      "wording_th": "ระดับความน่าเชื่อถือของข้ออ้างนี้ถูกระบุไว้ (Th_coqc / finite_diagnostic / fit_calibrated / Dr / definition / Open) — อ่านค่าไม่ใช่ความจริงที่แน่นอน",
+      "wording_en": "This claim's tier is stated explicitly (Th_coqc / finite_diagnostic / fit_calibrated / Dr / definition / Open) — a readout, not settled truth.",
+      "placement": "Inline; claim_card.tier field",
+      "mandatory": true,
+      "params": [
+        "tier"
+      ]
+    },
+    {
+      "id": "D-INDEPENDENCE",
+      "category": "Independence",
+      "trigger": "MAX(claim_card.tested.evidence_relations[].independence_class) IN {I0, I1, I2}",
+      "wording_th": "หลักฐานที่แข็งแรงที่สุดของข้ออ้างนี้ยังอยู่ในระดับ I0-I2 (ยังไม่ต่างวงจร/ผู้ให้บริการ) — อย่าอ่านว่าผ่านการตรวจสอบอิสระแล้ว",
+      "wording_en": "This claim's strongest evidence entry still sits at I0-I2 (same session/model/vendor) — do not read this as independently checked.",
+      "placement": "claim_card.tested block; anywhere the claim is cited publicly",
+      "mandatory": true,
+      "params": []
+    },
+    {
+      "id": "D-INDEPENDENCE-LEVEL",
+      "category": "Independence",
+      "trigger": "ANY(public_surface states a specific independence_class value)",
+      "wording_th": "ระดับความเป็นอิสระที่ระบุไว้ตรงนี้ (เช่น I2) หมายถึงอะไรจริงๆ ตามบันไดความเป็นอิสระ ไม่ใช่คำยืนยันว่าตรวจสอบครบแล้ว",
+      "wording_en": "The specific independence level named here (e.g. I2) means exactly what the Independence Ladder defines it as — not a claim that verification is complete.",
+      "placement": "Wherever that level is stated (e.g. parameter: level=I2)",
+      "mandatory": true,
+      "params": [
+        "level"
+      ]
+    },
+    {
+      "id": "D-DVP-NOT-K2",
+      "category": "Independence",
+      "trigger": "TEXT_CONTAINS_ANY({\"verified\",\"peer reviewed\",\"certified\",\"K2\",\"K3\"}) AND MAX(claim_card.tested.evidence_relations[].independence_class) < I5",
+      "wording_th": "แม้จะใช้คำว่า \"ตรวจแล้ว\"/\"certified\"/\"K2\" ในเนื้อหา แต่การตรวจแบบ DVP ข้ามผู้ให้บริการ AI เองไม่เท่ากับการได้รับการตรวจจากมนุษย์ภายนอก (K2) จริง",
+      "wording_en": "Even where the text says \"verified\"/\"certified\"/\"K2\", a cross-vendor AI DVP pass on its own is never the same as substantive external human friction (K2).",
+      "placement": "Wherever that language appears",
+      "mandatory": true,
+      "params": []
+    },
+    {
+      "id": "D-SAME-VENDOR",
+      "category": "Independence",
+      "trigger": "ALL(route_dependence_matrix.rows[].independence_level) IN {I1, I2}",
+      "wording_th": "ทุกเส้นทางตรวจสอบในตารางนี้มาจากผู้ให้บริการ AI รายเดียวกัน (I1/I2 เท่านั้น) — รวมถึงกรณีข้อยกเว้น I2+I4 ที่มีเวลาหมดอายุกำกับ",
+      "wording_en": "Every route in this matrix comes from the same AI vendor (I1/I2 only) — including the bounded I2+I4 exception, which carries its own expiry.",
+      "placement": "Route Dependence Matrix header; claim_card.independent_check when the exception is used",
+      "mandatory": true,
+      "params": [
+        "exception_used",
+        "expires_at"
+      ]
+    },
+    {
+      "id": "D-OPERATOR-SHARED",
+      "category": "Independence",
+      "trigger": "COUNT(DISTINCT route_dependence_matrix.rows[].operator) == 1 AND NOT EXISTS(operator_decorrelation_control_doc)",
+      "wording_th": "ผู้สั่งการ (operator) ของทุกเส้นทางตรวจสอบเป็นคนเดียวกัน และยังไม่มีมาตรการลดความสัมพันธ์กัน (Operator-Decorrelation Control) ที่บันทึกไว้",
+      "wording_en": "The same operator issued every route in this matrix, and no Operator-Decorrelation Control has been documented yet.",
+      "placement": "Route Dependence Matrix header",
+      "mandatory": true,
+      "params": []
+    },
+    {
+      "id": "D-DISAGREEMENT-OPEN",
+      "category": "Independence",
+      "trigger": "EXISTS(disagreement_ledger.entries[] WHERE outcome == \"DECLARED\")",
+      "wording_th": "มีความเห็นไม่ตรงกันระหว่างเส้นทางตรวจสอบที่ยังไม่ได้รับการแก้ไข (สถานะ DECLARED) — ไม่ถูกเฉลี่ยหรือซ่อนไว้",
+      "wording_en": "A disagreement between verification routes remains unresolved (status DECLARED) — never averaged away or hidden.",
+      "placement": "Ledger entry; claim_card.tested block",
+      "mandatory": true,
+      "params": [
+        "ledger_ref"
+      ]
+    },
+    {
+      "id": "D-LEGAL-NEQ-EPISTEMIC",
+      "category": "Legal",
+      "trigger": "EXISTS(citation referencing a license/permit/regulatory certification)",
+      "wording_th": "การมีใบอนุญาต/ใบรับรอง/กฎหมายที่อ้างถึงตรงนี้ทำให้การกระทำถูกกฎหมาย ไม่ได้ทำให้ข้ออ้างเชิงข้อเท็จจริงมีน้ำหนักทางความรู้เพิ่มขึ้น",
+      "wording_en": "The license/permit/regulation cited here makes an action lawful; it does not raise this claim's epistemic tier.",
+      "placement": "Wherever the legal fact is cited",
+      "mandatory": true,
+      "params": []
+    },
+    {
+      "id": "D-NOT-DIAGNOSTIC",
+      "category": "Domain safety",
+      "trigger": "HEURISTIC(content_domain IN {health, clinical, legal_advice, financial_advice})",
+      "wording_th": "เนื้อหานี้ไม่ใช่คำวินิจฉัย คำแนะนำทางกฎหมาย หรือคำแนะนำทางการเงินที่นำไปใช้แทนผู้เชี่ยวชาญที่มีใบอนุญาตได้",
+      "wording_en": "This content is not a diagnosis, legal advice, or financial advice and is not a substitute for a licensed professional.",
+      "placement": "Any such card or repo-level notice",
+      "mandatory": true,
+      "params": []
+    },
+    {
+      "id": "D-NO-NEGATIVE-UNVERIFIED-PERSON",
+      "category": "Domain safety",
+      "trigger": "HEURISTIC(text reads as negative/accusatory about an identifiable person or organization) AND NOT EXISTS(citation_card WHERE status == \"VERIFIED\" backing that statement)",
+      "wording_th": "ห้ามเผยแพร่เนื้อหาเชิงลบหรือกล่าวหาบุคคล/องค์กรที่ระบุตัวตนได้โดยไม่มีแหล่งอ้างอิงที่ตรวจสอบแล้วรองรับ — ถ้าไม่มีแหล่ง สกัดเฉพาะความสัมพันธ์เชิงโครงสร้าง",
+      "wording_en": "No negative or accusatory content about an identifiable person or organization may publish without a verified citation backing it; absent a source, extract only the structural relationship.",
+      "placement": "Editorial checklist; never published as narrative prose without this check",
+      "mandatory": true,
+      "params": []
+    },
+    {
+      "id": "D-TRANSLATION",
+      "category": "Bilingual",
+      "trigger": "EXISTS(claim_card.statement.translation) OR claim_card.venue_track == \"thai_tci\" OR claim_card.companion_of != null",
+      "wording_th": "เนื้อหาภาษาไทยในเอกสารนี้เขียนขึ้นใหม่ ไม่ใช่การแปลตรงจากภาษาอังกฤษ (หรือในทางกลับกัน) สถานะการแปลระบุไว้ในฟิลด์ translation_status",
+      "wording_en": "Thai content here is rewritten, not translated verbatim from English (or vice versa); translation status is recorded in translation_status.",
+      "placement": "Front matter; per-field in _th/_en schemas",
+      "mandatory": true,
+      "params": [
+        "translation_status"
+      ]
+    },
+    {
+      "id": "D-DISSENT-PRESERVED",
+      "category": "Revision",
+      "trigger": "LEN(claim_card.tested.dissent_records) > 0 OR EXISTS(reviews/ dissent record file)",
+      "wording_th": "บันทึกความเห็นแย้ง/การเบี่ยงเบนถูกเก็บไว้ครบถ้วน ไม่มีการลบทิ้งอย่างเงียบๆ",
+      "wording_en": "Every dissent/deviation record is preserved in full; none is silently erased.",
+      "placement": "reviews/, append-only",
+      "mandatory": true,
+      "params": []
+    },
+    {
+      "id": "D-SILENT-LIFT-GUARD",
+      "category": "Provenance",
+      "trigger": "LEN(claim_card.silent_lift_check.flags) > 0 OR EXISTS(claim_card.five_questions.assumed[] WHERE identification_level == \"unidentified\")",
+      "wording_th": "มีสมมติฐานหรือการเติมช่องว่างบางจุดที่ยังไม่ระบุระดับที่มาชัดเจน (unidentified) — จุดเหล่านี้ถูกเปิดเผยไว้ ไม่ถูกซ่อนใต้ข้ออ้างว่ามาจากแหล่งเดียว",
+      "wording_en": "At least one assumed dependency or fill-gap has an unidentified provenance level — disclosed here rather than silently folded into a single-source claim.",
+      "placement": "claim_card.assumed / ai_filled fields",
+      "mandatory": true,
+      "params": [
+        "flag_ids"
+      ]
+    },
+    {
+      "id": "D-EXTERNAL-INPUT",
+      "category": "Provenance",
+      "trigger": "LEN(claim_card.ledger.borrowed) > 0 OR EXISTS(claim_card.lineage.derives_from[] referencing an external skill/repo)",
+      "wording_th": "ข้ออ้างนี้ใช้ pattern หรือแนวคิดจากสกิล/repo ภายนอกที่ผ่านการตรวจสอบแล้ว (vetted) โดยระบุแหล่งไว้",
+      "wording_en": "This claim draws on a vetted external skill/repo/paper, named at its source.",
+      "placement": "claim_card.assumed; lineage/",
+      "mandatory": true,
+      "params": [
+        "source_ref"
+      ]
+    },
+    {
+      "id": "D-NO-VERTICAL-AUTHORITY",
+      "category": "Legitimacy",
+      "trigger": "TEXT_CONTAINS_ANY({\"peer review\",\"publication venue\",\"institutional accept\",\"journal prestige\",\"impact factor\"})",
+      "wording_th": "การกล่าวถึง peer review, ชื่อวารสาร หรือการยอมรับของสถาบันในที่นี้เป็นเพียงข้อเท็จจริงเชิงช่องทาง ไม่ใช่เครื่องยืนยันว่าข้ออ้างเป็นจริง",
+      "wording_en": "Any mention of peer review, venue, or institutional acceptance here describes a channel fact, never a truth certification.",
+      "placement": "Paper legitimacy section",
+      "mandatory": true,
+      "params": []
+    },
+    {
+      "id": "D-NO-EPISTEMIC-VETO",
+      "category": "Legitimacy",
+      "trigger": "ALWAYS",
+      "wording_th": "ไม่มีหน่วยงานใดมีสิทธิ์ยับยั้งความรู้นี้ด้วยตำแหน่ง เครดิต หรือความเป็นเจ้าของโครงสร้างพื้นฐานเพียงอย่างเดียว ทุกฝ่ายเสนอ/ใช้/ทดสอบ/แยกสาขา/แก้ไข/จำกัด/ถอนงานนี้ได้โดยไม่ต้องขออนุญาต แต่การแยกสาขาต้องรักษาที่มาไว้",
+      "wording_en": "No agency holds an epistemic veto over this work merely by title, credential, or infrastructure ownership. Any agency may propose/use/test/challenge/fork/revise/restrict/withdraw it without permission; a fork must preserve lineage.",
+      "placement": "CLAIM_BOUNDARY.md",
+      "mandatory": true,
+      "params": []
+    },
+    {
+      "id": "D-DERIVED-PATTERNS",
+      "category": "Provenance",
+      "trigger": "EXISTS(claim_card.ledger.borrowed[] whose source is a private repository listed in the git-ignored registry/private_source_names.txt)",
+      "wording_th": "รูปแบบ (pattern) บางส่วนในงานนี้สกัดมาจาก repo ภายในที่เป็นส่วนตัว (private) โดยนำเฉพาะแนวคิด ไม่ใช่ข้อความต้นฉบับ",
+      "wording_en": "Some patterns here are re-derived from a private internal repo — pattern only, never copied text.",
+      "placement": "README §Lineage",
+      "mandatory": true,
+      "params": [
+        "private_repo_name"
+      ]
+    },
+    {
+      "id": "D-K-STATE",
+      "category": "Release",
+      "trigger": "ALWAYS (every public surface)",
+      "wording_th": "สถานะความรู้ปัจจุบันของงานนี้คือ K0/K1/K2/K3 ตามบันไดที่ระบุไว้ — ไม่ใช่คำรับรองจากภายนอก",
+      "wording_en": "This work's current knowledge state is K0/K1/K2/K3 per the ladder — not an external certification.",
+      "placement": "README badge, Zenodo description, paper front matter",
+      "mandatory": true,
+      "params": [
+        "k_state"
+      ]
+    },
+    {
+      "id": "D-AUTHORSHIP",
+      "category": "Release",
+      "trigger": "ALWAYS",
+      "wording_th": "founder เป็นผู้ให้แนวคิดและทิศทาง (author) AI เป็นผู้ช่วยด้านการดำเนินการเท่านั้น ไม่ใช่ผู้ร่วมเขียน",
+      "wording_en": "The founder is the author (ideas/direction); AI is an executional assistant only, never a co-author.",
+      "placement": "CITATION.cff + README",
+      "mandatory": true,
+      "params": []
+    },
+    {
+      "id": "D-REVISION-LIVE",
+      "category": "Release",
+      "trigger": "ALWAYS",
+      "wording_th": "ประวัติการแก้ไขของเอกสารนี้เป็นบันทึกที่มีชีวิต เปิดให้ตรวจสอบได้เสมอ ไม่ใช่เวอร์ชันสุดท้ายที่ปิดตาย",
+      "wording_en": "This document's revision history is a live, append-only record, never a closed final version.",
+      "placement": "CHANGELOG.md + reviews/",
+      "mandatory": true,
+      "params": []
+    },
+    {
+      "id": "D-PARTIAL-SET",
+      "category": "Structural honesty",
+      "trigger": "COUNT(members of a named 3-lane structure, e.g. route_dependence_matrix.rows or solution lanes) < 3",
+      "wording_th": "โครงสร้างสามทาง (เช่น เส้นทางตรวจสอบ DVP หรือทางเลือกวิธีแก้) ในที่นี้มีสมาชิกน้อยกว่า 3 ทางที่ตั้งใจไว้ — ระบุไว้ตรงๆ ไม่ปัดเศษให้ดูครบ",
+      "wording_en": "This 3-lane structure (DVP routes, solution lanes) has fewer than 3 admissible members here — stated plainly, not rounded up to look complete.",
+      "placement": "Wherever a 3-lane structure is presented",
+      "mandatory": true,
+      "params": [
+        "actual_count"
+      ]
+    },
+    {
+      "id": "D-CANDIDATE-STATUS",
+      "category": "Release",
+      "trigger": "claim_card.independent_check.independence_class NOT IN {I4, I5}",
+      "wording_th": "ชิ้นงานนี้ยังไม่ผ่านการตรวจแบบกลไก (I4) หรือมนุษย์ภายนอก (I5) — สถานะยังเป็นร่าง/รอตรวจ",
+      "wording_en": "This artifact has not yet passed a mechanical (I4) or external-human (I5) check — status remains Draft/Pending Review.",
+      "placement": "Every Draft/Pending-Review artifact",
+      "mandatory": true,
+      "params": []
+    },
+    {
+      "id": "D-COMPARISON",
+      "category": "Positioning",
+      "trigger": "EXISTS(neighbour_table.md row referencing this artifact/claim)",
+      "wording_th": "การเปรียบเทียบกับเครื่องมือ/สกิลอื่นในตลาดที่นี่เป็นแบบ เหมือนกัน/ต่างกัน/มีการอ้างอิง เท่านั้น ไม่ใช่การอ้างความใหม่หรือความเป็นที่หนึ่ง",
+      "wording_en": "Any comparison to a market tool/skill here is same/different/cited only — never a novelty or priority claim.",
+      "placement": "Related-work section; neighbour_table.md rows",
+      "mandatory": true,
+      "params": []
+    },
+    {
+      "id": "D-CITATION-UNVERIFIED",
+      "category": "Citation",
+      "trigger": "citation_card.fetch_status IN {NOT_FETCHED, FETCH_FAILED, UNCHECKED_OFFLINE} OR state PARAM SET per derived mapping: NOT_FETCHED←fetch_status==NOT_FETCHED; FETCH_FAILED←fetch_status==FETCH_FAILED; MISMATCH←(status==CHALLENGED AND claim_match_verified==false); CHALLENGED←(status==CHALLENGED AND claim_match_verified!=false); SCRAMMED←status==SCRAMMED; SUPERSEDED←status==SUPERSEDED",
+      "wording_th": "แหล่งอ้างอิงนี้ยังไม่ผ่านการยืนยันเต็มรูปแบบ สถานะที่แท้จริงระบุไว้ในพารามิเตอร์ state (ยังไม่ได้ดึงมา / ดึงไม่สำเร็จ / เนื้อหาไม่ตรงขอบเขตที่อ้าง / ถูกท้าทาย / ถูก SCRAM / ถูกแทนที่แล้ว)",
+      "wording_en": "This citation is not yet fully verified; its exact state is carried in the `state` parameter (not fetched / fetch failed / scope mismatch / challenged / scrammed / superseded).",
+      "placement": "Wherever the citation is used",
+      "mandatory": true,
+      "params": [
+        "state"
+      ]
+    },
+    {
+      "id": "D-BLACKBOX-NOTE",
+      "category": "Co-production",
+      "trigger": "ALWAYS (every research document)",
+      "wording_th": "เอกสารนี้มีภาคผนวก Blackbox Note ที่บันทึกบทสนทนาระหว่างมนุษย์กับ AI ตามที่เกิดขึ้นจริง (verbatim) พร้อม cooking log แบบต่อท้ายเท่านั้น",
+      "wording_en": "This document carries a Blackbox Note appendix recording the human-AI dialogue verbatim, plus an append-only cooking log.",
+      "placement": "Appendix \"Blackbox Note: how this work was made\"",
+      "mandatory": true,
+      "params": [
+        "origin_blackbox_ref"
+      ]
+    },
+    {
+      "id": "D-ADVISOR",
+      "category": "Advisor",
+      "trigger": "EXISTS(conversion_plan.yaml for this artifact)",
+      "wording_th": "แผนนี้จัดทำโดยบทบาท Project Advisor ซึ่งเป็นเพียงผู้ช่วยวางแผน ไม่ใช่ผู้รับรองความถูกต้องทางวิชาการ (ดู D-NO-VERTICAL-AUTHORITY)",
+      "wording_en": "This plan comes from the Project Advisor role — a planning assistant, never an academic certifier (see D-NO-VERTICAL-AUTHORITY).",
+      "placement": "Plan front fields",
+      "mandatory": true,
+      "params": []
+    },
+    {
+      "id": "D-ADVISOR-NOT-K2",
+      "category": "Advisor",
+      "trigger": "EXISTS(conversion_plan.yaml referencing a k_state)",
+      "wording_th": "แผนนี้อ้างถึงสถานะความรู้ K-state แต่ตัวแผนเองไม่ได้ยกระดับสถานะนั้นให้สูงขึ้น",
+      "wording_en": "This plan references a K-state, but the plan itself never advances that state.",
+      "placement": "Plan; K1→K2 conversion ledger row",
+      "mandatory": true,
+      "params": []
+    },
+    {
+      "id": "D-ADVISOR-EXPIRED",
+      "category": "Advisor",
+      "trigger": "conversion_plan.expires_at < NOW OR target_artifact.revision_history has a rev dated after conversion_plan.date",
+      "wording_th": "แผนฉบับนี้หมดอายุหรือชิ้นงานเป้าหมายถูกแก้ไขใหม่หลังวันที่ทำแผน ควรทำแผนใหม่ก่อนใช้อ้างอิง",
+      "wording_en": "This plan is stale — either expired, or the target artifact has been revised since the plan's date; make a new plan before relying on it.",
+      "placement": "Any surfacing UI/tool",
+      "mandatory": true,
+      "params": [
+        "expires_at"
+      ]
+    },
+    {
+      "id": "D-LIT-MODE",
+      "category": "Literature review",
+      "trigger": "search_log.review_mode != \"SYSTEMATIC_REVIEW\"",
+      "wording_th": "การค้นวรรณกรรมรอบนี้ไม่ใช่ systematic review เต็มรูปแบบ โหมดที่ใช้จริงระบุไว้ตรงนี้ (เช่น scoping / targeted / rapid / field-observation / internal-data-audit) ติดป้ายไว้ข้างเนื้อหา ไม่ใช่ในเชิงอรรถวิธีการ",
+      "wording_en": "This literature search is not a full systematic review; the actual mode used (scoping / targeted / rapid / field-observation-log / internal-data-audit) is named right here, not buried in a methods footnote.",
+      "placement": "Next to the lit-review section",
+      "mandatory": true,
+      "params": [
+        "review_mode"
+      ]
+    },
+    {
+      "id": "D-LIT-NOT-OBTAINED",
+      "category": "Literature review",
+      "trigger": "EXISTS(search_log.sources_found[] WHERE acquisition_status IN {not_obtained, abstract_only})",
+      "wording_th": "แหล่งนี้ปรากฏในบันทึกการค้น แต่ยังไม่ได้อ่านฉบับเต็ม (ยังไม่ได้มา หรือมีแค่บทคัดย่อ) จึงถูกกล่าวถึงได้เท่านั้น ยังไม่สามารถให้จุดยืนในตาราง dialogue ได้",
+      "wording_en": "This source appears in the search log but was not fully obtained (not_obtained / abstract_only) — it may be mentioned as known-but-unread, never given a dialogue-table stance.",
+      "placement": "Wherever the source is mentioned",
+      "mandatory": true,
+      "params": [
+        "acquisition_status"
+      ]
+    },
+    {
+      "id": "D-LIT-CONCENTRATED",
+      "category": "Literature review",
+      "trigger": "EXISTS(diversity_audit.concentration_flags[])",
+      "wording_th": "หลักฐานส่วนใหญ่ของประเด็นนี้กระจุกตัวอยู่ในมิติเดียว (เช่น ภาษา/ประเภทแหล่ง/เส้นทางค้นหา) ตามสัดส่วนที่ระบุไว้ ไม่ใช่ \"หลากหลายแล้ว\" อย่างที่อาจดูเผินๆ",
+      "wording_en": "Most evidence for this point is concentrated in one dimension (language / source type / search route) at the stated percentage — not the diverse base it might look like at a glance.",
+      "placement": "Next to the dialogue table or neighbour table it affects",
+      "mandatory": true,
+      "params": [
+        "dimension",
+        "percent"
+      ]
+    },
+    {
+      "id": "D-SELF-EXPERIENCE-NOT-GENERAL-EVIDENCE",
+      "category": "Standpoint",
+      "trigger": "claim_card.standpoint.declared_basis == \"practice_lived_experience\" AND claim_card.scope.generalization_claimed != \"none\"",
+      "wording_th": "ข้ออ้างนี้อิงจากประสบการณ์ตรงของผู้เขียนคนเดียว ประสบการณ์ตรงเป็นข้อมูลจริง แต่ไม่ได้เป็นหลักฐานระดับประชากรโดยอัตโนมัติ (ดู NC-49, NC-64)",
+      "wording_en": "This claim rests on the author's own first-person experience; that experience is real data, but it does not automatically license a population-level claim (see NC-49, NC-64).",
+      "placement": "Immediately after any first-person-experience claim; standpoint block",
+      "mandatory": true,
+      "params": []
+    },
+    {
+      "id": "D-LENS-UNSIGNED",
+      "category": "Provenance",
+      "trigger": "claim_card.lens_translation.lens_ref != null/empty AND (claim_card.hypothesis_world.signature is empty/absent OR does not name the lens lens_ref points at)",
+      "wording_th": "การ์ดข้ออ้างนี้ระบุเลนส์ (lens_ref) ที่ใช้ แต่ยังไม่มีลายเซ็นผู้ให้กำเนิดสมมติฐาน (hypothesis_world.signature) ที่ระบุชื่อเลนส์นั้นชัดเจน — เป็นข้อผิดพลาดการตรวจสอบแบบแข็ง (§3.3 rule 12) ไม่ใช่แค่ข้อชี้แจงแล้วปล่อยผ่าน",
+      "wording_en": "This claim_card names a lens (lens_ref) but hypothesis_world.signature is empty/absent or does not name that lens explicitly — a hard validation error (§3.3 rule 12), never a disclaimer-and-proceed.",
+      "placement": "Under the hypothesis statement itself (paper H1/H2/...; hypothesis_selection.yaml rows); claim_card.hypothesis_world",
+      "mandatory": true,
+      "params": [
+        "lens_ref"
+      ]
+    },
+    {
+      "id": "D-LENS-UNCITED",
+      "category": "Provenance",
+      "trigger": "claim_card.lens_translation.lens_ref != null/empty (or a Blackbox Note's lens_used block is present) AND NOT EXISTS(citation_card WHERE status == \"VERIFIED\" matching that lens's DOI/repo)",
+      "wording_th": "เลนส์ที่ระบุไว้ตรงนี้ (lens_ref / lens_used) ยังไม่มี citation_card สถานะ VERIFIED รองรับ — ตามกฎ §7.4 นี่คือการบล็อกประตูเผยแพร่แบบแข็ง ไม่ใช่แค่ข้อชี้แจงแล้วปล่อยผ่าน",
+      "wording_en": "The lens named here (lens_ref / lens_used) has no citation_card with status VERIFIED yet backing its DOI/repo — per §7.4 this is a hard release-gate block, not a soft disclaimer-and-proceed, until a VERIFIED citation exists for the lens.",
+      "placement": "Wherever the lens is named (paper front matter, Blackbox appendix, claim_card.lens_translation.lens_ref)",
+      "mandatory": true,
+      "params": [
+        "lens_ref"
+      ]
+    }
+  ]
+}

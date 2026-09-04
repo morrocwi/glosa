@@ -1,0 +1,79 @@
+# search_log.yaml — RWI S8 template (Dr, unreviewed proposed schema)
+# One log per search episode backing ONE claim or hypothesis's evidence base.
+# Honest-label rule (skillme SKILLME.md ~L1440, PRISMA-2020 + Cochrane Handbook ch.4 cited as
+# public transparency standards): never call this a systematic review unless search_mode is
+# actually SYSTEMATIC_REVIEW and prisma_counts is fully populated.
+# Forbidden claim FC-S8-1: labeling a targeted/scoping/rapid search a "systematic review".
+# RENAMED field this pass (FOUNDATION_v0.5 §7.9, S14 §2.2/§9.4/§12 item 1): this field was named
+# `review_mode`, colliding in name (and one enum value) with FOUNDATION §7.8's own `review_mode`
+# enum (a verification-route label: MAKER_SELF_CHECK | DECORRELATED_AI_ROUTE | HUMAN_REVIEW |
+# MECHANICAL_CHECK | SYSTEMATIC_LITERATURE_SEARCH | INTERNAL_DATA_AUDIT) — a different axis
+# entirely (who/what checked a review_report, not what kind of search episode this is). Renamed to
+# `search_mode` to end the collision; §7.8's `review_mode` is unchanged.
+
+id: search-<slug>-<nnn>
+claim_or_hypothesis_ref: claim-<id>   # or hypothesis-<id>
+
+search_mode: RAPID_EVIDENCE_CHALLENGE
+  # required enum: SYSTEMATIC_REVIEW | TARGETED_SEARCH | SCOPING_SEARCH
+  #              | RAPID_EVIDENCE_CHALLENGE | FIELD_OBSERVATION_LOG | INTERNAL_DATA_AUDIT
+  # (INTERNAL_DATA_AUDIT added per FOUNDATION_v0.5 §7.9 — the mode for a hypothesis whose evidence
+  # is the scholar's own already-held records, e.g. a logbook re-read, distinct from a fresh search)
+
+# --- literature modes (SYSTEMATIC_REVIEW / TARGETED_SEARCH / SCOPING_SEARCH / RAPID_EVIDENCE_CHALLENGE) ---
+frozen_scope:
+  # frozen BEFORE sources_found is populated — prevents post-hoc query tuning toward a wanted answer
+  hypothesis_or_falsifier: ""
+  question_type: mechanism          # mechanism | effect | diagnosis | prediction | implementation
+                                     # | experience | law_policy | descriptive_baseline
+  concepts_synonyms_vocabulary: []
+  inclusion_exclusion_rules: ""
+  time_window: ""
+  language_strategy: ""
+  global_sources: []                # database/source classes searched internationally
+  local_context_sources: []         # database/source classes searched in the local/Thai/frontline context
+  search_date: ""
+  stopping_rule: ""
+  conflicts_of_interest: ""
+  access_limits: ""
+
+queries:
+  support: []      # query family: mechanism present, effect observed, supports
+  challenge: []     # separate family: contradicts, null effect, boundary, alternative mechanism,
+                     # subgroup difference, failed replication, retraction — never just "not <support query>"
+
+sources_found: []   # list of citation_card.yaml ids produced by this search
+
+prisma_counts:       # REQUIRED only when review_mode == SYSTEMATIC_REVIEW; null otherwise
+  records_identified: null
+  records_screened: null
+  records_excluded: null
+  full_text_assessed: null
+  studies_included: null
+  independent_screener_signoff: null   # name/role of the second screener, required for SYSTEMATIC_REVIEW
+
+global_track:
+  summary: ""          # how strong is this internationally, what designs studied it
+  strength_note: ""
+
+local_track:
+  summary: ""           # does it hold/transfer/break in the local frontline setting
+  result: NOT_SEARCHED   # enum: FOUND | LOCAL_EVIDENCE_NOT_FOUND | NOT_SEARCHED
+                          # LOCAL_EVIDENCE_NOT_FOUND != NO_LOCAL_EVIDENCE_EXISTS — never collapse these
+
+transfer_verdict: null
+  # REQUIRED whenever a global_track result is applied to the local context.
+  # enum: TRANSFERS_DIRECTLY | TRANSFERS_WITH_ADAPTATION | DOES_NOT_TRANSFER | UNASSESSED
+  # Forbidden (skillme #36): moving global evidence into a local claim with no transfer_verdict.
+
+# --- FIELD_OBSERVATION_LOG mode only (non-literature, direct sensory/field evidence) ---
+field_observation:
+  observer: null
+  observation_method: null
+  observed_at: null
+  location_or_context: null
+
+summary_disclaimer: ""
+  # required free text stating explicitly what WAS and was NOT found on both support and
+  # challenge sides. e.g.: "Evidence base is a RAPID_EVIDENCE_CHALLENGE, not a systematic
+  # review — absence of counter-evidence here does not mean counter-evidence does not exist."

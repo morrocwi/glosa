@@ -1,0 +1,62 @@
+# citation_card.yaml — RWI S8 template (Dr, unreviewed proposed schema)
+# One card per CITATION USE (one source backing one exact claim at one exact passage),
+# not one card per source document. The same source cited for two different claims gets
+# two cards, because claim_match_verified is scoped to one claim.
+#
+# Integrity Firewall this card implements (Standalone Scholar §18.1, re-expressed):
+#   AI-candidate -> original-source resolution -> claim-match verification -> VERIFIED
+# Binding invariant: metadata_verified != claim_match_verified. Never infer one from the other.
+# "Source existence does not equal claim support" (SS preservation ledger, source existence != claim support).
+
+id: cite-<slug>-<nnn>            # required, stable; never reused after SCRAM/retraction
+claim_ref: claim-<id>            # required — the claim card (S4) this citation backs
+
+identifier:
+  kind: DOI                      # required enum: DOI | PMID | PMCID | ISBN | ARXIV | OFFICIAL_URL | BLACKBOX_NOTE | OTHER_STABLE
+  value: "10.xxxx/xxxxx"         # required — the actual identifier string
+
+fetch_status: NOT_FETCHED        # required enum: FETCHED | NOT_FETCHED | FETCH_FAILED | PAYWALLED_ABSTRACT_ONLY | UNCHECKED_OFFLINE
+                                  # honest default is NOT_FETCHED — never silently upgraded
+fetched_at: null                 # ISO 8601 date, set only when fetch_status == FETCHED
+
+metadata_verified: false         # boolean — EXISTENCE / METADATA check only (title/author/year/venue matched)
+metadata_verified_by: null       # "mechanical:crossref" | "mechanical:openalex" | "mechanical:pubmed" | human name/role
+metadata_verified_at: null
+
+claim_match_verified: false      # boolean — INTERPRETATION check: does the passage actually support claim_ref?
+claim_match_verified_by: null    # human name/role, OR "independent_ai_route:<label>" (must be a DECORRELATED route,
+                                  # per maker-checker-gate MC-02: same-model self-approval is not a check)
+claim_match_verified_at: null
+
+exact_passage: ""                # required if claim_match_verified: true — verbatim quote or precise section pointer,
+                                  # never a paraphrase substituting for the actual check
+page_or_locator: ""              # page number / paragraph id / timestamp (AV) / section anchor
+
+scope: SUPPORTS_GENERAL_CLAIM_ONLY
+  # enum: DIRECT_QUOTATION | PARAPHRASE | SUPPORTS_GENERAL_CLAIM_ONLY | CONTEXT_ONLY_NOT_EVIDENCE
+
+evidence_tier: Open               # the tier the CITED SOURCE itself claims for this fact
+  # enum: Th_coqc | finite_diagnostic | fit_calibrated | Dr | definition | Open
+  # (this is NOT the tier of the RWI claim it backs — that lives on the claim card)
+
+independence_class: I0             # required enum: I0 | I1 | I2 | I3 | I4 | I5
+  # (common.defs.json's ONE string independence ladder — the class of the check that produced
+  # claim_match_verified, not the tier of the source itself)
+
+who_verified: null                 # human name/role, or independent_ai_route:<label>
+verification_method: MANUAL_READ   # enum: MANUAL_READ | MECHANICAL_LOOKUP | MECHANICAL_LOOKUP_PLUS_MANUAL_READ | verbatim_diff_against_note
+
+status: CANDIDATE
+  # enum: CANDIDATE | METADATA_OK | VERIFIED | CHALLENGED | SCRAMMED | SUPERSEDED
+  # only VERIFIED cards (metadata_verified=true AND claim_match_verified=true) may appear in a
+  # paper reference list or a claim card's evidence_relations[]
+
+xenon_ledger_ref: null            # id of a XENON_LEDGER.md row, set automatically if status ever becomes SCRAMMED
+
+disclosure: ""
+  # machine-emitted disclaimer text, e.g.:
+  # "This citation's existence has not been mechanically confirmed. Treat as candidate evidence."
+  # "Not a direct quotation - paraphrase risk; re-check exact_passage before quoting downstream."
+
+superseded_by: null                # id of the card that replaces this one, if the source was retracted/updated
+notes: ""                          # free-text working notes, non-normative

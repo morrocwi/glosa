@@ -1,0 +1,98 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://glosa.example/schema/hypothesis_selection.schema.json",
+  "title": "glosa hypothesis selection",
+  "description": "tier: Dr (specified; independently unreviewed). Implements templates/knowledge/hypothesis_selection.yaml (S14, founder addition HANDOFF 35d): after n LRS runs, a HUMAN compares candidate hypotheses and selects which carry forward into the genre router -- non-delegable (matches claim_card.responsible: human). An AI route may PROPOSE the comparison table, never make the selection. Namespace https://glosa.example/ is a placeholder.",
+  "type": "object",
+  "required": ["id", "problem_ref", "decided_by", "candidates", "selection", "cooking_log_ref"],
+  "additionalProperties": true,
+  "properties": {
+    "id": { "type": "string", "pattern": "^hsel-[a-z0-9-]+-[0-9]{3}$" },
+    "problem_ref": { "type": "string", "minLength": 1 },
+    "decided_by": { "type": "string", "minLength": 1 },
+    "decided_at": { "type": "string" },
+    "candidates": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["hypothesis_ref", "lrs_manifest_ref", "criteria"],
+        "properties": {
+          "hypothesis_ref": { "type": "string", "minLength": 1 },
+          "hypothesis_world": { "type": "string" },
+          "lrs_manifest_ref": { "type": "string", "minLength": 1 },
+          "dialogue_table_ref": { "type": "string" },
+          "criteria": {
+            "type": "object",
+            "properties": {
+              "developability": {
+                "type": "object",
+                "properties": {
+                  "unresolved_space_shown_by_dialogue_table": { "type": "string" },
+                  "note": { "type": "string" }
+                }
+              },
+              "access_evidence_available": {
+                "type": "object",
+                "properties": { "can_we_get_new_access": { "enum": ["yes", "no", "partial"] }, "note": { "type": "string" } }
+              },
+              "falsifier_reachable_with_our_resources": {
+                "type": "object",
+                "properties": { "value": { "enum": ["yes", "no", "partial"] }, "note": { "type": "string" } }
+              },
+              "independence_routes_available": {
+                "type": "object",
+                "properties": {
+                  "max_reachable_independence_class": { "$ref": "common.defs.json#/definitions/independence_class" },
+                  "note": { "type": "string" }
+                }
+              },
+              "risk_and_ethics": {
+                "type": "object",
+                "properties": {
+                  "human_participant_or_vulnerable_subject": { "enum": ["yes", "no"] },
+                  "domain_safety_flags": { "type": "array", "items": { "type": "string" } },
+                  "note": { "type": "string" }
+                }
+              },
+              "genre_fit": {
+                "type": "object",
+                "properties": {
+                  "candidate_genres": { "type": "array", "items": { "$ref": "common.defs.json#/definitions/genre" } },
+                  "note": { "type": "string" }
+                }
+              }
+            }
+          },
+          "accuracy_gate_at_selection_time": { "$ref": "common.defs.json#/definitions/gate_verdict" },
+          "diversity_gate_at_selection_time": { "$ref": "common.defs.json#/definitions/gate_verdict" }
+        }
+      }
+    },
+    "selection": {
+      "type": "object",
+      "required": ["chosen", "reason"],
+      "properties": {
+        "chosen": { "type": "array", "items": { "type": "string" } },
+        "reason": { "type": "string", "minLength": 1 },
+        "parked": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["hypothesis_ref", "reason"],
+            "properties": { "hypothesis_ref": { "type": "string" }, "reason": { "type": "string", "minLength": 1 } }
+          }
+        }
+      }
+    },
+    "cooking_log_ref": { "type": "string", "minLength": 1 },
+    "routes_to": { "type": "string" }
+  },
+  "allOf": [
+    {
+      "description": "A chosen hypothesis's routed genre must be one its own genre_fit.candidate_genres actually listed (S14 §11 'not a suggestion') -- schema checks presence of the field, not the cross-array match itself (kernel-enforced).",
+      "if": { "properties": { "selection": { "type": "object", "properties": { "chosen": { "type": "array", "minItems": 1 } }, "required": ["chosen"] } } },
+      "then": { "properties": { "candidates": { "type": "array", "minItems": 1 } } }
+    }
+  ]
+}

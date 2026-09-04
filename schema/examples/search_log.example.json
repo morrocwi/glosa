@@ -1,0 +1,30 @@
+{
+  "id": "search-cat-litterbox-001",
+  "claim_or_hypothesis_ref": "GLOSA-CC-20260904-0001",
+  "search_mode": "RAPID_EVIDENCE_CHALLENGE",
+  "frozen_scope": {
+    "hypothesis_or_falsifier": "distance to the litter box affects in-box urination",
+    "question_type": "mechanism",
+    "concepts_synonyms_vocabulary": ["litter box placement", "inappropriate elimination", "feline house soiling"],
+    "inclusion_exclusion_rules": "household/companion-animal behavior sources only",
+    "time_window": "no restriction",
+    "language_strategy": "English + Thai",
+    "global_sources": ["general web search"],
+    "local_context_sources": ["Thai pet-owner forums"],
+    "search_date": "2026-09-05",
+    "stopping_rule": "one round, rapid challenge only",
+    "conflicts_of_interest": "none",
+    "access_limits": "no institutional library access"
+  },
+  "queries": {
+    "support": ["litter box distance cat urination"],
+    "challenge": ["litter box substrate preference cat urination", "litter box cleanliness cat avoidance"]
+  },
+  "sources_found": ["cite-cat-obs-001"],
+  "prisma_counts": null,
+  "global_track": { "summary": "not yet searched beyond a rapid check", "strength_note": "UNKNOWN" },
+  "local_track": { "summary": "not searched", "result": "NOT_SEARCHED" },
+  "transfer_verdict": "UNASSESSED",
+  "field_observation": { "observer": null, "observation_method": null, "observed_at": null, "location_or_context": null },
+  "summary_disclaimer": "This is a RAPID_EVIDENCE_CHALLENGE, not a systematic review -- absence of counter-evidence here does not mean counter-evidence does not exist."
+}

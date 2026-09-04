@@ -1,0 +1,12 @@
+{
+  "evidence_id": "ev-cat-001",
+  "bearing": "SUPPORTS",
+  "independence_class": "I1",
+  "citation_ref": "cite-cat-obs-001",
+  "strength": "weak, n=1",
+  "review_mode": "MAKER_SELF_CHECK",
+  "route_id": null,
+  "asserted_by": "founder",
+  "date": "2026-09-04",
+  "notes": "backs the observation, not an independent check"
+}

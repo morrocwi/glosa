@@ -1,0 +1,1314 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://glosa.example/schema/claim_card.schema.json",
+  "title": "glosa claim card",
+  "description": "tier: Dr (specified; independently unreviewed). Implements FOUNDATION_v0.5.md §3 (the claim card, final field list), §3.1 (five-questions crosswalk), §3.2a (two legal shapes stub|full, chair ruling B2), §3.2b (formal_applicability plain-language enum), and a schema-expressible SUBSET of §3.3's 11 kernel gate rules (see schema/README.md for the exact schema-enforced vs kernel-enforced split — rules 5, 6, 8 and the full bounded-I2+I4-exception arithmetic of rules 4/9 are NOT expressible in JSON Schema draft-07 and remain kernel-only). Namespace https://glosa.example/ is a placeholder (no public domain yet).",
+  "type": "object",
+  "additionalProperties": true,
+  "required": [
+    "claim_id",
+    "shape",
+    "statement",
+    "standpoint",
+    "claim_type",
+    "tier",
+    "produced_by",
+    "responsible",
+    "origin_blackbox_ref",
+    "five_questions",
+    "non_claims",
+    "human_owner",
+    "status"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "default": "0.4.0"
+    },
+    "claim_id": {
+      "type": "string",
+      "pattern": "^GLOSA-CC-[0-9]{8}-[0-9]{4}$"
+    },
+    "shape": {
+      "enum": [
+        "stub",
+        "full"
+      ]
+    },
+    "statement": {
+      "type": "object",
+      "required": [
+        "language",
+        "text",
+        "is_verbatim_quote"
+      ],
+      "properties": {
+        "language": {
+          "$ref": "common.defs.json#/definitions/lang"
+        },
+        "text": {
+          "type": "string",
+          "minLength": 1
+        },
+        "is_verbatim_quote": {
+          "type": "boolean"
+        },
+        "translation": {
+          "type": "object",
+          "properties": {
+            "text": {
+              "type": "string"
+            },
+            "language": {
+              "$ref": "common.defs.json#/definitions/lang"
+            },
+            "translation_status": {
+              "$ref": "common.defs.json#/definitions/translation_status"
+            }
+          }
+        }
+      }
+    },
+    "standpoint": {
+      "type": "object",
+      "required": [
+        "declared_basis"
+      ],
+      "properties": {
+        "declared_basis": {
+          "type": "string",
+          "minLength": 1
+        },
+        "disciplines_not_claimed": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "method_basis": {
+          "type": "string"
+        }
+      }
+    },
+    "claim_type": {
+      "$ref": "common.defs.json#/definitions/claim_type"
+    },
+    "genre": {
+      "anyOf": [
+        {
+          "$ref": "common.defs.json#/definitions/genre"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "venue_track": {
+      "anyOf": [
+        {
+          "$ref": "common.defs.json#/definitions/venue_track"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "companion_of": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "produced_by": {
+      "$ref": "common.defs.json#/definitions/produced_by"
+    },
+    "responsible": {
+      "const": "human"
+    },
+    "origin_blackbox_ref": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "lens_translation": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "properties": {
+        "question_human": {
+          "type": "object",
+          "required": [
+            "text_verbatim",
+            "language",
+            "blackbox_line_ref"
+          ],
+          "properties": {
+            "text_verbatim": {
+              "type": "string",
+              "minLength": 1
+            },
+            "language": {
+              "$ref": "common.defs.json#/definitions/lang"
+            },
+            "blackbox_line_ref": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        },
+        "question_readout": {
+          "type": "string"
+        },
+        "local_contrast_space_X": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string"
+          }
+        },
+        "restriction_provenance": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "access_relation_R": {},
+        "claim_function_Phi_z0": {},
+        "formal_applicability": {
+          "$ref": "common.defs.json#/definitions/formal_applicability"
+        }
+      }
+    },
+    "hypothesis_world": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "properties": {
+        "text": {
+          "type": "string"
+        },
+        "language": {
+          "$ref": "common.defs.json#/definitions/lang"
+        },
+        "falsifier_ref": {
+          "type": "string"
+        }
+      }
+    },
+    "five_questions": {
+      "type": "object",
+      "required": [
+        "ai_filled",
+        "tested"
+      ],
+      "properties": {
+        "seen": {
+          "type": [
+            "object",
+            "null"
+          ],
+          "properties": {
+            "record_ref": {
+              "type": "string"
+            },
+            "as_of": {
+              "type": "string"
+            },
+            "retrievable_original": {
+              "type": "boolean"
+            },
+            "access_model": {
+              "type": "string"
+            },
+            "citation_refs": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "separates": {
+          "type": [
+            "object",
+            "null"
+          ],
+          "properties": {
+            "value_z0": {},
+            "licensing_test": {
+              "type": "object",
+              "properties": {
+                "regime": {
+                  "type": "string"
+                },
+                "result": {
+                  "type": "string"
+                },
+                "notes": {
+                  "type": "string"
+                }
+              }
+            },
+            "zero_vs_bottom": {
+              "enum": [
+                "0_checked_no_difference",
+                "distinct_difference_found",
+                "unresolved_bottom"
+              ]
+            }
+          }
+        },
+        "ai_filled": {
+          "type": "object",
+          "description": "Two legal shapes exist for this field (chair ruling B2, §3.2a): stub -> {used, note}; full -> the six-key shape below. Which one is legal is enforced by the top-level shape:stub|full if/then in allOf."
+        },
+        "assumed": {
+          "type": [
+            "array",
+            "null"
+          ],
+          "items": {
+            "type": "object",
+            "required": [
+              "id",
+              "type",
+              "description",
+              "identification_level"
+            ],
+            "properties": {
+              "id": {
+                "type": "string",
+                "pattern": "^A[0-9]+$"
+              },
+              "type": {
+                "enum": [
+                  "access_augmentation",
+                  "contrast_relevance_operation",
+                  "inferential_commitment",
+                  "decision_policy_augmentation"
+                ]
+              },
+              "description": {
+                "type": "string",
+                "minLength": 1
+              },
+              "identification_level": {
+                "type": "string"
+              },
+              "contaminated_concept_hit": {}
+            }
+          }
+        },
+        "tested": {
+          "type": "object",
+          "required": [
+            "falsifier",
+            "evidence_relations"
+          ],
+          "properties": {
+            "evidence_relations": {
+              "type": "array",
+              "items": {
+                "$ref": "evidence_relation.schema.json"
+              }
+            },
+            "falsifier": {
+              "type": "string",
+              "minLength": 1
+            },
+            "dissent_records": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "required": [
+                  "by",
+                  "date",
+                  "content",
+                  "resolved"
+                ],
+                "properties": {
+                  "by": {
+                    "type": "string"
+                  },
+                  "date": {
+                    "type": "string"
+                  },
+                  "content": {
+                    "type": "string"
+                  },
+                  "resolved": {
+                    "type": "boolean"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "identification_ladder": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "properties": {
+        "layers": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "adds": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "per_rival": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "rival": {
+                "type": "string"
+              },
+              "first_identification_level": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    },
+    "provenance_dag": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "properties": {
+        "nodes": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "kind": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "edges": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "from": {
+                "type": "string"
+              },
+              "to": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "essential_dependency_set": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "defeater_log": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        },
+        "status": {
+          "enum": [
+            "not_run",
+            "run"
+          ],
+          "default": "not_run"
+        }
+      }
+    },
+    "silent_lift_check": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "properties": {
+        "represented_dependency_set": {
+          "type": "array"
+        },
+        "actual_dependency_set": {
+          "type": "array"
+        },
+        "flags": {
+          "type": "array"
+        },
+        "status": {
+          "enum": [
+            "not_run",
+            "run"
+          ],
+          "default": "not_run"
+        }
+      }
+    },
+    "scope": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "properties": {
+        "generalization_claimed": {
+          "enum": [
+            "none",
+            "pattern_candidate",
+            "population_claim"
+          ]
+        },
+        "evidence_scope": {
+          "type": "string"
+        },
+        "claim_scope": {
+          "type": "string"
+        }
+      }
+    },
+    "tier": {
+      "$ref": "common.defs.json#/definitions/tier"
+    },
+    "k_state": {
+      "anyOf": [
+        {
+          "$ref": "common.defs.json#/definitions/k_state"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "ledger": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "properties": {
+        "forced": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "borrowed": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "open": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "non_claims": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string"
+      }
+    },
+    "legal_epistemic_separation": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "properties": {
+        "applicable": {
+          "type": "boolean"
+        },
+        "notes": {
+          "type": "string"
+        }
+      }
+    },
+    "independent_check": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "properties": {
+        "status": {
+          "enum": [
+            "NONE",
+            "PENDING",
+            "PASSED",
+            "FAILED"
+          ]
+        },
+        "maker_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "checker_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "approver_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "independence_class": {
+          "$ref": "common.defs.json#/definitions/independence_class"
+        },
+        "mc_level": {
+          "$ref": "common.defs.json#/definitions/mc_level"
+        },
+        "date": {
+          "type": "string"
+        },
+        "expires_at": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "disclaimers_emitted": {
+      "type": "array",
+      "items": {
+        "$ref": "common.defs.json#/definitions/disclaimer_ref"
+      }
+    },
+    "status": {
+      "$ref": "common.defs.json#/definitions/release_status"
+    },
+    "lineage": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "properties": {
+        "derives_from": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "supersedes": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "superseded_by": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "related_source_cards": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "related_observation_cards": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "related_citation_cards": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "responsibility": {
+      "description": "OPTIONAL. FOUNDATION_v0.5.md §2.1b, founder instruction 2026-09-04 (BBL-2026-09-04-083/084) -- responsibility per Data->Inference->Claim arrow. Absence emits kernel rule13w (warning), never a hard fail (K0-stub authoring-cost floor, §3.2a). §2.1c: optional ownership {problem, question, hypothesis} — each const human.",
+      "type": [
+        "object",
+        "null"
+      ],
+      "required": [
+        "data_to_inference",
+        "inference_to_claim"
+      ],
+      "properties": {
+        "data_to_inference": {
+          "$ref": "common.defs.json#/definitions/produced_by"
+        },
+        "inference_to_claim": {
+          "const": "human"
+        },
+        "notes": {
+          "type": "string"
+        },
+        "ownership": {
+          "description": "OPTIONAL. FOUNDATION_v0.5.md §2.1c (BBL-2026-09-04-086/087/088): problem, question and the selection of the hypothesis stay human; any other value fails kernel rule 15.",
+          "type": [
+            "object",
+            "null"
+          ],
+          "required": [
+            "problem",
+            "question",
+            "hypothesis_selection"
+          ],
+          "properties": {
+            "problem": {
+              "const": "human"
+            },
+            "question": {
+              "const": "human"
+            },
+            "notes": {
+              "type": "string"
+            },
+            "hypothesis_selection": {
+              "const": "human",
+              "description": "AI may propose candidate hypotheses; the human selects (BBL-2026-09-04-088)."
+            }
+          }
+        }
+      }
+    },
+    "empirical_extension": {
+      "description": "OPTIONAL. FOUNDATION_v0.5.md §2, founder instruction 2026-09-04 (BBL-2026-09-04-083/084) -- operationalization, study design, bias register, robustness. Absence on an EMPIRICAL claim_type emits kernel rule14w (warning), never a hard fail.",
+      "type": [
+        "object",
+        "null"
+      ],
+      "properties": {
+        "operationalization": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "abstract_term": {
+                "type": "string"
+              },
+              "measured_as": {
+                "type": "string"
+              },
+              "instrument_or_record": {
+                "type": "string"
+              },
+              "unit_or_scale": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "study_design": {
+          "$ref": "common.defs.json#/definitions/study_design"
+        },
+        "bias_register": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "type": {
+                "$ref": "common.defs.json#/definitions/bias_type"
+              },
+              "description": {
+                "type": "string"
+              },
+              "mitigation": {
+                "type": "string"
+              },
+              "residual": {
+                "$ref": "common.defs.json#/definitions/bias_residual"
+              }
+            }
+          }
+        },
+        "robustness": {
+          "type": "object",
+          "properties": {
+            "checks": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "what_varied": {
+                    "$ref": "common.defs.json#/definitions/robustness_what_varied"
+                  },
+                  "result": {
+                    "$ref": "common.defs.json#/definitions/robustness_result"
+                  },
+                  "notes": {
+                    "type": "string"
+                  }
+                }
+              }
+            },
+            "status": {
+              "enum": [
+                "not_run",
+                "partial",
+                "run"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "human_owner": {
+      "type": "string",
+      "minLength": 1
+    },
+    "revision_history": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "rev": {
+            "type": "string"
+          },
+          "date": {
+            "type": "string"
+          },
+          "by": {
+            "type": "string"
+          },
+          "note": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "description": "shape:stub legal-shape rule (chair ruling B2, §3.2a): tier capped at Dr/definition/Open; ai_filled collapses to exactly {used, note}; status frozen at Draft (kernel rule 10, §3.3) -- this is fail_stub_public's rule.",
+      "if": {
+        "properties": {
+          "shape": {
+            "const": "stub"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "tier": {
+            "enum": [
+              "Dr",
+              "definition",
+              "Open"
+            ]
+          },
+          "status": {
+            "const": "Draft"
+          },
+          "five_questions": {
+            "type": "object",
+            "properties": {
+              "ai_filled": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "used",
+                  "note"
+                ],
+                "properties": {
+                  "used": {
+                    "type": "boolean"
+                  },
+                  "note": {
+                    "type": "string"
+                  }
+                },
+                "allOf": [
+                  {
+                    "if": {
+                      "properties": {
+                        "used": {
+                          "const": true
+                        }
+                      }
+                    },
+                    "then": {
+                      "properties": {
+                        "note": {
+                          "type": "string",
+                          "minLength": 1
+                        }
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "description": "shape:full requires every field group populated (§3.2a) -- 'none identified' is a legal string value, silent omission is not.",
+      "if": {
+        "properties": {
+          "shape": {
+            "const": "full"
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "genre",
+          "venue_track",
+          "lens_translation",
+          "hypothesis_world",
+          "identification_ladder",
+          "provenance_dag",
+          "silent_lift_check",
+          "scope",
+          "k_state",
+          "ledger",
+          "legal_epistemic_separation",
+          "independent_check",
+          "disclaimers_emitted",
+          "lineage",
+          "revision_history"
+        ],
+        "properties": {
+          "five_questions": {
+            "type": "object",
+            "required": [
+              "seen",
+              "separates",
+              "assumed",
+              "ai_filled",
+              "tested"
+            ],
+            "properties": {
+              "ai_filled": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "current_evidence",
+                  "retrieved_tool_evidence",
+                  "retained_record_route",
+                  "model_calibration_assumption",
+                  "prompt_system_constraint",
+                  "decision_policy"
+                ],
+                "properties": {
+                  "current_evidence": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "retrieved_tool_evidence": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "retained_record_route": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "model_calibration_assumption": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "prompt_system_constraint": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "decision_policy": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "description": "Kernel rule 1 (§3.3): independent_check.status may be PASSED only when independence_class is NOT I0/I1 (MC-02). fail_same_model_review violates this.",
+      "if": {
+        "properties": {
+          "independent_check": {
+            "type": "object",
+            "properties": {
+              "status": {
+                "const": "PASSED"
+              }
+            },
+            "required": [
+              "status"
+            ]
+          }
+        },
+        "required": [
+          "independent_check"
+        ]
+      },
+      "then": {
+        "properties": {
+          "independent_check": {
+            "type": "object",
+            "properties": {
+              "independence_class": {
+                "enum": [
+                  "I2",
+                  "I3",
+                  "I4",
+                  "I5"
+                ]
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "description": "Kernel rule 2 (§3.3): tier Th_coqc requires >=1 evidence_relation at I4 or I5. fail_th_coqc_no_witness violates this.",
+      "if": {
+        "properties": {
+          "tier": {
+            "const": "Th_coqc"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "five_questions": {
+            "type": "object",
+            "properties": {
+              "tested": {
+                "type": "object",
+                "properties": {
+                  "evidence_relations": {
+                    "type": "array",
+                    "contains": {
+                      "type": "object",
+                      "properties": {
+                        "independence_class": {
+                          "enum": [
+                            "I4",
+                            "I5"
+                          ]
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "description": "Kernel rule 3 (§3.3), approximated: tier finite_diagnostic requires >=1 evidence_relation at I4 or I5 (I3 alone -- the Bounded-Judge Law -- may corroborate but does not license the tier). The schema cannot check that the I4/I5 route actually supplied a reproduction command; that remains kernel/human-reviewed.",
+      "if": {
+        "properties": {
+          "tier": {
+            "const": "finite_diagnostic"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "five_questions": {
+            "type": "object",
+            "properties": {
+              "tested": {
+                "type": "object",
+                "properties": {
+                  "evidence_relations": {
+                    "type": "array",
+                    "contains": {
+                      "type": "object",
+                      "properties": {
+                        "independence_class": {
+                          "enum": [
+                            "I4",
+                            "I5"
+                          ]
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "description": "Kernel rule 4 (§3.3), approximated (schema cannot compute the bounded I2+I4 90-day exception's date arithmetic -- kernel-only for that half): k_state K2/K3 requires >=1 evidence_relation at I5. fail_k2_without_i5 violates this.",
+      "if": {
+        "required": [
+          "k_state"
+        ],
+        "properties": {
+          "k_state": {
+            "enum": [
+              "K2",
+              "K3"
+            ]
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "five_questions": {
+            "type": "object",
+            "properties": {
+              "tested": {
+                "type": "object",
+                "properties": {
+                  "evidence_relations": {
+                    "type": "array",
+                    "contains": {
+                      "type": "object",
+                      "properties": {
+                        "independence_class": {
+                          "const": "I5"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "description": "Kernel rule 9 (§3.3), approximated: k_state K1 requires >=1 evidence_relation at I3+ OR the bounded B4 exception's disclosure marker (D-SAME-VENDOR) plus a non-null independent_check.expires_at (the 90-day arithmetic itself is kernel-only). fail_no_independent_check violates this (K1, no I3+, no exception marker).",
+      "if": {
+        "required": [
+          "k_state"
+        ],
+        "properties": {
+          "k_state": {
+            "const": "K1"
+          }
+        }
+      },
+      "then": {
+        "anyOf": [
+          {
+            "properties": {
+              "five_questions": {
+                "type": "object",
+                "properties": {
+                  "tested": {
+                    "type": "object",
+                    "properties": {
+                      "evidence_relations": {
+                        "type": "array",
+                        "contains": {
+                          "type": "object",
+                          "properties": {
+                            "independence_class": {
+                              "enum": [
+                                "I3",
+                                "I4",
+                                "I5"
+                              ]
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          {
+            "properties": {
+              "disclaimers_emitted": {
+                "type": "array",
+                "contains": {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "const": "D-SAME-VENDOR"
+                    }
+                  }
+                }
+              },
+              "independent_check": {
+                "type": "object",
+                "properties": {
+                  "expires_at": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "expires_at"
+                ]
+              }
+            },
+            "required": [
+              "disclaimers_emitted",
+              "independent_check"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "description": "Kernel rule 11 (§3.3): provenance_dag.status and silent_lift_check.status must both be 'run' before k_state may advance past K0.",
+      "if": {
+        "required": [
+          "k_state"
+        ],
+        "properties": {
+          "k_state": {
+            "enum": [
+              "K1",
+              "K2",
+              "K3"
+            ]
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "provenance_dag": {
+            "type": "object",
+            "properties": {
+              "status": {
+                "const": "run"
+              }
+            }
+          },
+          "silent_lift_check": {
+            "type": "object",
+            "properties": {
+              "status": {
+                "const": "run"
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "description": "Kernel rule 7 (§3.3), approximated: silent_lift_check.flags non-empty is a hard failure blocking status advancement -- schema-checkable reading is 'status stays at Draft while any flag is open'.",
+      "if": {
+        "properties": {
+          "silent_lift_check": {
+            "type": "object",
+            "properties": {
+              "flags": {
+                "type": "array",
+                "minItems": 1
+              }
+            },
+            "required": [
+              "flags"
+            ]
+          }
+        },
+        "required": [
+          "silent_lift_check"
+        ]
+      },
+      "then": {
+        "properties": {
+          "status": {
+            "const": "Draft"
+          }
+        }
+      }
+    },
+    {
+      "description": "Disclaimer trigger check (§5 D-INDEPENDENCE: 'tested's strongest entry is I0-I2'), schema-approximated as 'no evidence_relation reaches I3+': when true and at least one evidence_relation exists, disclaimers_emitted must carry D-INDEPENDENCE. fail_missing_disclaimer violates this. This is ONE disclaimer row of the full catalogue expressed at schema level as a worked example; the catalogue's other ~35 trigger conditions remain kernel-enforced (methodology/data/disclaimer_catalogue.json + compute_disclaimers()), not re-implemented here one by one.",
+      "if": {
+        "properties": {
+          "five_questions": {
+            "type": "object",
+            "properties": {
+              "tested": {
+                "type": "object",
+                "properties": {
+                  "evidence_relations": {
+                    "type": "array",
+                    "minItems": 1,
+                    "not": {
+                      "contains": {
+                        "type": "object",
+                        "properties": {
+                          "independence_class": {
+                            "enum": [
+                              "I3",
+                              "I4",
+                              "I5"
+                            ]
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "required": [
+                  "evidence_relations"
+                ]
+              }
+            },
+            "required": [
+              "tested"
+            ]
+          }
+        },
+        "required": [
+          "five_questions"
+        ]
+      },
+      "then": {
+        "properties": {
+          "disclaimers_emitted": {
+            "type": "array",
+            "contains": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "const": "D-INDEPENDENCE"
+                }
+              }
+            }
+          }
+        },
+        "required": [
+          "disclaimers_emitted"
+        ]
+      }
+    }
+  ]
+}

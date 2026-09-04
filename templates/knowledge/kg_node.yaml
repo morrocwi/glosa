@@ -1,0 +1,41 @@
+# kg_node.yaml — RWI S8 template (Dr, unreviewed proposed schema)
+# One node per graph entity. Nodes are a GRAPH-VIEW POINTER, not the canonical content —
+# the canonical content lives in the card file at `ref`. One fact, one home.
+# Stored append-only, one JSON object per line, in kg/nodes.jsonl (this file shows one record
+# expanded to YAML for readability; the on-disk format is JSONL).
+
+id: <type-prefix>-<slug>-<nnn>     # e.g. claim-042, cite-abc-001, eq-ret-001, proj-<slug>, role-founder-direction
+
+type: claim
+  # required enum: claim | source | equation | project | person_role | concept
+
+label: ""                          # short human-readable label
+
+tier: Dr
+  # readout_genesis / readout_universe tier vocabulary, where applicable:
+  # enum: Th_coqc | finite_diagnostic | Dr | definition | Open | null
+  # required for claim and equation nodes; for source nodes, this is the tier the SOURCE
+  # claims for itself, never RWI's own tier for the claim it backs
+
+created_at: ""                      # ISO 8601
+
+status: ACTIVE
+  # enum: ACTIVE | SUPERSEDED | DEPRECATED | SCRAMMED
+
+ref: ""
+  # path to the canonical card file this node points to, e.g.:
+  #   claims/claim-042.yaml
+  #   sources/citation_card_abc001.yaml
+  #   equations/EQUATION_REGISTRY.md#eq-ret-001
+  #   projects/<slug>/README.md
+
+# --- person_role nodes only ---
+standpoint: null
+  # e.g. "founder_direction" | "independent_reviewer" | "frontline_practitioner"
+  # Real personal names are NOT used here except the one existing named-attribution exception
+  # (founder, at CITATION.cff authorship level) — public graph person nodes are role/standpoint
+  # typed, per the workspace rule that public AI-guidance/graph files never name individuals
+  # without explicit consent.
+
+superseded_by: null                 # node id that replaces this one, if status == SUPERSEDED
+notes: ""

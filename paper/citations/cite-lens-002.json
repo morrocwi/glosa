@@ -1,0 +1,28 @@
+{
+ "id": "cite-lens-002",
+ "claim_ref": "GLOSA-CC-20260904-0101",
+ "identifier": {
+  "kind": "DOI",
+  "value": "10.5281/zenodo.21665100"
+ },
+ "fetch_status": "FETCHED",
+ "fetched_at": "2026-09-04",
+ "metadata_verified": true,
+ "metadata_verified_by": "mechanical:zenodo_api_records_fetch",
+ "metadata_verified_at": "2026-09-04",
+ "claim_match_verified": true,
+ "claim_match_verified_by": "route:codex-cli-0.143.0 (OpenAI, cross-vendor)",
+ "claim_match_verified_at": "2026-09-04",
+ "exact_passage": "The abstract explicitly centers retained difference/distinction and explains zero readout as the failure of retained distinction, matching the retained-distinction claim.",
+ "page_or_locator": "Zenodo record title + abstract",
+ "scope": "SUPPORTS_GENERAL_CLAIM_ONLY",
+ "evidence_tier": "Dr",
+ "independence_class": "I3",
+ "who_verified": "codex-cli (OpenAI) via registry/verification/lens_2026-09-04/",
+ "verification_method": "MECHANICAL_LOOKUP_PLUS_MANUAL_READ",
+ "status": "VERIFIED",
+ "xenon_ledger_ref": null,
+ "disclosure": "claim-match judged from title/abstract only (not full text); independence I3 = different vendor, same operator machine; no external human (I5) yet",
+ "superseded_by": null,
+ "notes": "lens_used reference: Zero readout / retained distinction companion — claim attributed: retained distinction; zero readout = failure of retained distinction; DOI record 21665100; the \"manual read\" leg was performed by a cross-vendor AI route (OpenAI codex-cli), not a human — see registry/verification/lens_2026-09-04/"
+}

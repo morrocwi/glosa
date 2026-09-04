@@ -1,0 +1,26 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://glosa.example/schema/evidence_relation.schema.json",
+  "title": "glosa evidence relation",
+  "description": "tier: Dr (specified; independently unreviewed). Implements FOUNDATION_v0.5.md §3.2's `five_questions.tested.evidence_relations[]` item shape as its own standalone, citable schema (one-fact-one-home: claim_card.schema.json's tested.evidence_relations array items $ref this file rather than redeclaring the shape). Also backs route_dependence_matrix rows and review_report entries wherever a route's output needs to be represented as one typed evidence relation. Namespace https://glosa.example/ is a placeholder.",
+  "type": "object",
+  "required": ["evidence_id", "bearing", "independence_class", "citation_ref"],
+  "additionalProperties": true,
+  "properties": {
+    "evidence_id": { "type": "string", "minLength": 1 },
+    "bearing": { "$ref": "common.defs.json#/definitions/bearing" },
+    "independence_class": { "$ref": "common.defs.json#/definitions/independence_class" },
+    "strength": {
+      "description": "Descriptive only, per kg_edge.yaml's own rule -- never a single score that by itself passes a gate.",
+      "type": ["string", "null"]
+    },
+    "citation_ref": { "type": "string", "minLength": 1 },
+    "review_mode": {
+      "anyOf": [ { "$ref": "common.defs.json#/definitions/review_mode" }, { "type": "null" } ]
+    },
+    "route_id": { "type": ["string", "null"] },
+    "asserted_by": { "$ref": "common.defs.json#/definitions/role_or_human" },
+    "date": { "type": "string" },
+    "notes": { "type": "string" }
+  }
+}

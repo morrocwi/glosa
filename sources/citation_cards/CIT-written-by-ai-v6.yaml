@@ -1,0 +1,128 @@
+# citation_card — Written by AI. Still True. (Yaoharee Lahtee, Aug 2026)
+# Follows templates/knowledge/citation_card.yaml. Tier of this card's own verification work: Dr,
+# single reading (I0/I1), not independently cross-checked.
+# One card per citation USE. This card backs the S15/S9/lineage claims that quote or paraphrase
+# specific principles/objections from the paper (see `related_claims` below); a different claim
+# citing a different passage of the same paper would get its own card, per the template's own rule.
+
+id: cit-written-by-ai-v6-001
+claim_ref: design/S15_pillars-ontology-epistemology-methodology.md  # + design/S9_non-collapse-table.md NC-65..NC-73
+                                                                     # + lineage/RELATION_TO_WRITTEN_BY_AI.md
+                                                                     # (multi-claim use; see related_claims below
+                                                                     # for the per-principle line-ref breakdown —
+                                                                     # this card backs the paper-as-a-whole reading,
+                                                                     # not one single sentence)
+
+identifier:
+  kind: DOI
+  value: "10.5281/zenodo.22301202"   # version DOI; concept DOI 10.5281/zenodo.22301201
+  # Note (task instruction, superseded by coordinator update mid-task): the brief that opened this
+  # task said "identifier kind OFFICIAL_URL or OTHER_STABLE = local file path is NOT allowed; use
+  # 'preprint, DOI pending'" for a paper not yet on Zenodo. The paper was published to Zenodo
+  # during this session (2026-09-04) — this card uses the resulting DOI directly rather than the
+  # 'DOI pending' placeholder, since the placeholder is now stale.
+
+fetch_status: FETCHED
+fetched_at: "2026-09-04"   # read in full this session from the local working copy
+                           # (sources/WRITTEN_BY_AI_STILL_TRUE_v6.txt), 1139 lines, before the
+                           # Zenodo deposit was confirmed; the DOI above was supplied by the
+                           # coordinator after this session's own read, not independently
+                           # cross-checked against the Zenodo landing page's own PDF by this card's
+                           # author
+
+metadata_verified: true
+metadata_verified_by: "AI reading (I0/I1) — title/author/date/preprint-status matched between the
+  local text extraction's own front matter (lines 1-46) and the coordinator-supplied DOI/URL;
+  NOT independently confirmed via a mechanical Crossref/DataCite lookup against the live Zenodo
+  record in this pass"
+metadata_verified_at: "2026-09-04"
+
+claim_match_verified: true
+claim_match_verified_by: "Same AI session that authored the claim (I0) — every quotation in
+  design/S15_pillars-ontology-epistemology-methodology.md and design/S9_non-collapse-table.md was
+  checked against the source line numbers below at the time of drafting. This is NOT a
+  decorrelated independent check (maker-checker-gate MC-02: same-model self-approval is not a
+  review) — flagged here honestly rather than marked true without qualification would be. An I2+
+  route re-checking these line numbers has not yet run."
+claim_match_verified_at: "2026-09-04"
+
+exact_passage: |
+  Multiple passages, one per principle/objection cited — see related_claims below for the
+  line-ref breakdown. Representative example (Definition 1, lines 159-166): "A pre-subjective
+  constraint structure is a worldly state, relation, trace, record, or lawful dependence capable
+  of constraining which later representations succeed or fail, independently of whether any
+  actual subject has yet represented or interpreted it."
+page_or_locator: "lines 43-46, 159-171, 247-249, 251-269, 270-306, 313-360, 390-396, 462-466,
+  540-544, 567-603, 688-751, 795-805, 826-835, 848-851, 891-894, 904-921 (see per-row source line
+  refs in design/S9_non-collapse-table.md NC-65..NC-73 and design/S15_pillars-ontology-
+  epistemology-methodology.md for the exact ref attached to each individual quotation)"
+
+scope: DIRECT_QUOTATION
+  # Mixed in practice — most cited passages are DIRECT_QUOTATION (block-quoted with line refs in
+  # S15/S9); a smaller number of summarizing sentences in the lineage ledger are PARAPHRASE. This
+  # card records the stronger of the two since at least one load-bearing use per principle is a
+  # direct quotation; a future split into per-scope cards is possible if a reviewer requests it.
+
+evidence_tier: Dr
+  # This is the tier the paper's OWN content claims for itself as a philosophical argument
+  # (preprint, not peer reviewed, per the paper's own front matter, line 3) — not the tier of any
+  # glosa claim built on top of it, which is tracked separately on each claim card.
+
+who_verified: "AI (Claude, this session) — I0/I1 only, not yet independently checked"
+verification_method: MANUAL_READ
+
+independence_class: I1
+  # Field not present in templates/knowledge/citation_card.yaml's current schema — added here as
+  # an extension per this task's explicit instruction (I1 = same-vendor/same-session AI read: the
+  # AI that verified claim-match is the same AI, same session, that authored the claims it backs).
+  # Proposed for addition to the citation-card template proper: see
+  # design/FOUNDATION_v0.5_PATCH.md §3 note. Per glosa kernel rule (FOUNDATION_v0.5.md §3.3 rule
+  # 1), an independent_check.status of PASSED requires independence_class NOT IN {I0, I1} — this
+  # card's I1 rating is exactly why `status` below stops at METADATA_OK rather than VERIFIED.
+
+status: METADATA_OK
+  # NOT "VERIFIED" per the template's own rule (status VERIFIED requires metadata_verified AND
+  # claim_match_verified to be independently, mechanically or humanly confirmed at I2+ — this
+  # card's claim_match_verified is same-session I0, which the template's own binding invariant
+  # ("never infer one from the other") and MC-02 both bar from counting as a full VERIFIED
+  # closure). Advance to VERIFIED only after an I2+ route re-checks the line-ref/quotation
+  # matches.
+
+xenon_ledger_ref: null
+
+disclosure: |
+  This citation's claim-match check (does each quoted passage actually say what design/S15 and
+  design/S9 claim it says) was performed by the same AI session that wrote the claims it backs —
+  not yet independently reviewed (I0/I1). Metadata (DOI, license, publication date) was supplied
+  by the coordinator mid-task and not independently re-verified against the live Zenodo record by
+  this card's author. Treat every quotation in design/S15_pillars-ontology-epistemology-
+  methodology.md and design/S9_non-collapse-table.md as candidate-verified pending an I2+ check.
+
+superseded_by: null
+notes: |
+  related_claims (per-principle line-ref breakdown, cross-referenced against
+  design/S9_non-collapse-table.md and design/S15_pillars-ontology-epistemology-methodology.md):
+    - Disclosure challenge sentence: lines 43-46
+    - Definition 1 (pre-subjective constraint structure) + realist minimum: lines 159-171
+    - Definition 2 (Possession-Constitution Collapse): lines 247-249 -> NC-65
+    - RA = OA(W;PiA) formalism: lines 251-269 -> NC-71
+    - Principle 1 (Role Separation) + m(A) != rho(A): lines 270-306 -> NC-66, Table 1 crosswalk
+    - Table 1, ten roles: lines 313-360
+    - Principle 3 (No Bare Pedigree): lines 390-396
+    - "address of responsibility... address of truth": lines 462-466 -> NC-70
+    - Definition 3 (knower fetishism): lines 540-544
+    - Principle 4 (Provenance Relevance Constraint) + Definition 4 (Residual Provenance Effect):
+      lines 567-603
+    - Principle 5 (Friction, not magic) + Verification Paradox: lines 688-751 -> NC-73
+    - Credibility vs legitimacy: lines 714-721 -> NC-67
+    - Objection 7 (unknown-unknowns): lines 795-805 -> NC-72
+    - Objection 8 (two buttons != two checks): lines 826-835 -> NC-69
+    - Objection 9 (accountability human): lines 848-851
+    - Objection 11 (equal liability to testing): lines 891-894
+    - Objection 12 (constraint != evidence-for-us): lines 904-921 -> NC-72
+    - Co-location != identity (Role Separation, general): lines 258-263, 276-279 -> NC-68
+
+  License note: CC BY 4.0, confirmed by the Zenodo deposit metadata as reported by the
+  coordinator (2026-09-04) — this card's author did not independently browse the Zenodo landing
+  page to re-confirm the license field; recorded here as coordinator-supplied, not
+  self-verified, per readout-not-truth.

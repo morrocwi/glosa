@@ -1,0 +1,112 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://glosa.example/schema/search_log.schema.json",
+  "title": "glosa search log",
+  "description": "tier: Dr (specified; independently unreviewed). Implements templates/knowledge/search_log.yaml (S8) with the field renamed `search_mode` (this task's own instruction, resolving the name collision S14_literature-review-system.md §12 open-question-1 flagged between this file's search-episode label and FOUNDATION_v0.5.md §7.8's verification-route `review_mode` -- two different axes, now two distinct field names). Forbidden claim FC-S8-1: labeling a targeted/scoping/rapid search a 'systematic review'. Namespace https://glosa.example/ is a placeholder.",
+  "type": "object",
+  "required": ["id", "claim_or_hypothesis_ref", "search_mode", "frozen_scope", "queries", "sources_found", "summary_disclaimer"],
+  "additionalProperties": true,
+  "properties": {
+    "id": { "type": "string", "pattern": "^search-[a-z0-9-]+-[0-9]{3}$" },
+    "claim_or_hypothesis_ref": { "type": "string", "minLength": 1 },
+    "search_mode": { "$ref": "common.defs.json#/definitions/search_mode" },
+    "frozen_scope": {
+      "description": "Frozen BEFORE sources_found is populated -- prevents post-hoc query tuning toward a wanted answer.",
+      "type": "object",
+      "properties": {
+        "hypothesis_or_falsifier": { "type": "string" },
+        "question_type": { "enum": ["mechanism", "effect", "diagnosis", "prediction", "implementation", "experience", "law_policy", "descriptive_baseline"] },
+        "concepts_synonyms_vocabulary": { "type": "array", "items": { "type": "string" } },
+        "inclusion_exclusion_rules": { "type": "string" },
+        "time_window": { "type": "string" },
+        "language_strategy": { "type": "string" },
+        "global_sources": { "type": "array", "items": { "type": "string" } },
+        "local_context_sources": { "type": "array", "items": { "type": "string" } },
+        "search_date": { "type": "string" },
+        "stopping_rule": { "type": "string" },
+        "conflicts_of_interest": { "type": "string" },
+        "access_limits": { "type": "string" }
+      }
+    },
+    "queries": {
+      "type": "object",
+      "properties": {
+        "support": { "type": "array", "items": { "type": "string" } },
+        "challenge": {
+          "description": "A separate query family from support -- never just 'not <support query>'.",
+          "type": "array", "items": { "type": "string" }
+        }
+      }
+    },
+    "sources_found": { "type": "array", "items": { "type": "string" } },
+    "prisma_counts": {
+      "description": "REQUIRED (fully populated) only when search_mode == SYSTEMATIC_REVIEW; null otherwise.",
+      "type": ["object", "null"],
+      "properties": {
+        "records_identified": { "type": ["integer", "null"] },
+        "records_screened": { "type": ["integer", "null"] },
+        "records_excluded": { "type": ["integer", "null"] },
+        "full_text_assessed": { "type": ["integer", "null"] },
+        "studies_included": { "type": ["integer", "null"] },
+        "independent_screener_signoff": { "type": ["string", "null"] }
+      }
+    },
+    "global_track": {
+      "type": "object",
+      "properties": { "summary": { "type": "string" }, "strength_note": { "type": "string" } }
+    },
+    "local_track": {
+      "type": "object",
+      "properties": {
+        "summary": { "type": "string" },
+        "result": {
+          "description": "LOCAL_EVIDENCE_NOT_FOUND != NO_LOCAL_EVIDENCE_EXISTS -- never collapse these.",
+          "enum": ["FOUND", "LOCAL_EVIDENCE_NOT_FOUND", "NOT_SEARCHED"]
+        }
+      }
+    },
+    "transfer_verdict": {
+      "type": ["string", "null"],
+      "enum": ["TRANSFERS_DIRECTLY", "TRANSFERS_WITH_ADAPTATION", "DOES_NOT_TRANSFER", "UNASSESSED", null]
+    },
+    "field_observation": {
+      "type": "object",
+      "properties": {
+        "observer": { "type": ["string", "null"] },
+        "observation_method": { "type": ["string", "null"] },
+        "observed_at": { "type": ["string", "null"] },
+        "location_or_context": { "type": ["string", "null"] }
+      }
+    },
+    "summary_disclaimer": { "type": "string", "minLength": 1 }
+  },
+  "allOf": [
+    {
+      "description": "FC-S8-1 hard block: search_mode SYSTEMATIC_REVIEW requires prisma_counts fully populated (non-null object with a screener signoff).",
+      "if": { "properties": { "search_mode": { "const": "SYSTEMATIC_REVIEW" } } },
+      "then": {
+        "required": ["prisma_counts"],
+        "properties": {
+          "prisma_counts": {
+            "type": "object",
+            "required": ["records_identified", "records_screened", "studies_included", "independent_screener_signoff"],
+            "properties": { "independent_screener_signoff": { "type": "string", "minLength": 1 } }
+          }
+        }
+      }
+    },
+    {
+      "description": "field_observation is required (non-default) only for FIELD_OBSERVATION_LOG mode.",
+      "if": { "properties": { "search_mode": { "const": "FIELD_OBSERVATION_LOG" } } },
+      "then": {
+        "properties": {
+          "field_observation": {
+            "type": "object",
+            "required": ["observer", "observation_method", "observed_at"],
+            "properties": { "observer": { "type": "string", "minLength": 1 } }
+          }
+        }
+      }
+    }
+  ]
+}

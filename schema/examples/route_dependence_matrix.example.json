@@ -1,0 +1,39 @@
+{
+  "claim_ref": "GLOSA-CC-20260904-0001",
+  "acceptance_criteria_ref": "reviews/routes/GLOSA-CC-20260904-0001/ACCEPTANCE_CRITERIA.md",
+  "routes": [
+    {
+      "route_id": "R1", "vendor": "anthropic", "model": "claude-sonnet-5-1",
+      "prompt_ancestry": "packet-v1", "operator": "founder", "role": "Falsifier",
+      "evidence_base": "claim card only", "external_anchor": null, "shared_with": [],
+      "independence_level": "I2",
+      "review_report_ref": "reviews/routes/GLOSA-CC-20260904-0001/R1/review_report.yaml"
+    },
+    {
+      "route_id": "R2", "vendor": "openai", "model": "gpt-5.1",
+      "prompt_ancestry": "packet-v1", "operator": "founder", "role": "HostileReviewer",
+      "evidence_base": "claim card only", "external_anchor": null, "shared_with": [],
+      "independence_level": "I3",
+      "review_report_ref": "reviews/routes/GLOSA-CC-20260904-0001/R2/review_report.yaml"
+    },
+    {
+      "route_id": "R3", "vendor": "google", "model": "gemini-3-pro",
+      "prompt_ancestry": "packet-v1", "operator": "founder", "role": "SourceAuditor",
+      "evidence_base": "claim card only", "external_anchor": null, "shared_with": [],
+      "independence_level": "I3",
+      "review_report_ref": "reviews/routes/GLOSA-CC-20260904-0001/R3/review_report.yaml"
+    }
+  ],
+  "highest_independence_level_reached": "I3",
+  "local_model_attempted": false,
+  "operator_decorrelation_control": {
+    "acceptance_criteria_frozen_before_first_route": true,
+    "route_identity_blinded_for_synthesis": true,
+    "presentation_order_randomized": true,
+    "query_stop_rule_respected": true
+  },
+  "geographic_distribution_audit_applied": null,
+  "disagreement_ledger_refs": [],
+  "resulting_disclaimers": ["D-SAME-VENDOR"],
+  "notes": "R1 shares no vendor with R2/R3; flagged D-SAME-VENDOR conservatively pending a fuller Hostile Reviewer pass on shared_with."
+}

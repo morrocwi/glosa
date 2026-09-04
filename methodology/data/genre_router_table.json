@@ -1,0 +1,395 @@
+{
+  "_meta": {
+    "tier": "Dr (specified; independently unreviewed)",
+    "one_fact_one_home": "Field names (genre, venue_track, companion_of, claim_card.*) are defined only in schema/*.schema.json; this file references them.",
+    "source": [
+      "design/FOUNDATION_v0.5.md §6 (Genre router, 9-row table + track requirements)",
+      "design/FOUNDATION_v0.5.md §6.4 (mandatory gates threaded through every genre)",
+      "cpg_research_journal/research/rigour-without-infrastructure/design/S11_research-structure-dags.md §10 (Thai TCI distinction, Dr, unverified against a live TCI journal)"
+    ],
+    "note_thai_tci": "S11 §10 is explicitly Dr — a designer's synthesis of general Thai academic convention, NOT verified against a live TCI journal's own author guidelines. Before gating an actual submission, fetch and cite the specific target journal's own guidelines.",
+    "generated": "2026-09-04"
+  },
+  "universal_floor_disclaimers": [
+    "D-STANDPOINT",
+    "D-SCOPE",
+    "D-NONCLAIM",
+    "D-AIFILL",
+    "D-TIER",
+    "D-LEGAL-NEQ-EPISTEMIC",
+    "D-NO-VERTICAL-AUTHORITY"
+  ],
+  "universal_gates": [
+    "review_report.independence_class >= I3 on file, OR the bounded I2+I4 exception (D-SAME-VENDOR emitted, independent_check.expires_at <= 90 days)",
+    "every citation reachable from the paper at citation_card.status == VERIFIED",
+    "origin_blackbox_ref populated and the Blackbox Note appendix present",
+    "related-work section routes through design/S13_neighbour-table.md's format (same/different/cited per neighbour), fed by search_log + citation cards",
+    "produced_by / responsible visible per claim, not just at document level"
+  ],
+  "genres": [
+    {
+      "id": "conceptual",
+      "name_en": "Conceptual",
+      "name_th": "บทความวิชาการ (แนวคิด)",
+      "structure": [
+        "Phenomenon",
+        "Existing explanations",
+        "Precise inadequacy",
+        "Rival concepts (neighbour table)",
+        "Mechanism",
+        "Boundary",
+        "Propositions",
+        "Self-application"
+      ],
+      "imrad": false,
+      "claim_ceiling": "Dr on propositions",
+      "mandatory_disclaimers": [
+        "D-STANDPOINT",
+        "D-SCOPE",
+        "D-NONCLAIM",
+        "D-AIFILL",
+        "D-TIER",
+        "D-LEGAL-NEQ-EPISTEMIC",
+        "D-NO-VERTICAL-AUTHORITY",
+        "D-COMPARISON",
+        "D-NONCLAIM"
+      ],
+      "blackbox_note_appendix_required": true,
+      "preserved_experience_field": "Problem reconstruction",
+      "sections": [
+        "Introduction",
+        "Existing explanations",
+        "Precise inadequacy",
+        "Rival concepts / neighbour table",
+        "Mechanism",
+        "Boundary",
+        "Propositions",
+        "Self-application",
+        "Problem reconstruction (preserved-experience)"
+      ]
+    },
+    {
+      "id": "empirical_quant",
+      "name_en": "Empirical (quantitative)",
+      "name_th": "บทความวิจัย (เชิงปริมาณ)",
+      "structure": [
+        "Introduction",
+        "Methods (frozen prereg variant)",
+        "Results",
+        "Discussion"
+      ],
+      "imrad": true,
+      "claim_ceiling": "[result] only if CI excludes null, else [directional]",
+      "mandatory_disclaimers": [
+        "D-STANDPOINT",
+        "D-SCOPE",
+        "D-NONCLAIM",
+        "D-AIFILL",
+        "D-TIER",
+        "D-LEGAL-NEQ-EPISTEMIC",
+        "D-NO-VERTICAL-AUTHORITY",
+        "D-SCOPE"
+      ],
+      "blackbox_note_appendix_required": true,
+      "preserved_experience_field": "Context of discovery",
+      "sections": [
+        "Introduction",
+        "Context of discovery (subsection under Introduction)",
+        "Methods",
+        "Results",
+        "Discussion"
+      ]
+    },
+    {
+      "id": "empirical_qual_practice",
+      "name_en": "Empirical (qualitative/practice)",
+      "name_th": "บทความวิจัย (เชิงคุณภาพ/ปฏิบัติ)",
+      "structure": [
+        "Context/Practice",
+        "Observation",
+        "Reflection",
+        "Boundary"
+      ],
+      "imrad": "partial",
+      "claim_ceiling": "K1 by default regardless of tier",
+      "mandatory_disclaimers": [
+        "D-STANDPOINT",
+        "D-SCOPE",
+        "D-NONCLAIM",
+        "D-AIFILL",
+        "D-TIER",
+        "D-LEGAL-NEQ-EPISTEMIC",
+        "D-NO-VERTICAL-AUTHORITY",
+        "D-STANDPOINT",
+        "D-INDEPENDENCE"
+      ],
+      "blackbox_note_appendix_required": true,
+      "preserved_experience_field": "Practice context",
+      "sections": [
+        "Practice context (first-class section, not a footnote)",
+        "Observation",
+        "Reflection",
+        "Boundary"
+      ]
+    },
+    {
+      "id": "case_study",
+      "name_en": "Case study",
+      "name_th": "กรณีศึกษา",
+      "structure": [
+        "Case selection/boundary",
+        "Data sources",
+        "Timeline",
+        "Mechanism",
+        "Explicit non-generalization"
+      ],
+      "imrad": "partial",
+      "claim_ceiling": "Dr interpretive; underlying cards may be finite_diagnostic",
+      "mandatory_disclaimers": [
+        "D-STANDPOINT",
+        "D-SCOPE",
+        "D-NONCLAIM",
+        "D-AIFILL",
+        "D-TIER",
+        "D-LEGAL-NEQ-EPISTEMIC",
+        "D-NO-VERTICAL-AUTHORITY",
+        "D-NO-NEGATIVE-UNVERIFIED-PERSON"
+      ],
+      "blackbox_note_appendix_required": true,
+      "preserved_experience_field": "Positionality",
+      "sections": [
+        "Case selection / boundary",
+        "Data sources",
+        "Timeline",
+        "Mechanism",
+        "Explicit non-generalization",
+        "Positionality"
+      ]
+    },
+    {
+      "id": "formal_proof",
+      "name_en": "Formal proof",
+      "name_th": "บทพิสูจน์รูปนัย",
+      "structure": [
+        "Definitions/Axioms",
+        "Lemmas",
+        "Theorems",
+        "Mechanical check",
+        "Formalization-fidelity review (FID, class-4)",
+        "Claim Matrix"
+      ],
+      "imrad": false,
+      "claim_ceiling": "Th_coqc only with independent_check.status == PASSED; else Open, never Dr",
+      "mandatory_disclaimers": [
+        "D-STANDPOINT",
+        "D-SCOPE",
+        "D-NONCLAIM",
+        "D-AIFILL",
+        "D-TIER",
+        "D-LEGAL-NEQ-EPISTEMIC",
+        "D-NO-VERTICAL-AUTHORITY"
+      ],
+      "blackbox_note_appendix_required": true,
+      "preserved_experience_field": "Motivating problem",
+      "sections": [
+        "Definitions / Axioms",
+        "Lemmas",
+        "Theorems",
+        "Mechanical check",
+        "Formalization-fidelity review",
+        "Claim Matrix",
+        "Motivating problem"
+      ]
+    },
+    {
+      "id": "systematic_review",
+      "name_en": "Systematic review",
+      "name_th": "การทบทวนวรรณกรรมอย่างเป็นระบบ",
+      "structure": [
+        "PRISMA-2020 flow",
+        "Fallback labels (SYSTEMATIC_REVIEW | TARGETED_SEARCH | SCOPING_SEARCH | RAPID_EVIDENCE_CHALLENGE | FIELD_OBSERVATION_LOG)"
+      ],
+      "imrad": "partial",
+      "claim_ceiling": "Ceiling bounded by weakest included source's tier",
+      "mandatory_disclaimers": [
+        "D-STANDPOINT",
+        "D-SCOPE",
+        "D-NONCLAIM",
+        "D-AIFILL",
+        "D-TIER",
+        "D-LEGAL-NEQ-EPISTEMIC",
+        "D-NO-VERTICAL-AUTHORITY"
+      ],
+      "blackbox_note_appendix_required": true,
+      "preserved_experience_field": "Why this review",
+      "sections": [
+        "PRISMA-2020 flow diagram",
+        "Search protocol (search_log.review_mode label, hard block on mislabeling: FC-S8-1)",
+        "Included/excluded sources",
+        "Synthesis",
+        "Why this review"
+      ]
+    },
+    {
+      "id": "design_science",
+      "name_en": "Design science",
+      "name_th": "วิทยาการเชิงออกแบบ",
+      "structure": [
+        "Problem",
+        "Objectives",
+        "Design",
+        "Demonstration",
+        "Evaluation",
+        "Communication"
+      ],
+      "imrad": false,
+      "claim_ceiling": "finite_diagnostic on \"it runs\"; Dr on \"it solves the problem well\"",
+      "mandatory_disclaimers": [
+        "D-STANDPOINT",
+        "D-SCOPE",
+        "D-NONCLAIM",
+        "D-AIFILL",
+        "D-TIER",
+        "D-LEGAL-NEQ-EPISTEMIC",
+        "D-NO-VERTICAL-AUTHORITY"
+      ],
+      "blackbox_note_appendix_required": true,
+      "preserved_experience_field": "Problem as lived",
+      "sections": [
+        "Problem",
+        "Objectives",
+        "Design",
+        "Demonstration",
+        "Evaluation",
+        "Communication",
+        "Problem as lived"
+      ]
+    },
+    {
+      "id": "archival",
+      "name_en": "Archival",
+      "name_th": "งานจดหมายเหตุ/บันทึกประวัติศาสตร์",
+      "structure": [
+        "Record inventory",
+        "Retrievability statement",
+        "Translation status",
+        "Non-affiliation statement"
+      ],
+      "imrad": false,
+      "claim_ceiling": "finite_diagnostic \"record exists/reads X\"; Dr interpretive gloss kept separate",
+      "mandatory_disclaimers": [
+        "D-STANDPOINT",
+        "D-SCOPE",
+        "D-NONCLAIM",
+        "D-AIFILL",
+        "D-TIER",
+        "D-LEGAL-NEQ-EPISTEMIC",
+        "D-NO-VERTICAL-AUTHORITY",
+        "D-TRANSLATION"
+      ],
+      "blackbox_note_appendix_required": true,
+      "preserved_experience_field": "Why this record matters",
+      "sections": [
+        "Record inventory",
+        "Retrievability statement",
+        "Translation status",
+        "Non-affiliation statement",
+        "Why this record matters"
+      ]
+    },
+    {
+      "id": "position_reply",
+      "name_en": "Position / reply",
+      "name_th": "บทความโต้ตอบ/แสดงจุดยืน",
+      "structure": [
+        "Target claim",
+        "Disagreement/addition",
+        "Argument",
+        "Scope of reply"
+      ],
+      "imrad": false,
+      "claim_ceiling": "Dr; ceiling capped by the target claim's own independence class (Bounded-Judge Law)",
+      "mandatory_disclaimers": [
+        "D-STANDPOINT",
+        "D-SCOPE",
+        "D-NONCLAIM",
+        "D-AIFILL",
+        "D-TIER",
+        "D-LEGAL-NEQ-EPISTEMIC",
+        "D-NO-VERTICAL-AUTHORITY"
+      ],
+      "blackbox_note_appendix_required": true,
+      "preserved_experience_field": "What prompted this reply",
+      "sections": [
+        "Target claim",
+        "Disagreement / addition",
+        "Argument",
+        "Scope of reply",
+        "What prompted this reply"
+      ]
+    }
+  ],
+  "venue_track": {
+    "international": {
+      "requirements": "no additional section/format requirements beyond the genre's own column"
+    },
+    "thai_tci": {
+      "applies_to": "any of the 9 genre rows when venue_track == thai_tci",
+      "tier": "Dr — synthesis of general Thai academic convention, not verified against a live TCI journal (see _meta.note_thai_tci)",
+      "byline_and_sections": "Thai-language section labels required",
+      "conceptual_track_academic_article_baak_kaam_wichaakaan": {
+        "thai_label": "บทความวิชาการ",
+        "genre_mapping": [
+          "conceptual",
+          "systematic_review",
+          "position_reply"
+        ],
+        "typical_sections_th_en": [
+          "บทนำ (Introduction)",
+          "เนื้อหา/การทบทวนวรรณกรรมและการวิเคราะห์ (Body — literature synthesis and analysis)",
+          "บทสรุป (Conclusion)",
+          "เอกสารอ้างอิง (References)"
+        ],
+        "ethics_committee_disclosure": "Typically not required — no human/animal subjects, no original data collection",
+        "mismatch_failure_mode": "Submitting a literature synthesis labeled บทความวิจัย gets rejected for genre mismatch, not quality — reviewers expect a Methods/Results section that does not exist"
+      },
+      "empirical_track_research_article_baak_kaam_wicai": {
+        "thai_label": "บทความวิจัย",
+        "genre_mapping": [
+          "empirical_quant",
+          "empirical_qual_practice",
+          "case_study"
+        ],
+        "typical_sections_th_en": [
+          "บทนำ (Introduction)",
+          "ทบทวนวรรณกรรม (Literature review)",
+          "วิธีดำเนินการวิจัย (Methods)",
+          "ผลการวิจัย (Results)",
+          "อภิปรายผล (Discussion)",
+          "สรุปและข้อเสนอแนะ (Conclusion/Recommendations)",
+          "เอกสารอ้างอิง (References)"
+        ],
+        "ethics_committee_disclosure": "Typically required when human participants are involved — matches claim_type == HUMAN_PARTICIPANT gate; journal usually asks for an ethics-committee approval number",
+        "mismatch_failure_mode": "Submitting original empirical work labeled บทความวิชาการ risks the paper being read as making no original-findings claim, so the empirical contribution and required ethics disclosure may be overlooked"
+      },
+      "tci_reviewer_expectation_checklist": [
+        "author affiliations stated",
+        "Thai abstract present",
+        "Thai keyword set present",
+        "section labels in Thai matching the applicable track above"
+      ],
+      "ceiling_and_disclaimer_rule": "venue_track adds section/format/disclosure requirements only — it never raises or lowers the genre's own claim ceiling or mandatory-disclaimer set",
+      "open_founder_question": "Which specific TCI-tier journal(s), if any, RWI or its companion papers actually target — author guidelines differ journal-to-journal (S11 §10, not resolved unilaterally)"
+    },
+    "none": {
+      "requirements": "legal for K0 work never intended for any venue; no venue-format obligations apply"
+    }
+  },
+  "companion_of": {
+    "applies_to": "any genre when companion_of is non-null",
+    "rule": "the companion artifact inherits its target's structure and never exceeds the target's own tier merely by rewriting",
+    "mandatory_disclaimer": "D-TRANSLATION",
+    "translation_rule": "Thai content is rewritten, not translated verbatim, per claim_card.statement.translation.translation_status"
+  },
+  "genre_routing_procedure_ref": "design/FOUNDATION_v0.5.md §6.3b — 9-step ordered decision procedure, each question computable from a named claim_card field, terminating in one of the 9 genre ids above or MIXED_GENRE"
+}
