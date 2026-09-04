@@ -95,7 +95,7 @@
    "22301886": "ok"
   },
   "failed": {
-   "17280546": "400 {\"status\": 400, \"message\": \"A validation error occurred.\", \"errors\": [{\"field\": \"metadata.dates\", \"messages\": [\"Inva"
+   "17280546": "fixed 2026-09-04 via API (dates.start/end added; isPartOf hubs linked; republished)"
   }
  },
  "he": {
@@ -143,7 +143,7 @@
    "22302161": "ok"
   },
   "failed": {
-   "17280895": "400 {\"status\": 400, \"message\": \"A validation error occurred.\", \"errors\": [{\"field\": \"metadata.dates\", \"messages\": [\"Inva"
+   "17280895": "fixed 2026-09-04 via API (dates.start/end added; isPartOf hubs linked; republished)"
   }
  },
  "ph": {
@@ -438,7 +438,7 @@
    "22301886": "ok"
   },
   "failed": {
-   "17280546": "400 {\"status\": 400, \"message\": \"A validation error occurred.\", \"errors\": [{\"field\": \"metadata.dates\", \"messages\": [\"Inva"
+   "17280546": "fixed 2026-09-04 via API (dates.start/end added; isPartOf hubs linked; republished)"
   }
  },
  "islam": {
@@ -535,7 +535,7 @@
    "22301886": "ok"
   },
   "failed": {
-   "17280895": "400 {\"status\": 400, \"message\": \"A validation error occurred.\", \"errors\": [{\"field\": \"metadata.dates\", \"messages\": [\"Inva"
+   "17280895": "fixed 2026-09-04 via API (dates.start/end added; isPartOf hubs linked; republished)"
   }
  }
 }
