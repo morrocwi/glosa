@@ -909,7 +909,9 @@
   "kw": [],
   "desc": " What must reality minimally be if knowingand therefore expertiseare to be possible at all? This paper derives a complete architectonic chain from primordial dierence through the formation of world-class expertise, within a discrete causalinformational ontology. The argument proceeds in ve movements. First, from three postulates (distinguishability, causal closure, nite propagation speed), the telegraph equation on a nite discrete graph is shown to be the unique minimal dynamics governing all structural persistence and decay. Second, the Causal Body Framework and its No-Go theorems are used to derive the Agency-Horizon Theorem (Th-BH): every agent satisfying the framework's axioms exhibits the ve structural properties of an information horizonevent horizon, privacy, emission constraint, partial self-access, and information persistence. This result is a formal theorem, not a metaphor. Third, experience and knowerhood are shown to arise exclusively from the dynamic coupling between the information-horizon agent (mind-core) and embodied brain-body process; neither component alone suces. Fourth, epistemic genesis is derived from the structural impossibility of zero total observation error (εtot > 0 for every nite knower), yielding a formal chain from selection through error-correction to legitimate knowledge. Fifth, expertise is characterized as the mature regime of this coupled system: high persistence, ecient correction, and expanding generative capacity under world-resistance.",
   "cluster": "ep",
-  "tags": []
+  "tags": [
+   "aihp"
+  ]
  },
  {
   "id": 19537197,
@@ -984,7 +986,9 @@
   "kw": [],
   "desc": " Both Kantian philosophy and Buddhist thought reject the possibility of epistemic immediacy. Yet contemporary comparative philosophy still lacks a stable account of how normativity survives once cognition is fully acknowledged to be conditioned. If all cognition is mediated, and if agency does not originate from an unconditioned subject, why are some frameworks better than others? This article develops a constraint-first epistemology to address this problem. I argue that finite cognition entails a non-zero floor of mediation—not as a metaphysical essence, but as a structural condition of corrigible inquiry derivable from three minimal premises concerning distinguishability, causal connectivity, and finite propagation speed. From this, normativity is derived as constitutive rather than optional: without responsiveness to constraint, inquiry collapses. The derivation meets the Madhyamaka anti-reification challenge directly by grounding normativity in relational invariants rather than intrinsic natures. Buddhist dependent origination complements this picture by grounding agency in conditioned yet revisable processes rather than in a substantial self. Engaging directly with Evan Thompson, Jay Garfield, and Mark Siderits, I argue that each captures a crucial dimension of the problem— transformability, anti-reification, and reduction of self, respectively—but none fully accounts for the relation between irreducible mediation and structural normativity. Against Thompson, I argue tha",
   "cluster": "ep",
-  "tags": []
+  "tags": [
+   "aihp"
+  ]
  },
  {
   "id": 19183837,
