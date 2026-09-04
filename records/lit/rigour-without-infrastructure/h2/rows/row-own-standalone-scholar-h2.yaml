@@ -1,0 +1,19 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: H2
+source_label: 'The Standalone Scholar: A Dual-Track Architecture for AI-Native Scholarship (Lahtee, Zenodo
+  10.5281/zenodo.22163849)'
+how_it_sees_the_problem: Sees legitimacy and truth as two different axes, and institutional conversion
+  (journal review, local epistemic participation) as one specific historical route from provisional asset
+  to stress-tested knowledge, not the only conceivable one.
+what_it_separates: Separates production criticality from scholarly-credit criticality -- a result can
+  be operationally sound without yet carrying institutional credit.
+what_it_assumes: Assumes independent human friction is still required somewhere in the pipeline for stress-testing;
+  does not claim a claim card alone, with no independent friction at all, suffices.
+stance: UNDETERMINED
+what_it_would_say_against_us: Would ask whether H2's 'claim carries rigour in its own structure' still
+  needs *some* independent-friction step (even if not institutional) to reach the stress-tested state
+  this paper describes.
+citation_card: cite-own-standalone-scholar-h2-005
+verified:
+  metadata_verified: true
+  claim_match_verified: false

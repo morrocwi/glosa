@@ -8,9 +8,9 @@
  "verdict": {
   "metadata_matches": true,
   "passage_plausible": true,
-  "claim_match": false,
+  "claim_match": true,
   "bearing": "CONTEXT_ONLY",
-  "reason": "Metadata and quoted passage match the fetched title/byline/date/excerpt. The passage plausibly supports a general claim about Thai Open Science access. However H2 is only named, not stated, so the source’s bearing on the actual hypothesis cannot be verified from the provided material.",
+  "reason": "Metadata and fetched passage align with the card. The excerpt discusses Thai Open Science, public access, and opening research processes, but does not bear directly on whether rigour can be carried by a claim card rather than institutional credentialing. At most it is background context.",
   "passage_mechanical": "verbatim prefix found in fetched open text"
  },
  "date": "2026-09-04"

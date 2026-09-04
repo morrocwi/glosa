@@ -1,0 +1,17 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: H2
+source_label: Written by AI. Still True. (Lahtee, Zenodo 10.5281/zenodo.22301202)
+how_it_sees_the_problem: Sees institutional authority as downstream of, not a source of, epistemic value;
+  names the fallacy of treating a knower's recognized status as itself carrying epistemic weight as 'knower
+  fetishism.'
+what_it_separates: Separates the possession of knowledge from the constitution of epistemic value -- the
+  same distinction H2 draws between 'who holds the claim' and 'what makes the claim rigorous.'
+what_it_assumes: Assumes provenance can still carry legitimate higher-order evidence about reliability;
+  does not claim institutions carry zero epistemic information, only that their authority is derivative.
+stance: UNDETERMINED
+what_it_would_say_against_us: Would ask what specific 'identifiable epistemic channel' H2's claim-level
+  property routes through, beyond naming institutions as 'one' mechanism.
+citation_card: cite-own-written-ai-h2-001
+verified:
+  metadata_verified: true
+  claim_match_verified: false

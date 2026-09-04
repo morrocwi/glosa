@@ -1,0 +1,51 @@
+$schema: citation_card.schema.json
+id: cite-own-standalone-scholar-h2-005
+claim_ref: H2
+identifier:
+  kind: DOI
+  value: 10.5281/zenodo.22163849
+fetch_status: FETCHED
+fetched_at: '2026-09-04'
+metadata_verified: true
+metadata_verified_by: mechanical:zenodo_api
+metadata_verified_at: '2026-09-04'
+claim_match_verified: true
+claim_match_verified_by: route:codex
+claim_match_verified_at: null
+exact_passage: '"It develops a dual-track architecture in which AI-assisted formation,
+  open preprint staging, provenance controls, and machine-constrained checks generate
+  defensible provisional assets, while independent human friction, repeat correspondence,
+  journal review, and local epistemic participation convert those assets into socially
+  stress-tested knowledge. The framework distinguishes synthetic plurality from independent
+  validation, production criticality from scholarly-credit criticality, attention
+  from uptake, legitimacy from truth."'
+page_or_locator: Zenodo record 10.5281/zenodo.22163849, description
+scope: DIRECT_QUOTATION
+evidence_tier: Dr
+independence_class: I3
+who_verified: route:codex (cross-vendor AI; abstract/metadata level, not full text)
+  -- see cite-own-standalone-scholar-h2-005.i3.json
+verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
+status: VERIFIED
+xenon_ledger_ref: null
+disclosure: 'own lineage: same author as the hypothesis (not independent evidence;
+  listed so the world literature is collided with it, per founder instruction BBL-098)
+  | I3 route (codex) judged from fetched metadata/abstract + the card''s quoted passage,
+  not full text: Metadata fetch failed, so title/authors/year cannot be independently
+  matched. The quoted passage is present and coherent with the excerpt. It supports
+  H2 conceptually by separating legitimacy from truth and treating institutional/journal
+  review as one conversion mechanism alongside provenance and checks, though same-author
+  lineage limits evidential independence. | I3 route (codex) judged from fetched metadata/abstract
+  + the card''s quoted passage, not full text: Metadata does not contradict the card,
+  and the quoted passage is mechanically found in the Zenodo description/abstract.
+  The passage bears as same-author conceptual context: it separates legitimacy from
+  truth and treats institutions/review as conversion mechanisms, but it is not independent
+  evidence for H2.'
+superseded_by: null
+notes: 'Same author as H2; direct macro-grain ancestor. stance: agrees -- explicitly
+  distinguishes ''legitimacy from truth,'' i.e. legitimacy (often institutionally
+  granted) is not the same axis as truth/rigour, which is close to H2''s claim that
+  institutions are one mechanism, not the source, of rigour. language: en.'
+fetched_from_url: https://doi.org/10.5281/zenodo.22163849
+line_or_paragraph: char offset 1099 of normalized fetched text (~paragraph 1); verbatim
+  prefix match

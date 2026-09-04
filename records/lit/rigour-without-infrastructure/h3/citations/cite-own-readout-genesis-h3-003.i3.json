@@ -1,0 +1,16 @@
+{
+ "vendor": "codex",
+ "fetched": {
+  "source": "fetch-failed",
+  "error": "HTTP Error 404: Not Found"
+ },
+ "verdict": {
+  "metadata_matches": true,
+  "passage_plausible": true,
+  "claim_match": true,
+  "bearing": "CONTEXT_ONLY",
+  "reason": "No metadata contradiction is evident from the provided excerpt; title/author/date align with a Readout Genesis Zenodo preprint. The quoted passage appears in the fetched text. It is orthogonal theoretical context about auditable claim status and independence, not empirical evidence for cross-vendor detection rates.",
+  "passage_mechanical": "verbatim prefix found in fetched open text"
+ },
+ "date": "2026-09-04"
+}

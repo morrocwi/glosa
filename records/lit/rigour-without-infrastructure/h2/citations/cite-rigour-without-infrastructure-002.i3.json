@@ -13,9 +13,9 @@
  "verdict": {
   "metadata_matches": true,
   "passage_plausible": true,
-  "claim_match": false,
+  "claim_match": true,
   "bearing": "CONTEXT_ONLY",
-  "reason": "Metadata does not contradict the card, and the quoted passage is mechanically found and consistent with the title. But the substantive content of H2 is not provided, so support for the hypothesis cannot be independently confirmed from the supplied material.",
+  "reason": "Metadata aligns with fetched Crossref data, and the quoted passage is found in the fetched excerpt. The source bears on H2 only as context: it discusses trust, integrity, decentralized citizen science, and alternatives to traditional gatekeeping, but does not directly support claim-carried rigour without institutions.",
   "passage_mechanical": "verbatim prefix found in fetched open text"
  },
  "date": "2026-09-04"

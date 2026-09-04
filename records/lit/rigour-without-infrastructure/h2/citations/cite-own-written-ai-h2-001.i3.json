@@ -1,0 +1,22 @@
+{
+ "vendor": "codex",
+ "fetched": {
+  "source": "zenodo",
+  "title": "Written by AI. Still True. Knower Fetishism, Epistemic Pedigree, and the Human Face as a Bad Theory of Truth",
+  "authors": [
+   "Lahtee, Yaoharee"
+  ],
+  "year": "2026",
+  "container": "Zenodo",
+  "abstract": " Suppose a proposition survives source checking, inferential scrutiny, and independent reconstruction. You accept it. Then you learn that an artificial-intelligence system generated the draft, and your confidence falls. What, exactly, became epistemically worse? The familiar answer is that provenance can carry higher-order evidence about reliability. Correct. This paper grants that point and then asks what remains after provenance has done all the legitimate epistemic work available to it. The resulting problem is larger than AI. I argue that modern epistemology often slides from a plausible claim about the possession of knowledge—that knowing is a state or standing of a subject—to a much stronger and usually undefended claim about the constitution of epistemic value—that epistemically significant content, processes, records, or sources acquire standing only through a human or human-like knower. I call this the Possession–Constitution Collapse. Its social form is knower fetishism: the conversion of an earned relation among evidence, reliability, accountability, and inquiry into an apparently intrinsic property of the recognized knower. The paper develops a pre-subjective notion of constraint structure, stages the argument against knowledge-first epistemology, testimony, reliabilism, higher-order evidence, objective knowledge, information-theoretic epistemology, distributed cognition, and social epistemology, and proposes two constraints: provenance matters only through an ide"
+ },
+ "verdict": {
+  "metadata_matches": true,
+  "passage_plausible": true,
+  "claim_match": true,
+  "bearing": "SUPPORTS",
+  "reason": "finite_diagnostic: Metadata does not contradict title/year/first author. The quoted passage is mechanically found and coherent with the abstract. It directly supports H2 by saying institutional authority is derivative from epistemic work, not an externally conferred pedigree.",
+  "passage_mechanical": "verbatim prefix found in fetched open text"
+ },
+ "date": "2026-09-04"
+}

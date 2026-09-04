@@ -39,3 +39,7 @@ each with one owning artifact and one exit gate — full table in `P13_literatur
   check, not a self-check.
 - `glosa-publish-gate` — R4 re-runs this system's own accuracy gate independently at release time,
   never grandfathering a manifest that passed at freeze time.
+
+## Source-first citation (kernel rule 17, 2026-09-04)
+
+Never cite from memory. Open the source, record the link you read it from, the page/section, the line/paragraph, and one continuous verbatim passage — all four on the card — or leave the card at CANDIDATE. See FOUNDATION §7.8.

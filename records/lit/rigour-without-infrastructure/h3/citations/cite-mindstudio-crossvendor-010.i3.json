@@ -1,0 +1,17 @@
+{
+ "vendor": "codex",
+ "fetched": {
+  "source": "url-fetch",
+  "title": "Cross-Vendor AI Agent Review: Why Claude Should Review Codex&#39;s Code and Vice Versa | MindStudio",
+  "abstract": "Using different AI models to review each other"
+ },
+ "verdict": {
+  "metadata_matches": true,
+  "passage_plausible": true,
+  "claim_match": true,
+  "bearing": "SUPPORTS",
+  "reason": "Fetched title/abstract do not contradict the card, and the passage is mechanically found in the excerpt. The passage supports the general cross-vendor blind-spot mechanism, but only as practitioner/blog context, not controlled evidence for H3’s claim-card/Q3-Q4 detection-rate comparison.",
+  "passage_mechanical": "verbatim prefix found in fetched open text"
+ },
+ "date": "2026-09-04"
+}

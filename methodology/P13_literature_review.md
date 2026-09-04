@@ -163,3 +163,7 @@ Dr (specified; independently unreviewed). None of the six stages' gates has been
 validator or tested against a real hypothesis end-to-end; the worked cat-question example in
 `S14` §10 demonstrates the pipeline honestly *failing* (accuracy and diversity gates both `FAIL`,
 by design), not a completed real run.
+
+## Source-first citation (kernel rule 17, 2026-09-04)
+
+Never cite from memory. Open the source, record the link you read it from, the page/section, the line/paragraph, and one continuous verbatim passage — all four on the card — or leave the card at CANDIDATE. See FOUNDATION §7.8.

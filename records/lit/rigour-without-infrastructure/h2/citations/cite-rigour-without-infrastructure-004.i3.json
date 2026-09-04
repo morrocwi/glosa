@@ -8,10 +8,10 @@
  "verdict": {
   "metadata_matches": true,
   "passage_plausible": true,
-  "claim_match": false,
-  "bearing": "CONTEXT_ONLY",
-  "reason": "Metadata aligns with the fetched title/date/author context. The quoted comments are topically plausible for an article about credentialism and unaffiliated authors, but the verbatim passage check failed, so the direct-quotation claim is not evidenced here.",
-  "passage_mechanical": "quoted passage NOT found verbatim in fetched open text"
+  "claim_match": true,
+  "bearing": "CHALLENGES",
+  "reason": "Title/metadata match the card, and the quoted passage is mechanically found in the fetched comment text. The passage argues formal publishing should require hoops, caution, affiliation/supervision, and possible credentialing, which directly challenges H2’s claim that rigor can be carried by a claim’s own recorded structure without institutional credentials.",
+  "passage_mechanical": "verbatim prefix found in fetched open text"
  },
  "date": "2026-09-04"
 }

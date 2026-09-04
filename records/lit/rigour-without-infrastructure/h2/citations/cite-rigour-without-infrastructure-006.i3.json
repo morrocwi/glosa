@@ -18,9 +18,9 @@
  "verdict": {
   "metadata_matches": true,
   "passage_plausible": true,
-  "claim_match": false,
+  "claim_match": true,
   "bearing": "CONTEXT_ONLY",
-  "reason": "Metadata does not contradict the card, and the quoted passage is present/plausible in the fetched abstract. But H2 is not described beyond its label, so I cannot verify that this source bears on the hypothesis as claimed.",
+  "reason": "Metadata and quoted abstract match the fetched Crossref/text material. The passage is about open science access, institutionalization, funding, leadership, and research infrastructure in Africa, so it is relevant context for institutional mechanisms around scientific credibility/rigour, but it does not directly support or challenge H2.",
   "passage_mechanical": "verbatim prefix found in fetched open text"
  },
  "date": "2026-09-04"

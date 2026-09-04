@@ -400,6 +400,17 @@ class ReviewReportTest(unittest.TestCase):
 
 
 class CitationCardTest(unittest.TestCase):
+    def test_rule17_citation_from_memory_fails(self):
+        """Founder ruling 2026-09-04 (BBL-2026-09-04-100): a fetched citation without the link it
+        was read from + page + line + verbatim passage cannot stand above CANDIDATE."""
+        c = load_example("citation_card.example.json")
+        c["fetch_status"] = "FETCHED"; c["status"] = "VERIFIED"; c.pop("fetched_from_url", None)
+        res = k.validate_citation_card(c)
+        self.assertFalse(res["ok"]); self.assertTrue(any("rule17(" in e for e in res["errors"]), res["errors"])
+        c["status"] = "CANDIDATE"
+        res = k.validate_citation_card(c)
+        self.assertTrue(res["ok"], res["errors"]); self.assertTrue(any("rule17w" in w for w in res["warnings"]))
+
     def test_valid_citation_card_passes(self):
         citation = load_example("citation_card.example.json")
         res = k.validate_citation_card(citation)

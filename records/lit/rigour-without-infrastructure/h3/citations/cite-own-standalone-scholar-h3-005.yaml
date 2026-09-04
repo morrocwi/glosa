@@ -1,0 +1,47 @@
+$schema: citation_card.schema.json
+id: cite-own-standalone-scholar-h3-005
+claim_ref: H3
+identifier:
+  kind: DOI
+  value: 10.5281/zenodo.22163849
+fetch_status: FETCHED
+fetched_at: '2026-09-04'
+metadata_verified: true
+metadata_verified_by: mechanical:zenodo_api
+metadata_verified_at: '2026-09-04'
+claim_match_verified: true
+claim_match_verified_by: route:codex
+claim_match_verified_at: null
+exact_passage: '"It develops a dual-track architecture in which AI-assisted formation,
+  open preprint staging, provenance controls, and machine-constrained checks generate
+  defensible provisional assets, while independent human friction, repeat correspondence,
+  journal review, and local epistemic participation convert those assets into socially
+  stress-tested knowledge. The framework distinguishes synthetic plurality from independent
+  validation, production criticality from scholarly-credit criticality, attention
+  from uptake, legitimacy from truth."'
+page_or_locator: Zenodo record 10.5281/zenodo.22163849, description
+scope: DIRECT_QUOTATION
+evidence_tier: Dr
+independence_class: I3
+who_verified: route:codex (cross-vendor AI; abstract/metadata level, not full text)
+  -- see cite-own-standalone-scholar-h3-005.i3.json
+verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
+status: VERIFIED
+xenon_ledger_ref: null
+disclosure: 'own lineage: same author as the hypothesis (not independent evidence;
+  listed so the world literature is collided with it, per founder instruction BBL-098)
+  | I3 route (codex) judged from fetched metadata/abstract + the card''s quoted passage,
+  not full text: Fetched excerpt names The Standalone Scholar, Yaoharee/Lahtee author,
+  2026, and contains the quoted passage. The passage plausibly supports the card''s
+  contextual lineage claim about synthetic plurality versus independent validation,
+  but it does not provide empirical evidence that cross-vendor checking improves detection
+  rates.'
+superseded_by: null
+notes: 'Same author as H3; direct macro-grain ancestor. stance: agrees -- explicitly
+  distinguishes ''synthetic plurality from independent validation,'' which is close
+  to H3''s exact mechanism: many same-vendor outputs are synthetic plurality, not
+  independent validation, while a cross-vendor route is closer to genuine independence.
+  language: en.'
+fetched_from_url: https://doi.org/10.5281/zenodo.22163849
+line_or_paragraph: char offset 1099 of normalized fetched text (~paragraph 1); verbatim
+  prefix match

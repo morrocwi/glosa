@@ -1,0 +1,17 @@
+{
+ "vendor": "codex",
+ "fetched": {
+  "source": "url-fetch",
+  "title": "2026/13 &#8220;What is Shaping Artificial Intelligence (AI) Governance Policies in Southeast Asia?&#8221; by Kristina Fong &#8211; ISEAS &#8211; Yusof Ishak Institute",
+  "abstract": "Over the past couple of years, countries in Southeast Asia, as well as ASEAN as a whole, have made great efforts to formulate guardrails around Artificial Intelligence (AI) design, deployment and usage."
+ },
+ "verdict": {
+  "metadata_matches": true,
+  "passage_plausible": true,
+  "claim_match": true,
+  "bearing": "CONTEXT_ONLY",
+  "reason": "Metadata does not contradict the card, and the quoted passage is mechanically found and plausible for the article. But the passage concerns Southeast Asian AI governance/DPA capacity, not cross-vendor AI checking or detection of undisclosed AI-fill/assumptions, so it does not bear on H3 as claimed.",
+  "passage_mechanical": "verbatim prefix found in fetched open text"
+ },
+ "date": "2026-09-04"
+}

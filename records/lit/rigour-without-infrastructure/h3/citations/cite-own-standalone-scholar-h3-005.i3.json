@@ -1,0 +1,16 @@
+{
+ "vendor": "codex",
+ "fetched": {
+  "source": "fetch-failed",
+  "error": "HTTP Error 404: Not Found"
+ },
+ "verdict": {
+  "metadata_matches": true,
+  "passage_plausible": true,
+  "claim_match": true,
+  "bearing": "CONTEXT_ONLY",
+  "reason": "Fetched excerpt names The Standalone Scholar, Yaoharee/Lahtee author, 2026, and contains the quoted passage. The passage plausibly supports the card's contextual lineage claim about synthetic plurality versus independent validation, but it does not provide empirical evidence that cross-vendor checking improves detection rates.",
+  "passage_mechanical": "verbatim prefix found in fetched open text"
+ },
+ "date": "2026-09-04"
+}

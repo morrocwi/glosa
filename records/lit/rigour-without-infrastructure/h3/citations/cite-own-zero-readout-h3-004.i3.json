@@ -1,0 +1,16 @@
+{
+ "vendor": "codex",
+ "fetched": {
+  "source": "fetch-failed",
+  "error": "HTTP Error 404: Not Found"
+ },
+ "verdict": {
+  "metadata_matches": true,
+  "passage_plausible": true,
+  "claim_match": true,
+  "bearing": "CONTEXT_ONLY",
+  "reason": "Passage appears in the fetched excerpt and fits the abstract. The source concerns machine-checked verification, not cross-vendor AI checking, so it does not support H3 empirically; it is relevant only as contextual lineage, matching the card’s CONTEXT_ONLY scope.",
+  "passage_mechanical": "verbatim prefix found in fetched open text"
+ },
+ "date": "2026-09-04"
+}

@@ -1,0 +1,16 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: H2
+source_label: What a Zero Readout Certifies (Lahtee, Zenodo 10.5281/zenodo.21665100)
+how_it_sees_the_problem: Sees a zero output in a retained-difference readout as a provable classification,
+  not an absence -- a claim about a formal operator, not about institutions.
+what_it_separates: Separates the arithmetic symbol from the epistemic fibre it marks.
+what_it_assumes: Assumes a finite/rational retained-information setting; not about claim cards or institutions
+  at all.
+stance: UNDETERMINED
+what_it_would_say_against_us: Has no direct bearing on H2; only illustrates that a fully mechanical, machine-checked
+  proof can carry rigour with zero institutional apparatus, which is weak indirect support at best --
+  flagged as orthogonal rather than stretched into direct support.
+citation_card: cite-own-zero-readout-h2-004
+verified:
+  metadata_verified: true
+  claim_match_verified: false

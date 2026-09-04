@@ -1,0 +1,41 @@
+$schema: citation_card.schema.json
+id: cite-own-readout-genesis-h3-003
+claim_ref: H3
+identifier:
+  kind: DOI
+  value: 10.5281/zenodo.21529456
+fetch_status: FETCHED
+fetched_at: '2026-09-04'
+metadata_verified: true
+metadata_verified_by: mechanical:zenodo_api
+metadata_verified_at: '2026-09-04'
+claim_match_verified: true
+claim_match_verified_by: route:codex
+claim_match_verified_at: null
+exact_passage: '"the paper inserts a typed belief layer between memory and claim evaluation,
+  defines belief as a multidimensional agency-claim relation, and proposes that knowledge
+  be attributed as an auditable status of a claim rather than as a possession, reputation,
+  or authority of a knower."'
+page_or_locator: Zenodo record 10.5281/zenodo.21529456, description
+scope: CONTEXT_ONLY_NOT_EVIDENCE
+evidence_tier: Dr
+independence_class: I3
+who_verified: route:codex (cross-vendor AI; abstract/metadata level, not full text)
+  -- see cite-own-readout-genesis-h3-003.i3.json
+verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
+status: VERIFIED
+xenon_ledger_ref: null
+disclosure: 'own lineage: same author as the hypothesis (not independent evidence;
+  listed so the world literature is collided with it, per founder instruction BBL-098)
+  | I3 route (codex) judged from fetched metadata/abstract + the card''s quoted passage,
+  not full text: No metadata contradiction is evident from the provided excerpt; title/author/date
+  align with a Readout Genesis Zenodo preprint. The quoted passage appears in the
+  fetched text. It is orthogonal theoretical context about auditable claim status
+  and independence, not empirical evidence for cross-vendor detection rates.'
+superseded_by: null
+notes: 'Same author as H3. stance: orthogonal -- root-theory synthesis about knowledge
+  attribution generally, not an empirical claim about vendor-crossing detection rates.
+  language: en.'
+fetched_from_url: https://doi.org/10.5281/zenodo.21529456
+line_or_paragraph: char offset 901 of normalized fetched text (~paragraph 1); verbatim
+  prefix match

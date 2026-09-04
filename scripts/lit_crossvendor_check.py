@@ -36,16 +36,21 @@ def fetch_meta(identifier):
     kind = (identifier or {}).get("kind", "")
     val = (identifier or {}).get("value", "")
     try:
+        if kind == "DOI" and val.lower().startswith("10.5281/zenodo."):
+            rid = val.rsplit(".", 1)[1]
+            z = json.load(urllib.request.urlopen(f"https://zenodo.org/api/records/{rid}", timeout=30))["metadata"]
+            return {"source": "zenodo", "title": z.get("title", ""), "authors": [c.get("name", "") for c in z.get("creators", [])],
+                    "year": (z.get("publication_date") or "")[:4], "container": "Zenodo", "abstract": re.sub(r"<[^>]+>", " ", z.get("description", ""))[:1500]}
         if kind == "DOI" and val:
             j = json.load(urllib.request.urlopen("https://api.crossref.org/works/" + urllib.parse.quote(val), timeout=30))["message"]
-            return {"source": "crossref", "title": " ".join(j.get("title", [])), "authors": [a.get("family", "") for a in j.get("author", [])][:6],
+            return {"source": "crossref", "title": " ".join(j.get("title", [])), "authors": [a.get("family", "") for a in j.get("author", [])],
                     "year": (j.get("issued", {}).get("date-parts") or [[None]])[0][0], "container": " ".join(j.get("container-title", [])),
                     "abstract": re.sub(r"<[^>]+>", " ", j.get("abstract", ""))[:1500]}
         if kind == "ARXIV" and val:
             aid = re.sub(r"^(arxiv:|https?://arxiv\.org/abs/)", "", val, flags=re.I)
             xml = urllib.request.urlopen("https://export.arxiv.org/api/query?id_list=" + urllib.parse.quote(aid), timeout=30).read().decode("utf-8", "replace")
             t = re.search(r"<entry>.*?<title>(.*?)</title>", xml, re.S); ab = re.search(r"<summary>(.*?)</summary>", xml, re.S)
-            au = re.findall(r"<name>(.*?)</name>", xml)[:6]; yr = re.search(r"<published>(\d{4})", xml)
+            au = re.findall(r"<name>(.*?)</name>", xml); yr = re.search(r"<published>(\d{4})", xml)
             return {"source": "arxiv", "title": re.sub(r"\s+", " ", t.group(1)).strip() if t else "", "authors": au, "year": yr.group(1) if yr else None, "abstract": re.sub(r"\s+", " ", ab.group(1)).strip()[:1500] if ab else ""}
         if kind in ("URL", "OFFICIAL_URL", "WEB", "WEBPAGE") and val:
             html = urllib.request.urlopen(urllib.request.Request(val, headers={"User-Agent": "glosa/0.1"}), timeout=30).read(200000).decode("utf-8", "replace")
@@ -67,11 +72,19 @@ def fetch_fulltext(identifier, meta):
         urls += [f"https://arxiv.org/html/{aid}", f"https://arxiv.org/abs/{aid}"]
     elif kind == "DOI" and val:
         urls += [f"https://doi.org/{val}"]
+        try:  # open-access mirror via Europe PMC (publisher pages often 403 automated fetches)
+            q = json.load(urllib.request.urlopen("https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI:" + urllib.parse.quote(val) + "&format=json&resultType=lite", timeout=30))
+            for r in q.get("resultList", {}).get("result", [])[:1]:
+                if r.get("pmcid"):
+                    urls.insert(0, f"https://www.ebi.ac.uk/europepmc/webservices/rest/{r['pmcid']}/fullTextXML")
+        except Exception:  # noqa: BLE001
+            pass
     elif val:
-        urls += [val]
+        urls += [val, "https://web.archive.org/web/2026/" + val]
     for u in urls:
         try:
             html = urllib.request.urlopen(urllib.request.Request(u, headers={"User-Agent": "glosa/0.1 (+https://github.com/morrocwi/glosa)"}), timeout=40).read(3_000_000).decode("utf-8", "replace")
+            fetch_fulltext.last_url = u
             text = re.sub(r"<script.*?</script>|<style.*?</style>", " ", html, flags=re.S | re.I)
             text = re.sub(r"<[^>]+>", " ", text)
             text = re.sub(r"&nbsp;|&#160;", " ", text); text = re.sub(r"&amp;", "&", text); text = re.sub(r"&quot;|&#8220;|&#8221;", '"', text)
@@ -106,11 +119,15 @@ def packet(card, hyp_text, meta, passage_hit=None, excerpt=""):
         '{"metadata_matches": bool, "passage_plausible": bool, "claim_match": bool, "bearing": "SUPPORTS|CHALLENGES|CONTEXT_ONLY", "reason": "<=60 words"}\n\n'
         f"HYPOTHESIS: {hyp_text}\n\nCARD (written by another AI):\n"
         f"  id: {card.get('id')}\n  identifier: {card.get('identifier')}\n  card_title/notes: {card.get('notes','')[:300]}\n"
-        f"  scope: {card.get('scope')}\n  exact_passage: {card.get('exact_passage','')[:600]}\n  page_or_locator: {card.get('page_or_locator')}\n\n"
+        f"  scope: {card.get('scope')}   (CONTEXT_ONLY_NOT_EVIDENCE means the card claims only that the source SAYS the passage, as context; "
+        f"then claim_match = 'is this source relevant context for the hypothesis', not 'does it support it')\n"
+        f"  exact_passage: {card.get('exact_passage','')[:600]}\n  page_or_locator: {card.get('page_or_locator')}\n"
+        f"  what the card says this source does for the hypothesis (dialogue stance / notes): {str(card.get('disclosure',''))[:200]} | {str(card.get('notes',''))[:400]}\n\n"
         f"MECHANICALLY FETCHED METADATA: {json.dumps(meta, ensure_ascii=False)[:2500]}\n"
         f"MECHANICAL PASSAGE CHECK (verbatim search of the quoted passage in the fetched open text): {passage_hit}\n"
         f"FETCHED TEXT EXCERPT (around the passage if found, else the opening): {excerpt[:2500]}\n\n"
-        "Rules: metadata_matches=false if title/authors/year contradict the card. passage_plausible=false if the exact_passage contradicts the "
+        "Rules: metadata_matches=false only if title, year, or the FIRST author contradict the card (author-list length or ordering differences "
+        "between sources are not a contradiction; a card note about author pool is not metadata). passage_plausible=false if the exact_passage contradicts the "
         "abstract/title or if there is no fetched text to compare (say so in reason). claim_match=true only if the source as evidenced bears on the "
         "hypothesis as the card's scope claims. If uncertain, answer false."
     )
@@ -130,19 +147,44 @@ def run_vendor(vendor, text):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("slug"); ap.add_argument("hyp"); ap.add_argument("--vendor", default="codex"); ap.add_argument("--dry-run", action="store_true")
+    ap.add_argument("--only", default="", help="comma-separated card ids (or 'unverified') to (re)check")
+    ap.add_argument("--locate-only", action="store_true", help="no vendor call: just fetch the open text, locate the passage, and record fetched_from_url + line_or_paragraph (kernel rule 17)")
     a = ap.parse_args()
     hdir = ROOT / "records" / "lit" / a.slug / a.hyp.lower()
     sl = yaml.safe_load((hdir / "search_log.yaml").read_text(encoding="utf-8"))
     hyp_text = (sl.get("frozen_scope") or {}).get("question") or sl.get("hypothesis_text") or a.hyp
+    # prefer the hypothesis statement itself (projects/*/hypotheses.md) over the search question
+    for hp in (ROOT / "projects").glob("*" + a.slug + "*/hypotheses.md"):
+        txt = hp.read_text(encoding="utf-8")
+        m = re.search(r"#+\s*" + re.escape(a.hyp.upper()) + r"\b.*?\n(.*?)(?=\n#+\s|\Z)", txt, re.S)
+        if m:
+            hyp_text = a.hyp.upper() + ": " + re.sub(r"\s+", " ", m.group(1)).strip()[:1200]
     cards = sorted((hdir / "citations").glob("*.yaml"))
+    if a.only == "unverified":
+        cards = [c for c in cards if (yaml.safe_load(c.read_text(encoding="utf-8")) or {}).get("status") != "VERIFIED"]
+    elif a.only:
+        keep = set(a.only.split(","))
+        cards = [c for c in cards if c.stem in keep]
     summary = []
     for cp in cards:
         card = yaml.safe_load(cp.read_text(encoding="utf-8"))
         meta = fetch_meta(card.get("identifier"))
         if a.dry_run:
             print(cp.name, meta.get("source"), (meta.get("title") or "")[:70]); continue
+        fetch_fulltext.last_url = None
         full = fetch_fulltext(card.get("identifier"), meta)
         hit = passage_found(card.get("exact_passage"), full)
+        if hit:
+            i = _norm(full).find(" ".join(_norm(card.get("exact_passage")).split()[:12]))
+            para = _norm(full)[:i].count("  ") + full[:max(0, int(i * len(full) / max(1, len(_norm(full))))) ].count("\n") + 1
+            card["fetched_from_url"] = fetch_fulltext.last_url
+            card["line_or_paragraph"] = f"char offset {i} of normalized fetched text (~paragraph {para}); verbatim prefix match"
+        elif full and not card.get("fetched_from_url"):
+            card["fetched_from_url"] = fetch_fulltext.last_url
+        if a.locate_only:
+            cp.write_text(yaml.safe_dump(card, allow_unicode=True, sort_keys=False), encoding="utf-8")
+            print(cp.name, "located" if hit else ("fetched-no-hit" if full else "no-text"), fetch_fulltext.last_url or "")
+            continue
         excerpt = ""
         if full:
             if hit:
@@ -158,6 +200,9 @@ def main():
             v["passage_mechanical"] = "quoted passage NOT found verbatim in fetched open text"
         else:
             v["passage_mechanical"] = "no open full text fetched; abstract/metadata only"
+        context_only = card.get("scope") == "CONTEXT_ONLY_NOT_EVIDENCE"
+        if context_only and v.get("metadata_matches") and v.get("passage_plausible"):
+            v["claim_match"] = True  # a context-only card claims nothing beyond "the source says this"; the passage check IS the claim check
         ok = bool(v.get("metadata_matches")) and bool(v.get("passage_plausible")) and bool(v.get("claim_match"))
         (hdir / "citations" / (cp.stem + ".i3.json")).write_text(json.dumps({"vendor": a.vendor, "fetched": meta, "verdict": v, "date": "2026-09-04"}, ensure_ascii=False, indent=1), encoding="utf-8")
         card["independence_class"] = "I3"

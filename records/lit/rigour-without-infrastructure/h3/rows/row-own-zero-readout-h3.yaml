@@ -1,0 +1,18 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: H3
+source_label: What a Zero Readout Certifies (Lahtee, Zenodo 10.5281/zenodo.21665100)
+how_it_sees_the_problem: Sees mechanical (machine-checked) verification as capable of settling a characterisation
+  without informal argument.
+what_it_separates: Separates a machine-checked proof from an informally-argued one -- a stronger, but
+  different, independence mechanism than cross-vendor AI review.
+what_it_assumes: Assumes a formalizable mathematical claim; H3's claim cards (natural-language Q3/Q4 fields)
+  are not of this kind, so the mechanism does not transfer directly.
+stance: UNDETERMINED
+what_it_would_say_against_us: Would note that machine-checked (Coq-level) verification, where available,
+  is a strictly stronger independence route than cross-vendor AI review, and H3's claim should not be
+  read as claiming cross-vendor AI checking is the strongest possible independent check -- only that it
+  beats same-vendor re-checking.
+citation_card: cite-own-zero-readout-h3-004
+verified:
+  metadata_verified: true
+  claim_match_verified: false

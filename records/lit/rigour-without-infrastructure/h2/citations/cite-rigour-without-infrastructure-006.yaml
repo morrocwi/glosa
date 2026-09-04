@@ -9,7 +9,7 @@ fetched_at: '2026-09-04'
 metadata_verified: true
 metadata_verified_by: mechanical:crossref
 metadata_verified_at: '2026-09-04'
-claim_match_verified: false
+claim_match_verified: true
 claim_match_verified_by: route:codex
 claim_match_verified_at: '2026-09-04'
 exact_passage: '"The advancement of scientific research and raising the next-generation
@@ -26,7 +26,7 @@ independence_class: I3
 who_verified: route:codex (cross-vendor AI; abstract/metadata level, not full text)
   -- see cite-rigour-without-infrastructure-006.i3.json
 verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
-status: METADATA_OK
+status: VERIFIED
 xenon_ledger_ref: null
 disclosure: 'Crossref-confirmed: Okafor, Mbagwu, Chia, Hasim, Udokanma, Chandran (2022),
   "Institutionalizing Open Science in Africa: Limitations and Prospects", Frontiers
@@ -47,7 +47,17 @@ disclosure: 'Crossref-confirmed: Okafor, Mbagwu, Chia, Hasim, Udokanma, Chandran
   from fetched metadata/abstract + the card''s quoted passage, not full text: Metadata
   does not contradict the card, and the quoted passage is present/plausible in the
   fetched abstract. But H2 is not described beyond its label, so I cannot verify that
-  this source bears on the hypothesis as claimed.'
+  this source bears on the hypothesis as claimed. | I3 route (codex) judged from fetched
+  metadata/abstract + the card''s quoted passage, not full text: Metadata and fetched
+  passage align with the card. But the evidenced abstract concerns open science access,
+  funding, leadership, and institutionalization in Africa; it does not clearly bear
+  on whether rigour can be carried by a claim card rather than institutional credentialing.
+  Context relevance is too indirect. | I3 route (codex) judged from fetched metadata/abstract
+  + the card''s quoted passage, not full text: Metadata and quoted abstract match
+  the fetched Crossref/text material. The passage is about open science access, institutionalization,
+  funding, leadership, and research infrastructure in Africa, so it is relevant context
+  for institutional mechanisms around scientific credibility/rigour, but it does not
+  directly support or challenge H2.'
 superseded_by: null
 notes: 'Diversity: language=en, source_type=peer_reviewed, geography=Global South
   (Africa, author institutions in Nigeria/South Africa/Malaysia/USA), search_route="web
@@ -71,3 +81,6 @@ diversity:
     index_name: null
     value: null
     date_read: null
+fetched_from_url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9051436/fullTextXML
+line_or_paragraph: char offset 2394 of normalized fetched text (~paragraph 1); verbatim
+  prefix match

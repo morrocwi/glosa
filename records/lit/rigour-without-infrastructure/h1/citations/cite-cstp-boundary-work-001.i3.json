@@ -1,21 +1,15 @@
 {
  "vendor": "codex",
  "fetched": {
-  "source": "crossref",
-  "title": "Citizen Science and Scientific Authority: Have You Checked the Boundary Work?",
-  "authors": [
-   "Mayes"
-  ],
-  "year": 2022,
-  "container": "Citizen Science: Theory and Practice",
-  "abstract": ""
+  "source": "fetch-failed",
+  "error": "HTTP Error 429: Too Many Requests"
  },
  "verdict": {
   "metadata_matches": true,
   "passage_plausible": true,
   "claim_match": true,
-  "bearing": "SUPPORTS",
-  "reason": "Metadata title/author/year align. Fetched text contains the key passage about citizen science legitimacy being shaped by professional experts, and the described evidence directly supports H1 as a boundary-work/epistemic-authority citation.",
+  "bearing": "CHALLENGES",
+  "reason": "Metadata in the excerpt matches the card: title/topic, author, journal, year, DOI. The quoted legitimacy passage appears in fetched text and aligns with the abstract. It bears on H1 by showing credentialed experts shape legitimacy, challenging the idea that inspectable rigor alone can replace institutional credentials.",
   "passage_mechanical": "verbatim prefix found in fetched open text"
  },
  "date": "2026-09-04"

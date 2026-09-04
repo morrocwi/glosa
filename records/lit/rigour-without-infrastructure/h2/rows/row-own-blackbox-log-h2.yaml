@@ -1,0 +1,14 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: H2
+source_label: Blackbox Log (Pum Klong Dam), Yaoharee Lahtee (Zenodo concept DOI 10.5281/zenodo.22302518)
+how_it_sees_the_problem: Sees a raw, unreviewed, append-only log as a distinct object from any cooked
+  claim built on it -- no institutional apparatus is involved in keeping the log itself.
+what_it_separates: Separates the raw record from the cooking log documenting later transformations.
+what_it_assumes: Assumes the practice is worth keeping regardless of institutional recognition; makes
+  no claim about whether rigour is portable at claim-level.
+stance: UNDETERMINED
+what_it_would_say_against_us: Has no direct bearing on H2's institution-vs-claim-level question.
+citation_card: cite-own-blackbox-log-h2-006
+verified:
+  metadata_verified: true
+  claim_match_verified: false

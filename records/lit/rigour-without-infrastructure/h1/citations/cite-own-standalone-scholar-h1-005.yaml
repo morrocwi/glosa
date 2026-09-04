@@ -1,0 +1,51 @@
+$schema: citation_card.schema.json
+id: cite-own-standalone-scholar-h1-005
+claim_ref: H1
+identifier:
+  kind: DOI
+  value: 10.5281/zenodo.22163849
+fetch_status: FETCHED
+fetched_at: '2026-09-04'
+metadata_verified: true
+metadata_verified_by: mechanical:zenodo_api
+metadata_verified_at: '2026-09-04'
+claim_match_verified: true
+claim_match_verified_by: route:codex
+claim_match_verified_at: null
+exact_passage: '"It develops a dual-track architecture in which AI-assisted formation,
+  open preprint staging, provenance controls, and machine-constrained checks generate
+  defensible provisional assets, while independent human friction, repeat correspondence,
+  journal review, and local epistemic participation convert those assets into socially
+  stress-tested knowledge. The framework distinguishes synthetic plurality from independent
+  validation, production criticality from scholarly-credit criticality, attention
+  from uptake, legitimacy from truth."'
+page_or_locator: Zenodo record 10.5281/zenodo.22163849, description
+scope: DIRECT_QUOTATION
+evidence_tier: Dr
+independence_class: I3
+who_verified: route:codex (cross-vendor AI; abstract/metadata level, not full text)
+  -- see cite-own-standalone-scholar-h1-005.i3.json
+verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
+status: VERIFIED
+xenon_ledger_ref: null
+disclosure: 'own lineage: same author as the hypothesis (not independent evidence;
+  listed so the world literature is collided with it, per founder instruction BBL-098)
+  | I3 route (codex) judged from fetched metadata/abstract + the card''s quoted passage,
+  not full text: Metadata fetch failed, so title/authors/year cannot be independently
+  matched. The passage appears in the provided excerpt and fits the abstract/title.
+  As same-author lineage, it is not independent support, but it clearly provides relevant
+  context on standalone scholars, AI production, provenance/checks, and independent
+  validation. | I3 route (codex) judged from fetched metadata/abstract + the card''s
+  quoted passage, not full text: Metadata does not contradict the card, and the quoted
+  passage is mechanically found in the fetched text. The source directly concerns
+  standalone scholars, AI-assisted production, provenance/checks, independent validation,
+  and legitimacy versus truth, so it bears on H1. But as same-author lineage, it is
+  contextual, not independent support.'
+superseded_by: null
+notes: 'Same author as H1; direct macro-grain ancestor per FOUNDATION_v0.5.md 1.2.
+  stance: agrees -- names the exact problem H1 operationalizes at claim-card grain
+  (non-institutional scholar + AI abundance before independent criticism), and already
+  distinguishes legitimacy from truth. language: en.'
+fetched_from_url: https://doi.org/10.5281/zenodo.22163849
+line_or_paragraph: char offset 1099 of normalized fetched text (~paragraph 1); verbatim
+  prefix match

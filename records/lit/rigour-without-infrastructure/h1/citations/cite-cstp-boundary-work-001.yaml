@@ -41,9 +41,22 @@ disclosure: 'Same-session AI check only (I1) -- METADATA_OK, not VERIFIED. Title
   from fetched metadata/abstract + the card''s quoted passage, not full text: Metadata
   title/author/year align. Fetched text contains the key passage about citizen science
   legitimacy being shaped by professional experts, and the described evidence directly
-  supports H1 as a boundary-work/epistemic-authority citation.'
+  supports H1 as a boundary-work/epistemic-authority citation. | I3 route (codex)
+  judged from fetched metadata/abstract + the card''s quoted passage, not full text:
+  Metadata does not contradict the card. The fetched excerpt contains the core quoted
+  passage and aligns with the title/abstract. The source bears on H1 by showing citizen-science
+  legitimacy remains shaped by credentialed experts, challenging the hypothesis that
+  checkable rigour can bypass institutional credentialing. | I3 route (codex) judged
+  from fetched metadata/abstract + the card''s quoted passage, not full text: Metadata
+  in the excerpt matches the card: title/topic, author, journal, year, DOI. The quoted
+  legitimacy passage appears in fetched text and aligns with the abstract. It bears
+  on H1 by showing credentialed experts shape legitimacy, challenging the idea that
+  inspectable rigor alone can replace institutional credentials.'
 superseded_by: null
 notes: 'Global North (author, University of British Columbia), EN, peer-reviewed,
   journal-article, discipline: science communication / sociology of science. Found
   via query family: challenge (citizen science epistemic authority peer review alternative
   rigour). Dialogue-table stance: NO (disagrees with / challenges H1).'
+fetched_from_url: https://doi.org/10.5334/cstp.519
+line_or_paragraph: char offset 1145 of normalized fetched text (~paragraph 1); verbatim
+  prefix match

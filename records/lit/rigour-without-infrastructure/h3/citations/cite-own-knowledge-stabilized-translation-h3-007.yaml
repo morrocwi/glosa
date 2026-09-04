@@ -1,0 +1,47 @@
+$schema: citation_card.schema.json
+id: cite-own-knowledge-stabilized-translation-h3-007
+claim_ref: H3
+identifier:
+  kind: DOI
+  value: 10.5281/zenodo.18925129
+fetch_status: FETCHED
+fetched_at: '2026-09-04'
+metadata_verified: true
+metadata_verified_by: mechanical:zenodo_api
+metadata_verified_at: '2026-09-04'
+claim_match_verified: true
+claim_match_verified_by: route:codex
+claim_match_verified_at: null
+exact_passage: '"knowledge is best understood as stabilized translation under bounded
+  observation: a representation that remains stable across admissible variation, calibration,
+  and cross-checking. The result is a framework that preserves realism without naivety,
+  fallibilism without skepticism, and provides a common grammar for human and machine
+  forms of model-based knowing."'
+page_or_locator: Zenodo record 10.5281/zenodo.18925129, description
+scope: DIRECT_QUOTATION
+evidence_tier: Dr
+independence_class: I3
+who_verified: route:codex (cross-vendor AI; abstract/metadata level, not full text)
+  -- see cite-own-knowledge-stabilized-translation-h3-007.i3.json
+verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
+status: VERIFIED
+xenon_ledger_ref: null
+disclosure: 'own lineage: same author as the hypothesis (not independent evidence;
+  listed so the world literature is collided with it, per founder instruction BBL-098)
+  | I3 route (codex) judged from fetched metadata/abstract + the card''s quoted passage,
+  not full text: The excerpt shows the DOI record, title area, author, and quoted
+  wording without contradiction. The passage plausibly appears in the description
+  and discusses calibration/cross-checking in AI-and-knowledge epistemology. It is
+  relevant conceptual context for H3, but not independent empirical support for cross-vendor
+  detection rates.'
+superseded_by: null
+notes: 'Same author as H3 (hub member, cluster ''ep''/''ai'', description bears directly
+  on AI-and-knowledge epistemology). stance: agrees -- defines knowledge as ''stabilized
+  translation under bounded observation: a representation that remains stable across
+  admissible variation, calibration, and cross-checking,'' which names cross-checking
+  as a stabilizing mechanism, directly parallel to H3''s claim that cross-vendor checking
+  (a form of admissible variation in the checking route) should raise detection/stability
+  relative to no variation (same-vendor). language: en.'
+fetched_from_url: https://doi.org/10.5281/zenodo.18925129
+line_or_paragraph: char offset 1065 of normalized fetched text (~paragraph 1); verbatim
+  prefix match

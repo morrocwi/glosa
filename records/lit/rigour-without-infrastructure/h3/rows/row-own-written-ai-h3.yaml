@@ -1,0 +1,17 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: H3
+source_label: Written by AI. Still True. (Lahtee, Zenodo 10.5281/zenodo.22301202)
+how_it_sees_the_problem: Sees provenance as carrying only whatever legitimate higher-order evidence about
+  reliability it can be shown to carry, never more.
+what_it_separates: Separates the epistemic channel a piece of provenance actually licenses from the channel
+  casually attributed to it -- relevant to why H3 insists on naming 'independence_class' rather than just
+  'AI checked it.'
+what_it_assumes: Assumes provenance-based higher-order evidence is real but bounded; does not compare
+  same-vendor vs cross-vendor detection rates empirically.
+stance: UNDETERMINED
+what_it_would_say_against_us: Has no direct bearing on H3's specific detection-rate claim; at most reinforces
+  the general principle that a checker's identity/route matters to what its check can license.
+citation_card: cite-own-written-ai-h3-001
+verified:
+  metadata_verified: true
+  claim_match_verified: false

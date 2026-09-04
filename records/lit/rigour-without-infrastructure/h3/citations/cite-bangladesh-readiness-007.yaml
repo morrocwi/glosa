@@ -10,42 +10,66 @@ metadata_verified: true
 metadata_verified_by: mechanical:arxiv_abstract_page (WebFetch of https://arxiv.org/abs/2601.12934)
 metadata_verified_at: '2026-09-04'
 claim_match_verified: true
-claim_match_verified_by: ai_route:claude-same-session-WebFetch-2026-09-04
+claim_match_verified_by: route:codex
 claim_match_verified_at: '2026-09-04'
-exact_passage: >-
-  "Bangladesh, ranked 82nd in the 2023 Oxford Insights AI Readiness Index, exhibits significant deficits
-  in technology capacity and research ecosystems, despite strong governmental visions... Findings reveal
-  outdated curricula, limited faculty upskilling, inadequate computing resources, entrenched gender disparities,
-  and the near-total absence of AI ethics instruction."
+exact_passage: '"Bangladesh, ranked 82nd in the 2023 Oxford Insights AI Readiness
+  Index, exhibits significant deficits in technology capacity and research ecosystems,
+  despite strong governmental visions... Findings reveal outdated curricula, limited
+  faculty upskilling, inadequate computing resources, entrenched gender disparities,
+  and the near-total absence of AI ethics instruction."'
 page_or_locator: Abstract, arXiv:2601.12934
 scope: CONTEXT_ONLY_NOT_EVIDENCE
 evidence_tier: Dr
-independence_class: I1
-who_verified: same-session AI (I1)
-verification_method: MANUAL_READ
-status: METADATA_OK
+independence_class: I3
+who_verified: route:codex (cross-vendor AI; abstract/metadata level, not full text)
+  -- see cite-bangladesh-readiness-007.i3.json
+verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
+status: VERIFIED
 xenon_ledger_ref: null
-disclosure: >-
-  Existence/metadata mechanically confirmed via the arXiv abstract page. claim_match_verified true from
-  text read directly. This is a Global South (Bangladesh) source but is CONTEXT_ONLY_NOT_ EVIDENCE for
-  H3 specifically -- it documents institutional/workforce capacity constraints for independent AI review
-  and ethics oversight in a Global South setting (near-total absence of AI ethics instruction, limited
-  faculty upskilling), which bears on H3's EXTERNAL VALIDITY (can a cross-vendor-review advantage, if
-  real, actually be operationalized where independent-review capacity is scarce) but does not itself measure
-  any catch-rate comparison.
+disclosure: 'Existence/metadata mechanically confirmed via the arXiv abstract page.
+  claim_match_verified true from text read directly. This is a Global South (Bangladesh)
+  source but is CONTEXT_ONLY_NOT_ EVIDENCE for H3 specifically -- it documents institutional/workforce
+  capacity constraints for independent AI review and ethics oversight in a Global
+  South setting (near-total absence of AI ethics instruction, limited faculty upskilling),
+  which bears on H3''s EXTERNAL VALIDITY (can a cross-vendor-review advantage, if
+  real, actually be operationalized where independent-review capacity is scarce) but
+  does not itself measure any catch-rate comparison. | I3 route (codex) judged from
+  fetched metadata/abstract + the card''s quoted passage, not full text: finite_diagnostic:
+  author metadata conflicts with card: fetched metadata lists six authors while the
+  card lists eight. The quoted passage is present and consistent with the abstract.
+  H3 content is not provided, so I cannot verify that this source bears on the hypothesis
+  beyond context; uncertain means false. | I3 route (codex) judged from fetched metadata/abstract
+  + the card''s quoted passage, not full text: Author metadata conflicts: card lists
+  eight authors, fetched metadata lists six, though excerpt contains eight. Passage
+  is found and matches the abstract. The source discusses Bangladesh AI readiness,
+  not cross-vendor AI checking or detection of undisclosed AI-fill/assumptions, so
+  it is not relevant context for H3. | I3 route (codex) judged from fetched metadata/abstract
+  + the card''s quoted passage, not full text: Title and year match, but fetched metadata
+  lists six authors while the card lists eight. The quoted passage is present/plausible
+  in the fetched abstract. As CONTEXT_ONLY_NOT_EVIDENCE, it is relevant only as Global
+  South AI-readiness context, not direct evidence for cross-vendor checking. | I3
+  route (codex) judged from fetched metadata/abstract + the card''s quoted passage,
+  not full text: Metadata and quoted passage match the fetched material. But the source
+  concerns Bangladesh AI readiness in academia/industry/government, not cross-vendor
+  versus same-vendor AI checking or detection of undisclosed AI-fill/assumptions for
+  claim cards.'
 superseded_by: null
-notes: >-
-  Authors: Sharifa Sultana, Rupali Samad, Mehzabin Haque, Zinnat Sultana, Zulkarin Jahangir, B M Mainul
-  Hossain, Rashed Mujib Noman, Syed Ishtiaque Ahmed. Submitted 2026-01-19. Institutional affiliations
-  were not listed on the fetched arXiv abstract page; country focus (Bangladesh) is explicit in the title
-  and abstract itself, which is the basis for the Global South stratum classification, independent of
-  any unconfirmed author-affiliation claim.
+notes: 'Authors: Sharifa Sultana, Rupali Samad, Mehzabin Haque, Zinnat Sultana, Zulkarin
+  Jahangir, B M Mainul Hossain, Rashed Mujib Noman, Syed Ishtiaque Ahmed. Submitted
+  2026-01-19. Institutional affiliations were not listed on the fetched arXiv abstract
+  page; country focus (Bangladesh) is explicit in the title and abstract itself, which
+  is the basis for the Global South stratum classification, independent of any unconfirmed
+  author-affiliation claim.
 
 
   Diversity info carried over from the prior (wrong-shape) citations/cite-bangladesh-readiness-007.yaml
-  card, preserved as text (not a schema field on this citation_card): language=en; discipline_or_tradition=AI
-  governance / HCI / ICTD (Bangladesh); source_type=preprint; search_route_or_database=WebSearch (general
-  web, 'Global South AI verification...' query) -> arXiv abstract page; geography_or_institution=Bangladesh
-  (subject/title/abstract-confirmed; individual author institutions not listed on the fetched page) --
-  Global South. Prior file also recorded dialogue_table_stance='orthogonal' (now tracked on the dialogue_table.md
-  row / rows/*.yaml, not on this card).
+  card, preserved as text (not a schema field on this citation_card): language=en;
+  discipline_or_tradition=AI governance / HCI / ICTD (Bangladesh); source_type=preprint;
+  search_route_or_database=WebSearch (general web, ''Global South AI verification...''
+  query) -> arXiv abstract page; geography_or_institution=Bangladesh (subject/title/abstract-confirmed;
+  individual author institutions not listed on the fetched page) -- Global South.
+  Prior file also recorded dialogue_table_stance=''orthogonal'' (now tracked on the
+  dialogue_table.md row / rows/*.yaml, not on this card).'
+fetched_from_url: https://arxiv.org/html/2601.12934
+line_or_paragraph: char offset 2988 of normalized fetched text (~paragraph 1); verbatim
+  prefix match

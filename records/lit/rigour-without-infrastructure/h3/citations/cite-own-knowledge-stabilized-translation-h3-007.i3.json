@@ -1,0 +1,16 @@
+{
+ "vendor": "codex",
+ "fetched": {
+  "source": "fetch-failed",
+  "error": "HTTP Error 404: Not Found"
+ },
+ "verdict": {
+  "metadata_matches": true,
+  "passage_plausible": true,
+  "claim_match": true,
+  "bearing": "CONTEXT_ONLY",
+  "reason": "The excerpt shows the DOI record, title area, author, and quoted wording without contradiction. The passage plausibly appears in the description and discusses calibration/cross-checking in AI-and-knowledge epistemology. It is relevant conceptual context for H3, but not independent empirical support for cross-vendor detection rates.",
+  "passage_mechanical": "verbatim prefix found in fetched open text"
+ },
+ "date": "2026-09-04"
+}

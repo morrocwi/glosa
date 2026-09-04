@@ -1,0 +1,16 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: H1
+source_label: Readout Genesis Standalone Synthesis (Lahtee, Zenodo 10.5281/zenodo.21529456)
+how_it_sees_the_problem: Sees knowledge attribution as an auditable status attached to a claim, not a
+  possession, reputation, or authority of whoever holds it.
+what_it_separates: Separates personal, local, institutional, and globalized belief from local and transportable
+  knowledge -- distinctions H1's independence ladder (I0-I5) tracks operationally.
+what_it_assumes: Assumes a declared quotient/readout step is available before belief/knowledge terms become
+  admissible; does not itself define a claim-card schema.
+stance: UNDETERMINED
+what_it_would_say_against_us: Would ask whether H1's five questions actually instantiate this admission
+  architecture (provenance, method, inference, uncertainty, independence) or only borrow its vocabulary.
+citation_card: cite-own-readout-genesis-h1-003
+verified:
+  metadata_verified: true
+  claim_match_verified: false

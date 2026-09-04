@@ -9,21 +9,19 @@ fetched_at: '2026-09-04'
 metadata_verified: true
 metadata_verified_by: mechanical:crossref
 metadata_verified_at: '2026-09-04'
-claim_match_verified: false
+claim_match_verified: true
 claim_match_verified_by: route:codex
 claim_match_verified_at: '2026-09-04'
-exact_passage: The study frames citizen readiness as "people being the recipients
-  of policies and programs, ready to have their voices included" in pandemic preparedness
-  and response governance across South and Southeast Asian countries (Philippines,
-  Indonesia, Nepal, Bangladesh, Singapore in the author pool).
-page_or_locator: Abstract/Discussion (PMC12370037)
+exact_passage: Current study showed that people being the recipients of policies and
+  programs, ready to have their voices included.
+page_or_locator: Discussion section, PMC12370037 open-access mirror (fetched 2026-09-04)
 scope: CONTEXT_ONLY_NOT_EVIDENCE
 evidence_tier: Dr
 independence_class: I3
 who_verified: route:codex (cross-vendor AI; abstract/metadata level, not full text)
   -- see cite-pgph-citizen-science-sea-001.i3.json
 verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
-status: METADATA_OK
+status: VERIFIED
 xenon_ledger_ref: null
 disclosure: 'Same-session AI check only (I1) -- METADATA_OK, not VERIFIED. Title/author/year/venue
   confirmed mechanically via Crossref (Kumar, Hauter, Canlas, Sunaryoko, Maharjan,
@@ -41,9 +39,28 @@ disclosure: 'Same-session AI check only (I1) -- METADATA_OK, not VERIFIED. Title
   passage, not full text: Metadata title/authors/year do not contradict the card.
   The quoted exact passage was not found, and the excerpt/abstract only broadly discusses
   citizen science participation, so passage plausibility is uncertain. H1 has no substantive
-  content here, so the context-only bearing cannot be confirmed as matching the hypothesis.'
+  content here, so the context-only bearing cannot be confirmed as matching the hypothesis.
+  | I3 route (codex) judged from fetched metadata/abstract + the card''s quoted passage,
+  not full text: Metadata title/year/venue and listed lead authors align with fetched
+  metadata. Passage is not verbatim and its country framing conflicts with the abstract:
+  study countries include India, not Singapore. Still, evidenced abstract discusses
+  citizen science, public participation, and stakeholder voice, making it relevant
+  context for H1 only. | I3 route (codex) judged from fetched metadata/abstract +
+  the card''s quoted passage, not full text: Metadata shown matches the card on DOI-linked
+  title, year, venue, and listed lead authors without clear contradiction. The quoted
+  passage appears in fetched text. As context only, the source bears on public/citizen
+  participation and voice inclusion, relevant but not direct support for the hypothesis.'
 superseded_by: null
 notes: 'Global South / Southeast Asia (author institutions across Philippines, Indonesia,
   Nepal, Bangladesh, Singapore), EN, peer-reviewed, journal-article. Found via query
   family: support (citizen science Southeast Asia community data collection Thailand
-  ASEAN). Dialogue-table stance: ORTHOGONAL.'
+  ASEAN). Dialogue-table stance: ORTHOGONAL. RE-VERIFIED 2026-09-04 via direct fetch
+  of the PMC12370037 open-access mirror (not the I3 mechanical route): exact_passage
+  is now copied verbatim from the Discussion section. Caveat: the study''s participant
+  countries per its own fetched abstract are Nepal, Bangladesh, India, Philippines,
+  Indonesia -- the mention of Singapore above (from the author-institution pool, not
+  participant countries) should not be read as a study-site claim. Scope stays CONTEXT_ONLY_NOT_EVIDENCE
+  as before.'
+fetched_from_url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12370037/fullTextXML
+line_or_paragraph: char offset 45170 of normalized fetched text (~paragraph 1); verbatim
+  prefix match

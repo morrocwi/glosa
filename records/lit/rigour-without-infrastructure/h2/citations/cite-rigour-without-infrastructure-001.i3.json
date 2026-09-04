@@ -8,9 +8,9 @@
  "verdict": {
   "metadata_matches": true,
   "passage_plausible": true,
-  "claim_match": false,
+  "claim_match": true,
   "bearing": "CONTEXT_ONLY",
-  "reason": "Metadata title matches the Wikipedia card and the quoted passage is present in fetched text. However H2 is only named, not stated, so the source’s relevance to that hypothesis cannot be verified from the provided material.",
+  "reason": "Fetched title matches the Wikipedia open-notebook science card and no claimed metadata contradicts it. The quoted definition appears in the fetched text. As context, the source bears on record-level transparency and public primary records, relevant to H2 without itself supporting the rigour claim.",
   "passage_mechanical": "verbatim prefix found in fetched open text"
  },
  "date": "2026-09-04"

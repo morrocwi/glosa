@@ -64,7 +64,7 @@ META='forbidden|banned|never|do not|allowlist|check_forbidden_words|ห้าม
 HITS=0
 for f in "${TRACKED[@]}"; do
   case "$f" in
-    scripts/check_forbidden_words.sh|scripts/forbidden_words_allowlist.txt) continue ;;
+    scripts/check_forbidden_words.sh|scripts/forbidden_words_allowlist.txt|*.i3.json|*.i5.json) continue ;;  # route-verdict sidecars quote third-party text (data, not our claims)
   esac
   [ -f "$f" ] || continue
   if file --mime "$f" 2>/dev/null | grep -q 'charset=binary'; then

@@ -1,0 +1,19 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: H1
+source_label: Written by AI. Still True. (Lahtee, Zenodo 10.5281/zenodo.22301202)
+how_it_sees_the_problem: Frames institutional authority as derivative from an underlying epistemic relation
+  (evidence, reliability, accountability), never an intrinsic property of the recognized knower ("knower
+  fetishism").
+what_it_separates: Separates possession of knowledge (a subject's standing) from constitution of epistemic
+  value (what makes a record/process epistemically good) -- H1's claim card discipline targets exactly
+  this second, constitution-level property.
+what_it_assumes: Assumes a claim can be evaluated on its own provenance/evidence structure independent
+  of the knower's face; does not itself test whether a claim-card schema specifically achieves this in
+  practice.
+stance: UNDETERMINED
+what_it_would_say_against_us: Would ask whether H1's claim cards actually supply the 'identifiable epistemic
+  channel' this paper requires, or merely gesture at one without closing it.
+citation_card: cite-own-written-ai-h1-001
+verified:
+  metadata_verified: true
+  claim_match_verified: false

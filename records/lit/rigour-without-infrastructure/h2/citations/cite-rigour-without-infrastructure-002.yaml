@@ -9,7 +9,7 @@ fetched_at: '2026-09-04'
 metadata_verified: true
 metadata_verified_by: mechanical:crossref
 metadata_verified_at: '2026-09-04'
-claim_match_verified: false
+claim_match_verified: true
 claim_match_verified_by: route:codex
 claim_match_verified_at: '2026-09-04'
 exact_passage: '"the field lacks an overall, widely accepted approach to research
@@ -25,7 +25,7 @@ independence_class: I3
 who_verified: route:codex (cross-vendor AI; abstract/metadata level, not full text)
   -- see cite-rigour-without-infrastructure-002.i3.json
 verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
-status: METADATA_OK
+status: VERIFIED
 xenon_ledger_ref: null
 disclosure: 'Crossref-confirmed: Lisa M. Rasmussen (2019), "Confronting Research Misconduct
   in Citizen Science", Citizen Science: Theory and Practice, DOI 10.5334/cstp.207.
@@ -41,7 +41,17 @@ disclosure: 'Crossref-confirmed: Lisa M. Rasmussen (2019), "Confronting Research
   not full text: Metadata does not contradict the card, and the quoted passage is
   mechanically found and consistent with the title. But the substantive content of
   H2 is not provided, so support for the hypothesis cannot be independently confirmed
-  from the supplied material.'
+  from the supplied material. | I3 route (codex) judged from fetched metadata/abstract
+  + the card''s quoted passage, not full text: Metadata aligns with Crossref and the
+  passage is mechanically found. The excerpt bears on H2 by contrasting traditional
+  gatekeeping with decentralized citizen science and locating research trust in verifiable
+  methods, reliability mechanisms, and misconduct processes rather than institutional
+  status alone. | I3 route (codex) judged from fetched metadata/abstract + the card''s
+  quoted passage, not full text: Metadata aligns with fetched Crossref data, and the
+  quoted passage is found in the fetched excerpt. The source bears on H2 only as context:
+  it discusses trust, integrity, decentralized citizen science, and alternatives to
+  traditional gatekeeping, but does not directly support claim-carried rigour without
+  institutions.'
 superseded_by: null
 notes: 'Diversity: language=en, source_type=peer_reviewed, geography=USA (Citizen
   Science Association), search_route="web search: citizen science credibility trust
@@ -63,3 +73,6 @@ diversity:
     index_name: null
     value: null
     date_read: null
+fetched_from_url: https://doi.org/10.5334/cstp.207
+line_or_paragraph: char offset 7992 of normalized fetched text (~paragraph 1); verbatim
+  prefix match

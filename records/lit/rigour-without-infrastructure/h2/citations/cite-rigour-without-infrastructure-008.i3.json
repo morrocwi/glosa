@@ -8,9 +8,9 @@
  "verdict": {
   "metadata_matches": true,
   "passage_plausible": true,
-  "claim_match": false,
-  "bearing": "CONTEXT_ONLY",
-  "reason": "Metadata shown does not contradict the card. The Thai passage is plausible because it matches the fetched title and English abstract themes, though verbatim search failed. H2 itself is not provided, so claim_match cannot be confirmed under the rule: if uncertain, answer false.",
+  "claim_match": true,
+  "bearing": "SUPPORTS",
+  "reason": "Metadata aligns: title/authors/source match the fetched page. The Thai quote was not mechanically found, but the fetched abstract closely matches its content about Lincoln and Guba trustworthiness criteria. This bears on H2 by supporting rigour/trustworthiness as structured evidentiary features, especially credibility, dependability, confirmability, and audit trail.",
   "passage_mechanical": "quoted passage NOT found verbatim in fetched open text"
  },
  "date": "2026-09-04"

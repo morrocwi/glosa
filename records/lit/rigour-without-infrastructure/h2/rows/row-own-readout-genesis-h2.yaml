@@ -1,0 +1,16 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: H2
+source_label: Readout Genesis Standalone Synthesis (Lahtee, Zenodo 10.5281/zenodo.21529456)
+how_it_sees_the_problem: Sees knowledge as attributable to a claim's auditable status, explicitly contrasted
+  with a knower's possession, reputation, or authority.
+what_it_separates: Separates local/transportable knowledge from institutional/globalized belief -- institutions
+  are one belief-scale among several, not a precondition for knowledge status.
+what_it_assumes: Assumes an admission architecture (provenance, method, inference, uncertainty, independence)
+  can be specified without naming a specific institution as gatekeeper.
+stance: UNDETERMINED
+what_it_would_say_against_us: Would ask whether H2's 'claim can carry rigour in its own recorded structure'
+  actually cashes out this admission architecture field-by-field, or asserts it in the abstract.
+citation_card: cite-own-readout-genesis-h2-003
+verified:
+  metadata_verified: true
+  claim_match_verified: false

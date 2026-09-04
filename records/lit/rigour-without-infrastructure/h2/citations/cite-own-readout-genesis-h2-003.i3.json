@@ -1,0 +1,16 @@
+{
+ "vendor": "codex",
+ "fetched": {
+  "source": "fetch-failed",
+  "error": "HTTP Error 404: Not Found"
+ },
+ "verdict": {
+  "metadata_matches": true,
+  "passage_plausible": true,
+  "claim_match": true,
+  "bearing": "SUPPORTS",
+  "reason": "No metadata contradiction is visible in the provided excerpt. The passage appears in the fetched text and fits the description. It supports H2 at a general conceptual level by framing knowledge/rigour as an auditable claim-status rather than authority, reputation, or institution-conferred standing.",
+  "passage_mechanical": "verbatim prefix found in fetched open text"
+ },
+ "date": "2026-09-04"
+}

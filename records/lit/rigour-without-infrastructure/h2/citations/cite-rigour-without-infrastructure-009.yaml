@@ -9,20 +9,20 @@ fetched_at: '2026-09-04'
 metadata_verified: true
 metadata_verified_by: mechanical:webfetch
 metadata_verified_at: '2026-09-04'
-claim_match_verified: false
+claim_match_verified: true
 claim_match_verified_by: route:codex
 claim_match_verified_at: '2026-09-04'
 exact_passage: '"ให้งานวิจัยที่รัฐลงทุน ไม่ถูกเก็บอยู่ในห้องสมุดหรือฐานข้อมูลปิดอีกต่อไป
   แต่ \"เปิด\" ให้ประชาชน ภาคธุรกิจ และสื่อ เข้าถึงและนำไปใช้ได้จริง"'
 page_or_locator: thestandard.co, article body, byline THE STANDARD TEAM, dated 2025-11-17,
   as fetched 2026-09-04
-scope: SUPPORTS_GENERAL_CLAIM_ONLY
+scope: CONTEXT_ONLY_NOT_EVIDENCE
 evidence_tier: Dr
 independence_class: I3
 who_verified: route:codex (cross-vendor AI; abstract/metadata level, not full text)
   -- see cite-rigour-without-infrastructure-009.i3.json
 verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
-status: METADATA_OK
+status: VERIFIED
 xenon_ledger_ref: null
 disclosure: 'Thai-language news report (grey/community: journalism, not peer-reviewed),
   THE STANDARD, 2025-11-17, on the "Thailand Open Science for ALL" state-research-openness
@@ -40,11 +40,27 @@ disclosure: 'Thai-language news report (grey/community: journalism, not peer-rev
   the card''s quoted passage, not full text: Metadata and quoted passage match the
   fetched title/byline/date/excerpt. The passage plausibly supports a general claim
   about Thai Open Science access. However H2 is only named, not stated, so the source’s
-  bearing on the actual hypothesis cannot be verified from the provided material.'
+  bearing on the actual hypothesis cannot be verified from the provided material.
+  | I3 route (codex) judged from fetched metadata/abstract + the card''s quoted passage,
+  not full text: Metadata and quoted passage match the fetched title/byline/date and
+  excerpt. The passage supports context about open access and open science transparency,
+  but it does not show that rigour can be carried by a claim card without institutional
+  credentialing, so the claimed SUPPORTS_GENERAL_CLAIM_ONLY bearing is too strong.
+  | I3 route (codex) judged from fetched metadata/abstract + the card''s quoted passage,
+  not full text: Metadata and fetched passage align with the card. The excerpt discusses
+  Thai Open Science, public access, and opening research processes, but does not bear
+  directly on whether rigour can be carried by a claim card rather than institutional
+  credentialing. At most it is background context.'
 superseded_by: null
 notes: 'Diversity: language=th, source_type=grey_literature (news), geography=Thailand,
   search_route="web search: วิทยาศาสตร์เปิด Open Science นโยบายไทย ความโปร่งใส งานวิจัย
-  สกสว".'
+  สกสว". RE-VERIFIED 2026-09-04 via direct fetch of thestandard.co (not the I3 mechanical
+  route): the passage in exact_passage is confirmed verbatim in the article body.
+  However the I3 route correctly judged claim_match as too strong: this article is
+  about making state-funded research openly *accessible*, not about whether a claim''s
+  own recorded structure can substitute for institutional credentialing (H2''s actual
+  claim). Scope downgraded from SUPPORTS_GENERAL_CLAIM_ONLY to CONTEXT_ONLY_NOT_EVIDENCE
+  accordingly; dialogue_table_stance (orthogonal) already reflected this and is unchanged.'
 citation_card_id: cite-rigour-without-infrastructure-009
 identifier_kind: OFFICIAL_URL
 claim_match_verification_route: NOT_YET
@@ -62,3 +78,6 @@ diversity:
     index_name: null
     value: null
     date_read: null
+fetched_from_url: https://thestandard.co/thailand-open-science-unlock-ai-big-data-platform/
+line_or_paragraph: char offset 1809 of normalized fetched text (~paragraph 1); verbatim
+  prefix match

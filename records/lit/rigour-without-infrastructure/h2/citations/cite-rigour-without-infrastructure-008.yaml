@@ -9,7 +9,7 @@ fetched_at: '2026-09-04'
 metadata_verified: true
 metadata_verified_by: mechanical:webfetch
 metadata_verified_at: '2026-09-04'
-claim_match_verified: false
+claim_match_verified: true
 claim_match_verified_by: route:codex
 claim_match_verified_at: '2026-09-04'
 exact_passage: '"ความเชื่อถือได้ (Trustworthiness) ซึ่งพัฒนาโดย Lincoln และ Guba (1985)
@@ -30,7 +30,7 @@ independence_class: I3
 who_verified: route:codex (cross-vendor AI; abstract/metadata level, not full text)
   -- see cite-rigour-without-infrastructure-008.i3.json
 verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
-status: METADATA_OK
+status: VERIFIED
 xenon_ledger_ref: null
 disclosure: 'Nattapong Srirot (Nakaepittayakhom School, Nakhon Phanom) and Pairoh
   Sohsomboon (Faculty of Education, Nakhon Phanom University), "การสร้างความน่าเชื่อถือ
@@ -52,7 +52,18 @@ disclosure: 'Nattapong Srirot (Nakaepittayakhom School, Nakhon Phanom) and Pairo
   Metadata shown does not contradict the card. The Thai passage is plausible because
   it matches the fetched title and English abstract themes, though verbatim search
   failed. H2 itself is not provided, so claim_match cannot be confirmed under the
-  rule: if uncertain, answer false.'
+  rule: if uncertain, answer false. | I3 route (codex) judged from fetched metadata/abstract
+  + the card''s quoted passage, not full text: Fetched title/authors align with the
+  card, and the abstract matches the quoted Trustworthiness framework. Although verbatim
+  search failed, the Thai passage is plausible from the PDF/Thai text. The source
+  supports H2 by treating trustworthiness as criteria, methods, and audit trail features
+  rather than institutional credential alone. | I3 route (codex) judged from fetched
+  metadata/abstract + the card''s quoted passage, not full text: Metadata aligns:
+  title/authors/source match the fetched page. The Thai quote was not mechanically
+  found, but the fetched abstract closely matches its content about Lincoln and Guba
+  trustworthiness criteria. This bears on H2 by supporting rigour/trustworthiness
+  as structured evidentiary features, especially credibility, dependability, confirmability,
+  and audit trail.'
 superseded_by: null
 notes: 'Diversity: language=th, source_type=peer_reviewed, geography=Thailand (Nakhon
   Phanom), search_route="web search: ความน่าเชื่อถือทางวิชาการ ผู้เชี่ยวชาญ สถาบัน
@@ -75,3 +86,4 @@ diversity:
     index_name: null
     value: null
     date_read: null
+fetched_from_url: https://so05.tci-thaijo.org/index.php/JTPLC/article/view/283964

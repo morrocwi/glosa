@@ -1,0 +1,14 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: H3
+source_label: Readout Genesis Standalone Synthesis (Lahtee, Zenodo 10.5281/zenodo.21529456)
+how_it_sees_the_problem: Sees knowledge as an auditable status of a claim; does not itself specify who
+  or what performs the audit.
+what_it_separates: Separates belief layers and admission-architecture components; does not separate same-vendor
+  from cross-vendor checking as a variable.
+what_it_assumes: Assumes an admission architecture exists prior to any specific detection-rate claim.
+stance: UNDETERMINED
+what_it_would_say_against_us: Has no direct bearing on H3's specific empirical comparison.
+citation_card: cite-own-readout-genesis-h3-003
+verified:
+  metadata_verified: true
+  claim_match_verified: false

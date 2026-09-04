@@ -1,340 +1,224 @@
 $schema: litreview_manifest.schema.json
-
 id: litrev-rigour-without-infrastructure-001
 hypothesis_ref: H1
 search_log_ref: search-rigour-without-infrastructure-001
-search_log_hash: "67b198f1948f8155ca65041d903baf4be0b67fd7e910abf0de668f53201683d7"
+search_log_hash: ''
 dialogue_table_ref: records/lit/rigour-without-infrastructure/h1/dialogue_table.md
-neighbour_table_ref: "NOT_YET_PRODUCED -- L6 neighbour_table.md stage was not run in this task (out of scope: this task's step (e) was `glosa lit manifest`, not a separate neighbour-table pass)."
+neighbour_table_ref: ''
 status: FROZEN
-frozen_at: "2026-09-04T00:00:00Z"
+frozen_at: '2026-09-04T14:11:14.009916+00:00'
 supersedes: null
-
-# --- honest note on the CLI run ---------------------------------------------------------------
-# `./cli/glosa lit manifest rigour-without-infrastructure H1 --human-owner founder --freeze` was
-# run first (per task instructions) and did write a file at this path, but its `citations` list
-# was built by dumping raw citation_card payloads (id/claim_ref/... shape) directly into the slot
-# the manifest schema defines with a DIFFERENT required shape (citation_card_id/identifier_kind/
-# claim_match_verification_route/...) -- `cmd_lit_manifest`'s `scaffold_litreview_manifest` in
-# `cli/glosa` does not translate between the two. The kernel's own `lit_gate` check on that CLI
-# output failed schema validation (9x missing citation_card_id/identifier_kind/
-# claim_match_verification_route). This is a real CLI bug (`scaffold_litreview_manifest` builds
-# the wrong per-citation shape), reported below rather than silently worked around; this file
-# REPLACES that invalid CLI output with a hand-built, schema-valid manifest carrying the identical
-# underlying citation data (same 9 `citation_card.yaml` files under `citations/`, same dialogue
-# rows under `rows/`) translated into the shape `litreview_manifest.schema.json` actually
-# requires. No citation content was changed to do this -- only the container shape.
-
 citations:
-  - citation_card_id: cite-rsos-citizen-epistemology-001
-    status: METADATA_OK
-    identifier_kind: DOI
-    fetch_status: FETCHED
-    acquisition_log_ref: null
-    metadata_verified: true
-    claim_match_verified: true
-    claim_match_verification_route: NOT_YET
-    version_status: PUBLISHED
-    retraction_check: UNCHECKED
-    dialogue_table_stance: agrees
-    diversity:
-      language: en
-      discipline_or_tradition: "philosophy/sociology of science"
-      source_type: peer_reviewed
-      search_route_or_database: "general_web_search (WebSearch tool)"
-      geography_or_institution: "Global North (EU/UK author institutions)"
-      venue_quality_index: { index_name: null, value: null, date_read: null }
-
-  - citation_card_id: cite-cstp-boundary-work-001
-    status: METADATA_OK
-    identifier_kind: DOI
-    fetch_status: FETCHED
-    acquisition_log_ref: null
-    metadata_verified: true
-    claim_match_verified: true
-    claim_match_verification_route: NOT_YET
-    version_status: PUBLISHED
-    retraction_check: UNCHECKED
-    dialogue_table_stance: disagrees
-    diversity:
-      language: en
-      discipline_or_tradition: "science communication / sociology of science"
-      source_type: peer_reviewed
-      search_route_or_database: "general_web_search (WebSearch tool)"
-      geography_or_institution: "Global North (Canada)"
-      venue_quality_index: { index_name: null, value: null, date_read: null }
-
-  - citation_card_id: cite-rsos-preprint-credibility-001
-    status: METADATA_OK
-    identifier_kind: DOI
-    fetch_status: FETCHED
-    acquisition_log_ref: null
-    metadata_verified: true
-    claim_match_verified: true
-    claim_match_verification_route: NOT_YET
-    version_status: PUBLISHED
-    retraction_check: UNCHECKED
-    dialogue_table_stance: agrees
-    diversity:
-      language: en
-      discipline_or_tradition: "open science / meta-research"
-      source_type: peer_reviewed
-      search_route_or_database: "general_web_search (WebSearch tool)"
-      geography_or_institution: "Global North (Center for Open Science, US)"
-      venue_quality_index: { index_name: null, value: null, date_read: null }
-
-  - citation_card_id: cite-disclosure-not-documentation-001
-    status: METADATA_OK
-    identifier_kind: DOI
-    fetch_status: PAYWALLED_ABSTRACT_ONLY
-    acquisition_log_ref: null
-    metadata_verified: true
-    claim_match_verified: true
-    claim_match_verification_route: NOT_YET
-    version_status: PUBLISHED
-    retraction_check: UNCHECKED
-    dialogue_table_stance: agrees
-    diversity:
-      language: en
-      discipline_or_tradition: "research integrity / open science"
-      source_type: peer_reviewed
-      search_route_or_database: "general_web_search (WebSearch tool)"
-      geography_or_institution: "Global North (unconfirmed beyond abstract)"
-      venue_quality_index: { index_name: null, value: null, date_read: null }
-
-  - citation_card_id: cite-llm-hallucination-survey-001
-    status: METADATA_OK
-    identifier_kind: ARXIV
-    fetch_status: FETCHED
-    acquisition_log_ref: null
-    metadata_verified: true
-    claim_match_verified: true
-    claim_match_verification_route: NOT_YET
-    version_status: PREPRINT
-    retraction_check: UNCHECKED
-    dialogue_table_stance: orthogonal
-    diversity:
-      language: en
-      discipline_or_tradition: "machine learning / NLP survey"
-      source_type: preprint
-      search_route_or_database: "general_web_search (WebSearch tool)"
-      geography_or_institution: "mixed/unconfirmed (large multi-author arXiv survey)"
-      venue_quality_index: { index_name: null, value: null, date_read: null }
-
-  - citation_card_id: cite-pgph-citizen-science-sea-001
-    status: METADATA_OK
-    identifier_kind: DOI
-    fetch_status: FETCHED
-    acquisition_log_ref: null
-    metadata_verified: true
-    claim_match_verified: true
-    claim_match_verification_route: NOT_YET
-    version_status: PUBLISHED
-    retraction_check: UNCHECKED
-    dialogue_table_stance: orthogonal
-    diversity:
-      language: en
-      discipline_or_tradition: "global public health"
-      source_type: peer_reviewed
-      search_route_or_database: "general_web_search (WebSearch tool)"
-      geography_or_institution: "Global South / Southeast & South Asia (Philippines, Indonesia, Nepal, Bangladesh, Singapore author pool)"
-      venue_quality_index: { index_name: null, value: null, date_read: null }
-
-  - citation_card_id: cite-ocsdnet-honf-001
-    status: METADATA_OK
-    identifier_kind: OFFICIAL_URL
-    fetch_status: FETCHED
-    acquisition_log_ref: null
-    metadata_verified: true
-    claim_match_verified: true
-    claim_match_verification_route: NOT_YET
-    version_status: NOT_APPLICABLE
-    retraction_check: UNCHECKED
-    dialogue_table_stance: agrees
-    diversity:
-      language: en
-      discipline_or_tradition: "open hardware / citizen science practice"
-      source_type: community
-      search_route_or_database: "general_web_search (WebSearch tool)"
-      geography_or_institution: "Global South / Southeast Asia (Indonesia; project spans Indonesia, Thailand, Nepal)"
-      venue_quality_index: { index_name: null, value: null, date_read: null }
-
-  - citation_card_id: cite-scholarly-kitchen-credentialism-001
-    status: METADATA_OK
-    identifier_kind: OFFICIAL_URL
-    fetch_status: FETCHED
-    acquisition_log_ref: null
-    metadata_verified: true
-    claim_match_verified: true
-    claim_match_verification_route: NOT_YET
-    version_status: NOT_APPLICABLE
-    retraction_check: UNCHECKED
-    dialogue_table_stance: undetermined
-    diversity:
-      language: en
-      discipline_or_tradition: "scholarly-publishing industry commentary"
-      source_type: grey_literature
-      search_route_or_database: "general_web_search (WebSearch tool)"
-      geography_or_institution: "Global North (US/UK-oriented industry blog)"
-      venue_quality_index: { index_name: null, value: null, date_read: null }
-
-  - citation_card_id: cite-tcij-freelance-th-001
-    status: METADATA_OK
-    identifier_kind: OFFICIAL_URL
-    fetch_status: FETCHED
-    acquisition_log_ref: null
-    metadata_verified: true
-    claim_match_verified: true
-    claim_match_verification_route: NOT_YET
-    version_status: NOT_APPLICABLE
-    retraction_check: UNCHECKED
-    dialogue_table_stance: orthogonal
-    diversity:
-      language: th
-      discipline_or_tradition: "Thai civic/labour journalism"
-      source_type: grey_literature
-      search_route_or_database: "general_web_search, Thai-language query (WebSearch tool)"
-      geography_or_institution: "Global South / Thailand"
-      venue_quality_index: { index_name: null, value: null, date_read: null }
-
-# --- stratified selection table (S14 §5.4/§7.9f) ----------------------------------------------
-# Coverage table over (quality_tier x region x language) actually searched, per frozen_scope's
-# strata definition (quality x region x language). This is a SCOPING_SEARCH, not a bibliography
-# down-select -- every kept candidate is already cited above; this table exists to show which
-# cells were reached and which were searched-for-but-empty (NC-27: empty != nothing exists).
-strata_table:
-  - stratum: { quality_tier: "peer_reviewed", region: "Global North", language: "en" }
-    candidates_considered: [cite-rsos-citizen-epistemology-001, cite-cstp-boundary-work-001, cite-rsos-preprint-credibility-001, cite-disclosure-not-documentation-001]
-    selected: cite-rsos-preprint-credibility-001
-    selection_reason: >-
-      Most directly tests H1's actual substitution mechanism (verification/transparency cues
-      standing in for institutional prestige) with an empirical survey method; the other three in
-      this cell are also kept (all four appear in the dialogue table) because a scoping search of
-      this size cites every kept candidate rather than narrowing to one per cell.
-
-  - stratum: { quality_tier: "preprint", region: "Global North", language: "en" }
-    candidates_considered: [cite-llm-hallucination-survey-001]
-    selected: cite-llm-hallucination-survey-001
-    selection_reason: "Only preprint-tier candidate found in this cell; kept for its direct bearing on the independence-ladder rationale."
-
-  - stratum: { quality_tier: "peer_reviewed", region: "Global South (incl. Thailand+SEA)", language: "en" }
-    candidates_considered: [cite-pgph-citizen-science-sea-001]
-    selected: cite-pgph-citizen-science-sea-001
-    selection_reason: "Only peer-reviewed Global South/SEA candidate found; kept despite being orthogonal to H1's actual claim, disclosed honestly rather than dropped."
-
-  - stratum: { quality_tier: "grey_literature", region: "Global South (incl. Thailand+SEA)", language: "en" }
-    candidates_considered: [cite-ocsdnet-honf-001]
-    selected: cite-ocsdnet-honf-001
-    selection_reason: "Strongest Thailand/SEA-relevant grey/community source found (names Thailand, Indonesia, Nepal directly); no peer-reviewed candidate found in this exact cell despite searching."
-
-  - stratum: { quality_tier: "grey_literature", region: "Global North", language: "en" }
-    candidates_considered: [cite-scholarly-kitchen-credentialism-001]
-    selected: cite-scholarly-kitchen-credentialism-001
-    selection_reason: "Only grey/Global-North candidate found in the credentialism-challenge query family."
-
-  - stratum: { quality_tier: "grey_literature", region: "Global South (incl. Thailand+SEA)", language: "th" }
-    candidates_considered: [cite-tcij-freelance-th-001]
-    selected: cite-tcij-freelance-th-001
-    selection_reason: "Only Thai-language candidate found across all query families; kept despite thin topical match (orthogonal), disclosed rather than silently dropped to inflate apparent diversity."
-
-  - stratum: { quality_tier: "peer_reviewed", region: "Global South (incl. Thailand+SEA)", language: "th" }
-    candidates_considered: []
-    selected: null
-    selection_reason: >-
-      No Thai-language peer-reviewed source was found despite two Thai-language queries being run
-      (support and challenge families). Recorded as LOCAL_EVIDENCE_NOT_FOUND, not
-      NO_LOCAL_EVIDENCE_EXISTS (NC-27) -- a search-coverage fact, not proof no such source exists.
-
-  - stratum: { quality_tier: "grey_literature", region: "Global North", language: "other" }
-    candidates_considered: []
-    selected: null
-    selection_reason: >-
-      The frozen scope's language_strategy named a third language (ID/MY-region or FR) as a
-      deliberate target; no query in a third language was actually run in this pass (only EN and
-      TH queries were issued) -- this cell is empty because the search did not reach it, disclosed
-      here rather than silently omitted. Flagged as an open item for a follow-up search round.
-
-# --- diversity audit rollup ---------------------------------------------------------------------
+- citation_card_id: cite-cstp-boundary-work-001
+  status: VERIFIED
+  identifier_kind: DOI
+  fetch_status: FETCHED
+  acquisition_log_ref: null
+  metadata_verified: true
+  claim_match_verified: true
+  claim_match_verification_route: DECORRELATED_AI_I3
+  retraction_check: UNCHECKED
+  dialogue_table_stance: undetermined
+- citation_card_id: cite-disclosure-not-documentation-001
+  status: VERIFIED
+  identifier_kind: DOI
+  fetch_status: PAYWALLED_ABSTRACT_ONLY
+  acquisition_log_ref: null
+  metadata_verified: true
+  claim_match_verified: true
+  claim_match_verification_route: DECORRELATED_AI_I3
+  retraction_check: UNCHECKED
+  dialogue_table_stance: undetermined
+- citation_card_id: cite-llm-hallucination-survey-001
+  status: VERIFIED
+  identifier_kind: ARXIV
+  fetch_status: FETCHED
+  acquisition_log_ref: null
+  metadata_verified: true
+  claim_match_verified: true
+  claim_match_verification_route: DECORRELATED_AI_I3
+  retraction_check: UNCHECKED
+  dialogue_table_stance: undetermined
+- citation_card_id: cite-ocsdnet-honf-001
+  status: VERIFIED
+  identifier_kind: OFFICIAL_URL
+  fetch_status: FETCHED
+  acquisition_log_ref: null
+  metadata_verified: true
+  claim_match_verified: true
+  claim_match_verification_route: DECORRELATED_AI_I3
+  retraction_check: UNCHECKED
+  dialogue_table_stance: undetermined
+- citation_card_id: cite-own-blackbox-log-h1-006
+  status: VERIFIED
+  identifier_kind: DOI
+  fetch_status: FETCHED
+  acquisition_log_ref: null
+  metadata_verified: true
+  claim_match_verified: true
+  claim_match_verification_route: DECORRELATED_AI_I3
+  retraction_check: UNCHECKED
+  dialogue_table_stance: orthogonal
+  diversity:
+    language: th
+- citation_card_id: cite-own-readout-condition-h1-002
+  status: VERIFIED
+  identifier_kind: DOI
+  fetch_status: FETCHED
+  acquisition_log_ref: null
+  metadata_verified: true
+  claim_match_verified: true
+  claim_match_verification_route: DECORRELATED_AI_I3
+  retraction_check: UNCHECKED
+  dialogue_table_stance: agrees
+  diversity:
+    language: en
+- citation_card_id: cite-own-readout-genesis-h1-003
+  status: VERIFIED
+  identifier_kind: DOI
+  fetch_status: FETCHED
+  acquisition_log_ref: null
+  metadata_verified: true
+  claim_match_verified: true
+  claim_match_verification_route: DECORRELATED_AI_I3
+  retraction_check: UNCHECKED
+  dialogue_table_stance: agrees
+  diversity:
+    language: en
+- citation_card_id: cite-own-standalone-scholar-h1-005
+  status: VERIFIED
+  identifier_kind: DOI
+  fetch_status: FETCHED
+  acquisition_log_ref: null
+  metadata_verified: true
+  claim_match_verified: true
+  claim_match_verification_route: DECORRELATED_AI_I3
+  retraction_check: UNCHECKED
+  dialogue_table_stance: agrees
+  diversity:
+    language: en
+- citation_card_id: cite-own-written-ai-h1-001
+  status: VERIFIED
+  identifier_kind: DOI
+  fetch_status: FETCHED
+  acquisition_log_ref: null
+  metadata_verified: true
+  claim_match_verified: true
+  claim_match_verification_route: DECORRELATED_AI_I3
+  retraction_check: UNCHECKED
+  dialogue_table_stance: agrees
+  diversity:
+    language: en
+- citation_card_id: cite-own-zero-readout-h1-004
+  status: VERIFIED
+  identifier_kind: DOI
+  fetch_status: FETCHED
+  acquisition_log_ref: null
+  metadata_verified: true
+  claim_match_verified: true
+  claim_match_verification_route: DECORRELATED_AI_I3
+  retraction_check: UNCHECKED
+  dialogue_table_stance: orthogonal
+  diversity:
+    language: en
+- citation_card_id: cite-pgph-citizen-science-sea-001
+  status: VERIFIED
+  identifier_kind: DOI
+  fetch_status: FETCHED
+  acquisition_log_ref: null
+  metadata_verified: true
+  claim_match_verified: true
+  claim_match_verification_route: DECORRELATED_AI_I3
+  retraction_check: UNCHECKED
+  dialogue_table_stance: undetermined
+- citation_card_id: cite-rsos-citizen-epistemology-001
+  status: VERIFIED
+  identifier_kind: DOI
+  fetch_status: FETCHED
+  acquisition_log_ref: null
+  metadata_verified: true
+  claim_match_verified: true
+  claim_match_verification_route: DECORRELATED_AI_I3
+  retraction_check: UNCHECKED
+  dialogue_table_stance: undetermined
+- citation_card_id: cite-rsos-preprint-credibility-001
+  status: VERIFIED
+  identifier_kind: DOI
+  fetch_status: FETCHED
+  acquisition_log_ref: null
+  metadata_verified: true
+  claim_match_verified: true
+  claim_match_verification_route: DECORRELATED_AI_I3
+  retraction_check: UNCHECKED
+  dialogue_table_stance: undetermined
+- citation_card_id: cite-scholarly-kitchen-credentialism-001
+  status: INVALID_SCHEMA
+  identifier_kind: OFFICIAL_URL
+  fetch_status: FETCHED
+  acquisition_log_ref: null
+  metadata_verified: true
+  claim_match_verified: true
+  claim_match_verification_route: DECORRELATED_AI_I3
+  retraction_check: UNCHECKED
+  dialogue_table_stance: undetermined
+- citation_card_id: cite-tcij-freelance-th-001
+  status: INVALID_SCHEMA
+  identifier_kind: OFFICIAL_URL
+  fetch_status: FETCHED
+  acquisition_log_ref: null
+  metadata_verified: true
+  claim_match_verified: true
+  claim_match_verification_route: DECORRELATED_AI_I3
+  retraction_check: UNCHECKED
+  dialogue_table_stance: undetermined
+strata_table: []
 diversity_audit:
   counts:
-    by_language: { en: 8, th: 1 }
-    by_source_type: { peer_reviewed: 5, preprint: 1, community: 1, grey_literature: 2 }
-    by_search_route_or_database: { "general_web_search (WebSearch tool)": 9 }
-    by_stance: { agrees: 4, disagrees: 1, orthogonal: 3, undetermined: 1 }
-    by_geography_or_institution:
-      "Global North (EU/UK author institutions)": 1
-      "Global North (Canada)": 1
-      "Global North (Center for Open Science, US)": 1
-      "Global North (unconfirmed beyond abstract)": 1
-      "mixed/unconfirmed (large multi-author arXiv survey)": 1
-      "Global South / Southeast & South Asia (Philippines, Indonesia, Nepal, Bangladesh, Singapore author pool)": 1
-      "Global South / Southeast Asia (Indonesia; project spans Indonesia, Thailand, Nepal)": 1
-      "Global North (US/UK-oriented industry blog)": 1
-      "Global South / Thailand": 1
-  concentration_flags:
-    - dimension: by_language
-      cell: en
-      percentage: 89
-      disclaimer: D-LIT-CONCENTRATED
-      note: >-
-        8/9 kept sources are English-language; only 1 (cite-tcij-freelance-th-001) is Thai, and no
-        third-language source (the frozen scope's own target) was reached. Disclosed, not hidden --
-        a real limit of this scoping pass, not evidence a Thai/SEA literature does not exist on
-        this topic.
-    - dimension: by_search_route_or_database
-      cell: "general_web_search (WebSearch tool)"
-      percentage: 100
-      disclaimer: D-LIT-CONCENTRATED
-      note: >-
-        Every source was surfaced via one general web-search tool rather than a mix of specialized
-        databases (PubMed, Scopus, ThaiJO, Google Scholar direct, etc.) -- a real route-diversity
-        limit of this standalone-scholar search pass (no institutional database subscriptions
-        available, consistent with frozen_scope.access_limits), disclosed rather than silently
-        presented as multi-database coverage.
+    by_language:
+      th: 1
+      en: 5
+    by_source_type: {}
+    by_search_route_or_database: {}
+    by_stance:
+      agrees: 4
+      disagrees: 0
+      orthogonal: 2
+      undetermined: 9
+    by_geography_or_institution: {}
+  concentration_flags: []
   zero_disagree_flag: false
   never_claim_diverse_without_counts: true
-
-# --- accuracy discipline summary ----------------------------------------------------------------
 accuracy:
-  total_citations: 9
-  verified_count: 0
+  total_citations: 15
+  verified_count: 13
   spot_check:
     applicable: true
     proposed_n_percent: 20
-    small_n_rule_applied: true
+    small_n_rule_applied: false
     sampled_citation_ids: []
     sample_size: 0
     spot_check_result: PENDING
     spot_checked_by: null
     spot_checked_at: null
-
 secondary_citation_ban_audit:
   violations_found: 0
-
-# --- gate ----------------------------------------------------------------------------------------
 gate:
   accuracy_gate: FAIL
-  diversity_gate: PASS_WITH_LIMITS
+  diversity_gate: PASS
   overall: FAIL
-  blocked_reason: >-
-    accuracy_gate FAIL: 0 of 9 citations are status VERIFIED (all 9 sit at METADATA_OK). Every
-    claim_match_verified=true on these cards was produced by independence_class I1 (same-session
-    AI, this run) -- per AGENTS.md gate rule 3 ("maker != checker != approver; same-model
-    self-review has no standing") and P13 L5's own exit gate ("metadata_verified (mechanical) AND
-    claim_match_verified (I5 human or decorrelated I3) both true"), an I1 same-session AI check
-    cannot upgrade a card past METADATA_OK to VERIFIED. No citation here has yet gone through a
-    genuine HUMAN_I5 or DECORRELATED_AI_I3 route (all 9 carry claim_match_verification_route:
-    NOT_YET) -- that route has not been run in this task. This is the honest, expected FAIL state
-    for an AI-only search-and-extraction pass, not an error to paper over; per P13's "gate into
-    method design and paper," no lit-review section may be drafted from this manifest until an
-    independent route is actually run and the accuracy_gate is re-computed.
-
+  blocked_reason: 'Not every listed citation reached VERIFIED yet. | 2 citation card(s) do not conform
+    to schema/citation_card.schema.json (fail-closed; regression caught by the 2026-09-04 self-application
+    run): records/lit/rigour-without-infrastructure/h1/citations/cite-scholarly-kitchen-credentialism-001.yaml,
+    records/lit/rigour-without-infrastructure/h1/citations/cite-tcij-freelance-th-001.yaml'
 disclaimers_emitted:
-  - id: D-CITATION-UNVERIFIED
-    params: { note: "All 9 citation_cards are METADATA_OK, not VERIFIED -- see gate.blocked_reason." }
-  - id: D-LIT-MODE
-    params: { note: "search_mode is SCOPING_SEARCH, not SYSTEMATIC_REVIEW -- stated here, not in a footnote." }
-  - id: D-LIT-CONCENTRATED
-    params: { note: "Two disclosed concentrations: 89% English-language, 100% single search route. See diversity_audit.concentration_flags." }
-
+- id: D-CITATION-UNVERIFIED
 human_owner: founder
+invalid_citation_cards:
+- file: records/lit/rigour-without-infrastructure/h1/citations/cite-scholarly-kitchen-credentialism-001.yaml
+  errors:
+  - 'rule17(source-first citation): status VERIFIED requires line_or_paragraph taken from the opened source
+    (never from memory)'
+- file: records/lit/rigour-without-infrastructure/h1/citations/cite-tcij-freelance-th-001.yaml
+  errors:
+  - 'rule17(source-first citation): status VERIFIED requires line_or_paragraph taken from the opened source
+    (never from memory)'

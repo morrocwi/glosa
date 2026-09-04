@@ -1,0 +1,48 @@
+$schema: citation_card.schema.json
+id: cite-own-written-ai-h3-001
+claim_ref: H3
+identifier:
+  kind: DOI
+  value: 10.5281/zenodo.22301202
+fetch_status: FETCHED
+fetched_at: '2026-09-04'
+metadata_verified: true
+metadata_verified_by: mechanical:zenodo_api
+metadata_verified_at: '2026-09-04'
+claim_match_verified: true
+claim_match_verified_by: route:codex
+claim_match_verified_at: null
+exact_passage: '"Institutions remain indispensable, but their authority is derivative
+  from epistemic work, not magical pedigree. AI is philosophically useful because
+  it removes the human face from a claim and reveals how much epistemic credit we
+  had quietly attached to the face."'
+page_or_locator: sources/WRITTEN_BY_AI_STILL_TRUE_v6.txt lines 35-37 (local full text)
+scope: CONTEXT_ONLY_NOT_EVIDENCE
+evidence_tier: Dr
+independence_class: I3
+who_verified: route:codex (cross-vendor AI; abstract/metadata level, not full text)
+  -- see cite-own-written-ai-h3-001.i3.json
+verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
+status: VERIFIED
+xenon_ledger_ref: null
+disclosure: 'own lineage: same author as the hypothesis (not independent evidence;
+  listed so the world literature is collided with it, per founder instruction BBL-098)
+  | I3 route (codex) judged from fetched metadata/abstract + the card''s quoted passage,
+  not full text: Metadata fetch failed, so title/authors/year cannot be confirmed.
+  The quoted passage appears in the fetched excerpt and is coherent with surrounding
+  text. It does not test H3''s cross-vendor detection claim, but plausibly provides
+  only methodological context about epistemic authority and source pedigree, matching
+  the card''s context-only scope. | I3 route (codex) judged from fetched metadata/abstract
+  + the card''s quoted passage, not full text: Metadata does not contradict the card,
+  and the quoted passage is found and consistent with the title/abstract. The source
+  discusses AI, provenance, institutional pedigree, and epistemic authority, which
+  is contextual to the methodology premise, but it does not test cross-vendor versus
+  same-vendor detection rates.'
+superseded_by: null
+notes: 'Same author as H3. stance: orthogonal -- answers a different question (does
+  institutional pedigree add epistemic value beyond the epistemic work itself), not
+  whether cross-vendor checking specifically out-detects same-vendor re-checking.
+  language: en.'
+fetched_from_url: https://doi.org/10.5281/zenodo.22301202
+line_or_paragraph: char offset 2487 of normalized fetched text (~paragraph 1); verbatim
+  prefix match

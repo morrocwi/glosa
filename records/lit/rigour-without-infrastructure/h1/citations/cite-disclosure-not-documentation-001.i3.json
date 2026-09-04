@@ -13,9 +13,9 @@
  "verdict": {
   "metadata_matches": true,
   "passage_plausible": true,
-  "claim_match": false,
-  "bearing": "CONTEXT_ONLY",
-  "reason": "Metadata does not contradict the card, and the quoted passage appears verbatim in the fetched text. However, H1 is not stated beyond its label, so the source’s support for that hypothesis cannot be independently checked from the provided material.",
+  "claim_match": true,
+  "bearing": "SUPPORTS",
+  "reason": "Metadata does not contradict the card. The quoted passage appears in the fetched abstract excerpt and supports the H1 component that AI-assisted scholarly work needs documentation of inputs, process, evaluation, and responsibility beyond mere disclosure, though it does not address unaffiliated scholars or the independence ladder directly.",
   "passage_mechanical": "verbatim prefix found in fetched open text"
  },
  "date": "2026-09-04"

@@ -24,5 +24,7 @@
  "xenon_ledger_ref": null,
  "disclosure": "claim-match judged from title/abstract only (not full text); independence I3 = different vendor, same operator machine; no external human (I5) yet",
  "superseded_by": null,
- "notes": "lens_used reference: Zero readout / retained distinction companion — claim attributed: retained distinction; zero readout = failure of retained distinction; DOI record 21665100; the \"manual read\" leg was performed by a cross-vendor AI route (OpenAI codex-cli), not a human — see registry/verification/lens_2026-09-04/"
+ "notes": "lens_used reference: Zero readout / retained distinction companion — claim attributed: retained distinction; zero readout = failure of retained distinction; DOI record 21665100; the \"manual read\" leg was performed by a cross-vendor AI route (OpenAI codex-cli), not a human — see registry/verification/lens_2026-09-04/",
+ "fetched_from_url": "https://zenodo.org/records/21665100",
+ "line_or_paragraph": "record abstract (description field), paragraph 1"
 }

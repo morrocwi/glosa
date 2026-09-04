@@ -1,0 +1,16 @@
+{
+ "vendor": "codex",
+ "fetched": {
+  "source": "fetch-failed",
+  "error": "HTTP Error 404: Not Found"
+ },
+ "verdict": {
+  "metadata_matches": true,
+  "passage_plausible": true,
+  "claim_match": true,
+  "bearing": "CONTEXT_ONLY",
+  "reason": "Excerpt matches a Zenodo blackbox log by Lahtee Yaoharee, published Sept. 4, 2026, with the quoted description present and consistent. It is not independent evidence for H2, but it is relevant context as the same author's disclosed raw-record practice lineage.",
+  "passage_mechanical": "verbatim prefix found in fetched open text"
+ },
+ "date": "2026-09-04"
+}

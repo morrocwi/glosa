@@ -1,0 +1,27 @@
+{
+ "vendor": "codex",
+ "fetched": {
+  "source": "crossref",
+  "title": "Too Consistent to Detect: A Study of Self-Consistent Errors in LLMs",
+  "authors": [
+   "Tan",
+   "Sun",
+   "Liu",
+   "Su",
+   "Cao",
+   "Chen"
+  ],
+  "year": 2025,
+  "container": "Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing",
+  "abstract": ""
+ },
+ "verdict": {
+  "metadata_matches": true,
+  "passage_plausible": true,
+  "claim_match": true,
+  "bearing": "SUPPORTS",
+  "reason": "Metadata does not contradict the card on title, authors, year, or venue. The quoted passage is mechanically found and matches the excerpt. It supports cross-model/external-verifier checking improving detection of LLM self-consistent errors, relevant to H3's cross-vendor independence mechanism.",
+  "passage_mechanical": "verbatim prefix found in fetched open text"
+ },
+ "date": "2026-09-04"
+}

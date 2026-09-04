@@ -1,0 +1,21 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: H3
+source_label: 'The Standalone Scholar: A Dual-Track Architecture for AI-Native Scholarship (Lahtee, Zenodo
+  10.5281/zenodo.22163849)'
+how_it_sees_the_problem: Sees independent human friction, repeat correspondence, and journal review as
+  what actually converts a plausible AI-assisted object into stress-tested knowledge -- plurality of outputs
+  from the same production process does not substitute for this.
+what_it_separates: Separates synthetic plurality (many drafts/checks from the same underlying process)
+  from independent validation (a genuinely decorrelated route) -- structurally the same distinction H3
+  draws between same-vendor and cross-vendor checking.
+what_it_assumes: Assumes independent validation in this paper's own sense requires human friction, not
+  merely a different AI vendor; H3's cross-vendor AI route is a weaker, AI-only approximation of this
+  paper's stronger independence requirement.
+stance: UNDETERMINED
+what_it_would_say_against_us: Would ask whether cross-vendor AI checking (I3) is actually decorrelated
+  enough to count as 'independent validation' in this paper's sense, or is still closer to synthetic plurality
+  if both vendors were trained on overlapping data/methodology.
+citation_card: cite-own-standalone-scholar-h3-005
+verified:
+  metadata_verified: true
+  claim_match_verified: false

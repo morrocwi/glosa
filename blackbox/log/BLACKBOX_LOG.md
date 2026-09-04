@@ -2,7 +2,7 @@
 
 > **นี่คือปูมเสียงดิบ ไม่ใช่บทความ** — ทุกบรรทัดคือคำพูดตามที่พูด (verbatim) ณ วันเวลานั้น ยังไม่ผ่านการปรุง ไม่ผ่านการตรวจอิสระ (tier: positional / Dr) บันทึกเพิ่มได้อย่างเดียว ไม่แก้ไม่ลบ (แก้ = บรรทัดใหม่ที่อ้างบรรทัดเดิม) เลนส์ที่ใช้มองปัญหา: **Readout Universe — Yaoharee Lahtee** (10.5281/zenodo.21529456, 10.5281/zenodo.22301318, 10.5281/zenodo.22301202; github.com/morrocwi/readout_universe) ระบบที่เก็บ: glosa (github.com/morrocwi/glosa) **ปูมนี้มีเฉพาะเสียงของผู้เขียนเท่านั้น** — ไม่มีบรรทัดที่ AI เขียน (คำตัดสินผู้เขียน 2026-09-04: บันทึกระบบที่ AI เคยใส่ไว้ 1 รายการถูกถอดออกและเก็บไว้ที่ blackbox/log/removed_ai_entries.json) ป้าย "เนื้อหาที่สร้างโดย AI" ที่ Facebook ติดให้บางโพสต์เกิดจากรูปประกอบที่ทำด้วย AI ไม่ใช่ตัวข้อความ จึงไม่ถูกนำมาบันทึก
 
-จำนวนบันทึก: 97 · อัปเดตล่าสุด: 2026-09-04T20:30:40+07:00
+จำนวนบันทึก: 100 · อัปเดตล่าสุด: 2026-09-04T21:07:04+07:00
 
 ## สารบัญตามหมวดความคิด (ไม่เรียงตามวันที่)
 
@@ -56,7 +56,7 @@
 - **BBL-2026-09-04-067** (2026-09-04, finding, cheapest-contextual-knowledge, cost-of-knowledge, dependence-on-authority) — ว่ากันตามจริงแล้ว ตอนนี้เรากำลังยุคที่ความรู้ที่สอดคล้องตามบริบท…
 - **BBL-2026-09-04-070** (2026-09-04, finding, global-labour, token-priced-labour, ai-brokers, white-collar-replacement, epistemic-reordering, chaotic-renaissance) — ในภาพรวมของแรงงานโลก หากแบ่งอย่างหยาบที่สุด อาจแบ่งได้เป็นสองประเภทใหญ่ ๆ คือ แรงงานที่ทัก…
 
-### วิธีวิทยา / ระบบ glosa (25)
+### วิธีวิทยา / ระบบ glosa (28)
 
 - **BBL-2026-09-04-001** (2026-09-04, ruling, spine, lens) — ที่สำคัญอย่าลืม ให้เริ่มจากมองปัญหาด้วยเลนส์ readout ก่อน แล้วแปลกลับเป็นภาษษโลกเพื่อสกัดส…
 - **BBL-2026-09-04-002** (2026-09-04, ruling, system) — ทำให้ทั้งหมดรวมเป็นระบบเดียวที่นิ่ง…
@@ -83,6 +83,9 @@
 - **BBL-2026-09-04-096** (2026-09-04, question, glosa-is-the-artifact, design-science, lens, self-application) — แล้วสกัดด้วยเลนส์ของเราและกระบวนทั้งหมดใน glosa นี่แหละตัว glosa ทั้งระบบคือเครื่องมือที่ว…
 - **BBL-2026-09-04-097** (2026-09-04, ruling, genre, concept-paper, GLS-2026-001) — เอกสารรนี้ให้ทำเป็นบทความวิชาการ แบบ concept paper นะ…
 - **BBL-2026-09-04-098** (2026-09-04, instruction, literature-review, own-lineage, collision, world-literature, GLS-2026-001) — ทบทวนวรรณกรรมจากเปเปอร์ทั้งหมดที่เราทำไปแล้วเช่น เขียนโดยเอไอ หรืออื่นๆที่ใหแ้นบวไ้ในโครงก…
+- **BBL-2026-09-04-099** (2026-09-04, ruling, paper, language-en, arxiv-twocol, layout, GLS-2026-001) — โอเคแต่บทความเราเอาภาษาอังงกฤษนะไม่เอาไทย และ ธีมแบบ  ArXiv สองคอมลัม แบบ ใน zenodo เอาสวย…
+- **BBL-2026-09-04-100** (2026-09-04, ruling, citation, locator, link, no-memory-citation, source-first) — กำหนดไปเลยไหม ถ้าไปเอาไซตมาต้องมีหน้าและบรรทัดร และลิงค์มาครบห้ามเขียนจากคามจำแบบนั้นไปเลย…
+- **BBL-2026-09-04-101** (2026-09-04, instruction, adopt, citation-rule) — อัพเดทเข้าระบบไปเลย…
 
 ### กล่องดำ / เสียงดิบ (7)
 
@@ -1918,4 +1921,16 @@
 **BBL-2026-09-04-098** · 20:30 · ผู้ก่อตั้ง · instruction · หมวด: วิธีวิทยา / ระบบ glosa · literature-review, own-lineage, collision, world-literature, GLS-2026-001 · ที่มา: chat 2026-09-04 ~21:58 — LRS must include our own prior papers (Written by AI Still True, Readout Condition, etc. attached to the project) and collide them with the world literature
 
 > ทบทวนวรรณกรรมจากเปเปอร์ทั้งหมดที่เราทำไปแล้วเช่น เขียนโดยเอไอ หรืออื่นๆที่ใหแ้นบวไ้ในโครงการแล้วไปทบทววรสรรณกรรมชนกับทั่วโลก
+
+**BBL-2026-09-04-099** · 20:45 · ผู้ก่อตั้ง · ruling · หมวด: วิธีวิทยา / ระบบ glosa · paper, language-en, arxiv-twocol, layout, GLS-2026-001 · ที่มา: chat 2026-09-04 ~22:30 — the GLS-2026-001 concept paper: English only (no Thai edition), arXiv two-column theme like the earlier Zenodo papers, polished
+
+> โอเคแต่บทความเราเอาภาษาอังงกฤษนะไม่เอาไทย และ ธีมแบบ  ArXiv สองคอมลัม แบบ ใน zenodo เอาสวยๆ
+
+**BBL-2026-09-04-100** · 21:07 · ผู้ก่อตั้ง · ruling · หมวด: วิธีวิทยา / ระบบ glosa · citation, locator, link, no-memory-citation, source-first · ที่มา: chat 2026-09-04 ~23:20 — after the I3 route caught composite quotes: every citation must carry page/line locator + link taken from the opened source; never from memory
+
+> กำหนดไปเลยไหม ถ้าไปเอาไซตมาต้องมีหน้าและบรรทัดร และลิงค์มาครบห้ามเขียนจากคามจำแบบนั้นไปเลยดีกว่าจะได้ลดปัญหาตั้งตแ่ต้นทางก่อนตรวจ
+
+**BBL-2026-09-04-101** · 21:07 · ผู้ก่อตั้ง · instruction · หมวด: วิธีวิทยา / ระบบ glosa · adopt, citation-rule · ที่มา: chat 2026-09-04 ~23:21
+
+> อัพเดทเข้าระบบไปเลย
 

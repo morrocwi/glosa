@@ -1,0 +1,16 @@
+{
+ "vendor": "codex",
+ "fetched": {
+  "source": "fetch-failed",
+  "error": "HTTP Error 404: Not Found"
+ },
+ "verdict": {
+  "metadata_matches": true,
+  "passage_plausible": true,
+  "claim_match": true,
+  "bearing": "SUPPORTS",
+  "reason": "No title/author/year contradiction is shown in the provided excerpt. The passage appears in the fetched text and matches the abstract’s theme. It supports the card’s limited scope: knowledge as auditable claim status rather than knower authority, relevant to H1’s checkable claim-card premise.",
+  "passage_mechanical": "verbatim prefix found in fetched open text"
+ },
+ "date": "2026-09-04"
+}

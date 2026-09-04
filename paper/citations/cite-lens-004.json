@@ -24,5 +24,7 @@
  "xenon_ledger_ref": null,
  "disclosure": "claim-match judged from title/abstract only (not full text); independence I3 = different vendor, same operator machine; no external human (I5) yet",
  "superseded_by": null,
- "notes": "lens_used reference: The Readout Condition (E–A–D) — claim attributed: Readout Condition: existence, attribution, disclosure; DOI record 22301318; the \"manual read\" leg was performed by a cross-vendor AI route (OpenAI codex-cli), not a human — see registry/verification/lens_2026-09-04/"
+ "notes": "lens_used reference: The Readout Condition (E–A–D) — claim attributed: Readout Condition: existence, attribution, disclosure; DOI record 22301318; the \"manual read\" leg was performed by a cross-vendor AI route (OpenAI codex-cli), not a human — see registry/verification/lens_2026-09-04/",
+ "fetched_from_url": "https://zenodo.org/records/22301318",
+ "line_or_paragraph": "record abstract (description field), paragraph 1"
 }

@@ -1,0 +1,53 @@
+$schema: citation_card.schema.json
+id: cite-own-civilization-of-knowledge-h2-007
+claim_ref: H2
+identifier:
+  kind: DOI
+  value: 10.5281/zenodo.18943971
+fetch_status: FETCHED
+fetched_at: '2026-09-04'
+metadata_verified: true
+metadata_verified_by: mechanical:zenodo_api
+metadata_verified_at: '2026-09-04'
+claim_match_verified: true
+claim_match_verified_by: route:codex
+claim_match_verified_at: null
+exact_passage: '"What changes across civilizations is not only the accumulation of
+  truths, but the succession of agencies authorized to interpret the world''s signals
+  and stabilize those interpretations as social reality... These do not become knowledge
+  by themselves. They must be translated into meaningful accounts, stabilized through
+  repeatable and durable forms, and socially authorized through institutions, procedures,
+  or recognized interpreters."'
+page_or_locator: Zenodo record 10.5281/zenodo.18943971, description
+scope: DIRECT_QUOTATION
+evidence_tier: Dr
+independence_class: I3
+who_verified: route:codex (cross-vendor AI; abstract/metadata level, not full text)
+  -- see cite-own-civilization-of-knowledge-h2-007.i3.json
+verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
+status: VERIFIED
+xenon_ledger_ref: null
+disclosure: 'own lineage: same author as the hypothesis (not independent evidence;
+  listed so the world literature is collided with it, per founder instruction BBL-098)
+  | I3 route (codex) judged from fetched metadata/abstract + the card''s quoted passage,
+  not full text: Metadata fetch failed, so title/authors/year cannot be independently
+  matched from metadata. The fetched excerpt contains the quoted passage and it coheres
+  with the title/description. The passage bears directly on H2 by emphasizing social
+  authorization through institutions, procedures, or recognized interpreters, challenging
+  H2''s non-institutional rigour claim. | I3 route (codex) judged from fetched metadata/abstract
+  + the card''s quoted passage, not full text: Metadata does not contradict the card,
+  and the quoted passage appears in the fetched text. The passage directly bears on
+  H2 by making social authorization through institutions, procedures, or recognized
+  interpreters necessary for knowledge stabilization, which challenges H2’s claim
+  that institutional credentials are not uniquely load-bearing.'
+superseded_by: null
+notes: 'Same author as H2 (hub member, cluster ''ep''/''ai'', description bears directly
+  on epistemic authority). stance: disagrees -- argues signals ''must be translated
+  into meaningful accounts, stabilized through repeatable and durable forms, and socially
+  authorized through institutions, procedures, or recognized interpreters,'' i.e.
+  social/institutional authorization is what has historically done the stabilizing
+  work H2 wants a claim card to do alone. This is a genuine collision, not a supporting
+  citation. language: en.'
+fetched_from_url: https://doi.org/10.5281/zenodo.18943971
+line_or_paragraph: char offset 634 of normalized fetched text (~paragraph 1); verbatim
+  prefix match

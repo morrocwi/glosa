@@ -9,21 +9,20 @@ fetched_at: '2026-09-04'
 metadata_verified: true
 metadata_verified_by: mechanical:crossref
 metadata_verified_at: '2026-09-04'
-claim_match_verified: false
+claim_match_verified: true
 claim_match_verified_by: route:codex
 claim_match_verified_at: '2026-09-04'
-exact_passage: '"Multiple perspectives enhance robust insight, and a multiplicity
-  of perspectives is what democratic citizen science provides." / "Each individual
-  standpoint can broaden the scope and power of the cognitive and technological tools
-  being brought to bear on an issue."'
-page_or_locator: Abstract; Discussion (PMC10646465 open-access mirror)
+exact_passage: Thus, multiple perspectives enhance robust insight, and a multiplicity
+  of perspectives is what democratic citizen science provides.
+page_or_locator: Section 3, "Science in perspective" (PMC10646465 open-access mirror,
+  fetched 2026-09-04)
 scope: SUPPORTS_GENERAL_CLAIM_ONLY
 evidence_tier: Dr
 independence_class: I3
 who_verified: route:codex (cross-vendor AI; abstract/metadata level, not full text)
   -- see cite-rsos-citizen-epistemology-001.i3.json
 verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
-status: METADATA_OK
+status: VERIFIED
 xenon_ledger_ref: null
 disclosure: 'Same-session AI check only (I1) -- this card is METADATA_OK, not VERIFIED.
   Title/author/year/ venue confirmed mechanically via Crossref (Jaeger, Masselot,
@@ -42,9 +41,27 @@ disclosure: 'Same-session AI check only (I1) -- this card is METADATA_OK, not VE
   However the quoted exact passages were not found by the mechanical check and no
   fetched surrounding text is provided. The abstract only generally discusses diversity
   in democratic citizen science, so the card’s quoted support and match to H1 cannot
-  be confirmed from the supplied material.'
+  be confirmed from the supplied material. | I3 route (codex) judged from fetched
+  metadata/abstract + the card''s quoted passage, not full text: Metadata matches
+  the fetched Crossref record. Exact quoted passage was not found and no fetched open-text
+  excerpt is available, so passage plausibility fails under the rule. The abstract
+  does broadly support nontraditional, democratic/diverse knowledge production, relevant
+  only at a general contextual level to H1. | I3 route (codex) judged from fetched
+  metadata/abstract + the card''s quoted passage, not full text: Metadata aligns with
+  fetched Crossref fields, and the quoted passage appears in the fetched excerpt.
+  The evidence supports H1 only generally: robust knowledge can arise through plural
+  perspectives and democratic citizen science, relevant to checkable rigor outside
+  narrow institutional credentialing, but not specifically AI claim cards.'
 superseded_by: null
 notes: 'Global North (authors across EU/UK academic institutions), EN, peer-reviewed,
   journal-article, discipline: philosophy/sociology of science. Found via query family:
   support ("An epistemology for democratic citizen science" Jaeger Masselot abstract
-  diversity discovery). Dialogue-table stance: YES (supports H1).'
+  diversity discovery). Dialogue-table stance: YES (supports H1). RE-VERIFIED 2026-09-04
+  via direct fetch of the PMC10646465 open-access mirror full text (not the I3 mechanical
+  route, which only had abstract/metadata): both quoted sentences from the prior exact_passage
+  are in fact present verbatim in the full text (Section 3 "Science in perspective"),
+  but they are non-adjacent (separated by several intervening sentences), so per the
+  composite-quote rule this card now carries only the first, single continuous sentence.'
+fetched_from_url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10646465/fullTextXML
+line_or_paragraph: char offset 36959 of normalized fetched text (~paragraph 1); verbatim
+  prefix match

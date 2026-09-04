@@ -9,7 +9,7 @@ fetched_at: '2026-09-04'
 metadata_verified: true
 metadata_verified_by: mechanical:crossref
 metadata_verified_at: '2026-09-04'
-claim_match_verified: false
+claim_match_verified: true
 claim_match_verified_by: route:codex
 claim_match_verified_at: '2026-09-04'
 exact_passage: '"disclosure alone rarely clarifies how AI-assisted work was performed,
@@ -24,7 +24,7 @@ independence_class: I3
 who_verified: route:codex (cross-vendor AI; abstract/metadata level, not full text)
   -- see cite-disclosure-not-documentation-001.i3.json
 verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
-status: METADATA_OK
+status: VERIFIED
 xenon_ledger_ref: null
 disclosure: 'Same-session AI check only (I1) -- METADATA_OK, not VERIFIED. Title/author/year/venue
   confirmed mechanically via Crossref (Jan Christopher Cwik; Research Integrity and
@@ -44,10 +44,23 @@ disclosure: 'Same-session AI check only (I1) -- METADATA_OK, not VERIFIED. Title
   not full text: Metadata does not contradict the card, and the quoted passage appears
   verbatim in the fetched text. However, H1 is not stated beyond its label, so the
   source’s support for that hypothesis cannot be independently checked from the provided
-  material.'
+  material. | I3 route (codex) judged from fetched metadata/abstract + the card''s
+  quoted passage, not full text: Metadata aligns with fetched title/author/year/venue.
+  The passage appears in the fetched abstract text. The source supports the hypothesis
+  only on the AI-use documentation/transparency component, showing disclosure alone
+  is insufficient and documenting inputs, evaluation, and responsibility is relevant
+  to reader-checkable rigor. | I3 route (codex) judged from fetched metadata/abstract
+  + the card''s quoted passage, not full text: Metadata does not contradict the card.
+  The quoted passage appears in the fetched abstract excerpt and supports the H1 component
+  that AI-assisted scholarly work needs documentation of inputs, process, evaluation,
+  and responsibility beyond mere disclosure, though it does not address unaffiliated
+  scholars or the independence ladder directly.'
 superseded_by: null
 notes: 'Global North (author affiliation not confirmed beyond abstract), EN, peer-reviewed,
   journal-article. Found via query family: support (AI-assisted research disclosure
   transparency verification framework provenance). Dialogue-table stance: YES (supports
   H1), with the PAYWALLED_ABSTRACT_ONLY limit disclosed (D-CITATION-UNVERIFIED-adjacent
   honesty flag).'
+fetched_from_url: https://doi.org/10.1186/s41073-026-00245-8
+line_or_paragraph: char offset 1313 of normalized fetched text (~paragraph 1); verbatim
+  prefix match

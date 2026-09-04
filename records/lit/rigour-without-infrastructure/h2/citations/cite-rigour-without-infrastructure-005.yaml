@@ -46,7 +46,18 @@ disclosure: 'Crossref-confirmed: Mohan Dutta et al. (2021), "Decolonizing Open S
   passage, not full text: Metadata does not contradict the card. The quoted passage
   is not a continuous verbatim hit because of the ellipsis, but both quoted parts
   appear in the fetched abstract. The source provides contextual discussion of Global
-  South/decolonizing open science, matching the card’s CONTEXT_ONLY scope.'
+  South/decolonizing open science, matching the card’s CONTEXT_ONLY scope. | I3 route
+  (codex) judged from fetched metadata/abstract + the card''s quoted passage, not
+  full text: Metadata does not contradict the card. The quoted passage is plausibly
+  drawn from the provided abstract despite verbatim search failure due ellipsis. As
+  context only, it bears on H2 by challenging hegemonic institutional/Northern knowledge-production
+  authority and naming alternative bases of openness, but it does not directly evidence
+  claim-card rigour. | I3 route (codex) judged from fetched metadata/abstract + the
+  card''s quoted passage, not full text: Metadata matches title/year/container and
+  listed lead authors do not contradict the card. The passage is plausibly drawn from
+  the provided abstract with ellipsis. As context only, it bears on non-Northern/institutional
+  knowledge legitimacy and decolonizing alternatives, relevant but not direct evidence
+  for H2.'
 superseded_by: null
 notes: 'Diversity: language=en, source_type=peer_reviewed, geography=Global South
   (author collective spans India, Aotearoa/NZ, Bangladesh, Philippines and other Southern/diasporic

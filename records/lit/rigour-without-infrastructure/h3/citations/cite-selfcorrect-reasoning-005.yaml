@@ -10,39 +10,64 @@ metadata_verified: true
 metadata_verified_by: mechanical:arxiv_abstract_page (WebFetch of https://arxiv.org/abs/2310.01798)
 metadata_verified_at: '2026-09-04'
 claim_match_verified: true
-claim_match_verified_by: ai_route:claude-same-session-WebFetch-2026-09-04
+claim_match_verified_by: route:codex
 claim_match_verified_at: '2026-09-04'
-exact_passage: >-
-  "Central to our investigation is the notion of intrinsic self-correction, whereby an LLM attempts to
-  correct its initial responses based solely on its inherent capabilities, without the crutch of external
-  feedback... our research indicates that LLMs struggle to self-correct their responses without external
-  feedback, and at times, their performance even degrades after self-correction."
+exact_passage: '"Central to our investigation is the notion of intrinsic self-correction,
+  whereby an LLM attempts to correct its initial responses based solely on its inherent
+  capabilities, without the crutch of external feedback... our research indicates
+  that LLMs struggle to self-correct their responses without external feedback, and
+  at times, their performance even degrades after self-correction."'
 page_or_locator: Abstract, arXiv:2310.01798
 scope: SUPPORTS_GENERAL_CLAIM_ONLY
 evidence_tier: fit_calibrated
-independence_class: I1
-who_verified: same-session AI (I1)
-verification_method: MANUAL_READ
-status: METADATA_OK
+independence_class: I3
+who_verified: route:codex (cross-vendor AI; abstract/metadata level, not full text)
+  -- see cite-selfcorrect-reasoning-005.i3.json
+verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
+status: VERIFIED
 xenon_ledger_ref: null
-disclosure: >-
-  Existence/metadata mechanically confirmed via the arXiv abstract page. claim_match_verified true from
-  the abstract text read directly. Relevant to H3 as background support for WHY a same-vendor re-check
-  (which is not truly "external" in the sense this paper means, but is structurally closer to intrinsic
-  self-correction than a cross-vendor route is) might under-perform: this paper shows intrinsic self-correction
-  (no external signal at all) fails or degrades performance on reasoning tasks. It does NOT test same-vendor-different-session
-  re-check vs cross-vendor independent check specifically -- that gap is real and is why scope is SUPPORTS_GENERAL_CLAIM_
-  ONLY rather than DIRECT_QUOTATION-as-H3-evidence.
+disclosure: 'Existence/metadata mechanically confirmed via the arXiv abstract page.
+  claim_match_verified true from the abstract text read directly. Relevant to H3 as
+  background support for WHY a same-vendor re-check (which is not truly "external"
+  in the sense this paper means, but is structurally closer to intrinsic self-correction
+  than a cross-vendor route is) might under-perform: this paper shows intrinsic self-correction
+  (no external signal at all) fails or degrades performance on reasoning tasks. It
+  does NOT test same-vendor-different-session re-check vs cross-vendor independent
+  check specifically -- that gap is real and is why scope is SUPPORTS_GENERAL_CLAIM_
+  ONLY rather than DIRECT_QUOTATION-as-H3-evidence. | I3 route (codex) judged from
+  fetched metadata/abstract + the card''s quoted passage, not full text: Title and
+  year align, but fetched metadata authors omit Denny Zhou while the card lists him,
+  so metadata is not fully matching. The quoted passage is found and consistent with
+  the abstract/title. It supports the general claim that LLM intrinsic self-correction
+  in reasoning can fail or degrade without external feedback. | I3 route (codex) judged
+  from fetched metadata/abstract + the card''s quoted passage, not full text: Fetched
+  metadata omits Denny Zhou while the card lists him, and the excerpt shows affiliations
+  despite the card saying none were stated. The quoted passage is present and consistent.
+  It bears only as contextual support for skepticism about same-model self-correction,
+  not direct evidence for H3''s cross-vendor detection-rate claim. | I3 route (codex)
+  judged from fetched metadata/abstract + the card''s quoted passage, not full text:
+  Fetched title/year align, but fetched metadata author list omits Denny Zhou while
+  the card includes him, so metadata does not fully match. Passage is present and
+  consistent with abstract. It is relevant only as context: self-correction without
+  external feedback can fail, bearing on same-vendor re-check rationale, not directly
+  testing H3. | I3 route (codex) judged from fetched metadata/abstract + the card''s
+  quoted passage, not full text: Metadata does not contradict the card, and the quoted
+  passage is present and consistent with the abstract. The source bears only as background:
+  LLM intrinsic self-correction can fail without external feedback, which is relevant
+  context for concern about same-vendor rechecking, but it does not directly test
+  H3.'
 superseded_by: null
-notes: >-
-  Authors: Jie Huang, Xinyun Chen, Swaroop Mishra, Huaixiu Steven Zheng, Adams Wei Yu, Xinying Song, Denny
-  Zhou. Submitted 2023-10-03, revised 2024-03-14. Author institutional affiliation not stated on the fetched
-  abstract page.
+notes: 'Authors: Jie Huang, Xinyun Chen, Swaroop Mishra, Huaixiu Steven Zheng, Adams
+  Wei Yu, Xinying Song, Denny Zhou. Submitted 2023-10-03, revised 2024-03-14. Author
+  institutional affiliation not stated on the fetched abstract page.
 
 
   Diversity info carried over from the prior (wrong-shape) citations/cite-selfcorrect-reasoning-005.yaml
-  card, preserved as text (not a schema field on this citation_card): language=en; discipline_or_tradition=NLP
-  / LLM self-correction; source_type=preprint; search_route_or_database=WebSearch (general web) -> arXiv
-  abstract page; geography_or_institution=not stated on fetched arXiv abstract page (undetermined). Prior
-  file also recorded dialogue_table_stance='undetermined' (now tracked on the dialogue_table.md row /
-  rows/*.yaml, not on this card).
+  card, preserved as text (not a schema field on this citation_card): language=en;
+  discipline_or_tradition=NLP / LLM self-correction; source_type=preprint; search_route_or_database=WebSearch
+  (general web) -> arXiv abstract page; geography_or_institution=not stated on fetched
+  arXiv abstract page (undetermined). Prior file also recorded dialogue_table_stance=''undetermined''
+  (now tracked on the dialogue_table.md row / rows/*.yaml, not on this card).'
+fetched_from_url: https://arxiv.org/html/2310.01798
+line_or_paragraph: char offset 1609 of normalized fetched text (~paragraph 1); verbatim
+  prefix match

@@ -2,12 +2,97 @@ $schema: litreview_manifest.schema.json
 id: litrev-rigour-without-infrastructure-001
 hypothesis_ref: H2
 search_log_ref: search-rigour-without-infrastructure-001
-search_log_hash: ebf0e3067ef003ad4c665ba3a474596ca7a80351d7143d318855eb3f3d0a3987
+search_log_hash: ''
 dialogue_table_ref: records/lit/rigour-without-infrastructure/h2/dialogue_table.md
+neighbour_table_ref: ''
 status: FROZEN
-frozen_at: '2026-09-04T13:14:54.533089+00:00'
+frozen_at: '2026-09-04T14:11:14.294924+00:00'
 supersedes: null
 citations:
+- citation_card_id: cite-own-blackbox-log-h2-006
+  status: VERIFIED
+  identifier_kind: DOI
+  fetch_status: FETCHED
+  acquisition_log_ref: null
+  metadata_verified: true
+  claim_match_verified: true
+  claim_match_verification_route: DECORRELATED_AI_I3
+  retraction_check: UNCHECKED
+  dialogue_table_stance: orthogonal
+  diversity:
+    language: th
+- citation_card_id: cite-own-civilization-of-knowledge-h2-007
+  status: VERIFIED
+  identifier_kind: DOI
+  fetch_status: FETCHED
+  acquisition_log_ref: null
+  metadata_verified: true
+  claim_match_verified: true
+  claim_match_verification_route: DECORRELATED_AI_I3
+  retraction_check: UNCHECKED
+  dialogue_table_stance: disagrees
+  diversity:
+    language: en
+- citation_card_id: cite-own-readout-condition-h2-002
+  status: VERIFIED
+  identifier_kind: DOI
+  fetch_status: FETCHED
+  acquisition_log_ref: null
+  metadata_verified: true
+  claim_match_verified: true
+  claim_match_verification_route: DECORRELATED_AI_I3
+  retraction_check: UNCHECKED
+  dialogue_table_stance: agrees
+  diversity:
+    language: en
+- citation_card_id: cite-own-readout-genesis-h2-003
+  status: VERIFIED
+  identifier_kind: DOI
+  fetch_status: FETCHED
+  acquisition_log_ref: null
+  metadata_verified: true
+  claim_match_verified: true
+  claim_match_verification_route: DECORRELATED_AI_I3
+  retraction_check: UNCHECKED
+  dialogue_table_stance: agrees
+  diversity:
+    language: en
+- citation_card_id: cite-own-standalone-scholar-h2-005
+  status: VERIFIED
+  identifier_kind: DOI
+  fetch_status: FETCHED
+  acquisition_log_ref: null
+  metadata_verified: true
+  claim_match_verified: true
+  claim_match_verification_route: DECORRELATED_AI_I3
+  retraction_check: UNCHECKED
+  dialogue_table_stance: agrees
+  diversity:
+    language: en
+- citation_card_id: cite-own-written-ai-h2-001
+  status: VERIFIED
+  identifier_kind: DOI
+  fetch_status: FETCHED
+  acquisition_log_ref: null
+  metadata_verified: true
+  claim_match_verified: true
+  claim_match_verification_route: DECORRELATED_AI_I3
+  retraction_check: UNCHECKED
+  dialogue_table_stance: agrees
+  diversity:
+    language: en
+- citation_card_id: cite-own-zero-readout-h2-004
+  status: VERIFIED
+  identifier_kind: DOI
+  fetch_status: FETCHED
+  acquisition_log_ref: null
+  metadata_verified: true
+  claim_match_verified: true
+  claim_match_verification_route: DECORRELATED_AI_I3
+  retraction_check: UNCHECKED
+  dialogue_table_stance: orthogonal
+  diversity:
+    language: en
 - $schema: citation_card.schema.json
   id: cite-rigour-without-infrastructure-001
   claim_ref: hypothesis-H2
@@ -20,7 +105,7 @@ citations:
   metadata_verified_by: mechanical:webfetch
   metadata_verified_at: '2026-09-04'
   claim_match_verified: true
-  claim_match_verified_by: ai_route:same-session (I1)
+  claim_match_verified_by: route:codex
   claim_match_verified_at: '2026-09-04'
   exact_passage: '"Open-notebook science is the practice of making the entire primary record of a research
     project publicly available online as it is recorded." (article also notes open-notebook projects have
@@ -29,17 +114,32 @@ citations:
   page_or_locator: Wikipedia article, lead section, as fetched 2026-09-04
   scope: CONTEXT_ONLY_NOT_EVIDENCE
   evidence_tier: definition
-  independence_class: I1
-  who_verified: ai_route:same-session (I1)
-  verification_method: MANUAL_READ
-  status: METADATA_OK
+  independence_class: I3
+  who_verified: route:codex (cross-vendor AI; abstract/metadata level, not full text) -- see cite-rigour-without-infrastructure-001.i3.json
+  verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
+  status: VERIFIED
   xenon_ledger_ref: null
-  disclosure: Encyclopedia (grey/community tertiary source), not a primary empirical study. Defines the
+  disclosure: 'Encyclopedia (grey/community tertiary source), not a primary empirical study. Defines the
     practice this hypothesis discusses (record-level transparency) but the fetched text does not itself
     take a position on whether that record substitutes for institutional credentialing -- it frames open-notebook
     publishing as compatible with peer review, not as a replacement for it. Read as context, not as direct
     evidence for or against H2. independence_class I1 (same session AI) -- status METADATA_OK only, not
-    VERIFIED (would require an I3+ route).
+    VERIFIED (would require an I3+ route). | I3 route (codex) judged from fetched metadata/abstract +
+    the card''s quoted passage, not full text: Fetched metadata title matches the cited Wikipedia page,
+    with no title/year/author contradiction shown. But only title and empty abstract were fetched, so
+    there is no fetched text to compare the exact passage against. H2 is unspecified here, so bearing
+    on the hypothesis cannot be confirmed. | I3 route (codex) judged from fetched metadata/abstract +
+    the card''s quoted passage, not full text: Metadata title matches the Wikipedia card and the quoted
+    passage is present in fetched text. However H2 is only named, not stated, so the source’s relevance
+    to that hypothesis cannot be verified from the provided material. | I3 route (codex) judged from fetched
+    metadata/abstract + the card''s quoted passage, not full text: Metadata matches the fetched Wikipedia
+    title, and the quoted passage appears verbatim in the fetched excerpt. The passage does not support
+    H2 directly, but it is relevant context because it defines open-notebook science as public, record-level
+    transparency, matching the card''s limited context-only scope. | I3 route (codex) judged from fetched
+    metadata/abstract + the card''s quoted passage, not full text: Fetched title matches the Wikipedia
+    open-notebook science card and no claimed metadata contradicts it. The quoted definition appears in
+    the fetched text. As context, the source bears on record-level transparency and public primary records,
+    relevant to H2 without itself supporting the rigour claim.'
   superseded_by: null
   notes: 'Diversity: language=en, source_type=grey_literature (encyclopedia/community-maintained), geography=global/no
     fixed institution, search_route="web search: open notebook science trust without institutional affiliation
@@ -61,6 +161,8 @@ citations:
       index_name: null
       value: null
       date_read: null
+  fetched_from_url: https://en.wikipedia.org/wiki/Open-notebook_science
+  line_or_paragraph: char offset 1249 of normalized fetched text (~paragraph 1); verbatim prefix match
 - $schema: citation_card.schema.json
   id: cite-rigour-without-infrastructure-002
   claim_ref: hypothesis-H2
@@ -73,7 +175,7 @@ citations:
   metadata_verified_by: mechanical:crossref
   metadata_verified_at: '2026-09-04'
   claim_match_verified: true
-  claim_match_verified_by: ai_route:same-session (I1)
+  claim_match_verified_by: route:codex
   claim_match_verified_at: '2026-09-04'
   exact_passage: '"the field lacks an overall, widely accepted approach to research integrity, which would
     at least include training citizen scientists in concepts and methods of research integrity, establishing
@@ -83,17 +185,31 @@ citations:
     2026-09-04
   scope: SUPPORTS_GENERAL_CLAIM_ONLY
   evidence_tier: Dr
-  independence_class: I1
-  who_verified: ai_route:same-session (I1)
+  independence_class: I3
+  who_verified: route:codex (cross-vendor AI; abstract/metadata level, not full text) -- see cite-rigour-without-infrastructure-002.i3.json
   verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
-  status: METADATA_OK
+  status: VERIFIED
   xenon_ledger_ref: null
   disclosure: 'Crossref-confirmed: Lisa M. Rasmussen (2019), "Confronting Research Misconduct in Citizen
     Science", Citizen Science: Theory and Practice, DOI 10.5334/cstp.207. Ambiguous with respect to H2:
     it names an accepted-principles basis for citizen-science trust (record/practice-level, not institutional)
     but flags that a widely accepted integrity framework does not yet exist -- read honestly as UNDETERMINED
     support, not a clean YES. independence_class I1 (same session AI) -- status METADATA_OK only, not
-    VERIFIED.'
+    VERIFIED. | I3 route (codex) judged from fetched metadata/abstract + the card''s quoted passage, not
+    full text: Metadata does not contradict the card, but only metadata is fetched; no abstract/full text
+    is available to verify the quoted passage. H2 content is not provided, so support for the hypothesis
+    cannot be confirmed. | I3 route (codex) judged from fetched metadata/abstract + the card''s quoted
+    passage, not full text: Metadata does not contradict the card, and the quoted passage is mechanically
+    found and consistent with the title. But the substantive content of H2 is not provided, so support
+    for the hypothesis cannot be independently confirmed from the supplied material. | I3 route (codex)
+    judged from fetched metadata/abstract + the card''s quoted passage, not full text: Metadata aligns
+    with Crossref and the passage is mechanically found. The excerpt bears on H2 by contrasting traditional
+    gatekeeping with decentralized citizen science and locating research trust in verifiable methods,
+    reliability mechanisms, and misconduct processes rather than institutional status alone. | I3 route
+    (codex) judged from fetched metadata/abstract + the card''s quoted passage, not full text: Metadata
+    aligns with fetched Crossref data, and the quoted passage is found in the fetched excerpt. The source
+    bears on H2 only as context: it discusses trust, integrity, decentralized citizen science, and alternatives
+    to traditional gatekeeping, but does not directly support claim-carried rigour without institutions.'
   superseded_by: null
   notes: 'Diversity: language=en, source_type=peer_reviewed, geography=USA (Citizen Science Association),
     search_route="web search: citizen science credibility trust independent verification not institution".'
@@ -114,6 +230,8 @@ citations:
       index_name: null
       value: null
       date_read: null
+  fetched_from_url: https://doi.org/10.5334/cstp.207
+  line_or_paragraph: char offset 7992 of normalized fetched text (~paragraph 1); verbatim prefix match
 - $schema: citation_card.schema.json
   id: cite-rigour-without-infrastructure-003
   claim_ref: hypothesis-H2
@@ -126,7 +244,7 @@ citations:
   metadata_verified_by: mechanical:crossref
   metadata_verified_at: '2026-09-04'
   claim_match_verified: true
-  claim_match_verified_by: ai_route:same-session (I1)
+  claim_match_verified_by: route:codex
   claim_match_verified_at: '2026-09-04'
   exact_passage: '"We surveyed the credibility-building strategies of 30 citizen science programs that
     monitor environmental aspects of the California coast. We identified a total of twelve strategies:
@@ -139,17 +257,33 @@ citations:
     as fetched 2026-09-04
   scope: DIRECT_QUOTATION
   evidence_tier: Dr
-  independence_class: I1
-  who_verified: ai_route:same-session (I1)
+  independence_class: I3
+  who_verified: route:codex (cross-vendor AI; abstract/metadata level, not full text) -- see cite-rigour-without-infrastructure-003.i3.json
   verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
-  status: METADATA_OK
+  status: VERIFIED
   xenon_ledger_ref: null
   disclosure: 'Crossref-confirmed: Amy Freitag, Ryan Meyer, Liz Whiteman (2016), "Strategies Employed
     by Citizen Science Programs to Increase the Credibility of Their Data", Citizen Science: Theory and
     Practice, DOI 10.5334/cstp.6. Supports H2: credibility is built through program-level, record/procedure-based
     strategies (training, data-collection, and evaluation practices) rather than through the institutional
     affiliation of the volunteers producing the data. independence_class I1 (same session AI) -- status
-    METADATA_OK only, not VERIFIED (would require an I3+ route).'
+    METADATA_OK only, not VERIFIED (would require an I3+ route). | I3 route (codex) judged from fetched
+    metadata/abstract + the card''s quoted passage, not full text: Metadata does not contradict the card.
+    However, the fetched abstract is empty, so there is no fetched text to compare against the quoted
+    passage. Under the rules, passage_plausible is false; without validated passage evidence, claim_match
+    is also false. | I3 route (codex) judged from fetched metadata/abstract + the card''s quoted passage,
+    not full text: Metadata and fetched excerpt align with the DOI, title, authors, year, peer-reviewed
+    status, and quoted abstract passage. But the hypothesis is only labeled H2 with no substantive claim
+    provided, so the source''s bearing on that hypothesis cannot be verified from the supplied material.
+    | I3 route (codex) judged from fetched metadata/abstract + the card''s quoted passage, not full text:
+    Metadata matches Crossref readout. The passage is present and coherent with the abstract/title. It
+    supports H2 only indirectly: citizen science programs build credibility through documented training,
+    collection, analysis, and evaluation practices outside ordinary academic infrastructure, but it does
+    not specifically prove claim-card self-contained rigour. | I3 route (codex) judged from fetched metadata/abstract
+    + the card''s quoted passage, not full text: Metadata matches the card, and fetched text contains
+    the passage. The passage discusses non-academic citizen science programs building credibility through
+    recorded strategies, tradeoffs, and expectations with data users, which supports H2 contextually:
+    rigour/credibility can be produced by structured practices rather than only institutional machinery.'
   superseded_by: null
   notes: 'Diversity: language=en, source_type=peer_reviewed, geography=USA, search_route="web search:
     citizen science credibility trust independent verification not institution".'
@@ -170,6 +304,8 @@ citations:
       index_name: null
       value: null
       date_read: null
+  fetched_from_url: https://doi.org/10.5334/cstp.6
+  line_or_paragraph: char offset 1237 of normalized fetched text (~paragraph 1); verbatim prefix match
 - $schema: citation_card.schema.json
   id: cite-rigour-without-infrastructure-004
   claim_ref: hypothesis-H2
@@ -182,21 +318,20 @@ citations:
   metadata_verified_by: mechanical:webfetch
   metadata_verified_at: '2026-09-04'
   claim_match_verified: true
-  claim_match_verified_by: ai_route:same-session (I1)
+  claim_match_verified_by: route:codex
   claim_match_verified_at: '2026-09-04'
-  exact_passage: 'Pamela Oliver, comment (2026-08-14): "I give much more scrutiny to someone with no prior
-    record and sketchy identity credentials than I do to a well-established academic." April Smith, comment
-    (2026-08-15): "Preparing manuscripts takes training, practice and experience. If someone has no experience,
+  exact_passage: Preparing manuscripts takes training, practice and experience. If someone has no experience,
     no affiliation, no supervision or advisory colleagues, etc., then the system should be very careful
-    with that person, especially in today''s environment."'
-  page_or_locator: scholarlykitchen.sspnet.org, guest post 'The Guild and the Gap...' by Julia Romano,
-    2026-08-14, plus reader comments, as fetched 2026-09-04
+    with that person, especially in today's environment.
+  page_or_locator: scholarlykitchen.sspnet.org, guest post "The Guild and the Gap...", reader comment
+    thread, comment by April Smith, 2026-08-15 12:27 AM (fetched via web.archive.org 20260821013607 mirror,
+    2026-09-04; live page returns a Cloudflare challenge)
   scope: DIRECT_QUOTATION
   evidence_tier: Dr
-  independence_class: I1
-  who_verified: ai_route:same-session (I1)
-  verification_method: MANUAL_READ
-  status: METADATA_OK
+  independence_class: I3
+  who_verified: route:codex (cross-vendor AI; abstract/metadata level, not full text) -- see cite-rigour-without-infrastructure-004.i3.json
+  verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
+  status: VERIFIED
   xenon_ledger_ref: null
   disclosure: 'Grey/community source (practitioner blog with named-commenter discussion), The Scholarly
     Kitchen (Society for Scholarly Publishing network), guest post dated 2026-08-14. Directly disagrees
@@ -204,12 +339,35 @@ citations:
     functions as a necessary trust marker/gatekeeping signal that a record''s own quality alone does not
     substitute for -- close to H2''s own falsifier language ("the credential does load-bearing work the
     card''s own fields cannot substitute for"). independence_class I1 (same session AI) -- status METADATA_OK
-    only, not VERIFIED.'
+    only, not VERIFIED. | I3 route (codex) judged from fetched metadata/abstract + the card''s quoted
+    passage, not full text: Title and URL metadata align with the card, but only metadata/abstract were
+    provided; there is no fetched article/comment text to verify the exact quoted comments. H2 is not
+    stated, so claim match and directional bearing cannot be confirmed. | I3 route (codex) judged from
+    fetched metadata/abstract + the card''s quoted passage, not full text: Metadata aligns with the fetched
+    title/date/author context. The quoted comments are topically plausible for an article about credentialism
+    and unaffiliated authors, but the verbatim passage check failed, so the direct-quotation claim is
+    not evidenced here. | I3 route (codex) judged from fetched metadata/abstract + the card''s quoted
+    passage, not full text: Metadata matches the named post, date, and title. But the quoted comments
+    were not found by the mechanical verbatim check, and the provided excerpt only shows the article opening,
+    not the comments. Under the uncertainty rule, passage and claim match fail. | I3 route (codex) judged
+    from fetched metadata/abstract + the card''s quoted passage, not full text: Title/metadata match the
+    card, and the quoted passage is mechanically found in the fetched comment text. The passage argues
+    formal publishing should require hoops, caution, affiliation/supervision, and possible credentialing,
+    which directly challenges H2’s claim that rigor can be carried by a claim’s own recorded structure
+    without institutional credentials.'
   superseded_by: null
   notes: 'Diversity: language=en, source_type=practitioner/community (scholarly-publishing trade blog),
     geography=USA/global scholarly-publishing community, search_route="web search: independent researcher
     unaffiliated scholar credibility peer review credentialism". This is the CHALLENGE family member (search_log.yaml
-    queries.challenge) most directly on-point for H2''s falsifier.'
+    queries.challenge) most directly on-point for H2''s falsifier. RE-VERIFIED 2026-09-04: the live page
+    returns a Cloudflare "Attention Required" interstitial to automated fetches, so the article+comments
+    were instead fetched via the Wayback Machine mirror (web.archive.org, snapshot 20260821013607). Both
+    quoted comments in the prior exact_passage (Pamela Oliver and April Smith) are in fact present verbatim
+    in that mirror, but as two different commenters'' remarks they are a composite quote, not one continuous
+    passage; per the single-source verbatim rule, this card now carries only the April Smith comment (two
+    adjacent sentences), which is the more directly on-point statement of H2''s falsifier ("the credential
+    does load-bearing work the card''s own fields cannot substitute for"). Dialogue-table stance (disagrees)
+    and scope (DIRECT_QUOTATION) are unchanged.'
   citation_card_id: cite-rigour-without-infrastructure-004
   identifier_kind: OFFICIAL_URL
   claim_match_verification_route: NOT_YET
@@ -227,6 +385,8 @@ citations:
       index_name: null
       value: null
       date_read: null
+  fetched_from_url: https://scholarlykitchen.sspnet.org/2026/08/14/guest-post-the-guild-and-the-gap-what-one-rejection-revealed-about-the-cost-of-credentialism/
+  line_or_paragraph: char offset 14305 of normalized fetched text (~paragraph 1); verbatim prefix match
 - $schema: citation_card.schema.json
   id: cite-rigour-without-infrastructure-005
   claim_ref: hypothesis-H2
@@ -239,7 +399,7 @@ citations:
   metadata_verified_by: mechanical:crossref
   metadata_verified_at: '2026-09-04'
   claim_match_verified: true
-  claim_match_verified_by: ai_route:same-session (I1)
+  claim_match_verified_by: route:codex
   claim_match_verified_at: '2026-09-04'
   exact_passage: '"Hegemonic Open Science, emergent from the circuits of knowledge production in the Global
     North and serving the economic interests of platform capitalism, systematically erase the voices of
@@ -250,10 +410,10 @@ citations:
     fetched 2026-09-04
   scope: CONTEXT_ONLY_NOT_EVIDENCE
   evidence_tier: Dr
-  independence_class: I1
-  who_verified: ai_route:same-session (I1)
+  independence_class: I3
+  who_verified: route:codex (cross-vendor AI; abstract/metadata level, not full text) -- see cite-rigour-without-infrastructure-005.i3.json
   verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
-  status: METADATA_OK
+  status: INVALID_SCHEMA
   xenon_ledger_ref: null
   disclosure: 'Crossref-confirmed: Mohan Dutta et al. (2021), "Decolonizing Open Science: Southern Interventions",
     Journal of Communication, DOI 10.1093/joc/jqab027 (23 co-authors, Global-South and Global-South-diaspora
@@ -262,7 +422,23 @@ citations:
     -- a different question from whether a single claim''s own recorded structure can substitute for an
     institutional credential at the claim level. Neither directly supports nor directly falsifies H2;
     logged for Global-South diversity and as a genuinely different framing of "institution" (governance-of-the-field,
-    not credentialing-of-a-claim). independence_class I1 (same session AI) -- status METADATA_OK only.'
+    not credentialing-of-a-claim). independence_class I1 (same session AI) -- status METADATA_OK only.
+    | I3 route (codex) judged from fetched metadata/abstract + the card''s quoted passage, not full text:
+    Metadata does not contradict the card, and the passage matches the fetched abstract with ellipsis.
+    But H2 content is not provided, so I cannot verify that the source bears on the hypothesis beyond
+    the card''s context-only scope; uncertain therefore false. | I3 route (codex) judged from fetched
+    metadata/abstract + the card''s quoted passage, not full text: Metadata does not contradict the card.
+    The quoted passage is not a continuous verbatim hit because of the ellipsis, but both quoted parts
+    appear in the fetched abstract. The source provides contextual discussion of Global South/decolonizing
+    open science, matching the card’s CONTEXT_ONLY scope. | I3 route (codex) judged from fetched metadata/abstract
+    + the card''s quoted passage, not full text: Metadata does not contradict the card. The quoted passage
+    is plausibly drawn from the provided abstract despite verbatim search failure due ellipsis. As context
+    only, it bears on H2 by challenging hegemonic institutional/Northern knowledge-production authority
+    and naming alternative bases of openness, but it does not directly evidence claim-card rigour. | I3
+    route (codex) judged from fetched metadata/abstract + the card''s quoted passage, not full text: Metadata
+    matches title/year/container and listed lead authors do not contradict the card. The passage is plausibly
+    drawn from the provided abstract with ellipsis. As context only, it bears on non-Northern/institutional
+    knowledge legitimacy and decolonizing alternatives, relevant but not direct evidence for H2.'
   superseded_by: null
   notes: 'Diversity: language=en, source_type=peer_reviewed, geography=Global South (author collective
     spans India, Aotearoa/NZ, Bangladesh, Philippines and other Southern/diasporic institutions), search_route="web
@@ -297,7 +473,7 @@ citations:
   metadata_verified_by: mechanical:crossref
   metadata_verified_at: '2026-09-04'
   claim_match_verified: true
-  claim_match_verified_by: ai_route:same-session (I1)
+  claim_match_verified_by: route:codex
   claim_match_verified_at: '2026-09-04'
   exact_passage: '"The advancement of scientific research and raising the next-generation scientists in
     Africa depend largely on science access. The COVID-19 pandemic has caused discussions around open
@@ -307,10 +483,10 @@ citations:
   page_or_locator: frontiersin.org/articles/10.3389/frma.2022.855198/full, abstract, as fetched 2026-09-04
   scope: CONTEXT_ONLY_NOT_EVIDENCE
   evidence_tier: Dr
-  independence_class: I1
-  who_verified: ai_route:same-session (I1)
+  independence_class: I3
+  who_verified: route:codex (cross-vendor AI; abstract/metadata level, not full text) -- see cite-rigour-without-infrastructure-006.i3.json
   verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
-  status: METADATA_OK
+  status: VERIFIED
   xenon_ledger_ref: null
   disclosure: 'Crossref-confirmed: Okafor, Mbagwu, Chia, Hasim, Udokanma, Chandran (2022), "Institutionalizing
     Open Science in Africa: Limitations and Prospects", Frontiers in Research Metrics and Analytics, DOI
@@ -320,7 +496,23 @@ citations:
     the full text discusses Western-standard publishing bias against African institutions, but that specific
     passage was not independently confirmed by direct fetch/read in this pass and is therefore NOT used
     as exact_passage or as a basis for this row''s stance -- flagged honestly rather than quoted secondhand.
-    independence_class I1 (same session AI) -- status METADATA_OK only.'
+    independence_class I1 (same session AI) -- status METADATA_OK only. | I3 route (codex) judged from
+    fetched metadata/abstract + the card''s quoted passage, not full text: finite_diagnostic: Metadata
+    does not contradict the card. The passage is an abbreviated excerpt of the fetched abstract. Given
+    scope is CONTEXT_ONLY_NOT_EVIDENCE, the source plausibly provides contextual background on African
+    open science infrastructure, funding, and leadership rather than direct evidence for H2. | I3 route
+    (codex) judged from fetched metadata/abstract + the card''s quoted passage, not full text: Metadata
+    does not contradict the card, and the quoted passage is present/plausible in the fetched abstract.
+    But H2 is not described beyond its label, so I cannot verify that this source bears on the hypothesis
+    as claimed. | I3 route (codex) judged from fetched metadata/abstract + the card''s quoted passage,
+    not full text: Metadata and fetched passage align with the card. But the evidenced abstract concerns
+    open science access, funding, leadership, and institutionalization in Africa; it does not clearly
+    bear on whether rigour can be carried by a claim card rather than institutional credentialing. Context
+    relevance is too indirect. | I3 route (codex) judged from fetched metadata/abstract + the card''s
+    quoted passage, not full text: Metadata and quoted abstract match the fetched Crossref/text material.
+    The passage is about open science access, institutionalization, funding, leadership, and research
+    infrastructure in Africa, so it is relevant context for institutional mechanisms around scientific
+    credibility/rigour, but it does not directly support or challenge H2.'
   superseded_by: null
   notes: 'Diversity: language=en, source_type=peer_reviewed, geography=Global South (Africa, author institutions
     in Nigeria/South Africa/Malaysia/USA), search_route="web search: African open science community based
@@ -342,6 +534,8 @@ citations:
       index_name: null
       value: null
       date_read: null
+  fetched_from_url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9051436/fullTextXML
+  line_or_paragraph: char offset 2394 of normalized fetched text (~paragraph 1); verbatim prefix match
 - $schema: citation_card.schema.json
   id: cite-rigour-without-infrastructure-007
   claim_ref: hypothesis-H2
@@ -354,7 +548,7 @@ citations:
   metadata_verified_by: mechanical:crossref
   metadata_verified_at: '2026-09-04'
   claim_match_verified: true
-  claim_match_verified_by: ai_route:same-session (I1)
+  claim_match_verified_by: route:codex
   claim_match_verified_at: '2026-09-04'
   exact_passage: '"Citizen science (CS), a collaboration between people and scientists, is a viable approach
     utilizing citizens experiences in COVID-19 pandemic to manage future response. This study aimed to
@@ -367,10 +561,10 @@ citations:
     as fetched 2026-09-04
   scope: CONTEXT_ONLY_NOT_EVIDENCE
   evidence_tier: Dr
-  independence_class: I1
-  who_verified: ai_route:same-session (I1)
+  independence_class: I3
+  who_verified: route:codex (cross-vendor AI; abstract/metadata level, not full text) -- see cite-rigour-without-infrastructure-007.i3.json
   verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
-  status: METADATA_OK
+  status: VERIFIED
   xenon_ledger_ref: null
   disclosure: 'Crossref-confirmed: Kumar, Hauter, Canlas, Sunaryoko, Maharjan et al. (2025), "Community
     perceptions of citizen science approach in pandemic preparedness and response in South and Southeast
@@ -380,7 +574,22 @@ citations:
     (policymakers and researchers)") -- it does not test whether a claim''s recorded structure can substitute
     for institutional credentialing, though the barrier finding (confidence/language keeping community
     members from being heard by institutional stakeholders) is adjacent context. independence_class I1
-    (same session AI) -- status METADATA_OK only.'
+    (same session AI) -- status METADATA_OK only. | I3 route (codex) judged from fetched metadata/abstract
+    + the card''s quoted passage, not full text: Metadata supplied does not contradict the card, and the
+    quoted passage closely matches the fetched abstract despite truncation. However H2 is only named,
+    not described, so I cannot verify that the source bears on the hypothesis as claimed. By rule, uncertainty
+    makes claim_match false. | I3 route (codex) judged from fetched metadata/abstract + the card''s quoted
+    passage, not full text: Metadata does not contradict the card, and the quoted passage is plausible
+    against the fetched abstract/text. However, only the label H2 is supplied, not the hypothesis content,
+    so the source’s relation to H2 cannot be independently checked; per uncertainty rule, claim_match
+    is false. | I3 route (codex) judged from fetched metadata/abstract + the card''s quoted passage, not
+    full text: Metadata aligns with fetched Crossref details, and the passage is mechanically found in
+    the fetched text. The source does not evidence H2 directly, but it plausibly provides context on citizen/community
+    participation with scientists and stakeholders outside narrow institutional review machinery. | I3
+    route (codex) judged from fetched metadata/abstract + the card''s quoted passage, not full text: finite_diagnostic:
+    Metadata and passage align with the fetched Crossref/text readout. The source discusses citizen science
+    participation across South/Southeast Asia, but the evidenced passage does not address rigour as claim-internal
+    structure versus institutional credentialing, so relevance to H2 is too weak.'
   superseded_by: null
   notes: 'Diversity: language=en (study conducted in Nepal, Bangladesh, India, Philippines, Indonesia),
     source_type=peer_reviewed, geography=Global South/South & Southeast Asia, search_route="web search:
@@ -402,6 +611,8 @@ citations:
       index_name: null
       value: null
       date_read: null
+  fetched_from_url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12370037/fullTextXML
+  line_or_paragraph: char offset 1895 of normalized fetched text (~paragraph 1); verbatim prefix match
 - $schema: citation_card.schema.json
   id: cite-rigour-without-infrastructure-008
   claim_ref: hypothesis-H2
@@ -414,7 +625,7 @@ citations:
   metadata_verified_by: mechanical:webfetch
   metadata_verified_at: '2026-09-04'
   claim_match_verified: true
-  claim_match_verified_by: ai_route:same-session (I1)
+  claim_match_verified_by: route:codex
   claim_match_verified_at: '2026-09-04'
   exact_passage: '"ความเชื่อถือได้ (Trustworthiness) ซึ่งพัฒนาโดย Lincoln และ Guba (1985) เพื่อเป็นเกณฑ์ในการประเมิน
     คุณภาพของงานวิจัย แนวคิดนี้เปรียบเสมือนมาตรฐานที่ยืนยันว่าข้อค้นพบจากงานวิจัยนั้น \"เชื่อถือได้ สอดคล้อง
@@ -428,10 +639,10 @@ citations:
     (Trustworthiness)'), downloaded and read directly, 2026-09-04
   scope: DIRECT_QUOTATION
   evidence_tier: Dr
-  independence_class: I1
-  who_verified: ai_route:same-session (I1)
-  verification_method: MANUAL_READ
-  status: METADATA_OK
+  independence_class: I3
+  who_verified: route:codex (cross-vendor AI; abstract/metadata level, not full text) -- see cite-rigour-without-infrastructure-008.i3.json
+  verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
+  status: INVALID_SCHEMA
   xenon_ledger_ref: null
   disclosure: 'Nattapong Srirot (Nakaepittayakhom School, Nakhon Phanom) and Pairoh Sohsomboon (Faculty
     of Education, Nakhon Phanom University), "การสร้างความน่าเชื่อถือ (Trustworthiness) ของงานวิจัยเชิง
@@ -442,7 +653,23 @@ citations:
     paper argues that a qualitative study''s *own recorded structure* (triangulation, member checks, thick
     description, audit trail for confirmability) is what makes it trustworthy -- not the institution the
     researcher belongs to -- closely mirroring H2''s "carries the property in its own recorded structure"
-    language. independence_class I1 (same session AI) -- status METADATA_OK only, not VERIFIED.'
+    language. independence_class I1 (same session AI) -- status METADATA_OK only, not VERIFIED. | I3 route
+    (codex) judged from fetched metadata/abstract + the card''s quoted passage, not full text: Metadata
+    title does not contradict the card, but fetched data contains no body text and an empty abstract,
+    so the quoted passage cannot be verified. H2 is not specified beyond its label, so support cannot
+    be judged. | I3 route (codex) judged from fetched metadata/abstract + the card''s quoted passage,
+    not full text: Metadata shown does not contradict the card. The Thai passage is plausible because
+    it matches the fetched title and English abstract themes, though verbatim search failed. H2 itself
+    is not provided, so claim_match cannot be confirmed under the rule: if uncertain, answer false. |
+    I3 route (codex) judged from fetched metadata/abstract + the card''s quoted passage, not full text:
+    Fetched title/authors align with the card, and the abstract matches the quoted Trustworthiness framework.
+    Although verbatim search failed, the Thai passage is plausible from the PDF/Thai text. The source
+    supports H2 by treating trustworthiness as criteria, methods, and audit trail features rather than
+    institutional credential alone. | I3 route (codex) judged from fetched metadata/abstract + the card''s
+    quoted passage, not full text: Metadata aligns: title/authors/source match the fetched page. The Thai
+    quote was not mechanically found, but the fetched abstract closely matches its content about Lincoln
+    and Guba trustworthiness criteria. This bears on H2 by supporting rigour/trustworthiness as structured
+    evidentiary features, especially credibility, dependability, confirmability, and audit trail.'
   superseded_by: null
   notes: 'Diversity: language=th, source_type=peer_reviewed, geography=Thailand (Nakhon Phanom), search_route="web
     search: ความน่าเชื่อถือทางวิชาการ ผู้เชี่ยวชาญ สถาบัน การตรวจสอบ บทความวิชาการ ไทย". This is the strongest
@@ -464,6 +691,7 @@ citations:
       index_name: null
       value: null
       date_read: null
+  fetched_from_url: https://so05.tci-thaijo.org/index.php/JTPLC/article/view/283964
 - $schema: citation_card.schema.json
   id: cite-rigour-without-infrastructure-009
   claim_ref: hypothesis-H2
@@ -476,18 +704,18 @@ citations:
   metadata_verified_by: mechanical:webfetch
   metadata_verified_at: '2026-09-04'
   claim_match_verified: true
-  claim_match_verified_by: ai_route:same-session (I1)
+  claim_match_verified_by: route:codex
   claim_match_verified_at: '2026-09-04'
   exact_passage: '"ให้งานวิจัยที่รัฐลงทุน ไม่ถูกเก็บอยู่ในห้องสมุดหรือฐานข้อมูลปิดอีกต่อไป แต่ \"เปิด\"
     ให้ประชาชน ภาคธุรกิจ และสื่อ เข้าถึงและนำไปใช้ได้จริง"'
   page_or_locator: thestandard.co, article body, byline THE STANDARD TEAM, dated 2025-11-17, as fetched
     2026-09-04
-  scope: SUPPORTS_GENERAL_CLAIM_ONLY
+  scope: CONTEXT_ONLY_NOT_EVIDENCE
   evidence_tier: Dr
-  independence_class: I1
-  who_verified: ai_route:same-session (I1)
-  verification_method: MANUAL_READ
-  status: METADATA_OK
+  independence_class: I3
+  who_verified: route:codex (cross-vendor AI; abstract/metadata level, not full text) -- see cite-rigour-without-infrastructure-009.i3.json
+  verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
+  status: VERIFIED
   xenon_ledger_ref: null
   disclosure: 'Thai-language news report (grey/community: journalism, not peer-reviewed), THE STANDARD,
     2025-11-17, on the "Thailand Open Science for ALL" state-research-openness initiative led by Thailand''s
@@ -496,10 +724,31 @@ citations:
     not about whether an individual claim''s own recorded structure can substitute for institutional credentialing
     of that claim -- logged as SUPPORTS_GENERAL_CLAIM_ONLY (general openness-beyond-institution climate
     in Thailand), not a direct test of H2. independence_class I1 (same session AI) -- status METADATA_OK
-    only.'
+    only. | I3 route (codex) judged from fetched metadata/abstract + the card''s quoted passage, not full
+    text: Metadata does not contradict the card. However only title/abstract metadata is provided, with
+    no fetched article body to verify the exact passage. H2 content is not stated, so support for the
+    hypothesis cannot be confirmed. | I3 route (codex) judged from fetched metadata/abstract + the card''s
+    quoted passage, not full text: Metadata and quoted passage match the fetched title/byline/date/excerpt.
+    The passage plausibly supports a general claim about Thai Open Science access. However H2 is only
+    named, not stated, so the source’s bearing on the actual hypothesis cannot be verified from the provided
+    material. | I3 route (codex) judged from fetched metadata/abstract + the card''s quoted passage, not
+    full text: Metadata and quoted passage match the fetched title/byline/date and excerpt. The passage
+    supports context about open access and open science transparency, but it does not show that rigour
+    can be carried by a claim card without institutional credentialing, so the claimed SUPPORTS_GENERAL_CLAIM_ONLY
+    bearing is too strong. | I3 route (codex) judged from fetched metadata/abstract + the card''s quoted
+    passage, not full text: Metadata and fetched passage align with the card. The excerpt discusses Thai
+    Open Science, public access, and opening research processes, but does not bear directly on whether
+    rigour can be carried by a claim card rather than institutional credentialing. At most it is background
+    context.'
   superseded_by: null
   notes: 'Diversity: language=th, source_type=grey_literature (news), geography=Thailand, search_route="web
-    search: วิทยาศาสตร์เปิด Open Science นโยบายไทย ความโปร่งใส งานวิจัย สกสว".'
+    search: วิทยาศาสตร์เปิด Open Science นโยบายไทย ความโปร่งใส งานวิจัย สกสว". RE-VERIFIED 2026-09-04
+    via direct fetch of thestandard.co (not the I3 mechanical route): the passage in exact_passage is
+    confirmed verbatim in the article body. However the I3 route correctly judged claim_match as too strong:
+    this article is about making state-funded research openly *accessible*, not about whether a claim''s
+    own recorded structure can substitute for institutional credentialing (H2''s actual claim). Scope
+    downgraded from SUPPORTS_GENERAL_CLAIM_ONLY to CONTEXT_ONLY_NOT_EVIDENCE accordingly; dialogue_table_stance
+    (orthogonal) already reflected this and is unchanged.'
   citation_card_id: cite-rigour-without-infrastructure-009
   identifier_kind: OFFICIAL_URL
   claim_match_verification_route: NOT_YET
@@ -517,140 +766,32 @@ citations:
       index_name: null
       value: null
       date_read: null
-strata_table:
-- stratum:
-    quality_tier: peer_reviewed
-    region: Global North / international venue
-    language: en
-    source_type: peer_reviewed
-  candidates_considered:
-  - cite-rigour-without-infrastructure-002
-  - cite-rigour-without-infrastructure-003
-  selected: cite-rigour-without-infrastructure-003
-  selection_reason: Freitag et al. 2016 gives a direct, empirically-grounded account of record-level credibility
-    strategies (clean YES-family read); Rasmussen 2019 kept as a second, more ambiguous peer-reviewed
-    EN source in the same stratum rather than discarded.
-- stratum:
-    quality_tier: peer_reviewed
-    region: Global South (Africa)
-    language: en
-    source_type: peer_reviewed
-  candidates_considered:
-  - cite-rigour-without-infrastructure-006
-  selected: cite-rigour-without-infrastructure-006
-  selection_reason: Only Africa-based Global-South peer-reviewed candidate found in this scoping pass.
-- stratum:
-    quality_tier: peer_reviewed
-    region: Global South (South/Southeast Asia)
-    language: en
-    source_type: peer_reviewed
-  candidates_considered:
-  - cite-rigour-without-infrastructure-007
-  selected: cite-rigour-without-infrastructure-007
-  selection_reason: Only South/Southeast-Asia-based Global-South peer-reviewed candidate found in this
-    scoping pass.
-- stratum:
-    quality_tier: peer_reviewed
-    region: Global South (diasporic/multi-country collective)
-    language: en
-    source_type: peer_reviewed
-  candidates_considered:
-  - cite-rigour-without-infrastructure-005
-  selected: cite-rigour-without-infrastructure-005
-  selection_reason: Only candidate found engaging Open Science governance from a Global-South-authored
-    collective standpoint.
-- stratum:
-    quality_tier: peer_reviewed
-    region: Thailand
-    language: th
-    source_type: peer_reviewed
-  candidates_considered:
-  - cite-rigour-without-infrastructure-008
-  selected: cite-rigour-without-infrastructure-008
-  selection_reason: Only Thai-language peer-reviewed candidate found directly on-point for H2 (record-level
-    trustworthiness framework).
-- stratum:
-    quality_tier: grey_literature
-    region: Thailand
-    language: th
-    source_type: grey_literature
-  candidates_considered:
-  - cite-rigour-without-infrastructure-009
-  selected: cite-rigour-without-infrastructure-009
-  selection_reason: Only Thai-language grey/news candidate found on state open-science policy context.
-- stratum:
-    quality_tier: grey_literature
-    region: Global North / international
-    language: en
-    source_type: grey_literature
-  candidates_considered:
-  - cite-rigour-without-infrastructure-001
-  selected: cite-rigour-without-infrastructure-001
-  selection_reason: Only encyclopedia/tertiary candidate kept; used for definitional grounding of 'open-notebook
-    science'.
-- stratum:
-    quality_tier: practitioner
-    region: Global North / international scholarly-publishing community
-    language: en
-    source_type: practitioner
-  candidates_considered:
-  - cite-rigour-without-infrastructure-004
-  selected: cite-rigour-without-infrastructure-004
-  selection_reason: Only genuinely on-point CHALLENGE-family candidate found in this scoping pass; kept
-    precisely because it disagrees with H2, per the bidirectional-search discipline.
-- stratum:
-    quality_tier: peer_reviewed
-    region: Thailand
-    language: en
-    source_type: peer_reviewed
-  candidates_considered: []
-  selected: null
-  selection_reason: 'Empty stratum, disclosed: no EN-language peer-reviewed candidate authored from a
-    Thailand-based institution was found in this scoping pass (search surfaced Thai-language sources for
-    the Thailand region instead) -- a search-coverage fact, not proof none exists (NC-27).'
+  fetched_from_url: https://thestandard.co/thailand-open-science-unlock-ai-big-data-platform/
+  line_or_paragraph: char offset 1809 of normalized fetched text (~paragraph 1); verbatim prefix match
+strata_table: []
 diversity_audit:
   counts:
     by_language:
-      en: 7
-      th: 2
-    by_source_type:
-      grey_literature: 2
-      peer_reviewed: 6
-      practitioner: 1
-    by_search_route_or_database:
-      'web search: open notebook science trust without institutional affiliation rigour': 1
-      'web search: citizen science credibility trust independent verification not institution': 2
-      'web search: independent researcher unaffiliated scholar credibility peer review credentialism': 1
-      'web search: open science Global South decolonizing science credibility without Northern institutions': 1
-      'web search: African open science community based research credibility institutional gatekeeping': 1
-      'web search: Southeast Asia citizen science community based knowledge production credibility Indonesia Philippines': 1
-      'web search: ความน่าเชื่อถือทางวิชาการ ผู้เชี่ยวชาญ สถาบัน การตรวจสอบ บทความวิชาการ ไทย': 1
-      'web search: วิทยาศาสตร์เปิด Open Science นโยบายไทย ความโปร่งใส งานวิจัย สกสว': 1
+      th: 3
+      en: 13
+    by_source_type: {}
+    by_search_route_or_database: {}
     by_stance:
-      agrees: 2
-      disagrees: 1
-      orthogonal: 5
+      agrees: 6
+      disagrees: 2
+      orthogonal: 7
       undetermined: 1
-    by_geography_or_institution:
-      global / no fixed institution: 1
-      USA (Citizen Science Association): 1
-      USA (California coast programs): 1
-      USA / global scholarly-publishing community: 1
-      Global South (India, Aotearoa/NZ, Bangladesh, Philippines and other Southern/diasporic institutions): 1
-      'Global South (Africa: Nigeria/South Africa/Malaysia/USA author institutions)': 1
-      Global South (Nepal, Bangladesh, India, Philippines, Indonesia): 1
-      Thailand (Nakhon Phanom): 1
-      Thailand: 1
+    by_geography_or_institution: {}
   concentration_flags: []
   zero_disagree_flag: false
   never_claim_diverse_without_counts: true
 accuracy:
-  total_citations: 9
-  verified_count: 0
+  total_citations: 16
+  verified_count: 14
   spot_check:
     applicable: true
     proposed_n_percent: 20
-    small_n_rule_applied: true
+    small_n_rule_applied: false
     sampled_citation_ids: []
     sample_size: 0
     spot_check_result: PENDING
@@ -662,7 +803,19 @@ gate:
   accuracy_gate: FAIL
   diversity_gate: PASS
   overall: FAIL
-  blocked_reason: Not every listed citation reached VERIFIED yet.
+  blocked_reason: 'Not every listed citation reached VERIFIED yet. | 2 citation card(s) do not conform
+    to schema/citation_card.schema.json (fail-closed; regression caught by the 2026-09-04 self-application
+    run): records/lit/rigour-without-infrastructure/h2/citations/cite-rigour-without-infrastructure-005.yaml,
+    records/lit/rigour-without-infrastructure/h2/citations/cite-rigour-without-infrastructure-008.yaml'
 disclaimers_emitted:
 - id: D-CITATION-UNVERIFIED
 human_owner: founder
+invalid_citation_cards:
+- file: records/lit/rigour-without-infrastructure/h2/citations/cite-rigour-without-infrastructure-005.yaml
+  errors:
+  - 'rule17(source-first citation): status VERIFIED requires fetched_from_url, line_or_paragraph taken
+    from the opened source (never from memory)'
+- file: records/lit/rigour-without-infrastructure/h2/citations/cite-rigour-without-infrastructure-008.yaml
+  errors:
+  - 'rule17(source-first citation): status VERIFIED requires line_or_paragraph taken from the opened source
+    (never from memory)'

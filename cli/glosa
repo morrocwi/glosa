@@ -1029,6 +1029,8 @@ def cmd_lit_manifest(args):
     citations_dir = out_dir / "citations"
     if citations_dir.is_dir():
         for p in sorted(citations_dir.glob("*")):
+            if p.name.endswith(".i3.json") or p.name.endswith(".i5.json"):
+                continue  # independent-route verdict sidecars, not cards
             if p.suffix in (".yaml", ".yml", ".json"):
                 inst = load_instance(p)
                 v = k.validate_citation_card(inst)

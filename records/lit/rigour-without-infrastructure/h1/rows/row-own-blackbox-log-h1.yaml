@@ -1,0 +1,18 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: H1
+source_label: Blackbox Log (Pum Klong Dam), Yaoharee Lahtee (Zenodo concept DOI 10.5281/zenodo.22302518)
+how_it_sees_the_problem: Sees the founder's own raw voice, findings, and daily questions as a distinct
+  artifact from any cooked/reviewed output -- the log is append-only and never edited in place.
+what_it_separates: Separates the raw record (verbatim, unreviewed) from any later transformation (lens-in,
+  analysis, lens-out) performed on it -- the same separation H1's claim card discipline requires between
+  Q1 (what was seen) and later inference.
+what_it_assumes: Assumes the practice of keeping an append-only raw log is itself epistemically useful;
+  does not argue that this practice, by itself, makes a claim rigorous.
+stance: UNDETERMINED
+what_it_would_say_against_us: Has no direct bearing on whether H1's independence-ladder mechanism works;
+  it only documents that the practice H1 assumes (raw record kept alongside cooked claims) is actually
+  being followed in this project.
+citation_card: cite-own-blackbox-log-h1-006
+verified:
+  metadata_verified: true
+  claim_match_verified: false

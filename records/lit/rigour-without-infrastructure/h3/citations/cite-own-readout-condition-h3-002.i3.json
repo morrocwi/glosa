@@ -1,0 +1,22 @@
+{
+ "vendor": "codex",
+ "fetched": {
+  "source": "zenodo",
+  "title": "The Readout Condition: Distinguishability, Access, and Epistemic Warrant",
+  "authors": [
+   "Lahtee, Yaoharee"
+  ],
+  "year": "2026",
+  "container": "Zenodo",
+  "abstract": " Claims routinely distinguish more finely than the access sources invoked on their behalf. The central epistemic problem is not merely whether the resulting claim is true or justified, but whether each distinction in it is correctly attributed to the source, model, background evidence, relevance restriction, or decision rule that actually supplied the discrimination. This paper develops the Readout Condition as a necessary architecture for source-relative epistemic warrant. Its core is a threepart norm: existence (every claim-level distinction has an epistemic provenance path), attribution (a distinction credited to a source must be licensed by that source), and disclosure (essential augmentations must remain visible to audit). In the exact functional case, source attribution requires constancy on readout fibers and hence factorization through the readout. For non-transitive indiscriminability, the correct extension is pointwise: a claim token at an actual alternative is licensed only if its local indiscriminability neighbourhood lies inside the claim-value fiber, avoiding an illicit transitive closure. In stochastic settings, Blackwell garbling provides an access audit but cannot by itself detect assumption-driven silent lifts; a complementary identification ladder tracks the weakest augmentation layer at which a distinction becomes identified. The resulting typed provenance DAG supports a defeater-routing result: source-specific defeaters propagate exactly along the distinc"
+ },
+ "verdict": {
+  "metadata_matches": true,
+  "passage_plausible": true,
+  "claim_match": true,
+  "bearing": "CONTEXT_ONLY",
+  "reason": "Metadata has no contradiction on title/year/first author, and the quoted passage is mechanically found and consistent with the abstract. The source bears only as methodological context about disclosure and audit visibility, not as empirical evidence for cross-vendor detection rates.",
+  "passage_mechanical": "verbatim prefix found in fetched open text"
+ },
+ "date": "2026-09-04"
+}

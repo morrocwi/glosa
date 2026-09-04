@@ -1,0 +1,22 @@
+{
+ "vendor": "codex",
+ "fetched": {
+  "source": "zenodo",
+  "title": "The Civilization of Knowledge: Who Has the Authority to Interpret the World",
+  "authors": [
+   "Lahtee, Yaoharee"
+  ],
+  "year": "2026",
+  "container": "Zenodo",
+  "abstract": " Standard accounts of knowledge history often describe human civilization as a gradual ascent from myth to reason, from religion to science, and from science to artificial intelligence. This article argues that such narratives remain incomplete. What changes across civilizations is not only the accumulation of truths, but the succession of agencies authorized to interpret the world&rsquo;s signals and stabilize those interpretations as social reality. The article develops a comparative framework organized around five linked terms: signal, translation, stabilization, agency, and conflict. Human beings do not encounter reality as a complete and transparent whole; they encounter partial traces, anomalies, records, measurements, and mediated signs. These do not become knowledge by themselves. They must be translated into meaningful accounts, stabilized through repeatable and durable forms, and socially authorized through institutions, procedures, or recognized interpreters. The history of knowledge can therefore be read as the history of changing interpretive authority. Across the longue duree, this article traces major shifts from embodied and oral interpreters to priestly and archival regimes, from philosophical and translational formations to scientific, professional, and media institutions, and finally to platforms, algorithms, and AI-mediated systems. Its central claim is that knowledge crises are often authority crises: moments in which the legitimacy of interpreters is con"
+ },
+ "verdict": {
+  "metadata_matches": true,
+  "passage_plausible": true,
+  "claim_match": true,
+  "bearing": "CHALLENGES",
+  "reason": "Metadata does not contradict the card, and the quoted passage appears in the fetched text. The passage directly bears on H2 by making social authorization through institutions, procedures, or recognized interpreters necessary for knowledge stabilization, which challenges H2’s claim that institutional credentials are not uniquely load-bearing.",
+  "passage_mechanical": "verbatim prefix found in fetched open text"
+ },
+ "date": "2026-09-04"
+}

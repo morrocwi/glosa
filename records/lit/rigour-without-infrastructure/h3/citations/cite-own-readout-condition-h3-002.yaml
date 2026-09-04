@@ -1,0 +1,54 @@
+$schema: citation_card.schema.json
+id: cite-own-readout-condition-h3-002
+claim_ref: H3
+identifier:
+  kind: DOI
+  value: 10.5281/zenodo.22301318
+fetch_status: FETCHED
+fetched_at: '2026-09-04'
+metadata_verified: true
+metadata_verified_by: mechanical:zenodo_api
+metadata_verified_at: '2026-09-04'
+claim_match_verified: true
+claim_match_verified_by: route:codex
+claim_match_verified_at: null
+exact_passage: '"This paper develops the Readout Condition as a necessary architecture
+  for source-relative epistemic warrant. Its core is a three-part norm: existence
+  (every claim-level distinction has an epistemic provenance path), attribution (a
+  distinction credited to a source must be licensed by that source), and disclosure
+  (essential augmentations must remain visible to audit)."'
+page_or_locator: Zenodo record 10.5281/zenodo.22301318, description
+scope: CONTEXT_ONLY_NOT_EVIDENCE
+evidence_tier: Dr
+independence_class: I3
+who_verified: route:codex (cross-vendor AI; abstract/metadata level, not full text)
+  -- see cite-own-readout-condition-h3-002.i3.json
+verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
+status: VERIFIED
+xenon_ledger_ref: null
+disclosure: 'own lineage: same author as the hypothesis (not independent evidence;
+  listed so the world literature is collided with it, per founder instruction BBL-098)
+  | I3 route (codex) judged from fetched metadata/abstract + the card''s quoted passage,
+  not full text: Metadata fetch failed, so metadata cannot be verified. The quoted
+  passage is present and plausible. It supports a disclosure/audit norm generally,
+  but does not evidence the empirical H3 claim that cross-vendor checking measurably
+  improves detection over same-vendor re-checking. | I3 route (codex) judged from
+  fetched metadata/abstract + the card''s quoted passage, not full text: Metadata
+  and quoted passage align with fetched Zenodo text. The source discusses disclosure
+  and audit architecture, which is relevant context, but it does not evidence the
+  empirical H3 claim that cross-vendor I3 checking measurably improves detection versus
+  same-vendor checking. | I3 route (codex) judged from fetched metadata/abstract +
+  the card''s quoted passage, not full text: Metadata has no contradiction on title/year/first
+  author, and the quoted passage is mechanically found and consistent with the abstract.
+  The source bears only as methodological context about disclosure and audit visibility,
+  not as empirical evidence for cross-vendor detection rates.'
+superseded_by: null
+notes: 'Same author as H3. stance: agrees -- the disclosure norm (''essential augmentations
+  must remain visible to audit'') is exactly what an undisclosed AI-fill (H3''s Q3)
+  or undisclosed assumption (Q4) violates; a genuinely independent audit route is
+  the mechanism this paper''s warrant architecture requires. language: en. | scope
+  set to CONTEXT_ONLY after I3 route: disclosure architecture is context for H3, not
+  evidence of a detection-rate difference.'
+fetched_from_url: https://doi.org/10.5281/zenodo.22301318
+line_or_paragraph: char offset 824 of normalized fetched text (~paragraph 1); verbatim
+  prefix match

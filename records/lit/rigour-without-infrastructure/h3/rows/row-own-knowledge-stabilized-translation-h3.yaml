@@ -1,0 +1,21 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: H3
+source_label: 'Knowledge as Stabilized Translation: Toward an Observer-Constrained Epistemology (Lahtee,
+  Zenodo 10.5281/zenodo.18925129)'
+how_it_sees_the_problem: Sees knowledge, for both human and machine knowers, as a representation that
+  stays stable across admissible variation, calibration, and cross-checking -- stability under variation
+  is the marker of knowing well, not any single check.
+what_it_separates: Separates a representation that merely survives one checking route from one that remains
+  stable across several admissible variations of the checking process --  conceptually the same move H3
+  makes between same-vendor and cross-vendor checking.
+what_it_assumes: Assumes 'admissible variation' in the checking process is meaningful and available; does
+  not itself specify AI vendor identity as the variation dimension, nor measure any detection rate.
+stance: UNDETERMINED
+what_it_would_say_against_us: Would ask whether cross-vendor AI checking counts as genuine 'admissible
+  variation' in this paper's technical sense, or is too similar in training data/methodology across vendors
+  to constitute a real stability test -- the same caution the Standalone Scholar row raises from a different
+  angle.
+citation_card: cite-own-knowledge-stabilized-translation-h3-007
+verified:
+  metadata_verified: true
+  claim_match_verified: false

@@ -9,20 +9,21 @@ fetched_at: '2026-09-04'
 metadata_verified: true
 metadata_verified_by: mechanical:crossref
 metadata_verified_at: '2026-09-04'
-claim_match_verified: false
+claim_match_verified: true
 claim_match_verified_by: route:codex
 claim_match_verified_at: '2026-09-04'
-exact_passage: '"cues related to information about open science content and independent
-  verification of author claims were rated as highly important for judging preprint
-  credibility."'
-page_or_locator: Results (Soderberg, Errington & Nosek 2020, PMC7657885)
-scope: DIRECT_QUOTATION
+exact_passage: In general, information related to field perceptions/usage of preprints
+  was rated as less important by respondents, and information related to preprint
+  authors (e.g. institutional information, previous work) received more muted support.
+page_or_locator: Section 2.3, "Credibility of preprints" (Soderberg, Errington & Nosek
+  2020, PMC7657885 open-access mirror, fetched 2026-09-04)
+scope: SUPPORTS_GENERAL_CLAIM_ONLY
 evidence_tier: Dr
 independence_class: I3
 who_verified: route:codex (cross-vendor AI; abstract/metadata level, not full text)
   -- see cite-rsos-preprint-credibility-001.i3.json
 verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
-status: METADATA_OK
+status: VERIFIED
 xenon_ledger_ref: null
 disclosure: 'Same-session AI check only (I1) -- METADATA_OK, not VERIFIED. Title/author/year/venue
   confirmed mechanically via Crossref (Soderberg, Errington, Nosek; Royal Society
@@ -40,9 +41,33 @@ disclosure: 'Same-session AI check only (I1) -- METADATA_OK, not VERIFIED. Title
   + the card''s quoted passage, not full text: Metadata does not contradict title/authors/year.
   The quoted wording appears consistent with the abstract, but the mechanical passage
   check found none and no fetched text excerpt is provided. H1 content is unspecified,
-  so claim_match cannot be verified.'
+  so claim_match cannot be verified. | I3 route (codex) judged from fetched metadata/abstract
+  + the card''s quoted passage, not full text: Metadata matches Crossref. The quoted
+  sentence appears in the abstract, so it is plausible despite the failed open-text
+  search. But the source only concerns preprint credibility cues and independent verification;
+  it does not directly support standalone AI co-production, claim cards, Readout conditions,
+  or independence ladder. | I3 route (codex) judged from fetched metadata/abstract
+  + the card''s quoted passage, not full text: Metadata aligns with fetched Crossref
+  title/authors/year/venue, and the quoted passage is found in the fetched excerpt.
+  The evidence supports the card''s limited general claim: credibility cues emphasize
+  transparency/independent verification while institutional author information receives
+  muted support. It does not prove the full AI claim-card workflow.'
 superseded_by: null
 notes: 'Global North (Center for Open Science, US), EN, peer-reviewed, journal-article,
   empirical survey. Found via query family: support (independent researcher without
   institutional affiliation credibility open science verification). Dialogue-table
-  stance: YES (supports H1).'
+  stance: YES (supports H1). RE-VERIFIED 2026-09-04 via direct fetch of the PMC7657885
+  open-access mirror full text (not the I3 mechanical route, which only had abstract/metadata):
+  the prior exact_passage was in fact verbatim in the abstract, but the I3 route correctly
+  flagged claim_match as false because that sentence is about preprint-credibility
+  cues in general, not about institutional affiliation specifically. Replaced with
+  a different sentence from the Results/Discussion (section 2.3, "Credibility of preprints")
+  that directly names institutional information as receiving "more muted support"
+  than openness/independent-verification cues -- this is the passage in the full text
+  that actually bears on H1''s claim that a well-structured, independently-checkable
+  record can substitute for an institutional credential. Scope downgraded from DIRECT_QUOTATION
+  to SUPPORTS_GENERAL_CLAIM_ONLY since it is evidence for the general pattern, not
+  a direct test of H1''s specific claim-card mechanism.'
+fetched_from_url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7657885/fullTextXML
+line_or_paragraph: char offset 21153 of normalized fetched text (~paragraph 1); verbatim
+  prefix match

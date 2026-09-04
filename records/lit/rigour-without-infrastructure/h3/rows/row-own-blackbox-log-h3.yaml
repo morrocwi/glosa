@@ -1,0 +1,16 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: H3
+source_label: Blackbox Log (Pum Klong Dam), Yaoharee Lahtee (Zenodo concept DOI 10.5281/zenodo.22302518)
+how_it_sees_the_problem: Sees the raw, unreviewed log as separate from any later AI-assisted analysis
+  performed on it, whether same-vendor or cross-vendor.
+what_it_separates: Separates the raw line from the cooking-log entry that later analyzes it -- structurally
+  similar to separating a claim card's original content from a later independent check's verdict, but
+  at the practice-record grain, not the claim-card grain H3 is about.
+what_it_assumes: Assumes append-only logging is worth doing regardless of who later checks the record;
+  makes no claim about detection rates.
+stance: UNDETERMINED
+what_it_would_say_against_us: Has no direct bearing on H3's specific empirical comparison.
+citation_card: cite-own-blackbox-log-h3-006
+verified:
+  metadata_verified: true
+  claim_match_verified: false

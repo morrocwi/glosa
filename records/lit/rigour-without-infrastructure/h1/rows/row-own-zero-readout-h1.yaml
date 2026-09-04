@@ -1,0 +1,17 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: H1
+source_label: What a Zero Readout Certifies (Lahtee, Zenodo 10.5281/zenodo.21665100)
+how_it_sees_the_problem: Sees a zero output as a classification (no retained distinction), not an absence,
+  in a finite/rational-readout setting.
+what_it_separates: Separates the arithmetic value zero from the fibre it marks; separates a machine-checked
+  characterisation from an informally-argued one.
+what_it_assumes: Assumes a positively weighted comparison graph and a retained-information operator; the
+  setting is mathematical, not about credentialing or claim-card schemas.
+stance: UNDETERMINED
+what_it_would_say_against_us: Has no direct bearing on H1's institutional-credential question; would only
+  note that H1's own mechanical checks (schema validation) are a much weaker form of the machine-checked
+  discipline this paper demonstrates.
+citation_card: cite-own-zero-readout-h1-004
+verified:
+  metadata_verified: true
+  claim_match_verified: false

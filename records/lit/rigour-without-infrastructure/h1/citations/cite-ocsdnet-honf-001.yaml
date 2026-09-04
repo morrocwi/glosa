@@ -9,23 +9,22 @@ fetched_at: '2026-09-04'
 metadata_verified: true
 metadata_verified_by: mechanical:webfetch_direct_read
 metadata_verified_at: '2026-09-04'
-claim_match_verified: false
+claim_match_verified: true
 claim_match_verified_by: route:codex
 claim_match_verified_at: '2026-09-04'
-exact_passage: The "Understanding Open Hardware and Citizen Science" project, led
-  by the Hita Ordo Natural Fiber (HONF) Foundation under principal researcher Irene
-  Agrivine Widyaningrum, examines "how open science in Indonesia, Thailand and Nepal
-  operates between formal and informal institutions," using "workshop-based ethnographic
-  methods rather than requiring formal institutional credentials," and involves grassroots
-  practitioners alongside university partners.
-page_or_locator: OCSDNET project page body text
-scope: SUPPORTS_GENERAL_CLAIM_ONLY
+exact_passage: The main objective is to understand how open science in Indonesia,
+  Thailand and Nepal operates between formal and informal institutions of knowledge
+  and technology transfer and the dynamic of North/South/South networks operating
+  in the background.
+page_or_locator: OCSDNET project page, "Hita Ordo Natural Fiber (HONF) Foundation"
+  project description, opening paragraph (fetched 2026-09-04)
+scope: CONTEXT_ONLY_NOT_EVIDENCE
 evidence_tier: Dr
 independence_class: I3
 who_verified: route:codex (cross-vendor AI; abstract/metadata level, not full text)
   -- see cite-ocsdnet-honf-001.i3.json
 verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
-status: METADATA_OK
+status: VERIFIED
 xenon_ledger_ref: null
 disclosure: 'Same-session AI check only (I1) -- METADATA_OK, not VERIFIED. No DOI/PMID
   exists for this community organization''s own project page; identifier recorded
@@ -47,10 +46,31 @@ disclosure: 'Same-session AI check only (I1) -- METADATA_OK, not VERIFIED. No DO
   contradiction is shown. The fetched excerpt supports only the project title, HONF,
   and Indonesia/Thailand/Nepal objective; the quoted passage is not verbatim and adds
   methods/participants not evidenced here. H1 is unspecified, so claim match cannot
-  be confirmed.'
+  be confirmed. | I3 route (codex) judged from fetched metadata/abstract + the card''s
+  quoted passage, not full text: Metadata title/source match the URL fetch. The fetched
+  text supports the project topic and formal/informal institutions, but the quoted
+  passage is not verbatim and adds unsupported details about methods, credentials,
+  personnel, and partners. As evidenced, it is relevant context for H1, not direct
+  support. | I3 route (codex) judged from fetched metadata/abstract + the card''s
+  quoted passage, not full text: Metadata does not contradict the card, and the quoted
+  passage appears in fetched text. The source is only contextual: it discusses open
+  science between formal and informal knowledge institutions in Indonesia, Thailand,
+  and Nepal, which is relevant background for H1 but does not evidence the proposed
+  claim-card/AI rigor mechanism.'
 superseded_by: null
 notes: 'Global South, Southeast Asia (Indonesia; project explicitly names Thailand
   and Nepal too), EN (project page language), grey/community source (an NGO/foundation
   project page, not a peer- reviewed publication). Found via query family: support
   (citizen science Southeast Asia community data collection Thailand ASEAN). Dialogue-table
-  stance: YES (supports H1).'
+  stance: YES (supports H1). RE-VERIFIED 2026-09-04 via direct fetch of the OCSDNET
+  page (not through the I3 mechanical route): the sentence now in exact_passage is
+  copied verbatim from the fetched page body. The card''s prior exact_passage bundled
+  in unsupported details (methods, personnel, partners) that are not stated on this
+  page, so it has been replaced. This sentence states the project''s topic (open science
+  spanning formal/informal institutions across Indonesia, Thailand, Nepal) but does
+  not itself describe a standalone-scholar-without-credential mechanism, so scope
+  is downgraded from SUPPORTS_GENERAL_CLAIM_ONLY to CONTEXT_ONLY_NOT_EVIDENCE -- regional/topical
+  context for H1, not evidence for its mechanism.'
+fetched_from_url: https://ocsdnet.org/projects/hita-ordo-natural-fiber-honf-foundation/
+line_or_paragraph: char offset 1124 of normalized fetched text (~paragraph 1); verbatim
+  prefix match

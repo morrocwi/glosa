@@ -772,6 +772,23 @@ def validate_review_report(report, maker_id=None, approver_id=None, allow_no_jso
     return _result(ok=not errors, errors=errors, warnings=warnings, tier=tier)
 
 
+def _citation_source_first_errors(c):
+    """Kernel rule 17 — source-first citation (founder ruling 2026-09-04, BBL-2026-09-04-100/101):
+    a citation is written FROM the opened source, never from memory. When fetch_status is FETCHED
+    (or PAYWALLED_ABSTRACT_ONLY) the card must carry the link it was read from, a page/section
+    locator, a line/paragraph pointer and a verbatim exact_passage; a card lacking any of these
+    may not stand above CANDIDATE. Returns a list of error strings."""
+    errs = []
+    fs = c.get("fetch_status")
+    if fs in ("FETCHED", "PAYWALLED_ABSTRACT_ONLY"):
+        missing = [k for k in ("fetched_from_url", "page_or_locator", "line_or_paragraph", "exact_passage") if not str(c.get(k) or "").strip()]
+        if missing and c.get("status") not in (None, "CANDIDATE"):
+            errs.append("rule17(source-first citation): status %s requires %s taken from the opened source (never from memory)" % (c.get("status"), ", ".join(missing)))
+        elif missing:
+            errs.append("rule17w(source-first citation): missing %s -- fill from the opened source before the card can leave CANDIDATE" % ", ".join(missing))
+    return errs
+
+
 def validate_citation_card(citation, allow_no_jsonschema=False):
     """Validate a citation_card payload (§7.8 Citation Integrity subsystem). Returns a Result.
 
@@ -795,6 +812,11 @@ def validate_citation_card(citation, allow_no_jsonschema=False):
 
     if citation.get("status") == "SCRAMMED" and not citation.get("xenon_ledger_ref"):
         errors.append("citation_card: status SCRAMMED requires a non-null xenon_ledger_ref (§7.8 Xenon Ledger).")
+
+    # Kernel rule 17 — source-first citation (founder ruling 2026-09-04, BBL-2026-09-04-100/101)
+    r17 = _citation_source_first_errors(citation)
+    errors.extend(e for e in r17 if e.startswith("rule17("))
+    warnings.extend(e for e in r17 if e.startswith("rule17w"))
 
     return _result(ok=not errors, errors=errors, warnings=warnings, tier=tier)
 

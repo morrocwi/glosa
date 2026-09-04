@@ -1,0 +1,46 @@
+$schema: citation_card.schema.json
+id: cite-own-written-ai-h1-001
+claim_ref: H1
+identifier:
+  kind: DOI
+  value: 10.5281/zenodo.22301202
+fetch_status: FETCHED
+fetched_at: '2026-09-04'
+metadata_verified: true
+metadata_verified_by: mechanical:zenodo_api
+metadata_verified_at: '2026-09-04'
+claim_match_verified: true
+claim_match_verified_by: route:codex
+claim_match_verified_at: null
+exact_passage: '"Institutions remain indispensable, but their authority is derivative
+  from epistemic work, not magical pedigree. AI is philosophically useful because
+  it removes the human face from a claim and reveals how much epistemic credit we
+  had quietly attached to the face."'
+page_or_locator: sources/WRITTEN_BY_AI_STILL_TRUE_v6.txt lines 35-37 (local full text)
+scope: DIRECT_QUOTATION
+evidence_tier: Dr
+independence_class: I3
+who_verified: route:codex (cross-vendor AI; abstract/metadata level, not full text)
+  -- see cite-own-written-ai-h1-001.i3.json
+verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
+status: VERIFIED
+xenon_ledger_ref: null
+disclosure: 'own lineage: same author as the hypothesis (not independent evidence;
+  listed so the world literature is collided with it, per founder instruction BBL-098)
+  | I3 route (codex) judged from fetched metadata/abstract + the card''s quoted passage,
+  not full text: Metadata fetch failed, so title/authors/year cannot be verified;
+  under uncertainty metadata_matches is false. The quoted passage appears in the fetched
+  excerpt and aligns with the card. It directly supports H1’s anti-pedigree premise,
+  though only as same-author lineage, not independent evidence. | I3 route (codex)
+  judged from fetched metadata/abstract + the card''s quoted passage, not full text:
+  Metadata shown does not contradict the card. The quoted passage is found in the
+  fetched text and aligns with the abstract/title. It supports the card’s stated relevance
+  by arguing that institutional authority derives from epistemic work, not pedigree,
+  though it is same-author lineage rather than independent evidence.'
+superseded_by: null
+notes: 'Same author as H1. stance: agrees -- argues institutional authority is derivative
+  from epistemic work, not pedigree, which is the premise H1 needs for a non-institutional
+  knower''s claim card to carry standing on its own structure. language: en.'
+fetched_from_url: https://doi.org/10.5281/zenodo.22301202
+line_or_paragraph: char offset 2487 of normalized fetched text (~paragraph 1); verbatim
+  prefix match

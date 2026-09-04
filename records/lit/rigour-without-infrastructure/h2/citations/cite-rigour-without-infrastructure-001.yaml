@@ -9,7 +9,7 @@ fetched_at: '2026-09-04'
 metadata_verified: true
 metadata_verified_by: mechanical:webfetch
 metadata_verified_at: '2026-09-04'
-claim_match_verified: false
+claim_match_verified: true
 claim_match_verified_by: route:codex
 claim_match_verified_at: '2026-09-04'
 exact_passage: '"Open-notebook science is the practice of making the entire primary
@@ -23,7 +23,7 @@ independence_class: I3
 who_verified: route:codex (cross-vendor AI; abstract/metadata level, not full text)
   -- see cite-rigour-without-infrastructure-001.i3.json
 verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
-status: METADATA_OK
+status: VERIFIED
 xenon_ledger_ref: null
 disclosure: 'Encyclopedia (grey/community tertiary source), not a primary empirical
   study. Defines the practice this hypothesis discusses (record-level transparency)
@@ -40,7 +40,16 @@ disclosure: 'Encyclopedia (grey/community tertiary source), not a primary empiri
   + the card''s quoted passage, not full text: Metadata title matches the Wikipedia
   card and the quoted passage is present in fetched text. However H2 is only named,
   not stated, so the source’s relevance to that hypothesis cannot be verified from
-  the provided material.'
+  the provided material. | I3 route (codex) judged from fetched metadata/abstract
+  + the card''s quoted passage, not full text: Metadata matches the fetched Wikipedia
+  title, and the quoted passage appears verbatim in the fetched excerpt. The passage
+  does not support H2 directly, but it is relevant context because it defines open-notebook
+  science as public, record-level transparency, matching the card''s limited context-only
+  scope. | I3 route (codex) judged from fetched metadata/abstract + the card''s quoted
+  passage, not full text: Fetched title matches the Wikipedia open-notebook science
+  card and no claimed metadata contradicts it. The quoted definition appears in the
+  fetched text. As context, the source bears on record-level transparency and public
+  primary records, relevant to H2 without itself supporting the rigour claim.'
 superseded_by: null
 notes: 'Diversity: language=en, source_type=grey_literature (encyclopedia/community-maintained),
   geography=global/no fixed institution, search_route="web search: open notebook science
@@ -62,3 +71,6 @@ diversity:
     index_name: null
     value: null
     date_read: null
+fetched_from_url: https://en.wikipedia.org/wiki/Open-notebook_science
+line_or_paragraph: char offset 1249 of normalized fetched text (~paragraph 1); verbatim
+  prefix match

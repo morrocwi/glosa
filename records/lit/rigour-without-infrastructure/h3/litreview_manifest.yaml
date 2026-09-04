@@ -6,127 +6,213 @@ search_log_hash: ''
 dialogue_table_ref: records/lit/rigour-without-infrastructure/h3/dialogue_table.md
 neighbour_table_ref: ''
 status: FROZEN
-frozen_at: '2026-09-04T13:35:59.953289+00:00'
+frozen_at: '2026-09-04T14:11:14.598690+00:00'
 supersedes: null
 citations:
 - citation_card_id: cite-bangladesh-readiness-007
-  status: METADATA_OK
+  status: VERIFIED
   identifier_kind: ARXIV
   fetch_status: FETCHED
   acquisition_log_ref: null
   metadata_verified: true
   claim_match_verified: true
-  claim_match_verification_route: NOT_YET
+  claim_match_verification_route: DECORRELATED_AI_I3
   retraction_check: UNCHECKED
   dialogue_table_stance: undetermined
 - citation_card_id: cite-cofact-thai-detector-009
-  status: METADATA_OK
+  status: INVALID_SCHEMA
   identifier_kind: OFFICIAL_URL
   fetch_status: FETCHED
   acquisition_log_ref: null
   metadata_verified: true
   claim_match_verified: true
-  claim_match_verification_route: NOT_YET
+  claim_match_verification_route: DECORRELATED_AI_I3
   retraction_check: UNCHECKED
   dialogue_table_stance: undetermined
 - citation_card_id: cite-crossmodel-codereview-002
-  status: METADATA_OK
+  status: INVALID_SCHEMA
   identifier_kind: ARXIV
   fetch_status: FETCHED
   acquisition_log_ref: null
   metadata_verified: true
   claim_match_verified: true
-  claim_match_verification_route: NOT_YET
+  claim_match_verification_route: DECORRELATED_AI_I3
   retraction_check: UNCHECKED
   dialogue_table_stance: undetermined
 - citation_card_id: cite-iseas-sea-governance-008
-  status: METADATA_OK
+  status: VERIFIED
   identifier_kind: OFFICIAL_URL
   fetch_status: FETCHED
   acquisition_log_ref: null
   metadata_verified: true
   claim_match_verified: true
-  claim_match_verification_route: NOT_YET
+  claim_match_verification_route: DECORRELATED_AI_I3
   retraction_check: UNCHECKED
   dialogue_table_stance: undetermined
 - citation_card_id: cite-legalai-india-006
-  status: METADATA_OK
+  status: VERIFIED
   identifier_kind: ARXIV
   fetch_status: FETCHED
   acquisition_log_ref: null
   metadata_verified: true
   claim_match_verified: true
-  claim_match_verification_route: NOT_YET
+  claim_match_verification_route: DECORRELATED_AI_I3
   retraction_check: UNCHECKED
   dialogue_table_stance: undetermined
 - citation_card_id: cite-mindstudio-crossvendor-010
-  status: METADATA_OK
+  status: VERIFIED
   identifier_kind: OFFICIAL_URL
   fetch_status: FETCHED
   acquisition_log_ref: null
   metadata_verified: true
   claim_match_verified: true
-  claim_match_verification_route: NOT_YET
+  claim_match_verification_route: DECORRELATED_AI_I3
   retraction_check: UNCHECKED
   dialogue_table_stance: undetermined
 - citation_card_id: cite-multiagent-debate-004
-  status: METADATA_OK
+  status: VERIFIED
   identifier_kind: ARXIV
   fetch_status: FETCHED
   acquisition_log_ref: null
   metadata_verified: true
   claim_match_verified: true
-  claim_match_verification_route: NOT_YET
+  claim_match_verification_route: DECORRELATED_AI_I3
   retraction_check: UNCHECKED
   dialogue_table_stance: undetermined
-- citation_card_id: cite-selfcorrect-reasoning-005
-  status: METADATA_OK
-  identifier_kind: ARXIV
-  fetch_status: FETCHED
-  acquisition_log_ref: null
-  metadata_verified: true
-  claim_match_verified: true
-  claim_match_verification_route: NOT_YET
-  retraction_check: UNCHECKED
-  dialogue_table_stance: undetermined
-- citation_card_id: cite-selfpreference-judge-001
-  status: METADATA_OK
-  identifier_kind: ARXIV
-  fetch_status: FETCHED
-  acquisition_log_ref: null
-  metadata_verified: true
-  claim_match_verified: true
-  claim_match_verification_route: NOT_YET
-  retraction_check: UNCHECKED
-  dialogue_table_stance: undetermined
-- citation_card_id: cite-toohconsistent-003
-  status: METADATA_OK
+- citation_card_id: cite-own-blackbox-log-h3-006
+  status: VERIFIED
   identifier_kind: DOI
   fetch_status: FETCHED
   acquisition_log_ref: null
   metadata_verified: true
   claim_match_verified: true
-  claim_match_verification_route: NOT_YET
+  claim_match_verification_route: DECORRELATED_AI_I3
+  retraction_check: UNCHECKED
+  dialogue_table_stance: orthogonal
+  diversity:
+    language: th
+- citation_card_id: cite-own-knowledge-stabilized-translation-h3-007
+  status: VERIFIED
+  identifier_kind: DOI
+  fetch_status: FETCHED
+  acquisition_log_ref: null
+  metadata_verified: true
+  claim_match_verified: true
+  claim_match_verification_route: DECORRELATED_AI_I3
+  retraction_check: UNCHECKED
+  dialogue_table_stance: agrees
+  diversity:
+    language: en
+- citation_card_id: cite-own-readout-condition-h3-002
+  status: VERIFIED
+  identifier_kind: DOI
+  fetch_status: FETCHED
+  acquisition_log_ref: null
+  metadata_verified: true
+  claim_match_verified: true
+  claim_match_verification_route: DECORRELATED_AI_I3
+  retraction_check: UNCHECKED
+  dialogue_table_stance: agrees
+  diversity:
+    language: en
+- citation_card_id: cite-own-readout-genesis-h3-003
+  status: VERIFIED
+  identifier_kind: DOI
+  fetch_status: FETCHED
+  acquisition_log_ref: null
+  metadata_verified: true
+  claim_match_verified: true
+  claim_match_verification_route: DECORRELATED_AI_I3
+  retraction_check: UNCHECKED
+  dialogue_table_stance: orthogonal
+  diversity:
+    language: en
+- citation_card_id: cite-own-standalone-scholar-h3-005
+  status: VERIFIED
+  identifier_kind: DOI
+  fetch_status: FETCHED
+  acquisition_log_ref: null
+  metadata_verified: true
+  claim_match_verified: true
+  claim_match_verification_route: DECORRELATED_AI_I3
+  retraction_check: UNCHECKED
+  dialogue_table_stance: agrees
+  diversity:
+    language: en
+- citation_card_id: cite-own-written-ai-h3-001
+  status: VERIFIED
+  identifier_kind: DOI
+  fetch_status: FETCHED
+  acquisition_log_ref: null
+  metadata_verified: true
+  claim_match_verified: true
+  claim_match_verification_route: DECORRELATED_AI_I3
+  retraction_check: UNCHECKED
+  dialogue_table_stance: orthogonal
+  diversity:
+    language: en
+- citation_card_id: cite-own-zero-readout-h3-004
+  status: VERIFIED
+  identifier_kind: DOI
+  fetch_status: FETCHED
+  acquisition_log_ref: null
+  metadata_verified: true
+  claim_match_verified: true
+  claim_match_verification_route: DECORRELATED_AI_I3
+  retraction_check: UNCHECKED
+  dialogue_table_stance: orthogonal
+  diversity:
+    language: en
+- citation_card_id: cite-selfcorrect-reasoning-005
+  status: VERIFIED
+  identifier_kind: ARXIV
+  fetch_status: FETCHED
+  acquisition_log_ref: null
+  metadata_verified: true
+  claim_match_verified: true
+  claim_match_verification_route: DECORRELATED_AI_I3
+  retraction_check: UNCHECKED
+  dialogue_table_stance: undetermined
+- citation_card_id: cite-selfpreference-judge-001
+  status: VERIFIED
+  identifier_kind: ARXIV
+  fetch_status: FETCHED
+  acquisition_log_ref: null
+  metadata_verified: true
+  claim_match_verified: true
+  claim_match_verification_route: DECORRELATED_AI_I3
+  retraction_check: UNCHECKED
+  dialogue_table_stance: undetermined
+- citation_card_id: cite-toohconsistent-003
+  status: VERIFIED
+  identifier_kind: DOI
+  fetch_status: FETCHED
+  acquisition_log_ref: null
+  metadata_verified: true
+  claim_match_verified: true
+  claim_match_verification_route: DECORRELATED_AI_I3
   retraction_check: UNCHECKED
   dialogue_table_stance: undetermined
 strata_table: []
 diversity_audit:
   counts:
-    by_language: {}
+    by_language:
+      th: 1
+      en: 6
     by_source_type: {}
     by_search_route_or_database: {}
     by_stance:
-      agrees: 0
+      agrees: 3
       disagrees: 0
-      orthogonal: 0
+      orthogonal: 4
       undetermined: 10
     by_geography_or_institution: {}
   concentration_flags: []
   zero_disagree_flag: false
   never_claim_diverse_without_counts: true
 accuracy:
-  total_citations: 10
-  verified_count: 0
+  total_citations: 17
+  verified_count: 15
   spot_check:
     applicable: true
     proposed_n_percent: 20
@@ -142,7 +228,18 @@ gate:
   accuracy_gate: FAIL
   diversity_gate: PASS
   overall: FAIL
-  blocked_reason: Not every listed citation reached VERIFIED yet.
+  blocked_reason: 'Not every listed citation reached VERIFIED yet. | 2 citation card(s) do not conform
+    to schema/citation_card.schema.json (fail-closed; regression caught by the 2026-09-04 self-application
+    run): records/lit/rigour-without-infrastructure/h3/citations/cite-cofact-thai-detector-009.yaml, records/lit/rigour-without-infrastructure/h3/citations/cite-crossmodel-codereview-002.yaml'
 disclaimers_emitted:
 - id: D-CITATION-UNVERIFIED
 human_owner: founder
+invalid_citation_cards:
+- file: records/lit/rigour-without-infrastructure/h3/citations/cite-cofact-thai-detector-009.yaml
+  errors:
+  - 'rule17(source-first citation): status VERIFIED requires line_or_paragraph taken from the opened source
+    (never from memory)'
+- file: records/lit/rigour-without-infrastructure/h3/citations/cite-crossmodel-codereview-002.yaml
+  errors:
+  - 'rule17(source-first citation): status VERIFIED requires line_or_paragraph taken from the opened source
+    (never from memory)'

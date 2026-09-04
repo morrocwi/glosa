@@ -17,11 +17,11 @@
  },
  "verdict": {
   "metadata_matches": true,
-  "passage_plausible": false,
-  "claim_match": false,
+  "passage_plausible": true,
+  "claim_match": true,
   "bearing": "CONTEXT_ONLY",
-  "reason": "Metadata title/authors/year do not contradict the card. The quoted exact passage was not found, and the excerpt/abstract only broadly discusses citizen science participation, so passage plausibility is uncertain. H1 has no substantive content here, so the context-only bearing cannot be confirmed as matching the hypothesis.",
-  "passage_mechanical": "quoted passage NOT found verbatim in fetched open text"
+  "reason": "Metadata shown matches the card on DOI-linked title, year, venue, and listed lead authors without clear contradiction. The quoted passage appears in fetched text. As context only, the source bears on public/citizen participation and voice inclusion, relevant but not direct support for the hypothesis.",
+  "passage_mechanical": "verbatim prefix found in fetched open text"
  },
  "date": "2026-09-04"
 }

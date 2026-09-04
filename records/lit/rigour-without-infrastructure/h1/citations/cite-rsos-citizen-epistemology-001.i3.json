@@ -17,11 +17,11 @@
  },
  "verdict": {
   "metadata_matches": true,
-  "passage_plausible": false,
-  "claim_match": false,
-  "bearing": "CONTEXT_ONLY",
-  "reason": "Metadata does not contradict the card. However the quoted exact passages were not found by the mechanical check and no fetched surrounding text is provided. The abstract only generally discusses diversity in democratic citizen science, so the card’s quoted support and match to H1 cannot be confirmed from the supplied material.",
-  "passage_mechanical": "no open full text fetched; abstract/metadata only"
+  "passage_plausible": true,
+  "claim_match": true,
+  "bearing": "SUPPORTS",
+  "reason": "Metadata aligns with fetched Crossref fields, and the quoted passage appears in the fetched excerpt. The evidence supports H1 only generally: robust knowledge can arise through plural perspectives and democratic citizen science, relevant to checkable rigor outside narrow institutional credentialing, but not specifically AI claim cards.",
+  "passage_mechanical": "verbatim prefix found in fetched open text"
  },
  "date": "2026-09-04"
 }

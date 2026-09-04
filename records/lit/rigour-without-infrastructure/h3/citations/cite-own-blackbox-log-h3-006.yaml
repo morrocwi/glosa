@@ -1,0 +1,42 @@
+$schema: citation_card.schema.json
+id: cite-own-blackbox-log-h3-006
+claim_ref: H3
+identifier:
+  kind: DOI
+  value: 10.5281/zenodo.22302518
+fetch_status: FETCHED
+fetched_at: '2026-09-04'
+metadata_verified: true
+metadata_verified_by: mechanical:zenodo_api
+metadata_verified_at: '2026-09-04'
+claim_match_verified: true
+claim_match_verified_by: route:codex
+claim_match_verified_at: null
+exact_passage: '"Blackbox Log — a daily, append-only, verbatim record of the author''s
+  raw voice (one pre-release correction is disclosed in BBL-2026-09-04-082), findings
+  and questions (Thai is the source of truth)... Contains the author''s own words
+  only; the single AI-written line is a disclosed correction entry (by=ai, BBL-2026-09-04-082),
+  never the author''s voice."'
+page_or_locator: Zenodo record 10.5281/zenodo.22305396 (latest version of concept
+  DOI 10.5281/zenodo.22302518), description
+scope: CONTEXT_ONLY_NOT_EVIDENCE
+evidence_tier: Dr
+independence_class: I3
+who_verified: route:codex (cross-vendor AI; abstract/metadata level, not full text)
+  -- see cite-own-blackbox-log-h3-006.i3.json
+verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
+status: VERIFIED
+xenon_ledger_ref: null
+disclosure: 'own lineage: same author as the hypothesis (not independent evidence;
+  listed so the world literature is collided with it, per founder instruction BBL-098)
+  | I3 route (codex) judged from fetched metadata/abstract + the card''s quoted passage,
+  not full text: Excerpt matches a 2026 Zenodo Blackbox Log by Yaoharee Lahtee and
+  contains the quoted description. It does not test cross-vendor checking, but as
+  disclosed same-author raw practice/lineage material it is relevant context only,
+  not empirical support for H3.'
+superseded_by: null
+notes: 'Same author as H3. stance: orthogonal -- a raw practice record; not an empirical
+  comparison of checking routes. language: th/en.'
+fetched_from_url: https://doi.org/10.5281/zenodo.22302518
+line_or_paragraph: char offset 874 of normalized fetched text (~paragraph 1); verbatim
+  prefix match

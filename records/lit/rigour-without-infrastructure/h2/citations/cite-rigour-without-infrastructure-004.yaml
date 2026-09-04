@@ -9,24 +9,23 @@ fetched_at: '2026-09-04'
 metadata_verified: true
 metadata_verified_by: mechanical:webfetch
 metadata_verified_at: '2026-09-04'
-claim_match_verified: false
+claim_match_verified: true
 claim_match_verified_by: route:codex
 claim_match_verified_at: '2026-09-04'
-exact_passage: 'Pamela Oliver, comment (2026-08-14): "I give much more scrutiny to
-  someone with no prior record and sketchy identity credentials than I do to a well-established
-  academic." April Smith, comment (2026-08-15): "Preparing manuscripts takes training,
-  practice and experience. If someone has no experience, no affiliation, no supervision
-  or advisory colleagues, etc., then the system should be very careful with that person,
-  especially in today''s environment."'
-page_or_locator: scholarlykitchen.sspnet.org, guest post 'The Guild and the Gap...'
-  by Julia Romano, 2026-08-14, plus reader comments, as fetched 2026-09-04
+exact_passage: Preparing manuscripts takes training, practice and experience. If someone
+  has no experience, no affiliation, no supervision or advisory colleagues, etc.,
+  then the system should be very careful with that person, especially in today's environment.
+page_or_locator: scholarlykitchen.sspnet.org, guest post "The Guild and the Gap...",
+  reader comment thread, comment by April Smith, 2026-08-15 12:27 AM (fetched via
+  web.archive.org 20260821013607 mirror, 2026-09-04; live page returns a Cloudflare
+  challenge)
 scope: DIRECT_QUOTATION
 evidence_tier: Dr
 independence_class: I3
 who_verified: route:codex (cross-vendor AI; abstract/metadata level, not full text)
   -- see cite-rigour-without-infrastructure-004.i3.json
 verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
-status: METADATA_OK
+status: VERIFIED
 xenon_ledger_ref: null
 disclosure: 'Grey/community source (practitioner blog with named-commenter discussion),
   The Scholarly Kitchen (Society for Scholarly Publishing network), guest post dated
@@ -44,13 +43,31 @@ disclosure: 'Grey/community source (practitioner blog with named-commenter discu
   not full text: Metadata aligns with the fetched title/date/author context. The quoted
   comments are topically plausible for an article about credentialism and unaffiliated
   authors, but the verbatim passage check failed, so the direct-quotation claim is
-  not evidenced here.'
+  not evidenced here. | I3 route (codex) judged from fetched metadata/abstract + the
+  card''s quoted passage, not full text: Metadata matches the named post, date, and
+  title. But the quoted comments were not found by the mechanical verbatim check,
+  and the provided excerpt only shows the article opening, not the comments. Under
+  the uncertainty rule, passage and claim match fail. | I3 route (codex) judged from
+  fetched metadata/abstract + the card''s quoted passage, not full text: Title/metadata
+  match the card, and the quoted passage is mechanically found in the fetched comment
+  text. The passage argues formal publishing should require hoops, caution, affiliation/supervision,
+  and possible credentialing, which directly challenges H2’s claim that rigor can
+  be carried by a claim’s own recorded structure without institutional credentials.'
 superseded_by: null
 notes: 'Diversity: language=en, source_type=practitioner/community (scholarly-publishing
   trade blog), geography=USA/global scholarly-publishing community, search_route="web
   search: independent researcher unaffiliated scholar credibility peer review credentialism".
   This is the CHALLENGE family member (search_log.yaml queries.challenge) most directly
-  on-point for H2''s falsifier.'
+  on-point for H2''s falsifier. RE-VERIFIED 2026-09-04: the live page returns a Cloudflare
+  "Attention Required" interstitial to automated fetches, so the article+comments
+  were instead fetched via the Wayback Machine mirror (web.archive.org, snapshot 20260821013607).
+  Both quoted comments in the prior exact_passage (Pamela Oliver and April Smith)
+  are in fact present verbatim in that mirror, but as two different commenters'' remarks
+  they are a composite quote, not one continuous passage; per the single-source verbatim
+  rule, this card now carries only the April Smith comment (two adjacent sentences),
+  which is the more directly on-point statement of H2''s falsifier ("the credential
+  does load-bearing work the card''s own fields cannot substitute for"). Dialogue-table
+  stance (disagrees) and scope (DIRECT_QUOTATION) are unchanged.'
 citation_card_id: cite-rigour-without-infrastructure-004
 identifier_kind: OFFICIAL_URL
 claim_match_verification_route: NOT_YET
@@ -68,3 +85,6 @@ diversity:
     index_name: null
     value: null
     date_read: null
+fetched_from_url: https://scholarlykitchen.sspnet.org/2026/08/14/guest-post-the-guild-and-the-gap-what-one-rejection-revealed-about-the-cost-of-credentialism/
+line_or_paragraph: char offset 14305 of normalized fetched text (~paragraph 1); verbatim
+  prefix match

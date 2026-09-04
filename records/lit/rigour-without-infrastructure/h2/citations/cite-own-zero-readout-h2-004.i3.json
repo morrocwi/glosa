@@ -1,0 +1,22 @@
+{
+ "vendor": "codex",
+ "fetched": {
+  "source": "zenodo",
+  "title": "What a Zero Readout Certifies Zero as the failure locus of retained distinction",
+  "authors": [
+   "Lahtee, Yaoharee"
+  ],
+  "year": "2026",
+  "container": "Zenodo",
+  "abstract": " rithmetic supplies the symbol 0. It does not, by itself, say what a measurement returning that symbol has established. This paper answers that question for a setting whose primitive is the retained difference&mdash;the assertion that two things are told apart under finite access&mdash;and whose readings are finite and rational. In such a setting zero is anomalous: it arrives in the same register as every other value, yet reports that the primitive did not fire. We show that a zero readout is not an absence but a classification, and prove which one. For the retained-information operator on a positively weighted comparison graph, the zero locus coincides, in both directions, with the locus at which no difference is retained across the declared structure; equivalently, with the fields constant on each connected component. The characterisation is machine-checked over the rationals without classical axioms. Two clarifications carry much of the philosophical weight. The claim is not a redefinition of arithmetic zero, which remains an ordinary rational and an ordinary constructor of number; we mark the arithmetic value and its fibre with different symbols throughout. And the class is relative to the declared structure of comparison rather than absolute, as an example shows in which the operator returns zero on a field that is neither empty nor pointwise zero, and a second in which it returns zero on a field that is not constant. We locate the position against Frege, structuralism, "
+ },
+ "verdict": {
+  "metadata_matches": true,
+  "passage_plausible": true,
+  "claim_match": true,
+  "bearing": "CONTEXT_ONLY",
+  "reason": "Metadata does not contradict the card, and the quoted passage is found/plausible in the fetched excerpt. The source is orthogonal to H2’s institution-vs-claim rigour claim, but it is relevant context for the card’s stated lineage/mechanical-check discipline purpose, not evidence for H2.",
+  "passage_mechanical": "verbatim prefix found in fetched open text"
+ },
+ "date": "2026-09-04"
+}

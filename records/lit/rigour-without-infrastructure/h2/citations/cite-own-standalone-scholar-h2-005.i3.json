@@ -1,0 +1,22 @@
+{
+ "vendor": "codex",
+ "fetched": {
+  "source": "zenodo",
+  "title": "The Standalone Scholar: A Dual-Track Architecture for AI-Native Scholarship",
+  "authors": [
+   "Lahtee, Yaoharee"
+  ],
+  "year": "2026",
+  "container": "Zenodo",
+  "abstract": " Generative AI lowers the cost of literature exploration, argu- ment recombination, drafting, coding scaffolds, and adversarial questioning. For scholars embedded in universities, these gains are absorbed into pre-existing laboratories, seminars, editorial networks, ethics systems, and disciplinary communities. For a standalone scholar, however, AI can create a structurally dif- ferent condition: the production of plausible scholarly objects can become abundant before independent criticism, human relationships, certification, and institutional access become abundant. This article conceptualizes that condition as a prob- lem of scholarly infrastructure reconstruction. It develops a dual-track architecture in which AI-assisted formation, open preprint staging, provenance controls, and machine-constrained checks generate defensible provisional assets, while indepen- dent human friction, repeat correspondence, journal review, and local epistemic participation convert those assets into socially stress-tested knowledge. The framework distinguishes synthetic plurality from independent validation, production criticality from scholarly-credit criticality, attention from uptake, legiti- macy from truth, and latent programme coherence from public legibility. It further argues that global scholarly search and AI recommendation routes may share Anglophone and database- distribution biases; accordingly, every socially relevant flagship is assigned both a global conversion route and a local"
+ },
+ "verdict": {
+  "metadata_matches": true,
+  "passage_plausible": true,
+  "claim_match": true,
+  "bearing": "CONTEXT_ONLY",
+  "reason": "Metadata does not contradict the card, and the quoted passage is mechanically found in the Zenodo description/abstract. The passage bears as same-author conceptual context: it separates legitimacy from truth and treats institutions/review as conversion mechanisms, but it is not independent evidence for H2.",
+  "passage_mechanical": "verbatim prefix found in fetched open text"
+ },
+ "date": "2026-09-04"
+}

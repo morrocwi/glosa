@@ -1,0 +1,27 @@
+{
+ "vendor": "codex",
+ "fetched": {
+  "source": "arxiv",
+  "title": "Large Language Models Cannot Self-Correct Reasoning Yet",
+  "authors": [
+   "Jie Huang",
+   "Xinyun Chen",
+   "Swaroop Mishra",
+   "Huaixiu Steven Zheng",
+   "Adams Wei Yu",
+   "Xinying Song",
+   "Denny Zhou"
+  ],
+  "year": "2023",
+  "abstract": "Large Language Models (LLMs) have emerged as a groundbreaking technology with their unparalleled text generation capabilities across various applications. Nevertheless, concerns persist regarding the accuracy and appropriateness of their generated content. A contemporary methodology, self-correction, has been proposed as a remedy to these issues. Building upon this premise, this paper critically examines the role and efficacy of self-correction within LLMs, shedding light on its true potential and limitations. Central to our investigation is the notion of intrinsic self-correction, whereby an LLM attempts to correct its initial responses based solely on its inherent capabilities, without the crutch of external feedback. In the context of reasoning, our research indicates that LLMs struggle to self-correct their responses without external feedback, and at times, their performance even degrades after self-correction. Drawing from these insights, we offer suggestions for future research and practical applications in this field."
+ },
+ "verdict": {
+  "metadata_matches": true,
+  "passage_plausible": true,
+  "claim_match": true,
+  "bearing": "CONTEXT_ONLY",
+  "reason": "Metadata does not contradict the card, and the quoted passage is present and consistent with the abstract. The source bears only as background: LLM intrinsic self-correction can fail without external feedback, which is relevant context for concern about same-vendor rechecking, but it does not directly test H3.",
+  "passage_mechanical": "verbatim prefix found in fetched open text"
+ },
+ "date": "2026-09-04"
+}

@@ -15,9 +15,9 @@
  "verdict": {
   "metadata_matches": true,
   "passage_plausible": true,
-  "claim_match": false,
-  "bearing": "CONTEXT_ONLY",
-  "reason": "Metadata and fetched excerpt align with the DOI, title, authors, year, peer-reviewed status, and quoted abstract passage. But the hypothesis is only labeled H2 with no substantive claim provided, so the source's bearing on that hypothesis cannot be verified from the supplied material.",
+  "claim_match": true,
+  "bearing": "SUPPORTS",
+  "reason": "Metadata matches the card, and fetched text contains the passage. The passage discusses non-academic citizen science programs building credibility through recorded strategies, tradeoffs, and expectations with data users, which supports H2 contextually: rigour/credibility can be produced by structured practices rather than only institutional machinery.",
   "passage_mechanical": "verbatim prefix found in fetched open text"
  },
  "date": "2026-09-04"

@@ -1505,6 +1505,15 @@ from v0.1 §8, with these v0.2 additions:
 | Per-project ledgers (Disagreement, Xenon) + repo-wide merged view | `glosa kg merge` / `glosa ledger merge` | `methodology/P6_independent_check.md`, `P*_citation` |
 | Per-project kg + repo-wide merged view | `glosa kg validate|merge` | §8.1 below |
 
+**Source-first citation (kernel rule 17; founder ruling 2026-09-04, BBL-2026-09-04-100/101).** A
+citation is written *from the opened source*, never from memory. Every card whose text was fetched
+carries four things taken from that opening: the link it was read from (`fetched_from_url`), the
+page or section (`page_or_locator`), the line or paragraph (`line_or_paragraph`), and one continuous
+verbatim `exact_passage` (no ellipses, no composite quotes). A card missing any of the four cannot
+stand above `CANDIDATE`. Why: the first self-application run (2026-09-04) showed the same-session
+AI assembling "quotes" from several places and labelling them verbatim; a cross-vendor route caught
+it only after the fact. The rule moves the check to the origin, before any checker is needed.
+
 ### 8.1 Named knowledge-infrastructure subsystems (request 14/15)
 
 Unchanged from v0.1 §8.1 in content, with **"per project, unioned by `glosa kg merge`"** now stated

@@ -46,7 +46,22 @@ disclosure: 'Same-session AI check only (I1) -- METADATA_OK, not VERIFIED. This 
   full text: Metadata does not contradict the card’s identifier/title/year fields
   as given. The fetched abstract contains the quoted reliability sentence, and the
   survey topic directly supports the card’s general claim that LLM hallucinations
-  create reliability risks requiring verification and imperfect detection coverage.'
+  create reliability risks requiring verification and imperfect detection coverage.
+  | I3 route (codex) judged from fetched metadata/abstract + the card''s quoted passage,
+  not full text: Metadata does not contradict the card’s identifier/preprint framing.
+  The quoted hallucination reliability passage is mechanically found and fits the
+  abstract. It does not directly support H1’s full claim-card/independence-ladder
+  mechanism, but it is relevant context for why independent verification and disclosure
+  matter. | I3 route (codex) judged from fetched metadata/abstract + the card''s quoted
+  passage, not full text: Metadata confirms an arXiv survey title and passage, but
+  the card''s mixed/international large-author-pool note conflicts with fetched two-author
+  metadata. The quoted passage appears in the abstract and fits the survey topic.
+  It is relevant context for H1''s need for independent checks around AI reliability,
+  not direct support. | I3 route (codex) judged from fetched metadata/abstract + the
+  card''s quoted passage, not full text: Metadata does not contradict the card under
+  the stated rules. The quoted hallucination reliability sentence appears in fetched
+  text and fits the abstract. The source does not test H1’s claim-card mechanism,
+  but it is relevant context for why independent checking/disclosure is needed.'
 superseded_by: null
 notes: 'Mixed/international author pool typical of large arXiv survey papers (not
   individually verified per-author affiliation), EN, preprint (not peer-reviewed).
@@ -54,3 +69,6 @@ notes: 'Mixed/international author pool typical of large arXiv survey papers (no
   research assistant risk verification). Dialogue-table stance: ORTHOGONAL (neither
   directly supports nor refutes H1''s mechanism, but bears directly on why the independence-ladder
   step in H1 cannot be skipped).'
+fetched_from_url: https://arxiv.org/html/2510.06265
+line_or_paragraph: char offset 2166 of normalized fetched text (~paragraph 1); verbatim
+  prefix match

@@ -4,55 +4,189 @@
   "title": "glosa citation card",
   "description": "tier: Dr (specified; independently unreviewed). Implements FOUNDATION_v0.5.md §7.8 (Citation Integrity subsystem, generalized to distinction-grain): the Integrity Firewall's two independently-flaggable booleans (metadata_verified != claim_match_verified, NC-18 'source existence != claim support'), `identifier.kind` including BLACKBOX_NOTE (chair ruling C8), `fetch_status` as the ONE enum (chair ruling C3), and the six-value `status` enum. One card per citation USE (one source backing one exact claim at one exact passage), not one card per source document -- templates/knowledge/citation_card.yaml's own header rule. Namespace https://glosa.example/ is a placeholder.",
   "type": "object",
-  "required": ["id", "claim_ref", "identifier", "fetch_status", "metadata_verified", "claim_match_verified", "scope", "independence_class", "status"],
+  "required": [
+    "id",
+    "claim_ref",
+    "identifier",
+    "fetch_status",
+    "metadata_verified",
+    "claim_match_verified",
+    "scope",
+    "independence_class",
+    "status"
+  ],
   "additionalProperties": true,
   "properties": {
-    "id": { "type": "string", "pattern": "^cite-[a-z0-9-]+-[0-9]{3}$" },
-    "claim_ref": { "type": "string", "minLength": 1 },
+    "id": {
+      "type": "string",
+      "pattern": "^cite-[a-z0-9-]+-[0-9]{3}$"
+    },
+    "claim_ref": {
+      "type": "string",
+      "minLength": 1
+    },
     "identifier": {
       "type": "object",
-      "required": ["kind", "value"],
+      "required": [
+        "kind",
+        "value"
+      ],
       "properties": {
-        "kind": { "$ref": "common.defs.json#/definitions/identifier_kind" },
-        "value": { "type": "string", "minLength": 1 }
+        "kind": {
+          "$ref": "common.defs.json#/definitions/identifier_kind"
+        },
+        "value": {
+          "type": "string",
+          "minLength": 1
+        }
       }
     },
-    "fetch_status": { "$ref": "common.defs.json#/definitions/fetch_status" },
-    "fetched_at": { "type": ["string", "null"] },
-    "metadata_verified": { "type": "boolean" },
-    "metadata_verified_by": { "type": ["string", "null"] },
-    "metadata_verified_at": { "type": ["string", "null"] },
+    "fetch_status": {
+      "$ref": "common.defs.json#/definitions/fetch_status"
+    },
+    "fetched_at": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "metadata_verified": {
+      "type": "boolean"
+    },
+    "metadata_verified_by": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "metadata_verified_at": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
     "claim_match_verified": {
       "description": "NC-18, non-collapsible boundary: 'source existence != claim support'. Never inferred from metadata_verified.",
       "type": "boolean"
     },
-    "claim_match_verified_by": { "type": ["string", "null"] },
-    "claim_match_verified_at": { "type": ["string", "null"] },
-    "exact_passage": { "type": "string" },
-    "page_or_locator": { "type": "string" },
-    "scope": { "$ref": "common.defs.json#/definitions/citation_scope" },
-    "evidence_tier": { "$ref": "common.defs.json#/definitions/tier" },
-    "independence_class": { "$ref": "common.defs.json#/definitions/independence_class" },
-    "who_verified": { "type": ["string", "null"] },
-    "verification_method": {
-      "enum": ["MANUAL_READ", "MECHANICAL_LOOKUP", "MECHANICAL_LOOKUP_PLUS_MANUAL_READ", "verbatim_diff_against_note"]
+    "claim_match_verified_by": {
+      "type": [
+        "string",
+        "null"
+      ]
     },
-    "status": { "$ref": "common.defs.json#/definitions/citation_status" },
-    "xenon_ledger_ref": { "type": ["string", "null"] },
-    "disclosure": { "type": "string" },
-    "superseded_by": { "type": ["string", "null"] },
-    "notes": { "type": "string" }
+    "claim_match_verified_at": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "exact_passage": {
+      "type": "string"
+    },
+    "page_or_locator": {
+      "type": "string"
+    },
+    "scope": {
+      "$ref": "common.defs.json#/definitions/citation_scope"
+    },
+    "evidence_tier": {
+      "$ref": "common.defs.json#/definitions/tier"
+    },
+    "independence_class": {
+      "$ref": "common.defs.json#/definitions/independence_class"
+    },
+    "who_verified": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "verification_method": {
+      "enum": [
+        "MANUAL_READ",
+        "MECHANICAL_LOOKUP",
+        "MECHANICAL_LOOKUP_PLUS_MANUAL_READ",
+        "verbatim_diff_against_note"
+      ]
+    },
+    "status": {
+      "$ref": "common.defs.json#/definitions/citation_status"
+    },
+    "xenon_ledger_ref": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "disclosure": {
+      "type": "string"
+    },
+    "superseded_by": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "notes": {
+      "type": "string"
+    },
+    "fetched_from_url": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "REQUIRED when fetch_status == FETCHED (kernel rule 17, founder ruling 2026-09-04 BBL-2026-09-04-100): the exact link the text was read from (open-access page, PMC/Europe PMC mirror, Wayback snapshot, arXiv html, or file path for a local full text). Never a citation from memory."
+    },
+    "line_or_paragraph": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Line number / paragraph index / section anchor within the fetched text where exact_passage starts (kernel rule 17). Together with page_or_locator this is the 'page and line'."
+    }
   },
   "allOf": [
     {
       "description": "exact_passage is required whenever claim_match_verified is true (S8 template rule) -- never a paraphrase substituting for the actual check.",
-      "if": { "properties": { "claim_match_verified": { "const": true } } },
-      "then": { "properties": { "exact_passage": { "type": "string", "minLength": 1 } }, "required": ["exact_passage"] }
+      "if": {
+        "properties": {
+          "claim_match_verified": {
+            "const": true
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "exact_passage": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "exact_passage"
+        ]
+      }
     },
     {
       "description": "status VERIFIED requires both booleans true (Integrity Firewall).",
-      "if": { "properties": { "status": { "const": "VERIFIED" } } },
-      "then": { "properties": { "metadata_verified": { "const": true }, "claim_match_verified": { "const": true } } }
+      "if": {
+        "properties": {
+          "status": {
+            "const": "VERIFIED"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "metadata_verified": {
+            "const": true
+          },
+          "claim_match_verified": {
+            "const": true
+          }
+        }
+      }
     }
   ]
 }

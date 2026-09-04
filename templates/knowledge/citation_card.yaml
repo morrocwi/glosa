@@ -28,6 +28,8 @@ claim_match_verified_by: null    # human name/role, OR "independent_ai_route:<la
                                   # per maker-checker-gate MC-02: same-model self-approval is not a check)
 claim_match_verified_at: null
 
+fetched_from_url: null           # REQUIRED when fetch_status is FETCHED/PAYWALLED_ABSTRACT_ONLY (kernel rule 17): the exact link/path the text was READ from
+line_or_paragraph: null          # REQUIRED with it: line / paragraph / section anchor where exact_passage starts ("page and line")
 exact_passage: ""                # required if claim_match_verified: true — verbatim quote or precise section pointer,
                                   # never a paraphrase substituting for the actual check
 page_or_locator: ""              # page number / paragraph id / timestamp (AV) / section anchor

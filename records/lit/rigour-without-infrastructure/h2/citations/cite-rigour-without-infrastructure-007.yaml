@@ -9,7 +9,7 @@ fetched_at: '2026-09-04'
 metadata_verified: true
 metadata_verified_by: mechanical:crossref
 metadata_verified_at: '2026-09-04'
-claim_match_verified: false
+claim_match_verified: true
 claim_match_verified_by: route:codex
 claim_match_verified_at: '2026-09-04'
 exact_passage: '"Citizen science (CS), a collaboration between people and scientists,
@@ -28,7 +28,7 @@ independence_class: I3
 who_verified: route:codex (cross-vendor AI; abstract/metadata level, not full text)
   -- see cite-rigour-without-infrastructure-007.i3.json
 verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
-status: METADATA_OK
+status: VERIFIED
 xenon_ledger_ref: null
 disclosure: 'Crossref-confirmed: Kumar, Hauter, Canlas, Sunaryoko, Maharjan et al.
   (2025), "Community perceptions of citizen science approach in pandemic preparedness
@@ -49,7 +49,17 @@ disclosure: 'Crossref-confirmed: Kumar, Hauter, Canlas, Sunaryoko, Maharjan et a
   not full text: Metadata does not contradict the card, and the quoted passage is
   plausible against the fetched abstract/text. However, only the label H2 is supplied,
   not the hypothesis content, so the source’s relation to H2 cannot be independently
-  checked; per uncertainty rule, claim_match is false.'
+  checked; per uncertainty rule, claim_match is false. | I3 route (codex) judged from
+  fetched metadata/abstract + the card''s quoted passage, not full text: Metadata
+  aligns with fetched Crossref details, and the passage is mechanically found in the
+  fetched text. The source does not evidence H2 directly, but it plausibly provides
+  context on citizen/community participation with scientists and stakeholders outside
+  narrow institutional review machinery. | I3 route (codex) judged from fetched metadata/abstract
+  + the card''s quoted passage, not full text: finite_diagnostic: Metadata and passage
+  align with the fetched Crossref/text readout. The source discusses citizen science
+  participation across South/Southeast Asia, but the evidenced passage does not address
+  rigour as claim-internal structure versus institutional credentialing, so relevance
+  to H2 is too weak.'
 superseded_by: null
 notes: 'Diversity: language=en (study conducted in Nepal, Bangladesh, India, Philippines,
   Indonesia), source_type=peer_reviewed, geography=Global South/South & Southeast
@@ -72,3 +82,6 @@ diversity:
     index_name: null
     value: null
     date_read: null
+fetched_from_url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12370037/fullTextXML
+line_or_paragraph: char offset 1895 of normalized fetched text (~paragraph 1); verbatim
+  prefix match

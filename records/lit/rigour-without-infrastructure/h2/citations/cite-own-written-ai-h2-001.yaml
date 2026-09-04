@@ -1,0 +1,45 @@
+$schema: citation_card.schema.json
+id: cite-own-written-ai-h2-001
+claim_ref: H2
+identifier:
+  kind: DOI
+  value: 10.5281/zenodo.22301202
+fetch_status: FETCHED
+fetched_at: '2026-09-04'
+metadata_verified: true
+metadata_verified_by: mechanical:zenodo_api
+metadata_verified_at: '2026-09-04'
+claim_match_verified: true
+claim_match_verified_by: route:codex
+claim_match_verified_at: null
+exact_passage: '"Institutions remain indispensable, but their authority is derivative
+  from epistemic work, not magical pedigree. AI is philosophically useful because
+  it removes the human face from a claim and reveals how much epistemic credit we
+  had quietly attached to the face."'
+page_or_locator: sources/WRITTEN_BY_AI_STILL_TRUE_v6.txt lines 35-37 (local full text)
+scope: DIRECT_QUOTATION
+evidence_tier: Dr
+independence_class: I3
+who_verified: route:codex (cross-vendor AI; abstract/metadata level, not full text)
+  -- see cite-own-written-ai-h2-001.i3.json
+verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
+status: VERIFIED
+xenon_ledger_ref: null
+disclosure: 'own lineage: same author as the hypothesis (not independent evidence;
+  listed so the world literature is collided with it, per founder instruction BBL-098)
+  | I3 route (codex) judged from fetched metadata/abstract + the card''s quoted passage,
+  not full text: Metadata fetch failed, so title/authors/year cannot be confirmed.
+  The quoted passage appears verbatim in fetched text and does not contradict the
+  excerpt. It directly supports H2’s point that institutional authority is derivative
+  from epistemic work rather than an external pedigree. | I3 route (codex) judged
+  from fetched metadata/abstract + the card''s quoted passage, not full text: finite_diagnostic:
+  Metadata does not contradict title/year/first author. The quoted passage is mechanically
+  found and coherent with the abstract. It directly supports H2 by saying institutional
+  authority is derivative from epistemic work, not an externally conferred pedigree.'
+superseded_by: null
+notes: 'Same author as H2. stance: agrees -- directly states institutional authority
+  is derivative from epistemic work rather than a magical pedigree conferred on a
+  claim from outside, matching H2''s exact wording. language: en.'
+fetched_from_url: https://doi.org/10.5281/zenodo.22301202
+line_or_paragraph: char offset 2487 of normalized fetched text (~paragraph 1); verbatim
+  prefix match

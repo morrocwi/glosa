@@ -1,0 +1,20 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: H1
+source_label: 'The Standalone Scholar: A Dual-Track Architecture for AI-Native Scholarship (Lahtee, Zenodo
+  10.5281/zenodo.22163849)'
+how_it_sees_the_problem: Sees AI-driven abundance of plausible scholarly objects, for a standalone scholar,
+  as a structurally different condition from an embedded scholar whose gains are absorbed by pre-existing
+  labs/seminars/editorial networks.
+what_it_separates: Separates synthetic plurality from independent validation; production criticality from
+  scholarly-credit criticality; attention from uptake; legitimacy from truth.
+what_it_assumes: Assumes a dual-track conversion process (AI-assisted formation -> independent human friction)
+  is available to the standalone scholar; H1's claim card is explicitly scoped as a K0/K1-internal object
+  inside this larger architecture, not a replacement for it.
+stance: UNDETERMINED
+what_it_would_say_against_us: Would ask whether H1's independence ladder actually reaches the 'independent
+  human friction, repeat correspondence, journal review' this paper says is needed to convert a provisional
+  asset into stress-tested knowledge, or stops short at mechanical/AI-only checks.
+citation_card: cite-own-standalone-scholar-h1-005
+verified:
+  metadata_verified: true
+  claim_match_verified: false

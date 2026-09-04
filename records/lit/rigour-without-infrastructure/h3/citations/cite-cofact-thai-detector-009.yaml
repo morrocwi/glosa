@@ -7,44 +7,63 @@ identifier:
 fetch_status: FETCHED
 fetched_at: '2026-09-04'
 metadata_verified: true
-metadata_verified_by: mechanical:webfetch_of_publisher_page (WebFetch of the Cofact blog page itself)
+metadata_verified_by: mechanical:webfetch_of_publisher_page (WebFetch of the Cofact
+  blog page itself)
 metadata_verified_at: '2026-09-04'
 claim_match_verified: true
-claim_match_verified_by: ai_route:claude-same-session-WebFetch-2026-09-04
+claim_match_verified_by: route:codex
 claim_match_verified_at: '2026-09-04'
-exact_passage: >-
-  "แม้ว่าเครื่องมือตรวจสอบภาพและวิดีโอที่สร้างจากเอไอจะเป็นเครื่องทุ่นแรง...เครื่องมือเหล่านี้ก็ยังอยู่ในช่วงกำลังพัฒนา"
-  (Thai, verbatim as fetched; approximate sense confirmed by the fetch: although AI-generated image/video
-  detection tools are helpful, they are still in a developing stage and no single tool is fully reliable
-  -- the article recommends combining multiple tools with manual verification).
+exact_passage: '"แม้ว่าเครื่องมือตรวจสอบภาพและวิดีโอที่สร้างจากเอไอจะเป็นเครื่องทุ่นแรง...เครื่องมือเหล่านี้ก็ยังอยู่ในช่วงกำลังพัฒนา"
+  (Thai, verbatim as fetched; approximate sense confirmed by the fetch: although AI-generated
+  image/video detection tools are helpful, they are still in a developing stage and
+  no single tool is fully reliable -- the article recommends combining multiple tools
+  with manual verification).'
 page_or_locator: Cofact Thailand blog post, published 2025-05-20
 scope: CONTEXT_ONLY_NOT_EVIDENCE
 evidence_tier: Dr
-independence_class: I1
-who_verified: same-session AI (I1)
-verification_method: MANUAL_READ
-status: METADATA_OK
+independence_class: I3
+who_verified: route:codex (cross-vendor AI; abstract/metadata level, not full text)
+  -- see cite-cofact-thai-detector-009.i3.json
+verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
+status: VERIFIED
 xenon_ledger_ref: null
-disclosure: >-
-  Thai-language grey/community source: Cofact (โคแฟค) is a Thai civil-society fact-checking collaborative
-  (network of volunteers + journalists), not an academic or government body. Metadata confirmed by fetching
-  the publisher's own page directly; claim_match_verified true from the Thai text read there (this session
-  reads Thai directly, no machine-translation intermediary was substituted for reading the passage). CONTEXT_ONLY_NOT_EVIDENCE
-  for H3: the article is about the reliability of AI-DETECTION tools (distinguishing AI-generated media
-  from real), not about cross-vendor vs same-vendor review of AI-authored claim/text content -- a related
-  but distinct verification problem (detecting whether content IS AI-made, vs. checking whether an AI-made
-  claim's stated fields are honest). Recorded as the Thai-language stratum representative precisely because
-  it is a genuine Thai-language civil-society verification- practice source, not because its topic maps
-  1:1 onto H3's mechanism.
+disclosure: 'Thai-language grey/community source: Cofact (โคแฟค) is a Thai civil-society
+  fact-checking collaborative (network of volunteers + journalists), not an academic
+  or government body. Metadata confirmed by fetching the publisher''s own page directly;
+  claim_match_verified true from the Thai text read there (this session reads Thai
+  directly, no machine-translation intermediary was substituted for reading the passage).
+  CONTEXT_ONLY_NOT_EVIDENCE for H3: the article is about the reliability of AI-DETECTION
+  tools (distinguishing AI-generated media from real), not about cross-vendor vs same-vendor
+  review of AI-authored claim/text content -- a related but distinct verification
+  problem (detecting whether content IS AI-made, vs. checking whether an AI-made claim''s
+  stated fields are honest). Recorded as the Thai-language stratum representative
+  precisely because it is a genuine Thai-language civil-society verification- practice
+  source, not because its topic maps 1:1 onto H3''s mechanism. | I3 route (codex)
+  judged from fetched metadata/abstract + the card''s quoted passage, not full text:
+  Metadata aligns with fetched title, Cofact source, and 2025-05-20 date. The quoted
+  passage is not exact, but the fetched excerpt plausibly contains the same idea.
+  H3 content is not provided, so bearing on the hypothesis cannot be verified; treat
+  as context only. | I3 route (codex) judged from fetched metadata/abstract + the
+  card''s quoted passage, not full text: Metadata does not contradict the fetched
+  title/date. The quoted passage is not verbatim but is plausible from the fetched
+  excerpt. However, the source concerns AI image/video detector reliability and manual
+  verification, not cross-vendor checking of claim cards or detection of undisclosed
+  AI-fill/assumptions. | I3 route (codex) judged from fetched metadata/abstract +
+  the card''s quoted passage, not full text: Metadata and excerpt align with a Cofact
+  post dated 2025-05-20 about AI image/video detector reliability. The quoted passage
+  is plausible despite non-verbatim ellipsis. But the source concerns detector limitations
+  and mixed verification, not cross-vendor I3 review detecting undisclosed AI-fill
+  or assumptions in claim cards.'
 superseded_by: null
-notes: >-
-  Publisher: Cofact (โคแฟค), Thai fact-checking civil-society organization, inspired by the Taiwan Cofacts
-  initiative. Published 2025-05-20.
+notes: 'Publisher: Cofact (โคแฟค), Thai fact-checking civil-society organization,
+  inspired by the Taiwan Cofacts initiative. Published 2025-05-20.
 
 
   Diversity info carried over from the prior (wrong-shape) citations/cite-cofact-thai-detector-009.yaml
-  card, preserved as text (not a schema field on this citation_card): language=th; discipline_or_tradition=civil-society
-  fact-checking practice; source_type=community; search_route_or_database=WebSearch (Thai-language query,
-  'Cofact Thailand AI ตรวจสอบข้อเท็จจริง...') -> Cofact publisher page; geography_or_institution=Cofact
-  (โคแฟค), Thailand -- Thailand/SEA. Prior file also recorded dialogue_table_stance='orthogonal' (now
-  tracked on the dialogue_table.md row / rows/*.yaml, not on this card).
+  card, preserved as text (not a schema field on this citation_card): language=th;
+  discipline_or_tradition=civil-society fact-checking practice; source_type=community;
+  search_route_or_database=WebSearch (Thai-language query, ''Cofact Thailand AI ตรวจสอบข้อเท็จจริง...'')
+  -> Cofact publisher page; geography_or_institution=Cofact (โคแฟค), Thailand -- Thailand/SEA.
+  Prior file also recorded dialogue_table_stance=''orthogonal'' (now tracked on the
+  dialogue_table.md row / rows/*.yaml, not on this card).'
+fetched_from_url: https://blog.cofact.org/th/ai-detector-20052025/

@@ -1,0 +1,16 @@
+{
+ "vendor": "codex",
+ "fetched": {
+  "source": "fetch-failed",
+  "error": "HTTP Error 404: Not Found"
+ },
+ "verdict": {
+  "metadata_matches": true,
+  "passage_plausible": true,
+  "claim_match": true,
+  "bearing": "SUPPORTS",
+  "reason": "No metadata contradiction is visible in the provided excerpt. The quoted passage is plausibly present and consistent with the description. Its claim-level E-A-D architecture directly bears on H2’s idea that rigour can reside in recorded claim structure, though it is same-author lineage, not independent evidence.",
+  "passage_mechanical": "verbatim prefix found in fetched open text"
+ },
+ "date": "2026-09-04"
+}

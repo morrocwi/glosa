@@ -18,9 +18,9 @@
  "verdict": {
   "metadata_matches": true,
   "passage_plausible": true,
-  "claim_match": false,
+  "claim_match": true,
   "bearing": "CONTEXT_ONLY",
-  "reason": "Metadata does not contradict the card, and the quoted passage is plausible against the fetched abstract/text. However, only the label H2 is supplied, not the hypothesis content, so the source’s relation to H2 cannot be independently checked; per uncertainty rule, claim_match is false.",
+  "reason": "finite_diagnostic: Metadata and passage align with the fetched Crossref/text readout. The source discusses citizen science participation across South/Southeast Asia, but the evidenced passage does not address rigour as claim-internal structure versus institutional credentialing, so relevance to H2 is too weak.",
   "passage_mechanical": "verbatim prefix found in fetched open text"
  },
  "date": "2026-09-04"
