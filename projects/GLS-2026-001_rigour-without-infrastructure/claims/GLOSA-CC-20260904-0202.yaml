@@ -23,7 +23,7 @@ standpoint:
   declared_basis: >-
     Written from the standpoint of a social-enterprise practitioner and citizen (founder, Yaoharee
     Lahtee), not as a substitute expert in computer science, philosophy of science, library and
-    information science, or research-integrity studies. AI assistance (Claude, seated as "Fable"
+    information science, or research-integrity studies. AI assistance (the AI assistant, seated as "the AI assistant"
     this session) drafted the candidate hypothesis, this claim card's field structure, and the
     supporting literature-review runs; every AI-drafted contribution is disclosed in
     `five_questions.ai_filled` and never counted as authorship (AGENTS.md gate rule 5).
@@ -145,7 +145,7 @@ five_questions:
     zero_vs_bottom: distinct_difference_found
   ai_filled:
     current_evidence: >-
-      AI (Claude, this session) retrieved and drafted the summaries of the 16 H2 citation cards
+      AI (the AI assistant, this session) retrieved and drafted the summaries of the 16 H2 citation cards
       under records/lit/rigour-without-infrastructure/h2/citations/ during the S3b LRS run; the
       founder did not independently re-fetch each source before this claim card was drafted.
     retrieved_tool_evidence: >-
@@ -328,7 +328,7 @@ legal_epistemic_separation:
   notes: ""
 independent_check:
   status: NONE
-  maker_id: "AI-anthropic/claude-fable"
+  maker_id: "ai-assistant"
   checker_id: null
   approver_id: null
   independence_class: I3
@@ -400,7 +400,7 @@ responsibility:
   data_to_inference: joint
   inference_to_claim: human
   notes: >-
-    AI (Claude) retrieved literature, drafted the H2 candidate hypothesis, and drafted this claim
+    AI (AI assistant) retrieved literature, drafted the H2 candidate hypothesis, and drafted this claim
     card's fields from the frozen project records; the founder alone signs the claim
     (FOUNDATION_v0.5.md §2.1b) and holds the falsifier judgment. This card's `status: Draft` and
     `independent_check.status: NONE` reflect that the founder has not yet signed off on this
@@ -418,11 +418,11 @@ human_owner: founder
 revision_history:
   - rev: "1"
     date: "2026-09-04"
-    by: AI-anthropic/claude-fable
+    by: ai-assistant
     note: "initial scaffold via `glosa claim new`"
   - rev: "2"
     date: "2026-09-04"
-    by: AI-anthropic/claude-fable
+    by: ai-assistant
     note: >-
       Filled full-shape card for H2 (conceptual claim) per task B1 (BBL-2026-09-04-091..101):
       statement, standpoint, lens_translation, hypothesis_world (signed), five_questions

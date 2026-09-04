@@ -510,7 +510,7 @@ non-delegable `responsible: human` field already binding on the claim card.
 
 One tool per CLI verb above (`lit_new`, `lit_search`, `lit_freeze`, `lit_acquire`, `lit_extract`,
 `lit_cite_check`, `lit_table`, `lit_select`, `lit_manifest`), vendor-neutral per request 13 —
-callable identically from Claude Code, Codex, Gemini CLI, or a local model, matching the
+callable identically from the AI coding tool, Codex, Gemini CLI, or a local model, matching the
 cross-vendor review gate's own plain-file contract (`FOUNDATION_v0.2.md` §4.3): a packet-style
 prompt (`templates/knowledge/cross_vendor_review_packet.md`'s own pattern, reused rather than
 re-invented) can drive `lit_extract`/`lit_cite_check` for a decorrelated I3 route without any

@@ -114,10 +114,14 @@
 % ---------------------------------------------------------------------------
 \twocolumn[
 \begin{center}
-{\LARGE\bfseries\color{TitleBlue} Rigour Without Infrastructure}\\[0.35em]
-{\large\color{TitleBlue} Three Propositions on Claim-Card Discipline as a Substitute for Institutional Certification}\\[0.9em]
-{\normalsize Yaoharee Lahtee}\\[0.15em]
-{\small Open Civil Science Initiative, Thailand}\\[0.1em]
+% Note: plain \\[dim] breaks inside a \twocolumn[...] optional argument
+% (LaTeX kernel bug: \@icentercr's own optional-argument lookahead collides
+% with \twocolumn's argument scanning -- confirmed by minimal reproduction);
+% \par\vspace{dim} is the working equivalent for line breaks in this block.
+{\LARGE\bfseries\color{TitleBlue} Rigour Without Infrastructure}\par\vspace{0.35em}
+{\large\color{TitleBlue} Three Propositions on Claim-Card Discipline as a Substitute for Institutional Certification}\par\vspace{0.9em}
+{\normalsize Yaoharee Lahtee}\par\vspace{0.15em}
+{\small Open Civil Science Initiative, Thailand}\par\vspace{0.1em}
 {\small ORCID \href{https://orcid.org/0009-0005-3861-0626}{0009-0005-3861-0626}}
 \end{center}
 
@@ -128,7 +132,7 @@
   \small\centering
   \textbf{Article type} Concept paper (CONCEPTUAL genre, adopted-by-human override, \Cref{sec:genre})
   \textbullet\ \textbf{Method} Claim-card discipline + Literature Review System (LRS) self-application
-  \textbullet\ \textbf{Licence} CC BY 4.0\\[0.25em]
+  \textbullet\ \textbf{Licence} CC BY 4.0\par\vspace{0.25em}
   \textbf{Status} K0 working release, not peer reviewed
   \end{minipage}%
 }
@@ -266,7 +270,7 @@ bear, go ahead --- because that is the goal of knowledge: to solve a problem for
 Three acts on the spine are the human's: owning the \textbf{problem}, asking the
 \textbf{question}, and \textbf{selecting} the hypothesis. Every other node --- retrieval, drafting,
 analysis, checking, rendering --- may be performed by any tool. Concretely for this paper: AI
-(Claude, ``Fable'' seat) drafted candidate hypotheses H1, H2, and H3
+(the AI assistant) drafted candidate hypotheses H1, H2, and H3
 (\texttt{hypotheses.md}); the founder's own act of selection, recorded in
 \texttt{hypothesis\_selection.yaml} and confirmed by ruling \texttt{BBL-2026-09-04-095} (Thai
 verbatim in \texttt{entries.jsonl}; gloss: ``bring all three together''), chose all three --- H1 and H3 are carried as untested propositions
@@ -636,7 +640,7 @@ project level but has not yet signed off on any specific card instance
 \section{AI-assistance disclosure}
 \label{sec:ai-disclosure}
 This paper is a human--AI co-production, not AI-only automation and not human-only authorship.
-Generative AI (Claude, Anthropic, ``Fable'' orchestration seat) assisted with literature retrieval
+A generative-AI assistant (vendor recorded in the local cooking log, not named here per gate rule 9) assisted with literature retrieval
 and card drafting, the three claim cards' field content, the conversation-with-the-literature
 tables, and this \LaTeX{} build. \textbf{AI output is not treated as evidence.} Every claim above
 is accepted only when it matches a retained source record (a citation card's
@@ -772,11 +776,11 @@ in place).}
 \toprule
 \textbf{Step} & \textbf{By} & \textbf{Input lines} & \textbf{Output} & \textbf{What changed} \\
 \midrule
-lens\_in & ai-anthropic/claude-fable & L1 & \texttt{lens\_translation.md} & Drafted \texttt{question\_readout}, \texttt{local\_contrast\_space\_X}, \texttt{access\_relation\_R}, \texttt{claim\_function\_Phi\_z0} from L1 under the Readout Universe lens; not yet independently reviewed. \\
-lens\_out & ai-anthropic/claude-fable & L1--L13 & \texttt{hypotheses.md} & Drafted H1/H2/H3 as candidate world-language hypotheses; selection reserved to and performed by the founder (BBL-095). \\
-lit\_review & ai-anthropic/claude-fable & H1/H2/H3 & 48 citation cards, 3 \texttt{litreview\_manifest.yaml} & Ran targeted/scoping searches per hypothesis (not systematic), froze manifests, computed diversity/accuracy audits. \\
-claim\_card & ai-anthropic/claude-fable & hypotheses + literature & \texttt{GLOSA-CC-20260904-0201/0202/0203} & Filled full-shape cards; validated \texttt{PASS\_WITH\_LIMITS}; not yet founder-signed. \\
-paper\_build & ai-anthropic/claude-fable & all of the above & this document & Drafted the concept paper's prose, tables, and \LaTeX{} build; disclosed throughout, never authored. \\
+lens\_in & ai-assistant & L1 & \texttt{lens\_translation.md} & Drafted \texttt{question\_readout}, \texttt{local\_contrast\_space\_X}, \texttt{access\_relation\_R}, \texttt{claim\_function\_Phi\_z0} from L1 under the Readout Universe lens; not yet independently reviewed. \\
+lens\_out & ai-assistant & L1--L13 & \texttt{hypotheses.md} & Drafted H1/H2/H3 as candidate world-language hypotheses; selection reserved to and performed by the founder (BBL-095). \\
+lit\_review & ai-assistant & H1/H2/H3 & 48 citation cards, 3 \texttt{litreview\_manifest.yaml} & Ran targeted/scoping searches per hypothesis (not systematic), froze manifests, computed diversity/accuracy audits. \\
+claim\_card & ai-assistant & hypotheses + literature & \texttt{GLOSA-CC-20260904-0201/0202/0203} & Filled full-shape cards; validated \texttt{PASS\_WITH\_LIMITS}; not yet founder-signed. \\
+paper\_build & ai-assistant & all of the above & this document & Drafted the concept paper's prose, tables, and \LaTeX{} build; disclosed throughout, never authored. \\
 \bottomrule
 \end{tabularx}
 \caption{Cooking log (Thai project term: ``karn pung'') --- append-only.}

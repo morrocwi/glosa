@@ -59,7 +59,7 @@ frozen_scope:
     first (SCOPING_SEARCH mode — bounded by rounds and stratification floor, not exhaustive
     coverage; this is a scoping search per glosa's honest-label rule, not a systematic review).
   conflicts_of_interest: >-
-    None disclosed. The AI session running this search is Claude (Anthropic); no financial or
+    None disclosed. The AI session running this search is the AI assistant (the AI vendor); no financial or
     institutional interest in the outcome of H3. Founder (Yaoharee Lahtee) is the human owner of
     the glosa project this hypothesis serves; this is disclosed as the standard glosa-project
     relationship, not a conflict requiring exclusion of the search.

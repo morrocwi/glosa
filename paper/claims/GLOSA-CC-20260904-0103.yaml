@@ -64,7 +64,7 @@ claim_card:
     language: en
     falsifier_ref: five_questions.tested.falsifier (this file)
     signature: Hypothesis derived with Readout Universe — Yaoharee Lahtee (lens, DOI 10.5281/zenodo.21529456); co-produced by founder
-      + Claude Sonnet (Fable orchestration seat); 2026-09-04
+      + the AI assistant Sonnet (the AI assistant orchestration seat); 2026-09-04
   five_questions:
     seen:
       record_ref: design/FOUNDATION_v0.5.md §6.3b (genre routing procedure)
@@ -167,7 +167,7 @@ claim_card:
     notes: no license/permit/certification is cited by this claim
   independent_check:
     status: NONE
-    maker_id: ai-anthropic/claude-sonnet-5 (Fable orchestration, R1 fixer seat)
+    maker_id: ai-assistant (the AI assistant orchestration, R1 fixer seat)
     checker_id: none-yet
     approver_id: none-yet
     independence_class: I0
@@ -198,6 +198,6 @@ claim_card:
   revision_history:
   - rev: '0.1'
     date: '2026-09-04'
-    by: ai-anthropic/claude-sonnet-5
+    by: ai-assistant
     note: First draft of this claim card, written for paper/main_th.md + main_en.md R1 task; not yet reviewed
       by the founder or any independent checker.

@@ -1,4 +1,4 @@
-# Chair ruling v1 — Fable, 2026-09-04 (binding input for FOUNDATION_v0.2)
+# Chair ruling v1 — the AI assistant, 2026-09-04 (binding input for FOUNDATION_v0.2)
 
 > Tier: Dr. These are the orchestrator's rulings on the disputes the synthesis left open and on the
 > review findings for S8–S13 (which FOUNDATION_v0.1 never read). Every ruling is subject to the

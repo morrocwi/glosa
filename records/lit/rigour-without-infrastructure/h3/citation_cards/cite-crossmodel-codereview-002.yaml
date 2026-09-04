@@ -14,14 +14,14 @@ metadata_verified_by: "mechanical:arxiv_abstract_page (WebFetch of https://arxiv
 metadata_verified_at: "2026-09-04"
 
 claim_match_verified: true
-claim_match_verified_by: "ai_route:claude-same-session-WebFetch-2026-09-04"
+claim_match_verified_by: "ai_route:same-session-ai"
 claim_match_verified_at: "2026-09-04"
 
 exact_passage: >-
-  "Claude review raises Codex drafts from 71.6% to 89.7% (p_BH=.001); Codex self review raises
-  them to 84.5% (p_BH=.022). The reverse direction does not pay off: Codex reviewing Claude drafts
-  drops the pass rate from 91.4% to 82.8% (p_BH=.046), and Claude self review leaves the 91.4%
-  baseline unchanged. Our evaluation indicates that the useful pairing is asymmetric: use Claude to
+  "the AI assistant review raises Codex drafts from 71.6% to 89.7% (p_BH=.001); Codex self review raises
+  them to 84.5% (p_BH=.022). The reverse direction does not pay off: Codex reviewing the AI assistant drafts
+  drops the pass rate from 91.4% to 82.8% (p_BH=.046), and the AI assistant self review leaves the 91.4%
+  baseline unchanged. Our evaluation indicates that the useful pairing is asymmetric: use the AI assistant to
   review Codex, not the other way around."
 page_or_locator: "Abstract, arXiv:2607.21656"
 
@@ -31,7 +31,7 @@ evidence_tier: fit_calibrated
 
 independence_class: I1
 
-who_verified: "ai_route:claude-same-session"
+who_verified: "ai_route:same-session-ai"
 verification_method: MANUAL_READ
 
 status: METADATA_OK
@@ -44,8 +44,8 @@ disclosure: >-
   a controlled experiment (116 tasks, six conditions: solo, cross-model both directions, same-model
   both directions) comparing cross-vendor vs same-vendor review/re-check pass rates -- exactly H3's
   comparison. It is also H3's strongest available complication, not a clean confirmation: (a) one
-  cross-vendor direction helps (Claude reviewing Codex), (b) the OTHER cross-vendor direction hurts
-  (Codex reviewing Claude, pass rate drops), and (c) SAME-model self-review also raised the pass
+  cross-vendor direction helps (the AI assistant reviewing Codex), (b) the OTHER cross-vendor direction hurts
+  (Codex reviewing the AI assistant, pass rate drops), and (c) SAME-model self-review also raised the pass
   rate for Codex drafts (71.6% -> 84.5%), which is evidence a same-vendor re-check is not simply
   worse across the board -- direction and model identity both matter, not "cross-vendor" as a
   single undifferentiated lever. Verified this session only (I1); METADATA_OK, not VERIFIED.

@@ -127,7 +127,7 @@ lenses independently found this; the single most-corroborated finding in the who
   `reviews/ARCH_CROSSCHECK.md` §Part 2, D1). Per readout-not-truth, this synthesizer treats an
   empty reasons array as a gap in the adjudication record, not evidence the fix is wrong, and has
   restored it to MUST on the strength of the unrebutted, directly-reproduced lens finding and its
-  trivial (1h) cost. This override is flagged for Fable and the founder in §7 below and should be
+  trivial (1h) cost. This override is flagged for the AI assistant and the founder in §7 below and should be
   confirmed or reversed explicitly, not silently accepted.
 
 ---
@@ -522,7 +522,7 @@ a substantive rebuttal: the underlying lens finding (`ARCH_usability.md` F1) is
 `finite_diagnostic`, directly reproduced, unrebutted by any other vote or lens in the record, and
 costs 1h to fix. It has been **restored and kept as MUST-2** in §2 above. This is a synthesizer
 override of the cross-check's formal disposition, disclosed here rather than silently applied —
-Fable/the founder should confirm or reverse it explicitly (see §7).
+the AI assistant/the founder should confirm or reverse it explicitly (see §7).
 
 ### D2 — Downgraded to SHOULD: `glosa blackbox new` CLI scaffold command
 

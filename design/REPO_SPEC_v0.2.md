@@ -33,7 +33,7 @@ rigour-without-infrastructure/
 ├── AGENTS.md                          # Reviewer/AI conduct rules; "restate thesis before judging."
 │                                       #   Carries the vendor-neutral cross-vendor review gate block
 │                                       #   (FOUNDATION §4.3) — identical text to CLAUDE.md/GEMINI.md.
-├── CLAUDE.md                          # Same gate block as AGENTS.md, Claude-specific filename.
+├── CLAUDE.md                          # Same gate block as AGENTS.md, the AI assistant-specific filename.
 ├── GEMINI.md                          # Same gate block, Gemini-specific filename.
 ├── llms.txt                           # Machine index for any LLM reading the repo cold.
 ├── CITATION.cff                       # Founder sole author. AI never in this file's authorship

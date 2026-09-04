@@ -53,7 +53,7 @@ blackbox_note:
   cooking:
     - step: lens_in
       ts: 2026-09-04T00:05:00+07:00
-      by: ai-anthropic/claude
+      by: ai-assistant
       input_lines: [1]
       output_ref: "this document, Step 1"
       what_changed: >
@@ -61,7 +61,7 @@ blackbox_note:
         formal_applicability) before any cause was proposed — Lens Law compliance.
     - step: analysis
       ts: 2026-09-04T00:10:00+07:00
-      by: ai-anthropic/claude
+      by: ai-assistant
       input_lines: [1]
       output_ref: "this document, Step 2"
       what_changed: >
@@ -557,7 +557,7 @@ example's own closing requirement.
 
 | Route | Independence class reached | `k_state` ceiling this licenses | What is still missing |
 |---|---|---|---|
-| **(a) Claude only** | I0 (same session re-reading its own output) or, at best, I1 if a fresh Claude session re-reads this document later | K0 only — "cannot raise `tier`/`k_state` at all" beyond the default `Dr`/K0 already assigned | Any independent check whatsoever; per §4.2's own table, I0 "is not a `tested:` entry at all" |
+| **(a) the AI assistant only** | I0 (same session re-reading its own output) or, at best, I1 if a fresh the AI assistant session re-reads this document later | K0 only — "cannot raise `tier`/`k_state` at all" beyond the default `Dr`/K0 already assigned | Any independent check whatsoever; per §4.2's own table, I0 "is not a `tested:` entry at all" |
 | **(b) + Gemini** (a materially different vendor added as a second route, e.g. reviewing this document's own reasoning) | I3 — different vendor | K1 **floor** only, and only combined with a founder Approver sign-off at the release-authority level (§7.1 L3 row) — **never K2**, and I3 alone is a *minimum*, never sufficient by itself (chair ruling B4) | Still no I5 human check; still no actual 14-day observation run (the falsifier has not been tested against reality by anyone, human or AI); `D-DVP-NOT-K2` would fire if this were ever described as "verified" |
 | **(c) + external human** (a person outside this session's authorship, e.g. a veterinarian consulted on the medical rival, or an independent reader of the case write-up) | I5 — the only route to K2 (and, with formal/empirical constraint, K3) | K2 becomes reachable **once the I5 route has substantively engaged with the claim** (not merely been shown it) — e.g. a veterinarian's exam result resolving the illness rival is exactly the kind of I5, mechanical/original-record-backed (I4-adjacent) check this claim currently lacks entirely | Even with (c), K2 applies only to whatever specific sub-claim the human actually checked (e.g. "illness ruled out by exam") — it does not automatically raise H1's own box-condition claim, which still needs its own 14-day observation run before `tested.evidence_relations` has anything in it at all |
 

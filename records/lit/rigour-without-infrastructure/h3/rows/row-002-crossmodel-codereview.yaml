@@ -20,8 +20,8 @@ disagrees_with_h: "YES"
 what_it_would_say_against_us: >-
   Directly against H3 as stated: this is the one source found that actually RUNS the comparison
   H3 predicts, and finds the effect is NOT a general "cross-vendor beats same-vendor" pattern --
-  it is asymmetric and direction-dependent (Claude reviewing Codex helps a lot; Codex reviewing
-  Claude actively HURTS, dropping the pass rate), and same-model self-review also produced a real
+  it is asymmetric and direction-dependent (the AI assistant reviewing Codex helps a lot; Codex reviewing
+  the AI assistant actively HURTS, dropping the pass rate), and same-model self-review also produced a real
   improvement for Codex drafts (71.6% -> 84.5%). If catch/improvement rate depends on WHICH pair
   and WHICH direction rather than simply "cross-vendor vs same-vendor," H3 as a general, direction-
   agnostic claim about independence level I3 vs I0/I1 is too coarse -- it may hold for some vendor

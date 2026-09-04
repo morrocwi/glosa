@@ -54,7 +54,7 @@ glosa/
 ├── AGENTS.md                          # Reviewer/AI conduct rules; "restate thesis before judging."
 │                                       #   Carries the vendor-neutral cross-vendor review gate block
 │                                       #   (FOUNDATION §4.3) — identical text to CLAUDE.md/GEMINI.md.
-├── CLAUDE.md                          # Same gate block as AGENTS.md, Claude-specific filename.
+├── CLAUDE.md                          # Same gate block as AGENTS.md, the AI assistant-specific filename.
 ├── GEMINI.md                          # Same gate block, Gemini-specific filename.
 ├── llms.txt                           # Machine index for any LLM reading the repo cold.
 ├── CITATION.cff                       # Founder sole author. AI never in this file's authorship
@@ -450,7 +450,7 @@ glosa/
 │                                      #   `lit_freeze`, `lit_acquire`, `lit_extract`,
 │                                      #   `lit_cite_check`, `lit_table`, `lit_select`,
 │                                      #   `lit_manifest` — vendor-neutral per request 13, callable
-│                                      #   identically from Claude Code, Codex, Gemini CLI, or a
+│                                      #   identically from the AI coding tool, Codex, Gemini CLI, or a
 │                                      #   local model via the same PACKET.md pattern §4.3 uses.
 │   └── TOOLS.md                        #   Human-readable tool list + capability-gating explanation.
 │                                      #   Gains the nine `lit_*` tools' capability notes this pass.

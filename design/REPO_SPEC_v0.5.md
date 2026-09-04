@@ -38,7 +38,7 @@
 ```
 README.md                    # L0 thesis (TH-first, then EN pointer). Repo entry point.
 AGENTS.md                    # Cross-AI conduct gate (identical block to CLAUDE.md/GEMINI.md); points at design/CURRENT_SPEC.txt.
-CLAUDE.md                    # Same gate, Claude Code filename.
+CLAUDE.md                    # Same gate, the AI coding tool filename.
 GEMINI.md                    # Same gate, Gemini filename.
 llms.txt                     # Machine index for any LLM reading the repo cold.
 CITATION.cff                 # Founder sole author (D-AUTHORSHIP; AI never in this array).

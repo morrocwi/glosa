@@ -14,7 +14,7 @@ metadata_verified_by: "mechanical:arxiv_abstract_page (WebFetch of https://arxiv
 metadata_verified_at: "2026-09-04"
 
 claim_match_verified: true
-claim_match_verified_by: "ai_route:claude-same-session-WebFetch-2026-09-04"
+claim_match_verified_by: "ai_route:same-session-ai"
 claim_match_verified_at: "2026-09-04"
 
 exact_passage: >-
@@ -30,7 +30,7 @@ evidence_tier: fit_calibrated
 
 independence_class: I1
 
-who_verified: "ai_route:claude-same-session"
+who_verified: "ai_route:same-session-ai"
 verification_method: MANUAL_READ
 
 status: METADATA_OK

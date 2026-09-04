@@ -13,7 +13,7 @@ completed, checked result.
 
 | File | Demonstrates |
 |---|---|
-| `worked-example-cat.md` | The full round trip: Blackbox Note → lens-in → analysis (rivals in one fiber, augmentation types, identification ladder, medical-rival human handoff) → lens-out (hypotheses + falsifiers) → LRS stub → hypothesis selection (human) → genre route → stub + full claim card → disclaimers → independence ceiling under Claude-only / +Gemini / +external-human. Source: `the founder session record (local handoff, not public; public trace: Blackbox Log, concept DOI 10.5281/zenodo.22302518)` §6, request 26 (founder-supplied). |
+| `worked-example-cat.md` | The full round trip: Blackbox Note → lens-in → analysis (rivals in one fiber, augmentation types, identification ladder, medical-rival human handoff) → lens-out (hypotheses + falsifiers) → LRS stub → hypothesis selection (human) → genre route → stub + full claim card → disclaimers → independence ceiling under the AI assistant-only / +Gemini / +external-human. Source: `the founder session record (local handoff, not public; public trace: Blackbox Log, concept DOI 10.5281/zenodo.22302518)` §6, request 26 (founder-supplied). |
 
 ## What a case file must show, if another one is added
 

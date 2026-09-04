@@ -30,7 +30,7 @@
 > / MIMCG round before any of it is treated as settled).
 > readout-not-truth applies to every line below: this is a *proposal*, not a ratified
 > specification. Founder = research direction, core ideas, and every ruling cited below
-> (Yaoharee Lahtee). AI (Claude, fixer seat) applied all 12 must-fix items exactly per the chair's
+> (Yaoharee Lahtee). AI (the AI assistant, fixer seat) applied all 12 must-fix items exactly per the chair's
 > rulings below, and did not re-litigate anything already settled.
 >
 > **Repo name is `glosa`** (founder decision, `the founder session record (local handoff, not public; public trace: Blackbox Log, concept DOI 10.5281/zenodo.22302518)`
@@ -428,7 +428,7 @@ Two related, distinct obligations, both binding on every genre (§6):
    front matter carries the short form of the same attribution next to the "Question as lived /
    Question as readout / Hypothesis" block (§2.3 above): **`lens_used.display`, exactly "Readout
    Universe — Yaoharee Lahtee"** (or the named `if_other_lens` value when a different lens was
-   used). This session's own founder↔Fable exchange (`sources/DIALOGUE_2026-09-04_founder-
+   used). This session's own founder↔the AI assistant exchange (`sources/DIALOGUE_2026-09-04_founder-
    fable_DRAFT.md`) is the first instance, not yet public pending the founder's line-by-line
    selection.
 
@@ -588,7 +588,7 @@ claim_card:
                                                     # role> + <AI vendor/model>; <date>" (e.g.
                                                     # "Hypothesis derived with Readout Universe —
                                                     # Yaoharee Lahtee (lens); co-produced by founder +
-                                                    # Claude Sonnet; 2026-09-04"). When no lens was
+                                                    # the AI assistant Sonnet; 2026-09-04"). When no lens was
                                                     # used, `signature` still must be non-empty and
                                                     # says so explicitly (e.g. "Not derived through a
                                                     # named lens") — silence is never legal either way
@@ -897,7 +897,7 @@ Reviewer.
 
 **Vendor-neutral execution** (request 13): a plain Markdown/YAML prompt packet
 (`templates/knowledge/cross_vendor_review_packet.md`) dropped at
-`reviews/routes/<claim_id>/<route_id>/PACKET.md`; any agent — Claude Code, Codex, Gemini CLI, a
+`reviews/routes/<claim_id>/<route_id>/PACKET.md`; any agent — the AI coding tool, Codex, Gemini CLI, a
 local model — reads it and writes `review_report.yaml` back, no shared session or orchestration
 tool required. Identical gate block ships in `CLAUDE.md`/`AGENTS.md`/`GEMINI.md` at repo root:
 
@@ -1546,7 +1546,7 @@ manifest`, `validate_citation_card`, `compute_disclaimers`, `route_genre`, `gate
 pass, chair ruling B6** — merges per-project Disagreement/Xenon ledgers into the repo-wide view),
 `cite_check` (§7.8), `schema_summary`, `demo_run`, `self_test`.
 
-**CLI, MCP server, Claude Code plugin, Accuracy gate**: unchanged from v0.1 §9 in every detail
+**CLI, MCP server, the AI coding tool plugin, Accuracy gate**: unchanged from v0.1 §9 in every detail
 except `glosa ledger merge` is added to the CLI surface alongside `glosa kg validate|merge|render`.
 Until the five-item Accuracy gate passes, every artifact this layer produces carries `tier: Dr`
 and `D-CANDIDATE-STATUS`.
@@ -1555,7 +1555,7 @@ and `D-CANDIDATE-STATUS`.
 
 ## 10. Disputes resolved by chair ruling (formerly "unresolved disputes")
 
-Every dispute v0.1 §10 left for Fable is now resolved by `design/CHAIR_RULING_v1.md`; see §13 below
+Every dispute v0.1 §10 left for the AI assistant is now resolved by `design/CHAIR_RULING_v1.md`; see §13 below
 for the dispute-by-ruling-by-location table. None of the six is re-litigated here. For the historical
 record, the six original disputes and their resolving ruling item are:
 

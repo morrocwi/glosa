@@ -1,6 +1,6 @@
 $schema: dialogue_table_row.schema.json
 hypothesis_ref: H3
-source_label: "MindStudio blog (2026) — Cross-Vendor AI Agent Review: Why Claude Should Review Codex's Code and Vice Versa (mindstudio.ai/blog)"
+source_label: "MindStudio blog (2026) — Cross-Vendor AI Agent Review: Why the AI assistant Should Review Codex's Code and Vice Versa (mindstudio.ai/blog)"
 how_it_sees_the_problem: >-
   Frames it exactly as H3 does, in plain practitioner language: a model reviewing its own output
   "tends to evaluate it through the same lens it used to create it," while a different vendor's

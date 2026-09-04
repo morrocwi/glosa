@@ -11,7 +11,7 @@ project: GLS-2026-001
 session_ref: "local session transcript, 2026-09-04 (glosa dogfood run); not public beyond the curated lines below and the public Blackbox Log entries cited by id"
 participants:
   - role: founder
-  - role: AI-anthropic/claude-fable
+  - role: ai-assistant
 language: mixed
 privacy_scan: done
 public_lines_selected_by: founder
@@ -230,7 +230,7 @@ lens_used:
 cooking:
   - step: lens_in
     ts: "2026-09-04"
-    by: "ai-anthropic/claude-fable"
+    by: "ai-assistant"
     input_lines: [1]
     output_ref: "lens_translation.md"
     what_changed: >-
@@ -239,7 +239,7 @@ cooking:
       (P00_lens.md ordering rule); not yet reviewed by an independent route.
   - step: lens_out
     ts: "2026-09-04"
-    by: "ai-anthropic/claude-fable"
+    by: "ai-assistant"
     input_lines: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
     output_ref: "hypotheses.md"
     what_changed: >-

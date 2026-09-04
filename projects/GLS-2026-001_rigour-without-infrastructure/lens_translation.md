@@ -96,7 +96,7 @@ abstract, which names this same limit for the parent paper).
 
 *Lens-in/lens-out performed under Readout Universe — Yaoharee Lahtee (lens, DOI
 10.5281/zenodo.21529456, 10.5281/zenodo.21665100; repos github.com/morrocwi/readout_universe,
-github.com/morrocwi/readout_genesis). Drafted by AI (Claude, "Fable" seat); not yet reviewed by an
+github.com/morrocwi/readout_genesis). Drafted by AI (the AI assistant, "the AI assistant" seat); not yet reviewed by an
 independent route; candidate hypotheses drawn from this translation live in `hypotheses.md` and are
 not selected here (selection reserved to the founder, per Blackbox Note line 12 /
 BBL-2026-09-04-088).*

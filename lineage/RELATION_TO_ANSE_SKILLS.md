@@ -78,7 +78,7 @@ kernel function `validate_readiness` (`FOUNDATION_v0.3.md` §9). Not yet built (
 
 "Any outside source is untrusted until read in full" is re-derived as `methodology/P9_vet_
 external_input.md` — the same lazy-catalog-then-vet-on-demand posture this skill uses for
-external Claude skills, generalized by glosa to any external evidence source a claim card cites.
+external the AI assistant skills, generalized by glosa to any external evidence source a claim card cites.
 `glosa-cite-check` (plugin skill, REPO_SPEC path) is the tool-level twin of this discipline.
 
 ### academic-presentation — private_local

@@ -13,7 +13,7 @@ ever reach — regardless of how many same-level routes were stacked.
 
 `AGENTS.md` gate rule 3 states this plainly for the whole repo: "Maker ≠ checker ≠ approver. Never
 certify what you produced. Same-model self-review has no standing." The independence ladder itself
-is Fable's ruling on founder request 18, 2026-09-04
+is the AI assistant's ruling on founder request 18, 2026-09-04
 (`HANDOFF_2026-09-04_founding-meeting.md` §6): "ทำระบบว่าต้องตรวจข้าม AI คนละยี่ห้อถึงจะเพิ่มความแม่นยำ
 แม้ยังไม่คุยกับมนุษย์" → resolved as I0 self → I1 same model new session → I2 same vendor other model
 → I3 different vendor (K1-public-provisional minimum) → I4 mechanical/original-record → I5

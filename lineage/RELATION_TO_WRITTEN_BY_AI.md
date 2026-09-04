@@ -61,4 +61,4 @@ instruction exists for this paper as of this pass).
 2. Whether any additional principle from the paper (beyond the fourteen objections and five named
    principles covered here) should be extracted into its own S15 section or NC row.
 3. Whether `design/FOUNDATION_v0.5_PATCH.md`'s proposed `evidence_relation.channel` field and
-   `rpe_check` block should be scoped narrower or wider before Fable applies the patch.
+   `rpe_check` block should be scoped narrower or wider before the AI assistant applies the patch.

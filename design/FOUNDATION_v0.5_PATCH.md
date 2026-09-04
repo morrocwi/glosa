@@ -3,7 +3,7 @@
 > **Tier: Dr, specified not applied.** This file states the exact text to insert into
 > `FOUNDATION_v0.4.md` to produce v0.5. It does not itself edit `FOUNDATION_v0.4.md` — per this
 > task's scope (design/, lineage/, sources/, docs/ only; other agents own the live FOUNDATION
-> file). Fable or the next synthesis pass applies this patch. Source:
+> file). the AI assistant or the next synthesis pass applies this patch. Source:
 > `sources/WRITTEN_BY_AI_STILL_TRUE_v6.txt` (Zenodo DOI `10.5281/zenodo.22301202`, CC BY 4.0);
 > full derivation: `design/S15_pillars-ontology-epistemology-methodology.md`,
 > `design/S9_non-collapse-table.md` `NC-65`..`NC-73`, `lineage/RELATION_TO_WRITTEN_BY_AI.md`.
@@ -220,7 +220,7 @@ separately (open item, see below).
 
 ---
 
-## Open items for Fable / the next synthesis pass
+## Open items for the AI assistant / the next synthesis pass
 
 1. Apply §1–§7 above to `FOUNDATION_v0.4.md`, bump `schema_version` per its own convention (this
    patch touches the claim card's `tested.evidence_relations[]` shape additively — a new optional

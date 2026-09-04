@@ -14,12 +14,12 @@ metadata_verified_by: "mechanical:webfetch_of_publisher_page (WebFetch of the Mi
 metadata_verified_at: "2026-09-04"
 
 claim_match_verified: true
-claim_match_verified_by: "ai_route:claude-same-session-WebFetch-2026-09-04"
+claim_match_verified_by: "ai_route:same-session-ai"
 claim_match_verified_at: "2026-09-04"
 
 exact_passage: >-
-  "OpenAI's Codex and Anthropic's Claude don't share training data, architectures, or fine-tuning
-  pipelines. When Codex tends to miss a particular class of security issue...Claude often catches
+  "OpenAI's Codex and the AI vendor's the AI assistant don't share training data, architectures, or fine-tuning
+  pipelines. When Codex tends to miss a particular class of security issue...the AI assistant often catches
   it, and vice versa." ... "When you ask the same model to review that output, it tends to
   evaluate it through the same lens it used to create it."
 page_or_locator: "MindStudio blog post, edited by Luis Chavez-Mattos, published 2026-06-18"
@@ -30,7 +30,7 @@ evidence_tier: Open
 
 independence_class: I1
 
-who_verified: "ai_route:claude-same-session"
+who_verified: "ai_route:same-session-ai"
 verification_method: MANUAL_READ
 
 status: METADATA_OK
