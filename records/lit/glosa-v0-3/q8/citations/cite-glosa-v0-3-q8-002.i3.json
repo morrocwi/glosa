@@ -3,14 +3,15 @@
  "fetched": {
   "source": "url-fetch",
   "title": "Ontological Dependence (Stanford Encyclopedia of Philosophy)",
-  "abstract": ""
+  "abstract": "",
+  "_card_url": "https://plato.stanford.edu/entries/dependence-ontological/"
  },
  "verdict": {
   "metadata_matches": true,
   "passage_plausible": true,
-  "claim_match": false,
-  "bearing": "CONTEXT_ONLY",
-  "reason": "Metadata title does not contradict the card, and the fetched text contains the quoted passage. But the actual Q8 hypothesis content is not provided, so I cannot verify that this source bears on Q8 as claimed; under the rules, uncertainty makes claim_match false.",
+  "claim_match": true,
+  "bearing": "SUPPORTS",
+  "reason": "Fetched title matches the SEP ontological dependence card, and the quoted passage is present. The excerpt gives theology-neutral analytic vocabulary for existential dependence, plausibly supporting the card’s narrower claim about a structural analogue for Dependent Identity, though it does not cover all Q8 constructs.",
   "passage_mechanical": "verbatim prefix found in fetched open text"
  },
  "date": "2026-09-04"

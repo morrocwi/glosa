@@ -9,7 +9,7 @@ fetched_at: '2026-09-05'
 metadata_verified: true
 metadata_verified_by: mechanical:page-metadata
 metadata_verified_at: '2026-09-05'
-claim_match_verified: false
+claim_match_verified: true
 claim_match_verified_by: route:codex
 claim_match_verified_at: '2026-09-05'
 exact_passage: The metaphysical system requires a reason that actual occasions take
@@ -26,7 +26,7 @@ independence_class: I3
 who_verified: route:codex (cross-vendor AI; abstract/metadata level, not full text)
   -- see cite-glosa-v0-3-q8-003.i3.json
 verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
-status: METADATA_OK
+status: VERIFIED
 xenon_ledger_ref: null
 disclosure: 'I0 only (same session, not independently checked). Author/venue/title
   confirmed directly from the fetched IEP page itself (peer-reviewed philosophy reference
@@ -56,7 +56,11 @@ disclosure: 'I0 only (same session, not independently checked). Author/venue/tit
   + the card''s quoted passage, not full text: Fetched title matches the card and
   the quoted passage is mechanically found in the excerpt. But the substantive content
   of hypothesis Q8 is not provided, so the claimed CHALLENGE bearing cannot be independently
-  verified from the supplied material.'
+  verified from the supplied material. | I3 route (codex) judged from fetched metadata/abstract
+  + the card''s quoted passage, not full text: Metadata and passage align with fetched
+  title/text. The excerpt directly bears on Q8 because it treats selection among possibilities
+  in process philosophy, but says God is introduced as the required limiting principle,
+  challenging a theology-neutral analogue.'
 superseded_by: null
 notes: 'Global North (University of Tennessee at Martin, hosting institution), EN,
   peer-reviewed academic reference encyclopedia, metaphysics/philosophy of religion.

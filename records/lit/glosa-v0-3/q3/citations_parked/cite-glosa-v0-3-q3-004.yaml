@@ -31,7 +31,7 @@ independence_class: I3
 who_verified: route:codex (cross-vendor AI; abstract/metadata level, not full text)
   -- see cite-glosa-v0-3-q3-004.i3.json
 verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
-status: METADATA_OK
+status: CANDIDATE
 xenon_ledger_ref: null
 disclosure: 'กรมการแพทย์แผนไทยและการแพทย์ทางเลือก (Dept. of Thai Traditional and Alternative
   Medicine), ''แนวทางการประยุกต์ใช้ปัญญาประดิษฐ์อย่างมีธรรมาภิบาล'' (TH, primary Thai
@@ -90,7 +90,9 @@ notes: 'Diversity: language=th, source_type=grey_literature, geography_or_instit
   after the Generative-AI-vs-Traditional-AI contrast paragraph. This card''s METADATA_OK
   status is a script/network-access limitation against this specific WAF-protected
   host, not a card content error -- the quoted passage and its CONTEXT_ONLY_NOT_EVIDENCE
-  scope are correct as written.'
+  scope are correct as written. | PARKED 2026-09-05: open full text could not be fetched
+  mechanically (WAF-blocked / PMC route not reachable), so the passage cannot be verified
+  under rule 17; kept out of the manifest, not cited.'
 citation_card_id: cite-glosa-v0-3-q3-004
 identifier_kind: OFFICIAL_URL
 claim_match_verification_route: NOT_YET

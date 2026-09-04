@@ -6,11 +6,11 @@ search_log_hash: ''
 dialogue_table_ref: records/lit/glosa-v0-3/q4/dialogue_table.md
 neighbour_table_ref: ''
 status: FROZEN
-frozen_at: '2026-09-04T19:30:35.306728+00:00'
+frozen_at: '2026-09-04T19:55:19.839177+00:00'
 supersedes: null
 citations:
 - citation_card_id: cite-glosa-v0-3-q4-001
-  status: VERIFIED
+  status: INVALID_SCHEMA
   identifier_kind: DOI
   fetch_status: PAYWALLED_ABSTRACT_ONLY
   acquisition_log_ref: null
@@ -40,13 +40,13 @@ citations:
   retraction_check: UNCHECKED
   dialogue_table_stance: undetermined
 - citation_card_id: cite-glosa-v0-3-q4-004
-  status: METADATA_OK
+  status: VERIFIED
   identifier_kind: DOI
   fetch_status: FETCHED
   acquisition_log_ref: null
   metadata_verified: true
-  claim_match_verified: false
-  claim_match_verification_route: NOT_YET
+  claim_match_verified: true
+  claim_match_verification_route: DECORRELATED_AI_I3
   retraction_check: UNCHECKED
   dialogue_table_stance: undetermined
 - citation_card_id: cite-glosa-v0-3-q4-005
@@ -60,7 +60,7 @@ citations:
   retraction_check: UNCHECKED
   dialogue_table_stance: undetermined
 - citation_card_id: cite-glosa-v0-3-q4-006
-  status: VERIFIED
+  status: INVALID_SCHEMA
   identifier_kind: DOI
   fetch_status: PAYWALLED_ABSTRACT_ONLY
   acquisition_log_ref: null
@@ -70,17 +70,17 @@ citations:
   retraction_check: UNCHECKED
   dialogue_table_stance: undetermined
 - citation_card_id: cite-glosa-v0-3-q4-007
-  status: METADATA_OK
+  status: VERIFIED
   identifier_kind: DOI
   fetch_status: PAYWALLED_ABSTRACT_ONLY
   acquisition_log_ref: null
   metadata_verified: true
-  claim_match_verified: false
-  claim_match_verification_route: NOT_YET
+  claim_match_verified: true
+  claim_match_verification_route: DECORRELATED_AI_I3
   retraction_check: UNCHECKED
   dialogue_table_stance: undetermined
 - citation_card_id: cite-glosa-v0-3-q4-008
-  status: VERIFIED
+  status: INVALID_SCHEMA
   identifier_kind: OFFICIAL_URL
   fetch_status: FETCHED
   acquisition_log_ref: null
@@ -106,7 +106,7 @@ diversity_audit:
   never_claim_diverse_without_counts: true
 accuracy:
   total_citations: 8
-  verified_count: 6
+  verified_count: 5
   spot_check:
     applicable: true
     proposed_n_percent: 20
@@ -122,7 +122,23 @@ gate:
   accuracy_gate: FAIL
   diversity_gate: PASS
   overall: FAIL
-  blocked_reason: Not every listed citation reached VERIFIED yet.
+  blocked_reason: 'Not every listed citation reached VERIFIED yet. | 3 citation card(s) do not conform
+    to schema/citation_card.schema.json (fail-closed; regression caught by the 2026-09-04 self-application
+    run): records/lit/glosa-v0-3/q4/citations/cite-glosa-v0-3-q4-001.yaml, records/lit/glosa-v0-3/q4/citations/cite-glosa-v0-3-q4-006.yaml,
+    records/lit/glosa-v0-3/q4/citations/cite-glosa-v0-3-q4-008.yaml'
 disclaimers_emitted:
 - id: D-CITATION-UNVERIFIED
 human_owner: founder
+invalid_citation_cards:
+- file: records/lit/glosa-v0-3/q4/citations/cite-glosa-v0-3-q4-001.yaml
+  errors:
+  - 'rule26: exact_passage contains an ellipsis/splice marker (''…''/''...''/'' -- '') -- composite quotes
+    are not verifiable as a single continuous passage'
+- file: records/lit/glosa-v0-3/q4/citations/cite-glosa-v0-3-q4-006.yaml
+  errors:
+  - 'rule26: exact_passage contains an ellipsis/splice marker (''…''/''...''/'' -- '') -- composite quotes
+    are not verifiable as a single continuous passage'
+- file: records/lit/glosa-v0-3/q4/citations/cite-glosa-v0-3-q4-008.yaml
+  errors:
+  - 'rule26: exact_passage contains an ellipsis/splice marker (''…''/''...''/'' -- '') -- composite quotes
+    are not verifiable as a single continuous passage'

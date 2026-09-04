@@ -31,7 +31,7 @@ independence_class: I3
 who_verified: route:codex (cross-vendor AI; abstract/metadata level, not full text)
   -- see cite-glosa-v0-3-q5-004.i3.json
 verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
-status: METADATA_OK
+status: CANDIDATE
 xenon_ledger_ref: null
 disclosure: 'Ndwandwe et al. 2022, BMJ Open (peer-reviewed, Africa/PACTR, PMC open-access
   full text). Fetched and read directly (curl + stdlib HTML stripper, one page kept
@@ -83,7 +83,9 @@ notes: 'Diversity: language=en, source_type=peer_reviewed_journal_article, geogr
   actually requires (which only requires ethics has been "applied for", not yet granted,
   and verifies it post hoc) -- the minimal schema field should probably record both
   timestamps and let a checker flag the compound violation, not hard-block on ethics
-  timing alone.'
+  timing alone. | PARKED 2026-09-05: open full text could not be fetched mechanically
+  (WAF-blocked / PMC route not reachable), so the passage cannot be verified under
+  rule 17; kept out of the manifest, not cited.'
 citation_card_id: cite-glosa-v0-3-q5-004
 identifier_kind: PMCID
 claim_match_verification_route: NOT_YET

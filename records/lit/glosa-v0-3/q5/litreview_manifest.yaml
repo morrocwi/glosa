@@ -6,7 +6,7 @@ search_log_hash: ''
 dialogue_table_ref: records/lit/glosa-v0-3/q5/dialogue_table.md
 neighbour_table_ref: ''
 status: FROZEN
-frozen_at: '2026-09-04T19:31:25.854664+00:00'
+frozen_at: '2026-09-04T19:55:20.079647+00:00'
 supersedes: null
 citations:
 - $schema: citation_card.schema.json
@@ -240,96 +240,6 @@ citations:
       value: null
       date_read: null
   fetched_from_url: https://pmc.ncbi.nlm.nih.gov/articles/PMC6371709/
-- $schema: citation_card.schema.json
-  id: cite-glosa-v0-3-q5-004
-  claim_ref: Q5
-  identifier:
-    kind: PMCID
-    value: PMC8796231
-  fetch_status: FETCHED
-  fetched_at: '2026-09-05'
-  metadata_verified: true
-  metadata_verified_by: mechanical:Europe PMC REST API (europepmc.org/webservices/rest/search?query=PMC8796231)
-    -- confirms pmid=35078852, doi=10.1136/bmjopen-2021-057474, journalTitle=BMJ Open, pubYear=2022
-  metadata_verified_at: '2026-09-05'
-  claim_match_verified: false
-  claim_match_verified_by: route:codex
-  claim_match_verified_at: '2026-09-05'
-  exact_passage: Clinical trials may be registered without ethics approval, provided that recruitment
-    of study participants has not commenced.
-  page_or_locator: 'Ndwandwe DE et al., "Practices and trends in clinical trial registration in the Pan
-    African Clinical Trials Registry (PACTR): a descriptive analysis of registration data", BMJ Open 2022;12:e057474
-    (doi:10.1136/bmjopen-2021-057474), PMC full-text mirror pmc.ncbi.nlm.nih.gov/articles/PMC8796231/,
-    Introduction/Discussion transition paragraph, as rendered on the page fetched 2026-09-05 and re-confirmed
-    verbatim 2026-09-05 via direct curl fetch of https://pmc.ncbi.nlm.nih.gov/articles/PMC8796231/'
-  line_or_paragraph: mid-paragraph sentence beginning "Clinical trials may be registered without ethics
-    approval..." (line 102 of the tag-stripped full-text page as fetched 2026-09-05)
-  scope: DIRECT_QUOTATION
-  evidence_tier: Dr
-  independence_class: I3
-  who_verified: route:codex (cross-vendor AI; abstract/metadata level, not full text) -- see cite-glosa-v0-3-q5-004.i3.json
-  verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
-  status: METADATA_OK
-  xenon_ledger_ref: null
-  disclosure: 'Ndwandwe et al. 2022, BMJ Open (peer-reviewed, Africa/PACTR, PMC open-access full text).
-    Fetched and read directly (curl + stdlib HTML stripper, one page kept in memory at a time per RAM
-    limit) 2026-09-05. Read as: the continental African trial registry PACTR explicitly permits registration
-    to happen BEFORE ethics approval is granted, gated only on recruitment not having started yet -- i.e.
-    in this real Global-South registry, "freeze before ethics, before data" is already an accepted, working
-    sequence for the freeze-vs-ethics half specifically (registration can precede ethics), while the same
-    paper reports 90% of registered trials do eventually carry ethics approval (line 97) and 45% are still
-    registered retrospectively relative to enrolment (line 132) -- so the "before data" half is the harder-to-enforce
-    one. stance vs Q5 as read: PARTIAL_SUPPORT (backs the specific claim that freeze-before-ethics is
-    workable and already practiced at a continental registry, while showing freeze-before-data compliance
-    is the still-unsolved half). No novel/first/prior-art claim made about this source; comparison to
-    Q5 is same/different/orthogonal as stated in dialogue_table_stance. independence_class I1 (same session)
-    -- status METADATA_OK only, not VERIFIED. | I3 route (codex) judged from fetched metadata/abstract
-    + the card''s quoted passage, not full text: No fetched text was provided and the verbatim passage
-    check found nothing, so the quotation cannot be checked. The metadata shown does not contradict title,
-    year, or first author, but the source as evidenced does not substantiate the claimed contextual bearing.
-    | I3 route (codex) judged from fetched metadata/abstract + the card''s quoted passage, not full text:
-    Mechanical metadata provides no title, year, or first author, so the card cannot be verified. The
-    verbatim passage check found nothing and the fetched excerpt is empty, leaving no text to compare.
-    Therefore the contextual relevance to Q5 is not evidenced. | I3 route (codex) judged from fetched
-    metadata/abstract + the card''s quoted passage, not full text: Fetched metadata provides no title/year/first-author
-    check, and the fetched text excerpt is empty. With no text to compare, the exact passage is not plausible
-    under the rule, and the source as evidenced cannot bear on Q5. | I3 route (codex) judged from fetched
-    metadata/abstract + the card''s quoted passage, not full text: Metadata matches title/year/first author.
-    However the quoted passage was not found verbatim and no fetched text excerpt is provided to compare,
-    so passage plausibility fails. Without the passage, the evidenced material only broadly concerns PACTR
-    registration/ethics and does not substantiate the card''s timing claim.'
-  superseded_by: null
-  notes: 'Diversity: language=en, source_type=peer_reviewed_journal_article, geography_or_institution=Africa
-    (Pan-African, Global South), search_route_or_database="web search + Europe PMC REST API, glosa-v0-3
-    Q5 scoping pass". dialogue_table_stance: yes. what_it_separates: Separates "registered before ethics
-    approval is finalised" (explicitly permitted by PACTR, gated on recruitment not yet starting) from
-    "registered before data collection/recruitment" (the harder norm, still failing in 45% of registered
-    trials) -- Q5''s compound rule bundles two separately-enforceable conditions that this registry''s
-    own policy already treats as distinct. what_it_assumes: Assumes a registry staff verification step
-    exists to check ethics documents after the fact ("PACTR staff also ensure that the ethics approval
-    is verified", line 249) -- i.e. the timestamp field alone is not self-enforcing even where it exists.
-    what_it_would_say_against_us: If glosa''s hard gate demands protocol_frozen_at strictly BEFORE ethics_approved_at
-    as a blocking precondition, that is stricter than what the largest working African trial registry
-    actually requires (which only requires ethics has been "applied for", not yet granted, and verifies
-    it post hoc) -- the minimal schema field should probably record both timestamps and let a checker
-    flag the compound violation, not hard-block on ethics timing alone.'
-  citation_card_id: cite-glosa-v0-3-q5-004
-  identifier_kind: PMCID
-  claim_match_verification_route: NOT_YET
-  retraction_check: UNCHECKED
-  version_status: PUBLISHED
-  dialogue_table_stance: agrees
-  diversity:
-    language: en
-    discipline_or_tradition: clinical trial registry policy / research integrity
-    source_type: peer_reviewed
-    search_route_or_database: web search + Europe PMC REST API, glosa-v0-3 Q5 scoping pass
-    geography_or_institution: Africa / Pan-African (Global South)
-    venue_quality_index:
-      index_name: null
-      value: null
-      date_read: null
-  fetched_from_url: https://pmc.ncbi.nlm.nih.gov/articles/PMC8796231/
 - $schema: citation_card.schema.json
   id: cite-glosa-v0-3-q5-005
   claim_ref: Q5
@@ -641,12 +551,12 @@ strata_table: []
 diversity_audit:
   counts:
     by_language:
-      en: 6
+      en: 5
       th: 2
     by_source_type: {}
     by_search_route_or_database: {}
     by_stance:
-      agrees: 4
+      agrees: 3
       disagrees: 3
       orthogonal: 1
       undetermined: 0
@@ -655,7 +565,7 @@ diversity_audit:
   zero_disagree_flag: false
   never_claim_diverse_without_counts: true
 accuracy:
-  total_citations: 8
+  total_citations: 7
   verified_count: 7
   spot_check:
     applicable: true
@@ -669,10 +579,9 @@ accuracy:
 secondary_citation_ban_audit:
   violations_found: 0
 gate:
-  accuracy_gate: FAIL
+  accuracy_gate: PASS
   diversity_gate: PASS
-  overall: FAIL
-  blocked_reason: Not every listed citation reached VERIFIED yet.
-disclaimers_emitted:
-- id: D-CITATION-UNVERIFIED
+  overall: PASS
+  blocked_reason: null
+disclaimers_emitted: []
 human_owner: founder

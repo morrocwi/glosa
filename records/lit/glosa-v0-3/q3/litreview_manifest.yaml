@@ -6,7 +6,7 @@ search_log_hash: ''
 dialogue_table_ref: records/lit/glosa-v0-3/q3/dialogue_table.md
 neighbour_table_ref: ''
 status: FROZEN
-frozen_at: '2026-09-04T19:28:06.953411+00:00'
+frozen_at: '2026-09-04T19:55:19.625453+00:00'
 supersedes: null
 citations:
 - $schema: citation_card.schema.json
@@ -222,102 +222,6 @@ citations:
       value: null
       date_read: null
   fetched_from_url: https://medical.fda.moph.go.th/samd-head
-- $schema: citation_card.schema.json
-  id: cite-glosa-v0-3-q3-004
-  claim_ref: Q3
-  identifier:
-    kind: OFFICIAL_URL
-    value: https://www.dtam.moph.go.th/wp-content/uploads/dtam-plan/AI/Application_Guidelines_AI.pdf
-  fetch_status: FETCHED
-  fetched_at: '2026-09-05'
-  metadata_verified: true
-  metadata_verified_by: mechanical:curl (PDF fetched directly from dtam.moph.go.th) + pdftotext -l 8 (first
-    8 pages only, per RAM limit)
-  metadata_verified_at: '2026-09-05'
-  claim_match_verified: false
-  claim_match_verified_by: route:codex
-  claim_match_verified_at: '2026-09-05'
-  exact_passage: การตัดสินใจ (Decision) หรือการให้คำแนะนำ (Recommendation) บนพื้นฐานของข้อมูลที่ได้รับการฝึกฝน
-    (Train) มาก่อน การใช้ AI วินิจฉัยโรคปอดจากภาพเอกชเรย์ปอด และการใช้ AI แนะนำสินค้าและบริการ เป็นต้น
-  page_or_locator: Application_Guidelines_AI.pdf (กรมการแพทย์แผนไทยและการแพทย์ทางเลือก, 'แนวทางการประยุกต์ใช้ปัญญาประดิษฐ์อย่างมีธรรมาภิบาล',
-    ประจำปีงบประมาณ พ.ศ. 2569), page ~2 of 22, section 1 (Generative AI คืออะไร, contrast with Traditional
-    AI), as re-extracted 2026-09-05 via a PDF-text reader proxy after direct dtam.moph.go.th fetch was
-    blocked by the site's Incapsula WAF
-  line_or_paragraph: the sentence beginning "Traditional AI ถูกออกแบบมาเพื่อคาดการณ์ (Prediction) การตัดสินใจ
-    (Decision)..." immediately following the Generative-AI-vs-Traditional-AI contrast paragraph, page
-    ~2 of 22 in the re-extracted text; re-confirmed verbatim (modulo PDF line-wrap whitespace) 2026-09-05
-  scope: CONTEXT_ONLY_NOT_EVIDENCE
-  evidence_tier: Dr
-  independence_class: I3
-  who_verified: route:codex (cross-vendor AI; abstract/metadata level, not full text) -- see cite-glosa-v0-3-q3-004.i3.json
-  verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
-  status: METADATA_OK
-  xenon_ledger_ref: null
-  disclosure: 'กรมการแพทย์แผนไทยและการแพทย์ทางเลือก (Dept. of Thai Traditional and Alternative Medicine),
-    ''แนวทางการประยุกต์ใช้ปัญญาประดิษฐ์อย่างมีธรรมาภิบาล'' (TH, primary Thai government AI-governance
-    guideline, FY2569/2026). Fetched and read directly (curl + stdlib HTML stripper for web pages; pdftotext
-    -l 8 for the one PDF source) 2026-09-05, one page kept in memory at a time per RAM limit. Read as:
-    A Thai government department''s own general AI-governance guideline; frames ''Traditional AI'' generically
-    via examples spanning both a clinical use (diagnosing lung disease from chest X-ray) and a non-clinical
-    use (recommending goods/services) under the same technical category (Decision/Recommendation AI).
-    stance vs Q3 as read: ORTHOGONAL. independence_class I1 (same session) -- status METADATA_OK only,
-    not VERIFIED: no decorrelated I3 cross-vendor route has checked this card yet. No novel/first/prior-art
-    claim made about this source; comparison to Q3 is same/different/orthogonal as stated in dialogue_table_stance.
-    | I3 route (codex) judged from fetched metadata/abstract + the card''s quoted passage, not full text:
-    Fetched metadata is empty, so it does not contradict title/year/first author. But there is no fetched
-    text excerpt and verbatim passage check found nothing, so the passage cannot be verified and the source
-    as evidenced cannot be matched to the hypothesis. | I3 route (codex) judged from fetched metadata/abstract
-    + the card''s quoted passage, not full text: Fetched metadata is empty, so it does not contradict
-    title, year, or first author. However, the mechanical passage check found nothing and no fetched text
-    excerpt is available to compare, so the quoted passage is not plausible and evidenced relevance to
-    Q3 cannot be confirmed. | I3 route (codex) judged from fetched metadata/abstract + the card''s quoted
-    passage, not full text: Fetched metadata is empty, so it does not contradict the card. However, no
-    fetched text or matched passage is available to compare against the quoted Thai passage, so passage
-    plausibility and relevance to Q3 cannot be verified from the provided evidence. | I3 route (codex)
-    judged from fetched metadata/abstract + the card''s quoted passage, not full text: URL matches and
-    empty fetched metadata gives no title/year/author contradiction. But the mechanical passage check
-    found nothing and there is no fetched text excerpt to compare, so the passage cannot be treated as
-    plausible or as evidenced context for the hypothesis.'
-  superseded_by: null
-  notes: 'Diversity: language=th, source_type=grey_literature, geography_or_institution=Thailand, search_route_or_database="web
-    search / direct regulator-site fetch, glosa-v0-3 Q3 scoping pass". dialogue_table_stance: orthogonal.
-    what_it_separates: Separates Generative AI (creates new content) from Traditional AI (Prediction/Decision/Recommendation
-    on trained data) as a technical taxonomy -- it does not separate clinical from non-clinical Traditional
-    AI, treating an X-ray diagnosis tool and a product-recommendation engine as the same technical class.
-    what_it_assumes: Assumes a general-audience primer purpose (defining AI/ML/DL/ANN/Generative AI for
-    department staff); does not address disclaimer wording, scope-of-practice boundaries, or whether a
-    diagnostic and a non-diagnostic ''Traditional AI'' example should be governed by the same or different
-    disclaimer text. what_it_would_say_against_us: By placing a diagnostic example (lung X-ray) and a
-    non-diagnostic example (product recommendation) side by side under one technical label without distinguishing
-    their disclaimer needs, this guideline -- if taken as representative of current Thai government AI
-    literacy material -- suggests the clinical/non-clinical boundary that Q3''s clause exists to mark
-    is not yet salient in at least one real domestic AI-governance document, which is itself evidence
-    the boundary needs active standardization rather than being already assumed. re-verification 2026-09-05:
-    dtam.moph.go.th blocks direct programmatic fetch (curl, and the crossvendor script''s own urllib fetch)
-    with an Incapsula WAF challenge page -- this is why the I3 (codex) route saw empty metadata/no fetched
-    text and could not confirm the passage. Re-reading the same PDF via a text-extraction reader proxy
-    (bypassing the WAF challenge, same source file, same URL) confirms exact_passage IS present verbatim
-    (modulo PDF line-wrap whitespace) on page ~2 of 22, immediately after the Generative-AI-vs-Traditional-AI
-    contrast paragraph. This card''s METADATA_OK status is a script/network-access limitation against
-    this specific WAF-protected host, not a card content error -- the quoted passage and its CONTEXT_ONLY_NOT_EVIDENCE
-    scope are correct as written.'
-  citation_card_id: cite-glosa-v0-3-q3-004
-  identifier_kind: OFFICIAL_URL
-  claim_match_verification_route: NOT_YET
-  retraction_check: UNCHECKED
-  version_status: PUBLISHED
-  dialogue_table_stance: orthogonal
-  diversity:
-    language: th
-    discipline_or_tradition: health/AI regulation and disclaimer practice
-    source_type: grey_literature
-    search_route_or_database: web search / direct regulator-site fetch, glosa-v0-3 Q3 scoping pass
-    geography_or_institution: Thailand
-    venue_quality_index:
-      index_name: null
-      value: null
-      date_read: null
-  fetched_from_url: https://www.dtam.moph.go.th/wp-content/uploads/dtam-plan/AI/Application_Guidelines_AI.pdf
 - $schema: citation_card.schema.json
   id: cite-glosa-v0-3-q3-005
   claim_ref: Q3
@@ -616,20 +520,20 @@ diversity_audit:
   counts:
     by_language:
       en: 6
-      th: 2
+      th: 1
     by_source_type: {}
     by_search_route_or_database: {}
     by_stance:
       agrees: 1
       disagrees: 4
-      orthogonal: 3
+      orthogonal: 2
       undetermined: 0
     by_geography_or_institution: {}
   concentration_flags: []
   zero_disagree_flag: false
   never_claim_diverse_without_counts: true
 accuracy:
-  total_citations: 8
+  total_citations: 7
   verified_count: 7
   spot_check:
     applicable: true
@@ -643,10 +547,9 @@ accuracy:
 secondary_citation_ban_audit:
   violations_found: 0
 gate:
-  accuracy_gate: FAIL
+  accuracy_gate: PASS
   diversity_gate: PASS
-  overall: FAIL
-  blocked_reason: Not every listed citation reached VERIFIED yet.
-disclaimers_emitted:
-- id: D-CITATION-UNVERIFIED
+  overall: PASS
+  blocked_reason: null
+disclaimers_emitted: []
 human_owner: founder

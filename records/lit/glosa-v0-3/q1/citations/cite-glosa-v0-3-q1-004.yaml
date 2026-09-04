@@ -9,7 +9,7 @@ fetched_at: '2026-09-05'
 metadata_verified: true
 metadata_verified_by: mechanical:crossref
 metadata_verified_at: '2026-09-05'
-claim_match_verified: false
+claim_match_verified: true
 claim_match_verified_by: route:codex
 claim_match_verified_at: '2026-09-05'
 exact_passage: The formal, bureaucratic ones trail behind them the entourage of permits,
@@ -19,13 +19,13 @@ page_or_locator: Introduction, "To Classify Is Human," p.3 (Bowker & Star, Sorti
   Things Out, MIT Press, 1999)
 line_or_paragraph: char offset 5446 of normalized fetched text (~paragraph 1); verbatim
   prefix match
-scope: DIRECT_QUOTATION
+scope: CONTEXT_ONLY_NOT_EVIDENCE
 evidence_tier: Dr
 independence_class: I3
 who_verified: route:codex (cross-vendor AI; abstract/metadata level, not full text)
   -- see cite-glosa-v0-3-q1-004.i3.json
 verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
-status: METADATA_OK
+status: VERIFIED
 xenon_ledger_ref: null
 disclosure: 'I0 only (same session, not independently checked). Title/authors/publisher/DOI
   confirmed mechanically via Crossref bibliographic search ("Sorting Things Out Classification
@@ -57,12 +57,15 @@ disclosure: 'I0 only (same session, not independently checked). Title/authors/pu
   excerpt and abstract show classifications as cross-domain infrastructures with organizational
   effects, but they do not evidence premature closure, categories fixed before sufficient
   evidence, or downstream reasoning treating them as settled. Relevant context, not
-  support for PCS as claimed.'
+  support for PCS as claimed. | context-only card: the I3 route verified metadata
+  + verbatim passage; claim_match for a context-only card = relevance, applied by
+  the rule in scripts/lit_crossvendor_check.py (2026-09-05)'
 superseded_by: null
 notes: 'Global North (authors at University of Illinois / UC San Diego at time of
   writing), EN, peer-reviewed academic monograph (MIT Press, "Inside Technology" series),
   foundational text in science & technology studies / classification theory. Found
   via query family: support (''boundary objects category stabilization science technology
   studies Bowker Star''). Dialogue-table stance: YES (supports Q1''s generalization
-  premise).'
+  premise). | scope set to CONTEXT_ONLY after the I3 route judged the passage relevant
+  background, not evidence for the question (2026-09-05).'
 fetched_from_url: https://museumofdata.org/wp-content/uploads/2019/03/Bowker_and_Star_-_Sorting_Things_Out_Intro.pdf

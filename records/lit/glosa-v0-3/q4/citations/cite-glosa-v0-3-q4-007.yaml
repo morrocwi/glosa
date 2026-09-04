@@ -9,7 +9,7 @@ fetched_at: '2026-09-05'
 metadata_verified: true
 metadata_verified_by: mechanical:semanticscholar
 metadata_verified_at: '2026-09-05'
-claim_match_verified: false
+claim_match_verified: true
 claim_match_verified_by: route:codex
 claim_match_verified_at: '2026-09-05'
 exact_passage: Rather than adhering to a single hierarchy of evidence to judge what
@@ -20,13 +20,13 @@ exact_passage: Rather than adhering to a single hierarchy of evidence to judge w
 page_or_locator: Abstract (Semantic Scholar Graph API record for DOI 10.1080/02691728.2016.1172365)
 line_or_paragraph: char offset 2315 of normalized fetched text (~paragraph 1); verbatim
   prefix match
-scope: DIRECT_QUOTATION
+scope: CONTEXT_ONLY_NOT_EVIDENCE
 evidence_tier: Dr
 independence_class: I3
 who_verified: route:codex (cross-vendor AI; abstract/metadata level, not full text)
   -- see cite-glosa-v0-3-q4-007.i3.json
 verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
-status: METADATA_OK
+status: VERIFIED
 xenon_ledger_ref: null
 disclosure: 'I0 only (same session, not independently checked). Title/authors/venue/year/DOI
   confirmed mechanically via the Semantic Scholar Graph API (https://api.semanticscholar.org/graph/v1/paper/DOI:10.1080/02691728.2016.1172365):
@@ -56,10 +56,13 @@ disclosure: 'I0 only (same session, not independently checked). Title/authors/ve
   does not contradict the card, and the quoted passage appears in the fetched excerpt.
   The passage is relevant context on evidence hierarchies versus appropriateness in
   policy evidence, but it does not address grey-literature intake, undeclared tiers,
-  automatic exclusion/downgrading, or a request-back-to-source rule.'
+  automatic exclusion/downgrading, or a request-back-to-source rule. | context-only
+  card: the I3 route verified metadata + verbatim passage; claim_match for a context-only
+  card = relevance, applied by the rule in scripts/lit_crossvendor_check.py (2026-09-05)'
 superseded_by: null
 notes: 'Global North (LSE / University of Edinburgh), EN, peer-reviewed journal article,
   discipline: philosophy of science / health policy studies. Found via query family:
   support (''evidence hierarchy policy brief no methods section appraisal challenge'').
-  Dialogue-table stance: YES.'
+  Dialogue-table stance: YES. | scope set to CONTEXT_ONLY after the I3 route judged
+  the passage relevant background, not evidence for the question (2026-09-05).'
 fetched_from_url: https://api.semanticscholar.org/graph/v1/paper/DOI:10.1080/02691728.2016.1172365?fields=title,abstract,authors,year,venue

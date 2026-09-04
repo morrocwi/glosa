@@ -3,15 +3,16 @@
  "fetched": {
   "source": "url-fetch",
   "title": "",
-  "abstract": ""
+  "abstract": "",
+  "_card_url": "https://edusoshum.org/index.php/EDU/article/download/4/29"
  },
  "verdict": {
   "metadata_matches": true,
-  "passage_plausible": false,
+  "passage_plausible": true,
   "claim_match": false,
   "bearing": "CONTEXT_ONLY",
-  "reason": "No title/year/first-author contradiction is visible, so metadata does not fail. The fetched text is raw PDF/binary-like output with no usable extracted passage, and verbatim search failed. From the provided evidence alone, the source cannot be confirmed as relevant context for Q8.",
-  "passage_mechanical": "quoted passage NOT found verbatim in fetched open text"
+  "reason": "Metadata is not contradicted, and the fetched excerpt contains the passage. But the passage only gives a broad Islamic-education ontology/metaphysics definition; it does not address theology-neutral structural dependency, selection among equal possibles, or sustained dependence in the Q8 hypothesis.",
+  "passage_mechanical": "verbatim prefix found in fetched open text"
  },
  "date": "2026-09-04"
 }

@@ -9,7 +9,7 @@ fetched_at: '2026-09-05'
 metadata_verified: true
 metadata_verified_by: mechanical:europepmc
 metadata_verified_at: '2026-09-05'
-claim_match_verified: false
+claim_match_verified: true
 claim_match_verified_by: route:codex
 claim_match_verified_at: '2026-09-05'
 exact_passage: In addition to scientific evidence which typically includes research/surveys,
@@ -20,13 +20,13 @@ exact_passage: In addition to scientific evidence which typically includes resea
 page_or_locator: Background section (Europe PMC fullTextXML, PMC7409627)
 line_or_paragraph: char offset 5856 of normalized fetched text (~paragraph 1); verbatim
   prefix match
-scope: DIRECT_QUOTATION
+scope: CONTEXT_ONLY_NOT_EVIDENCE
 evidence_tier: Dr
 independence_class: I3
 who_verified: route:codex (cross-vendor AI; abstract/metadata level, not full text)
   -- see cite-glosa-v0-3-q4-004.i3.json
 verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
-status: METADATA_OK
+status: VERIFIED
 xenon_ledger_ref: null
 disclosure: 'I0 only (same session, not independently checked). Title/authors/journal/year/DOI/open-access
   status confirmed mechanically via Europe PMC (query PMCID:PMC7409627, resultType=core;
@@ -61,11 +61,14 @@ disclosure: 'I0 only (same session, not independently checked). Title/authors/jo
   the card''s quoted passage, not full text: Metadata and quoted passage match the
   supplied checks. The passage is relevant background on broad forms of evidence in
   health policymaking, but it does not address undeclared evidence tiers, grey-literature
-  intake, automatic downgrading, or request-back-to-source rules.'
+  intake, automatic downgrading, or request-back-to-source rules. | context-only card:
+  the I3 route verified metadata + verbatim passage; claim_match for a context-only
+  card = relevance, applied by the rule in scripts/lit_crossvendor_check.py (2026-09-05)'
 superseded_by: null
 notes: 'Global South (Nigeria / West Africa, ECOWAS/WAHO), EN, peer-reviewed journal
   article, open access (CC BY), discipline: health policy / evidence-to-policy guidance
   development. Found via query family: challenge (''health policy brief evidence grading
   Global South WHO PAHO grey literature guidance''). Dialogue-table stance: NO. diversity:
-  global_south'
+  global_south | scope set to CONTEXT_ONLY after the I3 route judged the passage relevant
+  background, not evidence for the question (2026-09-05).'
 fetched_from_url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7409627/fullTextXML

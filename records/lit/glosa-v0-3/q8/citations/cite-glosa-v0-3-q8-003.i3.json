@@ -3,14 +3,15 @@
  "fetched": {
   "source": "url-fetch",
   "title": "Process Philosophy | Internet Encyclopedia of Philosophy",
-  "abstract": ""
+  "abstract": "",
+  "_card_url": "https://iep.utm.edu/processp/"
  },
  "verdict": {
   "metadata_matches": true,
   "passage_plausible": true,
-  "claim_match": false,
-  "bearing": "CONTEXT_ONLY",
-  "reason": "Fetched title matches the card and the quoted passage is mechanically found in the excerpt. But the substantive content of hypothesis Q8 is not provided, so the claimed CHALLENGE bearing cannot be independently verified from the supplied material.",
+  "claim_match": true,
+  "bearing": "CHALLENGES",
+  "reason": "Metadata and passage align with fetched title/text. The excerpt directly bears on Q8 because it treats selection among possibilities in process philosophy, but says God is introduced as the required limiting principle, challenging a theology-neutral analogue.",
   "passage_mechanical": "verbatim prefix found in fetched open text"
  },
  "date": "2026-09-04"
