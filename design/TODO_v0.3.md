@@ -6,7 +6,7 @@
 - [ ] S4b add kernel checks for the 3 still-missed defect classes (composite_quote "…" in exact_passage; hidden_ai_fill = ai_filled empty while cooking log has AI steps; inflated_bearing = own-lineage/context card with SUPPORTS) — carry into S5 as DAG nodes
 - [x] S5 FOUNDATION v0.6 patch spec — architecture review wf_32bcc737-f85 (20 MUST + 15 SHOULD) → all 20 MUST applied (review response section); 6 DAG nodes still pending founder
 - [x] S6 build — wf_757d03a2-879: rules 18,19,20,21,23,26-28 in kernel (181 tests), schema 0.7.0, sim regression test, kg render, FOUNDATION v0.6 + REPO_SPEC v0.6, README v0.3.0 with DAG + kg; CLI --citation-cards; own card 0202 downgraded by rule 28 (own-lineage SUPPORTS → NEUTRAL)
-- [ ] S7 release v0.3.0 (publish gate v3 running)
+- [ ] S7 release v0.3.0 — gate v3 PASS_WITH_LIMITS (all BLOCKs fixed); Zenodo new version + tag pending founder push
 RAM rule: check `free -g` before every Workflow; ≤6 workers; never two Workflows at once.
 
 ## Finding 2026-09-05 (S6 build, live)
