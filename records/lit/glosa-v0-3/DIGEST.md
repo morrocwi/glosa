@@ -302,4 +302,4 @@ frozen dialogue tables and manifests. No new source was opened to produce
 this digest — it restates and cross-references cards already frozen at
 METADATA_OK. Nothing here is VERIFIED; nothing here should be read as a
 decision until reviewed by the founder and logged in
-`cpg/research/coordination/DECISIONS.yaml` per the workspace's own gate.*
+the internal command-center's DECISIONS ledger (private) per the workspace's own gate.*

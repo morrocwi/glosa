@@ -3,7 +3,7 @@
 # knowledge/harvest_v0.3/KNOWLEDGE_STATUS_v0.3.md) and the S2 literature review
 # (records/lit/glosa-v0-3/DIGEST.md) already say, plus the WARN items closed in CHANGELOG 0.2.0
 # / design/TODO_v0.3.md and the reviews/PUBLISH_GATE_v1_public.md findings. Nothing here is a
-# decision; every `proposed` node needs `cpg/research/coordination/DECISIONS.yaml` before S6 build.
+# decision; every `proposed` node needs the internal command-center's DECISIONS ledger (private) before S6 build.
 # No novelty words used (no "first"/"best"/"novel"/"outperform").
 
 nodes:

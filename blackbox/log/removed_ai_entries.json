@@ -2,7 +2,7 @@
  {
   "id": "BBL-2026-09-04-009",
   "ts": "2026-09-04T17:22:51+07:00",
-  "by": "ai:claude-fable-5.1",
+  "by": "ai",
   "kind": "finding",
   "tags": [
    "system"

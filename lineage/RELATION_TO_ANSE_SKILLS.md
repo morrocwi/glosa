@@ -65,7 +65,7 @@ Informs the shape of glosa's own root-file tree (`README.md`, `AGENTS.md`/`CLAUD
 `llms.txt`, `DECISIONS.md`, `CHANGELOG.md`, `incidents/INDEX.md` — `design/REPO_SPEC_v0.3.md`
 root listing) and the general discipline that a documentation ecosystem must close the loop
 decision → outcome → lesson → rule, rather than let any of those four silently go stale. glosa's
-`incidents/` directory (append-only, "why this rule exists") and `DECISIONS.md` (mirroring cpg's
+`incidents/` directory (append-only, "why this rule exists") and `DECISIONS.md` (mirroring the internal command-center's
 `DECISIONS.yaml` lifecycle) are glosa's own instances of this pattern.
 
 ### project-onboard — private_local

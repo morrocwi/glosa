@@ -132,7 +132,7 @@ current denylist found none. Before every public push:
 - [ ] Any open dissent or unresolved reviewer finding is either fixed or
       explicitly accepted by the founder in writing (PR comment, DECISIONS
       row) before merge — never silently dropped.
-- [ ] `DECISIONS.md` / `cpg/research/coordination/DECISIONS.yaml` (if this
+- [ ] `DECISIONS.md` / the internal command-center's DECISIONS ledger (private) (if this
       release constitutes a decision) has a row for this release.
 
 ## R7 — Tag, publish, Zenodo

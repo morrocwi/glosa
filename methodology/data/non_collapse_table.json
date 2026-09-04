@@ -56,7 +56,7 @@
       "meaning_en": "Producing an output that satisfies a spec/test is not the same as the underlying model being correct.",
       "meaning_th": "แก้โจทย์ได้ ≠ ทฤษฎีเบื้องหลังเป็นจริง",
       "collapse_failure": "\"The code passed, so the theory is right.\"",
-      "source": "cpg PHILOSOPHY_FLOOR/CLAIM_BOUNDARY (PRIVATE — re-derived, not copied)",
+      "source": "internal command-center philosophy floor / claim boundary (PRIVATE — re-derived, not copied)",
       "enforced_by": "verdict enum keeps pass (spec-satisfied) separate from any theory_confirmed claim; pass never auto-promotes tier"
     },
     {
@@ -66,7 +66,7 @@
       "meaning_en": "Every reviewer, gate, or scorer is itself a bounded reader; its verdict is a claim, not a fact, and needs its own tier.",
       "meaning_th": "ผลลัพธ์ถูก ≠ ทฤษฎีถูก และคำตัดสินของผู้ตรวจเองก็ต้องมี tier ด้วย",
       "collapse_failure": "A review_report's verdict being read as settled fact rather than a bounded claim.",
-      "source": "cpg AGENTS.md/handbook (PRIVATE — re-derived)",
+      "source": "internal command-center agent handbook (PRIVATE — re-derived)",
       "enforced_by": "review_report.verdict_tier field always present — the review itself always carries a tier"
     },
     {

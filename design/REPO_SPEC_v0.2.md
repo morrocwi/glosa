@@ -52,7 +52,7 @@ rigour-without-infrastructure/
 ├── ASSUMPTIONS.md                     # A1.. — repo-level assumptions.
 ├── NON_CLAIMS.md                      # NC1.. — repo-level non-claims.
 ├── CHANGELOG.md                       # Append-only; every entry carries a tier label.
-├── DECISIONS.md                       # RWI-local mirror of cpg's DECISIONS.yaml lifecycle.
+├── DECISIONS.md                       # RWI-local mirror of the internal command-center's DECISIONS ledger lifecycle.
 ├── RWI_K1_K2_LEDGER.md                # K1→K2 conversion ledger (FOUNDATION §7.6). Row 1 is the
 │                                       #   repo itself.
 │

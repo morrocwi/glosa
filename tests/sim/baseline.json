@@ -12,8 +12,8 @@
   },
   "inflated_bearing": {
    "n": 9,
-   "caught": 0,
-   "missed": 9
+   "caught": 9,
+   "missed": 0
   },
   "missing_locator": {
    "n": 9,
@@ -22,8 +22,8 @@
   },
   "composite_quote": {
    "n": 9,
-   "caught": 0,
-   "missed": 9
+   "caught": 9,
+   "missed": 0
   },
   "k_state_rounded_up": {
    "n": 9,
@@ -42,8 +42,8 @@
   },
   "injected_infinity": {
    "n": 9,
-   "caught": 0,
-   "missed": 9
+   "caught": 9,
+   "missed": 0
   },
   "verifiable_no_procedure": {
    "n": 8,
@@ -81,28 +81,13 @@
   "false_alarm": 0,
   "false_alarm_ids": []
  },
- "recall": 0.7,
+ "recall": 0.925,
  "precision": 1.0,
  "missed_defect_ids_sample": {
   "hidden_ai_fill": [
    "GLOSA-CC-20260905-5001",
    "GLOSA-CC-20260905-5002",
    "GLOSA-CC-20260905-5003"
-  ],
-  "inflated_bearing": [
-   "GLOSA-CC-20260905-5010",
-   "GLOSA-CC-20260905-5011",
-   "GLOSA-CC-20260905-5012"
-  ],
-  "composite_quote": [
-   "GLOSA-CC-20260905-5028",
-   "GLOSA-CC-20260905-5029",
-   "GLOSA-CC-20260905-5030"
-  ],
-  "injected_infinity": [
-   "GLOSA-CC-20260905-5064",
-   "GLOSA-CC-20260905-5065",
-   "GLOSA-CC-20260905-5066"
   ]
  },
  "tier": "finite_diagnostic",

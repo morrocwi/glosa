@@ -183,7 +183,7 @@ released`, `k_state: K0` — read that file directly for anything more current t
   the two ship-recommended S4 prototypes.
 - **Rules 22, 24, 25 — pending-founder, specified not built:** rule 22 (LRS claim-tier intake
   flag), rule 24 (Premature Category Stabilization red-flag), rule 25 (LRS discovery-routing gate)
-  each carry a `TODO(<dag-node-id>)` comment in `kernel/glosa_kernel.py` pointing at their DAG node
+  carry `TODO(<dag-node-id>)` markers — rule 24 in `kernel/glosa_kernel.py`, rules 22 and 25 in `schema/litreview_manifest.schema.json` (`$comment`) — pointing at their DAG node
   — none is committed to `DECISIONS.yaml` or built until the founder rules on it.
 - **Sim regression:** the S4 prototype harness and its 180-card fixed synthetic corpus moved from
   `sim/v0.3/` into the tracked test suite (`tests/sim/`) and now runs under CI as

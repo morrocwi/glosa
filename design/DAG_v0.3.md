@@ -2,7 +2,7 @@
 
 Source of truth: `design/DAG_v0.3.yaml`. Rendered graph: `docs/dag_v0.3.svg` (and `docs/dag_v0.3.dot` for `dot -Tsvg` if graphviz is later installed — it was not present on this workstation when this was generated, so `docs/gen_dag_svg.py` drew the SVG directly).
 
-Readout, not truth: every node traces to a knowledge-harvest card id (`knowledge/harvest_v0.3/KNOWLEDGE_STATUS_v0.3.md`), a literature-review digest row (`records/lit/glosa-v0-3/DIGEST.md`), a publish-gate finding (`reviews/PUBLISH_GATE_v1_public.md`), or a CHANGELOG/TODO WARN item. No node is a decision until it is a row in `cpg/research/coordination/DECISIONS.yaml`.
+Readout, not truth: every node traces to a knowledge-harvest card id (`knowledge/harvest_v0.3/KNOWLEDGE_STATUS_v0.3.md`), a literature-review digest row (`records/lit/glosa-v0-3/DIGEST.md`), a publish-gate finding (`reviews/PUBLISH_GATE_v1_public.md`), or a CHANGELOG/TODO WARN item. No node is a decision until it is a row in the internal command-center's DECISIONS ledger (private).
 
 **Counts:** 26 nodes, 25 edges — proposed=21, done=3, deferred=2. By kind: process=1, kernel=6, foundation=14, schema=3, docs=1, cli=1.
 

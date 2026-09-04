@@ -106,3 +106,5 @@ tests/sim/	breakthrough
 records/	prior-art
 knowledge/	prior-art
 tests/sim/	prior-art
+docs/kg_	novelty
+docs/kg_	novel
