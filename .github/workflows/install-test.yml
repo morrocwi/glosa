@@ -16,7 +16,7 @@ jobs:
         with: { python-version: "${{ matrix.python }}" }
       - name: unit + install tests (in repo)
         run: |
-          python -m pip install --user -r requirements.txt
+          python -m pip install --user -r requirements.txt pytest
           python -m pytest -q tests
       - name: fresh install into a temp HOME from the checked-out source (HTTPS-only script)
         run: |

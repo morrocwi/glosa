@@ -96,10 +96,11 @@ jobs:
       - name: Confirm jsonschema is NOT importable in this job
         run: |
           python3 -c "import jsonschema" && { echo "jsonschema IS importable — this job must run without it"; exit 1; } || true
-      - name: Run tests/ with jsonschema uninstalled (skip if tests/ absent)
+      - name: Run ONLY the fail-closed guard tests with jsonschema uninstalled (the full suite legitimately needs jsonschema + PyYAML)
         run: |
+          python3 -m pip install --user pyyaml
           if [ -d tests ]; then
-            python3 -m unittest discover -s tests -v
+            (cd tests && python3 -m unittest test_kernel.SchemaFailClosedTest -v)
           else
             echo "no tests/ directory yet — skipping (not a failure)"
           fi
