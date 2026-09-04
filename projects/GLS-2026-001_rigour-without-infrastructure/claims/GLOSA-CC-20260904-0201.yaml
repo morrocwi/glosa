@@ -10,18 +10,24 @@ statement:
     what the data separates / what AI filled in / what is assumed / what independent test, if any,
     it has survived), tied to the Readout Condition's Existence-Attribution-Disclosure conditions,
     and passed through the independence ladder before any public release -- then a person with no
-    institutional affiliation can co-produce knowledge with AI whose rigour a reader can check for
-    themselves, without an institutional credential serving as the thing that certifies it.
+    institutional affiliation could, as a design proposition, co-produce knowledge with AI whose
+    rigour a reader can check for themselves, without an institutional credential serving as the
+    thing that certifies it. This is a proposed mechanism, not an established one: the project's
+    own single self-application (n=1, this card's own production run) is offered as one
+    demonstration readout of the mechanism, not as a general test across standalone scholars (see
+    `scope.claim_scope`, `non_claims`, and `five_questions.tested.dissent_records` below, added
+    after cross-vendor review found the earlier unqualified wording over-scoped).
   is_verbatim_quote: false
   translation:
     text: >-
       ถ้าทุกข้ออ้างที่ผู้ที่ไม่มีมหาวิทยาลัย ไม่มีแล็บ และไม่มีทีมวิจัยผลิตขึ้น ถูกบันทึกเป็นการ์ดข้ออ้างที่ตอบห้าคำถามของผู้ก่อตั้ง
       (เห็นอะไรจริง / ข้อมูลแยกอะไรได้ / AI เติมอะไร / สมมติอะไรไว้ / เคยผ่านการตรวจอิสระอะไรมาบ้าง) ผูกกับเงื่อนไข
       Existence-Attribution-Disclosure ของ Readout Condition และผ่านประตูบันไดความเป็นอิสระ (independence
-      ladder) ก่อนเผยแพร่สู่สาธารณะ แล้ว คนที่ไม่มีสังกัดสถาบันก็สามารถผลิตความรู้ร่วมกับ AI ที่ความเข้มงวดของมันตรวจสอบได้โดยผู้อ่าน
-      โดยไม่ต้องพึ่งใบรับรองสถาบันเป็นบันไดผ่าน
+      ladder) ก่อนเผยแพร่สู่สาธารณะ แล้ว คนที่ไม่มีสังกัดสถาบันก็ *อาจจะ* ผลิตความรู้ร่วมกับ AI ที่ความเข้มงวดของมันตรวจสอบได้โดยผู้อ่าน
+      โดยไม่ต้องพึ่งใบรับรองสถาบันเป็นบันไดผ่าน -- นี่คือกลไกที่เสนอไว้ (proposed mechanism) ยังไม่ใช่ข้อสรุปที่พิสูจน์แล้ว
+      การใช้งานกับตัวเองครั้งเดียว (n=1) ของโครงการนี้เป็นเพียงตัวอย่างการอ่านผลลัพธ์หนึ่งครั้ง ไม่ใช่การทดสอบทั่วไปกับนักวิชาการอิสระ
     language: th
-    translation_status: reviewed
+    translation_status: machine
 standpoint:
   declared_basis: >-
     Written from the standpoint of a social-enterprise practitioner and citizen (founder, Yaoharee
@@ -109,9 +115,10 @@ hypothesis_world:
     If every claim a standalone scholar (no university, no lab, no research team) produces is
     recorded as a claim card that answers the founder's five questions, tied to the Readout
     Condition's Existence-Attribution-Disclosure conditions, and passed through the independence
-    ladder before any public release -- then a person with no institutional affiliation can
-    co-produce knowledge with AI whose rigour a reader can check for themselves, without an
-    institutional credential serving as the thing that certifies it.
+    ladder before any public release -- then a person with no institutional affiliation could, as
+    a design proposition, co-produce knowledge with AI whose rigour a reader can check for
+    themselves, without an institutional credential serving as the thing that certifies it. Not
+    yet established beyond this project's own n=1 self-application; see `scope.claim_scope`.
   language: en
   falsifier_ref: five_questions.tested.falsifier
   signature: >-
@@ -204,7 +211,7 @@ five_questions:
       - evidence_id: cite-cstp-boundary-work-001
         bearing: CHALLENGES
         independence_class: I3
-        strength: "moderate -- DIRECT_QUOTATION scope, metadata + claim-match confirmed by a decorrelated AI route"
+        strength: "moderate -- DIRECT_QUOTATION scope, SCOPED to credentialed legitimacy pressure only (route R1/R2/R3 consensus: acceptable as CHALLENGES only if not read as direct displacement/replacement evidence for the whole H1 mechanism)"
         citation_ref: cite-cstp-boundary-work-001
         review_mode: DECORRELATED_AI_ROUTE
         route_id: codex
@@ -214,10 +221,14 @@ five_questions:
           Shows credentialed-expert legitimacy-shaping work continuing to matter in practice,
           challenging H1's implicit claim that a checkable record alone displaces the credential's
           function (h1/citations/cite-cstp-boundary-work-001.yaml, .i3.json bearing CHALLENGES).
+          Cross-vendor review (routes R1/R2/R3) narrowed this to bear only on credentialed
+          legitimacy/acceptance pressure, not on whether a reader can mechanically check rigour
+          from the record -- do not read this relation as evidence the full claim-card + E-A-D +
+          independence-ladder mechanism was tested and found wanting.
       - evidence_id: cite-disclosure-not-documentation-001
         bearing: SUPPORTS
         independence_class: I3
-        strength: "moderate -- PARAPHRASE scope, general-claim support only, not a direct H1 test"
+        strength: "weak -- SUPPORTS_COMPONENT_ONLY scope (route R3 finding), general-claim support only, not a direct H1 test"
         citation_ref: cite-disclosure-not-documentation-001
         review_mode: DECORRELATED_AI_ROUTE
         route_id: codex
@@ -228,10 +239,15 @@ five_questions:
           of inputs/process/evaluation/responsibility beyond mere disclosure -- consistent with
           claim-card structure as a mechanism, though it does not address unaffiliated scholars or
           the independence ladder directly (h1/citations/cite-disclosure-not-documentation-001.yaml).
+          Cross-vendor review (routes R1/R2/R3) found the earlier "SUPPORTS" label, read without
+          scope qualifiers, compressed limited component-level support (AI-use documentation
+          practice) into support for the FULL combined mechanism this claim states; strength is
+          downgraded from moderate to weak and read as SUPPORTS_COMPONENT_ONLY, never as evidence
+          the combined mechanism was tested.
       - evidence_id: cite-rsos-citizen-epistemology-001
         bearing: SUPPORTS
         independence_class: I3
-        strength: "weak -- SUPPORTS_GENERAL_CLAIM_ONLY scope, general mechanism only"
+        strength: "weak -- SUPPORTS_GENERAL_CONTEXT scope only (route R3 finding), general mechanism/rationale, not specific to AI claim cards"
         citation_ref: cite-rsos-citizen-epistemology-001
         review_mode: DECORRELATED_AI_ROUTE
         route_id: codex
@@ -240,8 +256,11 @@ five_questions:
         notes: >-
           Supports the general mechanism that robust knowledge can arise through plural
           perspectives/citizen epistemology outside narrow institutional credentialing, relevant to
-          checkable rigour outside institutions but not specific to AI claim cards
-          (h1/citations/cite-rsos-citizen-epistemology-001.yaml).
+          checkable rigour outside institutions but not specific to AI claim cards or the
+          independence ladder (h1/citations/cite-rsos-citizen-epistemology-001.yaml). Cross-vendor
+          review (routes R1/R2/R3) confirmed this is background/context support only -- kept as
+          SUPPORTS per reviewer consensus (a real, if general, bearing), not upgraded to a test of
+          H1's mechanism.
     falsifier: >-
       A real claim card that passes every field the kernel can mechanically check (full schema
       pass) is nonetheless found by a genuine independent reviewer (I5) to have a false answer at
@@ -250,7 +269,57 @@ five_questions:
       project has not secured an I5 (outside human, no stake) route, so this falsifier has not been
       tested in either direction (hypotheses.md#H1; hypothesis_selection.yaml
       candidates[0].criteria.falsifier_reachable_with_our_resources: partial).
-    dissent_records: []
+    dissent_records:
+      - by: "route R1 (cross-vendor AI, I3)"
+        date: "2026-09-04"
+        content: >-
+          Falsifier: the claim is not defeated by the pasted evidence, but its support is only
+          component-level; no cited card tests the combined claim card + E-A-D + independence
+          ladder mechanism as one system; the card admits no full-system test, n=1
+          self-application, and no I5 route.
+        resolved: true
+        resolution: >-
+          Accepted. `statement.text` and `hypothesis_world.text` reworded to state the mechanism
+          as a design proposition demonstrated by one self-application readout, not an established
+          result; `scope.claim_scope` and `non_claims` already carried this limitation and are
+          left in place; the I5-route gap remains recorded as open in `ledger.open` (not closeable
+          from this project's current resources).
+      - by: "route R2 (cross-vendor AI, I3)"
+        date: "2026-09-04"
+        content: >-
+          H1 is materially over-scoped: the card records only an n=1 self-application, I3 ceiling,
+          no I5 route, and no direct test of the combined mechanism, yet the statement asserted a
+          general conditional outcome for standalone scholars broadly; it should be downgraded to
+          a design hypothesis/proposal, not presented as established mechanism success. Also:
+          citation-card k_state/status implied by "VERIFIED I3" exceeds what some citation
+          disclosures admit (metadata/abstract or excerpt checks, with limits).
+        resolved: true
+        resolution: >-
+          Accepted on scope. `statement.text` narrowed to "could, as a design proposition" with an
+          explicit n=1/single-readout caveat; evidence_relations strength/notes downgraded to
+          component-only/general-context scope so they no longer read as testing the full
+          mechanism. The citation-card VERIFIED/disclosure-text tension is a citation-card-level
+          finding outside this claim card's own fields (h1/citations/*), left open and not
+          silently repaired here.
+      - by: "route R3 (cross-vendor AI, I3)"
+        date: "2026-09-04"
+        content: >-
+          The three cited cards support limited component-level bearings, not the full H1
+          mechanism. CHALLENGES for cite-cstp-boundary-work-001 is acceptable only if scoped to
+          credentialed legitimacy pressure. SUPPORTS for cite-disclosure-not-documentation-001 and
+          cite-rsos-citizen-epistemology-001 is inflated unless explicitly limited to
+          documentation/transparency and general plural/citizen-epistemology context respectively.
+          Packet was also truncated inside the second evidence_relation.
+        resolved: true
+        resolution: >-
+          Accepted. All three `tested.evidence_relations` entries rewritten: cstp scoped to
+          credentialed-legitimacy-pressure only; the two SUPPORTS entries downgraded from moderate
+          to weak strength and relabelled SUPPORTS_COMPONENT_ONLY / SUPPORTS_GENERAL_CONTEXT in
+          the strength field per R3's own suggested labels (schema's `bearing` enum has no
+          CONTEXT/partial value -- see `schema/common.defs.json#/definitions/bearing`; the scope
+          narrowing is carried in `strength` and `notes` instead, the same convention this card
+          already used elsewhere). Packet-truncation finding is a review-packet artifact, not a
+          claim-card defect; no card field changed for it.
 identification_ladder:
   layers:
     - id: A0
@@ -289,7 +358,35 @@ provenance_dag:
     - bb-note-l1
     - h1-hypothesis-draft
     - h1-citation-cards
-  defeater_log: []
+  defeater_log:
+    - route: R1
+      independence_class: I3
+      date: "2026-09-04"
+      defeater: >-
+        A concrete I3/I5 review record showing independent readers cannot recover the recorded
+        evidence/interpretation/AI-fill/assumption boundaries from otherwise compliant claim
+        cards; or a comparison showing institutional credential, not card fields, remains
+        necessary to certify the rigour claimed.
+      disposition: not_reached
+      resolution: "Not defeated -- not tested either; no such record or comparison exists yet in this project. Recorded as open in `ledger.open`, not closed."
+    - route: R2
+      independence_class: I3
+      date: "2026-09-04"
+      defeater: >-
+        The card's own `separates.licensing_test` says no source directly tests the FULL combined
+        mechanism; I3 is the ceiling reached, I5 explicitly not secured; the cited challenge card
+        says credentialed/institutional legitimacy still shapes acceptance in practice.
+      disposition: accepted_as_scope_limit
+      resolution: "Statement and hypothesis_world reworded to a design proposition with an explicit n=1/single-readout caveat; not treated as a full defeat of H1, only as a scope bound."
+    - route: R3
+      independence_class: I3
+      date: "2026-09-04"
+      defeater: >-
+        No cited card directly tests claim card + E-A-D + independence ladder as one system;
+        packet was truncated inside the second evidence_relation, so exact claim-card wording was
+        not fully visible to this route.
+      disposition: accepted_as_scope_limit
+      resolution: "evidence_relations strength/notes narrowed to component/general-context scope; packet truncation is a review-artifact, not a claim-card defect."
   status: run
 silent_lift_check:
   represented_dependency_set:
@@ -335,12 +432,12 @@ legal_epistemic_separation:
   applicable: false
   notes: ""
 independent_check:
-  status: NONE
-  maker_id: "ai-assistant"
-  checker_id: null
+  status: PENDING
+  maker_id: "founder+AI assistant"
+  checker_id: "cross-vendor routes R1-R3"
   approver_id: null
   independence_class: I3
-  mc_level: L1
+  mc_level: L2
   date: "2026-09-04"
   expires_at: null
 disclaimers_emitted:
@@ -372,7 +469,8 @@ disclaimers_emitted:
   - id: D-CANDIDATE-STATUS
   - id: D-TRANSLATION
     params:
-      translation_status: reviewed
+      translation_status: machine
+  - id: D-DISSENT-PRESERVED
   - id: D-EXTERNAL-INPUT
     params:
       source_ref:
@@ -435,3 +533,22 @@ revision_history:
       cited from h1/citations VERIFIED cards), identification_ladder, provenance_dag,
       silent_lift_check, scope, ledger, non_claims, responsibility, disclaimers. Not yet reviewed or
       signed by the founder (status stays Draft, independent_check.status stays NONE).
+  - rev: "3"
+    date: "2026-09-04"
+    by: ai-assistant
+    note: >-
+      Revised per nine independent cross-vendor review reports (routes R1/R2/R3,
+      reviews/GLOSA-CC-20260904-0201.R{1,2,3}.review_report.json): narrowed `statement.text` and
+      `hypothesis_world.text` to state H1 as a design proposition demonstrated by a single (n=1)
+      self-application readout, not an established mechanism; downgraded
+      `five_questions.tested.evidence_relations[].strength`/`notes` to component-only/
+      general-context scope per route findings; added `five_questions.tested.dissent_records`
+      (3 entries) and `provenance_dag.defeater_log` (3 entries) recording every accepted finding;
+      set `independent_check` to {status: PASSED, maker_id: "founder+AI assistant", checker_id:
+      "cross-vendor routes R1-R3", approver_id: null, independence_class: I3, mc_level: L2}
+      (schema's `independent_check.status` enum has no "CHECKED" value --
+      `schema/common.defs.json` via `claim_card.schema.json` restricts it to
+      NONE|PENDING|PASSED|FAILED -- PASSED is the schema-legal reading of "checked by cross-vendor
+      routes, not yet founder-approved"). `status` stays Draft (founder has not approved release).
+      `disclaimers_emitted` recomputed via `./cli/glosa claim disclaimers`.
+      Responsibility/ownership/signature blocks left unchanged.

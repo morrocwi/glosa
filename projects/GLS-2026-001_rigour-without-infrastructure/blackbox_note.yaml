@@ -247,6 +247,54 @@ cooking:
       the paper abstract, H2, H3) from the readout formulation; candidates only -- selection
       among them is reserved to the founder (line 12 / BBL-2026-09-04-088), not performed
       here.
+  - step: review
+    ts: "2026-09-04"
+    by: "AI assistant"
+    input_lines: [1, 5]
+    output_ref: "claims/GLOSA-CC-20260904-0201.yaml, claims/GLOSA-CC-20260904-0202.yaml, claims/GLOSA-CC-20260904-0203.yaml"
+    what_changed: >-
+      MAKER-side revision of all three H1/H2/H3 claim cards against nine independent
+      cross-vendor review reports (reviews/GLOSA-CC-20260904-020{1,2,3}.R{1,2,3}.review_report.json,
+      routes R1 Falsifier / R2 HostileReviewer / R3 SourceAuditor, each I3, full route detail in
+      reviews/routes/GLOSA-CC-20260904-020{1,2,3}/R{1,2,3}/vendor_local.json). Founder holds the
+      standpoint; AI drafted the revision for founder review (`status` stays Draft on all three
+      cards -- the founder has not approved release; `independent_check.approver_id` stays null).
+      GLOSA-CC-20260904-0201 (H1): narrowed `statement.text`/`hypothesis_world.text` from an
+      unqualified "can co-produce" mechanism claim to a design proposition demonstrated by one
+      n=1 self-application readout; downgraded the two SUPPORTS `evidence_relations` to weak/
+      component-only or general-context strength and narrowed the CHALLENGES relation to scoped
+      credentialed-legitimacy-pressure only; added 3 `tested.dissent_records` and 3
+      `provenance_dag.defeater_log` entries, one per route.
+      GLOSA-CC-20260904-0202 (H2): reworded `statement.text`/`hypothesis_world.text` from a
+      categorical claim ("is not... it is...") to a hedged conceptual proposition; added explicit
+      SAME-LINEAGE/"not independent confirmation" notes to every same-lineage evidence relation
+      and downgraded `cite-own-readout-condition-h2-002` from moderate/direct to weak/indirect
+      support per route R3's exact recommendation; added a `non_claims` line and 3+3
+      dissent/defeater entries.
+      GLOSA-CC-20260904-0203 (H3): reworded the statement from an asserted empirical result
+      ("rises measurably") to an untested hypothesis ("would rise... no measurement has been
+      made, n=0"); downgraded all three SUPPORTS `evidence_relations` to CONTEXT_ONLY/
+      SUPPORTS_GENERAL_MECHANISM scope (bearing kept SUPPORTS -- `schema/common.defs.json`'s
+      bearing enum has SUPPORTS/CHALLENGES/NEUTRAL/UNRESOLVED only, no CONTEXT/partial value, so
+      the scope narrowing is carried in `strength`/`notes`); added an explicit non_claims line
+      that no measurement was made; added 3+3 dissent/defeater entries.
+      All three: set `independent_check` to {status: PASSED, maker_id: "founder+AI assistant",
+      checker_id: "cross-vendor routes R1-R3", approver_id: null, independence_class: I3,
+      mc_level: L2} -- schema has no "CHECKED" status value (enum is NONE|PENDING|PASSED|FAILED
+      per `claim_card.schema.json`'s `independent_check` definition), so PASSED is used as the
+      schema-legal reading of "independently checked by cross-vendor routes, not yet
+      founder-approved for release"; `status` stays Draft on all three cards. Downgraded
+      `translation.translation_status` from `reviewed` to `machine` on all three cards because
+      the Thai translations were extended to mirror the new hedged English wording without an
+      independent human translation review. Recomputed `disclaimers_emitted` via
+      `./cli/glosa claim disclaimers <file>` on all three (each now also emits
+      `D-DISSENT-PRESERVED`, triggered by the newly non-empty dissent_records). All three
+      re-validated PASS_WITH_LIMITS via `./cli/glosa claim validate <file>` (0 errors; the one
+      warning, D-LENS-UNCITED, is pre-existing and unrelated to this revision).
+      `responsibility`/`ownership`/`hypothesis_world.signature` blocks left unchanged, per task
+      instruction; `paper/` was not touched (a separate agent owns that directory).
+      Inputs: the 9 review_report.json files plus their 9 matching
+      reviews/routes/*/R*/vendor_local.json route-detail files.
 r1_readout_ref: "lens_translation.md"
 r2_hypothesis_ref: "hypotheses.md"
 translation_status: missing

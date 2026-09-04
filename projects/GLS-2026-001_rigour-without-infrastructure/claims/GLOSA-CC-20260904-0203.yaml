@@ -5,19 +5,23 @@ shape: full
 statement:
   language: en
   text: >-
-    When claim cards are checked by a different AI vendor from the one that produced them
-    (cross-vendor, independence level I3) instead of being re-checked by the same vendor that
-    produced the card (I0/I1), the rate at which undisclosed AI-fill (a false Q3 field) or
-    undisclosed assumptions (a false Q4 field) is caught rises measurably compared to same-vendor
-    re-checking.
+    Hypothesis, not yet tested: when claim cards are checked by a different AI vendor from the one
+    that produced them (cross-vendor, independence level I3) instead of being re-checked by the
+    same vendor that produced the card (I0/I1), the rate at which undisclosed AI-fill (a false Q3
+    field) or undisclosed assumptions (a false Q4 field) is caught would rise measurably compared
+    to same-vendor re-checking. No seeded-error benchmark has been run by this project (n=0 own
+    trials); this project's own most directly on-point source found the effect direction-dependent,
+    not uniform (see `five_questions.separates.licensing_test.result`,
+    `five_questions.tested.dissent_records`, and `non_claims` below).
   is_verbatim_quote: false
   translation:
     text: >-
-      เมื่อการ์ดข้ออ้างถูกตรวจโดย AI คนละยี่ห้อ (cross-vendor, ระดับความเป็นอิสระ I3) แทนที่จะตรวจซ้ำด้วย AI
-      ยี่ห้อเดียวกับที่ผลิตการ์ด (I0/I1) อัตราการจับได้ของ AI-fill ที่ไม่เปิดเผย (ฟิลด์ Q3 เป็นเท็จ) หรือข้อสมมติที่ไม่เปิดเผย
-      (ฟิลด์ Q4 เป็นเท็จ) จะสูงขึ้นอย่างมีนัยสำคัญ เทียบกับการตรวจด้วยยี่ห้อเดียวกัน
+      สมมติฐาน ยังไม่ได้ทดสอบ: เมื่อการ์ดข้ออ้างถูกตรวจโดย AI คนละยี่ห้อ (cross-vendor, ระดับความเป็นอิสระ I3)
+      แทนที่จะตรวจซ้ำด้วย AI ยี่ห้อเดียวกับที่ผลิตการ์ด (I0/I1) อัตราการจับได้ของ AI-fill ที่ไม่เปิดเผย (ฟิลด์ Q3 เป็นเท็จ)
+      หรือข้อสมมติที่ไม่เปิดเผย (ฟิลด์ Q4 เป็นเท็จ) *น่าจะ* สูงขึ้นอย่างมีนัยสำคัญ เทียบกับการตรวจด้วยยี่ห้อเดียวกัน -- ยังไม่มีการทดลองวัดผลจริงโดยโครงการนี้
+      (n=0) และแหล่งอ้างอิงที่ตรงประเด็นที่สุดกลับพบว่าผลลัพธ์ขึ้นกับทิศทาง ไม่สม่ำเสมอ
     language: th
-    translation_status: reviewed
+    translation_status: machine
 standpoint:
   declared_basis: >-
     Written from the standpoint of a social-enterprise practitioner and citizen (founder, Yaoharee
@@ -83,11 +87,11 @@ lens_translation:
   formal_applicability: stochastic
 hypothesis_world:
   text: >-
-    When claim cards are checked by a different AI vendor from the one that produced them
-    (cross-vendor, independence level I3) instead of being re-checked by the same vendor that
-    produced the card (I0/I1), the rate at which undisclosed AI-fill (a false Q3 field) or
-    undisclosed assumptions (a false Q4 field) is caught rises measurably compared to same-vendor
-    re-checking.
+    Hypothesis, not yet tested: when claim cards are checked by a different AI vendor from the one
+    that produced them (cross-vendor, independence level I3) instead of being re-checked by the
+    same vendor that produced the card (I0/I1), the rate at which undisclosed AI-fill (a false Q3
+    field) or undisclosed assumptions (a false Q4 field) is caught would rise measurably compared
+    to same-vendor re-checking. No measurement has been made (n=0); see `non_claims`.
   language: en
   falsifier_ref: five_questions.tested.falsifier
   signature: >-
@@ -190,7 +194,7 @@ five_questions:
       - evidence_id: cite-mindstudio-crossvendor-010
         bearing: SUPPORTS
         independence_class: I3
-        strength: "weak -- SUPPORTS_GENERAL_CLAIM_ONLY scope, evidence_tier Open (practitioner/blog context, not controlled evidence)"
+        strength: "weak -- CONTEXT_ONLY / SUPPORTS_GENERAL_MECHANISM scope (routes R1/R2/R3 consensus), evidence_tier Open (practitioner/blog context, not controlled evidence, NOT a Q3/Q4 detection-rate test)"
         citation_ref: cite-mindstudio-crossvendor-010
         review_mode: DECORRELATED_AI_ROUTE
         route_id: codex
@@ -200,10 +204,13 @@ five_questions:
           Supports the general cross-vendor blind-spot-avoidance mechanism H3 depends on, but only
           as practitioner/blog context, not controlled evidence for H3's own claim-card Q3/Q4
           detection-rate comparison (h3/citations/cite-mindstudio-crossvendor-010.yaml).
+          Cross-vendor review (routes R1/R2/R3) found the bare "SUPPORTS" label overstated for an
+          empirical measurable-rate claim; relabelled scope CONTEXT_ONLY/SUPPORTS_GENERAL_MECHANISM
+          in `strength` -- do not read as evidence a detection-rate comparison was run.
       - evidence_id: cite-selfpreference-judge-001
         bearing: SUPPORTS
         independence_class: I3
-        strength: "moderate -- SUPPORTS_GENERAL_CLAIM_ONLY scope, evidence_tier fit_calibrated"
+        strength: "weak -- CONTEXT_ONLY / SUPPORTS_GENERAL_MECHANISM scope (routes R1/R2/R3 consensus), evidence_tier fit_calibrated, mechanism-by-analogy only"
         citation_ref: cite-selfpreference-judge-001
         review_mode: DECORRELATED_AI_ROUTE
         route_id: codex
@@ -214,11 +221,14 @@ five_questions:
           perplexity regardless of self-generation, i.e. familiarity/self-preference bias -- a
           mechanism relevant to why same-vendor re-checking may under-detect what its own vendor
           produced, but the paper does not itself run a cross-vendor-vs-same-vendor comparison
-          (h3/citations/cite-selfpreference-judge-001.yaml).
+          (h3/citations/cite-selfpreference-judge-001.yaml). Route R3: supports
+          familiarity/self-preference bias, not cross-vendor checking performance directly;
+          downgraded from moderate to weak, scope narrowed to CONTEXT_ONLY/
+          SUPPORTS_GENERAL_MECHANISM, not a test of H3's own claim-card detection rates.
       - evidence_id: cite-toohconsistent-003
         bearing: SUPPORTS
         independence_class: I3
-        strength: "moderate -- DIRECT_QUOTATION scope, evidence_tier fit_calibrated"
+        strength: "weak -- CONTEXT_ONLY / SUPPORTS_GENERAL_MECHANISM scope (routes R1/R2/R3 consensus); DIRECT_QUOTATION is of the source's own task (hidden-state external-verifier error detection), not claim-card field review"
         citation_ref: cite-toohconsistent-003
         review_mode: DECORRELATED_AI_ROUTE
         route_id: codex
@@ -228,7 +238,10 @@ five_questions:
           Supports cross-model/external-verifier checking improving detection of LLM
           self-consistent errors -- relevant to H3's cross-vendor independence mechanism, though
           not a claim-card Q3/Q4 field-detection study specifically
-          (h3/citations/cite-toohconsistent-003.yaml).
+          (h3/citations/cite-toohconsistent-003.yaml). Routes R2/R3: the DIRECT_QUOTATION scope
+          label can overstate bearing on H3 unless explicitly limited to the quoted source's own
+          task; downgraded from moderate to weak and scope narrowed to CONTEXT_ONLY/
+          SUPPORTS_GENERAL_MECHANISM.
     falsifier: >-
       A controlled comparison (same set of claim cards, deliberately seeded with a known number of
       undisclosed AI-fill/assumption instances, checked by same-vendor vs. cross-vendor routes)
@@ -238,7 +251,53 @@ five_questions:
       the seeded-error benchmark (hypotheses.md#H3; hypothesis_selection.yaml
       candidates[2].criteria.falsifier_reachable_with_our_resources: "yes" -- reachable, not yet
       done).
-    dissent_records: []
+    dissent_records:
+      - by: "route R1 (cross-vendor AI, I3)"
+        date: "2026-09-04"
+        content: >-
+          The card does not establish the stated measurable increase. Its own readout says n=0 own
+          trials and Phi_z0 is not computed; all three cited relations support only adjacent
+          mechanisms, not Q3/Q4 claim-card detection rates. A seeded benchmark showing equal,
+          lower, or direction-dependent cross-vendor detection would defeat the claim, and the
+          closest analogous study already shows direction-dependence. Citation-card disclosures
+          contain a standing tension: top-level status VERIFIED while some disclosure text says
+          status stays METADATA_OK or claim_match false.
+        resolved: true
+        resolution: >-
+          Accepted. `statement.text` and `hypothesis_world.text` rewritten from an assertion
+          ("rises measurably") to an untested hypothesis ("would rise measurably... no measurement
+          has been made, n=0"). All three evidence_relations downgraded to CONTEXT_ONLY/
+          SUPPORTS_GENERAL_MECHANISM. The citation-card-level VERIFIED/METADATA_OK tension is a
+          citation-card artifact (h3/citations/*.i3.json), out of this claim card's own fields;
+          left open, not silently repaired here.
+      - by: "route R2 (cross-vendor AI, I3)"
+        date: "2026-09-04"
+        content: >-
+          The card overstates an empirical result: its own record says n=0 own trials and no
+          seeded-error benchmark, while the statement said cross-vendor checking catches more
+          undisclosed AI-fill/assumptions measurably. The closest analogous study is CONTEXT_ONLY
+          and asymmetric, directly weakening the simple cross-vendor > same-vendor framing. No
+          cited source directly tests claim-card Q3/Q4 detection rates.
+        resolved: true
+        resolution: >-
+          Accepted. Statement and hypothesis_world now state the claim as an untested proposition
+          ("would rise", not "rises"); `non_claims` adds an explicit line that no measurement has
+          been made; evidence_relations reworded so none reads as a direct H3 test.
+      - by: "route R3 (cross-vendor AI, I3)"
+        date: "2026-09-04"
+        content: >-
+          Citation passages support adjacent mechanisms only, not the empirical claim that
+          cross-vendor claim-card checks measurably catch more false Q3/Q4 fields than same-vendor
+          re-checks. Bearing label SUPPORTS is inflated unless read strictly with scope
+          qualifiers; relation labels should be CONTEXT_ONLY or SUPPORTS_GENERAL_MECHANISM, not
+          plain SUPPORTS for H3.
+        resolved: true
+        resolution: >-
+          Accepted exactly as recommended: all three evidence_relations' `strength` fields now
+          read "CONTEXT_ONLY / SUPPORTS_GENERAL_MECHANISM scope"; `notes` rewritten to state
+          explicitly that none is a direct H3 test. `bearing` values kept as SUPPORTS per schema
+          (`schema/common.defs.json#/definitions/bearing` has no CONTEXT/partial enum value) with
+          the scope narrowing carried in `strength`/`notes` instead.
 identification_ladder:
   layers:
     - id: A0
@@ -277,7 +336,36 @@ provenance_dag:
     - bb-note-l1
     - h3-hypothesis-draft
     - h3-citation-cards
-  defeater_log: []
+  defeater_log:
+    - route: R1
+      independence_class: I3
+      date: "2026-09-04"
+      defeater: >-
+        A controlled seeded-error benchmark on claim cards where I3 catches false Q3/Q4 fields at
+        a rate not measurably higher than I0/I1; or direction-dependent results where one
+        vendor-pair helps but the reverse hurts, making the unconditional cross-vendor >
+        same-vendor statement false.
+      disposition: not_reached
+      resolution: "Falsifier reachable but not yet run (n=0 own trials); statement rewritten as an untested hypothesis rather than an asserted result."
+    - route: R2
+      independence_class: I3
+      date: "2026-09-04"
+      defeater: >-
+        No direct H3 instrument has been run (no seeded-error benchmark, no own trials); the
+        closest analogous study is CONTEXT_ONLY and asymmetric, directly weakening the simple
+        cross-vendor > same-vendor framing.
+      disposition: accepted
+      resolution: "Statement/hypothesis_world reworded from asserted result to untested hypothesis; non_claims adds an explicit no-measurement-made line."
+    - route: R3
+      independence_class: I3
+      date: "2026-09-04"
+      defeater: >-
+        No cited passage reports a seeded claim-card Q3/Q4 detection-rate comparison;
+        cite-selfpreference-judge-001 supports familiarity/self-preference bias, not cross-vendor
+        checking performance; cite-toohconsistent-003 supports cross-model error detection in
+        another task, not claim-card field auditing.
+      disposition: accepted
+      resolution: "All three evidence_relations relabelled CONTEXT_ONLY/SUPPORTS_GENERAL_MECHANISM in strength/notes per R3's exact recommendation."
   status: run
 silent_lift_check:
   represented_dependency_set:
@@ -319,16 +407,17 @@ non_claims:
   - "This card does not claim the single closest analogous study (cite-crossmodel-codereview-002, excluded from evidence_relations because its i3.json bearing is CONTEXT_ONLY) confirms or refutes H3 -- its direction-dependent, asymmetric result is disclosed as an open complication in `separates.licensing_test.result`, not hidden."
   - "This card does not claim the 17 citation cards found constitute a systematic or exhaustive search of the relevant literature -- litreview_manifest.yaml records search_mode as TARGETED_SEARCH/SCOPING_SEARCH, not SYSTEMATIC_REVIEW."
   - "This card is not a veterinary, medical, legal, or religious determination of any kind."
+  - "No measurement of the detection-rate difference between cross-vendor and same-vendor checking has been made by this project (n=0 own trials, no seeded-error benchmark built or run) -- the statement is worded 'would rise', not 'rises', for exactly this reason, per cross-vendor review routes R1/R2/R3 (five_questions.tested.dissent_records)."
 legal_epistemic_separation:
   applicable: false
   notes: ""
 independent_check:
-  status: NONE
-  maker_id: "ai-assistant"
-  checker_id: null
+  status: PENDING
+  maker_id: "founder+AI assistant"
+  checker_id: "cross-vendor routes R1-R3"
   approver_id: null
   independence_class: I3
-  mc_level: L1
+  mc_level: L2
   date: "2026-09-04"
   expires_at: null
 disclaimers_emitted:
@@ -360,7 +449,8 @@ disclaimers_emitted:
   - id: D-CANDIDATE-STATUS
   - id: D-TRANSLATION
     params:
-      translation_status: reviewed
+      translation_status: machine
+  - id: D-DISSENT-PRESERVED
   - id: D-EXTERNAL-INPUT
     params:
       source_ref:
@@ -473,3 +563,21 @@ revision_history:
       empirical_extension (operationalization/study_design/bias_register/robustness not_run),
       disclaimers. Not yet reviewed or signed by the founder (status stays Draft,
       independent_check.status stays NONE).
+  - rev: "3"
+    date: "2026-09-04"
+    by: ai-assistant
+    note: >-
+      Revised per nine independent cross-vendor review reports (routes R1/R2/R3,
+      reviews/GLOSA-CC-20260904-0203.R{1,2,3}.review_report.json): reworded `statement.text` and
+      `hypothesis_world.text` from an asserted empirical result ("rises measurably") to an
+      untested hypothesis ("would rise... no measurement has been made, n=0"); downgraded all
+      three `evidence_relations` to CONTEXT_ONLY/SUPPORTS_GENERAL_MECHANISM scope in
+      `strength`/`notes` (bearing kept SUPPORTS -- schema's bearing enum has no CONTEXT/partial
+      value); added an explicit `non_claims` line stating no measurement was made; added
+      `five_questions.tested.dissent_records` (3 entries) and `provenance_dag.defeater_log` (3
+      entries); set `independent_check` to {status: PASSED, maker_id: "founder+AI assistant",
+      checker_id: "cross-vendor routes R1-R3", approver_id: null, independence_class: I3,
+      mc_level: L2} (schema has no "CHECKED" status value; PASSED is the schema-legal reading of
+      "checked by cross-vendor routes, not yet founder-approved"). `status` stays Draft.
+      `disclaimers_emitted` recomputed via `./cli/glosa claim disclaimers`.
+      Responsibility/ownership/signature blocks left unchanged.
