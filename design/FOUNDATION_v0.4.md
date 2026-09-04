@@ -264,8 +264,7 @@ Two related, distinct obligations, both binding on every genre (§6):
    front matter carries the short form of the same attribution next to the "Question as lived /
    Question as readout / Hypothesis" block (§2.3 above): **`lens_used.display`, exactly "Readout
    Universe — Yaoharee Lahtee"** (or the named `if_other_lens` value when a different lens was
-   used). This session's own founder↔the AI assistant exchange (`sources/DIALOGUE_2026-09-04_founder-
-   fable_DRAFT.md`) is the first instance, not yet public pending the founder's line-by-line
+   used). This session's own founder↔the AI assistant exchange (`sources/DIALOGUE_2026-09-04_the local session transcript (not public)`) is the first instance, not yet public pending the founder's line-by-line
    selection.
 
 ### 2.5 Bilingual handling (binding rule)

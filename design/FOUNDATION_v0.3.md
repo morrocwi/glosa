@@ -210,8 +210,7 @@ Two related, distinct obligations, both binding on every genre (§6):
    It is a **curated** subset of Blackbox Note lines (only lines with a `became:` forward link,
    request 30b: *"กระชับและเท่าที่จำเป็น"*), verbatim, dated, by role, **plus the cooking log entries
    relevant to those lines** (request 32's requirement that the cooking is published, never
-   sealed). This session's own founder↔the AI assistant exchange (`sources/DIALOGUE_2026-09-04_founder-
-   fable_DRAFT.md`) is the first instance, not yet public pending the founder's line-by-line
+   sealed). This session's own founder↔the AI assistant exchange (`sources/DIALOGUE_2026-09-04_the local session transcript (not public)`) is the first instance, not yet public pending the founder's line-by-line
    selection.
 
 ### 2.5 Bilingual handling (binding rule)

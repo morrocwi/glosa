@@ -265,7 +265,7 @@ lenses independently found this; the single most-corroborated finding in the who
   `schema/evidence_relation.schema.json`, `tests/test_kernel.py`,
   `schema/examples/fail/fail_no_human_approver.json` (new)
 - **Exact change:** `mc01_check` today enforces only pairwise **string inequality** of
-  `maker_id`/`checker_id`/`approver_id` — a card with `maker_id: "claude-session-A"`, `checker_id:
+  `maker_id`/`checker_id`/`approver_id` — a card with `maker_id: "ai-session-A"`, `checker_id:
   "gemini-session-B"`, `approver_id: "codex-session-C"` (three different AI vendors, zero humans)
   reaches `tier: Th_coqc, k_state: K2, status: Approved-for-Live` with `ok: True` and no disclaimer
   naming the missing human, using the real (not degraded) `jsonschema` validator. This is exactly

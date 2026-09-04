@@ -195,13 +195,16 @@ we state what we propose, what we build on, and what would make us wrong.
 ``Observation'' is abstract; it is a verb, not a starting node. Founder's own line, verbatim
 (Blackbox Log \texttt{BBL-2026-09-04-083}, concept DOI \texttt{10.5281/zenodo.22302518}):
 
-\begin{quote}\small
-\begin{leftbar}
-\includegraphics[width=\linewidth]{thai_imgs/bbl083.png}\\
+% leftbar (framed.sty, trivlist-based) is used bare, not nested inside
+% \begin{quote}: nesting two list-based environments here triggers a LaTeX
+% "Something's wrong--perhaps a missing \item" error (confirmed by minimal
+% reproduction) -- leftbar's own hsize-narrowing already gives the
+% blockquote look on its own.
+\begin{leftbar}\small
+\includegraphics[width=\linewidth]{thai_imgs/bbl083.png}\par
 \itshape\upshape --- ``the word `observation' is abstract, it is a verb; if we started from the \emph{problem}
 instead, is there a process like this? We propose focusing on the problem first.''
 \end{leftbar}
-\end{quote}
 
 A problematic state exists in the world \emph{before} any knower acts on it --- before it is
 looked at, named, or measured. The spine this paper's claims are built on (adopted this pass into
@@ -221,13 +224,11 @@ has general-purpose AI assistance. The first human readout of that state, verbat
 truth), Blackbox Note line 1
 (\texttt{blackbox/BLACKBOX\_NOTE\_glosa-paper\_2026-09-04.md\#L1}):
 
-\begin{quote}\small
-\begin{leftbar}
-...\includegraphics[width=0.85\linewidth]{thai_imgs/l1.png}...\\
+\begin{leftbar}\small
+...\includegraphics[width=0.85\linewidth]{thai_imgs/l1.png}...\par
 \itshape\upshape --- ``...how can a person with no university, no lab, and no research team produce
 rigorous knowledge from their own site of practice...''
 \end{leftbar}
-\end{quote}
 
 The contaminated concept this question already flags: ``rigour'' ordinarily presupposes an
 institutional mechanism (a lab, a department, a review committee) sitting behind a claim, rather
