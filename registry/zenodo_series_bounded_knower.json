@@ -15,7 +15,16 @@
   },
   {
    "n": 4,
-   "doi": "10.5281/zenodo.22307751"
+   "doi": "10.5281/zenodo.22307751",
+   "doi_v2": "10.5281/zenodo.22307989",
+   "conceptdoi": "10.5281/zenodo.22307750"
   }
- ]
+ ],
+ "evidence_registry": {
+  "doi": "10.5281/zenodo.22307989",
+  "files": [
+   "State_of_Evidence_Readout_Hypothesis_Programme_K0.pdf",
+   "Claim_Registry_E01_E25.csv"
+  ]
+ }
 }

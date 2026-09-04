@@ -1,0 +1,11 @@
+{
+ "deposition_id": 22307989,
+ "doi": "10.5281/zenodo.22307989",
+ "conceptdoi": "10.5281/zenodo.22307750",
+ "note": "Paper IV v2 + State of Evidence registry (PDF+CSV)",
+ "founder_instructed": "BBL-2026-09-04-109",
+ "files": [
+  "<local path>/State_of_Evidence_Readout_Hypothesis_Programme_K0.pdf",
+  "<local path>/Claim_Registry_E01_E25.csv"
+ ]
+}
