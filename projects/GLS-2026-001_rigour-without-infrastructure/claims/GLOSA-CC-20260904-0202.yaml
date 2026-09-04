@@ -1,0 +1,432 @@
+$schema: claim_card.schema.json
+schema_version: 0.4.0
+claim_id: GLOSA-CC-20260904-0202
+shape: full
+statement:
+  language: en
+  text: >-
+    "Rigour" is not a property that institutional machinery (lab, department, review committee)
+    confers on a claim from the outside; it is a property a single claim can carry in its own
+    recorded structure (what was seen, what separates, what AI filled, what is assumed, what
+    independent check it survived) -- institutions are one historical mechanism that has produced
+    this property, not the only possible one.
+  is_verbatim_quote: false
+  translation:
+    text: >-
+      "ความเข้มงวด" ไม่ใช่คุณสมบัติที่กลไกสถาบัน (แล็บ ภาควิชา คณะกรรมการตรวจ) มอบให้กับข้ออ้างจากภายนอก
+      แต่เป็นคุณสมบัติที่ข้ออ้างชิ้นหนึ่งสามารถ "พกติดตัว" ได้เองผ่านโครงสร้างการบันทึกของมัน (ตอบได้ว่าเห็นอะไร
+      แยกอะไร AI เติมอะไร สมมติอะไร ผ่านการตรวจอิสระอะไรมา) -- สถาบันเป็นเพียงหนึ่งในกลไกที่เคยทำให้เกิดคุณสมบัตินี้ได้ในอดีต
+      ไม่ใช่แหล่งเดียวที่เป็นไปได้
+    language: th
+    translation_status: reviewed
+standpoint:
+  declared_basis: >-
+    Written from the standpoint of a social-enterprise practitioner and citizen (founder, Yaoharee
+    Lahtee), not as a substitute expert in computer science, philosophy of science, library and
+    information science, or research-integrity studies. AI assistance (Claude, seated as "Fable"
+    this session) drafted the candidate hypothesis, this claim card's field structure, and the
+    supporting literature-review runs; every AI-drafted contribution is disclosed in
+    `five_questions.ai_filled` and never counted as authorship (AGENTS.md gate rule 5).
+  disciplines_not_claimed:
+    - computer science
+    - philosophy of science
+    - library and information science
+    - research-integrity studies
+    - sociology of knowledge
+    - law
+  method_basis: >-
+    glosa methodology itself (claim cards answering the founder's five questions, tied to the
+    Readout Condition's Existence-Attribution-Disclosure, gated through the independence ladder
+    before public release) -- this card is produced by running glosa on glosa's own paper (dogfood,
+    founder instruction BBL-2026-09-04-091).
+claim_type: INTERPRETIVE
+claim_type_mapping_note: >-
+  hypotheses.md/hypothesis_selection.yaml label H2 "CONCEPTUAL" (a claim about what a term/property
+  IS). `claim_card.schema.json`'s `claim_type` enum has no `CONCEPTUAL` value
+  (EMPIRICAL|FORMAL|INTERPRETIVE|NORMATIVE|CONVENTIONAL_LEGAL|DECISION|SOCIAL|HUMAN_PARTICIPANT).
+  `genre: conceptual` (below) is the correct field for the "conceptual" vocabulary -- `claim_type`
+  is a separate axis (what KIND of claim this is, not what section of a paper it belongs in).
+  INTERPRETIVE is used as the schema's closest fit for `claim_type`: H2 is a claim about the
+  meaning/location of a concept ("rigour" as a property a record can carry vs. a property an
+  institution confers), not a measurement report (EMPIRICAL) or a mechanism specification
+  (NORMATIVE, the mapping used for the sibling H1 card, GLOSA-CC-20260904-0201). Documented rather
+  than silent, per the same discipline `formal_applicability`'s own plain-language table (§3.2b)
+  applies to a comparable ambiguous-enum problem.
+genre: conceptual
+venue_track: none
+companion_of: null
+produced_by: joint
+responsible: human
+origin_blackbox_ref: "blackbox/BLACKBOX_NOTE_glosa-paper_2026-09-04.md#L1"
+litreview_manifest_ref: records/lit/rigour-without-infrastructure/h2/litreview_manifest.yaml
+hypothesis_selection_ref: hsel-rigour-without-infrastructure-001
+lens_translation:
+  lens_ref: "10.5281/zenodo.21529456"
+  question_human:
+    text_verbatim: >-
+      ...คนที่ไม่มีมหาวิทยาลัย ไม่มีแล็บ และไม่มีทีมวิจัย จะผลิตความรู้จากพื้นที่ของตนเองอย่างเข้มงวดได้อย่างไร...
+    language: th
+    blackbox_line_ref: "blackbox/BLACKBOX_NOTE_glosa-paper_2026-09-04.md#L1"
+  question_readout: >-
+    Under the access relation this person actually has, is the contaminated concept "ความเข้มงวด"
+    (rigour) -- as ordinarily used, quietly assuming an institutional mechanism (lab, department,
+    review committee) sits behind it -- actually a property that a single claim's own recorded
+    structure can carry on its own, checked field-by-field, rather than a property only an
+    institution can confer?
+  local_contrast_space_X:
+    - "X1 -- claim carries no field distinguishing evidence from interpretation from AI-fill (bare narrative assertion)"
+    - "X2 -- claim looks well-formed and academic (AI-smoothed prose, citations present) but the evidence/interpretation/AI-fill boundary is still not recoverable by a reader"
+    - "X3 -- claim is recorded as a structured card that answers, per item, what was seen / what data separates / what AI filled / what is assumed / what independent test (if any) it has survived"
+    - "X4 -- as X3, and the card has additionally passed through the independence ladder (I0..I5) before any public release claim is made about it"
+  restriction_provenance: >-
+    Every distinction this project can draw about "rigour without infrastructure" is itself drawn
+    from inside that same restricted access relation -- glosa's own author-project is a
+    standalone-scholar project run under exactly the condition it studies (lens_translation.md,
+    this project).
+  access_relation_R: >-
+    Has access to: own practice/local context and its raw observations; general-purpose AI
+    assistance (drafting, checking mechanically, routing, logging -- never authoring or
+    certifying); publicly available literature and tools; the glosa methodology itself once
+    adopted. Does NOT have access to: a university appointment or department; a certified lab; a
+    standing research team; institutional peer-review machinery; an institution's own name as a
+    certifying signal on the claim.
+  claim_function_Phi_z0: >-
+    The readout functional this project evaluates H2 against, at reference point z0 = "the
+    property a reader relies on when they treat a claim as rigorous": does that reliance actually
+    trace to the claim's own recorded structure (X3/X4), or does it trace to an institutional
+    signal the structure cannot substitute for. Phi_z0 is a location-of-the-property functional,
+    not a truth-functional -- it asks WHERE rigour's warrant actually comes from, not whether any
+    given claim is true.
+  formal_applicability: not_applicable_narrative
+hypothesis_world:
+  text: >-
+    "Rigour" is not conferred on a claim by institutional machinery from the outside; it is a
+    property a single claim can carry in its own recorded structure (what was seen, what
+    separates, what AI filled, what is assumed, what independent check it survived) --
+    institutions are one historical mechanism that has produced this property, not the only
+    possible one.
+  language: en
+  falsifier_ref: five_questions.tested.falsifier
+  signature: >-
+    Hypothesis derived with Readout Universe -- Yaoharee Lahtee (lens, DOI 10.5281/zenodo.21529456);
+    candidate proposed by AI, selected by the founder (BBL-2026-09-04-095).
+five_questions:
+  seen:
+    record_ref: projects/GLS-2026-001_rigour-without-infrastructure/hypotheses.md#H2
+    as_of: "2026-09-04"
+    retrievable_original: true
+    access_model: >-
+      The founder's own Blackbox Note question line (BB-2026-09-04-01#1, mirrored publicly at
+      blackbox/BLACKBOX_NOTE_glosa-paper_2026-09-04.md#L1), the paper abstract
+      (paper/main_th.md), and the self-application run records: `records/lit/rigour-without-
+      infrastructure/h2/*` (search_log.yaml, litreview_manifest.yaml, dialogue_table.md, 16
+      citation cards under `citations/`, all VERIFIED) and
+      `projects/GLS-2026-001_rigour-without-infrastructure/*` (hypotheses.md, lens_translation.md,
+      hypothesis_selection.yaml, GLOSA-PC-20260904-0001.yaml). These records are what was actually
+      seen producing this card, not a claim about the world beyond glosa's own dogfood run.
+    citation_refs:
+      - cite-own-readout-condition-h2-002
+      - cite-own-written-ai-h2-001
+      - cite-own-civilization-of-knowledge-h2-007
+  separates:
+    value_z0: "whether the property readers actually rely on when calling a claim 'rigorous' traces to the claim's own recorded structure, or to an institutional signal the structure cannot substitute for"
+    licensing_test:
+      regime: "single self-application pass (this project), n=1 project, I3 cross-vendor citation checking only, no I5 route or reader study yet secured"
+      result: >-
+        Of the 16 VERIFIED citation cards found for H2 (h2/citations/, independence_class I3
+        throughout), two of this project's own lineage sources (cite-own-readout-condition-h2-002,
+        cite-own-written-ai-h2-001) SUPPORT H2's claim (existence-attribution-disclosure as a
+        claim-level architecture; institutional authority framed as derivative from epistemic work
+        rather than an independent pedigree), while one (cite-own-civilization-of-knowledge-h2-007)
+        directly CHALLENGES H2 (arguing social authorization through institutions/procedures/
+        recognized interpreters is necessary for stabilizing an interpretation as knowledge --
+        i.e. institutions may be doing load-bearing work H2 says they are not uniquely doing).
+      notes: "n=1 self-application project; the supporting sources are same-lineage (this project's own prior published pieces), a limitation named explicitly in disclaimers_emitted (D-SAME-VENDOR-equivalent lineage note) below."
+    zero_vs_bottom: distinct_difference_found
+  ai_filled:
+    current_evidence: >-
+      AI (Claude, this session) retrieved and drafted the summaries of the 16 H2 citation cards
+      under records/lit/rigour-without-infrastructure/h2/citations/ during the S3b LRS run; the
+      founder did not independently re-fetch each source before this claim card was drafted.
+    retrieved_tool_evidence: >-
+      WebFetch/WebSearch tool calls performed the literature retrieval recorded in
+      records/lit/rigour-without-infrastructure/h2/search_log.yaml; a second AI route (codex, I3)
+      cross-checked metadata/claim-match for each card, recorded in each citation card's own
+      .i3.json file.
+    retained_record_route: >-
+      This claim card's field structure and initial evidence-relation selection were drafted by AI
+      from the existing frozen project records (litreview_manifest.yaml, dialogue_table.md,
+      citation cards) -- no new observation or search was performed to produce this card itself.
+    model_calibration_assumption: >-
+      No claim in this card depends on an AI model's stated confidence or calibration score; all
+      independence_class/status values are taken directly from the frozen citation cards, not
+      re-estimated here.
+    prompt_system_constraint: >-
+      This card was drafted under task instructions (BBL-2026-09-04-091..101) requiring citation
+      only from cards already at status VERIFIED with an existing citation card -- no citation was
+      drawn from AI training-data memory.
+    decision_policy: >-
+      Selection of which 3 of the 16 VERIFIED H2 citation cards to cite as tested.evidence_relations
+      was an AI drafting choice (favoring two SUPPORTS entries from this project's own lineage and
+      one CHALLENGES entry with directly matching i3.json bearings), presented to the founder for
+      review as part of this card, not a founder-directed selection.
+  assumed:
+    - id: A1
+      type: inferential_commitment
+      description: >-
+        Where a reader's reliance on a claim traces is itself something that can, in principle, be
+        separated by evidence (citation cards, reader behaviour) rather than being a matter that
+        can only be argued philosophically without any checkable trace.
+      identification_level: A1
+      contaminated_concept_hit: null
+    - id: A2
+      type: contrast_relevance_operation
+      description: >-
+        Two of the three cited sources are this project's own lineage (Readout Universe / Written
+        by AI corpus), which is disclosed as same-lineage support rather than independent
+        confirmation -- the sample is not assumed to be neutral between H2 and its rival.
+      identification_level: A1
+      contaminated_concept_hit: null
+  tested:
+    evidence_relations:
+      - evidence_id: cite-own-readout-condition-h2-002
+        bearing: SUPPORTS
+        independence_class: I3
+        strength: "moderate -- DIRECT_QUOTATION scope, same-lineage source (this project's own Readout Condition paper), metadata + claim-match confirmed by a decorrelated AI route"
+        citation_ref: cite-own-readout-condition-h2-002
+        review_mode: DECORRELATED_AI_ROUTE
+        route_id: codex
+        asserted_by: ai
+        date: "2026-09-04"
+        notes: >-
+          The Readout Condition's own E-A-D (existence/attribution/disclosure) architecture is a
+          claim-level structure a single claim can carry -- directly supports H2's core mechanism,
+          though it is same-author lineage, not independent evidence
+          (h2/citations/cite-own-readout-condition-h2-002.yaml, .i3.json bearing SUPPORTS).
+      - evidence_id: cite-own-written-ai-h2-001
+        bearing: SUPPORTS
+        independence_class: I3
+        strength: "moderate -- DIRECT_QUOTATION scope, same-lineage source"
+        citation_ref: cite-own-written-ai-h2-001
+        review_mode: DECORRELATED_AI_ROUTE
+        route_id: codex
+        asserted_by: ai
+        date: "2026-09-04"
+        notes: >-
+          States that institutional authority is "derivative from epistemic work, not magical
+          pedigree" -- directly supports H2's claim that institutions are one historical mechanism,
+          not the source of the property itself (h2/citations/cite-own-written-ai-h2-001.yaml).
+      - evidence_id: cite-own-civilization-of-knowledge-h2-007
+        bearing: CHALLENGES
+        independence_class: I3
+        strength: "moderate -- DIRECT_QUOTATION scope, same-lineage source, but argues the opposing direction"
+        citation_ref: cite-own-civilization-of-knowledge-h2-007
+        review_mode: DECORRELATED_AI_ROUTE
+        route_id: codex
+        asserted_by: ai
+        date: "2026-09-04"
+        notes: >-
+          Argues social authorization through institutions/procedures/recognized interpreters is
+          necessary for stabilizing an interpretation as knowledge -- directly challenges H2's
+          claim that institutions are not uniquely load-bearing for the "rigour" property
+          (h2/citations/cite-own-civilization-of-knowledge-h2-007.yaml, .i3.json bearing CHALLENGES).
+    falsifier: >-
+      A claim card that answers all five questions honestly and completely, checked at I3, is
+      shown to still require an institutional credential (not just an independent human reviewer)
+      to be treated as rigorous by its actual intended readers -- i.e. the credential does
+      load-bearing work the card's own fields cannot substitute for, for at least one class of
+      reader/decision this project cares about. Not yet run: no reader study or field evidence
+      exists on how a target audience (journal editors, grant reviewers, practitioner communities)
+      actually treats a well-formed claim card, with or without institutional backing
+      (hypotheses.md#H2; hypothesis_selection.yaml candidates[1].criteria.access_evidence_available:
+      "no" -- this project has no current route to recruit an external reader population).
+    dissent_records: []
+identification_ladder:
+  layers:
+    - id: A0
+      adds: "the claim card, the Readout Condition's E-A-D conditions, and this project's own prior lineage sources (Readout Condition, Written by AI, Civilization of Knowledge) exist as named artifacts in this repo/lineage"
+    - id: A1
+      adds: "the 16 H2 citation cards exist, are status VERIFIED, and were checked by a decorrelated AI route (codex, I3) -- not merely asserted by the same session that drafted them"
+  per_rival:
+    - rival: "institutions are doing genuinely load-bearing work a checkable record does not replace (H2's own stated falsifier direction, and the CHALLENGES-bearing cite-own-civilization-of-knowledge-h2-007)"
+      first_identification_level: A1
+    - rival: "the two SUPPORTS citations are same-lineage (this project's own prior papers) and so cannot themselves count as independent confirmation of H2, only as a consistent restatement of the same authorial position"
+      first_identification_level: A1
+provenance_dag:
+  nodes:
+    - id: bb-note-l1
+      kind: observation
+    - id: h2-hypothesis-draft
+      kind: inference
+    - id: h2-lrs-search
+      kind: observation
+    - id: h2-citation-cards
+      kind: observation
+    - id: this-claim-card
+      kind: claim
+  edges:
+    - from: bb-note-l1
+      to: h2-hypothesis-draft
+    - from: h2-hypothesis-draft
+      to: h2-lrs-search
+    - from: h2-lrs-search
+      to: h2-citation-cards
+    - from: h2-citation-cards
+      to: this-claim-card
+    - from: h2-hypothesis-draft
+      to: this-claim-card
+  essential_dependency_set:
+    - bb-note-l1
+    - h2-hypothesis-draft
+    - h2-citation-cards
+  defeater_log: []
+  status: run
+silent_lift_check:
+  represented_dependency_set:
+    - bb-note-l1
+    - h2-hypothesis-draft
+    - h2-lrs-search
+    - h2-citation-cards
+  actual_dependency_set:
+    - bb-note-l1
+    - h2-hypothesis-draft
+    - h2-lrs-search
+    - h2-citation-cards
+  flags: []
+  status: run
+scope:
+  generalization_claimed: none
+  evidence_scope: >-
+    One self-application project (GLS-2026-001, glosa run on its own paper), 16 VERIFIED citation
+    cards reached at independence_class I3 (cross-vendor AI) only, two of the three cited sources
+    same-lineage, no I5 (outside human, no stake) route or reader study yet secured.
+  claim_scope: >-
+    A proposition about where the "rigour" property is located, carried as a conceptual claim with
+    a stated but not-yet-run falsifier -- this card does not claim H2 has been tested or confirmed,
+    only that it is well-formed enough to falsify and that the H2 self-application evidence
+    gathered so far is genuinely mixed (two SUPPORTS from same-lineage sources, one CHALLENGES from
+    an independent-topic source).
+tier: Dr
+k_state: K0
+ledger:
+  forced: []
+  borrowed:
+    - "10.5281/zenodo.21529456 (Readout Universe -- Yaoharee Lahtee, lens)"
+    - "10.5281/zenodo.22301318 (The Readout Condition, Aug 2026)"
+    - "10.5281/zenodo.22301202 (Written by AI. Still True., Aug 2026)"
+  open:
+    - "whether the two SUPPORTS sources, being same-lineage, can ever move H2 past Dr without an independent (non-same-author) source"
+    - "whether a reader study or field evidence would find the credential doing load-bearing work the card structure cannot substitute for -- not yet reachable with this project's current resources"
+non_claims:
+  - "This card does not claim H2 has been empirically tested or confirmed -- it is carried as a PROPOSITION with a stated falsifier (genre_decision.yaml, founder override to CONCEPTUAL genre, BBL-2026-09-04-097)."
+  - "This card does not claim readers in general treat a well-formed claim card as sufficient without asking about institutional backing -- no reader study has been run."
+  - "This card does not claim the 16 citation cards found constitute a systematic or exhaustive search of the relevant literature -- litreview_manifest.yaml records search_mode as TARGETED_SEARCH/SCOPING_SEARCH, not SYSTEMATIC_REVIEW."
+  - "This card is not a veterinary, medical, legal, or religious determination of any kind."
+  - "This card does not claim the two SUPPORTS sources (same project lineage) are independent confirmation of H2 -- that limitation is disclosed, not hidden."
+legal_epistemic_separation:
+  applicable: false
+  notes: ""
+independent_check:
+  status: NONE
+  maker_id: "AI-anthropic/claude-fable"
+  checker_id: null
+  approver_id: null
+  independence_class: I3
+  mc_level: L1
+  date: "2026-09-04"
+  expires_at: null
+disclaimers_emitted:
+  # exact output of `./cli/glosa claim disclaimers` run against this file, pasted verbatim (task B1)
+  - id: D-STANDPOINT
+  - id: D-NONEXPERT
+  - id: D-NONCLAIM
+  - id: D-AUTHORSHIP
+  - id: D-REVISION-LIVE
+  - id: D-NO-EPISTEMIC-VETO
+  - id: D-TIER
+    params:
+      tier: Dr
+  - id: D-K-STATE
+    params:
+      k_state: K0
+  - id: D-BLACKBOX-NOTE
+    params:
+      origin_blackbox_ref: "blackbox/BLACKBOX_NOTE_glosa-paper_2026-09-04.md#L1"
+  - id: D-AIFILL
+    params:
+      field_name:
+        - current_evidence
+        - retrieved_tool_evidence
+        - retained_record_route
+        - model_calibration_assumption
+        - prompt_system_constraint
+        - decision_policy
+  - id: D-CANDIDATE-STATUS
+  - id: D-TRANSLATION
+    params:
+      translation_status: reviewed
+  - id: D-EXTERNAL-INPUT
+    params:
+      source_ref:
+        - "10.5281/zenodo.21529456 (Readout Universe -- Yaoharee Lahtee, lens)"
+        - "10.5281/zenodo.22301318 (The Readout Condition, Aug 2026)"
+        - "10.5281/zenodo.22301202 (Written by AI. Still True., Aug 2026)"
+status: Draft
+lineage:
+  derives_from:
+    - projects/GLS-2026-001_rigour-without-infrastructure/hypotheses.md#H2
+  supersedes: []
+  superseded_by: null
+related_source_cards: []
+related_observation_cards: []
+related_citation_cards:
+  - cite-own-blackbox-log-h2-006
+  - cite-own-civilization-of-knowledge-h2-007
+  - cite-own-readout-condition-h2-002
+  - cite-own-readout-genesis-h2-003
+  - cite-own-standalone-scholar-h2-005
+  - cite-own-written-ai-h2-001
+  - cite-own-zero-readout-h2-004
+  - cite-rigour-without-infrastructure-001
+  - cite-rigour-without-infrastructure-002
+  - cite-rigour-without-infrastructure-003
+  - cite-rigour-without-infrastructure-004
+  - cite-rigour-without-infrastructure-005
+  - cite-rigour-without-infrastructure-006
+  - cite-rigour-without-infrastructure-007
+  - cite-rigour-without-infrastructure-008
+  - cite-rigour-without-infrastructure-009
+responsibility:
+  data_to_inference: joint
+  inference_to_claim: human
+  notes: >-
+    AI (Claude) retrieved literature, drafted the H2 candidate hypothesis, and drafted this claim
+    card's fields from the frozen project records; the founder alone signs the claim
+    (FOUNDATION_v0.5.md §2.1b) and holds the falsifier judgment. This card's `status: Draft` and
+    `independent_check.status: NONE` reflect that the founder has not yet signed off on this
+    specific card instance.
+  ownership:
+    problem: human
+    question: human
+    notes: >-
+      The standalone-scholar problem and the research question (blackbox_note.yaml line 1,
+      GLOSA-PC-20260904-0001.yaml) are the founder's own; AI proposed H1/H2/H3 as candidate
+      hypotheses, the founder selected among them (hypothesis_selection.yaml, BBL-2026-09-04-095).
+    hypothesis_selection: human
+empirical_extension: null
+human_owner: founder
+revision_history:
+  - rev: "1"
+    date: "2026-09-04"
+    by: AI-anthropic/claude-fable
+    note: "initial scaffold via `glosa claim new`"
+  - rev: "2"
+    date: "2026-09-04"
+    by: AI-anthropic/claude-fable
+    note: >-
+      Filled full-shape card for H2 (conceptual claim) per task B1 (BBL-2026-09-04-091..101):
+      statement, standpoint, lens_translation, hypothesis_world (signed), five_questions
+      (evidence_relations cited from h2/citations VERIFIED cards), identification_ladder,
+      provenance_dag, silent_lift_check, scope, ledger, non_claims, responsibility, disclaimers.
+      Not yet reviewed or signed by the founder (status stays Draft, independent_check.status stays
+      NONE).

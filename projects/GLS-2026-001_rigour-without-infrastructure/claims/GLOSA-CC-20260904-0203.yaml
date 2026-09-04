@@ -1,0 +1,475 @@
+$schema: claim_card.schema.json
+schema_version: 0.4.0
+claim_id: GLOSA-CC-20260904-0203
+shape: full
+statement:
+  language: en
+  text: >-
+    When claim cards are checked by a different AI vendor from the one that produced them
+    (cross-vendor, independence level I3) instead of being re-checked by the same vendor that
+    produced the card (I0/I1), the rate at which undisclosed AI-fill (a false Q3 field) or
+    undisclosed assumptions (a false Q4 field) is caught rises measurably compared to same-vendor
+    re-checking.
+  is_verbatim_quote: false
+  translation:
+    text: >-
+      เมื่อการ์ดข้ออ้างถูกตรวจโดย AI คนละยี่ห้อ (cross-vendor, ระดับความเป็นอิสระ I3) แทนที่จะตรวจซ้ำด้วย AI
+      ยี่ห้อเดียวกับที่ผลิตการ์ด (I0/I1) อัตราการจับได้ของ AI-fill ที่ไม่เปิดเผย (ฟิลด์ Q3 เป็นเท็จ) หรือข้อสมมติที่ไม่เปิดเผย
+      (ฟิลด์ Q4 เป็นเท็จ) จะสูงขึ้นอย่างมีนัยสำคัญ เทียบกับการตรวจด้วยยี่ห้อเดียวกัน
+    language: th
+    translation_status: reviewed
+standpoint:
+  declared_basis: >-
+    Written from the standpoint of a social-enterprise practitioner and citizen (founder, Yaoharee
+    Lahtee), not as a substitute expert in computer science, statistics, or AI-evaluation
+    methodology. AI assistance (Claude, seated as "Fable" this session) drafted the candidate
+    hypothesis, this claim card's field structure, and the supporting literature-review runs; every
+    AI-drafted contribution is disclosed in `five_questions.ai_filled` and never counted as
+    authorship (AGENTS.md gate rule 5).
+  disciplines_not_claimed:
+    - computer science
+    - statistics
+    - AI-evaluation methodology
+    - philosophy of science
+    - research-integrity studies
+  method_basis: >-
+    glosa methodology itself (claim cards answering the founder's five questions, tied to the
+    Readout Condition's Existence-Attribution-Disclosure, gated through the independence ladder
+    before public release) -- this card is produced by running glosa on glosa's own paper (dogfood,
+    founder instruction BBL-2026-09-04-091).
+claim_type: EMPIRICAL
+genre: conceptual
+venue_track: none
+companion_of: null
+produced_by: joint
+responsible: human
+origin_blackbox_ref: "blackbox/BLACKBOX_NOTE_glosa-paper_2026-09-04.md#L1"
+litreview_manifest_ref: records/lit/rigour-without-infrastructure/h3/litreview_manifest.yaml
+hypothesis_selection_ref: hsel-rigour-without-infrastructure-001
+lens_translation:
+  lens_ref: "10.5281/zenodo.21529456"
+  question_human:
+    text_verbatim: >-
+      ...คนที่ไม่มีมหาวิทยาลัย ไม่มีแล็บ และไม่มีทีมวิจัย จะผลิตความรู้จากพื้นที่ของตนเองอย่างเข้มงวดได้อย่างไร...
+    language: th
+    blackbox_line_ref: "blackbox/BLACKBOX_NOTE_glosa-paper_2026-09-04.md#L1"
+  question_readout: >-
+    Under the access relation this project actually has (existing AI-vendor accounts, no funded
+    reader study), does the specific mechanism the independence ladder depends on -- a decorrelated
+    (cross-vendor) checking route catching more undisclosed AI-fill/assumption instances than a
+    same-vendor re-check -- actually hold, or does it only look like it should hold by analogy to
+    adjacent domains (code review, judge bias)?
+  local_contrast_space_X:
+    - "X1 -- same-vendor re-check (I0/I1): the AI vendor that produced the card also re-checks it"
+    - "X2 -- cross-vendor check (I3): a different AI vendor from the one that produced the card checks it"
+    - "X3 -- cross-vendor check catches a measurably higher rate of seeded undisclosed AI-fill/assumption instances than X1"
+    - "X4 -- cross-vendor check does not catch a measurably higher rate, or the effect is direction-dependent (helps one vendor-pair direction, hurts the reverse, as the closest analogous study found)"
+  restriction_provenance: >-
+    Every distinction this project can draw about H3 is itself drawn from inside the same
+    restricted access relation -- glosa's own author-project has existing AI-vendor accounts
+    (Claude, codex) but no seeded-error benchmark has actually been run yet
+    (lens_translation.md, this project).
+  access_relation_R: >-
+    Has access to: existing AI-vendor accounts (used already for I3 citation-card cross-checking in
+    this project's own LRS runs); the glosa methodology itself. Does NOT have access to: a funded,
+    pre-registered seeded-error benchmark with a scoring rubric; a controlled human-adjudicated
+    ground truth for "undisclosed AI-fill" beyond this project's own frozen records.
+  claim_function_Phi_z0: >-
+    The readout functional this project evaluates H3 against, at reference point z0 = "a claim
+    card with a known, logged, deliberately undisclosed AI-fill or assumption instance": does a
+    cross-vendor (I3) check route catch it at a measurably higher rate than a same-vendor (I0/I1)
+    route. Phi_z0 is a detection-rate functional over a to-be-built seeded benchmark, not yet
+    computed on real seeded data by this project.
+  formal_applicability: stochastic
+hypothesis_world:
+  text: >-
+    When claim cards are checked by a different AI vendor from the one that produced them
+    (cross-vendor, independence level I3) instead of being re-checked by the same vendor that
+    produced the card (I0/I1), the rate at which undisclosed AI-fill (a false Q3 field) or
+    undisclosed assumptions (a false Q4 field) is caught rises measurably compared to same-vendor
+    re-checking.
+  language: en
+  falsifier_ref: five_questions.tested.falsifier
+  signature: >-
+    Hypothesis derived with Readout Universe -- Yaoharee Lahtee (lens, DOI 10.5281/zenodo.21529456);
+    candidate proposed by AI, selected by the founder (BBL-2026-09-04-095).
+five_questions:
+  seen:
+    record_ref: projects/GLS-2026-001_rigour-without-infrastructure/hypotheses.md#H3
+    as_of: "2026-09-04"
+    retrievable_original: true
+    access_model: >-
+      The founder's own Blackbox Note question line (BB-2026-09-04-01#1, mirrored publicly at
+      blackbox/BLACKBOX_NOTE_glosa-paper_2026-09-04.md#L1), the paper abstract
+      (paper/main_th.md), and the self-application run records: `records/lit/rigour-without-
+      infrastructure/h3/*` (search_log.yaml, litreview_manifest.yaml, dialogue_table.md, 17
+      citation cards under `citations/`, all VERIFIED) and
+      `projects/GLS-2026-001_rigour-without-infrastructure/*` (hypotheses.md, lens_translation.md,
+      hypothesis_selection.yaml, GLOSA-PC-20260904-0001.yaml). These records are what was actually
+      seen producing this card, not a claim about the world beyond glosa's own dogfood run.
+    citation_refs:
+      - cite-mindstudio-crossvendor-010
+      - cite-selfpreference-judge-001
+      - cite-toohconsistent-003
+  separates:
+    value_z0: "whether cross-vendor (I3) checking catches a measurably higher rate of seeded undisclosed AI-fill/assumption instances than same-vendor (I0/I1) re-checking"
+    licensing_test:
+      regime: "no seeded-error benchmark has been run by this project yet; this is a pre-study literature scan only (n=0 own experimental trials)"
+      result: >-
+        Of the 17 VERIFIED citation cards found for H3 (h3/citations/, independence_class I3
+        throughout), three (cite-mindstudio-crossvendor-010, cite-selfpreference-judge-001,
+        cite-toohconsistent-003) SUPPORT H3's underlying mechanism at the SUPPORTS_GENERAL_CLAIM_ONLY
+        scope level (cross-vendor blind-spot avoidance, LLM self-preference/familiarity bias,
+        cross-model verification catching self-consistent errors) -- none is H3's own direct test.
+        The one source that IS H3's own direct test (cite-crossmodel-codereview-002, an arXiv
+        controlled comparison of cross-vendor vs. same-vendor code review pass rates, 116 tasks, 6
+        conditions) came back with i3.json bearing CONTEXT_ONLY, not SUPPORTS -- it found an
+        asymmetric, direction-dependent effect (one cross-vendor direction helped substantially,
+        the reverse direction hurt, and same-vendor self-review also improved one condition),
+        which the decorrelated route judged as analogous context (code-review pass rate, not
+        Q3/Q4 claim-card field detection) rather than a clean confirmation or refutation of H3
+        (litreview_manifest.yaml developability note; hypothesis_selection.yaml
+        candidates[2].criteria.developability). This is disclosed here as the single most
+        important open complication to H3, not omitted for a cleaner-looking evidence set.
+      notes: "n=0 own experimental trials; no seeded-error benchmark has been built or run by this project; all evidence is by-analogy from adjacent literature (LLM judging, code review), not H3's own instrument."
+    zero_vs_bottom: distinct_difference_found
+  ai_filled:
+    current_evidence: >-
+      AI (Claude, this session) retrieved and drafted the summaries of the 17 H3 citation cards
+      under records/lit/rigour-without-infrastructure/h3/citations/ during the S3b LRS run; the
+      founder did not independently re-fetch each source before this claim card was drafted.
+    retrieved_tool_evidence: >-
+      WebFetch/WebSearch tool calls performed the literature retrieval recorded in
+      records/lit/rigour-without-infrastructure/h3/search_log.yaml; a second AI route (codex, I3)
+      cross-checked metadata/claim-match for each card, recorded in each citation card's own
+      .i3.json file.
+    retained_record_route: >-
+      This claim card's field structure and initial evidence-relation selection were drafted by AI
+      from the existing frozen project records (litreview_manifest.yaml, dialogue_table.md,
+      citation cards) -- no seeded-error benchmark, new observation, or new search was performed to
+      produce this card itself.
+    model_calibration_assumption: >-
+      No claim in this card depends on an AI model's stated confidence or calibration score; all
+      independence_class/status/bearing values are taken directly from the frozen citation cards
+      and their .i3.json verdicts, not re-estimated here.
+    prompt_system_constraint: >-
+      This card was drafted under task instructions (BBL-2026-09-04-091..101) requiring citation
+      only from cards already at status VERIFIED with an existing citation card -- no citation was
+      drawn from AI training-data memory.
+    decision_policy: >-
+      Selection of which 3 of the 17 VERIFIED H3 citation cards to cite as tested.evidence_relations
+      was an AI drafting choice (favoring the three entries with i3.json bearing SUPPORTS); the
+      most directly on-point source (cite-crossmodel-codereview-002) was excluded from the formal
+      evidence_relations list because its i3.json bearing is CONTEXT_ONLY, not SUPPORTS/CHALLENGES,
+      but is discussed explicitly in `separates.licensing_test.result` above and in `non_claims`
+      below so its complication is not silently dropped -- an AI drafting choice, presented to the
+      founder for review, not a founder-directed selection.
+  assumed:
+    - id: A1
+      type: inferential_commitment
+      description: >-
+        Findings from adjacent domains (LLM-judge self-preference bias, cross-model code review,
+        cross-model consistency checking) are informative about H3's own claim-card Q3/Q4-detection
+        mechanism, even though none of the cited sources tests claim-card field-level AI-fill or
+        assumption detection directly -- an analogy, not a direct test, and named as such in every
+        cited source's own notes.
+      identification_level: A1
+      contaminated_concept_hit: null
+    - id: A2
+      type: inferential_commitment
+      description: >-
+        The direction-dependent, asymmetric effect found in the single closest analogous study
+        (cite-crossmodel-codereview-002 -- one cross-vendor direction helps, the reverse hurts,
+        same-vendor self-review also helps in one condition) does not by itself defeat H3, but is
+        treated as a real open complication to the simple "cross-vendor > same-vendor" framing H3
+        states, rather than being explained away.
+      identification_level: A1
+      contaminated_concept_hit: null
+  tested:
+    evidence_relations:
+      - evidence_id: cite-mindstudio-crossvendor-010
+        bearing: SUPPORTS
+        independence_class: I3
+        strength: "weak -- SUPPORTS_GENERAL_CLAIM_ONLY scope, evidence_tier Open (practitioner/blog context, not controlled evidence)"
+        citation_ref: cite-mindstudio-crossvendor-010
+        review_mode: DECORRELATED_AI_ROUTE
+        route_id: codex
+        asserted_by: ai
+        date: "2026-09-04"
+        notes: >-
+          Supports the general cross-vendor blind-spot-avoidance mechanism H3 depends on, but only
+          as practitioner/blog context, not controlled evidence for H3's own claim-card Q3/Q4
+          detection-rate comparison (h3/citations/cite-mindstudio-crossvendor-010.yaml).
+      - evidence_id: cite-selfpreference-judge-001
+        bearing: SUPPORTS
+        independence_class: I3
+        strength: "moderate -- SUPPORTS_GENERAL_CLAIM_ONLY scope, evidence_tier fit_calibrated"
+        citation_ref: cite-selfpreference-judge-001
+        review_mode: DECORRELATED_AI_ROUTE
+        route_id: codex
+        asserted_by: ai
+        date: "2026-09-04"
+        notes: >-
+          Finds LLM judges assign significantly higher evaluations to outputs with lower
+          perplexity regardless of self-generation, i.e. familiarity/self-preference bias -- a
+          mechanism relevant to why same-vendor re-checking may under-detect what its own vendor
+          produced, but the paper does not itself run a cross-vendor-vs-same-vendor comparison
+          (h3/citations/cite-selfpreference-judge-001.yaml).
+      - evidence_id: cite-toohconsistent-003
+        bearing: SUPPORTS
+        independence_class: I3
+        strength: "moderate -- DIRECT_QUOTATION scope, evidence_tier fit_calibrated"
+        citation_ref: cite-toohconsistent-003
+        review_mode: DECORRELATED_AI_ROUTE
+        route_id: codex
+        asserted_by: ai
+        date: "2026-09-04"
+        notes: >-
+          Supports cross-model/external-verifier checking improving detection of LLM
+          self-consistent errors -- relevant to H3's cross-vendor independence mechanism, though
+          not a claim-card Q3/Q4 field-detection study specifically
+          (h3/citations/cite-toohconsistent-003.yaml).
+    falsifier: >-
+      A controlled comparison (same set of claim cards, deliberately seeded with a known number of
+      undisclosed AI-fill/assumption instances, checked by same-vendor vs. cross-vendor routes)
+      shows no significant difference in detection rate, or shows cross-vendor checking performs
+      worse -- that would falsify the independence-ladder mechanism this project's methodology
+      cards (`methodology/`) currently assume works. Not yet run: this project has not built or run
+      the seeded-error benchmark (hypotheses.md#H3; hypothesis_selection.yaml
+      candidates[2].criteria.falsifier_reachable_with_our_resources: "yes" -- reachable, not yet
+      done).
+    dissent_records: []
+identification_ladder:
+  layers:
+    - id: A0
+      adds: "the independence ladder (I0..I5), the citation cards, and the .i3.json cross-vendor verdict files exist as named artifacts in this repo"
+    - id: A1
+      adds: "the 17 H3 citation cards exist, are status VERIFIED, and were checked by a decorrelated AI route (codex, I3); the single most directly on-point source (cite-crossmodel-codereview-002) found a real, disclosed, direction-dependent complication rather than a clean confirmation"
+  per_rival:
+    - rival: "the cross-vendor effect is direction-dependent / asymmetric rather than a uniform 'cross-vendor always beats same-vendor' effect (H3's own stated falsifier direction, and the closest analogous study cite-crossmodel-codereview-002)"
+      first_identification_level: A1
+    - rival: "none of the cited evidence tests claim-card Q3/Q4 field-detection directly -- the mechanism could hold in code review/judging but not transfer to claim-card review"
+      first_identification_level: A1
+provenance_dag:
+  nodes:
+    - id: bb-note-l1
+      kind: observation
+    - id: h3-hypothesis-draft
+      kind: inference
+    - id: h3-lrs-search
+      kind: observation
+    - id: h3-citation-cards
+      kind: observation
+    - id: this-claim-card
+      kind: claim
+  edges:
+    - from: bb-note-l1
+      to: h3-hypothesis-draft
+    - from: h3-hypothesis-draft
+      to: h3-lrs-search
+    - from: h3-lrs-search
+      to: h3-citation-cards
+    - from: h3-citation-cards
+      to: this-claim-card
+    - from: h3-hypothesis-draft
+      to: this-claim-card
+  essential_dependency_set:
+    - bb-note-l1
+    - h3-hypothesis-draft
+    - h3-citation-cards
+  defeater_log: []
+  status: run
+silent_lift_check:
+  represented_dependency_set:
+    - bb-note-l1
+    - h3-hypothesis-draft
+    - h3-lrs-search
+    - h3-citation-cards
+  actual_dependency_set:
+    - bb-note-l1
+    - h3-hypothesis-draft
+    - h3-lrs-search
+    - h3-citation-cards
+  flags: []
+  status: run
+scope:
+  generalization_claimed: none
+  evidence_scope: >-
+    One self-application project (GLS-2026-001, glosa run on its own paper); a pre-study literature
+    scan only (17 VERIFIED citation cards, I3 cross-vendor citation checking); zero seeded-error
+    benchmark trials run by this project; the closest direct analogy (code review, not claim-card
+    field detection) found a direction-dependent complication, not a clean confirmation.
+  claim_scope: >-
+    A proposition about a not-yet-run seeded-error benchmark, carried as an empirical claim with a
+    stated but not-yet-run falsifier -- this card does not claim H3 has been tested, confirmed, or
+    refuted; it claims only that H3 is well-formed enough to falsify with resources this project
+    already has (hypothesis_selection.yaml candidates[2].criteria.falsifier_reachable_with_our_resources: "yes").
+tier: Dr
+k_state: K0
+ledger:
+  forced: []
+  borrowed:
+    - "10.5281/zenodo.21529456 (Readout Universe -- Yaoharee Lahtee, lens)"
+  open:
+    - "whether cross-vendor (I3) checking actually catches a measurably higher rate of seeded undisclosed AI-fill/assumption instances than same-vendor (I0/I1) checking -- no seeded benchmark has been run"
+    - "whether the direction-dependent asymmetry found in the closest analogous study (cite-crossmodel-codereview-002) transfers to claim-card Q3/Q4 field detection, or is specific to code-review pass/fail scoring"
+non_claims:
+  - "This card does not claim H3 has been empirically tested, confirmed, or refuted -- it is carried as a PROPOSITION with a stated falsifier (genre_decision.yaml, founder override to CONCEPTUAL genre, BBL-2026-09-04-097); no seeded-error benchmark has been built or run."
+  - "This card does not claim any cited source is a direct test of claim-card Q3/Q4 field-level detection -- all three SUPPORTS citations are analogies from adjacent domains (LLM judging, cross-model consistency checking), disclosed as such in each evidence relation's notes."
+  - "This card does not claim the single closest analogous study (cite-crossmodel-codereview-002, excluded from evidence_relations because its i3.json bearing is CONTEXT_ONLY) confirms or refutes H3 -- its direction-dependent, asymmetric result is disclosed as an open complication in `separates.licensing_test.result`, not hidden."
+  - "This card does not claim the 17 citation cards found constitute a systematic or exhaustive search of the relevant literature -- litreview_manifest.yaml records search_mode as TARGETED_SEARCH/SCOPING_SEARCH, not SYSTEMATIC_REVIEW."
+  - "This card is not a veterinary, medical, legal, or religious determination of any kind."
+legal_epistemic_separation:
+  applicable: false
+  notes: ""
+independent_check:
+  status: NONE
+  maker_id: "AI-anthropic/claude-fable"
+  checker_id: null
+  approver_id: null
+  independence_class: I3
+  mc_level: L1
+  date: "2026-09-04"
+  expires_at: null
+disclaimers_emitted:
+  # exact output of `./cli/glosa claim disclaimers` run against this file, pasted verbatim (task B1)
+  - id: D-STANDPOINT
+  - id: D-NONEXPERT
+  - id: D-NONCLAIM
+  - id: D-AUTHORSHIP
+  - id: D-REVISION-LIVE
+  - id: D-NO-EPISTEMIC-VETO
+  - id: D-TIER
+    params:
+      tier: Dr
+  - id: D-K-STATE
+    params:
+      k_state: K0
+  - id: D-BLACKBOX-NOTE
+    params:
+      origin_blackbox_ref: "blackbox/BLACKBOX_NOTE_glosa-paper_2026-09-04.md#L1"
+  - id: D-AIFILL
+    params:
+      field_name:
+        - current_evidence
+        - retrieved_tool_evidence
+        - retained_record_route
+        - model_calibration_assumption
+        - prompt_system_constraint
+        - decision_policy
+  - id: D-CANDIDATE-STATUS
+  - id: D-TRANSLATION
+    params:
+      translation_status: reviewed
+  - id: D-EXTERNAL-INPUT
+    params:
+      source_ref:
+        - "10.5281/zenodo.21529456 (Readout Universe -- Yaoharee Lahtee, lens)"
+status: Draft
+lineage:
+  derives_from:
+    - projects/GLS-2026-001_rigour-without-infrastructure/hypotheses.md#H3
+  supersedes: []
+  superseded_by: null
+related_source_cards: []
+related_observation_cards: []
+related_citation_cards:
+  - cite-bangladesh-readiness-007
+  - cite-cofact-thai-detector-009
+  - cite-crossmodel-codereview-002
+  - cite-iseas-sea-governance-008
+  - cite-legalai-india-006
+  - cite-mindstudio-crossvendor-010
+  - cite-multiagent-debate-004
+  - cite-own-blackbox-log-h3-006
+  - cite-own-knowledge-stabilized-translation-h3-007
+  - cite-own-readout-condition-h3-002
+  - cite-own-readout-genesis-h3-003
+  - cite-own-standalone-scholar-h3-005
+  - cite-own-written-ai-h3-001
+  - cite-own-zero-readout-h3-004
+  - cite-selfcorrect-reasoning-005
+  - cite-selfpreference-judge-001
+  - cite-toohconsistent-003
+responsibility:
+  data_to_inference: joint
+  inference_to_claim: human
+  notes: >-
+    AI (Claude) retrieved literature, drafted the H3 candidate hypothesis, and drafted this claim
+    card's fields from the frozen project records; the founder alone signs the claim
+    (FOUNDATION_v0.5.md §2.1b) and holds the falsifier judgment. This card's `status: Draft` and
+    `independent_check.status: NONE` reflect that the founder has not yet signed off on this
+    specific card instance.
+  ownership:
+    problem: human
+    question: human
+    notes: >-
+      The standalone-scholar problem and the research question (blackbox_note.yaml line 1,
+      GLOSA-PC-20260904-0001.yaml) are the founder's own; AI proposed H1/H2/H3 as candidate
+      hypotheses, the founder selected among them (hypothesis_selection.yaml, BBL-2026-09-04-095).
+    hypothesis_selection: human
+empirical_extension:
+  operationalization:
+    - abstract_term: "detection rate (of undisclosed AI-fill, Q3)"
+      measured_as: >-
+        Fraction of deliberately seeded, undisclosed AI-fill instances (a five_questions.ai_filled
+        sub-field that was actually AI-supplied but recorded as "none identified") that a checking
+        route flags as inconsistent with the underlying provenance_dag/silent_lift_check, out of
+        the total number seeded.
+      instrument_or_record: "a not-yet-built seeded-error benchmark corpus of claim cards (schema/claim_card.schema.json instances) with a known, logged ground-truth seed list"
+      unit_or_scale: "proportion caught, 0.0-1.0, per checking-route arm (same-vendor vs cross-vendor), per seeded-card batch"
+    - abstract_term: "detection rate (of undisclosed assumptions, Q4)"
+      measured_as: >-
+        Fraction of deliberately seeded, undisclosed assumption instances (an inferential
+        commitment silently missing from five_questions.assumed[]) that a checking route flags,
+        out of the total number seeded.
+      instrument_or_record: "the same not-yet-built seeded-error benchmark corpus, scored separately from the Q3 measure above"
+      unit_or_scale: "proportion caught, 0.0-1.0, per checking-route arm, per seeded-card batch"
+  study_design: experiment
+  bias_register:
+    - id: B1
+      type: selection
+      description: >-
+        The literature evidence gathered for this card (17 citation cards) is drawn from AI-vendor
+        and LLM-evaluation literature this project's own existing search access could reach --
+        not a random or systematic sample of all relevant work on cross-model verification.
+      mitigation: "search_mode recorded honestly as TARGETED_SEARCH/SCOPING_SEARCH in litreview_manifest.yaml, not overstated as SYSTEMATIC_REVIEW"
+      residual: unknown
+    - id: B2
+      type: tool_ai
+      description: >-
+        Every citation card's claim-match verification and bearing judgment (SUPPORTS/CHALLENGES/
+        CONTEXT_ONLY) was performed by an AI route (codex, cross-vendor from the drafting session's
+        Claude) reading abstract/metadata-level text, not full-text human adjudication -- the I3
+        route itself is subject to the same self-preference/familiarity bias one of its own cited
+        sources (cite-selfpreference-judge-001) describes.
+      mitigation: "disclosed per-card in who_verified/independence_class fields; no I5 (human, no stake) route has yet reviewed any of the 17 cards"
+      residual: high
+    - id: B3
+      type: measurement
+      description: >-
+        No seeded-error benchmark has actually been built or run yet -- the "detection rate" this
+        card operationalizes above is a planned instrument, not a measurement already taken; all
+        current evidence is by-analogy from adjacent domains, not H3's own instrument.
+      mitigation: "explicitly disclosed in non_claims and the falsifier field; robustness.status recorded as not_run below rather than fabricating a result"
+      residual: high
+  robustness:
+    checks: []
+    status: not_run
+human_owner: founder
+revision_history:
+  - rev: "1"
+    date: "2026-09-04"
+    by: AI-anthropic/claude-fable
+    note: "initial scaffold via `glosa claim new`"
+  - rev: "2"
+    date: "2026-09-04"
+    by: AI-anthropic/claude-fable
+    note: >-
+      Filled full-shape card for H3 (empirical claim) per task B1 (BBL-2026-09-04-091..101):
+      statement, standpoint, lens_translation, hypothesis_world (signed), five_questions
+      (evidence_relations cited from h3/citations VERIFIED cards), identification_ladder,
+      provenance_dag, silent_lift_check, scope, ledger, non_claims, responsibility,
+      empirical_extension (operationalization/study_design/bias_register/robustness not_run),
+      disclaimers. Not yet reviewed or signed by the founder (status stays Draft,
+      independent_check.status stays NONE).

@@ -1,0 +1,794 @@
+% GLS-2026-001 rigour-without-infrastructure -- concept paper.
+% Two-column arXiv-style preprint, themed after sources/CPRMH_arxiv_twocolumn_v12_core_collapse.pdf
+% page 1 (grey small-caps running header, dark-blue title block, boxed meta line, shaded "In brief"
+% box) per founder ruling BBL-2026-09-04-099 (arXiv two-column theme, polished). Built from
+% templates/paper/arxiv-twocol/{main.tex,disclaimers.tex,refs.bib}; every mandatory template
+% element (standpoint, tier legend, five-questions crosswalk, disclaimer catalogue, AI-assistance
+% disclosure, claim matrix, Blackbox Note appendix, Human Mastery Gate, provenance) is kept.
+% Genre: CONCEPTUAL, adopted-by-human override (BBL-2026-09-04-097; router's own mechanical output
+% was systematic_review, not adopted -- see genre_decision.yaml).
+
+\documentclass[10pt,twocolumn]{article}
+
+\usepackage[margin=0.75in,columnsep=0.25in]{geometry}
+% Engine note (honest edge, tier finite_diagnostic): this build system has no
+% Unicode-Thai-capable LaTeX engine available -- no luaotfload package, no
+% xelatex format, and no root access to install either (checked this
+% session: `kpsewhich luaotfload.sty` empty, `fmtutil --byfmt xelatex` finds
+% no such format). pdfLaTeX/mathptmx cannot set Thai glyphs directly.
+% Work-around: the Blackbox Note's four longer verbatim Thai passages quoted
+% in the body are rendered to PNG images (thai_imgs/*.png, generated
+% byte-for-byte from the same source strings as
+% blackbox/BLACKBOX_NOTE_glosa-paper_2026-09-04.md and
+% blackbox/log/entries.jsonl -- not edited or transliterated) and included
+% via \includegraphics; every other Blackbox Note reference in this document
+% is given as an English gloss with a pointer to the verbatim Thai in the
+% source file, rather than reproduced a second time as raw Unicode this
+% engine cannot render.
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{mathptmx}
+\usepackage{microtype}
+\usepackage{amsmath,amssymb,mathtools}
+\usepackage{natbib}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{enumitem}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{url}
+\usepackage{hyperref}
+\usepackage{cleveref}
+\usepackage{titlesec}
+\usepackage{caption}
+\usepackage{float}
+\usepackage{balance}
+\usepackage{fancyhdr}
+
+\definecolor{Ink}{RGB}{25,25,28}
+\definecolor{Slate}{RGB}{82,88,96}
+\definecolor{TitleBlue}{rgb}{0.10,0.20,0.45}
+\definecolor{BriefBg}{RGB}{237,241,247}
+\definecolor{MetaBg}{RGB}{247,247,249}
+\definecolor{MetaRule}{RGB}{198,204,214}
+
+\hypersetup{
+  colorlinks=true, linkcolor=Ink, citecolor=TitleBlue, urlcolor=Slate,
+  pdfauthor={Yaoharee Lahtee},
+  pdftitle={Rigour Without Infrastructure: A Concept Paper (GLS-2026-001)}
+}
+\setlength{\parindent}{1em}
+\setlength{\parskip}{0.2em}
+\setlist{nosep,leftmargin=*}
+\captionsetup{font=small,labelfont=bf}
+\titleformat{\section}{\large\bfseries\color{TitleBlue}}{\thesection}{0.6em}{}
+\titleformat{\subsection}{\normalsize\bfseries}{\thesubsection}{0.5em}{}
+
+% ---- CPRMH-style running header/footer: small-caps grey preprint line ----
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[C]{\footnotesize\textsc{\color{Slate}Preprint \textbullet\ Concept paper \textbullet\ September 2026}}
+\fancyfoot[C]{\footnotesize\color{Slate}\copyright\ 2026 The Author \textbullet\ CC BY 4.0 \textbullet\ glosa v0.2.0 arXiv two-column preprint \textbullet\ not yet peer reviewed $\mid$ \thepage}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\fancypagestyle{plain}{%
+  \fancyhf{}
+  \fancyhead[C]{\footnotesize\textsc{\color{Slate}Preprint \textbullet\ Concept paper \textbullet\ September 2026}}
+  \fancyfoot[C]{\footnotesize\color{Slate}\copyright\ 2026 The Author \textbullet\ CC BY 4.0 \textbullet\ glosa v0.2.0 arXiv two-column preprint \textbullet\ not yet peer reviewed $\mid$ \thepage}
+  \renewcommand{\headrulewidth}{0pt}
+}
+
+% ---- RWI tier-tag macros (readout_genesis + readout_universe tier ladder) ----
+\newcommand{\ThCoqc}{\textsc{Th\_coqc}}
+\newcommand{\FiniteDiag}{\textsc{finite\_diagnostic}}
+\newcommand{\FitCal}{\textsc{fit\_calibrated}}
+\newcommand{\DrTier}{\textsc{Dr}}
+\newcommand{\DefTier}{\textsc{definition}}
+\newcommand{\OpenTier}{\textsc{Open}}
+\newcommand{\tier}[1]{\textsc{#1}}
+\newcommand{\claimref}[1]{\textsuperscript{[#1]}}
+
+% ---- Disclaimer-catalogue environment ----
+\newlist{disclaimers}{description}{1}
+\setlist[disclaimers]{style=nextline,leftmargin=1.4em,font=\bfseries}
+
+\begin{document}
+\thispagestyle{plain}
+
+% ---------------------------------------------------------------------------
+% Full-width title / meta / "In brief" / abstract block (CPRMH page-1 theme)
+% ---------------------------------------------------------------------------
+\onecolumn
+
+\begin{center}
+{\LARGE\bfseries\color{TitleBlue} Rigour Without Infrastructure}\\[0.35em]
+{\large\color{TitleBlue} Three Propositions on Claim-Card Discipline as a Substitute for Institutional Certification}\\[0.9em]
+{\normalsize Yaoharee Lahtee}\\[0.15em]
+{\small Open Civil Science Initiative, Thailand}\\[0.1em]
+{\small ORCID \href{https://orcid.org/0009-0005-3861-0626}{0009-0005-3861-0626}}
+\end{center}
+
+\vspace{0.5em}
+\begin{center}
+\fcolorbox{MetaRule}{MetaBg}{%
+  \begin{minipage}{0.94\linewidth}
+  \small\centering
+  \textbf{Article type} Concept paper (CONCEPTUAL genre, adopted-by-human override, \Cref{sec:genre})
+  \textbullet\ \textbf{Method} Claim-card discipline + Literature Review System (LRS) self-application
+  \textbullet\ \textbf{Licence} CC BY 4.0\\[0.25em]
+  \textbf{Status} K0 working release, not peer reviewed
+  \end{minipage}%
+}
+\end{center}
+
+\vspace{0.6em}
+\noindent\colorbox{BriefBg}{%
+  \begin{minipage}{\linewidth}
+  \small
+  \textbf{In brief.} \textbf{Problem.} A person with no university, no lab, and no research team
+  who now has AI assistance faces a new failure mode: text that reads as smart and academic while
+  it stays unclear which part is evidence, which part is interpretation, and which part AI smoothed
+  over past what the data supports (\Cref{sec:problem}). \textbf{Proposition.} Three candidate
+  hypotheses (\Cref{sec:propositions}) --- a design mechanism (H1), a conceptual claim about where
+  rigour lives (H2), and an empirical claim about cross-vendor AI checking (H3) --- propose that a
+  claim-card discipline bound to Existence--Attribution--Disclosure and gated by an independence
+  ladder can make a standalone scholar's claim reader-checkable without an institutional
+  credential. \textbf{Method.} Each proposition carries a named falsifier and is placed against 48
+  independently verified citation cards in a conversation-with-the-literature table
+  (\Cref{sec:literature}), then the whole method is run on this paper's own construction as a
+  self-application demonstration (\Cref{sec:demonstration}). \textbf{Status.} All three
+  propositions are carried as untested claims at tier \DrTier{}, none above knowledge state K0; H3
+  is explicitly untested, and the self-application run itself surfaced real gate failures, not a
+  clean pass (\Cref{sec:demonstration}, \Cref{sec:limitations}).
+  \end{minipage}%
+}
+
+\vspace{0.7em}
+\begin{quote}
+\small\noindent\textbf{Abstract.} People who live daily with a problem often know it before
+researchers do, but turning that knowledge into a checkable claim has historically required a
+university, a lab, or a research team. Generative AI removes that requirement technically while
+introducing a new one epistemically: it becomes cheap to produce text that reads as rigorous
+without it being clear which part is observation, which part is inference, and which part the AI
+supplied. This paper states, as three falsifiable propositions and not as demonstrated results, a
+candidate answer: a \emph{claim card} that separately records what was seen, what the data
+separates, what AI filled in, what is assumed, and what independent check (if any) the claim has
+survived --- bound to a formal Existence--Attribution--Disclosure norm and passed through a named
+independence ladder (I0 self-check through I5 outside human review) before public release --- can
+carry the checkable property institutions have historically supplied, without requiring the
+institution itself (H1, design; H2, conceptual). A third, narrower proposition (H3, empirical)
+holds that cross-vendor AI checking measurably outperforms same-vendor re-checking at catching
+undisclosed AI-fill; it is stated but not tested here. Each proposition is placed against a
+literature conversation built from 48 independently verified citation cards, and the whole method
+is applied reflexively to this paper's own construction, which surfaced real failures --- a
+validator warning, a manifest-detected search-mode gap, and a documented citation-verification
+correction --- reported as findings, not smoothed into a clean success story. Every claim here sits
+at tier \DrTier{} and knowledge state K0; none has passed an independent (I5) human check.
+\end{quote}
+\twocolumn
+
+\paragraph{Positioning.} We are not competing with knowledge-authority and make no priority claim;
+we state what we propose, what we build on, and what would make us wrong.
+
+% ===========================================================================
+\section{Problem before observation}
+\label{sec:problem}
+
+``Observation'' is abstract; it is a verb, not a starting node. Founder's own line, verbatim
+(Blackbox Log \texttt{BBL-2026-09-04-083}, concept DOI \texttt{10.5281/zenodo.22302518}):
+
+\begin{quote}\small
+\includegraphics[width=\linewidth]{thai_imgs/bbl083.png}\\
+\itshape\upshape --- ``the word `observation' is abstract, it is a verb; if we started from the \emph{problem}
+instead, is there a process like this? We propose focusing on the problem first.''
+\end{quote}
+
+A problematic state exists in the world \emph{before} any knower acts on it --- before it is
+looked at, named, or measured. The spine this paper's claims are built on (adopted this pass into
+\texttt{design/FOUNDATION\_v0.5.md} \S2.1a, BBL-2026-09-04-084) therefore does not start with
+``Reality $\rightarrow$'' as its first node --- the lens never grants direct access to reality,
+only to what was read out ($R_A = O_A(W;\Pi_A) \neq W$) --- it starts one layer finer:
+
+\begin{quote}\small
+Problem state (unread) $\rightarrow$ first human readout (the Blackbox Note's raw line, verbatim,
+untranslated) $\rightarrow$ human-language question $\rightarrow$ [lens-in] $\rightarrow$
+hypothesis (lens-out, signed) $\rightarrow$ evidence $\rightarrow$ provisional knowledge (K0, ...)
+\end{quote}
+
+This paper's own problem state, before it was read out at all: a person who lives daily with a
+problem, has no university appointment, no certified lab, and no standing research team, and now
+has general-purpose AI assistance. The first human readout of that state, verbatim (Thai, source of
+truth), Blackbox Note line 1
+(\texttt{blackbox/BLACKBOX\_NOTE\_glosa-paper\_2026-09-04.md\#L1}):
+
+\begin{quote}\small
+...\includegraphics[width=0.85\linewidth]{thai_imgs/l1.png}...\\
+\itshape\upshape --- ``...how can a person with no university, no lab, and no research team produce
+rigorous knowledge from their own site of practice...''
+\end{quote}
+
+The contaminated concept this question already flags: ``rigour'' ordinarily presupposes an
+institutional mechanism (a lab, a department, a review committee) sitting behind a claim, rather
+than naming a property a single claim can carry on its own, field by field.
+
+% ===========================================================================
+\section{Standpoint and ownership}
+\label{sec:standpoint-and-ownership}
+\label{sec:standpoint}
+
+This paper is written from the standpoint of a social-enterprise practitioner and citizen (the
+founder, Yaoharee Lahtee), not a substitute expert in computer science, philosophy of science,
+library/information science, or research-integrity studies. \textbf{Disciplines not claimed:}
+medicine, religious/fiqh authority, law, engineering, anthropology, political science, and formal
+computer science beyond what is mechanically executed here. This is disclaimer
+\textbf{D-STANDPOINT} / \textbf{D-NONEXPERT} in \Cref{sec:limitations}.
+
+\subsection{Responsibility per arrow}
+Every arrow on the spine above is named by who performed it. \textbf{Data $\rightarrow$
+Inference} may be \texttt{human}, \texttt{ai}, or \texttt{joint}; the three project claim cards
+behind this paper (\Cref{sec:claim-matrix}) record it as \texttt{joint} --- AI retrieved
+literature and drafted candidate hypotheses, the founder framed the problem and question.
+\textbf{Inference $\rightarrow$ Claim is always human.} AI is never an author. This is not a new
+rule so much as this pass naming, per arrow, a distinction the repo already held at the
+whole-artifact level (\texttt{AGENTS.md} gate rule 5).
+
+\subsection{Ownership: problem, question, and the selection of the hypothesis stay human}
+Founder's line, verbatim, first stated (\texttt{BBL-2026-09-04-086}) and then self-corrected
+(\texttt{BBL-2026-09-04-088}, the correction shown here is the one adopted):
+
+\begin{quote}\small
+\includegraphics[width=\linewidth]{thai_imgs/ownership.png}\\
+\itshape\upshape --- ``if the problem is still ours, the question is still ours, and the \emph{selection} of
+the hypothesis is still ours, and it leads to solving our problem, then use AI, use a cat, use a
+bear, go ahead --- because that is the goal of knowledge: to solve a problem for someone.''
+\end{quote}
+
+Three acts on the spine are the human's: owning the \textbf{problem}, asking the
+\textbf{question}, and \textbf{selecting} the hypothesis. Every other node --- retrieval, drafting,
+analysis, checking, rendering --- may be performed by any tool. Concretely for this paper: AI
+(Claude, ``Fable'' seat) drafted candidate hypotheses H1, H2, and H3
+(\texttt{hypotheses.md}); the founder's own act of selection, recorded in
+\texttt{hypothesis\_selection.yaml} and confirmed by ruling \texttt{BBL-2026-09-04-095} (Thai
+verbatim in \texttt{entries.jsonl}; gloss: ``bring all three together''), chose all three --- H1 and H3 are carried as untested propositions
+with stated falsifiers, and H2 is advanced in the paper's own voice as its central conceptual
+claim (\Cref{sec:genre}, \texttt{genre\_decision.yaml}).
+
+% ===========================================================================
+\section{The lens and the five questions}
+\label{sec:lens}
+
+\subsection{Claim-tier legend}
+\label{sec:tiers}
+Every claim in this paper carries exactly one tier tag; tiers are never collapsed or silently
+upgraded (\Cref{tab:tiers}).
+
+\begin{table}[t]
+\centering
+\scriptsize
+\begin{tabularx}{\linewidth}{@{}l X@{}}
+\toprule
+\textbf{Tag} & \textbf{Meaning} \\
+\midrule
+\ThCoqc{} & Machine-checked, axiom-free formal result. \\
+\FiniteDiag{} & Measured/computed on a finite, retained, reproducible input; not a limit or population claim. \\
+\FitCal{} & A model calibrated against declared data; accuracy conditional on that fit. \\
+\DrTier{} & Declared bridge / human narrative synthesis; a design or interpretive judgment, not a proof or measurement. \\
+\DefTier{} & A stipulated definition used only where decision-bearing. \\
+\OpenTier{} & Not established; a real open question, not smoothed over. \\
+\bottomrule
+\end{tabularx}
+\caption{Claim-tier legend (readout\_genesis + readout\_universe ladder). Every propositional claim
+in this paper (H1, H2, H3, \Cref{sec:propositions}) is \DrTier{}; the demonstration
+(\Cref{sec:demonstration}) is \FiniteDiag{} where a command was actually executed.}
+\label{tab:tiers}
+\end{table}
+
+\subsection{The readout-not-truth lens}
+This paper's problem-to-hypothesis translation was performed under \emph{Readout Universe ---
+Yaoharee Lahtee} (lens; DOI \href{https://doi.org/10.5281/zenodo.21529456}{10.5281/zenodo.21529456},
+\href{https://doi.org/10.5281/zenodo.21665100}{10.5281/zenodo.21665100}; repositories
+\url{https://github.com/morrocwi/readout_universe},
+\url{https://github.com/morrocwi/readout_genesis}). Naming the lens credits its source and lets a
+reader replace it; it does not make the lens, or any hypothesis drafted under it, true
+(disclaimer \textbf{D-EXTERNAL-INPUT}). Everything read under this lens is a finite, retained
+\emph{readout} of a source, never the source itself: a benchmark number, a citation's exact
+passage, a claim card's own field, this paper's own prior draft --- each was produced by some
+process, at some resolution, under some method, and is read as that readout, not as truth handed
+down.
+
+\subsection{Existence--Attribution--Disclosure and the five questions}
+The Readout Condition is $E \wedge A \wedge D$: a claim satisfying Existence (some provenance path
+for every load-bearing distinction), Attribution (identification of every non-source node), and
+Disclosure (every AI-supplied distinction named, not silently absorbed into the claim) is what a
+claim card is built to record, field by field, against the founder's own five questions
+(\Cref{tab:five-q}).
+
+\begin{table}[t]
+\centering
+\scriptsize
+\begin{tabularx}{\linewidth}{@{}p{0.06\linewidth} X p{0.13\linewidth}@{}}
+\toprule
+\textbf{\#} & \textbf{Founder's question} & \textbf{Mechanically checkable?} \\
+\midrule
+Q1 & \raisebox{-0.2em}{\includegraphics[height=0.9em]{thai_imgs/q1.png}} --- what was actually seen & presence only \\
+Q2 & \raisebox{-0.2em}{\includegraphics[height=0.9em]{thai_imgs/q2.png}} --- what the data separates & presence only \\
+Q3 & AI \raisebox{-0.2em}{\includegraphics[height=0.9em]{thai_imgs/q3.png}} --- what AI filled in & presence only \\
+Q4 & \raisebox{-0.2em}{\includegraphics[height=0.9em]{thai_imgs/q4.png}} --- what is assumed & presence only \\
+Q5 & \raisebox{-0.2em}{\includegraphics[height=0.9em]{thai_imgs/q5a.png}}/\raisebox{-0.2em}{\includegraphics[height=0.9em]{thai_imgs/q5b.png}} --- what independent evidence/objection & \textbf{the one genuinely enforceable check} \\
+\bottomrule
+\end{tabularx}
+\caption{Founder's five questions $\Leftrightarrow$ E-A-D $\Leftrightarrow$ claim-card field group
+(\texttt{design/FOUNDATION\_v0.5.md} \S3.1). A card that answers Q1/Q2/Q4 honestly but misattributes
+Q3 --- crediting the source with a distinction AI actually supplied --- fails the Readout Condition
+even though every field looks filled; \texttt{silent\_lift\_check} is the mechanized test for
+exactly this.}
+\label{tab:five-q}
+\end{table}
+
+Only Q5 --- whether an independent check was ever run, and at what independence class --- is
+structurally enforceable by the kernel; Q1--Q4 are presence-checkable, never
+correctness-checkable, because \emph{mechanical validity $\neq$ semantic validity}. This is why the
+independence ladder (\Cref{sec:literature}, \Cref{sec:demonstration}) is the licensed route to
+closing what the other four questions cannot mechanically close on their own.
+
+\section{Genre and evidence standard}
+\label{sec:genre}
+This paper is genre-routed as \textbf{CONCEPTUAL} by a human, adopted-by-human override of the
+router's own mechanical output (\texttt{genre\_decision.yaml}). The router (run with
+\texttt{--search-log}) returned \texttt{systematic\_review} because a frozen \texttt{search\_log.yaml}
+exists under each of \texttt{h1}/\texttt{h2}/\texttt{h3}; the founder's ruling
+(\texttt{BBL-2026-09-04-097}, Thai verbatim in \texttt{entries.jsonl}; gloss: ``make this document an
+academic article, a concept paper'') does not adopt that output --- a documented search log
+supporting three candidate hypotheses is not the same fact as the genre of the claim the paper
+itself advances, and the router has no way to see that distinction (\texttt{genre\_decision.yaml}
+note). H2 (the conceptual, portable-property claim) is advanced in the paper's own voice; H1
+(design) and H3 (empirical) are carried as propositions with stated falsifiers, neither run as a
+study this pass. Evidence standard: every citation is a \texttt{status: VERIFIED} card
+(\Cref{sec:literature}); every propositional claim stays \DrTier{} until an independent test says
+otherwise.
+
+% ===========================================================================
+\section{Three propositions}
+\label{sec:propositions}
+Candidates were drafted by AI from the lens translation above; the founder selected among them
+(\Cref{sec:standpoint-and-ownership}). All three are carried as propositions, not results.
+
+\subsection*{H1 --- Design: the claim-card mechanism (\claimref{C1})}
+\textbf{Statement.} If every claim a standalone scholar produces is recorded as a claim card
+answering the five questions, tied to E-A-D, and passed through the independence ladder before any
+public release, then a person with no institutional affiliation can co-produce knowledge with AI
+whose rigour a reader can check for themselves, without an institutional credential serving as the
+certifying step.
+
+\textbf{Falsifier.} A claim card that passes every field the kernel can mechanically check is
+nonetheless found by a genuine independent reviewer (I5) to have a false answer at Q2 or Q3 ---
+showing the mechanical check does not track the epistemic property it claims to track.
+
+\textbf{What would count as evidence.} A corpus of claim cards run through the independence ladder
+to at least I3, with a subset reaching genuine I5, compared against a matched corpus produced
+without the discipline, scored on whether an independent reader can recover the
+evidence/AI-fill boundary the maker recorded.
+
+\subsection*{H2 --- Conceptual: rigour as a portable claim-level property (\claimref{C2})}
+\textbf{Statement.} Rigour is not a property institutional machinery confers on a claim from the
+outside; it is a property a single claim can carry in its own recorded structure --- institutions
+are \emph{one} historical mechanism that has produced this property, not the only possible one.
+
+\textbf{Falsifier.} A claim card that answers all five questions honestly and completely, checked
+at I3, is shown to still require an institutional credential --- not just an independent human
+reviewer --- to be treated as rigorous by its actual intended readers, for at least one class of
+reader/decision this project cares about.
+
+\textbf{What would count as evidence.} Reader studies on whether a target audience (journal
+editors, grant reviewers, a practitioner's own community) treats a well-formed claim card as
+sufficient without also asking who backs it.
+
+\subsection*{H3 --- Empirical: cross-vendor checking raises AI-fill detection (\claimref{C3}, untested)}
+\textbf{Statement.} When claim cards are checked by a different AI vendor from the one that
+produced them (I3) instead of the same vendor re-checking (I0/I1), the rate at which undisclosed
+AI-fill (a false Q3 field) or undisclosed assumptions (a false Q4 field) is caught rises measurably.
+
+\textbf{Falsifier.} A controlled comparison (claim cards seeded with a known number of undisclosed
+AI-fill/assumption instances, same-vendor vs.\ cross-vendor routes) shows no significant
+difference, or shows cross-vendor performs worse.
+
+\textbf{What would count as evidence.} A seeded-error benchmark with a pre-registered scoring
+rubric; tiered \FitCal{} at best until run, \DrTier{} until then. \textbf{This paper does not run
+that benchmark; H3 is stated, not tested.}
+
+All three propositions were drafted under the same lens (\Cref{sec:lens}); none has an evidence
+relation above independence class I3, and none of the underlying claim cards has yet passed
+founder sign-off (\texttt{independent\_check.status: NONE} on all three,
+\Cref{sec:claim-matrix}).
+
+% ===========================================================================
+\section{Conversation with the literature}
+\label{sec:literature}
+Each table below is a \emph{conversation with the problem}, not a chronology or priority ranking
+(\texttt{design/S14\_literature-review-system.md}): sources are placed by how they talk to the
+proposition, never by who came first. Every row resolves to a citation card with
+\texttt{status: VERIFIED} in the corresponding \texttt{litreview\_manifest.yaml}
+(\texttt{records/lit/rigour-without-infrastructure/h\{1,2,3\}/}), meaning both
+\texttt{metadata\_verified} (Crossref/OpenAlex/arXiv lookup) and \texttt{claim\_match\_verified}
+(a decorrelated cross-vendor AI route, \texttt{route:codex}, I3) hold. \textbf{Relation column}
+follows the repo's comparison rule (same/different/cited, never a priority claim): \emph{same} =
+the source's own finding is compatible with the proposition's direction; \emph{different} = the
+source's own finding counts against it; \emph{cited} = the source bears on the topic without a
+same/different verdict (orthogonal or undetermined in the underlying dialogue table); rows marked
+\emph{own lineage, not independent} are the founder's own prior published pieces, collided against
+world literature per instruction \texttt{BBL-2026-09-04-098} and never counted as independent
+support.
+
+\begin{table*}[t]
+\centering
+\scriptsize
+\begin{tabularx}{\linewidth}{@{}p{0.145\linewidth} p{0.19\linewidth} p{0.11\linewidth} X@{}}
+\toprule
+\textbf{Citation card} & \textbf{Source} & \textbf{Relation} & \textbf{Bearing} \\
+\midrule
+\cite{cite-cstp-boundary-work-001} & Mayes 2022, Citizen Science and Scientific Authority & different & Directly: even a perfectly-documented claim card may still not be treated as legitimate if the surrounding discourse continues to grant authority by credential. \\
+\cite{cite-disclosure-not-documentation-001} & Cwik 2026, Disclosure is not documentation & same & Separates disclosure-as-compliance from documentation-as-verifiable-record --- the same separation H1 makes at Q3. \\
+\cite{cite-llm-hallucination-survey-001} & LLM hallucination survey, arXiv:2510.06265 & cited & Shows AI cannot be trusted to flag its own errors --- exactly why H1 requires an external check rather than AI self-report. \\
+\cite{cite-ocsdnet-honf-001} & OCSDNET/HONF, Open Hardware and Citizen Science (Indonesia, Thailand, Nepal) & same & Grounds H1's premise that non-institutional knowledge production is a live regional practice, not a hypothetical. \\
+\cite{cite-own-blackbox-log-h1-006} & Blackbox Log (Lahtee, Zenodo) & own lineage, not independent & Documents the append-only raw-record practice H1 assumes is followed; no claim about rigour by itself. \\
+\cite{cite-own-readout-condition-h1-002} & The Readout Condition (Lahtee) & own lineage, not independent & Supplies the E-A-D norm H1's claim card operationalizes; does not itself specify the card's fields. \\
+\cite{cite-own-readout-genesis-h1-003} & Readout Genesis Standalone Synthesis (Lahtee) & own lineage, not independent & Supplies the independence-ladder vocabulary H1 tracks; does not itself define a claim-card schema. \\
+\cite{cite-own-standalone-scholar-h1-005} & The Standalone Scholar (Lahtee) & own lineage, not independent & Names the dual-track conversion (AI-assisted formation $\to$ independent human friction) H1's card is scoped inside, not a replacement for. \\
+\cite{cite-own-written-ai-h1-001} & Written by AI. Still True. (Lahtee) & own lineage, not independent & Names ``knower fetishism''; H1's card targets exactly the constitution-level property this paper argues authority derives from. \\
+\cite{cite-own-zero-readout-h1-004} & What a Zero Readout Certifies (Lahtee) & own lineage, not independent & Illustrates machine-checked discipline; H1's own mechanical checks (schema validation) are markedly weaker. \\
+\cite{cite-pgph-citizen-science-sea-001} & Kumar et al.\ 2025, Community perceptions of citizen science (South/SEA) & cited & Governance-inclusion framing, orthogonal to H1's rigour-checkability framing. \\
+\cite{cite-rsos-citizen-epistemology-001} & Jaeger et al.\ 2023, An epistemology for democratic citizen science & same & Locates robustness in diversity of standpoint/process --- could argue H1 over-individualizes rigour to one standalone scholar. \\
+\cite{cite-rsos-preprint-credibility-001} & Soderberg, Errington \& Nosek 2020, Credibility of preprints & same & Researchers rate content/process cues over prestige when prestige is absent --- supports the premise, not H1's specific design. \\
+\cite{cite-scholarly-kitchen-credentialism-001} & Scholarly Kitchen 2026, The Guild and the Gap & cited & A real rejection episode on prior-publication grounds; whether a claim card would change the outcome is untested. \\
+\cite{cite-tcij-freelance-th-001} & TCIJ (TH) 2020, freelance-academic labour piece & cited & Adjacent labour/credit question, thinner on H1's actual rigour-verification topic than its search match suggested. \\
+\bottomrule
+\end{tabularx}
+\caption{H1 (design proposition) against 15 verified citation cards, 5 of them own-lineage.
+Diversity audit (\texttt{h1/litreview\_manifest.yaml}): 1 Thai / 5 English external sources
+(own-lineage excluded), stance counts \emph{agrees}:4 \emph{orthogonal}:2 \emph{undetermined}:9 by
+the manifest's own collapsing convention (\Cref{sec:demonstration} notes a discrepancy between this
+convention and the citation cards' own explicit notes). \texttt{concentration\_flags: []};
+\texttt{zero\_disagree\_flag: false}.}
+\label{tab:h1-lit}
+\end{table*}
+
+\begin{table*}[t]
+\centering
+\scriptsize
+\begin{tabularx}{\linewidth}{@{}p{0.16\linewidth} p{0.19\linewidth} p{0.1\linewidth} X@{}}
+\toprule
+\textbf{Citation card} & \textbf{Source} & \textbf{Relation} & \textbf{Bearing} \\
+\midrule
+\cite{cite-rigour-without-infrastructure-001} & Wikipedia, Open-notebook science & cited & Treats openness as a property of record-keeping practice, close to but coarser than H2's own five-field structure. \\
+\cite{cite-rigour-without-infrastructure-002} & Rasmussen 2019, Confronting Research Misconduct in Citizen Science & cited & Calls for institution-like misconduct-detection machinery --- cuts against H2's claim that the property needs no such mechanism. \\
+\cite{cite-rigour-without-infrastructure-003} & Freitag, Meyer \& Whiteman 2016, credibility-building strategies & same & Credibility built bottom-up through concrete recorded practices, not top-down certification. \\
+\cite{cite-rigour-without-infrastructure-004} & Scholarly Kitchen 2026, The Guild and the Gap (+ comments) & different & Close to H2's own falsifier: a named commenter states affiliation/publication history earns \emph{more} scrutiny than any single record could substitute for. \\
+\cite{cite-rigour-without-infrastructure-005} & Dutta et al.\ 2021, Decolonizing Open Science & cited & Structural/platform-governance framing, adjacent to but different from H2's single-claim scope. \\
+\cite{cite-rigour-without-infrastructure-006} & Okafor et al.\ 2022, Institutionalizing Open Science in Africa & cited & Aims for \emph{more} institutional machinery as the path forward --- the opposite emphasis from H2, at a different level. \\
+\cite{cite-rigour-without-infrastructure-007} & Kumar et al.\ 2025, community perceptions of citizen science & cited & Access to institutional audiences, not record quality, is the bottleneck this source finds --- adjacent friction H2 does not resolve. \\
+\cite{cite-rigour-without-infrastructure-008} & Srirot \& Sohsomboon 2025 (TH), qualitative Trustworthiness framework & same & Record-level techniques (audit trail, triangulation) let a reader judge rigour without institutional standing --- the closest structural match to H2 found. \\
+\cite{cite-rigour-without-infrastructure-009} & THE STANDARD (TH) 2025, Thai Open Science policy piece & cited & Institution-led opening of an existing record --- the institution still decides what counts as legitimate, an access question not a rigour-provenance one. \\
+\cite{cite-own-blackbox-log-h2-006} & Blackbox Log (Lahtee) & own lineage, not independent & No claim about whether rigour is portable at claim level. \\
+\cite{cite-own-civilization-of-knowledge-h2-007} & The Civilization of Knowledge (Lahtee) & own lineage, not independent & Locates the stabilizing step historically in institutions --- would ask whether a claim card is a new non-institutional stabilizer or a mistaken substitute. \\
+\cite{cite-own-readout-condition-h2-002} & The Readout Condition (Lahtee) & own lineage, not independent & A claim satisfying E-A-D does not need an institution to vouch for it; does not itself argue institutions add nothing. \\
+\cite{cite-own-readout-genesis-h2-003} & Readout Genesis Standalone Synthesis (Lahtee) & own lineage, not independent & Institutions are one belief-scale among several, not a precondition for knowledge status. \\
+\cite{cite-own-standalone-scholar-h2-005} & The Standalone Scholar (Lahtee) & own lineage, not independent & Independent human friction is one specific historical route to stress-tested knowledge, not necessarily the only one --- would ask if H2 still needs some friction step. \\
+\cite{cite-own-written-ai-h2-001} & Written by AI. Still True. (Lahtee) & own lineage, not independent & Institutional authority is derivative, not a source, of epistemic value --- the same possession/constitution distinction H2 draws. \\
+\cite{cite-own-zero-readout-h2-004} & What a Zero Readout Certifies (Lahtee) & own lineage, not independent & Illustrates zero-institutional-apparatus rigour in a formal setting --- weak indirect support only. \\
+\bottomrule
+\end{tabularx}
+\caption{H2 (conceptual proposition, this paper's own advanced claim) against 16 verified citation
+cards, 6 own-lineage. Diversity audit (\texttt{h2/litreview\_manifest.yaml}): 3 Thai / 13 English,
+stance \emph{agrees}:6 \emph{disagrees}:2 \emph{orthogonal}:7 \emph{undetermined}:1.
+\texttt{concentration\_flags: []}; \texttt{zero\_disagree\_flag: false} --- this is the one
+proposition of the three whose manifest itself records a nonzero disagree count.}
+\label{tab:h2-lit}
+\end{table*}
+
+\begin{table*}[t]
+\centering
+\scriptsize
+\begin{tabularx}{\linewidth}{@{}p{0.155\linewidth} p{0.19\linewidth} p{0.1\linewidth} X@{}}
+\toprule
+\textbf{Citation card} & \textbf{Source} & \textbf{Relation} & \textbf{Bearing} \\
+\midrule
+\cite{cite-selfpreference-judge-001} & Wataoka, Takahashi \& Ri 2024/25, Self-Preference Bias in LLM-as-a-Judge & cited & Bias tracks perplexity/familiarity, not narrowly vendor identity --- the effective variable may not always track vendor boundaries. \\
+\cite{cite-crossmodel-codereview-002} & Xiang et al.\ 2026, Cross-Model LLM Code Review, arXiv:2607.21656 & different & The one source that actually runs H3's own comparison: the effect is asymmetric and direction-dependent (one direction helps a lot, the reverse hurts), and same-vendor re-review also improved one condition. \\
+\cite{cite-toohconsistent-003} & Tan et al.\ 2025, Too Consistent to Detect (EMNLP) & same & Same-model repeated sampling cannot catch ``self-consistent'' errors --- structurally the concern H3 raises about same-vendor re-check. \\
+\cite{cite-multiagent-debate-004} & Du et al.\ 2023, Multiagent Debate & cited & Multi-instance debate improves factuality without varying vendor identity --- the active ingredient could be plurality, not cross-vendor difference. \\
+\cite{cite-selfcorrect-reasoning-005} & Huang et al.\ 2023/24, LLMs Cannot Self-Correct Reasoning Yet & cited & Tests zero-external-signal correction, a weaker condition than a same-vendor re-check with a fresh adversarial prompt --- an imperfect analogy, flagged as such. \\
+\cite{cite-legalai-india-006} & John, Singh \& Panachakel 2026, Can Legal AI Know When It Is Wrong? & cited & Three vendors' error rates differ nearly 5x on identical inputs, consistent with H3's premise, but the paper's own lever for improved catching is human experience, not cross-vendor AI review. \\
+\cite{cite-bangladesh-readiness-007} & Sultana et al.\ 2026, Bangladesh AI Readiness & cited & Names a capacity defeater of H3's practical reach (infrastructure to run any independent review at all), not of H3's empirical claim. \\
+\cite{cite-iseas-sea-governance-008} & Fong 2026, AI Governance Policies in Southeast Asia & cited & Institutional-capacity constraint on deploying cross-vendor review as policy, orthogonal to H3's mechanism claim. \\
+\cite{cite-cofact-thai-detector-009} & Cofact Thailand 2025, AI-image-detection reliability & cited & Adjacent domain (detecting whether content is AI-made, not whether AI-authored claims are honest) --- genuinely different problem. \\
+\cite{cite-mindstudio-crossvendor-010} & MindStudio blog 2026, Cross-Vendor AI Agent Review & same & States H3's own mechanism in practitioner language, but with no measurement, sample, or method of its own --- flagged as concentration risk, not equivalent-weight evidence. \\
+\cite{cite-own-blackbox-log-h3-006} & Blackbox Log (Lahtee) & own lineage, not independent & No claim about detection rates. \\
+\cite{cite-own-knowledge-stabilized-translation-h3-007} & Knowledge as Stabilized Translation (Lahtee) & own lineage, not independent & Stability under variation is the marker of knowing well --- conceptually the same move H3 makes; does not specify vendor identity as the variation dimension. \\
+\cite{cite-own-readout-condition-h3-002} & The Readout Condition (Lahtee) & own lineage, not independent & Disclosure is structural, not optional; does not specify the auditor must be a different AI vendor. \\
+\cite{cite-own-readout-genesis-h3-003} & Readout Genesis Standalone Synthesis (Lahtee) & own lineage, not independent & Does not separate same-vendor from cross-vendor checking as a variable. \\
+\cite{cite-own-standalone-scholar-h3-005} & The Standalone Scholar (Lahtee) & own lineage, not independent & Independent validation in this paper's stronger sense requires human friction --- cross-vendor AI (I3) is a weaker approximation. \\
+\cite{cite-own-written-ai-h3-001} & Written by AI. Still True. (Lahtee) & own lineage, not independent & Reinforces that a checker's identity/route matters to what its check can license --- no detection-rate comparison. \\
+\cite{cite-own-zero-readout-h3-004} & What a Zero Readout Certifies (Lahtee) & own lineage, not independent & Machine-checked verification, where available, is a strictly stronger independence route than cross-vendor AI review. \\
+\bottomrule
+\end{tabularx}
+\caption{H3 (empirical proposition, explicitly untested) against 17 verified citation cards, 7
+own-lineage. Diversity audit (\texttt{h3/litreview\_manifest.yaml}): 1 Thai / 6 English,
+stance \emph{agrees}:3 \emph{orthogonal}:4 \emph{undetermined}:10 by the manifest's own convention.
+\texttt{concentration\_flags: []}; \texttt{zero\_disagree\_flag: false}.}
+\label{tab:h3-lit}
+\end{table*}
+
+Across all three tables, 20 of 48 rows (42\%) are the founder's own prior published pieces,
+collided against world literature per instruction \texttt{BBL-2026-09-04-098} rather than left
+silent; every own-lineage row is marked \emph{own lineage, not independent} and none is counted
+toward any of the three propositions' evidential support.
+
+% ===========================================================================
+\section{The artifact applied to itself}
+\label{sec:demonstration}
+This section reports what the 2026-09-04 self-application run --- glosa run on glosa's own paper,
+per instruction \texttt{BBL-2026-09-04-091} --- actually recorded, as a readout of that run, not as
+a claim that the method passed cleanly.
+
+\subsection*{Gate results actually executed}
+Running \texttt{./cli/glosa claim validate} directly against the three project claim cards
+(\texttt{GLOSA-CC-20260904-0201/0202/0203}) this session returns \texttt{verdict:
+PASS\_WITH\_LIMITS} for all three, with zero schema errors, but with one identical warning on every
+card: \emph{``D-LENS-UNCITED not checked -- validate\_claim\_card was not given citation\_cards
+(lens\_translation.lens\_ref is set); pass citation\_cards=[\ldots] to close this gap.''} The
+validator is honest about its own coverage limit here: a schema-level PASS is not, by itself, a
+claim that the lens-citation gate closed --- it closed only once this session additionally
+cross-checked the lens DOIs against the citation-card apparatus described in \Cref{sec:lens}.
+
+\subsection*{Composite quotes caught by the cross-vendor route}
+The single strongest gate finding this run: an I3 (decorrelated cross-vendor) check on an earlier
+citation pass caught \emph{composite quotes} --- citations assembled from memory rather than a
+locator taken from the opened source. The founder's ruling in direct response, verbatim
+(\texttt{BBL-2026-09-04-100}):
+\begin{quote}\small
+\includegraphics[width=\linewidth]{thai_imgs/bbl100.png}
+\end{quote}
+\noindent --- ``should we make it a hard rule: if a source is used it must carry a page and line locator plus
+a full link, never written from memory --- that reduces the problem at the source, before the
+check.'' Adopted immediately (\texttt{BBL-2026-09-04-101}, Thai verbatim in \texttt{entries.jsonl}; gloss: ``update it into the
+system''), this became the rule under which every one of the 48 citation cards behind
+\Cref{sec:literature} was subsequently built: each carries \texttt{page\_or\_locator} and
+\texttt{fetched\_from\_url}, and each \texttt{exact\_passage} is a source-first quotation, not a
+recalled paraphrase. This is a real, gate-caught failure that changed the method's own rule
+(rule 17, \texttt{design/FOUNDATION\_v0.5.md} \S7.8), reported here because it happened, not
+because it flatters the method.
+
+\subsection*{A manifest-detected search-mode gap}
+The genre router's own mechanical output (\Cref{sec:genre}) returned \texttt{systematic\_review}
+because \texttt{context.has\_search\_log} was true --- but every one of \texttt{h1}/\texttt{h2}/\texttt{h3}'s
+own \texttt{litreview\_manifest.yaml} records \texttt{search\_mode} as \texttt{TARGETED\_SEARCH} /
+\texttt{SCOPING\_SEARCH}, never \texttt{SYSTEMATIC\_REVIEW} --- the manifest, read directly, is what
+let the founder catch that the router's mechanical genre suggestion did not match the actual
+evidentiary standard the literature runs had met, and overrule it (\Cref{sec:genre}). This is the
+manifest doing exactly the job \texttt{design/FOUNDATION\_v0.5.md} \S7.8's \textbf{FC-S8-1} hard
+block exists for: calling anything less than a full SR protocol a ``systematic review'' is blocked,
+here by the human reading the manifest against the router's own claim.
+
+\subsection*{A stance-counting discrepancy this session found and did not paper over}
+Building \Cref{tab:h1-lit,tab:h3-lit} directly from each citation card's own \texttt{notes} field
+(``Dialogue-table stance: NO (disagrees with / challenges H1)'' on \texttt{cite-cstp-boundary-work-001})
+surfaced a discrepancy with the corresponding manifest's own \texttt{diversity\_audit.counts.by\_stance}:
+the manifests for H1 and H3 both record \texttt{disagrees: 0}, while this session confirmed
+directly (grep against the raw dialogue-table rows, \FiniteDiag{}) that at least one row per
+hypothesis (Mayes 2022 against H1; Xiang et al.\ 2026 against H3) is an explicit, single-value
+challenge row that a card's own notes field independently labels a disagreement. The manifest's
+aggregate counting convention appears to collapse a dual-value ``NO/NO'' dialogue-table cell into
+\texttt{undetermined} rather than \texttt{disagrees}, undercounting real challenges in its own
+summary statistic by at least one row per hypothesis where this occurs. This paper's own tables
+(\Cref{tab:h1-lit,tab:h3-lit}) use the citation card's explicit \texttt{notes} field, not the
+manifest's aggregate count, and this discrepancy is disclosed rather than silently reconciled ---
+a small instance of exactly the ``mechanical check does not track the epistemic property it claims
+to track'' failure mode H1's own falsifier names, found here in the tool that mechanically
+summarizes H1's own supporting literature.
+
+\subsection*{Path leaks caught by CI, not by this run}
+The repository's public-facing leak gate (\texttt{scripts/check\_leak.sh}, wired into
+\texttt{.github/workflows/ci.yml}'s \texttt{leak-scan} job) is a repo-level, not a paper-level,
+control: it did not need to run specifically against this paper's files this session (none of this
+paper's content matched a denylisted pattern), but it is the mechanical backstop this paper's own
+public-facing disclosures rely on, and its presence in CI --- rather than only as a manual
+pre-publish step --- is itself part of what this paper's demonstration reports: a leak gate that
+runs on every push, not only when someone remembers to ask for it.
+
+% ===========================================================================
+\section{Limitations and disclaimers}
+\label{sec:limitations}
+\label{sec:disclaimers}
+\input{disclaimers.tex}
+
+\subsection{Knowledge state}
+\label{sec:kstate}
+This paper's overall knowledge state is \textbf{K0} (internal working note): every load-bearing
+claim in it, including \Cref{sec:demonstration}'s findings, shares this K0 state. It is not K1
+(public-provisional with a named independence class per claim and no class-5 human check yet)
+because the three underlying claim cards' own \texttt{status} field is still \texttt{Draft} and
+\texttt{independent\_check.status: NONE} --- the founder has ruled on genre and selection at the
+project level but has not yet signed off on any specific card instance
+(\Cref{sec:claim-matrix}).
+
+\section{AI-assistance disclosure}
+\label{sec:ai-disclosure}
+This paper is a human--AI co-production, not AI-only automation and not human-only authorship.
+Generative AI (Claude, Anthropic, ``Fable'' orchestration seat) assisted with literature retrieval
+and card drafting, the three claim cards' field content, the conversation-with-the-literature
+tables, and this \LaTeX{} build. \textbf{AI output is not treated as evidence.} Every claim above
+is accepted only when it matches a retained source record (a citation card's
+\texttt{exact\_passage}, the Blackbox Log's own entries, a mechanically executed command's own
+output) or a machine-checkable result reported in \Cref{sec:demonstration}. The human holds the
+standpoint, the falsifier judgment, verification of load-bearing citations at the founder's own
+discretion, and the final public commitment (\textbf{AIContribution $\neq$
+EpistemicResponsibility}).
+
+% ===========================================================================
+\section{What would change our mind}
+\label{sec:change-mind}
+Per hypothesis, stated plainly rather than left implicit:
+
+\begin{itemize}
+\item \textbf{H1} would be abandoned if a genuine I5 reviewer, working from a schema-passing claim
+card, found a false answer at Q2 or Q3 --- showing the mechanical check gives false reassurance
+rather than tracking the property it names. It would be strengthened, not proven, by a corpus
+comparison at I3+ (with a subset at I5) against a matched non-card corpus.
+\item \textbf{H2} would be abandoned if a reader study found that credentialed audiences (editors,
+grant reviewers, a practitioner's own community) still required an institutional signal even after
+being shown a complete, well-formed claim card --- i.e.\ the credential doing load-bearing work the
+card's fields could not substitute for. The Scholarly Kitchen credentialism case
+(\texttt{cite-rigour-without-infrastructure-004}) is already the closest real instance of exactly
+this challenge and is not explained away.
+\item \textbf{H3} is untested; the one source that actually ran its comparison
+(\texttt{cite-crossmodel-codereview-002}) found a direction-dependent, asymmetric effect rather than
+a uniform cross-vendor-beats-same-vendor pattern. A seeded-error benchmark that reproduces that
+asymmetry at the claim-card Q3/Q4 grain would be evidence against H3 as a general, direction-agnostic
+claim; a benchmark that finds a uniform, direction-independent rise would be evidence for it.
+\end{itemize}
+
+\section{Conclusion}
+\label{sec:conclusion}
+This paper states three falsifiable propositions about whether a claim-card discipline can
+substitute for institutional infrastructure in making a standalone scholar's claim reader-checkable,
+places each against verified literature rather than memory or silence, and then runs the same
+discipline on its own construction --- finding, honestly, a validator warning, a caught set of
+composite quotes that changed the method's own citation rule mid-project, a router/manifest
+mismatch the founder had to catch by hand, and a small stance-counting discrepancy in the
+project's own summary statistics. None of this is smoothed into a clean success story: every claim
+here stays \DrTier{}, every underlying card stays K0 and unsigned, and H3 stays explicitly
+untested. What is offered is not a demonstrated result but a specified mechanism, an honest account
+of what happened when it was pointed at itself, and a named falsifier for each of the three ways it
+could be shown wrong.
+
+\appendix
+
+% ===========================================================================
+\section{Claim matrix}
+\label{sec:claim-matrix}
+Per Chair Ruling v1 \S B2, this is a print-space compression of the three full claim cards
+(\texttt{projects/GLS-2026-001\_rigour-without-infrastructure/claims/GLOSA-CC-20260904-0201/0202/0203.yaml});
+field-presence here is mechanically checkable, correctness is what the independent check (Q5) exists
+for.
+
+\begin{table*}[t]
+\centering
+\scriptsize
+\begin{tabularx}{\linewidth}{@{}p{0.035\linewidth} X p{0.14\linewidth} p{0.05\linewidth} p{0.08\linewidth} p{0.07\linewidth}@{}}
+\toprule
+\textbf{ID} & \textbf{Informal statement} & \textbf{Evidence / support} & \textbf{Tier} & \textbf{Produced by} & \textbf{Responsible} \\
+\midrule
+C1 & H1: claim-card + E-A-D + independence ladder lets a standalone scholar's claim be reader-checkable without institutional credential. & 15 verified citation cards (\Cref{tab:h1-lit}); \texttt{GLOSA-CC-20260904-0201} & \DrTier{} & joint (data$\to$inference); human (inference$\to$claim) & human \\
+C2 & H2: rigour is a portable claim-level property, not conferred solely by institutional machinery. & 16 verified citation cards (\Cref{tab:h2-lit}); \texttt{GLOSA-CC-20260904-0202} & \DrTier{} & joint (data$\to$inference); human (inference$\to$claim) & human \\
+C3 & H3: cross-vendor (I3) checking measurably outperforms same-vendor (I0/I1) checking at catching undisclosed AI-fill. \textbf{Untested.} & 17 verified citation cards (\Cref{tab:h3-lit}), all analogical, none a direct test of Q3/Q4 detection; \texttt{GLOSA-CC-20260904-0203} & \DrTier{} & joint (data$\to$inference); human (inference$\to$claim) & human \\
+\bottomrule
+\end{tabularx}
+\caption{Claim Matrix. All three cards: \texttt{k\_state: K0}, \texttt{status: Draft},
+\texttt{independent\_check.status: NONE}, \texttt{independence\_class: I3} (the citation-verification
+route, not the card's own sign-off).}
+\label{tab:claim-matrix}
+\end{table*}
+
+\subsection{Five-questions detail}
+\begin{table*}[t]
+\centering
+\scriptsize
+\begin{tabularx}{\linewidth}{@{}p{0.035\linewidth} X X X p{0.1\linewidth}@{}}
+\toprule
+\textbf{ID} & \textbf{seen} & \textbf{ai\_filled} & \textbf{assumed} & \textbf{tested (indep.)} \\
+\midrule
+C1 & Blackbox Note L1; founder's abstract framing & candidate hypothesis text, evidence retrieval, card drafting (all disclosed, \texttt{disclaimers\_emitted: D-AIFILL}) & no source tests the full combined H1 mechanism as one system & I3 (citation checks); card itself unsigned \\
+C2 & same L1; H2's own narrower conceptual framing & same AI-fill fields as C1 & the two SUPPORTS sources are same-lineage; cannot alone move H2 past \DrTier{} & I3; card itself unsigned \\
+C3 & same L1; H3's cross-vendor detection-rate framing & same AI-fill fields as C1 & no seeded benchmark has been run; the closest analogous study found a direction-dependent effect & I3 (analogical citations only); card itself unsigned \\
+\bottomrule
+\end{tabularx}
+\caption{Five-questions detail keyed to \Cref{tab:claim-matrix}. Full cards:
+\texttt{projects/GLS-2026-001\_rigour-without-infrastructure/claims/GLOSA-CC-20260904-0201.yaml}
+(and \texttt{-0202}, \texttt{-0203}).}
+\label{tab:five-questions}
+\end{table*}
+
+% ===========================================================================
+\section{Blackbox Note: how this work was made}
+\label{sec:blackbox}
+\emph{(Thai project term: ``Bantuek Klong Dam''.)} Curated verbatim lines --- typos kept, never
+polished or translated in place --- followed by the cooking log. Full record archived separately
+(\texttt{projects/GLS-2026-001\_rigour-without-infrastructure/blackbox\_note.yaml}, note id
+\texttt{BB-2026-09-04-01}; public curated source
+\texttt{blackbox/BLACKBOX\_NOTE\_glosa-paper\_2026-09-04.md}; public log entries cited by id below,
+\texttt{blackbox/log/entries.jsonl}, concept DOI \texttt{10.5281/zenodo.22302518}).
+
+\begin{table*}[t]
+\centering
+\scriptsize
+\begin{tabularx}{\linewidth}{@{}p{0.1\linewidth} p{0.07\linewidth} X p{0.15\linewidth} p{0.13\linewidth}@{}}
+\toprule
+\textbf{ID} & \textbf{Kind} & \textbf{Thai verbatim} & \textbf{Distinction introduced} & \textbf{Became} \\
+\midrule
+BBL-083 & proposal & see \Cref{sec:problem} image above & Separates ``observation'' (abstract verb) from ``problem state'' (concrete pre-existing thing) & FOUNDATION \S2.1a (\Cref{sec:problem}) \\
+BBL-086/088 & finding / correction & see \Cref{sec:standpoint-and-ownership} image above & Which spine nodes must stay human: problem, question, and the \emph{selection} of the hypothesis (088 corrects 086) & FOUNDATION \S2.1c \\
+BBL-089 & ruling & \texttt{entries.jsonl} (not reproduced here; column-width) & Ratifies the finer-grained spine diagram (AI-drafted wording, human-ratified agreement) & FOUNDATION \S2.1a diagram \\
+BBL-091 & instruction & \texttt{entries.jsonl} (not reproduced here) & Install and use the skill to build this article in full & task B1/B2 launch \\
+BBL-095 & ruling & \texttt{entries.jsonl} (not reproduced here) & Selects all three hypotheses (H1, H2, H3) together & \texttt{hypothesis\_selection.yaml} \\
+BBL-097 & ruling & \texttt{entries.jsonl} (not reproduced here) & Sets genre to CONCEPTUAL, overriding the router's \texttt{systematic\_review} output & \texttt{genre\_decision.yaml} (\Cref{sec:genre}) \\
+BBL-098 & instruction & \texttt{entries.jsonl} (not reproduced here) & Requires colliding own prior papers against world literature, not silence & own-lineage rows, \Cref{sec:literature} \\
+BBL-099 & ruling & \texttt{entries.jsonl} (not reproduced here) & English only, no Thai edition; arXiv two-column theme, polished & this document's language and theme \\
+BBL-100 & ruling & see \Cref{sec:demonstration} image above & Mandates locator+link, source-first citation, after I3 caught composite quotes & rule 17, \S7.8; \Cref{sec:demonstration} \\
+BBL-101 & instruction & \texttt{entries.jsonl} (not reproduced here) & Adopt the citation rule into the system immediately & rule 17 adoption \\
+\bottomrule
+\end{tabularx}
+\caption{Blackbox Note --- curated verbatim lines relevant to this paper's own construction (full
+Thai retained; English gloss given inline in the surrounding text per section, not translated here
+in place).}
+\label{tab:blackbox-lines}
+\end{table*}
+
+\begin{table*}[t]
+\centering
+\scriptsize
+\begin{tabularx}{\linewidth}{@{}p{0.1\linewidth} p{0.09\linewidth} p{0.12\linewidth} X X@{}}
+\toprule
+\textbf{Step} & \textbf{By} & \textbf{Input lines} & \textbf{Output} & \textbf{What changed} \\
+\midrule
+lens\_in & ai-anthropic/claude-fable & L1 & \texttt{lens\_translation.md} & Drafted \texttt{question\_readout}, \texttt{local\_contrast\_space\_X}, \texttt{access\_relation\_R}, \texttt{claim\_function\_Phi\_z0} from L1 under the Readout Universe lens; not yet independently reviewed. \\
+lens\_out & ai-anthropic/claude-fable & L1--L13 & \texttt{hypotheses.md} & Drafted H1/H2/H3 as candidate world-language hypotheses; selection reserved to and performed by the founder (BBL-095). \\
+lit\_review & ai-anthropic/claude-fable & H1/H2/H3 & 48 citation cards, 3 \texttt{litreview\_manifest.yaml} & Ran targeted/scoping searches per hypothesis (not systematic), froze manifests, computed diversity/accuracy audits. \\
+claim\_card & ai-anthropic/claude-fable & hypotheses + literature & \texttt{GLOSA-CC-20260904-0201/0202/0203} & Filled full-shape cards; validated \texttt{PASS\_WITH\_LIMITS}; not yet founder-signed. \\
+paper\_build & ai-anthropic/claude-fable & all of the above & this document & Drafted the concept paper's prose, tables, and \LaTeX{} build; disclosed throughout, never authored. \\
+\bottomrule
+\end{tabularx}
+\caption{Cooking log (Thai project term: ``karn pung'') --- append-only.}
+\label{tab:cooking-log}
+\end{table*}
+
+\section{Human Mastery Gate}
+\label{sec:mastery-gate}
+Before submission the author confirms they can defend, without AI assistance: (1) the problem
+(\Cref{sec:problem}) (2) the major literature families (\Cref{sec:literature}) (3) the closest
+constructs (own-lineage rows, \Cref{sec:literature}) (4) the precise inadequacy (the contaminated
+concept named in \Cref{sec:problem}) (5) the proposed mechanism (H1, \Cref{sec:propositions}) (6)
+the boundary conditions ($E \wedge A \wedge D$, \Cref{sec:lens}) (7) the strongest counterargument
+(the Scholarly Kitchen credentialism case, \Cref{tab:h2-lit}) (8) the strongest counterexample (the
+direction-dependent cross-model result against H3, \Cref{tab:h3-lit}) (9) the falsifying record for
+each proposition (\Cref{sec:propositions}) (10) the discriminating empirical test (H3's
+not-yet-run seeded-error benchmark). \textbf{Gate status: PASS WITH NAMED GAPS} --- the founder has
+not yet performed the class-5 (I5) sign-off on any of the three underlying claim cards
+(\Cref{sec:claim-matrix}); this gap is named, not silently dropped.
+
+\section{Provenance and lineage}
+\label{sec:provenance}
+Status vocabulary: \textsc{PRESERVE\_EXACT}, \textsc{PRESERVE\_FUNCTION}, \textsc{EXPAND},
+\textsc{SUPERSEDE}. This paper \textsc{PRESERVE\_FUNCTION}s the claim-card schema and independence
+ladder from \texttt{design/FOUNDATION\_v0.5.md} and \textsc{EXPAND}s it with a three-proposition
+literature conversation and a self-application demonstration specific to this project
+(GLS-2026-001). Direct ancestor: the Standalone Scholar dual-track architecture
+\citep{cite-own-standalone-scholar-h1-005}. Core epistemic engine this paper's disclosure apparatus
+is built on: the Readout Condition \citep{cite-own-readout-condition-h1-002}.
+
+\balance
+\bibliographystyle{plainnat}
+\bibliography{refs}
+
+\end{document}

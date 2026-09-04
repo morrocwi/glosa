@@ -1,0 +1,63 @@
+$schema: genre_decision.yaml
+# GLS-2026-001 (rigour-without-infrastructure) -- genre routing decision for the problem card /
+# hypotheses context, per FOUNDATION_v0.5.md §6 (genre router) and task B1. This file records BOTH
+# the router's own mechanical output and the founder's override, per the repo rule that the router
+# is advisory and the founder holds final genre authority (AGENTS.md gate rule 6, human holds
+# standpoint/falsifier judgment/ethics/public commitment).
+
+problem_ref: GLOSA-PC-20260904-0001
+project: GLS-2026-001
+routed_at: "2026-09-04"
+
+router_output:
+  command_run: "./cli/glosa genre route projects/GLS-2026-001_rigour-without-infrastructure/GLOSA-PC-20260904-0001.yaml --search-log"
+  raw_output:
+    action: genre_route
+    card: projects/GLS-2026-001_rigour-without-infrastructure/GLOSA-PC-20260904-0001.yaml
+    genre: systematic_review
+    venue_track: null
+    companion_of: null
+    reasons:
+      - "step1: no -> continue"
+      - "step2: context.has_search_log is True (a documented search_log exists for this claim) -> systematic_review"
+  note: >-
+    Router run with --search-log because this project's three hypotheses (H1/H2/H3) each already
+    have a frozen search_log.yaml under records/lit/rigour-without-infrastructure/h<N>/ (S3b, LRS,
+    §7.9) -- that is the true, checkable state of context.has_search_log for this problem card at
+    routing time. The router's step-2 rule (a documented search log present -> systematic_review)
+    fired mechanically on that fact alone; the router has no way to see that the search logs exist
+    to *support* three distinct candidate hypotheses (H1 design, H2 conceptual, H3 empirical) rather
+    than to *constitute* a systematic-review-genre paper in their own right -- that distinction is
+    exactly the kind of judgment FOUNDATION_v0.5.md §7.9's LRS design reserves to the human
+    (hypothesis_selection, genre_fit column) and never delegates to the mechanical router alone.
+
+chosen: CONCEPTUAL
+decided_by: founder
+ref: BBL-2026-09-04-097
+note: >-
+  H1 (design claim, mechanism specification) and H3 (empirical claim, cross-vendor detection-rate
+  comparison) are carried as PROPOSITIONS with falsifiers, not as tested results -- neither H1's
+  mechanism nor H3's seeded-error benchmark has actually been run as a study; only H2's own
+  conceptual-portability claim is being advanced in the paper's own voice this pass. The router's
+  systematic_review output is not adopted: it reflects the presence of search_log.yaml files (S3b
+  literature-review housekeeping), not the genre of the claim the paper itself is making. Recorded
+  here as an adopted-by-human override of the router's mechanical output, per FOUNDATION_v0.5.md
+  §6 (the router proposes, the founder decides) and glosa gate rule 6 (AGENTS.md) -- the router is
+  never itself the legitimacy source for a genre choice.
+
+disposition_of_hypotheses:
+  H1:
+    claim_type: DESIGN
+    treatment: "carried as a PROPOSITION with a stated falsifier; mechanism not run as a study this pass"
+  H2:
+    claim_type: CONCEPTUAL
+    treatment: "the paper's own conceptual claim this pass -- genre: conceptual applies most directly here"
+  H3:
+    claim_type: EMPIRICAL
+    treatment: "carried as a PROPOSITION with a stated falsifier (seeded-error benchmark); not yet run"
+
+related_files:
+  - projects/GLS-2026-001_rigour-without-infrastructure/hypotheses.md
+  - projects/GLS-2026-001_rigour-without-infrastructure/hypothesis_selection.yaml
+  - projects/GLS-2026-001_rigour-without-infrastructure/lens_translation.md
+  - projects/GLS-2026-001_rigour-without-infrastructure/GLOSA-PC-20260904-0001.yaml

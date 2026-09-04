@@ -1,0 +1,437 @@
+$schema: claim_card.schema.json
+schema_version: 0.4.0
+claim_id: GLOSA-CC-20260904-0201
+shape: full
+statement:
+  language: en
+  text: >-
+    If every claim a standalone scholar (no university, no lab, no research team) produces is
+    recorded as a claim card that answers the founder's five questions (what was actually seen /
+    what the data separates / what AI filled in / what is assumed / what independent test, if any,
+    it has survived), tied to the Readout Condition's Existence-Attribution-Disclosure conditions,
+    and passed through the independence ladder before any public release -- then a person with no
+    institutional affiliation can co-produce knowledge with AI whose rigour a reader can check for
+    themselves, without an institutional credential serving as the thing that certifies it.
+  is_verbatim_quote: false
+  translation:
+    text: >-
+      ถ้าทุกข้ออ้างที่ผู้ที่ไม่มีมหาวิทยาลัย ไม่มีแล็บ และไม่มีทีมวิจัยผลิตขึ้น ถูกบันทึกเป็นการ์ดข้ออ้างที่ตอบห้าคำถามของผู้ก่อตั้ง
+      (เห็นอะไรจริง / ข้อมูลแยกอะไรได้ / AI เติมอะไร / สมมติอะไรไว้ / เคยผ่านการตรวจอิสระอะไรมาบ้าง) ผูกกับเงื่อนไข
+      Existence-Attribution-Disclosure ของ Readout Condition และผ่านประตูบันไดความเป็นอิสระ (independence
+      ladder) ก่อนเผยแพร่สู่สาธารณะ แล้ว คนที่ไม่มีสังกัดสถาบันก็สามารถผลิตความรู้ร่วมกับ AI ที่ความเข้มงวดของมันตรวจสอบได้โดยผู้อ่าน
+      โดยไม่ต้องพึ่งใบรับรองสถาบันเป็นบันไดผ่าน
+    language: th
+    translation_status: reviewed
+standpoint:
+  declared_basis: >-
+    Written from the standpoint of a social-enterprise practitioner and citizen (founder, Yaoharee
+    Lahtee), not as a substitute expert in computer science, philosophy of science, library and
+    information science, or research-integrity studies. AI assistance (Claude, seated as "Fable"
+    this session) drafted the candidate hypothesis, this claim card's field structure, and the
+    supporting literature-review runs; every AI-drafted contribution is disclosed in
+    `five_questions.ai_filled` and never counted as authorship (AGENTS.md gate rule 5).
+  disciplines_not_claimed:
+    - computer science
+    - philosophy of science
+    - library and information science
+    - research-integrity studies
+    - law
+    - medicine
+  method_basis: >-
+    glosa methodology itself (claim cards answering the founder's five questions, tied to the
+    Readout Condition's Existence-Attribution-Disclosure, gated through the independence ladder
+    before public release) -- this card is produced by running glosa on glosa's own paper (dogfood,
+    founder instruction BBL-2026-09-04-091).
+claim_type: NORMATIVE
+claim_type_mapping_note: >-
+  hypotheses.md/hypothesis_selection.yaml label H1 "DESIGN" (a design-science mechanism
+  specification); `claim_card.schema.json`'s `claim_type` enum has no `DESIGN` value
+  (EMPIRICAL|FORMAL|INTERPRETIVE|NORMATIVE|CONVENTIONAL_LEGAL|DECISION|SOCIAL|HUMAN_PARTICIPANT).
+  NORMATIVE is used as the schema's closest fit: H1 specifies a mechanism (claim card + E-A-D +
+  independence ladder) that, if adopted, is claimed to produce a stated outcome -- a prescriptive
+  "if this mechanism is adopted, this property follows" claim, not a report of a measurement
+  already taken (which would be EMPIRICAL) or a claim about the meaning of an existing concept
+  (which would be INTERPRETIVE, the mapping used for the sibling H2 card,
+  GLOSA-CC-20260904-0202). This mapping is a human judgment call, documented rather than silent,
+  per the same discipline `formal_applicability`'s own plain-language table (§3.2b) applies to a
+  comparable ambiguous-enum problem.
+genre: conceptual
+venue_track: none
+companion_of: null
+produced_by: joint
+responsible: human
+origin_blackbox_ref: "blackbox/BLACKBOX_NOTE_glosa-paper_2026-09-04.md#L1"
+litreview_manifest_ref: records/lit/rigour-without-infrastructure/h1/litreview_manifest.yaml
+hypothesis_selection_ref: hsel-rigour-without-infrastructure-001
+lens_translation:
+  lens_ref: "10.5281/zenodo.21529456"
+  question_human:
+    text_verbatim: >-
+      ...คนที่ไม่มีมหาวิทยาลัย ไม่มีแล็บ และไม่มีทีมวิจัย จะผลิตความรู้จากพื้นที่ของตนเองอย่างเข้มงวดได้อย่างไร...
+    language: th
+    blackbox_line_ref: "blackbox/BLACKBOX_NOTE_glosa-paper_2026-09-04.md#L1"
+  question_readout: >-
+    Under the access relation this person actually has (no institutional lab/team, but access to
+    their own practice, general-purpose AI assistance, public literature, and glosa itself), can a
+    claim they produce be made to carry the same checkable distinctions (evidence-seen /
+    data-separated / AI-filled / assumed / independently-tested) that an institutionally-backed
+    claim carries -- without an institutional credential standing in as the thing that certifies
+    those distinctions?
+  local_contrast_space_X:
+    - "X1 -- claim carries no field distinguishing evidence from interpretation from AI-fill (bare narrative assertion)"
+    - "X2 -- claim looks well-formed and academic (AI-smoothed prose, citations present) but the evidence/interpretation/AI-fill boundary is still not recoverable by a reader"
+    - "X3 -- claim is recorded as a structured card that answers, per item, what was seen / what data separates / what AI filled / what is assumed / what independent test (if any) it has survived"
+    - "X4 -- as X3, and the card has additionally passed through the independence ladder (I0..I5) before any public release claim is made about it"
+  restriction_provenance: >-
+    Every distinction this project can draw about "rigour without infrastructure" is itself drawn
+    from inside that same restricted access relation -- glosa's own author-project is a
+    standalone-scholar project run under exactly the condition it studies (lens_translation.md,
+    this project).
+  access_relation_R: >-
+    Has access to: own practice/local context and its raw observations; general-purpose AI
+    assistance (drafting, checking mechanically, routing, logging -- never authoring or
+    certifying); publicly available literature and tools; the glosa methodology itself once
+    adopted. Does NOT have access to: a university appointment or department; a certified lab; a
+    standing research team; institutional peer-review machinery; an institution's own name as a
+    certifying signal on the claim.
+  claim_function_Phi_z0: >-
+    The readout functional this project evaluates H1 against, at reference point z0 = "a
+    standalone scholar's claim, produced with AI assistance, before any public release": does a
+    card produced under X3/X4 (claim-card discipline + independence ladder) let an independent
+    reader (I3+, ultimately I5) recover the same evidence/interpretation/AI-fill distinctions the
+    maker recorded -- i.e. does the mechanical field-by-field check actually track the epistemic
+    property it claims to track. Phi_z0 is a checkability functional, not a truth-functional --
+    passing it certifies checkability of the distinctions recorded, not that the underlying claim
+    is true.
+  formal_applicability: not_applicable_narrative
+hypothesis_world:
+  text: >-
+    If every claim a standalone scholar (no university, no lab, no research team) produces is
+    recorded as a claim card that answers the founder's five questions, tied to the Readout
+    Condition's Existence-Attribution-Disclosure conditions, and passed through the independence
+    ladder before any public release -- then a person with no institutional affiliation can
+    co-produce knowledge with AI whose rigour a reader can check for themselves, without an
+    institutional credential serving as the thing that certifies it.
+  language: en
+  falsifier_ref: five_questions.tested.falsifier
+  signature: >-
+    Hypothesis derived with Readout Universe -- Yaoharee Lahtee (lens, DOI 10.5281/zenodo.21529456);
+    candidate proposed by AI, selected by the founder (BBL-2026-09-04-095).
+five_questions:
+  seen:
+    record_ref: projects/GLS-2026-001_rigour-without-infrastructure/hypotheses.md#H1
+    as_of: "2026-09-04"
+    retrievable_original: true
+    access_model: >-
+      The founder's own Blackbox Note question line (BB-2026-09-04-01#1, mirrored publicly at
+      blackbox/BLACKBOX_NOTE_glosa-paper_2026-09-04.md#L1), the paper abstract
+      (paper/main_th.md), and the self-application run records this project has produced under
+      glosa itself: `records/lit/rigour-without-infrastructure/h1/*` (search_log.yaml,
+      litreview_manifest.yaml, dialogue_table.md, 15 citation cards under `citations/`, all VERIFIED)
+      and `projects/GLS-2026-001_rigour-without-infrastructure/*` (hypotheses.md, lens_translation.md,
+      hypothesis_selection.yaml, GLOSA-PC-20260904-0001.yaml). These records are what was actually
+      seen producing this card -- not a claim about the world beyond glosa's own dogfood run.
+    citation_refs:
+      - cite-cstp-boundary-work-001
+      - cite-disclosure-not-documentation-001
+      - cite-rsos-citizen-epistemology-001
+  separates:
+    value_z0: "whether a schema-passing claim card actually tracks the epistemic property it claims to track (checkability of evidence/AI-fill/assumption boundaries), vs. only looking like it does"
+    licensing_test:
+      regime: "single self-application pass (this project), n=1 project, I3 cross-vendor citation checking only, no I5 route yet secured"
+      result: >-
+        Of the 15 VERIFIED citation cards found for H1 (h1/citations/, independence_class I3
+        throughout), one (cite-cstp-boundary-work-001) directly CHALLENGES H1's own mechanism
+        (credentialed expertise doing real legitimacy-shaping work that a checkable-record alone
+        does not obviously replace), two (cite-disclosure-not-documentation-001,
+        cite-rsos-citizen-epistemology-001) SUPPORT components of H1 (structured
+        disclosure/documentation as a substitute signal; plural/citizen epistemology as a route to
+        robust knowledge outside narrow institutional credentialing) at the SUPPORTS_GENERAL_CLAIM_ONLY/
+        PARAPHRASE scope level -- none directly tests the FULL combined mechanism (claim card +
+        E-A-D + independence ladder) as one system (litreview_manifest.yaml developability note,
+        hypothesis_selection.yaml candidates[0].criteria.developability).
+      notes: "n=1 self-application project; not a controlled comparison; I3 (cross-vendor AI) is the ceiling reached so far, I5 not yet arranged."
+    zero_vs_bottom: distinct_difference_found
+  ai_filled:
+    current_evidence: >-
+      AI (Claude, this session) retrieved and drafted the summaries of the 15 H1 citation cards
+      under records/lit/rigour-without-infrastructure/h1/citations/ during the S3b LRS run; the
+      founder did not independently re-fetch each source before this claim card was drafted.
+    retrieved_tool_evidence: >-
+      WebFetch/WebSearch tool calls performed the literature retrieval recorded in
+      records/lit/rigour-without-infrastructure/h1/search_log.yaml; a second AI route (codex, I3)
+      cross-checked metadata/claim-match for each card, recorded in each citation card's own
+      .i3.json file.
+    retained_record_route: >-
+      This claim card's field structure and initial evidence-relation selection were drafted by AI
+      from the existing frozen project records (litreview_manifest.yaml, dialogue_table.md,
+      citation cards) -- no new observation or search was performed to produce this card itself.
+    model_calibration_assumption: >-
+      No claim in this card depends on an AI model's stated confidence or calibration score; all
+      independence_class/status values are taken directly from the frozen citation cards, not
+      re-estimated here.
+    prompt_system_constraint: >-
+      This card was drafted under task instructions (BBL-2026-09-04-091..101) requiring citation
+      only from cards already at status VERIFIED with an existing citation card -- no citation was
+      drawn from AI training-data memory.
+    decision_policy: >-
+      Selection of which 3 of the 15 VERIFIED H1 citation cards to cite as tested.evidence_relations
+      was an AI drafting choice (favoring one CHALLENGES and two SUPPORTS entries with directly
+      matching i3.json bearings), presented to the founder for review as part of this card, not a
+      founder-directed selection.
+  assumed:
+    - id: A1
+      type: inferential_commitment
+      description: >-
+        A claim card's mechanical field-by-field structure (five_questions + E-A-D + independence
+        ladder) is the operative variable that would let an independent reader recover the
+        evidence/AI-fill boundary, rather than the boundary being recoverable (or not) for reasons
+        the card structure itself does not capture (e.g. reader skill, reader trust in the
+        recording party regardless of structure).
+      identification_level: A1
+      contaminated_concept_hit: null
+    - id: A2
+      type: contrast_relevance_operation
+      description: >-
+        The 15 citation cards found via the H1 LRS search (targeted/scoping search, per
+        search_log.yaml) are a representative-enough sample of the relevant literature to inform
+        H1's developability, even though the litreview_manifest.yaml's diversity_gate is recorded
+        at PASS_WITH_LIMITS, not a clean PASS.
+      identification_level: A1
+      contaminated_concept_hit: null
+  tested:
+    evidence_relations:
+      - evidence_id: cite-cstp-boundary-work-001
+        bearing: CHALLENGES
+        independence_class: I3
+        strength: "moderate -- DIRECT_QUOTATION scope, metadata + claim-match confirmed by a decorrelated AI route"
+        citation_ref: cite-cstp-boundary-work-001
+        review_mode: DECORRELATED_AI_ROUTE
+        route_id: codex
+        asserted_by: ai
+        date: "2026-09-04"
+        notes: >-
+          Shows credentialed-expert legitimacy-shaping work continuing to matter in practice,
+          challenging H1's implicit claim that a checkable record alone displaces the credential's
+          function (h1/citations/cite-cstp-boundary-work-001.yaml, .i3.json bearing CHALLENGES).
+      - evidence_id: cite-disclosure-not-documentation-001
+        bearing: SUPPORTS
+        independence_class: I3
+        strength: "moderate -- PARAPHRASE scope, general-claim support only, not a direct H1 test"
+        citation_ref: cite-disclosure-not-documentation-001
+        review_mode: DECORRELATED_AI_ROUTE
+        route_id: codex
+        asserted_by: ai
+        date: "2026-09-04"
+        notes: >-
+          Supports the H1 component that AI-assisted scholarly work needs structured documentation
+          of inputs/process/evaluation/responsibility beyond mere disclosure -- consistent with
+          claim-card structure as a mechanism, though it does not address unaffiliated scholars or
+          the independence ladder directly (h1/citations/cite-disclosure-not-documentation-001.yaml).
+      - evidence_id: cite-rsos-citizen-epistemology-001
+        bearing: SUPPORTS
+        independence_class: I3
+        strength: "weak -- SUPPORTS_GENERAL_CLAIM_ONLY scope, general mechanism only"
+        citation_ref: cite-rsos-citizen-epistemology-001
+        review_mode: DECORRELATED_AI_ROUTE
+        route_id: codex
+        asserted_by: ai
+        date: "2026-09-04"
+        notes: >-
+          Supports the general mechanism that robust knowledge can arise through plural
+          perspectives/citizen epistemology outside narrow institutional credentialing, relevant to
+          checkable rigour outside institutions but not specific to AI claim cards
+          (h1/citations/cite-rsos-citizen-epistemology-001.yaml).
+    falsifier: >-
+      A real claim card that passes every field the kernel can mechanically check (full schema
+      pass) is nonetheless found by a genuine independent reviewer (I5) to have a false answer at
+      Q2 (evidence/authority-to-believe test) or Q3 (AI-fill disclosure) -- showing the mechanical
+      check does not actually track the epistemic property it claims to track. Not yet run: this
+      project has not secured an I5 (outside human, no stake) route, so this falsifier has not been
+      tested in either direction (hypotheses.md#H1; hypothesis_selection.yaml
+      candidates[0].criteria.falsifier_reachable_with_our_resources: partial).
+    dissent_records: []
+identification_ladder:
+  layers:
+    - id: A0
+      adds: "the claim card, the Readout Condition's E-A-D conditions, and the independence ladder (I0..I5) all exist as named artifacts/vocabulary in this repo"
+    - id: A1
+      adds: "the 15 H1 citation cards exist, are status VERIFIED, and were checked by a decorrelated AI route (codex, I3) -- not merely asserted by the same session that drafted them"
+  per_rival:
+    - rival: "institutional credential is doing load-bearing legitimacy work a checkable record cannot substitute for (H1's own stated falsifier direction, and the CHALLENGES-bearing cite-cstp-boundary-work-001)"
+      first_identification_level: A1
+    - rival: "the mechanism looks checkable but a reader's trust is actually driven by something the card structure does not capture (e.g. reader's prior trust in the founder, not the structure itself)"
+      first_identification_level: unidentified
+provenance_dag:
+  nodes:
+    - id: bb-note-l1
+      kind: observation
+    - id: h1-hypothesis-draft
+      kind: inference
+    - id: h1-lrs-search
+      kind: observation
+    - id: h1-citation-cards
+      kind: observation
+    - id: this-claim-card
+      kind: claim
+  edges:
+    - from: bb-note-l1
+      to: h1-hypothesis-draft
+    - from: h1-hypothesis-draft
+      to: h1-lrs-search
+    - from: h1-lrs-search
+      to: h1-citation-cards
+    - from: h1-citation-cards
+      to: this-claim-card
+    - from: h1-hypothesis-draft
+      to: this-claim-card
+  essential_dependency_set:
+    - bb-note-l1
+    - h1-hypothesis-draft
+    - h1-citation-cards
+  defeater_log: []
+  status: run
+silent_lift_check:
+  represented_dependency_set:
+    - bb-note-l1
+    - h1-hypothesis-draft
+    - h1-lrs-search
+    - h1-citation-cards
+  actual_dependency_set:
+    - bb-note-l1
+    - h1-hypothesis-draft
+    - h1-lrs-search
+    - h1-citation-cards
+  flags: []
+  status: run
+scope:
+  generalization_claimed: none
+  evidence_scope: >-
+    One self-application project (GLS-2026-001, glosa run on its own paper), 15 VERIFIED citation
+    cards reached at independence_class I3 (cross-vendor AI) only, no I5 (outside human, no stake)
+    route yet run, n=1 project.
+  claim_scope: >-
+    A proposition about the H1 mechanism, carried as a design/normative claim with a stated but
+    not-yet-run falsifier -- this card does not claim H1 has been tested or confirmed, only that it
+    is well-formed enough to falsify and that the H1 self-application evidence gathered so far is
+    mixed (one CHALLENGES, two SUPPORTS at general-claim scope).
+tier: Dr
+k_state: K0
+ledger:
+  forced: []
+  borrowed:
+    - "10.5281/zenodo.21529456 (Readout Universe -- Yaoharee Lahtee, lens)"
+    - "10.5281/zenodo.21665100 (Readout Universe companion, lens)"
+  open:
+    - "whether the full combined H1 mechanism (claim card + E-A-D + independence ladder), not just its individual pieces, actually produces reader-checkable rigour -- no source in the H1 scoping pass tests the combined mechanism as one system"
+    - "whether an I5 (outside human, no stake) route would find H1's falsifier triggered or not -- not yet reachable with this project's current resources"
+non_claims:
+  - "This card does not claim H1 has been empirically tested or confirmed -- it is carried as a PROPOSITION with a stated falsifier (genre_decision.yaml, founder override to CONCEPTUAL genre, BBL-2026-09-04-097)."
+  - "This card does not claim readers in general will accept a well-formed claim card as sufficient without also asking about institutional backing -- that is H2's separate, narrower question, not tested here."
+  - "This card does not claim the 15 citation cards found constitute a systematic or exhaustive search of the relevant literature -- litreview_manifest.yaml records search_mode as TARGETED_SEARCH/SCOPING_SEARCH, not SYSTEMATIC_REVIEW."
+  - "This card is not a veterinary, medical, legal, or religious determination of any kind."
+  - "This card does not assert that AI vendor cross-checking (I3) is equivalent to, or a substitute for, an I5 human review -- both remain open per the ledger above."
+legal_epistemic_separation:
+  applicable: false
+  notes: ""
+independent_check:
+  status: NONE
+  maker_id: "AI-anthropic/claude-fable"
+  checker_id: null
+  approver_id: null
+  independence_class: I3
+  mc_level: L1
+  date: "2026-09-04"
+  expires_at: null
+disclaimers_emitted:
+  # exact output of `./cli/glosa claim disclaimers` run against this file, pasted verbatim (task B1)
+  - id: D-STANDPOINT
+  - id: D-NONEXPERT
+  - id: D-NONCLAIM
+  - id: D-AUTHORSHIP
+  - id: D-REVISION-LIVE
+  - id: D-NO-EPISTEMIC-VETO
+  - id: D-TIER
+    params:
+      tier: Dr
+  - id: D-K-STATE
+    params:
+      k_state: K0
+  - id: D-BLACKBOX-NOTE
+    params:
+      origin_blackbox_ref: "blackbox/BLACKBOX_NOTE_glosa-paper_2026-09-04.md#L1"
+  - id: D-AIFILL
+    params:
+      field_name:
+        - current_evidence
+        - retrieved_tool_evidence
+        - retained_record_route
+        - model_calibration_assumption
+        - prompt_system_constraint
+        - decision_policy
+  - id: D-CANDIDATE-STATUS
+  - id: D-TRANSLATION
+    params:
+      translation_status: reviewed
+  - id: D-EXTERNAL-INPUT
+    params:
+      source_ref:
+        - "10.5281/zenodo.21529456 (Readout Universe -- Yaoharee Lahtee, lens)"
+        - "10.5281/zenodo.21665100 (Readout Universe companion, lens)"
+status: Draft
+lineage:
+  derives_from:
+    - projects/GLS-2026-001_rigour-without-infrastructure/hypotheses.md#H1
+  supersedes: []
+  superseded_by: null
+related_source_cards: []
+related_observation_cards: []
+related_citation_cards:
+  - cite-cstp-boundary-work-001
+  - cite-disclosure-not-documentation-001
+  - cite-llm-hallucination-survey-001
+  - cite-ocsdnet-honf-001
+  - cite-own-blackbox-log-h1-006
+  - cite-own-readout-condition-h1-002
+  - cite-own-readout-genesis-h1-003
+  - cite-own-standalone-scholar-h1-005
+  - cite-own-written-ai-h1-001
+  - cite-own-zero-readout-h1-004
+  - cite-pgph-citizen-science-sea-001
+  - cite-rsos-citizen-epistemology-001
+  - cite-rsos-preprint-credibility-001
+  - cite-scholarly-kitchen-credentialism-001
+  - cite-tcij-freelance-th-001
+responsibility:
+  data_to_inference: joint
+  inference_to_claim: human
+  notes: >-
+    AI (Claude) retrieved literature, drafted the H1 candidate hypothesis, and drafted this claim
+    card's fields from the frozen project records; the founder alone signs the claim
+    (FOUNDATION_v0.5.md §2.1b) and holds the falsifier judgment. This card's `status: Draft` and
+    `independent_check.status: NONE` reflect that the founder has not yet signed off on this
+    specific card instance.
+  ownership:
+    problem: human
+    question: human
+    notes: >-
+      The standalone-scholar problem and the research question (blackbox_note.yaml line 1,
+      GLOSA-PC-20260904-0001.yaml) are the founder's own; AI proposed H1/H2/H3 as candidate
+      hypotheses, the founder selected among them (hypothesis_selection.yaml, BBL-2026-09-04-095).
+    hypothesis_selection: human
+empirical_extension: null
+human_owner: founder
+revision_history:
+  - rev: "1"
+    date: "2026-09-04"
+    by: AI-anthropic/claude-fable
+    note: "initial scaffold via `glosa claim new`"
+  - rev: "2"
+    date: "2026-09-04"
+    by: AI-anthropic/claude-fable
+    note: >-
+      Filled full-shape card for H1 (design claim) per task B1 (BBL-2026-09-04-091..101): statement,
+      standpoint, lens_translation, hypothesis_world (signed), five_questions (evidence_relations
+      cited from h1/citations VERIFIED cards), identification_ladder, provenance_dag,
+      silent_lift_check, scope, ledger, non_claims, responsibility, disclaimers. Not yet reviewed or
+      signed by the founder (status stays Draft, independent_check.status stays NONE).

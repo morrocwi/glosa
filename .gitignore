@@ -37,3 +37,12 @@ design/PLAN_*.md
 # local-only leak patterns naming private things (never public)
 scripts/leak_denylist.local.txt
 registry/private_source_names.txt
+
+# LaTeX build artifacts
+paper/**/*.aux
+paper/**/*.log
+paper/**/*.out
+paper/**/*.fls
+paper/**/*.fdb_latexmk
+paper/**/*.blg
+paper/**/*.toc
