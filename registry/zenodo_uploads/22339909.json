@@ -1,0 +1,11 @@
+{
+ "deposition_id": 22339909,
+ "founder_instructed_bypass": {
+  "instruction": "เอาเข้า zenodo และต่อกับระบบเดิม (founder chat, 2026-09-05, CTSA v9.1 PDF)",
+  "logged_at": "2026-09-05T17:38:42"
+ },
+ "doi": "10.5281/zenodo.22339909",
+ "conceptdoi": "10.5281/zenodo.22339908",
+ "url": "https://zenodo.org/record/22339909",
+ "title": "CTSA Human-Return Readout: A Session-Boundary Measurement Architecture for Retained Human Capability After AI (Epistemic Note v9.1 FINAL — global-literature-constrained edition)"
+}

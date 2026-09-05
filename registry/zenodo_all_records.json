@@ -1,7 +1,82 @@
 [
  {
-  "id": 22319715,
-  "doi": "10.5281/zenodo.22319715",
+  "id": 22339909,
+  "doi": "10.5281/zenodo.22339909",
+  "concept": "10.5281/zenodo.22339908",
+  "title": "CTSA Human-Return Readout: A Session-Boundary Measurement Architecture for Retained Human Capability After AI (Epistemic Note v9.1 FINAL — global-literature-constrained edition)",
+  "date": "2026-09-05",
+  "type": "Preprint",
+  "kw": [
+   "human-ai collaboration",
+   "human return test",
+   "session boundary",
+   "retained capability",
+   "conceptual knowledge",
+   "procedural knowledge",
+   "metacognition",
+   "self-regulated learning",
+   "overreliance",
+   "cognitive forcing",
+   "genai education",
+   "measurement architecture",
+   "readout universe",
+   "readout genesis",
+   "epistemic fusion",
+   "glosa k0",
+   "human-ai readout programme"
+  ],
+  "desc": " Status. Final author draft of a K0 conceptual and measurement architecture in the Human-AI Readout Programme. \"Final\" denotes the present manuscript state, not empirical validation, publication, or independent certification. Programme continuation of Epistemic Fusion or Epistemic Tunnel v8.1 (DOI 10.5281/zenodo.22319715); part of the series When AI Expands Human Potential (index DOI 10.5281/zenodo.22308201). Produced under the glosa methodology (Rigour Without Infrastructure, concept DOI 10.5281/zenodo.22301059). Central claim. Human-AI learning should not be inferred from what the coupled system produces while assistance is present. It should be tested at the session boundary: after AI removal, what readout-distinguishable capability is still available to the human, what previously available capability has been lost, and what epistemic status has the retained change earned? CTSA codes the content of retained change as Conceptual Return (C), Tool-Selection Return (T), Skill-Execution Return (S), or Alternative-Generation Return (A). It keeps persistence, loss, metacognitive regulation, provenance, warrant, and epistemic direction separately auditable. Abstract. Human-AI collaboration is commonly evaluated at the moment of assistance: answer quality, speed, trust, preference, or joint performance. The Human-AI Readout Programme has progressively rejected that single-horizon view. The residual problem is measurement typing. The Human Return Test asks whether a person can recon",
+  "cluster": "ep",
+  "tags": [
+   "ai",
+   "aihp"
+  ]
+ },
+ {
+  "id": 22334420,
+  "doi": "10.5281/zenodo.22334420",
+  "concept": "10.5281/zenodo.22302518",
+  "title": "ปูมกล่องดำ — บันทึกเสียงดิบ ข้อค้นพบ และคำถามรายวันของ เยาฮารี แหละตี (Blackbox Log, Yaoharee Lahtee)",
+  "date": "2026-09-05",
+  "type": "Other",
+  "kw": [
+   "blackbox log",
+   "ปูมกล่องดำ",
+   "research diary",
+   "raw voice",
+   "readout universe",
+   "glosa",
+   "yaoharee lahtee"
+  ],
+  "desc": " ปูมกล่องดำ (Blackbox Log) — บันทึกเสียงดิบ ข้อค้นพบ และคำถามรายวันของผู้เขียน ตามที่พูดจริง (verbatim) ไม่ผ่านการปรุงและไม่ผ่านการตรวจอิสระ (tier: positional/Dr) บันทึกเพิ่มได้อย่างเดียว ไม่แก้ไม่ลบ; อัปเดตเป็นเวอร์ชันใหม่ของ record เดียวกัน เลนส์ที่ใช้มองปัญหา: Readout Universe — Yaoharee Lahtee. ระบบที่เก็บ: glosa (github.com/morrocwi/glosa). เวอร์ชันนี้: 120 บันทึก ถึง 2026-09-05. Blackbox Log — a daily, append-only, verbatim record of the author's raw voice (one pre-release correction is disclosed in BBL-2026-09-04-082), findings and questions (Thai is the source of truth). Not a paper; not reviewed; tier positional/Dr. Contains the author's own words only; the single AI-written line is a disclosed correction entry (by=ai, BBL-2026-09-04-082), never the author's voice. Each update is a new version of the same record. Lens: Readout Universe — Yaoharee Lahtee; kept by the glosa toolchain. ",
+  "cluster": "ep",
+  "tags": [
+   "ai"
+  ]
+ },
+ {
+  "id": 22334376,
+  "doi": "10.5281/zenodo.22334376",
+  "concept": "10.5281/zenodo.22301059",
+  "title": "glosa — Rigour Without Infrastructure: A Standalone Scholar Methodology for Human–AI Knowledge Co-Production",
+  "date": "2026-09-05",
+  "type": "Software",
+  "kw": [
+   "methodology",
+   "human-ai co-production",
+   "epistemic provenance",
+   "readout",
+   "standalone scholar"
+  ],
+  "desc": "v0.1.0 — K0 public working release (v0.2.0: glosa applied to itself — concept paper DOI 10.5281/zenodo.22307841, 48 VERIFIED citation cards, cross-vendor reviewed claim cards; rules 15-17 and gate rule 9 added) — timestamped and citable, NOT peer reviewed, no independent check yet (K1 in glosa requires a cross-vendor I3 check that has not run), tier Dr. Methodology + skill + tools for co-producing rigorous knowledge with AI without institutional infrastructure. Every claim answers five questions bound to the Readout Condition. No priority claim. v0.4.0 (2026-09-05) — session architecture. After an ultracode meeting on the Epistemic Fusion papers (25 proposals, all kept under the founder ruling \"raise the work to the claim\"), glosa gained a session layer: session boundary and entry anchor on the Blackbox Note, question trace, retained_direction (unknown by default; NC-77 retention≠direction), precommitted resistance route, the χ_recip reciprocal-lineage diagnostic (Open), kernel rules 29–31 (strength-of-claim is not a defeater; defeater must match claim type; defeater status), dialogue-table defeater columns, the Human Mastery Gate card and schema (R8), gate rule 10 (no finding is ever dropped). Simulation: five new defect classes caught 30/30 with no false alarms. Six design decisions remain pending the founder and are marked as such. K0. ",
+  "cluster": "ep",
+  "tags": [
+   "ai"
+  ]
+ },
+ {
+  "id": 22331922,
+  "doi": "10.5281/zenodo.22331922",
   "concept": "10.5281/zenodo.22318039",
   "title": "Epistemic Fusion or Epistemic Tunnel: A Phenomenology-Anchored, Global-Literature-Constrained, Problem-First Architecture of Human-AI Collaboration (Epistemic Note v8.1 — strong-claim / legitimate-defeater edition)",
   "date": "2026-09-05",
@@ -25,49 +100,6 @@
    "problem-first"
   ],
   "desc": " Series. Standalone epistemic note of the Human–AI Readout programme; member of the Zenodo library When AI Expands Human Potential (hub DOI 10.5281/zenodo.22308201). Builds on the Bounded Knower sequence I–IV, Experience Is the Human LoRA, The Language Bridge, Operational Linguistic Wisdom, The Dialogue as the Ground of Enlightenment, and the Readout Genesis / Readout Condition base; methodology: glosa (DOI 10.5281/zenodo.22310837). Version 8.1 (2026-09-05) supersedes v7.1 (Genesis-aligned) in this record; the earlier PDF stays available under its own version DOI. Status. K0+ conceptual architecture with cross-domain empirical, meta-analytic, and theoretical constraints. Strong claims are retained by design. This edition separates phenomenological explananda, constitutive necessities, structural proposals, diagnostics, and empirical predictions; each is paired with a legitimate defeater. Calling a proposition \"too strong\" is not itself a scientific defeater. The burden for empirical causal claims remains with the author, while objections to constitutive or phenomenological claims must target the relevant derivation, counterexample, phenomenon, scope, or rival explanation. Core move. The central research problem is not simply whether AI improves an answer while it is present. The stronger problem is whether Human-AI collaboration can enlarge the human's corrigible space of inquiry, preserve independent resistance, avoid self-reinforcing semantic tunnels, and return durable epi",
-  "cluster": "ep",
-  "tags": [
-   "ai",
-   "aihp"
-  ]
- },
- {
-  "id": 22310845,
-  "doi": "10.5281/zenodo.22310845",
-  "concept": "10.5281/zenodo.22302518",
-  "title": "ปูมกล่องดำ — บันทึกเสียงดิบ ข้อค้นพบ และคำถามรายวันของ เยาฮารี แหละตี (Blackbox Log, Yaoharee Lahtee)",
-  "date": "2026-09-05",
-  "type": "Other",
-  "kw": [
-   "blackbox log",
-   "ปูมกล่องดำ",
-   "research diary",
-   "raw voice",
-   "readout universe",
-   "glosa",
-   "yaoharee lahtee"
-  ],
-  "desc": " ปูมกล่องดำ (Blackbox Log) — บันทึกเสียงดิบ ข้อค้นพบ และคำถามรายวันของผู้เขียน ตามที่พูดจริง (verbatim) ไม่ผ่านการปรุงและไม่ผ่านการตรวจอิสระ (tier: positional/Dr) บันทึกเพิ่มได้อย่างเดียว ไม่แก้ไม่ลบ; อัปเดตเป็นเวอร์ชันใหม่ของ record เดียวกัน เลนส์ที่ใช้มองปัญหา: Readout Universe — Yaoharee Lahtee. ระบบที่เก็บ: glosa (github.com/morrocwi/glosa). เวอร์ชันนี้: 114 บันทึก ถึง 2026-09-05. Blackbox Log — a daily, append-only, verbatim record of the author's raw voice (one pre-release correction is disclosed in BBL-2026-09-04-082), findings and questions (Thai is the source of truth). Not a paper; not reviewed; tier positional/Dr. Contains the author's own words only; the single AI-written line is a disclosed correction entry (by=ai, BBL-2026-09-04-082), never the author's voice. Each update is a new version of the same record. Lens: Readout Universe — Yaoharee Lahtee; kept by the glosa toolchain. ",
-  "cluster": "ep",
-  "tags": [
-   "ai"
-  ]
- },
- {
-  "id": 22310837,
-  "doi": "10.5281/zenodo.22310837",
-  "concept": "10.5281/zenodo.22301059",
-  "title": "glosa — Rigour Without Infrastructure: A Standalone Scholar Methodology for Human–AI Knowledge Co-Production",
-  "date": "2026-09-05",
-  "type": "Software",
-  "kw": [
-   "methodology",
-   "human-ai co-production",
-   "epistemic provenance",
-   "readout",
-   "standalone scholar"
-  ],
-  "desc": "v0.1.0 — K0 public working release (v0.2.0: glosa applied to itself — concept paper DOI 10.5281/zenodo.22307841, 48 VERIFIED citation cards, cross-vendor reviewed claim cards; rules 15-17 and gate rule 9 added) — timestamped and citable, NOT peer reviewed, no independent check yet (K1 in glosa requires a cross-vendor I3 check that has not run), tier Dr. Methodology + skill + tools for co-producing rigorous knowledge with AI without institutional infrastructure. Every claim answers five questions bound to the Readout Condition. No priority claim. v0.3.0 (2026-09-05). glosa reviewed its own knowledge base (324 knowledge cards judged against the Readout Universe / Readout Genesis base), ran a literature review on eight improvement questions (60 verified citations), built an improvement DAG, simulated gate precision/recall on a synthetic corpus, and shipped kernel rules 18–28 (injected-infinity/zero taxonomy, gate-type law, forbidden-word rejection, layer-mismatch, verdict class, composite-quote, hidden-AI-fill, inflated-bearing) with FOUNDATION v0.6. Six design nodes remain pending the founder's decision and are marked as such. K0. ",
   "cluster": "ep",
   "tags": [
    "ai"

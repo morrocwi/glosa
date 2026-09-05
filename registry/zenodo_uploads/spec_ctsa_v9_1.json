@@ -1,0 +1,79 @@
+{
+ "file": "dist/CTSA_Human_Return_Readout_v9_1_FINAL_Global_Constrained.pdf",
+ "title": "CTSA Human-Return Readout: A Session-Boundary Measurement Architecture for Retained Human Capability After AI (Epistemic Note v9.1 FINAL — global-literature-constrained edition)",
+ "upload_type": "publication",
+ "publication_type": "preprint",
+ "publication_date": "2026-09-05",
+ "description_html": "<p><b>Status.</b> Final author draft of a K0 conceptual and measurement architecture in the Human-AI Readout Programme. “Final” denotes the present manuscript state, not empirical validation, publication, or independent certification. Programme continuation of <i>Epistemic Fusion or Epistemic Tunnel</i> v8.1 (DOI 10.5281/zenodo.22319715); part of the series <i>When AI Expands Human Potential</i> (index DOI 10.5281/zenodo.22308201). Produced under the glosa methodology (Rigour Without Infrastructure, concept DOI 10.5281/zenodo.22301059).</p><p><b>Central claim.</b> Human-AI learning should not be inferred from what the coupled system produces while assistance is present. It should be tested at the session boundary: after AI removal, what readout-distinguishable capability is still available to the human, what previously available capability has been lost, and what epistemic status has the retained change earned? CTSA codes the content of retained change as Conceptual Return (C), Tool-Selection Return (T), Skill-Execution Return (S), or Alternative-Generation Return (A). It keeps persistence, loss, metacognitive regulation, provenance, warrant, and epistemic direction separately auditable.</p><p><b>Abstract.</b> Human-AI collaboration is commonly evaluated at the moment of assistance: answer quality, speed, trust, preference, or joint performance. The Human-AI Readout Programme has progressively rejected that single-horizon view. The residual problem is measurement typing. The Human Return Test asks whether a person can reconstruct, discriminate, transfer, and formulate a better next question after AI is gone, but it does not compactly classify what kind of retained change is being demonstrated. This paper proposes CTSA Human-Return Readout: four observable readout classes—Conceptual Return, Tool-Selection Return, Skill-Execution Return, and Alternative-Generation Return—crossed with an unaided return test and accompanied by loss, metacognitive-regulation, provenance, warrant, and direction audits. Global literature constrains the novelty claim: conceptual, procedural, conditional, and metacognitive knowledge are established constructs; self-regulated learning already separates knowing what, how, and when/why; conceptual bootstrapping and curriculum-learning research show that structured components can accelerate later learning; Human-AI studies show that confidence calibration, uncertainty expression, verification cost, and cognitive forcing affect reliance; and recent GenAI education evidence directly separates assisted performance from later unaided learning. Accordingly, CTSA does not propose four new kinds of knowledge. Its contribution is a session-boundary measurement architecture that asks whether a retained Human-AI change can be typed, demonstrated without decisive AI assistance, compared with a frozen pre-AI baseline, and interpreted without collapsing gain into net expansion or persistence into warrant.</p>",
+ "keywords": [
+  "human-AI collaboration",
+  "human return test",
+  "session boundary",
+  "retained capability",
+  "conceptual knowledge",
+  "procedural knowledge",
+  "metacognition",
+  "self-regulated learning",
+  "overreliance",
+  "cognitive forcing",
+  "GenAI education",
+  "measurement architecture",
+  "Readout Universe",
+  "Readout Genesis",
+  "Epistemic Fusion",
+  "GLOSA K0",
+  "Human-AI Readout Programme"
+ ],
+ "language": "eng",
+ "version": "v9.1-FINAL-2026-09-05",
+ "related": [
+  {
+   "identifier": "10.5281/zenodo.22319715",
+   "relation": "continues"
+  },
+  {
+   "identifier": "10.5281/zenodo.22318040",
+   "relation": "references"
+  },
+  {
+   "identifier": "10.5281/zenodo.19215748",
+   "relation": "references"
+  },
+  {
+   "identifier": "10.5281/zenodo.21425420",
+   "relation": "references"
+  },
+  {
+   "identifier": "10.5281/zenodo.21529456",
+   "relation": "references"
+  },
+  {
+   "identifier": "10.5281/zenodo.22307148",
+   "relation": "references"
+  },
+  {
+   "identifier": "10.5281/zenodo.22308066",
+   "relation": "references"
+  },
+  {
+   "identifier": "10.5281/zenodo.22301060",
+   "relation": "references",
+   "resource_type": "software"
+  },
+  {
+   "identifier": "10.5281/zenodo.22308201",
+   "relation": "isPartOf",
+   "resource_type": "publication-other"
+  },
+  {
+   "identifier": "10.5281/zenodo.22301552",
+   "relation": "isPartOf",
+   "resource_type": "publication-other"
+  },
+  {
+   "identifier": "10.5281/zenodo.22301459",
+   "relation": "isPartOf",
+   "resource_type": "publication-other"
+  }
+ ]
+}
