@@ -1,0 +1,69 @@
+$schema: citation_card.schema.json
+id: cite-causal-agency-formula-002
+claim_ref: hypothesis-potential-as-readout-H2
+identifier:
+  kind: DOI
+  value: 10.5281/zenodo.18897585
+fetch_status: FETCHED
+fetched_at: '2026-09-05'
+metadata_verified: true
+metadata_verified_by: mechanical:direct_fetch
+metadata_verified_at: '2026-09-05'
+claim_match_verified: true
+claim_match_verified_by: route:claude
+claim_match_verified_at: null
+exact_passage: 'Agency occurs when
+
+  ∂Tp ∂C
+
+  ·
+
+  >0
+
+  ∂C ∂x
+
+  meaning that system-induced constraint changes increase the expected duration of
+  persistence.'
+scope: DIRECT_QUOTATION
+page_or_locator: p.19 (§6.5 Agency as Constraint Regulation) -- verified by direct
+  pdftotext page-split (`pdftotext -f 19 -l 19`) against the fetched PDF's own footer
+  "Causal Agency | February 2026 | v1.0 | Page 19/42"; the task instruction that requested
+  this card named p.18, but the sentence containing the inequality falls on the page
+  the document's own footer marks 19, one page after the formal statement of state-constraint
+  coupling on p.18 -- recorded as verified (p.19), not silently left at the instructed
+  p.18, per this repo's readout-not-truth discipline (verify before repeat).
+evidence_tier: definition
+independence_class: I1
+who_verified: 'route:claude (I1 route: same model, fresh headless session (no shared
+  context); abstract/metadata level, not full text) -- see cite-causal-agency-formula-002.i3.json'
+verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
+status: VERIFIED
+xenon_ledger_ref: null
+disclosure: 'Same-session AI check only (I1) -- not yet independently verified; run
+  lit_crossvendor_check.py for I3. I1 route (claude) fetched the full PDF from the
+  Zenodo API file-content URL below, ran `pdftotext` locally, and located the exact
+  sentence containing the agency-defining inequality ∂Tp/∂C · ∂C/∂x > 0 by direct
+  page-split (`-f 19 -l 19`), not from abstract/metadata alone and not from AI training-data
+  memory. claim_match_verified is false because no independent (I3+) route has yet
+  judged whether this passage bears on H2''s own layer-1/layer-2 claim as the card''s
+  scope states -- that is left to lit_crossvendor_check.py, not asserted here. Self-citation
+  disclosed (programme''s own prior work). | I1 route (claude) judged from fetched
+  metadata/abstract + the card''s quoted passage, not full text: Fetched title/author/year
+  (Causal Agency, Lahtee, 2026) match the card. Passage found verbatim; excerpt shows
+  it follows the page-18 footer, consistent with p.19. Text defines agency as constraint
+  modification raising persistence time (Def. 3) and labels within-constraint stabilisation
+  proto-agency (§6.6), exactly H2''s layer-1/layer-2 distinction. Self-citation disclosed.'
+superseded_by: null
+notes: 'Programme''s own prior work (self-citation, disclosed as such -- see conflicts_of_interest).
+  This is the exact formula H2''s statement attributes to Causal Agency''s Def. 3/§6.5:
+  the inequality that defines agency as constraint-structure modification that increases
+  expected persistence time, distinct from mere within-structure regulation (layer
+  1). Downloaded fresh from the Zenodo API this session (record 18897585), not from
+  memory or an old local copy. Added per review findings on GLOSA-CC-20260905-0302
+  (R2/R3): the statement attributed this specific inequality to Def. 3, but Def. 3''s
+  own exact_passage (cite-causal-agency-defs-001) is prose only and does not contain
+  the formula -- this card supplies the formula''s own actual location so the attribution
+  is no longer uncarded.'
+fetched_from_url: https://zenodo.org/api/records/18897585/files/Causal%20Agency_A%20Persistence%20Control%20Theory%20of%20Adaptive.pdf/content
+line_or_paragraph: char offset 47541 of normalized fetched text (~paragraph 1); verbatim
+  prefix match

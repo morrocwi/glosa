@@ -1,0 +1,23 @@
+{
+ "vendor": "claude",
+ "fetched": {
+  "source": "zenodo",
+  "title": "Causal Agency  A Persistence Control Theory of Adaptive Systems",
+  "authors": [
+   "Lahtee, Yaoharee"
+  ],
+  "year": "2026",
+  "container": "Zenodo",
+  "abstract": "  Agency is a central concept across philosophy of action, cognitive science, theoretical biol-   ogy, and artificial intelligence. Despite extensive research across these fields, existing accounts   remain theoretically fragmented because they are typically grounded in domain-specific mech-   anisms and operate at different explanatory levels.   Philosophical theories emphasize inten-   tional action and rational deliberation, biological theories focus on metabolic self-maintenance,   and computational models define agents primarily in terms of goal-directed decision processes.   While each of these perspectives captures important aspects of agency, none provides a struc-   tural account capable of explaining agency across the full spectrum of adaptive systems.   This paper proposes a structural theory of agency based on a persistence&ndash;control frame-   work. Within this framework, systems are interpreted as dynamical systems operating under   constraint structures that shape the possible trajectories of their states. Persistence is defined   as the continued occupation of a viable region of state space that allows the system to main-   tain its organization or functional identity. Agency emerges when the internal dynamics of a   system are capable of regulating or modifying the constraint structures that govern its own   persistence.   By defining agency in terms of constraint-modulating dynamics, the framework shifts the   explanation of agency away from particular bio",
+  "_card_url": "https://zenodo.org/api/records/18897585/files/Causal%20Agency_A%20Persistence%20Control%20Theory%20of%20Adaptive.pdf/content"
+ },
+ "verdict": {
+  "metadata_matches": true,
+  "passage_plausible": true,
+  "claim_match": true,
+  "bearing": "SUPPORTS",
+  "reason": "Metadata (title, Lahtee, 2026) matches. Passage found verbatim in fetched §6.6 text. Fetched text confirms Def. 3 (∂T_p/∂C) and that stabilisation without constraint modification is proto-agency, not agency — directly supporting H2's two-layer distinction. Self-citation disclosed.",
+  "passage_mechanical": "verbatim prefix found in fetched open text"
+ },
+ "date": "2026-09-04"
+}

@@ -1,0 +1,27 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: H2
+source_label: 'Causal Agency: A Persistence Control Theory of Adaptive Systems (Zenodo 18897585), §6.6, "Such systems may be described as exhibiting proto-agency."'
+how_it_sees_the_problem: 'Names systems that stabilise their trajectory within a viable region
+  without modifying the constraint structure "proto-agentive" -- a precursor to agency, not
+  agency in the strict sense, since they never satisfy the §6.5 inequality
+  (cite-causal-agency-formula-002).'
+what_it_separates: Separates persistence regulation under a fixed structure (proto-agency) from
+  agency proper (modifying the structure to raise expected persistence) -- the source's own
+  binary, which H2 reads as its own layer-1 (proto-agency) vs. layer-2 (agency) split.
+what_it_assumes: Assumes the reader already has §6.4's persistence-regulation definition and
+  §6.5's inequality in view; does not itself argue that this binary generalizes to social
+  agents under structural deprivation, the domain H2 wants to apply it to.
+stance: UNDETERMINED
+what_it_would_say_against_us: 'Would say proto-agency was defined for engineered/biological
+  control systems (examples given -- homeostatic systems, engineered feedback controllers,
+  reactive adaptive mechanisms), not social actors -- importing the mechanical proto-agency/
+  agency binary onto H2''s social-agency reading may mislead rather than clarify, echoing the
+  row on cite-causal-agency-protoagency-001''s own counter-note.'
+citation_card: cite-causal-agency-protoagency-002
+defeater_class: structural_formal
+legitimate_defeater: Defeated if the source itself, elsewhere, extends proto-agency to social/
+  institutional systems under structural constraint (not read in full for this row).
+defeater_status: untested
+verified:
+  metadata_verified: true
+  claim_match_verified: false

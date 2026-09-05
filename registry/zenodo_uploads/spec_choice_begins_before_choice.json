@@ -1,0 +1,76 @@
+{
+ "file": "dist/Choice_Begins_Before_Choice_v1_0_STRONG_CLAIM.pdf",
+ "title": "Choice Begins Before Choice: Meaning-Shaped Accessibility, Live Possibility, and Effective Agency in Human-AI Systems (Full Paper v1.0, strong-claim synthesis)",
+ "upload_type": "publication",
+ "publication_type": "preprint",
+ "publication_date": "2026-09-05",
+ "description_html": "<p><b>Status.</b> K0 strong-form conceptual and measurement architecture. A strong-form synthesis of Agency Potential (see <i>Potential as a Readout</i>, DOI 10.5281/zenodo.22345709), <i>Experience Is Meaning-Giving</i>, Human LoRA, Fusion/Tunnel, and CTSA Human Return; part of the series <i>When AI Expands Human Potential</i> (index DOI 10.5281/zenodo.22308201) and <i>Society, Justice, Peace &amp; Violence</i> (index DOI 10.5281/zenodo.22342043). The paper does not claim a metaphysical theory of free will or a validated universal scale of human agency.</p><p><b>Central claim.</b> Human beings do not choose from the whole space of what is objectively possible. They choose from a history-shaped subset of possibilities that have become sufficiently meaningful, accessible, discriminable, and actionable to enter practical consideration. Choice therefore begins before choice. Experience gives meaning to phenomena; retained experience changes future readout; resonance can make some possibilities feel fitted to prior experience; rhythm and repeated traversal can make some routes easier to re-enter; social structures can enable or suppress conversion from possibility to action; and Human-AI interaction can recursively reshape the state from which the next prompt and choice are generated. Effective agency is therefore not merely the presence of options or the occurrence of action, but the corrigible capacity to read live differences, own a decision, causally enact it, and preserve routes of objection and revision. Power can act on agency by acting on meaning before it acts on choice.</p><p><b>Abstract (opening).</b> Theories of agency often begin where choice becomes visible: preference, deliberation, decision, action, or outcome. This paper argues that an analytically prior layer is required. The paper distinguishes six levels that are often collapsed: physically possible, structurally feasible, experientially live, chosen, enacted, and evaluator-visible. It introduces a Live Possibility Field as a domain-level object and shows how meaning-giving, autobiographical and affective significance, resonance, rhythmic recurrence, semantic attraction, recent-path momentum, retention, and social interpretation can alter the probability that a feasible option becomes practically thinkable. Structural deprivation requires a feasible counterfactual, a named causal mechanism, and an independent normative reason why the closure is harmful or unjust. The framework is placed in dialogue with Sen, Kabeer, Emirbayer and Mische, Bazzani, Foucault, Pettit, Fricker, Mahmood, Galtung, empowerment theory, and recent Human-AI feedback research, and extends the Pre-Prompt Human State Principle.</p>",
+ "keywords": [
+  "agency",
+  "choice",
+  "live possibility",
+  "accessibility",
+  "meaning-giving",
+  "capability approach",
+  "empowerment",
+  "structural violence",
+  "non-domination",
+  "human-AI interaction",
+  "pre-prompt human state",
+  "Human-AI Readout Programme",
+  "GLOSA K0"
+ ],
+ "language": "eng",
+ "version": "v1.0-strong-claim-2026-09-05",
+ "related": [
+  {
+   "identifier": "10.5281/zenodo.22345709",
+   "relation": "continues"
+  },
+  {
+   "identifier": "10.5281/zenodo.22357744",
+   "relation": "continues"
+  },
+  {
+   "identifier": "10.5281/zenodo.21425420",
+   "relation": "references"
+  },
+  {
+   "identifier": "10.5281/zenodo.22307148",
+   "relation": "references"
+  },
+  {
+   "identifier": "10.5281/zenodo.22318040",
+   "relation": "references"
+  },
+  {
+   "identifier": "10.5281/zenodo.22339909",
+   "relation": "references"
+  },
+  {
+   "identifier": "10.5281/zenodo.22340255",
+   "relation": "references",
+   "resource_type": "software"
+  },
+  {
+   "identifier": "10.5281/zenodo.22308201",
+   "relation": "isPartOf",
+   "resource_type": "publication-other"
+  },
+  {
+   "identifier": "10.5281/zenodo.22301552",
+   "relation": "isPartOf",
+   "resource_type": "publication-other"
+  },
+  {
+   "identifier": "10.5281/zenodo.22301459",
+   "relation": "isPartOf",
+   "resource_type": "publication-other"
+  },
+  {
+   "identifier": "10.5281/zenodo.22342043",
+   "relation": "isPartOf",
+   "resource_type": "publication-other"
+  }
+ ]
+}

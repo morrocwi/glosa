@@ -1,0 +1,29 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: H2
+source_label: 'Causal Ethics (Zenodo 18444260), §2.2, Axiom II (Agency-as-Choice)'
+how_it_sees_the_problem: Frames agency existence as a biconditional on choice-capacity -- an
+  entity is an agency iff it can instantiate a choice of regime R_A from the admissible set
+  R_adm(t') relative to the manifested record M(t'). Choice, not structure-change, is the
+  primitive here.
+what_it_separates: Separates having the capacity to select a regime from the admissible set
+  (Axiom II, what H2 reads as its own layer-1 object) from changing what counts as admissible
+  (R_adm itself), which Axiom II's own statement does not address -- it is silent on whether
+  R_adm can itself be modified by the agency.
+what_it_assumes: Assumes an already-declared admissible regime set R_adm(t') exists prior to
+  the choice; does not itself state whether an agency can act on R_adm, which is exactly the
+  layer-2 question H2 poses of this text.
+stance: UNDETERMINED
+what_it_would_say_against_us: Would say Axiom II is silent, not confirmatory, on H2's layer
+  split -- reading it as "layer-1 only" is this programme's own gloss; the axiom's own text
+  neither asserts nor denies that choosing a regime could itself, under some other regime's
+  translation/interaction operators (T_R, I_R), alter R_adm. H2 would need a further passage
+  (not this one) to license the layer-1 attribution.
+citation_card: cite-causal-ethics-axiom2-001
+defeater_class: structural_formal
+legitimate_defeater: Defeated if a later section of Causal Ethics (not read in full for this
+  row) explicitly treats regime choice under Axiom II as capable of updating R_adm(t') itself,
+  which would place Axiom II's own object across both layers rather than in layer-1 alone.
+defeater_status: untested
+verified:
+  metadata_verified: true
+  claim_match_verified: false

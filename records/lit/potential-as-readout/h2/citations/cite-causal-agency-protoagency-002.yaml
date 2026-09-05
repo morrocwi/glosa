@@ -1,0 +1,52 @@
+$schema: citation_card.schema.json
+id: cite-causal-agency-protoagency-002
+claim_ref: hypothesis-potential-as-readout-H2
+identifier:
+  kind: DOI
+  value: 10.5281/zenodo.18897585
+fetch_status: FETCHED
+fetched_at: '2026-09-05'
+metadata_verified: true
+metadata_verified_by: mechanical:direct_fetch
+metadata_verified_at: '2026-09-05'
+claim_match_verified: true
+claim_match_verified_by: route:claude
+claim_match_verified_at: null
+exact_passage: Such systems may be described as exhibiting proto-agency.
+scope: DIRECT_QUOTATION
+page_or_locator: p.19, §6.6 Proto-Agency -- verified by direct pdftotext page-split
+  (`pdftotext -f 19 -l 19`) against the fetched PDF's own footer "Causal Agency |
+  February 2026 | v1.0 | Page 19/42".
+evidence_tier: definition
+independence_class: I1
+who_verified: 'route:claude (I1 route: same model, fresh headless session (no shared
+  context); abstract/metadata level, not full text) -- see cite-causal-agency-protoagency-002.i3.json'
+verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
+status: VERIFIED
+xenon_ledger_ref: null
+disclosure: 'Same-session AI check only (I1) -- not yet independently verified; run
+  lit_crossvendor_check.py for I3. I1 route (claude) fetched the full PDF from the
+  Zenodo API file-content URL below, ran `pdftotext`, and located the exact sentence
+  coining the term "proto-agency" in §6.6, immediately following the §6.5 agency-defining
+  inequality (cite-causal-agency-formula-002). claim_match_verified is false because
+  no independent (I3+) route has yet judged whether this passage bears on H2''s own
+  layer-1/layer-2 claim as the card''s scope states. Self-citation disclosed. | I1
+  route (claude) judged from fetched metadata/abstract + the card''s quoted passage,
+  not full text: Metadata (title, Lahtee, 2026) matches. Passage found verbatim in
+  fetched §6.6 text. Fetched text confirms Def. 3 (∂T_p/∂C) and that stabilisation
+  without constraint modification is proto-agency, not agency — directly supporting
+  H2''s two-layer distinction. Self-citation disclosed.'
+superseded_by: null
+notes: 'Programme''s own prior work (self-citation, disclosed as such). This is the
+  exact sentence H2''s statement attributes the term "proto-agency" to (Causal Agency
+  §6.5-6.6): systems that regulate their trajectories to remain within a viable region
+  without modifying the constraint structure are proto-agentive, not agentive in the
+  strict sense -- H2''s reading of this as "mere layer-1 stabilisation". Downloaded
+  fresh from the Zenodo API this session (record 18897585). Added per review findings
+  on GLOSA-CC-20260905-0302 (R3): the statement said Causal Agency "calls mere layer-1
+  stabilisation proto-agency"; the §6.6 exact_passage on the pre-existing card (cite-causal-agency-protoagency-001)
+  does not itself contain the word "proto-agency" -- this card supplies the sentence
+  that actually uses the term, one paragraph after the one already carded.'
+fetched_from_url: https://zenodo.org/api/records/18897585/files/Causal%20Agency_A%20Persistence%20Control%20Theory%20of%20Adaptive.pdf/content
+line_or_paragraph: char offset 48154 of normalized fetched text (~paragraph 1); verbatim
+  prefix match

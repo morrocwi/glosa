@@ -1,0 +1,28 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: H2
+source_label: 'Causal Agency: A Persistence Control Theory of Adaptive Systems (Zenodo 18897585), §6.5, the agency-defining inequality'
+how_it_sees_the_problem: 'Frames agency formally: a system exhibits agency exactly when
+  system-induced changes to the constraint structure C increase the expected persistence time
+  Tp, i.e. ∂Tp/∂C · ∂C/∂x > 0 -- the exact inequality H2''s statement attributes to Def. 3.'
+what_it_separates: Separates a system whose constraint structure C depends on its own state
+  (∂C/∂x ≠ 0, stated one paragraph earlier) but does not thereby raise expected persistence,
+  from one where that dependence does raise persistence (the inequality's own >0 clause) --
+  the second is agency, the first is mere coupling, not yet H2's own layer split.
+what_it_assumes: Assumes Tp and the state-dependence of C are well-defined and differentiable
+  in spirit; does not itself use the words "layer" or "layer-2", nor define a recoverable-gap
+  quantity between within-structure choice and structure change -- that framing is this
+  programme's own gloss (H2), not this passage's own vocabulary.
+stance: UNDETERMINED
+what_it_would_say_against_us: 'Would say H2''s statement over-attributes -- it names this
+  formula "Def. 3", but Def. 3''s own exact_passage (cite-causal-agency-defs-001) is prose
+  without the inequality -- the formula and the definition are adjacent but distinct passages
+  in the source, and conflating them (as the review found) misstates what is where.'
+citation_card: cite-causal-agency-formula-002
+defeater_class: structural_formal
+legitimate_defeater: Defeated if the formula and Def. 3's prose statement are shown to be the
+  source's own single stated equivalence (i.e. the source itself treats them as one claim, not
+  two adjacent passages) -- not checked by this row.
+defeater_status: untested
+verified:
+  metadata_verified: true
+  claim_match_verified: false

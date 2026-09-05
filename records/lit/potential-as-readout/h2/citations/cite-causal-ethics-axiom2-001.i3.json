@@ -1,0 +1,23 @@
+{
+ "vendor": "claude",
+ "fetched": {
+  "source": "zenodo",
+  "title": "CAUSAL ETHICS : The Mathematics of Regime Choice and Survival",
+  "authors": [
+   "Lahtee, Yaoharee"
+  ],
+  "year": "2026",
+  "container": "Zenodo",
+  "abstract": " Causal Ethics (CE) is formulated in this book as a constraint and admissibility layer on system dynamics, rather than a theory of moral sentiment, preference aggregation, or normative doctrine. Its purpose is to characterize which forms of agency, interaction, and regime selection can persist without violating causal, spectral, and stability constraints. CE is not a utilitarian calculus, not a virtue taxonomy, and not a theological or cultural ethics system. It does not rank values, prescribe moral ends, or claim moral authority. Instead, it formalizes ethics as a necessary condition for the survival and coherence of agency within manifested reality. The core primitive of CE is Choice: an Agency is defined operationally as an entity capable of selecting a regime of translation and interaction. Without choice, there is no ethics, responsibility, or moral cost. The framework yields testable diagnostics&mdash; Lyapunov ethical load, spectral survival, regime incompatibility, and accumulated moral cost&mdash; and produces falsifiable forecasts for individual, collective, and artificial agents operating under finite causal memory. This abstract constitutes a scope contract for the entire book. ",
+  "_card_url": "https://zenodo.org/api/records/18444260/files/Causal%20Ethics.pdf/content"
+ },
+ "verdict": {
+  "metadata_matches": true,
+  "passage_plausible": true,
+  "claim_match": true,
+  "bearing": "SUPPORTS",
+  "reason": "Fetched metadata (title, first author Lahtee, 2026) matches the card; the Axiom II passage is verbatim in the fetched text at ch.2 §2.2. The text defines agency as selecting a regime R_A from the admissible set R_adm(t'), which is exactly the layer-1 (choice within a fixed admissible structure) object H2 attributes to it.",
+  "passage_mechanical": "verbatim prefix found in fetched open text"
+ },
+ "date": "2026-09-04"
+}

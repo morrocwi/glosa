@@ -1,0 +1,76 @@
+{
+ "file": "dist/Experience_Is_Meaning_Giving_v2_0_STRONG_CLAIM.pdf",
+ "title": "Experience Is Meaning-Giving: A Strong-Form Readout-Retention Theory of Phenomena, Resonance, Rhythm, Accumulation, and Transformative Release (Full Paper v2.0, strong-claim / reviewer-hardened edition)",
+ "upload_type": "publication",
+ "publication_type": "preprint",
+ "publication_date": "2026-09-05",
+ "description_html": "<p><b>Status.</b> K0 strong-form conceptual and measurement architecture, revised after adversarial peer review without withdrawing the paper’s central claims. Programme synthesis from Readout Genesis, Human LoRA, Human Learning, Meaning Before Naming, Fusion/Tunnel, and CTSA Human Return; part of the series <i>When AI Expands Human Potential</i> (index DOI 10.5281/zenodo.22308201). Internal programme manuscripts establish genealogy; external literature constrains novelty and identifies rival mechanisms.</p><p><b>Central claim.</b> A phenomenon becomes an experience for a finite human by being given meaning: it becomes affectively, pragmatically, autobiographically, conceptually, or epistemically significant within a reader-conditioned relation to embodiment, retained history, expectation, value, available concepts, and context. These are modes of one meaning-giving relation, not competing definitions of experience. Meaning-giving can begin before stable naming, while naming can recursively reorganize later experience. When a present externally prompted experience corresponds with retained internal experiential organization, resonance occurs as external-internal congruence. When encounters recur with structured timing, rhythm organizes recurrence, spacing, interruption, emphasis, and return. Repeated retained changes can accumulate transition readiness; sufficiently aligned encounters may contribute to barrier crossing and transformative release. None of these transitions certifies truth, healing, wisdom, or improvement. In Human-AI interaction, the prompt is therefore not the beginning of the human trajectory but a bounded articulation of an already meaning-shaped state.</p><p><b>Abstract (opening).</b> What is an experience? The Human-AI Readout Programme has progressively separated world events, retained traces, meaning, memory, knowledge, language, and human return, but its earlier manuscripts stopped short of a single defended theory of how a phenomenon becomes lived experience. This paper proposes that experience is meaning-giving: not the arbitrary projection of a private label onto neutral data, and not the reception of a finished semantic object already contained in the world, but a finite, embodied, affectively weighted, history- and context-conditioned readout relation through which a phenomenon becomes significant for a particular agent. External literature constrains rather than validates the architecture: phenomenology, enactivism, appraisal theory, emotion research, predictive processing, memory and insight research, music cognition (rhythm), and Human-AI feedback experiments.</p>",
+ "keywords": [
+  "experience",
+  "meaning-giving",
+  "phenomenology",
+  "resonance",
+  "rhythm",
+  "readout-retention",
+  "transformative learning",
+  "enactivism",
+  "appraisal theory",
+  "predictive processing",
+  "human-AI interaction",
+  "Human-AI Readout Programme",
+  "GLOSA K0"
+ ],
+ "language": "eng",
+ "version": "v2.0-strong-claim-2026-09-05",
+ "related": [
+  {
+   "identifier": "10.5281/zenodo.21425420",
+   "relation": "continues"
+  },
+  {
+   "identifier": "10.5281/zenodo.21529456",
+   "relation": "references"
+  },
+  {
+   "identifier": "10.5281/zenodo.22341297",
+   "relation": "references"
+  },
+  {
+   "identifier": "10.5281/zenodo.22307148",
+   "relation": "references"
+  },
+  {
+   "identifier": "10.5281/zenodo.22318040",
+   "relation": "references"
+  },
+  {
+   "identifier": "10.5281/zenodo.22339909",
+   "relation": "references"
+  },
+  {
+   "identifier": "10.5281/zenodo.22340255",
+   "relation": "references",
+   "resource_type": "software"
+  },
+  {
+   "identifier": "10.5281/zenodo.22308201",
+   "relation": "isPartOf",
+   "resource_type": "publication-other"
+  },
+  {
+   "identifier": "10.5281/zenodo.22301552",
+   "relation": "isPartOf",
+   "resource_type": "publication-other"
+  },
+  {
+   "identifier": "10.5281/zenodo.22301459",
+   "relation": "isPartOf",
+   "resource_type": "publication-other"
+  },
+  {
+   "identifier": "10.5281/zenodo.22301465",
+   "relation": "isPartOf",
+   "resource_type": "publication-other"
+  }
+ ]
+}

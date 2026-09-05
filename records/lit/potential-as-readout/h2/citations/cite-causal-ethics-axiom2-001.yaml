@@ -1,0 +1,53 @@
+$schema: citation_card.schema.json
+id: cite-causal-ethics-axiom2-001
+claim_ref: hypothesis-potential-as-readout-H2
+identifier:
+  kind: DOI
+  value: 10.5281/zenodo.18444260
+fetch_status: FETCHED
+fetched_at: '2026-09-05'
+metadata_verified: true
+metadata_verified_by: mechanical:direct_fetch
+metadata_verified_at: '2026-09-05'
+claim_match_verified: true
+claim_match_verified_by: route:claude
+claim_match_verified_at: null
+exact_passage: 'Axiom II (Agency-as-Choice). An entity qualifies as an agency if and
+  only if it can instantiate a choice of regime relative to M (t′ ):'
+scope: DIRECT_QUOTATION
+page_or_locator: p.9, §2.2 Axiom II -- Agency as Capacity for Choice -- verified by
+  direct pdftotext extraction against the document's own header "CHAPTER 2. PRIMITIVES
+  AND AXIOMS OF CAUSAL ETHICS   9" immediately preceding this section.
+evidence_tier: definition
+independence_class: I1
+who_verified: 'route:claude (I1 route: same model, fresh headless session (no shared
+  context); abstract/metadata level, not full text) -- see cite-causal-ethics-axiom2-001.i3.json'
+verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
+status: VERIFIED
+xenon_ledger_ref: null
+disclosure: 'Same-session AI check only (I1) -- not yet independently verified; run
+  lit_crossvendor_check.py for I3. I1 route (claude) fetched the full PDF from the
+  Zenodo API file-content URL below, ran `pdftotext`, and located Axiom II verbatim
+  in §2.2, immediately after Chapter 1''s notation table (M, Radm, R). claim_match_verified
+  is false because no independent (I3+) route has yet judged whether this passage
+  bears on H2''s own claim (that Causal Ethics'' Axiom II selects a regime within
+  an already-fixed constraint/admissible structure, i.e. is layer-1) as the card''s
+  scope states. Self-citation disclosed (programme''s own prior work). | I1 route
+  (claude) judged from fetched metadata/abstract + the card''s quoted passage, not
+  full text: Fetched metadata (title, first author Lahtee, 2026) matches the card;
+  the Axiom II passage is verbatim in the fetched text at ch.2 §2.2. The text defines
+  agency as selecting a regime R_A from the admissible set R_adm(t''), which is exactly
+  the layer-1 (choice within a fixed admissible structure) object H2 attributes to
+  it.'
+superseded_by: null
+notes: 'Programme''s own prior work (self-citation, disclosed as such). This is Causal
+  Ethics'' own Axiom II, which H2''s statement reads as the layer-1 object (selecting/instantiating
+  a regime R_A from the admissible set R_adm(t''), a choice within an already-declared
+  admissible set, not a change to what is admissible). Downloaded fresh from the Zenodo
+  API this session (record 18444260), not from memory or an old local copy. Added
+  per task instruction to give H2 a citation card for Causal Ethics'' own Axiom II,
+  closing the gap R1/R2 both flagged: "the claim ranges over five texts but evidence
+  covers only two" (R1) / "only two programme texts are evidenced" (R2).'
+fetched_from_url: https://zenodo.org/api/records/18444260/files/Causal%20Ethics.pdf/content
+line_or_paragraph: char offset 14198 of normalized fetched text (~paragraph 1); verbatim
+  prefix match

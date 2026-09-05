@@ -7,22 +7,27 @@ statement:
   text: '"Potential" quantities in this programme''s own texts -- the feasible set $\Pi^{\mathrm{feas}}$
     of Agency Potential (AP), the admissible-regime set $R_{\mathrm{adm}}$ of Causal Ethics, the viable
     region $V$ of Causal Agency, the "feasible life-space" of Causal Grammar -- are proposed to be readable,
-    without loss of the programme''s own claims, as the WITNESSED set: the finite, enumerable set of policies
-    for which a retained record exists that an agent with comparable history and conditions executed the
-    policy within a declared horizon and budget (paper/main.tex §"Definitions on the witnessed set", eq.
-    1''s Witness Rule). Under this reading the envelope $p^\ast$ computed over the set is a checkable
-    readout (a reader can ask: does the record exist, is the set finite and enumerable), not an unbounded
-    declaration only its author can see. This card states the operational definition and its falsifier;
-    it does not yet claim the definition has been independently checked against the wider literature --
-    that check is the citation work this card''s evidence_relations point at, not yet complete or independently
-    reviewed (see `scope.claim_scope` and `non_claims`).'
+    read on the programme''s own sets under assumption A1 (stated below), which this card does not test,
+    as the WITNESSED set: the finite, enumerable set of policies for which a retained record exists that
+    an agent comparable under the declared comparability relation (see `scope.comparability_relation`)
+    executed the policy within a declared horizon and budget (paper/main.tex §"Definitions on the witnessed
+    set", eq. 1''s Witness Rule). Under this reading the envelope $p^\ast$ computed over the set is a
+    checkable readout (a reader can ask: does the record exist, is the set finite and enumerable, does the
+    declared comparability relation hold) relative to that declared relation, never absolutely, and not
+    an unbounded declaration only its author can see. This card states the operational definition and its
+    falsifier; it does not yet claim the definition has been independently checked against the wider
+    literature -- that check is the citation work this card''s evidence_relations point at, not yet
+    independently (I3+) reviewed (see `scope.claim_scope` and `non_claims`).'
   is_verbatim_quote: false
   translation:
     text: 'ปริมาณ "ศักยภาพ" ในข้อความของโปรแกรมนี้เอง -- $\Pi^{\mathrm{feas}}$ ของ Agency Potential, $R_{\mathrm{adm}}$
       ของ Causal Ethics, $V$ ของ Causal Agency, "feasible life-space" ของ Causal Grammar -- เสนอให้อ่านได้
-      โดยไม่เสียข้อเคลมเดิม เป็น **เซตที่มีพยาน**: เซตจำกัดของ นโยบายที่มีบันทึกว่าเอเจนต์ที่มีประวัติ/เงื่อนไขใกล้เคียงเคยทำสำเร็จภายในขอบเวลาและงบประมาณที่
-      ประกาศไว้ ภายใต้การอ่านนี้ envelope $p^\ast$ ที่คำนวณเหนือเซตนั้นเป็นการอ่านค่าที่ตรวจสอบได้ ไม่ใช่การประกาศที่ไม่มีขอบเขต
-      การ์ดนี้ยังไม่อ้างว่านิยามนี้ผ่านการตรวจสอบวรรณกรรมภายนอกแล้ว งานตรวจสอบนั้นยังไม่เสร็จ ยังไม่ผ่านการทบทวนอิสระ'
+      บนเซตของโปรแกรมนี้เอง ภายใต้สมมติฐาน A1 (ระบุด้านล่าง) ซึ่งการ์ดนี้ยังไม่ทดสอบ เป็น **เซตที่มีพยาน**:
+      เซตจำกัดของนโยบายที่มีบันทึกว่าเอเจนต์ที่เทียบเคียงกันได้ตามความสัมพันธ์เทียบเคียงที่ประกาศไว้ (ดู
+      `scope.comparability_relation`) เคยทำสำเร็จภายในขอบเวลาและงบประมาณที่ประกาศไว้ ภายใต้การอ่านนี้
+      envelope $p^\ast$ ที่คำนวณเหนือเซตนั้นเป็นการอ่านค่าที่ตรวจสอบได้เทียบกับความสัมพันธ์ที่ประกาศไว้เท่านั้น
+      ไม่ใช่การตรวจสอบแบบสัมบูรณ์ และไม่ใช่การประกาศที่ไม่มีขอบเขต การ์ดนี้ยังไม่อ้างว่านิยามนี้ผ่านการตรวจสอบวรรณกรรมภายนอกอย่างอิสระ
+      (I3+) แล้ว'
     language: th
     translation_status: machine
 standpoint:
@@ -43,16 +48,22 @@ standpoint:
     the Readout Condition's Existence-Attribution-Disclosure, gated through the independence ladder before
     public release) -- this card is produced by running glosa on the "Potential as a Readout" paper (society-justice-peace
     series, cpg_research_journal), per founder rulings BBL-2026-09-05-130/132/134.
-claim_type: FORMAL
-claim_type_mapping_note: 'hypotheses.md/hypothesis_selection.yaml label H1 an operational-definition/DEFINITIONAL
-  claim (a set-membership rule stated as an exact functional, paper/main.tex eq. 1). `claim_card.schema.json`
-  ''s `claim_type` enum has no `DEFINITIONAL` value (EMPIRICAL|FORMAL|INTERPRETIVE|NORMATIVE| CONVENTIONAL_LEGAL|DECISION|SOCIAL|HUMAN_PARTICIPANT).
-  FORMAL is used as the schema''s closest fit: H1 states an exact, checkable set-membership criterion
-  (a policy is IN the witnessed set iff a retained execution record exists), consistent with this card''s
-  own `lens_translation.formal_applicability: exact_functional` -- not a measurement report (EMPIRICAL),
-  a meaning-location claim about an existing concept (INTERPRETIVE, used for the sibling H2 card, GLOSA-CC-20260905-0302),
-  or a mechanism-adoption claim (NORMATIVE). Documented rather than silent, matching the same-discipline
-  precedent in GLOSA-CC-20260904-0201''s own `claim_type_mapping_note`.'
+claim_type: INTERPRETIVE
+claim_type_mapping_note: 'REVISED 2026-09-05 after three-route review (reviews/GLOSA-CC-20260905-0301.R1/R2/R3.review_report.json):
+  hypotheses.md/hypothesis_selection.yaml label H1 an operational-definition/DEFINITIONAL claim (a
+  set-membership rule stated as an exact functional, paper/main.tex eq. 1), and this card originally mapped
+  that to FORMAL with `lens_translation.formal_applicability: exact_functional`. All three review routes
+  found the "exact functional" reading undercut by an undeclared comparability predicate ("comparable
+  history and conditions" -- named by R1, R2, and R3 alike): a reader cannot mechanically decide set
+  membership without first fixing who counts as comparable, so the rule is not an exact functional over
+  raw records, it is a functional relative to a declared comparability relation the card must state (now
+  done, `scope.comparability_relation`). `claim_card.schema.json`''s `claim_type` enum has no `DEFINITIONAL`
+  value (EMPIRICAL|FORMAL|INTERPRETIVE|NORMATIVE|CONVENTIONAL_LEGAL|DECISION|SOCIAL|HUMAN_PARTICIPANT).
+  INTERPRETIVE is now used as the schema''s closest fit, matching the mapping the sibling H2 card
+  (GLOSA-CC-20260905-0302) uses for a structurally similar relation-dependent reading: H1 restates where a
+  text-internal concept (the programme''s own feasible/admissible/viable sets) is located, relative to a
+  declared relation, not an absolute exact-functional set-membership test. Documented rather than silent,
+  matching the same-discipline precedent in GLOSA-CC-20260904-0201''s own `claim_type_mapping_note`.'
 genre: conceptual
 venue_track: none
 companion_of: null
@@ -94,7 +105,7 @@ lens_translation:
     source text intends, without smuggling in an unretained continuum. Phi_z0 is a checkability functional,
     not a truth-functional -- it certifies the definition is checkable, not that any given envelope value
     is correct.'
-  formal_applicability: exact_functional
+  formal_applicability: relational_pointwise
 hypothesis_world:
   text: If a "potential" quantity is defined as the witnessed set (the finite, enumerable set of policies
     for which a retained record exists that a comparable agent executed within a declared horizon/budget)

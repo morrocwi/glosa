@@ -39,7 +39,37 @@ citations:
   claim_match_verification_route: NOT_YET
   retraction_check: UNCHECKED
   dialogue_table_stance: undetermined
+- citation_card_id: cite-causal-agency-formula-002
+  status: VERIFIED
+  identifier_kind: DOI
+  fetch_status: FETCHED
+  acquisition_log_ref: null
+  metadata_verified: true
+  claim_match_verified: true
+  claim_match_verification_route: NOT_YET
+  retraction_check: UNCHECKED
+  dialogue_table_stance: undetermined
 - citation_card_id: cite-causal-agency-protoagency-001
+  status: VERIFIED
+  identifier_kind: DOI
+  fetch_status: FETCHED
+  acquisition_log_ref: null
+  metadata_verified: true
+  claim_match_verified: true
+  claim_match_verification_route: NOT_YET
+  retraction_check: UNCHECKED
+  dialogue_table_stance: undetermined
+- citation_card_id: cite-causal-agency-protoagency-002
+  status: VERIFIED
+  identifier_kind: DOI
+  fetch_status: FETCHED
+  acquisition_log_ref: null
+  metadata_verified: true
+  claim_match_verified: true
+  claim_match_verification_route: NOT_YET
+  retraction_check: UNCHECKED
+  dialogue_table_stance: undetermined
+- citation_card_id: cite-causal-ethics-axiom2-001
   status: VERIFIED
   identifier_kind: DOI
   fetch_status: FETCHED
@@ -142,14 +172,14 @@ diversity_audit:
       agrees: 1
       disagrees: 0
       orthogonal: 0
-      undetermined: 11
+      undetermined: 14
     by_geography_or_institution: {}
   concentration_flags: []
   zero_disagree_flag: false
   never_claim_diverse_without_counts: true
 accuracy:
-  total_citations: 12
-  verified_count: 12
+  total_citations: 15
+  verified_count: 15
   spot_check:
     applicable: true
     proposed_n_percent: 20
