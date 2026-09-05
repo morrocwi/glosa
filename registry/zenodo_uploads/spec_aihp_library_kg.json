@@ -1,0 +1,56 @@
+{
+ "file": "docs/library/aihp_kg.pdf",
+ "title": "Knowledge graph of the Zenodo library \"When AI Expands Human Potential\" — machine-readable map (nodes, edges, lineage chains, reading guide for AI readers)",
+ "upload_type": "dataset",
+ "publication_date": "2026-09-05",
+ "description_html": "<p><b>What this is.</b> A knowledge graph of the series index <i>When AI Expands Human Potential</i> (hub DOI 10.5281/zenodo.22308201): every member record is a node (its DOI), every relation the author wrote into a record's Zenodo <code>related_identifiers</code> is an edge (<code>hasPart</code>, <code>isPartOf</code>, <code>continues</code>, <code>references</code>, <code>isSupplementTo</code>…), plus version edges derived from Zenodo concept ids. Built from live Zenodo metadata on 5 September 2026; nothing is inferred from paper content.</p><p><b>Files.</b> <code>AIHP_LIBRARY_KG.md</code> — reading guide written for AI and human readers (relation vocabulary, lineage chains oldest→newest, member table, traversal recipes, what not to infer, a Mermaid diagram); <code>aihp_kg.json</code> — nodes + edges, JSON-LD flavoured (<code>@id</code> = DOI URL); <code>aihp_kg_edges.jsonl</code> — one edge per line; <code>aihp_kg.svg/.png/.pdf</code> — layered render, rows = publication month, latest versions only.</p><p><b>Readout, not truth.</b> The graph is a diagram of the metadata as fetched on the build date. Edge counts are not importance; each record's own status line (K0, not peer reviewed, claim tiers) is the claim ceiling. Generator: <code>scripts/zenodo_library_kg.py</code> in the glosa repository (10.5281/zenodo.22301059), CC BY 4.0; re-run it to rebuild the graph after the library changes.</p>",
+ "keywords": [
+  "knowledge graph",
+  "Zenodo",
+  "research library",
+  "human-AI collaboration",
+  "epistemic fusion",
+  "Readout Universe",
+  "glosa",
+  "JSON-LD",
+  "machine-readable",
+  "When AI Expands Human Potential"
+ ],
+ "language": "eng",
+ "version": "build-2026-09-05",
+ "related": [
+  {
+   "identifier": "10.5281/zenodo.22308201",
+   "relation": "isSupplementTo",
+   "resource_type": "publication-other"
+  },
+  {
+   "identifier": "10.5281/zenodo.22308201",
+   "relation": "isPartOf",
+   "resource_type": "publication-other"
+  },
+  {
+   "identifier": "10.5281/zenodo.22301059",
+   "relation": "isDerivedFrom",
+   "resource_type": "software"
+  },
+  {
+   "identifier": "10.5281/zenodo.22301552",
+   "relation": "isPartOf",
+   "resource_type": "publication-other"
+  },
+  {
+   "identifier": "10.5281/zenodo.22301459",
+   "relation": "isPartOf",
+   "resource_type": "publication-other"
+  }
+ ],
+ "files": [
+  "docs/library/aihp_kg.pdf",
+  "docs/library/AIHP_LIBRARY_KG.md",
+  "docs/library/aihp_kg.json",
+  "docs/library/aihp_kg_edges.jsonl",
+  "docs/library/aihp_kg.svg",
+  "docs/library/aihp_kg.png"
+ ]
+}

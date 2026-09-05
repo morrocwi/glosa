@@ -1,0 +1,11 @@
+{
+ "deposition_id": 22341671,
+ "founder_instructed_bypass": {
+  "instruction": "นายทำ kg graph ของห้องสมุดรวมเหล่านี้ใน zenodo ให้เอไอตัวอื่นอ่านแล้วเข้าใจ (founder chat 2026-09-05)",
+  "logged_at": "2026-09-05T18:25:56"
+ },
+ "doi": "10.5281/zenodo.22341671",
+ "conceptdoi": "10.5281/zenodo.22341670",
+ "url": "https://zenodo.org/record/22341671",
+ "title": "Knowledge graph of the Zenodo library \"When AI Expands Human Potential\" — machine-readable map (nodes, edges, lineage chains, reading guide for AI readers)"
+}

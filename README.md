@@ -159,6 +159,10 @@ judgment against the DAG. Full, generated, one-row-per-card table (never hand-ed
 - Installable skills: `plugins/glosa/skills/` (Claude plugin), `mcp/glosa_mcp_server.py` (MCP),
   `cli/glosa` (CLI). Toolchain list: `TOOLCHAIN.md`.
 
+### Library knowledge graph (Zenodo)
+
+`docs/library/` holds a machine-readable map of the Zenodo series *When AI Expands Human Potential* (hub 10.5281/zenodo.22308201): `AIHP_LIBRARY_KG.md` (reading guide for AI readers), `aihp_kg.json` / `aihp_kg_edges.jsonl` (nodes, edges, lineage chains), `aihp_kg.svg`. Deposited as 10.5281/zenodo.22341671. Rebuild after the library changes: `python3 scripts/zenodo_library_kg.py`.
+
 ### K-state and registry status
 
 **K0** — the three claim cards behind the concept paper were reviewed by cross-vendor routes (I3)
