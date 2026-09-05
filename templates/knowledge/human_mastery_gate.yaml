@@ -1,0 +1,33 @@
+# Human Mastery Gate (methodology/P17_human_mastery_gate.md, HU-1, hu.mastery-gate-wired, build_now)
+#
+# One-line rule: an L3+ artifact may not leave Draft until the human who owns it can defend it,
+# unaided by the AI, against this fixed ten-question live checklist (verbatim, from
+# templates/paper/arxiv-twocol/main.tex:375-378 and its onecol twin). Required outside the arXiv
+# paper genre, which already carries the checklist inline via its own "Gate status:" line -- this
+# file is the genre-independent form for a code release, dataset release, or any other L3+
+# artifact type without that template.
+#
+# NON-DELEGABLE: every answer below is written by the human being gated, in their own words. An
+# AI may hold the ten questions ready and prompt the human through them (same bound as P01's
+# completeness-prompting rule), but may NEVER fill an answer on the human's behalf -- a
+# filled-but-ai_filled-tagged answer is itself a NOT_READY condition, not a disclosed pass.
+gate_id: hmg-<slug>-<nnn>
+artifact_ref: <claim_card.claim_id / release_manifest.manifest_id this gate defends -- one gate per artifact>
+gate_status: PASS | PASS_WITH_NAMED_GAPS | NOT_READY   # human-signed only, never AI-set
+answers:                            # all ten required; presence-checked only, never correctness-checked
+  the_problem: <can you state the problem unaided?>
+  major_literature_families: <can you name the major literature families unaided?>
+  closest_constructs: <can you name the closest existing constructs unaided?>
+  precise_inadequacy: <can you state the precise inadequacy of those constructs unaided?>
+  proposed_mechanism: <can you state the proposed mechanism unaided?>
+  boundary_conditions: <can you state the boundary conditions unaided?>
+  strongest_counterargument: <can you state the strongest counterargument unaided?>
+  strongest_counterexample: <can you state the strongest counterexample unaided?>
+  falsifying_record: <can you point to the falsifying record unaided?>
+  discriminating_empirical_test: <can you name the discriminating empirical test unaided?>
+named_gaps:                         # REQUIRED, non-empty, only when gate_status: PASS_WITH_NAMED_GAPS
+  - <which of the ten the human could not answer unaided, named honestly>
+ai_filled: []                       # any AI-authored answer goes here, disclosed -- forces gate_status: NOT_READY
+human_owner: <human role/name>
+date: <YYYY-MM-DD>
+disclaimers: [D-STANDPOINT]

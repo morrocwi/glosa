@@ -38,6 +38,17 @@ dimensions:
 - **R7 — Completeness.** Every `\claimref{}`/field the artifact points at actually resolves (no
   dangling reference, no promised appendix missing) — the same discipline `FOUNDATION_v0.5.md`
   §12 applies to its own document, applied here to the artifact being published.
+- **R8 — Human Mastery Gate.** (`hu.mastery-gate-wired`, HU-1, `design/SESSION_ARCH_v0.4_SPEC.md`
+  §11.1, `methodology/P17_human_mastery_gate.md`.) A linked `human_mastery_gate.yaml`
+  (`schema/human_mastery_gate.schema.json`) must have `gate_status != NOT_READY` for any L3+
+  artifact — `PASS_WITH_NAMED_GAPS` is a legal, honest outcome. An arXiv-paper-genre artifact
+  using `templates/paper/arxiv-twocol/main.tex`'s inline `Gate status:` line satisfies R8 without
+  a separate file. **Failing control — MUST fire:** a non-Paper-genre L3+ claim card with no
+  `human_mastery_gate.yaml` linked → `BLOCKED: NO_MASTERY_GATE_LINKED`. **MUST NOT fire:** an
+  arXiv-paper-genre artifact with `Gate status: PASS` already filled. Per `P17`, R8 is not a
+  vertical-authority certification layer (`EPIS-KNOWLEDGE-VALIDATION`) — it is this repo's own
+  maker≠checker≠approver discipline applied to the human's own unaided defense of their own
+  claim.
 
 ## Why / incident
 

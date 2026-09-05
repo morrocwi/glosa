@@ -1,0 +1,77 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://glosa.example/schema/human_mastery_gate.schema.json",
+  "title": "glosa human mastery gate",
+  "description": "tier: Dr (specified; independently unreviewed). Implements methodology/P17_human_mastery_gate.md (HU-1, design/SESSION_ARCH_v0.4_SPEC.md §11.1, hu.mastery-gate-wired, build_now): the genre-independent form of the ten-question live unaided-defense checklist already stated verbatim at templates/paper/arxiv-twocol/main.tex:375-378 (and its onecol twin). Feeds methodology/P10_publish_gate.md's new R8 dimension. Every answer field is human-authored ONLY -- never `ai_filled` (mirrors standpoint.declared_basis's non-delegable rule, P01); an AI may prompt the human through the ten questions but never fills an answer on the human's behalf (P17 'Non-delegable'). Namespace https://glosa.example/ is a placeholder.",
+  "type": "object",
+  "required": ["gate_id", "artifact_ref", "gate_status", "answers", "human_owner", "date"],
+  "additionalProperties": true,
+  "properties": {
+    "gate_id": { "type": "string", "minLength": 1 },
+    "artifact_ref": {
+      "description": "The L3+ artifact (claim_card.claim_id, release_manifest.manifest_id, or equivalent) this gate defends. One gate per artifact -- not shared across artifacts.",
+      "type": "string",
+      "minLength": 1
+    },
+    "gate_status": {
+      "description": "P17 'Inputs -> outputs': required. NOT_READY blocks R8 (methodology/P10_publish_gate.md); PASS_WITH_NAMED_GAPS is a legal, honest outcome (requires named_gaps below), never silently rounded up to PASS.",
+      "enum": ["PASS", "PASS_WITH_NAMED_GAPS", "NOT_READY"]
+    },
+    "answers": {
+      "description": "The ten questions verbatim from templates/paper/arxiv-twocol/main.tex:375-378 (one-fact-one-home: this schema does not restate the question text, only names the ten answer slots by the same order). Each is a free-text human answer -- presence-checked only, never correctness-checked (same presence-vs-correctness split as the bias register in methodology/P15_problem_first_and_responsibility.md).",
+      "type": "object",
+      "required": [
+        "the_problem",
+        "major_literature_families",
+        "closest_constructs",
+        "precise_inadequacy",
+        "proposed_mechanism",
+        "boundary_conditions",
+        "strongest_counterargument",
+        "strongest_counterexample",
+        "falsifying_record",
+        "discriminating_empirical_test"
+      ],
+      "properties": {
+        "the_problem": { "type": "string" },
+        "major_literature_families": { "type": "string" },
+        "closest_constructs": { "type": "string" },
+        "precise_inadequacy": { "type": "string" },
+        "proposed_mechanism": { "type": "string" },
+        "boundary_conditions": { "type": "string" },
+        "strongest_counterargument": { "type": "string" },
+        "strongest_counterexample": { "type": "string" },
+        "falsifying_record": { "type": "string" },
+        "discriminating_empirical_test": { "type": "string" }
+      }
+    },
+    "named_gaps": {
+      "description": "Required, non-empty, when gate_status == PASS_WITH_NAMED_GAPS -- which of the ten questions the human could not answer unaided, named honestly rather than silently left as a filled-but-hollow answer.",
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 }
+    },
+    "ai_filled": {
+      "description": "P17 'Non-delegable': a filled-but-ai_filled-tagged answer is itself a NOT_READY condition, never a disclosed pass. If any answer was AI-assisted in wording only (never in substance), disclose it here honestly -- see allOf below (any non-empty entry here forces gate_status to NOT_READY).",
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "human_owner": { "type": "string", "minLength": 1 },
+    "date": { "type": "string", "minLength": 1 },
+    "disclaimers": {
+      "type": "array",
+      "items": { "$ref": "common.defs.json#/definitions/disclaimer_id" }
+    }
+  },
+  "allOf": [
+    {
+      "description": "PASS_WITH_NAMED_GAPS requires at least one named_gaps entry -- the honest-disclosure branch, never a silent PASS.",
+      "if": { "properties": { "gate_status": { "const": "PASS_WITH_NAMED_GAPS" } } },
+      "then": { "required": ["named_gaps"], "properties": { "named_gaps": { "type": "array", "minItems": 1 } } }
+    },
+    {
+      "description": "P17 'Non-delegable': any ai_filled answer disclosure forces gate_status to NOT_READY -- an AI-filled answer is never a disclosed pass, at any gate_status.",
+      "if": { "properties": { "ai_filled": { "type": "array", "minItems": 1 } }, "required": ["ai_filled"] },
+      "then": { "properties": { "gate_status": { "const": "NOT_READY" } } }
+    }
+  ]
+}

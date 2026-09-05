@@ -1,0 +1,20 @@
+{
+  "gate_id": "hmg-cat-litterbox-001",
+  "artifact_ref": "GLOSA-CC-20260904-0001",
+  "gate_status": "PASS",
+  "answers": {
+    "the_problem": "Does the litter box's distance from the cat's sleeping/resting area predict in-box vs out-of-box urination for this one cat?",
+    "major_literature_families": "None formally reviewed -- this is a household case study, not a literature-review-backed claim (see standpoint.disciplines_not_claimed).",
+    "closest_constructs": "General territorial/resource-placement behavior in domestic cats, as understood from ordinary pet-owner experience, not from a cited behavioral-science construct.",
+    "precise_inadequacy": "Ordinary household advice ('just clean the box more') does not address distance-to-sleeping-area as a variable at all.",
+    "proposed_mechanism": "Distance to litter box increases avoidance likelihood, hypothesized as an access-cost effect rather than a substrate or cleanliness effect.",
+    "boundary_conditions": "Single household, single cat, 14-day window; does not generalize beyond this observed case.",
+    "strongest_counterargument": "A single cat's preference could reflect an idiosyncratic dislike of that specific box location for reasons unrelated to distance (draft, noise, foot traffic).",
+    "strongest_counterexample": "If the cat used the box normally on some days at the far distance and avoided it on some days at the near distance, distance would not be the operative variable.",
+    "falsifying_record": "five_questions.tested.falsifier on GLOSA-CC-20260904-0001.",
+    "discriminating_empirical_test": "A repeated within-subject manipulation of box distance while holding substrate/cleaning constant (see dialogue_table_row.example.json's second observation window)."
+  },
+  "human_owner": "founder",
+  "date": "2026-09-05",
+  "disclaimers": ["D-STANDPOINT"]
+}

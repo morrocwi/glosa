@@ -173,6 +173,9 @@ _FALLBACK_REQUIRED = {
     "blackbox_note.schema.json": [
         "id", "project", "participants", "language", "privacy_scan", "lines", "cooking",
     ],
+    "human_mastery_gate.schema.json": [
+        "gate_id", "artifact_ref", "gate_status", "answers", "human_owner", "date",
+    ],
 }
 
 
@@ -1047,6 +1050,64 @@ def _rule30_defeater_class_error(card):
 
 
 # --------------------------------------------------------------------------------------------
+# Kernel rule31 (lrs.defeater-defeated-status-field, design/SESSION_ARCH_v0.4_SPEC.md §10.2):
+# defeater-tested-status warning. §10.2's own build already closed the real gap named there --
+# `provenance_dag.defeater_log` required `[node, date, outcome]` with an `outcome` enum
+# (claim_survived|claim_revised|claim_withdrawn) -- and explicitly named a NEW TOP-LEVEL status
+# field the "already-refuted idea" it deliberately did NOT add (one-fact-one-home: the fact
+# already lives on defeater_log). This rule stays inside that same discipline: `defeater_status`
+# is DERIVED/COMPUTED from `defeater_log` here, never a second schema field that could drift out
+# of sync with it, and is surfaced only as a WARNING (never a hard fail) once a card has advanced
+# past Draft with no defeater ever attempted -- "no independent check" is a real gap worth
+# flagging, but never itself a rejection reason (P10/`gate_release` still gate release on other
+# grounds). `_ADVANCED_STATUSES` intentionally excludes Draft; "Pending Review or beyond" is
+# `_ADVANCED_STATUSES | {"Pending Review"}` (rule 5's own `_ADVANCED_STATUSES` starts one step
+# later, at Approved-for-Test, so it is not reused as-is here).
+# tier: Dr (specified this pass) -> finite_diagnostic once tests/test_rule31_defeater_status.py
+# ships.
+# --------------------------------------------------------------------------------------------
+
+_DEFEATER_STATUS_ADVANCED_STATUSES = {"Pending Review"} | _ADVANCED_STATUSES
+
+
+def defeater_status_for_card(card):
+    """Derive `untested | tested_survived | tested_defeated` from
+    `provenance_dag.defeater_log[]` -- NEVER stored, always computed, so it cannot drift out of
+    sync with the log it summarizes (one-fact-one-home). `defeater_log: []` (or absent) is
+    `untested`. Any entry with `outcome` in (`claim_revised`, `claim_withdrawn`) makes the status
+    `tested_defeated` (a defeater was attempted and the claim did not survive unchanged, even if
+    other entries `claim_survived`); otherwise, at least one `claim_survived` entry makes it
+    `tested_survived`."""
+    log = ((card.get("provenance_dag") or {}).get("defeater_log")) or []
+    outcomes = {e.get("outcome") for e in log if isinstance(e, dict)}
+    if not outcomes:
+        return "untested"
+    if outcomes & {"claim_revised", "claim_withdrawn"}:
+        return "tested_defeated"
+    if "claim_survived" in outcomes:
+        return "tested_survived"
+    return "untested"
+
+
+def _rule31_defeater_status_warning(card):
+    """Kernel rule31 (WARNING only, never a hard fail): a card whose `status` has advanced past
+    Draft (Pending Review or beyond, per `_DEFEATER_STATUS_ADVANCED_STATUSES`) with a computed
+    `defeater_status_for_card()` of `untested` (i.e. `defeater_log` is empty) gets a warning
+    string. Returns None once any defeater has actually been logged, at any outcome."""
+    status = card.get("status")
+    if status not in _DEFEATER_STATUS_ADVANCED_STATUSES:
+        return None
+    if defeater_status_for_card(card) != "untested":
+        return None
+    return (
+        f"WARNING: rule31 -- status={status!r} (Pending Review or beyond) but "
+        "provenance_dag.defeater_log is empty (defeater_status=untested, derived) -- no defeater "
+        "has ever been attempted against this claim; not a hard fail, but log at least one "
+        "defeater_log entry (or its honest absence stays disclosed here every check)."
+    )
+
+
+# --------------------------------------------------------------------------------------------
 # validate_claim_card
 # --------------------------------------------------------------------------------------------
 
@@ -1180,6 +1241,11 @@ def validate_claim_card(card, allow_no_jsonschema=False, citation_cards=None):
     rule30_err = _rule30_defeater_class_error(card)
     if rule30_err:
         errors.append(rule30_err)
+
+    # Kernel rule31 (§10.2, lrs.defeater-defeated-status-field): defeater_status=untested warning
+    rule31_warn = _rule31_defeater_status_warning(card)
+    if rule31_warn:
+        warnings.append(rule31_warn)
 
     return _result(ok=not errors, errors=errors, warnings=warnings, tier=tier)
 
@@ -1344,6 +1410,41 @@ def validate_release_manifest(manifest, allow_no_jsonschema=False):
         errors.append(human_err)
 
     return _result(ok=not errors, errors=errors, warnings=warnings, tier=tier)
+
+
+def validate_human_mastery_gate(gate, allow_no_jsonschema=False):
+    """Validate a human_mastery_gate payload (methodology/P17_human_mastery_gate.md, HU-1,
+    design/SESSION_ARCH_v0.4_SPEC.md §11.1, hu.mastery-gate-wired). Returns a Result.
+
+    `PASS_WITH_NAMED_GAPS` requiring a non-empty `named_gaps`, and any `ai_filled` disclosure
+    forcing `gate_status: NOT_READY`, are schema-enforced (allOf); this function does not
+    duplicate those. It is presence-only by design (P17 'What this card does NOT do' -- the
+    kernel can only check the ten answer fields are present and human-authored-shaped, never that
+    the defense given is actually sound).
+    """
+    if not isinstance(gate, dict):
+        return _result(ok=False, errors=["validate_human_mastery_gate: instance is not an object"])
+
+    errors, warnings, tier, _used_fallback = _schema_validate_gated(
+        gate, "human_mastery_gate.schema.json", allow_no_jsonschema
+    )
+    return _result(ok=not errors, errors=errors, warnings=warnings, tier=tier)
+
+
+def mastery_gate_r8_status(gate):
+    """methodology/P10_publish_gate.md R8 (hu.mastery-gate-wired): given a `human_mastery_gate`
+    payload or None (no gate linked), returns `(status, reason)` where `status` is one of
+    `PASS | BLOCKED`. `gate=None` -> `BLOCKED: NO_MASTERY_GATE_LINKED` (the spec's own named
+    failing-control string). A linked gate with `gate_status in (PASS, PASS_WITH_NAMED_GAPS)`
+    passes R8; `NOT_READY` blocks it."""
+    if gate is None:
+        return "BLOCKED", "BLOCKED: NO_MASTERY_GATE_LINKED"
+    res = validate_human_mastery_gate(gate)
+    if not res["ok"]:
+        return "BLOCKED", f"BLOCKED: NO_MASTERY_GATE_LINKED (linked gate failed validation: {res['errors']})"
+    if gate.get("gate_status") == "NOT_READY":
+        return "BLOCKED", "BLOCKED: NO_MASTERY_GATE_LINKED (gate_status=NOT_READY)"
+    return "PASS", "PASS"
 
 
 def validate_blackbox_note(note, allow_no_jsonschema=False):
@@ -2249,6 +2350,18 @@ def gate_release(manifest, cards, reviews, citation_cards=None):
         reasons.extend(f"manifest: {e}" for e in manifest_res["errors"])
     reasons.extend(f"manifest(warning): {w}" for w in manifest_res["warnings"])
 
+    # methodology/P10_publish_gate.md R8 (HU-1, hu.mastery-gate-wired, design/SESSION_ARCH_v0.4_SPEC.md
+    # §11.1): WARNING only, pending founder ratification of R8's exact enforcement strength -- never
+    # a hard_fail. `human_mastery_gate_ref` absent/null means no linked human_mastery_gate.yaml was
+    # named on this manifest (gate_release does not itself fetch/validate the linked file's content
+    # -- that is mastery_gate_r8_status's job, given the actual gate payload).
+    if not (manifest or {}).get("human_mastery_gate_ref"):
+        reasons.append(
+            "manifest(warning): R8 -- BLOCKED: NO_MASTERY_GATE_LINKED (human_mastery_gate_ref is "
+            "missing/null; not a hard fail, pending founder ratification of R8 -- see "
+            "methodology/P17_human_mastery_gate.md)"
+        )
+
     if citation_cards is not None:
         xl_res = xenon_ledger_check(citation_cards)
         if not xl_res["ok"]:
@@ -2358,6 +2471,7 @@ def self_test():
         ("blackbox_note.example.json", validate_blackbox_note),
         ("problem_card.example.json", validate_problem_card),
         ("hypothesis_selection.example.json", validate_hypothesis_selection),
+        ("human_mastery_gate.example.json", validate_human_mastery_gate),
     ]
     for filename, fn in pairs:
         p = examples_dir / filename

@@ -1618,7 +1618,17 @@ naming the lens without citing it, applied reflexively to glosa's own citation o
 
 ### 7.5 Human Mastery Gate
 
-Unchanged from v0.1 §7.5.
+Fixed (`hu.mastery-gate-wired`, HU-1, design/SESSION_ARCH_v0.4_SPEC.md §11.1, build_now): this
+pointer previously read "Unchanged from v0.1 §7.5" where no `FOUNDATION_v0.1.md` file exists
+anywhere in the repo (confirmed by direct read) — a broken pointer, not a real unchanged-content
+claim. The gate itself is `methodology/P17_human_mastery_gate.md`: an L3+ artifact may not leave
+`Draft` until the human who owns it can defend it, unaided by the AI, against the fixed
+ten-question live checklist already stated verbatim at
+`templates/paper/arxiv-twocol/main.tex:375-378` (and its onecol twin) — an arXiv-paper-genre
+artifact carries the checklist inline via its own `Gate status:` line; any other L3+ artifact
+type links a `schema/human_mastery_gate.schema.json` instance instead. `methodology/
+P10_publish_gate.md` gains a new **R8** dimension requiring `gate_status != NOT_READY`; see P17
+for the full gate, the non-delegable human/AI division of labour, and disclaimers.
 
 ### 7.6 K1→K2 conversion ledger
 

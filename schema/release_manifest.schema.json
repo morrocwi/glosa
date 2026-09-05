@@ -55,6 +55,10 @@
       "type": "boolean"
     },
     "blackbox_note_appendix_ref": { "type": ["string", "null"] },
+    "human_mastery_gate_ref": {
+      "description": "methodology/P10_publish_gate.md R8 (HU-1, hu.mastery-gate-wired, design/SESSION_ARCH_v0.4_SPEC.md §11.1): points at a schema/human_mastery_gate.schema.json instance's gate_id. Additive/optional; absence is a WARNING (kernel gate_release), not a hard schema fail -- pending founder ratification of R8's exact enforcement strength (P17 'founder_decision_needed: true'). An arXiv-paper-genre artifact using the inline Gate status: line may leave this null and satisfy R8 by that route instead.",
+      "type": ["string", "null"]
+    },
     "k_state_declared": { "$ref": "common.defs.json#/definitions/k_state" },
     "status": { "$ref": "common.defs.json#/definitions/release_status" },
     "disclaimers_emitted": {

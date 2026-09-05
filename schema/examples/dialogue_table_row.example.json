@@ -6,6 +6,8 @@
   "what_it_assumes": "substrate and cleaning frequency held constant across the manipulation",
   "stance": "YES",
   "what_it_would_say_against_us": "a single cat's second observation window is still n=1 -- does not rule out a time-varying confound such as the cat habituating over the two weeks, rather than distance itself",
+  "defeater_class": "empirical",
+  "legitimate_defeater": "defeated by a documented failed replication in an independent second observation window",
   "citation_card": "cite-cat-obs-001",
   "verified": { "metadata_verified": true, "claim_match_verified": true }
 }

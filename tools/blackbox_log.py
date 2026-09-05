@@ -8,9 +8,18 @@ usage:
   blackbox_log.py add-file path.md   (multi-line entry, verbatim)
   blackbox_log.py render             -> blackbox/log/BLACKBOX_LOG.md + .html + .pdf (via tools/render.py)
   blackbox_log.py deposit [--publish]  -> first time: create record; later: new version (needs ZENODO_TOKEN in env)
+  blackbox_log.py check-note path/to/blackbox_note.json  -> question_trace coverage check (below)
 Rules: entries are append-only (a correction is a new entry with kind=correction and `corrects:`); one pre-release
 history mutation on 2026-09-04 is disclosed in BBL-2026-09-04-082 rather than hidden;
 the log holds the founder's own words only; the AI writes no entries (founder ruling 2026-09-04) except a disclosed correction entry, by=ai, on the founder's instruction (BBL-2026-09-04-082).
+
+`check-note` (design/SESSION_ARCH_v0.4_SPEC.md §9.1/§9.4, design/FOUNDATION_v0.7_PATCH.md §4,
+schema.blackbox-question-trace, build_now): a MECHANICAL COVERAGE CHECK on a schema/blackbox_note.
+schema.json instance -- a different artifact from this file's own Blackbox LOG entries.jsonl above
+(the founder's private daily voice log; unrelated). Checks that every `lines[]` entry with
+`kind == "question"` has a matching `question_trace[]` entry (`question_trace[].n == lines[].n`),
+or that the note explicitly marks the question as a genuinely fresh one via `derived_from_line:
+null` on that trace entry -- never silently uncovered. tier: Dr (tool; independently unreviewed).
 """
 import os, sys, json, datetime, subprocess, urllib.request, urllib.parse, html
 
@@ -138,6 +147,45 @@ def deposit(publish=False):
     print(json.dumps(out, ensure_ascii=False))
 
 
+def question_trace_coverage(note):
+    """Coverage check for schema.blackbox-question-trace (build_now): `note` is a parsed
+    schema/blackbox_note.schema.json instance (dict). Returns a Result-shaped dict
+    {ok, errors, warnings, tier} -- `errors` names every `lines[].kind == "question"` line
+    (by `n`) that has no matching `question_trace[]` entry (`question_trace[].n == lines[].n`)
+    and whose `derived_from_line` on that entry is not explicitly `null` (a genuinely-fresh
+    question is legal, just must be marked, never silently absent). An entirely missing/empty
+    `question_trace` on a note with >=1 question-kind line is a full-coverage failure, one error
+    per uncovered line -- matching the acceptance test in
+    design/SESSION_ARCH_v0.4_SPEC.md §12 (`question_trace_gap` fixture)."""
+    if not isinstance(note, dict):
+        return {"ok": False, "errors": ["question_trace_coverage: instance is not an object"], "warnings": [], "tier": "Dr"}
+    lines = note.get("lines") or []
+    question_ns = [l.get("n") for l in lines if isinstance(l, dict) and l.get("kind") == "question"]
+    trace = note.get("question_trace") or []
+    covered = {t.get("n") for t in trace if isinstance(t, dict)}
+    errors = []
+    for n in question_ns:
+        if n not in covered:
+            errors.append(
+                f"question_trace_gap: lines[n={n}] is kind=question with no matching "
+                f"question_trace[].n == {n} entry (add one, with derived_from_line: null if this "
+                "question is genuinely fresh)"
+            )
+    return {"ok": not errors, "errors": errors, "warnings": [], "tier": "Dr"}
+
+
+def check_note(path):
+    note = json.load(open(path, encoding='utf-8'))
+    res = question_trace_coverage(note)
+    if res["ok"]:
+        print(f"PASS: {path} -- question_trace coverage OK ({len(note.get('question_trace') or [])} entr(y/ies))")
+    else:
+        print(f"FAIL: {path}")
+        for e in res["errors"]:
+            print(" -", e)
+    return res["ok"]
+
+
 if __name__ == '__main__':
     a = sys.argv[1:]
     if not a or a[0] == 'render':
@@ -155,3 +203,5 @@ if __name__ == '__main__':
         add(open(a[1], encoding='utf-8').read().strip(), 'finding', [], 'founder', None, 'file', cat)
     elif a[0] == 'deposit':
         deposit('--publish' in a)
+    elif a[0] == 'check-note':
+        sys.exit(0 if check_note(a[1]) else 1)

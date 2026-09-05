@@ -44,7 +44,7 @@ its loaded JSON and pass a `RefResolver(base_uri=schema["$id"], referrer=schema,
 the validator. See "How to validate" below for the exact pattern (and the actual script this task
 ran, at the path named there).
 
-## The 20 schemas, one line each
+## The 21 schemas, one line each
 
 | Schema | FOUNDATION_v0.5.md section | Notes |
 |---|---|---|
@@ -52,10 +52,10 @@ ran, at the path named there).
 | `evidence_relation.schema.json` | §3.2 `five_questions.tested.evidence_relations[]` | Standalone so `claim_card` can `$ref` it (one-fact-one-home) and so review/DVP tooling can validate one evidence relation in isolation. |
 | `review_report.schema.json` | §4.3, §7.3 (Bounded-Judge Law) | `verdict_tier` required, six values (chair ruling C4). Field renamed `independence_level` → `independence_class` to match chair ruling C1's "one string ladder, every schema." |
 | `citation_card.schema.json` | §7.8 | Integrity Firewall's two independently-flaggable booleans. `status` uses FOUNDATION's newer six-value enum, not the broader draft enum in `templates/knowledge/citation_card.yaml`. |
-| `blackbox_note.schema.json` | §2.3, §2.4 | Renamed from the design-era `r0_record.schema.json` (chair ruling A1). Additive/optional `session_id`, `session_boundary` (`ai_state_at_boundary` literal `"reset"`), `entry_anchor` — `design/SESSION_ARCH_v0.4_SPEC.md` §2.1/§2.2 (SA-1), pending founder ratification of §2.2's logical-join decision. |
+| `blackbox_note.schema.json` | §2.3, §2.4 | Renamed from the design-era `r0_record.schema.json` (chair ruling A1). Additive/optional `session_id`, `session_boundary` (`ai_state_at_boundary` literal `"reset"`), `entry_anchor` — `design/SESSION_ARCH_v0.4_SPEC.md` §2.1/§2.2 (SA-1), pending founder ratification of §2.2's logical-join decision. Also additive/optional top-level `question_trace[]` (per-turn question-evolution trace inside ONE note, `schema.blackbox-question-trace`, `design/SESSION_ARCH_v0.4_SPEC.md` §9.1/§9.4) — coverage-checked by `tools/blackbox_log.py`'s `question_trace_coverage()`/`check-note` (distinct from that same file's own Blackbox LOG entries.jsonl functionality). |
 | `problem_card.schema.json` | §2.2 stage S1 | The two-question intake gate. This is the object `REPO_SPEC_v0.5.md` calls `intake.schema.json` — filed under `problem_card` per this task's naming. Additive/optional `intake.precommitted_resistance_route` (`design/SESSION_ARCH_v0.4_SPEC.md` §2.1/§2.2, D-NO-PRECOMMIT-ROUTE flag, never a hard block). |
 | `readiness_report.schema.json` | §9 (`validate_readiness`) | General pre-work project-readiness self-check — distinct from `problem_card.readiness`, which is S1's own narrower gate. |
-| `release_manifest.schema.json` | §7.4 | PUB-ADVERSARIAL-REVIEW's seven dimensions (R1–R7) plus the mandatory Blackbox Note appendix precondition. |
+| `release_manifest.schema.json` | §7.4 | PUB-ADVERSARIAL-REVIEW's seven dimensions (R1–R7) plus the mandatory Blackbox Note appendix precondition. Additive/optional `human_mastery_gate_ref` (methodology/P10_publish_gate.md R8, `hu.mastery-gate-wired`) — absence is a `kernel.gate_release` WARNING (`NO_MASTERY_GATE_LINKED`), never a hard schema fail, pending founder ratification. |
 | `route_dependence_matrix.schema.json` | §4.3 | DVP mechanics — makes route correlation visible, never zeroes it out. |
 | `disagreement_ledger_entry.schema.json` | §4.3, §8.1 | Resolve-or-Declare, per-project home + merged view (chair ruling B6). |
 | `kg_node.schema.json` | §8.1 | Graph-view pointer only; canonical content lives at `ref`. |
@@ -66,20 +66,22 @@ ran, at the path named there).
 | `source_acquisition_log.schema.json` | S14 | Public-repo-safe by construction — never a local path/Zotero key. |
 | `litreview_manifest.schema.json` | S14 | Frozen per LRS run; two separate gates (`accuracy_gate`, `diversity_gate`). |
 | `hypothesis_selection.schema.json` | S14, HANDOFF 35d | Human-only selection among candidate hypotheses; AI may propose, never select. Additive/optional `session_id`, `chooser_reaffirmations[]`, `retained_direction` (default `unknown`, NC-77), `direction_evidence_relation` — `design/SESSION_ARCH_v0.4_SPEC.md` §2.1/§4. |
-| `dialogue_table_row.schema.json` | S14, `templates/knowledge/dialogue_table.md` | One row per source; a stance may only be recorded once `claim_match_verified`. |
+| `dialogue_table_row.schema.json` | S14, `templates/knowledge/dialogue_table.md` | One row per source; a stance may only be recorded once `claim_match_verified`. Additive/optional `defeater_class` + `legitimate_defeater` (`lrs.dialogue-table-claim-type-column`, `design/SESSION_ARCH_v0.4_SPEC.md` §10.1) — deliberately schema-optional, not `required`; the stance-without-defeater-columns check is a `cli/glosa` lint (`rows_incomplete_defeater`), not a hard schema gate. |
 | `neighbour_table_row.schema.json` | `design/S13_neighbour-table.md`, chair ruling A2 | `relation: adopted_from` requires an authorization pointer (never AI-inferred). |
+| `human_mastery_gate.schema.json` | §7.5 (`methodology/P17_human_mastery_gate.md`) | `hu.mastery-gate-wired` (HU-1, `design/SESSION_ARCH_v0.4_SPEC.md` §11.1, build_now). Genre-independent form of the ten-question live unaided-defense checklist already inline in `templates/paper/arxiv-twocol/main.tex:375-378`. Every answer is human-authored only, never `ai_filled` — any `ai_filled` disclosure forces `gate_status: NOT_READY` (schema allOf). Feeds `methodology/P10_publish_gate.md`'s new R8 via `release_manifest.human_mastery_gate_ref`. |
 
-Plus `common.defs.json` (not one of the 20; shared definitions — see above).
+Plus `common.defs.json` (not one of the 21; shared definitions — see above).
 
 ## Examples
 
-`schema/examples/<name>.example.json` — one valid instance per schema (20 files). The
+`schema/examples/<name>.example.json` — one valid instance per schema (21 files). The
 `claim_card`, `problem_card`, and `blackbox_note` examples form one linked worked example around
 the founder's own cat question ("ทำไมแมวเยี่ยวไม่เป็นที่"), cross-referencing each other by id
 (`BB-2026-09-04-01` → `GLOSA-PC-20260904-0001` → `GLOSA-CC-20260904-0001`) exactly as the spine
-(§2.1) describes. The other 17 examples build out the same worked example's downstream artifacts
-(a citation card, a review report, a route-dependence matrix, a lit-review manifest, ...) so the
-whole example set is one coherent case rather than 20 unrelated fragments. Two schemas needed a
+(§2.1) describes. The other 18 examples build out the same worked example's downstream artifacts
+(a citation card, a review report, a route-dependence matrix, a lit-review manifest, a Human
+Mastery Gate, ...) so the whole example set is one coherent case rather than 21 unrelated
+fragments. Two schemas needed a
 source that is not the household's own Blackbox Note (`source_acquisition_log`,
 `neighbour_table_row`); those use an explicitly labeled `SYNTHETIC`/placeholder identifier
 (`cite-example-ext-001`, `https://example.org/synthetic-example-source`) rather than inventing a
@@ -231,11 +233,12 @@ prose) or are this task's own K6-kernel additions (18–28, `design/FOUNDATION_v
 | 28 | Inflated-bearing detector: a `bearing: SUPPORTS` evidence_relation without `strength: "context"`, unresolvable/disqualified citation, or same-lineage notes | **shipped in kernel** (the resolvability half is only checked when `citation_cards` is supplied — a warning discloses the gap otherwise, same convention as D-LENS-UNCITED) | `kernel/glosa_kernel.py` `_inflated_bearing_errors`, wired into `validate_claim_card` |
 | 29 | `kernel/glosa_kernel.py` rule29 (`lrs.defeater-not-collapse-rule`, `design/SESSION_ARCH_v0.4_SPEC.md` §10.3): a `tested.falsifier` matching strength-of-claim/feels-solid phrasing is never itself a legitimate defeater, regardless of `claim_type`. NOTE: this is a **different, non-colliding sibling** number from `design/FOUNDATION_v0.6.md` §3.3's own prose "flag-rule29" (`kernel.candidate-set-delta-cooking-step`) — always write out `kernel.glosa_kernel.rule29` vs. `FOUNDATION_v0.6.md §3.3 flag-rule29` per SESSION_ARCH_v0.4_SPEC.md §10's own disambiguation note | **shipped in kernel** (tier `Dr`, evadable-by-omission phrase-list guard — the spec's suggested `methodology/data/non_defeater_phrase_table.json` home is not in this task's ownership list, so the pattern is kept inline instead; rule statement/failing control unchanged) | `kernel/glosa_kernel.py` `_rule29_non_defeater_error`, wired into `validate_claim_card` |
 | 30 | `five_questions.tested.defeater_class` (additive optional, sibling of `claim_type`) must be paired with a `falsifier` phrasing style matching that class (`lrs.claim-type-defeater-enum`, §10.4) | **shipped in kernel**, EMPIRICAL<->PHENOMENOLOGICAL pairing only this pass — the other three classes' own phrasing styles are an open dependency per §10.4's own disclosure | `kernel/glosa_kernel.py` `_rule30_defeater_class_error`, `claim_card.schema.json`'s additive `five_questions.tested.defeater_class` field |
+| 31 | `lrs.defeater-defeated-status-field` (§10.2) tested-status warning: `defeater_status` (`untested\|tested_survived\|tested_defeated`) is DERIVED from `provenance_dag.defeater_log[]`, never a second stored field (§10.2 already named a new top-level status field the "already-refuted idea" its own real fix — `defeater_log` required `[node,date,outcome]` — deliberately did not add). WARNING (never a hard fail) once `status` is Pending Review or beyond with `defeater_log` empty | **shipped in kernel, warning-only** (like rule 21, this has no fail-fixture file — a warning cannot be represented as a schema-level FAIL) | `kernel/glosa_kernel.py` `defeater_status_for_card`, `_rule31_defeater_status_warning` |
 
 Every rule 18–28 row above traces to `design/FOUNDATION_v0.6_PATCH.md`; rules 22/24/25 are
 deliberately unbuilt (pending-founder) — their TODO comments name the exact node id a future pass
 must resolve before building them, per this task's own instruction not to guess a founder ruling.
-Rules 29/30 trace to `design/SESSION_ARCH_v0.4_SPEC.md` §10.3/§10.4 instead.
+Rules 29/30/31 trace to `design/SESSION_ARCH_v0.4_SPEC.md` §10.2/§10.3/§10.4 instead.
 
 ## NC-77 (Retention ≠ Direction) and the session-architecture fields — `design/SESSION_ARCH_v0.4_SPEC.md`
 
@@ -261,3 +264,25 @@ Rules 29/30 trace to `design/SESSION_ARCH_v0.4_SPEC.md` §10.3/§10.4 instead.
   ruling already made. Likewise `hypothesis_selection.schema.json`'s `session_id` field wires
   SA-2's own session-grouping key as the recommended default (§7 item 7), also pending founder
   ratification.
+
+## Remaining `design/SESSION_ARCH_v0.4_SPEC.md` `build_now` nodes closed this pass
+
+- **`schema.blackbox-question-trace`** — `schema/blackbox_note.schema.json`'s additive/optional
+  top-level `question_trace[]` (`{n, ts, question_text, derived_from_line, note}`), coverage-checked
+  by `tools/blackbox_log.py`'s `question_trace_coverage()` / `blackbox_log.py check-note <path>`.
+- **`lrs.defeater-defeated-status-field`** — `provenance_dag.defeater_log[]` `required: [node,
+  date, outcome]` with an `outcome` enum was already shipped; this pass adds kernel rule31 (a
+  DERIVED `defeater_status` warning, see the rule table above) on top of it, without a duplicate
+  schema field.
+- **`lrs.dialogue-table-claim-type-column`** — `dialogue_table_row.schema.json`'s additive/optional
+  `defeater_class` + `legitimate_defeater`, matching the already-shipped `templates/knowledge/
+  dialogue_table.md` columns and `cli/glosa`'s `_dialogue_row_incomplete` lint.
+- **`hu.mastery-gate-wired`** (HU-1) — new `schema/human_mastery_gate.schema.json` +
+  `kernel.validate_human_mastery_gate`/`mastery_gate_r8_status`, `methodology/P10_publish_gate.md`
+  R8, `release_manifest.schema.json`'s additive `human_mastery_gate_ref` (absence is a
+  `gate_release` WARNING, never a hard fail — pending founder ratification, per
+  `methodology/P17_human_mastery_gate.md`), and the `design/FOUNDATION_v0.6.md` §7.5 broken-pointer
+  fix.
+- **Verified, not re-fixed:** `NC-77` (`methodology/data/non_collapse_table.json`),
+  `D-RETENTION-DIRECTION`, `D-NO-PRECOMMIT-ROUTE` (`methodology/data/disclaimer_catalogue.json`)
+  each already exist exactly once in the repo, no duplicates across either data file.

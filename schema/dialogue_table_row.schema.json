@@ -17,6 +17,14 @@
       "enum": ["YES", "NO", "ORTHOGONAL", "UNDETERMINED"]
     },
     "what_it_would_say_against_us": { "type": "string" },
+    "defeater_class": {
+      "description": "design/SESSION_ARCH_v0.4_SPEC.md §10.1 (lrs.dialogue-table-claim-type-column, build_now). Renders templates/knowledge/dialogue_table.md's `defeater_class` column: the sources/notes/EPISTEMIC_FUSION_v8.1.txt:30-72 five-way claim-type separation. Deliberately NOT named `claim_type` -- that name is already a schema-fixed enum on claim_card.yaml routing kernel rule16w; reusing it here would collide with a different, already-wired field. Schema-optional by design: a row with a stance (YES/NO) and this field blank still validates -- the template documents the stance-without-defeater-class check as a LINT, not a hard schema gate (`INCOMPLETE: dialogue_table row has a stance ... but no defeater_class/legitimate_defeater`), mechanically enforced by `cli/glosa`'s `_dialogue_row_incomplete`/`glosa lit table` (`rows_incomplete_defeater`), not by this schema's `required`.",
+      "enum": ["phenomenological", "constitutive", "structural_formal", "diagnostic", "empirical"]
+    },
+    "legitimate_defeater": {
+      "description": "design/SESSION_ARCH_v0.4_SPEC.md §10.1 (lrs.dialogue-table-claim-type-column, build_now). Free text naming what would actually defeat THIS ROW's agrees/disagrees stance, matching `defeater_class`'s style (e.g. `empirical` wants a contrary-evidence/replication falsifier, not an absence/misdescription-style one -- kernel.glosa_kernel.rule30, a different-artifact/different-namespace sibling of this column). Schema-optional by design -- see `defeater_class`'s description; enforced as a lint by `cli/glosa`, not a schema `required`.",
+      "type": "string"
+    },
     "citation_card": { "type": "string", "minLength": 1 },
     "verified": {
       "type": "object",

@@ -25,14 +25,46 @@
   `design/FOUNDATION_v0.7_PATCH.md` §15. None is defaulted silently; the session-object
   one-fact-one-home layout, the `SA-1`/duplicate-proposal merge, the `NC-77` reservation, and
   `SA-3`/HU-2 retroactivity (recommended default: forward-only) are the most load-bearing.
-- **Not yet built this pass** (schema/kernel/CLI/tooling — outside this task's ownership,
-  specified in `design/FOUNDATION_v0.7_PATCH.md` for the next pass to apply): `session_id`/
-  `ai_state_at_boundary` on `schema/blackbox_note.schema.json`; `retained_direction` on
-  `schema/hypothesis_selection.schema.json`; `entry_anchor` on `schema/problem_card.schema.json`;
-  `schema/human_mastery_gate.schema.json` (new) and publish-gate R8; `kg_edge.schema.json`
-  `session_id` + the new `chi_recip` CLI diagnostic (Open tier); `dialogue_table.md`
-  `defeater_class`/`legitimate_defeater` columns; `claim_card.schema.json`
-  `provenance_dag.defeater_log` required/enum tightening; kernel `rule29`/`rule30`.
+- **Built this pass (remaining `build_now` nodes from `design/SESSION_ARCH_v0.4_SPEC.md`):**
+  - `schema.blackbox-question-trace`: `schema/blackbox_note.schema.json`'s additive/optional
+    top-level `question_trace[]` (`{n, ts, question_text, derived_from_line, note}`) plus a
+    mechanical coverage check, `tools/blackbox_log.py`'s `question_trace_coverage()` /
+    `blackbox_log.py check-note <path>` (every `lines[].kind==question` line must have a matching
+    `question_trace[].n` entry, or an explicit `derived_from_line: null`).
+  - `lrs.dialogue-table-claim-type-column`: `schema/dialogue_table_row.schema.json` gains additive/
+    optional `defeater_class` (five-way `phenomenological|constitutive|structural_formal|
+    diagnostic|empirical`) + `legitimate_defeater`, matching the already-shipped
+    `templates/knowledge/dialogue_table.md` columns and `cli/glosa`'s `_dialogue_row_incomplete`
+    lint (`rows_incomplete_defeater`) — deliberately schema-optional, not `required` (the template
+    documents the stance-without-defeater-columns check as a lint, not a hard gate).
+  - `lrs.defeater-defeated-status-field`: kernel rule31 adds a `defeater_status`
+    (`untested|tested_survived|tested_defeated`) WARNING — DERIVED from `provenance_dag.
+    defeater_log[]`, never a duplicate schema field (the field's real fix, `defeater_log`
+    `required: [node, date, outcome]` + `outcome` enum, already shipped) — fires once a card's
+    `status` is Pending Review or beyond with `defeater_log` empty.
+  - `hu.mastery-gate-wired` (HU-1): new `schema/human_mastery_gate.schema.json` (`gate_status`
+    `PASS|PASS_WITH_NAMED_GAPS|NOT_READY`, the ten answer fields from
+    `templates/paper/arxiv-twocol/main.tex:375-378`, `named_gaps` required on
+    `PASS_WITH_NAMED_GAPS`, any `ai_filled` disclosure forcing `NOT_READY`) +
+    `kernel.validate_human_mastery_gate`/`mastery_gate_r8_status`; `methodology/
+    P10_publish_gate.md` gains R8; `release_manifest.schema.json`'s additive
+    `human_mastery_gate_ref` (absence is a `gate_release` WARNING `NO_MASTERY_GATE_LINKED`, never
+    a hard fail — pending founder ratification); `design/FOUNDATION_v0.6.md` §7.5's broken
+    "Unchanged from v0.1 §7.5" pointer fixed to cite `methodology/P17_human_mastery_gate.md`.
+  - Verified (no change needed): `NC-77` (`methodology/data/non_collapse_table.json`),
+    `D-RETENTION-DIRECTION`, `D-NO-PRECOMMIT-ROUTE` (`methodology/data/disclaimer_catalogue.json`)
+    each exist exactly once, no duplicates anywhere in the repo.
+  - **Correction to this file's own prior entry:** `session_id`/`session_boundary`/`entry_anchor`
+    (R* conjunct only) on `schema/blackbox_note.schema.json`, `retained_direction` on
+    `schema/hypothesis_selection.schema.json`, `session_id` on `schema/kg_edge.schema.json`, and
+    the `chi_recip_diagnostic` kernel function were already shipped before this pass (confirmed by
+    direct read) — this file's prior "Not yet built this pass" line named them in error. **Still
+    genuinely not built this pass** (outside this task's ownership, per
+    `design/FOUNDATION_v0.7_PATCH.md` §6/HU-2): the FULL `intake.entry_anchor` H0 block
+    (`unresolved`, `existing_evidence`, `change_condition`, `verification_intent` — HU-2 supplies
+    these four beyond the `resistance_route`/R* conjunct that already exists) on
+    `schema/problem_card.schema.json`; a `chi_recip` **CLI** command wiring the existing kernel
+    function into `cli/glosa` (the function itself is not new).
 ## 0.3.0 — 2026-09-05
 - Published: repository DOI 10.5281/zenodo.22310837 (concept 10.5281/zenodo.22301059); GitHub tag v0.3.0.
 - Publish gate v3 (7 dimensions, skeptic-verified): 17 upheld BLOCKs fixed before release (see reviews/PUBLISH_GATE_v1_public.md); 6 DAG nodes remain pending founder decision, marked in FOUNDATION v0.6.

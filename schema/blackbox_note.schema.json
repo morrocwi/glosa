@@ -88,6 +88,24 @@
         }
       }
     },
+    "question_trace": {
+      "description": "SESSION_ARCH_v0.4_SPEC.md §9.1/§9.4 (schema.blackbox-question-trace, build_now). Per-turn question-evolution trace INSIDE this one note -- distinct from `session.question_trace[]` below (Problem Card refs opened this session, SA-3 scope). Real gap this closes: `question_human`/`question_readout` on a Claim Card are single-shot (design/FOUNDATION_v0.6.md:495); nothing records how the live question changed turn-to-turn. NOT grounded in \"glosa's own Human Return Test\" (no such thing exists in glosa's own design docs -- that phrase is a sources/notes/EPISTEMIC_FUSION_v7.1.txt:467 construct glosa has not adopted; ships on the real, narrower single-shot gap alone, per §9.1's claim-wording fix). Additive/optional -- a note with one unchanging question simply has a one-entry trace.",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["n", "ts", "question_text", "derived_from_line"],
+        "properties": {
+          "n": { "type": "integer", "minimum": 1 },
+          "ts": { "type": "string" },
+          "question_text": { "type": "string", "minLength": 1 },
+          "derived_from_line": {
+            "description": "lines[].n this question grew from, or null for a genuinely fresh question (never silently omitted -- see tools/blackbox_log.py's coverage-check extension).",
+            "type": ["integer", "null"]
+          },
+          "note": { "type": "string" }
+        }
+      }
+    },
     "r1_readout_ref": { "type": ["string", "null"] },
     "r2_hypothesis_ref": { "type": ["string", "null"] },
     "translation_status": { "$ref": "common.defs.json#/definitions/translation_status" },
