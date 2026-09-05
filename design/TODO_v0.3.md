@@ -11,3 +11,10 @@ RAM rule: check `free -g` before every Workflow; ≤6 workers; never two Workflo
 
 ## Finding 2026-09-05 (S6 build, live)
 New kernel rule 26 (composite-quote detector) immediately caught 4 of our own S2 citation cards (q4-001, q4-006, q4-008, q8-008) whose exact_passage carried an ellipsis splice — passages the cross-vendor I3 route had passed because its mechanical check matches only the first 12 words. Rule 26 closes that gap at the origin; the route script should also refuse spliced passages (todo).
+
+# v0.4 — session architecture (founder BBL-119: raise the work to the claim)
+- [x] uplift meeting (25 proposals) → re-anchored + re-judged (24) → design/SESSION_ARCH_v0.4_SPEC.md: 13 build_now / 7 with_revision / 4 still_open
+- [ ] V1 build build_now nodes (session fields in Blackbox Note + hypothesis_selection session key, χ_recip diagnostic, retained_direction + NC-77 + D-RETENTION-DIRECTION, entry anchor H0 + resistance precommit flag, dialogue-table claim-type/defeater columns + defeater status, kernel rules 29-30, Human Mastery Gate card, P01 prompt boundary), tests
+- [ ] V2 sim fixtures: tunnel_unflagged, retention_undeclared, chooser_forgotten, question_drift_unlogged, momentum_overclaimed → regression
+- [ ] V3 with_revision nodes raised (line-origin enum, candidate-set delta, chooser reaffirmation, SA-2/3/4, HU-4)
+- [ ] V4 review + gate + release v0.4.0
