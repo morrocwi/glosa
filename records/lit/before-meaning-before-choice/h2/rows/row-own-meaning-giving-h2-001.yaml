@@ -1,0 +1,20 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: H2
+source_label: Experience Is Meaning-Giving (own lineage, Zenodo 22357744)
+how_it_sees_the_problem: A phenomenon becomes an experience for a finite human only by being given meaning,
+  within a reader-conditioned relation to embodiment, retained history, expectation, value, concepts,
+  and context.
+what_it_separates: the phenomenon (event/trace) from the meaning-giving relation that turns it into an
+  experience for a reader.
+what_it_assumes: that a phenomenon exists prior to, and independently of, the meaning given to it -- the
+  architectural premise H2 needs.
+stance: 'YES'
+defeater_class: constitutive
+legitimate_defeater: An independent (non-own-lineage) source demonstrating that no phenomenon/experience
+  distinction survives without already presupposing meaning would defeat this row's supportive reading.
+what_it_would_say_against_us: 'Own-lineage source: this cannot itself defeat H2 since it is drawn from
+  the same programme H2 belongs to; it does not test H2 against an outside view.'
+citation_card: cite-own-meaning-giving-h2-001
+verified:
+  metadata_verified: false
+  claim_match_verified: true

@@ -1,0 +1,16 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: H2
+source_label: Thompson (2007), Mind in Life
+how_it_sees_the_problem: '(record-only: no fetched text) Named in QUESTIONS.md H2 as a phenomenology/enactivism
+  synthesis source.'
+what_it_separates: ''
+what_it_assumes: ''
+stance: UNDETERMINED
+defeater_class: phenomenological
+legitimate_defeater: A future fetch of the full text or a legitimately open excerpt would resolve this
+  row.
+what_it_would_say_against_us: Cannot be stated without the fetched text.
+citation_card: cite-thompson2007-mindinlife-h2-008
+verified:
+  metadata_verified: false
+  claim_match_verified: false

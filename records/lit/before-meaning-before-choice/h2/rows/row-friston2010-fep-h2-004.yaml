@@ -1,0 +1,21 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: H2
+source_label: Friston (2010), The free-energy principle
+how_it_sees_the_problem: Action, perception, and learning are unified under one optimization principle
+  (minimizing free energy / surprise), reviewed across several established brain theories.
+what_it_separates: value/expected reward from surprise/prediction error as the two poles of the single
+  optimized quantity, across the different theories it surveys.
+what_it_assumes: that a single scalar optimization target can integrate perception, action, and learning
+  theories without needing to state where meaning or experience enters relative to that optimization.
+stance: ORTHOGONAL
+defeater_class: diagnostic
+legitimate_defeater: The full text (not read here) stating an explicit derivation order between the free-energy
+  architecture and semantic/experiential content would move this row off ORTHOGONAL toward a determinate
+  stance.
+what_it_would_say_against_us: 'Abstract-only: cannot confirm or deny that this source states an admission
+  order comparable to H2''s; recorded as context per the card''s own PAYWALLED_ABSTRACT_ONLY/CONTEXT_ONLY_NOT_EVIDENCE
+  scope.'
+citation_card: cite-friston2010-fep-h2-004
+verified:
+  metadata_verified: true
+  claim_match_verified: true

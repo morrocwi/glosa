@@ -1,0 +1,39 @@
+$schema: citation_card.schema.json
+id: cite-friston2010-fep-h2-004
+claim_ref: H2
+identifier:
+  kind: DOI
+  value: 10.1038/nrn2787
+fetch_status: PAYWALLED_ABSTRACT_ONLY
+fetched_at: '2026-09-06'
+metadata_verified: true
+metadata_verified_by: 'mechanical: Crossref DOI 10.1038/nrn2787 metadata (title/journal/year) plus Europe
+  PMC abstract lookup'
+metadata_verified_at: '2026-09-06'
+claim_match_verified: true
+claim_match_verified_by: route:claude
+claim_match_verified_at: null
+exact_passage: A free-energy principle has been proposed recently that accounts for action, perception
+  and learning.
+page_or_locator: Friston (2010), Nature Reviews Neuroscience 11:127-138, abstract, first sentence
+scope: CONTEXT_ONLY_NOT_EVIDENCE
+evidence_tier: Open
+independence_class: I1
+who_verified: 'route:claude (I1 route: same model, fresh headless session (no shared context); abstract/metadata
+  level, not full text) -- see cite-friston2010-fep-h2-004.i3.json'
+verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
+status: VERIFIED
+xenon_ledger_ref: null
+disclosure: 'No open full text found (Unpaywall/OpenAlex report closed OA status, no repository copy);
+  abstract retrieved via Europe PMC REST API. Full text not read; the abstract does not state a derivation
+  ORDER between a non-semantic layer and meaning/experience specifically, so this is recorded as context,
+  not direct evidence for or against H2. | I1 route (claude) judged from fetched metadata/abstract + the
+  card''s quoted passage, not full text: Crossref title, first author Friston, year 2010 and journal all
+  match the card. The exact passage is verbatim the abstract''s first sentence and mechanically found.
+  Scope is CONTEXT_ONLY; abstract shows a formal optimization framework for perception, plausibly relevant
+  as a formal-rival context for H2, but states no derivation order, so it neither supports nor challenges.'
+superseded_by: null
+notes: Cited in QUESTIONS.md H2 as a formal-rival source; without full text this card cannot confirm whether
+  the paper states an explicit admission/derivation order comparable to H2's.
+fetched_from_url: https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI:10.1038/nrn2787&format=json&resultType=core
+line_or_paragraph: char offset 1056 of normalized fetched text (~paragraph 1); verbatim prefix match

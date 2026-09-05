@@ -1,0 +1,23 @@
+{
+ "vendor": "claude",
+ "fetched": {
+  "source": "crossref",
+  "title": "An Outline of a Theory of Affordances",
+  "authors": [
+   "Chemero"
+  ],
+  "year": 2003,
+  "container": "Ecological Psychology",
+  "abstract": "",
+  "_card_url": "https://web.archive.org/web/20250601050754/https://www.tandfonline.com/doi/abs/10.1207/S15326969ECO1502_5"
+ },
+ "verdict": {
+  "metadata_matches": true,
+  "passage_plausible": true,
+  "claim_match": true,
+  "bearing": "CONTEXT_ONLY",
+  "reason": "Crossref title, first author Chemero, year 2003, container match. Passage found verbatim in the fetched abstract. The abstract defines affordances as animal-ability/environment-feature relations, which is relevant antecedent context for H3's capability layer, but shows no graded live-candidate field or counterfactual measure; it neither supports nor challenges the interface claim.",
+  "passage_mechanical": "verbatim prefix found in fetched open text"
+ },
+ "date": "2026-09-04"
+}

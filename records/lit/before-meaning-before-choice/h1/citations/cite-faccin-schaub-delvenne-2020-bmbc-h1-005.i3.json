@@ -1,0 +1,24 @@
+{
+ "vendor": "claude",
+ "fetched": {
+  "source": "arxiv",
+  "title": "State aggregations in Markov chains and block models of networks",
+  "authors": [
+   "Mauro Faccin",
+   "Michael T. Schaub",
+   "Jean-Charles Delvenne"
+  ],
+  "year": "2020",
+  "abstract": "We consider state-aggregation schemes for Markov chains from an information-theoretic perspective. Specifically, we consider aggregating the states of a Markov chain such that the mutual information of the aggregated states separated by T time steps is maximized. We show that for T = 1 this approach recovers the maximum-likelihood estimator of the degree-corrected stochastic block model as a particular case, thereby enabling us to explain certain features of the likelihood landscape of this popular generative network model from a dynamical lens. We further highlight how we can uncover coherent, long-range dynamical modules for which considering a time-scale T &gt;&gt; 1 is essential, using synthetic flows and real-world ocean currents, where we are able to recover the fundamental features of the surface currents of the oceans.",
+  "_card_url": "https://arxiv.org/pdf/2005.00337"
+ },
+ "verdict": {
+  "metadata_matches": true,
+  "passage_plausible": true,
+  "claim_match": true,
+  "bearing": "CONTEXT_ONLY",
+  "reason": "Title, 2020, first author Faccin match. Passage found verbatim in fetched Supplementary text on lumpability. Under CONTEXT_ONLY scope, lumpability (aggregated states remain Markov) is relevant background for a dynamics-preservation gate over a retained-state layer; it neither admits nor gates semantic/agentic categories, so it does not test H1's falsifier.",
+  "passage_mechanical": "verbatim prefix found in fetched open text"
+ },
+ "date": "2026-09-04"
+}

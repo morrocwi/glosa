@@ -1,0 +1,55 @@
+$schema: citation_card.schema.json
+id: cite-kolchinsky-wolpert-2018-bmbc-h1-003
+claim_ref: H1
+identifier:
+  kind: ARXIV
+  value: '1806.08053'
+fetch_status: FETCHED
+fetched_at: '2026-09-06'
+metadata_verified: true
+metadata_verified_by: 'manual: direct fetch and pdftotext/html extraction of the source
+  this session, 2026-09-06'
+metadata_verified_at: '2026-09-06'
+claim_match_verified: true
+claim_match_verified_by: route:claude
+claim_match_verified_at: '2026-09-06'
+exact_passage: We define semantic information as the syntactic information that a
+  physical system has about its environment which is causally necessary for the system
+  to maintain its own existence.
+page_or_locator: Kolchinsky & Wolpert (2018), "Semantic information, autonomous agency
+  and non-equilibrium statistical physics", Interface Focus (arXiv:1806.08053v3),
+  Abstract, sentence 5
+scope: DIRECT_QUOTATION
+evidence_tier: definition
+independence_class: I1
+who_verified: 'route:claude (I1 route: same model, fresh headless session (no shared
+  context); abstract/metadata level, not full text) -- see cite-kolchinsky-wolpert-2018-bmbc-h1-003.i3.json'
+verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
+status: VERIFIED
+xenon_ledger_ref: null
+disclosure: 'Fetched arXiv PDF directly (arxiv.org/pdf/1806.08053) and extracted text
+  with pdftotext -layout; abstract is single-column and extracts cleanly. CONTEXT/partial
+  CHALLENGE for H1: this paper already builds semantic information as a definition
+  layered ON TOP OF syntactic (Shannon) information plus a causal-necessity/viability
+  criterion, i.e. an explicit two-layer admission order (non-semantic syntactic layer
+  first, semantic layer defined afterward via causal necessity for self-maintenance)
+  -- structurally close to H1''s claimed admission order. It does not, however, name
+  or require H1''s specific reader/translation/loss/dynamics-preservation gate sequence
+  with a provenance record; it uses a single causal-necessity criterion instead of
+  four named gates. Relevant near-neighbor, not an exact match -- CONTEXT_ONLY under
+  H1''s falsifier as currently worded (falsifier requires the SAME four gates), but
+  the closest single relative found in this pass and worth flagging for the human
+  review as a possible ''same, not different'' candidate on the coarser question of
+  admission order. | I1 route (claude) judged from fetched metadata/abstract + the
+  card''s quoted passage, not full text: Title, year, first author match; passage
+  found verbatim in abstract. Abstract shows a framework admitting semantic information
+  and agency from syntactic (non-semantic) correlations via an explicit gate (counterfactual
+  causal necessity for self-maintenance). Partial challenge to H1''s ''different''
+  claim; gate is viability, not reader+translation+loss+dynamics-preservation, so
+  not fully ''same''.'
+superseded_by: null
+notes: v3 (2018-11-07) fetched; arXiv version metadata confirms Interface Focus as
+  the eventual journal venue per the paper's own text.
+fetched_from_url: https://arxiv.org/pdf/1806.08053
+line_or_paragraph: char offset 941 of normalized fetched text (~paragraph 1); verbatim
+  prefix match

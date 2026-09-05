@@ -1,0 +1,59 @@
+$schema: citation_card.schema.json
+id: cite-faccin-schaub-delvenne-2020-bmbc-h1-005
+claim_ref: H1
+identifier:
+  kind: ARXIV
+  value: '2005.00337'
+fetch_status: FETCHED
+fetched_at: '2026-09-06'
+metadata_verified: true
+metadata_verified_by: 'manual: direct fetch and pdftotext/html extraction of the source
+  this session, 2026-09-06'
+metadata_verified_at: '2026-09-06'
+claim_match_verified: true
+claim_match_verified_by: route:claude
+claim_match_verified_at: '2026-09-06'
+exact_passage: A Markov chain is said to be lumpable [50, 51] if we can aggregate
+  its states xt such that the dynamics of the aggregated states yt is again a Markov
+  chain.
+page_or_locator: 'Faccin, Schaub & Delvenne (2020/2021), "State Aggregations in Markov
+  Chains and Block Models of Networks" (arXiv:2005.00337v2), Supplementary Material,
+  section "Perfect Markovian aggregation: lumpable Markov chains and equitable partitions",
+  first paragraph (citing Buchholz 1994 [50] and Tian & Kannan [51])'
+scope: CONTEXT_ONLY_NOT_EVIDENCE
+evidence_tier: definition
+independence_class: I1
+who_verified: 'route:claude (I1 route: same model, fresh headless session (no shared
+  context); abstract/metadata level, not full text) -- see cite-faccin-schaub-delvenne-2020-bmbc-h1-005.i3.json'
+verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
+status: VERIFIED
+xenon_ledger_ref: null
+disclosure: 'Fetched arXiv PDF directly and extracted with pdftotext -layout. Buchholz
+  (1994), J. Appl. Prob. 31(1), "Exact and ordinary lumpability in finite Markov chains",
+  is paywalled (Cambridge University Press; no open copy found in this pass; parked
+  separately as record-level below). This card substitutes the open, modern treatment
+  the founder''s own task instructions named as an acceptable alternative ("a recent
+  arXiv survey"), which states the identical lumpability definition and cites Buchholz
+  [50] as its source. CONTEXT for H1: lumpability is exactly a dynamics-preservation
+  gate on an aggregated (quotiented) state space -- the aggregated process must itself
+  remain Markov -- which matches one of H1''s four named gates by name, but this paper
+  does not combine it with the other three gates (reader, translation, loss) or with
+  a provenance record; CONTEXT_ONLY relative to H1''s full four-gate claim, though
+  a strong single-gate match. | I1 route (claude) judged from fetched metadata/abstract
+  + the card''s quoted passage, not full text: Title, first author, year match arXiv
+  2005.00337; passage found verbatim in fetched supplementary text. But the quoted
+  lumpability definition concerns Markov state aggregation only; it says nothing about
+  admission order of semantic/agentic categories, reader/translation/loss gates, or
+  provenance, so it neither supports nor challenges H1. | I1 route (claude) judged
+  from fetched metadata/abstract + the card''s quoted passage, not full text: Title,
+  2020, first author Faccin match. Passage found verbatim in fetched Supplementary
+  text on lumpability. Under CONTEXT_ONLY scope, lumpability (aggregated states remain
+  Markov) is relevant background for a dynamics-preservation gate over a retained-state
+  layer; it neither admits nor gates semantic/agentic categories, so it does not test
+  H1''s falsifier.'
+superseded_by: null
+notes: Buchholz 1994 itself recorded separately as cite-buchholz-1994-bmbc-h1-parked-001
+  (NOT_FETCHED, paywalled, no passage invented).
+fetched_from_url: https://arxiv.org/pdf/2005.00337
+line_or_paragraph: char offset 55641 of normalized fetched text (~paragraph 1); verbatim
+  prefix match

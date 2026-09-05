@@ -1,0 +1,18 @@
+{
+ "vendor": "claude",
+ "fetched": {
+  "source": "url-fetch",
+  "title": "Phenomenology (Stanford Encyclopedia of Philosophy)",
+  "abstract": "",
+  "_card_url": "https://plato.stanford.edu/entries/phenomenology/"
+ },
+ "verdict": {
+  "metadata_matches": true,
+  "passage_plausible": true,
+  "claim_match": true,
+  "bearing": "CHALLENGES",
+  "reason": "Fetched title matches; passage found verbatim at the entry opening (rev. 2013). Scope DIRECT_QUOTATION. Source states experience is intentional via content/meaning, i.e. phenomenology's meaning-first starting point; H2 reverses this, so the source bears on H2 as the position it opposes. No falsifier match: no loss accounting or non-semantic retained layer.",
+  "passage_mechanical": "verbatim prefix found in fetched open text"
+ },
+ "date": "2026-09-04"
+}

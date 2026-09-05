@@ -1,0 +1,32 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: H4
+source_label: Bastani, Bastani, Sungu, Ge, Kabakci & Mariman 2025, PNAS (field experiment,
+  high school mathematics)
+how_it_sees_the_problem: Unrestricted generative-AI tutoring during practice raises
+  in-session performance but can leave students worse off than a no-AI control
+  once AI access is subsequently removed, because students substitute AI answers
+  for the cognitive work that builds durable skill.
+what_it_separates: performance measured DURING AI-assisted practice from performance
+  measured AFTER AI access is taken away on an unaided exam; also separates a
+  "GPT Base" (answer-giving) condition from a "GPT Tutor" (hint-only, guardrailed)
+  condition, showing the removal-effect is design-dependent, not universal to any
+  AI assistance.
+what_it_assumes: that the unaided post-removal exam is a valid measure of retained
+  skill (not itself confounded by anxiety/unfamiliarity with no-AI conditions), and
+  that the practice-session AI usage pattern (copying vs. engaging) is the operative
+  mechanism.
+stance: YES
+defeater_class: empirical
+legitimate_defeater: A replication showing assisted practice-session scores predict
+  the unaided post-removal exam scores as well as they predict each other (i.e. no
+  divergence between assisted and post-removal performance) would defeat this row's
+  YES reading and support H4's own falsifier instead.
+what_it_would_say_against_us: This is a single field-experiment population (Turkish
+  high-school math students) and a single subject domain; H4 claims a general
+  human-AI carryover architecture (perceptual/social/skill/belief), and this source
+  only directly evidences the skill-execution case, with effect sizes that may not
+  transfer to conceptual or belief-level carryover.
+citation_card: cite-bastani-et-al-2025-002
+verified:
+  metadata_verified: true
+  claim_match_verified: true

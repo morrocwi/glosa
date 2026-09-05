@@ -1,0 +1,48 @@
+$schema: citation_card.schema.json
+id: cite-foucault1982-bmbc-005
+claim_ref: H3
+identifier:
+  kind: DOI
+  value: 10.1086/448181
+fetch_status: FETCHED
+fetched_at: '2026-09-06'
+metadata_verified: true
+metadata_verified_by: ''
+metadata_verified_at: '2026-09-06'
+claim_match_verified: true
+claim_match_verified_by: route:claude
+claim_match_verified_at: null
+exact_passage: To govern, in this sense, is to structure the possible field of action
+  of others.
+page_or_locator: Foucault 1982, "The Subject and Power", Critical Inquiry 8(4); Kobe
+  University teaching copy p. 15 (journal p. 790)
+scope: DIRECT_QUOTATION
+evidence_tier: definition
+independence_class: I1
+who_verified: 'route:claude (I1 route: same model, fresh headless session (no shared
+  context); abstract/metadata level, not full text) -- see cite-foucault1982-bmbc-005.i3.json'
+verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
+status: VERIFIED
+xenon_ledger_ref: null
+disclosure: 'Not yet cross-checked; pending lit_crossvendor_check.py --vendor claude
+  run. | I1 route (claude) judged from fetched metadata/abstract + the card''s quoted
+  passage, not full text: Crossref title/author/year match the card. Exact passage
+  found verbatim in fetched text at journal p. 790, with surrounding context (governing
+  as acting on ''the possibilities of action of other people'', power over ''a field
+  of possibilities''). Directly bears on H3''s ''power acts on the field before prohibition''
+  component; does not address the falsifier. | I1 route (claude) judged from fetched
+  metadata/abstract + the card''s quoted passage, not full text: Crossref title/author/year/container
+  match card. Exact passage found verbatim in fetched text (p. 790), surrounded by
+  ''act upon the possibilities of action of other people'' and ''faced with a field
+  of possibilities''. This bears directly on H3''s claim that power structures the
+  possibility field before prohibition; it does not define a graded counterfactual
+  measure, so no falsifier.'
+superseded_by: null
+notes: 'Copied from records/lit/potential-as-readout/h1/citations/cite-foucault-1982-008.yaml
+  for H3 (before-meaning-before-choice); claim_ref changed H1->H3, re-checked fresh.
+  Foucault''s definition of power as structuring the field of possible action is H3''s
+  direct precursor for ''power can act on the field before any prohibition'': governing
+  does not need to forbid anything, it can simply shape what remains a live option.'
+fetched_from_url: https://www2.kobe-u.ac.jp/~alexroni/IPD2018%20readings/IPD1%202018%20No.8/Foucault%20Subject%20and%20Power.pdf
+line_or_paragraph: char offset 38684 of normalized fetched text (~paragraph 1); verbatim
+  prefix match

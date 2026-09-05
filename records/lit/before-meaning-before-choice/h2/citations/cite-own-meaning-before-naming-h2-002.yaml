@@ -1,0 +1,37 @@
+$schema: citation_card.schema.json
+id: cite-own-meaning-before-naming-h2-002
+claim_ref: H2
+identifier:
+  kind: DOI
+  value: 10.5281/zenodo.22410666
+fetch_status: FETCHED
+fetched_at: '2026-09-06'
+metadata_verified: true
+metadata_verified_by: 'mechanical: Zenodo API record 22410666 (title/creator/date)'
+metadata_verified_at: '2026-09-06'
+claim_match_verified: true
+claim_match_verified_by: route:claude
+claim_match_verified_at: null
+exact_passage: Readout Genesis places retained difference before semantic naming and defines meaning as
+  a context-, memory-, criterion-, and reader-dependent readout relation rather than a property stored
+  in the root
+page_or_locator: Meaning Before Naming (v1.0 FULL), p.1, section 1 "Abstract"
+scope: DIRECT_QUOTATION
+evidence_tier: Open
+independence_class: I1
+who_verified: 'route:claude (I1 route: same model, fresh headless session (no shared context); abstract/metadata
+  level, not full text) -- see cite-own-meaning-before-naming-h2-002.i3.json'
+verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
+status: VERIFIED
+xenon_ledger_ref: null
+disclosure: 'Own-lineage source, not independent evidence -- see search_log.yaml conflicts_of_interest.
+  | I1 route (claude) judged from fetched metadata/abstract + the card''s quoted passage, not full text:
+  Title, year, first author match card. Passage found verbatim in fetched text (Abstract, with citation
+  marker 17). Source asserts retained difference before semantic naming, bearing on H2''s admission-order
+  claim; however it is the programme''s own lineage (self-source) and does not address H2''s falsifier,
+  so context/self-restatement rather than independent evidence.'
+superseded_by: null
+notes: Directly states H2's admission-order claim (retained difference before semantic naming) in the
+  programme's own terms; self-source.
+fetched_from_url: https://zenodo.org/api/records/22410666/files/Meaning_Before_Naming_v1_0_FULL.pdf/content
+line_or_paragraph: char offset 2106 of normalized fetched text (~paragraph 1); verbatim prefix match

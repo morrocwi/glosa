@@ -1,0 +1,51 @@
+$schema: citation_card.schema.json
+id: cite-glickman-sharot-2024-001
+claim_ref: H4
+identifier:
+  kind: DOI
+  value: 10.1038/s41562-024-02077-2
+fetch_status: FETCHED
+fetched_at: '2026-09-06'
+metadata_verified: true
+metadata_verified_by: 'manual: WebFetch of pmc.ncbi.nlm.nih.gov/articles/PMC11860214/,
+  confirmed as Glickman & Sharot (2024) "How human-AI feedback loops alter human perceptual,
+  emotional and social judgements", Nature Human Behaviour, PMC open copy (published
+  under Nature Portfolio open-access license)'
+metadata_verified_at: '2026-09-06'
+claim_match_verified: false
+claim_match_verified_by: route:claude
+claim_match_verified_at: '2026-09-06'
+exact_passage: Here, in a series of experiments (n = 1,401 participants), we reveal
+  a feedback loop where human–AI interactions alter processes underlying human perceptual,
+  emotional and social judgements, subsequently amplifying biases in humans.
+page_or_locator: Abstract, third-to-last sentence (PMC HTML rendering, no pagination)
+scope: DIRECT_QUOTATION
+evidence_tier: fit_calibrated
+independence_class: I1
+who_verified: 'route:claude (I1 route: same model, fresh headless session (no shared
+  context); abstract/metadata level, not full text) -- see cite-glickman-sharot-2024-001.i3.json'
+verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
+status: METADATA_OK
+xenon_ledger_ref: null
+disclosure: 'Verified at abstract level only via WebFetch HTML-to-text extraction;
+  this session did not itself read the full methods/results for the specific post-interaction
+  (post-AI-removal) measurement design. The abstract establishes that repeated human-AI
+  interaction changes the human''s own later judgement process ("processes underlying
+  human ... judgements"), which speaks to H4''s claim that the later human state is
+  changed by prior interaction, but does not by itself establish H4''s narrower claim
+  that what survives AFTER the AI is REMOVED is a separately audited quantity not
+  inferable from assisted performance -- the abstract describes the feedback loop
+  while AI is present, not a session-boundary audit after removal. Scope kept DIRECT_QUOTATION
+  for the quoted sentence itself; relevance to H4 is SUPPORTS the "interaction changes
+  later human state" half, silent on the "prompt is not the beginning / removal-audited"
+  half. | I1 route (claude) judged from fetched metadata/abstract + the card''s quoted
+  passage, not full text: Title, year 2024, first author Glickman match; passage found
+  verbatim in fetched abstract. But the evidence shown covers only bias amplification
+  during interaction; nothing on post-AI-removal audit or whether assisted measures
+  predict unaided return. Card itself admits abstract-level verification only, so
+  DIRECT_QUOTATION support for H4 is not established.'
+superseded_by: null
+notes: Open copy located via PMC (redirect from ncbi.nlm.nih.gov/pmc to pmc.ncbi.nlm.nih.gov).
+fetched_from_url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11860214/fullTextXML
+line_or_paragraph: char offset 2184 of normalized fetched text (~paragraph 1); verbatim
+  prefix match

@@ -1,0 +1,24 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: H1
+source_label: Kolchinsky & Wolpert 2018, Interface Focus
+how_it_sees_the_problem: Semantic information is syntactic information that is causally necessary for
+  a physical system to maintain its own existence (viability), analysed via nonequilibrium statistical
+  physics.
+what_it_separates: syntactic (Shannon) information a system has about its environment from the causally-necessary
+  subset of that information (semantic information), via a viability/self-maintenance criterion.
+what_it_assumes: that 'maintaining existence' (staying in a low-entropy viable state) is a well-defined,
+  measurable criterion that can license which correlations count as semantic.
+stance: 'NO'
+defeater_class: constitutive
+legitimate_defeater: A passage showing Kolchinsky & Wolpert require an explicit reader-relativity, an
+  explicit translation step between representations, AND an explicit dynamics-preservation (e.g. lumpability-style)
+  requirement on top of causal necessity would push this fully to SAME rather than a near-neighbor YES.
+what_it_would_say_against_us: Our framework already has a formal, physics-grounded two-layer admission
+  order (syntactic information first, semantic information defined afterward via a single causal-necessity/viability
+  criterion) without needing four separately-named gates or a provenance record -- Occam's razor favors
+  the simpler single-criterion account over H1's four-gate decomposition unless the extra gates buy something
+  Kolchinsky & Wolpert's criterion cannot.
+citation_card: cite-kolchinsky-wolpert-2018-bmbc-h1-003
+verified:
+  metadata_verified: true
+  claim_match_verified: true

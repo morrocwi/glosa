@@ -1,0 +1,27 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: H4
+source_label: Glickman & Sharot 2024, Nature Human Behaviour
+how_it_sees_the_problem: Repeated human-AI interaction forms a feedback loop that
+  alters the human's own perceptual, emotional and social judgement processes,
+  and this alteration amplifies biases already present in the AI system.
+what_it_separates: the AI's own bias/output from what the human subsequently
+  internalizes and carries into later judgements; also separates human-AI bias
+  amplification from human-human bias amplification (the former is larger).
+what_it_assumes: that judgement processes measured across repeated trials while
+  interacting with an AI reveal a persisting change to the human, not merely a
+  momentary conformity effect that resets between trials.
+stance: YES
+defeater_class: empirical
+legitimate_defeater: A replication or re-analysis showing the measured bias
+  amplification resets to baseline once AI feedback stops (i.e. it is trial-local
+  conformity, not a carried-forward change to the human's judgement process)
+  would defeat this row's YES reading.
+what_it_would_say_against_us: Our own measurements are of judgement WHILE
+  interacting with AI across repeated trials, not a session-boundary test after
+  the AI is fully removed and unavailable -- H4's "prompt is not the beginning"
+  claim is not the same claim as our "feedback loop amplifies bias" finding
+  unless carryover to a genuinely unaided context is separately shown.
+citation_card: cite-glickman-sharot-2024-001
+verified:
+  metadata_verified: true
+  claim_match_verified: true

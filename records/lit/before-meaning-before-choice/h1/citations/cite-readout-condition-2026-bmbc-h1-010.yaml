@@ -1,0 +1,47 @@
+$schema: citation_card.schema.json
+id: cite-readout-condition-2026-bmbc-h1-010
+claim_ref: H1
+identifier:
+  kind: DOI
+  value: 10.5281/zenodo.22301318
+fetch_status: FETCHED
+fetched_at: '2026-09-06'
+metadata_verified: true
+metadata_verified_by: 'manual: direct fetch and pdftotext/html extraction of the source
+  this session, 2026-09-06'
+metadata_verified_at: '2026-09-06'
+claim_match_verified: true
+claim_match_verified_by: route:claude
+claim_match_verified_at: '2026-09-06'
+exact_passage: 'Its core is a threepart norm: existence (every claim-level distinction
+  has an epistemic provenance path), attribution (a distinction credited to a source
+  must be licensed by that source), and disclosure (essential augmentations must remain
+  visible to audit).'
+page_or_locator: 'The Readout Condition: Distinguishability, Access, and Epistemic
+  Warrant (Zenodo record 22301318), record metadata description, sentence 4'
+scope: DIRECT_QUOTATION
+evidence_tier: definition
+independence_class: I1
+who_verified: 'route:claude (I1 route: same model, fresh headless session (no shared
+  context); abstract/metadata level, not full text) -- see cite-readout-condition-2026-bmbc-h1-010.i3.json'
+verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
+status: VERIFIED
+xenon_ledger_ref: null
+disclosure: 'Fetched via the Zenodo REST API (zenodo.org/api/records/22301318); direct
+  PDF download from zenodo.org was blocked by a 403 anti-bot response in this session,
+  so the API-level metadata field is used instead -- the depositor''s own text, abstract-level.
+  OWN-LINEAGE source under test for H1 (provenance/attribution/disclosure is the explicit
+  three-part norm H1''s own ''reader, translation, loss, dynamics-preservation gate
+  with provenance'' language descends from) -- flagged per frozen_scope conflicts_of_interest,
+  not neutral third-party evidence. | I1 route (claude) judged from fetched metadata/abstract
+  + the card''s quoted passage, not full text: Title, year 2026, first author Lahtee
+  agree with fetched Zenodo record; passage found verbatim in the record description.
+  The provenance norm (existence/attribution/disclosure) is lineage context for H1''s
+  ''with provenance'' clause, but says nothing about admission order or reader/translation/loss/dynamics
+  gates. Own-lineage, not independent evidence.'
+superseded_by: null
+notes: Own-lineage source per QUESTIONS.md; cited as the position H1 draws from, not
+  as independent evidence for H1.
+fetched_from_url: https://zenodo.org/api/records/22301318
+line_or_paragraph: char offset 849 of normalized fetched text (~paragraph 1); verbatim
+  prefix match

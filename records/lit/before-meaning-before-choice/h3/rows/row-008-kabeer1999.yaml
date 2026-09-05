@@ -1,0 +1,28 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: H3
+source_label: Kabeer (1999), "Resources, Agency, Achievements", Development and Change
+  30(3), Abstract
+how_it_sees_the_problem: Frames women's empowerment as the PROCESS by which those
+  denied the ability to make strategic life choices ACQUIRE that ability -- a change
+  in capacity for choice, prior to and separate from any particular choice being exercised.
+what_it_separates: Separates acquiring the ABILITY to make strategic choices (a structural/capacity-level
+  change) from exercising a choice once the ability is had (an instrumentalist, act-level
+  event).
+what_it_assumes: Assumes 'ability to make strategic life choices' is a single acquirable
+  capacity; does not itself further split that acquired ability into a graded field
+  of live candidates versus the full space of what becomes feasible once the ability
+  exists.
+stance: ORTHOGONAL
+defeater_class: constitutive
+legitimate_defeater: A passage in the fuller Kabeer 1999 text (not just the abstract)
+  that defines a graded live-candidate layer within the acquired ability to choose,
+  with a counterfactual recoverable-gap measure, would move this row toward YES and
+  could satisfy H3's own falsifier.
+what_it_would_say_against_us: Kabeer's ability-to-choose is pitched at the level of
+  a general capacity (a layer-1/layer-2 split in the vocabulary of resources/agency/achievements),
+  a different granularity than H3's per-action live-possibility field; the parallel
+  this row draws may be looser than a direct match to H3's specific interface claim.
+citation_card: cite-kabeer1999-bmbc-008
+verified:
+  metadata_verified: true
+  claim_match_verified: true

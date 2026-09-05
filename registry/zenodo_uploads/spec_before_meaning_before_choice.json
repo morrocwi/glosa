@@ -1,0 +1,99 @@
+{
+ "file": "dist/Before_Meaning_Before_Choice_FULL_v1_0.pdf",
+ "title": "Before Meaning, Before Choice: A Readout-Native Derivation of Experience, Live Possibility, Agency, and Human-AI Return (Full Paper v1.0)",
+ "upload_type": "publication",
+ "publication_type": "preprint",
+ "publication_date": "2026-09-06",
+ "description_html": "STAGED — fill after the glosa check",
+ "keywords": [
+  "Readout Universe",
+  "Readout Genesis",
+  "retained difference",
+  "meaning",
+  "experience",
+  "live possibility",
+  "agency",
+  "human-AI interaction",
+  "Human Return",
+  "epistemic architecture",
+  "domain translation",
+  "corrigibility",
+  "GLOSA K0"
+ ],
+ "language": "eng",
+ "version": "v1.0-2026-09-06",
+ "related": [
+  {
+   "identifier": "10.5281/zenodo.22414412",
+   "relation": "continues"
+  },
+  {
+   "identifier": "10.5281/zenodo.22410666",
+   "relation": "continues"
+  },
+  {
+   "identifier": "10.5281/zenodo.22357788",
+   "relation": "continues"
+  },
+  {
+   "identifier": "10.5281/zenodo.22357744",
+   "relation": "references"
+  },
+  {
+   "identifier": "10.5281/zenodo.22361830",
+   "relation": "references"
+  },
+  {
+   "identifier": "10.5281/zenodo.22339909",
+   "relation": "references"
+  },
+  {
+   "identifier": "10.5281/zenodo.22319715",
+   "relation": "references"
+  },
+  {
+   "identifier": "10.5281/zenodo.22307148",
+   "relation": "references"
+  },
+  {
+   "identifier": "10.5281/zenodo.21425420",
+   "relation": "references"
+  },
+  {
+   "identifier": "10.5281/zenodo.22341297",
+   "relation": "references"
+  },
+  {
+   "identifier": "10.5281/zenodo.19215748",
+   "relation": "references"
+  },
+  {
+   "identifier": "10.5281/zenodo.21529456",
+   "relation": "references"
+  },
+  {
+   "identifier": "10.5281/zenodo.22301318",
+   "relation": "references"
+  },
+  {
+   "identifier": "10.5281/zenodo.22340255",
+   "relation": "references",
+   "resource_type": "software"
+  },
+  {
+   "identifier": "10.5281/zenodo.22308201",
+   "relation": "isPartOf",
+   "resource_type": "publication-other"
+  },
+  {
+   "identifier": "10.5281/zenodo.22301552",
+   "relation": "isPartOf",
+   "resource_type": "publication-other"
+  },
+  {
+   "identifier": "10.5281/zenodo.22301459",
+   "relation": "isPartOf",
+   "resource_type": "publication-other"
+  }
+ ]
+}

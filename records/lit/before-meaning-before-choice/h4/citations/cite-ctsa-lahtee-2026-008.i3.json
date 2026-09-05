@@ -1,0 +1,23 @@
+{
+ "vendor": "claude",
+ "fetched": {
+  "source": "zenodo",
+  "title": "CTSA Human-Return Readout: A Session-Boundary Measurement Architecture for Retained Human Capability After AI (Epistemic Note v9.1 FINAL — global-literature-constrained edition)",
+  "authors": [
+   "Lahtee, Yaoharee"
+  ],
+  "year": "2026",
+  "container": "Zenodo",
+  "abstract": "  Status.  Final author draft of a K0 conceptual and measurement architecture in the Human-AI Readout Programme. \"Final\" denotes the present manuscript state, not empirical validation, publication, or independent certification. Programme continuation of  Epistemic Fusion or Epistemic Tunnel  v8.1 (DOI 10.5281/zenodo.22319715); part of the series  When AI Expands Human Potential  (index DOI 10.5281/zenodo.22308201). Produced under the glosa methodology (Rigour Without Infrastructure, concept DOI 10.5281/zenodo.22301059).   Central claim.  Human-AI learning should not be inferred from what the coupled system produces while assistance is present. It should be tested at the session boundary: after AI removal, what readout-distinguishable capability is still available to the human, what previously available capability has been lost, and what epistemic status has the retained change earned? CTSA codes the content of retained change as Conceptual Return (C), Tool-Selection Return (T), Skill-Execution Return (S), or Alternative-Generation Return (A). It keeps persistence, loss, metacognitive regulation, provenance, warrant, and epistemic direction separately auditable.   Abstract.  Human-AI collaboration is commonly evaluated at the moment of assistance: answer quality, speed, trust, preference, or joint performance. The Human-AI Readout Programme has progressively rejected that single-horizon view. The residual problem is measurement typing. The Human Return Test asks whether a pers",
+  "_card_url": "https://zenodo.org/records/22339909/files/CTSA_Human_Return_Readout_v9_1_FINAL_Global_Constrained.pdf?download=1"
+ },
+ "verdict": {
+  "metadata_matches": true,
+  "passage_plausible": true,
+  "claim_match": true,
+  "bearing": "CONTEXT_ONLY",
+  "reason": "Title, first author, year, and DOI agree; passage found verbatim in fetched text. Source states session-boundary testing and separately auditable loss/provenance/warrant/direction, matching H4. But the card itself flags it as own-lineage (I0, same author/programme), so it is genealogy context, not independent support.",
+  "passage_mechanical": "verbatim prefix found in fetched open text"
+ },
+ "date": "2026-09-04"
+}

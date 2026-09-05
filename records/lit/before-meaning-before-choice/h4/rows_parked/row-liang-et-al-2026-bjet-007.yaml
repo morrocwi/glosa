@@ -1,0 +1,30 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: H4
+source_label: Liang, Yang, Sha, Gasevic, Yan & Chen 2026, BJET systematic review
+  (record only -- abstract-level, via institutional mirror)
+how_it_sees_the_problem: GenAI-powered educational applications' effectiveness
+  depends on the human-AI interaction MODE (how much human control vs. AI
+  automation is present), not just whether GenAI is used; the review classifies
+  56 empirical studies along this dimension.
+what_it_separates: interaction modes (high/low human control x high/low AI
+  automation) from a single undifferentiated "GenAI use" variable; also separates
+  studies with adequate statistical power/reporting from those without, via a
+  sensitivity analysis.
+what_it_assumes: that the AIED-HCD framework's control/automation dimensions
+  are the right lens for comparing effectiveness across heterogeneous educational
+  GenAI studies, and that reported effect sizes in the reviewed literature are
+  informative despite acknowledged under-reporting problems.
+stance: ORTHOGONAL
+defeater_class: empirical
+legitimate_defeater: A read of the full review (not available in this session --
+  publisher page 403'd) showing it separately reports post-removal/delayed-unaided
+  outcomes as a distinct category from in-session effectiveness would move this
+  row toward YES.
+what_it_would_say_against_us: This review's own framework (human-control x AI-automation
+  MODE) does not, per its abstract, use a before/after-removal axis at all -- it
+  is a different cut across the same literature than H4's session-boundary cut,
+  so it can neither confirm nor challenge H4 from the abstract alone.
+citation_card: cite-liang-et-al-2026-bjet-007
+verified:
+  metadata_verified: true
+  claim_match_verified: false

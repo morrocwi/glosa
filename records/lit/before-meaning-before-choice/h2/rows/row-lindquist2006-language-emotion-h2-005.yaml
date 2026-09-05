@@ -1,0 +1,23 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: H2
+source_label: Lindquist, Barrett, Bliss-Moreau & Russell (2006), Language and the perception of emotion
+how_it_sees_the_problem: The accessibility of emotion words causally affects how fast and how accurately
+  people categorize facial expressions of emotion -- language/naming reaches into low-level emotion perception.
+what_it_separates: the accessibility of an emotion word (manipulated by priming/semantic satiation) from
+  the speed/accuracy of categorizing a facial expression as showing that emotion.
+what_it_assumes: that emotion-word accessibility is a valid proxy for the availability of the semantic/naming
+  layer itself, and that categorization speed/accuracy is a valid proxy for perceptual processing.
+stance: ORTHOGONAL
+defeater_class: empirical
+legitimate_defeater: Full text showing that naming causally precedes and organizes emotion perception
+  at an architectural level (not just speeds/slows categorization) would push this row toward NO against
+  H2's reversed order; full text showing the effect is post-perceptual/decisional would push it toward
+  YES or ORTHOGONAL more firmly.
+what_it_would_say_against_us: If emotion words can measurably speed or slow perception of facial emotion,
+  some semantic/naming influence appears to reach into perception rather than waiting until after a non-semantic
+  layer is finished -- a live potential challenge to H2's ordering, not confirmed here from the abstract
+  alone.
+citation_card: cite-lindquist2006-language-emotion-h2-005
+verified:
+  metadata_verified: true
+  claim_match_verified: true

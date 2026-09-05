@@ -1,0 +1,42 @@
+$schema: citation_card.schema.json
+id: cite-parasuraman-riley-1997-006
+claim_ref: H4
+identifier:
+  kind: DOI
+  value: 10.1518/001872097778543886
+fetch_status: NOT_FETCHED
+fetched_at: null
+metadata_verified: true
+metadata_verified_by: 'manual: Unpaywall API lookup (api.unpaywall.org/v2/10.1518/001872097778543886)
+  confirms title "Humans and Automation: Use, Misuse, Disuse, Abuse", Parasuraman
+  & Riley, Human Factors, 1997, publisher SAGE; is_oa=false, oa_locations=[] --
+  no open-access copy exists anywhere Unpaywall indexes'
+metadata_verified_at: '2026-09-06'
+claim_match_verified: false
+claim_match_verified_by: null
+claim_match_verified_at: null
+exact_passage: ''
+scope: CONTEXT_ONLY_NOT_EVIDENCE
+page_or_locator: ''
+evidence_tier: Open
+independence_class: I1
+who_verified: null
+verification_method: MECHANICAL_LOOKUP
+status: METADATA_OK
+xenon_ledger_ref: null
+disclosure: 'Record-level only. Semantic Scholar API confirms the paper exists
+  and lists no open-access PDF ("elided by the publisher" abstract field);
+  Unpaywall confirms is_oa=false with zero oa_locations. SAGE Journals page and
+  a third-party PDF mirror both returned fetch failures (403 / non-text binary)
+  in this session. No exact_passage is recorded because no text of this paper
+  -- abstract or body -- was actually read by this session. Kept as a record-only
+  entry naming the source''s relevance to H4''s vocabulary (use/misuse/disuse/abuse
+  of automation as a precursor framework to human-AI carryover), not as evidence
+  for or against H4.'
+superseded_by: null
+notes: 'Attempted: SAGE Journals (403), Semantic Scholar API (abstract elided
+  by publisher), Unpaywall API (is_oa=false, no location), a third-party PDF
+  mirror (non-text binary, could not extract). No 429 encountered; access is
+  genuinely closed, not rate-limited.'
+fetched_from_url: null
+line_or_paragraph: null

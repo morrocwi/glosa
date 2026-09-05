@@ -1,0 +1,20 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: H1
+source_label: Park 1981 (record only; discussed via Sangiorgi 2009)
+how_it_sees_the_problem: (from Sangiorgi's secondary account) Bisimulation is defined as a relation between
+  process states closed under matching transitions, independent of any interpretation of what a process
+  'means'.
+what_it_separates: (secondhand) the formal transition-system definition of bisimilarity from its later
+  philosophical/modal-logic readings.
+what_it_assumes: (secondhand) that CCS-style labelled transition systems are the right formal setting
+  for defining process equivalence.
+stance: UNDETERMINED
+defeater_class: constitutive
+legitimate_defeater: An open copy of the source's own text, fetched and read directly, that specifies
+  (or explicitly does not specify) an admission-order gate matching or differing from H1.
+what_it_would_say_against_us: Cannot be assessed directly without the primary text; recorded as context
+  only per rule 17 (no passage invented from memory).
+citation_card: cite-park-1981-bmbc-h1-parked-001
+verified:
+  metadata_verified: true
+  claim_match_verified: false

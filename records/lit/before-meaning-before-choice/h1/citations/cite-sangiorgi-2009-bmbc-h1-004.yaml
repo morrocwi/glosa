@@ -1,0 +1,48 @@
+$schema: citation_card.schema.json
+id: cite-sangiorgi-2009-bmbc-h1-004
+claim_ref: H1
+identifier:
+  kind: OFFICIAL_URL
+  value: https://www.cs.unibo.it/~sangio/DOC_public/history_bis_coind.pdf
+fetch_status: FETCHED
+fetched_at: '2026-09-06'
+metadata_verified: true
+metadata_verified_by: 'manual: direct fetch and pdftotext/html extraction of the source
+  this session, 2026-09-06'
+metadata_verified_at: '2026-09-06'
+claim_match_verified: true
+claim_match_verified_by: route:claude
+claim_match_verified_at: '2026-09-06'
+exact_passage: A relational structure is a pair (W, T ) where W is a non-empty set
+  called the domain of the structure, and T is a relation on W.
+page_or_locator: Sangiorgi (2009), "On the origins of bisimulation and coinduction",
+  ACM TOPLAS 31(4), author's self-archived PDF, Section 2.1 "Bisimulation", Definition
+  2.1
+scope: DIRECT_QUOTATION
+evidence_tier: definition
+independence_class: I1
+who_verified: 'route:claude (I1 route: same model, fresh headless session (no shared
+  context); abstract/metadata level, not full text) -- see cite-sangiorgi-2009-bmbc-h1-004.i3.json'
+verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
+status: VERIFIED
+xenon_ledger_ref: null
+disclosure: 'Fetched the author''s own self-archived copy (cs.unibo.it, Sangiorgi''s
+  institutional page) directly and extracted with pdftotext -layout; Section 2.1 is
+  single-column and extracts cleanly. CONTEXT for H1: bisimulation/relational-structure
+  definitions build state-equivalence purely over an abstract, non-semantic relation
+  T on a domain W, with no reader/agent/meaning admitted at this layer -- structurally
+  consonant with H1''s claim that a non-semantic retained-state layer comes first,
+  but this survey defines bisimulation as a state-equivalence notion, not as an admission-order
+  architecture with the four named gates (reader, translation, loss, dynamics-preservation)
+  and provenance; CONTEXT_ONLY relative to H1''s specific claim. | I1 route (claude)
+  judged from fetched metadata/abstract + the card''s quoted passage, not full text:
+  Fetched text is the Sangiorgi bisimulation paper; Definition 2.1 passage matches
+  verbatim. Card scope is DIRECT_QUOTATION offered as CONTEXT: a relational-structure/LTS
+  definition is background for retained-state framing, not evidence about admission
+  order or reader/translation/loss gates. Does not satisfy or refute the H1 falsifier.'
+superseded_by: null
+notes: ACM TOPLAS publisher version is paywalled (dl.acm.org); this is the author's
+  own self-archived open copy of the identical text.
+fetched_from_url: https://www.cs.unibo.it/~sangio/DOC_public/history_bis_coind.pdf
+line_or_paragraph: char offset 9866 of normalized fetched text (~paragraph 1); verbatim
+  prefix match

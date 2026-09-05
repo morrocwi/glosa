@@ -1,0 +1,30 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: H4
+source_label: 'Lahtee 2026, Epistemic Fusion or Epistemic Tunnel v8.1, Repair 7
+  (own lineage, zenodo.22319715 -- I0, not independent literature)'
+how_it_sees_the_problem: A single in-session retention scalar (ηs) is not a
+  sound basis for inferring durable residue after a human-AI session ends; the
+  fix ("Repair 7") is to keep the scalar as a conceptual session-end gate but
+  estimate the actual durable residue through a separate, later, unaided return
+  battery (reconstruction, discrimination, transfer, next-question quality).
+what_it_separates: the conceptual session-end retention gate (ηs) from the
+  operationalized post-session return measurement (the Y_return battery); frames
+  this as a repair to a previously identified measurement weakness in the same
+  programme's own session architecture.
+what_it_assumes: that an unaided return battery administered at a delay (s+delta)
+  is a valid proxy for "durable residue," and that engagement/recall during the
+  session are the wrong proxies to substitute for it.
+stance: YES
+defeater_class: constitutive
+legitimate_defeater: Not applicable as an external defeater -- own-lineage source
+  (I0); this row records the direct textual ancestor of H4's "separately audited
+  quantity" clause, not independent corroboration.
+what_it_would_say_against_us: 'None as a defeater of H4 -- but it is worth noting
+  for the record that this passage itself frames the separate audit as a REPAIR
+  to a measurement weakness the same programme found in its OWN earlier design,
+  not as a claim already established against outside literature; H4''s falsifier
+  should be tested against the independent-literature rows above, not this one.'
+citation_card: cite-epistemic-fusion-v81-repair7-009
+verified:
+  metadata_verified: true
+  claim_match_verified: true

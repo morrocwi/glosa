@@ -1,0 +1,44 @@
+$schema: citation_card.schema.json
+id: cite-tishby-pereira-bialek-1999-bmbc-h1-008
+claim_ref: H1
+identifier:
+  kind: ARXIV
+  value: physics/0004057
+fetch_status: FETCHED
+fetched_at: '2026-09-06'
+metadata_verified: true
+metadata_verified_by: 'manual: direct fetch and pdftotext/html extraction of the source
+  this session, 2026-09-06'
+metadata_verified_at: '2026-09-06'
+claim_match_verified: true
+claim_match_verified_by: route:claude
+claim_match_verified_at: '2026-09-06'
+exact_passage: We define the relevant information in a signal x ∈ X as being the information
+  that this signal provides about another signal y ∈ Y .
+page_or_locator: Tishby, Pereira & Bialek (1999), "The information bottleneck method"
+  (arXiv:physics/0004057v1), Abstract, sentence 1
+scope: DIRECT_QUOTATION
+evidence_tier: definition
+independence_class: I1
+who_verified: 'route:claude (I1 route: same model, fresh headless session (no shared
+  context); abstract/metadata level, not full text) -- see cite-tishby-pereira-bialek-1999-bmbc-h1-008.i3.json'
+verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
+status: VERIFIED
+xenon_ledger_ref: null
+disclosure: 'Fetched arXiv PDF directly and extracted with pdftotext -layout; abstract
+  is clean single-column text. CONTEXT for H1: the information bottleneck defines
+  a compression/relevance layer (a non-semantic statistical quantity: mutual information
+  about a target signal) prior to any meaning assignment, and includes an explicit
+  tradeoff (loss of irrelevant information against retention of relevant information)
+  close to H1''s ''loss gate'', but does not name a reader/translation/dynamics-preservation
+  gate sequence with provenance; CONTEXT_ONLY relative to H1''s full claim. | I1 route
+  (claude) judged from fetched metadata/abstract + the card''s quoted passage, not
+  full text: Title and first author match; year 1999 vs 2000 is version-date variance,
+  not contradiction. Passage found verbatim in fetched abstract. IB defines a non-semantic
+  relevance/compression layer, relevant context for H1''s retained-state layer; it
+  does not admit meaning/agency after gates, so it neither supports nor refutes H1.'
+superseded_by: null
+notes: v1 (1999, posted 2000-04-24) fetched.
+fetched_from_url: https://arxiv.org/pdf/physics/0004057
+line_or_paragraph: char offset 415 of normalized fetched text (~paragraph 1); verbatim
+  prefix match

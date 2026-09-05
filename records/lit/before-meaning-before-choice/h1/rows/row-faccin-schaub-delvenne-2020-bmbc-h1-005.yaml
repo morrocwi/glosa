@@ -1,0 +1,22 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: H1
+source_label: Faccin, Schaub & Delvenne 2020 (lumpability, open treatment of Buchholz 1994)
+how_it_sees_the_problem: A Markov chain admits a state aggregation (a quotient over states) exactly when
+  the aggregated process is itself again a Markov chain -- i.e. dynamics is preserved under the aggregation.
+what_it_separates: the fine-grained (unaggregated) Markov chain from the aggregated (lumped/quotiented)
+  chain, with lumpability as the exact criterion distinguishing valid from invalid aggregations.
+what_it_assumes: that Markov dynamics is the right invariant to preserve, and that lumpability (an algebraic
+  condition on the transition matrix) is checkable independent of any semantic interpretation of the states.
+stance: ORTHOGONAL
+defeater_class: constitutive
+legitimate_defeater: A passage combining lumpability with an explicit reader-relativity condition and
+  an explicit translation/provenance record on the aggregation map (not just the algebraic dynamics-preservation
+  condition) would move this toward SAME.
+what_it_would_say_against_us: Lumpability already gives a precise, checkable dynamics-preservation gate
+  for state aggregation without needing H1's other three gates (reader, translation, loss) or a provenance
+  record; H1's 'dynamics-preservation gate' may just be lumpability under a new name, unless H1 can show
+  the other three gates add something lumpability theory lacks.
+citation_card: cite-faccin-schaub-delvenne-2020-bmbc-h1-005
+verified:
+  metadata_verified: true
+  claim_match_verified: true

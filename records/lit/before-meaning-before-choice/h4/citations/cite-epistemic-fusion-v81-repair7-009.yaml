@@ -1,0 +1,47 @@
+$schema: citation_card.schema.json
+id: cite-epistemic-fusion-v81-repair7-009
+claim_ref: H4
+identifier:
+  kind: DOI
+  value: 10.5281/zenodo.22319715
+fetch_status: FETCHED
+fetched_at: '2026-09-06'
+metadata_verified: true
+metadata_verified_by: 'manual: pdftotext of the Zenodo-hosted PDF, header confirms
+  "Epistemic Fusion or Epistemic Tunnel: A Phenomenology-Anchored, Global-Literature-Constrained,
+  Problem-First Architecture of Human-AI Collaboration" (Epistemic Note v8.1), Lahtee,
+  Yaoharee (Open Civil Science Initiative), 2026'
+metadata_verified_at: '2026-09-06'
+claim_match_verified: true
+claim_match_verified_by: route:claude
+claim_match_verified_at: '2026-09-06'
+exact_passage: A scalar ηs should not be inferred from in-session engagement or recall
+  alone.
+scope: DIRECT_QUOTATION
+page_or_locator: Section discussing Repair 7 (right-hand column near the session-retention
+  collapse-law box), same page as "Repair 7 - Treat retention as latent; measure the
+  return."
+evidence_tier: Open
+independence_class: I1
+who_verified: 'route:claude (I1 route: same model, fresh headless session (no shared
+  context); abstract/metadata level, not full text) -- see cite-epistemic-fusion-v81-repair7-009.i3.json'
+verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
+status: VERIFIED
+xenon_ledger_ref: null
+disclosure: 'OWN-LINEAGE SOURCE, not independent literature (I0). This is the exact
+  "Repair 7" sentence named in this task''s brief: the source program''s own prior
+  finding that a single in-session retention scalar is not a valid stand-in for a
+  separately measured return quantity -- this is H4''s own architectural precursor,
+  cited here to ground H4''s claim that "what survives after the AI is removed is
+  a separately audited quantity ... not inferable from assisted performance." Direct
+  textual ancestor of H4, not external corroboration. | I1 route (claude) judged from
+  fetched metadata/abstract + the card''s quoted passage, not full text: Title, first
+  author (Lahtee), year 2026 and DOI agree with card. Quoted Repair 7 sentence found
+  verbatim in fetched text. Passage states H4''s core (retention latent; measure unaided
+  return). But card itself flags own-lineage (I0): it restates the hypothesis''s origin,
+  not independent evidence, so bearing is context/provenance, not support.'
+superseded_by: null
+notes: ''
+fetched_from_url: https://zenodo.org/records/22319715/files/Epistemic_Fusion_or_Tunnel_v8_1_StrongClaim_Global_TwoColumn.pdf?download=1
+line_or_paragraph: char offset 17895 of normalized fetched text (~paragraph 1); verbatim
+  prefix match

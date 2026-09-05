@@ -1,0 +1,21 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: H1
+source_label: Massimi 2022, Perspectival Realism (record only; fetch blocked)
+how_it_sees_the_problem: (from secondary characterizations, e.g. reviews) Scientific knowledge is always
+  situated within a historically and culturally specific 'perspective' (a scientific community's methods
+  and assumptions), and realism must be reconciled with this perspectival character rather than denying
+  it.
+what_it_separates: (secondhand) perspective-dependent scientific knowledge-claims from a perspective-independent
+  metaphysical reality the claims are about.
+what_it_assumes: (secondhand) that a perspective can be individuated (as a scientific community/tradition)
+  independently of the specific claims it produces.
+stance: UNDETERMINED
+defeater_class: constitutive
+legitimate_defeater: An open copy of the source's own text, fetched and read directly, that specifies
+  (or explicitly does not specify) an admission-order gate matching or differing from H1.
+what_it_would_say_against_us: Cannot be assessed directly without the primary text (fetch blocked by Cloudflare);
+  recorded as context only per rule 17 (no passage invented from memory).
+citation_card: cite-massimi-2022-bmbc-h1-parked-004
+verified:
+  metadata_verified: true
+  claim_match_verified: false

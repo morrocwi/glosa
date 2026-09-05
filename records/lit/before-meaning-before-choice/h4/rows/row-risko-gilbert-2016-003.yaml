@@ -1,0 +1,28 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: H4
+source_label: Risko & Gilbert 2016, Trends in Cognitive Sciences
+how_it_sees_the_problem: Cognitive offloading is the use of a physical action (an
+  external aid or tool) to reduce the information-processing demand of a task on
+  the person doing it; the paper asks what triggers this offloading and what its
+  cognitive consequences are.
+what_it_separates: the moment-of-use reduction in cognitive demand from any lasting
+  change to the offloader's own unaided capability; frames offloading as a general
+  behavior (memory aids, calculators, reminders), not specific to AI.
+what_it_assumes: that offloading behavior and its consequences can be studied as
+  a general cognitive phenomenon independent of the specific external aid used
+  (paper vs. smartphone vs., by extension, an AI system).
+stance: ORTHOGONAL
+defeater_class: constitutive
+legitimate_defeater: A passage (not found in the abstract-level material read here)
+  where Risko & Gilbert themselves specify a session-boundary/removal test design
+  that separately audits post-offloading unaided capability would move this row
+  off ORTHOGONAL toward YES.
+what_it_would_say_against_us: H4 treats "what survives after removal" as a construct
+  requiring its own dedicated audit; a cognitive-offloading framing could instead
+  treat any offloading-dependent performance drop after removal as already fully
+  explained by standard practice/reliance effects, with no need for H4's separate
+  gain/loss/provenance/warrant/direction typology.
+citation_card: cite-risko-gilbert-2016-003
+verified:
+  metadata_verified: true
+  claim_match_verified: true

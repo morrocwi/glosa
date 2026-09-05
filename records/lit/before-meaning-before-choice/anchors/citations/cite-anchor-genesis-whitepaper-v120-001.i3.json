@@ -1,0 +1,18 @@
+{
+ "vendor": "claude",
+ "fetched": {
+  "source": "url-fetch",
+  "title": "",
+  "abstract": "",
+  "_card_url": "https://raw.githubusercontent.com/morrocwi/readout_genesis/04cde19be2c885a11b42597b1cdb60fb5b7ca1bb/READOUT_GENESIS_UNIVERSAL_TECHNICAL_WHITEPAPER_v1.2.0.md"
+ },
+ "verdict": {
+  "metadata_matches": true,
+  "passage_plausible": true,
+  "claim_match": true,
+  "bearing": "CONTEXT_ONLY",
+  "reason": "Fetched text is the Readout Genesis whitepaper, version 1.2.0, matching the card; no author/year contradiction. Exact passage found verbatim in the rule field. Card scopes it as own-lineage anchor for traceability, not independent evidence, so the source serves as context only.",
+  "passage_mechanical": "verbatim prefix found in fetched open text"
+ },
+ "date": "2026-09-04"
+}

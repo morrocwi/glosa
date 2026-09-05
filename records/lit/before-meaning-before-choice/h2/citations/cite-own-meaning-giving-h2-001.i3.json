@@ -1,0 +1,23 @@
+{
+ "vendor": "claude",
+ "fetched": {
+  "source": "zenodo",
+  "title": "Experience Is Meaning-Giving: A Strong-Form Readout-Retention Theory of Phenomena, Resonance, Rhythm, Accumulation, and Transformative Release (Full Paper v2.0, strong-claim / reviewer-hardened edition)",
+  "authors": [
+   "Lahtee, Yaoharee"
+  ],
+  "year": "2026",
+  "container": "Zenodo",
+  "abstract": "  Status.  K0 strong-form conceptual and measurement architecture, revised after adversarial peer review without withdrawing the paper's central claims. Programme synthesis from Readout Genesis, Human LoRA, Human Learning, Meaning Before Naming, Fusion/Tunnel, and CTSA Human Return; part of the series  When AI Expands Human Potential  (index DOI 10.5281/zenodo.22308201). Internal programme manuscripts establish genealogy; external literature constrains novelty and identifies rival mechanisms.   Central claim.  A phenomenon becomes an experience for a finite human by being given meaning: it becomes affectively, pragmatically, autobiographically, conceptually, or epistemically significant within a reader-conditioned relation to embodiment, retained history, expectation, value, available concepts, and context. These are modes of one meaning-giving relation, not competing definitions of experience. Meaning-giving can begin before stable naming, while naming can recursively reorganize later experience. When a present externally prompted experience corresponds with retained internal experiential organization, resonance occurs as external-internal congruence. When encounters recur with structured timing, rhythm organizes recurrence, spacing, interruption, emphasis, and return. Repeated retained changes can accumulate transition readiness; sufficiently aligned encounters may contribute to barrier crossing and transformative release. None of these transitions certifies truth, healing,",
+  "_card_url": "https://zenodo.org/api/records/22357744/files/Experience_Is_Meaning_Giving_v2_0_STRONG_CLAIM.pdf/content"
+ },
+ "verdict": {
+  "metadata_matches": true,
+  "passage_plausible": true,
+  "claim_match": true,
+  "bearing": "CONTEXT_ONLY",
+  "reason": "Title, year 2026, first author Lahtee match card DOI. Passage verbatim in fetched text and abstract. Source states meaning-giving order H2 assumes but is own-lineage (declared conflict), so it frames rather than independently tests H2; not the phenomenological/enactive falsifier.",
+  "passage_mechanical": "verbatim prefix found in fetched open text"
+ },
+ "date": "2026-09-04"
+}

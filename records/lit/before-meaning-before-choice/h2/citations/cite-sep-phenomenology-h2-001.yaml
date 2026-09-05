@@ -1,0 +1,39 @@
+$schema: citation_card.schema.json
+id: cite-sep-phenomenology-h2-001
+claim_ref: H2
+identifier:
+  kind: OFFICIAL_URL
+  value: https://plato.stanford.edu/entries/phenomenology/
+fetch_status: FETCHED
+fetched_at: '2026-09-06'
+metadata_verified: true
+metadata_verified_by: 'manual: curl fetch of live plato.stanford.edu/entries/phenomenology/ HTML, <title>
+  and entry heading confirm SEP ''Phenomenology'' entry'
+metadata_verified_at: '2026-09-06'
+claim_match_verified: true
+claim_match_verified_by: route:claude
+claim_match_verified_at: null
+exact_passage: The central structure of an experience is its intentionality, its being directed toward
+  something, as it is an experience of or about some object.
+page_or_locator: SEP entry "Phenomenology" (David Woodruff Smith, substantive revision), section 1 "What
+  is Phenomenology?", opening paragraph
+scope: DIRECT_QUOTATION
+evidence_tier: definition
+independence_class: I1
+who_verified: 'route:claude (I1 route: same model, fresh headless session (no shared context); abstract/metadata
+  level, not full text) -- see cite-sep-phenomenology-h2-001.i3.json'
+verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
+status: VERIFIED
+xenon_ledger_ref: null
+disclosure: 'Fetched live HTML with curl, normalized whitespace, and located the passage by exact substring
+  search (char offset 692). Awaiting I1/I3 crossvendor check before status can move to VERIFIED. | I1
+  route (claude) judged from fetched metadata/abstract + the card''s quoted passage, not full text: Fetched
+  title matches; passage found verbatim at the entry opening (rev. 2013). Scope DIRECT_QUOTATION. Source
+  states experience is intentional via content/meaning, i.e. phenomenology''s meaning-first starting point;
+  H2 reverses this, so the source bears on H2 as the position it opposes. No falsifier match: no loss
+  accounting or non-semantic retained layer.'
+superseded_by: null
+notes: SEP entries are living documents (dated substantive revisions); this card cites the version live
+  at fetch time (2026-09-06).
+fetched_from_url: https://plato.stanford.edu/entries/phenomenology/
+line_or_paragraph: char offset 677 of normalized fetched text (~paragraph 1); verbatim prefix match

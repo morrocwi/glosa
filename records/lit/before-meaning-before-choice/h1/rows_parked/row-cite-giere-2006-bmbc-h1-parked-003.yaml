@@ -1,0 +1,20 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: H1
+source_label: Giere 2006, Scientific Perspectivism (record only)
+how_it_sees_the_problem: (from secondary characterizations) Scientific representations (models, instruments,
+  observations) are always made from a perspective (a particular vantage, instrument, or theoretical framework),
+  not from a God's-eye view.
+what_it_separates: (secondhand) the perspective-dependent representation from an impossible perspective-free
+  'view from nowhere'.
+what_it_assumes: (secondhand) that perspectives are the primary unit of scientific representation, prior
+  to asking what a representation is 'true' independent of any perspective.
+stance: UNDETERMINED
+defeater_class: constitutive
+legitimate_defeater: An open copy of the source's own text, fetched and read directly, that specifies
+  (or explicitly does not specify) an admission-order gate matching or differing from H1.
+what_it_would_say_against_us: Cannot be assessed directly without the primary text; recorded as context
+  only per rule 17 (no passage invented from memory).
+citation_card: cite-giere-2006-bmbc-h1-parked-003
+verified:
+  metadata_verified: true
+  claim_match_verified: false

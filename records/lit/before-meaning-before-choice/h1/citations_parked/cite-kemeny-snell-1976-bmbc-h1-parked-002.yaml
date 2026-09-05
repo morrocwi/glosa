@@ -1,0 +1,35 @@
+$schema: citation_card.schema.json
+id: cite-kemeny-snell-1976-bmbc-h1-parked-002
+claim_ref: H1
+identifier:
+  kind: ISBN
+  value: '9780387901922'
+fetch_status: NOT_FETCHED
+fetched_at: '2026-09-06'
+metadata_verified: true
+metadata_verified_by: 'manual: bibliographic record only, checked by search 2026-09-06; no open full-text
+  or abstract copy located in this pass'
+metadata_verified_at: '2026-09-06'
+claim_match_verified: false
+claim_match_verified_by: route:claude
+claim_match_verified_at: '2026-09-06'
+exact_passage: ''
+page_or_locator: ''
+scope: CONTEXT_ONLY_NOT_EVIDENCE
+evidence_tier: Open
+independence_class: I1
+who_verified: route:claude (record-only pass; no fetch attempted beyond a bibliographic web search)
+verification_method: MECHANICAL_LOOKUP
+status: METADATA_OK
+xenon_ledger_ref: null
+disclosure: 'NOT_FETCHED: the Springer edition is paywalled/out of open circulation; an Internet Archive
+  scan may exist but was not verified as a legitimate open copy within this pass''s time budget, so no
+  passage is quoted from it. Recorded at bibliographic level only per QUESTIONS.md (''Kemeny & Snell 1976
+  record + one open treatment'').'
+superseded_by: null
+notes: Bibliographic record only. Kemeny, J.G. & Snell, J.L. (1976) Finite Markov Chains, Springer-Verlag
+  (2nd ed.), the standard reference credited with the lumpability construction later formalized by Buchholz
+  1994 and used by Faccin, Schaub & Delvenne 2020 (fetched and read directly -- see cite-faccin-schaub-delvenne-2020-bmbc-h1-005).
+  No open copy of Kemeny & Snell 1976 itself was located in this pass.
+fetched_from_url: null
+line_or_paragraph: null

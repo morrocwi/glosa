@@ -1,0 +1,36 @@
+$schema: citation_card.schema.json
+id: cite-park-1981-bmbc-h1-parked-001
+claim_ref: H1
+identifier:
+  kind: OTHER_STABLE
+  value: 'Park, D. (1981) ''Concurrency and automata on infinite sequences'', in Theoretical Computer
+    Science: 5th GI-Conference, LNCS 104, Springer, pp. 167-183'
+fetch_status: NOT_FETCHED
+fetched_at: '2026-09-06'
+metadata_verified: true
+metadata_verified_by: 'manual: bibliographic record only, checked by search 2026-09-06; no open full-text
+  or abstract copy located in this pass'
+metadata_verified_at: '2026-09-06'
+claim_match_verified: false
+claim_match_verified_by: route:claude
+claim_match_verified_at: '2026-09-06'
+exact_passage: ''
+page_or_locator: ''
+scope: CONTEXT_ONLY_NOT_EVIDENCE
+evidence_tier: Open
+independence_class: I1
+who_verified: route:claude (record-only pass; no fetch attempted beyond a bibliographic web search)
+verification_method: MECHANICAL_LOOKUP
+status: METADATA_OK
+xenon_ledger_ref: null
+disclosure: 'NOT_FETCHED: Springer LNCS volume is paywalled and no institutional-repository or author
+  copy was found via web search in the time budget of this pass. Recorded at bibliographic level only,
+  per QUESTIONS.md''s instruction that Park 1981 may be carried as a ''record'' alongside the fetched
+  Sangiorgi 2009 survey that discusses it directly.'
+superseded_by: null
+notes: Bibliographic record only. This is the paper credited with the original bisimulation/bisimilarity
+  definition for CCS-style process algebra (per Sangiorgi 2009's own historical account, which this session
+  did fetch and read -- see cite-sangiorgi-2009-bmbc-h1-004). No open copy of Park 1981 itself was located
+  in this pass; the Springer LNCS chapter is paywalled.
+fetched_from_url: null
+line_or_paragraph: null

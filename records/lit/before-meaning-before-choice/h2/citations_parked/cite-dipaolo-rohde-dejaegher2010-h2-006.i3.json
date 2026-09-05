@@ -1,0 +1,25 @@
+{
+ "vendor": "claude",
+ "fetched": {
+  "source": "crossref",
+  "title": "Horizons for the Enactive Mind: Values, Social Interaction, and Play",
+  "authors": [
+   "Di Paolo",
+   "Rohde",
+   "De Jaegher"
+  ],
+  "year": 2010,
+  "container": "Enaction",
+  "abstract": "",
+  "_card_url": "https://api.openalex.org/works/https://doi.org/10.7551/mitpress/9780262014601.003.0003"
+ },
+ "verdict": {
+  "metadata_matches": true,
+  "passage_plausible": false,
+  "claim_match": true,
+  "bearing": "CONTEXT_ONLY",
+  "reason": "Title, year 2010, and first author Di Paolo match Crossref/OpenAlex. Fetched abstract is empty and no open full text was retrieved, so the quoted passage cannot be compared; unverified. Title alone evidences an enactive account centred on values, which is relevant context for H2's reversed starting point.",
+  "passage_mechanical": "quoted passage NOT found verbatim in fetched open text"
+ },
+ "date": "2026-09-04"
+}

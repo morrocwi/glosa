@@ -1,0 +1,50 @@
+$schema: citation_card.schema.json
+id: cite-kabeer1999-bmbc-008
+claim_ref: H3
+identifier:
+  kind: DOI
+  value: 10.1111/1467-7660.00125
+fetch_status: FETCHED
+fetched_at: '2026-09-06'
+metadata_verified: true
+metadata_verified_by: ''
+metadata_verified_at: '2026-09-06'
+claim_match_verified: true
+claim_match_verified_by: route:claude
+claim_match_verified_at: null
+exact_passage: This paper begins from the understanding that women's empowerment is
+  about the process by which those who have been denied the ability to make strategic
+  life choices acquire such an ability.
+page_or_locator: Abstract (Development and Change, 1999, Vol.30)
+scope: CONTEXT_ONLY_NOT_EVIDENCE
+evidence_tier: definition
+independence_class: I1
+who_verified: 'route:claude (I1 route: same model, fresh headless session (no shared
+  context); abstract/metadata level, not full text) -- see cite-kabeer1999-bmbc-008.i3.json'
+verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
+status: VERIFIED
+xenon_ledger_ref: null
+disclosure: 'Not yet cross-checked; pending lit_crossvendor_check.py --vendor claude
+  run. | I1 route (claude) judged from fetched metadata/abstract + the card''s quoted
+  passage, not full text: Title, year, first author match Crossref. Passage found
+  verbatim in fetched abstract. But Kabeer''s resources/agency/achievements and ''conditions
+  of choice'' frame capacity-to-choose, not a graded live-candidate field distinct
+  from feasibility and choice, nor a counterfactual gap measure. Relevant context,
+  not evidence for H3''s interface claim. | I1 route (claude) judged from fetched
+  metadata/abstract + the card''s quoted passage, not full text: Crossref title/year/first
+  author (Kabeer, 1999, Development and Change) match card; passage found verbatim
+  in fetched abstract. Abstract frames empowerment as acquiring the ability to make
+  strategic choices, with ''conditions of choice'' as structural parameters before
+  choice — relevant context for H3''s capability/live-field distinction, but no graded
+  live-candidate field or counterfactual measure, so context only.'
+superseded_by: null
+notes: Copied from records/lit/potential-as-readout/h2/citations/cite-kabeer1999-001.yaml
+  for H3 (before-meaning-before-choice); claim_ref changed to H3, re-checked fresh.
+  Kabeer's 'acquire such an ability' names a structural/capacity change prior to any
+  exercise of choice -- ORTHOGONAL-leaning support for H3's claim that a live-possibility
+  field (what one can even bring to deliberation) sits upstream of overt choice, though
+  Kabeer frames it as ability-acquisition rather than a graded live-candidate field
+  with a counterfactual measure.
+fetched_from_url: https://api.crossref.org/works/10.1111/1467-7660.00125
+line_or_paragraph: char offset 555 of normalized fetched text (~paragraph 1); verbatim
+  prefix match

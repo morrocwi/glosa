@@ -1,0 +1,31 @@
+$schema: search_log.schema.json
+id: search-before-meaning-before-choice-001
+claim_or_hypothesis_ref: anchors
+search_mode: TARGETED_SEARCH
+frozen_scope:
+  hypothesis_or_falsifier: ''
+  question_type: mechanism
+  concepts_synonyms_vocabulary: []
+  inclusion_exclusion_rules: ''
+  time_window: ''
+  language_strategy: ''
+  global_sources: []
+  local_context_sources: []
+  search_date: ''
+  stopping_rule: ''
+  conflicts_of_interest: ''
+  access_limits: ''
+queries:
+  support: []
+  challenge: []
+sources_found: []
+prisma_counts: null
+global_track:
+  summary: ''
+  strength_note: ''
+local_track:
+  summary: ''
+  result: NOT_SEARCHED
+transfer_verdict: null
+summary_disclaimer: 'TODO: state explicitly what WAS and was NOT found on both support and challenge sides
+  once a search is actually run (S14 §2.2).'

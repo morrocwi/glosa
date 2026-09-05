@@ -1,0 +1,43 @@
+$schema: citation_card.schema.json
+id: cite-robeyns2017-bmbc-007
+claim_ref: H3
+identifier:
+  kind: OFFICIAL_URL
+  value: https://books.openedition.org/obp/4862
+fetch_status: FETCHED
+fetched_at: '2026-09-06'
+metadata_verified: true
+metadata_verified_by: ''
+metadata_verified_at: '2026-09-06'
+claim_match_verified: true
+claim_match_verified_by: route:claude
+claim_match_verified_at: null
+exact_passage: Capabilities are a person’s real freedoms or opportunities to achieve
+  functionings.
+page_or_locator: Robeyns 2017, Ch. 2 "Core Ideas and the Framework", paragraph 39
+  (OpenEdition numbering)
+scope: DIRECT_QUOTATION
+evidence_tier: definition
+independence_class: I1
+who_verified: 'route:claude (I1 route: same model, fresh headless session (no shared
+  context); abstract/metadata level, not full text) -- see cite-robeyns2017-bmbc-007.i3.json'
+verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
+status: VERIFIED
+xenon_ledger_ref: null
+disclosure: 'Not yet cross-checked; pending lit_crossvendor_check.py --vendor claude
+  run. | I1 route (claude) judged from fetched metadata/abstract + the card''s quoted
+  passage, not full text: Fetched title matches Robeyns Ch.2 at the given URL; passage
+  found verbatim at paragraph 39. Source defines capabilities as real freedoms/opportunities
+  with only a realized-vs-effectively-possible split, no graded live-candidate layer
+  or counterfactual measure; it is a rival framing, so CHALLENGES as an alternative,
+  not a falsifier.'
+superseded_by: null
+notes: 'Copied from records/lit/potential-as-readout/h1/citations/cite-robeyns-2017-004.yaml
+  for H3 (before-meaning-before-choice); claim_ref changed H1->H3, re-checked fresh.
+  CHALLENGES H3 as an alternative framing: ''real freedoms or opportunities'' is a
+  capability-set definition that does not itself separate a graded live-candidate-for-deliberation
+  layer from the full feasible/capability set -- the gap H3 claims capability theory
+  leaves open.'
+fetched_from_url: https://web.archive.org/web/2025id_/https://books.openedition.org/obp/4862
+line_or_paragraph: char offset 38298 of normalized fetched text (~paragraph 1); verbatim
+  prefix match

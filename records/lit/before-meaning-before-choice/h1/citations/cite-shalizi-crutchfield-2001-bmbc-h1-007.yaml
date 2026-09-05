@@ -1,0 +1,46 @@
+$schema: citation_card.schema.json
+id: cite-shalizi-crutchfield-2001-bmbc-h1-007
+claim_ref: H1
+identifier:
+  kind: ARXIV
+  value: cond-mat/9907176
+fetch_status: FETCHED
+fetched_at: '2026-09-06'
+metadata_verified: true
+metadata_verified_by: 'manual: direct fetch and pdftotext/html extraction of the source
+  this session, 2026-09-06'
+metadata_verified_at: '2026-09-06'
+claim_match_verified: true
+claim_match_verified_by: route:claude
+claim_match_verified_at: '2026-09-06'
+exact_passage: Computational mechanics, an approach to structural complexity, defines
+  a process's causal states and gives a procedure for finding them.
+page_or_locator: 'Shalizi & Crutchfield (2001), "Computational Mechanics: Pattern
+  and Prediction, Structure and Simplicity", J. Stat. Phys. 104 (arXiv:cond-mat/9907176v2),
+  Abstract, sentence 1'
+scope: DIRECT_QUOTATION
+evidence_tier: definition
+independence_class: I1
+who_verified: 'route:claude (I1 route: same model, fresh headless session (no shared
+  context); abstract/metadata level, not full text) -- see cite-shalizi-crutchfield-2001-bmbc-h1-007.i3.json'
+verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
+status: VERIFIED
+xenon_ledger_ref: null
+disclosure: 'Fetched arXiv PDF directly and extracted with pdftotext -layout; abstract
+  block is clean single-column text. CONTEXT for H1: causal states are a non-semantic,
+  purely predictive equivalence-class construction (the epsilon-machine) built prior
+  to any meaning/agency layer, matching H1''s ordering claim in spirit, but computational
+  mechanics does not itself name a reader/translation/loss/dynamics-preservation gate
+  sequence with provenance as a distinguishing architecture; CONTEXT_ONLY relative
+  to H1''s specific claim. | I1 route (claude) judged from fetched metadata/abstract
+  + the card''s quoted passage, not full text: Title and first author match; 1999
+  arXiv vs 2001 journal year is a version difference, not a contradiction. Passage
+  found verbatim in fetched abstract. Source defines non-semantic predictive causal
+  states, relevant background for H1''s retained-state layer, but says nothing about
+  admission gates for meaning/agency, so context only.'
+superseded_by: null
+notes: v2 (2000-06-19) fetched; eventual journal version is J. Stat. Phys. 104:817-879
+  (2001) per the paper's own header.
+fetched_from_url: https://arxiv.org/pdf/cond-mat/9907176
+line_or_paragraph: char offset 295 of normalized fetched text (~paragraph 1); verbatim
+  prefix match

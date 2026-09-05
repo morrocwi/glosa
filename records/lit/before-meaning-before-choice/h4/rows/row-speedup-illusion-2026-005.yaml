@@ -1,0 +1,31 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: H4
+source_label: Cognitive offloading and the speedup illusion in human-AI interaction
+  2026 (arXiv)
+how_it_sees_the_problem: People's forecasts of how much an AI will speed up a simple
+  cognitive task are miscalibrated relative to their (accurate) forecasts of their
+  own independent completion time -- a "speedup illusion" -- and this illusion is
+  specific to AI, not observed for imagined human helpers.
+what_it_separates: objective completion time (AI-assisted vs. independent, found
+  equal) from subjective effort and from forecast/expectation of speed (found
+  biased toward AI); separates the AI case from an otherwise-matched human-helper
+  case.
+what_it_assumes: that self-reported subjective effort and pre-task time forecasts
+  are valid, comparable measures across the AI-assisted and independent conditions,
+  and that the simple cognitive tasks used generalize to more consequential
+  human-AI interactions.
+stance: ORTHOGONAL
+defeater_class: empirical
+legitimate_defeater: A follow-up removing AI access after repeated use and testing
+  whether the miscalibrated expectation itself persists or changes unaided
+  performance would connect this study directly to H4's removal-audit claim.
+what_it_would_say_against_us: This study finds NO difference in actual completion
+  time between AI-assisted and independent conditions -- if "assisted performance"
+  and "unaided performance" are statistically indistinguishable in this task class,
+  it weakens (for this task class) the motivation for treating the post-removal
+  state as a distinct quantity requiring its own audit, since the two apparently
+  coincide here.
+citation_card: cite-speedup-illusion-2026-005
+verified:
+  metadata_verified: true
+  claim_match_verified: true

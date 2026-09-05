@@ -58,16 +58,72 @@ frozen_scope:
     PAYWALLED_ABSTRACT_ONLY or NOT_FETCHED per the task instructions, never
     invented.'
 queries:
-  support: []
-  challenge: []
-sources_found: []
+  support:
+    - Participatory sense-making De Jaegher Di Paolo
+    - Horizons for the enactive mind Di Paolo Rohde De Jaegher
+    - Active Inference generative model Parr Pezzulo Friston MIT Press open access
+    - Readout Genesis retained distinction deltaR
+  challenge:
+    - Language and the perception of emotion Lindquist Barrett
+    - free-energy principle unified brain theory Friston 2010
+    - phenomenology intentionality SEP
+sources_found:
+  - cite-sep-phenomenology-h2-001 (VERIFIED, CHALLENGES)
+  - cite-zacks2007-eventperception-h2-002 (VERIFIED, ORTHOGONAL)
+  - cite-own-meaning-giving-h2-001 (VERIFIED, YES -- own lineage)
+  - cite-own-meaning-before-naming-h2-002 (VERIFIED, YES -- own lineage)
+  - cite-own-human-lora-h2-003 (VERIFIED, YES -- own lineage)
+  - cite-own-readout-genesis-lens-h2-bmbc-001 (VERIFIED, YES -- own lineage, reused from potential-as-readout/h2)
+  - cite-friston2010-fep-h2-004 (VERIFIED at abstract level, ORTHOGONAL, PAYWALLED_ABSTRACT_ONLY)
+  - cite-lindquist2006-language-emotion-h2-005 (VERIFIED at abstract level, ORTHOGONAL, PAYWALLED_ABSTRACT_ONLY)
+  - cite-parr-pezzulo-friston2022-h2-003 (PARKED, METADATA_OK -- real fetched chapter text, exact_passage confirmed manually, but the mechanical crossvendor re-check could not independently retrieve the chapter PDF text through the Wayback Machine on repeated attempts)
+  - cite-dipaolo-rohde-dejaegher2010-h2-006 (PARKED, METADATA_OK -- abstract only, no full chapter text obtainable)
+  - cite-dejaegher-dipaolo2007-h2-007 (PARKED, NOT_FETCHED -- no open copy found anywhere)
+  - cite-thompson2007-mindinlife-h2-008 (PARKED, NOT_FETCHED -- closed monograph, no OA mirror)
+  - cite-varela-thompson-rosch1991-h2-009 (PARKED, NOT_FETCHED -- closed monograph, no OA mirror)
 prisma_counts: null
 global_track:
-  summary: ''
-  strength_note: ''
+  summary: 'Of 12 sources named or reachable from QUESTIONS.md H2, 8 reached VERIFIED
+    status (6 with full open text, 2 at abstract level) and 4 were parked
+    (2 real-but-mechanically-unconfirmed full-text cards, 2 fully unreachable
+    closed monographs, 1 unreachable journal article). The one directly on-topic
+    full-text rival source obtained (SEP Phenomenology) CHALLENGES H2 by
+    presenting intentionality as experience''s own basic/primitive structure
+    rather than something derived after a non-semantic layer. The formal rival
+    (active inference / Parr, Pezzulo & Friston 2022) was read in full at chapter
+    level and does state its own explicit generative-model-before-posterior
+    derivation order (ORTHOGONAL: a different, non-semantic-difference-free
+    architecture that nonetheless also makes an order claim) but could not be
+    machine-reverified after the fact due to Wayback Machine serving-inconsistency,
+    so it is parked rather than left as VERIFIED on a stale mechanical check.
+    No independently-authored (non-own-lineage) full-text source directly
+    confirmed H2''s specific two-layer admission order; the strongest direct
+    supporting statements found are all own-lineage (Experience Is Meaning-Giving,
+    Meaning Before Naming, Experience Is the Human LoRA, Readout Genesis).'
+  strength_note: 'Weak-to-moderate: the hypothesis''s own programme states its
+    claim clearly and consistently across 4 own-lineage sources, but the only
+    fully-read independent literature obtained so far (SEP Phenomenology) reads
+    as a genuine rival/challenger rather than a confirming source, and two
+    named enactivist relatives (De Jaegher & Di Paolo 2007; Di Paolo, Rohde &
+    De Jaegher 2010) could not be read in full to test whether they already
+    make an equivalent claim (H2''s stated falsifier condition). Absence of a
+    fetched De Jaegher & Di Paolo full text is a real evidence gap, not a
+    finding that they disagree.'
 local_track:
-  summary: ''
+  summary: 'No Thai-language or ANSE.ASIA-local sources were sought for this
+    purely conceptual/theoretical hypothesis; QUESTIONS.md H2 names only
+    international phenomenology/enactivism/active-inference/event-cognition
+    literature plus the founder''s own prior Zenodo-published lineage.'
   result: NOT_SEARCHED
 transfer_verdict: null
-summary_disclaimer: 'TODO: state explicitly what WAS and was NOT found on both support and challenge sides
-  once a search is actually run (S14 §2.2).'
+summary_disclaimer: 'What WAS found: full open text for SEP Phenomenology, Zacks
+  et al. 2007, one chapter of Parr/Pezzulo/Friston 2022 (parked on mechanical
+  re-check), and all three own-lineage Zenodo papers plus the Readout Genesis
+  lens paper; abstracts for Friston 2010, Lindquist et al. 2006, and Di Paolo/
+  Rohde/De Jaegher 2010. What was NOT found: any full text for De Jaegher & Di
+  Paolo 2007, Thompson 2007 Mind in Life, or Varela/Thompson/Rosch 1991 (all
+  three closed-access with no OA mirror located as of 2026-09-06) -- these are
+  parked as NOT_FETCHED rather than argued from memory. No claim in this
+  search_log or the resulting cards should be read as settling H2; hypothesis
+  selection remains a human-owned act per QUESTIONS.md''s own framing (S14
+  Section 2.2).'

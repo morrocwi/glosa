@@ -1,0 +1,22 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: H1
+source_label: Shalizi & Crutchfield 2001, Computational Mechanics
+how_it_sees_the_problem: Causal states are the minimal sufficient statistic for prediction, constructed
+  purely from a process's observed statistics, prior to any semantic interpretation.
+what_it_separates: the raw process/history from its causal-state representation (the epsilon-machine),
+  which is the unique minimal predictively-sufficient reduction.
+what_it_assumes: that predictive sufficiency (retaining exactly what is needed to predict the future)
+  is the correct non-semantic criterion for what counts as retained structure.
+stance: ORTHOGONAL
+defeater_class: constitutive
+legitimate_defeater: A passage where computational mechanics itself frames causal-state construction as
+  an explicit ADMISSION GATE preceding a stated semantic/agentic layer (with reader/translation/loss/dynamics-preservation
+  named and provenance tracked) would move this toward SAME.
+what_it_would_say_against_us: Computational mechanics already gives a canonical, minimal, non-semantic
+  retained-state construction (causal states / epsilon-machines) justified purely by predictive sufficiency;
+  it does not need H1's four-gate apparatus to motivate treating non-semantic structure as prior -- minimality
+  plus predictive sufficiency does the same foundational work more economically.
+citation_card: cite-shalizi-crutchfield-2001-bmbc-h1-007
+verified:
+  metadata_verified: true
+  claim_match_verified: true

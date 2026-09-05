@@ -1,0 +1,16 @@
+{
+ "vendor": "claude",
+ "fetched": {
+  "source": "no-identifier",
+  "_card_url": "https://www.galtung-institut.de/wp-content/uploads/2015/12/Cultural-Violence-Galtung.pdf"
+ },
+ "verdict": {
+  "metadata_matches": true,
+  "passage_plausible": true,
+  "claim_match": true,
+  "bearing": "CONTEXT_ONLY",
+  "reason": "Fetched text (Galtung, 'Cultural Violence', §1 Definition) contains the passage verbatim; no title/year/author contradiction visible. Legitimation that forecloses options without overt prohibition is relevant context for H3's power-before-prohibition clause, but it defines no graded live-candidate field or counterfactual gap measure, so not evidence.",
+  "passage_mechanical": "verbatim prefix found in fetched open text"
+ },
+ "date": "2026-09-04"
+}

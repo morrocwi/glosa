@@ -1,0 +1,157 @@
+$schema: litreview_manifest.schema.json
+id: litrev-before-meaning-before-choice-001
+hypothesis_ref: h3
+search_log_ref: search-before-meaning-before-choice-001
+search_log_hash: ''
+dialogue_table_ref: records/lit/before-meaning-before-choice/h3/dialogue_table.md
+neighbour_table_ref: ''
+status: DRAFTING
+frozen_at: null
+supersedes: null
+citations:
+- citation_card_id: cite-chemero2003-bmbc-010
+  status: VERIFIED
+  identifier_kind: DOI
+  fetch_status: PAYWALLED_ABSTRACT_ONLY
+  acquisition_log_ref: null
+  metadata_verified: true
+  claim_match_verified: true
+  claim_match_verification_route: NOT_YET
+  retraction_check: UNCHECKED
+  dialogue_table_stance: undetermined
+- citation_card_id: cite-foucault1982-bmbc-005
+  status: VERIFIED
+  identifier_kind: DOI
+  fetch_status: FETCHED
+  acquisition_log_ref: null
+  metadata_verified: true
+  claim_match_verified: true
+  claim_match_verification_route: NOT_YET
+  retraction_check: UNCHECKED
+  dialogue_table_stance: undetermined
+- citation_card_id: cite-fricker2007-sep-bmbc-012
+  status: VERIFIED
+  identifier_kind: OFFICIAL_URL
+  fetch_status: FETCHED
+  acquisition_log_ref: null
+  metadata_verified: true
+  claim_match_verified: true
+  claim_match_verification_route: NOT_YET
+  retraction_check: UNCHECKED
+  dialogue_table_stance: undetermined
+- citation_card_id: cite-galtung1969-negpospeace-bmbc-002
+  status: VERIFIED
+  identifier_kind: OTHER_STABLE
+  fetch_status: FETCHED
+  acquisition_log_ref: null
+  metadata_verified: true
+  claim_match_verified: true
+  claim_match_verification_route: NOT_YET
+  retraction_check: UNCHECKED
+  dialogue_table_stance: undetermined
+- citation_card_id: cite-galtung1969-potentialgap-bmbc-001
+  status: VERIFIED
+  identifier_kind: OTHER_STABLE
+  fetch_status: FETCHED
+  acquisition_log_ref: null
+  metadata_verified: true
+  claim_match_verified: true
+  claim_match_verification_route: NOT_YET
+  retraction_check: UNCHECKED
+  dialogue_table_stance: undetermined
+- citation_card_id: cite-galtung1990-culturalviolence-bmbc-003
+  status: VERIFIED
+  identifier_kind: OTHER_STABLE
+  fetch_status: FETCHED
+  acquisition_log_ref: null
+  metadata_verified: true
+  claim_match_verified: true
+  claim_match_verification_route: NOT_YET
+  retraction_check: UNCHECKED
+  dialogue_table_stance: undetermined
+- citation_card_id: cite-kabeer1999-bmbc-008
+  status: VERIFIED
+  identifier_kind: DOI
+  fetch_status: FETCHED
+  acquisition_log_ref: null
+  metadata_verified: true
+  claim_match_verified: true
+  claim_match_verification_route: NOT_YET
+  retraction_check: UNCHECKED
+  dialogue_table_stance: undetermined
+- citation_card_id: cite-nussbaum2011-senquote-bmbc-006
+  status: VERIFIED
+  identifier_kind: ISBN
+  fetch_status: FETCHED
+  acquisition_log_ref: null
+  metadata_verified: true
+  claim_match_verified: true
+  claim_match_verification_route: NOT_YET
+  retraction_check: UNCHECKED
+  dialogue_table_stance: undetermined
+- citation_card_id: cite-pettit-globalrepublican-bmbc-004
+  status: VERIFIED
+  identifier_kind: OFFICIAL_URL
+  fetch_status: FETCHED
+  acquisition_log_ref: null
+  metadata_verified: true
+  claim_match_verified: true
+  claim_match_verification_route: NOT_YET
+  retraction_check: UNCHECKED
+  dialogue_table_stance: undetermined
+- citation_card_id: cite-rietveldkiverstein2014-bmbc-011
+  status: VERIFIED
+  identifier_kind: DOI
+  fetch_status: PAYWALLED_ABSTRACT_ONLY
+  acquisition_log_ref: null
+  metadata_verified: true
+  claim_match_verified: true
+  claim_match_verification_route: NOT_YET
+  retraction_check: UNCHECKED
+  dialogue_table_stance: undetermined
+- citation_card_id: cite-robeyns2017-bmbc-007
+  status: VERIFIED
+  identifier_kind: OFFICIAL_URL
+  fetch_status: FETCHED
+  acquisition_log_ref: null
+  metadata_verified: true
+  claim_match_verified: true
+  claim_match_verification_route: NOT_YET
+  retraction_check: UNCHECKED
+  dialogue_table_stance: undetermined
+strata_table: []
+diversity_audit:
+  counts:
+    by_language: {}
+    by_source_type: {}
+    by_search_route_or_database: {}
+    by_stance:
+      agrees: 0
+      disagrees: 0
+      orthogonal: 0
+      undetermined: 11
+    by_geography_or_institution: {}
+  concentration_flags: []
+  zero_disagree_flag: false
+  never_claim_diverse_without_counts: true
+accuracy:
+  total_citations: 11
+  verified_count: 11
+  spot_check:
+    applicable: true
+    proposed_n_percent: 20
+    small_n_rule_applied: false
+    sampled_citation_ids: []
+    sample_size: 0
+    spot_check_result: PENDING
+    spot_checked_by: null
+    spot_checked_at: null
+secondary_citation_ban_audit:
+  violations_found: 0
+gate:
+  accuracy_gate: PASS
+  diversity_gate: PASS
+  overall: PASS
+  blocked_reason: null
+disclaimers_emitted: []
+human_owner: Yaoharee Lahtee

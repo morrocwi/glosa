@@ -1,0 +1,26 @@
+{
+ "vendor": "claude",
+ "fetched": {
+  "source": "crossref",
+  "title": "Language and the perception of emotion.",
+  "authors": [
+   "Lindquist",
+   "Barrett",
+   "Bliss-Moreau",
+   "Russell"
+  ],
+  "year": 2006,
+  "container": "Emotion",
+  "abstract": "Three studies assessed the relationship between language and the perception of emotion. The authors predicted and found that the accessibility of emotion words influenced participants' speed or accuracy in perceiving facial behaviors depicting emotion. Specifically, emotion words were either primed or temporarily made less accessible using a semantic satiation procedure. In Studies 1 and 2, participants were slower to categorize facial behaviors depicting emotion (i.e., a face depicting anger) after an emotion word (e.g., \"anger\") was satiated. In Study 3, participants were less accurate to categorize facial behaviors depicting emotion after an emotion word was satiated. The implications of these findings for a linguistically relative view of emotion perception are discussed.",
+  "_card_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI:10.1037/1528-3542.6.1.125&format=json&resultType=core"
+ },
+ "verdict": {
+  "metadata_matches": true,
+  "passage_plausible": true,
+  "claim_match": true,
+  "bearing": "CONTEXT_ONLY",
+  "reason": "Crossref title/year/first author (Lindquist 2006, Emotion 6(1)) match the card; exact_passage is verbatim in the fetched abstract. Abstract shows emotion-word accessibility affects speed/accuracy of perceiving facial emotion, which is relevant context for H2's meaning-after-readout ordering without confirming or refuting it, so CONTEXT_ONLY fits.",
+  "passage_mechanical": "verbatim prefix found in fetched open text"
+ },
+ "date": "2026-09-04"
+}

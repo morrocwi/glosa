@@ -1,0 +1,48 @@
+$schema: citation_card.schema.json
+id: cite-ravindran-barto-2004-bmbc-h1-006
+claim_ref: H1
+identifier:
+  kind: OFFICIAL_URL
+  value: https://all.cs.umass.edu/pubs/2004/ravindran_b_KBCS04.pdf
+fetch_status: FETCHED
+fetched_at: '2026-09-06'
+metadata_verified: true
+metadata_verified_by: 'manual: direct fetch and pdftotext/html extraction of the source
+  this session, 2026-09-06'
+metadata_verified_at: '2026-09-06'
+claim_match_verified: true
+claim_match_verified_by: route:claude
+claim_match_verified_at: '2026-09-06'
+exact_passage: We also present a result on bounding the loss resulting from this approximation.
+page_or_locator: 'Ravindran & Barto (2004), "Approximate Homomorphisms: A framework
+  for non-exact minimization in Markov Decision Processes", UMass Autonomous Learning
+  Laboratory self-archived PDF, Abstract, final sentence'
+scope: DIRECT_QUOTATION
+evidence_tier: definition
+independence_class: I1
+who_verified: 'route:claude (I1 route: same model, fresh headless session (no shared
+  context); abstract/metadata level, not full text) -- see cite-ravindran-barto-2004-bmbc-h1-006.i3.json'
+verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
+status: VERIFIED
+xenon_ledger_ref: null
+disclosure: 'Fetched the UMass Autonomous Learning Laboratory''s own publications-page
+  PDF directly and extracted with pdftotext -layout; abstract is single-column and
+  extracts cleanly. CONTEXT for H1: MDP/approximate homomorphisms are exactly a non-semantic
+  state-abstraction layer with an explicit bounded-loss result attached to the abstraction
+  step -- this matches H1''s named ''loss gate'' closely (an explicit, quantified
+  loss bound on the abstraction), but the paper does not name or require the other
+  three gates (reader, translation, dynamics-preservation) as a combined admission
+  order, nor a provenance record; CONTEXT_ONLY relative to H1''s full claim, strong
+  single-gate match on ''loss''. | I1 route (claude) judged from fetched metadata/abstract
+  + the card''s quoted passage, not full text: Fetched text shows Ravindran (first
+  author) & Barto, approximate homomorphisms in MDPs; exact passage found verbatim
+  in abstract. Card scope is DIRECT_QUOTATION used as CONTEXT for H1: an MDP abstraction
+  with a loss bound is relevant context for the loss/dynamics-preservation gate, but
+  it says nothing about semantic/agentic admission order, so it neither supports nor
+  falsifies H1.'
+superseded_by: null
+notes: KBCS 2004 conference paper; UMass ALL lab publications page is the group's
+  own open self-archive.
+fetched_from_url: https://all.cs.umass.edu/pubs/2004/ravindran_b_KBCS04.pdf
+line_or_paragraph: char offset 965 of normalized fetched text (~paragraph 1); verbatim
+  prefix match

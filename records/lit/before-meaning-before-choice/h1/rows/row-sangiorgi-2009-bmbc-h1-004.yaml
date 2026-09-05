@@ -1,0 +1,22 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: H1
+source_label: Sangiorgi 2009, On the Origins of Bisimulation and Coinduction
+how_it_sees_the_problem: Bisimulation defines state-equivalence for a labelled transition system purely
+  via a relation on an abstract domain of states, independent of what those states mean.
+what_it_separates: the abstract relational structure (domain + transition relation) from any semantic
+  interpretation of what the states represent.
+what_it_assumes: that state-equivalence is well-defined once the domain and transition relation are fixed,
+  prior to any question of meaning or agency.
+stance: ORTHOGONAL
+defeater_class: constitutive
+legitimate_defeater: A passage where bisimulation theory itself frames its relational-equivalence construction
+  as an explicit ADMISSION GATE for a subsequent semantic/agentic layer (rather than as a standalone equivalence
+  notion with no stated downstream purpose) would move this toward SAME.
+what_it_would_say_against_us: Bisimulation already shows that a purely non-semantic, relational retained-state
+  notion (state equivalence) is mathematically well-founded on its own; it does not need H1's apparatus
+  of gates and provenance to justify treating non-semantic structure as prior and foundational -- the
+  mathematics stands without an admission-order narrative.
+citation_card: cite-sangiorgi-2009-bmbc-h1-004
+verified:
+  metadata_verified: true
+  claim_match_verified: true

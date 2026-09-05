@@ -1,0 +1,25 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: H1
+source_label: Readout Genesis Standalone Synthesis (own lineage)
+how_it_sees_the_problem: The root of the framework contains only retained distinctions, a graph-Laplacian
+  operator, ordered dynamics, context and lineage; belief/knowledge/mind/consciousness become admissible
+  only after a declared quotient and readout.
+what_it_separates: the non-semantic root layer (retained distinctions, operator, dynamics, context, lineage)
+  from the semantic/epistemic layer (belief, knowledge status) admitted only afterward via a declared
+  quotient and readout.
+what_it_assumes: that a 'declared quotient and readout' is itself well-defined and auditable prior to
+  any belief/knowledge content being assigned.
+stance: ORTHOGONAL
+defeater_class: constitutive
+legitimate_defeater: This is the own-lineage source H1 draws from; a legitimate defeater would be a showing
+  that this synthesis's own admission order is not actually distinguishable in kind from Kolchinsky &
+  Wolpert's or lumpability's single-criterion admission orders once the human founder compares them side
+  by side.
+what_it_would_say_against_us: As the position under test, this source does not argue against itself; the
+  human review must judge whether its 'quotient and readout' admission gate is materially different from
+  (not just relabeled from) the single-criterion admission orders found in Kolchinsky & Wolpert 2018 and
+  in lumpability theory.
+citation_card: cite-readout-genesis-synthesis-2026-bmbc-h1-009
+verified:
+  metadata_verified: true
+  claim_match_verified: true

@@ -1,0 +1,43 @@
+$schema: citation_card.schema.json
+id: cite-anchor-genesis-memk-v020-002
+claim_ref: ANCHORS
+identifier:
+  kind: URL
+  value: https://raw.githubusercontent.com/morrocwi/readout_genesis/49e444cc64bdaea2767c2c18d209654cdf6cb23f/domains/philosophy/PHILOSOPHY_MEMK_DOMAIN_v0_2_0.yaml
+fetch_status: FETCHED
+fetched_at: '2026-09-06'
+metadata_verified: true
+metadata_verified_by: mechanical:git (blob SHA / commit SHA on the public GitHub repository)
+metadata_verified_at: '2026-09-06'
+claim_match_verified: true
+claim_match_verified_by: route:claude
+claim_match_verified_at: null
+exact_passage: 'experience: E_n = Phi_E(x_n,mu_n,kappa_n,c_n)'
+page_or_locator: domains/philosophy/PHILOSOPHY_MEMK_DOMAIN_v0_2_0.yaml, line 92; blob
+  3d51fe8095f93207ab3ff4ae054042b6cf880a3a; sha256 1674a68e8b2811c80dc043ce82aa63186cb0c433a7bb0bf08c858ad6e87c1229;
+  branch feat/register-philosophy-memk-v0.2.0 at commit 49e444cc64bdaea2767c2c18d209654cdf6cb23f
+  (public, not merged into main)
+scope: DIRECT_QUOTATION
+evidence_tier: Dr
+independence_class: I1
+who_verified: 'route:claude (I1 route: same model, fresh headless session (no shared
+  context); abstract/metadata level, not full text) -- see cite-anchor-genesis-memk-v020-002.i3.json'
+verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
+status: VERIFIED
+xenon_ledger_ref: null
+disclosure: 'own lineage: git-anchored programme source (commit-pinned raw URL); not
+  independent evidence; carded so Paper A refs [1]/[2] can be traced by a stranger.
+  | I1 route (claude) judged from fetched metadata/abstract + the card''s quoted passage,
+  not full text: URL fetch matches card identifier; no title/author/year to contradict.
+  Passage ''E_n = Phi_E(x_n,mu_n,kappa_n,c_n)'' appears verbatim (normalized) in fetched
+  text. Card scopes it as own-lineage anchor, not independent evidence; consistent.
+  Line number 92 and ''v0.3.0 not public'' claim unverifiable here.'
+superseded_by: null
+notes: 'Paper A ref [2]: the public, hash-pinned MEMK v0.2.0 domain file (with CHECKSUMS_SHA256_PHILOSOPHY_MEMK.txt,
+  CLAIM_BOUNDARY, PROOF_RECEIPT in the same tree). The "v0.3.0_ANCHORED" draft named
+  in the paper is NOT in any public tree; the paper must cite v0.2.0 here or publish
+  v0.3.0 first. mandatory_order line 14: Retention -> Structure -> Translation ->
+  Meaning -> Report; root_nonclaims line 50: meaning is not a root primitive.'
+fetched_from_url: https://raw.githubusercontent.com/morrocwi/readout_genesis/49e444cc64bdaea2767c2c18d209654cdf6cb23f/domains/philosophy/PHILOSOPHY_MEMK_DOMAIN_v0_2_0.yaml
+line_or_paragraph: char offset 3414 of normalized fetched text (~paragraph 1); verbatim
+  prefix match

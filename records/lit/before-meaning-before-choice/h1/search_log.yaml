@@ -58,14 +58,63 @@ frozen_scope:
 queries:
   support: []
   challenge: []
-sources_found: []
+sources_found:
+  - cite-bateson-1972-bmbc-h1-001 (Bateson 1972, VERIFIED, CONTEXT_ONLY_NOT_EVIDENCE, ORTHOGONAL)
+  - cite-floridi-sep-semantic-info-bmbc-h1-002 (SEP Semantic Conceptions of Information, VERIFIED, CONTEXT_ONLY_NOT_EVIDENCE, ORTHOGONAL)
+  - cite-kolchinsky-wolpert-2018-bmbc-h1-003 (Kolchinsky & Wolpert 2018, VERIFIED, DIRECT_QUOTATION, NO -- closest near-neighbor admission order found)
+  - cite-sangiorgi-2009-bmbc-h1-004 (Sangiorgi 2009, VERIFIED, DIRECT_QUOTATION, ORTHOGONAL)
+  - cite-faccin-schaub-delvenne-2020-bmbc-h1-005 (Faccin/Schaub/Delvenne 2020, open lumpability treatment substituting paywalled Buchholz 1994, VERIFIED, CONTEXT_ONLY_NOT_EVIDENCE, ORTHOGONAL)
+  - cite-ravindran-barto-2004-bmbc-h1-006 (Ravindran & Barto 2004, VERIFIED, DIRECT_QUOTATION, ORTHOGONAL)
+  - cite-shalizi-crutchfield-2001-bmbc-h1-007 (Shalizi & Crutchfield 2001, VERIFIED, DIRECT_QUOTATION, ORTHOGONAL)
+  - cite-tishby-pereira-bialek-1999-bmbc-h1-008 (Tishby/Pereira/Bialek 1999, VERIFIED, DIRECT_QUOTATION, ORTHOGONAL)
+  - cite-readout-genesis-synthesis-2026-bmbc-h1-009 (own lineage, VERIFIED, DIRECT_QUOTATION, ORTHOGONAL)
+  - cite-readout-condition-2026-bmbc-h1-010 (own lineage, VERIFIED, DIRECT_QUOTATION, ORTHOGONAL)
+  - cite-park-1981-bmbc-h1-parked-001 (Park 1981, PARKED record-only, NOT_FETCHED, paywalled Springer LNCS, no open copy found)
+  - cite-kemeny-snell-1976-bmbc-h1-parked-002 (Kemeny & Snell 1976, PARKED record-only, NOT_FETCHED, paywalled monograph, no open copy found)
+  - cite-giere-2006-bmbc-h1-parked-003 (Giere 2006, PARKED record-only, NOT_FETCHED, per QUESTIONS.md a record-level item)
+  - cite-massimi-2022-bmbc-h1-parked-004 (Massimi 2022, PARKED record-only, NOT_FETCHED, fetch blocked twice by Cloudflare 403 on academic.oup.com and the OSO DOI resolver)
 prisma_counts: null
 global_track:
-  summary: ''
-  strength_note: ''
+  summary: '10 of 14 named H1 relatives reached VERIFIED status with a directly fetched, mechanically
+    passage-checked, cross-vendor-confirmed (route:claude I1) exact quotation. The closest single
+    near-neighbor found is Kolchinsky & Wolpert 2018, whose semantic-information framework already
+    layers a semantic definition on top of a prior syntactic/statistical layer via a single
+    causal-necessity/viability criterion -- structurally adjacent to H1''s claimed admission order,
+    but without H1''s four named gates (reader, translation, loss, dynamics-preservation) or a
+    provenance record; recorded as bearing CHALLENGES / stance NO (undermines H1''s distinctiveness
+    claim on the coarser two-layer-order question, though not a full match on the four-gate
+    specifics). Lumpability (Faccin et al. 2020 / Buchholz 1994) supplies a clean, independently
+    verified match for exactly ONE of H1''s four named gates (dynamics-preservation); MDP
+    approximate homomorphisms (Ravindran & Barto 2004) and the information bottleneck (Tishby,
+    Pereira & Bialek 1999) each supply a clean match for the ''loss'' gate alone. No single fetched
+    source combines all four gates with a provenance record the way H1 claims; the two own-lineage
+    sources (Readout Genesis Synthesis, The Readout Condition) are the only fetched sources that
+    state the full admission-order + provenance architecture, and they are the position under test,
+    not independent evidence.'
+  strength_note: 'All 10 VERIFIED cards passed a mechanical verbatim-passage check against directly
+    fetched open text AND an independent same-session, fresh-headless-context I1 cross-vendor check
+    (route:claude per scripts/lit_crossvendor_check.py) -- not a full independent third-party (I3)
+    vendor pass. Every VERIFIED card''s exact_passage is a single continuous verbatim sentence
+    copied from the fetched text per rule 17; no passage was spliced or drawn from memory.'
 local_track:
-  summary: ''
+  summary: 'No Thai-language or ANSE.ASIA-local-context source was searched for H1: the hypothesis
+    concerns formal/technical admission-order architecture (information theory, process algebra,
+    Markov chain theory, philosophy of science) where the named relatives in QUESTIONS.md are all
+    international/English-language technical literature plus the project''s own English-language
+    lineage documents. No local-context track was in scope for this hypothesis.'
   result: NOT_SEARCHED
-transfer_verdict: null
-summary_disclaimer: 'TODO: state explicitly what WAS and was NOT found on both support and challenge sides
-  once a search is actually run (S14 §2.2).'
+transfer_verdict: 'PARTIAL_OVERLAP -- one near-neighbor (Kolchinsky & Wolpert 2018) shares H1''s
+  coarse two-layer admission order without matching its specific four-gate decomposition; three
+  other sources (lumpability, MDP approximate homomorphisms, information bottleneck) each supply
+  one of H1''s four named gates in isolation; no fetched source combines all four gates with a
+  provenance record. Human hypothesis-selection judgment (falsifier test) is still required to
+  decide whether this constitutes same or different under H1''s own falsifier clause -- this search
+  does not decide that question, it only surfaces the candidates.'
+summary_disclaimer: 'What WAS found: 10 VERIFIED cards (independently cross-checked, mechanical
+  passage match) covering every H1 relative named in QUESTIONS.md that had a locatable open copy,
+  plus both own-lineage sources. What was NOT found: an open copy of Park 1981, Kemeny & Snell 1976,
+  Giere 2006, or Massimi 2022 (4 sources parked as record-only, NOT_FETCHED, no passage invented);
+  and no single external source combining all four of H1''s named gates (reader, translation, loss,
+  dynamics-preservation) with an explicit provenance record -- each external gate-analog found
+  (lumpability / dynamics-preservation; MDP approximate homomorphisms and information bottleneck /
+  loss) appears in isolation, in a different paper, not combined the way H1 claims.'

@@ -1,0 +1,18 @@
+{
+ "vendor": "claude",
+ "fetched": {
+  "source": "url-fetch",
+  "title": "",
+  "abstract": "",
+  "_card_url": "https://raw.githubusercontent.com/morrocwi/readout_universe/960165f13ced6e3f2bfd433928733a35be8283e6/logic.md"
+ },
+ "verdict": {
+  "metadata_matches": true,
+  "passage_plausible": true,
+  "claim_match": true,
+  "bearing": "CONTEXT_ONLY",
+  "reason": "Fetched text (readout_universe logic.md, commit-pinned) contains the exact passage verbatim under 'operator grounding' for ETH-1(ii). No title/author metadata to contradict. Card scopes this as own-lineage programme source, not independent evidence, so it is traceable context for the anchors hypothesis, not support.",
+  "passage_mechanical": "verbatim prefix found in fetched open text"
+ },
+ "date": "2026-09-04"
+}

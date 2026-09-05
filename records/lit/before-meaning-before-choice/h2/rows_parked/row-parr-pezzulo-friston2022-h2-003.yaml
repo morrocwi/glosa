@@ -1,0 +1,24 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: H2
+source_label: Parr, Pezzulo & Friston (2022), Active Inference
+how_it_sees_the_problem: Perception (the posterior over hidden states) and action are both derived formally
+  from a prior generative model via free-energy minimization; the generative model, not meaning or experience,
+  is the formal starting point.
+what_it_separates: the generative model (priors + likelihood) from the posterior/perceptual inference
+  computed from it -- an explicit before/after architecture, but built on probabilistic generative structure
+  rather than H2's non-semantic retained-difference layer.
+what_it_assumes: that a probabilistic generative model is the right kind of prior structure to start an
+  architecture from, and that perception is fully captured as posterior inference over that model.
+stance: ORTHOGONAL
+defeater_class: structural_formal
+legitimate_defeater: A passage stating that the generative model itself is semantic/meaning-laden (rather
+  than a formal probabilistic prior) would remove this as a distinct rival architecture and could turn
+  this row toward NO (same admission order as H2, different vocabulary).
+what_it_would_say_against_us: Active inference already has its own explicit before/after derivation order
+  (generative model before posterior/perception) with decades of formal development; H2 would need to
+  show its own non-semantic-retained-layer order does additional work this established formal rival does
+  not.
+citation_card: cite-parr-pezzulo-friston2022-h2-003
+verified:
+  metadata_verified: true
+  claim_match_verified: true

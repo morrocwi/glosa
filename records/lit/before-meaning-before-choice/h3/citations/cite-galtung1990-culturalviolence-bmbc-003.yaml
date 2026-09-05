@@ -1,0 +1,44 @@
+$schema: citation_card.schema.json
+id: cite-galtung1990-culturalviolence-bmbc-003
+claim_ref: H3
+identifier:
+  kind: OTHER_STABLE
+  value: jstor:423472
+fetch_status: FETCHED
+fetched_at: '2026-09-06'
+metadata_verified: true
+metadata_verified_by: ''
+metadata_verified_at: '2026-09-06'
+claim_match_verified: true
+claim_match_verified_by: route:claude
+claim_match_verified_at: null
+exact_passage: By 'cultural violence' we mean those aspects of culture, the symbolic
+  sphere of our existence - exemplified by religion and ideology. language and art,
+  empirical science and formal science (logic, mathematics) - that can be used to
+  justify or legitimize direct or structural violence.
+page_or_locator: Galtung 1990, p. 291 (p2 in the local page-tagged extraction), section
+  "1. Definition", left-hand column
+scope: CONTEXT_ONLY_NOT_EVIDENCE
+evidence_tier: definition
+independence_class: I1
+who_verified: 'route:claude (I1 route: same model, fresh headless session (no shared
+  context); abstract/metadata level, not full text) -- see cite-galtung1990-culturalviolence-bmbc-003.i3.json'
+verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
+status: VERIFIED
+xenon_ledger_ref: null
+disclosure: 'Not yet cross-checked; pending lit_crossvendor_check.py --vendor claude
+  run. | I1 route (claude) judged from fetched metadata/abstract + the card''s quoted
+  passage, not full text: Fetched text (Galtung, ''Cultural Violence'', §1 Definition)
+  contains the passage verbatim; no title/year/author contradiction visible. Legitimation
+  that forecloses options without overt prohibition is relevant context for H3''s
+  power-before-prohibition clause, but it defines no graded live-candidate field or
+  counterfactual gap measure, so not evidence.'
+superseded_by: null
+notes: Copied from records/lit/potential-as-readout/h3/citations/cite-galtung1990-culturalviolence-003.yaml
+  for H3 (before-meaning-before-choice); re-checked fresh. Cultural violence is the
+  legitimation work that keeps a live-possibility field foreclosed without overt prohibition
+  -- directly relevant to H3's 'power can act on the field before any prohibition'
+  clause.
+fetched_from_url: https://www.galtung-institut.de/wp-content/uploads/2015/12/Cultural-Violence-Galtung.pdf
+line_or_paragraph: char offset 2881 of normalized fetched text (~paragraph 1); verbatim
+  prefix match

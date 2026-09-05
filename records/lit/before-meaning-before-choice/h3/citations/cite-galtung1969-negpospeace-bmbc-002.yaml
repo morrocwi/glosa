@@ -1,0 +1,42 @@
+$schema: citation_card.schema.json
+id: cite-galtung1969-negpospeace-bmbc-002
+claim_ref: H3
+identifier:
+  kind: OTHER_STABLE
+  value: jstor:422690
+fetch_status: FETCHED
+fetched_at: '2026-09-06'
+metadata_verified: true
+metadata_verified_by: ''
+metadata_verified_at: '2026-09-06'
+claim_match_verified: true
+claim_match_verified_by: route:claude
+claim_match_verified_at: null
+exact_passage: absence of personal violence, and absence of structural violence.30
+  We shall refer to them as negative peace and positive peace respectively.31
+page_or_locator: Galtung 1969, p. 183 (p18 in the local page-tagged extraction), left-hand
+  column
+scope: CONTEXT_ONLY_NOT_EVIDENCE
+evidence_tier: definition
+independence_class: I1
+who_verified: 'route:claude (I1 route: same model, fresh headless session (no shared
+  context); abstract/metadata level, not full text) -- see cite-galtung1969-negpospeace-bmbc-002.i3.json'
+verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
+status: VERIFIED
+xenon_ledger_ref: null
+disclosure: 'Not yet cross-checked; pending lit_crossvendor_check.py --vendor claude
+  run. | I1 route (claude) judged from fetched metadata/abstract + the card''s quoted
+  passage, not full text: Fetched text is Galtung''s 1969 violence/peace paper; the
+  exact passage was found verbatim at the p.183 locator. As CONTEXT_ONLY, the negative/positive
+  peace split is relevant background for H3''s observed-calm vs open-correction-channel
+  distinction, but it is not an affordance framework and neither supports nor challenges
+  the interface claim.'
+superseded_by: null
+notes: Copied from records/lit/potential-as-readout/h3/citations/cite-galtung1969-negpospeace-002.yaml
+  for H3 (before-meaning-before-choice); re-checked fresh. The negative/positive peace
+  split underlies H3's distinction between merely 'observed calm' (absence of direct
+  violence) and a genuinely open correction channel (positive peace / absence of structural
+  violence).
+fetched_from_url: https://www2.kobe-u.ac.jp/~alexroni/IPD%202015%20readings/IPD%202015_2/Galtung_Violence%2C%20Peace%2C%20and%20Peace%20Research.pdf
+line_or_paragraph: char offset 62116 of normalized fetched text (~paragraph 1); verbatim
+  prefix match

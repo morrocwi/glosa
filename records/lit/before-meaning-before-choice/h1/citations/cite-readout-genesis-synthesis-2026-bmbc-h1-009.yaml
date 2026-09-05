@@ -1,0 +1,46 @@
+$schema: citation_card.schema.json
+id: cite-readout-genesis-synthesis-2026-bmbc-h1-009
+claim_ref: H1
+identifier:
+  kind: DOI
+  value: 10.5281/zenodo.21529456
+fetch_status: FETCHED
+fetched_at: '2026-09-06'
+metadata_verified: true
+metadata_verified_by: 'manual: direct fetch and pdftotext/html extraction of the source
+  this session, 2026-09-06'
+metadata_verified_at: '2026-09-06'
+claim_match_verified: true
+claim_match_verified_by: route:claude
+claim_match_verified_at: '2026-09-06'
+exact_passage: Those terms become admissible only after a declared quotient and readout.
+page_or_locator: 'Readout Genesis Standalone Synthesis: Information Epistemic Foundation,
+  Conditioned Agency, and Meta-Readout Governance (Zenodo record 21529456), record
+  metadata description, sentence 3'
+scope: DIRECT_QUOTATION
+evidence_tier: definition
+independence_class: I1
+who_verified: 'route:claude (I1 route: same model, fresh headless session (no shared
+  context); abstract/metadata level, not full text) -- see cite-readout-genesis-synthesis-2026-bmbc-h1-009.i3.json'
+verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
+status: VERIFIED
+xenon_ledger_ref: null
+disclosure: 'Fetched via the Zenodo REST API (zenodo.org/api/records/21529456), which
+  returns the record''s own metadata description as deposited; direct PDF download
+  from zenodo.org was blocked by a 403 anti-bot response in this session (Zenodo''s
+  edge WAF), so the API-level metadata field is used instead -- this is the depositor''s
+  own text, not a third party''s summary, but is a shorter abstract-level field rather
+  than the full paper body. This is the OWN-LINEAGE source under test for H1, not
+  neutral third-party evidence -- flagged per frozen_scope conflicts_of_interest.
+  | I1 route (claude) judged from fetched metadata/abstract + the card''s quoted passage,
+  not full text: Title, first author, and 2026 match the card. The exact passage appears
+  verbatim in the fetched Zenodo description. As own-lineage source it is relevant
+  context for H1''s admission-order claim (non-semantic root, quotient+readout before
+  belief/mind terms), but per the card''s own framing it is not independent evidence,
+  so bearing is context only.'
+superseded_by: null
+notes: Own-lineage source per QUESTIONS.md; cited as the position H1 draws from, not
+  as independent evidence for H1.
+fetched_from_url: https://zenodo.org/api/records/21529456
+line_or_paragraph: char offset 764 of normalized fetched text (~paragraph 1); verbatim
+  prefix match

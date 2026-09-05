@@ -1,0 +1,18 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: H2
+source_label: De Jaegher & Di Paolo (2007), Participatory sense-making
+how_it_sees_the_problem: '(record-only: no fetched text) Named in QUESTIONS.md H2 as the primary participatory
+  sense-making relative -- social cognition as co-constituted sense-making between interacting agents,
+  rather than derived from a non-semantic retained layer.'
+what_it_separates: ''
+what_it_assumes: ''
+stance: UNDETERMINED
+defeater_class: phenomenological
+legitimate_defeater: A future fetch of the full text confirming or denying an explicit non-semantic-before-meaning
+  derivation order would resolve this row.
+what_it_would_say_against_us: Cannot be stated without the fetched text -- no passage was obtained (see
+  citations_parked card disclosure).
+citation_card: cite-dejaegher-dipaolo2007-h2-007
+verified:
+  metadata_verified: false
+  claim_match_verified: false

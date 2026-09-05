@@ -1,0 +1,22 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: H1
+source_label: Tishby, Pereira & Bialek 1999, The Information Bottleneck Method
+how_it_sees_the_problem: Relevant information in a signal is defined relative to another (target) signal,
+  and a compression scheme trades off retaining relevant information against discarding irrelevant information
+  (a rate-relevance tradeoff).
+what_it_separates: relevant information (about the target signal y) from irrelevant information (compressed
+  away), via an explicit quantified tradeoff (the information bottleneck).
+what_it_assumes: that a target/relevance variable y is given in advance, against which the compression's
+  information loss can be measured.
+stance: ORTHOGONAL
+defeater_class: constitutive
+legitimate_defeater: A passage combining the rate-relevance tradeoff with an explicit reader-relativity
+  condition and translation-provenance record (not just the target-conditioned compression) would move
+  this toward SAME.
+what_it_would_say_against_us: The information bottleneck already gives a formal, quantified loss/relevance
+  tradeoff for compressing a non-semantic signal relative to a target; H1's 'loss gate' may be a restatement
+  of this well-established rate-relevance tradeoff rather than a new construct.
+citation_card: cite-tishby-pereira-bialek-1999-bmbc-h1-008
+verified:
+  metadata_verified: true
+  claim_match_verified: true

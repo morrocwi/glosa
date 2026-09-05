@@ -1,0 +1,39 @@
+$schema: citation_card.schema.json
+id: cite-anchor-readout-universe-logic-003
+claim_ref: ANCHORS
+identifier:
+  kind: URL
+  value: https://raw.githubusercontent.com/morrocwi/readout_universe/960165f13ced6e3f2bfd433928733a35be8283e6/logic.md
+fetch_status: FETCHED
+fetched_at: '2026-09-06'
+metadata_verified: true
+metadata_verified_by: mechanical:git (blob SHA / commit SHA on the public GitHub repository)
+metadata_verified_at: '2026-09-06'
+claim_match_verified: true
+claim_match_verified_by: route:claude
+claim_match_verified_at: null
+exact_passage: a finite, enumerable set under a retained selection rule, never an
+  unbounded continuum of options
+page_or_locator: readout_universe/logic.md §9.11 operator grounding; blob a28a16ae9a5442f2b179136bb76c4ffd0770388d
+  at commit 960165f13ced6e3f2bfd433928733a35be8283e6
+scope: DIRECT_QUOTATION
+evidence_tier: Dr
+independence_class: I1
+who_verified: 'route:claude (I1 route: same model, fresh headless session (no shared
+  context); abstract/metadata level, not full text) -- see cite-anchor-readout-universe-logic-003.i3.json'
+verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
+status: VERIFIED
+xenon_ledger_ref: null
+disclosure: 'own lineage: git-anchored programme source (commit-pinned raw URL); not
+  independent evidence; carded so Paper A refs [1]/[2] can be traced by a stranger.
+  | I1 route (claude) judged from fetched metadata/abstract + the card''s quoted passage,
+  not full text: Fetched text (readout_universe logic.md, commit-pinned) contains
+  the exact passage verbatim under ''operator grounding'' for ETH-1(ii). No title/author
+  metadata to contradict. Card scopes this as own-lineage programme source, not independent
+  evidence, so it is traceable context for the anchors hypothesis, not support.'
+superseded_by: null
+notes: Readout Universe logic ledger (ETH-1(ii) grounding used by Potential as a Readout
+  for the witnessed set); public GitHub, commit-pinned.
+fetched_from_url: https://raw.githubusercontent.com/morrocwi/readout_universe/960165f13ced6e3f2bfd433928733a35be8283e6/logic.md
+line_or_paragraph: char offset 77870 of normalized fetched text (~paragraph 1); verbatim
+  prefix match

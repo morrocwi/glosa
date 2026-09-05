@@ -1,0 +1,31 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: H3
+source_label: Gibson (1979), The Ecological Approach to Visual Perception, Ch.8 "The
+  Theory of Affordances", p.127
+how_it_sees_the_problem: An affordance is what the environment offers, provides, or
+  furnishes the animal, for good or ill -- a relational, structural fact that cuts
+  across the subjective/objective divide, independent of whether the animal ever perceives
+  or acts on it.
+what_it_separates: Separates the AFFORDANCE (a standing possibility of the animal-environment
+  relation) from the animal's PERCEPTION or USE of it -- an affordance can exist unperceived
+  and unused.
+what_it_assumes: Assumes affordances are individuable, animal-relative facts fixed
+  by the surface/substance layout and the animal's body; does not itself distinguish,
+  among the many affordances an environment offers, which ones become LIVE candidates
+  the animal brings to something like deliberation versus which remain merely structurally
+  available.
+stance: UNDETERMINED
+defeater_class: constitutive
+legitimate_defeater: A later passage in the same chapter (not read in this card) where
+  Gibson himself grades affordances by salience/attention in a way that amounts to
+  a live-candidate versus bare-feasibility split would weaken this row's NO reading.
+what_it_would_say_against_us: This is the founding text of the vocabulary H3 borrows
+  (afforded action, structural feasibility); Gibson's affordance concept already does
+  real filtering work by tying possibility to the animal's actual body and the actual
+  surface layout (not abstract logical possibility), which may already be doing part
+  of what H3 wants its live-possibility field to do, before any additional deliberation
+  layer is added.
+citation_card: cite-gibson1979-affordances-bmbc-009
+verified:
+  metadata_verified: true
+  claim_match_verified: false

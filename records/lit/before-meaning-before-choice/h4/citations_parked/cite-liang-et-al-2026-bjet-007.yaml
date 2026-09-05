@@ -1,0 +1,49 @@
+$schema: citation_card.schema.json
+id: cite-liang-et-al-2026-bjet-007
+claim_ref: H4
+identifier:
+  kind: DOI
+  value: 10.1111/bjet.70055
+fetch_status: PAYWALLED_ABSTRACT_ONLY
+fetched_at: '2026-09-06'
+metadata_verified: true
+metadata_verified_by: 'manual: WebFetch of research.monash.edu institutional
+  repository listing, confirmed as Liang, Yang, Sha, Gasevic, Yan & Chen (2026),
+  "A systematic review of generative AI in education: Empirical insights from a
+  human-AI interaction perspective", British Journal of Educational Technology'
+metadata_verified_at: '2026-09-06'
+claim_match_verified: true
+claim_match_verified_by: route:claude
+claim_match_verified_at: '2026-09-06'
+exact_passage: these literature reviews seldom analysed the effectiveness of GenAI-powered
+  educational applications from the human–AI interaction perspective, which is
+  a widely recognized critical factor influencing the effectiveness of such GenAI-powered
+  educational applications
+scope: SUPPORTS_GENERAL_CLAIM_ONLY
+page_or_locator: Abstract (Monash institutional-repository listing page), second
+  sentence
+evidence_tier: Dr
+independence_class: I1
+who_verified: 'route:claude (I1 route: same session, WebFetch of the Monash
+  repository abstract page; the Wiley publisher page itself returned HTTP 403
+  and was not read)'
+verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
+status: METADATA_OK
+xenon_ledger_ref: null
+disclosure: 'Abstract-only; the Wiley/BJET publisher page 403''d both direct and
+  via the institutional DOI link, so this card is built from the Monash
+  institutional-repository mirror''s listed abstract, not the publisher''s own
+  page -- weaker provenance than a direct publisher/PMC fetch. The abstract is
+  ORTHOGONAL to H4: this review classifies human-AI interaction MODES (human
+  control vs. AI automation) during use, not what survives after AI is removed;
+  it does not measure a post-removal audited quantity. Kept as a record-level
+  card for the "2026 GenAI-in-education review" item in H4''s source list rather
+  than promoted to a stance-bearing row, since claim_match here is to the
+  review''s existence/topic, not to H4''s carryover claim specifically.'
+superseded_by: null
+notes: 'Direct Wiley/BJET page (bera-journals.onlinelibrary.wiley.com/doi/10.1111/bjet.70055)
+  returned HTTP 403 on two attempts (direct DOI and canonical journal URL);
+  Wayback Machine fetch of the same URL failed (tool cannot fetch web.archive.org
+  in this session). Monash institutional repository listing used instead.'
+fetched_from_url: https://research.monash.edu/en/publications/a-systematic-review-of-generative-ai-in-education-empirical-insig/
+line_or_paragraph: Abstract paragraph, sentence 2

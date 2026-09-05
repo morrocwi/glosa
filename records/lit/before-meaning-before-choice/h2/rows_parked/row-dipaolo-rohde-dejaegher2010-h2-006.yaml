@@ -1,0 +1,23 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: H2
+source_label: Di Paolo, Rohde & De Jaegher (2010), Horizons for the Enactive Mind
+how_it_sees_the_problem: The enactive programme treats understanding meaning and value as a primary task
+  for cognitive science from the outset, offering an alternative to reductionist functional-localization
+  accounts.
+what_it_separates: the enactive account of meaning/value (autonomy, sense-making, embodiment) from reductionist/functional-localization
+  accounts of the same phenomena.
+what_it_assumes: that meaning and value are appropriately treated as basic explananda for a theory of
+  mind from the start, rather than as something derivable after a non-semantic retained layer.
+stance: ORTHOGONAL
+defeater_class: phenomenological
+legitimate_defeater: The full chapter (not fetchable here) explicitly stating that sense-making/meaning
+  is derived from a prior non-semantic organizational layer, with a loss/provenance account, would move
+  this toward NO (same order as H2) rather than ORTHOGONAL; explicitly treating meaning as primitive/foundational
+  would move it toward NO as a genuine rival starting point.
+what_it_would_say_against_us: 'Abstract-only: taking meaning/value as central from the outset is compatible
+  with either treating meaning as primitive (rival to H2) or as an early but still-derived construct;
+  full text is needed to decide, so this stays context rather than a determinate challenge or support.'
+citation_card: cite-dipaolo-rohde-dejaegher2010-h2-006
+verified:
+  metadata_verified: true
+  claim_match_verified: true

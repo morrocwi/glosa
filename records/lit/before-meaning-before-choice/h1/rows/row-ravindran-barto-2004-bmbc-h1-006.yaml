@@ -1,0 +1,22 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: H1
+source_label: Ravindran & Barto 2004, Approximate Homomorphisms
+how_it_sees_the_problem: An MDP homomorphism abstracts a Markov Decision Process by a state-and-action
+  mapping; when the homomorphism conditions hold only approximately, the resulting abstraction's loss
+  can be explicitly bounded.
+what_it_separates: exact MDP homomorphisms (lossless abstraction) from approximate homomorphisms (bounded-loss
+  abstraction), keeping the loss bound as a separate, quantified object.
+what_it_assumes: that the loss incurred by an approximate abstraction can be bounded in a task-relevant
+  way (e.g. bounding value-function or policy degradation).
+stance: ORTHOGONAL
+defeater_class: constitutive
+legitimate_defeater: A passage where the bounded-loss abstraction is explicitly combined with a reader-relativity
+  condition and a translation-provenance record (not just the algebraic homomorphism-plus-bound) would
+  move this toward SAME.
+what_it_would_say_against_us: We already have a rigorous, quantified loss-bounding result for non-exact
+  state abstraction in decision processes; this shows the 'loss gate' H1 names is not new machinery, it
+  is an existing, well-studied quantity (approximation error bound) that H1 has renamed rather than extended.
+citation_card: cite-ravindran-barto-2004-bmbc-h1-006
+verified:
+  metadata_verified: true
+  claim_match_verified: true

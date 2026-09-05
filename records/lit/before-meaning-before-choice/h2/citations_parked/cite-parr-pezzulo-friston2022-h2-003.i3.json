@@ -1,0 +1,25 @@
+{
+ "vendor": "claude",
+ "fetched": {
+  "source": "crossref",
+  "title": "Active Inference",
+  "authors": [
+   "Parr",
+   "Pezzulo",
+   "Friston"
+  ],
+  "year": 2022,
+  "container": "",
+  "abstract": " The first comprehensive treatment of active inference, an integrative perspective on brain, cognition, and behavior used across multiple disciplines. \n                   Active inference is a way of understanding sentient behavior—a theory that characterizes perception, planning, and action in terms of probabilistic inference. Developed by theoretical neuroscientist Karl Friston over years of groundbreaking research, active inference provides an integrated perspective on brain, cognition, and behavior that is increasingly used across multiple disciplines including neuroscience, psychology, and philosophy. Active inference puts the action into perception. This book offers the first comprehensive treatment of active inference, covering theory, applications, and cognitive domains. \n                   Active inference is a “first principles” approach to understanding behavior and the brain, framed in terms of a single imperative to minimize free energy. The book emphasizes the implications of the free energy principle for understanding how the brain works. It first introduces active inference both conceptually and formally, contextualizing it within current theories of cognition. It then provides specific examples of computational models that use active inference to explain such cognitive phenomena as perception, attention, memory, and planning. ",
+  "_card_url": "https://web.archive.org/web/20260725103852/https://direct.mit.edu/books/oa-monograph/chapter-pdf/2246581/c003400_9780262369978.pdf"
+ },
+ "verdict": {
+  "metadata_matches": true,
+  "passage_plausible": false,
+  "claim_match": true,
+  "bearing": "CONTEXT_ONLY",
+  "reason": "Title, first author Parr, year 2022 agree with Crossref. Fetched text is only Wayback Machine navigation chrome, not chapter text; passage not verifiable here, so plausibility fails by rule. Abstract confirms perception-as-inference from a generative model, relevant as H2's derivation-order rival, not as support or falsifier.",
+  "passage_mechanical": "quoted passage NOT found verbatim in fetched open text"
+ },
+ "date": "2026-09-04"
+}

@@ -1,0 +1,28 @@
+{
+ "vendor": "claude",
+ "fetched": {
+  "source": "crossref",
+  "title": "Generative AI without guardrails can harm learning: Evidence from high school mathematics",
+  "authors": [
+   "Bastani",
+   "Bastani",
+   "Sungu",
+   "Ge",
+   "Kabakcı",
+   "Mariman"
+  ],
+  "year": 2025,
+  "container": "Proceedings of the National Academy of Sciences",
+  "abstract": " Generative AI is poised to revolutionize how humans work, and has already demonstrated promise in significantly improving human productivity. A key question is how generative AI affects learning—namely, how humans acquire new skills as they perform tasks. Learning is critical to long-term productivity, especially since generative AI is fallible and users must check its outputs. We study this question via a field experiment where we provide nearly a thousand high school math students with access to generative AI tutors. To understand the differential impact of tool design on learning, we deploy two generative AI tutors: one that mimics a standard ChatGPT interface (“GPT Base”) and one with prompts designed to safeguard learning (“GPT Tutor”). Consistent with prior work, our results show that having GPT-4 access while solving problems significantly improves performance (48% improvement in grades for GPT Base and 127% for GPT Tutor). However, we additionally find that when access is subsequently taken away, students actually perform worse than those who never had access (17% reduction in grades for GPT Base)—i.e., unfettered access to GPT-4 can harm educational outcomes. These negative learning effects are largely mitigated by the safeguards in GPT Tutor. Without guardrails, students attempt to use GPT-4 as a “crutch” during practice problem sessions, and subsequently perform worse on their own. Thus, decision-makers must be cautious about design choices underlying generative AI deployments to preserve skill learning and long-term productivity. ",
+  "_card_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12232635/fullTextXML"
+ },
+ "verdict": {
+  "metadata_matches": true,
+  "passage_plausible": true,
+  "claim_match": true,
+  "bearing": "SUPPORTS",
+  "reason": "Title, 2025, first author Bastani match. Passage found verbatim in fetched abstract. Source reports assisted gains (48%/127%) alongside worse unaided performance after removal (17% drop), i.e. assisted measures did not predict unaided return, bearing directly on H4's audited-residue claim. Card correctly notes abstract-level verification only.",
+  "passage_mechanical": "verbatim prefix found in fetched open text"
+ },
+ "date": "2026-09-04"
+}

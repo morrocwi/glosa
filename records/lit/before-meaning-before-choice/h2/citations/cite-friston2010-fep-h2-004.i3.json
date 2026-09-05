@@ -1,0 +1,23 @@
+{
+ "vendor": "claude",
+ "fetched": {
+  "source": "crossref",
+  "title": "The free-energy principle: a unified brain theory?",
+  "authors": [
+   "Friston"
+  ],
+  "year": 2010,
+  "container": "Nature Reviews Neuroscience",
+  "abstract": "A free-energy principle has been proposed recently that accounts for action, perception and learning. This Review looks at some key brain theories in the biological (for example, neural Darwinism) and physical (for example, information theory and optimal control theory) sciences from the free-energy perspective. Crucially, one key theme runs through each of these theories - optimization. Furthermore, if we look closely at what is optimized, the same quantity keeps emerging, namely value (expected reward, expected utility) or its complement, surprise (prediction error, expected cost). This is the quantity that is optimized under the free-energy principle, which suggests that several global brain theories might be unified within a free-energy framework.",
+  "_card_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI:10.1038/nrn2787&format=json&resultType=core"
+ },
+ "verdict": {
+  "metadata_matches": true,
+  "passage_plausible": true,
+  "claim_match": true,
+  "bearing": "CONTEXT_ONLY",
+  "reason": "Crossref title, first author Friston, year 2010 and journal all match the card. The exact passage is verbatim the abstract's first sentence and mechanically found. Scope is CONTEXT_ONLY; abstract shows a formal optimization framework for perception, plausibly relevant as a formal-rival context for H2, but states no derivation order, so it neither supports nor challenges.",
+  "passage_mechanical": "verbatim prefix found in fetched open text"
+ },
+ "date": "2026-09-04"
+}

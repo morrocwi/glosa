@@ -1,0 +1,55 @@
+$schema: citation_card.schema.json
+id: cite-floridi-sep-semantic-info-bmbc-h1-002
+claim_ref: H1
+identifier:
+  kind: OFFICIAL_URL
+  value: https://plato.stanford.edu/entries/information-semantic/
+fetch_status: FETCHED
+fetched_at: '2026-09-06'
+metadata_verified: true
+metadata_verified_by: 'manual: direct fetch and pdftotext/html extraction of the source
+  this session, 2026-09-06'
+metadata_verified_at: '2026-09-06'
+claim_match_verified: true
+claim_match_verified_by: route:claude
+claim_match_verified_at: '2026-09-06'
+exact_passage: A semantic conception of information will not investigate the mere
+  surprise value of a signal given the likelihood of the signal itself (as does MTC).
+page_or_locator: Stanford Encyclopedia of Philosophy, "Semantic Conceptions of Information",
+  Introduction, paragraph 3 (per fetched page text)
+scope: CONTEXT_ONLY_NOT_EVIDENCE
+evidence_tier: definition
+independence_class: I1
+who_verified: 'route:claude (I1 route: same model, fresh headless session (no shared
+  context); abstract/metadata level, not full text) -- see cite-floridi-sep-semantic-info-bmbc-h1-002.i3.json'
+verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
+status: VERIFIED
+xenon_ledger_ref: null
+disclosure: 'Fetched the live SEP page directly with curl and stripped HTML tags;
+  passage is a single continuous sentence from the introductory section contrasting
+  semantic information with Shannon''s Mathematical Theory of Communication (MTC).
+  CONTEXT for H1: this SEP entry surveys multiple semantic-information theories (Bar-Hillel
+  & Carnap, Floridi''s strongly semantic information, Dretske/Fodor naturalist accounts)
+  that all define semantic information as a property assigned ON TOP OF a prior syntactic/statistical
+  layer, which is structurally adjacent to H1''s non-semantic-first admission order,
+  but none of the surveyed theories is shown (in the fetched text) to require H1''s
+  specific four-gate sequence (reader, translation, loss, dynamics-preservation) with
+  a provenance record -- CONTEXT_ONLY, not evidence that H1 is ''same'' as an existing
+  framework. | I1 route (claude) judged from fetched metadata/abstract + the card''s
+  quoted passage, not full text: Title matches; passage found verbatim in fetched
+  text. But the sentence only contrasts semantic information with Shannon/MTC; it
+  says nothing about admission order, reader/translation/loss/dynamics gates, or provenance.
+  It neither supports nor challenges H1''s architectural ordering claim, so scope
+  DIRECT_QUOTATION as evidence is not met; relevant only as background. | I1 route
+  (claude) judged from fetched metadata/abstract + the card''s quoted passage, not
+  full text: Fetched title matches card; passage found verbatim in fetched text. Source
+  contrasts semantic information with non-semantic MTC/Shannon signal-level information,
+  which is relevant context for H1''s non-semantic-layer-before-semantic-admission
+  distinction. It describes no explicit gate architecture, so it neither supports
+  nor challenges H1.'
+superseded_by: null
+notes: SEP entries are living documents; this session fetched the version live on
+  2026-09-06 and did not check revision history.
+fetched_from_url: https://plato.stanford.edu/entries/information-semantic/
+line_or_paragraph: char offset 2668 of normalized fetched text (~paragraph 1); verbatim
+  prefix match

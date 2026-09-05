@@ -1,0 +1,22 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: H1
+source_label: SEP, Semantic Conceptions of Information
+how_it_sees_the_problem: Semantic information is a further property (significance/meaning) that some correlations
+  carry, over and above the syntactic/statistical correlation captured by Shannon's Mathematical Theory
+  of Communication.
+what_it_separates: syntactic/statistical information (MTC, surprise value given signal likelihood) from
+  semantic information (informational content, meaning-bearing).
+what_it_assumes: that a signal's syntactic-information description is theoretically prior to and separable
+  from asking what it means.
+stance: ORTHOGONAL
+defeater_class: constitutive
+legitimate_defeater: A passage in one of the surveyed theories (Bar-Hillel & Carnap, Floridi's own strongly
+  semantic information) that specifies an explicit reader+translation+loss+dynamics-preservation admission
+  SEQUENCE, with a provenance record, would move this toward CHALLENGES/SAME.
+what_it_would_say_against_us: If every semantic-information theory already treats syntactic information
+  as prior to semantic information, the ordering half of H1 is not new; the AI-authored program would
+  need to show its FOUR-GATE decomposition (not just the two-layer order) is what these theories lack.
+citation_card: cite-floridi-sep-semantic-info-bmbc-h1-002
+verified:
+  metadata_verified: true
+  claim_match_verified: true

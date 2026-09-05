@@ -1,0 +1,23 @@
+{
+ "vendor": "claude",
+ "fetched": {
+  "source": "arxiv",
+  "title": "Computational Mechanics: Pattern and Prediction, Structure and Simplicity",
+  "authors": [
+   "Cosma Rohilla Shalizi",
+   "James P. Crutchfield"
+  ],
+  "year": "1999",
+  "abstract": "Computational mechanics, an approach to structural complexity, defines a process's causal states and gives a procedure for finding them. We show that the causal-state representation--an $ε$-machine--is the minimal one consistent with accurate prediction. We establish several results on $ε$-machine optimality and uniqueness and on how $ε$-machines compare to alternative representations. Further results relate measures of randomness and structural complexity obtained from $ε$-machines to those from ergodic and information theories.",
+  "_card_url": "https://arxiv.org/pdf/cond-mat/9907176"
+ },
+ "verdict": {
+  "metadata_matches": true,
+  "passage_plausible": true,
+  "claim_match": true,
+  "bearing": "CONTEXT_ONLY",
+  "reason": "Title and first author match; 1999 arXiv vs 2001 journal year is a version difference, not a contradiction. Passage found verbatim in fetched abstract. Source defines non-semantic predictive causal states, relevant background for H1's retained-state layer, but says nothing about admission gates for meaning/agency, so context only.",
+  "passage_mechanical": "verbatim prefix found in fetched open text"
+ },
+ "date": "2026-09-04"
+}

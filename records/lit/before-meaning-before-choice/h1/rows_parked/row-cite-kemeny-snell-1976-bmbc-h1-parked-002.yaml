@@ -1,0 +1,21 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: H1
+source_label: Kemeny & Snell 1976 (record only; open treatment via Faccin et al. 2020)
+how_it_sees_the_problem: (secondhand) A Markov chain's state space can be partitioned into lumps such
+  that the lumped process is again Markov, exactly when an algebraic lumpability condition on the transition
+  matrix holds.
+what_it_separates: (secondhand) the original, unlumped Markov chain's state space from the lumped/aggregated
+  state space.
+what_it_assumes: (secondhand) that the chain is finite and its transition matrix is fully specified, so
+  lumpability can be checked algebraically.
+stance: UNDETERMINED
+defeater_class: constitutive
+legitimate_defeater: An open copy of the source's own text, fetched and read directly, that specifies
+  (or explicitly does not specify) an admission-order gate matching or differing from H1.
+what_it_would_say_against_us: Cannot be assessed directly without the primary text; recorded as context
+  only per rule 17 (no passage invented from memory). The open Faccin et al. 2020 treatment (card 005)
+  is used for the actual quoted definition.
+citation_card: cite-kemeny-snell-1976-bmbc-h1-parked-002
+verified:
+  metadata_verified: true
+  claim_match_verified: false

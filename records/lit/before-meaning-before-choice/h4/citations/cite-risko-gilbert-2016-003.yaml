@@ -1,0 +1,46 @@
+$schema: citation_card.schema.json
+id: cite-risko-gilbert-2016-003
+claim_ref: H4
+identifier:
+  kind: DOI
+  value: 10.1016/j.tics.2016.07.002
+fetch_status: FETCHED
+fetched_at: '2026-09-06'
+metadata_verified: true
+metadata_verified_by: 'manual: pdftotext of discovery.ucl.ac.uk/1508770/1/gilbert_TiCS_OFFLOADING_RPS.pdf,
+  header confirms "Cognitive Offloading" by Evan F. Risko (U. Waterloo) & Sam J. Gilbert
+  (UCL), UCL author-repository copy of Risko & Gilbert (2016), Trends in Cognitive
+  Sciences 20(9):676-688'
+metadata_verified_at: '2026-09-06'
+claim_match_verified: true
+claim_match_verified_by: route:claude
+claim_match_verified_at: '2026-09-06'
+exact_passage: cognitive offloading, the use of physical action to alter the information
+  processing requirements of a task in order to reduce cognitive demand
+page_or_locator: page 2 (manuscript pagination "Cognitive Offloading 2"), Abstract,
+  first sentence, second clause
+scope: DIRECT_QUOTATION
+evidence_tier: definition
+independence_class: I1
+who_verified: 'route:claude (I1 route: same model, fresh headless session (no shared
+  context); abstract/metadata level, not full text) -- see cite-risko-gilbert-2016-003.i3.json'
+verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
+status: VERIFIED
+xenon_ledger_ref: null
+disclosure: 'This card supplies the standard definition of cognitive offloading that
+  the H4 concept vocabulary (cognitive/belief offloading) is built on. It is ORTHOGONAL
+  to H4''s specific carryover/removal-audit claim: the definition covers offloading
+  a task onto an external aid in the moment, and does not by itself say anything about
+  what changes in the person AFTER the aid (or AI) is removed, nor about a separately
+  audited return quantity. Used as background/vocabulary grounding, not as direct
+  support or challenge. | I1 route (claude) judged from fetched metadata/abstract
+  + the card''s quoted passage, not full text: Crossref title ''Cognitive Offloading'',
+  Risko first author, 2016, TiCS all match. Quoted passage found verbatim in fetched
+  text at abstract first sentence. Card itself declares the source orthogonal to H4''s
+  carryover/removal-audit claim, supplying only the definition H4''s vocabulary builds
+  on; nothing in the abstract bears on the falsifier. Relevant background only.'
+superseded_by: null
+notes: ''
+fetched_from_url: https://discovery.ucl.ac.uk/1508770/1/gilbert_TiCS_OFFLOADING_RPS.pdf
+line_or_paragraph: char offset 868 of normalized fetched text (~paragraph 1); verbatim
+  prefix match

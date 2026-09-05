@@ -1,0 +1,29 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: H4
+source_label: Guingrich, Mehta & Bhatt 2026, "Belief Offloading in Human-AI Interaction"
+  (arXiv)
+how_it_sees_the_problem: A person's process of forming and upholding beliefs can
+  itself be offloaded onto an AI system (not just a discrete task), with downstream
+  consequences for behavior and the structure of the person's belief system.
+what_it_separates: belief offloading from general cognitive offloading (belief
+  offloading is proposed as a bounded subset with its own necessary-and-sufficient
+  criteria), and offloading the process of belief-formation from offloading a single
+  factual lookup.
+what_it_assumes: that "belief offloading" is identifiable and boundable as a distinct
+  category from ordinary AI-assisted information seeking, prior to any empirical
+  demonstration of its downstream consequences.
+stance: ORTHOGONAL
+defeater_class: phenomenological
+legitimate_defeater: A later empirical study operationalizing this paper's taxonomy
+  with a pre/post-removal design, showing belief offloading measured during
+  interaction does or does not predict a person's later unaided belief state,
+  would move this row toward YES or NO.
+what_it_would_say_against_us: H4 asserts a separately AUDITED quantity after removal;
+  this is a conceptual/taxonomic paper (per its own abstract) that has not yet run
+  or cited such an audit, so it cannot itself confirm or refute whether the audit
+  adds information beyond assisted-session measures -- it names the mechanism H4
+  needs but does not test H4's falsifier.
+citation_card: cite-guingrich-belief-offload-2026-004
+verified:
+  metadata_verified: true
+  claim_match_verified: true

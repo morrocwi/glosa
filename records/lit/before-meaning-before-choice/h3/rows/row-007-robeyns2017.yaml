@@ -1,0 +1,28 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: H3
+source_label: Robeyns (2017), Wellbeing, Freedom and Social Justice, Ch.2 (Open Book
+  Publishers, CC BY 4.0)
+how_it_sees_the_problem: Frames capabilities as "a person's real freedoms or opportunities
+  to achieve functionings," conditioned by conversion factors (a person's ability
+  to turn a resource into a functioning).
+what_it_separates: Separates the resource a person has from the functioning they can
+  achieve with it, via conversion factors as the mediating variable -- but does not
+  further separate a graded live-candidate subset of that opportunity set from the
+  full declared set.
+what_it_assumes: Assumes 'real freedoms' (as opposed to merely formal/nominal ones)
+  is a meaningful, analyst-assessable category independent of whether the freedom
+  has ever been exercised, attended to, or brought forward for deliberation.
+stance: 'NO'
+defeater_class: constitutive
+legitimate_defeater: A passage where Robeyns requires evidence that an opportunity
+  is not just 'real' but currently a live candidate the person could bring to deliberation
+  (distinct from mere real-but-background availability), with some measure of that
+  gap, would defeat this row's NO reading.
+what_it_would_say_against_us: Robeyns could reply that 'real' freedoms already exclude
+  the merely formally-possible-but-practically-unconsiderable, so her conversion-factor
+  machinery is doing similar filtering work to H3's live-possibility field, just without
+  H3's counterfactual-measurement/provenance/corrigibility interface.
+citation_card: cite-robeyns2017-bmbc-007
+verified:
+  metadata_verified: true
+  claim_match_verified: true

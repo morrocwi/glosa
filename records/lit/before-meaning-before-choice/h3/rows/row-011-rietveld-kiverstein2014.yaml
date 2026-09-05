@@ -1,0 +1,32 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: H3
+source_label: Rietveld & Kiverstein (2014), "A Rich Landscape of Affordances", Ecological
+  Psychology 26(4), Abstract
+how_it_sees_the_problem: Affordances are possibilities for action an environment provides
+  an animal; the class of perceivable affordances is much broader than the standard
+  motor-action (locomotion/manual) reading, because the affordances offered depend
+  on the full range of an animal's SKILLS.
+what_it_separates: Separates the narrow, motor-action-only reading of affordances
+  from a much richer skill-dependent landscape -- widening what counts as afforded
+  relative to a given animal's abilities.
+what_it_assumes: Assumes an animal's skill repertoire is the relevant relativizing
+  variable for the whole landscape of affordances; the abstract does not itself grade
+  that rich landscape into a live-candidate-for-deliberation subset distinct from
+  the full skill-relative feasible set, nor supply a counterfactual recoverable-gap
+  measure.
+stance: ORTHOGONAL
+defeater_class: constitutive
+legitimate_defeater: A passage in the fuller text (not read here, abstract only) that
+  itself defines a graded live-candidate field within the rich landscape, with a counterfactual
+  measure distinguishing it from bare skill-relative feasibility, would satisfy H3's
+  own named falsifier and move this row to YES.
+what_it_would_say_against_us: This paper is named directly in H3's own falsifier clause
+  as the closest existing affordance-theory relative; on the abstract alone, it broadens
+  feasibility (skill-relative richness) rather than narrowing it toward a live-candidate
+  field, so it does not on this evidence meet the falsifier -- but the fuller text
+  (not fetched here, paywalled) could contain a closer construct this abstract does
+  not surface.
+citation_card: cite-rietveldkiverstein2014-bmbc-011
+verified:
+  metadata_verified: true
+  claim_match_verified: true

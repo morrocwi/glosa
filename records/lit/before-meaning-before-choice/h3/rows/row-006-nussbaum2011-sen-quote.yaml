@@ -1,0 +1,29 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: H3
+source_label: Nussbaum (2011), Creating Capabilities, Ch.2, p.20 (Harvard University
+  Press) -- quoting Sen 1999
+how_it_sees_the_problem: Defines a person's capability as the alternative combinations
+  of functionings that are FEASIBLE for her to achieve; capability is a kind of freedom,
+  the substantive freedom to achieve alternative functioning combinations.
+what_it_separates: Separates the resource/means a person has from the functioning
+  combinations feasible given that means -- but treats the whole feasible set as the
+  unit of analysis, without a further split between what is feasible and what is a
+  live candidate for deliberation.
+what_it_assumes: Assumes 'feasible for her to achieve' is itself a well-defined, analyst-declarable
+  set; does not require that a feasible option ever be witnessed, attended to, or
+  brought forward as a live candidate before it counts as part of the capability.
+stance: 'NO'
+defeater_class: constitutive
+legitimate_defeater: A passage where Sen or Nussbaum explicitly distinguishes a narrower,
+  graded live-candidate subset of the feasible set (e.g. options a person actually
+  considers) from the feasible set as a whole, with some measure of the gap, would
+  defeat this row's NO reading.
+what_it_would_say_against_us: A capability theorist could reply that 'feasible for
+  her to achieve' already implicitly excludes options that are merely formally possible
+  but practically unconsiderable given a person's conversion factors and social position
+  -- narrowing feasibility toward something close to H3's live-possibility field without
+  naming it as a separate construct.
+citation_card: cite-nussbaum2011-senquote-bmbc-006
+verified:
+  metadata_verified: true
+  claim_match_verified: true

@@ -1,0 +1,31 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: H4
+source_label: 'Lahtee 2026, Readout Genesis Standalone Synthesis, Part VIII (own
+  lineage, zenodo.21529456 -- I0, not independent literature)'
+how_it_sees_the_problem: A governance-relevant quantity attached to some component
+  (any component, not AI specifically) is meaningful only when its value changes
+  under ABLATION of that component (removal) relative to policy or correction --
+  i.e. removal-comparison is the general test for whether a component's
+  contribution is real, not decorative.
+what_it_separates: the presence-conditioned value of a governance operator from
+  its ablated (component-removed) value; treats "does removal change anything
+  that matters" as the operative question, generalized far beyond human-AI
+  interaction.
+what_it_assumes: that an ablation/removal comparison (with-component vs.
+  without-component) is well-defined and computable for the governance operator
+  in question, and that a tolerance threshold (τidle) for "matters" can be set.
+stance: YES
+defeater_class: constitutive
+legitimate_defeater: Not applicable as an external defeater -- own-lineage source
+  (I0); recorded as the general architectural ancestor of H4's removal-audit
+  logic, not as independent literature that could defeat H4.
+what_it_would_say_against_us: 'None as a defeater of H4, but a genuine limit for
+  the record: this passage is about a general governance operator and NEVER names
+  human-AI interaction as the ablated component, so citing it as H4''s ancestor
+  is a generalization one level removed from H4''s actual (human-AI-specific)
+  claim -- a reader could reasonably ask whether the human-AI case inherits this
+  general operator''s properties without further argument.'
+citation_card: cite-readout-genesis-partviii-010
+verified:
+  metadata_verified: true
+  claim_match_verified: true

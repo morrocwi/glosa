@@ -1,0 +1,38 @@
+$schema: citation_card.schema.json
+id: cite-own-meaning-giving-h2-001
+claim_ref: H2
+identifier:
+  kind: DOI
+  value: 10.5281/zenodo.22357744
+fetch_status: FETCHED
+fetched_at: '2026-09-06'
+metadata_verified: true
+metadata_verified_by: 'mechanical: Zenodo API record 22357744 (title/creator/date)'
+metadata_verified_at: '2026-09-06'
+claim_match_verified: true
+claim_match_verified_by: route:claude
+claim_match_verified_at: null
+exact_passage: 'A phenomenon becomes an experience for a finite human by being given meaning: it becomes
+  affectively, pragmatically, autobiographically, conceptually, or epistemically significant within a
+  reader-conditioned relation to embodiment, retained history, expectation, value, available concepts,
+  and context.'
+page_or_locator: Experience Is Meaning-Giving (v2.0 strong-claim edition), p.1, "Central claim" paragraph
+scope: DIRECT_QUOTATION
+evidence_tier: Open
+independence_class: I1
+who_verified: 'route:claude (I1 route: same model, fresh headless session (no shared context); abstract/metadata
+  level, not full text) -- see cite-own-meaning-giving-h2-001.i3.json'
+verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
+status: VERIFIED
+xenon_ledger_ref: null
+disclosure: 'Own-lineage source (founder''s own prior programme output), not independent evidence -- cited
+  per QUESTIONS.md H2''s own-lineage list, conflicts_of_interest declared in search_log.yaml frozen_scope.
+  | I1 route (claude) judged from fetched metadata/abstract + the card''s quoted passage, not full text:
+  Title, year 2026, first author Lahtee match card DOI. Passage verbatim in fetched text and abstract.
+  Source states meaning-giving order H2 assumes but is own-lineage (declared conflict), so it frames rather
+  than independently tests H2; not the phenomenological/enactive falsifier.'
+superseded_by: null
+notes: 'States the meaning-after-phenomenon order H2 asserts, in this programme''s own vocabulary (''reader-conditioned
+  relation''). Self-source: informs H2''s framing rather than testing it against an independent literature.'
+fetched_from_url: https://zenodo.org/api/records/22357744/files/Experience_Is_Meaning_Giving_v2_0_STRONG_CLAIM.pdf/content
+line_or_paragraph: char offset 1283 of normalized fetched text (~paragraph 1); verbatim prefix match

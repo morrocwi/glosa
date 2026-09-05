@@ -1,0 +1,21 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: H2
+source_label: Meaning Before Naming (own lineage, Zenodo 22410666)
+how_it_sees_the_problem: Retained difference is placed before semantic naming; meaning is a context-,
+  memory-, criterion-, and reader-dependent readout relation, not a property stored in the non-semantic
+  root itself.
+what_it_separates: the non-semantic retained-difference root from the semantic/naming layer built on top
+  of it, with meaning located in the relation between them rather than in either alone.
+what_it_assumes: that retained difference can exist and do work (be 'placed before') without yet being
+  semantic, i.e. that a non-semantic retained layer is coherently specifiable on its own.
+stance: 'YES'
+defeater_class: constitutive
+legitimate_defeater: A demonstration that 'retained difference' cannot be specified without already smuggling
+  in semantic content would defeat this row's supportive reading and undercut H2's admission-order claim
+  generally.
+what_it_would_say_against_us: 'Own-lineage source: it restates H2''s claim in the same vocabulary rather
+  than testing it against an outside framework.'
+citation_card: cite-own-meaning-before-naming-h2-002
+verified:
+  metadata_verified: false
+  claim_match_verified: true

@@ -1,0 +1,18 @@
+{
+ "vendor": "claude",
+ "fetched": {
+  "source": "url-fetch",
+  "title": "Feminist Epistemology and Philosophy of Science (Stanford Encyclopedia of Philosophy)",
+  "abstract": "",
+  "_card_url": "https://plato.stanford.edu/entries/feminism-epistemology/"
+ },
+ "verdict": {
+  "metadata_matches": true,
+  "passage_plausible": true,
+  "claim_match": true,
+  "bearing": "CONTEXT_ONLY",
+  "reason": "Fetched SEP title matches the card's identifier; the exact passage is verbatim in the fetched text, attributed to Fricker 2007. It bears on H3's power-before-prohibition clause (credibility deficit forecloses uptake), but does not define a graded live-candidate field or counterfactual gap measure, so it is context, not support or falsifier.",
+  "passage_mechanical": "verbatim prefix found in fetched open text"
+ },
+ "date": "2026-09-04"
+}

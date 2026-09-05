@@ -1,0 +1,23 @@
+{
+ "vendor": "claude",
+ "fetched": {
+  "source": "arxiv",
+  "title": "Semantic information, autonomous agency, and nonequilibrium statistical physics",
+  "authors": [
+   "Artemy Kolchinsky",
+   "David H. Wolpert"
+  ],
+  "year": "2018",
+  "abstract": "Shannon information theory provides various measures of so-called \"syntactic information\", which reflect the amount of statistical correlation between systems. In contrast, the concept of \"semantic information\" refers to those correlations which carry significance or \"meaning\" for a given system. Semantic information plays an important role in many fields, including biology, cognitive science, and philosophy, and there has been a long-standing interest in formulating a broadly applicable and formal theory of semantic information. In this paper we introduce such a theory. We define semantic information as the syntactic information that a physical system has about its environment which is causally necessary for the system to maintain its own existence. \"Causal necessity\" is defined in terms of counter-factual interventions which scramble correlations between the system and its environment, while \"maintaining existence\" is defined in terms of the system's ability to keep itself in a low entropy state. We also use recent results in nonequilibrium statistical physics to analyze semantic information from a thermodynamic point of view. Our framework is grounded in the intrinsic dynamics of a system coupled to an environment, and is applicable to any physical system, living or otherwise. It leads to formal definitions of several concepts that have been intuitively understood to be related to semantic information, including \"value of information\", \"semantic content\", and \"agency\".",
+  "_card_url": "https://arxiv.org/pdf/1806.08053"
+ },
+ "verdict": {
+  "metadata_matches": true,
+  "passage_plausible": true,
+  "claim_match": true,
+  "bearing": "CHALLENGES",
+  "reason": "Title, year, first author match; passage found verbatim in abstract. Abstract shows a framework admitting semantic information and agency from syntactic (non-semantic) correlations via an explicit gate (counterfactual causal necessity for self-maintenance). Partial challenge to H1's 'different' claim; gate is viability, not reader+translation+loss+dynamics-preservation, so not fully 'same'.",
+  "passage_mechanical": "verbatim prefix found in fetched open text"
+ },
+ "date": "2026-09-04"
+}

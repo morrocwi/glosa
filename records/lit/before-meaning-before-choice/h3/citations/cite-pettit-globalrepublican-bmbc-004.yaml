@@ -1,0 +1,44 @@
+$schema: citation_card.schema.json
+id: cite-pettit-globalrepublican-bmbc-004
+claim_ref: H3
+identifier:
+  kind: OFFICIAL_URL
+  value: https://www.eui.eu/Documents/MWP/ProgramActivities/20152016/master-classes/Pettit-The-Globalized-Republican-Ideal.pdf
+fetch_status: FETCHED
+fetched_at: '2026-09-06'
+metadata_verified: true
+metadata_verified_by: ''
+metadata_verified_at: '2026-09-06'
+claim_match_verified: true
+claim_match_verified_by: route:claude
+claim_match_verified_at: null
+exact_passage: you do not enjoy freedom as non-domination or independence just by
+  virtue of actually escaping interference; it must also be that you would not suffer
+  interference even if you had wished to act otherwise or others had not wanted you
+  to be able to act on your wishes.
+page_or_locator: Pettit, "The Globalized Republican Ideal" (EUI MWP master-class paper),
+  p. 3
+scope: CONTEXT_ONLY_NOT_EVIDENCE
+evidence_tier: definition
+independence_class: I1
+who_verified: 'route:claude (I1 route: same model, fresh headless session (no shared
+  context); abstract/metadata level, not full text) -- see cite-pettit-globalrepublican-bmbc-004.i3.json'
+verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
+status: VERIFIED
+xenon_ledger_ref: null
+disclosure: 'Not yet cross-checked; pending lit_crossvendor_check.py --vendor claude
+  run. | I1 route (claude) judged from fetched metadata/abstract + the card''s quoted
+  passage, not full text: Fetched text is titleless, but the URL filename and content
+  match Pettit''s Globalized Republican Ideal; no contradiction. Exact passage found
+  verbatim. Pettit''s robustness/counterfactual criterion is relevant context for
+  H3''s counterfactual measurement of live possibility, but defines no graded live-candidate
+  field, so context only.'
+superseded_by: null
+notes: Copied from records/lit/potential-as-readout/h3/citations/cite-pettit-globalrepublican-005.yaml
+  for H3 (before-meaning-before-choice); re-checked fresh. Pettit's robustness requirement
+  (would the calm survive a change in the dominant party's will) is the counterfactual-measurement
+  move H3's live-possibility-field interface needs to distinguish an open channel
+  from a merely-untested one.
+fetched_from_url: https://www.eui.eu/Documents/MWP/ProgramActivities/20152016/master-classes/Pettit-The-Globalized-Republican-Ideal.pdf
+line_or_paragraph: char offset 5507 of normalized fetched text (~paragraph 1); verbatim
+  prefix match

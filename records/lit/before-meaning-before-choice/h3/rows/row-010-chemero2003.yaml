@@ -1,0 +1,29 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: H3
+source_label: Chemero (2003), "An Outline of a Theory of Affordances", Ecological
+  Psychology 15(2), Abstract
+how_it_sees_the_problem: Affordances are RELATIONS between the abilities of animals
+  and features of the environment -- both real and perceivable, but not properties
+  of either the environment or the animal alone.
+what_it_separates: Separates the relational affordance itself from the animal's ability
+  and from the environmental feature taken separately -- neither term alone constitutes
+  the affordance.
+what_it_assumes: Assumes an animal's abilities are themselves well-individuated and
+  stable enough to define a relation; the abstract does not address how a subset of
+  afforded actions becomes a live candidate for deliberation as opposed to merely
+  structurally available given the animal's abilities.
+stance: ORTHOGONAL
+defeater_class: constitutive
+legitimate_defeater: A passage in the fuller Chemero 2003 text (not read here, abstract
+  only) that itself grades affordances into a live/available-but-not-live split with
+  a counterfactual measure would move this row toward YES and could satisfy H3's own
+  falsifier.
+what_it_would_say_against_us: Chemero's relational reframing of affordances (against
+  Gibson's more environment-centered reading) already revises what counts as 'available'
+  relative to an animal's abilities; if that revision implicitly narrows the affordance
+  set toward something like H3's live-possibility field, H3's claimed gap may be smaller
+  than stated -- though this abstract alone does not show that narrowing.
+citation_card: cite-chemero2003-bmbc-010
+verified:
+  metadata_verified: true
+  claim_match_verified: true

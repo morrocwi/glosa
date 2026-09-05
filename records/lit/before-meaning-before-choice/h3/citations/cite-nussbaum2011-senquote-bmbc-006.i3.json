@@ -1,0 +1,16 @@
+{
+ "vendor": "claude",
+ "fetched": {
+  "source": "no-identifier",
+  "_card_url": "https://asuevents.asu.edu/sites/g/files/litvpz3506/files/2024-06/Creating_Capabilities_The_Human_Development_Approa..._----_(2._The_Central_Capabilities_).pdf"
+ },
+ "verdict": {
+  "metadata_matches": true,
+  "passage_plausible": true,
+  "claim_match": true,
+  "bearing": "CHALLENGES",
+  "reason": "Fetched text (Nussbaum 2011, Ch. 2, p. 20) contains the quoted Sen formulation verbatim. Passage defines capability as the feasible functioning set with no graded live-candidate layer or counterfactual gap measure, so it is a rival framing that H3 must distinguish itself from, as the card's stance states.",
+  "passage_mechanical": "verbatim prefix found in fetched open text"
+ },
+ "date": "2026-09-04"
+}

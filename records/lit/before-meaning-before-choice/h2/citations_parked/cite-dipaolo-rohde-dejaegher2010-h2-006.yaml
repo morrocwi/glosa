@@ -1,0 +1,50 @@
+$schema: citation_card.schema.json
+id: cite-dipaolo-rohde-dejaegher2010-h2-006
+claim_ref: H2
+identifier:
+  kind: DOI
+  value: 10.7551/mitpress/9780262014601.003.0003
+fetch_status: PAYWALLED_ABSTRACT_ONLY
+fetched_at: '2026-09-06'
+metadata_verified: true
+metadata_verified_by: 'mechanical: OpenAlex work lookup for DOI 10.7551/mitpress/9780262014601.003.0003
+  (title/authors/year)'
+metadata_verified_at: '2026-09-06'
+claim_match_verified: true
+claim_match_verified_by: route:claude
+claim_match_verified_at: null
+exact_passage: The enactive view takes the task of understanding meaning and value very seriously and
+  elaborates a proper scientific alternative to reductionist attempts to tackle these issues by functional
+  localization.
+page_or_locator: 'Di Paolo, Rohde & De Jaegher (2010), "Horizons for the Enactive Mind: Values, Social
+  Interaction, and Play", in Enaction (MIT Press), abstract'
+scope: CONTEXT_ONLY_NOT_EVIDENCE
+evidence_tier: Open
+independence_class: I1
+who_verified: 'route:claude (I1 route: same model, fresh headless session (no shared context); abstract/metadata
+  level, not full text) -- see cite-dipaolo-rohde-dejaegher2010-h2-006.i3.json'
+verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
+status: METADATA_OK
+xenon_ledger_ref: null
+disclosure: 'Chapter full text not fetchable: the only two claimed-OA locations (a figshare ''metadata
+  record'' with no attached file, and a University of Bielefeld repository landing page with no PDF link)
+  yielded no full text. Abstract reconstructed from OpenAlex''s abstract_inverted_index. Full chapter
+  not read; abstract states the enactive programme takes meaning/value as primary explananda but does
+  not itself state an explicit non-semantic-layer-before-meaning admission order, so this is context,
+  not direct evidence. | I1 route (claude) judged from fetched metadata/abstract + the card''s quoted
+  passage, not full text: Title, year 2010, first author Di Paolo match Crossref. Passage cannot be checked:
+  fetched abstract is empty, mechanical search returned False, and the card itself reports no fulltext;
+  passage not contradicted but unverified. As CONTEXT_ONLY, an enactive chapter centering meaning is relevant
+  context for H2''s reversal claim, not evidence. | I1 route (claude) judged from fetched metadata/abstract
+  + the card''s quoted passage, not full text: Title, year 2010, and first author Di Paolo match Crossref/OpenAlex.
+  Fetched abstract is empty and no open full text was retrieved, so the quoted passage cannot be compared;
+  unverified. Title alone evidences an enactive account centred on values, which is relevant context for
+  H2''s reversed starting point.'
+superseded_by: null
+notes: QUESTIONS.md H2 relative (enactive/participatory sense-making family); this specific chapter's
+  abstract argues meaning is central to enactivism from the outset, which is compatible with H2's own
+  description of enactivism as the account being reversed (starts from meaning/sense-making rather than
+  deriving it after a non-semantic layer).
+fetched_from_url: https://api.openalex.org/works/https://doi.org/10.7551/mitpress/9780262014601.003.0003
+line_or_paragraph: abstract_inverted_index reconstruction, sentence beginning 'The enactive view takes
+  the task of understanding meaning and value very seriously'

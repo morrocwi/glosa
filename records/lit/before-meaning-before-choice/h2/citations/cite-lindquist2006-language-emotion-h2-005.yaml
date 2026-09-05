@@ -1,0 +1,40 @@
+$schema: citation_card.schema.json
+id: cite-lindquist2006-language-emotion-h2-005
+claim_ref: H2
+identifier:
+  kind: DOI
+  value: 10.1037/1528-3542.6.1.125
+fetch_status: PAYWALLED_ABSTRACT_ONLY
+fetched_at: '2026-09-06'
+metadata_verified: true
+metadata_verified_by: 'mechanical: Crossref DOI 10.1037/1528-3542.6.1.125 metadata (title/journal/year)
+  plus Europe PMC abstract lookup'
+metadata_verified_at: '2026-09-06'
+claim_match_verified: true
+claim_match_verified_by: route:claude
+claim_match_verified_at: null
+exact_passage: The authors predicted and found that the accessibility of emotion words influenced participants'
+  speed or accuracy in perceiving facial behaviors depicting emotion.
+page_or_locator: Lindquist, Barrett, Bliss-Moreau & Russell (2006), Emotion 6(1):125-138, abstract, second
+  sentence
+scope: CONTEXT_ONLY_NOT_EVIDENCE
+evidence_tier: Open
+independence_class: I1
+who_verified: 'route:claude (I1 route: same model, fresh headless session (no shared context); abstract/metadata
+  level, not full text) -- see cite-lindquist2006-language-emotion-h2-005.i3.json'
+verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
+status: VERIFIED
+xenon_ledger_ref: null
+disclosure: 'No open full text found; abstract retrieved via Europe PMC REST API (APA/PsycNET full text
+  is paywalled). Abstract alone shows language/naming affecting perception SPEED, which bears on H2''s
+  reversed order in the opposite direction (semantic accessibility shaping perception) but does not by
+  itself establish or refute an architecture-level admission order. | I1 route (claude) judged from fetched
+  metadata/abstract + the card''s quoted passage, not full text: Crossref title/year/first author (Lindquist
+  2006, Emotion 6(1)) match the card; exact_passage is verbatim in the fetched abstract. Abstract shows
+  emotion-word accessibility affects speed/accuracy of perceiving facial emotion, which is relevant context
+  for H2''s meaning-after-readout ordering without confirming or refuting it, so CONTEXT_ONLY fits.'
+superseded_by: null
+notes: Potential challenge to H2 if full text shows naming causally precedes/organizes low-level perception;
+  abstract alone is insufficient to confirm this, so scope stays CONTEXT_ONLY.
+fetched_from_url: https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI:10.1037/1528-3542.6.1.125&format=json&resultType=core
+line_or_paragraph: char offset 1419 of normalized fetched text (~paragraph 1); verbatim prefix match

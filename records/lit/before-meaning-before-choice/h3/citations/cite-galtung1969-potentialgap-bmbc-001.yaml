@@ -1,0 +1,45 @@
+$schema: citation_card.schema.json
+id: cite-galtung1969-potentialgap-bmbc-001
+claim_ref: H3
+identifier:
+  kind: OTHER_STABLE
+  value: jstor:422690
+fetch_status: FETCHED
+fetched_at: '2026-09-06'
+metadata_verified: true
+metadata_verified_by: ''
+metadata_verified_at: '2026-09-06'
+claim_match_verified: true
+claim_match_verified_by: route:claude
+claim_match_verified_at: null
+exact_passage: violence is present when humanbeings are being influencedso that their
+  actual somatic and mental realizations are below theirpotential realizations.This
+  statement may lead to more problems than it solves.
+page_or_locator: Galtung 1969, p. 168 (p3 in the local page-tagged extraction), right-hand
+  column, opening of section "2. On the definition and dimensions of 'violence'"
+scope: CONTEXT_ONLY_NOT_EVIDENCE
+evidence_tier: definition
+independence_class: I1
+who_verified: 'route:claude (I1 route: same model, fresh headless session (no shared
+  context); abstract/metadata level, not full text) -- see cite-galtung1969-potentialgap-bmbc-001.i3.json'
+verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
+status: VERIFIED
+xenon_ledger_ref: null
+disclosure: 'Not yet cross-checked; pending lit_crossvendor_check.py --vendor claude
+  run. | I1 route (claude) judged from fetched metadata/abstract + the card''s quoted
+  passage, not full text: Fetched text (Galtung, section 2 on violence) contains the
+  exact passage verbatim; title/year/author not contradicted. Galtung''s actual-vs-potential
+  gap framing is relevant context for H3''s capability-vs-live-possibility vocabulary,
+  but defines no graded live-candidate field or counterfactual recoverable-gap measure,
+  so it neither supports nor challenges H3.'
+superseded_by: null
+notes: 'Copied from records/lit/potential-as-readout/h3/citations/cite-galtung1969-potentialgap-001.yaml
+  for hN=H3 under before-meaning-before-choice per task brief (H3''s live-possibility-field
+  claim reuses the same actual-vs-potential vocabulary); re-checked fresh rather than
+  inheriting the old VERIFIED status. Galtung defines violence itself as the gap between
+  actual and potential realizations -- the vocabulary H3''s ''live-possibility field
+  between capability and choice'' directly extends. CONTEXT_ONLY: this passage frames
+  the problem, it does not itself test H3''s counterfactual-measurement claim.'
+fetched_from_url: https://www2.kobe-u.ac.jp/~alexroni/IPD%202015%20readings/IPD%202015_2/Galtung_Violence%2C%20Peace%2C%20and%20Peace%20Research.pdf
+line_or_paragraph: char offset 5714 of normalized fetched text (~paragraph 1); verbatim
+  prefix match

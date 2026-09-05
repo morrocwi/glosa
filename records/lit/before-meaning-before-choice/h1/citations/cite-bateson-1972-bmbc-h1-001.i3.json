@@ -1,0 +1,18 @@
+{
+ "vendor": "claude",
+ "fetched": {
+  "source": "url-fetch",
+  "title": "",
+  "abstract": "",
+  "_card_url": "https://polanyisociety.org/2021Zoom/June2021/Bateson.Steps.Form%20Substance%20Difference.pdf"
+ },
+ "verdict": {
+  "metadata_matches": true,
+  "passage_plausible": true,
+  "claim_match": true,
+  "bearing": "CONTEXT_ONLY",
+  "reason": "Fetched text is the Bateson essay (Steps to an Ecology of Mind page headers visible) and contains the passage verbatim, dash lost to extraction. Bateson's 'difference which makes a difference' with sensory selection from infinite differences is relevant context for a non-semantic retained-state layer, but describes no explicit reader/translation/loss/dynamics gate ordering.",
+  "passage_mechanical": "verbatim prefix found in fetched open text"
+ },
+ "date": "2026-09-04"
+}

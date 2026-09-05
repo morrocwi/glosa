@@ -1,0 +1,46 @@
+$schema: citation_card.schema.json
+id: cite-own-readout-genesis-lens-h2-bmbc-001
+claim_ref: H2
+identifier:
+  kind: DOI
+  value: 10.5281/zenodo.21529456
+fetch_status: FETCHED
+fetched_at: '2026-09-05'
+metadata_verified: true
+metadata_verified_by: mechanical:zenodo_api
+metadata_verified_at: '2026-09-05'
+claim_match_verified: true
+claim_match_verified_by: route:claude
+claim_match_verified_at: null
+exact_passage: It is a retained distinction, δR = (a ♯ b), (3) meaning that a difference between two states
+  is not erased by the reader relevant to the current construction.
+page_or_locator: Readout_Genesis_Information_Epistemic_Foundation_Journal.pdf, p. 2 (definition of the
+  retained distinction, eq. (3))
+scope: SUPPORTS_GENERAL_CLAIM_ONLY
+evidence_tier: Dr
+independence_class: I1
+who_verified: 'route:claude (I1 route: same model, fresh headless session (no shared context); abstract/metadata
+  level, not full text) -- see cite-own-readout-genesis-lens-h2-bmbc.i3.json'
+verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
+status: VERIFIED
+xenon_ledger_ref: null
+disclosure: 'own lineage: the LENS itself (lens_translation.lens_ref of the GLS-2026-002 claim cards),
+  same author as the hypotheses; not independent evidence; carded so rule12b (D-LENS-UNCITED) is satisfied
+  by a real fetched passage rather than by assertion. I3 cross-vendor check not yet run (codex quota exhausted
+  2026-09-05 evening; retry after reset). | I1 route (claude) judged from fetched metadata/abstract +
+  the card''s quoted passage, not full text: Title, first author, year match. Passage verbatim in fetched
+  text. Card scope is SUPPORTS_GENERAL_CLAIM_ONLY but self-declares lens/own-lineage, not independent
+  evidence; δR defines retained distinction, which is the general root H2''s non-collapse of two layers
+  descends from. Relevant lens context, not evidence for the two-layer claim itself. | I1 route (claude)
+  judged from fetched metadata/abstract + the card''s quoted passage, not full text: Fetched title/author/year
+  match the card''s DOI target; passage found verbatim in fetched text (eq. 3, retained distinction).
+  Abstract and excerpt state meaning/mentality/phenomenality are not primitives but downstream typed readouts
+  after quotient, matching H2''s general claim. Same-author lens; not independent evidence, as card itself
+  flags.'
+superseded_by: null
+notes: 'Reused from records/lit/potential-as-readout/h2/citations/cite-own-readout-genesis-lens-h2-001.yaml
+  (same underlying source, Readout Genesis, re-carded for before-meaning-before-choice H2; re-checked
+  here). Directly relevant: Readout Genesis''s retained distinction (deltaR) is the non-semantic retained
+  layer H2 claims meaning/experience are derived after.'
+fetched_from_url: https://zenodo.org/api/records/21529456/files/Readout_Genesis_Information_Epistemic_Foundation_Journal.pdf/content
+line_or_paragraph: char offset 6952 of normalized fetched text (~paragraph 1); verbatim prefix match

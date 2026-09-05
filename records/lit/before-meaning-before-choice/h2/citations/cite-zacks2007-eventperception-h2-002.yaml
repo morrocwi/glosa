@@ -1,0 +1,42 @@
+$schema: citation_card.schema.json
+id: cite-zacks2007-eventperception-h2-002
+claim_ref: H2
+identifier:
+  kind: PMCID
+  value: PMC2852534
+fetch_status: FETCHED
+fetched_at: '2026-09-06'
+metadata_verified: true
+metadata_verified_by: 'manual: Europe PMC REST metadata lookup (TITLE match) plus Wayback-fetched PMC2852534
+  page confirming title/authors/journal'
+metadata_verified_at: '2026-09-06'
+claim_match_verified: true
+claim_match_verified_by: route:claude
+claim_match_verified_at: null
+exact_passage: research suggests that talk of discrete events reflects a deeper psychological reality,
+  that people perceive activity in terms of discrete events, that ongoing processing resources are devoted
+  to this perceptual process, and that the on-line perception of events determines how episodes are encoded
+  in memory
+page_or_locator: Zacks, Speer, Swallow, Braver & Reynolds (2007), Psychological Bulletin 133(2):273-293,
+  PMC2852534, section introducing "What is an event?", early paragraph
+scope: DIRECT_QUOTATION
+evidence_tier: Dr
+independence_class: I1
+who_verified: 'route:claude (I1 route: same model, fresh headless session (no shared context); abstract/metadata
+  level, not full text) -- see cite-zacks2007-eventperception-h2-002.i3.json'
+verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
+status: VERIFIED
+xenon_ledger_ref: null
+disclosure: 'Fetched via the Wayback Machine snapshot of the PMC article page (live pmc.ncbi.nlm.nih.gov
+  blocked automated fetch with a reCAPTCHA challenge page); passage located by exact substring search
+  (char offset 4888 of normalized text). | I1 route (claude) judged from fetched metadata/abstract + the
+  card''s quoted passage, not full text: Title, 2007, first author Zacks match. Passage found verbatim
+  in fetched text and consistent with abstract. Source frames event boundaries as arising from perceiver-side
+  processing, relevant context for ''rhythm as reader-side description''; it does not itself derive meaning
+  from a non-semantic retained layer with loss accounting, so context only.'
+superseded_by: null
+notes: Cited in QUESTIONS.md H2 for 'rhythm as reader-side description' -- event segmentation is framed
+  here as something the perceiver's mind does to continuous activity, not a property inherent in the world
+  stream itself.
+fetched_from_url: https://web.archive.org/web/2023id_/https://pmc.ncbi.nlm.nih.gov/articles/PMC2852534/
+line_or_paragraph: char offset 3894 of normalized fetched text (~paragraph 1); verbatim prefix match

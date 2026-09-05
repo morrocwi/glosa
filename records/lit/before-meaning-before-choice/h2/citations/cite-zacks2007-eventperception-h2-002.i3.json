@@ -1,0 +1,27 @@
+{
+ "vendor": "claude",
+ "fetched": {
+  "source": "europepmc",
+  "title": "Event perception: a mind-brain perspective.",
+  "authors": [
+   "Zacks JM",
+   "Speer NK",
+   "Swallow KM",
+   "Braver TS",
+   "Reynolds JR"
+  ],
+  "year": "2007",
+  "container": "",
+  "abstract": "People perceive and conceive of activity in terms of discrete events. Here the authors propose a theory according to which the perception of boundaries between events arises from ongoing perceptual processing and regulates attention and memory. Perceptual systems continuously make predictions about what will happen next. When transient errors in predictions arise, an event boundary is perceived. According to the theory, the perception of events depends on both sensory cues and knowledge structures that represent previously learned information about event parts and inferences about actors' goals and plans. Neurological and neurophysiological data suggest that representations of events may be implemented by structures in the lateral prefrontal cortex and that perceptual prediction error is calculated and evaluated by a processing pathway, including the anterior cingulate cortex and subcortical neuromodulatory systems.",
+  "_card_url": "https://web.archive.org/web/2023id_/https://pmc.ncbi.nlm.nih.gov/articles/PMC2852534/"
+ },
+ "verdict": {
+  "metadata_matches": true,
+  "passage_plausible": true,
+  "claim_match": true,
+  "bearing": "CONTEXT_ONLY",
+  "reason": "Title, 2007, first author Zacks match. Passage found verbatim in fetched text and consistent with abstract. Source frames event boundaries as arising from perceiver-side processing, relevant context for 'rhythm as reader-side description'; it does not itself derive meaning from a non-semantic retained layer with loss accounting, so context only.",
+  "passage_mechanical": "verbatim prefix found in fetched open text"
+ },
+ "date": "2026-09-04"
+}

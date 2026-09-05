@@ -1,0 +1,30 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: H4
+source_label: 'Lahtee 2026, CTSA Human-Return Readout (own lineage, zenodo.22339909
+  -- I0, not independent literature)'
+how_it_sees_the_problem: Human-AI learning must be tested at the session boundary
+  -- after AI removal -- rather than inferred from what the coupled human-AI system
+  produces while assistance is present; retained change is typed into four
+  observable readout classes (Conceptual, Tool-Selection, Skill-Execution,
+  Alternative-Generation Return).
+what_it_separates: what the coupled system produces while assisted from what
+  readout-distinguishable capability remains after AI is removed; also separates
+  persistence, loss, metacognitive regulation, provenance, warrant, and epistemic
+  direction as independently auditable dimensions rather than one collapsed score.
+what_it_assumes: that a frozen pre-AI baseline is available or constructible for
+  comparison, and that the four CTSA readout classes are jointly sufficient to
+  type the kinds of retained change worth auditing.
+stance: YES
+defeater_class: constitutive
+legitimate_defeater: Not applicable as an external defeater -- this is the source
+  program's own prior architecture that H4 restates; an external defeater would
+  need to attack H4 itself (see the independent-literature rows above), not this
+  card, since this row records lineage/continuity rather than corroboration.
+what_it_would_say_against_us: 'None -- this is a same-programme, same-author
+  restatement (I0), so it cannot function as a defeater OR as independent
+  support for H4; it establishes only that H4 is continuous with, not a departure
+  from, this project''s own prior CTSA architecture.'
+citation_card: cite-ctsa-lahtee-2026-008
+verified:
+  metadata_verified: true
+  claim_match_verified: true

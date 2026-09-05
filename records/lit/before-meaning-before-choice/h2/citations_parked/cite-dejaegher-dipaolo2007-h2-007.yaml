@@ -1,0 +1,32 @@
+$schema: citation_card.schema.json
+id: cite-dejaegher-dipaolo2007-h2-007
+claim_ref: H2
+identifier:
+  kind: DOI
+  value: 10.1007/s11097-007-9076-9
+fetch_status: NOT_FETCHED
+fetched_at: null
+metadata_verified: false
+metadata_verified_by: null
+metadata_verified_at: null
+claim_match_verified: false
+claim_match_verified_by: null
+claim_match_verified_at: null
+exact_passage: ''
+page_or_locator: De Jaegher & Di Paolo (2007), Phenomenology and the Cognitive Sciences 6:485-507
+scope: CONTEXT_ONLY_NOT_EVIDENCE
+evidence_tier: Open
+independence_class: I1
+who_verified: null
+verification_method: MECHANICAL_LOOKUP
+status: CANDIDATE
+xenon_ledger_ref: null
+disclosure: 'No open copy found: Unpaywall reports oa_status=closed with no repository copy; OpenAlex
+  confirms no OA location; no abstract available from Crossref, Europe PMC, or OpenAlex; the corresponding
+  author''s personal site (ezequieldipaolo.net) returned 404; figshare and BASE searches for an author-deposited
+  PDF returned nothing usable. Record-only per task instructions -- never inventing a passage.'
+superseded_by: null
+notes: Named in QUESTIONS.md H2 as a core participatory-sense-making relative; parked as record-only (no
+  fetched text) rather than fabricated.
+fetched_from_url: null
+line_or_paragraph: null

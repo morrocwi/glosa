@@ -1,0 +1,18 @@
+{
+ "vendor": "claude",
+ "fetched": {
+  "source": "url-fetch",
+  "title": "Wellbeing, Freedom and Social Justice -\n                2. Core Ideas and the Framework - \n                Open Book Publishers",
+  "abstract": "\n2.1 IntroductionThe previous chapter listed a range of fields in which the capability approach has been taken up, and in chapters 3 and 4 we focus in more detail on how the capability approach can (or cannot) make a difference for thinking about wellbeing, social and distributive justice, human rights, welfare economics and other topics. This broad uptake of the capability approach across disciplines and across different types of knowledge",
+  "_card_url": "https://web.archive.org/web/2025id_/https://books.openedition.org/obp/4862"
+ },
+ "verdict": {
+  "metadata_matches": true,
+  "passage_plausible": true,
+  "claim_match": true,
+  "bearing": "CHALLENGES",
+  "reason": "Fetched title matches Robeyns Ch.2 at the given URL; passage found verbatim at paragraph 39. Source defines capabilities as real freedoms/opportunities with only a realized-vs-effectively-possible split, no graded live-candidate layer or counterfactual measure; it is a rival framing, so CHALLENGES as an alternative, not a falsifier.",
+  "passage_mechanical": "verbatim prefix found in fetched open text"
+ },
+ "date": "2026-09-04"
+}

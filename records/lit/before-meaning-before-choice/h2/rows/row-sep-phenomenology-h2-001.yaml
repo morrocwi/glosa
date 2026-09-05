@@ -1,0 +1,21 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: H2
+source_label: SEP, "Phenomenology"
+how_it_sees_the_problem: 'Consciousness is essentially intentional: the central structure of any experience
+  is its directedness toward an object, given through the experience''s own content or meaning.'
+what_it_separates: the intentional content/meaning of an experience from the object it is about, and from
+  the enabling background conditions that make the directedness possible.
+what_it_assumes: that intentional directedness is available to first-person description as the basic structure
+  of experience, not a construction built up afterward from a more primitive non-semantic layer.
+stance: 'NO'
+defeater_class: phenomenological
+legitimate_defeater: A passage in this or another phenomenological source that itself derives intentional
+  structure FROM a prior non-semantic retained layer, with an explicit loss/defect accounting per translation,
+  would defeat this row's disagree reading (then 'same', per H2's own falsifier).
+what_it_would_say_against_us: If intentionality is the central, defining structure of experience itself
+  rather than something meaning gets attached to afterward, there is no experience-shaped remainder left
+  over once you strip away the semantic/intentional layer for H2 to derive meaning from.
+citation_card: cite-sep-phenomenology-h2-001
+verified:
+  metadata_verified: false
+  claim_match_verified: true

@@ -1,0 +1,57 @@
+$schema: citation_card.schema.json
+id: cite-bastani-et-al-2025-002
+claim_ref: H4
+identifier:
+  kind: DOI
+  value: 10.1073/pnas.2422633122
+fetch_status: FETCHED
+fetched_at: '2026-09-06'
+metadata_verified: true
+metadata_verified_by: 'manual: WebFetch of pmc.ncbi.nlm.nih.gov/articles/PMC12232635/,
+  confirmed as Bastani, Bastani, Sungu, Ge, Kabakci & Mariman, "Generative AI without
+  guardrails can harm learning: Evidence from high school mathematics", PNAS 2025
+  (open-access PMC copy; originally circulated 2024 as SSRN working paper)'
+metadata_verified_at: '2026-09-06'
+claim_match_verified: true
+claim_match_verified_by: route:claude
+claim_match_verified_at: '2026-09-06'
+exact_passage: when access is subsequently taken away, students actually perform worse
+  than those who never had access
+page_or_locator: Abstract / main-text summary sentence (PMC HTML rendering, no pagination)
+scope: DIRECT_QUOTATION
+evidence_tier: fit_calibrated
+independence_class: I1
+who_verified: 'route:claude (I1 route: same model, fresh headless session (no shared
+  context); abstract/metadata level, not full text) -- see cite-bastani-et-al-2025-002.i3.json'
+verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
+status: VERIFIED
+xenon_ledger_ref: null
+disclosure: 'Verified at abstract/summary level via WebFetch; this session did not
+  itself re-derive the effect-size statistics from the raw dataset. This is the closest
+  direct empirical support in this source set for H4''s claim that "what survives
+  after the AI is removed" is a distinct, separately measured quantity from assisted
+  performance: students improved DURING AI-assisted practice but performed WORSE than
+  a no-AI control once AI access was removed on the unaided exam -- assisted performance
+  did not predict, and in fact inverted relative to, the post-removal state. This
+  directly instantiates H4''s falsifier test (assisted-session measures vs. delayed
+  unaided return) by finding they diverge, which is evidence AGAINST the falsifier
+  (i.e. SUPPORTS H4''s claim that the separate audit is not redundant). | I1 route
+  (claude) judged from fetched metadata/abstract + the card''s quoted passage, not
+  full text: Crossref title/year/first author (Bastani, 2025, PNAS) match the DOI
+  card; the exact passage appears verbatim in the fetched abstract. Source reports
+  that assisted performance rose while unaided post-removal performance fell, so assisted
+  measures did not predict the unaided return, bearing directly on H4''s separately-audited-survival
+  claim. | I1 route (claude) judged from fetched metadata/abstract + the card''s quoted
+  passage, not full text: Title, 2025, first author Bastani match. Passage found verbatim
+  in fetched abstract. Source reports assisted gains (48%/127%) alongside worse unaided
+  performance after removal (17% drop), i.e. assisted measures did not predict unaided
+  return, bearing directly on H4''s audited-residue claim. Card correctly notes abstract-level
+  verification only.'
+superseded_by: null
+notes: A correction was later issued for this PNAS article (PMC12403119 / 10.1073/pnas.2518204122);
+  this session fetched the correction notice and confirmed it addresses only an author-affiliation
+  production error (Osbert Bastani's affiliation), not the findings -- the quoted
+  passage is unaffected.
+fetched_from_url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12232635/fullTextXML
+line_or_paragraph: char offset 3278 of normalized fetched text (~paragraph 1); verbatim
+  prefix match

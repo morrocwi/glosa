@@ -1,0 +1,21 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: H2
+source_label: Zacks, Speer, Swallow, Braver & Reynolds (2007), Event perception
+how_it_sees_the_problem: Ongoing activity is continuous; the mind imposes discrete event structure on
+  it as part of perception itself, and this segmentation shapes later memory.
+what_it_separates: the continuous physical activity stream from the discretely segmented percept the observer
+  ends up with.
+what_it_assumes: that event segmentation is a perceptual/cognitive process performed on an already-ongoing
+  activity stream, without stating whether the pre-segmentation stream itself is semantic or non-semantic.
+stance: ORTHOGONAL
+defeater_class: empirical
+legitimate_defeater: A passage in this paper explicitly locating event segmentation before or after a
+  stated semantic/non-semantic architectural boundary (rather than just describing it as an observer-side
+  process) would move this row off ORTHOGONAL.
+what_it_would_say_against_us: Event/rhythm structure could just as easily be described as an intrinsically
+  perceptual-cognitive act rather than one specifically staged after a non-semantic retained layer --
+  the paper does not itself make H2's two-layer architectural claim.
+citation_card: cite-zacks2007-eventperception-h2-002
+verified:
+  metadata_verified: false
+  claim_match_verified: true

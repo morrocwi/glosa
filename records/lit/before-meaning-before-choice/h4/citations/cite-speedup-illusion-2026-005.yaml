@@ -1,0 +1,46 @@
+$schema: citation_card.schema.json
+id: cite-speedup-illusion-2026-005
+claim_ref: H4
+identifier:
+  kind: ARXIV
+  value: '2605.23177'
+fetch_status: FETCHED
+fetched_at: '2026-09-06'
+metadata_verified: true
+metadata_verified_by: 'manual: WebFetch of arxiv.org/abs/2605.23177, confirmed as
+  "Cognitive offloading and the speedup illusion in human-AI interaction" (2026 arXiv
+  preprint)'
+metadata_verified_at: '2026-09-06'
+claim_match_verified: true
+claim_match_verified_by: route:claude
+claim_match_verified_at: '2026-09-06'
+exact_passage: participants reported lower subjective effort with AI despite equivalent
+  completion times
+scope: DIRECT_QUOTATION
+page_or_locator: arXiv abstract (abs page), penultimate sentence
+evidence_tier: fit_calibrated
+independence_class: I1
+who_verified: 'route:claude (I1 route: same model, fresh headless session (no shared
+  context); abstract/metadata level, not full text) -- see cite-speedup-illusion-2026-005.i3.json'
+verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
+status: VERIFIED
+xenon_ledger_ref: null
+disclosure: 'Abstract-level verification only. Relevant to H4 as a CHALLENGE-adjacent
+  finding: the study measured objective completion time (actual AI-assisted vs. independent
+  completion did not differ) and found the gap was in subjective effort/expectation,
+  not an unaided-return/removal design. It is evidence that in-session (assisted)
+  measures can diverge from what people believe about their own capability, but it
+  is ORTHOGONAL to H4''s specific claim about a post-removal audited quantity -- this
+  paper never removes the AI and re-tests unaided performance; it measures perception
+  of AI-assisted vs. independent completion within-session. | I1 route (claude) judged
+  from fetched metadata/abstract + the card''s quoted passage, not full text: Title,
+  2026, first author consistent; passage found verbatim in abstract. Study measures
+  within-session assisted performance and subjective effort only, no unaided-return
+  or delayed measure. Bears on H4 as challenge-adjacent context (assisted metrics
+  diverge among themselves), per card''s stated stance; does not test the falsifier
+  directly.'
+superseded_by: null
+notes: ''
+fetched_from_url: https://arxiv.org/abs/2605.23177
+line_or_paragraph: char offset 1472 of normalized fetched text (~paragraph 1); verbatim
+  prefix match

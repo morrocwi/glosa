@@ -1,0 +1,24 @@
+{
+ "vendor": "claude",
+ "fetched": {
+  "source": "crossref",
+  "title": "A Rich Landscape of Affordances",
+  "authors": [
+   "Rietveld",
+   "Kiverstein"
+  ],
+  "year": 2014,
+  "container": "Ecological Psychology",
+  "abstract": "",
+  "_card_url": "https://web.archive.org/web/20241007215830/https://www.tandfonline.com/doi/abs/10.1080/10407413.2014.958035"
+ },
+ "verdict": {
+  "metadata_matches": true,
+  "passage_plausible": true,
+  "claim_match": true,
+  "bearing": "CONTEXT_ONLY",
+  "reason": "Crossref title/year/first author match the card. Quoted passage appears verbatim in the fetched abstract text. Abstract shows skill-dependent affordance landscape, relevant framing for H3's capability-vs-live-candidate distinction, but abstract alone gives no graded live-candidate field or counterfactual measure, so it neither supports nor challenges; falsifier untestable from abstract.",
+  "passage_mechanical": "verbatim prefix found in fetched open text"
+ },
+ "date": "2026-09-04"
+}

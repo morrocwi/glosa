@@ -1,0 +1,46 @@
+$schema: citation_card.schema.json
+id: cite-parr-pezzulo-friston2022-h2-003
+claim_ref: H2
+identifier:
+  kind: DOI
+  value: 10.7551/mitpress/12441.001.0001
+fetch_status: FETCHED
+fetched_at: '2026-09-06'
+metadata_verified: true
+metadata_verified_by: 'manual: Crossref DOI 10.7551/mitpress/12441.001.0001 metadata (title/authors/year)
+  plus the Wayback-fetched book landing page chapter list'
+metadata_verified_at: '2026-09-06'
+claim_match_verified: true
+claim_match_verified_by: route:claude
+claim_match_verified_at: null
+exact_passage: the prior and likelihood—which together comprise the generative model—are sufficient for
+  us to compute the model evidence and the posterior probability
+page_or_locator: 'Parr, Pezzulo & Friston (2022), Active Inference: The Free Energy Principle in Mind,
+  Brain, and Behavior (MIT Press, open access), Chapter 4 "The Generative Models of Active Inference",
+  p.64-65, section 4.2 "From Bayesian Inference to Free Energy"'
+scope: DIRECT_QUOTATION
+evidence_tier: definition
+independence_class: I1
+who_verified: 'route:claude (I1 route: same model, fresh headless session (no shared context); abstract/metadata
+  level, not full text) -- see cite-parr-pezzulo-friston2022-h2-003.i3.json'
+verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
+status: METADATA_OK
+xenon_ledger_ref: null
+disclosure: 'direct.mit.edu blocked automated fetch with a Cloudflare bot challenge; the chapter-4 PDF
+  was retrieved instead from the Wayback Machine snapshot of the book''s own chapter-pdf download link
+  and read with pdftotext. Hyphenation break ''suf-ficient'' across a line wrap was rejoined; no other
+  change made. | I1 route (claude) judged from fetched metadata/abstract + the card''s quoted passage,
+  not full text: Crossref title, year 2022, first author Parr match the card. Fetched text is only Wayback
+  Machine navigation boilerplate, not the chapter, so the passage could not be compared and mechanical
+  search failed. Abstract confirms perception-as-inference from a generative model, so the source is relevant
+  rival context for H2, not direct evidence. | I1 route (claude) judged from fetched metadata/abstract
+  + the card''s quoted passage, not full text: Title, first author Parr, year 2022 agree with Crossref.
+  Fetched text is only Wayback Machine navigation chrome, not chapter text; passage not verifiable here,
+  so plausibility fails by rule. Abstract confirms perception-as-inference from a generative model, relevant
+  as H2''s derivation-order rival, not as support or falsifier.'
+superseded_by: null
+notes: 'QUESTIONS.md H2 names this as the formal rival: here perception (the posterior) and the derivation
+  of experience are computed FROM a prior generative model, an explicit derivation-order claim structurally
+  comparable to, but mechanistically different from, H2''s non-semantic-retained-layer order.'
+fetched_from_url: https://web.archive.org/web/20260725103852/https://direct.mit.edu/books/oa-monograph/chapter-pdf/2246581/c003400_9780262369978.pdf
+line_or_paragraph: p.64-65, paragraph containing equation 4.1

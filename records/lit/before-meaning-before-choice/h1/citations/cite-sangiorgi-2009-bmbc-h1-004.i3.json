@@ -1,0 +1,18 @@
+{
+ "vendor": "claude",
+ "fetched": {
+  "source": "url-fetch",
+  "title": "",
+  "abstract": "",
+  "_card_url": "https://www.cs.unibo.it/~sangio/DOC_public/history_bis_coind.pdf"
+ },
+ "verdict": {
+  "metadata_matches": true,
+  "passage_plausible": true,
+  "claim_match": true,
+  "bearing": "CONTEXT_ONLY",
+  "reason": "Fetched text is the Sangiorgi bisimulation paper; Definition 2.1 passage matches verbatim. Card scope is DIRECT_QUOTATION offered as CONTEXT: a relational-structure/LTS definition is background for retained-state framing, not evidence about admission order or reader/translation/loss gates. Does not satisfy or refute the H1 falsifier.",
+  "passage_mechanical": "verbatim prefix found in fetched open text"
+ },
+ "date": "2026-09-04"
+}

@@ -1,0 +1,30 @@
+$schema: citation_card.schema.json
+id: cite-thompson2007-mindinlife-h2-008
+claim_ref: H2
+identifier:
+  kind: ISBN
+  value: 978-0-674-02511-5
+fetch_status: NOT_FETCHED
+fetched_at: null
+metadata_verified: false
+metadata_verified_by: null
+metadata_verified_at: null
+claim_match_verified: false
+claim_match_verified_by: null
+claim_match_verified_at: null
+exact_passage: ''
+page_or_locator: 'Thompson (2007), Mind in Life: Biology, Phenomenology, and the Sciences of Mind, Harvard/Belknap
+  Press'
+scope: CONTEXT_ONLY_NOT_EVIDENCE
+evidence_tier: Open
+independence_class: I1
+who_verified: null
+verification_method: MECHANICAL_LOOKUP
+status: CANDIDATE
+xenon_ledger_ref: null
+disclosure: Closed-access monograph, predates open-access monograph norms; no OA copy located via OpenAlex/Unpaywall.
+  Record-only per task instructions (QUESTIONS.md itself lists this source as 'record').
+superseded_by: null
+notes: Named in QUESTIONS.md H2. Parked without a fetched passage rather than inventing one.
+fetched_from_url: null
+line_or_paragraph: null

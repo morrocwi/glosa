@@ -1,0 +1,47 @@
+$schema: citation_card.schema.json
+id: cite-fricker2007-sep-bmbc-012
+claim_ref: H3
+identifier:
+  kind: OFFICIAL_URL
+  value: https://plato.stanford.edu/entries/feminism-epistemology/
+fetch_status: FETCHED
+fetched_at: '2026-09-06'
+metadata_verified: true
+metadata_verified_by: ''
+metadata_verified_at: '2026-09-06'
+claim_match_verified: true
+claim_match_verified_by: route:claude
+claim_match_verified_at: null
+exact_passage: In the core case of testimonial injustice, people discount the credibility
+  of what others say on account of prejudice against their social group.
+page_or_locator: SEP, "Feminist Epistemology and Philosophy of Science", §9 "Epistemic
+  Authority, Epistemic Injustice, Epistemologies of Ignorance, and Virtue Epistemology",
+  reporting Fricker (2007)
+scope: DIRECT_QUOTATION
+evidence_tier: definition
+independence_class: I1
+who_verified: 'route:claude (I1 route: same model, fresh headless session (no shared
+  context); abstract/metadata level, not full text) -- see cite-fricker2007-sep-bmbc-012.i3.json'
+verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
+status: VERIFIED
+xenon_ledger_ref: null
+disclosure: 'Not yet cross-checked; pending lit_crossvendor_check.py --vendor claude
+  run. | I1 route (claude) judged from fetched metadata/abstract + the card''s quoted
+  passage, not full text: Fetched SEP title matches the card''s identifier; the exact
+  passage is verbatim in the fetched text, attributed to Fricker 2007. It bears on
+  H3''s power-before-prohibition clause (credibility deficit forecloses uptake), but
+  does not define a graded live-candidate field or counterfactual gap measure, so
+  it is context, not support or falsifier.'
+superseded_by: null
+notes: 'Fricker 2007 (Epistemic Injustice: Power and the Ethics of Knowing, OUP) itself
+  has no open full copy found; carded via the SEP entry''s own paraphrase-with-attribution
+  of her testimonial-injustice concept, fetched and verbatim-matched from the live
+  SEP page rather than from memory. Bears on H3''s ''power can act on the field before
+  any prohibition'' clause: a credibility deficit forecloses a hearer''s uptake of
+  a speaker''s testimony without any formal prohibition on speaking -- a cognate mechanism
+  to H3''s pre-prohibition field-shaping, in the epistemic rather than action domain.
+  ORTHOGONAL to the counterfactual-measurement/live-candidate machinery H3 claims
+  as its interface contribution.'
+fetched_from_url: https://plato.stanford.edu/entries/feminism-epistemology/
+line_or_paragraph: char offset 90899 of normalized fetched text (~paragraph 1); verbatim
+  prefix match

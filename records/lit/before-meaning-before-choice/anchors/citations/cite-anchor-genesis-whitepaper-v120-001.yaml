@@ -1,0 +1,40 @@
+$schema: citation_card.schema.json
+id: cite-anchor-genesis-whitepaper-v120-001
+claim_ref: ANCHORS
+identifier:
+  kind: URL
+  value: https://raw.githubusercontent.com/morrocwi/readout_genesis/04cde19be2c885a11b42597b1cdb60fb5b7ca1bb/READOUT_GENESIS_UNIVERSAL_TECHNICAL_WHITEPAPER_v1.2.0.md
+fetch_status: FETCHED
+fetched_at: '2026-09-06'
+metadata_verified: true
+metadata_verified_by: mechanical:git (blob SHA / commit SHA on the public GitHub repository)
+metadata_verified_at: '2026-09-06'
+claim_match_verified: true
+claim_match_verified_by: route:claude
+claim_match_verified_at: null
+exact_passage: Information philosophy fixes the order by which meaning becomes admissible
+  and governs every translation
+page_or_locator: READOUT_GENESIS_UNIVERSAL_TECHNICAL_WHITEPAPER_v1.2.0.md, line 35
+  (rule field); blob 6ca7ef20a1e9ea17632451e6c8a19b3ae7c9fa8a on morrocwi/readout_genesis
+  main (commit 04cde19be2c885a11b42597b1cdb60fb5b7ca1bb)
+scope: DIRECT_QUOTATION
+evidence_tier: Dr
+independence_class: I1
+who_verified: 'route:claude (I1 route: same model, fresh headless session (no shared
+  context); abstract/metadata level, not full text) -- see cite-anchor-genesis-whitepaper-v120-001.i3.json'
+verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
+status: VERIFIED
+xenon_ledger_ref: null
+disclosure: 'own lineage: git-anchored programme source (commit-pinned raw URL); not
+  independent evidence; carded so Paper A refs [1]/[2] can be traced by a stranger.
+  | I1 route (claude) judged from fetched metadata/abstract + the card''s quoted passage,
+  not full text: Fetched text is the Readout Genesis whitepaper, version 1.2.0, matching
+  the card; no author/year contradiction. Exact passage found verbatim in the rule
+  field. Card scopes it as own-lineage anchor for traceability, not independent evidence,
+  so the source serves as context only.'
+superseded_by: null
+notes: 'Paper A ref [1]: public GitHub source, exact version v1.2.0, blob SHA 6ca7ef20…;
+  not a Zenodo record (archival permanence is a separate matter).'
+fetched_from_url: https://raw.githubusercontent.com/morrocwi/readout_genesis/04cde19be2c885a11b42597b1cdb60fb5b7ca1bb/READOUT_GENESIS_UNIVERSAL_TECHNICAL_WHITEPAPER_v1.2.0.md
+line_or_paragraph: char offset 742 of normalized fetched text (~paragraph 1); verbatim
+  prefix match

@@ -1,0 +1,37 @@
+$schema: citation_card.schema.json
+id: cite-massimi-2022-bmbc-h1-parked-004
+claim_ref: H1
+identifier:
+  kind: ISBN
+  value: '9780197555620'
+fetch_status: NOT_FETCHED
+fetched_at: '2026-09-06'
+metadata_verified: true
+metadata_verified_by: 'manual: bibliographic record only, checked by search 2026-09-06; no open full-text
+  or abstract copy located in this pass'
+metadata_verified_at: '2026-09-06'
+claim_match_verified: false
+claim_match_verified_by: route:claude
+claim_match_verified_at: '2026-09-06'
+exact_passage: ''
+page_or_locator: ''
+scope: CONTEXT_ONLY_NOT_EVIDENCE
+evidence_tier: Open
+independence_class: I1
+who_verified: route:claude (record-only pass; no fetch attempted beyond a bibliographic web search)
+verification_method: MECHANICAL_LOOKUP
+status: METADATA_OK
+xenon_ledger_ref: null
+disclosure: 'FETCH_FAILED->recorded as NOT_FETCHED: academic.oup.com/book/24240 and doi.org/10.1093/oso/9780197555620.001.0001
+  both returned Cloudflare challenge/403 responses to a direct curl fetch (confirmed twice, timestamps
+  in this pass''s shell history). No passage invented from memory per rule 17; if a Wayback Machine or
+  institutional-repository copy becomes available in a future pass, this card should be superseded by
+  a directly-fetched one.'
+superseded_by: null
+notes: Bibliographic record only. Massimi, M. (2022) Perspectival Realism, Oxford University Press (Oxford
+  Studies in Philosophy of Science). Publisher describes the book as open access (CC BY-NC-ND), but this
+  session's fetch attempts against academic.oup.com and the OSO DOI resolver were blocked by a Cloudflare
+  bot-challenge (HTTP 403) both times; no open PDF/HTML mirror was located as a substitute within this
+  pass's time budget.
+fetched_from_url: null
+line_or_paragraph: null

@@ -1,0 +1,18 @@
+{
+ "vendor": "claude",
+ "fetched": {
+  "source": "url-fetch",
+  "title": "",
+  "abstract": "",
+  "_card_url": "https://raw.githubusercontent.com/morrocwi/readout_genesis/49e444cc64bdaea2767c2c18d209654cdf6cb23f/domains/philosophy/PHILOSOPHY_MEMK_DOMAIN_v0_2_0.yaml"
+ },
+ "verdict": {
+  "metadata_matches": true,
+  "passage_plausible": true,
+  "claim_match": true,
+  "bearing": "CONTEXT_ONLY",
+  "reason": "URL fetch matches card identifier; no title/author/year to contradict. Passage 'E_n = Phi_E(x_n,mu_n,kappa_n,c_n)' appears verbatim (normalized) in fetched text. Card scopes it as own-lineage anchor, not independent evidence; consistent. Line number 92 and 'v0.3.0 not public' claim unverifiable here.",
+  "passage_mechanical": "verbatim prefix found in fetched open text"
+ },
+ "date": "2026-09-04"
+}

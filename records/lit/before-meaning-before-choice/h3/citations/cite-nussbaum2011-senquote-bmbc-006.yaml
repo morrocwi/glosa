@@ -1,0 +1,45 @@
+$schema: citation_card.schema.json
+id: cite-nussbaum2011-senquote-bmbc-006
+claim_ref: H3
+identifier:
+  kind: ISBN
+  value: '9780674050549'
+fetch_status: FETCHED
+fetched_at: '2026-09-06'
+metadata_verified: true
+metadata_verified_by: ''
+metadata_verified_at: '2026-09-06'
+claim_match_verified: true
+claim_match_verified_by: route:claude
+claim_match_verified_at: null
+exact_passage: 'In one standard formulation by Sen, “a person’s ‘capability’ refers
+  to the alternative combinations of functionings that are feasible for her to achieve.
+  Capability is thus a kind of freedom: the substantive freedom to achieve alternative
+  functioning combinations.'
+page_or_locator: Nussbaum 2011, Creating Capabilities, Ch. 2, p. 20 (excerpt PDF page
+  4) -- Nussbaum quoting Sen 1999; the Sen primary was not opened
+scope: DIRECT_QUOTATION
+evidence_tier: definition
+independence_class: I1
+who_verified: 'route:claude (I1 route: same model, fresh headless session (no shared
+  context); abstract/metadata level, not full text) -- see cite-nussbaum2011-senquote-bmbc-006.i3.json'
+verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
+status: VERIFIED
+xenon_ledger_ref: null
+disclosure: 'Not yet cross-checked; pending lit_crossvendor_check.py --vendor claude
+  run. | I1 route (claude) judged from fetched metadata/abstract + the card''s quoted
+  passage, not full text: Fetched text (Nussbaum 2011, Ch. 2, p. 20) contains the
+  quoted Sen formulation verbatim. Passage defines capability as the feasible functioning
+  set with no graded live-candidate layer or counterfactual gap measure, so it is
+  a rival framing that H3 must distinguish itself from, as the card''s stance states.'
+superseded_by: null
+notes: 'Copied from records/lit/potential-as-readout/h1/citations/cite-nussbaum-2011-sen-quote-009.yaml
+  for H3 (before-meaning-before-choice); claim_ref changed H1->H3, re-checked fresh.
+  Records Nussbaum quoting Sen, not Sen 1999 itself (that primary was not opened).
+  CHALLENGES H3 as an alternative framing: Sen''s capability is ''feasible for her
+  to achieve'' -- a declared feasible set -- with no further graded live-candidate
+  layer between feasibility and exercised choice, which is exactly the layer H3 claims
+  is missing from capability theory.'
+fetched_from_url: https://asuevents.asu.edu/sites/g/files/litvpz3506/files/2024-06/Creating_Capabilities_The_Human_Development_Approa..._----_(2._The_Central_Capabilities_).pdf
+line_or_paragraph: char offset 7780 of normalized fetched text (~paragraph 1); verbatim
+  prefix match

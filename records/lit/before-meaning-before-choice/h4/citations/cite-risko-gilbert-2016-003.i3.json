@@ -1,0 +1,24 @@
+{
+ "vendor": "claude",
+ "fetched": {
+  "source": "crossref",
+  "title": "Cognitive Offloading",
+  "authors": [
+   "Risko",
+   "Gilbert"
+  ],
+  "year": 2016,
+  "container": "Trends in Cognitive Sciences",
+  "abstract": "If you have ever tilted your head to perceive a rotated image, or programmed a smartphone to remind you of an upcoming appointment, you have engaged in cognitive offloading: the use of physical action to alter the information processing requirements of a task so as to reduce cognitive demand. Despite the ubiquity of this type of behavior, it has only recently become the target of systematic investigation in and of itself. We review research from several domains that focuses on two main questions: (i) what mechanisms trigger cognitive offloading, and (ii) what are the cognitive consequences of this behavior? We offer a novel metacognitive framework that integrates results from diverse domains and suggests avenues for future research.",
+  "_card_url": "https://discovery.ucl.ac.uk/1508770/1/gilbert_TiCS_OFFLOADING_RPS.pdf"
+ },
+ "verdict": {
+  "metadata_matches": true,
+  "passage_plausible": true,
+  "claim_match": true,
+  "bearing": "CONTEXT_ONLY",
+  "reason": "Crossref title 'Cognitive Offloading', Risko first author, 2016, TiCS all match. Quoted passage found verbatim in fetched text at abstract first sentence. Card itself declares the source orthogonal to H4's carryover/removal-audit claim, supplying only the definition H4's vocabulary builds on; nothing in the abstract bears on the falsifier. Relevant background only.",
+  "passage_mechanical": "verbatim prefix found in fetched open text"
+ },
+ "date": "2026-09-04"
+}

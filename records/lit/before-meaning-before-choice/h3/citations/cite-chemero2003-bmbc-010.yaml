@@ -1,0 +1,44 @@
+$schema: citation_card.schema.json
+id: cite-chemero2003-bmbc-010
+claim_ref: H3
+identifier:
+  kind: DOI
+  value: 10.1207/S15326969ECO1502_5
+fetch_status: PAYWALLED_ABSTRACT_ONLY
+fetched_at: '2026-09-06'
+metadata_verified: true
+metadata_verified_by: ''
+metadata_verified_at: '2026-09-06'
+claim_match_verified: true
+claim_match_verified_by: route:claude
+claim_match_verified_at: null
+exact_passage: A theory of affordances is outlined according to which affordances
+  are relations between the abilities of animals and features of the environment.
+page_or_locator: Chemero 2003, "An Outline of a Theory of Affordances", Ecological
+  Psychology 15(2), Abstract
+scope: DIRECT_QUOTATION
+evidence_tier: definition
+independence_class: I1
+who_verified: 'route:claude (I1 route: same model, fresh headless session (no shared
+  context); abstract/metadata level, not full text) -- see cite-chemero2003-bmbc-010.i3.json'
+verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
+status: VERIFIED
+xenon_ledger_ref: null
+disclosure: 'Not yet cross-checked; pending lit_crossvendor_check.py --vendor claude
+  run. | I1 route (claude) judged from fetched metadata/abstract + the card''s quoted
+  passage, not full text: Crossref title, first author Chemero, year 2003, container
+  match. Passage found verbatim in the fetched abstract. The abstract defines affordances
+  as animal-ability/environment-feature relations, which is relevant antecedent context
+  for H3''s capability layer, but shows no graded live-candidate field or counterfactual
+  measure; it neither supports nor challenges the interface claim.'
+superseded_by: null
+notes: 'Full text is paywalled (Unpaywall: oa_status closed, no repository copy found;
+  Taylor & Francis 403s automated fetches). Fetched the Wayback Machine snapshot of
+  the publisher''s own abstract page (fetch_status PAYWALLED_ABSTRACT_ONLY) rather
+  than inventing a full-text passage. Chemero''s relational (animal-ability x environment-feature)
+  definition of affordance is a direct antecedent of H3''s affordance vocabulary;
+  ORTHOGONAL to H3''s specific live-candidate/counterfactual-measurement claim, which
+  this abstract does not address.'
+fetched_from_url: https://web.archive.org/web/20250601050754/https://www.tandfonline.com/doi/abs/10.1207/S15326969ECO1502_5
+line_or_paragraph: char offset 4277 of normalized fetched text (~paragraph 1); verbatim
+  prefix match

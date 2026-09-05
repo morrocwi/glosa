@@ -1,0 +1,18 @@
+{
+ "vendor": "claude",
+ "fetched": {
+  "source": "url-fetch",
+  "title": "Semantic Conceptions of Information (Stanford Encyclopedia of Philosophy)",
+  "abstract": "",
+  "_card_url": "https://plato.stanford.edu/entries/information-semantic/"
+ },
+ "verdict": {
+  "metadata_matches": true,
+  "passage_plausible": true,
+  "claim_match": true,
+  "bearing": "CONTEXT_ONLY",
+  "reason": "Fetched title matches card; passage found verbatim in fetched text. Source contrasts semantic information with non-semantic MTC/Shannon signal-level information, which is relevant context for H1's non-semantic-layer-before-semantic-admission distinction. It describes no explicit gate architecture, so it neither supports nor challenges H1.",
+  "passage_mechanical": "verbatim prefix found in fetched open text"
+ },
+ "date": "2026-09-04"
+}

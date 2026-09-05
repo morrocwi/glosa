@@ -1,0 +1,22 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: H2
+source_label: Experience Is the Human LoRA (own lineage, Zenodo 21425420)
+how_it_sees_the_problem: A genuine experience is identified with a finite, retained, observer-transforming
+  difference; its phenomenal (meaning-laden) and adaptive (non-semantic, mechanism-level) descriptions
+  are two readings of one discrete event, not two separately timed stages.
+what_it_separates: the phenomenal/meaning-laden description of an experience from its adaptive/mechanistic
+  description, while treating both as readings of the same underlying finite transition.
+what_it_assumes: that a single finite observer-world transition can be non-arbitrarily described both
+  semantically and non-semantically, which is presupposed by describing one as coming 'after' the other.
+stance: 'YES'
+defeater_class: constitutive
+legitimate_defeater: A case where the phenomenal and adaptive descriptions of the same event come apart
+  in a way that resists being two readings of one transition would complicate H2's identification of a
+  single non-semantic layer to derive meaning from.
+what_it_would_say_against_us: 'Own-lineage source: supports H2''s premise that a non-semantic (adaptive)
+  description of the same event as its meaning-laden description is available, but is not independent
+  evidence.'
+citation_card: cite-own-human-lora-h2-003
+verified:
+  metadata_verified: false
+  claim_match_verified: true

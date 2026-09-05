@@ -1,0 +1,23 @@
+{
+ "vendor": "claude",
+ "fetched": {
+  "source": "crossref",
+  "title": "Resources, Agency, Achievements: Reflections on the Measurement of Women's Empowerment",
+  "authors": [
+   "Kabeer"
+  ],
+  "year": 1999,
+  "container": "Development and Change",
+  "abstract": " This paper begins from the understanding that women's empowerment is about the process by which those who have been denied the ability to make strategic life choices acquire such an ability. A wide gap separates this processual understanding of empowerment from the more instrumentalist forms of advocacy which have required the measurement and quantification of empowerment. The ability to exercise choice incorporates three inter‐related dimensions: resources (defined broadly to include not only access, but also future claims, to both material and human and social resources); agency (including processes of decision making, as well as less measurable manifestations of agency such as negotiation, deception and manipulation); and achievements (well‐being outcomes). A number of studies of women's empowerment are analysed to make some important methodological points about the measurement of empowerment. The paper argues that these three dimensions of choice are indivisible in determining the meaning of an indicator and hence its validity as a measure of empowerment. The notion of choice is further qualified by referring to the conditions of choice, its content and consequences. These qualifications represent an attempt to incorporate the structural parameters of individual choice in the analysis of women's empowerment. ",
+  "_card_url": "https://api.crossref.org/works/10.1111/1467-7660.00125"
+ },
+ "verdict": {
+  "metadata_matches": true,
+  "passage_plausible": true,
+  "claim_match": true,
+  "bearing": "CONTEXT_ONLY",
+  "reason": "Crossref title/year/first author (Kabeer, 1999, Development and Change) match card; passage found verbatim in fetched abstract. Abstract frames empowerment as acquiring the ability to make strategic choices, with 'conditions of choice' as structural parameters before choice — relevant context for H3's capability/live-field distinction, but no graded live-candidate field or counterfactual measure, so context only.",
+  "passage_mechanical": "verbatim prefix found in fetched open text"
+ },
+ "date": "2026-09-04"
+}

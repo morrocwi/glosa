@@ -1,0 +1,29 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: H3
+source_label: Fricker (2007), Epistemic Injustice, as reported in SEP "Feminist Epistemology
+  and Philosophy of Science" §9
+how_it_sees_the_problem: 'Testimonial injustice: people discount the credibility of
+  what another says because of prejudice against that person''s social group -- a
+  credibility deficit, not a formal prohibition on speaking.'
+what_it_separates: Separates a formal right/permission to speak (which the prejudiced
+  hearer does not revoke) from the hearer's actual UPTAKE of the testimony (which
+  prejudice can foreclose without any rule being invoked).
+what_it_assumes: Assumes credibility judgments are themselves observable/attributable
+  to identifiable prejudice; the reported passage does not itself supply a counterfactual
+  measure of how much epistemic standing was lost, nor an ownership/corrigibility
+  mechanism for the affected speaker.
+stance: 'YES'
+defeater_class: constitutive
+legitimate_defeater: A passage where Fricker or a successor already operationalizes
+  testimonial injustice via a counterfactual recoverable-credibility measure with
+  actor ownership and a corrigibility mechanism would satisfy H3's own falsifier for
+  the epistemic domain.
+what_it_would_say_against_us: Testimonial injustice is a narrower, epistemic-specific
+  mechanism (credibility discounting in a hearer's uptake) rather than a general claim
+  about a LIVE-possibility field between capability and deliberated choice for ACTION;
+  treating it as directly parallel to H3's action-oriented live-possibility field
+  may overstate the analogy across domains (belief-uptake vs. action-candidacy).
+citation_card: cite-fricker2007-sep-bmbc-012
+verified:
+  metadata_verified: true
+  claim_match_verified: true

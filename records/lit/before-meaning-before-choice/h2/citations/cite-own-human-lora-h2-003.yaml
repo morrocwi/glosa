@@ -1,0 +1,36 @@
+$schema: citation_card.schema.json
+id: cite-own-human-lora-h2-003
+claim_ref: H2
+identifier:
+  kind: DOI
+  value: 10.5281/zenodo.21425420
+fetch_status: FETCHED
+fetched_at: '2026-09-06'
+metadata_verified: true
+metadata_verified_by: 'mechanical: Zenodo API record 21425420 (title/creator/date)'
+metadata_verified_at: '2026-09-06'
+claim_match_verified: true
+claim_match_verified_by: route:claude
+claim_match_verified_at: null
+exact_passage: 'The result is a strong but falsifiable theory: experience is Human LoRA because a genuine
+  experience is a finite, retained, observer-transforming difference whose phenomenal and adaptive descriptions
+  are two aspects of the same discrete event.'
+page_or_locator: Experience Is the Human LoRA (preprint), p.2, abstract paragraph
+scope: DIRECT_QUOTATION
+evidence_tier: Open
+independence_class: I1
+who_verified: 'route:claude (I1 route: same model, fresh headless session (no shared context); abstract/metadata
+  level, not full text) -- see cite-own-human-lora-h2-003.i3.json'
+verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
+status: VERIFIED
+xenon_ledger_ref: null
+disclosure: 'Own-lineage source, not independent evidence -- see search_log.yaml conflicts_of_interest.
+  | I1 route (claude) judged from fetched metadata/abstract + the card''s quoted passage, not full text:
+  Title, first author, year match. Passage found verbatim in fetched abstract. Source does state the finite
+  retained-difference layer H2 relies on, but frames experience as identical to that difference (two aspects),
+  not as derived after readout; own-lineage self-source, so context for H2 rather than independent support.'
+superseded_by: null
+notes: States the non-semantic retained-difference layer (a 'finite, retained, observer-transforming difference')
+  that H2 claims meaning/experience are derived from; self-source.
+fetched_from_url: https://zenodo.org/api/records/21425420/files/EXPERIENCE_IS_HUMAN_LORA_DISCRETE_FINAL_PREPRINT.pdf/content
+line_or_paragraph: char offset 1990 of normalized fetched text (~paragraph 1); verbatim prefix match

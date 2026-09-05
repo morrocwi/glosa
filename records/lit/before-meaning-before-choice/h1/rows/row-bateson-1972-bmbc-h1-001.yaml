@@ -1,0 +1,21 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: H1
+source_label: Bateson 1972, Form, Substance and Difference
+how_it_sees_the_problem: 'Information is constituted by difference itself: a difference which makes a
+  difference, selected out of an infinitude of potential differences in the world.'
+what_it_separates: the infinitude of physical differences in a thing (the Ding an sich) from the small
+  selected subset that becomes information for a receiving system.
+what_it_assumes: that a receiving nervous system already has pathways ready to be triggered, i.e. that
+  selection/admission happens but need not be decomposed further.
+stance: ORTHOGONAL
+defeater_class: constitutive
+legitimate_defeater: A passage where Bateson explicitly decomposes the selection of a 'difference that
+  makes a difference' into separate reader, translation, loss and dynamics-preservation steps (rather
+  than treating selection as a single primitive act) would move this row toward CHALLENGES.
+what_it_would_say_against_us: If information just IS the selected difference, then H1's four-way decomposition
+  of admission (reader/translation/loss/dynamics-preservation) may be an unnecessary elaboration of something
+  Bateson already treats as a single primitive selection act.
+citation_card: cite-bateson-1972-bmbc-h1-001
+verified:
+  metadata_verified: true
+  claim_match_verified: true

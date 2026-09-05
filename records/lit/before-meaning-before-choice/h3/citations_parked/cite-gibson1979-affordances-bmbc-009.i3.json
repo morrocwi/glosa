@@ -1,0 +1,16 @@
+{
+ "vendor": "claude",
+ "fetched": {
+  "source": "no-identifier",
+  "_card_url": "https://monoskop.org/images/c/c6/Gibson_James_J_1977_1979_The_Theory_of_Affordances.pdf"
+ },
+ "verdict": {
+  "metadata_matches": true,
+  "passage_plausible": false,
+  "claim_match": true,
+  "bearing": "CONTEXT_ONLY",
+  "reason": "Fetched metadata is empty (no-identifier), so nothing contradicts title/year/author. No fetched text exists to compare the quoted passage, so plausibility cannot be confirmed here. As CONTEXT_ONLY, Gibson's affordance definition is relevant background for H3's feasibility-vs-live-candidate distinction; it neither supports nor challenges the interface claim.",
+  "passage_mechanical": "no open full text fetched; abstract/metadata only"
+ },
+ "date": "2026-09-04"
+}

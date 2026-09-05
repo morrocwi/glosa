@@ -1,0 +1,24 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: H1
+source_label: The Readout Condition (own lineage)
+how_it_sees_the_problem: 'Epistemic warrant requires a three-part norm on every claim-level distinction:
+  existence (a provenance path), attribution (licensed by the actual source), and disclosure (augmentations
+  stay visible to audit).'
+what_it_separates: the distinctions a claim makes from the access sources actually licensed to supply
+  them, tracking provenance/attribution/disclosure as three separate, auditable requirements.
+what_it_assumes: that every claim-level distinction can in principle be traced to a specific access source,
+  model, or decision rule that supplied the discrimination.
+stance: ORTHOGONAL
+defeater_class: constitutive
+legitimate_defeater: This is the own-lineage source that supplies H1's 'provenance' language directly;
+  a legitimate defeater would be a showing that the three-part existence/attribution/disclosure norm here
+  is not actually what H1's four gates (reader/translation/loss/dynamics-preservation) reduce to, i.e.
+  that H1's paper does not in fact implement this norm on its own admission order.
+what_it_would_say_against_us: As the position under test, this source does not argue against itself; the
+  human review must confirm the paper actually being drafted as H1 (Before Meaning, Before Choice) implements
+  the existence/attribution/disclosure norm on its own four gates, rather than merely gesturing at this
+  companion paper.
+citation_card: cite-readout-condition-2026-bmbc-h1-010
+verified:
+  metadata_verified: true
+  claim_match_verified: true

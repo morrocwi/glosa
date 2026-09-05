@@ -1,0 +1,63 @@
+$schema: citation_card.schema.json
+id: cite-bateson-1972-bmbc-h1-001
+claim_ref: H1
+identifier:
+  kind: OFFICIAL_URL
+  value: https://polanyisociety.org/2021Zoom/June2021/Bateson.Steps.Form%20Substance%20Difference.pdf
+fetch_status: FETCHED
+fetched_at: '2026-09-06'
+metadata_verified: true
+metadata_verified_by: 'manual: direct fetch and pdftotext/html extraction of the source
+  this session, 2026-09-06'
+metadata_verified_at: '2026-09-06'
+claim_match_verified: true
+claim_match_verified_by: route:claude
+claim_match_verified_at: '2026-09-06'
+exact_passage: In fact, what we mean by information the elementary unit of information
+  is a difference which makes a difference, and it is able to make a difference because
+  the neural pathways along which it travels and is continually transformed are themselves
+  provided with energy.
+page_or_locator: Bateson (1972), "Form, Substance and Difference", in Steps to an
+  Ecology of Mind, reproduced PDF hosted by the Polanyi Society (academic mirror),
+  p. 3 of the mirrored PDF (single-column body text)
+scope: CONTEXT_ONLY_NOT_EVIDENCE
+evidence_tier: definition
+independence_class: I1
+who_verified: 'route:claude (I1 route: same model, fresh headless session (no shared
+  context); abstract/metadata level, not full text) -- see cite-bateson-1972-bmbc-h1-001.i3.json'
+verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
+status: VERIFIED
+xenon_ledger_ref: null
+disclosure: 'Fetched the Polanyi Society''s hosted PDF of Bateson''s essay directly
+  (not the publisher edition) and extracted text with pdftotext -raw. The original
+  almost certainly has an em-dash between "information" and "the elementary unit"
+  ("information -- the elementary unit of information --"); the PDF''s font/ligature
+  encoding dropped the dash entirely on extraction, so this card reproduces exactly
+  what pdftotext returned rather than inserting a punctuation mark not present in
+  the extracted text -- flagged here as an extraction artifact, not an edit. CONTEXT
+  for H1: Bateson''s "difference which makes a difference" names the elementary unit
+  of information itself as already selected/admitted ("of this infinitude, we select
+  a very limited number, which become information"), which is close to H1''s own retained-distinction
+  layer, but Bateson does not separate this admission into H1''s four named gates
+  (reader, translation, loss, dynamics-preservation) or discuss provenance as a distinguishing
+  architecture -- CONTEXT_ONLY relative to H1''s specific admission-order claim, though
+  DIRECT_QUOTATION of the passage itself. | I1 route (claude) judged from fetched
+  metadata/abstract + the card''s quoted passage, not full text: Fetched text carries
+  ''Steps to an Ecology of Mind'' running heads and the passage verbatim; no title/year/author
+  contradiction. But the card''s dialogue stance is only fetch notes, never stating
+  how the passage bears on H1. Bateson gives reader-selected difference and energized
+  transformation, not an explicit reader+translation+loss+dynamics gate ordering admission
+  of meaning. Relevant relative, not evidence for or against. | I1 route (claude)
+  judged from fetched metadata/abstract + the card''s quoted passage, not full text:
+  Fetched text is the Bateson essay (Steps to an Ecology of Mind page headers visible)
+  and contains the passage verbatim, dash lost to extraction. Bateson''s ''difference
+  which makes a difference'' with sensory selection from infinite differences is relevant
+  context for a non-semantic retained-state layer, but describes no explicit reader/translation/loss/dynamics
+  gate ordering.'
+superseded_by: null
+notes: Publisher edition (University of Chicago Press / Jason Aronson) is paywalled;
+  this is an open academic-conference-hosted mirror of the same essay text, used per
+  QUESTIONS.md's "use the open copy if found" instruction.
+fetched_from_url: https://polanyisociety.org/2021Zoom/June2021/Bateson.Steps.Form%20Substance%20Difference.pdf
+line_or_paragraph: char offset 11872 of normalized fetched text (~paragraph 1); verbatim
+  prefix match

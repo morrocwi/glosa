@@ -1,0 +1,47 @@
+$schema: citation_card.schema.json
+id: cite-rietveldkiverstein2014-bmbc-011
+claim_ref: H3
+identifier:
+  kind: DOI
+  value: 10.1080/10407413.2014.958035
+fetch_status: PAYWALLED_ABSTRACT_ONLY
+fetched_at: '2026-09-06'
+metadata_verified: true
+metadata_verified_by: ''
+metadata_verified_at: '2026-09-06'
+claim_match_verified: true
+claim_match_verified_by: route:claude
+claim_match_verified_at: null
+exact_passage: We argue that the affordances an environment offers to an animal are
+  dependent on the skills the animal possesses.
+page_or_locator: Rietveld & Kiverstein 2014, "A Rich Landscape of Affordances", Ecological
+  Psychology 26(4), Abstract
+scope: DIRECT_QUOTATION
+evidence_tier: definition
+independence_class: I1
+who_verified: 'route:claude (I1 route: same model, fresh headless session (no shared
+  context); abstract/metadata level, not full text) -- see cite-rietveldkiverstein2014-bmbc-011.i3.json'
+verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
+status: VERIFIED
+xenon_ledger_ref: null
+disclosure: 'Not yet cross-checked; pending lit_crossvendor_check.py --vendor claude
+  run. | I1 route (claude) judged from fetched metadata/abstract + the card''s quoted
+  passage, not full text: Crossref title/year/first author match the card. Quoted
+  passage appears verbatim in the fetched abstract text. Abstract shows skill-dependent
+  affordance landscape, relevant framing for H3''s capability-vs-live-candidate distinction,
+  but abstract alone gives no graded live-candidate field or counterfactual measure,
+  so it neither supports nor challenges; falsifier untestable from abstract.'
+superseded_by: null
+notes: 'Full text is paywalled (Unpaywall: oa_status closed, no repository copy found;
+  Taylor & Francis 403s automated fetches; the Amsterdam UMC and erikrietveld.com
+  author pages link only to the same paywalled DOI). Fetched the Wayback Machine snapshot
+  of the publisher''s own abstract page (fetch_status PAYWALLED_ABSTRACT_ONLY). Their
+  skill-dependent ''landscape of affordances'' is the closest published relative named
+  in H3''s own falsifier clause; ORTHOGONAL-leaning CHALLENGE: it broadens which affordances
+  are perceivable given an animal''s skill repertoire, but the abstract does not define
+  a graded live-candidate-for-deliberation field distinct from both feasibility and
+  choice, nor a counterfactual recoverable-gap measure -- so on this abstract alone
+  the named falsifier is not met.'
+fetched_from_url: https://web.archive.org/web/20241007215830/https://www.tandfonline.com/doi/abs/10.1080/10407413.2014.958035
+line_or_paragraph: char offset 3652 of normalized fetched text (~paragraph 1); verbatim
+  prefix match

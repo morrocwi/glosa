@@ -1,0 +1,46 @@
+$schema: citation_card.schema.json
+id: cite-guingrich-belief-offload-2026-004
+claim_ref: H4
+identifier:
+  kind: ARXIV
+  value: '2602.08754'
+fetch_status: FETCHED
+fetched_at: '2026-09-06'
+metadata_verified: true
+metadata_verified_by: 'manual: WebFetch of arxiv.org/abs/2602.08754, confirmed as
+  "Belief Offloading in Human-AI Interaction" (Guingrich, Mehta & Bhatt, 2026, arXiv
+  preprint)'
+metadata_verified_at: '2026-09-06'
+claim_match_verified: false
+claim_match_verified_by: route:claude
+claim_match_verified_at: '2026-09-06'
+exact_passage: this paper defines and investigates a particular kind of cognitive
+  offloading in human-AI interaction, "belief offloading," in which people's processes
+  of forming and upholding beliefs are offloaded onto an AI system with downstream
+  consequences on their behavior and the nature of their system of beliefs
+scope: DIRECT_QUOTATION
+page_or_locator: arXiv abstract (abs page), second-to-last sentence
+evidence_tier: definition
+independence_class: I1
+who_verified: 'route:claude (I1 route: same model, fresh headless session (no shared
+  context); abstract/metadata level, not full text) -- see cite-guingrich-belief-offload-2026-004.i3.json'
+verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
+status: METADATA_OK
+xenon_ledger_ref: null
+disclosure: 'Abstract-level verification only. This source is ORTHOGONAL-to-adjacent
+  for H4: it defines a mechanism (belief formation delegated to an AI system, with
+  "downstream consequences") consistent with H4''s premise that AI interaction changes
+  the human''s later state, but the abstract does not itself describe a session-boundary
+  / post-removal measurement design, nor an audited gain/loss/provenance/warrant/direction
+  quantity -- it is a conceptual taxonomy paper, not (per the abstract) an empirical
+  removal study. | I1 route (claude) judged from fetched metadata/abstract + the card''s
+  quoted passage, not full text: Title, first author, year match. Passage found verbatim
+  in abstract. Source is a conceptual taxonomy of belief offloading with no empirical
+  measurement of delayed unaided return versus assisted performance; card itself calls
+  it orthogonal-to-adjacent. Relevant context for H4''s mechanism, not evidence for
+  or against its separate-audit claim.'
+superseded_by: null
+notes: ''
+fetched_from_url: https://arxiv.org/abs/2602.08754
+line_or_paragraph: char offset 745 of normalized fetched text (~paragraph 1); verbatim
+  prefix match

@@ -1,0 +1,21 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: H2
+source_label: Readout Genesis, retained-distinction lens (own lineage, Zenodo 21529456; reused from potential-as-readout/h2)
+how_it_sees_the_problem: 'A retained distinction deltaR = (a #b) is defined as a difference between two
+  states not erased by the reader relevant to the current construction -- the programme''s own non-semantic
+  root construct.'
+what_it_separates: the retained distinction itself (a bare, reader-relevant, non-erased difference) from
+  any semantic content later read off it.
+what_it_assumes: that a retained distinction can be defined and hold formally (deltaR) prior to and independent
+  of any meaning being read off it.
+stance: 'YES'
+defeater_class: structural_formal
+legitimate_defeater: A formal argument that deltaR as defined cannot be specified without already presupposing
+  a reader's semantic criterion for 'relevant' would defeat this row's supportive reading.
+what_it_would_say_against_us: Own-lineage lens, not independent evidence -- it is the very root construct
+  H2 descends from, so citing it supports H2's internal coherence but not its standing against outside
+  literature.
+citation_card: cite-own-readout-genesis-lens-h2-bmbc-001
+verified:
+  metadata_verified: true
+  claim_match_verified: true

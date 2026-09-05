@@ -1,0 +1,31 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: H4
+source_label: Parasuraman & Riley 1997, "Humans and Automation: Use, Misuse, Disuse,
+  Abuse" (record only -- no open text located)
+how_it_sees_the_problem: (from secondary/citing-source characterizations only,
+  not the primary text) Human use of automation falls into distinguishable patterns
+  -- use, misuse (over-reliance), disuse (under-reliance/neglect), and abuse
+  (automation imposed without regard to operator needs) -- each with different
+  causes and consequences.
+what_it_separates: (secondhand) voluntary engagement/disengagement of automation
+  (use) from over-reliance (misuse), under-reliance (disuse), and designer/manager-imposed
+  automation without operator support (abuse).
+what_it_assumes: (secondhand) that these four categories are jointly useful for
+  analyzing any human-automation relationship, prior to the specific case of
+  generative-AI carryover H4 addresses.
+stance: UNDETERMINED
+defeater_class: empirical
+legitimate_defeater: An open copy of the primary text, fetched and read directly,
+  showing this paper already separates a post-automation-removal retained-capability
+  measure from in-session reliance measures would defeat this row's UNDETERMINED
+  status by giving H4 a same-verdict precursor.
+what_it_would_say_against_us: Cannot be assessed directly without the primary text
+  -- recorded as context only per rule 17 (no passage invented from memory); this
+  paper predates generative AI and its "misuse/disuse/abuse" typology addresses
+  automation reliance in the moment, not what a human retains after an assistive
+  system's removal, so even a full read may show it is ORTHOGONAL rather than a
+  direct precursor to H4.
+citation_card: cite-parasuraman-riley-1997-006
+verified:
+  metadata_verified: true
+  claim_match_verified: false

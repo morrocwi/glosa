@@ -1,0 +1,28 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: H3
+source_label: Galtung (1969), "Violence, Peace, and Peace Research", p.168 (Journal
+  of Peace Research 6(3))
+how_it_sees_the_problem: Defines violence itself as present whenever people's actual
+  somatic/mental realizations fall below their POTENTIAL realizations -- making the
+  potential-actual gap the very definition of violence, not a side effect of it.
+what_it_separates: Separates actual (achieved) realization from potential realization,
+  treating the GAP between them, not either quantity alone, as the object of peace
+  research.
+what_it_assumes: Assumes "potential realizations" is itself a determinate, assessable
+  quantity (Galtung's own footnote flags this as possibly overreaching); does not
+  itself specify HOW potential is witnessed or bounded, or how a LIVE-CANDIDATE subset
+  within that potential would be distinguished from the rest -- exactly the layer
+  H3 adds.
+stance: ORTHOGONAL
+defeater_class: constitutive
+legitimate_defeater: A later Galtung passage that itself defines a graded live-candidate
+  subset of potential realizations, distinct from bare feasibility, with a counterfactual
+  measure, would move this row toward 'YES' and could satisfy H3's own falsifier.
+what_it_would_say_against_us: Galtung's potential-actual gap already does the descriptive
+  work H3 wants (naming an unrealized-but-real space); H3's further claim that a narrower
+  LIVE-possibility field sits inside that gap, measurable counterfactually, is an
+  addition Galtung's 1969 definition neither makes nor needs.
+citation_card: cite-galtung1969-potentialgap-bmbc-001
+verified:
+  metadata_verified: true
+  claim_match_verified: true

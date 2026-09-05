@@ -1,0 +1,45 @@
+$schema: citation_card.schema.json
+id: cite-ctsa-lahtee-2026-008
+claim_ref: H4
+identifier:
+  kind: DOI
+  value: 10.5281/zenodo.22339909
+fetch_status: FETCHED
+fetched_at: '2026-09-06'
+metadata_verified: true
+metadata_verified_by: 'manual: pdftotext of the Zenodo-hosted PDF, header confirms
+  "CTSA Human-Return Readout: A Session-Boundary Measurement Architecture for Retained
+  Human Capability After AI" (Epistemic Note v9.1 FINAL), Lahtee, Yaoharee (Open Civil
+  Science Initiative), 2026'
+metadata_verified_at: '2026-09-06'
+claim_match_verified: true
+claim_match_verified_by: route:claude
+claim_match_verified_at: '2026-09-06'
+exact_passage: Human-AI learning should not be inferred from what the coupled system
+  produces while assistance is present. It should be tested at the session boundary
+scope: DIRECT_QUOTATION
+page_or_locator: Section "Central claim" (opening paragraph, page 1)
+evidence_tier: Open
+independence_class: I1
+who_verified: 'route:claude (I1 route: same model, fresh headless session (no shared
+  context); abstract/metadata level, not full text) -- see cite-ctsa-lahtee-2026-008.i3.json'
+verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
+status: VERIFIED
+xenon_ledger_ref: null
+disclosure: 'OWN-LINEAGE SOURCE, not independent literature: this is the project''s
+  own prior claim, listed in H4''s frozen_scope as own lineage. independence_class
+  is I0 (same author/programme), not I1 -- do not treat this as external corroboration
+  of H4. It states the exact architecture H4 draws on (the prompt is not the beginning;
+  test at the session boundary after removal), so it is DIRECT support for H4 as a
+  restatement of the source program''s own prior claim, not as independent evidence
+  for it. | I1 route (claude) judged from fetched metadata/abstract + the card''s
+  quoted passage, not full text: Title, first author, year, and DOI agree; passage
+  found verbatim in fetched text. Source states session-boundary testing and separately
+  auditable loss/provenance/warrant/direction, matching H4. But the card itself flags
+  it as own-lineage (I0, same author/programme), so it is genealogy context, not independent
+  support.'
+superseded_by: null
+notes: ''
+fetched_from_url: https://zenodo.org/records/22339909/files/CTSA_Human_Return_Readout_v9_1_FINAL_Global_Constrained.pdf?download=1
+line_or_paragraph: char offset 1051 of normalized fetched text (~paragraph 1); verbatim
+  prefix match

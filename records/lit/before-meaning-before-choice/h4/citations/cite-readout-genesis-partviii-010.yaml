@@ -1,0 +1,51 @@
+$schema: citation_card.schema.json
+id: cite-readout-genesis-partviii-010
+claim_ref: H4
+identifier:
+  kind: DOI
+  value: 10.5281/zenodo.21529456
+fetch_status: FETCHED
+fetched_at: '2026-09-06'
+metadata_verified: true
+metadata_verified_by: 'manual: pdftotext of the Zenodo-hosted PDF, header confirms
+  "Readout Genesis Standalone Synthesis: Information Epistemic Foundation, Conditioned
+  Agency, and Meta-Readout Governance", Lahtee, Yaoharee, 2026'
+metadata_verified_at: '2026-09-06'
+claim_match_verified: true
+claim_match_verified_by: route:claude
+claim_match_verified_at: '2026-09-06'
+exact_passage: The operator is governance-relevant only when ablation changes policy
+  or correction
+scope: DIRECT_QUOTATION
+page_or_locator: Section on the ablation/governance operator (near eq. 82, ∆G Π⋆A
+  = dΠ(Π⋆A, Π⋆A,−G) > τidle)
+evidence_tier: Open
+independence_class: I1
+who_verified: 'route:claude (I1 route: same model, fresh headless session (no shared
+  context); abstract/metadata level, not full text) -- see cite-readout-genesis-partviii-010.i3.json'
+verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
+status: VERIFIED
+xenon_ledger_ref: null
+disclosure: 'OWN-LINEAGE SOURCE, not independent literature (I0). This card grounds
+  H4 in Readout Genesis''s general ablation/removal principle: a governance quantity
+  is only meaningful when its value under ablation (component G removed, i.e. the
+  AI/aid taken away) is compared against its value with the component present, and
+  only counted as relevant if that comparison exceeds a tolerance. This is a structural
+  precursor to H4''s "separately audited quantity" claim, generalized far beyond human-AI
+  carryover (this passage is about any governance-relevant component, not AI specifically)
+  -- DIRECT support for H4 as restatement of own prior general architecture, not independent
+  evidence, and CONTEXT_ONLY in the sense that Part VIII itself never names human-AI
+  interaction as the ablated component. | I1 route (claude) judged from fetched metadata/abstract
+  + the card''s quoted passage, not full text: Metadata (title, first author Lahtee,
+  2026, Zenodo DOI) matches. Passage found verbatim in fetched text near eq. 82 as
+  located. Source is own-lineage governance/ablation framework, not human-AI carryover
+  evidence; card itself limits scope to one principle. Relevant as context only, not
+  evidence for or against H4''s falsifier.'
+superseded_by: null
+notes: Readout Genesis Part VIII is primarily about belief/knowledge-status architecture
+  (more directly relevant to H1/H2 than H4); this card selects the one passage in
+  it that speaks to H4's ablation/removal-audit structure rather than claiming the
+  whole document is about human-AI carryover.
+fetched_from_url: https://zenodo.org/records/21529456/files/Readout_Genesis_Information_Epistemic_Foundation_Journal.pdf?download=1
+line_or_paragraph: char offset 30033 of normalized fetched text (~paragraph 1); verbatim
+  prefix match

@@ -1,0 +1,29 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: H3
+source_label: Galtung (1969), "Violence, Peace, and Peace Research", p.183 (Journal
+  of Peace Research 6(3))
+how_it_sees_the_problem: Splits peace into negative peace (absence of personal/direct
+  violence) and positive peace (absence of structural violence) -- two independently
+  assessable absences, not a single scalar.
+what_it_separates: Separates the absence of visible/direct harm from the absence of
+  the deeper structural arrangement that would reproduce harm if triggered.
+what_it_assumes: Assumes both absences are independently observable; does not itself
+  supply a test for whether an observed absence of direct violence (negative peace)
+  is backed by an open correction channel (positive peace) or is merely suppression
+  holding for now -- the confound H3's 'observed calm vs. live-possibility field'
+  distinction targets.
+stance: 'YES'
+defeater_class: constitutive
+legitimate_defeater: A passage where Galtung already operationalizes positive peace
+  via a counterfactual test (would correction survive a change in the dominant party's
+  will) rather than by direct observation of structural conditions would weaken this
+  row toward ORTHOGONAL.
+what_it_would_say_against_us: Galtung's positive/negative split is about structural
+  conditions, not about individual deliberative live-candidates; H3's live-possibility-field
+  claim operates at the level of an actor's available options, a different unit of
+  analysis than Galtung's macro-structural peace concept, so the parallel may be looser
+  than this row suggests.
+citation_card: cite-galtung1969-negpospeace-bmbc-002
+verified:
+  metadata_verified: true
+  claim_match_verified: true

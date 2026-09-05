@@ -1,0 +1,48 @@
+$schema: citation_card.schema.json
+id: cite-gibson1979-affordances-bmbc-009
+claim_ref: H3
+identifier:
+  kind: OTHER_STABLE
+  value: isbn:0898599588
+fetch_status: FETCHED
+fetched_at: '2026-09-06'
+metadata_verified: true
+metadata_verified_by: ''
+metadata_verified_at: '2026-09-06'
+claim_match_verified: true
+claim_match_verified_by: route:claude
+claim_match_verified_at: null
+exact_passage: The affordances of the environment are what it offers the animal, what
+  it provides or furnishes, either for good or ill.
+page_or_locator: Gibson (1979), The Ecological Approach to Visual Perception, Ch.
+  8 "The Theory of Affordances", p. 127, paragraph 2
+scope: CONTEXT_ONLY_NOT_EVIDENCE
+evidence_tier: definition
+independence_class: I1
+who_verified: 'route:claude (I1 route: same model, fresh headless session (no shared
+  context); abstract/metadata level, not full text) -- see cite-gibson1979-affordances-bmbc-009.i3.json'
+verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
+status: METADATA_OK
+xenon_ledger_ref: null
+disclosure: 'Not yet cross-checked; pending lit_crossvendor_check.py --vendor claude
+  run. | I1 route (claude) judged from fetched metadata/abstract + the card''s quoted
+  passage, not full text: No fetched text or metadata to compare; title/author/year
+  uncontradicted. Passage cannot be verified mechanically (scan lacks OCR, card relied
+  on page images). Gibson''s affordance definition is the capability-layer phenomenon
+  H3 builds on, not a graded live-candidate field, so it neither supports nor falsifies
+  H3; context only. | I1 route (claude) judged from fetched metadata/abstract + the
+  card''s quoted passage, not full text: Fetched metadata is empty (no-identifier),
+  so nothing contradicts title/year/author. No fetched text exists to compare the
+  quoted passage, so plausibility cannot be confirmed here. As CONTEXT_ONLY, Gibson''s
+  affordance definition is relevant background for H3''s feasibility-vs-live-candidate
+  distinction; it neither supports nor challenges the interface claim.'
+superseded_by: null
+notes: 'Read directly via Read tool (PDF page images; the local scan carries no OCR
+  text layer, pdftotext returns only page numbers). Gibson''s founding definition
+  of affordance as what the environment offers/provides is the phenomenon H3 builds
+  on: an affordance is a structural feature of the animal-environment relation, defined
+  independently of whether the animal ever attends to or acts on it -- H3''s contribution
+  is the further claim that only some afforded actions become live candidates for
+  deliberation, a distinction Gibson''s chapter does not itself draw.'
+fetched_from_url: https://monoskop.org/images/c/c6/Gibson_James_J_1977_1979_The_Theory_of_Affordances.pdf
+line_or_paragraph: see disclosure

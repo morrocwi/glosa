@@ -1,0 +1,30 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: H3
+source_label: Foucault (1982), "The Subject and Power", Critical Inquiry 8(4), p.790
+  (journal pagination)
+how_it_sees_the_problem: Power is not force or consent but the structuring of the
+  possible field of action of others; to govern is to structure that field, not to
+  forbid specific acts within it.
+what_it_separates: Separates governing (shaping the field of possible action itself)
+  from mere violence/coercion (acting directly on a body or restraining specific acts)
+  -- power operates upstream of any single prohibition.
+what_it_assumes: Assumes a 'field of possible action' is itself analyst-identifiable
+  and that its structuring is observable in practice; does not itself distinguish
+  a graded LIVE-candidate layer within that field from the field's bare extent, nor
+  supply a counterfactual measure of how the field was narrowed.
+stance: 'YES'
+defeater_class: constitutive
+legitimate_defeater: A passage where Foucault himself specifies an operational, counterfactual
+  test for how power narrows the possible-action field (rather than describing the
+  structuring only in general terms) would move this row toward matching H3's own
+  falsifier.
+what_it_would_say_against_us: Foucault's 'structuring the possible field of action'
+  already names exactly the mechanism H3 calls 'power acting before prohibition';
+  if this is read as already including a graded live-candidate/feasible distinction
+  (which the essay does not explicitly rule out), H3's claimed novelty would be only
+  the operational interface, not the phenomenon -- which is what H3 itself concedes
+  ('the contribution is the interface, not the phenomenon').
+citation_card: cite-foucault1982-bmbc-005
+verified:
+  metadata_verified: true
+  claim_match_verified: true
