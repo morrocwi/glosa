@@ -2,7 +2,7 @@
 
 > **นี่คือปูมเสียงดิบ ไม่ใช่บทความ** — ทุกบรรทัดคือคำพูดตามที่พูด (verbatim) ณ วันเวลานั้น ยังไม่ผ่านการปรุง ไม่ผ่านการตรวจอิสระ (tier: positional / Dr) บันทึกเพิ่มได้อย่างเดียว ไม่แก้ไม่ลบ (แก้ = บรรทัดใหม่ที่อ้างบรรทัดเดิม) เลนส์ที่ใช้มองปัญหา: **Readout Universe — Yaoharee Lahtee** (10.5281/zenodo.21529456, 10.5281/zenodo.22301318, 10.5281/zenodo.22301202; github.com/morrocwi/readout_universe) ระบบที่เก็บ: glosa (github.com/morrocwi/glosa) **ปูมนี้มีเฉพาะเสียงของผู้เขียนเท่านั้น** — ไม่มีบรรทัดที่ AI เขียน (คำตัดสินผู้เขียน 2026-09-04: บันทึกระบบที่ AI เคยใส่ไว้ 1 รายการถูกถอดออกและเก็บไว้ที่ blackbox/log/removed_ai_entries.json) ป้าย "เนื้อหาที่สร้างโดย AI" ที่ Facebook ติดให้บางโพสต์เกิดจากรูปประกอบที่ทำด้วย AI ไม่ใช่ตัวข้อความ จึงไม่ถูกนำมาบันทึก
 
-จำนวนบันทึก: 114 · อัปเดตล่าสุด: 2026-09-05T00:10:59+07:00
+จำนวนบันทึก: 115 · อัปเดตล่าสุด: 2026-09-05T10:56:16+07:00
 
 ## สารบัญตามหมวดความคิด (ไม่เรียงตามวันที่)
 
@@ -56,7 +56,7 @@
 - **BBL-2026-09-04-067** (2026-09-04, finding, cheapest-contextual-knowledge, cost-of-knowledge, dependence-on-authority) — ว่ากันตามจริงแล้ว ตอนนี้เรากำลังยุคที่ความรู้ที่สอดคล้องตามบริบท…
 - **BBL-2026-09-04-070** (2026-09-04, finding, global-labour, token-priced-labour, ai-brokers, white-collar-replacement, epistemic-reordering, chaotic-renaissance) — ในภาพรวมของแรงงานโลก หากแบ่งอย่างหยาบที่สุด อาจแบ่งได้เป็นสองประเภทใหญ่ ๆ คือ แรงงานที่ทัก…
 
-### วิธีวิทยา / ระบบ glosa (42)
+### วิธีวิทยา / ระบบ glosa (43)
 
 - **BBL-2026-09-04-001** (2026-09-04, ruling, spine, lens) — ที่สำคัญอย่าลืม ให้เริ่มจากมองปัญหาด้วยเลนส์ readout ก่อน แล้วแปลกลับเป็นภาษษโลกเพื่อสกัดส…
 - **BBL-2026-09-04-002** (2026-09-04, ruling, system) — ทำให้ทั้งหมดรวมเป็นระบบเดียวที่นิ่ง…
@@ -100,6 +100,7 @@
 - **BBL-2026-09-05-113** (2026-09-05, instruction, glosa, v0.3, knowledge-review, hub, readout-universe, readout-genesis, dag, simulation, architecture, ultracode, ram) — พอแน่ใจว่าครบแล้ว ให้เริ่มพัฒนา repo golus อีกครั้งโดยทบทวนความรุ้ทั้งหมดใhub เอา readout …
 - **BBL-2026-09-05-114** (2026-09-05, instruction, ram, todolist, steps) — อย่าลืมระวังแรมและวางแผน todolist เป็นสเต๊ปนะ…
 - **BBL-2026-09-05-115** (2026-09-05, instruction, glosa, readme, dag, kg-graph, v0.3) — พอเสร็จแล้วปรับปรงุ readme ใน glosa ด้วยและใส่ dag และ kg graph ให้เรียบร้อย…
+- **BBL-2026-09-05-116** (2026-09-05, instruction, zenodo, epistemic-fusion, human-ai, series, linking) — เอาเข้า zenodo และเชื่อมโยงเข้ากับเอกสารที่เกี่ยวข้องและหมวดที่เกี่ยวข้อง (Epistemic Fusio…
 
 ### กล่องดำ / เสียงดิบ (7)
 
@@ -2006,4 +2007,8 @@
 **BBL-2026-09-05-115** · 00:10 · ผู้ก่อตั้ง · instruction · หมวด: วิธีวิทยา / ระบบ glosa · glosa, readme, dag, kg-graph, v0.3 · ที่มา: chat 2026-09-05 ~00:20
 
 > พอเสร็จแล้วปรับปรงุ readme ใน glosa ด้วยและใส่ dag และ kg graph ให้เรียบร้อย
+
+**BBL-2026-09-05-116** · 10:56 · ผู้ก่อตั้ง · instruction · หมวด: วิธีวิทยา / ระบบ glosa · zenodo, epistemic-fusion, human-ai, series, linking · ที่มา: chat 2026-09-05 — publish the Epistemic Fusion or Tunnel note and link it into the human-AI series and related records
+
+> เอาเข้า zenodo และเชื่อมโยงเข้ากับเอกสารที่เกี่ยวข้องและหมวดที่เกี่ยวข้อง (Epistemic Fusion or Epistemic Tunnel, Standalone v7 Final, Genesis-aligned)
 

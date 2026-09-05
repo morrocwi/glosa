@@ -25,5 +25,11 @@
   "doi": "10.5281/zenodo.22308066",
   "separate_record": true,
   "note": "v2 of Paper IV briefly carried these files (Zenodo versions cannot be deleted); v3 restored Paper IV alone"
- }
+ },
+ "companions": [
+  {
+   "title": "Epistemic Fusion or Epistemic Tunnel (v7.1)",
+   "doi": "10.5281/zenodo.22318040"
+  }
+ ]
 }
