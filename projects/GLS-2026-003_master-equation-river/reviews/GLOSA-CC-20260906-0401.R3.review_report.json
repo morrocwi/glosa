@@ -1,0 +1,44 @@
+{
+ "claim_ref": "GLOSA-CC-20260906-0401",
+ "route_id": "R3",
+ "reviewer_identity": "same-model fresh-session AI route R3 (vendor recorded locally, not named: gate rule 9)",
+ "independence_class": "I1",
+ "mc_level": "L2",
+ "role": "SourceAuditor",
+ "review_mode": "DECORRELATED_AI_ROUTE",
+ "verdict": "Of the eight citation cards visible in this packet (two of the ten -- cite-ctsa-22339909-001 and cite-meaning-before-naming-22410666-001 -- are truncated out and cannot be audited), six exact_passages support the stated bearing at the level of 'attributed content is present': readout-genesis, human-lora, problem-to-hypothesis, meaning-giving, choice-begins, and human-learning (the last only at the disclosed paraphrase level). Two relations are inflated. fusion-tunnel's passage is a problem statement ('whether ... can'), not an assertion of stages; 'within-session amplification' and the '(recursion)/(retention)' glosses are the notes' additions. potential-readout's card disclosure says the title matches the audit's bibliography entry, directly contradicting the claim statement's title/provenance-drift finding; the passage shown contains no 'restatement of prior work' framing. The eq. 42 c",
+ "verdict_tier": "finite_diagnostic",
+ "evidence_consulted": [
+  "claim card as pasted into PACKET.md",
+  "citation card cite-readout-genesis-21529456-001",
+  "citation card cite-human-learning-22341297-001",
+  "citation card cite-human-lora-21425420-001",
+  "citation card cite-problem-to-hypothesis-22307148-001",
+  "citation card cite-fusion-tunnel-22319715-001",
+  "citation card cite-meaning-giving-22357744-001",
+  "citation card cite-potential-readout-22361830-001",
+  "citation card cite-choice-begins-22357788-001",
+  "citation card cite-ctsa-22339909-001",
+  "citation card cite-meaning-before-naming-22410666-001"
+ ],
+ "shared_dependency_disclosure": "same operator machine and same packet text as the maker; same model, fresh headless session (no shared context) (I2, not I3)",
+ "disagreement_ledger_ref": null,
+ "date": "2026-09-06",
+ "approver_kind": "ai",
+ "route_findings": {
+  "defeaters_found": [
+   "cite-potential-readout-22361830-001 disclosure states title/author/date MATCH the audit's bibliography entry; the claim statement asserts title/provenance drift for this same source. One of the two is wrong on the packet's own text.",
+   "Every card carries two I1 disclosure segments that conflict: one says judged from full-text PDF, the other says judged from metadata/abstract only, 'not full text'. The claim statement's 'reading it in full' rests on the first and is undercut by the second.",
+   "Two of ten citation cards and four of ten evidence_relations are absent from the packet (truncation); the 'nine of ten' count cannot be reproduced from the evidence base supplied."
+  ],
+  "overclaims_found": [
+   "'Under this reading, the ten manuscripts' contributions compose as a typed multi-level dependency closure (eq. 42) without requiring any non-collapse pair to be collapsed' -- no cited passage bears on eq. 42 or on composition; this is beyond a source-by-source citation audit.",
+   "cite-fusion-tunnel notes: 'supports the Human-AI coupling / within-session amplification stages' -- the passage poses a question about collaboration; 'amplification' and 'within-session' do not appear.",
+   "cite-readout-genesis notes: 'precede any admissible belief/knowledge/truth vocabulary' -- exact_passage says the root lacks these as primitive objects; the 'admitted only after quotient and readout' sequencing appears in the disclosure gloss, not the quoted passage.",
+   "cite-human-learning: audit terms 'meaning', 'constraint', 'competence' are absent from the passage; bearing SUPPORTS is generous though the notes disclose the paraphrase gap.",
+   "cite-choice-begins disclosure lists five levels; the passage lists six (drops 'physically possible'); exact_passage ends mid-sentence."
+  ],
+  "evidence_relations_ok": false,
+  "notes": "All relations are I1 (same model, fresh session); the card discloses this honestly. Content-presence checks mostly hold; the provenance-drift finding and the eq. 42 composition are the two claims the pasted cards do not support. Two cards unauditable due to packet truncation."
+ }
+}

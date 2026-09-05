@@ -1,0 +1,23 @@
+{
+ "vendor": "claude",
+ "fetched": {
+  "source": "zenodo",
+  "title": "From Problem to Hypothesis: Dynamic Semantic Mobility, Bounded Knowers, and the Readout-Discriminable Hypothesis Space",
+  "authors": [
+   "Lahtee, Yaoharee"
+  ],
+  "year": "2026",
+  "container": "Zenodo",
+  "abstract": "  Series.  Paper I of the three-paper Bounded Knower sequence. Paper II: Knowledge Topology and the First Passage to Usable Hypotheses (DOI 10.5281/zenodo.22307561). Paper III: Before Evidence Can Decide (DOI 10.5281/zenodo.22307564). Paper IV: The Epistemic Chain Reaction (DOI 10.5281/zenodo.22307751).   Status.  Bounded-knower final author draft under the Readout Universe / Readout Genesis architecture; GLOSA K0 — timestamped and citable, not independently reviewed, no priority claim. Claim tiers explicit: [definition], [Dr], [Open], [finite_diagnostic]. Produced with the glosa methodology (Rigour Without Infrastructure, DOI 10.5281/zenodo.22301060); the founder's raw lines behind it are in the Blackbox Log (concept DOI 10.5281/zenodo.22302518, e.g. entry BBL-2026-09-04-094 on imagination as reversible transport).   Abstract.  Scientific hypothesis generation is distributed across literatures on problem construction, abduction, analogy, model-based reasoning, semantic memory and control, insight, underdetermination, experimental discrimination, distributed cognition, and AI-assisted discovery. This paper proposes a readout-native architecture for the narrower domain of hypothesis-generating imagination. Its central thesis is that imagination can be modeled as bounded dynamic semantic mobility: not an infinite faculty and not a static set of reachable ideas, but a time-indexed process over semantic readouts whose transitions are provenance-audited, dynamically weighted, hist",
+  "_card_url": "https://zenodo.org/api/records/22307148/files/From_Problem_to_Hypothesis_BOUNDED_KNOWER_FINAL_ArXiv_TwoColumn_K0.pdf/content"
+ },
+ "verdict": {
+  "metadata_matches": true,
+  "passage_plausible": true,
+  "claim_match": true,
+  "bearing": "SUPPORTS",
+  "reason": "Title, first author and year match the card. The exact passage appears verbatim in the fetched abstract. The source separates attraction/momentum (accessibility) from warrant and truth, which is exactly the declared non-collapse H1 requires for the History→accessibility stage; the attributed content is present when read directly.",
+  "passage_mechanical": "verbatim prefix found in fetched open text"
+ },
+ "date": "2026-09-04"
+}

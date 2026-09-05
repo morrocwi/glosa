@@ -1,0 +1,115 @@
+$schema: blackbox_note.schema.json
+# Blackbox Note for project GLS-2026-003 (master-equation-river) -- glosa run on the "Master Equation
+# River: A Provenance Audit" internal synthesis document (cpg_research_journal, society-justice-peace
+# series), per founder ruling BBL-2026-09-06-140. Raw line below is verbatim, never edited in place (a
+# correction is a new line, chair ruling A1). Source: the public Blackbox Log entry BBL-2026-09-06-140
+# (blackbox/log/entries.jsonl), copied verbatim -- never invented, never paraphrased into a founder voice.
+id: BB-2026-09-06-01
+project: GLS-2026-003
+session_id: "sess-2026-09-06-master-equation-river-01"
+session_ref: "local session transcript, 2026-09-06 (glosa scaffold + literature-pass run on the Master Equation River provenance audit); not public beyond the line below and the public Blackbox Log entry cited by id"
+session_boundary:
+  opened_at: "2026-09-06T05:21:37+07:00"
+  closed_at: null
+  ai_state_at_boundary: reset
+  human_retained_residue_ref: "Master_Equation_River_Provenance_Audit_v1_0.pdf (cpg_research_journal/research/society-justice-peace/master-river/) -- the document the founder's ruling below responds to"
+entry_anchor: GLOSA-PC-20260906-0003
+participants:
+  - role: founder
+  - role: ai-assistant
+language: mixed
+privacy_scan: done
+public_lines_selected_by: founder
+lines:
+  - n: 1
+    ts: "2026-09-06T05:21:37+07:00"
+    speaker: founder
+    kind: instruction
+    text_verbatim: |
+      ใช้ glosa ตรวจไฟล์นี้ ผ่านแล้วเอาขึ้นระบบ
+    distinction_introduced: >-
+      Separates "the Master Equation River audit reads as internally coherent" from "the audit's own
+      citation chain is attribution-accurate when its ten named sources are fetched and read directly" --
+      rules that the file only "goes up into the system" (deposit/adoption) after the glosa check passes,
+      never before, and never on the strength of the audit's own internal coherence alone.
+    became:
+      - claim_card: "H1 (this project's hypotheses.md); records/lit/master-equation-river/h1/ (ten citation cards, litreview_manifest gate PASS)"
+    public: true
+    ai_proposed: false
+    # id: BBL-2026-09-06-140 (blackbox/log/entries.jsonl)
+lens_used:
+  display: "Readout Universe — Yaoharee Lahtee"
+  description: "readout-not-truth; retained distinction; Readout Condition E–A–D (Readout Universe / Readout Genesis)"
+  author: "Yaoharee Lahtee"
+  orcid: "0009-0005-3861-0626"
+  references:
+    - "10.5281/zenodo.21529456"
+    - "10.5281/zenodo.21665100"
+    - "10.5281/zenodo.22301318"
+    - "10.5281/zenodo.22301202"
+    - "github.com/morrocwi/readout_universe"
+  repo_urls:
+    - "https://github.com/morrocwi/readout_universe"
+    - "https://github.com/morrocwi/readout_genesis"
+  repo_ref: "2026-09-06"
+  must_appear_in_document: true
+  version_or_date_read: "2026-09-06"
+  what_it_did_here:
+    lens_in: >-
+      Read the founder's one instruction (line 1) and the Master Equation River audit itself as a
+      readout problem: does each of the thirteen named stages' attributed content actually appear, as a
+      readout, in the internal source manuscript the audit names for it, when that manuscript is fetched
+      directly rather than trusted from the audit's own genealogy table.
+    lens_out: >-
+      Translated back into world/discipline language as one candidate hypothesis (hypotheses.md): H1
+      (the Master Equation River as a typed, provenance-honest dependency closure), checked against ten
+      fetched Zenodo full texts.
+  if_other_lens: "no other lens was used for this project's lens_translation/hypotheses this pass"
+  note: "attribution ≠ authority — naming the lens credits its source and lets a reader replace it; it does not make the lens true"
+cooking:
+  - step: lens_in
+    ts: "2026-09-06"
+    by: "ai-assistant"
+    input_lines: [1]
+    output_ref: "lens_translation.md"
+    what_changed: >-
+      Drafted question_readout, local_contrast_space_X, access_relation_R, and claim_function_Phi_z0 from
+      line 1's instruction and the audit document's own text, under the Readout Universe lens; not yet
+      reviewed by an independent route.
+  - step: lens_out
+    ts: "2026-09-06"
+    by: "ai-assistant"
+    input_lines: [1]
+    output_ref: "hypotheses.md"
+    what_changed: >-
+      Drafted one candidate world-language hypothesis (H1, provenance-and-composition claim) from the
+      readout formulation; candidate only -- selection performed in hypothesis_selection.yaml per the
+      founder's own single ruling.
+  - step: literature_pass
+    ts: "2026-09-06"
+    by: "ai-assistant"
+    input_lines: [1]
+    output_ref: "records/lit/master-equation-river/h1/ (search_log.yaml, ten citation cards, ten rows, dialogue_table.md, litreview_manifest.yaml)"
+    what_changed: >-
+      Ran glosa lit new/freeze on the audit's own ten named internal sources, fetched each directly from
+      its own Zenodo record (10.5281/zenodo.<id>), converted to full text (pdftotext), and drafted one
+      citation card + row per source quoting a continuous verbatim passage checked against the audit's
+      attributed content, with a YES/NO/ORTHOGONAL/UNDETERMINED stance. Ran scripts/lit_crossvendor_check.py
+      --vendor claude (I1 route): 10/10 VERIFIED. Ran glosa lit table and glosa lit manifest
+      --human-owner "Yaoharee Lahtee": both gates PASS.
+  - step: analysis
+    ts: "2026-09-06"
+    by: "ai-assistant"
+    input_lines: [1]
+    output_ref: "claims/GLOSA-CC-20260906-0401.yaml"
+    what_changed: >-
+      Drafted one full-shape claim card (H1) with five_questions fully filled from the ten completed
+      citation cards; evidence_relations point at the ten real, VERIFIED citation card ids under
+      records/lit/master-equation-river/h1/citations/ -- not placeholders, unlike GLS-2026-002's first
+      revision, because the literature pass was run to completion before this claim card was drafted.
+      independent_check.status left NONE (no cross-vendor route beyond the I1 same-session check has run
+      against this claim card itself); status stays Draft.
+r1_readout_ref: "lens_translation.md"
+r2_hypothesis_ref: "hypotheses.md"
+translation_status: missing
+disclaimers: [D-BLACKBOX-NOTE, D-STANDPOINT]

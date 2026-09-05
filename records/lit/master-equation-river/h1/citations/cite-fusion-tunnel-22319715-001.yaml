@@ -1,0 +1,51 @@
+$schema: citation_card.schema.json
+id: cite-fusion-tunnel-22319715-001
+claim_ref: hypothesis-master-equation-river-H1
+identifier:
+  kind: DOI
+  value: 10.5281/zenodo.22319715
+fetch_status: FETCHED
+fetched_at: '2026-09-06'
+metadata_verified: true
+metadata_verified_by: mechanical:direct_fetch
+metadata_verified_at: '2026-09-06'
+claim_match_verified: true
+claim_match_verified_by: route:claude
+claim_match_verified_at: null
+exact_passage: The stronger problem is whether Human-AI collaboration can enlarge
+  the human's corrigible space of inquiry, preserve independent resistance, avoid
+  self-reinforcing semantic tunnels, and return durable epistemic capability to the
+  human after the AI is removed.
+page_or_locator: page 1, section 'Core move'
+scope: DIRECT_QUOTATION
+evidence_tier: Dr
+independence_class: I1
+who_verified: 'route:claude (I1 route: same model, fresh headless session (no shared
+  context); abstract/metadata level, not full text) -- see cite-fusion-tunnel-22319715-001.i3.json'
+verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
+status: VERIFIED
+xenon_ledger_ref: null
+disclosure: 'Same-session AI check only (I1); I3 independent-route check pending,
+  run via scripts/lit_crossvendor_check.py. | I1 route (claude) judged from the fetched
+  full-text PDF (Zenodo record 22319715), not from memory or abstract alone: title/author/date
+  match the Master River audit''s Internal Programme References entry for this stage.
+  Passage found verbatim in the fetched text (pdftotext -layout extraction), continuous,
+  page/paragraph as recorded. Stance for this stage''s row: YES. | I1 route (claude)
+  judged from fetched metadata/abstract + the card''s quoted passage, not full text:
+  Title, first author, year match. Passage found verbatim in fetched text (page 1,
+  Core move). The source states the attributed content: Human-AI collaboration judged
+  by corrigible-space enlargement, resistance, tunnel-avoidance, and durable retained
+  capability after removal. Bears on the Human-AI recursion/retention stage as the
+  card scopes.'
+superseded_by: null
+notes: 'Reflexive provenance check for GLOSA-PC-20260906-0003 / H1 (master-equation-river):
+  does the internal source the audit attributes this stage to actually contain the
+  attributed content, read directly rather than trusted from the audit''s own summary.
+  Stage checked: Human <-> AI recursion / Within-session amplification, retention
+  and epistemic direction. Audit''s attributed content: Epistemic Fusion or Tunnel
+  v8.1 gives recursive Human-AI coupling, resistance, retention and direction (each
+  turn changes the context/readout of the next; AI output becomes a human-meaning-given,
+  retainable phenomenon).'
+fetched_from_url: https://zenodo.org/api/records/22319715/files/Epistemic_Fusion_or_Tunnel_v8_1_StrongClaim_Global_TwoColumn.pdf/content
+line_or_paragraph: char offset 1061 of normalized fetched text (~paragraph 1); verbatim
+  prefix match

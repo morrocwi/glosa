@@ -1,0 +1,26 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: H1
+source_label: Readout Genesis Information Epistemic Foundation Journal (Zenodo 21529456)
+how_it_sees_the_problem: 'Frames the programme''s root layer information-theoretically: a finite retained-distinction
+  structure with ordered dynamics, context and lineage, deliberately built with no semantic/epistemic
+  primitives in it.'
+what_it_separates: Separates the root object (retained distinctions, graph-Laplacian operator, ordered
+  dynamics) from any semantic/epistemic vocabulary (belief, knowledge, truth, mind); those terms are only
+  admissible after a declared quotient and readout -- i.e. readout is placed strictly downstream of the
+  root, matching the audit's 'World -> finite readout' ordering.
+what_it_assumes: Assumes the reader accepts a root/domain-translation architecture at all (that admissibility
+  of semantic terms can be gated by a declared quotient); does not itself assert what the audit's Master
+  river says about later stages (meaning, experience, agency) -- only the root-to-readout ordering.
+stance: 'YES'
+what_it_would_say_against_us: Would say the abstract's programmatic ordering claim is a stipulated architecture
+  choice, not an empirically or formally forced fact about how human meaning-making actually proceeds;
+  a rival could order meaning before readout without contradicting anything this sentence proves.
+citation_card: cite-readout-genesis-21529456-001
+defeater_class: diagnostic
+defeater_status: untested
+legitimate_defeater: Defeated by demonstrating that the fetched passage does not actually appear at the
+  cited page/locator in the source's own published text, or that the stage's attributed content requires
+  collapsing a declared non-collapse to compose with its neighbouring stage.
+verified:
+  metadata_verified: true
+  claim_match_verified: true

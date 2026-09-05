@@ -1,0 +1,27 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: H1
+source_label: Human Learning as Epistemic Architecture v4 2026-06-28 (Zenodo 22341297)
+how_it_sees_the_problem: 'Frames human learning by analogy with a representational-AI pipeline: inputs
+  become representations, representations become relations, relations become retrieval, retrieval becomes
+  evaluation, evaluation becomes update -- an ordered chain of representational stages.'
+what_it_separates: Separates the representation stage (how inputs are encoded) from the retrieval stage
+  (how they are searched) from the evaluation/update stage (how they are revised); this is the same representation->relation->retrieval->evaluation
+  ordering the audit compresses to 'representation-meaning-retrieval-constraint-competence'.
+what_it_assumes: Assumes the AI-architecture analogy is a legitimate source of structure for describing
+  human learning (an extraction, not an identity claim) -- explicitly disclaimed elsewhere in the paper
+  as not claiming humans literally run a transformer.
+stance: 'YES'
+what_it_would_say_against_us: Would say the audit's compressed label 'representation-meaning-retrieval-constraint-competence'
+  substitutes 'meaning' and 'constraint' and 'competence' for this passage's own words 'relations', 'evaluation',
+  'update' -- the exact five-term chain in the audit's genealogy row is a paraphrase of the paper's actual
+  five-stage chain (inputs, representations, relations, retrieval, evaluation, update), not a verbatim
+  restatement, so the mapping should be checked term-by-term rather than assumed identical.
+citation_card: cite-human-learning-22341297-001
+defeater_class: diagnostic
+defeater_status: untested
+legitimate_defeater: Defeated by demonstrating that the fetched passage does not actually appear at the
+  cited page/locator in the source's own published text, or that the stage's attributed content requires
+  collapsing a declared non-collapse to compose with its neighbouring stage.
+verified:
+  metadata_verified: true
+  claim_match_verified: true

@@ -1,0 +1,23 @@
+{
+ "vendor": "claude",
+ "fetched": {
+  "source": "zenodo",
+  "title": "Human Learning as Epistemic Architecture: A Method for Word Mapping, Life-Concept Graphs, Constraint Testing, and Corrigible Agency in the AI Age (revised v4 preprint, 28 June 2026)",
+  "authors": [
+   "Lahtee, Yaoharee"
+  ],
+  "year": "2026",
+  "container": "Zenodo",
+  "abstract": "  Status.  Revised v4 preprint (28 June 2026), not peer reviewed. Programme manuscript in the Human-AI Readout Programme / series  When AI Expands Human Potential  (index DOI 10.5281/zenodo.22308201); cited as reference [2] by  CTSA Human-Return Readout  (DOI 10.5281/zenodo.22339909). Deposited 5 September 2026 with the manuscript unchanged from its 28 June 2026 state.   Abstract.  This paper rewrites the human–AI learning project with human learning at the center. It does not argue that human beings should learn like artificial intelligence. Rather, it asks what can be carefully extracted from language-model and representational AI architecture for the renewal of reflective, language-mediated human learning: the movement from inputs to representations, from representations to relations, from relations to retrieval, from retrieval to evaluation, and from evaluation to update. The paper translates these architectural principles into a human-centered method beginning with lived words, not abstract information. A word is treated as a site where experience, memory, emotion, social pressure, value, goal, constraint, evidence, and action converge. From this starting point, the paper develops a model of life-world lexical mapping, meaning neighborhoods, personal knowledge graphs, retrieval-augmented inquiry, constraint testing, reflective dissonance, and disciplined revision. The central thesis is that human learning in the AI age should be organized not as information storage but a",
+  "_card_url": "https://zenodo.org/api/records/22341297/files/Human_Learning_as_Epistemic_Architecture_v4_2026-06-28.pdf/content"
+ },
+ "verdict": {
+  "metadata_matches": true,
+  "passage_plausible": true,
+  "claim_match": true,
+  "bearing": "SUPPORTS",
+  "reason": "Title, first author, year match. Passage found verbatim in fetched abstract. The source states the inputs->representations->relations->retrieval->evaluation->update chain and 'versioned belief state', bearing on the attributed stage content; it contains what the audit attributes, so the falsifier does not fire for this stage.",
+  "passage_mechanical": "verbatim prefix found in fetched open text"
+ },
+ "date": "2026-09-04"
+}

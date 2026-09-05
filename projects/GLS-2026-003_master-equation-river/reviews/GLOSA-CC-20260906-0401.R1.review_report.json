@@ -1,0 +1,43 @@
+{
+ "claim_ref": "GLOSA-CC-20260906-0401",
+ "route_id": "R1",
+ "reviewer_identity": "same-model fresh-session AI route R1 (vendor recorded locally, not named: gate rule 9)",
+ "independence_class": "I1",
+ "mc_level": "L2",
+ "role": "Falsifier",
+ "review_mode": "DECORRELATED_AI_ROUTE",
+ "verdict": "Not defeated on its narrow core (ten sources each contain a quoted passage), but the card's stated scope exceeds its evidence. (1) It asserts thirteen stage attributions, yet the packet carries ten source-level passages with no stage-to-source map; stages such as Feedback, Changed Reader, Human Return, Warrant have no passage explicitly tied to them, so the content-absence falsifier is unreachable per stage. (2) The eq. 42 typed-closure and non-collapse-preservation assertion has no evidence relation bearing on it. (3) The Agency citation card's disclosure says title/author/date MATCH the audit's bibliography entry, contradicting the claim card's title-drift finding. (4) Disclosures state both 'full-text' and 'abstract only, not full text' checks, undercutting the 'read in full' method claim.",
+ "verdict_tier": "Dr",
+ "evidence_consulted": [
+  "claim card as pasted into PACKET.md",
+  "citation card cite-readout-genesis-21529456-001",
+  "citation card cite-human-learning-22341297-001",
+  "citation card cite-human-lora-21425420-001",
+  "citation card cite-problem-to-hypothesis-22307148-001",
+  "citation card cite-fusion-tunnel-22319715-001",
+  "citation card cite-meaning-giving-22357744-001",
+  "citation card cite-potential-readout-22361830-001",
+  "citation card cite-choice-begins-22357788-001",
+  "citation card cite-ctsa-22339909-001",
+  "citation card cite-meaning-before-naming-22410666-001"
+ ],
+ "shared_dependency_disclosure": "same operator machine and same packet text as the maker; same model, fresh headless session (no shared context) (I2, not I3)",
+ "disagreement_ledger_ref": null,
+ "date": "2026-09-06",
+ "approver_kind": "ai",
+ "route_findings": {
+  "defeaters_found": [
+   "A stage in the thirteen-stage river whose attributed source, read in full, contains no passage supporting that stage; the packet cannot exclude this for stages lacking a mapped passage (Feedback, Changed Reader, Human Return, Warrant).",
+   "A demonstration that eq. 42's closure requires collapsing one declared non-collapse pair; no citation card tests this.",
+   "The Agency citation card recording a bibliography-title match, which if accurate falsifies the claim card's own title-drift finding, or if inaccurate falsifies the card's VERIFIED status."
+  ],
+  "overclaims_found": [
+   "'Checked ... reading it in full' while paired I1 disclosure lines say 'not full text', 'found verbatim in the abstract'.",
+   "'Nine of ten ... directly supports the audit's attribution for the stage it names' — cards evidence source content, not per-stage attribution across thirteen stages.",
+   "Typed multi-level dependency closure composing without collapse is asserted with zero supporting evidence relations.",
+   "cite-choice-begins passage is truncated mid-sentence yet labelled continuous DIRECT_QUOTATION."
+  ],
+  "evidence_relations_ok": false,
+  "notes": "All relations are I1 same-model; card discloses this honestly. Relations bear on passage presence per source, not on stage-level attribution accuracy or the composition claim. Recommend adding a stage->source->passage table and reconciling the Agency card's title-match disclosure before any I3 route."
+ }
+}

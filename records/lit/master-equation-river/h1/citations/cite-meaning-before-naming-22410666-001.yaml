@@ -1,0 +1,47 @@
+$schema: citation_card.schema.json
+id: cite-meaning-before-naming-22410666-001
+claim_ref: hypothesis-master-equation-river-H1
+identifier:
+  kind: DOI
+  value: 10.5281/zenodo.22410666
+fetch_status: FETCHED
+fetched_at: '2026-09-06'
+metadata_verified: true
+metadata_verified_by: mechanical:direct_fetch
+metadata_verified_at: '2026-09-06'
+claim_match_verified: true
+claim_match_verified_by: route:claude
+claim_match_verified_at: null
+exact_passage: H5 - Recursive naming [Open]. Naming after an initially difficult-to-articulate
+  experience will sometimes reorganize subsequent readout of the same or related patterns
+  rather than merely describe a fixed prior state.
+page_or_locator: page 6, section 'Claim Boundaries', hypothesis H5
+scope: DIRECT_QUOTATION
+evidence_tier: Dr
+independence_class: I1
+who_verified: 'route:claude (I1 route: same model, fresh headless session (no shared
+  context); abstract/metadata level, not full text) -- see cite-meaning-before-naming-22410666-001.i3.json'
+verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
+status: VERIFIED
+xenon_ledger_ref: null
+disclosure: 'Same-session AI check only (I1); I3 independent-route check pending,
+  run via scripts/lit_crossvendor_check.py. | I1 route (claude) judged from the fetched
+  full-text PDF (Zenodo record 22410666), not from memory or abstract alone: title/author/date
+  match the Master River audit''s Internal Programme References entry for this stage.
+  Passage found verbatim in the fetched text (pdftotext -layout extraction), continuous,
+  page/paragraph as recorded. Stance for this stage''s row: YES. | I1 route (claude)
+  judged from fetched metadata/abstract + the card''s quoted passage, not full text:
+  Fetched title, first author Lahtee, year 2026 match the card. Verbatim H5 recursive-naming
+  passage found in fetched text. It confirms the attributed ''recursive naming'' content
+  exists, so the H1 falsifier (missing attributed content) is not triggered for this
+  stage.'
+superseded_by: null
+notes: 'Reflexive provenance check for GLOSA-PC-20260906-0003 / H1 (master-equation-river):
+  does the internal source the audit attributes this stage to actually contain the
+  attributed content, read directly rather than trusted from the audit''s own summary.
+  Stage checked: Experience <-> naming. Audit''s attributed content: Meaning Before
+  Naming permits En/mu_n to occur before stable naming and adds the recursive correction
+  that naming can restructure later meaning/experience.'
+fetched_from_url: https://zenodo.org/api/records/22410666/files/Meaning_Before_Naming_v1_0_FULL.pdf/content
+line_or_paragraph: char offset 25719 of normalized fetched text (~paragraph 1); verbatim
+  prefix match

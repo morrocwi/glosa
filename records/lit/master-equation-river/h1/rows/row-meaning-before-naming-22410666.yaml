@@ -1,0 +1,27 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: H1
+source_label: Meaning Before Naming v1 0 FULL (Zenodo 22410666)
+how_it_sees_the_problem: 'Frames naming as a two-directional process: an experience/pattern can occur
+  and be felt before it is named, and once naming does occur, it can loop back and reorganize how the
+  same or related patterns are read afterward -- exactly the recursive-naming correction the audit''s
+  genealogy row and equations (6)-(7) restate.'
+what_it_separates: Separates 'naming describes a fixed prior state' (a purely retrospective-labeling view)
+  from 'naming reorganizes subsequent readout' (a causally forward-acting view) -- the paper explicitly
+  rejects the first as the whole story and asserts the second as an open, testable addition.
+what_it_assumes: Assumes felt significance genuinely can precede explicit naming in at least some human
+  cases (an experiential premise the paper treats as the more basic, less contested claim, stated earlier
+  in the same source as an [Open] hypothesis chain H1-H4).
+stance: 'YES'
+what_it_would_say_against_us: Would say H5 is explicitly tagged [Open] by the source itself -- the paper
+  does not claim recursive naming is established, only that it 'will sometimes' occur and is falsifiable;
+  citing it as settled architectural support for the Master river's naming stage should carry that same
+  Open-tier caveat forward, not upgrade it silently to a definitional or Dr-tier fact.
+citation_card: cite-meaning-before-naming-22410666-001
+defeater_class: diagnostic
+defeater_status: untested
+legitimate_defeater: Defeated by demonstrating that the fetched passage does not actually appear at the
+  cited page/locator in the source's own published text, or that the stage's attributed content requires
+  collapsing a declared non-collapse to compose with its neighbouring stage.
+verified:
+  metadata_verified: true
+  claim_match_verified: true

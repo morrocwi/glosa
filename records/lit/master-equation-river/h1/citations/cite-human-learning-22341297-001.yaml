@@ -1,0 +1,51 @@
+$schema: citation_card.schema.json
+id: cite-human-learning-22341297-001
+claim_ref: hypothesis-master-equation-river-H1
+identifier:
+  kind: DOI
+  value: 10.5281/zenodo.22341297
+fetch_status: FETCHED
+fetched_at: '2026-09-06'
+metadata_verified: true
+metadata_verified_by: mechanical:direct_fetch
+metadata_verified_at: '2026-09-06'
+claim_match_verified: true
+claim_match_verified_by: route:claude
+claim_match_verified_at: null
+exact_passage: 'Rather, it asks what can be carefully extracted from language-model
+  and representational AI architecture for the renewal of reflective, language-mediated
+  human learning: the movement from inputs to representations, from representations
+  to relations, from relations to retrieval, from retrieval to evaluation, and from
+  evaluation to update.'
+page_or_locator: page 1, abstract
+scope: DIRECT_QUOTATION
+evidence_tier: Dr
+independence_class: I1
+who_verified: 'route:claude (I1 route: same model, fresh headless session (no shared
+  context); abstract/metadata level, not full text) -- see cite-human-learning-22341297-001.i3.json'
+verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
+status: VERIFIED
+xenon_ledger_ref: null
+disclosure: 'Same-session AI check only (I1); I3 independent-route check pending,
+  run via scripts/lit_crossvendor_check.py. | I1 route (claude) judged from the fetched
+  full-text PDF (Zenodo record 22341297), not from memory or abstract alone: title/author/date
+  match the Master River audit''s Internal Programme References entry for this stage.
+  Passage found verbatim in the fetched text (pdftotext -layout extraction), continuous,
+  page/paragraph as recorded. Stance for this stage''s row: YES. | I1 route (claude)
+  judged from fetched metadata/abstract + the card''s quoted passage, not full text:
+  Title, first author, year match. Passage found verbatim in fetched abstract. The
+  source states the inputs->representations->relations->retrieval->evaluation->update
+  chain and ''versioned belief state'', bearing on the attributed stage content; it
+  contains what the audit attributes, so the falsifier does not fire for this stage.'
+superseded_by: null
+notes: 'Reflexive provenance check for GLOSA-PC-20260906-0003 / H1 (master-equation-river):
+  does the internal source the audit attributes this stage to actually contain the
+  attributed content, read directly rather than trusted from the audit''s own summary.
+  Stage checked: World -> finite readout / Genealogy row (Human Learning as Epistemic
+  Architecture). Audit''s attributed content: Human Learning as Epistemic Architecture
+  gives representation-meaning-retrieval-constraint-competence as a chained architecture,
+  and that words/representations can organize attention and goals before reflective
+  checking.'
+fetched_from_url: https://zenodo.org/api/records/22341297/files/Human_Learning_as_Epistemic_Architecture_v4_2026-06-28.pdf/content
+line_or_paragraph: char offset 440 of normalized fetched text (~paragraph 1); verbatim
+  prefix match

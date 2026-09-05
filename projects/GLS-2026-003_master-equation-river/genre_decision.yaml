@@ -1,0 +1,61 @@
+$schema: genre_decision.yaml
+# GLS-2026-003 (master-equation-river) -- genre routing decision, per FOUNDATION_v0.5.md §6 (genre
+# router) and the same task pattern GLS-2026-002 used. Router is advisory; founder holds final genre
+# authority (glosa gate rule 5/6).
+
+problem_ref: GLOSA-PC-20260906-0003
+project: GLS-2026-003
+routed_at: "2026-09-06"
+
+router_output:
+  command_run: "./cli/glosa genre route projects/GLS-2026-003_master-equation-river/GLOSA-PC-20260906-0003.yaml --search-log"
+  raw_output:
+    action: genre_route
+    card: projects/GLS-2026-003_master-equation-river/GLOSA-PC-20260906-0003.yaml
+    genre: systematic_review
+    venue_track: null
+    companion_of: null
+    reasons:
+      - "step1: no -> continue"
+      - "step2: context.has_search_log is True (a documented search_log exists for this claim) -> systematic_review"
+  note: >-
+    Router run with --search-log because this project's one hypothesis (H1) already has a completed
+    search_log.yaml under records/lit/master-equation-river/h1/ (ten citation cards, litreview_manifest
+    gate PASS). Router's step-2 rule (a documented search log present -> systematic_review) fired
+    mechanically on that fact alone, exactly as it did for GLS-2026-002's own genre_decision.yaml -- the
+    router cannot see that the search log exists to check ONE internal synthesis document's own citation
+    chain (a targeted provenance audit, TARGETED_SEARCH mode, not an open systematic review of a
+    literature) rather than to constitute a systematic-review-genre paper in its own right. That
+    judgment is reserved to the founder, per FOUNDATION_v0.5.md §7.9, not delegated to the mechanical
+    router.
+
+chosen: CONCEPTUAL
+decided_by: founder
+ref: "BBL-2026-09-06-140"
+note: >-
+  The document under check (Master Equation River: A Provenance Audit) is itself written and framed as
+  an internal literature/provenance audit of the programme's own prior manuscripts -- a conceptual/
+  interpretive synthesis (a genealogy map, a corrected canonical notation, an epistemic-status ledger
+  per stage) with no new dataset, no new formal proof, and no new empirical measurement of its own (the
+  audit's own closing line: "Internal synthesis only. No new dataset was generated."). This project's own
+  H1 literature pass (records/lit/master-equation-river/h1/, TARGETED_SEARCH mode) exists to CHECK that
+  audit's citation chain, not to constitute an independent systematic review of an external literature --
+  the router's systematic_review output is not adopted for the same reason genre_decision.yaml
+  (GLS-2026-002) gave for its own case: it reflects the presence of a search_log.yaml scaffolding file
+  (S3b literature-review housekeeping), not the genre of the claim GLS-2026-003 itself makes. Recorded
+  here as an adopted-by-human override of the router's mechanical output, per FOUNDATION_v0.5.md §6 and
+  glosa gate rule 6 -- the router is never itself the legitimacy source for a genre choice. Founder
+  ruling BBL-2026-09-06-140 ("ใช้ glosa ตรวจไฟล์นี้ ผ่านแล้วเอาขึ้นระบบ") sets the standard this genre
+  choice serves: a literature-grounded provenance check feeding a conceptual/interpretive claim card, not
+  a lowered or narrowed genre claim.
+
+disposition_of_hypotheses:
+  H1:
+    claim_type: INTERPRETIVE
+    treatment: "carried as this project's own provenance-and-composition claim about the Master Equation River audit; checked against the ten named sources fetched directly from Zenodo, logged same/different/cited-style stances (YES/NO/ORTHOGONAL/UNDETERMINED) per source, one title/provenance-drift finding surfaced and carried forward rather than hidden"
+
+related_files:
+  - projects/GLS-2026-003_master-equation-river/hypotheses.md
+  - projects/GLS-2026-003_master-equation-river/hypothesis_selection.yaml
+  - projects/GLS-2026-003_master-equation-river/lens_translation.md
+  - projects/GLS-2026-003_master-equation-river/GLOSA-PC-20260906-0003.yaml

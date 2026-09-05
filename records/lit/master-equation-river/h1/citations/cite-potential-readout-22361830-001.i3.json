@@ -1,0 +1,23 @@
+{
+ "vendor": "claude",
+ "fetched": {
+  "source": "zenodo",
+  "title": "Potential as a Readout: Witnessed Envelopes, Two-Layer Agency, and the Measurement of Pseudo-Peace (Epistemic Note, K0, version 2 — tier-raising pass, 5 September 2026)",
+  "authors": [
+   "Lahtee, Yaoharee"
+  ],
+  "year": "2026",
+  "container": "Zenodo",
+  "abstract": "  Status.  K0 final author draft in the series  Society, Justice, Peace &amp; Violence  (index DOI 10.5281/zenodo.22342043) and  When AI Expands Human Potential  (index DOI 10.5281/zenodo.22308201). \"Final\" names the manuscript state, not validation, publication, or independent certification. Definitions at tier definition, interpretations at Dr; the only executed result is a two-node fixture at finite_diagnostic. No human data, no coefficient estimates. Continues the programme papers  The Causal Grammar of Structured Coexistence ,  Causal Ethics ,  Violence as a Special Case of Instability  and  Causal Agency , and the Readout Genesis / Readout Universe epistemic core.   Version 2 (same day).  Four lemmas proved on the discrete linear spine (fixed-point invariance and recurrence, linear-in-time force bill with its exact rate, Sherman–Morrison operator change at zero ongoing force, neighbour floor) with a 60-instance random-graph battery carrying passing and failing controls; an exact identifiability certificate (two models, identical record law, potential 729/1000 vs 729/5000); the witness rule sharpened with a declared comparability relation; capability-theory definitions (Sen, Nussbaum, Robeyns) recorded as challenges to the witness rule and answered; Vygotsky's zone of proximal development carded as the oldest statement of D1; the two-layer distinction carried as an open conjecture; 29 verified citation cards (rule 17: link, page, line, one verbatim passage, each re-locat",
+  "_card_url": "https://zenodo.org/api/records/22361830/files/Potential_as_a_Readout_v2_K0_2026-09-05.pdf/content"
+ },
+ "verdict": {
+  "metadata_matches": true,
+  "passage_plausible": true,
+  "claim_match": true,
+  "bearing": "SUPPORTS",
+  "reason": "Fetched title, first author (Lahtee), year 2026 match the card. Exact passage found verbatim in fetched text at §4.2 'The joint event and the envelope', defining Rg/Dg/Xg/Fg. This directly evidences the Agency stage's attributed source content, so the falsifier (attributed content absent) is not triggered for this stage.",
+  "passage_mechanical": "verbatim prefix found in fetched open text"
+ },
+ "date": "2026-09-04"
+}

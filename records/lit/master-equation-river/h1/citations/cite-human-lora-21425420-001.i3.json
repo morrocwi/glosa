@@ -1,0 +1,23 @@
+{
+ "vendor": "claude",
+ "fetched": {
+  "source": "zenodo",
+  "title": "Experience Is the Human LoRA: A Readout–Retention Theory of Selective Model Change",
+  "authors": [
+   "Lahtee, Yaoharee"
+  ],
+  "year": "2026",
+  "container": "Zenodo",
+  "abstract": " This paper argues that experience is the human LoRA. The identity is not a claim that the brain is a transformer, that phenomenal character is matrix multiplication, or that biological learning implements the engineering procedure introduced as Low-Rank Adaptation. It is a cross-level identity claim about one finite event. From the first-person side, an experience is a temporally bounded, embodied, affectively weighted, world-directed appearance. From the third-person side, the same event is a selective transformation of the observer that changes how later worlds can be read and acted upon. The argument is developed inside a finite-discrete readout framework: every accessible state is a finite retained difference on a finite graph; time is indexed by n &isin; N; formal state and update matrices are rational; and no continuum limit is required. If an experience-mediated update factors through an active readout space of dimension m inside an operational organization of dimension d, then its update rank is bounded by m. Under the finite-bottleneck condition m &lt; d, event-level change is low- rank. This yields the Human LoRA Factorization Thesis. Durable learning is obtained by a discrete retention gate; cumulative and transformative change can arise through the composition and interaction of many bounded updates. The paper connects this thesis to complementary learning systems, memory consolidation, sampled neural geometry, neurophenomenology, enactivism, psychological flexib",
+  "_card_url": "https://zenodo.org/api/records/21425420/files/EXPERIENCE_IS_HUMAN_LORA_DISCRETE_FINAL_PREPRINT.pdf/content"
+ },
+ "verdict": {
+  "metadata_matches": true,
+  "passage_plausible": true,
+  "claim_match": true,
+  "bearing": "SUPPORTS",
+  "reason": "Fetched Zenodo metadata matches title, first author Lahtee, year 2026, DOI 21425420. Exact passage found verbatim in abstract. Passage states experience selectively transforms the observer, changing how later worlds are read, which is the Experience-to-retained-future-reader stage; source contains the attributed content.",
+  "passage_mechanical": "verbatim prefix found in fetched open text"
+ },
+ "date": "2026-09-04"
+}

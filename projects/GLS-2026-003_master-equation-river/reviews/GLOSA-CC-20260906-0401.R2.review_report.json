@@ -1,0 +1,44 @@
+{
+ "claim_ref": "GLOSA-CC-20260906-0401",
+ "route_id": "R2",
+ "reviewer_identity": "same-model fresh-session AI route R2 (vendor recorded locally, not named: gate rule 9)",
+ "independence_class": "I1",
+ "mc_level": "L2",
+ "role": "HostileReviewer",
+ "review_mode": "DECORRELATED_AI_ROUTE",
+ "verdict": "Overclaim in three places. (1) Statement says every source was 'read in full', but each citation card records a second I1 pass 'judged from fetched metadata/abstract, not full text', with several passages located only in the abstract; the full-read method is asserted, not uniformly evidenced. (2) Statement asserts all thirteen stages are supported and that the ten sources compose as a typed closure (eq. 42) without collapsing four non-collapse pairs; the tested block only checks per-source passage presence, no stage-coverage table, and only two of the four pairs appear in any quoted passage. (3) The Agency Potential drift finding contradicts its own citation card, whose disclosure says title/author/date match the audit's bibliography entry. Disclosure of AI-filled content is otherwise adequate.",
+ "verdict_tier": "finite_diagnostic",
+ "evidence_consulted": [
+  "claim card as pasted into PACKET.md",
+  "citation card cite-readout-genesis-21529456-001",
+  "citation card cite-human-learning-22341297-001",
+  "citation card cite-human-lora-21425420-001",
+  "citation card cite-problem-to-hypothesis-22307148-001",
+  "citation card cite-fusion-tunnel-22319715-001",
+  "citation card cite-meaning-giving-22357744-001",
+  "citation card cite-potential-readout-22361830-001",
+  "citation card cite-choice-begins-22357788-001",
+  "citation card cite-ctsa-22339909-001",
+  "citation card cite-meaning-before-naming-22410666-001"
+ ],
+ "shared_dependency_disclosure": "same operator machine and same packet text as the maker; same model, fresh headless session (no shared context) (I2, not I3)",
+ "disagreement_ledger_ref": null,
+ "date": "2026-09-06",
+ "approver_kind": "ai",
+ "route_findings": {
+  "defeaters_found": [
+   "cite-potential-readout-22361830-001 disclosure states title matches the audit's bibliography entry, while the claim statement asserts a title/provenance mismatch; the drift finding cites no passage or bibliography line from the packet",
+   "Cards for stages Feedback, Changed Reader, Human Return, Warrant closure are truncated or absent from the packet; thirteen-stage coverage cannot be confirmed from evidence shown",
+   "Non-collapse pairs retention != improvement and potential != performance have no quoted passage in any card"
+  ],
+  "overclaims_found": [
+   "'reading it in full' vs card disclosures of abstract-only I1 passes",
+   "'verbatim passage that directly supports' vs human-learning notes admitting paraphrase-level match only",
+   "compositional closure claim (eq. 42, no collapse required) is untested by any evidence_relation",
+   "A2 'spot-checked by eye' describes an AI pass as if human proofreading occurred",
+   "claim tier and k_state not visible in packet, so their fit to I1-only evidence is unverifiable"
+  ],
+  "evidence_relations_ok": false,
+  "notes": "All ten bearings are I1 same-model; card discloses this honestly. Recommend: reconcile 22361830 title-match contradiction, add a stage-to-source coverage table, downgrade 'read in full' to match actual passes, move the composition claim to Open or cite passages for the two unevidenced non-collapse pairs."
+ }
+}

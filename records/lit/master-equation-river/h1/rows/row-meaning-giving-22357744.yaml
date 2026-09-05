@@ -1,0 +1,32 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: H1
+source_label: Experience Is Meaning Giving v2 0 STRONG CLAIM (Zenodo 22357744)
+how_it_sees_the_problem: 'Frames experience as fundamentally a meaning-giving relation, then names three
+  further distinct constructs built on it in one continuous passage: resonance as a congruence test between
+  current and retained organization, rhythm as a structured-timing recurrence descriptor, and transition
+  readiness as an accumulation of repeated retained changes toward a possible barrier-crossing.'
+what_it_separates: Separates meaning-giving from naming (meaning can precede stable naming), separates
+  resonance from mere repetition (resonance is a congruence relation, not an exposure count), separates
+  rhythm from meaning and from physical resonance (rhythm is a temporal-organization descriptor, a parallel
+  axis), and separates transition readiness/barrier-crossing from certified truth, healing, wisdom, or
+  improvement.
+what_it_assumes: Assumes these four constructs (meaning-giving, resonance, rhythm, transition readiness)
+  are the right minimal typed vocabulary to carry the audit's stages, rather than, e.g., a single undifferentiated
+  'experiential change' variable; the paper itself frames this as a K0 strong-claim conceptual architecture,
+  not an independently validated psychological law.
+stance: 'YES'
+what_it_would_say_against_us: Would say packing four distinct constructs (meaning-giving, resonance, rhythm,
+  transition readiness) into stages that the audit's genealogy table lists as four SEPARATE rows, all
+  sourced to the same one paper, risks understating how much of the Master river's apparent stage-by-stage
+  structure is actually one paper's internal typology rather than four independently-arrived-at contributions
+  -- a composition risk the audit's own dependency-closure claim (H1) needs to address, not a content-absence
+  problem.
+citation_card: cite-meaning-giving-22357744-001
+defeater_class: diagnostic
+defeater_status: untested
+legitimate_defeater: Defeated by demonstrating that the fetched passage does not actually appear at the
+  cited page/locator in the source's own published text, or that the stage's attributed content requires
+  collapsing a declared non-collapse to compose with its neighbouring stage.
+verified:
+  metadata_verified: true
+  claim_match_verified: true

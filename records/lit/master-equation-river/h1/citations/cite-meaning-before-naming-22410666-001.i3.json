@@ -1,0 +1,23 @@
+{
+ "vendor": "claude",
+ "fetched": {
+  "source": "zenodo",
+  "title": "Meaning Before Naming: A Readout-Retention Architecture of Affective-Semantic Reorganization (Standalone Concept Note v1.0 FULL)",
+  "authors": [
+   "Lahtee, Yaoharee"
+  ],
+  "year": "2026",
+  "container": "Zenodo",
+  "abstract": "  Status.  K0 conceptual architecture and programme-extension paper in the Human-AI Readout Programme; part of the series  When AI Expands Human Potential  (index DOI 10.5281/zenodo.22308201). Programme extension from Human Learning, Human LoRA, Readout Genesis, and Epistemic Fusion/Tunnel; continued by  Experience Is Meaning-Giving  (DOI 10.5281/zenodo.22357744). The paper does not propose a new theory of music, a universal code of emotion, or a literal physical theory of resonance. Music appears only as a phenomenological probe that makes a broader claim visible: meaningful human reorganization can occur before explicit naming, while the transmitted signal remains non-identical to the meaning that emerges in a particular reader.   Central claim.  Meaning need not begin with a name. A finite human can undergo an affectively weighted, context- and history-dependent reorganization in response to an external pattern before that change is propositionally articulated. The pattern does not carry a finished meaning from one interior to another. Rather, it supplies retained differences that a situated reader makes accessible through an existing and revisable organization of memory, embodiment, expectation, language, value, and context. Some such reorganizations vanish; others are retained and alter how later situations can be read, named, and acted upon.   Abstract (opening).  The Human-AI Readout Programme has treated language as epistemic mediation: articulation makes distinctions",
+  "_card_url": "https://zenodo.org/api/records/22410666/files/Meaning_Before_Naming_v1_0_FULL.pdf/content"
+ },
+ "verdict": {
+  "metadata_matches": true,
+  "passage_plausible": true,
+  "claim_match": true,
+  "bearing": "SUPPORTS",
+  "reason": "Fetched title, first author Lahtee, year 2026 match the card. Verbatim H5 recursive-naming passage found in fetched text. It confirms the attributed 'recursive naming' content exists, so the H1 falsifier (missing attributed content) is not triggered for this stage.",
+  "passage_mechanical": "verbatim prefix found in fetched open text"
+ },
+ "date": "2026-09-04"
+}

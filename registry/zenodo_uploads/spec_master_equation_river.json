@@ -1,0 +1,91 @@
+{
+ "file": "dist/Master_Equation_River_Provenance_Audit_v1_1.pdf",
+ "title": "Master Equation River: A Provenance Audit Across the Human–AI Readout Programme (Internal Programme Synthesis v1.1, glosa-checked) — การทวนสายธารสมการ เทียบกับวรรณกรรมภายใน และการชี้ที่มาของแต่ละส่วน",
+ "upload_type": "publication",
+ "publication_type": "other",
+ "publication_date": "2026-09-06",
+ "description_html": "<p><b>Status.</b> Internal literature review and provenance audit of the Human–AI Readout Programme (Thai with English technical terms). It arranges the equations and proposals of the programme's manuscripts into one typed, multi-level dependency architecture and states, stage by stage, which paper contributes what and why the stages compose. It does <i>not</i> propose that the whole river is a universal psychological law or a single physical equation: some segments are Readout/Domain architecture, some are definitions, some are Dr theses, some are Open empirical hypotheses, and some are measurement protocols. Part of the series <i>When AI Expands Human Potential</i> (index DOI 10.5281/zenodo.22308201). Version 1.1 is the glosa-checked revision of the 5 September v1.0: an independent review of v1.0 found three blocking citation defects (Fusion/Tunnel cited as “v7” while the deposited record is v8.1 and the retention-gate formula attributed to it is absent from v8.1; the superseded “Agency Potential” note cited as a standing source with a feasible-set potential formula; the MEMK equation attributed to an undeposited internal specification instead of Readout Genesis eq. 14) and three should-fix items (an undisclosed symbol renaming, no symbol glossary, a missing DOI); all are corrected here and the correction record is in §9 and in the Blackbox Log. Checked with the glosa methodology before deposit (citation cards for every attributed source re-located by a headless same-model route, class I1; one claim card with three adversarial route reports; independent review of the document) — knowledge state K0; the audit's own stated correction list (§4, notation to fix before any canonical freeze) is carried as open.</p><p><b>One-sentence conclusion (author's).</b> The internal literature can be arranged as a continuous cycle — World → Readout → Meaning → Experience → Retention → Accessibility → Live Possibility → Choice → Agency → Feedback → Changed Reader → Human–AI → Human Return → Warrant — but where retained change persists (H_{t+1} ≠ H_t) the cycle does not return to the same person, so it is better understood as a recursive river or spiral than as a closed circle.</p><p><b>Sources audited.</b> Readout Genesis / RG-MEMK; Human Learning as Epistemic Architecture; Experience Is the Human LoRA; From Problem to Hypothesis; Epistemic Fusion or Tunnel; Meaning Before Naming; Experience Is Meaning-Giving; Agency Potential (superseded by Potential as a Readout); Choice Begins Before Choice; CTSA Human-Return Readout; When AI Expands Human Potential.</p>",
+ "keywords": [
+  "provenance audit",
+  "internal literature review",
+  "Human-AI Readout Programme",
+  "dependency architecture",
+  "readout",
+  "meaning",
+  "experience",
+  "retention",
+  "live possibility",
+  "agency",
+  "human return",
+  "Readout Genesis",
+  "GLOSA K0"
+ ],
+ "language": "tha",
+ "version": "v1.1-2026-09-06",
+ "related": [
+  {
+   "identifier": "10.5281/zenodo.21529456",
+   "relation": "reviews"
+  },
+  {
+   "identifier": "10.5281/zenodo.22341297",
+   "relation": "reviews"
+  },
+  {
+   "identifier": "10.5281/zenodo.21425420",
+   "relation": "reviews"
+  },
+  {
+   "identifier": "10.5281/zenodo.22307148",
+   "relation": "reviews"
+  },
+  {
+   "identifier": "10.5281/zenodo.22319715",
+   "relation": "reviews"
+  },
+  {
+   "identifier": "10.5281/zenodo.22357744",
+   "relation": "reviews"
+  },
+  {
+   "identifier": "10.5281/zenodo.22361830",
+   "relation": "reviews"
+  },
+  {
+   "identifier": "10.5281/zenodo.22357788",
+   "relation": "reviews"
+  },
+  {
+   "identifier": "10.5281/zenodo.22339909",
+   "relation": "reviews"
+  },
+  {
+   "identifier": "10.5281/zenodo.22410666",
+   "relation": "reviews"
+  },
+  {
+   "identifier": "10.5281/zenodo.19215748",
+   "relation": "reviews"
+  },
+  {
+   "identifier": "10.5281/zenodo.22340255",
+   "relation": "references",
+   "resource_type": "software"
+  },
+  {
+   "identifier": "10.5281/zenodo.22308201",
+   "relation": "isPartOf",
+   "resource_type": "publication-other"
+  },
+  {
+   "identifier": "10.5281/zenodo.22301552",
+   "relation": "isPartOf",
+   "resource_type": "publication-other"
+  },
+  {
+   "identifier": "10.5281/zenodo.22301459",
+   "relation": "isPartOf",
+   "resource_type": "publication-other"
+  }
+ ]
+}

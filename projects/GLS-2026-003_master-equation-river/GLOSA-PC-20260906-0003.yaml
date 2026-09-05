@@ -1,0 +1,121 @@
+$schema: problem_card.schema.json
+problem_id: GLOSA-PC-20260906-0003
+project: GLS-2026-003
+intake:
+  q1_issue:
+    text_verbatim: >-
+      ใช้ glosa ตรวจไฟล์นี้ ผ่านแล้วเอาขึ้นระบบ (Master Equation River: A Provenance Audit Across the
+      Human-AI Readout Programme, v1.0, 5 September 2026) -- ตรวจว่า equations และข้อเสนอจากงานหลายชิ้น
+      ของ programme ที่ตั้งใจร้อยเป็นสายธารเดียว (World -> Readout -> Meaning -> Experience -> Retention
+      -> Accessibility -> Live Possibility -> Choice -> Agency -> Feedback -> Changed Reader -> Human-AI
+      -> Human Return -> Warrant) จริงๆ แล้วมาจากแหล่งที่อ้างหรือไม่ และประกอบกันเป็น dependency closure
+      ได้โดยไม่ยุบชั้น (collapse) ที่ audit เองประกาศห้ามยุบ (accessibility != warrant, resonance !=
+      truth, retention != improvement, potential != performance) หรือไม่.
+    retained_difference_statement: >-
+      Under the agency of the same standalone-scholar research programme that produced ten prior
+      manuscripts across nine months (March-September 2026), each manuscript answering a different
+      sub-question about human learning, experience, retention, accessibility, agency, and Human-AI
+      coupling, and the query "does a provenance audit that maps each stage of a proposed Master
+      Equation River to one of these ten manuscripts actually name a source that contains the content
+      attributed to it, or does the audit's own summary substitute for a direct reading of its named
+      ancestors" -- the difference that survives: an internal provenance audit can be internally
+      consistent (each stage names a plausible-sounding source) while still (a) attributing content to
+      a source that on direct reading does not contain it, (b) attributing content to a source whose own
+      bibliography title does not match the record actually reachable at the DOI/URL given, or (c)
+      composing two stages in a way that silently collapses a non-collapse the audit itself declares
+      (e.g. treating resonance as if it certified truth, or potential as if it certified performance).
+      This is a difference that survives under this agency/context/query -- whether the audit's own
+      citation chain is attribution-accurate and composition-honest -- not merely a topic label ("is the
+      Master Equation River a good synthesis").
+    agency: >-
+      a standalone-scholar research programme (founder, Yaoharee Lahtee, Open Civil Science Initiative)
+      running the Human-AI Readout Programme's ten prior 2026 manuscripts plus this eleventh provenance-audit
+      synthesis, assisted by AI (drafting/routing/checking only, never authoring)
+    context: >-
+      auditing whether a new internal synthesis document (the Master Equation River provenance audit)
+      that maps each of thirteen named stages to one or more of the programme's own ten prior manuscripts
+      actually reflects what those ten manuscripts say when fetched and read directly from their own
+      Zenodo records, rather than trusting the audit's own genealogy table and prose
+    query: >-
+      for each stage the audit names, does the manuscript it attributes that stage's content to actually
+      contain a verbatim passage supporting the attribution when fetched and read directly (glosa rule
+      17: fetched_from_url + page + line + one continuous verbatim passage), and can the ten manuscripts'
+      contributions be composed as a typed multi-level dependency closure without collapsing any of the
+      audit's own declared non-collapse pairs?
+    blackbox_line_ref: "blackbox/log/entries.jsonl#BBL-2026-09-06-140 (the instruction to run glosa on this file)"
+  q2_user_proposal:
+    text_verbatim: "ใช้ glosa ตรวจไฟล์นี้ ผ่านแล้วเอาขึ้นระบบ"
+    stated_by: founder
+    blackbox_line_ref: "blackbox/log/entries.jsonl#BBL-2026-09-06-140"
+  entry_anchor:
+    unresolved: >-
+      Whether each of the ten Zenodo records the audit names as a stage's source actually contains the
+      specific content (equation, definition, or distinction) the audit's genealogy table or prose
+      attributes to it, and whether the audit's own bibliography titles match the live records reachable
+      at the DOIs given (a title/provenance-drift check, distinct from a content-absence check).
+    existing_evidence: >-
+      records/lit/master-equation-river/h1/ (this project's own literature pass, run before this problem
+      card): ten citation cards, one per named source, each fetched directly from its own Zenodo record
+      (10.5281/zenodo.<id>) and converted to full text (pdftotext), each carrying one continuous verbatim
+      passage checked against the audit's own attributed content for that stage. Nine of ten support the
+      attribution cleanly (stance YES); one (cite-potential-readout-22361830-001, "Agency Potential")
+      supports the content but surfaces a title/provenance-drift finding: the audit's own Internal
+      Programme References item 9 ("Effective, Corrigible Agency Potential...") is not the same manuscript
+      as the Zenodo record actually reachable at the DOI checked (22361830, titled "Potential as a
+      Readout v2"), which itself cites the differently-titled manuscript as a separate prior work it
+      restates.
+    change_condition: "none stated -- exploratory (founder ruling BBL-2026-09-06-140: run the checks, deposit only if it passes)"
+    verification_intent: >-
+      H1 below carries a stated falsifier; the intended check is literature-grounded (fetching each of
+      the ten named sources directly from Zenodo and reading for the attributed content, per glosa rule
+      17) -- already executed in records/lit/master-equation-river/h1/ before this problem card was
+      written, with a PASS litreview_manifest gate.
+    resistance_route: >-
+      literature check: any one of the ten named sources, on direct fetch and read, not containing the
+      content the audit attributes to it -- would be a real counter-instance to H1's dependency-closure
+      claim (a broken link in the chain), not explained away; a genuine title/provenance mismatch (as
+      found for the Agency Potential stage) is logged honestly rather than silently smoothed over.
+standpoint:
+  declared_basis: >-
+    Written from the standpoint of a social entrepreneur and citizen (founder, Yaoharee Lahtee), not as
+    a substitute expert in cognitive science, philosophy of mind, information theory, or AI safety. AI
+    assistance (the AI assistant) drafts structure, content, and claim cards; disclosed throughout; never
+    counted as an author. Per glosa gate rule 5 (human holds standpoint, falsifier judgment, ethics,
+    public commitment; AI drafts/routes/checks/logs only) and gate rule 9 (no AI/vendor attribution).
+  disciplines_not_claimed:
+  - cognitive science / psychology
+  - philosophy of mind
+  - information theory (beyond citing the programme's own stated definitions)
+  - AI safety / corrigibility research
+  - formal dynamical-systems theory beyond what the programme's own manuscripts state
+  method_basis: >-
+    glosa methodology itself (claim cards answering the founder's five questions, tied to the Readout
+    Condition's Existence-Attribution-Disclosure, gated through the independence ladder before public
+    release) -- this project runs glosa on the "Master Equation River: A Provenance Audit" internal
+    synthesis document (cpg_research_journal/research/society-justice-peace/master-river), per founder
+    ruling BBL-2026-09-06-140.
+origin_blackbox_ref: "blackbox/log/entries.jsonl#BBL-2026-09-06-140"
+produced_by: joint
+responsible: human
+readiness:
+  verdict: READY_FOR_S2
+  reason: >-
+    Q1 issue is stated as the retained difference already worked out across the executed literature pass
+    (records/lit/master-equation-river/h1/, ten citation cards, litreview_manifest gate PASS); Q2 is
+    filled with the founder's own verbatim ruling (BBL-2026-09-06-140), not inferred by AI; standpoint is
+    declared from the founder's own standing standpoint memo. Analysis (the ten-card fetch-and-read pass)
+    was performed BEFORE this problem card in this task's own execution order, matching the same task
+    pattern GLS-2026-002 used (lit workers run concurrently, problem card records the completed intake).
+  checked_by: founder
+  checked_at: '2026-09-06'
+k_state: K0
+status: Draft
+human_owner: founder
+notes: >-
+  This problem card exists because glosa is being run on the "Master Equation River: A Provenance Audit"
+  document (society-justice-peace series, cpg_research_journal/research/society-justice-peace/master-river/
+  Master_Equation_River_Provenance_Audit_v1_0.pdf), per founder ruling BBL-2026-09-06-140 ("ใช้ glosa
+  ตรวจไฟล์นี้ ผ่านแล้วเอาขึ้นระบบ"). The "problem" here is the founder's own research problem (does the
+  audit's own citation chain hold up when its ten named sources are fetched and read directly), not a
+  problem about the glosa tool itself. Companion records live in records/lit/master-equation-river/h1/
+  (the literature pass this project's claim card cites).

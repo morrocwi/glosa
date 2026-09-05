@@ -1,0 +1,49 @@
+$schema: citation_card.schema.json
+id: cite-problem-to-hypothesis-22307148-001
+claim_ref: hypothesis-master-equation-river-H1
+identifier:
+  kind: DOI
+  value: 10.5281/zenodo.22307148
+fetch_status: FETCHED
+fetched_at: '2026-09-06'
+metadata_verified: true
+metadata_verified_by: mechanical:direct_fetch
+metadata_verified_at: '2026-09-06'
+claim_match_verified: true
+claim_match_verified_by: route:claude
+claim_match_verified_at: null
+exact_passage: 'Readout-semantic attraction and semantic momentum are introduced as
+  finite access diagnostics, but they are explicitly separated from epistemic warrant
+  and truth: a familiar or institutionally reinforced path may be highly attractive
+  without being well supported.'
+page_or_locator: page 1, abstract
+scope: DIRECT_QUOTATION
+evidence_tier: Dr
+independence_class: I1
+who_verified: 'route:claude (I1 route: same model, fresh headless session (no shared
+  context); abstract/metadata level, not full text) -- see cite-problem-to-hypothesis-22307148-001.i3.json'
+verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
+status: VERIFIED
+xenon_ledger_ref: null
+disclosure: 'Same-session AI check only (I1); I3 independent-route check pending,
+  run via scripts/lit_crossvendor_check.py. | I1 route (claude) judged from the fetched
+  full-text PDF (Zenodo record 22307148), not from memory or abstract alone: title/author/date
+  match the Master River audit''s Internal Programme References entry for this stage.
+  Passage found verbatim in the fetched text (pdftotext -layout extraction), continuous,
+  page/paragraph as recorded. Stance for this stage''s row: YES. | I1 route (claude)
+  judged from fetched metadata/abstract + the card''s quoted passage, not full text:
+  Title, first author and year match the card. The exact passage appears verbatim
+  in the fetched abstract. The source separates attraction/momentum (accessibility)
+  from warrant and truth, which is exactly the declared non-collapse H1 requires for
+  the History→accessibility stage; the attributed content is present when read directly.'
+superseded_by: null
+notes: 'Reflexive provenance check for GLOSA-PC-20260906-0003 / H1 (master-equation-river):
+  does the internal source the audit attributes this stage to actually contain the
+  attributed content, read directly rather than trusted from the audit''s own summary.
+  Stage checked: History -> re-entry / Attraction + momentum + switching cost -> accessibility.
+  Audit''s attributed content: From Problem to Hypothesis gives a history-shaped accessibility
+  kernel (attraction, recent-path momentum, switching cost) and explicitly states
+  that accessibility/attraction/momentum are not warrant.'
+fetched_from_url: https://zenodo.org/api/records/22307148/files/From_Problem_to_Hypothesis_BOUNDED_KNOWER_FINAL_ArXiv_TwoColumn_K0.pdf/content
+line_or_paragraph: char offset 1890 of normalized fetched text (~paragraph 1); verbatim
+  prefix match

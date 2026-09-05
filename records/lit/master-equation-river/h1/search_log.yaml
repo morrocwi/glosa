@@ -1,0 +1,139 @@
+$schema: search_log.schema.json
+id: search-master-equation-river-001
+claim_or_hypothesis_ref: h1
+search_mode: TARGETED_SEARCH
+frozen_scope:
+  hypothesis_or_falsifier: 'H1 (master-equation-river): the programme''s manuscripts describe successive
+    stages of one process (World -> Readout -> Meaning -> Experience -> Retention -> Accessibility ->
+    Live Possibility -> Choice -> Agency -> Feedback -> Changed Reader -> Human-AI -> Human Return ->
+    Warrant) and can be composed as a typed multi-level dependency closure; with retained change (H_{t+1}
+    != H_t) the closure is a recursive river/spiral, not a closed circle. Falsifier: a stage whose attributed
+    internal source does not in fact contain the attributed content when the source is fetched and read
+    directly, or two stages that can only be composed by collapsing a declared non-collapse (e.g. accessibility
+    = warrant, resonance = truth, retention = improvement, potential = performance).'
+  question_type: mechanism
+  concepts_synonyms_vocabulary:
+  - retained difference
+  - readout
+  - meaning-giving
+  - experience
+  - selective retention
+  - Human LoRA
+  - history-shaped accessibility
+  - semantic momentum
+  - resonance
+  - rhythm
+  - transition readiness
+  - live possibility field
+  - agency potential
+  - feasible corrigible action envelope
+  - Human-AI reciprocal coupling
+  - CTSA
+  - Human Return
+  - naming (recursive)
+  - dependency closure
+  - non-collapse
+  - provenance audit
+  local_track_terms:
+  - การทวนสายธาร (provenance audit ภาษาไทย)
+  - สายธารสมการ
+  inclusion_exclusion_rules: 'INCLUDE: the ten internal programme manuscripts the provenance audit (Master_Equation_River_Provenance_Audit_v1_0.pdf)
+    names as the source for each named stage of the River (Readout Genesis, Human Learning as Epistemic
+    Architecture, Experience Is the Human LoRA, From Problem to Hypothesis, Epistemic Fusion or Tunnel
+    v8.1, Experience Is Meaning-Giving v2, Potential as a Readout v2 / Agency Potential, Choice Begins
+    Before Choice, CTSA Human-Return Readout, Meaning Before Naming) -- fetched from their own Zenodo
+    record, read directly, and checked for whether the attributed content is actually present as a verbatim
+    passage. This is a reflexive provenance check of the audit against its own named ancestors, not an
+    external-literature search. EXCLUDE: any source not named by the audit as contributing a specific
+    stage; general capability/psychology literature already covered by the sibling H2 (potential-as-readout)
+    review in this same repository.'
+  time_window: 2026 (all ten sources are 2026 programme manuscripts; the audit itself is dated 5 September
+    2026)
+  language_strategy: EN primary (all ten source manuscripts are EN-language preprints); the audit document
+    under check is bilingual TH/EN, read in both languages for the frozen_scope and stance judgments.
+  global_sources:
+  - Zenodo (https://zenodo.org/api/records/<id>, all ten named sources)
+  local_context_sources: []
+  search_date: '2026-09-06'
+  stopping_rule: Stop once every one of the ten named sources has been fetched from its Zenodo record,
+    converted to text, and checked directly for the specific passage the audit's genealogy table or prose
+    attributes to it -- one citation card per source, no open-ended additional searching (TARGETED_SEARCH
+    scope, not a systematic review).
+  conflicts_of_interest: All ten sources are the programme's own prior work (same author, same research
+    programme as the audit under check); this is a reflexive provenance/attribution check, disclosed rather
+    than hidden -- these cards are read for attribution accuracy, not sought as independent external support.
+  access_limits: None encountered; all ten Zenodo records were publicly fetchable and yielded a full-text
+    PDF convertible with pdftotext.
+queries:
+  support:
+  - zenodo.org/api/records/21529456 Readout Genesis retained difference before naming
+  - zenodo.org/api/records/22341297 Human Learning as Epistemic Architecture representation meaning retrieval
+    constraint competence
+  - zenodo.org/api/records/21425420 Experience Is the Human LoRA selective persistence retention
+  - zenodo.org/api/records/22307148 From Problem to Hypothesis history-shaped accessibility semantic momentum
+  - zenodo.org/api/records/22319715 Epistemic Fusion or Tunnel v8.1 recursive Human-AI coupling resistance
+    retention direction
+  - zenodo.org/api/records/22357744 Experience Is Meaning-Giving v2 meaning-giving resonance rhythm transition
+    readiness
+  - zenodo.org/api/records/22361830 Potential as a Readout v2 agency potential feasible R-D-X-F envelope
+  - zenodo.org/api/records/22357788 Choice Begins Before Choice live possibility field
+  - zenodo.org/api/records/22339909 CTSA Human-Return Readout session-boundary Human Return audit
+  - zenodo.org/api/records/22410666 Meaning Before Naming naming before/after stable naming recursive
+    correction
+  challenge:
+  - 'title/authorship cross-check: does the audit''s Internal Programme References bibliography entry
+    for each stage match the fetched Zenodo record''s own title and abstract, or is there a naming/provenance
+    drift (e.g. "Effective, Corrigible Agency Potential" vs the live record titled "Potential as a Readout")'
+sources_found:
+- cite-readout-genesis-21529456-001
+- cite-human-learning-22341297-001
+- cite-human-lora-21425420-001
+- cite-problem-to-hypothesis-22307148-001
+- cite-fusion-tunnel-22319715-001
+- cite-meaning-giving-22357744-001
+- cite-potential-readout-22361830-001
+- cite-choice-begins-22357788-001
+- cite-ctsa-22339909-001
+- cite-meaning-before-naming-22410666-001
+prisma_counts: null
+global_track:
+  summary: 'All ten internal sources the audit names were fetched directly from Zenodo and read in full
+    text (pdftotext). Nine of the ten sources contain a verbatim passage that directly supports the audit''s
+    attribution for the stage it names them for: Readout Genesis (root has no semantic labels, terms admissible
+    only after a declared quotient/readout), Human Learning as Epistemic Architecture (representations
+    -> relations -> retrieval -> evaluation -> update), Experience Is the Human LoRA (experience as a
+    selective transformation of the observer, not adaptation), From Problem to Hypothesis (attraction/semantic
+    momentum as finite access diagnostics separated from warrant), Epistemic Fusion or Tunnel v8.1 (corrigible
+    space, independent resistance, durable epistemic capability after AI removal), Experience Is Meaning-Giving
+    v2 (meaning-giving before naming, resonance as external-internal congruence, rhythm as structured
+    recurrence, transition readiness), Choice Begins Before Choice (six non-collapsed levels: possible/feasible/live/chosen/enacted/evaluator-visible),
+    CTSA (session-boundary Conceptual/Tool-Selection/Skill-Execution/Alternative-Generation Return ledger),
+    Meaning Before Naming (naming can reorganize subsequent readout of an already-felt pattern). One source
+    (Zenodo 22361830, "Potential as a Readout v2") DOES contain the attributed Read-Decide-Execute-Feedback
+    joint-event content for the "Agency Potential" stage, but only as an explicit restatement of a separate,
+    differently-titled prior work it cites as "[Lahtee, 2026b] ... A programme note of 5 September 2026
+    then proposed a joint-event definition of effective, corrigible agency potential" -- the audit''s
+    own Internal Programme References item 9 ("Effective, Corrigible Agency Potential: A Readout Genesis
+    Proposal ...") is not the same manuscript as the live Zenodo record checked here. This is logged as
+    a title/provenance-drift finding, not a content-absence finding: the R-D-X-F content the audit attributes
+    to this stage is genuinely present in 22361830 as a restatement, so the citation card is scoped VERIFIED/YES,
+    but the mismatch is carried forward to the GLS-2026-003 claim card''s non_claims and to attribution_problems_found.'
+  strength_note: 'This is a reflexive internal-provenance check (Dr tier: the ten source PDFs are read
+    directly and quoted verbatim), not an external-literature test of H1''s content. It establishes whether
+    the audit''s own citations are attribution-accurate, not whether the composed river is empirically
+    true -- H1 itself remains an interpretive/conceptual claim about how to read the programme''s own
+    corpus, carried at tier Dr.'
+local_track:
+  summary: No separate Thai-language external source was sought or required for this reflexive provenance
+    check; the audit document itself is bilingual TH/EN and was read in both languages to state frozen_scope
+    and stance judgments.
+  result: NOT_SEARCHED
+transfer_verdict: null
+summary_disclaimer: 'This is a TARGETED_SEARCH (not a systematic review): all ten sources named by the
+  audit were fetched from Zenodo, converted with pdftotext, and read directly. Nine of ten citation cards
+  support the audit''s attribution for their named stage with a verbatim passage (stance YES). One (cite-potential-readout-22361830-001,
+  "Agency Potential") supports the content (stance YES, R-D-X-F joint event is genuinely present) but
+  the audit''s own bibliography entry names a differently-titled paper for that content -- a title/provenance-drift
+  finding, not a content-absence finding, disclosed in attribution_problems_found rather than hidden.
+  No stage was found where the attributed source contains nothing relevant (which would have forced a
+  NO stance and confirmed H1''s falsifier).'

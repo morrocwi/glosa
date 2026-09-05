@@ -1,0 +1,31 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: H1
+source_label: Potential as a Readout v2 K0 2026-09-05 (Zenodo 22361830)
+how_it_sees_the_problem: Restates the same four-event architecture the audit's 'Agency Potential' row
+  names -- Read (Rg), Decide/refuse (Dg), Execute/act (Xg), Feedback/revise (Fg) -- as a joint probabilistic
+  event whose maximized probability over a feasible policy set defines the agency-potential envelope.
+what_it_separates: Separates each of the four events from the others (reading a distinction is not deciding
+  on it; deciding is not the same as the causal enactment; enactment is not the same as a usable feedback/revision
+  channel), matching the non-collapse chain the audit's Master equation (25) encodes.
+what_it_assumes: Assumes the reader accepts that this R-D-X-F content, though restated here inside 'Potential
+  as a Readout v2', is the same joint-event definition as the separately-titled prior work this very paper
+  cites as '[Lahtee, 2026b] ... A programme note of 5 September 2026 then proposed a joint-event definition
+  of effective, corrigible agency potential' (page 1 of this same PDF) -- i.e. this card's source-of-content
+  and the audit's named-source-title are not identical documents.
+stance: 'YES'
+what_it_would_say_against_us: 'Would say the audit''s Internal Programme References item 9 names a manuscript
+  titled ''Effective, Corrigible Agency Potential: A Readout Genesis Proposal in Dialogue with Peace Studies,
+  Capability Theory, and Agency Theory'' as the source, but the Zenodo DOI actually checked here (22361830)
+  is a different, later paper titled ''Potential as a Readout v2'' that itself CITES that manuscript as
+  an external prior work rather than being it -- the content is present (this card is scoped YES on content-match)
+  but the citation chain has a title/provenance drift that should be fixed before the Master document
+  is frozen as canonical (see attribution_problems_found).'
+citation_card: cite-potential-readout-22361830-001
+defeater_class: diagnostic
+defeater_status: untested
+legitimate_defeater: Defeated by demonstrating that the fetched passage does not actually appear at the
+  cited page/locator in the source's own published text, or that the stage's attributed content requires
+  collapsing a declared non-collapse to compose with its neighbouring stage.
+verified:
+  metadata_verified: true
+  claim_match_verified: true

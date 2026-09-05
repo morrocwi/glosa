@@ -1,0 +1,28 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: H1
+source_label: CTSA Human Return Readout v9 1 FINAL Global Constrained (Zenodo 22339909)
+how_it_sees_the_problem: Frames the entire measurement problem at the session boundary (after AI is removed)
+  rather than during AI-assisted performance, and gives the exact four-way content code (Conceptual/Tool-Selection/Skill-Execution/Alternative-Generation
+  Return) plus the exact six-field audit ledger (persistence, loss, metacognitive regulation, provenance,
+  warrant, epistemic direction) the audit's Master equation (38) reuses as G_CTSA, L, M, P, W, Delta_dir.
+what_it_separates: Separates 'capability available during AI assistance' from 'capability demonstrable
+  after AI removal' (the core session-boundary cut), and separates each of the four retained-content types
+  from each other, and separates the six audit-ledger fields (e.g. persistence from warrant, loss from
+  provenance) as independently auditable rather than one aggregate score.
+what_it_assumes: Assumes a four-way content typology (C/T/S/A) exhaustively or at least usefully partitions
+  'what returns' after AI removal; the paper itself flags this as a testable H2 partial-dissociation hypothesis
+  [Open], not an established finding.
+stance: 'YES'
+what_it_would_say_against_us: Would say the four-way CTSA typology and six-field ledger are a proposed
+  measurement architecture, not yet demonstrated to produce dissociable, reliably measurable readings
+  in real human-AI sessions -- the paper's own Open-tier hypotheses (H1-H5 in the source) mark this as
+  unverified at the empirical level.
+citation_card: cite-ctsa-22339909-001
+defeater_class: diagnostic
+defeater_status: untested
+legitimate_defeater: Defeated by demonstrating that the fetched passage does not actually appear at the
+  cited page/locator in the source's own published text, or that the stage's attributed content requires
+  collapsing a declared non-collapse to compose with its neighbouring stage.
+verified:
+  metadata_verified: true
+  claim_match_verified: true

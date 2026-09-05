@@ -1,0 +1,51 @@
+$schema: citation_card.schema.json
+id: cite-ctsa-22339909-001
+claim_ref: hypothesis-master-equation-river-H1
+identifier:
+  kind: DOI
+  value: 10.5281/zenodo.22339909
+fetch_status: FETCHED
+fetched_at: '2026-09-06'
+metadata_verified: true
+metadata_verified_by: mechanical:direct_fetch
+metadata_verified_at: '2026-09-06'
+claim_match_verified: true
+claim_match_verified_by: route:claude
+claim_match_verified_at: null
+exact_passage: 'It should be tested at the session boundary: after AI removal, what
+  readout-distinguishable capability is still available to the human, what previously
+  available capability has been lost, and what epistemic status has the retained change
+  earned? CTSA codes the content of retained change as Conceptual Return (C), Tool-Selection
+  Return (T), Skill-Execution Return (S), or Alternative-Generation Return (A). It
+  keeps persistence, loss, metacognitive regulation, provenance, warrant, and epistemic
+  direction separately auditable.'
+page_or_locator: page 1, 'Central claim' paragraph
+scope: DIRECT_QUOTATION
+evidence_tier: Dr
+independence_class: I1
+who_verified: 'route:claude (I1 route: same model, fresh headless session (no shared
+  context); abstract/metadata level, not full text) -- see cite-ctsa-22339909-001.i3.json'
+verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
+status: VERIFIED
+xenon_ledger_ref: null
+disclosure: 'Same-session AI check only (I1); I3 independent-route check pending,
+  run via scripts/lit_crossvendor_check.py. | I1 route (claude) judged from the fetched
+  full-text PDF (Zenodo record 22339909), not from memory or abstract alone: title/author/date
+  match the Master River audit''s Internal Programme References entry for this stage.
+  Passage found verbatim in the fetched text (pdftotext -layout extraction), continuous,
+  page/paragraph as recorded. Stance for this stage''s row: YES. | I1 route (claude)
+  judged from fetched metadata/abstract + the card''s quoted passage, not full text:
+  Title, first author (Lahtee), year 2026 match. Passage found verbatim in fetched
+  text; it states CTSA codes retained change as C/T/S/A and keeps warrant and other
+  axes separately auditable, which is the attributed content for the Human Return
+  stage. Provenance check passes for this stage.'
+superseded_by: null
+notes: 'Reflexive provenance check for GLOSA-PC-20260906-0003 / H1 (master-equation-river):
+  does the internal source the audit attributes this stage to actually contain the
+  attributed content, read directly rather than trusted from the audit''s own summary.
+  Stage checked: Human Return / CTSA. Audit''s attributed content: CTSA v9.1 separates
+  retained capability into Conceptual, Tool-Selection, Skill-Execution and Alternative-Generation
+  Return with an audit record of gain/loss/metacognitive-regulation/provenance/warrant/direction.'
+fetched_from_url: https://zenodo.org/api/records/22339909/files/CTSA_Human_Return_Readout_v9_1_FINAL_Global_Constrained.pdf/content
+line_or_paragraph: char offset 1158 of normalized fetched text (~paragraph 1); verbatim
+  prefix match

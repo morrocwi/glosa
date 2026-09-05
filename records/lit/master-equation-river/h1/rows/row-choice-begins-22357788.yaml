@@ -1,0 +1,28 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: H1
+source_label: Choice Begins Before Choice v1 0 STRONG CLAIM (Zenodo 22357788)
+how_it_sees_the_problem: 'Frames choice-relevant potential as a six-level chain that is ''often collapsed''
+  in ordinary usage: physically possible, structurally feasible, experientially live, chosen, enacted,
+  and evaluator-visible -- explicitly naming the Live Possibility Field as the domain-level object that
+  carries the ''live'' level.'
+what_it_separates: Separates each of the six levels from its neighbours -- most importantly for the audit's
+  genealogy row, separates 'structurally feasible' from 'experientially live' (an option can be feasible
+  in principle but not live/available-as-a-candidate for this particular person now), and separates 'enacted'
+  from 'evaluator-visible' (an evaluator's observation is not the whole trajectory).
+what_it_assumes: Assumes six is the right granularity for this non-collapse chain (rather than, e.g.,
+  folding 'chosen' and 'enacted' together); the paper defends this with later formal objects (the live
+  possibility set/profile, thresholds) rather than in this one introductory sentence.
+stance: 'YES'
+what_it_would_say_against_us: Would say naming six levels in a sentence does not by itself prove each
+  level is independently measurable or that collapsing any two of them would lose real information in
+  a given empirical case -- that requires the paper's later formal machinery and worked cases, not just
+  this introductory claim.
+citation_card: cite-choice-begins-22357788-001
+defeater_class: diagnostic
+defeater_status: untested
+legitimate_defeater: Defeated by demonstrating that the fetched passage does not actually appear at the
+  cited page/locator in the source's own published text, or that the stage's attributed content requires
+  collapsing a declared non-collapse to compose with its neighbouring stage.
+verified:
+  metadata_verified: true
+  claim_match_verified: true

@@ -1,0 +1,23 @@
+{
+ "vendor": "claude",
+ "fetched": {
+  "source": "zenodo",
+  "title": "Epistemic Fusion or Epistemic Tunnel: A Phenomenology-Anchored, Global-Literature-Constrained, Problem-First Architecture of Human-AI Collaboration (Epistemic Note v8.1 — strong-claim / legitimate-defeater edition)",
+  "authors": [
+   "Lahtee, Yaoharee"
+  ],
+  "year": "2026",
+  "container": "Zenodo",
+  "abstract": "  Series.  Standalone epistemic note of the Human–AI Readout programme; member of the Zenodo library  When AI Expands Human Potential  (hub DOI 10.5281/zenodo.22308201). Builds on the Bounded Knower sequence I–IV, Experience Is the Human LoRA, The Language Bridge, Operational Linguistic Wisdom, The Dialogue as the Ground of Enlightenment, and the Readout Genesis / Readout Condition base; methodology: glosa (DOI 10.5281/zenodo.22310837).   Version 8.1 (2026-09-05)  supersedes v7.1 (Genesis-aligned) in this record; the earlier PDF stays available under its own version DOI.   Status.  K0+ conceptual architecture with cross-domain empirical, meta-analytic, and theoretical constraints. Strong claims are retained by design. This edition separates phenomenological explananda, constitutive necessities, structural proposals, diagnostics, and empirical predictions; each is paired with a legitimate defeater. Calling a proposition \"too strong\" is not itself a scientific defeater. The burden for empirical causal claims remains with the author, while objections to constitutive or phenomenological claims must target the relevant derivation, counterexample, phenomenon, scope, or rival explanation.   Core move.  The central research problem is not simply whether AI improves an answer while it is present. The stronger problem is whether Human-AI collaboration can enlarge the human's corrigible space of inquiry, preserve independent resistance, avoid self-reinforcing semantic tunnels, and retur",
+  "_card_url": "https://zenodo.org/api/records/22319715/files/Epistemic_Fusion_or_Tunnel_v8_1_StrongClaim_Global_TwoColumn.pdf/content"
+ },
+ "verdict": {
+  "metadata_matches": true,
+  "passage_plausible": true,
+  "claim_match": true,
+  "bearing": "SUPPORTS",
+  "reason": "Title, first author, year match. Passage found verbatim in fetched text (page 1, Core move). The source states the attributed content: Human-AI collaboration judged by corrigible-space enlargement, resistance, tunnel-avoidance, and durable retained capability after removal. Bears on the Human-AI recursion/retention stage as the card scopes.",
+  "passage_mechanical": "verbatim prefix found in fetched open text"
+ },
+ "date": "2026-09-04"
+}

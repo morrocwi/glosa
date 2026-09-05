@@ -1,0 +1,94 @@
+{
+ "manifest_id": "rel-master-equation-river-0300",
+ "artifact_refs": {
+  "claim_ids": [
+   "GLOSA-CC-20260906-0401"
+  ],
+  "citation_card_ids": [
+   "cite-readout-genesis-21529456-001",
+   "cite-human-learning-22341297-001",
+   "cite-human-lora-21425420-001",
+   "cite-problem-to-hypothesis-22307148-001",
+   "cite-fusion-tunnel-22319715-001",
+   "cite-meaning-giving-22357744-001",
+   "cite-potential-readout-22361830-001",
+   "cite-choice-begins-22357788-001",
+   "cite-ctsa-22339909-001",
+   "cite-meaning-before-naming-22410666-001"
+  ],
+  "project_ref": "projects/GLS-2026-003_master-equation-river",
+  "genre": "conceptual",
+  "venue_track": "none"
+ },
+ "gate_verdict": "HUMAN_REVIEW",
+ "adversarial_review": {
+  "r1_leak_scan": {
+   "result": "PASS",
+   "notes": "check_leak.sh PASS on repo; no absolute /home paths in any new file under projects/GLS-2026-003_master-equation-river/ or records/lit/master-equation-river/"
+  },
+  "r2_license_coverage": {
+   "result": "PASS",
+   "notes": "all ten sources are CC-licensed Zenodo deposits by the same programme/author; every quoted passage is a short continuous quotation with page locator, DOI, and fetched_from_url"
+  },
+  "r3_tier_fidelity": {
+   "result": "PASS_WITH_LIMITS",
+   "notes": "all ten citation cards and this claim card are tier Dr / I1 (same-session route only); the Meaning Before Naming card's own H5 [Open] tag is carried forward rather than upgraded; the Agency Potential title/provenance-drift finding is disclosed, not smoothed over"
+  },
+  "r4_citation_accuracy": {
+   "result": "PASS",
+   "notes": "10/10 citation cards VERIFIED via scripts/lit_crossvendor_check.py --vendor claude (I1 route): passage re-located mechanically in the fetched full text + bearing judged; litreview_manifest.yaml accuracy_gate and diversity_gate both PASS"
+  },
+  "r5_anchor_preservation_audit": {
+   "result": "PASS",
+   "notes": "all ten Zenodo DOIs (10.5281/zenodo.<id>) resolve and were fetched directly; the document under check (Master_Equation_River_Provenance_Audit_v1_0.pdf) is read from cpg_research_journal, not modified by this project"
+  },
+  "r6_overclaim_register_scan": {
+   "result": "PASS",
+   "notes": "check_forbidden_words.sh PASS on repo; no novel/first/prior art/breakthrough/unprecedented language used in this project's own files"
+  },
+  "r7_completeness": {
+   "result": "PASS_WITH_LIMITS",
+   "notes": "AI assistance disclosed by role throughout; founder line by BBL id (BBL-2026-09-06-140); the one open attribution finding (Agency Potential title/provenance drift) is carried in non_claims, dissent_records, and ledger.open, not dropped; limits: I1 route only (K0), no I3+ cross-vendor re-check of the ten citation cards themselves has run"
+  },
+  "reviewed_by": "same-session AI route (I1, scripts/lit_crossvendor_check.py --vendor claude) for the ten citation cards; scripts/claim_crossvendor_review.py --roles Falsifier,HostileReviewer,SourceAuditor --vendor claude for this claim card; not yet an independent human or cross-vendor route",
+  "reviewed_at": "2026-09-06"
+ },
+ "independent_check_summary": {
+  "maker_id": "founder+AI assistant",
+  "checker_id": "same-session route (I1) per citation card + Falsifier/HostileReviewer/SourceAuditor roles (I1) per claim card",
+  "approver_id": "founder (delegated: BBL-2026-09-06-140 \"\u0e43\u0e0a\u0e49 glosa \u0e15\u0e23\u0e27\u0e08\u0e44\u0e1f\u0e25\u0e4c\u0e19\u0e35\u0e49 \u0e1c\u0e48\u0e32\u0e19\u0e41\u0e25\u0e49\u0e27\u0e40\u0e2d\u0e32\u0e02\u0e36\u0e49\u0e19\u0e23\u0e30\u0e1a\u0e1a\")",
+  "independence_class": "I1",
+  "mc_level": "L1",
+  "approver_kind": "human"
+ },
+ "blackbox_note_appendix_present": false,
+ "blackbox_note_appendix_ref": "projects/GLS-2026-003_master-equation-river/blackbox_note.yaml (public YAML; founder line by BBL id, not reproduced elsewhere)",
+ "k_state_declared": "K0",
+ "status": "Pending Review",
+ "disclaimers_emitted": [
+  {
+   "id": "D-AIFILL"
+  },
+  {
+   "id": "D-AUTHORSHIP"
+  },
+  {
+   "id": "D-BLACKBOX-NOTE"
+  }
+ ],
+ "human_owner": "founder",
+ "revision_history": [
+  {
+   "rev": "1",
+   "date": "2026-09-06",
+   "by": "AI assistant",
+   "note": "assembled after the H1 literature pass (ten citation cards VERIFIED, litreview_manifest gate PASS) and one full-shape claim card (GLOSA-CC-20260906-0401, PASS_WITH_LIMITS validation); gate_verdict HUMAN_REVIEW because no independent (I3+) cross-vendor or human route has yet re-checked the ten citation cards or the claim card, and one disclosed title/provenance-drift finding (Agency Potential stage) remains an open item for the audit document's own next revision, not something this project's ownership scope can fix by editing the audit PDF."
+  },
+  {
+   "rev": "2",
+   "date": "2026-09-06",
+   "by": "AI assistant",
+   "note": "Ran claim_crossvendor_review.py --roles Falsifier,HostileReviewer,SourceAuditor --vendor claude on GLOSA-CC-20260906-0401: all three routes PASS. Fixed one real internal-consistency defect all three routes caught (cite-potential-readout-22361830-001 disclosure wrongly said title matched the audit bibliography entry; corrected to state the actual mismatch). Added a consolidated dissent_records entry to the claim card carrying the remaining unresolved findings (no explicit 13-stage-to-10-card coverage map; eq. 42 composition itself untested; fusion-tunnel passage is a problem statement, gloss slightly stronger than the literal sentence) forward as open items, per glosa gate rule 10 (no finding dropped). gate_verdict stays HUMAN_REVIEW."
+  }
+ ]
+}

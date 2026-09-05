@@ -1,0 +1,26 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: H1
+source_label: EXPERIENCE IS HUMAN LORA DISCRETE FINAL PREPRINT (Zenodo 21425420)
+how_it_sees_the_problem: Frames experience, from the third-person/systems side, as a selective transformation
+  of the observer -- not a full state overwrite, and not identical to the first-person lived appearance
+  described in the same sentence's first half.
+what_it_separates: Separates 'experience occurred' (the first-person appearance) from 'experience changed
+  the observer's future readout capacity' (the third-person selective transformation) -- exactly the experience-vs-durable-adaptation
+  split the audit's genealogy row attributes to this source.
+what_it_assumes: Assumes the cross-level identity claim (experience-as-human-LoRA) is a legitimate finite-discrete-readout
+  framing rather than a literal neurobiological mechanism claim; the paper explicitly disclaims that the
+  brain is a transformer.
+stance: 'YES'
+what_it_would_say_against_us: Would say 'selective transformation of the observer' is compatible with
+  many non-LoRA models of change (e.g. simple associative learning) and does not by itself establish that
+  only a low-rank residue is retained -- the low-rank/selective-consolidation claim needs the paper's
+  later formal propositions (e.g. Proposition 2), not just this abstract sentence, to be fully supported.
+citation_card: cite-human-lora-21425420-001
+defeater_class: diagnostic
+defeater_status: untested
+legitimate_defeater: Defeated by demonstrating that the fetched passage does not actually appear at the
+  cited page/locator in the source's own published text, or that the stage's attributed content requires
+  collapsing a declared non-collapse to compose with its neighbouring stage.
+verified:
+  metadata_verified: true
+  claim_match_verified: true

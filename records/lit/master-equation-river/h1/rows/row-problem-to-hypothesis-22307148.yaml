@@ -1,0 +1,26 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: H1
+source_label: From Problem to Hypothesis BOUNDED KNOWER FINAL ArXiv TwoColumn K0 (Zenodo 22307148)
+how_it_sees_the_problem: Frames hypothesis-accessibility as a finite, time-indexed diagnostic (attraction,
+  semantic momentum) computed over an agent's history of semantic access, deliberately kept apart from
+  any truth or support judgment about the hypothesis itself.
+what_it_separates: Separates 'this path is attractive/momentum-favoured' (a history-shaped access fact)
+  from 'this path is warranted/true' (an epistemic-support fact) -- exactly the non-collapse the audit's
+  Master document restates in its own §3.5 ('accessibility/attraction/momentum ไม่ใช่ warrant').
+what_it_assumes: Assumes attraction and momentum are the right finite diagnostics to formalize 'history-shaped
+  access' (rather than some other quantity); the paper itself flags these as falsifiable behavioral propositions,
+  not settled facts.
+stance: 'YES'
+what_it_would_say_against_us: Would say this abstract sentence establishes the non-collapse principle
+  but not yet the specific formulas (recent-path momentum m_t, semantic accessibility kappa^sem_t) the
+  Master document's §3.5 equations (13)-(15) actually reuse -- those need the paper's method section,
+  not just this sentence, to be fully anchored.
+citation_card: cite-problem-to-hypothesis-22307148-001
+defeater_class: diagnostic
+defeater_status: untested
+legitimate_defeater: Defeated by demonstrating that the fetched passage does not actually appear at the
+  cited page/locator in the source's own published text, or that the stage's attributed content requires
+  collapsing a declared non-collapse to compose with its neighbouring stage.
+verified:
+  metadata_verified: true
+  claim_match_verified: true

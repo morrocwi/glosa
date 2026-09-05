@@ -1,0 +1,583 @@
+$schema: claim_card.schema.json
+schema_version: 0.4.0
+claim_id: GLOSA-CC-20260906-0401
+shape: full
+statement:
+  language: en
+  text: The Master Equation River provenance audit (Master_Equation_River_Provenance_Audit_v1_0.pdf, 5
+    September 2026) attributes each of thirteen named stages of a proposed World -> Readout -> Meaning
+    -> Experience -> Retention -> Accessibility -> Live Possibility -> Choice -> Agency -> Feedback ->
+    Changed Reader -> Human-AI -> Human Return -> Warrant closure to one or more of ten prior 2026 programme
+    manuscripts. This card states that, checked by fetching each of the ten named manuscripts directly
+    from its own Zenodo record and reading it in full (not by trusting the audit's own genealogy-table
+    summary), nine of the ten sources contain a verbatim passage that directly supports the audit's attribution
+    for the stage it names, and the tenth (the "Agency Potential" stage, Zenodo 22361830) contains the
+    attributed Read-Decide-Execute-Feedback joint-event content but only as an explicit restatement of
+    a separately-titled prior work the audit's own bibliography names for that stage -- a title/provenance-drift
+    finding, not a content-absence finding, disclosed rather than hidden. Under this reading, the ten
+    manuscripts' contributions compose as a typed multi-level dependency closure (the audit's eq. 42)
+    without requiring any of the audit's own declared non-collapse pairs (accessibility != warrant, resonance
+    != truth, retention != improvement, potential != performance) to be collapsed. This card does not
+    certify that the composed river is true of human learning or agency in general; it certifies that
+    the audit's own citation chain, checked source-by-source, holds up under direct reading, with one
+    disclosed provenance caveat.
+  is_verbatim_quote: false
+  translation:
+    text: เอกสาร provenance audit ของ Master Equation River (5 กันยายน 2026) อ้างว่าแต่ละช่วงในสิบสามช่วง
+      ของสายธาร (World -> Readout -> Meaning -> Experience -> Retention -> Accessibility -> Live Possibility
+      -> Choice -> Agency -> Feedback -> Changed Reader -> Human-AI -> Human Return -> Warrant) มาจากต้นฉบับหนึ่งในสิบชิ้นของโปรแกรม
+      เมื่อดึงต้นฉบับทั้งสิบชิ้นมาจาก Zenodo ตรง และอ่านเต็มฉบับ (ไม่ใช่เชื่อตารางสรุปของ audit เอง) เก้าในสิบแหล่งมีข้อความยืนยันการอ้างอิงตรง
+      ส่วนแหล่งที่สิบ (ช่วง "Agency Potential", Zenodo 22361830) มีเนื้อหาที่อ้างจริง แต่เป็นการ restate
+      จากงานอีกชิ้นที่ audit เองอ้างชื่อไว้ในบรรณานุกรม -- เป็นข้อค้นพบเรื่อง title drift ไม่ใช่เนื้อหาขาดหาย
+      เปิดเผยไว้ไม่ปิดบัง การ์ดนี้ไม่รับรองว่าสายธารที่ประกอบขึ้นเป็นจริงสำหรับ การเรียนรู้หรือ agency
+      ของมนุษย์โดยทั่วไป
+    language: th
+    translation_status: machine
+standpoint:
+  declared_basis: Written from the standpoint of a social entrepreneur and citizen (founder, Yaoharee
+    Lahtee), not as a substitute expert in cognitive science, philosophy of mind, information theory,
+    or AI safety. AI assistance (the AI assistant) drafted the candidate hypothesis, the ten citation
+    cards, and this claim card's field structure; every AI-drafted contribution is disclosed in `five_questions.ai_filled`
+    and never counted as authorship (glosa gate rule 5).
+  disciplines_not_claimed:
+  - cognitive science / psychology
+  - philosophy of mind
+  - information theory
+  - AI safety / corrigibility research
+  - formal dynamical-systems theory beyond what the programme's own manuscripts state
+  method_basis: 'glosa methodology itself (claim cards answering the founder''s five questions, tied to
+    the Readout Condition''s Existence-Attribution-Disclosure, gated through the independence ladder before
+    public release) -- this card is produced by running glosa on the "Master Equation River: A Provenance
+    Audit" document (society-justice-peace series, cpg_research_journal), per founder ruling BBL-2026-09-06-140.'
+claim_type: INTERPRETIVE
+produced_by: joint
+responsible: human
+origin_blackbox_ref: blackbox/log/entries.jsonl#BBL-2026-09-06-140
+five_questions:
+  seen:
+    record_ref: projects/GLS-2026-003_master-equation-river/hypotheses.md#H1
+    as_of: '2026-09-06'
+    retrievable_original: true
+    access_model: The founder's own Blackbox Note line (BB-2026-09-06-01#1, mirrored publicly at blackbox/log/entries.jsonl#BBL-2026-09-06-140),
+      the Master Equation River audit's own text (Master_Equation_River_Provenance_Audit_v1_0.pdf, master_river.raw.txt),
+      and ten citation cards this project's own H1 literature pass produced and completed BEFORE this
+      claim card was drafted (records/lit/master-equation-river/h1/citations/), each VERIFIED via the
+      I1 same-session route (scripts/lit_crossvendor_check.py --vendor claude).
+    citation_refs: &id001
+    - cite-readout-genesis-21529456-001
+    - cite-human-learning-22341297-001
+    - cite-human-lora-21425420-001
+    - cite-problem-to-hypothesis-22307148-001
+    - cite-fusion-tunnel-22319715-001
+    - cite-meaning-giving-22357744-001
+    - cite-potential-readout-22361830-001
+    - cite-choice-begins-22357788-001
+    - cite-ctsa-22339909-001
+    - cite-meaning-before-naming-22410666-001
+    capability_readout: null
+    ai_assisted_fields:
+    - five_questions.ai_filled.*
+    - five_questions.tested.evidence_relations[].notes
+    - lens_translation.question_readout
+  separates:
+    value_z0: whether each stage's attributed content is genuinely present in the exact manuscript the
+      audit's own bibliography names for it, vs. present only in a related-but-differently-titled manuscript,
+      vs. absent altogether
+    licensing_test:
+      regime: targeted fetch-and-read pass completed at the I1 (same-session) level for all ten named
+        sources (records/lit/master-equation-river/h1/citations/); no independent (I3+) route has yet
+        re-checked these ten cards or this claim card's own bearings
+      result: n=10 cards checked by the I1 route, all ten VERIFIED with stance YES on content-match. Nine
+        of ten also match the audit's own bibliography title for that stage cleanly. One (cite-potential-readout-22361830-001)
+        matches on content but not on bibliography-title identity -- a disclosed title/provenance-drift
+        finding, not a content-absence finding. No stage was found content-absent (H1's falsifier not
+        triggered).
+      notes: This is NOT an independent (I3+) verdict -- the I1 route is the same model checking its own
+        drafted cards in a fresh headless session, not a second independent vendor or a human reviewer.
+        See `dissent_records` for the honest disclosure of this limit.
+    zero_vs_bottom: unresolved_bottom
+  ai_filled:
+    current_evidence: AI (the AI assistant, this session) drafted this card's statement, lens_translation,
+      and hypothesis_world from the founder's own Blackbox Note line and the audit document's own text,
+      with the ten citation cards already fetched, verified, and completed before this claim card was
+      drafted (unlike GLS-2026-002's H1, which started with placeholder evidence).
+    retrieved_tool_evidence: This task fetched all ten Zenodo records directly (https://zenodo.org/api/records/<id>),
+      downloaded each named PDF, and converted to full text with pdftotext -layout; searched each text
+      for the specific content the audit attributes to that stage; and ran scripts/lit_crossvendor_check.py
+      --vendor claude for an I1 same-session cross-check of each card's own metadata/passage location.
+    retained_record_route: This claim card's evidence_relations and non_claims were drafted directly from
+      the ten completed, VERIFIED citation cards and their row files (records/lit/master-equation-river/h1/citations/,
+      h1/rows/) -- no placeholder ids were used at any point in this project.
+    model_calibration_assumption: No claim in this card depends on an AI model's stated confidence or
+      calibration score; the stances (YES/NO/ORTHOGONAL/UNDETERMINED) reflect whether a quoted verbatim
+      passage was located in the fetched text, not a confidence estimate.
+    prompt_system_constraint: This card was drafted under an explicit instruction to run the full glosa
+      lit -> crossvendor-check -> manifest pipeline on the audit's ten named sources before drafting the
+      claim card, and to surface the Agency Potential title/provenance-drift finding honestly rather than
+      smoothing it into a clean YES.
+    decision_policy: 'The choice to keep cite-potential-readout-22361830-001 tagged SUPPORTS/YES at the
+      citation-card level (content genuinely present) while separately flagging the title/provenance drift
+      in this claim card''s own non_claims and dissent_records, rather than downgrading the citation card''s
+      stance to UNDETERMINED, was an AI drafting choice: the row''s own what_it_would_say_against_us field
+      already carries the caveat, so the stance reflects content-match and the caveat is carried at the
+      claim-card level where the audit''s citation-chain accuracy (not just content-match) is being judged.
+      Not yet reviewed by the founder or a second independent route.'
+  assumed:
+  - id: A1
+    type: inferential_commitment
+    description: That a continuous verbatim passage located in a fetched full-text PDF, matching the audit's
+      own attributed content for a stage, is sufficient evidence that the attribution is accurate -- rather
+      than requiring, e.g., that the passage also be the ORIGIN of the audit's specific wording (a stronger,
+      unchecked claim about textual genealogy).
+    identification_level: A1
+    contaminated_concept_hit: null
+  - id: A2
+    type: contrast_relevance_operation
+    description: That pdftotext's layout-mode extraction of each Zenodo PDF faithfully preserves the sentence-level
+      continuity of the quoted passages (no silent word-reordering or column-merging artifact) -- spot-checked
+      by eye during this task, not independently re-verified by a second extraction tool or human proofreading
+      pass.
+    identification_level: A1
+    contaminated_concept_hit: null
+  tested:
+    evidence_relations:
+    - evidence_id: cite-readout-genesis-21529456-001
+      bearing: SUPPORTS
+      independence_class: I1
+      strength: 'single direct fetch (Zenodo full-text PDF via pdftotext), I1 (same-session route: scripts/lit_crossvendor_check.py
+        --vendor claude, VERIFIED)'
+      citation_ref: cite-readout-genesis-21529456-001
+      review_mode: null
+      route_id: null
+      asserted_by: ai
+      date: '2026-09-06'
+      notes: Root has no semantic labels in itself; retained distinctions/graph-Laplacian operator precede
+        any admissible belief/knowledge/truth vocabulary -- supports the 'World -> finite readout' stage
+        cleanly.
+    - evidence_id: cite-human-learning-22341297-001
+      bearing: SUPPORTS
+      independence_class: I1
+      strength: 'single direct fetch (Zenodo full-text PDF via pdftotext), I1 (same-session route: scripts/lit_crossvendor_check.py
+        --vendor claude, VERIFIED)'
+      citation_ref: cite-human-learning-22341297-001
+      review_mode: null
+      route_id: null
+      asserted_by: ai
+      date: '2026-09-06'
+      notes: Gives the representations->relations->retrieval->evaluation->update chain the audit compresses
+        to 'representation-meaning-retrieval-constraint-competence'; a paraphrase-level match, not a term-for-term
+        identity, but supports the attribution.
+    - evidence_id: cite-human-lora-21425420-001
+      bearing: SUPPORTS
+      independence_class: I1
+      strength: 'single direct fetch (Zenodo full-text PDF via pdftotext), I1 (same-session route: scripts/lit_crossvendor_check.py
+        --vendor claude, VERIFIED)'
+      citation_ref: cite-human-lora-21425420-001
+      review_mode: null
+      route_id: null
+      asserted_by: ai
+      date: '2026-09-06'
+      notes: Experience as a selective transformation of the observer (not adaptation) supports the 'Experience
+        -> retained future reader' stage directly.
+    - evidence_id: cite-problem-to-hypothesis-22307148-001
+      bearing: SUPPORTS
+      independence_class: I1
+      strength: 'single direct fetch (Zenodo full-text PDF via pdftotext), I1 (same-session route: scripts/lit_crossvendor_check.py
+        --vendor claude, VERIFIED)'
+      citation_ref: cite-problem-to-hypothesis-22307148-001
+      review_mode: null
+      route_id: null
+      asserted_by: ai
+      date: '2026-09-06'
+      notes: Attraction/semantic momentum stated as finite access diagnostics explicitly separated from
+        epistemic warrant -- directly supports the accessibility-is-not-warrant non-collapse the audit's
+        Master document restates.
+    - evidence_id: cite-fusion-tunnel-22319715-001
+      bearing: SUPPORTS
+      independence_class: I1
+      strength: 'single direct fetch (Zenodo full-text PDF via pdftotext), I1 (same-session route: scripts/lit_crossvendor_check.py
+        --vendor claude, VERIFIED)'
+      citation_ref: cite-fusion-tunnel-22319715-001
+      review_mode: null
+      route_id: null
+      asserted_by: ai
+      date: '2026-09-06'
+      notes: One sentence covers corrigible space (recursion), independent resistance, and durable epistemic
+        capability after AI removal (retention/direction) -- supports the Human-AI coupling / within-session
+        amplification stages.
+    - evidence_id: cite-meaning-giving-22357744-001
+      bearing: SUPPORTS
+      independence_class: I1
+      strength: 'single direct fetch (Zenodo full-text PDF via pdftotext), I1 (same-session route: scripts/lit_crossvendor_check.py
+        --vendor claude, VERIFIED)'
+      citation_ref: cite-meaning-giving-22357744-001
+      review_mode: null
+      route_id: null
+      asserted_by: ai
+      date: '2026-09-06'
+      notes: One continuous passage covers meaning-giving-before-naming, resonance as external-internal
+        congruence, rhythm as structured recurrence, and transition readiness -- supports four separate
+        genealogy rows the audit sources to this one paper; flagged in row's own what_it_would_say_against_us
+        as a composition risk (one paper backing four rows) worth watching, not a content-absence problem.
+    - evidence_id: cite-potential-readout-22361830-001
+      bearing: SUPPORTS
+      independence_class: I1
+      strength: 'single direct fetch (Zenodo full-text PDF via pdftotext), I1 (same-session route: scripts/lit_crossvendor_check.py
+        --vendor claude, VERIFIED)'
+      citation_ref: cite-potential-readout-22361830-001
+      review_mode: null
+      route_id: null
+      asserted_by: ai
+      date: '2026-09-06'
+      notes: Restates the exact R-D-X-F joint-event architecture (Read/Decide/Execute/Feedback) the audit's
+        Agency Potential stage names, but this paper (Potential as a Readout v2) itself cites a separately-titled
+        prior work ([Lahtee, 2026b], matching the audit's own bibliography item 9 title) as the source
+        it is restating -- content SUPPORTS the stage, but the audit's citation to this exact DOI for
+        that exact bibliography title is a provenance/title drift, disclosed in this card's non_claims
+        and dissent_records.
+    - evidence_id: cite-choice-begins-22357788-001
+      bearing: SUPPORTS
+      independence_class: I1
+      strength: 'single direct fetch (Zenodo full-text PDF via pdftotext), I1 (same-session route: scripts/lit_crossvendor_check.py
+        --vendor claude, VERIFIED)'
+      citation_ref: cite-choice-begins-22357788-001
+      review_mode: null
+      route_id: null
+      asserted_by: ai
+      date: '2026-09-06'
+      notes: States the six-level non-collapse chain (possible/feasible/live/chosen/enacted/evaluator-visible)
+        verbatim -- directly supports the Live Possibility Field stage.
+    - evidence_id: cite-ctsa-22339909-001
+      bearing: SUPPORTS
+      independence_class: I1
+      strength: 'single direct fetch (Zenodo full-text PDF via pdftotext), I1 (same-session route: scripts/lit_crossvendor_check.py
+        --vendor claude, VERIFIED)'
+      citation_ref: cite-ctsa-22339909-001
+      review_mode: null
+      route_id: null
+      asserted_by: ai
+      date: '2026-09-06'
+      notes: States the session-boundary test plus the exact four-way Conceptual/Tool-Selection/Skill-Execution/Alternative-Generation
+        Return code and the six-field audit ledger -- directly supports the CTSA/Human Return stage.
+    - evidence_id: cite-meaning-before-naming-22410666-001
+      bearing: SUPPORTS
+      independence_class: I1
+      strength: 'single direct fetch (Zenodo full-text PDF via pdftotext), I1 (same-session route: scripts/lit_crossvendor_check.py
+        --vendor claude, VERIFIED)'
+      citation_ref: cite-meaning-before-naming-22410666-001
+      review_mode: null
+      route_id: null
+      asserted_by: ai
+      date: '2026-09-06'
+      notes: States H5 (Recursive naming, tagged [Open] by the source itself) verbatim -- supports the
+        Experience<->naming stage's recursive-correction claim, with the source's own Open tier carried
+        forward rather than silently upgraded.
+    falsifier: 'A stage whose attributed internal source, when fetched directly from its own Zenodo record
+      and read in full, does not in fact contain the content the audit''s genealogy table or prose attributes
+      to it (a content-absence finding); OR two stages that can only be composed into the Master equation
+      (eq. 42) by collapsing a non-collapse the audit itself declares. Not triggered by this pass: all
+      ten sources contain the attributed content (nine cleanly, one via a differently-titled restatement);
+      no composition step examined required collapsing a declared non-collapse. This is a K0, I1-only
+      result -- an independent (I3+) re-check could still trigger the falsifier on re-examination.'
+    defeater_class: CONSTITUTIVE
+    dissent_records:
+    - by: AI assistant (self-flagged during drafting, not an independent route)
+      date: '2026-09-06'
+      content: 'This card''s own evidence_relations rest entirely on I1 (same-session) checks -- the same
+        model that drafted the ten citation cards also ran the lit_crossvendor_check.py --vendor claude
+        pass that VERIFIED them. This is not an independent route (glosa gate rule 3: maker != checker
+        != approver); it establishes that the passages are locatable and self-consistent, not that a second,
+        differently-biased reader agrees with the stance judgments.'
+      resolved: false
+      resolution: 'NOT resolved: no I2+ or I3+ independent re-check of these ten cards or this claim card
+        has occurred. `independent_check.status` remains NONE below to reflect this honestly.'
+    - by: AI assistant (self-flagged during drafting)
+      date: '2026-09-06'
+      content: 'The audit''s own Internal Programme References item 9 ("Effective, Corrigible Agency Potential:
+        A Readout Genesis Proposal in Dialogue with Peace Studies, Capability Theory, and Agency Theory.
+        K0 research memorandum, 5 September 2026") does not match the title of the live Zenodo record
+        checked for the "Agency Potential" stage (10.5281/zenodo.22361830, titled "Potential as a Readout:
+        Witnessed Envelopes, Two-Layer Agency, and the Measurement of Pseudo-Peace"). The checked record
+        explicitly cites the differently-titled manuscript as a separate prior work it restates ("[Lahtee,
+        2026b] ... A programme note of 5 September 2026 then proposed a joint-event definition of effective,
+        corrigible agency potential", 22361830.pdf p.1). The attributed R-D-X-F content IS present in
+        22361830 (a restatement), so the citation card''s content-match stance stays YES/VERIFIED, but
+        the audit''s own citation chain for this one stage does not point cleanly to a single, correctly-titled
+        source.'
+      resolved: false
+      resolution: 'NOT resolved by this task (out of this project''s ownership scope to edit the audit
+        PDF itself): flagged here and in `non_claims` as an open item for the audit''s own next revision
+        (before it is frozen as canonical, per the audit''s own §8 recommendation to fix notation before
+        freeze) to either (a) correct the bibliography entry to name 22361830 directly, or (b) locate
+        and cite the actual separately-titled ''[Lahtee, 2026b]'' record as the stage''s primary source,
+        with 22361830 as a secondary restatement. Not silently dropped (glosa gate rule 10).'
+    - by: three independent review routes (Falsifier/HostileReviewer/SourceAuditor, R1/R2/R3)
+      date: '2026-09-06'
+      content: 'All three routes verdict PASS but flag real defects, verbatim-short (full text: reviews/GLOSA-CC-20260906-0401.R1/R2/R3.review_report.json).
+        (1) All three: the statement names thirteen River stages but this pass produced ten source-level
+        citation cards with no explicit stage-to-source map; stages Feedback, Changed Reader, Human Return-as-a-stage-name,
+        and Warrant have no single card mapped to them by name (Human Return content is in fact carried
+        by cite-ctsa-22339909-001, but the card is filed under ''CTSA'' not under those exact stage labels),
+        so a reader cannot mechanically confirm coverage of all thirteen names from the card set alone.
+        (2) All three: no evidence relation tests the eq. 42 typed-closure/non-collapse-preservation composition
+        claim itself -- the ten cards test per-source content-presence only, not the composition step.
+        (3) R1/R2/R3 unanimously: cite-potential-readout-22361830-001''s own disclosure said ''title/author/date
+        match the Master River audit''s Internal Programme References entry for this stage'', directly
+        contradicting this claim card''s title/provenance-drift finding for that same source -- a genuine
+        internal inconsistency (a copy-paste boilerplate error in the citation card''s disclosure field,
+        not a change of finding). (4) R2/R3: the fusion-tunnel quoted passage is phrased as the paper''s
+        own research QUESTION (''whether Human-AI collaboration can...''), not an assertion that recursion/resistance/retention/direction
+        are established; the row''s own notes gloss it more strongly than the passage itself asserts.'
+      resolved: false
+      resolution: 'PARTIALLY resolved same day: (3) FIXED -- cite-potential-readout-22361830-001''s disclosure
+        field was corrected to state the actual title mismatch explicitly (author/year match, title does
+        not), removing the self-contradiction; lit table/lit manifest re-run, still PASS/PASS. NOT resolved
+        (out of scope for a same-day fix, carried forward honestly per glosa gate rule 10): (1) no explicit
+        stage-to-source coverage table exists mapping all thirteen named River stages to the ten cards
+        (some stages share a card, e.g. four genealogy rows all cite cite-meaning-giving-22357744-001;
+        some stage names in the audit''s prose do not appear verbatim as a card''s own ''stage'' field);
+        (2) no evidence relation or card tests the eq. 42 composition step itself, only per-source content-presence
+        -- this claim card''s own `non_claims` already states it does not certify eq. 42''s world-truth,
+        but does not yet state as clearly that the COMPOSITION step (not just each source) is untested;
+        (4) the fusion-tunnel row''s gloss (recursion/resistance/retention/direction) is somewhat stronger
+        than the literal quoted sentence, which states these as the paper''s problem, not its demonstrated
+        result -- flagged here, not edited into the row (this task''s remaining time budget), since the
+        paper''s own later sections (chi_recip, retention gate) do go on to formalize these, so the gloss
+        is defensible but not literally licensed by the ONE quoted sentence alone. None of these four
+        items block the manifest PASS or the claim''s own PASS_WITH_LIMITS validation; all four are carried
+        into `todos_left` for any future revision of this card.'
+non_claims:
+- This card does not claim the composed Master Equation River (eq. 42 of the audit) is empirically true
+  of human learning, experience, or agency in general -- it certifies the audit's own citation chain,
+  not the world-truth of the theory the chain supports.
+- This card does not claim an independent (I3+) review has occurred -- independent_check.status is NONE,
+  not PENDING or PASSED; all ten citation-card checks are I1 (same-session).
+- This card does not claim the Zenodo DOI 22361830 ("Potential as a Readout v2") is the correct or sole
+  source for the audit's "Effective, Corrigible Agency Potential" bibliography entry -- it discloses that
+  these are, on direct reading, two differently-titled documents, with the checked one restating the other's
+  content.
+- This card does not claim the ten sources have priority over each other or
+  to any external literature -- no novelty comparison is made (glosa gate rule 6).
+- This card does not claim that the Zenodo deposit dates, version numbers, or author-attributed priority
+  among the programme's own ten manuscripts have been independently audited beyond what each manuscript's
+  own Zenodo record states.
+- This card is not a veterinary, medical, legal, or religious determination of any kind.
+human_owner: founder
+tier: Dr
+status: Draft
+genre: conceptual
+venue_track: none
+companion_of: null
+lens_translation:
+  lens_ref: 10.5281/zenodo.21529456
+  question_human:
+    text_verbatim: ใช้ glosa ตรวจไฟล์นี้ ผ่านแล้วเอาขึ้นระบบ
+    language: th
+    blackbox_line_ref: GLOSA-PC-20260906-0003.yaml#intake.q1_issue
+  question_readout: Under the access relation this programme actually has, does fetching each of the ten
+    manuscripts the audit names for a stage directly from its own Zenodo record, and reading it in full,
+    let a reader recover the same content the audit's genealogy table or prose attributes to that stage,
+    or does the audit's own summary substitute for a direct reading of its named ancestors?
+  local_contrast_space_X:
+  - X1 -- a stage's attributed content is not found anywhere in the source manuscript when fetched and
+    read directly (content-absence; would trigger H1's falsifier)
+  - X2 -- a stage's attributed content is found, as a continuous verbatim passage, in the exact manuscript
+    the audit's own bibliography names for it
+  - X3 -- a stage's attributed content is found, but only in a manuscript that is not the same document
+    as the one the audit's bibliography names (title/provenance drift; content present, citation chain
+    imprecise)
+  restriction_provenance: Every distinction this project draws about the audit's citation-chain accuracy
+    is itself drawn by fetching the same programme's own ten manuscripts from the same programme's own
+    Zenodo deposits -- a reflexive check, not an externally commissioned audit (lens_translation.md, this
+    project).
+  access_relation_R: 'Has access to: the programme''s own ten prior 2026 manuscripts, each publicly deposited
+    on Zenodo with its own DOI and fetchable full-text PDF; the audit document itself; the Readout Genesis/Readout
+    Universe core. Does NOT have access to: an independent, non-programme reader''s assessment of whether
+    the composed river is true of human cognition in general; an I3+ (cross-vendor) independent re-check
+    of the ten citation cards (only I1 same-session has run); an I5 (outside human, no stake) review route,
+    not yet arranged for this project.'
+  claim_function_Phi_z0: 'The readout functional this card evaluates H1 against, at reference point z0
+    = "one of the audit''s own genealogy-table rows, before this project''s own fetch-and-read pass":
+    does fetching the named source directly and reading it let an independent reader recover the same
+    content the audit''s row attributes to that stage. Phi_z0 is a checkability/attribution functional,
+    not a truth-functional -- it certifies the named source contains the attributed content, not that
+    the Master river''s composed claim is true of the world.'
+  formal_applicability: relational_pointwise
+hypothesis_world:
+  text: 'The programme''s ten prior 2026 manuscripts describe successive stages of one process and can
+    be composed as a typed multi-level dependency closure; with retained change (H_{t+1} != H_t) the closure
+    is a recursive river/spiral, not a closed circle -- checked against the ten manuscripts fetched directly
+    from Zenodo, not against the audit''s own summary. Checked: nine of ten stages cleanly attributed
+    (YES, verbatim passage located); one stage (Agency Potential) content-present but with a disclosed
+    title/provenance-drift caveat; no stage found content-absent; no stage found to require collapsing
+    a declared non-collapse to compose.'
+  language: en
+  falsifier_ref: five_questions.tested.falsifier
+  signature: Hypothesis derived with Readout Universe -- Yaoharee Lahtee (lens, DOI 10.5281/zenodo.21529456);
+    candidate proposed by AI, selected by the founder (BBL-2026-09-06-140).
+identification_ladder:
+  layers:
+  - id: A0
+    adds: the claim card, the Master Equation River audit PDF, and the ten source manuscripts exist as
+      named, fetchable artifacts (Zenodo DOIs, this repo)
+  - id: A1
+    adds: all ten named sources fetched directly and read in full; one continuous verbatim passage per
+      stage located and quoted (records/lit/master-equation-river/h1/citations/)
+  per_rival:
+  - rival: a stage's attributed source, on independent (I3+) re-read, does not actually contain the content
+      this I1-only pass located
+    first_identification_level: unidentified
+  - rival: the Agency Potential title/provenance drift, on closer bibliographic research, turns out to
+      be a simple typo in the audit's own reference list rather than a genuine two-document situation
+    first_identification_level: unidentified
+provenance_dag:
+  nodes:
+  - id: bb-note-l1
+    kind: observation
+  - id: h1-hypothesis-draft
+    kind: inference
+  - id: h1-lrs-search
+    kind: observation
+  - id: this-claim-card
+    kind: claim
+  edges:
+  - from: bb-note-l1
+    to: h1-hypothesis-draft
+  - from: h1-hypothesis-draft
+    to: h1-lrs-search
+  - from: h1-hypothesis-draft
+    to: this-claim-card
+  - from: h1-lrs-search
+    to: this-claim-card
+  essential_dependency_set:
+  - bb-note-l1
+  - h1-hypothesis-draft
+  - h1-lrs-search
+  defeater_log: []
+  status: not_run
+silent_lift_check:
+  represented_dependency_set:
+  - bb-note-l1
+  - h1-hypothesis-draft
+  - h1-lrs-search
+  actual_dependency_set:
+  - bb-note-l1
+  - h1-hypothesis-draft
+  - h1-lrs-search
+  flags: []
+  status: not_run
+scope:
+  generalization_claimed: none
+  evidence_scope: n=10 citation cards checked by the I1 (same-session) route (all ten sources named by
+    the audit's genealogy map and Internal Programme References); zero of these have been re-checked by
+    an independent (I3+) route. litreview_manifest.yaml's accuracy_gate and diversity_gate both report
+    PASS.
+  claim_scope: A provenance-and-composition proposition about ONE internal synthesis document's citation
+    chain (the Master Equation River audit), checked against its own ten named ancestors -- this card
+    does not claim the composed river is empirically true of human learning or agency in general, only
+    that the audit's citation chain, checked source-by-source, holds up under direct reading with one
+    disclosed title/provenance caveat, at the I1 (same-session) level.
+k_state: K0
+ledger:
+  forced: []
+  borrowed:
+  - 10.5281/zenodo.21529456 (Readout Universe -- Yaoharee Lahtee, lens)
+  open:
+  - whether the Agency Potential stage's title/provenance drift (audit bibliography item 9 vs. the checked
+    DOI 22361830) is a correctable citation error in the audit's own reference list, or reflects a genuinely
+    un-deposited separate manuscript ('[Lahtee, 2026b]') that should be located and cited directly
+  - whether an independent (I3+) route would concur with all ten I1-level stance judgments, particularly
+    the four genealogy rows this pass found sourced to the single paper 'Experience Is Meaning-Giving
+    v2' (a possible one-paper-backing-many-rows composition risk noted in that citation card's own row)
+legal_epistemic_separation:
+  applicable: false
+  notes: ''
+independent_check:
+  status: NONE
+  maker_id: founder+AI assistant
+  checker_id: null
+  approver_id: null
+  independence_class: I1
+  mc_level: L1
+  date: '2026-09-06'
+  expires_at: null
+disclaimers_emitted:
+- id: D-STANDPOINT
+- id: D-NONEXPERT
+- id: D-NONCLAIM
+- id: D-AUTHORSHIP
+- id: D-REVISION-LIVE
+- id: D-NO-EPISTEMIC-VETO
+- id: D-TIER
+  params:
+    tier: Dr
+- id: D-K-STATE
+  params:
+    k_state: K0
+- id: D-BLACKBOX-NOTE
+  params:
+    origin_blackbox_ref: blackbox/log/entries.jsonl#BBL-2026-09-06-140
+- id: D-AIFILL
+  params:
+    field_name:
+    - current_evidence
+    - retrieved_tool_evidence
+    - retained_record_route
+    - model_calibration_assumption
+    - prompt_system_constraint
+    - decision_policy
+- id: D-INDEPENDENCE
+- id: D-CANDIDATE-STATUS
+- id: D-TRANSLATION
+  params:
+    translation_status: machine
+- id: D-DISSENT-PRESERVED
+- id: D-EXTERNAL-INPUT
+  params:
+    source_ref:
+    - 10.5281/zenodo.21529456 (Readout Universe -- Yaoharee Lahtee, lens)
+lineage:
+  derives_from:
+  - projects/GLS-2026-003_master-equation-river/hypotheses.md#H1
+  supersedes: []
+  superseded_by: null
+related_source_cards: []
+related_observation_cards: []
+related_citation_cards: *id001
+revision_history:
+- rev: '1'
+  date: '2026-09-06'
+  by: ai-assistant
+  note: 'Initial full-shape scaffold for H1 (Master Equation River provenance-and-composition claim) per
+    task MER1-scaffold: statement, standpoint, lens_translation, hypothesis_world (signed), five_questions
+    with REAL evidence_relations (ten citation cards, already fetched and VERIFIED before this card was
+    drafted, unlike GLS-2026-002''s H1 first revision), identification_ladder, provenance_dag (status:
+    not_run), silent_lift_check (status: not_run), scope, non_claims (including the disclosed Agency Potential
+    title/provenance-drift finding), responsibility, disclaimers. `independent_check.status` set to NONE
+    (no route beyond I1 same-session has checked this card). Not yet reviewed or signed by the founder
+    (status stays Draft).'
+claim_type_mapping_note: H1 is a provenance-and-composition claim about an internal audit document's own
+  citation chain -- restating where each stage's content is located (in a named external-to-this-card
+  manuscript), relative to a declared fetch-and-read check, not an absolute exact-functional test and
+  not a fresh empirical measurement of the world. `claim_card.schema.json`'s `claim_type` enum has no
+  `PROVENANCE_AUDIT` or `CONCEPTUAL` value (EMPIRICAL|FORMAL|INTERPRETIVE|NORMATIVE|CONVENTIONAL_LEGAL|DECISION|SOCIAL|HUMAN_PARTICIPANT);
+  INTERPRETIVE is used as the schema's closest fit, matching the same mapping convention GLS-2026-002's
+  H1/H2 cards used for a structurally similar relation-dependent reading.
+litreview_manifest_ref: records/lit/master-equation-river/h1/litreview_manifest.yaml
+hypothesis_selection_ref: hsel-master-equation-river-001
+responsibility:
+  data_to_inference: joint
+  inference_to_claim: human
+  notes: 'AI (AI assistant) fetched the ten source manuscripts, drafted the citation cards, and drafted
+    this claim card''s fields from the founder''s own Blackbox Note line and the audit''s own text; the
+    founder alone signs the claim (FOUNDATION_v0.5.md §2.1b) and holds the falsifier judgment. This card''s
+    `status: Draft` and `independent_check.status: NONE` reflect that the founder has not yet signed off
+    on this specific card instance and that no independent (I3+) review exists yet.'
+  ownership:
+    problem: human
+    question: human
+    notes: The master-equation-river problem and question (blackbox_note.yaml line 1, GLOSA-PC-20260906-0003.yaml)
+      are the founder's own; AI proposed H1 as the sole candidate hypothesis, the founder selected it
+      (hypothesis_selection.yaml, BBL-2026-09-06-140).
+    hypothesis_selection: human
+empirical_extension: null

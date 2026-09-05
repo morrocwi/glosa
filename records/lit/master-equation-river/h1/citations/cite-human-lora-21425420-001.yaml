@@ -1,0 +1,46 @@
+$schema: citation_card.schema.json
+id: cite-human-lora-21425420-001
+claim_ref: hypothesis-master-equation-river-H1
+identifier:
+  kind: DOI
+  value: 10.5281/zenodo.21425420
+fetch_status: FETCHED
+fetched_at: '2026-09-06'
+metadata_verified: true
+metadata_verified_by: mechanical:direct_fetch
+metadata_verified_at: '2026-09-06'
+claim_match_verified: true
+claim_match_verified_by: route:claude
+claim_match_verified_at: null
+exact_passage: From the third-person side, the same event is a selective transformation
+  of the observer that changes how later worlds can be read and acted upon.
+page_or_locator: page 1, abstract
+scope: DIRECT_QUOTATION
+evidence_tier: Dr
+independence_class: I1
+who_verified: 'route:claude (I1 route: same model, fresh headless session (no shared
+  context); abstract/metadata level, not full text) -- see cite-human-lora-21425420-001.i3.json'
+verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
+status: VERIFIED
+xenon_ledger_ref: null
+disclosure: 'Same-session AI check only (I1); I3 independent-route check pending,
+  run via scripts/lit_crossvendor_check.py. | I1 route (claude) judged from the fetched
+  full-text PDF (Zenodo record 21425420), not from memory or abstract alone: title/author/date
+  match the Master River audit''s Internal Programme References entry for this stage.
+  Passage found verbatim in the fetched text (pdftotext -layout extraction), continuous,
+  page/paragraph as recorded. Stance for this stage''s row: YES. | I1 route (claude)
+  judged from fetched metadata/abstract + the card''s quoted passage, not full text:
+  Fetched Zenodo metadata matches title, first author Lahtee, year 2026, DOI 21425420.
+  Exact passage found verbatim in abstract. Passage states experience selectively
+  transforms the observer, changing how later worlds are read, which is the Experience-to-retained-future-reader
+  stage; source contains the attributed content.'
+superseded_by: null
+notes: 'Reflexive provenance check for GLOSA-PC-20260906-0003 / H1 (master-equation-river):
+  does the internal source the audit attributes this stage to actually contain the
+  attributed content, read directly rather than trusted from the audit''s own summary.
+  Stage checked: Experience -> retained future reader. Audit''s attributed content:
+  Experience Is the Human LoRA separates experience from adaptation; only a selected
+  residue is retained/consolidated and it changes the future interpretive/action operator.'
+fetched_from_url: https://zenodo.org/api/records/21425420/files/EXPERIENCE_IS_HUMAN_LORA_DISCRETE_FINAL_PREPRINT.pdf/content
+line_or_paragraph: char offset 647 of normalized fetched text (~paragraph 1); verbatim
+  prefix match

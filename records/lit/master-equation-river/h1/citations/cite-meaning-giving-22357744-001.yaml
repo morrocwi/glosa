@@ -1,0 +1,55 @@
+$schema: citation_card.schema.json
+id: cite-meaning-giving-22357744-001
+claim_ref: hypothesis-master-equation-river-H1
+identifier:
+  kind: DOI
+  value: 10.5281/zenodo.22357744
+fetch_status: FETCHED
+fetched_at: '2026-09-06'
+metadata_verified: true
+metadata_verified_by: mechanical:direct_fetch
+metadata_verified_at: '2026-09-06'
+claim_match_verified: true
+claim_match_verified_by: route:claude
+claim_match_verified_at: null
+exact_passage: Meaning-giving can begin before stable naming, while naming can recursively
+  reorganize later experience. When a present externally prompted experience corresponds
+  with retained internal experiential organization, resonance occurs as external-internal
+  congruence. When encounters recur with structured timing, rhythm organizes recurrence,
+  spacing, interruption, emphasis, and return. Repeated retained changes can accumulate
+  transition readiness; sufficiently aligned encounters may contribute to barrier
+  crossing and transformative release.
+page_or_locator: page 1, 'Central claim' paragraph
+scope: DIRECT_QUOTATION
+evidence_tier: Dr
+independence_class: I1
+who_verified: 'route:claude (I1 route: same model, fresh headless session (no shared
+  context); abstract/metadata level, not full text) -- see cite-meaning-giving-22357744-001.i3.json'
+verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
+status: VERIFIED
+xenon_ledger_ref: null
+disclosure: 'Same-session AI check only (I1); I3 independent-route check pending,
+  run via scripts/lit_crossvendor_check.py. | I1 route (claude) judged from the fetched
+  full-text PDF (Zenodo record 22357744), not from memory or abstract alone: title/author/date
+  match the Master River audit''s Internal Programme References entry for this stage.
+  Passage found verbatim in the fetched text (pdftotext -layout extraction), continuous,
+  page/paragraph as recorded. Stance for this stage''s row: YES. | I1 route (claude)
+  judged from fetched metadata/abstract + the card''s quoted passage, not full text:
+  Title, year 2026, first author Lahtee match. Passage found verbatim in fetched abstract.
+  Source explicitly states meaning-giving before naming, external-internal congruence
+  (resonance), rhythm/recurrence, and accumulation to transition readiness, matching
+  the attributed stages; also declares non-collapse (''certifies neither truth nor
+  improvement''), so attribution holds.'
+superseded_by: null
+notes: 'Reflexive provenance check for GLOSA-PC-20260906-0003 / H1 (master-equation-river):
+  does the internal source the audit attributes this stage to actually contain the
+  attributed content, read directly rather than trusted from the audit''s own summary.
+  Stage checked: Readout -> meaning / External-internal congruence / Ordered recurrence
+  / rhythm / Accumulation -> transition readiness. Audit''s attributed content: Experience
+  Is Meaning-Giving v2 gives meaning-giving (formalized as a reader-conditioned significance
+  relation), resonance (external-internal experiential congruence), rhythm (structured
+  recurrence) and transition readiness (accumulation/barrier-crossing) as the content
+  for four separate stages of the River.'
+fetched_from_url: https://zenodo.org/api/records/22357744/files/Experience_Is_Meaning_Giving_v2_0_STRONG_CLAIM.pdf/content
+line_or_paragraph: char offset 1662 of normalized fetched text (~paragraph 1); verbatim
+  prefix match

@@ -1,0 +1,51 @@
+$schema: citation_card.schema.json
+id: cite-potential-readout-22361830-001
+claim_ref: hypothesis-master-equation-river-H1
+identifier:
+  kind: DOI
+  value: 10.5281/zenodo.22361830
+fetch_status: FETCHED
+fetched_at: '2026-09-06'
+metadata_verified: true
+metadata_verified_by: mechanical:direct_fetch
+metadata_verified_at: '2026-09-06'
+claim_match_verified: true
+claim_match_verified_by: route:claude
+claim_match_verified_at: null
+exact_passage: 'For task g define four events under P: Rg (the agent reads the distinctions the decision
+  needs, including its own uncertainty), Dg (acceptance, refusal or choice counts as the agent''s own
+  direction under declared criteria, with coercion and delegation checked), Xg (the choice turns into
+  the relevant action or outcome, with a causal contrast that separates the choice from luck or from another''s
+  order), Fg (feedback, objection and revision remain usable within the horizon when there is reason to
+  revise).'
+page_or_locator: page 4, section 4.2 'The joint event and the envelope'
+scope: DIRECT_QUOTATION
+evidence_tier: Dr
+independence_class: I1
+who_verified: 'route:claude (I1 route: same model, fresh headless session (no shared context); abstract/metadata
+  level, not full text) -- see cite-potential-readout-22361830-001.i3.json'
+verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
+status: VERIFIED
+xenon_ledger_ref: null
+disclosure: 'Same-session AI check only (I1); I3 independent-route check pending, run via scripts/lit_crossvendor_check.py.
+  | I1 route (claude) judged from the fetched full-text PDF (Zenodo record 22361830), not from memory
+  or abstract alone: author (Lahtee) and year (2026) match the Master River audit''s Internal Programme
+  References item 9, but the TITLE does not: item 9 reads ''Effective, Corrigible Agency Potential...K0
+  research memorandum, 5 September 2026'', while this fetched record''s own title is ''Potential as a
+  Readout: Witnessed Envelopes, Two-Layer Agency, and the Measurement of Pseudo-Peace'' -- a title/provenance-drift
+  finding, corrected here after three independent review routes (R1/R2/R3, reviews/GLOSA-CC-20260906-0401.R1-3.review_report.json)
+  flagged this disclosure''s prior wording (''title/author/date match'') as self-contradicting the claim
+  card''s own drift finding. Passage found verbatim in the fetched text (pdftotext -layout extraction),
+  continuous, page/paragraph as recorded. Stance for this stage''s row: YES. | I1 route (claude) judged
+  from fetched metadata/abstract + the card''s quoted passage, not full text: Fetched title, first author
+  (Lahtee), year 2026 match the card. Exact passage found verbatim in fetched text at §4.2 ''The joint
+  event and the envelope'', defining Rg/Dg/Xg/Fg. This directly evidences the Agency stage''s attributed
+  source content, so the falsifier (attributed content absent) is not triggered for this stage.'
+superseded_by: null
+notes: 'Reflexive provenance check for GLOSA-PC-20260906-0003 / H1 (master-equation-river): does the internal
+  source the audit attributes this stage to actually contain the attributed content, read directly rather
+  than trusted from the audit''s own summary. Stage checked: Effective corrigible agency / Agency Potential.
+  Audit''s attributed content: Effective, Corrigible Agency Potential gives a task-relative feasible envelope
+  of read-decide/refuse-execute-feedback/revision loops (the R-D-X-F joint-event architecture behind p*_{A,g}).'
+fetched_from_url: https://zenodo.org/api/records/22361830/files/Potential_as_a_Readout_v2_K0_2026-09-05.pdf/content
+line_or_paragraph: char offset 19972 of normalized fetched text (~paragraph 1); verbatim prefix match
