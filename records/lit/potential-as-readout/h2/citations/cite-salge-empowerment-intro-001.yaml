@@ -1,0 +1,40 @@
+$schema: citation_card.schema.json
+id: cite-salge-empowerment-intro-001
+claim_ref: hypothesis-potential-as-readout-H2
+identifier:
+  kind: ARXIV
+  value: '1310.1863'
+fetch_status: FETCHED
+fetched_at: '2026-09-05'
+metadata_verified: true
+metadata_verified_by: mechanical:direct_fetch
+metadata_verified_at: '2026-09-05'
+claim_match_verified: false
+claim_match_verified_by: route:codex
+claim_match_verified_at: null
+exact_passage: An agent’s empowerment is not only affected by the state of the world,
+  i.e., the context of the agent, but also depends on what the agent’s sensors and
+  actions are.
+page_or_locator: p.19 of the arXiv PDF (§4.5.3 Sensor and Actuator Selection)
+scope: DIRECT_QUOTATION
+evidence_tier: Dr
+independence_class: I3
+who_verified: route:codex (cross-vendor AI; abstract/metadata level, not full text)
+  -- see cite-salge-empowerment-intro-001.i3.json
+verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
+status: METADATA_OK
+xenon_ledger_ref: null
+disclosure: 'Same-session AI check only (I1) -- not yet independently verified; run
+  lit_crossvendor_check.py for I3. | I3 route (codex) judged from fetched metadata/abstract
+  + the card''s quoted passage, not full text: '
+superseded_by: null
+notes: 'Fetched fresh from arXiv this session (not from memory). Directly names the
+  layer-2 lever for an empowerment-style system: empowerment (layer-1''s readout)
+  is itself a function of the sensor/actuator endowment, and changing THAT endowment
+  (evolutionary sensor/actuator selection, discussed a few paragraphs later in the
+  same section) is the structure-change move H2 calls layer 2 -- this paper gestures
+  at the move without formalizing a two-layer recoverable-gap quantity the way Causal
+  Agency does.'
+fetched_from_url: https://arxiv.org/pdf/1310.1863
+line_or_paragraph: char offset 51230 of normalized fetched text (~paragraph 1); verbatim
+  prefix match

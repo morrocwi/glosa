@@ -1,0 +1,38 @@
+$schema: citation_card.schema.json
+id: cite-klyubin2005-001
+claim_ref: hypothesis-potential-as-readout-H2
+identifier:
+  kind: DOI
+  value: 10.1109/CEC.2005.1554676
+fetch_status: FETCHED
+fetched_at: '2026-09-05'
+metadata_verified: true
+metadata_verified_by: mechanical:direct_fetch
+metadata_verified_at: '2026-09-05'
+claim_match_verified: false
+claim_match_verified_by: route:codex
+claim_match_verified_at: null
+exact_passage: Empowerment is measured in bits. It is zero when the agent has no control
+  over what it is sensing, and it is higher the more perceivable control or influence
+  the agent has.
+page_or_locator: p.3
+scope: DIRECT_QUOTATION
+evidence_tier: Dr
+independence_class: I3
+who_verified: route:codex (cross-vendor AI; abstract/metadata level, not full text)
+  -- see cite-klyubin2005-001.i3.json
+verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
+status: METADATA_OK
+xenon_ledger_ref: null
+disclosure: 'Same-session AI check only (I1) -- not yet independently verified; run
+  lit_crossvendor_check.py for I3. | I3 route (codex) judged from fetched metadata/abstract
+  + the card''s quoted passage, not full text: '
+superseded_by: null
+notes: 'Local copy already fetched and stored by an earlier session under paper/sources/
+  (task brief named this file directly); read directly for this card, not from memory.
+  Gives LAYER-1 a precise readout: empowerment = channel capacity of the CURRENT actuator-to-sensor
+  coupling, i.e. how much control a system has GIVEN its existing sensorimotor structure
+  -- a within-structure quantity, not a structure-change quantity.'
+fetched_from_url: https://uhra.herts.ac.uk/id/eprint/282/1/901241.pdf  # fetched copy read locally (per-page text extraction of the same file)
+line_or_paragraph: line labelled 'klyubin2005 p3:' in the local per-page-tagged extracted
+  text, paragraph following eq.3

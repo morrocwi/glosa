@@ -1,0 +1,22 @@
+{
+ "vendor": "codex",
+ "fetched": {
+  "source": "crossref",
+  "title": "Self-determination theory and the facilitation of intrinsic motivation, social development, and well-being.",
+  "authors": [
+   "Ryan",
+   "Deci"
+  ],
+  "year": 2000,
+  "container": "American Psychologist",
+  "abstract": "",
+  "_card_url": "https://selfdeterminationtheory.org/SDT/documents/2000_RyanDeci_SDT.pdf"
+ },
+ "verdict": {
+  "error": "no-json",
+  "raw": "",
+  "passage_plausible": true,
+  "passage_mechanical": "verbatim prefix found in fetched open text"
+ },
+ "date": "2026-09-04"
+}

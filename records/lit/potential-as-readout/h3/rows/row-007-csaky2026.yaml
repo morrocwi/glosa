@@ -1,0 +1,35 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: H3
+source_label: 'Csaky (2026), "Prediction and Empowerment: A Theory of Agency through
+  Bridge Interfaces" (arXiv:2605.06346)'
+how_it_sees_the_problem: >-
+  A formal information-theoretic agency paper: separates prediction, compression,
+  and "empowerment" (an agent's influence over future observations) under partial
+  observability, arguing high empowerment alone does not imply real controllability.
+what_it_separates: >-
+  Separates PREDICTION (identifying a hidden state) from EMPOWERMENT (influence
+  over outcomes) from mere OVERWRITE CONTROL (making the future action-determined
+  without real understanding) -- a three-way separation in a completely different
+  (formal agency / AI alignment) domain from peace studies.
+what_it_assumes: >-
+  Assumes a deterministic-world, bridge-interface formalism (agent-controlled
+  parameters vs. environment-controlled channel state) with no social, political,
+  or historical content whatsoever -- there is no assumption here that transfers
+  to H3's domain without this project's own analogical bridging.
+stance: ORTHOGONAL
+defeater_class: structural_formal
+legitimate_defeater: N/A at the ORTHOGONAL stance -- this row does not claim
+  Csaky (2026) bears directly on H3; no defeater is needed for a row that already
+  declares itself context-only.
+what_it_would_say_against_us: >-
+  Using this paper as even loose conceptual support for H3 risks over-reaching:
+  "empowerment" here is a precise formal quantity about an agent's own future-
+  observation influence in a deterministic POMDP, not a measure of a THIRD
+  PARTY's blocked correction channel in a social/political system -- the analogy
+  this project draws (calm-without-controllability echoes empowerment-without-
+  identification) is this project's own construction, not something Csaky's
+  paper argues or would necessarily endorse.
+citation_card: cite-csaky2026-007
+verified:
+  metadata_verified: true
+  claim_match_verified: true

@@ -1,0 +1,72 @@
+$schema: search_log.schema.json
+id: search-potential-as-readout-001
+claim_or_hypothesis_ref: h1
+search_mode: TARGETED_SEARCH
+frozen_scope:
+  hypothesis_or_falsifier: >-
+    H1: potential is a readout: the envelope of a WITNESSED, finite option set (a finite
+    enumerable set under a retained selection rule), not a declared feasible set. That is,
+    "potential" as used across capability/development theory, Aristotelian dynamis/energeia,
+    and Vygotskian ZPD does not denote an open/unbounded possibility space merely asserted or
+    declared; it denotes a finite, actually-enumerable set of options that can be witnessed
+    (demonstrated, assisted-performed, or otherwise evidenced) under some retained selection
+    rule. Falsifier: a source that defines potential/capability/dynamis/ZPD as an open,
+    unenumerable, or purely declared possibility space that requires no witnessing act or
+    finite enumeration to count as "potential" -- i.e. potential-as-mere-declaration with no
+    retained finite-set structure.
+  question_type: definition
+  concepts_synonyms_vocabulary:
+    - "dynamis / energeia (potentiality / actuality)"
+    - "capability set"
+    - "basic / internal / combined capabilities"
+    - "substantive freedoms"
+    - "conversion factors"
+    - "functionings vs capabilities"
+    - "zone of proximal development (ZPD)"
+    - "assisted performance / scaffolding"
+    - "feasible set (economics)"
+    - "option set / choice set"
+    - "witnessed potential / demonstrated capacity"
+  inclusion_exclusion_rules: >-
+    INCLUDE: primary or near-primary texts (or open teaching excerpts of them) defining
+    potential/capability/dynamis/ZPD, specifically passages stating what counts as potential and
+    how it is bounded, demonstrated, or enumerated. EXCLUDE: secondary commentary not quoting the
+    primary definition; sources this session cannot itself fetch and read (secondary-citation
+    ban); paywalled sources beyond their public abstract (recorded as record-only, not quoted
+    beyond the abstract).
+  time_window: "384 BCE (Aristotle) to 2021 (Robeyns) -- deliberately spans the full historical
+    range the paper draws on for this axis; no exclusion by date."
+  language_strategy: "EN primary (public-domain/open-access translations and open PDFs only);
+    no TH-language primary source exists for this axis so no TH stratification claimed for h1."
+  global_sources:
+    - "classics.mit.edu / Perseus (Aristotle, public-domain translation)"
+    - "Open Book Publishers (Robeyns 2017, CC open access)"
+    - "publisher/journal open PDFs (Alkire 2005, Chaiklin 2003)"
+    - "WebFetch of publisher abstract pages for paywalled items (Nussbaum 2011, Sen 1999)"
+  local_context_sources: []
+  search_date: "2026-09-05"
+  stopping_rule: >-
+    TARGETED_SEARCH: fetch each of the 7 named sources in the task brief; stop once each has
+    either a VERIFIED card (fetched text + verbatim passage) or a documented record-only status
+    (paywalled/inaccessible from this session), no further searching beyond the named list.
+  conflicts_of_interest: "None declared."
+  access_limits: >-
+    Nussbaum 2011 Creating Capabilities and Sen 1999 Development as Freedom are commercially
+    published books without a full open-access edition reachable by this session; carded at
+    abstract/publisher-blurb level only (fetch_status PAYWALLED_ABSTRACT_ONLY) unless an open
+    excerpt is found (Nussbaum 2003 Feminist Economics article used as the open substitute where
+    noted).
+queries:
+  support: []
+  challenge: []
+sources_found: []
+prisma_counts: null
+global_track:
+  summary: ''
+  strength_note: ''
+local_track:
+  summary: ''
+  result: NOT_SEARCHED
+transfer_verdict: null
+summary_disclaimer: 'TODO: state explicitly what WAS and was NOT found on both support and challenge sides
+  once a search is actually run (S14 §2.2).'

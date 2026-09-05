@@ -1,0 +1,31 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: H3
+source_label: Galtung (1969), "Violence, Peace, and Peace Research", p.168 (Journal
+  of Peace Research 6(3))
+how_it_sees_the_problem: >-
+  Defines violence itself as present whenever people's actual somatic/mental
+  realizations fall below their POTENTIAL realizations -- making the potential-
+  actual gap the very definition of violence, not a side effect of it.
+what_it_separates: >-
+  Separates actual (achieved) realization from potential realization, treating
+  the GAP between them, not either quantity alone, as the object of peace research.
+what_it_assumes: >-
+  Assumes "potential realizations" is itself a determinate, assessable quantity
+  (Galtung's own footnote flags this: "This statement may lead to more problems
+  than it solves"); does not itself specify HOW potential is witnessed or bounded,
+  leaving that operationalization to later work (which is exactly the gap H3's
+  finite-witnessed-set framing tries to fill).
+stance: 'YES'
+defeater_class: constitutive
+legitimate_defeater: A later Galtung passage retracting or replacing the potential-
+  gap definition of violence with one that does not reference potential at all
+  would weaken this row.
+what_it_would_say_against_us: >-
+  Galtung's own definition is silent on whether "low potential" must be WITNESSED
+  or merely inferred/estimated by an outside analyst -- if H3 requires witnessed
+  potential specifically, this passage alone under-determines that requirement;
+  Galtung himself flags the definition as provisional and possibly overreaching.
+citation_card: cite-galtung1969-potentialgap-001
+verified:
+  metadata_verified: true
+  claim_match_verified: true

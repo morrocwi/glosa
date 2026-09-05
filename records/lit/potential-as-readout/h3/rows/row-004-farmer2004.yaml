@@ -1,0 +1,34 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: H3
+source_label: Farmer (2004), "An Anthropology of Structural Violence", p.305 (Current
+  Anthropology 45(3))
+how_it_sees_the_problem: >-
+  Frames modern epidemics (AIDS, TB in Haiti) as embedded in "large-scale social
+  and economic structures," arguing that what is "ethnographically visible" (the
+  crowd of visibly sick patients) is only the surface of a much larger, structurally
+  produced pattern of affliction.
+what_it_separates: >-
+  Separates the ethnographically/locally VISIBLE suffering from its historically
+  and structurally produced CAUSE, which operates at a scale and through channels
+  (slavery, colonial political economy) the visible surface does not itself reveal.
+what_it_assumes: >-
+  Assumes structural causes are real and knowable through historical/political-
+  economic analysis even when not directly observable in the immediate clinical
+  encounter; assumes the anthropologist's interpretive reconstruction of structure
+  is itself a reliable enough "witness" of the causal mechanism.
+stance: 'YES'
+defeater_class: diagnostic
+legitimate_defeater: A case where locally visible calm/suffering patterns turn
+  out to have NO deeper structural cause once traced (i.e. the visible surface
+  fully explains the outcome) would weaken using this essay as evidence that
+  "observed calm" can mask a hidden mechanism.
+what_it_would_say_against_us: >-
+  Farmer's essay is about visible SUFFERING masking hidden structural cause, the
+  mirror image of H3's claim that visible CALM masks a hidden blocked-correction
+  mechanism -- the analogy requires an extra step (that absence-of-visible-harm
+  can mask harm just as visible-harm can mask deeper cause) that this specific
+  essay does not itself argue.
+citation_card: cite-farmer2004-004
+verified:
+  metadata_verified: true
+  claim_match_verified: true

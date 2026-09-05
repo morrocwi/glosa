@@ -1,0 +1,38 @@
+$schema: citation_card.schema.json
+id: cite-causal-agency-defs-001
+claim_ref: hypothesis-potential-as-readout-H2
+identifier:
+  kind: DOI
+  value: 10.5281/zenodo.18897585
+fetch_status: FETCHED
+fetched_at: '2026-09-05'
+metadata_verified: true
+metadata_verified_by: mechanical:direct_fetch
+metadata_verified_at: '2026-09-05'
+claim_match_verified: false
+claim_match_verified_by: route:codex
+claim_match_verified_at: null
+exact_passage: Definition 3. A system exhibits agency if its internal dynamics modify
+  the constraint structure C in ways that increase the expected persistence of the
+  system within the viable region V .
+page_or_locator: p.19 (§6.5 Agency as Constraint Regulation)
+scope: DIRECT_QUOTATION
+evidence_tier: definition
+independence_class: I3
+who_verified: route:codex (cross-vendor AI; abstract/metadata level, not full text)
+  -- see cite-causal-agency-defs-001.i3.json
+verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
+status: METADATA_OK
+xenon_ledger_ref: null
+disclosure: 'Same-session AI check only (I1) -- not yet independently verified; run
+  lit_crossvendor_check.py for I3. | I3 route (codex) judged from fetched metadata/abstract
+  + the card''s quoted passage, not full text: '
+superseded_by: null
+notes: 'Programme''s own prior work (self-citation, disclosed as such -- see conflicts_of_interest).
+  This is H2''s LAYER-2 definition: agency = modifying the constraint structure C
+  itself to increase expected persistence, not merely selecting within it. Downloaded
+  fresh from Zenodo API this session (record 18897585), not from memory or an old
+  local copy.'
+fetched_from_url: https://zenodo.org/api/records/18897585/files/Causal%20Agency_A%20Persistence%20Control%20Theory%20of%20Adaptive.pdf/content
+line_or_paragraph: char offset 47664 of normalized fetched text (~paragraph 1); verbatim
+  prefix match

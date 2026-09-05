@@ -1,0 +1,28 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: H2
+source_label: 'Causal Agency: A Persistence Control Theory of Adaptive Systems (Zenodo 18897585), §6.6
+  Proto-Agency'
+how_it_sees_the_problem: 'Frames the layer-1-only case as its own named regime: systems that stabilize
+  within V without ever modifying C (''simple homeostatic systems, engineered feedback controllers, reactive
+  adaptive mechanisms'') are proto-agentive, explicitly ''a precursor to agency rather than agency itself.'''
+what_it_separates: Separates proto-agency (persistence regulation, layer 1 only) from agency (layer 1
+  + layer 2) as a named, citable structural category -- gives H2's 'a system stuck at layer 1' concrete
+  named referents (homeostat, feedback controller) rather than an ad hoc claim.
+what_it_assumes: Assumes the three listed examples (homeostat, feedback controller, reactive mechanism)
+  are uncontroversial cases of 'no constraint-structure modification'; does not address social/institutional
+  systems directly, nor whether a human actor denied structural leverage is analogous to a homeostat --
+  that transfer is H2's own move, not this document's.
+stance: UNDETERMINED
+what_it_would_say_against_us: Would say the proto-agency category was built for engineered/biological
+  control systems, not social actors under structural deprivation -- if the recoverable gap in a social
+  setting behaves differently from a homeostat's gap (e.g. because social structures are themselves partly
+  made of other agents' choices), the mechanical analogy could mislead rather than clarify.
+citation_card: cite-causal-agency-protoagency-001
+defeater_class: structural_formal
+legitimate_defeater: Defeated by a documented social case where a layer-1-only actor (no structural leverage)
+  nonetheless shows a distinctively different recoverable-gap profile from an engineered proto-agentive
+  system, showing the analogy does not transfer.
+defeater_status: untested
+verified:
+  metadata_verified: true
+  claim_match_verified: false

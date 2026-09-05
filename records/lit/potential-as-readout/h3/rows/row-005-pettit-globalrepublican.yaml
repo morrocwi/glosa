@@ -1,0 +1,35 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: H3
+source_label: Pettit, "The Globalized Republican Ideal" (EUI Max Weber master-class
+  reading)
+how_it_sees_the_problem: >-
+  Frames freedom as non-domination, which requires ROBUSTNESS: not suffering
+  interference even under the counterfactual that you wished to act otherwise or
+  the dominant party wanted to stop you -- mere actual non-interference right now
+  is not sufficient.
+what_it_separates: >-
+  Separates actually-escaping-interference (a fact about the present moment) from
+  being ROBUSTLY guaranteed against interference across possible variations in
+  the dominant party's will -- exactly the axis H3 needs to separate "observed
+  calm" from a genuinely open correction channel.
+what_it_assumes: >-
+  Assumes the relevant counterfactual robustness is meaningfully assessable (i.e.
+  that one can determine whether calm WOULD survive a change in another's will,
+  not only that it does survive as things stand); this is itself a witnessing/
+  evidentiary problem the paper does not solve for empirical cases.
+stance: 'YES'
+defeater_class: constitutive
+legitimate_defeater: An argument that robustness itself collapses into (is
+  operationally indistinguishable from) actual non-interference in all real-world
+  cases would remove the daylight between "observed calm" and "genuine non-
+  domination" that this row relies on.
+what_it_would_say_against_us: >-
+  Pettit's framework is normative political theory, not an empirical test of
+  when suppression is or is not currently being "paid for" -- it supplies the
+  CONCEPT (robustness) H3 needs but no method for detecting, from the outside,
+  whether a given calm is robust or merely lucky, which is exactly the empirical
+  gap H3's "blocked correction channel" clause has to fill on its own.
+citation_card: cite-pettit-globalrepublican-005
+verified:
+  metadata_verified: true
+  claim_match_verified: true

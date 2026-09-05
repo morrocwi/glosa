@@ -1,0 +1,32 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: H1
+source_label: 'Aristotle, Metaphysics Book Theta (IX), Part 1 (Ross translation,
+  MIT Internet Classics Archive)'
+how_it_sees_the_problem: >-
+  Frames potentiality (dynamis) as a category of being alongside actuality (energeia),
+  defined causally: a potency is an originative source of change located in a
+  determinate thing acted on, or in the agent itself "qua other".
+what_it_separates: >-
+  Separates the potency of BEING ACTED ON (passive change by another) from a state
+  of INSUSCEPTIBILITY to destructive change -- two distinct kinds of dynamis, both
+  tied to a specific bearer, not a free-floating possibility.
+what_it_assumes: >-
+  Assumes a substance-metaphysics framework (potency/actuality as modes of being)
+  that this project's finite-readout vocabulary does not itself use; assumes potency
+  is always indexed to a particular thing and a particular kind of change, not
+  a generic capacity.
+stance: 'YES'
+defeater_class: constitutive
+legitimate_defeater: A passage elsewhere in Aristotle's corpus explicitly treating
+  dynamis as an open/unbounded possibility not indexed to any determinate bearer
+  or source would defeat this row's SUPPORTS reading.
+what_it_would_say_against_us: >-
+  Aristotle never requires that a potency be WITNESSED or FINITELY ENUMERATED to
+  count as real -- for him a thing simply HAS a dynamis as a mode of its being,
+  independent of whether anyone ever demonstrates or observes it being exercised.
+  H1's witnessing/enumeration requirement is this project's own addition, not
+  something Aristotle's text itself asserts or denies.
+citation_card: cite-aristotle-metaphysics-theta-001
+verified:
+  metadata_verified: true
+  claim_match_verified: true

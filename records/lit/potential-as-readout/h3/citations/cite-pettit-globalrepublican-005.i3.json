@@ -1,0 +1,16 @@
+{
+ "vendor": "codex",
+ "fetched": {
+  "source": "url-fetch",
+  "title": "",
+  "abstract": "",
+  "_card_url": "https://www.eui.eu/Documents/MWP/ProgramActivities/20152016/master-classes/Pettit-The-Globalized-Republican-Ideal.pdf"
+ },
+ "verdict": {
+  "error": "no-json",
+  "raw": "",
+  "passage_plausible": true,
+  "passage_mechanical": "verbatim prefix found in fetched open text"
+ },
+ "date": "2026-09-04"
+}

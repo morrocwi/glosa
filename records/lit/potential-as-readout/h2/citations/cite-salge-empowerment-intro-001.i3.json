@@ -1,0 +1,15 @@
+{
+ "vendor": "codex",
+ "fetched": {
+  "source": "fetch-failed",
+  "error": "HTTP Error 429: Unknown Error",
+  "_card_url": "https://arxiv.org/pdf/1310.1863"
+ },
+ "verdict": {
+  "error": "no-json",
+  "raw": "",
+  "passage_plausible": true,
+  "passage_mechanical": "verbatim prefix found in fetched open text"
+ },
+ "date": "2026-09-04"
+}

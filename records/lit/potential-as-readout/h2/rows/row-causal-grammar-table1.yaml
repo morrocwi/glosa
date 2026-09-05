@@ -1,0 +1,29 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: H2
+source_label: The Causal Grammar of Structured Coexistence (Zenodo 18925131), Table 1
+how_it_sees_the_problem: 'Frames the problem socially: five regimes (Tension, Conflict, Violence, Pseudo-peace,
+  Peace) are distinguished by two structural readouts -- possibility-space state (Stable/Contested/Compressed/Restricted/Preserved)
+  and repair status (Not central/Possible/Blocked/Suppressed/Protected) -- rather than by any single within-regime
+  choice variable.'
+what_it_separates: 'Separates the possibility-space column (what layer-1 choices are even available) from
+  the repair column (whether layer-2 structural reopening is itself available) as two independent axes
+  -- a regime can have a compressed possibility space (Violence) with repair Blocked, or a merely-restricted
+  space (Pseudo-peace) with repair Suppressed: two different layer-2 states for two different layer-1
+  states, which a single-layer model would conflate.'
+what_it_assumes: Assumes these five regimes are jointly exhaustive and that 'Repair' status is itself
+  observable/ratable in a given case; does not give a measurement procedure for where a real case falls
+  in the table, nor a recoverable-gap quantity connecting the two columns numerically.
+stance: UNDETERMINED
+what_it_would_say_against_us: Would say the five-regime table is a coarse ordinal typology, not the kind
+  of continuous recoverable-gap quantity H2 wants; if H2 needs a number (a gap size), a five-cell table
+  cannot supply one on its own -- H2 would need additional machinery (e.g. from Causal Agency's own Tp/C
+  derivatives) to go from this table to a quantity.
+citation_card: cite-causal-grammar-table1-001
+defeater_class: structural_formal
+legitimate_defeater: Defeated by a demonstration that no consistent numeric recoverable-gap quantity can
+  be derived that respects this table's five-regime ordering (i.e. the table and a genuine gap quantity
+  are actually incompatible, not merely coarser).
+defeater_status: untested
+verified:
+  metadata_verified: true
+  claim_match_verified: false

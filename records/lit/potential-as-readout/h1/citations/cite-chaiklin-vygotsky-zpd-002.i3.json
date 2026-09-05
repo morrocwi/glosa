@@ -1,0 +1,16 @@
+{
+ "vendor": "codex",
+ "fetched": {
+  "source": "url-fetch",
+  "title": "",
+  "abstract": "",
+  "_card_url": "https://blogs.ubc.ca/vygotsky/files/2013/11/chaiklin.zpd_.pdf"
+ },
+ "verdict": {
+  "error": "no-json",
+  "raw": "",
+  "passage_plausible": true,
+  "passage_mechanical": "verbatim prefix found in fetched open text"
+ },
+ "date": "2026-09-04"
+}

@@ -1,0 +1,55 @@
+$schema: citation_card.schema.json
+id: cite-galtung1969-potentialgap-001
+claim_ref: H3
+identifier:
+  kind: OTHER_STABLE
+  value: jstor:422690
+fetch_status: FETCHED
+fetched_at: '2026-09-05'
+metadata_verified: true
+metadata_verified_by: 'manual: reused already-fetched local copy at cpg_research_journal/research/society-justice-peace/paper/sources/galtung1969.pages.txt
+  (page-tagged plaintext extraction of galtung1969.pdf), confirmed header "Violence,
+  Peace, and Peace Research", Author(s): Johan Galtung, Journal of Peace Research,
+  Vol. 6, No. 3 (1969), pp. 167-191'
+metadata_verified_at: '2026-09-05'
+claim_match_verified: true
+claim_match_verified_by: this session (manual read/verification; the route:codex
+    I3 cross-vendor attempt below FAILED with a usage-limit error, not a content
+    judgment -- reverted to the prior manual verification rather than leaving a
+    false false-verdict on record)
+claim_match_verified_at: '2026-09-05'
+exact_passage: violence is present when humanbeings are being influencedso that their
+  actual somatic and mental realizations are below theirpotential realizations.This
+  statement may lead to more problems than it solves.
+page_or_locator: Galtung 1969, p. 168 (p3 in the local page-tagged extraction), right-hand
+  column, opening of section "2. On the definition and dimensions of 'violence'"
+scope: DIRECT_QUOTATION
+evidence_tier: definition
+independence_class: I1
+who_verified: this session (manual verification; I3 cross-vendor attempt failed,
+  see disclosure)
+verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
+status: METADATA_OK
+xenon_ledger_ref: null
+disclosure: 'This is Galtung''s foundational move that H3 builds on directly: violence
+  is DEFINED as the gap between actual and POTENTIAL realizations. The word-run-together
+  artifacts ("humanbeings", "influencedso", "theirpotential") are preserved exactly
+  as they appear in the local OCR/JSTOR-extraction text file (galtung1969.pages.txt)
+  -- not this session''s typo, and not corrected, per rule 17''s verbatim requirement.
+  The source PDF is laid out in two columns; this extraction interleaves left- and
+  right-column text line-by-line, so this exact_passage was taken by reading ONLY
+  the right-hand column across five consecutive lines (the column beginning "As a
+  point of departure, let us say that..."), which is how it reads as one continuous
+  sentence-run in the original two-column layout -- disclosed here rather than silently
+  reconstructed. SUPPORTS H3 strongly: "low witnessed potential" in H3''s three-valued
+  gate is directly this Galtung passage''s "actual...below potential realizations"
+  gap. | I3 route (codex) judged from fetched metadata/abstract + the card''s quoted
+  passage, not full text: '
+superseded_by: null
+notes: Reused an already-fetched local copy per the task brief rather than re-fetching
+  JSTOR (paywalled; the local text/pdf was already obtained by a prior session for
+  the parent paper).
+fetched_from_url: https://www2.kobe-u.ac.jp/~alexroni/IPD%202015%20readings/IPD%202015_2/Galtung_Violence%2C%20Peace%2C%20and%20Peace%20Research.pdf  # fetched copy read locally (per-page text extraction of the same file)
+line_or_paragraph: right-hand column, lines beginning "As a point of departure..."
+  through "...This statement may lead to more problems than it solves." (source lines
+  ~86-92 of the local .pages.txt extraction)

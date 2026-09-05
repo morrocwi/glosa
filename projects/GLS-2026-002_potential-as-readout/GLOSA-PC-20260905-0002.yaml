@@ -1,0 +1,119 @@
+$schema: problem_card.schema.json
+problem_id: GLOSA-PC-20260905-0002
+project: GLS-2026-002
+intake:
+  q1_issue:
+    text_verbatim: >-
+      ตรวจว่า "เครื่องศักยภาพ" ในบันทึก Effective, Corrigible Agency Potential (AP, 2026-09-05,
+      ยังไม่ฝาก Zenodo) นั่งอยู่บนสมการและนิยามของงานเดิมในซีรีส์ Society, Justice, Peace &
+      Violence (hub 10.5281/zenodo.22342043) ได้จริงหรือไม่ โดยเฉพาะกรณีระบอบที่อยู่รอดด้วยการกดปราบ
+      แล้วสกัดแกนร่วมออกมาให้ต่อยอดได้
+    retained_difference_statement: >-
+      Under the agency of a standalone-scholar research programme running four prior formal papers
+      (Causal Grammar, Causal Ethics, Violence-as-Instability, Causal Agency) plus a fifth new note
+      (Agency Potential, AP) that all lean on the same word, and the query "does the word POTENTIAL
+      actually name one readable quantity across these five texts, or does each text silently
+      declare a different feasible set and then call the resulting number by the same name" -- the
+      difference that survives: "potential" is used, across peace research (Galtung's gap
+      definition), capability theory, information-theoretic agency (empowerment), and this
+      programme's own four papers, as a hinge word everyone measures against, but no account states
+      HOW the feasible/admissible/viable set it is measured against was itself read into existence.
+      Once that declaration step is left unexamined, three further readouts collapse into each
+      other unnoticed: what an agent COULD do (potential), what it DID do (exercised), and what an
+      evaluator's instrument RETURNS (observed) -- and a second collapse follows for compression:
+      diagnosing that a capability set shrank gets silently fused with naming who is responsible for
+      shrinking it. This is a difference that survives under this agency/context/query, not merely a
+      topic label ("what is potential" or "capability theory").
+    agency: >-
+      a standalone-scholar research programme (founder, Yaoharee Lahtee, Open Civil Science
+      Initiative) running the Society, Justice, Peace & Violence series and the Human-AI Readout
+      Programme, assisted by AI (drafting/routing/checking only, never authoring)
+    context: >-
+      auditing whether a new programme note (AP, effective corrigible agency potential) actually
+      sits on the equations and definitions the programme's own four prior papers already state,
+      and whether the programme's own epistemic core (Readout Genesis / Readout Universe) already
+      supplies the missing machinery rather than requiring a lowered claim
+    query: >-
+      can "potential" be read as one finite, witnessed readout (an envelope over a witnessed option
+      set, kept apart from what was exercised and from what an evaluator observes, and kept apart
+      from who is responsible for its compression) rather than as a declared, ungrounded quantity
+      that changes meaning paper to paper?
+    blackbox_line_ref: "blackbox/log/entries.jsonl#BBL-2026-09-05-129 (the potential-choice-violence axis note itself); NOTE_2026-09-05_potential-choice-violence_axis.md (cpg_research_journal, society-justice-peace)"
+  q2_user_proposal:
+    text: >-
+      เรามีคำตอบทุกอย่างในเจเนซีสและรี้ดเอาท์อยู่แล้ว ที่ติดก็แก้ซะ ไม่ถอยข้อเคลม (BBL-2026-09-05-130)
+      -- เอาเลย เป้าหมายคือแตกฉานคำว่าศักยภาพ (BBL-2026-09-05-132) -- ทำต่อเลย ยกระดับงานให้เป็นงาน
+      ศักยภาพระดับโลก เทียร์หนึ่ง ไม่ลดข้อเคลม สู้โหด (BBL-2026-09-05-134)
+    stated_by: founder
+    blackbox_line_ref: "blackbox/log/entries.jsonl#BBL-2026-09-05-130,132,134"
+  entry_anchor:
+    unresolved: >-
+      Whether the programme's own four prior papers' feasible/admissible/viable sets are readable as
+      one witnessed-set object, or whether "potential" is doing five different jobs under one word.
+    existing_evidence: >-
+      paper/main.tex (Potential as a Readout, this project's own paper draft) already tabulates the
+      five-paper correspondence (Table "One object, five names") and states seven non-collapse
+      distinctions (D1-D7), two of which (D1, D6) are the ones registered as NC-78/NC-79 in
+      methodology/data/non_collapse_table.json; NOTE_2026-09-05_potential-choice-violence_axis.md
+      §9 already traces each gap to a specific Genesis/Readout Universe passage (N2, ARCH-L4, VI.3,
+      V.9/VIII.4, VI.6, ETH-1(iv)/ETH-8/ETH-11).
+    change_condition: "none stated -- exploratory (founder ruling BBL-2026-09-05-134: raise to tier-one, never lower a claim)"
+    verification_intent: >-
+      Each of H1/H2/H3 below carries a stated falsifier; the intended check is literature-grounded
+      (cross-checking the five-paper correspondence and the seven distinctions against independently
+      fetched sources, per glosa rule 17) plus the already-executed two-node no-go fixture
+      (sim/nogo_fixture.py, sim/nogo_fixture_result.json, tier finite_diagnostic on that fixture only).
+    resistance_route: >-
+      literature check: an independently fetched source (peace research, capability theory,
+      information-theoretic agency, or corrigibility/AI-safety literature) that treats "potential"
+      as a single declared quantity without the witnessed-set/layer/observer-vs-agent separations
+      this project claims are load-bearing -- would be a real counter-instance to H2's portability
+      claim, not explained away
+standpoint:
+  declared_basis: >-
+    Written from the standpoint of a social entrepreneur and citizen (founder, Yaoharee Lahtee), not
+    as a substitute expert in peace research, capability economics, information theory, philosophy
+    of language, or AI safety/corrigibility research. AI assistance (the AI assistant) drafts
+    structure, content, and claim cards; disclosed throughout; never counted as an author. Per glosa
+    gate rule 5 (human holds standpoint, falsifier judgment, ethics, public commitment; AI drafts/
+    routes/checks/logs only) and gate rule 9 (no AI/vendor attribution).
+  disciplines_not_claimed:
+    - peace and conflict studies
+    - development economics / capability theory
+    - information theory (beyond citing a published empowerment definition)
+    - philosophy of language
+    - AI safety / corrigibility research
+    - law
+    - formal dynamical-systems theory beyond what actually runs in sim/nogo_fixture.py
+  method_basis: >-
+    glosa methodology itself (claim cards answering the founder's five questions, tied to the
+    Readout Condition's Existence-Attribution-Disclosure, gated through the independence ladder
+    before public release) -- this project runs glosa on the Society/Justice/Peace/Violence series'
+    own "Potential as a Readout" paper (paper/main.tex, cpg_research_journal), per founder rulings
+    BBL-2026-09-05-130/132/134 ("raise the work to tier-one, never lower a claim").
+origin_blackbox_ref: "blackbox/log/entries.jsonl#BBL-2026-09-05-130"
+produced_by: joint
+responsible: human
+readiness:
+  verdict: READY_FOR_S2
+  reason: >-
+    Q1 issue is stated as the retained difference already worked out across
+    NOTE_2026-09-05_potential-choice-violence_axis.md (§0-§9) and paper/main.tex's own problem
+    section (§1-§3, "The problem: a word everyone measures against and nobody reads"); Q2 is filled
+    with the founder's own three verbatim rulings (BBL-2026-09-05-130/132/134), not inferred by AI;
+    standpoint is declared from the founder's own standing standpoint memo. No analysis performed
+    yet in this problem card itself -- this is intake only, self-check not a release gate.
+  checked_by: founder
+  checked_at: '2026-09-05'
+k_state: K0
+status: Draft
+human_owner: founder
+notes: >-
+  This problem card exists because glosa is being run on the "Potential as a Readout" paper (society-
+  justice-peace series, cpg_research_journal), per founder ruling BBL-2026-09-05-134 to raise that
+  work to tier-one substance without lowering any claim. The "problem" here is the founder's own
+  research problem (does "potential" name one readable quantity across five programme texts), not a
+  problem about the glosa tool itself. Companion records live in
+  records/lit/potential-as-readout/h{1,2,3}/ (literature search runs, owned by concurrent workers
+  lit-h1-h3 and lit-h2) and in cpg_research_journal/research/society-justice-peace/ (the paper and
+  its sources, owned by a concurrent worker; not edited by this task).

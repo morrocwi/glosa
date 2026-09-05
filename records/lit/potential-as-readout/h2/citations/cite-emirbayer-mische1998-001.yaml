@@ -1,0 +1,38 @@
+$schema: citation_card.schema.json
+id: cite-emirbayer-mische1998-001
+claim_ref: hypothesis-potential-as-readout-H2
+identifier:
+  kind: DOI
+  value: 10.1086/231294
+fetch_status: FETCH_FAILED
+fetched_at: null
+metadata_verified: true
+metadata_verified_by: mechanical:crossref_or_unpaywall_lookup
+metadata_verified_at: '2026-09-05'
+claim_match_verified: false
+claim_match_verified_by: route:codex
+claim_match_verified_at: null
+exact_passage: ''
+page_or_locator: n/a -- not obtained
+scope: CONTEXT_ONLY_NOT_EVIDENCE
+evidence_tier: Open
+independence_class: I3
+who_verified: route:codex (cross-vendor AI; abstract/metadata level, not full text)
+  -- see cite-emirbayer-mische1998-001.i3.json
+verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
+status: METADATA_OK
+xenon_ledger_ref: null
+disclosure: 'Same-session AI check only (I1) -- not yet independently verified; run
+  lit_crossvendor_check.py for I3. | I3 route (codex) judged from fetched metadata/abstract
+  + the card''s quoted passage, not full text: '
+superseded_by: null
+notes: 'Emirbayer & Mische 1998, ''What Is Agency?'', American Journal of Sociology
+  103(4). Unpaywall: is_oa=false, no OA location. Semantic Scholar: abstract elided
+  by publisher, openAccessPdf status CLOSED. No verbatim passage obtained -- carried
+  as bibliographic record only per task instruction. This paper''s own three-part
+  temporal decomposition of agency (iterational/routine, projective/imaginative, practical-evaluative)
+  is a well-known analogue to a layer-1/layer-2 split in sociology, but that specific
+  correspondence is NOT independently confirmed here without a fetched passage --
+  record only.'
+fetched_from_url: null
+line_or_paragraph: null

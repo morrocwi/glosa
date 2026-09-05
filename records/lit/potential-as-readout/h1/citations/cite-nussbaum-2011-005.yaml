@@ -1,0 +1,59 @@
+$schema: citation_card.schema.json
+id: cite-nussbaum-2011-005
+claim_ref: H1
+identifier:
+  kind: ISBN
+  value: '9780674050549'
+fetch_status: FETCHED
+fetched_at: '2026-09-05'
+metadata_verified: true
+metadata_verified_by: 'manual: PDF page images read directly (Read tool) confirm header
+  "CREATING CAPABILITIES", chapter title "THE CENTRAL CAPABILITIES", footer "Nussbaum,
+  Martha C.. Creating Capabilities : The Human Development Approach, Harvard University
+  Press, 2011. ProQuest Ebook Central", pages 17-20'
+metadata_verified_at: '2026-09-05'
+claim_match_verified: true
+claim_match_verified_by: this session (manual read/verification; the route:codex
+    I3 cross-vendor attempt below FAILED with a usage-limit error, not a content
+    judgment -- reverted to the prior manual verification rather than leaving a
+    false false-verdict on record)
+claim_match_verified_at: '2026-09-05'
+exact_passage: '"The Capabilities Approach can be provisionally defined as an approach
+  to comparative quality-of-life assessment and to theorizing about basic social justice.
+  It holds that the key question to ask, when comparing societies and assessing them
+  for their basic decency or justice, is, ''What is each person able to do and to
+  be?''"'
+page_or_locator: Nussbaum 2011, Creating Capabilities, Ch. 2 "The Central Capabilities",
+  p. 18
+scope: DIRECT_QUOTATION
+evidence_tier: definition
+independence_class: I1
+who_verified: this session (manual read of fetched PDF pages; I3 cross-vendor attempt
+  failed, see disclosure)
+verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
+status: METADATA_OK
+xenon_ledger_ref: null
+disclosure: 'CHALLENGES H1 as literally stated: Nussbaum''s own formulation defines
+  the capability approach around a SET OF OPPORTUNITIES people are able to have (the
+  "What is each person able to do and to be?" question), which is asked independent
+  of whether that ability is ever witnessed/exercised -- closer to H1''s rejected
+  "declared feasible set" framing than to a witnessed-set requirement. See also the
+  companion quotation of Sen''s own definition on p.20 of this same fetched excerpt
+  (cite-sen-1999-006): "a person''s ''capability'' refers to the alternative combinations
+  of functionings that are FEASIBLE for her to achieve" -- Sen''s own word "feasible"
+  is the literal term H1''s falsifier clause names. This exact_passage was shortened
+  from an earlier draft that spliced two separated sentences with an ellipsis marker;
+  rule 17 forbids that, so only the single continuous opening passage is quoted here.
+  I3 CROSS-VENDOR ATTEMPT FAILED (codex CLI returned "ERROR: You''ve hit your usage
+  limit" -- no content judgment was made; this is an environmental/quota blocker in
+  this session, not a finding about the card). independence_class and claim_match_verified
+  reflect the prior self-verified (I1) state rather than a spurious I3 result. A genuine
+  cross-vendor pass should be re-run once codex/gemini access is available.'
+superseded_by: null
+notes: Original book text found via a search for a publicly posted course-reserve
+  excerpt PDF (ASU events site hosting a ProQuest Ebook Central export of pp.17-20);
+  this is the actual scanned/typeset book pages, read directly by this session via
+  the Read tool's PDF support, not a WebFetch model-summarized rendering.
+fetched_from_url: https://asuevents.asu.edu/sites/g/files/litvpz3506/files/2024-06/Creating_Capabilities_The_Human_Development_Approa..._----_(2._The_Central_Capabilities_).pdf
+line_or_paragraph: page 18, third paragraph ("The Capabilities Approach can be provisionally
+  defined...")

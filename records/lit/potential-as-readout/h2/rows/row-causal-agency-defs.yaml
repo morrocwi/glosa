@@ -1,0 +1,29 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: H2
+source_label: 'Causal Agency: A Persistence Control Theory of Adaptive Systems (Zenodo 18897585), Def.3'
+how_it_sees_the_problem: 'Frames the problem as a formal control-theory distinction: a system''s state
+  x evolves under a constraint structure C via x''=F(x,C); ''persistence'' (Def.2) is staying within a
+  viable region V under a FIXED C, while ''agency'' (Def.3) requires the system''s own dynamics to change
+  C itself, and requires that change to increase expected persistence time (dTp/dC * dC/dx > 0).'
+what_it_separates: Separates persistence regulation (moving within V under fixed C -- layer 1) from agency
+  proper (changing C so as to increase Tp -- layer 2) as two formally distinct conditions, not degrees
+  of the same thing; a system can satisfy the first without ever satisfying the second (named proto-agency,
+  its own separate card).
+what_it_assumes: Assumes a well-defined viable region V and a differentiable-in-spirit dependence of C
+  on x; does not itself define a 'recoverable gap' quantity between the two layers, nor say how to measure
+  it empirically in a social system -- H2's specific recoverable-gap construct is an addition this document
+  does not make.
+stance: UNDETERMINED
+what_it_would_say_against_us: Would say H2's layer-2 claim is exactly Def.3 restated in different notation,
+  so H2 adds nothing new here beyond naming a 'recoverable gap' -- if H2's contribution is only this restatement,
+  the two-layer split is not H2's own finding but an import; H2 would need to show the recoverable-gap
+  quantity itself, not just the layer split, to go beyond this document.
+citation_card: cite-causal-agency-defs-001
+defeater_class: structural_formal
+legitimate_defeater: Defeated if a reading of Causal Agency's own later sections (not read in full for
+  this card) already defines a recoverable-gap-equivalent quantity, making H2's 'addition' redundant even
+  at that level.
+defeater_status: untested
+verified:
+  metadata_verified: true
+  claim_match_verified: false

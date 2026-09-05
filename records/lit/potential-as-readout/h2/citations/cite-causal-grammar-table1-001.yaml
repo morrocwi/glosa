@@ -1,0 +1,40 @@
+$schema: citation_card.schema.json
+id: cite-causal-grammar-table1-001
+claim_ref: hypothesis-potential-as-readout-H2
+identifier:
+  kind: DOI
+  value: 10.5281/zenodo.18925131
+fetch_status: FETCHED
+fetched_at: '2026-09-05'
+metadata_verified: true
+metadata_verified_by: mechanical:direct_fetch
+metadata_verified_at: '2026-09-05'
+claim_match_verified: false
+claim_match_verified_by: route:codex
+claim_match_verified_at: null
+exact_passage: Regime Compatibility Possibility Space Repair Tension Compatible Stable
+  Not central Conflict Incompatible Contested Possible Violence Incompatible Compressed
+  Blocked Pseudo-peace Compatible appearance Restricted Suppressed Peace Compatible
+  Preserved Protected
+page_or_locator: 'p.4 (Table 1: Regimes of structured coexistence)'
+scope: DIRECT_QUOTATION
+evidence_tier: definition
+independence_class: I3
+who_verified: route:codex (cross-vendor AI; abstract/metadata level, not full text)
+  -- see cite-causal-grammar-table1-001.i3.json
+verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
+status: METADATA_OK
+xenon_ledger_ref: null
+disclosure: 'Same-session AI check only (I1) -- not yet independently verified; run
+  lit_crossvendor_check.py for I3. | I3 route (codex) judged from fetched metadata/abstract
+  + the card''s quoted passage, not full text: '
+superseded_by: null
+notes: 'Programme''s own prior work (self-citation, disclosed). Table 1''s ''Repair''
+  column is a per-regime readout of whether the possibility-space structure is currently
+  reopenable (layer-2 channel): ''Not central'' (Tension) / ''Possible'' (Conflict)
+  / ''Blocked'' (Violence) / ''Suppressed'' (Pseudo-peace) / ''Protected'' (Peace)
+  -- five distinguishable structural states, none of which reduce to a single within-structure
+  (layer-1) choice variable. Downloaded fresh from Zenodo this session (record 18925131).'
+fetched_from_url: https://zenodo.org/api/records/18925131/files/The%20Causal%20Grammar%20of%20Structured.pdf/content
+line_or_paragraph: PDF text page 4, table immediately following §5 'Repair as Protected
+  Reopening'

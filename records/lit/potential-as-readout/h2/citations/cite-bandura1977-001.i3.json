@@ -1,0 +1,19 @@
+{
+ "vendor": "codex",
+ "fetched": {
+  "source": "crossref",
+  "title": "Self-efficacy: Toward a unifying theory of behavioral change.",
+  "authors": [
+   "Bandura"
+  ],
+  "year": 1977,
+  "container": "Psychological Review",
+  "abstract": ""
+ },
+ "verdict": {
+  "error": "no-json",
+  "raw": "",
+  "passage_mechanical": "no open full text fetched; abstract/metadata only"
+ },
+ "date": "2026-09-04"
+}

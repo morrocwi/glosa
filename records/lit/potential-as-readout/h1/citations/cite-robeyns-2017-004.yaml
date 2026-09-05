@@ -1,0 +1,55 @@
+$schema: citation_card.schema.json
+id: cite-robeyns-2017-004
+claim_ref: H1
+identifier:
+  kind: OFFICIAL_URL
+  value: https://books.openedition.org/obp/4862
+fetch_status: FETCHED
+fetched_at: '2026-09-05'
+metadata_verified: true
+metadata_verified_by: 'manual: WebFetch of books.openedition.org/obp/4862, confirmed
+  as Chapter 2 "Core Ideas and the Framework" of Ingrid Robeyns (2017) Wellbeing,
+  Freedom and Social Justice: The Capability Approach Re-Examined, Cambridge, Open
+  Book Publishers (CC BY 4.0 open access)'
+metadata_verified_at: '2026-09-05'
+claim_match_verified: true
+claim_match_verified_by: this session (manual read/verification; the route:codex
+    I3 cross-vendor attempt below FAILED with a usage-limit error, not a content
+    judgment -- reverted to the prior manual verification rather than leaving a
+    false false-verdict on record)
+claim_match_verified_at: '2026-09-05'
+exact_passage: 'Capabilities: "Capabilities are a person''s real freedoms or opportunities
+  to achieve functionings." Conversion factors: "Persons have different abilities
+  to convert resources into functionings. These are called conversion factors: the
+  factors which determine the degree to which a person can transform a resource into
+  a functioning."'
+page_or_locator: Robeyns 2017, Ch. 2 "Core Ideas and the Framework", paragraphs 39
+  and 50 (OpenEdition Books pagination)
+scope: DIRECT_QUOTATION
+evidence_tier: definition
+independence_class: I1
+who_verified: this session (manual verification; I3 cross-vendor attempt failed,
+  see disclosure)
+verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
+status: METADATA_OK
+xenon_ledger_ref: null
+disclosure: 'Retrieved via WebFetch (HTML-to-markdown conversion + extraction prompt
+  against the live OpenEdition chapter page), not via a locally-saved raw file this
+  session re-read itself -- weaker than the PDF-Read-tool route used for the Chaiklin/Nussbaum/Farmer/Pettit
+  cards. The two quoted sentences are short, specific, terminologically exact matches
+  to Robeyns'' well-documented published definitions (cross-checkable against her
+  other publications using identical wording), which raises confidence, but this session
+  did not itself view the raw page source. CHALLENGES H1 as stated: Robeyns defines
+  capabilities as "real freedoms or opportunities" -- a declared/available option
+  space conditioned by conversion factors -- without requiring a witnessing act or
+  finite enumeration as part of the definition itself; the capability SET is close
+  to what H1 calls a "declared feasible set" rather than a witnessed one. | I3 route
+  (codex) judged from fetched metadata/abstract + the card''s quoted passage, not
+  full text: '
+superseded_by: null
+notes: Open Book Publishers direct page (openbookpublishers.com) returned HTTP 429
+  (rate-limited) on two attempts; the OAPEN and hd-ca.org PDF mirrors returned connection
+  errors/403; the OpenEdition Books HTML mirror of the same CC-BY text succeeded and
+  is used here instead, with the weaker-verification disclosure above.
+fetched_from_url: https://books.openedition.org/obp/4862
+line_or_paragraph: paragraphs 39 and 50 as numbered by the OpenEdition Books reader

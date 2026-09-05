@@ -1,0 +1,31 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: H2
+source_label: Ryan & Deci 2000, Self-Determination Theory and the Facilitation of Intrinsic Motivation,
+  Social Development, and Well-Being (American Psychologist)
+how_it_sees_the_problem: 'Frames the problem psychologically: three innate psychological needs (competence,
+  autonomy, relatedness) are posited as the substrate of self-motivation, and social-contextual conditions
+  are studied for whether they ''facilitate versus forestall'' the satisfaction of those needs.'
+what_it_separates: 'Separates the innate need/capacity itself (present or not satisfied, roughly layer-1-adjacent:
+  whether the person''s own motivational system is functioning) from the social-contextual conditions
+  that facilitate or forestall its expression (an external, structural layer) -- but frames this as a
+  facilitating/forestalling continuum on ONE capacity, not as two formally distinct control layers the
+  way Causal Agency''s Def.2/Def.3 do.'
+what_it_assumes: Assumes the three needs (competence, autonomy, relatedness) are the right and complete
+  list; does not propose a mechanism by which a person could change the social-contextual conditions themselves
+  (a layer-2 move) as opposed to merely having those conditions vary externally -- SDT here is about conditions
+  ACTING ON the person, not the person's capacity to ACT ON the conditions.
+stance: UNDETERMINED
+what_it_would_say_against_us: Would say H2's layer-2 (agent modifies the structure) has no clear counterpart
+  in this passage at all -- SDT here treats social-contextual conditions as an independent variable the
+  researcher varies or observes, not as something the agent's own agency modifies; importing SDT as support
+  for a two-layer AGENCY split (as opposed to a two-factor MOTIVATION model) may be over-reading this
+  specific passage.
+citation_card: cite-ryandeci2000-001
+defeater_class: diagnostic
+legitimate_defeater: Defeated by a later SDT passage (not read for this card) that explicitly models the
+  person acting back on their social-contextual conditions, rather than only receiving them, which would
+  restore the correspondence this card currently treats as absent.
+defeater_status: untested
+verified:
+  metadata_verified: true
+  claim_match_verified: false

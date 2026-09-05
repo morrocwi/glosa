@@ -1,0 +1,31 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: H2
+source_label: 'Bazzani 2023, To Have Agency and to Exert It: Toward a Multidimensional Conceptualization
+  of Individual Agency (Theory and Society, abstract via Wayback)'
+how_it_sees_the_problem: Frames agency as 'the result of a conversion process of personal resources shaped
+  by conversion factors,' explicitly borrowing and extending the Capability Approach's conversion-factor
+  vocabulary (the same vocabulary Robeyns 2017 and Nussbaum 2003 use, both record-only in this review)
+  into a general sociological theory of agency.
+what_it_separates: Separates the conversion factors themselves (operating at 'micro, meso, and macro levels',
+  oriented toward 'past experiences, present conditions, and future prospects' -- structural/layer-2-adjacent)
+  from the resulting agency outcome (adaptation, autonomy, or influence -- the exercised, layer-1-adjacent
+  result of a given conversion), giving H2's two layers a named multi-level structural anchor (micro/meso/macro)
+  neither Causal Agency nor Causal Grammar breaks out explicitly.
+what_it_assumes: This card is abstract-level only (fetched via a Wayback Machine snapshot after the live
+  URL was bot-blocked, per task instruction; full text not independently obtained this session); assumes
+  the abstract accurately previews the article's own formal apparatus for 'conversion factors,' which
+  several of the article's named empirical or conceptual details are not confirmed against.
+stance: UNDETERMINED
+what_it_would_say_against_us: Would say micro/meso/macro conversion factors are themselves a THIRD kind
+  of object (levels of analysis) orthogonal to a two-layer choose/change split, not a restatement of it
+  -- if H2 tries to map its layer-2 onto 'conversion factors' wholesale, it may be conflating a level-of-analysis
+  distinction with a control-layer distinction that this abstract does not itself equate.
+citation_card: cite-bazzani2023-001
+defeater_class: structural_formal
+legitimate_defeater: Defeated by reading the full article and finding that 'conversion factors' in this
+  framework are themselves something the agent's own layer-1 choices can adjust in the short run, collapsing
+  the level distinction this card currently treats as a layer-2 anchor.
+defeater_status: untested
+verified:
+  metadata_verified: true
+  claim_match_verified: false

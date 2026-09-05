@@ -1,0 +1,21 @@
+{
+ "vendor": "codex",
+ "fetched": {
+  "source": "crossref",
+  "title": "Empowerment: A Universal Agent-Centric Measure of Control",
+  "authors": [
+   "Klyubin",
+   "Polani",
+   "Nehaniv"
+  ],
+  "year": null,
+  "container": "2005 IEEE Congress on Evolutionary Computation",
+  "abstract": ""
+ },
+ "verdict": {
+  "error": "no-json",
+  "raw": "",
+  "passage_mechanical": "no open full text fetched; abstract/metadata only"
+ },
+ "date": "2026-09-04"
+}

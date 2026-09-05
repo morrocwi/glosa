@@ -1,0 +1,12 @@
+{
+ "vendor": "codex",
+ "fetched": {
+  "source": "no-identifier"
+ },
+ "verdict": {
+  "error": "no-json",
+  "raw": "",
+  "passage_mechanical": "no open full text fetched; abstract/metadata only"
+ },
+ "date": "2026-09-04"
+}

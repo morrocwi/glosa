@@ -1,0 +1,23 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: H3
+source_label: Readout Genesis (lens; own lineage; Zenodo 10.5281/zenodo.21529456)
+how_it_sees_the_problem: Everything readable is a finite retained distinction δR =
+  (a ♯ b); knowing is a lossy read of a latent state (N2), never the latent state
+  itself; agency is a finite selection over already-legal moves under repairability.
+what_it_separates: the retained (what a reader can still distinguish) from the latent;
+  a readout from the thing read; a finite option alphabet from an imagined continuum
+  of options.
+what_it_assumes: that the reader relevant to the construction is declared, and that
+  retention (not truth) is the primitive.
+stance: UNDETERMINED
+defeater_class: constitutive
+legitimate_defeater: A later Galtung passage retracting or replacing the potential-
+  gap definition of violence with one that does not reference potential at all would
+  weaken this row.
+what_it_would_say_against_us: If the retained-distinction root did not force a finite
+  option alphabet, the witness rule would be a convention layered on the lens, not
+  a consequence of it.
+citation_card: cite-own-readout-genesis-lens-h3-001
+verified:
+  metadata_verified: true
+  claim_match_verified: true

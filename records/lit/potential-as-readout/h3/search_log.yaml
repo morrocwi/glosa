@@ -1,0 +1,69 @@
+$schema: search_log.schema.json
+id: search-potential-as-readout-001
+claim_or_hypothesis_ref: h3
+search_mode: TARGETED_SEARCH
+frozen_scope:
+  hypothesis_or_falsifier: >-
+    H3: pseudo-peace is the collapse of a three-valued evidence gate: observed calm + low
+    witnessed potential + blocked correction channel; suppression holds only while paid (the
+    suppression cost keeps being met). Falsifier: a source/case showing durable, low-cost or
+    no-cost "calm" that coexists with low witnessed potential and a genuinely open (unblocked)
+    correction channel -- i.e. peace that is not negative/imposed and does not require an
+    ongoing suppression payment, refuting the "holds only while paid" clause; or a source showing
+    that blocked correction channels do NOT track with either observed-calm-as-imposed or with
+    what Galtung calls negative/structural violence.
+  question_type: mechanism
+  concepts_synonyms_vocabulary:
+    - "negative peace / positive peace"
+    - "structural violence"
+    - "cultural violence"
+    - "epistemic injustice / testimonial injustice"
+    - "non-domination (republican liberty)"
+    - "hidden transcripts / infrapolitics"
+    - "docile agency (pious self-cultivation)"
+    - "suppression cost"
+    - "blocked correction channel / voice"
+    - "silence as strategic accommodation, not consent"
+  inclusion_exclusion_rules: >-
+    INCLUDE: primary/near-primary texts on negative peace-as-imposed-order, structural violence,
+    testimonial injustice, non-domination, and hidden-transcript resistance, specifically
+    passages bearing on whether apparent calm can mask blocked voice/correction. Reuse already-
+    fetched copies in paper/sources/ for Galtung and Satha-Anand rather than re-fetching.
+    EXCLUDE: sources this session cannot itself open (secondary-citation ban); full-text beyond
+    a public abstract for paywalled items (record-only).
+  time_window: "1969 (Galtung) to 2026 (Csaky arXiv) -- spans the full range the paper draws on."
+  language_strategy: "EN primary; Satha-Anand copy already in sources/ is EN-language scholarship
+    on Thai Muslim nonviolence (Deep South), used as the local/SEA anchor for this axis."
+  global_sources:
+    - "already-fetched copies in cpg_research_journal/research/society-justice-peace/paper/sources/
+      (Galtung 1969, Galtung 1990, Satha-Anand 2021)"
+    - "journals.uchicago.edu (Farmer 2004)"
+    - "OUP free sample chapter (Fricker 2007)"
+    - "eui.eu open PDF (Pettit)"
+    - "arxiv.org/abs (Csaky 2026, abstract page distinct from the sources/ html copy)"
+  local_context_sources:
+    - "Satha-Anand 2021 (Thai Muslim Deep South nonviolence, already in sources/)"
+  search_date: "2026-09-05"
+  stopping_rule: >-
+    TARGETED_SEARCH: fetch/card each of the 8 named sources in the task brief; reuse existing
+    sources/ copies for Galtung + Satha-Anand rather than re-fetching; stop once each has a
+    VERIFIED card or documented record-only status.
+  conflicts_of_interest: "None declared."
+  access_limits: >-
+    Mahmood 2001 (book chapter/journal, commercially published) and Scott 1990 (book) carded at
+    abstract/publisher-blurb level unless an open excerpt is found; Pettit's 1997 book itself is
+    not open, substituted with his open "Globalized Republican Ideal" PDF per the task brief.
+queries:
+  support: []
+  challenge: []
+sources_found: []
+prisma_counts: null
+global_track:
+  summary: ''
+  strength_note: ''
+local_track:
+  summary: ''
+  result: NOT_SEARCHED
+transfer_verdict: null
+summary_disclaimer: 'TODO: state explicitly what WAS and was NOT found on both support and challenge sides
+  once a search is actually run (S14 §2.2).'

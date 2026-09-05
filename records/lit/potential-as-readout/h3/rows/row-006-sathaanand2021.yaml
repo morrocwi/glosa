@@ -1,0 +1,35 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: H3
+source_label: Satha-Anand (2021), "Three Windows and Critical Peace/Nonviolence
+  Research" (Hiroshima Peace Research Journal)
+how_it_sees_the_problem: >-
+  A Thai peace-studies scholar's own intellectual-formation narrative, restating
+  (via his teacher Glenn Paige's teaching) that peace is not merely absence of
+  war but freedom from structural violence such as poverty, and that resources
+  spent on military expenditure ROB the world of opportunities for social betterment.
+what_it_separates: >-
+  Separates absence-of-war from freedom-from-structural-violence, and separately
+  names "opportunities...robbed" -- i.e. blocked potential/opportunity -- as part
+  of what real peace requires, echoing Galtung's own separation from a Southeast
+  Asian scholarly vantage point.
+what_it_assumes: >-
+  Assumes the reader accepts the Galtungian negative/positive-peace frame as
+  already established (this passage is autobiographical/expository, not itself
+  an argument for the frame); assumes military-vs-social expenditure is a fair
+  proxy for opportunity-robbing more broadly.
+stance: 'YES'
+defeater_class: phenomenological
+legitimate_defeater: A passage elsewhere in the same essay where Satha-Anand
+  explicitly rejects or complicates the negative/positive-peace frame (rather
+  than restating it approvingly) would weaken this row; this session read only
+  pp.5-12 of the essay.
+what_it_would_say_against_us: >-
+  This is a first-person reminiscence about the author's OWN education, not a
+  first-order argument or empirical finding about pseudo-peace -- it supports
+  H3 only as evidence that the underlying negative/positive-peace distinction
+  is taken up and affirmed in Thai/SEA peace scholarship, not as an independent
+  empirical test of the "holds only while paid" suppression-cost clause.
+citation_card: cite-sathaanand2021-006
+verified:
+  metadata_verified: true
+  claim_match_verified: true

@@ -1,0 +1,38 @@
+$schema: citation_card.schema.json
+id: cite-kabeer1999-001
+claim_ref: hypothesis-potential-as-readout-H2
+identifier:
+  kind: DOI
+  value: 10.1111/1467-7660.00125
+fetch_status: FETCHED
+fetched_at: '2026-09-05'
+metadata_verified: true
+metadata_verified_by: mechanical:direct_fetch
+metadata_verified_at: '2026-09-05'
+claim_match_verified: false
+claim_match_verified_by: route:codex
+claim_match_verified_at: null
+exact_passage: This paper begins from the understanding that women's empowerment is
+  about the process by which those who have been denied the ability to make strategic
+  life choices acquire such an ability.
+page_or_locator: Abstract (Development and Change, 1999, Vol.30)
+scope: DIRECT_QUOTATION
+evidence_tier: Dr
+independence_class: I3
+who_verified: route:codex (cross-vendor AI; abstract/metadata level, not full text)
+  -- see cite-kabeer1999-001.i3.json
+verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
+status: METADATA_OK
+xenon_ledger_ref: null
+disclosure: 'Same-session AI check only (I1) -- not yet independently verified; run
+  lit_crossvendor_check.py for I3. | I3 route (codex) judged from fetched metadata/abstract
+  + the card''s quoted passage, not full text: '
+superseded_by: null
+notes: Fetched via Crossref API this session (abstract field present). Abstract-level
+  only, full text not fetched. 'Acquire such an ability' is a layer-2 gain (a change
+  in what one is able to do at all, i.e. a structural/capacity change) distinguished
+  in the same abstract from the 'more instrumentalist' act of exercising choice once
+  had -- directly parallels H2's layer-1/layer-2 split under the vocabulary of resources/agency/achievements.
+fetched_from_url: https://api.crossref.org/works/10.1111/1467-7660.00125
+line_or_paragraph: char offset 555 of normalized fetched text (~paragraph 1); verbatim
+  prefix match

@@ -1,0 +1,29 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: H2
+source_label: The Causal Grammar of Structured Coexistence (Zenodo 18925131), §5 Repair definition
+how_it_sees_the_problem: 'Frames repair as a specific kind of action distinct from ordinary conflict-resolution:
+  ''the protected reopening of damaged relations under conditions that prevent renewed possibility compression''
+  -- repair targets the possibility-space structure itself, under a protection condition, not merely a
+  single disputed outcome.'
+what_it_separates: Separates repair (reopening the structure, under protection against re-compression
+  -- layer 2) from ordinary negotiation-within-conflict (Table 1's 'Conflict' regime, where the possibility
+  space is merely 'Contested' but not compressed -- layer 1 still functioning) -- two different remedies
+  for two different layer states.
+what_it_assumes: Assumes 'conditions that prevent renewed possibility compression' can actually be established
+  and verified in a given case; does not specify what those conditions are in general, or how failure
+  to secure them would be detected -- an open operational question this definition itself flags but does
+  not close.
+stance: UNDETERMINED
+what_it_would_say_against_us: Would say that without a working definition of 'conditions that prevent
+  renewed compression', repair is unfalsifiable in practice -- any reopening that is later re-compressed
+  could be retrospectively said to have 'lacked protection', which risks H2's layer-2 recoverable-gap
+  claim being unfalsifiable in the same way unless a concrete protection-condition test is specified.
+citation_card: cite-causal-grammar-repair-001
+defeater_class: structural_formal
+legitimate_defeater: Defeated by specifying, in a given empirical case, an independent test for whether
+  protection conditions held, applied BEFORE observing whether re-compression occurred (not fitted after
+  the fact).
+defeater_status: untested
+verified:
+  metadata_verified: true
+  claim_match_verified: false

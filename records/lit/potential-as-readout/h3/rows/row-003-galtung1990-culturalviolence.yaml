@@ -1,0 +1,33 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: H3
+source_label: Galtung (1990), "Cultural Violence", p.291 (Journal of Peace Research
+  27(3))
+how_it_sees_the_problem: >-
+  Adds a third term to the violence triangle: cultural violence is whatever in
+  the symbolic sphere (religion, ideology, language, art, science) can be used
+  to JUSTIFY OR LEGITIMIZE direct or structural violence.
+what_it_separates: >-
+  Separates the legitimating/ideological work (cultural violence) from the acts
+  themselves (direct violence) and the arrangements themselves (structural
+  violence) -- a third, distinct mechanism.
+what_it_assumes: >-
+  Assumes legitimation is itself doing causal work in sustaining violence/
+  suppression, not merely describing it after the fact; does not itself specify
+  a cost/payment model for how legitimation is produced or maintained.
+stance: 'YES'
+defeater_class: constitutive
+legitimate_defeater: A case where suppression persists with NO accompanying
+  legitimating cultural apparatus (pure naked force, unlegitimized even locally)
+  would show cultural violence is not a necessary component of H3's "held only
+  while paid" suppression cost.
+what_it_would_say_against_us: >-
+  Galtung's cultural violence is a LEGITIMATING resource, not itself a "payment" --
+  H3's "suppression holds only while paid" language implies an ongoing, revocable
+  cost, whereas cultural violence (norms, ideology, science used to justify) can
+  be far more durable and self-sustaining than an ongoing payment metaphor
+  suggests, which may understate how cheap sustained suppression can become once
+  cultural legitimation is entrenched.
+citation_card: cite-galtung1990-culturalviolence-003
+verified:
+  metadata_verified: true
+  claim_match_verified: true

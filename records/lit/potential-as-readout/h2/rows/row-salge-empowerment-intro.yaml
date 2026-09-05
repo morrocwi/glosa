@@ -1,0 +1,29 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: H2
+source_label: Salge, Glackin & Polani 2014, Empowerment -- An Introduction (arXiv:1310.1863)
+how_it_sees_the_problem: Frames the problem as a survey/synthesis of empowerment research, extending the
+  base definition (channel capacity of the actuation-sensor loop) to ask how empowerment itself varies
+  with an agent's embodiment -- what its sensors and actuators actually are.
+what_it_separates: 'Separates empowerment-given-a-fixed-embodiment (a layer-1 readout, the same quantity
+  as Klyubin 2005) from embodiment itself as a variable that can differ across agents or evolve over time
+  (an explicit layer-2 lever this passage names directly: ''also depends on what the agent''s sensors
+  and actions are''), and gestures at evolutionary sensor/actuator selection as the mechanism that would
+  move an agent between embodiments.'
+what_it_assumes: Assumes the reader accepts empowerment as a valid measure of 'control' worth extending
+  in this direction; does not formalize embodiment-change as a controlled process with its own persistence/viability
+  condition the way Causal Agency's Def.3 does -- it names the layer-2 lever without building the same
+  apparatus around it.
+stance: UNDETERMINED
+what_it_would_say_against_us: Would say this passage only OBSERVES that empowerment depends on embodiment,
+  without ever proposing that changing embodiment should count as a distinct 'layer' with its own recoverable-gap
+  quantity -- H2's specific two-layer-with-a-gap framing is an addition beyond what this survey claims
+  for itself.
+citation_card: cite-salge-empowerment-intro-001
+defeater_class: diagnostic
+legitimate_defeater: Defeated by a documented case where an agent's own within-embodiment (layer-1) optimization
+  behavior already fully accounts for observed control changes that would otherwise be attributed to embodiment
+  change (layer 2), showing the two are not actually separable in practice for this class of system.
+defeater_status: untested
+verified:
+  metadata_verified: true
+  claim_match_verified: false

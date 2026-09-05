@@ -1,0 +1,13 @@
+{
+ "vendor": "codex",
+ "fetched": {
+  "source": "no-identifier",
+  "_card_url": "https://asuevents.asu.edu/sites/g/files/litvpz3506/files/2024-06/Creating_Capabilities_The_Human_Development_Approa..._----_(2._The_Central_Capabilities_).pdf"
+ },
+ "verdict": {
+  "error": "no-json",
+  "raw": "",
+  "passage_mechanical": "quoted passage NOT found verbatim in fetched open text"
+ },
+ "date": "2026-09-04"
+}

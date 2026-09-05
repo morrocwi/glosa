@@ -1,0 +1,37 @@
+$schema: citation_card.schema.json
+id: cite-archer1995-001
+claim_ref: hypothesis-potential-as-readout-H2
+identifier:
+  kind: ISBN
+  value: '9780521484423'
+fetch_status: NOT_FETCHED
+fetched_at: null
+metadata_verified: true
+metadata_verified_by: mechanical:crossref_or_unpaywall_lookup
+metadata_verified_at: '2026-09-05'
+claim_match_verified: false
+claim_match_verified_by: route:codex
+claim_match_verified_at: null
+exact_passage: ''
+page_or_locator: n/a -- book, no chapter-level open text sought
+scope: CONTEXT_ONLY_NOT_EVIDENCE
+evidence_tier: Open
+independence_class: I3
+who_verified: route:codex (cross-vendor AI; abstract/metadata level, not full text)
+  -- see cite-archer1995-001.i3.json
+verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
+status: METADATA_OK
+xenon_ledger_ref: null
+disclosure: 'Same-session AI check only (I1) -- not yet independently verified; run
+  lit_crossvendor_check.py for I3. | I3 route (codex) judged from fetched metadata/abstract
+  + the card''s quoted passage, not full text: '
+superseded_by: null
+notes: 'Archer 1995, Realist Social Theory: The Morphogenetic Approach (Cambridge
+  University Press). Per task instruction this is a bibliographic record card only;
+  no online full-text search was attempted for this book within this session''s scope.
+  Relevant concept per task brief: morphogenesis (structural elaboration/change) vs.
+  morphostasis (structural reproduction) as a temporally-sequenced two-part cycle
+  -- a candidate structural analogue to H2''s layer-1/layer-2 split, not independently
+  confirmed by a fetched passage here.'
+fetched_from_url: null
+line_or_paragraph: null

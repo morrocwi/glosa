@@ -1,0 +1,28 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: H2
+source_label: 'Klyubin, Polani & Nehaniv 2005, Empowerment: A Universal Agent-Centric Measure of Control
+  (IEEE CEC)'
+how_it_sees_the_problem: 'Frames the problem information-theoretically and agent-centrically: empowerment
+  is the channel capacity of an agent''s own actuation-to-sensation loop, computed purely from the agent''s
+  current sensorimotor coupling to its environment, with no external reward or goal.'
+what_it_separates: Separates 'has control, given the current sensor/actuator setup' (a readout on the
+  fixed coupling -- layer 1) from any question of whether that coupling itself could be different -- the
+  paper defines and computes only the layer-1 quantity and does not name a layer-2 operation on the coupling
+  itself within this passage.
+what_it_assumes: Assumes a fixed, already-specified sensor S, actuator A, and 'rest of system' R for the
+  duration of the empowerment computation; explicitly brackets the question of where S/A come from or
+  how they might change -- exactly the layer-2 question H2 needs, left open by construction in this definition.
+stance: UNDETERMINED
+what_it_would_say_against_us: Would say H2's layer-1/layer-2 split is not visible in empowerment's own
+  formalism at all -- empowerment is silent on structural change by design (a different question), so
+  citing it as support for a two-layer split requires importing a claim (that changing S/A is a distinct,
+  non-empowerment-measured move) the paper itself never asserts.
+citation_card: cite-klyubin2005-001
+defeater_class: diagnostic
+legitimate_defeater: Defeated by a demonstration that empowerment, computed at a sufficiently long time
+  horizon or coarser R, already implicitly captures sensor/actuator-change moves within the same channel-capacity
+  quantity (collapsing the two layers this card treats as distinct).
+defeater_status: untested
+verified:
+  metadata_verified: true
+  claim_match_verified: false

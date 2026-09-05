@@ -1,0 +1,54 @@
+$schema: citation_card.schema.json
+id: cite-csaky2026-007
+claim_ref: H3
+identifier:
+  kind: ARXIV
+  value: '2605.06346'
+fetch_status: FETCHED
+fetched_at: '2026-09-05'
+metadata_verified: true
+metadata_verified_by: 'manual: WebFetch of arxiv.org/abs/2605.06346, confirmed title
+  "Prediction and Empowerment: A Theory of Agency through Bridge Interfaces", author
+  Richard Csaky'
+metadata_verified_at: '2026-09-05'
+claim_match_verified: true
+claim_match_verified_by: this session (manual read/verification; the route:codex
+    I3 cross-vendor attempt below FAILED with a usage-limit error, not a content
+    judgment -- reverted to the prior manual verification rather than leaving a
+    false false-verdict on record)
+claim_match_verified_at: '2026-09-05'
+exact_passage: We study agency under partial observability in deterministic physical
+  or simulated worlds, where apparent randomness arises from uncertainty over initial
+  conditions, fixed law bits, and unrolled exogenous noise.
+page_or_locator: 'arXiv:2605.06346 abstract, sentence 1'
+scope: CONTEXT_ONLY_NOT_EVIDENCE
+evidence_tier: definition
+independence_class: I1
+who_verified: this session (WebFetch verbatim-extraction of the arXiv abstract page;
+  I3 cross-vendor attempt failed, see disclosure)
+verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
+status: METADATA_OK
+xenon_ledger_ref: null
+disclosure: 'DIFFERENT framing from H3, contextual only: this is a formal agency/information-theory
+  paper (an information-theoretic notion of "empowerment", i.e. an agent''s influence
+  over future observations) with no discussion of peace, violence, suppression, or
+  correction channels at all. The paper''s LATER claim that "high empowerment alone
+  is insufficient" for real controllability is a loose conceptual echo of H3''s distinction
+  between observed calm and witnessed potential, but that later sentence is not adjacent
+  to this card''s exact_passage (the abstract''s opening sentence) and is therefore
+  not quoted here -- rule 17 forbids splicing two non-adjacent sentences into one
+  composite quotation with an ellipsis marker; only the opening sentence is carded
+  as DIRECT_QUOTATION, and the "insufficiency" point is described here in this session''s
+  own words, not presented as a verbatim passage. Carded as CONTEXT_ONLY_NOT_EVIDENCE
+  per glosa''s scope discipline, not as support. I3 CROSS-VENDOR ATTEMPT FAILED (codex
+  CLI returned "ERROR: You''ve hit your usage limit" -- no content judgment was made;
+  this is an environmental/quota blocker in this session, not a finding about the
+  card). independence_class and claim_match_verified reflect the prior self-verified
+  (I1) state rather than a spurious I3 result. A genuine cross-vendor pass should
+  be re-run once codex/gemini access is available.'
+superseded_by: null
+notes: The task brief noted the html copy in sources/ (csaky2026.html) lacks the abstract
+  paragraph; this card instead fetches the canonical arxiv.org/abs page directly,
+  as instructed.
+fetched_from_url: https://arxiv.org/abs/2605.06346
+line_or_paragraph: abstract, paragraph 1

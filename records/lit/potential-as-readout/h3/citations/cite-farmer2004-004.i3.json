@@ -1,0 +1,21 @@
+{
+ "vendor": "codex",
+ "fetched": {
+  "source": "crossref",
+  "title": "An Anthropology of Structural Violence",
+  "authors": [
+   "Farmer"
+  ],
+  "year": 2004,
+  "container": "Current Anthropology",
+  "abstract": "",
+  "_card_url": "https://cdn.ymaws.com/www.safestates.org/resource/resmgr/connections_lab/glossary_citation/Farmer-AnthropologyStructura.pdf"
+ },
+ "verdict": {
+  "error": "no-json",
+  "raw": "",
+  "passage_plausible": true,
+  "passage_mechanical": "verbatim prefix found in fetched open text"
+ },
+ "date": "2026-09-04"
+}

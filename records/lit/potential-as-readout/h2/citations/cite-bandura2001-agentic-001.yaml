@@ -1,0 +1,39 @@
+$schema: citation_card.schema.json
+id: cite-bandura2001-agentic-001
+claim_ref: hypothesis-potential-as-readout-H2
+identifier:
+  kind: DOI
+  value: 10.1146/annurev.psych.52.1.1
+fetch_status: FETCHED
+fetched_at: '2026-09-05'
+metadata_verified: true
+metadata_verified_by: mechanical:direct_fetch
+metadata_verified_at: '2026-09-05'
+claim_match_verified: false
+claim_match_verified_by: route:codex
+claim_match_verified_at: null
+exact_passage: Personal agency operates within a broad network of sociostructural
+  influences. In these agentic transactions, people are producers as well as products
+  of social systems.
+page_or_locator: Abstract (Annual Review of Psychology, 2001, Vol.52)
+scope: DIRECT_QUOTATION
+evidence_tier: Dr
+independence_class: I3
+who_verified: route:codex (cross-vendor AI; abstract/metadata level, not full text)
+  -- see cite-bandura2001-agentic-001.i3.json
+verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
+status: METADATA_OK
+xenon_ledger_ref: null
+disclosure: 'Same-session AI check only (I1) -- not yet independently verified; run
+  lit_crossvendor_check.py for I3. | I3 route (codex) judged from fetched metadata/abstract
+  + the card''s quoted passage, not full text: '
+superseded_by: null
+notes: 'Fetched via Crossref API this session (abstract field present in the metadata
+  record; full text not fetched, so this card is abstract-level only despite fetch_status
+  FETCHED for the abstract text itself -- disclosed here rather than implied as full-text).
+  ''Producers as well as products of social systems'' is Bandura''s own naming of
+  the layer-1/layer-2 duality: acting as a product of existing structure (layer-1-consistent)
+  versus acting as a producer that shapes structure (layer-2).'
+fetched_from_url: https://api.crossref.org/works/10.1146/annurev.psych.52.1.1
+line_or_paragraph: char offset 846 of normalized fetched text (~paragraph 1); verbatim
+  prefix match

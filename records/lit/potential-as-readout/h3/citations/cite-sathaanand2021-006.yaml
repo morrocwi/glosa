@@ -1,0 +1,50 @@
+$schema: citation_card.schema.json
+id: cite-sathaanand2021-006
+claim_ref: H3
+identifier:
+  kind: OTHER_STABLE
+  value: local-copy:sathaanand2021
+fetch_status: FETCHED
+fetched_at: '2026-09-05'
+metadata_verified: true
+metadata_verified_by: 'manual: reused already-fetched local copy at cpg_research_journal/research/society-justice-peace/paper/sources/sathaanand2021.p5-12.txt,
+  confirmed title "Three Windows and Critical Peace/Nonviolence Research", author
+  Chaiwat Satha-Anand (Professor of Political Science, Thammasat University; Director,
+  Peace Information Center, Thammasat University)'
+metadata_verified_at: '2026-09-05'
+claim_match_verified: true
+claim_match_verified_by: this session (manual read/verification; the route:codex
+    I3 cross-vendor attempt below FAILED with a usage-limit error, not a content
+    judgment -- reverted to the prior manual verification rather than leaving a
+    false false-verdict on record)
+claim_match_verified_at: '2026-09-05'
+exact_passage: peace is not merely an absence of war, but also for people to live
+  free of injustice or structural violence such as poverty; that global resources
+  wasted on military expenditures robbed the world of opportunities to peacefully
+  better human lives through social expenditures
+page_or_locator: Satha-Anand 2021, "Three Windows and Critical Peace/Nonviolence Research"
+  (Hiroshima Peace Research Journal), local extraction pp. 5-12, autobiographical
+  section on the author's own intellectual formation
+scope: DIRECT_QUOTATION
+evidence_tier: definition
+independence_class: I1
+who_verified: this session (manual verification; I3 cross-vendor attempt failed,
+  see disclosure)
+verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
+status: METADATA_OK
+xenon_ledger_ref: null
+disclosure: 'SUPPORTS H3 and serves as the SEA/Thai-scholarship anchor for this hypothesis
+  axis: a leading Thai peace-studies scholar (Thammasat University) independently
+  restates the negative/positive-peace distinction (absence of war vs. freedom from
+  structural violence) in an autobiographical register, explicitly naming "opportunities...robbed"
+  -- i.e. blocked potential/opportunity as part of what real peace requires beyond
+  mere absence of war. This is Satha-Anand summarizing what he learned from Galtung''s
+  intellectual tradition (via his teacher Glenn Paige), not an independent empirical
+  test of H3, so scope is DIRECT_QUOTATION of a definitional/framing passage rather
+  than an evidentiary test. | I3 route (codex) judged from fetched metadata/abstract
+  + the card''s quoted passage, not full text: '
+superseded_by: null
+notes: Reused the already-fetched local copy per the task brief rather than re-fetching.
+fetched_from_url: https://www.peace.hiroshima-cu.ac.jp/wp/wp-content/uploads/2021/03/HPI-Journal-Vol-8.pdf  # fetched copy read locally (per-page text extraction of the same file)
+line_or_paragraph: page 6 of the local extraction, paragraph beginning "Through these
+  readings..."

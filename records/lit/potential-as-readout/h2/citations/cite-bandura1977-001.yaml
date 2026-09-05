@@ -1,0 +1,39 @@
+$schema: citation_card.schema.json
+id: cite-bandura1977-001
+claim_ref: hypothesis-potential-as-readout-H2
+identifier:
+  kind: DOI
+  value: 10.1037/0033-295X.84.2.191
+fetch_status: FETCH_FAILED
+fetched_at: null
+metadata_verified: true
+metadata_verified_by: mechanical:crossref_or_unpaywall_lookup
+metadata_verified_at: '2026-09-05'
+claim_match_verified: false
+claim_match_verified_by: route:codex
+claim_match_verified_at: null
+exact_passage: ''
+page_or_locator: n/a -- not obtained
+scope: CONTEXT_ONLY_NOT_EVIDENCE
+evidence_tier: Open
+independence_class: I3
+who_verified: route:codex (cross-vendor AI; abstract/metadata level, not full text)
+  -- see cite-bandura1977-001.i3.json
+verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
+status: METADATA_OK
+xenon_ledger_ref: null
+disclosure: 'Same-session AI check only (I1) -- not yet independently verified; run
+  lit_crossvendor_check.py for I3. | I3 route (codex) judged from fetched metadata/abstract
+  + the card''s quoted passage, not full text: '
+superseded_by: null
+notes: 'Bandura 1977, ''Self-efficacy: toward a unifying theory of behavioral change'',
+  Psychological Review 84(2). Three named open-access mirror URLs attempted this session
+  (uky.edu/~eushe2 -- connection timeout / redirected off-domain; wilderdom.com --
+  served an HTML page not the PDF; ccnmtl.columbia.edu -- empty 0-byte response).
+  No verbatim passage obtained -- carried as bibliographic record only per task instruction.
+  Relevant concept per task brief: efficacy expectations (belief one CAN execute a
+  behavior, layer-1-adjacent) vs. the environmental/response conditions that determine
+  whether that behavior actually produces the outcome -- not independently confirmed
+  by a fetched passage here.'
+fetched_from_url: null
+line_or_paragraph: null

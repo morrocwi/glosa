@@ -1,0 +1,42 @@
+$schema: citation_card.schema.json
+id: cite-bazzani2023-001
+claim_ref: hypothesis-potential-as-readout-H2
+identifier:
+  kind: DOI
+  value: 10.1007/s11186-022-09487-z
+fetch_status: FETCHED
+fetched_at: '2026-09-05'
+metadata_verified: true
+metadata_verified_by: mechanical:direct_fetch
+metadata_verified_at: '2026-09-05'
+claim_match_verified: false
+claim_match_verified_by: route:codex
+claim_match_verified_at: null
+exact_passage: This article proposes a framework for the study of agency that defines
+  individual agency as the result of a conversion process of personal resources shaped
+  by conversion factors. Conversion factors operate at micro, meso, and macro levels
+  of analysis, each of which can be oriented toward past experiences, present conditions,
+  and future prospects.
+page_or_locator: Abstract (Theory and Society, 2023)
+scope: DIRECT_QUOTATION
+evidence_tier: Dr
+independence_class: I3
+who_verified: route:codex (cross-vendor AI; abstract/metadata level, not full text)
+  -- see cite-bazzani2023-001.i3.json
+verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
+status: METADATA_OK
+xenon_ledger_ref: null
+disclosure: 'Same-session AI check only (I1) -- not yet independently verified; run
+  lit_crossvendor_check.py for I3. | I3 route (codex) judged from fetched metadata/abstract
+  + the card''s quoted passage, not full text: '
+superseded_by: null
+notes: Direct live fetch (link.springer.com) returned a bot-challenge page in this
+  session; per task instruction, retried via the Wayback Machine snapshot named by
+  archive.org's own availability API, which served the real abstract text. 'Conversion
+  factors operate at micro, meso, and macro levels' names the layer-2 structural side
+  explicitly (factors external to and shaping any single choice); the paper's own
+  citation lineage runs through the Capability Approach (Sen/Robeyns), the same family
+  H2 draws on.
+fetched_from_url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10241693/fullTextXML
+line_or_paragraph: char offset 2177 of normalized fetched text (~paragraph 1); verbatim
+  prefix match

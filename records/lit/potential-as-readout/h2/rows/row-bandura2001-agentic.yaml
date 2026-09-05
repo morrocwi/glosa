@@ -1,0 +1,29 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: H2
+source_label: 'Bandura 2001, Social Cognitive Theory: An Agentic Perspective (Annual Review of Psychology,
+  abstract)'
+how_it_sees_the_problem: 'Frames the problem as one of reciprocal causation: personal agency is exercised
+  ''within a broad network of sociostructural influences,'' and in the same transactions people are both
+  shaped by and shape those structures.'
+what_it_separates: 'Separates ''people are products of social systems'' (layer 1: acting as the structure
+  allows) from ''people are producers of social systems'' (layer 2: acting so as to change the structure)
+  as two roles the SAME agentic transaction plays simultaneously, per the abstract''s own wording -- a
+  tighter, more explicit two-layer statement than Ryan & Deci 2000''s facilitate/forestall framing.'
+what_it_assumes: This card is abstract-level only (full text not fetched this session); assumes the abstract's
+  summary claim ('producers as well as products') is elaborated with a mechanism in the full article that
+  was not read here, so the specific correspondence to Causal Agency's dC/dx ≠ 0 condition is a plausible
+  reading, not a confirmed one.
+stance: UNDETERMINED
+what_it_would_say_against_us: Would say 'producers as well as products' is a general sociological truism
+  (already present in e.g. Giddens' structuration or Archer's morphogenesis, both only record-carried
+  in this review) and this abstract alone does not show Bandura formalizes a recoverable GAP between the
+  two roles the way H2 requires -- abstract-level support only, not mechanism-level.
+citation_card: cite-bandura2001-agentic-001
+defeater_class: structural_formal
+legitimate_defeater: Defeated by reading Bandura 2001's full text and finding no operational distinction
+  between the producer and product roles beyond the abstract's rhetorical pairing (i.e. the two roles
+  turn out to be the same mechanism described twice).
+defeater_status: untested
+verified:
+  metadata_verified: true
+  claim_match_verified: false

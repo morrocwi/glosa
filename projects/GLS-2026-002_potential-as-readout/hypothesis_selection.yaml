@@ -1,0 +1,147 @@
+$schema: hypothesis_selection.schema.json
+# hypothesis_selection.yaml -- GLS-2026-002 potential-as-readout. AI proposed this comparison table;
+# selection itself is the founder's non-delegable act (matches claim_card.responsible: human).
+# chosen = all three (H1+H2+H3), per the founder's own explicit ruling quoted below (BBL-2026-09-05
+# -132/134) -- this is NOT a pre-fill pending confirmation, unlike GLS-2026-001's hsel-001; the
+# founder's instruction to proceed with the full raised-tier programme (witness rule + two layers +
+# fixture-tested pseudo-peace signature) already names all three as in scope.
+
+id: hsel-potential-as-readout-001
+problem_ref: GLOSA-PC-20260905-0002
+decided_by: founder
+decided_at: "2026-09-05"
+
+candidates:
+  - hypothesis_ref: H1
+    hypothesis_world: >-
+      If a "potential" quantity is defined as the witnessed set (the finite, enumerable set of
+      policies for which a retained record exists that a comparable agent executed within a
+      declared horizon/budget) rather than a declared, unretained continuum -- then the envelope
+      computed over it is a readout a reader can check, not an unbounded declaration only its
+      author can see.
+    lrs_manifest_ref: records/lit/potential-as-readout/h1/litreview_manifest.yaml
+    dialogue_table_ref: records/lit/potential-as-readout/h1/dialogue_table.md
+    criteria:
+      developability:
+        unresolved_space_shown_by_dialogue_table: >-
+          Whether any existing peace-research/capability-theory/empowerment source already states an
+          equivalent finite-witnessed-record test for its own feasible set is the open question this
+          project's own H1 literature pass (h1/) must answer with a same/different/cited verdict per
+          source, per glosa gate rule 6 (never novel/first).
+        note: "H1 is the definitional core the paper's own eq.1 (the witness rule) already states -- this project runs a literature check against it, not a fresh derivation."
+      access_evidence_available:
+        can_we_get_new_access: "yes"
+        note: >-
+          Public peace-research, capability-theory, and empowerment/information-theoretic-agency
+          literature is openly fetchable (Galtung, Sen/Nussbaum/Kabeer, Bazzani, Klyubin/Polani);
+          the H1 citation pass is reachable now.
+      falsifier_reachable_with_our_resources:
+        value: "yes"
+        note: "the falsifier (an independently fetched source with an equivalent finite-witnessed-record rule this project's own citation chain does not already reach) is checkable directly against fetched full texts."
+      independence_routes_available:
+        max_reachable_independence_class: I3
+        note: "I3 (cross-vendor AI citation/claim-match checking) reachable now, matching GLS-2026-001's own precedent; I5 (outside human, no stake) not yet arranged for this project."
+      risk_and_ethics:
+        human_participant_or_vulnerable_subject: "no"
+        domain_safety_flags: []
+        note: "a literature-comparison and definitional-consistency check; no human-subject or vulnerable-population involvement."
+      genre_fit:
+        candidate_genres: ["conceptual", "systematic_review"]
+        note: "H1 states an operational definition and checks it against literature -- conceptual fit, with a literature-review (scoping, not full systematic) component."
+    accuracy_gate_at_selection_time: PASS_WITH_LIMITS
+    diversity_gate_at_selection_time: PASS_WITH_LIMITS
+
+  - hypothesis_ref: H2
+    hypothesis_world: >-
+      "Potential" across this programme's five texts is at minimum two layers -- choosing within a
+      fixed constraint structure (layer 1) and changing that structure itself (layer 2) -- that must
+      not be collapsed; a layer-1 envelope reported as the bound on what a person or group can become
+      is a collapse (D3).
+    lrs_manifest_ref: records/lit/potential-as-readout/h2/litreview_manifest.yaml
+    dialogue_table_ref: records/lit/potential-as-readout/h2/dialogue_table.md
+    criteria:
+      developability:
+        unresolved_space_shown_by_dialogue_table: >-
+          Whether capability theory (Sen/Nussbaum agency-vs-well-being-freedom), social-cognitive
+          theory (Bandura), and relational sociology (Emirbayer & Mische's iterational/projective/
+          practical-evaluative structure) already draw this same layer-1/layer-2 line is the open
+          question the H2 literature pass must answer per source, logged same/different/cited.
+        note: "conceptual portability claim -- narrower and more abstract than H1, needs its own cross-discipline check."
+      access_evidence_available:
+        can_we_get_new_access: "yes"
+        note: "capability theory, social-cognitive theory, and relational-sociology literature is openly fetchable."
+      falsifier_reachable_with_our_resources:
+        value: "yes"
+        note: "the falsifier (a source treating structure-change and within-structure choice as the same undifferentiated capacity) is checkable directly against fetched full texts."
+      independence_routes_available:
+        max_reachable_independence_class: I3
+        note: "same AI-vendor access as H1 for citation/claim-match checking."
+      risk_and_ethics:
+        human_participant_or_vulnerable_subject: "no"
+        domain_safety_flags: []
+        note: "a conceptual/literature-portability check; no human-subject involvement."
+      genre_fit:
+        candidate_genres: ["conceptual"]
+        note: "H2 states a portable conceptual distinction, not a mechanism design or a measurement -- conceptual fit."
+    accuracy_gate_at_selection_time: PASS_WITH_LIMITS
+    diversity_gate_at_selection_time: PASS_WITH_LIMITS
+
+  - hypothesis_ref: H3
+    hypothesis_world: >-
+      A regime that suppresses visible instability-amplitude without changing the underlying operator
+      shows a distinguishable numerical signature once suppression is budget-bounded (re-crossing the
+      threshold after budget exhaustion; unbounded accumulated force under sustained suppression),
+      distinct from a real operator change (repair) that achieves the same visible calm at zero
+      accumulated force -- checked on the project's own two-node fixture.
+    lrs_manifest_ref: records/lit/potential-as-readout/h3/litreview_manifest.yaml
+    dialogue_table_ref: records/lit/potential-as-readout/h3/dialogue_table.md
+    criteria:
+      developability:
+        unresolved_space_shown_by_dialogue_table: >-
+          The fixture (sim/nogo_fixture.py) has already been run once (sim/nogo_fixture_result.json,
+          finite_diagnostic on that fixture only) with one documented failed-then-corrected passing/
+          failing control (Fail-Able Gate Law); H3's own literature pass (h3/) checks whether
+          independently fetched instability/violence/AI-safety-corrigibility literature reports an
+          equivalent bounded-vs-unbounded-suppression signature, logged same/different/cited.
+        note: "the most empirically concrete of the three -- a fixture result already exists, narrower scope than H1/H2."
+      access_evidence_available:
+        can_we_get_new_access: "yes"
+        note: "the fixture is this project's own code and can be re-run/extended; instability/corrigibility literature is openly fetchable for the H3 citation pass."
+      falsifier_reachable_with_our_resources:
+        value: "yes"
+        note: "re-running the fixture, or constructing a second independent fixture testing the same claim, is buildable with this project's own resources."
+      independence_routes_available:
+        max_reachable_independence_class: I3
+        note: "I3 (cross-vendor AI re-execution/code review of the fixture) reachable now; the fixture's own numeric result is I1 (same-session) until an independent route re-runs it."
+      risk_and_ethics:
+        human_participant_or_vulnerable_subject: "no"
+        domain_safety_flags: []
+        note: "a two-node finite-memory numerical simulation; no human-subject involvement."
+      genre_fit:
+        candidate_genres: ["empirical_quant", "formal_proof"]
+        note: "H3 is a fixture-checkable numerical claim about a system's own equations -- empirical_quant fit, with a formal_proof-adjacent no-go theorem it tests against."
+    accuracy_gate_at_selection_time: PASS_WITH_LIMITS
+    diversity_gate_at_selection_time: PASS_WITH_LIMITS
+
+selection:
+  chosen: ["H1", "H2", "H3"]
+  reason: >-
+    Founder ruling BBL-2026-09-05-132 ("เอาเลย เป้าหมายคือแตกฉานคำว่าศักยภาพ" -- go ahead, the goal is
+    to master/exhaustively fracture the word "potential") and BBL-2026-09-05-134 ("ทำต่อเลย ยกระดับ
+    งานให้เป็นงานศักยภาพระดับโลก เทียร์หนึ่ง ไม่ลดข้อเคลม สู้โหด" -- raise the work to world-class
+    tier-one substance, never lower a claim) together name the full raised-tier programme this task
+    scaffolds: exhaustive verified literature (H1 witness-rule literature check, H2 two-layer
+    portability check), proved rather than sketched formal results (H3's fixture, already run once
+    at finite_diagnostic), and a real cross-vendor I3 check toward K1. All three hypotheses are
+    kept in scope together because they are not competitors -- H1 supplies the operational
+    definition the paper's own eq.1 states, H2 supplies the two-layer reading the same paper's D3
+    distinction states, and H3 is the one empirically fixture-testable piece already partially run
+    -- together they cover the paper's central claim (paper/main.tex "Central claim" leftbar) rather
+    than any one being a narrower slice of another. This selection is recorded from the founder's
+    own three verbatim rulings (BBL-2026-09-05-130/132/134), not inferred or filled in by AI on the
+    founder's behalf.
+  parked: []
+
+cooking_log_ref: "blackbox_note.yaml#cooking-1 (this hypothesis_selection.yaml, task POT1-scaffold, drafted by AI from the founder's own three verbatim rulings)"
+
+routes_to: "CONCEPTUAL genre (see genre_decision.yaml) -- per H1/H2's own genre_fit.candidate_genres, with H3 carried as an empirical_quant/formal_proof-adjacent companion result within the same paper, per genre_decision.yaml's disposition_of_hypotheses."

@@ -1,0 +1,40 @@
+$schema: citation_card.schema.json
+id: cite-robeyns2017-001
+claim_ref: hypothesis-potential-as-readout-H2
+identifier:
+  kind: ISBN
+  value: '9781783744237'
+fetch_status: FETCH_FAILED
+fetched_at: null
+metadata_verified: true
+metadata_verified_by: mechanical:crossref_or_unpaywall_lookup
+metadata_verified_at: '2026-09-05'
+claim_match_verified: false
+claim_match_verified_by: route:codex
+claim_match_verified_at: null
+exact_passage: ''
+page_or_locator: n/a -- not obtained
+scope: CONTEXT_ONLY_NOT_EVIDENCE
+evidence_tier: Open
+independence_class: I3
+who_verified: route:codex (cross-vendor AI; abstract/metadata level, not full text)
+  -- see cite-robeyns2017-001.i3.json
+verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
+status: METADATA_OK
+xenon_ledger_ref: null
+disclosure: 'Same-session AI check only (I1) -- not yet independently verified; run
+  lit_crossvendor_check.py for I3. | I3 route (codex) judged from fetched metadata/abstract
+  + the card''s quoted passage, not full text: '
+superseded_by: null
+notes: 'Robeyns 2017, Wellbeing, Freedom and Social Justice: The Capability Approach
+  Re-Examined (Open Book Publishers, nominally OA). Attempted: openbookpublishers.com
+  book page (empty response), OAPEN repository bitstream (HTTP 403 Anubis bot-challenge),
+  DOAB directory search (no result), Crossref (book-level DOI 10.11647/OBP.0130 record
+  only, no chapter text). No verbatim passage obtained this session -- carried as
+  bibliographic record only per task instruction, not skipped silently. Relevant chapter
+  concept per task brief: conversion factors (personal/social/environmental) as the
+  mechanism converting a resource into a capability -- structurally the layer-1/layer-2-adjacent
+  distinction this hypothesis needs, but not independently confirmed by a fetched
+  passage here.'
+fetched_from_url: null
+line_or_paragraph: null

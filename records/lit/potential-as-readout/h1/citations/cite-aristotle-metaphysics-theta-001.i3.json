@@ -1,0 +1,16 @@
+{
+ "vendor": "codex",
+ "fetched": {
+  "source": "url-fetch",
+  "title": "The Internet Classics Archive | Metaphysics by Aristotle",
+  "abstract": "Metaphysics by Aristotle, part of the Internet Classics Archive",
+  "_card_url": "https://classics.mit.edu/Aristotle/metaphysics.9.ix.html"
+ },
+ "verdict": {
+  "error": "no-json",
+  "raw": "",
+  "passage_plausible": true,
+  "passage_mechanical": "verbatim prefix found in fetched open text"
+ },
+ "date": "2026-09-04"
+}

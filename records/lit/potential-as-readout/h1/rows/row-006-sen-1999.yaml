@@ -1,0 +1,33 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: H1
+source_label: 'Sen (1999), Development as Freedom, "standard formulation" as quoted
+  in Nussbaum 2011 p.20 -- disclosed secondary route'
+how_it_sees_the_problem: >-
+  Defines a person's "capability" as "the alternative combinations of functionings
+  that are FEASIBLE for her to achieve," making capability "a kind of freedom:
+  the substantive freedom to achieve alternative functioning combinations."
+what_it_separates: >-
+  Separates functionings (achieved states) from capabilities (feasible combinations
+  of functionings) -- the feasible SET itself is the object of Sen's definition,
+  not any subset of it that has been demonstrated.
+what_it_assumes: >-
+  Assumes feasibility can be assessed/declared (e.g. by an analyst modeling what
+  a person COULD achieve given their resources and conversion factors) without
+  requiring the person to have actually done it or had it demonstrated under
+  a specific procedure.
+stance: 'NO'
+defeater_class: constitutive
+legitimate_defeater: A passage in Development as Freedom itself (not available
+  to this session) where Sen ties "feasible" explicitly to a witnessed/demonstrated
+  procedure (analogous to Vygotsky's assisted-performance test) rather than to
+  an analyst's modeled feasible set would defeat this row.
+what_it_would_say_against_us: >-
+  Sen's applied capability work (not quoted in this card) often DOES rely on
+  observed functionings and survey-measured achievements as the operational proxy
+  for the capability set, which is closer in practice to a witnessed-set method
+  even if his formal DEFINITION uses "feasible" language -- the gap between Sen's
+  definition and Sen's practice is itself a live tension this row does not resolve.
+citation_card: cite-sen-1999-006
+verified:
+  metadata_verified: true
+  claim_match_verified: true

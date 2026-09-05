@@ -1,0 +1,20 @@
+{
+ "vendor": "codex",
+ "fetched": {
+  "source": "crossref",
+  "title": "What Is Agency?",
+  "authors": [
+   "Emirbayer",
+   "Mische"
+  ],
+  "year": 1998,
+  "container": "American Journal of Sociology",
+  "abstract": ""
+ },
+ "verdict": {
+  "error": "no-json",
+  "raw": "",
+  "passage_mechanical": "no open full text fetched; abstract/metadata only"
+ },
+ "date": "2026-09-04"
+}

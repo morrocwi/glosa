@@ -1,0 +1,48 @@
+$schema: citation_card.schema.json
+id: cite-galtung1969-negpospeace-002
+claim_ref: H3
+identifier:
+  kind: OTHER_STABLE
+  value: jstor:422690
+fetch_status: FETCHED
+fetched_at: '2026-09-05'
+metadata_verified: true
+metadata_verified_by: 'manual: reused local copy galtung1969.pages.txt, same source
+  as cite-galtung1969-potentialgap-001'
+metadata_verified_at: '2026-09-05'
+claim_match_verified: true
+claim_match_verified_by: this session (manual read/verification; the route:codex
+    I3 cross-vendor attempt below FAILED with a usage-limit error, not a content
+    judgment -- reverted to the prior manual verification rather than leaving a
+    false false-verdict on record)
+claim_match_verified_at: '2026-09-05'
+exact_passage: absence of personal violence, and absence of structural violence.30
+  We shall refer to them as negative peace and positive peace respectively.31
+page_or_locator: Galtung 1969, p. 183 (p18 in the local page-tagged extraction), left-hand
+  column
+scope: DIRECT_QUOTATION
+evidence_tier: definition
+independence_class: I1
+who_verified: this session (manual verification; I3 cross-vendor attempt failed,
+  see disclosure)
+verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
+status: METADATA_OK
+xenon_ledger_ref: null
+disclosure: 'The canonical negative-peace/positive-peace split H3''s "observed calm"
+  clause presupposes. Superscript footnote markers (30, 31) preserved verbatim from
+  the extraction. As with the sibling card, the source PDF is two-column and this
+  extraction interleaves columns line-by-line; this exact_passage is read from the
+  LEFT-hand column only, across four consecutive lines, disclosed rather than silently
+  reconstructed. SUPPORTS H3: "observed calm" in H3''s gate is Galtung''s "negative
+  peace" (absence of personal violence) taken alone, which Galtung himself already
+  warns is not the same as "positive peace" (absence of structural violence) -- i.e.
+  calm-without-structural-correction is exactly the gap H3 calls pseudo-peace. | I3
+  route (codex) judged from fetched metadata/abstract + the card''s quoted passage,
+  not full text: '
+superseded_by: null
+notes: Companion card to cite-galtung1969-potentialgap-001 from the same document,
+  a distinct citation USE (different exact passage, different definitional claim)
+  per glosa's one-card-per-use rule.
+fetched_from_url: https://www2.kobe-u.ac.jp/~alexroni/IPD%202015%20readings/IPD%202015_2/Galtung_Violence%2C%20Peace%2C%20and%20Peace%20Research.pdf  # fetched copy read locally (per-page text extraction of the same file)
+line_or_paragraph: left-hand column, lines "absence of personal violence, and absence"
+  through "respectively." (source lines ~1025-1028 of the local .pages.txt extraction)

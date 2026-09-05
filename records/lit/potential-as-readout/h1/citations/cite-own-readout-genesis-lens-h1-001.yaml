@@ -1,0 +1,37 @@
+$schema: citation_card.schema.json
+id: cite-own-readout-genesis-lens-h1-001
+claim_ref: H1
+identifier:
+  kind: DOI
+  value: 10.5281/zenodo.21529456
+fetch_status: FETCHED
+fetched_at: '2026-09-05'
+metadata_verified: true
+metadata_verified_by: mechanical:zenodo_api
+metadata_verified_at: '2026-09-05'
+claim_match_verified: false
+claim_match_verified_by: null
+claim_match_verified_at: null
+exact_passage: It is a retained distinction, δR = (a ♯ b), (3) meaning that a difference
+  between two states is not erased by the reader relevant to the current construction.
+page_or_locator: Readout_Genesis_Information_Epistemic_Foundation_Journal.pdf, p.
+  2 (definition of the retained distinction, eq. (3))
+scope: SUPPORTS_GENERAL_CLAIM_ONLY
+evidence_tier: Dr
+independence_class: I1
+who_verified: AI assistant, same session (I1) -- mechanical verbatim extraction from
+  the fetched Zenodo PDF; I3 route pending (codex quota)
+verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
+status: METADATA_OK
+xenon_ledger_ref: null
+disclosure: 'own lineage: the LENS itself (lens_translation.lens_ref of the GLS-2026-002
+  claim cards), same author as the hypotheses; not independent evidence; carded so
+  rule12b (D-LENS-UNCITED) is satisfied by a real fetched passage rather than by assertion.
+  I3 cross-vendor check not yet run (codex quota exhausted 2026-09-05 evening; retry
+  after reset).'
+superseded_by: null
+notes: 'Lens card for H1: the retained distinction δR is the root the witnessed-option-set
+  reading (N2 applied to the option set) descends from; stance: agrees (lens, not
+  evidence). language: en.'
+fetched_from_url: https://zenodo.org/api/records/21529456/files/Readout_Genesis_Information_Epistemic_Foundation_Journal.pdf/content
+line_or_paragraph: page 2, paragraph containing eq. (3); verbatim (pdftotext, whitespace-normalized)

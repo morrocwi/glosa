@@ -1,0 +1,31 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: H2
+source_label: 'Kabeer 1999, Resources, Agency, Achievements: Reflections on the Measurement of Women''s
+  Empowerment (Development and Change, abstract)'
+how_it_sees_the_problem: 'Frames empowerment as a PROCESS of acquiring a previously-denied ability to
+  make strategic life choices, and separately as a measurement problem: resources, agency, and achievements
+  are three inter-related dimensions, further qualified by the ''conditions of choice, its content and
+  consequences.'''
+what_it_separates: 'Separates ''acquiring the ability to choose'' (layer 2: gaining a capacity that was
+  previously structurally denied) from ''exercising choice'' once the ability exists (layer 1: the more
+  instrumentalist, already-measurable act) -- and explicitly separates the CONDITIONS of choice (structural
+  parameters) from choice''s content/consequences, closely paralleling H2''s two-layer split under empowerment
+  vocabulary.'
+what_it_assumes: This card is abstract-level only (full text not fetched this session); assumes the abstract's
+  summary claims are representative of the paper's argument, not independently checked against the full
+  measurement-methodology discussion (which reviews several named empirical empowerment studies not examined
+  here).
+stance: UNDETERMINED
+what_it_would_say_against_us: Would say this abstract argues MEASUREMENT collapses the resources/agency/achievements
+  distinction in practice ('these three dimensions of choice are indivisible in determining the meaning
+  of an indicator') -- if the same indivisibility applies to H2's layer-1/layer-2 split, a recoverable-gap
+  quantity that treats the layers as SEPARABLE (as H2's framing requires) may not be measurable the way
+  H2 wants, even if it is conceptually valid.
+citation_card: cite-kabeer1999-001
+defeater_class: empirical
+legitimate_defeater: Defeated by a validated empirical measure that successfully separates layer-1 exercise
+  from layer-2 acquisition as independent indicators, contrary to this abstract's indivisibility warning.
+defeater_status: untested
+verified:
+  metadata_verified: true
+  claim_match_verified: false

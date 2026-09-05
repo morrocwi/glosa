@@ -1,0 +1,33 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: H1
+source_label: 'Vygotsky (1978), Mind in Society, p. 86 (quoted through Chaiklin
+  2003 -- disclosed secondary route)'
+how_it_sees_the_problem: >-
+  Defines the zone of proximal development itself, in Vygotsky's own words, as
+  "the distance between the actual developmental level as determined by independent
+  problem solving and the level of potential development as determined through
+  problem solving under adult guidance or in collaboration with more capable peers".
+what_it_separates: >-
+  Separates two levels of development by the PROCEDURE used to determine each
+  (independent vs. assisted problem solving), making "potential" a determined
+  (witnessed) quantity rather than a declared one.
+what_it_assumes: >-
+  Same assumptions as the Chaiklin row (assisted performance validly witnesses
+  potential); additionally assumes this project's own reading of "distance ...
+  as determined through problem solving" as a witnessing requirement is faithful
+  to Vygotsky's intent, which this session cannot independently confirm beyond
+  Chaiklin's own reading without the full primary text.
+stance: 'YES'
+defeater_class: constitutive
+legitimate_defeater: Independent access to the full Mind in Society chapter showing
+  Vygotsky using "potential development" elsewhere in a sense NOT tied to the
+  assisted-performance procedure would defeat or narrow this row.
+what_it_would_say_against_us: >-
+  This row rests on a secondary quotation, not this session's own reading of the
+  primary text -- if Chaiklin's transcription or emphasis subtly shifted the
+  meaning (e.g. by isolating one sentence from surrounding qualifications elsewhere
+  in Mind in Society), this row's confidence would be overstated.
+citation_card: cite-vygotsky-1978-mindinsociety-003
+verified:
+  metadata_verified: true
+  claim_match_verified: true

@@ -1,0 +1,54 @@
+$schema: citation_card.schema.json
+id: cite-chaiklin-vygotsky-zpd-002
+claim_ref: H1
+identifier:
+  kind: OFFICIAL_URL
+  value: https://blogs.ubc.ca/vygotsky/files/2013/11/chaiklin.zpd_.pdf
+fetch_status: FETCHED
+fetched_at: '2026-09-05'
+metadata_verified: true
+metadata_verified_by: 'manual: PDF read directly (Read tool, pages 1-3) confirms title
+  "The zone of proximal development in Vygotsky''s analysis of learning and instruction",
+  author Seth Chaiklin, "To appear in: Kozulin, A., Gindis, B., Ageyev, V., Miller,
+  S. (2003). Vygotsky''s educational theory and practice in cultural context. Cambridge:
+  Cambridge University Press."'
+metadata_verified_at: '2026-09-05'
+claim_match_verified: true
+claim_match_verified_by: this session (manual read/verification; the route:codex
+    I3 cross-vendor attempt below FAILED with a usage-limit error, not a content
+    judgment -- reverted to the prior manual verification rather than leaving a
+    false false-verdict on record)
+claim_match_verified_at: '2026-09-05'
+exact_passage: '"the distance between the actual developmental level as determined
+  by independent problem solving and the level of potential development as determined
+  through problem solving under adult guidance or in collaboration with more capable
+  peers" (Vygotsky, 1978, p. 86, emphasis in the original)'
+page_or_locator: Chaiklin (2003) p. 2, quoting Vygotsky 1978 p. 86
+scope: DIRECT_QUOTATION
+evidence_tier: definition
+independence_class: I1
+who_verified: this session (manual verification; I3 cross-vendor attempt failed,
+  see disclosure)
+verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
+status: METADATA_OK
+xenon_ledger_ref: null
+disclosure: 'This card is Chaiklin''s OWN reproduction (in quotation marks, with page
+  cite) of Vygotsky''s canonical ZPD definition. It directly supports H1: "potential
+  development" is defined not as an open/declared capacity but as the level ACTUALLY
+  DETERMINED THROUGH an assisted-performance act (problem solving under adult guidance
+  or peer collaboration) -- i.e. potential is witnessed via a specific demonstrable
+  procedure, not merely asserted. Chaiklin''s own surrounding argument (pp. 2-3, read
+  in full) further argues against loose/expansive readings of ZPD ("it will be used
+  loosely and indiscriminately, thereby becoming so amorphous that it loses all explanatory
+  power", quoting Wertsch 1984 p.7 as quoted by Chaiklin p.2), which is itself consistent
+  with H1''s finite/bounded framing of potential against open-ended declaration. |
+  I3 route (codex) judged from fetched metadata/abstract + the card''s quoted passage,
+  not full text: '
+superseded_by: null
+notes: PDF read directly via the Read tool (not WebFetch's model-summarized text)
+  for this exact_passage, satisfying a stronger verification bar than a single WebFetch
+  pass. See sibling card cite-vygotsky-1978-mindinsociety-003 for the same underlying
+  primary-text passage carded directly under Vygotsky's own authorship.
+fetched_from_url: https://blogs.ubc.ca/vygotsky/files/2013/11/chaiklin.zpd_.pdf
+line_or_paragraph: char offset 3909 of normalized fetched text (~paragraph 1); verbatim
+  prefix match

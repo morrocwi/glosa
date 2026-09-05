@@ -1,0 +1,21 @@
+{
+ "vendor": "codex",
+ "fetched": {
+  "source": "zenodo",
+  "title": "The Causal Grammar of Structured Coexistence: Conflict, Violence, Repair, and Non-Suppressive Peace",
+  "authors": [
+   "Lahtee, Yaoharee"
+  ],
+  "year": "2026",
+  "container": "Zenodo",
+  "abstract": " Sociological and philosophical traditions have developed extensive explanations of social structure, conflict, violence, and peace. Yet these phenomena are often analyzed within partially separate theoretical frameworks. As a result, disagreement is frequently conflated with conflict, conflict with violence, and stability with peace. This article proposes a causal grammar linking five concepts: structure, conflict, violence, repair, and peace. Social structures organize fields of feasible possibility within shared social environments. Conflict emerges when actors attempt to sustain structures that cannot be jointly reproduced. Violence occurs when incompatibility compresses actors&rsquo; feasible life-space. Repair denotes the protected reopening of damaged relations, while peace refers to stable coexistence that preserves actors&rsquo; possibilities and maintains the capacity for repair. The framework provides a compact diagnostic vocabulary for distinguishing difference from conflict, conflict from violence, and stable order from non-suppressive peace. Keywords: conflict; violence; peace; social theory; political sociology ",
+  "_card_url": "https://zenodo.org/api/records/18925131/files/The%20Causal%20Grammar%20of%20Structured.pdf/content"
+ },
+ "verdict": {
+  "error": "no-json",
+  "raw": "",
+  "passage_plausible": true,
+  "passage_mechanical": "verbatim prefix found in fetched open text"
+ },
+ "date": "2026-09-04"
+}

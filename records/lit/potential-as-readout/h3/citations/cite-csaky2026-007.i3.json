@@ -1,0 +1,14 @@
+{
+ "vendor": "codex",
+ "fetched": {
+  "source": "fetch-failed",
+  "error": "The read operation timed out",
+  "_card_url": "https://arxiv.org/abs/2605.06346"
+ },
+ "verdict": {
+  "error": "no-json",
+  "raw": "",
+  "passage_mechanical": "quoted passage NOT found verbatim in fetched open text"
+ },
+ "date": "2026-09-04"
+}

@@ -1,0 +1,67 @@
+$schema: genre_decision.yaml
+# GLS-2026-002 (potential-as-readout) -- genre routing decision, per FOUNDATION_v0.5.md §6 (genre
+# router) and the same task pattern GLS-2026-001 used (task B1 there). Router is advisory; founder
+# holds final genre authority (glosa gate rule 5/6).
+
+problem_ref: GLOSA-PC-20260905-0002
+project: GLS-2026-002
+routed_at: "2026-09-05"
+
+router_output:
+  command_run: "./cli/glosa genre route projects/GLS-2026-002_potential-as-readout/GLOSA-PC-20260905-0002.yaml --search-log"
+  raw_output:
+    action: genre_route
+    card: projects/GLS-2026-002_potential-as-readout/GLOSA-PC-20260905-0002.yaml
+    genre: systematic_review
+    venue_track: null
+    companion_of: null
+    reasons:
+      - "step1: no -> continue"
+      - "step2: context.has_search_log is True (a documented search_log exists for this claim) -> systematic_review"
+  note: >-
+    Router run with --search-log because this project's three hypotheses (H1/H2/H3) each already
+    have a scaffolded search_log.yaml under records/lit/potential-as-readout/h<N>/ (owned by
+    concurrent workers lit-h1-h3 and lit-h2, not yet run to completion at the time this decision was
+    recorded). Router's step-2 rule (a documented search log present -> systematic_review) fired
+    mechanically on that fact alone, exactly as it did for GLS-2026-001's own genre_decision.yaml --
+    the router cannot see that the search logs exist to check three distinct candidate hypotheses'
+    own literature grounding (H1 witness-rule already-stated-elsewhere check, H2 two-layer portability check, H3
+    fixture-adjacent literature check) rather than to constitute a systematic-review-genre paper in
+    their own right. That judgment is reserved to the founder (hypothesis_selection.yaml's
+    genre_fit column), per FOUNDATION_v0.5.md §7.9, not delegated to the mechanical router.
+
+chosen: CONCEPTUAL
+decided_by: founder
+ref: "BBL-2026-09-05-134"
+note: >-
+  paper/main.tex (Potential as a Readout) is written and framed throughout as a conceptual/
+  definitional paper (an anatomy of a word, seven non-collapse distinctions, a witness-rule
+  operational definition) with ONE executed companion result (the two-node no-go fixture,
+  sim/nogo_fixture.py / sim/nogo_fixture_result.json, tier finite_diagnostic on that fixture only)
+  -- not a systematic review of the literature it cites, and not primarily an empirical_quant paper
+  even though H3 is fixture-tested. The router's systematic_review output is not adopted for the
+  same reason genre_decision.yaml (GLS-2026-001) gave: it reflects the presence of search_log.yaml
+  scaffolding files (S3b literature-review housekeeping this project's lit workers are populating),
+  not the genre of the claim the paper itself is making. Recorded here as an adopted-by-human
+  override of the router's mechanical output, per FOUNDATION_v0.5.md §6 and glosa gate rule 6 -- the
+  router is never itself the legitimacy source for a genre choice. Founder ruling BBL-2026-09-05-134
+  ("ยกระดับงานให้เป็นงานศักยภาพระดับโลก เทียร์หนึ่ง ไม่ลดข้อเคลม") sets the standard this genre choice
+  serves: exhaustive verified literature feeding a conceptual paper, plus one proved-not-sketched
+  fixture result, not a lowered/narrowed genre claim.
+
+disposition_of_hypotheses:
+  H1:
+    claim_type: DEFINITIONAL
+    treatment: "carried as the paper's own operational definition (eq.1, the Witness Rule); checked against literature for same/different/cited, not yet an independently reviewed result"
+  H2:
+    claim_type: CONCEPTUAL
+    treatment: "carried as the paper's own D3 distinction (layer 1 vs layer 2); checked for portability against capability-theory/social-cognitive/relational-sociology literature"
+  H3:
+    claim_type: EMPIRICAL
+    treatment: "carried as a companion executed-fixture result (finite_diagnostic on that fixture only, one documented failed-then-corrected control per the Fail-Able Gate Law); not yet independently re-run"
+
+related_files:
+  - projects/GLS-2026-002_potential-as-readout/hypotheses.md
+  - projects/GLS-2026-002_potential-as-readout/hypothesis_selection.yaml
+  - projects/GLS-2026-002_potential-as-readout/lens_translation.md
+  - projects/GLS-2026-002_potential-as-readout/GLOSA-PC-20260905-0002.yaml

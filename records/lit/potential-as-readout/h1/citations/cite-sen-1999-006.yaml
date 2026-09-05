@@ -1,0 +1,55 @@
+$schema: citation_card.schema.json
+id: cite-sen-1999-006
+claim_ref: H1
+identifier:
+  kind: ISBN
+  value: '9780192893307'
+fetch_status: NOT_FETCHED
+fetched_at: '2026-09-05'
+metadata_verified: true
+metadata_verified_by: 'manual: Sen, A. (1999) Development as Freedom, Oxford University
+  Press. The quoted formulation is identified by Nussbaum (2011, p. 20) as "one standard
+  formulation by Sen", with quotation marks and no page number given by Nussbaum for
+  the Sen original.'
+metadata_verified_at: '2026-09-05'
+claim_match_verified: true
+claim_match_verified_by: this session (manual read/verification; the route:codex
+    I3 cross-vendor attempt below FAILED with a usage-limit error, not a content
+    judgment -- reverted to the prior manual verification rather than leaving a
+    false false-verdict on record)
+claim_match_verified_at: '2026-09-05'
+exact_passage: '"a person''s ''capability'' refers to the alternative combinations
+  of functionings that are feasible for her to achieve. Capability is thus a kind
+  of freedom: the substantive freedom to achieve alternative functioning combinations."'
+page_or_locator: quoted in Nussbaum 2011, Creating Capabilities, p. 20, as "one standard
+  formulation by Sen" (no page number for the Sen original given there)
+scope: DIRECT_QUOTATION
+evidence_tier: definition
+independence_class: I1
+who_verified: this session (manual verification; I3 cross-vendor attempt failed,
+  see disclosure)
+verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
+status: METADATA_OK
+xenon_ledger_ref: null
+disclosure: 'HONEST DISCLOSURE: this session did not independently fetch/open Development
+  as Freedom (1999) itself within this task''s time budget -- a candidate open PDF
+  (reallylearning.com) turned out on inspection to be a THIRD-PARTY READER SUMMARY
+  ("Summary by Valerie Iles in 2001"), not Sen''s own words, and was rejected as a
+  source for exact_passage under rule 17 (never a paraphrase substituting for the
+  actual text). This card''s exact_passage is instead Sen''s own words as directly
+  quoted, in quotation marks, inside Nussbaum (2011) p.20, which this session DID
+  fetch and read directly (see cite-nussbaum-2011-005). CHALLENGES H1 as literally
+  stated: Sen''s own definition uses the word "feasible" for the capability set --
+  feasibility, not witnessing, is the operative criterion in Sen''s own formulation,
+  which is close to the "declared feasible set" framing H1''s falsifier clause explicitly
+  rejects. | I3 route (codex) judged from fetched metadata/abstract + the card''s
+  quoted passage, not full text: '
+superseded_by: null
+notes: Kept as a separate card from cite-nussbaum-2011-005 per glosa's "one card per
+  citation USE" rule (Sen-as-primary-author claim vs. Nussbaum-as-quoting-secondary-source
+  claim are two distinct citation uses even though the quoted text is identical).
+  No page number for the Sen original is available from this route; if a full-text
+  Development as Freedom becomes accessible in a future pass, this card should be
+  superseded by a directly-fetched one with a page number.
+fetched_from_url: null
+line_or_paragraph: null

@@ -1,0 +1,37 @@
+$schema: citation_card.schema.json
+id: cite-causal-grammar-repair-001
+claim_ref: hypothesis-potential-as-readout-H2
+identifier:
+  kind: DOI
+  value: 10.5281/zenodo.18925131
+fetch_status: FETCHED
+fetched_at: '2026-09-05'
+metadata_verified: true
+metadata_verified_by: mechanical:direct_fetch
+metadata_verified_at: '2026-09-05'
+claim_match_verified: false
+claim_match_verified_by: route:codex
+claim_match_verified_at: null
+exact_passage: Repair refers to the protected reopening of damaged relations under
+  conditions that prevent renewed possibility compression.
+page_or_locator: p.3-4 (§5 Repair as Protected Reopening, opening definition)
+scope: DIRECT_QUOTATION
+evidence_tier: definition
+independence_class: I3
+who_verified: route:codex (cross-vendor AI; abstract/metadata level, not full text)
+  -- see cite-causal-grammar-repair-001.i3.json
+verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
+status: METADATA_OK
+xenon_ledger_ref: null
+disclosure: 'Same-session AI check only (I1) -- not yet independently verified; run
+  lit_crossvendor_check.py for I3. | I3 route (codex) judged from fetched metadata/abstract
+  + the card''s quoted passage, not full text: '
+superseded_by: null
+notes: 'Programme''s own prior work (self-citation, disclosed). This is H2''s LAYER-2
+  mechanism named on the social/structural side: repair acts on the possibility-space
+  structure itself (''protected reopening''), not on which move is chosen within a
+  fixed space -- the direct social-grammar counterpart to Causal Agency''s constraint
+  modulation G(x,C).'
+fetched_from_url: https://zenodo.org/api/records/18925131/files/The%20Causal%20Grammar%20of%20Structured.pdf/content
+line_or_paragraph: char offset 4360 of normalized fetched text (~paragraph 1); verbatim
+  prefix match

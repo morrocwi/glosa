@@ -1,0 +1,38 @@
+$schema: citation_card.schema.json
+id: cite-causal-agency-protoagency-001
+claim_ref: hypothesis-potential-as-readout-H2
+identifier:
+  kind: DOI
+  value: 10.5281/zenodo.18897585
+fetch_status: FETCHED
+fetched_at: '2026-09-05'
+metadata_verified: true
+metadata_verified_by: mechanical:direct_fetch
+metadata_verified_at: '2026-09-05'
+claim_match_verified: false
+claim_match_verified_by: route:codex
+claim_match_verified_at: null
+exact_passage: Systems that regulate their trajectories to remain within viable regions
+  without modifying constraint structures exhibit persistence regulation but not agency
+  in the strict sense.
+page_or_locator: p.19 (§6.6 Proto-Agency)
+scope: DIRECT_QUOTATION
+evidence_tier: definition
+independence_class: I3
+who_verified: route:codex (cross-vendor AI; abstract/metadata level, not full text)
+  -- see cite-causal-agency-protoagency-001.i3.json
+verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
+status: METADATA_OK
+xenon_ledger_ref: null
+disclosure: 'Same-session AI check only (I1) -- not yet independently verified; run
+  lit_crossvendor_check.py for I3. | I3 route (codex) judged from fetched metadata/abstract
+  + the card''s quoted passage, not full text: '
+superseded_by: null
+notes: 'Programme''s own prior work (self-citation, disclosed). This is H2''s LAYER-1
+  case named explicitly: a system that only stabilizes within an already-given viable
+  region V (Def.2) without ever modifying C is ''proto-agency'', not agency -- directly
+  grounds H2''s claim that a system ''stuck at layer 1'' is a real, named category
+  with its own name in the ancestor document, distinct from layer-2 agency.'
+fetched_from_url: https://zenodo.org/api/records/18897585/files/Causal%20Agency_A%20Persistence%20Control%20Theory%20of%20Adaptive.pdf/content
+line_or_paragraph: char offset 47975 of normalized fetched text (~paragraph 1); verbatim
+  prefix match

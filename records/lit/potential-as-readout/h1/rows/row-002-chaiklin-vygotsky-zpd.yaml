@@ -1,0 +1,33 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: H1
+source_label: "Chaiklin (2003), \"The zone of proximal development in Vygotsky's\
+  \ analysis of learning and instruction\" (quoting Vygotsky 1978, p.86)"
+how_it_sees_the_problem: >-
+  Frames "potential development" as the level a learner reaches THROUGH an assisted-
+  performance act (problem solving under adult guidance or with more capable peers),
+  set against "actual development" reached through independent problem solving.
+what_it_separates: >-
+  Separates actual developmental level (independent performance) from potential
+  developmental level (assisted performance) -- both are OPERATIONALIZED as
+  performance under a specific, demonstrable procedure, not as an abstract capacity.
+what_it_assumes: >-
+  Assumes assisted performance is a valid witness of potential (rather than, e.g.,
+  a lucky guess or an artifact of over-helping); Chaiklin's own chapter (pp.2-3)
+  spends most of its length interrogating whether the common "potential-as-property-of-
+  learner" reading over-extends Vygotsky's own narrower, procedure-bound definition.
+stance: 'YES'
+defeater_class: constitutive
+legitimate_defeater: A textual reading in which Vygotsky's "potential development"
+  denotes an unwitnessed, purely dispositional trait of the learner (readable off
+  a test score alone, with no assisted-performance act required) would defeat this
+  row.
+what_it_would_say_against_us: >-
+  Chaiklin's own critique (the "potential assumption" section) warns that later
+  users of ZPD collapse it into a vague trait-like "readiness to learn" detached
+  from the assisted-performance procedure -- if H1 is read too loosely it risks
+  the same collapse Chaiklin warns against, turning "witnessed" into a rhetorical
+  gesture rather than an actual bounded procedure.
+citation_card: cite-chaiklin-vygotsky-zpd-002
+verified:
+  metadata_verified: true
+  claim_match_verified: true

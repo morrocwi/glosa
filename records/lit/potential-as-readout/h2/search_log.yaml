@@ -1,0 +1,182 @@
+$schema: search_log.schema.json
+id: search-potential-as-readout-001
+claim_or_hypothesis_ref: h2
+search_mode: RAPID_EVIDENCE_CHALLENGE
+frozen_scope:
+  hypothesis_or_falsifier: 'H2 (potential-as-readout): Potential has two layers -- choosing within a given
+    constraint structure (layer 1: which admissible move a system selects from the set the structure already
+    permits) and changing the structure itself (layer 2: modulating the constraint structure that defines
+    what is admissible in the first place -- Causal Agency''s constraint modulation C_{t+1}=G(x_t,C_t)
+    with dC/dx != 0 and d(persistence)/dC * dC/dx > 0; Causal Grammar''s repair, the protected reopening
+    of a compressed possibility space). The recoverable gap is the difference between what layer-1 choice
+    alone can reach and what layer-2 structural change can reach -- a system stuck at layer 1 (Causal
+    Agency''s "proto-agency") may have zero recoverable gap even while distress persists, because the
+    compression lives in the structure, not in which admissible move was chosen. Falsifier: a documented
+    case where all available evidence shows a system/actor exercising only layer-1 choice (no constraint-structure
+    modification is present or occurring) yet the outcome differences attributed to "potential" are fully
+    explained without reference to any layer-2 structural change -- i.e., the two-layer split adds no
+    distinguishing power over a single undifferentiated notion of "capacity to act".'
+  question_type: mechanism
+  concepts_synonyms_vocabulary:
+  - capability approach
+  - conversion factors
+  - combined capabilities
+  - internal capabilities
+  - empowerment (information-theoretic)
+  - channel capacity
+  - self-efficacy
+  - self-determination theory
+  - autonomy
+  - agency (sociology)
+  - structuration
+  - structure and agency
+  - morphogenesis
+  - constraint structure
+  - constraint modulation
+  - repair (causal grammar)
+  - women's empowerment
+  - resources agency achievements
+  - well-being freedom
+  - proto-agency
+  - two-layer agency
+  - ตัวแทนการกระทำ (agency ภาษาไทยเชิงแนวคิด)
+  inclusion_exclusion_rules: 'INCLUDE: sources that (a) formally or conceptually distinguish choosing-within-a-given-set
+    from changing-the-set-itself for potential/capability/agency/empowerment, (b) define capability, conversion
+    factor, empowerment, self-efficacy, or agency in a way that separates an internal/ exercised layer
+    from a structural/enabling layer, (c) the programme''s own Causal Agency and Causal Grammar source
+    documents (Defs 1-3, Table 1) since H2 is a direct restatement-check against them, (d) sociological
+    structure/agency literature (Giddens, Archer, Emirbayer & Mische) that names an analogous two-layer
+    or duality-of-structure split. EXCLUDE: sources purely about a single-layer capacity measure with
+    no structural/enabling-condition distinction at all; AI capability benchmarks unrelated to human/social
+    agency; marketing material.'
+  time_window: 1977-2026 (no lower bound tightened -- Bandura 1977 and Giddens 1984 are the intended historical
+    anchors for this hypothesis, not excluded as "too old")
+  language_strategy: EN primary (all major sources are EN-language philosophy/psychology/ sociology/information-theory
+    literature); no TH-language primary source located for this specific mechanism -- see local_track.
+  global_sources:
+  - Zenodo (programme's own Causal Agency, Causal Grammar records)
+  - arXiv (Salge/Glackin/Polani 2014, 1310.1863)
+  - Crossref API (metadata + abstract where available)
+  - Unpaywall API (OA location lookup)
+  - Semantic Scholar Graph API (OA PDF location, abstract where not elided)
+  - Wayback Machine (web.archive.org, for a bot-blocked live URL)
+  - selfdeterminationtheory.org (author-hosted OA PDF)
+  - local pre-fetched copy: cpg_research_journal/.../paper/sources/klyubin2005.pages.txt
+  local_context_sources: []
+  search_date: '2026-09-05'
+  stopping_rule: Stop once every source named in the task brief has been attempted via its named route
+    (direct PDF, Unpaywall, Wayback, or local copy) and either fetched with a verbatim passage or logged
+    as record-only with the access attempt disclosed -- whichever comes first per source. No open-ended
+    additional searching beyond the named list (RAPID_EVIDENCE_CHALLENGE scope, not a fresh systematic
+    search).
+  conflicts_of_interest: None disclosed for external sources. The Causal Agency and Causal Grammar sources
+    are the programme's own prior work (same research programme as H2); this is a reflexive check of H2
+    against its own stated ancestors, disclosed rather than hidden -- these two cards are read for definitional
+    restatement accuracy, not sought as independent support.
+  access_limits: 'No institutional library subscription. Nussbaum 2003 (Feminist Economics, Taylor & Francis)
+    is fully paywalled: Unpaywall found no OA location, Crossref/Semantic Scholar carry no abstract text
+    (publisher-elided), and the one Green-OA repository copy Semantic Scholar named (hermes-ir.lib.hit-u.ac.jp)
+    does not resolve in DNS from this environment -- logged NOT_OBTAINED, record-only, not skipped silently.
+    Bandura 1977 (Psychological Review): several named open-access mirror URLs (uky.edu, wilderdom.com,
+    ccnmtl.columbia.edu) were attempted and each failed (timeout, blocked/redirected, or empty response)
+    within this session''s network access -- logged NOT_OBTAINED, record-only. Robeyns 2017 (Open Book
+    Publishers OA chapter): the publisher site and OAPEN repository both returned bot-challenge responses
+    (HTTP 403 / Anubis challenge) to automated fetch in this session -- logged NOT_OBTAINED, record-only.
+    Giddens 1984 and Archer 1995 are books with no open chapter-level full text located within scope;
+    carried as bibliographic record cards only, per task instruction.'
+queries:
+  support:
+  - Causal Agency Zenodo 18897585 Definition 1 2 3 constraint structure persistence
+  - Causal Grammar of Structured Coexistence Zenodo 18925131 Table 1 repair possibility space
+  - Klyubin 2005 empowerment channel capacity actuator sensor
+  - Salge Glackin Polani 2014 Empowerment An Introduction arXiv 1310.1863 actuation possibilities
+  - Robeyns 2017 capability approach conversion factors personal social environmental
+  - Nussbaum 2003 capabilities fundamental entitlements combined internal capabilities
+  - Bandura 1977 self-efficacy toward a unifying theory of behavioral change
+  - Bandura 2001 social cognitive theory agentic perspective
+  - Ryan Deci 2000 self-determination theory facilitation intrinsic motivation autonomy competence
+  challenge:
+  - Emirbayer Mische 1998 What Is Agency structure temporal
+  - Giddens 1984 constitution of society structure rules resources duality
+  - Archer 1995 realist social theory morphogenesis structure agency
+  - Bazzani 2023 Theory and Society agency conversion factors micro meso macro
+  - Sen 1985 Dewey Lectures well-being agency freedom
+  - Kabeer 1999 resources agency achievements measurement women empowerment
+sources_found:
+- cite-causal-agency-defs-001
+- cite-causal-grammar-table1-001
+- cite-klyubin2005-001
+- cite-salge-empowerment-intro-001
+- cite-ryandeci2000-001
+- cite-bandura2001-agentic-001
+- cite-kabeer1999-001
+- cite-bazzani2023-001
+- cite-robeyns2017-001
+- cite-nussbaum2003-001
+- cite-bandura1977-001
+- cite-emirbayer-mische1998-001
+- cite-giddens1984-001
+- cite-archer1995-001
+- cite-sen1985-001
+- cite-causal-agency-protoagency-001
+- cite-causal-grammar-repair-001
+prisma_counts: null
+global_track:
+  summary: 'Three independent literatures converge on the same two-layer split H2 proposes. (1) The programme''s
+    own ancestors state it formally: Causal Agency Def.3 (p.18) requires C_{t+1}=G(x_t,C_t) with dC/dx
+    != 0 AND d(persistence)/dC * dC/dx > 0 for "agency" -- a system that only stabilizes within an already-given
+    viable region V (Def.2) but never modifies C is named "proto-agency", not agency; Causal Grammar Table
+    1 (p.4) independently encodes the same split socially: "Tension"/"Conflict" regimes leave possibility-space
+    contested/stable (layer 1 still open) while "Violence" compresses it and only "Repair" (protected
+    reopening of the structure itself) reopens it -- repair is explicitly layer-2 action on the structure,
+    not a layer-1 move within it. (2) The capability/agency literature draws the same line under different
+    names: Bandura 2001''s agentic perspective distinguishes "personal agency" operating within "a broad
+    network of sociostructural influences" from being "producers as well as products of social systems"
+    (the production side is layer-2); Kabeer 1999 explicitly separates the "conditions of choice" (the
+    structural parameters) from the exercise of choice itself, and frames empowerment as the process of
+    *acquiring* the ability to make strategic choices (a layer-2 gain), not merely making them (layer-1);
+    Bazzani 2023''s abstract proposes agency as "a conversion process of personal resources shaped by
+    conversion factors" operating at "micro, meso, and macro levels", i.e., structural factors external
+    to any single layer-1 choice. (3) The information-theoretic empowerment literature (Klyubin 2005,
+    Salge/Glackin/Polani 2014) gives layer-1 a precise readout (empowerment = channel capacity of the
+    actuation-to-sensor channel, a property of the CURRENT sensor/actuator coupling) while explicitly
+    showing this quantity is itself a function of "what the agent''s sensors and actions are" (Salge et
+    al. p.19) -- i.e., empowerment is layer-1''s readout GIVEN a fixed structure, and changing that structure
+    (the sensor/actuator endowment itself) is a distinct, higher-order move the same papers gesture at
+    (evolutionary sensor/actuator selection) without formalizing as a two-layer system the way Causal
+    Agency does. Ryan & Deci 2000 supports the premise that a real distinction exists between exercising
+    an innate capacity and the social-contextual conditions that "facilitate versus forestall" it, but
+    does not itself formalize a layer-1/layer-2 split at the level of a recoverable-gap quantity.'
+  strength_note: 'No source found tests H2''s specific quantitative claim (a recoverable gap defined as
+    the difference between what layer-1 choice reaches and what layer-2 structural change reaches) as
+    a measured quantity; the programme''s own two source documents (Causal Agency, Causal Grammar) state
+    the two-layer distinction as a formal/conceptual claim (tier: definition, as read from their own Def.2/Def.3/Table
+    1 -- not independently proven here) and the external literature converges on the SAME distinction
+    under different vocabulary (Dr: well-specified conceptual/ empirical claims in peer-reviewed venues,
+    not independently re-derived by this search). This is convergent conceptual support across independent
+    literatures, not a mechanism test.'
+local_track:
+  summary: No Thai-language or Thailand/SEA-specific primary source was located for this specific mechanism
+    (layer-1-choice vs layer-2-structure-change) within the scope of this rapid search; the concept vocabulary
+    list included a Thai search term but no distinct local-context source was found and carried, unlike
+    the sibling H1 review in this same problem which did find Thailand-specific citizen-science material.
+    This is a search-coverage gap, not a claim that no such literature exists.
+  result: NOT_FOUND
+transfer_verdict: null
+summary_disclaimer: 'This is a RAPID_EVIDENCE_CHALLENGE (not a systematic review): 15 sources logged from
+  15 named targets (the task brief specified exact sources rather than an open query), one search episode
+  (2026-09-05). WAS found and fetched with verbatim passages: the programme''s own Causal Agency (Def.1-3,
+  constraint modulation) and Causal Grammar (Table 1, repair) source PDFs from Zenodo; Klyubin 2005 empowerment/channel-capacity
+  definition (local pre-fetched copy); Salge/Glackin/ Polani 2014 empowerment-depends-on-actuation-possibilities
+  passage (arXiv PDF); Ryan & Deci 2000 autonomy/innate-needs passage (author-hosted OA PDF); Bandura
+  2001 agentic-perspective abstract (Crossref); Kabeer 1999 resources/agency/achievements abstract (Crossref);
+  Bazzani 2023 conversion-factors abstract (Wayback Machine snapshot of a live URL that was bot-blocked
+  on direct fetch). NOT obtained despite a real access attempt via the route named in the task brief (Unpaywall
+  / named OA mirror / Wayback), logged record-only rather than skipped: Nussbaum 2003 (fully paywalled,
+  no OA location, no abstract text available from any queried metadata API, the one named Green-OA repository
+  domain does not resolve), Bandura 1977 (three named OA mirror URLs each failed to serve content in this
+  session), Robeyns 2017 (publisher + OAPEN both returned bot-challenge responses). Carried as bibliographic
+  record only, per task instruction, with no online full-text search attempted: Emirbayer & Mische 1998,
+  Giddens 1984, Archer 1995, Sen 1985. NOT found in either family: any source that measures H2''s recoverable-gap
+  quantity directly, or any Thai/SEA-specific source on this mechanism. Absence of a direct test is a
+  search-coverage fact, not evidence for or against H2 (NC-27).'

@@ -1,0 +1,53 @@
+$schema: citation_card.schema.json
+id: cite-aristotle-metaphysics-theta-001
+claim_ref: H1
+identifier:
+  kind: OFFICIAL_URL
+  value: https://classics.mit.edu/Aristotle/metaphysics.9.ix.html
+fetch_status: FETCHED
+fetched_at: '2026-09-05'
+metadata_verified: true
+metadata_verified_by: 'manual: WebFetch of classics.mit.edu (MIT Internet Classics
+  Archive, public-domain W.D. Ross translation), page confirmed as Aristotle Metaphysics
+  Book IX (Theta), Part 1'
+metadata_verified_at: '2026-09-05'
+claim_match_verified: true
+claim_match_verified_by: this session (manual read/verification; the route:codex
+    I3 cross-vendor attempt below FAILED with a usage-limit error, not a content
+    judgment -- reverted to the prior manual verification rather than leaving a
+    false false-verdict on record)
+claim_match_verified_at: '2026-09-05'
+exact_passage: For one kind is a potency of being acted on, i.e. the originative source,
+  in the very thing acted on, of its being passively changed by another thing or by
+  itself qua other; and another kind is a state of insusceptibility to change for
+  the worse and to destruction by another thing or by the thing itself qua other by
+  virtue of an originative source of change.
+page_or_locator: Metaphysics Book IX (Theta), Part 1
+scope: DIRECT_QUOTATION
+evidence_tier: definition
+independence_class: I1
+who_verified: this session (manual verification; I3 cross-vendor attempt failed,
+  see disclosure)
+verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
+status: METADATA_OK
+xenon_ledger_ref: null
+disclosure: 'Ross translation, public domain, hosted by MIT Internet Classics Archive.
+  Aristotle here defines dynamis (potency/potentiality) as an ORIGINATIVE SOURCE OF
+  CHANGE located in a determinate thing (the thing acted on, or the agent itself "qua
+  other") -- a bounded, thing-indexed causal power, not an open/unbounded possibility
+  space. This is consistent with H1''s claim that potential is not a mere open declaration,
+  but the passage itself does not use language of "witnessing" or "finite enumeration"
+  -- those are this project''s own vocabulary, not Aristotle''s. Read as a partial,
+  structural precursor (a definite source-of-change framing) rather than a full statement
+  of H1''s finite-enumerable-witnessed-set claim. | I3 route (codex) judged from fetched
+  metadata/abstract + the card''s quoted passage, not full text: '
+superseded_by: null
+notes: Also fetched the opening sentence of Part 1 ("WE have treated of that which
+  is primarily and to which all the other categories of being are referred -- i.e.
+  of substance.") as a second, independently checkable anchor point on the same page,
+  confirming this is genuinely Metaphysics IX Part 1 and not a mis-scoped fetch. Two
+  separate WebFetch calls against classics.mit.edu returned mutually consistent, cross-checkable
+  verbatim text on both occasions.
+fetched_from_url: https://classics.mit.edu/Aristotle/metaphysics.9.ix.html
+line_or_paragraph: char offset 1824 of normalized fetched text (~paragraph 1); verbatim
+  prefix match

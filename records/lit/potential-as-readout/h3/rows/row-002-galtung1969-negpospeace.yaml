@@ -1,0 +1,35 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: H3
+source_label: Galtung (1969), "Violence, Peace, and Peace Research", p.183 (Journal
+  of Peace Research 6(3))
+how_it_sees_the_problem: >-
+  Splits peace into "negative peace" (absence of personal/direct violence) and
+  "positive peace" (absence of structural violence), warning these are two
+  distinct "sides of a coin," neither alone being the whole picture.
+what_it_separates: >-
+  Separates the ABSENCE of visible/personal violence from the absence of
+  structural violence -- exactly the separation H3's "observed calm" (negative
+  peace only) vs. "real peace" distinction needs as its textual anchor.
+what_it_assumes: >-
+  Assumes the two forms of violence/peace are cleanly separable analytic
+  categories; in practice (as later critics of Galtung note) structural and
+  direct violence often causally interact, which H3 must also navigate when it
+  treats "blocked correction channel" as a further, third axis alongside calm
+  and potential.
+stance: 'YES'
+defeater_class: structural_formal
+legitimate_defeater: A demonstration that negative and positive peace are not
+  independently assessable in practice (i.e. that "observed calm" cannot be
+  measured separately from structural conditions) would undercut using this
+  passage as H3's anchor for a THREE-valued (not two-valued) gate.
+what_it_would_say_against_us: >-
+  Galtung's own two-term split (negative/positive peace) does not by itself
+  require a THIRD axis (a "blocked correction channel" distinct from structural
+  violence itself) -- H3 may be adding a distinction beyond what this specific
+  1969 passage licenses; the correction-channel axis draws more on Pettit's
+  non-domination framing (see cite-pettit-globalrepublican-005) than on Galtung
+  here.
+citation_card: cite-galtung1969-negpospeace-002
+verified:
+  metadata_verified: true
+  claim_match_verified: true
