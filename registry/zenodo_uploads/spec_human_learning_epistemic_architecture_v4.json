@@ -1,0 +1,53 @@
+{
+ "file": "dist/Human_Learning_as_Epistemic_Architecture_v4_2026-06-28.pdf",
+ "title": "Human Learning as Epistemic Architecture: A Method for Word Mapping, Life-Concept Graphs, Constraint Testing, and Corrigible Agency in the AI Age (revised v4 preprint, 28 June 2026)",
+ "upload_type": "publication",
+ "publication_type": "preprint",
+ "publication_date": "2026-06-28",
+ "description_html": "<p><b>Status.</b> Revised v4 preprint (28 June 2026), not peer reviewed. Programme manuscript in the Human-AI Readout Programme / series <i>When AI Expands Human Potential</i> (index DOI 10.5281/zenodo.22308201); cited as reference [2] by <i>CTSA Human-Return Readout</i> (DOI 10.5281/zenodo.22339909). Deposited 5 September 2026 with the manuscript unchanged from its 28 June 2026 state.</p><p><b>Abstract.</b> This paper rewrites the human–AI learning project with human learning at the center. It does not argue that human beings should learn like artificial intelligence. Rather, it asks what can be carefully extracted from language-model and representational AI architecture for the renewal of reflective, language-mediated human learning: the movement from inputs to representations, from representations to relations, from relations to retrieval, from retrieval to evaluation, and from evaluation to update. The paper translates these architectural principles into a human-centered method beginning with lived words, not abstract information. A word is treated as a site where experience, memory, emotion, social pressure, value, goal, constraint, evidence, and action converge. From this starting point, the paper develops a model of life-world lexical mapping, meaning neighborhoods, personal knowledge graphs, retrieval-augmented inquiry, constraint testing, reflective dissonance, and disciplined revision. The central thesis is that human learning in the AI age should be organized not as information storage but as a revisable epistemic architecture through which learners become more corrigible, world-answerable, self-aware, and responsible agents. The paper makes four contributions beyond restating established educational theory. First, it argues that the architecture lens is generative rather than decorative, identifying five design commitments—representation-first ordering, retrieval by default, separation of candidate generation from validation, transfer as the criterion of success, and versioned belief-state—that prior theories permit but do not require, and unifying them under a single rationale. Second, it grounds its central wager—that productive friction deepens learning while fluent completion can hollow it—in the cognitive literatures that bear on it directly (the illusion of explanatory depth, desirable difficulties, cognitive load, self-explanation, metacognition, and cognitive offloading), defending rather than weakening the claim by specifying the kind of difficulty the method introduces. Third, it adds a constitutive dialogical and structural layer and a confound-resistant validation design, so that the method's claim to cultivate open, corrigible agency can be empirically tested rather than merely asserted. Fourth, it extends the pipeline beyond belief revision to competence: it maps the problem-contexts in which a concept does work, anchors new concepts to known ones, selects context-appropriate tools, assembles a workflow, and consolidates understanding into skill through deliberate practice and real-world feedback—so that the architecture cultivates not only corrigible belief but corrigible competence, and guards against the inert knowledge that decontextualized learning produces. AI is valuable not when it replaces judgment or accelerates closure, but when it helps learners expose hidden meanings, compare alternatives, test assumptions, and revise their models under resistant conditions.</p>",
+ "keywords": [
+  "human learning",
+  "epistemic agency",
+  "artificial intelligence in education",
+  "constraint-first epistemology",
+  "retrieval-augmented inquiry",
+  "corrigible agency",
+  "personal knowledge graph",
+  "word mapping",
+  "reflective dissonance",
+  "desirable difficulties",
+  "cognitive offloading",
+  "Human-AI Readout Programme"
+ ],
+ "language": "eng",
+ "version": "v4-revised-2026-06-28",
+ "related": [
+  {
+   "identifier": "10.5281/zenodo.19215748",
+   "relation": "continues"
+  },
+  {
+   "identifier": "10.5281/zenodo.22339909",
+   "relation": "isReferencedBy"
+  },
+  {
+   "identifier": "10.5281/zenodo.19205869",
+   "relation": "references"
+  },
+  {
+   "identifier": "10.5281/zenodo.22308201",
+   "relation": "isPartOf",
+   "resource_type": "publication-other"
+  },
+  {
+   "identifier": "10.5281/zenodo.22301552",
+   "relation": "isPartOf",
+   "resource_type": "publication-other"
+  },
+  {
+   "identifier": "10.5281/zenodo.22301459",
+   "relation": "isPartOf",
+   "resource_type": "publication-other"
+  }
+ ]
+}
