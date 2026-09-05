@@ -78,7 +78,7 @@ self-reinforcing loop with no outside check). Only a linked independent-check ar
 This is `design/SESSION_ARCH_v0.4_SPEC.md` §4's new Family J non-collapse row, `NC-77`, proposed
 this pass. **Not yet added to `methodology/data/non_collapse_table.json` or the disclaimer
 catalogue** — those data files are outside this task's ownership list; `design/
-FOUNDATION_v0.7_PATCH.md` §4 specifies the exact row text, and `cpg/research/coordination/
+FOUNDATION_v0.7_PATCH.md` §4 specifies the exact row text, and `the internal command-center/research/coordination/
 DECISIONS.yaml` must reserve the `NC-77` id before any concurrent Family J proposal can claim it
 (`design/SESSION_ARCH_v0.4_SPEC.md` §7, founder decision 3) — a founder-owned ledger write, not an
 AI one.

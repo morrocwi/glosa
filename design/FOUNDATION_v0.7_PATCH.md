@@ -309,7 +309,7 @@ exact fix required before it may build.
 ### 11.1 `SA-4` — `chi_recip`/`m^H`/`m^AI` decline, logged
 Fix 3 off-by-1/2 line citations (`v7.1:550→548`, `:552→550`, `:494→495`) and drop the irrelevant
 4th citation (`FOUNDATION_v0.6.md:1670`, unrelated boilerplate) before logging. Target:
-`cpg/research/coordination/DECISIONS.yaml` (`status: RECORDED`, not the fabricated
+the internal command-center's DECISIONS ledger (private) (`status: RECORDED`, not the fabricated
 `DECLINED-FOR-NOW` value, not in that ledger's status enum), mirrored in `glosa/DECISIONS.md`.
 Founder decision needed (§15.5).
 
@@ -424,7 +424,7 @@ one-home violation). Founder decision needed (§15.2).
 
 **Reservation note (spec §7 decision 3):** the id `NC-77` is independently verified free (next
 unused Family J id, confirmed by direct read of the table as it stands at `NC-76`), but reserving
-it in `cpg/research/coordination/DECISIONS.yaml` is a founder-owned ledger write before any
+it in the internal command-center's DECISIONS ledger (private) is a founder-owned ledger write before any
 concurrent Family J proposal can claim it — not an AI-owned act. Pending founder, §15.3.
 
 ---
@@ -453,7 +453,7 @@ Problem Card readiness summary. Mandatory: `false` (flag, not a hard gate — pe
    and §12.4 can be merged into one build.
 2. **Merge duplicate proposals** — confirm §1 (`SA-1`) canonical, §12.4
    (`kernel.session-boundary-momentum-reset-assertion`) retired without a separate build.
-3. **Reserve `NC-77`** in `cpg/research/coordination/DECISIONS.yaml` before any concurrent Family J
+3. **Reserve `NC-77`** in the internal command-center's DECISIONS ledger (private) before any concurrent Family J
    proposal can claim the id (§13).
 4. **`SA-3`/HU-2 retroactivity** — whether the new required/optional Problem Card fields apply to
    already-published Problem Cards, or forward-only. **Spec's recommended default:
