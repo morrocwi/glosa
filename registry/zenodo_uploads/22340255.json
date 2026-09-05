@@ -1,0 +1,14 @@
+{
+ "deposition_id": 22340255,
+ "doi": "10.5281/zenodo.22340255",
+ "version": "0.4.1",
+ "head_commit": "3096b49",
+ "tag": "v0.4.1",
+ "status": "published",
+ "founder_instruction": "ทำให้เลย (2026-09-05, BBL-2026-09-05-122) — founder away; explicit instruction to complete the pending items and release",
+ "files": [
+  "glosa-0.4.1-3096b49.tar.gz",
+  "glosa-concept-paper-0.2.0-draft.pdf",
+  "UPLIFT_NOTE_2026-09-05.pdf"
+ ]
+}

@@ -142,7 +142,7 @@ judgment against the DAG. Full, generated, one-row-per-card table (never hand-ed
 
 ### Documents of record
 
-- **Repository DOI (this release):** 10.5281/zenodo.22334376 (concept DOI
+- **Repository DOI (this release):** 10.5281/zenodo.22340255 (concept DOI
   10.5281/zenodo.22301059).
 - **Concept paper (v0.2.0):** 10.5281/zenodo.22307841 — English, arXiv two-column; source
   `paper/glosa-concept-paper/main.tex`; claims `projects/GLS-2026-001_rigour-without-infrastructure/claims/`;

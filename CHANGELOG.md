@@ -1,6 +1,6 @@
 # CHANGELOG
 ## 0.4.1 — 2026-09-05
-Zenodo: the 0.4.1 version record is **not yet deposited** (the deposit step could not be run from the release session; founder to run `scripts/zenodo_deposit.py new-version` → upload → `publish`). Until then the concept DOI 10.5281/zenodo.22301059 resolves to 0.4.0 (10.5281/zenodo.22334376), which is what `CITATION.cff` still names.
+Zenodo: repository DOI for this version 10.5281/zenodo.22340255 (concept DOI 10.5281/zenodo.22301059).
 Founder decisions resolved this pass (founder, delegated "ทำให้เลย", BBL-2026-09-05-122;
 `DECISIONS.md` 2026-09-05, both rows), and the code those decisions call for:
 

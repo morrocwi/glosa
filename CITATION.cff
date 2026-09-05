@@ -1,4 +1,4 @@
-# NOTE: DOI 10.5281/zenodo.22334376 is reserved and resolves once the matching Zenodo version is
+# NOTE: DOI 10.5281/zenodo.22340255 is reserved and resolves once the matching Zenodo version is
 # published (v0.3.0 is published together with the v0.3.0 push).
 # (public working release, not peer reviewed, no independent check yet). Tier: Dr.
 cff-version: 1.2.0
@@ -9,7 +9,7 @@ date-released: 2026-09-05
 license: CC-BY-4.0
 identifiers:
   - type: doi
-    value: 10.5281/zenodo.22334376
+    value: 10.5281/zenodo.22340255
     description: "Zenodo record (reserved 2026-09-04; version DOI; concept 10.5281/zenodo.22301059)"
 repository-code: "https://github.com/morrocwi/glosa"
 authors:

@@ -21,9 +21,9 @@
   "bucket": "https://zenodo.org/api/files/<bucket-redacted>"
  },
  "latest": {
-  "deposition_id": 22334376,
-  "doi": "10.5281/zenodo.22334376",
-  "version": "0.4.0",
-  "head_commit": "22d63bf"
+  "deposition_id": 22340255,
+  "doi": "10.5281/zenodo.22340255",
+  "version": "0.4.1",
+  "head_commit": "3096b49"
  }
 }
