@@ -355,3 +355,26 @@ already carry, disclosed here rather than hidden).
   larger fixture set (several targeting `dialogue_table.md`/`claim_card.provenance_dag`/
   `human_mastery_gate.yaml`, artifacts this task's ownership list does not cover) left for a
   separate task rather than folded in here under an approximate name match.
+
+## H3 falsifier simulation (proxy)
+
+Tier: **finite_diagnostic** -- an exact tally over one fixed 40-card selection drawn from `tests/sim/corpus/` (built by `tests/sim/gen_corpus.py`), this run, today. **This is a PROXY, not a real cross-vendor (I3) run** -- no second vendor is invoked anywhere; both routes are deterministic Python run in this one process. A real I3 run remains the decisive test for H3.
+
+H3 as stated: cross-vendor (I3) checking of claim cards catches undisclosed AI-fill / undisclosed assumptions at a higher rate than same-vendor re-checking. Route A (same-vendor proxy) = the maker's own field-completeness check (is every disclosure field present/non-empty, never cross-field). Route B (cross-route proxy) = the kernel's independent rules 27 (`_hidden_ai_fill_error`), 28 (`_inflated_bearing_errors`), 26 (`_composite_quote_error`), called directly.
+
+| defect class | n | route A caught | route B caught |
+|---|---|---|---|
+| hidden_ai_fill | 8 | 0 | 8 |
+| hidden_ai_fill_unmarked | 8 | 0 | 0 |
+| inflated_bearing | 8 | 0 | 8 |
+| composite_quote | 8 | 0 | 8 |
+| same_vendor_review | 8 | 0 | 0 |
+| **total** | **40** | **0** | **24** |
+
+Difference (B - A): **24**. Falsifier direction: **SUPPORTED_IN_THIS_PROXY (route B out-caught route A)** -- reported honestly whichever way it came out (B <= A would defeat H3 in this proxy, per this task's own instruction).
+
+Controls (Fail-Able Gate Law, BBL-119): passing control (clean fixture) -> route A findings [], route B findings []. Failing control (a known `hidden_ai_fill` fixture) -> route A findings [], route B findings ["rule27: five_questions.seen.ai_assisted_fields names a field with AI involvement (['access_model']) that ai_filled does not correspondingly disclose -- contradiction between disclosure records"].
+
+Corpus-construction caveat: every seeded defect leaves every field non-empty (semantically wrong, never blank), so route A's 0/40 is guaranteed by how the corpus was built, not an empirical finding about same-vendor checks in general. Route A is deliberately the weakest honest maker-side check, so the difference measures rule-set independence inside one process, not vendor independence; H3 as a hypothesis keeps tier `Open` until a real I3 run exists.
+
+Caveat disclosed plainly: `same_vendor_review` (8 of the 40) is a class route B's rules 27/28/26 are not designed to reach at all -- included so this N=40 is not curated to guarantee a B-wins outcome. Full per-card findings: `tests/sim/h3/h3_results.json`.

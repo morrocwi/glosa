@@ -1,4 +1,55 @@
 # CHANGELOG
+## 0.4.1 — 2026-09-05
+Founder decisions resolved this pass (founder, delegated "ทำให้เลย", BBL-2026-09-05-122;
+`DECISIONS.md` 2026-09-05, both rows), and the code those decisions call for:
+
+- **Kernel rules shipped:** rule 22 (`INTAKE-TIER-UNTIERED`, WARNING-only, `citations[].intake_tier`/`intake_tier_reason`/`global_south_exempt`), rule 24 (`PCS-JOINT-CONDITION`: ERROR only when closure-timing AND absence-of-adaptation both hold, WARNING otherwise; PCS row added to `methodology/data/contaminated_concept_table.json`, distinct from clinical premature closure; still needs an out-of-lexicon holdout test plus an independent adversarial review, per `design/FOUNDATION_v0.6_PATCH.md` §6, before its ERROR branch should be treated as release-grade), rule 25 (`DISCOVERY-STAGE-ABSENT`, WARNING-only, `search_log.candidate_set_stage`), and the `D-SCOPE-CONTEXT` disclaimer (per-instance scope clause on health/legal-domain claim cards). Fail fixture + failing/passing controls for each; 269 tests + H3 test.
+- **H3 falsifier simulation built and run** (`methodology/H3_falsifier_sim.py`, `tests/sim/h3/`, report section in `tests/sim/report.md`): N=40, route A (maker field-presence check) 0/40, route B (kernel rules 26/27/28) 24/40. Tally tier `finite_diagnostic`; H3 itself stays `Open` — this is an in-process proxy, not a cross-vendor run.
+- **Retired:** `kernel.session-boundary-momentum-reset-assertion` (duplicate of SA-1). **Ratified:** NC-77 reserved, SA-3 forward-only, SA-4 decline RECORDED, `hypothesis_selection.session_id` wiring.
+
+- **`design/FOUNDATION_v0.6.md`'s 6 `PENDING FOUNDER DECISION` blocks — all resolved to `DECIDED`**
+  (5 were `design/DAG_v0.3.yaml` `human_decision_needed: true` nodes; the 6th, the genre-router
+  layer-confusion diagnostic, was never a DAG-mandated founder gate and is resolved as a design
+  decision instead): `kernel.pcs-red-flag` — YES, narrow definition (rule 24, both closure-timing
+  AND absence-of-adaptation must hold jointly); `foundation.s5-scope-boundary-per-instance` —
+  per-instance scope clause + explicit context/jurisdiction check, no standardized boilerplate;
+  `foundation.s7.9-intake-tier-flag` — thin flag on the existing AACODS-style checklist (rule 22),
+  Global South exemption kept; `schema.prereg-gate-fields` — **dropped**, sim reason only (zero
+  fixtures on the corpus, no defect demonstrated — Fail-Able Gate Law, BBL-119); `foundation.s1.0-
+  ashari-ontology-analogue` — 2 of 3 constructs (Dependent Identity → grounding/ontological-
+  dependence; Directed Selection → Principle of Sufficient Reason) adopted as theology-neutral,
+  labelled structural analogues, cited kc-ep-030/kc-ep-034; kasb and the five registers of faqr
+  are NOT given analogues; `foundation.lrs-discovery-loop-extension` — adopted as an optional S14
+  stage (rule 25), extension not replacement, underlying agenda claim (kc-aihp-008/009) stays
+  `[Open]`. See `design/DAG_v0.3.yaml`/`design/DAG_v0.3.md` per-node `decision:` fields and
+  `design/FOUNDATION_v0.6.md`'s own `DECIDED` block headers.
+- **`design/FOUNDATION_v0.7_PATCH.md` / `design/SESSION_ARCH_v0.4_SPEC.md` §7 — 4 of the 11
+  founder decisions there resolved**: (1) Session object stays a logical join across Blackbox
+  Note + `hypothesis_selection.yaml` + `problem_card.yaml` + `kg_edge.yaml`, no new
+  `session.yaml`; (2) `kernel.session-boundary-momentum-reset-assertion` **retired, status
+  `closed`**, as a duplicate of `session.boundary-blackbox-note` (SA-1) — same fields
+  (`ai_state_at_boundary`), same defeater, originally pointed at the wrong FOUNDATION section
+  (§2.3 R0/R1/R2 instead of the Blackbox Note directly); no separate build proceeds under this id
+  (see `FOUNDATION_v0.7_PATCH.md` §12.4); (4) `SA-3`/HU-2's three new required Problem Card
+  fields apply **forward-only**, not retroactively to already-published Problem Cards; (5) `SA-4`
+  ledger row ratified — log the `chi_recip`/`m^H`/`m^AI` decline as `status: RECORDED` in
+  `DECISIONS.yaml` (not the fabricated `DECLINED-FOR-NOW` value); the 3 citation fixes named in
+  `FOUNDATION_v0.7_PATCH.md` §11.1 are still owed before that row is actually written; (6) `NC-77`
+  reserved; (7) H3 sim approved, built and run; (8) `hypothesis_selection.session_id` wiring ratified.
+  4 Part-2 items remain pending founder (the rule29/30 namespace confirmation, `chooser_reaffirmed`
+  scope, the `schema.blackbox-language-bridge-subfield` withdrawal confirmation, and rule31
+  ratification) — see
+  `FOUNDATION_v0.7_PATCH.md` §15 for the full, current list.
+- `methodology/P13_literature_review.md`: added the two decided sections above as protocol text —
+  the optional S14 discovery-routing stage (`k_epi` gate, extension-only, `discovery_routing`
+  additive manifest block, kernel `rule25` shipped as the thin WARNING-only `candidate_set_stage` check) and the claim-tier intake flag
+  (`intake_tier`/`intake_tier_reason`/`global_south_exempt` on `citations[]`, kernel `rule22`
+  shipped, WARNING-only). Both carry the sim caveat forward: no fixtures exist yet for the discovery-routing
+  mechanism, and the intake-tier flag's prior measured delta was produced by a different proxy and
+  is not evidence for this mechanism.
+- No novelty/priority language; comparisons stated same/different/cited only; no vendor/AI name
+  credited anywhere in this entry (rule 6, CLAUDE.md rule 9).
+
 ## 0.4.0 — in preparation
 - Published: repository DOI 10.5281/zenodo.22334376 (concept 10.5281/zenodo.22301059); files: source archive, concept paper PDF, uplift note PDF. GitHub tag v0.4.0 pending founder push.
 - Session-architecture review (`design/SESSION_ARCH_v0.4_SPEC.md`, both parts, 25 proposals
@@ -32,11 +83,16 @@
   by itself evidence of expansion vs. tunnel; only a linked independent check may set the sign.
   Reservation of the id in the internal command-center's DECISIONS ledger (private) is a pending founder act
   (`design/FOUNDATION_v0.7_PATCH.md` §13, §15.3).
-- **Pending founder decision (recommended text specified, not ratified):** 10 decisions carried
-  forward from `design/SESSION_ARCH_v0.4_SPEC.md` §7 and its Part-2 additions — see
-  `design/FOUNDATION_v0.7_PATCH.md` §15. None is defaulted silently; the session-object
-  one-fact-one-home layout, the `SA-1`/duplicate-proposal merge, the `NC-77` reservation, and
-  `SA-3`/HU-2 retroactivity (recommended default: forward-only) are the most load-bearing.
+- **Founder decision — RESOLVED as of 0.4.1 (see that section above):** the session-object
+  one-fact-one-home layout is ratified; the `SA-1`/`kernel.session-boundary-momentum-reset-
+  assertion` duplicate-proposal merge is ratified (the kernel.* proposal retired, status
+  `closed`); `SA-3`/HU-2 retroactivity is decided forward-only; the `SA-4` ledger row is ratified
+  `status: RECORDED`. **Still pending founder** (of the original 10 carried forward from
+  `design/SESSION_ARCH_v0.4_SPEC.md` §7 and its Part-2 additions — see `design/
+  FOUNDATION_v0.7_PATCH.md` §15 for the current list): the `NC-77` reservation, the H3 sim
+  go-ahead, `hypothesis_selection.yaml` session-grouping-key wiring, the rule29/30 namespace
+  confirmation, `chooser_reaffirmed` scope, and the `schema.blackbox-language-bridge-subfield`
+  withdrawal confirmation.
 - **Built this pass (remaining `build_now` nodes from `design/SESSION_ARCH_v0.4_SPEC.md`):**
   - `schema.blackbox-question-trace`: `schema/blackbox_note.schema.json`'s additive/optional
     top-level `question_trace[]` (`{n, ts, question_text, derived_from_line, note}`) plus a

@@ -83,8 +83,12 @@
 - **Acceptance test:** two Blackbox Note files sharing `session_id`, split by a real process
   restart, both carry `ai_state_at_boundary: literal 'reset'`.
 - **Citations:** `sources/notes/EPISTEMIC_FUSION_v7.1.txt:489, :490, :493, :496, :497, :331`.
-- **Status:** `founder_decision_needed: true` — merge target for `kernel.session-boundary-momentum-
-  reset-assertion` (§12.4 below), per spec §7 decision 2.
+- **Status:** `founder_decision_needed: false` — **DECIDED** (founder, delegated "ทำให้เลย",
+  BBL-2026-09-05-122; `DECISIONS.md` 2026-09-05 row, second entry): SA-1 confirmed canonical, the
+  Session object stays a logical join across Blackbox Note + `hypothesis_selection.yaml` +
+  `problem_card.yaml` + `kg_edge.yaml` (no new `session.yaml`), and `kernel.session-boundary-
+  momentum-reset-assertion` (§12.4 below) is retired into this node rather than built separately —
+  merge target confirmed, per spec §7 decisions 1 and 2.
 
 ## 2. `schema.entry-resistance-precommit-field` — Problem Card resistance-route pre-commitment
 
@@ -357,14 +361,20 @@ Fix 3 off-by-1/2 line citations (`v7.1:550→548`, `:552→550`, `:494→495`) a
 4th citation (`FOUNDATION_v0.6.md:1670`, unrelated boilerplate) before logging. Target:
 the internal command-center's DECISIONS ledger (private) (`status: RECORDED`, not the fabricated
 `DECLINED-FOR-NOW` value, not in that ledger's status enum), mirrored in `glosa/DECISIONS.md`.
-Founder decision needed (§15.5).
+**DECIDED** (founder, delegated "ทำให้เลย", BBL-2026-09-05-122; `DECISIONS.md` 2026-09-05 row,
+second entry): ratified as `status: RECORDED`, once the 3 citation fixes above are applied to the
+logged row itself (the decision to log is settled; the citation-accuracy fix is still owed before
+the row is written). Founder decision (§15.5) resolved.
 
 ### 11.2 `SA-3` — pre-exposure anchor fields
 Fix citation `EPISTEMIC_FUSION_v7.1.txt:354 → :353`. `build_path` must add the Problem-Card-vs-
 Blackbox-Note timestamp cross-check script its own `acceptance_test` requires, or narrow the
 `acceptance_test` to the schema-required-fields half only. Target: `schema/problem_card.schema.json`
 (three new required fields: `problem_stated_before_first_ai_response`, `prior_model_or_guess`,
-`verification_intent`). Founder decision needed — retroactivity, §15.4.
+`verification_intent`). **DECIDED** (founder, delegated "ทำให้เลย", BBL-2026-09-05-122;
+`DECISIONS.md` 2026-09-05 row, second entry): **forward-only** — the three new required fields
+apply to Problem Cards created from this point forward, not retroactively to already-published
+ones, per the spec's own recommended default (meeting §5.3). Founder decision (§15.4) resolved.
 
 ### 11.3 `kernel.candidate-set-delta-cooking-step` — `candidate_set` on `cooking.items`
 Two fixable build-path defects: (1) retarget the named acceptance-test fixture
@@ -469,11 +479,23 @@ was missed by this pass's defeater search (which checked only `FOUNDATION_v0.6.m
 `FOUNDATION_v0.6_PATCH.md`, and the schema file, never `MEETING_2026-09-05_judged.json`). Only a
 founder overrule of the standing ruling could revive it (§15's Part-2 addition, spec §1b item 7).
 
-### 12.4 `kernel.session-boundary-momentum-reset-assertion` — duplicate of SA-1
+### 12.4 `kernel.session-boundary-momentum-reset-assertion` — duplicate of SA-1 — **CLOSED**
 Duplicate framing of §1, pointed at the wrong FOUNDATION section (§2.3's R0/R1/R2, which govern the
-Blackbox Note's own internal reading stages, not session momentum). Raise-path: merge into §1, not
-build separately — building both would create two homes for `ai_state_at_boundary` (one-fact-
-one-home violation). Founder decision needed (§15.2).
+Blackbox Note's own internal reading stages, not session momentum).
+
+**Status: `closed` (founder, delegated "ทำให้เลย", BBL-2026-09-05-122; `DECISIONS.md` 2026-09-05
+row, second entry — "kernel.session-boundary-momentum-reset-assertion retired as duplicate of
+SA-1").** **Reason:** same fields (`ai_state_at_boundary` and its defeater) as `session.boundary-
+blackbox-note` (SA-1, §1 above); building both would create two homes for one fact — a one-fact-
+one-home violation — and this node's own FOUNDATION target (§2.3 R0/R1/R2) was wrong from the
+start (that section governs the Blackbox Note's internal reading stages, not session momentum;
+the correct target is §1's own, §2.3's new session-boundary bullet). No separate build proceeds
+under this id; any future work on session-boundary AI-reset assertions is tracked under SA-1
+(`session.boundary-blackbox-note`) only. Not a silent drop — this closure is itself the finding's
+required downstream disposition (CLAUDE.md rule 10, no finding ever dropped). Founder decision
+(§15.2) resolved. `design/SESSION_ARCH_v0.4_SPEC.md` §7 and its `DAG_v0.4` YAML block (§8/§13) —
+node `session.boundary-momentum-reset-duplicate` — updated to match (see that file's own §7
+annotations).
 
 ---
 
@@ -514,26 +536,35 @@ Problem Card readiness summary. Mandatory: `false` (flag, not a hard gate — pe
 
 ---
 
-## 15. Founder decisions carried forward (pending; recommended default stated where the spec names one)
+## 15. Founder decisions carried forward (items 1–7 DECIDED 2026-09-05; Part-2 items pending, recommended default stated where the spec names one)
 
-1. **Ratify §2.2's (`P18_session_architecture.md`'s) one-fact-one-home decision** — Session object
-   stays a logical join across four existing artifacts; no new `session.yaml`. Blocks whether §1
-   and §12.4 can be merged into one build.
-2. **Merge duplicate proposals** — confirm §1 (`SA-1`) canonical, §12.4
-   (`kernel.session-boundary-momentum-reset-assertion`) retired without a separate build.
-3. **Reserve `NC-77`** in the internal command-center's DECISIONS ledger (private) before any concurrent Family J
-   proposal can claim the id (§13).
-4. **`SA-3`/HU-2 retroactivity** — whether the new required/optional Problem Card fields apply to
-   already-published Problem Cards, or forward-only. **Spec's recommended default:
-   forward-only** (per meeting §5.3) — the founder's call, not an AI default.
-5. **`SA-4` ledger row** — ratify logging the `chi_recip`/`m^H`/`m^AI` decline as
-   `status: RECORDED` in `DECISIONS.yaml` (not the fabricated `DECLINED-FOR-NOW` value).
-6. **Approve building the H3 sim now** (§11.7) — the first genuinely empirical (n=0, untested)
-   falsifier run under this framework since the fabricated-C-id incident.
-7. **`hypothesis_selection.yaml` session-grouping key** — approve wiring `session_id` (from §1,
-   once built) into `hypothesis_selection.yaml` per `SA-2`'s own `build_path`; without it `SA-2`'s
-   acceptance test stays scoped to trivially-true single-session rows only — per BBL-2026-09-05-119
-   not an acceptable stopping point, only an honest interim state.
+1. **RESOLVED — DECIDED** (founder, delegated "ทำให้เลย", BBL-2026-09-05-122; `DECISIONS.md`
+   2026-09-05 row, second entry): ratify §2.2's (`P18_session_architecture.md`'s)
+   one-fact-one-home decision — Session object stays a logical join across four existing artifacts
+   (Blackbox Note + `hypothesis_selection.yaml` + `problem_card.yaml` + `kg_edge.yaml`); no new
+   `session.yaml`. This unblocks item 2's merge.
+2. **RESOLVED — DECIDED** (same founder ruling): merge duplicate proposals — §1 (`SA-1`) confirmed
+   canonical, §12.4 (`kernel.session-boundary-momentum-reset-assertion`) **retired, status
+   `closed`**, without a separate build. See §12.4 above for the full closure text.
+3. **RESOLVED — DECIDED** (same founder ruling): `NC-77` reserved — the 2026-09-05 row in
+   `DECISIONS.md` (mirrored to the internal command-center's DECISIONS ledger, private) names it
+   (§13); `methodology/data/non_collapse_table.json` already carries the entry.
+4. **RESOLVED — DECIDED, forward-only** (same founder ruling): `SA-3`/HU-2's new required Problem
+   Card fields (`problem_stated_before_first_ai_response`, `prior_model_or_guess`,
+   `verification_intent`) apply forward-only, not retroactively to already-published Problem
+   Cards — the spec's own recommended default (meeting §5.3), now ratified. See §11.2 above.
+5. **RESOLVED — DECIDED** (same founder ruling): `SA-4` ledger row ratified — log the
+   `chi_recip`/`m^H`/`m^AI` decline as `status: RECORDED` in `DECISIONS.yaml` (not the fabricated
+   `DECLINED-FOR-NOW` value). See §11.1 above; the 3 citation fixes named there still must be
+   applied before the row is actually written.
+6. **RESOLVED — DECIDED and RUN** (same founder ruling): H3 sim built and executed —
+   `methodology/H3_falsifier_sim.py`, results `tests/sim/h3/h3_results.json`, section "H3 falsifier
+   simulation (proxy)" in `tests/sim/report.md` (route A 0/40, route B 24/40, tier
+   `finite_diagnostic` for the tally; H3 itself stays `Open` — a real I3 run is the decisive test).
+7. **RESOLVED — DECIDED** (same founder ruling): `session_id` wiring into
+   `hypothesis_selection.yaml` ratified (already shipped in `schema/hypothesis_selection.schema.json`
+   and `cli/glosa session open`); `SA-2`'s multi-session acceptance test still needs a second
+   session on disk to be non-trivial — an honest interim state, not a stopping point (BBL-119).
 
 **Part-2 additions (spec §1b item 7):**
 
@@ -627,8 +658,8 @@ changed and where, not a certification.
   matching the kernel's own disclosed code comment (`kernel/glosa_kernel.py:966-978`) instead of
   leaving the patch document naming an unbuilt target as if it were the plan.
 
-**Not applied (scope note):** the 10 pending founder decisions (§15, now 11 items) remain pending —
-none of this review response resolves a founder-only call; it corrects citation, ledger, and
+**Not applied (scope note, as of the v0.7 review response):** the founder decisions of §15 were still pending at that time (items 1–7 were resolved on 2026-09-05, see §15) —
+none of this review response resolved a founder-only call; it corrects citation, ledger, and
 field-location defects the review found, all within the AI-owned half of the work.
 
 ## 19. Carried forward under gate rule 10 (found missing by publish gate v4)

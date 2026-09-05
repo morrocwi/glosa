@@ -730,6 +730,167 @@ class MC01CheckTest(unittest.TestCase):
         self.assertFalse(res["ok"])
 
 
+class Rule22IntakeTierTest(unittest.TestCase):
+    """rule22 (INTAKE-TIER-UNTIERED, FOUNDATION_v0.6_PATCH.md §4, thin scope per DECISIONS.md
+    2026-09-05 BBL-2026-09-05-122): WARNING-only, never blocks."""
+
+    def setUp(self):
+        self.manifest = load_example("litreview_manifest.example.json")
+
+    def test_request_tier_without_reason_warns_never_blocks(self):
+        manifest = copy.deepcopy(self.manifest)
+        manifest["citations"][0]["intake_tier"] = "request_tier"
+        manifest["citations"][0]["intake_tier_reason"] = None
+        res = k.lit_gate(manifest)
+        self.assertTrue(res["ok"], res["errors"])
+        self.assertTrue(any("rule22w" in w for w in res["warnings"]), res["warnings"])
+
+    def test_request_tier_with_reason_is_silent(self):
+        manifest = copy.deepcopy(self.manifest)
+        manifest["citations"][0]["intake_tier"] = "request_tier"
+        manifest["citations"][0]["intake_tier_reason"] = "grey-literature policy brief, genre normally suppresses full AACODS pass"
+        res = k.lit_gate(manifest)
+        self.assertTrue(res["ok"], res["errors"])
+        self.assertFalse(any("rule22w" in w for w in res["warnings"]), res["warnings"])
+
+    def test_not_flagged_is_silent(self):
+        manifest = copy.deepcopy(self.manifest)
+        manifest["citations"][0]["intake_tier"] = "not_flagged"
+        res = k.lit_gate(manifest)
+        self.assertFalse(any("rule22w" in w for w in res["warnings"]), res["warnings"])
+
+
+class Rule25DiscoveryStageTest(unittest.TestCase):
+    """rule25 (DISCOVERY-STAGE-ABSENT, FOUNDATION_v0.6_PATCH.md §23, optional S14 stage per
+    DECISIONS.md 2026-09-05 'foundation.lrs-discovery-loop-extension = optional S14 stage'):
+    WARNING-only, never blocks, and only evaluated when search_log is supplied."""
+
+    def setUp(self):
+        self.manifest = load_example("litreview_manifest.example.json")
+        self.search_log = load_example("search_log.example.json")
+
+    def test_systematic_review_without_candidate_set_stage_warns(self):
+        sl = copy.deepcopy(self.search_log)
+        sl["search_mode"] = "SYSTEMATIC_REVIEW"
+        sl.pop("candidate_set_stage", None)
+        res = k.lit_gate(self.manifest, search_log=sl)
+        self.assertTrue(res["ok"], res["errors"])
+        self.assertTrue(any("rule25w" in w for w in res["warnings"]), res["warnings"])
+
+    def test_systematic_review_with_candidate_set_stage_is_silent(self):
+        sl = copy.deepcopy(self.search_log)
+        sl["search_mode"] = "SYSTEMATIC_REVIEW"
+        sl["candidate_set_stage"] = {"candidates_generated": 12, "candidates_collapsed": 4, "routing_note": "merged near-duplicates"}
+        res = k.lit_gate(self.manifest, search_log=sl)
+        self.assertFalse(any("rule25w" in w for w in res["warnings"]), res["warnings"])
+
+    def test_non_systematic_review_mode_is_silent(self):
+        sl = copy.deepcopy(self.search_log)
+        self.assertNotEqual(sl["search_mode"], "SYSTEMATIC_REVIEW")
+        res = k.lit_gate(self.manifest, search_log=sl)
+        self.assertFalse(any("rule25w" in w for w in res["warnings"]), res["warnings"])
+
+    def test_search_log_omitted_is_silent_not_a_fabricated_pass(self):
+        res = k.lit_gate(self.manifest)
+        self.assertTrue(res["ok"], res["errors"])
+        self.assertFalse(any("rule25w" in w for w in res["warnings"]), res["warnings"])
+
+
+class Rule24PCSTest(unittest.TestCase):
+    """rule24/rule24w (PCS-JOINT-CONDITION, FOUNDATION_v0.6_PATCH.md §6, kernel.pcs-red-flag)
+    narrow scope, DECISIONS.md 2026-09-05 BBL-2026-09-05-122: ERROR only when BOTH closure-timing
+    AND absence-of-adaptation hold jointly; WARNING when only one holds; silent otherwise."""
+
+    def setUp(self):
+        self.card = load_example("claim_card.example.json")
+
+    def test_clean_card_is_silent(self):
+        closure, absence = k._pcs_signals(self.card)
+        self.assertFalse(closure)
+        self.assertFalse(absence)
+        res = k.validate_claim_card(self.card)
+        self.assertFalse(any("rule24" in e for e in res["errors"]))
+        self.assertFalse(any("rule24w" in w for w in res["warnings"]))
+
+    def test_fail_fixture_both_conjuncts_is_hard_error(self):
+        card = load_fail("fail_rule24_pcs_joint_condition.json")
+        res = k.validate_claim_card(card)
+        self.assertFalse(res["ok"])
+        self.assertTrue(any("rule24(PCS-JOINT-CONDITION)" in e for e in res["errors"]), res["errors"])
+
+    def test_closure_timing_alone_is_warning_not_error(self):
+        card = copy.deepcopy(self.card)
+        card["hypothesis_world"]["text"] += " The category was locked before the evidence-gathering step was complete."
+        res = k.validate_claim_card(card)
+        self.assertTrue(res["ok"], res["errors"])
+        self.assertFalse(any("rule24(" in e for e in res["errors"]))
+        self.assertTrue(any("rule24w" in w for w in res["warnings"]), res["warnings"])
+
+    def test_absence_of_adaptation_alone_is_warning_not_error(self):
+        card = copy.deepcopy(self.card)
+        card["hypothesis_world"]["text"] += " This finding was never revisited despite a changed context."
+        res = k.validate_claim_card(card)
+        self.assertTrue(res["ok"], res["errors"])
+        self.assertFalse(any("rule24(" in e for e in res["errors"]))
+        self.assertTrue(any("rule24w" in w for w in res["warnings"]), res["warnings"])
+
+    def test_never_merged_with_clinical_premature_closure(self):
+        """PCS is a distinct, narrowly-scoped joint condition -- the clinical term 'premature
+        closure' alone (with neither closure-timing nor absence-of-adaptation phrasing) must not
+        fire either rule24 or rule24w."""
+        card = copy.deepcopy(self.card)
+        card["hypothesis_world"]["text"] += " Clinicians should avoid premature closure in diagnosis."
+        res = k.validate_claim_card(card)
+        self.assertFalse(any("rule24" in e for e in res["errors"]))
+        self.assertFalse(any("rule24w" in w for w in res["warnings"]))
+
+
+class ScopeContextTest(unittest.TestCase):
+    """D-SCOPE-CONTEXT (FOUNDATION_v0.6_PATCH.md §14, foundation.s5-scope-boundary-per-instance)
+    -- per-instance clause + context check, WARNING-only, never blocks. DECISIONS.md 2026-09-05
+    BBL-2026-09-05-122."""
+
+    def setUp(self):
+        self.card = load_example("claim_card.example.json")
+
+    def test_non_health_legal_card_is_silent(self):
+        self.assertIsNone(k._scope_context_warning(self.card))
+        ids = {d["id"] for d in k.compute_disclaimers(self.card)}
+        self.assertNotIn("D-SCOPE-CONTEXT", ids)
+
+    def test_health_domain_without_clause_warns(self):
+        card = copy.deepcopy(self.card)
+        card["statement"]["text"] += " This is offered as clinical advice for symptom treatment."
+        res = k.validate_claim_card(card)
+        self.assertTrue(res["ok"], res["errors"])
+        self.assertTrue(any("D-SCOPE-CONTEXT" in w for w in res["warnings"]), res["warnings"])
+        ids = {d["id"] for d in k.compute_disclaimers(card)}
+        self.assertIn("D-SCOPE-CONTEXT", ids)
+
+    def test_translation_text_scanned_by_both_routes(self):
+        # review finding (v0.4.1): compute_disclaimers and _scope_context_warning must scan the
+        # same field set, including statement.translation.text, so they never diverge.
+        card = copy.deepcopy(self.card)
+        card["statement"]["translation"] = {"text": "clinical advice about symptom treatment", "language": "en"}
+        self.assertIsNotNone(k._scope_context_warning(card))
+        ids = {d["id"] for d in k.compute_disclaimers(card)}
+        self.assertIn("D-NOT-DIAGNOSTIC", ids)
+        self.assertIn("D-SCOPE-CONTEXT", ids)
+
+    def test_health_domain_with_per_instance_clause_is_silent(self):
+        card = copy.deepcopy(self.card)
+        card["statement"]["text"] += " This is offered as clinical advice for symptom treatment."
+        card["scope"]["per_instance_scope_clause"] = {
+            "time_criticality": "not delay-sensitive",
+            "jurisdiction": "Thailand",
+            "legal_category_available": True,
+        }
+        res = k.validate_claim_card(card)
+        self.assertFalse(any("D-SCOPE-CONTEXT" in w for w in res["warnings"]), res["warnings"])
+        ids = {d["id"] for d in k.compute_disclaimers(card)}
+        self.assertNotIn("D-SCOPE-CONTEXT", ids)
+
+
 class LitGateTest(unittest.TestCase):
     def test_valid_litreview_manifest_passes(self):
         manifest = load_example("litreview_manifest.example.json")

@@ -121,6 +121,17 @@
         "NC-11",
         "NC-35"
       ]
+    },
+    {
+      "phrase": "premature category stabilization (PCS)",
+      "what_it_smuggles": "A category/conclusion locked in before the evidence-gathering step that would normally precede it, then never revisited against a changed context -- both signals together, not either alone. Narrowly scoped so it is never merged with the unrelated clinical term 'premature closure' (a different diagnostic-reasoning concept from a different domain; same-shaped name, different mechanism -- comparison: different, not same).",
+      "disciplined_replacement": "Name the two conjuncts separately: closure-timing (was the category locked before the evidence step completed?) and absence-of-adaptation (was it ever revisited against a changed context?). Only when BOTH hold jointly is this PCS (rule24, ERROR); either alone is logged as rule24w (WARNING), never flagged as PCS.",
+      "enforced_by": "kernel/glosa_kernel.py _pcs_error_and_warning (rule24/rule24w, PCS-JOINT-CONDITION); design/FOUNDATION_v0.6_PATCH.md §6 (kernel.pcs-red-flag); DECISIONS.md 2026-09-05 BBL-2026-09-05-122",
+      "nc_ref": [
+        "NC-11",
+        "NC-35"
+      ],
+      "_note": "Distinct entry from 'settled science' above -- PCS is the joint-condition mechanism (timing + non-adaptation) that produces a premature settlement; 'settled science' is the resulting rhetorical phrase. Not merged, per one-fact-one-home (two different rows, two different enforcement mechanisms: claim_card.tier/non_claims vs kernel rule24)."
     }
   ]
 }

@@ -9,8 +9,10 @@
     ],
     "trigger_grammar_doc": "methodology/data/README.md#trigger-mini-grammar",
     "generated": "2026-09-04",
-    "_todo_pending_founder": [
-      "TODO(kernel.pcs-red-flag): design/FOUNDATION_v0.6_PATCH.md §6 -- Premature Category Stabilization (PCS) as a new contaminated-concept-table row (rule24/24w, PCS-JOINT-CONDITION), fires only when closure-timing AND absence-of-adaptation hold jointly. Pending-founder (PCS-scoping-confirmation); NOT built this pass."
+    "_todo_pending_founder": [],
+    "_ratified_2026_09_05": [
+      "BBL-2026-09-05-122: kernel.pcs-red-flag built narrow scope (rule24/24w, PCS-JOINT-CONDITION) -- see methodology/data/contaminated_concept_table.json's PCS row and kernel/glosa_kernel.py's _pcs_error_and_warning.",
+      "BBL-2026-09-05-122: foundation.s5-scope-boundary-per-instance built as D-SCOPE-CONTEXT below (per-instance clause + context check, no boilerplate)."
     ]
   },
   "disclaimers": [
@@ -469,6 +471,18 @@
       "mandatory": false,
       "params": [
         "problem_id"
+      ]
+    },
+    {
+      "id": "D-SCOPE-CONTEXT",
+      "category": "Scope",
+      "trigger": "claim_card text reads health/legal domain (same scan as D-NOT-DIAGNOSTIC's _DOMAIN_SAFETY_KEYWORDS) AND claim_card.scope.per_instance_scope_clause is absent/empty -- FLAG, non-mandatory, never a release-gate block (FOUNDATION_v0.6_PATCH.md §14, foundation.s5-scope-boundary-per-instance; DECISIONS.md 2026-09-05 BBL-2026-09-05-122: per-instance clause + context check, no boilerplate)",
+      "wording_th": "การ์ดข้ออ้างนี้อ่านได้ว่าอยู่ในโดเมนสุขภาพ/กฎหมาย แต่ยังไม่ได้ระบุเงื่อนไขเฉพาะกรณี (time_criticality / jurisdiction / legal_category_available) ไว้ในตัวมันเอง — ไม่มีข้อความปฏิเสธความรับผิดชอบมาตรฐานเดียวที่ใช้ได้ทุกที่ ต้องจับคู่กับเช็คบริบทของกรณีนี้เอง",
+      "wording_en": "This claim card reads as health/legal domain but names no per-instance context (time_criticality / jurisdiction / legal_category_available) of its own — no single standardized disclaimer text substitutes for this; the context check is per instance, paired with the claim, not boilerplate.",
+      "placement": "claim_card.scope.per_instance_scope_clause; next to D-NOT-DIAGNOSTIC wherever it fires",
+      "mandatory": false,
+      "params": [
+        "claim_id"
       ]
     }
   ]

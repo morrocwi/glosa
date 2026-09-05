@@ -1,6 +1,6 @@
 # glosa — ความเข้มงวดโดยไม่มีโครงสร้างค้ำ (Rigour Without Infrastructure)
 
-> **สถานะ: K0 — เผยแพร่สาธารณะเป็นฉบับทำงาน (timestamped, อ้างอิงได้, ยังไม่ผ่าน peer review, ยังไม่มีการตรวจสอบอิสระ)** (tier: Dr) · v0.4.0 · ทุกอย่างในนี้คือ readout ไม่ใช่ความจริงสุดท้าย
+> **สถานะ: K0 — เผยแพร่สาธารณะเป็นฉบับทำงาน (timestamped, อ้างอิงได้, ยังไม่ผ่าน peer review, ยังไม่มีการตรวจสอบอิสระ)** (tier: Dr) · v0.4.1 · ทุกอย่างในนี้คือ readout ไม่ใช่ความจริงสุดท้าย
 
 **glosa** (สเปนยุคกลาง: "คำอธิบายข้างขอบ" ที่นักปราชญ์เขียนแนบตัวบท) คือระเบียบวิธีสำหรับคนที่ไม่มีมหาวิทยาลัย ไม่มีแล็บ ไม่มีทีมวิจัย ที่จะผลิตความรู้จากพื้นที่ของตนเองร่วมกับ AI อย่างเข้มงวด โดยทุกข้ออ้างต้องตอบย้อนกลับได้ว่า **เราเห็นอะไรจริง · ข้อมูลแยกอะไรได้ · AI เติมอะไร · สมมติอะไรไว้ · เคยเจอหลักฐานหรือคำคัดค้านอิสระหรือยัง**
 
@@ -162,9 +162,9 @@ judgment against the DAG. Full, generated, one-row-per-card table (never hand-ed
 ### K-state and registry status
 
 **K0** — the three claim cards behind the concept paper were reviewed by cross-vendor routes (I3)
-and revised; a fresh, independent (I2+) check has **not** run on this v0.4.0 pass itself (no
-kernel-closure rule, no pending-founder text block, no DAG-citation addition here has been
-independently checked yet — same-model self-review does not count, per this repo's own
+and revised; a fresh, independent (I2+) check has **not** run on this v0.4.1 pass itself (the v0.4.1 diff had one
+independent adversarial review pass by a different AI agent before release — same operator, so I1, not
+I2+; no kernel-closure rule or decided text block here has been checked at I2 or above yet — same-model self-review does not count, per this repo's own
 maker-checker discipline). K1 requires a real cross-vendor I3 check to run and pass; K2 requires
 I5. `registry/RESEARCH_REGISTRY.yaml`'s `GLS-2026-001` entry currently reads `spine_stage:
 released`, `k_state: K0` — read that file directly for anything more current than this line.

@@ -4,7 +4,19 @@ Source of truth: `design/DAG_v0.3.yaml`. Rendered graph: `docs/dag_v0.3.svg` (an
 
 Readout, not truth: every node traces to a knowledge-harvest card id (`knowledge/harvest_v0.3/KNOWLEDGE_STATUS_v0.3.md`), a literature-review digest row (`records/lit/glosa-v0-3/DIGEST.md`), a publish-gate finding (`reviews/PUBLISH_GATE_v1_public.md`), or a CHANGELOG/TODO WARN item. No node is a decision until it is a row in the internal command-center's DECISIONS ledger (private).
 
-**Counts:** 26 nodes, 25 edges — proposed=21, done=3, deferred=2. By kind: process=1, kernel=6, foundation=14, schema=3, docs=1, cli=1.
+**Counts:** 26 nodes, 25 edges — proposed=15, done=3, deferred=2, decided=5, dropped=1. By kind: process=1, kernel=6, foundation=14, schema=3, docs=1, cli=1.
+
+**2026-09-05 update (founder, delegated "ทำให้เลย", BBL-2026-09-05-122; DECISIONS.md 2026-09-05
+row):** the 6 `human_decision_needed: true` founder nodes are resolved. 5 move `proposed` →
+`decided` (text landed in `FOUNDATION_v0.6.md`, resolving that document's 6 `PENDING FOUNDER
+DECISION` blocks; kernel/schema code shipped the same day: rules 22/24/25 + D-SCOPE-CONTEXT in `kernel/glosa_kernel.py`, 269+ tests):
+`kernel.pcs-red-flag` (YES, narrow — rule 24), `foundation.s5-scope-boundary-per-instance`
+(per-instance clause + context check, no boilerplate), `foundation.s7.9-intake-tier-flag` (thin
+flag on the AACODS-style checklist — rule 22), `foundation.s1.0-ashari-ontology-analogue` (2 of 3
+constructs, kasb/faqr excluded), `foundation.lrs-discovery-loop-extension` (optional S14 stage —
+rule 25). 1 moves `proposed` → `dropped`: `schema.prereg-gate-fields` (sim: no defect to catch,
+both deltas 0.0 on the corpus). See each node's own `decision:` field in `DAG_v0.3.yaml` and
+`FOUNDATION_v0.6.md`'s per-block text for the exact wording adopted.
 
 ## Node table
 
@@ -13,19 +25,19 @@ Readout, not truth: every node traces to a knowledge-harvest card id (`knowledge
 | `eng.registry-check-ci-safe` | Registry check made CI-safe | process | done | kernel/glosa_kernel.py (validate_release_manifest) + CI workflow | kc-ep-051 | no |
 | `eng.lit-manifest-fail-closed` | Literature-review manifest fails closed | kernel | done | kernel/glosa_kernel.py (validate_citation_card, validate_release_manifest) | kc-base-039, kc-ep-046 | no |
 | `foundation.s1.0-infinity-tension-flag` | Infinity-as-transcendental-ground stays a flagged [Open] tension | foundation | deferred | FOUNDATION §1.0 Pillars | kc-ep-005 | no |
-| `foundation.s1.0-ashari-ontology-analogue` | Partial theology-neutral ontology analogue (2 of 3 constructs) | foundation | proposed | FOUNDATION §1.0 Pillars — ontology | kc-ep-030, kc-ep-034 | yes |
+| `foundation.s1.0-ashari-ontology-analogue` | Partial theology-neutral ontology analogue (2 of 3 constructs) | foundation | decided | FOUNDATION §1.0 Pillars — ontology | kc-ep-030, kc-ep-034 | resolved 2026-09-05 |
 | `foundation.honest-edges-agrippa` | Agrippa's trilemma applied to the tier system itself | foundation | proposed | FOUNDATION §12 Honest edges | kc-base-025, kc-base-031, kc-base-036 | no |
 | `foundation.disclaimer-catalogue-expand` | Disclaimer catalogue — priority-scoping and standpoint-disclosure patterns | foundation | proposed | FOUNDATION §5 Systematic disclaimer catalogue | kc-he-013, kc-he-015, kc-he-019, kc-islam-007, kc-islam-016, kc-se-006 | no |
 | `kernel.rule17-source-first` | Rule 17 — source-first citation | kernel | done | kernel/glosa_kernel.py rule17 / rule17w (validate_citation_card) | kc-base-039, kc-ai-019, kc-ep-046 | no |
 | `foundation.pillars-readout-not-truth` | Pillars §1.0 cross-tradition citation set | foundation | proposed | FOUNDATION §1.0 Pillars — ontology/epistemology/methodology | kc-base-001, kc-base-005, kc-base-009, kc-base-027, kc-base-032, kc-ep-014, kc-ai-019, kc-islam-008 | no |
-| `foundation.s5-scope-boundary-per-instance` | Non-clinical/non-medical/non-legal scope clause stays per-instance | foundation | proposed | FOUNDATION §5 Systematic disclaimer catalogue | kc-ai-023, kc-he-016 | yes |
+| `foundation.s5-scope-boundary-per-instance` | Non-clinical/non-medical/non-legal scope clause stays per-instance | foundation | decided | FOUNDATION §5 Systematic disclaimer catalogue | kc-ai-023, kc-he-016 | resolved 2026-09-05 |
 | `kernel.unverified-verifiability-flag` | "Verifiable with no stated procedure" as a named narrow sub-case | kernel | proposed | FOUNDATION §5 disclaimer catalogue / kernel rule 17 | kc-tourism-006 | no |
 | `docs.blackbox-log-formalize-source` | Blackbox Log named-origin citation | docs | proposed | FOUNDATION §2.3 Blackbox Note and R0/R1/R2 internal registers | kc-ep-047, kc-ai-008 | no |
 | `foundation.non-collapse-table-expand` | Non-Collapse Table Appendix A — cross-tradition rows | foundation | proposed | FOUNDATION Appendix A Non-Collapse Table | kc-base-004, kc-base-021, kc-ep-021, kc-ep-023, kc-ep-024, kc-ep-026, kc-ep-027 | no |
 | `foundation.responsibility-arrow-mother-eq` | Mother-equation framing for the Data→Inference→Claim arrow | foundation | proposed | FOUNDATION §2.1b Responsibility per arrow | kc-base-014, kc-base-020 | no |
-| `kernel.pcs-red-flag` | Premature Category Stabilization (PCS) as a scoped kernel red-flag | kernel | proposed | FOUNDATION §5/§6 disclaimer+genre-router; kernel contaminated-concept table (base-018) | kc-ep-018, kc-ep-019, kc-ep-020, kc-islam-011, kc-tourism-002 | yes |
+| `kernel.pcs-red-flag` | Premature Category Stabilization (PCS) as a scoped kernel red-flag | kernel | decided | FOUNDATION §5/§6 disclaimer+genre-router; kernel contaminated-concept table (base-018) | kc-ep-018, kc-ep-019, kc-ep-020, kc-islam-011, kc-tourism-002 | resolved 2026-09-05 |
 | `schema.verdict-class-vocabulary` | Verdict-class vocabulary field (DERIVED/FORCED/DEFINITIONAL-RELABEL/POSITED/BORROWED-SCALE/OPEN) | schema | proposed | FOUNDATION field base_relation (holds\|refined_by_later_work\|superseded\|outdated\|open) | kc-base-038 | no |
-| `schema.prereg-gate-fields` | Frozen-preregistration gate as checkable fields, not a hard block | schema | proposed | FOUNDATION §2.1a Problem before observation / §7.3 Bounded-Judge Law | kc-he-002, kc-he-004, kc-he-005, kc-he-006, kc-he-007 | yes |
+| `schema.prereg-gate-fields` | Frozen-preregistration gate as checkable fields, not a hard block | schema | dropped | FOUNDATION §2.1a Problem before observation / §7.3 Bounded-Judge Law | kc-he-002, kc-he-004, kc-he-005, kc-he-006, kc-he-007 | resolved 2026-09-05 (dropped) |
 | `kernel.gate-rules-taxonomy-i-z` | I1–I4/Z1–Z4 injected-infinity/zero taxonomy in kernel gate rules | kernel | proposed | FOUNDATION §3.3 Kernel gate rules (specified, Dr, untested) | kc-base-006, kc-base-008, kc-base-016, kc-base-018, kc-base-034 | no |
 | `foundation.ead-crosswalk` | Existence-Attribution-Disclosure (E-A-D) norm as the named source of §3.1 crosswalk | foundation | proposed | FOUNDATION §3.1 Five Questions ⇄ E-A-D ⇄ field crosswalk | kc-ep-042, kc-aihp-011, kc-ai-001 | no |
 | `schema.claim-card-comparison-evidence-field` | Comparison/evidence-strength field — descriptive-only, no outperformance claim | schema | proposed | FOUNDATION §3.2 Field list (claim card schema) | kc-se-001, kc-se-002, kc-se-007, kc-se-009 | no |
@@ -34,8 +46,8 @@ Readout, not truth: every node traces to a knowledge-harvest card id (`knowledge
 | `cli.genre-router-layer-confusion-check` | Genre-router layer-confusion diagnostic | cli | proposed | FOUNDATION §6 Genre router | kc-islam-009 | no |
 | `rule17.claim-card-certification-open` | Claim card replaces institutional certification: kept [Open] | kernel | deferred | kernel rule 17 / FOUNDATION §4.2 Independence Ladder I0–I5 | kc-ai-006, kc-aihp-002, kc-aihp-003 | no |
 | `foundation.k-state-standalone-scholar-cite` | K-state (Standalone Scholar) named-origin citation | foundation | proposed | FOUNDATION §4.4 K-state (Standalone Scholar, PRESERVE_EXACT) | kc-ep-041, kc-aihp-017, kc-ai-011 | no |
-| `foundation.lrs-discovery-loop-extension` | Discovery-loop extension (candidate-set formation precedes evidential adjudication) | foundation | proposed | FOUNDATION §7.9 Literature Review System (LRS) / §6 discovery extension | kc-ep-045, kc-ep-046, kc-ep-048, kc-ep-049, kc-aihp-005, kc-aihp-006, kc-aihp-010, kc-aihp-020 | yes |
-| `foundation.s7.9-intake-tier-flag` | Claim-tier intake flag — thin addition, not a new mechanism | foundation | proposed | FOUNDATION §7.9 Literature Review System (LRS) | kc-ai-024, kc-he-018 | yes |
+| `foundation.lrs-discovery-loop-extension` | Discovery-loop extension (candidate-set formation precedes evidential adjudication) | foundation | decided | FOUNDATION §7.9 Literature Review System (LRS) / §6 discovery extension | kc-ep-045, kc-ep-046, kc-ep-048, kc-ep-049, kc-aihp-005, kc-aihp-006, kc-aihp-010, kc-aihp-020 | resolved 2026-09-05 |
+| `foundation.s7.9-intake-tier-flag` | Claim-tier intake flag — thin addition, not a new mechanism | foundation | decided | FOUNDATION §7.9 Literature Review System (LRS) | kc-ai-024, kc-he-018 | resolved 2026-09-05 |
 
 ## Node detail (change / acceptance test / risk)
 
@@ -64,12 +76,13 @@ Readout, not truth: every node traces to a knowledge-harvest card id (`knowledge
 - **risk:** Medium — defensible default, but two strong historical-priority sources mean a future version may need to revisit rather than leave permanently deferred.
 
 ### `foundation.s1.0-ashari-ontology-analogue` — Partial theology-neutral ontology analogue (2 of 3 constructs)
-- **kind / status:** foundation / proposed (human decision needed)
+- **kind / status:** foundation / decided 2026-09-05
 - **target:** FOUNDATION §1.0 Pillars — ontology
 - **change:** Adopt a theology-neutral structural analogue for "Dependent Identity" (grounding/ ontological-dependence theory) and "Directed Selection" (Principle of Sufficient Reason) as FOUNDATION §1.0 ontology primitives; do NOT attempt the same move for "Dependent Order"/kasb or the five registers of faqr as a whole — those stay islam-domain.
 - **evidence:** kc-ep-030, kc-ep-034
 - **acceptance test:** FOUNDATION §1.0 diff cites grounding-theory and PSR sources directly, with an explicit line excluding kasb/faqr from the analogue.
 - **risk:** Medium — partial adoption is defensible from the evidence but risks looking arbitrary without the full reasoning carried into the commit message.
+- **decision:** 2 of 3 constructs adopted, labelled and cited; kasb/faqr NOT given analogues (founder, delegated "ทำให้เลย", BBL-2026-09-05-122; DECISIONS.md 2026-09-05 row). Landed FOUNDATION_v0.6.md §1.0.
 
 ### `foundation.honest-edges-agrippa` — Agrippa's trilemma applied to the tier system itself
 - **kind / status:** foundation / proposed
@@ -104,12 +117,13 @@ Readout, not truth: every node traces to a knowledge-harvest card id (`knowledge
 - **risk:** Low — citation-only addition, no doctrinal change to the already-adopted base texts.
 
 ### `foundation.s5-scope-boundary-per-instance` — Non-clinical/non-medical/non-legal scope clause stays per-instance
-- **kind / status:** foundation / proposed (human decision needed)
+- **kind / status:** foundation / decided 2026-09-05
 - **target:** FOUNDATION §5 Systematic disclaimer catalogue
 - **change:** Do not standardize one reusable disclaimer text across all AI-runtime instances; require each instance to pair its disclaimer with an explicit context/jurisdiction check (time-criticality, deployment jurisdiction, legal-category availability).
 - **evidence:** kc-ai-023, kc-he-016
 - **acceptance test:** FOUNDATION §5 diff reviewed: every disclaimer entry carries a jurisdiction/time-criticality field, not just boilerplate text.
 - **risk:** Medium — the evidence largely defeats a single standardized clause; risk is per-instance variation becoming unmanaged per-hub duplication.
+- **decision:** per-instance clause + explicit context/jurisdiction check, no boilerplate (founder, delegated "ทำให้เลย", BBL-2026-09-05-122; DECISIONS.md 2026-09-05 row). Landed FOUNDATION_v0.6.md §5.
 
 ### `kernel.unverified-verifiability-flag` — "Verifiable with no stated procedure" as a named narrow sub-case
 - **kind / status:** kernel / proposed
@@ -144,12 +158,13 @@ Readout, not truth: every node traces to a knowledge-harvest card id (`knowledge
 - **risk:** Low — citation-only; requires foundation.pillars-readout-not-truth for shared vocabulary.
 
 ### `kernel.pcs-red-flag` — Premature Category Stabilization (PCS) as a scoped kernel red-flag
-- **kind / status:** kernel / proposed (human decision needed)
+- **kind / status:** kernel / decided 2026-09-05
 - **target:** FOUNDATION §5/§6 disclaimer+genre-router; kernel contaminated-concept table (base-018)
 - **change:** Add PCS to the contaminated-concept/red-flag table, but only when BOTH closure-timing AND absence-of-adaptation/contextual-fit hold jointly; explicitly not merged with the clinical term "premature closure."
 - **evidence:** kc-ep-018, kc-ep-019, kc-ep-020, kc-islam-011, kc-tourism-002
 - **acceptance test:** finite_diagnostic sim: run N synthetic claim cards with (a) timing-only closure, (b) timing+no-adaptation, (c) neither — kernel flags only class (b); precision on class (b) must be 100% on the synthetic set before this ships.
 - **risk:** Medium — real cross-domain support, but two independent counter-cases (decoupled closure, successful non-premature adoption) risk over-generalization if scoping is dropped.
+- **decision:** YES, narrow definition — rule 24 (founder, delegated "ทำให้เลย", BBL-2026-09-05-122; DECISIONS.md 2026-09-05 row). Landed FOUNDATION_v0.6.md §5 + §3.3 rule 24; still needs the out-of-lexicon holdout + independent adversarial review before ship.
 
 ### `schema.verdict-class-vocabulary` — Verdict-class vocabulary field (DERIVED/FORCED/DEFINITIONAL-RELABEL/POSITED/BORROWED-SCALE/OPEN)
 - **kind / status:** schema / proposed
@@ -160,12 +175,13 @@ Readout, not truth: every node traces to a knowledge-harvest card id (`knowledge
 - **risk:** Low-medium — additive enum field; requires foundation.non-collapse-table-expand to land first so Appendix A rows can reference the new field consistently.
 
 ### `schema.prereg-gate-fields` — Frozen-preregistration gate as checkable fields, not a hard block
-- **kind / status:** schema / proposed (human decision needed)
+- **kind / status:** schema / dropped 2026-09-05
 - **target:** FOUNDATION §2.1a Problem before observation / §7.3 Bounded-Judge Law
 - **change:** Add protocol_frozen_at, ethics_approved_at (nullable/NOT_APPLICABLE for non-human-subjects work), and a separate registry-administrative-approval timestamp; violations are flagged, not blocked; a passed sequencing check is never read as ethics-substance verification.
 - **evidence:** kc-he-002, kc-he-004, kc-he-005, kc-he-006, kc-he-007
 - **acceptance test:** Schema validator accepts a card with ethics_approved_at=NOT_APPLICABLE for a non-human-subjects claim and flags (not rejects) an out-of-sequence pair.
 - **risk:** High if implemented as a hard universal block — real registries do not hard-block this way; a naive implementation would misdescribe practice and could block legitimate research.
+- **decision:** dropped, sim reason only — delta_recall/delta_false_alarm both 0.0, corpus has zero fixtures for this concept (founder, delegated "ทำให้เลย", BBL-2026-09-05-122; DECISIONS.md 2026-09-05 row). The separate prereg-gate-hard-vs-soft founder question stays open, unresolved by this drop.
 
 ### `kernel.gate-rules-taxonomy-i-z` — I1–I4/Z1–Z4 injected-infinity/zero taxonomy in kernel gate rules
 - **kind / status:** kernel / proposed
@@ -232,20 +248,22 @@ Readout, not truth: every node traces to a knowledge-harvest card id (`knowledge
 - **risk:** Low — citation-only; requires foundation.independence-ladder-i0-i5-source for a consistent citation block ordering.
 
 ### `foundation.lrs-discovery-loop-extension` — Discovery-loop extension (candidate-set formation precedes evidential adjudication)
-- **kind / status:** foundation / proposed (human decision needed)
+- **kind / status:** foundation / decided 2026-09-05
 - **target:** FOUNDATION §7.9 Literature Review System (LRS) / §6 discovery extension
 - **change:** Extend §7.9 LRS with a discovery-routing stage (human retains the question, AI recursively decomposes and gates candidates; k_epi as the epistemic-multiplication construct) — gated as an extension, not a replacement of the existing LRS pipeline.
 - **evidence:** kc-ep-045, kc-ep-046, kc-ep-048, kc-ep-049, kc-aihp-005, kc-aihp-006, kc-aihp-010, kc-aihp-020
 - **acceptance test:** S4 finite_diagnostic sim compares LRS precision/recall on the same question set with and without the discovery-routing stage; ship only if recall improves without a precision drop.
 - **risk:** Medium — DIGEST logs the underlying agenda-paper claim as still open (kc-aihp-008/009 not adopted here); this node only operationalizes the already-'holds'/'adapt' cards, not the open agenda claim.
+- **decision:** adopted as an optional S14 stage — rule 25 (founder, delegated "ทำให้เลย", BBL-2026-09-05-122; DECISIONS.md 2026-09-05 row). Landed FOUNDATION_v0.6.md §7.9 + §3.3 rule 25; agenda-paper claim (kc-aihp-008/009) stays [Open].
 
 ### `foundation.s7.9-intake-tier-flag` — Claim-tier intake flag — thin addition, not a new mechanism
-- **kind / status:** foundation / proposed (human decision needed)
+- **kind / status:** foundation / decided 2026-09-05
 - **target:** FOUNDATION §7.9 Literature Review System (LRS)
 - **change:** Add a flag-and-request-tier step only as a thin layer on the existing AACODS-style checklist (trace-to-original + appraise); explicitly exempt Global South anecdotal/expert/local-knowledge evidence genres from being treated as automatically suspect.
 - **evidence:** kc-ai-024, kc-he-018
 - **acceptance test:** LRS run on a policy-brief-only source set produces a flagged-not-blocked intake row, distinct from a rejected row.
 - **risk:** Medium — real gap exists, but the mechanism as posed risks duplicating existing checklist machinery or over-policing legitimate non-graded evidence.
+- **decision:** thin flag on the existing AACODS-style checklist — rule 22, Global South exemption kept (founder, delegated "ทำให้เลย", BBL-2026-09-05-122; DECISIONS.md 2026-09-05 row). Landed FOUNDATION_v0.6.md §7.9 + §3.3 rule 22.
 
 ## Topological order (build/decision sequence)
 

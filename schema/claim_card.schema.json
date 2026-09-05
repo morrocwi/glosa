@@ -510,6 +510,15 @@
         },
         "claim_scope": {
           "type": "string"
+        },
+        "per_instance_scope_clause": {
+          "type": ["object", "null"],
+          "description": "FOUNDATION_v0.6_PATCH.md §14 (foundation.s5-scope-boundary-per-instance, DECISIONS.md 2026-09-05 BBL-2026-09-05-122: per-instance clause + context check, no boilerplate). Additive, optional. When present, states this claim's OWN time-criticality/jurisdiction/legal-category-availability context, rather than pointing at one repo-wide standardized disclaimer text. D-SCOPE-CONTEXT (methodology/data/disclaimer_catalogue.json) warns, never blocks, when a health/legal-domain card carries no such clause.",
+          "properties": {
+            "time_criticality": { "type": "string", "description": "whether a delay-sensitive decision is plausible for this instance" },
+            "jurisdiction": { "type": "string", "description": "which legal/regulatory regime applies to this instance" },
+            "legal_category_available": { "type": ["boolean", "null"], "description": "does the relevant professional/legal category even exist in this jurisdiction" }
+          }
         }
       }
     },

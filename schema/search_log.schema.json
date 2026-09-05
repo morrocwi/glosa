@@ -10,6 +10,15 @@
     "id": { "type": "string", "pattern": "^search-[a-z0-9-]+-[0-9]{3}$" },
     "claim_or_hypothesis_ref": { "type": "string", "minLength": 1 },
     "search_mode": { "$ref": "common.defs.json#/definitions/search_mode" },
+    "candidate_set_stage": {
+      "type": ["object", "null"],
+      "description": "rule25 (DISCOVERY-STAGE-ABSENT, FOUNDATION_v0.6_PATCH.md §23, thin-optional-stage scope per DECISIONS.md 2026-09-05 'foundation.lrs-discovery-loop-extension = optional S14 stage'): an optional discovery-loop stage naming how the candidate question/source set was generated and narrowed before search_mode's own frozen_scope was frozen. Additive, optional -- absence is only a WARNING (never a block) when search_mode=SYSTEMATIC_REVIEW.",
+      "properties": {
+        "candidates_generated": { "type": "integer", "minimum": 0 },
+        "candidates_collapsed": { "type": "integer", "minimum": 0 },
+        "routing_note": { "type": "string" }
+      }
+    },
     "frozen_scope": {
       "description": "Frozen BEFORE sources_found is populated -- prevents post-hoc query tuning toward a wanted answer.",
       "type": "object",

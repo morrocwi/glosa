@@ -33,11 +33,18 @@
   system.
 - **New reusable disclaimer clause patterns (§5):** "novelty scoped to architecture," "analytical
   tool not verdict," "theoretical/analytical not empirical," reflexive standpoint disclosure.
-- **6 sections inserted as `PENDING FOUNDER DECISION` blocks** (not ratified by this pass; each
-  names the exact founder decision still required): §5 per-instance scope clause, §5 PCS red-flag
-  contaminated-concept-table row, §6.3c genre-router layer-confusion diagnostic (this patch's own
-  proposed AI-added checkpoint, not a DAG-mandated founder gate), §7.9 claim-tier intake flag,
-  §7.9 discovery-routing extension, §1.0 partial theology-neutral ontology analogue.
+- **6 sections originally inserted as `PENDING FOUNDER DECISION` blocks — now DECIDED** (founder,
+  delegated "ทำให้เลย", BBL-2026-09-05-122; `DECISIONS.md` 2026-09-05 row; the 6th,
+  §6.3c, was never a DAG-mandated founder gate and is resolved as a design decision instead — see
+  each block's own `DECIDED` header): §5 per-instance scope clause (adopted), §5 PCS red-flag
+  contaminated-concept-table row (adopted, narrow definition, rule 24), §6.3c genre-router
+  layer-confusion diagnostic (this patch's own proposed AI-added checkpoint, not a DAG-mandated
+  founder gate — adopted as diagnostic-only), §7.9 claim-tier intake flag (adopted, thin layer,
+  rule 22), §7.9 discovery-routing extension (adopted, optional S14 stage, rule 25), §1.0 partial
+  theology-neutral ontology analogue (adopted, 2 of 3 constructs). None of these decisions builds
+  the kernel/schema code they describe — that remains other workers' ownership this pass; only the
+  design-level decision itself is now settled, superseding `design/DAG_v0.3.yaml`'s prior
+  `human_decision_needed: true` flags on the 5 DAG-mandated nodes among these six.
 - **3 kernel-closure rules shipped without a founder gate** (K-C1/K-C2/K-C3, §7.8): composite-quote
   detector, hidden-AI-fill detector, inflated-bearing detector — each closes a K4 sim-confirmed
   defect-detection gap named in `sim/v0.3/report.md`.
@@ -139,7 +146,7 @@ record is an operator-conditioned readout, never the world itself, whether the o
 or not. Embodied in: `tested.falsifier` (must name an independent observation), `five_questions.
 seen` (record vs. world kept structurally distinct).
 
-> **PENDING FOUNDER DECISION — recommended text follows (decision: `partial-analogue-adoption`,
+> **DECIDED (founder, delegated ("ทำให้เลย", BBL-2026-09-05-122); DECISIONS.md 2026-09-05 row: `partial-analogue-adoption`, adopted as recommended,
 > `design/FOUNDATION_v0.6_PATCH.md` §11).** A theology-neutral structural analogue is adopted for
 > two of the three constructs this reading surfaces: "Dependent Identity" maps to grounding/
 > ontological-dependence theory, and "Directed Selection" (per `kc-ep-030`, the construct that
@@ -1309,8 +1316,8 @@ These are distinct in scope from the per-instance jurisdiction clause immediatel
 clause is about legal/deployment context; these four are about the claim's own epistemic scope and
 the author's standpoint.
 
-> **PENDING FOUNDER DECISION — recommended text follows (decision:
-> `per-instance-vs-standardized-disclaimer`, `design/FOUNDATION_v0.6_PATCH.md` §14).**
+> **DECIDED (founder, delegated ("ทำให้เลย", BBL-2026-09-05-122); DECISIONS.md 2026-09-05 row: `per-instance-vs-standardized-disclaimer`, adopted as
+> recommended, `design/FOUNDATION_v0.6_PATCH.md` §14).**
 > **Non-clinical/non-medical/non-legal scope clause — per-instance, not standardized.** No single
 > reusable disclaimer text is mandated across all AI-runtime instances of glosa-adjacent tooling.
 > Each instance's disclaimer must instead be paired with an explicit context/jurisdiction check:
@@ -1321,7 +1328,8 @@ the author's standpoint.
 > does not build a registry to prevent that; it is logged here as an accepted, disclosed
 > limitation. Evidence: kc-ai-023, kc-he-016.
 
-> **PENDING FOUNDER DECISION — recommended text follows (decision: `PCS-scoping-confirmation`,
+> **DECIDED (founder, delegated ("ทำให้เลย", BBL-2026-09-05-122); DECISIONS.md 2026-09-05 row: `PCS-scoping-confirmation`, adopted as recommended — YES,
+> narrow definition,
 > `design/FOUNDATION_v0.6_PATCH.md` §6 — a new contaminated-concept-table row, not a standalone
 > disclaimer id; PCS is a red-flag on the contaminated-concept scan, §3.3 rule 8's family).**
 > **Premature Category Stabilization (PCS)** — added to the contaminated-concept table this pass,
@@ -1460,9 +1468,10 @@ independently, after a genre id is chosen, per §6.1/§6.2's track-attribute rul
 supersedes S5's 7-question procedure; `methodology/P13_genre_router.md` narrates this list
 directly rather than citing S5.
 
-> **PENDING FOUNDER DECISION — recommended text follows (decision:
-> `promote-from-revise-to-ship-gate`, `design/FOUNDATION_v0.6_PATCH.md` §3). This is this patch's
-> own proposed AI-added checkpoint, not a DAG-mandated founder gate** — `design/DAG_v0.3.yaml`
+> **DECIDED — no founder gate required (`design/DAG_v0.3.yaml` sets
+> `human_decision_needed: false` for this node); resolved by this pass as a design decision, not a
+> founder ruling (decision: `promote-from-revise-to-ship-gate`, `design/FOUNDATION_v0.6_PATCH.md`
+> §3). This is this patch's own proposed AI-added checkpoint, not a DAG-mandated founder gate** — `design/DAG_v0.3.yaml`
 > marks `human_decision_needed: false` for this exact node; flagged explicitly so it is not
 > mistaken for one of the DAG's structurally-required founder decisions.
 >
@@ -1803,8 +1812,8 @@ A/D): a Q1-journal source that fails claim-match verification is still not citab
   forbidden from backing a claim or a dialogue-table stance — `source_acquisition_log.
   secondary_citation_check` makes this checkable rather than a matter of memory.
 
-> **PENDING FOUNDER DECISION — recommended text follows (decision:
-> `thin-layer-scope-confirmation`, `design/FOUNDATION_v0.6_PATCH.md` §4).**
+> **DECIDED (founder, delegated ("ทำให้เลย", BBL-2026-09-05-122); DECISIONS.md 2026-09-05 row: `thin-layer-scope-confirmation`, adopted as
+> recommended, `design/FOUNDATION_v0.6_PATCH.md` §4).**
 >
 > **Claim-tier intake flag (thin addition to the accuracy gate, not a new mechanism).** At L4
 > (reading & extraction), a source is flagged `intake_tier: request_tier` when its own genre would
@@ -1881,8 +1890,8 @@ the paper — so the comparison table itself is never silent about which lens, i
 candidate; a candidate with `lens_ref` set and an empty signature fails validation (§3.3 rule 12)
 before it can even enter the comparison.
 
-> **PENDING FOUNDER DECISION — recommended text follows (decision:
-> `discovery-routing-stage-adoption`, `design/FOUNDATION_v0.6_PATCH.md` §23).**
+> **DECIDED (founder, delegated ("ทำให้เลย", BBL-2026-09-05-122); DECISIONS.md 2026-09-05 row: `discovery-routing-stage-adoption`, adopted as
+> recommended — optional S14 stage, `design/FOUNDATION_v0.6_PATCH.md` §23).**
 >
 > **Discovery-routing extension (gated, this pass).** §7.9's L1–L6 pipeline may be preceded by a
 > discovery-routing stage: the human retains ownership of the question; the AI recursively

@@ -1,0 +1,342 @@
+{
+ "tier": "finite_diagnostic",
+ "n": 40,
+ "n_expected": 40,
+ "route_a_caught_total": 0,
+ "route_b_caught_total": 24,
+ "difference_b_minus_a": 24,
+ "h3_falsifier_direction": "SUPPORTED_IN_THIS_PROXY (route B out-caught route A)",
+ "per_defect": {
+  "hidden_ai_fill": {
+   "n": 8,
+   "route_a_caught": 0,
+   "route_b_caught": 8
+  },
+  "hidden_ai_fill_unmarked": {
+   "n": 8,
+   "route_a_caught": 0,
+   "route_b_caught": 0
+  },
+  "inflated_bearing": {
+   "n": 8,
+   "route_a_caught": 0,
+   "route_b_caught": 8
+  },
+  "composite_quote": {
+   "n": 8,
+   "route_a_caught": 0,
+   "route_b_caught": 8
+  },
+  "same_vendor_review": {
+   "n": 8,
+   "route_a_caught": 0,
+   "route_b_caught": 0
+  }
+ },
+ "controls": {
+  "passing_control": {
+   "route_a_findings": [],
+   "route_b_findings": [],
+   "expected": "both empty"
+  },
+  "failing_control": {
+   "route_a_findings": [],
+   "route_b_findings": [
+    "rule27: five_questions.seen.ai_assisted_fields names a field with AI involvement (['access_model']) that ai_filled does not correspondingly disclose -- contradiction between disclosure records"
+   ],
+   "expected": "route_b non-empty (rule27)"
+  }
+ },
+ "rows": [
+  {
+   "id": "GLOSA-CC-20260905-5001",
+   "defect": "hidden_ai_fill",
+   "route_a_findings": [],
+   "route_b_findings": [
+    "rule27: five_questions.seen.ai_assisted_fields names a field with AI involvement (['access_model']) that ai_filled does not correspondingly disclose -- contradiction between disclosure records"
+   ]
+  },
+  {
+   "id": "GLOSA-CC-20260905-5002",
+   "defect": "hidden_ai_fill",
+   "route_a_findings": [],
+   "route_b_findings": [
+    "rule27: five_questions.seen.ai_assisted_fields names a field with AI involvement (['access_model']) that ai_filled does not correspondingly disclose -- contradiction between disclosure records"
+   ]
+  },
+  {
+   "id": "GLOSA-CC-20260905-5003",
+   "defect": "hidden_ai_fill",
+   "route_a_findings": [],
+   "route_b_findings": [
+    "rule27: five_questions.seen.ai_assisted_fields names a field with AI involvement (['access_model']) that ai_filled does not correspondingly disclose -- contradiction between disclosure records"
+   ]
+  },
+  {
+   "id": "GLOSA-CC-20260905-5004",
+   "defect": "hidden_ai_fill",
+   "route_a_findings": [],
+   "route_b_findings": [
+    "rule27: five_questions.seen.ai_assisted_fields names a field with AI involvement (['access_model']) that ai_filled does not correspondingly disclose -- contradiction between disclosure records"
+   ]
+  },
+  {
+   "id": "GLOSA-CC-20260905-5005",
+   "defect": "hidden_ai_fill",
+   "route_a_findings": [],
+   "route_b_findings": [
+    "rule27: five_questions.seen.ai_assisted_fields names a field with AI involvement (['access_model']) that ai_filled does not correspondingly disclose -- contradiction between disclosure records"
+   ]
+  },
+  {
+   "id": "GLOSA-CC-20260905-5006",
+   "defect": "hidden_ai_fill",
+   "route_a_findings": [],
+   "route_b_findings": [
+    "rule27: five_questions.seen.ai_assisted_fields names a field with AI involvement (['access_model']) that ai_filled does not correspondingly disclose -- contradiction between disclosure records"
+   ]
+  },
+  {
+   "id": "GLOSA-CC-20260905-5007",
+   "defect": "hidden_ai_fill",
+   "route_a_findings": [],
+   "route_b_findings": [
+    "rule27: five_questions.seen.ai_assisted_fields names a field with AI involvement (['access_model']) that ai_filled does not correspondingly disclose -- contradiction between disclosure records"
+   ]
+  },
+  {
+   "id": "GLOSA-CC-20260905-5008",
+   "defect": "hidden_ai_fill",
+   "route_a_findings": [],
+   "route_b_findings": [
+    "rule27: five_questions.seen.ai_assisted_fields names a field with AI involvement (['access_model']) that ai_filled does not correspondingly disclose -- contradiction between disclosure records"
+   ]
+  },
+  {
+   "id": "GLOSA-CC-20260905-5009",
+   "defect": "hidden_ai_fill_unmarked",
+   "route_a_findings": [],
+   "route_b_findings": []
+  },
+  {
+   "id": "GLOSA-CC-20260905-5010",
+   "defect": "hidden_ai_fill_unmarked",
+   "route_a_findings": [],
+   "route_b_findings": []
+  },
+  {
+   "id": "GLOSA-CC-20260905-5011",
+   "defect": "hidden_ai_fill_unmarked",
+   "route_a_findings": [],
+   "route_b_findings": []
+  },
+  {
+   "id": "GLOSA-CC-20260905-5012",
+   "defect": "hidden_ai_fill_unmarked",
+   "route_a_findings": [],
+   "route_b_findings": []
+  },
+  {
+   "id": "GLOSA-CC-20260905-5013",
+   "defect": "hidden_ai_fill_unmarked",
+   "route_a_findings": [],
+   "route_b_findings": []
+  },
+  {
+   "id": "GLOSA-CC-20260905-5014",
+   "defect": "hidden_ai_fill_unmarked",
+   "route_a_findings": [],
+   "route_b_findings": []
+  },
+  {
+   "id": "GLOSA-CC-20260905-5015",
+   "defect": "hidden_ai_fill_unmarked",
+   "route_a_findings": [],
+   "route_b_findings": []
+  },
+  {
+   "id": "GLOSA-CC-20260905-5016",
+   "defect": "hidden_ai_fill_unmarked",
+   "route_a_findings": [],
+   "route_b_findings": []
+  },
+  {
+   "id": "GLOSA-CC-20260905-5017",
+   "defect": "inflated_bearing",
+   "route_a_findings": [],
+   "route_b_findings": [
+    "rule28(INFLATED-BEARING): evidence_relation bearing=SUPPORTS has citation_ref 'cite-cat-obs-001' does not resolve to any known citation_card_id, without strength='context' -- bearing is inflated relative to what the citation actually supports (evidence_relations[0])"
+   ]
+  },
+  {
+   "id": "GLOSA-CC-20260905-5018",
+   "defect": "inflated_bearing",
+   "route_a_findings": [],
+   "route_b_findings": [
+    "rule28(INFLATED-BEARING): evidence_relation bearing=SUPPORTS has citation_ref 'cite-cat-obs-001' does not resolve to any known citation_card_id, without strength='context' -- bearing is inflated relative to what the citation actually supports (evidence_relations[0])"
+   ]
+  },
+  {
+   "id": "GLOSA-CC-20260905-5019",
+   "defect": "inflated_bearing",
+   "route_a_findings": [],
+   "route_b_findings": [
+    "rule28(INFLATED-BEARING): evidence_relation bearing=SUPPORTS has citation_ref 'cite-cat-obs-001' does not resolve to any known citation_card_id, without strength='context' -- bearing is inflated relative to what the citation actually supports (evidence_relations[0])"
+   ]
+  },
+  {
+   "id": "GLOSA-CC-20260905-5020",
+   "defect": "inflated_bearing",
+   "route_a_findings": [],
+   "route_b_findings": [
+    "rule28(INFLATED-BEARING): evidence_relation bearing=SUPPORTS has citation_ref 'cite-cat-obs-001' does not resolve to any known citation_card_id, without strength='context' -- bearing is inflated relative to what the citation actually supports (evidence_relations[0])"
+   ]
+  },
+  {
+   "id": "GLOSA-CC-20260905-5021",
+   "defect": "inflated_bearing",
+   "route_a_findings": [],
+   "route_b_findings": [
+    "rule28(INFLATED-BEARING): evidence_relation bearing=SUPPORTS has citation_ref 'cite-cat-obs-001' does not resolve to any known citation_card_id, without strength='context' -- bearing is inflated relative to what the citation actually supports (evidence_relations[0])"
+   ]
+  },
+  {
+   "id": "GLOSA-CC-20260905-5022",
+   "defect": "inflated_bearing",
+   "route_a_findings": [],
+   "route_b_findings": [
+    "rule28(INFLATED-BEARING): evidence_relation bearing=SUPPORTS has citation_ref 'cite-cat-obs-001' does not resolve to any known citation_card_id, without strength='context' -- bearing is inflated relative to what the citation actually supports (evidence_relations[0])"
+   ]
+  },
+  {
+   "id": "GLOSA-CC-20260905-5023",
+   "defect": "inflated_bearing",
+   "route_a_findings": [],
+   "route_b_findings": [
+    "rule28(INFLATED-BEARING): evidence_relation bearing=SUPPORTS has citation_ref 'cite-cat-obs-001' does not resolve to any known citation_card_id, without strength='context' -- bearing is inflated relative to what the citation actually supports (evidence_relations[0])"
+   ]
+  },
+  {
+   "id": "GLOSA-CC-20260905-5024",
+   "defect": "inflated_bearing",
+   "route_a_findings": [],
+   "route_b_findings": [
+    "rule28(INFLATED-BEARING): evidence_relation bearing=SUPPORTS has citation_ref 'cite-cat-obs-001' does not resolve to any known citation_card_id, without strength='context' -- bearing is inflated relative to what the citation actually supports (evidence_relations[0])"
+   ]
+  },
+  {
+   "id": "GLOSA-CC-20260905-5033",
+   "defect": "composite_quote",
+   "route_a_findings": [],
+   "route_b_findings": [
+    "rule26: exact_passage contains an ellipsis/splice marker ('…'/'...'/' -- ') -- composite quotes are not verifiable as a single continuous passage"
+   ]
+  },
+  {
+   "id": "GLOSA-CC-20260905-5034",
+   "defect": "composite_quote",
+   "route_a_findings": [],
+   "route_b_findings": [
+    "rule26: exact_passage contains an ellipsis/splice marker ('…'/'...'/' -- ') -- composite quotes are not verifiable as a single continuous passage"
+   ]
+  },
+  {
+   "id": "GLOSA-CC-20260905-5035",
+   "defect": "composite_quote",
+   "route_a_findings": [],
+   "route_b_findings": [
+    "rule26: exact_passage contains an ellipsis/splice marker ('…'/'...'/' -- ') -- composite quotes are not verifiable as a single continuous passage"
+   ]
+  },
+  {
+   "id": "GLOSA-CC-20260905-5036",
+   "defect": "composite_quote",
+   "route_a_findings": [],
+   "route_b_findings": [
+    "rule26: exact_passage contains an ellipsis/splice marker ('…'/'...'/' -- ') -- composite quotes are not verifiable as a single continuous passage"
+   ]
+  },
+  {
+   "id": "GLOSA-CC-20260905-5037",
+   "defect": "composite_quote",
+   "route_a_findings": [],
+   "route_b_findings": [
+    "rule26: exact_passage contains an ellipsis/splice marker ('…'/'...'/' -- ') -- composite quotes are not verifiable as a single continuous passage"
+   ]
+  },
+  {
+   "id": "GLOSA-CC-20260905-5038",
+   "defect": "composite_quote",
+   "route_a_findings": [],
+   "route_b_findings": [
+    "rule26: exact_passage contains an ellipsis/splice marker ('…'/'...'/' -- ') -- composite quotes are not verifiable as a single continuous passage"
+   ]
+  },
+  {
+   "id": "GLOSA-CC-20260905-5039",
+   "defect": "composite_quote",
+   "route_a_findings": [],
+   "route_b_findings": [
+    "rule26: exact_passage contains an ellipsis/splice marker ('…'/'...'/' -- ') -- composite quotes are not verifiable as a single continuous passage"
+   ]
+  },
+  {
+   "id": "GLOSA-CC-20260905-5040",
+   "defect": "composite_quote",
+   "route_a_findings": [],
+   "route_b_findings": [
+    "rule26: exact_passage contains an ellipsis/splice marker ('…'/'...'/' -- ') -- composite quotes are not verifiable as a single continuous passage"
+   ]
+  },
+  {
+   "id": "GLOSA-CC-20260905-5113",
+   "defect": "same_vendor_review",
+   "route_a_findings": [],
+   "route_b_findings": []
+  },
+  {
+   "id": "GLOSA-CC-20260905-5114",
+   "defect": "same_vendor_review",
+   "route_a_findings": [],
+   "route_b_findings": []
+  },
+  {
+   "id": "GLOSA-CC-20260905-5115",
+   "defect": "same_vendor_review",
+   "route_a_findings": [],
+   "route_b_findings": []
+  },
+  {
+   "id": "GLOSA-CC-20260905-5116",
+   "defect": "same_vendor_review",
+   "route_a_findings": [],
+   "route_b_findings": []
+  },
+  {
+   "id": "GLOSA-CC-20260905-5117",
+   "defect": "same_vendor_review",
+   "route_a_findings": [],
+   "route_b_findings": []
+  },
+  {
+   "id": "GLOSA-CC-20260905-5118",
+   "defect": "same_vendor_review",
+   "route_a_findings": [],
+   "route_b_findings": []
+  },
+  {
+   "id": "GLOSA-CC-20260905-5119",
+   "defect": "same_vendor_review",
+   "route_a_findings": [],
+   "route_b_findings": []
+  },
+  {
+   "id": "GLOSA-CC-20260905-5120",
+   "defect": "same_vendor_review",
+   "route_a_findings": [],
+   "route_b_findings": []
+  }
+ ],
+ "proxy_disclosure": "PROXY, not a real cross-vendor (I3) run: no second vendor was invoked. route A and route B are both deterministic Python in this one process. A real I3 run remains the decisive test for H3; this script measures a mechanical stand-in only.",
+ "note": "readout over this fixed 40-card selection, this run, today -- not a general claim about H3."
+}

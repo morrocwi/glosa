@@ -63,8 +63,9 @@ nodes:
       (b) timing+no-adaptation, (c) neither — kernel flags only class (b); precision on
       class (b) must be 100% on the synthetic set before this ships.
     risk: Medium — real cross-domain support, but two independent counter-cases (decoupled closure, successful non-premature adoption) risk over-generalization if scoping is dropped.
-    status: proposed
-    human_decision_needed: true
+    status: decided
+    human_decision_needed: false
+    decision: "YES, narrow definition (rule 24) -- founder, delegated (\"ทำให้เลย\", BBL-2026-09-05-122); DECISIONS.md 2026-09-05 row. Text landed FOUNDATION_v0.6.md §5 (ex-PENDING FOUNDER block) + §3.3 rule 24. Built in kernel/glosa_kernel.py the same day (rule24/rule24w, fail fixture + Rule24PCSTest); still needs the out-of-lexicon holdout + independent adversarial review named in design/FOUNDATION_v0.6_PATCH.md §6 before it may ship."
 
   - id: rule17.claim-card-certification-open
     title: "Claim card replaces institutional certification: kept [Open]"
@@ -91,8 +92,9 @@ nodes:
     evidence: [kc-ai-023, kc-he-016]
     acceptance_test: "FOUNDATION §5 diff reviewed: every disclaimer entry carries a jurisdiction/time-criticality field, not just boilerplate text."
     risk: Medium — the evidence largely defeats a single standardized clause; risk is per-instance variation becoming unmanaged per-hub duplication.
-    status: proposed
-    human_decision_needed: true
+    status: decided
+    human_decision_needed: false
+    decision: "Per-instance clause + explicit context/jurisdiction check, no boilerplate -- founder, delegated (\"ทำให้เลย\", BBL-2026-09-05-122); DECISIONS.md 2026-09-05 row. Text landed FOUNDATION_v0.6.md §5 (ex-PENDING FOUNDER block). Named risk (unmanaged per-hub duplication) tracked, not solved, per the decided text itself."
 
   - id: foundation.s7.9-intake-tier-flag
     title: Claim-tier intake flag — thin addition, not a new mechanism
@@ -106,8 +108,9 @@ nodes:
     evidence: [kc-ai-024, kc-he-018]
     acceptance_test: "LRS run on a policy-brief-only source set produces a flagged-not-blocked intake row, distinct from a rejected row."
     risk: Medium — real gap exists, but the mechanism as posed risks duplicating existing checklist machinery or over-policing legitimate non-graded evidence.
-    status: proposed
-    human_decision_needed: true
+    status: decided
+    human_decision_needed: false
+    decision: "Thin flag on the existing AACODS-style checklist (rule 22), Global South exemption kept -- founder, delegated (\"ทำให้เลย\", BBL-2026-09-05-122); DECISIONS.md 2026-09-05 row. Text landed FOUNDATION_v0.6.md §7.9 (ex-PENDING FOUNDER block) + §3.3 rule 22. Sim caveat carried forward: the measured delta was produced by a different (defect-detector) proxy, not this mechanism -- acceptance test must be re-run on fixtures built for the actual AACODS layer before ship."
 
   - id: schema.prereg-gate-fields
     title: Frozen-preregistration gate as checkable fields, not a hard block
@@ -120,8 +123,9 @@ nodes:
     evidence: [kc-he-002, kc-he-004, kc-he-005, kc-he-006, kc-he-007]
     acceptance_test: "Schema validator accepts a card with ethics_approved_at=NOT_APPLICABLE for a non-human-subjects claim and flags (not rejects) an out-of-sequence pair."
     risk: High if implemented as a hard universal block — real registries do not hard-block this way; a naive implementation would misdescribe practice and could block legitimate research.
-    status: proposed
-    human_decision_needed: true
+    status: dropped
+    human_decision_needed: false
+    decision: "Dropped -- founder, delegated (\"ทำให้เลย\", BBL-2026-09-05-122); DECISIONS.md 2026-09-05 row. Sim reason (design/FOUNDATION_v0.6_PATCH.md §8): delta_recall/delta_false_alarm both 0.0 -- the corpus has zero fixtures carrying prereg timestamp/ethics-applicability sequencing at all, so no defect was demonstrated to exist for this node to catch (Fail-Able Gate Law, BBL-119 -- no failing control, no gate). The separate prereg-gate-hard-vs-soft question this node names stays open, independent of this drop."
 
   - id: kernel.unverified-verifiability-flag
     title: "\"Verifiable with no stated procedure\" as a named narrow sub-case"
@@ -163,8 +167,9 @@ nodes:
     evidence: [kc-ep-030, kc-ep-034]
     acceptance_test: "FOUNDATION §1.0 diff cites grounding-theory and PSR sources directly, with an explicit line excluding kasb/faqr from the analogue."
     risk: Medium — partial adoption is defensible from the evidence but risks looking arbitrary without the full reasoning carried into the commit message.
-    status: proposed
-    human_decision_needed: true
+    status: decided
+    human_decision_needed: false
+    decision: "2 of 3 constructs adopted as theology-neutral structural analogues, labelled and cited (kc-ep-030, kc-ep-034); kasb / the five registers of faqr are NOT given analogues -- founder, delegated (\"ทำให้เลย\", BBL-2026-09-05-122); DECISIONS.md 2026-09-05 row. Text landed FOUNDATION_v0.6.md §1.0 (ex-PENDING FOUNDER block), exclusion reasoning stated inline rather than only in a commit message per the DAG's own arbitrariness-risk note."
 
   # --- clusters drawn from KNOWLEDGE_STATUS_v0.3.md §4 Adopt/Adapt candidates ---
   - id: foundation.pillars-readout-not-truth
@@ -329,8 +334,9 @@ nodes:
     evidence: [kc-ep-045, kc-ep-046, kc-ep-048, kc-ep-049, kc-aihp-005, kc-aihp-006, kc-aihp-010, kc-aihp-020]
     acceptance_test: "S4 finite_diagnostic sim compares LRS precision/recall on the same question set with and without the discovery-routing stage; ship only if recall improves without a precision drop."
     risk: Medium — DIGEST logs the underlying agenda-paper claim as still open (kc-aihp-008/009 not adopted here); this node only operationalizes the already-'holds'/'adapt' cards, not the open agenda claim.
-    status: proposed
-    human_decision_needed: true
+    status: decided
+    human_decision_needed: false
+    decision: "Adopted as an optional S14 stage (rule 25), gated, extension-only -- founder, delegated (\"ทำให้เลย\", BBL-2026-09-05-122); DECISIONS.md 2026-09-05 row. Text landed FOUNDATION_v0.6.md §7.9 (ex-PENDING FOUNDER block) + §3.3 rule 25. Underlying agenda-paper claim (kc-aihp-008/009) stays [Open], not adopted. No sim fixtures exist for this mechanism yet -- acceptance test not yet run."
 
   - id: foundation.disclaimer-catalogue-expand
     title: Disclaimer catalogue — priority-scoping and standpoint-disclosure patterns

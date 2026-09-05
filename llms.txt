@@ -1,5 +1,5 @@
 # glosa
-> Rigour Without Infrastructure — a human–AI co-production methodology; v0.4.0, status K0 public working release (not peer reviewed; no independent check yet), tier Dr, CC BY 4.0.
+> Rigour Without Infrastructure — a human–AI co-production methodology; v0.4.1, status K0 public working release (not peer reviewed; no independent check yet), tier Dr, CC BY 4.0.
 ## Read in this order
 - design/FOUNDATION_v0.6.md : the whole system (spine + pre-readout layer, claim card, tiers, independence ladder I0–I5, disclaimer catalogue, genre router, gates, callable layer). Canonical spec pair named in design/CURRENT_SPEC.txt.
 - design/FOUNDATION_v0.7_PATCH.md : patch spec for v0.7: build_now sections are applied in code/schema (see its §18 review response); pending-founder sections are patch-only (session architecture, Human Mastery Gate wiring, dialogue-log fields, LRS defeater discipline, NC-77) — read alongside methodology/P17_human_mastery_gate.md and methodology/P18_session_architecture.md

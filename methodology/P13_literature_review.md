@@ -72,6 +72,51 @@ is logged in the Blackbox Note's `cooking:` log (`P11`).
 lit-review section may be drafted — not merely published — until its `litreview_manifest.yaml`
 reaches `gate.overall ∈ {PASS, PASS_WITH_LIMITS}`.*
 
+**Optional S14 discovery-routing stage (decided 2026-09-05, founder, delegated "ทำให้เลย",
+BBL-2026-09-05-122; `DECISIONS.md` 2026-09-05 row; `design/FOUNDATION_v0.6.md` §7.9;
+`design/FOUNDATION_v0.6_PATCH.md` §23; DAG node `foundation.lrs-discovery-loop-extension`,
+status `decided`).** L1–L6 above may optionally be **preceded** by a discovery-routing stage: the
+human retains ownership of the question; the AI recursively decomposes it into candidate
+sub-questions and gates each candidate before it enters L1, using `k_epi` (the epistemic-
+multiplication construct, cited kc-ep-045, kc-ep-046, kc-ep-048, kc-ep-049, kc-aihp-005,
+kc-aihp-006, kc-aihp-010, kc-aihp-020) as the gating construct. This is an **extension, never a
+replacement** — every candidate that survives the gate still runs the full L1–L6 pipeline
+unchanged; a run that skips this stage entirely is equally valid. **Not adopted by this decision:**
+the broader agenda-paper claim behind `k_epi` (kc-aihp-008, kc-aihp-009) stays logged `[Open]` —
+this stage operationalizes only the already-`holds`/`adapt` cards, not the open agenda claim
+itself. `litreview_manifest.yaml` gains an additive `discovery_routing: { used: bool,
+candidate_questions: [string], k_epi_gate_log: [{question, gated_out: bool, reason}] }` block;
+`used: false` (default) means this section does not apply and no candidate_questions/gate_log is
+required. Kernel `rule25` (`DISCOVERY-CANDIDATE-UNGATED`): `discovery_routing.used=true` requires
+every `candidate_questions` entry to have a `k_epi_gate_log` row before it may enter L1 — not yet
+built (kernel is other workers' ownership this pass). No sim fixtures exist for this mechanism yet;
+acceptance test ("S4 finite_diagnostic sim compares LRS precision/recall on the same question set
+with and without the discovery-routing stage; ship only if recall improves without a precision
+drop") has not been run.
+
+**Claim-tier intake flag (decided 2026-09-05, founder, delegated "ทำให้เลย",
+BBL-2026-09-05-122; `DECISIONS.md` 2026-09-05 row; `design/FOUNDATION_v0.6.md` §7.9;
+`design/FOUNDATION_v0.6_PATCH.md` §4; DAG node `foundation.s7.9-intake-tier-flag`, status
+`decided`) — thin addition to the accuracy gate, not a new mechanism.** At L4 (reading &
+extraction), a source is flagged `intake_tier: request_tier` when its own genre would normally
+suppress an AACODS-style trace-to-original+appraise pass (e.g. a policy brief, a grey-literature
+report, an anecdotal/expert/local-knowledge account) — the flag *requests* a tier assignment
+rather than rejecting the source outright. **Explicit exemption:** Global South anecdotal,
+expert, and local-knowledge evidence genres are never treated as automatically suspect by this
+flag alone; the flag names a gap in the existing checklist's coverage, not a downgrade of the
+source's standing. A flagged-and-tiered row is distinct in the manifest from a rejected row.
+Fields (additive, per `citations[]` entry, not on `litreview_manifest` top level — the per-source
+array is `citations[]` keyed by `citation_card_id`; there is no `sources_found` field on
+`litreview_manifest`): `intake_tier: request_tier | not_flagged` (default `not_flagged`),
+`intake_tier_reason: string | null` (required non-empty when `intake_tier=request_tier`),
+`global_south_exempt: bool`. Kernel `rule22` (`INTAKE-TIER-UNTIERED`): a `citations[]` entry
+flagged `intake_tier=request_tier` requires a non-empty `intake_tier_reason`, never merged with a
+rejected row — built and shipped in `kernel/glosa_kernel.py` (`_intake_tier_warnings`, WARNING-only, `Rule22IntakeTierTest`). **Sim caveat carried
+forward explicitly:** any acceptance test for this mechanism must be run against fixtures built
+for the actual AACODS-layer mechanism, not against the existing S4 corpus (which has no such
+fixtures) — a prior +1.0 delta measured on this corpus was produced by a different (defect-
+detector) proxy and must not be cited as evidence for this mechanism.
+
 ## Why / incident
 
 Founder request 35 (2026-09-04, HANDOFF §8, mandatory): *"บังคับก่อนทบทวนวรรณกรรม: ต้องแยกทำระบบ

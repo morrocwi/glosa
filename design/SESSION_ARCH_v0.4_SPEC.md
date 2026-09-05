@@ -172,24 +172,29 @@ vertical-authority gate is being introduced here).
 
 ## 7. Founder decisions (human-only)
 
-1. **Ratify §2.2's one-fact-one-home decision**: Session object stays a logical join across
-   Blackbox Note + hypothesis_selection.yaml + problem_card.yaml + kg_edge.yaml; no new
-   `session.yaml` file is created. (Blocks: whether SA-1 and
-   kernel.session-boundary-momentum-reset-assertion can be merged into one build.)
-2. **Merge duplicate proposals**: kernel.session-boundary-momentum-reset-assertion duplicates
+1. **DECIDED** (founder, delegated "ทำให้เลย", BBL-2026-09-05-122; `DECISIONS.md` 2026-09-05
+   row, second entry): ratify §2.2's one-fact-one-home decision — Session object stays a logical
+   join across Blackbox Note + hypothesis_selection.yaml + problem_card.yaml + kg_edge.yaml; no
+   new `session.yaml` file is created. This resolves item 2 below (SA-1 and
+   kernel.session-boundary-momentum-reset-assertion are merged into one build, under SA-1).
+2. **DECIDED** (same founder ruling): kernel.session-boundary-momentum-reset-assertion duplicates
    SA-1's fields and defeater but points at the wrong FOUNDATION section (§2.3 R0/R1/R2 instead of
-   Blackbox Note directly). Confirm SA-1 is canonical and the kernel.* proposal is retired without
-   a separate build, to avoid two homes for `ai_state_at_boundary`.
-3. **Reserve NC-77** in the internal command-center's DECISIONS ledger (private) before any concurrent Family J
-   proposal can claim the id (the id itself is independently verified free — see §3 — but the
-   reservation act is a founder-owned ledger write, not an AI one).
-4. **SA-3 retroactivity**: whether the three new required Problem Card fields
+   Blackbox Note directly). SA-1 confirmed canonical; the kernel.* proposal is **retired, status
+   `closed`**, without a separate build, to avoid two homes for `ai_state_at_boundary`. See
+   `design/FOUNDATION_v0.7_PATCH.md` §12.4 for the full closure text and reason.
+3. **Still pending.** Reserve NC-77 in the internal command-center's DECISIONS ledger (private)
+   before any concurrent Family J proposal can claim the id (the id itself is independently
+   verified free — see §3 — but the reservation act is a founder-owned ledger write, not an AI
+   one).
+4. **DECIDED — forward-only** (same founder ruling): the three new required Problem Card fields
    (`problem_stated_before_first_ai_response`, `prior_model_or_guess`, `verification_intent`)
-   apply to already-published Problem Cards or forward-only (recommended: forward-only, per
-   meeting §5.3 — but this is the founder's call, not a default AI may set).
-5. **SA-4 ledger row**: ratify logging the chi_recip/m^H/m^AI decline as `status: RECORDED` in
-   the internal command-center's DECISIONS ledger (private) (not the fabricated `DECLINED-FOR-NOW` value, which
-   is not in that ledger's status enum).
+   apply forward-only, not retroactively to already-published Problem Cards — the recommended
+   default (meeting §5.3), now ratified by the founder.
+5. **DECIDED** (same founder ruling): SA-4 ledger row ratified — log the chi_recip/m^H/m^AI
+   decline as `status: RECORDED` in the internal command-center's DECISIONS ledger (private) (not
+   the fabricated `DECLINED-FOR-NOW` value, which is not in that ledger's status enum). The 3
+   citation fixes named in `design/FOUNDATION_v0.7_PATCH.md` §11.1 still must be applied to the
+   logged row before it is actually written.
 6. **Approve building the H3 sim now**: this is the first genuinely empirical (n=0, untested)
    falsifier run under this framework since the fabricated-C-id incident; running it produces a
    real result either way (supported/not supported/inconclusive) rather than leaving the concept
@@ -217,7 +222,7 @@ vertical-authority gate is being introduced here).
   fields_added: [session_id, opened_at, closed_at, ai_state_at_boundary, human_retained_residue_ref]
   acceptance_test: "two Blackbox Note files sharing session_id split by a real process restart both carry ai_state_at_boundary literal 'reset'"
   citations: [sources/notes/EPISTEMIC_FUSION_v7.1.txt:489, ':490, ':493, ':496, ':497, ':331]
-  founder_decision_needed: true   # merge target for kernel.session-boundary-momentum-reset-assertion, see §7.2
+  founder_decision_needed: false   # DECIDED 2026-09-05 (BBL-122, DECISIONS.md) -- canonical merge target for kernel.session-boundary-momentum-reset-assertion, see §7.1/§7.2
 
 - id: schema.entry-resistance-precommit-field
   status: build_now
@@ -250,7 +255,7 @@ vertical-authority gate is being introduced here).
     - "citation sources/notes/EPISTEMIC_FUSION_v7.1.txt:354 -> correct to :353"
     - "build_path must add the Problem-Card-vs-Blackbox-Note timestamp cross-check script the acceptance_test requires, or acceptance_test must be narrowed to the schema-required-fields half only"
   target: schema/problem_card.schema.json (3 new required fields)
-  founder_decision_needed: true   # retroactive vs forward-only, see §7.4
+  founder_decision_needed: false   # DECIDED 2026-09-05 (BBL-122, DECISIONS.md): forward-only, see §7.4
 
 - id: process.h3-falsifier-run                  # with_revision
   status: with_revision
@@ -266,7 +271,7 @@ vertical-authority gate is being introduced here).
     - "3 citation line corrections: EPISTEMIC_FUSION_v7.1.txt:550->548, :552->550, :494->495"
     - "drop or replace the 4th citation (design/FOUNDATION_v0.6.md:1670, irrelevant boilerplate)"
   target: the internal command-center's DECISIONS ledger (private) (status:RECORDED, not fabricated DECLINED-FOR-NOW); glosa/DECISIONS.md mirror
-  founder_decision_needed: true
+  founder_decision_needed: false   # DECIDED 2026-09-05 (BBL-122, DECISIONS.md): status RECORDED, ratified -- citation fixes above still owed before the row is written
 
 - id: schema.retention-direction-field.session-grouping-key   # SA-2, still_open
   status: still_open
@@ -275,10 +280,10 @@ vertical-authority gate is being introduced here).
     - "acceptance_test not mechanically runnable on real multi-session data until hypothesis_selection.yaml gains session_id (blocked on session.boundary-blackbox-note landing)"
   founder_decision_needed: true
 
-- id: session.boundary-momentum-reset-duplicate   # kernel.session-boundary-momentum-reset-assertion, still_open
-  status: still_open
-  disposition: "merge into session.boundary-blackbox-note (SA-1); do not build as a second node — same fields, same defeater, wrong FOUNDATION section originally cited (§2.3 R0/R1/R2 instead of Blackbox Note)"
-  founder_decision_needed: true
+- id: session.boundary-momentum-reset-duplicate   # kernel.session-boundary-momentum-reset-assertion, retired
+  status: closed
+  disposition: "DECIDED 2026-09-05 (BBL-122, DECISIONS.md, second entry): retired as duplicate of session.boundary-blackbox-note (SA-1); not built as a second node — same fields, same defeater, wrong FOUNDATION section originally cited (§2.3 R0/R1/R2 instead of Blackbox Note). See design/FOUNDATION_v0.7_PATCH.md §12.4 for the full closure text."
+  founder_decision_needed: false
 ```
 
 ---

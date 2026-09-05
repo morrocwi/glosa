@@ -4,7 +4,7 @@
   "title": "glosa literature review manifest",
   "description": "tier: Dr (specified; independently unreviewed). Implements templates/knowledge/litreview_manifest.yaml (S14 literature-review-system, design/S14_literature-review-system.md): ONE manifest per LRS run (one lens-out hypothesis, R2). Frozen at status FROZEN -- a correction is a new manifest version with `supersedes` pointing at the old id. GATE: no lit-review section may be drafted/published for this hypothesis until gate.accuracy_gate is PASS or PASS_WITH_LIMITS. Namespace https://glosa.example/ is a placeholder.",
   "type": "object",
-  "$comment": "TODO(foundation.s7.9-intake-tier-flag): design/FOUNDATION_v0.6_PATCH.md §4 -- citations[].intake_tier / intake_tier_reason / global_south_exempt (rule22, INTAKE-TIER-UNTIERED) -- pending-founder (thin-layer-scope-confirmation), NOT built this pass. TODO(foundation.lrs-discovery-loop-extension): FOUNDATION_v0.6_PATCH.md §23 -- top-level discovery_routing{used, candidate_questions, k_epi_gate_log} (rule25, DISCOVERY-CANDIDATE-UNGATED) -- pending-founder (discovery-routing-stage-adoption), NOT built this pass.",
+  "$comment": "DECISIONS.md 2026-09-05 (BBL-2026-09-05-122) ratified both prior TODOs at a thin/simplified scope, built this pass: citations[].intake_tier / intake_tier_reason / global_south_exempt (rule22, INTAKE-TIER-UNTIERED) is a WARNING-only thin flag, never a block, per 'foundation.s7.9-intake-tier-flag = thin flag on AACODS-style checklist'. The discovery-loop extension ('foundation.lrs-discovery-loop-extension = optional S14 stage') is built as an optional `candidate_set_stage` object on `search_log.schema.json` (its own home, sibling of `search_mode`) rather than the FOUNDATION_v0.6_PATCH.md §23 draft's heavier `discovery_routing{used, candidate_questions, k_epi_gate_log}` mechanism -- `kernel.lit_gate`'s optional `search_log` parameter reads it (rule25, DISCOVERY-STAGE-ABSENT, WARNING-only, never blocks). TODO(foundation.lrs-discovery-loop-extension): the heavier k_epi-gated candidate-routing mechanism itself (patch §23's own `discovery_routing`/rule25 DISCOVERY-CANDIDATE-UNGATED as a hard error) remains pending-founder (discovery-routing-stage-adoption) and is NOT built this pass -- only the thin optional-stage flag DECISIONS.md actually ratified.",
   "required": ["id", "hypothesis_ref", "search_log_ref", "status", "citations", "diversity_audit", "accuracy", "gate", "human_owner"],
   "additionalProperties": true,
   "properties": {
@@ -34,6 +34,20 @@
           "version_status": { "enum": ["PREPRINT", "PUBLISHED", "BOTH_LINKED", "NOT_APPLICABLE"] },
           "retraction_check": { "enum": ["CLEAR", "RETRACTED", "UNCHECKED"] },
           "dialogue_table_stance": { "enum": ["agrees", "disagrees", "orthogonal", "undetermined"] },
+          "intake_tier": {
+            "enum": ["request_tier", "not_flagged"],
+            "default": "not_flagged",
+            "description": "rule22 (INTAKE-TIER-UNTIERED, FOUNDATION_v0.6_PATCH.md §4, thin scope per DECISIONS.md 2026-09-05): a source whose genre would normally suppress a full AACODS trace-to-original+appraise pass is flagged request_tier -- a request for a tier assignment, never a rejection. Distinct from a rejected citations[] row."
+          },
+          "intake_tier_reason": {
+            "type": ["string", "null"],
+            "description": "Non-empty when intake_tier=request_tier is a WARNING-only expectation (rule22 is thin, never blocks) -- an empty reason on a request_tier row is logged, not schema-rejected."
+          },
+          "global_south_exempt": {
+            "type": "boolean",
+            "default": false,
+            "description": "Reserved, currently inert: no kernel code reads this flag yet. Intended future use: mark a Global South anecdotal/expert/local-knowledge evidence genre so a D-LIT-* suspicion framing is not applied to it -- the flag names a checklist gap, never a downgrade of the source's standing."
+          },
           "diversity": {
             "type": "object",
             "properties": {

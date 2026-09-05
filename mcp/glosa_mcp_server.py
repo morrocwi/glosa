@@ -49,7 +49,7 @@ from typing import Any
 
 PROTOCOL_VERSION = "2025-06-18"
 SERVER_NAME = "glosa"
-SERVER_VERSION = "0.4.0-dr"
+SERVER_VERSION = "0.4.1-dr"
 
 # Kernel functions named in FOUNDATION s9 / this task's tool list. Each
 # glosa_<name> MCP tool maps 1:1 to kernel.<name>(**arguments) (minus the

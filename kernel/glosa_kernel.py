@@ -481,6 +481,44 @@ def _scope_exceeds_evidence(scope):
     return None
 
 
+# --------------------------------------------------------------------------------------------
+# D-SCOPE-CONTEXT (design/FOUNDATION_v0.6_PATCH.md §14, foundation.s5-scope-boundary-per-instance;
+# DECISIONS.md 2026-09-05 BBL-2026-09-05-122: "per-instance clause + context check, no
+# boilerplate"). Per-instance, not standardized: a health/legal-domain card must pair its scope
+# with an explicit context check (time-criticality / jurisdiction / legal-category-availability),
+# not rely on one repo-wide disclaimer text. WARNING-only, thin, never blocks -- reuses the
+# existing health/legal keyword scan already backing D-NOT-DIAGNOSTIC (`_DOMAIN_SAFETY_KEYWORDS`,
+# defined further below) rather than a second, competing keyword list (one-fact-one-home for the
+# scan itself, even though the two disclaimers fire independently on the same signal).
+# --------------------------------------------------------------------------------------------
+
+def _scope_context_warning(card):
+    """D-SCOPE-CONTEXT: WARNING when a claim card whose own text reads as health/legal domain
+    carries no `scope.per_instance_scope_clause` (time_criticality/jurisdiction/
+    legal_category_available). Returns a warning string, or None when the domain scan is silent
+    or the clause is present."""
+    if not isinstance(card, dict):
+        return None
+    domain_text = " ".join(
+        str(x) for x in [
+            (card.get("statement") or {}).get("text"),
+            ((card.get("statement") or {}).get("translation") or {}).get("text"),
+            (card.get("standpoint") or {}).get("declared_basis"),
+        ] if x
+    )
+    if not _DOMAIN_SAFETY_KEYWORDS.search(domain_text):
+        return None
+    clause = (card.get("scope") or {}).get("per_instance_scope_clause")
+    if isinstance(clause, dict) and clause:
+        return None
+    return (
+        "HEURISTIC: D-SCOPE-CONTEXT: claim card reads as health/legal domain but "
+        "scope.per_instance_scope_clause (time_criticality/jurisdiction/legal_category_available) "
+        "is absent -- per-instance scope clause paired with a context check is expected here "
+        "(FOUNDATION_v0.6_PATCH.md §14), thin flag, never blocks"
+    )
+
+
 def _parse_date(value):
     if not value or not isinstance(value, str):
         return None
@@ -964,6 +1002,73 @@ def _inflated_bearing_errors(card, citation_cards):
 
 
 # --------------------------------------------------------------------------------------------
+# Kernel rule24 (design/FOUNDATION_v0.6_PATCH.md §6, kernel.pcs-red-flag; DECISIONS.md
+# 2026-09-05 BBL-2026-09-05-122: "kernel.pcs-red-flag = YES, narrow definition (rule 24)"):
+# Premature Category Stabilization (PCS) red-flag. Narrowly scoped, per the patch's own text: a
+# joint condition, never a single-signal trigger -- fires ERROR only when BOTH (a) closure-timing
+# (a category/conclusion locked in before the evidence-gathering step that would normally precede
+# it) AND (b) absence-of-adaptation (the locked category is never revisited against a changed
+# context) hold together in the same card; either alone is logged as a WARNING (rule24w), never
+# flagged as PCS. Deliberately kept distinct from the unrelated clinical term "premature closure"
+# (see methodology/data/contaminated_concept_table.json's own PCS row). A lexical heuristic,
+# tagged as such, same family/limits as rule 8/18/21's own text scans -- evadable by omission,
+# never claimed as a structural guarantee.
+# --------------------------------------------------------------------------------------------
+
+_PCS_CLOSURE_TIMING_RE = re.compile(
+    r"(?:category|classification|conclusion) (?:was |is )?(?:locked|closed|finalized|settled) "
+    r"before (?:the )?(?:evidence|data|further evidence|full evidence)|"
+    r"closed (?:this )?(?:category|classification) before (?:the )?evidence(?:-gathering)? "
+    r"(?:step |stage )?(?:was )?(?:complete|finished|done)|"
+    r"locked in prior to (?:completing|finishing) (?:the )?evidence",
+    re.IGNORECASE,
+)
+_PCS_ABSENCE_OF_ADAPTATION_RE = re.compile(
+    r"never revisited|not revisited (?:despite|even though|after)|"
+    r"never re-?evaluated|no update (?:was |has been )?made despite|"
+    r"not reconsidered (?:despite|after|even though)|never (?:re-?checked|adapted) (?:against|for) "
+    r"(?:the )?(?:changed|new) context",
+    re.IGNORECASE,
+)
+
+
+def _pcs_signals(card):
+    """Scan the same free-text field set rule 18 uses (statement/hypothesis_world/five_questions
+    text) for a closure-timing phrase and an absence-of-adaptation phrase. Returns
+    (closure_timing: bool, absence_of_adaptation: bool)."""
+    if not isinstance(card, dict):
+        return False, False
+    texts = []
+    for path in _INJECTED_IZ_TEXT_FIELD_PATHS:
+        texts.extend(t for _field_path, t in _walk_text_fields(card, path))
+    closure = any(_PCS_CLOSURE_TIMING_RE.search(t) for t in texts)
+    absence = any(_PCS_ABSENCE_OF_ADAPTATION_RE.search(t) for t in texts)
+    return closure, absence
+
+
+def _pcs_error_and_warning(card):
+    """Kernel rule24 (PCS-JOINT-CONDITION): returns (error_or_None, warning_or_None). Never both
+    at once -- the joint condition is a single ERROR, a lone signal is a single WARNING
+    (rule24w), and no signal at all is silent."""
+    closure, absence = _pcs_signals(card)
+    if closure and absence:
+        return (
+            "HEURISTIC: rule24(PCS-JOINT-CONDITION): Premature Category Stabilization flag "
+            "requires BOTH closure-timing AND absence-of-adaptation to hold jointly -- neither "
+            "alone fires this flag, and this card's text matches both",
+            None,
+        )
+    if closure or absence:
+        which = "closure-timing" if closure else "absence-of-adaptation"
+        return (
+            None,
+            f"HEURISTIC: rule24w: {which} present without the other signal -- logged, not "
+            "flagged as PCS (both conjuncts must hold jointly)",
+        )
+    return None, None
+
+
+# --------------------------------------------------------------------------------------------
 # Kernel rule29 (design/SESSION_ARCH_v0.4_SPEC.md §10.3, lrs.defeater-not-collapse-rule):
 # "strength of the claim" is not a defeater. The spec's own suggested home for the phrase list
 # (methodology/data/non_defeater_phrase_table.json, sibling to contaminated_concept_table.json)
@@ -1214,8 +1319,19 @@ def validate_claim_card(card, allow_no_jsonschema=False, citation_cards=None):
     if layer_warn:
         warnings.append(layer_warn)
 
-    # TODO(kernel.pcs-red-flag): rule24 (Premature Category Stabilization) is pending-founder
-    # (PCS-scoping-confirmation) -- not implemented this pass, per FOUNDATION_v0.6_PATCH.md §6.
+    # Kernel rule24 (PCS-JOINT-CONDITION, §6): Premature Category Stabilization red-flag --
+    # ratified narrow scope, DECISIONS.md 2026-09-05 BBL-2026-09-05-122.
+    pcs_err, pcs_warn = _pcs_error_and_warning(card)
+    if pcs_err:
+        errors.append(pcs_err)
+    elif pcs_warn:
+        warnings.append(pcs_warn)
+
+    # Kernel rule22w (INTAKE-TIER-UNTIERED, thin scope) / D-SCOPE-CONTEXT: warning-only,
+    # domain-context flags computed just below the errors/warnings core (see the two helpers).
+    scope_ctx_warn = _scope_context_warning(card)
+    if scope_ctx_warn:
+        warnings.append(scope_ctx_warn)
 
     # Kernel rule 27 (HIDDEN-AI-FILL, K-C2): seen.ai_assisted_fields vs ai_filled contradiction
     ai_fill_err = _hidden_ai_fill_error(card)
@@ -1925,11 +2041,14 @@ def compute_disclaimers(card, citation_cards=None):
     domain_text = " ".join(
         str(x) for x in [
             (card.get("statement") or {}).get("text"),
+            ((card.get("statement") or {}).get("translation") or {}).get("text"),
             (card.get("standpoint") or {}).get("declared_basis"),
         ] if x
-    )
+    )  # same field set as _scope_context_warning, so the two scans never diverge
     if _DOMAIN_SAFETY_KEYWORDS.search(domain_text):
         emit("D-NOT-DIAGNOSTIC")
+        if _scope_context_warning(card):
+            emit("D-SCOPE-CONTEXT")
 
     # D-NO-VERTICAL-AUTHORITY (HEURISTIC)
     if _VERTICAL_AUTHORITY_KEYWORDS.search(domain_text):
@@ -2243,7 +2362,45 @@ def silent_lift_check(card):
 # lit_gate
 # --------------------------------------------------------------------------------------------
 
-def lit_gate(manifest):
+def _intake_tier_warnings(manifest):
+    """Kernel rule22w (INTAKE-TIER-UNTIERED, thin scope per DECISIONS.md 2026-09-05): a
+    citations[] entry flagged intake_tier=request_tier with no non-empty intake_tier_reason is
+    logged as a WARNING -- never merged with a rejected row, never a hard block."""
+    out = []
+    for c in manifest.get("citations") or []:
+        c = c or {}
+        if c.get("intake_tier") != "request_tier":
+            continue
+        reason = c.get("intake_tier_reason")
+        if not (isinstance(reason, str) and reason.strip()):
+            out.append(
+                "rule22w(INTAKE-TIER-UNTIERED): citations[] entry "
+                f"{c.get('citation_card_id')!r} is flagged intake_tier=request_tier with no "
+                "intake_tier_reason -- thin flag, never blocks, distinct from a rejected row"
+            )
+    return out
+
+
+def _discovery_stage_warning(manifest, search_log):
+    """Kernel rule25w (DISCOVERY-STAGE-ABSENT, optional S14 stage per DECISIONS.md 2026-09-05
+    'foundation.lrs-discovery-loop-extension = optional S14 stage'): when the supplied
+    `search_log`'s own `search_mode` is SYSTEMATIC_REVIEW and neither it nor the manifest itself
+    carries a `candidate_set_stage`, warn -- never blocks. Returns None (not evaluable, or
+    satisfied) or a warning string."""
+    if not isinstance(search_log, dict):
+        return None
+    if search_log.get("search_mode") != "SYSTEMATIC_REVIEW":
+        return None
+    if search_log.get("candidate_set_stage") or (isinstance(manifest, dict) and manifest.get("candidate_set_stage")):
+        return None
+    return (
+        "rule25w(DISCOVERY-STAGE-ABSENT): search_log.search_mode is SYSTEMATIC_REVIEW with no "
+        "candidate_set_stage (candidates_generated/candidates_collapsed/routing_note) recorded "
+        "-- thin flag, never blocks"
+    )
+
+
+def lit_gate(manifest, search_log=None):
     """S14 literature-review-system accuracy + diversity gates, re-derived from a
     litreview_manifest payload. Returns a Result whose `verdict` is one of the gate_verdict
     values (PASS | PASS_WITH_LIMITS | FAIL | HUMAN_REVIEW).
@@ -2254,6 +2411,11 @@ def lit_gate(manifest):
     - `gate.overall == FAIL` requires a non-empty `blocked_reason`.
     - the declared `gate.overall` must be at least as strict as the worse of `accuracy_gate` and
       `diversity_gate` (never silently upgraded).
+
+    Also computes two WARNING-only, never-blocking flags (both thin per DECISIONS.md 2026-09-05):
+    rule22w (INTAKE-TIER-UNTIERED, always evaluated from `manifest.citations[]` alone) and rule25w
+    (DISCOVERY-STAGE-ABSENT, only evaluated when the optional `search_log` payload is supplied --
+    an honest silence otherwise, never a fabricated pass).
     """
     if not isinstance(manifest, dict):
         return _result(ok=False, errors=["lit_gate: instance is not an object"])
@@ -2264,6 +2426,11 @@ def lit_gate(manifest):
     errors.extend(schema_errors)
     if used_fallback:
         warnings.append("jsonschema not available -- litreview_manifest.schema.json's own allOf gates (blocked_reason/violations) were not run by the schema layer; kernel checks below still ran.")
+
+    warnings.extend(_intake_tier_warnings(manifest))
+    discovery_warn = _discovery_stage_warning(manifest, search_log)
+    if discovery_warn:
+        warnings.append(discovery_warn)
 
     gate = manifest.get("gate") or {}
     accuracy_gate = gate.get("accuracy_gate")

@@ -72,9 +72,13 @@ statement carries a signature line naming the lens `lens_ref` points at, or the 
 Kernel rules 18–28 (`design/FOUNDATION_v0.6.md` §3.3): injected-infinity/zero taxonomy, the
 Fail-Able Gate Law, forbidden-word-list rejection on `comparison.basis`, the genre-router layer-mismatch
 diagnostic, the LRS claim-tier intake flag, `verdict_class`, the PCS red-flag, the discovery-
-routing extension, and the composite-quote / hidden-AI-fill / inflated-bearing detectors. Several
-of these (§3.3 rules 21, 22, 24, 25) are `PENDING FOUNDER DECISION` — read the FOUNDATION section
-directly before treating them as binding. New claim-card fields (`comparison`, `evidence_strength`,
+routing extension, and the composite-quote / hidden-AI-fill / inflated-bearing detectors.
+**Rules 22, 24, 25 (and the §1.0/§6.3c/§5 blocks they came from) are DECIDED as of 2026-09-05**
+(founder, delegated "ทำให้เลย", BBL-2026-09-05-122; `DECISIONS.md` 2026-09-05 row) — read
+`FOUNDATION_v0.6.md`'s own `DECIDED` block headers for the adopted text; the decision does not by
+itself mean the kernel/schema code is built (check `kernel/glosa_kernel.py` and the schema files
+directly). Rule 21 (genre-router layer-mismatch) is likewise decided, as a design decision rather
+than a founder gate (it was never a DAG-mandated `human_decision_needed` node). New claim-card fields (`comparison`, `evidence_strength`,
 `verdict_class`, `gate_fail_taxonomy`, `gate_construction_status`,
 `five_questions.seen.ai_assisted_fields`) are additive/optional, `schema/claim_card.schema.json`
 target `0.7.0` — not yet applied to the schema file on disk.
@@ -84,8 +88,13 @@ target `0.7.0` — not yet applied to the schema file on disk.
 `methodology/P17_human_mastery_gate.md` (Human Mastery Gate, generalized past the arXiv-paper
 genre, publish-gate R8) and `methodology/P18_session_architecture.md` (Session object as a
 logical join, `NC-77` retention≠direction, momentum diagnostics Open) are new this pass — read
-either before treating a session as bounded or a mastery gate as satisfied. Full diff, not yet
-applied to `FOUNDATION_v0.6.md`/schema/kernel: `design/FOUNDATION_v0.7_PATCH.md`.
+either before treating a session as bounded or a mastery gate as satisfied. Full diff, applied by
+node (not uniformly): `design/FOUNDATION_v0.7_PATCH.md`. **7 founder decisions resolved 2026-09-05**
+(BBL-2026-09-05-122, `DECISIONS.md` 2026-09-05 row): the Session object's one-fact-one-home
+join (no `session.yaml`) is ratified; `kernel.session-boundary-momentum-reset-assertion` is
+**retired, status `closed`**, as a duplicate of SA-1 (`FOUNDATION_v0.7_PATCH.md` §12.4); SA-3/HU-2's
+new required Problem Card fields apply **forward-only**; SA-4's `chi_recip`/`m^H`/`m^AI` decline
+is ratified `status: RECORDED`. See `FOUNDATION_v0.7_PATCH.md` §15 for the still-pending items.
 
 ## Output discipline
 
