@@ -1,0 +1,11 @@
+{
+ "deposition_id": 22414412,
+ "founder_instructed_bypass": {
+  "instruction": "ใช้ glosa ตรวจไฟล์นี้ ผ่านแล้วเอาขึ้นระบบ + นายแก้ให้เลยเขียนใหม่เอาของเดิมเป็นแองเคอร์ (founder chat 2026-09-06, BBL-140/142); v1.1 re-review PASS",
+  "logged_at": "2026-09-06T05:49:32"
+ },
+ "doi": "10.5281/zenodo.22414412",
+ "conceptdoi": "10.5281/zenodo.22414411",
+ "url": "https://zenodo.org/record/22414412",
+ "title": "Master Equation River: A Provenance Audit Across the Human–AI Readout Programme (Internal Programme Synthesis v1.1, glosa-checked) — การทวนสายธารสมการ เทียบกับวรรณกรรมภายใน และการชี้ที่มาของแต่ละส่วน"
+}
