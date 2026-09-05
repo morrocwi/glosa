@@ -12,6 +12,7 @@ Subcommands
 Token: read ONLY from env ZENODO_TOKEN (source ~/.config/glosa/secrets.env). Never printed, never argv.
 Stops at the first HTTP error (no retry loops). State file: registry/zenodo_clusters.json (append-only outcomes).
 """
+import datetime
 import os, sys, json, re, html, time, tempfile, subprocess, urllib.request, urllib.parse
 
 REG = 'registry'
@@ -32,6 +33,7 @@ TAGS = {
  'islam': r'islam|muslim|halal|hilal|nikah|faqr|ash.ar|imam|shar[iī]|mosque|qur|ummah|มุสลิม|อิสลาม',
  'tourism': r'touris|travel|hospitality|service systems|ท่องเที่ยว',
  'aihp': r'(?!x)x',  # curated series: membership by OVERRIDE_TAGS_ADD only (founder BBL-2026-09-04-111)
+ 'jps': r'(?!x)x',  # curated series: society, justice, peace, violence — membership by OVERRIDE_TAGS_ADD only (founder chat 2026-09-05)
  'se': r'social enterprise|social-enterprise|entrepreneur|enterprise survival|mission drift|social business|วิสาหกิจ',
 }
 # manual overrides by Zenodo record id (founder/chair readout 2026-09-04)
@@ -43,6 +45,7 @@ OVERRIDE_PRIMARY = {
 }
 OVERRIDE_TAGS_REMOVE = {'tourism': [17899050, 17600798], 'ai': [17439693, 17393189, 17378613, 17341231, 18897585, 18213737], 'islam': [17280895]}
 OVERRIDE_TAGS_ADD = {
+ 'jps': [18925131, 18383439, 18444260, 18897585, 22129490, 20159825, 22099526, 19425809, 18943971, 19115417, 17280895],
  'aihp': [22341671, 22341297, 22339909, 19215748, 17280546, 22318040, 22319715, 22308446,22308448,22308451, 19640361, 19205869, 22163849, 22307843, 22307841, 22307148, 22307561, 22307564, 22308072, 22308066, 22301202, 22301318, 21425420, 18711408, 18517054, 18925129, 18943971, 19176260, 22302410, 22301886, 22307891, 21529456],'se': [17281646, 22301882], 'islam': [17281646], 'ai': [22341671, 22341297, 22339909, 22301882, 22302410], 'ep': []}
 HUBS = {
  'ep': dict(title='Readout Universe — Epistemology programme index (Yaoharee Lahtee, 2026)', th='ญาณวิทยา / ทฤษฎีความรู้', anchors=['10.5281/zenodo.21529456', '10.5281/zenodo.22301202', '10.5281/zenodo.22301318']),
@@ -52,8 +55,10 @@ HUBS = {
  'islam': dict(title='Readout Universe — Islam, Muslim society & knowledge authority programme index (Yaoharee Lahtee, 2026)', th='อิสลาม / สังคมมุสลิม / อำนาจความรู้', anchors=['10.5281/zenodo.22206607', '10.5281/zenodo.22129490', '10.5281/zenodo.18943971']),
  'tourism': dict(title='Readout Universe — Muslim-friendly tourism & service programme index (Yaoharee Lahtee, 2026)', th='ท่องเที่ยว / บริการ', anchors=['10.5281/zenodo.19059720', '10.5281/zenodo.18258377']),
  'aihp': dict(title='When AI Expands Human Potential — series index: human–AI epistemic fusion, standalone scholarship, and the Readout hypothesis-generation programme (Yaoharee Lahtee, 2025–2026)', th='เมื่อ AI ขยายศักยภาพมนุษย์ — ซีรีส์งานที่ทำให้มนุษย์กับ AI ผลิตความรู้ร่วมกันได้ (ฟิวชันทางญาณวิทยา): Standalone Scholar, glosa, Bounded Knower I–IV + State of Evidence, Written by AI Still True, Readout Condition, Human LoRA และงานที่เกี่ยวข้อง', anchors=['10.5281/zenodo.19215748', '10.5281/zenodo.22163849', '10.5281/zenodo.22307843']),
+ 'jps': dict(title='Society, Justice, Peace & Violence — series index: structured coexistence, causal ethics, conflict and repair, authority and minority politics (Yaoharee Lahtee, 2025–2026)', th='สังคม / ความยุติธรรม / สันติภาพ / ความรุนแรง — ไวยากรณ์เชิงเหตุของการอยู่ร่วมกัน จริยศาสตร์เชิงเหตุ ความขัดแย้งและการซ่อมแซม อำนาจความรู้และการเมืองของชนกลุ่มน้อย', anchors=['10.5281/zenodo.18925131', '10.5281/zenodo.18383439', '10.5281/zenodo.18444260']),
  'se': dict(title='Readout Universe — Social enterprise programme index (Yaoharee Lahtee, 2026)', th='วิสาหกิจเพื่อสังคม', anchors=['10.5281/zenodo.22227005', '10.5281/zenodo.18506938']),
 }
+TODAY = datetime.date.today().isoformat()
 SCRATCH = os.environ.get('GLOSA_SCRATCH', tempfile.gettempdir())
 
 
@@ -170,18 +175,18 @@ def cmd_hubs():
         items = ''.join(f"<li>{html.escape(r['title'])} ({r['date']}) — <a href='https://doi.org/{r['doi']}'>{r['doi']}</a></li>" for r in ms)
         desc = (f"<p><strong>Programme index — {hub['th']}.</strong> A navigation aid listing {len(ms)} works by the author in this programme area (a work may appear in several programme indexes). Inclusion is a readout of the author's own classification (assisted by the glosa toolchain, github.com/morrocwi/glosa), not an evaluation; each record keeps its own status and disclaimers. Anchor works: " + ', '.join(hub['anchors']) + f".</p><ol>{items}</ol>")
         hf = os.path.join(SCRATCH, f'{c}_index.html')
-        open(hf, 'w', encoding='utf-8').write(f"<html><meta charset='utf-8'><body style='font-family:Noto Serif Thai,serif'><h1>{html.escape(hub['title'])}</h1>{desc}<p>Generated 2026-09-04 by glosa.</p></body></html>")
+        open(hf, 'w', encoding='utf-8').write(f"<html><meta charset='utf-8'><body style='font-family:Noto Serif Thai,serif'><h1>{html.escape(hub['title'])}</h1>{desc}<p>Generated {TODAY} by glosa.</p></body></html>")
         subprocess.run(['soffice', '--headless', '--convert-to', 'pdf', '--outdir', SCRATCH, hf], capture_output=True, timeout=180)
         pdf = hf[:-5] + '.pdf'
-        meta = {'metadata': {'title': hub['title'], 'upload_type': 'publication', 'publication_type': 'other', 'publication_date': '2026-09-04',
-                'creators': [CREATOR], 'description': desc, 'access_right': 'open', 'license': 'cc-by-4.0', 'language': 'eng', 'version': '2026-09-04',
+        meta = {'metadata': {'title': hub['title'], 'upload_type': 'publication', 'publication_type': 'other', 'publication_date': TODAY,
+                'creators': [CREATOR], 'description': desc, 'access_right': 'open', 'license': 'cc-by-4.0', 'language': 'eng', 'version': TODAY,
                 'keywords': ['programme index', 'Readout Universe', 'Yaoharee Lahtee', hub['th']],
                 'related_identifiers': [{'identifier': r['doi'], 'relation': 'hasPart', 'resource_type': 'publication'} for r in ms]}}
         dep = api('POST', 'https://zenodo.org/api/deposit/depositions', {}); did = dep['id']; bucket = dep['links']['bucket']
         api('PUT', f'https://zenodo.org/api/deposit/depositions/{did}', meta)
         if os.path.exists(pdf):
-            api('PUT', bucket + f'/{c}_programme_index_2026-09-04.pdf', raw=open(pdf, 'rb').read(), ctype='application/octet-stream')
-        api('PUT', bucket + f'/{c}_programme_index_2026-09-04.json', raw=json.dumps([{k: r[k] for k in ('doi', 'title', 'date')} for r in ms], ensure_ascii=False, indent=1).encode(), ctype='application/octet-stream')
+            api('PUT', bucket + f'/{c}_programme_index_{TODAY}.pdf', raw=open(pdf, 'rb').read(), ctype='application/octet-stream')
+        api('PUT', bucket + f'/{c}_programme_index_{TODAY}.json', raw=json.dumps([{k: r[k] for k in ('doi', 'title', 'date')} for r in ms], ensure_ascii=False, indent=1).encode(), ctype='application/octet-stream')
         pub = api('POST', f'https://zenodo.org/api/deposit/depositions/{did}/actions/publish')
         state[c] = {'hub_doi': pub['doi'], 'hub_id': did, 'members': [r['doi'] for r in ms], 'anchors': hub['anchors'], 'linked': {}}
         save(STATE, state); print(c, 'HUB published', pub['doi'], 'members', len(ms)); time.sleep(0.5)

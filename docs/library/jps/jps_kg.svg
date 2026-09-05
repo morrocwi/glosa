@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="756" font-family="Noto Sans, Noto Sans Thai, Arial, sans-serif" font-size="11">
+<rect width="1600" height="756" fill="#fbfaf7"/>
+<text x="40" y="40" font-size="20" font-weight="bold">When AI Expands Human Potential — Zenodo library graph (hub 10.5281/zenodo.22342043)</text>
+<text x="40" y="62" fill="#555">rows = publication month (newest top) · latest versions only · solid arrow = continues · dashed = isSupplementTo · thin grey = references · built 2026-09-05 from Zenodo metadata (readout, not truth)</text>
+<line x1="175.0" y1="148.0" x2="475.0" y2="436.0" stroke="#bbb" stroke-width="0.8" opacity="0.85"/>
+<line x1="175.0" y1="148.0" x2="775.0" y2="436.0" stroke="#bbb" stroke-width="0.8" opacity="0.85"/>
+<line x1="175.0" y1="148.0" x2="475.0" y2="532.0" stroke="#bbb" stroke-width="0.8" opacity="0.85"/>
+<line x1="175.0" y1="148.0" x2="175.0" y2="532.0" stroke="#bbb" stroke-width="0.8" opacity="0.85"/>
+<line x1="475.0" y1="148.0" x2="775.0" y2="436.0" stroke="#bbb" stroke-width="0.8" opacity="0.85"/>
+<line x1="475.0" y1="148.0" x2="475.0" y2="532.0" stroke="#bbb" stroke-width="0.8" opacity="0.85"/>
+<line x1="475.0" y1="148.0" x2="175.0" y2="532.0" stroke="#bbb" stroke-width="0.8" opacity="0.85"/>
+<line x1="175.0" y1="244.0" x2="175.0" y2="148.0" stroke="#bbb" stroke-width="0.8" opacity="0.85"/>
+<line x1="175.0" y1="244.0" x2="475.0" y2="436.0" stroke="#bbb" stroke-width="0.8" opacity="0.85"/>
+<line x1="175.0" y1="244.0" x2="775.0" y2="436.0" stroke="#bbb" stroke-width="0.8" opacity="0.85"/>
+<line x1="175.0" y1="244.0" x2="475.0" y2="532.0" stroke="#bbb" stroke-width="0.8" opacity="0.85"/>
+<line x1="175.0" y1="244.0" x2="175.0" y2="532.0" stroke="#bbb" stroke-width="0.8" opacity="0.85"/>
+<line x1="175.0" y1="340.0" x2="775.0" y2="436.0" stroke="#bbb" stroke-width="0.8" opacity="0.85"/>
+<line x1="175.0" y1="340.0" x2="475.0" y2="532.0" stroke="#bbb" stroke-width="0.8" opacity="0.85"/>
+<line x1="175.0" y1="340.0" x2="175.0" y2="532.0" stroke="#bbb" stroke-width="0.8" opacity="0.85"/>
+<line x1="175.0" y1="436.0" x2="175.0" y2="148.0" stroke="#bbb" stroke-width="0.8" opacity="0.85"/>
+<line x1="175.0" y1="436.0" x2="475.0" y2="436.0" stroke="#bbb" stroke-width="0.8" opacity="0.85"/>
+<line x1="175.0" y1="436.0" x2="775.0" y2="436.0" stroke="#bbb" stroke-width="0.8" opacity="0.85"/>
+<line x1="175.0" y1="436.0" x2="475.0" y2="532.0" stroke="#bbb" stroke-width="0.8" opacity="0.85"/>
+<line x1="175.0" y1="436.0" x2="175.0" y2="532.0" stroke="#bbb" stroke-width="0.8" opacity="0.85"/>
+<line x1="475.0" y1="436.0" x2="775.0" y2="436.0" stroke="#bbb" stroke-width="0.8" opacity="0.85"/>
+<line x1="475.0" y1="436.0" x2="475.0" y2="532.0" stroke="#bbb" stroke-width="0.8" opacity="0.85"/>
+<line x1="475.0" y1="436.0" x2="175.0" y2="532.0" stroke="#bbb" stroke-width="0.8" opacity="0.85"/>
+<line x1="775.0" y1="436.0" x2="475.0" y2="532.0" stroke="#bbb" stroke-width="0.8" opacity="0.85"/>
+<line x1="775.0" y1="436.0" x2="175.0" y2="532.0" stroke="#bbb" stroke-width="0.8" opacity="0.85"/>
+<line x1="1075.0" y1="436.0" x2="775.0" y2="436.0" stroke="#bbb" stroke-width="0.8" opacity="0.85"/>
+<line x1="1075.0" y1="436.0" x2="475.0" y2="532.0" stroke="#bbb" stroke-width="0.8" opacity="0.85"/>
+<line x1="1075.0" y1="436.0" x2="175.0" y2="532.0" stroke="#bbb" stroke-width="0.8" opacity="0.85"/>
+<line x1="175.0" y1="532.0" x2="775.0" y2="436.0" stroke="#bbb" stroke-width="0.8" opacity="0.85"/>
+<line x1="175.0" y1="532.0" x2="475.0" y2="532.0" stroke="#bbb" stroke-width="0.8" opacity="0.85"/>
+<line x1="475.0" y1="532.0" x2="775.0" y2="436.0" stroke="#bbb" stroke-width="0.8" opacity="0.85"/>
+<line x1="475.0" y1="532.0" x2="175.0" y2="532.0" stroke="#bbb" stroke-width="0.8" opacity="0.85"/>
+<line x1="175.0" y1="628.0" x2="775.0" y2="436.0" stroke="#bbb" stroke-width="0.8" opacity="0.85"/>
+<line x1="175.0" y1="628.0" x2="475.0" y2="532.0" stroke="#bbb" stroke-width="0.8" opacity="0.85"/>
+<line x1="175.0" y1="628.0" x2="175.0" y2="532.0" stroke="#bbb" stroke-width="0.8" opacity="0.85"/>
+<text x="8" y="134" font-size="10" fill="#888" transform="rotate(-90 8,134)">2026-08</text>
+<a href="https://doi.org/10.5281/zenodo.22129490"><rect x="40" y="120" width="270" height="56" rx="6" fill="#fff" stroke="#333"/>
+<text x="48" y="138" font-weight="bold">When Interpretation Hardens: Epistemic Autho</text>
+<text x="48" y="153">rity, Asymmetric Revisability, and Conflict in</text>
+<text x="48" y="168" fill="#1f618d">10.5281/zenodo.22129490 · 2026-08-27</text></a>
+<a href="https://doi.org/10.5281/zenodo.22099526"><rect x="340" y="120" width="270" height="56" rx="6" fill="#fff" stroke="#333"/>
+<text x="348" y="138" font-weight="bold">Two Have Sex, One Gets the Bill Reproductive</text>
+<text x="348" y="153"> Closure, Asymmetric Observability, and Patria</text>
+<text x="348" y="168" fill="#1f618d">10.5281/zenodo.22099526 · 2026-08-25</text></a>
+<text x="8" y="230" font-size="10" fill="#888" transform="rotate(-90 8,230)">2026-05</text>
+<a href="https://doi.org/10.5281/zenodo.20159825"><rect x="40" y="216" width="270" height="56" rx="6" fill="#fff" stroke="#333"/>
+<text x="48" y="234" font-weight="bold">Marginal Hegemony in Thailand: Satire, the M</text>
+<text x="48" y="249">uslim Minority, and the Politics of Power-Lite</text>
+<text x="48" y="264" fill="#1f618d">10.5281/zenodo.20159825 · 2026-05-13</text></a>
+<text x="8" y="326" font-size="10" fill="#888" transform="rotate(-90 8,326)">2026-04</text>
+<a href="https://doi.org/10.5281/zenodo.19425809"><rect x="40" y="312" width="270" height="56" rx="6" fill="#fff" stroke="#333"/>
+<text x="48" y="330" font-weight="bold">รอยร้าวเฉลิมฉลอง : การพังทลาย การรื้อถอน และ</text>
+<text x="48" y="345">การประกอบสร้างใหม่ ของสังคมและตัวตน</text>
+<text x="48" y="360" fill="#1f618d">10.5281/zenodo.19425809 · 2026-04-05</text></a>
+<text x="8" y="422" font-size="10" fill="#888" transform="rotate(-90 8,422)">2026-03</text>
+<a href="https://doi.org/10.5281/zenodo.19115417"><rect x="40" y="408" width="270" height="56" rx="6" fill="#fff" stroke="#333"/>
+<text x="48" y="426" font-weight="bold">From Intercultural Marriage to State Policy:</text>
+<text x="48" y="441"> Premature Category Stabilization as a Scale-I</text>
+<text x="48" y="456" fill="#1f618d">10.5281/zenodo.19115417 · 2026-03-20</text></a>
+<a href="https://doi.org/10.5281/zenodo.18943971"><rect x="340" y="408" width="270" height="56" rx="6" fill="#fff" stroke="#333"/>
+<text x="348" y="426" font-weight="bold">The Civilization of Knowledge: Who Has the A</text>
+<text x="348" y="441">uthority to Interpret the World</text>
+<text x="348" y="456" fill="#1f618d">10.5281/zenodo.18943971 · 2026-03-10</text></a>
+<a href="https://doi.org/10.5281/zenodo.18925131"><rect x="640" y="408" width="270" height="56" rx="6" fill="#fff" stroke="#333"/>
+<text x="648" y="426" font-weight="bold">The Causal Grammar of Structured Coexistence</text>
+<text x="648" y="441">: Conflict, Violence, Repair, and Non-Suppress</text>
+<text x="648" y="456" fill="#1f618d">10.5281/zenodo.18925131 · 2026-03-09</text></a>
+<a href="https://doi.org/10.5281/zenodo.18897585"><rect x="940" y="408" width="270" height="56" rx="6" fill="#fff" stroke="#333"/>
+<text x="948" y="426" font-weight="bold">Causal Agency  A Persistence Control Theory </text>
+<text x="948" y="441">of Adaptive Systems</text>
+<text x="948" y="456" fill="#1f618d">10.5281/zenodo.18897585 · 2026-03-07</text></a>
+<text x="8" y="518" font-size="10" fill="#888" transform="rotate(-90 8,518)">2026-01</text>
+<a href="https://doi.org/10.5281/zenodo.18444260"><rect x="40" y="504" width="270" height="56" rx="6" fill="#fff" stroke="#333"/>
+<text x="48" y="522" font-weight="bold">CAUSAL ETHICS : The Mathematics of Regime Ch</text>
+<text x="48" y="537">oice and Survival</text>
+<text x="48" y="552" fill="#1f618d">10.5281/zenodo.18444260 · 2026-01-31</text></a>
+<a href="https://doi.org/10.5281/zenodo.18383439"><rect x="340" y="504" width="270" height="56" rx="6" fill="#fff" stroke="#333"/>
+<text x="348" y="522" font-weight="bold">Violence as a Special Case of Instability in</text>
+<text x="348" y="537"> Finite–Memory Causal Systems</text>
+<text x="348" y="552" fill="#1f618d">10.5281/zenodo.18383439 · 2026-01-27</text></a>
+<text x="8" y="614" font-size="10" fill="#888" transform="rotate(-90 8,614)">2025-10</text>
+<a href="https://doi.org/10.5281/zenodo.17280895"><rect x="40" y="600" width="270" height="56" rx="6" fill="#fff" stroke="#333"/>
+<text x="48" y="618" font-weight="bold">Strong, Warm &amp; Safe Family Ecosystem</text>
+<text x="48" y="633"></text>
+<text x="48" y="648" fill="#1f618d">10.5281/zenodo.17280895 · 2025-10-06</text></a>
+</svg>

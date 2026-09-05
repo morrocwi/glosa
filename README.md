@@ -161,7 +161,7 @@ judgment against the DAG. Full, generated, one-row-per-card table (never hand-ed
 
 ### Library knowledge graph (Zenodo)
 
-`docs/library/` holds a machine-readable map of the Zenodo series *When AI Expands Human Potential* (hub 10.5281/zenodo.22308201): `AIHP_LIBRARY_KG.md` (reading guide for AI readers), `aihp_kg.json` / `aihp_kg_edges.jsonl` (nodes, edges, lineage chains), `aihp_kg.svg`. Deposited as 10.5281/zenodo.22341671. Rebuild after the library changes: `python3 scripts/zenodo_library_kg.py`.
+`docs/library/` holds a machine-readable map of the Zenodo series *When AI Expands Human Potential* (hub 10.5281/zenodo.22308201): `AIHP_LIBRARY_KG.md` (reading guide for AI readers), `aihp_kg.json` / `aihp_kg_edges.jsonl` (nodes, edges, lineage chains), `aihp_kg.svg`. Deposited as 10.5281/zenodo.22341671. A second series, *Society, Justice, Peace & Violence* (hub 10.5281/zenodo.22342043, 11 members), has its graph in `docs/library/jps/`. Rebuild after a library changes: `python3 scripts/zenodo_library_kg.py [--hub <id> --out <dir>]`.
 
 ### K-state and registry status
 

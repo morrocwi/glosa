@@ -1,0 +1,3200 @@
+{
+ "@context": {
+  "@vocab": "http://schema.org/",
+  "doi": "https://doi.org/",
+  "relation": "http://purl.org/dc/terms/relation"
+ },
+ "@type": "Dataset",
+ "name": "Knowledge graph of the Zenodo series 'Society, Justice, Peace & Violence' (Yaoharee Lahtee, 2025–2026)",
+ "built_on": "2026-09-05",
+ "hub": "https://doi.org/10.5281/zenodo.22342043",
+ "readout_note": "Nodes and edges are copied from Zenodo metadata on the build date. Edges marked (derived) come from Zenodo concept ids, all others were authored in the records' related_identifiers. This is a readout of the metadata, not a ranking or a validation of any paper.",
+ "node_count": 28,
+ "edge_count": 85,
+ "nodes": [
+  {
+   "@id": "https://doi.org/10.5281/zenodo.22342043",
+   "zenodo_id": 22342043,
+   "concept_doi": "10.5281/zenodo.22342042",
+   "conceptrecid": "22342042",
+   "title": "Society, Justice, Peace & Violence — series index: structured coexistence, causal ethics, conflict and repair, authority and minority politics (Yaoharee Lahtee, 2025–2026)",
+   "date": "2026-09-05",
+   "version": "2026-09-05",
+   "resource_type": "Other",
+   "language": "eng",
+   "keywords": [
+    "programme index",
+    "Readout Universe",
+    "Yaoharee Lahtee",
+    "สังคม / ความยุติธรรม / สันติภาพ / ความรุนแรง — ไวยากรณ์เชิงเหตุของการอยู่ร่วมกัน จริยศาสตร์เชิงเหตุ ความขัดแย้งและการซ่อมแซม อำนาจความรู้และการเมืองของชนกลุ่มน้อย"
+   ],
+   "creators": [
+    "Lahtee, Yaoharee"
+   ],
+   "url": "https://zenodo.org/records/22342043",
+   "related": [
+    {
+     "identifier": "10.5281/zenodo.22129490",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.22099526",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.20159825",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.19425809",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.19115417",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.18943971",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.18925131",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.18897585",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.18444260",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.18383439",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.17280895",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    }
+   ],
+   "abstract_head": "Programme index — สังคม / ความยุติธรรม / สันติภาพ / ความรุนแรง — ไวยากรณ์เชิงเหตุของการอยู่ร่วมกัน จริยศาสตร์เชิงเหตุ ความขัดแย้งและการซ่อมแซม อำนาจความรู้และการเมืองของชนกลุ่มน้อย.  A navigation aid listing 11 works by the author in this programme area (a work may appear in several programme indexes). Inclusion is a readout of the author's own classification (assisted by the glosa toolchain, gi",
+   "role": "hub"
+  },
+  {
+   "@id": "https://doi.org/10.5281/zenodo.22129490",
+   "zenodo_id": 22129490,
+   "concept_doi": "10.5281/zenodo.22129489",
+   "conceptrecid": "22129489",
+   "title": "When Interpretation Hardens: Epistemic Authority, Asymmetric Revisability, and Conflict in Muslim Knowledge Regimes",
+   "date": "2026-08-27",
+   "version": null,
+   "resource_type": "Preprint",
+   "language": null,
+   "keywords": [],
+   "creators": [
+    "Lahtee, Yaoharee"
+   ],
+   "url": "https://zenodo.org/records/22129490",
+   "related": [
+    {
+     "identifier": "10.5281/zenodo.22301459",
+     "relation": "isPartOf",
+     "resource_type": "publication-other",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.21529456",
+     "relation": "references",
+     "resource_type": "publication-preprint",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.22301202",
+     "relation": "references",
+     "resource_type": "publication-preprint",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.22301318",
+     "relation": "references",
+     "resource_type": "publication-preprint",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.22301554",
+     "relation": "isPartOf",
+     "resource_type": "publication-other",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.22206607",
+     "relation": "references",
+     "resource_type": "publication-preprint",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.18943971",
+     "relation": "references",
+     "resource_type": "publication-preprint",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.22342043",
+     "relation": "isPartOf",
+     "resource_type": "publication-other",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.18925131",
+     "relation": "references",
+     "resource_type": "publication-preprint",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.18383439",
+     "relation": "references",
+     "resource_type": "publication-preprint",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.18444260",
+     "relation": "references",
+     "resource_type": "publication-preprint",
+     "scheme": "doi"
+    }
+   ],
+   "abstract_head": "This article develops a sociology-of-knowledge account of how human religious interpretation can become unusu- ally resistant to correction and, under specific political conditions, contribute to conflict persistence. It begins from a distinction that is doctrinally elementary but sociologically consequential: revelation, human interpre- tation, and institutional authority are not equivalent form",
+   "role": "member"
+  },
+  {
+   "@id": "https://doi.org/10.5281/zenodo.22099526",
+   "zenodo_id": 22099526,
+   "concept_doi": "10.5281/zenodo.22099525",
+   "conceptrecid": "22099525",
+   "title": "Two Have Sex, One Gets the Bill Reproductive Closure, Asymmetric Observability, and Patriarchal Capture",
+   "date": "2026-08-25",
+   "version": null,
+   "resource_type": "Preprint",
+   "language": null,
+   "keywords": [],
+   "creators": [
+    "Lahtee, Yaoharee"
+   ],
+   "url": "https://zenodo.org/records/22099526",
+   "related": [
+    {
+     "identifier": "10.5281/zenodo.22342043",
+     "relation": "isPartOf",
+     "resource_type": "publication-other",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.18925131",
+     "relation": "references",
+     "resource_type": "publication-preprint",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.18383439",
+     "relation": "references",
+     "resource_type": "publication-preprint",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.18444260",
+     "relation": "references",
+     "resource_type": "publication-preprint",
+     "scheme": "doi"
+    }
+   ],
+   "abstract_head": "Sexual liberalization is usually measured through permission: greater freedom to consent, choose partners, use contraception, avoid or leave marriage, obtain abortion where lawful, and organize intimate life outside inherited constraints. This paper argues that permission is an incomplete measure of gender equality because reproductive heterosexual intercourse begins from an invariant bodily asym",
+   "role": "member"
+  },
+  {
+   "@id": "https://doi.org/10.5281/zenodo.20159825",
+   "zenodo_id": 20159825,
+   "concept_doi": "10.5281/zenodo.20159824",
+   "conceptrecid": "20159824",
+   "title": "Marginal Hegemony in Thailand: Satire, the Muslim Minority, and the Politics of Power-Literate Critique",
+   "date": "2026-05-13",
+   "version": null,
+   "resource_type": "Preprint",
+   "language": null,
+   "keywords": [],
+   "creators": [
+    "Lahtee, Yaoharee"
+   ],
+   "url": "https://zenodo.org/records/20159825",
+   "related": [
+    {
+     "identifier": "10.5281/zenodo.22301554",
+     "relation": "isPartOf",
+     "resource_type": "publication-other",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.22206607",
+     "relation": "references",
+     "resource_type": "publication-preprint",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.22129490",
+     "relation": "references",
+     "resource_type": "publication-preprint",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.18943971",
+     "relation": "references",
+     "resource_type": "publication-preprint",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.22342043",
+     "relation": "isPartOf",
+     "resource_type": "publication-other",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.18925131",
+     "relation": "references",
+     "resource_type": "publication-preprint",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.18383439",
+     "relation": "references",
+     "resource_type": "publication-preprint",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.18444260",
+     "relation": "references",
+     "resource_type": "publication-preprint",
+     "scheme": "doi"
+    }
+   ],
+   "abstract_head": "Thai Muslims occupy a layered social position: a religious minority of roughly five percent in a Buddhist-majority constitutional order, yet a community within which some actors exercise coercive moral authority over more vulnerable insiders. This article proposes the concept of marginal hegemony to name the layered condition in which external structural vulnerability and internal domination coex",
+   "role": "member"
+  },
+  {
+   "@id": "https://doi.org/10.5281/zenodo.19425809",
+   "zenodo_id": 19425809,
+   "concept_doi": "10.5281/zenodo.19425808",
+   "conceptrecid": "19425808",
+   "title": "รอยร้าวเฉลิมฉลอง : การพังทลาย การรื้อถอน และการประกอบสร้างใหม่ ของสังคมและตัวตน",
+   "date": "2026-04-05",
+   "version": null,
+   "resource_type": "Book",
+   "language": null,
+   "keywords": [],
+   "creators": [
+    "Lahtee, Yaoharee"
+   ],
+   "url": "https://zenodo.org/records/19425809",
+   "related": [
+    {
+     "identifier": "10.5281/zenodo.22342043",
+     "relation": "isPartOf",
+     "resource_type": "publication-other",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.18925131",
+     "relation": "references",
+     "resource_type": "publication-preprint",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.18383439",
+     "relation": "references",
+     "resource_type": "publication-preprint",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.18444260",
+     "relation": "references",
+     "resource_type": "publication-preprint",
+     "scheme": "doi"
+    }
+   ],
+   "abstract_head": "มีช่างฝีมือชาวญี่ปุ่นกลุ่มหนึ่ง ที่เมื่อถ้วยชามแตก พวกเขาไม่ทิ้งมัน \n พวกเขาใช้ยางไม้ผสมผงทองคำอุดรอยแตกทีละเส้น ทีละเส้น จนกระทั่งภาชนะนั้นประกอบสมบูรณ์อีกครั้ง แต่คราวนี้ รอยแตกทุกเส้นกลายเป็นเส้นทอง ศิลปะนี้มีชื่อว่า  คินสึงิ  และมันตั้งอยู่บนความเชื่อที่ว่า รอยแตกไม่ใช่สิ่งที่ต้องซ่อน แต่คือสิ่งที่ควรเฉลิมฉลอง \n ก่อนอ่านต่อ ขอให้วางความเชื่อหนึ่งเรื่องลงก่อน \n ความเชื่อที่ว่า รอยร้าวในตัวเราเ",
+   "role": "member"
+  },
+  {
+   "@id": "https://doi.org/10.5281/zenodo.19115417",
+   "zenodo_id": 19115417,
+   "concept_doi": "10.5281/zenodo.19111317",
+   "conceptrecid": "19111317",
+   "title": "From Intercultural Marriage to State Policy: Premature Category Stabilization as a Scale-Invariant Mechanism of Cultural Failure",
+   "date": "2026-03-20",
+   "version": null,
+   "resource_type": "Preprint",
+   "language": null,
+   "keywords": [],
+   "creators": [
+    "Lahtee, Yaoharee"
+   ],
+   "url": "https://zenodo.org/records/19115417",
+   "related": [
+    {
+     "identifier": "10.5281/zenodo.22301459",
+     "relation": "isPartOf",
+     "resource_type": "publication-other",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.21529456",
+     "relation": "references",
+     "resource_type": "publication-preprint",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.22301202",
+     "relation": "references",
+     "resource_type": "publication-preprint",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.22301318",
+     "relation": "references",
+     "resource_type": "publication-preprint",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.22301554",
+     "relation": "isPartOf",
+     "resource_type": "publication-other",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.22206607",
+     "relation": "references",
+     "resource_type": "publication-preprint",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.22129490",
+     "relation": "references",
+     "resource_type": "publication-preprint",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.18943971",
+     "relation": "references",
+     "resource_type": "publication-preprint",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.22301562",
+     "relation": "isPartOf",
+     "resource_type": "publication-other",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.19059720",
+     "relation": "references",
+     "resource_type": "publication-preprint",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.18258377",
+     "relation": "references",
+     "resource_type": "publication-preprint",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.22342043",
+     "relation": "isPartOf",
+     "resource_type": "publication-other",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.18925131",
+     "relation": "references",
+     "resource_type": "publication-preprint",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.18383439",
+     "relation": "references",
+     "resource_type": "publication-preprint",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.18444260",
+     "relation": "references",
+     "resource_type": "publication-preprint",
+     "scheme": "doi"
+    }
+   ],
+   "abstract_head": "This article develops a scale-bridging theory of Premature Category Stabilization (PCS). First articulated in the context of Muslim-friendly tourism, PCS names the process by which diverse persons and groups are frozen into simplied institutional templates prior to encounter. The article argues that this is not a sectorbound service failure but a general mechanism of intercultural breakdown recur",
+   "role": "member"
+  },
+  {
+   "@id": "https://doi.org/10.5281/zenodo.18943971",
+   "zenodo_id": 18943971,
+   "concept_doi": "10.5281/zenodo.18943970",
+   "conceptrecid": "18943970",
+   "title": "The Civilization of Knowledge: Who Has the Authority to Interpret the World",
+   "date": "2026-03-10",
+   "version": null,
+   "resource_type": "Preprint",
+   "language": null,
+   "keywords": [],
+   "creators": [
+    "Lahtee, Yaoharee"
+   ],
+   "url": "https://zenodo.org/records/18943971",
+   "related": [
+    {
+     "identifier": "10.5281/zenodo.22301459",
+     "relation": "isPartOf",
+     "resource_type": "publication-other",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.21529456",
+     "relation": "references",
+     "resource_type": "publication-preprint",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.22301202",
+     "relation": "references",
+     "resource_type": "publication-preprint",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.22301318",
+     "relation": "references",
+     "resource_type": "publication-preprint",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.22301552",
+     "relation": "isPartOf",
+     "resource_type": "publication-other",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.22163849",
+     "relation": "references",
+     "resource_type": "publication-preprint",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.19215748",
+     "relation": "references",
+     "resource_type": "publication-preprint",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.22308201",
+     "relation": "isPartOf",
+     "resource_type": "publication-other",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.22307843",
+     "relation": "references",
+     "resource_type": "publication-preprint",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.22342043",
+     "relation": "isPartOf",
+     "resource_type": "publication-other",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.18925131",
+     "relation": "references",
+     "resource_type": "publication-preprint",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.18383439",
+     "relation": "references",
+     "resource_type": "publication-preprint",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.18444260",
+     "relation": "references",
+     "resource_type": "publication-preprint",
+     "scheme": "doi"
+    }
+   ],
+   "abstract_head": "Standard accounts of knowledge history often describe human civilization as a gradual ascent from myth to reason, from religion to science, and from science to artificial intelligence. This article argues that such narratives remain incomplete. What changes across civilizations is not only the accumulation of truths, but the succession of agencies authorized to interpret the world&rsquo;s signals",
+   "role": "member"
+  },
+  {
+   "@id": "https://doi.org/10.5281/zenodo.18925131",
+   "zenodo_id": 18925131,
+   "concept_doi": "10.5281/zenodo.18925130",
+   "conceptrecid": "18925130",
+   "title": "The Causal Grammar of Structured Coexistence: Conflict, Violence, Repair, and Non-Suppressive Peace",
+   "date": "2026-03-09",
+   "version": null,
+   "resource_type": "Preprint",
+   "language": null,
+   "keywords": [],
+   "creators": [
+    "Lahtee, Yaoharee"
+   ],
+   "url": "https://zenodo.org/records/18925131",
+   "related": [
+    {
+     "identifier": "10.5281/zenodo.22342043",
+     "relation": "isPartOf",
+     "resource_type": "publication-other",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.18383439",
+     "relation": "references",
+     "resource_type": "publication-preprint",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.18444260",
+     "relation": "references",
+     "resource_type": "publication-preprint",
+     "scheme": "doi"
+    }
+   ],
+   "abstract_head": "Sociological and philosophical traditions have developed extensive explanations of social structure, conflict, violence, and peace. Yet these phenomena are often analyzed within partially separate theoretical frameworks. As a result, disagreement is frequently conflated with conflict, conflict with violence, and stability with peace. This article proposes a causal grammar linking five concepts: s",
+   "role": "member"
+  },
+  {
+   "@id": "https://doi.org/10.5281/zenodo.18897585",
+   "zenodo_id": 18897585,
+   "concept_doi": "10.5281/zenodo.18897584",
+   "conceptrecid": "18897584",
+   "title": "Causal Agency  A Persistence Control Theory of Adaptive Systems",
+   "date": "2026-03-07",
+   "version": null,
+   "resource_type": "Preprint",
+   "language": null,
+   "keywords": [],
+   "creators": [
+    "Lahtee, Yaoharee"
+   ],
+   "url": "https://zenodo.org/records/18897585",
+   "related": [
+    {
+     "identifier": "10.5281/zenodo.22342043",
+     "relation": "isPartOf",
+     "resource_type": "publication-other",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.18925131",
+     "relation": "references",
+     "resource_type": "publication-preprint",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.18383439",
+     "relation": "references",
+     "resource_type": "publication-preprint",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.18444260",
+     "relation": "references",
+     "resource_type": "publication-preprint",
+     "scheme": "doi"
+    }
+   ],
+   "abstract_head": "Agency is a central concept across philosophy of action, cognitive science, theoretical biol-   ogy, and artificial intelligence. Despite extensive research across these fields, existing accounts   remain theoretically fragmented because they are typically grounded in domain-specific mech-   anisms and operate at different explanatory levels.   Philosophical theories emphasize inten-   tional ac",
+   "role": "member"
+  },
+  {
+   "@id": "https://doi.org/10.5281/zenodo.18444260",
+   "zenodo_id": 18444260,
+   "concept_doi": "10.5281/zenodo.18444259",
+   "conceptrecid": "18444259",
+   "title": "CAUSAL ETHICS : The Mathematics of Regime Choice and Survival",
+   "date": "2026-01-31",
+   "version": null,
+   "resource_type": "Book",
+   "language": null,
+   "keywords": [],
+   "creators": [
+    "Lahtee, Yaoharee"
+   ],
+   "url": "https://zenodo.org/records/18444260",
+   "related": [
+    {
+     "identifier": "10.5281/zenodo.22342043",
+     "relation": "isPartOf",
+     "resource_type": "publication-other",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.18925131",
+     "relation": "references",
+     "resource_type": "publication-preprint",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.18383439",
+     "relation": "references",
+     "resource_type": "publication-preprint",
+     "scheme": "doi"
+    }
+   ],
+   "abstract_head": "Causal Ethics (CE) is formulated in this book as a constraint and admissibility layer on system dynamics, rather than a theory of moral sentiment, preference aggregation, or normative doctrine. Its purpose is to characterize which forms of agency, interaction, and regime selection can persist without violating causal, spectral, and stability constraints. CE is not a utilitarian calculus, not a vi",
+   "role": "member"
+  },
+  {
+   "@id": "https://doi.org/10.5281/zenodo.18383439",
+   "zenodo_id": 18383439,
+   "concept_doi": "10.5281/zenodo.18383438",
+   "conceptrecid": "18383438",
+   "title": "Violence as a Special Case of Instability in Finite–Memory Causal Systems",
+   "date": "2026-01-27",
+   "version": null,
+   "resource_type": "Preprint",
+   "language": null,
+   "keywords": [],
+   "creators": [
+    "Lahtee, Yaoharee"
+   ],
+   "url": "https://zenodo.org/records/18383439",
+   "related": [
+    {
+     "identifier": "10.5281/zenodo.22342043",
+     "relation": "isPartOf",
+     "resource_type": "publication-other",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.18925131",
+     "relation": "references",
+     "resource_type": "publication-preprint",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.18444260",
+     "relation": "references",
+     "resource_type": "publication-preprint",
+     "scheme": "doi"
+    }
+   ],
+   "abstract_head": "Violence is commonly treated as a discrete event caused by individual agents and addressed through force-based suppression. Despite extensive legal, military, and policing efforts, violence reliably recurs, mutates across domains, and persists across generations. In this work we propose a structural reformulation: violence is not an object or an act, but a dynamical instability arising in systems",
+   "role": "member"
+  },
+  {
+   "@id": "https://doi.org/10.5281/zenodo.17280895",
+   "zenodo_id": 17280895,
+   "concept_doi": "10.5281/zenodo.17280894",
+   "conceptrecid": "17280894",
+   "title": "Strong, Warm & Safe Family Ecosystem",
+   "date": "2025-10-06",
+   "version": null,
+   "resource_type": "Preprint",
+   "language": "eng",
+   "keywords": [
+    "Family Ecosystem",
+    "Social Innovation",
+    "Policy Brief",
+    "Araya Nikah",
+    "Family Well-being"
+   ],
+   "creators": [
+    "Lahtee, Yaoharee"
+   ],
+   "url": "https://zenodo.org/records/17280895",
+   "related": [
+    {
+     "identifier": "10.5281/zenodo.22301465",
+     "relation": "isPartOf",
+     "resource_type": "publication-other",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.22301566",
+     "relation": "isPartOf",
+     "resource_type": "publication-other",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.22342043",
+     "relation": "isPartOf",
+     "resource_type": "publication-other",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.18925131",
+     "relation": "references",
+     "resource_type": "publication-preprint",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.18383439",
+     "relation": "references",
+     "resource_type": "publication-preprint",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.18444260",
+     "relation": "references",
+     "resource_type": "publication-preprint",
+     "scheme": "doi"
+    }
+   ],
+   "abstract_head": "Families are the foundation of society, shaping individual well-being and social stability. The Strong, Warm &amp; Safe Family Ecosystem (SWSF) Framework presents eight dimensions and four mechanisms to strengthen families in Thailand&rsquo;s multicultural context. The framework addresses issues such as human trafficking, domestic violence, mental health, and digital safety while aligning with SD",
+   "role": "member"
+  },
+  {
+   "@id": "https://doi.org/10.5281/zenodo.18258377",
+   "zenodo_id": 18258377,
+   "concept_doi": "10.5281/zenodo.18232534",
+   "conceptrecid": "18232534",
+   "title": "From Ritual Compliance to Predictable Cultural Experience: A Conceptual Framework for Cross-Cultural Tourism Linking Muslim Travelers and Thai Cultural Contexts",
+   "date": "2025-01-15",
+   "version": null,
+   "resource_type": "Preprint",
+   "language": null,
+   "keywords": [],
+   "creators": [
+    "Lahtee, Yaoharee"
+   ],
+   "url": "https://zenodo.org/records/18258377",
+   "related": [
+    {
+     "identifier": "10.5281/zenodo.22301554",
+     "relation": "isPartOf",
+     "resource_type": "publication-other",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.22206607",
+     "relation": "references",
+     "resource_type": "publication-preprint",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.22129490",
+     "relation": "references",
+     "resource_type": "publication-preprint",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.18943971",
+     "relation": "references",
+     "resource_type": "publication-preprint",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.22301562",
+     "relation": "isPartOf",
+     "resource_type": "publication-other",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.19059720",
+     "relation": "references",
+     "resource_type": "publication-preprint",
+     "scheme": "doi"
+    }
+   ],
+   "abstract_head": "This article develops a conceptual framework for understanding cross-cultural tourism between Muslim travelers and Thai cultural contexts through the lens of predictable experience design. Rather than treating Muslim tourism as a niche market defined by religious amenities, the paper reframes it as a systemic challenge of uncertainty management across culturally heterogeneous actors. Drawing on e",
+   "role": "referenced_not_member"
+  },
+  {
+   "@id": "https://doi.org/10.5281/zenodo.19059720",
+   "zenodo_id": 19059720,
+   "concept_doi": "10.5281/zenodo.19059719",
+   "conceptrecid": "19059719",
+   "title": "Beyond Halal Labels: Premature Category Stabilization in Muslim-Friendly Tourism",
+   "date": "2026-03-17",
+   "version": null,
+   "resource_type": "Preprint",
+   "language": null,
+   "keywords": [],
+   "creators": [
+    "Lahtee, Yaoharee"
+   ],
+   "url": "https://zenodo.org/records/19059720",
+   "related": [
+    {
+     "identifier": "10.5281/zenodo.22301459",
+     "relation": "isPartOf",
+     "resource_type": "publication-other",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.21529456",
+     "relation": "references",
+     "resource_type": "publication-preprint",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.22301202",
+     "relation": "references",
+     "resource_type": "publication-preprint",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.22301318",
+     "relation": "references",
+     "resource_type": "publication-preprint",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.22301554",
+     "relation": "isPartOf",
+     "resource_type": "publication-other",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.22206607",
+     "relation": "references",
+     "resource_type": "publication-preprint",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.22129490",
+     "relation": "references",
+     "resource_type": "publication-preprint",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.18943971",
+     "relation": "references",
+     "resource_type": "publication-preprint",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.22301562",
+     "relation": "isPartOf",
+     "resource_type": "publication-other",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.18258377",
+     "relation": "references",
+     "resource_type": "publication-preprint",
+     "scheme": "doi"
+    }
+   ],
+   "abstract_head": "Muslim-friendly tourism has expanded from a niche market concern into a visible strategic domain in global tourism and hospitality. Existing scholarship has established that halal-friendly attributes, Islamic destination features, and Muslim-compatible service provisions can influence destination choice, perceived value, and tourist satisfaction. At the same time, these visible assurances do not",
+   "role": "referenced_not_member"
+  },
+  {
+   "@id": "https://doi.org/10.5281/zenodo.19215748",
+   "zenodo_id": 19215748,
+   "concept_doi": "10.5281/zenodo.19215747",
+   "conceptrecid": "19215747",
+   "title": "When AI Expands Human Potential: Reflective Dissonance, Epistemic Agency, and Constraint",
+   "date": "2026-03-25",
+   "version": null,
+   "resource_type": "Preprint",
+   "language": null,
+   "keywords": [],
+   "creators": [
+    "Lahtee, Yaoharee"
+   ],
+   "url": "https://zenodo.org/records/19215748",
+   "related": [
+    {
+     "identifier": "10.5281/zenodo.22301459",
+     "relation": "isPartOf",
+     "resource_type": "publication-other",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.21529456",
+     "relation": "references",
+     "resource_type": "publication-preprint",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.22301202",
+     "relation": "references",
+     "resource_type": "publication-preprint",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.22301318",
+     "relation": "references",
+     "resource_type": "publication-preprint",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.22301552",
+     "relation": "isPartOf",
+     "resource_type": "publication-other",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.22163849",
+     "relation": "references",
+     "resource_type": "publication-preprint",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.22308201",
+     "relation": "isPartOf",
+     "resource_type": "publication-other",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.22307843",
+     "relation": "references",
+     "resource_type": "publication-preprint",
+     "scheme": "doi"
+    }
+   ],
+   "abstract_head": "This paper asks a precise question that becomes unavoidable once artificial   intelligence is integrated into ordinary thinking, writing, learning, and judgment:   when, if ever, does AI expand human potential rather than merely accelerate output?   I argue that the answer cannot be given in terms of productivity, convenience, or   self-expression alone. AI should instead be understood as a new",
+   "role": "referenced_not_member"
+  },
+  {
+   "@id": "https://doi.org/10.5281/zenodo.21529456",
+   "zenodo_id": 21529456,
+   "concept_doi": "10.5281/zenodo.21529455",
+   "conceptrecid": "21529455",
+   "title": "Readout Genesis Standalone Synthesis: Information Epistemic Foundation, Conditioned Agency, and Meta-Readout Governance",
+   "date": "2026-07-24",
+   "version": null,
+   "resource_type": "Preprint",
+   "language": null,
+   "keywords": [],
+   "creators": [
+    "Lahtee, Yaoharee"
+   ],
+   "url": "https://zenodo.org/records/21529456",
+   "related": [
+    {
+     "identifier": "10.5281/zenodo.22301459",
+     "relation": "isPartOf",
+     "resource_type": "publication-other",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.22301202",
+     "relation": "references",
+     "resource_type": "publication-preprint",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.22301318",
+     "relation": "references",
+     "resource_type": "publication-preprint",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.22308201",
+     "relation": "isPartOf",
+     "resource_type": "publication-other",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.19215748",
+     "relation": "references",
+     "resource_type": "publication-preprint",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.22163849",
+     "relation": "references",
+     "resource_type": "publication-preprint",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.22307843",
+     "relation": "references",
+     "resource_type": "publication-preprint",
+     "scheme": "doi"
+    }
+   ],
+   "abstract_head": "This paper presents a journal-form synthesis of the Information Epistemic Foundation as a bounded domain translation of Readout Genesis. The root contains retained distinctions, a graph-Laplacian operator, ordered dynamics, context, and lineage; it does not contain belief, knowledge, truth, mind, institution, or consciousness as primitive objects. Those terms become admissible only after a declar",
+   "role": "referenced_not_member"
+  },
+  {
+   "@id": "https://doi.org/10.5281/zenodo.22163849",
+   "zenodo_id": 22163849,
+   "concept_doi": "10.5281/zenodo.22163848",
+   "conceptrecid": "22163848",
+   "title": "The Standalone Scholar: A Dual-Track Architecture for AI-Native Scholarship",
+   "date": "2026-08-29",
+   "version": null,
+   "resource_type": "Preprint",
+   "language": null,
+   "keywords": [],
+   "creators": [
+    "Lahtee, Yaoharee"
+   ],
+   "url": "https://zenodo.org/records/22163849",
+   "related": [
+    {
+     "identifier": "10.5281/zenodo.22301459",
+     "relation": "isPartOf",
+     "resource_type": "publication-other",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.21529456",
+     "relation": "references",
+     "resource_type": "publication-preprint",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.22301202",
+     "relation": "references",
+     "resource_type": "publication-preprint",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.22301318",
+     "relation": "references",
+     "resource_type": "publication-preprint",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.22301552",
+     "relation": "isPartOf",
+     "resource_type": "publication-other",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.19215748",
+     "relation": "references",
+     "resource_type": "publication-preprint",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.22308201",
+     "relation": "isPartOf",
+     "resource_type": "publication-other",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.22307843",
+     "relation": "references",
+     "resource_type": "publication-preprint",
+     "scheme": "doi"
+    }
+   ],
+   "abstract_head": "Generative AI lowers the cost of literature exploration, argu- ment recombination, drafting, coding scaffolds, and adversarial questioning. For scholars embedded in universities, these gains are absorbed into pre-existing laboratories, seminars, editorial networks, ethics systems, and disciplinary communities. For a standalone scholar, however, AI can create a structurally dif- ferent condition:",
+   "role": "referenced_not_member"
+  },
+  {
+   "@id": "https://doi.org/10.5281/zenodo.22206607",
+   "zenodo_id": 22206607,
+   "concept_doi": "10.5281/zenodo.22206606",
+   "conceptrecid": "22206606",
+   "title": "Faqr, Scholarly Authority, and Non-Transferable Responsibility",
+   "date": "2026-08-31",
+   "version": null,
+   "resource_type": "Preprint",
+   "language": null,
+   "keywords": [],
+   "creators": [
+    "Lahtee, Yaoharee"
+   ],
+   "url": "https://zenodo.org/records/22206607",
+   "related": [
+    {
+     "identifier": "10.5281/zenodo.22301459",
+     "relation": "isPartOf",
+     "resource_type": "publication-other",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.21529456",
+     "relation": "references",
+     "resource_type": "publication-preprint",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.22301202",
+     "relation": "references",
+     "resource_type": "publication-preprint",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.22301318",
+     "relation": "references",
+     "resource_type": "publication-preprint",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.22301554",
+     "relation": "isPartOf",
+     "resource_type": "publication-other",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.22129490",
+     "relation": "references",
+     "resource_type": "publication-preprint",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.18943971",
+     "relation": "references",
+     "resource_type": "publication-preprint",
+     "scheme": "doi"
+    }
+   ],
+   "abstract_head": "This article develops a revelation-bounded Sunni conceptual-normative architecture for relating divine normativity, juristic expertise, moral agency, and collective consultation without collapsing one into another. Its point of departure is faqr: the creaturely condition of dependence upon God. The argument reconstructs faqr as an epistemic discipline as well as a spiritual truth. Revelation is n",
+   "role": "referenced_not_member"
+  },
+  {
+   "@id": "https://doi.org/10.5281/zenodo.22301202",
+   "zenodo_id": 22301202,
+   "concept_doi": "10.5281/zenodo.22301201",
+   "conceptrecid": "22301201",
+   "title": "Written by AI. Still True. Knower Fetishism, Epistemic Pedigree, and the Human Face as a Bad Theory of Truth",
+   "date": "2026-08-31",
+   "version": "v6",
+   "resource_type": "Preprint",
+   "language": "eng",
+   "keywords": [
+    "epistemology",
+    "artificial intelligence",
+    "objective knowledge",
+    "testimony",
+    "epistemic authority",
+    "anthropocentrism",
+    "provenance",
+    "scientific instruments",
+    "social epistemology"
+   ],
+   "creators": [
+    "Lahtee, Yaoharee"
+   ],
+   "url": "https://zenodo.org/records/22301202",
+   "related": [
+    {
+     "identifier": "10.5281/zenodo.22163849",
+     "relation": "references",
+     "resource_type": "publication-preprint",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.21529456",
+     "relation": "references",
+     "resource_type": "publication-preprint",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.22301318",
+     "relation": "references",
+     "resource_type": "publication-preprint",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.22301459",
+     "relation": "isPartOf",
+     "resource_type": "publication-other",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.22301552",
+     "relation": "isPartOf",
+     "resource_type": "publication-other",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.19215748",
+     "relation": "references",
+     "resource_type": "publication-preprint",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.22308201",
+     "relation": "isPartOf",
+     "resource_type": "publication-other",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.22307843",
+     "relation": "references",
+     "resource_type": "publication-preprint",
+     "scheme": "doi"
+    }
+   ],
+   "abstract_head": "Suppose a proposition survives source checking, inferential scrutiny, and independent reconstruction. You accept it. Then you learn that an artificial-intelligence system generated the draft, and your confidence falls. What, exactly, became epistemically worse? The familiar answer is that provenance can carry higher-order evidence about reliability. Correct. This paper grants that point and then",
+   "role": "referenced_not_member"
+  },
+  {
+   "@id": "https://doi.org/10.5281/zenodo.22301318",
+   "zenodo_id": 22301318,
+   "concept_doi": "10.5281/zenodo.22301317",
+   "conceptrecid": "22301317",
+   "title": "The Readout Condition: Distinguishability, Access, and Epistemic Warrant",
+   "date": "2026-08-31",
+   "version": "elevated full paper (Aug 2026)",
+   "resource_type": "Preprint",
+   "language": "eng",
+   "keywords": [
+    "epistemology",
+    "provenance",
+    "distinguishability",
+    "epistemic warrant",
+    "readout",
+    "identification",
+    "defeaters",
+    "Dignaga",
+    "Madhyamaka",
+    "Avicenna",
+    "Suhrawardi",
+    "AI-assisted inference",
+    "Readout Universe"
+   ],
+   "creators": [
+    "Lahtee, Yaoharee"
+   ],
+   "url": "https://zenodo.org/records/22301318",
+   "related": [
+    {
+     "identifier": "10.5281/zenodo.21529456",
+     "relation": "references",
+     "resource_type": "publication-preprint",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.21665100",
+     "relation": "references",
+     "resource_type": "publication-preprint",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "https://github.com/morrocwi/readout_universe",
+     "relation": "isSupplementedBy",
+     "resource_type": "software",
+     "scheme": "url"
+    },
+    {
+     "identifier": "10.5281/zenodo.22301202",
+     "relation": "references",
+     "resource_type": "publication-preprint",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.22301459",
+     "relation": "isPartOf",
+     "resource_type": "publication-other",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.22301552",
+     "relation": "isPartOf",
+     "resource_type": "publication-other",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.22163849",
+     "relation": "references",
+     "resource_type": "publication-preprint",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.19215748",
+     "relation": "references",
+     "resource_type": "publication-preprint",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.22308201",
+     "relation": "isPartOf",
+     "resource_type": "publication-other",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.22307843",
+     "relation": "references",
+     "resource_type": "publication-preprint",
+     "scheme": "doi"
+    }
+   ],
+   "abstract_head": "Claims routinely distinguish more finely than the access sources invoked on their behalf. The central epistemic problem is not merely whether the resulting claim is true or justified, but whether each distinction in it is correctly attributed to the source, model, background evidence, relevance restriction, or decision rule that actually supplied the discrimination. This paper develops the Readou",
+   "role": "referenced_not_member"
+  },
+  {
+   "@id": "https://doi.org/10.5281/zenodo.22301459",
+   "zenodo_id": 22301459,
+   "concept_doi": "10.5281/zenodo.22301458",
+   "conceptrecid": "22301458",
+   "title": "Readout Universe — Epistemology programme index (Yaoharee Lahtee, 2026)",
+   "date": "2026-09-04",
+   "version": "2026-09-04",
+   "resource_type": "Other",
+   "language": "eng",
+   "keywords": [
+    "programme index",
+    "Readout Universe",
+    "Yaoharee Lahtee",
+    "ญาณวิทยา / ทฤษฎีความรู้"
+   ],
+   "creators": [
+    "Lahtee, Yaoharee"
+   ],
+   "url": "https://zenodo.org/records/22301459",
+   "related": [
+    {
+     "identifier": "10.5281/zenodo.22339909",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.22334420",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.22334376",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.22331922",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.22307841",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.22308072",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.22308066",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.22307564",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.22307561",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.22307148",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.22301318",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.22301202",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.22206607",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.22302410",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.22301886",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.22163849",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.22129490",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.21665100",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.21634023",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.21529456",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.21439275",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.21425420",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.20537309",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.20473230",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.20035321",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.19951961",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.19640361",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.19537197",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.19474326",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.19215748",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.19209662",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.19205869",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.19183837",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.19176260",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.19124963",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.19115417",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.19059720",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.18968098",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.18943971",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.18925129",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.18918275",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.18907015",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.18870302",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.18798732",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.18711408",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.18517054",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.18176092",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.18164015",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.18133010",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.18085092",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.17341231",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.22308446",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.22308451",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.17280546",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    }
+   ],
+   "abstract_head": "Programme index — ญาณวิทยา / ทฤษฎีความรู้.  A navigation aid listing 40 works by the author in this programme area. Inclusion is a readout of the author's own classification (assisted by the glosa toolchain, github.com/morrocwi/glosa), not an evaluation; each listed record keeps its own status and disclaimers. Anchor works: 10.5281/zenodo.21529456, 10.5281/zenodo.22301202, 10.5281/zenodo.2230131",
+   "role": "referenced_not_member"
+  },
+  {
+   "@id": "https://doi.org/10.5281/zenodo.22301465",
+   "zenodo_id": 22301465,
+   "concept_doi": "10.5281/zenodo.22301464",
+   "conceptrecid": "22301464",
+   "title": "Readout Universe — Health & mind programme index (Yaoharee Lahtee, 2026)",
+   "date": "2026-09-04",
+   "version": "2026-09-04",
+   "resource_type": "Other",
+   "language": "eng",
+   "keywords": [
+    "programme index",
+    "Readout Universe",
+    "Yaoharee Lahtee",
+    "สุขภาพ / จิตใจ"
+   ],
+   "creators": [
+    "Lahtee, Yaoharee"
+   ],
+   "url": "https://zenodo.org/records/22301465",
+   "related": [
+    {
+     "identifier": "10.5281/zenodo.22302173",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.22302190",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.22302161",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.22255211",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.22227003",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.22301361",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.20283074",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.18813886",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.18404721",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.18281221",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.18264276",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.18212478",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.18175678",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.18174493",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.17825408",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.22308448",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.17280895",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.20229203",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    }
+   ],
+   "abstract_head": "Programme index — สุขภาพ / จิตใจ.  A navigation aid listing 14 works by the author in this programme area. Inclusion is a readout of the author's own classification (assisted by the glosa toolchain, github.com/morrocwi/glosa), not an evaluation; each listed record keeps its own status and disclaimers. Anchor works: 10.5281/zenodo.20229203, 10.5281/zenodo.18813886.   RRHM Open Lab — sealed predic",
+   "role": "referenced_not_member"
+  },
+  {
+   "@id": "https://doi.org/10.5281/zenodo.22301552",
+   "zenodo_id": 22301552,
+   "concept_doi": "10.5281/zenodo.22301551",
+   "conceptrecid": "22301551",
+   "title": "Readout Universe — Artificial intelligence & knowledge programme index (Yaoharee Lahtee, 2026)",
+   "date": "2026-09-04",
+   "version": "2026-09-04",
+   "resource_type": "Other",
+   "language": "eng",
+   "keywords": [
+    "programme index",
+    "Readout Universe",
+    "Yaoharee Lahtee",
+    "ปัญญาประดิษฐ์กับความรู้"
+   ],
+   "creators": [
+    "Lahtee, Yaoharee"
+   ],
+   "url": "https://zenodo.org/records/22301552",
+   "related": [
+    {
+     "identifier": "10.5281/zenodo.22339909",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.22334420",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.22334376",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.22331922",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.22307841",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.22341671",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.22308072",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.22307148",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.22301882",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.22301318",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.22301202",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.22302410",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.22301886",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.22163849",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.21425420",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.22341297",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.19215748",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.19176260",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.18943971",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.18925129",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.18711408",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.18517054",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.18404721",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.18372525",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.18176092",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.17825408",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.22308448",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.22308446",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.22308451",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.17280546",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    }
+   ],
+   "abstract_head": "Programme index — ปัญญาประดิษฐ์กับความรู้.  A navigation aid listing 15 works by the author in this programme area (a work may appear in several programme indexes). Inclusion is a readout of the author's own classification (assisted by the glosa toolchain, github.com/morrocwi/glosa), not an evaluation; each record keeps its own status and disclaimers. Anchor works: 10.5281/zenodo.22301202, 10.52",
+   "role": "referenced_not_member"
+  },
+  {
+   "@id": "https://doi.org/10.5281/zenodo.22301554",
+   "zenodo_id": 22301554,
+   "concept_doi": "10.5281/zenodo.22301553",
+   "conceptrecid": "22301553",
+   "title": "Readout Universe — Islam, Muslim society & knowledge authority programme index (Yaoharee Lahtee, 2026)",
+   "date": "2026-09-04",
+   "version": "2026-09-04",
+   "resource_type": "Other",
+   "language": "eng",
+   "keywords": [
+    "programme index",
+    "Readout Universe",
+    "Yaoharee Lahtee",
+    "อิสลาม / สังคมมุสลิม / อำนาจความรู้"
+   ],
+   "creators": [
+    "Lahtee, Yaoharee"
+   ],
+   "url": "https://zenodo.org/records/22301554",
+   "related": [
+    {
+     "identifier": "10.5281/zenodo.22302161",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.22206607",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.22302410",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.22301886",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.22129490",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.21439275",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.20159825",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.19951961",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.19124963",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.19115417",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.19059720",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.17305576",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.17305534",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.22308451",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.17281646",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.18258377",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    }
+   ],
+   "abstract_head": "Programme index — อิสลาม / สังคมมุสลิม / อำนาจความรู้.  A navigation aid listing 12 works by the author in this programme area (a work may appear in several programme indexes). Inclusion is a readout of the author's own classification (assisted by the glosa toolchain, github.com/morrocwi/glosa), not an evaluation; each record keeps its own status and disclaimers. Anchor works: 10.5281/zenodo.222",
+   "role": "referenced_not_member"
+  },
+  {
+   "@id": "https://doi.org/10.5281/zenodo.22301562",
+   "zenodo_id": 22301562,
+   "concept_doi": "10.5281/zenodo.22301561",
+   "conceptrecid": "22301561",
+   "title": "Readout Universe — Muslim-friendly tourism & service programme index (Yaoharee Lahtee, 2026)",
+   "date": "2026-09-04",
+   "version": "2026-09-04",
+   "resource_type": "Other",
+   "language": "eng",
+   "keywords": [
+    "programme index",
+    "Readout Universe",
+    "Yaoharee Lahtee",
+    "ท่องเที่ยว / บริการ"
+   ],
+   "creators": [
+    "Lahtee, Yaoharee"
+   ],
+   "url": "https://zenodo.org/records/22301562",
+   "related": [
+    {
+     "identifier": "10.5281/zenodo.19115417",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.19059720",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.17305576",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.17305534",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.17281646",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.18258377",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    }
+   ],
+   "abstract_head": "Programme index — ท่องเที่ยว / บริการ.  A navigation aid listing 6 works by the author in this programme area (a work may appear in several programme indexes). Inclusion is a readout of the author's own classification (assisted by the glosa toolchain, github.com/morrocwi/glosa), not an evaluation; each record keeps its own status and disclaimers. Anchor works: 10.5281/zenodo.19059720, 10.5281/ze",
+   "role": "referenced_not_member"
+  },
+  {
+   "@id": "https://doi.org/10.5281/zenodo.22301566",
+   "zenodo_id": 22301566,
+   "concept_doi": "10.5281/zenodo.22301565",
+   "conceptrecid": "22301565",
+   "title": "Readout Universe — Social enterprise programme index (Yaoharee Lahtee, 2026)",
+   "date": "2026-09-04",
+   "version": "2026-09-04",
+   "resource_type": "Other",
+   "language": "eng",
+   "keywords": [
+    "programme index",
+    "Readout Universe",
+    "Yaoharee Lahtee",
+    "วิสาหกิจเพื่อสังคม"
+   ],
+   "creators": [
+    "Lahtee, Yaoharee"
+   ],
+   "url": "https://zenodo.org/records/22301566",
+   "related": [
+    {
+     "identifier": "10.5281/zenodo.22302161",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.22301882",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.22227005",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.22302410",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.22301886",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.17281646",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.17280895",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.18506938",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    }
+   ],
+   "abstract_head": "Programme index — วิสาหกิจเพื่อสังคม.  A navigation aid listing 4 works by the author in this programme area (a work may appear in several programme indexes). Inclusion is a readout of the author's own classification (assisted by the glosa toolchain, github.com/morrocwi/glosa), not an evaluation; each record keeps its own status and disclaimers. Anchor works: 10.5281/zenodo.22227005, 10.5281/zen",
+   "role": "referenced_not_member"
+  },
+  {
+   "@id": "https://doi.org/10.5281/zenodo.22307843",
+   "zenodo_id": 22307843,
+   "concept_doi": "10.5281/zenodo.22301059",
+   "conceptrecid": "22301059",
+   "title": "glosa — Rigour Without Infrastructure: A Standalone Scholar Methodology for Human–AI Knowledge Co-Production",
+   "date": "2026-09-05",
+   "version": "0.2.0",
+   "resource_type": "Software",
+   "language": null,
+   "keywords": [
+    "methodology",
+    "human-AI co-production",
+    "epistemic provenance",
+    "readout",
+    "standalone scholar"
+   ],
+   "creators": [
+    "Lahtee, Yaoharee"
+   ],
+   "url": "https://zenodo.org/records/22307843",
+   "related": [
+    {
+     "identifier": "10.5281/zenodo.22163849",
+     "relation": "references",
+     "resource_type": "publication-preprint",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.21529456",
+     "relation": "references",
+     "resource_type": "publication-preprint",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.21665100",
+     "relation": "references",
+     "resource_type": "publication-preprint",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.22301318",
+     "relation": "references",
+     "resource_type": "publication-preprint",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.22301202",
+     "relation": "references",
+     "resource_type": "publication-preprint",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.22302518",
+     "relation": "isSupplementedBy",
+     "resource_type": "publication-other",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "https://github.com/morrocwi/readout_universe",
+     "relation": "references",
+     "resource_type": "software",
+     "scheme": "url"
+    },
+    {
+     "identifier": "10.5281/zenodo.22307841",
+     "relation": "isSupplementedBy",
+     "resource_type": "publication-preprint",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.22301459",
+     "relation": "isPartOf",
+     "resource_type": "publication-other",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.22301552",
+     "relation": "isPartOf",
+     "resource_type": "publication-other",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.19215748",
+     "relation": "references",
+     "resource_type": "publication-preprint",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.22308201",
+     "relation": "isPartOf",
+     "resource_type": "publication-other",
+     "scheme": "doi"
+    }
+   ],
+   "abstract_head": "v0.1.0 — K0 public working release (v0.2.0: glosa applied to itself — concept paper DOI 10.5281/zenodo.22307841, 48 VERIFIED citation cards, cross-vendor reviewed claim cards; rules 15-17 and gate rule 9 added) — timestamped and citable, NOT peer reviewed, no independent check yet (K1 in glosa requires a cross-vendor I3 check that has not run), tier Dr. Methodology + skill + tools for co-producing",
+   "role": "referenced_not_member"
+  },
+  {
+   "@id": "https://doi.org/10.5281/zenodo.22308201",
+   "zenodo_id": 22308201,
+   "concept_doi": "10.5281/zenodo.22308200",
+   "conceptrecid": "22308200",
+   "title": "When AI Expands Human Potential — series index: human–AI epistemic fusion, standalone scholarship, and the Readout hypothesis-generation programme (Yaoharee Lahtee, 2025–2026)",
+   "date": "2026-09-04",
+   "version": "2026-09-04",
+   "resource_type": "Other",
+   "language": "eng",
+   "keywords": [
+    "programme index",
+    "Readout Universe",
+    "Yaoharee Lahtee",
+    "เมื่อ AI ขยายศักยภาพมนุษย์ — ซีรีส์งานที่ทำให้มนุษย์กับ AI ผลิตความรู้ร่วมกันได้ (ฟิวชันทางญาณวิทยา): Standalone Scholar, glosa, Bounded Knower I–IV + State of Evidence, Written by AI Still True, Readout Condition, Human LoRA และงานที่เกี่ยวข้อง"
+   ],
+   "creators": [
+    "Lahtee, Yaoharee"
+   ],
+   "url": "https://zenodo.org/records/22308201",
+   "related": [
+    {
+     "identifier": "10.5281/zenodo.22341671",
+     "relation": "isSupplementedBy",
+     "resource_type": "dataset",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.22339909",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.22307841",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.22341671",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.22331922",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.22340255",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.22334420",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.22308072",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.22308066",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.22307564",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.22307561",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.22307148",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.22301318",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.22301202",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.22302410",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.22301886",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.22163849",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.21529456",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.21425420",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.22341297",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.19640361",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.19215748",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.19205869",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.19176260",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.18943971",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.18925129",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.18711408",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.18517054",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.22308448",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.22308446",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.22308451",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    },
+    {
+     "identifier": "10.5281/zenodo.17280546",
+     "relation": "hasPart",
+     "resource_type": "publication",
+     "scheme": "doi"
+    }
+   ],
+   "abstract_head": "Programme index — เมื่อ AI ขยายศักยภาพมนุษย์ — ซีรีส์งานที่ทำให้มนุษย์กับ AI ผลิตความรู้ร่วมกันได้ (ฟิวชันทางญาณวิทยา): Standalone Scholar, glosa, Bounded Knower I–IV + State of Evidence, Written by AI Still True, Readout Condition, Human LoRA และงานที่เกี่ยวข้อง.  A navigation aid listing 22 works by the author in this programme area (a work may appear in several programme indexes). Inclusion i",
+   "role": "referenced_not_member"
+  }
+ ],
+ "edges": [
+  {
+   "source": "22342043",
+   "relation": "hasPart",
+   "target": "22129490",
+   "declared_on": "22342043",
+   "scheme": "doi"
+  },
+  {
+   "source": "22342043",
+   "relation": "hasPart",
+   "target": "22099526",
+   "declared_on": "22342043",
+   "scheme": "doi"
+  },
+  {
+   "source": "22342043",
+   "relation": "hasPart",
+   "target": "20159825",
+   "declared_on": "22342043",
+   "scheme": "doi"
+  },
+  {
+   "source": "22342043",
+   "relation": "hasPart",
+   "target": "19425809",
+   "declared_on": "22342043",
+   "scheme": "doi"
+  },
+  {
+   "source": "22342043",
+   "relation": "hasPart",
+   "target": "19115417",
+   "declared_on": "22342043",
+   "scheme": "doi"
+  },
+  {
+   "source": "22342043",
+   "relation": "hasPart",
+   "target": "18943971",
+   "declared_on": "22342043",
+   "scheme": "doi"
+  },
+  {
+   "source": "22342043",
+   "relation": "hasPart",
+   "target": "18925131",
+   "declared_on": "22342043",
+   "scheme": "doi"
+  },
+  {
+   "source": "22342043",
+   "relation": "hasPart",
+   "target": "18897585",
+   "declared_on": "22342043",
+   "scheme": "doi"
+  },
+  {
+   "source": "22342043",
+   "relation": "hasPart",
+   "target": "18444260",
+   "declared_on": "22342043",
+   "scheme": "doi"
+  },
+  {
+   "source": "22342043",
+   "relation": "hasPart",
+   "target": "18383439",
+   "declared_on": "22342043",
+   "scheme": "doi"
+  },
+  {
+   "source": "22342043",
+   "relation": "hasPart",
+   "target": "17280895",
+   "declared_on": "22342043",
+   "scheme": "doi"
+  },
+  {
+   "source": "22129490",
+   "relation": "isPartOf",
+   "target": "22301459",
+   "declared_on": "22129490",
+   "scheme": "doi"
+  },
+  {
+   "source": "22129490",
+   "relation": "references",
+   "target": "21529456",
+   "declared_on": "22129490",
+   "scheme": "doi"
+  },
+  {
+   "source": "22129490",
+   "relation": "references",
+   "target": "22301202",
+   "declared_on": "22129490",
+   "scheme": "doi"
+  },
+  {
+   "source": "22129490",
+   "relation": "references",
+   "target": "22301318",
+   "declared_on": "22129490",
+   "scheme": "doi"
+  },
+  {
+   "source": "22129490",
+   "relation": "isPartOf",
+   "target": "22301554",
+   "declared_on": "22129490",
+   "scheme": "doi"
+  },
+  {
+   "source": "22129490",
+   "relation": "references",
+   "target": "22206607",
+   "declared_on": "22129490",
+   "scheme": "doi"
+  },
+  {
+   "source": "22129490",
+   "relation": "references",
+   "target": "18943971",
+   "declared_on": "22129490",
+   "scheme": "doi"
+  },
+  {
+   "source": "22129490",
+   "relation": "isPartOf",
+   "target": "22342043",
+   "declared_on": "22129490",
+   "scheme": "doi"
+  },
+  {
+   "source": "22129490",
+   "relation": "references",
+   "target": "18925131",
+   "declared_on": "22129490",
+   "scheme": "doi"
+  },
+  {
+   "source": "22129490",
+   "relation": "references",
+   "target": "18383439",
+   "declared_on": "22129490",
+   "scheme": "doi"
+  },
+  {
+   "source": "22129490",
+   "relation": "references",
+   "target": "18444260",
+   "declared_on": "22129490",
+   "scheme": "doi"
+  },
+  {
+   "source": "22099526",
+   "relation": "isPartOf",
+   "target": "22342043",
+   "declared_on": "22099526",
+   "scheme": "doi"
+  },
+  {
+   "source": "22099526",
+   "relation": "references",
+   "target": "18925131",
+   "declared_on": "22099526",
+   "scheme": "doi"
+  },
+  {
+   "source": "22099526",
+   "relation": "references",
+   "target": "18383439",
+   "declared_on": "22099526",
+   "scheme": "doi"
+  },
+  {
+   "source": "22099526",
+   "relation": "references",
+   "target": "18444260",
+   "declared_on": "22099526",
+   "scheme": "doi"
+  },
+  {
+   "source": "20159825",
+   "relation": "isPartOf",
+   "target": "22301554",
+   "declared_on": "20159825",
+   "scheme": "doi"
+  },
+  {
+   "source": "20159825",
+   "relation": "references",
+   "target": "22206607",
+   "declared_on": "20159825",
+   "scheme": "doi"
+  },
+  {
+   "source": "20159825",
+   "relation": "references",
+   "target": "22129490",
+   "declared_on": "20159825",
+   "scheme": "doi"
+  },
+  {
+   "source": "20159825",
+   "relation": "references",
+   "target": "18943971",
+   "declared_on": "20159825",
+   "scheme": "doi"
+  },
+  {
+   "source": "20159825",
+   "relation": "isPartOf",
+   "target": "22342043",
+   "declared_on": "20159825",
+   "scheme": "doi"
+  },
+  {
+   "source": "20159825",
+   "relation": "references",
+   "target": "18925131",
+   "declared_on": "20159825",
+   "scheme": "doi"
+  },
+  {
+   "source": "20159825",
+   "relation": "references",
+   "target": "18383439",
+   "declared_on": "20159825",
+   "scheme": "doi"
+  },
+  {
+   "source": "20159825",
+   "relation": "references",
+   "target": "18444260",
+   "declared_on": "20159825",
+   "scheme": "doi"
+  },
+  {
+   "source": "19425809",
+   "relation": "isPartOf",
+   "target": "22342043",
+   "declared_on": "19425809",
+   "scheme": "doi"
+  },
+  {
+   "source": "19425809",
+   "relation": "references",
+   "target": "18925131",
+   "declared_on": "19425809",
+   "scheme": "doi"
+  },
+  {
+   "source": "19425809",
+   "relation": "references",
+   "target": "18383439",
+   "declared_on": "19425809",
+   "scheme": "doi"
+  },
+  {
+   "source": "19425809",
+   "relation": "references",
+   "target": "18444260",
+   "declared_on": "19425809",
+   "scheme": "doi"
+  },
+  {
+   "source": "19115417",
+   "relation": "isPartOf",
+   "target": "22301459",
+   "declared_on": "19115417",
+   "scheme": "doi"
+  },
+  {
+   "source": "19115417",
+   "relation": "references",
+   "target": "21529456",
+   "declared_on": "19115417",
+   "scheme": "doi"
+  },
+  {
+   "source": "19115417",
+   "relation": "references",
+   "target": "22301202",
+   "declared_on": "19115417",
+   "scheme": "doi"
+  },
+  {
+   "source": "19115417",
+   "relation": "references",
+   "target": "22301318",
+   "declared_on": "19115417",
+   "scheme": "doi"
+  },
+  {
+   "source": "19115417",
+   "relation": "isPartOf",
+   "target": "22301554",
+   "declared_on": "19115417",
+   "scheme": "doi"
+  },
+  {
+   "source": "19115417",
+   "relation": "references",
+   "target": "22206607",
+   "declared_on": "19115417",
+   "scheme": "doi"
+  },
+  {
+   "source": "19115417",
+   "relation": "references",
+   "target": "22129490",
+   "declared_on": "19115417",
+   "scheme": "doi"
+  },
+  {
+   "source": "19115417",
+   "relation": "references",
+   "target": "18943971",
+   "declared_on": "19115417",
+   "scheme": "doi"
+  },
+  {
+   "source": "19115417",
+   "relation": "isPartOf",
+   "target": "22301562",
+   "declared_on": "19115417",
+   "scheme": "doi"
+  },
+  {
+   "source": "19115417",
+   "relation": "references",
+   "target": "19059720",
+   "declared_on": "19115417",
+   "scheme": "doi"
+  },
+  {
+   "source": "19115417",
+   "relation": "references",
+   "target": "18258377",
+   "declared_on": "19115417",
+   "scheme": "doi"
+  },
+  {
+   "source": "19115417",
+   "relation": "isPartOf",
+   "target": "22342043",
+   "declared_on": "19115417",
+   "scheme": "doi"
+  },
+  {
+   "source": "19115417",
+   "relation": "references",
+   "target": "18925131",
+   "declared_on": "19115417",
+   "scheme": "doi"
+  },
+  {
+   "source": "19115417",
+   "relation": "references",
+   "target": "18383439",
+   "declared_on": "19115417",
+   "scheme": "doi"
+  },
+  {
+   "source": "19115417",
+   "relation": "references",
+   "target": "18444260",
+   "declared_on": "19115417",
+   "scheme": "doi"
+  },
+  {
+   "source": "18943971",
+   "relation": "isPartOf",
+   "target": "22301459",
+   "declared_on": "18943971",
+   "scheme": "doi"
+  },
+  {
+   "source": "18943971",
+   "relation": "references",
+   "target": "21529456",
+   "declared_on": "18943971",
+   "scheme": "doi"
+  },
+  {
+   "source": "18943971",
+   "relation": "references",
+   "target": "22301202",
+   "declared_on": "18943971",
+   "scheme": "doi"
+  },
+  {
+   "source": "18943971",
+   "relation": "references",
+   "target": "22301318",
+   "declared_on": "18943971",
+   "scheme": "doi"
+  },
+  {
+   "source": "18943971",
+   "relation": "isPartOf",
+   "target": "22301552",
+   "declared_on": "18943971",
+   "scheme": "doi"
+  },
+  {
+   "source": "18943971",
+   "relation": "references",
+   "target": "22163849",
+   "declared_on": "18943971",
+   "scheme": "doi"
+  },
+  {
+   "source": "18943971",
+   "relation": "references",
+   "target": "19215748",
+   "declared_on": "18943971",
+   "scheme": "doi"
+  },
+  {
+   "source": "18943971",
+   "relation": "isPartOf",
+   "target": "22308201",
+   "declared_on": "18943971",
+   "scheme": "doi"
+  },
+  {
+   "source": "18943971",
+   "relation": "references",
+   "target": "22307843",
+   "declared_on": "18943971",
+   "scheme": "doi"
+  },
+  {
+   "source": "18943971",
+   "relation": "isPartOf",
+   "target": "22342043",
+   "declared_on": "18943971",
+   "scheme": "doi"
+  },
+  {
+   "source": "18943971",
+   "relation": "references",
+   "target": "18925131",
+   "declared_on": "18943971",
+   "scheme": "doi"
+  },
+  {
+   "source": "18943971",
+   "relation": "references",
+   "target": "18383439",
+   "declared_on": "18943971",
+   "scheme": "doi"
+  },
+  {
+   "source": "18943971",
+   "relation": "references",
+   "target": "18444260",
+   "declared_on": "18943971",
+   "scheme": "doi"
+  },
+  {
+   "source": "18925131",
+   "relation": "isPartOf",
+   "target": "22342043",
+   "declared_on": "18925131",
+   "scheme": "doi"
+  },
+  {
+   "source": "18925131",
+   "relation": "references",
+   "target": "18383439",
+   "declared_on": "18925131",
+   "scheme": "doi"
+  },
+  {
+   "source": "18925131",
+   "relation": "references",
+   "target": "18444260",
+   "declared_on": "18925131",
+   "scheme": "doi"
+  },
+  {
+   "source": "18897585",
+   "relation": "isPartOf",
+   "target": "22342043",
+   "declared_on": "18897585",
+   "scheme": "doi"
+  },
+  {
+   "source": "18897585",
+   "relation": "references",
+   "target": "18925131",
+   "declared_on": "18897585",
+   "scheme": "doi"
+  },
+  {
+   "source": "18897585",
+   "relation": "references",
+   "target": "18383439",
+   "declared_on": "18897585",
+   "scheme": "doi"
+  },
+  {
+   "source": "18897585",
+   "relation": "references",
+   "target": "18444260",
+   "declared_on": "18897585",
+   "scheme": "doi"
+  },
+  {
+   "source": "18444260",
+   "relation": "isPartOf",
+   "target": "22342043",
+   "declared_on": "18444260",
+   "scheme": "doi"
+  },
+  {
+   "source": "18444260",
+   "relation": "references",
+   "target": "18925131",
+   "declared_on": "18444260",
+   "scheme": "doi"
+  },
+  {
+   "source": "18444260",
+   "relation": "references",
+   "target": "18383439",
+   "declared_on": "18444260",
+   "scheme": "doi"
+  },
+  {
+   "source": "18383439",
+   "relation": "isPartOf",
+   "target": "22342043",
+   "declared_on": "18383439",
+   "scheme": "doi"
+  },
+  {
+   "source": "18383439",
+   "relation": "references",
+   "target": "18925131",
+   "declared_on": "18383439",
+   "scheme": "doi"
+  },
+  {
+   "source": "18383439",
+   "relation": "references",
+   "target": "18444260",
+   "declared_on": "18383439",
+   "scheme": "doi"
+  },
+  {
+   "source": "17280895",
+   "relation": "isPartOf",
+   "target": "22301465",
+   "declared_on": "17280895",
+   "scheme": "doi"
+  },
+  {
+   "source": "17280895",
+   "relation": "isPartOf",
+   "target": "22301566",
+   "declared_on": "17280895",
+   "scheme": "doi"
+  },
+  {
+   "source": "17280895",
+   "relation": "isPartOf",
+   "target": "22342043",
+   "declared_on": "17280895",
+   "scheme": "doi"
+  },
+  {
+   "source": "17280895",
+   "relation": "references",
+   "target": "18925131",
+   "declared_on": "17280895",
+   "scheme": "doi"
+  },
+  {
+   "source": "17280895",
+   "relation": "references",
+   "target": "18383439",
+   "declared_on": "17280895",
+   "scheme": "doi"
+  },
+  {
+   "source": "17280895",
+   "relation": "references",
+   "target": "18444260",
+   "declared_on": "17280895",
+   "scheme": "doi"
+  }
+ ],
+ "lineage_chains": []
+}

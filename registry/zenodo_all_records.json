@@ -1,5 +1,79 @@
 [
  {
+  "id": 22341671,
+  "doi": "10.5281/zenodo.22341671",
+  "concept": "10.5281/zenodo.22341670",
+  "title": "Knowledge graph of the Zenodo library \"When AI Expands Human Potential\" — machine-readable map (nodes, edges, lineage chains, reading guide for AI readers)",
+  "date": "2026-09-05",
+  "type": "Dataset",
+  "kw": [
+   "knowledge graph",
+   "zenodo",
+   "research library",
+   "human-ai collaboration",
+   "epistemic fusion",
+   "readout universe",
+   "glosa",
+   "json-ld",
+   "machine-readable",
+   "when ai expands human potential"
+  ],
+  "desc": " What this is. A knowledge graph of the series index When AI Expands Human Potential (hub DOI 10.5281/zenodo.22308201): every member record is a node (its DOI), every relation the author wrote into a record's Zenodo related_identifiers is an edge ( hasPart , isPartOf , continues , references , isSupplementTo …), plus version edges derived from Zenodo concept ids. Built from live Zenodo metadata on 5 September 2026; nothing is inferred from paper content. Files. AIHP_LIBRARY_KG.md — reading guide written for AI and human readers (relation vocabulary, lineage chains oldest→newest, member table, traversal recipes, what not to infer, a Mermaid diagram); aihp_kg.json — nodes + edges, JSON-LD flavoured ( @id = DOI URL); aihp_kg_edges.jsonl — one edge per line; aihp_kg.svg/.png/.pdf — layered render, rows = publication month, latest versions only. Readout, not truth. The graph is a diagram of the metadata as fetched on the build date. Edge counts are not importance; each record's own status line (K0, not peer reviewed, claim tiers) is the claim ceiling. Generator: scripts/zenodo_library_kg.py in the glosa repository (10.5281/zenodo.22301059), CC BY 4.0; re-run it to rebuild the graph after the library changes. ",
+  "cluster": "ep",
+  "tags": [
+   "ai",
+   "aihp"
+  ]
+ },
+ {
+  "id": 22341297,
+  "doi": "10.5281/zenodo.22341297",
+  "concept": "10.5281/zenodo.22341296",
+  "title": "Human Learning as Epistemic Architecture: A Method for Word Mapping, Life-Concept Graphs, Constraint Testing, and Corrigible Agency in the AI Age (revised v4 preprint, 28 June 2026)",
+  "date": "2026-06-28",
+  "type": "Preprint",
+  "kw": [
+   "human learning",
+   "epistemic agency",
+   "artificial intelligence in education",
+   "constraint-first epistemology",
+   "retrieval-augmented inquiry",
+   "corrigible agency",
+   "personal knowledge graph",
+   "word mapping",
+   "reflective dissonance",
+   "desirable difficulties",
+   "cognitive offloading",
+   "human-ai readout programme"
+  ],
+  "desc": " Status. Revised v4 preprint (28 June 2026), not peer reviewed. Programme manuscript in the Human-AI Readout Programme / series When AI Expands Human Potential (index DOI 10.5281/zenodo.22308201); cited as reference [2] by CTSA Human-Return Readout (DOI 10.5281/zenodo.22339909). Deposited 5 September 2026 with the manuscript unchanged from its 28 June 2026 state. Abstract. This paper rewrites the human–AI learning project with human learning at the center. It does not argue that human beings should learn like artificial intelligence. Rather, it asks what can be carefully extracted from language-model and representational AI architecture for the renewal of reflective, language-mediated human learning: the movement from inputs to representations, from representations to relations, from relations to retrieval, from retrieval to evaluation, and from evaluation to update. The paper translates these architectural principles into a human-centered method beginning with lived words, not abstract information. A word is treated as a site where experience, memory, emotion, social pressure, value, goal, constraint, evidence, and action converge. From this starting point, the paper develops a model of life-world lexical mapping, meaning neighborhoods, personal knowledge graphs, retrieval-augmented inquiry, constraint testing, reflective dissonance, and disciplined revision. The central thesis is that human learning in the AI age should be organized not as information storage but as a revis",
+  "cluster": "ep",
+  "tags": [
+   "ai",
+   "aihp"
+  ]
+ },
+ {
+  "id": 22340255,
+  "doi": "10.5281/zenodo.22340255",
+  "concept": "10.5281/zenodo.22301059",
+  "title": "glosa — Rigour Without Infrastructure: A Standalone Scholar Methodology for Human–AI Knowledge Co-Production",
+  "date": "2026-09-05",
+  "type": "Software",
+  "kw": [
+   "methodology",
+   "human-ai co-production",
+   "epistemic provenance",
+   "readout",
+   "standalone scholar"
+  ],
+  "desc": "v0.1.0 — K0 public working release (v0.2.0: glosa applied to itself — concept paper DOI 10.5281/zenodo.22307841, 48 VERIFIED citation cards, cross-vendor reviewed claim cards; rules 15-17 and gate rule 9 added) — timestamped and citable, NOT peer reviewed, no independent check yet (K1 in glosa requires a cross-vendor I3 check that has not run), tier Dr. Methodology + skill + tools for co-producing rigorous knowledge with AI without institutional infrastructure. Every claim answers five questions bound to the Readout Condition. No priority claim.",
+  "cluster": "ep",
+  "tags": [
+   "ai"
+  ]
+ },
+ {
   "id": 22339909,
   "doi": "10.5281/zenodo.22339909",
   "concept": "10.5281/zenodo.22339908",
@@ -49,26 +123,6 @@
    "yaoharee lahtee"
   ],
   "desc": " ปูมกล่องดำ (Blackbox Log) — บันทึกเสียงดิบ ข้อค้นพบ และคำถามรายวันของผู้เขียน ตามที่พูดจริง (verbatim) ไม่ผ่านการปรุงและไม่ผ่านการตรวจอิสระ (tier: positional/Dr) บันทึกเพิ่มได้อย่างเดียว ไม่แก้ไม่ลบ; อัปเดตเป็นเวอร์ชันใหม่ของ record เดียวกัน เลนส์ที่ใช้มองปัญหา: Readout Universe — Yaoharee Lahtee. ระบบที่เก็บ: glosa (github.com/morrocwi/glosa). เวอร์ชันนี้: 120 บันทึก ถึง 2026-09-05. Blackbox Log — a daily, append-only, verbatim record of the author's raw voice (one pre-release correction is disclosed in BBL-2026-09-04-082), findings and questions (Thai is the source of truth). Not a paper; not reviewed; tier positional/Dr. Contains the author's own words only; the single AI-written line is a disclosed correction entry (by=ai, BBL-2026-09-04-082), never the author's voice. Each update is a new version of the same record. Lens: Readout Universe — Yaoharee Lahtee; kept by the glosa toolchain. ",
-  "cluster": "ep",
-  "tags": [
-   "ai"
-  ]
- },
- {
-  "id": 22334376,
-  "doi": "10.5281/zenodo.22334376",
-  "concept": "10.5281/zenodo.22301059",
-  "title": "glosa — Rigour Without Infrastructure: A Standalone Scholar Methodology for Human–AI Knowledge Co-Production",
-  "date": "2026-09-05",
-  "type": "Software",
-  "kw": [
-   "methodology",
-   "human-ai co-production",
-   "epistemic provenance",
-   "readout",
-   "standalone scholar"
-  ],
-  "desc": "v0.1.0 — K0 public working release (v0.2.0: glosa applied to itself — concept paper DOI 10.5281/zenodo.22307841, 48 VERIFIED citation cards, cross-vendor reviewed claim cards; rules 15-17 and gate rule 9 added) — timestamped and citable, NOT peer reviewed, no independent check yet (K1 in glosa requires a cross-vendor I3 check that has not run), tier Dr. Methodology + skill + tools for co-producing rigorous knowledge with AI without institutional infrastructure. Every claim answers five questions bound to the Readout Condition. No priority claim. v0.4.0 (2026-09-05) — session architecture. After an ultracode meeting on the Epistemic Fusion papers (25 proposals, all kept under the founder ruling \"raise the work to the claim\"), glosa gained a session layer: session boundary and entry anchor on the Blackbox Note, question trace, retained_direction (unknown by default; NC-77 retention≠direction), precommitted resistance route, the χ_recip reciprocal-lineage diagnostic (Open), kernel rules 29–31 (strength-of-claim is not a defeater; defeater must match claim type; defeater status), dialogue-table defeater columns, the Human Mastery Gate card and schema (R8), gate rule 10 (no finding is ever dropped). Simulation: five new defect classes caught 30/30 with no false alarms. Six design decisions remain pending the founder and are marked as such. K0. ",
   "cluster": "ep",
   "tags": [
    "ai"
@@ -778,7 +832,8 @@
   "desc": " This article develops a sociology-of-knowledge account of how human religious interpretation can become unusu- ally resistant to correction and, under specific political conditions, contribute to conflict persistence. It begins from a distinction that is doctrinally elementary but sociologically consequential: revelation, human interpre- tation, and institutional authority are not equivalent forms of knowledge. Yet these layers may become so- cially compressed as interpretive judgments are certified by institutions, accumulate symbolic and epistemic au- thority, and become increasingly costly to question. I call this process epistemic hardening. The concept does not designate religious authority, orthodoxy, taqlid, doc- trinal certainty, or sacred commitment as such. Its object is narrower: the declining social revisability of human interpretive claims. The article’s primary rela- tional contribution is asymmetric revisability: the direc- tionally unequal practical capacity to question, correct, reinterpret, classify, or demand justification. Advanced hardening can sediment such asymmetry into durable interpretive stratification and can, under some condi- tions, shift legitimate moral delegation toward protected moral displacement. In conflict settings, these processes can contribute to conflict closure: a reduced capacity to transform disagreement through correction, translation, and mutually intelligible contestation. The argument extends Galtung’s account of cultural viol",
   "cluster": "ep",
   "tags": [
-   "islam"
+   "islam",
+   "jps"
   ]
  },
  {
@@ -791,7 +846,9 @@
   "kw": [],
   "desc": " Sexual liberalization is usually measured through permission: greater freedom to consent, choose partners, use contraception, avoid or leave marriage, obtain abortion where lawful, and organize intimate life outside inherited constraints. This paper argues that permission is an incomplete measure of gender equality because reproductive heterosexual intercourse begins from an invariant bodily asymmetry while institutions determine how its consequences are distributed. The sociological problem therefore starts one level above the body: who governs exposure, and who pays afterward? The paper develops the reproductive-closure proposition: accounts that close at the consenting adult dyad underidentify pregnancy, caregiver dependency, and the independently dependent child. It then develops asymmetric observability: rights are recorded coherently, whereas contraceptive work, maternal morbidity, motherhood and child penalties, unpaid care, kin support, child-support shortfalls, and public transfers are fragmented across in- stitutions. A plausibility probe illustrates the problem: Sweden, Denmark, Spain, and Germany each receive a score of 100 on the World Bank’s 2024 WBL 1.0 legal-rights index, yet the Child Penalty Atlas reports employment penalties of 9, 14, 38, and 41 percent. The paper’s stronger the- sis is patriarchal capture: a diagnostic configuration in which women’s freedom from domination rises, reproductive liability remains sex-structured, men retain a comparative capa",
   "cluster": "other",
-  "tags": []
+  "tags": [
+   "jps"
+  ]
  },
  {
   "id": 21665100,
@@ -1023,7 +1080,8 @@
   "desc": " Thai Muslims occupy a layered social position: a religious minority of roughly five percent in a Buddhist-majority constitutional order, yet a community within which some actors exercise coercive moral authority over more vulnerable insiders. This article proposes the concept of marginal hegemony to name the layered condition in which external structural vulnerability and internal domination coexist within a single community field. Drawing on minority-rights theory, the Is Critique Secular? debate, and recent scholarship on queer Southeast Asia, the article locates marginal hegemony at an analytical site that intersectionality, internalized oppression, and minorities-within-minorities frameworks identify but do not specify. An anonymized public-event analysis of a recent urban incident in Bangkok—in which online religious offense escalated through livestream amplification, crowd pressure, and demands for visible public remorse—illustrates three mechanisms: the conversion of moral critique into coercive discipline, the defensive consolidation by which external mockery hardens internal authority, and the double compression of vulnerable insiders. The article closes by proposing a diagnostic framework for what it calls power-literate satire: a mode of public critique that targets specific conduct by identifiable actors with power without converting a marginalized identity into collective stigma. The framework is offered as an analytical tool, not a normative verdict. ",
   "cluster": "other",
   "tags": [
-   "islam"
+   "islam",
+   "jps"
   ]
  },
  {
@@ -1100,7 +1158,9 @@
   "kw": [],
   "desc": " มีช่างฝีมือชาวญี่ปุ่นกลุ่มหนึ่ง ที่เมื่อถ้วยชามแตก พวกเขาไม่ทิ้งมัน พวกเขาใช้ยางไม้ผสมผงทองคำอุดรอยแตกทีละเส้น ทีละเส้น จนกระทั่งภาชนะนั้นประกอบสมบูรณ์อีกครั้ง แต่คราวนี้ รอยแตกทุกเส้นกลายเป็นเส้นทอง ศิลปะนี้มีชื่อว่า คินสึงิ และมันตั้งอยู่บนความเชื่อที่ว่า รอยแตกไม่ใช่สิ่งที่ต้องซ่อน แต่คือสิ่งที่ควรเฉลิมฉลอง ก่อนอ่านต่อ ขอให้วางความเชื่อหนึ่งเรื่องลงก่อน ความเชื่อที่ว่า รอยร้าวในตัวเราเกิดจากความอ่อนแอ ",
   "cluster": "other",
-  "tags": []
+  "tags": [
+   "jps"
+  ]
  },
  {
   "id": 19215748,
@@ -1196,7 +1256,8 @@
   "cluster": "ep",
   "tags": [
    "islam",
-   "tourism"
+   "tourism",
+   "jps"
   ]
  },
  {
@@ -1238,6 +1299,7 @@
   "cluster": "ep",
   "tags": [
    "ai",
+   "jps",
    "aihp"
   ]
  },
@@ -1266,7 +1328,9 @@
   "kw": [],
   "desc": " Sociological and philosophical traditions have developed extensive explanations of social structure, conflict, violence, and peace. Yet these phenomena are often analyzed within partially separate theoretical frameworks. As a result, disagreement is frequently conflated with conflict, conflict with violence, and stability with peace. This article proposes a causal grammar linking five concepts: structure, conflict, violence, repair, and peace. Social structures organize fields of feasible possibility within shared social environments. Conflict emerges when actors attempt to sustain structures that cannot be jointly reproduced. Violence occurs when incompatibility compresses actors’ feasible life-space. Repair denotes the protected reopening of damaged relations, while peace refers to stable coexistence that preserves actors’ possibilities and maintains the capacity for repair. The framework provides a compact diagnostic vocabulary for distinguishing difference from conflict, conflict from violence, and stable order from non-suppressive peace. Keywords: conflict; violence; peace; social theory; political sociology ",
   "cluster": "other",
-  "tags": []
+  "tags": [
+   "jps"
+  ]
  },
  {
   "id": 18918275,
@@ -1302,7 +1366,9 @@
   "kw": [],
   "desc": " Agency is a central concept across philosophy of action, cognitive science, theoretical biol- ogy, and artificial intelligence. Despite extensive research across these fields, existing accounts remain theoretically fragmented because they are typically grounded in domain-specific mech- anisms and operate at different explanatory levels. Philosophical theories emphasize inten- tional action and rational deliberation, biological theories focus on metabolic self-maintenance, and computational models define agents primarily in terms of goal-directed decision processes. While each of these perspectives captures important aspects of agency, none provides a struc- tural account capable of explaining agency across the full spectrum of adaptive systems. This paper proposes a structural theory of agency based on a persistence–control frame- work. Within this framework, systems are interpreted as dynamical systems operating under constraint structures that shape the possible trajectories of their states. Persistence is defined as the continued occupation of a viable region of state space that allows the system to main- tain its organization or functional identity. Agency emerges when the internal dynamics of a system are capable of regulating or modifying the constraint structures that govern its own persistence. By defining agency in terms of constraint-modulating dynamics, the framework shifts the explanation of agency away from particular biological, cognitive, or computational mech",
   "cluster": "other",
-  "tags": []
+  "tags": [
+   "jps"
+  ]
  },
  {
   "id": 18870302,
@@ -1453,7 +1519,9 @@
   "kw": [],
   "desc": " Causal Ethics (CE) is formulated in this book as a constraint and admissibility layer on system dynamics, rather than a theory of moral sentiment, preference aggregation, or normative doctrine. Its purpose is to characterize which forms of agency, interaction, and regime selection can persist without violating causal, spectral, and stability constraints. CE is not a utilitarian calculus, not a virtue taxonomy, and not a theological or cultural ethics system. It does not rank values, prescribe moral ends, or claim moral authority. Instead, it formalizes ethics as a necessary condition for the survival and coherence of agency within manifested reality. The core primitive of CE is Choice: an Agency is defined operationally as an entity capable of selecting a regime of translation and interaction. Without choice, there is no ethics, responsibility, or moral cost. The framework yields testable diagnostics— Lyapunov ethical load, spectral survival, regime incompatibility, and accumulated moral cost— and produces falsifiable forecasts for individual, collective, and artificial agents operating under finite causal memory. This abstract constitutes a scope contract for the entire book. ",
   "cluster": "other",
-  "tags": []
+  "tags": [
+   "jps"
+  ]
  },
  {
   "id": 18427189,
@@ -1491,7 +1559,9 @@
   "kw": [],
   "desc": " Violence is commonly treated as a discrete event caused by individual agents and addressed through force-based suppression. Despite extensive legal, military, and policing efforts, violence reliably recurs, mutates across domains, and persists across generations. In this work we propose a structural reformulation: violence is not an object or an act, but a dynamical instability arising in systems with finite causal memory operating under sustained load. Using a causal–spectral framework grounded in finite-speed transport, memory-dependent dynamics, and operator theory, we show that force-based elimination is generically impossible. We derive a no-go result for suppression-only strategies, introduce an operator-level taxonomy of violence, and demonstrate recurrence and mutation using a minimal constructive model. The analysis unifies insights from public health, social science, and mathematical physics, and identifies ecosystem-level stabilization—not coercive control—as the only structurally admissible route to durable violence reduction. ",
   "cluster": "other",
-  "tags": []
+  "tags": [
+   "jps"
+  ]
  },
  {
   "id": 18382712,
@@ -2941,7 +3011,8 @@
   "desc": " Families are the foundation of society, shaping individual well-being and social stability. The Strong, Warm & Safe Family Ecosystem (SWSF) Framework presents eight dimensions and four mechanisms to strengthen families in Thailand’s multicultural context. The framework addresses issues such as human trafficking, domestic violence, mental health, and digital safety while aligning with SDGs 3, 5, and 16. Developed by Araya Nikah Social Enterprise, this policy brief integrates Islamic ethics, social innovation, and family systems thinking to create a holistic model for social sustainability. ",
   "cluster": "he",
   "tags": [
-   "se"
+   "se",
+   "jps"
   ]
  },
  {
