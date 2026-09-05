@@ -1,0 +1,110 @@
+{
+ "file": "dist/Potential_as_a_Readout_K0_2026-09-05.pdf",
+ "title": "Potential as a Readout: Witnessed Envelopes, Two-Layer Agency, and the Measurement of Pseudo-Peace (Epistemic Note, K0, 5 September 2026)",
+ "upload_type": "publication",
+ "publication_type": "preprint",
+ "publication_date": "2026-09-05",
+ "description_html": "<p><b>Status.</b> K0 final author draft in the series <i>Society, Justice, Peace &amp; Violence</i> (index DOI 10.5281/zenodo.22342043) and <i>When AI Expands Human Potential</i> (index DOI 10.5281/zenodo.22308201). “Final” names the manuscript state, not validation, publication, or independent certification. Definitions at tier definition, interpretations at Dr; the only executed result is a two-node fixture at finite_diagnostic. No human data, no coefficient estimates. Continues the programme papers <i>The Causal Grammar of Structured Coexistence</i>, <i>Causal Ethics</i>, <i>Violence as a Special Case of Instability</i> and <i>Causal Agency</i>, and the Readout Genesis / Readout Universe epistemic core.</p><p><b>In brief.</b> “Potential” is the load-bearing word of peace research (violence as the gap between actual and potential realizations), of capability theory, of information-theoretic agency (empowerment as channel capacity), and of this programme's own agency papers (viable regions, admissible regimes, feasible life-space). Every one of these accounts declares a set of feasible options and then measures against it; none says how the set itself is read. This note proposes that potential is a readout, not a hidden quantity: the envelope of a witnessed option set (a finite, enumerable set under a retained selection rule), in two layers (choosing within a constraint structure, and changing that structure), kept apart from what was exercised and from what an evaluator observes, with compression diagnosed separately from the attribution of responsibility. Seven distinctions are stated as non-collapse rules (two registered as NC-78 and NC-79 in the glosa methodology); the joint-event definition of corrigible agency potential is restated on the witnessed set; corrigibility and spectral support are made readable through a correction-channel presence test and a repair rate; “pseudo-peace” is defined as the collapse of a three-valued evidence gate into a two-valued one and given a numerical signature on a fail-able two-node fixture (bounded amplitude suppression is followed by recurrence; unbounded suppression holds only while paid for and its cumulative force grows without bound; an operator-level change reaches the same calm with zero ongoing force). Four falsifiable propositions are stated with the observation that would defeat each.</p>",
+ "keywords": [
+  "potential",
+  "agency",
+  "capability approach",
+  "empowerment",
+  "structural violence",
+  "peace research",
+  "pseudo-peace",
+  "corrigibility",
+  "readout",
+  "non-collapse",
+  "Readout Universe",
+  "Readout Genesis",
+  "Causal Ethics",
+  "GLOSA K0",
+  "Human-AI Readout Programme"
+ ],
+ "language": "eng",
+ "version": "K0-2026-09-05",
+ "related": [
+  {
+   "identifier": "10.5281/zenodo.18925131",
+   "relation": "continues"
+  },
+  {
+   "identifier": "10.5281/zenodo.18444260",
+   "relation": "continues"
+  },
+  {
+   "identifier": "10.5281/zenodo.18383439",
+   "relation": "continues"
+  },
+  {
+   "identifier": "10.5281/zenodo.18897585",
+   "relation": "continues"
+  },
+  {
+   "identifier": "10.5281/zenodo.22339909",
+   "relation": "references"
+  },
+  {
+   "identifier": "10.5281/zenodo.22341297",
+   "relation": "references"
+  },
+  {
+   "identifier": "10.5281/zenodo.22319715",
+   "relation": "references"
+  },
+  {
+   "identifier": "10.5281/zenodo.21529456",
+   "relation": "references"
+  },
+  {
+   "identifier": "10.5281/zenodo.22301318",
+   "relation": "references"
+  },
+  {
+   "identifier": "10.5281/zenodo.22340255",
+   "relation": "references",
+   "resource_type": "software"
+  },
+  {
+   "identifier": "10.5281/zenodo.22302518",
+   "relation": "references"
+  },
+  {
+   "identifier": "10.1177/002234336900600301",
+   "relation": "cites"
+  },
+  {
+   "identifier": "10.1177/0022343390027003005",
+   "relation": "cites"
+  },
+  {
+   "identifier": "10.1109/CEC.2005.1554676",
+   "relation": "cites"
+  },
+  {
+   "identifier": "10.1086/448181",
+   "relation": "cites"
+  },
+  {
+   "identifier": "10.5281/zenodo.22342043",
+   "relation": "isPartOf",
+   "resource_type": "publication-other"
+  },
+  {
+   "identifier": "10.5281/zenodo.22308201",
+   "relation": "isPartOf",
+   "resource_type": "publication-other"
+  },
+  {
+   "identifier": "10.5281/zenodo.22301552",
+   "relation": "isPartOf",
+   "resource_type": "publication-other"
+  },
+  {
+   "identifier": "10.5281/zenodo.22301459",
+   "relation": "isPartOf",
+   "resource_type": "publication-other"
+  }
+ ]
+}
