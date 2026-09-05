@@ -25,3 +25,6 @@ can be shown to any reviewer on request; they are not public because of what the
 
 ## v0.3.0 (2026-09-05) — gate v3 summary
 17 BLOCKs upheld by skeptics and fixed (private-name leak ×12, one vendor-credit field, one tier over-statement, one stale spec status, one scanner class, one changelog status); verdict PASS_WITH_LIMITS (K0; six founder decisions pending; rule 27 open on the tracked corpus).
+
+## v0.4.0 (2026-09-05) — gate v4 summary
+4 BLOCKs upheld and fixed (one private path fragment, one rule-10 completeness failure, two stale protocol-card status sections); 6 WARNs fixed, 1 open (column-boundary re-verification of citations into two-column source text); verdict PASS_WITH_LIMITS (K0; founder decisions pending; hidden_ai_fill_unmarked declared open).

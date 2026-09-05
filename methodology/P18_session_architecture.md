@@ -150,15 +150,7 @@ persistence, not warrant for a direction).
 ## What this card does NOT do
 
 It does not create a `session.yaml` file (§2.2, above — settled, pending only the founder's formal
-ratification per spec §7 decision 1). It does not itself add the `session_id` field to any schema,
-the `retained_direction` field to `hypothesis_selection.schema.json`, the `entry_anchor` sub-object
-to `problem_card.schema.json`, or the new CLI diagnostic subcommand — those are schema/kernel/CLI
-edits outside this task's ownership list; `design/FOUNDATION_v0.7_PATCH.md` specifies their exact
-text. It does not resolve the founder decisions `design/SESSION_ARCH_v0.4_SPEC.md` §7 lists
-(ratifying §2.2, merging the duplicate `kernel.session-boundary-momentum-reset-assertion` proposal
-into SA-1, reserving `NC-77`, SA-3 retroactivity, the SA-4 ledger row's `status` value, approving
-the H3 sim, wiring `session_id` into `hypothesis_selection.yaml`) — those stay pending-founder,
-named here rather than defaulted silently.
+ratification per spec §7 decision 1). The session fields (`session_id`, `session_boundary`, `entry_anchor`, `question_trace` on the Blackbox Note; `session_id` and `retained_direction` on hypothesis_selection; `session_id` on kg_edge) were built in v0.4 (2026-09-05); this card is the protocol text and does not certify that build.
 
 ## TODO(session.boundary-blackbox-note)
 
