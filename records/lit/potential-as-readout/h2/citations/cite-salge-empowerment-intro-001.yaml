@@ -10,7 +10,7 @@ metadata_verified: true
 metadata_verified_by: mechanical:direct_fetch
 metadata_verified_at: '2026-09-05'
 claim_match_verified: false
-claim_match_verified_by: route:codex
+claim_match_verified_by: null
 claim_match_verified_at: null
 exact_passage: An agent’s empowerment is not only affected by the state of the world,
   i.e., the context of the agent, but also depends on what the agent’s sensors and
@@ -18,9 +18,8 @@ exact_passage: An agent’s empowerment is not only affected by the state of the
 page_or_locator: p.19 of the arXiv PDF (§4.5.3 Sensor and Actuator Selection)
 scope: DIRECT_QUOTATION
 evidence_tier: Dr
-independence_class: I3
-who_verified: route:codex (cross-vendor AI; abstract/metadata level, not full text)
-  -- see cite-salge-empowerment-intro-001.i3.json
+independence_class: I1
+who_verified: AI assistant, same session (I1); I3 route pending (codex quota)
 verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
 status: METADATA_OK
 xenon_ledger_ref: null

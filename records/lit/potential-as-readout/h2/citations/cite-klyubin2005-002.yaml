@@ -1,5 +1,5 @@
 $schema: citation_card.schema.json
-id: cite-klyubin2005-001
+id: cite-klyubin2005-002
 claim_ref: hypothesis-potential-as-readout-H2
 identifier:
   kind: DOI
@@ -12,20 +12,20 @@ metadata_verified_at: '2026-09-05'
 claim_match_verified: false
 claim_match_verified_by: null
 claim_match_verified_at: null
-exact_passage: Empowerment is measured in bits. It is zero when the agent has no control
-  over what it is sensing, and it is higher the more perceivable control or influence
-  the agent has.
-page_or_locator: p.3
+exact_passage: We can now define empowerment as the channel capacity of the agent's
+  actuation channel terminating at the sensor (see Eq. 1 and Eq. 2)
+page_or_locator: Klyubin, Polani & Nehaniv 2005, author repository copy p. 3, section
+  defining empowerment
 scope: DIRECT_QUOTATION
 evidence_tier: Dr
 independence_class: I1
-who_verified: AI assistant, same session (I1); I3 route pending (codex quota)
+who_verified: AI assistant, same session (I1) -- mechanical verbatim extraction from
+  the fetched copy; I3 route pending (codex quota)
 verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
 status: METADATA_OK
 xenon_ledger_ref: null
-disclosure: 'Same-session AI check only (I1) -- not yet independently verified; run
-  lit_crossvendor_check.py for I3. | I3 route (codex) judged from fetched metadata/abstract
-  + the card''s quoted passage, not full text: '
+disclosure: Same-session AI check only (I1); second passage from the same fetched
+  copy as cite-klyubin2005-001; I3 route pending.
 superseded_by: null
 notes: 'Local copy already fetched and stored by an earlier session under paper/sources/
   (task brief named this file directly); read directly for this card, not from memory.
@@ -33,5 +33,5 @@ notes: 'Local copy already fetched and stored by an earlier session under paper/
   coupling, i.e. how much control a system has GIVEN its existing sensorimotor structure
   -- a within-structure quantity, not a structure-change quantity.'
 fetched_from_url: https://uhra.herts.ac.uk/id/eprint/282/1/901241.pdf
-line_or_paragraph: line labelled 'klyubin2005 p3:' in the local per-page-tagged extracted
-  text, paragraph following eq.3
+line_or_paragraph: p. 3, sentence immediately preceding the "measured in bits" sentence;
+  verbatim (pdftotext)

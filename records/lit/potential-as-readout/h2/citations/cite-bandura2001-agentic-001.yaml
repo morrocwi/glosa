@@ -10,7 +10,7 @@ metadata_verified: true
 metadata_verified_by: mechanical:direct_fetch
 metadata_verified_at: '2026-09-05'
 claim_match_verified: false
-claim_match_verified_by: route:codex
+claim_match_verified_by: null
 claim_match_verified_at: null
 exact_passage: Personal agency operates within a broad network of sociostructural
   influences. In these agentic transactions, people are producers as well as products
@@ -18,9 +18,8 @@ exact_passage: Personal agency operates within a broad network of sociostructura
 page_or_locator: Abstract (Annual Review of Psychology, 2001, Vol.52)
 scope: DIRECT_QUOTATION
 evidence_tier: Dr
-independence_class: I3
-who_verified: route:codex (cross-vendor AI; abstract/metadata level, not full text)
-  -- see cite-bandura2001-agentic-001.i3.json
+independence_class: I1
+who_verified: AI assistant, same session (I1); I3 route pending (codex quota)
 verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
 status: METADATA_OK
 xenon_ledger_ref: null

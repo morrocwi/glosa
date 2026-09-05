@@ -10,7 +10,7 @@ metadata_verified: true
 metadata_verified_by: mechanical:direct_fetch
 metadata_verified_at: '2026-09-05'
 claim_match_verified: false
-claim_match_verified_by: route:codex
+claim_match_verified_by: null
 claim_match_verified_at: null
 exact_passage: Definition 3. A system exhibits agency if its internal dynamics modify
   the constraint structure C in ways that increase the expected persistence of the
@@ -18,9 +18,8 @@ exact_passage: Definition 3. A system exhibits agency if its internal dynamics m
 page_or_locator: p.19 (§6.5 Agency as Constraint Regulation)
 scope: DIRECT_QUOTATION
 evidence_tier: definition
-independence_class: I3
-who_verified: route:codex (cross-vendor AI; abstract/metadata level, not full text)
-  -- see cite-causal-agency-defs-001.i3.json
+independence_class: I1
+who_verified: AI assistant, same session (I1); I3 route pending (codex quota)
 verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
 status: METADATA_OK
 xenon_ledger_ref: null

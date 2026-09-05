@@ -10,7 +10,7 @@ metadata_verified: true
 metadata_verified_by: mechanical:direct_fetch
 metadata_verified_at: '2026-09-05'
 claim_match_verified: false
-claim_match_verified_by: route:codex
+claim_match_verified_by: null
 claim_match_verified_at: null
 exact_passage: This paper begins from the understanding that women's empowerment is
   about the process by which those who have been denied the ability to make strategic
@@ -18,9 +18,8 @@ exact_passage: This paper begins from the understanding that women's empowerment
 page_or_locator: Abstract (Development and Change, 1999, Vol.30)
 scope: DIRECT_QUOTATION
 evidence_tier: Dr
-independence_class: I3
-who_verified: route:codex (cross-vendor AI; abstract/metadata level, not full text)
-  -- see cite-kabeer1999-001.i3.json
+independence_class: I1
+who_verified: AI assistant, same session (I1); I3 route pending (codex quota)
 verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
 status: METADATA_OK
 xenon_ledger_ref: null

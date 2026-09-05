@@ -12,24 +12,22 @@ metadata_verified_by: 'manual: PDF page images read directly (Read tool) confirm
   University Institute) Max Weber Programme master-class reading'
 metadata_verified_at: '2026-09-05'
 claim_match_verified: true
-claim_match_verified_by: this session (manual read/verification; the route:codex
-    I3 cross-vendor attempt below FAILED with a usage-limit error, not a content
-    judgment -- reverted to the prior manual verification rather than leaving a
-    false false-verdict on record)
+claim_match_verified_by: this session (manual read/verification; the route:codex I3
+  cross-vendor attempt below FAILED with a usage-limit error, not a content judgment
+  -- reverted to the prior manual verification rather than leaving a false false-verdict
+  on record)
 claim_match_verified_at: '2026-09-05'
-exact_passage: 'Abstract: "The concept of freedom as non-domination that is associated
-  with neo-republican theory provides a guiding ideal in the global, not just the
-  domestic arena, and does so even on the assumption that there will continue to be
-  many distinct states." Body (p.3): "you do not enjoy freedom as non-domination or
-  independence just by virtue of actually escaping interference; it must also be that
-  you would not suffer interference even if you had wished to act otherwise or others
-  had not wanted you to be able to act on your wishes."'
-page_or_locator: Pettit, "The Globalized Republican Ideal", Abstract (p.1) and p.3
+exact_passage: you do not enjoy freedom as non-domination or independence just by
+  virtue of actually escaping interference; it must also be that you would not suffer
+  interference even if you had wished to act otherwise or others had not wanted you
+  to be able to act on your wishes.
+page_or_locator: Pettit, "The Globalized Republican Ideal" (EUI MWP master-class paper),
+  p. 3
 scope: DIRECT_QUOTATION
 evidence_tier: definition
 independence_class: I1
-who_verified: this session (manual verification; I3 cross-vendor attempt failed,
-  see disclosure)
+who_verified: this session (manual verification; I3 cross-vendor attempt failed, see
+  disclosure)
 verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
 status: METADATA_OK
 xenon_ledger_ref: null
@@ -48,5 +46,4 @@ notes: Substituted for Pettit's 1997/2012 non-domination book per the task brief
   itself is not open-access); this shorter open PDF restates the same core freedom-as-non-domination
   and robustness argument in the author's own words.
 fetched_from_url: https://www.eui.eu/Documents/MWP/ProgramActivities/20152016/master-classes/Pettit-The-Globalized-Republican-Ideal.pdf
-line_or_paragraph: char offset 48 of normalized fetched text (~paragraph 1); verbatim
-  prefix match
+line_or_paragraph: p. 3, single continuous sentence (pdftotext, whitespace-normalized)

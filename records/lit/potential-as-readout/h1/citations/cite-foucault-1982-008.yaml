@@ -1,0 +1,37 @@
+$schema: citation_card.schema.json
+id: cite-foucault-1982-008
+claim_ref: H1
+identifier:
+  kind: DOI
+  value: 10.1086/448181
+fetch_status: FETCHED
+fetched_at: '2026-09-05'
+metadata_verified: true
+metadata_verified_by: 'manual: WebFetch of books.openedition.org/obp/4862, confirmed
+  as Chapter 2 "Core Ideas and the Framework" of Ingrid Robeyns (2017) Wellbeing,
+  Freedom and Social Justice: The Capability Approach Re-Examined, Cambridge, Open
+  Book Publishers (CC BY 4.0 open access)'
+metadata_verified_at: '2026-09-05'
+claim_match_verified: false
+claim_match_verified_by: null
+claim_match_verified_at: '2026-09-05'
+exact_passage: To govern, in this sense, is to structure the possible field of action
+  of others.
+page_or_locator: Foucault 1982, "The Subject and Power", Critical Inquiry 8(4); Kobe
+  University teaching copy p. 15 (journal p. 790)
+scope: DIRECT_QUOTATION
+evidence_tier: definition
+independence_class: I1
+who_verified: AI assistant, same session (I1) -- mechanical verbatim extraction from
+  the fetched copy; I3 route pending (codex quota)
+verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
+status: METADATA_OK
+xenon_ledger_ref: null
+disclosure: Same-session AI check only (I1); metadata via Crossref DOI; I3 route pending.
+superseded_by: null
+notes: 'Bears on D5 (feasible != permitted): power defined as structuring the field
+  of possible action; stance: agrees that the feasible set must not be defined by
+  the permitting authority. language: en.'
+fetched_from_url: https://www2.kobe-u.ac.jp/~alexroni/IPD2018%20readings/IPD1%202018%20No.8/Foucault%20Subject%20and%20Power.pdf
+line_or_paragraph: copy p. 15, paragraph beginning "To govern, in this sense"; verbatim
+  (pdftotext)
