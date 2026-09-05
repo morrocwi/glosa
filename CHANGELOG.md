@@ -1,5 +1,6 @@
 # CHANGELOG
 ## 0.4.0 — in preparation
+- Published: repository DOI 10.5281/zenodo.22334376 (concept 10.5281/zenodo.22301059); files: source archive, concept paper PDF, uplift note PDF. GitHub tag v0.4.0 pending founder push.
 - Session-architecture review (`design/SESSION_ARCH_v0.4_SPEC.md`, both parts, 25 proposals
   scored under founder ruling BBL-2026-09-05-119: raise the work, never lower a claim to pass —
   count corrected from 24 to 25, `SA-5` restored under gate rule 10, see `design/
