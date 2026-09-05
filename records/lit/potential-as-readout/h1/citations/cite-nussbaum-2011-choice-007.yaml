@@ -12,8 +12,8 @@ metadata_verified_by: 'manual: PDF page images read directly (Read tool) confirm
   Martha C.. Creating Capabilities : The Human Development Approach, Harvard University
   Press, 2011. ProQuest Ebook Central", pages 17-20'
 metadata_verified_at: '2026-09-05'
-claim_match_verified: false
-claim_match_verified_by: null
+claim_match_verified: true
+claim_match_verified_by: route:claude
 claim_match_verified_at: '2026-09-05'
 exact_passage: 'It is focused on choice or freedom, holding that the crucial good
   societies should be promoting for their people is a set of opportunities, or substantial
@@ -23,18 +23,26 @@ page_or_locator: Nussbaum 2011, Creating Capabilities, Ch. 2 "The Central Capabi
 scope: DIRECT_QUOTATION
 evidence_tier: definition
 independence_class: I1
-who_verified: AI assistant, same session (I1) -- mechanical verbatim extraction from
-  the fetched copy; I3 route pending (codex quota)
+who_verified: 'route:claude (I1 route: same model, fresh headless session (no shared
+  context); abstract/metadata level, not full text) -- see cite-nussbaum-2011-choice-007.i3.json'
 verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
-status: METADATA_OK
+status: VERIFIED
 xenon_ledger_ref: null
-disclosure: Same-session AI check only (I1); same fetched course-excerpt copy as cite-nussbaum-2011-005;
-  this is the sentence the paper quotes for the unexercised-option objection. I3 route
-  pending.
+disclosure: 'Same-session AI check only (I1); same fetched course-excerpt copy as
+  cite-nussbaum-2011-005; this is the sentence the paper quotes for the unexercised-option
+  objection. I3 route pending. | I2 route (claude) judged from fetched metadata/abstract
+  + the card''s quoted passage, not full text: Passage verified verbatim; Nussbaum
+  explicitly counts unexercised opportunities as the capability good (''may or may
+  not exercise... choice is theirs''), directly tensioning H1''s witnessed-only (executed-policy)
+  definition of potential. | I1 route (claude) judged from fetched metadata/abstract
+  + the card''s quoted passage, not full text: Fetched text names Nussbaum, Creating
+  Capabilities, 2011, Harvard; exact passage found verbatim. Passage holds that opportunities
+  people ''may or may not exercise'' are the good itself, which bears on H1''s witnessed-set
+  definition as the card states: unexercised options challenge a record-only definition.'
 superseded_by: null
 notes: 'CHALLENGE to H1 as stated: an opportunity a person may never exercise still
   counts; answered in the paper by the reference-class reading of the witness rule.
   language: en.'
 fetched_from_url: https://asuevents.asu.edu/sites/g/files/litvpz3506/files/2024-06/Creating_Capabilities_The_Human_Development_Approa..._----_(2._The_Central_Capabilities_).pdf
-line_or_paragraph: excerpt p. 2, paragraph beginning "It is focused on choice or freedom";
-  verbatim (pdftotext; soft hyphens removed)
+line_or_paragraph: char offset 3244 of normalized fetched text (~paragraph 1); verbatim
+  prefix match

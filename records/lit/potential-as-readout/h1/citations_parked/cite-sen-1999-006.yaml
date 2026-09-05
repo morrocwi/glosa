@@ -12,11 +12,8 @@ metadata_verified_by: 'manual: Sen, A. (1999) Development as Freedom, Oxford Uni
   formulation by Sen", with quotation marks and no page number given by Nussbaum for
   the Sen original.'
 metadata_verified_at: '2026-09-05'
-claim_match_verified: true
-claim_match_verified_by: this session (manual read/verification; the route:codex
-    I3 cross-vendor attempt below FAILED with a usage-limit error, not a content
-    judgment -- reverted to the prior manual verification rather than leaving a
-    false false-verdict on record)
+claim_match_verified: false
+claim_match_verified_by: route:claude
 claim_match_verified_at: '2026-09-05'
 exact_passage: '"a person''s ''capability'' refers to the alternative combinations
   of functionings that are feasible for her to achieve. Capability is thus a kind
@@ -26,8 +23,8 @@ page_or_locator: quoted in Nussbaum 2011, Creating Capabilities, p. 20, as "one 
 scope: DIRECT_QUOTATION
 evidence_tier: definition
 independence_class: I1
-who_verified: this session (manual verification; I3 cross-vendor attempt failed,
-  see disclosure)
+who_verified: 'route:claude (I1 route: same model, fresh headless session (no shared
+  context); abstract/metadata level, not full text) -- see cite-sen-1999-006.i3.json'
 verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
 status: METADATA_OK
 xenon_ledger_ref: null
@@ -43,7 +40,13 @@ disclosure: 'HONEST DISCLOSURE: this session did not independently fetch/open De
   feasibility, not witnessing, is the operative criterion in Sen''s own formulation,
   which is close to the "declared feasible set" framing H1''s falsifier clause explicitly
   rejects. | I3 route (codex) judged from fetched metadata/abstract + the card''s
-  quoted passage, not full text: '
+  quoted passage, not full text:  | I1 route (claude) judged from fetched metadata/abstract
+  + the card''s quoted passage, not full text: No fetched text or metadata for the
+  Sen ISBN (source: no-identifier); passage cannot be checked against the original
+  and is only attested via Nussbaum secondhand. Nothing evidenced here contradicts
+  title/author. Sen''s definition of capability as feasible alternatives is relevant
+  context for H1''s contrast with a witnessed set, but the card does not evidence
+  support.'
 superseded_by: null
 notes: Kept as a separate card from cite-nussbaum-2011-005 per glosa's "one card per
   citation USE" rule (Sen-as-primary-author claim vs. Nussbaum-as-quoting-secondary-source

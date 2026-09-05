@@ -1,5 +1,5 @@
 {
- "vendor": "codex",
+ "vendor": "claude",
  "fetched": {
   "source": "zenodo",
   "title": "The Causal Grammar of Structured Coexistence: Conflict, Violence, Repair, and Non-Suppressive Peace",
@@ -12,9 +12,11 @@
   "_card_url": "https://zenodo.org/api/records/18925131/files/The%20Causal%20Grammar%20of%20Structured.pdf/content"
  },
  "verdict": {
-  "error": "no-json",
-  "raw": "",
+  "metadata_matches": true,
   "passage_plausible": true,
+  "claim_match": true,
+  "bearing": "SUPPORTS",
+  "reason": "Title, first author, year, and DOI match Zenodo metadata. Exact passage found verbatim in fetched text (§5). Source defines repair as reopening the possibility-space structure, distinct from choosing within it, matching H2's layer-2 claim. Self-citation disclosed; supports as the programme's own prior usage, not independent evidence.",
   "passage_mechanical": "verbatim prefix found in fetched open text"
  },
  "date": "2026-09-04"

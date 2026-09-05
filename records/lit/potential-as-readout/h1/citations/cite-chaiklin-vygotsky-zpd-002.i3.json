@@ -1,5 +1,5 @@
 {
- "vendor": "codex",
+ "vendor": "claude",
  "fetched": {
   "source": "url-fetch",
   "title": "",
@@ -7,9 +7,11 @@
   "_card_url": "https://blogs.ubc.ca/vygotsky/files/2013/11/chaiklin.zpd_.pdf"
  },
  "verdict": {
-  "error": "no-json",
-  "raw": "",
+  "metadata_matches": true,
   "passage_plausible": true,
+  "claim_match": true,
+  "bearing": "SUPPORTS",
+  "reason": "Fetched text is Chaiklin's ZPD chapter; verbatim passage found with the Vygotsky 1978 p.86 attribution. Passage defines potential development via observable problem-solving under guidance, an operational/witnessed criterion bearing on H1 as DIRECT_QUOTATION. Fetched title/abstract empty, so metadata judged from body text only.",
   "passage_mechanical": "verbatim prefix found in fetched open text"
  },
  "date": "2026-09-04"

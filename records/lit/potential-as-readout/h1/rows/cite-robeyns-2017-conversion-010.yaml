@@ -1,0 +1,27 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: H1
+source_label: Robeyns 2017 (conversion factors, para. 50)
+how_it_sees_the_problem: Frames capabilities as "a person's real freedoms or opportunities
+  to achieve functionings," conditioned by conversion factors (a person's ability
+  to turn a resource into a functioning).
+what_it_separates: Separates the resource a person has from the functioning they can
+  achieve with it, via conversion factors as the mediating variable -- but does not
+  further separate a WITNESSED subset of that opportunity set from the full declared
+  set.
+what_it_assumes: Assumes "real freedoms" is a meaningful category independent of whether
+  the freedom has ever been exercised or demonstrated; conversion factors are themselves
+  often estimated/modeled rather than directly witnessed in applied capability research.
+stance: UNDETERMINED
+defeater_class: constitutive
+legitimate_defeater: A passage where Robeyns explicitly requires evidence of actual
+  achievement or demonstration (not mere availability) before counting something as
+  part of a person's capability set would defeat this row's CHALLENGES reading.
+what_it_would_say_against_us: Robeyns could reply that "real" (as opposed to merely
+  "formal" or "nominal") freedoms already builds in an implicit witnessing requirement
+  -- a capability approach theorist standardly insists a capability must be REALISTICALLY
+  exercisable, not merely legally permitted, which is closer to H1's "witnessed" framing
+  than a literal reading of "opportunity" alone suggests.
+citation_card: cite-robeyns-2017-conversion-010
+verified:
+  metadata_verified: true
+  claim_match_verified: true

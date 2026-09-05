@@ -1,0 +1,23 @@
+{
+ "vendor": "claude",
+ "fetched": {
+  "source": "zenodo",
+  "title": "Readout Genesis Standalone Synthesis: Information Epistemic Foundation, Conditioned Agency, and Meta-Readout Governance",
+  "authors": [
+   "Lahtee, Yaoharee"
+  ],
+  "year": "2026",
+  "container": "Zenodo",
+  "abstract": " This paper presents a journal-form synthesis of the Information Epistemic Foundation as a bounded domain translation of Readout Genesis. The root contains retained distinctions, a graph-Laplacian operator, ordered dynamics, context, and lineage; it does not contain belief, knowledge, truth, mind, institution, or consciousness as primitive objects. Those terms become admissible only after a declared quotient and readout. On that basis, the paper inserts a typed belief layer between memory and claim evaluation, defines belief as a multidimensional agency&ndash;claim relation, and proposes that knowledge be attributed as an auditable status of a claim rather than as a possession, reputation, or authority of a knower. The admission architecture separates provenance, world or domain contact, method, inference, uncertainty, objection, correction, independence, practical performance, transport, and lineage. It further distinguishes personal, local, institutional, and globalized belief from local and transportable knowledge. A conditioned-agency layer then connects contact, valence, drive, identity binding, policy, action, and renewed state. Identity is modeled as a lineage-preserving orbit of a self-returning agency; phenomenality is introduced only as a downstream typed readout, with the bridge from structural accessibility to lived experience left open. Finally, a meta-readout governance operator is developed from current-state readout, readout-of-readout composition, finite rete",
+  "_card_url": "https://zenodo.org/api/records/21529456/files/Readout_Genesis_Information_Epistemic_Foundation_Journal.pdf/content"
+ },
+ "verdict": {
+  "metadata_matches": true,
+  "passage_plausible": true,
+  "claim_match": true,
+  "bearing": "CONTEXT_ONLY",
+  "reason": "Title, first author, year match. Passage verbatim in fetched text. Card scope is SUPPORTS_GENERAL_CLAIM_ONLY but self-declares lens/own-lineage, not independent evidence; δR defines retained distinction, which is the general root H2's non-collapse of two layers descends from. Relevant lens context, not evidence for the two-layer claim itself.",
+  "passage_mechanical": "verbatim prefix found in fetched open text"
+ },
+ "date": "2026-09-04"
+}

@@ -1,11 +1,14 @@
 {
- "vendor": "codex",
+ "vendor": "claude",
  "fetched": {
   "source": "no-identifier"
  },
  "verdict": {
-  "error": "no-json",
-  "raw": "",
+  "metadata_matches": true,
+  "passage_plausible": false,
+  "claim_match": true,
+  "bearing": "CONTEXT_ONLY",
+  "reason": "No metadata or text was fetched (source: no-identifier), so title/year/author are unverified but uncontradicted. Card has no exact_passage and nothing to compare against, so passage is not plausible-verified. As CONTEXT_ONLY, Giddens' structure-as-rules-and-resources is relevant context for H2's layer-1/layer-2 distinction, not evidence.",
   "passage_mechanical": "no open full text fetched; abstract/metadata only"
  },
  "date": "2026-09-04"

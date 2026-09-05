@@ -1,0 +1,16 @@
+{
+ "vendor": "claude",
+ "fetched": {
+  "source": "no-identifier",
+  "_card_url": "https://asuevents.asu.edu/sites/g/files/litvpz3506/files/2024-06/Creating_Capabilities_The_Human_Development_Approa..._----_(2._The_Central_Capabilities_).pdf"
+ },
+ "verdict": {
+  "metadata_matches": true,
+  "passage_plausible": true,
+  "claim_match": true,
+  "bearing": "CHALLENGES",
+  "reason": "Fetched text is Nussbaum 2011 Creating Capabilities p.20; the quoted Sen formulation appears verbatim. Passage defines capability as functionings 'feasible for her to achieve' with no record/witness requirement, so it supports the card's stated challenge to H1's witnessed-set definition. Mechanical checks agree.",
+  "passage_mechanical": "verbatim prefix found in fetched open text"
+ },
+ "date": "2026-09-04"
+}

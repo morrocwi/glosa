@@ -12,8 +12,8 @@ metadata_verified_by: 'manual: WebFetch of books.openedition.org/obp/4862, confi
   Freedom and Social Justice: The Capability Approach Re-Examined, Cambridge, Open
   Book Publishers (CC BY 4.0 open access)'
 metadata_verified_at: '2026-09-05'
-claim_match_verified: false
-claim_match_verified_by: null
+claim_match_verified: true
+claim_match_verified_by: route:claude
 claim_match_verified_at: '2026-09-05'
 exact_passage: To govern, in this sense, is to structure the possible field of action
   of others.
@@ -22,16 +22,25 @@ page_or_locator: Foucault 1982, "The Subject and Power", Critical Inquiry 8(4); 
 scope: DIRECT_QUOTATION
 evidence_tier: definition
 independence_class: I1
-who_verified: AI assistant, same session (I1) -- mechanical verbatim extraction from
-  the fetched copy; I3 route pending (codex quota)
+who_verified: 'route:claude (I1 route: same model, fresh headless session (no shared
+  context); abstract/metadata level, not full text) -- see cite-foucault-1982-008.i3.json'
 verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
-status: METADATA_OK
+status: VERIFIED
 xenon_ledger_ref: null
-disclosure: Same-session AI check only (I1); metadata via Crossref DOI; I3 route pending.
+disclosure: 'Same-session AI check only (I1); metadata via Crossref DOI; I3 route
+  pending. | I2 route (claude) judged from fetched metadata/abstract + the card''s
+  quoted passage, not full text: Fetched text verbatim confirms quoted passage; source
+  defines power as structuring the field of possible action, distinct from permission/legitimacy
+  — matches card''s DIRECT_QUOTATION scope and its stated stance on feasible-set !=
+  permitted-set. | I1 route (claude) judged from fetched metadata/abstract + the card''s
+  quoted passage, not full text: Crossref title, year, first author match the card;
+  quoted passage found verbatim in the fetched text. Passage defines governing/power
+  as structuring the field of possible action, so it bears on D5 (feasible vs permitted)
+  as context, but does not itself support or oppose H1''s witnessed-set definition.'
 superseded_by: null
 notes: 'Bears on D5 (feasible != permitted): power defined as structuring the field
   of possible action; stance: agrees that the feasible set must not be defined by
   the permitting authority. language: en.'
 fetched_from_url: https://www2.kobe-u.ac.jp/~alexroni/IPD2018%20readings/IPD1%202018%20No.8/Foucault%20Subject%20and%20Power.pdf
-line_or_paragraph: copy p. 15, paragraph beginning "To govern, in this sense"; verbatim
-  (pdftotext)
+line_or_paragraph: char offset 38684 of normalized fetched text (~paragraph 1); verbatim
+  prefix match

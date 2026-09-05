@@ -12,11 +12,8 @@ metadata_verified_by: 'manual: Vygotsky, L.S. (1978) Mind in Society: The Develo
   cross-checked against Chaiklin (2003) p.2, which cites the identical page number
   for the identical wording.'
 metadata_verified_at: '2026-09-05'
-claim_match_verified: true
-claim_match_verified_by: this session (manual read/verification; the route:codex
-    I3 cross-vendor attempt below FAILED with a usage-limit error, not a content
-    judgment -- reverted to the prior manual verification rather than leaving a
-    false false-verdict on record)
+claim_match_verified: false
+claim_match_verified_by: route:claude
 claim_match_verified_at: '2026-09-05'
 exact_passage: '"the distance between the actual developmental level as determined
   by independent problem solving and the level of potential development as determined
@@ -26,8 +23,8 @@ page_or_locator: p. 86, Chapter 6
 scope: DIRECT_QUOTATION
 evidence_tier: definition
 independence_class: I1
-who_verified: this session (manual verification; I3 cross-vendor attempt failed,
-  see disclosure)
+who_verified: 'route:claude (I1 route: same model, fresh headless session (no shared
+  context); abstract/metadata level, not full text) -- see cite-vygotsky-1978-mindinsociety-003.i3.json'
 verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
 status: METADATA_OK
 xenon_ledger_ref: null
@@ -42,12 +39,16 @@ disclosure: 'HONEST DISCLOSURE: this session did NOT independently fetch/open Mi
   primary fetch and read together with cite-chaiklin-vygotsky-zpd-002 rather than
   as free-standing independent confirmation. Directly supports H1: ZPD defines "potential
   development" via a WITNESSED, assisted-performance procedure, not an open declaration.
-  | I3 CROSS-VENDOR ATTEMPT FAILED (codex CLI returned "ERROR: You''ve hit your
-  usage limit" -- no content judgment was made; this is an environmental/quota
-  blocker in this session, not a finding about the card). independence_class and
-  claim_match_verified reverted to the prior self-verified (I1) state above rather
-  than recording a spurious I3 result. A genuine cross-vendor pass should be re-run
-  once codex/gemini access is available.'
+  | I3 CROSS-VENDOR ATTEMPT FAILED (codex CLI returned "ERROR: You''ve hit your usage
+  limit" -- no content judgment was made; this is an environmental/quota blocker in
+  this session, not a finding about the card). independence_class and claim_match_verified
+  reverted to the prior self-verified (I1) state above rather than recording a spurious
+  I3 result. A genuine cross-vendor pass should be re-run once codex/gemini access
+  is available. | I1 route (claude) judged from fetched metadata/abstract + the card''s
+  quoted passage, not full text: No metadata fetched (source: no-identifier) and no
+  text to compare; the card itself discloses the source was not opened. Cannot verify
+  title/year/author, passage, or bearing from the material provided; defaulting to
+  false per rules.'
 superseded_by: null
 notes: Kept as a separate card (rather than folding into the Chaiklin card) because
   the task brief explicitly asked for Vygotsky 1978 itself to be carded for the ZPD

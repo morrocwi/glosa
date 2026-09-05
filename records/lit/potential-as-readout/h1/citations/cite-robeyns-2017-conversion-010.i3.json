@@ -10,8 +10,8 @@
   "metadata_matches": true,
   "passage_plausible": true,
   "claim_match": true,
-  "bearing": "CONTEXT_ONLY",
-  "reason": "Fetched title matches Robeyns Ch.2 'Core Ideas and the Framework'; verbatim search found the passage in paragraph 39 context. The passage defines capabilities as freedoms/opportunities (the 'could have' potential H1 contrasts with a witnessed set), so it is relevant background, not evidence for or against the witnessed-set definition.",
+  "bearing": "CHALLENGES",
+  "reason": "Fetched title matches Robeyns 2017 Ch.2; the exact passage is found verbatim (para 50). The passage defines conversion factors as person-relative capacity to transform resources into functionings — a potential/ability construct, not a witnessed record — so it bears on H1's definitional claim as a contrast, matching the card's stated challenge-on-definition stance.",
   "passage_mechanical": "verbatim prefix found in fetched open text"
  },
  "date": "2026-09-04"

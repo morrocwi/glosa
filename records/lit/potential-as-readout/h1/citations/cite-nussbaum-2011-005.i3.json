@@ -1,12 +1,15 @@
 {
- "vendor": "codex",
+ "vendor": "claude",
  "fetched": {
   "source": "no-identifier",
   "_card_url": "https://asuevents.asu.edu/sites/g/files/litvpz3506/files/2024-06/Creating_Capabilities_The_Human_Development_Approa..._----_(2._The_Central_Capabilities_).pdf"
  },
  "verdict": {
-  "error": "no-json",
-  "raw": "",
+  "metadata_matches": true,
+  "passage_plausible": true,
+  "claim_match": true,
+  "bearing": "CHALLENGES",
+  "reason": "Fetched text confirms Nussbaum, Creating Capabilities, HUP 2011, Ch.2 'The Central Capabilities' starting p.17. Verbatim search failed only because the excerpt stops at p.17 and the passage is on p.18; wording fits context. Passage defines capabilities as what persons are 'able to do and to be', an opportunity notion, not a witnessed record set, so it bears against H1's definition.",
   "passage_mechanical": "quoted passage NOT found verbatim in fetched open text"
  },
  "date": "2026-09-04"

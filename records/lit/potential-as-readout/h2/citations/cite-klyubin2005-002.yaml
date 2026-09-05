@@ -9,8 +9,8 @@ fetched_at: '2026-09-05'
 metadata_verified: true
 metadata_verified_by: mechanical:direct_fetch
 metadata_verified_at: '2026-09-05'
-claim_match_verified: false
-claim_match_verified_by: null
+claim_match_verified: true
+claim_match_verified_by: route:claude
 claim_match_verified_at: null
 exact_passage: We can now define empowerment as the channel capacity of the agent's
   actuation channel terminating at the sensor (see Eq. 1 and Eq. 2)
@@ -19,13 +19,19 @@ page_or_locator: Klyubin, Polani & Nehaniv 2005, author repository copy p. 3, se
 scope: DIRECT_QUOTATION
 evidence_tier: Dr
 independence_class: I1
-who_verified: AI assistant, same session (I1) -- mechanical verbatim extraction from
-  the fetched copy; I3 route pending (codex quota)
+who_verified: 'route:claude (I1 route: same model, fresh headless session (no shared
+  context); abstract/metadata level, not full text) -- see cite-klyubin2005-002.i3.json'
 verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
-status: METADATA_OK
+status: VERIFIED
 xenon_ledger_ref: null
-disclosure: Same-session AI check only (I1); second passage from the same fetched
-  copy as cite-klyubin2005-001; I3 route pending.
+disclosure: 'Same-session AI check only (I1); second passage from the same fetched
+  copy as cite-klyubin2005-001; I3 route pending. | I1 route (claude) judged from
+  fetched metadata/abstract + the card''s quoted passage, not full text: Crossref
+  title/first author (Klyubin) match; year missing but container says 2005, no contradiction.
+  Passage found verbatim in fetched text. The definition of empowerment as channel
+  capacity of the current actuation channel, given the system''s existing dynamics,
+  evidences a within-structure (layer-1) quantity as the card claims, supporting H2''s
+  two-layer distinction.'
 superseded_by: null
 notes: 'Local copy already fetched and stored by an earlier session under paper/sources/
   (task brief named this file directly); read directly for this card, not from memory.
@@ -33,5 +39,5 @@ notes: 'Local copy already fetched and stored by an earlier session under paper/
   coupling, i.e. how much control a system has GIVEN its existing sensorimotor structure
   -- a within-structure quantity, not a structure-change quantity.'
 fetched_from_url: https://uhra.herts.ac.uk/id/eprint/282/1/901241.pdf
-line_or_paragraph: p. 3, sentence immediately preceding the "measured in bits" sentence;
-  verbatim (pdftotext)
+line_or_paragraph: char offset 14230 of normalized fetched text (~paragraph 1); verbatim
+  prefix match

@@ -1,0 +1,46 @@
+$schema: citation_card.schema.json
+id: cite-nussbaum-2011-sen-quote-009
+claim_ref: H1
+identifier:
+  kind: ISBN
+  value: '9780674050549'
+fetch_status: FETCHED
+fetched_at: '2026-09-05'
+metadata_verified: true
+metadata_verified_by: 'manual: PDF page images read directly (Read tool) confirm header
+  "CREATING CAPABILITIES", chapter title "THE CENTRAL CAPABILITIES", footer "Nussbaum,
+  Martha C.. Creating Capabilities : The Human Development Approach, Harvard University
+  Press, 2011. ProQuest Ebook Central", pages 17-20'
+metadata_verified_at: '2026-09-05'
+claim_match_verified: true
+claim_match_verified_by: route:claude
+claim_match_verified_at: '2026-09-05'
+exact_passage: 'In one standard formulation by Sen, “a person’s ‘capability’ refers
+  to the alternative combinations of functionings that are feasible for her to achieve.
+  Capability is thus a kind of freedom: the substantive freedom to achieve alternative
+  functioning combinations.'
+page_or_locator: Nussbaum 2011, Creating Capabilities, Ch. 2, p. 20 (excerpt PDF page
+  4) -- Nussbaum quoting Sen 1999; the Sen primary was not opened
+scope: DIRECT_QUOTATION
+evidence_tier: definition
+independence_class: I1
+who_verified: 'route:claude (I1 route: same model, fresh headless session (no shared
+  context); abstract/metadata level, not full text) -- see cite-nussbaum-2011-sen-quote-009.i3.json'
+verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
+status: VERIFIED
+xenon_ledger_ref: null
+disclosure: 'Same-session AI check only (I1) pending the headless-route check. This
+  card records NUSSBAUM quoting Sen; it is not a card on Sen 1999 itself (that primary
+  was not opened; its record-only card is parked). | I1 route (claude) judged from
+  fetched metadata/abstract + the card''s quoted passage, not full text: Fetched text
+  is Nussbaum 2011 Creating Capabilities p.20; the quoted Sen formulation appears
+  verbatim. Passage defines capability as functionings ''feasible for her to achieve''
+  with no record/witness requirement, so it supports the card''s stated challenge
+  to H1''s witnessed-set definition. Mechanical checks agree.'
+superseded_by: null
+notes: 'CHALLENGE to H1: "feasible for her to achieve" is analyst-declared feasibility,
+  not a witnessed set; carded via Nussbaum so the passage is mechanically checkable.
+  language: en.'
+fetched_from_url: https://asuevents.asu.edu/sites/g/files/litvpz3506/files/2024-06/Creating_Capabilities_The_Human_Development_Approa..._----_(2._The_Central_Capabilities_).pdf
+line_or_paragraph: char offset 7780 of normalized fetched text (~paragraph 1); verbatim
+  prefix match

@@ -9,8 +9,8 @@ fetched_at: '2026-09-05'
 metadata_verified: true
 metadata_verified_by: mechanical:direct_fetch
 metadata_verified_at: '2026-09-05'
-claim_match_verified: false
-claim_match_verified_by: null
+claim_match_verified: true
+claim_match_verified_by: route:claude
 claim_match_verified_at: null
 exact_passage: Personal agency operates within a broad network of sociostructural
   influences. In these agentic transactions, people are producers as well as products
@@ -19,13 +19,19 @@ page_or_locator: Abstract (Annual Review of Psychology, 2001, Vol.52)
 scope: DIRECT_QUOTATION
 evidence_tier: Dr
 independence_class: I1
-who_verified: AI assistant, same session (I1); I3 route pending (codex quota)
+who_verified: 'route:claude (I1 route: same model, fresh headless session (no shared
+  context); abstract/metadata level, not full text) -- see cite-bandura2001-agentic-001.i3.json'
 verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
-status: METADATA_OK
+status: VERIFIED
 xenon_ledger_ref: null
 disclosure: 'Same-session AI check only (I1) -- not yet independently verified; run
   lit_crossvendor_check.py for I3. | I3 route (codex) judged from fetched metadata/abstract
-  + the card''s quoted passage, not full text: '
+  + the card''s quoted passage, not full text:  | I1 route (claude) judged from fetched
+  metadata/abstract + the card''s quoted passage, not full text: Crossref title, author
+  Bandura, year 2001 match card. Exact passage found verbatim in fetched abstract.
+  Abstract''s ''producers as well as products of social systems'' and three agency
+  modes (direct/proxy/collective) bear on H2''s two-layer distinction; abstract-level
+  only, as card discloses.'
 superseded_by: null
 notes: 'Fetched via Crossref API this session (abstract field present in the metadata
   record; full text not fetched, so this card is abstract-level only despite fetch_status

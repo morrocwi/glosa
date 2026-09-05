@@ -1,5 +1,5 @@
 $schema: citation_card.schema.json
-id: cite-robeyns-2017-004
+id: cite-robeyns-2017-conversion-010
 claim_ref: H1
 identifier:
   kind: OFFICIAL_URL
@@ -15,15 +15,15 @@ metadata_verified_at: '2026-09-05'
 claim_match_verified: true
 claim_match_verified_by: route:claude
 claim_match_verified_at: '2026-09-05'
-exact_passage: Capabilities are a person’s real freedoms or opportunities to achieve
-  functionings.
-page_or_locator: Robeyns 2017, Ch. 2 "Core Ideas and the Framework", paragraph 39
+exact_passage: 'These are called conversion factors: the factors which determine the
+  degree to which a person can transform a resource into a functioning.'
+page_or_locator: Robeyns 2017, Ch. 2 "Core Ideas and the Framework", paragraph 50
   (OpenEdition numbering)
 scope: DIRECT_QUOTATION
 evidence_tier: definition
 independence_class: I1
 who_verified: 'route:claude (I1 route: same model, fresh headless session (no shared
-  context); abstract/metadata level, not full text) -- see cite-robeyns-2017-004.i3.json'
+  context); abstract/metadata level, not full text) -- see cite-robeyns-2017-conversion-010.i3.json'
 verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
 status: VERIFIED
 xenon_ledger_ref: null
@@ -51,17 +51,13 @@ disclosure: 'Retrieved via WebFetch (HTML-to-markdown conversion + extraction pr
   definitions were not found verbatim, so the passage cannot be verified from this
   material. Unverified, so claim_match=false. | I1 route (claude) judged from fetched
   metadata/abstract + the card''s quoted passage, not full text: Fetched title matches
-  Robeyns Ch.2 ''Core Ideas and the Framework''; verbatim search found the passage
-  in paragraph 39 context. The passage defines capabilities as freedoms/opportunities
-  (the ''could have'' potential H1 contrasts with a witnessed set), so it is relevant
-  background, not evidence for or against the witnessed-set definition.'
+  Robeyns 2017 Ch.2; the exact passage is found verbatim (para 50). The passage defines
+  conversion factors as person-relative capacity to transform resources into functionings
+  — a potential/ability construct, not a witnessed record — so it bears on H1''s definitional
+  claim as a contrast, matching the card''s stated challenge-on-definition stance.'
 superseded_by: null
-notes: 'Open Book Publishers direct page (openbookpublishers.com) returned HTTP 429
-  (rate-limited) on two attempts; the OAPEN and hd-ca.org PDF mirrors returned connection
-  errors/403; the OpenEdition Books HTML mirror of the same CC-BY text succeeded and
-  is used here instead, with the weaker-verification disclosure above. | 2026-09-05:
-  the live OpenEdition page began returning a bot challenge; the Wayback Machine snapshot
-  of the same chapter is used for the mechanical passage match.'
+notes: 'Conversion factors as the mechanism the witness rule records; stance: agrees
+  on mechanism, challenges on definition. language: en.'
 fetched_from_url: https://web.archive.org/web/2025id_/https://books.openedition.org/obp/4862
-line_or_paragraph: char offset 38298 of normalized fetched text (~paragraph 1); verbatim
+line_or_paragraph: char offset 51361 of normalized fetched text (~paragraph 1); verbatim
   prefix match

@@ -1,5 +1,5 @@
 {
- "vendor": "codex",
+ "vendor": "claude",
  "fetched": {
   "source": "zenodo",
   "title": "Causal Agency  A Persistence Control Theory of Adaptive Systems",
@@ -12,9 +12,11 @@
   "_card_url": "https://zenodo.org/api/records/18897585/files/Causal%20Agency_A%20Persistence%20Control%20Theory%20of%20Adaptive.pdf/content"
  },
  "verdict": {
-  "error": "no-json",
-  "raw": "",
+  "metadata_matches": true,
   "passage_plausible": true,
+  "claim_match": true,
+  "bearing": "SUPPORTS",
+  "reason": "Title, first author, and year match the card. Passage found verbatim in fetched text at §6.6 Proto-Agency, consistent with abstract. Source explicitly names layer-1-only stabilisation as proto-agency distinct from constraint-modifying agency, matching H2's two-layer claim. Self-citation disclosed on card.",
   "passage_mechanical": "verbatim prefix found in fetched open text"
  },
  "date": "2026-09-04"

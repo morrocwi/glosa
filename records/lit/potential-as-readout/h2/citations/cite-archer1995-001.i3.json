@@ -1,11 +1,14 @@
 {
- "vendor": "codex",
+ "vendor": "claude",
  "fetched": {
   "source": "no-identifier"
  },
  "verdict": {
-  "error": "no-json",
-  "raw": "",
+  "metadata_matches": false,
+  "passage_plausible": false,
+  "claim_match": false,
+  "bearing": "CONTEXT_ONLY",
+  "reason": "No metadata fetched (no-identifier) and no open text, so title/year/author cannot be confirmed; exact_passage is empty, nothing to compare. Card's own note (morphogenesis vs morphostasis as structural change vs reproduction) is topically adjacent to H2's layer-1/layer-2 split but unevidenced here; uncertain, so false.",
   "passage_mechanical": "no open full text fetched; abstract/metadata only"
  },
  "date": "2026-09-04"

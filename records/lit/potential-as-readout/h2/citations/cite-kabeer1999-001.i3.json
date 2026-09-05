@@ -1,5 +1,5 @@
 {
- "vendor": "codex",
+ "vendor": "claude",
  "fetched": {
   "source": "crossref",
   "title": "Resources, Agency, Achievements: Reflections on the Measurement of Women's Empowerment",
@@ -12,9 +12,11 @@
   "_card_url": "https://api.crossref.org/works/10.1111/1467-7660.00125"
  },
  "verdict": {
-  "error": "no-json",
-  "raw": "",
+  "metadata_matches": true,
   "passage_plausible": true,
+  "claim_match": true,
+  "bearing": "SUPPORTS",
+  "reason": "Crossref title/year/first author match card; quoted passage found verbatim in abstract. Abstract distinguishes acquiring the ability to make strategic choices (structural/capacity change) from exercising choice, and adds 'structural parameters of individual choice' and 'negotiation' as agency — parallels H2's layer-1/layer-2 split, though abstract-level only.",
   "passage_mechanical": "verbatim prefix found in fetched open text"
  },
  "date": "2026-09-04"

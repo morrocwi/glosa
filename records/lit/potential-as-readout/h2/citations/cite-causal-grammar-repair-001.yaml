@@ -9,8 +9,8 @@ fetched_at: '2026-09-05'
 metadata_verified: true
 metadata_verified_by: mechanical:direct_fetch
 metadata_verified_at: '2026-09-05'
-claim_match_verified: false
-claim_match_verified_by: null
+claim_match_verified: true
+claim_match_verified_by: route:claude
 claim_match_verified_at: null
 exact_passage: Repair refers to the protected reopening of damaged relations under
   conditions that prevent renewed possibility compression.
@@ -18,13 +18,19 @@ page_or_locator: p.3-4 (§5 Repair as Protected Reopening, opening definition)
 scope: DIRECT_QUOTATION
 evidence_tier: definition
 independence_class: I1
-who_verified: AI assistant, same session (I1); I3 route pending (codex quota)
+who_verified: 'route:claude (I1 route: same model, fresh headless session (no shared
+  context); abstract/metadata level, not full text) -- see cite-causal-grammar-repair-001.i3.json'
 verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
-status: METADATA_OK
+status: VERIFIED
 xenon_ledger_ref: null
 disclosure: 'Same-session AI check only (I1) -- not yet independently verified; run
   lit_crossvendor_check.py for I3. | I3 route (codex) judged from fetched metadata/abstract
-  + the card''s quoted passage, not full text: '
+  + the card''s quoted passage, not full text:  | I1 route (claude) judged from fetched
+  metadata/abstract + the card''s quoted passage, not full text: Title, first author,
+  year, and DOI match Zenodo metadata. Exact passage found verbatim in fetched text
+  (§5). Source defines repair as reopening the possibility-space structure, distinct
+  from choosing within it, matching H2''s layer-2 claim. Self-citation disclosed;
+  supports as the programme''s own prior usage, not independent evidence.'
 superseded_by: null
 notes: 'Programme''s own prior work (self-citation, disclosed). This is H2''s LAYER-2
   mechanism named on the social/structural side: repair acts on the possibility-space

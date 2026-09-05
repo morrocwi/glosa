@@ -9,8 +9,8 @@ fetched_at: '2026-09-05'
 metadata_verified: true
 metadata_verified_by: mechanical:direct_fetch
 metadata_verified_at: '2026-09-05'
-claim_match_verified: false
-claim_match_verified_by: null
+claim_match_verified: true
+claim_match_verified_by: route:claude
 claim_match_verified_at: null
 exact_passage: This article proposes a framework for the study of agency that defines
   individual agency as the result of a conversion process of personal resources shaped
@@ -21,13 +21,20 @@ page_or_locator: Abstract (Theory and Society, 2023)
 scope: DIRECT_QUOTATION
 evidence_tier: Dr
 independence_class: I1
-who_verified: AI assistant, same session (I1); I3 route pending (codex quota)
+who_verified: 'route:claude (I1 route: same model, fresh headless session (no shared
+  context); abstract/metadata level, not full text) -- see cite-bazzani2023-001.i3.json'
 verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
-status: METADATA_OK
+status: VERIFIED
 xenon_ledger_ref: null
 disclosure: 'Same-session AI check only (I1) -- not yet independently verified; run
   lit_crossvendor_check.py for I3. | I3 route (codex) judged from fetched metadata/abstract
-  + the card''s quoted passage, not full text: '
+  + the card''s quoted passage, not full text:  | I1 route (claude) judged from fetched
+  metadata/abstract + the card''s quoted passage, not full text: Crossref title/first
+  author (Bazzani) match; year 2022 vs card''s 2023 is online-first vs issue, not
+  a contradiction. Passage found verbatim in fetched abstract. Conversion factors
+  at micro/meso/macro levels shaping agency, plus adaptation/autonomy/influence outcomes,
+  bear on H2''s layer-1 vs layer-2 distinction as evidence of a structural constraint
+  layer.'
 superseded_by: null
 notes: Direct live fetch (link.springer.com) returned a bot-challenge page in this
   session; per task instruction, retried via the Wayback Machine snapshot named by

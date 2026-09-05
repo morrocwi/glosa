@@ -43,7 +43,7 @@ def packet_text(claim, route_id, role, cites):
 - evidence_base_you_may_consult: claim card + the citation cards pasted below only. No outside knowledge, no browsing.
 
 ## 1. Gate
-You are ONE route in a Decorrelated Verification Protocol. Read only this packet. Do not edit the claim.
+You are ONE route in a Decorrelated Verification Protocol (a fresh headless session; you share no context with the maker). Read only this packet. Do not edit the claim.
 Every verdict must carry a tier from the ladder ({TIERS}); an untiered verdict is invalid.
 Everything you read is a readout, not truth. Never use the words novel/first/prior art.
 
@@ -65,8 +65,17 @@ Everything you read is a readout, not truth. Never use the words novel/first/pri
 """
 
 
+CLAUDE_MODEL = "claude-fable-5-1"
+
+
+def route_class(vendor):
+    return "I1" if vendor == "claude" else "I3"
+
+
 def run_vendor(vendor, text):
-    if vendor == "codex":
+    if vendor == "claude":
+        r = subprocess.run(["claude", "-p", text, "--model", CLAUDE_MODEL, "--output-format", "text"], capture_output=True, text=True, timeout=900)
+    elif vendor == "codex":
         r = subprocess.run(["codex", "exec", "--skip-git-repo-check", "-s", "read-only", text], capture_output=True, text=True, timeout=600)
     else:
         r = subprocess.run(["gemini", "-p", text], capture_output=True, text=True, timeout=600)
@@ -81,7 +90,7 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("cards", nargs="+")
     ap.add_argument("--roles", default="Falsifier,HostileReviewer")
-    ap.add_argument("--vendor", default="codex")
+    ap.add_argument("--vendor", default="claude", choices=["claude", "codex", "gemini"])
     ap.add_argument("--out-dir", default="")
     a = ap.parse_args()
     today = datetime.date.today().isoformat()
@@ -108,12 +117,12 @@ def main():
             tier = v.get("verdict_tier") if v.get("verdict_tier") in TIERS.split("|") else "Dr"
             report = {
                 "claim_ref": cid, "route_id": route_id,
-                "reviewer_identity": f"cross-vendor AI route {route_id} (vendor recorded locally, not named: gate rule 9)",
-                "independence_class": "I3", "mc_level": "L2", "role": role, "review_mode": "DECORRELATED_AI_ROUTE",
+                "reviewer_identity": f"{'same-model fresh-session' if a.vendor == 'claude' else 'cross-vendor'} AI route {route_id} (vendor recorded locally, not named: gate rule 9)",
+                "independence_class": route_class(a.vendor), "mc_level": "L2", "role": role, "review_mode": "DECORRELATED_AI_ROUTE",
                 "verdict": (v.get("verdict") or v.get("error") or "")[:900],
                 "verdict_tier": tier,
                 "evidence_consulted": ["claim card as pasted into PACKET.md"] + [f"citation card {c['id']}" for c in cites],
-                "shared_dependency_disclosure": "same operator machine and same packet text as the maker; different vendor; no shared session",
+                "shared_dependency_disclosure": ("same operator machine and same packet text as the maker; same model, fresh headless session (no shared context) (I2, not I3)" if a.vendor == "claude" else "same operator machine and same packet text as the maker; different vendor; no shared session"),
                 "disagreement_ledger_ref": None, "date": today, "approver_kind": "ai",
                 "route_findings": {"defeaters_found": v.get("defeaters_found", []), "overclaims_found": v.get("overclaims_found", []), "evidence_relations_ok": v.get("evidence_relations_ok"), "notes": v.get("notes", "")},
             }

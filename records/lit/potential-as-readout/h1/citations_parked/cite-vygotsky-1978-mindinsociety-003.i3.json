@@ -1,0 +1,15 @@
+{
+ "vendor": "claude",
+ "fetched": {
+  "source": "no-identifier"
+ },
+ "verdict": {
+  "metadata_matches": false,
+  "passage_plausible": false,
+  "claim_match": false,
+  "bearing": "CONTEXT_ONLY",
+  "reason": "No metadata fetched (source: no-identifier) and no text to compare; the card itself discloses the source was not opened. Cannot verify title/year/author, passage, or bearing from the material provided; defaulting to false per rules.",
+  "passage_mechanical": "no open full text fetched; abstract/metadata only"
+ },
+ "date": "2026-09-04"
+}

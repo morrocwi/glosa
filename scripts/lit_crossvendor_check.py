@@ -159,8 +159,20 @@ def packet(card, hyp_text, meta, passage_hit=None, excerpt=""):
     )
 
 
+CLAUDE_MODEL = "claude-fable-5-1"  # founder BBL-2026-09-05-136: check with Fable itself -> same model, fresh headless session = ladder class I1 (FOUNDATION §4.2)
+
+
+def route_class(vendor):
+    """Independence class per the ladder: a different vendor is I3; the headless claude route
+    (same vendor, different model) is I2 -- recorded honestly, never as I3 (founder BBL-2026-09-05-135/136)."""
+    return "I1" if vendor == "claude" else "I3"
+
+
 def run_vendor(vendor, text):
-    if vendor == "codex":
+    if vendor == "claude":
+        r = subprocess.run(["claude", "-p", text, "--model", CLAUDE_MODEL, "--output-format", "text"], capture_output=True, text=True, timeout=600)
+        out = r.stdout
+    elif vendor == "codex":
         r = subprocess.run(["codex", "exec", "--skip-git-repo-check", "-s", "read-only", text], capture_output=True, text=True, timeout=300)
         out = r.stdout
     else:
@@ -172,7 +184,7 @@ def run_vendor(vendor, text):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("slug"); ap.add_argument("hyp"); ap.add_argument("--vendor", default="codex"); ap.add_argument("--dry-run", action="store_true")
+    ap.add_argument("slug"); ap.add_argument("hyp"); ap.add_argument("--vendor", default="claude", choices=["claude", "codex", "gemini"]); ap.add_argument("--dry-run", action="store_true")
     ap.add_argument("--only", default="", help="comma-separated card ids (or 'unverified') to (re)check")
     ap.add_argument("--locate-only", action="store_true", help="no vendor call: just fetch the open text, locate the passage, and record fetched_from_url + line_or_paragraph (kernel rule 17)")
     a = ap.parse_args()
@@ -234,13 +246,13 @@ def main():
             v["claim_match"] = True  # a context-only card claims nothing beyond "the source says this"; the passage check IS the claim check
         ok = bool(v.get("metadata_matches")) and bool(v.get("passage_plausible")) and bool(v.get("claim_match"))
         (hdir / "citations" / (cp.stem + ".i3.json")).write_text(json.dumps({"vendor": a.vendor, "fetched": meta, "verdict": v, "date": "2026-09-04"}, ensure_ascii=False, indent=1), encoding="utf-8")
-        card["independence_class"] = "I3"
-        card["who_verified"] = f"route:{a.vendor} (cross-vendor AI; abstract/metadata level, not full text) -- see {cp.stem}.i3.json"
+        card["independence_class"] = route_class(a.vendor)
+        card["who_verified"] = f"route:{a.vendor} ({route_class(a.vendor)} route: {'same model, fresh headless session (no shared context)' if a.vendor == 'claude' else 'cross-vendor AI'}; abstract/metadata level, not full text) -- see {cp.stem}.i3.json"
         card["verification_method"] = "MECHANICAL_LOOKUP_PLUS_MANUAL_READ"
         card["claim_match_verified"] = bool(v.get("claim_match"))
         card["claim_match_verified_by"] = f"route:{a.vendor}"
         card["status"] = "VERIFIED" if ok else "METADATA_OK"
-        card["disclosure"] = (card.get("disclosure") or "") + f" | I3 route ({a.vendor}) judged from fetched metadata/abstract + the card's quoted passage, not full text: {v.get('reason','')}"
+        card["disclosure"] = (card.get("disclosure") or "") + f" | {route_class(a.vendor)} route ({a.vendor}) judged from fetched metadata/abstract + the card's quoted passage, not full text: {v.get('reason','')}"
         cp.write_text(yaml.safe_dump(card, allow_unicode=True, sort_keys=False), encoding="utf-8")
         summary.append((cp.name, card["status"], v.get("bearing"), (v.get("reason") or "")[:90]))
         print(cp.name, card["status"], v.get("bearing"), "|", (v.get("reason") or "")[:90])

@@ -1,5 +1,5 @@
 {
- "vendor": "codex",
+ "vendor": "claude",
  "fetched": {
   "source": "crossref",
   "title": "Self-efficacy: Toward a unifying theory of behavioral change.",
@@ -11,8 +11,11 @@
   "abstract": ""
  },
  "verdict": {
-  "error": "no-json",
-  "raw": "",
+  "metadata_matches": true,
+  "passage_plausible": false,
+  "claim_match": false,
+  "bearing": "CONTEXT_ONLY",
+  "reason": "Crossref title, year 1977, first author Bandura match the card. No exact_passage was obtained and no fetched text exists to compare, so passage_plausible is false. Nothing evidenced beyond the title bears on the two-layer potential claim; card itself carries it as bibliographic record only.",
   "passage_mechanical": "no open full text fetched; abstract/metadata only"
  },
  "date": "2026-09-04"

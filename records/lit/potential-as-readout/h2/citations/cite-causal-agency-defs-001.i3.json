@@ -1,5 +1,5 @@
 {
- "vendor": "codex",
+ "vendor": "claude",
  "fetched": {
   "source": "zenodo",
   "title": "Causal Agency  A Persistence Control Theory of Adaptive Systems",
@@ -12,9 +12,11 @@
   "_card_url": "https://zenodo.org/api/records/18897585/files/Causal%20Agency_A%20Persistence%20Control%20Theory%20of%20Adaptive.pdf/content"
  },
  "verdict": {
-  "error": "no-json",
-  "raw": "",
+  "metadata_matches": true,
   "passage_plausible": true,
+  "claim_match": true,
+  "bearing": "SUPPORTS",
+  "reason": "Title, first author (Lahtee), year 2026 match Zenodo. Exact Definition 3 passage found verbatim in fetched text, with §6.6 proto-agency contrast present. Source defines agency as modifying constraint structure C, not selecting within it, which is exactly H2's layer-1/layer-2 distinction. Self-citation disclosed.",
   "passage_mechanical": "verbatim prefix found in fetched open text"
  },
  "date": "2026-09-04"

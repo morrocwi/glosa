@@ -18,7 +18,7 @@
   "passage_plausible": true,
   "claim_match": true,
   "bearing": "SUPPORTS",
-  "reason": "Crossref title/first author (Klyubin) match; year unfetched, no contradiction. Passage found verbatim in fetched text. Text defines empowerment as channel capacity of the agent's existing actuation channel given current sensorimotor structure, which is a within-structure (layer-1) quantity, supporting H2's layer distinction as the card claims.",
+  "reason": "Crossref title/first author (Klyubin) match; year missing but container says 2005, no contradiction. Passage found verbatim in fetched text. The definition of empowerment as channel capacity of the current actuation channel, given the system's existing dynamics, evidences a within-structure (layer-1) quantity as the card claims, supporting H2's two-layer distinction.",
   "passage_mechanical": "verbatim prefix found in fetched open text"
  },
  "date": "2026-09-04"

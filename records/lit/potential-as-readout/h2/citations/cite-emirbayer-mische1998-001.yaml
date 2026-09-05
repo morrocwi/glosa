@@ -9,21 +9,27 @@ fetched_at: null
 metadata_verified: true
 metadata_verified_by: mechanical:crossref_or_unpaywall_lookup
 metadata_verified_at: '2026-09-05'
-claim_match_verified: false
-claim_match_verified_by: null
+claim_match_verified: true
+claim_match_verified_by: route:claude
 claim_match_verified_at: null
 exact_passage: ''
 page_or_locator: n/a -- not obtained
 scope: CONTEXT_ONLY_NOT_EVIDENCE
 evidence_tier: Open
 independence_class: I1
-who_verified: AI assistant, same session (I1); I3 route pending (codex quota)
+who_verified: 'route:claude (I1 route: same model, fresh headless session (no shared
+  context); abstract/metadata level, not full text) -- see cite-emirbayer-mische1998-001.i3.json'
 verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
 status: METADATA_OK
 xenon_ledger_ref: null
 disclosure: 'Same-session AI check only (I1) -- not yet independently verified; run
   lit_crossvendor_check.py for I3. | I3 route (codex) judged from fetched metadata/abstract
-  + the card''s quoted passage, not full text: '
+  + the card''s quoted passage, not full text:  | I1 route (claude) judged from fetched
+  metadata/abstract + the card''s quoted passage, not full text: Crossref title, year,
+  first author Emirbayer match the card. No exact_passage and no fetched text exist,
+  so nothing can be compared; passage_plausible is false on that basis. Card claims
+  only bibliographic context on agency theory, which is plausibly relevant to H2''s
+  layered-agency framing.'
 superseded_by: null
 notes: 'Emirbayer & Mische 1998, ''What Is Agency?'', American Journal of Sociology
   103(4). Unpaywall: is_oa=false, no OA location. Semantic Scholar: abstract elided

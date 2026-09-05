@@ -1,5 +1,5 @@
 {
- "vendor": "codex",
+ "vendor": "claude",
  "fetched": {
   "source": "crossref",
   "title": "What Is Agency?",
@@ -12,8 +12,11 @@
   "abstract": ""
  },
  "verdict": {
-  "error": "no-json",
-  "raw": "",
+  "metadata_matches": true,
+  "passage_plausible": false,
+  "claim_match": true,
+  "bearing": "CONTEXT_ONLY",
+  "reason": "Crossref title, year, first author Emirbayer match the card. No exact_passage and no fetched text exist, so nothing can be compared; passage_plausible is false on that basis. Card claims only bibliographic context on agency theory, which is plausibly relevant to H2's layered-agency framing.",
   "passage_mechanical": "no open full text fetched; abstract/metadata only"
  },
  "date": "2026-09-04"

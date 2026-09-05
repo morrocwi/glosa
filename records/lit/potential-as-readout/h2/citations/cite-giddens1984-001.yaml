@@ -9,21 +9,27 @@ fetched_at: null
 metadata_verified: true
 metadata_verified_by: mechanical:crossref_or_unpaywall_lookup
 metadata_verified_at: '2026-09-05'
-claim_match_verified: false
-claim_match_verified_by: null
+claim_match_verified: true
+claim_match_verified_by: route:claude
 claim_match_verified_at: null
 exact_passage: ''
 page_or_locator: n/a -- book, no chapter-level open text sought
 scope: CONTEXT_ONLY_NOT_EVIDENCE
 evidence_tier: Open
 independence_class: I1
-who_verified: AI assistant, same session (I1); I3 route pending (codex quota)
+who_verified: 'route:claude (I1 route: same model, fresh headless session (no shared
+  context); abstract/metadata level, not full text) -- see cite-giddens1984-001.i3.json'
 verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
 status: METADATA_OK
 xenon_ledger_ref: null
 disclosure: 'Same-session AI check only (I1) -- not yet independently verified; run
   lit_crossvendor_check.py for I3. | I3 route (codex) judged from fetched metadata/abstract
-  + the card''s quoted passage, not full text: '
+  + the card''s quoted passage, not full text:  | I1 route (claude) judged from fetched
+  metadata/abstract + the card''s quoted passage, not full text: No metadata or text
+  was fetched (source: no-identifier), so title/year/author are unverified but uncontradicted.
+  Card has no exact_passage and nothing to compare against, so passage is not plausible-verified.
+  As CONTEXT_ONLY, Giddens'' structure-as-rules-and-resources is relevant context
+  for H2''s layer-1/layer-2 distinction, not evidence.'
 superseded_by: null
 notes: 'Giddens 1984, The Constitution of Society: Outline of the Theory of Structuration
   (Polity Press). Per task instruction this is a bibliographic record card only (''record

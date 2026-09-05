@@ -1,5 +1,5 @@
 {
- "vendor": "codex",
+ "vendor": "claude",
  "fetched": {
   "source": "crossref",
   "title": "CAPABILITIES AS FUNDAMENTAL ENTITLEMENTS: SEN AND SOCIAL JUSTICE",
@@ -11,8 +11,11 @@
   "abstract": ""
  },
  "verdict": {
-  "error": "no-json",
-  "raw": "",
+  "metadata_matches": true,
+  "passage_plausible": false,
+  "claim_match": false,
+  "bearing": "CONTEXT_ONLY",
+  "reason": "Crossref title, first author Nussbaum, year 2003, Feminist Economics all agree with the card. No exact_passage and no fetched text or abstract exist, so nothing can be compared; passage_plausible is false by rule. Without any evidenced content, relevance to H2's two-layer potential claim cannot be established from this material.",
   "passage_mechanical": "no open full text fetched; abstract/metadata only"
  },
  "date": "2026-09-04"

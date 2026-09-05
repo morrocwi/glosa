@@ -1,0 +1,28 @@
+$schema: dialogue_table_row.schema.json
+hypothesis_ref: H1
+source_label: Sen 1999 as quoted by Nussbaum 2011 (p. 20)
+how_it_sees_the_problem: 'Frames the capabilities approach around a set of opportunities/substantial
+  freedoms that a society should promote, which people "then may or may not exercise
+  in action: the choice is theirs."'
+what_it_separates: Separates the PROVISION of an opportunity set (a societal/political
+  task) from its EXERCISE (an individual choice) -- explicitly treating the unexercised
+  option as still counting as part of the capability.
+what_it_assumes: Assumes an opportunity that is never exercised, and therefore never
+  witnessed in action, still meaningfully exists and counts toward justice assessment
+  -- the opposite polarity from H1's witnessing requirement.
+stance: UNDETERMINED
+defeater_class: constitutive
+legitimate_defeater: A passage where Nussbaum requires independent verification or
+  demonstration of an opportunity's real availability (beyond formal/legal availability)
+  before it counts toward her Central Capabilities list would soften this row toward
+  ORTHOGONAL.
+what_it_would_say_against_us: 'Nussbaum''s own "combined capabilities" concept (internal
+  capability + supportive external conditions) already does real evidentiary work
+  close to H1''s witnessing requirement elsewhere in the book (not quoted in this
+  card): a combined capability is not asserted lightly, it typically requires showing
+  the external conditions are actually in place, which is a bounded, checkable claim
+  rather than a pure declaration.'
+citation_card: cite-nussbaum-2011-sen-quote-009
+verified:
+  metadata_verified: true
+  claim_match_verified: true

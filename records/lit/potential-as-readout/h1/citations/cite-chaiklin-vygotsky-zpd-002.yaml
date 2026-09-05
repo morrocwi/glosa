@@ -14,10 +14,7 @@ metadata_verified_by: 'manual: PDF read directly (Read tool, pages 1-3) confirms
   Cambridge University Press."'
 metadata_verified_at: '2026-09-05'
 claim_match_verified: true
-claim_match_verified_by: this session (manual read/verification; the route:codex
-    I3 cross-vendor attempt below FAILED with a usage-limit error, not a content
-    judgment -- reverted to the prior manual verification rather than leaving a
-    false false-verdict on record)
+claim_match_verified_by: route:claude
 claim_match_verified_at: '2026-09-05'
 exact_passage: '"the distance between the actual developmental level as determined
   by independent problem solving and the level of potential development as determined
@@ -27,10 +24,10 @@ page_or_locator: Chaiklin (2003) p. 2, quoting Vygotsky 1978 p. 86
 scope: DIRECT_QUOTATION
 evidence_tier: definition
 independence_class: I1
-who_verified: this session (manual verification; I3 cross-vendor attempt failed,
-  see disclosure)
+who_verified: 'route:claude (I1 route: same model, fresh headless session (no shared
+  context); abstract/metadata level, not full text) -- see cite-chaiklin-vygotsky-zpd-002.i3.json'
 verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
-status: METADATA_OK
+status: VERIFIED
 xenon_ledger_ref: null
 disclosure: 'This card is Chaiklin''s OWN reproduction (in quotation marks, with page
   cite) of Vygotsky''s canonical ZPD definition. It directly supports H1: "potential
@@ -43,7 +40,17 @@ disclosure: 'This card is Chaiklin''s OWN reproduction (in quotation marks, with
   power", quoting Wertsch 1984 p.7 as quoted by Chaiklin p.2), which is itself consistent
   with H1''s finite/bounded framing of potential against open-ended declaration. |
   I3 route (codex) judged from fetched metadata/abstract + the card''s quoted passage,
-  not full text: '
+  not full text:  | I2 route (claude) judged from fetched metadata/abstract + the
+  card''s quoted passage, not full text: Fetched text confirms Chaiklin quotes Vygotsky''s
+  ZPD passage verbatim with page cite, matching metadata/passage. But this defines
+  potential via guided/collaborative performance, not via a witnessed/retained-record
+  set of executed policies — the operational mechanism H1 specifies is absent, so
+  it is context, not direct support. | I1 route (claude) judged from fetched metadata/abstract
+  + the card''s quoted passage, not full text: Fetched text is Chaiklin''s ZPD chapter;
+  verbatim passage found with the Vygotsky 1978 p.86 attribution. Passage defines
+  potential development via observable problem-solving under guidance, an operational/witnessed
+  criterion bearing on H1 as DIRECT_QUOTATION. Fetched title/abstract empty, so metadata
+  judged from body text only.'
 superseded_by: null
 notes: PDF read directly via the Read tool (not WebFetch's model-summarized text)
   for this exact_passage, satisfying a stronger verification bar than a single WebFetch

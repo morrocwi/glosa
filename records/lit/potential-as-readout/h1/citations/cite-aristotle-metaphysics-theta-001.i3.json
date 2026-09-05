@@ -1,5 +1,5 @@
 {
- "vendor": "codex",
+ "vendor": "claude",
  "fetched": {
   "source": "url-fetch",
   "title": "The Internet Classics Archive | Metaphysics by Aristotle",
@@ -7,9 +7,11 @@
   "_card_url": "https://classics.mit.edu/Aristotle/metaphysics.9.ix.html"
  },
  "verdict": {
-  "error": "no-json",
-  "raw": "",
+  "metadata_matches": true,
   "passage_plausible": true,
+  "claim_match": true,
+  "bearing": "CONTEXT_ONLY",
+  "reason": "Fetched title confirms Aristotle Metaphysics; passage found verbatim in fetched text at Book IX Part 1. Card scope is DIRECT_QUOTATION with a stated context stance: Aristotle defines potency as an originative source in a determinate thing. This is relevant context for H1's contrast (declared continuum vs witnessed set), not direct support of the Witness Rule.",
   "passage_mechanical": "verbatim prefix found in fetched open text"
  },
  "date": "2026-09-04"

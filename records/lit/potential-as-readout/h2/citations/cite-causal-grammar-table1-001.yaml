@@ -9,8 +9,8 @@ fetched_at: '2026-09-05'
 metadata_verified: true
 metadata_verified_by: mechanical:direct_fetch
 metadata_verified_at: '2026-09-05'
-claim_match_verified: false
-claim_match_verified_by: null
+claim_match_verified: true
+claim_match_verified_by: route:claude
 claim_match_verified_at: null
 exact_passage: Regime Compatibility Possibility Space Repair Tension Compatible Stable
   Not central Conflict Incompatible Contested Possible Violence Incompatible Compressed
@@ -20,13 +20,19 @@ page_or_locator: 'p.4 (Table 1: Regimes of structured coexistence)'
 scope: DIRECT_QUOTATION
 evidence_tier: definition
 independence_class: I1
-who_verified: AI assistant, same session (I1); I3 route pending (codex quota)
+who_verified: 'route:claude (I1 route: same model, fresh headless session (no shared
+  context); abstract/metadata level, not full text) -- see cite-causal-grammar-table1-001.i3.json'
 verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
 status: METADATA_OK
 xenon_ledger_ref: null
 disclosure: 'Same-session AI check only (I1) -- not yet independently verified; run
   lit_crossvendor_check.py for I3. | I3 route (codex) judged from fetched metadata/abstract
-  + the card''s quoted passage, not full text: '
+  + the card''s quoted passage, not full text:  | I1 route (claude) judged from fetched
+  metadata/abstract + the card''s quoted passage, not full text: Title, first author,
+  year match. The Table 1 row text was not found verbatim in fetched text (excerpt
+  is only the opening pages, table likely unreached), so passage unverified. Abstract''s
+  repair/possibility-space concepts, with per-regime states, bear on the layer-2 distinction
+  as the card claims. Self-citation disclosed.'
 superseded_by: null
 notes: 'Programme''s own prior work (self-citation, disclosed). Table 1''s ''Repair''
   column is a per-regime readout of whether the possibility-space structure is currently

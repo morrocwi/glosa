@@ -1,5 +1,5 @@
 {
- "vendor": "codex",
+ "vendor": "claude",
  "fetched": {
   "source": "crossref",
   "title": "Agency as conversion process",
@@ -9,12 +9,14 @@
   "year": 2022,
   "container": "Theory and Society",
   "abstract": " Abstract \n                   \n                    Its importance for understanding social dynamics notwithstanding, the concept of agency is one of sociology’s more controversial ideas. The debate around this concept has mostly been developed at a theoretical level and the empirical studies tend to rely on socio-psychological interpretations of agency as a stable, inner force capable of influencing prospects, decisions, and behavior with little room for change in agency capacity. Social sciences, though, should take a more dynamic stance on agency and highlight the role of the different elements of the social context that can enable or hinder individual agency capacity. Prompted by recent developments of the Capability Approach, this article proposes a framework for the study of agency that defines individual agency as the result of a\n                     conversion process \n                    of personal resources shaped by\n                     conversion factors \n                    . Conversion factors operate at micro, meso, and macro levels of analysis, each of which can be oriented toward past experiences, present conditions, and future prospects. This article also seeks to analytically distinguish three types of agency outcome:\n                     adaptation, autonomy \n                    , and\n                     influence \n                    . Such a framework will facilitate the transformation of the slippery notion of agency into more tractable empirical phenomena which increase its analytical and critical capacity.\n                   ",
-  "_card_url": "http://web.archive.org/web/20250819095906/https://link.springer.com/article/10.1007/s11186-022-09487-z"
+  "_card_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10241693/fullTextXML"
  },
  "verdict": {
-  "error": "no-json",
-  "raw": "",
+  "metadata_matches": true,
   "passage_plausible": true,
+  "claim_match": true,
+  "bearing": "SUPPORTS",
+  "reason": "Crossref title/first author (Bazzani) match; year 2022 vs card's 2023 is online-first vs issue, not a contradiction. Passage found verbatim in fetched abstract. Conversion factors at micro/meso/macro levels shaping agency, plus adaptation/autonomy/influence outcomes, bear on H2's layer-1 vs layer-2 distinction as evidence of a structural constraint layer.",
   "passage_mechanical": "verbatim prefix found in fetched open text"
  },
  "date": "2026-09-04"

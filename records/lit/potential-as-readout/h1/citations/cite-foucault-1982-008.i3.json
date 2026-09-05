@@ -1,0 +1,23 @@
+{
+ "vendor": "claude",
+ "fetched": {
+  "source": "crossref",
+  "title": "The Subject and Power",
+  "authors": [
+   "Foucault"
+  ],
+  "year": 1982,
+  "container": "Critical Inquiry",
+  "abstract": "",
+  "_card_url": "https://www2.kobe-u.ac.jp/~alexroni/IPD2018%20readings/IPD1%202018%20No.8/Foucault%20Subject%20and%20Power.pdf"
+ },
+ "verdict": {
+  "metadata_matches": true,
+  "passage_plausible": true,
+  "claim_match": true,
+  "bearing": "CONTEXT_ONLY",
+  "reason": "Crossref title, year, first author match the card; quoted passage found verbatim in the fetched text. Passage defines governing/power as structuring the field of possible action, so it bears on D5 (feasible vs permitted) as context, but does not itself support or oppose H1's witnessed-set definition.",
+  "passage_mechanical": "verbatim prefix found in fetched open text"
+ },
+ "date": "2026-09-04"
+}

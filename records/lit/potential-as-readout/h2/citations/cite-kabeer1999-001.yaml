@@ -9,8 +9,8 @@ fetched_at: '2026-09-05'
 metadata_verified: true
 metadata_verified_by: mechanical:direct_fetch
 metadata_verified_at: '2026-09-05'
-claim_match_verified: false
-claim_match_verified_by: null
+claim_match_verified: true
+claim_match_verified_by: route:claude
 claim_match_verified_at: null
 exact_passage: This paper begins from the understanding that women's empowerment is
   about the process by which those who have been denied the ability to make strategic
@@ -19,13 +19,19 @@ page_or_locator: Abstract (Development and Change, 1999, Vol.30)
 scope: DIRECT_QUOTATION
 evidence_tier: Dr
 independence_class: I1
-who_verified: AI assistant, same session (I1); I3 route pending (codex quota)
+who_verified: 'route:claude (I1 route: same model, fresh headless session (no shared
+  context); abstract/metadata level, not full text) -- see cite-kabeer1999-001.i3.json'
 verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
-status: METADATA_OK
+status: VERIFIED
 xenon_ledger_ref: null
 disclosure: 'Same-session AI check only (I1) -- not yet independently verified; run
   lit_crossvendor_check.py for I3. | I3 route (codex) judged from fetched metadata/abstract
-  + the card''s quoted passage, not full text: '
+  + the card''s quoted passage, not full text:  | I1 route (claude) judged from fetched
+  metadata/abstract + the card''s quoted passage, not full text: Crossref title/year/first
+  author match card; quoted passage found verbatim in abstract. Abstract distinguishes
+  acquiring the ability to make strategic choices (structural/capacity change) from
+  exercising choice, and adds ''structural parameters of individual choice'' and ''negotiation''
+  as agency — parallels H2''s layer-1/layer-2 split, though abstract-level only.'
 superseded_by: null
 notes: Fetched via Crossref API this session (abstract field present). Abstract-level
   only, full text not fetched. 'Acquire such an ability' is a layer-2 gain (a change

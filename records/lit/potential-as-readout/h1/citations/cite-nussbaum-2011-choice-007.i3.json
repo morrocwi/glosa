@@ -1,0 +1,16 @@
+{
+ "vendor": "claude",
+ "fetched": {
+  "source": "no-identifier",
+  "_card_url": "https://asuevents.asu.edu/sites/g/files/litvpz3506/files/2024-06/Creating_Capabilities_The_Human_Development_Approa..._----_(2._The_Central_Capabilities_).pdf"
+ },
+ "verdict": {
+  "metadata_matches": true,
+  "passage_plausible": true,
+  "claim_match": true,
+  "bearing": "CHALLENGES",
+  "reason": "Fetched text names Nussbaum, Creating Capabilities, 2011, Harvard; exact passage found verbatim. Passage holds that opportunities people 'may or may not exercise' are the good itself, which bears on H1's witnessed-set definition as the card states: unexercised options challenge a record-only definition.",
+  "passage_mechanical": "verbatim prefix found in fetched open text"
+ },
+ "date": "2026-09-04"
+}

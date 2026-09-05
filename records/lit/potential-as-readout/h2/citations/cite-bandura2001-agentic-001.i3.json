@@ -1,5 +1,5 @@
 {
- "vendor": "codex",
+ "vendor": "claude",
  "fetched": {
   "source": "crossref",
   "title": "Social Cognitive Theory: An Agentic Perspective",
@@ -12,9 +12,11 @@
   "_card_url": "https://api.crossref.org/works/10.1146/annurev.psych.52.1.1"
  },
  "verdict": {
-  "error": "no-json",
-  "raw": "",
+  "metadata_matches": true,
   "passage_plausible": true,
+  "claim_match": true,
+  "bearing": "SUPPORTS",
+  "reason": "Crossref title, author Bandura, year 2001 match card. Exact passage found verbatim in fetched abstract. Abstract's 'producers as well as products of social systems' and three agency modes (direct/proxy/collective) bear on H2's two-layer distinction; abstract-level only, as card discloses.",
   "passage_mechanical": "verbatim prefix found in fetched open text"
  },
  "date": "2026-09-04"

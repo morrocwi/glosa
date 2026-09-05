@@ -1,0 +1,15 @@
+{
+ "vendor": "claude",
+ "fetched": {
+  "source": "no-identifier"
+ },
+ "verdict": {
+  "metadata_matches": true,
+  "passage_plausible": false,
+  "claim_match": false,
+  "bearing": "CONTEXT_ONLY",
+  "reason": "No fetched text or metadata for the Sen ISBN (source: no-identifier); passage cannot be checked against the original and is only attested via Nussbaum secondhand. Nothing evidenced here contradicts title/author. Sen's definition of capability as feasible alternatives is relevant context for H1's contrast with a witnessed set, but the card does not evidence support.",
+  "passage_mechanical": "no open full text fetched; abstract/metadata only"
+ },
+ "date": "2026-09-04"
+}
