@@ -43,9 +43,11 @@ stranger without the **publish gate** (`glosa-publish-gate`, R1-R7) → only aft
 Every rule body lives in exactly one place — do not copy protocol text into this file or any
 other `SKILL.md` (`../../../../design/REPO_SPEC_v0.6.md` §"one fact one home"):
 
-- Protocol cards: `../../../../methodology/P00_lens.md` … `P14_project_advisor.md`
+- Protocol cards: `../../../../methodology/P00_lens.md` … `P14_project_advisor.md`, plus
+  `P17_human_mastery_gate.md` and `P18_session_architecture.md`
   (`../../../../methodology/README.md` is the index; some ids referenced by design docs, e.g.
-  `P15_blackbox_note.md`, are not yet written — see `glosa-blackbox-note`'s own pending note).
+  `P15_blackbox_note.md`, are not yet written — see `glosa-blackbox-note`'s own pending note; the
+  README also discloses the P15/P16/P17/P18 numbering collisions rather than reconciling them).
 - Schemas (field-level truth for every card/log/manifest): `../../../../schema/*.schema.json`.
 - Fill-in templates: `../../../../templates/knowledge/*.yaml` / `*.md`.
 - Paper skeletons with the mandatory Blackbox Note appendix: `../../../../templates/paper/`.

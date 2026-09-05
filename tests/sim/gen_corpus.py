@@ -425,5 +425,218 @@ def main():
     print(f"gen_corpus: per-defect counts: {counts}")
 
 
+# =============================================================================================
+# v0.4 corpus -- design/SESSION_ARCH_v0.4_SPEC.md §5's five session-architecture defect classes.
+#
+# These fixtures deliberately do NOT reuse claim_card/citation_card (the artifacts §5's own
+# proposals target are hypothesis_selection.yaml rows, blackbox_note pairs, a session's Problem
+# Card sequence, and free prose/code) -- so this is a second, separate corpus tree
+# (tests/sim/corpus/v04/) with its own labels file, not more rows appended to labels.json's
+# claim/citation `cards` list (one-fact-one-home: a different artifact shape is a different
+# corpus, not a relabeling of the existing one).
+#
+# TODO(schema.retention-direction-field, SA-1, kernel.reciprocal-lineage-diagnostic, SA-3): none
+# of the schema/kernel fields these fixtures exercise (hypothesis_selection `retained_direction`
+# / `chooser_reaffirmations[]`, blackbox_note `ai_state_at_boundary`, a session's declared
+# `q1_issue` drift tracking, `chi_recip`/momentum readouts) exist in schema/*.json or
+# kernel/glosa_kernel.py yet (confirmed by direct grep, 2026-09-05) -- these are the four
+# still-pending v0.4 schema/kernel proposals landing in parallel. Until they land, "caught" here
+# is measured by a sim-local PROTOTYPE reference checker in tests/sim/baseline.py
+# (`_check_*_v04` functions), tier `Dr`, honestly disclosed as not-yet-the-shipped kernel/schema
+# check -- see tests/sim/report.md's v0.4 section. Once the real fields/rules ship, baseline.py's
+# runner for this corpus should be pointed at the real kernel/schema validators instead.
+# =============================================================================================
+
+V04_DIR = CORPUS_DIR / "v04"
+
+V04_DEFECTS = [
+    "tunnel_unflagged",
+    "retention_undeclared",
+    "chooser_forgotten",
+    "question_drift_unlogged",
+    "momentum_overclaimed",
+]
+N_V04_PER_CLASS_ADV = 6
+N_V04_PER_CLASS_VALID = 6
+
+
+def _hsel_row(row_id, session_ids, chosen=True, evidence_relation=None, retained_direction=None,
+              reopened_in_session=None, previously_chosen_session=None, chooser_reaffirmations=None):
+    return {
+        "id": row_id,
+        "problem_ref": "GLOSA-PC-20260905-0001",
+        "selection_status": "chosen" if chosen else "parked",
+        "session_ids": session_ids,
+        "evidence_relation": evidence_relation,
+        "retained_direction": retained_direction,
+        "previously_chosen_session": previously_chosen_session,
+        "reopened_in_session": reopened_in_session,
+        "chooser_reaffirmations": chooser_reaffirmations if chooser_reaffirmations is not None else [],
+    }
+
+
+def _bb_pair(session_id_a, session_id_b, restart_a, restart_b, state_a, state_b, pair_id):
+    return {
+        "id": pair_id,
+        "note_a": {"id": f"{pair_id}-a", "session_id": session_id_a,
+                   "process_restart_after": restart_a, "ai_state_at_boundary": state_a},
+        "note_b": {"id": f"{pair_id}-b", "session_id": session_id_b,
+                   "process_restart_after": restart_b, "ai_state_at_boundary": state_b},
+    }
+
+
+def _session_record(sess_id, declared_q1, cards, new_pc_for_drift):
+    return {
+        "id": sess_id,
+        "declared_q1_issue": declared_q1,
+        "problem_cards_opened": cards,
+        "new_problem_card_opened_for_drift": new_pc_for_drift,
+    }
+
+
+def _momentum_doc(doc_id, text):
+    return {"id": doc_id, "text": text}
+
+
+def gen_v04_corpus():
+    for sub in ("hsel", "blackbox", "session", "momentum"):
+        d = V04_DIR / sub
+        d.mkdir(parents=True, exist_ok=True)
+        for f in d.glob("*.json"):
+            f.unlink()
+
+    labels = {"defects": V04_DEFECTS, "cards": []}
+
+    def add(defect, kind, artifact_under_test, rel_path, obj, note):
+        (V04_DIR / rel_path).write_text(json.dumps(obj, ensure_ascii=False, indent=1), encoding="utf-8")
+        labels["cards"].append({
+            "id": obj["id"],
+            "kind": kind,
+            "defect": defect if kind == "adversarial" else None,
+            "file": f"v04/{rel_path}",
+            "artifact_under_test": artifact_under_test,
+            "note": note,
+        })
+
+    # --- tunnel_unflagged (hypothesis_selection rows, chosen across >=2 sessions) -----------
+    defect = "tunnel_unflagged"
+    for i, rd in enumerate(["expansion", "tunnel", "expansion", "tunnel", "expansion", "tunnel"], start=1):
+        row = _hsel_row(f"hsel-{defect}-adv-{i:03d}", session_ids=["sess-01", f"sess-{i+1:02d}"],
+                         chosen=True, evidence_relation=None, retained_direction=rd)
+        add(defect, "adversarial", "hypothesis_selection",
+            f"hsel/{defect}_adv_{i:03d}.json", row,
+            f"chosen across 2 sessions, no independent-check link, retained_direction bare-asserted {rd!r} instead of 'unknown'")
+    for i in range(1, N_V04_PER_CLASS_VALID + 1):
+        if i % 2 == 1:
+            row = _hsel_row(f"hsel-{defect}-valid-{i:03d}", session_ids=["sess-01", f"sess-{i+1:02d}"],
+                             chosen=True, evidence_relation=None, retained_direction="unknown")
+            note = "chosen across 2 sessions, no independent-check link, retained_direction correctly defaulted to 'unknown'"
+        else:
+            er = {"resolves_to_checker_verdict": True, "checker_verdict_sign": "expansion",
+                  "review_report_ref": f"rr-{i:03d}"}
+            row = _hsel_row(f"hsel-{defect}-valid-{i:03d}", session_ids=["sess-01", f"sess-{i+1:02d}"],
+                             chosen=True, evidence_relation=er, retained_direction="expansion")
+            note = "chosen across 2 sessions, retained_direction sign comes from a linked independent-check verdict, not bare persistence"
+        add(defect, "valid", "hypothesis_selection", f"hsel/{defect}_valid_{i:03d}.json", row, note)
+
+    # --- retention_undeclared (blackbox_note pairs sharing session_id across a restart) -----
+    defect = "retention_undeclared"
+    for i in range(1, N_V04_PER_CLASS_ADV + 1):
+        missing_on = "note_b" if i % 2 == 1 else "note_a"
+        state_a = "reset" if missing_on != "note_a" else (None if i % 4 == 1 else "not-reset")
+        state_b = "reset" if missing_on != "note_b" else (None if i % 4 == 3 else "not-reset")
+        pair = _bb_pair(f"sess-{i:02d}", f"sess-{i:02d}", True, True, state_a, state_b,
+                         f"bbpair-{defect}-adv-{i:03d}")
+        add(defect, "adversarial", "blackbox_note_pair", f"blackbox/{defect}_adv_{i:03d}.json", pair,
+            f"shared session_id across a process restart, {missing_on} missing/non-literal ai_state_at_boundary='reset'")
+    for i in range(1, N_V04_PER_CLASS_VALID + 1):
+        if i % 2 == 1:
+            pair = _bb_pair(f"sess-{i:02d}", f"sess-{i:02d}", True, True, "reset", "reset",
+                             f"bbpair-{defect}-valid-{i:03d}")
+            note = "shared session_id across a process restart, both notes correctly carry ai_state_at_boundary='reset'"
+        else:
+            pair = _bb_pair(f"sess-a-{i:02d}", f"sess-b-{i:02d}", True, True, "reset", None,
+                             f"bbpair-{defect}-valid-{i:03d}")
+            note = "different session_id values on topically-similar notes -- rule does not apply, missing marker on note_b is not a violation"
+        add(defect, "valid", "blackbox_note_pair", f"blackbox/{defect}_valid_{i:03d}.json", pair, note)
+
+    # --- chooser_forgotten (hsel row reopened without a fresh chooser_reaffirmations[] entry) --
+    defect = "chooser_forgotten"
+    for i in range(1, N_V04_PER_CLASS_ADV + 1):
+        row = _hsel_row(f"hsel-{defect}-adv-{i:03d}", session_ids=["sess-01"], chosen=True,
+                         previously_chosen_session="sess-01", reopened_in_session=f"sess-{i+1:02d}",
+                         chooser_reaffirmations=[])
+        add(defect, "adversarial", "hypothesis_selection", f"hsel/{defect}_adv_{i:03d}.json", row,
+            "hypothesis reopened in a later session with zero chooser_reaffirmations[] entries")
+    for i in range(1, N_V04_PER_CLASS_VALID + 1):
+        if i % 2 == 1:
+            reopen_sess = f"sess-{i+1:02d}"
+            row = _hsel_row(f"hsel-{defect}-valid-{i:03d}", session_ids=["sess-01"], chosen=True,
+                             previously_chosen_session="sess-01", reopened_in_session=reopen_sess,
+                             chooser_reaffirmations=[{"by": "founder", "session_id": reopen_sess, "ts": "2026-09-05T00:00:00Z"}])
+            note = "hypothesis reopened, but a fresh chooser_reaffirmations[] entry for that session exists"
+        else:
+            row = _hsel_row(f"hsel-{defect}-valid-{i:03d}", session_ids=["sess-01"], chosen=True,
+                             previously_chosen_session=None, reopened_in_session=None,
+                             chooser_reaffirmations=[])
+            note = "never reopened -- rule does not apply"
+        add(defect, "valid", "hypothesis_selection", f"hsel/{defect}_valid_{i:03d}.json", row, note)
+
+    # --- question_drift_unlogged (session's Problem Card sequence drifts from declared q1_issue) --
+    defect = "question_drift_unlogged"
+    for i in range(1, N_V04_PER_CLASS_ADV + 1):
+        cards = [{"id": f"pc-{i}-1", "q1_issue": "cat avoids litter box far from resting area"},
+                 {"id": f"pc-{i}-2", "q1_issue": "substrate cleanliness confound"}]
+        sess = _session_record(f"sess-{defect}-adv-{i:03d}", cards[0]["q1_issue"], cards, new_pc_for_drift=False)
+        add(defect, "adversarial", "session_problem_card_sequence", f"session/{defect}_adv_{i:03d}.json", sess,
+            "Problem Card sequence diverges from declared q1_issue, no new Problem Card opened for the drift")
+    for i in range(1, N_V04_PER_CLASS_VALID + 1):
+        if i % 2 == 1:
+            cards = [{"id": f"pc-{i}-1", "q1_issue": "cat avoids litter box far from resting area"},
+                     {"id": f"pc-{i}-2", "q1_issue": "cat avoids litter box far from resting area"}]
+            sess = _session_record(f"sess-{defect}-valid-{i:03d}", cards[0]["q1_issue"], cards, new_pc_for_drift=False)
+            note = "no drift -- every Problem Card in the sequence matches the declared q1_issue"
+        else:
+            cards = [{"id": f"pc-{i}-1", "q1_issue": "cat avoids litter box far from resting area"},
+                     {"id": f"pc-{i}-2", "q1_issue": "substrate cleanliness confound"}]
+            sess = _session_record(f"sess-{defect}-valid-{i:03d}", cards[0]["q1_issue"], cards, new_pc_for_drift=True)
+            note = "drift present, but a new Problem Card was opened to track it -- not untracked"
+        add(defect, "valid", "session_problem_card_sequence", f"session/{defect}_valid_{i:03d}.json", sess, note)
+
+    # --- momentum_overclaimed (chi_recip/m^H/m^AI read as warrant/truth/release gate) --------
+    defect = "momentum_overclaimed"
+    gate_phrasings = [
+        "release requires chi_recip >= 0.8 before this claim may ship",
+        "m^H and m^AI together are the warrant that this hypothesis is correct",
+        "chi_recip is the release gate for promoting this row to build_now",
+        "momentum across sessions is proof this direction is true, not just persistent",
+        "the reciprocal-lineage diagnostic m^AI must pass before merge is allowed",
+        "chi_recip >= threshold is treated here as sufficient warrant to certify the finding",
+    ]
+    for i, text in enumerate(gate_phrasings, start=1):
+        doc = _momentum_doc(f"momdoc-{defect}-adv-{i:03d}", text)
+        add(defect, "adversarial", "momentum_doc_or_code", f"momentum/{defect}_adv_{i:03d}.json", doc,
+            "reads chi_recip/m^H/m^AI as warrant/truth/release-gate rather than an Open diagnostic")
+    open_phrasings = [
+        "chi_recip is an Open-tier diagnostic only, not a release gate -- it names a candidate lineage pattern for human review",
+        "m^H/m^AI are readouts for a human to look at, never a pass/fail gate on their own",
+        "this session's momentum figures are diagnostic context, not evidence of direction",
+        "chi_recip requires session_id to even be computed, and remains Open pending that field",
+        "reporting m^AI here only as an input to human judgement, explicitly not a certification",
+        "the reciprocal-lineage diagnostic is disclosed as evadable-by-omission, never a structural guarantee",
+    ]
+    for i, text in enumerate(open_phrasings, start=1):
+        doc = _momentum_doc(f"momdoc-{defect}-valid-{i:03d}", text)
+        add(defect, "valid", "momentum_doc_or_code", f"momentum/{defect}_valid_{i:03d}.json", doc,
+            "frames chi_recip/m^H/m^AI honestly as an Open diagnostic, never a gate/warrant/truth claim")
+
+    (V04_DIR / "labels.json").write_text(json.dumps(labels, ensure_ascii=False, indent=1), encoding="utf-8")
+    n_valid = sum(1 for c in labels["cards"] if c["kind"] == "valid")
+    n_adv = sum(1 for c in labels["cards"] if c["kind"] == "adversarial")
+    print(f"gen_v04_corpus: wrote {n_valid} valid + {n_adv} adversarial v0.4 fixtures "
+          f"({n_valid + n_adv} total) to {V04_DIR}")
+
+
 if __name__ == "__main__":
     main()
+    gen_v04_corpus()

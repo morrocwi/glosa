@@ -1,0 +1,47 @@
+{
+ "tier": "Dr",
+ "note": "prototype reference-checker readout over tests/sim/corpus/v04/ ONLY -- these checkers are sim-local hand-written readings of design/SESSION_ARCH_v0.4_SPEC.md §5's failing_control clauses, not the shipped kernel/schema (which do not yet implement these fields/rules -- see this file's TODO block above). Not a claim about kernel/schema behaviour.",
+ "per_defect": {
+  "tunnel_unflagged": {
+   "n_adv": 6,
+   "caught": 6,
+   "missed": 0,
+   "n_valid": 6,
+   "false_alarm": 0
+  },
+  "retention_undeclared": {
+   "n_adv": 6,
+   "caught": 6,
+   "missed": 0,
+   "n_valid": 6,
+   "false_alarm": 0
+  },
+  "chooser_forgotten": {
+   "n_adv": 6,
+   "caught": 6,
+   "missed": 0,
+   "n_valid": 6,
+   "false_alarm": 0
+  },
+  "question_drift_unlogged": {
+   "n_adv": 6,
+   "caught": 6,
+   "missed": 0,
+   "n_valid": 6,
+   "false_alarm": 0
+  },
+  "momentum_overclaimed": {
+   "n_adv": 6,
+   "caught": 6,
+   "missed": 0,
+   "n_valid": 6,
+   "false_alarm": 0
+  }
+ },
+ "recall_of_prototype_checkers": 1.0,
+ "n_adv": 30,
+ "n_valid": 30,
+ "false_alarm_total": 0,
+ "missed_ids_sample": {},
+ "false_alarm_ids_sample": {}
+}

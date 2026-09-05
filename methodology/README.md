@@ -63,6 +63,21 @@ distinct file added this pass (founder instruction 2026-09-04, BBL-2026-09-04-08
 numbering collision at P15, alongside the P0–P7 two-digit-vs-one-digit variance already flagged
 above. Not silently reconciled here; a future pass should renumber one of the two.
 
+## P17, P18 — session-architecture review cards (2026-09-05, `design/SESSION_ARCH_v0.4_SPEC.md`)
+
+| Card | File | One-line rule |
+|---|---|---|
+| P17 | `P17_human_mastery_gate.md` | Ten-question live unaided-defense checklist, generalized past the arXiv-paper genre and wired to publish-gate R8 (HU-1, build_now). |
+| P18 | `P18_session_architecture.md` | The Session object as a logical join across Blackbox Note + `hypothesis_selection.yaml` + Problem Card + `kg_edge.yaml`, one-fact-one-home; retention≠direction (NC-77); momentum diagnostics Open, diagnostic-only. |
+
+**Naming note (third numbering collision, disclosed rather than reconciled, same pattern as
+P0–P7 and P15 above):** `design/SESSION_ARCH_v0.4_SPEC.md` §11.1 names the Human Mastery Gate card
+`P16_human_mastery_gate.md`. It ships here as **P17** because a concurrent task in this same build
+pass claimed the P16 slot for a different card; P18 (session architecture) is not assigned any
+number by the spec at all — it is the next free slot in this file's own sequence. A future pass
+should reconcile P15, P16 (whatever it becomes), P17, and P18 into one clean sequence rather than
+layering a fourth disclosed collision on top of these three.
+
 ## Flagged, not silently reconciled: filename numbering variance
 
 This batch's task instruction named files `P00_lens.md` … `P07_ai_fill_disclosure.md` (two-digit

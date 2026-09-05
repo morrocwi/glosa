@@ -1,0 +1,13 @@
+{
+ "id": "hsel-chooser_forgotten-adv-004",
+ "problem_ref": "GLOSA-PC-20260905-0001",
+ "selection_status": "chosen",
+ "session_ids": [
+  "sess-01"
+ ],
+ "evidence_relation": null,
+ "retained_direction": null,
+ "previously_chosen_session": "sess-01",
+ "reopened_in_session": "sess-05",
+ "chooser_reaffirmations": []
+}

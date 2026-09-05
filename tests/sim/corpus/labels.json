@@ -3,6 +3,7 @@
  "n_adversarial": 120,
  "defects": [
   "hidden_ai_fill",
+  "hidden_ai_fill_unmarked",
   "inflated_bearing",
   "missing_locator",
   "composite_quote",
@@ -565,13 +566,69 @@
   {
    "id": "GLOSA-CC-20260905-5009",
    "kind": "adversarial",
-   "defect": "hidden_ai_fill",
-   "claim_file": "claims/adv_hidden_ai_fill_009.json",
-   "citation_file": "citations/adv_hidden_ai_fill_009.json",
+   "defect": "hidden_ai_fill_unmarked",
+   "claim_file": "claims/adv_hidden_ai_fill_unmarked_001.json",
+   "citation_file": "citations/adv_hidden_ai_fill_unmarked_001.json",
    "artifact_under_test": "claim"
   },
   {
    "id": "GLOSA-CC-20260905-5010",
+   "kind": "adversarial",
+   "defect": "hidden_ai_fill_unmarked",
+   "claim_file": "claims/adv_hidden_ai_fill_unmarked_002.json",
+   "citation_file": "citations/adv_hidden_ai_fill_unmarked_002.json",
+   "artifact_under_test": "claim"
+  },
+  {
+   "id": "GLOSA-CC-20260905-5011",
+   "kind": "adversarial",
+   "defect": "hidden_ai_fill_unmarked",
+   "claim_file": "claims/adv_hidden_ai_fill_unmarked_003.json",
+   "citation_file": "citations/adv_hidden_ai_fill_unmarked_003.json",
+   "artifact_under_test": "claim"
+  },
+  {
+   "id": "GLOSA-CC-20260905-5012",
+   "kind": "adversarial",
+   "defect": "hidden_ai_fill_unmarked",
+   "claim_file": "claims/adv_hidden_ai_fill_unmarked_004.json",
+   "citation_file": "citations/adv_hidden_ai_fill_unmarked_004.json",
+   "artifact_under_test": "claim"
+  },
+  {
+   "id": "GLOSA-CC-20260905-5013",
+   "kind": "adversarial",
+   "defect": "hidden_ai_fill_unmarked",
+   "claim_file": "claims/adv_hidden_ai_fill_unmarked_005.json",
+   "citation_file": "citations/adv_hidden_ai_fill_unmarked_005.json",
+   "artifact_under_test": "claim"
+  },
+  {
+   "id": "GLOSA-CC-20260905-5014",
+   "kind": "adversarial",
+   "defect": "hidden_ai_fill_unmarked",
+   "claim_file": "claims/adv_hidden_ai_fill_unmarked_006.json",
+   "citation_file": "citations/adv_hidden_ai_fill_unmarked_006.json",
+   "artifact_under_test": "claim"
+  },
+  {
+   "id": "GLOSA-CC-20260905-5015",
+   "kind": "adversarial",
+   "defect": "hidden_ai_fill_unmarked",
+   "claim_file": "claims/adv_hidden_ai_fill_unmarked_007.json",
+   "citation_file": "citations/adv_hidden_ai_fill_unmarked_007.json",
+   "artifact_under_test": "claim"
+  },
+  {
+   "id": "GLOSA-CC-20260905-5016",
+   "kind": "adversarial",
+   "defect": "hidden_ai_fill_unmarked",
+   "claim_file": "claims/adv_hidden_ai_fill_unmarked_008.json",
+   "citation_file": "citations/adv_hidden_ai_fill_unmarked_008.json",
+   "artifact_under_test": "claim"
+  },
+  {
+   "id": "GLOSA-CC-20260905-5017",
    "kind": "adversarial",
    "defect": "inflated_bearing",
    "claim_file": "claims/adv_inflated_bearing_001.json",
@@ -579,7 +636,7 @@
    "artifact_under_test": "claim"
   },
   {
-   "id": "GLOSA-CC-20260905-5011",
+   "id": "GLOSA-CC-20260905-5018",
    "kind": "adversarial",
    "defect": "inflated_bearing",
    "claim_file": "claims/adv_inflated_bearing_002.json",
@@ -587,7 +644,7 @@
    "artifact_under_test": "claim"
   },
   {
-   "id": "GLOSA-CC-20260905-5012",
+   "id": "GLOSA-CC-20260905-5019",
    "kind": "adversarial",
    "defect": "inflated_bearing",
    "claim_file": "claims/adv_inflated_bearing_003.json",
@@ -595,7 +652,7 @@
    "artifact_under_test": "claim"
   },
   {
-   "id": "GLOSA-CC-20260905-5013",
+   "id": "GLOSA-CC-20260905-5020",
    "kind": "adversarial",
    "defect": "inflated_bearing",
    "claim_file": "claims/adv_inflated_bearing_004.json",
@@ -603,7 +660,7 @@
    "artifact_under_test": "claim"
   },
   {
-   "id": "GLOSA-CC-20260905-5014",
+   "id": "GLOSA-CC-20260905-5021",
    "kind": "adversarial",
    "defect": "inflated_bearing",
    "claim_file": "claims/adv_inflated_bearing_005.json",
@@ -611,7 +668,7 @@
    "artifact_under_test": "claim"
   },
   {
-   "id": "GLOSA-CC-20260905-5015",
+   "id": "GLOSA-CC-20260905-5022",
    "kind": "adversarial",
    "defect": "inflated_bearing",
    "claim_file": "claims/adv_inflated_bearing_006.json",
@@ -619,7 +676,7 @@
    "artifact_under_test": "claim"
   },
   {
-   "id": "GLOSA-CC-20260905-5016",
+   "id": "GLOSA-CC-20260905-5023",
    "kind": "adversarial",
    "defect": "inflated_bearing",
    "claim_file": "claims/adv_inflated_bearing_007.json",
@@ -627,7 +684,7 @@
    "artifact_under_test": "claim"
   },
   {
-   "id": "GLOSA-CC-20260905-5017",
+   "id": "GLOSA-CC-20260905-5024",
    "kind": "adversarial",
    "defect": "inflated_bearing",
    "claim_file": "claims/adv_inflated_bearing_008.json",
@@ -635,15 +692,7 @@
    "artifact_under_test": "claim"
   },
   {
-   "id": "GLOSA-CC-20260905-5018",
-   "kind": "adversarial",
-   "defect": "inflated_bearing",
-   "claim_file": "claims/adv_inflated_bearing_009.json",
-   "citation_file": "citations/adv_inflated_bearing_009.json",
-   "artifact_under_test": "claim"
-  },
-  {
-   "id": "GLOSA-CC-20260905-5019",
+   "id": "GLOSA-CC-20260905-5025",
    "kind": "adversarial",
    "defect": "missing_locator",
    "claim_file": "claims/adv_missing_locator_001.json",
@@ -651,7 +700,7 @@
    "artifact_under_test": "citation"
   },
   {
-   "id": "GLOSA-CC-20260905-5020",
+   "id": "GLOSA-CC-20260905-5026",
    "kind": "adversarial",
    "defect": "missing_locator",
    "claim_file": "claims/adv_missing_locator_002.json",
@@ -659,7 +708,7 @@
    "artifact_under_test": "citation"
   },
   {
-   "id": "GLOSA-CC-20260905-5021",
+   "id": "GLOSA-CC-20260905-5027",
    "kind": "adversarial",
    "defect": "missing_locator",
    "claim_file": "claims/adv_missing_locator_003.json",
@@ -667,7 +716,7 @@
    "artifact_under_test": "citation"
   },
   {
-   "id": "GLOSA-CC-20260905-5022",
+   "id": "GLOSA-CC-20260905-5028",
    "kind": "adversarial",
    "defect": "missing_locator",
    "claim_file": "claims/adv_missing_locator_004.json",
@@ -675,7 +724,7 @@
    "artifact_under_test": "citation"
   },
   {
-   "id": "GLOSA-CC-20260905-5023",
+   "id": "GLOSA-CC-20260905-5029",
    "kind": "adversarial",
    "defect": "missing_locator",
    "claim_file": "claims/adv_missing_locator_005.json",
@@ -683,7 +732,7 @@
    "artifact_under_test": "citation"
   },
   {
-   "id": "GLOSA-CC-20260905-5024",
+   "id": "GLOSA-CC-20260905-5030",
    "kind": "adversarial",
    "defect": "missing_locator",
    "claim_file": "claims/adv_missing_locator_006.json",
@@ -691,7 +740,7 @@
    "artifact_under_test": "citation"
   },
   {
-   "id": "GLOSA-CC-20260905-5025",
+   "id": "GLOSA-CC-20260905-5031",
    "kind": "adversarial",
    "defect": "missing_locator",
    "claim_file": "claims/adv_missing_locator_007.json",
@@ -699,7 +748,7 @@
    "artifact_under_test": "citation"
   },
   {
-   "id": "GLOSA-CC-20260905-5026",
+   "id": "GLOSA-CC-20260905-5032",
    "kind": "adversarial",
    "defect": "missing_locator",
    "claim_file": "claims/adv_missing_locator_008.json",
@@ -707,15 +756,7 @@
    "artifact_under_test": "citation"
   },
   {
-   "id": "GLOSA-CC-20260905-5027",
-   "kind": "adversarial",
-   "defect": "missing_locator",
-   "claim_file": "claims/adv_missing_locator_009.json",
-   "citation_file": "citations/adv_missing_locator_009.json",
-   "artifact_under_test": "citation"
-  },
-  {
-   "id": "GLOSA-CC-20260905-5028",
+   "id": "GLOSA-CC-20260905-5033",
    "kind": "adversarial",
    "defect": "composite_quote",
    "claim_file": "claims/adv_composite_quote_001.json",
@@ -723,7 +764,7 @@
    "artifact_under_test": "citation"
   },
   {
-   "id": "GLOSA-CC-20260905-5029",
+   "id": "GLOSA-CC-20260905-5034",
    "kind": "adversarial",
    "defect": "composite_quote",
    "claim_file": "claims/adv_composite_quote_002.json",
@@ -731,7 +772,7 @@
    "artifact_under_test": "citation"
   },
   {
-   "id": "GLOSA-CC-20260905-5030",
+   "id": "GLOSA-CC-20260905-5035",
    "kind": "adversarial",
    "defect": "composite_quote",
    "claim_file": "claims/adv_composite_quote_003.json",
@@ -739,7 +780,7 @@
    "artifact_under_test": "citation"
   },
   {
-   "id": "GLOSA-CC-20260905-5031",
+   "id": "GLOSA-CC-20260905-5036",
    "kind": "adversarial",
    "defect": "composite_quote",
    "claim_file": "claims/adv_composite_quote_004.json",
@@ -747,7 +788,7 @@
    "artifact_under_test": "citation"
   },
   {
-   "id": "GLOSA-CC-20260905-5032",
+   "id": "GLOSA-CC-20260905-5037",
    "kind": "adversarial",
    "defect": "composite_quote",
    "claim_file": "claims/adv_composite_quote_005.json",
@@ -755,7 +796,7 @@
    "artifact_under_test": "citation"
   },
   {
-   "id": "GLOSA-CC-20260905-5033",
+   "id": "GLOSA-CC-20260905-5038",
    "kind": "adversarial",
    "defect": "composite_quote",
    "claim_file": "claims/adv_composite_quote_006.json",
@@ -763,7 +804,7 @@
    "artifact_under_test": "citation"
   },
   {
-   "id": "GLOSA-CC-20260905-5034",
+   "id": "GLOSA-CC-20260905-5039",
    "kind": "adversarial",
    "defect": "composite_quote",
    "claim_file": "claims/adv_composite_quote_007.json",
@@ -771,7 +812,7 @@
    "artifact_under_test": "citation"
   },
   {
-   "id": "GLOSA-CC-20260905-5035",
+   "id": "GLOSA-CC-20260905-5040",
    "kind": "adversarial",
    "defect": "composite_quote",
    "claim_file": "claims/adv_composite_quote_008.json",
@@ -779,15 +820,7 @@
    "artifact_under_test": "citation"
   },
   {
-   "id": "GLOSA-CC-20260905-5036",
-   "kind": "adversarial",
-   "defect": "composite_quote",
-   "claim_file": "claims/adv_composite_quote_009.json",
-   "citation_file": "citations/adv_composite_quote_009.json",
-   "artifact_under_test": "citation"
-  },
-  {
-   "id": "GLOSA-CC-20260905-5037",
+   "id": "GLOSA-CC-20260905-5041",
    "kind": "adversarial",
    "defect": "k_state_rounded_up",
    "claim_file": "claims/adv_k_state_rounded_up_001.json",
@@ -795,7 +828,7 @@
    "artifact_under_test": "claim"
   },
   {
-   "id": "GLOSA-CC-20260905-5038",
+   "id": "GLOSA-CC-20260905-5042",
    "kind": "adversarial",
    "defect": "k_state_rounded_up",
    "claim_file": "claims/adv_k_state_rounded_up_002.json",
@@ -803,7 +836,7 @@
    "artifact_under_test": "claim"
   },
   {
-   "id": "GLOSA-CC-20260905-5039",
+   "id": "GLOSA-CC-20260905-5043",
    "kind": "adversarial",
    "defect": "k_state_rounded_up",
    "claim_file": "claims/adv_k_state_rounded_up_003.json",
@@ -811,7 +844,7 @@
    "artifact_under_test": "claim"
   },
   {
-   "id": "GLOSA-CC-20260905-5040",
+   "id": "GLOSA-CC-20260905-5044",
    "kind": "adversarial",
    "defect": "k_state_rounded_up",
    "claim_file": "claims/adv_k_state_rounded_up_004.json",
@@ -819,7 +852,7 @@
    "artifact_under_test": "claim"
   },
   {
-   "id": "GLOSA-CC-20260905-5041",
+   "id": "GLOSA-CC-20260905-5045",
    "kind": "adversarial",
    "defect": "k_state_rounded_up",
    "claim_file": "claims/adv_k_state_rounded_up_005.json",
@@ -827,7 +860,7 @@
    "artifact_under_test": "claim"
   },
   {
-   "id": "GLOSA-CC-20260905-5042",
+   "id": "GLOSA-CC-20260905-5046",
    "kind": "adversarial",
    "defect": "k_state_rounded_up",
    "claim_file": "claims/adv_k_state_rounded_up_006.json",
@@ -835,7 +868,7 @@
    "artifact_under_test": "claim"
   },
   {
-   "id": "GLOSA-CC-20260905-5043",
+   "id": "GLOSA-CC-20260905-5047",
    "kind": "adversarial",
    "defect": "k_state_rounded_up",
    "claim_file": "claims/adv_k_state_rounded_up_007.json",
@@ -843,7 +876,7 @@
    "artifact_under_test": "claim"
   },
   {
-   "id": "GLOSA-CC-20260905-5044",
+   "id": "GLOSA-CC-20260905-5048",
    "kind": "adversarial",
    "defect": "k_state_rounded_up",
    "claim_file": "claims/adv_k_state_rounded_up_008.json",
@@ -851,15 +884,7 @@
    "artifact_under_test": "claim"
   },
   {
-   "id": "GLOSA-CC-20260905-5045",
-   "kind": "adversarial",
-   "defect": "k_state_rounded_up",
-   "claim_file": "claims/adv_k_state_rounded_up_009.json",
-   "citation_file": "citations/adv_k_state_rounded_up_009.json",
-   "artifact_under_test": "claim"
-  },
-  {
-   "id": "GLOSA-CC-20260905-5046",
+   "id": "GLOSA-CC-20260905-5049",
    "kind": "adversarial",
    "defect": "stub_public",
    "claim_file": "claims/adv_stub_public_001.json",
@@ -867,7 +892,7 @@
    "artifact_under_test": "claim"
   },
   {
-   "id": "GLOSA-CC-20260905-5047",
+   "id": "GLOSA-CC-20260905-5050",
    "kind": "adversarial",
    "defect": "stub_public",
    "claim_file": "claims/adv_stub_public_002.json",
@@ -875,7 +900,7 @@
    "artifact_under_test": "claim"
   },
   {
-   "id": "GLOSA-CC-20260905-5048",
+   "id": "GLOSA-CC-20260905-5051",
    "kind": "adversarial",
    "defect": "stub_public",
    "claim_file": "claims/adv_stub_public_003.json",
@@ -883,7 +908,7 @@
    "artifact_under_test": "claim"
   },
   {
-   "id": "GLOSA-CC-20260905-5049",
+   "id": "GLOSA-CC-20260905-5052",
    "kind": "adversarial",
    "defect": "stub_public",
    "claim_file": "claims/adv_stub_public_004.json",
@@ -891,7 +916,7 @@
    "artifact_under_test": "claim"
   },
   {
-   "id": "GLOSA-CC-20260905-5050",
+   "id": "GLOSA-CC-20260905-5053",
    "kind": "adversarial",
    "defect": "stub_public",
    "claim_file": "claims/adv_stub_public_005.json",
@@ -899,7 +924,7 @@
    "artifact_under_test": "claim"
   },
   {
-   "id": "GLOSA-CC-20260905-5051",
+   "id": "GLOSA-CC-20260905-5054",
    "kind": "adversarial",
    "defect": "stub_public",
    "claim_file": "claims/adv_stub_public_006.json",
@@ -907,7 +932,7 @@
    "artifact_under_test": "claim"
   },
   {
-   "id": "GLOSA-CC-20260905-5052",
+   "id": "GLOSA-CC-20260905-5055",
    "kind": "adversarial",
    "defect": "stub_public",
    "claim_file": "claims/adv_stub_public_007.json",
@@ -915,7 +940,7 @@
    "artifact_under_test": "claim"
   },
   {
-   "id": "GLOSA-CC-20260905-5053",
+   "id": "GLOSA-CC-20260905-5056",
    "kind": "adversarial",
    "defect": "stub_public",
    "claim_file": "claims/adv_stub_public_008.json",
@@ -923,15 +948,7 @@
    "artifact_under_test": "claim"
   },
   {
-   "id": "GLOSA-CC-20260905-5054",
-   "kind": "adversarial",
-   "defect": "stub_public",
-   "claim_file": "claims/adv_stub_public_009.json",
-   "citation_file": "citations/adv_stub_public_009.json",
-   "artifact_under_test": "claim"
-  },
-  {
-   "id": "GLOSA-CC-20260905-5055",
+   "id": "GLOSA-CC-20260905-5057",
    "kind": "adversarial",
    "defect": "signature_missing",
    "claim_file": "claims/adv_signature_missing_001.json",
@@ -939,7 +956,7 @@
    "artifact_under_test": "claim"
   },
   {
-   "id": "GLOSA-CC-20260905-5056",
+   "id": "GLOSA-CC-20260905-5058",
    "kind": "adversarial",
    "defect": "signature_missing",
    "claim_file": "claims/adv_signature_missing_002.json",
@@ -947,7 +964,7 @@
    "artifact_under_test": "claim"
   },
   {
-   "id": "GLOSA-CC-20260905-5057",
+   "id": "GLOSA-CC-20260905-5059",
    "kind": "adversarial",
    "defect": "signature_missing",
    "claim_file": "claims/adv_signature_missing_003.json",
@@ -955,7 +972,7 @@
    "artifact_under_test": "claim"
   },
   {
-   "id": "GLOSA-CC-20260905-5058",
+   "id": "GLOSA-CC-20260905-5060",
    "kind": "adversarial",
    "defect": "signature_missing",
    "claim_file": "claims/adv_signature_missing_004.json",
@@ -963,7 +980,7 @@
    "artifact_under_test": "claim"
   },
   {
-   "id": "GLOSA-CC-20260905-5059",
+   "id": "GLOSA-CC-20260905-5061",
    "kind": "adversarial",
    "defect": "signature_missing",
    "claim_file": "claims/adv_signature_missing_005.json",
@@ -971,7 +988,7 @@
    "artifact_under_test": "claim"
   },
   {
-   "id": "GLOSA-CC-20260905-5060",
+   "id": "GLOSA-CC-20260905-5062",
    "kind": "adversarial",
    "defect": "signature_missing",
    "claim_file": "claims/adv_signature_missing_006.json",
@@ -979,7 +996,7 @@
    "artifact_under_test": "claim"
   },
   {
-   "id": "GLOSA-CC-20260905-5061",
+   "id": "GLOSA-CC-20260905-5063",
    "kind": "adversarial",
    "defect": "signature_missing",
    "claim_file": "claims/adv_signature_missing_007.json",
@@ -987,7 +1004,7 @@
    "artifact_under_test": "claim"
   },
   {
-   "id": "GLOSA-CC-20260905-5062",
+   "id": "GLOSA-CC-20260905-5064",
    "kind": "adversarial",
    "defect": "signature_missing",
    "claim_file": "claims/adv_signature_missing_008.json",
@@ -995,15 +1012,7 @@
    "artifact_under_test": "claim"
   },
   {
-   "id": "GLOSA-CC-20260905-5063",
-   "kind": "adversarial",
-   "defect": "signature_missing",
-   "claim_file": "claims/adv_signature_missing_009.json",
-   "citation_file": "citations/adv_signature_missing_009.json",
-   "artifact_under_test": "claim"
-  },
-  {
-   "id": "GLOSA-CC-20260905-5064",
+   "id": "GLOSA-CC-20260905-5065",
    "kind": "adversarial",
    "defect": "injected_infinity",
    "claim_file": "claims/adv_injected_infinity_001.json",
@@ -1011,7 +1020,7 @@
    "artifact_under_test": "claim"
   },
   {
-   "id": "GLOSA-CC-20260905-5065",
+   "id": "GLOSA-CC-20260905-5066",
    "kind": "adversarial",
    "defect": "injected_infinity",
    "claim_file": "claims/adv_injected_infinity_002.json",
@@ -1019,7 +1028,7 @@
    "artifact_under_test": "claim"
   },
   {
-   "id": "GLOSA-CC-20260905-5066",
+   "id": "GLOSA-CC-20260905-5067",
    "kind": "adversarial",
    "defect": "injected_infinity",
    "claim_file": "claims/adv_injected_infinity_003.json",
@@ -1027,7 +1036,7 @@
    "artifact_under_test": "claim"
   },
   {
-   "id": "GLOSA-CC-20260905-5067",
+   "id": "GLOSA-CC-20260905-5068",
    "kind": "adversarial",
    "defect": "injected_infinity",
    "claim_file": "claims/adv_injected_infinity_004.json",
@@ -1035,7 +1044,7 @@
    "artifact_under_test": "claim"
   },
   {
-   "id": "GLOSA-CC-20260905-5068",
+   "id": "GLOSA-CC-20260905-5069",
    "kind": "adversarial",
    "defect": "injected_infinity",
    "claim_file": "claims/adv_injected_infinity_005.json",
@@ -1043,7 +1052,7 @@
    "artifact_under_test": "claim"
   },
   {
-   "id": "GLOSA-CC-20260905-5069",
+   "id": "GLOSA-CC-20260905-5070",
    "kind": "adversarial",
    "defect": "injected_infinity",
    "claim_file": "claims/adv_injected_infinity_006.json",
@@ -1051,7 +1060,7 @@
    "artifact_under_test": "claim"
   },
   {
-   "id": "GLOSA-CC-20260905-5070",
+   "id": "GLOSA-CC-20260905-5071",
    "kind": "adversarial",
    "defect": "injected_infinity",
    "claim_file": "claims/adv_injected_infinity_007.json",
@@ -1059,19 +1068,11 @@
    "artifact_under_test": "claim"
   },
   {
-   "id": "GLOSA-CC-20260905-5071",
+   "id": "GLOSA-CC-20260905-5072",
    "kind": "adversarial",
    "defect": "injected_infinity",
    "claim_file": "claims/adv_injected_infinity_008.json",
    "citation_file": "citations/adv_injected_infinity_008.json",
-   "artifact_under_test": "claim"
-  },
-  {
-   "id": "GLOSA-CC-20260905-5072",
-   "kind": "adversarial",
-   "defect": "injected_infinity",
-   "claim_file": "claims/adv_injected_infinity_009.json",
-   "citation_file": "citations/adv_injected_infinity_009.json",
    "artifact_under_test": "claim"
   },
   {

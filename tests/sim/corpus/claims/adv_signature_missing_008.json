@@ -1,6 +1,6 @@
 {
- "schema_version": "0.4.0",
- "claim_id": "GLOSA-CC-20260905-5062",
+ "schema_version": "0.7.0",
+ "claim_id": "GLOSA-CC-20260905-5064",
  "shape": "full",
  "statement": {
   "language": "th",
@@ -55,7 +55,8 @@
    "as_of": "2026-09-04",
    "retrievable_original": true,
    "access_model": "direct household observation log",
-   "citation_refs": []
+   "citation_refs": [],
+   "ai_assisted_fields": []
   },
   "separates": {
    "value_z0": "in-box vs out-of-box urination location",
@@ -89,7 +90,7 @@
      "evidence_id": "ev-cat-001",
      "bearing": "SUPPORTS",
      "independence_class": "I1",
-     "citation_ref": "cite-corpus-122",
+     "citation_ref": "cite-corpus-124",
      "strength": "generated fixture",
      "review_mode": "MAKER_SELF_CHECK",
      "route_id": null,
@@ -241,7 +242,7 @@
   "obs-cat-litterbox-001"
  ],
  "related_citation_cards": [
-  "cite-corpus-122"
+  "cite-corpus-124"
  ],
  "responsibility": {
   "data_to_inference": "joint",
@@ -286,5 +287,15 @@
    "by": "founder+AI",
    "note": "initial draft, worked example"
   }
- ]
+ ],
+ "comparison": {
+  "target": null,
+  "relation": "not_compared",
+  "basis": "single-household 14-day observation; no comparable prior case identified to compare against"
+ },
+ "evidence_strength": {
+  "class": "direct_validation",
+  "notes": "evidence bears directly on this household/cat, not read across from a different case"
+ },
+ "verdict_class": "DERIVED"
 }

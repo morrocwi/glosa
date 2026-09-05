@@ -9,6 +9,14 @@ id: hsel-<slug>-<nnn>
 problem_ref: <problem_card id>              # S1 — the one problem all candidate hypotheses answer
 decided_by: string, minLength 1             # human name/role — required, non-delegable
 decided_at: ISO date
+session_id: <string, or null>               # session-grouping key (SA-1/SA-2, schema.retention-
+                                             # direction-field, build_now). Additive field --
+                                             # additionalProperties is true on this schema, so this
+                                             # validates today without a schema-file change. Set this
+                                             # from the Blackbox Note session that opened/reopened the
+                                             # session this selection happened in (session.session_id).
+                                             # Without it, retained_direction below can only be
+                                             # honestly scoped to single-session rows (see note there).
 
 candidates:
   - hypothesis_ref: <claim_id, R2>          # one per lens-out hypothesis
@@ -54,6 +62,22 @@ selection:
       reason: string, minLength 1           # required per parked candidate — never deleted, never
                                              # silently dropped; a parked hypothesis's LRS manifest
                                              # and dialogue table stay in the repo, cross-linked
+
+retained_direction: unknown | expansion | tunnel   # default unknown (schema.retention-direction-
+                                             # field, SA-2, NC-77, build_now). "Retention is not
+                                             # direction-evidence by itself" -- may be written as
+                                             # expansion|tunnel ONLY when a resolvable
+                                             # evidence_relation to a review_report/falsifier artifact
+                                             # exists (v8.1:358-361); otherwise it MUST stay `unknown`.
+                                             # Scope note (honest interim state, not a stopping point):
+                                             # for rows spanning >=2 sessions this is only fully
+                                             # checkable once `session_id` above is populated from a
+                                             # real Blackbox Note session (blocked_on:
+                                             # session.boundary-blackbox-note) -- until then this field
+                                             # is trivially true for single-session rows only.
+retained_direction_evidence_relation_ref: null   # required alongside any non-`unknown` value above --
+                                             # ref to the review_report/falsifier artifact that
+                                             # actually resolved the direction; never inferred.
 
 cooking_log_ref: <blackbox_note id, cooking[] entry>
   # this selection event MUST be appended to the Blackbox Note's cooking log (request 32) — the

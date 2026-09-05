@@ -1,0 +1,19 @@
+{
+ "id": "hsel-chooser_forgotten-valid-005",
+ "problem_ref": "GLOSA-PC-20260905-0001",
+ "selection_status": "chosen",
+ "session_ids": [
+  "sess-01"
+ ],
+ "evidence_relation": null,
+ "retained_direction": null,
+ "previously_chosen_session": "sess-01",
+ "reopened_in_session": "sess-06",
+ "chooser_reaffirmations": [
+  {
+   "by": "founder",
+   "session_id": "sess-06",
+   "ts": "2026-09-05T00:00:00Z"
+  }
+ ]
+}

@@ -152,3 +152,140 @@ class FindingsCompleteTest(unittest.TestCase):
             down.write_text("X-1 carried; X-2 closed: duplicate of X-1", encoding="utf-8")
             r = subprocess.run([sys.executable, str(ROOT / "scripts/check_findings_complete.py"), str(up), str(down)], capture_output=True, text=True)
             self.assertEqual(r.returncode, 0, r.stdout)
+
+
+class SessionOpenCloseTest(unittest.TestCase):
+    """`glosa session open|close` (SA-1, SESSION_ARCH_v0.4_SPEC.md §2.1/§2.2/§8, build_now): the
+    session-boundary + AI-reset fact lives on a Blackbox Note. `close` is fail-closed -- it must
+    refuse without a non-empty, human-authored --retention-note (the field is never AI-filled)."""
+
+    def _open(self, td, session_id="S-TEST-001"):
+        r = subprocess.run(
+            [sys.executable, str(ROOT / "cli/glosa"), "session", "open",
+             "--session-id", session_id, "--project", "t-proj", "--human-owner", "founder",
+             "--out-dir", str(Path(td) / "sess")],
+            capture_output=True, text=True,
+        )
+        self.assertEqual(r.returncode, 0, r.stdout + r.stderr)
+        out = json.loads(r.stdout)
+        self.assertTrue(out["self_check"]["ok"], r.stdout)
+        self.assertEqual(out["ai_state_at_boundary"], "reset")
+        return out, Path(out["written"]["path"])
+
+    def test_open_scaffolds_a_valid_note_with_open_session_block(self):
+        import tempfile
+        with tempfile.TemporaryDirectory() as td:
+            out, note_path = self._open(td)
+            self.assertTrue(note_path.exists())
+            data = json.loads(note_path.read_text(encoding="utf-8")) if note_path.suffix == ".json" else None
+            if data is None:
+                import yaml
+                data = yaml.safe_load(note_path.read_text(encoding="utf-8"))
+            self.assertEqual(data["session"]["session_id"], "S-TEST-001")
+            self.assertIsNone(data["session"]["session_boundary"]["closed_at"])
+            self.assertIsNone(data["session"]["retention_note"])
+
+    def test_close_refuses_without_retention_note(self):
+        import tempfile
+        with tempfile.TemporaryDirectory() as td:
+            _, note_path = self._open(td)
+            r = subprocess.run(
+                [sys.executable, str(ROOT / "cli/glosa"), "session", "close",
+                 "--path", str(note_path), "--retention-note", ""],
+                capture_output=True, text=True,
+            )
+            self.assertNotEqual(r.returncode, 0, r.stdout)
+            self.assertIn("REFUSED", r.stdout)
+
+    def test_close_with_retention_note_writes_closed_at_and_reset(self):
+        import tempfile
+        with tempfile.TemporaryDirectory() as td:
+            _, note_path = self._open(td)
+            r = subprocess.run(
+                [sys.executable, str(ROOT / "cli/glosa"), "session", "close",
+                 "--path", str(note_path), "--retention-note", "human kept the resistance-route decision"],
+                capture_output=True, text=True,
+            )
+            self.assertEqual(r.returncode, 0, r.stdout + r.stderr)
+            out = json.loads(r.stdout)
+            self.assertTrue(out["self_check"]["ok"], r.stdout)
+            self.assertIsNotNone(out["closed_at"])
+            # closing again must refuse (already closed), never silently re-close
+            r2 = subprocess.run(
+                [sys.executable, str(ROOT / "cli/glosa"), "session", "close",
+                 "--path", str(note_path), "--retention-note", "x"],
+                capture_output=True, text=True,
+            )
+            self.assertNotEqual(r2.returncode, 0, r2.stdout)
+
+
+class DialogueTableDefeaterColumnsTest(unittest.TestCase):
+    """`lrs.dialogue-table-claim-type-column` (build_now): dialogue_table.md and `glosa lit table`
+    gain `defeater_class` + `legitimate_defeater` (deliberately NOT `claim_type`, which already
+    routes rule16w on claim_card.yaml -- see SESSION_ARCH_v0.4_SPEC.md §9.3/§10.1). A row with a
+    real stance (YES/NO) and no defeater_class/legitimate_defeater must render flagged INCOMPLETE."""
+
+    def test_template_has_new_columns_not_claim_type(self):
+        text = (ROOT / "templates/knowledge/dialogue_table.md").read_text(encoding="utf-8")
+        self.assertIn("defeater_class", text)
+        self.assertIn("legitimate_defeater", text)
+        header_line = next(l for l in text.splitlines() if l.startswith("| source"))
+        self.assertNotIn("claim_type", header_line)
+
+    def test_lit_table_flags_incomplete_and_accepts_complete_row(self):
+        import tempfile
+        with tempfile.TemporaryDirectory() as td:
+            env = dict(os.environ, GLOSA_RECORDS_ROOT=td)
+            slug, hyp = "t-defeater", "h1"
+            subprocess.run([sys.executable, str(ROOT / "cli/glosa"), "lit", "new", slug, hyp], cwd=td, env=env, capture_output=True, text=True)
+            rows_dir = Path(td) / "records" / "lit" / slug / hyp / "rows"
+            rows_dir.mkdir(parents=True, exist_ok=True)
+            (rows_dir / "incomplete.json").write_text(json.dumps({
+                "hypothesis_ref": hyp, "source_label": "Source A", "stance": "YES",
+                "citation_card": "cc-1", "verified": {"metadata_verified": True, "claim_match_verified": True},
+            }), encoding="utf-8")
+            (rows_dir / "complete.json").write_text(json.dumps({
+                "hypothesis_ref": hyp, "source_label": "Source B", "stance": "NO",
+                "citation_card": "cc-2", "verified": {"metadata_verified": True, "claim_match_verified": True},
+                "defeater_class": "empirical", "legitimate_defeater": "a documented failed replication",
+            }), encoding="utf-8")
+            r = subprocess.run([sys.executable, str(ROOT / "cli/glosa"), "lit", "table", slug, hyp], cwd=td, env=env, capture_output=True, text=True)
+            self.assertEqual(r.returncode, 0, r.stdout + r.stderr)
+            out = json.loads(r.stdout)
+            self.assertEqual(out["rows_incomplete_defeater"], ["Source A"], r.stdout)
+            table_text = (Path(td) / "records" / "lit" / slug / hyp / "dialogue_table.md").read_text(encoding="utf-8")
+            self.assertIn("INCOMPLETE", table_text)
+            self.assertIn("empirical", table_text)
+
+
+class HypothesisSelectionSessionIdTest(unittest.TestCase):
+    """`schema.retention-direction-field`/SA-2 (build_now): hypothesis_selection.yaml gains a
+    session-grouping key plus a `retained_direction` field defaulted `unknown` (NC-77 -- retention
+    is never direction-evidence on its own)."""
+
+    def test_lit_select_writes_session_id_and_default_retained_direction(self):
+        import tempfile
+        with tempfile.TemporaryDirectory() as td:
+            env = dict(os.environ, GLOSA_RECORDS_ROOT=td)
+            slug, hyp = "t-hsel", "h1"
+            subprocess.run([sys.executable, str(ROOT / "cli/glosa"), "lit", "new", slug, hyp], cwd=td, env=env, capture_output=True, text=True)
+            manifest_dir = Path(td) / "records" / "lit" / slug / hyp
+            (manifest_dir / "litreview_manifest.json").write_text(json.dumps({
+                "id": "litrev-t-001", "hypothesis_ref": hyp, "status": "FROZEN",
+                "gate": {"accuracy_gate": "PASS", "diversity_gate": "PASS", "overall": "PASS"},
+            }), encoding="utf-8")
+            r = subprocess.run(
+                [sys.executable, str(ROOT / "cli/glosa"), "lit", "select", slug,
+                 "--decided-by", "founder", "--reason", "best fit", "--chosen", "all",
+                 "--session-id", "S-TEST-001"],
+                cwd=td, env=env, capture_output=True, text=True,
+            )
+            self.assertEqual(r.returncode, 0, r.stdout + r.stderr)
+            out = json.loads(r.stdout)
+            hsel_path = Path(out["written"]["path"])
+            data = json.loads(hsel_path.read_text(encoding="utf-8")) if hsel_path.suffix == ".json" else None
+            if data is None:
+                import yaml
+                data = yaml.safe_load(hsel_path.read_text(encoding="utf-8"))
+            self.assertEqual(data["session_id"], "S-TEST-001")
+            self.assertEqual(data["retained_direction"], "unknown")

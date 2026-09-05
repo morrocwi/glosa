@@ -1376,5 +1376,202 @@ class KernelRuleV06PatchTest(unittest.TestCase):
         self.assertTrue(res["ok"], res["errors"])
 
 
+class SessionArchV04Test(unittest.TestCase):
+    """design/SESSION_ARCH_v0.4_SPEC.md build_now nodes: kernel rule29 (strength-of-claim is not
+    a defeater), rule30 (defeater_class-appropriate falsifier phrasing), NC-77 (retained_direction
+    validate_hypothesis_selection), D-NO-PRECOMMIT-ROUTE (validate_problem_card), the unnumbered
+    session-boundary cross-note check, and chi_recip_diagnostic."""
+
+    def setUp(self):
+        self.card = load_example("claim_card.example.json")
+        self.selection = load_example("hypothesis_selection.example.json")
+        self.problem_card = load_example("problem_card.example.json")
+        self.blackbox_note = load_example("blackbox_note.example.json")
+
+    # -- rule29: strength-of-claim is not a defeater --
+
+    def test_rule29_strength_of_claim_defeater(self):
+        card = load_fail("fail_rule29_strength_of_claim_defeater.json")
+        res = k.validate_claim_card(card)
+        self.assertFalse(res["ok"])
+        self.assertTrue(any("rule29" in e for e in res["errors"]), res["errors"])
+
+    def test_rule29_real_contrary_evidence_falsifier_passes(self):
+        card = copy.deepcopy(self.card)
+        card["five_questions"]["tested"]["falsifier"] = (
+            "Defeated by a documented case where retained_direction is negative across 3 "
+            "consecutive turns."
+        )
+        res = k.validate_claim_card(card, citation_cards=[load_example("citation_card.example.json")])
+        self.assertFalse(any("rule29" in e for e in res["errors"]), res["errors"])
+
+    def test_rule29_clean_example_untouched(self):
+        res = k.validate_claim_card(self.card, citation_cards=[load_example("citation_card.example.json")])
+        self.assertFalse(any("rule29" in e for e in res["errors"]), res["errors"])
+
+    # -- rule30: defeater_class-appropriate falsifier phrasing --
+
+    def test_rule30_defeater_class_mismatch(self):
+        card = load_fail("fail_rule30_defeater_class_mismatch.json")
+        res = k.validate_claim_card(card)
+        self.assertFalse(res["ok"])
+        self.assertTrue(any("rule30" in e for e in res["errors"]), res["errors"])
+
+    def test_rule30_correct_pairing_passes(self):
+        card = copy.deepcopy(self.card)
+        card["five_questions"]["tested"]["defeater_class"] = "EMPIRICAL"
+        card["five_questions"]["tested"]["falsifier"] = (
+            "Defeated by a documented failed replication in an independent sample."
+        )
+        res = k.validate_claim_card(card, citation_cards=[load_example("citation_card.example.json")])
+        self.assertFalse(any("rule30" in e for e in res["errors"]), res["errors"])
+
+    def test_rule30_phenomenological_paired_with_absence_style_passes(self):
+        card = copy.deepcopy(self.card)
+        card["five_questions"]["tested"]["defeater_class"] = "PHENOMENOLOGICAL"
+        card["five_questions"]["tested"]["falsifier"] = (
+            "The phenomenon would be absent within the declared scope, systematically "
+            "misdescribed, or explanatorily irrelevant."
+        )
+        res = k.validate_claim_card(card, citation_cards=[load_example("citation_card.example.json")])
+        self.assertFalse(any("rule30" in e for e in res["errors"]), res["errors"])
+
+    def test_rule30_absent_defeater_class_untouched(self):
+        res = k.validate_claim_card(self.card, citation_cards=[load_example("citation_card.example.json")])
+        self.assertFalse(any("rule30" in e for e in res["errors"]), res["errors"])
+
+    # -- NC-77 / validate_hypothesis_selection --
+
+    def test_nc77_retained_direction_unforced_rejected(self):
+        selection = load_fail("fail_nc77_retained_direction_unforced.json")
+        res = k.validate_hypothesis_selection(selection)
+        self.assertFalse(res["ok"])
+        self.assertTrue(any("NC-77" in e for e in res["errors"]), res["errors"])
+
+    def test_nc77_default_unknown_passes(self):
+        res = k.validate_hypothesis_selection(self.selection)
+        self.assertTrue(res["ok"], res["errors"])
+
+    def test_nc77_single_session_direction_not_forced(self):
+        # Spans <2 sessions (no session_id anywhere) -- NC-77 does not fire even with a declared
+        # direction, per the acceptance test's own "scoped to single-session rows" clause.
+        selection = copy.deepcopy(self.selection)
+        selection["retained_direction"] = "expansion"
+        res = k.validate_hypothesis_selection(selection)
+        self.assertTrue(res["ok"], res["errors"])
+
+    def test_nc77_resolved_evidence_relation_stands(self):
+        selection = copy.deepcopy(self.selection)
+        selection["session_id"] = "sess-001"
+        selection["chooser_reaffirmations"] = [
+            {"session_id": "sess-002", "reaffirmed_by": "founder", "reaffirmed_at": "2026-09-06"}
+        ]
+        selection["retained_direction"] = "expansion"
+        selection["direction_evidence_relation"] = {
+            "evidence_id": "ev-checker-001",
+            "bearing": "SUPPORTS",
+            "independence_class": "I3",
+            "citation_ref": "cite-checker-001",
+        }
+        res = k.validate_hypothesis_selection(selection)
+        self.assertTrue(res["ok"], res["errors"])
+
+    # -- D-NO-PRECOMMIT-ROUTE (validate_problem_card) --
+
+    def test_no_precommit_route_flags_not_blocks(self):
+        # problem_card.example.json reaches READY_FOR_S2 with no precommitted_resistance_route --
+        # a flag, not a rejection.
+        res = k.validate_problem_card(self.problem_card)
+        self.assertTrue(res["ok"], res["errors"])
+        self.assertTrue(any("D-NO-PRECOMMIT-ROUTE" in w for w in res["warnings"]), res["warnings"])
+
+    def test_precommit_route_named_clears_flag(self):
+        card = copy.deepcopy(self.problem_card)
+        card["intake"]["precommitted_resistance_route"] = "critic: a second household could replicate"
+        res = k.validate_problem_card(card)
+        self.assertTrue(res["ok"], res["errors"])
+        self.assertFalse(any("D-NO-PRECOMMIT-ROUTE" in w for w in res["warnings"]), res["warnings"])
+
+    def test_not_ready_for_s2_no_flag(self):
+        card = copy.deepcopy(self.problem_card)
+        card["readiness"]["verdict"] = "NOT_READY"
+        res = k.validate_problem_card(card)
+        self.assertFalse(any("D-NO-PRECOMMIT-ROUTE" in w for w in res["warnings"]), res["warnings"])
+
+    # -- session-boundary reset (unnumbered, pending founder ratification of §2.2) --
+
+    def test_session_boundary_not_reset_fixture_rejected_by_schema(self):
+        note = load_fail("fail_session_boundary_not_reset.json")
+        res = k.validate_blackbox_note(note)
+        self.assertFalse(res["ok"])
+
+    def test_session_boundary_shared_session_missing_reset_flagged(self):
+        note_a = copy.deepcopy(self.blackbox_note)
+        note_a["session_id"] = "sess-shared-001"
+        note_a["session_boundary"] = {"opened_at": "t0", "closed_at": "t1", "ai_state_at_boundary": "reset"}
+        note_b = copy.deepcopy(self.blackbox_note)
+        note_b["id"] = "BB-2026-09-05-01"
+        note_b["session_id"] = "sess-shared-001"
+        note_b["session_boundary"] = {"opened_at": "t1", "closed_at": None}  # missing ai_state_at_boundary
+        res = k.check_session_boundary_reset([note_a, note_b])
+        self.assertFalse(res["ok"])
+        self.assertTrue(any("session_boundary" in e for e in res["errors"]), res["errors"])
+
+    def test_session_boundary_different_session_ids_not_flagged(self):
+        note_a = copy.deepcopy(self.blackbox_note)
+        note_a["session_id"] = "sess-001"
+        note_a["session_boundary"] = {"ai_state_at_boundary": "reset"}
+        note_b = copy.deepcopy(self.blackbox_note)
+        note_b["id"] = "BB-2026-09-05-01"
+        note_b["session_id"] = "sess-002"
+        note_b["session_boundary"] = {}  # no ai_state_at_boundary, but different session -- not shared
+        res = k.check_session_boundary_reset([note_a, note_b])
+        self.assertTrue(res["ok"], res["errors"])
+
+    # -- chi_recip_diagnostic (Open diagnostic over kg_edge; never a verdict) --
+
+    def test_chi_recip_not_computable_without_session_id(self):
+        edges = [
+            {"id": "e1", "from": "n1", "to": "n2", "relation": "supports"},
+            {"id": "e2", "from": "n2", "to": "n1", "relation": "supports"},
+        ]
+        result = k.chi_recip_diagnostic(edges, horizon=10)
+        self.assertIn(None, result)
+        self.assertTrue(result[None]["not_computable"])
+        self.assertNotIn("chi_recip", result[None])
+
+    def test_chi_recip_counts_reciprocal_pairs_and_is_reproducible(self):
+        edges = [
+            {"id": "e1", "from": "n1", "to": "n2", "relation": "supports", "session_id": "s1"},
+            {"id": "e2", "from": "n2", "to": "n1", "relation": "supports", "session_id": "s1"},
+            {"id": "e3", "from": "n3", "to": "n4", "relation": "derives_from", "session_id": "s1"},
+        ]
+        r1 = k.chi_recip_diagnostic(edges, horizon=10)
+        r2 = k.chi_recip_diagnostic(edges, horizon=10)
+        self.assertEqual(r1["s1"]["chi_recip"], 1)
+        self.assertEqual(r1["s1"]["tier"], "Open")
+        self.assertEqual(r1, r2)  # reproducible across repeated calls, same horizon
+
+    def test_chi_recip_two_horizon_settings_both_computable(self):
+        edges = [
+            {"id": "e1", "from": "n1", "to": "n2", "relation": "supports", "session_id": "s1"},
+            {"id": "e2", "from": "n2", "to": "n1", "relation": "supports", "session_id": "s1"},
+        ]
+        small = k.chi_recip_diagnostic(edges, horizon=1)  # only e1 in horizon -- no reciprocal pair yet
+        full = k.chi_recip_diagnostic(edges, horizon=2)
+        self.assertEqual(small["s1"]["chi_recip"], 0)
+        self.assertEqual(full["s1"]["chi_recip"], 1)
+
+    def test_chi_recip_rejects_non_positive_horizon(self):
+        with self.assertRaises(ValueError):
+            k.chi_recip_diagnostic([], horizon=0)
+
+    def test_chi_recip_disclaimer_present_never_a_verdict_field(self):
+        edges = [{"id": "e1", "from": "n1", "to": "n2", "relation": "supports", "session_id": "s1"}]
+        result = k.chi_recip_diagnostic(edges, horizon=5)
+        self.assertIn("disclaimer", result["s1"])
+        self.assertNotIn("verdict", result["s1"])
+
+
 if __name__ == "__main__":
     unittest.main()

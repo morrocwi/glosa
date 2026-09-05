@@ -961,6 +961,92 @@ def _inflated_bearing_errors(card, citation_cards):
 
 
 # --------------------------------------------------------------------------------------------
+# Kernel rule29 (design/SESSION_ARCH_v0.4_SPEC.md §10.3, lrs.defeater-not-collapse-rule):
+# "strength of the claim" is not a defeater. The spec's own suggested home for the phrase list
+# (methodology/data/non_defeater_phrase_table.json, sibling to contaminated_concept_table.json)
+# is NOT in this task's ownership list, so the pattern is kept inline here instead -- same
+# convention already used by rule8/rule18/rule21's own inline regexes in this file; the rule's
+# statement and failing control are unchanged, only the storage location differs from the spec's
+# suggestion. Grounded (by analogy, not direct derivation -- per §9.3's framing fix) on
+# sources/notes/EPISTEMIC_FUSION_v8.1.txt:51,53's Burden rule ("'The claim is strong' is not a
+# counterexample, an inconsistency, a failed phenomenon, or contrary evidence").
+# tier: Dr (specified this pass) -> finite_diagnostic once tests/test_rule29_non_defeater_phrase.py
+# ships; disclosed as evadable-by-omission like rule27/rule28, never claimed as a structural
+# guarantee.
+# --------------------------------------------------------------------------------------------
+
+_STRENGTH_OF_CLAIM_RE = re.compile(
+    r"strength of (the |this )?claim|feels solid|feels right|intuitively (strong|solid|convincing)",
+    re.IGNORECASE,
+)
+
+
+def _rule29_non_defeater_error(card):
+    """Kernel rule29: `five_questions.tested.falsifier` matching a strength-of-claim / feels-solid
+    phrasing is never itself a legitimate defeater, regardless of `claim_type`. Returns an error
+    string, or None when the falsifier text does not match the pattern (including a falsifier
+    stating an actual contrary-evidence or absence condition, which must NOT fire)."""
+    falsifier = str(((card.get("five_questions") or {}).get("tested") or {}).get("falsifier") or "")
+    m = _STRENGTH_OF_CLAIM_RE.search(falsifier)
+    if not m:
+        return None
+    return (
+        f"ERROR: rule29 -- tested.falsifier reads as a strength-of-claim assertion, not a "
+        f"legitimate defeater (matched pattern: {m.group(0)!r})"
+    )
+
+
+# --------------------------------------------------------------------------------------------
+# Kernel rule30 (design/SESSION_ARCH_v0.4_SPEC.md §10.4, lrs.claim-type-defeater-enum):
+# defeater_class-appropriate falsifier phrasing. `five_questions.tested.defeater_class` (additive
+# sibling of `claim_type`, see claim_card.schema.json) must be paired with a falsifier phrasing
+# style matching that class, per EPISTEMIC_FUSION_v8.1.txt §1. Only the EMPIRICAL <->
+# PHENOMENOLOGICAL pairing is disclosed/checkable this pass -- the other three classes'
+# (CONSTITUTIVE/STRUCTURAL_FORMAL/DIAGNOSTIC) own phrasing styles are an open dependency per
+# §10.4's own disclosure, not pre-cited here.
+# tier: Dr (citation corrected, mechanism redesigned this pass; not yet built) -> finite_diagnostic
+# once tests/test_rule30_defeater_class.py ships.
+# --------------------------------------------------------------------------------------------
+
+_PHENOMENOLOGICAL_STYLE_RE = re.compile(
+    r"absent within the declared scope|systematically misdescribed|explanatorily irrelevant",
+    re.IGNORECASE,
+)
+_EMPIRICAL_STYLE_RE = re.compile(
+    r"contrary evidence|failed replication|independent sample|documented (case|failure)",
+    re.IGNORECASE,
+)
+
+# {defeater_class: (own_style_re, other_style_re, other_class_name)} -- open dependency: only the
+# two classes with a citable phrasing style (v8.1:45, v8.1:53-54) are keyed here.
+_DEFEATER_CLASS_STYLE = {
+    "EMPIRICAL": (_EMPIRICAL_STYLE_RE, _PHENOMENOLOGICAL_STYLE_RE, "PHENOMENOLOGICAL"),
+    "PHENOMENOLOGICAL": (_PHENOMENOLOGICAL_STYLE_RE, _EMPIRICAL_STYLE_RE, "EMPIRICAL"),
+}
+
+
+def _rule30_defeater_class_error(card):
+    """Kernel rule30: `five_questions.tested.defeater_class` must be paired with a `falsifier`
+    phrasing style matching that class. Returns an error string, or None (including when
+    `defeater_class` is absent, unrecognized, or one of the three open-dependency classes)."""
+    tested = (card.get("five_questions") or {}).get("tested") or {}
+    defeater_class = tested.get("defeater_class")
+    style = _DEFEATER_CLASS_STYLE.get(defeater_class)
+    if not style:
+        return None
+    own_re, other_re, other_name = style
+    falsifier = str(tested.get("falsifier") or "")
+    if own_re.search(falsifier):
+        return None
+    if other_re.search(falsifier):
+        return (
+            f"ERROR: rule30 -- defeater_class={defeater_class} but tested.falsifier matches the "
+            f"{other_name} phrasing style, not {defeater_class}'s"
+        )
+    return None
+
+
+# --------------------------------------------------------------------------------------------
 # validate_claim_card
 # --------------------------------------------------------------------------------------------
 
@@ -1084,6 +1170,16 @@ def validate_claim_card(card, allow_no_jsonschema=False, citation_cards=None):
             "citation_cards; a SUPPORTS evidence_relation's citation_ref resolution could not be "
             "verified. Pass citation_cards=[...] to close this gap."
         )
+
+    # Kernel rule29 (design/SESSION_ARCH_v0.4_SPEC.md §10.3): strength-of-claim is not a defeater
+    rule29_err = _rule29_non_defeater_error(card)
+    if rule29_err:
+        errors.append(rule29_err)
+
+    # Kernel rule30 (§10.4): defeater_class-appropriate falsifier phrasing
+    rule30_err = _rule30_defeater_class_error(card)
+    if rule30_err:
+        errors.append(rule30_err)
 
     return _result(ok=not errors, errors=errors, warnings=warnings, tier=tier)
 
@@ -1275,6 +1371,231 @@ def validate_blackbox_note(note, allow_no_jsonschema=False):
                 errors.append(f"blackbox_note: cooking[{i}].input_lines references line {n}, which does not exist in lines[].n")
 
     return _result(ok=not errors, errors=errors, warnings=warnings, tier=tier)
+
+
+# --------------------------------------------------------------------------------------------
+# check_session_boundary_reset (design/SESSION_ARCH_v0.4_SPEC.md §2.2/§8, SA-1, build_now) --
+# the unnumbered session-boundary rule, pending founder ratification of §2.2's logical-join
+# decision (§7 item 1; NOT one of kernel rule29/30, which are a different, already-numbered pair).
+# Cross-file check: a Blackbox Note pair sharing one `session_id`, split by an actual tool/process
+# restart, must BOTH carry `session_boundary.ai_state_at_boundary` literal 'reset' -- the schema
+# enum already restricts the field to the single literal value when present; what the schema
+# cannot express is the cross-file agreement itself, checked here.
+# --------------------------------------------------------------------------------------------
+
+def check_session_boundary_reset(notes):
+    """Given a list of blackbox_note payloads, group by `session_id` and flag any group where a
+    note names that session_id but is missing `session_boundary.ai_state_at_boundary == 'reset'`.
+    Returns a Result (`errors` lists one string per offending note); notes without a `session_id`
+    are not part of any group and are silently skipped (nothing to cross-check against).
+
+    Must fire: shared `session_id`, a note in that group missing/non-literal
+    `ai_state_at_boundary`. Must NOT fire: different `session_id` values on topically-similar
+    notes, or a single note with no `session_id` at all.
+    """
+    errors = []
+    by_session = {}
+    for i, note in enumerate(notes or []):
+        note = note or {}
+        sid = note.get("session_id")
+        if not sid:
+            continue
+        by_session.setdefault(sid, []).append((i, note))
+    for sid, group in by_session.items():
+        if len(group) < 2:
+            continue
+        for i, note in group:
+            boundary = note.get("session_boundary") or {}
+            if boundary.get("ai_state_at_boundary") != "reset":
+                errors.append(
+                    f"session_boundary(SA-1): notes[{i}] shares session_id={sid!r} with "
+                    f"{len(group) - 1} other note(s) but session_boundary.ai_state_at_boundary "
+                    f"is not the literal 'reset' (got {boundary.get('ai_state_at_boundary')!r})"
+                )
+    return _result(ok=not errors, errors=errors, tier="Dr")
+
+
+# --------------------------------------------------------------------------------------------
+# validate_problem_card (design/SESSION_ARCH_v0.4_SPEC.md §2.1/§2.2, schema.entry-resistance-
+# precommit-field, build_now) -- adds D-NO-PRECOMMIT-ROUTE, a FLAG that never blocks.
+# --------------------------------------------------------------------------------------------
+
+def _precommit_route_flag(card):
+    """D-NO-PRECOMMIT-ROUTE (flag, non-mandatory): flags -- never blocks -- a problem_card
+    reaching `readiness.verdict == READY_FOR_S2` with `intake.precommitted_resistance_route`
+    null/absent. Returns a warning string, or None. Must NOT fire when the field names a concrete
+    route (source/record/experiment/critic/authority) before the first AI-turn line, nor when
+    readiness has not yet reached READY_FOR_S2."""
+    readiness = card.get("readiness") or {}
+    if readiness.get("verdict") != "READY_FOR_S2":
+        return None
+    route = (card.get("intake") or {}).get("precommitted_resistance_route")
+    if route:
+        return None
+    return "FLAG: precommitted_resistance_route missing at READY_FOR_S2 (D-NO-PRECOMMIT-ROUTE)"
+
+
+def validate_problem_card(card, allow_no_jsonschema=False):
+    """Validate a problem_card payload against schema/problem_card.schema.json plus the kernel-
+    only D-NO-PRECOMMIT-ROUTE flag (see `_precommit_route_flag`'s docstring -- a warning, never a
+    hard error; the schema itself never blocks on this field being absent). Returns a Result.
+
+    `allow_no_jsonschema` (MUST-4): see `_schema_validate_gated`'s docstring.
+    """
+    if not isinstance(card, dict):
+        return _result(ok=False, errors=["validate_problem_card: instance is not an object"])
+
+    errors, warnings, tier, _used_fallback = _schema_validate_gated(
+        card, "problem_card.schema.json", allow_no_jsonschema
+    )
+
+    flag = _precommit_route_flag(card)
+    if flag:
+        warnings.append(flag)
+
+    return _result(ok=not errors, errors=errors, warnings=warnings, tier=tier)
+
+
+# --------------------------------------------------------------------------------------------
+# validate_hypothesis_selection (design/SESSION_ARCH_v0.4_SPEC.md §2.1/§4, schema.retention-
+# direction-field, build_now) -- kernel rule NC-77 (Family J, Retention != Direction).
+# --------------------------------------------------------------------------------------------
+
+def _session_span_count(selection):
+    """Count of distinct sessions a hypothesis_selection row is known to span: its own top-level
+    `session_id` (if any) plus one distinct session per `chooser_reaffirmations[]` entry. Returns
+    0 when no session_id is visible anywhere on the row -- session-grouping key wiring is the
+    recommended default this pass (design/SESSION_ARCH_v0.4_SPEC.md §7 item 7) but founder
+    ratification of that item is still PENDING, so this never fabricates a span it cannot see."""
+    sessions = set()
+    sid = selection.get("session_id")
+    if sid:
+        sessions.add(sid)
+    for reaff in selection.get("chooser_reaffirmations") or []:
+        rsid = (reaff or {}).get("session_id")
+        if rsid:
+            sessions.add(rsid)
+    return len(sessions)
+
+
+def _retained_direction_error(selection):
+    """Kernel rule NC-77 (Family J, methodology/data/non_collapse_table.json): a
+    hypothesis_selection row with `selection.chosen` non-empty, spanning >=2 sessions, may declare
+    `retained_direction` as expansion/tunnel ONLY when `direction_evidence_relation` resolves to a
+    real review_report/falsifier evidence relation (identified by its required `evidence_id`).
+    Otherwise the declared value is an unwarranted overclaim -- returns an error string. Returns
+    None when `retained_direction` is already 'unknown'/absent, the row spans <2 sessions, or a
+    resolvable `direction_evidence_relation` is present (that verdict's own sign stands, per
+    NC-77's own must-not-fire clause)."""
+    sel = selection.get("selection") or {}
+    if not sel.get("chosen"):
+        return None
+    direction = selection.get("retained_direction", "unknown")
+    if direction == "unknown":
+        return None
+    if _session_span_count(selection) < 2:
+        return None
+    rel = selection.get("direction_evidence_relation")
+    if isinstance(rel, dict) and rel.get("evidence_id"):
+        return None  # an existing checker/falsifier verdict's own sign stands
+    return (
+        f"NC-77(RETENTION-NEQ-DIRECTION): retained_direction={direction!r} declared on a chosen "
+        "row spanning >=2 sessions with no resolvable direction_evidence_relation "
+        "(review_report/falsifier) -- retention/persistence alone is never evidence of direction; "
+        "must be 'unknown' (D-RETENTION-DIRECTION)"
+    )
+
+
+def validate_hypothesis_selection(selection, allow_no_jsonschema=False):
+    """Validate a hypothesis_selection payload against schema/hypothesis_selection.schema.json
+    plus kernel rule NC-77 (see `_retained_direction_error`'s docstring). Returns a Result.
+
+    `allow_no_jsonschema` (MUST-4): see `_schema_validate_gated`'s docstring.
+    """
+    if not isinstance(selection, dict):
+        return _result(ok=False, errors=["validate_hypothesis_selection: instance is not an object"])
+
+    errors, warnings, tier, _used_fallback = _schema_validate_gated(
+        selection, "hypothesis_selection.schema.json", allow_no_jsonschema
+    )
+
+    nc77_err = _retained_direction_error(selection)
+    if nc77_err:
+        errors.append(nc77_err)
+
+    return _result(ok=not errors, errors=errors, warnings=warnings, tier=tier)
+
+
+# --------------------------------------------------------------------------------------------
+# chi_recip_diagnostic (design/SESSION_ARCH_v0.4_SPEC.md §2.1/§8, kernel.reciprocal-lineage-
+# diagnostic, build_now, tier Open) -- an Open finite diagnostic over kg_edge rows, never a
+# verdict. sources/notes/EPISTEMIC_FUSION_v7.1.txt:447 defines chi_recip[s,L] as "how many
+# readout-distinguishable reciprocal descendants does the declared seed set generate within the
+# finite session horizon L"; F11 (v7.1:554/496) is explicit that "a high finite reciprocal-lineage
+# gain can support either disciplined expansion or a supercritical tunnel ... cannot be read as
+# warrant, truth, or human benefit." This function computes ONLY the count -- callers must never
+# read a returned count as a pass/fail/gate (see the `momentum_overclaimed` fixture class,
+# design/SESSION_ARCH_v0.4_SPEC.md §5, and NC-77 above for the sibling collapse this guards).
+# --------------------------------------------------------------------------------------------
+
+def chi_recip_diagnostic(edges, horizon):
+    """Group `edges` (kg_edge payloads) by `session_id` and, within each group's first `horizon`
+    edges (the frozen session horizon L), count reciprocal-lineage pairs -- an unordered {from, to}
+    pair where BOTH (from->to) and (to->from) directed edges are present.
+
+    Returns a dict keyed by session_id. A group whose session_id is None/absent (no session_id on
+    any of those edges) reports `{"not_computable": True, "reason": ...}` -- chi_recip is NEVER
+    defaulted to a number when session_id is absent, per the acceptance test's own wording
+    (design/SESSION_ARCH_v0.4_SPEC.md §8). Every computable group's dict carries `tier: "Open"`
+    and F11's own disclaimer inline, and is reproducible across repeated calls with the same
+    `horizon` (deterministic set membership, no randomness) -- the acceptance test's "two
+    horizon-boundary settings" is exercised by calling this twice with different `horizon` values.
+
+    `horizon` must be a positive int (the frozen reader/horizon boundary L); raises ValueError
+    otherwise -- this diagnostic never silently substitutes an unbounded scan for a stated finite
+    horizon.
+    """
+    if not isinstance(horizon, int) or isinstance(horizon, bool) or horizon < 1:
+        raise ValueError("chi_recip_diagnostic: horizon must be a positive int (the finite session horizon L)")
+
+    by_session = {}
+    for e in edges or []:
+        e = e or {}
+        sid = e.get("session_id")
+        by_session.setdefault(sid, []).append(e)
+
+    results = {}
+    for sid, group in by_session.items():
+        if not sid:
+            results[sid] = {
+                "not_computable": True,
+                "reason": "kg_edge.session_id absent -- chi_recip is not computable without a "
+                "declared session horizon; never defaulted to a number",
+                "tier": "Open",
+            }
+            continue
+        frozen = group[:horizon]
+        directed_pairs = {
+            (e.get("from"), e.get("to"))
+            for e in frozen
+            if e.get("from") is not None and e.get("to") is not None
+        }
+        counted = set()
+        for (f, t) in directed_pairs:
+            if (t, f) in directed_pairs:
+                counted.add(frozenset((f, t)))
+        results[sid] = {
+            "chi_recip": len(counted),
+            "horizon": horizon,
+            "edges_in_horizon": len(frozen),
+            "tier": "Open",
+            "disclaimer": (
+                "F11 (EPISTEMIC_FUSION_v7.1.txt:554/496): a high finite reciprocal-lineage gain "
+                "can support either disciplined expansion or a supercritical tunnel -- chi_recip "
+                "cannot be read as warrant, truth, or human benefit, and is never a release gate."
+            ),
+        }
+    return results
 
 
 # --------------------------------------------------------------------------------------------
@@ -2035,6 +2356,8 @@ def self_test():
         ("citation_card.example.json", validate_citation_card),
         ("release_manifest.example.json", validate_release_manifest),
         ("blackbox_note.example.json", validate_blackbox_note),
+        ("problem_card.example.json", validate_problem_card),
+        ("hypothesis_selection.example.json", validate_hypothesis_selection),
     ]
     for filename, fn in pairs:
         p = examples_dir / filename
@@ -2060,6 +2383,12 @@ def self_test():
                 res = validate_claim_card(instance)
             elif "identifier" in instance and "claim_ref" in instance:
                 res = validate_citation_card(instance)
+            elif "lines" in instance and "cooking" in instance:
+                res = validate_blackbox_note(instance)
+            elif "intake" in instance and "readiness" in instance:
+                res = validate_problem_card(instance)
+            elif "candidates" in instance and "selection" in instance:
+                res = validate_hypothesis_selection(instance)
             else:
                 res = validate_claim_card(instance)
             if res["ok"]:

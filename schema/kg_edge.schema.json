@@ -16,6 +16,10 @@
     "asserted_at": { "type": "string" },
     "independence_class": { "$ref": "common.defs.json#/definitions/independence_class" },
     "status": { "enum": ["ACTIVE", "DISPUTED", "RETRACTED"] },
-    "notes": { "type": "string" }
+    "notes": { "type": "string" },
+    "session_id": {
+      "description": "SESSION_ARCH_v0.4_SPEC.md §2.2/§8 (kernel.reciprocal-lineage-diagnostic, build_now, tier Open): the session this edge was asserted within. Without this field chi_recip is 'not computable' (never a numeric default) -- see kernel/glosa_kernel.py `chi_recip_diagnostic`. Additive/optional.",
+      "type": ["string", "null"]
+    }
   }
 }

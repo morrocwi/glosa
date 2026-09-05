@@ -648,6 +648,16 @@
       "collapse_failure": "Treating a single practitioner's lived account as if it were population-level evidence.",
       "source": "chair ruling C6, Dr-synthesis",
       "enforced_by": "claim_card.standpoint; preserved-experience field per genre; D-SELF-EXPERIENCE-NOT-GENERAL-EVIDENCE"
+    },
+    {
+      "id": "NC-77",
+      "pair": "Retention ≠ Direction",
+      "family": "J",
+      "meaning_en": "Persistence/retention of a claim, habit, or chosen hypothesis across two or more sessions is never by itself evidence that it is expansion rather than tunnel; only a linked independent-check artifact may set the sign. Default: retained_direction: unknown.",
+      "meaning_th": "การคงอยู่/ถูกเลือกซ้ำของข้ออ้าง นิสัย หรือสมมติฐานที่เลือกไว้ ข้ามสองเซสชันขึ้นไป ไม่ใช่หลักฐานในตัวมันเองว่าเป็นการขยาย (expansion) ไม่ใช่ช่องแคบ (tunnel) — ทิศทางบอกได้เฉพาะเมื่อมี artifact ตรวจสอบอิสระเชื่อมโยงอยู่เท่านั้น ค่าตั้งต้นคือ unknown",
+      "collapse_failure": "Reading a hypothesis re-selected/reaffirmed across sessions as if that persistence itself demonstrated durable epistemic expansion, when it may equally be a supercritical tunnel (confirmation, candidate forgetting, semantic fixation).",
+      "source": "design/SESSION_ARCH_v0.4_SPEC.md §4 (schema.retention-direction-field, SA-2); sources/notes/EPISTEMIC_FUSION_v7.1.txt (F9, F11: 'Retention is direction-neutral', 'chi_recip[s,L] therefore cannot be read as warrant, truth, or human benefit'); sources/notes/EPISTEMIC_FUSION_v8.1.txt:358-361",
+      "enforced_by": "schema/hypothesis_selection.schema.json `retained_direction` field (default unknown); kernel/glosa_kernel.py `_retained_direction_error` / `validate_hypothesis_selection`; D-RETENTION-DIRECTION"
     }
   ]
 }

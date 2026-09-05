@@ -1,0 +1,14 @@
+{
+ "id": "hsel-tunnel_unflagged-adv-005",
+ "problem_ref": "GLOSA-PC-20260905-0001",
+ "selection_status": "chosen",
+ "session_ids": [
+  "sess-01",
+  "sess-06"
+ ],
+ "evidence_relation": null,
+ "retained_direction": "expansion",
+ "previously_chosen_session": null,
+ "reopened_in_session": null,
+ "chooser_reaffirmations": []
+}

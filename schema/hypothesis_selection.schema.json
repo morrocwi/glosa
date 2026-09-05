@@ -11,6 +11,33 @@
     "problem_ref": { "type": "string", "minLength": 1 },
     "decided_by": { "type": "string", "minLength": 1 },
     "decided_at": { "type": "string" },
+    "session_id": {
+      "description": "SESSION_ARCH_v0.4_SPEC.md §7 item 7 (schema.retention-direction-field.session-grouping-key, SA-2): the session in which `decided_at` happened, joined against schema/blackbox_note.schema.json's own `session_id`. Wiring this in is the founder's own recommended default once session.boundary-blackbox-note (SA-1) lands in the same pass -- founder ratification of §7 item 7 itself is still PENDING; until ratified, `_session_span_count` (kernel/glosa_kernel.py) only counts sessions it can actually see named here and in `chooser_reaffirmations[]`, never fabricating a count. Additive/optional.",
+      "type": "string",
+      "minLength": 1
+    },
+    "chooser_reaffirmations": {
+      "description": "SESSION_ARCH_v0.4_SPEC.md §2.1 (schema.retention-direction-field, SA-2): a session reopening a previously-chosen hypothesis must have the HUMAN (not persistence) reaffirm it -- one entry per session the selection was revisited in. Additive/optional; used by kernel rule NC-77 to count session span.",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["session_id", "reaffirmed_by"],
+        "properties": {
+          "session_id": { "type": "string", "minLength": 1 },
+          "reaffirmed_by": { "$ref": "common.defs.json#/definitions/role_or_human" },
+          "reaffirmed_at": { "type": "string" }
+        }
+      }
+    },
+    "retained_direction": {
+      "description": "SESSION_ARCH_v0.4_SPEC.md §4 (NC-77, Family J, 'Retention != Direction'): persistence/retention of a chosen hypothesis across >=2 sessions is never by itself evidence it is expansion rather than tunnel. Default 'unknown'; a non-unknown value on a chosen row spanning >=2 sessions requires a resolvable `direction_evidence_relation` (kernel-enforced, see `_retained_direction_error`) -- schema only carries the enum/default, not the cross-field force. D-RETENTION-DIRECTION.",
+      "enum": ["unknown", "expansion", "tunnel"],
+      "default": "unknown"
+    },
+    "direction_evidence_relation": {
+      "description": "SESSION_ARCH_v0.4_SPEC.md §4 NC-77's own exception clause: 'a row whose evidence_relation resolves to an existing checker/falsifier verdict -- that verdict's own sign stands'. Additive/optional; null/absent means no independent-check artifact is linked, which is exactly the condition that forces `retained_direction` to stay 'unknown' on a >=2-session chosen row.",
+      "anyOf": [ { "$ref": "evidence_relation.schema.json" }, { "type": "null" } ]
+    },
     "candidates": {
       "type": "array",
       "minItems": 1,

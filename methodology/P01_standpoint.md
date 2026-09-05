@@ -34,8 +34,23 @@ fields a stub cannot leave null. No card, stub or full, may skip this field.
 
 Human: states `declared_basis` and `disciplines_not_claimed[]` in their own words — this is
 non-delegable, since only the human can attest to their own position. AI: may prompt for
-completeness (e.g. "does this also claim expertise in X you have not named?") but never fills
-`declared_basis` on the human's behalf.
+completeness, but only from this bounded, closed list — never a freeform open-ended question
+(HU-5, `design/SESSION_ARCH_v0.4_SPEC.md` §11.3, extending `NC-58` AIContribution≠
+EpistemicResponsibility by the same logic already applied to `ai_filled.*` answers):
+
+1. "Does this also claim expertise in a discipline you have not named?"
+2. "Is there a discipline adjacent to your stated basis that you want to explicitly disclaim?"
+3. "Does `method_basis` name every method you actually used, or only the primary one?"
+4. "Is `declared_basis` a role (practitioner, founder, community member) or does it read as a
+   credential claim you did not intend?"
+5. "Would a reader reasonably infer authority you have not claimed from how this is worded?"
+
+An AI-authored prompt outside this list must be logged `ai_filled.prompt_source: freeform`
+(disclosed, not silently treated as equivalent to a named prompt) — never fills `declared_basis`
+on the human's behalf either way. No schema change is required for this bound: `ai_filled.*`'s
+existing disclosure shape (`design/FOUNDATION_v0.6.md` §5, `D-AIFILL`) already covers it; this
+closes the one channel that discipline did not yet cover — AI-*posed prompts*, not just
+AI-*filled answers*.
 
 ## Disclaimers emitted
 

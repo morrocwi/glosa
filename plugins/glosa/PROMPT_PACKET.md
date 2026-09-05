@@ -50,6 +50,8 @@ text elsewhere — cite it.
 | Readiness | `methodology/P12_readiness.md` | `schema/readiness_report.schema.json` | — |
 | Literature review (LRS, L1-L6) | `methodology/P13_literature_review.md` + `design/S14_literature-review-system.md` | `schema/search_log.schema.json`, `source_acquisition_log.schema.json`, `citation_card.schema.json`, `dialogue_table_row.schema.json`, `neighbour_table_row.schema.json`, `litreview_manifest.schema.json`, `hypothesis_selection.schema.json` | `templates/knowledge/search_log.yaml`, `source_acquisition_log.yaml`, `citation_card.yaml`, `dialogue_table.md`, `neighbour_table.md`, `litreview_manifest.yaml`, `hypothesis_selection.yaml`, `sr_protocol_prisma_lite.md` |
 | Project advisor | `methodology/P14_project_advisor.md` | `schema/conversion_plan.schema.json` | `templates/knowledge/conversion_plan.yaml`, `advisor_prompt_packet.md` |
+| Human Mastery Gate (pre-release) | `methodology/P17_human_mastery_gate.md` | `schema/human_mastery_gate.schema.json` (specified, `design/FOUNDATION_v0.7_PATCH.md` §5, not yet on disk) | *pending* |
+| Session architecture (a logical view, not a file to fill in) | `methodology/P18_session_architecture.md` | joins `blackbox_note`, `hypothesis_selection`, `problem_card`, `kg_edge` schemas | — |
 | Blackbox Note | *pending* — `methodology/P15_blackbox_note.md` not yet written; use `P00_lens.md` + `P02_intake.md` + `design/FOUNDATION_v0.6.md` §2.3 meanwhile | `schema/blackbox_note.schema.json` | `templates/knowledge/blackbox_note.yaml` |
 
 ## Blackbox Note attribution (binding, every dialogue record)
@@ -76,6 +78,14 @@ directly before treating them as binding. New claim-card fields (`comparison`, `
 `verdict_class`, `gate_fail_taxonomy`, `gate_construction_status`,
 `five_questions.seen.ai_assisted_fields`) are additive/optional, `schema/claim_card.schema.json`
 target `0.7.0` — not yet applied to the schema file on disk.
+
+## New this pass (v0.4, in preparation) — pointer only, rule bodies stay in the cards/patch
+
+`methodology/P17_human_mastery_gate.md` (Human Mastery Gate, generalized past the arXiv-paper
+genre, publish-gate R8) and `methodology/P18_session_architecture.md` (Session object as a
+logical join, `NC-77` retention≠direction, momentum diagnostics Open) are new this pass — read
+either before treating a session as bounded or a mastery gate as satisfied. Full diff, not yet
+applied to `FOUNDATION_v0.6.md`/schema/kernel: `design/FOUNDATION_v0.7_PATCH.md`.
 
 ## Output discipline
 

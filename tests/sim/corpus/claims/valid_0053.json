@@ -1,5 +1,5 @@
 {
- "schema_version": "0.4.0",
+ "schema_version": "0.7.0",
  "claim_id": "GLOSA-CC-20260905-0053",
  "shape": "full",
  "statement": {
@@ -54,7 +54,8 @@
    "as_of": "2026-09-04",
    "retrievable_original": true,
    "access_model": "direct household observation log",
-   "citation_refs": []
+   "citation_refs": [],
+   "ai_assisted_fields": []
   },
   "separates": {
    "value_z0": "in-box vs out-of-box urination location",
@@ -282,5 +283,15 @@
    "by": "founder+AI",
    "note": "initial draft, worked example"
   }
- ]
+ ],
+ "comparison": {
+  "target": null,
+  "relation": "not_compared",
+  "basis": "single-household 14-day observation; no comparable prior case identified to compare against"
+ },
+ "evidence_strength": {
+  "class": "direct_validation",
+  "notes": "evidence bears directly on this household/cat, not read across from a different case"
+ },
+ "verdict_class": "DERIVED"
 }

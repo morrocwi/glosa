@@ -1,0 +1,491 @@
+{
+ "defects": [
+  "tunnel_unflagged",
+  "retention_undeclared",
+  "chooser_forgotten",
+  "question_drift_unlogged",
+  "momentum_overclaimed"
+ ],
+ "cards": [
+  {
+   "id": "hsel-tunnel_unflagged-adv-001",
+   "kind": "adversarial",
+   "defect": "tunnel_unflagged",
+   "file": "v04/hsel/tunnel_unflagged_adv_001.json",
+   "artifact_under_test": "hypothesis_selection",
+   "note": "chosen across 2 sessions, no independent-check link, retained_direction bare-asserted 'expansion' instead of 'unknown'"
+  },
+  {
+   "id": "hsel-tunnel_unflagged-adv-002",
+   "kind": "adversarial",
+   "defect": "tunnel_unflagged",
+   "file": "v04/hsel/tunnel_unflagged_adv_002.json",
+   "artifact_under_test": "hypothesis_selection",
+   "note": "chosen across 2 sessions, no independent-check link, retained_direction bare-asserted 'tunnel' instead of 'unknown'"
+  },
+  {
+   "id": "hsel-tunnel_unflagged-adv-003",
+   "kind": "adversarial",
+   "defect": "tunnel_unflagged",
+   "file": "v04/hsel/tunnel_unflagged_adv_003.json",
+   "artifact_under_test": "hypothesis_selection",
+   "note": "chosen across 2 sessions, no independent-check link, retained_direction bare-asserted 'expansion' instead of 'unknown'"
+  },
+  {
+   "id": "hsel-tunnel_unflagged-adv-004",
+   "kind": "adversarial",
+   "defect": "tunnel_unflagged",
+   "file": "v04/hsel/tunnel_unflagged_adv_004.json",
+   "artifact_under_test": "hypothesis_selection",
+   "note": "chosen across 2 sessions, no independent-check link, retained_direction bare-asserted 'tunnel' instead of 'unknown'"
+  },
+  {
+   "id": "hsel-tunnel_unflagged-adv-005",
+   "kind": "adversarial",
+   "defect": "tunnel_unflagged",
+   "file": "v04/hsel/tunnel_unflagged_adv_005.json",
+   "artifact_under_test": "hypothesis_selection",
+   "note": "chosen across 2 sessions, no independent-check link, retained_direction bare-asserted 'expansion' instead of 'unknown'"
+  },
+  {
+   "id": "hsel-tunnel_unflagged-adv-006",
+   "kind": "adversarial",
+   "defect": "tunnel_unflagged",
+   "file": "v04/hsel/tunnel_unflagged_adv_006.json",
+   "artifact_under_test": "hypothesis_selection",
+   "note": "chosen across 2 sessions, no independent-check link, retained_direction bare-asserted 'tunnel' instead of 'unknown'"
+  },
+  {
+   "id": "hsel-tunnel_unflagged-valid-001",
+   "kind": "valid",
+   "defect": null,
+   "file": "v04/hsel/tunnel_unflagged_valid_001.json",
+   "artifact_under_test": "hypothesis_selection",
+   "note": "chosen across 2 sessions, no independent-check link, retained_direction correctly defaulted to 'unknown'"
+  },
+  {
+   "id": "hsel-tunnel_unflagged-valid-002",
+   "kind": "valid",
+   "defect": null,
+   "file": "v04/hsel/tunnel_unflagged_valid_002.json",
+   "artifact_under_test": "hypothesis_selection",
+   "note": "chosen across 2 sessions, retained_direction sign comes from a linked independent-check verdict, not bare persistence"
+  },
+  {
+   "id": "hsel-tunnel_unflagged-valid-003",
+   "kind": "valid",
+   "defect": null,
+   "file": "v04/hsel/tunnel_unflagged_valid_003.json",
+   "artifact_under_test": "hypothesis_selection",
+   "note": "chosen across 2 sessions, no independent-check link, retained_direction correctly defaulted to 'unknown'"
+  },
+  {
+   "id": "hsel-tunnel_unflagged-valid-004",
+   "kind": "valid",
+   "defect": null,
+   "file": "v04/hsel/tunnel_unflagged_valid_004.json",
+   "artifact_under_test": "hypothesis_selection",
+   "note": "chosen across 2 sessions, retained_direction sign comes from a linked independent-check verdict, not bare persistence"
+  },
+  {
+   "id": "hsel-tunnel_unflagged-valid-005",
+   "kind": "valid",
+   "defect": null,
+   "file": "v04/hsel/tunnel_unflagged_valid_005.json",
+   "artifact_under_test": "hypothesis_selection",
+   "note": "chosen across 2 sessions, no independent-check link, retained_direction correctly defaulted to 'unknown'"
+  },
+  {
+   "id": "hsel-tunnel_unflagged-valid-006",
+   "kind": "valid",
+   "defect": null,
+   "file": "v04/hsel/tunnel_unflagged_valid_006.json",
+   "artifact_under_test": "hypothesis_selection",
+   "note": "chosen across 2 sessions, retained_direction sign comes from a linked independent-check verdict, not bare persistence"
+  },
+  {
+   "id": "bbpair-retention_undeclared-adv-001",
+   "kind": "adversarial",
+   "defect": "retention_undeclared",
+   "file": "v04/blackbox/retention_undeclared_adv_001.json",
+   "artifact_under_test": "blackbox_note_pair",
+   "note": "shared session_id across a process restart, note_b missing/non-literal ai_state_at_boundary='reset'"
+  },
+  {
+   "id": "bbpair-retention_undeclared-adv-002",
+   "kind": "adversarial",
+   "defect": "retention_undeclared",
+   "file": "v04/blackbox/retention_undeclared_adv_002.json",
+   "artifact_under_test": "blackbox_note_pair",
+   "note": "shared session_id across a process restart, note_a missing/non-literal ai_state_at_boundary='reset'"
+  },
+  {
+   "id": "bbpair-retention_undeclared-adv-003",
+   "kind": "adversarial",
+   "defect": "retention_undeclared",
+   "file": "v04/blackbox/retention_undeclared_adv_003.json",
+   "artifact_under_test": "blackbox_note_pair",
+   "note": "shared session_id across a process restart, note_b missing/non-literal ai_state_at_boundary='reset'"
+  },
+  {
+   "id": "bbpair-retention_undeclared-adv-004",
+   "kind": "adversarial",
+   "defect": "retention_undeclared",
+   "file": "v04/blackbox/retention_undeclared_adv_004.json",
+   "artifact_under_test": "blackbox_note_pair",
+   "note": "shared session_id across a process restart, note_a missing/non-literal ai_state_at_boundary='reset'"
+  },
+  {
+   "id": "bbpair-retention_undeclared-adv-005",
+   "kind": "adversarial",
+   "defect": "retention_undeclared",
+   "file": "v04/blackbox/retention_undeclared_adv_005.json",
+   "artifact_under_test": "blackbox_note_pair",
+   "note": "shared session_id across a process restart, note_b missing/non-literal ai_state_at_boundary='reset'"
+  },
+  {
+   "id": "bbpair-retention_undeclared-adv-006",
+   "kind": "adversarial",
+   "defect": "retention_undeclared",
+   "file": "v04/blackbox/retention_undeclared_adv_006.json",
+   "artifact_under_test": "blackbox_note_pair",
+   "note": "shared session_id across a process restart, note_a missing/non-literal ai_state_at_boundary='reset'"
+  },
+  {
+   "id": "bbpair-retention_undeclared-valid-001",
+   "kind": "valid",
+   "defect": null,
+   "file": "v04/blackbox/retention_undeclared_valid_001.json",
+   "artifact_under_test": "blackbox_note_pair",
+   "note": "shared session_id across a process restart, both notes correctly carry ai_state_at_boundary='reset'"
+  },
+  {
+   "id": "bbpair-retention_undeclared-valid-002",
+   "kind": "valid",
+   "defect": null,
+   "file": "v04/blackbox/retention_undeclared_valid_002.json",
+   "artifact_under_test": "blackbox_note_pair",
+   "note": "different session_id values on topically-similar notes -- rule does not apply, missing marker on note_b is not a violation"
+  },
+  {
+   "id": "bbpair-retention_undeclared-valid-003",
+   "kind": "valid",
+   "defect": null,
+   "file": "v04/blackbox/retention_undeclared_valid_003.json",
+   "artifact_under_test": "blackbox_note_pair",
+   "note": "shared session_id across a process restart, both notes correctly carry ai_state_at_boundary='reset'"
+  },
+  {
+   "id": "bbpair-retention_undeclared-valid-004",
+   "kind": "valid",
+   "defect": null,
+   "file": "v04/blackbox/retention_undeclared_valid_004.json",
+   "artifact_under_test": "blackbox_note_pair",
+   "note": "different session_id values on topically-similar notes -- rule does not apply, missing marker on note_b is not a violation"
+  },
+  {
+   "id": "bbpair-retention_undeclared-valid-005",
+   "kind": "valid",
+   "defect": null,
+   "file": "v04/blackbox/retention_undeclared_valid_005.json",
+   "artifact_under_test": "blackbox_note_pair",
+   "note": "shared session_id across a process restart, both notes correctly carry ai_state_at_boundary='reset'"
+  },
+  {
+   "id": "bbpair-retention_undeclared-valid-006",
+   "kind": "valid",
+   "defect": null,
+   "file": "v04/blackbox/retention_undeclared_valid_006.json",
+   "artifact_under_test": "blackbox_note_pair",
+   "note": "different session_id values on topically-similar notes -- rule does not apply, missing marker on note_b is not a violation"
+  },
+  {
+   "id": "hsel-chooser_forgotten-adv-001",
+   "kind": "adversarial",
+   "defect": "chooser_forgotten",
+   "file": "v04/hsel/chooser_forgotten_adv_001.json",
+   "artifact_under_test": "hypothesis_selection",
+   "note": "hypothesis reopened in a later session with zero chooser_reaffirmations[] entries"
+  },
+  {
+   "id": "hsel-chooser_forgotten-adv-002",
+   "kind": "adversarial",
+   "defect": "chooser_forgotten",
+   "file": "v04/hsel/chooser_forgotten_adv_002.json",
+   "artifact_under_test": "hypothesis_selection",
+   "note": "hypothesis reopened in a later session with zero chooser_reaffirmations[] entries"
+  },
+  {
+   "id": "hsel-chooser_forgotten-adv-003",
+   "kind": "adversarial",
+   "defect": "chooser_forgotten",
+   "file": "v04/hsel/chooser_forgotten_adv_003.json",
+   "artifact_under_test": "hypothesis_selection",
+   "note": "hypothesis reopened in a later session with zero chooser_reaffirmations[] entries"
+  },
+  {
+   "id": "hsel-chooser_forgotten-adv-004",
+   "kind": "adversarial",
+   "defect": "chooser_forgotten",
+   "file": "v04/hsel/chooser_forgotten_adv_004.json",
+   "artifact_under_test": "hypothesis_selection",
+   "note": "hypothesis reopened in a later session with zero chooser_reaffirmations[] entries"
+  },
+  {
+   "id": "hsel-chooser_forgotten-adv-005",
+   "kind": "adversarial",
+   "defect": "chooser_forgotten",
+   "file": "v04/hsel/chooser_forgotten_adv_005.json",
+   "artifact_under_test": "hypothesis_selection",
+   "note": "hypothesis reopened in a later session with zero chooser_reaffirmations[] entries"
+  },
+  {
+   "id": "hsel-chooser_forgotten-adv-006",
+   "kind": "adversarial",
+   "defect": "chooser_forgotten",
+   "file": "v04/hsel/chooser_forgotten_adv_006.json",
+   "artifact_under_test": "hypothesis_selection",
+   "note": "hypothesis reopened in a later session with zero chooser_reaffirmations[] entries"
+  },
+  {
+   "id": "hsel-chooser_forgotten-valid-001",
+   "kind": "valid",
+   "defect": null,
+   "file": "v04/hsel/chooser_forgotten_valid_001.json",
+   "artifact_under_test": "hypothesis_selection",
+   "note": "hypothesis reopened, but a fresh chooser_reaffirmations[] entry for that session exists"
+  },
+  {
+   "id": "hsel-chooser_forgotten-valid-002",
+   "kind": "valid",
+   "defect": null,
+   "file": "v04/hsel/chooser_forgotten_valid_002.json",
+   "artifact_under_test": "hypothesis_selection",
+   "note": "never reopened -- rule does not apply"
+  },
+  {
+   "id": "hsel-chooser_forgotten-valid-003",
+   "kind": "valid",
+   "defect": null,
+   "file": "v04/hsel/chooser_forgotten_valid_003.json",
+   "artifact_under_test": "hypothesis_selection",
+   "note": "hypothesis reopened, but a fresh chooser_reaffirmations[] entry for that session exists"
+  },
+  {
+   "id": "hsel-chooser_forgotten-valid-004",
+   "kind": "valid",
+   "defect": null,
+   "file": "v04/hsel/chooser_forgotten_valid_004.json",
+   "artifact_under_test": "hypothesis_selection",
+   "note": "never reopened -- rule does not apply"
+  },
+  {
+   "id": "hsel-chooser_forgotten-valid-005",
+   "kind": "valid",
+   "defect": null,
+   "file": "v04/hsel/chooser_forgotten_valid_005.json",
+   "artifact_under_test": "hypothesis_selection",
+   "note": "hypothesis reopened, but a fresh chooser_reaffirmations[] entry for that session exists"
+  },
+  {
+   "id": "hsel-chooser_forgotten-valid-006",
+   "kind": "valid",
+   "defect": null,
+   "file": "v04/hsel/chooser_forgotten_valid_006.json",
+   "artifact_under_test": "hypothesis_selection",
+   "note": "never reopened -- rule does not apply"
+  },
+  {
+   "id": "sess-question_drift_unlogged-adv-001",
+   "kind": "adversarial",
+   "defect": "question_drift_unlogged",
+   "file": "v04/session/question_drift_unlogged_adv_001.json",
+   "artifact_under_test": "session_problem_card_sequence",
+   "note": "Problem Card sequence diverges from declared q1_issue, no new Problem Card opened for the drift"
+  },
+  {
+   "id": "sess-question_drift_unlogged-adv-002",
+   "kind": "adversarial",
+   "defect": "question_drift_unlogged",
+   "file": "v04/session/question_drift_unlogged_adv_002.json",
+   "artifact_under_test": "session_problem_card_sequence",
+   "note": "Problem Card sequence diverges from declared q1_issue, no new Problem Card opened for the drift"
+  },
+  {
+   "id": "sess-question_drift_unlogged-adv-003",
+   "kind": "adversarial",
+   "defect": "question_drift_unlogged",
+   "file": "v04/session/question_drift_unlogged_adv_003.json",
+   "artifact_under_test": "session_problem_card_sequence",
+   "note": "Problem Card sequence diverges from declared q1_issue, no new Problem Card opened for the drift"
+  },
+  {
+   "id": "sess-question_drift_unlogged-adv-004",
+   "kind": "adversarial",
+   "defect": "question_drift_unlogged",
+   "file": "v04/session/question_drift_unlogged_adv_004.json",
+   "artifact_under_test": "session_problem_card_sequence",
+   "note": "Problem Card sequence diverges from declared q1_issue, no new Problem Card opened for the drift"
+  },
+  {
+   "id": "sess-question_drift_unlogged-adv-005",
+   "kind": "adversarial",
+   "defect": "question_drift_unlogged",
+   "file": "v04/session/question_drift_unlogged_adv_005.json",
+   "artifact_under_test": "session_problem_card_sequence",
+   "note": "Problem Card sequence diverges from declared q1_issue, no new Problem Card opened for the drift"
+  },
+  {
+   "id": "sess-question_drift_unlogged-adv-006",
+   "kind": "adversarial",
+   "defect": "question_drift_unlogged",
+   "file": "v04/session/question_drift_unlogged_adv_006.json",
+   "artifact_under_test": "session_problem_card_sequence",
+   "note": "Problem Card sequence diverges from declared q1_issue, no new Problem Card opened for the drift"
+  },
+  {
+   "id": "sess-question_drift_unlogged-valid-001",
+   "kind": "valid",
+   "defect": null,
+   "file": "v04/session/question_drift_unlogged_valid_001.json",
+   "artifact_under_test": "session_problem_card_sequence",
+   "note": "no drift -- every Problem Card in the sequence matches the declared q1_issue"
+  },
+  {
+   "id": "sess-question_drift_unlogged-valid-002",
+   "kind": "valid",
+   "defect": null,
+   "file": "v04/session/question_drift_unlogged_valid_002.json",
+   "artifact_under_test": "session_problem_card_sequence",
+   "note": "drift present, but a new Problem Card was opened to track it -- not untracked"
+  },
+  {
+   "id": "sess-question_drift_unlogged-valid-003",
+   "kind": "valid",
+   "defect": null,
+   "file": "v04/session/question_drift_unlogged_valid_003.json",
+   "artifact_under_test": "session_problem_card_sequence",
+   "note": "no drift -- every Problem Card in the sequence matches the declared q1_issue"
+  },
+  {
+   "id": "sess-question_drift_unlogged-valid-004",
+   "kind": "valid",
+   "defect": null,
+   "file": "v04/session/question_drift_unlogged_valid_004.json",
+   "artifact_under_test": "session_problem_card_sequence",
+   "note": "drift present, but a new Problem Card was opened to track it -- not untracked"
+  },
+  {
+   "id": "sess-question_drift_unlogged-valid-005",
+   "kind": "valid",
+   "defect": null,
+   "file": "v04/session/question_drift_unlogged_valid_005.json",
+   "artifact_under_test": "session_problem_card_sequence",
+   "note": "no drift -- every Problem Card in the sequence matches the declared q1_issue"
+  },
+  {
+   "id": "sess-question_drift_unlogged-valid-006",
+   "kind": "valid",
+   "defect": null,
+   "file": "v04/session/question_drift_unlogged_valid_006.json",
+   "artifact_under_test": "session_problem_card_sequence",
+   "note": "drift present, but a new Problem Card was opened to track it -- not untracked"
+  },
+  {
+   "id": "momdoc-momentum_overclaimed-adv-001",
+   "kind": "adversarial",
+   "defect": "momentum_overclaimed",
+   "file": "v04/momentum/momentum_overclaimed_adv_001.json",
+   "artifact_under_test": "momentum_doc_or_code",
+   "note": "reads chi_recip/m^H/m^AI as warrant/truth/release-gate rather than an Open diagnostic"
+  },
+  {
+   "id": "momdoc-momentum_overclaimed-adv-002",
+   "kind": "adversarial",
+   "defect": "momentum_overclaimed",
+   "file": "v04/momentum/momentum_overclaimed_adv_002.json",
+   "artifact_under_test": "momentum_doc_or_code",
+   "note": "reads chi_recip/m^H/m^AI as warrant/truth/release-gate rather than an Open diagnostic"
+  },
+  {
+   "id": "momdoc-momentum_overclaimed-adv-003",
+   "kind": "adversarial",
+   "defect": "momentum_overclaimed",
+   "file": "v04/momentum/momentum_overclaimed_adv_003.json",
+   "artifact_under_test": "momentum_doc_or_code",
+   "note": "reads chi_recip/m^H/m^AI as warrant/truth/release-gate rather than an Open diagnostic"
+  },
+  {
+   "id": "momdoc-momentum_overclaimed-adv-004",
+   "kind": "adversarial",
+   "defect": "momentum_overclaimed",
+   "file": "v04/momentum/momentum_overclaimed_adv_004.json",
+   "artifact_under_test": "momentum_doc_or_code",
+   "note": "reads chi_recip/m^H/m^AI as warrant/truth/release-gate rather than an Open diagnostic"
+  },
+  {
+   "id": "momdoc-momentum_overclaimed-adv-005",
+   "kind": "adversarial",
+   "defect": "momentum_overclaimed",
+   "file": "v04/momentum/momentum_overclaimed_adv_005.json",
+   "artifact_under_test": "momentum_doc_or_code",
+   "note": "reads chi_recip/m^H/m^AI as warrant/truth/release-gate rather than an Open diagnostic"
+  },
+  {
+   "id": "momdoc-momentum_overclaimed-adv-006",
+   "kind": "adversarial",
+   "defect": "momentum_overclaimed",
+   "file": "v04/momentum/momentum_overclaimed_adv_006.json",
+   "artifact_under_test": "momentum_doc_or_code",
+   "note": "reads chi_recip/m^H/m^AI as warrant/truth/release-gate rather than an Open diagnostic"
+  },
+  {
+   "id": "momdoc-momentum_overclaimed-valid-001",
+   "kind": "valid",
+   "defect": null,
+   "file": "v04/momentum/momentum_overclaimed_valid_001.json",
+   "artifact_under_test": "momentum_doc_or_code",
+   "note": "frames chi_recip/m^H/m^AI honestly as an Open diagnostic, never a gate/warrant/truth claim"
+  },
+  {
+   "id": "momdoc-momentum_overclaimed-valid-002",
+   "kind": "valid",
+   "defect": null,
+   "file": "v04/momentum/momentum_overclaimed_valid_002.json",
+   "artifact_under_test": "momentum_doc_or_code",
+   "note": "frames chi_recip/m^H/m^AI honestly as an Open diagnostic, never a gate/warrant/truth claim"
+  },
+  {
+   "id": "momdoc-momentum_overclaimed-valid-003",
+   "kind": "valid",
+   "defect": null,
+   "file": "v04/momentum/momentum_overclaimed_valid_003.json",
+   "artifact_under_test": "momentum_doc_or_code",
+   "note": "frames chi_recip/m^H/m^AI honestly as an Open diagnostic, never a gate/warrant/truth claim"
+  },
+  {
+   "id": "momdoc-momentum_overclaimed-valid-004",
+   "kind": "valid",
+   "defect": null,
+   "file": "v04/momentum/momentum_overclaimed_valid_004.json",
+   "artifact_under_test": "momentum_doc_or_code",
+   "note": "frames chi_recip/m^H/m^AI honestly as an Open diagnostic, never a gate/warrant/truth claim"
+  },
+  {
+   "id": "momdoc-momentum_overclaimed-valid-005",
+   "kind": "valid",
+   "defect": null,
+   "file": "v04/momentum/momentum_overclaimed_valid_005.json",
+   "artifact_under_test": "momentum_doc_or_code",
+   "note": "frames chi_recip/m^H/m^AI honestly as an Open diagnostic, never a gate/warrant/truth claim"
+  },
+  {
+   "id": "momdoc-momentum_overclaimed-valid-006",
+   "kind": "valid",
+   "defect": null,
+   "file": "v04/momentum/momentum_overclaimed_valid_006.json",
+   "artifact_under_test": "momentum_doc_or_code",
+   "note": "frames chi_recip/m^H/m^AI honestly as an Open diagnostic, never a gate/warrant/truth claim"
+  }
+ ]
+}

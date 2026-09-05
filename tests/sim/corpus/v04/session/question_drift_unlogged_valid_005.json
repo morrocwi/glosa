@@ -1,0 +1,15 @@
+{
+ "id": "sess-question_drift_unlogged-valid-005",
+ "declared_q1_issue": "cat avoids litter box far from resting area",
+ "problem_cards_opened": [
+  {
+   "id": "pc-5-1",
+   "q1_issue": "cat avoids litter box far from resting area"
+  },
+  {
+   "id": "pc-5-2",
+   "q1_issue": "cat avoids litter box far from resting area"
+  }
+ ],
+ "new_problem_card_opened_for_drift": false
+}

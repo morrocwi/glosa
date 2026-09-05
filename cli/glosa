@@ -357,7 +357,39 @@ def scaffold_problem_card(problem_id, project, human_owner, origin_blackbox_ref)
                 "stated_by": human_owner,
                 "blackbox_line_ref": origin_blackbox_ref or "",
             },
+            # schema.entry-resistance-precommit-field (SA-1/SA-3, build_now, SESSION_ARCH_v0.4_SPEC.md
+            # §2.1/§8): concrete precommitted route (source/record/experiment/critic/authority),
+            # v7.1:351/:356. Non-mandatory (D-NO-PRECOMMIT-ROUTE flags, never rejects) -- additive,
+            # additionalProperties is true on this schema's `intake` object so this validates today
+            # without a schema-file change.
+            "precommitted_resistance_route": None,
+            # HU-2 (build_now, merges with §2.1's entry_anchor (H0) row): the remaining H0 conjuncts
+            # confirmed absent from problem_card.schema.json/methodology/P02_intake.md by direct grep
+            # (v7.1:344 "H_0 = (P_0, M_0, U_0, E_0, Phi_0)", :351). All optional, human-authored,
+            # never silently AI-backfilled (mirrors the existing q2_user_proposal "none" precedent).
+            # C_0 (candidate contract) is deliberately NOT a field here -- v7.1:355 defines it as a
+            # standing disposition, documentation-only in methodology/P02_intake.md, not a per-intake
+            # fact.
+            "entry_anchor": {
+                "unresolved": None,              # U_0
+                "existing_evidence": None,       # E_0
+                "change_condition": None,        # Phi_0 -- "none stated -- exploratory" is a legal,
+                                                  # explicit honest-optional value, never silently
+                                                  # inferred (failing control per §11.2).
+                "verification_intent": None,     # V_0
+                "resistance_route": None,        # R* (same fact as precommitted_resistance_route
+                                                  # above when both are filled; kept as a named
+                                                  # conjunct here per §11.2's merge note, not a
+                                                  # second independent value to hand-reconcile).
+            },
         },
+        # TODO(schema.pre-exposure-anchor-fields, SA-3, with_revision): three more required Problem
+        # Card fields (`problem_stated_before_first_ai_response`, `prior_model_or_guess`,
+        # `verification_intent`) were proposed for the Entry check (§6 item 1) but the proposal's own
+        # citation/build_path needs a fix (v7.1:354 -> :353; a timestamp cross-check script or a
+        # narrowed acceptance_test) before it ships -- not built this pass, per BBL-2026-09-05-119
+        # (raise the work, don't build the stale draft). Retroactivity (forward-only vs all cards) is
+        # also a founder-only call (§7 decision 4), not an AI default.
         "standpoint": {
             "declared_basis": "TODO: declare who speaks and from what base.",
             "disciplines_not_claimed": [],
@@ -531,8 +563,9 @@ def scaffold_dialogue_table_text(hypothesis_ref) -> str:
         "- falsifier:\n\n"
         "## Table\n\n"
         "| source | how it sees the problem | what it separates | what it assumes | "
-        "agrees with H | disagrees with H | what it would say against us | citation_card | verified |\n"
-        "|---|---|---|---|---|---|---|---|---|\n"
+        "agrees with H | disagrees with H | what it would say against us | defeater_class | "
+        "legitimate_defeater | citation_card | verified |\n"
+        "|---|---|---|---|---|---|---|---|---|---|---|\n"
     )
     text = text.replace(
         "- hypothesis_id (claim_card.claim_id / r2_hypothesis_ref):",
@@ -541,26 +574,41 @@ def scaffold_dialogue_table_text(hypothesis_ref) -> str:
     return text
 
 
+def _dialogue_row_incomplete(row) -> bool:
+    """lrs.dialogue-table-claim-type-column failing control: a row with a real stance (agrees/
+    disagrees = YES/NO) but no defeater_class/legitimate_defeater is INCOMPLETE. ORTHOGONAL/
+    UNDETERMINED-only rows are exempt (no stance being defended yet)."""
+    stance = row.get("stance")
+    if stance not in ("YES", "NO"):
+        return False
+    return not (str(row.get("defeater_class") or "").strip() and str(row.get("legitimate_defeater") or "").strip())
+
+
 def _render_dialogue_table_rows(rows) -> str:
     header = (
         "| source | how it sees the problem | what it separates | what it assumes | "
-        "agrees with H | disagrees with H | what it would say against us | citation_card | verified |\n"
-        "|---|---|---|---|---|---|---|---|---|\n"
+        "agrees with H | disagrees with H | what it would say against us | defeater_class | "
+        "legitimate_defeater | citation_card | verified |\n"
+        "|---|---|---|---|---|---|---|---|---|---|---|\n"
     )
     stance_col = {"YES": "YES", "NO": "NO", "ORTHOGONAL": "ORTHOGONAL", "UNDETERMINED": "UNDETERMINED"}
     lines = [header]
     for row in rows:
         verified = row.get("verified") or {}
+        flag = " `INCOMPLETE`" if _dialogue_row_incomplete(row) else ""
         lines.append(
-            "| {src} | {sees} | {sep} | {assume} | {stance} | {stance} | {against} | {cite} | {ver} |\n".format(
+            "| {src} | {sees} | {sep} | {assume} | {stance} | {stance} | {against} | {defclass} | {defeat} | {cite} | {ver}{flag} |\n".format(
                 src=row.get("source_label", ""),
                 sees=row.get("how_it_sees_the_problem", ""),
                 sep=row.get("what_it_separates", ""),
                 assume=row.get("what_it_assumes", ""),
                 stance=stance_col.get(row.get("stance"), row.get("stance", "")),
                 against=row.get("what_it_would_say_against_us", ""),
+                defclass=row.get("defeater_class", ""),
+                defeat=row.get("legitimate_defeater", ""),
                 cite=row.get("citation_card", ""),
                 ver=f"metadata:{verified.get('metadata_verified')} / claim_match:{verified.get('claim_match_verified')}",
+                flag=flag,
             )
         )
     return "".join(lines)
@@ -733,17 +781,79 @@ def scaffold_conversion_plan(plan_id, release_manifest_id, identity, expires_at)
     }
 
 
-def scaffold_hypothesis_selection(hsel_id, problem_ref, decided_by, candidates, chosen, reason, parked, cooking_log_ref) -> dict:
+def scaffold_hypothesis_selection(hsel_id, problem_ref, decided_by, candidates, chosen, reason, parked, cooking_log_ref, session_id=None) -> dict:
     return {
         "$schema": "hypothesis_selection.schema.json",
         "id": hsel_id,
         "problem_ref": problem_ref,
         "decided_by": decided_by,
         "decided_at": _today(),
+        # session_id (SA-1/SA-2, schema.retention-direction-field, build_now): the session-grouping
+        # key hypothesis_selection.yaml did not have at all before this pass (confirmed by direct
+        # read, SESSION_ARCH_v0.4_SPEC.md §2.2/§7 decision 7). None until a real Blackbox Note
+        # session (`glosa session open`) supplies one -- never fabricated.
+        "session_id": session_id,
         "candidates": candidates,
         "selection": {"chosen": chosen, "reason": reason, "parked": parked},
+        # retained_direction (SA-2, schema.retention-direction-field, build_now, NC-77): default
+        # `unknown` -- may only become expansion|tunnel with a resolvable evidence_relation to a
+        # review_report/falsifier artifact (v8.1:358-361); this scaffold never guesses a direction.
+        "retained_direction": "unknown",
+        "retained_direction_evidence_relation_ref": None,
         "cooking_log_ref": cooking_log_ref,
         "routes_to": f"genre router input: problem_ref={problem_ref}, selection.chosen={chosen}",
+    }
+
+
+def scaffold_blackbox_note_session(note_id, project, human_owner, session_id, entry_anchor,
+                                    carried_from_ref=None) -> dict:
+    """`glosa session open` scaffold (SA-1, build_now, SESSION_ARCH_v0.4_SPEC.md §2.1/§2.2/§8): a
+    fresh Blackbox Note carrying the session-boundary block. Session boundary + AI-reset fact
+    lives on the Blackbox Note per one-fact-one-home -- this is NOT a new session.yaml file. The
+    scaffold's `lines[0]` is an honest TODO placeholder (schema requires minItems 1); it is never a
+    fabricated human utterance."""
+    now = _now_iso()
+    return {
+        "$schema": "blackbox_note.schema.json",
+        "id": note_id,
+        "project": project,
+        "session_ref": session_id,
+        "participants": [{"role": human_owner or "TODO: role, not a name"}],
+        "language": "en",
+        "privacy_scan": "pending",
+        "public_lines_selected_by": human_owner or "",
+        "lines": [{
+            "n": 1,
+            "ts": now,
+            "speaker": human_owner or "TODO",
+            "kind": "proposal",
+            "text_verbatim": "TODO: fill this session's first verbatim line -- never fabricated by AI.",
+            "distinction_introduced": "",
+            "became": [],
+            "public": False,
+            "ai_proposed": False,
+        }],
+        "cooking": [],
+        "r1_readout_ref": None,
+        "r2_hypothesis_ref": None,
+        "translation_status": "missing",
+        "disclaimers": ["D-BLACKBOX-NOTE", "D-STANDPOINT"],
+        # session block (SA-1): see templates/knowledge/blackbox_note.yaml for the full field-by-
+        # field citation trail. `ai_state_at_boundary` is the fixed literal `reset` unless a real
+        # carried_from_ref is given (v7.1:328).
+        "session": {
+            "session_id": session_id,
+            "session_boundary": {
+                "opened_at": now,
+                "closed_at": None,
+                "ai_state_at_boundary": "carried" if carried_from_ref else "reset",
+            },
+            "entry_anchor": entry_anchor,
+            "question_trace": [],
+            "retained_direction_ref": None,
+            "human_retained_residue_ref": carried_from_ref,
+            "retention_note": None,  # human writes, AI never fills -- `glosa session close` refuses without it.
+        },
     }
 
 
@@ -765,6 +875,63 @@ def cmd_intake_validate(args):
     instance = load_instance(args.path)
     res = run_check(instance, "problem_card")
     return (0 if res["ok"] else 1), {"action": "intake_validate", "path": args.path, "result": res}
+
+
+def cmd_session_open(args):
+    """SA-1 (build_now). Scaffolds a fresh Blackbox Note carrying an opened, un-closed `session`
+    block. `--session-id` is required -- never auto-generated silently, since it is the key SA-2's
+    `hypothesis_selection.session_id` and every other Session-object join field is grouped by."""
+    out_dir = Path(args.out_dir) if args.out_dir else REPO_ROOT / "records" / "sessions" / _slugify(args.session_id)
+    note_id = _next_numbered_id(out_dir, lambda n: f"BB-{datetime.now():%Y-%m-%d}-{n:02d}")
+    data = scaffold_blackbox_note_session(
+        note_id, args.project, args.human_owner, args.session_id, args.entry_anchor,
+        carried_from_ref=args.carried_from,
+    )
+    written = write_new(out_dir, note_id, data)
+    res = run_check(data, "blackbox_note") if k else {"ok": None, "warnings": ["kernel not present -- scaffold not self-checked"]}
+    return 0, {
+        "action": "session_open", "session_id": args.session_id, "note_id": note_id, "written": written,
+        "ai_state_at_boundary": data["session"]["session_boundary"]["ai_state_at_boundary"],
+        "self_check": res,
+        "next": "fill lines[0].text_verbatim and intake/etc. as the session proceeds, then `glosa session close --path <this file> --retention-note \"...\"` at the end.",
+    }
+
+
+def cmd_session_close(args):
+    """SA-1 (build_now). Fail-closed per task instruction: refuses (exit 1, no file written) unless
+    `--retention-note` is a non-empty, human-authored string -- an AI session may never author this
+    field's content on the human's behalf (§6 Boundary check; templates/knowledge/blackbox_note.yaml
+    session.retention_note: 'human writes, AI never fills')."""
+    path = Path(args.path)
+    instance = load_instance(path)
+    session = instance.get("session")
+    if not isinstance(session, dict):
+        return 1, {"action": "session_close", "path": str(path),
+                    "error": "this Blackbox Note has no `session` block -- it was not opened with `glosa session open`."}
+    boundary = session.get("session_boundary") or {}
+    if boundary.get("closed_at"):
+        return 1, {"action": "session_close", "path": str(path),
+                    "error": f"session {session.get('session_id')!r} is already closed (closed_at={boundary.get('closed_at')!r})."}
+    note = (args.retention_note or "").strip()
+    if not note:
+        return 1, {
+            "action": "session_close", "path": str(path),
+            "error": "REFUSED (fail-closed): --retention-note is required and must be a non-empty, "
+                     "human-authored string. This field is never AI-filled -- pass the human's own "
+                     "words for what they explicitly retain from this session, or 'none' if they "
+                     "explicitly retain nothing (never left silently blank).",
+        }
+    boundary["closed_at"] = _now_iso()
+    boundary["ai_state_at_boundary"] = "reset"  # v7.1:328 -- fixed literal at close, by architectural scope
+    session["session_boundary"] = boundary
+    session["retention_note"] = note
+    if args.retained_direction_ref:
+        session["retained_direction_ref"] = args.retained_direction_ref
+    instance["session"] = session
+    path.write_text(dump_instance_text(instance), encoding="utf-8")
+    res = run_check(instance, "blackbox_note") if k else {"ok": None}
+    return 0, {"action": "session_close", "path": str(path), "session_id": session.get("session_id"),
+               "closed_at": boundary["closed_at"], "self_check": res}
 
 
 def cmd_claim_new(args):
@@ -994,7 +1161,12 @@ def cmd_lit_table(args):
     if forbidden_marker in template_text:
         new_text += "\n" + template_text[template_text.index(forbidden_marker):]
     table_path.write_text(new_text, encoding="utf-8")
-    return 0, {"action": "lit_table", "path": str(table_path), "rows_rendered": len(valid_rows), "rows_invalid": invalid_rows}
+    incomplete = [row.get("source_label", "") for row in valid_rows if _dialogue_row_incomplete(row)]
+    return 0, {
+        "action": "lit_table", "path": str(table_path), "rows_rendered": len(valid_rows), "rows_invalid": invalid_rows,
+        "rows_incomplete_defeater": incomplete,  # lrs.dialogue-table-claim-type-column lint (not a hard error) --
+                                                  # never silently dropped, listed here every render.
+    }
 
 
 def cmd_lit_select(args):
@@ -1050,6 +1222,7 @@ def cmd_lit_select(args):
     data = scaffold_hypothesis_selection(
         hsel_id, args.problem_ref or slug, args.decided_by, candidates, chosen, args.reason, parked,
         args.cooking_log_ref or "NOT_YET_LOGGED -- TODO: append this selection to the Blackbox Note cooking log and put its ref here.",
+        session_id=getattr(args, "session_id", None),
     )
     written = write_new(lit_root, hsel_id, data)
     res = run_check(data, "hypothesis_selection") if k else {"ok": None}
@@ -1406,6 +1579,22 @@ def build_parser():
     a.add_argument("path")
     a.set_defaults(func=cmd_intake_validate)
 
+    # session ------------------------------------------------------------------------------------
+    session = sub.add_parser("session", help="session boundary on a Blackbox Note (SA-1)").add_subparsers(dest="sub", required=True)
+    a = session.add_parser("open", help="scaffold a Blackbox Note with an opened session block")
+    a.add_argument("--session-id", required=True)
+    a.add_argument("--project", required=True)
+    a.add_argument("--human-owner", required=True)
+    a.add_argument("--entry-anchor", default=None, help="ref -> problem_card.problem_id (H0)")
+    a.add_argument("--carried-from", default=None, help="prior note's human_retained_residue_ref, if any -- sets ai_state_at_boundary: carried")
+    a.add_argument("--out-dir", default=None)
+    a.set_defaults(func=cmd_session_open)
+    a = session.add_parser("close", help="close a session's Blackbox Note (refuses without --retention-note)")
+    a.add_argument("--path", required=True, help="the Blackbox Note file `glosa session open` wrote")
+    a.add_argument("--retention-note", required=True, help="human-authored -- never AI-filled; 'none' is legal if explicit")
+    a.add_argument("--retained-direction-ref", default=None, help="hsel-<slug>-<nnn> id whose retained_direction now applies to this session")
+    a.set_defaults(func=cmd_session_close)
+
     # claim --------------------------------------------------------------------------------------
     claim = sub.add_parser("claim", help="claim_card (FOUNDATION §3)").add_subparsers(dest="sub", required=True)
     a = claim.add_parser("new", help="scaffold a new claim_card")
@@ -1512,6 +1701,7 @@ def build_parser():
     a.add_argument("--chosen", default=None, help="comma-separated hypothesis_ref list, or 'all'")
     a.add_argument("--park", action="append", default=[], help="'<hypothesis_ref>:<reason>', repeatable")
     a.add_argument("--cooking-log-ref", default=None)
+    a.add_argument("--session-id", default=None, help="session-grouping key (SA-1/SA-2, from `glosa session open`'s session.session_id) -- omitted means null, never fabricated")
     a.set_defaults(func=cmd_lit_select)
     a = lit.add_parser("manifest", help="assemble/freeze litreview_manifest.yaml, compute both gates")
     a.add_argument("problem_slug")

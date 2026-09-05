@@ -10,6 +10,29 @@
     "id": { "type": "string", "pattern": "^BB-[0-9]{4}-[0-9]{2}-[0-9]{2}-[0-9]{2}$" },
     "project": { "type": "string", "minLength": 1 },
     "session_ref": { "type": "string" },
+    "session_id": {
+      "description": "SESSION_ARCH_v0.4_SPEC.md §2.1/§2.2 (SA-1, build_now). Groups Blackbox Note lines belonging to one logical AI/human session; joined against hypothesis_selection.yaml, problem_card.yaml and kg_edge.yaml by this same key rather than a new session.yaml file (one-fact-one-home, §2.2 -- pending founder ratification of that decision, §7 item 1). Additive/optional.",
+      "type": "string",
+      "minLength": 1
+    },
+    "session_boundary": {
+      "description": "SESSION_ARCH_v0.4_SPEC.md §2.2 (SA-1, build_now): the session boundary + AI-reset fact lives here, not in a new artifact. `retained_direction` (expansion|tunnel|unknown, NC-77) is deliberately NOT duplicated here -- one-fact-one-home places it on schema/hypothesis_selection.schema.json instead; this object never re-states that value. Additive/optional. Pending founder ratification of §2.2's logical-join decision (§7 item 1).",
+      "type": ["object", "null"],
+      "properties": {
+        "opened_at": { "type": "string" },
+        "closed_at": { "type": ["string", "null"] },
+        "ai_state_at_boundary": {
+          "description": "Literal 'reset' only (sources/notes/EPISTEMIC_FUSION_v7.1.txt:328 -- m^{AI}_{s+1,0}=0 by architectural scope definition). Cross-file check (two notes sharing session_id split by a real process restart must BOTH carry this literal) is kernel-enforced, not schema-enforced -- see kernel/glosa_kernel.py `check_session_boundary_reset`. Unnumbered pending founder ratification of §2.2 (this is not one of kernel rule29/30).",
+          "enum": ["reset"],
+          "default": "reset"
+        },
+        "human_retained_residue_ref": { "type": ["string", "null"] }
+      }
+    },
+    "entry_anchor": {
+      "description": "SESSION_ARCH_v0.4_SPEC.md §2.1: ref -> Problem Card, the H0 term of ENTRY_H->AI = H_0 ^ V_0 ^ C_0 ^ R* (sources/notes/EPISTEMIC_FUSION_v7.1.txt:351). Names the problem_card.problem_id this session's dialogue opened against. Additive/optional.",
+      "type": ["string", "null"]
+    },
     "participants": {
       "type": "array",
       "minItems": 1,

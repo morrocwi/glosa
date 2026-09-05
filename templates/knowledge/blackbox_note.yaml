@@ -65,7 +65,73 @@ blackbox_note:
       what_changed: "<one sentence — which distinction was added/removed/re-attributed>"
   r1_readout_ref: <file of the lens-in formulation>      # never inline here
   r2_hypothesis_ref: <file of the world-language hypothesis>
+  question_trace:                   # OPTIONAL, top-level (schema.blackbox-question-trace, build_now,
+                                     # SESSION_ARCH_v0.4_SPEC.md §9.1/§9.4). Real gap this closes:
+                                     # question_human/question_readout on a Claim Card are single-shot
+                                     # (design/FOUNDATION_v0.6.md:495) -- nothing records how the
+                                     # question itself changed turn-to-turn inside ONE note. This is
+                                     # NOT grounded in "glosa's own Human Return Test" (no such thing
+                                     # exists in glosa's design docs -- that phrase was a
+                                     # sources/notes/EPISTEMIC_FUSION_v7.1.txt:467 construct glosa has
+                                     # not adopted; the spec's own §9.1 ships this field on the real,
+                                     # narrower gap alone). Distinct from `session.question_trace[]`
+                                     # above (Problem Card refs opened this session, SA-3 scope).
+    - n: 1
+      ts: <ISO-8601 ts>
+      question_text: <verbatim, as asked this turn>
+      derived_from_line: <lines[].n this question grew from, or null>
+      note: ""
+  # TODO(schema.blackbox-line-origin-enum): build-with-revision -- replaces `lines[].ai_proposed:
+  #   boolean` with an enum [human_authored, ai_proposed_pending, ai_proposed_adopted,
+  #   ai_proposed_forgotten]; keep the `ai_proposed` alias one migration cycle. Needs its own
+  #   revision fix (same-document cooking[]/became[] ordering check) before shipping -- not built
+  #   this pass.
+  # TODO(schema.blackbox-chooser-reaffirmation): build-with-revision -- `became[].chooser_reaffirmed:
+  #   {by, ts}|null` conditional-required sub-field, scope to `^hsel-` ids only until the
+  #   cross-file `responsible:human` validator this proposal never designed is specified. Not built
+  #   this pass.
+  # TODO(kernel.candidate-set-delta-cooking-step): build-with-revision -- `cooking.items[].
+  #   candidate_set: {before, after, forgotten}` additive counts. Fixture/tool retarget needed
+  #   first (see SESSION_ARCH_v0.4_SPEC.md §9.1). Not built this pass.
+  # TODO(schema.blackbox-language-bridge-subfield): still_open -- already refuted
+  #   (design/MEETING_2026-09-05_judged.json:84-92, keep:false); do NOT add a `cooking.items[].
+  #   bridge_kind` field here without a founder overrule of that standing ruling.
   translation_status: none | machine | reviewed | verified   # for any rendering of these lines elsewhere
+  session:                          # SESSION_ARCH_v0.4_SPEC.md §2.1/§2.2/§8 (SA-1, build_now): the
+                                     # session-boundary + AI-reset fact lives HERE, on the Blackbox
+                                     # Note, per one-fact-one-home (this is the only artifact that
+                                     # already owns per-line/per-cooking-step sequencing) -- it is
+                                     # NOT a new session.yaml file. Additive field: additionalProperties
+                                     # is true on this schema, so this block validates today without a
+                                     # schema-file change. `glosa session open|close` writes this block.
+    session_id: <string>            # citations: sources/notes/EPISTEMIC_FUSION_v7.1.txt:489-490 (F8), :493 (F10)
+    session_boundary:
+      opened_at: <ISO-8601 ts>
+      closed_at: null                # set only by `glosa session close`
+      ai_state_at_boundary: reset | carried   # fixed literal `reset` at a fresh open/close
+                                     # (v7.1:328 "m^{AI}_{s+1,0} = 0 (by architectural scope
+                                     # definition)"); `carried` is legal only alongside a non-null
+                                     # human_retained_residue_ref below -- never silently defaulted.
+    entry_anchor: <ref -> problem_card.problem_id>   # H0 anchor (schema.entry-resistance-precommit-field
+                                     # + HU-2, v7.1:344 "H_0 = (P_0, M_0, U_0, E_0, Phi_0)", :351)
+    question_trace:                 # array of Problem Card refs OPENED during this session (SA-3,
+                                     # v7.1:353-354 V_0) -- distinct from the top-level per-turn
+                                     # `question_trace[]` further below, which is inside ONE note.
+      - problem_ref: <problem_card.problem_id>
+        opened_at: <ISO-8601 ts>
+    retained_direction_ref: null    # POINTER ONLY, never a duplicate value: the actual
+                                     # `unknown | expansion | tunnel` fact lives on
+                                     # hypothesis_selection.yaml's own `retained_direction` field
+                                     # (§2.2 one-fact-one-home decision; schema.retention-direction-field,
+                                     # SA-2, NC-77) -- put the hsel-<slug>-<nnn> id here once that row
+                                     # exists for this session, never re-state its value on this note.
+    human_retained_residue_ref: null   # what the human explicitly carries forward, if anything; a
+                                     # session open either points at the PRIOR note's residue here or
+                                     # records "none" -- never left silently blank (boundary check §6.4).
+    retention_note: null            # human writes, AI never fills. `glosa session close` refuses
+                                     # (fail-closed) unless this is a non-empty human-authored string
+                                     # at close time -- an AI session may never author this field's
+                                     # content on the human's behalf.
   disclaimers: [D-BLACKBOX-NOTE, D-STANDPOINT]
   # Fixed FOUNDATION_v0.5 §12: dropped D-SELF-EXPERIENCE-NOT-GENERAL-EVIDENCE, an id that did not
   # exist in FOUNDATION §5's master catalogue (the nearest match, NC-64, is a Non-Collapse Table

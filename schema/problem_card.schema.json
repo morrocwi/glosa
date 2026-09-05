@@ -6,6 +6,7 @@
   "type": "object",
   "required": ["problem_id", "project", "intake", "standpoint", "origin_blackbox_ref", "produced_by", "responsible", "readiness", "human_owner"],
   "additionalProperties": true,
+  "$comment": "TODO(schema.pre-exposure-anchor-fields): design/SESSION_ARCH_v0.4_SPEC.md §9.2 / §3 SA-3 (status: with_revision, NOT built this pass) -- three new required Problem Card `intake` fields (`problem_stated_before_first_ai_response`, `prior_model_or_guess`, `verification_intent`) are pending a citation fix (EPISTEMIC_FUSION_v7.1.txt:354 -> :353) and either the timestamp cross-check script the proposal's own acceptance_test requires, or a narrowed schema-required-fields-only acceptance_test; retroactive-vs-forward-only applicability is also a pending founder decision (§7 item 4).",
   "properties": {
     "problem_id": { "type": "string", "pattern": "^GLOSA-PC-[0-9]{8}-[0-9]{4}$" },
     "project": { "type": "string", "minLength": 1 },
@@ -40,6 +41,10 @@
             "stated_by": { "$ref": "common.defs.json#/definitions/role_or_human" },
             "blackbox_line_ref": { "type": "string" }
           }
+        },
+        "precommitted_resistance_route": {
+          "description": "SESSION_ARCH_v0.4_SPEC.md §2.1/§2.2 (schema.entry-resistance-precommit-field, build_now), the R* term of ENTRY_H->AI = H_0 ^ V_0 ^ C_0 ^ R* (sources/notes/EPISTEMIC_FUSION_v7.1.txt:356). A concrete route (source/record/experiment/critic/authority) precommitted before the first AI-turn line in the linked Blackbox Note. Additive/optional; null/absent triggers the D-NO-PRECOMMIT-ROUTE flag (kernel-only, never a hard block) once readiness.verdict reaches READY_FOR_S2. Target corrected from §2.1a (which explicitly disclaims reopening S1-S6 ownership) to this intake object, per §2.2.",
+          "type": ["string", "null"]
         }
       }
     },

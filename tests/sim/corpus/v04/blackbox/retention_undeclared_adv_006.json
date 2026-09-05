@@ -1,0 +1,15 @@
+{
+ "id": "bbpair-retention_undeclared-adv-006",
+ "note_a": {
+  "id": "bbpair-retention_undeclared-adv-006-a",
+  "session_id": "sess-06",
+  "process_restart_after": true,
+  "ai_state_at_boundary": "not-reset"
+ },
+ "note_b": {
+  "id": "bbpair-retention_undeclared-adv-006-b",
+  "session_id": "sess-06",
+  "process_restart_after": true,
+  "ai_state_at_boundary": "reset"
+ }
+}

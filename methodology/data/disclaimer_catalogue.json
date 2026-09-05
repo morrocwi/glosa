@@ -446,6 +446,30 @@
       "params": [
         "lens_ref"
       ]
+    },
+    {
+      "id": "D-RETENTION-DIRECTION",
+      "category": "Session",
+      "trigger": "documentation-only -- states NC-77 (methodology/data/non_collapse_table.json) in disclaimer-catalogue form for any doc emitting a hypothesis_selection.yaml `retained_direction` value; not itself schema/kernel-checkable (n/a failing_control per SESSION_ARCH_v0.4_SPEC.md §4)",
+      "wording_th": "การที่สมมติฐานนี้ถูกเลือกซ้ำ/คงอยู่ข้ามหลายเซสชัน ไม่ใช่หลักฐานว่าทิศทางเป็นการขยาย (expansion) หรือช่องแคบ (tunnel) — ทิศทางบอกได้เฉพาะเมื่อมี artifact ตรวจสอบอิสระ (review_report/falsifier) เชื่อมโยงอยู่เท่านั้น ค่าตั้งต้นคือ unknown",
+      "wording_en": "Persistence or re-selection of a hypothesis across sessions is never by itself evidence that its direction is expansion rather than tunnel -- only a linked independent-check artifact (review_report/falsifier) may set the sign. Default: retained_direction: unknown.",
+      "placement": "Wherever hypothesis_selection.yaml's retained_direction field is displayed or cited",
+      "mandatory": true,
+      "params": [
+        "retained_direction"
+      ]
+    },
+    {
+      "id": "D-NO-PRECOMMIT-ROUTE",
+      "category": "Human-uplift",
+      "trigger": "problem_card.intake.precommitted_resistance_route is null/absent AND problem_card.readiness.verdict == \"READY_FOR_S2\" -- FLAG, non-mandatory, never a release-gate block (SESSION_ARCH_v0.4_SPEC.md §4)",
+      "wording_th": "การ์ดปัญหานี้ถึง READY_FOR_S2 แดยยังไม่ได้ระบุเส้นทางการต้านทาน (precommitted_resistance_route: source/record/experiment/critic/authority) ไว้ล่วงหน้า — เป็นการแจ้งเตือน ไม่ใช่การปิดกั้น",
+      "wording_en": "This Problem Card reached READY_FOR_S2 without a precommitted resistance route (precommitted_resistance_route: source/record/experiment/critic/authority) named in advance -- a flag, not a block.",
+      "placement": "problem_card.intake.precommitted_resistance_route; Human Mastery Gate protocol card (§6 entry check)",
+      "mandatory": false,
+      "params": [
+        "problem_id"
+      ]
     }
   ]
 }

@@ -23,8 +23,8 @@
   "properties": {
     "schema_version": {
       "type": "string",
-      "default": "0.7.0",
-      "description": "0.7.0 (this pass, design/FOUNDATION_v0.6_PATCH.md): comparison, evidence_strength, verdict_class, gate_fail_taxonomy, gate_construction_status, five_questions.seen.ai_assisted_fields (all additive/optional). Lands after the separately-queued, not-yet-applied 0.6.0 bump (tested.evidence_relations[].channel + rules 13/14, FOUNDATION_v0.5.md §3.2:467) so the two change sets do not collide on one version number."
+      "default": "0.8.0",
+      "description": "0.8.0 (this pass, design/SESSION_ARCH_v0.4_SPEC.md §10.1/§10.2/§10.3/§10.4): five_questions.tested.defeater_class (additive optional, sibling of claim_type -- see rule30), provenance_dag.defeater_log[].{node,date,outcome} now required with an outcome enum (rule: lrs.defeater-defeated-status-field), kernel rule29 (strength-of-claim is not a defeater) and rule30 (defeater_class-appropriate falsifier phrasing) -- both additive/optional, backward-compatible. Lands after 0.7.0 (this pass, design/FOUNDATION_v0.6_PATCH.md): comparison, evidence_strength, verdict_class, gate_fail_taxonomy, gate_construction_status, five_questions.seen.ai_assisted_fields (all additive/optional). Lands after the separately-queued, not-yet-applied 0.6.0 bump (tested.evidence_relations[].channel + rules 13/14, FOUNDATION_v0.5.md §3.2:467) so the change sets do not collide on one version number."
     },
     "claim_id": {
       "type": "string",
@@ -328,6 +328,16 @@
               "type": "string",
               "minLength": 1
             },
+            "defeater_class": {
+              "description": "SESSION_ARCH_v0.4_SPEC.md §10.4 (lrs.claim-type-defeater-enum), additive/optional. Deliberately a SIBLING of the top-level `claim_type` enum (common.defs.json#/definitions -- EMPIRICAL/FORMAL/INTERPRETIVE/NORMATIVE/CONVENTIONAL_LEGAL/DECISION/SOCIAL/HUMAN_PARTICIPANT), NOT an extension of it -- reusing that enum here would collide on the bare string 'EMPIRICAL'. This is the same five-way EPISTEMIC_FUSION_v8.1.txt §1 taxonomy as the dialogue_table `defeater_class` column (design/S14_literature-review-system.md §3.4, templates/knowledge/dialogue_table.md), inlined here rather than $ref'd to avoid a second enum owner. Paired with `falsifier` by kernel rule30 -- see kernel/glosa_kernel.py `_rule30_defeater_class_error`.",
+              "enum": [
+                "PHENOMENOLOGICAL",
+                "CONSTITUTIVE",
+                "STRUCTURAL_FORMAL",
+                "DIAGNOSTIC",
+                "EMPIRICAL"
+              ]
+            },
             "dissent_records": {
               "type": "array",
               "items": {
@@ -435,9 +445,18 @@
           }
         },
         "defeater_log": {
+          "description": "SESSION_ARCH_v0.4_SPEC.md §10.2 (lrs.defeater-defeated-status-field): [{node, date, outcome}], per design/FOUNDATION_v0.6.md:775. Distinguishes 'defeater attempted and survived' (outcome: claim_survived, entry present) from 'never tested' (defeater_log: []).",
           "type": "array",
           "items": {
-            "type": "object"
+            "type": "object",
+            "required": ["node", "date", "outcome"],
+            "properties": {
+              "node": { "type": "string", "minLength": 1 },
+              "date": { "type": "string", "minLength": 1 },
+              "outcome": {
+                "enum": ["claim_survived", "claim_revised", "claim_withdrawn"]
+              }
+            }
           }
         },
         "status": {

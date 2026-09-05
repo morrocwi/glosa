@@ -114,3 +114,64 @@ def test_sim_corpus_recall_and_false_alarms_do_not_regress():
         f"current kernel recall {recall:.4f} on tests/sim/corpus/ regressed below the "
         f"recorded baseline recall {baseline_recall:.4f} in tests/sim/baseline.json"
     )
+
+
+# =============================================================================================
+# v0.4 — design/SESSION_ARCH_v0.4_SPEC.md §5's five session-architecture defect classes, over
+# tests/sim/corpus/v04/ (see tests/sim/gen_corpus.py's gen_v04_corpus()).
+#
+# TODO(schema.retention-direction-field, SA-1, kernel.reciprocal-lineage-diagnostic, SA-3): the
+# schema/kernel fields these fixtures target (hypothesis_selection.yaml `retained_direction` /
+# `chooser_reaffirmations[]`, blackbox_note.schema.json `ai_state_at_boundary`, a session-level
+# question-drift/momentum check) do not exist in schema/*.json or kernel/glosa_kernel.py yet
+# (confirmed by direct grep, 2026-09-05) — those are separate, still-pending v0.4 proposals. This
+# test therefore does NOT (and must not be read to) assert anything about the shipped
+# kernel/schema's own behaviour on these fixtures; it asserts that tests/sim/baseline.py's own
+# `_check_*_v04` PROTOTYPE reference checkers (tier `Dr`, a hand-written reading of §5's
+# failing_control clauses) are internally consistent with what tests/sim/corpus/v04/labels.json
+# says each fixture is a control for — i.e. this is a self-consistency test of the sim's own
+# prototype, not a kernel regression test. Once the real fields/rules ship, this test (and
+# baseline.py's `main_v04`) should be repointed at the real kernel/schema calls and this TODO
+# removed.
+# =============================================================================================
+
+V04_DIR = CORPUS_DIR / "v04"
+V04_LABELS = V04_DIR / "labels.json"
+
+
+@pytest.mark.skipif(not V04_LABELS.exists(), reason="tests/sim/corpus/v04/labels.json not generated yet")
+def test_v04_prototype_checkers_match_fixture_labels():
+    baseline_mod = _load_baseline_module()
+    labels = json.loads(V04_LABELS.read_text(encoding="utf-8"))
+    cards = labels["cards"]
+    assert cards, "tests/sim/corpus/v04/labels.json has no fixtures"
+
+    per_defect_adv = {d: 0 for d in labels["defects"]}
+    per_defect_valid = {d: 0 for d in labels["defects"]}
+    wrong = []
+
+    for entry in cards:
+        rel = entry["file"].split("v04/", 1)[1]
+        obj = json.loads((V04_DIR / rel).read_text(encoding="utf-8"))
+        fname = Path(rel).name
+        defect = next((d for d in labels["defects"] if fname.startswith(d + "_")), None)
+        assert defect, f"v0.4 fixture {rel!r} filename does not name a known defect class"
+        checker = baseline_mod._V04_CHECKERS[defect]
+        msg = checker(obj)
+        if entry["kind"] == "adversarial":
+            per_defect_adv[defect] += 1
+            if msg is None:
+                wrong.append((defect, entry["id"], "adversarial fixture NOT flagged"))
+        else:
+            per_defect_valid[defect] += 1
+            if msg is not None:
+                wrong.append((defect, entry["id"], f"valid control WAS flagged: {msg!r}"))
+
+    for defect in labels["defects"]:
+        assert per_defect_adv[defect] >= 6, f"{defect}: fewer than 6 adversarial fixtures"
+        assert per_defect_valid[defect] >= 6, f"{defect}: fewer than 6 valid-control fixtures"
+
+    assert not wrong, (
+        "v0.4 prototype checker disagreed with its own fixture's declared kind:\n"
+        + "\n".join(f"  {d} {cid}: {reason}" for d, cid, reason in wrong)
+    )

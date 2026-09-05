@@ -6,43 +6,48 @@
  },
  "per_defect": {
   "hidden_ai_fill": {
-   "n": 9,
+   "n": 8,
+   "caught": 8,
+   "missed": 0
+  },
+  "hidden_ai_fill_unmarked": {
+   "n": 8,
    "caught": 0,
-   "missed": 9
+   "missed": 8
   },
   "inflated_bearing": {
-   "n": 9,
-   "caught": 9,
+   "n": 8,
+   "caught": 8,
    "missed": 0
   },
   "missing_locator": {
-   "n": 9,
-   "caught": 9,
+   "n": 8,
+   "caught": 8,
    "missed": 0
   },
   "composite_quote": {
-   "n": 9,
-   "caught": 9,
+   "n": 8,
+   "caught": 8,
    "missed": 0
   },
   "k_state_rounded_up": {
-   "n": 9,
-   "caught": 9,
+   "n": 8,
+   "caught": 8,
    "missed": 0
   },
   "stub_public": {
-   "n": 9,
-   "caught": 9,
+   "n": 8,
+   "caught": 8,
    "missed": 0
   },
   "signature_missing": {
-   "n": 9,
-   "caught": 9,
+   "n": 8,
+   "caught": 8,
    "missed": 0
   },
   "injected_infinity": {
-   "n": 9,
-   "caught": 9,
+   "n": 8,
+   "caught": 8,
    "missed": 0
   },
   "verifiable_no_procedure": {
@@ -81,13 +86,13 @@
   "false_alarm": 0,
   "false_alarm_ids": []
  },
- "recall": 0.925,
+ "recall": 0.9333333333333333,
  "precision": 1.0,
  "missed_defect_ids_sample": {
-  "hidden_ai_fill": [
-   "GLOSA-CC-20260905-5001",
-   "GLOSA-CC-20260905-5002",
-   "GLOSA-CC-20260905-5003"
+  "hidden_ai_fill_unmarked": [
+   "GLOSA-CC-20260905-5009",
+   "GLOSA-CC-20260905-5010",
+   "GLOSA-CC-20260905-5011"
   ]
  },
  "tier": "finite_diagnostic",

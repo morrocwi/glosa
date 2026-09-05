@@ -1,5 +1,5 @@
 {
- "schema_version": "0.4.0",
+ "schema_version": "0.7.0",
  "claim_id": "GLOSA-CC-20260905-5004",
  "shape": "full",
  "statement": {
@@ -54,7 +54,10 @@
    "as_of": "2026-09-04",
    "retrievable_original": true,
    "access_model": "[AI-DRAFTED SUMMARY, presented as the household's own retained observation log] the cat reliably avoids litter boxes placed far from its resting area",
-   "citation_refs": []
+   "citation_refs": [],
+   "ai_assisted_fields": [
+    "access_model"
+   ]
   },
   "separates": {
    "value_z0": "in-box vs out-of-box urination location",
@@ -285,5 +288,15 @@
    "by": "founder+AI",
    "note": "initial draft, worked example"
   }
- ]
+ ],
+ "comparison": {
+  "target": null,
+  "relation": "not_compared",
+  "basis": "single-household 14-day observation; no comparable prior case identified to compare against"
+ },
+ "evidence_strength": {
+  "class": "direct_validation",
+  "notes": "evidence bears directly on this household/cat, not read across from a different case"
+ },
+ "verdict_class": "DERIVED"
 }

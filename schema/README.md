@@ -48,24 +48,24 @@ ran, at the path named there).
 
 | Schema | FOUNDATION_v0.5.md section | Notes |
 |---|---|---|
-| `claim_card.schema.json` | §3 (whole section) | The canonical schema. Two legal shapes (`stub`\|`full`, §3.2a). Carries the largest share of schema-enforced kernel rules (see table below). Also carries two OPTIONAL top-level blocks added per founder instruction 2026-09-04 (BBL-2026-09-04-083/084, FOUNDATION_v0.5.md §2.1b): `responsibility` (`data_to_inference: human\|ai\|joint`, `inference_to_claim` const `"human"`, kernel rule 15 — see fail fixture table below) and `empirical_extension` (`operationalization[]`, `study_design`, `bias_register[]`, `robustness`; kernel rule16w warns when absent on an `EMPIRICAL` claim). |
+| `claim_card.schema.json` | §3 (whole section) | The canonical schema. Two legal shapes (`stub`\|`full`, §3.2a). Carries the largest share of schema-enforced kernel rules (see table below). Also carries two OPTIONAL top-level blocks added per founder instruction 2026-09-04 (BBL-2026-09-04-083/084, FOUNDATION_v0.5.md §2.1b): `responsibility` (`data_to_inference: human\|ai\|joint`, `inference_to_claim` const `"human"`, kernel rule 15 — see fail fixture table below) and `empirical_extension` (`operationalization[]`, `study_design`, `bias_register[]`, `robustness`; kernel rule16w warns when absent on an `EMPIRICAL` claim). schema_version 0.8.0 (this pass, `design/SESSION_ARCH_v0.4_SPEC.md` §10): additive optional `five_questions.tested.defeater_class` (rule30) and `provenance_dag.defeater_log[]` now `required: [node, date, outcome]` with an `outcome` enum (rule `lrs.defeater-defeated-status-field`). |
 | `evidence_relation.schema.json` | §3.2 `five_questions.tested.evidence_relations[]` | Standalone so `claim_card` can `$ref` it (one-fact-one-home) and so review/DVP tooling can validate one evidence relation in isolation. |
 | `review_report.schema.json` | §4.3, §7.3 (Bounded-Judge Law) | `verdict_tier` required, six values (chair ruling C4). Field renamed `independence_level` → `independence_class` to match chair ruling C1's "one string ladder, every schema." |
 | `citation_card.schema.json` | §7.8 | Integrity Firewall's two independently-flaggable booleans. `status` uses FOUNDATION's newer six-value enum, not the broader draft enum in `templates/knowledge/citation_card.yaml`. |
-| `blackbox_note.schema.json` | §2.3, §2.4 | Renamed from the design-era `r0_record.schema.json` (chair ruling A1). |
-| `problem_card.schema.json` | §2.2 stage S1 | The two-question intake gate. This is the object `REPO_SPEC_v0.5.md` calls `intake.schema.json` — filed under `problem_card` per this task's naming. |
+| `blackbox_note.schema.json` | §2.3, §2.4 | Renamed from the design-era `r0_record.schema.json` (chair ruling A1). Additive/optional `session_id`, `session_boundary` (`ai_state_at_boundary` literal `"reset"`), `entry_anchor` — `design/SESSION_ARCH_v0.4_SPEC.md` §2.1/§2.2 (SA-1), pending founder ratification of §2.2's logical-join decision. |
+| `problem_card.schema.json` | §2.2 stage S1 | The two-question intake gate. This is the object `REPO_SPEC_v0.5.md` calls `intake.schema.json` — filed under `problem_card` per this task's naming. Additive/optional `intake.precommitted_resistance_route` (`design/SESSION_ARCH_v0.4_SPEC.md` §2.1/§2.2, D-NO-PRECOMMIT-ROUTE flag, never a hard block). |
 | `readiness_report.schema.json` | §9 (`validate_readiness`) | General pre-work project-readiness self-check — distinct from `problem_card.readiness`, which is S1's own narrower gate. |
 | `release_manifest.schema.json` | §7.4 | PUB-ADVERSARIAL-REVIEW's seven dimensions (R1–R7) plus the mandatory Blackbox Note appendix precondition. |
 | `route_dependence_matrix.schema.json` | §4.3 | DVP mechanics — makes route correlation visible, never zeroes it out. |
 | `disagreement_ledger_entry.schema.json` | §4.3, §8.1 | Resolve-or-Declare, per-project home + merged view (chair ruling B6). |
 | `kg_node.schema.json` | §8.1 | Graph-view pointer only; canonical content lives at `ref`. |
-| `kg_edge.schema.json` | §8.1 | `derives_from` vs `borrows` kept deliberately non-collapsible. |
+| `kg_edge.schema.json` | §8.1 | `derives_from` vs `borrows` kept deliberately non-collapsible. Additive/optional `session_id` (`design/SESSION_ARCH_v0.4_SPEC.md` §2.2/§8) backs `chi_recip_diagnostic` (`kernel/glosa_kernel.py`, `Open`-tier, never a verdict). |
 | `equation_registry_row.schema.json` | §8.1 | Registered once, at first use; Buckingham-trap guard. |
 | `conversion_plan.schema.json` | §7.7 | Project Advisor output. `tier` is fixed `"Dr"`. |
 | `search_log.schema.json` | S8 template + S14 §12 | Field renamed `review_mode` → **`search_mode`** (this task's explicit instruction), resolving the name collision `S14_literature-review-system.md` §12 open-question-1 flagged against §7.8's `review_mode`. |
 | `source_acquisition_log.schema.json` | S14 | Public-repo-safe by construction — never a local path/Zotero key. |
 | `litreview_manifest.schema.json` | S14 | Frozen per LRS run; two separate gates (`accuracy_gate`, `diversity_gate`). |
-| `hypothesis_selection.schema.json` | S14, HANDOFF 35d | Human-only selection among candidate hypotheses; AI may propose, never select. |
+| `hypothesis_selection.schema.json` | S14, HANDOFF 35d | Human-only selection among candidate hypotheses; AI may propose, never select. Additive/optional `session_id`, `chooser_reaffirmations[]`, `retained_direction` (default `unknown`, NC-77), `direction_evidence_relation` — `design/SESSION_ARCH_v0.4_SPEC.md` §2.1/§4. |
 | `dialogue_table_row.schema.json` | S14, `templates/knowledge/dialogue_table.md` | One row per source; a stance may only be recorded once `claim_match_verified`. |
 | `neighbour_table_row.schema.json` | `design/S13_neighbour-table.md`, chair ruling A2 | `relation: adopted_from` requires an authorization pointer (never AI-inferred). |
 
@@ -119,6 +119,10 @@ pending-founder, not built this pass):
 | `fail_rule26_composite_quote.json` (citation_card-shaped) | `exact_passage` splices across a boundary via an ellipsis marker | rule26 (COMPOSITE-QUOTE, kernel-only, K-C1) |
 | `fail_rule27_hidden_ai_fill.json` | `seen.ai_assisted_fields` names a field, but every `ai_filled` value is a placeholder | rule27 (HIDDEN-AI-FILL, kernel-only, K-C2) |
 | `fail_rule28_inflated_bearing.json` | `evidence_relations[0]` bearing=SUPPORTS, own-lineage notes, `strength` not "context" | rule28 (INFLATED-BEARING, kernel-only, K-C3) |
+| `fail_rule29_strength_of_claim_defeater.json` | `tested.falsifier` reads "feel intuitively solid" (strength-of-claim, not a defeater) | rule29 (DEFEATER-NOT-COLLAPSE, kernel-only, `design/SESSION_ARCH_v0.4_SPEC.md` §10.3) |
+| `fail_rule30_defeater_class_mismatch.json` | `defeater_class: EMPIRICAL` paired with a PHENOMENOLOGICAL-style (absence/misdescription) `falsifier` | rule30 (CLAIM-TYPE-DEFEATER-ENUM, kernel-only, §10.4) |
+| `fail_nc77_retained_direction_unforced.json` (hypothesis_selection-shaped) | `retained_direction: expansion` declared on a `chosen` row spanning 2 sessions with no `direction_evidence_relation` | NC-77 (kernel-only, `validate_hypothesis_selection`, `methodology/data/non_collapse_table.json`) |
+| `fail_session_boundary_not_reset.json` (blackbox_note-shaped) | `session_boundary.ai_state_at_boundary: "manual_continue"` — not the literal `"reset"` | unnumbered session-boundary rule, schema-enforced within one note; the cross-note case is `check_session_boundary_reset` (kernel-only), exercised in `tests/test_kernel.py`, not a fixture file |
 
 ## How to validate
 
@@ -225,7 +229,35 @@ prose) or are this task's own K6-kernel additions (18–28, `design/FOUNDATION_v
 | 26 | Composite-quote detector: `citation_card.exact_passage` may not splice across a boundary via an ellipsis/`" -- "` marker | **shipped in kernel** (structural check on the field's own shape, no lexicon-fragility risk) | `kernel/glosa_kernel.py` `_composite_quote_error`, wired into `validate_citation_card` |
 | 27 | Hidden-AI-fill detector: `five_questions.seen.ai_assisted_fields` vs `five_questions.ai_filled` contradiction | **shipped in kernel** | `kernel/glosa_kernel.py` `_hidden_ai_fill_error`, `claim_card.schema.json`'s additive `seen.ai_assisted_fields` field |
 | 28 | Inflated-bearing detector: a `bearing: SUPPORTS` evidence_relation without `strength: "context"`, unresolvable/disqualified citation, or same-lineage notes | **shipped in kernel** (the resolvability half is only checked when `citation_cards` is supplied — a warning discloses the gap otherwise, same convention as D-LENS-UNCITED) | `kernel/glosa_kernel.py` `_inflated_bearing_errors`, wired into `validate_claim_card` |
+| 29 | `kernel/glosa_kernel.py` rule29 (`lrs.defeater-not-collapse-rule`, `design/SESSION_ARCH_v0.4_SPEC.md` §10.3): a `tested.falsifier` matching strength-of-claim/feels-solid phrasing is never itself a legitimate defeater, regardless of `claim_type`. NOTE: this is a **different, non-colliding sibling** number from `design/FOUNDATION_v0.6.md` §3.3's own prose "flag-rule29" (`kernel.candidate-set-delta-cooking-step`) — always write out `kernel.glosa_kernel.rule29` vs. `FOUNDATION_v0.6.md §3.3 flag-rule29` per SESSION_ARCH_v0.4_SPEC.md §10's own disambiguation note | **shipped in kernel** (tier `Dr`, evadable-by-omission phrase-list guard — the spec's suggested `methodology/data/non_defeater_phrase_table.json` home is not in this task's ownership list, so the pattern is kept inline instead; rule statement/failing control unchanged) | `kernel/glosa_kernel.py` `_rule29_non_defeater_error`, wired into `validate_claim_card` |
+| 30 | `five_questions.tested.defeater_class` (additive optional, sibling of `claim_type`) must be paired with a `falsifier` phrasing style matching that class (`lrs.claim-type-defeater-enum`, §10.4) | **shipped in kernel**, EMPIRICAL<->PHENOMENOLOGICAL pairing only this pass — the other three classes' own phrasing styles are an open dependency per §10.4's own disclosure | `kernel/glosa_kernel.py` `_rule30_defeater_class_error`, `claim_card.schema.json`'s additive `five_questions.tested.defeater_class` field |
 
 Every rule 18–28 row above traces to `design/FOUNDATION_v0.6_PATCH.md`; rules 22/24/25 are
 deliberately unbuilt (pending-founder) — their TODO comments name the exact node id a future pass
 must resolve before building them, per this task's own instruction not to guess a founder ruling.
+Rules 29/30 trace to `design/SESSION_ARCH_v0.4_SPEC.md` §10.3/§10.4 instead.
+
+## NC-77 (Retention ≠ Direction) and the session-architecture fields — `design/SESSION_ARCH_v0.4_SPEC.md`
+
+- **NC-77** (Family J, `methodology/data/non_collapse_table.json`): persistence/retention of a
+  chosen hypothesis across ≥2 sessions is never by itself evidence of expansion vs. tunnel; only a
+  linked independent-check artifact may set the sign. Schema default `retained_direction: unknown`
+  on `schema/hypothesis_selection.schema.json`; kernel-enforced by `_retained_direction_error` /
+  `validate_hypothesis_selection` (`kernel/glosa_kernel.py`). Disclaimer `D-RETENTION-DIRECTION`
+  (documentation-only, `methodology/data/disclaimer_catalogue.json`).
+- **`session_id` / `session_boundary` / `entry_anchor`** (`schema/blackbox_note.schema.json`,
+  additive/optional): the session-boundary + AI-reset fact (SA-1). `ai_state_at_boundary` is
+  schema-restricted to the literal `"reset"`; the cross-note agreement across a shared
+  `session_id` is kernel-checked (`check_session_boundary_reset`), not schema-checked.
+- **`intake.precommitted_resistance_route`** (`schema/problem_card.schema.json`, additive/
+  optional): the R* resistance-precommit fact. Absence at `READY_FOR_S2` raises the
+  `D-NO-PRECOMMIT-ROUTE` flag (`validate_problem_card`) — a warning, never a hard block.
+- **`chi_recip_diagnostic`** (`kernel/glosa_kernel.py`, over `schema/kg_edge.schema.json`'s new
+  `session_id` field): an `Open`-tier finite diagnostic, never a verdict — returns
+  `{"not_computable": True, ...}` (never a numeric default) when `session_id` is absent.
+- The Session object itself (§2.1) is a **logical join** across these four artifacts, not a new
+  `session.yaml` file (§2.2's one-fact-one-home decision) — **pending founder ratification**
+  (§7 item 1 of the spec); the fields above implement that recommended default, not a founder
+  ruling already made. Likewise `hypothesis_selection.schema.json`'s `session_id` field wires
+  SA-2's own session-grouping key as the recommended default (§7 item 7), also pending founder
+  ratification.
