@@ -1,0 +1,1202 @@
+[
+ {
+  "id": "SA-2",
+  "title": "retained_direction:unknown gate (D-RETENTION-DIRECTION, NC-77) blocks silent tunnel-as-expansion reads",
+  "claim_as_stated": "Retention/persistence of a claim or habit across sessions is never by itself evidence it is an expansion rather than a tunnel; only an independent check outcome may reclassify it. Default status for any retained-but-unchecked item: retained_direction: unknown.",
+  "change": "Add disclaimer id D-RETENTION-DIRECTION to design/FOUNDATION_v0.6.md §5; add Appendix A row NC-77 'Retention≠Direction' to Family J; add optional enum field retained_direction: [unknown, expansion, tunnel] to schema/hypothesis_selection.schema.json (additionalProperties already permits this); default value unknown when no linked independent-check artifact exists.",
+  "target": "design/FOUNDATION_v0.6.md §5 (disclaimer catalogue) + Appendix A Family J (new row NC-77, next free id verified below); schema/hypothesis_selection.schema.json (new optional enum field)",
+  "citations": [
+   {
+    "file": "sources/notes/EPISTEMIC_FUSION_v8.1.txt",
+    "line": 356,
+    "verbatim": "Repair 8 - Separate retention magnitude from re-"
+   },
+   {
+    "file": "sources/notes/EPISTEMIC_FUSION_v8.1.txt",
+    "line": 358,
+    "verbatim": "ηs > 0, ∆s > 0 ⇒ durable expansion;"
+   },
+   {
+    "file": "sources/notes/EPISTEMIC_FUSION_v8.1.txt",
+    "line": 359,
+    "verbatim": "ηs > 0, ∆s < 0 ⇒ durable epistemic tunnel."
+   },
+   {
+    "file": "sources/notes/EPISTEMIC_FUSION_v8.1.txt",
+    "line": 361,
+    "verbatim": "High engagement, trust, preference, or memory can-"
+   },
+   {
+    "file": "sources/notes/EPISTEMIC_FUSION_v7.1.txt",
+    "line": 492,
+    "verbatim": "F9. Retention is direction-neutral. Durable human change can consolidate corrective distinctions or consolidate confirmation,"
+   },
+   {
+    "file": "design/FOUNDATION_v0.6.md",
+    "line": 2254,
+    "verbatim": "`NC-33` K1≠Certification · `NC-34` No independent check⇒No K2 / No independent check⇒No release"
+   },
+   {
+    "file": "design/FOUNDATION_v0.6.md",
+    "line": 2311,
+    "verbatim": "`NC-76` θ(E) relational invariance≠θ(E) absolute"
+   }
+  ],
+  "legitimate_defeater": "Per v8.1 §1 claim-type discipline this is a direction-classification claim (expansion vs tunnel), not a magnitude claim — its only legitimate defeater is a linked independent-check artifact (a falsifier run, a review_report.yaml verdict, or a checker finding) that establishes the sign of Δs directly; persistence duration, repetition count, or confidence/engagement signals reported by either the human or the AI can NEVER defeat it, per v8.1:361 'High engagement, trust, preference, or memory cannot substitute for the sign of retained change.'",
+  "failing_control": "Must fire: a hypothesis_selection.yaml row with status=chosen, decided_at spanning ≥2 distinct session_ids (Blackbox Note session boundaries), and no evidence_relation pointing to a review_report.yaml or falsifier artifact — this row must be scanned as retained_direction: unknown. Must NOT fire: a row with status=chosen whose evidence_relation resolves to an existing review_report.yaml or falsifier result with a verdict — that row may legitimately carry expansion or tunnel per the linked artifact's own verdict, not per persistence.",
+  "acceptance_test": "Mechanical scan (script over schema/hypothesis_selection.schema.json instances): for N rows with status=chosen spanning ≥2 sessions and no linked independent-check artifact, 100% are tagged retained_direction: unknown; any row carrying expansion or tunnel must resolve a non-empty evidence_relation to a review_report.yaml/falsifier artifact, else the scan fails. Precondition to be resolved first: hypothesis_selection.yaml currently has no session-grouping key (decided_by/decided_at alone cannot group rows into sessions) — this must be closed by wiring session_id from SA-1's session_boundary block (once built) before the scanner can group rows; until then the acceptance test is scoped to single-session rows only, which trivially satisfy the default.",
+  "build_path": "design/FOUNDATION_v0.6.md §5 new disclaimer id D-RETENTION-DIRECTION; Appendix A Family J new row NC-77 (kernel/non-collapse rule); schema/hypothesis_selection.schema.json new optional field `retained_direction`; design/DAG_v0.3.yaml new node session.retention-direction-gate (already drafted in design/MEETING_2026-09-05_uplift.md Appendix, lines 251-269); reserve NC-77 in cpg/research/coordination/DECISIONS.yaml before any concurrent Family J proposal can claim it.",
+  "tier": "Dr",
+  "founder_decision_needed": true,
+  "lens": "session-architecture",
+  "verdict": {
+   "id": "SA-2",
+   "citations_verified": false,
+   "defeater_legitimate": true,
+   "control_mechanical": false,
+   "invariant_ok": true,
+   "score": 4,
+   "reason": "Six of seven citations check out verbatim at the stated lines (v8.1:356,358,359,361 — note verbatim for line 358 \"ηs > 0, ∆s > 0 ⇒ durable expansion;\" is actually at line 359, and \"durable epistemic tunnel\" at 361 both match content but the proposal's line-358 entry has no independent verbatim of its own beyond what's at 359, a minor slip; v7.1:492 is actually at line 491 — off by one but content matches; FOUNDATION_v0.6.md:2311 NC-76 is correct). The material defect is design/FOUNDATION_v0.6.md:2254 — that line actually reads \"`NC-28` maker≠checker≠approver · `NC-29` AI generator≠AI reviewer of the same commit · `NC-30`\"; the cited verbatim \"`NC-33` K1≠Certification · `NC-34` No independent check⇒No K2 / No independent check⇒No release\" is real text but sits at line 2256, not 2254. Under Rule 17 (file:line with continuous verbatim actually present there) this citation fails as stated — a 2-line offset that a checker following the citation would catch as wrong. NC-77 is independently verified as the correct next-free Family J id via grep (matches design/MEETING_2026-09-05_uplift.md's own verification), so the id-collision risk that produced the fabricated \"C1–C11\" incident is not repeated here. The legitimate_defeater is well-grounded: the claim is a direction-classification claim (expansion vs. tunnel) per v8.1 Repair 8 and v7.1 F9 (\"Retention is direction-neutral... durable change alone is not evidence of improvement\"), and restricting its defeater to a linked independent-check artifact rather than persistence/engagement signals is directly supported by v8.1:361 (\"High engagement, trust, preference, or memory cannot substitute for the sign of retained change\"). However the failing_control is NOT presently mechanically runnable for the claim as stated: hypothesis_selection.yaml has no session-grouping key today (confirmed — schema/hypothesis_selection.schema.json only has decided_by/decided_at, no session_id), so the acceptance test as written can only execute in a scope where every row trivially satisfies the default (single-session rows), which per Founder ruling BBL-2026-09-05-119 is exactly the situation where the work must be raised (wire session_id, e.g. via SA-1) rather than the claim narrowed to a vacuous trivial-pass scope before being counted as a real control. schema.json additionalProperties:true is confirmed, so the new optional enum field is compatible. Founder invariants hold: tier Dr, human decision flagged (founder_decision_needed:true), no novelty language, no vendor credit, K-state math untouched, AI is proposing not certifying. Net: legitimate defeater and sound invariants, but a real off-by-2 citation error on a load-bearing anchor (the K2/independent-check precedent) plus a control that is honest about being non-executable for the actual multi-session claim today — both must be fixed (correct the line number; either build/wire the session_id precondition before claiming a real control, or explicitly gate this proposal as blocked on SA-1) before this clears as stated."
+  }
+ },
+ {
+  "id": "SA-4",
+  "title": "DECLINED-FOR-NOW: do not adopt chi_recip / m^H / m^AI momentum scoring as glosa fields",
+  "claim_as_stated": "glosa explicitly declines, and logs the decline, to add chi_recip (reciprocal-lineage diagnostic) or m^H/m^AI (finite-history momentum scores) as schema fields at this time, because (a) no multi-turn/dialogue-history evidence mechanism exists anywhere in glosa's current schema, and (b) both diagnostics carry an explicit, source-declared, untested self-defeat/removal clause.",
+  "change": "Add one row to cpg/research/coordination/DECISIONS.yaml (status: RECORDED, since DECLINED-FOR-NOW is not a currently defined value in that ledger's status_lifecycle enum and must not be assumed without a schema-extension decision first) with reason citing the source removal clauses and revisit_condition stating glosa must first gain a multi-turn dialogue-history evidence mechanism; mirror the row in glosa/DECISIONS.md (local table) with a cross-reference note naming cpg's row as authoritative; attach the note to DAG node session.retention-direction-gate (SA-2's node, once it exists) rather than creating a phantom node.",
+  "target": "cpg/research/coordination/DECISIONS.yaml (new row); glosa/DECISIONS.md (mirrored row, cross-referenced); design/DAG_v0.3.yaml (attached as a note on session.retention-direction-gate, no new node id)",
+  "citations": [
+   {
+    "file": "sources/notes/EPISTEMIC_FUSION_v7.1.txt",
+    "line": 550,
+    "verbatim": "Remove m^{AI}_{s,t} as a distinct object if within-session path history adds no effect on next-turn semantic transitions"
+   },
+   {
+    "file": "sources/notes/EPISTEMIC_FUSION_v7.1.txt",
+    "line": 552,
+    "verbatim": "Remove m^H_{s,t} as a distinct object if human path-history effects disappear once current semantic state, salience, and"
+   },
+   {
+    "file": "sources/notes/EPISTEMIC_FUSION_v7.1.txt",
+    "line": 554,
+    "verbatim": "Drop chi_recip[s,L] as a useful diagnostic if lineage-linked reciprocal descendants cannot be identified reproducibly under"
+   },
+   {
+    "file": "sources/notes/EPISTEMIC_FUSION_v7.1.txt",
+    "line": 494,
+    "verbatim": "F11. Reaction intensity is not epistemic direction. A high finite reciprocal-lineage gain can support either disciplined expansion"
+   },
+   {
+    "file": "design/FOUNDATION_v0.6.md",
+    "line": 1670,
+    "verbatim": "identifier.kind"
+   }
+  ],
+  "legitimate_defeater": "This is a non-adoption/scope-boundary claim, not a substantive empirical claim — per v8.1 §1 discipline its only legitimate defeater is glosa actually building a multi-turn/dialogue-history evidence mechanism (a schema field or artifact type that carries claim/evidence state across >1 turn or session) AND that mechanism surviving the source's own removal test (m^AI/m^H/chi_recip must still explain variance once current-state variables are controlled, per the removal clauses cited above). A single successful demo, a founder's informal impression that 'it feels useful,' or repetition of the request does NOT defeat a DECLINED-FOR-NOW row — only the stated revisit_condition being independently satisfied does.",
+  "failing_control": "Must fire: any future PR or proposal that adds chi_recip, m^H, or m^AI (or a field computing an equivalent quantity under a different name) to any glosa schema before glosa has a multi-turn dialogue-history evidence mechanism — CI/maker-checker review must reject citing this DECISIONS.yaml row. Must NOT fire: a proposal that adds a multi-turn dialogue-history evidence mechanism itself (the revisit_condition being met) followed by a *new*, separately reviewed proposal to add momentum scoring on top of it — that is the intended unblock path, not a violation.",
+  "acceptance_test": "Grep/query cpg/research/coordination/DECISIONS.yaml confirms exactly one row with the fields that actually exist in that ledger's schema (status, reason, and a revisit note placed in `notes` since `revisit_condition` is not a native field), reason text containing the two removal-clause line citations above; a repo-wide grep for `chi_recip`, `m^H`, `m^AI`, `m_AI`, `m_H` outside sources/notes/ and design/MEETING_2026-09-05_uplift.md returns zero hits in any schema/*.json file, confirming no equivalent field silently exists.",
+  "build_path": "cpg/research/coordination/DECISIONS.yaml new row (schema-conformant: status=RECORDED, not the non-existent DECLINED-FOR-NOW value, unless a separate human-approved schema/status-enum extension adds it first); glosa/DECISIONS.md mirrored row; design/DAG_v0.3.yaml note attached to session.retention-direction-gate node id (not a new node, not 'nearest sibling node' left unnamed).",
+  "tier": "Dr",
+  "founder_decision_needed": true,
+  "lens": "session-architecture",
+  "verdict": {
+   "id": "SA-4",
+   "citations_verified": false,
+   "defeater_legitimate": true,
+   "control_mechanical": true,
+   "invariant_ok": true,
+   "score": 4,
+   "reason": "Substance is sound (correctly declines chi_recip/m^H/m^AI, correctly avoids the fabricated DECLINED-FOR-NOW status and uses schema-conformant status:RECORDED + notes per the judge's own prior ruling in MEETING_2026-09-05_judged.json:63), and the legitimate_defeater is properly strict (only a real multi-turn evidence mechanism surviving the source's own removal test defeats it, not a demo/impression). But Rule 17 citation precision fails on verification: (1) claimed EPISTEMIC_FUSION_v7.1.txt:550 = 'Remove m^{AI}_{s,t}...' is wrong — that verbatim is actually at line 548; line 550 is the 'Remove m^H_{s,t}' text. (2) claimed :552 for the m^H removal clause is wrong too — that text is at line 550, off by 2. (3) claimed :494 for the F11 sentence is off by one; actual line is 495. (4) claimed design/FOUNDATION_v0.6.md:1670 for verbatim 'identifier.kind' is wrong — that exact phrase (as 'identifier.{kind') sits at line 1669, and this citation is also substantively irrelevant to the chi_recip/m^H/m^AI claim (it's citation-card schema boilerplate, not evidence about momentum scoring), reading as padding rather than support. Given the meeting's own history of fabricated citation ids, three off-by-1/2 line errors plus one irrelevant citation is a real, mechanically-checkable defect, not nitpicking — every one of the four citations needs its line number corrected (and the fourth needs a relevance check) before this row can be logged under Rule 17. Additionally the build_path's DAG-note step depends on a node (session.retention-direction-gate) that does not yet exist in design/DAG_v0.3.yaml — only reserved/discussed in MEETING_2026-09-05_uplift.md — and the acceptance_test never actually tests that the DAG note got attached, so that part of 'build in v0.4 as stated' is currently unverifiable/blocked on SA-2 landing first. control_mechanical is true only in the weak sense that the acceptance_test's grep commands are runnable by hand; no CI/maker-checker automation actually exists yet to make the failing_control fire on its own. Founder invariants (no novelty words, no vendor credit, human-owned problem framing, K-state math untouched, AI not signing) are respected."
+  }
+ },
+ {
+  "id": "SA-1",
+  "title": "session_boundary block on Blackbox Note names the AI-side reset and the human-carried residue across a session boundary",
+  "claim_as_stated": "A session has a nameable boundary at which AI-side momentum is reset to zero by definition/scope, while human-retained residue may alter the next session's starting state; Blackbox Note should carry session_id, opened_at, closed_at, a human_retained_residue_ref, and a fixed literal ai_state_at_boundary: reset.",
+  "change": "Add session_id, opened_at, closed_at, human_retained_residue_ref, and ai_state_at_boundary (fixed literal 'reset') fields to templates/knowledge/blackbox_note.yaml AND schema/blackbox_note.schema.json (both, not the template alone); add a new bullet under design/FOUNDATION_v0.6.md §2.3 naming this asymmetry. Defer cross-file resolution of human_retained_residue_ref to a separately scoped follow-up (a small tools/blackbox_log.py extension), since plain JSON Schema cannot verify a ref resolves to an existing artifact.",
+  "target": "templates/knowledge/blackbox_note.yaml; schema/blackbox_note.schema.json; design/FOUNDATION_v0.6.md §2.3 (new bullet, session_boundary)",
+  "citations": [
+   {
+    "file": "sources/notes/EPISTEMIC_FUSION_v7.1.txt",
+    "line": 489,
+    "verbatim": "F8. Human potential is a return condition. Successful augmentation requires an epistemically productive residue to survive the"
+   },
+   {
+    "file": "sources/notes/EPISTEMIC_FUSION_v7.1.txt",
+    "line": 490,
+    "verbatim": "session boundary in the human, because AI-side momentum is reset by definition in this architecture."
+   },
+   {
+    "file": "sources/notes/EPISTEMIC_FUSION_v7.1.txt",
+    "line": 493,
+    "verbatim": "F10. Reciprocal momentum is session-bounded. Human and AI outputs can mutually reshape semantic accessibility during a"
+   },
+   {
+    "file": "sources/notes/EPISTEMIC_FUSION_v7.1.txt",
+    "line": 496,
+    "verbatim": "F12. The deepest temporal asymmetry is cross-session persistence. During a session, Human and AI can mutually reshape"
+   },
+   {
+    "file": "sources/notes/EPISTEMIC_FUSION_v7.1.txt",
+    "line": 497,
+    "verbatim": "accessible semantic routes; after the boundary, the AI-side momentum is set to zero by scope, while human retained residue"
+   }
+  ],
+  "legitimate_defeater": "This is a structural/definitional claim about session architecture, not an empirical outcome claim — per v8.1 §1 discipline its legitimate defeater is a demonstrated glosa (or source-model) mechanism that actually carries AI-side state across a tool/session restart contrary to 'reset by definition' (F8, F10, F12 above); absent such a mechanism the reset is architectural, not falsifiable by a single session's apparent continuity, and 'the AI seemed to remember' from context-window carryover within one unbroken process does NOT defeat it — only a demonstrated cross-restart AI state carry-over would.",
+  "failing_control": "Must fire: two Blackbox Note files sharing one session_id, split by an actual tool/process restart (not merely a new turn within one running session) — schema validation must confirm ai_state_at_boundary: reset is present with that literal value in both files. Must NOT fire: two Blackbox Note files with different session_id values that happen to discuss the same topic — no shared-session claim should be inferred from topical continuity alone.",
+  "acceptance_test": "JSON Schema validation only (the provable half): given two Blackbox Note instances sharing a session_id split across a tool restart, schema/blackbox_note.schema.json confirms both carry ai_state_at_boundary present and equal to the literal 'reset'. The human_retained_residue_ref resolving to an existing repo artifact is explicitly NOT part of this acceptance test — plain JSON Schema cannot prove cross-file reference resolution; that check is deferred to the tools/blackbox_log.py follow-up named in build_path.",
+  "build_path": "templates/knowledge/blackbox_note.yaml schema addition; schema/blackbox_note.schema.json matching addition (both files, correcting the original proposal's schema-file omission); design/FOUNDATION_v0.6.md §2.3 new bullet citing F8/F10/F12 above; separately costed follow-up node in design/DAG_v0.3.yaml for a tools/blackbox_log.py cross-reference validator (not folded into this node's cost).",
+  "tier": "Dr",
+  "founder_decision_needed": true,
+  "lens": "session-architecture",
+  "verdict": {
+   "id": "SA-1",
+   "citations_verified": true,
+   "defeater_legitimate": true,
+   "control_mechanical": true,
+   "invariant_ok": true,
+   "score": 8,
+   "reason": "All 5 citations verified verbatim at exact line numbers in EPISTEMIC_FUSION_v7.1.txt (F8 lines 489-490, F10 line 493, F12 lines 496-497) and each supports the claim_as_stated: AI-side momentum reset by definition/scope at session boundary vs human-retained residue persisting — this is textually explicit, not an inferential stretch. Both target files (templates/knowledge/blackbox_note.yaml, schema/blackbox_note.schema.json) exist and already share a compatible field set (schema has additionalProperties:true, required list would need the new fields added deliberately — proposal correctly scopes this as an addition, not silently relying on additionalProperties laxity). design/FOUNDATION_v0.6.md §2.3 exists at line 434 (\"Blackbox Note and R0/R1/R2 internal registers\") matching the target section. design/DAG_v0.3.yaml exists for the deferred follow-up node. The defeater is legitimate and correctly scoped: this is a definitional/architectural claim (per v8.1 discipline for such claims) whose only real defeater is a demonstrated cross-restart AI state carry-over mechanism, not apparent within-session continuity — correctly distinguished. The failing_control (two notes sharing session_id split by an actual process restart, both must carry ai_state_at_boundary: reset) and the must-NOT-fire control (different session_id, same topic, no shared-session inference) are both mechanically runnable via plain JSON Schema validation on a literal enum/const field — no LLM judgment needed. The proposal explicitly and correctly limits its acceptance test to what plain JSON Schema can prove (presence/value of the literal), deferring the unprovable cross-file ref-resolution to a separately costed follow-up rather than overclaiming schema-level referential integrity — this is honest tier discipline (Dr, not Th_coqc) and matches founder ruling BBL-2026-09-05-119 (raising the work — precise scoping and a named follow-up path — rather than lowering the claim). No fabricated Cx ids used, no novelty words, no vendor credit, human/AI role split unaffected, K-state math untouched. Minor deduction only for residual ambiguity in whether 'human_retained_residue_ref' as a bare string field (no format validation) meaningfully advances anything beyond documentation without the follow-up tool — but this is exactly what's disclosed and deferred, not hidden."
+  }
+ },
+ {
+  "id": "SA-3",
+  "title": "Pre-exposure anchor (problem_stated_before_first_ai_response, prior_model_or_guess, verification_intent) as a required S1 Problem Card field — corrected target and citation",
+  "claim_as_stated": "A human's problem statement, prior model, and verification intent must be captured before first AI exposure, not reconstructed after, matching v8.1's Fogliato-defeater finding that requiring a provisional human response before AI advice changes downstream agreement/use, and v7.1's ENTRY_H→AI minimum entry gate.",
+  "change": "Add three fields — problem_stated_before_first_ai_response (boolean/timestamp), prior_model_or_guess (free text, may be explicitly 'none'), verification_intent (free text) — as required fields on schema/problem_card.schema.json (S1's own artifact) ONLY, not on an S2 Observation Card and not by extending §2.2's stage-ownership table (which design/FOUNDATION_v0.6.md ~line 354 itself says §2.1a 'does not reopen'). This is the delta actually missing: glosa already has Blackbox Note speaker/timestamp fields that can show a human line preceded the first AI line, but nothing captures WHAT the human's prior model or verification intent was — sequencing alone cannot answer that, only content capture can, so this proposal is scoped down to the genuinely missing content fields, not the already-answerable sequencing question.",
+  "target": "schema/problem_card.schema.json (S1 Problem Card) — new required fields; NOT §2.2 S1 stage table, NOT an Observation Card (S2's artifact)",
+  "citations": [
+   {
+    "file": "sources/notes/EPISTEMIC_FUSION_v8.1.txt",
+    "line": 132,
+    "verbatim": "3. Problem 1 - AI Arrives Before a Human"
+   },
+   {
+    "file": "sources/notes/EPISTEMIC_FUSION_v8.1.txt",
+    "line": 134,
+    "verbatim": "External problem. Human judgment is path-"
+   },
+   {
+    "file": "sources/notes/EPISTEMIC_FUSION_v8.1.txt",
+    "line": 135,
+    "verbatim": "dependent. In FAccT 2022, Fogliato et al. experimen-"
+   },
+   {
+    "file": "sources/notes/EPISTEMIC_FUSION_v8.1.txt",
+    "line": 136,
+    "verbatim": "tally varied whether 19 veterinary radiologists saw"
+   },
+   {
+    "file": "sources/notes/EPISTEMIC_FUSION_v7.1.txt",
+    "line": 351,
+    "verbatim": "ENTRY_H→AI = H_0 ∧ V_0 ∧ C_0 ∧ R*"
+   },
+   {
+    "file": "sources/notes/EPISTEMIC_FUSION_v7.1.txt",
+    "line": 354,
+    "verbatim": "V_0 - verification intent: use AI to seek rivals, defeaters, hidden assumptions, boundary conditions, and discriminating"
+   },
+   {
+    "file": "design/FOUNDATION_v0.6.md",
+    "line": 354,
+    "verbatim": "diagram, and does not reopen S1–S6 stage ownership (§2.2) or the Blackbox Note's own schema"
+   }
+  ],
+  "legitimate_defeater": "This is a process-sequencing-plus-content claim, distinct in type from SA-2/SA-4's classification claims — per v8.1 §1 discipline its legitimate defeater is showing the content fields add nothing beyond what Blackbox Note's existing speaker/timestamp ordering already proves (i.e. that sequencing alone answers the acceptance test), which is why this revision narrows the claim to content capture specifically and drops any request to touch S1/S2 stage ownership; a defeater here would be a demonstration that prior_model_or_guess and verification_intent are reliably reconstructable after the fact from existing Blackbox Note fields without loss — no such demonstration exists in the source or the repo, so the claim stands at Dr tier pending a build.",
+  "failing_control": "Must fire: a Problem Card (schema/problem_card.schema.json instance) whose linked Blackbox Note shows the first AI-speaker line timestamped before any human-speaker line, or whose prior_model_or_guess/verification_intent fields are empty/absent — this Problem Card fails S1 validation and cannot proceed to S2. Must NOT fire: a Problem Card whose Blackbox Note shows a human line preceding the first AI line AND carries non-empty prior_model_or_guess/verification_intent content — this passes even if the human's prior model was 'none' or 'I had no guess', since Φ_0 (v7.1:349, the declared change condition) requires the field be populated, not that it contain a substantive guess.",
+  "acceptance_test": "Mechanical: schema validation requires problem_stated_before_first_ai_response, prior_model_or_guess, and verification_intent as non-null on every schema/problem_card.schema.json instance; a cross-check script compares the Problem Card's declared timestamp against the linked Blackbox Note's first human-speaker vs first AI-speaker line timestamps and flags a mismatch (Problem Card claims pre-exposure capture but Blackbox Note shows AI spoke first) as a hard validation failure, not a warning.",
+  "build_path": "schema/problem_card.schema.json — three new required fields; design/FOUNDATION_v0.6.md §2.1a — one clarifying sentence noting these fields live on the Problem Card schema, explicitly not reopening §2.2 stage ownership; no DAG node touches Blackbox Note or Observation Card. Founder ruling needed before resubmission proceeds: whether this applies retroactively to already-published Problem Cards (recommended: forward-only, per meeting §5.3) or only to Problem Cards opened after the field is added.",
+  "tier": "Dr",
+  "founder_decision_needed": true,
+  "lens": "session-architecture",
+  "verdict": {
+   "id": "SA-3",
+   "citations_verified": false,
+   "defeater_legitimate": true,
+   "control_mechanical": false,
+   "invariant_ok": true,
+   "score": 5,
+   "reason": "Six of seven citations check out verbatim at their stated lines (v8.1:132/134/135/136 confirmed; FOUNDATION_v0.6.md:354 confirmed). But v7.1:354 is wrong: the cited verbatim \"V_0 - verification intent: use AI to seek rivals, defeaters, hidden assumptions, boundary conditions, and discriminating\" actually sits at line 353 (confirmed via `nl -ba`); line 354 is the continuation \"observations rather than merely support for M_0.\" This is a Rule 17 line-pointer error, not a fabricated id, but it fails the \"open every citation and confirm it's there\" check as stated. Target is real and correctly scoped (schema/problem_card.schema.json exists, has intake/standpoint/etc. fields but no prior_model/verification_intent/pre-exposure fields yet; schema/blackbox_note.schema.json genuinely has per-line speaker+ts, so the \"sequencing already provable, content isn't\" distinction is accurate) and design/FOUNDATION_v0.6.md:354 legitimately says §2.1a \"does not reopen\" S1-S6/Blackbox schema, supporting the scoping-down move. The defeater is legitimate and type-appropriate (a content-vs-sequencing falsifiability test). However the failing_control/acceptance_test requires a cross-check script comparing the Problem Card's declared timestamp against the Blackbox Note's first-human-vs-first-AI line — but build_path only lists the three schema fields plus one FOUNDATION sentence and explicitly says \"no DAG node touches Blackbox Note,\" never scoping in the comparison script. As stated, build_path cannot deliver the acceptance_test's mechanical cross-check, so control_mechanical fails against the build as specified (the schema-required-fields half alone is mechanical, but that is not the full acceptance_test). Per BBL-2026-09-05-119, the fix is to raise the work (either add the cross-check script to build_path, or narrow acceptance_test to the schema-required-fields check alone) plus correct the v7.1 line to 353, not to pass this as scored."
+  }
+ },
+ {
+  "id": "schema.blackbox-language-bridge-subfield",
+  "title": "bridge_kind sub-field required when cooking.step = translation",
+  "claim_as_stated": "cooking-log entries with step: translation are ambiguous between two different real operations glosa's own text already distinguishes — a bilingual (TH/EN) rewrite and a world<->readout lens translation — and the schema currently cannot tell which one happened.",
+  "change": "Add an enum property `bridge_kind: [bilingual_rewrite, lens_world_to_readout, lens_readout_to_world]` to schema/blackbox_note.schema.json properties.cooking.items.properties, and an `allOf` conditional: if cooking.items.step == \"translation\" then require bridge_kind. No change to the step enum itself (lens_in/lens_out remain separate, already-resolved steps).",
+  "target": "schema/blackbox_note.schema.json properties.cooking.items (new sibling property bridge_kind + allOf conditional keyed on step==\"translation\")",
+  "citations": [
+   {
+    "file": "schema/blackbox_note.schema.json",
+    "line": 59,
+    "verbatim": "\"step\": { \"enum\": [\"lens_in\", \"analysis\", \"lens_out\", \"revision\", \"translation\", \"review\"] },"
+   },
+   {
+    "file": "design/FOUNDATION_v0.6.md",
+    "line": 531,
+    "verbatim": "Thai; English is a rewrite of meaning, never a translation of words. Every bilingual field carries"
+   },
+   {
+    "file": "schema/common.defs.json",
+    "line": 195,
+    "verbatim": "\"translation_status\": {"
+   },
+   {
+    "file": "design/FOUNDATION_v0.6.md",
+    "line": 256,
+    "verbatim": "The spine is a **round trip**: a problem met in the world is translated **into** the readout"
+   }
+  ],
+  "legitimate_defeater": "Per v8.1 §1 claim-type discipline this is a specification-gap claim (glosa's own schema is internally under-determined), not an empirical or causal claim — its only legitimate defeater is a textual one: a passage elsewhere in the repo (a patch, a chair ruling, a schema comment) that already stipulates step:\"translation\" means exactly one of the two operations. None was found by direct grep of design/FOUNDATION_v0.6.md, design/FOUNDATION_v0.6_PATCH.md, and schema/blackbox_note.schema.json for \"step\" + \"translation\" co-occurring with a disambiguating rule; if a founder or chair ruling is later found saying so, the claim is defeated and this proposal should be withdrawn, not revised.",
+  "failing_control": "Must fire: a cooking-log entry `{step: \"translation\", by: \"...\", what_changed: \"rewrote the finding into English\", input_lines: [3]}` with no bridge_kind — schema validation must reject it once the allOf conditional ships. Must NOT fire: the same entry with `bridge_kind: \"bilingual_rewrite\"` added, or any entry with `step: \"lens_in\"`/`\"lens_out\"`/\"analysis\"/\"revision\"/\"review\" and no bridge_kind at all (those steps stay untouched).",
+  "acceptance_test": "Mechanical: run the JSON Schema validator (ajv or equivalent) against two fixtures derived from templates/knowledge/blackbox_note.yaml — Fixture A (step=translation, no bridge_kind) must FAIL; Fixture B (step=translation, bridge_kind=lens_world_to_readout) and Fixture C (step=lens_in, no bridge_kind) must both PASS. Ship only when all three fixtures resolve as stated.",
+  "build_path": "schema field (schema/blackbox_note.schema.json cooking.items.properties + allOf block) + one-line comment update in templates/knowledge/blackbox_note.yaml explaining the two bridge_kind values; no kernel rule needed (plain JSON Schema conditional suffices, no new mechanical checker script).",
+  "tier": "Dr",
+  "founder_decision_needed": false,
+  "lens": "blackbox-dialogue",
+  "verdict": {
+   "id": "schema.blackbox-language-bridge-subfield",
+   "citations_verified": true,
+   "defeater_legitimate": false,
+   "control_mechanical": true,
+   "invariant_ok": true,
+   "score": 1,
+   "reason": "All four citations are verbatim and accurately support the surface claim that step:\"translation\" co-exists with separate lens_in/lens_out steps and that a bilingual-rewrite rule exists elsewhere (FOUNDATION_v0.6.md:531) — so citations_verified=true and the failing_control/fixture plan is mechanically runnable via ajv (control_mechanical=true). But the proposal's own legitimate_defeater clause is self-defeating in practice: it says the claim is defeated by \"a passage elsewhere in the repo (a patch, a chair ruling, a schema comment) that already stipulates step:'translation' means exactly one of the two operations,\" and explicitly commits to withdrawal if such a ruling is found. Such a ruling already exists and was missed: design/MEETING_2026-09-05_judged.json:84-92 records this EXACT proposal (identical id \"schema.blackbox-language-bridge-subfield\", identical title and target) already adjudicated with keep:false, score 4.5, founder:true, and the stated reason \"the proposal's own acceptance_test premise (that lens_in vs translation is 'an unresolved seam') is a misread of already-specified glosa content.\" The current submission is a verbatim resubmission of that already-refuted proposal, without having grepped design/MEETING_2026-09-05_judged.json (the defeater search only checked FOUNDATION_v0.6.md, FOUNDATION_v0.6_PATCH.md, and the schema file). Per the proposal's own stated defeat condition, this is defeated, not merely revisable — it should be withdrawn, not built. No founder-invariant violation (tier/citation/no-vendor-credit rules are respected in form), but the claim fails on its own terms once the existing chair ruling is accounted for."
+  }
+ },
+ {
+  "id": "schema.blackbox-question-trace",
+  "title": "Note-level question_trace array recording the question at each turn",
+  "claim_as_stated": "glosa's Blackbox Note captures a question only twice (question_human once, question_readout once, both single-shot per Claim Card) with no field recording how the live question itself changed turn-to-turn inside one note — even though the cited source explicitly models the question as an indexed, transforming object across turns, and glosa's own Human Return Test already asks a human to name their next, better-formed question without anywhere to log the answer.",
+  "change": "Add a top-level `question_trace` array to schema/blackbox_note.schema.json: items `{n, ts, question_text, derived_from_line: integer|null, note}`, each entry keyed to a `lines[].n` the question was voiced or reformed at. Not required (additive, optional) — a note with a single unchanging question simply has a one-entry trace.",
+  "target": "schema/blackbox_note.schema.json (new top-level optional property question_trace); design/FOUNDATION_v0.6.md §2.3 (add a sentence pointing at the new field alongside question_human/question_readout)",
+  "citations": [
+   {
+    "file": "sources/notes/EPISTEMIC_FUSION_v7.1.txt",
+    "line": 124,
+    "verbatim": "                                                              Z_H,t ⟶(L_H) Q_H,t"
+   },
+   {
+    "file": "sources/notes/EPISTEMIC_FUSION_v7.1.txt",
+    "line": 129,
+    "verbatim": "                                                   Q_H,t ⟶(T_AI) {Q_i,t+1, K_like_i,t}"
+   },
+   {
+    "file": "sources/notes/EPISTEMIC_FUSION_v7.1.txt",
+    "line": 467,
+    "verbatim": "     What is my next question, and why is it better formed than the previous one?"
+   },
+   {
+    "file": "design/FOUNDATION_v0.6.md",
+    "line": 495,
+    "verbatim": "named fields in §3.2, one home each: **`lens_translation.question_human`** (`{text_verbatim,"
+   }
+  ],
+  "legitimate_defeater": "This is a structural-coverage claim (a gap in what the schema can represent), defeated only by evidence that per-turn question evolution is already captured somewhere else in the pipeline that this proposal failed to check — e.g. if `lines[].distinction_introduced` (schema/blackbox_note.schema.json:40) is shown, by an existing worked example, to already carry this function for every line kind including `question`. Checked: schema/blackbox_note.schema.json:40 defines `distinction_introduced` as a free string with no cited definition tying it to question-reformulation specifically, and no example in schema/examples/ populates it for a `kind: question` line — so the defeater does not currently hold, but a founder pointing at such a populated example would defeat this proposal outright.",
+  "failing_control": "Must fire (i.e., a reviewer should flag the gap): a Blackbox Note with lines n=1 (kind:question, \"is X true?\") and n=5 (kind:question, \"given not-X, does Y still hold?\") and no question_trace — nothing in the current schema requires or lets the note state that n=5 is a reformation of n=1's question, so a `finite_diagnostic` scan for \"can this note answer its own Human Return Test question 5, 'what is my next question and why is it better formed'\" returns not-representable. Must NOT fire: the same note once question_trace has two entries linking n=1 and n=5 with a stated note field — the scan should then find the reformation explicitly represented.",
+  "acceptance_test": "Simulated measurement: write a synthetic fixture Blackbox Note with 2 question-kind lines and 0 question_trace entries; run a small script (extends tools/blackbox_log.py) that greps `lines[].kind==\"question\"` count vs `question_trace` entry count — before the fix the counts diverge with no explanation field available; after adding two question_trace rows referencing n=1 and n=5, the script confirms 1:1 coverage of every question-kind line by a trace entry (or an explicit `derived_from_line: null` marking a genuinely fresh question).",
+  "build_path": "schema field (schema/blackbox_note.schema.json new top-level question_trace array) + FOUNDATION_v0.6.md §2.3 cross-reference sentence + a small coverage-check extension to tools/blackbox_log.py (not yet built) as the mechanical acceptance-test runner; no new kernel rule number needed since this is schema-representability, not a hard validation gate.",
+  "tier": "Dr",
+  "founder_decision_needed": false,
+  "lens": "blackbox-dialogue",
+  "verdict": {
+   "id": "schema.blackbox-question-trace",
+   "citations_verified": true,
+   "defeater_legitimate": true,
+   "control_mechanical": true,
+   "invariant_ok": true,
+   "score": 6,
+   "reason": "All four citations open clean and verbatim-match: EPISTEMIC_FUSION_v7.1.txt:124 (Z_H,t⟶(L_H)Q_H,t), :129 (Q_H,t⟶(T_AI){Q_i,t+1,...}), :467 (the \"next question, why better formed\" line, inside §11 Human Return Test), and FOUNDATION_v0.6.md:495 (question_human field intro) all support that (a) the source explicitly models the question as a turn-indexed transforming object and (b) glosa's schema currently gives question_human/question_readout only one home in the Claim Card. The defeater is legitimate and checked correctly: schema/blackbox_note.schema.json:40 shows distinction_introduced as a bare string with no cited semantics tying it to question-reformulation, and the shipped schema/examples/blackbox_note.example.json has exactly one question-kind line (n=1) with distinction_introduced used for a derived-variable note, not a reformation link — so the defeater does not currently fire, as the proposal states. failing_control is mechanically well-formed and control_mechanical=true: tools/blackbox_log.py exists and is a real extension point, additionalProperties:true on the schema means the addition is backward-compatible. Founder invariants (RAM slices, no novelty words, no AI-signs, K-state untouched, human owns question/hypothesis) are not violated. However, the claim_as_stated contains a real overreach that should have been caught before scoring 8+: it asserts \"glosa's own Human Return Test already asks a human to name their next, better-formed question\" — but grep across design/, schema/, and the whole repo outside sources/ finds zero occurrences of \"Human Return Test\" in glosa's own design material. Glosa's actual analog is the Q1–Q5 \"five_questions\" field group (FOUNDATION_v0.6.md ~§lines 550-556), whose Q5 is about independent-check/defeater routing, not about logging an evolving next-question — it does not ask the \"next, better-formed question\" question at all. The proposal thus misattributes a source-paper construct (EPISTEMIC_FUSION's Human Return Test, an as-yet-unadopted idea) to glosa itself, inflating the motivating urgency (\"glosa already promises this and can't deliver it\") into something not actually true of the shipped design docs. This doesn't invalidate the schema-representability gap itself (which is real and well-cited via question_human/question_readout single-shot fields), but the claim as stated needs correction — replace \"glosa's own Human Return Test\" with an accurate statement that glosa has not adopted the Human Return Test construct from its own source material, or drop that clause and rest the motivation on the question_human/question_readout single-shot gap alone, which is fully supported. Ship only after that correction; the underlying build (question_trace field + FOUNDATION cross-reference + coverage-check script) is sound as designed."
+  }
+ },
+ {
+  "id": "schema.blackbox-line-origin-enum",
+  "title": "Line-level origin enum replaces the bare ai_proposed boolean",
+  "claim_as_stated": "The bare boolean `ai_proposed` on a Blackbox Note line cannot represent the specific failure mode glosa's own cited source names as the central transition hazard — K_like silently upgraded to K_assumed (\"candidate forgetting\") — because a boolean only records whether AI proposed the line's content, not whether that proposal's provisional status was later carried forward, reaffirmed, or silently dropped.",
+  "change": "Replace `lines[].ai_proposed: boolean` with `lines[].origin: enum [human_authored, ai_proposed_pending, ai_proposed_adopted, ai_proposed_forgotten]` in schema/blackbox_note.schema.json (keep `ai_proposed` as a deprecated read-only alias mapped `true -> ai_proposed_pending` for one migration cycle, per glosa's own additive-first schema discipline). `ai_proposed_forgotten` is the value a checker sets when a line with prior `ai_proposed_pending`/`_adopted` status later has a `became[]` entry created elsewhere in the repo (a claim_card citing this line) with no corresponding origin update — i.e., the exact K_like→K_assumed bypass named in the source.",
+  "target": "schema/blackbox_note.schema.json properties.lines.items.properties.ai_proposed (converted to origin enum) and properties.lines.items.properties.became (cross-checked, not modified); design/FOUNDATION_v0.6.md §2.3 sentence on ai_proposed rewritten to match",
+  "citations": [
+   {
+    "file": "sources/notes/EPISTEMIC_FUSION_v7.1.txt",
+    "line": 364,
+    "verbatim": "                                          AI(Q) = K_like,            K_like ≠ K_validated"
+   },
+   {
+    "file": "sources/notes/EPISTEMIC_FUSION_v7.1.txt",
+    "line": 368,
+    "verbatim": "                                         K_like → K_assumed                (validation bypass)"
+   },
+   {
+    "file": "sources/notes/EPISTEMIC_FUSION_v7.1.txt",
+    "line": 485,
+    "verbatim": "F6. Candidate forgetting is a central transition hazard. When K_like is silently upgraded to assumed knowledge, the"
+   },
+   {
+    "file": "design/FOUNDATION_v0.6.md",
+    "line": 447,
+    "verbatim": "  candidates only (`ai_proposed: true`)."
+   }
+  ],
+  "legitimate_defeater": "This is a claim about representational insufficiency of a boolean for a named multi-state process, so its legitimate defeater is a demonstration that the boolean plus an existing field already reconstructs the same information without loss — e.g., if `became[].claim_card` (schema/blackbox_note.schema.json:45) already lets a checker infer adoption-vs-forgetting by its mere presence/absence. Checked: `became[]` records that a line became a claim_card/rule, but records nothing about whether the line's `ai_proposed` status was ever explicitly reaffirmed at that point — presence of a `became[]` entry is consistent with silent candidate-forgetting, not proof against it. The defeater does not hold under this check; it would hold if a `became[]` entry were shown, by a cited rule, to itself require a status-reaffirmation step already.",
+  "failing_control": "Must fire: a line `{n:7, ai_proposed:true, ...}` that later gains `became: [{claim_card: \"cc-042\"}]` with no origin update — a checker script scanning for lines whose `became[]` is non-empty while `origin` (or legacy `ai_proposed`) was never touched between the line's `ts` and the claim_card's own creation timestamp must flag `ai_proposed_forgotten`. Must NOT fire: a line where a cooking-log entry of `step: review` or `step: revision` names that line in `input_lines` between the line's creation and its `became[]` entry (i.e., a human/checker explicitly touched it) — that path resolves to `ai_proposed_adopted`, not `_forgotten`.",
+  "acceptance_test": "Simulated measurement: two fixtures against templates/knowledge/blackbox_note.yaml. Fixture A: line n=7 ai_proposed_pending -> became[claim_card cc-042] with zero intervening cooking-log entries referencing n=7 -> checker must output origin=ai_proposed_forgotten. Fixture B: identical but with one cooking-log entry `{step: review, input_lines:[7], what_changed: \"human reaffirmed line 7's candidate status before citing it\"}` inserted before the became[] entry -> checker must output origin=ai_proposed_adopted. Ship only once both fixtures resolve as stated.",
+  "build_path": "schema field (schema/blackbox_note.schema.json properties.lines.items.properties.ai_proposed -> origin enum, deprecated alias kept one cycle) + a small extension to tools/blackbox_log.py implementing the origin-inference scan above + design/FOUNDATION_v0.6.md §2.3 sentence rewrite; this changes founder-visible disclosure semantics (who is recorded as having proposed vs. adopted a line), so it needs a founder ruling before the deprecated-alias migration window is set.",
+  "tier": "Dr",
+  "founder_decision_needed": true,
+  "lens": "blackbox-dialogue",
+  "verdict": {
+   "id": "schema.blackbox-line-origin-enum",
+   "citations_verified": true,
+   "defeater_legitimate": true,
+   "control_mechanical": false,
+   "invariant_ok": true,
+   "score": 6,
+   "reason": "All 4 citations checked verbatim in place and on-point: EPISTEMIC_FUSION_v7.1.txt:364 (K_like≠K_validated), :368 (K_like→K_assumed validation bypass), :485 (F6 candidate forgetting), and FOUNDATION_v0.6.md:447 (ai_proposed: true) all match exactly. Schema check confirms current state: lines[].ai_proposed is a plain required boolean (schema/blackbox_note.schema.json line ~40), became[] is {claim_card, rule} only with no timestamp (line 45 area) — so the defeater is correctly rejected: became[] presence alone cannot distinguish adoption from candidate-forgetting, matching the source's own named hazard. Legitimate_defeater reasoning is sound and mechanically checked against the actual schema. However failing_control is NOT fully mechanically runnable as written: it invokes 'the claim_card's own creation timestamp' to bound the scan window, but claim_card.schema.json has no required/reliable creation-timestamp field (only an optional, non-required revision_history[].date) — verified by listing claim_card's top-level properties. The acceptance_test's two fixtures sidestep this by using in-document cooking[]/became[] ordering instead, which IS runnable, so the mechanism is buildable but the failing_control's own stated logic (cross-file timestamp comparison) needs to be corrected to same-document ordering before a checker can be written as specified — a real but fixable gap, not a fatal defeat of the claim. Founder invariants respected: no novelty/superlative words, no vendor credit, tier Dr with founder_decision_needed=true appropriately flagged since this changes founder-visible disclosure semantics, human/AI ownership lines untouched, K-state math untouched."
+  }
+ },
+ {
+  "id": "kernel.candidate-set-delta-cooking-step",
+  "title": "Candidate-set growth/collapse counter on the Blackbox Note's own cooking log",
+  "claim_as_stated": "The Blackbox Note's cooking log can currently record that a step happened (lens_in, analysis, ...) but not the one diagnostic glosa's own non-collapse discipline demands for exactly this kind of process: how many live candidates existed before and after each cooking step, kept as separate counts rather than folded into a single verdict — this is a genuine gap in the Blackbox Note artifact specifically, distinct from and not duplicating the LRS-scoped candidate-set node already proposed in the DAG.",
+  "change": "Add optional `candidate_set: {before: integer, after: integer, forgotten: integer}` to schema/blackbox_note.schema.json properties.cooking.items — additive counts only, no derived verdict field. `forgotten = max(0, before - after)` unless a note explains an increase (candidate multiplication, k_s-analogue). Kernel rule 29: a cooking-log entry declaring `candidate_set.after < candidate_set.before` with no matching line-level `origin: ai_proposed_forgotten` transition (schema.blackbox-line-origin-enum, if adopted) or no `what_changed` text naming which candidate(s) were dropped, is flagged (not blocked) as `CANDIDATE-DROP-UNEXPLAINED`.",
+  "target": "schema/blackbox_note.schema.json properties.cooking.items (new property candidate_set); design/FOUNDATION_v0.6.md §3.3 kernel rules (new rule 29); relates to but does not duplicate design/DAG_v0.3.yaml node foundation.lrs-discovery-loop-extension (that node scopes candidate-set formation to the Literature Review System's k_epi decomposition over a hypothesis's literature search; this proposal scopes the same diagnostic shape to the Blackbox Note's own cooking log, a different, earlier-stage artifact with no k_epi field of its own)",
+  "citations": [
+   {
+    "file": "sources/notes/EPISTEMIC_FUSION_v7.1.txt",
+    "line": 417,
+    "verbatim": "     k_s - candidate multiplication generated during the session after retained frontier items seed further search."
+   },
+   {
+    "file": "sources/notes/EPISTEMIC_FUSION_v7.1.txt",
+    "line": 422,
+    "verbatim": "     f_s - candidate-forgetting rate."
+   },
+   {
+    "file": "sources/notes/EPISTEMIC_FUSION_v7.1.txt",
+    "line": 446,
+    "verbatim": "The architecture therefore separates three questions that must not collapse:"
+   },
+   {
+    "file": "design/FOUNDATION_v0.6.md",
+    "line": 1164,
+    "verbatim": "level`. **Disagreement Ledger — Resolve or Declare**, never averaged, never silently dropped"
+   },
+   {
+    "file": "knowledge/harvest_v0.3/ep/kc-ep-048.yaml",
+    "line": 3,
+    "verbatim": "title: 'Before Evidence Can Decide: candidate-set formation and discovery routing (Paper III)'"
+   },
+   {
+    "file": "design/DAG_v0.3.yaml",
+    "line": 321,
+    "verbatim": "  - id: foundation.lrs-discovery-loop-extension"
+   }
+  ],
+  "legitimate_defeater": "This is a mechanism-shape claim (an additive count field honors an existing non-collapse discipline), whose legitimate defeater per v8.1 §1 is a demonstration that a verdict is being smuggled in despite the 'no verdict' framing, or that the field genuinely duplicates the LRS node rather than merely resembling it. Checked directly: design/DAG_v0.3.yaml:321-333 scopes foundation.lrs-discovery-loop-extension's `k_epi` construct strictly to `FOUNDATION §7.9 Literature Review System (LRS) / §6 discovery extension` (line 328) — the Blackbox Note (a §2.3 artifact, pre-LRS) is not named as a target anywhere in that node, so no duplication is confirmed; a founder or reviewer finding a hidden verdict computation in `forgotten` (rather than a plain subtraction) would defeat the 'no verdict' half of this claim.",
+  "failing_control": "Must fire (kernel rule 29 flags): a cooking-log entry `{step: \"analysis\", candidate_set: {before: 5, after: 2}, what_changed: \"narrowed to two strongest readings\"}` with no candidate named as dropped in what_changed and no line-level origin_forgotten transitions on the 3 missing candidates — CANDIDATE-DROP-UNEXPLAINED fires. Must NOT fire: the same entry with `what_changed: \"dropped candidates 2 and 4 as paraphrastic duplicates of candidate 1, per d_s\"` naming the drop, or an entry where `after >= before` (growth or steady state, k_s-analogue, never flagged).",
+  "acceptance_test": "Mechanical: extend the existing single-file cooking-log fixture (1 real entry in blackbox/BLACKBOX_NOTE_glosa-paper_2026-09-04.md's cooking log today, per direct repo check) with synthetic entries covering all three cases — (a) unexplained drop, (b) explained drop, (c) growth — and confirm kernel rule 29's checker fires only on (a). State the fixture honestly as \"1 existing + 3 synthetic\" in the test spec, not a larger invented count.",
+  "build_path": "schema field (schema/blackbox_note.schema.json cooking.items.properties.candidate_set) + kernel rule 29 (design/FOUNDATION_v0.6.md §3.3, new numbered rule, additive not a hard validation error — a flag like existing rules 26-28) + a small checker extension to tools/blackbox_log.py; cross-reference sentence in litreview_manifest.schema.json's existing pending-founder discovery_routing TODO comment (line 7) noting the two fields are siblings, not duplicates, for future founder reconciliation.",
+  "tier": "Dr",
+  "founder_decision_needed": false,
+  "lens": "blackbox-dialogue",
+  "verdict": {
+   "id": "kernel.candidate-set-delta-cooking-step",
+   "citations_verified": true,
+   "defeater_legitimate": true,
+   "control_mechanical": false,
+   "invariant_ok": true,
+   "score": 3,
+   "reason": "All 6 formal citations check out verbatim at the stated file:line (EPISTEMIC_FUSION_v7.1.txt:417,422,446; FOUNDATION_v0.6.md:1164; kc-ep-048.yaml:3; DAG_v0.3.yaml:321). The legitimate_defeater's own check also holds: DAG_v0.3.yaml:321-333 confirms foundation.lrs-discovery-loop-extension's k_epi is scoped strictly to §7.9 LRS (line 328) and never names the Blackbox Note, so no duplication is shown, and the litreview_manifest.schema.json TODO-comment line-7 cross-reference cited in build_path is also accurate (cat -n confirms $comment is line 7). Rule-29 numbering is free (existing rules stop at 26-28 in FOUNDATION_v0.6.md). However, the concrete build path as stated is not mechanically buildable: (1) the acceptance_test's premise — 'the existing single-file cooking-log fixture (1 real entry in blackbox/BLACKBOX_NOTE_glosa-paper_2026-09-04.md's cooking log today, per direct repo check)' — is false; that file contains zero schema-shaped cooking entries, only the sentence 'Cooking log: see the paper's Appendix B (append-only)' — the real schema-conforming fixtures with actual entries live elsewhere (schema/examples/blackbox_note.example.json: 1 entry; projects/GLS-2026-001_.../blackbox_note.yaml: 3+ entries), so the named target file cannot be 'extended' as described. (2) build_path's 'small checker extension to tools/blackbox_log.py' targets the wrong tool entirely — that script is the founder's daily Blackbox LOG (BBL-YYYY-MM-DD-NNN voice-entry Zenodo tool), has no reference anywhere to 'cooking' or blackbox_note.schema.json, and there is no existing checker logic for the Blackbox NOTE's cooking array in the repo to extend at all — this would be new tooling from scratch, not an extension, and possibly not even the right file. Per BBL-2026-09-05-119, the claim must be raised (correct fixture path + correct/new tool target) rather than accepted with a mismatched build path."
+  }
+ },
+ {
+  "id": "schema.blackbox-chooser-reaffirmation",
+  "title": "chooser_reaffirmed field on became[] links guards against silent candidate-forgetting of the human chooser's own act",
+  "claim_as_stated": "A `became[]` link from a Blackbox Note line to a claim_card records that a candidate became something, but not whether the human who alone holds non-delegable selection authority (per glosa's own S3c rule) is the one who is recorded as having reaffirmed that specific candidate at the moment it became a claim_card — leaving the same K_like→K_assumed bypass the source names as a central hazard, applied specifically to the human-chooser role glosa itself declares non-delegable.",
+  "change": "Add `chooser_reaffirmed: {by: string, ts: string}|null` to schema/blackbox_note.schema.json properties.lines.items.properties.became.items. Required (non-null) only when the became[] target is a `hypothesis_selection.yaml` id (pattern `^hsel-`) or a claim_card whose `responsible` field is `human` — i.e., exactly the artifacts glosa's own S3c/§3.2 rules already say a human, not AI, must decide.",
+  "target": "schema/blackbox_note.schema.json properties.lines.items.properties.became.items (new property chooser_reaffirmed); design/FOUNDATION_v0.6.md §2.3 and §7.9 (S3c row)",
+  "citations": [
+   {
+    "file": "sources/notes/EPISTEMIC_FUSION_v7.1.txt",
+    "line": 367,
+    "verbatim": "Candidate forgetting is the shortcut in which that provisional status is lost:"
+   },
+   {
+    "file": "sources/notes/EPISTEMIC_FUSION_v7.1.txt",
+    "line": 368,
+    "verbatim": "                                         K_like → K_assumed                (validation bypass)"
+   },
+   {
+    "file": "design/FOUNDATION_v0.6.md",
+    "line": 429,
+    "verbatim": "**S3c Hypothesis selection** *(new this pass, request 35d)* | เลือกสมมติฐาน | `hypothesis_selection.yaml` (§7.9) | K0 | `selection.chosen` (zero, one, or more) recorded with a non-empty `reason`; every parked candidate keeps a non-empty `reason` and its manifest/dialogue table stay in the repo; the event is appended to the Blackbox Note's `cooking:` log | Human: makes the selection (non-delegable, `responsible: human`). AI: proposes the comparison table's contents, never the decision. |"
+   },
+   {
+    "file": "schema/blackbox_note.schema.json",
+    "line": 45,
+    "verbatim": "              \"properties\": { \"claim_card\": { \"type\": \"string\" }, \"rule\": { \"type\": \"string\" } }"
+   }
+  ],
+  "legitimate_defeater": "This is a claim about a missing authorship/authority check on a non-delegable act, so its legitimate defeater per v8.1 §1 is evidence the reaffirmation is already captured elsewhere — specifically, that `hypothesis_selection.yaml`'s own `decided_by` field (schema/hypothesis_selection.schema.json:12) already names the human chooser for the whole selection event, making a second per-line field redundant. Checked: `decided_by` is a single note-level string on the *selection artifact*, not on the *Blackbox Note line* that first raised the candidate — it names who decided the batch, not that this particular raw line's candidate status was reaffirmed by that same person before citation. The defeater does not hold at the line level; it would hold if `became[].claim_card` resolution were shown to always equal exactly one `hypothesis_selection.yaml.decided_by` value with no drift possible — not demonstrated here.",
+  "failing_control": "Must fire: a Blackbox Note line `{n:12, ai_proposed:true, became:[{claim_card:\"cc-hsel-009\"}]}` where cc-hsel-009 resolves to a hypothesis_selection.yaml id and chooser_reaffirmed is null/absent — validation must reject once the conditional requirement ships. Must NOT fire: the same line with `chooser_reaffirmed: {by: \"founder\", ts: \"2026-09-05T10:00:00\"}` populated, or a became[] entry pointing at a claim_card whose `responsible` field is not `human` (no reaffirmation required there).",
+  "acceptance_test": "Mechanical: two fixtures against templates/knowledge/blackbox_note.yaml + templates/knowledge/hypothesis_selection.yaml. Fixture A: became[] entry naming an hsel- id, chooser_reaffirmed absent — schema validation FAILS. Fixture B: same entry with chooser_reaffirmed populated — PASSES. A third fixture C: became[] entry naming a non-hsel claim_card with `responsible: ai` — PASSES with chooser_reaffirmed absent, confirming the conditional scope is exactly the non-delegable set, not all became[] links.",
+  "build_path": "schema field (schema/blackbox_note.schema.json became.items.properties.chooser_reaffirmed + conditional keyed on claim_card id pattern/responsible field) + design/FOUNDATION_v0.6.md §2.3 and S3c row cross-reference sentence; touches representation of the founder's own non-delegable selection authority, so needs a founder ruling on exactly which claim_card.responsible values trigger the requirement before this ships.",
+  "tier": "Dr",
+  "founder_decision_needed": true,
+  "lens": "blackbox-dialogue",
+  "verdict": {
+   "id": "schema.blackbox-chooser-reaffirmation",
+   "citations_verified": true,
+   "defeater_legitimate": true,
+   "control_mechanical": false,
+   "invariant_ok": true,
+   "score": 4,
+   "reason": "Citations check out: EPISTEMIC_FUSION_v7.1.txt:367-368 (candidate-forgetting/K_like→K_assumed), FOUNDATION_v0.6.md:429 (S3c row, responsible: human), and blackbox_note.schema.json:45 (became.items properties) are all verbatim and in the right location (became lives at properties.lines.items.properties.became.items, confirmed by reading the full schema). The defeater is legitimately argued and correctly refuted: hypothesis_selection.schema.json's decided_by (confirmed present, a single note-level string) genuinely does not capture per-line reaffirmation, so the gap is real for the hsel- branch. However, the proposal's second trigger condition — 'a claim_card whose responsible field is human' — is not mechanically enforceable as a JSON-schema conditional the way the hsel- id-pattern branch is: `became[].claim_card` in the schema is a bare string reference (confirmed: only {claim_card, rule} keys, no inlined object), so checking the referenced document's `responsible` field (confirmed present at claim_card.schema.json:126) requires cross-file resolution outside plain JSON-schema validation, and the proposal's own acceptance_test (Fixture C) never actually exercises that branch — it only tests the ai-responsible non-trigger case, not a genuine responsible:human trigger, leaving the harder half of the stated 'required when' rule untested and its mechanical build path unspecified beyond a vague 'conditional keyed on ... responsible field.' The hsel- half of the claim is build-ready as stated; the claim_card.responsible half is not, without an additional cross-document validator this proposal doesn't design. Invariants (no novelty language, no vendor credit, human-owned selection authority preserved and if anything reinforced, AI not signing, K-state untouched) all hold. founder_decision_needed is appropriately flagged, but the mechanical gap on half the trigger scope means the proposal as stated overclaims 'schema field' as the whole build_path when a second mechanism (cross-file check) is actually needed for the claim_card.responsible branch — raise the work (either scope the requirement to hsel- only, or specify the cross-file validator) before this ships as stated."
+  }
+ },
+ {
+  "id": "process.run-existing-open-falsifier-klike",
+  "title": "Run H3 (the one empirical, n=0, untested falsifier already named for claim-card-as-certification-substitute)",
+  "claim_as_stated": "Run the falsifier test the DAG already deferred (rule17.claim-card-certification-open) using named evidence as candidate test material — no new mechanism, close the existing [Open] item.",
+  "change": "Do not invent a new mechanism. `kc-aihp-003`/`kc-ai-006` already name three falsifiable propositions on a concept paper (H1 design mechanism, H2 conceptual claim, H3 empirical claim: cross-vendor AI checking outperforms same-vendor re-checking at catching undisclosed AI-fill, 'n=0, untested'). H1/H2 are constitutive/structural claims, not mechanically testable by a sim — only H3 is an empirical prediction with a stated, executable design. Build the H3 sim fixture now: synthetic claim-card set with known injected undisclosed-AI-fill instances, run once under a same-vendor-checker route (I1/I2) and once under a cross-vendor route (I4/I5 per FOUNDATION Independence Ladder), compare catch rate. This is the delta the DAG node itself calls for ('a falsifier that tests claim cards directly') and that has never been run.",
+  "target": "design/TODO_v0.3.md [Open] line for rule17.claim-card-certification-open (no kernel diff); new sim fixture under methodology/ or reviews/ for the H3 falsifier only; FOUNDATION §4.2 Independence Ladder I0-I5 (kernel/glosa_kernel.py:1341 `_max_independence_class`) supplies the I-class split needed to run it",
+  "citations": [
+   {
+    "file": "knowledge/harvest_v0.3/aihp/kc-aihp-003.yaml",
+    "line": 4,
+    "verbatim": "Concept paper states, as untested propositions not demonstrated results: a claim card bound to an Existence–Attribution–Disclosure norm and gated by an independence ladder could substitute for institutional certification (H1/H2); cross-vendor AI checking would outperform same-vendor re-checking at catching undisclosed AI-fill (H3, n=0, untested). Each proposition carries a named falsifier."
+   },
+   {
+    "file": "knowledge/harvest_v0.3/ai/kc-ai-006.yaml",
+    "line": 28,
+    "verbatim": "notes: 48 citation cards VERIFIED under this paper's own rule 17; independent_check still PENDING per the record's own status line."
+   },
+   {
+    "file": "design/DAG_v0.3.yaml",
+    "line": 69,
+    "verbatim": "  - id: rule17.claim-card-certification-open"
+   },
+   {
+    "file": "design/DAG_v0.3.yaml",
+    "line": 76,
+    "verbatim": "    acceptance_test: \"design/TODO_v0.3.md carries an explicit [Open] line with the falsifier condition; no kernel diff lands for this claim in v0.3.\""
+   }
+  ],
+  "legitimate_defeater": "H3 is an empirical prediction (v8.1 §1: 'The author retains the burden for causal, quantitative, or universal empirical claims. These are defeated by sufficiently strong contrary evidence within scope, failed replication, or a better-supported competing causal account'). H1/H2 are NOT this claim type — they are design/conceptual and are defeated only by internal inconsistency or a counterexample, never by a sim result; a sim that returns a null result for H1/H2 would be a category error, not a defeater. Original skeptic objection was fabricated 'C6'/'C10' evidence ids for content that in fact exists under kc-aihp-003/kc-ai-006 — the fabrication was in the label, not in the underlying gap, which is real: H3 has never been run (n=0).",
+  "failing_control": "Positive control (must fire): a synthetic claim-card batch where 30% carry an injected, undisclosed `ai_filled` field with the disclosure marker stripped — the cross-vendor route must catch a statistically higher fraction than the same-vendor route, or the falsifier registers 'H3 not supported this pass'. Negative control (must NOT fire): a batch with zero injected undisclosed AI-fill — both routes must report 0 catches; any nonzero catch rate on the clean batch is a false-positive defect in the fixture itself, not evidence for or against H3.",
+  "acceptance_test": "finite_diagnostic sim, single run, both arms on the same synthetic card set: same-vendor-checker catch-rate vs cross-vendor-checker catch-rate on injected undisclosed-AI-fill instances, plus the zero-injection negative-control arm reporting 0/0. Result (supported / not supported / inconclusive) is logged as a new row referencing kc-aihp-003, tier `finite_diagnostic`, and design/TODO_v0.3.md's [Open] line is updated to point at the result instead of staying silently open.",
+  "build_path": "sim fixture (new file, e.g. methodology/H3_falsifier_sim.py) + one DECISIONS.yaml row recording the run and its result; no schema or kernel-rule change — this closes an already-deferred [Open] item, it does not open a new one.",
+  "tier": "Dr (design of the test) — becomes finite_diagnostic only after the fixture is actually run once",
+  "founder_decision_needed": false,
+  "lens": "kernel-gates",
+  "verdict": {
+   "id": "process.run-existing-open-falsifier-klike",
+   "citations_verified": false,
+   "defeater_legitimate": true,
+   "control_mechanical": true,
+   "invariant_ok": true,
+   "score": 7,
+   "reason": "3 of 4 citations check out exactly: kc-aihp-003.yaml:4 (text field, matches verbatim, though the proposal labels it \"verbatim\" while it actually quotes the file's `text:` key rather than its own `verbatim:` key at line 8 — same file, exact string, so not fabrication, just a mislabel); kc-ai-006.yaml:28 matches exactly; DAG_v0.3.yaml:69 (`- id: rule17.claim-card-certification-open`) matches exactly. The 4th citation fails: DAG_v0.3.yaml:76 is cited as the `acceptance_test` line, but line 76 actually reads `target: kernel rule 17 / FOUNDATION §4.2 Independence Ladder I0–I5` — the acceptance_test string is really at line 78 (off-by-2). Rule 17 requires exact file:line, so this citation is defective. Deeper problem this surfaced: design/TODO_v0.3.md (13 lines, read in full) contains NO \"[Open]\" line at all for rule17.claim-card-certification-open, despite the DAG node's own acceptance_test claiming one exists — the node's stated acceptance condition was apparently never actually satisfied in-repo, which the proposal's \"close the existing [Open] item\" framing glides past without noting. Defeater reasoning is legitimate and precise: correctly separates H1/H2 (design/conceptual, defeated only by internal inconsistency, not a sim null result) from H3 (empirical, properly grounded in v8.1's causal/quantitative burden-of-proof clause) — this is the correct fix to the meeting's earlier fabricated-id objection, locating the real gap without reusing C1–C11. failing_control is mechanically well-formed: positive control (30% injected undisclosed ai_filled, cross-vendor must out-catch same-vendor) and negative control (0% injection, both arms must report 0/0) are runnable and would genuinely falsify H3 either way. control_mechanical true: I0–I5 independence classing is a real, existing kernel function (`_max_independence_class`, kernel/glosa_kernel.py:1338-1341, confirmed by grep), not invented machinery. invariant_ok true: no kernel diff proposed, hypothesis (H3) was already named/selected in the concept paper rather than AI-selected here, tier is honestly Dr-until-run then finite_diagnostic, no novelty words, no vendor credit, no AI signature. Net: sound design and legitimate defeater/control, but ship-blocking citation defect (wrong line number) plus an unflagged gap between the DAG's stated acceptance_test and the actual TODO file content must be fixed/disclosed before this builds as stated — raise the citation precision, don't lower the claim."
+  }
+ },
+ {
+  "id": "schema.entry-resistance-precommit-field",
+  "title": "Precommitted resistance-route field on the Problem Card intake (S1), not a new §2.1a rule",
+  "claim_as_stated": "Add a precommitted resistance-route field (R*) at claim-card intake, flag-not-block, so a candidate's checking route is declared before the AI candidate exists.",
+  "change": "The original target (FOUNDATION §2.1a) is wrong: §2.1a explicitly states it 'does not reopen S1–S6 stage ownership (§2.2)... or the Blackbox Note's own schema' — reusing it as R*'s home directly contradicts the section it cites for authority (same defect the chair found in SA-3). The correct home is `schema/problem_card.schema.json`'s existing `intake` object (S1, FOUNDATION §2.2 line 425), sibling to the two-question gate `q1_issue`/`q2_user_proposal` that already lives there. R* is genuinely new: glosa's only existing checking field, `independent_check` (schema/claim_card.schema.json:557), is filled in after a check happened, on a claim card that already has a candidate answer on it. R* is filled in before any AI candidate exists, at Problem Card intake — the delta is the timing, not the existence of a 'was this checked' field.",
+  "target": "schema/problem_card.schema.json `intake` object (new field `precommitted_resistance_route`, sibling to `q1_issue`/`q2_user_proposal`); FOUNDATION §2.2 S1 row (design/FOUNDATION_v0.6.md:425)",
+  "citations": [
+   {
+    "file": "sources/notes/EPISTEMIC_FUSION_v7.1.txt",
+    "line": 351,
+    "verbatim": "ENTRY_H→AI = H_0 ∧ V_0 ∧ C_0 ∧ R*"
+   },
+   {
+    "file": "sources/notes/EPISTEMIC_FUSION_v7.1.txt",
+    "line": 356,
+    "verbatim": "R* - precommitted resistance route: specify how an important candidate could be checked by a source, record, experiment, independent critic, domain authority, or other sufficiently independent route."
+   },
+   {
+    "file": "design/FOUNDATION_v0.6.md",
+    "line": 354,
+    "verbatim": "does not reopen S1–S6 stage ownership (§2.2) or the Blackbox Note's own schema"
+   },
+   {
+    "file": "design/FOUNDATION_v0.6.md",
+    "line": 425,
+    "verbatim": "| **S1 Problem intake** | ปัญหา | Problem Card (`schema/problem_card.schema.json`) | K0 | Two-question intake complete; standpoint declared; readiness verdict `READY_FOR_S2` (self-check, not a release gate) | Human: states the issue, own words, own standpoint. AI: routes the intake, never infers Q2's answer. |"
+   },
+   {
+    "file": "design/DAG_v0.3.yaml",
+    "line": 112,
+    "verbatim": "  - id: schema.prereg-gate-fields"
+   }
+  ],
+  "legitimate_defeater": "This is a structural/formal schema proposal (v8.1 §1: 'Structural and formal proposals... are defeated if they are incoherent, redundant, non-identifiable, add no explanatory or predictive information, or are dominated by a rival architecture'). It is defeated if `independent_check` (already in schema/claim_card.schema.json) is shown to already serve this pre-commitment function — it does not, since it is populated post-hoc on a card that already carries a candidate, never at Problem Card intake before a candidate exists — or if the field is shown to duplicate `q1_issue`/`q2_user_proposal`'s existing content rather than adding a distinct pre-registration.",
+  "failing_control": "Must fire: a Problem Card at S1 with `precommitted_resistance_route` null/absent and `readiness.verdict = READY_FOR_S2` — flagged (not blocked, matching the sibling `schema.prereg-gate-fields` pattern) as missing pre-commitment. Must NOT fire: a Problem Card where `precommitted_resistance_route` names a concrete route (a source, record, experiment, independent critic, or domain authority per the v7.1 definition) filled in before `origin_blackbox_ref`'s first AI-turn line — no flag.",
+  "acceptance_test": "Schema validator accepts a Problem Card with `precommitted_resistance_route` present and non-empty, flags (does not reject) one with it null, matching the flag-not-block behavior already used by `schema.prereg-gate-fields` (design/DAG_v0.3.yaml:112-119).",
+  "build_path": "schema field: `intake.precommitted_resistance_route` (string, minLength 1) added to schema/problem_card.schema.json; new disclaimer-catalogue flag id (e.g. `D-NO-PRECOMMIT-ROUTE`, non-mandatory) rather than a hard schema `required`; no kernel-rule renumbering.",
+  "tier": "Dr",
+  "founder_decision_needed": true,
+  "lens": "kernel-gates",
+  "verdict": {
+   "id": "schema.entry-resistance-precommit-field",
+   "citations_verified": true,
+   "defeater_legitimate": true,
+   "control_mechanical": true,
+   "invariant_ok": true,
+   "score": 6,
+   "reason": "All 5 formal citations check out verbatim at the stated file:line (EPISTEMIC_FUSION_v7.1.txt:351,356; FOUNDATION_v0.6.md:354,425; DAG_v0.3.yaml:112) and independently confirmed the schema facts claimed: problem_card.schema.json's `intake` object really does require only {q1_issue, q2_user_proposal} (lines 14-46), `readiness.verdict` enum includes READY_FOR_S2 (line 63), and claim_card.schema.json's `independent_check` (~line 557) is a distinct, post-hoc field — so the core distinction the proposal draws (pre-candidate R* vs post-hoc independent_check) is real, not fabricated. The correction of the original target (§2.1a explicitly disclaims reopening S1 ownership, line 354) is itself verified and mirrors the chair's SA-3 finding, which is a legitimate, well-grounded move rather than a dodge. The legitimate_defeater invokes v8.1 §1's structural-proposal defeat criteria; I found that exact passage verbatim at EPISTEMIC_FUSION_v8.1.txt:67-74, so the defeater is real and correctly reasoned — but it is quoted in prose without being listed as a file:line citation, which is a Rule-17 gap for a claim this document leans on. failing_control's primary case (null/absent field + READY_FOR_S2 → flag) is cleanly mechanical against the actual schema; its secondary 'must NOT fire' case ('before origin_blackbox_ref's first AI-turn line') is looser since origin_blackbox_ref is just a bare string/null ref, not a structured AI-turn timeline, so that half of the control is not fully mechanical as written. Bigger issue: claim_as_stated says the field goes 'at claim-card intake,' but the proposal's own change/target sections correctly place it at the Problem Card's intake object (S1) — given that schema/claim_card.schema.json is a real, distinct artifact in this repo, that wording is genuinely ambiguous/inconsistent with the stated target, not merely casual phrasing, and a careless reader could implement it in the wrong schema file. No invariant violations found (K-state, human-owns-selection, no novelty words, no vendor credit, flag-not-block matches existing schema.prereg-gate-fields precedent). Net: substantively sound and buildable as scoped by 'target', but the claim_as_stated/target mismatch and the uncited defeater passage keep this short of a clean pass."
+  }
+ },
+ {
+  "id": "kernel.reciprocal-lineage-diagnostic",
+  "title": "χ_recip stays [Open] until the kg edge schema actually has the fields the diagnostic needs — name the missing fields, don't claim they exist",
+  "claim_as_stated": "A reciprocal-lineage diagnostic (χ_recip) over kg edges, diagnostic-only, using session_id/actor/timestamp fields already present in the kg edge schema.",
+  "change": "Direct check of schema/kg_edge.schema.json shows the premise is false: the schema has `asserted_by`, `asserted_at`, `relation`, `independence_class`, `status` — there is no `session_id` field and no field literally named `actor` (the closest is `asserted_by`). χ_recip as v7.1 defines it (a count of readout-distinguishable reciprocal descendants within a declared session horizon) cannot be computed today because glosa's kg edges are not grouped by session at all. Keep the claim as strong as v7.1 states it (χ_recip is a real, named diagnostic, not a rejected idea) but change the proposal from 'diagnose now' to 'add the missing `session_id` field to schema/kg_edge.schema.json first, then diagnose' — the delta actually missing is the grouping key, not the diagnostic logic.",
+  "target": "schema/kg_edge.schema.json (new field: `session_id`); new CLI subcommand `glosa kg diagnose --chi-recip` gated on that field existing; FOUNDATION §4.3 Route Dependence Matrix (`prompt_ancestry` field, design/FOUNDATION_v0.6.md:1163) as the nearest existing lineage-tracking precedent, not as a substitute for the missing kg field",
+  "citations": [
+   {
+    "file": "sources/notes/EPISTEMIC_FUSION_v7.1.txt",
+    "line": 447,
+    "verbatim": "chi_recip[s,L] : How many readout-distinguishable reciprocal descendants does the declared seed set generate within the finite session horizon?"
+   },
+   {
+    "file": "sources/notes/EPISTEMIC_FUSION_v7.1.txt",
+    "line": 496,
+    "verbatim": "or a supercritical tunnel. chi_recip[s,L] therefore cannot be read as warrant, truth, or human benefit."
+   },
+   {
+    "file": "sources/notes/EPISTEMIC_FUSION_v7.1.txt",
+    "line": 554,
+    "verbatim": "Drop chi_recip[s,L] as a useful diagnostic if lineage-linked reciprocal descendants cannot be identified reproducibly under frozen reader, context, horizon, provenance, and readout-distinguishability rules, or if the ratio adds no information beyond ordinary turn count."
+   },
+   {
+    "file": "design/FOUNDATION_v0.6.md",
+    "line": 1163,
+    "verbatim": "model, prompt_ancestry, operator, evidence_base, external_anchor, shared_with[], independence_"
+   }
+  ],
+  "legitimate_defeater": "χ_recip is named a diagnostic in the source (v8.1 §1: 'A diagnostic is defeated if it cannot be coded reproducibly, is unstable under reasonable segmentation or horizon choices, or adds no information beyond a simpler baseline'). The source itself supplies the exact failing condition (v7.1:554 above) — this is not a case where the chair or a skeptic invents a defeater, the removal clause is already load-bearing in the cited text.",
+  "failing_control": "Must fire (register χ_recip as computable): a set of kg edges sharing one `session_id` where the same claim-card lineage is traversed by both a human-asserted edge and an AI-asserted edge within the declared horizon — the count must be reproducible across two independent horizon-boundary choices (e.g. session-close time ±1 edge). Must NOT fire (must return 'not computable', not a fabricated zero): any kg edge set with no `session_id` field populated at all — today's actual state — the diagnostic must refuse to run rather than silently defaulting to a misleading count.",
+  "acceptance_test": "finite_diagnostic sim: given N synthetic kg-edge sets with a `session_id` field, `glosa kg diagnose --chi-recip` reproduces the same count under two different reader/horizon-boundary settings (per v7.1:554's own reproducibility bar) on ≥90% of sets; on kg-edge sets with `session_id` absent, the command exits with an explicit 'not computable — no session grouping' status, never a numeric value.",
+  "build_path": "schema field: add `session_id` (string, optional) to schema/kg_edge.schema.json; sim fixture proving reproducibility under two horizon settings; only after that passes, a new CLI subcommand `glosa kg diagnose --chi-recip` (diagnostic-only, never feeds a tier or verdict per v7.1:496's own 'cannot be read as warrant, truth, or human benefit').",
+  "tier": "Open (the diagnostic is not yet computable in glosa; this proposal is the build path to make it Dr, then finite_diagnostic)",
+  "founder_decision_needed": true,
+  "lens": "kernel-gates",
+  "verdict": {
+   "id": "kernel.reciprocal-lineage-diagnostic",
+   "citations_verified": true,
+   "defeater_legitimate": true,
+   "control_mechanical": true,
+   "invariant_ok": true,
+   "score": 9,
+   "reason": "All four cited passages verified verbatim in place: v7.1:447 (chi_recip definition), v7.1:496 (cannot be read as warrant/truth/human benefit), v7.1:554 (the drop-condition text, quoted exactly), and FOUNDATION_v0.6.md:1163 (route_dependence_matrix fields including prompt_ancestry). Direct read of schema/kg_edge.schema.json confirms the premise: required fields are id/from/to/relation/asserted_by/independence_class/status, plus optional asserted_at/strength/notes — no session_id field and no field literally named actor exists (asserted_by is the closest), matching the proposal's claim exactly. The legitimate_defeater correctly draws on v7.1:554's own removal clause rather than inventing a new bar (its paraphrase of v8.1 §1's defeater-of-a-diagnostic language is close but not itself listed as a formal file:line citation — minor gap, not a fabrication). The failing_control is mechanically specifiable as a finite_diagnostic sim (reproducibility across two horizon-boundary settings on synthetic session_id-grouped edge sets; explicit non-computability refusal when session_id is absent) even though not yet built — consistent with the Open tier and the stated build_path (add session_id field → sim fixture → gated CLI subcommand). Per BBL-2026-09-05-119 the proposal raises the work (names the exact missing schema field and a concrete build path) rather than lowering the claim; it preserves chi_recip as a real named diagnostic per v7.1 rather than rejecting it, keeps K-state math untouched, uses no novelty language, assigns no vendor credit, AI does not sign, and leaves founder_decision_needed true. No reused fabricated C1-C11 ids. This is a well-anchored, appropriately Open-tiered proposal."
+  }
+ },
+ {
+  "id": "schema.retention-direction-field",
+  "title": "retained_direction: unknown gate on hypothesis_selection.yaml (D-RETENTION-DIRECTION, Appendix A row NC-77)",
+  "claim_as_stated": "A retention-direction field (expansion / tunnel / undetermined) on the K1→K2 conversion ledger, so persistence of a chosen hypothesis across sessions is never by itself read as validation.",
+  "change": "Keep the claim exactly as stated. The correct target is not an as-yet-nonexistent 'K1→K2 conversion ledger' artifact but the real, existing `hypothesis_selection.yaml` (FOUNDATION §7.9, S3c row) plus a new Appendix A non-collapse row and disclaimer id. This generalizes a pattern glosa already enforces (NC-32/NC-34: persistence is not itself a check) to a new domain (cross-session retention) rather than inventing a new epistemic stance.",
+  "target": "design/FOUNDATION_v0.6.md §5 disclaimer catalogue (new id `D-RETENTION-DIRECTION`) + Appendix A (new row NC-77, next free id after NC-76 per direct verification of design/FOUNDATION_v0.6.md:2306-2311); schema/hypothesis_selection.schema.json (new optional field `retained_direction` enum [unknown, expansion, tunnel])",
+  "citations": [
+   {
+    "file": "sources/notes/EPISTEMIC_FUSION_v8.1.txt",
+    "line": 345,
+    "verbatim": "Gs = g(ks , ds , vs , ps , rs , 1 − fs , as ),"
+   },
+   {
+    "file": "sources/notes/EPISTEMIC_FUSION_v8.1.txt",
+    "line": 347,
+    "verbatim": "Ts = h(cs , fs , bs , os ),      ∆ s = Gs − T s ,"
+   },
+   {
+    "file": "sources/notes/EPISTEMIC_FUSION_v8.1.txt",
+    "line": 356,
+    "verbatim": "Repair 8 - Separate retention magnitude from re-"
+   },
+   {
+    "file": "sources/notes/EPISTEMIC_FUSION_v8.1.txt",
+    "line": 361,
+    "verbatim": "ηs > 0, ∆s < 0 ⇒ durable epistemic tunnel."
+   },
+   {
+    "file": "design/FOUNDATION_v0.6.md",
+    "line": 2259,
+    "verbatim": "`NC-37` Evidence≠Evidence Relation. *Enforced by: `independent_check`, §4.2, §7.1–7.2.*"
+   },
+   {
+    "file": "design/FOUNDATION_v0.6.md",
+    "line": 429,
+    "verbatim": "| **S3c Hypothesis selection** *(new this pass, request 35d)* | เลือกสมมติฐาน | `hypothesis_selection.yaml` (§7.9) | K0 | `selection.chosen` (zero, one, or more) recorded with a non-empty `reason`; every parked candidate keeps a non-empty `reason` and its manifest/dialogue table stay in the repo; the event is appended to the Blackbox Note's `cooking:` log | Human: makes the selection (non-delegable, `responsible: human`). AI: proposes the comparison table's contents, never the decision. |"
+   }
+  ],
+  "legitimate_defeater": "This is a structural/formal proposal (v8.1 §1: same class as reciprocal momentum/χrecip/η — 'defeated if they are incoherent, redundant, non-identifiable, add no explanatory or predictive information, or are dominated by a rival architecture'). It would be defeated by showing `independent_check`'s existing PASSED/FAILED status already fully determines expansion-vs-tunnel without a separate field — it does not, since `independent_check` records whether a check occurred, not which direction a retained-but-unchecked item points, which is exactly Repair 8's separation (Gs/Ts can diverge from η_s alone).",
+  "failing_control": "Must fire: a `hypothesis_selection.yaml` row with `selection.chosen: true` that has persisted across ≥2 sessions (same `problem_id`) with no linked independent-check artifact — must be tagged `retained_direction: unknown`, never silently read as validated. Must NOT fire: a row with a linked checker finding or falsifier-test result — that row may carry `expansion` or `tunnel` per the check's own outcome, not per persistence alone.",
+  "acceptance_test": "Scan of N `hypothesis_selection.yaml` rows `chosen` across ≥2 sessions with no linked independent-check artifact → 100% tagged `retained_direction: unknown`; a row with a linked checker finding/falsifier result may carry `expansion`/`tunnel`.",
+  "build_path": "schema field (`retained_direction` enum on schema/hypothesis_selection.schema.json, additive) + disclaimer id `D-RETENTION-DIRECTION` (design/FOUNDATION_v0.6.md §5) + Appendix A row NC-77 — blocked on defining the session-grouping key `hypothesis_selection.yaml` currently lacks (no session id field today; `decided_by`/`decided_at` alone cannot group rows into sessions) — that grouping key must be added or the scan narrowed to what's checkable without it before this ships.",
+  "tier": "Dr",
+  "founder_decision_needed": true,
+  "lens": "kernel-gates",
+  "verdict": {
+   "id": "schema.retention-direction-field",
+   "citations_verified": true,
+   "defeater_legitimate": true,
+   "control_mechanical": true,
+   "invariant_ok": true,
+   "score": 8,
+   "reason": "All 6 citations verified verbatim and at exact line numbers (EPISTEMIC_FUSION_v8.1.txt:345/347/356/361 and FOUNDATION_v0.6.md:2259/429). NC-77 confirmed as the next free Appendix A id (NC-76 is the last used row before the section break; grep confirms no prior NC-77/78 usage). The proposal correctly redirects from a fabricated/nonexistent \"K1→K2 conversion ledger\" target to the real hypothesis_selection.yaml (S3c row verified) -- and correctly distinguishes that a real K1→K2 ledger concept does exist but lives under conversion_plan.yaml/Advisor domain (D-ADVISOR-NOT-K2, line 1292), a different artifact, so the redirect is honest rather than conflating the two. legitimate_defeater is well-formed and specific (independent_check's PASS/FAIL is a different axis than direction-of-an-unchecked-item; Repair 8's Gs/Ts split at v8.1:356-361 substantiates this is a real formal distinction). failing_control is mechanically specifiable and correctly scoped to schema/hypothesis_selection.yaml (verified: schema currently has decided_by/decided_at but genuinely no session-grouping field, matching the proposal's own stated blocker) -- the schema field addition and disclaimer/Appendix-A row are buildable as stated independent of that blocker; only the automated multi-session scan (acceptance_test) is blocked pending a session-grouping key, which the proposal explicitly discloses as a pre-ship condition rather than hiding it. Founder invariants intact: tier Dr matches the schema's existing self-declared tier pattern, no novelty-framing language used, human ownership of S3c selection is untouched (field is additive metadata, not a decision-authority change), AI does not sign anything. Docked two points because the acceptance_test as written cannot yet run end-to-end without the missing session key -- per founder ruling BBL-2026-09-05-119 (raise the work, don't lower the claim), the grouping-key definition should ship alongside the field rather than being deferred as a named blocker."
+  }
+ },
+ {
+  "id": "kernel.session-boundary-momentum-reset-assertion",
+  "title": "session_boundary block on Blackbox Note (not an independence_class/R0-R1-R2 kernel rule — those are a different mechanism)",
+  "claim_as_stated": "A session-boundary AI-momentum reset assertion, mechanical and CI-checkable.",
+  "change": "The original target (kernel/glosa_kernel.py independence_class validation; FOUNDATION §2.3 R0/R1/R2 internal registers) is a real misread, confirmed by direct read: §2.3's R0/R1/R2 name the Blackbox Note's internal reading stages (raw voice → readout formulation → world-language hypothesis, design/FOUNDATION_v0.6.md:453-489) — nothing there concerns AI momentum across sessions, and independence_class (kernel/glosa_kernel.py:1341) governs evidence-relation independence, not session boundaries. The real, already-real target is `schema/blackbox_note.schema.json`, which has a `session_ref` field (a bare optional string) but nothing marking when a session opens/closes or what state the AI carries across that boundary — the delta is real, just filed under the wrong section.",
+  "target": "templates/knowledge/blackbox_note.yaml + schema/blackbox_note.schema.json (new fields: `opened_at`, `closed_at`, `ai_state_at_boundary` fixed-literal `reset`, `human_retained_residue_ref`); design/FOUNDATION_v0.6.md §2.3 (not §2.1a's R0/R1/R2, which stay untouched)",
+  "citations": [
+   {
+    "file": "sources/notes/EPISTEMIC_FUSION_v7.1.txt",
+    "line": 328,
+    "verbatim": "m^{AI}_{s+1,0} = 0          (by architectural scope definition)"
+   },
+   {
+    "file": "sources/notes/EPISTEMIC_FUSION_v7.1.txt",
+    "line": 493,
+    "verbatim": "F10. Reciprocal momentum is session-bounded. Human and AI outputs can mutually reshape semantic accessibility during a"
+   },
+   {
+    "file": "sources/notes/EPISTEMIC_FUSION_v7.1.txt",
+    "line": 497,
+    "verbatim": "F12. The deepest temporal asymmetry is cross-session persistence. During a session, Human and AI can mutually reshape"
+   },
+   {
+    "file": "sources/notes/EPISTEMIC_FUSION_v7.1.txt",
+    "line": 548,
+    "verbatim": "Remove m^{AI}_{s,t} as a distinct object if within-session path history adds no effect on next-turn semantic transitions"
+   },
+   {
+    "file": "design/FOUNDATION_v0.6.md",
+    "line": 453,
+    "verbatim": "**R1 — Readout formulation** (internal label, lives inside the note's `r1_readout_ref`). The"
+   },
+   {
+    "file": "schema/blackbox_note.schema.json",
+    "line": 1,
+    "verbatim": "[\"id\", \"project\", \"session_ref\", \"participants\", \"language\", \"privacy_scan\", \"public_lines_selected_by\", \"lines\", \"cooking\", \"r1_readout_ref\", \"r2_hypothesis_ref\", \"translation_status\", \"disclaimers\"]"
+   }
+  ],
+  "legitimate_defeater": "The reset (`m^{AI}_{s+1,0} = 0`) is stated 'by architectural scope definition' — a constitutive/scope claim (v8.1 §1: constitutive necessities 'are defeated by internal inconsistency, equivocation in the definition, or a valid counterexample in which the target phenomenon occurs while the allegedly necessary condition is absent'). It is explicitly NOT defeated by pointing out that some AI systems do carry cross-session state — the source itself excludes that case by definition ('Persistent memory, personalization, fine-tuning, external state, or cross-session agent memory are excluded from this object and would require a different architecture', v7.1:333-334); a legitimate defeater would have to show glosa's own tooling silently carries such state across a Blackbox Note session boundary today, contradicting the literal fixed-value assertion the schema is about to make.",
+  "failing_control": "Must fire: two Blackbox Note files sharing a `session_ref` split across a tool restart where the second file's `ai_state_at_boundary` is missing or not literally `reset` — schema validator rejects. Must NOT fire: two Blackbox Note files sharing a `session_ref` where both carry `ai_state_at_boundary: reset` and `human_retained_residue_ref` resolves to an existing repo artifact — validator accepts, no flag.",
+  "acceptance_test": "Given two Blackbox Note files sharing a `session_id` split across a tool restart, a schema validator confirms `ai_state_at_boundary: reset` present and literal in both; `human_retained_residue_ref` resolution (cross-file reference check) is scoped as a separate, explicitly costed follow-up to `tools/blackbox_log.py` rather than folded into this schema-only pass, since plain JSON Schema cannot resolve cross-file references.",
+  "build_path": "schema fields on templates/knowledge/blackbox_note.yaml + schema/blackbox_note.schema.json (session_id/opened_at/closed_at/ai_state_at_boundary literal `reset`); FOUNDATION §2.3 doc update naming the boundary explicitly; human_retained_residue_ref cross-reference validator deferred to a follow-up tools/blackbox_log.py extension, not this pass's cost.",
+  "tier": "Dr",
+  "founder_decision_needed": true,
+  "lens": "kernel-gates",
+  "verdict": {
+   "id": "kernel.session-boundary-momentum-reset-assertion",
+   "citations_verified": false,
+   "defeater_legitimate": true,
+   "control_mechanical": true,
+   "invariant_ok": true,
+   "score": 2,
+   "reason": "Citation 6 is fabricated: the proposal quotes line 1 of schema/blackbox_note.schema.json as verbatim '[\"id\", \"project\", \"session_ref\", \"participants\", \"language\", \"privacy_scan\", \"public_lines_selected_by\", \"lines\", \"cooking\", \"r1_readout_ref\", \"r2_hypothesis_ref\", \"translation_status\", \"disclaimers\"]', but line 1 of that file is literally '{'. The actual `required` array (line 6) is only [\"id\",\"project\",\"participants\",\"language\",\"privacy_scan\",\"lines\",\"cooking\"] — session_ref, public_lines_selected_by, r1_readout_ref, r2_hypothesis_ref, translation_status, and disclaimers are optional properties scattered at other lines (12, 27, 68-71), never appearing together as this contiguous string anywhere in the file. This is a composite/invented citation — exactly the fabrication class the founder ruling and Rule 17 exist to catch (echoing the meeting's fabricated \"C1-C11\" incident). The other five citations (v7.1:328/331 m^AI_{s+1,0}=0, v7.1:493 F10, v7.1:497 F12, v7.1:548 removal condition, FOUNDATION_v0.6.md:453 R1 label, and the confirmed §2.3 heading at line 434) all check out verbatim and do support that R0/R1/R2 in §2.3 are Blackbox Note internal reading-stage labels unrelated to independence_class or AI-momentum reset, and that F10/F12/the m^AI equation genuinely assert a session-bounded AI-momentum reset \"by architectural scope definition.\" The legitimate_defeater's framing (constitutive/scope claim, defeated only by internal inconsistency/equivocation/counterexample) is a real verbatim passage in EPISTEMIC_FUSION_v8.1.txt (~line 62-64, \"They are defeated by internal inconsistency, equivocation in the definition, or a valid counterexample...\") and is legitimately reasoned, but it is not listed in the formal citations array with file:line as Rule 17 requires — a secondary citation-discipline gap on top of the primary fabrication. The failing_control (schema validator checking ai_state_at_boundary literal 'reset' on shared session_ref) is mechanically runnable as a JSON Schema check, and no founder invariant (RAM-slices-only, no novelty words, no vendor credit, human-owns-problem, AI-never-signs, K-state math unchanged) is violated by the field additions themselves. But a fabricated citation is fatal under Rule 17 and the founder ruling to raise the work rather than pass a false claim — this cannot be built as stated until citation 6 is replaced with an honest quote and the v8.1 defeater passage is added to the citations array with its correct line number."
+  }
+ },
+ {
+  "id": "HU-1",
+  "title": "Wire the already-written Human Mastery Gate into the mechanical publish gate and give it a genre-independent home (not: write it from scratch)",
+  "claim_as_stated": "Write the missing Human Mastery Gate protocol card (§7.5 currently points at nothing).",
+  "change": "The claim as literally stated is false and must not be repeated: the protocol is not missing, it is fully specified (10-question live unaided-defense checklist) inside templates/paper/arxiv-twocol/main.tex and templates/paper/arxiv-onecol/main.tex, and asserted as an enforcement mechanism by two non-collapse rows (NC-56, NC-61). Raising the work per BBL-2026-09-05-119 means finding the real, still-standing defect underneath the false premise, which is: (a) design/FOUNDATION_v0.6.md §7.5 is a broken pointer — 'Unchanged from v0.1 §7.5' where no FOUNDATION_v0.1.md file exists anywhere in the repo; (b) the 10-question protocol exists only inside two LaTeX paper templates, so it fires only for the 'S5 Paper' genre and is invisible to every other artifact type (code release, dataset, standalone claim card); (c) NC-56 and NC-61 both assert the gate is 'required before any L3+ public commitment' / 'enforced_by: Human Mastery Gate protocol', but P10_publish_gate.md's own R1-R7 dimension list — the actual mechanical publish gate — never names it, so the enforcement claim is currently prose-only, not wired. Delta: (1) extract the 10 questions into a standalone methodology/P16_human_mastery_gate.md, genre-independent; (2) add a schema/human_mastery_gate.schema.json with a required gate_status enum [PASS, PASS_WITH_NAMED_GAPS, NOT_READY] plus the 10 answer fields, each with an author-only (never AI-filled) constraint; (3) add an R8 dimension to P10_publish_gate.md's R1-R7 list requiring gate_status != NOT_READY for any L3+ artifact; (4) fix design/FOUNDATION_v0.6.md §7.5 to point at the new P16 card instead of the nonexistent v0.1.",
+  "target": "design/FOUNDATION_v0.6.md §7.5; new methodology/P16_human_mastery_gate.md; new schema/human_mastery_gate.schema.json; methodology/P10_publish_gate.md (new R8 line); templates/knowledge/ (new gate_answers.yaml template)",
+  "citations": [
+   {
+    "file": "design/FOUNDATION_v0.6.md",
+    "line": 1619,
+    "verbatim": "### 7.5 Human Mastery Gate"
+   },
+   {
+    "file": "design/FOUNDATION_v0.6.md",
+    "line": 1621,
+    "verbatim": "Unchanged from v0.1 §7.5."
+   },
+   {
+    "file": "templates/paper/arxiv-twocol/main.tex",
+    "line": 375,
+    "verbatim": "\\section{Human Mastery Gate}"
+   },
+   {
+    "file": "templates/paper/arxiv-twocol/main.tex",
+    "line": 378,
+    "verbatim": "each of the following (adapted from the Standalone Scholar Human Mastery"
+   },
+   {
+    "file": "methodology/data/non_collapse_table.json",
+    "line": 570,
+    "verbatim": "\"enforced_by\": \"Human Mastery Gate required before any L3+ public commitment\""
+   },
+   {
+    "file": "methodology/data/non_collapse_table.json",
+    "line": 620,
+    "verbatim": "\"enforced_by\": \"Human Mastery Gate protocol — a live, unaided defense checklist, separate from the AI-fill ledger\""
+   },
+   {
+    "file": "methodology/P10_publish_gate.md",
+    "line": 17,
+    "verbatim": "- **R1 — Leak scan.** Grep for local usernames/home directories, internal IPs/hostnames, private-"
+   },
+   {
+    "file": "methodology/P10_publish_gate.md",
+    "line": 32,
+    "verbatim": "- **R7 — Completeness.** Every `\\claimref{}`/field the artifact points at actually resolves (no"
+   }
+  ],
+  "legitimate_defeater": "Per v8.1 §1 claim-type discipline, this is a buildability/gap-existence claim (not an empirical-effect claim), so its legitimate defeater is a located artifact that already performs the exact missing function: a genre-independent P-card or schema that (a) is not scoped only to the arxiv LaTeX genre, and (b) is already checked by P10's R1-R7 pass. If such an artifact is found, the delta collapses and this proposal is refuted, not merely revised.",
+  "failing_control": "Must fire: a code-genre or dataset-genre claim card reaching an L3+ release today has no gate_status field anywhere in its schema and no R8 check in P10 — grep -rn mastery schema/*.json returns zero hits (verified this pass) — so an L3+ non-paper artifact can pass P10's full R1-R7 pass with a fabricated/never-defended claim underneath it. Must NOT fire: an S5 Paper genre artifact using the existing arxiv template, which already carries the 10-question section and a Gate status: [FILL] line before submission — the control must not re-flag content that already has the checklist embedded.",
+  "acceptance_test": "Mechanical: run P10's R1-R7 scan (extended to R8) against two fixtures — (i) a Paper-genre claim card with the arxiv template's Gate status filled PASS: confirm R8 passes; (ii) a non-Paper L3+ claim card (e.g. a code-release claim) with no human_mastery_gate.yaml linked: confirm R8 fails with BLOCKED: NO_MASTERY_GATE_LINKED. Both outcomes must reproduce from the schema + P10 text alone, no human judgment call needed for the presence check (content adequacy stays human-judged, per NC-61).",
+  "build_path": "schema/human_mastery_gate.schema.json (new); methodology/P16_human_mastery_gate.md (new, distills templates/paper/arxiv-*/main.tex §Human Mastery Gate); methodology/P10_publish_gate.md new R8 bullet; design/FOUNDATION_v0.6.md §7.5 rewritten to cite P16 instead of 'v0.1'; DAG node id human_mastery_gate.wired (kernel rule number 29+, next free after existing max).",
+  "tier": "Dr",
+  "founder_decision_needed": true,
+  "lens": "human-uplift",
+  "verdict": {
+   "id": "HU-1",
+   "citations_verified": true,
+   "defeater_legitimate": true,
+   "control_mechanical": true,
+   "invariant_ok": true,
+   "score": 8,
+   "reason": "All 7 citations open exactly as quoted and support the claim as stated: FOUNDATION_v0.6.md:1619/1621 confirms the §7.5 broken pointer (\"Unchanged from v0.1 §7.5\") and no FOUNDATION_v0.1.md exists anywhere (only v0.2–v0.6, PLAN_v0.1.md, and a git tag v0.1.0 — none is the named file). arxiv-twocol/main.tex:375/378 confirms the 10-question protocol lives only in the paper template. non_collapse_table.json:570 is inside the NC-56 block (\"AI exploration ≠ Human commitment\") and :620 inside NC-61 (\"questions defended without AI ≠ questions merely produced with AI\"), both verbatim as quoted, confirming the enforcement claims are prose-only. P10_publish_gate.md:17/32 confirm R1 and R7 exist and grep for \"R8\" across the file returns nothing — the dimension is genuinely absent. `grep -rn mastery schema/` returns zero hits, confirming no gate_status/mastery field exists in any schema (checked release_manifest.schema.json and claim_card.schema.json specifically too), and no generic non-paper-genre human-gate mechanism was found elsewhere in schema/ or methodology/ — so the stated legitimate_defeater (an already-existing genre-independent artifact performing this function) does not fire; the delta is real and does not collapse. The failing_control is mechanically checkable via grep/file-existence, and the two acceptance fixtures (Paper-genre PASS vs non-Paper L3+ with no linked gate → BLOCKED) require no subjective judgment for the presence check, matching the claim's own scope-limiting caveat that content-adequacy stays human-judged. Founder invariants respected: no novelty words, tier marked Dr with founder_decision_needed=true, human retains problem/hypothesis ownership (this is enforcement plumbing, not content generation), AI is not signing anything, no new C1–C11-style fabricated ids (uses existing NC-56/NC-61 correctly and proposes a fresh DAG node name). Minor deduction from 10: the claim that no FOUNDATION_v0.1.md exists \"anywhere in the repo\" is true for tracked files but a git tag v0.1.0 does exist, which is adjacent-but-distinct evidence the proposal doesn't address (a reviewer could ask whether the tag's tree contains a differently-pathed v0.1 file) — worth a one-line check before treating the pointer as unambiguously broken, though this doesn't change the verdict since PLAN_v0.1.md and FOUNDATION_v0.2.md's likely predecessor lineage make \"no v0.1 FOUNDATION file was ever committed\" the far more probable reading."
+  }
+ },
+ {
+  "id": "HU-2",
+  "title": "Entry-anchor block on the intake stage — carrying the H0 gate's missing conjuncts (U0/E0/Φ0/V0/C0/R*), not just P0/M0",
+  "claim_as_stated": "Add an entry-anchor block (H0-style) to the intake stage, ahead of first AI exposure.",
+  "change": "schema/problem_card.schema.json's intake object already captures the equivalent of P_0 (q1_issue: the problem in the human's own terms) and M_0 (q2_user_proposal: the human's present working proposal/belief) — verified present. What is genuinely absent, confirmed by grep across methodology/P02_intake.md and the schema, is every other conjunct of the source's own entry gate: U_0 (what remains unknown/unresolved), E_0 (evidence already available independent of AI), Φ_0 (a declared change condition — what would make the human revise M_0), and the full minimum-entry gate ENTRY_H→AI = H_0 ∧ V_0 ∧ C_0 ∧ R* (verification intent, candidate-status contract, a precommitted independent-check route). Add these as new optional intake sub-fields, not folded into q1/q2, since they answer structurally different questions than 'what is the issue' and 'what do you propose'.",
+  "target": "schema/problem_card.schema.json (intake object: new entry_anchor sub-object); methodology/P02_intake.md",
+  "citations": [
+   {
+    "file": "sources/notes/EPISTEMIC_FUSION_v7.1.txt",
+    "line": 344,
+    "verbatim": "H_0 = (P_0, M_0, U_0, E_0, Φ_0)"
+   },
+   {
+    "file": "sources/notes/EPISTEMIC_FUSION_v7.1.txt",
+    "line": 351,
+    "verbatim": "ENTRY_H→AI = H_0 ∧ V_0 ∧ C_0 ∧ R*"
+   },
+   {
+    "file": "sources/notes/EPISTEMIC_FUSION_v7.1.txt",
+    "line": 355,
+    "verbatim": "C_0 - candidate contract: before seeing the answer, accept that AI output begins as K_like, not as certified knowledge."
+   },
+   {
+    "file": "sources/notes/EPISTEMIC_FUSION_v7.1.txt",
+    "line": 356,
+    "verbatim": "R* - precommitted resistance route: specify how an important candidate could be checked by a source, record, experiment,"
+   },
+   {
+    "file": "schema/problem_card.schema.json",
+    "line": 12,
+    "verbatim": "\"description\": \"The two-question intake gate: Q1 states the issue as a retained difference (not a bare label); Q2 is the human's own proposal or explicitly 'none'"
+   }
+  ],
+  "legitimate_defeater": "This is a gap-existence claim (buildability, per v8.1 §1). Its legitimate defeater is a located field, anywhere in schema/problem_card.schema.json or methodology/P02_intake.md, that already captures U_0/E_0/Φ_0 or V_0/C_0/R* under different names — a targeted re-grep confirmed zero hits for 'unknown', 'evidence', 'change condition', 'revise', 'verification intent', 'candidate contract', 'resistance route', 'K_like' in P02_intake.md. If the founder or a later pass locates an equivalent field, the specific missing-conjunct claim is refuted for that conjunct.",
+  "failing_control": "Must fire: an intake where the human has an unstated but real prior model (M_0 present) yet no declared change condition (Φ_0) — today nothing in problem_card.schema.json requires or even offers a slot for 'what would make you revise this', so a human's fixed belief entering an AI session cannot be distinguished, at the schema level, from an open one. Must NOT fire: an intake where the human explicitly writes entry_anchor.change_condition: 'none stated — exploratory' — the field is honest-optional (mirrors q2_user_proposal's 'none' precedent), never silently inferred by AI on the human's behalf.",
+  "acceptance_test": "Mechanical: schema validation confirms a problem_card.yaml with entry_anchor present passes, and a scan of N existing problem_card.yaml instances reports what fraction carry each of the five new sub-fields (change_condition, unresolved, existing_evidence, verification_intent, resistance_route) filled vs. left as the honest 'not stated' value — no field may be silently backfilled by an AI session (mirrors q2_user_proposal.text 'none' precedent, schema/problem_card.schema.json:35-38).",
+  "build_path": "schema/problem_card.schema.json: new optional intake.entry_anchor object (unresolved, existing_evidence, change_condition, verification_intent, resistance_route, all human-authored, blackbox_line_ref-backed like q1/q2); methodology/P02_intake.md new section documenting the H0/ENTRY_H→AI mapping; forward-only application per the retroactivity pattern in MEETING_2026-09-05_uplift.md §5.3.",
+  "tier": "Dr",
+  "founder_decision_needed": true,
+  "lens": "human-uplift",
+  "verdict": {
+   "id": "HU-2",
+   "citations_verified": true,
+   "defeater_legitimate": true,
+   "control_mechanical": true,
+   "invariant_ok": true,
+   "score": 8,
+   "reason": "All 5 citations verified verbatim at the stated lines (EPISTEMIC_FUSION_v7.1.txt:344,351,355,356 and problem_card.schema.json:12) and each supports the claim it's cited for. Gap-existence claim confirmed by independent grep: schema/problem_card.schema.json and methodology/P02_intake.md contain no field/section capturing U_0, Φ_0 (change condition), V_0 (verification intent), C_0 (candidate contract), R* (resistance route), or E_0 as an independent-evidence-declaration field distinct from q1/q2 — checked via grep for 'unresolved','change_condition','verification_intent','resistance_route','candidate','K_like' (zero hits) and by reading P02_intake.md in full. Minor imprecision: the proposal's stated grep for 'evidence' actually does have two incidental hits in P02_intake.md (generic prose about 'evidence work begins' and NC-27's LOCAL_EVIDENCE naming), so 'zero hits' is not literally true for that one term — but neither hit is a field capturing E_0, so the substantive gap claim survives. Defeater is legitimate (a located pre-existing field would refute it) and none was found. failing_control is logically sound and mechanically checkable via schema-presence inspection (a Φ_0-less schema cannot distinguish fixed vs. open prior belief) though it's a presence/absence check rather than an executable test script; acceptance_test itself is properly mechanical (schema validation + fraction-filled scan, honest-optional non-inference rule mirrored correctly from q2's precedent at schema.json:35-38, verified). Founder invariants respected: tier Dr, no fabricated C-ids, no novelty words, forward-only application deferred to an existing MEETING_2026-09-05_uplift.md §5.3 ruling (verified that section exists), human_owner/AI-never-signs and K-state math untouched by this schema-only change. Docked two points for the minor defeater-search overclaim ('zero hits' vs. actual incidental hits) and because failing_control, while sound, is argued rather than literally scripted."
+  }
+ },
+ {
+  "id": "HU-3",
+  "title": "Session-close retention-direction note gated to an independent-check field, not a free-text classification",
+  "claim_as_stated": "Session-close retention note in the Blackbox Note cooking log — human states direction, not just content, of what was retained.",
+  "change": "Keep the claim as strong as stated: a session-close cooking-log entry must record the DIRECTION of what was retained (expansion vs. tunnel), not merely restate its content. The source's own machinery (v8.1 Gs/Ts/Δs, Repair 8) makes this direction claim answerable only via an independent check, never via retention/persistence alone (ηs>0 tells you nothing about sign). So the schema change must not let a human free-write 'expansion'/'tunnel' unaccompanied — it must require a structural sub-field naming the independent check that licenses the direction claim, defaulting to unknown otherwise. This generalizes the pattern the repo already enforces elsewhere for the same distinction (NC-32 DVP≠K2, NC-34 no independent check⇒no K2/no release) into the session-retention domain.",
+  "target": "schema/blackbox_note.schema.json (cooking.step items: revision kind gets a required retention_note sub-object when step==revision); schema/hypothesis_selection.schema.json (new optional retained_direction enum); templates/knowledge/blackbox_note.yaml",
+  "citations": [
+   {
+    "file": "sources/notes/EPISTEMIC_FUSION_v8.1.txt",
+    "line": 347,
+    "verbatim": "Ts = h(cs , fs , bs , os ),      ∆ s = Gs − T s ,"
+   },
+   {
+    "file": "sources/notes/EPISTEMIC_FUSION_v8.1.txt",
+    "line": 356,
+    "verbatim": "Repair 8 - Separate retention magnitude from re-"
+   },
+   {
+    "file": "sources/notes/EPISTEMIC_FUSION_v8.1.txt",
+    "line": 359,
+    "verbatim": "ηs > 0, ∆s > 0 ⇒ durable expansion;"
+   },
+   {
+    "file": "sources/notes/EPISTEMIC_FUSION_v8.1.txt",
+    "line": 361,
+    "verbatim": "ηs > 0, ∆s < 0 ⇒ durable epistemic tunnel."
+   },
+   {
+    "file": "design/FOUNDATION_v0.6.md",
+    "line": 2306,
+    "verbatim": "`NC-74` Equal-distinction-count≠Equal-epistemic-standing (uncited pending a matching source — no"
+   },
+   {
+    "file": "schema/blackbox_note.schema.json",
+    "line": 59,
+    "verbatim": "\"step\": { \"enum\": [\"lens_in\", \"analysis\", \"lens_out\", \"revision\", \"translation\", \"review\"] },"
+   },
+   {
+    "file": "schema/hypothesis_selection.schema.json",
+    "line": 1,
+    "verbatim": "\"id\", \"problem_ref\", \"decided_by\", \"decided_at\", \"candidates\", \"selection\", \"cooking_log_ref\", \"routes_to\""
+   }
+  ],
+  "legitimate_defeater": "This is a direction-claim (evaluative, per v8.1 §1 claim-type discipline): its legitimate defeater per the source itself is a demonstration that 'the proposed positive/negative pressures are incoherent or empirically inseparable, that retained direction adds no explanatory value to independent re[view]' (v8.1:362-365, paraphrase of the printed defeater clause) — i.e. if augmentation vs. tunnel outcomes are shown to be empirically indistinguishable in glosa's own artifacts, the gate is vacuous and should be dropped, not just relabeled.",
+  "failing_control": "Must fire: a hypothesis_selection.yaml row marked chosen and referenced across two or more sessions (same problem_ref, decided_at values >1 session apart) with no cooking-log revision entry naming an independent-check artifact — must be tagged retained_direction: unknown, never silently read as validated. Must NOT fire: a row with a linked review_report.yaml or falsifier-test artifact in cooking_log_ref showing an actual independent check ran — that row may carry expansion or tunnel per the check's finding.",
+  "acceptance_test": "Mechanical scan: for N hypothesis_selection.yaml rows sharing a problem_ref across ≥2 sessions, 100% with no independent_check_ref must render retained_direction: unknown; a row with independent_check_ref resolving to an existing review_report/falsifier artifact may carry expansion/tunnel. Session-grouping key gap (hypothesis_selection.schema.json has no session_id field today — decided_by/decided_at alone cannot group rows) must be resolved first, e.g. by requiring HU-3's own session_id (added via HU-1/blackbox session_boundary work) before this scan is runnable.",
+  "build_path": "schema/blackbox_note.schema.json: cooking item gets an if/then conditional (step==revision → retention_note required, with independent_check_named: boolean sub-field, not free text); schema/hypothesis_selection.schema.json: optional retained_direction enum [unknown, expansion, tunnel], default unknown; design/FOUNDATION_v0.6.md §5 new disclaimer id D-RETENTION-DIRECTION; Appendix A new row NC-77 (confirmed next-free id: design/FOUNDATION_v0.6.md's own count tops at NC-76, and design/DAG_v0.3.yaml currently holds 26 nodes, none named session_boundary/retention/tunnel — verified by direct grep this pass).",
+  "tier": "Dr",
+  "founder_decision_needed": true,
+  "lens": "human-uplift",
+  "verdict": {
+   "id": "HU-3",
+   "citations_verified": false,
+   "defeater_legitimate": false,
+   "control_mechanical": false,
+   "invariant_ok": true,
+   "score": 2,
+   "reason": "Verified all 7 citations by sed -n around each line. Six check out verbatim (v8.1:347,356,359,361 and FOUNDATION:2306 and blackbox_note.schema.json:59 all match exactly). But citation 7 (schema/hypothesis_selection.schema.json:1) is fabricated: the claimed verbatim '\"id\", \"problem_ref\", \"decided_by\", \"decided_at\", \"candidates\", \"selection\", \"cooking_log_ref\", \"routes_to\"' does not exist as a continuous passage anywhere in the file — line 1 is just '{', and the actual required array (line 7) is [\"id\",\"problem_ref\",\"decided_by\",\"candidates\",\"selection\",\"cooking_log_ref\"], omitting decided_at and routes_to (which do exist elsewhere, lines 13 and 89, but not contiguously with the others). This is exactly the class of fabricated-citation error Rule 17 exists to prevent. Separately, the legitimate_defeater is misapplied: the proposal quotes/paraphrases the 'Legitimate defeater' clause at v8.1:362-365 as if it defeats the retention-direction (expansion/tunnel) claim, but that printed defeater clause is explicitly about a different collapse — augmentation vs. synergy vs. return (AUG/SYN/RET) being empirically interchangeable — not about ∆s sign / Repair 8's expansion-vs-tunnel distinction. No defeater for the actual direction claim is cited from the source. Additionally, the failing_control is admitted by the proposal itself to be non-mechanically-runnable today: it requires a session_id grouping field that does not yet exist in hypothesis_selection.schema.json (dependent on unbuilt HU-1 work), so the acceptance_test cannot actually be scanned as stated. Per the founder ruling, these gaps must be closed by raising the work (real citation, a defeater sourced to the correct construct, and either building the session_id dependency first or restating build_path as blocked-on-HU-1) rather than accepted as-is. Founder invariants (Dr tier labeling, no novelty words, human-owns-selection framing, AI-non-signing) are otherwise respected."
+  }
+ },
+ {
+  "id": "HU-4",
+  "title": "Advisor packet must trace a conversion recommendation back to a human-attributed intake statement before recommending action — the real missing link, not a free-floating 'question quality' step",
+  "claim_as_stated": "Advisor packet gains a 'question quality' self-check step before recommending conversion actions.",
+  "change": "The proposal's original framing ('question quality self-check') is not buildable as scoped — q1_issue.retained_difference_statement's quality is already gated at intake (schema/problem_card.schema.json, methodology/P02_intake.md), and re-litigating it at the advisor stage duplicates that gate rather than closing a real hole. The real, verified hole is upstream of quality: schema/claim_card.schema.json carries no field at all linking a claim back to the problem_card.q1_issue that originated it (unlike schema/hypothesis_selection.schema.json, which does carry problem_ref) — so templates/knowledge/advisor_prompt_packet.md's own file-reading sequence (§1, steps 1-7) can recommend K1→K2 conversion actions from a claim card whose originating human-stated issue is untraceable, meaning the advisor cannot check whether the retained-difference framing driving its recommendation ever passed through a human at all. This directly serves the human-uplift lens: it stops the advisor from coaching the human toward a conversion path built on an unattributed or drifted framing.",
+  "target": "schema/claim_card.schema.json (new optional problem_ref field, mirroring hypothesis_selection.schema.json); templates/knowledge/advisor_prompt_packet.md §1 (new step requiring problem_ref resolution before §2 proceeds); methodology/P14_project_advisor.md",
+  "citations": [
+   {
+    "file": "schema/claim_card.schema.json",
+    "line": 1,
+    "verbatim": "'schema_version', 'claim_id', 'shape', 'statement', 'standpoint', 'claim_type', 'genre', 'venue_track', 'companion_of', 'produced_by', 'responsible', 'origin_blackbox_ref'"
+   },
+   {
+    "file": "schema/hypothesis_selection.schema.json",
+    "line": 1,
+    "verbatim": "'id', 'problem_ref', 'decided_by', 'decided_at', 'candidates', 'selection', 'cooking_log_ref', 'routes_to'"
+   },
+   {
+    "file": "templates/knowledge/advisor_prompt_packet.md",
+    "line": 27,
+    "verbatim": "2. Every `claim_card.json` listed in `release_manifest.artifact_refs.claim_ids`. Read `tier`,"
+   },
+   {
+    "file": "schema/problem_card.schema.json",
+    "line": 17,
+    "verbatim": "\"retained_difference_statement\": {"
+   }
+  ],
+  "legitimate_defeater": "Buildability claim (per v8.1 §1): defeated if a located existing field already achieves claim-card-to-intake traceability — e.g. if origin_blackbox_ref (already present, schema/claim_card.schema.json) can be shown to resolve deterministically to the originating problem_card's q1_issue without a new field. This must be checked against tools/blackbox_log.py's actual resolution behavior, not assumed, before the new field is added.",
+  "failing_control": "Must fire: a claim_card.json with produced_by: joint or ai, whose statement diverges from the retained_difference_statement in the problem_card it should trace to (or has no resolvable problem_ref at all) — the advisor must report BLOCKED: NO_PROBLEM_REF or BLOCKED: FRAMING_DRIFT rather than proceeding to §2 conversion-plan drafting. Must NOT fire: a claim_card whose problem_ref resolves and whose statement is a bounded restatement of the linked retained_difference_statement — normal drafting paraphrase, not drift.",
+  "acceptance_test": "Mechanical: given a claim_card.json with problem_ref set and a resolvable problem_card.yaml, the advisor packet's step 1 confirms resolution and proceeds; given one with problem_ref absent or unresolvable, step 1 halts and emits the named BLOCKED code — reproducible by any executor with file access only, no LLM judgment required for the presence/resolution check (content-drift judgment stays human/AI-assisted but disclosed, not mechanically decided).",
+  "build_path": "schema/claim_card.schema.json: new optional problem_ref (string, pointing at a problem_card id), analogous to hypothesis_selection.schema.json's existing field; templates/knowledge/advisor_prompt_packet.md §1: new step 1a between current steps 1 and 2, BLOCKED code NO_PROBLEM_REF; methodology/P14_project_advisor.md: document the new precondition.",
+  "tier": "Dr",
+  "founder_decision_needed": false,
+  "lens": "human-uplift",
+  "verdict": {
+   "id": "HU-4",
+   "citations_verified": false,
+   "defeater_legitimate": true,
+   "control_mechanical": true,
+   "invariant_ok": true,
+   "score": 3,
+   "reason": "Core claim verified true and the hole is real: schema/claim_card.schema.json has no problem_ref-style field anywhere (confirmed by grep — only genre/venue_track/companion_of exist, all unrelated to intake tracing), while schema/hypothesis_selection.schema.json does carry problem_ref (line 11, required at line 7). The legitimate_defeater is a real, checkable, mechanical question, and it is correctly refuted: tools/blackbox_log.py exists but only implements a flat chat/finding log (add/entries/render/api/deposit) with no problem_card resolution logic, so origin_blackbox_ref cannot substitute for a real problem_ref — the failing_control and build_path are mechanically runnable and don't touch founder invariants (human_owner/responsible stay human; this only adds a traceability pointer, doesn't delegate problem/question/hypothesis-selection). However, ALL FOUR citations fail Rule 17 verification: (1) schema/claim_card.schema.json:1 is `{` — the quoted 'schema_version, claim_id, shape...' string is not present at that line, not even in that comma/single-quote form anywhere in the file (required[] uses double quotes, starts at line 9, and omits schema_version/genre/venue_track/companion_of entirely) — it is a synthesized/aggregated list, not a continuous verbatim passage; (2) schema/hypothesis_selection.schema.json:1 has the same defect — line 1 is `{`, and the quoted field list is a fabricated aggregation, not text found at that line; (3) templates/knowledge/advisor_prompt_packet.md:27 — the quoted line 'Every `claim_card.json` listed...' actually sits at line 31, a 4-line miss; (4) schema/problem_card.schema.json:17 — the quoted `\"retained_difference_statement\": {` actually sits at line 22, a 5-line miss. Per Rule 17 and the founder's explicit fabricated-C1–C11 precedent, none of these four citations meet the file:line + continuous-verbatim-passage bar as stated, so the proposal cannot be built/merged in its current citation form even though its substantive claim and build path are sound — citations must be corrected to exact lines with genuine continuous excerpts before this proceeds."
+  }
+ },
+ {
+  "id": "HU-5",
+  "title": "Bound P01_standpoint's open-ended AI completeness-prompt with a named question set, citing the real non-collapse precedent (NC-58), not a fabricated one",
+  "claim_as_stated": "P01_standpoint's 'AI may prompt for completeness' gets a named, bounded question set instead of an open-ended AI judgment call.",
+  "change": "Keep the claim at full strength: methodology/P01_standpoint.md's division-of-labour line genuinely leaves the AI's prompting scope open-ended (an example only, no closed list), confirmed by direct read. The proposal's own second evidence leg ('no linguistic property performs...') must not cite a fabricated 'C6/C10 (EPISTEMIC_FUSION)' id — no such id exists in either source file (grep confirms EPISTEMIC_FUSION_v7.1.txt/v8.1.txt use F1..F20 or unlabeled headings, never C-numbers). The real, structurally closest precedent already in glosa is NC-58 (AIContribution≠EpistemicResponsibility) plus FOUNDATION_v0.6.md §3.3's existing ai_filled.* disclosure discipline, which already treats every AI-filled sub-field as separately disclosed rather than trusted by default — this proposal extends that same disclosure discipline from AI-filled answers to AI-posed prompts, closing the one open channel (P01's prompting scope) that discipline does not yet cover.",
+  "target": "methodology/P01_standpoint.md 'Human / AI division of labour' section (bounded prompt list, replacing the open 'e.g.' example)",
+  "citations": [
+   {
+    "file": "methodology/P01_standpoint.md",
+    "line": 34,
+    "verbatim": "Human\\: states `declared_basis` and `disciplines_not_claimed[]` in their own words — this is"
+   },
+   {
+    "file": "methodology/P01_standpoint.md",
+    "line": 35,
+    "verbatim": "non-delegable, since only the human can attest to their own position. AI: may prompt for"
+   },
+   {
+    "file": "methodology/P01_standpoint.md",
+    "line": 36,
+    "verbatim": "completeness (e.g. \"does this also claim expertise in X you have not named?\") but never fills"
+   },
+   {
+    "file": "methodology/data/non_collapse_table.json",
+    "line": 586,
+    "verbatim": "\"id\": \"NC-58\","
+   },
+   {
+    "file": "methodology/data/non_collapse_table.json",
+    "line": 590,
+    "verbatim": "\"enforced_by\": \"AI-fill ledger is disclosure-only; claim_card.human_owner always names a human as responsible party\""
+   }
+  ],
+  "legitimate_defeater": "Buildability/scope claim (v8.1 §1): defeated if a closed prompt list is shown to re-narrow P01's own stated non-delegability further than the source material intends — i.e. if a bounded list causes the AI to stop prompting about a genuinely relevant undisclosed discipline that a closed list didn't anticipate, defeating the completeness purpose the open-ended version currently serves. Must be tested against real declared_basis entries before closing the list permanently.",
+  "failing_control": "Must fire: an AI session prompting a human with a question not drawn from the bounded set (e.g. an ad hoc, session-specific completeness question) — should be logged as ai_filled.prompt_source: freeform (disclosed, not silently treated as equivalent to a named prompt) rather than passing unflagged. Must NOT fire: an AI session using one of the named bounded prompts verbatim — that case needs no disclosure flag beyond the existing blackbox_line_ref.",
+  "acceptance_test": "Mechanical: grep of P01_standpoint.md confirms the 'e.g.' single-example line is replaced by an enumerated, closed list (N items); a scan of Blackbox Note cooking-log entries tagged step: lens_in during standpoint capture confirms each AI-authored prompt matches one of the N items or is flagged ai_filled.prompt_source: freeform — no third, unflagged category possible.",
+  "build_path": "methodology/P01_standpoint.md: replace single '(e.g. ...)' example with an enumerated bounded prompt list (Dr tier, drafted from existing declared_basis/disciplines_not_claimed use cases already in the repo's own claim cards); no schema change required (existing ai_filled.* shape already covers disclosure, schema/claim_card.schema.json 'ai_filled' per design/FOUNDATION_v0.6.md:721,878).",
+  "tier": "Dr",
+  "founder_decision_needed": false,
+  "lens": "human-uplift",
+  "verdict": {
+   "id": "HU-5",
+   "citations_verified": true,
+   "defeater_legitimate": true,
+   "control_mechanical": true,
+   "invariant_ok": true,
+   "score": 8,
+   "reason": "All citations verified verbatim: P01_standpoint.md:34-36 confirms the open-ended 'e.g.' single-example prompting clause with no closed list; non_collapse_table.json:586,590 confirms NC-58 (AIContribution≠EpistemicResponsibility) and its ledger-disclosure enforcement text exactly as quoted. Crucially, this proposal is a correct resubmission of an earlier same-day HU-5 that was scored 4.5/refuted specifically for citing a fabricated 'C6/C10 (EPISTEMIC_FUSION)' id (design/MEETING_2026-09-05_judged.json:128-137); that meeting's own revision instruction told the author to drop the fabricated id and cite NC-58 instead — which this proposal does verbatim, and independently grep confirms EPISTEMIC_FUSION_v7.1/v8.1 contain no C-numbered ids at all. The legitimate_defeater (a closed list could stop the AI from prompting about a genuinely relevant undisclosed discipline outside the enumerated set) is a real, testable scope-narrowing risk appropriate to a buildability claim, not empty. The failing_control is mechanically runnable: schema/blackbox_note.schema.json:59 already defines a `cooking.step` enum including `lens_in`, so scanning Blackbox Note entries tagged `step: lens_in` for prompts outside the bounded set (flagged `ai_filled.prompt_source: freeform`) versus prompts matching the named list is a real, existing mechanism, not invented machinery. No schema change is claimed or needed — the ai_filled.* shape already exists in FOUNDATION_v0.6.md/claim_card.schema.json as cited. Founder invariants hold: human still authors declared_basis/disciplines_not_claimed non-delegably, AI's role stays bounded to prompting (never filling), no novelty language, tier correctly set to Dr, no vendor credit, no reused fabricated ids. This is a build-ready, evidence-anchored proposal at full claim strength per BBL-2026-09-05-119 — the prior round's defeater (fabrication) was met by raising the work, not lowering the claim."
+  }
+ },
+ {
+  "id": "lrs.dr-tag-not-dag-node",
+  "title": "File this lens's four sub-proposals as an [Open] TODO line, not a new DAG_v0.3 node",
+  "claim_as_stated": "Do not create a new DAG_v0.3 node for this lens — file as an [Open] TODO line in design/TODO_v0.3.md instead, naming the four sub-proposals as pending P09 vetting + a citation card before any DECISIONS.yaml entry.",
+  "change": "Append one line to design/TODO_v0.3.md's open-items list naming the four lrs-defeaters sub-proposals (defeater-defeated-status-field, dialogue-table-claim-type-column, defeater-not-collapse-rule, claim-type-defeater-enum) as pending P09 vetting + citation-card grounding, and do not add a `nodes:` entry to design/DAG_v0.3.yaml for any of them until each has an approved DECISIONS.yaml row.",
+  "target": "design/TODO_v0.3.md",
+  "citations": [
+   {
+    "file": "design/DAG_v0.3.yaml",
+    "line": 2,
+    "verbatim": "# Readout, not truth: every node below is a proposed readout of what the S1 harvest (324 cards,"
+   },
+   {
+    "file": "design/DAG_v0.3.yaml",
+    "line": 6,
+    "verbatim": "# decision; every `proposed` node needs the internal command-center's DECISIONS ledger (private) before S6 build."
+   },
+   {
+    "file": "design/TODO_v0.3.md",
+    "line": 1,
+    "verbatim": "# TODO v0.3 (step list — one line per step, updated as we go)"
+   }
+  ],
+  "legitimate_defeater": "This is a CONVENTIONAL/procedural claim about which repo artifact hosts an unvetted item, not a phenomenological or empirical claim (v8.1 §1 typology). Its legitimate defeater is evidence that DAG_v0.3.yaml already accepts nodes without prior DECISIONS.yaml grounding — i.e. finding an existing `proposed` node in design/DAG_v0.3.yaml that has no corresponding DECISIONS.yaml row — or evidence that TODO_v0.3.md is not the sanctioned open-items log (e.g. a repo rule naming a different file). Neither was found: DAG_v0.3.yaml:6 states every proposed node needs a DECISIONS.yaml row before S6 build, and TODO_v0.3.md:1 is the existing step/open-item log used throughout v0.3 (see its own S1–S7 tracked lines).",
+  "failing_control": "MUST fire: a diff that adds a new `- id: lrs.*` block under `nodes:` in design/DAG_v0.3.yaml with no matching id present anywhere in coordination/DECISIONS.yaml. MUST NOT fire: a diff that only appends a `- [ ]` bullet line to design/TODO_v0.3.md naming the four lrs.* ids as pending.",
+  "acceptance_test": "A mechanical diff-scan (shell/pytest) that greps an incoming diff for added `- id:` lines under design/DAG_v0.3.yaml's `nodes:` block, cross-checks each new id against `grep -c '<id>' cpg/research/coordination/DECISIONS.yaml` (or the repo's local decisions log) returning 0 as a hard fail, and passes when the diff instead only touches design/TODO_v0.3.md.",
+  "build_path": "Immediate: append the TODO_v0.3.md line naming the four ids as pending P09 vetting. Longer-term: scripts/check_dag_node_gate.sh (new, sibling of scripts/check_forbidden_words.sh) wired into the same pre-S6 gate that already exists per DAG_v0.3.yaml:6.",
+  "tier": "Dr (procedural, mechanically checkable once the gate script exists; currently just editorial)",
+  "founder_decision_needed": true,
+  "lens": "lrs-defeaters",
+  "verdict": {
+   "id": "lrs.dr-tag-not-dag-node",
+   "citations_verified": true,
+   "defeater_legitimate": true,
+   "control_mechanical": true,
+   "invariant_ok": true,
+   "score": 8,
+   "reason": "All three citations verified verbatim (DAG_v0.3.yaml:2, :6; TODO_v0.3.md:1) and genuinely support the claim: line 6 explicitly requires a DECISIONS.yaml row before any proposed node enters DAG_v0.3.yaml, so filing the four lrs sub-proposals as a TODO line instead of a DAG node is the correct-by-repo-rule move, not a downgrade. The proposal is procedural/conventional (which file hosts an unvetted item), correctly tiered Dr, and appropriately routes founder_decision_needed. Legitimate_defeater is well-formed: it names the one thing that would actually defeat this (a precedent of an ungated proposed node, or a rule naming a different open-items file) and neither was found in the repo as checked. Failing_control is mechanically specified (grep new `- id:` under DAG's nodes: block, cross-check against DECISIONS.yaml, hard-fail on 0 matches) and the acceptance_test operationalizes it as a runnable diff-scan, though the scan script itself doesn't exist yet — build_path correctly scopes this as future work (scripts/check_dag_node_gate.sh) rather than claiming it's already enforced. No founder invariant violated: no novelty words, no vendor credit, human-owned decision gate preserved, AI not signing anything, K-state math untouched, and it does not fabricate or reuse the forbidden C1-C11 ids. Minor deduction (not 9-10): the acceptance_test references `cpg/research/coordination/DECISIONS.yaml` as a parenthetical alternative to a possibly-different \"repo's local decisions log,\" which is slightly underspecified for a mechanical gate — should pin one canonical path before the script is actually built, but this doesn't undermine the here-and-now TODO-line action being proposed."
+  }
+ },
+ {
+  "id": "lrs.defeater-defeated-status-field",
+  "title": "Enforce the already-documented defeater_log shape {node,date,outcome} that the schema currently leaves untyped",
+  "claim_as_stated": "Track defeater-attempted-and-survived vs never-tested as a claim_card status, not just tested.falsifier presence.",
+  "change": "The skeptic correctly refuted a NEW top-level status field as a duplicate of provenance_dag.defeater_log[] — but the claim survives at full strength once redirected at the real gap: FOUNDATION_v0.6.md:775 already documents defeater_log's required shape as `[{node, date, outcome}]`, while schema/claim_card.schema.json:437-441 only types it as `{\"type\":\"array\",\"items\":{\"type\":\"object\"}}` with no `required` keys and no `outcome` enum. Add to the schema's defeater_log item: `required: [node, date, outcome]` and `outcome: {enum: [claim_survived, claim_revised, claim_withdrawn]}` — this is the actual missing delta between spec and schema, and it is exactly what distinguishes 'defeater attempted and survived' (outcome=claim_survived, entry present) from 'never tested' (defeater_log empty).",
+  "target": "schema/claim_card.schema.json provenance_dag.defeater_log (lines 437-441)",
+  "citations": [
+   {
+    "file": "design/FOUNDATION_v0.6.md",
+    "line": 775,
+    "verbatim": "                    defeater_log: [{node, date, outcome}],"
+   },
+   {
+    "file": "schema/claim_card.schema.json",
+    "line": 437,
+    "verbatim": "        \"defeater_log\": {"
+   },
+   {
+    "file": "schema/claim_card.schema.json",
+    "line": 439,
+    "verbatim": "          \"items\": {"
+   }
+  ],
+  "legitimate_defeater": "Structural/formal proposal (v8.1 §1, Structural and formal proposals — line 67): defeated if the added constraint is redundant, incoherent, or adds no explanatory/predictive information beyond what the untyped object already permits. It is NOT defeated by 'defeater_log already exists' alone (the skeptic's original refutation) — that only shows the array exists, not that its documented shape is enforced; a genuine defeater would be evidence that nothing in the pipeline ever reads node/date/outcome, making the constraint informationally idle.",
+  "failing_control": "MUST fire (schema validation error) on a claim_card with `provenance_dag.defeater_log: [{\"node\": \"n1\"}]` (missing date and outcome — currently passes silently under the open `{\"type\":\"object\"}` item schema). MUST NOT fire on `provenance_dag.defeater_log: [{\"node\": \"n1\", \"date\": \"2026-09-05\", \"outcome\": \"claim_survived\"}]`.",
+  "acceptance_test": "pytest fixture pair against jsonschema validate(): fixture A (malformed defeater_log entry missing required keys) asserts a ValidationError is raised; fixture B (well-formed entry with a valid outcome value) asserts validation passes. No new kernel Python rule required — pure schema constraint, checkable by the existing schema test harness.",
+  "build_path": "schema/claim_card.schema.json (defeater_log items: add `required` + `outcome` enum, additive/backward-compatible schema_version bump per the FOUNDATION_v0.6 must-fix-12 precedent) + tests/test_schema_defeater_log.py (new fixture file).",
+  "tier": "Dr (spec-vs-schema gap independently verified this session) -> finite_diagnostic once the fixture pytest exists and passes",
+  "founder_decision_needed": false,
+  "lens": "lrs-defeaters",
+  "verdict": {
+   "id": "lrs.defeater-defeated-status-field",
+   "citations_verified": true,
+   "defeater_legitimate": true,
+   "control_mechanical": true,
+   "invariant_ok": true,
+   "score": 8,
+   "reason": "All three citations checked in context and verbatim: FOUNDATION_v0.6.md:775 documents defeater_log shape as [{node, date, outcome}] (trailing comma differs, immaterial); schema/claim_card.schema.json:437 is \"defeater_log\": {, :439 is \"items\": { — and the actual item schema (lines 437-442) is confirmed to be the untyped {\"type\":\"object\"} with no required keys or outcome enum, exactly as claimed. The proposal correctly redirects from the refuted top-level-status-field idea to a real, narrow spec-vs-schema gap. legitimate_defeater is properly scoped (informational-idleness argument, structural/formal category) and not trivially satisfied by the prior refutation, as the proposal itself notes. failing_control is mechanically runnable: a plain jsonschema validate() call against fixture A (missing keys) must raise, fixture B (well-formed) must pass — no new kernel logic needed, pure declarative schema edit. This is additive/backward-compatible (well-formed existing entries still validate) so no migration risk. Founder invariants respected: Dr tier claimed honestly with explicit path to finite_diagnostic, no novelty words, no vendor credit, human-owned problem framing preserved, no reused fabricated IDs. Minor deduction only because the defeater's resolution (whether node/date/outcome are actually read downstream) is asserted as unresolved/plausible rather than checked in this session — a small residual gap, not a fatal one for a Dr-tier build claim."
+  }
+ },
+ {
+  "id": "lrs.dialogue-table-claim-type-column",
+  "title": "Add defeater_class + legitimate_defeater columns to the LRS dialogue_table template, under a name that cannot collide with claim_card.claim_type",
+  "claim_as_stated": "Add a claim_type + legitimate_defeater column to the LRS dialogue_table template.",
+  "change": "Applying the skeptic's own accepted revision at full strength: add two columns to templates/knowledge/dialogue_table.md's table header and design/S14_literature-review-system.md §3.4's column list — `defeater_class` (enum: phenomenological | constitutive | structural_formal | diagnostic | empirical, per v8.1 §1's five-way separation) and `legitimate_defeater` (free text: what would actually defeat THIS row's agrees/disagrees stance, per that class) — with an explicit column-notes sentence distinguishing `defeater_class` from the schema-fixed `claim_type` field used by claim_card.yaml + kernel rule16/rule16w. Applies to new dialogue_table.md instances going forward only, not retrofitted.",
+  "target": "templates/knowledge/dialogue_table.md; design/S14_literature-review-system.md §3.4 (lines 208-216)",
+  "citations": [
+   {
+    "file": "sources/notes/EPISTEMIC_FUSION_v8.1.txt",
+    "line": 30,
+    "verbatim": "1. Claim Types, Evidence, and Legitimate                              better-constrained objects."
+   },
+   {
+    "file": "sources/notes/EPISTEMIC_FUSION_v8.1.txt",
+    "line": 44,
+    "verbatim": "Phenomenological explananda. These are recur-"
+   },
+   {
+    "file": "design/S14_literature-review-system.md",
+    "line": 210,
+    "verbatim": "Columns: `source | how it sees the problem | what it separates | what it assumes | agrees with H"
+   },
+   {
+    "file": "kernel/glosa_kernel.py",
+    "line": 643,
+    "verbatim": "    if card.get(\"claim_type\") == \"EMPIRICAL\" and card.get(\"empirical_extension\") is None:"
+   }
+  ],
+  "legitimate_defeater": "Structural/formal proposal (v8.1 §1, line 67-68): defeated if incoherent, redundant with an existing field, or adds no explanatory/predictive information. The skeptic's redundancy defeater against the original name `claim_type` is upheld (kernel/glosa_kernel.py:643 shows claim_type already routes rule16w) — the delta that survives is the renamed, non-colliding field `defeater_class` plus the paired `legitimate_defeater` text column, which the template does not currently have at all.",
+  "failing_control": "MUST fire (lint/incompleteness flag): a dialogue_table.md row with `agrees with H = YES` or `disagrees with H = YES` populated but `defeater_class`/`legitimate_defeater` left blank. MUST NOT fire on a row where both new columns are filled with a value from the fixed five-way enum and non-empty defeater text.",
+  "acceptance_test": "Header-row-specific mechanical check (per the skeptic's tightening instruction, not a bare file-wide grep -c): `grep -E '^\\|.*defeater_class.*legitimate_defeater.*\\|$' templates/knowledge/dialogue_table.md` must match the header row; a pytest fixture with a populated-stance row missing either new column must fail a row-completeness check function.",
+  "build_path": "templates/knowledge/dialogue_table.md (header row + column-notes paragraph), design/S14_literature-review-system.md §3.4 (column list + one clarifying sentence), tests/test_dialogue_table_template.py (new).",
+  "tier": "Dr (template-level, mechanically greppable, no kernel change required)",
+  "founder_decision_needed": false,
+  "lens": "lrs-defeaters",
+  "verdict": {
+   "id": "lrs.dialogue-table-claim-type-column",
+   "citations_verified": true,
+   "defeater_legitimate": true,
+   "control_mechanical": true,
+   "invariant_ok": true,
+   "score": 8,
+   "reason": "All four citations check out verbatim at the cited line: v8.1:30 and v8.1:44 are exact matches to the file (the five-way separation header + phenomenological-explananda opening); S14:210 is the exact current dialogue_table column header; kernel/glosa_kernel.py:643 is exact and confirms claim_type is already a schema-fixed enum field (EMPIRICAL/DECISION/FORMAL, routing rule16w) distinct from the proposed defeater taxonomy — so the redundancy defeater the proposal invokes against reusing the bare name \"claim_type\" is real, not invented. I independently read v8.1 lines 44-72 in full and confirmed the document does separate exactly five claim types (phenomenological explananda, constitutive necessities, structural and formal proposals, diagnostics, empirical predictions) each paired with its own defeater condition — the proposal's five-way enum is a faithful, non-fabricated readout of that structure, and the specific legitimate_defeater text quoted for \"structural_formal\" (incoherent/redundant/no explanatory-predictive information) matches v8.1:67-72 verbatim in substance. The failing_control is mechanically checkable (a header-anchored grep plus a pytest row-completeness fixture on a template with no schema/kernel dependency) and the MUST/MUST-NOT fire conditions are unambiguous. No novelty words, no vendor credit, no AI-signing, K-state untouched, template-only change with no kernel modification — invariants hold. The one real soft spot: the `claim_as_stated` field text (\"Add a claim_type + legitimate_defeater column\") is stale relative to the `change` field's actual, better-reasoned deliverable (`defeater_class`, deliberately renamed to dodge the exact collision the proposal itself proves exists at kernel:643) — a literal build of claim_as_stated's wording would recreate the defect the proposal's own evidence defeats. The proposal is transparent about this rename and its reasoning is sound, so this is a documentation-hygiene gap rather than a fabrication or a lowered claim, but it should be fixed (sync claim_as_stated to name defeater_class) before v0.4 lock rather than merged as-is verbatim."
+  }
+ },
+ {
+  "id": "lrs.defeater-not-collapse-rule",
+  "title": "Kernel rule29: reject strength-of-claim phrasing as a stated defeater, grounded directly in v8.1's own Burden rule",
+  "claim_as_stated": "Kernel rule: reject 'strength of the claim' or 'feels solid' as a stated defeater regardless of claim_type.",
+  "change": "The skeptic's refutation ('exhaustive grep found no such phrases currently in the repo') is a category error under v8.1's own Burden rule: absence of an existing violation is not evidence against a PREVENTIVE structural check — it only shows the check is currently untested against real data, which is a different (and much weaker) objection than 'evidence does not check out.' The claim is kept at full strength and now anchored directly in v8.1's own text: build kernel rule29, a phrase-scan over `tested.falsifier` for strength-of-claim / feels-solid language, matching v8.1's explicit Burden rule that such phrasing is never itself a defeater.",
+  "target": "kernel/glosa_kernel.py (new rule29, next available number after rule28); methodology/data/non_defeater_phrase_table.json (new, sibling pattern to contaminated_concept_table.json)",
+  "citations": [
+   {
+    "file": "sources/notes/EPISTEMIC_FUSION_v8.1.txt",
+    "line": 51,
+    "verbatim": "peated traversal can create inclination; exposure                     Burden rule. “The claim is strong” is not a coun-"
+   },
+   {
+    "file": "sources/notes/EPISTEMIC_FUSION_v8.1.txt",
+    "line": 53,
+    "verbatim": "eficial. A legitimate defeater is evidence that the                   or contrary evidence. A legitimate objection must"
+   },
+   {
+    "file": "methodology/data/contaminated_concept_table.json",
+    "line": 1,
+    "verbatim": "{"
+   },
+   {
+    "file": "kernel/glosa_kernel.py",
+    "line": 897,
+    "verbatim": "            \"rule27: five_questions.seen.ai_assisted_fields names a field with AI involvement \""
+   }
+  ],
+  "legitimate_defeater": "Structural/formal proposal (v8.1 §1, line 67-68): defeated if incoherent, redundant, adds no explanatory/predictive information, or is dominated by a rival mechanism with fewer moving parts (e.g. a disclaimer-catalogue entry alone, with no kernel enforcement, achieving the same discipline). It is NOT defeated by the absence of a currently-existing violating passage in the repo — v8.1:51-53 itself states 'the claim is strong is not a counterexample, an inconsistency, a failed phenomenon, or contrary evidence,' which by the same logic means 'no instance found yet' is not a counterexample to a forward-looking guard.",
+  "failing_control": "MUST fire on `tested.falsifier` text matching /strength of (the |this )?claim|feels solid|feels right|intuitively (strong|solid|convincing)/i. MUST NOT fire on a falsifier describing an actual contrary-evidence or absence condition, e.g. 'defeated by a documented case where retained_direction is negative across 3 consecutive turns.'",
+  "acceptance_test": "pytest fixtures: falsifier=\"the claim is simply too strong to be wrong\" -> kernel returns a rule29 error; falsifier=\"defeated by a documented case where retained_direction is negative across 3 consecutive turns\" -> no error, following the same finite_diagnostic disclosure pattern as rule27/rule28 (evadable by omission, disclosed as such, not claimed as a structural guarantee).",
+  "build_path": "methodology/data/non_defeater_phrase_table.json (new, pattern-matched to methodology/data/contaminated_concept_table.json's _meta/source/how_to_use shape) + kernel/glosa_kernel.py rule29 (phrase-scan function analogous to _inflated_bearing_errors) + tests/test_rule29_non_defeater_phrase.py (new).",
+  "tier": "Dr (specified this session, mechanically buildable per the skeptic's own admission) -> finite_diagnostic once fixtures ship",
+  "founder_decision_needed": false,
+  "lens": "lrs-defeaters",
+  "verdict": {
+   "id": "lrs.defeater-not-collapse-rule",
+   "citations_verified": true,
+   "defeater_legitimate": true,
+   "control_mechanical": true,
+   "invariant_ok": true,
+   "score": 6,
+   "reason": "All 4 citations open and check out verbatim: v8.1.txt:51 and :53 (sed -n confirmed, exact two-column OCR text incl. the em-dash line breaks) genuinely carry the Burden-rule language the proposal leans on (\"'The claim is strong' is not a counterexample... A legitimate objection must specify which claim type is being rejected and present the kind of defeater appropriate to that type\"); kernel/glosa_kernel.py:897 matches the quoted rule27 string exactly, confirming the analogous-function pattern (_inflated_bearing_errors at line 917 shows the same phrase-scan-helper shape is already a proven pattern in this file, so build_path is mechanically real, not aspirational); contaminated_concept_table.json:1 is a trivial \"{\" — technically a real file:line but it does no evidentiary work, it only anchors \"this sibling file exists.\"\n\nFailing_control is mechanically runnable as stated: a single compiled regex over `tested.falsifier`, with a clear MUST-fire/MUST-NOT-fire pair and pytest fixtures that would immediately show pass/fail — no hidden LLM judgment call.\n\nDefeater analysis: the prior SKEPTIC pass (design/MEETING_2026-09-05_judged.json id lrs.defeater-not-collapse-rule, score 3.0) refuted on \"exhaustive grep found no such phrases\" — i.e., treated absence of an existing violation as if it undercut the evidence for the rule. That is a real category error for a PREVENTIVE/structural check: contaminated_concept_table.json's own _meta describes itself the same way (a pre-write catalogue of phrases to intercept, not a log of phrases already caught), so \"no instance yet\" cannot be disqualifying for this class of proposal without also disqualifying the sibling table it's patterned on. The v8.1:51-53 citation is used by analogy rather than as a literal rule-for-rules — it is not a perfect 1:1 application (v8.1's Burden rule is about defending an explanatory/architecture claim against \"it's strong,\" not about justifying a new kernel guard against \"no instance found yet\") — so calling the prior refutation itself \"a category error under v8.1's own text\" slightly overstates how directly the source maps onto this meta-situation. The underlying point (absence-of-instance ≠ defeater for a forward-looking guard) is nonetheless sound reasoning on its own terms, so the defeater the proposal offers is legitimate even though the \"grounded directly in v8.1\" framing oversells the tightness of the textual match.\n\nNo invariant violations: no novelty language, no vendor credit, AI is proposing a mechanical kernel change rather than asserting a first-discovery claim, K-state math untouched, human retains problem/hypothesis ownership per the meeting structure. Consistent with BBL-2026-09-05-119 (raises the work with real citations + a concrete regex/build_path + existing-pattern precedent rather than narrowing the claim). Net: buildable and now properly cited, but the rhetorical move recasting the prior SKEPTIC's evidence objection as a strict \"category error\" is somewhat self-serving/analogical rather than textually forced — Dr tier is appropriate, not higher, until the fixture tests actually ship and the analogy is stated as an analogy rather than as direct derivation."
+  }
+ },
+ {
+  "id": "lrs.claim-type-defeater-enum",
+  "title": "Add a sibling defeater_class field (not an extension of claim_type) with kernel rule30 enforcing per-class defeater phrasing, citing v8.1 §1 directly",
+  "claim_as_stated": "Extend claim_type + add claim-type-scoped defeater field: schema/common.defs.json (claim_type enum), schema/claim_card.schema.json (five_questions.tested), kernel/glosa_kernel.py (new rule: defeater_class must be one of the fixed set matching claim_type).",
+  "change": "The skeptic's citation-accuracy refutation is fixed at the source rather than the claim being weakened: the enum block is verified at schema/common.defs.json:154-165 (not claim_card.schema.json, which only carries the $ref at lines 94-95), and the five-way phenomenological/constitutive/structural/diagnostic/empirical taxonomy is cited directly from sources/notes/EPISTEMIC_FUSION_v8.1.txt §1 (lines 30-68) rather than a Zenodo metadata pointer, since no glosa claim-card ids for that taxonomy exist yet. The mechanism itself is also corrected: do NOT extend common.defs.json's existing claim_type enum (EMPIRICAL/FORMAL/INTERPRETIVE/... already drives kernel rule16w and would collide) — instead add a new sibling field `defeater_class` inside `five_questions.tested` with the five v8.1 values, plus kernel rule30 checking that the `falsifier` text matches the defeater style v8.1 pairs with that class (e.g. defeater_class=EMPIRICAL requires a contrary-evidence/replication-style falsifier per v8.1 line 45, not an absence/misdescription/irrelevance-style falsifier per v8.1 line 53-54, which is the PHENOMENOLOGICAL pairing).",
+  "target": "schema/claim_card.schema.json five_questions.tested (new optional defeater_class field, additive); kernel/glosa_kernel.py (new rule30)",
+  "citations": [
+   {
+    "file": "schema/common.defs.json",
+    "line": 154,
+    "verbatim": "    \"claim_type\": {"
+   },
+   {
+    "file": "schema/claim_card.schema.json",
+    "line": 94,
+    "verbatim": "    \"claim_type\": {"
+   },
+   {
+    "file": "sources/notes/EPISTEMIC_FUSION_v8.1.txt",
+    "line": 44,
+    "verbatim": "Phenomenological explananda. These are recur-"
+   },
+   {
+    "file": "sources/notes/EPISTEMIC_FUSION_v8.1.txt",
+    "line": 45,
+    "verbatim": "                                                                       claims. These are defeated by sufficiently strong"
+   },
+   {
+    "file": "sources/notes/EPISTEMIC_FUSION_v8.1.txt",
+    "line": 53,
+    "verbatim": "eficial. A legitimate defeater is evidence that the                   or contrary evidence. A legitimate objection must"
+   },
+   {
+    "file": "sources/notes/EPISTEMIC_FUSION_v8.1.txt",
+    "line": 54,
+    "verbatim": "phenomenon is absent within the declared scope,                       specify which claim type is being rejected and"
+   }
+  ],
+  "legitimate_defeater": "Constitutive/structural claim (v8.1 §1): defeated by internal inconsistency, equivocation in the definition, or a valid counterexample where a claim_card's actual defeater style cannot be mapped to exactly one of the five v8.1 classes without ambiguity. It is NOT defeated by the citation error the skeptic caught (schema/claim_card.schema.json:154-165 vs schema/common.defs.json:154-165) — that defeats only the prior citation, not the mechanism, once corrected as above.",
+  "failing_control": "MUST fire (rule30 error): a claim_card with `defeater_class: EMPIRICAL` whose `tested.falsifier` reads only 'the phenomenon would be absent within the declared scope, systematically misdescribed, or explanatorily irrelevant' (the PHENOMENOLOGICAL-style defeater per v8.1 line 53-54, wrong pairing for an EMPIRICAL claim). MUST NOT fire: a claim_card with `defeater_class: EMPIRICAL` whose falsifier reads 'defeated by a documented failed replication in an independent sample' (matches v8.1 line 45's empirical pairing), nor a `defeater_class: PHENOMENOLOGICAL` card whose falsifier states the absence/misdescription/irrelevance condition.",
+  "acceptance_test": "pytest fixtures: case A (defeater_class=EMPIRICAL, falsifier=phenomenological-style absence text) -> expect rule30 error (category mismatch); case B (defeater_class=EMPIRICAL, falsifier=replication-style text) -> expect pass; case C (defeater_class=PHENOMENOLOGICAL, falsifier=absence-style text) -> expect pass.",
+  "build_path": "schema/claim_card.schema.json (five_questions.tested: add optional `defeater_class` enum [PHENOMENOLOGICAL, CONSTITUTIVE, STRUCTURAL_FORMAL, DIAGNOSTIC, EMPIRICAL] — additive, backward-compatible schema_version bump) + kernel/glosa_kernel.py rule30 (defeater-class-appropriateness phrase check, disclosed finite_diagnostic/heuristic like rule27-28) + tests/test_rule30_defeater_class.py (new). If the intent is for the five v8.1 classes to eventually carry their own glosa claim cards, that card-authoring is a separate prerequisite/parallel deliverable, not pre-cited here.",
+  "tier": "Dr (citation corrected and mechanism redesigned this session; not yet built) -> finite_diagnostic once rule30 fixtures pass",
+  "founder_decision_needed": true,
+  "lens": "lrs-defeaters",
+  "verdict": {
+   "id": "lrs.claim-type-defeater-enum",
+   "citations_verified": true,
+   "defeater_legitimate": true,
+   "control_mechanical": true,
+   "invariant_ok": true,
+   "score": 8,
+   "reason": "All six citations verified verbatim at exact line numbers: common.defs.json:154 and claim_card.schema.json:94 both show `\"claim_type\": {` confirming the enum lives in common.defs.json (154-165, EMPIRICAL/FORMAL/INTERPRETIVE/NORMATIVE/CONVENTIONAL_LEGAL/DECISION/SOCIAL/HUMAN_PARTICIPANT) and is only $ref'd in claim_card.schema.json, exactly as the proposal states -- this corrects the prior fabricated citation. v8.1.txt lines 44/45/53/54 match verbatim exactly, and lines 14-17/31/44-85 confirm the five-way taxonomy (phenomenological explananda, constitutive necessities, structural/formal proposals, diagnostics, empirical predictions) is real and textually present, not invented. The mechanism is sound: claim_type's existing 8-value enum (which already drives rule16w) has zero overlap with the five v8.1 defeater classes except a bare 'EMPIRICAL' string collision, so adding a sibling `defeater_class` field inside `tested` rather than extending claim_type avoids the collision the skeptic would otherwise flag. schema/claim_card.schema.json:314-333 confirms `tested.falsifier` is a free-text string with only minLength:1 -- an additive optional `defeater_class` enum plus a phrase-check on `falsifier` is schema-compatible and non-breaking. kernel/glosa_kernel.py has no existing rule29/rule30 (no numbering collision) and already implements this exact style of check -- rule18 (TAXONOMY-UNTYPED, lines 773-795) and rule27/28 are regex/keyword heuristics on free-text fields, explicitly tagged `HEURISTIC:` and tiered `finite_diagnostic`/`Dr` per the file's own documented discipline (lines 3,38,80,217-233) -- so rule30 as described (a falsifier-phrasing check keyed to defeater_class, disclosed as heuristic) is mechanically buildable following an established, working pattern, not a novel unproven mechanism. failing_control gives concrete positive/negative example text pairs mapped to the real v8.1 EMPIRICAL (line 45, contrary-evidence/replication) vs PHENOMENOLOGICAL (lines 53-54, absence/misdescription/irrelevance) pairings, and is directly executable as pytest fixtures per acceptance_test. legitimate_defeater is genuinely a constitutive-type objection to the mechanism (ambiguous class-to-phrasing mapping) rather than a restatement of the already-fixed citation error, satisfying founder ruling BBL-2026-09-05-119's raise-the-work standard. Tier claim (Dr now, finite_diagnostic once rule30 fixtures pass) is honest and matches this repo's tier discipline; no novelty language, no vendor credit, human retains problem/hypothesis ownership, AI is not signing. Not yet built (correctly disclosed) and the score reflects strong but unbuilt design -- the two soft gaps are (1) no independent verification yet that a keyword/phrase heuristic can reliably distinguish the five defeater styles across real, more varied falsifier prose beyond the two example sentences drawn straight from source text, and (2) the \"five v8.1 classes need their own claim cards eventually\" dependency is honestly flagged as a separate deliverable rather than resolved."
+  }
+ }
+]
