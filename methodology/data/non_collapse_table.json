@@ -1,663 +1,683 @@
 {
-  "_meta": {
-    "tier": "Dr (specified; independently unreviewed)",
-    "one_fact_one_home": "ids are append-only stable references (NC-01..NC-64); never renumber, never reuse a retired id.",
-    "source": [
-      "cpg_research_journal/research/rigour-without-infrastructure/design/S9_non-collapse-table.md (Families A-G, NC-01..NC-61)",
-      "design/FOUNDATION_v0.5.md Appendix A (Family H, NC-62..NC-64, chair ruling C6)"
-    ],
-    "generated": "2026-09-04"
+ "_meta": {
+  "tier": "Dr (specified; independently unreviewed)",
+  "one_fact_one_home": "ids are append-only stable references (NC-01..NC-79); never renumber, never reuse a retired id.",
+  "source": [
+   "cpg_research_journal/research/rigour-without-infrastructure/design/S9_non-collapse-table.md (Families A-G, NC-01..NC-61)",
+   "design/FOUNDATION_v0.5.md Appendix A (Family H, NC-62..NC-64, chair ruling C6)"
+  ],
+  "generated": "2026-09-04"
+ },
+ "non_collapse_table": [
+  {
+   "id": "NC-01",
+   "pair": "World ≠ Record ≠ Readout ≠ Meaning ≠ Truth ≠ Warrant ≠ Knowledge-Attribution",
+   "family": "A",
+   "meaning_en": "Seven different things sit between \"what happened\" and \"we're entitled to say we know it\" — none of them is any of the others.",
+   "meaning_th": "โลกจริง ≠ บันทึก ≠ การอ่านค่า ≠ ความหมาย ≠ ความจริง ≠ การมีสิทธิ์เชื่อ ≠ การยกให้เป็นความรู้ — เจ็ดขั้นนี้ไม่ใช่สิ่งเดียวกัน",
+   "collapse_failure": "Treating \"we have a record\" as \"we know the truth.\"",
+   "source": "grr-epistemic-foundation SKILL.md L59 (upstream GRR-EF v0.4 CC BY 4.0)",
+   "enforced_by": "claim_card.tier field must name which link in the chain the claim actually reached; never cites \"record exists\" as \"truth established\""
   },
-  "non_collapse_table": [
-    {
-      "id": "NC-01",
-      "pair": "World ≠ Record ≠ Readout ≠ Meaning ≠ Truth ≠ Warrant ≠ Knowledge-Attribution",
-      "family": "A",
-      "meaning_en": "Seven different things sit between \"what happened\" and \"we're entitled to say we know it\" — none of them is any of the others.",
-      "meaning_th": "โลกจริง ≠ บันทึก ≠ การอ่านค่า ≠ ความหมาย ≠ ความจริง ≠ การมีสิทธิ์เชื่อ ≠ การยกให้เป็นความรู้ — เจ็ดขั้นนี้ไม่ใช่สิ่งเดียวกัน",
-      "collapse_failure": "Treating \"we have a record\" as \"we know the truth.\"",
-      "source": "grr-epistemic-foundation SKILL.md L59 (upstream GRR-EF v0.4 CC BY 4.0)",
-      "enforced_by": "claim_card.tier field must name which link in the chain the claim actually reached; never cites \"record exists\" as \"truth established\""
-    },
-    {
-      "id": "NC-02",
-      "pair": "Truth ≠ Warrant ≠ Practical Efficacy ≠ Ethical/Legal Legitimacy",
-      "family": "A",
-      "meaning_en": "Four separate axes: is it true, are we entitled to believe it, does it work, is it allowed. A claim can score high on one and zero on the others.",
-      "meaning_th": "จริง ≠ มีสิทธิ์เชื่อ ≠ ใช้ได้ผลจริง ≠ ถูกกฎหมาย/มีความชอบธรรม — สี่แกนนี้แยกกัน",
-      "collapse_failure": "\"It works, therefore it's true\" or \"it's legal, therefore it's true.\"",
-      "source": "grr-epistemic-foundation SKILL.md L60",
-      "enforced_by": "claim_card.claim_type + independent_check kept as separate fields, never conflated into one"
-    },
-    {
-      "id": "NC-03",
-      "pair": "Legitimacy ≠ Truth (Horizontal ≠ Truth, Vertical ≠ Truth, both)",
-      "family": "A",
-      "meaning_en": "Neither peer-scrutiny/reuse (horizontal) nor journal/institution acceptance (vertical) makes a claim true — both are channel-openers.",
-      "meaning_th": "ความชอบธรรมทั้งแนวราบ (นักวิจัยด้วยกัน) และแนวดิ่ง (สถาบัน) ≠ ความจริง",
-      "collapse_failure": "Treating peer review or citation count as a truth oracle in either direction.",
-      "source": "Standalone Scholar §13; EPIS-KNOWLEDGE-VALIDATION (global CLAUDE.md, horizontal never vertical authority)",
-      "enforced_by": "glosa never proposes external/institutional validation as a legitimacy lever; tier never reads \"peer-reviewed\" as Th_coqc"
-    },
-    {
-      "id": "NC-04",
-      "pair": "legal ≠ epistemic",
-      "family": "A",
-      "meaning_en": "A required permit/license makes an action lawful; it does not raise a claim's tier.",
-      "meaning_th": "ใบอนุญาตทำให้ \"การกระทำ\" ถูกกฎหมาย ไม่ได้ทำให้ \"ข้ออ้าง\" มีน้ำหนักทางความรู้เพิ่มขึ้น",
-      "collapse_failure": "Citing a compliance requirement as if it were evidence for a factual claim.",
-      "source": "EPIS-KNOWLEDGE-VALIDATION (global CLAUDE.md, founder ruling 2026-07-24)",
-      "enforced_by": "claim_card.tier is never raised by a legal/regulatory citation alone; D-LEGAL-NEQ-EPISTEMIC"
-    },
-    {
-      "id": "NC-05",
-      "pair": "Solving ≠ true",
-      "family": "A",
-      "meaning_en": "Producing an output that satisfies a spec/test is not the same as the underlying model being correct.",
-      "meaning_th": "แก้โจทย์ได้ ≠ ทฤษฎีเบื้องหลังเป็นจริง",
-      "collapse_failure": "\"The code passed, so the theory is right.\"",
-      "source": "internal command-center philosophy floor / claim boundary (PRIVATE — re-derived, not copied)",
-      "enforced_by": "verdict enum keeps pass (spec-satisfied) separate from any theory_confirmed claim; pass never auto-promotes tier"
-    },
-    {
-      "id": "NC-06",
-      "pair": "correct output ≠ true theory (Bounded-Judge Law)",
-      "family": "A",
-      "meaning_en": "Every reviewer, gate, or scorer is itself a bounded reader; its verdict is a claim, not a fact, and needs its own tier.",
-      "meaning_th": "ผลลัพธ์ถูก ≠ ทฤษฎีถูก และคำตัดสินของผู้ตรวจเองก็ต้องมี tier ด้วย",
-      "collapse_failure": "A review_report's verdict being read as settled fact rather than a bounded claim.",
-      "source": "internal command-center agent handbook (PRIVATE — re-derived)",
-      "enforced_by": "review_report.verdict_tier field always present — the review itself always carries a tier"
-    },
-    {
-      "id": "NC-07",
-      "pair": "Conformance ≠ Truth",
-      "family": "A",
-      "meaning_en": "Passing a schema/format check is not evidence the content is correct.",
-      "meaning_th": "ผ่านรูปแบบที่กำหนด ≠ เนื้อหาถูกต้อง",
-      "collapse_failure": "A schema validator returning green being read as \"the claim is verified.\"",
-      "source": "grr-epistemic-foundation SKILL.md L60",
-      "enforced_by": "schema validators are documented as format gates only; they never set claim_card.tier"
-    },
-    {
-      "id": "NC-08",
-      "pair": "readout ≠ truth (universal lens)",
-      "family": "A",
-      "meaning_en": "Everything you read — a benchmark, a claim, a tool output, your own prior answer — is a finite retained readout of some process, not the thing itself.",
-      "meaning_th": "ทุกสิ่งที่อ่านคือผลการอ่านค่าที่จำกัด ไม่ใช่ตัวความจริงเอง",
-      "collapse_failure": "Restating any number/claim as settled fact because a trusted source said it.",
-      "source": "EPIS-UNIVERSAL-LENS (global CLAUDE.md); readout_genesis; readout_universe",
-      "enforced_by": "master lens behind every other row; every claim_card.five_questions.seen field names the readout process, not \"the fact\""
-    },
-    {
-      "id": "NC-09",
-      "pair": "M_A[n] ≠ θ(E) for every n",
-      "family": "A",
-      "meaning_en": "An agent's model of an event never equals the event itself, for any observer, at any step — the gap never closes to zero.",
-      "meaning_th": "แบบจำลองที่ตัวแทนสร้างขึ้น ≠ เหตุการณ์จริง เสมอ ไม่มีขั้นไหนที่ทำให้ช่องว่างนี้เป็นศูนย์",
-      "collapse_failure": "Believing that enough iteration eventually reaches ground truth exactly.",
-      "source": "readout_universe logic.md EQ-028 (Th_coqc); readout_genesis",
-      "enforced_by": "Open/Dr tiers exist precisely because this gap is asserted never-zero; a claim never claims \"exact\""
-    },
-    {
-      "id": "NC-10",
-      "pair": "finite_diagnostic ≠ proof",
-      "family": "A",
-      "meaning_en": "An executed numeric/empirical run that passes is evidence, not a formal proof.",
-      "meaning_th": "รันโค้ด/ทดลองแล้วผ่าน = หลักฐาน ไม่ใช่บทพิสูจน์",
-      "collapse_failure": "Citing a passing test suite as a theorem.",
-      "source": "readout_universe logic.md §9.3",
-      "enforced_by": "claim_card.tier enum keeps finite_diagnostic and Th_coqc as distinct values; never both for the same claim"
-    },
-    {
-      "id": "NC-11",
-      "pair": "Th_coqc ≠ finite_diagnostic ≠ Dr ≠ Open ≠ fit_calibrated ≠ definition",
-      "family": "A",
-      "meaning_en": "Six named tiers (machine-checked / executed-and-measured / declared human bridge / not established / fit-to-data / stipulated) never substitute for one another.",
-      "meaning_th": "หกระดับความน่าเชื่อถือห้ามสลับใช้แทนกัน",
-      "collapse_failure": "Promoting a Dr reading to Th_coqc because it \"feels obviously true,\" or downgrading an inconvenient Th_coqc result.",
-      "source": "readout_genesis; readout_universe README.md/philosophy.md",
-      "enforced_by": "claim_card.tier is a closed enum; validator rejects an unlisted value and flags tier changes without a stated reason"
-    },
-    {
-      "id": "NC-12",
-      "pair": "Verified MATH ≠ true physics",
-      "family": "A",
-      "meaning_en": "A machine-checked derivation inside a formal system does not by itself certify that the physical world works that way.",
-      "meaning_th": "คณิตศาสตร์ที่พิสูจน์เครื่องตรวจแล้ว ≠ ฟิสิกส์จริงเป็นเช่นนั้น",
-      "collapse_failure": "Reading a Coq-verified theorem as an empirical claim about reality.",
-      "source": "readout_genesis READOUT_GENESIS_CORE.md L6",
-      "enforced_by": "genre_router_table.json formal_proof genre requires domain-translation bridge named explicitly"
-    },
-    {
-      "id": "NC-13",
-      "pair": "Institutional acceptance/rejection ≠ Truth",
-      "family": "A",
-      "meaning_en": "Neither an editor's \"no\" nor an editor's \"yes\" settles whether the claim is correct.",
-      "meaning_th": "สถาบันตอบรับ/ปฏิเสธ ≠ ข้ออ้างนั้นถูกหรือผิด",
-      "collapse_failure": "Reading a rejection as refutation, or an acceptance as confirmation.",
-      "source": "Standalone Scholar §13",
-      "enforced_by": "rejection must produce a diagnostic note, never an automatic tier downgrade"
-    },
-    {
-      "id": "NC-14",
-      "pair": "Provenance Existence ≠ Attribution ≠ Disclosure (E-A-D)",
-      "family": "B",
-      "meaning_en": "Three separate norms: (E) a provenance path exists at all, (A) the path licenses the credited source, (D) every non-source node on that path stays declared. Satisfying one does not satisfy the others.",
-      "meaning_th": "สามข้อแยกกัน: (E) มีที่มาอยู่จริง (A) ที่มานั้นมีสิทธิ์รับรองข้ออ้างจริง (D) ทุกจุดที่ไม่ใช่แหล่งต้นทางต้องถูกประกาศไว้",
-      "collapse_failure": "\"A path exists, so the attribution is fine\" — existence of some augmentation does not rescue a false attribution to the original source.",
-      "source": "READOUT_CONDITION_2026-08.txt §5.3 (Principles 7-9)",
-      "enforced_by": "citation_card carries existence + claim-match + scope as three separate checked fields, not one boolean"
-    },
-    {
-      "id": "NC-15",
-      "pair": "represented dependency set ≠ actual essential dependency set — Silent Lift",
-      "family": "B",
-      "meaning_en": "What you say a claim depends on can differ from what it actually depends on; the gap is the failure mode named \"silent lift.\"",
-      "meaning_th": "สิ่งที่บอกว่าข้ออ้างพึ่งพา ≠ สิ่งที่พึ่งพาจริง — ช่องว่างนี้คือ silent lift",
-      "collapse_failure": "Omitting an essential background assumption while representing the claim as source-generated.",
-      "source": "READOUT_CONDITION_2026-08.txt §5.4, Def. 6-7",
-      "enforced_by": "claim_card.silent_lift_check field checked against the assumed/contaminated-concept table; D-SILENT-LIFT-GUARD"
-    },
-    {
-      "id": "NC-16",
-      "pair": "doxastic warrant ≠ assertoric disclosure",
-      "family": "B",
-      "meaning_en": "Whether you're entitled to believe X and whether your stated claim accurately represents the basis for X are related but not identical obligations.",
-      "meaning_th": "มีสิทธิ์เชื่อ กับ คำแถลงสะท้อนฐานที่แท้จริง เป็นคนละภาระ แม้เกี่ยวข้องกัน",
-      "collapse_failure": "Asserting \"the test showed X\" when the result actually depended on an undeclared model/prior.",
-      "source": "READOUT_CONDITION_2026-08.txt §9.4",
-      "enforced_by": "claim_card separates tested (warrant) from the disclaimer block (assertoric statement to the reader)"
-    },
-    {
-      "id": "NC-17",
-      "pair": "Mechanical validity ≠ Semantic validity",
-      "family": "B",
-      "meaning_en": "A test/proof kernel passing tells you the mechanism ran correctly, not that the claim's meaning is right.",
-      "meaning_th": "เครื่องตรวจผ่าน ≠ ความหมายของข้ออ้างถูกต้อง",
-      "collapse_failure": "Reading a green CI badge as confirmation the claim is meaningful/true.",
-      "source": "Standalone Scholar eq. 28 (§6.2 DVP)",
-      "enforced_by": "independence_ladder.json I4 row explicitly marked \"not by itself\" sufficient for semantic K2"
-    },
-    {
-      "id": "NC-18",
-      "pair": "Source existence ≠ Claim support",
-      "family": "B",
-      "meaning_en": "The cited document existing and being retrievable does not mean it supports the specific claim attached to it.",
-      "meaning_th": "เอกสารอ้างอิงมีอยู่จริง ≠ เอกสารนั้นสนับสนุนข้ออ้างที่อ้างไว้",
-      "collapse_failure": "Citing a real, retrievable source that does not actually say what the claim says it says.",
-      "source": "Standalone Scholar eq. 29; skillme metadata_verification ≠ scope_verification",
-      "enforced_by": "citation_card claim_match field, checked independently of exists/fetched fields"
-    },
-    {
-      "id": "NC-19",
-      "pair": "metadata_verification ≠ scope_verification",
-      "family": "B",
-      "meaning_en": "Confirming a citation's title/author/DOI is real is a different check from confirming it actually covers the scope claimed.",
-      "meaning_th": "ยืนยัน metadata (ชื่อ/ผู้แต่ง/DOI) ≠ ยืนยันว่าเนื้อหาครอบคลุมขอบเขตที่อ้าง",
-      "collapse_failure": "Passing a DOI-lookup and treating that as \"citation verified\" in full.",
-      "source": "skillme SKILL.md L96",
-      "enforced_by": "citation checker runs both checks as separate pass/fail fields"
-    },
-    {
-      "id": "NC-20",
-      "pair": "reliable route ≠ crediting a specific source with the discrimination",
-      "family": "B",
-      "meaning_en": "A belief can be warranted because the underlying process is reliable, even while the stated attribution (\"the test showed it\") is false — that falsity still matters when it's load-bearing for the assertion.",
-      "meaning_th": "กระบวนการเชื่อถือได้จริง ≠ การอ้างว่าแหล่งอ้างอิงที่ระบุเป็นผู้ให้คำตอบนั้น",
-      "collapse_failure": "Defending a false citation by pointing at the correctness of the final answer.",
-      "source": "READOUT_CONDITION_2026-08.txt §8.2/§9.3",
-      "enforced_by": "SCRAM condition on fabricated/misattributed citation fires regardless of whether the underlying answer was correct"
-    },
-    {
-      "id": "NC-21",
-      "pair": "ordinary training-derived background ≠ current-case-specific additional access route",
-      "family": "B",
-      "meaning_en": "A model's general training shapes output as background; a retained record specific to the current case reaching the model through an undeclared channel is a different, stronger kind of dependency.",
-      "meaning_th": "ความรู้พื้นฐานจากการฝึกโมเดล ≠ ข้อมูลเฉพาะเคสปัจจุบันที่หลุดเข้ามาโดยไม่ประกาศ",
-      "collapse_failure": "Calling all AI output \"the AI's answer\" and erasing which dependency type actually produced the specificity.",
-      "source": "READOUT_CONDITION_2026-08.txt §8.2 (Prop. 4)",
-      "enforced_by": "claim_card.five_questions.ai_filled.retained_record_route field records the route type explicitly"
-    },
-    {
-      "id": "NC-22",
-      "pair": "access model K̃ ≠ literally reading off K*",
-      "family": "B",
-      "meaning_en": "A verdict about current evidence is normally mediated by an access model; that mediation is itself fallible and does not exempt meta-claims from the same condition.",
-      "meaning_th": "ข้อสรุปเกี่ยวกับหลักฐานปัจจุบัน มักถูกกรองผ่านแบบจำลองการเข้าถึงเสมอ",
-      "collapse_failure": "Treating a reviewer's/tool's meta-verdict as exempt from the same provenance discipline applied to object-level claims.",
-      "source": "READOUT_CONDITION_2026-08.txt §8.2",
-      "enforced_by": "Bounded-Judge Law (NC-06) applied recursively — a review_report is itself audited the same way"
-    },
-    {
-      "id": "NC-23",
-      "pair": "P_A ≠ H_A — appearance ≠ epistemic horizon",
-      "family": "B",
-      "meaning_en": "What appears to an agent is not the same as the space within which that appearance can be assessed, doubted, or revised.",
-      "meaning_th": "สิ่งที่ปรากฏต่อผู้สังเกต ≠ ขอบเขตที่ใช้ตัดสิน/สงสัย/แก้ไขสิ่งที่ปรากฏนั้น",
-      "collapse_failure": "Treating an appearance as self-certifying because no revision-space was named.",
-      "source": "readout_universe philosophy.md §5.2d, logic.md",
-      "enforced_by": "claim_card.standpoint names the horizon the claim is assessed from, kept separate from five_questions.seen"
-    },
-    {
-      "id": "NC-24",
-      "pair": "forced ≠ borrowed (≠ Open)",
-      "family": "B",
-      "meaning_en": "For every term/result: what is forced (necessary, has a runnable witness), what is borrowed (an imported anchor not derived here), and what is Open (rejected rather than faked) are three different statuses.",
-      "meaning_th": "บังคับได้จริง (มีพยานรันได้) ≠ ยืมมา (นำเข้าโดยไม่ได้อนุพันธ์) ≠ ยังเปิดอยู่",
-      "collapse_failure": "The \"Buckingham trap\": textbook name → stuff parameters → declare derived, silently converting borrowed into forced.",
-      "source": "readout_genesis forced/borrowed/Open ledger",
-      "enforced_by": "claim_card.ledger has forced/borrowed/open as three distinct arrays, required for every entry"
-    },
-    {
-      "id": "NC-25",
-      "pair": "0 ≠ ⊥",
-      "family": "B",
-      "meaning_en": "\"No retained difference found\" (0) and \"cannot be determined\" (⊥, undecidable/not-checked) are different states — silently merging them hides which one actually happened.",
-      "meaning_th": "ไม่ต่างกันจริง (0) ≠ ตัดสินไม่ได้ (⊥) — สองสถานะนี้ต่างกัน อย่ายุบรวม",
-      "collapse_failure": "Reporting \"no difference\" when the honest state is \"we could not tell.\"",
-      "source": "skillme SKILLME-A6; information-discrete-math",
-      "enforced_by": "claim_card.five_questions.separates.zero_vs_bottom uses a three-value state, never collapses \"not different\" into \"not checked\""
-    },
-    {
-      "id": "NC-26",
-      "pair": "\"not checked\" ≠ \"checked, nothing found\" (A2)",
-      "family": "B",
-      "meaning_en": "Silence about a check having run at all is different from a check running and finding nothing.",
-      "meaning_th": "ยังไม่ได้ตรวจ ≠ ตรวจแล้วไม่พบอะไร",
-      "collapse_failure": "A tool/report printing \"OK, all clear\" when no baseline check ever ran.",
-      "source": "doc-ecosystem SKILL.md L60 (A2)",
-      "enforced_by": "provenance_dag.status and silent_lift_check.status fields (not_run | run) — every check states its own execution status"
-    },
-    {
-      "id": "NC-27",
-      "pair": "LOCAL_EVIDENCE_NOT_FOUND ≠ NO_LOCAL_EVIDENCE_EXISTS",
-      "family": "B",
-      "meaning_en": "Not finding local evidence in a search is not the same as local evidence not existing.",
-      "meaning_th": "หาไม่เจอ (ในรอบค้นนี้) ≠ ไม่มีอยู่จริง",
-      "collapse_failure": "Concluding \"there is no local counter-example\" from a search that simply didn't surface one.",
-      "source": "skillme SKILLME.md search-log states",
-      "enforced_by": "search_log.yaml uses this exact two-value distinction as a required field for every evidence search"
-    },
-    {
-      "id": "NC-28",
-      "pair": "maker ≠ checker ≠ approver",
-      "family": "C",
-      "meaning_en": "Producing, checking, and approving an artifact are three distinct roles requiring both distinct identity and a distinct lens (fault-finding vs completing).",
-      "meaning_th": "ผู้ทำ ≠ ผู้ตรวจ ≠ ผู้อนุมัติ — ต้องต่างทั้งตัวบุคคลและมุมมอง",
-      "collapse_failure": "One person filling two+ roles on the same artifact and calling it \"reviewed.\"",
-      "source": "maker-checker-gate SKILL.md L37 (MIMCG, Coq MIMCG_admissibility.v)",
-      "enforced_by": "claim_card.independent_check names maker_id, checker_id, approver_id as distinct fields, mechanically compared"
-    },
-    {
-      "id": "NC-29",
-      "pair": "AI generator ≠ AI reviewer of the same commit",
-      "family": "C",
-      "meaning_en": "An AI that produced a diff must not be the sole AI reviewer of that same diff.",
-      "meaning_th": "AI ที่สร้างงาน ≠ AI ที่ตรวจงานชิ้นเดียวกัน (ต้องไม่ใช่ตัวเดียวกัน)",
-      "collapse_failure": "Treating a self-review pass by the same model/session as an independent L4 check.",
-      "source": "maker-checker-gate SKILL.md L59 (L4 row)",
-      "enforced_by": "independence_ladder.json I0/I1 explicitly excluded from any checker role"
-    },
-    {
-      "id": "NC-30",
-      "pair": "same-model self-approval ≠ review (MC-02)",
-      "family": "C",
-      "meaning_en": "A model approving its own output is not a check — the bias is correlated, not independent.",
-      "meaning_th": "โมเดลอนุมัติผลงานตัวเอง ≠ การตรวจสอบ (bias สัมพันธ์กัน ไม่ใช่อิสระ)",
-      "collapse_failure": "Counting three same-model self-checks as three independent passes.",
-      "source": "maker-checker-gate SKILL.md (MC-02)",
-      "enforced_by": "I0/I1 never satisfy any minimum-check requirement, at any consequence level"
-    },
-    {
-      "id": "NC-31",
-      "pair": "ManyModels ⇏ Independence",
-      "family": "C",
-      "meaning_en": "Calling many AI models is not the same as achieving independence — if they share training data, retrieval corpora, or operator framing, agreement is a weak signal.",
-      "meaning_th": "เรียกโมเดลหลายตัว ⇏ ได้ความเป็นอิสระ",
-      "collapse_failure": "Treating 5-model agreement as equivalent to one genuinely independent human check.",
-      "source": "Standalone Scholar eq. 26 (§6.1)",
-      "enforced_by": "independence_ladder.json's whole I0-I5 ladder exists specifically to stop this collapse; route_dependence_matrix.yaml is the mechanical check"
-    },
-    {
-      "id": "NC-32",
-      "pair": "DVP ≠ K2",
-      "family": "C",
-      "meaning_en": "Running a full Decorrelated Verification Protocol — even done perfectly — never by itself creates the socially-stress-tested state K2; only substantive external human friction does.",
-      "meaning_th": "ทำ DVP ครบสมบูรณ์แค่ไหนก็ตาม ≠ ได้สถานะ K2",
-      "collapse_failure": "Publicly calling a cross-vendor-AI-verified claim \"peer reviewed\" or \"K2.\"",
-      "source": "Standalone Scholar eq. 20 (§5)",
-      "enforced_by": "independence_ladder.json I3 row: max ceiling explicitly stops short of K2; D-DVP-NOT-K2"
-    },
-    {
-      "id": "NC-33",
-      "pair": "K1 ≠ Certification",
-      "family": "C",
-      "meaning_en": "A timestamped, citable, public provisional asset is not certified, reviewed, or peer-endorsed — it is explicitly labeled provisional.",
-      "meaning_th": "K1 (สาธารณะ มีเวลาปะทับ อ้างอิงได้) ≠ ได้รับการรับรอง/ตรวจสอบแล้ว",
-      "collapse_failure": "Reading a preprint/K1 as if it carried review status.",
-      "source": "ai-native-scholarship-skill-v1.0.0 SKILL.md §2, §5",
-      "enforced_by": "every K1 artifact carries \"explicitly not peer reviewed\" in its own metadata; D-K-STATE"
-    },
-    {
-      "id": "NC-34",
-      "pair": "No independent check ⇒ No K2 claim / No independent check ⇒ No release (MC-05)",
-      "family": "C",
-      "meaning_en": "Two related but distinct gates: MIMCG's release gate (nothing ships without an independent checker) and Standalone Scholar's knowledge-state gate (nothing becomes K2 without external human friction).",
-      "meaning_th": "สองประตูที่คล้ายกันแต่คนละเรื่อง: (1) ไม่มีคนตรวจอิสระ = ห้าม release (2) ไม่มีแรงเสียดทานมนุษย์ภายนอก = ไม่ได้ K2",
-      "collapse_failure": "Satisfying one gate and assuming the other is automatically satisfied.",
-      "source": "maker-checker-gate MC-05",
-      "enforced_by": "release-gate check kept as a separate column from the K-state ceiling check"
-    },
-    {
-      "id": "NC-35",
-      "pair": "Observation ≠ Claim ≠ Inference ≠ Hypothesis ≠ Decision ≠ Valid-checkpoint ≠ Success ≠ Skill-plan ≠ Installed-skill ≠ Design-doc ≠ Working-product",
-      "family": "C",
-      "meaning_en": "A long chain of adjacent-looking states that skillme names explicitly so none silently substitutes for the next.",
-      "meaning_th": "ห่วงโซ่สถานะที่ดูคล้ายกันแต่ไม่ใช่สิ่งเดียวกัน",
-      "collapse_failure": "Presenting a design doc as a working product, or a passed checkpoint as final success.",
-      "source": "skillme SKILLME.md ~L3865-3866",
-      "enforced_by": "claim_card.status release state machine keeps each of these as a distinct named state, no auto-advance"
-    },
-    {
-      "id": "NC-36",
-      "pair": "Reproduction ≠ Replication",
-      "family": "C",
-      "meaning_en": "Re-running the same pipeline on the same data (reproduction) is a weaker claim than an independent team reproducing the finding on new data/methods (replication).",
-      "meaning_th": "รันซ้ำโค้ด/ข้อมูลชุดเดิม (reproduction) ≠ ทีมอิสระยืนยันผลด้วยข้อมูล/วิธีใหม่ (replication)",
-      "collapse_failure": "Calling a successful re-run \"replicated.\"",
-      "source": "grr-epistemic-foundation SKILL.md L60",
-      "enforced_by": "claim_card.tested distinguishes reproduction-class checks (I4 mechanical) from replication-class checks (I5 external human, new data)"
-    },
-    {
-      "id": "NC-37",
-      "pair": "Evidence ≠ Evidence Relation",
-      "family": "C",
-      "meaning_en": "A piece of evidence is an object; whether it supports, challenges, is neutral, or is unresolved relative to a specific claim is a separate, typed relation.",
-      "meaning_th": "หลักฐาน (วัตถุ) ≠ ความสัมพันธ์ของหลักฐานต่อข้ออ้างนั้น",
-      "collapse_failure": "Listing sources as \"evidence for X\" without stating the bearing relation explicitly.",
-      "source": "grr-epistemic-foundation SKILL.md L79",
-      "enforced_by": "claim_card.tested.evidence_relations[].bearing enum required on every entry"
-    },
-    {
-      "id": "NC-38",
-      "pair": "Credit ≠ EpistemicValue",
-      "family": "D",
-      "meaning_en": "Credit is a receipt that a contribution survived some exposure route, not a unit of truth.",
-      "meaning_th": "เครดิต = ใบเสร็จว่าผ่านช่องทางบางอย่างมา ≠ หน่วยของความจริง",
-      "collapse_failure": "Optimizing for citation/attention count as if it were optimizing for correctness.",
-      "source": "Standalone Scholar eq. 1 (Introduction)",
-      "enforced_by": "glosa never proposes citation/credit metrics as a legitimacy lever"
-    },
-    {
-      "id": "NC-39",
-      "pair": "Attention ≠ Credit",
-      "family": "D",
-      "meaning_en": "Public attention only becomes scholarly credit through an actual relevant academic conversion (reuse, reply, review).",
-      "meaning_th": "ความสนใจสาธารณะ ≠ เครดิตทางวิชาการ",
-      "collapse_failure": "Reading view/download counts as scholarly standing.",
-      "source": "Standalone Scholar §18.4",
-      "enforced_by": "K1 metadata never lists attention metrics as a promotion criterion"
-    },
-    {
-      "id": "NC-40",
-      "pair": "Friction ≠ Fellowship",
-      "family": "D",
-      "meaning_en": "Friction corrects claims/mechanisms/boundaries/overclaim; fellowship creates continuity, memory, and trust. Both are needed; neither substitutes for the other.",
-      "meaning_th": "แรงเสียดทาน (แก้ไขข้ออ้าง) ≠ ความเป็นเพื่อนร่วมวิชาการ",
-      "collapse_failure": "Treating a warm, repeat correspondent relationship as if it were independent scrutiny.",
-      "source": "Standalone Scholar §7",
-      "enforced_by": "every K1→K2 conversion attempt must name at least one friction route outside the repeat-fellowship circle"
-    },
-    {
-      "id": "NC-41",
-      "pair": "Friendship ≠ IndependentEvidence; Correspondence ≠ PeerReview; IntellectualAffinity ≠ Truth",
-      "family": "D",
-      "meaning_en": "Three specific instances of the friction/fellowship split, each targeting a different way warmth gets mistaken for validation.",
-      "meaning_th": "เพื่อน ≠ หลักฐานอิสระ / การติดต่อกัน ≠ peer review / ความถูกใจทางความคิด ≠ ความจริง",
-      "collapse_failure": "Citing \"my collaborator agrees\" as an independent check.",
-      "source": "Standalone Scholar eq. 32-33",
-      "enforced_by": "independence_ladder.json excludes fellowship-only interlocutors from any I2+ classification unless the exchange is a documented adversarial DVP route"
-    },
-    {
-      "id": "NC-42",
-      "pair": "Production-supercritical ≠ Credit-supercritical",
-      "family": "D",
-      "meaning_en": "Being highly productive (many K1 assets/month) is a different regime than being credit-supercritical (assets are actually converting to K2/K3).",
-      "meaning_th": "ผลิตงานได้เร็ว (K1 เยอะ) ≠ เครดิตวิชาการโตเร็ว (แปลงเป็น K2/K3 จริง)",
-      "collapse_failure": "Reading high K1 output volume as evidence the programme is succeeding.",
-      "source": "Standalone Scholar §9.1",
-      "enforced_by": "publish gate tracks a conversion metric separately from a production metric"
-    },
-    {
-      "id": "NC-43",
-      "pair": "Latent programme coherence ≠ Legible/effective coherence",
-      "family": "D",
-      "meaning_en": "A programme can be coherent to its author while being invisible to an outsider; only the legible fraction converts.",
-      "meaning_th": "ความสอดคล้องที่ผู้เขียนเห็น (latent) ≠ ความสอดคล้องที่คนนอกมองเห็นได้ (legible)",
-      "collapse_failure": "Assuming internal logical consistency alone will be recognized externally without a navigable index.",
-      "source": "Standalone Scholar §8, eq. 34-35",
-      "enforced_by": "one canonical programme index / \"one problem = one project\" convention exists specifically to raise legibility"
-    },
-    {
-      "id": "NC-44",
-      "pair": "ActivationAction ≠ CreditEvent",
-      "family": "D",
-      "meaning_en": "Reactivating an existing (back-catalog) asset is an action; it produces a credit event only when it actually generates renewed independent encounter.",
-      "meaning_th": "การนำผลงานเก่ากลับมาเปิดใหม่ (activation) ≠ เหตุการณ์ที่ได้เครดิตจริง",
-      "collapse_failure": "Counting a re-post/re-share of old K1 stock as if it were new scholarly credit.",
-      "source": "Standalone Scholar §9.3, eq. 44",
-      "enforced_by": "K-state ledger records credit events only on documented external encounter, never on activation-count alone"
-    },
-    {
-      "id": "NC-45",
-      "pair": "PositionalAccess ≠ PopulationAuthority; CommunityTrust ≠ Representativeness",
-      "family": "D",
-      "meaning_en": "Having access/standing in a community does not make you an authority over the whole population it belongs to; being trusted by a community does not make your account representative of it.",
-      "meaning_th": "มีที่ยืนในชุมชน ≠ มีอำนาจเหนือประชากรทั้งหมด / ชุมชนไว้ใจคุณ ≠ คุณเป็นตัวแทนของชุมชนนั้น",
-      "collapse_failure": "A standpoint-based claim overreaching into a population-level generalization.",
-      "source": "Standalone Scholar eq. 11-12 (§3.3)",
-      "enforced_by": "claim_card.standpoint caps claim scope; D-STANDPOINT fires whenever five_questions.seen is lived/positional"
-    },
-    {
-      "id": "NC-46",
-      "pair": "Systematic Review (PRISMA-conformant) ≠ Rapid/Scoping/Targeted evidence challenge",
-      "family": "E",
-      "meaning_en": "A full systematic review has specific reporting/methodology obligations (PRISMA 2020, Cochrane ch.4); anything less must be labeled by its actual, weaker mode.",
-      "meaning_th": "Systematic Review เต็มรูปแบบ ≠ การค้นแบบเร่งด่วน/สำรวจ/เจาะจง",
-      "collapse_failure": "Calling a same-afternoon literature scan a \"systematic review.\"",
-      "source": "skillme SKILLME.md ~L1440 (PRISMA/Cochrane floor)",
-      "enforced_by": "search_log.yaml requires an explicit review_mode field: SYSTEMATIC_REVIEW / RAPID_EVIDENCE_CHALLENGE / SCOPING_SEARCH / TARGETED_SEARCH / FIELD_OBSERVATION_LOG / INTERNAL_DATA_AUDIT; D-LIT-MODE"
-    },
-    {
-      "id": "NC-47",
-      "pair": "AI output ≠ Evidence",
-      "family": "E",
-      "meaning_en": "AI-generated text/analysis is not itself treated as evidence for a factual/mathematical claim — it can scaffold, but the citation ledger requires an original, verifiable source.",
-      "meaning_th": "ผลลัพธ์จาก AI ≠ หลักฐาน (ใช้ช่วยร่างได้ แต่การอ้างอิงต้องมีแหล่งต้นทางที่ตรวจสอบได้จริง)",
-      "collapse_failure": "Citing an AI's summary of a paper as if it were the paper.",
-      "source": "zero-readout-certifies README (AI-assistance disclosure section)",
-      "enforced_by": "Integrity Firewall: AI candidate → OriginalSource → ClaimMatch → VerifiedCitation — AI output never enters the ledger directly"
-    },
-    {
-      "id": "NC-48",
-      "pair": "Global/Anglophone search route ≠ Local/Thai-language route",
-      "family": "E",
-      "meaning_en": "AI recommendation and bibliographic-database routes can share the same geographic/linguistic blind spots; a local-language route can surface records the global route structurally cannot see.",
-      "meaning_th": "เส้นทางค้นแบบ global/อังกฤษ ≠ เส้นทางค้นแบบไทย/ท้องถิ่น (บอดจุดคนละแบบ)",
-      "collapse_failure": "Treating an English-language literature search as globally exhaustive.",
-      "source": "Standalone Scholar §15.1 (Geographic Distribution Audit)",
-      "enforced_by": "search_log.yaml requires a Thai/local-track row for any socially/religiously/policy-relevant claim; diversity_audit language dimension"
-    },
-    {
-      "id": "NC-49",
-      "pair": "Practice experience ≠ Population evidence",
-      "family": "F",
-      "meaning_en": "High-resolution first-hand practice access is real data, but it does not license a population-level generalization by itself.",
-      "meaning_th": "ประสบการณ์หน้างานที่ละเอียดจริง ≠ หลักฐานระดับประชากร",
-      "collapse_failure": "Generalizing \"in my practice, X always happens\" to \"X is true in general.\"",
-      "source": "Standalone Scholar eq. 86-87 (§19)",
-      "enforced_by": "claim_card.scope: claim_scope ≤ evidence_scope check; D-STANDPOINT; D-SELF-EXPERIENCE-NOT-GENERAL-EVIDENCE"
-    },
-    {
-      "id": "NC-50",
-      "pair": "Intervention creator ≠ Sole evaluator",
-      "family": "F",
-      "meaning_en": "The person who designed/ran an intervention should not be the only evaluator of whether it worked.",
-      "meaning_th": "ผู้ออกแบบ/ดำเนินการแทรกแซง ≠ ผู้ประเมินผลเพียงคนเดียว",
-      "collapse_failure": "An author self-certifying their own social/clinical intervention's success.",
-      "source": "Standalone Scholar §19",
-      "enforced_by": "gate table requires a distinct approver/checker for any intervention-outcome claim"
-    },
-    {
-      "id": "NC-51",
-      "pair": "Author positional counter-readout ≠ External K2",
-      "family": "F",
-      "meaning_en": "The author running their own Geographic-Distribution-Audit-style self-correction improves route diversity but does not itself create external social validation.",
-      "meaning_th": "ผู้เขียนตรวจสอบมุมมองตัวเองเพิ่ม (self-correction) ≠ ได้รับการยืนยันจากภายนอกจริง (K2)",
-      "collapse_failure": "Counting a self-authored \"devil's advocate\" pass as equivalent to an outside reader.",
-      "source": "ai-native-scholarship-skill-v1.0.0 SKILL.md §14 (GDA)",
-      "enforced_by": "independence_ladder.json — self-authored positional correction stays at I0/I1, never counted toward I3+"
-    },
-    {
-      "id": "NC-52",
-      "pair": "Thai track ≠ Public relations",
-      "family": "F",
-      "meaning_en": "The local/Thai conversion track exists to surface situated counter-evidence and institutional differences, not to perform visibility.",
-      "meaning_th": "สาย Thai track มีไว้เพื่อหาหลักฐานแย้ง/ความต่างเชิงสถาบันจริง ≠ ทำเพื่อภาพลักษณ์",
-      "collapse_failure": "Treating Thai-language outreach as a PR exercise rather than a genuine verification route.",
-      "source": "ai-native-scholarship-skill-v1.0.0 SKILL.md §14",
-      "enforced_by": "Geographic Distribution Audit is wired into the DVP route requirement, not the publicity plan"
-    },
-    {
-      "id": "NC-53",
-      "pair": "No human available ≠ Research stop",
-      "family": "F",
-      "meaning_en": "Absence of an ambient human community does not license stopping verification — it licenses building synthetic (DVP) formation infrastructure instead, while never mistaking that for the human step.",
-      "meaning_th": "ไม่มีมนุษย์ตรวจให้ ≠ ต้องหยุดวิจัย",
-      "collapse_failure": "Publishing an unverified claim because \"no reviewer was available,\" or refusing to publish anything provisional at all.",
-      "source": "ai-native-scholarship-skill-v1.0.0 SKILL.md §6",
-      "enforced_by": "independence_ladder.json gives a concrete non-stop path (I0→I3) while keeping I5 as the only K2 route"
-    },
-    {
-      "id": "NC-54",
-      "pair": "Standpoint disclosure ≠ Domain-credentialed authority",
-      "family": "F",
-      "meaning_en": "Declaring \"I write as a practitioner/citizen\" is not a claim to specialist expert authority in the domain discussed.",
-      "meaning_th": "ประกาศว่าพูดในฐานะผู้ปฏิบัติ/พลเมือง ≠ อ้างว่าเป็นผู้เชี่ยวชาญเฉพาะทาง",
-      "collapse_failure": "A lived-experience claim being read (by the author or a reader) as equivalent to domain-expert testimony.",
-      "source": "academic-presentation skill (standpoint-first); memory user-yaoharee-standpoint.md",
-      "enforced_by": "D-STANDPOINT disclaimer, mandatory on every practitioner/citizen-authored claim card"
-    },
-    {
-      "id": "NC-55",
-      "pair": "Discovery ≠ Justification",
-      "family": "G",
-      "meaning_en": "How an idea was arrived at (including AI-assisted brainstorming) is a different question from what justifies believing it.",
-      "meaning_th": "ที่มาของแนวคิด (รวมถึงที่ AI ช่วยคิด) ≠ เหตุผลที่ทำให้เชื่อได้ว่าถูก",
-      "collapse_failure": "Treating \"AI suggested this and it sounds right\" as justification.",
-      "source": "ai-native-scholarship-skill-v1.0.0 SKILL.md §2",
-      "enforced_by": "claim_card.five_questions.ai_filled is documented separately from tested — discovery route never substitutes for a warrant route"
-    },
-    {
-      "id": "NC-56",
-      "pair": "AI exploration ≠ Human commitment",
-      "family": "G",
-      "meaning_en": "AI can explore many hypotheses cheaply; committing to defend one publicly is a human act that AI exploration cannot discharge.",
-      "meaning_th": "AI สำรวจแนวคิดได้เร็วและถูก ≠ การยืนยันรับผิดชอบต่อสาธารณะเป็นภาระของมนุษย์",
-      "collapse_failure": "Publishing an AI-explored hypothesis as a committed claim without the Human Mastery Gate.",
-      "source": "ai-native-scholarship-skill-v1.0.0 SKILL.md §2, §8",
-      "enforced_by": "Human Mastery Gate required before any L3+ public commitment"
-    },
-    {
-      "id": "NC-57",
-      "pair": "Claim scope ≤ Evidence scope",
-      "family": "G",
-      "meaning_en": "The public scope of a claim must never exceed what the evidence actually supports — this is an inequality discipline, not a strict non-equality, but the direction is never allowed to invert.",
-      "meaning_th": "ขอบเขตที่กล่าวอ้างต้องไม่กว้างกว่าขอบเขตที่หลักฐานรองรับจริง",
-      "collapse_failure": "Generalizing a narrow, well-supported finding into a broader public claim.",
-      "source": "ai-native-scholarship-skill-v1.0.0 SKILL.md §2; Standalone Scholar eq. 63",
-      "enforced_by": "claim_card.scope (claim_scope, evidence_scope) mechanically checked pair"
-    },
-    {
-      "id": "NC-58",
-      "pair": "AIContribution ≠ EpistemicResponsibility",
-      "family": "G",
-      "meaning_en": "What AI did in producing an artifact is a separate fact from who is answerable for its epistemic correctness — responsibility never transfers to the tool.",
-      "meaning_th": "สิ่งที่ AI ทำ ≠ ผู้รับผิดชอบทางความรู้ (ความรับผิดชอบไม่โอนไปที่เครื่องมือ)",
-      "collapse_failure": "Blaming \"the AI hallucinated\" as if that discharges the human author's responsibility.",
-      "source": "ai-native-scholarship-skill-v1.0.0 SKILL.md §16",
-      "enforced_by": "AI-fill ledger is disclosure-only; claim_card.human_owner always names a human as responsible party"
-    },
-    {
-      "id": "NC-59",
-      "pair": "AI-candidate output ≠ Verified citation (Integrity Firewall)",
-      "family": "G",
-      "meaning_en": "An AI proposing a citation is a candidate, not a citation — it must pass original-source lookup and claim-match before entering the ledger.",
-      "meaning_th": "AI เสนอชื่อเอกสารอ้างอิง ≠ การอ้างอิงที่ยืนยันแล้ว",
-      "collapse_failure": "An AI-hallucinated citation (title, DOI, or claim) entering a paper's reference list unchecked.",
-      "source": "Standalone Scholar §18.1 (eq. 82)",
-      "enforced_by": "citation checker pipeline; SCRAM condition on fabricated citation"
-    },
-    {
-      "id": "NC-60",
-      "pair": "Founder = ideas/direction ≠ AI = assistant",
-      "family": "G",
-      "meaning_en": "Authorship of direction and ideas sits with the founder; the AI's role is executional/assistive — this line is never blurred in either direction (AI never claims authorship; founder's role is never reduced to \"prompter\").",
-      "meaning_th": "ผู้กำหนดแนวคิด/ทิศทาง = founder ≠ AI = ผู้ช่วย",
-      "collapse_failure": "AI self-promo links in a public artifact, or crediting AI as co-author on a scholarly claim.",
-      "source": "memory feedback-authorship-attribution.md (2026-07-10)",
-      "enforced_by": "CITATION.cff / paper front matter: founder sole author; AI contribution logged in commit trailers and AI-fill ledger only; D-AUTHORSHIP"
-    },
-    {
-      "id": "NC-61",
-      "pair": "questions defended without AI ≠ questions merely produced with AI",
-      "family": "G",
-      "meaning_en": "The Human Mastery Gate counts only what the author can defend unaided — producing a polished AI-assisted answer to a question is not the same as being able to defend it live.",
-      "meaning_th": "จำนวนคำถามที่ตอบได้เองไม่พึ่ง AI ≠ จำนวนคำถามที่ AI ช่วยตอบได้",
-      "collapse_failure": "Presenting AI-assisted answer quality as evidence of the author's own mastery.",
-      "source": "Standalone Scholar §19, eq. 85",
-      "enforced_by": "Human Mastery Gate protocol — a live, unaided defense checklist, separate from the AI-fill ledger"
-    },
-    {
-      "id": "NC-62",
-      "pair": "Stakeholder ≠ Agency",
-      "family": "H",
-      "meaning_en": "Being affected by a decision is not the same as holding power over it (skillme's stakeholder-agency map, re-derived independently, pattern only).",
-      "meaning_th": "ผู้มีส่วนได้ส่วนเสีย ≠ ผู้มีอำนาจตัดสินใจ",
-      "collapse_failure": "Treating everyone affected by a decision as if they equally control it.",
-      "source": "skillme stakeholder-agency map (pattern only, re-derived)",
-      "enforced_by": "claim_card.five_questions.assumed[] review; the Project Advisor's stakeholder framing"
-    },
-    {
-      "id": "NC-63",
-      "pair": "Representationality ≠ Selectivity",
-      "family": "H",
-      "meaning_en": "That a source is representative of a population is a different property from that a source was selected by some (possibly biased) process; conflating them silently launders a selection artifact into a population claim.",
-      "meaning_th": "การเป็นตัวแทนของประชากร ≠ การถูกเลือกมาโดยกระบวนการใดกระบวนการหนึ่ง (ที่อาจมีอคติ)",
-      "collapse_failure": "Presenting a convenience/selected sample's finding as if it generalizes to the population it was drawn near.",
-      "source": "chair ruling C6, Dr-synthesis",
-      "enforced_by": "claim_card.scope.generalization_claimed"
-    },
-    {
-      "id": "NC-64",
-      "pair": "SelfExperience ≠ GeneralEvidence",
-      "family": "H",
-      "meaning_en": "A first-person account licenses a claim about that person's own experience, never automatically a claim about a population.",
-      "meaning_th": "ประสบการณ์ส่วนบุคคลให้สิทธิ์กล่าวอ้างเกี่ยวกับประสบการณ์ของตนเอง ไม่ใช่กล่าวอ้างเกี่ยวกับประชากรโดยอัตโนมัติ",
-      "collapse_failure": "Treating a single practitioner's lived account as if it were population-level evidence.",
-      "source": "chair ruling C6, Dr-synthesis",
-      "enforced_by": "claim_card.standpoint; preserved-experience field per genre; D-SELF-EXPERIENCE-NOT-GENERAL-EVIDENCE"
-    },
-    {
-      "id": "NC-77",
-      "pair": "Retention ≠ Direction",
-      "family": "J",
-      "meaning_en": "Persistence/retention of a claim, habit, or chosen hypothesis across two or more sessions is never by itself evidence that it is expansion rather than tunnel; only a linked independent-check artifact may set the sign. Default: retained_direction: unknown.",
-      "meaning_th": "การคงอยู่/ถูกเลือกซ้ำของข้ออ้าง นิสัย หรือสมมติฐานที่เลือกไว้ ข้ามสองเซสชันขึ้นไป ไม่ใช่หลักฐานในตัวมันเองว่าเป็นการขยาย (expansion) ไม่ใช่ช่องแคบ (tunnel) — ทิศทางบอกได้เฉพาะเมื่อมี artifact ตรวจสอบอิสระเชื่อมโยงอยู่เท่านั้น ค่าตั้งต้นคือ unknown",
-      "collapse_failure": "Reading a hypothesis re-selected/reaffirmed across sessions as if that persistence itself demonstrated durable epistemic expansion, when it may equally be a supercritical tunnel (confirmation, candidate forgetting, semantic fixation).",
-      "source": "design/SESSION_ARCH_v0.4_SPEC.md §4 (schema.retention-direction-field, SA-2); sources/notes/EPISTEMIC_FUSION_v7.1.txt (F9, F11: 'Retention is direction-neutral', 'chi_recip[s,L] therefore cannot be read as warrant, truth, or human benefit'); sources/notes/EPISTEMIC_FUSION_v8.1.txt:358-361",
-      "enforced_by": "schema/hypothesis_selection.schema.json `retained_direction` field (default unknown); kernel/glosa_kernel.py `_retained_direction_error` / `validate_hypothesis_selection`; D-RETENTION-DIRECTION"
-    }
-  ]
+  {
+   "id": "NC-02",
+   "pair": "Truth ≠ Warrant ≠ Practical Efficacy ≠ Ethical/Legal Legitimacy",
+   "family": "A",
+   "meaning_en": "Four separate axes: is it true, are we entitled to believe it, does it work, is it allowed. A claim can score high on one and zero on the others.",
+   "meaning_th": "จริง ≠ มีสิทธิ์เชื่อ ≠ ใช้ได้ผลจริง ≠ ถูกกฎหมาย/มีความชอบธรรม — สี่แกนนี้แยกกัน",
+   "collapse_failure": "\"It works, therefore it's true\" or \"it's legal, therefore it's true.\"",
+   "source": "grr-epistemic-foundation SKILL.md L60",
+   "enforced_by": "claim_card.claim_type + independent_check kept as separate fields, never conflated into one"
+  },
+  {
+   "id": "NC-03",
+   "pair": "Legitimacy ≠ Truth (Horizontal ≠ Truth, Vertical ≠ Truth, both)",
+   "family": "A",
+   "meaning_en": "Neither peer-scrutiny/reuse (horizontal) nor journal/institution acceptance (vertical) makes a claim true — both are channel-openers.",
+   "meaning_th": "ความชอบธรรมทั้งแนวราบ (นักวิจัยด้วยกัน) และแนวดิ่ง (สถาบัน) ≠ ความจริง",
+   "collapse_failure": "Treating peer review or citation count as a truth oracle in either direction.",
+   "source": "Standalone Scholar §13; EPIS-KNOWLEDGE-VALIDATION (global CLAUDE.md, horizontal never vertical authority)",
+   "enforced_by": "glosa never proposes external/institutional validation as a legitimacy lever; tier never reads \"peer-reviewed\" as Th_coqc"
+  },
+  {
+   "id": "NC-04",
+   "pair": "legal ≠ epistemic",
+   "family": "A",
+   "meaning_en": "A required permit/license makes an action lawful; it does not raise a claim's tier.",
+   "meaning_th": "ใบอนุญาตทำให้ \"การกระทำ\" ถูกกฎหมาย ไม่ได้ทำให้ \"ข้ออ้าง\" มีน้ำหนักทางความรู้เพิ่มขึ้น",
+   "collapse_failure": "Citing a compliance requirement as if it were evidence for a factual claim.",
+   "source": "EPIS-KNOWLEDGE-VALIDATION (global CLAUDE.md, founder ruling 2026-07-24)",
+   "enforced_by": "claim_card.tier is never raised by a legal/regulatory citation alone; D-LEGAL-NEQ-EPISTEMIC"
+  },
+  {
+   "id": "NC-05",
+   "pair": "Solving ≠ true",
+   "family": "A",
+   "meaning_en": "Producing an output that satisfies a spec/test is not the same as the underlying model being correct.",
+   "meaning_th": "แก้โจทย์ได้ ≠ ทฤษฎีเบื้องหลังเป็นจริง",
+   "collapse_failure": "\"The code passed, so the theory is right.\"",
+   "source": "internal command-center philosophy floor / claim boundary (PRIVATE — re-derived, not copied)",
+   "enforced_by": "verdict enum keeps pass (spec-satisfied) separate from any theory_confirmed claim; pass never auto-promotes tier"
+  },
+  {
+   "id": "NC-06",
+   "pair": "correct output ≠ true theory (Bounded-Judge Law)",
+   "family": "A",
+   "meaning_en": "Every reviewer, gate, or scorer is itself a bounded reader; its verdict is a claim, not a fact, and needs its own tier.",
+   "meaning_th": "ผลลัพธ์ถูก ≠ ทฤษฎีถูก และคำตัดสินของผู้ตรวจเองก็ต้องมี tier ด้วย",
+   "collapse_failure": "A review_report's verdict being read as settled fact rather than a bounded claim.",
+   "source": "internal command-center agent handbook (PRIVATE — re-derived)",
+   "enforced_by": "review_report.verdict_tier field always present — the review itself always carries a tier"
+  },
+  {
+   "id": "NC-07",
+   "pair": "Conformance ≠ Truth",
+   "family": "A",
+   "meaning_en": "Passing a schema/format check is not evidence the content is correct.",
+   "meaning_th": "ผ่านรูปแบบที่กำหนด ≠ เนื้อหาถูกต้อง",
+   "collapse_failure": "A schema validator returning green being read as \"the claim is verified.\"",
+   "source": "grr-epistemic-foundation SKILL.md L60",
+   "enforced_by": "schema validators are documented as format gates only; they never set claim_card.tier"
+  },
+  {
+   "id": "NC-08",
+   "pair": "readout ≠ truth (universal lens)",
+   "family": "A",
+   "meaning_en": "Everything you read — a benchmark, a claim, a tool output, your own prior answer — is a finite retained readout of some process, not the thing itself.",
+   "meaning_th": "ทุกสิ่งที่อ่านคือผลการอ่านค่าที่จำกัด ไม่ใช่ตัวความจริงเอง",
+   "collapse_failure": "Restating any number/claim as settled fact because a trusted source said it.",
+   "source": "EPIS-UNIVERSAL-LENS (global CLAUDE.md); readout_genesis; readout_universe",
+   "enforced_by": "master lens behind every other row; every claim_card.five_questions.seen field names the readout process, not \"the fact\""
+  },
+  {
+   "id": "NC-09",
+   "pair": "M_A[n] ≠ θ(E) for every n",
+   "family": "A",
+   "meaning_en": "An agent's model of an event never equals the event itself, for any observer, at any step — the gap never closes to zero.",
+   "meaning_th": "แบบจำลองที่ตัวแทนสร้างขึ้น ≠ เหตุการณ์จริง เสมอ ไม่มีขั้นไหนที่ทำให้ช่องว่างนี้เป็นศูนย์",
+   "collapse_failure": "Believing that enough iteration eventually reaches ground truth exactly.",
+   "source": "readout_universe logic.md EQ-028 (Th_coqc); readout_genesis",
+   "enforced_by": "Open/Dr tiers exist precisely because this gap is asserted never-zero; a claim never claims \"exact\""
+  },
+  {
+   "id": "NC-10",
+   "pair": "finite_diagnostic ≠ proof",
+   "family": "A",
+   "meaning_en": "An executed numeric/empirical run that passes is evidence, not a formal proof.",
+   "meaning_th": "รันโค้ด/ทดลองแล้วผ่าน = หลักฐาน ไม่ใช่บทพิสูจน์",
+   "collapse_failure": "Citing a passing test suite as a theorem.",
+   "source": "readout_universe logic.md §9.3",
+   "enforced_by": "claim_card.tier enum keeps finite_diagnostic and Th_coqc as distinct values; never both for the same claim"
+  },
+  {
+   "id": "NC-11",
+   "pair": "Th_coqc ≠ finite_diagnostic ≠ Dr ≠ Open ≠ fit_calibrated ≠ definition",
+   "family": "A",
+   "meaning_en": "Six named tiers (machine-checked / executed-and-measured / declared human bridge / not established / fit-to-data / stipulated) never substitute for one another.",
+   "meaning_th": "หกระดับความน่าเชื่อถือห้ามสลับใช้แทนกัน",
+   "collapse_failure": "Promoting a Dr reading to Th_coqc because it \"feels obviously true,\" or downgrading an inconvenient Th_coqc result.",
+   "source": "readout_genesis; readout_universe README.md/philosophy.md",
+   "enforced_by": "claim_card.tier is a closed enum; validator rejects an unlisted value and flags tier changes without a stated reason"
+  },
+  {
+   "id": "NC-12",
+   "pair": "Verified MATH ≠ true physics",
+   "family": "A",
+   "meaning_en": "A machine-checked derivation inside a formal system does not by itself certify that the physical world works that way.",
+   "meaning_th": "คณิตศาสตร์ที่พิสูจน์เครื่องตรวจแล้ว ≠ ฟิสิกส์จริงเป็นเช่นนั้น",
+   "collapse_failure": "Reading a Coq-verified theorem as an empirical claim about reality.",
+   "source": "readout_genesis READOUT_GENESIS_CORE.md L6",
+   "enforced_by": "genre_router_table.json formal_proof genre requires domain-translation bridge named explicitly"
+  },
+  {
+   "id": "NC-13",
+   "pair": "Institutional acceptance/rejection ≠ Truth",
+   "family": "A",
+   "meaning_en": "Neither an editor's \"no\" nor an editor's \"yes\" settles whether the claim is correct.",
+   "meaning_th": "สถาบันตอบรับ/ปฏิเสธ ≠ ข้ออ้างนั้นถูกหรือผิด",
+   "collapse_failure": "Reading a rejection as refutation, or an acceptance as confirmation.",
+   "source": "Standalone Scholar §13",
+   "enforced_by": "rejection must produce a diagnostic note, never an automatic tier downgrade"
+  },
+  {
+   "id": "NC-14",
+   "pair": "Provenance Existence ≠ Attribution ≠ Disclosure (E-A-D)",
+   "family": "B",
+   "meaning_en": "Three separate norms: (E) a provenance path exists at all, (A) the path licenses the credited source, (D) every non-source node on that path stays declared. Satisfying one does not satisfy the others.",
+   "meaning_th": "สามข้อแยกกัน: (E) มีที่มาอยู่จริง (A) ที่มานั้นมีสิทธิ์รับรองข้ออ้างจริง (D) ทุกจุดที่ไม่ใช่แหล่งต้นทางต้องถูกประกาศไว้",
+   "collapse_failure": "\"A path exists, so the attribution is fine\" — existence of some augmentation does not rescue a false attribution to the original source.",
+   "source": "READOUT_CONDITION_2026-08.txt §5.3 (Principles 7-9)",
+   "enforced_by": "citation_card carries existence + claim-match + scope as three separate checked fields, not one boolean"
+  },
+  {
+   "id": "NC-15",
+   "pair": "represented dependency set ≠ actual essential dependency set — Silent Lift",
+   "family": "B",
+   "meaning_en": "What you say a claim depends on can differ from what it actually depends on; the gap is the failure mode named \"silent lift.\"",
+   "meaning_th": "สิ่งที่บอกว่าข้ออ้างพึ่งพา ≠ สิ่งที่พึ่งพาจริง — ช่องว่างนี้คือ silent lift",
+   "collapse_failure": "Omitting an essential background assumption while representing the claim as source-generated.",
+   "source": "READOUT_CONDITION_2026-08.txt §5.4, Def. 6-7",
+   "enforced_by": "claim_card.silent_lift_check field checked against the assumed/contaminated-concept table; D-SILENT-LIFT-GUARD"
+  },
+  {
+   "id": "NC-16",
+   "pair": "doxastic warrant ≠ assertoric disclosure",
+   "family": "B",
+   "meaning_en": "Whether you're entitled to believe X and whether your stated claim accurately represents the basis for X are related but not identical obligations.",
+   "meaning_th": "มีสิทธิ์เชื่อ กับ คำแถลงสะท้อนฐานที่แท้จริง เป็นคนละภาระ แม้เกี่ยวข้องกัน",
+   "collapse_failure": "Asserting \"the test showed X\" when the result actually depended on an undeclared model/prior.",
+   "source": "READOUT_CONDITION_2026-08.txt §9.4",
+   "enforced_by": "claim_card separates tested (warrant) from the disclaimer block (assertoric statement to the reader)"
+  },
+  {
+   "id": "NC-17",
+   "pair": "Mechanical validity ≠ Semantic validity",
+   "family": "B",
+   "meaning_en": "A test/proof kernel passing tells you the mechanism ran correctly, not that the claim's meaning is right.",
+   "meaning_th": "เครื่องตรวจผ่าน ≠ ความหมายของข้ออ้างถูกต้อง",
+   "collapse_failure": "Reading a green CI badge as confirmation the claim is meaningful/true.",
+   "source": "Standalone Scholar eq. 28 (§6.2 DVP)",
+   "enforced_by": "independence_ladder.json I4 row explicitly marked \"not by itself\" sufficient for semantic K2"
+  },
+  {
+   "id": "NC-18",
+   "pair": "Source existence ≠ Claim support",
+   "family": "B",
+   "meaning_en": "The cited document existing and being retrievable does not mean it supports the specific claim attached to it.",
+   "meaning_th": "เอกสารอ้างอิงมีอยู่จริง ≠ เอกสารนั้นสนับสนุนข้ออ้างที่อ้างไว้",
+   "collapse_failure": "Citing a real, retrievable source that does not actually say what the claim says it says.",
+   "source": "Standalone Scholar eq. 29; skillme metadata_verification ≠ scope_verification",
+   "enforced_by": "citation_card claim_match field, checked independently of exists/fetched fields"
+  },
+  {
+   "id": "NC-19",
+   "pair": "metadata_verification ≠ scope_verification",
+   "family": "B",
+   "meaning_en": "Confirming a citation's title/author/DOI is real is a different check from confirming it actually covers the scope claimed.",
+   "meaning_th": "ยืนยัน metadata (ชื่อ/ผู้แต่ง/DOI) ≠ ยืนยันว่าเนื้อหาครอบคลุมขอบเขตที่อ้าง",
+   "collapse_failure": "Passing a DOI-lookup and treating that as \"citation verified\" in full.",
+   "source": "skillme SKILL.md L96",
+   "enforced_by": "citation checker runs both checks as separate pass/fail fields"
+  },
+  {
+   "id": "NC-20",
+   "pair": "reliable route ≠ crediting a specific source with the discrimination",
+   "family": "B",
+   "meaning_en": "A belief can be warranted because the underlying process is reliable, even while the stated attribution (\"the test showed it\") is false — that falsity still matters when it's load-bearing for the assertion.",
+   "meaning_th": "กระบวนการเชื่อถือได้จริง ≠ การอ้างว่าแหล่งอ้างอิงที่ระบุเป็นผู้ให้คำตอบนั้น",
+   "collapse_failure": "Defending a false citation by pointing at the correctness of the final answer.",
+   "source": "READOUT_CONDITION_2026-08.txt §8.2/§9.3",
+   "enforced_by": "SCRAM condition on fabricated/misattributed citation fires regardless of whether the underlying answer was correct"
+  },
+  {
+   "id": "NC-21",
+   "pair": "ordinary training-derived background ≠ current-case-specific additional access route",
+   "family": "B",
+   "meaning_en": "A model's general training shapes output as background; a retained record specific to the current case reaching the model through an undeclared channel is a different, stronger kind of dependency.",
+   "meaning_th": "ความรู้พื้นฐานจากการฝึกโมเดล ≠ ข้อมูลเฉพาะเคสปัจจุบันที่หลุดเข้ามาโดยไม่ประกาศ",
+   "collapse_failure": "Calling all AI output \"the AI's answer\" and erasing which dependency type actually produced the specificity.",
+   "source": "READOUT_CONDITION_2026-08.txt §8.2 (Prop. 4)",
+   "enforced_by": "claim_card.five_questions.ai_filled.retained_record_route field records the route type explicitly"
+  },
+  {
+   "id": "NC-22",
+   "pair": "access model K̃ ≠ literally reading off K*",
+   "family": "B",
+   "meaning_en": "A verdict about current evidence is normally mediated by an access model; that mediation is itself fallible and does not exempt meta-claims from the same condition.",
+   "meaning_th": "ข้อสรุปเกี่ยวกับหลักฐานปัจจุบัน มักถูกกรองผ่านแบบจำลองการเข้าถึงเสมอ",
+   "collapse_failure": "Treating a reviewer's/tool's meta-verdict as exempt from the same provenance discipline applied to object-level claims.",
+   "source": "READOUT_CONDITION_2026-08.txt §8.2",
+   "enforced_by": "Bounded-Judge Law (NC-06) applied recursively — a review_report is itself audited the same way"
+  },
+  {
+   "id": "NC-23",
+   "pair": "P_A ≠ H_A — appearance ≠ epistemic horizon",
+   "family": "B",
+   "meaning_en": "What appears to an agent is not the same as the space within which that appearance can be assessed, doubted, or revised.",
+   "meaning_th": "สิ่งที่ปรากฏต่อผู้สังเกต ≠ ขอบเขตที่ใช้ตัดสิน/สงสัย/แก้ไขสิ่งที่ปรากฏนั้น",
+   "collapse_failure": "Treating an appearance as self-certifying because no revision-space was named.",
+   "source": "readout_universe philosophy.md §5.2d, logic.md",
+   "enforced_by": "claim_card.standpoint names the horizon the claim is assessed from, kept separate from five_questions.seen"
+  },
+  {
+   "id": "NC-24",
+   "pair": "forced ≠ borrowed (≠ Open)",
+   "family": "B",
+   "meaning_en": "For every term/result: what is forced (necessary, has a runnable witness), what is borrowed (an imported anchor not derived here), and what is Open (rejected rather than faked) are three different statuses.",
+   "meaning_th": "บังคับได้จริง (มีพยานรันได้) ≠ ยืมมา (นำเข้าโดยไม่ได้อนุพันธ์) ≠ ยังเปิดอยู่",
+   "collapse_failure": "The \"Buckingham trap\": textbook name → stuff parameters → declare derived, silently converting borrowed into forced.",
+   "source": "readout_genesis forced/borrowed/Open ledger",
+   "enforced_by": "claim_card.ledger has forced/borrowed/open as three distinct arrays, required for every entry"
+  },
+  {
+   "id": "NC-25",
+   "pair": "0 ≠ ⊥",
+   "family": "B",
+   "meaning_en": "\"No retained difference found\" (0) and \"cannot be determined\" (⊥, undecidable/not-checked) are different states — silently merging them hides which one actually happened.",
+   "meaning_th": "ไม่ต่างกันจริง (0) ≠ ตัดสินไม่ได้ (⊥) — สองสถานะนี้ต่างกัน อย่ายุบรวม",
+   "collapse_failure": "Reporting \"no difference\" when the honest state is \"we could not tell.\"",
+   "source": "skillme SKILLME-A6; information-discrete-math",
+   "enforced_by": "claim_card.five_questions.separates.zero_vs_bottom uses a three-value state, never collapses \"not different\" into \"not checked\""
+  },
+  {
+   "id": "NC-26",
+   "pair": "\"not checked\" ≠ \"checked, nothing found\" (A2)",
+   "family": "B",
+   "meaning_en": "Silence about a check having run at all is different from a check running and finding nothing.",
+   "meaning_th": "ยังไม่ได้ตรวจ ≠ ตรวจแล้วไม่พบอะไร",
+   "collapse_failure": "A tool/report printing \"OK, all clear\" when no baseline check ever ran.",
+   "source": "doc-ecosystem SKILL.md L60 (A2)",
+   "enforced_by": "provenance_dag.status and silent_lift_check.status fields (not_run | run) — every check states its own execution status"
+  },
+  {
+   "id": "NC-27",
+   "pair": "LOCAL_EVIDENCE_NOT_FOUND ≠ NO_LOCAL_EVIDENCE_EXISTS",
+   "family": "B",
+   "meaning_en": "Not finding local evidence in a search is not the same as local evidence not existing.",
+   "meaning_th": "หาไม่เจอ (ในรอบค้นนี้) ≠ ไม่มีอยู่จริง",
+   "collapse_failure": "Concluding \"there is no local counter-example\" from a search that simply didn't surface one.",
+   "source": "skillme SKILLME.md search-log states",
+   "enforced_by": "search_log.yaml uses this exact two-value distinction as a required field for every evidence search"
+  },
+  {
+   "id": "NC-28",
+   "pair": "maker ≠ checker ≠ approver",
+   "family": "C",
+   "meaning_en": "Producing, checking, and approving an artifact are three distinct roles requiring both distinct identity and a distinct lens (fault-finding vs completing).",
+   "meaning_th": "ผู้ทำ ≠ ผู้ตรวจ ≠ ผู้อนุมัติ — ต้องต่างทั้งตัวบุคคลและมุมมอง",
+   "collapse_failure": "One person filling two+ roles on the same artifact and calling it \"reviewed.\"",
+   "source": "maker-checker-gate SKILL.md L37 (MIMCG, Coq MIMCG_admissibility.v)",
+   "enforced_by": "claim_card.independent_check names maker_id, checker_id, approver_id as distinct fields, mechanically compared"
+  },
+  {
+   "id": "NC-29",
+   "pair": "AI generator ≠ AI reviewer of the same commit",
+   "family": "C",
+   "meaning_en": "An AI that produced a diff must not be the sole AI reviewer of that same diff.",
+   "meaning_th": "AI ที่สร้างงาน ≠ AI ที่ตรวจงานชิ้นเดียวกัน (ต้องไม่ใช่ตัวเดียวกัน)",
+   "collapse_failure": "Treating a self-review pass by the same model/session as an independent L4 check.",
+   "source": "maker-checker-gate SKILL.md L59 (L4 row)",
+   "enforced_by": "independence_ladder.json I0/I1 explicitly excluded from any checker role"
+  },
+  {
+   "id": "NC-30",
+   "pair": "same-model self-approval ≠ review (MC-02)",
+   "family": "C",
+   "meaning_en": "A model approving its own output is not a check — the bias is correlated, not independent.",
+   "meaning_th": "โมเดลอนุมัติผลงานตัวเอง ≠ การตรวจสอบ (bias สัมพันธ์กัน ไม่ใช่อิสระ)",
+   "collapse_failure": "Counting three same-model self-checks as three independent passes.",
+   "source": "maker-checker-gate SKILL.md (MC-02)",
+   "enforced_by": "I0/I1 never satisfy any minimum-check requirement, at any consequence level"
+  },
+  {
+   "id": "NC-31",
+   "pair": "ManyModels ⇏ Independence",
+   "family": "C",
+   "meaning_en": "Calling many AI models is not the same as achieving independence — if they share training data, retrieval corpora, or operator framing, agreement is a weak signal.",
+   "meaning_th": "เรียกโมเดลหลายตัว ⇏ ได้ความเป็นอิสระ",
+   "collapse_failure": "Treating 5-model agreement as equivalent to one genuinely independent human check.",
+   "source": "Standalone Scholar eq. 26 (§6.1)",
+   "enforced_by": "independence_ladder.json's whole I0-I5 ladder exists specifically to stop this collapse; route_dependence_matrix.yaml is the mechanical check"
+  },
+  {
+   "id": "NC-32",
+   "pair": "DVP ≠ K2",
+   "family": "C",
+   "meaning_en": "Running a full Decorrelated Verification Protocol — even done perfectly — never by itself creates the socially-stress-tested state K2; only substantive external human friction does.",
+   "meaning_th": "ทำ DVP ครบสมบูรณ์แค่ไหนก็ตาม ≠ ได้สถานะ K2",
+   "collapse_failure": "Publicly calling a cross-vendor-AI-verified claim \"peer reviewed\" or \"K2.\"",
+   "source": "Standalone Scholar eq. 20 (§5)",
+   "enforced_by": "independence_ladder.json I3 row: max ceiling explicitly stops short of K2; D-DVP-NOT-K2"
+  },
+  {
+   "id": "NC-33",
+   "pair": "K1 ≠ Certification",
+   "family": "C",
+   "meaning_en": "A timestamped, citable, public provisional asset is not certified, reviewed, or peer-endorsed — it is explicitly labeled provisional.",
+   "meaning_th": "K1 (สาธารณะ มีเวลาปะทับ อ้างอิงได้) ≠ ได้รับการรับรอง/ตรวจสอบแล้ว",
+   "collapse_failure": "Reading a preprint/K1 as if it carried review status.",
+   "source": "ai-native-scholarship-skill-v1.0.0 SKILL.md §2, §5",
+   "enforced_by": "every K1 artifact carries \"explicitly not peer reviewed\" in its own metadata; D-K-STATE"
+  },
+  {
+   "id": "NC-34",
+   "pair": "No independent check ⇒ No K2 claim / No independent check ⇒ No release (MC-05)",
+   "family": "C",
+   "meaning_en": "Two related but distinct gates: MIMCG's release gate (nothing ships without an independent checker) and Standalone Scholar's knowledge-state gate (nothing becomes K2 without external human friction).",
+   "meaning_th": "สองประตูที่คล้ายกันแต่คนละเรื่อง: (1) ไม่มีคนตรวจอิสระ = ห้าม release (2) ไม่มีแรงเสียดทานมนุษย์ภายนอก = ไม่ได้ K2",
+   "collapse_failure": "Satisfying one gate and assuming the other is automatically satisfied.",
+   "source": "maker-checker-gate MC-05",
+   "enforced_by": "release-gate check kept as a separate column from the K-state ceiling check"
+  },
+  {
+   "id": "NC-35",
+   "pair": "Observation ≠ Claim ≠ Inference ≠ Hypothesis ≠ Decision ≠ Valid-checkpoint ≠ Success ≠ Skill-plan ≠ Installed-skill ≠ Design-doc ≠ Working-product",
+   "family": "C",
+   "meaning_en": "A long chain of adjacent-looking states that skillme names explicitly so none silently substitutes for the next.",
+   "meaning_th": "ห่วงโซ่สถานะที่ดูคล้ายกันแต่ไม่ใช่สิ่งเดียวกัน",
+   "collapse_failure": "Presenting a design doc as a working product, or a passed checkpoint as final success.",
+   "source": "skillme SKILLME.md ~L3865-3866",
+   "enforced_by": "claim_card.status release state machine keeps each of these as a distinct named state, no auto-advance"
+  },
+  {
+   "id": "NC-36",
+   "pair": "Reproduction ≠ Replication",
+   "family": "C",
+   "meaning_en": "Re-running the same pipeline on the same data (reproduction) is a weaker claim than an independent team reproducing the finding on new data/methods (replication).",
+   "meaning_th": "รันซ้ำโค้ด/ข้อมูลชุดเดิม (reproduction) ≠ ทีมอิสระยืนยันผลด้วยข้อมูล/วิธีใหม่ (replication)",
+   "collapse_failure": "Calling a successful re-run \"replicated.\"",
+   "source": "grr-epistemic-foundation SKILL.md L60",
+   "enforced_by": "claim_card.tested distinguishes reproduction-class checks (I4 mechanical) from replication-class checks (I5 external human, new data)"
+  },
+  {
+   "id": "NC-37",
+   "pair": "Evidence ≠ Evidence Relation",
+   "family": "C",
+   "meaning_en": "A piece of evidence is an object; whether it supports, challenges, is neutral, or is unresolved relative to a specific claim is a separate, typed relation.",
+   "meaning_th": "หลักฐาน (วัตถุ) ≠ ความสัมพันธ์ของหลักฐานต่อข้ออ้างนั้น",
+   "collapse_failure": "Listing sources as \"evidence for X\" without stating the bearing relation explicitly.",
+   "source": "grr-epistemic-foundation SKILL.md L79",
+   "enforced_by": "claim_card.tested.evidence_relations[].bearing enum required on every entry"
+  },
+  {
+   "id": "NC-38",
+   "pair": "Credit ≠ EpistemicValue",
+   "family": "D",
+   "meaning_en": "Credit is a receipt that a contribution survived some exposure route, not a unit of truth.",
+   "meaning_th": "เครดิต = ใบเสร็จว่าผ่านช่องทางบางอย่างมา ≠ หน่วยของความจริง",
+   "collapse_failure": "Optimizing for citation/attention count as if it were optimizing for correctness.",
+   "source": "Standalone Scholar eq. 1 (Introduction)",
+   "enforced_by": "glosa never proposes citation/credit metrics as a legitimacy lever"
+  },
+  {
+   "id": "NC-39",
+   "pair": "Attention ≠ Credit",
+   "family": "D",
+   "meaning_en": "Public attention only becomes scholarly credit through an actual relevant academic conversion (reuse, reply, review).",
+   "meaning_th": "ความสนใจสาธารณะ ≠ เครดิตทางวิชาการ",
+   "collapse_failure": "Reading view/download counts as scholarly standing.",
+   "source": "Standalone Scholar §18.4",
+   "enforced_by": "K1 metadata never lists attention metrics as a promotion criterion"
+  },
+  {
+   "id": "NC-40",
+   "pair": "Friction ≠ Fellowship",
+   "family": "D",
+   "meaning_en": "Friction corrects claims/mechanisms/boundaries/overclaim; fellowship creates continuity, memory, and trust. Both are needed; neither substitutes for the other.",
+   "meaning_th": "แรงเสียดทาน (แก้ไขข้ออ้าง) ≠ ความเป็นเพื่อนร่วมวิชาการ",
+   "collapse_failure": "Treating a warm, repeat correspondent relationship as if it were independent scrutiny.",
+   "source": "Standalone Scholar §7",
+   "enforced_by": "every K1→K2 conversion attempt must name at least one friction route outside the repeat-fellowship circle"
+  },
+  {
+   "id": "NC-41",
+   "pair": "Friendship ≠ IndependentEvidence; Correspondence ≠ PeerReview; IntellectualAffinity ≠ Truth",
+   "family": "D",
+   "meaning_en": "Three specific instances of the friction/fellowship split, each targeting a different way warmth gets mistaken for validation.",
+   "meaning_th": "เพื่อน ≠ หลักฐานอิสระ / การติดต่อกัน ≠ peer review / ความถูกใจทางความคิด ≠ ความจริง",
+   "collapse_failure": "Citing \"my collaborator agrees\" as an independent check.",
+   "source": "Standalone Scholar eq. 32-33",
+   "enforced_by": "independence_ladder.json excludes fellowship-only interlocutors from any I2+ classification unless the exchange is a documented adversarial DVP route"
+  },
+  {
+   "id": "NC-42",
+   "pair": "Production-supercritical ≠ Credit-supercritical",
+   "family": "D",
+   "meaning_en": "Being highly productive (many K1 assets/month) is a different regime than being credit-supercritical (assets are actually converting to K2/K3).",
+   "meaning_th": "ผลิตงานได้เร็ว (K1 เยอะ) ≠ เครดิตวิชาการโตเร็ว (แปลงเป็น K2/K3 จริง)",
+   "collapse_failure": "Reading high K1 output volume as evidence the programme is succeeding.",
+   "source": "Standalone Scholar §9.1",
+   "enforced_by": "publish gate tracks a conversion metric separately from a production metric"
+  },
+  {
+   "id": "NC-43",
+   "pair": "Latent programme coherence ≠ Legible/effective coherence",
+   "family": "D",
+   "meaning_en": "A programme can be coherent to its author while being invisible to an outsider; only the legible fraction converts.",
+   "meaning_th": "ความสอดคล้องที่ผู้เขียนเห็น (latent) ≠ ความสอดคล้องที่คนนอกมองเห็นได้ (legible)",
+   "collapse_failure": "Assuming internal logical consistency alone will be recognized externally without a navigable index.",
+   "source": "Standalone Scholar §8, eq. 34-35",
+   "enforced_by": "one canonical programme index / \"one problem = one project\" convention exists specifically to raise legibility"
+  },
+  {
+   "id": "NC-44",
+   "pair": "ActivationAction ≠ CreditEvent",
+   "family": "D",
+   "meaning_en": "Reactivating an existing (back-catalog) asset is an action; it produces a credit event only when it actually generates renewed independent encounter.",
+   "meaning_th": "การนำผลงานเก่ากลับมาเปิดใหม่ (activation) ≠ เหตุการณ์ที่ได้เครดิตจริง",
+   "collapse_failure": "Counting a re-post/re-share of old K1 stock as if it were new scholarly credit.",
+   "source": "Standalone Scholar §9.3, eq. 44",
+   "enforced_by": "K-state ledger records credit events only on documented external encounter, never on activation-count alone"
+  },
+  {
+   "id": "NC-45",
+   "pair": "PositionalAccess ≠ PopulationAuthority; CommunityTrust ≠ Representativeness",
+   "family": "D",
+   "meaning_en": "Having access/standing in a community does not make you an authority over the whole population it belongs to; being trusted by a community does not make your account representative of it.",
+   "meaning_th": "มีที่ยืนในชุมชน ≠ มีอำนาจเหนือประชากรทั้งหมด / ชุมชนไว้ใจคุณ ≠ คุณเป็นตัวแทนของชุมชนนั้น",
+   "collapse_failure": "A standpoint-based claim overreaching into a population-level generalization.",
+   "source": "Standalone Scholar eq. 11-12 (§3.3)",
+   "enforced_by": "claim_card.standpoint caps claim scope; D-STANDPOINT fires whenever five_questions.seen is lived/positional"
+  },
+  {
+   "id": "NC-46",
+   "pair": "Systematic Review (PRISMA-conformant) ≠ Rapid/Scoping/Targeted evidence challenge",
+   "family": "E",
+   "meaning_en": "A full systematic review has specific reporting/methodology obligations (PRISMA 2020, Cochrane ch.4); anything less must be labeled by its actual, weaker mode.",
+   "meaning_th": "Systematic Review เต็มรูปแบบ ≠ การค้นแบบเร่งด่วน/สำรวจ/เจาะจง",
+   "collapse_failure": "Calling a same-afternoon literature scan a \"systematic review.\"",
+   "source": "skillme SKILLME.md ~L1440 (PRISMA/Cochrane floor)",
+   "enforced_by": "search_log.yaml requires an explicit review_mode field: SYSTEMATIC_REVIEW / RAPID_EVIDENCE_CHALLENGE / SCOPING_SEARCH / TARGETED_SEARCH / FIELD_OBSERVATION_LOG / INTERNAL_DATA_AUDIT; D-LIT-MODE"
+  },
+  {
+   "id": "NC-47",
+   "pair": "AI output ≠ Evidence",
+   "family": "E",
+   "meaning_en": "AI-generated text/analysis is not itself treated as evidence for a factual/mathematical claim — it can scaffold, but the citation ledger requires an original, verifiable source.",
+   "meaning_th": "ผลลัพธ์จาก AI ≠ หลักฐาน (ใช้ช่วยร่างได้ แต่การอ้างอิงต้องมีแหล่งต้นทางที่ตรวจสอบได้จริง)",
+   "collapse_failure": "Citing an AI's summary of a paper as if it were the paper.",
+   "source": "zero-readout-certifies README (AI-assistance disclosure section)",
+   "enforced_by": "Integrity Firewall: AI candidate → OriginalSource → ClaimMatch → VerifiedCitation — AI output never enters the ledger directly"
+  },
+  {
+   "id": "NC-48",
+   "pair": "Global/Anglophone search route ≠ Local/Thai-language route",
+   "family": "E",
+   "meaning_en": "AI recommendation and bibliographic-database routes can share the same geographic/linguistic blind spots; a local-language route can surface records the global route structurally cannot see.",
+   "meaning_th": "เส้นทางค้นแบบ global/อังกฤษ ≠ เส้นทางค้นแบบไทย/ท้องถิ่น (บอดจุดคนละแบบ)",
+   "collapse_failure": "Treating an English-language literature search as globally exhaustive.",
+   "source": "Standalone Scholar §15.1 (Geographic Distribution Audit)",
+   "enforced_by": "search_log.yaml requires a Thai/local-track row for any socially/religiously/policy-relevant claim; diversity_audit language dimension"
+  },
+  {
+   "id": "NC-49",
+   "pair": "Practice experience ≠ Population evidence",
+   "family": "F",
+   "meaning_en": "High-resolution first-hand practice access is real data, but it does not license a population-level generalization by itself.",
+   "meaning_th": "ประสบการณ์หน้างานที่ละเอียดจริง ≠ หลักฐานระดับประชากร",
+   "collapse_failure": "Generalizing \"in my practice, X always happens\" to \"X is true in general.\"",
+   "source": "Standalone Scholar eq. 86-87 (§19)",
+   "enforced_by": "claim_card.scope: claim_scope ≤ evidence_scope check; D-STANDPOINT; D-SELF-EXPERIENCE-NOT-GENERAL-EVIDENCE"
+  },
+  {
+   "id": "NC-50",
+   "pair": "Intervention creator ≠ Sole evaluator",
+   "family": "F",
+   "meaning_en": "The person who designed/ran an intervention should not be the only evaluator of whether it worked.",
+   "meaning_th": "ผู้ออกแบบ/ดำเนินการแทรกแซง ≠ ผู้ประเมินผลเพียงคนเดียว",
+   "collapse_failure": "An author self-certifying their own social/clinical intervention's success.",
+   "source": "Standalone Scholar §19",
+   "enforced_by": "gate table requires a distinct approver/checker for any intervention-outcome claim"
+  },
+  {
+   "id": "NC-51",
+   "pair": "Author positional counter-readout ≠ External K2",
+   "family": "F",
+   "meaning_en": "The author running their own Geographic-Distribution-Audit-style self-correction improves route diversity but does not itself create external social validation.",
+   "meaning_th": "ผู้เขียนตรวจสอบมุมมองตัวเองเพิ่ม (self-correction) ≠ ได้รับการยืนยันจากภายนอกจริง (K2)",
+   "collapse_failure": "Counting a self-authored \"devil's advocate\" pass as equivalent to an outside reader.",
+   "source": "ai-native-scholarship-skill-v1.0.0 SKILL.md §14 (GDA)",
+   "enforced_by": "independence_ladder.json — self-authored positional correction stays at I0/I1, never counted toward I3+"
+  },
+  {
+   "id": "NC-52",
+   "pair": "Thai track ≠ Public relations",
+   "family": "F",
+   "meaning_en": "The local/Thai conversion track exists to surface situated counter-evidence and institutional differences, not to perform visibility.",
+   "meaning_th": "สาย Thai track มีไว้เพื่อหาหลักฐานแย้ง/ความต่างเชิงสถาบันจริง ≠ ทำเพื่อภาพลักษณ์",
+   "collapse_failure": "Treating Thai-language outreach as a PR exercise rather than a genuine verification route.",
+   "source": "ai-native-scholarship-skill-v1.0.0 SKILL.md §14",
+   "enforced_by": "Geographic Distribution Audit is wired into the DVP route requirement, not the publicity plan"
+  },
+  {
+   "id": "NC-53",
+   "pair": "No human available ≠ Research stop",
+   "family": "F",
+   "meaning_en": "Absence of an ambient human community does not license stopping verification — it licenses building synthetic (DVP) formation infrastructure instead, while never mistaking that for the human step.",
+   "meaning_th": "ไม่มีมนุษย์ตรวจให้ ≠ ต้องหยุดวิจัย",
+   "collapse_failure": "Publishing an unverified claim because \"no reviewer was available,\" or refusing to publish anything provisional at all.",
+   "source": "ai-native-scholarship-skill-v1.0.0 SKILL.md §6",
+   "enforced_by": "independence_ladder.json gives a concrete non-stop path (I0→I3) while keeping I5 as the only K2 route"
+  },
+  {
+   "id": "NC-54",
+   "pair": "Standpoint disclosure ≠ Domain-credentialed authority",
+   "family": "F",
+   "meaning_en": "Declaring \"I write as a practitioner/citizen\" is not a claim to specialist expert authority in the domain discussed.",
+   "meaning_th": "ประกาศว่าพูดในฐานะผู้ปฏิบัติ/พลเมือง ≠ อ้างว่าเป็นผู้เชี่ยวชาญเฉพาะทาง",
+   "collapse_failure": "A lived-experience claim being read (by the author or a reader) as equivalent to domain-expert testimony.",
+   "source": "academic-presentation skill (standpoint-first); memory user-yaoharee-standpoint.md",
+   "enforced_by": "D-STANDPOINT disclaimer, mandatory on every practitioner/citizen-authored claim card"
+  },
+  {
+   "id": "NC-55",
+   "pair": "Discovery ≠ Justification",
+   "family": "G",
+   "meaning_en": "How an idea was arrived at (including AI-assisted brainstorming) is a different question from what justifies believing it.",
+   "meaning_th": "ที่มาของแนวคิด (รวมถึงที่ AI ช่วยคิด) ≠ เหตุผลที่ทำให้เชื่อได้ว่าถูก",
+   "collapse_failure": "Treating \"AI suggested this and it sounds right\" as justification.",
+   "source": "ai-native-scholarship-skill-v1.0.0 SKILL.md §2",
+   "enforced_by": "claim_card.five_questions.ai_filled is documented separately from tested — discovery route never substitutes for a warrant route"
+  },
+  {
+   "id": "NC-56",
+   "pair": "AI exploration ≠ Human commitment",
+   "family": "G",
+   "meaning_en": "AI can explore many hypotheses cheaply; committing to defend one publicly is a human act that AI exploration cannot discharge.",
+   "meaning_th": "AI สำรวจแนวคิดได้เร็วและถูก ≠ การยืนยันรับผิดชอบต่อสาธารณะเป็นภาระของมนุษย์",
+   "collapse_failure": "Publishing an AI-explored hypothesis as a committed claim without the Human Mastery Gate.",
+   "source": "ai-native-scholarship-skill-v1.0.0 SKILL.md §2, §8",
+   "enforced_by": "Human Mastery Gate required before any L3+ public commitment"
+  },
+  {
+   "id": "NC-57",
+   "pair": "Claim scope ≤ Evidence scope",
+   "family": "G",
+   "meaning_en": "The public scope of a claim must never exceed what the evidence actually supports — this is an inequality discipline, not a strict non-equality, but the direction is never allowed to invert.",
+   "meaning_th": "ขอบเขตที่กล่าวอ้างต้องไม่กว้างกว่าขอบเขตที่หลักฐานรองรับจริง",
+   "collapse_failure": "Generalizing a narrow, well-supported finding into a broader public claim.",
+   "source": "ai-native-scholarship-skill-v1.0.0 SKILL.md §2; Standalone Scholar eq. 63",
+   "enforced_by": "claim_card.scope (claim_scope, evidence_scope) mechanically checked pair"
+  },
+  {
+   "id": "NC-58",
+   "pair": "AIContribution ≠ EpistemicResponsibility",
+   "family": "G",
+   "meaning_en": "What AI did in producing an artifact is a separate fact from who is answerable for its epistemic correctness — responsibility never transfers to the tool.",
+   "meaning_th": "สิ่งที่ AI ทำ ≠ ผู้รับผิดชอบทางความรู้ (ความรับผิดชอบไม่โอนไปที่เครื่องมือ)",
+   "collapse_failure": "Blaming \"the AI hallucinated\" as if that discharges the human author's responsibility.",
+   "source": "ai-native-scholarship-skill-v1.0.0 SKILL.md §16",
+   "enforced_by": "AI-fill ledger is disclosure-only; claim_card.human_owner always names a human as responsible party"
+  },
+  {
+   "id": "NC-59",
+   "pair": "AI-candidate output ≠ Verified citation (Integrity Firewall)",
+   "family": "G",
+   "meaning_en": "An AI proposing a citation is a candidate, not a citation — it must pass original-source lookup and claim-match before entering the ledger.",
+   "meaning_th": "AI เสนอชื่อเอกสารอ้างอิง ≠ การอ้างอิงที่ยืนยันแล้ว",
+   "collapse_failure": "An AI-hallucinated citation (title, DOI, or claim) entering a paper's reference list unchecked.",
+   "source": "Standalone Scholar §18.1 (eq. 82)",
+   "enforced_by": "citation checker pipeline; SCRAM condition on fabricated citation"
+  },
+  {
+   "id": "NC-60",
+   "pair": "Founder = ideas/direction ≠ AI = assistant",
+   "family": "G",
+   "meaning_en": "Authorship of direction and ideas sits with the founder; the AI's role is executional/assistive — this line is never blurred in either direction (AI never claims authorship; founder's role is never reduced to \"prompter\").",
+   "meaning_th": "ผู้กำหนดแนวคิด/ทิศทาง = founder ≠ AI = ผู้ช่วย",
+   "collapse_failure": "AI self-promo links in a public artifact, or crediting AI as co-author on a scholarly claim.",
+   "source": "memory feedback-authorship-attribution.md (2026-07-10)",
+   "enforced_by": "CITATION.cff / paper front matter: founder sole author; AI contribution logged in commit trailers and AI-fill ledger only; D-AUTHORSHIP"
+  },
+  {
+   "id": "NC-61",
+   "pair": "questions defended without AI ≠ questions merely produced with AI",
+   "family": "G",
+   "meaning_en": "The Human Mastery Gate counts only what the author can defend unaided — producing a polished AI-assisted answer to a question is not the same as being able to defend it live.",
+   "meaning_th": "จำนวนคำถามที่ตอบได้เองไม่พึ่ง AI ≠ จำนวนคำถามที่ AI ช่วยตอบได้",
+   "collapse_failure": "Presenting AI-assisted answer quality as evidence of the author's own mastery.",
+   "source": "Standalone Scholar §19, eq. 85",
+   "enforced_by": "Human Mastery Gate protocol — a live, unaided defense checklist, separate from the AI-fill ledger"
+  },
+  {
+   "id": "NC-62",
+   "pair": "Stakeholder ≠ Agency",
+   "family": "H",
+   "meaning_en": "Being affected by a decision is not the same as holding power over it (skillme's stakeholder-agency map, re-derived independently, pattern only).",
+   "meaning_th": "ผู้มีส่วนได้ส่วนเสีย ≠ ผู้มีอำนาจตัดสินใจ",
+   "collapse_failure": "Treating everyone affected by a decision as if they equally control it.",
+   "source": "skillme stakeholder-agency map (pattern only, re-derived)",
+   "enforced_by": "claim_card.five_questions.assumed[] review; the Project Advisor's stakeholder framing"
+  },
+  {
+   "id": "NC-63",
+   "pair": "Representationality ≠ Selectivity",
+   "family": "H",
+   "meaning_en": "That a source is representative of a population is a different property from that a source was selected by some (possibly biased) process; conflating them silently launders a selection artifact into a population claim.",
+   "meaning_th": "การเป็นตัวแทนของประชากร ≠ การถูกเลือกมาโดยกระบวนการใดกระบวนการหนึ่ง (ที่อาจมีอคติ)",
+   "collapse_failure": "Presenting a convenience/selected sample's finding as if it generalizes to the population it was drawn near.",
+   "source": "chair ruling C6, Dr-synthesis",
+   "enforced_by": "claim_card.scope.generalization_claimed"
+  },
+  {
+   "id": "NC-64",
+   "pair": "SelfExperience ≠ GeneralEvidence",
+   "family": "H",
+   "meaning_en": "A first-person account licenses a claim about that person's own experience, never automatically a claim about a population.",
+   "meaning_th": "ประสบการณ์ส่วนบุคคลให้สิทธิ์กล่าวอ้างเกี่ยวกับประสบการณ์ของตนเอง ไม่ใช่กล่าวอ้างเกี่ยวกับประชากรโดยอัตโนมัติ",
+   "collapse_failure": "Treating a single practitioner's lived account as if it were population-level evidence.",
+   "source": "chair ruling C6, Dr-synthesis",
+   "enforced_by": "claim_card.standpoint; preserved-experience field per genre; D-SELF-EXPERIENCE-NOT-GENERAL-EVIDENCE"
+  },
+  {
+   "id": "NC-77",
+   "pair": "Retention ≠ Direction",
+   "family": "J",
+   "meaning_en": "Persistence/retention of a claim, habit, or chosen hypothesis across two or more sessions is never by itself evidence that it is expansion rather than tunnel; only a linked independent-check artifact may set the sign. Default: retained_direction: unknown.",
+   "meaning_th": "การคงอยู่/ถูกเลือกซ้ำของข้ออ้าง นิสัย หรือสมมติฐานที่เลือกไว้ ข้ามสองเซสชันขึ้นไป ไม่ใช่หลักฐานในตัวมันเองว่าเป็นการขยาย (expansion) ไม่ใช่ช่องแคบ (tunnel) — ทิศทางบอกได้เฉพาะเมื่อมี artifact ตรวจสอบอิสระเชื่อมโยงอยู่เท่านั้น ค่าตั้งต้นคือ unknown",
+   "collapse_failure": "Reading a hypothesis re-selected/reaffirmed across sessions as if that persistence itself demonstrated durable epistemic expansion, when it may equally be a supercritical tunnel (confirmation, candidate forgetting, semantic fixation).",
+   "source": "design/SESSION_ARCH_v0.4_SPEC.md §4 (schema.retention-direction-field, SA-2); sources/notes/EPISTEMIC_FUSION_v7.1.txt (F9, F11: 'Retention is direction-neutral', 'chi_recip[s,L] therefore cannot be read as warrant, truth, or human benefit'); sources/notes/EPISTEMIC_FUSION_v8.1.txt:358-361",
+   "enforced_by": "schema/hypothesis_selection.schema.json `retained_direction` field (default unknown); kernel/glosa_kernel.py `_retained_direction_error` / `validate_hypothesis_selection`; D-RETENTION-DIRECTION"
+  },
+  {
+   "id": "NC-78",
+   "pair": "Potential ≠ Exercised ≠ Observed",
+   "family": "J",
+   "meaning_en": "Three readouts of one agent must never be merged: the envelope of what the agent could do over its finite retained option set (potential, p*), the policy it actually used (exercised, π_used), and what an evaluator's instrument reads of either (observed, O_q). Each is a lossy readout of a different latent (Genesis N2: M_A = K_A·θ + η, ε_tot > 0, applied twice). Only the witnessed lower bound of potential is ever computable; a sup over unretained options is not a readout.",
+   "meaning_th": "สามค่าอ่านของเอเจนต์คนเดียวห้ามยุบรวมกัน: ขอบเขตที่ทำได้จากชุดทางเลือกที่มีบันทึกจริง (ศักยภาพ p*), นโยบายที่ใช้จริง (π_used), และสิ่งที่เครื่องมือของผู้ประเมินอ่านได้ (O_q) แต่ละตัวเป็น readout แบบสูญเสียของสิ่งแฝงคนละตัว (Genesis N2 ใช้สองชั้น) ค่าที่คำนวณได้มีแค่ขอบล่างที่มีพยาน sup เหนือทางเลือกที่ไม่มีบันทึกไม่ใช่ readout",
+   "collapse_failure": "Reading assisted or observed performance as retained capability (CTSA/Fusion: assisted ≠ retained); reading silence or compliance as consent (Causal Grammar pseudo-peace); reading an unwitnessed 'could have' as measured potential; reading an evaluator's instrument change as a change in the agent.",
+   "source": "cpg_research_journal/research/society-justice-peace/NOTE_2026-09-05_potential-choice-violence_axis.md §1, §7; Agency Potential note 2026-09-05 §4 eq.(1)-(3), §6 eq.(6)-(9); readout_genesis READOUT_GENESIS_CORE.md Part VI §VI.1 N2 ('knowing is a LOSSY read — never the latent truth'), Part VIII §VIII.4 (three measurables); readout_universe logic.md §9.11 ETH-1(ii) operator grounding ('a finite, enumerable set under a retained selection rule, never an unbounded continuum of options') and ARCH-L4 ('a finite selection over already-legal moves'); CTSA 10.5281/zenodo.22339909 (retained vs assisted); glosa K-state (K0 ≠ claim)",
+   "enforced_by": "not yet enforced in kernel — reserved 2026-09-05 (founder ruling BBL-2026-09-05-130); candidate: claim_card five_questions.seen must name which of the three readouts a capability statement is about; D-POTENTIAL-WITNESSED disclaimer when a potential statement lacks a witnessed option set"
+  },
+  {
+   "id": "NC-79",
+   "pair": "Diagnosis of compression ≠ Attribution of responsibility",
+   "family": "J",
+   "meaning_en": "That an agent's feasible life-space / capability set has been compressed is diagnosed from an obstruction ledger (Genesis N3 / VI.6 obstruction certificates: what was present at the source equals what survived plus what was obstructed at each step) and from cost asymmetry (Causal Ethics CE-30: 'only asymmetry', no intent required). Who is responsible is a separate question answered only by a chooser (CE Axiom II / CE-08: cost attaches to the agency that selected the regime, 'not the carrier of consequences'). A diagnosis needs no responsible party; an attribution needs a diagnosis plus a chooser. Neither substitutes for the other.",
+   "meaning_th": "การวินิจฉัยว่าพื้นที่ชีวิต/ชุดความสามารถของเอเจนต์ถูกบีบ อ่านจากบัญชี obstruction (Genesis N3/VI.6: สิ่งที่มีต้นทาง = สิ่งที่รอด + สิ่งที่ถูกกีดขวางแต่ละขั้น) และจากความไม่สมมาตรของต้นทุน (Causal Ethics CE-30 ไม่ต้องมีเจตนา) ส่วนใครรับผิดชอบเป็นคำถามแยก ตอบได้เฉพาะเมื่อมีผู้เลือกระบอบ (CE Axiom II/CE-08 ต้นทุนตกกับผู้เลือก ไม่ใช่ผู้แบกผล) วินิจฉัยไม่ต้องมีผู้รับผิด การระบุผู้รับผิดต้องมีทั้งวินิจฉัยและผู้เลือก",
+   "collapse_failure": "Refusing to call a shortfall structural deprivation until a responsible mechanism is named (silences the no-chooser structural case Violence-as-Instability §6.2 exists to capture); or, the reverse, inferring a culprit from asymmetry alone (CE-30 diagnoses injustice, it does not name a chooser).",
+   "source": "cpg_research_journal/research/society-justice-peace/NOTE_2026-09-05_potential-choice-violence_axis.md §4; Causal Ethics 10.5281/zenodo.18444260 CE-08, CE-28, CE-30 ('CE does not require intent or malice to identify injustice — only asymmetry'), Ch.4 §4.3.2 ('Cost attaches to the chooser, not the carrier of consequences'); Violence as Instability 10.5281/zenodo.18383439 §6.2; readout_genesis READOUT_GENESIS_CORE.md Part VI §VI.6 ('I_Q = I_B + O_C + O_P + O_B'); readout_universe logic.md §9.11 ETH-1(iv) definer's values, ETH-8 and ETH-11 (attribution declared Open there)",
+   "enforced_by": "not yet enforced in kernel — reserved 2026-09-05 (BBL-2026-09-05-130); candidate: claim cards in the justice/peace domain carry two separate fields, compression_evidence (obstruction/asymmetry) and responsibility_attribution (chooser or 'none named'), and rule: an attribution without a chooser is an ERROR, a diagnosis without an attribution is allowed"
+  }
+ ]
 }
