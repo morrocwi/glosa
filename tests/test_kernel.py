@@ -845,6 +845,48 @@ class Rule24PCSTest(unittest.TestCase):
         self.assertFalse(any("rule24w" in w for w in res["warnings"]))
 
 
+class NC78NC79WarningTest(unittest.TestCase):
+    """rule32 (NC-78) and rule33 (NC-79): warning-only, never block. Failing control = warning fires;
+    passing control = field present -> silent; unrelated card -> silent."""
+
+    def setUp(self):
+        self.card = load_example("claim_card.example.json")
+
+    def test_unrelated_card_is_silent(self):
+        res = k.validate_claim_card(self.card)
+        self.assertFalse(any("rule32" in w or "rule33" in w for w in res["warnings"]), res["warnings"])
+
+    def test_capability_claim_without_readout_warns_and_does_not_block(self):
+        card = copy.deepcopy(self.card)
+        card["statement"]["text"] += " This shows the agent's potential to reach the outcome."
+        res = k.validate_claim_card(card)
+        self.assertTrue(res["ok"], res["errors"])
+        self.assertTrue(any("rule32(NC78-READOUT-UNNAMED)" in w for w in res["warnings"]), res["warnings"])
+
+    def test_capability_claim_with_readout_is_silent(self):
+        card = copy.deepcopy(self.card)
+        card["statement"]["text"] += " This shows the agent's potential to reach the outcome."
+        card["five_questions"].setdefault("seen", {})["capability_readout"] = "potential_witnessed"
+        res = k.validate_claim_card(card)
+        self.assertFalse(any("rule32" in w for w in res["warnings"]), res["warnings"])
+
+    def test_attribution_without_chooser_warns(self):
+        card = copy.deepcopy(self.card)
+        card["statement"]["text"] += " This is structural violence and the ministry is responsible for it."
+        res = k.validate_claim_card(card)
+        self.assertTrue(res["ok"], res["errors"])
+        self.assertTrue(any("rule33(NC79-ATTRIBUTION-WITHOUT-CHOOSER)" in w for w in res["warnings"]), res["warnings"])
+
+    def test_attribution_with_chooser_is_silent_and_diagnosis_alone_is_silent(self):
+        card = copy.deepcopy(self.card)
+        card["statement"]["text"] += " This is structural violence and the ministry is responsible for it."
+        card.setdefault("scope", {})["responsibility_attribution"] = {"chooser": "the ministry (regime selected 2024-01)", "compression_evidence": "ledger row 3"}
+        self.assertFalse(any("rule33" in w for w in k.validate_claim_card(card)["warnings"]))
+        card2 = copy.deepcopy(self.card)
+        card2["statement"]["text"] += " This is structural violence: the feasible life-space was compressed."
+        self.assertFalse(any("rule33" in w for w in k.validate_claim_card(card2)["warnings"]))
+
+
 class ScopeContextTest(unittest.TestCase):
     """D-SCOPE-CONTEXT (FOUNDATION_v0.6_PATCH.md §14, foundation.s5-scope-boundary-per-instance)
     -- per-instance clause + context check, WARNING-only, never blocks. DECISIONS.md 2026-09-05

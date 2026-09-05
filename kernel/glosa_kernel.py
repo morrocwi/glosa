@@ -519,6 +519,51 @@ def _scope_context_warning(card):
     )
 
 
+_CAPABILITY_WORDS = re.compile(r"\b(potential|capabilit(y|ies)|capacit(y|ies)|empower(ment|ed)?|could have|can (do|achieve|reach)|able to)\b|ศักยภาพ|ความสามารถ", re.I)
+_RESPONSIBILITY_WORDS = re.compile(r"\b(responsible for|is to blame|culprit|caused by|perpetrat|held accountable)\b|ผู้รับผิดชอบ|ต้องรับผิด|ผู้ก่อ", re.I)
+_COMPRESSION_WORDS = re.compile(r"\b(structural (violence|deprivation|injustice)|compress(ion|ed)|deprivation|possibility space|feasible (life-space|set))\b|ความรุนแรงเชิงโครงสร้าง|การบีบ", re.I)
+
+
+def _claim_text(card):
+    return " ".join(str(x) for x in [
+        (card.get("statement") or {}).get("text"),
+        ((card.get("statement") or {}).get("translation") or {}).get("text"),
+    ] if x)
+
+
+def _rule32_capability_readout_warning(card):
+    """NC-78 (Potential != Exercised != Observed): WARNING when a claim worded as a capability /
+    potential statement does not name which readout it is about
+    (five_questions.seen.capability_readout in {potential_witnessed, exercised, observed}).
+    Lexical heuristic, warning-only, never blocks. Source: non_collapse_table.json NC-78."""
+    if not isinstance(card, dict) or not _CAPABILITY_WORDS.search(_claim_text(card)):
+        return None
+    seen = ((card.get("five_questions") or {}).get("seen") or {})
+    if seen.get("capability_readout") in ("potential_witnessed", "exercised", "observed"):
+        return None
+    return ("HEURISTIC: rule32(NC78-READOUT-UNNAMED): the statement reads as a capability/potential claim "
+            "but five_questions.seen.capability_readout does not name which readout it is about "
+            "(potential_witnessed | exercised | observed) -- NC-78 forbids merging the three; thin flag, never blocks")
+
+
+def _rule33_attribution_warning(card):
+    """NC-79 (Diagnosis of compression != Attribution of responsibility): WARNING when a claim about
+    structural compression/deprivation also carries responsibility wording but
+    scope.responsibility_attribution.chooser names no chooser (Causal Ethics Axiom II / CE-08).
+    A diagnosis with no attribution wording is always silent. Warning-only, never blocks."""
+    if not isinstance(card, dict):
+        return None
+    txt = _claim_text(card)
+    if not (_COMPRESSION_WORDS.search(txt) and _RESPONSIBILITY_WORDS.search(txt)):
+        return None
+    attr = (card.get("scope") or {}).get("responsibility_attribution") or {}
+    if isinstance(attr, dict) and attr.get("chooser"):
+        return None
+    return ("HEURISTIC: rule33(NC79-ATTRIBUTION-WITHOUT-CHOOSER): the statement diagnoses a structural "
+            "compression AND attributes responsibility, but scope.responsibility_attribution.chooser names "
+            "no chooser -- NC-79: attribution needs a chooser, diagnosis alone does not; thin flag, never blocks")
+
+
 def _parse_date(value):
     if not value or not isinstance(value, str):
         return None
@@ -1332,6 +1377,9 @@ def validate_claim_card(card, allow_no_jsonschema=False, citation_cards=None):
     scope_ctx_warn = _scope_context_warning(card)
     if scope_ctx_warn:
         warnings.append(scope_ctx_warn)
+    for _w in (_rule32_capability_readout_warning(card), _rule33_attribution_warning(card)):
+        if _w:
+            warnings.append(_w)
 
     # Kernel rule 27 (HIDDEN-AI-FILL, K-C2): seen.ai_assisted_fields vs ai_filled contradiction
     ai_fill_err = _hidden_ai_fill_error(card)

@@ -230,6 +230,12 @@
                 "type": "string"
               }
             },
+            "capability_readout": {
+              "description": "NC-78 Potential != Exercised != Observed (methodology/data/non_collapse_table.json; founder ruling BBL-2026-09-05-130/132). Additive, optional. When the claim is about what an agent CAN do, names WHICH readout the statement is about: potential_witnessed (envelope over a witnessed, finite option set), exercised (the policy actually used), observed (what an evaluator's instrument returned). Kernel rule32 (NC78-READOUT-UNNAMED) WARNS, never blocks, when a capability-worded claim leaves this null.",
+              "type": ["string", "null"],
+              "enum": ["potential_witnessed", "exercised", "observed", null],
+              "default": null
+            },
             "ai_assisted_fields": {
               "description": "NEW this pass (design/FOUNDATION_v0.6_PATCH.md K-C2, rule27 HIDDEN-AI-FILL). Names which of the card's own fields had AI involvement in drafting their seen-recorded content -- a structural marker, not a prose scan. Default [].",
               "type": "array",
@@ -510,6 +516,14 @@
         },
         "claim_scope": {
           "type": "string"
+        },
+        "responsibility_attribution": {
+          "type": ["object", "null"],
+          "description": "NC-79 Diagnosis of compression != Attribution of responsibility (methodology/data/non_collapse_table.json; BBL-2026-09-05-130/132). Additive, optional. When a claim names who is responsible for a structural compression/deprivation, the attribution must name a chooser (Causal Ethics Axiom II / CE-08: cost attaches to the agency that selected the regime). Kernel rule33 (NC79-ATTRIBUTION-WITHOUT-CHOOSER) WARNS, never blocks, when responsibility wording appears with no chooser named; a diagnosis with no attribution at all is always allowed.",
+          "properties": {
+            "chooser": { "type": ["string", "null"], "description": "the agency that selected the regime being attributed, or null = no chooser named (diagnosis only)" },
+            "compression_evidence": { "type": ["string", "null"], "description": "pointer to the obstruction ledger / cost-asymmetry record the diagnosis rests on" }
+          }
         },
         "per_instance_scope_clause": {
           "type": ["object", "null"],
