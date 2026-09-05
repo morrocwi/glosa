@@ -1,0 +1,15 @@
+{
+ "vendor": "claude",
+ "fetched": {
+  "source": "no-identifier"
+ },
+ "verdict": {
+  "metadata_matches": false,
+  "passage_plausible": false,
+  "claim_match": false,
+  "bearing": "CONTEXT_ONLY",
+  "reason": "No metadata was fetched (source: no-identifier), so title/year/author cannot be confirmed against the card. No exact_passage and no fetched text exist to compare. Card itself admits no verbatim passage obtained; relevance to H2's two-layer distinction cannot be evidenced from the material provided. Uncertain, so false throughout.",
+  "passage_mechanical": "no open full text fetched; abstract/metadata only"
+ },
+ "date": "2026-09-04"
+}

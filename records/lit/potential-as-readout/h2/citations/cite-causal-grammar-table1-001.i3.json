@@ -13,11 +13,11 @@
  },
  "verdict": {
   "metadata_matches": true,
-  "passage_plausible": false,
+  "passage_plausible": true,
   "claim_match": true,
   "bearing": "SUPPORTS",
-  "reason": "Title, first author, year match. The Table 1 row text was not found verbatim in fetched text (excerpt is only the opening pages, table likely unreached), so passage unverified. Abstract's repair/possibility-space concepts, with per-regime states, bear on the layer-2 distinction as the card claims. Self-citation disclosed.",
-  "passage_mechanical": "quoted passage NOT found verbatim in fetched open text"
+  "reason": "Title, first author, year match fetched Zenodo metadata. Exact passage found verbatim in fetched text (§6). Fetched text shows Table 1 with a distinct 'repair' column across five regimes and defines repair as protected reopening/renegotiation, consistent with H2's layer-2 (structure-changing) channel separate from within-structure choice. Self-citation disclosed.",
+  "passage_mechanical": "verbatim prefix found in fetched open text"
  },
  "date": "2026-09-04"
 }

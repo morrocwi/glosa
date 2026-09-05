@@ -1,5 +1,5 @@
 {
- "vendor": "codex",
+ "vendor": "claude",
  "fetched": {
   "source": "crossref",
   "title": "An Anthropology of Structural Violence",
@@ -12,9 +12,11 @@
   "_card_url": "https://cdn.ymaws.com/www.safestates.org/resource/resmgr/connections_lab/glossary_citation/Farmer-AnthropologyStructura.pdf"
  },
  "verdict": {
-  "error": "no-json",
-  "raw": "",
+  "metadata_matches": true,
   "passage_plausible": true,
+  "claim_match": false,
+  "bearing": "CONTEXT_ONLY",
+  "reason": "Crossref title/author/year/journal match the card; passage found verbatim in fetched text. But the quoted passage only says Haitian epidemics are embedded in historical political-economic structures. It says nothing about bounded suppression budgets, threshold re-crossing, force-cost divergence, or operator change, so it does not evidence H3's empirical fixture claim; at most thematic context.",
   "passage_mechanical": "verbatim prefix found in fetched open text"
  },
  "date": "2026-09-04"

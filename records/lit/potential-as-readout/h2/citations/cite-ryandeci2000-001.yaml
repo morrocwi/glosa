@@ -9,33 +9,46 @@ fetched_at: '2026-09-05'
 metadata_verified: true
 metadata_verified_by: mechanical:direct_fetch
 metadata_verified_at: '2026-09-05'
-claim_match_verified: false
-claim_match_verified_by: null
+claim_match_verified: true
+claim_match_verified_by: route:claude
 claim_match_verified_at: null
 exact_passage: The findings have led to the postulate of three innate psychological
   needs--competence, autonomy, and relatedness--which when satisfied yield enhanced
   self-motivation and mental health and when thwarted lead to diminished motivation
   and well-being.
 page_or_locator: p.68 (American Psychologist, Vol.55 No.1, opening abstract/introduction)
-scope: DIRECT_QUOTATION
+scope: CONTEXT_ONLY_NOT_EVIDENCE
 evidence_tier: Dr
 independence_class: I1
-who_verified: AI assistant, same session (I1); I3 route pending (codex quota)
+who_verified: 'route:claude (I1 route: same model, fresh headless session (no shared
+  context); abstract/metadata level, not full text) -- see cite-ryandeci2000-001.i3.json'
 verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
-status: METADATA_OK
+status: VERIFIED
 xenon_ledger_ref: null
 disclosure: 'Same-session AI check only (I1) -- not yet independently verified; run
   lit_crossvendor_check.py for I3. | I3 route (codex) judged from fetched metadata/abstract
-  + the card''s quoted passage, not full text: '
+  + the card''s quoted passage, not full text:  | I1 route (claude) judged from fetched
+  metadata/abstract + the card''s quoted passage, not full text: Title, first author,
+  year match Crossref; passage found verbatim in fetched text. But the passage only
+  posits three innate needs (competence, autonomy, relatedness); nothing in it evidences
+  H2''s layer-1 (policy within fixed constraints) vs layer-2 (changing constraint
+  structure) distinction. Relevant background at most, not support. | I1 route (claude)
+  judged from fetched metadata/abstract + the card''s quoted passage, not full text:
+  Crossref title/year/first author (Ryan, 2000) match the card; the quoted passage
+  is found verbatim in the fetched text. Under CONTEXT_ONLY scope, the source''s competence/autonomy/relatedness
+  needs framing is relevant context for H2''s layered-potential distinction, though
+  it does not itself articulate a layer-1/layer-2 split.'
 superseded_by: null
-notes: Fetched fresh from the author-hosted OA PDF at selfdeterminationtheory.org
+notes: 'Fetched fresh from the author-hosted OA PDF at selfdeterminationtheory.org
   this session. Line-wrap hyphens (theo~y, psycho- logical, mo- tivation) are OCR/extraction
-  artifacts of the source PDF's two-column layout, rejoined here across the line break
-  as the sentence reads continuously in the source; no words added or removed. Supports
-  H2's premise that a real distinction exists between an innate capacity (competence/autonomy/relatedness)
-  and the social-contextual conditions that 'facilitate versus forestall' it -- consistent
-  with a two-layer split but this paper does not itself formalize a structure-change
-  layer separate from need-satisfaction.
+  artifacts of the source PDF''s two-column layout, rejoined here across the line
+  break as the sentence reads continuously in the source; no words added or removed.
+  Supports H2''s premise that a real distinction exists between an innate capacity
+  (competence/autonomy/relatedness) and the social-contextual conditions that ''facilitate
+  versus forestall'' it -- consistent with a two-layer split but this paper does not
+  itself formalize a structure-change layer separate from need-satisfaction. | Carded
+  as context: SDT names autonomy as a need without separating choice-within-structure
+  from structure-change; it neither supports nor challenges H2 (route verdict CONTEXT_ONLY).'
 fetched_from_url: https://selfdeterminationtheory.org/SDT/documents/2000_RyanDeci_SDT.pdf
 line_or_paragraph: char offset 662 of normalized fetched text (~paragraph 1); verbatim
   prefix match

@@ -11,11 +11,8 @@ metadata_verified_by: 'manual: PDF page images read directly (Read tool) confirm
   W. MINTZ LECTURE FOR 2001 / An Anthropology of Structural Violence / by Paul Farmer",
   Current Anthropology Volume 45, Number 3, June 2004, p. 305'
 metadata_verified_at: '2026-09-05'
-claim_match_verified: true
-claim_match_verified_by: this session (manual read/verification; the route:codex
-    I3 cross-vendor attempt below FAILED with a usage-limit error, not a content
-    judgment -- reverted to the prior manual verification rather than leaving a
-    false false-verdict on record)
+claim_match_verified: false
+claim_match_verified_by: route:claude
 claim_match_verified_at: '2026-09-05'
 exact_passage: Any thorough understanding of the modern epidemics of AIDS and tuberculosis
   in Haiti or elsewhere in the postcolonial world requires a thorough knowledge of
@@ -28,8 +25,8 @@ page_or_locator: Farmer 2004, Current Anthropology 45(3), p. 305, abstract/openi
 scope: DIRECT_QUOTATION
 evidence_tier: definition
 independence_class: I1
-who_verified: this session (manual verification; I3 cross-vendor attempt failed,
-  see disclosure)
+who_verified: 'route:claude (I1 route: same model, fresh headless session (no shared
+  context); abstract/metadata level, not full text) -- see cite-farmer2004-004.i3.json'
 verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
 status: METADATA_OK
 xenon_ledger_ref: null
@@ -42,7 +39,13 @@ disclosure: 'SUPPORTS H3: Farmer''s core move is that visible/local suffering ("
   definitional framing paragraph (p.305); it does not yet quote Farmer''s later explicit
   citation of Galtung''s structural-violence term, which appears further into the
   essay beyond the pages fetched in this pass. | I3 route (codex) judged from fetched
-  metadata/abstract + the card''s quoted passage, not full text: '
+  metadata/abstract + the card''s quoted passage, not full text:  | I1 route (claude)
+  judged from fetched metadata/abstract + the card''s quoted passage, not full text:
+  Crossref title/author/year/journal match the card; passage found verbatim in fetched
+  text. But the quoted passage only says Haitian epidemics are embedded in historical
+  political-economic structures. It says nothing about bounded suppression budgets,
+  threshold re-crossing, force-cost divergence, or operator change, so it does not
+  evidence H3''s empirical fixture claim; at most thematic context.'
 superseded_by: null
 notes: JSTOR stable-URL page (p.1 of the fetched PDF) independently confirms the same
   bibliographic facts (author, journal, volume, pages, publisher) as the body text,

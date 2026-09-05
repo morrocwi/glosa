@@ -1,0 +1,22 @@
+{
+ "vendor": "claude",
+ "fetched": {
+  "source": "crossref",
+  "title": "Well-Being, Agency and Freedom: The Dewey Lectures 1984",
+  "authors": [
+   "Sen"
+  ],
+  "year": 1985,
+  "container": "The Journal of Philosophy",
+  "abstract": ""
+ },
+ "verdict": {
+  "metadata_matches": true,
+  "passage_plausible": false,
+  "claim_match": true,
+  "bearing": "CONTEXT_ONLY",
+  "reason": "Crossref title, year, first author (Sen) match the card. No exact_passage and no fetched text exist, so passage plausibility cannot be checked. Card's stated scope is bibliographic context only; the title's agency/well-being/freedom distinction is plausibly relevant context for H2's layer distinction, not evidence for it.",
+  "passage_mechanical": "no open full text fetched; abstract/metadata only"
+ },
+ "date": "2026-09-04"
+}

@@ -1,14 +1,23 @@
 {
- "vendor": "codex",
+ "vendor": "claude",
  "fetched": {
-  "source": "fetch-failed",
-  "error": "HTTP Error 429: Unknown Error",
+  "source": "arxiv",
+  "title": "Empowerment -- an Introduction",
+  "authors": [
+   "Christoph Salge",
+   "Cornelius Glackin",
+   "Daniel Polani"
+  ],
+  "year": "2013",
+  "abstract": "This book chapter is an introduction to and an overview of the information-theoretic, task independent utility function \"Empowerment\", which is defined as the channel capacity between an agent's actions and an agent's sensors. It quantifies how much influence and control an agent has over the world it can perceive. This book chapter discusses the general idea behind empowerment as an intrinsic motivation and showcases several previous applications of empowerment to demonstrate how empowerment can be applied to different sensor-motor configuration, and how the same formalism can lead to different observed behaviors. Furthermore, we also present a fast approximation for empowerment in the continuous domain.",
   "_card_url": "https://arxiv.org/pdf/1310.1863"
  },
  "verdict": {
-  "error": "no-json",
-  "raw": "",
+  "metadata_matches": true,
   "passage_plausible": true,
+  "claim_match": true,
+  "bearing": "SUPPORTS",
+  "reason": "Title, first author, year match. Passage found verbatim in fetched §4.5.3 text and coheres with abstract (empowerment varies by sensor-motor configuration). Source states empowerment depends on the agent's sensor/actuator endowment, distinguishing within-configuration readout from endowment change, which bears on H2's layer-1/layer-2 distinction as a direct quotation.",
   "passage_mechanical": "verbatim prefix found in fetched open text"
  },
  "date": "2026-09-04"

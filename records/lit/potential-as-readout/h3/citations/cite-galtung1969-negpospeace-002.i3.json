@@ -1,12 +1,16 @@
 {
- "vendor": "codex",
+ "vendor": "claude",
  "fetched": {
-  "source": "no-identifier"
+  "source": "no-identifier",
+  "_card_url": "https://www2.kobe-u.ac.jp/~alexroni/IPD%202015%20readings/IPD%202015_2/Galtung_Violence%2C%20Peace%2C%20and%20Peace%20Research.pdf"
  },
  "verdict": {
-  "error": "no-json",
-  "raw": "",
-  "passage_mechanical": "no open full text fetched; abstract/metadata only"
+  "metadata_matches": true,
+  "passage_plausible": true,
+  "claim_match": true,
+  "bearing": "CONTEXT_ONLY",
+  "reason": "Fetched text (Galtung 1969, p.183) contains the passage verbatim, including markers 30/31. It defines negative vs positive peace, relevant context for H3's visible-calm vs operator-change distinction, but does not test or support H3's numerical/budget claim.",
+  "passage_mechanical": "verbatim prefix found in fetched open text"
  },
  "date": "2026-09-04"
 }

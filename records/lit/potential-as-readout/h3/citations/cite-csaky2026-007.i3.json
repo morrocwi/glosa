@@ -1,14 +1,22 @@
 {
- "vendor": "codex",
+ "vendor": "claude",
  "fetched": {
-  "source": "fetch-failed",
-  "error": "The read operation timed out",
+  "source": "arxiv",
+  "title": "Prediction and Empowerment: A Theory of Agency through Bridge Interfaces",
+  "authors": [
+   "Richard Csaky"
+  ],
+  "year": "2026",
+  "abstract": "We study agency under partial observability in deterministic physical or simulated worlds, where apparent randomness arises from uncertainty over initial conditions, fixed law bits, and unrolled exogenous noise. We model sensing and actuation as bridge interfaces split between agent-controlled parameters and environment-controlled channel state, inducing a deterministic POMDP through a prior over latent microstates and many-to-one observation coarsening. Within this framework, we prove a separation between prediction, compression, and empowerment. Perfect prediction can be achieved either by identifying the hidden quotient relevant to the target family or by overwrite control that makes the future target action-determined; high empowerment alone is insufficient. Under refinable interfaces and sufficient memory, action-conditioned observation-compression progress reduces posterior uncertainty about the latent quotient, and when refinement requires steering world-side channel conditions, this creates target-conditioned interface empowerment. A bit-string specialization with a conserved information budget makes the resulting tradeoff explicit: prediction by identification requires internal capacity at least the relevant latent entropy, whereas overwrite control requires terminal action capacity over the controlled quotient. For modern AI agents, the results suggest a design principle rather than a theorem of inevitability: objectives should distinguish hidden-state identificatio",
   "_card_url": "https://arxiv.org/abs/2605.06346"
  },
  "verdict": {
-  "error": "no-json",
-  "raw": "",
-  "passage_mechanical": "quoted passage NOT found verbatim in fetched open text"
+  "metadata_matches": true,
+  "passage_plausible": true,
+  "claim_match": true,
+  "bearing": "CONTEXT_ONLY",
+  "reason": "Identifier, title, first author, year consistent; passage found verbatim in abstract. But the quoted sentence (agency under partial observability) and the abstract (prediction/compression/empowerment separation) do not touch H3's suppression-vs-operator-change or force-cost divergence; the card itself admits a different framing. Relevance as context is unestablished.",
+  "passage_mechanical": "verbatim prefix found in fetched open text"
  },
  "date": "2026-09-04"
 }

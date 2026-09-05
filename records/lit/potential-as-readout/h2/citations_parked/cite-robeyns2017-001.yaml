@@ -10,20 +10,26 @@ metadata_verified: true
 metadata_verified_by: mechanical:crossref_or_unpaywall_lookup
 metadata_verified_at: '2026-09-05'
 claim_match_verified: false
-claim_match_verified_by: null
+claim_match_verified_by: route:claude
 claim_match_verified_at: null
 exact_passage: ''
 page_or_locator: n/a -- not obtained
 scope: CONTEXT_ONLY_NOT_EVIDENCE
 evidence_tier: Open
 independence_class: I1
-who_verified: AI assistant, same session (I1); I3 route pending (codex quota)
+who_verified: 'route:claude (I1 route: same model, fresh headless session (no shared
+  context); abstract/metadata level, not full text) -- see cite-robeyns2017-001.i3.json'
 verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
 status: METADATA_OK
 xenon_ledger_ref: null
 disclosure: 'Same-session AI check only (I1) -- not yet independently verified; run
   lit_crossvendor_check.py for I3. | I3 route (codex) judged from fetched metadata/abstract
-  + the card''s quoted passage, not full text: '
+  + the card''s quoted passage, not full text:  | I1 route (claude) judged from fetched
+  metadata/abstract + the card''s quoted passage, not full text: No metadata was fetched
+  (source: no-identifier), so title/year/author cannot be confirmed against the card.
+  No exact_passage and no fetched text exist to compare. Card itself admits no verbatim
+  passage obtained; relevance to H2''s two-layer distinction cannot be evidenced from
+  the material provided. Uncertain, so false throughout.'
 superseded_by: null
 notes: 'Robeyns 2017, Wellbeing, Freedom and Social Justice: The Capability Approach
   Re-Examined (Open Book Publishers, nominally OA). Attempted: openbookpublishers.com

@@ -13,10 +13,7 @@ metadata_verified_by: 'manual: reused already-fetched local copy at cpg_research
   Vol. 6, No. 3 (1969), pp. 167-191'
 metadata_verified_at: '2026-09-05'
 claim_match_verified: true
-claim_match_verified_by: this session (manual read/verification; the route:codex
-    I3 cross-vendor attempt below FAILED with a usage-limit error, not a content
-    judgment -- reverted to the prior manual verification rather than leaving a
-    false false-verdict on record)
+claim_match_verified_by: route:claude
 claim_match_verified_at: '2026-09-05'
 exact_passage: violence is present when humanbeings are being influencedso that their
   actual somatic and mental realizations are below theirpotential realizations.This
@@ -26,10 +23,10 @@ page_or_locator: Galtung 1969, p. 168 (p3 in the local page-tagged extraction), 
 scope: DIRECT_QUOTATION
 evidence_tier: definition
 independence_class: I1
-who_verified: this session (manual verification; I3 cross-vendor attempt failed,
-  see disclosure)
+who_verified: 'route:claude (I1 route: same model, fresh headless session (no shared
+  context); abstract/metadata level, not full text) -- see cite-galtung1969-potentialgap-001.i3.json'
 verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
-status: METADATA_OK
+status: VERIFIED
 xenon_ledger_ref: null
 disclosure: 'This is Galtung''s foundational move that H3 builds on directly: violence
   is DEFINED as the gap between actual and POTENTIAL realizations. The word-run-together
@@ -44,12 +41,16 @@ disclosure: 'This is Galtung''s foundational move that H3 builds on directly: vi
   reconstructed. SUPPORTS H3 strongly: "low witnessed potential" in H3''s three-valued
   gate is directly this Galtung passage''s "actual...below potential realizations"
   gap. | I3 route (codex) judged from fetched metadata/abstract + the card''s quoted
-  passage, not full text: '
+  passage, not full text:  | I1 route (claude) judged from fetched metadata/abstract
+  + the card''s quoted passage, not full text: Fetched text is Galtung 1969 ''Violence,
+  Peace, and Peace Research''; verbatim passage found at section 2 opening, matching
+  locator. Passage defines violence as actual-below-potential gap; it is foundational
+  framing H3 builds on, not evidence for H3''s numerical budget-exhaustion signature
+  or the fixture result.'
 superseded_by: null
 notes: Reused an already-fetched local copy per the task brief rather than re-fetching
   JSTOR (paywalled; the local text/pdf was already obtained by a prior session for
   the parent paper).
-fetched_from_url: https://www2.kobe-u.ac.jp/~alexroni/IPD%202015%20readings/IPD%202015_2/Galtung_Violence%2C%20Peace%2C%20and%20Peace%20Research.pdf  # fetched copy read locally (per-page text extraction of the same file)
-line_or_paragraph: right-hand column, lines beginning "As a point of departure..."
-  through "...This statement may lead to more problems than it solves." (source lines
-  ~86-92 of the local .pages.txt extraction)
+fetched_from_url: https://www2.kobe-u.ac.jp/~alexroni/IPD%202015%20readings/IPD%202015_2/Galtung_Violence%2C%20Peace%2C%20and%20Peace%20Research.pdf
+line_or_paragraph: char offset 5714 of normalized fetched text (~paragraph 1); verbatim
+  prefix match

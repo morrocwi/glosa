@@ -1,5 +1,5 @@
 {
- "vendor": "codex",
+ "vendor": "claude",
  "fetched": {
   "source": "crossref",
   "title": "Self-determination theory and the facilitation of intrinsic motivation, social development, and well-being.",
@@ -13,9 +13,11 @@
   "_card_url": "https://selfdeterminationtheory.org/SDT/documents/2000_RyanDeci_SDT.pdf"
  },
  "verdict": {
-  "error": "no-json",
-  "raw": "",
+  "metadata_matches": true,
   "passage_plausible": true,
+  "claim_match": true,
+  "bearing": "CONTEXT_ONLY",
+  "reason": "Crossref title/year/first author (Ryan, 2000) match the card; the quoted passage is found verbatim in the fetched text. Under CONTEXT_ONLY scope, the source's competence/autonomy/relatedness needs framing is relevant context for H2's layered-potential distinction, though it does not itself articulate a layer-1/layer-2 split.",
   "passage_mechanical": "verbatim prefix found in fetched open text"
  },
  "date": "2026-09-04"
