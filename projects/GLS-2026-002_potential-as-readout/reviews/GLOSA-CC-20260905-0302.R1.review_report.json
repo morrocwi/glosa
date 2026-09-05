@@ -1,0 +1,45 @@
+{
+ "claim_ref": "GLOSA-CC-20260905-0302",
+ "route_id": "R1",
+ "reviewer_identity": "same-model fresh-session AI route R1 (vendor recorded locally, not named: gate rule 9)",
+ "independence_class": "I1",
+ "mc_level": "L2",
+ "role": "Falsifier",
+ "review_mode": "DECORRELATED_AI_ROUTE",
+ "verdict": "Claim not defeated but not reachable as stated. Its layer-1/layer-2 content is definitional for Causal Agency (Def.3, §6.6) and Causal Grammar (repair): those texts coined the split, so citing them cannot falsify it. The falsifiable part, that Agency Potential's p* and Causal Ethics' Axiom II sit strictly in layer 1, has zero citation cards in this packet. Strongest defeater: a passage in either text where the admissible/feasible set already includes modifying C (C as a decision variable), which would collapse layer 2 into layer 1 over an extended state space and refute 'must not be collapsed' as a description of the programme. The card's own falsifier text is absent from the packet, so its reachability cannot be judged.",
+ "verdict_tier": "finite_diagnostic",
+ "evidence_consulted": [
+  "claim card as pasted into PACKET.md",
+  "citation card cite-causal-agency-defs-001",
+  "citation card cite-causal-agency-protoagency-001",
+  "citation card cite-causal-grammar-table1-001",
+  "citation card cite-causal-grammar-repair-001",
+  "citation card cite-bandura2001-agentic-001",
+  "citation card cite-kabeer1999-001",
+  "citation card cite-klyubin2005-001",
+  "citation card cite-salge-empowerment-intro-001",
+  "citation card cite-ryandeci2000-001",
+  "citation card cite-bazzani2023-001"
+ ],
+ "shared_dependency_disclosure": "same operator machine and same packet text as the maker; same model, fresh headless session (no shared context) (I2, not I3)",
+ "disagreement_ledger_ref": null,
+ "date": "2026-09-05",
+ "approver_kind": "ai",
+ "route_findings": {
+  "defeaters_found": [
+   "No citation card for Agency Potential or Causal Ethics; the claim ranges over five texts but evidence covers only two plus the project's own main.tex (circular).",
+   "Collapse-by-extension: if C is admitted as a state/decision variable, layer 2 becomes a layer-1 policy in C'; Salge's passage (empowerment depends on the agent's sensors and actions) is compatible with this reading rather than against it.",
+   "Causal Agency evidence is bearing UNRESOLVED per the card's own reconciliation; the row's what_it_would_say_against_us (H2 = Def.3 restated) is unanswered.",
+   "Kabeer's 'acquire the ability to make strategic life choices' is ambiguous between endowment change within a fixed structure and structure change; it does not discriminate the two layers.",
+   "Falsifier referenced (five_questions.tested.falsifier) is not visible in the packet."
+  ],
+  "overclaims_found": [
+   "evidence_relations declare independence_class I3 with a codex route result, but every pasted citation card is I1 and the I3 codex disclosure field is empty.",
+   "'must not be collapsed' is a normative modal inside a card typed INTERPRETIVE.",
+   "seen.citation_refs cite-potential-h2-001..003 are placeholders that do not resolve; seen.capability_readout 'potential_witnessed' is unsupported by them.",
+   "Statement cites Causal Grammar 'Table 1' while the verified passage was replaced by a §6 sentence; the I1 disclosures on that card contradict each other on whether the row was found."
+  ],
+  "evidence_relations_ok": false,
+  "notes": "Packet truncates the claim card mid evidence_relations and omits the falsifier text, so this verdict covers only the visible portion. Self-citation is disclosed throughout; the gap is scope coverage and I3 labelling, not fabrication. Recommend adding Agency Potential and Causal Ethics cards before any release."
+ }
+}

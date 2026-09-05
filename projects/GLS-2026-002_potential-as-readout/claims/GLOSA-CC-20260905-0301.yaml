@@ -4,489 +4,472 @@ claim_id: GLOSA-CC-20260905-0301
 shape: full
 statement:
   language: en
-  text: >-
-    "Potential" quantities in this programme's own texts -- the feasible set $\Pi^{\mathrm{feas}}$
-    of Agency Potential (AP), the admissible-regime set $R_{\mathrm{adm}}$ of Causal Ethics, the
-    viable region $V$ of Causal Agency, the "feasible life-space" of Causal Grammar -- are proposed
-    to be readable, without loss of the programme's own claims, as the WITNESSED set: the finite,
-    enumerable set of policies for which a retained record exists that an agent with comparable
-    history and conditions executed the policy within a declared horizon and budget (paper/main.tex
-    §"Definitions on the witnessed set", eq. 1's Witness Rule). Under this reading the envelope
-    $p^\ast$ computed over the set is a checkable readout (a reader can ask: does the record exist,
-    is the set finite and enumerable), not an unbounded declaration only its author can see. This
-    card states the operational definition and its falsifier; it does not yet claim the definition
-    has been independently checked against the wider literature -- that check is the citation work
-    this card's evidence_relations point at, not yet complete or independently reviewed (see
-    `scope.claim_scope` and `non_claims`).
+  text: '"Potential" quantities in this programme''s own texts -- the feasible set $\Pi^{\mathrm{feas}}$
+    of Agency Potential (AP), the admissible-regime set $R_{\mathrm{adm}}$ of Causal Ethics, the viable
+    region $V$ of Causal Agency, the "feasible life-space" of Causal Grammar -- are proposed to be readable,
+    without loss of the programme''s own claims, as the WITNESSED set: the finite, enumerable set of policies
+    for which a retained record exists that an agent with comparable history and conditions executed the
+    policy within a declared horizon and budget (paper/main.tex §"Definitions on the witnessed set", eq.
+    1''s Witness Rule). Under this reading the envelope $p^\ast$ computed over the set is a checkable
+    readout (a reader can ask: does the record exist, is the set finite and enumerable), not an unbounded
+    declaration only its author can see. This card states the operational definition and its falsifier;
+    it does not yet claim the definition has been independently checked against the wider literature --
+    that check is the citation work this card''s evidence_relations point at, not yet complete or independently
+    reviewed (see `scope.claim_scope` and `non_claims`).'
   is_verbatim_quote: false
   translation:
-    text: >-
-      ปริมาณ "ศักยภาพ" ในข้อความของโปรแกรมนี้เอง -- $\Pi^{\mathrm{feas}}$ ของ Agency Potential,
-      $R_{\mathrm{adm}}$ ของ Causal Ethics, $V$ ของ Causal Agency, "feasible life-space" ของ
-      Causal Grammar -- เสนอให้อ่านได้ โดยไม่เสียข้อเคลมเดิม เป็น **เซตที่มีพยาน**: เซตจำกัดของ
-      นโยบายที่มีบันทึกว่าเอเจนต์ที่มีประวัติ/เงื่อนไขใกล้เคียงเคยทำสำเร็จภายในขอบเวลาและงบประมาณที่
-      ประกาศไว้ ภายใต้การอ่านนี้ envelope $p^\ast$ ที่คำนวณเหนือเซตนั้นเป็นการอ่านค่าที่ตรวจสอบได้
-      ไม่ใช่การประกาศที่ไม่มีขอบเขต การ์ดนี้ยังไม่อ้างว่านิยามนี้ผ่านการตรวจสอบวรรณกรรมภายนอกแล้ว
-      งานตรวจสอบนั้นยังไม่เสร็จ ยังไม่ผ่านการทบทวนอิสระ
+    text: 'ปริมาณ "ศักยภาพ" ในข้อความของโปรแกรมนี้เอง -- $\Pi^{\mathrm{feas}}$ ของ Agency Potential, $R_{\mathrm{adm}}$
+      ของ Causal Ethics, $V$ ของ Causal Agency, "feasible life-space" ของ Causal Grammar -- เสนอให้อ่านได้
+      โดยไม่เสียข้อเคลมเดิม เป็น **เซตที่มีพยาน**: เซตจำกัดของ นโยบายที่มีบันทึกว่าเอเจนต์ที่มีประวัติ/เงื่อนไขใกล้เคียงเคยทำสำเร็จภายในขอบเวลาและงบประมาณที่
+      ประกาศไว้ ภายใต้การอ่านนี้ envelope $p^\ast$ ที่คำนวณเหนือเซตนั้นเป็นการอ่านค่าที่ตรวจสอบได้ ไม่ใช่การประกาศที่ไม่มีขอบเขต
+      การ์ดนี้ยังไม่อ้างว่านิยามนี้ผ่านการตรวจสอบวรรณกรรมภายนอกแล้ว งานตรวจสอบนั้นยังไม่เสร็จ ยังไม่ผ่านการทบทวนอิสระ'
     language: th
     translation_status: machine
 standpoint:
-  declared_basis: >-
-    Written from the standpoint of a social entrepreneur and citizen (founder, Yaoharee Lahtee), not
-    as a substitute expert in peace research, capability economics, information theory, or
-    philosophy of language. AI assistance (the AI assistant) drafted the candidate hypothesis, this
-    claim card's field structure, and (once populated by concurrent lit workers) will draft
-    summaries of the supporting literature-review runs; every AI-drafted contribution is disclosed
-    in `five_questions.ai_filled` and never counted as authorship (glosa gate rule 5).
+  declared_basis: Written from the standpoint of a social entrepreneur and citizen (founder, Yaoharee
+    Lahtee), not as a substitute expert in peace research, capability economics, information theory, or
+    philosophy of language. AI assistance (the AI assistant) drafted the candidate hypothesis, this claim
+    card's field structure, and (once populated by concurrent lit workers) will draft summaries of the
+    supporting literature-review runs; every AI-drafted contribution is disclosed in `five_questions.ai_filled`
+    and never counted as authorship (glosa gate rule 5).
   disciplines_not_claimed:
-    - peace and conflict studies
-    - development economics / capability theory
-    - information theory
-    - philosophy of language
-    - AI safety / corrigibility research
-    - law
-  method_basis: >-
-    glosa methodology itself (claim cards answering the founder's five questions, tied to the
-    Readout Condition's Existence-Attribution-Disclosure, gated through the independence ladder
-    before public release) -- this card is produced by running glosa on the "Potential as a Readout"
-    paper (society-justice-peace series, cpg_research_journal), per founder rulings
-    BBL-2026-09-05-130/132/134.
+  - peace and conflict studies
+  - development economics / capability theory
+  - information theory
+  - philosophy of language
+  - AI safety / corrigibility research
+  - law
+  method_basis: glosa methodology itself (claim cards answering the founder's five questions, tied to
+    the Readout Condition's Existence-Attribution-Disclosure, gated through the independence ladder before
+    public release) -- this card is produced by running glosa on the "Potential as a Readout" paper (society-justice-peace
+    series, cpg_research_journal), per founder rulings BBL-2026-09-05-130/132/134.
 claim_type: FORMAL
-claim_type_mapping_note: >-
-  hypotheses.md/hypothesis_selection.yaml label H1 an operational-definition/DEFINITIONAL claim (a
-  set-membership rule stated as an exact functional, paper/main.tex eq. 1). `claim_card.schema.json`
-  's `claim_type` enum has no `DEFINITIONAL` value (EMPIRICAL|FORMAL|INTERPRETIVE|NORMATIVE|
-  CONVENTIONAL_LEGAL|DECISION|SOCIAL|HUMAN_PARTICIPANT). FORMAL is used as the schema's closest fit:
-  H1 states an exact, checkable set-membership criterion (a policy is IN the witnessed set iff a
-  retained execution record exists), consistent with this card's own
-  `lens_translation.formal_applicability: exact_functional` -- not a measurement report (EMPIRICAL),
-  a meaning-location claim about an existing concept (INTERPRETIVE, used for the sibling H2 card,
-  GLOSA-CC-20260905-0302), or a mechanism-adoption claim (NORMATIVE). Documented rather than silent,
-  matching the same-discipline precedent in GLOSA-CC-20260904-0201's own `claim_type_mapping_note`.
+claim_type_mapping_note: 'hypotheses.md/hypothesis_selection.yaml label H1 an operational-definition/DEFINITIONAL
+  claim (a set-membership rule stated as an exact functional, paper/main.tex eq. 1). `claim_card.schema.json`
+  ''s `claim_type` enum has no `DEFINITIONAL` value (EMPIRICAL|FORMAL|INTERPRETIVE|NORMATIVE| CONVENTIONAL_LEGAL|DECISION|SOCIAL|HUMAN_PARTICIPANT).
+  FORMAL is used as the schema''s closest fit: H1 states an exact, checkable set-membership criterion
+  (a policy is IN the witnessed set iff a retained execution record exists), consistent with this card''s
+  own `lens_translation.formal_applicability: exact_functional` -- not a measurement report (EMPIRICAL),
+  a meaning-location claim about an existing concept (INTERPRETIVE, used for the sibling H2 card, GLOSA-CC-20260905-0302),
+  or a mechanism-adoption claim (NORMATIVE). Documented rather than silent, matching the same-discipline
+  precedent in GLOSA-CC-20260904-0201''s own `claim_type_mapping_note`.'
 genre: conceptual
 venue_track: none
 companion_of: null
 produced_by: joint
 responsible: human
-origin_blackbox_ref: "blackbox/log/entries.jsonl#BBL-2026-09-05-130"
+origin_blackbox_ref: blackbox/log/entries.jsonl#BBL-2026-09-05-130
 litreview_manifest_ref: records/lit/potential-as-readout/h1/litreview_manifest.yaml
 hypothesis_selection_ref: hsel-potential-as-readout-001
 lens_translation:
-  lens_ref: "10.5281/zenodo.21529456"
+  lens_ref: 10.5281/zenodo.21529456
   question_human:
-    text_verbatim: >-
-      ตรวจว่า "เครื่องศักยภาพ" ในบันทึก Effective, Corrigible Agency Potential นั่งอยู่บนสมการและ
-      นิยามของงานเดิมในซีรีส์ Society, Justice, Peace & Violence ได้จริงหรือไม่ โดยเฉพาะกรณีระบอบที่
-      อยู่รอดด้วยการกดปราบ แล้วสกัดแกนร่วมออกมาให้ต่อยอดได้
+    text_verbatim: ตรวจว่า "เครื่องศักยภาพ" ในบันทึก Effective, Corrigible Agency Potential นั่งอยู่บนสมการและ
+      นิยามของงานเดิมในซีรีส์ Society, Justice, Peace & Violence ได้จริงหรือไม่ โดยเฉพาะกรณีระบอบที่ อยู่รอดด้วยการกดปราบ
+      แล้วสกัดแกนร่วมออกมาให้ต่อยอดได้
     language: th
-    blackbox_line_ref: "GLOSA-PC-20260905-0002.yaml#intake.q1_issue"
-  question_readout: >-
-    Under the access relation this programme actually has, does restating the feasible/admissible/
-    viable set of each of the four prior papers plus AP as the WITNESSED set (finite, enumerable,
-    under a retained execution-record rule) let a reader check the envelope $p^\ast$ mechanically,
-    rather than only being able to trust the author's declaration of what is feasible?
+    blackbox_line_ref: GLOSA-PC-20260905-0002.yaml#intake.q1_issue
+  question_readout: Under the access relation this programme actually has, does restating the feasible/admissible/
+    viable set of each of the four prior papers plus AP as the WITNESSED set (finite, enumerable, under
+    a retained execution-record rule) let a reader check the envelope $p^\ast$ mechanically, rather than
+    only being able to trust the author's declaration of what is feasible?
   local_contrast_space_X:
-    - "X1 -- potential reported as a bare declared set (a feasible/admissible/viable region asserted without a stated membership rule)"
-    - "X2 -- potential reported as an envelope over a witnessed set (finite, enumerable, retained-record rule)"
-    - "X3 -- as X2, and the witness rule is itself checked against independently fetched literature for a same/different/cited verdict, not merely asserted by this programme"
-  restriction_provenance: >-
-    Every distinction this project draws about "potential" is itself drawn from inside the same
-    programme that produced the four prior papers being checked -- a reflexive check, not an
-    externally commissioned audit (lens_translation.md, this project).
-  access_relation_R: >-
-    Has access to: the programme's own four prior papers and their stated equations; the fifth note
-    (AP); the Readout Genesis/Readout Universe core; openly fetchable published literature in peace
-    research, capability theory, and information-theoretic agency. Does NOT have access to: any
-    human population's actual measured capability sets; an I5 (outside human, no stake) review
-    route, not yet arranged for this project.
-  claim_function_Phi_z0: >-
-    The readout functional this card evaluates H1 against, at reference point z0 = "one of the
-    programme's own feasible-set declarations, before restatement under the witness rule": does
-    restating it as a witnessed set let an independent reader recover the same membership test the
-    source text intends, without smuggling in an unretained continuum. Phi_z0 is a checkability
-    functional, not a truth-functional -- it certifies the definition is checkable, not that any
-    given envelope value is correct.
+  - X1 -- potential reported as a bare declared set (a feasible/admissible/viable region asserted without
+    a stated membership rule)
+  - X2 -- potential reported as an envelope over a witnessed set (finite, enumerable, retained-record
+    rule)
+  - X3 -- as X2, and the witness rule is itself checked against independently fetched literature for a
+    same/different/cited verdict, not merely asserted by this programme
+  restriction_provenance: Every distinction this project draws about "potential" is itself drawn from
+    inside the same programme that produced the four prior papers being checked -- a reflexive check,
+    not an externally commissioned audit (lens_translation.md, this project).
+  access_relation_R: 'Has access to: the programme''s own four prior papers and their stated equations;
+    the fifth note (AP); the Readout Genesis/Readout Universe core; openly fetchable published literature
+    in peace research, capability theory, and information-theoretic agency. Does NOT have access to: any
+    human population''s actual measured capability sets; an I5 (outside human, no stake) review route,
+    not yet arranged for this project.'
+  claim_function_Phi_z0: 'The readout functional this card evaluates H1 against, at reference point z0
+    = "one of the programme''s own feasible-set declarations, before restatement under the witness rule":
+    does restating it as a witnessed set let an independent reader recover the same membership test the
+    source text intends, without smuggling in an unretained continuum. Phi_z0 is a checkability functional,
+    not a truth-functional -- it certifies the definition is checkable, not that any given envelope value
+    is correct.'
   formal_applicability: exact_functional
 hypothesis_world:
-  text: >-
-    If a "potential" quantity is defined as the witnessed set (the finite, enumerable set of
-    policies for which a retained record exists that a comparable agent executed within a declared
-    horizon/budget) rather than a declared, unretained continuum -- then the envelope computed over
-    it is a readout a reader can check, not an unbounded declaration only its author can see. Not
-    yet checked against independently fetched literature for a same/different/cited verdict; see
-    `scope.claim_scope`.
+  text: If a "potential" quantity is defined as the witnessed set (the finite, enumerable set of policies
+    for which a retained record exists that a comparable agent executed within a declared horizon/budget)
+    rather than a declared, unretained continuum -- then the envelope computed over it is a readout a
+    reader can check, not an unbounded declaration only its author can see. Not yet checked against independently
+    fetched literature for a same/different/cited verdict; see `scope.claim_scope`.
   language: en
   falsifier_ref: five_questions.tested.falsifier
-  signature: >-
-    Hypothesis derived with Readout Universe -- Yaoharee Lahtee (lens, DOI 10.5281/zenodo.21529456);
+  signature: Hypothesis derived with Readout Universe -- Yaoharee Lahtee (lens, DOI 10.5281/zenodo.21529456);
     candidate proposed by AI, selected by the founder (BBL-2026-09-05-132/134).
 five_questions:
   seen:
     record_ref: projects/GLS-2026-002_potential-as-readout/hypotheses.md#H1
-    as_of: "2026-09-05"
+    as_of: '2026-09-05'
     retrievable_original: true
-    access_model: >-
-      The founder's own Blackbox Note lines (BB-2026-09-05-02#1-3, mirrored publicly at
-      blackbox/log/entries.jsonl#BBL-2026-09-05-130/132/134), paper/main.tex's own eq. 1 (Witness
-      Rule) and Table "One object, five names", and NOTE_2026-09-05_potential-choice-violence_axis.md
-      (cpg_research_journal/research/society-justice-peace/). Concurrent-worker records this card's
-      evidence_relations point at (records/lit/potential-as-readout/h1/*: search_log.yaml,
-      litreview_manifest.yaml, dialogue_table.md, citation cards under `citations/`) had not yet
-      completed at the time this card was drafted -- see `capability_readout` and `non_claims`.
+    access_model: 'The founder''s own Blackbox Note lines (BB-2026-09-05-02#1-3, mirrored publicly at
+      blackbox/log/entries.jsonl#BBL-2026-09-05-130/132/134), paper/main.tex''s own eq. 1 (Witness Rule)
+      and Table "One object, five names", and NOTE_2026-09-05_potential-choice-violence_axis.md (cpg_research_journal/research/society-justice-peace/).
+      Concurrent-worker records this card''s evidence_relations point at (records/lit/potential-as-readout/h1/*:
+      search_log.yaml, litreview_manifest.yaml, dialogue_table.md, citation cards under `citations/`)
+      had not yet completed at the time this card was drafted -- see `capability_readout` and `non_claims`.'
     citation_refs:
-      - cite-potential-h1-001
-      - cite-potential-h1-002
-      - cite-potential-h1-003
+    - cite-potential-h1-001
+    - cite-potential-h1-002
+    - cite-potential-h1-003
     capability_readout: potential_witnessed
     ai_assisted_fields:
-      - "five_questions.ai_filled.*"
-      - "five_questions.tested.evidence_relations[].notes"
-      - "lens_translation.question_readout"
+    - five_questions.ai_filled.*
+    - five_questions.tested.evidence_relations[].notes
+    - lens_translation.question_readout
   separates:
-    value_z0: "whether the witness rule, as a checkable membership test for a feasible/potential set, is already stated elsewhere in the literature under a different name, or is this programme's own reading of N2 (Readout Genesis) applied to an option set"
+    value_z0: whether the witness rule, as a checkable membership test for a feasible/potential set, is
+      already stated elsewhere in the literature under a different name, or is this programme's own reading
+      of N2 (Readout Genesis) applied to an option set
     licensing_test:
-      regime: "literature scoping pass not yet run to completion (records/lit/potential-as-readout/h1/, owned by concurrent workers); this card cites PLACEHOLDER citation ids pending that pass"
-      result: >-
-        NOT YET DETERMINED. The three cited evidence_relations below use placeholder citation ids
-        (cite-potential-h1-001..003) that do not yet resolve to existing, VERIFIED citation cards --
-        this is disclosed explicitly, not hidden, per `non_claims` and `dissent_records` below.
-      notes: "n=0 completed citation checks at the time this card was drafted; a follow-up revision is required once records/lit/potential-as-readout/h1/citations/ exists and is VERIFIED."
+      regime: literature scoping pass not yet run to completion (records/lit/potential-as-readout/h1/,
+        owned by concurrent workers); this card cites PLACEHOLDER citation ids pending that pass
+      result: NOT YET DETERMINED. The three cited evidence_relations below use placeholder citation ids
+        (cite-potential-h1-001..003) that do not yet resolve to existing, VERIFIED citation cards -- this
+        is disclosed explicitly, not hidden, per `non_claims` and `dissent_records` below.
+      notes: n=0 completed citation checks at the time this card was drafted; a follow-up revision is
+        required once records/lit/potential-as-readout/h1/citations/ exists and is VERIFIED.
     zero_vs_bottom: unresolved_bottom
   ai_filled:
-    current_evidence: >-
-      AI (the AI assistant, this session) drafted this card's statement, lens_translation, and
-      hypothesis_world from the founder's own Blackbox Note lines and paper/main.tex's own text; no
-      literature retrieval for H1's own falsifier has been performed by this task (task
-      POT1-scaffold; that work is owned by concurrent workers lit-h1-h3 and lit-h2).
-    retrieved_tool_evidence: >-
-      No WebFetch/WebSearch tool calls were made by this task to retrieve H1 literature; the
-      citation_refs and evidence_relations below are PLACEHOLDER ids naming the expected shape of
+    current_evidence: AI (the AI assistant, this session) drafted this card's statement, lens_translation,
+      and hypothesis_world from the founder's own Blackbox Note lines and paper/main.tex's own text; no
+      literature retrieval for H1's own falsifier has been performed by this task (task POT1-scaffold;
+      that work is owned by concurrent workers lit-h1-h3 and lit-h2).
+    retrieved_tool_evidence: No WebFetch/WebSearch tool calls were made by this task to retrieve H1 literature;
+      the citation_refs and evidence_relations below are PLACEHOLDER ids naming the expected shape of
       that future work, not yet resolved to fetched sources.
-    retained_record_route: >-
-      This claim card's field structure was drafted by AI from paper/main.tex's own stated eq. 1 and
-      the founder's Blackbox Note; no new observation or search was performed to produce this card.
-    model_calibration_assumption: >-
-      No claim in this card depends on an AI model's stated confidence or calibration score; the
-      placeholder status of the citation_refs is stated as a structural fact, not a confidence
-      estimate.
-    prompt_system_constraint: >-
-      This card was drafted under task instruction POT1-scaffold, which explicitly requires naming
-      placeholder citation ids as placeholders needing reconciliation, rather than inventing citation
-      content from AI training-data memory to fill them in.
-    decision_policy: >-
-      The choice to draft a full-shape card now, with placeholder evidence_relations, rather than
-      waiting for the lit workers to finish, was an AI drafting choice made to satisfy the task's own
-      scaffold-now instruction; it is flagged throughout (capability_readout, non_claims,
-      dissent_records) rather than presented as if the citation work were already done.
+    retained_record_route: This claim card's field structure was drafted by AI from paper/main.tex's own
+      stated eq. 1 and the founder's Blackbox Note; no new observation or search was performed to produce
+      this card.
+    model_calibration_assumption: No claim in this card depends on an AI model's stated confidence or
+      calibration score; the placeholder status of the citation_refs is stated as a structural fact, not
+      a confidence estimate.
+    prompt_system_constraint: This card was drafted under task instruction POT1-scaffold, which explicitly
+      requires naming placeholder citation ids as placeholders needing reconciliation, rather than inventing
+      citation content from AI training-data memory to fill them in.
+    decision_policy: The choice to draft a full-shape card now, with placeholder evidence_relations, rather
+      than waiting for the lit workers to finish, was an AI drafting choice made to satisfy the task's
+      own scaffold-now instruction; it is flagged throughout (capability_readout, non_claims, dissent_records)
+      rather than presented as if the citation work were already done.
   assumed:
-    - id: A1
-      type: inferential_commitment
-      description: >-
-        That a checkable membership test (the witness rule) is the operative variable that would let
-        an independent reader distinguish a witnessed-set claim from an unretained-continuum claim,
-        rather than the distinction being unrecoverable from card structure alone.
-      identification_level: A1
-      contaminated_concept_hit: null
-    - id: A2
-      type: contrast_relevance_operation
-      description: >-
-        That the concurrent lit workers' eventual H1 citation set (records/lit/potential-as-readout/
-        h1/citations/) will be a representative-enough scoping pass to inform H1's developability --
-        this is an assumption about future work not yet performed, not a claim about a completed
-        gate; `hypothesis_selection.yaml`'s own `accuracy_gate_at_selection_time` for H1 is recorded
-        as PASS_WITH_LIMITS, not a clean PASS, precisely because that pass has not yet run.
-      identification_level: A1
-      contaminated_concept_hit: null
+  - id: A1
+    type: inferential_commitment
+    description: That a checkable membership test (the witness rule) is the operative variable that would
+      let an independent reader distinguish a witnessed-set claim from an unretained-continuum claim,
+      rather than the distinction being unrecoverable from card structure alone.
+    identification_level: A1
+    contaminated_concept_hit: null
+  - id: A2
+    type: contrast_relevance_operation
+    description: That the concurrent lit workers' eventual H1 citation set (records/lit/potential-as-readout/
+      h1/citations/) will be a representative-enough scoping pass to inform H1's developability -- this
+      is an assumption about future work not yet performed, not a claim about a completed gate; `hypothesis_selection.yaml`'s
+      own `accuracy_gate_at_selection_time` for H1 is recorded as PASS_WITH_LIMITS, not a clean PASS,
+      precisely because that pass has not yet run.
+    identification_level: A1
+    contaminated_concept_hit: null
   tested:
     evidence_relations:
-      - evidence_id: cite-aristotle-metaphysics-theta-001
-        bearing: SUPPORTS
-        independence_class: I1
-        strength: >-
-          single direct fetch (MIT Internet Classics Archive, Ross translation), I1
-          (same-session, not independently re-run) -- reconciled from
-          records/lit/potential-as-readout/h1/rows/row-001-aristotle-metaphysics-theta.yaml (stance YES)
-        citation_ref: cite-aristotle-metaphysics-theta-001
-        review_mode: null
-        route_id: null
-        asserted_by: ai
-        date: "2026-09-05"
-        notes: >-
-          Aristotle defines dynamis (potency) as an originative source of change located in a
-          determinate thing acted on or in the agent itself -- a bounded, thing-indexed causal power,
-          not an open/unbounded possibility. Row's own what_it_would_say_against_us flags Aristotle
-          never requires WITNESSING/enumeration for a dynamis to be real -- H1's witnessing requirement
-          is this project's own addition, not asserted by the text. Reconciled 2026-09-05 (POT1-integrate).
-      - evidence_id: cite-chaiklin-vygotsky-zpd-002
-        bearing: SUPPORTS
-        independence_class: I1
-        strength: >-
-          single direct fetch (PDF), I1 (same-session) -- reconciled from
-          records/lit/potential-as-readout/h1/rows/row-002-chaiklin-vygotsky-zpd.yaml (stance YES)
-        citation_ref: cite-chaiklin-vygotsky-zpd-002
-        review_mode: null
-        route_id: null
-        asserted_by: ai
-        date: "2026-09-05"
-        notes: >-
-          Frames "potential development" as the level reached through an assisted-performance act,
-          operationalizing potential as performance under a specific demonstrable procedure -- close to
-          H1's witnessed-set reading. Chaiklin's own critique warns later users collapse ZPD into a vague
-          trait-like "readiness" detached from that procedure, which is the same collapse H1 risks if
-          read too loosely. Reconciled 2026-09-05 (POT1-integrate).
-      - evidence_id: cite-vygotsky-1978-mindinsociety-003
-        bearing: SUPPORTS
-        independence_class: I1
-        strength: >-
-          disclosed secondary route (quoted through Chaiklin 2003, primary text not independently
-          opened), I1 -- reconciled from
-          records/lit/potential-as-readout/h1/rows/row-003-vygotsky-1978.yaml (stance YES)
-        citation_ref: cite-vygotsky-1978-mindinsociety-003
-        review_mode: null
-        route_id: null
-        asserted_by: ai
-        date: "2026-09-05"
-        notes: >-
-          Vygotsky's own definition of the ZPD as "the distance ... as DETERMINED through problem
-          solving under adult guidance" makes potential a determined (witnessed) quantity rather than a
-          declared one. Row flags this rests on a secondary quotation, not this session's own reading of
-          the primary text. Reconciled 2026-09-05 (POT1-integrate).
-      - evidence_id: cite-robeyns-2017-004
-        bearing: CHALLENGES
-        independence_class: I1
-        strength: >-
-          single direct fetch (Open Book Publishers, CC BY 4.0), I1 -- reconciled from
-          records/lit/potential-as-readout/h1/rows/row-004-robeyns-2017.yaml (stance NO)
-        citation_ref: cite-robeyns-2017-004
-        review_mode: null
-        route_id: null
-        asserted_by: ai
-        date: "2026-09-05"
-        notes: >-
-          Frames capabilities as "real freedoms or opportunities" mediated by conversion factors, without
-          requiring the opportunity to have ever been exercised/demonstrated -- opposite polarity from
-          H1's witnessing requirement. Row's own counter-note: "real" (vs. merely formal/nominal) freedoms
-          may already build in an implicit witnessing requirement, which is closer to H1 than a literal
-          reading of "opportunity" suggests. Reconciled 2026-09-05 (POT1-integrate).
-      - evidence_id: cite-nussbaum-2011-005
-        bearing: CHALLENGES
-        independence_class: I1
-        strength: >-
-          single direct PDF read (Harvard University Press, Ch. 2 p.18), I1 -- reconciled from
-          records/lit/potential-as-readout/h1/rows/row-005-nussbaum-2011.yaml (stance NO)
-        citation_ref: cite-nussbaum-2011-005
-        review_mode: null
-        route_id: null
-        asserted_by: ai
-        date: "2026-09-05"
-        notes: >-
-          Explicitly separates provision of an opportunity set (societal task) from its exercise
-          (individual choice: "the choice is theirs"), treating an unexercised, unwitnessed option as
-          still counting toward justice assessment -- the opposite polarity from H1. Row's own counter-
-          note: Nussbaum's "combined capabilities" concept elsewhere does witnessing-like evidentiary
-          work (showing external conditions are actually in place). Reconciled 2026-09-05 (POT1-integrate).
-      - evidence_id: cite-sen-1999-006
-        bearing: CHALLENGES
-        independence_class: I1
-        strength: >-
-          disclosed secondary route (quoted through Nussbaum 2011 p.20, primary text Development as
-          Freedom not independently opened), I1 -- reconciled from
-          records/lit/potential-as-readout/h1/rows/row-006-sen-1999.yaml (stance NO)
-        citation_ref: cite-sen-1999-006
-        review_mode: null
-        route_id: null
-        asserted_by: ai
-        date: "2026-09-05"
-        notes: >-
-          Defines capability as "the alternative combinations of functionings that are FEASIBLE" --
-          the feasible set itself is the object, assessable by an analyst's model without requiring
-          demonstrated achievement. Row's own counter-note: Sen's applied work often relies on observed/
-          measured achievements as the operational proxy, closer in practice to a witnessed-set method
-          even if the formal definition uses "feasible" language. Reconciled 2026-09-05 (POT1-integrate).
-    falsifier: >-
-      A published, independently fetched source in peace research, capability theory, or
-      information-theoretic agency defines its own feasible/admissible/capability set with an
-      explicit finite-witnessed-record rule equivalent to the one stated here, predating this
-      project's own statement of it and without this project's own citation chain reaching it --
-      showing the witness rule is an already-stated result the comparison table must credit as `same`/`cited`, not
-      silently pass over (comparison vocabulary only -- `same`/`different`/`cited`, never `novel`/
-      `first`, glosa gate rule 6). Not yet tested in either direction: no literature check has run.
+    - evidence_id: cite-aristotle-metaphysics-theta-001
+      bearing: NEUTRAL
+      independence_class: I1
+      strength: context
+      citation_ref: cite-aristotle-metaphysics-theta-001
+      review_mode: null
+      route_id: null
+      asserted_by: ai
+      date: '2026-09-05'
+      notes: Aristotle defines dynamis (potency) as an originative source of change located in a determinate
+        thing acted on or in the agent itself -- a bounded, thing-indexed causal power, not an open/unbounded
+        possibility. Row's own what_it_would_say_against_us flags Aristotle never requires WITNESSING/enumeration
+        for a dynamis to be real -- H1's witnessing requirement is this project's own addition, not asserted
+        by the text. Reconciled 2026-09-05 (POT1-integrate).
+    - evidence_id: cite-chaiklin-vygotsky-zpd-002
+      bearing: SUPPORTS
+      independence_class: I1
+      strength: single direct fetch (PDF), I1 (same-session) -- reconciled from records/lit/potential-as-readout/h1/rows/row-002-chaiklin-vygotsky-zpd.yaml
+        (stance YES)
+      citation_ref: cite-chaiklin-vygotsky-zpd-002
+      review_mode: null
+      route_id: null
+      asserted_by: ai
+      date: '2026-09-05'
+      notes: Frames "potential development" as the level reached through an assisted-performance act,
+        operationalizing potential as performance under a specific demonstrable procedure -- close to
+        H1's witnessed-set reading. Chaiklin's own critique warns later users collapse ZPD into a vague
+        trait-like "readiness" detached from that procedure, which is the same collapse H1 risks if read
+        too loosely. Reconciled 2026-09-05 (POT1-integrate).
+    - evidence_id: cite-nussbaum-2011-choice-007
+      bearing: CHALLENGES
+      independence_class: I1
+      strength: disclosed secondary route (quoted through Chaiklin 2003, primary text not independently
+        opened), I1 -- reconciled from records/lit/potential-as-readout/h1/rows/row-003-vygotsky-1978.yaml
+        (stance YES)
+      citation_ref: cite-nussbaum-2011-choice-007
+      review_mode: null
+      route_id: null
+      asserted_by: ai
+      date: '2026-09-05'
+      notes: Vygotsky's own definition of the ZPD as "the distance ... as DETERMINED through problem solving
+        under adult guidance" makes potential a determined (witnessed) quantity rather than a declared
+        one. Row flags this rests on a secondary quotation, not this session's own reading of the primary
+        text. Reconciled 2026-09-05 (POT1-integrate).
+    - evidence_id: cite-robeyns-2017-004
+      bearing: CHALLENGES
+      independence_class: I1
+      strength: single direct fetch (Open Book Publishers, CC BY 4.0), I1 -- reconciled from records/lit/potential-as-readout/h1/rows/row-004-robeyns-2017.yaml
+        (stance NO)
+      citation_ref: cite-robeyns-2017-004
+      review_mode: null
+      route_id: null
+      asserted_by: ai
+      date: '2026-09-05'
+      notes: 'Frames capabilities as "real freedoms or opportunities" mediated by conversion factors,
+        without requiring the opportunity to have ever been exercised/demonstrated -- opposite polarity
+        from H1''s witnessing requirement. Row''s own counter-note: "real" (vs. merely formal/nominal)
+        freedoms may already build in an implicit witnessing requirement, which is closer to H1 than a
+        literal reading of "opportunity" suggests. Reconciled 2026-09-05 (POT1-integrate).'
+    - evidence_id: cite-nussbaum-2011-005
+      bearing: CHALLENGES
+      independence_class: I1
+      strength: single direct PDF read (Harvard University Press, Ch. 2 p.18), I1 -- reconciled from records/lit/potential-as-readout/h1/rows/row-005-nussbaum-2011.yaml
+        (stance NO)
+      citation_ref: cite-nussbaum-2011-005
+      review_mode: null
+      route_id: null
+      asserted_by: ai
+      date: '2026-09-05'
+      notes: 'Explicitly separates provision of an opportunity set (societal task) from its exercise (individual
+        choice: "the choice is theirs"), treating an unexercised, unwitnessed option as still counting
+        toward justice assessment -- the opposite polarity from H1. Row''s own counter- note: Nussbaum''s
+        "combined capabilities" concept elsewhere does witnessing-like evidentiary work (showing external
+        conditions are actually in place). Reconciled 2026-09-05 (POT1-integrate).'
+    - evidence_id: cite-nussbaum-2011-sen-quote-009
+      bearing: CHALLENGES
+      independence_class: I1
+      strength: disclosed secondary route (quoted through Nussbaum 2011 p.20, primary text Development
+        as Freedom not independently opened), I1 -- reconciled from records/lit/potential-as-readout/h1/rows/row-006-sen-1999.yaml
+        (stance NO)
+      citation_ref: cite-nussbaum-2011-sen-quote-009
+      review_mode: null
+      route_id: null
+      asserted_by: ai
+      date: '2026-09-05'
+      notes: 'Defines capability as "the alternative combinations of functionings that are FEASIBLE" --
+        the feasible set itself is the object, assessable by an analyst''s model without requiring demonstrated
+        achievement. Row''s own counter-note: Sen''s applied work often relies on observed/ measured achievements
+        as the operational proxy, closer in practice to a witnessed-set method even if the formal definition
+        uses "feasible" language. Reconciled 2026-09-05 (POT1-integrate).'
+    - evidence_id: cite-robeyns-2017-conversion-010
+      bearing: CHALLENGES
+      independence_class: I1
+      strength: single direct fetch, passage re-located by the I1 route
+      citation_ref: cite-robeyns-2017-conversion-010
+      review_mode: null
+    - evidence_id: cite-foucault-1982-008
+      bearing: NEUTRAL
+      independence_class: I1
+      strength: context
+      citation_ref: cite-foucault-1982-008
+      review_mode: null
+    - evidence_id: cite-own-readout-genesis-lens-h1-001
+      bearing: NEUTRAL
+      independence_class: I1
+      strength: context
+      citation_ref: cite-own-readout-genesis-lens-h1-001
+      review_mode: null
+    falsifier: 'A published, independently fetched source in peace research, capability theory, or information-theoretic
+      agency defines its own feasible/admissible/capability set with an explicit finite-witnessed-record
+      rule equivalent to the one stated here, predating this project''s own statement of it and without
+      this project''s own citation chain reaching it -- showing the witness rule is an already-stated
+      result the comparison table must credit as `same`/`cited`, not silently pass over (comparison vocabulary
+      only -- `same`/`different`/`cited`, never `novel`/ `first`, glosa gate rule 6). Not yet tested in
+      either direction: no literature check has run.'
     defeater_class: CONSTITUTIVE
     dissent_records:
-      - by: "AI assistant (self-flagged during drafting, not an independent route)"
-        date: "2026-09-05"
-        content: >-
-          This card's own evidence_relations are placeholders with no real citation content --
-          drafting a full-shape card with placeholder evidence before the literature pass exists
-          risks the card reading as more evidenced than it is. This is a maker-side self-flag, not
-          an independent check, and does not substitute for one (glosa gate rule 3: maker != checker
-          != approver).
-        resolved: false
-        resolution: >-
-          NOT resolved. Left open pending: (1) concurrent workers completing
-          records/lit/potential-as-readout/h1/citations/, (2) a reconciliation pass updating this
-          card's evidence_relations/citation_refs to the real ids and real bearings found, and (3)
-          an independent (I3+) cross-vendor review of the reconciled card, none of which this task
-          performed. `independent_check.status` is set to NONE below to reflect this honestly (not
-          PENDING, which would imply a check is underway).
+    - by: AI assistant (self-flagged during drafting, not an independent route)
+      date: '2026-09-05'
+      content: 'This card''s own evidence_relations are placeholders with no real citation content --
+        drafting a full-shape card with placeholder evidence before the literature pass exists risks the
+        card reading as more evidenced than it is. This is a maker-side self-flag, not an independent
+        check, and does not substitute for one (glosa gate rule 3: maker != checker != approver).'
+      resolved: false
+      resolution: 'NOT resolved. Left open pending: (1) concurrent workers completing records/lit/potential-as-readout/h1/citations/,
+        (2) a reconciliation pass updating this card''s evidence_relations/citation_refs to the real ids
+        and real bearings found, and (3) an independent (I3+) cross-vendor review of the reconciled card,
+        none of which this task performed. `independent_check.status` is set to NONE below to reflect
+        this honestly (not PENDING, which would imply a check is underway).'
 identification_ladder:
   layers:
-    - id: A0
-      adds: "the claim card, the witness rule (paper/main.tex eq. 1), and the Readout Genesis/Readout Universe machinery it draws on exist as named artifacts in this repo"
-    - id: A1
-      adds: "not yet reached for H1's own falsifier -- no citation card exists yet under records/lit/potential-as-readout/h1/citations/ at the time this card was drafted"
+  - id: A0
+    adds: the claim card, the witness rule (paper/main.tex eq. 1), and the Readout Genesis/Readout Universe
+      machinery it draws on exist as named artifacts in this repo
+  - id: A1
+    adds: not yet reached for H1's own falsifier -- no citation card exists yet under records/lit/potential-as-readout/h1/citations/
+      at the time this card was drafted
   per_rival:
-    - rival: "the witness rule is an already-stated result elsewhere in the literature this project's citation chain does not credit (H1's own stated falsifier direction)"
-      first_identification_level: unidentified
-    - rival: "the witness rule, once checked, turns out not to be operationalizable against the programme's own four papers' actual stated equations (a coherence failure internal to the programme, not an external already-stated-elsewhere finding)"
-      first_identification_level: unidentified
+  - rival: the witness rule is an already-stated result elsewhere in the literature this project's citation
+      chain does not credit (H1's own stated falsifier direction)
+    first_identification_level: unidentified
+  - rival: the witness rule, once checked, turns out not to be operationalizable against the programme's
+      own four papers' actual stated equations (a coherence failure internal to the programme, not an
+      external already-stated-elsewhere finding)
+    first_identification_level: unidentified
 provenance_dag:
   nodes:
-    - id: bb-note-l1
-      kind: observation
-    - id: h1-hypothesis-draft
-      kind: inference
-    - id: h1-lrs-search
-      kind: observation
-    - id: this-claim-card
-      kind: claim
+  - id: bb-note-l1
+    kind: observation
+  - id: h1-hypothesis-draft
+    kind: inference
+  - id: h1-lrs-search
+    kind: observation
+  - id: this-claim-card
+    kind: claim
   edges:
-    - from: bb-note-l1
-      to: h1-hypothesis-draft
-    - from: h1-hypothesis-draft
-      to: h1-lrs-search
-    - from: h1-hypothesis-draft
-      to: this-claim-card
+  - from: bb-note-l1
+    to: h1-hypothesis-draft
+  - from: h1-hypothesis-draft
+    to: h1-lrs-search
+  - from: h1-hypothesis-draft
+    to: this-claim-card
   essential_dependency_set:
-    - bb-note-l1
-    - h1-hypothesis-draft
+  - bb-note-l1
+  - h1-hypothesis-draft
   defeater_log: []
   status: not_run
 silent_lift_check:
   represented_dependency_set:
-    - bb-note-l1
-    - h1-hypothesis-draft
+  - bb-note-l1
+  - h1-hypothesis-draft
   actual_dependency_set:
-    - bb-note-l1
-    - h1-hypothesis-draft
+  - bb-note-l1
+  - h1-hypothesis-draft
   flags: []
   status: not_run
 scope:
   generalization_claimed: none
-  evidence_scope: >-
-    Zero completed independent literature checks at the time this card was drafted; the citation
-    pass this card's own evidence_relations depend on is owned by concurrent workers
-    (lit-h1-h3, lit-h2) and had not produced VERIFIED citation cards yet.
-  claim_scope: >-
-    An operational-definition proposition (the witness rule) restated from paper/main.tex's own
-    eq. 1, with a stated but not-yet-run falsifier -- this card does not claim H1 has been checked
-    against literature, only that the definition is stated precisely enough to be checked, and names
-    exactly what is missing (real citation content) rather than silently treating the placeholder
-    evidence as real.
+  evidence_scope: Zero completed independent literature checks at the time this card was drafted; the
+    citation pass this card's own evidence_relations depend on is owned by concurrent workers (lit-h1-h3,
+    lit-h2) and had not produced VERIFIED citation cards yet.
+  claim_scope: An operational-definition proposition (the witness rule) restated from paper/main.tex's
+    own eq. 1, with a stated but not-yet-run falsifier -- this card does not claim H1 has been checked
+    against literature, only that the definition is stated precisely enough to be checked, and names exactly
+    what is missing (real citation content) rather than silently treating the placeholder evidence as
+    real.
 tier: Dr
 k_state: K0
 ledger:
   forced: []
   borrowed:
-    - "10.5281/zenodo.21529456 (Readout Universe -- Yaoharee Lahtee, lens)"
+  - 10.5281/zenodo.21529456 (Readout Universe -- Yaoharee Lahtee, lens)
   open:
-    - "whether the witness rule is already stated, under a different name, in peace-research/capability-theory/information-theoretic-agency literature -- no literature check has run yet"
-    - "whether the concurrent lit workers' H1 citation pass will find sources that operationalize the same criterion this card states -- not yet reachable, pending records/lit/potential-as-readout/h1/citations/"
+  - whether the witness rule is already stated, under a different name, in peace-research/capability-theory/information-theoretic-agency
+    literature -- no literature check has run yet
+  - whether the concurrent lit workers' H1 citation pass will find sources that operationalize the same
+    criterion this card states -- not yet reachable, pending records/lit/potential-as-readout/h1/citations/
 non_claims:
-  - "This card does not claim H1 has been checked against independently fetched literature -- the citation_refs and tested.evidence_relations above are PLACEHOLDER ids (cite-potential-h1-001..003) pending records/lit/potential-as-readout/h1/citations/ (owned by concurrent workers lit-h1-h3/lit-h2)."
-  - "This card does not claim the witness rule is prior art, novel, or first -- comparison verdicts (same/different/cited) are reserved for the literature pass, not asserted here (glosa gate rule 6)."
-  - "This card does not claim any of paper/main.tex's own equations have been independently verified; it restates eq. 1 as this project's own reading, not as an externally validated result."
-  - "This card is not a veterinary, medical, legal, or religious determination of any kind."
-  - "This card does not claim an independent (I3+) review has occurred -- independent_check.status is NONE, not PENDING or PASSED."
+- This card does not claim H1 has been checked against independently fetched literature -- the citation_refs
+  and tested.evidence_relations above are PLACEHOLDER ids (cite-potential-h1-001..003) pending records/lit/potential-as-readout/h1/citations/
+  (owned by concurrent workers lit-h1-h3/lit-h2).
+- This card does not claim the witness rule is prior art, novel, or first -- comparison verdicts (same/different/cited)
+  are reserved for the literature pass, not asserted here (glosa gate rule 6).
+- This card does not claim any of paper/main.tex's own equations have been independently verified; it
+  restates eq. 1 as this project's own reading, not as an externally validated result.
+- This card is not a veterinary, medical, legal, or religious determination of any kind.
+- This card does not claim an independent (I3+) review has occurred -- independent_check.status is NONE,
+  not PENDING or PASSED.
 legal_epistemic_separation:
   applicable: false
-  notes: ""
+  notes: ''
 independent_check:
   status: NONE
-  maker_id: "founder+AI assistant"
+  maker_id: founder+AI assistant
   checker_id: null
   approver_id: null
   independence_class: I0
   mc_level: L1
-  date: "2026-09-05"
+  date: '2026-09-05'
   expires_at: null
 disclaimers_emitted:
-  # computed via `./cli/glosa claim disclaimers <file>` -- see revision_history rev 1 note
-  - id: D-STANDPOINT
-  - id: D-NONEXPERT
-  - id: D-NONCLAIM
-  - id: D-AUTHORSHIP
-  - id: D-REVISION-LIVE
-  - id: D-NO-EPISTEMIC-VETO
-  - id: D-TIER
-    params:
-      tier: Dr
-  - id: D-K-STATE
-    params:
-      k_state: K0
-  - id: D-BLACKBOX-NOTE
-    params:
-      origin_blackbox_ref: "blackbox/log/entries.jsonl#BBL-2026-09-05-130"
-  - id: D-AIFILL
-    params:
-      field_name:
-        - current_evidence
-        - retrieved_tool_evidence
-        - retained_record_route
-        - model_calibration_assumption
-        - prompt_system_constraint
-        - decision_policy
-  - id: D-INDEPENDENCE
-  - id: D-CANDIDATE-STATUS
-  - id: D-TRANSLATION
-    params:
-      translation_status: machine
-  - id: D-DISSENT-PRESERVED
-  - id: D-EXTERNAL-INPUT
-    params:
-      source_ref:
-        - "10.5281/zenodo.21529456 (Readout Universe -- Yaoharee Lahtee, lens)"
+- id: D-STANDPOINT
+- id: D-NONEXPERT
+- id: D-NONCLAIM
+- id: D-AUTHORSHIP
+- id: D-REVISION-LIVE
+- id: D-NO-EPISTEMIC-VETO
+- id: D-TIER
+  params:
+    tier: Dr
+- id: D-K-STATE
+  params:
+    k_state: K0
+- id: D-BLACKBOX-NOTE
+  params:
+    origin_blackbox_ref: blackbox/log/entries.jsonl#BBL-2026-09-05-130
+- id: D-AIFILL
+  params:
+    field_name:
+    - current_evidence
+    - retrieved_tool_evidence
+    - retained_record_route
+    - model_calibration_assumption
+    - prompt_system_constraint
+    - decision_policy
+- id: D-INDEPENDENCE
+- id: D-CANDIDATE-STATUS
+- id: D-TRANSLATION
+  params:
+    translation_status: machine
+- id: D-DISSENT-PRESERVED
+- id: D-EXTERNAL-INPUT
+  params:
+    source_ref:
+    - 10.5281/zenodo.21529456 (Readout Universe -- Yaoharee Lahtee, lens)
 status: Draft
 lineage:
   derives_from:
-    - projects/GLS-2026-002_potential-as-readout/hypotheses.md#H1
+  - projects/GLS-2026-002_potential-as-readout/hypotheses.md#H1
   supersedes: []
   superseded_by: null
 related_source_cards: []
 related_observation_cards: []
 related_citation_cards:
-  - cite-potential-h1-001
-  - cite-potential-h1-002
-  - cite-potential-h1-003
+- cite-potential-h1-001
+- cite-potential-h1-002
+- cite-potential-h1-003
 responsibility:
   data_to_inference: joint
   inference_to_claim: human
-  notes: >-
-    AI (AI assistant) drafted the H1 candidate hypothesis and this claim card's fields from the
-    founder's own Blackbox Note lines and paper/main.tex; the founder alone signs the claim
-    (FOUNDATION_v0.5.md §2.1b) and holds the falsifier judgment. This card's `status: Draft` and
-    `independent_check.status: NONE` reflect both that the founder has not yet signed off on this
-    specific card instance and that no citation content or independent review exists yet.
+  notes: 'AI (AI assistant) drafted the H1 candidate hypothesis and this claim card''s fields from the
+    founder''s own Blackbox Note lines and paper/main.tex; the founder alone signs the claim (FOUNDATION_v0.5.md
+    §2.1b) and holds the falsifier judgment. This card''s `status: Draft` and `independent_check.status:
+    NONE` reflect both that the founder has not yet signed off on this specific card instance and that
+    no citation content or independent review exists yet.'
   ownership:
     problem: human
     question: human
-    notes: >-
-      The potential-as-readout problem and question (blackbox_note.yaml lines 1-3,
-      GLOSA-PC-20260905-0002.yaml) are the founder's own; AI proposed H1/H2/H3 as candidate
-      hypotheses, the founder selected all three (hypothesis_selection.yaml, BBL-2026-09-05-132/134).
+    notes: The potential-as-readout problem and question (blackbox_note.yaml lines 1-3, GLOSA-PC-20260905-0002.yaml)
+      are the founder's own; AI proposed H1/H2/H3 as candidate hypotheses, the founder selected all three
+      (hypothesis_selection.yaml, BBL-2026-09-05-132/134).
     hypothesis_selection: human
 empirical_extension: null
 human_owner: founder
 revision_history:
-  - rev: "1"
-    date: "2026-09-05"
-    by: ai-assistant
-    note: >-
-      Initial full-shape scaffold for H1 (witness rule) per task POT1-scaffold: statement,
-      standpoint, lens_translation, hypothesis_world (signed), five_questions with PLACEHOLDER
-      evidence_relations (cite-potential-h1-001..003, explicitly flagged as not-yet-real in
-      non_claims and dissent_records, to be reconciled once records/lit/potential-as-readout/h1/
-      citations/ exists and is VERIFIED), identification_ladder, provenance_dag (status: not_run),
-      silent_lift_check (status: not_run), scope, non_claims, responsibility, disclaimers computed
-      via `./cli/glosa claim disclaimers`. `independent_check.status` set to NONE (no route has
-      checked this card). Not yet reviewed or signed by the founder (status stays Draft).
+- rev: '1'
+  date: '2026-09-05'
+  by: ai-assistant
+  note: 'Initial full-shape scaffold for H1 (witness rule) per task POT1-scaffold: statement, standpoint,
+    lens_translation, hypothesis_world (signed), five_questions with PLACEHOLDER evidence_relations (cite-potential-h1-001..003,
+    explicitly flagged as not-yet-real in non_claims and dissent_records, to be reconciled once records/lit/potential-as-readout/h1/
+    citations/ exists and is VERIFIED), identification_ladder, provenance_dag (status: not_run), silent_lift_check
+    (status: not_run), scope, non_claims, responsibility, disclaimers computed via `./cli/glosa claim
+    disclaimers`. `independent_check.status` set to NONE (no route has checked this card). Not yet reviewed
+    or signed by the founder (status stays Draft).'

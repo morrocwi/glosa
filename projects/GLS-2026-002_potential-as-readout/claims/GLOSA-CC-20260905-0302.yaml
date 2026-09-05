@@ -4,440 +4,393 @@ claim_id: GLOSA-CC-20260905-0302
 shape: full
 statement:
   language: en
-  text: >-
-    "Potential" across this programme's five texts is proposed to be at minimum two layers that
-    must not be collapsed: LAYER 1, choosing a policy within an already-fixed constraint structure
-    $C$ (what Agency Potential's $p^\ast$ computes, what Causal Ethics' Axiom II selects a regime
-    within); and LAYER 2, changing the constraint structure itself -- renegotiating a rule, opening
-    a correction channel, forming a coalition, delegating -- which Causal Agency reserves the word
-    "agency" for ($\partial T_p/\partial C \cdot \partial C/\partial x > 0$, Def. 3) and calls mere
-    layer-1 stabilisation "proto-agency" (§6.5-6.6), and which Causal Grammar's "repair" names as a
-    protected layer-2 act (paper/main.tex, D3). This card states the proposed two-layer distinction
-    and its falsifier; it does not yet claim the distinction has been checked against the wider
-    human-agency literature (capability theory, social-cognitive theory, relational sociology) for
-    portability -- that check is the citation work this card's evidence_relations point at, not yet
-    complete or independently reviewed (see `scope.claim_scope` and `non_claims`).
+  text: '"Potential" across this programme''s five texts is proposed to be at minimum two layers that
+    must not be collapsed: LAYER 1, choosing a policy within an already-fixed constraint structure $C$
+    (what Agency Potential''s $p^\ast$ computes, what Causal Ethics'' Axiom II selects a regime within);
+    and LAYER 2, changing the constraint structure itself -- renegotiating a rule, opening a correction
+    channel, forming a coalition, delegating -- which Causal Agency reserves the word "agency" for ($\partial
+    T_p/\partial C \cdot \partial C/\partial x > 0$, Def. 3) and calls mere layer-1 stabilisation "proto-agency"
+    (§6.5-6.6), and which Causal Grammar''s "repair" names as a protected layer-2 act (paper/main.tex,
+    D3). This card states the proposed two-layer distinction and its falsifier; it does not yet claim
+    the distinction has been checked against the wider human-agency literature (capability theory, social-cognitive
+    theory, relational sociology) for portability -- that check is the citation work this card''s evidence_relations
+    point at, not yet complete or independently reviewed (see `scope.claim_scope` and `non_claims`).'
   is_verbatim_quote: false
   translation:
-    text: >-
-      "ศักยภาพ" ในห้าข้อความของโปรแกรมนี้เสนอให้มีอย่างน้อยสองชั้นที่ห้ามยุบรวมกัน: **ชั้น 1**
-      เลือกนโยบายภายในโครงสร้างข้อจำกัด $C$ ที่ตายตัวแล้ว (สิ่งที่ $p^\ast$ ของ Agency Potential
-      คำนวณ) และ **ชั้น 2** เปลี่ยนโครงสร้างข้อจำกัดเอง ซึ่ง Causal Agency สงวนคำว่า "agency" ไว้ให้
-      ชั้นนี้เท่านั้น และเรียกการทรงตัวในชั้น 1 ว่า "proto-agency" ส่วน Causal Grammar เรียกการเปิด
-      พื้นที่คืนภายใต้การคุ้มครองว่า "repair" การ์ดนี้ยังไม่อ้างว่าข้อแยกนี้ผ่านการตรวจสอบวรรณกรรม
-      มนุษย์-agency ภายนอกแล้ว งานตรวจสอบนั้นยังไม่เสร็จ
+    text: '"ศักยภาพ" ในห้าข้อความของโปรแกรมนี้เสนอให้มีอย่างน้อยสองชั้นที่ห้ามยุบรวมกัน: **ชั้น 1** เลือกนโยบายภายในโครงสร้างข้อจำกัด
+      $C$ ที่ตายตัวแล้ว (สิ่งที่ $p^\ast$ ของ Agency Potential คำนวณ) และ **ชั้น 2** เปลี่ยนโครงสร้างข้อจำกัดเอง
+      ซึ่ง Causal Agency สงวนคำว่า "agency" ไว้ให้ ชั้นนี้เท่านั้น และเรียกการทรงตัวในชั้น 1 ว่า "proto-agency"
+      ส่วน Causal Grammar เรียกการเปิด พื้นที่คืนภายใต้การคุ้มครองว่า "repair" การ์ดนี้ยังไม่อ้างว่าข้อแยกนี้ผ่านการตรวจสอบวรรณกรรม
+      มนุษย์-agency ภายนอกแล้ว งานตรวจสอบนั้นยังไม่เสร็จ'
     language: th
     translation_status: machine
 standpoint:
-  declared_basis: >-
-    Written from the standpoint of a social entrepreneur and citizen (founder, Yaoharee Lahtee), not
-    as a substitute expert in capability economics, social-cognitive psychology, or relational
-    sociology. AI assistance (the AI assistant) drafted the candidate hypothesis and this claim
-    card's field structure; every AI-drafted contribution is disclosed in `five_questions.ai_filled`
-    and never counted as authorship (glosa gate rule 5).
+  declared_basis: Written from the standpoint of a social entrepreneur and citizen (founder, Yaoharee
+    Lahtee), not as a substitute expert in capability economics, social-cognitive psychology, or relational
+    sociology. AI assistance (the AI assistant) drafted the candidate hypothesis and this claim card's
+    field structure; every AI-drafted contribution is disclosed in `five_questions.ai_filled` and never
+    counted as authorship (glosa gate rule 5).
   disciplines_not_claimed:
-    - development economics / capability theory
-    - social-cognitive psychology
-    - relational sociology
-    - peace and conflict studies
-    - law
-  method_basis: >-
-    glosa methodology itself (claim cards answering the founder's five questions, tied to the
-    Readout Condition's Existence-Attribution-Disclosure, gated through the independence ladder
-    before public release) -- this card is produced by running glosa on the "Potential as a Readout"
-    paper (society-justice-peace series, cpg_research_journal), per founder rulings
-    BBL-2026-09-05-130/132/134.
+  - development economics / capability theory
+  - social-cognitive psychology
+  - relational sociology
+  - peace and conflict studies
+  - law
+  method_basis: glosa methodology itself (claim cards answering the founder's five questions, tied to
+    the Readout Condition's Existence-Attribution-Disclosure, gated through the independence ladder before
+    public release) -- this card is produced by running glosa on the "Potential as a Readout" paper (society-justice-peace
+    series, cpg_research_journal), per founder rulings BBL-2026-09-05-130/132/134.
 claim_type: INTERPRETIVE
-claim_type_mapping_note: >-
-  hypotheses.md/hypothesis_selection.yaml label H2 "CONCEPTUAL" (a claim about how many distinct
-  layers the word "potential" names). `claim_card.schema.json`'s `claim_type` enum has no
-  `CONCEPTUAL` value (EMPIRICAL|FORMAL|INTERPRETIVE|NORMATIVE|CONVENTIONAL_LEGAL|DECISION|SOCIAL|
-  HUMAN_PARTICIPANT); `genre: conceptual` (below) carries the "conceptual" vocabulary as a separate
-  axis. INTERPRETIVE is used as the schema's closest fit, the same mapping GLS-2026-001's own H2
-  card (GLOSA-CC-20260904-0202) used for a structurally similar claim (a claim about where a
-  concept's structure/meaning is located, not a measurement report or a mechanism-adoption claim).
-  Documented rather than silent, per the same precedent.
+claim_type_mapping_note: 'hypotheses.md/hypothesis_selection.yaml label H2 "CONCEPTUAL" (a claim about
+  how many distinct layers the word "potential" names). `claim_card.schema.json`''s `claim_type` enum
+  has no `CONCEPTUAL` value (EMPIRICAL|FORMAL|INTERPRETIVE|NORMATIVE|CONVENTIONAL_LEGAL|DECISION|SOCIAL|
+  HUMAN_PARTICIPANT); `genre: conceptual` (below) carries the "conceptual" vocabulary as a separate axis.
+  INTERPRETIVE is used as the schema''s closest fit, the same mapping GLS-2026-001''s own H2 card (GLOSA-CC-20260904-0202)
+  used for a structurally similar claim (a claim about where a concept''s structure/meaning is located,
+  not a measurement report or a mechanism-adoption claim). Documented rather than silent, per the same
+  precedent.'
 genre: conceptual
 venue_track: none
 companion_of: null
 produced_by: joint
 responsible: human
-origin_blackbox_ref: "blackbox/log/entries.jsonl#BBL-2026-09-05-130"
+origin_blackbox_ref: blackbox/log/entries.jsonl#BBL-2026-09-05-130
 litreview_manifest_ref: records/lit/potential-as-readout/h2/litreview_manifest.yaml
 hypothesis_selection_ref: hsel-potential-as-readout-001
 lens_translation:
-  lens_ref: "10.5281/zenodo.21529456"
+  lens_ref: 10.5281/zenodo.21529456
   question_human:
-    text_verbatim: >-
-      ตรวจว่า "เครื่องศักยภาพ" ในบันทึก Effective, Corrigible Agency Potential นั่งอยู่บนสมการและ
-      นิยามของงานเดิมในซีรีส์ Society, Justice, Peace & Violence ได้จริงหรือไม่ โดยเฉพาะกรณีระบอบที่
-      อยู่รอดด้วยการกดปราบ แล้วสกัดแกนร่วมออกมาให้ต่อยอดได้
+    text_verbatim: ตรวจว่า "เครื่องศักยภาพ" ในบันทึก Effective, Corrigible Agency Potential นั่งอยู่บนสมการและ
+      นิยามของงานเดิมในซีรีส์ Society, Justice, Peace & Violence ได้จริงหรือไม่ โดยเฉพาะกรณีระบอบที่ อยู่รอดด้วยการกดปราบ
+      แล้วสกัดแกนร่วมออกมาให้ต่อยอดได้
     language: th
-    blackbox_line_ref: "GLOSA-PC-20260905-0002.yaml#intake.q1_issue"
-  question_readout: >-
-    Under the access relation this programme actually has, does the layer-1/layer-2 separation
-    Causal Agency already draws (D3) generalize as a portable reading of "potential" across the
-    other three papers and the wider human-agency literature, or is it specific to Causal Agency's
-    own vocabulary?
+    blackbox_line_ref: GLOSA-PC-20260905-0002.yaml#intake.q1_issue
+  question_readout: Under the access relation this programme actually has, does the layer-1/layer-2 separation
+    Causal Agency already draws (D3) generalize as a portable reading of "potential" across the other
+    three papers and the wider human-agency literature, or is it specific to Causal Agency's own vocabulary?
   local_contrast_space_X:
-    - "X1 -- potential reported as one flat layer-1 envelope (choice within a fixed structure only), with no separate accounting for capacity to change the structure"
-    - "X2 -- potential reported as two separated layers (layer 1: choice within C; layer 2: change of C), per Causal Agency's own agency/proto-agency distinction"
-    - "X3 -- as X2, and the two-layer separation is checked against independently fetched capability-theory/social-cognitive/relational-sociology literature for a same/different/cited verdict, not merely asserted by this programme"
-  restriction_provenance: >-
-    Every distinction this project draws about "potential" is itself drawn from inside the same
-    programme that produced the four prior papers being checked -- a reflexive check, not an
-    externally commissioned audit (lens_translation.md, this project).
-  access_relation_R: >-
-    Has access to: the programme's own four prior papers (especially Causal Agency's own layer
-    distinction, Def. 2-3, §6.5-6.6) and Causal Grammar's "repair"; openly fetchable capability-
-    theory, social-cognitive-theory, and relational-sociology literature. Does NOT have access to: a
-    reader study or field evidence on whether human-agency researchers outside this programme
-    already draw or reject this same line; an I5 (outside human, no stake) route, not yet arranged.
-  claim_function_Phi_z0: >-
-    The readout functional this card evaluates H2 against, at reference point z0 = "a single
-    human-agency source's own account of what 'potential' or 'agency' means": does restating that
-    account through the layer-1/layer-2 lens recover a distinction the source itself already draws
-    (same), a distinction it draws differently (different), or a distinction genuinely absent from
-    it (a real gap, not yet a novelty claim). Phi_z0 is a fit-checking functional, not a
-    truth-functional.
+  - X1 -- potential reported as one flat layer-1 envelope (choice within a fixed structure only), with
+    no separate accounting for capacity to change the structure
+  - 'X2 -- potential reported as two separated layers (layer 1: choice within C; layer 2: change of C),
+    per Causal Agency''s own agency/proto-agency distinction'
+  - X3 -- as X2, and the two-layer separation is checked against independently fetched capability-theory/social-cognitive/relational-sociology
+    literature for a same/different/cited verdict, not merely asserted by this programme
+  restriction_provenance: Every distinction this project draws about "potential" is itself drawn from
+    inside the same programme that produced the four prior papers being checked -- a reflexive check,
+    not an externally commissioned audit (lens_translation.md, this project).
+  access_relation_R: 'Has access to: the programme''s own four prior papers (especially Causal Agency''s
+    own layer distinction, Def. 2-3, §6.5-6.6) and Causal Grammar''s "repair"; openly fetchable capability-
+    theory, social-cognitive-theory, and relational-sociology literature. Does NOT have access to: a reader
+    study or field evidence on whether human-agency researchers outside this programme already draw or
+    reject this same line; an I5 (outside human, no stake) route, not yet arranged.'
+  claim_function_Phi_z0: 'The readout functional this card evaluates H2 against, at reference point z0
+    = "a single human-agency source''s own account of what ''potential'' or ''agency'' means": does restating
+    that account through the layer-1/layer-2 lens recover a distinction the source itself already draws
+    (same), a distinction it draws differently (different), or a distinction genuinely absent from it
+    (a real gap, not yet a novelty claim). Phi_z0 is a fit-checking functional, not a truth-functional.'
   formal_applicability: relational_pointwise
 hypothesis_world:
-  text: >-
-    "Potential" across this programme's five texts is at minimum two layers -- choosing within a
-    fixed constraint structure (layer 1) and changing that structure itself (layer 2) -- that must
-    not be collapsed; a layer-1 envelope reported as the bound on what a person or group can become
-    is a collapse. Not yet checked against independently fetched human-agency literature for a
-    same/different/cited verdict; see `scope.claim_scope`.
+  text: '"Potential" across this programme''s five texts is at minimum two layers -- choosing within a
+    fixed constraint structure (layer 1) and changing that structure itself (layer 2) -- that must not
+    be collapsed; a layer-1 envelope reported as the bound on what a person or group can become is a collapse.
+    Not yet checked against independently fetched human-agency literature for a same/different/cited verdict;
+    see `scope.claim_scope`.'
   language: en
   falsifier_ref: five_questions.tested.falsifier
-  signature: >-
-    Hypothesis derived with Readout Universe -- Yaoharee Lahtee (lens, DOI 10.5281/zenodo.21529456);
+  signature: Hypothesis derived with Readout Universe -- Yaoharee Lahtee (lens, DOI 10.5281/zenodo.21529456);
     candidate proposed by AI, selected by the founder (BBL-2026-09-05-132/134).
 five_questions:
   seen:
     record_ref: projects/GLS-2026-002_potential-as-readout/hypotheses.md#H2
-    as_of: "2026-09-05"
+    as_of: '2026-09-05'
     retrievable_original: true
-    access_model: >-
-      The founder's own Blackbox Note lines (BB-2026-09-05-02#1-3), paper/main.tex's own D3
-      distinction and Table "One object, five names", and
-      NOTE_2026-09-05_potential-choice-violence_axis.md §3 (the two-layer section this card
-      restates). Concurrent-worker records this card's evidence_relations point at
-      (records/lit/potential-as-readout/h2/*) had not yet completed at the time this card was
+    access_model: The founder's own Blackbox Note lines (BB-2026-09-05-02#1-3), paper/main.tex's own D3
+      distinction and Table "One object, five names", and NOTE_2026-09-05_potential-choice-violence_axis.md
+      §3 (the two-layer section this card restates). Concurrent-worker records this card's evidence_relations
+      point at (records/lit/potential-as-readout/h2/*) had not yet completed at the time this card was
       drafted -- see `capability_readout` and `non_claims`.
     citation_refs:
-      - cite-potential-h2-001
-      - cite-potential-h2-002
-      - cite-potential-h2-003
+    - cite-potential-h2-001
+    - cite-potential-h2-002
+    - cite-potential-h2-003
     capability_readout: potential_witnessed
     ai_assisted_fields:
-      - "five_questions.ai_filled.*"
-      - "five_questions.tested.evidence_relations[].notes"
-      - "lens_translation.question_readout"
+    - five_questions.ai_filled.*
+    - five_questions.tested.evidence_relations[].notes
+    - lens_translation.question_readout
   separates:
-    value_z0: "whether the layer-1/layer-2 separation is a portable reading that already exists (under a different name) in capability theory, social-cognitive theory, or relational sociology, or whether it is specific to Causal Agency's own vocabulary and does not transfer"
+    value_z0: whether the layer-1/layer-2 separation is a portable reading that already exists (under
+      a different name) in capability theory, social-cognitive theory, or relational sociology, or whether
+      it is specific to Causal Agency's own vocabulary and does not transfer
     licensing_test:
-      regime: "literature scoping pass not yet run to completion (records/lit/potential-as-readout/h2/, owned by concurrent workers); this card cites PLACEHOLDER citation ids pending that pass"
-      result: >-
-        NOT YET DETERMINED. The three cited evidence_relations below use placeholder citation ids
-        (cite-potential-h2-001..003) that do not yet resolve to existing, VERIFIED citation cards --
-        this is disclosed explicitly, not hidden, per `non_claims` and `dissent_records` below.
-      notes: "n=0 completed citation checks at the time this card was drafted; a follow-up revision is required once records/lit/potential-as-readout/h2/citations/ exists and is VERIFIED."
+      regime: literature scoping pass not yet run to completion (records/lit/potential-as-readout/h2/,
+        owned by concurrent workers); this card cites PLACEHOLDER citation ids pending that pass
+      result: NOT YET DETERMINED. The three cited evidence_relations below use placeholder citation ids
+        (cite-potential-h2-001..003) that do not yet resolve to existing, VERIFIED citation cards -- this
+        is disclosed explicitly, not hidden, per `non_claims` and `dissent_records` below.
+      notes: n=0 completed citation checks at the time this card was drafted; a follow-up revision is
+        required once records/lit/potential-as-readout/h2/citations/ exists and is VERIFIED.
     zero_vs_bottom: unresolved_bottom
   ai_filled:
-    current_evidence: >-
-      AI (the AI assistant, this session) drafted this card's statement, lens_translation, and
-      hypothesis_world from the founder's own Blackbox Note lines and paper/main.tex's own D3
-      distinction; no literature retrieval for H2's own falsifier has been performed by this task
-      (task POT1-scaffold; that work is owned by concurrent workers lit-h1-h3 and lit-h2).
-    retrieved_tool_evidence: >-
-      No WebFetch/WebSearch tool calls were made by this task to retrieve H2 literature; the
-      citation_refs and evidence_relations below are PLACEHOLDER ids naming the expected shape of
+    current_evidence: AI (the AI assistant, this session) drafted this card's statement, lens_translation,
+      and hypothesis_world from the founder's own Blackbox Note lines and paper/main.tex's own D3 distinction;
+      no literature retrieval for H2's own falsifier has been performed by this task (task POT1-scaffold;
+      that work is owned by concurrent workers lit-h1-h3 and lit-h2).
+    retrieved_tool_evidence: No WebFetch/WebSearch tool calls were made by this task to retrieve H2 literature;
+      the citation_refs and evidence_relations below are PLACEHOLDER ids naming the expected shape of
       that future work, not yet resolved to fetched sources.
-    retained_record_route: >-
-      This claim card's field structure was drafted by AI from paper/main.tex's own D3 distinction
-      and Causal Agency's own §6.5-6.6; no new observation or search was performed to produce this
-      card.
-    model_calibration_assumption: >-
-      No claim in this card depends on an AI model's stated confidence or calibration score; the
-      placeholder status of the citation_refs is stated as a structural fact, not a confidence
-      estimate.
-    prompt_system_constraint: >-
-      This card was drafted under task instruction POT1-scaffold, which explicitly requires naming
-      placeholder citation ids as placeholders needing reconciliation, rather than inventing citation
-      content from AI training-data memory to fill them in.
-    decision_policy: >-
-      The choice to draft a full-shape card now, with placeholder evidence_relations, rather than
-      waiting for the lit workers to finish, was an AI drafting choice made to satisfy the task's own
-      scaffold-now instruction; it is flagged throughout (capability_readout, non_claims,
-      dissent_records) rather than presented as if the citation work were already done.
+    retained_record_route: This claim card's field structure was drafted by AI from paper/main.tex's own
+      D3 distinction and Causal Agency's own §6.5-6.6; no new observation or search was performed to produce
+      this card.
+    model_calibration_assumption: No claim in this card depends on an AI model's stated confidence or
+      calibration score; the placeholder status of the citation_refs is stated as a structural fact, not
+      a confidence estimate.
+    prompt_system_constraint: This card was drafted under task instruction POT1-scaffold, which explicitly
+      requires naming placeholder citation ids as placeholders needing reconciliation, rather than inventing
+      citation content from AI training-data memory to fill them in.
+    decision_policy: The choice to draft a full-shape card now, with placeholder evidence_relations, rather
+      than waiting for the lit workers to finish, was an AI drafting choice made to satisfy the task's
+      own scaffold-now instruction; it is flagged throughout (capability_readout, non_claims, dissent_records)
+      rather than presented as if the citation work were already done.
   assumed:
-    - id: A1
-      type: inferential_commitment
-      description: >-
-        That the layer-1/layer-2 line Causal Agency draws for its own constraint-structure object
-        $C$ generalizes cleanly to other papers' feasible/admissible/viable-set objects, rather than
-        being an artefact specific to Causal Agency's own particular formalism.
-      identification_level: A1
-      contaminated_concept_hit: null
-    - id: A2
-      type: contrast_relevance_operation
-      description: >-
-        That the concurrent lit workers' eventual H2 citation set (records/lit/potential-as-readout/
-        h2/citations/) will be a representative-enough scoping pass across capability theory,
-        social-cognitive theory, and relational sociology to inform H2's developability --
-        `hypothesis_selection.yaml`'s own `accuracy_gate_at_selection_time` for H2 is recorded as
-        PASS_WITH_LIMITS, not a clean PASS, precisely because that pass has not yet run.
-      identification_level: A1
-      contaminated_concept_hit: null
+  - id: A1
+    type: inferential_commitment
+    description: That the layer-1/layer-2 line Causal Agency draws for its own constraint-structure object
+      $C$ generalizes cleanly to other papers' feasible/admissible/viable-set objects, rather than being
+      an artefact specific to Causal Agency's own particular formalism.
+    identification_level: A1
+    contaminated_concept_hit: null
+  - id: A2
+    type: contrast_relevance_operation
+    description: That the concurrent lit workers' eventual H2 citation set (records/lit/potential-as-readout/
+      h2/citations/) will be a representative-enough scoping pass across capability theory, social-cognitive
+      theory, and relational sociology to inform H2's developability -- `hypothesis_selection.yaml`'s
+      own `accuracy_gate_at_selection_time` for H2 is recorded as PASS_WITH_LIMITS, not a clean PASS,
+      precisely because that pass has not yet run.
+    identification_level: A1
+    contaminated_concept_hit: null
   tested:
     evidence_relations:
-      - evidence_id: cite-causal-agency-defs-001
-        bearing: UNRESOLVED
-        independence_class: I3
-        strength: >-
-          direct PDF fetch (Zenodo 18897585, this programme's own prior work, self-citation disclosed);
-          I3 cross-vendor route (codex) actually ran and returned claim_match_verified: false -- reconciled
-          from records/lit/potential-as-readout/h2/rows/row-causal-agency-defs.yaml (stance UNDETERMINED)
-        citation_ref: cite-causal-agency-defs-001
-        review_mode: null
-        route_id: null
-        asserted_by: ai
-        date: "2026-09-05"
-        notes: >-
-          Def.3 states agency = the system's own dynamics modifying C to increase expected persistence,
-          the programme's own layer-2 definition. Row's own what_it_would_say_against_us: H2's layer-2
-          claim may be exactly Def.3 restated in different notation, so H2 adds nothing here beyond
-          naming a "recoverable gap" unless it supplies that quantity itself -- genuinely UNDETERMINED,
-          not resolved either way. Reconciled 2026-09-05 (POT1-integrate); left UNRESOLVED, not forced
-          to SUPPORTS/CHALLENGES.
-      - evidence_id: cite-causal-agency-protoagency-001
-        bearing: UNRESOLVED
-        independence_class: I3
-        strength: >-
-          direct PDF fetch (Zenodo 18897585 §6.6, self-citation disclosed), I3 route ran -- reconciled
-          from records/lit/potential-as-readout/h2/rows/row-causal-agency-protoagency.yaml (stance
-          UNDETERMINED)
-        citation_ref: cite-causal-agency-protoagency-001
-        review_mode: null
-        route_id: null
-        asserted_by: ai
-        date: "2026-09-05"
-        notes: >-
-          Names layer-1-only stabilisation "proto-agency". Row's counter-note: proto-agency was built for
-          engineered/biological control systems, not social actors under structural deprivation -- the
-          mechanical analogy could mislead a social-agency reading rather than clarify it. Reconciled
-          2026-09-05; left UNRESOLVED.
-      - evidence_id: cite-causal-grammar-table1-001
-        bearing: UNRESOLVED
-        independence_class: I3
-        strength: >-
-          direct PDF fetch (Zenodo 18925131, Table 1, self-citation disclosed), I3 route ran --
-          reconciled from records/lit/potential-as-readout/h2/rows/row-causal-grammar-table1.yaml
-          (stance UNDETERMINED)
-        citation_ref: cite-causal-grammar-table1-001
-        review_mode: null
-        route_id: null
-        asserted_by: ai
-        date: "2026-09-05"
-        notes: >-
-          Table 1's five regimes are an ordinal typology, not the continuous recoverable-gap quantity H2
-          wants; H2 would need additional machinery (e.g. Causal Agency's own Tp/C derivatives) to derive
-          a number from it. Reconciled 2026-09-05; left UNRESOLVED.
-      - evidence_id: cite-causal-grammar-repair-001
-        bearing: UNRESOLVED
-        independence_class: I3
-        strength: >-
-          direct PDF fetch (Zenodo 18925131 §5, self-citation disclosed), I3 route ran -- reconciled
-          from records/lit/potential-as-readout/h2/rows/row-causal-grammar-repair.yaml (stance
-          UNDETERMINED)
-        citation_ref: cite-causal-grammar-repair-001
-        review_mode: null
-        route_id: null
-        asserted_by: ai
-        date: "2026-09-05"
-        notes: >-
-          "Repair" names a protected layer-2 act. Row's counter-note: without a working definition of
-          "conditions that prevent renewed compression", repair risks being unfalsifiable in practice,
-          which would carry over into H2's own recoverable-gap claim unless a concrete protection-
-          condition test is specified. Reconciled 2026-09-05; left UNRESOLVED.
-      - evidence_id: cite-bandura2001-agentic-001
-        bearing: UNRESOLVED
-        independence_class: I3
-        strength: >-
-          Crossref-served abstract only (full text not fetched), I3 route ran -- reconciled from
-          records/lit/potential-as-readout/h2/rows/row-bandura2001-agentic.yaml (stance UNDETERMINED)
-        citation_ref: cite-bandura2001-agentic-001
-        review_mode: null
-        route_id: null
-        asserted_by: ai
-        date: "2026-09-05"
-        notes: >-
-          Abstract states people are simultaneously "products" and "producers" of social systems, a
-          tighter two-layer statement than Ryan & Deci's framing. Row's counter-note: this is abstract-
-          level support only ("producers as well as products" is a general sociological truism also
-          in Giddens/Archer); does not show Bandura formalizes a recoverable GAP the way H2 requires.
-          Reconciled 2026-09-05; left UNRESOLVED.
-      - evidence_id: cite-kabeer1999-001
-        bearing: UNRESOLVED
-        independence_class: I3
-        strength: >-
-          Crossref-served abstract only, I3 route ran -- reconciled from
-          records/lit/potential-as-readout/h2/rows/row-kabeer1999.yaml (stance UNDETERMINED)
-        citation_ref: cite-kabeer1999-001
-        review_mode: null
-        route_id: null
-        asserted_by: ai
-        date: "2026-09-05"
-        notes: >-
-          Row's counter-note: this abstract argues resources/agency/achievements are indivisible in
-          determining an indicator's meaning -- if the same indivisibility applies to H2's layer split,
-          a recoverable-gap quantity that treats the layers as separable may not be measurable the way
-          H2's framing requires. Reconciled 2026-09-05; left UNRESOLVED.
-      - evidence_id: cite-klyubin2005-001
-        bearing: UNRESOLVED
-        independence_class: I3
-        strength: >-
-          pre-fetched local copy, I3 route ran -- reconciled from
-          records/lit/potential-as-readout/h2/rows/row-klyubin2005.yaml (stance UNDETERMINED)
-        citation_ref: cite-klyubin2005-001
-        review_mode: null
-        route_id: null
-        asserted_by: ai
-        date: "2026-09-05"
-        notes: >-
-          Row's counter-note: empowerment's own formalism is silent on structural change by design (a
-          different question); citing it as support for a two-layer split imports a claim the paper
-          itself never asserts. Reconciled 2026-09-05; left UNRESOLVED.
-      - evidence_id: cite-salge-empowerment-intro-001
-        bearing: UNRESOLVED
-        independence_class: I3
-        strength: >-
-          direct arXiv PDF fetch (1310.1863), I3 route ran -- reconciled from
-          records/lit/potential-as-readout/h2/rows/row-salge-empowerment-intro.yaml (stance UNDETERMINED)
-        citation_ref: cite-salge-empowerment-intro-001
-        review_mode: null
-        route_id: null
-        asserted_by: ai
-        date: "2026-09-05"
-        notes: >-
-          Row's counter-note: this passage only observes that empowerment depends on embodiment, without
-          proposing that changing embodiment counts as a distinct "layer" with its own recoverable-gap
-          quantity -- H2's specific framing is an addition beyond what the source claims for itself.
-          Reconciled 2026-09-05; left UNRESOLVED.
-      - evidence_id: cite-ryandeci2000-001
-        bearing: UNRESOLVED
-        independence_class: I3
-        strength: >-
-          author-hosted OA PDF, I3 route ran -- reconciled from
-          records/lit/potential-as-readout/h2/rows/row-ryandeci2000.yaml (stance UNDETERMINED)
-        citation_ref: cite-ryandeci2000-001
-        review_mode: null
-        route_id: null
-        asserted_by: ai
-        date: "2026-09-05"
-        notes: >-
-          Row's counter-note: H2's layer-2 (agent modifies the structure) has no clear counterpart in
-          SDT here -- social-contextual conditions are an independent variable the researcher varies,
-          not something the agent's own agency modifies; importing SDT as support may over-read a two-
-          factor motivation model as a two-layer agency split. Reconciled 2026-09-05; left UNRESOLVED.
-      - evidence_id: cite-bazzani2023-001
-        bearing: UNRESOLVED
-        independence_class: I3
-        strength: >-
-          Wayback Machine snapshot of the abstract (live URL bot-blocked), I3 route ran -- reconciled
-          from records/lit/potential-as-readout/h2/rows/row-bazzani2023.yaml (stance UNDETERMINED)
-        citation_ref: cite-bazzani2023-001
-        review_mode: null
-        route_id: null
-        asserted_by: ai
-        date: "2026-09-05"
-        notes: >-
-          Row's counter-note: micro/meso/macro conversion factors are a THIRD kind of object (levels of
-          analysis) orthogonal to a two-layer choose/change split -- mapping H2's layer-2 onto
-          "conversion factors" wholesale may conflate a level-of-analysis distinction with a control-
-          layer distinction the abstract does not itself equate. Reconciled 2026-09-05; left UNRESOLVED.
-    falsifier: >-
-      An independently fetched source in capability theory, social-cognitive theory, or relational
-      sociology (e.g. Sen/Nussbaum's agency-vs-well-being-freedom distinction, Bandura's
-      self-regulation/self-reflection, Emirbayer & Mische's iterational/projective/practical-
-      evaluative agency) is found, on direct reading, to treat "changing the rules of one's own
-      constraint structure" and "choosing within them" as the SAME undifferentiated capacity --
-      showing the two-layer separation this project claims is portable does not in fact hold there,
-      or holds only inside this programme's own four papers. Not yet tested in either direction: no
-      literature check has run. Comparison vocabulary only -- `same`/`different`/`cited`, never
-      the two banned novelty words (glosa gate rule 6).
+    - evidence_id: cite-causal-agency-defs-001
+      bearing: UNRESOLVED
+      independence_class: I1
+      strength: 'direct PDF fetch (Zenodo 18897585, this programme''s own prior work, self-citation disclosed);
+        I3 cross-vendor route (codex) actually ran and returned claim_match_verified: false -- reconciled
+        from records/lit/potential-as-readout/h2/rows/row-causal-agency-defs.yaml (stance UNDETERMINED)'
+      citation_ref: cite-causal-agency-defs-001
+      review_mode: null
+      route_id: null
+      asserted_by: ai
+      date: '2026-09-05'
+      notes: 'Def.3 states agency = the system''s own dynamics modifying C to increase expected persistence,
+        the programme''s own layer-2 definition. Row''s own what_it_would_say_against_us: H2''s layer-2
+        claim may be exactly Def.3 restated in different notation, so H2 adds nothing here beyond naming
+        a "recoverable gap" unless it supplies that quantity itself -- genuinely UNDETERMINED, not resolved
+        either way. Reconciled 2026-09-05 (POT1-integrate); left UNRESOLVED, not forced to SUPPORTS/CHALLENGES.'
+    - evidence_id: cite-causal-agency-protoagency-001
+      bearing: UNRESOLVED
+      independence_class: I1
+      strength: direct PDF fetch (Zenodo 18897585 §6.6, self-citation disclosed), I3 route ran -- reconciled
+        from records/lit/potential-as-readout/h2/rows/row-causal-agency-protoagency.yaml (stance UNDETERMINED)
+      citation_ref: cite-causal-agency-protoagency-001
+      review_mode: null
+      route_id: null
+      asserted_by: ai
+      date: '2026-09-05'
+      notes: 'Names layer-1-only stabilisation "proto-agency". Row''s counter-note: proto-agency was built
+        for engineered/biological control systems, not social actors under structural deprivation -- the
+        mechanical analogy could mislead a social-agency reading rather than clarify it. Reconciled 2026-09-05;
+        left UNRESOLVED.'
+    - evidence_id: cite-causal-grammar-table1-001
+      bearing: UNRESOLVED
+      independence_class: I1
+      strength: direct PDF fetch (Zenodo 18925131, Table 1, self-citation disclosed), I3 route ran --
+        reconciled from records/lit/potential-as-readout/h2/rows/row-causal-grammar-table1.yaml (stance
+        UNDETERMINED)
+      citation_ref: cite-causal-grammar-table1-001
+      review_mode: null
+      route_id: null
+      asserted_by: ai
+      date: '2026-09-05'
+      notes: Table 1's five regimes are an ordinal typology, not the continuous recoverable-gap quantity
+        H2 wants; H2 would need additional machinery (e.g. Causal Agency's own Tp/C derivatives) to derive
+        a number from it. Reconciled 2026-09-05; left UNRESOLVED.
+    - evidence_id: cite-causal-grammar-repair-001
+      bearing: UNRESOLVED
+      independence_class: I1
+      strength: direct PDF fetch (Zenodo 18925131 §5, self-citation disclosed), I3 route ran -- reconciled
+        from records/lit/potential-as-readout/h2/rows/row-causal-grammar-repair.yaml (stance UNDETERMINED)
+      citation_ref: cite-causal-grammar-repair-001
+      review_mode: null
+      route_id: null
+      asserted_by: ai
+      date: '2026-09-05'
+      notes: '"Repair" names a protected layer-2 act. Row''s counter-note: without a working definition
+        of "conditions that prevent renewed compression", repair risks being unfalsifiable in practice,
+        which would carry over into H2''s own recoverable-gap claim unless a concrete protection- condition
+        test is specified. Reconciled 2026-09-05; left UNRESOLVED.'
+    - evidence_id: cite-bandura2001-agentic-001
+      bearing: UNRESOLVED
+      independence_class: I1
+      strength: Crossref-served abstract only (full text not fetched), I3 route ran -- reconciled from
+        records/lit/potential-as-readout/h2/rows/row-bandura2001-agentic.yaml (stance UNDETERMINED)
+      citation_ref: cite-bandura2001-agentic-001
+      review_mode: null
+      route_id: null
+      asserted_by: ai
+      date: '2026-09-05'
+      notes: 'Abstract states people are simultaneously "products" and "producers" of social systems,
+        a tighter two-layer statement than Ryan & Deci''s framing. Row''s counter-note: this is abstract-
+        level support only ("producers as well as products" is a general sociological truism also in Giddens/Archer);
+        does not show Bandura formalizes a recoverable GAP the way H2 requires. Reconciled 2026-09-05;
+        left UNRESOLVED.'
+    - evidence_id: cite-kabeer1999-001
+      bearing: UNRESOLVED
+      independence_class: I1
+      strength: Crossref-served abstract only, I3 route ran -- reconciled from records/lit/potential-as-readout/h2/rows/row-kabeer1999.yaml
+        (stance UNDETERMINED)
+      citation_ref: cite-kabeer1999-001
+      review_mode: null
+      route_id: null
+      asserted_by: ai
+      date: '2026-09-05'
+      notes: 'Row''s counter-note: this abstract argues resources/agency/achievements are indivisible
+        in determining an indicator''s meaning -- if the same indivisibility applies to H2''s layer split,
+        a recoverable-gap quantity that treats the layers as separable may not be measurable the way H2''s
+        framing requires. Reconciled 2026-09-05; left UNRESOLVED.'
+    - evidence_id: cite-klyubin2005-001
+      bearing: UNRESOLVED
+      independence_class: I1
+      strength: pre-fetched local copy, I3 route ran -- reconciled from records/lit/potential-as-readout/h2/rows/row-klyubin2005.yaml
+        (stance UNDETERMINED)
+      citation_ref: cite-klyubin2005-001
+      review_mode: null
+      route_id: null
+      asserted_by: ai
+      date: '2026-09-05'
+      notes: 'Row''s counter-note: empowerment''s own formalism is silent on structural change by design
+        (a different question); citing it as support for a two-layer split imports a claim the paper itself
+        never asserts. Reconciled 2026-09-05; left UNRESOLVED.'
+    - evidence_id: cite-salge-empowerment-intro-001
+      bearing: UNRESOLVED
+      independence_class: I1
+      strength: direct arXiv PDF fetch (1310.1863), I3 route ran -- reconciled from records/lit/potential-as-readout/h2/rows/row-salge-empowerment-intro.yaml
+        (stance UNDETERMINED)
+      citation_ref: cite-salge-empowerment-intro-001
+      review_mode: null
+      route_id: null
+      asserted_by: ai
+      date: '2026-09-05'
+      notes: 'Row''s counter-note: this passage only observes that empowerment depends on embodiment,
+        without proposing that changing embodiment counts as a distinct "layer" with its own recoverable-gap
+        quantity -- H2''s specific framing is an addition beyond what the source claims for itself. Reconciled
+        2026-09-05; left UNRESOLVED.'
+    - evidence_id: cite-ryandeci2000-001
+      bearing: UNRESOLVED
+      independence_class: I1
+      strength: author-hosted OA PDF, I3 route ran -- reconciled from records/lit/potential-as-readout/h2/rows/row-ryandeci2000.yaml
+        (stance UNDETERMINED)
+      citation_ref: cite-ryandeci2000-001
+      review_mode: null
+      route_id: null
+      asserted_by: ai
+      date: '2026-09-05'
+      notes: 'Row''s counter-note: H2''s layer-2 (agent modifies the structure) has no clear counterpart
+        in SDT here -- social-contextual conditions are an independent variable the researcher varies,
+        not something the agent''s own agency modifies; importing SDT as support may over-read a two-
+        factor motivation model as a two-layer agency split. Reconciled 2026-09-05; left UNRESOLVED.'
+    - evidence_id: cite-bazzani2023-001
+      bearing: UNRESOLVED
+      independence_class: I1
+      strength: Wayback Machine snapshot of the abstract (live URL bot-blocked), I3 route ran -- reconciled
+        from records/lit/potential-as-readout/h2/rows/row-bazzani2023.yaml (stance UNDETERMINED)
+      citation_ref: cite-bazzani2023-001
+      review_mode: null
+      route_id: null
+      asserted_by: ai
+      date: '2026-09-05'
+      notes: 'Row''s counter-note: micro/meso/macro conversion factors are a THIRD kind of object (levels
+        of analysis) orthogonal to a two-layer choose/change split -- mapping H2''s layer-2 onto "conversion
+        factors" wholesale may conflate a level-of-analysis distinction with a control- layer distinction
+        the abstract does not itself equate. Reconciled 2026-09-05; left UNRESOLVED.'
+    falsifier: 'An independently fetched source in capability theory, social-cognitive theory, or relational
+      sociology (e.g. Sen/Nussbaum''s agency-vs-well-being-freedom distinction, Bandura''s self-regulation/self-reflection,
+      Emirbayer & Mische''s iterational/projective/practical- evaluative agency) is found, on direct reading,
+      to treat "changing the rules of one''s own constraint structure" and "choosing within them" as the
+      SAME undifferentiated capacity -- showing the two-layer separation this project claims is portable
+      does not in fact hold there, or holds only inside this programme''s own four papers. Not yet tested
+      in either direction: no literature check has run. Comparison vocabulary only -- `same`/`different`/`cited`,
+      never the two banned novelty words (glosa gate rule 6).'
     defeater_class: CONSTITUTIVE
     dissent_records:
-      - by: "AI assistant (self-flagged during drafting, not an independent route)"
-        date: "2026-09-05"
-        content: >-
-          This card's own evidence_relations are placeholders with no real citation content --
-          drafting a full-shape card with placeholder evidence before the literature pass exists
-          risks the card reading as more evidenced than it is. This is a maker-side self-flag, not
-          an independent check, and does not substitute for one (glosa gate rule 3: maker != checker
-          != approver).
-        resolved: false
-        resolution: >-
-          NOT resolved. Left open pending: (1) concurrent workers completing
-          records/lit/potential-as-readout/h2/citations/, (2) a reconciliation pass updating this
-          card's evidence_relations/citation_refs to the real ids and real bearings found, and (3)
-          an independent (I3+) cross-vendor review of the reconciled card, none of which this task
-          performed. `independent_check.status` is set to NONE below to reflect this honestly.
+    - by: AI assistant (self-flagged during drafting, not an independent route)
+      date: '2026-09-05'
+      content: 'This card''s own evidence_relations are placeholders with no real citation content --
+        drafting a full-shape card with placeholder evidence before the literature pass exists risks the
+        card reading as more evidenced than it is. This is a maker-side self-flag, not an independent
+        check, and does not substitute for one (glosa gate rule 3: maker != checker != approver).'
+      resolved: false
+      resolution: 'NOT resolved. Left open pending: (1) concurrent workers completing records/lit/potential-as-readout/h2/citations/,
+        (2) a reconciliation pass updating this card''s evidence_relations/citation_refs to the real ids
+        and real bearings found, and (3) an independent (I3+) cross-vendor review of the reconciled card,
+        none of which this task performed. `independent_check.status` is set to NONE below to reflect
+        this honestly.'
 identification_ladder:
   layers:
-    - id: A0
-      adds: "the claim card, the layer-1/layer-2 distinction (Causal Agency Def. 2-3, §6.5-6.6), and Causal Grammar's 'repair' exist as named artifacts in this repo/lineage"
-    - id: A1
-      adds: "not yet reached for H2's own falsifier -- no citation card exists yet under records/lit/potential-as-readout/h2/citations/ at the time this card was drafted"
+  - id: A0
+    adds: the claim card, the layer-1/layer-2 distinction (Causal Agency Def. 2-3, §6.5-6.6), and Causal
+      Grammar's 'repair' exist as named artifacts in this repo/lineage
+  - id: A1
+    adds: not yet reached for H2's own falsifier -- no citation card exists yet under records/lit/potential-as-readout/h2/citations/
+      at the time this card was drafted
   per_rival:
-    - rival: "capability-theory/social-cognitive/relational-sociology literature treats structure-change and within-structure choice as one undifferentiated capacity (H2's own stated falsifier direction)"
-      first_identification_level: unidentified
-    - rival: "the layer-1/layer-2 line is specific to Causal Agency's own formal constraint-structure object $C$ and does not transfer cleanly to the other three papers' differently-shaped feasible-set objects"
-      first_identification_level: unidentified
+  - rival: capability-theory/social-cognitive/relational-sociology literature treats structure-change
+      and within-structure choice as one undifferentiated capacity (H2's own stated falsifier direction)
+    first_identification_level: unidentified
+  - rival: the layer-1/layer-2 line is specific to Causal Agency's own formal constraint-structure object
+      $C$ and does not transfer cleanly to the other three papers' differently-shaped feasible-set objects
+    first_identification_level: unidentified
 provenance_dag:
   nodes:
-    - id: bb-note-l1
-      kind: observation
-    - id: h2-hypothesis-draft
-      kind: inference
-    - id: h2-lrs-search
-      kind: observation
-    - id: this-claim-card
-      kind: claim
+  - id: bb-note-l1
+    kind: observation
+  - id: h2-hypothesis-draft
+    kind: inference
+  - id: h2-lrs-search
+    kind: observation
+  - id: this-claim-card
+    kind: claim
   edges:
-    - from: bb-note-l1
-      to: h2-hypothesis-draft
-    - from: h2-hypothesis-draft
-      to: h2-lrs-search
-    - from: h2-hypothesis-draft
-      to: this-claim-card
+  - from: bb-note-l1
+    to: h2-hypothesis-draft
+  - from: h2-hypothesis-draft
+    to: h2-lrs-search
+  - from: h2-hypothesis-draft
+    to: this-claim-card
   essential_dependency_set:
-    - bb-note-l1
-    - h2-hypothesis-draft
+  - bb-note-l1
+  - h2-hypothesis-draft
   defeater_log: []
   status: not_run
 silent_lift_check:
   represented_dependency_set:
-    - bb-note-l1
-    - h2-hypothesis-draft
+  - bb-note-l1
+  - h2-hypothesis-draft
   actual_dependency_set:
-    - bb-note-l1
-    - h2-hypothesis-draft
+  - bb-note-l1
+  - h2-hypothesis-draft
   flags: []
   status: not_run
 scope:
   generalization_claimed: none
-  evidence_scope: >-
-    Zero completed independent literature checks at the time this card was drafted; the citation
-    pass this card's own evidence_relations depend on is owned by concurrent workers
-    (lit-h1-h3, lit-h2) and had not produced VERIFIED citation cards yet.
-  claim_scope: >-
-    A conceptual proposition (the two-layer distinction) restated from paper/main.tex's own D3 and
-    Causal Agency's own §6.5-6.6, with a stated but not-yet-run falsifier -- this card does not claim
-    H2 has been checked against literature, only that the distinction is stated precisely enough to
-    be checked, and names exactly what is missing (real citation content) rather than silently
-    treating the placeholder evidence as real.
+  evidence_scope: Zero completed independent literature checks at the time this card was drafted; the
+    citation pass this card's own evidence_relations depend on is owned by concurrent workers (lit-h1-h3,
+    lit-h2) and had not produced VERIFIED citation cards yet.
+  claim_scope: A conceptual proposition (the two-layer distinction) restated from paper/main.tex's own
+    D3 and Causal Agency's own §6.5-6.6, with a stated but not-yet-run falsifier -- this card does not
+    claim H2 has been checked against literature, only that the distinction is stated precisely enough
+    to be checked, and names exactly what is missing (real citation content) rather than silently treating
+    the placeholder evidence as real.
   responsibility_attribution:
     chooser: null
     compression_evidence: null
@@ -446,106 +399,110 @@ k_state: K0
 ledger:
   forced: []
   borrowed:
-    - "10.5281/zenodo.21529456 (Readout Universe -- Yaoharee Lahtee, lens)"
+  - 10.5281/zenodo.21529456 (Readout Universe -- Yaoharee Lahtee, lens)
   open:
-    - "whether the layer-1/layer-2 separation is already stated, under a different name, in capability theory/social-cognitive theory/relational sociology -- no literature check has run yet"
-    - "whether the separation is specific to Causal Agency's own formalism and does not transfer to the other three papers' objects"
+  - whether the layer-1/layer-2 separation is already stated, under a different name, in capability theory/social-cognitive
+    theory/relational sociology -- no literature check has run yet
+  - whether the separation is specific to Causal Agency's own formalism and does not transfer to the other
+    three papers' objects
 non_claims:
-  - "This card does not claim H2 has been checked against independently fetched literature -- the citation_refs and tested.evidence_relations above are PLACEHOLDER ids (cite-potential-h2-001..003) pending records/lit/potential-as-readout/h2/citations/ (owned by concurrent workers lit-h1-h3/lit-h2)."
-  - "This card does not claim the two-layer separation is prior art, novel, or first -- comparison verdicts (same/different/cited) are reserved for the literature pass, not asserted here (glosa gate rule 6)."
-  - "This card does not claim H2 makes an attribution-of-responsibility claim (that is D6/NC-79's own, separate distinction, not tested here) -- `scope.responsibility_attribution` above is left null (diagnosis-level only, no chooser named), consistent with H2 being a claim about layers of capacity, not about who is responsible for any compression."
-  - "This card is not a veterinary, medical, legal, or religious determination of any kind."
-  - "This card does not claim an independent (I3+) review has occurred -- independent_check.status is NONE, not PENDING or PASSED."
+- This card does not claim H2 has been checked against independently fetched literature -- the citation_refs
+  and tested.evidence_relations above are PLACEHOLDER ids (cite-potential-h2-001..003) pending records/lit/potential-as-readout/h2/citations/
+  (owned by concurrent workers lit-h1-h3/lit-h2).
+- This card does not claim the two-layer separation is its own or without precedent -- comparison verdicts
+  (same/different/cited) are reserved for the literature pass, not asserted here (glosa gate rule 6).
+- This card does not claim H2 makes an attribution-of-responsibility claim (that is D6/NC-79's own, separate
+  distinction, not tested here) -- `scope.responsibility_attribution` above is left null (diagnosis-level
+  only, no chooser named), consistent with H2 being a claim about layers of capacity, not about who is
+  responsible for any compression.
+- This card is not a veterinary, medical, legal, or religious determination of any kind.
+- This card does not claim an independent (I3+) review has occurred -- independent_check.status is NONE,
+  not PENDING or PASSED.
 legal_epistemic_separation:
   applicable: false
-  notes: ""
+  notes: ''
 independent_check:
   status: NONE
-  maker_id: "founder+AI assistant"
+  maker_id: founder+AI assistant
   checker_id: null
   approver_id: null
   independence_class: I0
   mc_level: L1
-  date: "2026-09-05"
+  date: '2026-09-05'
   expires_at: null
 disclaimers_emitted:
-  # computed via `./cli/glosa claim disclaimers <file>` (task POT1-scaffold)
-  - id: D-STANDPOINT
-  - id: D-NONEXPERT
-  - id: D-NONCLAIM
-  - id: D-AUTHORSHIP
-  - id: D-REVISION-LIVE
-  - id: D-NO-EPISTEMIC-VETO
-  - id: D-TIER
-    params:
-      tier: Dr
-  - id: D-K-STATE
-    params:
-      k_state: K0
-  - id: D-BLACKBOX-NOTE
-    params:
-      origin_blackbox_ref: "blackbox/log/entries.jsonl#BBL-2026-09-05-130"
-  - id: D-AIFILL
-    params:
-      field_name:
-        - current_evidence
-        - retrieved_tool_evidence
-        - retained_record_route
-        - model_calibration_assumption
-        - prompt_system_constraint
-        - decision_policy
-  - id: D-INDEPENDENCE
-  - id: D-CANDIDATE-STATUS
-  - id: D-TRANSLATION
-    params:
-      translation_status: machine
-  - id: D-DISSENT-PRESERVED
-  - id: D-EXTERNAL-INPUT
-    params:
-      source_ref:
-        - "10.5281/zenodo.21529456 (Readout Universe -- Yaoharee Lahtee, lens)"
+- id: D-STANDPOINT
+- id: D-NONEXPERT
+- id: D-NONCLAIM
+- id: D-AUTHORSHIP
+- id: D-REVISION-LIVE
+- id: D-NO-EPISTEMIC-VETO
+- id: D-TIER
+  params:
+    tier: Dr
+- id: D-K-STATE
+  params:
+    k_state: K0
+- id: D-BLACKBOX-NOTE
+  params:
+    origin_blackbox_ref: blackbox/log/entries.jsonl#BBL-2026-09-05-130
+- id: D-AIFILL
+  params:
+    field_name:
+    - current_evidence
+    - retrieved_tool_evidence
+    - retained_record_route
+    - model_calibration_assumption
+    - prompt_system_constraint
+    - decision_policy
+- id: D-INDEPENDENCE
+- id: D-CANDIDATE-STATUS
+- id: D-TRANSLATION
+  params:
+    translation_status: machine
+- id: D-DISSENT-PRESERVED
+- id: D-EXTERNAL-INPUT
+  params:
+    source_ref:
+    - 10.5281/zenodo.21529456 (Readout Universe -- Yaoharee Lahtee, lens)
 status: Draft
 lineage:
   derives_from:
-    - projects/GLS-2026-002_potential-as-readout/hypotheses.md#H2
+  - projects/GLS-2026-002_potential-as-readout/hypotheses.md#H2
   supersedes: []
   superseded_by: null
 related_source_cards: []
 related_observation_cards: []
 related_citation_cards:
-  - cite-potential-h2-001
-  - cite-potential-h2-002
-  - cite-potential-h2-003
+- cite-potential-h2-001
+- cite-potential-h2-002
+- cite-potential-h2-003
 responsibility:
   data_to_inference: joint
   inference_to_claim: human
-  notes: >-
-    AI (AI assistant) drafted the H2 candidate hypothesis and this claim card's fields from the
-    founder's own Blackbox Note lines and paper/main.tex; the founder alone signs the claim
-    (FOUNDATION_v0.5.md §2.1b) and holds the falsifier judgment. This card's `status: Draft` and
-    `independent_check.status: NONE` reflect both that the founder has not yet signed off on this
-    specific card instance and that no citation content or independent review exists yet.
+  notes: 'AI (AI assistant) drafted the H2 candidate hypothesis and this claim card''s fields from the
+    founder''s own Blackbox Note lines and paper/main.tex; the founder alone signs the claim (FOUNDATION_v0.5.md
+    §2.1b) and holds the falsifier judgment. This card''s `status: Draft` and `independent_check.status:
+    NONE` reflect both that the founder has not yet signed off on this specific card instance and that
+    no citation content or independent review exists yet.'
   ownership:
     problem: human
     question: human
-    notes: >-
-      The potential-as-readout problem and question (blackbox_note.yaml lines 1-3,
-      GLOSA-PC-20260905-0002.yaml) are the founder's own; AI proposed H1/H2/H3 as candidate
-      hypotheses, the founder selected all three (hypothesis_selection.yaml, BBL-2026-09-05-132/134).
+    notes: The potential-as-readout problem and question (blackbox_note.yaml lines 1-3, GLOSA-PC-20260905-0002.yaml)
+      are the founder's own; AI proposed H1/H2/H3 as candidate hypotheses, the founder selected all three
+      (hypothesis_selection.yaml, BBL-2026-09-05-132/134).
     hypothesis_selection: human
 empirical_extension: null
 human_owner: founder
 revision_history:
-  - rev: "1"
-    date: "2026-09-05"
-    by: ai-assistant
-    note: >-
-      Initial full-shape scaffold for H2 (two-layer agency) per task POT1-scaffold: statement,
-      standpoint, lens_translation, hypothesis_world (signed), five_questions with PLACEHOLDER
-      evidence_relations (cite-potential-h2-001..003, explicitly flagged as not-yet-real in
-      non_claims and dissent_records, to be reconciled once records/lit/potential-as-readout/h2/
-      citations/ exists and is VERIFIED), identification_ladder, provenance_dag (status: not_run),
-      silent_lift_check (status: not_run), scope (including responsibility_attribution left null,
-      NC-79 is not this card's own distinction), non_claims, responsibility, disclaimers computed
-      via `./cli/glosa claim disclaimers`. `independent_check.status` set to NONE (no route has
-      checked this card). Not yet reviewed or signed by the founder (status stays Draft).
+- rev: '1'
+  date: '2026-09-05'
+  by: ai-assistant
+  note: 'Initial full-shape scaffold for H2 (two-layer agency) per task POT1-scaffold: statement, standpoint,
+    lens_translation, hypothesis_world (signed), five_questions with PLACEHOLDER evidence_relations (cite-potential-h2-001..003,
+    explicitly flagged as not-yet-real in non_claims and dissent_records, to be reconciled once records/lit/potential-as-readout/h2/
+    citations/ exists and is VERIFIED), identification_ladder, provenance_dag (status: not_run), silent_lift_check
+    (status: not_run), scope (including responsibility_attribution left null, NC-79 is not this card''s
+    own distinction), non_claims, responsibility, disclaimers computed via `./cli/glosa claim disclaimers`.
+    `independent_check.status` set to NONE (no route has checked this card). Not yet reviewed or signed
+    by the founder (status stays Draft).'

@@ -1,0 +1,47 @@
+{
+ "claim_ref": "GLOSA-CC-20260905-0302",
+ "route_id": "R3",
+ "reviewer_identity": "same-model fresh-session AI route R3 (vendor recorded locally, not named: gate rule 9)",
+ "independence_class": "I1",
+ "mc_level": "L2",
+ "role": "SourceAuditor",
+ "review_mode": "DECORRELATED_AI_ROUTE",
+ "verdict": "Audited on packet text only. The two visible evidence_relations (Causal Agency Def.3, §6.6) are tagged UNRESOLVED, which their exact_passages warrant: Def.3 supports 'agency = modifying C'; §6.6 supports 'regulation without modifying C is not agency'. Neither passage contains the formula ∂T_p/∂C·∂C/∂x>0, the word 'proto-agency', or 'D3' that the statement attributes to them. Relations declare independence_class I3 with a codex result, yet every pasted citation card is I1 with an empty I3 segment; that is a ledger mismatch. Remaining relations are truncated and cannot be audited. Several I1 disclosures read more into passages than the passages state (Klyubin, Kabeer, Bazzani, Salge).",
+ "verdict_tier": "finite_diagnostic",
+ "evidence_consulted": [
+  "claim card as pasted into PACKET.md",
+  "citation card cite-causal-agency-defs-001",
+  "citation card cite-causal-agency-protoagency-001",
+  "citation card cite-causal-grammar-table1-001",
+  "citation card cite-causal-grammar-repair-001",
+  "citation card cite-bandura2001-agentic-001",
+  "citation card cite-kabeer1999-001",
+  "citation card cite-klyubin2005-001",
+  "citation card cite-salge-empowerment-intro-001",
+  "citation card cite-ryandeci2000-001",
+  "citation card cite-bazzani2023-001"
+ ],
+ "shared_dependency_disclosure": "same operator machine and same packet text as the maker; same model, fresh headless session (no shared context) (I2, not I3)",
+ "disagreement_ledger_ref": null,
+ "date": "2026-09-05",
+ "approver_kind": "ai",
+ "route_findings": {
+  "defeaters_found": [
+   "Independence mismatch: evidence_relations assert I3 (codex ran, claim_match_verified:false) while all citation cards carry I1 and the I3 codex disclosure field is blank.",
+   "five_questions.seen.citation_refs and separates.licensing_test still name placeholder ids cite-potential-h2-001..003 and 'n=0 completed checks', contradicting evidence_relations that now point to VERIFIED cards; card is internally stale.",
+   "Evidence_relations list truncated after the second entry; bearings for Causal Grammar, Bandura, Kabeer, Klyubin, Salge, Ryan & Deci, Bazzani unauditable from this packet."
+  ],
+  "overclaims_found": [
+   "Statement attributes the inequality ∂T_p/∂C·∂C/∂x>0 to Def.3; the Def.3 exact_passage is prose with no such expression.",
+   "Statement says Causal Agency 'calls' layer-1 stabilisation 'proto-agency'; the §6.6 exact_passage says 'persistence regulation but not agency in the strict sense' and never uses 'proto-agency'.",
+   "Statement says Causal Grammar's repair names 'a protected layer-2 act'; repair passage says 'protected reopening of damaged relations', no layer vocabulary; 'layer-2' is the card's gloss.",
+   "cite-klyubin2005-001 disclosure claims the text 'defines empowerment as channel capacity ... given current sensorimotor structure' as a layer-1 quantity; exact_passage only says empowerment is measured in bits and tracks perceivable control.",
+   "cite-kabeer1999-001 disclosure imports 'structural parameters of individual choice' and 'negotiation'; neither appears in the exact_passage.",
+   "cite-bazzani2023-001 passage describes conversion factors at micro/meso/macro levels shaping agency; it does not speak of agents changing structure, so any layer-2 bearing is inferred, not quoted.",
+   "cite-salge-empowerment-intro-001 passage says empowerment depends on sensors and actions; the disclosure's 'distinguishing within-configuration readout from endowment change' is not in the passage.",
+   "cite-causal-grammar-table1-001 id names Table 1 but exact_passage is a §6 sentence; disclosure history records an earlier 'not found' then 'found' without the id being updated."
+  ],
+  "evidence_relations_ok": false,
+  "notes": "Readout only, from packet text. Ryan & Deci CONTEXT_ONLY scoping is consistent with its passage. The two visible UNRESOLVED bearings are not inflated; the inflation sits in the statement's specific attributions and in I1 disclosure glosses. Full relation list needed for a complete audit."
+ }
+}

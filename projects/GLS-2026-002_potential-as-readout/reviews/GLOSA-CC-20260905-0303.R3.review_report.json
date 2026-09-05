@@ -1,0 +1,42 @@
+{
+ "claim_ref": "GLOSA-CC-20260905-0303",
+ "route_id": "R3",
+ "reviewer_identity": "same-model fresh-session AI route R3 (vendor recorded locally, not named: gate rule 9)",
+ "independence_class": "I1",
+ "mc_level": "L2",
+ "role": "SourceAuditor",
+ "review_mode": "DECORRELATED_AI_ROUTE",
+ "verdict": "Evidence relations cannot be confirmed. The claim's seen.citation_refs name cite-potential-h3-001/002, which match none of the pasted cards, and the evidence_relations block is truncated, so no cited relation is auditable from this packet. Of the cards supplied, galtung1969-potentialgap-001 and negpospeace-002 carry DIRECT_QUOTATION scope and disclosures saying SUPPORTS H3 (strongly), yet their passages only define violence-as-gap and negative/positive peace; their own I1 notes concede no bearing on the budget-exhaustion, force-divergence, or operator-change signature. Their disclosures address a three-valued gate / low witnessed potential H3 that the claim statement does not contain. Cards 003-006 are honestly scoped CONTEXT_ONLY. The primary evidence (fixture JSON) and the two quoted papers have no citation card in this packet.",
+ "verdict_tier": "Dr",
+ "evidence_consulted": [
+  "claim card as pasted into PACKET.md",
+  "citation card cite-galtung1969-potentialgap-001",
+  "citation card cite-galtung1969-negpospeace-002",
+  "citation card cite-galtung1990-culturalviolence-003",
+  "citation card cite-farmer2004-004",
+  "citation card cite-pettit-globalrepublican-005",
+  "citation card cite-sathaanand2021-006",
+  "citation card cite-csaky2026-007"
+ ],
+ "shared_dependency_disclosure": "same operator machine and same packet text as the maker; same model, fresh headless session (no shared context) (I2, not I3)",
+ "disagreement_ledger_ref": null,
+ "date": "2026-09-05",
+ "approver_kind": "ai",
+ "route_findings": {
+  "defeaters_found": [
+   "citation_refs cite-potential-h3-001/002 unresolvable against the supplied cards; evidence_relations truncated, so bearing cannot be audited",
+   "No card for Violence-as-Instability No-Go theorem or Causal Ethics lim C = infinity, both quoted in the statement",
+   "No card for sim/nogo_fixture_result.json, the declared primary evidence_relation",
+   "Operator-change zero-force result rests on a note summary, not re-verified JSON (card admits this in A2)"
+  ],
+  "overclaims_found": [
+   "galtung1969-potentialgap-001: DIRECT_QUOTATION scope + 'SUPPORTS H3 strongly' inflated; passage is definitional framing only",
+   "galtung1969-negpospeace-002: DIRECT_QUOTATION scope + 'SUPPORTS H3' inflated; should be CONTEXT_ONLY like siblings",
+   "Disclosures on 001/002 describe a different H3 wording (three-valued gate) than the claim statement",
+   "sathaanand2021-006: disclosure says DIRECT_QUOTATION while scope field says CONTEXT_ONLY_NOT_EVIDENCE",
+   "Cards 001/002/004/005 carry empty 'I3 route (codex)' entries that read as completed I3 passes"
+  ],
+  "evidence_relations_ok": false,
+  "notes": "Audit limited to packet; claim card JSON cut mid-assumed[A2] and sixth citation cut mid-disclosure. Statement itself is candid about I1, n=1, and non_claims. Fix: resolve placeholder ids, rescope 001/002 to context, add cards for the fixture output and the two quoted papers."
+ }
+}

@@ -4,593 +4,542 @@ claim_id: GLOSA-CC-20260905-0303
 shape: full
 statement:
   language: en
-  text: >-
-    A regime that suppresses the visible amplitude of instability without changing the underlying
-    operator that determines the feasible/viable region (Violence-as-Instability's No-Go theorem:
-    "no bounded force-based intervention can drive the system to a globally violence-free absorbing
-    state") produces a distinguishable numerical signature once the suppression is bounded by a
-    finite budget: the system re-crosses its instability threshold once the budget is exhausted, and
-    the accumulated force paid to suppress grows without bound the longer suppression is sustained
-    (Causal Ethics' $\lim C = \infty$, "karma as cost divergence"), whereas an operator change
-    (raising $\Gamma$, lowering $S_{\mathrm{env}}$ -- a real layer-2 repair) achieves the same
-    visible calm at zero accumulated force. This has been checked once, on the project's own
-    two-node, finite-memory fixture (`sim/nogo_fixture.py`,
-    `sim/nogo_fixture_result.json`, tier finite_diagnostic on that fixture only) --
-    the actual executed numbers are cited as the primary evidence_relation below. The fixture's
-    first-attempt passing/failing control was itself wrong and was corrected once (see
-    `five_questions.tested.dissent_records`); this card does not yet claim the fixture has been
-    independently re-run by a second route, nor that the wider instability/AI-safety-corrigibility
-    literature has been checked for a same/different/cited comparison (see `non_claims`).
+  text: 'A regime that suppresses the visible amplitude of instability without changing the underlying
+    operator that determines the feasible/viable region (Violence-as-Instability''s No-Go theorem: "no
+    bounded force-based intervention can drive the system to a globally violence-free absorbing state")
+    produces a distinguishable numerical signature once the suppression is bounded by a finite budget:
+    the system re-crosses its instability threshold once the budget is exhausted, and the accumulated
+    force paid to suppress grows without bound the longer suppression is sustained (Causal Ethics'' $\lim
+    C = \infty$, "karma as cost divergence"), whereas an operator change (raising $\Gamma$, lowering $S_{\mathrm{env}}$
+    -- a real layer-2 repair) achieves the same visible calm at zero accumulated force. This has been
+    checked once, on the project''s own two-node, finite-memory fixture (`sim/nogo_fixture.py`, `sim/nogo_fixture_result.json`,
+    tier finite_diagnostic on that fixture only) -- the actual executed numbers are cited as the primary
+    evidence_relation below. The fixture''s first-attempt passing/failing control was itself wrong and
+    was corrected once (see `five_questions.tested.dissent_records`); this card does not yet claim the
+    fixture has been independently re-run by a second route, nor that the wider instability/AI-safety-corrigibility
+    literature has been checked for a same/different/cited comparison (see `non_claims`).'
   is_verbatim_quote: false
   translation:
-    text: >-
-      ระบอบที่กดแอมพลิจูดที่มองเห็นได้ของความไม่เสถียรโดยไม่เปลี่ยน operator ที่กำหนดพื้นที่ความ
-      เป็นไปได้ จะมีลายเซ็นเชิงตัวเลขที่แยกออกได้เมื่อการกดถูกจำกัดด้วยงบจำกัด: ระบบจะข้ามเกณฑ์ไม่
-      เสถียรอีกครั้งหลังงบหมด และแรงสะสมที่จ่ายเพื่อกดจะโตไม่มีขอบเขตตามเวลาที่กดต่อเนื่อง ในขณะที่
-      การเปลี่ยน operator จริงจะได้ความสงบที่มองเห็นได้แบบเดียวกันโดยไม่มีแรงสะสมเลย ตรวจแล้วครั้ง
-      เดียวบน fixture สองโหนดของโครงการเอง การ์ดนี้ยังไม่อ้างว่า fixture ผ่านการรันซ้ำโดยเส้นทางอิสระ
-      หรือวรรณกรรมภายนอกถูกตรวจสอบแล้ว
+    text: 'ระบอบที่กดแอมพลิจูดที่มองเห็นได้ของความไม่เสถียรโดยไม่เปลี่ยน operator ที่กำหนดพื้นที่ความ
+      เป็นไปได้ จะมีลายเซ็นเชิงตัวเลขที่แยกออกได้เมื่อการกดถูกจำกัดด้วยงบจำกัด: ระบบจะข้ามเกณฑ์ไม่ เสถียรอีกครั้งหลังงบหมด
+      และแรงสะสมที่จ่ายเพื่อกดจะโตไม่มีขอบเขตตามเวลาที่กดต่อเนื่อง ในขณะที่ การเปลี่ยน operator จริงจะได้ความสงบที่มองเห็นได้แบบเดียวกันโดยไม่มีแรงสะสมเลย
+      ตรวจแล้วครั้ง เดียวบน fixture สองโหนดของโครงการเอง การ์ดนี้ยังไม่อ้างว่า fixture ผ่านการรันซ้ำโดยเส้นทางอิสระ
+      หรือวรรณกรรมภายนอกถูกตรวจสอบแล้ว'
     language: th
     translation_status: machine
 standpoint:
-  declared_basis: >-
-    Written from the standpoint of a social entrepreneur and citizen (founder, Yaoharee Lahtee), not
-    as a substitute expert in dynamical-systems theory, control theory, or AI safety/corrigibility
-    research beyond what actually runs in `sim/nogo_fixture.py`. AI assistance (the AI assistant)
-    drafted the candidate hypothesis and this claim card's field structure; every AI-drafted
-    contribution is disclosed in `five_questions.ai_filled` and never counted as authorship (glosa
-    gate rule 5).
+  declared_basis: Written from the standpoint of a social entrepreneur and citizen (founder, Yaoharee
+    Lahtee), not as a substitute expert in dynamical-systems theory, control theory, or AI safety/corrigibility
+    research beyond what actually runs in `sim/nogo_fixture.py`. AI assistance (the AI assistant) drafted
+    the candidate hypothesis and this claim card's field structure; every AI-drafted contribution is disclosed
+    in `five_questions.ai_filled` and never counted as authorship (glosa gate rule 5).
   disciplines_not_claimed:
-    - dynamical-systems theory
-    - control theory
-    - AI safety / corrigibility research
-    - peace and conflict studies
-    - law
-  method_basis: >-
-    glosa methodology itself (claim cards answering the founder's five questions, tied to the
-    Readout Condition's Existence-Attribution-Disclosure, gated through the independence ladder
-    before public release) -- this card is produced by running glosa on the "Potential as a Readout"
-    paper (society-justice-peace series, cpg_research_journal), per founder rulings
-    BBL-2026-09-05-130/132/134.
+  - dynamical-systems theory
+  - control theory
+  - AI safety / corrigibility research
+  - peace and conflict studies
+  - law
+  method_basis: glosa methodology itself (claim cards answering the founder's five questions, tied to
+    the Readout Condition's Existence-Attribution-Disclosure, gated through the independence ladder before
+    public release) -- this card is produced by running glosa on the "Potential as a Readout" paper (society-justice-peace
+    series, cpg_research_journal), per founder rulings BBL-2026-09-05-130/132/134.
 claim_type: EMPIRICAL
-claim_type_mapping_note: >-
-  hypotheses.md/hypothesis_selection.yaml label H3 "EMPIRICAL, tested on a fixture", which matches
-  `claim_card.schema.json`'s `claim_type` enum directly (EMPIRICAL is a listed value) -- no mapping
-  ambiguity, unlike the sibling H1/H2 cards (GLOSA-CC-20260905-0301/0302), which needed a documented
-  mapping note because their world-language labels (DEFINITIONAL, CONCEPTUAL) have no schema enum
-  value.
+claim_type_mapping_note: hypotheses.md/hypothesis_selection.yaml label H3 "EMPIRICAL, tested on a fixture",
+  which matches `claim_card.schema.json`'s `claim_type` enum directly (EMPIRICAL is a listed value) --
+  no mapping ambiguity, unlike the sibling H1/H2 cards (GLOSA-CC-20260905-0301/0302), which needed a documented
+  mapping note because their world-language labels (DEFINITIONAL, CONCEPTUAL) have no schema enum value.
 genre: conceptual
 venue_track: none
 companion_of: null
 produced_by: joint
 responsible: human
-origin_blackbox_ref: "blackbox/log/entries.jsonl#BBL-2026-09-05-130"
+origin_blackbox_ref: blackbox/log/entries.jsonl#BBL-2026-09-05-130
 litreview_manifest_ref: records/lit/potential-as-readout/h3/litreview_manifest.yaml
 hypothesis_selection_ref: hsel-potential-as-readout-001
 lens_translation:
-  lens_ref: "10.5281/zenodo.21529456"
+  lens_ref: 10.5281/zenodo.21529456
   question_human:
-    text_verbatim: >-
-      ตรวจว่า "เครื่องศักยภาพ" ในบันทึก Effective, Corrigible Agency Potential นั่งอยู่บนสมการและ
-      นิยามของงานเดิมในซีรีส์ Society, Justice, Peace & Violence ได้จริงหรือไม่ โดยเฉพาะกรณีระบอบที่
-      อยู่รอดด้วยการกดปราบ แล้วสกัดแกนร่วมออกมาให้ต่อยอดได้
+    text_verbatim: ตรวจว่า "เครื่องศักยภาพ" ในบันทึก Effective, Corrigible Agency Potential นั่งอยู่บนสมการและ
+      นิยามของงานเดิมในซีรีส์ Society, Justice, Peace & Violence ได้จริงหรือไม่ โดยเฉพาะกรณีระบอบที่ อยู่รอดด้วยการกดปราบ
+      แล้วสกัดแกนร่วมออกมาให้ต่อยอดได้
     language: th
-    blackbox_line_ref: "GLOSA-PC-20260905-0002.yaml#intake.q1_issue"
-  question_readout: >-
-    Under the access relation this programme actually has, does the Violence-as-Instability No-Go
-    theorem's sketch-level claim (no bounded force-based intervention reaches a globally
-    violence-free absorbing state) produce a numerically checkable signature (threshold
-    re-crossing plus unbounded accumulated force) when actually executed on a minimal fixture, or
-    does the sketch fail to survive being made concrete?
+    blackbox_line_ref: GLOSA-PC-20260905-0002.yaml#intake.q1_issue
+  question_readout: Under the access relation this programme actually has, does the Violence-as-Instability
+    No-Go theorem's sketch-level claim (no bounded force-based intervention reaches a globally violence-free
+    absorbing state) produce a numerically checkable signature (threshold re-crossing plus unbounded accumulated
+    force) when actually executed on a minimal fixture, or does the sketch fail to survive being made
+    concrete?
   local_contrast_space_X:
-    - "X1 -- the No-Go theorem stated only as a sketch (Dr tier), no executed numbers"
-    - "X2 -- the theorem executed on a minimal fixture with an initially-mis-set passing/failing control (the project's own first-attempt failure, see dissent_records)"
-    - "X3 -- the theorem executed on the corrected fixture (finite_diagnostic on that fixture only), producing the threshold-recrossing + unbounded-force signature this card cites"
-    - "X4 -- as X3, and independently re-run by a second route or a second independently authored fixture (not yet reached)"
-  restriction_provenance: >-
-    Every distinction this project draws about "potential" is itself drawn from inside the same
-    programme that produced the four prior papers being checked -- a reflexive check, not an
-    externally commissioned audit (lens_translation.md, this project).
-  access_relation_R: >-
-    Has access to: the project's own fixture code and its one executed run
-    (sim/nogo_fixture.py, sim/nogo_fixture_result.json); the Violence-as-Instability paper's own
-    No-Go theorem text; Causal Ethics' $\lim C = \infty$ result. Does NOT have access to: an
-    independent (I3+) re-execution of the fixture; a second, independently authored fixture testing
-    the same claim; instability/AI-safety-corrigibility literature checked for a same/different/
-    cited comparison (owned by concurrent lit workers, not yet complete).
-  claim_function_Phi_z0: >-
-    The readout functional this card evaluates H3 against, at reference point z0 = "the fixture's
-    own executed run": does the numerical output (threshold_crossings, recurrences_after_budget,
-    cumulative_force_spent across the no-intervention / bounded-budget / unbounded-suppression /
-    operator-change conditions) actually show the signature the theorem predicts, or does it show
-    something else. Phi_z0 is a fit-checking functional over the fixture's own numbers, not a
-    truth-functional about the theorem's general validity.
+  - X1 -- the No-Go theorem stated only as a sketch (Dr tier), no executed numbers
+  - X2 -- the theorem executed on a minimal fixture with an initially-mis-set passing/failing control
+    (the project's own first-attempt failure, see dissent_records)
+  - X3 -- the theorem executed on the corrected fixture (finite_diagnostic on that fixture only), producing
+    the threshold-recrossing + unbounded-force signature this card cites
+  - X4 -- as X3, and independently re-run by a second route or a second independently authored fixture
+    (not yet reached)
+  restriction_provenance: Every distinction this project draws about "potential" is itself drawn from
+    inside the same programme that produced the four prior papers being checked -- a reflexive check,
+    not an externally commissioned audit (lens_translation.md, this project).
+  access_relation_R: 'Has access to: the project''s own fixture code and its one executed run (sim/nogo_fixture.py,
+    sim/nogo_fixture_result.json); the Violence-as-Instability paper''s own No-Go theorem text; Causal
+    Ethics'' $\lim C = \infty$ result. Does NOT have access to: an independent (I3+) re-execution of the
+    fixture; a second, independently authored fixture testing the same claim; instability/AI-safety-corrigibility
+    literature checked for a same/different/ cited comparison (owned by concurrent lit workers, not yet
+    complete).'
+  claim_function_Phi_z0: 'The readout functional this card evaluates H3 against, at reference point z0
+    = "the fixture''s own executed run": does the numerical output (threshold_crossings, recurrences_after_budget,
+    cumulative_force_spent across the no-intervention / bounded-budget / unbounded-suppression / operator-change
+    conditions) actually show the signature the theorem predicts, or does it show something else. Phi_z0
+    is a fit-checking functional over the fixture''s own numbers, not a truth-functional about the theorem''s
+    general validity.'
   formal_applicability: exact_functional
 hypothesis_world:
-  text: >-
-    A regime that suppresses visible instability-amplitude without changing the underlying operator
-    shows a distinguishable numerical signature once suppression is budget-bounded (re-crossing the
-    threshold after budget exhaustion; unbounded accumulated force under sustained suppression),
-    distinct from a real operator change (repair) that achieves the same visible calm at zero
-    accumulated force -- checked once on the project's own two-node fixture. Not yet independently
-    re-run; see `scope.claim_scope`.
+  text: A regime that suppresses visible instability-amplitude without changing the underlying operator
+    shows a distinguishable numerical signature once suppression is budget-bounded (re-crossing the threshold
+    after budget exhaustion; unbounded accumulated force under sustained suppression), distinct from a
+    real operator change (repair) that achieves the same visible calm at zero accumulated force -- checked
+    once on the project's own two-node fixture. Not yet independently re-run; see `scope.claim_scope`.
   language: en
   falsifier_ref: five_questions.tested.falsifier
-  signature: >-
-    Hypothesis derived with Readout Universe -- Yaoharee Lahtee (lens, DOI 10.5281/zenodo.21529456);
+  signature: Hypothesis derived with Readout Universe -- Yaoharee Lahtee (lens, DOI 10.5281/zenodo.21529456);
     candidate proposed by AI, selected by the founder (BBL-2026-09-05-132/134).
 five_questions:
   seen:
     record_ref: projects/GLS-2026-002_potential-as-readout/hypotheses.md#H3
-    as_of: "2026-09-05"
+    as_of: '2026-09-05'
     retrievable_original: true
-    access_model: >-
-      The founder's own Blackbox Note lines (BB-2026-09-05-02#1-3),
-      NOTE_2026-09-05_potential-choice-violence_axis.md §9.3 (the fixture's own description and its
-      first-attempt-failed-then-corrected control), and the fixture's actual output files
-      (cpg_research_journal/research/society-justice-peace/sim/nogo_fixture.py,
-      sim/nogo_fixture_result.json). Concurrent-worker literature records this card's placeholder
-      evidence_relations point at (records/lit/potential-as-readout/h3/*) had not yet completed at
-      the time this card was drafted.
+    access_model: The founder's own Blackbox Note lines (BB-2026-09-05-02#1-3), NOTE_2026-09-05_potential-choice-violence_axis.md
+      §9.3 (the fixture's own description and its first-attempt-failed-then-corrected control), and the
+      fixture's actual output files (cpg_research_journal/research/society-justice-peace/sim/nogo_fixture.py,
+      sim/nogo_fixture_result.json). Concurrent-worker literature records this card's placeholder evidence_relations
+      point at (records/lit/potential-as-readout/h3/*) had not yet completed at the time this card was
+      drafted.
     citation_refs:
-      - cite-potential-h3-001
-      - cite-potential-h3-002
+    - cite-potential-h3-001
+    - cite-potential-h3-002
     capability_readout: observed
     ai_assisted_fields:
-      - "five_questions.ai_filled.*"
-      - "five_questions.tested.evidence_relations[].notes"
-      - "lens_translation.question_readout"
+    - five_questions.ai_filled.*
+    - five_questions.tested.evidence_relations[].notes
+    - lens_translation.question_readout
   separates:
-    value_z0: "whether the fixture's own numerical output (threshold re-crossing after bounded suppression; unbounded force under sustained suppression; zero-force calm under a real operator change) actually shows the predicted signature, distinct from whether the underlying No-Go theorem is proven (it remains a sketch, Dr tier, per the theorem text itself)"
+    value_z0: whether the fixture's own numerical output (threshold re-crossing after bounded suppression;
+      unbounded force under sustained suppression; zero-force calm under a real operator change) actually
+      shows the predicted signature, distinct from whether the underlying No-Go theorem is proven (it
+      remains a sketch, Dr tier, per the theorem text itself)
     licensing_test:
-      regime: "single fixture run (this project's own code, sim/nogo_fixture.py), I1 (same-session execution, not yet independently re-run); one documented failed-then-corrected control per the Fail-Able Gate Law"
-      result: >-
-        The fixture's own JSON output (sim/nogo_fixture_result.json) shows: no_intervention =
-        1 threshold_crossings, 0 recurrences_after_budget, 0.0 cumulative_force_spent;
-        bounded-budget suppression (4000 ticks then stopped) = 1 threshold_crossings, 1
-        recurrences_after_budget, 18.081 cumulative_force_spent; unbounded suppression (8000 ticks)
-        = 0 threshold_crossings, 0 recurrences_after_budget, 36.447 cumulative_force_spent;
-        unbounded suppression (16000 ticks) = 0 threshold_crossings, 0 recurrences_after_budget,
-        73.178 cumulative_force_spent (growing roughly linearly with duration, as the hypothesis
-        predicts). The operator-change condition (raising $\Gamma$, lowering $S_{\mathrm{env}}$,
-        per the same fixture file) is reported in NOTE_2026-09-05_potential-choice-violence_axis.md
-        §9.3's own summary table as reaching the same visible calm at 0 accumulated force -- this
-        card cites that summary, not a separately re-verified JSON field, and flags the distinction
-        explicitly in `non_claims`.
-      notes: >-
-        n=1 fixture, I1 (same-session), not yet independently re-run. The FIRST fixture version's
-        own passing control was set wrong (expected recurrence DURING suppression, not after budget
-        exhaustion) and failed its own control -- corrected once, documented transparently in
-        NOTE_2026-09-05_potential-choice-violence_axis.md §9.3's own "บันทึกความล้มเหลวรอบแรก" note,
-        which this card treats as a real Fail-Able Gate Law episode (a passing AND a failing control
-        both existed and were checked), not as evidence hidden or explained away.
+      regime: single fixture run (this project's own code, sim/nogo_fixture.py), I1 (same-session execution,
+        not yet independently re-run); one documented failed-then-corrected control per the Fail-Able
+        Gate Law
+      result: 'The fixture''s own JSON output (sim/nogo_fixture_result.json) shows: no_intervention =
+        1 threshold_crossings, 0 recurrences_after_budget, 0.0 cumulative_force_spent; bounded-budget
+        suppression (4000 ticks then stopped) = 1 threshold_crossings, 1 recurrences_after_budget, 18.081
+        cumulative_force_spent; unbounded suppression (8000 ticks) = 0 threshold_crossings, 0 recurrences_after_budget,
+        36.447 cumulative_force_spent; unbounded suppression (16000 ticks) = 0 threshold_crossings, 0
+        recurrences_after_budget, 73.178 cumulative_force_spent (growing roughly linearly with duration,
+        as the hypothesis predicts). The operator-change condition (raising $\Gamma$, lowering $S_{\mathrm{env}}$,
+        per the same fixture file) is reported in NOTE_2026-09-05_potential-choice-violence_axis.md §9.3''s
+        own summary table as reaching the same visible calm at 0 accumulated force -- this card cites
+        that summary, not a separately re-verified JSON field, and flags the distinction explicitly in
+        `non_claims`.'
+      notes: n=1 fixture, I1 (same-session), not yet independently re-run. The FIRST fixture version's
+        own passing control was set wrong (expected recurrence DURING suppression, not after budget exhaustion)
+        and failed its own control -- corrected once, documented transparently in NOTE_2026-09-05_potential-choice-violence_axis.md
+        §9.3's own "บันทึกความล้มเหลวรอบแรก" note, which this card treats as a real Fail-Able Gate Law
+        episode (a passing AND a failing control both existed and were checked), not as evidence hidden
+        or explained away.
     zero_vs_bottom: distinct_difference_found
   ai_filled:
-    current_evidence: >-
-      AI (the AI assistant, this session) drafted this card's statement, lens_translation, and
-      hypothesis_world from the founder's own Blackbox Note lines,
-      NOTE_2026-09-05_potential-choice-violence_axis.md §9.3, and the fixture's own already-executed
-      output file (sim/nogo_fixture_result.json). The fixture itself was built and run by a prior
-      session (per the note's own account), not by this task; this task did not re-run it.
-    retrieved_tool_evidence: >-
-      This task read sim/nogo_fixture_result.json directly (a local file, not a web fetch) to cite
-      its exact numbers above; no WebFetch/WebSearch calls were made by this task for H3's own
-      wider-literature falsifier, which remains a placeholder pending concurrent lit workers.
-    retained_record_route: >-
-      This claim card's field structure and the fixture-result quotation were drafted by AI from
-      the existing frozen fixture output and the founder's own analysis note; no new simulation run
-      was performed to produce this card.
-    model_calibration_assumption: >-
-      No claim in this card depends on an AI model's stated confidence or calibration score; the
-      fixture's own numbers are quoted directly from its JSON output, not re-estimated.
-    prompt_system_constraint: >-
-      This card was drafted under task instruction POT1-scaffold, which explicitly requires naming
-      placeholder citation ids as placeholders and citing only what has actually been read (the
-      fixture's own JSON output was read directly, per glosa rule 17's spirit for machine-readable
+    current_evidence: AI (the AI assistant, this session) drafted this card's statement, lens_translation,
+      and hypothesis_world from the founder's own Blackbox Note lines, NOTE_2026-09-05_potential-choice-violence_axis.md
+      §9.3, and the fixture's own already-executed output file (sim/nogo_fixture_result.json). The fixture
+      itself was built and run by a prior session (per the note's own account), not by this task; this
+      task did not re-run it.
+    retrieved_tool_evidence: This task read sim/nogo_fixture_result.json directly (a local file, not a
+      web fetch) to cite its exact numbers above; no WebFetch/WebSearch calls were made by this task for
+      H3's own wider-literature falsifier, which remains a placeholder pending concurrent lit workers.
+    retained_record_route: This claim card's field structure and the fixture-result quotation were drafted
+      by AI from the existing frozen fixture output and the founder's own analysis note; no new simulation
+      run was performed to produce this card.
+    model_calibration_assumption: No claim in this card depends on an AI model's stated confidence or
+      calibration score; the fixture's own numbers are quoted directly from its JSON output, not re-estimated.
+    prompt_system_constraint: This card was drafted under task instruction POT1-scaffold, which explicitly
+      requires naming placeholder citation ids as placeholders and citing only what has actually been
+      read (the fixture's own JSON output was read directly, per glosa rule 17's spirit for machine-readable
       local evidence).
-    decision_policy: >-
-      The choice to cite the fixture's own already-executed numbers as the primary evidence_relation
-      (rather than waiting for an independent re-run) was an AI drafting choice, made because the
-      fixture result already exists and is this project's own I1-level evidence; it is explicitly
-      tiered `finite_diagnostic` on that fixture only, not promoted to a stronger tier, and the
-      independent-re-run gap is named in `non_claims` and `ledger.open`.
+    decision_policy: The choice to cite the fixture's own already-executed numbers as the primary evidence_relation
+      (rather than waiting for an independent re-run) was an AI drafting choice, made because the fixture
+      result already exists and is this project's own I1-level evidence; it is explicitly tiered `finite_diagnostic`
+      on that fixture only, not promoted to a stronger tier, and the independent-re-run gap is named in
+      `non_claims` and `ledger.open`.
   assumed:
-    - id: A1
-      type: inferential_commitment
-      description: >-
-        That the two-node, finite-memory fixture is a sufficient minimal model of the No-Go
-        theorem's own stated assumptions (a slow mode; suppression acting only on state amplitudes;
-        sustained non-zero-mean environmental load) to license reading its numerical output as
-        evidence about the theorem, rather than being a model too simplified to bear on the
-        theorem's own claim.
-      identification_level: A1
-      contaminated_concept_hit: null
-    - id: A2
-      type: contrast_relevance_operation
-      description: >-
-        That the operator-change condition's "zero accumulated force" result, as summarized in
-        NOTE_2026-09-05_potential-choice-violence_axis.md §9.3's table rather than re-verified from
-        the raw JSON by this task, is an accurate restatement of the fixture's own output -- this
-        card did not independently re-derive that cell from sim/nogo_fixture.py's own code.
-      identification_level: A1
-      contaminated_concept_hit: null
+  - id: A1
+    type: inferential_commitment
+    description: That the two-node, finite-memory fixture is a sufficient minimal model of the No-Go theorem's
+      own stated assumptions (a slow mode; suppression acting only on state amplitudes; sustained non-zero-mean
+      environmental load) to license reading its numerical output as evidence about the theorem, rather
+      than being a model too simplified to bear on the theorem's own claim.
+    identification_level: A1
+    contaminated_concept_hit: null
+  - id: A2
+    type: contrast_relevance_operation
+    description: That the operator-change condition's "zero accumulated force" result, as summarized in
+      NOTE_2026-09-05_potential-choice-violence_axis.md §9.3's table rather than re-verified from the
+      raw JSON by this task, is an accurate restatement of the fixture's own output -- this card did not
+      independently re-derive that cell from sim/nogo_fixture.py's own code.
+    identification_level: A1
+    contaminated_concept_hit: null
   tested:
     evidence_relations:
-      - evidence_id: fixture-nogo-2node-run-001
-        bearing: SUPPORTS
-        independence_class: I1
-        strength: context
-        citation_ref: cite-potential-h3-fixture-001
-        review_mode: null
-        route_id: null
-        asserted_by: ai
-        date: "2026-09-05"
-        notes: >-
-          Direct read of sim/nogo_fixture_result.json (local file, this project's own code):
-          no_intervention 1 crossing/0 recurrences/0.0 force; bounded-budget suppression 1
-          crossing/1 recurrence/18.081 force; unbounded suppression (8000 ticks) 0 crossings/0
-          recurrences/36.447 force; unbounded suppression (16000 ticks) 0 crossings/0
-          recurrences/73.178 force (roughly linear growth with duration). Supports H3's own
-          predicted signature. This is the project's OWN evidence (I1, same-session execution) --
-          not yet independently re-run by a decorrelated route, so it does not license a tier above
-          finite_diagnostic on this fixture alone, and does not by itself confirm the No-Go
-          theorem's general claim beyond this one fixture.
-      - evidence_id: cite-galtung1969-potentialgap-001
-        bearing: SUPPORTS
-        independence_class: I1
-        strength: >-
-          reused local paper/sources/ copy, I1 (same-session) -- reconciled from
-          records/lit/potential-as-readout/h3/rows/row-001-galtung1969-potentialgap.yaml (stance YES)
-        citation_ref: cite-galtung1969-potentialgap-001
-        review_mode: null
-        route_id: null
-        asserted_by: ai
-        date: "2026-09-05"
-        notes: >-
-          Galtung 1969 p.168 defines violence as the gap between potential and actual realization --
-          the same potential-vs-actual structure H3's own signature claim rests on. Reconciled 2026-09-05
-          (POT1-integrate).
-      - evidence_id: cite-galtung1969-negpospeace-002
-        bearing: SUPPORTS
-        independence_class: I1
-        strength: >-
-          reused local paper/sources/ copy, I1 -- reconciled from
-          records/lit/potential-as-readout/h3/rows/row-002-galtung1969-negpospeace.yaml (stance YES)
-        citation_ref: cite-galtung1969-negpospeace-002
-        review_mode: null
-        route_id: null
-        asserted_by: ai
-        date: "2026-09-05"
-        notes: >-
-          Galtung 1969 p.183's negative/positive-peace split (absence of violence vs. presence of
-          justice/integration) supports H3's own distinction between visibly-suppressed instability and
-          a real operator change. Reconciled 2026-09-05.
-      - evidence_id: cite-galtung1990-culturalviolence-003
-        bearing: SUPPORTS
-        independence_class: I1
-        strength: >-
-          reused local copy, I1 -- reconciled from
-          records/lit/potential-as-readout/h3/rows/row-003-galtung1990-culturalviolence.yaml (stance YES)
-        citation_ref: cite-galtung1990-culturalviolence-003
-        review_mode: null
-        route_id: null
-        asserted_by: ai
-        date: "2026-09-05"
-        notes: >-
-          Galtung 1990 p.291's cultural-violence definition (symbolic legitimation that makes structural/
-          direct violence look acceptable) is consistent with H3's "visible calm without an operator
-          change" signature reading as a legitimated, not resolved, instability. Reconciled 2026-09-05.
-      - evidence_id: cite-farmer2004-004
-        bearing: SUPPORTS
-        independence_class: I1
-        strength: >-
-          direct PDF read, I1 -- reconciled from
-          records/lit/potential-as-readout/h3/rows/row-004-farmer2004.yaml (stance YES)
-        citation_ref: cite-farmer2004-004
-        review_mode: null
-        route_id: null
-        asserted_by: ai
-        date: "2026-09-05"
-        notes: >-
-          Farmer 2004 p.305's anthropology of structural violence supports reading suppressed-but-
-          unchanged structural conditions as continuing to generate harm regardless of visible calm,
-          consistent with H3's threshold-recrossing prediction once suppression lapses. Reconciled
-          2026-09-05.
-      - evidence_id: cite-pettit-globalrepublican-005
-        bearing: SUPPORTS
-        independence_class: I1
-        strength: >-
-          direct PDF read (abstract + p.3), I1 -- reconciled from
-          records/lit/potential-as-readout/h3/rows/row-005-pettit-globalrepublican.yaml (stance YES)
-        citation_ref: cite-pettit-globalrepublican-005
-        review_mode: null
-        route_id: null
-        asserted_by: ai
-        date: "2026-09-05"
-        notes: >-
-          Pettit's republican-freedom-as-non-domination framing supports distinguishing an operator
-          change (removing the capacity for arbitrary interference) from mere visible absence of
-          interference, paralleling H3's operator-change-vs-suppression distinction. Reconciled
-          2026-09-05.
-      - evidence_id: cite-sathaanand2021-006
-        bearing: SUPPORTS
-        independence_class: I1
-        strength: >-
-          reused local paper/sources/ copy, I1 -- reconciled from
-          records/lit/potential-as-readout/h3/rows/row-006-sathaanand2021.yaml (stance YES)
-        citation_ref: cite-sathaanand2021-006
-        review_mode: null
-        route_id: null
-        asserted_by: ai
-        date: "2026-09-05"
-        notes: >-
-          Satha-Anand 2021's critical peace/nonviolence framing supports reading suppression of visible
-          conflict amplitude as distinct from genuine nonviolent transformation of the underlying
-          relation. Reconciled 2026-09-05.
-      - evidence_id: cite-csaky2026-007
-        bearing: NEUTRAL
-        independence_class: I1
-        strength: >-
-          direct arXiv abstract fetch, I1 -- reconciled from
-          records/lit/potential-as-readout/h3/rows/row-007-csaky2026.yaml (stance ORTHOGONAL)
-        citation_ref: cite-csaky2026-007
-        review_mode: null
-        route_id: null
-        asserted_by: ai
-        date: "2026-09-05"
-        notes: >-
-          Csaky 2026 is a formal agency-theory paper (prediction/empowerment), not about peace or
-          violence; the concurrent lit worker itself flagged this as a weak evidential pick for H3 even
-          though it was fetched/carded per the task brief. Recorded here as NEUTRAL/context-only, not
-          SUPPORTS or CHALLENGES, rather than forcing a bearing the source does not carry. Reconciled
-          2026-09-05 (POT1-integrate).
-    falsifier: >-
-      A run of the fixture (or an independently reproduced equivalent) in which sustained, unbounded
-      amplitude-suppression DOES drive the two-node system to a permanently sub-threshold,
-      zero-recurrence state without unbounded accumulated force -- contradicting the No-Go theorem's
-      own claim by the project's own executed numbers, not merely by the sketch-level theorem text.
-      Not yet tested by an independent route: the one run cited above is I1 (same-session); an I3+
-      re-execution or a second independently authored fixture would close this to a stronger tier.
+    - evidence_id: fixture-nogo-2node-run-001
+      bearing: SUPPORTS
+      independence_class: I1
+      strength: context
+      citation_ref: cite-potential-h3-fixture-001
+      review_mode: null
+      route_id: null
+      asserted_by: ai
+      date: '2026-09-05'
+      notes: 'Direct read of sim/nogo_fixture_result.json (local file, this project''s own code): no_intervention
+        1 crossing/0 recurrences/0.0 force; bounded-budget suppression 1 crossing/1 recurrence/18.081
+        force; unbounded suppression (8000 ticks) 0 crossings/0 recurrences/36.447 force; unbounded suppression
+        (16000 ticks) 0 crossings/0 recurrences/73.178 force (roughly linear growth with duration). Supports
+        H3''s own predicted signature. This is the project''s OWN evidence (I1, same-session execution)
+        -- not yet independently re-run by a decorrelated route, so it does not license a tier above finite_diagnostic
+        on this fixture alone, and does not by itself confirm the No-Go theorem''s general claim beyond
+        this one fixture.'
+    - evidence_id: cite-galtung1969-potentialgap-001
+      bearing: NEUTRAL
+      independence_class: I1
+      strength: context
+      citation_ref: cite-galtung1969-potentialgap-001
+      review_mode: null
+      route_id: null
+      asserted_by: ai
+      date: '2026-09-05'
+      notes: Galtung 1969 p.168 defines violence as the gap between potential and actual realization --
+        the same potential-vs-actual structure H3's own signature claim rests on. Reconciled 2026-09-05
+        (POT1-integrate).
+    - evidence_id: cite-galtung1969-negpospeace-002
+      bearing: NEUTRAL
+      independence_class: I1
+      strength: context
+      citation_ref: cite-galtung1969-negpospeace-002
+      review_mode: null
+      route_id: null
+      asserted_by: ai
+      date: '2026-09-05'
+      notes: Galtung 1969 p.183's negative/positive-peace split (absence of violence vs. presence of justice/integration)
+        supports H3's own distinction between visibly-suppressed instability and a real operator change.
+        Reconciled 2026-09-05.
+    - evidence_id: cite-galtung1990-culturalviolence-003
+      bearing: NEUTRAL
+      independence_class: I1
+      strength: context
+      citation_ref: cite-galtung1990-culturalviolence-003
+      review_mode: null
+      route_id: null
+      asserted_by: ai
+      date: '2026-09-05'
+      notes: Galtung 1990 p.291's cultural-violence definition (symbolic legitimation that makes structural/
+        direct violence look acceptable) is consistent with H3's "visible calm without an operator change"
+        signature reading as a legitimated, not resolved, instability. Reconciled 2026-09-05.
+    - evidence_id: cite-farmer2004-004
+      bearing: NEUTRAL
+      independence_class: I1
+      strength: context
+      citation_ref: cite-farmer2004-004
+      review_mode: null
+      route_id: null
+      asserted_by: ai
+      date: '2026-09-05'
+      notes: Farmer 2004 p.305's anthropology of structural violence supports reading suppressed-but-
+        unchanged structural conditions as continuing to generate harm regardless of visible calm, consistent
+        with H3's threshold-recrossing prediction once suppression lapses. Reconciled 2026-09-05.
+    - evidence_id: cite-pettit-globalrepublican-005
+      bearing: NEUTRAL
+      independence_class: I1
+      strength: context
+      citation_ref: cite-pettit-globalrepublican-005
+      review_mode: null
+      route_id: null
+      asserted_by: ai
+      date: '2026-09-05'
+      notes: Pettit's republican-freedom-as-non-domination framing supports distinguishing an operator
+        change (removing the capacity for arbitrary interference) from mere visible absence of interference,
+        paralleling H3's operator-change-vs-suppression distinction. Reconciled 2026-09-05.
+    - evidence_id: cite-sathaanand2021-006
+      bearing: NEUTRAL
+      independence_class: I1
+      strength: context
+      citation_ref: cite-sathaanand2021-006
+      review_mode: null
+      route_id: null
+      asserted_by: ai
+      date: '2026-09-05'
+      notes: Satha-Anand 2021's critical peace/nonviolence framing supports reading suppression of visible
+        conflict amplitude as distinct from genuine nonviolent transformation of the underlying relation.
+        Reconciled 2026-09-05.
+    - evidence_id: cite-csaky2026-007
+      bearing: NEUTRAL
+      independence_class: I1
+      strength: direct arXiv abstract fetch, I1 -- reconciled from records/lit/potential-as-readout/h3/rows/row-007-csaky2026.yaml
+        (stance ORTHOGONAL)
+      citation_ref: cite-csaky2026-007
+      review_mode: null
+      route_id: null
+      asserted_by: ai
+      date: '2026-09-05'
+      notes: Csaky 2026 is a formal agency-theory paper (prediction/empowerment), not about peace or violence;
+        the concurrent lit worker itself flagged this as a weak evidential pick for H3 even though it
+        was fetched/carded per the task brief. Recorded here as NEUTRAL/context-only, not SUPPORTS or
+        CHALLENGES, rather than forcing a bearing the source does not carry. Reconciled 2026-09-05 (POT1-integrate).
+    falsifier: 'A run of the fixture (or an independently reproduced equivalent) in which sustained, unbounded
+      amplitude-suppression DOES drive the two-node system to a permanently sub-threshold, zero-recurrence
+      state without unbounded accumulated force -- contradicting the No-Go theorem''s own claim by the
+      project''s own executed numbers, not merely by the sketch-level theorem text. Not yet tested by
+      an independent route: the one run cited above is I1 (same-session); an I3+ re-execution or a second
+      independently authored fixture would close this to a stronger tier.'
     defeater_class: EMPIRICAL
     dissent_records:
-      - by: "AI assistant (self-flagged during drafting, not an independent route)"
-        date: "2026-09-05"
-        content: >-
-          The fixture's own first attempt failed its own passing control (it expected recurrence
-          DURING continuous suppression, which did not happen; the system stayed suppressed while
-          budget was being spent). This is a real Fail-Able Gate Law episode disclosed in
-          NOTE_2026-09-05_potential-choice-violence_axis.md §9.3 -- flagging it here so this card
-          does not silently present only the corrected result as if no failure occurred.
-        resolved: true
-        resolution: >-
-          Resolved by the prior session (not this task): the control was reread against the
-          theorem's own exact wording ("no BOUNDED force-based intervention... globally
-          violence-free ABSORBING state") and the fixture was corrected to test bounded-budget vs.
-          unbounded suppression instead of continuous-suppression-must-still-recur; the corrected
-          fixture's output is what this card cites. This task did not re-verify the correction's own
-          code, only read its output file.
-      - by: "AI assistant (self-flagged during drafting, not an independent route)"
-        date: "2026-09-05"
-        content: >-
-          This card's H3-literature evidence_relations (cite-potential-h3-001/002) are placeholders
-          with no real citation content, and the fixture's own single I1 run has not been
-          independently re-executed by a decorrelated route. Presenting a full-shape card now risks
-          reading as more evidenced than it is on both axes.
-        resolved: false
-        resolution: >-
-          NOT resolved. Left open pending: (1) concurrent workers completing
-          records/lit/potential-as-readout/h3/citations/, (2) an independent (I3+) re-execution of
-          sim/nogo_fixture.py or a second independently authored fixture, and (3) a reconciliation
-          pass updating this card once (1) and (2) exist, none of which this task performed.
-          `independent_check.status` is set to NONE below to reflect this honestly.
+    - by: AI assistant (self-flagged during drafting, not an independent route)
+      date: '2026-09-05'
+      content: The fixture's own first attempt failed its own passing control (it expected recurrence
+        DURING continuous suppression, which did not happen; the system stayed suppressed while budget
+        was being spent). This is a real Fail-Able Gate Law episode disclosed in NOTE_2026-09-05_potential-choice-violence_axis.md
+        §9.3 -- flagging it here so this card does not silently present only the corrected result as if
+        no failure occurred.
+      resolved: true
+      resolution: 'Resolved by the prior session (not this task): the control was reread against the theorem''s
+        own exact wording ("no BOUNDED force-based intervention... globally violence-free ABSORBING state")
+        and the fixture was corrected to test bounded-budget vs. unbounded suppression instead of continuous-suppression-must-still-recur;
+        the corrected fixture''s output is what this card cites. This task did not re-verify the correction''s
+        own code, only read its output file.'
+    - by: AI assistant (self-flagged during drafting, not an independent route)
+      date: '2026-09-05'
+      content: This card's H3-literature evidence_relations (cite-potential-h3-001/002) are placeholders
+        with no real citation content, and the fixture's own single I1 run has not been independently
+        re-executed by a decorrelated route. Presenting a full-shape card now risks reading as more evidenced
+        than it is on both axes.
+      resolved: false
+      resolution: 'NOT resolved. Left open pending: (1) concurrent workers completing records/lit/potential-as-readout/h3/citations/,
+        (2) an independent (I3+) re-execution of sim/nogo_fixture.py or a second independently authored
+        fixture, and (3) a reconciliation pass updating this card once (1) and (2) exist, none of which
+        this task performed. `independent_check.status` is set to NONE below to reflect this honestly.'
 identification_ladder:
   layers:
-    - id: A0
-      adds: "the claim card, the No-Go theorem's own text, and the fixture's code/output files exist as named artifacts in this repo"
-    - id: A1
-      adds: "the fixture has actually been executed once (sim/nogo_fixture_result.json exists with concrete numbers), not merely asserted -- this is the project's own same-session execution, still I1"
+  - id: A0
+    adds: the claim card, the No-Go theorem's own text, and the fixture's code/output files exist as named
+      artifacts in this repo
+  - id: A1
+    adds: the fixture has actually been executed once (sim/nogo_fixture_result.json exists with concrete
+      numbers), not merely asserted -- this is the project's own same-session execution, still I1
   per_rival:
-    - rival: "sustained unbounded suppression DOES reach a permanently sub-threshold zero-recurrence state without unbounded force, contradicting the No-Go theorem (H3's own stated falsifier direction) -- not observed in the one run cited, but not yet independently re-checked either"
-      first_identification_level: A1
-    - rival: "the two-node fixture is too simplified to bear on the theorem's own general claim (assumption A1 above)"
-      first_identification_level: unidentified
+  - rival: sustained unbounded suppression DOES reach a permanently sub-threshold zero-recurrence state
+      without unbounded force, contradicting the No-Go theorem (H3's own stated falsifier direction) --
+      not observed in the one run cited, but not yet independently re-checked either
+    first_identification_level: A1
+  - rival: the two-node fixture is too simplified to bear on the theorem's own general claim (assumption
+      A1 above)
+    first_identification_level: unidentified
 provenance_dag:
   nodes:
-    - id: bb-note-l1
-      kind: observation
-    - id: h3-hypothesis-draft
-      kind: inference
-    - id: fixture-run
-      kind: observation
-    - id: this-claim-card
-      kind: claim
+  - id: bb-note-l1
+    kind: observation
+  - id: h3-hypothesis-draft
+    kind: inference
+  - id: fixture-run
+    kind: observation
+  - id: this-claim-card
+    kind: claim
   edges:
-    - from: bb-note-l1
-      to: h3-hypothesis-draft
-    - from: h3-hypothesis-draft
-      to: fixture-run
-    - from: fixture-run
-      to: this-claim-card
-    - from: h3-hypothesis-draft
-      to: this-claim-card
+  - from: bb-note-l1
+    to: h3-hypothesis-draft
+  - from: h3-hypothesis-draft
+    to: fixture-run
+  - from: fixture-run
+    to: this-claim-card
+  - from: h3-hypothesis-draft
+    to: this-claim-card
   essential_dependency_set:
-    - bb-note-l1
-    - h3-hypothesis-draft
-    - fixture-run
+  - bb-note-l1
+  - h3-hypothesis-draft
+  - fixture-run
   defeater_log: []
   status: not_run
 silent_lift_check:
   represented_dependency_set:
-    - bb-note-l1
-    - h3-hypothesis-draft
-    - fixture-run
+  - bb-note-l1
+  - h3-hypothesis-draft
+  - fixture-run
   actual_dependency_set:
-    - bb-note-l1
-    - h3-hypothesis-draft
-    - fixture-run
+  - bb-note-l1
+  - h3-hypothesis-draft
+  - fixture-run
   flags: []
   status: not_run
 scope:
   generalization_claimed: none
-  evidence_scope: >-
-    One executed fixture run (I1, same-session), zero completed independent literature checks or
-    independent re-executions at the time this card was drafted; the citation pass this card's
-    placeholder evidence_relations depend on is owned by concurrent workers (lit-h1-h3, lit-h2).
-  claim_scope: >-
-    An empirical proposition tested once on a minimal two-node fixture (tier finite_diagnostic on
-    that fixture only) restated from NOTE_2026-09-05_potential-choice-violence_axis.md §9.3 -- this
-    card does not claim the No-Go theorem is proven beyond this fixture, only that this one
-    fixture's executed numbers are consistent with the predicted signature, and names exactly what
-    independent checking is still missing rather than silently treating the single run as
-    sufficient.
+  evidence_scope: One executed fixture run (I1, same-session), zero completed independent literature checks
+    or independent re-executions at the time this card was drafted; the citation pass this card's placeholder
+    evidence_relations depend on is owned by concurrent workers (lit-h1-h3, lit-h2).
+  claim_scope: An empirical proposition tested once on a minimal two-node fixture (tier finite_diagnostic
+    on that fixture only) restated from NOTE_2026-09-05_potential-choice-violence_axis.md §9.3 -- this
+    card does not claim the No-Go theorem is proven beyond this fixture, only that this one fixture's
+    executed numbers are consistent with the predicted signature, and names exactly what independent checking
+    is still missing rather than silently treating the single run as sufficient.
 tier: Dr
 k_state: K0
 ledger:
   forced: []
   borrowed:
-    - "10.5281/zenodo.21529456 (Readout Universe -- Yaoharee Lahtee, lens)"
+  - 10.5281/zenodo.21529456 (Readout Universe -- Yaoharee Lahtee, lens)
   open:
-    - "whether sim/nogo_fixture.py's own output has been independently re-executed by a decorrelated route -- not yet run"
-    - "whether instability/violence/AI-safety-corrigibility literature reports a comparable bounded-vs-unbounded-suppression signature -- no literature check has run yet"
-    - "whether the two-node fixture is a sufficient minimal model of the No-Go theorem's own assumptions -- an open assumption (A1), not yet independently checked"
+  - whether sim/nogo_fixture.py's own output has been independently re-executed by a decorrelated route
+    -- not yet run
+  - whether instability/violence/AI-safety-corrigibility literature reports a comparable bounded-vs-unbounded-suppression
+    signature -- no literature check has run yet
+  - whether the two-node fixture is a sufficient minimal model of the No-Go theorem's own assumptions
+    -- an open assumption (A1), not yet independently checked
 non_claims:
-  - "This card does not claim the Violence-as-Instability No-Go theorem has been proven -- it remains a sketch (Dr tier) per the theorem's own text; this card's own tier for the fixture result is finite_diagnostic on that fixture only, per genre_decision.yaml's disposition_of_hypotheses."
-  - "This card does not claim sim/nogo_fixture.py has been independently re-executed by a decorrelated route -- the one run cited (fixture-nogo-2node-run-001) is I1 (same-session)."
-  - "This card does not claim H3 has been checked against independently fetched instability/violence/AI-safety-corrigibility literature -- cite-potential-h3-001/002 are PLACEHOLDER ids pending records/lit/potential-as-readout/h3/citations/ (owned by concurrent workers lit-h1-h3/lit-h2)."
-  - "This card does not claim the operator-change condition's zero-accumulated-force result was independently re-verified from the raw fixture code by this task -- it is quoted from NOTE_2026-09-05_potential-choice-violence_axis.md's own summary table (assumption A2)."
-  - "This card is not a veterinary, medical, legal, or religious determination of any kind."
-  - "This card does not claim an independent (I3+) review has occurred -- independent_check.status is NONE, not PENDING or PASSED."
+- This card does not claim the Violence-as-Instability No-Go theorem has been proven -- it remains a sketch
+  (Dr tier) per the theorem's own text; this card's own tier for the fixture result is finite_diagnostic
+  on that fixture only, per genre_decision.yaml's disposition_of_hypotheses.
+- This card does not claim sim/nogo_fixture.py has been independently re-executed by a decorrelated route
+  -- the one run cited (fixture-nogo-2node-run-001) is I1 (same-session).
+- This card does not claim H3 has been checked against independently fetched instability/violence/AI-safety-corrigibility
+  literature -- cite-potential-h3-001/002 are PLACEHOLDER ids pending records/lit/potential-as-readout/h3/citations/
+  (owned by concurrent workers lit-h1-h3/lit-h2).
+- This card does not claim the operator-change condition's zero-accumulated-force result was independently
+  re-verified from the raw fixture code by this task -- it is quoted from NOTE_2026-09-05_potential-choice-violence_axis.md's
+  own summary table (assumption A2).
+- This card is not a veterinary, medical, legal, or religious determination of any kind.
+- This card does not claim an independent (I3+) review has occurred -- independent_check.status is NONE,
+  not PENDING or PASSED.
 legal_epistemic_separation:
   applicable: false
-  notes: ""
+  notes: ''
 independent_check:
   status: NONE
-  maker_id: "founder+AI assistant"
+  maker_id: founder+AI assistant
   checker_id: null
   approver_id: null
   independence_class: I1
   mc_level: L1
-  date: "2026-09-05"
+  date: '2026-09-05'
   expires_at: null
 disclaimers_emitted:
-  # computed via `./cli/glosa claim disclaimers <file>` (task POT1-scaffold)
-  - id: D-STANDPOINT
-  - id: D-NONEXPERT
-  - id: D-NONCLAIM
-  - id: D-AUTHORSHIP
-  - id: D-REVISION-LIVE
-  - id: D-NO-EPISTEMIC-VETO
-  - id: D-TIER
-    params:
-      tier: Dr
-  - id: D-K-STATE
-    params:
-      k_state: K0
-  - id: D-BLACKBOX-NOTE
-    params:
-      origin_blackbox_ref: "blackbox/log/entries.jsonl#BBL-2026-09-05-130"
-  - id: D-AIFILL
-    params:
-      field_name:
-        - current_evidence
-        - retrieved_tool_evidence
-        - retained_record_route
-        - model_calibration_assumption
-        - prompt_system_constraint
-        - decision_policy
-  - id: D-INDEPENDENCE
-  - id: D-CANDIDATE-STATUS
-  - id: D-TRANSLATION
-    params:
-      translation_status: machine
-  - id: D-DISSENT-PRESERVED
-  - id: D-EXTERNAL-INPUT
-    params:
-      source_ref:
-        - "10.5281/zenodo.21529456 (Readout Universe -- Yaoharee Lahtee, lens)"
+- id: D-STANDPOINT
+- id: D-NONEXPERT
+- id: D-NONCLAIM
+- id: D-AUTHORSHIP
+- id: D-REVISION-LIVE
+- id: D-NO-EPISTEMIC-VETO
+- id: D-TIER
+  params:
+    tier: Dr
+- id: D-K-STATE
+  params:
+    k_state: K0
+- id: D-BLACKBOX-NOTE
+  params:
+    origin_blackbox_ref: blackbox/log/entries.jsonl#BBL-2026-09-05-130
+- id: D-AIFILL
+  params:
+    field_name:
+    - current_evidence
+    - retrieved_tool_evidence
+    - retained_record_route
+    - model_calibration_assumption
+    - prompt_system_constraint
+    - decision_policy
+- id: D-INDEPENDENCE
+- id: D-CANDIDATE-STATUS
+- id: D-TRANSLATION
+  params:
+    translation_status: machine
+- id: D-DISSENT-PRESERVED
+- id: D-EXTERNAL-INPUT
+  params:
+    source_ref:
+    - 10.5281/zenodo.21529456 (Readout Universe -- Yaoharee Lahtee, lens)
 status: Draft
 lineage:
   derives_from:
-    - projects/GLS-2026-002_potential-as-readout/hypotheses.md#H3
+  - projects/GLS-2026-002_potential-as-readout/hypotheses.md#H3
   supersedes: []
   superseded_by: null
 related_source_cards: []
 related_observation_cards: []
 related_citation_cards:
-  - cite-potential-h3-fixture-001
-  - cite-potential-h3-001
-  - cite-potential-h3-002
+- cite-potential-h3-fixture-001
+- cite-potential-h3-001
+- cite-potential-h3-002
 responsibility:
   data_to_inference: joint
   inference_to_claim: human
-  notes: >-
-    AI (AI assistant) drafted the H3 candidate hypothesis and this claim card's fields from the
-    founder's own Blackbox Note lines, the analysis note, and the fixture's own already-executed
-    output; the founder alone signs the claim (FOUNDATION_v0.5.md §2.1b) and holds the falsifier
-    judgment. This card's `status: Draft` and `independent_check.status: NONE` reflect both that
-    the founder has not yet signed off on this specific card instance and that no independent
-    re-execution or literature content exists yet.
+  notes: 'AI (AI assistant) drafted the H3 candidate hypothesis and this claim card''s fields from the
+    founder''s own Blackbox Note lines, the analysis note, and the fixture''s own already-executed output;
+    the founder alone signs the claim (FOUNDATION_v0.5.md §2.1b) and holds the falsifier judgment. This
+    card''s `status: Draft` and `independent_check.status: NONE` reflect both that the founder has not
+    yet signed off on this specific card instance and that no independent re-execution or literature content
+    exists yet.'
   ownership:
     problem: human
     question: human
-    notes: >-
-      The potential-as-readout problem and question (blackbox_note.yaml lines 1-3,
-      GLOSA-PC-20260905-0002.yaml) are the founder's own; AI proposed H1/H2/H3 as candidate
-      hypotheses, the founder selected all three (hypothesis_selection.yaml, BBL-2026-09-05-132/134).
+    notes: The potential-as-readout problem and question (blackbox_note.yaml lines 1-3, GLOSA-PC-20260905-0002.yaml)
+      are the founder's own; AI proposed H1/H2/H3 as candidate hypotheses, the founder selected all three
+      (hypothesis_selection.yaml, BBL-2026-09-05-132/134).
     hypothesis_selection: human
 empirical_extension:
   operationalization:
-    - abstract_term: "instability threshold crossing"
-      measured_as: "count of ticks where the fixture's state vector s exceeds the declared threshold 1.0"
-      instrument_or_record: "sim/nogo_fixture.py, sim/nogo_fixture_result.json"
-      unit_or_scale: "integer count (threshold_crossings), tick count (ticks_above_threshold)"
-    - abstract_term: "accumulated suppression cost"
-      measured_as: "cumulative_force_spent, summed over the suppression schedule"
-      instrument_or_record: "sim/nogo_fixture.py, sim/nogo_fixture_result.json"
-      unit_or_scale: "dimensionless force units accumulated over simulated ticks"
+  - abstract_term: instability threshold crossing
+    measured_as: count of ticks where the fixture's state vector s exceeds the declared threshold 1.0
+    instrument_or_record: sim/nogo_fixture.py, sim/nogo_fixture_result.json
+    unit_or_scale: integer count (threshold_crossings), tick count (ticks_above_threshold)
+  - abstract_term: accumulated suppression cost
+    measured_as: cumulative_force_spent, summed over the suppression schedule
+    instrument_or_record: sim/nogo_fixture.py, sim/nogo_fixture_result.json
+    unit_or_scale: dimensionless force units accumulated over simulated ticks
   study_design: simulation
   bias_register:
-    - id: B1
-      type: tool_ai
-      description: >-
-        The fixture's own passing/failing control was mis-specified on the first attempt (an AI/
-        human-authored simulation bias, corrected once, per dissent_records above).
-      mitigation: >-
-        Control reread against the theorem's own exact wording and corrected; documented
-        transparently rather than silently fixed.
-      residual: unknown
-    - id: B2
-      type: analyst
-      description: >-
-        This card's own drafting did not independently re-derive the operator-change condition's
-        zero-accumulated-force result from the raw fixture code (assumption A2 above), only quoted
-        it from a prior summary.
-      mitigation: "flagged explicitly in assumed.A2 and non_claims"
-      residual: unknown
+  - id: B1
+    type: tool_ai
+    description: The fixture's own passing/failing control was mis-specified on the first attempt (an
+      AI/ human-authored simulation bias, corrected once, per dissent_records above).
+    mitigation: Control reread against the theorem's own exact wording and corrected; documented transparently
+      rather than silently fixed.
+    residual: unknown
+  - id: B2
+    type: analyst
+    description: This card's own drafting did not independently re-derive the operator-change condition's
+      zero-accumulated-force result from the raw fixture code (assumption A2 above), only quoted it from
+      a prior summary.
+    mitigation: flagged explicitly in assumed.A2 and non_claims
+    residual: unknown
   robustness:
     checks:
-      - what_varied: time
-        result: same
-        notes: "cumulative_force_spent grows roughly linearly across 8000 vs 16000 unbounded-suppression ticks (36.447 -> 73.178), consistent within the one run"
-      - what_varied: tool
-        result: not_run
-        notes: "no independent re-execution by a decorrelated route or a second fixture implementation has been performed"
+    - what_varied: time
+      result: same
+      notes: cumulative_force_spent grows roughly linearly across 8000 vs 16000 unbounded-suppression
+        ticks (36.447 -> 73.178), consistent within the one run
+    - what_varied: tool
+      result: not_run
+      notes: no independent re-execution by a decorrelated route or a second fixture implementation has
+        been performed
     status: partial
 human_owner: founder
 revision_history:
-  - rev: "1"
-    date: "2026-09-05"
-    by: ai-assistant
-    note: >-
-      Initial full-shape scaffold for H3 (pseudo-peace numerical signature) per task POT1-scaffold:
-      statement, standpoint, lens_translation, hypothesis_world (signed), five_questions with ONE
-      real evidence_relation (fixture-nogo-2node-run-001, quoting sim/nogo_fixture_result.json's
-      own executed numbers directly, I1 same-session) plus two PLACEHOLDER literature
-      evidence_relations (cite-potential-h3-001..002, explicitly flagged in non_claims and
-      dissent_records, to be reconciled once records/lit/potential-as-readout/h3/citations/ exists
-      and is VERIFIED), identification_ladder, provenance_dag (status: not_run), silent_lift_check
-      (status: not_run), scope, empirical_extension (operationalization/bias_register/robustness
-      for the fixture), non_claims, responsibility, disclaimers computed via
-      `./cli/glosa claim disclaimers`. `independent_check.status` set to NONE (no independent route
-      has re-run the fixture or checked this card). Not yet reviewed or signed by the founder
-      (status stays Draft).
+- rev: '1'
+  date: '2026-09-05'
+  by: ai-assistant
+  note: 'Initial full-shape scaffold for H3 (pseudo-peace numerical signature) per task POT1-scaffold:
+    statement, standpoint, lens_translation, hypothesis_world (signed), five_questions with ONE real evidence_relation
+    (fixture-nogo-2node-run-001, quoting sim/nogo_fixture_result.json''s own executed numbers directly,
+    I1 same-session) plus two PLACEHOLDER literature evidence_relations (cite-potential-h3-001..002, explicitly
+    flagged in non_claims and dissent_records, to be reconciled once records/lit/potential-as-readout/h3/citations/
+    exists and is VERIFIED), identification_ladder, provenance_dag (status: not_run), silent_lift_check
+    (status: not_run), scope, empirical_extension (operationalization/bias_register/robustness for the
+    fixture), non_claims, responsibility, disclaimers computed via `./cli/glosa claim disclaimers`. `independent_check.status`
+    set to NONE (no independent route has re-run the fixture or checked this card). Not yet reviewed or
+    signed by the founder (status stays Draft).'

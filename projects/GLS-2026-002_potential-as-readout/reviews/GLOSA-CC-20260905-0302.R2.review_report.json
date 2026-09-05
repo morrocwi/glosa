@@ -1,0 +1,45 @@
+{
+ "claim_ref": "GLOSA-CC-20260905-0302",
+ "route_id": "R2",
+ "reviewer_identity": "same-model fresh-session AI route R2 (vendor recorded locally, not named: gate rule 9)",
+ "independence_class": "I1",
+ "mc_level": "L2",
+ "role": "HostileReviewer",
+ "review_mode": "DECORRELATED_AI_ROUTE",
+ "verdict": "Overclaim located in independence, not in the statement. The statement hedges correctly (\"proposed\", portability unchecked), but tested.evidence_relations tag cite-causal-agency-defs-001 and cite-causal-agency-protoagency-001 as I3 while both citation cards read independence_class I1 with an EMPTY codex I3 route string; a route that ran and returned claim_match_verified: false does not raise k_state. The card is internally half-updated: seen.citation_refs, separates.licensing_test and ai_filled still describe placeholder ids and n=0 fetches, contradicting the reconciled evidence_relations. Statement content beyond the packet's evidence: the partial-derivative formula for Def. 3, Causal Ethics Axiom II, Agency Potential p*, and \"five texts\" have no citation card here; only two programme texts are evidenced. Card JSON is truncated, so tier, falsifier, scope and non_claims were not reviewab",
+ "verdict_tier": "finite_diagnostic",
+ "evidence_consulted": [
+  "claim card as pasted into PACKET.md",
+  "citation card cite-causal-agency-defs-001",
+  "citation card cite-causal-agency-protoagency-001",
+  "citation card cite-causal-grammar-table1-001",
+  "citation card cite-causal-grammar-repair-001",
+  "citation card cite-bandura2001-agentic-001",
+  "citation card cite-kabeer1999-001",
+  "citation card cite-klyubin2005-001",
+  "citation card cite-salge-empowerment-intro-001",
+  "citation card cite-ryandeci2000-001",
+  "citation card cite-bazzani2023-001"
+ ],
+ "shared_dependency_disclosure": "same operator machine and same packet text as the maker; same model, fresh headless session (no shared context) (I2, not I3)",
+ "disagreement_ledger_ref": null,
+ "date": "2026-09-05",
+ "approver_kind": "ai",
+ "route_findings": {
+  "defeaters_found": [
+   "I3 claimed in evidence_relations vs I1 recorded on the citation cards themselves; codex I3 disclosure field is empty",
+   "seen.citation_refs still lists placeholder ids cite-potential-h2-001..003 that resolve to nothing in this packet",
+   "ai_filled.retrieved_tool_evidence states no fetches were made, yet evidence_relations.strength asserts direct PDF fetches -- stale disclosure",
+   "Claim card truncated at evidence_relations[1]; tier, k_state, falsifier, scope.claim_scope, non_claims, dissent_records unverifiable from this packet"
+  ],
+  "overclaims_found": [
+   "Independence class I3 on two self-citation relations exceeds the cards' own I1 status",
+   "Statement cites Def. 3 as a derivative inequality; quoted Def. 3 passage is verbal only, formula unsupported by evidence base",
+   "Statement asserts a five-text reading; cards evidence Causal Agency and Causal Grammar only (Causal Ethics, Agency Potential uncited)",
+   "Causal Grammar 'repair' passage does not itself say 'layer-2'; that gloss is the programme's reading, presented as the source's naming",
+   "hypothesis_world says the distinction 'is' two layers, dropping the statement's 'proposed'"
+  ],
+  "evidence_relations_ok": false,
+  "notes": "Hostile route R2, packet-only. Thai translation (machine) omits Axiom II and the formula and adds 'this layer only'. External cards (Bandura, Kabeer, Klyubin, Salge, Bazzani) are abstract-level I1; their supportive readings live in reviewer disclosures, not in quoted passages. Recommend resetting both I3 tags to I1 and syncing seen/separates/ai_filled with tested."
+ }
+}

@@ -1,0 +1,41 @@
+{
+ "claim_ref": "GLOSA-CC-20260905-0303",
+ "route_id": "R2",
+ "reviewer_identity": "same-model fresh-session AI route R2 (vendor recorded locally, not named: gate rule 9)",
+ "independence_class": "I1",
+ "mc_level": "L2",
+ "role": "HostileReviewer",
+ "review_mode": "DECORRELATED_AI_ROUTE",
+ "verdict": "Card mostly discloses its limits, but four overclaims remain. (1) The statement folds the operator-change 'zero accumulated force' leg into 'checked once on the fixture' while licensing_test admits that leg comes from a note's summary table, not the JSON. (2) 'grows without bound' is asserted as a finite_diagnostic signature, yet only three durations (18.1/36.4/73.2) were observed; unboundedness is a Dr extrapolation. (3) The No-Go theorem quote ('no bounded intervention reaches an absorbing state') is attached to a fixture whose horizon-bounded 8000/16000-tick suppression runs show zero crossings, i.e. the fixture tests cost-growth-plus-recurrence, not the quoted theorem. (4) Primary evidence (fixture JSON, No-Go text, lim C=∞) is not a citation card in this packet; every pasted card is CONTEXT_ONLY or definitional and none bears on the numerical claim.",
+ "verdict_tier": "Dr",
+ "evidence_consulted": [
+  "claim card as pasted into PACKET.md",
+  "citation card cite-galtung1969-potentialgap-001",
+  "citation card cite-galtung1969-negpospeace-002",
+  "citation card cite-galtung1990-culturalviolence-003",
+  "citation card cite-farmer2004-004",
+  "citation card cite-pettit-globalrepublican-005",
+  "citation card cite-sathaanand2021-006",
+  "citation card cite-csaky2026-007"
+ ],
+ "shared_dependency_disclosure": "same operator machine and same packet text as the maker; same model, fresh headless session (no shared context) (I2, not I3)",
+ "disagreement_ledger_ref": null,
+ "date": "2026-09-05",
+ "approver_kind": "ai",
+ "route_findings": {
+  "defeaters_found": [
+   "seen.citation_refs name placeholder ids (cite-potential-h3-001/002) absent from the pasted citation set; the ids actually pasted are never referenced by the card as shown.",
+   "Citation disclosures argue for a different H3 ('three-valued gate', 'blocked correction channel', 'pseudo-peace') than this card's statement (budget-bounded suppression signature); cards appear written against an earlier hypothesis wording.",
+   "Galtung-001 disclosure says 'SUPPORTS H3 strongly' while the same card's route note says it is framing, not evidence for the numerical signature; internal contradiction within one card.",
+   "Claim JSON truncated at assumed.A2; tested.falsifier, dissent_records, non_claims and ledger were not visible to this route, so the card's own stated safeguards could not be checked."
+  ],
+  "overclaims_found": [
+   "Statement counts the operator-change zero-force result as fixture-checked; it was only read from a summary table.",
+   "'grows without bound' tiered finite_diagnostic on three data points; supportable wording is 'grows with duration across three tested horizons'.",
+   "Statement quotes the No-Go theorem as if the fixture instantiates it; the fixture's unbounded-suppression runs reach zero crossings within horizon, so the theorem's absorbing-state clause is untested.",
+   "'distinct_difference_found' rests on one I1 run with one leg unverified; 'found on n=1, one leg unverified' is the honest reading."
+  ],
+  "evidence_relations_ok": false,
+  "notes": "Disclosure of AI-filled content is adequate and not laundered. Failure is in evidence linkage: the primary numerical evidence is not carded in the packet, cited cards are context-only, and the statement's tier exceeds the three-point readout. Recommend rewording 'without bound' and demoting the operator-change leg pending JSON re-read."
+ }
+}
