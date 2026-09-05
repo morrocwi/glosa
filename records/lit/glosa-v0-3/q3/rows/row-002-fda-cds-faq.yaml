@@ -16,6 +16,9 @@ what_it_would_say_against_us: 'Directly defeats a naive reading of Q3: if the un
   reusable clause text cannot by itself carry that context-dependent classification -- the clause would
   need to be paired with a context check, not stand alone as boilerplate.'
 citation_card: cite-glosa-v0-3-q3-002
+defeater_class: structural_formal
+legitimate_defeater: "Defeated by a working counter-example where a single fixed reusable clause text, without being paired to a context check, correctly tracks the four-criterion regulatory boundary across time-critical and non-time-critical deployment contexts."
+defeater_status: untested
 verified:
   metadata_verified: true
   claim_match_verified: true

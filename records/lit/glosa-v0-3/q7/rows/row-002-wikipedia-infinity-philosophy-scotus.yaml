@@ -17,6 +17,9 @@ what_it_would_say_against_us: If the theological and mathematical senses of "inf
   framework may be a category error -- the honest framing may be two adjacent, non-competing uses of one
   word, which argues for a flagged open note rather than a formal reconciliation section.
 citation_card: cite-glosa-v0-3-q7-002
+defeater_class: constitutive
+legitimate_defeater: "Defeated by a textual demonstration that mathematics and theology share one univocal, genuinely contested concept of infinity, rather than two adjacent, non-competing senses of the word."
+defeater_status: untested
 verified:
   metadata_verified: true
   claim_match_verified: true

@@ -26,6 +26,9 @@ what_it_would_say_against_us: >-
   errors differ across models) without directly testing H3's operationalization (Q3/Q4 field-level
   disclosure catch-rate by a different vendor's full review process).
 citation_card: cite-toohconsistent-003
+defeater_class: empirical
+legitimate_defeater: "Defeated by a test showing the hidden-state cross-model detection mechanism does NOT transfer to a vendor-level, session-level 'different checker re-runs the whole review' setup, i.e. it fails to generalize to H3's actual proposed mechanism."
+defeater_status: untested
 stance: "YES"
 verified:
   metadata_verified: true

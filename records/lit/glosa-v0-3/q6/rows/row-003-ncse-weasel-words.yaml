@@ -18,6 +18,9 @@ what_it_would_say_against_us: Directly supports the SUBSTANCE of Q6 (an assertio
   concrete grounding outside glosa's own domain; does not itself address whether glosa's schema should
   implement this as a NEW named entry versus extending an existing vague-attribution entry.
 citation_card: cite-glosa-v0-3-q6-003
+defeater_class: phenomenological
+legitimate_defeater: "Defeated by evidence that the 'sounds checkable but withholds the actual checking mechanism' phenomenon is absent, or systematically misdescribed, within the scope of glosa's own claim-card writing."
+defeater_status: untested
 verified:
   metadata_verified: true
   claim_match_verified: true

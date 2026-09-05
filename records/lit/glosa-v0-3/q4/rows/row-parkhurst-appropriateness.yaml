@@ -27,6 +27,9 @@ what_it_would_say_against_us: >-
   appropriateness-scoped account of its own evidence base, this source would say the rule
   reproduces exactly the category error it is arguing against.
 citation_card: cite-glosa-v0-3-q4-007
+defeater_class: structural_formal
+legitimate_defeater: "Defeated by a case showing a single GRADE-style declared-tier check preserves the same policy-relevant nuance an appropriateness-scoped account would have captured, for at least one class of policy-facing evidence."
+defeater_status: untested
 verified:
   metadata_verified: true
   claim_match_verified: true

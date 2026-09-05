@@ -28,6 +28,9 @@ what_it_would_say_against_us: >-
   domains, but it would not by itself defeat a decision to keep PCS domain-confined, since it
   offers illustration rather than a tested mechanism.
 citation_card: cite-glosa-v0-3-q1-007
+defeater_class: empirical
+legitimate_defeater: "Defeated by an actual study of the international-development-funding sector finding the default-to-familiar-template pattern absent or non-replicating, upgrading past this opinion-tier anecdote."
+defeater_status: untested
 verified:
   metadata_verified: true
   claim_match_verified: true

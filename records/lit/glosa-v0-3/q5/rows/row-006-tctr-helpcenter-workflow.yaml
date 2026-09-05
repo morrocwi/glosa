@@ -21,6 +21,9 @@ what_it_would_say_against_us: If glosa's hard gate only distinguishes "protocol 
   ethics-committee approval, and conflating them in a two-field schema would misdescribe how an actual
   working registry sequences things.
 citation_card: cite-glosa-v0-3-q5-006
+defeater_class: structural_formal
+legitimate_defeater: "Defeated by documentation showing TCTR's administrative 'Released' approval timestamp is, in practice, identical to or interchangeable with the underlying ethics-committee approval timestamp."
+defeater_status: untested
 verified:
   metadata_verified: true
   claim_match_verified: true

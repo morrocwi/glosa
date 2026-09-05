@@ -28,6 +28,9 @@ what_it_would_say_against_us: >-
   run against the direction this paper argues management scholarship should move (toward more,
   not less, considered use of grey material).
 citation_card: cite-glosa-v0-3-q4-006
+defeater_class: diagnostic
+legitimate_defeater: "Defeated by an audit of glosa's flag-and-request-tier rule in practice showing it surfaces (not silently excludes) more policy-brief-style sources than intake without the rule."
+defeater_status: untested
 verified:
   metadata_verified: true
   claim_match_verified: true

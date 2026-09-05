@@ -17,6 +17,9 @@ what_it_would_say_against_us: A norm alone ("should preregister before data") de
   produce compliance at scale (63% failed it here) -- so a hard glosa gate needs the checkable field
   AND an enforcement mechanism, not just a schema field nobody is forced to satisfy.
 citation_card: cite-glosa-v0-3-q5-003
+defeater_class: empirical
+legitimate_defeater: "Defeated by a compliance measurement showing an enforced checkable timestamp field (not just a stated norm) reliably produces high preregistration-before-data compliance across a large registry sample."
+defeater_status: untested
 verified:
   metadata_verified: true
   claim_match_verified: true

@@ -26,6 +26,9 @@ what_it_would_say_against_us: >-
   expertise/credential can be fully substituted away, which is a narrower, more defensible
   version of Q2's clause than "claim cards replace certification" stated without qualification.
 citation_card: cite-glosa-v0-3-q2-007
+defeater_class: structural_formal
+legitimate_defeater: "Defeated by a case where an anonymized, transparent, rule-based review process without credentialed expert reviewers fails to produce an outcome readers/indexers trust, showing openness alone cannot substitute for expertise/credential in the certification mechanism."
+defeater_status: untested
 verified:
   metadata_verified: true
   claim_match_verified: true

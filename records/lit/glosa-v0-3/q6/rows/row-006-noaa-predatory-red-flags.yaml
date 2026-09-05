@@ -20,6 +20,9 @@ what_it_would_say_against_us: 'Directly supports Q6: shows a real, already-opera
   strongest single piece of transfer evidence in this pass, though from a different domain (journal evaluation,
   not general source intake).'
 citation_card: cite-glosa-v0-3-q6-006
+defeater_class: phenomenological
+legitimate_defeater: "Defeated by evidence that the 'claims verifiable metrics/indexing without actual verifiability' pattern is systematically absent or explanatorily irrelevant outside journal-evaluation contexts, i.e. it does not transfer to glosa's own claim-card domain."
+defeater_status: untested
 verified:
   metadata_verified: true
   claim_match_verified: true

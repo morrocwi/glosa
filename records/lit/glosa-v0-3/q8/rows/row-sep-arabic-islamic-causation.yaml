@@ -23,6 +23,9 @@ what_it_would_say_against_us: >-
   Sufficient Reason literature in general analytic metaphysics, which is theology-independent
   even though this particular Ash'ari articulation of it is not.
 citation_card: cite-glosa-v0-3-q8-004
+defeater_class: structural_formal
+legitimate_defeater: "Defeated by an argument/demonstration that the Principle of Sufficient Reason literature cannot host this Ash'ari-specific Directed-Selection structure without itself importing theological content."
+defeater_status: untested
 verified:
   metadata_verified: true
   claim_match_verified: true

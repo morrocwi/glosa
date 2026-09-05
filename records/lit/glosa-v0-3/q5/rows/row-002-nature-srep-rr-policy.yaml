@@ -16,6 +16,9 @@ what_it_would_say_against_us: A hard glosa gate requiring the timestamp-before f
   itself actually sequences things -- citing Registered Reports as precedent for "freeze strictly
   before ethics" would be a same/different mismatch, not a same-claim citation.
 citation_card: cite-glosa-v0-3-q5-002
+defeater_class: structural_formal
+legitimate_defeater: "Defeated by evidence that Registered Reports journals in practice require protocol freeze strictly before ethics approval, i.e. a documented workflow enforcing that exact sequencing."
+defeater_status: untested
 verified:
   metadata_verified: true
   claim_match_verified: true

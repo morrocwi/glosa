@@ -27,6 +27,9 @@ what_it_would_say_against_us: >-
   framing and would push glosa toward a red-flag defined by absence of contextual fit/adaptation,
   not by category-closure timing alone.
 citation_card: cite-glosa-v0-3-q1-006
+defeater_class: empirical
+legitimate_defeater: "Defeated by a documented case, comparable in scale to ASEAN's, where template stabilization without adaptation-consistency produced institutional failure -- i.e. more cross-case evidence that the pattern, not just adaptation-quality, drives the outcome."
+defeater_status: untested
 verified:
   metadata_verified: true
   claim_match_verified: true

@@ -24,6 +24,9 @@ what_it_would_say_against_us: >-
   built in (not just a schema-field check), a claim card could suffer the identical failure:
   formally complete, substantively unchecked.
 citation_card: cite-glosa-v0-3-q2-002
+defeater_class: empirical
+legitimate_defeater: "Defeated by an empirical test of claim cards with an actual independent re-derivation step showing it catches numerical/analytic discrepancies at a materially higher rate than badge-only certification did (16/25 major discrepancies, 7/25 non-reproducible)."
+defeater_status: untested
 verified:
   metadata_verified: true
   claim_match_verified: true

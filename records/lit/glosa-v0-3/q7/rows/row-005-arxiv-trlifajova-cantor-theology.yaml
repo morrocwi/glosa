@@ -19,6 +19,9 @@ what_it_would_say_against_us: If the very possibility of actual infinity in math
   engaged premise may understate how load-bearing that stance actually was in getting actual infinity accepted
   into mathematics at all -- an argument for genuine reconciliation rather than a flagged-open tension.
 citation_card: cite-glosa-v0-3-q7-005
+defeater_class: empirical
+legitimate_defeater: "Defeated by historical scholarship showing actual infinity's acceptance into mainstream mathematics did not in fact depend causally on the theological (neo-Thomist/Vatican) argument this source describes."
+defeater_status: untested
 verified:
   metadata_verified: true
   claim_match_verified: true

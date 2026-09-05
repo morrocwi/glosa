@@ -19,6 +19,9 @@ what_it_would_say_against_us: If even a general-audience popular-philosophy acco
   concept by over a millennium," that is modest but real evidence the stance is not a fringe or purely-rhetorical
   position confined to specialist theology -- supporting engagement rather than a bare flag-and-leave-open.
 citation_card: cite-glosa-v0-3-q7-007
+defeater_class: empirical
+legitimate_defeater: "Defeated by a scholarly survey of specialist philosophy of religion showing the infinity-as-transcendental-ground position is in fact treated as fringe or purely rhetorical, contrary to this popular-audience convergence."
+defeater_status: untested
 verified:
   metadata_verified: true
   claim_match_verified: true

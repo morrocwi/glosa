@@ -28,6 +28,9 @@ what_it_would_say_against_us: >-
   institutional precedent uses, glosa would need to justify why its own intake process needs more
   machinery than the WHO guide it is implicitly being compared against.
 citation_card: cite-glosa-v0-3-q4-008
+defeater_class: structural_formal
+legitimate_defeater: "Defeated by a comparative case showing glosa's separate flag-and-request-tier rule catches a gap that the WHO guide's own AACODS-only routing, in its actual institutional use, misses."
+defeater_status: untested
 verified:
   metadata_verified: true
   claim_match_verified: true

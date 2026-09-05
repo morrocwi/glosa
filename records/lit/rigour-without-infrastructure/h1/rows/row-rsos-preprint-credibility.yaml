@@ -24,6 +24,9 @@ what_it_would_say_against_us: >-
   substitution effect found here may not transfer to a reader population with no prior trust
   relationship to research culture at all, which is closer to H1's actual target reader.
 citation_card: cite-rsos-preprint-credibility-001
+defeater_class: empirical
+legitimate_defeater: "Defeated by a study of a reader population with no prior institutional-trust relationship showing the same credibility-substitution effect found among already-embedded researchers."
+defeater_status: untested
 verified:
   metadata_verified: true
   claim_match_verified: true

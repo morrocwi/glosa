@@ -23,6 +23,9 @@ what_it_would_say_against_us: >-
   filled out to pass the schema check without the underlying rigour they are meant to certify,
   unless an independent I3+/I5 route actually checks the substance, not just the form.
 citation_card: cite-glosa-v0-3-q2-001
+defeater_class: empirical
+legitimate_defeater: "Defeated by an independent test showing claim cards filled out under the same incentive pressure as badges are NOT gameable to pass the schema check without underlying rigour."
+defeater_status: untested
 verified:
   metadata_verified: true
   claim_match_verified: true

@@ -20,6 +20,9 @@ what_it_would_say_against_us: If glosa's hard gate demands protocol_frozen_at st
   post hoc) -- the minimal schema field should record both timestamps and let a checker flag the
   compound violation, not hard-block on ethics timing alone.
 citation_card: cite-glosa-v0-3-q5-004
+defeater_class: empirical
+legitimate_defeater: "Defeated by documentation that African trial registries in practice require ethics GRANTED (not merely applied for) before protocol registration, i.e. a stricter enforcement standard already exists there."
+defeater_status: untested
 verified:
   metadata_verified: true
   claim_match_verified: true

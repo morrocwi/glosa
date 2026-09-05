@@ -29,6 +29,9 @@ what_it_would_say_against_us: >-
   that "premature" (Q1's own framing) adds a normative-timing claim beyond what Bowker & Star's
   purely descriptive category-stabilization framework asserts.
 citation_card: cite-glosa-v0-3-q1-004
+defeater_class: structural_formal
+legitimate_defeater: "Defeated by evidence that classification/boundary-object theory does not already carry a timing ('premature') dimension, i.e. that it cannot in fact host PCS's normative-timing claim without a new addition."
+defeater_status: untested
 verified:
   metadata_verified: true
   claim_match_verified: true

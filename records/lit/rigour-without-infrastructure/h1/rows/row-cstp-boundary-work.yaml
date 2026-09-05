@@ -23,6 +23,9 @@ what_it_would_say_against_us: >-
   by credential rather than by the claim's own recorded rigour -- H1's mechanism could be
   necessary-but-not-sufficient if audiences do not actually change how they attribute legitimacy.
 citation_card: cite-cstp-boundary-work-001
+defeater_class: empirical
+legitimate_defeater: "Defeated by an audience/reader study showing legitimacy attribution does shift toward well-documented rigour (not credential alone) when readers are shown a claim card from a non-institutional producer."
+defeater_status: untested
 verified:
   metadata_verified: true
   claim_match_verified: true

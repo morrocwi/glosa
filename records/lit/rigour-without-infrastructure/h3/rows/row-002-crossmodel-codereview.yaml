@@ -27,6 +27,9 @@ what_it_would_say_against_us: >-
   agnostic claim about independence level I3 vs I0/I1 is too coarse -- it may hold for some vendor
   pairs and reverse for others, and this defeats a version of H3 that predicts a uniform rise.
 citation_card: cite-crossmodel-codereview-002
+defeater_class: empirical
+legitimate_defeater: "Defeated by a replication showing the cross-vendor review benefit is general/symmetric across model pairs (not asymmetric and direction-dependent as this study found) and consistently exceeds same-model review."
+defeater_status: untested
 stance: "NO"
 verified:
   metadata_verified: true

@@ -24,6 +24,9 @@ what_it_would_say_against_us: >-
   dependence) that already does exactly this structural work -- directly supporting lifting at
   least this one register into FOUNDATION's ontology section as a theology-neutral primitive.
 citation_card: cite-glosa-v0-3-q8-002
+defeater_class: structural_formal
+legitimate_defeater: "Defeated by a demonstrated formal gap showing grounding-theory/ontological-dependence apparatus cannot capture the 'Dependent Identity' register without smuggling in theological content."
+defeater_status: untested
 verified:
   metadata_verified: true
   claim_match_verified: true

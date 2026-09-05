@@ -22,6 +22,9 @@ what_it_would_say_against_us: >-
   neutral structural fact dressed in devotional language on top -- weighing against extracting
   the five registers of faqr into a theology-neutral ontology-section primitive.
 citation_card: cite-glosa-v0-3-q8-007
+defeater_class: constitutive
+legitimate_defeater: "Defeated by a textual case showing faqr's structural/ontological content can be restated without reference to the devotional Creator-relation while preserving the same content, i.e. a genuine theology-neutral restatement exists."
+defeater_status: untested
 verified:
   metadata_verified: true
   claim_match_verified: true

@@ -20,6 +20,9 @@ what_it_would_say_against_us: Supports the general shape of Q3's question -- a g
   as backing for a TEXT-level template would overstate what the source actually recommends (process obligations,
   not boilerplate).
 citation_card: cite-glosa-v0-3-q3-007
+defeater_class: structural_formal
+legitimate_defeater: "Defeated by a passage in the same source literature endorsing a disclaimer-TEXT-only treatment as sufficient, rather than the governance-process obligations (consultation, impact assessment, co-design) the source actually recommends."
+defeater_status: untested
 verified:
   metadata_verified: true
   claim_match_verified: true

@@ -26,6 +26,9 @@ what_it_would_say_against_us: >-
   request-back-to-source rule and toward simply having glosa's own graders do the work GRADE
   always assumed they would.
 citation_card: cite-glosa-v0-3-q4-002
+defeater_class: structural_formal
+legitimate_defeater: "Defeated by evidence/argument that source-side self-declared tiering (not reviewer-side grading of a pooled evidence body) is standard, expected practice in intake-gating contexts like glosa's, contrary to GRADE's own division of labor."
+defeater_status: untested
 verified:
   metadata_verified: true
   claim_match_verified: true

@@ -27,6 +27,9 @@ what_it_would_say_against_us: >-
   distinct new flag-and-request-tier rule for policy briefs specifically would duplicate a
   mechanism this checklist already provides in general form.
 citation_card: cite-glosa-v0-3-q4-005
+defeater_class: structural_formal
+legitimate_defeater: "Defeated by a comparative case showing AACODS-style reviewer self-appraisal alone misses a problem that glosa's added flag-and-request-tier step would have caught, demonstrating the new rule is not redundant with the existing checklist."
+defeater_status: untested
 verified:
   metadata_verified: true
   claim_match_verified: true

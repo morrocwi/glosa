@@ -26,6 +26,9 @@ what_it_would_say_against_us: >-
   certification; a critic could argue that training/practice is itself something institutions
   historically provided, so this is not fully institution-independent either.
 citation_card: cite-rigour-without-infrastructure-008
+defeater_class: constitutive
+legitimate_defeater: "Defeated by a case where legitimacy is achieved via a record produced with no trained reflexive practice underlying it at all, showing training-in-some-form is not in fact a necessary condition."
+defeater_status: untested
 verified:
   metadata_verified: true
   claim_match_verified: true

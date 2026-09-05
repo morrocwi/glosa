@@ -24,6 +24,9 @@ what_it_would_say_against_us: >-
   claim card and AI check) may still lack the epistemic advantage this paper's mechanism depends
   on -- rigour might require a community, not just a well-documented individual claim.
 citation_card: cite-rsos-citizen-epistemology-001
+defeater_class: empirical
+legitimate_defeater: "Defeated by a study showing a single well-documented individual claim (claim card plus AI check) achieves epistemic robustness comparable to a diverse multi-participant deliberative process."
+defeater_status: untested
 verified:
   metadata_verified: true
   claim_match_verified: true

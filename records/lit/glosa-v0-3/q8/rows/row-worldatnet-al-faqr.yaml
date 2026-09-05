@@ -24,6 +24,9 @@ what_it_would_say_against_us: >-
   suggesting a theology-neutral restatement would have to actively strip out, not merely
   translate, the relational term, which is a stronger move than "finding an analogue."
 citation_card: cite-glosa-v0-3-q8-008
+defeater_class: constitutive
+legitimate_defeater: "Defeated by a documented ordinary/lay usage of faqr's structural claim stated without built-in reference to a Creator, showing the relational term is separable decoration rather than essential."
+defeater_status: untested
 verified:
   metadata_verified: true
   claim_match_verified: true

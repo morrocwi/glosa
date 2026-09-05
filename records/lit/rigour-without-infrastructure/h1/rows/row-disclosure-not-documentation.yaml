@@ -22,6 +22,9 @@ what_it_would_say_against_us: >-
   the fuller apparatus this paper describes, H1's simpler card might under-specify what "what AI
   filled in" actually needs to contain to be reader-checkable.
 citation_card: cite-disclosure-not-documentation-001
+defeater_class: structural_formal
+legitimate_defeater: "Defeated by a comparative adequacy test showing H1's simpler five-question claim card satisfies the same reader-checkability standard the fuller AI-use documentation framework aims for."
+defeater_status: untested
 verified:
   metadata_verified: true
   claim_match_verified: true

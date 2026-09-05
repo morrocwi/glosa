@@ -14,6 +14,9 @@ what_it_would_say_against_us: This page never states an ethics-approval-timing r
   citing it as backing for the "before ethics" half of Q5's proposed compound gate would overstate
   what COS's own guidance actually commits to; it is evidence for one half of the compound rule only.
 citation_card: cite-glosa-v0-3-q5-001
+defeater_class: structural_formal
+legitimate_defeater: "Defeated (i.e. the row's caveat resolved) by locating an explicit COS preregistration policy statement that itself requires ethics approval to postdate protocol freezing, filling the half of the compound gate this page does not address."
+defeater_status: untested
 verified:
   metadata_verified: true
   claim_match_verified: true

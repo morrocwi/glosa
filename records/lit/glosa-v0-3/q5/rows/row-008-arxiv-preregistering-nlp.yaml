@@ -20,6 +20,9 @@ what_it_would_say_against_us: If glosa's hard gate hard-blocks ANY claim card la
   a null/NOT_APPLICABLE state for ethics_approved_at, not just a before/after comparison, or the gate
   misfires on an entire class of real research this preprint represents.
 citation_card: cite-glosa-v0-3-q5-008
+defeater_class: structural_formal
+legitimate_defeater: "Defeated once the schema field carries a null/NOT_APPLICABLE state for ethics_approved_at and a demonstrated test shows the gate no longer misfires on non-human-subjects claim cards."
+defeater_status: untested
 verified:
   metadata_verified: true
   claim_match_verified: true

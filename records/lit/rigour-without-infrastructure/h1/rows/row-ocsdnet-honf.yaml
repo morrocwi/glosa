@@ -24,6 +24,9 @@ what_it_would_say_against_us: >-
   scholar) -- a genuinely solo, unaffiliated individual working only with AI (H1's exact case) is a
   narrower case than even this "informal institution" example covers.
 citation_card: cite-ocsdnet-honf-001
+defeater_class: empirical
+legitimate_defeater: "Defeated by a documented instance of a genuinely solo, unaffiliated individual (AI-assisted only, no organizational backing) achieving comparable legitimacy via H1's mechanism."
+defeater_status: untested
 verified:
   metadata_verified: true
   claim_match_verified: true

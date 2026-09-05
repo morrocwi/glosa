@@ -25,6 +25,9 @@ what_it_would_say_against_us: >-
   hypothetical one -- if glosa's flag-and-request-tier rule duplicates existing informal screening
   without adding a distinct appraisal step, it would not move the needle this paper measured.
 citation_card: cite-glosa-v0-3-q4-001
+defeater_class: diagnostic
+legitimate_defeater: "Defeated if an audit after adopting the flag-and-request-tier rule shows no measurable narrowing of the 81%-of-reviews gap, i.e. the new step adds no information beyond existing informal screening."
+defeater_status: untested
 verified:
   metadata_verified: true
   claim_match_verified: true

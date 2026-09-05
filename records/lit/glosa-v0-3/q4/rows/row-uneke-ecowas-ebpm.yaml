@@ -30,6 +30,9 @@ what_it_would_say_against_us: >-
   legitimate, unless the rule is scoped to glosa's own claim-verification needs rather than to
   policy-evidence legitimacy generally.
 citation_card: cite-glosa-v0-3-q4-004
+defeater_class: diagnostic
+legitimate_defeater: "Defeated by an audit showing the flag-and-request-tier rule, applied to WAHO/ECOWAS-style anecdotal/expert/local evidence, does not impede its legitimate use in policy-making."
+defeater_status: untested
 verified:
   metadata_verified: true
   claim_match_verified: true

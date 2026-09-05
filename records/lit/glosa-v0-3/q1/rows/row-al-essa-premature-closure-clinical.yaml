@@ -28,6 +28,9 @@ what_it_would_say_against_us: >-
   glosa explicitly defines PCS as a distinct, broader construct rather than borrowing the clinical
   term's authority.
 citation_card: cite-glosa-v0-3-q1-001
+defeater_class: constitutive
+legitimate_defeater: "Defeated if glosa explicitly defines PCS as a construct distinct from clinical premature closure, removing the alleged equivocation between the two uses of the term."
+defeater_status: untested
 verified:
   metadata_verified: true
   claim_match_verified: true

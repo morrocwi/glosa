@@ -28,6 +28,9 @@ what_it_would_say_against_us: >-
   source now) differs enough from this retrospective mapping exercise (classify thousands of
   already-collected documents) to still need a request-back step.
 citation_card: cite-glosa-v0-3-q4-003
+defeater_class: structural_formal
+legitimate_defeater: "Defeated by a comparative demonstration that glosa's flag-and-request-tier step catches a problem a residual-classification-without-request approach (as used in the LAC guideline review) misses."
+defeater_status: untested
 verified:
   metadata_verified: true
   claim_match_verified: true

@@ -22,6 +22,9 @@ what_it_would_say_against_us: >-
   self-sufficiently by the record; a strong reader could say the record-level strategies exist
   precisely *because* institutional-style trust is the unmet bar being chased.
 citation_card: cite-rigour-without-infrastructure-003
+defeater_class: empirical
+legitimate_defeater: "Defeated by a case showing a documented record achieves reader/user credibility without needing negotiation with an institutionally-positioned audience."
+defeater_status: untested
 verified:
   metadata_verified: true
   claim_match_verified: true

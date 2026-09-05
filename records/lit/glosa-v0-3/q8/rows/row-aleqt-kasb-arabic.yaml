@@ -25,6 +25,9 @@ what_it_would_say_against_us: >-
   -- proverbially "more hidden" than any other Ash'ari doctrine -- so any structural extraction
   risks exporting an ambiguity rather than a clean mechanism.
 citation_card: cite-glosa-v0-3-q8-005
+defeater_class: constitutive
+legitimate_defeater: "Defeated by textual scholarship showing kasb is in fact well-specified and unambiguous within Ash'ari theology, refuting the 'more hidden than any other doctrine' characterization."
+defeater_status: untested
 verified:
   metadata_verified: true
   claim_match_verified: true

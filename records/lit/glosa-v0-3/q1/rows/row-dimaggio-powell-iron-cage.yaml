@@ -26,6 +26,9 @@ what_it_would_say_against_us: >-
   evidence in favor of Q1's premise that PCS belongs at the kernel/base-hub level, not confined to
   its three originating cases.
 citation_card: cite-glosa-v0-3-q1-002
+defeater_class: structural_formal
+legitimate_defeater: "Defeated by evidence that the isomorphism documented across DiMaggio & Powell's organizational-field cases is driven by coercive/mimetic/normative mechanisms unrelated to category-closure timing, so the structural analogy to PCS does not actually hold."
+defeater_status: untested
 verified:
   metadata_verified: true
   claim_match_verified: true

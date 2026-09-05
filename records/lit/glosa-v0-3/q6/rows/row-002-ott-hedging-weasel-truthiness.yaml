@@ -19,6 +19,9 @@ what_it_would_say_against_us: 'Supports Q6''s underlying concern (unverifiable-s
   a schema-level pattern match cannot read -- Q6''s red flag, if implemented as a keyword/pattern trigger,
   risks flagging legitimate epistemic hedging as if it were deceptive weasel wording.'
 citation_card: cite-glosa-v0-3-q6-002
+defeater_class: diagnostic
+legitimate_defeater: "Defeated by a tested mechanical/pattern-based detection rule shown to reliably distinguish weasel language from legitimate hedging without needing to infer author intent."
+defeater_status: untested
 verified:
   metadata_verified: true
   claim_match_verified: true

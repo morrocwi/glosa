@@ -16,6 +16,9 @@ what_it_would_say_against_us: A hard glosa gate keyed on a single "timestamp-bef
   would say that is exactly the conflation to avoid; the gate should check SEQUENCING only, and must
   not let a passed sequencing check be read as ethics-substance verification.
 citation_card: cite-glosa-v0-3-q5-007
+defeater_class: constitutive
+legitimate_defeater: "Defeated by evidence that glosa's own gate design/documentation prevents users from reading a passed sequencing check as ethics-substance verification, i.e. no such conflation occurs in practice."
+defeater_status: untested
 verified:
   metadata_verified: true
   claim_match_verified: true

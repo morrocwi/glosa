@@ -26,6 +26,9 @@ what_it_would_say_against_us: >-
   new/general construct rather than a re-labeling of institutional isomorphism reaching beyond its
   validated domain.
 citation_card: cite-glosa-v0-3-q1-003
+defeater_class: structural_formal
+legitimate_defeater: "Defeated by an independently-justified theoretical account, beyond the three convergent case studies, showing PCS's mechanism meets a falsifiability/predictive-power test outside those original domains."
+defeater_status: untested
 verified:
   metadata_verified: true
   claim_match_verified: true
