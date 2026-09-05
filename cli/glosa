@@ -357,19 +357,17 @@ def scaffold_problem_card(problem_id, project, human_owner, origin_blackbox_ref)
                 "stated_by": human_owner,
                 "blackbox_line_ref": origin_blackbox_ref or "",
             },
-            # schema.entry-resistance-precommit-field (SA-1/SA-3, build_now, SESSION_ARCH_v0.4_SPEC.md
-            # §2.1/§8): concrete precommitted route (source/record/experiment/critic/authority),
-            # v7.1:351/:356. Non-mandatory (D-NO-PRECOMMIT-ROUTE flags, never rejects) -- additive,
-            # additionalProperties is true on this schema's `intake` object so this validates today
-            # without a schema-file change.
-            "precommitted_resistance_route": None,
-            # HU-2 (build_now, merges with §2.1's entry_anchor (H0) row): the remaining H0 conjuncts
-            # confirmed absent from problem_card.schema.json/methodology/P02_intake.md by direct grep
-            # (v7.1:344 "H_0 = (P_0, M_0, U_0, E_0, Phi_0)", :351). All optional, human-authored,
-            # never silently AI-backfilled (mirrors the existing q2_user_proposal "none" precedent).
-            # C_0 (candidate contract) is deliberately NOT a field here -- v7.1:355 defines it as a
-            # standing disposition, documentation-only in methodology/P02_intake.md, not a per-intake
-            # fact.
+            # HU-2 (build_now, merges with schema.entry-resistance-precommit-field's R* conjunct):
+            # the H0 conjuncts ENTRY_H->AI = H_0 ^ V_0 ^ C_0 ^ R* (v7.1:344 "H_0 = (P_0, M_0, U_0,
+            # E_0, Phi_0)", :351, :355, :356). All optional, human-authored, never silently
+            # AI-backfilled (mirrors the existing q2_user_proposal "none" precedent). `resistance_
+            # route` (R*) is the SINGLE HOME for this fact (MUST fix, ARCH_REVIEW_v0.7.json
+            # founder-invariants, one-fact-one-home) -- the sibling flat `intake.
+            # precommitted_resistance_route` field is deprecated and never written by a fresh
+            # scaffold (kernel's `_precommit_route_flag` still reads it as a fallback for
+            # already-scaffolded instances that predate this object). C_0 (candidate contract) is
+            # deliberately NOT a field here -- v7.1:355 defines it as a standing disposition,
+            # documentation-only in methodology/P02_intake.md, not a per-intake fact.
             "entry_anchor": {
                 "unresolved": None,              # U_0
                 "existing_evidence": None,       # E_0
@@ -377,10 +375,7 @@ def scaffold_problem_card(problem_id, project, human_owner, origin_blackbox_ref)
                                                   # explicit honest-optional value, never silently
                                                   # inferred (failing control per §11.2).
                 "verification_intent": None,     # V_0
-                "resistance_route": None,        # R* (same fact as precommitted_resistance_route
-                                                  # above when both are filled; kept as a named
-                                                  # conjunct here per §11.2's merge note, not a
-                                                  # second independent value to hand-reconcile).
+                "resistance_route": None,        # R* -- single home for this fact.
             },
         },
         # TODO(schema.pre-exposure-anchor-fields, SA-3, with_revision): three more required Problem
@@ -808,10 +803,20 @@ def scaffold_hypothesis_selection(hsel_id, problem_ref, decided_by, candidates, 
 def scaffold_blackbox_note_session(note_id, project, human_owner, session_id, entry_anchor,
                                     carried_from_ref=None) -> dict:
     """`glosa session open` scaffold (SA-1, build_now, SESSION_ARCH_v0.4_SPEC.md §2.1/§2.2/§8): a
-    fresh Blackbox Note carrying the session-boundary block. Session boundary + AI-reset fact
-    lives on the Blackbox Note per one-fact-one-home -- this is NOT a new session.yaml file. The
-    scaffold's `lines[0]` is an honest TODO placeholder (schema requires minItems 1); it is never a
-    fabricated human utterance."""
+    fresh Blackbox Note carrying the session-boundary fields. Session boundary + AI-reset fact
+    lives on the Blackbox Note per one-fact-one-home -- this is NOT a new session.yaml file, and
+    (MUST fix, ARCH_REVIEW_v0.7.json spec-code-fidelity/one-fact-one-home/fail-closed-and-controls/
+    founder-invariants) it is NOT nested under a second-level `session:` wrapper either --
+    `session_id`/`session_boundary`/`entry_anchor`/`question_trace`/`retention_note` are written at
+    the TOP LEVEL, matching schema/blackbox_note.schema.json's actual property definitions and the
+    field location kernel/glosa_kernel.py's `check_session_boundary_reset` (and
+    tools/blackbox_log.py's `question_trace_coverage`) actually read. The scaffold's `lines[0]` is
+    an honest TODO placeholder (schema requires minItems 1); it is never a fabricated human
+    utterance. `ai_state_at_boundary` is ALWAYS the literal `reset` (MUST fix, founder-invariants/
+    source-fidelity): a real `carried_from_ref` is recorded solely as separate provenance on
+    `human_retained_residue_ref` -- what the HUMAN retains is never conflated with the AI's own
+    state, which resets at every boundary unconditionally (sources/notes/EPISTEMIC_FUSION_v7.1.txt:331,
+    "m^{AI}_{s+1,0} = 0 (by architectural scope definition)")."""
     now = _now_iso()
     return {
         "$schema": "blackbox_note.schema.json",
@@ -838,22 +843,21 @@ def scaffold_blackbox_note_session(note_id, project, human_owner, session_id, en
         "r2_hypothesis_ref": None,
         "translation_status": "missing",
         "disclaimers": ["D-BLACKBOX-NOTE", "D-STANDPOINT"],
-        # session block (SA-1): see templates/knowledge/blackbox_note.yaml for the full field-by-
-        # field citation trail. `ai_state_at_boundary` is the fixed literal `reset` unless a real
-        # carried_from_ref is given (v7.1:328).
-        "session": {
-            "session_id": session_id,
-            "session_boundary": {
-                "opened_at": now,
-                "closed_at": None,
-                "ai_state_at_boundary": "carried" if carried_from_ref else "reset",
-            },
-            "entry_anchor": entry_anchor,
-            "question_trace": [],
-            "retained_direction_ref": None,
+        # Top-level session-boundary fields (SA-1): see templates/knowledge/blackbox_note.yaml for
+        # the full field-by-field citation trail. `ai_state_at_boundary` is ALWAYS the fixed
+        # literal `reset` (v7.1:331) -- never `carried`; `carried_from_ref`, when given, is
+        # recorded only as separate human-retained-residue provenance below.
+        "session_id": session_id,
+        "session_boundary": {
+            "opened_at": now,
+            "closed_at": None,
+            "ai_state_at_boundary": "reset",
             "human_retained_residue_ref": carried_from_ref,
-            "retention_note": None,  # human writes, AI never fills -- `glosa session close` refuses without it.
         },
+        "entry_anchor": entry_anchor,
+        "question_trace": [],
+        "retained_direction_ref": None,
+        "retention_note": None,  # human writes, AI never fills -- `glosa session close` refuses without it.
     }
 
 
@@ -878,8 +882,10 @@ def cmd_intake_validate(args):
 
 
 def cmd_session_open(args):
-    """SA-1 (build_now). Scaffolds a fresh Blackbox Note carrying an opened, un-closed `session`
-    block. `--session-id` is required -- never auto-generated silently, since it is the key SA-2's
+    """SA-1 (build_now). Scaffolds a fresh Blackbox Note carrying an opened, un-closed
+    `session_boundary` (MUST fix, ARCH_REVIEW_v0.7.json: fields written at the note's TOP LEVEL,
+    not nested under a `session:` wrapper -- see scaffold_blackbox_note_session's own docstring).
+    `--session-id` is required -- never auto-generated silently, since it is the key SA-2's
     `hypothesis_selection.session_id` and every other Session-object join field is grouped by."""
     out_dir = Path(args.out_dir) if args.out_dir else REPO_ROOT / "records" / "sessions" / _slugify(args.session_id)
     note_id = _next_numbered_id(out_dir, lambda n: f"BB-{datetime.now():%Y-%m-%d}-{n:02d}")
@@ -891,7 +897,7 @@ def cmd_session_open(args):
     res = run_check(data, "blackbox_note") if k else {"ok": None, "warnings": ["kernel not present -- scaffold not self-checked"]}
     return 0, {
         "action": "session_open", "session_id": args.session_id, "note_id": note_id, "written": written,
-        "ai_state_at_boundary": data["session"]["session_boundary"]["ai_state_at_boundary"],
+        "ai_state_at_boundary": data["session_boundary"]["ai_state_at_boundary"],
         "self_check": res,
         "next": "fill lines[0].text_verbatim and intake/etc. as the session proceeds, then `glosa session close --path <this file> --retention-note \"...\"` at the end.",
     }
@@ -901,17 +907,19 @@ def cmd_session_close(args):
     """SA-1 (build_now). Fail-closed per task instruction: refuses (exit 1, no file written) unless
     `--retention-note` is a non-empty, human-authored string -- an AI session may never author this
     field's content on the human's behalf (§6 Boundary check; templates/knowledge/blackbox_note.yaml
-    session.retention_note: 'human writes, AI never fills')."""
+    `retention_note`: 'human writes, AI never fills'). Reads/writes `session_id`/`session_boundary`/
+    `retention_note` at the note's TOP LEVEL (MUST fix, ARCH_REVIEW_v0.7.json), matching
+    schema/blackbox_note.schema.json and kernel/glosa_kernel.py's `check_session_boundary_reset` --
+    never a nested `session:` wrapper."""
     path = Path(args.path)
     instance = load_instance(path)
-    session = instance.get("session")
-    if not isinstance(session, dict):
+    if "session_id" not in instance or not isinstance(instance.get("session_boundary"), dict):
         return 1, {"action": "session_close", "path": str(path),
-                    "error": "this Blackbox Note has no `session` block -- it was not opened with `glosa session open`."}
-    boundary = session.get("session_boundary") or {}
+                    "error": "this Blackbox Note has no top-level session_id/session_boundary -- it was not opened with `glosa session open`."}
+    boundary = instance.get("session_boundary") or {}
     if boundary.get("closed_at"):
         return 1, {"action": "session_close", "path": str(path),
-                    "error": f"session {session.get('session_id')!r} is already closed (closed_at={boundary.get('closed_at')!r})."}
+                    "error": f"session {instance.get('session_id')!r} is already closed (closed_at={boundary.get('closed_at')!r})."}
     note = (args.retention_note or "").strip()
     if not note:
         return 1, {
@@ -922,15 +930,14 @@ def cmd_session_close(args):
                      "explicitly retain nothing (never left silently blank).",
         }
     boundary["closed_at"] = _now_iso()
-    boundary["ai_state_at_boundary"] = "reset"  # v7.1:328 -- fixed literal at close, by architectural scope
-    session["session_boundary"] = boundary
-    session["retention_note"] = note
+    boundary["ai_state_at_boundary"] = "reset"  # v7.1:331 -- fixed literal at close, always, by architectural scope
+    instance["session_boundary"] = boundary
+    instance["retention_note"] = note
     if args.retained_direction_ref:
-        session["retained_direction_ref"] = args.retained_direction_ref
-    instance["session"] = session
+        instance["retained_direction_ref"] = args.retained_direction_ref
     path.write_text(dump_instance_text(instance), encoding="utf-8")
     res = run_check(instance, "blackbox_note") if k else {"ok": None}
-    return 0, {"action": "session_close", "path": str(path), "session_id": session.get("session_id"),
+    return 0, {"action": "session_close", "path": str(path), "session_id": instance.get("session_id"),
                "closed_at": boundary["closed_at"], "self_check": res}
 
 

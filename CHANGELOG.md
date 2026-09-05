@@ -1,10 +1,21 @@
 # CHANGELOG
 ## 0.4.0 — in preparation
-- Session-architecture review (`design/SESSION_ARCH_v0.4_SPEC.md`, both parts, 24 proposals
-  scored under founder ruling BBL-2026-09-05-119: raise the work, never lower a claim to pass):
-  13 `build_now`, 7 `with_revision` (exact fix stated, not yet applied), 4 `still_open`
-  (raise-path stated, no softened claim). Full diff specified, not yet applied to
-  `FOUNDATION_v0.6.md`/schema/kernel: `design/FOUNDATION_v0.7_PATCH.md`.
+- Session-architecture review (`design/SESSION_ARCH_v0.4_SPEC.md`, both parts, 25 proposals
+  scored under founder ruling BBL-2026-09-05-119: raise the work, never lower a claim to pass —
+  count corrected from 24 to 25, `SA-5` restored under gate rule 10, see `design/
+  FOUNDATION_v0.7_PATCH.md` §0/§11.8): 13 `build_now`, 8 `with_revision` (exact fix stated), 4
+  `still_open` (raise-path stated, no softened claim). **`design/FOUNDATION_v0.7_PATCH.md` states
+  the exact diff for every node; what is actually applied to `FOUNDATION_v0.6.md`/schema/kernel
+  differs by node, not uniformly "not yet applied"** (MUST fix, ARCH_REVIEW_v0.7.json source-
+  fidelity — a prior draft of this line claimed the whole diff unapplied, contradicting this same
+  entry's own "Built this pass" section below): `session.boundary-blackbox-note` (SA-1)'s core
+  schema fields, `schema.blackbox-question-trace`, `lrs.dialogue-table-claim-type-column`,
+  `lrs.defeater-defeated-status-field`, `hu.mastery-gate-wired` (HU-1), and now `schema.entry-
+  anchor-full-h0` (HU-2)'s full `intake.entry_anchor` object are already shipped to
+  schema/kernel/`FOUNDATION_v0.6.md` (see "Built this pass" below and `FOUNDATION_v0.7_PATCH.md`
+  §1/§5/§6, §5 now marked `applied this pass`); the `chi_recip` CLI wiring and every
+  `with_revision`/`still_open` node's own stated fix remain genuinely not-yet-applied, per
+  `FOUNDATION_v0.7_PATCH.md`'s own per-section status.
 - New protocol cards: `methodology/P17_human_mastery_gate.md` (generalizes the ten-question
   live unaided-defense checklist past the arXiv-paper genre, wires it to a new publish-gate R8 —
   HU-1); `methodology/P18_session_architecture.md` (the Session object as a logical join across
@@ -51,6 +62,32 @@
     `human_mastery_gate_ref` (absence is a `gate_release` WARNING `NO_MASTERY_GATE_LINKED`, never
     a hard fail — pending founder ratification); `design/FOUNDATION_v0.6.md` §7.5's broken
     "Unchanged from v0.1 §7.5" pointer fixed to cite `methodology/P17_human_mastery_gate.md`.
+  - `schema.entry-anchor-full-h0` (HU-2): `schema/problem_card.schema.json`'s `intake` object
+    gains the full `entry_anchor: {unresolved, existing_evidence, change_condition,
+    verification_intent, resistance_route}` object (all optional, human-authored, never
+    AI-backfilled); `resistance_route` is now the single home for the R* fact (one-fact-one-home)
+    — the sibling flat `intake.precommitted_resistance_route` field is DEPRECATED (kept read-only
+    for already-scaffolded instances; kernel's `_precommit_route_flag` reads `entry_anchor.
+    resistance_route` first, falling back to the deprecated path).
+  - **SA-1 field-location fix (MUST, ARCH_REVIEW_v0.7.json spec-code-fidelity/one-fact-one-home/
+    fail-closed-and-controls/founder-invariants):** `glosa session open|close` (`cli/glosa`'s
+    `scaffold_blackbox_note_session`/`cmd_session_open`/`cmd_session_close`) and
+    `templates/knowledge/blackbox_note.yaml` previously nested `session_id`/`session_boundary`/
+    `entry_anchor`/`retention_note` under a second-level `session:` wrapper key, while
+    `schema/blackbox_note.schema.json` and `kernel/glosa_kernel.py`'s `check_session_boundary_
+    reset` read them at the TOP level — meaning every note the shipped CLI produced was silently
+    invisible to SA-1's own cross-file reset-enforcement mechanism. Fixed: all four artifacts now
+    agree on the flat, top-level shape; `tests/test_install.py` updated to match, plus a new
+    round-trip regression test (`test_note_produced_by_session_open_is_actually_seen_by_kernel_
+    check`) that feeds a real `glosa session open`-produced note straight into
+    `check_session_boundary_reset` and asserts it actually fires on a forced violation.
+  - **`ai_state_at_boundary` literal fix (MUST, ARCH_REVIEW_v0.7.json founder-invariants/source-
+    fidelity):** `scaffold_blackbox_note_session` previously wrote `"carried"` when a
+    `carried_from_ref` was given, contradicting the schema enum (`["reset"]` only) and the cited
+    architectural-scope definition (an unconditional AI-state reset at every boundary,
+    `sources/notes/EPISTEMIC_FUSION_v7.1.txt:331`). Fixed: `ai_state_at_boundary` is now ALWAYS the
+    literal `"reset"`; `carried_from_ref` is recorded solely as separate provenance on
+    `session_boundary.human_retained_residue_ref` — never conflated with the AI's own state.
   - Verified (no change needed): `NC-77` (`methodology/data/non_collapse_table.json`),
     `D-RETENTION-DIRECTION`, `D-NO-PRECOMMIT-ROUTE` (`methodology/data/disclaimer_catalogue.json`)
     each exist exactly once, no duplicates anywhere in the repo.
@@ -59,12 +96,11 @@
     `schema/hypothesis_selection.schema.json`, `session_id` on `schema/kg_edge.schema.json`, and
     the `chi_recip_diagnostic` kernel function were already shipped before this pass (confirmed by
     direct read) — this file's prior "Not yet built this pass" line named them in error. **Still
-    genuinely not built this pass** (outside this task's ownership, per
-    `design/FOUNDATION_v0.7_PATCH.md` §6/HU-2): the FULL `intake.entry_anchor` H0 block
-    (`unresolved`, `existing_evidence`, `change_condition`, `verification_intent` — HU-2 supplies
-    these four beyond the `resistance_route`/R* conjunct that already exists) on
-    `schema/problem_card.schema.json`; a `chi_recip` **CLI** command wiring the existing kernel
-    function into `cli/glosa` (the function itself is not new).
+    genuinely not built this pass** (outside this task's ownership): a `chi_recip` **CLI** command
+    wiring the existing kernel function into `cli/glosa` (the function itself is not new);
+    `candidate_set_deltas[]` on `hypothesis_selection.yaml` (no build_path was ever assigned to it
+    — see `schema/hypothesis_selection.schema.json`'s own `$comment`, added this pass as a rule-10
+    fix, ARCH_REVIEW_v0.7.json spec-code-fidelity).
 ## 0.3.0 — 2026-09-05
 - Published: repository DOI 10.5281/zenodo.22310837 (concept 10.5281/zenodo.22301059); GitHub tag v0.3.0.
 - Publish gate v3 (7 dimensions, skeptic-verified): 17 upheld BLOCKs fixed before release (see reviews/PUBLISH_GATE_v1_public.md); 6 DAG nodes remain pending founder decision, marked in FOUNDATION v0.6.

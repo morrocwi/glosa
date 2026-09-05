@@ -4,7 +4,7 @@
 cff-version: 1.2.0
 message: "If you use this methodology, cite it. AI assistance is disclosed in the work itself, never in authorship."
 title: "glosa — Rigour Without Infrastructure: A Standalone Scholar Methodology for Human–AI Knowledge Co-Production"
-version: 0.3.0
+version: 0.4.0
 date-released: 2026-09-05
 license: CC-BY-4.0
 identifiers:

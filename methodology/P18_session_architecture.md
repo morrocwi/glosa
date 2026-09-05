@@ -32,17 +32,17 @@ numbers as final.
 | field | type | lives on | source |
 |---|---|---|---|
 | `session_id` | string | Blackbox Note | SA-1, `schema.retention-direction-field` |
-| `entry_anchor` (H0) | ref → Problem Card `intake.entry_anchor` | Problem Card | `schema.entry-resistance-precommit-field`, HU-2 |
-| `human_owner` | string (non-delegable) | Blackbox Note | SA-3, FOUNDATION §2.2 S1 |
-| `ai_routes` | array (independence-class routes touching this session) | `kg_edge.yaml` | `kernel.reciprocal-lineage-diagnostic` |
-| `question_trace[]` | array of Problem Card refs opened this session | Problem Card | SA-3 |
-| `candidate_set_deltas[]` | array | `hypothesis_selection.yaml` | `schema.retention-direction-field` |
+| `entry_anchor` (H0) | object `{unresolved, existing_evidence, change_condition, verification_intent, resistance_route}` | Problem Card `intake.entry_anchor` | `schema.entry-resistance-precommit-field` (R* conjunct), HU-2 (remaining four) |
+| `human_owner` | string (non-delegable) | **Problem Card** `human_owner` (top-level, already `required`) | FOUNDATION §2.2 S1. MUST fix (ARCH_REVIEW_v0.7.json founder-invariants, one-fact-one-home): a prior draft of this row cited "Blackbox Note," but no `human_owner` field exists on `schema/blackbox_note.schema.json` (confirmed by direct read) or is named as a build target for it anywhere — `problem_card.schema.json` is this fact's one and only home; SA-3 does not add a second. |
+| `ai_routes` | array, **derived/computed only, never stored** — grouped `kg_edge.yaml` rows by `session_id`, read off each row's `asserted_by`/`independence_class` | computed from `kg_edge.yaml` | `kernel.reciprocal-lineage-diagnostic`. MUST fix (ARCH_REVIEW_v0.7.json founder-invariants): `kg_edge.schema.json` has no `ai_routes` property and none is planned — like kernel rule31's `defeater_status_for_card` (derived from `defeater_log`, never a second schema field), this row is a computed VIEW over already-stored facts, not a fact with its own home, so it cannot itself violate one-fact-one-home. |
+| `question_trace[]` | array of Problem Card refs opened this session | Problem Card | SA-3 (**still_open** — SESSION_ARCH_v0.4_SPEC.md §3/§9.2: fabricated citation, blocked on `session_id`; no schema field exists yet, not scaffolded by the CLI) |
+| `candidate_set_deltas[]` | array | **still_open / not yet specified** | `schema.retention-direction-field`. MUST fix (ARCH_REVIEW_v0.7.json spec-code-fidelity, rule 10): no such field exists in `schema/hypothesis_selection.schema.json`, the DAG node's own `fields_added` (only `retained_direction`), any kernel/CLI code, or a CHANGELOG entry — unlike this pass's other named gaps (HU-2's remaining sub-fields, the missing `chi_recip` CLI subcommand), this row had no TODO/deferral anywhere. Recorded here as an explicit deferral: not built, no build_path assigned yet, per `schema/hypothesis_selection.schema.json`'s own `$comment`. |
 | `chooser_reaffirmations[]` | array (human re-selects at session reopen) | `hypothesis_selection.yaml` | `schema.retention-direction-field`, SA-2 |
-| `resistance_precommit` (R*) | string (concrete route) | Problem Card `intake` | `schema.entry-resistance-precommit-field` |
+| `resistance_precommit` (R*) | string (concrete route) | Problem Card `intake.entry_anchor.resistance_route` (single home; the flat `intake.precommitted_resistance_route` sibling is deprecated) | `schema.entry-resistance-precommit-field` |
 | `retention_note` | ref → Blackbox Note `human_retained_residue_ref` | Blackbox Note | SA-1 |
 | `retained_direction` | enum `unknown \| expansion \| tunnel` (default `unknown`) | `hypothesis_selection.yaml` | SA-2, `schema.retention-direction-field` |
 | `chi_recip` / `m^H` / `m^AI` | Open finite diagnostics, diagnostic-only | `kg_edge.yaml` + new CLI subcommand | `kernel.reciprocal-lineage-diagnostic`, SA-4 |
-| `ai_state_at_boundary` | fixed literal `reset` | Blackbox Note | SA-1 |
+| `ai_state_at_boundary` | fixed literal `reset` (always -- never `carried`; the human's own retained residue is the separate `human_retained_residue_ref` fact) | Blackbox Note | SA-1 |
 
 This card narrates the join; it does not redeclare any field's shape (one-fact-one-home) — every
 row above cites the schema file that actually owns it. No `session.yaml` exists or should be

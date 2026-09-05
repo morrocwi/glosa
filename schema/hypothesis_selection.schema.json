@@ -6,6 +6,7 @@
   "type": "object",
   "required": ["id", "problem_ref", "decided_by", "candidates", "selection", "cooking_log_ref"],
   "additionalProperties": true,
+  "$comment": "TODO(schema.retention-direction-field, candidate_set_deltas[]): `design/SESSION_ARCH_v0.4_SPEC.md` §2.1 and `methodology/P18_session_architecture.md`'s Session-object table both name a `candidate_set_deltas[]` array as living on this file, sourced from `schema.retention-direction-field`/SA-2 -- but the DAG_v0.4 node for that proposal (`design/SESSION_ARCH_v0.4_SPEC.md` line ~239-245) lists only `retained_direction` in its `fields_added`, and no field, kernel rule, or CLI code implementing `candidate_set_deltas[]` exists anywhere in the repo (rule-10 gap fixed, ARCH_REVIEW_v0.7.json spec-code-fidelity MUST). Status: still_open / not yet specified -- no build_path assigned. Do not add this field on a guess; wait for an explicit proposal naming its shape and failing control.",
   "properties": {
     "id": { "type": "string", "pattern": "^hsel-[a-z0-9-]+-[0-9]{3}$" },
     "problem_ref": { "type": "string", "minLength": 1 },

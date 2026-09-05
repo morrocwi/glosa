@@ -1523,14 +1523,21 @@ def check_session_boundary_reset(notes):
 
 def _precommit_route_flag(card):
     """D-NO-PRECOMMIT-ROUTE (flag, non-mandatory): flags -- never blocks -- a problem_card
-    reaching `readiness.verdict == READY_FOR_S2` with `intake.precommitted_resistance_route`
-    null/absent. Returns a warning string, or None. Must NOT fire when the field names a concrete
-    route (source/record/experiment/critic/authority) before the first AI-turn line, nor when
-    readiness has not yet reached READY_FOR_S2."""
+    reaching `readiness.verdict == READY_FOR_S2` with no concrete resistance-route precommitted.
+    MUST fix (ARCH_REVIEW_v0.7.json founder-invariants, one-fact-one-home): the single home for
+    this fact is now `intake.entry_anchor.resistance_route` (HU-2, FOUNDATION_v0.7_PATCH.md §2/§6,
+    P18_session_architecture.md) -- checked first. The old flat `intake.precommitted_resistance_
+    route` is read only as a DEPRECATED fallback, for already-scaffolded instances that predate the
+    `entry_anchor` object; a fresh instance should never write both. Returns a warning string, or
+    None. Must NOT fire when a concrete route (source/record/experiment/critic/authority) is named
+    before the first AI-turn line, nor when readiness has not yet reached READY_FOR_S2."""
     readiness = card.get("readiness") or {}
     if readiness.get("verdict") != "READY_FOR_S2":
         return None
-    route = (card.get("intake") or {}).get("precommitted_resistance_route")
+    intake = card.get("intake") or {}
+    route = (intake.get("entry_anchor") or {}).get("resistance_route")
+    if not route:
+        route = intake.get("precommitted_resistance_route")  # deprecated fallback path
     if route:
         return None
     return "FLAG: precommitted_resistance_route missing at READY_FOR_S2 (D-NO-PRECOMMIT-ROUTE)"

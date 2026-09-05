@@ -56,5 +56,5 @@
   "ai_state_at_boundary": "manual_continue",
   "human_retained_residue_ref": null
  },
- "_fail_reason": "Violates design/SESSION_ARCH_v0.4_SPEC.md §2.2/§8 (SA-1, build_now, unnumbered pending founder ratification): session_boundary.ai_state_at_boundary must be the literal 'reset' (sources/notes/EPISTEMIC_FUSION_v7.1.txt:328, m^{AI}_{s+1,0}=0 by architectural scope definition) -- schema enum rejects any other value. The cross-file case (two notes sharing session_id, one missing this literal) is kernel-checked by kernel/glosa_kernel.py check_session_boundary_reset, exercised separately in tests/test_kernel.py. Base is otherwise the valid blackbox_note.example.json."
+ "_fail_reason": "Violates design/SESSION_ARCH_v0.4_SPEC.md §2.2/§8 (SA-1, build_now, unnumbered pending founder ratification): session_boundary.ai_state_at_boundary must be the literal 'reset' (sources/notes/EPISTEMIC_FUSION_v7.1.txt:331, m^{AI}_{s+1,0}=0 by architectural scope definition) -- schema enum rejects any other value. The cross-file case (two notes sharing session_id, one missing this literal) is kernel-checked by kernel/glosa_kernel.py check_session_boundary_reset, exercised separately in tests/test_kernel.py. Base is otherwise the valid blackbox_note.example.json."
 }

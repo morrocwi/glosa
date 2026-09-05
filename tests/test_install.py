@@ -181,9 +181,10 @@ class SessionOpenCloseTest(unittest.TestCase):
             if data is None:
                 import yaml
                 data = yaml.safe_load(note_path.read_text(encoding="utf-8"))
-            self.assertEqual(data["session"]["session_id"], "S-TEST-001")
-            self.assertIsNone(data["session"]["session_boundary"]["closed_at"])
-            self.assertIsNone(data["session"]["retention_note"])
+            self.assertEqual(data["session_id"], "S-TEST-001")
+            self.assertIsNone(data["session_boundary"]["closed_at"])
+            self.assertIsNone(data["retention_note"])
+            self.assertEqual(data["session_boundary"]["ai_state_at_boundary"], "reset")
 
     def test_close_refuses_without_retention_note(self):
         import tempfile
@@ -217,6 +218,41 @@ class SessionOpenCloseTest(unittest.TestCase):
                 capture_output=True, text=True,
             )
             self.assertNotEqual(r2.returncode, 0, r2.stdout)
+
+    def test_note_produced_by_session_open_is_actually_seen_by_kernel_check(self):
+        """MUST fix (ARCH_REVIEW_v0.7.json spec-code-fidelity/one-fact-one-home/fail-closed-and-
+        controls/founder-invariants): a note scaffolded by `glosa session open` must be seen (not
+        silently skipped) by kernel/glosa_kernel.py's `check_session_boundary_reset` -- this is the
+        SA-1 cross-file acceptance mechanism the design docs name, exercised end-to-end here against
+        the CLI's real output, not a hand-built flat fixture. Two notes sharing a session_id, one
+        with a forced/corrupted `ai_state_at_boundary`, must actually trip the check."""
+        sys.path.insert(0, str(ROOT / "kernel"))
+        import glosa_kernel as k  # noqa: E402
+
+        import tempfile
+        with tempfile.TemporaryDirectory() as td:
+            out1, note_path1 = self._open(td, session_id="S-ROUNDTRIP-001")
+            data1 = json.loads(note_path1.read_text(encoding="utf-8")) if note_path1.suffix == ".json" else None
+            if data1 is None:
+                import yaml
+                data1 = yaml.safe_load(note_path1.read_text(encoding="utf-8"))
+            self.assertEqual(data1["session_id"], "S-ROUNDTRIP-001")
+
+            # A well-formed pair sharing session_id, both literal 'reset' -- must NOT fire.
+            data2_ok = json.loads(json.dumps(data1))
+            res_ok = k.check_session_boundary_reset([data1, data2_ok])
+            self.assertTrue(res_ok["ok"], res_ok["errors"])
+
+            # Corrupt the second note's ai_state_at_boundary -- must fire, and must reference the
+            # real, shared session_id (proving the check actually read the CLI's own field
+            # location, not a hand-built fixture shape).
+            data2_bad = json.loads(json.dumps(data1))
+            data2_bad["session_boundary"]["ai_state_at_boundary"] = "carried"
+            res_bad = k.check_session_boundary_reset([data1, data2_bad])
+            self.assertFalse(res_bad["ok"])
+            self.assertTrue(
+                any("S-ROUNDTRIP-001" in e for e in res_bad["errors"]), res_bad["errors"]
+            )
 
 
 class DialogueTableDefeaterColumnsTest(unittest.TestCase):

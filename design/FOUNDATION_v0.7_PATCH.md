@@ -20,9 +20,13 @@
 > error/warning strings) · acceptance test · citations · status.
 >
 > Founder ruling BBL-2026-09-05-121 (no finding is ever dropped) applies to this patch's own
-> structure: every one of the 24 proposals `design/SESSION_ARCH_v0.4_SPEC.md` scores (13
-> `build_now`, 7 `with_revision`, 4 `still_open`) gets a section or an explicit carry-forward line
-> below — none is silently omitted, per that ruling.
+> structure: every one of the **25** proposals (13 `build_now`, 8 `with_revision`, 4 `still_open`)
+> gets a section or an explicit carry-forward line below — none is silently omitted, per that
+> ruling. **Corrected count (MUST fix, ARCH_REVIEW_v0.7.json source-fidelity):** the ledger is 25,
+> not 24 — `design/SESSION_ARCH_v0.4_SPEC.md` §14 restores a 25th proposal, `SA-5` (K_like
+> state-machine citation, re-anchored under this same gate rule 10 after it fell out of a truncated
+> hand-off), scored `with_revision`; see §11.8 below for its section. `design/
+> UPLIFT_NOTE_2026-09-05.md` §2 independently carries the full 25-row reconciliation.
 
 ---
 
@@ -33,8 +37,9 @@
   applied), three human-uplift proposals (§5–§7), and five LRS-defeater proposals (§8–§10, two of
   which are new `kernel/glosa_kernel.py` python rules, kept in a distinct numbering namespace from
   this section's own §3.3 flag-rule sequence — see §9's namespace note).
-- **7 `with_revision` proposals** get a short section stating the exact fix and the target text,
-  **not yet applied** — §11.
+- **8 `with_revision` proposals** get a short section stating the exact fix and the target text,
+  **not yet applied** — §11 (§11.1–§11.7 the original seven, §11.8 `SA-5`, restored under gate
+  rule 10 — MUST fix, ARCH_REVIEW_v0.7.json source-fidelity, corrected from 7 to 8).
 - **4 `still_open` proposals** get a short section stating the raise-path (never a softened claim)
   — §12.
 - **NC-77** (§13) and two new disclaimer-catalogue rows (§14) are specified here; **not yet added**
@@ -53,14 +58,23 @@
 
 ## 1. `session.boundary-blackbox-note` (SA-1) — session boundary + AI-reset fact
 
-- **status:** ready to apply (spec §3: citations_verified, control_mechanical, invariant_ok, score 8)
+- **status: applied this pass** (the schema fields themselves predate this pass, per `CHANGELOG.md`'s
+  correction bullet; the CLI/template field-LOCATION bug that made every note `glosa session open`
+  produced invisible to this section's own kernel rule is fixed this pass — MUST fix,
+  ARCH_REVIEW_v0.7.json spec-code-fidelity/one-fact-one-home/fail-closed-and-controls/founder-
+  invariants).
 - **FOUNDATION target:** §2.3 (new bullet under the Blackbox Note register description — **not**
   R0/R1/R2, which name the note's own internal reading stages, per spec §2.2's confirmed-by-direct-
   read correction).
-- **Schema fields (specified, not applied):** `schema/blackbox_note.schema.json` top-level
-  additions — `session_id` (string), `opened_at` (timestamp), `closed_at` (timestamp, nullable
-  while open), `ai_state_at_boundary` (const `"reset"`), `human_retained_residue_ref` (nullable ref
-  or literal `"none"`).
+- **Schema fields (applied):** `schema/blackbox_note.schema.json` top-level additions — `session_id`
+  (string), `session_boundary.opened_at`/`.closed_at` (timestamp, nullable while open),
+  `session_boundary.ai_state_at_boundary` (const `"reset"`, ALWAYS — never `"carried"`),
+  `session_boundary.human_retained_residue_ref` (nullable ref or literal `"none"`). `cli/glosa`'s
+  `scaffold_blackbox_note_session`/`cmd_session_open`/`cmd_session_close` and
+  `templates/knowledge/blackbox_note.yaml` write these at the TOP LEVEL of the note (fixed this
+  pass — a prior draft nested them under a second-level `session:` wrapper, which the schema's
+  `additionalProperties: true` accepted silently while `kernel/glosa_kernel.py`'s
+  `check_session_boundary_reset` — which reads the top level — never saw them).
 - **Kernel rule (unnumbered pending founder ratification of §2.2, per spec §4):** a Blackbox Note
   pair sharing one `session_id`, split by an actual tool/process restart, must both carry
   `ai_state_at_boundary: reset` (literal) — `ERROR: ai_state_at_boundary missing or not literal
@@ -68,19 +82,20 @@
   non-literal. Must not fire: different `session_id` values on topically-similar notes.
 - **Acceptance test:** two Blackbox Note files sharing `session_id`, split by a real process
   restart, both carry `ai_state_at_boundary: literal 'reset'`.
-- **Citations:** `sources/notes/EPISTEMIC_FUSION_v7.1.txt:489, :490, :493, :496, :497, :328`.
+- **Citations:** `sources/notes/EPISTEMIC_FUSION_v7.1.txt:489, :490, :493, :496, :497, :331`.
 - **Status:** `founder_decision_needed: true` — merge target for `kernel.session-boundary-momentum-
   reset-assertion` (§12.4 below), per spec §7 decision 2.
 
 ## 2. `schema.entry-resistance-precommit-field` — Problem Card resistance-route pre-commitment
 
-- **status:** ready to apply (score 6)
+- **status: applied this pass** (merged into HU-2's build, §6 below — same `entry_anchor` object,
+  single home for the R* fact per one-fact-one-home).
 - **FOUNDATION target:** §3.2's Problem Card field list — `intake.entry_anchor.resistance_route`
   (merges with HU-2's fuller `entry_anchor` block, §6 below), corrected from an earlier draft that
   pointed at §2.1a (which explicitly disclaims reopening S1–S6 ownership, `FOUNDATION_v0.6.md:354`).
-- **Schema fields (specified, not applied):** `schema/problem_card.schema.json` `intake` object
-  gains `entry_anchor.resistance_route` (string, naming a concrete route: source, record,
-  experiment, critic, or authority).
+- **Schema fields (applied):** `schema/problem_card.schema.json` `intake` object gains
+  `entry_anchor.resistance_route` (string, naming a concrete route: source, record, experiment,
+  critic, or authority).
 - **Disclaimer added:** `D-NO-PRECOMMIT-ROUTE` (flag, non-mandatory — §14.2 below).
 - **Kernel rule:** `FLAG: precommitted_resistance_route missing at READY_FOR_S2`. Must fire:
   `intake.entry_anchor.resistance_route` absent, `readiness.verdict=READY_FOR_S2`. Must not fire:
@@ -134,37 +149,52 @@
 
 ## 5. `hu.mastery-gate-wired` (HU-1) — Human Mastery Gate wired to publish-gate R8
 
-- **status:** ready to apply (score 8) — narrated in full by `methodology/P17_human_mastery_gate.md`.
-- **FOUNDATION target:** §7.5, replace `"Unchanged from v0.1 §7.5"` (line 1621) — that pointer is
-  broken, no `FOUNDATION_v0.1.md` exists anywhere in the repo (confirmed by direct read) — with a
-  pointer to `methodology/P17_human_mastery_gate.md` and a statement of R8; §7.4/`methodology/
-  P10_publish_gate.md`'s R1–R7 dimension list gains a new **R8**.
-- **Schema fields (specified, not applied):** new `schema/human_mastery_gate.schema.json` —
-  required `gate_status` enum `PASS | PASS_WITH_NAMED_GAPS | NOT_READY` plus the ten answer fields
-  from `templates/paper/arxiv-twocol/main.tex:375-378` (and its onecol twin), each human-authored,
-  never `ai_filled`.
-- **Kernel rule (R8):** `BLOCKED: NO_MASTERY_GATE_LINKED`. Must fire: a non-Paper-genre L3+ claim
-  card with no `human_mastery_gate.yaml` linked, currently passing R1–R7 clean (`grep -rn mastery
-  schema/*.json` returns zero hits today, confirmed). Must not fire: an S5 Paper-genre artifact
-  using the arXiv template with `Gate status:` already filled `PASS`.
+- **status: applied this pass** — MUST fix (ARCH_REVIEW_v0.7.json fail-closed-and-controls/source-
+  fidelity): a prior draft of this section still said "ready to apply"/"not yet applied" and cited
+  `FOUNDATION_v0.6.md §7.5 line 1621` as still reading the broken `"Unchanged from v0.1 §7.5"`
+  pointer, and its acceptance-test premise still asserted `grep -rn mastery schema/*.json` "returns
+  zero hits today" — both are stale. Direct re-read confirms all of it is already live on disk:
+  `design/FOUNDATION_v0.6.md`:1619-1630 already reads "Fixed (`hu.mastery-gate-wired`, HU-1, ...
+  build_now): this pointer previously read 'Unchanged from v0.1 §7.5' ..."; `schema/
+  human_mastery_gate.schema.json` and `schema/release_manifest.schema.json`'s
+  `human_mastery_gate_ref` both exist; `kernel/glosa_kernel.py`'s `validate_human_mastery_gate`/
+  `mastery_gate_r8_status` are implemented — matching `CHANGELOG.md`'s 0.4.0 "Built this pass"
+  entry for `hu.mastery-gate-wired`. Narrated in full by `methodology/P17_human_mastery_gate.md`.
+- **FOUNDATION target (applied):** §7.5 now points to `methodology/P17_human_mastery_gate.md` and
+  states R8; `methodology/P10_publish_gate.md`'s R1–R7 dimension list carries the new **R8**.
+- **Schema fields (applied):** `schema/human_mastery_gate.schema.json` — required `gate_status`
+  enum `PASS | PASS_WITH_NAMED_GAPS | NOT_READY` plus the ten answer fields from
+  `templates/paper/arxiv-twocol/main.tex:375-378` (and its onecol twin), each human-authored, never
+  `ai_filled`.
+- **Kernel rule (R8, applied):** `BLOCKED: NO_MASTERY_GATE_LINKED`. Must fire: a non-Paper-genre
+  L3+ claim card with no `human_mastery_gate.yaml` linked, otherwise passing R1–R7 clean. Must not
+  fire: an S5 Paper-genre artifact using the arXiv template with `Gate status:` already filled
+  `PASS`.
 - **Acceptance test:** Paper-genre artifact with `Gate status: PASS` → R8 passes; non-Paper L3+
   artifact with no linked gate → R8 `BLOCKED: NO_MASTERY_GATE_LINKED`.
 - **Citations:** `FOUNDATION_v0.6.md:1619, :1621`, `templates/paper/arxiv-twocol/main.tex:375,
   :378`, `methodology/data/non_collapse_table.json:570, :620`, `methodology/P10_publish_gate.md:17,
   :32`.
-- **Status:** `founder_decision_needed: true`.
+- **Status:** `founder_decision_needed: true` — the wiring is applied; founder ratification of R8's
+  exact enforcement strength (WARNING vs. hard fail on a missing gate link) is still pending, per
+  `schema/release_manifest.schema.json`'s own `human_mastery_gate_ref` description.
 
 ## 6. `schema.entry-anchor-full-h0` (HU-2) — full entry-anchor H0 block
 
-- **status:** ready to apply (score 8) — narrated by `methodology/P18_session_architecture.md`'s
-  Session-object table.
-- **FOUNDATION target:** §3.2's Problem Card field list — merges with §2 above (`schema.entry-
-  resistance-precommit-field` supplied only the `R*` conjunct; HU-2 supplies the remaining four).
-- **Schema fields (specified, not applied):** `schema/problem_card.schema.json` `intake` object
-  new sub-object `entry_anchor: {unresolved (U_0), existing_evidence (E_0), change_condition (Φ_0),
+- **status: applied this pass** — narrated by `methodology/P18_session_architecture.md`'s
+  Session-object table. Merges with §2 above (`schema.entry-resistance-precommit-field` supplied
+  only the `R*` conjunct; HU-2 supplies the remaining four).
+- **FOUNDATION target:** §3.2's Problem Card field list.
+- **Schema fields (applied):** `schema/problem_card.schema.json` `intake` object new sub-object
+  `entry_anchor: {unresolved (U_0), existing_evidence (E_0), change_condition (Φ_0),
   verification_intent (V_0), resistance_route (R*)}` — all optional, human-authored,
   `blackbox_line_ref`-backed like `q1_issue`/`q2_user_proposal`; never silently AI-backfilled.
-  `C_0` (candidate contract) is deliberately **not** a schema field — `v7.1:355` defines it as the
+  `resistance_route` is now the SINGLE HOME for the R* fact (one-fact-one-home, MUST fix,
+  ARCH_REVIEW_v0.7.json founder-invariants) — the sibling flat `intake.
+  precommitted_resistance_route` field is DEPRECATED (kept read-only for already-scaffolded
+  instances; kernel's `_precommit_route_flag` checks `entry_anchor.resistance_route` first,
+  falling back to the deprecated path only when absent). `C_0` (candidate contract) is deliberately
+  **not** a schema field — `v7.1:355` defines it as the
   human's standing disposition that AI output begins as `K_like`, documentation-only
   (`methodology/P02_intake.md`), not a per-intake record.
 - **Kernel rule:** no hard fail. Must fire (scan, not gate): an intake with a stated prior model
@@ -235,6 +265,17 @@
   passes.
 - **Citations:** `FOUNDATION_v0.6.md:775`, `schema/claim_card.schema.json:437, :439`.
 - **Status:** `founder_decision_needed: false`.
+- **Additive-scope disclosure (SHOULD fix, ARCH_REVIEW_v0.7.json spec-code-fidelity):** the spec's
+  own §10.2 states this proposal's entire kernel-rule deliverable as "standard `jsonschema.
+  ValidationError` ... no custom kernel message needed, pure declarative schema constraint." The
+  shipped code (`kernel/glosa_kernel.py:1053-1107`) additionally adds `defeater_status_for_card()`
+  plus kernel **rule31** (`_rule31_defeater_status_warning`) — a derived `untested |
+  tested_survived | tested_defeated` classification, surfaced as a WARNING once a card's `status`
+  has advanced past Draft with an empty `defeater_log`. This is real, disclosed-in-code-comment
+  scope beyond what either spec document authorized for this proposal id: `defeater_status` is
+  DERIVED/COMPUTED from `defeater_log` (never a second schema field, one-fact-one-home), never a
+  hard fail ("no independent check" is a real gap worth flagging, never itself a rejection reason).
+  Rule listed in §16's ledger table with its own `founder_decision_needed` row (§15 item 11).
 
 ## 10. Kernel rule29 / rule30 — `kernel/glosa_kernel.py` python-rule namespace (`lrs.defeater-not-collapse-rule`, `lrs.claim-type-defeater-enum`)
 
@@ -250,9 +291,14 @@ the two. See §16's rule numbering table.
 ### 10a. `rule29` — "strength of the claim" is not a defeater
 
 - **status:** ready to apply (score 6)
-- **Target:** `kernel/glosa_kernel.py` (new `rule29`); `methodology/data/
-  non_defeater_phrase_table.json` (new, sibling shape to `methodology/data/
-  contaminated_concept_table.json`).
+- **Target:** `kernel/glosa_kernel.py` (new `rule29`). **SHOULD fix (ARCH_REVIEW_v0.7.json spec-
+  code-fidelity), record on file:** the originally-named sibling data file, `methodology/data/
+  non_defeater_phrase_table.json` (sibling shape to `methodology/data/
+  contaminated_concept_table.json`), is NOT in this task's ownership list, so the shipped code
+  keeps the phrase pattern INLINE in `kernel/glosa_kernel.py` instead (disclosed in the kernel's
+  own code comment, `kernel/glosa_kernel.py:966-978`) — same convention already used by rule8/
+  rule18/rule21's own inline regexes in that file. The rule's statement and failing control are
+  unchanged; only the storage location differs from this line's original suggestion.
 - **Rule statement:** a `tested.falsifier` field matching strength-of-claim / feels-solid phrasing
   is never itself a legitimate defeater, regardless of `claim_type` — grounded in
   `EPISTEMIC_FUSION_v8.1.txt:51, :53`'s Burden rule ("'The claim is strong' is not a
@@ -370,6 +416,28 @@ node's own `acceptance_test` was never actually satisfied in-repo). Target:
 decision needed: `false` per the proposal's own field, but §15.6 names the founder go-ahead this
 still requires.
 
+### 11.8 `SA-5` — K_like state-machine citation (restored under gate rule 10, MUST fix)
+
+**Added to this patch (ARCH_REVIEW_v0.7.json source-fidelity MUST): `SA-5` was absent from this
+file's §0 tally and §11's sections even though `design/SESSION_ARCH_v0.4_SPEC.md` §14 already
+restores it as a 25th proposal under the same BBL-2026-09-05-121 gate rule 10 this patch's own §0
+invokes — the exact class of drop that rule exists to catch.** Target corrected from §7.3
+(`Bounded-Judge Law`, no K-state content — a category error, independent of any citation
+fabrication) to `design/FOUNDATION_v0.6.md` §4.4 (K-state ladder), with a see-also cross-reference
+to Appendix A `NC-47`/`NC-59`. Citations: `sources/notes/EPISTEMIC_FUSION_v7.1.txt:29, :355, :364,
+:368, :485` and `EPISTEMIC_FUSION_v8.1.txt:138, :146, :422` — grep-confirmed. **Build:** one
+citation sentence added to `FOUNDATION_v0.6.md` §4.4 (after line 1201) naming the source
+micro-state vocabulary, plus a one-line "see also NC-47, NC-59" cross-reference at Appendix A
+Family G (`FOUNDATION_v0.6.md`:2278-2283); §7.3 is dropped as a target entirely — no new
+non-collapse row, no edit to existing K0–K3 definition text. **Status:** `with_revision` (not
+`build_now`) — content and citations were re-anchored this pass, but by the same session that
+drafted `design/UPLIFT_NOTE_2026-09-05.md`, so per glosa rule 3 (maker≠checker) this does not yet
+count as an independent second-skeptic pass; a second, independent read confirming the same
+file:line citations and the §4.4-not-§7.3 correction would clear it to `build_now`. Full row:
+`design/UPLIFT_NOTE_2026-09-05.md` §2, `design/SESSION_ARCH_v0.4_SPEC.md` §14. Founder decision
+needed: `false` per the proposal's own citation-only build path, but the independent-review gap
+above still blocks release regardless (`PUB-ADVERSARIAL-REVIEW`).
+
 ---
 
 ## 12. `still_open` proposals — raise-path only, no softened claim
@@ -478,6 +546,12 @@ Problem Card readiness summary. Mandatory: `false` (flag, not a hard gate — pe
    before that half ships.
 10. **`schema.blackbox-language-bridge-subfield` withdrawal** — confirm withdrawal per the
     standing `MEETING_2026-09-05_judged.json:84-92` ruling (§12.3), or explicitly overrule it.
+11. **Kernel `rule31` (`_rule31_defeater_status_warning`, `defeater_status_for_card`)** — ratify
+    this as approved additive scope beyond `lrs.defeater-defeated-status-field`'s originally-
+    specified pure-schema-constraint deliverable (§9's disclosure note), or direct it be removed
+    pending a proper proposal of its own. Added to §16's rule-numbering ledger this pass (MUST fix,
+    ARCH_REVIEW_v0.7.json one-fact-one-home: `rule31` had shipped without a ledger row or a
+    founder-decision row).
 
 ---
 
@@ -485,15 +559,23 @@ Problem Card readiness summary. Mandatory: `false` (flag, not a hard gate — pe
 
 | sequence | artifact | ceiling before this pass | new this pass | source |
 |---|---|---|---|---|
-| python kernel rules | `kernel/glosa_kernel.py` | 28 (confirmed by direct read, no `rule29`/`rule30` exist) | **29** (strength-of-claim not a defeater, §10a), **30** (defeater_class phrasing match, §10b) | `lrs.defeater-not-collapse-rule`, `lrs.claim-type-defeater-enum` |
+| python kernel rules | `kernel/glosa_kernel.py` | 28 (confirmed by direct read, no `rule29`/`rule30`/`rule31` exist) | **29** (strength-of-claim not a defeater, §10a), **30** (defeater_class phrasing match, §10b), **31** (defeater-status WARNING, additive scope beyond `lrs.defeater-defeated-status-field`'s originally-specified pure-schema deliverable — see §9's disclosure note) | `lrs.defeater-not-collapse-rule`, `lrs.claim-type-defeater-enum`, `lrs.defeater-defeated-status-field` (rule31 only, additive) |
 | FOUNDATION §3.3 prose flag-rules | `design/FOUNDATION_v0.6.md` §3.3 | 28 (rules 1–28, prose/disclaimer-style) | proposed **flag-rule 29** (`candidate_set` on `cooking.items`, §11.3) — `with_revision`, not yet applied | `kernel.candidate-set-delta-cooking-step` |
 | Non-collapse table | Appendix A | `NC-76` (Family J) | **`NC-77`** (§13) — specified, not yet in `non_collapse_table.json` | `schema.retention-direction-field`, `SA-2` |
+
+MUST fix (ARCH_REVIEW_v0.7.json one-fact-one-home): `rule31` (`_rule31_defeater_status_warning`,
+`kernel/glosa_kernel.py:1092-1107`) was shipped this pass but was missing from this table — an
+undisclosed addition, now listed above with its own `founder_decision_needed` row (§15 item 11)
+since it is additive scope beyond what `lrs.defeater-defeated-status-field`'s own spec section
+(§10.2) said this proposal needed ("no custom kernel message needed, pure declarative schema
+constraint") — see §9's disclosure note for the full rationale.
 
 These two rule-29 numbers are **same-numbered, non-colliding siblings in different artifacts** —
 `kernel.glosa_kernel.rule29` is a python function on claim cards; `FOUNDATION_v0.6.md §3.3
 flag-rule29` is a prose rule on Blackbox Note cooking-log entries. Neither this patch nor any
 downstream document may cite "rule29" bare without naming which sequence it means (spec §1b item
-6, founder decision 8 above).
+6, founder decision 8 above). `rule31` has no numbering collision (kernel python-rule sequence
+only).
 
 ---
 
@@ -507,3 +589,44 @@ downstream document may cite "rule29" bare without naming which sequence it mean
 - Independent review of this patch itself — K0, single-pass, same-model; per `PUB-ADVERSARIAL-
   REVIEW`/`AGENTS.md` gate rule 8, no independent check has run, so none of this may be cited as
   more than `Dr` until one does.
+
+---
+
+## 18. Review response (v0.4, 2026-09-05)
+
+Applies every upheld MUST finding from `design/ARCH_REVIEW_v0.7.json` (independent v0.4 review, 12
+upheld MUSTs across 5 lenses), per founder ruling BBL-119 (never lower a claim, raise the work) and
+rule 10 (nothing dropped). Two spec-code-fidelity SHOULDs applied in the same pass, noted at the
+end. This section itself is `K0` (same-model, not yet independently checked) — a record of what
+changed and where, not a certification.
+
+| # | MUST (lens · section) | change (file:line) |
+|---|---|---|
+| 1 | spec-code-fidelity · SA-1 session field location (`cli/glosa:844`) | `cli/glosa`'s `scaffold_blackbox_note_session` (~808-861), `cmd_session_open` (~889-906), `cmd_session_close` (~909-943): flattened `session_id`/`session_boundary`/`entry_anchor`/`question_trace`/`retention_note` to the note's TOP LEVEL, matching `schema/blackbox_note.schema.json` and `kernel/glosa_kernel.py`'s `check_session_boundary_reset` (~1487-1516). `templates/knowledge/blackbox_note.yaml` (~99-135) rewritten to the same flat shape. `tests/test_install.py`'s `test_open_scaffolds_a_valid_note_with_open_session_block` updated to the flat assertions; new round-trip test `test_note_produced_by_session_open_is_actually_seen_by_kernel_check` added, feeding a real `glosa session open`-produced note into `check_session_boundary_reset` and asserting it fires on a forced violation. |
+| 2 | spec-code-fidelity · `candidate_set_deltas[]` dangling field | `schema/hypothesis_selection.schema.json:8-9` (new `$comment`): explicit `still_open`/not-yet-specified deferral, naming the gap and its absent build_path. `methodology/P18_session_architecture.md:39` and `design/SESSION_ARCH_v0.4_SPEC.md:52` (Session-object tables): row corrected from a placed fact to an explicit `still_open` deferral citing the schema `$comment`. `CHANGELOG.md`'s "Still genuinely not built this pass" bullet updated to name it. |
+| 3 | one-fact-one-home · session_id/session_boundary/entry_anchor/question_trace (`cli/glosa:844`) | Same fix as #1 above (one underlying defect, four lenses independently flagged it). `question_trace` clause of this finding was reviewed and found overstated (the reviewer's own `upheld` reason says so): the top-level per-turn `question_trace[]` (schema.blackbox-question-trace) and the still-unbuilt session-scoped `question_trace[]` (SA-3) are deliberately distinct, non-duplicate facts — not fixed as a collision; `templates/knowledge/blackbox_note.yaml`'s new TODO block (after the flattened session fields) documents SA-3's field as not yet scaffolded, avoiding the naming collision going forward. |
+| 4 | one-fact-one-home · kernel rule numbering ledger (`FOUNDATION_v0.7_PATCH.md:488`) | §16's table (this file, rule-numbering table) now lists `rule31` alongside `rule29`/`rule30`, with a new disclosure paragraph directly under the table. §15 gains founder-decision item 11 (`rule31` ratification). §9's `lrs.defeater-log-required-outcome-enum` section gains an "Additive-scope disclosure" paragraph naming `rule31`/`defeater_status_for_card` as scope beyond §10.2's originally-specified pure-schema-constraint deliverable (this doubles as the SHOULD fix below). |
+| 5 | fail-closed-and-controls · SA-1 mechanism inert on real CLI output (`cli/glosa:844`) | Same fix as #1/#3 above. |
+| 6 | fail-closed-and-controls · §5 citation vs. `FOUNDATION_v0.6.md` actual state (`FOUNDATION_v0.7_PATCH.md:138`) | §1, §2, §5, §6 (this file) rewritten from "ready to apply"/"specified, not applied" to "applied this pass" (§5's stale acceptance-test premise — "`grep -rn mastery schema/*.json` returns zero hits today" — removed, since `schema/human_mastery_gate.schema.json` already exists). `CHANGELOG.md`'s opening 0.4.0 bullet rewritten to state per-node applied-vs-not-yet-applied status instead of a blanket "not yet applied" claim. |
+| 7 | founder-invariants · SA-1 CLI+template vs. schema (`cli/glosa:844`) | Same fix as #1/#3/#5 above. |
+| 8 | founder-invariants · `ai_state_at_boundary` literal (`cli/glosa:849`) | `cli/glosa`'s `scaffold_blackbox_note_session`: removed the `"carried" if carried_from_ref else "reset"` branch — `ai_state_at_boundary` is now unconditionally the literal `"reset"`; `carried_from_ref` is recorded only as separate provenance on `session_boundary.human_retained_residue_ref`. `cmd_session_close`'s existing `"reset"`-at-close line kept, comment corrected to cite `v7.1:331` (was `:328`, see #11). `templates/knowledge/blackbox_note.yaml`'s `ai_state_at_boundary: reset \| carried` framing replaced with `reset` only, with an explanatory comment. |
+| 9 | founder-invariants · Session-object table dangling fields (`methodology/P18_session_architecture.md:36`) | `methodology/P18_session_architecture.md:36-45` (Session-object table): `human_owner` row corrected to cite `problem_card.schema.json`'s existing top-level required field, not Blackbox Note (no such field exists there). `ai_routes` row corrected to state it is derived/computed from `kg_edge.yaml` (grouped by `session_id`), never a stored field — parallel to kernel rule31's `defeater_status_for_card` disclosure. `design/SESSION_ARCH_v0.4_SPEC.md:49-52` (mirrored table) corrected the same way. |
+| 10 | source-fidelity · `CHANGELOG.md` scope claim vs. shipped reality (`CHANGELOG.md:5`) | `CHANGELOG.md`'s opening 0.4.0 bullet (lines 3-17) rewritten: corrected proposal count 24→25, and replaced the blanket "Full diff specified, not yet applied" claim with a precise list of which nodes are already shipped (SA-1's core fields, `schema.blackbox-question-trace`, `lrs.dialogue-table-claim-type-column`, `lrs.defeater-defeated-status-field`, `hu.mastery-gate-wired`, and now `schema.entry-anchor-full-h0`) vs. genuinely not-yet-applied (`chi_recip` CLI wiring, `with_revision`/`still_open` nodes). |
+| 11 | source-fidelity · `v7.1.txt:328`→`:331` citation drift (`schema/blackbox_note.schema.json:25`) | Corrected `:328`→`:331` in `schema/blackbox_note.schema.json:25`, `schema/examples/fail/fail_session_boundary_not_reset.json:59`, `design/SESSION_ARCH_v0.4_SPEC.md:58` and `:219`, and `design/FOUNDATION_v0.7_PATCH.md:71` (this file, §1's citation list). `cli/glosa`'s own inline comments updated to `:331` as part of the #1/#8 fixes. |
+| 12 | source-fidelity · SA-5 dropped from this patch's ledger (`FOUNDATION_v0.7_PATCH.md:22`) | This file's §0 (lines 22-25) corrected: proposal count 24→25, explicit note naming `SA-5`'s restoration and pointing at the new §11.8. New §11.8 section added (full `SA-5` entry: target, citations, build, status `with_revision`, founder-decision note). §0's "13 build_now / 7 with_revision / 4 still_open" line corrected to "13 / 8 / 4" throughout (§0, §11's intro). |
+
+**SHOULDs also applied this pass (spec-code-fidelity):**
+
+- **`lrs.defeater-defeated-status-field` / rule31 additive-scope disclosure (§9):** added a
+  paragraph to §9 (this file) naming `rule31`/`defeater_status_for_card` as additive scope beyond
+  §10.2's originally-specified pure-schema-constraint deliverable, citing the kernel's own
+  rationale comment (`kernel/glosa_kernel.py:1053-1068`).
+- **`rule29` non-defeater phrase table location (§10a):** §10a's target line rewritten to state the
+  pattern is intentionally kept inline in `kernel/glosa_kernel.py` this pass (the sibling data file
+  `methodology/data/non_defeater_phrase_table.json` was never in this task's ownership list),
+  matching the kernel's own disclosed code comment (`kernel/glosa_kernel.py:966-978`) instead of
+  leaving the patch document naming an unbuilt target as if it were the plan.
+
+**Not applied (scope note):** the 10 pending founder decisions (§15, now 11 items) remain pending —
+none of this review response resolves a founder-only call; it corrects citation, ledger, and
+field-location defects the review found, all within the AI-owned half of the work.

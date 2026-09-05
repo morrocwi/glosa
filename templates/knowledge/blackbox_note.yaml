@@ -97,41 +97,49 @@ blackbox_note:
   #   (design/MEETING_2026-09-05_judged.json:84-92, keep:false); do NOT add a `cooking.items[].
   #   bridge_kind` field here without a founder overrule of that standing ruling.
   translation_status: none | machine | reviewed | verified   # for any rendering of these lines elsewhere
-  session:                          # SESSION_ARCH_v0.4_SPEC.md §2.1/§2.2/§8 (SA-1, build_now): the
-                                     # session-boundary + AI-reset fact lives HERE, on the Blackbox
-                                     # Note, per one-fact-one-home (this is the only artifact that
-                                     # already owns per-line/per-cooking-step sequencing) -- it is
-                                     # NOT a new session.yaml file. Additive field: additionalProperties
-                                     # is true on this schema, so this block validates today without a
-                                     # schema-file change. `glosa session open|close` writes this block.
-    session_id: <string>            # citations: sources/notes/EPISTEMIC_FUSION_v7.1.txt:489-490 (F8), :493 (F10)
-    session_boundary:
-      opened_at: <ISO-8601 ts>
-      closed_at: null                # set only by `glosa session close`
-      ai_state_at_boundary: reset | carried   # fixed literal `reset` at a fresh open/close
-                                     # (v7.1:328 "m^{AI}_{s+1,0} = 0 (by architectural scope
-                                     # definition)"); `carried` is legal only alongside a non-null
-                                     # human_retained_residue_ref below -- never silently defaulted.
-    entry_anchor: <ref -> problem_card.problem_id>   # H0 anchor (schema.entry-resistance-precommit-field
-                                     # + HU-2, v7.1:344 "H_0 = (P_0, M_0, U_0, E_0, Phi_0)", :351)
-    question_trace:                 # array of Problem Card refs OPENED during this session (SA-3,
-                                     # v7.1:353-354 V_0) -- distinct from the top-level per-turn
-                                     # `question_trace[]` further below, which is inside ONE note.
-      - problem_ref: <problem_card.problem_id>
-        opened_at: <ISO-8601 ts>
-    retained_direction_ref: null    # POINTER ONLY, never a duplicate value: the actual
-                                     # `unknown | expansion | tunnel` fact lives on
-                                     # hypothesis_selection.yaml's own `retained_direction` field
-                                     # (§2.2 one-fact-one-home decision; schema.retention-direction-field,
-                                     # SA-2, NC-77) -- put the hsel-<slug>-<nnn> id here once that row
-                                     # exists for this session, never re-state its value on this note.
-    human_retained_residue_ref: null   # what the human explicitly carries forward, if anything; a
-                                     # session open either points at the PRIOR note's residue here or
-                                     # records "none" -- never left silently blank (boundary check §6.4).
-    retention_note: null            # human writes, AI never fills. `glosa session close` refuses
-                                     # (fail-closed) unless this is a non-empty human-authored string
-                                     # at close time -- an AI session may never author this field's
-                                     # content on the human's behalf.
+  # Session-boundary fields (SA-1, build_now, SESSION_ARCH_v0.4_SPEC.md §2.1/§2.2/§8): the
+  # session-boundary + AI-reset fact lives on the Blackbox Note per one-fact-one-home (this is the
+  # only artifact that already owns per-line/per-cooking-step sequencing) -- it is NOT a new
+  # session.yaml file. FIXED (MUST, ARCH_REVIEW_v0.7.json spec-code-fidelity/one-fact-one-home/
+  # fail-closed-and-controls/founder-invariants): these fields are TOP-LEVEL properties of the note
+  # (matching schema/blackbox_note.schema.json's actual property definitions and the location
+  # kernel/glosa_kernel.py's `check_session_boundary_reset` reads) -- a prior draft of this template
+  # nested them under a second-level `session:` wrapper, which made every note `glosa session open`
+  # produced invisible to that kernel check. `glosa session open|close` writes these fields.
+  session_id: <string>               # citations: sources/notes/EPISTEMIC_FUSION_v7.1.txt:489-490 (F8), :493 (F10)
+  session_boundary:
+    opened_at: <ISO-8601 ts>
+    closed_at: null                  # set only by `glosa session close`
+    ai_state_at_boundary: reset      # ALWAYS the literal `reset` (MUST fix, ARCH_REVIEW_v0.7.json
+                                      # founder-invariants/source-fidelity) -- v7.1:331 "m^{AI}_
+                                      # {s+1,0} = 0 (by architectural scope definition)": the AI's
+                                      # own state resets at EVERY boundary, unconditionally. There is
+                                      # no second `carried` value -- what the human explicitly
+                                      # retains is a separate, distinct fact recorded below on
+                                      # `human_retained_residue_ref`, never conflated with this field.
+    human_retained_residue_ref: null # what the human explicitly carries forward, if anything; a
+                                      # session open either points at the PRIOR note's residue here
+                                      # or records "none" -- never left silently blank (boundary
+                                      # check §6.4). Schema-nested under `session_boundary`.
+  entry_anchor: <ref -> problem_card.problem_id>   # H0 anchor (schema.entry-resistance-precommit-field
+                                      # + HU-2, v7.1:344 "H_0 = (P_0, M_0, U_0, E_0, Phi_0)", :351)
+  retained_direction_ref: null       # POINTER ONLY, never a duplicate value: the actual
+                                      # `unknown | expansion | tunnel` fact lives on
+                                      # hypothesis_selection.yaml's own `retained_direction` field
+                                      # (§2.2 one-fact-one-home decision; schema.retention-direction-field,
+                                      # SA-2, NC-77) -- put the hsel-<slug>-<nnn> id here once that row
+                                      # exists for this session, never re-state its value on this note.
+  retention_note: null               # human writes, AI never fills. `glosa session close` refuses
+                                      # (fail-closed) unless this is a non-empty human-authored string
+                                      # at close time -- an AI session may never author this field's
+                                      # content on the human's behalf.
+  # TODO(SA-3, still_open, not yet built): a `question_trace[]` array of Problem Card refs OPENED
+  # during this session (v7.1:353-354 V_0) was proposed as a Session-object field distinct from the
+  # top-level per-turn `question_trace[]` above (schema.blackbox-question-trace) -- SA-3 itself is
+  # still_open (SESSION_ARCH_v0.4_SPEC.md §3/§9.2: fabricated citation, blocked on session_id), so
+  # this second question_trace has no schema field and is NOT scaffolded by `glosa session open`
+  # today; do not add it here as a live field until SA-3 actually ships (see P18_session_
+  # architecture.md's own Session-object table, which lists it `still_open` for the same reason).
   disclaimers: [D-BLACKBOX-NOTE, D-STANDPOINT]
   # Fixed FOUNDATION_v0.5 §12: dropped D-SELF-EXPERIENCE-NOT-GENERAL-EVIDENCE, an id that did not
   # exist in FOUNDATION §5's master catalogue (the nearest match, NC-64, is a Non-Collapse Table

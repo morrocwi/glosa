@@ -46,16 +46,16 @@ traced to its source proposal and citation:
 |---|---|---|---|
 | `session_id` | string | SA-1, schema.retention-direction-field | v7.1:489-490 (F8), v7.1:493 (F10) |
 | `entry_anchor` (H0) | ref → Problem Card | schema.entry-resistance-precommit-field | v7.1:351 `ENTRY_H→AI = H_0 ∧ V_0 ∧ C_0 ∧ R*` |
-| `human_owner` | string (non-delegable) | SA-3, FOUNDATION §2.2 S1 row | design/FOUNDATION_v0.6.md:425 |
-| `ai_routes` | array (which independence-class route touched this session) | kernel.reciprocal-lineage-diagnostic | design/FOUNDATION_v0.6.md:1163 (`prompt_ancestry`) |
-| `question_trace[]` | array of Problem Card refs opened this session | SA-3 | v7.1:353-354 (V_0) |
-| `candidate_set_deltas[]` | array | schema.retention-direction-field | v8.1:345,347 (Gs/Ts/Δs) |
+| `human_owner` | string (non-delegable) — **lives on `problem_card.schema.json`'s top-level `human_owner` (already `required`), not Blackbox Note** (corrected, ARCH_REVIEW_v0.7.json founder-invariants, one-fact-one-home: no such field exists on `schema/blackbox_note.schema.json` or is named as a build target for it) | FOUNDATION §2.2 S1 row | design/FOUNDATION_v0.6.md:425 |
+| `ai_routes` | array, **derived/computed only, never stored** — read off `kg_edge.yaml` rows' `asserted_by`/`independence_class`, grouped by `session_id` (corrected, ARCH_REVIEW_v0.7.json founder-invariants: `kg_edge.schema.json` has no `ai_routes` property and none is planned; a computed view over existing facts, not a fact with its own home) | kernel.reciprocal-lineage-diagnostic | design/FOUNDATION_v0.6.md:1163 (`prompt_ancestry`) |
+| `question_trace[]` | array of Problem Card refs opened this session | SA-3 (**still_open** — §3/§9.2) | v7.1:353-354 (V_0) |
+| `candidate_set_deltas[]` | array — **still_open / not yet specified** (corrected, ARCH_REVIEW_v0.7.json spec-code-fidelity/rule-10: no field exists in `schema/hypothesis_selection.schema.json`, the DAG_v0.4 node's own `fields_added` below (only `retained_direction`), any kernel/CLI code, or a CHANGELOG entry; see `schema/hypothesis_selection.schema.json`'s own `$comment`) | schema.retention-direction-field | v8.1:345,347 (Gs/Ts/Δs) |
 | `chooser_reaffirmations[]` | array (human re-selects at session reopen) | schema.retention-direction-field, SA-2 | v8.1:356 (Repair 8) |
 | `resistance_precommit` (R*) | string (concrete route: source/record/experiment/critic/authority) | schema.entry-resistance-precommit-field | v7.1:356 |
 | `retention_note` | ref → Blackbox Note `human_retained_residue_ref` | SA-1 | v7.1:489-490 |
 | `retained_direction` | enum `unknown \| expansion \| tunnel` (default `unknown`) | SA-2, schema.retention-direction-field | v8.1:358-361 |
 | `momentum diagnostics (m^H, m^AI, chi_recip)` | Open finite diagnostics, diagnostic-only, never feed a tier/verdict | kernel.reciprocal-lineage-diagnostic, SA-4 (declined as schema fields) | v7.1:447, v7.1:496, v7.1:554 |
-| `ai_state_at_boundary` | fixed literal `reset` | SA-1 / kernel.session-boundary-momentum-reset-assertion | v7.1:328 `m^{AI}_{s+1,0} = 0 (by architectural scope definition)` |
+| `ai_state_at_boundary` | fixed literal `reset` | SA-1 / kernel.session-boundary-momentum-reset-assertion | v7.1:331 `m^{AI}_{s+1,0} = 0 (by architectural scope definition)` |
 
 ### 2.2 Where it lives — decided by one-fact-one-home
 
@@ -216,7 +216,7 @@ vertical-authority gate is being introduced here).
     - design/FOUNDATION_v0.6.md §2.3 (new bullet, not R0/R1/R2)
   fields_added: [session_id, opened_at, closed_at, ai_state_at_boundary, human_retained_residue_ref]
   acceptance_test: "two Blackbox Note files sharing session_id split by a real process restart both carry ai_state_at_boundary literal 'reset'"
-  citations: [sources/notes/EPISTEMIC_FUSION_v7.1.txt:489, ':490, ':493, ':496, ':497, ':328]
+  citations: [sources/notes/EPISTEMIC_FUSION_v7.1.txt:489, ':490, ':493, ':496, ':497, ':331]
   founder_decision_needed: true   # merge target for kernel.session-boundary-momentum-reset-assertion, see §7.2
 
 - id: schema.entry-resistance-precommit-field

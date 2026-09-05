@@ -43,8 +43,25 @@
           }
         },
         "precommitted_resistance_route": {
-          "description": "SESSION_ARCH_v0.4_SPEC.md §2.1/§2.2 (schema.entry-resistance-precommit-field, build_now), the R* term of ENTRY_H->AI = H_0 ^ V_0 ^ C_0 ^ R* (sources/notes/EPISTEMIC_FUSION_v7.1.txt:356). A concrete route (source/record/experiment/critic/authority) precommitted before the first AI-turn line in the linked Blackbox Note. Additive/optional; null/absent triggers the D-NO-PRECOMMIT-ROUTE flag (kernel-only, never a hard block) once readiness.verdict reaches READY_FOR_S2. Target corrected from §2.1a (which explicitly disclaims reopening S1-S6 ownership) to this intake object, per §2.2.",
+          "description": "DEPRECATED (MUST fix, ARCH_REVIEW_v0.7.json founder-invariants: one-fact-one-home) -- superseded by `entry_anchor.resistance_route` below, same R* fact, single home going forward. Kept read-only for backward compatibility with already-scaffolded instances (kernel's `_precommit_route_flag` still reads this path if `entry_anchor.resistance_route` is absent); never write both on a fresh instance. Originally: SESSION_ARCH_v0.4_SPEC.md §2.1/§2.2 (schema.entry-resistance-precommit-field, build_now), the R* term of ENTRY_H->AI = H_0 ^ V_0 ^ C_0 ^ R* (sources/notes/EPISTEMIC_FUSION_v7.1.txt:356).",
           "type": ["string", "null"]
+        },
+        "entry_anchor": {
+          "description": "HU-2 (build_now, merges with schema.entry-resistance-precommit-field's R* conjunct), FOUNDATION_v0.7_PATCH.md §2/§6, methodology/P18_session_architecture.md's Session-object table (`entry_anchor (H0)` row): the H0 conjuncts ENTRY_H->AI = H_0 ^ V_0 ^ C_0 ^ R* (sources/notes/EPISTEMIC_FUSION_v7.1.txt:344 'H_0 = (P_0, M_0, U_0, E_0, Phi_0)', :351, :355, :356). All five sub-fields are optional, human-authored, never silently AI-backfilled (mirrors the existing q2_user_proposal 'none' precedent). `resistance_route` is the single home for the R* fact -- supersedes the deprecated `precommitted_resistance_route` sibling above.",
+          "type": "object",
+          "properties": {
+            "unresolved": { "description": "U_0.", "type": ["string", "null"] },
+            "existing_evidence": { "description": "E_0.", "type": ["string", "null"] },
+            "change_condition": {
+              "description": "Phi_0. 'none stated -- exploratory' is a legal, explicit honest-optional value, never silently inferred.",
+              "type": ["string", "null"]
+            },
+            "verification_intent": { "description": "V_0.", "type": ["string", "null"] },
+            "resistance_route": {
+              "description": "R* -- a concrete route (source/record/experiment/critic/authority) precommitted before the first AI-turn line in the linked Blackbox Note. Single home for this fact (one-fact-one-home) -- supersedes `intake.precommitted_resistance_route` above. Null/absent triggers the D-NO-PRECOMMIT-ROUTE flag (kernel-only, never a hard block) once readiness.verdict reaches READY_FOR_S2.",
+              "type": ["string", "null"]
+            }
+          }
         }
       }
     },

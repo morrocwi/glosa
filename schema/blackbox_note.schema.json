@@ -22,7 +22,7 @@
         "opened_at": { "type": "string" },
         "closed_at": { "type": ["string", "null"] },
         "ai_state_at_boundary": {
-          "description": "Literal 'reset' only (sources/notes/EPISTEMIC_FUSION_v7.1.txt:328 -- m^{AI}_{s+1,0}=0 by architectural scope definition). Cross-file check (two notes sharing session_id split by a real process restart must BOTH carry this literal) is kernel-enforced, not schema-enforced -- see kernel/glosa_kernel.py `check_session_boundary_reset`. Unnumbered pending founder ratification of §2.2 (this is not one of kernel rule29/30).",
+          "description": "Literal 'reset' only (sources/notes/EPISTEMIC_FUSION_v7.1.txt:331 -- m^{AI}_{s+1,0}=0 by architectural scope definition). Cross-file check (two notes sharing session_id split by a real process restart must BOTH carry this literal) is kernel-enforced, not schema-enforced -- see kernel/glosa_kernel.py `check_session_boundary_reset`. Unnumbered pending founder ratification of §2.2 (this is not one of kernel rule29/30).",
           "enum": ["reset"],
           "default": "reset"
         },
