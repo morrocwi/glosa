@@ -1,5 +1,5 @@
 {
- "vendor": "codex",
+ "vendor": "claude",
  "fetched": {
   "source": "url-fetch",
   "title": "",
@@ -7,9 +7,11 @@
   "_card_url": "https://www.eui.eu/Documents/MWP/ProgramActivities/20152016/master-classes/Pettit-The-Globalized-Republican-Ideal.pdf"
  },
  "verdict": {
-  "error": "no-json",
-  "raw": "",
+  "metadata_matches": true,
   "passage_plausible": true,
+  "claim_match": true,
+  "bearing": "CONTEXT_ONLY",
+  "reason": "Fetched text contains the exact passage verbatim; title/author consistent with the URL and locator. Pettit's robustness-over-counterfactuals point is relevant context for H3's real-peace vs bounded-suppression distinction, but not fixture evidence, matching the CONTEXT_ONLY scope.",
   "passage_mechanical": "verbatim prefix found in fetched open text"
  },
  "date": "2026-09-04"

@@ -1,0 +1,38 @@
+{
+ "claim_ref": "GLOSA-CC-20260905-0301",
+ "route_id": "R3",
+ "reviewer_identity": "same-model fresh-session AI route R3 (vendor recorded locally, not named: gate rule 9)",
+ "independence_class": "I1",
+ "mc_level": "L2",
+ "role": "SourceAuditor",
+ "review_mode": "DECORRELATED_AI_ROUTE",
+ "verdict": "Route R3 finds the only visible evidence_relation inflated. cite-aristotle-metaphysics-theta-001 is tagged bearing=SUPPORTS, yet the passage defines potency as an originative source of change in a determinate thing and says nothing about witnessing, retained records, finiteness, or enumerability; the card's own disclosure and its I1/I2 routes call it context, not support. The claim card is internally inconsistent: seen.citation_refs and separates.licensing_test still name placeholder ids (cite-potential-h1-001..003, 'n=0 completed checks') while tested.evidence_relations cites a reconciled real card. Chaiklin's card asserts 'directly supports' but its I2 route rates it context only. Robeyns and Nussbaum bear against H1's witnessed-set definition and their VERIFIED status rests on routes that could not locate the passage. Remaining relations were truncated and could not be audited.",
+ "verdict_tier": "finite_diagnostic",
+ "evidence_consulted": [
+  "claim card as pasted into PACKET.md",
+  "citation card cite-aristotle-metaphysics-theta-001",
+  "citation card cite-chaiklin-vygotsky-zpd-002",
+  "citation card cite-robeyns-2017-004",
+  "citation card cite-nussbaum-2011-005"
+ ],
+ "shared_dependency_disclosure": "same operator machine and same packet text as the maker; same model, fresh headless session (no shared context) (I2, not I3)",
+ "disagreement_ledger_ref": null,
+ "date": "2026-09-05",
+ "approver_kind": "ai",
+ "route_findings": {
+  "defeaters_found": [
+   "cite-nussbaum-2011-005 and cite-robeyns-2017-004 both CHALLENGE H1 (capability/feasible sets defined as opportunities, no witnessing or enumeration required); any relation citing them as SUPPORTS would be inflated",
+   "cite-nussbaum-2011-005 carries status VERIFIED although the I2 route found no verbatim match and the I1 route admits the fetched excerpt stops before the quoted page",
+   "cite-robeyns-2017-004 carries status VERIFIED although two of three routes could not locate the passage (navigation/TOC only)",
+   "Claim card cites placeholder ids (cite-potential-h1-001..003) in seen.citation_refs that resolve to none of the pasted cards"
+  ],
+  "overclaims_found": [
+   "Aristotle relation bearing=SUPPORTS; passage supports at most 'bounded, thing-indexed potency', not the witnessed/finite/enumerable membership rule; correct bearing is CONTEXT or PARTIAL",
+   "Chaiklin card disclosure states 'directly supports H1' although ZPD defines potential via assisted performance, not via a retained execution-record set; its own I2 route rates it context",
+   "separates.licensing_test.result 'NOT YET DETERMINED, n=0' contradicts a populated, reconciled evidence_relation in the same card",
+   "Aristotle strength field cites row stance YES while the relation notes concede Aristotle never requires witnessing"
+  ],
+  "evidence_relations_ok": false,
+  "notes": "Packet truncated after the first evidence_relation; only one relation audited directly, others inferred from card disclosures. Judged from pasted text only, no outside knowledge. Claim card needs reconciliation of placeholder refs and re-tiering of bearings before further routes."
+ }
+}

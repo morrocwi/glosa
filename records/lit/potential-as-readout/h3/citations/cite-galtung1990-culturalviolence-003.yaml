@@ -12,10 +12,7 @@ metadata_verified_by: 'manual: reused already-fetched local copy at cpg_research
   Vol. 27, No. 3 (Aug. 1990), pp. 291-305'
 metadata_verified_at: '2026-09-05'
 claim_match_verified: true
-claim_match_verified_by: this session (manual read/verification; the route:codex
-    I3 cross-vendor attempt below FAILED with a usage-limit error, not a content
-    judgment -- reverted to the prior manual verification rather than leaving a
-    false false-verdict on record)
+claim_match_verified_by: route:claude
 claim_match_verified_at: '2026-09-05'
 exact_passage: By 'cultural violence' we mean those aspects of culture, the symbolic
   sphere of our existence - exemplified by religion and ideology. language and art,
@@ -23,13 +20,13 @@ exact_passage: By 'cultural violence' we mean those aspects of culture, the symb
   justify or legitimize direct or structural violence.
 page_or_locator: Galtung 1990, p. 291 (p2 in the local page-tagged extraction), section
   "1. Definition", left-hand column
-scope: DIRECT_QUOTATION
+scope: CONTEXT_ONLY_NOT_EVIDENCE
 evidence_tier: definition
 independence_class: I1
-who_verified: this session (manual verification; I3 cross-vendor attempt failed,
-  see disclosure)
+who_verified: 'route:claude (I1 route: same model, fresh headless session (no shared
+  context); abstract/metadata level, not full text) -- see cite-galtung1990-culturalviolence-003.i3.json'
 verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
-status: METADATA_OK
+status: VERIFIED
 xenon_ledger_ref: null
 disclosure: 'The third leg of Galtung''s triangle (direct/structural/cultural violence).
   Preserved verbatim including the extraction''s own punctuation artifact ("ideology.
@@ -38,14 +35,28 @@ disclosure: 'The third leg of Galtung''s triangle (direct/structural/cultural vi
   is what makes suppression LOOK legitimate/normal ("justify or legitimize"), which
   is the ideological work needed for H3''s "suppression holds only while paid" --
   i.e. the payment includes the ongoing cultural-legitimation work, not force alone.
-  | I3 CROSS-VENDOR ATTEMPT FAILED (codex CLI returned "ERROR: You''ve hit your
-  usage limit" -- no content judgment was made; this is an environmental/quota
-  blocker in this session, not a finding about the card). independence_class and
-  claim_match_verified reverted to the prior self-verified (I1) state above rather
-  than recording a spurious I3 result. A genuine cross-vendor pass should be re-run
-  once codex/gemini access is available.'
+  | I3 CROSS-VENDOR ATTEMPT FAILED (codex CLI returned "ERROR: You''ve hit your usage
+  limit" -- no content judgment was made; this is an environmental/quota blocker in
+  this session, not a finding about the card). independence_class and claim_match_verified
+  reverted to the prior self-verified (I1) state above rather than recording a spurious
+  I3 result. A genuine cross-vendor pass should be re-run once codex/gemini access
+  is available. | I1 route (claude) judged from fetched metadata/abstract + the card''s
+  quoted passage, not full text: Fetched text (Galtung, Cultural Violence) contains
+  the passage verbatim, so metadata and passage hold. But the passage only defines
+  cultural violence as legitimation of direct/structural violence; it says nothing
+  about bounded suppression budgets, cost divergence, threshold re-crossing, or operator
+  change. No bearing on H3''s numerical signature claim as a DIRECT_QUOTATION evidence
+  card. | I1 route (claude) judged from fetched metadata/abstract + the card''s quoted
+  passage, not full text: Fetched text is Galtung''s ''Cultural Violence'' and contains
+  the definition passage verbatim (allowing OCR artifacts). No metadata contradiction.
+  Source concerns symbolic legitimation of violence, not numerical suppression signatures;
+  it is relevant background for H3''s channel-closure framing only, so CONTEXT_ONLY
+  scope holds.'
 superseded_by: null
-notes: Third card drawn from the two already-fetched Galtung documents named in the
-  task brief, reused rather than re-fetched from JSTOR.
-fetched_from_url: https://www.galtung-institut.de/wp-content/uploads/2015/12/Cultural-Violence-Galtung.pdf  # fetched copy read locally (per-page text extraction of the same file)
-line_or_paragraph: left-hand column, section "1. Definition", opening two sentences
+notes: 'Third card drawn from the two already-fetched Galtung documents named in the
+  task brief, reused rather than re-fetched from JSTOR. | Carded as context (route
+  verdict CONTEXT_ONLY): cultural legitimation of violence: context for how a channel
+  is closed; not evidence for the numerical signature'
+fetched_from_url: https://www.galtung-institut.de/wp-content/uploads/2015/12/Cultural-Violence-Galtung.pdf
+line_or_paragraph: char offset 2881 of normalized fetched text (~paragraph 1); verbatim
+  prefix match

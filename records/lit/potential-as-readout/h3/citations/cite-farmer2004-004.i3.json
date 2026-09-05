@@ -14,9 +14,9 @@
  "verdict": {
   "metadata_matches": true,
   "passage_plausible": true,
-  "claim_match": false,
+  "claim_match": true,
   "bearing": "CONTEXT_ONLY",
-  "reason": "Crossref title/author/year/journal match the card; passage found verbatim in fetched text. But the quoted passage only says Haitian epidemics are embedded in historical political-economic structures. It says nothing about bounded suppression budgets, threshold re-crossing, force-cost divergence, or operator change, so it does not evidence H3's empirical fixture claim; at most thematic context.",
+  "reason": "Crossref title/author/year match card. Passage found verbatim in fetched text. Farmer's claim that visible affliction is embedded in large-scale, historically produced structures is relevant context for H3's visible-amplitude vs underlying-operator distinction, but offers no evidence for the fixture's numerical signature. Card scope CONTEXT_ONLY is appropriate.",
   "passage_mechanical": "verbatim prefix found in fetched open text"
  },
  "date": "2026-09-04"

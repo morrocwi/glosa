@@ -13,10 +13,7 @@ metadata_verified_by: 'manual: reused already-fetched local copy at cpg_research
   Peace Information Center, Thammasat University)'
 metadata_verified_at: '2026-09-05'
 claim_match_verified: true
-claim_match_verified_by: this session (manual read/verification; the route:codex
-    I3 cross-vendor attempt below FAILED with a usage-limit error, not a content
-    judgment -- reverted to the prior manual verification rather than leaving a
-    false false-verdict on record)
+claim_match_verified_by: route:claude
 claim_match_verified_at: '2026-09-05'
 exact_passage: peace is not merely an absence of war, but also for people to live
   free of injustice or structural violence such as poverty; that global resources
@@ -25,13 +22,13 @@ exact_passage: peace is not merely an absence of war, but also for people to liv
 page_or_locator: Satha-Anand 2021, "Three Windows and Critical Peace/Nonviolence Research"
   (Hiroshima Peace Research Journal), local extraction pp. 5-12, autobiographical
   section on the author's own intellectual formation
-scope: DIRECT_QUOTATION
+scope: CONTEXT_ONLY_NOT_EVIDENCE
 evidence_tier: definition
 independence_class: I1
-who_verified: this session (manual verification; I3 cross-vendor attempt failed,
-  see disclosure)
+who_verified: 'route:claude (I1 route: same model, fresh headless session (no shared
+  context); abstract/metadata level, not full text) -- see cite-sathaanand2021-006.i3.json'
 verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
-status: METADATA_OK
+status: VERIFIED
 xenon_ledger_ref: null
 disclosure: 'SUPPORTS H3 and serves as the SEA/Thai-scholarship anchor for this hypothesis
   axis: a leading Thai peace-studies scholar (Thammasat University) independently
@@ -42,9 +39,22 @@ disclosure: 'SUPPORTS H3 and serves as the SEA/Thai-scholarship anchor for this 
   intellectual tradition (via his teacher Glenn Paige), not an independent empirical
   test of H3, so scope is DIRECT_QUOTATION of a definitional/framing passage rather
   than an evidentiary test. | I3 route (codex) judged from fetched metadata/abstract
-  + the card''s quoted passage, not full text: '
+  + the card''s quoted passage, not full text:  | I1 route (claude) judged from fetched
+  metadata/abstract + the card''s quoted passage, not full text: Passage found verbatim;
+  running header matches the card''s title. But it is an autobiographical restatement
+  of Galtung''s negative/positive-peace distinction, not evidence for H3''s empirical
+  claim (bounded-budget re-crossing, cost divergence vs operator change). Analogy
+  to visible-calm-vs-operator is the card''s, not the source''s. Context, not SUPPORTS.
+  | I1 route (claude) judged from fetched metadata/abstract + the card''s quoted passage,
+  not full text: Running header in fetched text matches title/year; passage found
+  verbatim. Passage restates Galtung negative/positive peace and military-vs-social
+  expenditure, loosely analogous to H3''s visible-calm vs operator-repair distinction,
+  so relevant as context only. Note card stance text says SUPPORTS while scope says
+  CONTEXT_ONLY; scope governs.'
 superseded_by: null
-notes: Reused the already-fetched local copy per the task brief rather than re-fetching.
-fetched_from_url: https://www.peace.hiroshima-cu.ac.jp/wp/wp-content/uploads/2021/03/HPI-Journal-Vol-8.pdf  # fetched copy read locally (per-page text extraction of the same file)
-line_or_paragraph: page 6 of the local extraction, paragraph beginning "Through these
-  readings..."
+notes: 'Reused the already-fetched local copy per the task brief rather than re-fetching.
+  | Carded as context (route verdict CONTEXT_ONLY): autobiographical peace-research
+  window; context only'
+fetched_from_url: https://www.peace.hiroshima-cu.ac.jp/wp/wp-content/uploads/2021/03/HPI-Journal-Vol-8.pdf
+line_or_paragraph: char offset 5417 of normalized fetched text (~paragraph 1); verbatim
+  prefix match

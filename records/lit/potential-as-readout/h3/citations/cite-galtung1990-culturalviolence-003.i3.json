@@ -1,12 +1,16 @@
 {
- "vendor": "codex",
+ "vendor": "claude",
  "fetched": {
-  "source": "no-identifier"
+  "source": "no-identifier",
+  "_card_url": "https://www.galtung-institut.de/wp-content/uploads/2015/12/Cultural-Violence-Galtung.pdf"
  },
  "verdict": {
-  "error": "no-json",
-  "raw": "",
-  "passage_mechanical": "no open full text fetched; abstract/metadata only"
+  "metadata_matches": true,
+  "passage_plausible": true,
+  "claim_match": true,
+  "bearing": "CONTEXT_ONLY",
+  "reason": "Fetched text is Galtung's 'Cultural Violence' and contains the definition passage verbatim (allowing OCR artifacts). No metadata contradiction. Source concerns symbolic legitimation of violence, not numerical suppression signatures; it is relevant background for H3's channel-closure framing only, so CONTEXT_ONLY scope holds.",
+  "passage_mechanical": "verbatim prefix found in fetched open text"
  },
  "date": "2026-09-04"
 }

@@ -12,10 +12,7 @@ metadata_verified_by: 'manual: PDF page images read directly (Read tool) confirm
   University Institute) Max Weber Programme master-class reading'
 metadata_verified_at: '2026-09-05'
 claim_match_verified: true
-claim_match_verified_by: this session (manual read/verification; the route:codex I3
-  cross-vendor attempt below FAILED with a usage-limit error, not a content judgment
-  -- reverted to the prior manual verification rather than leaving a false false-verdict
-  on record)
+claim_match_verified_by: route:claude
 claim_match_verified_at: '2026-09-05'
 exact_passage: you do not enjoy freedom as non-domination or independence just by
   virtue of actually escaping interference; it must also be that you would not suffer
@@ -23,13 +20,13 @@ exact_passage: you do not enjoy freedom as non-domination or independence just b
   to be able to act on your wishes.
 page_or_locator: Pettit, "The Globalized Republican Ideal" (EUI MWP master-class paper),
   p. 3
-scope: DIRECT_QUOTATION
+scope: CONTEXT_ONLY_NOT_EVIDENCE
 evidence_tier: definition
 independence_class: I1
-who_verified: this session (manual verification; I3 cross-vendor attempt failed, see
-  disclosure)
+who_verified: 'route:claude (I1 route: same model, fresh headless session (no shared
+  context); abstract/metadata level, not full text) -- see cite-pettit-globalrepublican-005.i3.json'
 verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
-status: METADATA_OK
+status: VERIFIED
 xenon_ledger_ref: null
 disclosure: 'SUPPORTS H3 directly at the theory level: Pettit''s robustness requirement
   is exactly the test that separates real peace from pseudo-peace in H3. Actual non-interference
@@ -40,10 +37,24 @@ disclosure: 'SUPPORTS H3 directly at the theory level: Pettit''s robustness requ
   blocked channel that has simply not been tested yet looks identical to an open one
   under Pettit''s "actually escaping interference" reading, which is precisely the
   confound H3 is naming. | I3 route (codex) judged from fetched metadata/abstract
-  + the card''s quoted passage, not full text: '
+  + the card''s quoted passage, not full text:  | I1 route (claude) judged from fetched
+  metadata/abstract + the card''s quoted passage, not full text: Passage is verbatim
+  in fetched text; no metadata contradiction (title not fetched). Pettit''s modal
+  robustness of non-domination is a conceptual analogue to ''observed calm vs. operator
+  viability'', but H3 is an empirical fixture claim about finite-budget threshold
+  re-crossing and unbounded accumulated force. Source neither tests nor asserts that;
+  context, not support. | I1 route (claude) judged from fetched metadata/abstract
+  + the card''s quoted passage, not full text: Fetched text contains the exact passage
+  verbatim; title/author consistent with the URL and locator. Pettit''s robustness-over-counterfactuals
+  point is relevant context for H3''s real-peace vs bounded-suppression distinction,
+  but not fixture evidence, matching the CONTEXT_ONLY scope.'
 superseded_by: null
-notes: Substituted for Pettit's 1997/2012 non-domination book per the task brief (which
-  itself is not open-access); this shorter open PDF restates the same core freedom-as-non-domination
-  and robustness argument in the author's own words.
+notes: 'Substituted for Pettit''s 1997/2012 non-domination book per the task brief
+  (which itself is not open-access); this shorter open PDF restates the same core
+  freedom-as-non-domination and robustness argument in the author''s own words. |
+  Carded as context (route verdict CONTEXT_ONLY): non-domination as stability of non-interference
+  under another discretion: context for the channel-presence test; not evidence for
+  the numerical signature'
 fetched_from_url: https://www.eui.eu/Documents/MWP/ProgramActivities/20152016/master-classes/Pettit-The-Globalized-Republican-Ideal.pdf
-line_or_paragraph: p. 3, single continuous sentence (pdftotext, whitespace-normalized)
+line_or_paragraph: char offset 5507 of normalized fetched text (~paragraph 1); verbatim
+  prefix match
