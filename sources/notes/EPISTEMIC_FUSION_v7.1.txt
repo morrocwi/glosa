@@ -1,0 +1,637 @@
+                                                                                                   EPISTEMIC NOTE | HUMAN-AI READOUT PROGRAMME
+
+                   Epistemic Fusion or Epistemic Tunnel
+   A Phenomenologically Anchored, History-Shaped Architecture of Human-AI Semantic Coupling, Retention, and Epistemic
+                                                       Direction
+                                      A Standalone Epistemic Note from the Human-AI Readout Programme
+                                  Yaoharee Lahtee | Bangkok, Thailand | Epistemic Note v7.1 - Genesis-aligned
+
+  Status. K0 conceptual architecture. This note synthesizes only the author's prior Human-AI / Readout work. It is not an
+  empirical law, not an independent validation of that programme, and not a claim of literal nuclear fusion. The term 'fusion' is
+  a structural metaphor for productive coupling between distinct bounded systems.
+
+
+
+Core Claim
+Central proposition. Human-AI dialogue is not merely information exchange. The architecture begins from a phenomenological
+floor: meanings appear as context- and time-situated; meanings depend on relations; dialogue can change what becomes
+accessible next; repeated traversal can make a route easier to re-enter; and exposure does not guarantee retention. The formal
+architecture introduced later is an attempt to preserve these distinctions without identifying the phenomena with any one model.
+Within a bounded session, Human and AI-under-current-context can recursively alter one another's accessible semantic routes
+and accumulate reciprocal momentum; that amplification is epistemically neutral. Across the session boundary, only the human
+is permitted a retained update in the present scope. Independent resistance determines whether candidate structures remain
+corrigible. The decisive question is therefore what becomes easier to think, what persists, and what can still be corrected.
+
+Claim Architecture and Epistemic Typing
+The note intentionally makes strong conceptual claims, but each formal object is typed. Strength of formulation is not treated as
+empirical validation.
+Object                                              Status in this note                                 What the status permits
+Knowledge-like candidate K_like                     Definition                                          Default starting status of AI output; not a truth verdict.
+D-R-A necessity                                     Derived architectural necessity                     Necessary within the stated definition of durable human
+                                                                                                        epistemic expansion.
+m^H, m^AI                                           Open finite diagnostics                             History-sensitive accessibility variables; removable if
+                                                                                                        path-history adds no predictive/explanatory value.
+chi_recip[s,L]                                      Finite reciprocal-lineage diagnostic                Counts lineage-linked, readout-
+                                                                                                        distinguishable reciprocal descendants
+                                                                                                        over a frozen finite horizon using
+                                                                                                        declared lineage and readout rules.
+eta_s                                               Proposed retention gate                             Represents whether conversational residue persists in the
+                                                                                                        human beyond the session.
+B_s A_s Human-LoRA term                             Functional cross-level factorization                Models selective retained adaptation; not a claim of
+                                                                                                        literal neural LoRA implementation.
+G_s - T_s                                           Directional heuristic                               Separates productive expansion pressure from tunnel
+                                                                                                        pressure; not a validated universal scale.
+Minimal semantic readout a^A_{u,τ}                  Domain definition / phenomenological bridge         A task-relative meaning-bearing readout; the default
+                                                                                                        entry unit may be a lived word, phrase, or concept label.
+                                                                                                        Not a literal chemical atom.
+Semantic relation / bond B^A_{ij,τ}                 Graph relation + optional structural analogy        A context-dependent weighted/directed relation.
+                                                                                                        Chemical bond labels are interpretive compression, not
+                                                                                                        load-bearing formalism.
+Semantic configuration M^A_τ                        Domain-level graph composition                      A finite configuration of meaning-bearing nodes and
+                                                                                                        relations; molecule language is optional shorthand.
+Human temporalization T_H                           Open cross-session operator                         Represents future human semantic change under retained
+                                                                                                        dialogue, world correction, and other experience; AI is
+                                                                                                        not the sole cause.
+Phenomenological floor P1-P5                        Pre-formal descriptive anchor                       States what the architecture must explain before any
+                                                                                                        graph, chemistry, LoRA, or dynamical metaphor is
+                                                                                                        introduced.
+Semantic graph G^A_τ                                Load-bearing structural core                        Nodes + relations + context + history-dependent
+                                                                                                        accessibility. The theory should survive removal of
+                                                                                                        chemistry vocabulary.
+
+
+1. The Question
+The central design question is: under what architecture can repeated human-AI dialogue enlarge a human being's reachable,
+discriminable, corrigible space of inquiry rather than merely accelerate output, stabilize a preferred frame, or transfer epistemic
+work to the system?
+
+
+                                               Yaoharee Lahtee | 5 September 2026 | K0 conceptual architecture
+                                                                                                  EPISTEMIC NOTE | HUMAN-AI READOUT PROGRAMME
+Across the internal programme, the answer has converged on a role-separated architecture. Earlier work treated AI as a
+mediating layer that can expose alternatives, hidden assumptions, and revision pressure, but cannot certify truth [1]. The
+Readout Condition then required existence, attribution, and disclosure for epistemically weight-bearing distinctions [2]. The
+hypothesis-generation papers formalized semantic mobility, readout-distinguishable alternatives, and recursive human-AI
+branching while preserving human problem ownership [3,4]. The candidate-forgetting work added a social-epistemic danger:
+outputs can look like knowledge before they have acquired the status of knowledge [5]. Human-LoRA supplied selective
+retention across time [6], while the translation/context work bounded AI access to recorded interpretations rather than event
+reality [7]. The Human Learning architecture then made the lived word a unit of inquiry rather than a transparent dictionary
+item [8], and the Context Wisdom programme treated meaning as context-sensitive and interpretation-bounded [9]. The present
+note compresses these lines into one micro-to-macro architecture.
+
+2. Internal Literature Synthesis: What Each Prior Work Contributes
+ Prior work                                          Retained result                                        Role in this note
+ When AI Expands Human Potential [1]                 AI can widen alternatives and reflective friction,     Expansion vs closure/corrigibility loop.
+                                                     but expansion requires corrigibility, route-
+                                                     openness, and world-answerability.
+
+ The Readout Condition [2]                           Claim-level distinctions require provenance,           Provenance gate and no self-certification.
+                                                     correct attribution, and visible augmentation.
+
+ From Problem to Hypothesis [3]                      Imagination is bounded, history-shaped semantic        Difference, semantic basin, restructuring.
+                                                     mobility; accessibility, novelty, warrant, and truth
+                                                     must not collapse.
+
+ Epistemic Chain Reaction [4]                        Human retains problem/question; AI recursively         Conversational multiplication and controlled
+                                                     decomposes, transports, branches, critiques, and       expansion.
+                                                     yields readout-distinguishable candidates.
+
+ Candidate Forgetting [5]                            Knowledge-like form can be mistaken for                Candidate contract and forgetting term.
+                                                     validated status; provisional outputs can harden
+                                                     prematurely.
+
+ Experience Is the Human LoRA [6]                    Retained experience can change future interpretive     Human return: the reader at t+1 can differ from the
+                                                     dispositions without being identical to a parameter    reader at t.
+                                                     update.
+
+ AI, Translation, and Event-Specific Context [7]     AI reorganizes recorded interpretations and            Language/translation as mediation, not direct
+                                                     context access; it does not reconstruct event          world access.
+                                                     reality.
+ Human Learning as Epistemic Architecture [8]        The lived word is a unit of inquiry loaded by          Micro-foundation for semantic atoms and
+                                                     experience, emotion, social origin, value, goal,       meaning neighborhoods.
+                                                     constraint, evidence, and revisability.
+ Context Wisdom / Translation of Reality [9]         Meaning emerges through context and                    Context-indexed valence, bond governance, and
+                                                     interpretation remains bounded; language               temporal meaning change.
+                                                     structures access rather than containing fixed
+                                                     truth.
+
+
+3. Why Dialogue Matters: Language as Epistemic Transport
+The mechanism is not 'AI gives more information.' The internal programme treats language as part of epistemic mediation:
+articulation makes distinctions nameable, comparable, transportable, and revisable. A human may begin with tacit experience,
+intuition, an unresolved residual, or a partially formed problem. Language externalizes only a bounded readout of that state, but
+once articulated it becomes available for transformation.
+                                                              Z_H,t ⟶(L_H) Q_H,t
+Here Z_H,t is the human's retained state - experience, assumptions, stakes, partial knowledge, unresolved difference - and L_H
+is linguistic articulation. The question Q_H,t is not identical to the whole human state; it is a bounded readout of it.
+AI then acts as a low-cost transport and perturbation system. It can decompose the question, rename distinctions, search
+analogies, reverse causal direction, generate counterexamples, bridge domains, and construct rival explanations.
+                                                   Q_H,t ⟶(T_AI) {Q_i,t+1, K_like_i,t}
+The crucial object is not the polished sentence but the set of new distinctions that become reachable. K_like denotes knowledge-
+like candidates: outputs with the form of explanation, argument, synthesis, or hypothesis, but without automatic validated status.
+                                               Yaoharee Lahtee | 5 September 2026 | K0 conceptual architecture
+                                                                                        EPISTEMIC NOTE | HUMAN-AI READOUT PROGRAMME
+4. Phenomenological Ground: What the Architecture Is Trying to Explain
+The architecture does not begin from the claim that meaning is atomic, molecular, chemical, computational, or low-rank. It
+begins from a smaller phenomenological set: words and expressions appear with context-dependent meanings; meanings occur
+through relations; repeated relations can become easier to re-enter; dialogue can reorganize the horizon from which a later
+question is generated; and some reorganizations persist while others disappear. Formalism comes after these appearances and
+remains answerable to them.
+                    Phenomenology → Structural architecture → Formal / metaphorical compression
+This ordering is methodological. Phenomenology anchors what must be explained; structural architecture exposes relations
+among the distinctions; metaphor compresses the structure for thought and communication. None is permitted to substitute for
+the others.
+4.1 P1 - Meaning Is Temporally Situated
+The same surface expression can appear differently to the same person after experience. The word has not changed, but the
+horizon from which it is interpreted may have changed.
+                 surface(u, τ1) = surface(u, τ2) does not imply Meaning_H(u, τ1) = Meaning_H(u, τ2)
+4.2 P2 - Meaning Is Relational
+Meaning is not exhausted by isolated lexical content. What an expression does in inquiry depends partly on the relations
+through which it is read - for example freedom-with-choice, freedom-with-responsibility, or freedom-under-oppression.
+                 Meaning(u_i) is partly conditioned by Relations(u_i, u_j, ... | reader, context, question)
+4.3 P3 - Conversation Changes What Becomes Thinkable Next
+A response can make a distinction, analogy, objection, or route available that was not salient in the previous turn. The next
+question can therefore arise from a changed field of accessibility even before any durable learning is established.
+                                 Q_t → Response_t → AccessibleRoutes_{t+1} → Q_{t+1}
+4.4 P4 - Repeated Traversal Can Create Inclination
+When a conversational route is repeatedly traversed, it can become easier to re-enter. This is the phenomenological anchor of
+semantic momentum. It does not imply that the route is warranted or true.
+                               Repeated traversal → easier re-entry (not → greater warrant)
+4.5 P5 - Exposure Does Not Imply Retention
+Some interactions pass through with little durable consequence; others alter later interpretation, questioning, or action. Any
+architecture of AI-assisted human expansion must therefore separate exposure from retained change.
+                                             Exposure ≠ Retention ≠ Improvement
+4.6 Graceful Degradation Principle
+A robust concept paper should survive loss of any non-essential metaphor. If atom, bond, molecule, catalyst, fusion, LoRA, or
+nuclear-reaction vocabulary is removed, the load-bearing architecture should remain: meaning-bearing readouts, relations,
+context, history-dependent accessibility, reciprocal coupling, retention, provenance, and resistance. This is conceptual
+robustness by graceful degradation.
+                              Reduce machinery; preserve phenomena; preserve architecture.
+
+5. Semantic Micro-Foundation: Contextual Semantic Atoms, Bonds, and Molecules
+The phenomenological floor now permits a narrower formal question: what is the smallest task-relative semantic readout that
+must be tracked for the present inquiry? The architecture calls such a unit a semantic atom only as optional shorthand. It is not
+universally a word. A lived word is the default observable entry unit, but a phrase, construction, or concept label may be the
+minimal readout-bearing unit when the task requires it.
+                                      a^A_{u,τ} := R_A( u | H^A_τ, C_τ, Q_τ, P_τ )
+Here u is the minimal unit selected for the declared task; A is the reader; H^A_τ is the reader's current semantic horizon; C is
+context; Q is the active question; and P is provenance. R_A is a bounded readout, not a claim that meaning is stored as a
+substance inside u.
+                                       Yaoharee Lahtee | 5 September 2026 | K0 conceptual architecture
+                                                                                        EPISTEMIC NOTE | HUMAN-AI READOUT PROGRAMME
+           Same surface unit can yield different semantic readouts: u = u but a^A_{u,τ1} ≠ a^B_{u,τ2}
+5.1 Semantic Graph and Contextual Bondability
+The load-bearing formal core is a reader-relative semantic graph, not chemistry. Let nodes be currently accessible semantic
+readouts and edges be active relations under the declared context and question. 'Valence' is retained only as optional shorthand
+for context-conditioned bondability.
+                                         G^A_τ = (A_τ, E_τ, W_τ, C_τ, Q_τ, P_τ)
+                                     Bondable^A_τ(i) := { j : W^A_{ij,τ}(C,Q) > b0 }
+A_τ is the current node set, E_τ the active relation set, and W_τ the relation weights or directions. Bondability is context-
+relative and task-relative; a larger neighborhood means more accessible relations, not greater truth.
+5.2 Semantic Bonds as Optional Interpretive Compression
+A semantic bond is simply an active graph relation with enough weight to matter for the current interpretation, hypothesis, or
+question. Chemical labels are retained only where they compress graph properties that are independently stated.
+   Covalent-like: a strongly mutual relation in which removing either direction materially weakens the carried distinction.
+    Graphically, W_ij > 0 and W_ji > 0 with joint constitutive load.
+   Ionic-like: a strongly asymmetric relation in which framing, prestige, or semantic influence flows mainly in one direction.
+    Graphically, W_ij >> W_ji.
+   Weak/contextual: a relation that is live under one context but decays or disappears under another. Graphically, W_ij(C1) >
+    b0 while W_ij(C2) ≈ 0.
+                     B^A_{ij,τ} is an interpretation of W^A_{ij,τ}; the graph relation is primary.
+These labels are removable structural analogies. If future operationalization cannot distinguish them beyond ordinary graph-
+edge properties, the chemistry vocabulary should be dropped while retaining the underlying relational graph.
+5.3 Semantic Configurations (Molecule as Shorthand)
+A concept, hypothesis, explanation, or local worldview can be represented as a finite semantic configuration: a subgraph of
+meaning-bearing nodes and active relations under a reader and context. 'Molecule' is a compact metaphor for this relational
+whole, not an additional ontology.
+                                M^A_τ := G^A_τ[S_τ] for a task-relevant subgraph S_τ
+Two statements may contain the same words but instantiate different semantic molecules because their bond topology, context,
+provenance, or reader-relative meaning differs. Conversely, differently worded statements may collapse into one readout-
+equivalent molecule if they license the same accessible distinctions and consequences for the current inquiry.
+5.4 Human Temporalization: The Same Word Can Become a Different Future Atom
+Humans are temporal knowers. Retained experience can alter not only beliefs at the sentence level but the future bondability
+and salience of the words through which later situations are read. The present note therefore adds a human temporalization
+operator:
+                H^H_{s+1,0} = T_H( H^H_{s,0}, η_s ΔM^H_s, δ^world_{s:s+1}, X^other_{s:s+1} )
+T_H is a cross-session human temporalization operator. Retained dialogue is only one input. World correction, other people,
+later reading, memory reconstruction, bodily experience, and intervening events may also reshape the human semantic horizon.
+The architecture therefore does not attribute all later change to AI.
+                    Semantic momentum → retention gate → temporalized human semantic structure
+The AI side remains asymmetrical by scope. Its contextual semantic states can reorganize within session, but the present model
+does not carry AI momentum or AI semantic atoms across the session boundary:
+                  m^{AI}_{s+1,0} = 0 and no cross-session AI semantic-atom persistence is modeled
+5.5 AI as Semantic Transport and Optional Catalytic Metaphor
+AI's distinctive leverage can now be stated at the atom-bond level. Translation, analogy, decomposition, counterexample, and
+cross-domain search can make previously costly semantic transitions easier to access. Rather than importing literal activation
+energy, the proposal reuses the existing switching-cost term from the semantic-mobility architecture:
+         AI assistance may lower effective semantic switching cost: c_{A,t,Q}(e | AI) < c_{A,t,Q}(e | no-AI)
+                                       Yaoharee Lahtee | 5 September 2026 | K0 conceptual architecture
+                                                                                        EPISTEMIC NOTE | HUMAN-AI READOUT PROGRAMME
+Lower switching cost increases access, not warrant. AI can make a bond easy to form while the bond remains false, misleading,
+or epistemically unsupported. Catalysis therefore belongs to accessibility; resistance and provenance remain responsible for
+epistemic appraisal.
+                                                   Catalysis ≠ Warrant ≠ Truth
+5.6 From Semantic Atom to Epistemic Chain Reaction
+The chain-reaction metaphor now has an explicit micro-to-macro pathway. A human utterance exports a semantic molecule; AI
+perturbs, decomposes, or recombines its bonds; the human receives candidate molecules; some relations are rejected, some
+remain transient, and some are retained. Retained reorganization then changes the bondability of later human questions, which
+can seed further AI branching.
+    word-state → semantic atom → bond → semantic molecule → reciprocal reaction → momentum → retention →
+                                          temporalized human reader
+               M^H_{s,t} → M^{AI}_{s,t} → {M^cand_1,...,M^cand_n} → η_s ΔM^H_s → M^H_{s+1,0}
+This micro-level graph supplies a mechanism for the existing epistemic multiplication factor k_epi from the earlier chain-
+reaction work. No independent k_sem law is required: bond formation, bond breaking, and recombination are proposed
+mechanisms by which new live readout-distinguishable child classes may arise.
+           Semantic recombination is a micro-level mechanism under k_epi, not a second multiplication law.
+5.7 Context Wisdom as Semantic-Bond Governance
+The architecture also sharpens the earlier Context Wisdom programme. Context Wisdom is not possession of many meanings
+and not vocabulary size. It is the capacity to recognize what a semantic atom is carrying here and now, which bonds are active,
+where those bonds came from, which are context-dependent, which can survive resistance, and when a bond should be
+loosened, broken, or reorganized.
+           Context Wisdom = Governance(Readouts, Relations, Context, Time, Provenance, Resistance)
+On this view, wisdom is partly bond governance: the disciplined ability to prevent inherited, prestigious, fluent, or repeatedly
+traversed relations from becoming epistemically load-bearing without sufficient resistance.
+
+6. The Conversational Epistemic Reaction
+A conversation becomes an epistemic reaction when one turn changes the conditions under which the next turn is generated.
+The relevant unit is therefore not a single prompt-response pair but a session-indexed sequence. Let s denote the conversation
+session and t a turn within that session.
+                                    H_{s,t} → AI_{s,t} → H_{s,t+1} → AI_{s,t+1} → …
+Each side reads a bounded representation of the other side's previous output. Repeated traversal of related semantic routes can
+make those routes easier to re-enter at the next turn. This is the point at which dialogue becomes history-shaped rather than
+memoryless.
+                                      m_{t+1}(e) = λ m_t(e) + 1[e_t = e], 0 ≤ λ < 1
+This inherits the semantic-momentum idea from the hypothesis-generation work: momentum is a finite history score for
+recently traversed semantic directions. It describes ease of re-entry, not warrant, truth, or durable learning. The Human-AI case
+requires two coupled momentum states, one on each side of the conversation.
+6.1 Expansion reaction
+  Q_t[verify] → AI branching → K_like → distinct classes → resistance → retained correction → richer Q_t+1
+If each retained frontier item can seed more than one new live, readout-distinguishable, minimally grounded child route, the
+process behaves like a controlled epistemic chain reaction. The multiplication is productive only after redundancy and
+unsupported candidates are pruned; raw output count is not the relevant quantity.
+6.2 Tunnel reaction
+   M_t → Q_t[confirm] → AI → K_like → candidate forgetting → assumed knowledge → M_t+1[more-rigid]
+The same recursion can run in the opposite direction. Confirmation-oriented prompts preferentially solicit support for the
+current frame; fluent candidates are assimilated as if already validated; repeated use increases attraction to the same semantic
+                                       Yaoharee Lahtee | 5 September 2026 | K0 conceptual architecture
+                                                                                         EPISTEMIC NOTE | HUMAN-AI READOUT PROGRAMME
+basin; and later questions are generated from a more rigid model. The system can therefore produce more text, more confidence,
+and less human epistemic range at the same time.
+6.3 Reciprocal Semantic Momentum Inside the Session
+Within a session, the human and the AI-under-current-context are mutually perturbing readers because each turn becomes part
+of the other side's next input and of the ordered conversational lineage. Semantic momentum is therefore retained as a finite
+history score on each side; reciprocal coupling itself is represented by the session-domain stepper, not by assumed cross-
+coupling coefficients.
+                                   m^H[s,n+1](e) = λ_H m^H[s,n](e) + 1[e^H[s,n] = e]
+                                 m^AI[s,n+1](e) = λ_AI m^AI[s,n](e) + 1[e^AI[s,n] = e]
+Here m^H and m^AI are finite history readouts for recently traversed semantic directions. They describe ease of re-entry, not
+warrant or truth. The two histories become coupled because the next domain state is stepped using the current Human output,
+AI output, context, and shared ordered lineage.
+To remain native to Readout Genesis, let Z_dlg[s,n] be the declared finite dialogue-domain state at turn n, containing the
+relevant Human readout, AI-under-current-session readout, active semantic relations, context, and lineage.
+                         Z_dlg[s,n+1] = F_dlg#(Z_dlg[s,n], u_H[s,n], u_AI[s,n], c[s,n], T[s,n])
+  This is a domain-level stepper under the Genesis finite-transition architecture, not a new root law. For a non-
+  empty seed set Sigma[s,n] of retained/readout-visible distinctions, define D_recip[s,n,L] as the lineage-linked
+  descendants that remain readout-distinguishable within the frozen finite horizon [n,n+L] and whose declared
+              lineage contains at least one reciprocal cross-agent return (H->AI->H or AI->H->AI).
+chi_recip[s,n,L] = |D_recip[s,n,L]| / |Sigma[s,n]|
+0 <= chi_recip[s,n,L] < 1 -> decaying lineage | chi_recip[s,n,L] = 1 -> sustained lineage | chi_recip[s,n,L] >
+                                       1 -> finite reciprocal amplification
+This diagnostic is finite, lineage-based, and readout-relative. It does not predict unbounded growth. It differs from k_epi:
+chi_recip measures reciprocal semantic descendant gain before epistemic pruning, whereas k_epi concerns retained live,
+readout-distinguishable, minimally grounded epistemic child classes after pruning.
+Coupled Dialogue Proposition [Open].
+If current-turn content is held approximately fixed, prior within-session traversal history should alter the distribution of next-
+turn semantic transitions for at least some dialogue classes. If no such history effect remains after current-state and prompt
+content are controlled, m^{AI}_{s,t} should be removed as a distinct object and the coupled model reduced accordingly.
+    Human-AI dialogue is coupled when each side's retained/read context changes the other's next accessible
+                                             semantic routes.
+The proposition is deliberately stronger than saying that prompts influence outputs. It claims a recursive dependence of later
+accessible routes on the trajectory already traversed inside the same session.
+Crucially, amplification itself is epistemically neutral. A supercritical dialogue can amplify verification, rival generation,
+defeaters, and cross-domain distinctions; or it can amplify confirmation, same-basin framing, candidate forgetting, and
+rhetorical confidence. The reaction intensity and the epistemic direction must therefore be kept separate.
+                                        Amplification ≠ Retention ≠ Warrant ≠ Truth
+6.4 The Retention Gate: A Human-LoRA Account of What Survives the Session
+The Human LoRA work supplies the persistence mechanism across the session boundary. Experience is not automatically an
+update: only selected residues may be retained, consolidated, and integrated into the dispositions through which later situations
+are interpreted and acted upon. Applied here, the AI side is deliberately restricted to session-bounded contextual momentum,
+while only the human side is permitted a durable cross-session update.
+                                    ΔΩ^H_s ≈ η_s B_s A_s,                  rank(B_s A_s) ≪ d_H
+This is a functional LoRA-inspired description: B_s A_s represents a restricted human update in a task-relevant subspace, d_H
+the wider operative organization, and η_s ∈ [0,1] the session-end human retention gate. It is not a claim that the brain literally
+implements engineering LoRA. The same session can yield pass-through, transient perturbation, or retained human adaptation.
+                                        Yaoharee Lahtee | 5 September 2026 | K0 conceptual architecture
+                                                                                         EPISTEMIC NOTE | HUMAN-AI READOUT PROGRAMME
+                                η_s ≈ 0 → Ω^H_{s+1,0} ≈ Ω^H_{s,0}                          (pass-through)
+                η_s > 0 → Ω^H_{s+1,0} = Ω^H_{s,0} + η_s ΔΩ^H_s (retained human adaptation)
+Retention is direction-neutral. A retained human update can increase corrigibility and future question quality, or stabilize
+confirmation, candidate forgetting, and semantic fixation. The AI-side momentum does not survive the session boundary in this
+model:
+                                   m^{AI}_{s+1,0} = 0          (by architectural scope definition)
+This reset is a constitutive scope boundary of the present theory. The AI-side momentum object exists only for the bounded
+session being modeled. Persistent memory, personalization, fine-tuning, external state, or cross-session agent memory are
+excluded from this object and would require a different architecture. The asymmetry is therefore intentional: reciprocal
+momentum is modeled within session, but only the human may carry a retained epistemic residue into the next session.
+                  AI carries the dialogue within the session; the human may carry its residue beyond it.
+                                        Dialogue is exposure; retention is adaptation.
+                                         Retention magnitude ≠ epistemic direction.
+
+7. The Epistemic Entry Condition: Before the First AI Response
+The programme's earlier formulations were strongest during and after interaction. A standalone design principle requires one
+additional layer: the human should establish an epistemic anchor before exposure to the first AI answer. The proposed entry
+state is:
+                                              H_0 = (P_0, M_0, U_0, E_0, Φ_0)
+ P_0 - the problem the human is trying to understand, stated in the human's own terms.
+ M_0 - the present model, explanation, or working belief before AI exposure.
+ U_0 - what remains unknown, ambiguous, or unresolved.
+ E_0 - evidence or records already available independently of the coming AI response.
+ Phi_0 - a declared change condition: what observation, argument, or result would make the human revise M_0.
+The minimum entry gate is then:
+                                          ENTRY_H→AI = H_0 ∧ V_0 ∧ C_0 ∧ R*
+where:
+    V_0 - verification intent: use AI to seek rivals, defeaters, hidden assumptions, boundary conditions, and discriminating
+     observations rather than merely support for M_0.
+ C_0 - candidate contract: before seeing the answer, accept that AI output begins as K_like, not as certified knowledge.
+ R* - precommitted resistance route: specify how an important candidate could be checked by a source, record, experiment,
+     independent critic, domain authority, or other sufficiently independent route.
+For deliberate human epistemic expansion, these are treated as entry requirements of the proposed architecture: a visible human
+baseline, verification intent, a candidate-status contract, and at least one precommitted route of resistance. They are not claimed
+to be necessary for every casual or low-stakes use of AI; they are necessary for the specific target defined here - auditable
+expansion rather than untracked influence.
+
+8. Candidate Status and the Critical Shortcut
+                                          AI(Q) = K_like,            K_like ≠ K_validated
+The candidate contract is central because form and status are different variables. A generated response may contain structure,
+citations, academic language, or an apparently coherent explanation while remaining only a provisional candidate.
+Candidate forgetting is the shortcut in which that provisional status is lost:
+                                         K_like → K_assumed                (validation bypass)
+Once this bypass occurs, the dialogue can feed its own outputs back as premises. The system then accumulates apparent support
+without a corresponding increase in independent constraint. This is why provenance and resistance are not optional decorations:
+they are what keep the generative loop from becoming self-certifying.
+
+
+                                        Yaoharee Lahtee | 5 September 2026 | K0 conceptual architecture
+                                                                                         EPISTEMIC NOTE | HUMAN-AI READOUT PROGRAMME
+9. Minimum Conditions Across the Whole Dialogue: D-R-A
+Under the present definition of durable human epistemic expansion, three conditions are non-substitutable: Difference (D),
+Resistance (R), and retained human Agency (A). This is an architectural necessity claim, not an empirical frequency claim.
+    Gate                                      Necessity                                             Failure when absent
+ Difference (D)                               The interaction must introduce at least one non-      No expansion; only reformulation of the
+                                              equivalent distinction, rival, or route beyond        existing frame.
+                                              mere paraphrase.
+
+ Resistance (R)                               Something sufficiently independent must be            Semantic explosion without epistemic
+                                              able to reject, constrain, or revise the candidate.   correction.
+
+ Retained human agency (A)                    The correction must return to the human as            System performance may improve while
+                                              increased capacity to ask, discriminate, judge,       human capability contracts.
+                                              and revise.
+
+
+Constitutive Necessity Proposition [Derived].
+Define durable human epistemic expansion as an increase in the human capacity to reach at least one non-equivalent live
+alternative, remain answerable to possible correction, and carry some correction into later inquiry. Then D > 0, R > 0, and A > 0
+are necessary.
+                                D = 0 ⇒ no new epistemic class beyond the retained frame
+                  R = 0 ⇒ no principled separation between expansion and self-confirming proliferation
+                     A = 0 ⇒ possible system gain, but no demonstrated durable human-potential gain
+The necessity is constitutive rather than empirical: it follows analytically from the stipulated target concept of durable human
+epistemic expansion. None of D, R, or A is sufficient alone, and none guarantees truth.
+                             D > 0 is necessary for expansion beyond the existing readout class.
+                                R > 0 is necessary for corrigibility and world-answerability.
+                  A > 0 is necessary for any claimed expansion of the human rather than the system alone.
+
+10. Master Direction Equation
+The full architecture separates three orthogonal questions: within-session amplification, cross-session human retention, and
+epistemic direction. Let the session reaction state be:
+                             R_s^epi = (chi_recip[s,L], η_s, Δ_s),                  where Δ_s := G_s - T_s
+Here chi_recip[s,L] describes finite reciprocal lineage amplification within the declared session horizon; η_s describes how
+much residue persists in the human; and Δ_s describes the direction of that retained pressure. These terms are deliberately not
+collapsed into a single score.
+                         Durable human direction: sign(ΔP_H(s)) = sign(η_s Δ_s), with η_s ≥ 0
+chi_recip[s,L] is not multiplied into epistemic value because a strongly amplifying reciprocal lineage can magnify either
+disciplined verification or self-confirming closure. Reaction intensity and epistemic direction are different objects.
+     η_s - human session-end retention gate: the fraction of the conversational residue that becomes durable enough to alter later
+      interpretation or questioning.
+     k_s - candidate multiplication generated during the session after retained frontier items seed further search.
+     d_s - proportion of generated candidates that are genuinely readout-distinct rather than paraphrastic duplicates.
+     v_s - maintained verification orientation during the session.
+     p_s - provenance visibility across data, source text, human assumptions, inference, and AI synthesis.
+     r_s - effective independent resistance.
+     f_s - candidate-forgetting rate.
+     a_s - agency-preserving integration quality: whether retained change remains owned, reconstructable, and usable by the
+      human rather than merely delegated to the system.
+     c_s - confirmation-seeking pressure.
+                                        Yaoharee Lahtee | 5 September 2026 | K0 conceptual architecture
+                                                                                         EPISTEMIC NOTE | HUMAN-AI READOUT PROGRAMME
+     b_s - same-basin reinforcement or semantic self-repetition.
+     o_s - epistemic outsourcing of problem-framing, questioning, evaluation, or responsibility.
+                                         G_s = g(k_s, d_s, v_s, p_s, r_s, 1-f_s, a_s)
+                                                     T_s = h(c_s, f_s, b_s, o_s)
+The functions g and h are dependency maps rather than calibrated scales. Where variables are defined on preregistered ordered
+scales, the architecture requires only finite order-preserving comparisons: for example, holding all other declared inputs fixed,
+increasing effective resistance from r1 to r2 with r2 >= r1 should not decrease G, and increasing confirmation pressure from c1
+to c2 with c2 >= c1 should not decrease T. No differential form is required.
+    Illustrative parameterizations may be multiplicative; the architecture itself does not require product-form necessity.
+              η_s > 0 and G_s > T_s → Durable Expansion | η_s > 0 and G_s < T_s → Durable Tunnel
+For retained episodes (η_s > 0), G_s = T_s is the proposed directional boundary. The separate within-session quantity
+chi_recip[s,L] characterizes finite reciprocal lineage amplification, not epistemic value. Thus chi_recip[s,L] can be high while
+ΔP_H(s) is positive, negative, or near zero. No term is yet an empirically calibrated universal scale; these equations are
+dependency maps for future testing.
+                      η_s ≈ 0, G_s > T_s → fleeting insight / no demonstrated durable expansion
+                          η_s ≈ 0, G_s < T_s → fleeting distortion / little durable contraction
+                                   η_s > 0, G_s > T_s → durable epistemic expansion
+                                      η_s > 0, G_s < T_s → durable epistemic tunnel
+The architecture therefore separates three questions that must not collapse:
+    chi_recip[s,L] : How many readout-distinguishable reciprocal descendants does the declared seed set generate
+                                         within the finite session horizon?
+                               η_s : How much of the session persists in the human afterward?
+                       sign(G_s - T_s) : In which epistemic direction does the retained change point?
+Non-Collapse Laws
+                                        Output count ≠ Readout-distinct alternatives
+                                         Semantic accessibility ≠ Epistemic warrant
+                                                      Momentum ≠ Retention
+                                         Retention magnitude ≠ Epistemic direction
+                                      System capability gain ≠ Human epistemic gain
+                                                        Amplification ≠ Truth
+
+11. The Human Return Test
+The programme's target is not a better current answer by itself. The Human Return Test is a test of retained explicit epistemic
+agency, not an exhaustive measure of all human learning. It asks what the human can reconstruct, discriminate, and question
+once the conversational context is no longer doing the work for them.
+     What did I think before the dialogue?
+     Which distinction or rival did I encounter that I did not previously retain?
+     What evidence, objection, or returned record changed my view?
+     Which live rival remains unresolved?
+     What is my next question, and why is it better formed than the previous one?
+                                                 ΔC_system > 0 ⇏ ΔP_H > 0
+If the system produces a superior answer but the human cannot reconstruct the revision, identify the remaining uncertainty, or
+generate a better next question, the interaction may have increased system capability without demonstrating expansion of
+human epistemic potential.
+                                        Yaoharee Lahtee | 5 September 2026 | K0 conceptual architecture
+                                                                                        EPISTEMIC NOTE | HUMAN-AI READOUT PROGRAMME
+12. Derived Findings from the Internal Series
+F1. Language is epistemic transport. Language does not merely report a finished thought. It makes distinctions portable
+across questions, domains, and later rounds of revision.
+F2. Dialogue is a recursive epistemic mechanism. Each side's output changes the semantic paths available to the other at the
+next turn; repeated reciprocal perturbation can therefore create within-session conversational amplification.
+F3. AI is a candidate multiplier, not a certifier. Its strongest leverage is cheap semantic transport, decomposition, analogy,
+counterexample, and branching; none confers truth-status by itself.
+F4. Output multiplicity is not epistemic multiplicity. Many sentences can collapse into one readout-equivalent class;
+verbosity is not expansion.
+F5. Question policy can reverse the direction of the same AI. Verification-oriented use exposes the model to defeat;
+confirmation-oriented use can feed the model back into itself.
+F6. Candidate forgetting is a central transition hazard. When K_like is silently upgraded to assumed knowledge, the
+validation layer is bypassed and self-reinforcement becomes easy.
+F7. World/independent resistance must remain outside the generative loop. A closed AI loop can critique itself but cannot
+thereby become an unmediated certifier.
+F8. Human potential is a return condition. Successful augmentation requires an epistemically productive residue to survive the
+session boundary in the human, because AI-side momentum is reset by definition in this architecture.
+F9. Retention is direction-neutral. Durable human change can consolidate corrective distinctions or consolidate confirmation,
+candidate forgetting, and semantic fixation; durable change alone is not evidence of improvement.
+F10. Reciprocal momentum is session-bounded. Human and AI outputs can mutually reshape semantic accessibility during a
+session, but the AI-side momentum is not carried into the next session in this model.
+F11. Reaction intensity is not epistemic direction. A high finite reciprocal-lineage gain can support either disciplined expansion
+or a supercritical tunnel. chi_recip[s,L] therefore cannot be read as warrant, truth, or human benefit.
+F12. The deepest temporal asymmetry is cross-session persistence. During a session, Human and AI can mutually reshape
+accessible semantic routes; after the boundary, the AI-side momentum is set to zero by scope, while human retained residue
+may alter the next session's starting reader.
+F13. The semantic atom is task-relative, not universally lexical. A lived word is the default entry unit, but the minimal meaning-
+bearing readout may be a phrase, construction, or concept label depending on the question and reader.
+F14. Semantic bondability is contextual and graph-relative. Effective relation neighborhoods change with question, history,
+social frame, retained experience, and reader; connectivity is not warrant.
+F15. Human temporalization can alter future semantic accessibility. Retained dialogue can contribute to later changes, but world
+events and other experiences remain co-determining inputs.
+F16. AI catalysis acts on accessibility. AI can lower the effective switching cost between semantic regions through translation,
+analogy, decomposition, and cross-domain bridging; easier access does not establish warrant.
+F17. Concepts and hypotheses are relational configurations. Their working identity depends on graph structure and accessible
+consequences, not merely lexical novelty; molecule language is optional shorthand for this structure.
+F18. Micro-level semantic recombination and session-level reciprocal lineage gain are distinct. Semantic recombination
+proposes a mechanism for generating new structures; chi_recip[s,L] measures lineage-traced reciprocal descendants before
+epistemic pruning; k_epi remains the post-pruning epistemic multiplication concept. None is a truth score.
+F19. Context Wisdom is semantic-bond governance. Wisdom includes the capacity to inspect, test, loosen, preserve, or
+reorganize meaning relations under changing context, time, provenance, and resistance.
+F20. Phenomenology is the load-bearing floor. If chemistry, LoRA, fusion, or dynamical metaphors are removed, the
+architecture should still preserve the phenomena of temporal meaning, relational meaning, history-shaped accessibility,
+selective retention, and corrigibility.
+
+13. Practical Protocol: How to Enter and Use an AI Conversation
+1. Anchor before AI. Write P_0, M_0, U_0, E_0, and Phi_0 before reading the first answer when the inquiry matters.
+2. Ask to verify, not to confirm. Request serious rivals, failure conditions, hidden assumptions, counterexamples, and
+observations that would discriminate alternatives.
+
+                                       Yaoharee Lahtee | 5 September 2026 | K0 conceptual architecture
+                                                                                        EPISTEMIC NOTE | HUMAN-AI READOUT PROGRAMME
+3. Keep AI output typed. Default label: knowledge-like candidate. Do not let formatting, confidence, or fluency silently
+change epistemic status.
+4. Force real difference. Ask whether new outputs are genuinely non-equivalent or merely rephrasings of the same
+consequence.
+5. Preserve provenance. Keep visible what came from source records, human assumptions, AI synthesis, inference, and later
+augmentation.
+6. Precommit resistance. Identify at least one route able to say no before a candidate becomes load-bearing.
+7. Manage reciprocal momentum. Treat repetition as a causal design variable, not neutral conversation history. If both sides
+repeatedly traverse one semantic basin, deliberately inject a rival formulation, independent record, explicit falsifier, or fresh-
+session reset before further amplification.
+8. Check the human retention gate. Do not assume that exposure produced learning. Ask what distinction, evidence, or revision
+the human can still reconstruct without replaying the AI transcript.
+9. Audit the direction of retention. A durable update can still be harmful if it reinforces confirmation, same-basin attraction,
+candidate forgetting, or outsourcing. Retention must be evaluated by direction, not magnitude alone.
+10. Audit semantic bonds, not only sentences. Ask which words or concepts have become newly linked, whether the linkage is
+symmetric or prestige-driven, whether it survives context removal, and what evidence could break the bond.
+11. Alternate expansion and contraction. Expand broadly during search; contract aggressively during appraisal, decision,
+publication, or high-stakes use.
+
+14. Removal and Falsification Conditions
+A conceptual architecture should lose components when those components cease to do explanatory work. The following are
+explicit removal conditions:
+   Remove m^{AI}_{s,t} as a distinct object if within-session path history adds no effect on next-turn semantic transitions
+    once current prompt/content state is controlled.
+   Remove m^H_{s,t} as a distinct object if human path-history effects disappear once current semantic state, salience, and
+    task variables are controlled.
+   Abandon or narrow the Human-LoRA bridge if retained conversational residues do not predict later selective changes in
+    questioning, interpretation, or action beyond ordinary short-lived priming.
+   Drop chi_recip[s,L] as a useful diagnostic if lineage-linked reciprocal descendants cannot be identified reproducibly under
+    frozen reader, context, horizon, provenance, and readout-distinguishability rules, or if the ratio adds no information beyond
+    ordinary turn count.
+   Weaken the readout-distinctness requirement if raw candidate count predicts useful discovery just as well after redundancy
+    and accessible consequence are controlled.
+   Revise the D-R-A necessity claim if the target definition of durable human epistemic expansion is changed; under the
+    present definition, a counterexample would require expansion without new distinction, corrigibility, or retained human
+    change.
+   Drop the atom vocabulary if task-relative minimal semantic readouts add no explanatory value beyond ordinary node
+    notation; retain the underlying readout graph if it still does explanatory work.
+   Drop covalent-like, ionic-like, and weak/contextual labels if they add no operational value beyond generic
+    weighted/directed/context-sensitive graph edges; the graph core should remain intact.
+   Narrow human temporalization if later semantic change is fully explained by current context and intervening world/other-
+    person inputs without any retained contribution from the prior dialogue.
+
+15. Claim Boundaries
+   The phenomenological floor is descriptive, not infallible first-person proof. It identifies recurring appearances the
+    architecture is designed to explain; empirical work may refine their scope, frequency, or mechanism.
+   The semantic graph is load-bearing; atom, bond, molecule, catalyst, fusion, and chain-reaction terms are optional
+    interpretive compression. The theory is intended to survive their removal.
+   Atom, valence, bond, molecule, catalysis, fusion, and chain-reaction language are structural analogies layered over a
+    graph/readout core. No claim is made that meaning is chemical substance, that semantic relations are physical bonds, or
+    that conversational change obeys chemical kinetics.
+   The entry gate, D-R-A necessity proposition, coupled dynamics, retention bridge, and directional equations are conceptual
+    architecture with explicit typing; none is presented as an already validated universal psychological law.
+
+                                       Yaoharee Lahtee | 5 September 2026 | K0 conceptual architecture
+                                                                                                                EPISTEMIC NOTE | HUMAN-AI READOUT PROGRAMME
+     The LoRA equation is a functional retention analogy for selective conversational adaptation, not a claim that human brains
+      literally implement the engineering LoRA algorithm.
+     The coupled dynamics and chi_recip[s,L] classification are deliberately strong finite formal proposals. chi_recip[s,L] is
+      defined only on a frozen finite session horizon with declared lineage and readout rules; chi_recip[s,L] > 1 means finite
+      reciprocal descendant gain, not physical instability or unbounded growth.
+     AI semantic momentum in this note is contextual and session-bounded. It does not mean that the base model weights are
+      updated by the conversation, and the model explicitly sets m^{AI}_{s+1,0}=0 unless a separate persistent-memory
+      mechanism is introduced.
+     The note does not claim that verification-oriented questioning eliminates bias or guarantees truth.
+     Knowledge-like candidates may later become well warranted; the label marks starting status, not permanent inferiority.
+     Independent resistance can itself be partial, noisy, or fallible; the requirement is corrigibility, not imagined access to an
+      infallible oracle.
+     AI autonomy is not treated as intrinsically harmful. The concern is whether problem ownership, status recognition,
+      resistance, and human revision remain intact.
+     The metaphors of fusion and chain reaction are structural. No physical equivalence with nuclear processes is claimed.
+
+16. One-Sentence Thesis
+Use AI to multiply what can be questioned, not to multiply reasons for believing what you
+                                      already think.
+Human beings should enter AI dialogue with a retained baseline and verification intent. The architecture begins from
+phenomenology rather than from chemistry: meanings are temporal and relational, dialogue changes accessibility, repetition can
+create inclination, and exposure may or may not be retained. A graph/readout model makes those relations explicit; atom-bond-
+molecule language compresses them without becoming load-bearing ontology. Within the session, Human and AI-under-
+current-context may recursively alter one another's accessible routes; independent resistance must remain able to break
+unsupported relations, while only retained human reorganization counts as durable augmentation.
+    Within session: H ↔ AI (reciprocal momentum) → Session boundary: AI resets, human residue may retain → Next
+                                                  human question
+Phenomenological anchor
+               Meaning is temporal | Meaning is relational | Dialogue changes accessibility
+                                        Repeated traversal can create inclination | Exposure ≠ Retention
+          Phenomenology anchors the phenomenon; formalism exposes structure; metaphor compresses structure.
+Strong-form architecture
+           Micro: task-relative semantic readouts → graph relations → task-relevant configurations
+           Meso: reciprocal Human-AI coupling → history-shaped accessibility → finite lineage amplification
+                                             Boundary: AI session state resets; human residue may retain
+      Macro: temporalized human horizon + world/other experience → changed next question → new semantic
+                                                   reaction
+                        Governance: provenance + resistance determine whether new bonds remain corrigible
+    Therefore: what is amplified, what is retained, and what can still correct it determine the epistemic trajectory.
+Internal Programme References
+Literature scope. This standalone note preserves the internal Human-AI / Readout genealogy of the programme. It does not treat self-citation as independent validation. A journal
+submission should add an external-neighbour literature section on dialogue alignment, semantic priming/control, human-AI feedback loops, cognitive offloading, distributed
+cognition, and conceptual/semantic networks without changing the present internal derivation.
+
+
+[1] Lahtee, Y. (2026). When AI Expands Human Potential: Reflective Dissonance, Epistemic Agency, and Constraint. Preprint.
+[2] Lahtee, Y. (2026). The Readout Condition: Distinguishability, Access, and Epistemic Warrant. Preprint.
+[3] Lahtee, Y. (2026). From Problem to Hypothesis: Dynamic Semantic Mobility, Bounded Knowers, and the Readout-Discriminable Hypothesis Space. GLOSA K0 working paper.
+[4] Lahtee, Y. (2026). The Epistemic Chain Reaction: Human-AI Multiplication from Questions to Readout-Distinguishable Hypotheses. GLOSA K0 conceptual and agenda paper.
+[5] Lahtee, Y. (2026). AI Knowledge Civilization / Candidate Forgetting: Knowledge-like Candidates, Epistemic Contact Zones, and Validation Memory. Working manuscript.
+[6] Lahtee, Y. (2026). Experience Is the Human LoRA: A Readout-Retention Theory of Selective Model Change. Preprint.
+[7] Lahtee, Y. (2026). AI, Translation, and Access to Event-Specific Context: A Conceptual Review and Theory Proposal on Human Agency under AI Mediation. Preprint.
+[8] Lahtee, Y. (2026). Human Learning as Epistemic Architecture: From Lived Words to Meaning Maps, Evidence, Revision, and Human Agency. Working preprint.
+[9] Lahtee, Y. (2026). Context Wisdom / Translation of Reality materials: Language, Context, Meaning, and the Boundaries of Interpretation. Working programme materials.
+                                                       Yaoharee Lahtee | 5 September 2026 | K0 conceptual architecture
+

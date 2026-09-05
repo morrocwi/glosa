@@ -1,0 +1,377 @@
+[
+ {
+  "keep": true,
+  "score": 8.0,
+  "lens": "lrs-defeaters",
+  "id": "lrs.dr-tag-not-dag-node",
+  "title": "Do not create a new DAG_v0.3 node for this lens — file as an [Open] TODO line instead",
+  "target": "design/TODO_v0.3.md (or equivalent open-items log) — add one line naming this lens's four sub-proposals above as pending P09 vetting + a citation card before DECISIONS.yaml entry",
+  "founder": true,
+  "reasons": [
+   "Verified against repo (Dr tier, file+line cited): design/DAG_v0.3.yaml lines 2-6 do carry the exact header comment quoted (\"every node below is a proposed reado",
+   "Evidence checks out. (1) DAG_v0.3.yaml line 6 verbatim quote confirmed by sed -n. (2) grep across design/DAG_v0.3.yaml and design/TODO_v0.3.md for \"lrs.\" and \"E"
+  ],
+  "revision": []
+ },
+ {
+  "keep": true,
+  "score": 6.5,
+  "lens": "PROPOSER human-uplift — coach the human toward fusion (durable, reviewable expansion of their own understanding) rather than tunnel (fluent-feeling but hollow retention), via glosa's own machinery (advisor packets, intake, Blackbox Note, Human Mastery Gate) rather than any new mechanism the AI would run on the human's behalf.",
+  "id": "HU-3",
+  "title": "Session-close retention note in the Blackbox Note cooking log — human states direction, not just content, of what was retained",
+  "target": "schema/blackbox_note.schema.json (cooking.step items, revision kind); templates/knowledge/blackbox_note.yaml",
+  "founder": false,
+  "reasons": [
+   "Verified against the repo (finite_diagnostic tier, this session):\n1) Target file checks out: schema/blackbox_note.schema.json cooking.step enum already includes",
+   "Substance checks out but citation hygiene fails rule 17 and one factual claim is wrong.\n\nVERIFIED (Dr): the underlying content is real, not misread. sources/not"
+  ],
+  "revision": [
+   "Fix citation: replace \"C3 (EPISTEMIC_FUSION)\" / \"C4 (EPISTEMIC_FUSION)\" with actual file+line refs (e.g. \"sources/notes/EPISTEMIC_FUSION_v7.1.txt, Claim Architecture table: eta_s / G_s-T_s rows\" and \"...Core Claim para: 'Across the session boundary, only the human is permitted a retained update'\"). Tighten acceptance_test to a structural field rather than free-text classification: retention_note should carry a required sub-field like `independent_check_named: boolean` (+ optional `independent_check_description`) that the human fills directly, so the finite_diagnostic script checks a declared boolean instead of inferring \"concrete check vs restatement\" from prose. Also state explicitly in `change` that this requires an if/then conditional block in the schema (step==revision → retention_note required), not merely an additive property, since additionalProperties is already permissive.",
+   "Same change, corrected evidence block: cite \"sources/notes/EPISTEMIC_FUSION_v8.1.txt:320-336 (session-boundary retention asymmetry)\" and \":356-370 (Repair 8 — retention magnitude vs direction)\" instead of \"C3/C4 (EPISTEMIC_FUSION)\"; correct \"design/DAG_v0.3.yaml — checked in full, 24 nodes\" to \"26 nodes\" (actual grep count); and either (i) add an `ai_proposed`-equivalent boolean to the `cooking` item schema so a `revision`-kind `retention_note` inherits the same never-AI-inferred guarantee as `lines` items, or (ii) drop the \"same status... per existing ai_proposed:false discipline\" sentence and state plainly that the cooking log's only current authorship gate is the freeform `by` field."
+  ]
+ },
+ {
+  "keep": true,
+  "score": 6.0,
+  "lens": "session-architecture",
+  "id": "SA-2",
+  "title": "Tunnel-vs-expansion disclaimer id (D-RETENTION-DIRECTION) gated on independent return, not retention alone",
+  "target": "FOUNDATION_v0.6.md §5 (disclaimer catalogue) + Appendix A (new NC row); design/DAG_v0.3.yaml (new node, references existing NC-32/NC-34 pattern)",
+  "founder": false,
+  "reasons": [
+   "Gap confirmed genuine: grep of design/FOUNDATION_v0.6.md and design/DAG_v0.3.yaml for \"retention|momentum|tunnel\" returns nothing — no existing disclaimer, NC r",
+   "Buildable and invariant-safe, but not ready to ship as-is — two concrete gaps need closing first.\n\nVerified against repo (Dr tier, file+line cited):\n1. Pattern "
+  ],
+  "revision": [
+   "Same change, but: (1) replace evidence ids \"C3\"/\"C9\" with direct file+line citations into sources/notes/EPISTEMIC_FUSION_v8.1.txt (Repair 8 block ~lines 356-361 for the η_s/Δs direction-neutrality claim; ~lines 341-350 for the Gs=g(...), Ts=h(...), Δs=Gs−Ts equation) since no \"C-series\" id exists in that file or in glosa's harvest; (2) either add a kc-aihp-* harvest card for EPISTEMIC_FUSION_v8.1 first (giving it its own tier/base_relation per the existing harvest pattern) and cite that card, or explicitly downgrade/annotate that this FOUNDATION addition is sourced from an unharvested raw note and justify the `tier: Dr` assignment against that; (3) keep the rest of the proposal (new §5 disclaimer id `D-RETENTION-DIRECTION`, new Appendix A NC row, default `retained_direction: unknown` gating, acceptance test) unchanged — those are sound and address a confirmed gap."
+  ]
+ },
+ {
+  "keep": true,
+  "score": 5.0,
+  "lens": "session-architecture",
+  "id": "SA-4",
+  "title": "Do NOT adopt chi_recip / m^H / m^AI momentum scoring as glosa fields (explicit non-adoption, logged)",
+  "target": "cpg/research/coordination/DECISIONS.yaml (new row, status=DECLINED-FOR-NOW); design/DAG_v0.3.yaml (no new node — logged as a non-adoption note attached to the nearest sibling node instead of a phantom node)",
+  "founder": false,
+  "reasons": [
+   "Evidence verified against source: sources/notes/EPISTEMIC_FUSION_v7.1.txt confirms chi_recip (line 34, \"Finite reciprocal-lineage diagnostic\") and m^H/m^AI (lin",
+   "Substance verified, mechanics not: (1) [Dr, verified in-repo] Claim (a) holds — checked schema/claim_card.schema.json, evidence_relation.schema.json, review_rep"
+  ],
+  "revision": [
+   "In the DECISIONS.yaml row and any DAG note, disambiguate the source card ids from glosa's own chair-ruling C7/C8 (e.g. write \"EPISTEMIC_FUSION_v7.1/v8.1 §6.3 chi_recip diagnostic\" and \"...§6.3 m^H/m^AI momentum diagnostic\" rather than bare \"C7\"/\"C8\"), since FOUNDATION_v0.6.md already uses C7/C8 for unrelated chair rulings (lineage addition; BLACKBOX_NOTE citation kind) and a bare reuse will misresolve under grep/citation lookup.",
+   "Fix the acceptance test before logging: (1) Check cpg/research/coordination/DECISIONS.yaml's actual `entry_fields` and `status_lifecycle` enum first — `DECLINED-FOR-NOW`, `reason`, and `revisit_condition` do not currently exist there. Either propose a schema/status-enum extension explicitly (as its own tiny decision, human-approved) before using it, or write the row using only real fields (`status: RECORDED`, put the reason/self-defeat-clause citation and revisit condition inside `notes`). (2) Decide which ledger is authoritative for this row — glosa/DECISIONS.md (local table, columns date/by/decision/status) explicitly mirrors the private cpg ledger; pick one as primary and cross-reference the other rather than leaving both as equally valid targets. (3) Name the specific design/DAG_v0.3.yaml sibling node id the non-adoption note attaches to (e.g. the nearest session-architecture/momentum-adjacent node), rather than \"nearest sibling node\" left unnamed. Evidence citations (χrecip self-defeat at EPISTEMIC_FUSION_v8.1.txt:244, m_AI removability at :300-305) are solid and can stay as-is."
+  ]
+ },
+ {
+  "keep": false,
+  "score": 4.5,
+  "lens": "PROPOSER kernel-gates — new mechanical checks/fields licensed by EPISTEMIC_FUSION_v8.1/v7.1 D-R-A framework, checked against design/DAG_v0.3.yaml (415 lines, read in full) and FOUNDATION_v0.6.md §§3.3/4.1-4.4/7.6/Appendix A to avoid duplicating an existing node. Each proposal is scoped to what is decidable from card/kg/log fields and carries a failing control per the Fail-Able Gate Law already used by DAG's own kernel.gate-rules-taxonomy-i-z node.",
+  "id": "process.run-existing-open-falsifier-klike",
+  "title": "Run the falsifier test the DAG already deferred, using C6/C10 as candidate evidence — no new mechanism",
+  "target": "design/TODO_v0.3.md [Open] line for rule17.claim-card-certification-open; FOUNDATION §4.4 K-state (no schema change)",
+  "founder": false,
+  "reasons": [
+   "Verified against design/DAG_v0.3.yaml lines 69-81: the node rule17.claim-card-certification-open is real, status: deferred, human_decision_needed: false, and it",
+   "Evidence misread/fabrication, verified by opening the actual repo: (1) \"C6\" and \"C10\" are not glosa card ids at all — glosa's card namespace is `kc-ai-NNN` / `k"
+  ],
+  "revision": []
+ },
+ {
+  "keep": false,
+  "score": 4.5,
+  "lens": "blackbox-dialogue",
+  "id": "schema.blackbox-language-bridge-subfield",
+  "title": "bridge_kind sub-field on translation-type cooking steps",
+  "target": "schema/blackbox_note.schema.json properties.cooking.items.properties.step (enum already includes translation; add sibling property `bridge_kind` required when step=translation)",
+  "founder": true,
+  "reasons": [
+   "Verified against files (finite_diagnostic, checked directly, not relayed): schema/blackbox_note.schema.json:59 cooking.step enum is `[\"lens_in\",\"analysis\",\"lens",
+   "Refuted — the proposal's own acceptance_test premise (that lens_in vs translation is \"an unresolved seam\") is a misread of already-specified glosa content, and "
+  ],
+  "revision": []
+ },
+ {
+  "keep": false,
+  "score": 4.5,
+  "lens": "lrs-defeaters",
+  "id": "lrs.defeater-defeated-status-field",
+  "title": "Track defeater-attempted-and-survived vs never-tested as a claim_card status, not just tested.falsifier presence",
+  "target": "schema/claim_card.schema.json five_questions.tested (add defeater_attempts alongside existing dissent_records)",
+  "founder": false,
+  "reasons": [
+   "Refuted — duplicates an existing mechanism. schema/claim_card.schema.json:437 already has provenance_dag.defeater_log[], documented across design/FOUNDATION_v0.",
+   "Mechanically verified (finite_diagnostic, this session): schema/claim_card.schema.json's `tested` object (lines 314-355) has no `additionalProperties:false`, an"
+  ],
+  "revision": []
+ },
+ {
+  "keep": false,
+  "score": 4.5,
+  "lens": "PROPOSER human-uplift — coach the human toward fusion (durable, reviewable expansion of their own understanding) rather than tunnel (fluent-feeling but hollow retention), via glosa's own machinery (advisor packets, intake, Blackbox Note, Human Mastery Gate) rather than any new mechanism the AI would run on the human's behalf.",
+  "id": "HU-2",
+  "title": "Add an entry-anchor block (H0-style) to the intake stage, ahead of first AI exposure",
+  "target": "schema/problem_card.schema.json (intake object); methodology/P02_intake.md",
+  "founder": true,
+  "reasons": [
+   "Evidence is fabricated/misread. The proposal cites \"C5 (EPISTEMIC_FUSION): entry condition ENTRY_H->AI = H0 ∧ V0 ∧ C0 ∧ R*\" and a Fogliato et al. FAccT 2022 def",
+   "Verified against repo (finite_diagnostic tier, this session's own reads):\n\nBUILDABILITY — mostly sound. schema/problem_card.schema.json:12-41 confirms `intake.q"
+  ],
+  "revision": [
+   "Revise before founder review: (1) cite `sources/notes/EPISTEMIC_FUSION_v8.1.txt` (the \"Strong-claim / legitimate-defeater edition,\" §External Constraint Protocol / Repair 1) by file+line instead of the unregistered label \"C5\" — v7.1 does not contain the Fogliato/κ0 material the evidence block relies on; (2) specify that `entry_anchor`'s anchoring timestamp is system-recorded at write time (like blackbox_line_ref append-only lines), not human-entered, or the proposed mechanical check can be gamed by a backfilled timestamp; (3) state explicitly that a failed check produces a self-check flag consistent with P02's declared non-gate status, not a blocking release gate."
+  ]
+ },
+ {
+  "keep": false,
+  "score": 4.5,
+  "lens": "PROPOSER human-uplift — coach the human toward fusion (durable, reviewable expansion of their own understanding) rather than tunnel (fluent-feeling but hollow retention), via glosa's own machinery (advisor packets, intake, Blackbox Note, Human Mastery Gate) rather than any new mechanism the AI would run on the human's behalf.",
+  "id": "HU-5",
+  "title": "P01_standpoint's 'AI may prompt for completeness' gets a named, bounded question set instead of an open-ended AI judgment call",
+  "target": "methodology/P01_standpoint.md 'Human / AI division of labour' section",
+  "founder": false,
+  "reasons": [
+   "Citation verified: methodology/P01_standpoint.md lines 33-38 do say \"AI: may prompt for completeness (e.g. ...)\" with no closed list — the proposal's premise is",
+   "Fabricated/misread citation. The proposal's second evidence item — \"C6/C10 (EPISTEMIC_FUSION): no linguistic property (fluency, confidence, explanation) perform"
+  ],
+  "revision": [
+   "Resubmit HU-5 dropping the fabricated \"C6/C10 (EPISTEMIC_FUSION)\" evidence item entirely. The proposal stands on its remaining two evidence points alone: (1) the actual unbounded text in methodology/P01_standpoint.md (\"AI: may prompt for completeness (e.g. ...) but never fills declared_basis on the human's behalf\") and (2) FOUNDATION_v0.6.md §3.3's existing ai_filled.* disclosure discipline, which this change would extend from AI-filled answers to AI-posed prompts. If a DAG/non-collapse-table analogy is wanted, cite an ID that actually exists and actually says what's being claimed — e.g. NC-58 (AIContribution≠EpistemicResponsibility, design/S9_non-collapse-table.md Family G) is the closest real match for \"the AI's framing of a question shifting epistemic responsibility away from the human,\" not a fabricated C6/C10/EPISTEMIC_FUSION reference."
+  ]
+ },
+ {
+  "keep": false,
+  "score": 4.0,
+  "lens": "session-architecture",
+  "id": "SA-1",
+  "title": "Add origin_session_ref + AI-side-reset field to Blackbox Note schema",
+  "target": "design/templates/knowledge/blackbox_note.yaml (schema addition); FOUNDATION_v0.6.md §2.3 (new bullet, session_boundary)",
+  "founder": false,
+  "reasons": [
+   "Verified against repo: `templates/knowledge/blackbox_note.yaml`, `schema/blackbox_note.schema.json`, and `design/FOUNDATION_v0.6.md` §2.3 all exist and are exac",
+   "Evidence is misread/fabricated. The proposal cites \"C4\" and \"C5\" as if these are established evidence-card ids for \"session boundary asymmetry, m^AI reset to ze"
+  ],
+  "revision": []
+ },
+ {
+  "keep": false,
+  "score": 4.0,
+  "lens": "blackbox-dialogue",
+  "id": "schema.blackbox-question-trace",
+  "title": "Note-level question_trace array for question-drift visibility",
+  "target": "schema/blackbox_note.schema.json (new top-level property `question_trace`); FOUNDATION §2.3",
+  "founder": false,
+  "reasons": [
+   "Tier: Dr (specified, unreviewed) — my check below is finite_diagnostic against the two cited files.\n\nVerified against source: schema/blackbox_note.schema.json:2",
+   "Evidence misread, plus the acceptance test cites mismatched artifacts.\n\n1) \"C1 P1/P2\" and \"C5\" don't say what the proposal claims. Checked both places these ids"
+  ],
+  "revision": [
+   "Same schema change, but strengthen the acceptance test: run it against BLACKBOX_NOTE_glosa-paper_2026-09-04.md (currently passes vacuously — no AI-authored line exists there to falsify against) AND against at least one blackbox note in the repo (or a synthetic fixture) that contains an `ai_proposed:true`/AI-speaker line, so the \"never an AI-authored line\" branch is actually exercised at least once before this is called Dr-tier verified rather than Dr-tier specified."
+  ]
+ },
+ {
+  "keep": false,
+  "score": 4.0,
+  "lens": "lrs-defeaters",
+  "id": "lrs.dialogue-table-claim-type-column",
+  "title": "Add a claim_type + legitimate_defeater column to the LRS dialogue_table template",
+  "target": "templates/knowledge/dialogue_table.md, design/S14_literature-review-system.md (dialogue-table section), records/lit/*/dialogue_table.md instances going forward (not retrofitted)",
+  "founder": false,
+  "reasons": [
+   "[Dr] Evidence checks out structurally: templates/knowledge/dialogue_table.md (read in full) has no claim_type/legitimate_defeater column today; design/S14_liter",
+   "Evidence-check on the three cited items:\n\n1. **v8.1 §1 is read correctly as a discipline** (sources/notes/EPISTEMIC_FUSION_v8.1.txt:30-70): it does name distinc"
+  ],
+  "revision": [
+   "Rename the new column to avoid colliding with the existing schema-fixed `claim_type` field (used by claim_card.yaml + kernel rule 16 + P03/P13 routing) — e.g. `claim_shape` or `defeater_class`, and add one sentence in the template's column notes distinguishing it explicitly from claim_card.yaml's claim_type. Tighten the acceptance test to check the table header row specifically (e.g. `grep -E '^\\|.*claim_shape.*legitimate_defeater.*\\|$' templates/knowledge/dialogue_table.md` or an explicit column-count diff) rather than a bare file-wide grep -c, which two unrelated line mentions would also satisfy."
+  ]
+ },
+ {
+  "keep": false,
+  "score": 3.0,
+  "lens": "session-architecture",
+  "id": "SA-3",
+  "title": "Pre-exposure anchor object (H0-lite) as a required S1 field, citing v7.1 §7 ENTRY_H->AI",
+  "target": "FOUNDATION_v0.6.md §2.1a (Problem before observation) — extend with this field; §2.2 S1 stage table",
+  "founder": true,
+  "reasons": [
+   "Refuted on two independent grounds.\n\n(1) Fabricated/unverifiable evidence citation. The proposal cites \"C5\" as a claim id in EPISTEMIC_FUSION_v8.1/v7.1. `grep -",
+   "Verified against repo (Dr-tier check, file+line cited):\n\n1. Acceptance test IS mechanical (scan Blackbox Note timestamps vs first-AI-line, check for a required "
+  ],
+  "revision": [
+   "Correct two fields only, keep everything else: (1) evidence: replace \"C5 (entry condition...)\" with \"EPISTEMIC_FUSION_v8.1.txt §3 'Problem 1 - AI Arrives Before a Human Baseline Exists' (Fogliato et al. defeater) + v7.1.txt §7 ENTRY_H→AI / H0=(P0,M0,U0,E0,Φ0)\" — drop the unowned \"C5\" label. (2) target: change \"FOUNDATION_v0.6.md §2.1a ... §2.2 S1 stage table\" to name the single schema file this actually edits — `schema/problem_card.schema.json` (S1 Problem Card) — and drop \"/Observation Card\" from the title, since Observation Card is S2's artifact, not S1's. If the intent really is to anchor the flag to the Blackbox Note's own timestamp (which is what the acceptance test measures), say so explicitly and target `schema/blackbox_note.schema.json` instead, and reconcile with §2.1a's explicit \"does not reopen S1-S6 stage ownership\" line before extending §2.2's table."
+  ]
+ },
+ {
+  "keep": false,
+  "score": 3.0,
+  "lens": "PROPOSER kernel-gates — new mechanical checks/fields licensed by EPISTEMIC_FUSION_v8.1/v7.1 D-R-A framework, checked against design/DAG_v0.3.yaml (415 lines, read in full) and FOUNDATION_v0.6.md §§3.3/4.1-4.4/7.6/Appendix A to avoid duplicating an existing node. Each proposal is scoped to what is decidable from card/kg/log fields and carries a failing control per the Fail-Able Gate Law already used by DAG's own kernel.gate-rules-taxonomy-i-z node.",
+  "id": "schema.entry-resistance-precommit-field",
+  "title": "Precommitted resistance-route field (R*) at claim-card intake, flag-not-block",
+  "target": "FOUNDATION §3.2 Field list (claim card schema); §2.1a Problem before observation (nearest existing home for pre-exposure ordering)",
+  "founder": true,
+  "reasons": [
+   "Buildability of the mechanism itself is fine — mirrors the already-accepted sibling `schema.prereg-gate-fields` (DAG_v0.3.yaml:112-119, confirmed: nullable time",
+   "Evidence ids \\\"C2\\\"/\\\"C5\\\" do not exist anywhere in glosa — every real evidence citation in design/DAG_v0.3.yaml and every knowledge/citation card on disk uses "
+  ],
+  "revision": []
+ },
+ {
+  "keep": false,
+  "score": 3.0,
+  "lens": "blackbox-dialogue",
+  "id": "schema.blackbox-line-origin-enum",
+  "title": "Line-level contribution field: origin enum replaces binary ai_proposed",
+  "target": "schema/blackbox_note.schema.json properties.lines.items.properties.ai_proposed (and schema/examples/blackbox_note.example.json, blackbox/BLACKBOX_NOTE_glosa-paper_2026-09-04.md table format)",
+  "founder": false,
+  "reasons": [
+   "Schema-target description is accurate (verified schema/blackbox_note.schema.json: `lines[].ai_proposed` is indeed a bare boolean, `became[]` has only `{claim_ca",
+   "Mechanically the acceptance test is close to testable (schema/blackbox_note.schema.json:32-48 already leaves `became[]` items open, so adding `human_edit_note` "
+  ],
+  "revision": [
+   "Same schema idea, but: (a) drop the C2/C6/C10 citations entirely or replace with real, grep-verified anchors (e.g. cite design/FOUNDATION_v0.6.md:446-447 for current ai_proposed semantics, design/S9_non-collapse-table.md:73 for NC-59); (b) add design/FOUNDATION_v0.6.md §2.3 to `target` and rewrite its \"AI may propose candidates only (`ai_proposed: true`)\" sentence so the prose and the new enum agree on what \"origin\" tracks — selection-proposal vs text-authorship are different things and the proposal must pick one and say so explicitly; (c) note in `cost`/`risk` that the live YAML instance has zero ai_proposed:true lines today, so this is schema-ahead-of-data — fine to ship, but not urgent, and the kernel.blackbox-origin-ratio-check diagnostic will have nothing to report on until an AI-authored line actually appears."
+  ]
+ },
+ {
+  "keep": false,
+  "score": 3.0,
+  "lens": "blackbox-dialogue",
+  "id": "kernel.candidate-set-delta-cooking-step",
+  "title": "Candidate-set delta on cooking-log steps (growth/collapse counter)",
+  "target": "schema/blackbox_note.schema.json properties.cooking.items (new property `candidate_set`); relates to but does not duplicate design/DAG_v0.3.yaml node `foundation.lrs-discovery-loop-extension` (that node scopes candidate-set formation to the Literature Review System's k_epi decomposition; this proposal scopes the same *diagnostic shape* to the Blackbox Note's own cooking log, a different artifact)",
+  "founder": true,
+  "reasons": [
+   "Evidence citations do not open. \"C3\" and \"C9\" are not card/section ids anywhere in glosa — grepped the whole repo (evidence-card schemas, DAG_v0.3.yaml, chair r",
+   "Mechanism is fine (an additive, non-collapsing count field with no verdict emitted honors C9's own point), but the proposal fails on citation and acceptance-tes"
+  ],
+  "revision": [
+   "Replace evidence field with citable, openable anchors: (1) sources/notes/EPISTEMIC_FUSION_v7.1.txt lines 437-445 (the η_s>0 + sign(G_s−T_s) direction table) for the \"retention alone can't distinguish expansion/tunnel\" point; (2) design/FOUNDATION_v0.6.md §4 \"Tier + independence-class + K-state vocabulary\" (not Appendix A Family A/C) for the \"kept-uncollapsed, never averaged into one score\" point — cite the actual table/MIMCG-class-derived-ordinal language there. Re-run the SKEPTIC pass once citations point to real, openable locations; the schema change and DAG-non-duplication argument can stand as-is once evidence is fixed.",
+   "Replace evidence:[\"C3\",\"C9\"] with either (a) real resolvable ids once the EPISTEMIC_FUSION_v7.1.txt eta_s/G_s-T_s content is actually harvested into a kc-ep-NNN card, or (b) drop the citation claim and mark the rationale [Open]/unsourced per rule 17 until harvested. Fix the acceptance_test to match the real fixture (1 existing cooking step, not 5) — either add the 4 missing synthetic steps explicitly to the test spec, or state \"1 existing + 9 synthetic\" honestly. Also add one line cross-referencing the pending-founder `discovery_routing{candidate_questions, k_epi_gate_log}` field in schema/litreview_manifest.schema.json so a future founder ruling on either can reconcile field-naming/shape before both ship."
+  ]
+ },
+ {
+  "keep": false,
+  "score": 3.0,
+  "lens": "lrs-defeaters",
+  "id": "lrs.defeater-not-collapse-rule",
+  "title": "Kernel rule: reject 'strength of the claim' or 'feels solid' as a stated defeater regardless of claim_type",
+  "target": "kernel/glosa_kernel.py (new rule, e.g. rule30), methodology/data/disclaimer_catalogue.json or a new small non_defeater_phrase table alongside contaminated_concept_table.json",
+  "founder": false,
+  "reasons": [
+   "Mechanical/measurable: yes in principle — a phrase-scan over tested.falsifier text against a finite non_defeater_phrase table, with pass/fail fixtures in tests/",
+   "Evidence does not check out. Exhaustive grep across the whole glosa tree (design/, kernel/, methodology/, tests/, schema/) for the exact quoted defeater phrases"
+  ],
+  "revision": []
+ },
+ {
+  "keep": false,
+  "score": 2.5,
+  "lens": "session-architecture",
+  "id": "SA-5",
+  "title": "K_like state-machine citation added to §4.4/§7.3, not a new mechanism",
+  "target": "FOUNDATION_v0.6.md §4.4 K-state (Standalone Scholar) and Appendix A NC-59/NC-47 (add 'see also' cross-reference, not a new NC row)",
+  "founder": false,
+  "reasons": [
+   "Refuted on two grounds, both checked against the actual files (finite_diagnostic tier — I opened the cited locators). (1) Target mismatch: §7.3 \"Bounded-Judge L",
+   "Mechanics are otherwise sound and precedented — FOUNDATION_v0.6.md's own changelog already establishes \"named-source citation-only addition\" as a recognized cha"
+  ],
+  "revision": []
+ },
+ {
+  "keep": false,
+  "score": 2.5,
+  "lens": "PROPOSER kernel-gates — new mechanical checks/fields licensed by EPISTEMIC_FUSION_v8.1/v7.1 D-R-A framework, checked against design/DAG_v0.3.yaml (415 lines, read in full) and FOUNDATION_v0.6.md §§3.3/4.1-4.4/7.6/Appendix A to avoid duplicating an existing node. Each proposal is scoped to what is decidable from card/kg/log fields and carries a failing control per the Fail-Able Gate Law already used by DAG's own kernel.gate-rules-taxonomy-i-z node.",
+  "id": "kernel.reciprocal-lineage-diagnostic",
+  "title": "Reciprocal-lineage diagnostic (χ_recip) over kg edges, diagnostic-only",
+  "target": "kg edge schema (session_id, actor, timestamp fields already present) + new CLI subcommand `glosa kg diagnose --chi-recip`; FOUNDATION §4.3 DVP mechanics (Route Dependence Matrix already logs prompt_ancestry) as the nearest existing home",
+  "founder": true,
+  "reasons": [
+   "SKEPTIC verdict: acceptance test is mechanical (finite_diagnostic sim with a positive AND negative control, mirroring the Fail-Able Gate Law) — that part is wel",
+   "SKEPTIC verdict: REFUTED on evidence-misread grounds, not on the underlying idea's merit.\n\n1. Evidence ids \"C7\"/\"C8\" do not say what the proposal claims. In thi"
+  ],
+  "revision": []
+ },
+ {
+  "keep": false,
+  "score": 2.5,
+  "lens": "PROPOSER kernel-gates — new mechanical checks/fields licensed by EPISTEMIC_FUSION_v8.1/v7.1 D-R-A framework, checked against design/DAG_v0.3.yaml (415 lines, read in full) and FOUNDATION_v0.6.md §§3.3/4.1-4.4/7.6/Appendix A to avoid duplicating an existing node. Each proposal is scoped to what is decidable from card/kg/log fields and carries a failing control per the Fail-Able Gate Law already used by DAG's own kernel.gate-rules-taxonomy-i-z node.",
+  "id": "schema.retention-direction-field",
+  "title": "Retention-direction field (expansion / tunnel / undetermined) on the K1→K2 conversion ledger",
+  "target": "FOUNDATION §7.6 K1→K2 conversion ledger; Appendix A Family C (NC-32 DVP≠K2, NC-34 no-independent-check⇒no-K2) as the nearest existing non-collapse rows",
+  "founder": true,
+  "reasons": [
+   "Idea is conceptually sound (additive enum axis, doesn't collapse tier/independence_class — consistent with NC-32 DVP≠K2 / NC-34 no-independent-check⇒no-K2 patte",
+   "REFUTED — evidence misread/nonexistent, plus the target artifact doesn't exist yet. (1) Cited evidence \"C9\" does not exist: readout_universe/claims.md (design/F"
+  ],
+  "revision": []
+ },
+ {
+  "keep": false,
+  "score": 2.5,
+  "lens": "blackbox-dialogue",
+  "id": "schema.blackbox-chooser-reaffirmation",
+  "title": "Chooser-reaffirmation field on became[] links (forgetting-of-chooser check)",
+  "target": "schema/blackbox_note.schema.json properties.lines.items.properties.became.items (new property `chooser_reaffirmed`); FOUNDATION §2.3",
+  "founder": true,
+  "reasons": [
+   "All three cited evidence items misread their sources. (1) \"C4 (session boundary asymmetry...)\" — FOUNDATION_v0.6.md's C4 is chair ruling on `verdict_tier` needi",
+   "SKEPTIC verdict: reject in current form, revise before resubmitting.\n\n1. Target is real and locatable — verified `schema/blackbox_note.schema.json` properties.l"
+  ],
+  "revision": []
+ },
+ {
+  "keep": false,
+  "score": 2.5,
+  "lens": "lrs-defeaters",
+  "id": "lrs.claim-type-defeater-enum",
+  "title": "Extend claim_type + add claim-type-scoped defeater field",
+  "target": "schema/common.defs.json (claim_type enum), schema/claim_card.schema.json (five_questions.tested), kernel/glosa_kernel.py (new rule: defeater_class must be one of the fixed set matching claim_type — e.g. claim_type=PHENOMENOLOGICAL requires defeater_class=absence_misdescription_irrelevance, not popperian_empirical)",
+  "founder": true,
+  "reasons": [
+   "Refuted on evidence-verification grounds (Dr-tier claim, not confirmed).\n\n1. Misread citation, checked against the actual file: the proposal cites \"schema/claim",
+   "SKEPTIC verdict: mechanically buildable, but the evidence citations fail rule 17 (source-first citations), which is disqualifying for a \"ship now\" score. Two co"
+  ],
+  "revision": [
+   "Fix citations before resubmitting: (1) change the claim_type-enum citation from \"schema/claim_card.schema.json:154-165\" to \"schema/common.defs.json:154-165\" (verified location of the actual enum block); claim_card.schema.json only carries the $ref at lines 94-95. (2) Replace the five \"C1/C2.../C9/C7-C8\" evidence bullets with a real source: cite registry/zenodo_all_records.json:27 (title \"Epistemic Fusion or Epistemic Tunnel...\", v8.1 2026-09-05, DOI 10.5281/zenodo.22310837, series hub 10.5281/zenodo.22308201) as the origin of the phenomenological/constitutive/structural/diagnostic/empirical taxonomy and its \"legitimate defeater\" pairing language, since no such card ids currently exist anywhere in this repo's claim-card corpus. If the intent is for those five claim_type categories to eventually get real glosa claim cards drawn from that paper, say so explicitly and treat card creation as a prerequisite step (or a parallel deliverable) rather than pre-citing card ids that don't exist yet. Keep the rest of the proposal (enum extension, defeater_class field, rule29, additive/backward-compatible schema_version bump, fixture-based pytest acceptance test) as-is — those pieces are mechanically sound once the evidence trail is corrected."
+  ]
+ },
+ {
+  "keep": false,
+  "score": 2.5,
+  "lens": "PROPOSER human-uplift — coach the human toward fusion (durable, reviewable expansion of their own understanding) rather than tunnel (fluent-feeling but hollow retention), via glosa's own machinery (advisor packets, intake, Blackbox Note, Human Mastery Gate) rather than any new mechanism the AI would run on the human's behalf.",
+  "id": "HU-1",
+  "title": "Write the missing Human Mastery Gate protocol card (§7.5 currently points at nothing)",
+  "target": "design/FOUNDATION_v0.6.md §7.5; new methodology/P16_human_mastery_gate.md; new schema/human_mastery_gate.schema.json; templates/knowledge/ (new gate_answers.yaml template)",
+  "founder": true,
+  "reasons": [
+   "REFUTED on two independent grounds.\n\n(1) Core premise is false — the mechanism is not missing. `grep -rn \"mastery\" .` finds the gate's actual mechanism already ",
+   "Gap claim verified TRUE (Dr): `find . -iname \"*FOUNDATION_v0.1*\"` returns nothing; `design/FOUNDATION_v0.6.md:1621` reads only \"Unchanged from v0.1 §7.5\" — a po"
+  ],
+  "revision": []
+ },
+ {
+  "keep": false,
+  "score": 2.0,
+  "lens": "PROPOSER human-uplift — coach the human toward fusion (durable, reviewable expansion of their own understanding) rather than tunnel (fluent-feeling but hollow retention), via glosa's own machinery (advisor packets, intake, Blackbox Note, Human Mastery Gate) rather than any new mechanism the AI would run on the human's behalf.",
+  "id": "HU-4",
+  "title": "Advisor packet gains a 'question quality' self-check step before recommending conversion actions",
+  "target": "templates/knowledge/advisor_prompt_packet.md §1-2; methodology/P14_project_advisor.md",
+  "founder": false,
+  "reasons": [
+   "Not buildable as specified — verified against the repo, not just read on the card. Two independent breaks: (1) `q1_issue.retained_difference_statement` is alrea",
+   "SKEPTIC refutation, tier finite_diagnostic (grep-verified against the live repo, 2026-09-05).\n\n1. Fabricated citation. The proposal's evidence field cites \"the "
+  ],
+  "revision": []
+ },
+ {
+  "keep": false,
+  "score": 1.5,
+  "lens": "PROPOSER kernel-gates — new mechanical checks/fields licensed by EPISTEMIC_FUSION_v8.1/v7.1 D-R-A framework, checked against design/DAG_v0.3.yaml (415 lines, read in full) and FOUNDATION_v0.6.md §§3.3/4.1-4.4/7.6/Appendix A to avoid duplicating an existing node. Each proposal is scoped to what is decidable from card/kg/log fields and carries a failing control per the Fail-Able Gate Law already used by DAG's own kernel.gate-rules-taxonomy-i-z node.",
+  "id": "kernel.session-boundary-momentum-reset-assertion",
+  "title": "Session-boundary AI-momentum reset assertion (mechanical, CI-checkable)",
+  "target": "kernel/glosa_kernel.py independence_class validation; FOUNDATION §2.3 Blackbox Note and R0/R1/R2 internal registers; §4.2 Independence Ladder I0/I1 rows",
+  "founder": false,
+  "reasons": [
+   "Evidence misread — none of the cited sources say what the proposal claims. Checked verbatim (Dr-tier, direct read):\n\n1. §2.3 (design/FOUNDATION_v0.6.md lines 43",
+   "finite_diagnostic — checked directly against kernel/glosa_kernel.py and design/FOUNDATION_v0.6.md §2.3/§4.2/§4.3, plus design/DAG_v0.3.yaml (no duplicate node, "
+  ],
+  "revision": []
+ }
+]

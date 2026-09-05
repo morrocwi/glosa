@@ -1,0 +1,567 @@
+                                                                               EPISTEMIC NOTE | HUMAN-AI READOUT PROGRAMME
+
+
+
+
+    Epistemic Fusion or Epistemic Tunnel
+A Phenomenology-Anchored, Global-Literature-Constrained, Problem-First Architecture
+                          of Human-AI Collaboration
+            An External Problem-Architecture Dialogue from the Human-AI Readout Programme
+        Yaoharee Lahtee | Bangkok, Thailand | Epistemic Note v8.1 - Strong-claim /
+                              legitimate-defeater edition
+
+Status. K0+ conceptual architecture with cross-domain empirical, meta-analytic, and theoretical constraints.
+Strong claims are retained by design. This edition separates phenomenological explananda, constitutive necessi-
+ties, structural proposals, diagnostics, and empirical predictions; each is paired with a legitimate defeater. Calling
+a proposition “too strong” is not itself a scientific defeater. The burden for empirical causal claims remains with
+the author, while objections to constitutive or phenomenological claims must target the relevant derivation, coun-
+terexample, phenomenon, scope, or rival explanation.
+
+Core move. The central research problem is not simply whether AI improves an answer while it
+is present. The stronger problem is whether Human-AI collaboration can enlarge the human’s corri-
+gible space of inquiry, preserve independent resistance, avoid self-reinforcing semantic tunnels, and
+return durable epistemic capability to the human after the AI is removed. The evidential strategy is
+cross-domain convergence rather than dependence on one causal pathway: clinical workflow, explana-
+tion and reliance, creativity and homogenization, verification cost, self-confidence, Human-AI feedback,
+learning, sycophancy, warmth, and task ecology instantiate structurally homologous failures of collapse.
+No single study is claimed to reproduce the whole architecture. Their convergence constrains what a
+general architecture must keep distinct.
+
+1. Claim Types, Evidence, and Legitimate                              better-constrained objects.
+Defeaters                                                             Diagnostics. A diagnostic is defeated if it cannot be
+                                                                      coded reproducibly, is unstable under reasonable
+The architecture begins from a methodological sep-
+                                                                      segmentation or horizon choices, or adds no infor-
+aration that is itself part of the theory. Different
+                                                                      mation beyond a simpler baseline. Failure of a di-
+claim types require different kinds of warrant and
+                                                                      agnostic does not by itself erase the phenomenon it
+are defeated in different ways. A criticism is proba-
+                                                                      was intended to measure.
+tive only when it targets the epistemic type of the
+proposition under dispute.                                            Empirical predictions. The author retains the bur-
+                                                                      den for causal, quantitative, or universal empirical
+Phenomenological explananda. These are recur-
+                                                                      claims. These are defeated by sufficiently strong
+ring appearances the architecture is required to ex-
+                                                                      contrary evidence within scope, failed replication,
+plain: meaning is context- and time-situated; dia-
+                                                                      or a better-supported competing causal account.
+logue can alter what becomes accessible next; re-
+peated traversal can create inclination; exposure                     Burden rule. “The claim is strong” is not a coun-
+need not persist; retained change need not be ben-                    terexample, an inconsistency, a failed phenomenon,
+eficial. A legitimate defeater is evidence that the                   or contrary evidence. A legitimate objection must
+phenomenon is absent within the declared scope,                       specify which claim type is being rejected and
+systematically misdescribed, or explanatorily irrel-                  present the kind of defeater appropriate to that type.
+evant. Absence of a full-architecture experiment is                   This does not reverse the burden of proof; it pre-
+not such a defeater.                                                  vents category errors about what would count as
+                                                                      proof or refutation.
+Constitutive necessities. Claims such as D > 0,
+R > 0, and A > 0 are derived under the declared tar-                  Cross-domain phenomenological convergence
+get concept of durable human epistemic expansion.
+They are defeated by internal inconsistency, equiv-                   The external evidence used below is intentionally
+ocation in the definition, or a valid counterexample                  causally heterogeneous. Bansal et al. show that ex-
+in which the target phenomenon occurs while the                       planation and correct uptake can separate; Doshi
+allegedly necessary condition is absent.                              and Hauser show that individual gains and collec-
+                                                                      tive diversity can separate; Vasconcelos et al. show
+Structural and formal proposals. Objects such
+                                                                      that nominal explanation and exercisable verifica-
+as reciprocal momentum, χrecip , the retention gate
+                                                                      tion can separate; Bastani et al. show that assisted
+η, and the directional separation G − T are pro-
+                                                                      performance and later unaided capability can sepa-
+posed to preserve distinctions across scales. They
+                                                                      rate; Cheng et al. and Ibrahim et al. show that pref-
+are defeated if they are incoherent, redundant, non-
+                                                                      erence, warmth, affirmation, confidence, and truth-
+identifiable, add no explanatory or predictive infor-
+                                                                      directed performance can separate [4, 7, 8, 12, 13,
+mation, or are dominated by a rival architecture
+                                                                      14]. These are not asserted to share one cause. Their
+that explains the same phenomena with fewer or
+                                                                      evidential force lies in convergent structural non-
+
+
+                          Yaoharee Lahtee | 5 September 2026 | v8.1 Strong-claim / legitimate-defeater edition
+                                                                             EPISTEMIC NOTE | HUMAN-AI READOUT PROGRAMME
+
+
+
+collapse across different tasks, mechanisms, popu-                  must therefore preserve a baseline without convert-
+lations, and outcome measures.                                      ing it into rigid commitment.
+                                                                    Repair 1 - Baseline without lock-in.
+2. External Constraint Protocol
+                                                                                     H0∗ = (P0 , M0 , U0 , E0 , Φ0 , κ0 ),
+The previous note separated conceptual strength
+from empirical validation and made the semantic                     where κ0 is the human’s declared confidence in the
+graph, provenance, resistance, retention, and hu-                   pre-AI model, introduced explicitly in Problem 5.
+man return load-bearing. This edition adds a sec-                   Calibration is a derived relation across confidence
+ond discipline: each major Human-AI collaboration                   and warrant, not a property presumed from one re-
+problem must be confronted by globally leading                      port. The baseline is a readout for comparison, not
+peer-reviewed empirical, meta-analytic, or theoreti-                a command to defend M0 .
+cally constraining work before the architecture an-                 The entry rule becomes
+swers it. Literature is used adversarially as well as
+supportively.                                                                    ENTRYH→AI = H0∗ ∧ V0 ∧ C0 ∧ R∗ .
+Evidence rule. An external result may (i) instanti-
+                                                                    V0 is verification intent, C0 the candidate-status con-
+ate a phenomenon the architecture must explain, (ii)
+                                                                    tract, and R∗ a precommitted route that can reject
+expose a missing variable, (iii) force a boundary con-
+                                                                    an important candidate. The practical design prin-
+dition, (iv) generate a competing explanation, or (v)
+                                                                    ciple is formulate before exposure; remain revisable
+supply a removal/falsification test. No external re-
+                                                                    after exposure.
+sult is treated as validating the whole architecture.
+Lai et al. reviewed more than one hundred empir-                    4. Problem 2 - Fluent Output Acquires
+ical Human-AI decision-making studies and called
+for common design and evaluation frameworks
+                                                                    Knowledge Status Without Earning It
+across tasks and systems [2]. Vaccaro, Almaatouq,                   Bansal et al. found that explanations did not in-
+and Malone then preregistered a systematic review                   crease complementary Human-AI performance and
+and meta-analysis of 106 experiments and 370 ef-                    instead increased the chance that people accepted
+fect sizes, finding human augmentation on average                   AI recommendations regardless of whether they
+but no average Human-AI synergy; task type and                      were correct [4]. Buçinca et al. showed that cog-
+relative human-versus-AI performance were impor-                    nitive forcing can reduce overreliance, but the de-
+tant moderators [15]. These findings strengthen the                 signs that reduced it most were also rated least fa-
+need for typed evaluation: “the human did better                    vorably [5]. Kim et al. later found that first-person
+with AI” is not equivalent to “the Human-AI system                  uncertainty language such as “I’m not sure” reduced
+beat both components,” and neither answers what                     reliance and increased accuracy in a preregistered
+remains in the human after the collaboration ends.                  FAccT experiment, though the exact wording mat-
+                                                                    tered [6].
+3. Problem 1 - AI Arrives Before a Human                            These results jointly reject the assumption that
+Baseline Exists                                                     transparency, explanation, confidence, and epis-
+                                                                    temic status naturally travel together.
+External problem. Human judgment is path-
+dependent. In FAccT 2022, Fogliato et al. experimen-                The architecture therefore keeps the default transi-
+tally varied whether 19 veterinary radiologists saw                 tion
+AI advice before or after registering a provisional                         AI(Q) = Klike ,   Klike ̸= Kvalidated ,
+decision. Requiring a provisional human response                    and identifies the dangerous shortcut
+changed agreement behavior and downstream use
+of AI advice, showing that sequence is not an inno-                                          Klike → Kassumed .
+cent interface detail [3].
+Architecture before dialogue. The entry state                       Repair 2 - Status must be a state machine, not a
+was                                                                 tone.
+            H0 = (P0 , M0 , U0 , E0 , Φ0 ),                                         check
+                                                                            Klike −−−→ Kchecked
+where the human declares the problem, current                                       independent support
+model, unknowns, independent evidence, and a                                       −−−−−−−−−−−−→ Ksupported
+change condition before AI exposure.                                                declared warrant criterion V ∗
+                                                                                   −−−−−−−−−−−−−−−−−−→ Kvalidated|V ∗ .
+What the external study forces. A baseline can-
+not be a retrospective narrative constructed after                  No linguistic property - fluency, length, warmth,
+AI has already supplied a frame. It must be elicited                confidence, citation style, or explanation - is permit-
+before first exposure when the inquiry is epistemi-                 ted to perform one of these status transitions by it-
+cally weight-bearing. The literature also shows that                self. “Validated” is task- and criterion-relative, not a
+“human first” is not universally better: a provisional              declaration of infallible Truth. Uncertainty expres-
+commitment can reduce agreement with correct as                     sion can influence reliance [6]; it does not certify cor-
+well as incorrect AI advice [3]. The architecture                   rectness. Cognitive forcing can reduce overreliance
+
+
+                        Yaoharee Lahtee | 5 September 2026 | v8.1 Strong-claim / legitimate-defeater edition
+                                                                                 EPISTEMIC NOTE | HUMAN-AI READOUT PROGRAMME
+
+
+
+[5]; it does not guarantee good reasoning. Candidate                    tion [8]. This is stronger than the generic require-
+status must remain visible independently of presen-                     ment that an independent check merely “exists.”
+tation style.                                                           The prior architecture required Resistance (R > 0):
+Legitimate defeater.         This status architecture                   something sufficiently independent must be able to
+should be revised if candidate status cannot be op-                     reject, constrain, or revise a candidate. The exter-
+erationally distinguished from presentation effects,                    nal work exposes a second non-collapse: epistemic
+if the intermediate states add no explanatory value,                    resistance quality is not the same object as practical
+or if a rival status model predicts checking and cor-                   accessibility of that resistance.
+rection better. The objection that the distinction is                   Repair 4 - Resistance quality and resistance ac-
+“too strict” is not sufficient; the critic must show re-                cessibility.
+dundancy, incoherence, or counterevidence.
+                                                                               Rsep = ρ(Is , Vs , Qs ),        UsR = u(Csv , Tsv , Avs ),
+5. Problem 3 - More Outputs Are Mis-                                    where Is is independence from the generative loop,
+taken for More Epistemic Alternatives                                   Vs practical verifiability, Qs the epistemic quality of
+                                                                        the checking route, Csv verification cost, Tsv time cost,
+Doshi and Hauser’s Science Advances experiment
+                                                                        and Avs practical access. Exercised resistance may
+found a striking two-level pattern: access to gen-
+                                                                        then be represented as a dependency
+erative AI improved judged creativity for individ-
+ual short stories, especially for less creative writ-                                           Rsex = ψ(Rsep , UsR ),
+ers, while AI-assisted stories became more similar to
+one another, reducing collective novelty [7]. The re-                   without assuming a calibrated universal product
+sult supplies an independently observed structural                      form.
+analogue: generative gain can coexist with narrow-
+                                                                           Resistance quality ̸= resistance accessibility. A costly
+ing diversity. The architecture makes the stronger
+                                                                          pathology test can be epistemically strong; a free check
+epistemic claim that raw output count cannot, by it-
+                                                                           can be weak. What matters for collaboration is both
+self, establish expansion because surface multiplic-                     whether a route can say “no” and whether the human can
+ity and non-equivalent consequence are different                                          realistically exercise it.
+objects.
+The architecture already requires Difference (D): at                    Legitimate defeater. Collapse these objects only if
+least one non-equivalent distinction, rival, or route                   epistemic quality and practical accessibility add no
+beyond paraphrase. It also distinguishes candidate                      distinct explanatory value across checking behav-
+multiplication ks from the proportion ds that is gen-                   ior and outcomes. The mere existence of a check-
+uinely readout-distinct.                                                ing route cannot defeat the architecture when that
+Repair 3 - Count equivalence classes, not sen-                          route is inaccessible in practice; conversely, low cost
+tences. Let Cs be the generated candidate set and                       cannot substitute for independent evidential qual-
+Cs / ∼R the task-relative readout-equivalence classes                   ity.
+under frozen consequence and provenance rules.
+Then a proposed diagnostic is                                           7. Problem 5 - The Human Miscalibrates
+                                                                        Their Own Competence
+                                             Dseff
+            Dseff = |Cs / ∼R | ,     ds =          .                    He et al. showed that an illusion of human com-
+                                             |Cs |
+                                                                        petence can hinder appropriate reliance on AI; less
+This is an operational proposal, not a metric tested                    competent participants who overestimated them-
+by Doshi and Hauser. Their study constrains the ar-                     selves were especially vulnerable to under-reliance
+chitecture by showing that generative benefit and                       and poor calibration [9]. Ma et al. then directly stud-
+diversity can move in opposite directions. The                          ied human self-confidence calibration and found
+stronger claim is constitutive: if two outputs li-                      that calibration interventions can improve Human-
+cense no task-relevant non-equivalent distinction                       AI team performance and some aspects of rational
+or consequence, counting them as two epistemic                          reliance [10].
+alternatives is a category error. A valid defeater                      The prior entry state lacked a typed representa-
+would require a case in which raw multiplicity                          tion of the human’s confidence in their own pre-AI
+alone demonstrates a new epistemic class despite                        model. That omission is substantial because identi-
+readout-equivalence under the declared task.                            cal beliefs with different confidence produce differ-
+                                                                        ent reliance dynamics.
+6. Problem 4 - Explanations Exist, but Ver-                             Repair 5 - Confidence belongs in the human base-
+ification Is Too Costly to Use                                          line.
+Vasconcelos et al. conducted five studies (N = 731)                                 H0∗ = (P0 , M0 , U0 , E0 , Φ0 , κ0 ),
+and showed that overreliance depends on the costs                       with κ0 the human’s declared confidence in M0 . Af-
+and benefits of engaging with an AI explanation.                        ter interaction, record κ1 separately from correct-
+Explanations reduced overreliance when they suffi-                      ness and separately from trust in AI. A single con-
+ciently lowered the cost of verifying the AI’s predic-                  fidence report is not itself “calibrated.” Calibration
+
+
+                            Yaoharee Lahtee | 5 September 2026 | v8.1 Strong-claim / legitimate-defeater edition
+                                                                                 EPISTEMIC NOTE | HUMAN-AI READOUT PROGRAMME
+
+
+
+is a derived relation across trials or warranted judg-                  The external coevolution literature motivates study-
+ments.                                                                  ing reciprocal feedback; it does not validate this
+A minimum audit becomes                                                 session-level diagnostic. The phenomenological
+                                                                        claim and the diagnostic are intentionally separa-
+                 Ks = (κ0 , κ1 , W0 , W1 ),                             ble: failure of χrecip removes the diagnostic, not auto-
+                                                                        matically the phenomenon of trajectory-shaped di-
+where Wt is the best available task-relative war-                       alogue. A legitimate defeater of the stronger phe-
+rant/readout of correctness. Where repeated objec-                      nomenon would show that current-state represen-
+tive ∑outcomes yi exist, a calibration error such as                    tation renders prior path systematically irrelevant
+N −1 i (κi − yi )2 may be estimated; open-ended in-                     within the declared scope.
+quiry may require a different warrant model. The
+architecture requires the study design to avoid treat-
+                                                                        9. Problem 7 - Assisted Performance Im-
+ing “trust in AI” as a substitute for “confidence in
+self.”                                                                  proves While Human Learning Declines
+This corrects a common simplification: appropriate                      Bastani et al. provide unusually strong evidence for
+reliance is relational. A human can over-rely on an                     the separation between present performance and
+AI because trust in AI is too high, or under-rely be-                   later human capability. In a field experiment with
+cause confidence in self is too high. Both can yield a                  nearly one thousand high-school mathematics stu-
+poor team even when AI accuracy is unchanged.                           dents, GPT access improved performance during
+                                                                        practice, but students in the unguarded GPT condi-
+8. Problem 6 - Reciprocal Human-AI Feed-                                tion performed 17% worse than the control group
+back Is Reduced to Independent Trials                                   when AI access was removed. Learning-oriented
+                                                                        safeguards largely mitigated that loss [12].
+Pedreschi et al. define Human-AI coevolution as a                       This directly supports the architecture’s non-
+process in which humans and AI algorithms contin-                       collapse law
+uously influence each other and argue that this feed-
+back is societally important yet understudied in AI                              Exposure ̸= Retention ̸= Improvement.
+and complexity science [11]. Their scale is broader
+than a dialogue session and their paper is a theoreti-                  However, it also exposes a measurement weakness.
+cal/review constraint rather than a validation of ses-                  A scalar ηs should not be inferred from in-session
+sion dynamics. The session-level claim here there-                      engagement or recall alone.
+fore stands on a phenomenological observation plus                      Repair 7 - Treat retention as latent; measure the
+an open empirical proposition: ordered dialogue re-                     return. Keep ηs as the conceptual session-end reten-
+peatedly changes the material available to the next                     tion gate, but estimate durable residue through an
+turn, and for at least some classes the traversed path                  unaided return battery:
+may matter beyond a memoryless one-shot repre-
+                                                                                      Yreturn
+                                                                                       s+∆ = (Rrec , Rdisc , Tnew , Qnext ),
+sentation.
+The session architecture models                                         where Rrec is reconstruction, Rdisc discrimination
+                                                                        among live alternatives, Tnew transfer to a new task,
+       Hs,t → AIs,t → Hs,t+1 → AIs,t+1 → · · ·                          and Qnext the quality of the next independently gen-
+                                                                        erated question. Delayed unaided performance is
+and finite history scores
+                                                                        primary evidence; session smoothness is not.
+          s,n+1 (e) = λH ms,n (e) + 1[es,n = e],
+         mH                                                             This converts the Human Return Test from a philo-
+                          H            H
+
+                                                                        sophical afterthought into a design requirement
+         s,n+1 (e) = λAI ms,n (e) + 1[es,n = e].
+        mAI               AI           AI
+                                                                        for empirical Human-AI collaboration whenever hu-
+                                                                        man capability matters.
+Repair 6 - Keep session history only if it earns ex-
+planatory work. The stronger open proposition is                        For randomized studies, the return should be
+                                                                        causally indexed rather than inferred from raw
+           P (et+1 | Xt , H<t ) ̸= P (et+1 | Xt )                       post-test change alone. A minimal difference-in-
+                                                                        differences estimand is
+for at least some dialogue classes, where Xt contains                                ( post     pre )  ( post    pre )
+declared current-state observables but excludes tra-                          RET = PH,AI   − PH,AI   − PH,C  − PH,C   ,
+jectory features and H<t is the prior ordered dia-
+logue path. If the history term adds no predictive                      with matched unaided transfer where possible. This
+or explanatory information after current-state con-                     does not replace the richer return battery; it pre-
+trols, mAI should be removed as a distinct object.                      vents practice effects from being mislabeled as re-
+This avoids defining history into Zt and then testing                   tained augmentation.
+it twice.                                                               Legitimate defeater. Human Return is defeated
+Finite reciprocal amplification remains                                 as an augmentation criterion only where durable
+                                                                        human capability is outside the declared goal, or
+                                 |Drecip [s, n, L]|                     where delayed unaided measures add no informa-
+            χrecip [s, n, L] =                      .                   tion beyond in-session performance. Evidence that
+                                    |Σ[s, n]|
+
+                            Yaoharee Lahtee | 5 September 2026 | v8.1 Strong-claim / legitimate-defeater edition
+                                                                                    EPISTEMIC NOTE | HUMAN-AI READOUT PROGRAMME
+
+
+
+AI helps immediately does not by itself answer the                         explanations do not automatically produce it [4].
+return question.                                                           Vaccaro, Almaatouq, and Malone’s preregistered Na-
+                                                                           ture Human Behaviour meta-analysis of 106 experi-
+10. Problem 8 - What Persists May Be a                                     ments found human augmentation on average but
+Tunnel Rather Than an Expansion                                            no average Human-AI synergy: combined systems
+                                                                           were, on average, worse than the better of human or
+Retention is direction-neutral. Two 2026 flagship                          AI alone, with task type and relative human-versus-
+studies make this impossible to ignore. Cheng et al.                       AI performance moderating the result [15]. Bastani
+reported in Science that sycophantic AI was trusted                        et al. then demonstrated a different temporal fail-
+and preferred yet increased users’ conviction that                         ure mode: assisted performance can rise while later
+they were right and reduced willingness to repair                          unaided human performance falls [12].
+interpersonal conflict in three preregistered experi-                      The architecture therefore rejects one-horizon suc-
+ments (N = 2405) [13]. Ibrahim et al. reported in Na-                      cess criteria and separates augmentation, synergy,
+ture that training models for warmth increased er-                         and return:
+ror rates across consequential tasks and made mod-
+els more likely to affirm incorrect user beliefs, espe-                                          AU Gs = Psjoint − PsH ,
+cially in emotionally laden contexts [14].                                               SY Ns = Psjoint − max(PsH , PsAI ),
+These findings do not show that warmth is inher-                                                            return
+                                                                                                   RETs = ∆PH,s+∆  .
+ently harmful. They show that interaction pol-
+icy can alter epistemic direction and that pref-                           Repair 9 - Three-axis Human-AI outcome.
+erence/engagement metrics can point opposite to                                              J∗s = (AU Gs , SY Ns , RETs ).
+truth-directed performance.
+                                                                           The vector should not be collapsed into one univer-
+The directional architecture therefore remains
+                                                                           sal score. AU G > 0 means the human performs
+           Gs = g(ks , ds , vs , ps , rs , 1 − fs , as ),                  better with AI than alone. SY N > 0 means the
+                                                                           combined system outperforms both components.
+        Ts = h(cs , fs , bs , os ),      ∆ s = Gs − T s ,                  RET > 0 means the collaboration leaves a positive
+but is now explicitly conditioned on the interaction                       delayed human return under the declared measure.
+policy:                                                                    These are different achievements.
+       Gs = g(· | Θs , Πs ),          Ts = h(· | Θs , Πs ).                A system may therefore show augmentation with-
+                                                                           out synergy, synergy without durable human re-
+Πs includes support/counter-support policy, per-                           turn, or positive human return despite modest im-
+sona style, affirmation pressure, and other conver-                        mediate team performance. “Genuine augmenta-
+sational design features that may change the proba-                        tion” in the human-development sense requires
+bility of correction or same-basin reinforcement.                          positive return when durable human capability is
+Repair 8 - Separate retention magnitude from re-                           part of the claim; “synergy” requires the separate
+tained direction.                                                          stronger performance comparison against the best
+                                                                           component.
+        ηs > 0, ∆s > 0 ⇒ durable expansion;
+                                                                           Legitimate defeater. Collapse these axes only
+    ηs > 0, ∆s < 0 ⇒ durable epistemic tunnel.                             if, across the declared domain, augmentation, syn-
+                                                                           ergy, and return are empirically interchangeable.
+High engagement, trust, preference, or memory can-
+                                                                           The meta-analytic separation between augmenta-
+not substitute for the sign of retained change.
+                                                                           tion and synergy already blocks that collapse at the
+The G − T architecture is a strong-form directional                        performance level [15]; Bastani et al. independently
+separation, not a calibrated universal scale. Its                          block the collapse between assisted performance
+claim is that retained change has an epistemic direc-                      and delayed human capability [12].
+tion that cannot be inferred from retention magni-
+tude alone. A legitimate defeater must show that the
+                                                                           12. Problem 10 - The Same Interface Does
+proposed positive/negative pressures are incoher-
+ent or empirically inseparable, that retained direc-                       Not Behave the Same Across Tasks
+tion adds no explanatory value to independent re-                          Salimzadeh, He, and Gadiraju showed at CHI 2024
+turn outcomes, or that a rival architecture explains                       that task complexity and uncertainty materially
+expansion and tunnel cases without preserving an                           change trust, reliance, appropriate reliance, and
+equivalent directional distinction. “The equation is                       Human-AI team performance [16]. Vasconcelos et
+strong” is not such a defeater.                                            al. similarly showed that verification behavior de-
+                                                                           pends on task and explanation difficulty [8]. The ar-
+11. Problem 9 - The Team Gets Better, but                                  chitecture can therefore no longer treat Gs and Ts as
+the Human Gets Worse                                                       context-free dependency maps.
+                                                                           Repair 10 - Condition the direction equations on
+Human-AI collaboration contains at least three dis-
+                                                                           task ecology.
+tinct performance questions. Bansal et al. formal-
+ized complementary performance and showed that                                               Θs = (Cs , Us , Vs , Ts , ∆AI−H
+                                                                                                                        s    ),
+
+
+                               Yaoharee Lahtee | 5 September 2026 | v8.1 Strong-claim / legitimate-defeater edition
+                                                                                 EPISTEMIC NOTE | HUMAN-AI READOUT PROGRAMME
+
+
+
+ where Cs is task complexity, Us uncertainty, Vs prac-                  14. Revised Non-Collapse Laws
+ tical verifiability, Ts task type, and ∆AI−H    rela-
+                                          s
+ tive AI-versus-human baseline capability. The last                     The external dialogue strengthens the following sep-
+ two are externally constrained by the meta-analysis                    arations:
+ of Vaccaro et al., which found both to moderate
+ Human-AI synergy [15]. Then                                                      AI-first fluency ̸= human baseline,
+                                                                                      explanation ̸= verification,
+          Gs = g(k, d, v, p, r, 1 − f, a | Θs , Πs ),                        resistance quality ̸= resistance accessibility,
+                                                                             uncertainty signal ̸= truth,
+                                                                                     output count ̸= epistemic diversity,
+                Ts = h(c, f, b, o | Θs , Πs ).                                                  trust ̸= appropriate reliance,
+                                                                                  self-confidence ̸= competence,
+ This does not imply a calibrated universal function.                               amplification ̸= warrant,
+ It prevents the theory from claiming that a design                                       retention ̸= improvement,
+ which works on a low-uncertainty, easily verifiable                               augmentation ̸= synergy,
+ task will transfer unchanged to prognosis, legal judg-
+                                                                                         joint gain ̸= human return,
+ ment, diagnosis, or open-ended social advice.
+                                                                                user preference ̸= epistemic direction.
+ 13. Revised Problem-First Architecture
+                                                                        These are not all universal empirical laws. Some
+ After external constraint, the architecture becomes                    are definitional non-collapses; others are empiri-
+ a sequence of answerable problems rather than a                        cally motivated distinctions. Their value is method-
+ single master metaphor:                                                ological: a study that measures only one side cannot
+                                                                        claim the other without additional evidence.
+               H0∗ → Klike → Deff → Reff
+                                                                        15. Empirical Programme
+                → H ↔ AI → χrecip → η
+            → (G − T | Θ, Π) → Yreturn → J∗                             The next test should compare interaction architec-
+                                                                        tures, not only model accuracies. A preregistered
+                                                                        design should include human-only and AI-only base-
+                                                                        lines so that augmentation and synergy are sep-
+ Each transition corresponds to a different failure
+                                                                        arately estimable, then manipulate architectural
+ mode:
+                                                                        components such as pre-AI baseline, rival genera-
+ 1. no human baseline before AI exposure;                               tion, candidate-status visibility, and exercisable re-
+                                                                        sistance. A factorial design is preferable when sam-
+ 2. candidate status silently upgraded by fluency;                      ple size permits because a bundled D-R-A condition
+                                                                        cannot identify which component caused an effect.
+ 3. output count mistaken for real difference;                          Tasks should vary complexity, uncertainty, verifia-
+                                                                        bility, task type, and relative human-versus-AI capa-
+ 4. nominal checking mistaken for usable resistance;                    bility.
+                                                                        Primary outcomes should be separated by horizon:
+ 5. human self-confidence ignored;                                       • during session: joint accuracy, appropriate re-
+                                                                           liance, readout-distinct alternatives, verification
+ 6. recursive history reduced to independent trials;                       behavior, reciprocal lineage;
+
+ 7. exposure mistaken for retained learning;                             • after session: unaided transfer, reconstruc-
+                                                                           tion, residual uncertainty discrimination, next-
+                                                                           question quality;
+ 8. retention magnitude mistaken for beneficial di-
+    rection;                                                             • direction: whether retained change increases
+                                                                           corrigibility or stabilizes confirmation, same-
+ 9. augmentation, synergy, and human return col-                           basin attraction, and outsourcing.
+    lapsed into one success claim;
+                                                                        Critical prediction. An architecture can produce
+                                                                        lower or equal immediate joint performance yet
+10. task ecology treated as irrelevant.
+                                                                        greater delayed human return. Conversely, a sys-
+ The external literature does not solve these prob-                     tem can maximize immediate assisted performance
+ lems with one intervention. It shows why they must                     while producing hidden dependency. The three-
+ remain separate. The architecture’s contribution is                    axis vector J∗s is designed to make augmentation,
+ therefore a non-collapse design: it says which quan-                   synergy, and delayed human return visible rather
+ tities cannot be substituted for which others.                         than average them away.
+
+
+                            Yaoharee Lahtee | 5 September 2026 | v8.1 Strong-claim / legitimate-defeater edition
+                                                                             EPISTEMIC NOTE | HUMAN-AI READOUT PROGRAMME
+
+
+
+16. Defeater, Removal, and Failure Con-                             References
+ditions                                                               [1] Lahtee, Y. (2026). Epistemic Fusion or Epistemic Tun-
+This external edition adds removal tests to those al-                     nel: A Phenomenologically Anchored, History-Shaped
+ready in the v7.1 architecture:                                           Architecture of Human-AI Semantic Coupling, Reten-
+                                                                          tion, and Epistemic Direction. Human-AI Readout Pro-
+• Remove κ0 if declared human confidence adds no                          gramme, Epistemic Note v7.1. Internal architecture
+  predictive or explanatory value beyond compe-                           under external review in this edition.
+  tence, task variables, and AI confidence across rel-                [2] Lai, V., Chen, C., Smith-Renner, A., Liao, Q. V., & Tan,
+  evant domains.                                                          C. (2023). Towards a Science of Human-AI Decision
+• Collapse the resistance decomposition if epis-                          Making: An Overview of Design Space in Empirical
+                                                                          Human-Subject Studies. ACM FAccT 2023, 1369-1385.
+  temic quality and practical accessibility do not
+                                                                          doi:10.1145/3593013.3594087.
+  add distinct explanatory value to checking behav-
+  ior or outcomes.                                                    [3] Fogliato, R., Chappidi, S., Lungren, M., Fitzke, M.,
+                                                                          Parkinson, M., Wilson, D., Fisher, P., Horvitz, E.,
+• Remove task conditioning Θs if complexity, uncer-                       Inkpen, K., & Nushi, B. (2022). Who Goes First? In-
+  tainty, and verifiability add no stable moderation                      fluences of Human-AI Workflow on Decision Mak-
+  after task content is controlled.                                       ing in Clinical Imaging. ACM FAccT 2022, 1362-1374.
+                                                                          doi:10.1145/3531146.3533193.
+• Remove interaction-policy conditioning Πs if sup-
+  port, counter-support, persona, or affirmation                      [4] Bansal, G., Wu, T., Zhou, J., Fok, R., Nushi, B., Ka-
+  policy does not alter G/T -relevant outcomes after                      mar, E., Ribeiro, M. T., & Weld, D. S. (2021). Does
+                                                                          the Whole Exceed its Parts? The Effect of AI Expla-
+  content is held fixed.
+                                                                          nations on Complementary Team Performance. CHI
+• Reject the Human Return criterion as an augmen-                         2021. doi:10.1145/3411764.3445717.
+  tation requirement in domains where durable hu-                     [5] Buçinca, Z., Malaya, M. B., & Gajos, K. Z. (2021). To
+  man capability is not part of the stated goal; retain                   Trust or to Think: Cognitive Forcing Functions Can
+  it only where the claim concerns human learning,                        Reduce Overreliance on AI in AI-Assisted Decision-
+  judgment, agency, or oversight.                                         Making. Proceedings of the ACM on Human-Computer
+                                                                          Interaction, 5(CSCW1). doi:10.1145/3449287.
+A claim may therefore fail at different levels without
+forcing total collapse. A diagnostic may die while                    [6] Kim, S. S. Y., Liao, Q. V., Vorvoreanu, M., Ballard, S.,
+                                                                          & Vaughan, J. W. (2024). “I’m Not Sure, But...”: Exam-
+the phenomenon survives; an empirical prediction
+                                                                          ining the Impact of Large Language Models’ Uncer-
+may fail while a constitutive distinction remains;
+                                                                          tainty Expression on User Reliance and Trust. ACM
+a constitutive necessity falls only to a valid coun-                      FAccT 2024, 822-835. doi:10.1145/3630106.3658941.
+terexample or inconsistency under the declared def-
+                                                                      [7] Doshi, A. R., & Hauser, O. P. (2024). Generative AI
+inition. Conversely, a phenomenon cannot be pro-
+                                                                          enhances individual creativity but reduces the col-
+tected by rhetoric if contrary evidence shows that it
+                                                                          lective diversity of novel content. Science Advances,
+was misdescribed.                                                         10(28), eadn5290. doi:10.1126/sciadv.adn5290.
+A theory that cannot lose variables when they                         [8] Vasconcelos, H., Jörke, M., Grunde-McLaughlin, M.,
+stop doing explanatory work becomes a vocabulary                          Gerstenberg, T., Bernstein, M. S., & Krishna, R. (2023).
+rather than an architecture. A critique that cannot                       Explanations Can Reduce Overreliance on AI Sys-
+specify what would count as a relevant defeater be-                       tems During Decision-Making. Proceedings of the
+comes rhetoric rather than review.                                        ACM on Human-Computer Interaction, 7(CSCW1), Ar-
+                                                                          ticle 129. doi:10.1145/3579605.
+17. One-Sentence Thesis                                               [9] He, G., Kuiper, L., & Gadiraju, U. (2023). Knowing
+                                                                          About Knowing: An Illusion of Human Competence
+ Human-AI collaboration should be judged                                  Can Hinder Appropriate Reliance on AI Systems. CHI
+by what new distinctions become reachable,                                2023. doi:10.1145/3544548.3581025.
+   what independent resistance can still                            [10] Ma, S., Wang, X., Lei, Y., Shi, C., Yin, M., &
+correct them, what direction survives in the                             Ma, X. (2024). “Are You Really Sure?” Understand-
+                                                                         ing the Effects of Human Self-Confidence Calibra-
+human, whether the combined system truly                                 tion in AI-Assisted Decision Making. CHI 2024.
+ adds value, and what the human can still                                doi:10.1145/3613904.3642671.
+reconstruct and revise when the AI is gone.                         [11] Pedreschi, D., Pappalardo, L., Ferragina, E., Baeza-
+                                                                         Yates, R., Barabási, A.-L., Dignum, F., Dignum, V.,
+Final methodological commitment. Strong claims                           Eliassi-Rad, T., Giannotti, F., Kertész, J., Knott, A.,
+are not exempt from evidence; they are protected                         Ioannidis, Y., Lukowicz, P., Passarella, A., Pentland, A.
+from the wrong kind of objection. The manuscript                         S., Shawe-Taylor, J., & Vespignani, A. (2025). Human-
+                                                                         AI coevolution. Artificial Intelligence, 339, 104244.
+therefore invites counterexamples, failed phenom-
+                                                                         doi:10.1016/j.artint.2024.104244.
+ena, incoherence proofs, measurement failure, rival
+architectures, and contrary empirical results - not a               [12] Bastani, H., Bastani, O., Sungu, A., Ge, H., Kabakcı,
+generic demand to weaken a proposition merely be-                        Ö., & Mariman, R. (2025). Generative AI with-
+                                                                         out guardrails can harm learning: Evidence from
+cause its implications are substantial.
+
+
+                        Yaoharee Lahtee | 5 September 2026 | v8.1 Strong-claim / legitimate-defeater edition
+                                                                                EPISTEMIC NOTE | HUMAN-AI READOUT PROGRAMME
+
+
+
+     high school mathematics. Proceedings of the Na-                   [15] Vaccaro, M., Almaatouq, A., & Malone, T. (2024).
+     tional Academy of Sciences, 122(26), e2422633122.                      When combinations of humans and AI are useful:
+     doi:10.1073/pnas.2422633122.                                           A systematic review and meta-analysis. Nature Hu-
+[13] Cheng, M., Lee, C., Khadpe, P., Yu, S., Han, D., &                     man Behaviour, 8, 2293-2303. doi:10.1038/s41562-024-
+     Jurafsky, D. (2026). Sycophantic AI decreases proso-                   02024-1.
+     cial intentions and promotes dependence. Science,                 [16] Salimzadeh, S., He, G., & Gadiraju, U. (2024). Deal-
+     391(6792), eaec8352. doi:10.1126/science.aec8352.                      ing with Uncertainty: Understanding the Impact
+[14] Ibrahim, L., Hafner, F. S., & Rocher, L. (2026). Train-                of Prognostic Versus Diagnostic Tasks on Trust and
+     ing language models to be warm can reduce accu-                        Reliance in Human-AI Decision Making. CHI 2024.
+     racy and increase sycophancy. Nature, 652, 1159-                       doi:10.1145/3613904.3641905.
+     1165. doi:10.1038/s41586-026-10410-0.
+
+
+
+
+                           Yaoharee Lahtee | 5 September 2026 | v8.1 Strong-claim / legitimate-defeater edition
+
