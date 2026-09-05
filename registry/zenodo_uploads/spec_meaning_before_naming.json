@@ -1,0 +1,68 @@
+{
+ "file": "dist/Meaning_Before_Naming_v1_0_FULL.pdf",
+ "title": "Meaning Before Naming: A Readout-Retention Architecture of Affective-Semantic Reorganization (Standalone Concept Note v1.0 FULL)",
+ "upload_type": "publication",
+ "publication_type": "preprint",
+ "publication_date": "2026-09-05",
+ "description_html": "<p><b>Status.</b> K0 conceptual architecture and programme-extension paper in the Human-AI Readout Programme; part of the series <i>When AI Expands Human Potential</i> (index DOI 10.5281/zenodo.22308201). Programme extension from Human Learning, Human LoRA, Readout Genesis, and Epistemic Fusion/Tunnel; continued by <i>Experience Is Meaning-Giving</i> (DOI 10.5281/zenodo.22357744). The paper does not propose a new theory of music, a universal code of emotion, or a literal physical theory of resonance. Music appears only as a phenomenological probe that makes a broader claim visible: meaningful human reorganization can occur before explicit naming, while the transmitted signal remains non-identical to the meaning that emerges in a particular reader.</p><p><b>Central claim.</b> Meaning need not begin with a name. A finite human can undergo an affectively weighted, context- and history-dependent reorganization in response to an external pattern before that change is propositionally articulated. The pattern does not carry a finished meaning from one interior to another. Rather, it supplies retained differences that a situated reader makes accessible through an existing and revisable organization of memory, embodiment, expectation, language, value, and context. Some such reorganizations vanish; others are retained and alter how later situations can be read, named, and acted upon.</p><p><b>Abstract (opening).</b> The Human-AI Readout Programme has treated language as epistemic mediation: articulation makes distinctions nameable, comparable, transportable, and revisable, while never becoming identical to the full human state from which it was produced. This paper proposes a readout-retention architecture in which externally available differences can produce a reader-relative affective-semantic configuration before explicit lexical or propositional articulation. The central non-collapse is that signal is not meaning, meaning is not naming, intensity is not warrant, and retention is not improvement. The structure: external difference → finite readout → affective-semantic reorganization → optional naming → selective retention → altered future readout. The paper specifies claim boundaries, failure modes, a minimal formal architecture, and an empirical programme for testing whether pre-nominative reorganization adds explanatory value beyond simpler accounts of arousal, verbal labeling, or memory.</p>",
+ "keywords": [
+  "meaning",
+  "naming",
+  "affective-semantic reorganization",
+  "readout-retention",
+  "music as probe",
+  "non-collapse",
+  "language as mediation",
+  "Human-AI Readout Programme",
+  "Readout Genesis",
+  "GLOSA K0"
+ ],
+ "language": "eng",
+ "version": "v1.0-FULL-2026-09-05",
+ "related": [
+  {
+   "identifier": "10.5281/zenodo.21425420",
+   "relation": "continues"
+  },
+  {
+   "identifier": "10.5281/zenodo.22341297",
+   "relation": "continues"
+  },
+  {
+   "identifier": "10.5281/zenodo.21529456",
+   "relation": "references"
+  },
+  {
+   "identifier": "10.5281/zenodo.22319715",
+   "relation": "references"
+  },
+  {
+   "identifier": "10.5281/zenodo.22339909",
+   "relation": "references"
+  },
+  {
+   "identifier": "10.5281/zenodo.22340255",
+   "relation": "references",
+   "resource_type": "software"
+  },
+  {
+   "identifier": "10.5281/zenodo.22357744",
+   "relation": "isContinuedBy"
+  },
+  {
+   "identifier": "10.5281/zenodo.22308201",
+   "relation": "isPartOf",
+   "resource_type": "publication-other"
+  },
+  {
+   "identifier": "10.5281/zenodo.22301552",
+   "relation": "isPartOf",
+   "resource_type": "publication-other"
+  },
+  {
+   "identifier": "10.5281/zenodo.22301459",
+   "relation": "isPartOf",
+   "resource_type": "publication-other"
+  }
+ ]
+}
