@@ -64,8 +64,8 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.x"
-      - name: Install the declared toolchain (requirements.txt)
-        run: python3 -m pip install --user -r requirements.txt
+      - name: Install the declared toolchain (requirements.txt) + pytest
+        run: python3 -m pip install --user -r requirements.txt pytest
       - name: Discover tests/ (skip if absent)
         run: |
           if [ -d tests ]; then
