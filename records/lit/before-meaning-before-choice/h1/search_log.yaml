@@ -1,0 +1,71 @@
+$schema: search_log.schema.json
+id: search-before-meaning-before-choice-001
+claim_or_hypothesis_ref: h1
+search_mode: TARGETED_SEARCH
+frozen_scope:
+  hypothesis_or_falsifier: 'H1 (admission order, root gate): human-semantic and agentic categories
+    are admitted only after a non-semantic retained-state layer has passed explicit reader,
+    translation, loss and dynamics-preservation gates; what distinguishes the architecture from its
+    relatives is this admission order with provenance, not any single construct. Falsifier: a
+    published framework that already admits meaning/experience/agency only after an explicit
+    reader+translation+loss+dynamics-preservation gate from a non-semantic retained layer (then
+    H1 is same, not different).'
+  question_type: mechanism
+  concepts_synonyms_vocabulary:
+    - difference that makes a difference
+    - semantic information / non-semantic information
+    - bisimulation / behavioural equivalence
+    - lumpability / state aggregation
+    - MDP / SMDP homomorphism
+    - causal states / computational mechanics
+    - information bottleneck
+    - perspectivism / scientific representation
+    - admission order / provenance gate
+  inclusion_exclusion_rules: 'Include: published (or open preprint) frameworks that define an
+    explicit reduction/aggregation/abstraction step over a non-semantic retained-state
+    representation, prior to or independent of a semantic/agentic layer, named in QUESTIONS.md
+    H1 relatives. Exclude: work that only asserts semantic content is grounded in physical state
+    without an explicit gate (reader/translation/loss/dynamics-preservation) as a distinguishable
+    step.'
+  time_window: '1972-2022 (Bateson 1972 to Massimi 2022), open access or freely fetchable copy only'
+  language_strategy: 'English sources only; verbatim exact_passage copied from the fetched text,
+    never translated, never from memory (rule 17).'
+  global_sources:
+    - Bateson 1972 Steps to an Ecology of Mind
+    - Floridi, SEP "Semantic Conceptions of Information"
+    - Kolchinsky & Wolpert 2018, Interface Focus / arXiv:1806.08053
+    - Sangiorgi 2009 "On the origins of bisimulation and coinduction"
+    - Park 1981 bisimulation (record)
+    - Kemeny & Snell 1976 lumpability (record)
+    - Buchholz 1994 J. Appl. Prob. "Exact and ordinary lumpability"
+    - Ravindran & Barto 2004 "Approximate homomorphisms" / 2003 SMDP homomorphisms
+    - Shalizi & Crutchfield 2001, J. Stat. Phys. / arXiv cond-mat/9907176
+    - Tishby, Pereira & Bialek 1999, "The information bottleneck method" / arXiv physics/0004057
+    - Giere 2006 Scientific Perspectivism (record)
+    - Massimi 2022 Perspectival Realism, OUP open access
+  local_context_sources:
+    - Readout Genesis Standalone Synthesis, 10.5281/zenodo.21529456
+    - The Readout Condition, 10.5281/zenodo.22301318
+  search_date: '2026-09-06'
+  stopping_rule: 'Stop once every named H1 relative in QUESTIONS.md has a card (FETCHED/VERIFIED
+    where an open copy exists, else a record-level PAYWALLED_ABSTRACT_ONLY or NOT_FETCHED card),
+    with at least 9 cards reaching VERIFIED.'
+  conflicts_of_interest: 'Own-lineage sources (Readout Genesis, Readout Condition) are cited as
+    the position under test, not as neutral third-party evidence; flagged accordingly in each row.'
+  access_limits: 'Paywalled publisher versions (e.g. Springer/JSTOR editions of Bateson, Kemeny
+    & Snell) recorded as record-level cards with fetch_status PAYWALLED_ABSTRACT_ONLY or
+    NOT_FETCHED; no passage invented from memory.'
+queries:
+  support: []
+  challenge: []
+sources_found: []
+prisma_counts: null
+global_track:
+  summary: ''
+  strength_note: ''
+local_track:
+  summary: ''
+  result: NOT_SEARCHED
+transfer_verdict: null
+summary_disclaimer: 'TODO: state explicitly what WAS and was NOT found on both support and challenge sides
+  once a search is actually run (S14 §2.2).'

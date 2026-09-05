@@ -1,0 +1,73 @@
+$schema: search_log.schema.json
+id: search-before-meaning-before-choice-001
+claim_or_hypothesis_ref: h2
+search_mode: TARGETED_SEARCH
+frozen_scope:
+  hypothesis_or_falsifier: 'H2 (before-meaning-before-choice): meaning and experience
+    are derived after domain readout from a non-semantic retained architecture (the
+    reverse of phenomenology''s starting point), with role separation before/after
+    sense-making and a defect/provenance record per translation. Falsifier: a
+    phenomenological or enactive account that itself derives experience from a
+    non-semantic retained layer with explicit loss accounting (then ''same'').'
+  question_type: mechanism
+  concepts_synonyms_vocabulary:
+    - intentionality
+    - sense-making
+    - participatory sense-making
+    - enaction / enactive cognition
+    - generative model
+    - free energy principle / active inference
+    - event segmentation
+    - event schema / event model
+    - affect-as-information / conceptual act theory
+    - meaning-derivation order
+    - non-semantic retained state
+  inclusion_exclusion_rules: 'Include: sources that state where in the processing
+    order (before vs after some non-semantic/formal/perceptual layer) meaning,
+    sense, or experience is held to arise, for phenomenology, enactivism, active
+    inference, event cognition, and emotion-construction traditions named in
+    QUESTIONS.md H2. Exclude: sources that only discuss meaning/experience without
+    any statement about derivation order or architecture relative to a
+    non-semantic layer.'
+  time_window: '1991-2022 (source list fixed by QUESTIONS.md H2; SEP entry accessed
+    2026-09-06)'
+  language_strategy: 'English-language sources only, as listed in QUESTIONS.md H2.'
+  global_sources:
+    - plato.stanford.edu (SEP, Phenomenology)
+    - PMC (Zacks et al. 2007)
+    - PhilPapers / author repositories (De Jaegher & Di Paolo 2007; Di Paolo,
+      Rohde & De Jaegher 2010)
+    - direct.mit.edu (Parr, Pezzulo & Friston 2022, MIT Press open access)
+    - Nature Reviews Neuroscience (Friston 2010, record if paywalled)
+    - Emotion journal / PsycNET (Lindquist et al. 2006, record if paywalled)
+    - MIT Press (Varela, Thompson & Rosch 1991, record)
+    - Zenodo API (own lineage: 22357744, 22410666, 21425420)
+  local_context_sources: []
+  search_date: '2026-09-06'
+  stopping_rule: 'Stop once every source named in QUESTIONS.md H2 has a card
+    (FETCHED, PAYWALLED_ABSTRACT_ONLY, or NOT_FETCHED) and at least 8 cards reach
+    VERIFIED status, or once all listed sources have been attempted twice
+    (direct + Wayback/Unpaywall fallback).'
+  conflicts_of_interest: 'Own lineage sources (Experience Is Meaning-Giving,
+    Meaning Before Naming, Experience Is the Human LoRA) are the founder''s own
+    prior work under the same research program being tested; cited as
+    self-sources, not independent evidence.'
+  access_limits: 'Some sources (Thompson 2007; Varela, Thompson & Rosch 1991;
+    Friston 2010; Lindquist et al. 2006) are behind publisher paywalls with no
+    known open mirror as of 2026-09-06; these are recorded as
+    PAYWALLED_ABSTRACT_ONLY or NOT_FETCHED per the task instructions, never
+    invented.'
+queries:
+  support: []
+  challenge: []
+sources_found: []
+prisma_counts: null
+global_track:
+  summary: ''
+  strength_note: ''
+local_track:
+  summary: ''
+  result: NOT_SEARCHED
+transfer_verdict: null
+summary_disclaimer: 'TODO: state explicitly what WAS and was NOT found on both support and challenge sides
+  once a search is actually run (S14 §2.2).'

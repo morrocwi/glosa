@@ -1,0 +1,124 @@
+$schema: hypothesis_selection.schema.json
+id: hsel-before-meaning-before-choice-001
+problem_ref: GLOSA-PC-20260906-0004
+decided_by: PENDING — founder has not selected (AI drafted H1–H4 in records/lit/before-meaning-before-choice/QUESTIONS.md;
+  selection is the founder's non-delegable act)
+decided_at: '2026-09-06'
+candidates:
+- hypothesis_ref: H1
+  hypothesis_world: 'Admission order: human-semantic/agentic categories are admitted only after a non-semantic
+    retained layer passes reader, translation, loss and dynamics-preservation gates; the order with provenance
+    is the contribution.'
+  lrs_manifest_ref: records/lit/before-meaning-before-choice/h1/litreview_manifest.yaml
+  dialogue_table_ref: records/lit/before-meaning-before-choice/h1/dialogue_table.md
+  criteria:
+    developability:
+      unresolved_space_shown_by_dialogue_table: PENDING — fill from the LRS dialogue tables before founder
+        selection
+      note: PENDING — fill from the LRS dialogue tables before founder selection
+    access_evidence_available:
+      can_we_get_new_access: 'yes'
+      note: PENDING — fill from the LRS dialogue tables before founder selection
+    falsifier_reachable_with_our_resources:
+      value: 'yes'
+      note: PENDING — fill from the LRS dialogue tables before founder selection
+    independence_routes_available:
+      max_reachable_independence_class: I3
+      note: PENDING — fill from the LRS dialogue tables before founder selection
+    risk_and_ethics:
+      human_participant_or_vulnerable_subject: 'no'
+      domain_safety_flags: &id001 []
+      note: PENDING — fill from the LRS dialogue tables before founder selection
+    genre_fit:
+      candidate_genres: &id002
+      - conceptual
+      - systematic_review
+      note: PENDING — fill from the LRS dialogue tables before founder selection
+- hypothesis_ref: H2
+  hypothesis_world: Meaning and experience are derived after domain readout from a non-semantic retained
+    architecture, with role separation and per-translation defect/provenance.
+  lrs_manifest_ref: records/lit/before-meaning-before-choice/h2/litreview_manifest.yaml
+  dialogue_table_ref: records/lit/before-meaning-before-choice/h2/dialogue_table.md
+  criteria:
+    developability:
+      unresolved_space_shown_by_dialogue_table: PENDING — fill from the LRS dialogue tables before founder
+        selection
+      note: PENDING — fill from the LRS dialogue tables before founder selection
+    access_evidence_available:
+      can_we_get_new_access: 'yes'
+      note: PENDING — fill from the LRS dialogue tables before founder selection
+    falsifier_reachable_with_our_resources:
+      value: 'yes'
+      note: PENDING — fill from the LRS dialogue tables before founder selection
+    independence_routes_available:
+      max_reachable_independence_class: I3
+      note: PENDING — fill from the LRS dialogue tables before founder selection
+    risk_and_ethics:
+      human_participant_or_vulnerable_subject: 'no'
+      domain_safety_flags: *id001
+      note: PENDING — fill from the LRS dialogue tables before founder selection
+    genre_fit:
+      candidate_genres: *id002
+      note: PENDING — fill from the LRS dialogue tables before founder selection
+- hypothesis_ref: H3
+  hypothesis_world: A feasible or afforded action need not be a live candidate; a history-shaped live-possibility
+    field sits between capability and choice; power can act on it before prohibition; the contribution
+    is the interface.
+  lrs_manifest_ref: records/lit/before-meaning-before-choice/h3/litreview_manifest.yaml
+  dialogue_table_ref: records/lit/before-meaning-before-choice/h3/dialogue_table.md
+  criteria:
+    developability:
+      unresolved_space_shown_by_dialogue_table: PENDING — fill from the LRS dialogue tables before founder
+        selection
+      note: PENDING — fill from the LRS dialogue tables before founder selection
+    access_evidence_available:
+      can_we_get_new_access: 'yes'
+      note: PENDING — fill from the LRS dialogue tables before founder selection
+    falsifier_reachable_with_our_resources:
+      value: 'yes'
+      note: PENDING — fill from the LRS dialogue tables before founder selection
+    independence_routes_available:
+      max_reachable_independence_class: I3
+      note: PENDING — fill from the LRS dialogue tables before founder selection
+    risk_and_ethics:
+      human_participant_or_vulnerable_subject: 'no'
+      domain_safety_flags: *id001
+      note: PENDING — fill from the LRS dialogue tables before founder selection
+    genre_fit:
+      candidate_genres: *id002
+      note: PENDING — fill from the LRS dialogue tables before founder selection
+- hypothesis_ref: H4
+  hypothesis_world: Human–AI interaction changes the later human state before the next prompt; what survives
+    after AI removal is a separately audited quantity.
+  lrs_manifest_ref: records/lit/before-meaning-before-choice/h4/litreview_manifest.yaml
+  dialogue_table_ref: records/lit/before-meaning-before-choice/h4/dialogue_table.md
+  criteria:
+    developability:
+      unresolved_space_shown_by_dialogue_table: PENDING — fill from the LRS dialogue tables before founder
+        selection
+      note: PENDING — fill from the LRS dialogue tables before founder selection
+    access_evidence_available:
+      can_we_get_new_access: 'yes'
+      note: PENDING — fill from the LRS dialogue tables before founder selection
+    falsifier_reachable_with_our_resources:
+      value: 'yes'
+      note: PENDING — fill from the LRS dialogue tables before founder selection
+    independence_routes_available:
+      max_reachable_independence_class: I3
+      note: PENDING — fill from the LRS dialogue tables before founder selection
+    risk_and_ethics:
+      human_participant_or_vulnerable_subject: 'no'
+      domain_safety_flags: *id001
+      note: PENDING — fill from the LRS dialogue tables before founder selection
+    genre_fit:
+      candidate_genres: *id002
+      note: PENDING — fill from the LRS dialogue tables before founder selection
+selection:
+  chosen: []
+  reason: PENDING founder selection
+  parked: []
+cooking_log_ref: blackbox_note.yaml#cooking-1 (this hypothesis_selection.yaml, task POT1-scaffold, drafted
+  by AI from the founder's own three verbatim rulings)
+routes_to: CONCEPTUAL genre (see genre_decision.yaml) -- per H1/H2's own genre_fit.candidate_genres, with
+  H3 carried as an empirical_quant/formal_proof-adjacent companion result within the same paper, per genre_decision.yaml's
+  disposition_of_hypotheses.

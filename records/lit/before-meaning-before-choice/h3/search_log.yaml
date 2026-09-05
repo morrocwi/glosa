@@ -1,0 +1,70 @@
+$schema: search_log.schema.json
+id: search-before-meaning-before-choice-001
+claim_or_hypothesis_ref: h3
+search_mode: TARGETED_SEARCH
+frozen_scope:
+  hypothesis_or_falsifier: >-
+    H3 (before-meaning-before-choice, Paper A): an afforded or structurally
+    feasible action need not be a live candidate for deliberation; a
+    history-shaped live-possibility field sits between capability and overt
+    choice, and power can act on that field before any prohibition; the
+    contribution claimed is the interface (counterfactual measurement +
+    provenance + actor ownership + corrigibility), not the phenomenon itself.
+    Falsifier: a published affordance/capability framework that already
+    defines a graded live-candidate field distinct from both feasibility and
+    choice with a counterfactual recoverable-gap measure (then H3 is 'same',
+    not 'different').
+  question_type: mechanism
+  concepts_synonyms_vocabulary:
+    - affordance
+    - capability set
+    - functioning
+    - live possibility / live candidate for deliberation
+    - feasible set vs permitted set
+    - power over the field of possible action
+    - structural violence / potential-actual gap
+    - epistemic injustice
+    - docile bodies / discursive constitution of agency
+  inclusion_exclusion_rules: >-
+    Include: primary or open-access secondary sources on affordance theory
+    (Gibson, Chemero, Rietveld & Kiverstein), the capability approach (Sen,
+    Nussbaum, Robeyns), empowerment/agency (Kabeer), structural/cultural
+    violence (Galtung), power and the field of possible action (Foucault),
+    freedom as non-domination (Pettit), epistemic injustice (Fricker), and
+    agentival subject-formation under norms (Mahmood). Exclude sources with no
+    open/accessible copy where only a paywalled abstract card can be made
+    (recorded as PAYWALLED_ABSTRACT_ONLY, not fabricated). Reuse existing
+    verified cards from records/lit/potential-as-readout/h1,h2,h3 under new
+    -bmbc ids with claim_ref H3, re-checked rather than re-fetched.
+  time_window: '1969-2023 (no recency filter; canonical/foundational texts admitted by design)'
+  language_strategy: 'English-language primary/secondary sources only'
+  global_sources:
+    - arXiv
+    - PMC / Europe PMC
+    - publisher open-access (Cambridge/OUP/Ecological Psychology author copies)
+    - Stanford Encyclopedia of Philosophy (SEP)
+    - author repository / university teaching mirrors
+    - Wayback Machine (fallback)
+    - Unpaywall API (fallback)
+  local_context_sources:
+    - records/lit/potential-as-readout/h1/citations/
+    - records/lit/potential-as-readout/h2/citations/
+    - records/lit/potential-as-readout/h3/citations/
+  search_date: '2026-09-06'
+  stopping_rule: 'Stop once >=10 cards reach VERIFIED status or every named source in the task brief has a FETCHED/PAYWALLED/NOT_FETCHED disposition, whichever is later.'
+  conflicts_of_interest: 'None; two own-lineage records (Choice Begins Before Choice 10.5281/zenodo.22357788, Potential as a Readout v2 10.5281/zenodo.22361830) are cited as own-lineage context, not as independent evidence.'
+  access_limits: 'Shared-workstation network only; 429/403 handled by one 30s wait then Wayback/Unpaywall fallback per the task brief; no login-walled databases used.'
+queries:
+  support: []
+  challenge: []
+sources_found: []
+prisma_counts: null
+global_track:
+  summary: ''
+  strength_note: ''
+local_track:
+  summary: ''
+  result: NOT_SEARCHED
+transfer_verdict: null
+summary_disclaimer: 'TODO: state explicitly what WAS and was NOT found on both support and challenge sides
+  once a search is actually run (S14 §2.2).'

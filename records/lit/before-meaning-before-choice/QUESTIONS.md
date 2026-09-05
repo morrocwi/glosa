@@ -1,0 +1,22 @@
+# LRS questions — Paper A: Before Meaning, Before Choice (GLS-2026-004)
+Founder instruction 2026-09-06 (BBL-2026-09-06-146): prepare the literature. Hypotheses below are AI DRAFTS for the founder to select (hypothesis selection is the human-owned act; none is selected yet). Sources: novelty-boundary review BBL-144 (cpg_research_journal/research/society-justice-peace/master-river/LITREVIEW_2026-09-06_novelty_boundary.md).
+
+## H1 — Admission order (root gate)
+Human-semantic and agentic categories are admitted only after a non-semantic retained-state layer has passed explicit reader, translation, loss and dynamics-preservation gates; what distinguishes the architecture from its relatives is this admission order with provenance, not any single construct.
+Relatives to card: Bateson 1972 (difference that makes a difference); Floridi (semantic information; SEP entry); Kolchinsky & Wolpert 2018 (semantic information, Interface Focus, open); bisimulation (Park 1981 / Milner 1989; Sangiorgi 2009 survey); lumpability (Kemeny & Snell 1976; a modern open treatment); MDP homomorphism (Ravindran & Barto 2004, open PDF); computational mechanics (Shalizi & Crutchfield 2001, arXiv cond-mat/9907176); Information Bottleneck (Tishby, Pereira & Bialek 1999, arXiv physics/0004057); Giere 2006 Scientific Perspectivism (record); Massimi 2022 Perspectival Realism (OUP, open access). Own: Readout Genesis 21529456 (weld, MEMK order), Readout Condition 22301318, glosa 22340255.
+Falsifier: a published framework that already admits meaning/experience/agency only after an explicit reader+translation+loss+dynamics-preservation gate from a non-semantic retained layer (then H1 is 'same', not 'different').
+
+## H2 — Direction of derivation for meaning and experience
+Meaning and experience are derived after domain readout from a non-semantic retained architecture (the reverse of phenomenology's starting point), with role separation before/after sense-making and a defect/provenance record per translation.
+Relatives: SEP 'Phenomenology' (intentionality); Thompson 2007 Mind in Life (record); Di Paolo, Rohde & De Jaegher 2010 / De Jaegher & Di Paolo 2007 participatory sense-making (open PDF); Parr, Pezzulo & Friston 2022 Active Inference (MIT Press open access) as the formal rival; Zacks et al. 2007 Event Segmentation Theory (PMC open) for rhythm as reader-side description; Lindquist et al. 2006 emotion/language. Own: Experience Is Meaning-Giving 22357744, Meaning Before Naming 22410666, Human LoRA 21425420.
+Falsifier: a phenomenological or enactive account that itself derives experience from a non-semantic retained layer with explicit loss accounting (then 'same').
+
+## H3 — Live possibility between capability and choice; power before prohibition
+An afforded or structurally feasible action need not be a live candidate for deliberation; a history-shaped live-possibility field sits between capability and overt choice, and power can act on that field before any prohibition; the contribution is the interface (counterfactual measurement + provenance + actor ownership + corrigibility), not the phenomenon.
+Relatives: Gibson 1979 (record); Chemero 2003 / Rietveld & Kiverstein 2014 (rich landscape of affordances, open); Sen 1999, Nussbaum 2011, Robeyns 2017, Kabeer 1999 (cards exist under records/lit/potential-as-readout — reuse); Galtung 1969, Foucault 1982, Pettit, Fricker 2007, Mahmood 2001 (some cards exist — reuse/complete). Own: Choice Begins Before Choice 22357788, Potential as a Readout v2 22361830.
+Falsifier: an affordance/capability framework that already defines a graded live-candidate field distinct from both feasibility and choice with a counterfactual recoverable-gap measure (then 'same').
+
+## H4 — Human–AI carryover and Human Return
+Repeated Human–AI interaction changes the later human state before the next prompt (the prompt is not the beginning), and what survives after the AI is removed is a separately audited quantity (gain/loss/provenance/warrant/direction), not inferable from assisted performance.
+Relatives: Glickman & Sharot 2024 (Nature Human Behaviour); Bastani et al. 2024 (GPT in classrooms, unaided post-test drop); Risko & Gilbert 2016 cognitive offloading (open); 2026 belief/cognitive offloading papers (arXiv); Yan et al. / Deng et al. GenAI education reviews. Own: CTSA 22339909, Epistemic Fusion v8.1 22319715 (Repair 7), Genesis Part VIII.
+Falsifier: evidence that assisted-session measures predict delayed unaided return as well as a return battery does (then the separate audit adds nothing).

@@ -1,0 +1,62 @@
+$schema: search_log.schema.json
+id: search-before-meaning-before-choice-001
+claim_or_hypothesis_ref: h4
+search_mode: TARGETED_SEARCH
+frozen_scope:
+  hypothesis_or_falsifier: 'H4 (before-meaning-before-choice): Repeated Human-AI interaction
+    changes the later human state before the next prompt (the prompt is not the beginning),
+    and what survives after the AI is removed is a separately audited quantity
+    (gain/loss/provenance/warrant/direction), not inferable from assisted performance.
+    Falsifier: evidence that assisted-session measures predict delayed unaided return
+    as well as a return battery does (then the separate audit adds nothing).'
+  question_type: mechanism
+  concepts_synonyms_vocabulary:
+    - human-AI feedback loop
+    - carryover / after-effect of AI assistance
+    - cognitive offloading
+    - belief offloading
+    - unaided post-test / delayed retention
+    - automation dependence / disuse-misuse-abuse
+    - generative AI and learning outcomes
+  inclusion_exclusion_rules: 'Include: empirical or theoretical work on how prior
+    AI/automation interaction changes later unaided human performance, judgment,
+    belief, or skill, with or without a separately measured post-removal state.
+    Exclude: pure capability/benchmark papers about AI systems with no human-outcome
+    measure.'
+  time_window: '1997-2026 (Parasuraman & Riley 1997 anchor to 2026 arXiv preprints)'
+  language_strategy: 'English sources only; verbatim exact_passage in source language.'
+  global_sources:
+    - Nature Human Behaviour (Glickman & Sharot 2024)
+    - SSRN / PNAS Nexus (Bastani et al. 2024/2025)
+    - Trends in Cognitive Sciences (Risko & Gilbert 2016)
+    - arXiv (2026 belief/cognitive offloading preprints)
+    - Human Factors (Parasuraman & Riley 1997)
+    - GenAI-in-education reviews (Yan et al. / Deng et al. 2025)
+  local_context_sources:
+    - 'own lineage: CTSA zenodo.22339909'
+    - 'own lineage: Epistemic Fusion v8.1 zenodo.22319715 (Repair 7)'
+    - 'own lineage: Readout Genesis Part VIII zenodo.21529456'
+  search_date: '2026-09-06'
+  stopping_rule: 'Stop once >=7 sources reach VERIFIED or a record-level
+    (PAYWALLED_ABSTRACT_ONLY/NOT_FETCHED) card, covering both the named target
+    list and own-lineage sources.'
+  conflicts_of_interest: 'Own-lineage sources (CTSA, Epistemic Fusion v8.1, Readout
+    Genesis Part VIII) are this project''s own prior claims, not independent
+    literature; flagged as such in every card that cites them.'
+  access_limits: 'No institutional journal access; open-access routes only
+    (arXiv, PMC, author repository, publisher OA, Wayback, Unpaywall). Paywalled
+    items recorded at abstract-only tier.'
+queries:
+  support: []
+  challenge: []
+sources_found: []
+prisma_counts: null
+global_track:
+  summary: ''
+  strength_note: ''
+local_track:
+  summary: ''
+  result: NOT_SEARCHED
+transfer_verdict: null
+summary_disclaimer: 'TODO: state explicitly what WAS and was NOT found on both support and challenge sides
+  once a search is actually run (S14 §2.2).'
