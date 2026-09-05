@@ -30,27 +30,29 @@ verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
 status: VERIFIED
 xenon_ledger_ref: null
 disclosure: 'This card is Chaiklin''s OWN reproduction (in quotation marks, with page
-  cite) of Vygotsky''s canonical ZPD definition. It directly supports H1: "potential
-  development" is defined not as an open/declared capacity but as the level ACTUALLY
-  DETERMINED THROUGH an assisted-performance act (problem solving under adult guidance
-  or peer collaboration) -- i.e. potential is witnessed via a specific demonstrable
-  procedure, not merely asserted. Chaiklin''s own surrounding argument (pp. 2-3, read
-  in full) further argues against loose/expansive readings of ZPD ("it will be used
-  loosely and indiscriminately, thereby becoming so amorphous that it loses all explanatory
-  power", quoting Wertsch 1984 p.7 as quoted by Chaiklin p.2), which is itself consistent
-  with H1''s finite/bounded framing of potential against open-ended declaration. |
-  I3 route (codex) judged from fetched metadata/abstract + the card''s quoted passage,
-  not full text:  | I2 route (claude) judged from fetched metadata/abstract + the
-  card''s quoted passage, not full text: Fetched text confirms Chaiklin quotes Vygotsky''s
-  ZPD passage verbatim with page cite, matching metadata/passage. But this defines
-  potential via guided/collaborative performance, not via a witnessed/retained-record
-  set of executed policies — the operational mechanism H1 specifies is absent, so
-  it is context, not direct support. | I1 route (claude) judged from fetched metadata/abstract
-  + the card''s quoted passage, not full text: Fetched text is Chaiklin''s ZPD chapter;
-  verbatim passage found with the Vygotsky 1978 p.86 attribution. Passage defines
-  potential development via observable problem-solving under guidance, an operational/witnessed
-  criterion bearing on H1 as DIRECT_QUOTATION. Fetched title/abstract empty, so metadata
-  judged from body text only.'
+  cite) of Vygotsky''s canonical ZPD definition. It bears on D1 (potential defined
+  through assisted performance) and supports the witness rule only in that potential
+  is read off a performance record, not a declared set: "potential development" is
+  defined not as an open/declared capacity but as the level ACTUALLY DETERMINED THROUGH
+  an assisted-performance act (problem solving under adult guidance or peer collaboration)
+  -- i.e. potential is witnessed via a specific demonstrable procedure, not merely
+  asserted. Chaiklin''s own surrounding argument (pp. 2-3, read in full) further argues
+  against loose/expansive readings of ZPD ("it will be used loosely and indiscriminately,
+  thereby becoming so amorphous that it loses all explanatory power", quoting Wertsch
+  1984 p.7 as quoted by Chaiklin p.2), which is itself consistent with H1''s finite/bounded
+  framing of potential against open-ended declaration. | I3 route (codex) judged from
+  fetched metadata/abstract + the card''s quoted passage, not full text:  | I2 route
+  (claude) judged from fetched metadata/abstract + the card''s quoted passage, not
+  full text: Fetched text confirms Chaiklin quotes Vygotsky''s ZPD passage verbatim
+  with page cite, matching metadata/passage. But this defines potential via guided/collaborative
+  performance, not via a witnessed/retained-record set of executed policies — the
+  operational mechanism H1 specifies is absent, so it is context, not direct support.
+  | I1 route (claude) judged from fetched metadata/abstract + the card''s quoted passage,
+  not full text: Fetched text is Chaiklin''s ZPD chapter; verbatim passage found with
+  the Vygotsky 1978 p.86 attribution. Passage defines potential development via observable
+  problem-solving under guidance, an operational/witnessed criterion bearing on H1
+  as DIRECT_QUOTATION. Fetched title/abstract empty, so metadata judged from body
+  text only.'
 superseded_by: null
 notes: PDF read directly via the Read tool (not WebFetch's model-summarized text)
   for this exact_passage, satisfying a stronger verification bar than a single WebFetch

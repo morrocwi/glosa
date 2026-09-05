@@ -12,12 +12,12 @@ statement:
     an agent comparable under the declared comparability relation (see `scope.comparability_relation`)
     executed the policy within a declared horizon and budget (paper/main.tex §"Definitions on the witnessed
     set", eq. 1''s Witness Rule). Under this reading the envelope $p^\ast$ computed over the set is a
-    checkable readout (a reader can ask: does the record exist, is the set finite and enumerable, does the
-    declared comparability relation hold) relative to that declared relation, never absolutely, and not
-    an unbounded declaration only its author can see. This card states the operational definition and its
-    falsifier; it does not yet claim the definition has been independently checked against the wider
-    literature -- that check is the citation work this card''s evidence_relations point at, not yet
-    independently (I3+) reviewed (see `scope.claim_scope` and `non_claims`).'
+    checkable readout (a reader can ask: does the record exist, is the set finite and enumerable, does
+    the declared comparability relation hold) relative to that declared relation, never absolutely, and
+    not an unbounded declaration only its author can see. This card states the operational definition
+    and its falsifier; it does not yet claim the definition has been independently checked against the
+    wider literature -- that check is the citation work this card''s evidence_relations point at, not
+    yet independently (I3+) reviewed (see `scope.claim_scope` and `non_claims`).'
   is_verbatim_quote: false
   translation:
     text: 'ปริมาณ "ศักยภาพ" ในข้อความของโปรแกรมนี้เอง -- $\Pi^{\mathrm{feas}}$ ของ Agency Potential, $R_{\mathrm{adm}}$
@@ -50,20 +50,19 @@ standpoint:
     series, cpg_research_journal), per founder rulings BBL-2026-09-05-130/132/134.
 claim_type: INTERPRETIVE
 claim_type_mapping_note: 'REVISED 2026-09-05 after three-route review (reviews/GLOSA-CC-20260905-0301.R1/R2/R3.review_report.json):
-  hypotheses.md/hypothesis_selection.yaml label H1 an operational-definition/DEFINITIONAL claim (a
-  set-membership rule stated as an exact functional, paper/main.tex eq. 1), and this card originally mapped
-  that to FORMAL with `lens_translation.formal_applicability: exact_functional`. All three review routes
-  found the "exact functional" reading undercut by an undeclared comparability predicate ("comparable
-  history and conditions" -- named by R1, R2, and R3 alike): a reader cannot mechanically decide set
-  membership without first fixing who counts as comparable, so the rule is not an exact functional over
-  raw records, it is a functional relative to a declared comparability relation the card must state (now
-  done, `scope.comparability_relation`). `claim_card.schema.json`''s `claim_type` enum has no `DEFINITIONAL`
-  value (EMPIRICAL|FORMAL|INTERPRETIVE|NORMATIVE|CONVENTIONAL_LEGAL|DECISION|SOCIAL|HUMAN_PARTICIPANT).
-  INTERPRETIVE is now used as the schema''s closest fit, matching the mapping the sibling H2 card
-  (GLOSA-CC-20260905-0302) uses for a structurally similar relation-dependent reading: H1 restates where a
-  text-internal concept (the programme''s own feasible/admissible/viable sets) is located, relative to a
-  declared relation, not an absolute exact-functional set-membership test. Documented rather than silent,
-  matching the same-discipline precedent in GLOSA-CC-20260904-0201''s own `claim_type_mapping_note`.'
+  hypotheses.md/hypothesis_selection.yaml label H1 an operational-definition/DEFINITIONAL claim (a set-membership
+  rule stated as an exact functional, paper/main.tex eq. 1), and this card originally mapped that to FORMAL
+  with `lens_translation.formal_applicability: exact_functional`. All three review routes found the "exact
+  functional" reading undercut by an undeclared comparability predicate ("comparable history and conditions"
+  -- named by R1, R2, and R3 alike): a reader cannot mechanically decide set membership without first
+  fixing who counts as comparable, so the rule is not an exact functional over raw records, it is a functional
+  relative to a declared comparability relation the card must state (now done, `scope.comparability_relation`).
+  `claim_card.schema.json`''s `claim_type` enum has no `DEFINITIONAL` value (EMPIRICAL|FORMAL|INTERPRETIVE|NORMATIVE|CONVENTIONAL_LEGAL|DECISION|SOCIAL|HUMAN_PARTICIPANT).
+  INTERPRETIVE is now used as the schema''s closest fit, matching the mapping the sibling H2 card (GLOSA-CC-20260905-0302)
+  uses for a structurally similar relation-dependent reading: H1 restates where a text-internal concept
+  (the programme''s own feasible/admissible/viable sets) is located, relative to a declared relation,
+  not an absolute exact-functional set-membership test. Documented rather than silent, matching the same-discipline
+  precedent in GLOSA-CC-20260904-0201''s own `claim_type_mapping_note`.'
 genre: conceptual
 venue_track: none
 companion_of: null
@@ -128,9 +127,15 @@ five_questions:
       search_log.yaml, litreview_manifest.yaml, dialogue_table.md, citation cards under `citations/`)
       had not yet completed at the time this card was drafted -- see `capability_readout` and `non_claims`.'
     citation_refs:
-    - cite-potential-h1-001
-    - cite-potential-h1-002
-    - cite-potential-h1-003
+    - cite-aristotle-metaphysics-theta-001
+    - cite-chaiklin-vygotsky-zpd-002
+    - cite-nussbaum-2011-choice-007
+    - cite-robeyns-2017-004
+    - cite-nussbaum-2011-005
+    - cite-nussbaum-2011-sen-quote-009
+    - cite-robeyns-2017-conversion-010
+    - cite-foucault-1982-008
+    - cite-own-readout-genesis-lens-h1-001
     capability_readout: potential_witnessed
     ai_assisted_fields:
     - five_questions.ai_filled.*
@@ -141,35 +146,52 @@ five_questions:
       already stated elsewhere in the literature under a different name, or is this programme's own reading
       of N2 (Readout Genesis) applied to an option set
     licensing_test:
-      regime: literature scoping pass not yet run to completion (records/lit/potential-as-readout/h1/,
-        owned by concurrent workers); this card cites PLACEHOLDER citation ids pending that pass
-      result: NOT YET DETERMINED. The three cited evidence_relations below use placeholder citation ids
-        (cite-potential-h1-001..003) that do not yet resolve to existing, VERIFIED citation cards -- this
-        is disclosed explicitly, not hidden, per `non_claims` and `dissent_records` below.
-      notes: n=0 completed citation checks at the time this card was drafted; a follow-up revision is
-        required once records/lit/potential-as-readout/h1/citations/ exists and is VERIFIED.
+      regime: literature scoping pass completed at the I1 (same-session) level only (records/lit/potential-as-readout/h1/citations/,
+        produced by concurrent workers); no independent (I3+) route has yet re-checked these cards or
+        this card's own bearings
+      result: n=9 cards checked by the I1 route (cite-aristotle-metaphysics-theta-001, cite-chaiklin-vygotsky-zpd-002,
+        cite-nussbaum-2011-choice-007, cite-robeyns-2017-004, cite-nussbaum-2011-005, cite-nussbaum-2011-sen-quote-009,
+        cite-robeyns-2017-conversion-010, cite-foucault-1982-008, cite-own-readout-genesis-lens-h1-001).
+        Mixed result on H1's own falsifier direction -- two (Chaiklin, Aristotle-as-context) read as compatible
+        with a witnessed-set reading, three (Robeyns, Nussbaum x2) CHALLENGE it by treating the feasible/opportunity
+        set as unwitnessed. No source found states H1's own witness rule verbatim under a different name
+        (H1's stated falsifier is not yet triggered), but the concept is contested, not confirmed, by
+        the I1 pass. This is NOT an independent (I3+) verdict -- see `dissent_records` and the review
+        reports (reviews/GLOSA-CC-20260905-0301.R1/R2/R3.review_report.json), all three of which found
+        this card's prior bearings (Aristotle=SUPPORTS) inflated relative to the I1 pass's own disclosures.
+      notes: The previous revision's citation_refs (cite-potential-h1-001..003) were drafting-stage placeholders
+        naming the expected SHAPE of this work before it existed; they have now been reconciled to the
+        real ids the concurrent lit workers produced (POT1-integrate, 2026-09-05). This reconciliation
+        was performed by AI (this session), not independently checked by a second route -- see `five_questions.ai_filled.decision_policy`.
     zero_vs_bottom: unresolved_bottom
   ai_filled:
-    current_evidence: AI (the AI assistant, this session) drafted this card's statement, lens_translation,
-      and hypothesis_world from the founder's own Blackbox Note lines and paper/main.tex's own text; no
-      literature retrieval for H1's own falsifier has been performed by this task (task POT1-scaffold;
-      that work is owned by concurrent workers lit-h1-h3 and lit-h2).
-    retrieved_tool_evidence: No WebFetch/WebSearch tool calls were made by this task to retrieve H1 literature;
-      the citation_refs and evidence_relations below are PLACEHOLDER ids naming the expected shape of
-      that future work, not yet resolved to fetched sources.
-    retained_record_route: This claim card's field structure was drafted by AI from paper/main.tex's own
-      stated eq. 1 and the founder's Blackbox Note; no new observation or search was performed to produce
-      this card.
+    current_evidence: AI (the AI assistant, this session) originally drafted this card's statement, lens_translation,
+      and hypothesis_world from the founder's own Blackbox Note lines and paper/main.tex's own text with
+      placeholder evidence. This revision (2026-09-05, POT1-integrate then the post-review reconciliation
+      pass) is also AI-performed work -- it reconciled the placeholder citation_refs to the nine real
+      citation cards the concurrent lit workers produced (records/lit/potential-as-readout/h1/citations/),
+      and further revised the statement, claim_type, formal_applicability, and scope fields in response
+      to three independent review reports (reviews/GLOSA-CC-20260905-0301.R1/R2/R3.review_report.json).
+      None of this reconciliation has itself been independently (I3+) re-checked.
+    retrieved_tool_evidence: This task did not itself run new WebFetch/WebSearch calls; it read the nine
+      already-fetched citation cards and their row files (records/lit/potential-as-readout/h1/citations/,
+      h1/rows/) produced by concurrent workers, and read the three review_report.json files, to perform
+      the reconciliation. No new source retrieval was performed.
+    retained_record_route: This claim card's evidence_relations, scope.comparability_relation, and dissent_records
+      were reconciled by AI from the existing citation cards, their row files, and the three review reports
+      named above; no new observation or search was performed.
     model_calibration_assumption: No claim in this card depends on an AI model's stated confidence or
-      calibration score; the placeholder status of the citation_refs is stated as a structural fact, not
+      calibration score; the reconciliation reflects what the cited cards and review reports state, not
       a confidence estimate.
-    prompt_system_constraint: This card was drafted under task instruction POT1-scaffold, which explicitly
-      requires naming placeholder citation ids as placeholders needing reconciliation, rather than inventing
-      citation content from AI training-data memory to fill them in.
-    decision_policy: The choice to draft a full-shape card now, with placeholder evidence_relations, rather
-      than waiting for the lit workers to finish, was an AI drafting choice made to satisfy the task's
-      own scaffold-now instruction; it is flagged throughout (capability_readout, non_claims, dissent_records)
-      rather than presented as if the citation work were already done.
+    prompt_system_constraint: This revision was performed under an explicit instruction to apply the REST
+      of the unfixed findings from the three review reports card-by-card and re-validate, rather than
+      inventing new resolution content beyond what the reports and cited cards state.
+    decision_policy: The choice to retag claim_type FORMAL->INTERPRETIVE and formal_applicability exact_functional->relational_pointwise,
+      rather than leaving the comparability gap as an unaddressed assumption, was an AI drafting choice
+      made because all three independent routes converged on the same defeater (the undeclared comparability
+      predicate); it is disclosed here and in `claim_type_mapping_note` rather than presented as a founder
+      ruling -- the founder has not yet signed off on this specific reclassification (status stays Draft,
+      independent_check.status stays NONE).
   assumed:
   - id: A1
     type: inferential_commitment
@@ -313,11 +335,43 @@ five_questions:
         card reading as more evidenced than it is. This is a maker-side self-flag, not an independent
         check, and does not substitute for one (glosa gate rule 3: maker != checker != approver).'
       resolved: false
-      resolution: 'NOT resolved. Left open pending: (1) concurrent workers completing records/lit/potential-as-readout/h1/citations/,
-        (2) a reconciliation pass updating this card''s evidence_relations/citation_refs to the real ids
-        and real bearings found, and (3) an independent (I3+) cross-vendor review of the reconciled card,
-        none of which this task performed. `independent_check.status` is set to NONE below to reflect
-        this honestly (not PENDING, which would imply a check is underway).'
+      resolution: 'PARTIALLY resolved 2026-09-05 (POT1-integrate then post-review reconciliation): (1)
+        concurrent workers completed records/lit/potential-as-readout/h1/citations/ (n=9 cards) -- DONE;
+        (2) this card''s evidence_relations/citation_refs were reconciled to the real ids and bearings
+        found -- DONE, by AI, not yet founder-reviewed; (3) an independent (I3+) cross-vendor review of
+        the reconciled card -- NOT YET DONE; the three review routes that did run (R1/R2/R3, see the new
+        dissent_records entry below) audited an earlier, still-placeholder-inconsistent revision of this
+        card, not the current one. `independent_check.status` remains NONE below to reflect this honestly.'
+    - by: three independent review routes (Falsifier/HostileReviewer/SourceAuditor, R1/R2/R3)
+      date: '2026-09-05'
+      content: 'Strongest defeaters, verbatim-short from each report (full text: reviews/GLOSA-CC-20260905-0301.R1/R2/R3.review_report.json).
+        R1: "No evidence relation in the packet bears on that [without-loss] clause -- none cites the
+        programme''s own texts... the Witness Rule''s predicates (''comparable history'', declared horizon/budget)
+        are unspecified, so two readers can disagree on membership over the same record store." R2: "no
+        cited evidence or test addresses that equivalence [without loss of the programme''s own claims]...
+        [the comparability clause] reintroduces author judgment; set-membership checkability is also conflated
+        with envelope p* checkability... Aristotle is tagged SUPPORTS while the card''s own disclosure
+        and two routes call it background only; Robeyns and Nussbaum disclosures state they CHALLENGE
+        H1." R3: "cite-aristotle-metaphysics-theta-001 is tagged bearing=SUPPORTS, yet the passage...
+        says nothing about witnessing, retained records, finiteness, or enumerability... Chaiklin''s card
+        asserts ''directly supports'' but its I2 route rates it context only... Robeyns and Nussbaum bear
+        against H1''s witnessed-set definition and their VERIFIED status rests on routes that could not
+        locate the passage." All three also independently found the card internally inconsistent (placeholder
+        citation_refs/licensing_test vs. resolved tested.evidence_relations) on the prior revision.'
+      resolved: false
+      resolution: 'PARTIALLY resolved by this revision: the without-loss clause was rescoped to "under
+        assumption A1... which this card does not test"; the comparability relation is now declared (`scope.comparability_relation`);
+        claim_type/formal_applicability were downgraded to INTERPRETIVE/relational_pointwise; citation_refs/licensing_test/ai_filled
+        were regenerated to match tested.evidence_relations (n=9, not n=0). NOT resolved: the Aristotle
+        bearing was already NEUTRAL before this revision (an earlier fix, not this one) and Chaiklin''s
+        citation-card disclosure ("directly supports") still overstates its own I2 route''s "context only"
+        finding -- this claim card cannot edit records/lit/potential-as-readout/h1/citations/ under this
+        task''s ownership scope, so the Chaiklin overclaim is flagged here as an open item rather than
+        silently left unmentioned (glosa gate rule 10, no finding dropped). No independent (I3+) re-review
+        of this reconciled revision has occurred; `independent_check.status` remains NONE. | Later the
+        same day: the Chaiklin card disclosure was corrected (bears on D1; supports the witness rule only
+        in that potential is read off a performance record). What stays open is structural: no I2+ route
+        has re-read this revision (K0).'
 identification_ladder:
   layers:
   - id: A0
@@ -367,14 +421,24 @@ silent_lift_check:
   status: not_run
 scope:
   generalization_claimed: none
-  evidence_scope: Zero completed independent literature checks at the time this card was drafted; the
-    citation pass this card's own evidence_relations depend on is owned by concurrent workers (lit-h1-h3,
-    lit-h2) and had not produced VERIFIED citation cards yet.
+  comparability_relation: Two agents are comparable for task g when they share the declared z-fields (tools,
+    resources, relations, objection acknowledgement) and a history window h of declared length; membership
+    in the witnessed set is checkable relative to that declared relation, never absolutely. Added 2026-09-05
+    after all three review routes (R1, R2, R3) independently named the undeclared "comparable history
+    and conditions" clause as the load-bearing gap in the Witness Rule's own checkability claim (reviews/GLOSA-CC-20260905-0301.R1/R2/R3.review_report.json).
+  evidence_scope: n=9 citation cards checked by the I1 (same-session) route at the time of this revision
+    (cite-aristotle-metaphysics-theta-001, cite-chaiklin-vygotsky-zpd-002, cite-nussbaum-2011-choice-007,
+    cite-robeyns-2017-004, cite-nussbaum-2011-005, cite-nussbaum-2011-sen-quote-009, cite-robeyns-2017-conversion-010,
+    cite-foucault-1982-008, cite-own-readout-genesis-lens-h1-001); zero of these have been re-checked
+    by an independent (I3+) route. The placeholder ids this card originally carried (cite-potential-h1-001..003)
+    have been reconciled to the real ids above (see `five_questions.ai_filled` and `revision_history`);
+    this reconciliation was AI-performed, not yet founder-reviewed for accuracy of the bearings assigned.
   claim_scope: An operational-definition proposition (the witness rule) restated from paper/main.tex's
-    own eq. 1, with a stated but not-yet-run falsifier -- this card does not claim H1 has been checked
-    against literature, only that the definition is stated precisely enough to be checked, and names exactly
-    what is missing (real citation content) rather than silently treating the placeholder evidence as
-    real.
+    own eq. 1, with a stated but not-yet-run falsifier, read relative to the comparability relation declared
+    above -- this card does not claim H1 has been checked against literature by an independent route,
+    only that the definition (including its comparability predicate) is now stated precisely enough to
+    be checked, and that nine same-session (I1) citation checks exist while zero independent (I3+) checks
+    do.
 tier: Dr
 k_state: K0
 ledger:
@@ -382,14 +446,22 @@ ledger:
   borrowed:
   - 10.5281/zenodo.21529456 (Readout Universe -- Yaoharee Lahtee, lens)
   open:
-  - whether the witness rule is already stated, under a different name, in peace-research/capability-theory/information-theoretic-agency
-    literature -- no literature check has run yet
-  - whether the concurrent lit workers' H1 citation pass will find sources that operationalize the same
-    criterion this card states -- not yet reachable, pending records/lit/potential-as-readout/h1/citations/
+  - whether the witness rule, now stated relative to the declared comparability relation, is already stated
+    under a different name in peace-research/capability-theory/information-theoretic-agency literature
+    -- the n=9 I1 pass found no source stating an equivalent rule verbatim, but no independent (I3+) route
+    has checked this
+  - whether the nine I1-level citation cards' mixed verdict (two compatible, three CHALLENGES) survives
+    an independent (I3+) re-check, particularly the Robeyns/Nussbaum CHALLENGES bearings and the Chaiklin
+    citation card's own "directly supports" disclosure, which this claim card flags as overstated (dissent_records)
+    but cannot itself edit
 non_claims:
-- This card does not claim H1 has been checked against independently fetched literature -- the citation_refs
-  and tested.evidence_relations above are PLACEHOLDER ids (cite-potential-h1-001..003) pending records/lit/potential-as-readout/h1/citations/
-  (owned by concurrent workers lit-h1-h3/lit-h2).
+- This card does not claim H1 has been checked against independently (I3+) reviewed literature -- the
+  citation_refs and tested.evidence_relations above name nine real, I1-level (same-session) citation cards
+  under records/lit/potential-as-readout/h1/citations/ (reconciled from the prior revision's placeholder
+  ids cite-potential-h1-001..003); none of the nine has yet been re-checked by an independent (I3+) route.
+- This card does not claim the reconciliation of placeholder ids to real evidence_relations (this revision,
+  2026-09-05) has itself been independently checked -- it was performed by AI in response to three review
+  reports, not signed off by the founder or a second independent route.
 - This card does not claim the witness rule is prior art, novel, or first -- comparison verdicts (same/different/cited)
   are reserved for the literature pass, not asserted here (glosa gate rule 6).
 - This card does not claim any of paper/main.tex's own equations have been independently verified; it
@@ -453,9 +525,15 @@ lineage:
 related_source_cards: []
 related_observation_cards: []
 related_citation_cards:
-- cite-potential-h1-001
-- cite-potential-h1-002
-- cite-potential-h1-003
+- cite-aristotle-metaphysics-theta-001
+- cite-chaiklin-vygotsky-zpd-002
+- cite-nussbaum-2011-choice-007
+- cite-robeyns-2017-004
+- cite-nussbaum-2011-005
+- cite-nussbaum-2011-sen-quote-009
+- cite-robeyns-2017-conversion-010
+- cite-foucault-1982-008
+- cite-own-readout-genesis-lens-h1-001
 responsibility:
   data_to_inference: joint
   inference_to_claim: human
@@ -484,3 +562,23 @@ revision_history:
     (status: not_run), scope, non_claims, responsibility, disclaimers computed via `./cli/glosa claim
     disclaimers`. `independent_check.status` set to NONE (no route has checked this card). Not yet reviewed
     or signed by the founder (status stays Draft).'
+- rev: '2'
+  date: '2026-09-05'
+  by: ai-assistant
+  note: 'Post-review reconciliation, applying the unfixed findings from three independent review routes
+    (reviews/GLOSA-CC-20260905-0301.R1/R2/R3.review_report.json; Aristotle bearing NEUTRAL and I3->I1
+    tag resets were already applied before this revision). (a) statement: rescoped "without loss of the
+    programme''s own claims" to "read on the programme''s own sets under assumption A1 (stated below),
+    which this card does not test", and rewrote the membership-checkability clause to be relative to a
+    declared comparability relation. (b) added `scope.comparability_relation`; changed claim_type FORMAL->INTERPRETIVE
+    and `lens_translation.formal_applicability` exact_functional->relational_pointwise, with `claim_type_mapping_note`
+    rewritten to explain why. (c) regenerated `five_questions.seen.citation_refs`, `separates.licensing_test`
+    (n=9 I1 cards), and `ai_filled` to match `tested.evidence_relations`, disclosing that AI performed
+    the reconciliation; updated `non_claims`, `ledger.open`, and `related_citation_cards` to match. (d)
+    added a `dissent_records` entry summarising all three routes'' strongest defeaters verbatim-short
+    with report file refs, and marked the prior dissent_records entry PARTIALLY resolved. Left open, flagged
+    not silently dropped (glosa gate rule 10): the Chaiklin citation card''s own "directly supports" disclosure
+    overstates its I2 route''s "context only" finding (R3) -- this task''s ownership scope does not include
+    records/lit/potential-as-readout/h1/citations/, so that card itself was not edited. No independent
+    (I3+) re-review of this reconciled revision has occurred; `independent_check.status` remains NONE;
+    `status` remains Draft (not founder-signed).'

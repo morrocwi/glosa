@@ -9,7 +9,7 @@
   "passage_plausible": true,
   "claim_match": true,
   "bearing": "CONTEXT_ONLY",
-  "reason": "Fetched text is Galtung 1969 'Violence, Peace, and Peace Research'; verbatim passage found at section 2 opening, matching locator. Passage defines violence as actual-below-potential gap; it is foundational framing H3 builds on, not evidence for H3's numerical budget-exhaustion signature or the fixture result.",
+  "reason": "Fetched text is Galtung's 'Violence, Peace, and Peace Research' (section 2 on defining violence); the quoted passage appears verbatim, including the run-together artifacts. It defines violence as the actual-vs-potential gap, which is relevant background for H3's potential/feasible-region framing, but it says nothing about suppression budgets, cost divergence, or the fixture, so context only.",
   "passage_mechanical": "verbatim prefix found in fetched open text"
  },
  "date": "2026-09-04"

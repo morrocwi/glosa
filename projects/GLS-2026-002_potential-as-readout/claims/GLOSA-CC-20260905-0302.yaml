@@ -5,22 +5,29 @@ shape: full
 statement:
   language: en
   text: '"Potential" across this programme''s five texts is proposed to be at minimum two layers that
-    must not be collapsed: LAYER 1, choosing a policy within an already-fixed constraint structure $C$
-    (what Agency Potential''s $p^\ast$ computes, what Causal Ethics'' Axiom II selects a regime within);
+    are not collapsed in this reading: LAYER 1, choosing a policy within an already-fixed constraint
+    structure $C$ (what the programme note of 5 September 2026 (superseded by the paper) called Agency
+    Potential''s $p^\ast$, and what Causal Ethics'' Axiom II selects a regime within, cite-causal-ethics-axiom2-001);
     and LAYER 2, changing the constraint structure itself -- renegotiating a rule, opening a correction
-    channel, forming a coalition, delegating -- which Causal Agency reserves the word "agency" for ($\partial
-    T_p/\partial C \cdot \partial C/\partial x > 0$, Def. 3) and calls mere layer-1 stabilisation "proto-agency"
-    (§6.5-6.6), and which Causal Grammar''s "repair" names as a protected layer-2 act (paper/main.tex,
-    D3). This card states the proposed two-layer distinction and its falsifier; it does not yet claim
-    the distinction has been checked against the wider human-agency literature (capability theory, social-cognitive
-    theory, relational sociology) for portability -- that check is the citation work this card''s evidence_relations
-    point at, not yet complete or independently reviewed (see `scope.claim_scope` and `non_claims`).'
+    channel, forming a coalition, delegating -- which Causal Agency reserves the word "agency" for (the
+    inequality $\partial T_p/\partial C \cdot \partial C/\partial x > 0$, attributed to its own actual
+    location at §6.5 p.19, cite-causal-agency-formula-002, not to Def. 3''s prose statement) and calls
+    mere layer-1 stabilisation "proto-agency" (§6.6, cite-causal-agency-protoagency-002), and which Causal
+    Grammar''s "repair" this card glosses as a layer-2 act -- "layer-2" is this card''s own reading of
+    Causal Grammar''s "protected reopening of damaged relations", not a term Causal Grammar itself uses
+    (paper/main.tex, D3). This card states the proposed two-layer distinction and its falsifier; it does
+    not yet claim the distinction has been checked against the wider human-agency literature (capability
+    theory, social-cognitive theory, relational sociology) for portability -- that check is the citation
+    work this card''s evidence_relations point at, not yet complete or independently reviewed (see
+    `scope.claim_scope` and `non_claims`).'
   is_verbatim_quote: false
   translation:
-    text: '"ศักยภาพ" ในห้าข้อความของโปรแกรมนี้เสนอให้มีอย่างน้อยสองชั้นที่ห้ามยุบรวมกัน: **ชั้น 1** เลือกนโยบายภายในโครงสร้างข้อจำกัด
-      $C$ ที่ตายตัวแล้ว (สิ่งที่ $p^\ast$ ของ Agency Potential คำนวณ) และ **ชั้น 2** เปลี่ยนโครงสร้างข้อจำกัดเอง
-      ซึ่ง Causal Agency สงวนคำว่า "agency" ไว้ให้ ชั้นนี้เท่านั้น และเรียกการทรงตัวในชั้น 1 ว่า "proto-agency"
-      ส่วน Causal Grammar เรียกการเปิด พื้นที่คืนภายใต้การคุ้มครองว่า "repair" การ์ดนี้ยังไม่อ้างว่าข้อแยกนี้ผ่านการตรวจสอบวรรณกรรม
+    text: '"ศักยภาพ" ในห้าข้อความของโปรแกรมนี้เสนอให้มีอย่างน้อยสองชั้นที่ไม่ยุบรวมกันในการอ่านนี้: **ชั้น 1**
+      เลือกนโยบายภายในโครงสร้างข้อจำกัด $C$ ที่ตายตัวแล้ว (สิ่งที่บันทึกโปรแกรมวันที่ 5 กันยายน 2026 --
+      ถูกแทนที่ด้วยตัวเปเปอร์แล้ว -- เรียกว่า $p^\ast$ ของ Agency Potential) และ **ชั้น 2** เปลี่ยนโครงสร้างข้อจำกัดเอง
+      ซึ่ง Causal Agency สงวนคำว่า "agency" ไว้ให้ชั้นนี้เท่านั้น (อสมการที่ตำแหน่งจริงคือ §6.5 หน้า 19 ไม่ใช่ตัวนิยาม
+      Def. 3 เอง) และเรียกการทรงตัวในชั้น 1 ว่า "proto-agency" (§6.6) ส่วนคำว่า "ชั้น 2" สำหรับ "repair" ของ
+      Causal Grammar เป็นการตีความของการ์ดนี้เอง ไม่ใช่คำที่ Causal Grammar ใช้เอง การ์ดนี้ยังไม่อ้างว่าข้อแยกนี้ผ่านการตรวจสอบวรรณกรรม
       มนุษย์-agency ภายนอกแล้ว งานตรวจสอบนั้นยังไม่เสร็จ'
     language: th
     translation_status: machine
@@ -90,11 +97,14 @@ lens_translation:
     (a real gap, not yet a novelty claim). Phi_z0 is a fit-checking functional, not a truth-functional.'
   formal_applicability: relational_pointwise
 hypothesis_world:
-  text: '"Potential" across this programme''s five texts is at minimum two layers -- choosing within a
-    fixed constraint structure (layer 1) and changing that structure itself (layer 2) -- that must not
-    be collapsed; a layer-1 envelope reported as the bound on what a person or group can become is a collapse.
-    Not yet checked against independently fetched human-agency literature for a same/different/cited verdict;
-    see `scope.claim_scope`.'
+  text: '"Potential" across this programme''s five texts is proposed to be at minimum two layers --
+    choosing within a fixed constraint structure (layer 1) and changing that structure itself (layer 2,
+    this card''s own gloss on Causal Grammar''s "repair") -- that are not collapsed in this reading; a
+    layer-1 envelope reported as the bound on what a person or group can become would be a collapse under
+    this reading. REVISED 2026-09-05 (R2 finding: this field had dropped the statement''s own "proposed"
+    hedge, reading as settled fact) -- restored here so hypothesis_world does not overclaim beyond
+    `statement`. Not yet checked against independently fetched human-agency literature for a
+    same/different/cited verdict; see `scope.claim_scope`.'
   language: en
   falsifier_ref: five_questions.tested.falsifier
   signature: Hypothesis derived with Readout Universe -- Yaoharee Lahtee (lens, DOI 10.5281/zenodo.21529456);
@@ -110,9 +120,19 @@ five_questions:
       point at (records/lit/potential-as-readout/h2/*) had not yet completed at the time this card was
       drafted -- see `capability_readout` and `non_claims`.
     citation_refs:
-    - cite-potential-h2-001
-    - cite-potential-h2-002
-    - cite-potential-h2-003
+    - cite-causal-agency-defs-001
+    - cite-causal-agency-protoagency-001
+    - cite-causal-agency-formula-002
+    - cite-causal-agency-protoagency-002
+    - cite-causal-ethics-axiom2-001
+    - cite-causal-grammar-table1-001
+    - cite-causal-grammar-repair-001
+    - cite-bandura2001-agentic-001
+    - cite-kabeer1999-001
+    - cite-klyubin2005-001
+    - cite-salge-empowerment-intro-001
+    - cite-ryandeci2000-001
+    - cite-bazzani2023-001
     capability_readout: potential_witnessed
     ai_assisted_fields:
     - five_questions.ai_filled.*
@@ -123,35 +143,58 @@ five_questions:
       a different name) in capability theory, social-cognitive theory, or relational sociology, or whether
       it is specific to Causal Agency's own vocabulary and does not transfer
     licensing_test:
-      regime: literature scoping pass not yet run to completion (records/lit/potential-as-readout/h2/,
-        owned by concurrent workers); this card cites PLACEHOLDER citation ids pending that pass
-      result: NOT YET DETERMINED. The three cited evidence_relations below use placeholder citation ids
-        (cite-potential-h2-001..003) that do not yet resolve to existing, VERIFIED citation cards -- this
-        is disclosed explicitly, not hidden, per `non_claims` and `dissent_records` below.
-      notes: n=0 completed citation checks at the time this card was drafted; a follow-up revision is
-        required once records/lit/potential-as-readout/h2/citations/ exists and is VERIFIED.
+      regime: literature scoping pass completed at the I1 (same-session) level for all 13 citation cards
+        under records/lit/potential-as-readout/h2/citations/, including three new cards added 2026-09-05
+        (cite-causal-agency-formula-002, cite-causal-agency-protoagency-002, cite-causal-ethics-axiom2-001)
+        to close the "only two programme texts evidenced" gap R1/R2 both found; all 13 pass
+        `lit_crossvendor_check.py` VERIFIED at I1 (`./cli/glosa lit manifest potential-as-readout h2` gate
+        PASS)
+      result: 'n=13 cards checked. 3 SUPPORTS (the three new cards, per their own I1 verdicts), 10
+        UNRESOLVED (the pre-existing cards, left UNRESOLVED per their own rows'' what_it_would_say_against_us
+        rather than forced to SUPPORTS/CHALLENGES). No source among the 13 states H2''s own layer-1/layer-2
+        separation, under a different name, as a portable capability-theory/social-cognitive/
+        relational-sociology result -- H2''s stated falsifier is not yet triggered. This is NOT an
+        independent (I3+) verdict: every card''s independence_class is I1 (same-session); the pre-existing
+        cards'' earlier I3 tags were themselves an overclaim caught by review (R2, R3) and have been reset
+        to I1.'
+      notes: The previous revision''s citation_refs (cite-potential-h2-001..003) were drafting-stage
+        placeholders naming the expected shape of this work; they have been reconciled to the 13 real ids
+        above (POT1-integrate, then the post-review addition of the three new cards, 2026-09-05).
     zero_vs_bottom: unresolved_bottom
   ai_filled:
-    current_evidence: AI (the AI assistant, this session) drafted this card's statement, lens_translation,
-      and hypothesis_world from the founder's own Blackbox Note lines and paper/main.tex's own D3 distinction;
-      no literature retrieval for H2's own falsifier has been performed by this task (task POT1-scaffold;
-      that work is owned by concurrent workers lit-h1-h3 and lit-h2).
-    retrieved_tool_evidence: No WebFetch/WebSearch tool calls were made by this task to retrieve H2 literature;
-      the citation_refs and evidence_relations below are PLACEHOLDER ids naming the expected shape of
-      that future work, not yet resolved to fetched sources.
-    retained_record_route: This claim card's field structure was drafted by AI from paper/main.tex's own
-      D3 distinction and Causal Agency's own §6.5-6.6; no new observation or search was performed to produce
-      this card.
+    current_evidence: AI (the AI assistant, this session) originally drafted this card's statement,
+      lens_translation, and hypothesis_world from the founder's own Blackbox Note lines and
+      paper/main.tex's own D3 distinction with placeholder evidence. This revision (2026-09-05,
+      POT1-integrate then post-review) is also AI-performed -- it reconciled the placeholder citation_refs
+      to the ten pre-existing real citation cards, fetched and carded three NEW sources
+      (cite-causal-agency-formula-002, cite-causal-agency-protoagency-002, cite-causal-ethics-axiom2-001)
+      directly from Zenodo via pdftotext to close the "only two programme texts evidenced" gap three
+      review routes found, and revised statement/hypothesis_world to fix the overclaims those routes
+      identified.
+    retrieved_tool_evidence: This revision fetched two PDFs directly from the Zenodo API
+      (zenodo.org/api/records/18897585 and /18444260, both this programme's own prior work, self-citation
+      disclosed) and ran `pdftotext` locally to extract the exact passages now carded in
+      cite-causal-agency-formula-002, cite-causal-agency-protoagency-002, and
+      cite-causal-ethics-axiom2-001; each was then run through `lit_crossvendor_check.py` (I1, same
+      vendor -- not yet an independent I3+ route) and passed VERIFIED. No new fetches were performed for
+      the ten pre-existing cards; those were read as already on disk.
+    retained_record_route: This claim card's evidence_relations, statement, hypothesis_world, and
+      dissent_records were reconciled/revised by AI from the existing and newly fetched citation cards,
+      their row files, and the three review reports
+      (reviews/GLOSA-CC-20260905-0302.R1/R2/R3.review_report.json).
     model_calibration_assumption: No claim in this card depends on an AI model's stated confidence or
-      calibration score; the placeholder status of the citation_refs is stated as a structural fact, not
-      a confidence estimate.
-    prompt_system_constraint: This card was drafted under task instruction POT1-scaffold, which explicitly
-      requires naming placeholder citation ids as placeholders needing reconciliation, rather than inventing
-      citation content from AI training-data memory to fill them in.
-    decision_policy: The choice to draft a full-shape card now, with placeholder evidence_relations, rather
-      than waiting for the lit workers to finish, was an AI drafting choice made to satisfy the task's
-      own scaffold-now instruction; it is flagged throughout (capability_readout, non_claims, dissent_records)
-      rather than presented as if the citation work were already done.
+      calibration score; the reconciliation reflects what the cited cards, their fetched passages, and the
+      review reports state, not a confidence estimate.
+    prompt_system_constraint: This revision was performed under an explicit instruction to apply the REST
+      of the unfixed findings from the three review reports card-by-card, fetch real sources for the
+      newly-required cards via pdftotext (not from AI training-data memory), and re-validate.
+    decision_policy: 'The choice to add three new citation cards rather than merely reword the statement''s
+      attributions was an AI drafting choice made because the review routes'' defeaters were about missing
+      evidence (no card for the formula, the proto-agency sentence, or Axiom II), not only about wording;
+      supplying the sources closes the gap more directly than hedging further. The Zenodo page for the
+      agency-defining inequality was independently verified as p.19 by direct pdftotext page-split, not
+      the p.18 this task''s own instruction assumed -- recorded as p.19 (verified), not silently left at
+      the instructed p.18, per this repo''s readout-not-truth discipline.'
   assumed:
   - id: A1
     type: inferential_commitment
@@ -201,6 +244,61 @@ five_questions:
         for engineered/biological control systems, not social actors under structural deprivation -- the
         mechanical analogy could mislead a social-agency reading rather than clarify it. Reconciled 2026-09-05;
         left UNRESOLVED.'
+    - evidence_id: cite-causal-agency-formula-002
+      bearing: SUPPORTS
+      independence_class: I1
+      strength: direct PDF fetch (Zenodo 18897585 p.19 §6.5, self-citation disclosed); I1 route ran
+        (lit_crossvendor_check.py --vendor claude) and returned VERIFIED -- reconciled from
+        records/lit/potential-as-readout/h2/rows/row-causal-agency-formula.yaml (stance UNDETERMINED)
+      citation_ref: cite-causal-agency-formula-002
+      review_mode: null
+      route_id: null
+      asserted_by: ai
+      date: '2026-09-05'
+      notes: 'Added per review findings on this card (R2, R3): the statement attributed the inequality
+        $\partial T_p/\partial C \cdot \partial C/\partial x > 0$ to "Def. 3", but Def. 3''s own
+        exact_passage (cite-causal-agency-defs-001) is prose only. This card supplies the formula''s own
+        actual location (§6.5, p.19 per direct pdftotext page-split, not the p.18 this task''s own
+        instruction assumed -- verified, not silently left wrong). Row left UNDETERMINED: the formula and
+        Def.3''s prose are adjacent, not identical, passages; H2''s attribution is now accurate to the
+        source''s own layout, not resolved as to whether the two are the source''s single stated
+        equivalence.'
+    - evidence_id: cite-causal-agency-protoagency-002
+      bearing: SUPPORTS
+      independence_class: I1
+      strength: direct PDF fetch (Zenodo 18897585 p.19 §6.6, self-citation disclosed); I1 route ran
+        (lit_crossvendor_check.py --vendor claude) and returned VERIFIED -- reconciled from
+        records/lit/potential-as-readout/h2/rows/row-causal-agency-protoagency-002.yaml (stance
+        UNDETERMINED)
+      citation_ref: cite-causal-agency-protoagency-002
+      review_mode: null
+      route_id: null
+      asserted_by: ai
+      date: '2026-09-05'
+      notes: 'Added per review finding on this card (R3): the pre-existing protoagency-001 card''s own
+        §6.6 exact_passage does not itself contain the word "proto-agency"; this card supplies the
+        sentence ("Such systems may be described as exhibiting proto-agency.") that actually uses the
+        term, closing that specific attribution gap. Row left UNDETERMINED on the broader question of
+        whether the mechanical proto-agency/agency binary transfers to social agents.'
+    - evidence_id: cite-causal-ethics-axiom2-001
+      bearing: SUPPORTS
+      independence_class: I1
+      strength: direct PDF fetch (Zenodo 18444260 p.9 §2.2, self-citation disclosed); I1 route ran
+        (lit_crossvendor_check.py --vendor claude) and returned VERIFIED SUPPORTS -- reconciled from
+        records/lit/potential-as-readout/h2/rows/row-causal-ethics-axiom2.yaml (stance UNDETERMINED)
+      citation_ref: cite-causal-ethics-axiom2-001
+      review_mode: null
+      route_id: null
+      asserted_by: ai
+      date: '2026-09-05'
+      notes: 'Added per review findings (R1: "no citation card for... Causal Ethics"; R2: "Statement
+        asserts a five-text reading; cards evidence Causal Agency and Causal Grammar only"). Axiom II
+        states agency exists iff an entity can instantiate a choice of regime from the admissible set
+        R_adm(t''); the I1 route reads this as matching H2''s own layer-1 attribution (choice within an
+        already-fixed admissible set). The row''s own dialogue table (stance UNDETERMINED) notes the
+        axiom''s text is silent, not confirmatory, on whether R_adm itself can be changed by that same
+        entity -- flagged in `dissent_records` as a bearing this card accepts per the route verdict while
+        recording the row''s own reservation, not silently dropping it (glosa gate rule 10).'
     - evidence_id: cite-causal-grammar-table1-001
       bearing: UNRESOLVED
       independence_class: I1
@@ -330,11 +428,39 @@ five_questions:
         card reading as more evidenced than it is. This is a maker-side self-flag, not an independent
         check, and does not substitute for one (glosa gate rule 3: maker != checker != approver).'
       resolved: false
-      resolution: 'NOT resolved. Left open pending: (1) concurrent workers completing records/lit/potential-as-readout/h2/citations/,
-        (2) a reconciliation pass updating this card''s evidence_relations/citation_refs to the real ids
-        and real bearings found, and (3) an independent (I3+) cross-vendor review of the reconciled card,
-        none of which this task performed. `independent_check.status` is set to NONE below to reflect
-        this honestly.'
+      resolution: 'PARTIALLY resolved 2026-09-05: (1) concurrent workers completed
+        records/lit/potential-as-readout/h2/citations/ (n=10), and this revision added 3 more (n=13
+        total) -- DONE; (2) this card''s evidence_relations/citation_refs were reconciled to the real ids
+        and bearings found -- DONE, by AI, not founder-reviewed; (3) an independent (I3+) cross-vendor
+        review of the reconciled card -- NOT YET DONE; `independent_check.status` remains NONE.'
+    - by: three independent review routes (Falsifier/HostileReviewer/SourceAuditor, R1/R2/R3)
+      date: '2026-09-05'
+      content: 'Strongest defeaters, verbatim-short from each report (full text:
+        reviews/GLOSA-CC-20260905-0302.R1/R2/R3.review_report.json). R1: "No citation card for Agency
+        Potential or Causal Ethics; the claim ranges over five texts but evidence covers only two plus the
+        project''s own main.tex (circular)... Causal Agency evidence is bearing UNRESOLVED per the card''s
+        own reconciliation; the row''s what_it_would_say_against_us (H2 = Def.3 restated) is unanswered."
+        R2: "tested.evidence_relations tag cite-causal-agency-defs-001 and
+        cite-causal-agency-protoagency-001 as I3 while both citation cards read independence_class I1 with
+        an EMPTY codex I3 route string; a route that ran and returned claim_match_verified: false does not
+        raise k_state... only two programme texts are evidenced." R3: "Neither passage contains the
+        formula... the word ''proto-agency'', or ''D3'' that the statement attributes to them... Statement
+        says Causal Grammar''s repair names ''a protected layer-2 act''; repair passage says ''protected
+        reopening of damaged relations'', no layer vocabulary; ''layer-2'' is the card''s gloss."'
+      resolved: false
+      resolution: 'PARTIALLY resolved by this revision: added citation cards for Causal Ethics (Axiom II)
+        and for the formula/proto-agency sentence''s own actual locations, closing the "only two texts
+        evidenced" and "formula/term uncarded" defeaters (R1, R2, R3); reworded the statement so "layer-2"
+        for Causal Grammar''s "repair" is explicitly marked as this card''s own gloss, not the source''s
+        term (R3); restored the "proposed" hedge dropped from hypothesis_world (R2). NOT resolved: Agency
+        Potential itself (the fifth text) still has no citation card -- it is an unpublished internal note
+        (now named "the programme note of 5 September 2026, superseded by the paper" in `statement`), not
+        a fetchable external source, so no citation card can be built for it under this repo''s citation
+        card schema (a citation_card needs an `identifier` such as a DOI); this gap is left open, not
+        silently dropped (glosa gate rule 10). The I3 tags R2/R3 flagged as inflated on
+        cite-causal-agency-defs-001/protoagency-001 were already reset to I1 before this revision (an
+        earlier fix, not this one). No independent (I3+) re-review of this reconciled revision has
+        occurred; `independent_check.status` remains NONE.'
 identification_ladder:
   layers:
   - id: A0
@@ -401,14 +527,24 @@ ledger:
   borrowed:
   - 10.5281/zenodo.21529456 (Readout Universe -- Yaoharee Lahtee, lens)
   open:
-  - whether the layer-1/layer-2 separation is already stated, under a different name, in capability theory/social-cognitive
-    theory/relational sociology -- no literature check has run yet
+  - whether the layer-1/layer-2 separation is already stated, under a different name, in capability
+    theory/social-cognitive theory/relational sociology -- n=13 I1-level checks found no such source, but
+    no independent (I3+) literature check has run yet
   - whether the separation is specific to Causal Agency's own formalism and does not transfer to the other
     three papers' objects
+  - whether Agency Potential's own $p^\ast$ (the fifth text, an unpublished internal note superseded by
+    the paper) can ever be given a citation card under this repo's schema, or whether it must remain
+    uncarded and only referenced by name in `statement`
 non_claims:
-- This card does not claim H2 has been checked against independently fetched literature -- the citation_refs
-  and tested.evidence_relations above are PLACEHOLDER ids (cite-potential-h2-001..003) pending records/lit/potential-as-readout/h2/citations/
-  (owned by concurrent workers lit-h1-h3/lit-h2).
+- This card does not claim H2 has been checked against independently (I3+) reviewed literature -- the
+  citation_refs and tested.evidence_relations above name 13 real, I1-level (same-session) citation cards
+  under records/lit/potential-as-readout/h2/citations/ (10 reconciled from the prior revision's
+  placeholder ids, 3 newly fetched and carded this revision); none has been re-checked by an independent
+  (I3+) route.
+- This card does not claim Agency Potential (the fifth text) has a citation card -- it is an unpublished
+  internal programme note (referred to in `statement` as "the programme note of 5 September 2026,
+  superseded by the paper"), not a source with a fetchable identifier, so no citation card exists or is
+  claimed for it.
 - This card does not claim the two-layer separation is its own or without precedent -- comparison verdicts
   (same/different/cited) are reserved for the literature pass, not asserted here (glosa gate rule 6).
 - This card does not claim H2 makes an attribution-of-responsibility claim (that is D6/NC-79's own, separate
@@ -474,9 +610,19 @@ lineage:
 related_source_cards: []
 related_observation_cards: []
 related_citation_cards:
-- cite-potential-h2-001
-- cite-potential-h2-002
-- cite-potential-h2-003
+- cite-causal-agency-defs-001
+- cite-causal-agency-protoagency-001
+- cite-causal-agency-formula-002
+- cite-causal-agency-protoagency-002
+- cite-causal-ethics-axiom2-001
+- cite-causal-grammar-table1-001
+- cite-causal-grammar-repair-001
+- cite-bandura2001-agentic-001
+- cite-kabeer1999-001
+- cite-klyubin2005-001
+- cite-salge-empowerment-intro-001
+- cite-ryandeci2000-001
+- cite-bazzani2023-001
 responsibility:
   data_to_inference: joint
   inference_to_claim: human
@@ -506,3 +652,26 @@ revision_history:
     own distinction), non_claims, responsibility, disclaimers computed via `./cli/glosa claim disclaimers`.
     `independent_check.status` set to NONE (no route has checked this card). Not yet reviewed or signed
     by the founder (status stays Draft).'
+- rev: '2'
+  date: '2026-09-05'
+  by: ai-assistant
+  note: 'Post-review reconciliation, applying the unfixed findings from three independent review routes
+    (reviews/GLOSA-CC-20260905-0302.R1/R2/R3.review_report.json; I3->I1 tag resets on
+    cite-causal-agency-defs-001/protoagency-001 were already applied before this revision). (a) created
+    three new citation cards (cite-causal-agency-formula-002, cite-causal-agency-protoagency-002,
+    cite-causal-ethics-axiom2-001) by fetching the two Zenodo PDFs directly and extracting exact passages
+    via pdftotext, with matching row files; all three passed `lit_crossvendor_check.py` VERIFIED and the
+    h2 manifest gate stays PASS (n=13 cards). (b) reworded statement: "must not be collapsed" ->
+    "are not collapsed in this reading"; marked "layer-2" for Causal Grammar''s "repair" as this card''s
+    own gloss, not the source''s term; attributed the inequality and "proto-agency" to the new cards
+    (correcting their location to p.19, not the p.18 the task instruction assumed -- verified by direct
+    pdftotext page-split); replaced the unpublished "Agency Potential" note reference with "the programme
+    note of 5 September 2026 (superseded by the paper)"; restored the "proposed" hedge in
+    hypothesis_world. (c) added the three new cards to `tested.evidence_relations` (bearing SUPPORTS per
+    each card''s own I1 route verdict); regenerated `seen.citation_refs`, `separates.licensing_test`
+    (n=13), `ai_filled`, `non_claims`, `ledger.open`, and `related_citation_cards` to match; added a
+    `dissent_records` entry summarising all three routes'' strongest defeaters verbatim-short with report
+    file refs. Left open, flagged not silently dropped (glosa gate rule 10): Agency Potential itself (the
+    fifth text) has no citation card and cannot be given one under this repo''s schema (no fetchable
+    identifier), so it remains referenced by name only. No independent (I3+) re-review of this reconciled
+    revision has occurred; `independent_check.status` remains NONE; `status` remains Draft.'

@@ -30,27 +30,37 @@ who_verified: 'route:claude (I1 route: same model, fresh headless session (no sh
 verification_method: MECHANICAL_LOOKUP_PLUS_MANUAL_READ
 status: VERIFIED
 xenon_ledger_ref: null
-disclosure: 'SUPPORTS H3 and serves as the SEA/Thai-scholarship anchor for this hypothesis
-  axis: a leading Thai peace-studies scholar (Thammasat University) independently
-  restates the negative/positive-peace distinction (absence of war vs. freedom from
-  structural violence) in an autobiographical register, explicitly naming "opportunities...robbed"
-  -- i.e. blocked potential/opportunity as part of what real peace requires beyond
-  mere absence of war. This is Satha-Anand summarizing what he learned from Galtung''s
-  intellectual tradition (via his teacher Glenn Paige), not an independent empirical
-  test of H3, so scope is DIRECT_QUOTATION of a definitional/framing passage rather
-  than an evidentiary test. | I3 route (codex) judged from fetched metadata/abstract
-  + the card''s quoted passage, not full text:  | I1 route (claude) judged from fetched
-  metadata/abstract + the card''s quoted passage, not full text: Passage found verbatim;
-  running header matches the card''s title. But it is an autobiographical restatement
-  of Galtung''s negative/positive-peace distinction, not evidence for H3''s empirical
-  claim (bounded-budget re-crossing, cost divergence vs operator change). Analogy
-  to visible-calm-vs-operator is the card''s, not the source''s. Context, not SUPPORTS.
+disclosure: 'REVISED 2026-09-05 (R3 review on GLOSA-CC-20260905-0303: "sathaanand2021-006:
+  disclosure says DIRECT_QUOTATION while scope field says CONTEXT_ONLY_NOT_EVIDENCE"
+  -- an internal contradiction). Context/framing for H3, not evidence for the numerical
+  signature, consistent with `scope: CONTEXT_ONLY_NOT_EVIDENCE` above: a leading Thai
+  peace-studies scholar (Thammasat University) independently restates the negative/positive-peace
+  distinction (absence of war vs. freedom from structural violence) in an autobiographical
+  register, explicitly naming "opportunities...robbed" -- i.e. blocked potential/opportunity
+  as part of what real peace requires beyond mere absence of war. This is Satha-Anand
+  summarizing what he learned from Galtung''s intellectual tradition (via his teacher
+  Glenn Paige), not an independent empirical test of H3''s numerical claim (bounded-budget
+  re-crossing, force divergence, operator-change zero-force result on the fixture)
+  -- the earlier "SUPPORTS H3" language is removed; the "DIRECT_QUOTATION" wording
+  above that previously conflicted with `scope` described the passage''s own verbatim-quote
+  character, not its evidentiary bearing, and is retired in favour of the scope field,
+  which governs. | I3 route (codex) judged from fetched metadata/abstract + the card''s
+  quoted passage, not full text:  | I1 route (claude) judged from fetched metadata/abstract
+  + the card''s quoted passage, not full text: Passage found verbatim; running header
+  matches the card''s title. But it is an autobiographical restatement of Galtung''s
+  negative/positive-peace distinction, not evidence for H3''s empirical claim (bounded-budget
+  re-crossing, cost divergence vs operator change). Analogy to visible-calm-vs-operator
+  is the card''s, not the source''s. Context, not SUPPORTS. | I1 route (claude) judged
+  from fetched metadata/abstract + the card''s quoted passage, not full text: Running
+  header in fetched text matches title/year; passage found verbatim. Passage restates
+  Galtung negative/positive peace and military-vs-social expenditure, loosely analogous
+  to H3''s visible-calm vs operator-repair distinction, so relevant as context only.
+  Note card stance text says SUPPORTS while scope says CONTEXT_ONLY; scope governs.
   | I1 route (claude) judged from fetched metadata/abstract + the card''s quoted passage,
-  not full text: Running header in fetched text matches title/year; passage found
-  verbatim. Passage restates Galtung negative/positive peace and military-vs-social
-  expenditure, loosely analogous to H3''s visible-calm vs operator-repair distinction,
-  so relevant as context only. Note card stance text says SUPPORTS while scope says
-  CONTEXT_ONLY; scope governs.'
+  not full text: Fetched text is the Hiroshima Peace Research Journal vol. 8 PDF;
+  no title/year/author contradiction visible. Passage found verbatim in the autobiographical
+  section. As context, it names the Galtung structural-violence lineage the hypothesis
+  draws on but does not test or bear on the No-Go/cost-divergence claim.'
 superseded_by: null
 notes: 'Reused the already-fetched local copy per the task brief rather than re-fetching.
   | Carded as context (route verdict CONTEXT_ONLY): autobiographical peace-research

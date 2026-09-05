@@ -6,25 +6,42 @@ statement:
   language: en
   text: 'A regime that suppresses the visible amplitude of instability without changing the underlying
     operator that determines the feasible/viable region (Violence-as-Instability''s No-Go theorem: "no
-    bounded force-based intervention can drive the system to a globally violence-free absorbing state")
-    produces a distinguishable numerical signature once the suppression is bounded by a finite budget:
-    the system re-crosses its instability threshold once the budget is exhausted, and the accumulated
-    force paid to suppress grows without bound the longer suppression is sustained (Causal Ethics'' $\lim
-    C = \infty$, "karma as cost divergence"), whereas an operator change (raising $\Gamma$, lowering $S_{\mathrm{env}}$
-    -- a real layer-2 repair) achieves the same visible calm at zero accumulated force. This has been
-    checked once, on the project''s own two-node, finite-memory fixture (`sim/nogo_fixture.py`, `sim/nogo_fixture_result.json`,
-    tier finite_diagnostic on that fixture only) -- the actual executed numbers are cited as the primary
-    evidence_relation below. The fixture''s first-attempt passing/failing control was itself wrong and
-    was corrected once (see `five_questions.tested.dissent_records`); this card does not yet claim the
-    fixture has been independently re-run by a second route, nor that the wider instability/AI-safety-corrigibility
+    bounded force-based intervention can drive the system to a globally violence-free absorbing state" --
+    this remains a sketch, Dr tier; the fixture below tests the model-internal reading only, not the
+    theorem''s own general proof) produces a distinguishable numerical signature once the suppression is
+    bounded by a finite budget: the system re-crosses its instability threshold once the budget is
+    exhausted -- this re-crossing is Lemma 1''s own content (P1, invariance of the driven fixed point and
+    geometric recurrence), and the fixture is Lemma 1''s passing control, not a discovery -- and the
+    accumulated force paid to suppress grows at the rate Lemma 2 of the formal file gives ($F_i^\infty >
+    0$, the exact asymptotic per-tick force rate under a permanent pin/periodic-reset hold), non-saturating
+    over 4000-16000 ticks in the fixture; unboundedness is the lemma''s own stated closed-form rate, not a
+    three-point extrapolation from the fixture alone (Causal Ethics'' $\lim C = \infty$, "karma as cost
+    divergence", is the informal restatement this formalizes). An operator change (raising $\Gamma$,
+    lowering $S_{\mathrm{env}}$ -- a real layer-2 repair) achieves the same visible calm at zero accumulated
+    force: this leg is now Lemma 3 (P3, a rank-one Sherman-Morrison operator update reaching $s^{*\prime}_i
+    < \theta$ at exactly zero ongoing force) plus the numeric battery''s own P3 confirmation (60/60
+    random-graph instances, `sim/battery_result.json`), not only the earlier analysis note''s summary
+    table. This has been checked once by this project''s own two-node, finite-memory fixture
+    (`sim/nogo_fixture.py`, `sim/nogo_fixture_result.json`, tier finite_diagnostic on that fixture only)
+    for the fixture''s own numbers, and separately by the formal file''s exact algebra (Lemmas 0-4,
+    `Th_coqc`-grade for the closed-form claims) and its 60-instance random-graph battery
+    (`sim/battery_result.json`, `finite_diagnostic`) for the general claim on the discrete spine model --
+    the actual executed numbers from both are cited in the evidence_relations below. The fixture''s
+    first-attempt passing/failing control was itself wrong and was corrected once (see
+    `five_questions.tested.dissent_records`); this card does not yet claim the fixture has been
+    independently re-run by a second route, nor that the wider instability/AI-safety-corrigibility
     literature has been checked for a same/different/cited comparison (see `non_claims`).'
   is_verbatim_quote: false
   translation:
     text: 'ระบอบที่กดแอมพลิจูดที่มองเห็นได้ของความไม่เสถียรโดยไม่เปลี่ยน operator ที่กำหนดพื้นที่ความ
-      เป็นไปได้ จะมีลายเซ็นเชิงตัวเลขที่แยกออกได้เมื่อการกดถูกจำกัดด้วยงบจำกัด: ระบบจะข้ามเกณฑ์ไม่ เสถียรอีกครั้งหลังงบหมด
-      และแรงสะสมที่จ่ายเพื่อกดจะโตไม่มีขอบเขตตามเวลาที่กดต่อเนื่อง ในขณะที่ การเปลี่ยน operator จริงจะได้ความสงบที่มองเห็นได้แบบเดียวกันโดยไม่มีแรงสะสมเลย
-      ตรวจแล้วครั้ง เดียวบน fixture สองโหนดของโครงการเอง การ์ดนี้ยังไม่อ้างว่า fixture ผ่านการรันซ้ำโดยเส้นทางอิสระ
-      หรือวรรณกรรมภายนอกถูกตรวจสอบแล้ว'
+      เป็นไปได้ (ทฤษฎีบท No-Go ยังเป็น sketch ระดับ Dr เท่านั้น) จะมีลายเซ็นเชิงตัวเลขที่แยกออกได้เมื่อการกดถูกจำกัดด้วยงบจำกัด:
+      ระบบจะข้ามเกณฑ์ไม่เสถียรอีกครั้งหลังงบหมด (เนื้อหาของ Lemma 1 -- fixture เป็นการควบคุมที่ผ่านของ Lemma 1
+      ไม่ใช่การค้นพบใหม่) และแรงสะสมที่จ่ายเพื่อกดจะโตในอัตราที่ Lemma 2 ให้ไว้ ($F_i^\infty > 0$) ไม่อิ่มตัวตลอด
+      4000-16000 ติ๊กใน fixture -- ความไม่มีขอบเขตคืออัตราปิดรูปของ lemma เอง ไม่ใช่การประมาณจากจุดข้อมูลสามจุด
+      ในขณะที่การเปลี่ยน operator จริงจะได้ความสงบที่มองเห็นได้แบบเดียวกันโดยไม่มีแรงสะสมเลย (ตอนนี้คือ Lemma 3
+      บวกผล battery P3 60/60 กราฟสุ่ม ไม่ใช่แค่ตารางสรุปของบันทึกก่อนหน้า) ตรวจแล้วครั้งเดียวบน fixture สองโหนดของโครงการเอง
+      และแยกกันด้วยพีชคณิตแม่นตรงของไฟล์ formal (Lemma 0-4) และ battery 60 อินสแตนซ์ การ์ดนี้ยังไม่อ้างว่า fixture
+      ผ่านการรันซ้ำโดยเส้นทางอิสระ หรือวรรณกรรมภายนอกถูกตรวจสอบแล้ว'
     language: th
     translation_status: machine
 standpoint:
@@ -115,8 +132,16 @@ five_questions:
       point at (records/lit/potential-as-readout/h3/*) had not yet completed at the time this card was
       drafted.
     citation_refs:
-    - cite-potential-h3-001
-    - cite-potential-h3-002
+    - fixture-nogo-2node-run-001
+    - battery-random-graph-run-001
+    - formal-lemmas-L1-L4
+    - cite-galtung1969-potentialgap-001
+    - cite-galtung1969-negpospeace-002
+    - cite-galtung1990-culturalviolence-003
+    - cite-farmer2004-004
+    - cite-pettit-globalrepublican-005
+    - cite-sathaanand2021-006
+    - cite-csaky2026-007
     capability_readout: observed
     ai_assisted_fields:
     - five_questions.ai_filled.*
@@ -128,50 +153,73 @@ five_questions:
       shows the predicted signature, distinct from whether the underlying No-Go theorem is proven (it
       remains a sketch, Dr tier, per the theorem text itself)
     licensing_test:
-      regime: single fixture run (this project's own code, sim/nogo_fixture.py), I1 (same-session execution,
-        not yet independently re-run); one documented failed-then-corrected control per the Fail-Able
-        Gate Law
+      regime: 'Three independent evidentiary artifacts, all I1 (same-session, this project''s own code,
+        not independently re-executed by a second route): (1) the two-node fixture (sim/nogo_fixture.py),
+        one run, one documented failed-then-corrected control per the Fail-Able Gate Law; (2) the
+        60-instance random-graph numeric battery (sim/battery.py -> sim/battery_result.json); (3) the
+        formal file''s exact algebra (FORMAL_2026-09-05_bounded_suppression.md, Lemmas 0-4), Th_coqc-grade
+        for the closed-form claims. Added 2026-09-05 in response to R1/R2/R3''s shared finding that the
+        operator-change zero-force leg rested only on a note''s summary table, not a citable artifact.'
       result: 'The fixture''s own JSON output (sim/nogo_fixture_result.json) shows: no_intervention =
         1 threshold_crossings, 0 recurrences_after_budget, 0.0 cumulative_force_spent; bounded-budget
         suppression (4000 ticks then stopped) = 1 threshold_crossings, 1 recurrences_after_budget, 18.081
         cumulative_force_spent; unbounded suppression (8000 ticks) = 0 threshold_crossings, 0 recurrences_after_budget,
         36.447 cumulative_force_spent; unbounded suppression (16000 ticks) = 0 threshold_crossings, 0
-        recurrences_after_budget, 73.178 cumulative_force_spent (growing roughly linearly with duration,
-        as the hypothesis predicts). The operator-change condition (raising $\Gamma$, lowering $S_{\mathrm{env}}$,
-        per the same fixture file) is reported in NOTE_2026-09-05_potential-choice-violence_axis.md §9.3''s
-        own summary table as reaching the same visible calm at 0 accumulated force -- this card cites
-        that summary, not a separately re-verified JSON field, and flags the distinction explicitly in
-        `non_claims`.'
-      notes: n=1 fixture, I1 (same-session), not yet independently re-run. The FIRST fixture version's
-        own passing control was set wrong (expected recurrence DURING suppression, not after budget exhaustion)
-        and failed its own control -- corrected once, documented transparently in NOTE_2026-09-05_potential-choice-violence_axis.md
-        §9.3's own "บันทึกความล้มเหลวรอบแรก" note, which this card treats as a real Fail-Able Gate Law
-        episode (a passing AND a failing control both existed and were checked), not as evidence hidden
-        or explained away.
+        recurrences_after_budget, 73.178 cumulative_force_spent (non-saturating over the tested durations,
+        matching Lemma 2''s closed-form rate F_i^infty > 0, not a three-point extrapolation). The battery
+        (sim/battery_result.json) independently confirms, on 60/60 random-graph (N,seed) instances: P1
+        (recurrence after bounded budget), P2 (linear force growth matching Lemma 2''s closed form), P3
+        (the operator-change leg -- raising Gamma / lowering S_env -- reaches the same visible calm at
+        exactly zero ongoing force via the Sherman-Morrison closed form, Lemma 3), and P4 (neighbour
+        floor). This closes the R1/R2 defeater that the operator-change zero-force result was "only a
+        note''s summary table" -- it is now a numerically confirmed, Th_coqc-backed closed-form result on
+        60 independently generated graphs, separate from the two-node fixture.'
+      notes: n=1 fixture (I1) + n=60 battery instances (I1, this project's own code) + the formal file's
+        own exact algebra (Th_coqc-grade for the closed-form claims, finite_diagnostic for the battery's
+        numeric confirmation). None of the three has been independently (I3+) re-run by a decorrelated
+        route. The FIRST fixture version's own passing control was set wrong (expected recurrence DURING
+        suppression, not after budget exhaustion) and failed its own control -- corrected once, documented
+        transparently in NOTE_2026-09-05_potential-choice-violence_axis.md §9.3's own "บันทึกความล้มเหลวรอบแรก"
+        note, which this card treats as a real Fail-Able Gate Law episode (a passing AND a failing control
+        both existed and were checked), not as evidence hidden or explained away.
     zero_vs_bottom: distinct_difference_found
   ai_filled:
-    current_evidence: AI (the AI assistant, this session) drafted this card's statement, lens_translation,
-      and hypothesis_world from the founder's own Blackbox Note lines, NOTE_2026-09-05_potential-choice-violence_axis.md
-      §9.3, and the fixture's own already-executed output file (sim/nogo_fixture_result.json). The fixture
-      itself was built and run by a prior session (per the note's own account), not by this task; this
-      task did not re-run it.
-    retrieved_tool_evidence: This task read sim/nogo_fixture_result.json directly (a local file, not a
-      web fetch) to cite its exact numbers above; no WebFetch/WebSearch calls were made by this task for
-      H3's own wider-literature falsifier, which remains a placeholder pending concurrent lit workers.
-    retained_record_route: This claim card's field structure and the fixture-result quotation were drafted
-      by AI from the existing frozen fixture output and the founder's own analysis note; no new simulation
-      run was performed to produce this card.
+    current_evidence: 'AI (the AI assistant, this session) originally drafted this card''s statement,
+      lens_translation, and hypothesis_world from the founder''s own Blackbox Note lines,
+      NOTE_2026-09-05_potential-choice-violence_axis.md §9.3, and the fixture''s own already-executed
+      output file with two placeholder literature citation_refs. This revision (2026-09-05, POT1-integrate
+      then post-review) is also AI-performed -- it reconciled the placeholder citation_refs to the ten
+      real ids now in `tested.evidence_relations` (the fixture, the battery, the formal lemmas file, and
+      seven literature cards), read the newly available formal file
+      (FORMAL_2026-09-05_bounded_suppression.md) and battery result (sim/battery_result.json) to close the
+      "operator-change leg is only a note''s summary table" defeater three review routes raised, and
+      reworded statement/scope in response to those reports.'
+    retrieved_tool_evidence: This revision read FORMAL_2026-09-05_bounded_suppression.md and
+      sim/battery_result.json directly (local files in cpg_research_journal, not a web fetch) to cite
+      Lemmas 1-3 and the 60/60 battery result; the original task also read sim/nogo_fixture_result.json
+      directly. No WebFetch/WebSearch calls were made by this task for H3's own wider (non-programme)
+      literature falsifier; the seven literature citation_refs above were reconciled from concurrent lit
+      workers' already-fetched cards, not newly retrieved by this task.
+    retained_record_route: This claim card's field structure, the fixture/battery/formal-file quotations,
+      and dissent_records were drafted/reconciled by AI from the existing frozen output files, the
+      founder's own analysis note, and the three review reports
+      (reviews/GLOSA-CC-20260905-0303.R1/R2/R3.review_report.json); no new simulation run was performed by
+      this task (the fixture and battery were run by prior sessions).
     model_calibration_assumption: No claim in this card depends on an AI model's stated confidence or
-      calibration score; the fixture's own numbers are quoted directly from its JSON output, not re-estimated.
-    prompt_system_constraint: This card was drafted under task instruction POT1-scaffold, which explicitly
-      requires naming placeholder citation ids as placeholders and citing only what has actually been
-      read (the fixture's own JSON output was read directly, per glosa rule 17's spirit for machine-readable
-      local evidence).
-    decision_policy: The choice to cite the fixture's own already-executed numbers as the primary evidence_relation
-      (rather than waiting for an independent re-run) was an AI drafting choice, made because the fixture
-      result already exists and is this project's own I1-level evidence; it is explicitly tiered `finite_diagnostic`
-      on that fixture only, not promoted to a stronger tier, and the independent-re-run gap is named in
-      `non_claims` and `ledger.open`.
+      calibration score; the fixture's, battery's, and formal file's own numbers are quoted directly from
+      their outputs, not re-estimated.
+    prompt_system_constraint: This revision was performed under an explicit instruction to apply the REST
+      of the unfixed findings from the three review reports card-by-card, cite the formal file's Lemmas
+      0-4 and the battery's actual P3 confirmation (not only the note's summary table) for the
+      operator-change leg, and re-validate.
+    decision_policy: 'The choice to add battery-random-graph-run-001 and formal-lemmas-L1-L4 as full
+      evidence_relations, rather than only rewording the statement''s hedges, was an AI drafting choice
+      made because the review routes'' strongest defeater (R1, R2) was an evidence gap (no citable artifact
+      for the operator-change leg), not only a wording overclaim -- supplying the actual executed battery
+      result and the formal file''s own lemma statements closes that gap directly. Both are tiered
+      per the formal file''s own §5 table (Th_coqc for the closed-form claims, finite_diagnostic for the
+      battery''s numeric confirmation), not promoted beyond what that file itself claims, and the
+      independent (I3+) re-run gap is still named in `non_claims` and `ledger.open`.'
   assumed:
   - id: A1
     type: inferential_commitment
@@ -208,6 +256,52 @@ five_questions:
         -- not yet independently re-run by a decorrelated route, so it does not license a tier above finite_diagnostic
         on this fixture alone, and does not by itself confirm the No-Go theorem''s general claim beyond
         this one fixture.'
+    - evidence_id: battery-random-graph-run-001
+      bearing: SUPPORTS
+      independence_class: I1
+      strength: primary executed evidence; scoped "context" for rule 28 because it is an artifact, not a
+        citation card; cpg_research_journal/research/society-justice-peace/sim/battery_result.json
+      citation_ref: battery-random-graph-run-001
+      review_mode: null
+      route_id: null
+      asserted_by: ai
+      date: '2026-09-05'
+      notes: 'Direct read of sim/battery_result.json (this project''s own code, not independently
+        re-executed): 60/60 (N,seed) instances across N in {10,50,200}, 20 seeds each, confirm P1
+        (recurrence after a bounded budget), P2 (cumulative force grows, matches the closed-form Lemma 2
+        rate within tolerance), P3 (the operator-change zero-force result, Sherman-Morrison closed form
+        matches an independent np.linalg.solve), and P4 (neighbour floor holds and is strictly positive).
+        The deliberately wrong FALSE_CLAIM control ("unbounded resets still let s_i re-cross theta") was
+        refuted on every one of the 60 seeds (0 recrossings observed), and a gamma=0 OUTSIDE_HYPOTHESIS
+        control was correctly flagged rather than silently scored -- discriminative power, not a
+        rubber-stamp. This directly answers the R1/R2 defeater that the operator-change zero-force leg was
+        "only a note''s summary table" -- P3''s zero-force result is now confirmed on 60 independently
+        generated random graphs, not the two-node fixture alone. Same-session (I1), this project''s own
+        code; no independent (I3+) re-execution.'
+    - evidence_id: formal-lemmas-L1-L4
+      bearing: SUPPORTS
+      independence_class: I1
+      strength: primary executed evidence; scoped "context" for rule 28 because it is an artifact, not a
+        citation card; cpg_research_journal/research/society-justice-peace/FORMAL_2026-09-05_bounded_suppression.md
+      citation_ref: formal-lemmas-L1-L4
+      review_mode: null
+      route_id: null
+      asserted_by: ai
+      date: '2026-09-05'
+      notes: 'Direct read of FORMAL_2026-09-05_bounded_suppression.md (this project''s own file, not
+        independently re-derived): Lemma 0 (A positive definite, M a contraction for small dt, Th_coqc-grade
+        exact algebra), Lemma 1 (P1, fixed point/invariance/geometric-return recurrence -- the source of
+        H3''s own "re-crosses its instability threshold once the budget is exhausted" clause, not this
+        card''s discovery), Lemma 2 (P2, exact per-tick force F_i^infty > 0 under a permanent pin or
+        periodic reset, giving the closed-form linear-growth rate H3''s statement now cites instead of
+        extrapolating from three fixture durations), Lemma 3 (P3, rank-one Sherman-Morrison operator update
+        reaching s*''_i < theta at exactly zero ongoing force -- the exact-algebra backing for the
+        operator-change leg), Lemma 4 (P4, neighbour-floor mutation, not itself part of H3''s statement).
+        Tier per the file''s own §5 summary table: Th_coqc-grade exact algebra for the closed-form claims;
+        finite_diagnostic for the numeric battery confirmation on concrete instances (see
+        battery-random-graph-run-001). This does not raise the No-Go theorem itself beyond Dr (sketch) --
+        the lemmas formalize the bounded-suppression signature on the discrete graph-Laplacian spine model,
+        not the theorem''s own general proof (see `non_claims`).'
     - evidence_id: cite-galtung1969-potentialgap-001
       bearing: NEUTRAL
       independence_class: I1
@@ -322,10 +416,41 @@ five_questions:
         re-executed by a decorrelated route. Presenting a full-shape card now risks reading as more evidenced
         than it is on both axes.
       resolved: false
-      resolution: 'NOT resolved. Left open pending: (1) concurrent workers completing records/lit/potential-as-readout/h3/citations/,
-        (2) an independent (I3+) re-execution of sim/nogo_fixture.py or a second independently authored
-        fixture, and (3) a reconciliation pass updating this card once (1) and (2) exist, none of which
-        this task performed. `independent_check.status` is set to NONE below to reflect this honestly.'
+      resolution: 'PARTIALLY resolved 2026-09-05: (1) concurrent workers completed
+        records/lit/potential-as-readout/h3/citations/ (n=7, three rescoped to CONTEXT_ONLY_NOT_EVIDENCE
+        per the review findings below) -- DONE; (2) an independent (I3+) re-execution of sim/nogo_fixture.py
+        or a second independently authored fixture -- NOT YET DONE, though the formal file''s exact
+        algebra and its 60-instance battery now provide a second, differently-derived (though still
+        same-session, I1) confirmation of the operator-change and force-growth legs; (3) a reconciliation
+        pass -- DONE, by AI, not founder-reviewed. `independent_check.status` remains NONE.'
+    - by: three independent review routes (Falsifier/HostileReviewer/SourceAuditor, R1/R2/R3)
+      date: '2026-09-05'
+      content: 'Strongest defeaters, verbatim-short from each report (full text:
+        reviews/GLOSA-CC-20260905-0303.R1/R2/R3.review_report.json). R1: "''grows without bound'' rests on
+        three durations (4000/8000/16000 ticks) showing roughly linear cost; a finite run cannot show lim
+        C = infinity, only non-saturation over the sampled range... The operator-change zero-force result
+        is quoted from a note''s summary table, not the JSON, and ''zero force'' is definitional: the
+        fixture meters suppression force but never meters the cost of changing Gamma or S_env." R2: "the
+        statement folds the operator-change ''zero accumulated force'' leg into ''checked once on the
+        fixture'' while licensing_test admits that leg comes from a note''s summary table, not the
+        JSON... the fixture''s unbounded-suppression runs show zero crossings, i.e. the fixture tests
+        cost-growth-plus-recurrence, not the quoted [No-Go] theorem." R3: "No card for
+        Violence-as-Instability No-Go theorem or Causal Ethics lim C = infinity, both quoted in the
+        statement... No card for sim/nogo_fixture_result.json, the declared primary evidence_relation...
+        galtung1969-potentialgap-001: DIRECT_QUOTATION scope + ''SUPPORTS H3 strongly'' inflated; passage
+        is definitional framing only."'
+      resolved: false
+      resolution: 'PARTIALLY resolved by this revision: reworded "grows without bound" to cite Lemma 2''s
+        own closed-form rate F_i^infty > 0 (non-saturating over 4000-16000 ticks, not a three-point
+        extrapolation); stated re-crossing after a bounded budget is Lemma 1''s own content and the
+        fixture is its passing control, not a discovery; moved the operator-change zero-force leg onto
+        Lemma 3 plus the battery''s own P3 confirmation (60/60), not only the note''s table; restated that
+        the No-Go theorem remains a sketch and the fixture tests the model-internal reading only; rescoped
+        the two Galtung citation cards and cite-sathaanand2021-006 to CONTEXT_ONLY_NOT_EVIDENCE with
+        disclosures no longer claiming "SUPPORTS H3 strongly"; added `battery-random-graph-run-001` and
+        `formal-lemmas-L1-L4` as full evidence_relations pointing at the journal files by relative path.
+        NOT resolved: still no independent (I3+) re-execution of any of the three evidentiary artifacts
+        (fixture, battery, formal file); `independent_check.status` remains NONE.'
 identification_ladder:
   layers:
   - id: A0
@@ -395,24 +520,39 @@ ledger:
   borrowed:
   - 10.5281/zenodo.21529456 (Readout Universe -- Yaoharee Lahtee, lens)
   open:
-  - whether sim/nogo_fixture.py's own output has been independently re-executed by a decorrelated route
-    -- not yet run
+  - whether sim/nogo_fixture.py's own output, sim/battery.py's own output, or
+    FORMAL_2026-09-05_bounded_suppression.md's own algebra has been independently (I3+) re-checked by a
+    decorrelated route -- not yet run for any of the three
   - whether instability/violence/AI-safety-corrigibility literature reports a comparable bounded-vs-unbounded-suppression
-    signature -- no literature check has run yet
+    signature -- the seven literature cards found are context/framing only (see `related_citation_cards`);
+    no source states an equivalent signature verbatim
   - whether the two-node fixture is a sufficient minimal model of the No-Go theorem's own assumptions
-    -- an open assumption (A1), not yet independently checked
+    -- an open assumption (A1), not yet independently checked; the formal file''s discrete graph-Laplacian
+    spine model is a related but not identical model, also not yet independently checked against the
+    theorem''s own general assumptions
+  - whether the No-Go theorem's own general proof (beyond the model-internal Lemmas 0-4 on this specific
+    discrete spine) has been completed -- it remains a sketch, Dr tier
 non_claims:
 - This card does not claim the Violence-as-Instability No-Go theorem has been proven -- it remains a sketch
-  (Dr tier) per the theorem's own text; this card's own tier for the fixture result is finite_diagnostic
-  on that fixture only, per genre_decision.yaml's disposition_of_hypotheses.
-- This card does not claim sim/nogo_fixture.py has been independently re-executed by a decorrelated route
-  -- the one run cited (fixture-nogo-2node-run-001) is I1 (same-session).
-- This card does not claim H3 has been checked against independently fetched instability/violence/AI-safety-corrigibility
-  literature -- cite-potential-h3-001/002 are PLACEHOLDER ids pending records/lit/potential-as-readout/h3/citations/
-  (owned by concurrent workers lit-h1-h3/lit-h2).
-- This card does not claim the operator-change condition's zero-accumulated-force result was independently
-  re-verified from the raw fixture code by this task -- it is quoted from NOTE_2026-09-05_potential-choice-violence_axis.md's
-  own summary table (assumption A2).
+  (Dr tier) per the theorem's own text; the fixture and the formal file's Lemmas 0-4 test/formalize the
+  model-internal reading on a specific discrete spine model, not the theorem's own general proof. This
+  card's own tier for the fixture result is finite_diagnostic on that fixture only; the formal file's
+  closed-form claims are Th_coqc-grade exact algebra per that file's own §5 table, and its 60-instance
+  battery confirmation is finite_diagnostic -- per genre_decision.yaml's disposition_of_hypotheses.
+- This card does not claim sim/nogo_fixture.py, sim/battery.py, or
+  FORMAL_2026-09-05_bounded_suppression.md have been independently re-executed/re-derived by a
+  decorrelated route -- all three evidence_relations citing them (fixture-nogo-2node-run-001,
+  battery-random-graph-run-001, formal-lemmas-L1-L4) are I1 (same-session, this project's own work).
+- This card does not claim H3 has been checked against independently (I3+) reviewed instability/violence/AI-safety-corrigibility
+  literature -- the seven literature citation_refs (reconciled from the prior revision's placeholder ids
+  cite-potential-h3-001/002) are all I1-level and, per review findings, context/framing only, not
+  evidentiary tests of H3's own numerical claim.
+- This card does not claim the operator-change condition's zero-accumulated-force result rests only on
+  NOTE_2026-09-05_potential-choice-violence_axis.md's own summary table any longer -- it is now also
+  backed by Lemma 3's exact Sherman-Morrison algebra and the battery's own P3 confirmation on 60
+  random-graph instances (battery-random-graph-run-001), though this task did not independently re-derive
+  those results from the underlying code (assumption A2 remains, now extended to the battery/formal
+  file's own claims about themselves).
 - This card is not a veterinary, medical, legal, or religious determination of any kind.
 - This card does not claim an independent (I3+) review has occurred -- independent_check.status is NONE,
   not PENDING or PASSED.
@@ -472,9 +612,16 @@ lineage:
 related_source_cards: []
 related_observation_cards: []
 related_citation_cards:
-- cite-potential-h3-fixture-001
-- cite-potential-h3-001
-- cite-potential-h3-002
+- fixture-nogo-2node-run-001
+- battery-random-graph-run-001
+- formal-lemmas-L1-L4
+- cite-galtung1969-potentialgap-001
+- cite-galtung1969-negpospeace-002
+- cite-galtung1990-culturalviolence-003
+- cite-farmer2004-004
+- cite-pettit-globalrepublican-005
+- cite-sathaanand2021-006
+- cite-csaky2026-007
 responsibility:
   data_to_inference: joint
   inference_to_claim: human
@@ -525,8 +672,16 @@ empirical_extension:
         ticks (36.447 -> 73.178), consistent within the one run
     - what_varied: tool
       result: not_run
-      notes: no independent re-execution by a decorrelated route or a second fixture implementation has
-        been performed
+      notes: no independent (I3+) re-execution by a decorrelated route has been performed; the battery
+        (sim/battery.py) and the formal file's algebra are a second, differently-derived confirmation of
+        the same signature, but were produced by this project's own same-session (I1) work, not by an
+        independent route
+    - what_varied: data
+      result: same
+      notes: the 60-instance battery (N in {10,50,200}, 20 seeds each, random connected two-block graphs)
+        confirms P1/P2/P3/P4 on 60/60 instances -- the signature holds across randomized graph structure
+        and scale within this project's own model, though this is still I1 evidence (not an independent
+        re-execution)
     status: partial
 human_owner: founder
 revision_history:
@@ -543,3 +698,30 @@ revision_history:
     fixture), non_claims, responsibility, disclaimers computed via `./cli/glosa claim disclaimers`. `independent_check.status`
     set to NONE (no independent route has re-run the fixture or checked this card). Not yet reviewed or
     signed by the founder (status stays Draft).'
+- rev: '2'
+  date: '2026-09-05'
+  by: ai-assistant
+  note: 'Post-review reconciliation, applying the unfixed findings from three independent review routes
+    (reviews/GLOSA-CC-20260905-0303.R1/R2/R3.review_report.json). (a) reworded statement: "grows without
+    bound" -> cites Lemma 2''s own closed-form rate F_i^infty > 0, non-saturating over 4000-16000 ticks,
+    not a three-point extrapolation; stated re-crossing after budget exhaustion is Lemma 1''s own content
+    and the fixture is its passing control, not a discovery; moved the operator-change zero-force leg
+    onto Lemma 3 + the battery''s P3 confirmation (60/60), not only the note''s table; restated the No-Go
+    theorem remains a sketch and the fixture tests the model-internal reading only. (b) kept
+    fixture-nogo-2node-run-001 (strength unchanged, already contains "context"); ADDED
+    battery-random-graph-run-001 and formal-lemmas-L1-L4 the same way (citation_ref = the same id string,
+    strength containing "context", bearing SUPPORTS, I1), pointing at the journal files by relative path
+    (cpg_research_journal/research/society-justice-peace/..., no absolute /home paths). (c) in
+    records/lit/potential-as-readout/h3/citations/, set scope CONTEXT_ONLY_NOT_EVIDENCE on
+    cite-galtung1969-potentialgap-001 and cite-galtung1969-negpospeace-002 (were DIRECT_QUOTATION) and
+    rewrote their disclosures to remove "SUPPORTS H3 strongly"/"SUPPORTS H3"; made
+    cite-sathaanand2021-006''s disclosure agree with its already-context scope (removed its
+    "SUPPORTS H3"/"DIRECT_QUOTATION" contradiction); re-ran lit_crossvendor_check.py h3 --only those
+    three (3/3 VERIFIED CONTEXT_ONLY), `lit table h3`, `lit manifest h3` (stayed PASS); the two Galtung
+    relations in this card were already bearing NEUTRAL/strength context (an earlier fix, not this one).
+    (d) regenerated `seen.citation_refs`, `separates.licensing_test`, and `ai_filled` to match
+    `tested.evidence_relations`; added a `dissent_records` entry summarising all three routes'' strongest
+    defeaters verbatim-short with report file refs; updated `non_claims`, `ledger.open`,
+    `related_citation_cards`, and `empirical_extension.robustness.checks`. No independent (I3+) re-check
+    of the fixture, battery, or formal file has occurred; `independent_check.status` remains NONE;
+    `status` remains Draft.'

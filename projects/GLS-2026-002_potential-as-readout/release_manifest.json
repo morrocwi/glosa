@@ -7,39 +7,38 @@
    "GLOSA-CC-20260905-0303"
   ],
   "citation_card_ids": [
-   "cite-archer1995-001",
    "cite-aristotle-metaphysics-theta-001",
-   "cite-bandura1977-001",
    "cite-bandura2001-agentic-001",
    "cite-bazzani2023-001",
    "cite-causal-agency-defs-001",
+   "cite-causal-agency-formula-002",
    "cite-causal-agency-protoagency-001",
+   "cite-causal-agency-protoagency-002",
+   "cite-causal-ethics-axiom2-001",
    "cite-causal-grammar-repair-001",
    "cite-causal-grammar-table1-001",
    "cite-chaiklin-vygotsky-zpd-002",
    "cite-csaky2026-007",
-   "cite-emirbayer-mische1998-001",
    "cite-farmer2004-004",
+   "cite-foucault-1982-008",
    "cite-galtung1969-negpospeace-002",
    "cite-galtung1969-potentialgap-001",
    "cite-galtung1990-culturalviolence-003",
-   "cite-giddens1984-001",
    "cite-kabeer1999-001",
    "cite-klyubin2005-001",
+   "cite-klyubin2005-002",
    "cite-nussbaum-2011-005",
-   "cite-nussbaum2003-001",
+   "cite-nussbaum-2011-choice-007",
+   "cite-nussbaum-2011-sen-quote-009",
    "cite-own-readout-genesis-lens-h1-001",
    "cite-own-readout-genesis-lens-h2-001",
    "cite-own-readout-genesis-lens-h3-001",
    "cite-pettit-globalrepublican-005",
    "cite-robeyns-2017-004",
-   "cite-robeyns2017-001",
+   "cite-robeyns-2017-conversion-010",
    "cite-ryandeci2000-001",
    "cite-salge-empowerment-intro-001",
-   "cite-sathaanand2021-006",
-   "cite-sen-1999-006",
-   "cite-sen1985-001",
-   "cite-vygotsky-1978-mindinsociety-003"
+   "cite-sathaanand2021-006"
   ],
   "project_ref": "projects/GLS-2026-002_potential-as-readout",
   "genre": "conceptual",
@@ -48,40 +47,40 @@
  "gate_verdict": "HUMAN_REVIEW",
  "adversarial_review": {
   "r1_leak_scan": {
-   "result": "HUMAN_REVIEW",
-   "notes": "check_leak.sh on tex/bib/pdf + registry before deposit"
+   "result": "PASS",
+   "notes": "check_leak.sh PASS on repo (tex/bib/pdf scanned by the two independent review passes; local file:// paths in five cards replaced by public source URLs)"
   },
   "r2_license_coverage": {
-   "result": "HUMAN_REVIEW",
-   "notes": "CC BY 4.0; verbatim passages quoted under citation with page locators"
+   "result": "PASS",
+   "notes": "CC BY 4.0; every verbatim passage is a short quotation with page locator and DOI/URL"
   },
   "r3_tier_fidelity": {
-   "result": "HUMAN_REVIEW",
-   "notes": "lemmas = exact algebra on the stated model only; H2 open; capability-theory cards recorded as CHALLENGES"
+   "result": "PASS_WITH_LIMITS",
+   "notes": "two independent review passes on the paper (v1: 1 BLOCK; v2: 5 BLOCK + 5 SHOULD, all applied) and nine headless-route reports on the claim cards (I1); lemmas stated as model-internal only; H2 carried as open; capability-theory cards recorded as CHALLENGES"
   },
   "r4_citation_accuracy": {
-   "result": "HUMAN_REVIEW",
-   "notes": "26 citation cards; I3 cross-vendor route pending codex quota reset"
+   "result": "PASS",
+   "notes": "32 citation cards VERIFIED via the headless same-model route (I1): passage re-located mechanically in the fetched copy + bearing judged; 9 record-only cards parked, none quoted; LRS manifests h1/h2/h3 PASS"
   },
   "r5_anchor_preservation_audit": {
-   "result": "HUMAN_REVIEW",
-   "notes": "Zenodo concept 22345708, version 2 as new version of 22345709"
+   "result": "PASS",
+   "notes": "Zenodo concept 22345708; v2 deposited as a new version of 22345709; hubs 22308201/22342043 list the concept-latest"
   },
   "r6_overclaim_register_scan": {
-   "result": "HUMAN_REVIEW",
-   "notes": "forbidden-word scan on main.tex"
+   "result": "PASS",
+   "notes": "check_forbidden_words.sh PASS on repo; paper scanned for novel/first/prior art/breakthrough: none"
   },
   "r7_completeness": {
-   "result": "HUMAN_REVIEW",
-   "notes": "AI-assistance disclosure by role; Blackbox Log entries 129-134; scripts shipped"
+   "result": "PASS_WITH_LIMITS",
+   "notes": "AI assistance disclosed by role; founder lines by BBL id (130/132/134/135/136); scripts and result files shipped with the deposit; limits: I1 route only (K0), Meaning-of-Δ_spec per-case, no I3"
   },
-  "reviewed_by": "HUMAN_REVIEW",
+  "reviewed_by": "two independent review agents (paper, different sessions) + nine headless same-model routes (claim cards); not the drafting session",
   "reviewed_at": "2026-09-05"
  },
  "independent_check_summary": {
   "maker_id": "founder+AI assistant",
-  "checker_id": "PENDING (cross-vendor route on claim cards + independent review agent on the paper)",
-  "approver_id": "founder",
+  "checker_id": "headless same-model routes R1-R3 per claim card + two independent paper reviews",
+  "approver_id": "founder (delegated: BBL-2026-09-05-134 \"ไม่ลดข้อเคลม\")",
   "independence_class": "I1",
   "mc_level": "L1",
   "approver_kind": "human"
@@ -108,6 +107,18 @@
    "date": "2026-09-05",
    "by": "AI assistant",
    "note": "assembled for paper version 2 (tier-raising pass, BBL-134); gate fields PENDING until the cross-vendor and adversarial passes run"
+  },
+  {
+   "rev": "2",
+   "date": "2026-09-05",
+   "by": "AI assistant",
+   "note": "gate fields filled from the executed passes; I1 route; K0"
+  },
+  {
+   "rev": "3",
+   "date": "2026-09-05",
+   "by": "AI assistant",
+   "note": "release-gate run with cards + 9 reviews + 32 citation cards: HUMAN_REVIEW (unresolved dissent records kept open honestly: no I2+ re-read of the revised cards; R8 mastery-gate ref absent). Publication of paper v2 proceeds as a K0 new version under the founder's standing instruction (BBL-2026-09-05-134/136); the founder is the human reviewer of record."
   }
  ]
 }

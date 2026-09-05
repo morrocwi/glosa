@@ -20,7 +20,7 @@ exact_passage: violence is present when humanbeings are being influencedso that 
   statement may lead to more problems than it solves.
 page_or_locator: Galtung 1969, p. 168 (p3 in the local page-tagged extraction), right-hand
   column, opening of section "2. On the definition and dimensions of 'violence'"
-scope: DIRECT_QUOTATION
+scope: CONTEXT_ONLY_NOT_EVIDENCE
 evidence_tier: definition
 independence_class: I1
 who_verified: 'route:claude (I1 route: same model, fresh headless session (no shared
@@ -38,15 +38,25 @@ disclosure: 'This is Galtung''s foundational move that H3 builds on directly: vi
   the right-hand column across five consecutive lines (the column beginning "As a
   point of departure, let us say that..."), which is how it reads as one continuous
   sentence-run in the original two-column layout -- disclosed here rather than silently
-  reconstructed. SUPPORTS H3 strongly: "low witnessed potential" in H3''s three-valued
-  gate is directly this Galtung passage''s "actual...below potential realizations"
-  gap. | I3 route (codex) judged from fetched metadata/abstract + the card''s quoted
-  passage, not full text:  | I1 route (claude) judged from fetched metadata/abstract
-  + the card''s quoted passage, not full text: Fetched text is Galtung 1969 ''Violence,
-  Peace, and Peace Research''; verbatim passage found at section 2 opening, matching
-  locator. Passage defines violence as actual-below-potential gap; it is foundational
-  framing H3 builds on, not evidence for H3''s numerical budget-exhaustion signature
-  or the fixture result.'
+  reconstructed. REVISED 2026-09-05 (R1/R2/R3 review on GLOSA-CC-20260905-0303 found
+  "SUPPORTS H3 strongly" inflated relative to this card''s own I1 route note below,
+  which already conceded no bearing on the numerical claim): context/framing for H3,
+  not evidence for the numerical signature. This passage defines violence as an actual-below-potential
+  gap, the same vocabulary H3''s statement uses, but does not test H3''s own numerical
+  claim (bounded-budget re-crossing, force divergence, operator-change zero-force
+  result on sim/nogo_fixture_result.json). | I3 route (codex) judged from fetched
+  metadata/abstract + the card''s quoted passage, not full text:  | I1 route (claude)
+  judged from fetched metadata/abstract + the card''s quoted passage, not full text:
+  Fetched text is Galtung 1969 ''Violence, Peace, and Peace Research''; verbatim passage
+  found at section 2 opening, matching locator. Passage defines violence as actual-below-potential
+  gap; it is foundational framing H3 builds on, not evidence for H3''s numerical budget-exhaustion
+  signature or the fixture result. | I1 route (claude) judged from fetched metadata/abstract
+  + the card''s quoted passage, not full text: Fetched text is Galtung''s ''Violence,
+  Peace, and Peace Research'' (section 2 on defining violence); the quoted passage
+  appears verbatim, including the run-together artifacts. It defines violence as the
+  actual-vs-potential gap, which is relevant background for H3''s potential/feasible-region
+  framing, but it says nothing about suppression budgets, cost divergence, or the
+  fixture, so context only.'
 superseded_by: null
 notes: Reused an already-fetched local copy per the task brief rather than re-fetching
   JSTOR (paywalled; the local text/pdf was already obtained by a prior session for

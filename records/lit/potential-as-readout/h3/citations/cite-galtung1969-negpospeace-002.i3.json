@@ -9,7 +9,7 @@
   "passage_plausible": true,
   "claim_match": true,
   "bearing": "CONTEXT_ONLY",
-  "reason": "Fetched text (Galtung 1969, p.183) contains the passage verbatim, including markers 30/31. It defines negative vs positive peace, relevant context for H3's visible-calm vs operator-change distinction, but does not test or support H3's numerical/budget claim.",
+  "reason": "Fetched text is Galtung's 'Violence, Peace, and Peace Research' (1969 per card, p. 183 marker present); exact passage found verbatim in the fetched text. As CONTEXT_ONLY, the negative/positive peace split is relevant background for H3's distinction between suppressed visible instability and operator-level repair. No metadata contradiction in the material provided.",
   "passage_mechanical": "verbatim prefix found in fetched open text"
  },
  "date": "2026-09-04"

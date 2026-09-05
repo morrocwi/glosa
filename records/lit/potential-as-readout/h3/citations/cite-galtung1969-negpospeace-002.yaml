@@ -17,7 +17,7 @@ exact_passage: absence of personal violence, and absence of structural violence.
   We shall refer to them as negative peace and positive peace respectively.31
 page_or_locator: Galtung 1969, p. 183 (p18 in the local page-tagged extraction), left-hand
   column
-scope: DIRECT_QUOTATION
+scope: CONTEXT_ONLY_NOT_EVIDENCE
 evidence_tier: definition
 independence_class: I1
 who_verified: 'route:claude (I1 route: same model, fresh headless session (no shared
@@ -30,16 +30,26 @@ disclosure: 'The canonical negative-peace/positive-peace split H3''s "observed c
   the extraction. As with the sibling card, the source PDF is two-column and this
   extraction interleaves columns line-by-line; this exact_passage is read from the
   LEFT-hand column only, across four consecutive lines, disclosed rather than silently
-  reconstructed. SUPPORTS H3: "observed calm" in H3''s gate is Galtung''s "negative
-  peace" (absence of personal violence) taken alone, which Galtung himself already
-  warns is not the same as "positive peace" (absence of structural violence) -- i.e.
-  calm-without-structural-correction is exactly the gap H3 calls pseudo-peace. | I3
-  route (codex) judged from fetched metadata/abstract + the card''s quoted passage,
-  not full text:  | I1 route (claude) judged from fetched metadata/abstract + the
-  card''s quoted passage, not full text: Fetched text (Galtung 1969, p.183) contains
-  the passage verbatim, including markers 30/31. It defines negative vs positive peace,
-  relevant context for H3''s visible-calm vs operator-change distinction, but does
-  not test or support H3''s numerical/budget claim.'
+  reconstructed. REVISED 2026-09-05 (R3 review on GLOSA-CC-20260905-0303: "DIRECT_QUOTATION
+  scope + ''SUPPORTS H3'' inflated; should be CONTEXT_ONLY like siblings"): context/framing
+  for H3, not evidence for the numerical signature. Galtung''s negative-peace (absence
+  of personal violence) vs. positive-peace (absence of structural violence) split
+  is a vocabulary this card''s statement echoes, but the passage itself does not test
+  H3''s numerical claim -- the "SUPPORTS H3" language this disclosure previously carried
+  is removed, consistent with this card''s own I1 route note below, which already
+  said the passage does "not test or support H3''s numerical/budget claim." | I3 route
+  (codex) judged from fetched metadata/abstract + the card''s quoted passage, not
+  full text:  | I1 route (claude) judged from fetched metadata/abstract + the card''s
+  quoted passage, not full text: Fetched text (Galtung 1969, p.183) contains the passage
+  verbatim, including markers 30/31. It defines negative vs positive peace, relevant
+  context for H3''s visible-calm vs operator-change distinction, but does not test
+  or support H3''s numerical/budget claim. | I1 route (claude) judged from fetched
+  metadata/abstract + the card''s quoted passage, not full text: Fetched text is Galtung''s
+  ''Violence, Peace, and Peace Research'' (1969 per card, p. 183 marker present);
+  exact passage found verbatim in the fetched text. As CONTEXT_ONLY, the negative/positive
+  peace split is relevant background for H3''s distinction between suppressed visible
+  instability and operator-level repair. No metadata contradiction in the material
+  provided.'
 superseded_by: null
 notes: Companion card to cite-galtung1969-potentialgap-001 from the same document,
   a distinct citation USE (different exact passage, different definitional claim)

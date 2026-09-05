@@ -9,7 +9,7 @@
   "passage_plausible": true,
   "claim_match": true,
   "bearing": "CONTEXT_ONLY",
-  "reason": "Running header in fetched text matches title/year; passage found verbatim. Passage restates Galtung negative/positive peace and military-vs-social expenditure, loosely analogous to H3's visible-calm vs operator-repair distinction, so relevant as context only. Note card stance text says SUPPORTS while scope says CONTEXT_ONLY; scope governs.",
+  "reason": "Fetched text is the Hiroshima Peace Research Journal vol. 8 PDF; no title/year/author contradiction visible. Passage found verbatim in the autobiographical section. As context, it names the Galtung structural-violence lineage the hypothesis draws on but does not test or bear on the No-Go/cost-divergence claim.",
   "passage_mechanical": "verbatim prefix found in fetched open text"
  },
  "date": "2026-09-04"
