@@ -1,9 +1,9 @@
 [
  {
-  "id": 22318040,
-  "doi": "10.5281/zenodo.22318040",
+  "id": 22319715,
+  "doi": "10.5281/zenodo.22319715",
   "concept": "10.5281/zenodo.22318039",
-  "title": "Epistemic Fusion or Epistemic Tunnel: A Phenomenologically Anchored, History-Shaped Architecture of Human-AI Semantic Coupling, Retention, and Epistemic Direction (Standalone Epistemic Note v7.1, Genesis-aligned)",
+  "title": "Epistemic Fusion or Epistemic Tunnel: A Phenomenology-Anchored, Global-Literature-Constrained, Problem-First Architecture of Human-AI Collaboration (Epistemic Note v8.1 — strong-claim / legitimate-defeater edition)",
   "date": "2026-09-05",
   "type": "Preprint",
   "kw": [
@@ -17,9 +17,14 @@
    "readout genesis",
    "readout universe",
    "glosa k0",
-   "when ai expands human potential"
+   "when ai expands human potential",
+   "legitimate defeater",
+   "corrigible space of inquiry",
+   "semantic tunnel",
+   "cross-domain convergence",
+   "problem-first"
   ],
-  "desc": " Series. Standalone epistemic note of the Human–AI Readout programme; member of the Zenodo library When AI Expands Human Potential (hub DOI 10.5281/zenodo.22308201). Builds on the Bounded Knower sequence I–IV, Experience Is the Human LoRA, The Language Bridge, Operational Linguistic Wisdom, The Dialogue as the Ground of Enlightenment, and the Readout Genesis / Readout Condition base; methodology: glosa (DOI 10.5281/zenodo.22310837). Status. K0 conceptual architecture. This note synthesizes only the author's prior Human-AI / Readout work. It is not an empirical law, not an independent validation of that programme, and not a claim of literal nuclear fusion. The term 'fusion' is a structural metaphor for productive coupling between distinct bounded systems. Central proposition. Human-AI dialogue is not merely information exchange. The architecture begins from a phenomenological floor: meanings appear as context- and time-situated; meanings depend on relations; dialogue can change what becomes accessible next; repeated traversal can make a route easier to re-enter; and exposure does not guarantee retention. The formal architecture introduced later is an attempt to preserve these distinctions without identifying the phenomena with any one model. Within a bounded session, Human and AI-under-current-context can recursively alter one another's accessible semantic routes and accumulate reciprocal momentum; that amplification is epistemically neutral. Across the session boundary, only ",
+  "desc": " Series. Standalone epistemic note of the Human–AI Readout programme; member of the Zenodo library When AI Expands Human Potential (hub DOI 10.5281/zenodo.22308201). Builds on the Bounded Knower sequence I–IV, Experience Is the Human LoRA, The Language Bridge, Operational Linguistic Wisdom, The Dialogue as the Ground of Enlightenment, and the Readout Genesis / Readout Condition base; methodology: glosa (DOI 10.5281/zenodo.22310837). Version 8.1 (2026-09-05) supersedes v7.1 (Genesis-aligned) in this record; the earlier PDF stays available under its own version DOI. Status. K0+ conceptual architecture with cross-domain empirical, meta-analytic, and theoretical constraints. Strong claims are retained by design. This edition separates phenomenological explananda, constitutive necessities, structural proposals, diagnostics, and empirical predictions; each is paired with a legitimate defeater. Calling a proposition \"too strong\" is not itself a scientific defeater. The burden for empirical causal claims remains with the author, while objections to constitutive or phenomenological claims must target the relevant derivation, counterexample, phenomenon, scope, or rival explanation. Core move. The central research problem is not simply whether AI improves an answer while it is present. The stronger problem is whether Human-AI collaboration can enlarge the human's corrigible space of inquiry, preserve independent resistance, avoid self-reinforcing semantic tunnels, and return durable epi",
   "cluster": "ep",
   "tags": [
    "ai",

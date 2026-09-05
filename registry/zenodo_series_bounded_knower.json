@@ -29,7 +29,9 @@
  "companions": [
   {
    "title": "Epistemic Fusion or Epistemic Tunnel (v7.1)",
-   "doi": "10.5281/zenodo.22318040"
+   "doi": "10.5281/zenodo.22318040",
+   "doi_v8_1": "10.5281/zenodo.22319715",
+   "conceptdoi": "10.5281/zenodo.22318039"
   }
  ]
 }
