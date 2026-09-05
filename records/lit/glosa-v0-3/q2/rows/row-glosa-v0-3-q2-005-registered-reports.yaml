@@ -25,8 +25,8 @@ what_it_would_say_against_us: >-
   gamed or failing to guarantee reproducibility in practice), so this source alone cannot carry
   Q2 to a formalized kernel rule.
 citation_card: cite-glosa-v0-3-q2-005
-defeater_class: empirical
-legitimate_defeater: "Defeated by evidence that a transparent, checkable public record (registered-reports-style) fails to prevent the same gaming/scaling problems documented for badges, once tested at scale for a standalone scholar without institutional backing."
+defeater_class: phenomenological
+legitimate_defeater: "Defeated by evidence that, within Registered Reports' own declared workflow, editors/reviewers do not in fact treat pre-accepted-protocol adherence as the operative pass/fail condition and instead revert to outcome-based judgment -- i.e. the checkable-record-substitutes-for-institutional-stamp phenomenon this source describes is absent or misdescribed within its own declared scope."
 defeater_status: untested
 verified:
   metadata_verified: true

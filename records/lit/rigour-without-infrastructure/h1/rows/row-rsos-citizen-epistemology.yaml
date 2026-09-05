@@ -24,8 +24,8 @@ what_it_would_say_against_us: >-
   claim card and AI check) may still lack the epistemic advantage this paper's mechanism depends
   on -- rigour might require a community, not just a well-documented individual claim.
 citation_card: cite-rsos-citizen-epistemology-001
-defeater_class: empirical
-legitimate_defeater: "Defeated by a study showing a single well-documented individual claim (claim card plus AI check) achieves epistemic robustness comparable to a diverse multi-participant deliberative process."
+defeater_class: phenomenological
+legitimate_defeater: "Defeated by evidence that the standpoint-diversity phenomenon this account requires for epistemic robustness is not in fact necessary within its own declared scope -- e.g. a case where a single standalone participant's well-documented claim proves as robust as a diverse deliberative process, absent the diversity this paper claims is doing the work."
 defeater_status: untested
 verified:
   metadata_verified: true

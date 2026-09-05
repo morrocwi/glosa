@@ -26,8 +26,8 @@ what_it_would_say_against_us: >-
   study behind it) the manifest's diversity_audit must flag rather than silently count as
   equivalent-weight evidence to a controlled study.
 citation_card: cite-mindstudio-crossvendor-010
-defeater_class: empirical
-legitimate_defeater: "Defeated by an actual measured study of cross-vendor AI-agent code review finding a null or negative effect, since no measurement currently backs this marketing claim."
+defeater_class: phenomenological
+legitimate_defeater: "Defeated by evidence that the complementary-error-catching phenomenon this marketing content asserts is absent or overstated within its own declared scope -- e.g. a measured study of cross-vendor AI-agent code review finding a null or negative effect, since no measurement currently backs this claim."
 defeater_status: untested
 stance: "YES"
 verified:

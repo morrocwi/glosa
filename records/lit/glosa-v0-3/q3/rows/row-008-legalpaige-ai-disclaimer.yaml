@@ -18,8 +18,8 @@ what_it_would_say_against_us: A direct, if commercially motivated, statement tha
   in this vendor's own practice -- a concrete instance of the standardization move failing to hold even
   within one non-regulated domain, before crossing into health/legal territory at all.
 citation_card: cite-glosa-v0-3-q3-008
-defeater_class: empirical
-legitimate_defeater: "Defeated by a documented instance of a single standardized disclaimer clause fully covering the varied services within the freelance-creative domain without needing service-specific/client-specific variants."
+defeater_class: phenomenological
+legitimate_defeater: "Defeated by evidence that the service-specific/client-specific differentiation this vendor describes is absent within its own declared scope -- i.e. that a single standardized disclaimer clause in fact fully covers the varied services within the freelance-creative domain without needing variants -- or that this vendor's segmentation is a sales artifact rather than a genuine practice difference."
 defeater_status: untested
 verified:
   metadata_verified: true
