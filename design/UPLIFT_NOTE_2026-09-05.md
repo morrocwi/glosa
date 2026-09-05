@@ -216,7 +216,7 @@ withdrawn per a standing chair ruling its own proposer missed.
 4. **The 13/8/4 count itself could be stale** the moment any of the 8 `with_revision` or 4
    `still_open` rows is actually revised and re-scored — this note is a snapshot of the 2026-09-05
    reconciliation state, not a live query against `DECISIONS.yaml`. A future reader should re-run
-   `python tools/anse_sync/cli.py list decisions` (from `the internal command-center/`) rather than treat this table as
+   the internal command-center's DECISIONS ledger (private) rather than treat this table as
    current beyond the date in its filename.
 5. **No claim in this note has been through a founder ruling.** Every row marked
    `founder_decision_needed: true` in the underlying `SESSION_ARCH_v0.4_rejudged.json`/`_SPEC.md`

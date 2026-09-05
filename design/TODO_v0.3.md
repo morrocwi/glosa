@@ -14,7 +14,10 @@ New kernel rule 26 (composite-quote detector) immediately caught 4 of our own S2
 
 # v0.4 — session architecture (founder BBL-119: raise the work to the claim)
 - [x] uplift meeting (25 proposals) → re-anchored + re-judged (24) → design/SESSION_ARCH_v0.4_SPEC.md: 13 build_now / 7 with_revision / 4 still_open
-- [ ] V1 build build_now nodes (session fields in Blackbox Note + hypothesis_selection session key, χ_recip diagnostic, retained_direction + NC-77 + D-RETENTION-DIRECTION, entry anchor H0 + resistance precommit flag, dialogue-table claim-type/defeater columns + defeater status, kernel rules 29-30, Human Mastery Gate card, P01 prompt boundary), tests
-- [ ] V2 sim fixtures: tunnel_unflagged, retention_undeclared, chooser_forgotten, question_drift_unlogged, momentum_overclaimed → regression
+- [x] V1 build build_now nodes (commits dc08513, e630576; review MUST fixes 6c47fb3) (session fields in Blackbox Note + hypothesis_selection session key, χ_recip diagnostic, retained_direction + NC-77 + D-RETENTION-DIRECTION, entry anchor H0 + resistance precommit flag, dialogue-table claim-type/defeater columns + defeater status, kernel rules 29-30, Human Mastery Gate card, P01 prompt boundary), tests
+- [x] V2 sim fixtures (30/30 caught, 0 false alarms): tunnel_unflagged, retention_undeclared, chooser_forgotten, question_drift_unlogged, momentum_overclaimed → regression
 - [ ] V3 with_revision nodes raised (line-origin enum, candidate-set delta, chooser reaffirmation, SA-2/3/4, HU-4)
-- [ ] V4 review + gate + release v0.4.0
+- [ ] V4 review (done, 12 MUST applied) + gate v4 (done, BLOCKs fixed) + release v0.4.0 (Zenodo pending founder push/tag)
+- [Open] lrs.dr-tag-not-dag-node: the four LRS sub-proposals (defeater-defeated-status, dialogue-table claim-type column, defeater-not-collapse rule, claim-type-defeater enum) stay filed here pending P09 vetting — no DAG node by their own filing rule (built in v0.4 as rules 29-31 + columns)
+- [ ] kernel.reciprocal-lineage-diagnostic: CLI `glosa kg diagnose --chi-recip` (kernel function shipped in v0.4)
+- [ ] rule 17 column-boundary re-verification of multi-line citations into the two-column EPISTEMIC_FUSION txt files (gate v4 WARN; ARCH_REVIEW_v0.7 SHOULD)

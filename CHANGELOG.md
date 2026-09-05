@@ -26,7 +26,7 @@
   closed five-item list, replacing the earlier open-ended `(e.g. ...)` example — an AI prompt
   outside the list must be logged `ai_filled.prompt_source: freeform`, extending `NC-58`
   (AIContribution≠EpistemicResponsibility) from AI-*filled answers* to AI-*posed prompts*.
-- New non-collapse row specified (not yet in `methodology/data/non_collapse_table.json`):
+- Non-collapse row added to `methodology/data/non_collapse_table.json`:
   **`NC-77` Retention≠Direction** — persistence of a chosen hypothesis across ≥2 sessions is never
   by itself evidence of expansion vs. tunnel; only a linked independent check may set the sign.
   Reservation of the id in the internal command-center's DECISIONS ledger (private) is a pending founder act

@@ -630,3 +630,8 @@ changed and where, not a certification.
 **Not applied (scope note):** the 10 pending founder decisions (§15, now 11 items) remain pending —
 none of this review response resolves a founder-only call; it corrects citation, ledger, and
 field-location defects the review found, all within the AI-owned half of the work.
+
+## 19. Carried forward under gate rule 10 (found missing by publish gate v4)
+
+- **lrs.dr-tag-not-dag-node** (build_now, score 8) — status: applied as process: the four LRS sub-proposals are filed as `[Open]` lines in `design/TODO_v0.3.md` (v0.4 section) pending P09 vetting; no DAG node is created for this lens (its own filing rule).
+- **kernel.reciprocal-lineage-diagnostic** (build_now, score 9) — status: kernel function `chi_recip_diagnostic` shipped (kernel/glosa_kernel.py; tier Open, returns not_computable without session_id; failing control in tests/test_kernel.py SessionArchV04Test); `schema/kg_edge.schema.json` gained `session_id`; the CLI command `glosa kg diagnose --chi-recip` is NOT yet wired — carried to v0.4.1 with a TODO in cli/glosa.

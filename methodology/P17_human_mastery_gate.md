@@ -101,10 +101,7 @@ the prose) · `NC-60` Founder=ideas/direction≠AI=assistant.
 
 ## What this card does NOT do
 
-It does not itself create `schema/human_mastery_gate.schema.json` or wire R8 into
-`methodology/P10_publish_gate.md`'s mechanical dimension list, or fix the broken
-`FOUNDATION_v0.6.md` §7.5 pointer on disk — those are schema/kernel/FOUNDATION-file edits outside
-this task's ownership list (`design/FOUNDATION_v0.7_PATCH.md` in this same pass specifies the exact
+The schema `schema/human_mastery_gate.schema.json`, the template, the kernel validator, the R8 warning in `methodology/P10_publish_gate.md` and the §7.5 pointer fix were built in v0.4 (2026-09-05); this card is the protocol text and does not certify that build.
 text for that fix, but does not apply it). This card narrates the rule; the DAG node
 `hu.mastery-gate-wired` (spec §13) tracks the build. It does not decide *what counts as a correct
 answer* to any of the ten questions — the kernel and R8 can only check the field is present and
