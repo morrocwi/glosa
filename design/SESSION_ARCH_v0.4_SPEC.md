@@ -180,7 +180,7 @@ vertical-authority gate is being introduced here).
    SA-1's fields and defeater but points at the wrong FOUNDATION section (§2.3 R0/R1/R2 instead of
    Blackbox Note directly). Confirm SA-1 is canonical and the kernel.* proposal is retired without
    a separate build, to avoid two homes for `ai_state_at_boundary`.
-3. **Reserve NC-77** in `cpg/research/coordination/DECISIONS.yaml` before any concurrent Family J
+3. **Reserve NC-77** in the internal command-center's DECISIONS ledger (private) before any concurrent Family J
    proposal can claim the id (the id itself is independently verified free — see §3 — but the
    reservation act is a founder-owned ledger write, not an AI one).
 4. **SA-3 retroactivity**: whether the three new required Problem Card fields
@@ -188,7 +188,7 @@ vertical-authority gate is being introduced here).
    apply to already-published Problem Cards or forward-only (recommended: forward-only, per
    meeting §5.3 — but this is the founder's call, not a default AI may set).
 5. **SA-4 ledger row**: ratify logging the chi_recip/m^H/m^AI decline as `status: RECORDED` in
-   `cpg/research/coordination/DECISIONS.yaml` (not the fabricated `DECLINED-FOR-NOW` value, which
+   the internal command-center's DECISIONS ledger (private) (not the fabricated `DECLINED-FOR-NOW` value, which
    is not in that ledger's status enum).
 6. **Approve building the H3 sim now**: this is the first genuinely empirical (n=0, untested)
    falsifier run under this framework since the fabricated-C-id incident; running it produces a
@@ -265,7 +265,7 @@ vertical-authority gate is being introduced here).
   revision_needed:
     - "3 citation line corrections: EPISTEMIC_FUSION_v7.1.txt:550->548, :552->550, :494->495"
     - "drop or replace the 4th citation (design/FOUNDATION_v0.6.md:1670, irrelevant boilerplate)"
-  target: cpg/research/coordination/DECISIONS.yaml (status:RECORDED, not fabricated DECLINED-FOR-NOW); glosa/DECISIONS.md mirror
+  target: the internal command-center's DECISIONS ledger (private) (status:RECORDED, not fabricated DECLINED-FOR-NOW); glosa/DECISIONS.md mirror
   founder_decision_needed: true
 
 - id: schema.retention-direction-field.session-grouping-key   # SA-2, still_open
@@ -320,7 +320,7 @@ softened claim)
 
 | id | citations_verified | defeater_legitimate | control_mechanical | invariant_ok | score | status | exact fix / raise-path |
 |---|---|---|---|---|---|---|---|
-| `lrs.dr-tag-not-dag-node` | true | true | true | true | 8 | **build_now** | None load-bearing. Before `scripts/check_dag_node_gate.sh` (not yet built) ships, pin one canonical path — `cpg/research/coordination/DECISIONS.yaml` — instead of the parenthetical "or the repo's local decisions log" alternative currently in `acceptance_test`. |
+| `lrs.dr-tag-not-dag-node` | true | true | true | true | 8 | **build_now** | None load-bearing. Before `scripts/check_dag_node_gate.sh` (not yet built) ships, pin one canonical path — the internal command-center's DECISIONS ledger (private) — instead of the parenthetical "or the repo's local decisions log" alternative currently in `acceptance_test`. |
 | `lrs.defeater-defeated-status-field` | true | true | true | true | 8 | **build_now** | None. |
 | `lrs.dialogue-table-claim-type-column` | true | true | true | true | 8 | **build_now** | `claim_as_stated` ("Add a claim_type + legitimate_defeater column") is stale relative to `change`'s actual, better-reasoned deliverable (`defeater_class`, deliberately renamed to avoid the exact collision the proposal's own evidence proves at `kernel/glosa_kernel.py:643`, where `claim_type` already routes rule16w). Sync `claim_as_stated` to name `defeater_class` before v0.4 lock — a literal build of the stale wording would recreate the defect the proposal itself defeats. |
 | `lrs.defeater-not-collapse-rule` | true | true | true | true | 6 | **build_now** | The `legitimate_defeater` frames "absence-of-instance ≠ defeater for a forward-looking guard" as directly derived from `sources/notes/EPISTEMIC_FUSION_v8.1.txt:51-53`'s Burden rule ("'The claim is strong' is not a counterexample..."), but that text is about defending an architecture claim against "it's strong," not about justifying a new kernel guard against "no instance found yet." State this as a reasoned analogy to the sibling pattern already used by `methodology/data/contaminated_concept_table.json` (a pre-write catalogue, not a log of caught instances), not as a direct textual derivation. Mechanism/build_path unchanged. |
@@ -357,7 +357,7 @@ never conflates the two.
 Filing note (`lrs.dr-tag-not-dag-node`, build_now): none of the four proposals below get a new
 `design/DAG_v0.3.yaml` node yet. Per that proposal's own control, they are filed as one
 `design/TODO_v0.3.md` open-items line pending P09 vetting + a citation card, and only gain a
-`nodes:` entry once each has an approved `cpg/research/coordination/DECISIONS.yaml` row
+`nodes:` entry once each has an approved the internal command-center's DECISIONS ledger (private) row
 (`design/DAG_v0.3.yaml:6`). The DAG-node stubs in §13 are the *post-decision* shape, not filed
 today.
 
@@ -529,7 +529,7 @@ originally-proposed fixtures are folded into the rows above (former) or dropped 
 Per §10's filing note, none of the four `lrs-defeaters` proposals below get a live
 `design/DAG_v0.3.yaml` node yet — they are filed today as one `design/TODO_v0.3.md` line
 (`lrs.dr-tag-not-dag-node`, build_now). The stubs below are the *post-decision* shape, to be added
-to `design/DAG_v0.4.yaml` only once each has an approved `cpg/research/coordination/DECISIONS.yaml`
+to `design/DAG_v0.4.yaml` only once each has an approved the internal command-center's DECISIONS ledger (private)
 row, per that proposal's own control.
 
 ```yaml
@@ -643,3 +643,7 @@ row, per that proposal's own control.
   citations: [schema/common.defs.json:154, schema/claim_card.schema.json:94, sources/notes/EPISTEMIC_FUSION_v8.1.txt:44, ':45, ':53, ':54]
   founder_decision_needed: true
 ```
+
+## 14. SA-5 (restored under gate rule 10)
+
+SA-5 — K_like state-machine citation: target corrected from §7.3 (Bounded-Judge Law, no K-state content) to §4.4 K-state ladder with a see-also to Appendix A NC-47/NC-59; citations sources/notes/EPISTEMIC_FUSION_v7.1.txt:29,355,364,368,485 and v8.1.txt:138,146,422; status **with_revision** (re-anchored by one reader, second skeptic pending). Full row: design/UPLIFT_NOTE_2026-09-05.md §2.

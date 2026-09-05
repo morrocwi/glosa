@@ -275,7 +275,7 @@ nodes:
       m^H/m^AI (finite-history momentum scores) as glosa schema fields at this time. No DAG node
       is built; this node exists only to attach the non-adoption note and its revisit_condition.
     kind: process
-    target: cpg/research/coordination/DECISIONS.yaml (new row, status DECLINED-FOR-NOW)
+    target: the internal command-center's DECISIONS ledger (private) (new row, status DECLINED-FOR-NOW)
     evidence: [sources/notes/EPISTEMIC_FUSION_v7.1.txt:550, sources/notes/EPISTEMIC_FUSION_v7.1.txt:554]
     acceptance_test: >
       DECISIONS.yaml contains one row with status DECLINED-FOR-NOW, reason citing the self-defeat

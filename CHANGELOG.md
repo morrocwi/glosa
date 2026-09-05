@@ -1,4 +1,38 @@
 # CHANGELOG
+## 0.4.0 — in preparation
+- Session-architecture review (`design/SESSION_ARCH_v0.4_SPEC.md`, both parts, 24 proposals
+  scored under founder ruling BBL-2026-09-05-119: raise the work, never lower a claim to pass):
+  13 `build_now`, 7 `with_revision` (exact fix stated, not yet applied), 4 `still_open`
+  (raise-path stated, no softened claim). Full diff specified, not yet applied to
+  `FOUNDATION_v0.6.md`/schema/kernel: `design/FOUNDATION_v0.7_PATCH.md`.
+- New protocol cards: `methodology/P17_human_mastery_gate.md` (generalizes the ten-question
+  live unaided-defense checklist past the arXiv-paper genre, wires it to a new publish-gate R8 —
+  HU-1); `methodology/P18_session_architecture.md` (the Session object as a logical join across
+  Blackbox Note + `hypothesis_selection.yaml` + Problem Card + `kg_edge.yaml`, one-fact-one-home;
+  no fifth `session.yaml` file created). Both disclose a P-number collision with a concurrent
+  task rather than silently reconciling it — see `methodology/README.md`.
+- `methodology/P01_standpoint.md`: the AI completeness-prompting boundary (HU-5) is now a bounded,
+  closed five-item list, replacing the earlier open-ended `(e.g. ...)` example — an AI prompt
+  outside the list must be logged `ai_filled.prompt_source: freeform`, extending `NC-58`
+  (AIContribution≠EpistemicResponsibility) from AI-*filled answers* to AI-*posed prompts*.
+- New non-collapse row specified (not yet in `methodology/data/non_collapse_table.json`):
+  **`NC-77` Retention≠Direction** — persistence of a chosen hypothesis across ≥2 sessions is never
+  by itself evidence of expansion vs. tunnel; only a linked independent check may set the sign.
+  Reservation of the id in the internal command-center's DECISIONS ledger (private) is a pending founder act
+  (`design/FOUNDATION_v0.7_PATCH.md` §13, §15.3).
+- **Pending founder decision (recommended text specified, not ratified):** 10 decisions carried
+  forward from `design/SESSION_ARCH_v0.4_SPEC.md` §7 and its Part-2 additions — see
+  `design/FOUNDATION_v0.7_PATCH.md` §15. None is defaulted silently; the session-object
+  one-fact-one-home layout, the `SA-1`/duplicate-proposal merge, the `NC-77` reservation, and
+  `SA-3`/HU-2 retroactivity (recommended default: forward-only) are the most load-bearing.
+- **Not yet built this pass** (schema/kernel/CLI/tooling — outside this task's ownership,
+  specified in `design/FOUNDATION_v0.7_PATCH.md` for the next pass to apply): `session_id`/
+  `ai_state_at_boundary` on `schema/blackbox_note.schema.json`; `retained_direction` on
+  `schema/hypothesis_selection.schema.json`; `entry_anchor` on `schema/problem_card.schema.json`;
+  `schema/human_mastery_gate.schema.json` (new) and publish-gate R8; `kg_edge.schema.json`
+  `session_id` + the new `chi_recip` CLI diagnostic (Open tier); `dialogue_table.md`
+  `defeater_class`/`legitimate_defeater` columns; `claim_card.schema.json`
+  `provenance_dag.defeater_log` required/enum tightening; kernel `rule29`/`rule30`.
 ## 0.3.0 — 2026-09-05
 - Published: repository DOI 10.5281/zenodo.22310837 (concept 10.5281/zenodo.22301059); GitHub tag v0.3.0.
 - Publish gate v3 (7 dimensions, skeptic-verified): 17 upheld BLOCKs fixed before release (see reviews/PUBLISH_GATE_v1_public.md); 6 DAG nodes remain pending founder decision, marked in FOUNDATION v0.6.
