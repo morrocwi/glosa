@@ -68,6 +68,7 @@ BEARINGS = ["SUPPORTS", "CHALLENGES", "NEUTRAL", "UNRESOLVED"]
 # -------------------------------------------------------------------------------------------
 DEFECTS = [
     "hidden_ai_fill",
+    "hidden_ai_fill_unmarked",
     "inflated_bearing",
     "missing_locator",
     "composite_quote",
@@ -185,10 +186,31 @@ def inject_defect(card, citation, defect):
     (card, citation, artifact_under_test) where artifact_under_test is 'claim' or 'citation' --
     which validator baseline.py should run to look for this defect."""
     if defect == "hidden_ai_fill":
-        # AI-drafted text is presented inside five_questions.seen as if it were the human's own
-        # retained record, while ai_filled claims nothing was AI-filled. No kernel field
-        # cross-compares "seen" prose against "ai_filled" prose -- this is a semantic/content
-        # check, not a structural one.
+        # S4b fix (v0.4): five_questions.seen.ai_assisted_fields NAMES a field that had AI
+        # involvement in drafting its seen-recorded content, while every five_questions.ai_filled
+        # value still reads a not-applicable placeholder -- the two disclosure records contradict
+        # each other. This is the structural marker kernel rule27 (_hidden_ai_fill_error,
+        # kernel/glosa_kernel.py:881) actually checks -- see design/FOUNDATION_v0.6_PATCH.md K-C2.
+        # Prior to this pass, this generator only injected prose text with no ai_assisted_fields
+        # marker at all, so rule27 was never exercised (S4b gap) -- that marker-less variant is
+        # kept as the separate `hidden_ai_fill_unmarked` class below so the gap stays visible.
+        card["five_questions"]["seen"]["ai_assisted_fields"] = ["access_model"]
+        card["five_questions"]["seen"]["access_model"] = (
+            "[AI-DRAFTED SUMMARY, presented as the household's own retained observation log] "
+            "the cat reliably avoids litter boxes placed far from its resting area"
+        )
+        card["five_questions"]["ai_filled"]["retained_record_route"] = "none identified"
+        return card, citation, "claim"
+
+    if defect == "hidden_ai_fill_unmarked":
+        # The pre-v0.4 variant of hidden_ai_fill: AI-drafted text is presented inside
+        # five_questions.seen as if it were the human's own retained record, while ai_filled
+        # claims nothing was AI-filled AND seen.ai_assisted_fields is left empty/absent -- so
+        # kernel rule27 (a structural marker check, not a prose scan) has no marker to read and
+        # cannot fire. This is the S4b gap made explicit as its own labelled defect class, not a
+        # silently-fixed bug: it documents that a hidden-AI-fill with no self-disclosed marker at
+        # all still slips through today, by design of what rule27 checks (marker vs marker,
+        # never seen-vs-ai_filled prose content).
         card["five_questions"]["seen"]["access_model"] = (
             "[AI-DRAFTED SUMMARY, presented as the household's own retained observation log] "
             "the cat reliably avoids litter boxes placed far from its resting area"

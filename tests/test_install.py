@@ -137,3 +137,18 @@ class ClaimValidateCitationCardsFlagTest(unittest.TestCase):
             self.assertEqual(r.returncode, 0, r.stdout + r.stderr)
             out = json.loads(r.stdout)
             self.assertEqual(out["citation_cards_checked"], 1, r.stdout)
+
+
+class FindingsCompleteTest(unittest.TestCase):
+    """Gate rule 10 (founder BBL-2026-09-05-121): no finding is ever dropped between ledgers."""
+
+    def test_checker_detects_a_dropped_id(self):
+        import tempfile
+        with tempfile.TemporaryDirectory() as td:
+            up = Path(td, "up.json"); up.write_text(json.dumps([{"id": "X-1"}, {"id": "X-2"}]), encoding="utf-8")
+            down = Path(td, "down.md"); down.write_text("carried X-1 only", encoding="utf-8")
+            r = subprocess.run([sys.executable, str(ROOT / "scripts/check_findings_complete.py"), str(up), str(down)], capture_output=True, text=True)
+            self.assertNotEqual(r.returncode, 0); self.assertIn("X-2", r.stdout)
+            down.write_text("X-1 carried; X-2 closed: duplicate of X-1", encoding="utf-8")
+            r = subprocess.run([sys.executable, str(ROOT / "scripts/check_findings_complete.py"), str(up), str(down)], capture_output=True, text=True)
+            self.assertEqual(r.returncode, 0, r.stdout)

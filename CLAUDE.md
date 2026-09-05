@@ -16,3 +16,9 @@
    READMEs. Disclosure of AI use is mandatory (cooking log, Blackbox Note, ai_filled) but names the
    role — "AI assistant" — not the vendor, unless the founder explicitly permits it for that artifact.
    Founder ruling 2026-09-05 (Blackbox Log BBL-2026-09-04-104/105).
+10. **No finding is ever dropped.** Every finding, proposal, or review item that enters a ledger
+    (meeting record, review report, gate output, DAG) must appear in every downstream record either
+    carried forward or explicitly closed with a reason; a count mismatch is a gate failure
+    (`scripts/check_findings_complete.py`). Hand-offs between AI workers pass file paths, never
+    truncated slices. Founder ruling 2026-09-05 (Blackbox Log BBL-2026-09-05-121), after one
+    proposal (SA-5) fell out of a re-anchoring pass through a truncated hand-off.

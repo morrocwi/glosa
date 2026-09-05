@@ -78,6 +78,19 @@ jobs:
           python3 -m pip install --user pytest
           python3 -m pytest -q tests/test_sim_regression.py
 
+  findings-complete:
+    name: no finding dropped (gate rule 10)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.x" }
+      - run: |
+          for up in design/MEETING_*_judged.json; do
+            [ -f "$up" ] || continue
+            python3 scripts/check_findings_complete.py "$up" design/SESSION_ARCH_v0.4_SPEC.md design/UPLIFT_NOTE_2026-09-05.md || exit 1
+          done
+
   schema-validate:
     name: jsonschema validate schema/examples
     runs-on: ubuntu-latest
