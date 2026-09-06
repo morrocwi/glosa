@@ -1,10 +1,10 @@
 {
- "file": "dist/Before_Meaning_Before_Choice_FULL_v1_0.pdf",
- "title": "Before Meaning, Before Choice: A Readout-Native Derivation of Experience, Live Possibility, Agency, and Human-AI Return (Full Paper v1.0)",
+ "file": "dist/Before_Meaning_Before_Choice_FULL_v1_1.pdf",
+ "title": "Before Meaning, Before Choice: A Readout-Native Derivation of Experience, Live Possibility, Agency, and Human-AI Return (Full Paper v1.1, glosa-checked)",
  "upload_type": "publication",
  "publication_type": "preprint",
  "publication_date": "2026-09-06",
- "description_html": "STAGED — fill after the glosa check",
+ "description_html": "<p><b>Status.</b> K0 root-to-domain conceptual and measurement architecture with an external-literature constraint review; version 1.1 is the glosa-checked source-lineage repair of the 6 September v1.0 (three citation defects repaired: the Readout Genesis whitepaper is cited by commit and blob on the public repository; the MEMK domain specification is cited from its public v0.2.0 tree by commit, blob and SHA-256 with the unpublished v0.3.0 draft disclosed; the agency-potential model is cited from <i>Potential as a Readout</i> v2 and written over the witnessed option set). Part of the series <i>When AI Expands Human Potential</i> (index DOI 10.5281/zenodo.22308201); continues <i>Master Equation River</i> v1.1, <i>Meaning Before Naming</i> and <i>Choice Begins Before Choice</i>. The paper makes no global priority claim; its contribution is stated as same / different / cited against Bateson, computational mechanics, the information bottleneck, bisimulation and MDP homomorphisms, phenomenology, enactivism, affordances, the capability approach, temporal agency, epistemic injustice, power and structural violence, active inference, and Human–AI decision research.</p><p><b>Central claim.</b> Human experience and choice should not be inserted as primitive objects at the beginning of a theory. Under a readout-native architecture, a retained difference must first become structurally accessible under a declared reader and domain translation. Meaning is then a domain-level significance relation, experience is a lived configuration of encountered trace and meaning, retained experience can reshape later accessibility, and overt choice is selected only from a history-shaped field of live possibilities. Human–AI interaction is a special mediated loop inside this architecture: the prompt is a bounded articulation of an already history-bearing human state, AI output begins as a knowledge-like candidate rather than certified knowledge, and any claimed human gain must survive a session boundary and an unaided Human Return test. The resulting programme is therefore not <i>meaning as primitive → choice</i>, but <i>retained difference → admissible readout → meaning → experience → live possibility → choice → action → new retained difference</i>.</p><p><b>Contents.</b> The readout constitution (root state, finite stepper, domain weld with defect accounting); from retained record to meaning and experience; retention and the changing reader; history-shaped accessibility; the Live Possibility Field; effective, corrigible agency over a witnessed envelope; Human–AI mediation before the prompt; Human Return as the upper measurement boundary; the canonical Root-to-Human Master Equation River; a claim-status and provenance ledger on the equations themselves; why this is not simply active inference or affordance/capability theory; a rival-model ladder and six falsifiable predictions; graceful degradation and removal conditions; source-lineage and check record.</p>",
  "keywords": [
   "Readout Universe",
   "Readout Genesis",
@@ -21,7 +21,7 @@
   "GLOSA K0"
  ],
  "language": "eng",
- "version": "v1.0-2026-09-06",
+ "version": "v1.1-2026-09-06",
  "related": [
   {
    "identifier": "10.5281/zenodo.22414412",
