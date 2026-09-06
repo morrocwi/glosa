@@ -4,7 +4,7 @@
  "upload_type": "publication",
  "publication_type": "book",
  "publication_date": "2026-09-06",
- "description_html": "<p><b>What this book is.</b> Edition 1 (2026) of the Human–AI Readout Programme's textbook: 41 works already deposited on Zenodo, reproduced at their latest versions, unchanged, in eight parts (Root: Before Meaning · Meaning, Experience, Retention · Possibility, Choice, Potential · Society, Power, Justice · Human–AI Coupling and Return · Human Position After Labour · The River and Its Tests · Method), with a preface, a how-to-read page, a what-this-book-does-not-claim page, part bridges, a headnote before every chapter (its own claim, status and falsifier in its own words), and appendices (library map, non-collapse rows, symbol glossary, falsifier index, build record, Th_coqc ledger). Every chapter keeps the status it was deposited with (K0); the collection raises nothing. The DOI printed with each chapter is the document of record; each chapter record is linked here as hasPart. The Master Equation River chapter is accompanied by a Coq formalisation of all its equations (10.5281/zenodo.22518450).</p><p><b>Standpoint.</b> Written by a standalone scholar from a social-enterprise standpoint; assembled with an AI assistant under the author's direction (drafting of front matter, citation checks, typesetting); no AI system or vendor is an author or contributor. The book asks for no external certification; it asks to be tested against the falsifier stated with each chapter.</p><p>English-only edition. Licence CC BY 4.0. Built from a manifest of record ids, checksums and measured page counts (see Appendix E).</p>",
+ "description_html": "<p><b>What this book is.</b> Edition 1 (2026) of the Human–AI Readout Programme's textbook: 41 works already deposited on Zenodo, reproduced at their latest versions, unchanged, in eight parts (Root: Before Meaning · Meaning, Experience, Retention · Possibility, Choice, Potential · Society, Power, Justice · Human–AI Coupling and Return · Human Position After Labour · The River and Its Tests · Method), with a preface, a how-to-read page, a what-this-book-does-not-claim page, part bridges, a headnote before every chapter (its own claim, status and falsifier in its own words), and appendices (library map, non-collapse rows, symbol glossary, falsifier index, build record, equation registry with Th_coqc status). Every chapter keeps the status it was deposited with (K0); the collection raises nothing. The DOI printed with each chapter is the document of record; each chapter record is linked here as hasPart. Every numbered equation of every chapter is coded in the programme's equation library Toledo (v1.0.0, DOI 10.5281/zenodo.22548770), whose Coq sources carry the Th_coqc status printed in Appendix F.</p><p><b>Standpoint.</b> Written by a standalone scholar from a social-enterprise standpoint; assembled with an AI assistant under the author's direction (drafting of front matter, citation checks, typesetting); no AI system or vendor is an author or contributor. The book asks for no external certification; it asks to be tested against the falsifier stated with each chapter.</p><p>English-only edition. Licence CC BY 4.0. Built from a manifest of record ids, checksums and measured page counts (see Appendix E).</p>",
  "keywords": [
   "epistemology",
   "human-AI interaction",
@@ -167,7 +167,7 @@
    "relation": "hasPart"
   },
   {
-   "identifier": "10.5281/zenodo.22519148",
+   "identifier": "10.5281/zenodo.22550491",
    "relation": "hasPart"
   },
   {
@@ -191,7 +191,7 @@
    "relation": "hasPart"
   },
   {
-   "identifier": "10.5281/zenodo.22518450",
+   "identifier": "10.5281/zenodo.22548770",
    "relation": "hasPart",
    "resource_type": "software"
   },

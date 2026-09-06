@@ -1,0 +1,356 @@
+{
+ "created": "2026-09-06T19:33:31.557401+00:00",
+ "modified": "2026-09-06T19:33:31.979392+00:00",
+ "id": 22520849,
+ "conceptrecid": "22520848",
+ "doi": "10.5281/zenodo.22520849",
+ "conceptdoi": "10.5281/zenodo.22520848",
+ "doi_url": "https://doi.org/10.5281/zenodo.22520849",
+ "metadata": {
+  "title": "Written by AI. Still True. — When AI Expands Human Potential: A Systematic Epistemology of Human–AI Knowledge (Edition 1, 2026)",
+  "doi": "10.5281/zenodo.22520849",
+  "publication_date": "2026-09-06",
+  "description": "<p><b>What this book is.</b> Edition 1 (2026) of the Human–AI Readout Programme's textbook: 41 works already deposited on Zenodo, reproduced at their latest versions, unchanged, in eight parts (Root: Before Meaning · Meaning, Experience, Retention · Possibility, Choice, Potential · Society, Power, Justice · Human–AI Coupling and Return · Human Position After Labour · The River and Its Tests · Method), with a preface, a how-to-read page, a what-this-book-does-not-claim page, part bridges, a headnote before every chapter (its own claim, status and falsifier in its own words), and appendices (library map, non-collapse rows, symbol glossary, falsifier index, build record, equation registry with Th_coqc status). Every chapter keeps the status it was deposited with (K0); the collection raises nothing. The DOI printed with each chapter is the document of record; each chapter record is linked here as hasPart. Every numbered equation of every chapter is coded in the programme's equation library Toledo (v1.0.0, DOI 10.5281/zenodo.22548770), whose Coq sources carry the Th_coqc status printed in Appendix F.</p><p><b>Standpoint.</b> Written by a standalone scholar from a social-enterprise standpoint; assembled with an AI assistant under the author's direction (drafting of front matter, citation checks, typesetting); no AI system or vendor is an author or contributor. The book asks for no external certification; it asks to be tested against the falsifier stated with each chapter.</p><p>English-only edition. Licence CC BY 4.0. Built from a manifest of record ids, checksums and measured page counts (see Appendix E).</p>",
+  "access_right": "open",
+  "creators": [
+   {
+    "name": "Lahtee, Yaoharee",
+    "affiliation": "Open Civil Science Initiative",
+    "orcid": "0009-0005-3861-0626"
+   }
+  ],
+  "keywords": [
+   "epistemology",
+   "human-AI interaction",
+   "readout",
+   "retention",
+   "live possibility",
+   "choice",
+   "agency",
+   "Human Return",
+   "labour",
+   "textbook",
+   "glosa",
+   "Human-AI Readout Programme"
+  ],
+  "related_identifiers": [
+   {
+    "identifier": "10.5281/zenodo.22308201",
+    "relation": "isPartOf",
+    "resource_type": "publication",
+    "scheme": "doi"
+   },
+   {
+    "identifier": "10.5281/zenodo.22301202",
+    "relation": "hasPart",
+    "resource_type": "publication",
+    "scheme": "doi"
+   },
+   {
+    "identifier": "10.5281/zenodo.22301318",
+    "relation": "hasPart",
+    "resource_type": "publication",
+    "scheme": "doi"
+   },
+   {
+    "identifier": "10.5281/zenodo.21529456",
+    "relation": "hasPart",
+    "resource_type": "publication",
+    "scheme": "doi"
+   },
+   {
+    "identifier": "10.5281/zenodo.18925129",
+    "relation": "hasPart",
+    "resource_type": "publication",
+    "scheme": "doi"
+   },
+   {
+    "identifier": "10.5281/zenodo.19205869",
+    "relation": "hasPart",
+    "resource_type": "publication",
+    "scheme": "doi"
+   },
+   {
+    "identifier": "10.5281/zenodo.19640361",
+    "relation": "hasPart",
+    "resource_type": "publication",
+    "scheme": "doi"
+   },
+   {
+    "identifier": "10.5281/zenodo.19176260",
+    "relation": "hasPart",
+    "resource_type": "publication",
+    "scheme": "doi"
+   },
+   {
+    "identifier": "10.5281/zenodo.22410666",
+    "relation": "hasPart",
+    "resource_type": "publication",
+    "scheme": "doi"
+   },
+   {
+    "identifier": "10.5281/zenodo.22357744",
+    "relation": "hasPart",
+    "resource_type": "publication",
+    "scheme": "doi"
+   },
+   {
+    "identifier": "10.5281/zenodo.21425420",
+    "relation": "hasPart",
+    "resource_type": "publication",
+    "scheme": "doi"
+   },
+   {
+    "identifier": "10.5281/zenodo.22341297",
+    "relation": "hasPart",
+    "resource_type": "publication",
+    "scheme": "doi"
+   },
+   {
+    "identifier": "10.5281/zenodo.18711408",
+    "relation": "hasPart",
+    "resource_type": "publication",
+    "scheme": "doi"
+   },
+   {
+    "identifier": "10.5281/zenodo.22307148",
+    "relation": "hasPart",
+    "resource_type": "publication",
+    "scheme": "doi"
+   },
+   {
+    "identifier": "10.5281/zenodo.22307561",
+    "relation": "hasPart",
+    "resource_type": "publication",
+    "scheme": "doi"
+   },
+   {
+    "identifier": "10.5281/zenodo.22307564",
+    "relation": "hasPart",
+    "resource_type": "publication",
+    "scheme": "doi"
+   },
+   {
+    "identifier": "10.5281/zenodo.22308072",
+    "relation": "hasPart",
+    "resource_type": "publication",
+    "scheme": "doi"
+   },
+   {
+    "identifier": "10.5281/zenodo.22357788",
+    "relation": "hasPart",
+    "resource_type": "publication",
+    "scheme": "doi"
+   },
+   {
+    "identifier": "10.5281/zenodo.22361830",
+    "relation": "hasPart",
+    "resource_type": "publication",
+    "scheme": "doi"
+   },
+   {
+    "identifier": "10.5281/zenodo.18925131",
+    "relation": "hasPart",
+    "resource_type": "publication",
+    "scheme": "doi"
+   },
+   {
+    "identifier": "10.5281/zenodo.18383439",
+    "relation": "hasPart",
+    "resource_type": "publication",
+    "scheme": "doi"
+   },
+   {
+    "identifier": "10.5281/zenodo.18444260",
+    "relation": "hasPart",
+    "resource_type": "publication",
+    "scheme": "doi"
+   },
+   {
+    "identifier": "10.5281/zenodo.18897585",
+    "relation": "hasPart",
+    "resource_type": "publication",
+    "scheme": "doi"
+   },
+   {
+    "identifier": "10.5281/zenodo.18943971",
+    "relation": "hasPart",
+    "resource_type": "publication",
+    "scheme": "doi"
+   },
+   {
+    "identifier": "10.5281/zenodo.22456414",
+    "relation": "hasPart",
+    "resource_type": "publication",
+    "scheme": "doi"
+   },
+   {
+    "identifier": "10.5281/zenodo.22456487",
+    "relation": "hasPart",
+    "resource_type": "publication",
+    "scheme": "doi"
+   },
+   {
+    "identifier": "10.5281/zenodo.22456564",
+    "relation": "hasPart",
+    "resource_type": "publication",
+    "scheme": "doi"
+   },
+   {
+    "identifier": "10.5281/zenodo.19215748",
+    "relation": "hasPart",
+    "resource_type": "publication",
+    "scheme": "doi"
+   },
+   {
+    "identifier": "10.5281/zenodo.17280546",
+    "relation": "hasPart",
+    "resource_type": "publication",
+    "scheme": "doi"
+   },
+   {
+    "identifier": "10.5281/zenodo.18517054",
+    "relation": "hasPart",
+    "resource_type": "publication",
+    "scheme": "doi"
+   },
+   {
+    "identifier": "10.5281/zenodo.22331922",
+    "relation": "hasPart",
+    "resource_type": "publication",
+    "scheme": "doi"
+   },
+   {
+    "identifier": "10.5281/zenodo.22339909",
+    "relation": "hasPart",
+    "resource_type": "publication",
+    "scheme": "doi"
+   },
+   {
+    "identifier": "10.5281/zenodo.22481928",
+    "relation": "hasPart",
+    "resource_type": "publication",
+    "scheme": "doi"
+   },
+   {
+    "identifier": "10.5281/zenodo.22498047",
+    "relation": "hasPart",
+    "resource_type": "publication",
+    "scheme": "doi"
+   },
+   {
+    "identifier": "10.5281/zenodo.22481924",
+    "relation": "hasPart",
+    "resource_type": "publication",
+    "scheme": "doi"
+   },
+   {
+    "identifier": "10.5281/zenodo.22481926",
+    "relation": "hasPart",
+    "resource_type": "publication",
+    "scheme": "doi"
+   },
+   {
+    "identifier": "10.5281/zenodo.22550491",
+    "relation": "hasPart",
+    "resource_type": "publication",
+    "scheme": "doi"
+   },
+   {
+    "identifier": "10.5281/zenodo.22424434",
+    "relation": "hasPart",
+    "resource_type": "publication",
+    "scheme": "doi"
+   },
+   {
+    "identifier": "10.5281/zenodo.22308066",
+    "relation": "hasPart",
+    "resource_type": "publication",
+    "scheme": "doi"
+   },
+   {
+    "identifier": "10.5281/zenodo.22163849",
+    "relation": "hasPart",
+    "resource_type": "publication",
+    "scheme": "doi"
+   },
+   {
+    "identifier": "10.5281/zenodo.22307841",
+    "relation": "hasPart",
+    "resource_type": "publication",
+    "scheme": "doi"
+   },
+   {
+    "identifier": "10.5281/zenodo.22340255",
+    "relation": "hasPart",
+    "resource_type": "publication",
+    "scheme": "doi"
+   },
+   {
+    "identifier": "10.5281/zenodo.22548770",
+    "relation": "hasPart",
+    "resource_type": "software",
+    "scheme": "doi"
+   },
+   {
+    "identifier": "10.5281/zenodo.22341671",
+    "relation": "references",
+    "resource_type": "publication",
+    "scheme": "doi"
+   }
+  ],
+  "version": "Edition 1 (2026), build 2026-09-06",
+  "language": "eng",
+  "license": "cc-by-4.0",
+  "imprint_publisher": "Zenodo",
+  "upload_type": "publication",
+  "publication_type": "book",
+  "prereserve_doi": {
+   "doi": "10.5281/zenodo.22520849",
+   "recid": 22520849
+  }
+ },
+ "title": "Written by AI. Still True. — When AI Expands Human Potential: A Systematic Epistemology of Human–AI Knowledge (Edition 1, 2026)",
+ "links": {
+  "self": "https://zenodo.org/api/records/22520849",
+  "html": "https://zenodo.org/records/22520849",
+  "doi": "https://doi.org/10.5281/zenodo.22520849",
+  "parent_doi": "https://doi.org/10.5281/zenodo.22520848",
+  "badge": "https://zenodo.org/badge/doi/10.5281%2Fzenodo.22520849.svg",
+  "conceptbadge": "https://zenodo.org/badge/doi/10.5281%2Fzenodo.22520848.svg",
+  "files": "https://zenodo.org/api/records/22520849/files",
+  "bucket": "https://zenodo.org/api/files/6cf24e6b-be38-4ec5-bcd6-59d2f0c21505",
+  "thumb250": "https://zenodo.org/record/22520849/thumb250",
+  "thumbs": {
+   "10": "https://zenodo.org/record/22520849/thumb10",
+   "50": "https://zenodo.org/record/22520849/thumb50",
+   "100": "https://zenodo.org/record/22520849/thumb100",
+   "250": "https://zenodo.org/record/22520849/thumb250",
+   "750": "https://zenodo.org/record/22520849/thumb750",
+   "1200": "https://zenodo.org/record/22520849/thumb1200"
+  },
+  "latest_draft": "https://zenodo.org/api/deposit/depositions/22520849",
+  "latest_draft_html": "https://zenodo.org/deposit/22520849",
+  "publish": "https://zenodo.org/api/deposit/depositions/22520849/actions/publish",
+  "edit": "https://zenodo.org/api/deposit/depositions/22520849/actions/edit",
+  "discard": "https://zenodo.org/api/deposit/depositions/22520849/actions/discard",
+  "newversion": "https://zenodo.org/api/deposit/depositions/22520849/actions/newversion",
+  "record": "https://zenodo.org/api/records/22520849",
+  "record_html": "https://zenodo.org/record/22520849",
+  "latest": "https://zenodo.org/api/records/22520849/versions/latest",
+  "latest_html": "https://zenodo.org/records/22520849/latest"
+ },
+ "record_id": 22520849,
+ "owner": 1426866,
+ "files": [
+  "dist/textbook/Written_by_AI_Still_True_Edition1_2026.pdf"
+ ],
+ "state": "done",
+ "submitted": true,
+ "deposition_id": "22520849",
+ "founder_instructed_bypass": {
+  "instruction": "BBL-167 standing deposit authorisation; founder 2026-09-06: 'ทำต่อเลย รายงานตอนเช้าหรือเมื่อเสร็จ' with the book publish step listed in HANDOFF §68; independent checker CHECKER_2026-09-07_final blocks fixed, QA 2026-09-07 clean",
+  "logged_at": "2026-09-07T02:33:32"
+ },
+ "mode": "publish_existing_draft"
+}
