@@ -1,0 +1,63 @@
+{
+ "file": "dist/rg-hca/From_Assistance_to_Human_Capability_RG_HCA_v1_1.pdf",
+ "title": "From Assistance to Human Capability: A Readout-Genesis Architecture for Proactive AI, Unequal Life Conditions, and Opportunity Conversion (RG-HCA v1.1 glosa-checked edition)",
+ "upload_type": "publication",
+ "publication_type": "preprint",
+ "publication_date": "2026-09-06",
+ "description_html": "<p><b>Status.</b> K0 conceptual and measurement architecture with an empirical research agenda; v1.1 is the glosa-checked edition of the 6 September 2026 v1.0 (citation lineage repaired to deposited DOIs, versions and public git anchors; priority-adjacent wording replaced by a contribution boundary; tier tags added to every boxed equation; no content change). Part of the series <i>When AI Expands Human Potential</i> (index DOI 10.5281/zenodo.22308201). Extends the Dialogue Conversion Protocol (10.5281/zenodo.22481928) with a proactive capability layer and sits under the macro boundary of <i>After Labour</i> (10.5281/zenodo.22481924) and <i>The Human Conversion Imperative</i> (10.5281/zenodo.22481926).</p><p><b>Central claim.</b> When durable human development is an agreed goal, AI need not remain purely reactive: starting from a human-owned live problem it may diagnose whether an observed difficulty is a knowledge or skill gap or a structural barrier (language, tool, resource, network, credential, permission, opportunity), generate non-equivalent capability and opportunity routes, ask for human endorsement, scaffold adaptively, withdraw decisive assistance, test unaided Human Return, and connect retained capability to world feedback and real opportunity. Non-collapse laws: Observed Difficulty ≠ Skill Deficit; Proactive Suggestion ≠ Human Goal Ownership; Credential ≠ Capability; Market Legibility ≠ Human Worth. A worked Southern-Thailand three-child scenario, child and adult governance bundles, six outcome families, a five-study programme, six rival models and removal conditions are stated. No exact human-domain quotient or calibrated universal scale is claimed.</p><p>An AI assistant assisted under the author's direction; no AI system is an author or contributor.</p>",
+ "keywords": [
+  "human capability",
+  "proactive AI",
+  "Readout Genesis",
+  "human-AI interaction",
+  "adaptive scaffolding",
+  "Human Return",
+  "unequal opportunity",
+  "capability approach",
+  "autonomy",
+  "learning",
+  "credential",
+  "child-centred AI",
+  "Human-AI Readout Programme"
+ ],
+ "version": "v1.1-glosa-checked-2026-09-06",
+ "language": "eng",
+ "related": [
+  {
+   "identifier": "10.5281/zenodo.22308201",
+   "relation": "isPartOf"
+  },
+  {
+   "identifier": "10.5281/zenodo.22481928",
+   "relation": "references"
+  },
+  {
+   "identifier": "10.5281/zenodo.22481924",
+   "relation": "references"
+  },
+  {
+   "identifier": "10.5281/zenodo.22481926",
+   "relation": "references"
+  },
+  {
+   "identifier": "10.5281/zenodo.22339909",
+   "relation": "references"
+  },
+  {
+   "identifier": "10.5281/zenodo.22357788",
+   "relation": "references"
+  },
+  {
+   "identifier": "10.5281/zenodo.22341297",
+   "relation": "references"
+  },
+  {
+   "identifier": "10.5281/zenodo.22307148",
+   "relation": "references"
+  },
+  {
+   "identifier": "10.5281/zenodo.21529456",
+   "relation": "references"
+  }
+ ]
+}
