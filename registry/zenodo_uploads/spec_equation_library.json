@@ -1,0 +1,38 @@
+{
+ "file": "dist/equation-library/HRP_Equation_Library_v1_0.zip",
+ "title": "Equation Library of the Human–AI Readout Programme (v1.0): root registry of Readout Genesis, canonical registry of every programme equation with persistent codes, occurrence map, and Coq identifiers",
+ "upload_type": "dataset",
+ "publication_date": "2026-09-06",
+ "description_html": "<p><b>What this is.</b> The programme's central equation registry: (1) the root layer — every equation and named result of Readout Genesis (git-anchored) with its own identifier reused verbatim as code <code>RG-&lt;Part&gt;.&lt;id&gt;</code>; (2) the canonical layer — every distinct equation object across the programme's deposited papers, written in its latest formulation as a reading of a root object, coded <code>&lt;root&gt;/&lt;D&gt;.&lt;nn&gt;.v&lt;k&gt;</code> (D = epistemic, human–AI, social, world-system, method); (3) the occurrence map — every numbered equation of every chapter of the textbook <i>Written by AI. Still True.</i> (raw inventory, 40 chapters) mapped to exactly one canonical code; sources are never edited, the map is the record; (4) Coq identifiers and tiers (Th_coqc / Definition / Open) from the companion Coq record; (5) the generated EQ_LIBRARY.md view. Principle (Readout Genesis): there is one equation; each domain is the same equation read through that domain's readout. The collapse target is a root spine that a single reader can follow from start to end without drift; drift notes are recorded, not hidden.</p><p><b>Status.</b> K0 working release; counts are computed from the JSON files at build time; Th_coqc certifies internal consistency of stated finite models, never empirical truth. An AI assistant assisted under the author's direction; no AI system is an author or contributor.</p>",
+ "keywords": [
+  "equation registry",
+  "Readout Genesis",
+  "canonical equations",
+  "persistent identifiers",
+  "Coq",
+  "Human-AI Readout Programme",
+  "readout",
+  "domain translation"
+ ],
+ "version": "v1.0-2026-09-06",
+ "language": "eng",
+ "related": [
+  {
+   "identifier": "10.5281/zenodo.22308201",
+   "relation": "isPartOf"
+  },
+  {
+   "identifier": "10.5281/zenodo.22414412",
+   "relation": "isSupplementTo"
+  },
+  {
+   "identifier": "10.5281/zenodo.22518450",
+   "relation": "isSupplementedBy",
+   "resource_type": "software"
+  },
+  {
+   "identifier": "10.5281/zenodo.21529456",
+   "relation": "references"
+  }
+ ]
+}
