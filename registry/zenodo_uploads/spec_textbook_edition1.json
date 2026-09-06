@@ -1,0 +1,203 @@
+{
+ "file": "dist/textbook/Written_by_AI_Still_True_Edition1_2026.pdf",
+ "title": "Written by AI. Still True. — When AI Expands Human Potential: A Systematic Epistemology of Human–AI Knowledge (Edition 1, 2026)",
+ "upload_type": "publication",
+ "publication_type": "book",
+ "publication_date": "2026-09-06",
+ "description_html": "<p><b>What this book is.</b> Edition 1 (2026) of the Human–AI Readout Programme's textbook: 41 works already deposited on Zenodo, reproduced at their latest versions, unchanged, in eight parts (Root: Before Meaning · Meaning, Experience, Retention · Possibility, Choice, Potential · Society, Power, Justice · Human–AI Coupling and Return · Human Position After Labour · The River and Its Tests · Method), with a preface, a how-to-read page, a what-this-book-does-not-claim page, part bridges, a headnote before every chapter (its own claim, status and falsifier in its own words), and appendices (library map, non-collapse rows, symbol glossary, falsifier index, build record, Th_coqc ledger). Every chapter keeps the status it was deposited with (K0); the collection raises nothing. The DOI printed with each chapter is the document of record; each chapter record is linked here as hasPart. The Master Equation River chapter is accompanied by a Coq formalisation of all its equations (10.5281/zenodo.22518450).</p><p><b>Standpoint.</b> Written by a standalone scholar from a social-enterprise standpoint; assembled with an AI assistant under the author's direction (drafting of front matter, citation checks, typesetting); no AI system or vendor is an author or contributor. The book asks for no external certification; it asks to be tested against the falsifier stated with each chapter.</p><p>English-only edition. Licence CC BY 4.0. Built from a manifest of record ids, checksums and measured page counts (see Appendix E).</p>",
+ "keywords": [
+  "epistemology",
+  "human-AI interaction",
+  "readout",
+  "retention",
+  "live possibility",
+  "choice",
+  "agency",
+  "Human Return",
+  "labour",
+  "textbook",
+  "glosa",
+  "Human-AI Readout Programme"
+ ],
+ "version": "Edition 1 (2026), build 2026-09-06",
+ "language": "eng",
+ "related": [
+  {
+   "identifier": "10.5281/zenodo.22308201",
+   "relation": "isPartOf"
+  },
+  {
+   "identifier": "10.5281/zenodo.22301202",
+   "relation": "hasPart"
+  },
+  {
+   "identifier": "10.5281/zenodo.22301318",
+   "relation": "hasPart"
+  },
+  {
+   "identifier": "10.5281/zenodo.21529456",
+   "relation": "hasPart"
+  },
+  {
+   "identifier": "10.5281/zenodo.18925129",
+   "relation": "hasPart"
+  },
+  {
+   "identifier": "10.5281/zenodo.19205869",
+   "relation": "hasPart"
+  },
+  {
+   "identifier": "10.5281/zenodo.19640361",
+   "relation": "hasPart"
+  },
+  {
+   "identifier": "10.5281/zenodo.19176260",
+   "relation": "hasPart"
+  },
+  {
+   "identifier": "10.5281/zenodo.22410666",
+   "relation": "hasPart"
+  },
+  {
+   "identifier": "10.5281/zenodo.22357744",
+   "relation": "hasPart"
+  },
+  {
+   "identifier": "10.5281/zenodo.21425420",
+   "relation": "hasPart"
+  },
+  {
+   "identifier": "10.5281/zenodo.22341297",
+   "relation": "hasPart"
+  },
+  {
+   "identifier": "10.5281/zenodo.18711408",
+   "relation": "hasPart"
+  },
+  {
+   "identifier": "10.5281/zenodo.22307148",
+   "relation": "hasPart"
+  },
+  {
+   "identifier": "10.5281/zenodo.22307561",
+   "relation": "hasPart"
+  },
+  {
+   "identifier": "10.5281/zenodo.22307564",
+   "relation": "hasPart"
+  },
+  {
+   "identifier": "10.5281/zenodo.22308072",
+   "relation": "hasPart"
+  },
+  {
+   "identifier": "10.5281/zenodo.22357788",
+   "relation": "hasPart"
+  },
+  {
+   "identifier": "10.5281/zenodo.22361830",
+   "relation": "hasPart"
+  },
+  {
+   "identifier": "10.5281/zenodo.18925131",
+   "relation": "hasPart"
+  },
+  {
+   "identifier": "10.5281/zenodo.18383439",
+   "relation": "hasPart"
+  },
+  {
+   "identifier": "10.5281/zenodo.18444260",
+   "relation": "hasPart"
+  },
+  {
+   "identifier": "10.5281/zenodo.18897585",
+   "relation": "hasPart"
+  },
+  {
+   "identifier": "10.5281/zenodo.18943971",
+   "relation": "hasPart"
+  },
+  {
+   "identifier": "10.5281/zenodo.22456414",
+   "relation": "hasPart"
+  },
+  {
+   "identifier": "10.5281/zenodo.22456487",
+   "relation": "hasPart"
+  },
+  {
+   "identifier": "10.5281/zenodo.22456564",
+   "relation": "hasPart"
+  },
+  {
+   "identifier": "10.5281/zenodo.19215748",
+   "relation": "hasPart"
+  },
+  {
+   "identifier": "10.5281/zenodo.17280546",
+   "relation": "hasPart"
+  },
+  {
+   "identifier": "10.5281/zenodo.18517054",
+   "relation": "hasPart"
+  },
+  {
+   "identifier": "10.5281/zenodo.22331922",
+   "relation": "hasPart"
+  },
+  {
+   "identifier": "10.5281/zenodo.22339909",
+   "relation": "hasPart"
+  },
+  {
+   "identifier": "10.5281/zenodo.22481928",
+   "relation": "hasPart"
+  },
+  {
+   "identifier": "10.5281/zenodo.22498047",
+   "relation": "hasPart"
+  },
+  {
+   "identifier": "10.5281/zenodo.22481924",
+   "relation": "hasPart"
+  },
+  {
+   "identifier": "10.5281/zenodo.22481926",
+   "relation": "hasPart"
+  },
+  {
+   "identifier": "10.5281/zenodo.22519148",
+   "relation": "hasPart"
+  },
+  {
+   "identifier": "10.5281/zenodo.22424434",
+   "relation": "hasPart"
+  },
+  {
+   "identifier": "10.5281/zenodo.22308066",
+   "relation": "hasPart"
+  },
+  {
+   "identifier": "10.5281/zenodo.22163849",
+   "relation": "hasPart"
+  },
+  {
+   "identifier": "10.5281/zenodo.22307841",
+   "relation": "hasPart"
+  },
+  {
+   "identifier": "10.5281/zenodo.22340255",
+   "relation": "hasPart"
+  },
+  {
+   "identifier": "10.5281/zenodo.22518450",
+   "relation": "hasPart",
+   "resource_type": "software"
+  },
+  {
+   "identifier": "10.5281/zenodo.22341671",
+   "relation": "references"
+  }
+ ]
+}
