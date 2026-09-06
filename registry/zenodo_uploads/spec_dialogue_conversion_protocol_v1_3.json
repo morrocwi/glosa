@@ -1,0 +1,55 @@
+{
+ "file": "dist/dialogue-conversion-protocol/Dialogue_Conversion_Protocol_v1_3.pdf",
+ "title": "How Humans Should Converse with AI: A Problem-First Adaptive Dialogue Conversion Protocol for Durable Human Capability (v1.3 glosa-checked edition)",
+ "publication_type": "preprint",
+ "description_html": "<p><b>Status.</b> K0 theory, problem-first adaptive protocol and empirical research agenda; v1.3 is the glosa-checked edition of the 6 September 2026 v1.2 (internal citation table repaired so that each programme paper is cited to its own deposited record and version; \"novelty\" wording replaced by a contribution boundary; no content change). Part of the series <i>When AI Expands Human Potential</i> (index DOI 10.5281/zenodo.22308201). Companion papers: <i>After Labour</i> and <i>The Human Conversion Imperative</i>.</p><p><b>Central claim.</b> A human–AI conversation should be evaluated by the human state it produces after the conversation, and should begin from an agenda that remains human-owned. Outer architecture: Topic Entry → Triage → Minimum Sufficient Dialogue → Human Return → Action/World Feedback; inner eight stages Anchor → Expand → Oppose/Boundary-Test → Discriminate → Verify → Integrate → Remove → Return; DCP-Lite/Standard/Critical triage; ten hypotheses and nine removal conditions. All governing propositions are marked Open.</p><p>An AI assistant assisted under the author's direction; no AI system is an author or contributor.</p>",
+ "keywords": [
+  "human-AI dialogue",
+  "problem-first inquiry",
+  "problem framing",
+  "topic selection",
+  "epistemic agency",
+  "Human Return",
+  "AI-assisted learning",
+  "overreliance",
+  "critical thinking",
+  "curiosity",
+  "metacognition",
+  "Human-AI Readout Programme"
+ ],
+ "version": "v1.3-glosa-checked-2026-09-06",
+ "upload_type": "publication",
+ "publication_date": "2026-09-06",
+ "creators": [
+  {
+   "name": "Lahtee, Yaoharee",
+   "affiliation": "ARAYA Nikah Social Enterprise Co., Ltd., Bangkok, Thailand",
+   "orcid": "0009-0005-3861-0626"
+  }
+ ],
+ "access_right": "open",
+ "license": "cc-by-4.0",
+ "language": "eng",
+ "related": [
+  {
+   "identifier": "10.5281/zenodo.22308201",
+   "relation": "isPartOf"
+  },
+  {
+   "identifier": "10.5281/zenodo.22357788",
+   "relation": "references"
+  },
+  {
+   "identifier": "10.5281/zenodo.22339909",
+   "relation": "references"
+  },
+  {
+   "identifier": "10.5281/zenodo.19215748",
+   "relation": "references"
+  },
+  {
+   "identifier": "10.5281/zenodo.22424434",
+   "relation": "references"
+  }
+ ]
+}
