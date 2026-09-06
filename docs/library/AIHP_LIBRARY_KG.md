@@ -1,6 +1,6 @@
 # Knowledge graph — Zenodo library "When AI Expands Human Potential"
 
-This graph on Zenodo: https://doi.org/10.5281/zenodo.22341671 (concept 10.5281/zenodo.22341670) · Hub record: https://doi.org/10.5281/zenodo.22308201 · built 2026-09-05 from live Zenodo metadata · 30 member records, 47 nodes, 334 edges.
+Hub record: https://doi.org/10.5281/zenodo.22308201 · built 2026-09-06 from live Zenodo metadata · 37 member records, 64 nodes, 493 edges.
 
 **How to read this (for an AI).** Every node is one Zenodo record (a DOI). Every edge is a relation the author wrote into that record's `related_identifiers` on Zenodo, except edges labelled `(derived)`, which come from Zenodo's own concept ids (two records of the same concept = versions of one work). Nothing here was inferred from paper content. Treat the graph as a readout of the metadata on the build date, not as truth about the papers, and do not read edge counts as importance. To cite a work, use its DOI URL (`@id`); to cite the latest version of a work, follow the `isVersionOf(derived)` edge to its target. Machine files: `aihp_kg.json` (nodes+edges, JSON-LD flavoured), `aihp_kg_edges.jsonl` (one edge per line).
 
@@ -10,32 +10,48 @@ This graph on Zenodo: https://doi.org/10.5281/zenodo.22341671 (concept 10.5281/z
 
 | relation | meaning | count |
 |---|---|---|
-| `references` | this work cites the target | 187 |
-| `isPartOf` | member → hub or programme index | 82 |
-| `hasPart` | hub → member (library membership) | 30 |
-| `isSupplementedBy` | inverse | 8 |
-| `isSupplementTo` | note/annex attached to the target | 7 |
-| `isVersionOf(derived)` | older version → latest version of the same concept (from Zenodo concept id) | 7 |
-| `continues` | this work continues the target (reading order: target first) | 5 |
-| `isContinuedBy` | inverse of continues | 4 |
+| `references` | this work cites the target | 264 |
+| `isPartOf` | member → hub or programme index | 115 |
+| `hasPart` | hub → member (library membership) | 37 |
+| `continues` | this work continues the target (reading order: target first) | 18 |
+| `isContinuedBy` | inverse of continues | 13 |
+| `reviews` |  | 11 |
+| `isSupplementedBy` | inverse | 9 |
+| `isVersionOf(derived)` | older version → latest version of the same concept (from Zenodo concept id) | 9 |
+| `isSupplementTo` | note/annex attached to the target | 8 |
+| `cites` |  | 4 |
 | `isIdenticalTo` |  | 3 |
+| `isDerivedFrom` |  | 1 |
 | `isReferencedBy` | inverse of references | 1 |
 
 ## Lineage chains (authored `continues` edges, oldest → newest)
 
+- [Master Equation River: A Provenance Audit Across the Human–A](https://doi.org/10.5281/zenodo.22414412) → [Before Meaning, Before Choice: A Readout-Native Derivation o](https://doi.org/10.5281/zenodo.22424434)
 - [Epistemic Fusion or Epistemic Tunnel: A Phenomenology-Anchor](https://doi.org/10.5281/zenodo.22331922) → [CTSA Human-Return Readout: A Session-Boundary Measurement Ar](https://doi.org/10.5281/zenodo.22339909)
 - [From Problem to Hypothesis: Dynamic Semantic Mobility, Bound](https://doi.org/10.5281/zenodo.22307148) → [Knowledge Topology and the First Passage to Usable Hypothese](https://doi.org/10.5281/zenodo.22307561) → [Before Evidence Can Decide: Candidate-Set Formation, Discove](https://doi.org/10.5281/zenodo.22307564) → [The Epistemic Chain Reaction: Human-AI Multiplication from Q](https://doi.org/10.5281/zenodo.22308072)
-- [When AI Expands Human Potential: Reflective Dissonance, Epis](https://doi.org/10.5281/zenodo.19215748) → [Human Learning as Epistemic Architecture: A Method for Word ](https://doi.org/10.5281/zenodo.22341297)
+- [Experience Is the Human LoRA: A Readout–Retention Theory of ](https://doi.org/10.5281/zenodo.21425420) → [Meaning Before Naming: A Readout-Retention Architecture of A](https://doi.org/10.5281/zenodo.22410666) → [Experience Is Meaning-Giving: A Strong-Form Readout-Retentio](https://doi.org/10.5281/zenodo.22357744) → [Choice Begins Before Choice: Meaning-Shaped Accessibility, L](https://doi.org/10.5281/zenodo.22357788) → [Before Meaning, Before Choice: A Readout-Native Derivation o](https://doi.org/10.5281/zenodo.22424434)
+- [When AI Expands Human Potential: Reflective Dissonance, Epis](https://doi.org/10.5281/zenodo.19215748) → [Human Learning as Epistemic Architecture: A Method for Word ](https://doi.org/10.5281/zenodo.22341297) → [Meaning Before Naming: A Readout-Retention Architecture of A](https://doi.org/10.5281/zenodo.22410666) → [Experience Is Meaning-Giving: A Strong-Form Readout-Retentio](https://doi.org/10.5281/zenodo.22357744) → [Choice Begins Before Choice: Meaning-Shaped Accessibility, L](https://doi.org/10.5281/zenodo.22357788) → [Before Meaning, Before Choice: A Readout-Native Derivation o](https://doi.org/10.5281/zenodo.22424434)
+- [Violence as a Special Case of Instability in Finite–Memory C](https://doi.org/10.5281/zenodo.18383439) → [Potential as a Readout: Witnessed Envelopes, Two-Layer Agenc](https://doi.org/10.5281/zenodo.22361830) → [Choice Begins Before Choice: Meaning-Shaped Accessibility, L](https://doi.org/10.5281/zenodo.22357788) → [Before Meaning, Before Choice: A Readout-Native Derivation o](https://doi.org/10.5281/zenodo.22424434)
+- [CAUSAL ETHICS : The Mathematics of Regime Choice and Surviva](https://doi.org/10.5281/zenodo.18444260) → [Potential as a Readout: Witnessed Envelopes, Two-Layer Agenc](https://doi.org/10.5281/zenodo.22361830) → [Choice Begins Before Choice: Meaning-Shaped Accessibility, L](https://doi.org/10.5281/zenodo.22357788) → [Before Meaning, Before Choice: A Readout-Native Derivation o](https://doi.org/10.5281/zenodo.22424434)
+- [Causal Agency  A Persistence Control Theory of Adaptive Syst](https://doi.org/10.5281/zenodo.18897585) → [Potential as a Readout: Witnessed Envelopes, Two-Layer Agenc](https://doi.org/10.5281/zenodo.22361830) → [Choice Begins Before Choice: Meaning-Shaped Accessibility, L](https://doi.org/10.5281/zenodo.22357788) → [Before Meaning, Before Choice: A Readout-Native Derivation o](https://doi.org/10.5281/zenodo.22424434)
+- [The Causal Grammar of Structured Coexistence: Conflict, Viol](https://doi.org/10.5281/zenodo.18925131) → [Potential as a Readout: Witnessed Envelopes, Two-Layer Agenc](https://doi.org/10.5281/zenodo.22361830) → [Choice Begins Before Choice: Meaning-Shaped Accessibility, L](https://doi.org/10.5281/zenodo.22357788) → [Before Meaning, Before Choice: A Readout-Native Derivation o](https://doi.org/10.5281/zenodo.22424434)
 
 ## Member records (newest first)
 
 | date | title | DOI | version-of | out-edges |
 |---|---|---|---|---|
-| 2026-09-05 | CTSA Human-Return Readout: A Session-Boundary Measurement Architecture for Retained Human  | [zenodo.22339909](https://doi.org/10.5281/zenodo.22339909) | latest | 9 |
+| 2026-09-06 | Before Meaning, Before Choice: A Readout-Native Derivation of Experience, Live Possibility | [zenodo.22424434](https://doi.org/10.5281/zenodo.22424434) | latest | 14 |
+| 2026-09-06 | Master Equation River: A Provenance Audit Across the Human–AI Readout Programme (Internal  | [zenodo.22414412](https://doi.org/10.5281/zenodo.22414412) | latest | 13 |
+| 2026-09-05 | Knowledge graph of the Zenodo library "When AI Expands Human Potential" — machine-readable | [zenodo.22341671](https://doi.org/10.5281/zenodo.22341671) | latest | 8 |
+| 2026-09-05 | CTSA Human-Return Readout: A Session-Boundary Measurement Architecture for Retained Human  | [zenodo.22339909](https://doi.org/10.5281/zenodo.22339909) | latest | 13 |
 | 2026-09-05 | Rigour Without Infrastructure: Three Propositions on Claim-Card Discipline as a Substitute | [zenodo.22307841](https://doi.org/10.5281/zenodo.22307841) | latest | 10 |
-| 2026-09-05 | Epistemic Fusion or Epistemic Tunnel: A Phenomenology-Anchored, Global-Literature-Constrai | [zenodo.22331922](https://doi.org/10.5281/zenodo.22331922) | latest | 16 |
-| 2026-09-05 | glosa — Rigour Without Infrastructure: A Standalone Scholar Methodology for Human–AI Knowl | [zenodo.22340255](https://doi.org/10.5281/zenodo.22340255) | latest | 8 |
-| 2026-09-05 | ปูมกล่องดำ — บันทึกเสียงดิบ ข้อค้นพบ และคำถามรายวันของ เยาฮารี แหละตี (Blackbox Log, Yaoha | [zenodo.22334420](https://doi.org/10.5281/zenodo.22334420) | latest | 4 |
+| 2026-09-05 | Meaning Before Naming: A Readout-Retention Architecture of Affective-Semantic Reorganizati | [zenodo.22410666](https://doi.org/10.5281/zenodo.22410666) | latest | 8 |
+| 2026-09-05 | Choice Begins Before Choice: Meaning-Shaped Accessibility, Live Possibility, and Effective | [zenodo.22357788](https://doi.org/10.5281/zenodo.22357788) | latest | 8 |
+| 2026-09-05 | Experience Is Meaning-Giving: A Strong-Form Readout-Retention Theory of Phenomena, Resonan | [zenodo.22357744](https://doi.org/10.5281/zenodo.22357744) | latest | 9 |
+| 2026-09-05 | Potential as a Readout: Witnessed Envelopes, Two-Layer Agency, and the Measurement of Pseu | [zenodo.22361830](https://doi.org/10.5281/zenodo.22361830) | latest | 16 |
+| 2026-09-05 | Epistemic Fusion or Epistemic Tunnel: A Phenomenology-Anchored, Global-Literature-Constrai | [zenodo.22331922](https://doi.org/10.5281/zenodo.22331922) | latest | 17 |
+| 2026-09-05 | glosa — Rigour Without Infrastructure: A Standalone Scholar Methodology for Human–AI Knowl | [zenodo.22340255](https://doi.org/10.5281/zenodo.22340255) | latest | 9 |
+| 2026-09-05 | ปูมกล่องดำ — บันทึกเสียงดิบ ข้อค้นพบ และคำถามรายวันของ เยาฮารี แหละตี (Blackbox Log, Yaoha | [zenodo.22334420](https://doi.org/10.5281/zenodo.22334420) | latest | 6 |
 | 2026-09-04 | The Epistemic Chain Reaction: Human-AI Multiplication from Questions to Readout-Distinguis | [zenodo.22308072](https://doi.org/10.5281/zenodo.22308072) | latest | 13 |
 | 2026-09-04 | State of Evidence for the Readout Hypothesis-Generation Programme: A Shared Evidence Regis | [zenodo.22308066](https://doi.org/10.5281/zenodo.22308066) | latest | 11 |
 | 2026-09-04 | Before Evidence Can Decide: Candidate-Set Formation, Discovery Routing, and Unconceived Al | [zenodo.22307564](https://doi.org/10.5281/zenodo.22307564) | latest | 13 |
@@ -47,39 +63,49 @@ This graph on Zenodo: https://doi.org/10.5281/zenodo.22341671 (concept 10.5281/z
 | 2026-08-29 | ปัญญาประดิษฐ์กับอารยธรรมความรู้: การลืมสถานะการเป็นตัวเลือกและความรับผิดชอบของมนุษย์ในสังค | [zenodo.22301886](https://doi.org/10.5281/zenodo.22301886) | latest | 11 |
 | 2026-08-29 | The Standalone Scholar: A Dual-Track Architecture for AI-Native Scholarship | [zenodo.22163849](https://doi.org/10.5281/zenodo.22163849) | latest | 5 |
 | 2026-07-24 | Readout Genesis Standalone Synthesis: Information Epistemic Foundation, Conditioned Agency | [zenodo.21529456](https://doi.org/10.5281/zenodo.21529456) | latest | 5 |
-| 2026-07-18 | Experience Is the Human LoRA: A Readout–Retention Theory of Selective Model Change | [zenodo.21425420](https://doi.org/10.5281/zenodo.21425420) | latest | 6 |
-| 2026-06-28 | Human Learning as Epistemic Architecture: A Method for Word Mapping, Life-Concept Graphs,  | [zenodo.22341297](https://doi.org/10.5281/zenodo.22341297) | latest | 3 |
+| 2026-07-18 | Experience Is the Human LoRA: A Readout–Retention Theory of Selective Model Change | [zenodo.21425420](https://doi.org/10.5281/zenodo.21425420) | latest | 8 |
+| 2026-06-28 | Human Learning as Epistemic Architecture: A Method for Word Mapping, Life-Concept Graphs,  | [zenodo.22341297](https://doi.org/10.5281/zenodo.22341297) | latest | 9 |
 | 2026-04-18 | Mind as Information Horizon: From Primordial Difference to Expertise Formation on the Disc | [zenodo.19640361](https://doi.org/10.5281/zenodo.19640361) | latest | 6 |
 | 2026-03-25 | When AI Expands Human Potential: Reflective Dissonance, Epistemic Agency, and Constraint | [zenodo.19215748](https://doi.org/10.5281/zenodo.19215748) | latest | 5 |
 | 2026-03-23 | Constraint-First Epistemology: Normativity, Conditioned Agency, and the Non-Zero Kantian F | [zenodo.19205869](https://doi.org/10.5281/zenodo.19205869) | latest | 6 |
 | 2026-03-23 | The Architecture of Mediated Agency: Beyond the Misframing of Free Will and Truth | [zenodo.19176260](https://doi.org/10.5281/zenodo.19176260) | latest | 6 |
-| 2026-03-10 | The Civilization of Knowledge: Who Has the Authority to Interpret the World | [zenodo.18943971](https://doi.org/10.5281/zenodo.18943971) | latest | 6 |
+| 2026-03-10 | The Civilization of Knowledge: Who Has the Authority to Interpret the World | [zenodo.18943971](https://doi.org/10.5281/zenodo.18943971) | latest | 9 |
 | 2026-03-09 | Knowledge as Stabilized Translation: Toward an Observer-Constrained Epistemology | [zenodo.18925129](https://doi.org/10.5281/zenodo.18925129) | latest | 6 |
 | 2026-02-20 | Learning Under Generative Abundance: A Structural Law of Epistemic Stabilization | [zenodo.18711408](https://doi.org/10.5281/zenodo.18711408) | latest | 6 |
 | 2026-02-07 | AI, Translation, and Access to Event-Specific Contex | [zenodo.18517054](https://doi.org/10.5281/zenodo.18517054) | latest | 6 |
-| 2025-10-09 | AI–Cognitive Interaction: Activating Youth Potential through Reflective Dialogue and Lingu | [zenodo.22308448](https://doi.org/10.5281/zenodo.22308448) | latest | 2 |
-| 2025-10-08 | Operational Linguistic Wisdom: Elective Connectivity and Linguistic Capital Activation in  | [zenodo.22308446](https://doi.org/10.5281/zenodo.22308446) | latest | 2 |
-| 2025-10-06 | The Dialogue as the Ground of Enlightenment: Religious and Cognitive Frameworks for Unders | [zenodo.22308451](https://doi.org/10.5281/zenodo.22308451) | latest | 2 |
-| 2025-10-06 | The Language Bridge: Expanding Human Potential in the Age of AI | [zenodo.17280546](https://doi.org/10.5281/zenodo.17280546) | latest | 0 |
+| 2025-10-09 | AI–Cognitive Interaction: Activating Youth Potential through Reflective Dialogue and Lingu | [zenodo.22308448](https://doi.org/10.5281/zenodo.22308448) | latest | 7 |
+| 2025-10-08 | Operational Linguistic Wisdom: Elective Connectivity and Linguistic Capital Activation in  | [zenodo.22308446](https://doi.org/10.5281/zenodo.22308446) | latest | 7 |
+| 2025-10-06 | The Dialogue as the Ground of Enlightenment: Religious and Cognitive Frameworks for Unders | [zenodo.22308451](https://doi.org/10.5281/zenodo.22308451) | latest | 10 |
+| 2025-10-06 | The Language Bridge: Expanding Human Potential in the Age of AI | [zenodo.17280546](https://doi.org/10.5281/zenodo.17280546) | latest | 3 |
 
 ## Referenced records outside the hub (one hop)
 
 - 2025-02-06 · Social Enterprise Survival Under Realistic Margins via Lead Multiplier, Growth Cost, and A · https://doi.org/10.5281/zenodo.18506938 · role=referenced_not_member
+- 2025-05-16 · Systemic Repair Capacity Theory: A Blood–Lymph–Neural Architecture of Human Health and Chr · https://doi.org/10.5281/zenodo.20229203 · role=referenced_not_member
+- 2026-01-27 · Violence as a Special Case of Instability in Finite–Memory Causal Systems · https://doi.org/10.5281/zenodo.18383439 · role=referenced_not_member
+- 2026-01-31 · CAUSAL ETHICS : The Mathematics of Regime Choice and Survival · https://doi.org/10.5281/zenodo.18444260 · role=referenced_not_member
+- 2026-02-28 · Health as Constraint-Admissible Trajectory A Genesis–CMP Aligned Minimal Metaphysics of He · https://doi.org/10.5281/zenodo.18813886 · role=referenced_not_member
+- 2026-03-07 · Causal Agency  A Persistence Control Theory of Adaptive Systems · https://doi.org/10.5281/zenodo.18897585 · role=referenced_not_member
+- 2026-03-09 · The Causal Grammar of Structured Coexistence: Conflict, Violence, Repair, and Non-Suppress · https://doi.org/10.5281/zenodo.18925131 · role=referenced_not_member
 - 2026-07-29 · What a Zero Readout Certifies Zero as the failure locus of retained distinction · https://doi.org/10.5281/zenodo.21665100 · role=referenced_not_member
 - 2026-08-27 · When Interpretation Hardens: Epistemic Authority, Asymmetric Revisability, and Conflict in · https://doi.org/10.5281/zenodo.22129490 · role=referenced_not_member
 - 2026-08-31 · Faqr, Scholarly Authority, and Non-Transferable Responsibility · https://doi.org/10.5281/zenodo.22206607 · role=referenced_not_member
 - 2026-09-01 · Why We Became a Social Enterprise: Positional Governance, Dual Costs, and a Toolkit for th · https://doi.org/10.5281/zenodo.22227005 · role=referenced_not_member
 - 2026-09-04 · glosa — Rigour Without Infrastructure: A Standalone Scholar Methodology for Human–AI Knowl · https://doi.org/10.5281/zenodo.22301060 · role=referenced_not_member
 - 2026-09-04 · Readout Universe — Epistemology programme index (Yaoharee Lahtee, 2026) · https://doi.org/10.5281/zenodo.22301459 · role=referenced_not_member
+- 2026-09-04 · Readout Universe — Health & mind programme index (Yaoharee Lahtee, 2026) · https://doi.org/10.5281/zenodo.22301465 · role=referenced_not_member
 - 2026-09-04 · Readout Universe — Artificial intelligence & knowledge programme index (Yaoharee Lahtee, 2 · https://doi.org/10.5281/zenodo.22301552 · role=referenced_not_member
 - 2026-09-04 · Readout Universe — Islam, Muslim society & knowledge authority programme index (Yaoharee L · https://doi.org/10.5281/zenodo.22301554 · role=referenced_not_member
 - 2026-09-04 · Readout Universe — Social enterprise programme index (Yaoharee Lahtee, 2026) · https://doi.org/10.5281/zenodo.22301566 · role=referenced_not_member
 - 2026-09-04 · The Epistemic Chain Reaction: Human-AI Multiplication from Questions to Readout-Distinguis · https://doi.org/10.5281/zenodo.22307751 · role=referenced_not_member
+- 2026-09-05 · glosa — Rigour Without Infrastructure: A Standalone Scholar Methodology for Human–AI Knowl · https://doi.org/10.5281/zenodo.22340255 · role=referenced_not_member
 - 2026-09-05 · ปูมกล่องดำ — บันทึกเสียงดิบ ข้อค้นพบ และคำถามรายวันของ เยาฮารี แหละตี (Blackbox Log, Yaoha · https://doi.org/10.5281/zenodo.22334420 · role=referenced_not_member
 - 2026-09-05 · glosa — Rigour Without Infrastructure: A Standalone Scholar Methodology for Human–AI Knowl · https://doi.org/10.5281/zenodo.22307843 · role=referenced_not_member
 - 2026-09-05 · glosa — Rigour Without Infrastructure: A Standalone Scholar Methodology for Human–AI Knowl · https://doi.org/10.5281/zenodo.22310837 · role=referenced_not_member
 - 2026-09-05 · Epistemic Fusion or Epistemic Tunnel: A Phenomenologically Anchored, History-Shaped Archit · https://doi.org/10.5281/zenodo.22318040 · role=referenced_not_member
 - 2026-09-05 · Epistemic Fusion or Epistemic Tunnel: A Phenomenology-Anchored, Global-Literature-Constrai · https://doi.org/10.5281/zenodo.22319715 · role=referenced_not_member
+- 2026-09-05 · Society, Justice, Peace & Violence — series index: structured coexistence, causal ethics,  · https://doi.org/10.5281/zenodo.22342043 · role=referenced_not_member
+- 2026-09-05 · Potential as a Readout: Witnessed Envelopes, Two-Layer Agency, and the Measurement of Pseu · https://doi.org/10.5281/zenodo.22345709 · role=referenced_not_member
 
 ## Traversal recipes
 
@@ -95,8 +121,15 @@ This graph on Zenodo: https://doi.org/10.5281/zenodo.22341671 (concept 10.5281/z
 ```mermaid
 flowchart TB
   n22308201["When AI Expands Human Potential — series index: …<br/>22308201"]
+  n22424434["Before Meaning, Before Choice: A Readout-Native …<br/>22424434"]
+  n22414412["Master Equation River: A Provenance Audit Across…<br/>22414412"]
+  n22341671["Knowledge graph of the Zenodo library When AI E…<br/>22341671"]
   n22339909["CTSA Human-Return Readout: A Session-Boundary Me…<br/>22339909"]
   n22307841["Rigour Without Infrastructure: Three Proposition…<br/>22307841"]
+  n22410666["Meaning Before Naming: A Readout-Retention Archi…<br/>22410666"]
+  n22357788["Choice Begins Before Choice: Meaning-Shaped Acce…<br/>22357788"]
+  n22357744["Experience Is Meaning-Giving: A Strong-Form Read…<br/>22357744"]
+  n22361830["Potential as a Readout: Witnessed Envelopes, Two…<br/>22361830"]
   n22331922["Epistemic Fusion or Epistemic Tunnel: A Phenomen…<br/>22331922"]
   n22340255["glosa — Rigour Without Infrastructure: A Standal…<br/>22340255"]
   n22334420["ปูมกล่องดำ — บันทึกเสียงดิบ ข้อค้นพบ และคำถามราย…<br/>22334420"]
@@ -125,6 +158,15 @@ flowchart TB
   n22308446["Operational Linguistic Wisdom: Elective Connecti…<br/>22308446"]
   n22308451["The Dialogue as the Ground of Enlightenment: Rel…<br/>22308451"]
   n17280546["The Language Bridge: Expanding Human Potential i…<br/>17280546"]
+  n22424434 -->|continues| n22414412
+  n22424434 -->|continues| n22410666
+  n22424434 -->|continues| n22357788
+  n22341671 -->|isSupplementTo| n22308201
+  n22410666 -->|continues| n21425420
+  n22410666 -->|continues| n22341297
+  n22357788 -->|continues| n22357744
+  n22357744 -->|continues| n21425420
+  n22357744 -->|continues| n22410666
   n22308072 -->|continues| n22307564
   n22308066 -->|isSupplementTo| n22307148
   n22308066 -->|isSupplementTo| n22307561
@@ -134,8 +176,15 @@ flowchart TB
   n22302410 -->|isSupplementTo| n18943971
   n22301886 -->|isSupplementTo| n18943971
   n22341297 -->|continues| n19215748
+  n22308201 -.-> n22424434
+  n22308201 -.-> n22414412
+  n22308201 -.-> n22341671
   n22308201 -.-> n22339909
   n22308201 -.-> n22307841
+  n22308201 -.-> n22410666
+  n22308201 -.-> n22357788
+  n22308201 -.-> n22357744
+  n22308201 -.-> n22361830
   n22308201 -.-> n22331922
   n22308201 -.-> n22340255
   n22308201 -.-> n22334420
@@ -167,4 +216,4 @@ flowchart TB
 ```
 
 
-_Built by `scripts/zenodo_library_kg.py` (glosa, CC BY 4.0) on 2026-09-05. Author of all records: Yaoharee Lahtee._
+_Built by `scripts/zenodo_library_kg.py` (glosa, CC BY 4.0) on 2026-09-06. Author of all records: Yaoharee Lahtee._
