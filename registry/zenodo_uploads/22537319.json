@@ -1,0 +1,11 @@
+{
+ "deposition_id": 22537319,
+ "founder_instructed_bypass": {
+  "instruction": "BBL-2026-09-06-183/187/188: Toledo public repo, release with DOI",
+  "logged_at": "2026-09-06T19:01:35"
+ },
+ "doi": "10.5281/zenodo.22537319",
+ "conceptdoi": "10.5281/zenodo.22537318",
+ "url": "https://zenodo.org/record/22537319",
+ "title": "Toledo — Equation Library of the Human–AI Readout Programme (v0.1.0): equation inventory of 40 deposited chapters, Readout-Genesis-based code scheme, and the Master Equation River Coq set"
+}

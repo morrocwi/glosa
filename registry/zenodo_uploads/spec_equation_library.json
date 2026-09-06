@@ -1,9 +1,9 @@
 {
- "file": "dist/toledo/toledo_v1_0.zip",
- "title": "Toledo — Equation Library of the Human–AI Readout Programme (v1.0): coded registry of every equation (Readout Genesis root ids + domain readings), occurrence map, lineage, and the Coq (Th_coqc) sources",
+ "file": "dist/toledo/toledo_v0_1_0.zip",
+ "title": "Toledo — Equation Library of the Human–AI Readout Programme (v0.1.0): equation inventory of 40 deposited chapters, Readout-Genesis-based code scheme, and the Master Equation River Coq set",
  "upload_type": "software",
  "publication_date": "2026-09-06",
- "description_html": "<p><b>What this is.</b> <i>Toledo</i> — named after the Toledo School of Translators, where one text was read across languages — is the programme's single home for equations and their machine checks: a git repository whose releases are deposited here. (1) the root layer — every equation and named result of Readout Genesis (git-anchored) with its own identifier reused verbatim as code its own identifier (Appendix C <code>EQ-nnn</code> or the named id such as <code>MQ.08</code>); (2) the canonical layer — every distinct equation object across the programme's deposited papers, written in its latest formulation as a reading of a root object, coded <code>&lt;root&gt;/&lt;D&gt;.&lt;nn&gt;.v&lt;k&gt;</code> (D = epistemic, human–AI, social, world-system, method); (3) the occurrence map — every numbered equation of every chapter of the textbook <i>Written by AI. Still True.</i> (raw inventory, 40 chapters) mapped to exactly one canonical code; sources are never edited, the map is the record; (4) Coq identifiers and tiers (Th_coqc / Definition / Open) from the companion Coq record; (5) the generated EQ_LIBRARY.md view. Principle (Readout Genesis): there is one equation; each domain is the same equation read through that domain's readout. The collapse target is a root spine that a single reader can follow from start to end without drift; drift notes are recorded, not hidden.</p><p><b>Status.</b> K0 working release; counts are computed from the JSON files at build time; Th_coqc certifies internal consistency of stated finite models, never empirical truth. An AI assistant assisted under the author's direction; no AI system is an author or contributor.</p><p><b>Scope.</b> Equations and Th_coqc only: registries, persistent codes (Readout Genesis identifiers reused verbatim as root codes; domain readings coded as <code>&lt;root&gt;/&lt;D&gt;.&lt;nn&gt;.v&lt;k&gt;</code>), an append-only lineage log per code, and the Coq 8.20 sources (file name = code) with <code>verify.sh</code> (Print Assumptions on every lemma). Existing machine-checked developments of the programme (readout_genesis/formal, readout_universe, information-discrete-math, zero-readout-certifies, the programme's private solver arc) are imported with git anchors, not re-proved.</p>",
+ "description_html": "<p><b>What this is.</b> <i>Toledo</i> — named after the Toledo School of Translators, where one text was read across languages — is the programme's single home for equations and their machine checks: a git repository whose releases are deposited here. (1) the root layer — every equation and named result of Readout Genesis (git-anchored) with its own identifier reused verbatim as code its own identifier (Appendix C <code>EQ-nnn</code> or the named id such as <code>MQ.08</code>); (2) the canonical layer — every distinct equation object across the programme's deposited papers, written in its latest formulation as a reading of a root object, coded <code>&lt;root&gt;/&lt;D&gt;.&lt;nn&gt;.v&lt;k&gt;</code> (D = epistemic, human–AI, social, world-system, method); (3) the occurrence map — every numbered equation of every chapter of the textbook <i>Written by AI. Still True.</i> (raw inventory, 40 chapters) mapped to exactly one canonical code; sources are never edited, the map is the record; (4) Coq identifiers and tiers (Th_coqc / Definition / Open) from the companion Coq record; (5) the generated EQ_LIBRARY.md view. Principle (Readout Genesis): there is one equation; each domain is the same equation read through that domain's readout. The collapse target is a root spine that a single reader can follow from start to end without drift; drift notes are recorded, not hidden.</p><p><b>Release v0.1.0.</b> Contents: raw inventory (40 chapters, 946 numbered equations, mapped to their records), the code scheme (root codes = Readout Genesis identifiers verbatim; readings <code>&lt;root&gt;/&lt;D&gt;.&lt;nn&gt;.v&lt;k&gt;</code>), lineage/test scaffold, and the Master Equation River Coq set (equations 1–79, 45 lemmas closed under the global context). The root registry, the canonical registry with codes, and the imported Coq developments follow in v1.0 under this same concept DOI. Source: https://github.com/morrocwi/toledo (tag v0.1.0).</p><p><b>Status.</b> K0 working release; counts are computed from the JSON files at build time; Th_coqc certifies internal consistency of stated finite models, never empirical truth. An AI assistant assisted under the author's direction; no AI system is an author or contributor.</p><p><b>Scope.</b> Equations and Th_coqc only: registries, persistent codes (Readout Genesis identifiers reused verbatim as root codes; domain readings coded as <code>&lt;root&gt;/&lt;D&gt;.&lt;nn&gt;.v&lt;k&gt;</code>), an append-only lineage log per code, and the Coq 8.20 sources (file name = code) with <code>verify.sh</code> (Print Assumptions on every lemma). Existing machine-checked developments of the programme (readout_genesis/formal, readout_universe, information-discrete-math, zero-readout-certifies, the programme's private solver arc) are imported with git anchors, not re-proved.</p>",
  "keywords": [
   "Toledo",
   "equation registry",
@@ -15,7 +15,7 @@
   "Human-AI Readout Programme",
   "domain translation"
  ],
- "version": "v1.0-2026-09-06",
+ "version": "v0.1.0-2026-09-06",
  "language": "eng",
  "related": [
   {
@@ -28,7 +28,7 @@
   },
   {
    "identifier": "10.5281/zenodo.22518450",
-   "relation": "obsoletes",
+   "relation": "isSupplementedBy",
    "resource_type": "software"
   },
   {
@@ -36,8 +36,8 @@
    "relation": "references"
   },
   {
-   "identifier": "10.5281/zenodo.22340255",
-   "relation": "references",
+   "identifier": "https://github.com/morrocwi/toledo/tree/v0.1.0",
+   "relation": "isIdenticalTo",
    "resource_type": "software"
   }
  ]
