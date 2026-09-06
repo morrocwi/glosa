@@ -1,0 +1,35 @@
+{
+ "file": "dist/master-river-coq/master_river_coq_v1_0.zip",
+ "title": "Master Equation River — Coq formalisation of every equation (v1.0: equations 1–79 of Master Equation River v1.4)",
+ "upload_type": "software",
+ "publication_date": "2026-09-06",
+ "description_html": "<p><b>What this is.</b> A Coq 8.20 development (readout-first, finite/discrete models only: nat, Z, Q, bool, finite lists and records; no Coq.Reals, no classical axioms, no Admitted, no top-level Axiom/Parameter) that formalises every numbered equation of <i>Master Equation River</i> v1.4 (DOI 10.5281/zenodo.22414412, concept), equations 1–79. Each equation is placed at exactly one tier: <b>Th_coqc</b> where a statement is derivable in a stated finite model (non-collapse laws proved by exhibiting a finite model in which the two readouts differ; accounting identities such as the Citizen Claim Threshold; nesting Π<sup>live</sup> ⊆ Π<sup>feas</sup> ⊆ Π<sup>phys</sup>; the discrete-difference form of the audit-index identity; Ẏ&gt;0 ⇏ Ṗ<sup>H</sup>&gt;0; Machine expansion ⇏ Human expansion), <b>Definition</b> where the paper defines an object (state spaces, readout maps, vectors, the river as a typed composition), and <b>Open</b> where the paper marks a hypothesis open (stated as a Prop, never proved). <code>verify.sh</code> runs <code>Print Assumptions</code> on every lemma; all report <i>Closed under the global context</i>. <code>MR_Ledger.md</code> maps equation → module → identifier → tier → assumptions, and records where a proved lemma is only a narrow witness of a thesis the paper itself keeps at tier Dr (equations 5, 8, 16). Continuum-looking expressions in the paper (exp, ∂ ln, max over infinite sets) are replaced by declared discrete counterparts and the replacement is recorded in the source comments.</p><p><b>Status.</b> K0 working release of the programme; the formalisation checks internal consistency of the stated discrete models, not empirical truth. Founder ruling BBL-2026-09-06-165 (Blackbox Log). An AI assistant drafted the modules under the author's direction; no AI system is an author or contributor.</p>",
+ "keywords": [
+  "Coq",
+  "formal verification",
+  "Master Equation River",
+  "Human-AI Readout Programme",
+  "readout",
+  "non-collapse",
+  "discrete mathematics",
+  "glosa"
+ ],
+ "version": "v1.0-2026-09-06",
+ "language": "eng",
+ "related": [
+  {
+   "identifier": "10.5281/zenodo.22414412",
+   "relation": "isSupplementTo",
+   "resource_type": "publication-preprint"
+  },
+  {
+   "identifier": "10.5281/zenodo.22308201",
+   "relation": "isPartOf"
+  },
+  {
+   "identifier": "10.5281/zenodo.22340255",
+   "relation": "references",
+   "resource_type": "software"
+  }
+ ]
+}

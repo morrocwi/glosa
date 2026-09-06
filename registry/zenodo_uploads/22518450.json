@@ -1,0 +1,11 @@
+{
+ "deposition_id": 22518450,
+ "founder_instructed_bypass": {
+  "instruction": "BBL-2026-09-06-165/167: ทุกสมการในสมการแม่ต้องทำ thcoq และเพิ่มเซตไฟล์เหล่านี้ใน zenodo; ฝาก",
+  "logged_at": "2026-09-06T16:43:48"
+ },
+ "doi": "10.5281/zenodo.22518450",
+ "conceptdoi": "10.5281/zenodo.22518449",
+ "url": "https://zenodo.org/record/22518450",
+ "title": "Master Equation River — Coq formalisation of every equation (v1.0: equations 1–79 of Master Equation River v1.4)"
+}
