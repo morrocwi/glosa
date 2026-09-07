@@ -1,0 +1,11 @@
+{
+ "deposition_id": 22644131,
+ "founder_instructed_bypass": {
+  "instruction": "Founder 2026-09-08 (BBL-230): IDM as the mathematical floor of the ecosystem; treatise needs its own DOI (IDM-2); BBL-167 standing deposit authorisation",
+  "logged_at": "2026-09-07T20:06:39"
+ },
+ "doi": "10.5281/zenodo.22644131",
+ "conceptdoi": "10.5281/zenodo.22644130",
+ "url": "https://zenodo.org/record/22644131",
+ "title": "Information Discrete Mathematics: the readout-first mathematical foundation (treatise, v1.6.0)"
+}

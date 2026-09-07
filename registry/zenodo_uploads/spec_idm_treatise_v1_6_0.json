@@ -1,0 +1,43 @@
+{
+ "upload_type": "publication",
+ "publication_type": "book",
+ "language": "eng",
+ "file": "dist/idm/Information_Discrete_Mathematics_v1_6_0.pdf",
+ "title": "Information Discrete Mathematics: the readout-first mathematical foundation (treatise, v1.6.0)",
+ "publication_date": "2026-09-08",
+ "version": "v1.6.0-2026-09-08",
+ "description_html": "<p><b>What this is.</b> A treatise (v1.6.0) re-grounding mathematics on one primitive, the retained difference &delta;_R, under a readout-first stance: everything read is a finite discrete rational readout, and the continuum is reconstructed as a readout of the discrete root rather than assumed as primary. From the axioms of retained difference (RD1&ndash;RD9) it builds the number ladder D &rarr; &#8484; &rarr; &#8474; &rarr; &#8477;, with the reals recovered as a readout rung; a relation graph and the retained graph-Laplacian operator L_R; the keystone identity B(&Phi;,&Phi;) = I(&Phi;); and a complete discrete calculus (finite-&epsilon; derivative/integral, the discrete Fundamental Theorem of Calculus, series, spectral windows), extended through geometry, abstract algebra, linear algebra, complex analysis, combinatorics and graph theory, measure and functional analysis, category theory, statistics, optimization, and a finite-dimensional Hilbert-space core.</p><p><b>Machine-checked core and equation provenance.</b> 274 Coq theorems and definitions are closed under the global context (axiom-free over &#8474;, Coq 8.20), mirrored against an external formal corpus for cross-verification. Every equation, theorem, and definition carries a Toledo equation code, registered in the permanent, public, coded equation library Toledo (concept DOI 10.5281/zenodo.22537318) that is this work's equation source of record; a companion record machine-checks the keystone operator's zero fibre and the typed HOLD floor. Where the treatise reasons about an external formal corpus not included in this repository, that corpus is referred to only by role (a sister solver arc, private), never by a leaked internal name.</p><p><b>Tier discipline (honest, never collapsed).</b> Every numbered result is tagged on an evidence ladder: <code>Th_coqc</code> (machine-checked, axiom-free) states an internal consistency of finite models, never an empirical or physical truth by itself; <code>exact</code> (finite &#8484;/&#8474; computation); <code>finite_diagnostic</code> (a declared-tolerance numeric readout); <code>Dr</code> (design/interpretive stance); and <code>+&#8477;-Open</code> (honestly unsettled, or genuinely needing the completed continuum). The work's overall claim status is K0: computation, not an empirical-physics or continuum-ontology claim. AI assistance in producing and typesetting this repository is disclosed by role (AI assistant); the core stance, selections, and results are the author's.</p>",
+ "keywords": [
+  "information discrete mathematics",
+  "readout-first",
+  "retained difference",
+  "discrete calculus",
+  "graph Laplacian",
+  "keystone identity",
+  "number ladder",
+  "Toledo equation codes",
+  "axiom-free Coq",
+  "finite readout",
+  "mathematical foundations",
+  "constructive analysis"
+ ],
+ "related": [
+  {
+   "identifier": "10.5281/zenodo.22308201",
+   "relation": "isPartOf"
+  },
+  {
+   "identifier": "10.5281/zenodo.21665100",
+   "relation": "isSupplementedBy"
+  },
+  {
+   "identifier": "10.5281/zenodo.22537318",
+   "relation": "references",
+   "resource_type": "software"
+  },
+  {
+   "identifier": "https://github.com/morrocwi/information-discrete-math/tree/v1.6.0",
+   "relation": "isIdenticalTo"
+  }
+ ]
+}
