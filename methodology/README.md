@@ -110,3 +110,9 @@ built under.
 | Card | File | One-line rule |
 |---|---|---|
 | P19 | `P19_registration.md` | One kind of new work, one home of record: equations → Toledo first (code, parents, tier, Coq file); records → Zenodo versions under the existing concept DOI; rulings → Blackbox Log; decisions → DECISIONS; events → logbook; claims → claim cards. Fail-closed per kind. |
+
+## P20 — Core Epistemic Structure (founder ruling, 2026-09-07)
+
+| Card | File | One-line rule |
+|---|---|---|
+| P20 | `P20_core_epistemic_structure.md` | Every draft carries the block Core Respondent / Experience-Based Expert · Interactional Expert (or None) · AI Model(s) Used (each named with its role); the three never merge; formal object E_p registered in Toledo. Template: `templates/core_epistemic_structure.md`. |

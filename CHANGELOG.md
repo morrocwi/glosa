@@ -1,6 +1,7 @@
 # CHANGELOG
 ## Unreleased
 
+- P20 Core Epistemic Structure card + template (founder rulings 2026-09-07, BBL-2026-09-07-216/217): mandatory block in every draft naming the experience-based expert, the interactional expert (or None) and every AI model with its role; non-collapse rule and the definition E_p registered in Toledo before use.
 - P19 registration card (founder ruling 2026-09-07, BBL-2026-09-07-205): every equation is checked against and registered in Toledo (10.5281/zenodo.22537318) before it is written or cited; the card lists the home of record for each kind of new work (equation, Coq check, Zenodo record, ruling, decision, event, claim, literature card, method change, skill).
 - `scripts/zenodo_publish_draft.py`: finish an existing unpublished draft (replace files, refresh metadata, publish) under the same founder-approval gate.
 
