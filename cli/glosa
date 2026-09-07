@@ -1334,7 +1334,8 @@ def _repro_verify_one(path: Path, reviewer_identity, independence_class, input_p
     review_data["shared_dependency_disclosure"] = (
         "re-executed run.command fresh in a clean temporary directory (scripts/repro_check.py); "
         if isolated else
-        f"re-executed run.command fresh in this repo's own checkout root ({REPO_ROOT}, scripts/repro_check.py); "
+        "re-executed run.command fresh in this glosa repo's own checkout root (never an absolute "
+        "path -- leak-scan regression, 2026-09-04; scripts/repro_check.py); "
     ) + f"card at {_rel(path)}."
     resolved_out_dir = Path(out_dir) if out_dir else REPO_ROOT / "reviews" / "routes" / _slugify(instance.get("claim") or instance.get("id")) / f"repro-verify-{instance.get('id')}"
     written = write_new(resolved_out_dir, "review_report", review_data)
