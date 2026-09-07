@@ -22,15 +22,22 @@ provenance rows `{claim, agent, parent, source_root, root_independent, record_ty
 grouped by `claim`:
 
 - **N_A(c)** — distinct endorsing agents (`record_type = endorsement`).
-- **N_P(c)** — distinct provenance roots declared `root_independent = true`.
-- **Flagship** — `N_A(c) ↑ ⇏ N_P(c) ↑` (the theory's own non-entailment): endorsement count rising
-  never by itself implies independent-provenance count rising.
+- **N_P(c)** — distinct provenance roots, full stop, regardless of declared independence (the
+  founder's own Mirror example: 1 shared root S1 → `N_P = 1`, not 0 — corrected 2026-09-08, see
+  `cases/ret/PREREGISTRATION_v0_1.md`'s dated note; an earlier draft counted only
+  independence-declared roots here, mis-scoring Mirror as `N_P = 0`).
+- **N_P^ind(c)** — the narrower, SEPARATE count of those roots additionally declared
+  `root_independent = true`. The RET RISK formula uses `N_P^ind(c)`, never the raw `N_P(c)`.
+- **Flagship** — `N_A(c) ↑ ⇏ N_P(c) ↑` (the theory's own non-entailment), read against the raw root
+  count: endorsement count rising never by itself implies provenance-root count rising, and rising
+  provenance-root count never by itself implies independence.
 - **Recursive cycle** — any directed cycle in the `parent → agent` graph, and whether it returns to
   an origin node.
 - **External interruption** — a `world_record` row, or an independent `review` row, whose own
   ancestry does not pass through a detected recursion cycle.
 - **RET RISK** (LOW/MEDIUM/HIGH) by the exact pre-registered rule in
-  `cases/ret/PREREGISTRATION_v0_1.md` ("RET RISK formula"), never re-tuned per case.
+  `cases/ret/PREREGISTRATION_v0_1.md` ("RET RISK formula", computed from `N_P^ind`), never
+  re-tuned per case.
 
 The program implements the definitions of `The_Recursive_Epistemic_Tunnel_GENESIS_FIRST_FULL_v2_0.md`
 §13–21 and §25–30 (network generalization, Recursive Epistemic Reflection, the Epistemic Mirror
@@ -93,6 +100,8 @@ repository was authored with that limit in mind, not discovered by the tool itse
 ## NC pairs
 
 - agreement ≠ provenance — `N_A(c)` rising says nothing about `N_P(c)`.
+- root count ≠ independence — `N_P(c)` counts distinct roots regardless of independence; only
+  `N_P^ind(c)` counts the ones declared independent, and only the latter feeds RET RISK.
 - agents ≠ roots — one root can be echoed by many agents; one agent can cite many roots.
 - cycle ≠ tunnel — a recursive cycle is a structural fact (§14); calling it a "tunnel" additionally
   requires the absence of growing external resistance/provenance (§19.2, RET-N10) — see §19.1's

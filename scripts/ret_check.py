@@ -24,15 +24,33 @@ record world-side) are INPUT DECLARATIONS supplied by the case author. This prog
 DECLARED graph structure -- who cites whom, which roots and records are declared independent --
 never whether those declarations are true. Every report header restates this.
 
+CORRECTION (2026-09-08, before any case was tuned to match): N_P(c) is the number of DISTINCT
+PROVENANCE ROOTS, full stop -- the founder's own Mirror example has 1 shared root S1, and it reads
+N_P = 1, not 0, even though that root is not independent. An earlier draft of this module counted
+only independence-declared roots as N_P, which mis-scored the Mirror example as N_P = 0. That
+independence-only count is now its own separate, explicitly labelled readout, N_P^ind(c) -- see
+below. This is a correction of the operator's definition to match the paper/founder text, not a
+retuning of the risk formula to make any case pass or fail differently (cases/ret/
+PREREGISTRATION_v0_1.md carries the same dated note; the RET RISK label itself is unchanged for
+every pre-registered scenario -- rules 1-4 below always used the independence-only count and
+still do, now spelled N_P^ind rather than N_P).
+
 Computed quantities and their section citations:
 
-  N_A(c)   -- number of distinct agents with record_type == "endorsement" for claim c.
-              Section 15 (the Epistemic Mirror Effect): "N_A(c) = number of endorsing agents".
-  N_P(c)   -- number of distinct source_root values declared root_independent == true for c.
-              Section 15's N_P(c), refined by section 16's typed provenance structure
-              Pi(c) = (V_c, E_c, tau_c) (RET-N07). root_independent is an input declaration
-              (see the disclaimer above) -- this program never derives independence itself.
-  Flagship -- N_A(c) up  does-not-imply  N_P(c) up. Section 15, RET-N06 (non-entailment).
+  N_A(c)     -- number of distinct agents with record_type == "endorsement" for claim c.
+                Section 15 (the Epistemic Mirror Effect): "N_A(c) = number of endorsing agents".
+  N_P(c)     -- number of DISTINCT PROVENANCE ROOTS (source_root values) for c, regardless of
+                whether any of them is declared independent. Section 15's literal N_P(c) as a raw
+                root count, refined by section 16's typed provenance structure
+                Pi(c) = (V_c, E_c, tau_c) (RET-N07), which is what N_P^ind narrows down to below.
+  N_P^ind(c) -- number of those roots ADDITIONALLY declared root_independent == true. A separate,
+                narrower readout of the same Pi(c) structure -- root_independent is an input
+                declaration (see the disclaimer above), never derived by this program. The RET
+                RISK formula below is computed from N_P^ind(c), never the raw N_P(c): a root that
+                is merely present is not the same claim as a root that is independent, and only
+                the latter should be read as resistance against a tunnel.
+  Flagship   -- N_A(c) up  does-not-imply  N_P(c) up. Section 15, RET-N06 (non-entailment). Reported
+                against the raw root count N_P(c), matching the paper's own literal reading.
   Recursive cycle -- any directed cycle in the parent -> agent graph for c. Section 14, RET-N04
               ("a minimal cycle is a_i -> a_j -> a_i"; a multi-agent cycle generalizes this).
               "Return-to-origin" additionally reports whether the cycle includes a row whose
@@ -50,16 +68,17 @@ Computed quantities and their section citations:
               (RET-N09: delta < 0 AND an external interruption is present) vs.
               "tunnel_contraction_risk" (RET-N10: delta < 0, a cycle is present, and no external
               interruption is present). This label is a report annotation; it does not feed the
-              RET RISK formula below (the founder specified that formula in terms of N_A, N_P,
+              RET RISK formula below (the founder specified that formula in terms of N_A, N_P^ind,
               cycle, and interruption only -- see the preregistration).
 
-RET RISK formula (pre-registered in `cases/ret/PREREGISTRATION_v0_1.md`, exact, first match wins):
+RET RISK formula (pre-registered in `cases/ret/PREREGISTRATION_v0_1.md`, exact, first match wins;
+uses N_P^ind, the independence-declared root count, never the raw root count N_P):
 
-  1. LOW    if N_P(c) >= N_A(c)
-  2. LOW    if an external interruption is present AND N_P(c) >= 1
-  3. HIGH   if N_A(c) > N_P(c) AND a recursive cycle is detected AND no external interruption
-  4. MEDIUM otherwise (N_A(c) > N_P(c), and either no cycle, or an interruption present but
-            N_P(c) == 0)
+  1. LOW    if N_P^ind(c) >= N_A(c)
+  2. LOW    if an external interruption is present AND N_P^ind(c) >= 1
+  3. HIGH   if N_A(c) > N_P^ind(c) AND a recursive cycle is detected AND no external interruption
+  4. MEDIUM otherwise (N_A(c) > N_P^ind(c), and either no cycle, or an interruption present but
+            N_P^ind(c) == 0)
 
 No priority-word claims are made about this program's accuracy or novelty (`AGENTS.md` rule 6);
 its correctness is exactly what `tests/test_ret_check.py` demonstrates, run and read yourself.
@@ -302,8 +321,14 @@ def _external_interruption(rows: list[dict], cycle_nodes: "set[str]") -> "tuple[
 
 def analyze_claim(claim: str, rows: list[dict]) -> dict:
     n_a_agents = sorted({r["agent"] for r in rows if r["record_type"] == "endorsement"})
-    n_p_roots = sorted({r["source_root"] for r in rows if r["root_independent"]})
-    n_a, n_p = len(n_a_agents), len(n_p_roots)
+    # N_P -- distinct provenance roots, period (section 15's literal reading, corrected
+    # 2026-09-08: the founder's own Mirror example is 1 shared root S1 -> N_P = 1, not 0, even
+    # though that root is NOT declared independent). Independence is a SEPARATE readout, N_P^ind
+    # (section 16's Pi(c) typed provenance distinction) -- see cases/ret/PREREGISTRATION_v0_1.md's
+    # dated correction note.
+    n_p_roots = sorted({r["source_root"] for r in rows})
+    n_p_ind_roots = sorted({r["source_root"] for r in rows if r["root_independent"]})
+    n_a, n_p, n_p_ind = len(n_a_agents), len(n_p_roots), len(n_p_ind_roots)
 
     cycle_detected, cycle_path = _find_cycle(rows)
     cycle_nodes = set(cycle_path)
@@ -332,26 +357,30 @@ def analyze_claim(claim: str, rows: list[dict]) -> dict:
         delta = None
         regime = "not_computed (effective_alternatives not supplied)"
 
-    if n_p >= n_a:
+    # RET RISK is an INDEPENDENCE question, not a raw-root-count question -- rules 1-4 below use
+    # N_P^ind (n_p_ind), never the raw root count N_P (n_p). A shared, non-independent root still
+    # counts once toward N_P (the founder's Mirror correction), but it must not by itself lower
+    # risk the way an independent root would.
+    if n_p_ind >= n_a:
         risk = "LOW"
-        risk_reason = f"N_P({n_p}) >= N_A({n_a}): independent provenance keeps pace with endorsement (rule 1)."
-    elif interruption_present and n_p >= 1:
+        risk_reason = f"N_P^ind({n_p_ind}) >= N_A({n_a}): independent provenance keeps pace with endorsement (rule 1)."
+    elif interruption_present and n_p_ind >= 1:
         risk = "LOW"
         risk_reason = (
-            f"an external interruption is present and N_P({n_p}) >= 1: independent world-side/"
-            "reviewer-side resistance already entered (rule 2)."
+            f"an external interruption is present and N_P^ind({n_p_ind}) >= 1: independent "
+            "world-side/reviewer-side resistance already entered (rule 2)."
         )
-    elif n_a > n_p and cycle_detected and not interruption_present:
+    elif n_a > n_p_ind and cycle_detected and not interruption_present:
         risk = "HIGH"
         risk_reason = (
-            f"N_A({n_a}) > N_P({n_p}), a recursive cycle was detected, and no external "
+            f"N_A({n_a}) > N_P^ind({n_p_ind}), a recursive cycle was detected, and no external "
             "interruption was found (rule 3)."
         )
     else:
         risk = "MEDIUM"
         risk_reason = (
-            f"N_A({n_a}) > N_P({n_p}), and either no cycle was detected or an interruption is "
-            f"present with N_P == 0 (rule 4, the remaining case)."
+            f"N_A({n_a}) > N_P^ind({n_p_ind}), and either no cycle was detected or an interruption "
+            f"is present with N_P^ind == 0 (rule 4, the remaining case)."
         )
 
     self_application = any(r["self_application"] for r in rows)
@@ -362,6 +391,8 @@ def analyze_claim(claim: str, rows: list[dict]) -> dict:
         "n_a_agents": n_a_agents,
         "n_p": n_p,
         "n_p_roots": n_p_roots,
+        "n_p_ind": n_p_ind,
+        "n_p_ind_roots": n_p_ind_roots,
         "flagship": f"N_A({n_a}) {'>' if n_a > n_p else ('==' if n_a == n_p else '<')} N_P({n_p})",
         "cycle_detected": cycle_detected,
         "cycle_path": cycle_path,
@@ -398,7 +429,8 @@ def render_report(result: dict) -> str:
     lines.append("")
     lines.append("-- Agents / Provenance --")
     lines.append(f"N_A (distinct endorsing agents)            : {result['n_a']} {result['n_a_agents']}")
-    lines.append(f"N_P (distinct declared-independent roots)  : {result['n_p']} {result['n_p_roots']}")
+    lines.append(f"N_P (distinct provenance roots)             : {result['n_p']} {result['n_p_roots']}")
+    lines.append(f"N_P^ind (roots declared independent)        : {result['n_p_ind']} {result['n_p_ind_roots']}")
     lines.append(f"Flagship (N_A up does-not-imply N_P up, RET-N06): {result['flagship']}")
     lines.append("")
     lines.append("-- Recursive structure (section 14, RET-N04) --")

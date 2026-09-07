@@ -42,8 +42,11 @@ class TestScenarioA(unittest.TestCase):
         result = ret_check.run(CASES_DIR / "A_mirror.json")
         c = _claim(result, "a-mirror-claim")
         self.assertEqual(c["n_a"], 5)
-        self.assertEqual(c["n_p"], 0)
-        self.assertNotEqual(c["n_a"], 5 and c["n_p"] == 5, "must not report evidence == 5")
+        # N_P (2026-09-08 correction): the founder's own Mirror example is 1 shared root S1 ->
+        # N_P = 1, not 0 -- a raw root count is not the same claim as an independence count.
+        self.assertEqual(c["n_p"], 1)
+        self.assertEqual(c["n_p_ind"], 0, "the single shared root is NOT declared independent")
+        self.assertNotEqual(c["n_a"], 5 and c["n_p_ind"] == 5, "must not report evidence == 5")
         self.assertTrue(c["cycle_detected"])
         self.assertFalse(c["external_interruption_present"])
         self.assertEqual(c["risk"], "HIGH")
@@ -58,6 +61,7 @@ class TestScenarioB(unittest.TestCase):
         c = _claim(result, "b-independent-claim")
         self.assertEqual(c["n_a"], 5)
         self.assertEqual(c["n_p"], 5)
+        self.assertEqual(c["n_p_ind"], 5, "all 5 roots are declared independent here")
         self.assertFalse(c["cycle_detected"])
         self.assertEqual(c["risk"], "LOW")
         self.assertNotEqual(c["risk"], "HIGH")
@@ -73,7 +77,9 @@ class TestScenarioC(unittest.TestCase):
         result = ret_check.run(CASES_DIR / "C_evidence_driven.json")
         c = _claim(result, "c-evidence-driven-claim")
         self.assertEqual(c["n_a"], 3)
-        self.assertEqual(c["n_p"], 1)
+        # N_P (raw root count) = 2: the shared internal root plus the world-record's own root.
+        self.assertEqual(c["n_p"], 2)
+        self.assertEqual(c["n_p_ind"], 1, "only the world-record's root is declared independent")
         self.assertTrue(c["external_interruption_present"])
         self.assertEqual(c["effective_alternatives_delta"], -2)
         self.assertEqual(c["regime"], "evidence_driven_convergence")
@@ -88,6 +94,9 @@ class TestScenarioD(unittest.TestCase):
     def test_d_recursive_return_cycle(self):
         result = ret_check.run(CASES_DIR / "D_recursive_return.json")
         c = _claim(result, "d-recursive-return-claim")
+        self.assertEqual(c["n_a"], 3)
+        self.assertEqual(c["n_p"], 1, "the one shared H-original-framing root, counted")
+        self.assertEqual(c["n_p_ind"], 0, "that root is not declared independent")
         self.assertTrue(c["cycle_detected"])
         self.assertTrue(c["return_to_origin"])
         self.assertIn("H", c["cycle_path"])
@@ -110,6 +119,13 @@ class TestScenarioE(unittest.TestCase):
         self.assertTrue(with_int["cycle_detected"])
         self.assertTrue(without_int["cycle_detected"])
 
+        # N_P (raw root count) differs by exactly the interruption's own root; N_P^ind isolates
+        # the independence variable precisely.
+        self.assertEqual(with_int["n_p"], 2)
+        self.assertEqual(with_int["n_p_ind"], 1)
+        self.assertEqual(without_int["n_p"], 1)
+        self.assertEqual(without_int["n_p_ind"], 0)
+
         self.assertTrue(with_int["external_interruption_present"])
         self.assertFalse(without_int["external_interruption_present"])
 
@@ -131,7 +147,10 @@ class TestSelfApplication(unittest.TestCase):
         c = _claim(result, "ret-manuscript-self-audit")
         self.assertTrue(c["self_application"])
         self.assertEqual(c["n_a"], 2)
-        self.assertEqual(c["n_p"], 0)
+        # N_P (2026-09-08 correction): the single shared internal-programme root counts as 1,
+        # matching the founder's own Mirror correction -- independence is the separate N_P^ind.
+        self.assertEqual(c["n_p"], 1)
+        self.assertEqual(c["n_p_ind"], 0, "the internal-programme root is not declared independent")
         self.assertTrue(c["cycle_detected"])
         self.assertFalse(c["external_interruption_present"])
         self.assertEqual(

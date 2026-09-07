@@ -11,8 +11,9 @@ cases/ret/PREREGISTRATION_v0_1.md ('What the program can NOT verify').
 
 -- Agents / Provenance --
 N_A (distinct endorsing agents)            : 2 ['GPT-5.6-Sol', 'Yaoharee-Lahtee']
-N_P (distinct declared-independent roots)  : 0 []
-Flagship (N_A up does-not-imply N_P up, RET-N06): N_A(2) > N_P(0)
+N_P (distinct provenance roots)             : 1 ['Genesis-Toledo-internal-programme']
+N_P^ind (roots declared independent)        : 0 []
+Flagship (N_A up does-not-imply N_P up, RET-N06): N_A(2) > N_P(1)
 
 -- Recursive structure (section 14, RET-N04) --
 Recursive cycle detected                   : YES
@@ -28,7 +29,7 @@ Regime                                       : not_computed (effective_alternati
 
 -- RET RISK --
 RET RISK: HIGH
-Reason: N_A(2) > N_P(0), a recursive cycle was detected, and no external interruption was found (rule 3).
+Reason: N_A(2) > N_P^ind(0), a recursive cycle was detected, and no external interruption was found (rule 3).
 
 The RET manuscript itself remains at RET-risk until independent world-side or reviewer-side resistance is added.
 

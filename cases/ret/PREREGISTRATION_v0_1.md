@@ -8,6 +8,18 @@ tier: Dr (specified; independently unreviewed)
 > reports the self-application case (item 4 below) as safe, **the artifact FAILS by this document**
 > — the rule set is not to be re-tuned after the fact to make a failing case pass.
 
+> **Correction, 2026-09-08 (before any case was tuned to match this document):** the operator
+> definition of `N_P(c)` below was corrected to match the paper/founder text. The founder's own
+> Mirror example is 1 shared root S1 → `N_P = 1`, not 0, even though that root is not independent
+> — a first implementation of `scripts/ret_check.py` had counted only independence-declared roots
+> as `N_P`, which mis-scored Mirror as `N_P = 0`. `N_P(c)` is now the raw count of distinct
+> provenance roots regardless of declared independence; the independence-only count is its own
+> separate, explicitly labelled readout, `N_P^ind(c)`, which the RET RISK formula uses (unchanged
+> — every rule below always operated on the independence-only count; only its name and the
+> flagship line's raw-count reading changed). No pre-registered RET RISK verdict changed because of
+> this correction; every `N_A`/`N_P` value quoted below for scenarios A/C/D/E and the
+> self-application case is updated to the corrected `N_P`, with `N_P^ind` given alongside.
+
 ## What this document is
 
 A preregistration of the pass/fail scenarios for RET-Check v0.1, an AI-independent (stdlib-only,
@@ -28,9 +40,13 @@ Given rows `{claim, agent, parent, source_root, root_independent, record_type, e
 
 - **N_A(c)** — number of *distinct* agents with `record_type = endorsement` for claim `c`
   (§15, the Epistemic Mirror Effect's `N_A(c) = number of endorsing agents`).
-- **N_P(c)** — number of distinct `source_root` values declared `root_independent = true` for `c`
-  (§15's `N_P(c)`, refined by §16's typed provenance structure `Π(c) = (V_c, E_c, τ_c)`, RET-N07).
+- **N_P(c)** — number of *distinct* `source_root` values for `c`, **regardless of whether any of
+  them is declared independent** (§15's literal `N_P(c)` as a raw root count; corrected 2026-09-08,
+  see the note above). A single shared, non-independent root still counts once.
+- **N_P^ind(c)** — the narrower count of those roots **additionally** declared
+  `root_independent = true` (§16's typed provenance structure `Π(c) = (V_c, E_c, τ_c)`, RET-N07).
   **`root_independent` is an input declaration, not a computed fact — see the disclaimer below.**
+  The RET RISK formula below is computed from `N_P^ind(c)`, never the raw `N_P(c)`.
 - **Recursive cycle** — any directed cycle in the graph of `parent → agent` edges for `c` (§14,
   RET-N04, "a minimal cycle is `a_i → a_j → a_i`"; a multi-agent cycle generalizes this). The
   program also reports whether the cycle returns to an *origin* node (a row whose `parent = "-"`)
@@ -45,10 +61,11 @@ Given rows `{claim, agent, parent, source_root, root_independent, record_type, e
   only to label a **regime** (§19): `evidence_driven_convergence` (RET-N09: delta < 0 *and* an
   external interruption is present) vs. `tunnel_contraction_risk` (RET-N10: delta < 0, a cycle is
   present, and no external interruption is present). The regime label is a report annotation; it
-  does **not** feed the RET RISK formula below (which the founder specified in terms of N_A, N_P,
-  cycle, and interruption only).
+  does **not** feed the RET RISK formula below (which the founder specified in terms of N_A,
+  N_P^ind, cycle, and interruption only).
 - **Flagship readout** — §15's non-entailment, RET-N06: `N_A(c) ↑ ⇏ N_P(c) ↑`. The report always
-  states the `N_A` vs `N_P` comparison for the claim under this heading, never a bare pass/fail.
+  states the `N_A` vs the raw `N_P` comparison for the claim under this heading, never a bare
+  pass/fail.
 
 Toledo codes for RET-N04/05/06/07/09/10/16/17/18 are not yet registered (`methodology/P19`); the
 program's docstring and every report cite them by the manuscript's own working aliases
@@ -56,53 +73,60 @@ program's docstring and every report cite them by the manuscript's own working a
 
 ## RET RISK formula (pre-registered, exact — do not retune after seeing case output)
 
-Evaluated in this order, first match wins:
+Evaluated in this order, first match wins, using `N_P^ind(c)` (the independence-declared root
+count), never the raw root count `N_P(c)`:
 
-1. **LOW** if `N_P(c) ≥ N_A(c)` (independent provenance keeps pace with or exceeds endorsement).
-2. **LOW** if an external interruption is present **and** `N_P(c) ≥ 1`.
-3. **HIGH** if `N_A(c) > N_P(c)` **and** a recursive cycle is detected **and** no external
+1. **LOW** if `N_P^ind(c) ≥ N_A(c)` (independent provenance keeps pace with or exceeds endorsement).
+2. **LOW** if an external interruption is present **and** `N_P^ind(c) ≥ 1`.
+3. **HIGH** if `N_A(c) > N_P^ind(c)` **and** a recursive cycle is detected **and** no external
    interruption is present.
-4. **MEDIUM** — the remaining case: `N_A(c) > N_P(c)` and either no cycle was detected, or an
-   interruption is present but `N_P(c) = 0`.
+4. **MEDIUM** — the remaining case: `N_A(c) > N_P^ind(c)` and either no cycle was detected, or an
+   interruption is present but `N_P^ind(c) = 0`.
 
 ## The five pre-registered scenarios (declared BEFORE `scripts/ret_check.py` exists)
 
 ### A — Mirror (`cases/ret/A_mirror.json`)
 5 agents endorse the same claim, all citing one shared, **not** independent (`root_independent:
 false`) provenance root, arranged so the endorsement returns to its own origin agent (a recursive
-cycle, §14/§15's Epistemic Mirror Effect). **Expected:** `N_A = 5`, `N_P = 0`, cycle detected, no
-external interruption ⇒ **RET RISK: HIGH**. The report must **not** read the 5 endorsements as 5
-pieces of evidence — the flagship line must show `N_A(5) > N_P(0)`.
+cycle, §14/§15's Epistemic Mirror Effect). **Expected:** `N_A = 5`, `N_P = 1` (the one shared root,
+counted; corrected 2026-09-08 — see the note above), `N_P^ind = 0` (that root is not independent),
+cycle detected, no external interruption ⇒ **RET RISK: HIGH**. The report must **not** read the 5
+endorsements as 5 pieces of independent evidence — the flagship line must show `N_A(5) > N_P(1)`,
+and `N_P^ind(0)` is what actually drives the HIGH verdict via rule 3.
 
 ### B — Independent convergence (`cases/ret/B_independent.json`)
 5 agents each endorse the same claim from 5 **distinct**, independently declared provenance roots,
-no shared lineage, no cycle. **Expected:** `N_A = 5`, `N_P = 5`, no cycle ⇒ **RET RISK: LOW**. Must
-**not** be flagged the way A is — same `N_A` as A, different `N_P` and structure, different verdict.
+no shared lineage, no cycle. **Expected:** `N_A = 5`, `N_P = 5`, `N_P^ind = 5`, no cycle ⇒ **RET
+RISK: LOW**. Must **not** be flagged the way A is — same `N_A` as A, different `N_P`/`N_P^ind` and
+structure, different verdict.
 
 ### C — Evidence-driven convergence (`cases/ret/C_evidence_driven.json`)
 3 agents endorse from one shared, non-independent root (declining number of live rival
 hypotheses — `effective_alternatives_before/after` supplied showing a decrease), and one
 `world_record` row is added whose lineage does not pass through the endorsement chain.
-**Expected:** `N_A = 3`, `N_P = 1` (from the world-record row), an external interruption present ⇒
-rule 2 fires ⇒ **RET RISK: LOW** (rule 3's HIGH is pre-empted by the interruption). Regime label:
-`evidence_driven_convergence` (RET-N09), explicitly **not** `tunnel_contraction_risk` — the report
-must say why: alternatives contracted *because* an independent world record entered, not because
-recursion alone dominated.
+**Expected:** `N_A = 3`, `N_P = 2` (the shared root plus the world-record's own root, both
+counted), `N_P^ind = 1` (only the world-record's root is independent), an external interruption
+present ⇒ rule 2 fires (on `N_P^ind`) ⇒ **RET RISK: LOW** (rule 3's HIGH is pre-empted by the
+interruption). Regime label: `evidence_driven_convergence` (RET-N09), explicitly **not**
+`tunnel_contraction_risk` — the report must say why: alternatives contracted *because* an
+independent world record entered, not because recursion alone dominated.
 
 ### D — Recursive return (`cases/ret/D_recursive_return.json`)
 Three agents `H → AI1 → AI2 → H` (§14's multi-agent cycle), one shared non-independent root, no
 external interruption. **Expected:** cycle detected = true, the cycle's node set includes `H`
-(return-to-origin = true), `N_A = 3 > N_P = 0` ⇒ **RET RISK: HIGH** by the same rule 3 as A — D is
-pre-registered specifically to exercise cycle detection on a genuine return path (distinct from A's
-purpose, which is the `N_A` vs `N_P` mismatch), not to test a new risk bucket.
+(return-to-origin = true), `N_A = 3`, `N_P = 1` (the one shared root, counted), `N_P^ind = 0` ⇒
+`N_A(3) > N_P^ind(0)` ⇒ **RET RISK: HIGH** by the same rule 3 as A — D is pre-registered
+specifically to exercise cycle detection on a genuine return path (distinct from A's purpose,
+which is the `N_A` vs `N_P^ind` mismatch), not to test a new risk bucket.
 
 ### E — External interruption present/absent (`cases/ret/E_interruption.json`)
 One file, two claims sharing the same endorsement structure (`N_A = 3`, one shared non-independent
 root, a cycle present) — claim `e-with-interruption` additionally carries an independent `review`
 row outside the cycle; claim `e-without-interruption` does not. **Expected:**
-`e-with-interruption` ⇒ rule 2 fires (external interruption present, `N_P ≥ 1`) ⇒ **LOW**;
-`e-without-interruption` ⇒ rule 3 fires ⇒ **HIGH**. This isolates the interruption variable from
-everything else held constant.
+`e-with-interruption` ⇒ `N_P = 2` (the shared root plus the reviewer's own root), `N_P^ind = 1`
+(only the reviewer's root) ⇒ rule 2 fires (external interruption present, `N_P^ind ≥ 1`) ⇒ **LOW**;
+`e-without-interruption` ⇒ `N_P = 1`, `N_P^ind = 0` ⇒ rule 3 fires ⇒ **HIGH**. This isolates the
+interruption variable from everything else held constant.
 
 ## Self-application (item 4 of the founder's order, not a pass/fail scenario in the A–E sense)
 
@@ -116,8 +140,9 @@ minimal §14 RET-N04 cycle) over one shared, non-independent internal-programme 
 `world_record` or `review` row (matching "Independent Human Review: None" / "AOWC empirical record:
 None").
 
-**Expected:** `N_A = 2`, `N_P = 0`, cycle detected ⇒ **RET RISK: HIGH**, and the report for this
-case must carry, verbatim, the sentence:
+**Expected:** `N_A = 2`, `N_P = 1` (the single shared internal-programme root, counted; corrected
+2026-09-08), `N_P^ind = 0` (that root is not independent), cycle detected ⇒ **RET RISK: HIGH**, and
+the report for this case must carry, verbatim, the sentence:
 
 > The RET manuscript itself remains at RET-risk until independent world-side or reviewer-side
 > resistance is added.
