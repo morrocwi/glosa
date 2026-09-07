@@ -1,0 +1,52 @@
+{
+  "$schema": "reproduction_card.schema.json",
+  "id": "IDM_ladder_constants",
+  "toledo_codes": [
+    "Q",
+    "R"
+  ],
+  "claim": "Toledo Q/R (information-discrete-math root extension): the package's own already-shipped finite-series/Newton readouts of pi, e, and sqrt(2) on the D->Z->Q->R number ladder agree with an independent oracle (mpmath) to a declared precision",
+  "preregistered_prediction": {
+    "statement": "For each of pi, sqrt(2), e: idm's own already-shipped finite readout (idm.pi() / idm.e() -- provefull/_kernel.py PI_FINITE/E_FINITE, from-scratch Machin-formula/Taylor-series arithmetic; cosmology.sqrt_finite(2) -- provefull/cosmology.py, from-scratch pure Newton-Raphson iteration, NOT mp.sqrt) agrees with an independent mpmath oracle computed separately at higher working precision (50 decimal digits) to at least 25 correct decimal digits (|delta| <= 1e-25). This tolerance is derived from a direct pre-run trace of the package's own ACTUAL working precision: provefull/_kernel.py opens with mp.mp.dps = 40, but its own later import of tools/idm_tools.py resets mp.mp.dps = 30 before PI_FINITE/E_FINITE/sqrt_finite are ever computed -- so the readouts actually run at 30 significant decimal digits, not 40; 25 is registered with real margin below that traced 30-digit floor, not tuned to any run's own output. Toledo codes Q (the rationals, field of fractions of Z) and R (the reals -- the continuum AS a readout, Def 3.4: Bishop regular Cauchy sequences of Q) are the D->Z->Q->R ladder objects this reproduction concerns; this card tests the package's Python-level finite-series/Newton arithmetic, not a claim that these specific readouts are Th_coqc-backed (Toledo's own docs/TOLEDO_CODES.md notes the R root is tiered '+R-axioms' in this repo's own Coq files for an unrelated reason -- importing Coq.Reals -- which this card's Python-only comparison does not touch either way).",
+    "tolerance": "exact categorical match (PASS/FAIL -- no numeric band): PASS iff each of pi, sqrt(2), e passes its own |delta| <= 1e-25 check against the independent mpmath oracle (see statement); reference value to pass at run time is the literal string PASS",
+    "declared_at": "2026-09-07T14:14:51.953039+00:00"
+  },
+  "oracle": {
+    "kind": "independent_implementation",
+    "source": "mpmath (independent implementation, external to information-discrete-math's own from-scratch series/Newton code in provefull/_kernel.py and provefull/cosmology.py); pi()/e()/sqrt_finite() never call mpmath's own mp.pi/mp.e/mp.sqrt to produce their values -- mpf is used only as an arbitrary-precision finite-arithmetic engine, per those files' own docstrings",
+    "doi_or_url": "https://doi.org/10.5281/zenodo.22644131",
+    "version": "mpmath 1.3.0 (oracle); idm 1.6.0, python-mpmath-only stack, commit pinned in run.command's own stdout (idm_repo_head)"
+  },
+  "environment": {
+    "python": "3.13.13",
+    "packages": {
+      "mpmath": "1.3.0"
+    }
+  },
+  "run": {
+    "command": "python3 cases/repro/run_IDM_ladder_constants.py",
+    "input_hash": "06cdd6a22dbc62adc538047b179d33e0873f230e54f64d71d9583d2f13fddfe0",
+    "output_hash": "78648bea74a3dfc327acacdb96c7757202e3758a629a94f12b47c7896dd4c9be",
+    "ai_at_runtime": 0,
+    "date": "2026-09-07T14:15:19.550156+00:00"
+  },
+  "result": {
+    "status": "PASS",
+    "observed": "PASS",
+    "deviation": "match"
+  },
+  "lineage": {
+    "run_by": "S4 builder stream (glosa repo, ANSE.ASIA workspace), executing design/RESISTANCE_LADDER_v0_1.md Section 6 Card 3's own pre-registration under founder ruling BBL-2026-09-07-229, once the IDM root extension (Toledo codes D/Z/Q/R) had actually landed in toledo/registry/genesis_root.json",
+    "ces": {
+      "respondent": "S4 builder session -- wrote cases/repro/run_IDM_ladder_constants.py, traced the package's own actual working precision (dps=30, not the naive dps=40) before writing the tolerance, ran the command shown in run.command, and authored this card's JSON; no lived-experience/standpoint judgment entered this pure-arithmetic reproduction",
+      "interactional": "None",
+      "ai_models": [
+        {
+          "model": "AI assistant (session-local)",
+          "role": "wrote cases/repro/run_IDM_ladder_constants.py, traced information-discrete-math's provefull/_kernel.py and tools/idm_tools.py to find the package's actual working precision, executed the command shown in run.command, computed the SHA-256 hash, and authored this card's JSON -- no vendor/model name per glosa AGENTS.md rule 9 (no explicit founder permission granted for this artifact)"
+        }
+      ]
+    }
+  },
+  "notes": "Executes design/RESISTANCE_LADDER_v0_1.md Section 6 Card 3 (\"IDM number-ladder approximants of pi, sqrt(2), e vs. mpmath\"), previously staged PENDING with toledo_codes[] empty because, at that design document's own drafting time, a direct listing of toledo/registry/proposals/ found no landed IDM merge file. By the time this card was written, the IDM root extension had landed (toledo/registry/genesis_root.json rows D/Z/Q/R/RD1-RD9/delta_R/Keystone/L_R, founder ruling quoted in each row: root registry extension R2, 2026-09-08) -- so toledo_codes[] is populated here (Q, R) rather than left pending, per Card 3's own design note (\"Once the IDM root extension lands ... the pre-registration to write is: ...\")."
+}
