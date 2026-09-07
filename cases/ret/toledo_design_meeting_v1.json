@@ -1,0 +1,92 @@
+[
+  {
+    "claim": "toledo-design-meeting-2026-09-06-decisions",
+    "agent": "REGISTRAR",
+    "parent": "-",
+    "source_root": "REGISTRAR-proposal",
+    "root_independent": true,
+    "record_type": "endorsement",
+    "evidence_ref": "one of three independently-drafted design proposals ('each drafted an independent design', docs/MEETING_2026-09-06_toledo_design.md sec 0); cited as Source for T1/T3/T5/T6/T7 among others -- root_independent is an INPUT DECLARATION taken from the meeting record's own procedural claim, not independently verified by this card (RET-Check's own disclaimer, restated)"
+  },
+  {
+    "claim": "toledo-design-meeting-2026-09-06-decisions",
+    "agent": "FORMALISER",
+    "parent": "-",
+    "source_root": "FORMALISER-proposal",
+    "root_independent": true,
+    "record_type": "endorsement",
+    "evidence_ref": "one of three independently-drafted design proposals; cited as Source for T8/T9 (the solver-arc licence-block finding) -- same input-declaration caveat as REGISTRAR's row"
+  },
+  {
+    "claim": "toledo-design-meeting-2026-09-06-decisions",
+    "agent": "LIBRARIAN",
+    "parent": "-",
+    "source_root": "LIBRARIAN-proposal",
+    "root_independent": true,
+    "record_type": "endorsement",
+    "evidence_ref": "one of three independently-drafted design proposals; cited as Source for T11/T12/T13 (live code-generator defect, docs site, release/CI) -- same input-declaration caveat as REGISTRAR's row"
+  },
+  {
+    "claim": "toledo-design-meeting-2026-09-06-decisions",
+    "agent": "J1",
+    "parent": "REGISTRAR",
+    "source_root": "REGISTRAR-proposal",
+    "root_independent": true,
+    "record_type": "endorsement",
+    "evidence_ref": "J1 is one of two independent judge passes that scored design_quality/constraint_fidelity/feasibility/verified over REGISTRAR's proposal (sec 0: 'two judge passes... independently'); e.g. T1 'Judge consensus: Both J1 and J2 rated REGISTRAR's entry-shape idea highly (design_quality 7/7...)'"
+  },
+  {
+    "claim": "toledo-design-meeting-2026-09-06-decisions",
+    "agent": "J1",
+    "parent": "FORMALISER",
+    "source_root": "FORMALISER-proposal",
+    "root_independent": true,
+    "record_type": "endorsement",
+    "evidence_ref": "J1's scoring pass over FORMALISER's proposal; e.g. T9 'Judge consensus. Both judge passes rated this the single most...'"
+  },
+  {
+    "claim": "toledo-design-meeting-2026-09-06-decisions",
+    "agent": "J1",
+    "parent": "LIBRARIAN",
+    "source_root": "LIBRARIAN-proposal",
+    "root_independent": true,
+    "record_type": "endorsement",
+    "evidence_ref": "J1's scoring pass over LIBRARIAN's proposal; e.g. T11 'Judge consensus. Both judge passes independently...'"
+  },
+  {
+    "claim": "toledo-design-meeting-2026-09-06-decisions",
+    "agent": "J2",
+    "parent": "REGISTRAR",
+    "source_root": "REGISTRAR-proposal",
+    "root_independent": true,
+    "record_type": "endorsement",
+    "evidence_ref": "J2 is the second of two independent judge passes over REGISTRAR's proposal; e.g. T1 'Both J1 and J2 rated REGISTRAR's entry-shape idea highly'"
+  },
+  {
+    "claim": "toledo-design-meeting-2026-09-06-decisions",
+    "agent": "J2",
+    "parent": "FORMALISER",
+    "source_root": "FORMALISER-proposal",
+    "root_independent": true,
+    "record_type": "endorsement",
+    "evidence_ref": "J2's scoring pass over FORMALISER's proposal; e.g. T9's judge consensus"
+  },
+  {
+    "claim": "toledo-design-meeting-2026-09-06-decisions",
+    "agent": "J2",
+    "parent": "LIBRARIAN",
+    "source_root": "LIBRARIAN-proposal",
+    "root_independent": true,
+    "record_type": "endorsement",
+    "evidence_ref": "J2's scoring pass over LIBRARIAN's proposal; e.g. T2 'J2 rated LIBRARIAN's catch of this mismatch as a top best-idea'"
+  },
+  {
+    "claim": "toledo-design-meeting-2026-09-06-decisions",
+    "agent": "toledo_design_meeting_md@7986a85",
+    "parent": "-",
+    "source_root": "toledo_design_meeting_md@7986a85",
+    "root_independent": true,
+    "record_type": "world_record",
+    "evidence_ref": "docs/MEETING_2026-09-06_toledo_design.md as committed at git commit 7986a852d402075494d05c1c5d175fdbe87ef23a (blob 49e668ceed0078d4de498ab135c5742cbaeb80d1, sha256 a1d1c347467b0159428431ae568bd8396fcaaee870f5fba2be6d0431c3ab5624 of the blob content), an ancestor of the current HEAD -- the frozen, committed secretary record merging the three proposals + two judge passes into ruled decisions T1-T14. This row's own file-hash pin is the reproducible evidence for R6/AOWC-style world-record status; RET-Check itself does not verify authorship or that drafting truly happened independently -- that remains an input declaration (see the REGISTRAR/FORMALISER/LIBRARIAN rows above and RET-Check's own disclaimer)."
+  }
+]

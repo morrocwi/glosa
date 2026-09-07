@@ -1612,6 +1612,190 @@ def mastery_gate_r8_status(gate):
 
 
 # --------------------------------------------------------------------------------------------
+# Reproduction Ledger + Resistance Ladder (methodology/P22_reproduction_ledger.md,
+# P23_resistance_ladder.md; founder ruling BBL-2026-09-07-229, design/RESISTANCE_LADDER_v0_1.md).
+# validate_reproduction_card is schema + the cross-field temporal/pinning rules JSON Schema
+# draft-07 cannot express (date ordering, run<->result.status consistency, oracle pinning once a
+# result exists) -- the same division of labor as validate_review_report's MC-01 cross-check
+# above. aowc_gate_check is the ONE shared function `glosa score` (cli/glosa, S1) and Toledo's own
+# `scripts/compute_resistance.py` (S3) both call for the R6 rung, per P23's one-fact-one-home rule.
+# --------------------------------------------------------------------------------------------
+
+_REPRO_EXTERNAL_ORACLE_KINDS = ("published_value", "independent_implementation", "public_dataset")
+
+
+def _parse_repro_timestamp(value):
+    """Best-effort ISO 8601 parse (date or datetime, optional trailing Z / UTC offset). Returns a
+    `datetime.datetime`, or None when the string cannot be parsed -- callers must treat None as
+    'ordering could not be checked', never silently as 'ordering is fine' (readout-not-truth: an
+    unparseable timestamp is a reported limit, never a fabricated pass)."""
+    if not isinstance(value, str) or not value.strip():
+        return None
+    text = value.strip()
+    if text.endswith("Z"):
+        text = text[:-1] + "+00:00"
+    try:
+        return datetime.fromisoformat(text)
+    except ValueError:
+        pass
+    try:
+        return datetime.combine(date.fromisoformat(text), datetime.min.time())
+    except ValueError:
+        return None
+
+
+def validate_reproduction_card(card, allow_no_jsonschema=False):
+    """Validate a reproduction_card payload (P22; schema/reproduction_card.schema.json). Returns
+    a Result.
+
+    Adds the cross-field checks JSON Schema draft-07 cannot express against a sibling object:
+
+    - `result.status` is `PENDING` iff `run` is still `null` (P22's own binding order:
+      pre-register, then run once, immutably).
+    - `preregistered_prediction.declared_at` predates `run.date` once `run` is filled (P22 item
+      1's "written BEFORE run/result exist" -- a date string that cannot be parsed is a WARNING,
+      never an error: this kernel never fabricates a check it cannot actually perform).
+    - `oracle.doi_or_url`/`version` are pinned (non-null, non-empty) once `result` is no longer
+      `PENDING` for an external-oracle kind (`published_value`/`independent_implementation`/
+      `public_dataset`) -- R4 requires the pin (`design/RESISTANCE_LADDER_v0_1.md` §2's oracle
+      row).
+
+    `allow_no_jsonschema` (MUST-4): see `_schema_validate_gated`'s docstring.
+    """
+    if not isinstance(card, dict):
+        return _result(ok=False, errors=["validate_reproduction_card: instance is not an object"])
+
+    errors, warnings, tier, _used_fallback = _schema_validate_gated(
+        card, "reproduction_card.schema.json", allow_no_jsonschema
+    )
+
+    run = card.get("run")
+    result = card.get("result") or {}
+    status = result.get("status")
+
+    if run is None and status is not None and status != "PENDING":
+        errors.append(
+            f"reproduction_card: result.status is {status!r} but run is still null -- PENDING is "
+            "the only legal status before a run exists (P22)."
+        )
+    if run is not None and status == "PENDING":
+        errors.append(
+            "reproduction_card: run{} is filled but result.status is still PENDING -- "
+            "glosa repro run must write a real PASS/FAIL/ERROR result together with run{}."
+        )
+
+    if isinstance(run, dict):
+        declared_at = _parse_repro_timestamp((card.get("preregistered_prediction") or {}).get("declared_at"))
+        run_date = _parse_repro_timestamp(run.get("date"))
+        if declared_at is None or run_date is None:
+            warnings.append(
+                "reproduction_card: could not parse preregistered_prediction.declared_at and/or "
+                "run.date as ISO 8601 -- pre-registration ordering was NOT checked (reported, "
+                "never silently assumed correct)."
+            )
+        elif declared_at > run_date:
+            errors.append(
+                "reproduction_card: preregistered_prediction.declared_at is AFTER run.date -- the "
+                "prediction must be written BEFORE the run it constrains (P22 item 1)."
+            )
+
+    oracle = card.get("oracle") or {}
+    if status not in (None, "PENDING") and oracle.get("kind") in _REPRO_EXTERNAL_ORACLE_KINDS:
+        if not str(oracle.get("doi_or_url") or "").strip() or not str(oracle.get("version") or "").strip():
+            errors.append(
+                f"reproduction_card: result.status is {status!r} (a run has happened) and "
+                f"oracle.kind is {oracle.get('kind')!r} but doi_or_url/version is still "
+                "null/empty -- R4 requires the oracle pin once a result exists "
+                "(design/RESISTANCE_LADDER_v0_1.md §2)."
+            )
+
+    return _result(ok=not errors, errors=errors, warnings=warnings, tier=tier)
+
+
+def aowc_gate_check(card):
+    """AOWC (AI-Off World-Closure) gate check for the Resistance Ladder's R6 rung (P23 §1;
+    RET-N17/RET-N18, Tunnel v2.1 §29-30; design/RESISTANCE_LADDER_v0_1.md §1/§5). ONE shared
+    function -- `glosa score` (cli/glosa) and Toledo's own `scripts/compute_resistance.py` both
+    call this, never re-implement it, per P23's one-fact-one-home rule.
+
+    Takes a reproduction_card payload (dict) and returns `(held: bool, reason: str)`. R6 requires
+    the card to ADDITIONALLY hold R4 (an external-oracle comparison with a filled result) and pass
+    three mechanically checkable AOWC conditions:
+
+      1. **Frozen before the run**: `preregistered_prediction.declared_at` parses and predates
+         `run.date` (the same ordering `validate_reproduction_card` checks; re-checked here so this
+         function is self-contained and callable on a raw dict without a prior
+         `validate_reproduction_card` call).
+      2. **AI = 0 at both execution and evaluation**: `run.ai_at_runtime == 0` (schema already
+         forces this to a literal `0` whenever `run` is filled) AND `result.status` is `PASS` or
+         `FAIL` (not `PENDING`/`ERROR` -- an `ERROR` means no genuine comparison was actually
+         evaluated, so RET-N18's own "`CausalAncestry(y)` not a subset of the recursive network"
+         has nothing to point at yet).
+      3. **Non-vacuous tolerance** -- RET-N18's own final condition, "T is allowed to count against
+         H": `preregistered_prediction.tolerance` must be a real, non-trivial band/exact-match
+         statement, not an always-pass phrase. This kernel can only apply a HEURISTIC lexical
+         check (readout-not-truth: it reads the tolerance text, it never verifies a human actually
+         designed it non-vacuously) -- every reason string this function's success case carries
+         is prefixed `HEURISTIC:`, per `_result`'s own convention, because this lexical condition
+         contributed to the verdict. An explicit `notes` containing the case-insensitive substring
+         `'AOWC-qualifying'` is read as the maker's own claim that this condition holds; it is
+         still checked mechanically here, never taken alone (P22's own "notes ... marked ... as
+         AOWC-qualifying" is a maker's assertion, not itself an evidence file).
+
+    This function never itself decides R4 -- a caller checks R4 first (`oracle.kind` is one of the
+    three external kinds AND `result.status` in `(PASS, FAIL)`) and calls this only for a card that
+    already holds it, per the ladder's own "R6 requires R4" rule (P23 §1 table).
+    """
+    if not isinstance(card, dict):
+        return False, "aowc_gate_check: card is not an object"
+
+    oracle = card.get("oracle") or {}
+    if oracle.get("kind") not in _REPRO_EXTERNAL_ORACLE_KINDS:
+        return False, f"oracle.kind {oracle.get('kind')!r} is not an external-oracle kind (R4 not held)"
+
+    run = card.get("run")
+    result = card.get("result") or {}
+    status = result.get("status")
+    if status not in ("PASS", "FAIL"):
+        return False, (
+            f"result.status is {status!r}, not PASS/FAIL -- no completed oracle comparison to "
+            "close R6 against"
+        )
+    if not isinstance(run, dict) or run.get("ai_at_runtime") != 0:
+        return False, "run is missing or ai_at_runtime != 0 -- AOWC requires AI = 0 at execution"
+
+    declared_at = _parse_repro_timestamp((card.get("preregistered_prediction") or {}).get("declared_at"))
+    run_date = _parse_repro_timestamp(run.get("date"))
+    if declared_at is None or run_date is None:
+        return False, (
+            "could not parse preregistered_prediction.declared_at and/or run.date -- "
+            "'frozen before the run' could not be checked"
+        )
+    if declared_at > run_date:
+        return False, "preregistered_prediction.declared_at is after run.date -- not frozen before the run"
+
+    tolerance = str((card.get("preregistered_prediction") or {}).get("tolerance") or "").strip()
+    if not tolerance:
+        return False, "preregistered_prediction.tolerance is empty -- no declared band for the test to count against"
+
+    vacuous_markers = (
+        "any value", "no tolerance", "always pass", "always true", "no band", "unbounded",
+        "n/a", "not applicable",
+    )
+    lower = tolerance.lower()
+    hit = next((m for m in vacuous_markers if m in lower), None)
+    if hit is not None:
+        return False, f"HEURISTIC: tolerance text reads as a vacuous/always-pass band (matched {hit!r} in {tolerance!r})"
+
+    notes = str(card.get("notes") or "")
+    explicit_claim = "aowc-qualifying" in notes.lower()
+    reason = "R4 held, frozen before the run, AI=0, and a non-trivial tolerance was declared (AOWC gate conditions met)"
+    if explicit_claim:
+        reason += " -- notes also explicitly claim AOWC-qualifying"
+    return True, "HEURISTIC: " + reason
+
+
+# --------------------------------------------------------------------------------------------
 # Core Epistemic Structure (methodology/P20_core_epistemic_structure.md, founder ruling
 # 2026-09-07, Blackbox Log BBL-2026-09-07-216/217/218). Formal object
 # E_p = <X_p^exp, X_p^int, M_p^AI> -- three roles, never merged. This section is a structural/
@@ -2912,6 +3096,7 @@ def self_test():
         ("hypothesis_selection.example.json", validate_hypothesis_selection),
         ("human_mastery_gate.example.json", validate_human_mastery_gate),
         ("core_epistemic_structure.example.json", validate_core_epistemic_structure),
+        ("reproduction_card.example.json", validate_reproduction_card),
     ]
     for filename, fn in pairs:
         p = examples_dir / filename
@@ -2943,6 +3128,8 @@ def self_test():
                 res = validate_problem_card(instance)
             elif "candidates" in instance and "selection" in instance:
                 res = validate_hypothesis_selection(instance)
+            elif "preregistered_prediction" in instance and "oracle" in instance:
+                res = validate_reproduction_card(instance)
             else:
                 res = validate_claim_card(instance)
             if res["ok"]:

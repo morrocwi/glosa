@@ -80,6 +80,16 @@ except Exception as exc:  # pragma: no cover - only when the script truly is not
     _ret_check = None
     _RET_CHECK_IMPORT_ERROR = f"{type(exc).__name__}: {exc}"
 
+# `glosa repro *` / `glosa score` (Reproduction Ledger + Resistance Ladder, P22/P23) reuse
+# scripts/repro_check.py's run/hash/compare/to_ret_rows functions -- same relative-path-import
+# convention as _ret_check above, one implementation, never duplicated here.
+_REPRO_CHECK_IMPORT_ERROR = None
+try:
+    import repro_check as _repro_check  # noqa: E402
+except Exception as exc:  # pragma: no cover - only when the script truly is not importable
+    _repro_check = None
+    _REPRO_CHECK_IMPORT_ERROR = f"{type(exc).__name__}: {exc}"
+
 try:
     import yaml  # type: ignore
 
@@ -291,6 +301,7 @@ _KERNEL_VALIDATORS = {
     "citation_card": "validate_citation_card",
     "release_manifest": "validate_release_manifest",
     "blackbox_note": "validate_blackbox_note",
+    "reproduction_card": "validate_reproduction_card",
 }
 _LIT_GATE_STEM = "litreview_manifest"
 
@@ -885,6 +896,45 @@ def scaffold_blackbox_note_session(note_id, project, human_owner, session_id, en
     }
 
 
+def scaffold_reproduction_card(card_id, toledo_codes, claim, oracle_kind, oracle_source,
+                                doi_or_url, version, statement, tolerance, human_owner,
+                                pending_toledo_code=False) -> dict:
+    """P22 (`glosa repro new`): scaffold a fresh Reproduction Card with
+    `preregistered_prediction` filled and `run: null` / `result.status: PENDING` written together,
+    in the same act, so a card can never exist with a filled run/result and no prior
+    pre-registration (methodology/P22_reproduction_ledger.md item 1). Field names copied verbatim
+    from `schema/reproduction_card.schema.json` (read while writing this function), same
+    one-fact-one-home convention every other `scaffold_*` function in this file already follows."""
+    data = {
+        "$schema": "reproduction_card.schema.json",
+        "id": card_id,
+        "toledo_codes": list(toledo_codes or []),
+        "claim": claim,
+        "preregistered_prediction": {
+            "statement": statement,
+            "tolerance": tolerance,
+            "declared_at": _now_iso(),
+        },
+        "oracle": {
+            "kind": oracle_kind,
+            "source": oracle_source,
+            "doi_or_url": doi_or_url,
+            "version": version,
+        },
+        "environment": {"python": sys.version.split()[0], "packages": {}},
+        "run": None,
+        "result": {"status": "PENDING", "observed": None, "deviation": None},
+        "lineage": {
+            "run_by": human_owner,
+            "ces": {"respondent": human_owner, "interactional": "None", "ai_models": "None"},
+        },
+        "notes": "",
+    }
+    if pending_toledo_code:
+        data["status"] = "pending_toledo_code"
+    return data
+
+
 # ==============================================================================================
 # Command handlers -- each returns (exit_code: int, result: dict). main() logs + prints + exits.
 # ==============================================================================================
@@ -1143,6 +1193,410 @@ def cmd_ret_check(args):
     result["action"] = "ret_check"
     result["json_flag"] = bool(args.json)
     return 0, result
+
+
+def _need_repro_check() -> dict | None:
+    if _repro_check is None:
+        return {"ok": False, "error": f"repro_check not present: scripts/repro_check.py failed to import: {_REPRO_CHECK_IMPORT_ERROR}"}
+    return None
+
+
+def cmd_repro_new(args):
+    """P22 (`glosa repro new`): scaffold a fresh Reproduction Card. Fail-closed (exit 1, no file
+    written) if `--statement` or `--tolerance` is empty -- the pre-registration must exist before
+    any run (methodology/P22_reproduction_ledger.md item 1)."""
+    statement, tolerance = (args.statement or "").strip(), (args.tolerance or "").strip()
+    if not statement or not tolerance:
+        return 1, {
+            "action": "repro_new", "id": args.id,
+            "error": "REFUSED (fail-closed): --statement and --tolerance must both be non-empty -- "
+                     "the pre-registration must exist BEFORE any run (P22 item 1).",
+        }
+    toledo_codes = [c.strip() for c in (args.toledo_codes or "").split(",") if c.strip()]
+    if not toledo_codes and not args.pending_toledo_code:
+        return 1, {
+            "action": "repro_new", "id": args.id,
+            "error": "REFUSED (fail-closed): --toledo-codes is empty and --pending-toledo-code was "
+                     "not passed -- toledo_codes[] may be empty ONLY when the card is honestly "
+                     "status: pending_toledo_code; never invent a code to avoid this flag (P22).",
+        }
+    out_dir = Path(args.out_dir) if args.out_dir else REPO_ROOT / "cases" / "repro"
+    data = scaffold_reproduction_card(
+        args.id, toledo_codes, args.claim, args.oracle_kind, args.oracle_source,
+        args.doi_or_url, args.version, statement, tolerance, args.human_owner,
+        pending_toledo_code=args.pending_toledo_code,
+    )
+    # Reproduction cards are ALWAYS .json (design/RESISTANCE_LADDER_v0_1.md §2/§3: "Scaffolds
+    # cases/repro/<ID>.json"), never the YAML-when-PyYAML-available convention every other
+    # scaffold_* command follows -- `glosa score`/`_score_matching_repro_cards` and
+    # `scripts/compute_resistance.py` (Toledo, S3) both glob cases/repro/*.json.
+    out_dir.mkdir(parents=True, exist_ok=True)
+    out_path = out_dir / f"{args.id}.json"
+    out_path.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    written = {"path": str(out_path), "format": "json"}
+    res = run_check(data, "reproduction_card") if k else {"ok": None, "warnings": ["kernel not present -- scaffold not self-checked"]}
+    return 0, {"action": "repro_new", "id": args.id, "written": written, "self_check": res}
+
+
+def cmd_repro_run(args):
+    """P22 item 2 (`glosa repro run`): execute the declared command, hash declared input/output
+    files, and write `run{}`/`result{}` back to the card. Refuses (exit 1, no execution) if
+    `preregistered_prediction.declared_at` is missing, if `run` is already filled (immutable --
+    re-checking it is `repro verify`'s job), or if `--command` was not given. Exit 2 = the command
+    itself could not be launched."""
+    err = _need_repro_check()
+    if err:
+        return 1, {"action": "repro_run", "result": err}
+    path = Path(args.path)
+    instance = load_instance(path)
+    if not (instance.get("preregistered_prediction") or {}).get("declared_at"):
+        return 1, {"action": "repro_run", "path": str(path),
+                    "error": "REFUSED: preregistered_prediction.declared_at is missing -- this card was "
+                             "not properly pre-registered (P22 item 1)."}
+    if instance.get("run") is not None:
+        return 1, {"action": "repro_run", "path": str(path),
+                    "error": "REFUSED: run{} is already filled -- a filled card is immutable. "
+                             "Use `glosa repro verify` to independently re-check it, never an overwrite."}
+    if not args.command:
+        return 1, {"action": "repro_run", "path": str(path),
+                    "error": "REFUSED: --command is required -- this driver never invents a command to run."}
+    try:
+        run_out = _repro_check.execute_run(args.command)
+    except _repro_check.ReproCheckError as exc:
+        return 2, {"action": "repro_run", "path": str(path), "ok": False, "error": str(exc)}
+    declared_input_hash = _repro_check.sha256_of_files(args.input) if args.input else None
+    declared_output_hash = _repro_check.sha256_of_files(args.output) if args.output else None
+    hashes = _repro_check.compute_hashes(run_out["stdout"], declared_input_hash, declared_output_hash)
+    tolerance = (instance.get("preregistered_prediction") or {}).get("tolerance", "")
+    comparison = _repro_check.compare(run_out["observed"], args.reference, tolerance)
+    instance["run"] = {
+        "command": args.command, "input_hash": hashes["input_hash"], "output_hash": hashes["output_hash"],
+        "ai_at_runtime": 0, "date": _now_iso(),
+    }
+    instance["result"] = {
+        "status": comparison["status"], "observed": comparison["observed"], "deviation": comparison["deviation"],
+    }
+    # Always JSON, regardless of PyYAML availability -- reproduction cards are always .json (see
+    # cmd_repro_new's own note); a plain dump_instance_text() would silently switch a .json file's
+    # own content to YAML whenever PyYAML happens to be importable.
+    path.write_text(json.dumps(instance, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    res = run_check(instance, "reproduction_card") if k else {"ok": None}
+    return 0, {
+        "action": "repro_run", "path": str(path), "status": comparison["status"], "note": comparison["note"],
+        "returncode": run_out["returncode"], "stderr_tail": run_out["stderr"][-2000:],
+        "self_check": res,
+    }
+
+
+def _repro_verify_one(path: Path, reviewer_identity, independence_class, input_paths, output_paths,
+                       out_dir, isolated: bool):
+    """One card's worth of `glosa repro verify` (P22 item 3): maker != checker (P10 NC-28/29). A
+    DIFFERENT identity re-executes `run.command` fresh and confirms the recomputed hashes equal
+    the ones already recorded, scaffolding a `review_report.yaml` (`role: SourceAuditor`) on the
+    result rather than mutating the card. This is the file that actually HOLDS R3 for a reader
+    other than the maker. `isolated=False` (the CLI's default) runs `run.command` in THIS repo's
+    own checkout root, so a card whose command names a repo-relative path (the shape both
+    first-batch real cards use, e.g. `python3 cases/repro/run_EQ-045_gauge_dim.py`) resolves the
+    same way it did at `glosa repro run` time; `isolated=True` re-instates the original clean,
+    empty, throwaway-temp-directory mode for a fully self-contained command (see
+    `scripts/repro_check.py::verify_in_temp_dir`'s own docstring for the full rationale)."""
+    instance = load_instance(path)
+    run = instance.get("run")
+    if run is None:
+        return 1, {"action": "repro_verify", "path": str(path),
+                    "error": "REFUSED: run{} is not filled yet -- run `glosa repro run` first."}
+    reviewer = reviewer_identity or f"TODO: reviewer identity for {instance.get('id')} (must differ from lineage.run_by)"
+    maker = (instance.get("lineage") or {}).get("run_by")
+    if maker and reviewer == maker:
+        return 1, {"action": "repro_verify", "path": str(path),
+                    "error": f"REFUSED: --reviewer-identity ({reviewer!r}) equals lineage.run_by ({maker!r}) -- "
+                             "same-identity self-verification has no standing (maker != checker)."}
+    exec_cwd = None if isolated else str(REPO_ROOT)
+    try:
+        reexec = _repro_check.verify_in_temp_dir(run["command"], input_paths=input_paths, output_paths=output_paths,
+                                                  cwd=exec_cwd)
+    except _repro_check.ReproCheckError as exc:
+        return 2, {"action": "repro_verify", "path": str(path), "ok": False, "error": str(exc)}
+    input_match = reexec["input_hash"] == run.get("input_hash")
+    output_match = reexec["output_hash"] == run.get("output_hash")
+    hashes_match = input_match and output_match
+    verdict = (
+        f"hash match on re-execution: input_hash {'MATCH' if input_match else 'MISMATCH'} "
+        f"({reexec['input_hash']!r} vs recorded {run.get('input_hash')!r}), "
+        f"output_hash {'MATCH' if output_match else 'MISMATCH'} "
+        f"({reexec['output_hash']!r} vs recorded {run.get('output_hash')!r})."
+    )
+    review_data = scaffold_review_report(instance.get("claim"), f"repro-verify-{instance.get('id')}", reviewer)
+    review_data["role"] = "SourceAuditor"
+    review_data["verdict"] = verdict
+    review_data["verdict_tier"] = "finite_diagnostic" if hashes_match else "Dr"
+    review_data["independence_class"] = independence_class or "I2"
+    review_data["shared_dependency_disclosure"] = (
+        "re-executed run.command fresh in a clean temporary directory (scripts/repro_check.py); "
+        if isolated else
+        f"re-executed run.command fresh in this repo's own checkout root ({REPO_ROOT}, scripts/repro_check.py); "
+    ) + f"card at {_rel(path)}."
+    resolved_out_dir = Path(out_dir) if out_dir else REPO_ROOT / "reviews" / "routes" / _slugify(instance.get("claim") or instance.get("id")) / f"repro-verify-{instance.get('id')}"
+    written = write_new(resolved_out_dir, "review_report", review_data)
+    res = run_check(review_data, "review_report") if k else {"ok": None}
+    return (0 if hashes_match else 1), {
+        "action": "repro_verify", "path": str(path), "hashes_match": hashes_match, "verdict": verdict,
+        "written": written, "self_check": res,
+    }
+
+
+def cmd_repro_verify(args):
+    """P22 item 3 (`glosa repro verify`) over one or more cards (`nargs="+"`, so
+    `glosa repro verify cases/repro/*.json` runs every card the shell's own glob expands to, one
+    at a time, in the order given -- never silently only the first). Exit code: 0 iff every card's
+    hashes matched; 1 if any card's hashes mismatched (a real, reportable finding, never masked by
+    another card's PASS); 2 if any card could not even be re-executed. `--out-dir`/`--input`/
+    `--output` (when given) apply identically to every path in this invocation -- pass one card
+    per invocation instead when they must differ per card."""
+    err = _need_repro_check()
+    if err:
+        return 1, {"action": "repro_verify", "result": err}
+    results = []
+    worst = 0
+    for raw_path in args.paths:
+        code, payload = _repro_verify_one(
+            Path(raw_path), args.reviewer_identity, args.independence_class, args.input, args.output,
+            args.out_dir, args.isolated,
+        )
+        results.append(payload)
+        worst = max(worst, code)
+    if len(results) == 1:
+        return worst, results[0]
+    return worst, {"action": "repro_verify", "paths": list(args.paths), "results": results,
+                    "all_hashes_match": all(r.get("hashes_match") for r in results if "hashes_match" in r)}
+
+
+def cmd_repro_to_ret(args):
+    """P22 item 4 (`glosa repro to-ret`): convert one reproduction_card into RET-Check provenance
+    rows (design/RESISTANCE_LADDER_v0_1.md §4). Refuses for `oracle.kind == "coq_kernel"` and for
+    an under-independent `human_review` oracle -- see `scripts/repro_check.to_ret_rows`'s own
+    docstring."""
+    err = _need_repro_check()
+    if err:
+        return 1, {"action": "repro_to_ret", "result": err}
+    path = Path(args.path)
+    instance = load_instance(path)
+    reviewer_independence_class = None
+    if args.review_report:
+        rr = load_instance(args.review_report)
+        reviewer_independence_class = rr.get("independence_class")
+    try:
+        rows = _repro_check.to_ret_rows(
+            instance, args.claim, reviewer_independence_class=reviewer_independence_class,
+            evidence_ref=_rel(path),
+        )
+    except _repro_check.ReproCheckError as exc:
+        return 1, {"action": "repro_to_ret", "path": str(path), "ok": False, "error": str(exc)}
+    out_path = Path(args.out) if args.out else REPO_ROOT / "cases" / "ret" / f"{_slugify(args.claim)}_from_repro.json"
+    existing = []
+    if out_path.is_file():
+        loaded = json.loads(out_path.read_text(encoding="utf-8"))
+        existing = loaded if isinstance(loaded, list) else loaded.get("rows", [])
+    existing.extend(rows)
+    out_path.parent.mkdir(parents=True, exist_ok=True)
+    out_path.write_text(json.dumps(existing, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    return 0, {"action": "repro_to_ret", "path": str(path), "claim": args.claim, "rows_added": rows,
+               "out": str(out_path), "total_rows_for_this_file": len(existing)}
+
+
+def _score_matching_repro_cards(repro_dir: Path, identifiers: set) -> list:
+    matches = []
+    if not repro_dir.is_dir():
+        return matches
+    for p in sorted(repro_dir.glob("*.json")):
+        try:
+            card = json.loads(p.read_text(encoding="utf-8"))
+        except (OSError, ValueError):
+            continue
+        codes = set(card.get("toledo_codes") or [])
+        if (codes & identifiers) or (card.get("claim") in identifiers):
+            matches.append((p, card))
+    return matches
+
+
+def _score_matching_reviews(reviews_dir: Path, identifiers: set) -> list:
+    matches = []
+    if not reviews_dir.is_dir():
+        return matches
+    for p in sorted(reviews_dir.rglob("review_report.*")):
+        if p.suffix not in (".yaml", ".yml", ".json"):
+            continue
+        try:
+            report = load_instance(p)
+        except Exception:
+            continue
+        if report.get("claim_ref") in identifiers:
+            matches.append((p, report))
+    return matches
+
+
+def _rung(held, evidence=None, reason=None):
+    row = {"held": bool(held), "evidence": evidence or []}
+    if not held and reason:
+        row["reason"] = reason
+    return row
+
+
+def cmd_score(args):
+    """P23 (`glosa score`): print the R0-R6 Resistance Ladder table for one artifact -- a SET of
+    rungs held, each with an evidence pointer, never a single number (design principle, restated
+    at P23 §0). There is no --score/scalar flag; this command is built to refuse collapsing the
+    table."""
+    artifact = args.artifact
+    kind = args.kind
+    instance = None
+    p = Path(artifact)
+    if kind is None:
+        if p.is_file():
+            instance = load_instance(p)
+            stem, _method = infer_stem(p, instance) if k else (None, None)
+            kind = stem if stem in ("claim_card", "release_manifest") else "toledo-code"
+        else:
+            kind = "toledo-code"
+    elif p.is_file() and kind in ("claim_card", "release_manifest"):
+        instance = load_instance(p)
+
+    identifiers = {artifact}
+    toledo_code = artifact if kind == "toledo-code" else None
+    if kind == "claim_card" and instance is not None:
+        identifiers = {instance.get("claim_id") or artifact}
+    elif kind == "release_manifest" and instance is not None:
+        identifiers = {instance.get("manifest_id") or artifact}
+        for ref in (instance.get("artifact_refs") or []):
+            if isinstance(ref, dict) and ref.get("claim_id"):
+                identifiers.add(ref["claim_id"])
+
+    repro_dir = Path(args.repro_dir) if args.repro_dir else REPO_ROOT / "cases" / "repro"
+    reviews_dir = Path(args.reviews_dir) if args.reviews_dir else REPO_ROOT / "reviews" / "routes"
+    matching_cards = _score_matching_repro_cards(repro_dir, identifiers)
+    # review_report.claim_ref names a CLAIM (text), never a bare Toledo code -- widen the set a
+    # review is matched against to include every already-linked card's own `claim` text too (the
+    # link a matching Reproduction Card itself establishes between this artifact and that claim),
+    # so a review of the same claim a matching card backs still counts toward R5.
+    review_identifiers = set(identifiers)
+    for _cp, _card in matching_cards:
+        if _card.get("claim"):
+            review_identifiers.add(_card["claim"])
+    matching_reviews = _score_matching_reviews(reviews_dir, review_identifiers)
+
+    rungs = {}
+
+    # R0 -- stated. Trivially held: this command was invoked with a real artifact identifier.
+    rungs["R0"] = _rung(True, evidence=[{"type": "artifact", "ref": artifact, "kind": kind}])
+
+    # R1 -- pre-registered falsifier / claim boundary.
+    r1_evidence = []
+    if k is not None:
+        for cp, card in matching_cards:
+            declared_at = k._parse_repro_timestamp((card.get("preregistered_prediction") or {}).get("declared_at"))
+            run = card.get("run")
+            if declared_at is None:
+                continue
+            if run is None:
+                r1_evidence.append({"type": "reproduction_card", "path": _rel(cp)})
+            else:
+                run_date = k._parse_repro_timestamp(run.get("date"))
+                if run_date is not None and declared_at <= run_date:
+                    r1_evidence.append({"type": "reproduction_card", "path": _rel(cp)})
+    if not r1_evidence and instance is not None and kind == "claim_card":
+        falsifier = ((instance.get("five_questions") or {}).get("tested") or {}).get("falsifier", "")
+        if falsifier and not falsifier.strip().upper().startswith("TODO"):
+            r1_evidence.append({"type": "claim_card", "path": str(p), "field": "five_questions.tested.falsifier"})
+    rungs["R1"] = _rung(bool(r1_evidence), evidence=r1_evidence,
+                         reason="no linked reproduction_card.preregistered_prediction or claim_card falsifier")
+
+    # R2 -- Coq-closed (kernel outside our loop). Read-only lookup against a Toledo registry file;
+    # never guessed when the registry is not reachable.
+    if toledo_code:
+        registry_path = Path(args.toledo_registry) if args.toledo_registry else (REPO_ROOT.parent / "toledo" / "registry" / "CANONICAL.json")
+        if not registry_path.is_file():
+            rungs["R2"] = _rung(False, reason=f"toledo registry not found at {registry_path} -- pass --toledo-registry")
+        else:
+            try:
+                data = json.loads(registry_path.read_text(encoding="utf-8"))
+            except (OSError, ValueError) as exc:
+                rungs["R2"] = _rung(False, reason=f"toledo registry at {registry_path} could not be parsed: {exc}")
+            else:
+                # registry/SCHEMA.md's own documented top level is {"schema_version", ...,
+                # "canonical": [entries...]} -- try that key FIRST (integration fix, 2026-09-08:
+                # the previous `data.get("entries") or list(data.values())` fallback silently
+                # iterated the top-level dict's OWN values -- version strings, the commit hash,
+                # the raw_to_canonical map -- never the nested entry list, so R2 could never be
+                # held true against a real CANONICAL.json no matter what code was asked for).
+                if isinstance(data, list):
+                    entries = data
+                elif isinstance(data, dict):
+                    entries = data.get("canonical")
+                    if not isinstance(entries, list):
+                        entries = data.get("entries")
+                    if not isinstance(entries, list):
+                        entries = [v for v in data.values() if isinstance(v, dict) and "code" in v]
+                else:
+                    entries = []
+                entry = next((e for e in entries if isinstance(e, dict) and e.get("code") == toledo_code), None)
+                if entry is None:
+                    rungs["R2"] = _rung(False, reason=f"code {toledo_code!r} not found in {registry_path}")
+                else:
+                    coq = entry.get("coq") or {}
+                    coq_status = coq.get("coq_status") if isinstance(coq, dict) else entry.get("coq_status")
+                    if coq_status == "closed":
+                        rungs["R2"] = _rung(True, evidence=[{"type": "toledo_registry", "path": str(registry_path), "code": toledo_code, "coq_status": coq_status}])
+                    else:
+                        rungs["R2"] = _rung(False, reason=f"coq_status is {coq_status!r}, not 'closed'")
+    else:
+        rungs["R2"] = _rung(False, reason="no Toledo code given or reachable from this artifact")
+
+    # R3 -- reproducible run, hash-frozen, AI = 0.
+    r3_cards = [(cp, card) for cp, card in matching_cards if card.get("run") is not None]
+    rungs["R3"] = _rung(bool(r3_cards), evidence=[{"type": "reproduction_card", "path": _rel(cp)} for cp, _ in r3_cards],
+                         reason="no reproduction card references this artifact with a filled run{}")
+
+    # R4 -- external oracle, PASS or FAIL both hold this rung (P0/P23 §0's own design principle).
+    external_kinds = k._REPRO_EXTERNAL_ORACLE_KINDS if k is not None else (
+        "published_value", "independent_implementation", "public_dataset")
+    r4_cards = [
+        (cp, card) for cp, card in r3_cards
+        if (card.get("oracle") or {}).get("kind") in external_kinds
+        and (card.get("result") or {}).get("status") in ("PASS", "FAIL")
+    ]
+    if not r3_cards:
+        rungs["R4"] = _rung(False, reason="R3 not held")
+    else:
+        rungs["R4"] = _rung(
+            bool(r4_cards),
+            evidence=[{"type": "reproduction_card", "path": _rel(cp), "result_status": card["result"]["status"]} for cp, card in r4_cards],
+            reason="no R3-holding card has a filled external-oracle result (PASS or FAIL)",
+        )
+
+    # R5 -- independent reviewer or interactional-expert record, independence_class >= I2.
+    i5_evidence = []
+    for rp, report in matching_reviews:
+        ind = report.get("independence_class")
+        if k is not None and ind in ("I2", "I3", "I4", "I5"):
+            i5_evidence.append({"type": "review_report", "path": _rel(rp), "independence_class": ind})
+    rungs["R5"] = _rung(bool(i5_evidence), evidence=i5_evidence,
+                         reason="no review_report at independence_class >= I2 references this artifact")
+
+    # R6 -- AOWC world record: an R4-holding card additionally passing the AOWC gate.
+    if not rungs["R4"]["held"] or k is None:
+        rungs["R6"] = _rung(False, reason="R4 not held")
+    else:
+        r6_evidence, r6_reasons = [], []
+        for cp, card in r4_cards:
+            aowc_held, aowc_reason = k.aowc_gate_check(card)
+            if aowc_held:
+                r6_evidence.append({"type": "reproduction_card", "path": _rel(cp), "aowc_reason": aowc_reason})
+            else:
+                r6_reasons.append(f"{_rel(cp)}: {aowc_reason}")
+        rungs["R6"] = _rung(bool(r6_evidence), evidence=r6_evidence,
+                             reason="; ".join(r6_reasons) if r6_reasons else "no R4-holding card passes the AOWC gate")
+
+    return 0, {"action": "score", "artifact": artifact, "kind": kind, "rungs": rungs}
 
 
 def cmd_lit_new(args):
@@ -1746,6 +2200,57 @@ def build_parser():
     a.add_argument("case", help="path to a .json or .csv provenance-rows file (see scripts/ret_check.py's own docstring for the row shape)")
     a.add_argument("--json", action="store_true", help="included for shape parity with scripts/ret_check.py's own --json flag; this CLI's own output convention is always one JSON object either way (cli/README.md)")
     a.set_defaults(func=cmd_ret_check)
+
+    # repro --------------------------------------------------------------------------------------
+    repro = sub.add_parser("repro", help="Reproduction Ledger (P22): hash-frozen, re-runnable checks against a declared oracle").add_subparsers(dest="sub", required=True)
+    a = repro.add_parser("new", help="scaffold a new reproduction_card -- refuses if --statement/--tolerance is empty")
+    a.add_argument("--id", required=True)
+    a.add_argument("--claim", required=True)
+    a.add_argument("--toledo-codes", default="", help="comma-separated Toledo codes this card backs; may be empty only with --pending-toledo-code")
+    a.add_argument("--pending-toledo-code", action="store_true", help="license an empty --toledo-codes -- sets status: pending_toledo_code; never invent a code instead")
+    a.add_argument("--oracle-kind", required=True, choices=["published_value", "independent_implementation", "public_dataset", "coq_kernel", "human_review"])
+    a.add_argument("--oracle-source", required=True)
+    a.add_argument("--doi-or-url", default=None)
+    a.add_argument("--version", default=None)
+    a.add_argument("--statement", required=True, help="preregistered_prediction.statement -- must be non-empty")
+    a.add_argument("--tolerance", required=True, help="preregistered_prediction.tolerance -- must be non-empty")
+    a.add_argument("--human-owner", required=True)
+    a.add_argument("--out-dir", default=None)
+    a.set_defaults(func=cmd_repro_new)
+    a = repro.add_parser("run", help="execute the declared command, hash inputs/outputs, write run{}/result{} -- refuses if already run")
+    a.add_argument("path")
+    a.add_argument("--command", default=None, help="the command to execute (required -- this driver never invents one)")
+    a.add_argument("--input", nargs="*", default=[], help="declared input file(s) to SHA-256-hash")
+    a.add_argument("--output", nargs="*", default=[], help="declared output file(s) to SHA-256-hash")
+    a.add_argument("--reference", default=None, help="the external oracle's own value to compare the run's observed output against (this driver makes no network call to fetch one itself)")
+    a.set_defaults(func=cmd_repro_run)
+    a = repro.add_parser("verify", help="maker != checker: a different identity re-executes run.command fresh and confirms the hashes match")
+    a.add_argument("paths", nargs="+", help="one or more reproduction_card file paths (a shell glob expands to several)")
+    a.add_argument("--reviewer-identity", default=None, help="must differ from the card's own lineage.run_by")
+    a.add_argument("--independence-class", default=None, choices=["I0", "I1", "I2", "I3", "I4", "I5"])
+    a.add_argument("--input", nargs="*", default=[], help="the SAME declared input file(s) passed to `repro run`, for re-hashing")
+    a.add_argument("--output", nargs="*", default=[], help="the SAME declared output basename(s) passed to `repro run`, for re-hashing")
+    a.add_argument("--out-dir", default=None)
+    a.add_argument("--isolated", action="store_true",
+                    help="re-execute in a clean, empty, throwaway temp directory (the original P22 mode) instead of "
+                         "this repo's own checkout root (the default) -- only a fully self-contained command "
+                         "(no repo-relative file reference) can resolve there")
+    a.set_defaults(func=cmd_repro_verify)
+    a = repro.add_parser("to-ret", help="convert one reproduction_card into RET-Check provenance rows (refuses for oracle.kind == coq_kernel)")
+    a.add_argument("path")
+    a.add_argument("--claim", required=True, help="the RET-Check claim id these rows belong to")
+    a.add_argument("--review-report", default=None, help="a review_report.yaml/json to read independence_class from, required when oracle.kind == human_review")
+    a.add_argument("--out", default=None, help="default: cases/ret/<slug(claim)>_from_repro.json (appended to if it already exists)")
+    a.set_defaults(func=cmd_repro_to_ret)
+
+    # score --------------------------------------------------------------------------------------
+    a = sub.add_parser("score", help="Resistance Ladder (P23): print the R0-R6 rung table for one artifact -- never a single number")
+    a.add_argument("artifact", help="a Toledo code, or a claim_card/release_manifest file path")
+    a.add_argument("--kind", default=None, choices=["toledo-code", "claim_card", "release_manifest"], help="override auto-detection")
+    a.add_argument("--toledo-registry", default=None, help="path to a Toledo registry/CANONICAL.json (default: ../toledo/registry/CANONICAL.json next to this repo)")
+    a.add_argument("--repro-dir", default=None, help="default: cases/repro/")
+    a.add_argument("--reviews-dir", default=None, help="default: reviews/routes/")
+    a.set_defaults(func=cmd_score)
 
     # lit ----------------------------------------------------------------------------------------
     lit = sub.add_parser("lit", help="Literature Review System (S14)").add_subparsers(dest="sub", required=True)

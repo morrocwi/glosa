@@ -1,0 +1,66 @@
+# reproduction_card.yaml -- schema/reproduction_card.schema.json (methodology home P22).
+# This is a human-readable FIELD REFERENCE only. Real instances `glosa repro new` writes are
+# ALWAYS cases/repro/<ID>.json (design/RESISTANCE_LADDER_v0_1.md §2/§3) -- never .yaml, unlike
+# most other templates/knowledge/*.yaml files -- because `glosa score` and Toledo's
+# scripts/compute_resistance.py both glob cases/repro/*.json.
+# One card = one re-runnable, hash-frozen check of one claim against one declared oracle.
+# This is the file that HOLDS R3/R4/R6 of the Resistance Ladder (P23_resistance_ladder.md) for a
+# reader other than the maker -- a rung is held by a file that exists, never by a prose assertion.
+#
+# Binding order (glosa repro new enforces this): preregistered_prediction is written and frozen
+# BEFORE run/result exist. `glosa repro new` writes this file with run: null and
+# result.status: PENDING; it refuses to write the file at all if --statement or --tolerance is
+# empty. `glosa repro run` then refuses to touch preregistered_prediction, and refuses to
+# overwrite run{} once it is already filled (a filled card is immutable -- re-checking it is
+# `glosa repro verify`'s job, never an overwrite).
+
+id: REPRO-<YYYY-MM-DD>-<nnnn>       # required, stable
+
+toledo_codes:                        # required (array). May be [] ONLY when status: pending_toledo_code
+  - <root>/<D>.<nn>.v<k>              # the equation MUST already be registered in Toledo before this card cites it (P19)
+# status: pending_toledo_code        # uncomment ONLY when toledo_codes is legitimately still empty --
+                                      # never invent a code to avoid setting this.
+
+claim: "TODO: free text, or a claim_card.claim_id reference -- what is being tested."
+
+preregistered_prediction:            # required. WRITTEN BEFORE run/result EXIST. Frozen once run is filled.
+  statement: "TODO: the exact predicted outcome, stated before the run."
+  tolerance: "TODO: human-readable, exact -- e.g. '±5% of the PDG value' or '0 digit mismatch to 50 decimal places'."
+  declared_at: null                  # ISO 8601 timestamp -- `glosa repro new` fills this with `now`, never hand-typed later
+
+oracle:                              # required. kind has exactly five legal values, no "none".
+  kind: published_value              # enum: published_value | independent_implementation | public_dataset | coq_kernel | human_review
+  source: "TODO: name the thing (e.g. 'Particle Data Group, Review of Particle Physics')."
+  doi_or_url: null                   # pin once known -- MUST NOT stay null once result is filled for an external-oracle kind
+  version: null                      # pin once known, same rule
+
+environment:                         # required.
+  python: "3.x.x"                    # the pinned interpreter version string used for run.command
+  packages: {}                       # EMPTY for the runner process itself (stdlib only). A non-empty entry
+                                      # (only "mpmath" or "numpy" are legal keys) names a package used ONLY
+                                      # inside the card's own declared oracle subprocess -- never imported by
+                                      # scripts/repro_check.py's own driver.
+
+run: null                            # required, null before execution. `glosa repro run <this file>` fills:
+  # command: "TODO: the exact command that was executed"
+  # input_hash: null                 # SHA-256 of the declared --input file(s), computed by the runner, never hand-typed
+  # output_hash: null                # SHA-256 of the declared --output file(s), same rule
+  # ai_at_runtime: 0                 # ALWAYS the literal 0 -- never anything else
+  # date: "TODO: ISO 8601 timestamp of the run"
+
+result:                              # required. PENDING is the only legal status before run exists.
+  status: PENDING                    # enum: PASS | FAIL | ERROR | PENDING
+  observed: null
+  deviation: null
+
+lineage:                             # required.
+  run_by: "TODO: identity string of whoever ran this reproduction"
+  ces:                                # P20 Core Epistemic Structure, scoped to THIS REPRODUCTION only --
+                                      # never a restatement of the paper/claim's own, separate CES block.
+    respondent: "TODO: name/role -- basis of experience"
+    interactional: "None"            # a name/role, or exactly "None" -- never invented to fill the slot
+    ai_models: "None"                # {model, role} list, or exactly "None" -- name every model that actually
+                                      # played a part in producing/checking this card, never "AI was used"
+
+notes: ""                            # free text -- AOWC-qualification note for R6 (P23 §1), retrospective-
+                                      # formalisation disclosure, etc.

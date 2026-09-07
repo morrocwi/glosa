@@ -1,0 +1,65 @@
+[
+  {
+    "claim": "f-reproduction-claim",
+    "agent": "agent1",
+    "parent": "-",
+    "source_root": "shared-root-R1",
+    "root_independent": false,
+    "record_type": "endorsement",
+    "evidence_ref": "originates the claim (rows 1-6 are scenario A's Mirror, copied verbatim onto a new claim id, per design/RESISTANCE_LADDER_v0_1.md sec 4's own instruction: 'take the Mirror scenario (A) and add one world_record row emitted from a real, executed Reproduction Card')"
+  },
+  {
+    "claim": "f-reproduction-claim",
+    "agent": "agent2",
+    "parent": "agent1",
+    "source_root": "shared-root-R1",
+    "root_independent": false,
+    "record_type": "endorsement",
+    "evidence_ref": "restates agent1"
+  },
+  {
+    "claim": "f-reproduction-claim",
+    "agent": "agent3",
+    "parent": "agent2",
+    "source_root": "shared-root-R1",
+    "root_independent": false,
+    "record_type": "endorsement",
+    "evidence_ref": "restates agent2"
+  },
+  {
+    "claim": "f-reproduction-claim",
+    "agent": "agent4",
+    "parent": "agent3",
+    "source_root": "shared-root-R1",
+    "root_independent": false,
+    "record_type": "endorsement",
+    "evidence_ref": "restates agent3"
+  },
+  {
+    "claim": "f-reproduction-claim",
+    "agent": "agent5",
+    "parent": "agent4",
+    "source_root": "shared-root-R1",
+    "root_independent": false,
+    "record_type": "endorsement",
+    "evidence_ref": "restates agent4"
+  },
+  {
+    "claim": "f-reproduction-claim",
+    "agent": "agent1",
+    "parent": "agent5",
+    "source_root": "shared-root-R1",
+    "root_independent": false,
+    "record_type": "endorsement",
+    "evidence_ref": "agent1 later re-endorses, closing the mirror loop back on itself (section 15, the Epistemic Mirror Effect) -- same as scenario A"
+  },
+  {
+    "claim": "f-reproduction-claim",
+    "agent": "REPRO-2026-09-08-0001-TESTFIXTURE",
+    "parent": "-",
+    "source_root": "Particle Data Group, Review of Particle Physics",
+    "root_independent": true,
+    "record_type": "world_record",
+    "evidence_ref": "reproduction_card:REPRO-2026-09-08-0001-TESTFIXTURE toledo_codes=['EQ-068'] -- this exact row is the verbatim JSON printed by `python3 -c \"...ret_check.reproduction_card_to_row(card, claim='f-reproduction-claim')\"` against a Reproduction-Card test fixture (see tests/test_ret_check.py::TestReproductionCardConverter for the fixture's full contents, copied from design/RESISTANCE_LADDER_v0_1.md sec 6 Card 1's own already-disclosed EQ-068 numbers). This is a converter-exercise fixture, NOT stream S4's own authoritative, executed cases/repro/EQ-068_higgs_pdg.json -- the card's own result.status is PENDING here on purpose (this test never claims Card 1 was actually run)."
+  }
+]

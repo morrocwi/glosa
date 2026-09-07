@@ -189,6 +189,68 @@ gets revisited, never the test.
   say. This is the same readout-not-truth floor as the rest of this repository (`AGENTS.md` rule 1)
   applied to provenance-graph auditing specifically.
 
+## v0.3, 2026-09-08 — Reproduction-Card converter; scenario F added; formula unchanged
+
+Founder ruling `BBL-2026-09-07-229` (Toledo overnight handoff, "Resistance ladder + Reproduction
+Ledger"; field-by-field spec: `design/RESISTANCE_LADDER_v0_1.md`) authorizes exactly one new
+capability for RET-Check: a converter, `ret_check.reproduction_card_to_row()`, that turns a
+Reproduction Card (methodology P22, schema owned by stream S1) into one RET-Check provenance row
+per the design doc's §4 mapping table. **This is an input path, not a formula change** — every
+`N_A`/`N_P`/`N_P^ind`/cycle/interruption/RET-RISK value pre-registered above for scenarios A–E and
+the self-application case is unchanged by this addendum, exactly as the 2026-09-08 correction note
+and the v0.2 codes-only note both state for their own changes.
+
+**Mapping (verbatim from the design doc, restated here for this document's own binding force):**
+
+| Card shape | Emitted row | `record_type` | `root_independent` |
+|---|---|---|---|
+| `oracle.kind ∈ {published_value, independent_implementation, public_dataset}` | one row, `agent = card.id`, `parent = "-"`, `source_root = oracle.source` (+`version`) | `world_record` | `true` unconditionally (an INPUT DECLARATION, same disclaimer this document already carries for every `root_independent` value) |
+| `oracle.kind == "human_review"` | one row, `agent = lineage.run_by` (or an explicit reviewer override), `source_root` = the same identity | `review` | `true` only if the reviewer's `independence_class ≥ I2` (`methodology/P06_independent_check.md`'s I0–I5 ladder) — else `reproduction_card_to_row()` **refuses** (raises, no row emitted), never silently marks the row independent |
+| `oracle.kind == "coq_kernel"` | **refused** — raises with: "Coq closure is machine-side resistance (R2); run `glosa score` for that rung, not `glosa ret check`." | — | — |
+
+**Why `coq_kernel` never enters RET-Check.** A Coq kernel accepting a proof term checks internal
+consistency of a finite formal model, never a world-side consequence (`P19`'s own disclaimer,
+restated in `design/RESISTANCE_LADDER_v0_1.md` §1/§4). Feeding it into `N_P^ind` would let a
+purely formal, no-world-contact result read as the same kind of resistance as an independent human
+review or a published measurement — the exact collapse the resistance ladder's own §0 design
+principle forbids. R2 stays its own row in the resistance ladder's `glosa score` table, always;
+`reproduction_card_to_row()` enforces this mechanically (a raised exception), not just by
+documentation.
+
+### F — Reproduction interruption (`cases/ret/F_reproduction_card.json`, authored by stream S2)
+
+Scenario A's Mirror rows (5 agents, 1 shared non-independent root, a return-to-origin cycle),
+renamed onto claim `f-reproduction-claim`, plus **one** additional `world_record` row emitted by
+`reproduction_card_to_row()` from a Reproduction-Card test fixture representing Card 1
+(`design/RESISTANCE_LADDER_v0_1.md` §6: Toledo `EQ-068`, `oracle.kind: published_value`, source
+Particle Data Group *Review of Particle Physics*). The fixture's own numeric content (218.005 GeV
+vs. PDG 125.20 GeV, 74.13% error) is copied verbatim from that design section's own quote of
+`genesis_root.json`'s already-disclosed statement — this scenario tests the CONVERTER, not a fresh
+execution of Card 1 itself; the fixture's `result.status` is left `PENDING` on purpose (stream S4
+owns the actual executed card and its PASS/FAIL verdict, `cases/repro/EQ-068_higgs_pdg.json`).
+
+**Expected (declared before the converter code existed, verified by the same command run recorded
+in `tests/test_ret_check.py::TestScenarioF` and `TestReproductionCardConverter`):**
+
+- `N_A = 5` (unchanged from scenario A — the new row is `world_record`, not `endorsement`).
+- `N_P` rises from scenario A's `1` to **`2`** (the converted row's own root,
+  "Particle Data Group, Review of Particle Physics", is new).
+- `N_P^ind` rises from scenario A's `0` to **`1`** (the converted row's root is independent by
+  construction — external-oracle kinds are `root_independent: true` unconditionally, per the
+  mapping table above).
+- Cycle detected: unchanged (`true`, same 5-agent mirror loop as scenario A) — the converted row's
+  `parent = "-"` adds no edge.
+- External interruption: **now present** (`false` in scenario A, `true` in scenario F) — the
+  converted row's own ancestry (empty, since `parent = "-"`) does not intersect the mirror cycle.
+- **RET RISK flips `HIGH` (scenario A, rule 3) → `LOW` (scenario F, rule 2)** — "an external
+  interruption is present and N_P^ind(1) >= 1" — the same rule-2 mechanism scenarios C and E
+  already exercise via hand-authored rows, now reached through the v0.3 converter instead.
+
+**This is a converter test, not a formula retune.** No rule in the RET RISK formula changed to
+produce this result — scenario F simply supplies a `world_record` row through a new input path
+into the identical `analyze_claim()` that has scored scenarios A–E and the self-application case
+unchanged since v0.1.
+
 ## Tier
 
 Dr — specified from the founder's verbatim order (`BBL-2026-09-07-223`) and the manuscript's own

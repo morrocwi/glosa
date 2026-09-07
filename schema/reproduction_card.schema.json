@@ -1,0 +1,130 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://glosa.example/schema/reproduction_card.schema.json",
+  "title": "glosa reproduction card",
+  "description": "tier: Dr (specified from founder ruling BBL-2026-09-07-229 and design/RESISTANCE_LADDER_v0_1.md §2; independently unreviewed). Methodology home P22_reproduction_ledger.md. One card = one re-runnable, hash-frozen check of one claim against a declared oracle -- the file that HOLDS R3/R4/R6 of the Resistance Ladder (P23_resistance_ladder.md) for a reader other than the maker. Field shapes are styled like review_report.schema.json and core_epistemic_structure.schema.json (both read directly while this file was drafted). Namespace https://glosa.example/ is a placeholder, matching every other schema in this directory.",
+  "type": "object",
+  "required": ["id", "toledo_codes", "claim", "preregistered_prediction", "oracle", "environment", "run", "result", "lineage"],
+  "additionalProperties": true,
+  "properties": {
+    "id": {
+      "description": "e.g. REPRO-2026-09-08-0001 -- same numbering convention as GLOSA-CC-<date>-<nnnn> elsewhere in this CLI.",
+      "type": "string",
+      "minLength": 1
+    },
+    "toledo_codes": {
+      "description": "Toledo codes this card backs (P19 order: the equation must already be registered in Toledo before a card cites it). MAY be empty only when status: \"pending_toledo_code\" is also set -- never populated by inventing a code (kernel-checked, not expressible here).",
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 }
+    },
+    "status": {
+      "description": "Optional. The single legal value that licenses an empty toledo_codes[] -- absent/other values mean toledo_codes[] must be non-empty (kernel-checked).",
+      "enum": ["pending_toledo_code"]
+    },
+    "claim": {
+      "description": "Free text, or a claim_card.claim_id reference. What is being tested.",
+      "type": "string",
+      "minLength": 1
+    },
+    "preregistered_prediction": {
+      "description": "Written BEFORE run/result exist (glosa repro new writes this block and run: null together; repro run refuses to touch this block once written). tolerance is a human-readable STRING, never a bare number, so it stays exact and is parsed mechanically by scripts/repro_check.py per oracle.kind, never re-interpreted loosely.",
+      "type": "object",
+      "required": ["statement", "tolerance", "declared_at"],
+      "additionalProperties": true,
+      "properties": {
+        "statement": { "type": "string", "minLength": 1 },
+        "tolerance": { "type": "string", "minLength": 1 },
+        "declared_at": { "type": "string", "minLength": 1 }
+      }
+    },
+    "oracle": {
+      "description": "kind has exactly five values and no 'none' (P22's own rationale: even an R3-only card names the closest comparison target). source/doi_or_url/version are pinned once known -- null only pre-run, never left null once result is filled for an external-oracle kind (kernel-checked: schema alone cannot express 'null iff result is still PENDING').",
+      "type": "object",
+      "required": ["kind", "source"],
+      "additionalProperties": true,
+      "properties": {
+        "kind": {
+          "enum": ["published_value", "independent_implementation", "public_dataset", "coq_kernel", "human_review"]
+        },
+        "source": { "type": "string", "minLength": 1 },
+        "doi_or_url": { "type": ["string", "null"] },
+        "version": { "type": ["string", "null"] }
+      }
+    },
+    "environment": {
+      "description": "python: the pinned interpreter version string used for run.command. packages: {name: version}, EMPTY for the runner process itself (stdlib only, matching scripts/ret_check.py's own no-third-party-import self-test) -- a non-empty entry names a package used ONLY inside the card's own declared oracle computation, run in a separate declared subprocess, never imported by scripts/repro_check.py's own driver. mpmath/numpy are the two named exceptions this repository accepts; any other name is a schema violation here (schema enforces the key allowlist; scripts/repro_check.py never imports either).",
+      "type": "object",
+      "required": ["python", "packages"],
+      "additionalProperties": true,
+      "properties": {
+        "python": { "type": "string", "minLength": 1 },
+        "packages": {
+          "type": "object",
+          "additionalProperties": false,
+          "propertyNames": { "enum": ["mpmath", "numpy"] },
+          "patternProperties": {
+            "^(mpmath|numpy)$": { "type": "string", "minLength": 1 }
+          }
+        }
+      }
+    },
+    "run": {
+      "description": "null before execution. Once filled, immutable (glosa repro run refuses to overwrite a filled run{} -- re-checking it is glosa repro verify's job). ai_at_runtime is ALWAYS the literal 0, never a free integer -- the founder's own 'AI = 0 at runtime' phrase (P21), reused verbatim here. input_hash/output_hash: SHA-256 of the declared input/output file(s), computed by scripts/repro_check.py, never typed by hand.",
+      "oneOf": [
+        { "type": "null" },
+        {
+          "type": "object",
+          "required": ["command", "input_hash", "output_hash", "ai_at_runtime", "date"],
+          "additionalProperties": true,
+          "properties": {
+            "command": { "type": "string", "minLength": 1 },
+            "input_hash": { "type": ["string", "null"] },
+            "output_hash": { "type": ["string", "null"] },
+            "ai_at_runtime": {
+              "description": "MUST be the literal integer 0 -- a card asserting anything else is not a Reproduction Card under this scheme.",
+              "const": 0
+            },
+            "date": { "type": "string", "minLength": 1 }
+          }
+        }
+      ]
+    },
+    "result": {
+      "description": "PENDING is the only legal status before run exists (kernel-checked: schema alone cannot see run{} from inside this sibling object) -- matching the 'None is itself epistemic information' convention P20 already uses for X_p^int. PASS/FAIL/ERROR all legally hold R3 (the run happened); only PASS/FAIL hold R4 (an oracle comparison was actually completed, whichever way it came out -- P0 design principle: a disclosed FAIL is exactly as strong evidence of R4/R6 as a PASS).",
+      "type": "object",
+      "required": ["status"],
+      "additionalProperties": true,
+      "properties": {
+        "status": { "enum": ["PASS", "FAIL", "ERROR", "PENDING"] },
+        "observed": {},
+        "deviation": {}
+      }
+    },
+    "lineage": {
+      "description": "run_by: identity string. ces: the P20 Core Epistemic Structure block, scoped to WHO RAN THIS SPECIFIC REPRODUCTION -- one-fact-one-home: the paper/claim this card backs carries its own, separate, paper-level CES block; this one is never a restatement of that one.",
+      "type": "object",
+      "required": ["run_by", "ces"],
+      "additionalProperties": true,
+      "properties": {
+        "run_by": { "type": "string", "minLength": 1 },
+        "ces": { "$ref": "core_epistemic_structure.schema.json" }
+      }
+    },
+    "notes": {
+      "description": "Free text. Carries the AOWC-qualification note for R6 (P23 §1; a card's notes containing the case-insensitive substring 'AOWC-qualifying' is read by kernel.aowc_gate_check as an explicit maker claim -- still gated by the mechanical conditions, never taken alone) and any retrospective-formalisation disclosure.",
+      "type": "string"
+    }
+  },
+  "allOf": [
+    {
+      "description": "toledo_codes[] may be empty ONLY when status is pending_toledo_code (P22's own 'never populated by inventing a code' rule, enforced structurally where JSON Schema can express it; the reverse direction -- a non-empty toledo_codes[] with status still pending_toledo_code -- is legal, e.g. a code assigned but not yet re-confirmed, so this is a one-way implication, not a biconditional).",
+      "if": {
+        "properties": { "toledo_codes": { "type": "array", "minItems": 0, "maxItems": 0 } }
+      },
+      "then": {
+        "properties": { "status": { "const": "pending_toledo_code" } },
+        "required": ["status"]
+      }
+    }
+  ]
+}

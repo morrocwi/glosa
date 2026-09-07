@@ -1,0 +1,42 @@
+{
+  "_fail_reason": "run.ai_at_runtime is 1, not the literal 0 -- P21/P22's own 'AI = 0 at runtime' phrase, reused verbatim; schema/reproduction_card.schema.json's run.ai_at_runtime is a const:0.",
+  "$schema": "reproduction_card.schema.json",
+  "id": "REPRO-FAIL-0001",
+  "toledo_codes": ["EQ-045/H.99.v1"],
+  "claim": "dim(u(1)) + dim(su(2)) + dim(su(3)) = 12",
+  "preregistered_prediction": {
+    "statement": "a from-scratch stdlib computation equals 12.",
+    "tolerance": "exact integer match, 0 discrepancy",
+    "declared_at": "2026-09-08T09:00:00+00:00"
+  },
+  "oracle": {
+    "kind": "independent_implementation",
+    "source": "from-scratch stdlib computation",
+    "doi_or_url": null,
+    "version": "repro_check.py v0.1"
+  },
+  "environment": {
+    "python": "3.11.0",
+    "packages": {}
+  },
+  "run": {
+    "command": "python3 -c \"print(1+3+8)\"",
+    "input_hash": null,
+    "output_hash": "b2f5ff47436671b6e533d8dc3614845d",
+    "ai_at_runtime": 1,
+    "date": "2026-09-08T09:05:00+00:00"
+  },
+  "result": {
+    "status": "PASS",
+    "observed": 12,
+    "deviation": 0
+  },
+  "lineage": {
+    "run_by": "human:example-operator",
+    "ces": {
+      "respondent": "example-operator",
+      "interactional": "None",
+      "ai_models": "None"
+    }
+  }
+}

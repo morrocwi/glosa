@@ -126,6 +126,36 @@ repository was authored with that limit in mind, not discovered by the tool itse
 - Do not add a special-case exemption so the self-application case reads safe.
 - Do not call the tool's own report a certification — it is a readout of the rows it was given.
 
+## v0.3 addendum (2026-09-08, founder ruling `BBL-2026-09-07-229`)
+
+`design/RESISTANCE_LADDER_v0_1.md` (the Resistance Ladder + Reproduction Ledger spec, itself
+narrated against this card) adds exactly one capability to `scripts/ret_check.py`: a converter,
+`reproduction_card_to_row(card, claim, *, reviewer_identity=None, independence_class=None)`, that
+turns a Reproduction Card (methodology `P22_reproduction_ledger.md`, owned by stream S1) into one
+provenance row this card's own `run()`/`analyze_claim()` then processes exactly like any
+hand-authored row. **The RET RISK formula, `analyze_claim()`, `_find_cycle()`, and
+`_external_interruption()` are unchanged** — this is a new input path, never a rule change,
+matching this card's own "declare pass/fail before writing the code" discipline generalized to
+every new capability, not only the original v0.1 build.
+
+The converter's mapping and a full worked case (scenario F, `cases/ret/F_reproduction_card.json`)
+are pre-registered in `cases/ret/PREREGISTRATION_v0_1.md`'s own v0.3 addendum — read that document
+for the exact expected values, not this summary. In one line: an external-oracle Reproduction
+Card (`published_value`/`independent_implementation`/`public_dataset`) becomes a `world_record`
+row (`root_independent: true` unconditionally — the design doc's own "external oracle = external
+interruption" rule); a `human_review`-kind card becomes a `review` row only when a linked
+independence class is `≥ I2` (`P6`'s ladder), else the conversion is refused; a `coq_kernel`-kind
+card is **always** refused — Coq closure is machine-side resistance (rung R2 of the resistance
+ladder), and mixing it into `N_P^ind` would blend machine-side and world-side resistance into one
+number, exactly what the resistance ladder's own design principle forbids (its own §0: "the score
+is a SET of rungs held ... never a single number that hides a missing rung"). `glosa score`
+(`P23_resistance_ladder.md`, stream S1) is where R2 lives; this card's `N_P^ind` is where R3–R6
+external resistance lives, and the two never merge.
+
+`tests/test_ret_check.py::TestReproductionCardConverter` and `::TestScenarioF` (stream S2) give
+this addendum its own `finite_diagnostic` grounding — run them and read the output, the same
+standing rule this card already states for the v0.1/v0.2 quantities.
+
 ## Tier
 
 Dr — specified from the founder's verbatim order and the manuscript's own §13–21/§25–30;

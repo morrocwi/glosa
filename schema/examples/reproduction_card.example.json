@@ -1,0 +1,42 @@
+{
+  "$schema": "reproduction_card.schema.json",
+  "id": "REPRO-EXAMPLE-0001",
+  "toledo_codes": ["EQ-045/H.99.v1"],
+  "claim": "dim(u(1)) + dim(su(2)) + dim(su(3)) = 12 (worked-example companion to Card 1's EQ-068)",
+  "preregistered_prediction": {
+    "statement": "a from-scratch stdlib computation of dim(u(1)) + dim(su(2)) + dim(su(3)) equals 12.",
+    "tolerance": "exact integer match, 0 discrepancy",
+    "declared_at": "2026-09-08T09:00:00+00:00"
+  },
+  "oracle": {
+    "kind": "independent_implementation",
+    "source": "from-scratch stdlib computation of the three Lie-algebra dimensions",
+    "doi_or_url": "n/a -- from-scratch stdlib arithmetic, no external document to pin",
+    "version": "repro_check.py v0.1"
+  },
+  "environment": {
+    "python": "3.11.0",
+    "packages": {}
+  },
+  "run": {
+    "command": "python3 -c \"print(1+3+8)\"",
+    "input_hash": null,
+    "output_hash": "b2f5ff47436671b6e533d8dc3614845d",
+    "ai_at_runtime": 0,
+    "date": "2026-09-08T09:05:00+00:00"
+  },
+  "result": {
+    "status": "PASS",
+    "observed": 12,
+    "deviation": 0
+  },
+  "lineage": {
+    "run_by": "human:example-operator",
+    "ces": {
+      "respondent": "example-operator -- ran the command shown in run.command",
+      "interactional": "None",
+      "ai_models": "None"
+    }
+  },
+  "notes": "worked example only, for schema/self-test purposes -- not one of the founder-ruling first cards (design/RESISTANCE_LADDER_v0_1.md Section 6), which are S4's own artifacts under cases/repro/."
+}

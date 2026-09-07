@@ -1,0 +1,49 @@
+{
+  "$schema": "reproduction_card.schema.json",
+  "id": "REPRO-2026-09-08-0002",
+  "toledo_codes": ["EQ-045"],
+  "claim": "Toledo EQ-045: gauge algebra dim(u(1))+dim(su(2))+dim(su(3))=12",
+  "preregistered_prediction": {
+    "statement": "a from-scratch stdlib computation of dim(u(1)) + dim(su(2)) + dim(su(3)), using the general closed-form formulas dim(u(n))=n^2 and dim(su(n))=n^2-1 with n=1,2,3, equals 12.",
+    "tolerance": "exact integer match, 0 discrepancy",
+    "declared_at": "2026-09-07T11:47:09+00:00"
+  },
+  "oracle": {
+    "kind": "independent_implementation",
+    "source": "from-scratch stdlib computation of the three Lie-algebra dimensions via the standard closed-form formulas dim(u(n))=n^2, dim(su(n))=n^2-1 (general mathematical results, not derived from or read out of this repository's own construction)",
+    "doi_or_url": "n/a -- from-scratch stdlib arithmetic from a standard closed-form formula, no external document to pin",
+    "version": "cases/repro/run_EQ-045_gauge_dim.py, sha256:d420780085860ee736eb30013ebc660d08255ab8368b1668f9b2b04c6e739225"
+  },
+  "environment": {
+    "python": "3.13.13",
+    "packages": {}
+  },
+  "run": {
+    "command": "python3 cases/repro/run_EQ-045_gauge_dim.py",
+    "input_hash": null,
+    "output_hash": "bdc6e9a3db9440596f0c481a62450a0871da4ff0d20e9f2ba080cc2571eaeba7",
+    "ai_at_runtime": 0,
+    "date": "2026-09-07T12:01:38+00:00"
+  },
+  "result": {
+    "status": "PASS",
+    "observed": {
+      "dim_u1": 1,
+      "dim_su2": 3,
+      "dim_su3": 8,
+      "dim_total": 12
+    },
+    "deviation": 0
+  },
+  "lineage": {
+    "run_by": "S4 builder stream (glosa repo, ANSE.ASIA workspace), executing design/RESISTANCE_LADDER_v0_1.md Section 6 Card 1's own pre-registration under founder ruling BBL-2026-09-07-229",
+    "ces": {
+      "respondent": "S4 builder session -- ran cases/repro/run_EQ-045_gauge_dim.py (the command shown in run.command) and wrote this card's statement/tolerance; no lived-experience/standpoint judgment entered this pure-arithmetic reproduction",
+      "interactional": "None",
+      "ai_models": [
+        { "model": "AI assistant (session-local)", "role": "wrote cases/repro/run_EQ-045_gauge_dim.py, executed the command shown in run.command, computed the SHA-256 hash, and authored this card's JSON -- no vendor/model name per glosa AGENTS.md rule 9 (no explicit founder permission granted for this artifact)" }
+      ]
+    }
+  },
+  "notes": "Positive-control companion to this card's own sibling EQ-068_higgs_pdg.json (design/RESISTANCE_LADDER_v0_1.md §6 Card 1): pairs a disclosed FAIL (EQ-068) with an expected, and actually observed, PASS -- so the first Reproduction Ledger batch shows both outcomes are genuinely possible under this Ladder, not that R4/R6 are rigged to always fail or always pass (design doc §1's own non-tautology requirement). This card is a genuinely independent check: it never reads EQ-045's own '1+3+8=12' statement text or any Genesis/Toledo file, computing the three dimensions from the general Lie-algebra formulas alone and comparing the sum to 12 as the actual test."
+}

@@ -3,12 +3,22 @@
 tier: finite_diagnostic (tests executed via `python3 -m pytest -q tests`, run from the glosa
 repo root).
 
-Covers RET-Check v0.2 (`scripts/ret_check.py`; `cases/ret/PREREGISTRATION_v0_1.md`;
+Covers RET-Check v0.3 (`scripts/ret_check.py`; `cases/ret/PREREGISTRATION_v0_1.md`;
 `methodology/P21_ret_check.md`): each pre-registered scenario A-E and the self-application case
 asserts the EXACT output declared in the preregistration before the code existed, plus a
 JSON-input test, a CSV-input test, an invalid-input (exit 2) test, and a standard-library-only /
 no-network guard (this module must never import anything beyond the Python standard library, and
 must never open a socket).
+
+v0.3 additions (`design/RESISTANCE_LADDER_v0_1.md` sec 4, founder ruling `BBL-2026-09-07-229`):
+`TestReproductionCardConverter` exercises `ret_check.reproduction_card_to_row()` directly against
+representative Reproduction Card shapes (published_value / independent_implementation /
+public_dataset / human_review / coq_kernel / unrecognized) -- this is a converter unit test, never
+a re-tuning of the RET RISK formula, which every class above this one still exercises unchanged.
+`TestScenarioF` runs the pre-registered scenario F case (`cases/ret/F_reproduction_card.json`:
+scenario A's Mirror rows plus one `world_record` row emitted from the converter) and asserts the
+exact preregistered delta over scenario A: N_P +1, N_P^ind +1, an external interruption now
+present, RET RISK LOW via rule 2.
 """
 
 import csv
@@ -240,6 +250,201 @@ class TestInputFormats(unittest.TestCase):
     def test_cli_main_exit_code_0_on_valid_input(self):
         exit_code = ret_check.main([str(CASES_DIR / "B_independent.json")])
         self.assertEqual(exit_code, 0)
+
+
+class TestReproductionCardConverter(unittest.TestCase):
+    """v0.3: `ret_check.reproduction_card_to_row()` (design/RESISTANCE_LADDER_v0_1.md sec 4's
+    mapping table). Fixture cards here mirror the shape `methodology/P22_reproduction_ledger.md`
+    / `schema/reproduction_card.schema.json` (stream S1) will declare -- these are converter-unit
+    fixtures, not stream S4's own filed cards under `cases/repro/`."""
+
+    PDG_CARD = {
+        "id": "REPRO-2026-09-08-0001-TESTFIXTURE",
+        "toledo_codes": ["EQ-068"],
+        "claim": "the fit Lambda_RD->GeV = 246/v_native predicts a Higgs boson mass of 218.005 GeV",
+        "preregistered_prediction": {
+            "statement": "the fit Lambda_RD->GeV = 246/v_native predicts a Higgs boson mass of 218.005 GeV",
+            "tolerance": "±5% of the PDG Review of Particle Physics value for the Higgs boson mass",
+            "declared_at": "2026-09-08T00:00:00Z",
+        },
+        "oracle": {
+            "kind": "published_value",
+            "source": "Particle Data Group, Review of Particle Physics",
+            "doi_or_url": None,
+            "version": None,
+        },
+        "environment": {"python": "3.x", "packages": {}},
+        "run": {
+            "command": "python3 scripts/repro_check.py cases/repro/EQ-068_higgs_pdg.json",
+            "input_hash": None, "output_hash": None, "ai_at_runtime": 0, "date": None,
+        },
+        "result": {"status": "PENDING", "observed": None, "deviation": None},
+        "lineage": {"run_by": "S4-test-fixture", "ces": None},
+        "notes": "Test fixture only (S2, tests/test_ret_check.py); not the authoritative S4 card.",
+    }
+
+    def test_published_value_becomes_world_record_row(self):
+        row = ret_check.reproduction_card_to_row(self.PDG_CARD, claim="f-reproduction-claim")
+        self.assertEqual(row["claim"], "f-reproduction-claim")
+        self.assertEqual(row["agent"], "REPRO-2026-09-08-0001-TESTFIXTURE")
+        self.assertEqual(row["parent"], "-")
+        self.assertEqual(row["source_root"], "Particle Data Group, Review of Particle Physics")
+        self.assertTrue(row["root_independent"], "an external-oracle kind is independent unconditionally (sec 4)")
+        self.assertEqual(row["record_type"], "world_record")
+
+    def test_independent_implementation_and_public_dataset_also_become_world_record(self):
+        for kind in ("independent_implementation", "public_dataset"):
+            card = json.loads(json.dumps(self.PDG_CARD))  # deep copy
+            card["oracle"]["kind"] = kind
+            row = ret_check.reproduction_card_to_row(card, claim="c")
+            self.assertEqual(row["record_type"], "world_record")
+            self.assertTrue(row["root_independent"])
+
+    def test_source_root_includes_pinned_version(self):
+        card = json.loads(json.dumps(self.PDG_CARD))
+        card["oracle"]["version"] = "2024"
+        row = ret_check.reproduction_card_to_row(card, claim="c")
+        self.assertEqual(row["source_root"], "Particle Data Group, Review of Particle Physics v2024")
+
+    def test_external_oracle_missing_source_refused(self):
+        card = json.loads(json.dumps(self.PDG_CARD))
+        card["oracle"]["source"] = None
+        with self.assertRaises(ret_check.RetCheckConversionError):
+            ret_check.reproduction_card_to_row(card, claim="c")
+
+    def test_human_review_with_i2_becomes_review_row(self):
+        card = {
+            "id": "REPRO-TEST-HR-1",
+            "oracle": {"kind": "human_review", "source": "reviewer read", "doi_or_url": None, "version": None},
+            "lineage": {"run_by": "reviewer-jane", "ces": None},
+        }
+        row = ret_check.reproduction_card_to_row(card, claim="c", independence_class="I2")
+        self.assertEqual(row["record_type"], "review")
+        self.assertEqual(row["agent"], "reviewer-jane")
+        self.assertEqual(row["source_root"], "reviewer-jane")
+        self.assertTrue(row["root_independent"])
+
+    def test_human_review_i3_i4_i5_also_pass(self):
+        card = {
+            "id": "REPRO-TEST-HR-2",
+            "oracle": {"kind": "human_review", "source": "x", "doi_or_url": None, "version": None},
+            "lineage": {"run_by": "reviewer-x", "ces": None},
+        }
+        for cls in ("I3", "I4", "I5"):
+            row = ret_check.reproduction_card_to_row(card, claim="c", independence_class=cls)
+            self.assertTrue(row["root_independent"])
+
+    def test_human_review_below_i2_refused(self):
+        card = {
+            "id": "REPRO-TEST-HR-3",
+            "oracle": {"kind": "human_review", "source": "x", "doi_or_url": None, "version": None},
+            "lineage": {"run_by": "reviewer-y", "ces": None},
+        }
+        for cls in (None, "I0", "I1", "not-a-real-class"):
+            with self.assertRaises(
+                ret_check.RetCheckConversionError,
+                msg=f"independence_class={cls!r} must be refused, never silently marked independent",
+            ):
+                ret_check.reproduction_card_to_row(card, claim="c", independence_class=cls)
+
+    def test_human_review_reviewer_identity_override(self):
+        card = {
+            "id": "REPRO-TEST-HR-4",
+            "oracle": {"kind": "human_review", "source": "x", "doi_or_url": None, "version": None},
+            "lineage": {"run_by": "reviewer-z", "ces": None},
+        }
+        row = ret_check.reproduction_card_to_row(
+            card, claim="c", independence_class="I2", reviewer_identity="external-reviewer-override"
+        )
+        self.assertEqual(row["agent"], "external-reviewer-override")
+        self.assertEqual(row["source_root"], "external-reviewer-override")
+
+    def test_coq_kernel_always_refused_with_exact_message(self):
+        card = {"id": "REPRO-TEST-COQ", "oracle": {"kind": "coq_kernel", "source": "coqc", "doi_or_url": None, "version": None}}
+        with self.assertRaises(ret_check.RetCheckConversionError) as ctx:
+            ret_check.reproduction_card_to_row(card, claim="c")
+        self.assertEqual(str(ctx.exception), ret_check.COQ_KERNEL_REFUSAL_MESSAGE)
+
+    def test_coq_kernel_never_produces_a_row_regardless_of_other_fields(self):
+        # Even a coq_kernel card that also happens to carry a plausible external-oracle-shaped
+        # lineage must still be refused -- sec 4's rule has no override.
+        card = {
+            "id": "REPRO-TEST-COQ-2",
+            "oracle": {"kind": "coq_kernel", "source": "Particle Data Group", "doi_or_url": None, "version": "2024"},
+            "lineage": {"run_by": "someone", "ces": None},
+        }
+        with self.assertRaises(ret_check.RetCheckConversionError):
+            ret_check.reproduction_card_to_row(card, claim="c", independence_class="I5")
+
+    def test_unrecognized_oracle_kind_refused(self):
+        card = {"id": "REPRO-TEST-BAD", "oracle": {"kind": "not-a-real-kind", "source": "x", "doi_or_url": None, "version": None}}
+        with self.assertRaises(ret_check.RetCheckConversionError):
+            ret_check.reproduction_card_to_row(card, claim="c")
+
+    def test_converted_row_matches_f_scenario_fixture_row(self):
+        """The 7th row of cases/ret/F_reproduction_card.json is the same converter output this
+        test class exercises directly -- one computation, cited in two places, never duplicated
+        logic (P19/P0 one-fact-one-home)."""
+        row = ret_check.reproduction_card_to_row(self.PDG_CARD, claim="f-reproduction-claim")
+        f_rows = json.loads((CASES_DIR / "F_reproduction_card.json").read_text(encoding="utf-8"))
+        world_record_rows = [r for r in f_rows if r["record_type"] == "world_record"]
+        self.assertEqual(len(world_record_rows), 1)
+        filed = world_record_rows[0]
+        for key in ("claim", "agent", "parent", "source_root", "root_independent", "record_type"):
+            self.assertEqual(row[key], filed[key], key)
+
+
+class TestScenarioF(unittest.TestCase):
+    """F -- Reproduction interruption (`design/RESISTANCE_LADDER_v0_1.md` sec 4; preregistration
+    v0.3 addendum): scenario A's Mirror rows plus one `world_record` row emitted from a
+    Reproduction Card via `reproduction_card_to_row()`. Expected delta over scenario A: N_P rises
+    by exactly one root, N_P^ind rises by exactly one (the card's oracle is independent by
+    construction), an external interruption is now present, and RET RISK flips HIGH -> LOW via
+    rule 2 -- the same pattern scenario C/E already exercise, now reached through the v0.3
+    converter path instead of a hand-authored row."""
+
+    def test_f_reproduction_card_flips_risk_to_low(self):
+        mirror = ret_check.run(CASES_DIR / "A_mirror.json")
+        a = _claim(mirror, "a-mirror-claim")
+
+        result = ret_check.run(CASES_DIR / "F_reproduction_card.json")
+        f = _claim(result, "f-reproduction-claim")
+
+        # Same endorsement structure and cycle as scenario A (rows 1-6 are A's rows, claim renamed).
+        self.assertEqual(f["n_a"], a["n_a"])
+        self.assertEqual(f["n_a"], 5)
+        self.assertTrue(f["cycle_detected"])
+        self.assertEqual(f["cycle_detected"], a["cycle_detected"])
+
+        # The one converter-emitted row adds exactly one root, and that root is independent.
+        self.assertEqual(f["n_p"], a["n_p"] + 1)
+        self.assertEqual(f["n_p"], 2)
+        self.assertEqual(f["n_p_ind"], a["n_p_ind"] + 1)
+        self.assertEqual(f["n_p_ind"], 1)
+
+        # A had no external interruption; F does, from the converted row alone.
+        self.assertFalse(a["external_interruption_present"])
+        self.assertTrue(f["external_interruption_present"])
+        self.assertEqual(len(f["external_interruption_rows"]), 1)
+        self.assertEqual(f["external_interruption_rows"][0]["record_type"], "world_record")
+
+        # A is HIGH (rule 3); F flips to LOW via rule 2 -- same mechanism as C/E, new input path.
+        self.assertEqual(a["risk"], "HIGH")
+        self.assertEqual(f["risk"], "LOW")
+        self.assertIn("rule 2", f["risk_reason"])
+
+    def test_f_row_is_reproducible_from_the_converter(self):
+        """Re-derive the case file's own converted row from the fixture card and require an
+        EXACT match -- the filed row is not a hand-typed guess at what the converter would emit."""
+        card = TestReproductionCardConverter.PDG_CARD
+        recomputed = ret_check.reproduction_card_to_row(card, claim="f-reproduction-claim")
+        filed_rows = json.loads((CASES_DIR / "F_reproduction_card.json").read_text(encoding="utf-8"))
+        filed = [r for r in filed_rows if r["record_type"] == "world_record"][0]
+        self.assertEqual(recomputed["agent"], filed["agent"])
+        self.assertEqual(recomputed["source_root"], filed["source_root"])
+        self.assertEqual(recomputed["root_independent"], filed["root_independent"])
+        self.assertEqual(recomputed["record_type"], filed["record_type"])
+        self.assertEqual(recomputed["parent"], filed["parent"])
 
 
 class TestNoNetworkNoThirdParty(unittest.TestCase):

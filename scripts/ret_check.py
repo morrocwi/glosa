@@ -1,9 +1,18 @@
 #!/usr/bin/env python3
-"""scripts/ret_check.py -- RET-Check v0.2: an AI-independent recursive provenance auditor.
+"""scripts/ret_check.py -- RET-Check v0.3: an AI-independent recursive provenance auditor.
 
 tier: Dr (specified from `cases/ret/PREREGISTRATION_v0_1.md` and the theory source below;
 independently unreviewed; will read `finite_diagnostic` once `tests/test_ret_check.py` has run --
 see `methodology/P21_ret_check.md`).
+
+v0.3 (2026-09-08, founder ruling `BBL-2026-09-07-229`, `design/RESISTANCE_LADDER_v0_1.md` sec 4)
+adds exactly ONE capability on top of v0.2: `reproduction_card_to_row()` below, a converter from a
+Reproduction Card (methodology P22, owned by stream S1) into one RET-Check provenance row -- the
+RET RISK formula, `analyze_claim()`, `_find_cycle()`, and `_external_interruption()` are BYTE-FOR-
+BYTE UNCHANGED from v0.2 (`cases/ret/PREREGISTRATION_v0_1.md`'s own standing rule: never retune the
+formula to make a case pass; this is a new INPUT PATH into the same graph algorithm, never a rule
+change). See the converter's own docstring below and `cases/ret/PREREGISTRATION_v0_1.md`'s v0.3
+addendum (scenario F) for the one new preregistered case this adds.
 
 Founder order (verbatim, Blackbox Log `BBL-2026-09-07-223`): "RET-Check v0.1 -- AI-independent
 recursive provenance auditor: โปรแกรมเล็ก Python standard library ไม่มี LLM (AI=0 ตอน runtime) ..."
@@ -142,6 +151,16 @@ class RetCheckInputError(ValueError):
     """Raised when input rows fail the shape/type checks below (maps to exit code 2)."""
 
 
+class RetCheckConversionError(ValueError):
+    """v0.3. Raised by `reproduction_card_to_row()` when a Reproduction Card's `oracle.kind` must
+    be REFUSED per `design/RESISTANCE_LADDER_v0_1.md` sec 4's mapping table -- never silently
+    converted into a provenance row. Distinct from `RetCheckInputError` (a structural input-shape
+    problem at THIS module's own CLI boundary, exit code 2): a conversion refusal is a deliberate
+    design-rule refusal raised for the CALLER (`glosa repro to-ret`, owned by stream S1) to map to
+    exit code 1, per the design doc's own "exits 1 with: ..." wording -- this module never exits
+    the process itself for this error, it only raises."""
+
+
 # --------------------------------------------------------------------------------------------
 # Loading and validating rows
 # --------------------------------------------------------------------------------------------
@@ -245,6 +264,152 @@ def group_by_claim(rows: list[dict]) -> "dict[str, list[dict]]":
     for row in rows:
         grouped.setdefault(row["claim"], []).append(row)
     return grouped
+
+
+# --------------------------------------------------------------------------------------------
+# v0.3 converter: Reproduction Card -> one RET-Check provenance row
+# (design/RESISTANCE_LADDER_v0_1.md sec 4, "external oracle = external interruption")
+# --------------------------------------------------------------------------------------------
+
+INDEPENDENCE_CLASS_LADDER = ("I0", "I1", "I2", "I3", "I4", "I5")  # P6's ladder, methodology/P06_independent_check.md
+
+EXTERNAL_ORACLE_KINDS = ("published_value", "independent_implementation", "public_dataset")
+
+COQ_KERNEL_REFUSAL_MESSAGE = (
+    "Coq closure is machine-side resistance (R2); run `glosa score` for that rung, "
+    "not `glosa ret check`."
+)
+
+
+def _independence_at_least(independence_class: "str | None", floor: str) -> bool:
+    """True iff `independence_class` is on P6's I0..I5 ladder and at or above `floor`. An
+    unrecognized or missing class is treated as NOT meeting any floor (fail-closed -- see
+    reproduction_card_to_row()'s human_review branch, which must refuse rather than guess)."""
+    if independence_class not in INDEPENDENCE_CLASS_LADDER:
+        return False
+    return INDEPENDENCE_CLASS_LADDER.index(independence_class) >= INDEPENDENCE_CLASS_LADDER.index(floor)
+
+
+def reproduction_card_to_row(
+    card: dict,
+    claim: str,
+    *,
+    reviewer_identity: "str | None" = None,
+    independence_class: "str | None" = None,
+) -> dict:
+    """v0.3. Convert ONE Reproduction Card (methodology P22, `schema/reproduction_card.schema.json`,
+    owned by stream S1) into exactly one RET-Check provenance row, per
+    `design/RESISTANCE_LADDER_v0_1.md` sec 4's mapping table. This is the ONLY new capability v0.3
+    adds -- `analyze_claim()`, `_find_cycle()`, `_external_interruption()`, and the RET RISK
+    formula above are byte-for-byte unchanged; a card converted through this function becomes a
+    row that `analyze_claim()` processes exactly like any hand-authored row in
+    `cases/ret/A_mirror.json` etc. -- one graph algorithm, two input paths, never a new rule.
+
+    Intended caller: `cli/glosa`'s `glosa repro to-ret` (owned by stream S1), which reads the card
+    file off disk, looks up an `independence_class` from a linked `review_report.yaml` when
+    `oracle.kind == "human_review"`, and appends/writes the returned row into a case file this
+    module's own `run()`/`analyze_claim()` then reads.
+
+    `claim` is the RET-Check claim id this row is being attached to -- NOT read from the card. A
+    Reproduction Card backs zero or more Toledo codes (`card["toledo_codes"]`), but WHICH
+    RET-Check claim it resists is a fact about how the caller is using it, supplied here
+    explicitly, never inferred.
+
+    Refuses (raises `RetCheckConversionError`, no row returned -- nothing is ever silently
+    downgraded to a weaker row instead) for:
+
+      - `card["oracle"]["kind"] == "coq_kernel"`: that resistance is machine-side (rung R2 of the
+        resistance ladder, design doc sec 1) -- `COQ_KERNEL_REFUSAL_MESSAGE` verbatim, sec 4's own
+        refusal text. Never converted into a RET-Check world/reviewer-side row: this is what keeps
+        R2's machine-side count and RET's `N_P^ind` world/reviewer-side count from ever blending
+        into one number (design doc sec 1, "machine-side vs. world-side, kept explicitly
+        separate").
+      - `card["oracle"]["kind"] == "human_review"` when `independence_class` is not `>= "I2"`
+        (`methodology/P06_independent_check.md`'s I0..I5 ladder) -- refused rather than silently
+        marked `root_independent = true` (design doc sec 4's own instruction: "else the row is
+        refused ... never silently marked independent").
+      - any other/missing `oracle.kind`, or a missing `oracle.source` for an external-oracle kind:
+        the card is malformed for conversion purposes -- refused with an explanation, never
+        guessed.
+
+    Mapping (design doc sec 4 table, "external oracle = external interruption"):
+
+      published_value / independent_implementation / public_dataset
+          -> record_type "world_record", agent = card["id"], parent = "-",
+             source_root = "<oracle.source> v<oracle.version>" (bare source if no version is
+             pinned yet), root_independent = True unconditionally -- "the oracle is, by
+             construction, outside the claim's own authoring network" (design doc sec 4).
+      human_review (independence_class >= I2)
+          -> record_type "review", agent = reviewer_identity or card["lineage"]["run_by"],
+             source_root = the same reviewer identity, root_independent = True.
+
+    The returned dict is passed through this module's own `_validate_row()` before being handed
+    back, so a converted row and a hand-authored row are validated by exactly the same code path
+    (one fact in one home: row-shape validation lives in `_validate_row()` alone)."""
+    oracle = card.get("oracle") or {}
+    kind = oracle.get("kind")
+    card_id = card.get("id", "<no-id>")
+
+    if kind == "coq_kernel":
+        raise RetCheckConversionError(COQ_KERNEL_REFUSAL_MESSAGE)
+
+    if kind in EXTERNAL_ORACLE_KINDS:
+        source = oracle.get("source")
+        if not source:
+            raise RetCheckConversionError(
+                f"reproduction_card {card_id!r}: oracle.kind {kind!r} requires oracle.source to "
+                "be named before it can become a RET-Check provenance row."
+            )
+        version = oracle.get("version")
+        source_root = f"{source} v{version}" if version else source
+        toledo_codes = card.get("toledo_codes") or []
+        evidence_ref = f"reproduction_card:{card_id}" + (
+            f" toledo_codes={toledo_codes}" if toledo_codes else ""
+        )
+        raw = {
+            "claim": claim,
+            "agent": card_id,
+            "parent": "-",
+            "source_root": source_root,
+            "root_independent": True,
+            "record_type": "world_record",
+            "evidence_ref": evidence_ref,
+        }
+        return _validate_row(raw, row_index=-1)
+
+    if kind == "human_review":
+        if not _independence_at_least(independence_class, "I2"):
+            raise RetCheckConversionError(
+                f"reproduction_card {card_id!r}: oracle.kind == 'human_review' requires an "
+                "independence_class >= I2 (methodology/P06_independent_check.md's I0..I5 ladder) "
+                f"to be marked root_independent -- received {independence_class!r}. Refusing to "
+                "silently mark this row independent."
+            )
+        lineage = card.get("lineage") or {}
+        identity = reviewer_identity or lineage.get("run_by")
+        if not identity:
+            raise RetCheckConversionError(
+                f"reproduction_card {card_id!r}: oracle.kind == 'human_review' requires a "
+                "reviewer identity (reviewer_identity= argument, or lineage.run_by on the card) "
+                "to name the row's agent/source_root."
+            )
+        raw = {
+            "claim": claim,
+            "agent": identity,
+            "parent": "-",
+            "source_root": identity,
+            "root_independent": True,
+            "record_type": "review",
+            "evidence_ref": (
+                f"reproduction_card:{card_id} (human_review, independence_class={independence_class})"
+            ),
+        }
+        return _validate_row(raw, row_index=-1)
+
+    raise RetCheckConversionError(
+        f"reproduction_card {card_id!r}: unrecognized oracle.kind {kind!r} -- expected one of "
+        f"{EXTERNAL_ORACLE_KINDS + ('human_review', 'coq_kernel')}."
+    )
 
 
 # --------------------------------------------------------------------------------------------
@@ -428,7 +593,7 @@ def render_report(result: dict) -> str:
     lines.append("=" * len("RET SELF-AUDIT"))
     lines.append(f"Claim: {result['claim']}")
     lines.append(
-        "Source: RET-Check v0.2 (scripts/ret_check.py; methodology/P21_ret_check.md; cites "
+        "Source: RET-Check v0.3 (scripts/ret_check.py; methodology/P21_ret_check.md; cites "
         "GENESIS FIRST v2.0 sections 13-21, 25-30)"
     )
     lines.append(DISCLAIMER_HEADER)
@@ -490,7 +655,7 @@ def run(path: "str | Path") -> dict:
 
 def main(argv=None) -> int:
     parser = argparse.ArgumentParser(
-        description="RET-Check v0.2 -- AI-independent recursive provenance auditor "
+        description="RET-Check v0.3 -- AI-independent recursive provenance auditor "
                      "(cases/ret/PREREGISTRATION_v0_1.md)."
     )
     parser.add_argument("path", help="a JSON or CSV file of provenance rows (see this file's own docstring for the row shape)")

@@ -122,3 +122,13 @@ built under.
 | Card | File | One-line rule |
 |---|---|---|
 | P21 | `P21_ret_check.md` | AI-independent (stdlib-only, no network, `AI=0` at runtime) tool over declared provenance rows: computes N_A (endorsing agents) vs. N_P (distinct provenance roots, regardless of declared independence) and N_P^ind (the subset declared independent), recursive cycles, external interruption, and a RET RISK label (LOW/MEDIUM/HIGH, computed from N_P^ind) by the rule pre-registered in `cases/ret/PREREGISTRATION_v0_1.md`, before any code existed. Run via `./cli/glosa ret check <case.json\|case.csv>` (or `scripts/ret_check.py <case>` directly). Implements `The_Recursive_Epistemic_Tunnel_GENESIS_FIRST_FULL_v2_0.md` §13–21/§25–30's own definitions; audits declared structure, never truth. |
+
+## P22, P23 — Resistance Ladder + Reproduction Ledger (founder ruling `BBL-2026-09-07-229`, 2026-09-08)
+
+| Card | File | One-line rule |
+|---|---|---|
+| P22 | `P22_reproduction_ledger.md` | A Reproduction Card (`schema/reproduction_card.schema.json`, `cases/repro/*.json`) is a hash-frozen, re-runnable check of one claim against one declared oracle, pre-registered BEFORE the run, `ai_at_runtime` always the literal `0`. `glosa repro new/run/verify/to-ret` (`cli/glosa`, driver `scripts/repro_check.py`) enforce the order: pre-register → run once, immutably → verify under a different identity (maker ≠ checker) → optionally feed one typed row into RET-Check (`P21`), refusing for `oracle.kind == "coq_kernel"` (machine-side resistance, never a world-side row). |
+| P23 | `P23_resistance_ladder.md` | The score is a SET of rungs held (R0 stated · R1 pre-registered falsifier/claim boundary · R2 Coq-closed · R3 reproducible/hash-frozen/AI=0 · R4 external oracle · R5 independent reviewer/interactional expert · R6 AOWC world record), each with an evidence-file pointer, never a single number. `glosa score <artifact>` (`--json` for the structured form) prints this table; there is no `--score`/scalar flag, on purpose — a disclosed FAIL still holds R3/R4/R6 (`P22`'s own design principle). |
+
+Design spec (field-by-field reference for both cards, styled the way `toledo/registry/SCHEMA.md`
+is the reference for `CANONICAL.json`): `design/RESISTANCE_LADDER_v0_1.md`.
