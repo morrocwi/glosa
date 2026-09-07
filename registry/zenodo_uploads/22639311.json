@@ -1,0 +1,11 @@
+{
+ "deposition_id": 22639311,
+ "founder_instructed_bypass": {
+  "instruction": "Founder 2026-09-07 (BBL-221): 'The_Recursive_Epistemic_Tunnel_GENESIS_FIRST_FULL_v2_0 เอาเข้าระบบ glosa ลงทะเบียนสมการ และจัดรูปเล่มตามธีมเขา zenodo เลย'; v2.1 uplift after glosa review (review PASS, diff review PASS); AI model names per BBL-214/215 pattern; BBL-167",
+  "logged_at": "2026-09-07T15:22:05"
+ },
+ "doi": "10.5281/zenodo.22639311",
+ "conceptdoi": "10.5281/zenodo.22639309",
+ "url": "https://zenodo.org/record/22639311",
+ "title": "The Recursive Epistemic Tunnel: A Readout-Genesis Derivation of Recursive Human–AI Closure, Collective Epistemic Hallucination, and World-Side Interruption (Journal Manuscript v2.1)"
+}

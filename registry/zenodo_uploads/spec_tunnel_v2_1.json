@@ -1,0 +1,42 @@
+{
+ "upload_type": "publication",
+ "publication_type": "preprint",
+ "language": "eng",
+ "file": "dist/tunnel/The_Recursive_Epistemic_Tunnel_v2_1.pdf",
+ "title": "The Recursive Epistemic Tunnel: A Readout-Genesis Derivation of Recursive Human–AI Closure, Collective Epistemic Hallucination, and World-Side Interruption (Journal Manuscript v2.1)",
+ "publication_date": "2026-09-07",
+ "version": "v2.1-2026-09-07",
+ "description_html": "<p><b>What this is.</b> A Genesis-first theory manuscript (Journal Manuscript v2.1, 7 September 2026) deriving, from the Readout Genesis root and the Toledo equation library, how a human, an AI model, further AI models and reviewers can repeatedly transform and return the same epistemic ancestry until the network shows high confidence, coherence and many apparent endorsements without a corresponding increase in independent provenance or world-side constraint — the recursive epistemic tunnel and collective epistemic hallucination as status inflation. It defines the recursive epistemic network, agent-level readout and readout of readout, recursive epistemic reflection and the epistemic mirror effect, provenance independence versus raw root count, candidate forgetting, the RET state vector, tunnel contraction versus evidence-driven convergence, Human Return after AI removal, historical invariance and record freezing, the AI-independent consequence requirement, AI-off world-closure (AOWC) and its gate conditions, stop rules, the economics of recursive validation, institutional RET, collisions with adjacent literatures (echo chambers, automation bias, sycophancy, multi-agent LLM consensus, correlated judges, Sybil resistance), eight falsifiable hypotheses and an experimental programme.</p><p><b>Equation provenance.</b> Every reused canonical object is cited by its Toledo identifier and every new equation (RET-N01–N23) is registered in Toledo with its assigned code (Toledo v1.4.0 → v1.5.0, concept DOI 10.5281/zenodo.22537318); the paper applies its own machinery to itself in a self-application audit, and an AI-independent auditor (RET-Check, glosa methodology, standard-library Python) reports the manuscript at RET-risk until independent world-side or reviewer-side resistance is added.</p><p><b>Version 2.1.</b> Uplift of v2.0 after independent glosa review: one Toledo tier statement corrected (Definition, not Dr), six internal programme references pinned to DOIs and versions, two appendix objects relabelled as related but not invoked, one restated object flagged as a reading, inline author–year markers added in Section 37, the Toledo codes of the new equations added to Appendix B. The Core Epistemic Registration names the AI models used and their roles by the author's decision; no AI system is an author or contributor. K0; hypotheses H1–H8 carry falsifiers.</p>",
+ "keywords": [
+  "recursive epistemic tunnel",
+  "collective epistemic hallucination",
+  "recursive epistemic reflection",
+  "readout genesis",
+  "readout condition",
+  "human-AI collaboration",
+  "multi-agent AI",
+  "epistemic provenance",
+  "world closure",
+  "AI-off validation",
+  "human return",
+  "epistemic resistance",
+  "Toledo",
+  "Core Epistemic Registration",
+  "Human-AI Readout Programme"
+ ],
+ "related": [
+  {
+   "identifier": "10.5281/zenodo.22308201",
+   "relation": "isPartOf"
+  },
+  {
+   "identifier": "10.5281/zenodo.22537318",
+   "relation": "references",
+   "resource_type": "software"
+  },
+  {
+   "identifier": "10.5281/zenodo.22638960",
+   "relation": "references"
+  }
+ ]
+}
