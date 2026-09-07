@@ -29,6 +29,13 @@
   },
   "blackbox_note_appendix_present": true,
   "blackbox_note_appendix_ref": "cases/worked-example-cat.md#blackbox-note-appendix",
+  "core_epistemic_structure": {
+    "respondent": "founder -- lived experience: owner of the observed cat and the worked example's problem; selections: which observation counted as the claim's evidence; interpretation: what the behaviour meant",
+    "interactional": "None",
+    "ai_models": [
+      { "model": "AI assistant (session-local)", "role": "drafting and mechanical schema/gate wiring" }
+    ]
+  },
   "k_state_declared": "K0",
   "status": "Pending Review",
   "disclaimers_emitted": [ { "id": "D-K-STATE" }, { "id": "D-BLACKBOX-NOTE" } ],

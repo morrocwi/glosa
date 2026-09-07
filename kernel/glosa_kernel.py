@@ -1611,6 +1611,204 @@ def mastery_gate_r8_status(gate):
     return "PASS", "PASS"
 
 
+# --------------------------------------------------------------------------------------------
+# Core Epistemic Structure (methodology/P20_core_epistemic_structure.md, founder ruling
+# 2026-09-07, Blackbox Log BBL-2026-09-07-216/217/218). Formal object
+# E_p = <X_p^exp, X_p^int, M_p^AI> -- three roles, never merged. This section is a structural/
+# lexical heuristic check (readout-not-truth): it reads the text or data AS text/data, it never
+# verifies the named people or models actually held the role claimed -- same limit as every other
+# kernel heuristic (see `_result`'s own HEURISTIC: prefix convention; every finding below carries it).
+# --------------------------------------------------------------------------------------------
+
+_CES_LABEL_PATTERNS = {
+    "respondent": re.compile(r"Core Respondent\s*/\s*Experience-Based Expert\s*:?\**\s*", re.I),
+    "interactional": re.compile(r"Interactional Expert\s*:?\**\s*", re.I),
+    "ai_models": re.compile(r"AI Model\(s\)\s*Used\s*:?\**\s*", re.I),
+}
+_CES_NONCOLLAPSE_MARK_RE = re.compile(r"≠|\\neq")
+_CES_DASH_RE = re.compile(r"—|--|\s-\s")
+_CES_AI_USED_ALONE_RE = re.compile(r"^\s*AI\s+was\s+used\.?\s*$", re.I)
+
+
+def _ces_strip_markup(s):
+    """Strip Markdown/LaTeX label punctuation ('**', '\\textbf{...}', '\\item[...]', trailing
+    colons/brackets) off the front and back of a line fragment, leaving the human-authored
+    content. Never touches interior characters."""
+    return s.strip().strip("*{}[]:>\\ \t").strip()
+
+
+def _ces_extract_label_content(line, pattern):
+    m = pattern.search(line)
+    if not m:
+        return None
+    return _ces_strip_markup(line[m.end():])
+
+
+def ces_check_text(text):
+    """Check a Markdown or LaTeX document's raw source text for the mandatory Core Epistemic
+    Structure block (methodology/P20_core_epistemic_structure.md; template
+    `templates/core_epistemic_structure.md`): the three labelled lines (Core Respondent /
+    Experience-Based Expert, Interactional Expert, AI Model(s) Used) plus the non-collapse line.
+    Returns a Result; `errors` are line-numbered ('line N: ...') findings, or an unnumbered
+    'HEURISTIC: ... not found' entry when a label is missing from the document entirely.
+    """
+    lines = text.splitlines()
+    found = {"respondent": None, "interactional": None, "ai_models": None}
+    noncollapse_line = None
+
+    for i, line in enumerate(lines, start=1):
+        for key, pattern in _CES_LABEL_PATTERNS.items():
+            if found[key] is None:
+                content = _ces_extract_label_content(line, pattern)
+                if content is not None:
+                    found[key] = (i, content)
+        if noncollapse_line is None and len(_CES_NONCOLLAPSE_MARK_RE.findall(line)) >= 2:
+            noncollapse_line = (i, line.strip())
+
+    errors = []
+
+    if found["respondent"] is None:
+        errors.append("HEURISTIC: Core Respondent / Experience-Based Expert line not found")
+    else:
+        ln, content = found["respondent"]
+        if not content:
+            errors.append(f"line {ln}: HEURISTIC: Core Respondent / Experience-Based Expert is empty")
+        elif not _CES_DASH_RE.search(content):
+            errors.append(
+                f"line {ln}: HEURISTIC: Core Respondent / Experience-Based Expert has no basis "
+                "(expected a 'name -- basis' separator, P20 X_p^exp)"
+            )
+
+    if found["interactional"] is None:
+        errors.append("HEURISTIC: Interactional Expert line not found")
+    else:
+        ln, content = found["interactional"]
+        if not content:
+            errors.append(f"line {ln}: HEURISTIC: Interactional Expert is empty (must be a name/role or exactly 'None')")
+
+    if found["ai_models"] is None:
+        errors.append("HEURISTIC: AI Model(s) Used line not found")
+    else:
+        ln, content = found["ai_models"]
+        if not content:
+            errors.append(f"line {ln}: HEURISTIC: AI Model(s) Used is empty (name each model and its role, or write 'None')")
+        elif _CES_AI_USED_ALONE_RE.match(content):
+            errors.append(
+                f"line {ln}: HEURISTIC: AI Model(s) Used says only 'AI was used' -- name each model "
+                "and its role, or write 'None' (P20 rule)"
+            )
+        elif content.strip().lower().rstrip(".") == "none":
+            pass
+        else:
+            entries = [e.strip() for e in content.split(";") if e.strip()]
+            if not any(_CES_DASH_RE.search(e) for e in entries):
+                errors.append(f"line {ln}: HEURISTIC: AI Model(s) Used has no 'Model -- role' entry (got: {content!r})")
+
+    if noncollapse_line is None:
+        errors.append(
+            "HEURISTIC: non-collapse line not found (expected 'Experience-Based Expertise ≠ "
+            "Interactional Expertise ≠ AI Model', or the LaTeX $\\neq$ form)"
+        )
+
+    return _result(ok=not errors, errors=errors)
+
+
+def validate_core_epistemic_structure(obj, allow_no_jsonschema=False):
+    """Validate a `core_epistemic_structure` object (schema/core_epistemic_structure.schema.json)
+    -- the same three roles as `ces_check_text`, expressed as data instead of prose. Returns a
+    Result. `allow_no_jsonschema` (MUST-4): see `_schema_validate_gated`'s docstring.
+    """
+    if not isinstance(obj, dict):
+        return _result(ok=False, errors=["validate_core_epistemic_structure: instance is not an object"])
+
+    errors, warnings, tier, _used_fallback = _schema_validate_gated(
+        obj, "core_epistemic_structure.schema.json", allow_no_jsonschema
+    )
+
+    respondent = obj.get("respondent")
+    if isinstance(respondent, str):
+        if not respondent.strip():
+            errors.append("core_epistemic_structure.respondent: empty")
+        elif not _CES_DASH_RE.search(respondent):
+            errors.append(
+                "core_epistemic_structure.respondent: HEURISTIC: no basis found (expected a "
+                "'name -- basis' separator, or the object form {name, basis})"
+            )
+    elif isinstance(respondent, dict):
+        if not (respondent.get("name") or "").strip():
+            errors.append("core_epistemic_structure.respondent.name: empty")
+        if not (respondent.get("basis") or "").strip():
+            errors.append("core_epistemic_structure.respondent.basis: empty")
+
+    interactional = obj.get("interactional")
+    if isinstance(interactional, str) and not interactional.strip():
+        errors.append("core_epistemic_structure.interactional: empty (must be a name/role or exactly 'None')")
+
+    ai_models = obj.get("ai_models")
+    if isinstance(ai_models, str):
+        if _CES_AI_USED_ALONE_RE.match(ai_models):
+            errors.append(
+                "core_epistemic_structure.ai_models: 'AI was used' alone is not a role disclosure "
+                "-- name each model and its role, or write 'None'"
+            )
+        elif ai_models.strip().lower().rstrip(".") != "none":
+            errors.append(f"core_epistemic_structure.ai_models: string value must be exactly 'None' (got {ai_models!r})")
+    elif isinstance(ai_models, list):
+        if not ai_models:
+            errors.append("core_epistemic_structure.ai_models: empty list -- name at least one model and its role, or use the string 'None'")
+        else:
+            for idx, entry in enumerate(ai_models):
+                if not isinstance(entry, dict) or not (entry.get("model") or "").strip() or not (entry.get("role") or "").strip():
+                    errors.append(f"core_epistemic_structure.ai_models[{idx}]: must be an object {{model, role}}, both non-empty")
+
+    return _result(ok=not errors, errors=errors, warnings=warnings, tier=tier)
+
+
+def ces_check_path(path):
+    """Dispatch one file to the right Core Epistemic Structure check: `.md`/`.tex`/`.txt`
+    (or any suffix not recognised as data) go through `ces_check_text`; `.json` goes through
+    `validate_core_epistemic_structure` after looking for a top-level `core_epistemic_structure`
+    key (or treating the whole document as one, if it already has that shape). `.yaml`/`.yml` is
+    refused here with a plain error naming the gap -- this module is stdlib-only by design
+    (module docstring) and does not import PyYAML; a caller with YAML support (cli/glosa,
+    scripts/check_core_epistemic_structure.py) should parse the file itself and call
+    `validate_core_epistemic_structure` directly instead of this dispatcher. Returns a Result
+    whose `errors` are prefixed with the path.
+    """
+    p = Path(path)
+    if not p.is_file():
+        return _result(ok=False, errors=[f"{path}: file not found"])
+    suffix = p.suffix.lower()
+
+    if suffix in (".yaml", ".yml"):
+        return _result(ok=False, errors=[
+            f"{path}: ces_check_path does not parse YAML (kernel is stdlib-only) -- parse this "
+            "file's YAML yourself and call validate_core_epistemic_structure(obj) on the "
+            "'core_epistemic_structure' object it contains"
+        ])
+
+    text = p.read_text(encoding="utf-8")
+
+    if suffix == ".json":
+        try:
+            data = json.loads(text)
+        except Exception as exc:  # pragma: no cover - exercised only on a malformed fixture
+            return _result(ok=False, errors=[f"{path}: could not parse as JSON: {exc}"])
+        if isinstance(data, dict) and "core_epistemic_structure" in data:
+            obj = data["core_epistemic_structure"]
+        elif isinstance(data, dict) and {"respondent", "interactional", "ai_models"} <= set(data.keys()):
+            obj = data
+        else:
+            return _result(ok=False, errors=[f"{path}: no 'core_epistemic_structure' object found (and the file is not itself shaped like one)"])
+        res = validate_core_epistemic_structure(obj)
+        res["errors"] = [f"{path}: {e}" for e in res["errors"]]
+        return res
+
+    res = ces_check_text(text)
+    res["errors"] = [f"{path}: {e}" for e in res["errors"]]
+    return res
+
+
 def validate_blackbox_note(note, allow_no_jsonschema=False):
     """Validate a blackbox_note payload (§2.3/§2.4, chair ruling A1). Returns a Result.
 
@@ -2584,6 +2782,25 @@ def gate_release(manifest, cards, reviews, citation_cards=None):
             "methodology/P17_human_mastery_gate.md)"
         )
 
+    # methodology/P20_core_epistemic_structure.md (founder ruling 2026-09-07): mandatory on every
+    # released document. Hard FAIL, not a warning -- unlike human_mastery_gate_ref (R8, still
+    # pending founder ratification), P20 is already ratified and its Gate section names the publish
+    # gate explicitly.
+    ces_obj = (manifest or {}).get("core_epistemic_structure")
+    if not ces_obj:
+        hard_fail = True
+        reasons.append(
+            "manifest: core_epistemic_structure is missing -- methodology/P20_core_epistemic_"
+            "structure.md requires every released document to carry the block (Core Respondent / "
+            "Experience-Based Expert, Interactional Expert, AI Model(s) Used, non-collapse line); "
+            "set the manifest's core_epistemic_structure field to that document's block."
+        )
+    else:
+        ces_res = validate_core_epistemic_structure(ces_obj)
+        if not ces_res["ok"]:
+            hard_fail = True
+            reasons.extend(f"core_epistemic_structure: {e}" for e in ces_res["errors"])
+
     if citation_cards is not None:
         xl_res = xenon_ledger_check(citation_cards)
         if not xl_res["ok"]:
@@ -2694,6 +2911,7 @@ def self_test():
         ("problem_card.example.json", validate_problem_card),
         ("hypothesis_selection.example.json", validate_hypothesis_selection),
         ("human_mastery_gate.example.json", validate_human_mastery_gate),
+        ("core_epistemic_structure.example.json", validate_core_epistemic_structure),
     ]
     for filename, fn in pairs:
         p = examples_dir / filename

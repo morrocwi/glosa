@@ -133,6 +133,49 @@ else
 fi
 say ""
 
+# --- 6. Core Epistemic Structure gate (methodology/P20_core_epistemic_structure.md, founder
+#        ruling 2026-09-07). Scoped, fail-closed but never on historical files: a tracked file
+#        under paper/, cases/, records/, or templates/ is checked ONLY if it IS one of the paper
+#        templates that already carry the block (templates/paper/*/main.tex -- NOT their
+#        disclaimers.tex/refs.bib siblings, which are included files, not the document itself)
+#        OR its first 5 lines declare `ces: required` (front matter or a plain first-lines
+#        marker). Every other historical file in those four trees is left alone -- this scoping
+#        is named, not silently applied; see P20's own Gate section for the dated sentence
+#        recording it.
+say "-- Core Epistemic Structure gate (P20) --"
+if git rev-parse --git-dir >/dev/null 2>&1; then
+  CES_CANDIDATES="$(git ls-files 'paper/*' 'cases/*' 'records/*' 'templates/*' | grep -E '\.(md|tex|yaml|yml|json)$' || true)"
+  CES_SCOPED=()
+  while IFS= read -r f; do
+    [ -z "$f" ] && continue
+    case "$f" in
+      templates/paper/*/main.tex)
+        CES_SCOPED+=("$f")
+        continue
+        ;;
+    esac
+    if [ -f "$f" ] && head -n 5 "$f" 2>/dev/null | grep -qE 'ces:[[:space:]]*required'; then
+      CES_SCOPED+=("$f")
+    fi
+  done <<< "$CES_CANDIDATES"
+
+  if [ "${#CES_SCOPED[@]}" -eq 0 ]; then
+    ok "no CES-scoped file found (nothing under templates/paper/, nothing declares 'ces: required')"
+  else
+    CES_OUT="$(python3 scripts/check_core_epistemic_structure.py "${CES_SCOPED[@]}" 2>&1)"
+    CES_RC=$?
+    say "$CES_OUT" | sed 's/^/  /'
+    if [ "$CES_RC" -eq 0 ]; then
+      ok "Core Epistemic Structure gate PASS (${#CES_SCOPED[@]} file(s) checked)"
+    else
+      bad "Core Epistemic Structure gate FAIL — see output above"
+    fi
+  fi
+else
+  bad "not inside a git repository — cannot enumerate CES-scoped files"
+fi
+say ""
+
 say "== summary =="
 if [ "$FAIL" -eq 0 ]; then
   say "check_repo.sh: PASS"

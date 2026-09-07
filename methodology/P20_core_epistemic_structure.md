@@ -92,6 +92,22 @@ role, not authorship or credit: the no-AI-attribution rule (`P10`, gate rule 9) 
 co-author or contributor, and the founder's per-artifact permission is recorded in the Blackbox Log when a model is
 named in a public artifact (BBL-2026-09-07-214/215 for the first such case).
 
+Enforcement (2026-09-07): `kernel/glosa_kernel.py`'s `gate_release` hard-fails a `release_manifest`
+missing a `core_epistemic_structure` field (schema/core_epistemic_structure.schema.json) or carrying
+one that does not validate (`glosa ces check <path...>` / `scripts/check_core_epistemic_structure.py`
+run the same check against a raw Markdown/LaTeX/YAML/JSON file). The pre-commit/`scripts/check_repo.sh`
+gate applies this check to a tracked file under `paper/`, `cases/`, `records/`, or `templates/` ONLY
+when that file matches `templates/paper/*/main.tex` (the two paper templates that already carry the
+block; their `disclaimers.tex`/`refs.bib` siblings are included files, not the document itself, and
+are out of scope) or its own first 5 lines declare `ces: required` — a historical file that predates
+this ruling and declares neither is not retroactively failed by this gate; a project that wants the
+gate on a specific file opts in by adding that marker line. `templates/knowledge/*.yaml` data-card
+templates (citation cards, blackbox notes, etc.) are deliberately out of scope of both the mandatory-
+block requirement and this gate: they are structured ledger rows validated by their own schema, not
+a "draft, paper, or note" in P20's sense; `templates/knowledge/*.md` protocol/checklist templates are
+likewise out of scope for the same reason, except `project_skeleton.md`, which documents (without
+itself carrying the block) that `paper/main.md`/`paper/main_en.md` must.
+
 ## Human / AI split
 
 Founder/human: decides who holds each role and whether the interactional slot is None. AI: fills its own line with its

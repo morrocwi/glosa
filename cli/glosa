@@ -44,6 +44,7 @@ CLI_DIR = Path(__file__).resolve().parent
 REPO_ROOT = CLI_DIR.parent
 RECORDS_ROOT = Path(os.environ["GLOSA_RECORDS_ROOT"]) if os.environ.get("GLOSA_RECORDS_ROOT") else REPO_ROOT  # tests / external projects
 KERNEL_DIR = REPO_ROOT / "kernel"
+SCRIPTS_DIR = REPO_ROOT / "scripts"
 SCHEMA_DIR = REPO_ROOT / "schema"
 TEMPLATES_DIR = REPO_ROOT / "templates" / "knowledge"
 
@@ -55,6 +56,18 @@ try:
 except Exception as exc:  # pragma: no cover - only when the kernel truly is not importable
     k = None
     _KERNEL_IMPORT_ERROR = f"{type(exc).__name__}: {exc}"
+
+# `glosa ces check` (P20 Core Epistemic Structure) reuses scripts/check_core_epistemic_structure.py's
+# check_paths() so the CLI and the standalone script never drift (same single source of truth as
+# the kernel functions both of them call). Relative-path import, same convention as KERNEL_DIR above.
+_CES_SCRIPT_IMPORT_ERROR = None
+if str(SCRIPTS_DIR) not in sys.path:
+    sys.path.insert(0, str(SCRIPTS_DIR))
+try:
+    import check_core_epistemic_structure as _ces_script  # noqa: E402
+except Exception as exc:  # pragma: no cover - only when the script truly is not importable
+    _ces_script = None
+    _CES_SCRIPT_IMPORT_ERROR = f"{type(exc).__name__}: {exc}"
 
 try:
     import yaml  # type: ignore
@@ -1095,6 +1108,16 @@ def cmd_cite_check(args):
     return (0 if res["ok"] else 1), {"action": "cite_check", "card": args.card, "offline": True, "note": note, "result": res}
 
 
+def cmd_ces_check(args):
+    """methodology/P20_core_epistemic_structure.md gate (founder ruling 2026-09-07). Delegates to
+    scripts/check_core_epistemic_structure.py's check_paths() -- one implementation, called from
+    both places, per that script's own docstring."""
+    if _ces_script is None:
+        return 1, {"action": "ces_check", "error": f"check_core_epistemic_structure script not importable: {_CES_SCRIPT_IMPORT_ERROR}"}
+    exit_code, results = _ces_script.check_paths(args.paths)
+    return exit_code, {"action": "ces_check", "paths": args.paths, "results": results}
+
+
 def cmd_lit_new(args):
     slug = _slugify(args.problem_slug)
     hyp_dir = _slugify(args.hypothesis_ref)
@@ -1683,6 +1706,12 @@ def build_parser():
                     help="documents intent only: this CLI performs no live Crossref/OpenAlex/PubMed/DataCite "
                          "lookup regardless of this flag; every cite-check is schema+status only.")
     a.set_defaults(func=cmd_cite_check)
+
+    # ces ----------------------------------------------------------------------------------------
+    ces = sub.add_parser("ces", help="Core Epistemic Structure gate (methodology/P20)").add_subparsers(dest="sub", required=True)
+    a = ces.add_parser("check", help="check one or more files for the mandatory P20 block (Markdown/LaTeX/YAML/JSON)")
+    a.add_argument("paths", nargs="+", help="one or more file paths (.md/.tex/.txt/.yaml/.yml/.json)")
+    a.set_defaults(func=cmd_ces_check)
 
     # lit ----------------------------------------------------------------------------------------
     lit = sub.add_parser("lit", help="Literature Review System (S14)").add_subparsers(dest="sub", required=True)

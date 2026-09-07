@@ -43,7 +43,11 @@
 │
 ├── paper/
 │   ├── main.md          # manuscript, Thai source-of-truth per repo language convention (TBD, §9 open q)
+│   │     # Carries the Core Epistemic Structure block near the top (methodology/P20, template
+│   │     # templates/core_epistemic_structure.md) — checked by `glosa ces check paper/main.md`.
 │   ├── main_en.md        # English version — rewritten, not translated, per workspace rule
+│   │     # Same P20 block as main.md — a translated/rewritten manuscript still declares its own
+│   │     # roles, not merely inheriting main.md's.
 │   └── CLAIM_MATRIX.md   # prose claim <-> backing claim_card/citation_card id, one row per claim
 │
 └── reviews/

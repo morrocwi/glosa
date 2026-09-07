@@ -115,4 +115,4 @@ built under.
 
 | Card | File | One-line rule |
 |---|---|---|
-| P20 | `P20_core_epistemic_structure.md` | Every draft carries the block Core Respondent / Experience-Based Expert · Interactional Expert (or None) · AI Model(s) Used (each named with its role); the three never merge; formal object E_p registered in Toledo. Template: `templates/core_epistemic_structure.md`. |
+| P20 | `P20_core_epistemic_structure.md` | Every draft carries the block Core Respondent / Experience-Based Expert · Interactional Expert (or None) · AI Model(s) Used (each named with its role); the three never merge; formal object E_p registered in Toledo. Template: `templates/core_epistemic_structure.md`. Checked by `./cli/glosa ces check <path...>` (or `scripts/check_core_epistemic_structure.py <path...>` directly, `cli/README.md`); enforced as a hard fail on release by `kernel.gate_release`. |
