@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""scripts/ret_check.py -- RET-Check v0.1: an AI-independent recursive provenance auditor.
+"""scripts/ret_check.py -- RET-Check v0.2: an AI-independent recursive provenance auditor.
 
 tier: Dr (specified from `cases/ret/PREREGISTRATION_v0_1.md` and the theory source below;
 independently unreviewed; will read `finite_diagnostic` once `tests/test_ret_check.py` has run --
@@ -12,9 +12,12 @@ CSV/JSON provenance rows and computes N_A / N_P / recursive cycles / external in
 prints a RET SELF-AUDIT report with a RET RISK label. This module implements the founder's spec
 using THE PAPER'S OWN definitions -- it does not invent new ones. Theory source:
 `The_Recursive_Epistemic_Tunnel_GENESIS_FIRST_FULL_v2_0.md` (RET GENESIS FIRST v2.0), sections
-13-21 and 25-30. Every computed quantity below cites its section and RET-Nxx working alias; Toledo
-codes are not yet registered for these objects (`methodology/P19`) -- cite the RET-Nxx alias until
-the registrar assigns a Toledo code, then update the cite in this docstring and in
+13-21 and 25-30. Every computed quantity below cites its section, its RET-Nxx working alias, and
+(as of v0.2, 2026-09-08) the Toledo code the registrar assigned it (`methodology/P19`; Toledo
+v1.5.0 pending, concept DOI 10.5281/zenodo.22537318): RET-N04 = EQ-015/H.41.v1, RET-N06 =
+weld/H.36.v1, RET-N09 = weld/H.37.v1, RET-N10 = EQ-015/H.43.v1, RET-N16 = A.8/M.21.v1, RET-N17 =
+A.8/M.22.v1, RET-N18 = A.8/M.23.v1. RET-N05/N07 have no Toledo code yet -- cite the RET-Nxx alias
+alone for those until the registrar assigns one, then update the cite here and in
 `methodology/P21_ret_check.md`.
 
 READOUT, NOT TRUTH -- read `cases/ret/PREREGISTRATION_v0_1.md`'s "What the program can NOT verify"
@@ -49,25 +52,28 @@ Computed quantities and their section citations:
                 RISK formula below is computed from N_P^ind(c), never the raw N_P(c): a root that
                 is merely present is not the same claim as a root that is independent, and only
                 the latter should be read as resistance against a tunnel.
-  Flagship   -- N_A(c) up  does-not-imply  N_P(c) up. Section 15, RET-N06 (non-entailment). Reported
-                against the raw root count N_P(c), matching the paper's own literal reading.
+  Flagship   -- N_A(c) up  does-not-imply  N_P(c) up. Section 15, RET-N06 (non-entailment; Toledo
+                weld/H.36.v1). Reported against the raw root count N_P(c), matching the paper's
+                own literal reading.
   Recursive cycle -- any directed cycle in the parent -> agent graph for c. Section 14, RET-N04
-              ("a minimal cycle is a_i -> a_j -> a_i"; a multi-agent cycle generalizes this).
-              "Return-to-origin" additionally reports whether the cycle includes a row whose
-              parent == "-" (an origin node for that claim).
+              (Toledo EQ-015/H.41.v1; "a minimal cycle is a_i -> a_j -> a_i"; a multi-agent cycle
+              generalizes this). "Return-to-origin" additionally reports whether the cycle
+              includes a row whose parent == "-" (an origin node for that claim).
   External interruption -- a world_record row, or a review row declared root_independent == true,
               whose own ancestry (walked backward through parent edges) does not intersect any
               node of a detected recursion cycle. Operationalizes section 28's AI-Independent
-              Consequence Requirement (RET-N16: CausalAncestry(y) is not a subset of the
-              recursive network up to the freeze time) and sections 29-30's AI-Off World-Closure
-              (RET-N17 / RET-N18) as a graph-lineage test this program can actually run. When no
-              cycle exists at all, any qualifying world_record/review row counts (there is
-              nothing recursive for its lineage to "pass through").
+              Consequence Requirement (RET-N16, Toledo A.8/M.21.v1: CausalAncestry(y) is not a
+              subset of the recursive network up to the freeze time) and sections 29-30's AI-Off
+              World-Closure (RET-N17, Toledo A.8/M.22.v1 / RET-N18, Toledo A.8/M.23.v1) as a
+              graph-lineage test this program can actually run. When no cycle exists at all, any
+              qualifying world_record/review row counts (there is nothing recursive for its
+              lineage to "pass through").
   Effective-alternatives regime (optional; only when effective_alternatives_before/after are
               supplied on at least one row of the claim) -- section 19: "evidence_driven_convergence"
-              (RET-N09: delta < 0 AND an external interruption is present) vs.
-              "tunnel_contraction_risk" (RET-N10: delta < 0, a cycle is present, and no external
-              interruption is present). This label is a report annotation; it does not feed the
+              (RET-N09, Toledo weld/H.37.v1: delta < 0 AND an external interruption is present) vs.
+              "tunnel_contraction_risk" (RET-N10, Toledo EQ-015/H.43.v1: delta < 0, a cycle is
+              present, and no external interruption is present). This label is a report
+              annotation; it does not feed the
               RET RISK formula below (the founder specified that formula in terms of N_A, N_P^ind,
               cycle, and interruption only -- see the preregistration).
 
@@ -242,11 +248,11 @@ def group_by_claim(rows: list[dict]) -> "dict[str, list[dict]]":
 
 
 # --------------------------------------------------------------------------------------------
-# Graph analysis (section 14 RET-N04 cycle; section 28/29-30 external interruption)
+# Graph analysis (section 14 RET-N04/Toledo EQ-015/H.41.v1 cycle; section 28/29-30 external interruption)
 # --------------------------------------------------------------------------------------------
 
 def _find_cycle(rows: list[dict]) -> "tuple[bool, list[str]]":
-    """Directed-cycle detection over parent -> agent edges (section 14, RET-N04). Returns
+    """Directed-cycle detection over parent -> agent edges (section 14, RET-N04, Toledo EQ-015/H.41.v1). Returns
     (has_cycle, cycle_path) where cycle_path is one witnessed cycle, first node repeated last."""
     nodes: set[str] = set()
     forward: dict[str, list[str]] = {}
@@ -295,7 +301,7 @@ def _ancestors(agent: str, reverse: "dict[str, list[str]]") -> "set[str]":
 
 
 def _external_interruption(rows: list[dict], cycle_nodes: "set[str]") -> "tuple[bool, list[dict]]":
-    """Section 28 (RET-N16) / sections 29-30 (RET-N17/RET-N18): a world_record row, or a review row
+    """Section 28 (RET-N16, Toledo A.8/M.21.v1) / sections 29-30 (RET-N17, Toledo A.8/M.22.v1 / RET-N18, Toledo A.8/M.23.v1): a world_record row, or a review row
     declared root_independent == true, whose own ancestry does not intersect the recursion cycle."""
     reverse: dict[str, list[str]] = {}
     for row in rows:
@@ -422,7 +428,7 @@ def render_report(result: dict) -> str:
     lines.append("=" * len("RET SELF-AUDIT"))
     lines.append(f"Claim: {result['claim']}")
     lines.append(
-        "Source: RET-Check v0.1 (scripts/ret_check.py; methodology/P21_ret_check.md; cites "
+        "Source: RET-Check v0.2 (scripts/ret_check.py; methodology/P21_ret_check.md; cites "
         "GENESIS FIRST v2.0 sections 13-21, 25-30)"
     )
     lines.append(DISCLAIMER_HEADER)
@@ -431,21 +437,21 @@ def render_report(result: dict) -> str:
     lines.append(f"N_A (distinct endorsing agents)            : {result['n_a']} {result['n_a_agents']}")
     lines.append(f"N_P (distinct provenance roots)             : {result['n_p']} {result['n_p_roots']}")
     lines.append(f"N_P^ind (roots declared independent)        : {result['n_p_ind']} {result['n_p_ind_roots']}")
-    lines.append(f"Flagship (N_A up does-not-imply N_P up, RET-N06): {result['flagship']}")
+    lines.append(f"Flagship (N_A up does-not-imply N_P up, RET-N06/Toledo weld/H.36.v1): {result['flagship']}")
     lines.append("")
-    lines.append("-- Recursive structure (section 14, RET-N04) --")
+    lines.append("-- Recursive structure (section 14, RET-N04, Toledo EQ-015/H.41.v1) --")
     lines.append(f"Recursive cycle detected                   : {'YES' if result['cycle_detected'] else 'NO'}")
     if result["cycle_detected"]:
         lines.append(f"Cycle path                                 : {' -> '.join(result['cycle_path'])}")
     lines.append(f"Return-to-origin path                       : {'YES' if result['return_to_origin'] else 'NO'}")
     lines.append("")
-    lines.append("-- External interruption (section 28 RET-N16; sections 29-30 AOWC RET-N17/N18) --")
+    lines.append("-- External interruption (section 28 RET-N16/Toledo A.8/M.21.v1; sections 29-30 AOWC RET-N17/Toledo A.8/M.22.v1, RET-N18/Toledo A.8/M.23.v1) --")
     lines.append(f"External interruption present               : {'YES' if result['external_interruption_present'] else 'NO'}")
     if result["external_interruption_rows"]:
         for r in result["external_interruption_rows"]:
             lines.append(f"  - {r['agent']} ({r['record_type']}, evidence_ref={r['evidence_ref']})")
     lines.append("")
-    lines.append("-- Effective alternatives (section 19, RET-N09/RET-N10; optional) --")
+    lines.append("-- Effective alternatives (section 19, RET-N09/Toledo weld/H.37.v1, RET-N10/Toledo EQ-015/H.43.v1; optional) --")
     if result["effective_alternatives_delta"] is None:
         lines.append("Effective alternatives supplied              : NO")
     else:
@@ -484,7 +490,7 @@ def run(path: "str | Path") -> dict:
 
 def main(argv=None) -> int:
     parser = argparse.ArgumentParser(
-        description="RET-Check v0.1 -- AI-independent recursive provenance auditor "
+        description="RET-Check v0.2 -- AI-independent recursive provenance auditor "
                      "(cases/ret/PREREGISTRATION_v0_1.md)."
     )
     parser.add_argument("path", help="a JSON or CSV file of provenance rows (see this file's own docstring for the row shape)")

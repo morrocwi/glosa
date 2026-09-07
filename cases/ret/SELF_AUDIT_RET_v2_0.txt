@@ -1,7 +1,7 @@
 RET SELF-AUDIT
 ==============
 Claim: ret-manuscript-self-audit
-Source: RET-Check v0.1 (scripts/ret_check.py; methodology/P21_ret_check.md; cites GENESIS FIRST v2.0 sections 13-21, 25-30)
+Source: RET-Check v0.2 (scripts/ret_check.py; methodology/P21_ret_check.md; cites GENESIS FIRST v2.0 sections 13-21, 25-30)
 Readout, not truth: independence of a provenance root (root_independent) and the world-side
 status of a record (record_type: world_record, or an independent review) are INPUT
 DECLARATIONS supplied by the case author -- this program audits the DECLARED graph structure
@@ -13,17 +13,17 @@ cases/ret/PREREGISTRATION_v0_1.md ('What the program can NOT verify').
 N_A (distinct endorsing agents)            : 2 ['GPT-5.6-Sol', 'Yaoharee-Lahtee']
 N_P (distinct provenance roots)             : 1 ['Genesis-Toledo-internal-programme']
 N_P^ind (roots declared independent)        : 0 []
-Flagship (N_A up does-not-imply N_P up, RET-N06): N_A(2) > N_P(1)
+Flagship (N_A up does-not-imply N_P up, RET-N06/Toledo weld/H.36.v1): N_A(2) > N_P(1)
 
--- Recursive structure (section 14, RET-N04) --
+-- Recursive structure (section 14, RET-N04, Toledo EQ-015/H.41.v1) --
 Recursive cycle detected                   : YES
 Cycle path                                 : GPT-5.6-Sol -> Yaoharee-Lahtee -> GPT-5.6-Sol
 Return-to-origin path                       : YES
 
--- External interruption (section 28 RET-N16; sections 29-30 AOWC RET-N17/N18) --
+-- External interruption (section 28 RET-N16/Toledo A.8/M.21.v1; sections 29-30 AOWC RET-N17/Toledo A.8/M.22.v1, RET-N18/Toledo A.8/M.23.v1) --
 External interruption present               : NO
 
--- Effective alternatives (section 19, RET-N09/RET-N10; optional) --
+-- Effective alternatives (section 19, RET-N09/Toledo weld/H.37.v1, RET-N10/Toledo EQ-015/H.43.v1; optional) --
 Effective alternatives supplied              : NO
 Regime                                       : not_computed (effective_alternatives not supplied)
 

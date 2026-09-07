@@ -3,7 +3,7 @@
 tier: finite_diagnostic (tests executed via `python3 -m pytest -q tests`, run from the glosa
 repo root).
 
-Covers RET-Check v0.1 (`scripts/ret_check.py`; `cases/ret/PREREGISTRATION_v0_1.md`;
+Covers RET-Check v0.2 (`scripts/ret_check.py`; `cases/ret/PREREGISTRATION_v0_1.md`;
 `methodology/P21_ret_check.md`): each pre-registered scenario A-E and the self-application case
 asserts the EXACT output declared in the preregistration before the code existed, plus a
 JSON-input test, a CSV-input test, an invalid-input (exit 2) test, and a standard-library-only /

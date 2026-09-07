@@ -28,13 +28,17 @@ grouped by `claim`:
   independence-declared roots here, mis-scoring Mirror as `N_P = 0`).
 - **N_P^ind(c)** — the narrower, SEPARATE count of those roots additionally declared
   `root_independent = true`. The RET RISK formula uses `N_P^ind(c)`, never the raw `N_P(c)`.
-- **Flagship** — `N_A(c) ↑ ⇏ N_P(c) ↑` (the theory's own non-entailment), read against the raw root
-  count: endorsement count rising never by itself implies provenance-root count rising, and rising
-  provenance-root count never by itself implies independence.
-- **Recursive cycle** — any directed cycle in the `parent → agent` graph, and whether it returns to
-  an origin node.
+- **Flagship** — `N_A(c) ↑ ⇏ N_P(c) ↑` (the theory's own non-entailment, RET-N06, Toledo
+  `weld/H.36.v1`), read against the raw root count: endorsement count rising never by itself
+  implies provenance-root count rising, and rising provenance-root count never by itself implies
+  independence.
+- **Recursive cycle** — any directed cycle in the `parent → agent` graph (RET-N04, Toledo
+  `EQ-015/H.41.v1`), and whether it returns to an origin node.
 - **External interruption** — a `world_record` row, or an independent `review` row, whose own
-  ancestry does not pass through a detected recursion cycle.
+  ancestry does not pass through a detected recursion cycle (RET-N16, Toledo `A.8/M.21.v1`;
+  AOWC RET-N17, Toledo `A.8/M.22.v1` / RET-N18, Toledo `A.8/M.23.v1`).
+- **Effective-alternatives regime** (optional) — `evidence_driven_convergence` (RET-N09, Toledo
+  `weld/H.37.v1`) vs. `tunnel_contraction_risk` (RET-N10, Toledo `EQ-015/H.43.v1`).
 - **RET RISK** (LOW/MEDIUM/HIGH) by the exact pre-registered rule in
   `cases/ret/PREREGISTRATION_v0_1.md` ("RET RISK formula", computed from `N_P^ind`), never
   re-tuned per case.
@@ -44,11 +48,15 @@ The program implements the definitions of `The_Recursive_Epistemic_Tunnel_GENESI
 Effect, provenance independence, candidate forgetting, the RET state vector, evidence-driven
 convergence vs. tunnel contraction, the AI-Independent Consequence Requirement, AI-Off
 World-Closure) — it does not invent new definitions of its own. Every quantity's docstring in
-`scripts/ret_check.py` cites the section and working alias (`RET-Nxx`) it implements.
+`scripts/ret_check.py` cites the section, its working alias (`RET-Nxx`), and (as of v0.2,
+2026-09-08) the Toledo code the registrar has assigned it.
 
-Toledo codes for the `RET-Nxx` objects are not yet registered (`P19`); cite the manuscript's own
-working alias until the registrar assigns a code, then update this card, the script's docstring,
-and the report text together (one-fact-one-home, `P0`).
+**Toledo codes (v0.2, 2026-09-08 — Toledo v1.5.0 pending, concept DOI
+10.5281/zenodo.22537318):** `RET-N04 = EQ-015/H.41.v1`, `RET-N06 = weld/H.36.v1`,
+`RET-N09 = weld/H.37.v1`, `RET-N10 = EQ-015/H.43.v1`, `RET-N16 = A.8/M.21.v1`,
+`RET-N17 = A.8/M.22.v1`, `RET-N18 = A.8/M.23.v1`. `RET-N05`/`RET-N07` have no Toledo code yet —
+cite the manuscript's own working alias alone until the registrar assigns one, then update this
+card, the script's docstring, and the report text together (one-fact-one-home, `P0`).
 
 ## Why / incident
 

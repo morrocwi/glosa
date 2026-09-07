@@ -20,6 +20,16 @@ tier: Dr (specified; independently unreviewed)
 > this correction; every `N_A`/`N_P` value quoted below for scenarios A/C/D/E and the
 > self-application case is updated to the corrected `N_P`, with `N_P^ind` given alongside.
 
+> **v0.2, 2026-09-08 — codes added; operator unchanged.** The Toledo registrar has assigned codes
+> to the RET equations this program implements (Toledo v1.5.0 pending, concept DOI
+> 10.5281/zenodo.22537318): `RET-N04 = EQ-015/H.41.v1`, `RET-N06 = weld/H.36.v1`,
+> `RET-N09 = weld/H.37.v1`, `RET-N10 = EQ-015/H.43.v1`, `RET-N16 = A.8/M.21.v1`,
+> `RET-N17 = A.8/M.22.v1`, `RET-N18 = A.8/M.23.v1`. `scripts/ret_check.py`'s version string is
+> bumped to v0.2 and every relevant docstring/report line now cites the Toledo code next to its
+> `RET-Nxx` alias. This is a citation update only — no computed quantity, no RET RISK rule, and no
+> pre-registered scenario's expected output changed; every `N_A`/`N_P`/`N_P^ind`/risk value in this
+> document (dated 2026-09-08 above) still holds exactly.
+
 ## What this document is
 
 A preregistration of the pass/fail scenarios for RET-Check v0.1, an AI-independent (stdlib-only,
@@ -67,9 +77,12 @@ Given rows `{claim, agent, parent, source_root, root_independent, record_type, e
   states the `N_A` vs the raw `N_P` comparison for the claim under this heading, never a bare
   pass/fail.
 
-Toledo codes for RET-N04/05/06/07/09/10/16/17/18 are not yet registered (`methodology/P19`); the
-program's docstring and every report cite them by the manuscript's own working aliases
-(`RET-Nxx`) and will be updated to Toledo codes once the registrar assigns them.
+Toledo codes (v0.2, 2026-09-08, Toledo v1.5.0 pending, concept DOI 10.5281/zenodo.22537318):
+`RET-N04 = EQ-015/H.41.v1`, `RET-N06 = weld/H.36.v1`, `RET-N09 = weld/H.37.v1`,
+`RET-N10 = EQ-015/H.43.v1`, `RET-N16 = A.8/M.21.v1`, `RET-N17 = A.8/M.22.v1`,
+`RET-N18 = A.8/M.23.v1` — the program's docstring and every report now cite the Toledo code next
+to each `RET-Nxx` alias. `RET-N05`/`RET-N07` have no Toledo code yet; cite the manuscript's own
+working alias alone for those until the registrar assigns one.
 
 ## RET RISK formula (pre-registered, exact — do not retune after seeing case output)
 
