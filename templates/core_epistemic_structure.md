@@ -1,6 +1,6 @@
 **Core Epistemic Structure**
 
-**Core Respondent / Experience-Based Expert:** [name or anonymised role] — [basis of experience]
+**Core Respondent / Experience-Based Expert:** [name or anonymised role] — lived experience: […]; selections: […]; interpretation: […]
 **Interactional Expert:** [name / role] or **None**
 **AI Model(s) Used:** [Model 1 — role]; [Model 2 — role]
 

@@ -48,6 +48,28 @@ assigned):
 
 `M_p^AI` is a set, since one project may use several models; `X_p^int = ∅` means the role is unheld, not a zero score.
 
+
+### The experience-holder, in three components (founder emphasis, 2026-09-07)
+
+The Core Respondent's contribution is read in three parts, each a readout of practice and none a warrant by position:
+
+    X_p^exp = ⟨ Exp , Sel , Int ⟩
+
+- **Exp — lived experience (world contact):** experience-based expertise separated from certification (Collins and
+  Evans, *Studies of Expertise and Experience*), tacit and personal knowledge (Polanyi), lived experience in the
+  phenomenological sense, situated knowledge (Haraway; standpoint epistemology).
+- **Sel — selection (decisions taken):** recognition-primed, naturalistic decision making (Klein; Kahneman and Klein on
+  when expert intuition is reliable: regular environments with feedback), practical wisdom (Aristotle's phronesis),
+  enactment → selection → retention (Weick).
+- **Int — interpretation (meaning given):** sensemaking (Weick), hermeneutic application from the practitioner's
+  horizon (Gadamer), reflection-in-action (Schön).
+
+Write the block line with the basis of each part, e.g. "lived experience: …; selections: … (recorded in the Blackbox
+Note); interpretation: …". Related terms usable as support: *expert by experience* (health and social-care
+involvement literature), *lay expertise* (Epstein) — with Collins and Evans's own caution that experience-based
+standing is not authority. Citation details (year, page, DOI) are to be verified under rule 17 before they enter a
+paper; this card names the sources only.
+
 ## Why / incident
 
 The manuscript *The Economics of Expertise in the Age of Generative AI* (v1.0, 2026-09-07) introduced a three-part
