@@ -1,0 +1,11 @@
+{
+ "deposition_id": 22622206,
+ "founder_instructed_bypass": {
+  "instruction": "Founder 2026-09-07: 'อ่านงานนี้ และ ใช้ glosa ลงทะเบียนเข้าระบบต่างๆ อัพขึ้น zenodo แต่ไม่ต้องเพิ่มในเอกสาร write by ai … Effort_Across_Stochastic_Controlled_Adaptive_Worlds_v0_3'; BBL-167 standing deposit authorisation; glosa review PASS (ASSESSMENT_2026-09-07_effort_v0_3_glosa.md) with 6 founder-decision warnings recorded",
+  "logged_at": "2026-09-07T11:55:48"
+ },
+ "doi": "10.5281/zenodo.22622206",
+ "conceptdoi": "10.5281/zenodo.22622205",
+ "url": "https://zenodo.org/record/22622206",
+ "title": "Effort Across Stochastic, Controlled, and Adaptive Worlds: Epistemic License, Changed Agents, Interaction Separation, Learning-Bearing Retry, and Rational Exit (Standalone theory draft v0.3)"
+}

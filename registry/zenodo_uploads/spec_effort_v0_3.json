@@ -1,0 +1,38 @@
+{
+ "upload_type": "publication",
+ "publication_type": "preprint",
+ "language": "eng",
+ "file": "dist/effort/Effort_Across_Stochastic_Controlled_Adaptive_Worlds_v0_3.pdf",
+ "title": "Effort Across Stochastic, Controlled, and Adaptive Worlds: Epistemic License, Changed Agents, Interaction Separation, Learning-Bearing Retry, and Rational Exit (Standalone theory draft v0.3)",
+ "publication_date": "2026-09-07",
+ "version": "v0.3-2026-09-07",
+ "description_html": "<p><b>What this is.</b> A standalone theory draft (v0.3, 7 September 2026) in the Human–AI Readout Programme on effort and retry under stochastic, other-controlled, and adaptive worlds. It keeps <i>Effort Under Stochastic and Other-Controlled Worlds</i> v0.1 as its anchor and v0.2 as its mathematical scaffold; v0.3 is an adversarial elevation, not a replacement. It adds four closures forced by hostile review: a distinction between conditional stochastic modeling and strong stochastic attribution; a witness-preserving cross-domain objection license; a positive interaction-separation condition with an explicit falsifier; and a local-theorem containment principle.</p><p><b>Central claim (the author's own words).</b> A theory of retry is incomplete merely because it specifies an outcome distribution. It must state whether stochasticity is assumed, supported, or strongly attributed; what the focal agent can read; what is retained; whether the retained difference becomes certified learning; whether the effective agent changes in a distinction to which the next interaction is actually sensitive; who else controls the outcome; and whether another attempt remains viable under finite cost and risk. A local theorem may fully defeat a local claim but earns no automatic right to erase epistemic, phenomenological, or agent-world transformation that its state/readout bridge does not preserve.</p><p><b>Equation provenance.</b> Mathematical provenance follows the Toledo source policy: existing equations are only those registered in Toledo, the programme's equation library (concept DOI 10.5281/zenodo.22537318), and are cited by their Toledo codes; every new equation is explicitly labelled and is registered in Toledo as a coded reading with this record as its origin. Ontology is interpreted through Readout Genesis and epistemology through Readout Universe.</p><p><b>Status.</b> Standalone theory draft, K0. Checked under the glosa methodology before deposit (assessment recorded in the programme's research journal). An AI assistant assisted under the author's direction; no AI system or vendor is an author or contributor.</p>",
+ "keywords": [
+  "effort",
+  "retry",
+  "stochastic worlds",
+  "optional stopping",
+  "bandit",
+  "POMDP",
+  "stochastic games",
+  "epistemic license",
+  "changed agent",
+  "interaction separation",
+  "learning-bearing retry",
+  "rational exit",
+  "viability",
+  "Toledo",
+  "Human-AI Readout Programme"
+ ],
+ "related": [
+  {
+   "identifier": "10.5281/zenodo.22308201",
+   "relation": "isPartOf"
+  },
+  {
+   "identifier": "10.5281/zenodo.22537318",
+   "relation": "references",
+   "resource_type": "software"
+  }
+ ]
+}

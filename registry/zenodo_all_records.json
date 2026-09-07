@@ -1,5 +1,51 @@
 [
  {
+  "id": 22622206,
+  "doi": "10.5281/zenodo.22622206",
+  "concept": "10.5281/zenodo.22622205",
+  "title": "Effort Across Stochastic, Controlled, and Adaptive Worlds: Epistemic License, Changed Agents, Interaction Separation, Learning-Bearing Retry, and Rational Exit (Standalone theory draft v0.3)",
+  "date": "2026-09-07",
+  "type": "Preprint",
+  "kw": [
+   "effort",
+   "retry",
+   "stochastic worlds",
+   "optional stopping",
+   "bandit",
+   "pomdp",
+   "stochastic games",
+   "epistemic license",
+   "changed agent",
+   "interaction separation",
+   "learning-bearing retry",
+   "rational exit",
+   "viability",
+   "toledo",
+   "human-ai readout programme"
+  ],
+  "desc": " What this is. A standalone theory draft (v0.3, 7 September 2026) in the Human–AI Readout Programme on effort and retry under stochastic, other-controlled, and adaptive worlds. It keeps Effort Under Stochastic and Other-Controlled Worlds v0.1 as its anchor and v0.2 as its mathematical scaffold; v0.3 is an adversarial elevation, not a replacement. It adds four closures forced by hostile review: a distinction between conditional stochastic modeling and strong stochastic attribution; a witness-preserving cross-domain objection license; a positive interaction-separation condition with an explicit falsifier; and a local-theorem containment principle. Central claim (the author's own words). A theory of retry is incomplete merely because it specifies an outcome distribution. It must state whether stochasticity is assumed, supported, or strongly attributed; what the focal agent can read; what is retained; whether the retained difference becomes certified learning; whether the effective agent changes in a distinction to which the next interaction is actually sensitive; who else controls the outcome; and whether another attempt remains viable under finite cost and risk. A local theorem may fully defeat a local claim but earns no automatic right to erase epistemic, phenomenological, or agent-world transformation that its state/readout bridge does not preserve. Equation provenance. Mathematical provenance follows the Toledo source policy: existing equations are only those registered in T"
+ },
+ {
+  "id": 22574017,
+  "doi": "10.5281/zenodo.22574017",
+  "concept": "10.5281/zenodo.22537318",
+  "title": "Toledo — Equation Library of the Human–AI Readout Programme (v1.1.0): 793 coded entries with an honest Coq-status ladder, lineage, native and imported Coq, catalogue",
+  "date": "2026-09-07",
+  "type": "Software",
+  "kw": [
+   "toledo",
+   "equation registry",
+   "readout genesis",
+   "canonical equations",
+   "persistent identifiers",
+   "coq",
+   "th_coqc",
+   "human-ai readout programme",
+   "domain translation"
+  ],
+  "desc": " What this is. Toledo is the programme's single permanent home for equations and their machine checks: a public git repository (https://github.com/morrocwi/toledo) whose tagged releases are deposited under this concept DOI. Scope is equations and Th_coqc only: registries, persistent codes ( <Genesis root>/<D>.<nn>.v<k> , D ∈ {E, H, S, W, M, P, C, B}), parents by code back to a Readout Genesis root, an append-only lineage log, and Coq 8.20 sources whose file name is the code. Founder rule (2026-09-07): every equation of the programme is looked up here first and registered here before it is written or cited elsewhere. Release v1.1.0 (counts computed from the files in the tag). 793 canonical entries (current 693, unverified 61, split 30, not_an_equation 9); 590 root rows. Coq status per entry, on an honest ladder: closed 161 (the entry's own file carries a lemma reported \"Closed under the global context\"), definition 339 (typed Definition in a finite model, no theorem), wrapped_related 210 (a Toledo-named wrapper aliasing an imported identifier that the entry only reads or specialises — not a closure of the entry's own statement), open_prop 13 (Open hypotheses stated as Props, unproved), not_formalisable 70 (no formal content in the source; reason recorded). 725 Coq files built one at a time, 207 identifiers closed; imported developments unchanged (3,289 identifiers, 3,125 closed, 164 carrying named axioms). Tiers as the sources state: Definition 389, finite_diagnostic 46, Dr 43"
+ },
+ {
   "id": 22520849,
   "doi": "10.5281/zenodo.22520849",
   "concept": "10.5281/zenodo.22520848",
@@ -45,26 +91,6 @@
    "glosa k0"
   ],
   "desc": " Edition note (v1.5, 2026-09-07). Every section, equation (1)–(79), table, fix box and reference of v1.4 is unchanged and in order. This edition adds Section 10, \"The One Equation Along the Whole Line\" (this river read against the programme's root spine, now coded into Toledo , the programme's equation library, v1.0.0, DOI 10.5281/zenodo.22548770, concept DOI 10.5281/zenodo.22537318), and Appendix C, a row-by-row Toledo cross-reference for all 79 equations (55 carry a Toledo code, 24 are listed as not yet coded), both read off Toledo's registry files as they stand on 2026-09-07. Appendix B gains one pointer: the Coq set now lives in Toledo (file name = code); DOI 10.5281/zenodo.22518450 is obsoleted by 10.5281/zenodo.22548770; its ledger table is unchanged. No claim, tier or number already in v1.4 changes. K0. Version 1.4 (this version) — English edition with four new segments and a Th_coqc ledger. v1.2 rendered the v1.1 Thai/English text into English with no content change; v1.3 added Sections 3.13–3.15 from the companion papers How Humans Should Converse with AI (DOI 10.5281/zenodo.22481928), After Labour (10.5281/zenodo.22481924) and The Human Conversion Imperative (10.5281/zenodo.22481926); v1.4 adds Section 3.16 from From Assistance to Human Capability (10.5281/zenodo.22498047) and Appendix B, the Th_coqc ledger: every numbered equation (1)–(79) is formalised in the companion Coq record (DOI 10.5281/zenodo.22518450; 45 lemmas closed under the global context; Definitions "
- },
- {
-  "id": 22548770,
-  "doi": "10.5281/zenodo.22548770",
-  "concept": "10.5281/zenodo.22537318",
-  "title": "Toledo — Equation Library of the Human–AI Readout Programme (v1.0.0): root registry, 793 coded canonical readings, lineage, native and imported Coq, catalogue",
-  "date": "2026-09-07",
-  "type": "Software",
-  "kw": [
-   "toledo",
-   "equation registry",
-   "readout genesis",
-   "canonical equations",
-   "persistent identifiers",
-   "coq",
-   "th_coqc",
-   "human-ai readout programme",
-   "domain translation"
-  ],
-  "desc": " What this is. Toledo — named after the Toledo School of Translators, where one text was read across languages — is the programme's single permanent home for equations and their machine checks: a public git repository (https://github.com/morrocwi/toledo) whose tagged releases are deposited under this concept DOI. Scope is equations and Th_coqc only: registries, persistent codes, an append-only lineage log per code, and Coq 8.20 sources whose file name is the code. Code scheme. Root codes reuse the identifiers of Readout Genesis verbatim (Appendix C EQ-nnn , the one-line weld, named items such as MQ.08 , A.5 , A.8 ). Every other equation is a reading of a root: <root>/<D>.<nn>.v<k> with D ∈ {E epistemic, H human–AI, S social, W world-system, M method, P physics, C chemistry, B biology/health}. Parents are listed by code back to the root; a bundle that was found to hold several distinct formulas is retired with status split and its members carry their own codes; a row whose source is prose carries status not_an_equation with a pointer and no code. Two raw equations share one code only under the equivalence criterion (renaming, positive scale, constant substitution); otherwise they are related, never merged. Release v1.0.0 (counts computed from the files in the tag). Root layer: 590 rows of Readout Genesis (git-anchored), 282 of them re-tiered from the source's own tags with quoted evidence. Canonical layer: 793 coded entries (697 current, 57 unverified, 30 split, 9 not_an_equat"
  },
  {
   "id": 22518450,
