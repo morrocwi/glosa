@@ -33,6 +33,8 @@ Order for a piece of research that carries an equation: Toledo (equation) → cl
 Blackbox/DECISIONS/logbook (rulings, decisions, events) → hubs/KG refresh. A paper may cite a Toledo code only after
 the code exists; a Toledo entry may cite a paper only by its deposited DOI (rule 17).
 
+The repository's own governance rule, `EQUATION_SOURCE_POLICY.md` in `github.com/morrocwi/toledo` (founder, 2026-09-07), states the same procedure from the repository side and adds the cross-repository lens rule: mathematics through Toledo, ontology through Readout Genesis, epistemology through Readout Universe, human–AI and collaboration through glosa; cross-domain work must declare which part is which.
+
 ## Why / incident
 
 The programme's 40 deposited chapters carried 946 numbered equations; canonicalising them in Toledo (2026-09-06/07)
