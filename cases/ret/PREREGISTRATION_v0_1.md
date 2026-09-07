@@ -22,13 +22,17 @@ tier: Dr (specified; independently unreviewed)
 
 > **v0.2, 2026-09-08 — codes added; operator unchanged.** The Toledo registrar has assigned codes
 > to the RET equations this program implements (Toledo v1.5.0 pending, concept DOI
-> 10.5281/zenodo.22537318): `RET-N04 = EQ-015/H.41.v1`, `RET-N06 = weld/H.36.v1`,
-> `RET-N09 = weld/H.37.v1`, `RET-N10 = EQ-015/H.43.v1`, `RET-N16 = A.8/M.21.v1`,
-> `RET-N17 = A.8/M.22.v1`, `RET-N18 = A.8/M.23.v1`. `scripts/ret_check.py`'s version string is
-> bumped to v0.2 and every relevant docstring/report line now cites the Toledo code next to its
-> `RET-Nxx` alias. This is a citation update only — no computed quantity, no RET RISK rule, and no
-> pre-registered scenario's expected output changed; every `N_A`/`N_P`/`N_P^ind`/risk value in this
-> document (dated 2026-09-08 above) still holds exactly.
+> 10.5281/zenodo.22537318; full table: `Toledo repo's registry/proposals/recursive_epistemic_tunnel_v2_0.merged.json`,
+> all 23 RET equations coded): `RET-N04 = EQ-015/H.41.v1`, `RET-N05 = weld/H.35.v1`,
+> `RET-N06 = weld/H.36.v1`, `RET-N07 = A.8/M.20.v1`, `RET-N09 = weld/H.37.v1`,
+> `RET-N10 = EQ-015/H.43.v1`, `RET-N16 = A.8/M.21.v1`, `RET-N17 = A.8/M.22.v1`,
+> `RET-N18 = A.8/M.23.v1`. `scripts/ret_check.py`'s version string is bumped to v0.2 and every
+> relevant docstring/report line now cites the Toledo code next to its `RET-Nxx` alias. This is a
+> citation update only — no computed quantity, no RET RISK rule, and no pre-registered scenario's
+> expected output changed; every `N_A`/`N_P`/`N_P^ind`/risk value in this document (dated
+> 2026-09-08 above) still holds exactly. (N05/N07 codes corrected the same day: an earlier pass of
+> this note omitted them as "pending" — they were coded in Toledo already, just missing from the
+> founder's first list to this session.)
 
 ## What this document is
 
@@ -54,8 +58,9 @@ Given rows `{claim, agent, parent, source_root, root_independent, record_type, e
   them is declared independent** (§15's literal `N_P(c)` as a raw root count; corrected 2026-09-08,
   see the note above). A single shared, non-independent root still counts once.
 - **N_P^ind(c)** — the narrower count of those roots **additionally** declared
-  `root_independent = true` (§16's typed provenance structure `Π(c) = (V_c, E_c, τ_c)`, RET-N07).
-  **`root_independent` is an input declaration, not a computed fact — see the disclaimer below.**
+  `root_independent = true` (§16's typed provenance structure `Π(c) = (V_c, E_c, τ_c)`, RET-N07,
+  Toledo `A.8/M.20.v1`). **`root_independent` is an input declaration, not a computed fact — see
+  the disclaimer below.**
   The RET RISK formula below is computed from `N_P^ind(c)`, never the raw `N_P(c)`.
 - **Recursive cycle** — any directed cycle in the graph of `parent → agent` edges for `c` (§14,
   RET-N04, "a minimal cycle is `a_i → a_j → a_i`"; a multi-agent cycle generalizes this). The
@@ -77,12 +82,12 @@ Given rows `{claim, agent, parent, source_root, root_independent, record_type, e
   states the `N_A` vs the raw `N_P` comparison for the claim under this heading, never a bare
   pass/fail.
 
-Toledo codes (v0.2, 2026-09-08, Toledo v1.5.0 pending, concept DOI 10.5281/zenodo.22537318):
-`RET-N04 = EQ-015/H.41.v1`, `RET-N06 = weld/H.36.v1`, `RET-N09 = weld/H.37.v1`,
-`RET-N10 = EQ-015/H.43.v1`, `RET-N16 = A.8/M.21.v1`, `RET-N17 = A.8/M.22.v1`,
-`RET-N18 = A.8/M.23.v1` — the program's docstring and every report now cite the Toledo code next
-to each `RET-Nxx` alias. `RET-N05`/`RET-N07` have no Toledo code yet; cite the manuscript's own
-working alias alone for those until the registrar assigns one.
+Toledo codes (v0.2, 2026-09-08, Toledo v1.5.0 pending, concept DOI 10.5281/zenodo.22537318; full
+table: `Toledo repo's registry/proposals/recursive_epistemic_tunnel_v2_0.merged.json`, all 23 RET equations
+coded): `RET-N04 = EQ-015/H.41.v1`, `RET-N05 = weld/H.35.v1`, `RET-N06 = weld/H.36.v1`,
+`RET-N07 = A.8/M.20.v1`, `RET-N09 = weld/H.37.v1`, `RET-N10 = EQ-015/H.43.v1`,
+`RET-N16 = A.8/M.21.v1`, `RET-N17 = A.8/M.22.v1`, `RET-N18 = A.8/M.23.v1` — the program's
+docstring and every report now cite the Toledo code next to each `RET-Nxx` alias.
 
 ## RET RISK formula (pre-registered, exact — do not retune after seeing case output)
 

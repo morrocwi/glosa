@@ -52,11 +52,11 @@ World-Closure) — it does not invent new definitions of its own. Every quantity
 2026-09-08) the Toledo code the registrar has assigned it.
 
 **Toledo codes (v0.2, 2026-09-08 — Toledo v1.5.0 pending, concept DOI
-10.5281/zenodo.22537318):** `RET-N04 = EQ-015/H.41.v1`, `RET-N06 = weld/H.36.v1`,
-`RET-N09 = weld/H.37.v1`, `RET-N10 = EQ-015/H.43.v1`, `RET-N16 = A.8/M.21.v1`,
-`RET-N17 = A.8/M.22.v1`, `RET-N18 = A.8/M.23.v1`. `RET-N05`/`RET-N07` have no Toledo code yet —
-cite the manuscript's own working alias alone until the registrar assigns one, then update this
-card, the script's docstring, and the report text together (one-fact-one-home, `P0`).
+10.5281/zenodo.22537318; full table: `Toledo repo's registry/proposals/recursive_epistemic_tunnel_v2_0.merged.json`,
+all 23 RET equations coded):** `RET-N04 = EQ-015/H.41.v1`, `RET-N05 = weld/H.35.v1`,
+`RET-N06 = weld/H.36.v1`, `RET-N07 = A.8/M.20.v1`, `RET-N09 = weld/H.37.v1`,
+`RET-N10 = EQ-015/H.43.v1`, `RET-N16 = A.8/M.21.v1`, `RET-N17 = A.8/M.22.v1`,
+`RET-N18 = A.8/M.23.v1`.
 
 ## Why / incident
 

@@ -14,11 +14,10 @@ using THE PAPER'S OWN definitions -- it does not invent new ones. Theory source:
 `The_Recursive_Epistemic_Tunnel_GENESIS_FIRST_FULL_v2_0.md` (RET GENESIS FIRST v2.0), sections
 13-21 and 25-30. Every computed quantity below cites its section, its RET-Nxx working alias, and
 (as of v0.2, 2026-09-08) the Toledo code the registrar assigned it (`methodology/P19`; Toledo
-v1.5.0 pending, concept DOI 10.5281/zenodo.22537318): RET-N04 = EQ-015/H.41.v1, RET-N06 =
-weld/H.36.v1, RET-N09 = weld/H.37.v1, RET-N10 = EQ-015/H.43.v1, RET-N16 = A.8/M.21.v1, RET-N17 =
-A.8/M.22.v1, RET-N18 = A.8/M.23.v1. RET-N05/N07 have no Toledo code yet -- cite the RET-Nxx alias
-alone for those until the registrar assigns one, then update the cite here and in
-`methodology/P21_ret_check.md`.
+v1.5.0 pending, concept DOI 10.5281/zenodo.22537318; full table:
+Toledo repo's registry/proposals/recursive_epistemic_tunnel_v2_0.merged.json): RET-N04 = EQ-015/H.41.v1,
+RET-N05 = weld/H.35.v1, RET-N06 = weld/H.36.v1, RET-N07 = A.8/M.20.v1, RET-N09 = weld/H.37.v1,
+RET-N10 = EQ-015/H.43.v1, RET-N16 = A.8/M.21.v1, RET-N17 = A.8/M.22.v1, RET-N18 = A.8/M.23.v1.
 
 READOUT, NOT TRUTH -- read `cases/ret/PREREGISTRATION_v0_1.md`'s "What the program can NOT verify"
 section before trusting any report this script prints. In summary: `root_independent` (is a
@@ -45,7 +44,8 @@ Computed quantities and their section citations:
   N_P(c)     -- number of DISTINCT PROVENANCE ROOTS (source_root values) for c, regardless of
                 whether any of them is declared independent. Section 15's literal N_P(c) as a raw
                 root count, refined by section 16's typed provenance structure
-                Pi(c) = (V_c, E_c, tau_c) (RET-N07), which is what N_P^ind narrows down to below.
+                Pi(c) = (V_c, E_c, tau_c) (RET-N07, Toledo A.8/M.20.v1), which is what N_P^ind
+                narrows down to below.
   N_P^ind(c) -- number of those roots ADDITIONALLY declared root_independent == true. A separate,
                 narrower readout of the same Pi(c) structure -- root_independent is an input
                 declaration (see the disclaimer above), never derived by this program. The RET
