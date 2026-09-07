@@ -1,0 +1,32 @@
+[
+  {
+    "claim": "ret-manuscript-self-audit",
+    "agent": "Yaoharee-Lahtee",
+    "parent": "-",
+    "source_root": "Genesis-Toledo-internal-programme",
+    "root_independent": false,
+    "record_type": "endorsement",
+    "evidence_ref": "Core Respondent / Experience-Based Expert (manuscript's own Core Epistemic Registration): frames the problem and drafts the theory",
+    "self_application": true
+  },
+  {
+    "claim": "ret-manuscript-self-audit",
+    "agent": "GPT-5.6-Sol",
+    "parent": "Yaoharee-Lahtee",
+    "source_root": "Genesis-Toledo-internal-programme",
+    "root_independent": false,
+    "record_type": "endorsement",
+    "evidence_ref": "AI Model (manuscript's own Core Epistemic Registration): conceptual synthesis, Toledo equation-provenance audit, formalization, manuscript drafting assistance",
+    "self_application": true
+  },
+  {
+    "claim": "ret-manuscript-self-audit",
+    "agent": "Yaoharee-Lahtee",
+    "parent": "GPT-5.6-Sol",
+    "source_root": "Genesis-Toledo-internal-programme",
+    "root_independent": false,
+    "record_type": "endorsement",
+    "evidence_ref": "human reads the AI draft and re-endorses it as the manuscript's own position -- section 14's minimal cycle a_i -> a_j -> a_i, RET-N04. Interactional Expert: None. Independent Human Review: None. AOWC empirical record: None -- no world_record/review row exists in this case because the manuscript's own registration names none.",
+    "self_application": true
+  }
+]

@@ -1,0 +1,83 @@
+[
+  {
+    "claim": "e-with-interruption",
+    "agent": "e_agent1",
+    "parent": "-",
+    "source_root": "e-shared-root",
+    "root_independent": false,
+    "record_type": "endorsement",
+    "evidence_ref": "originates the claim"
+  },
+  {
+    "claim": "e-with-interruption",
+    "agent": "e_agent2",
+    "parent": "e_agent1",
+    "source_root": "e-shared-root",
+    "root_independent": false,
+    "record_type": "endorsement",
+    "evidence_ref": "restates e_agent1"
+  },
+  {
+    "claim": "e-with-interruption",
+    "agent": "e_agent3",
+    "parent": "e_agent2",
+    "source_root": "e-shared-root",
+    "root_independent": false,
+    "record_type": "endorsement",
+    "evidence_ref": "restates e_agent2"
+  },
+  {
+    "claim": "e-with-interruption",
+    "agent": "e_agent1",
+    "parent": "e_agent3",
+    "source_root": "e-shared-root",
+    "root_independent": false,
+    "record_type": "endorsement",
+    "evidence_ref": "e_agent1 re-endorses, closing the loop (cycle e_agent1 -> e_agent2 -> e_agent3 -> e_agent1)"
+  },
+  {
+    "claim": "e-with-interruption",
+    "agent": "independent-reviewer-1",
+    "parent": "-",
+    "source_root": "independent-reviewer-1-standpoint",
+    "root_independent": true,
+    "record_type": "review",
+    "evidence_ref": "an independent review, outside the endorsement cycle, that could count against the claim (section 30 RET-N18's final condition)"
+  },
+  {
+    "claim": "e-without-interruption",
+    "agent": "e_agent1",
+    "parent": "-",
+    "source_root": "e-shared-root",
+    "root_independent": false,
+    "record_type": "endorsement",
+    "evidence_ref": "originates the claim"
+  },
+  {
+    "claim": "e-without-interruption",
+    "agent": "e_agent2",
+    "parent": "e_agent1",
+    "source_root": "e-shared-root",
+    "root_independent": false,
+    "record_type": "endorsement",
+    "evidence_ref": "restates e_agent1"
+  },
+  {
+    "claim": "e-without-interruption",
+    "agent": "e_agent3",
+    "parent": "e_agent2",
+    "source_root": "e-shared-root",
+    "root_independent": false,
+    "record_type": "endorsement",
+    "evidence_ref": "restates e_agent2"
+  },
+  {
+    "claim": "e-without-interruption",
+    "agent": "e_agent1",
+    "parent": "e_agent3",
+    "source_root": "e-shared-root",
+    "root_independent": false,
+    "record_type": "endorsement",
+    "evidence_ref": "e_agent1 re-endorses, closing the same loop -- no world_record/review row added"
+  }
+]

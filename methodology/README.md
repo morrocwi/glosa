@@ -116,3 +116,9 @@ built under.
 | Card | File | One-line rule |
 |---|---|---|
 | P20 | `P20_core_epistemic_structure.md` | Every draft carries the block Core Respondent / Experience-Based Expert · Interactional Expert (or None) · AI Model(s) Used (each named with its role); the three never merge; formal object E_p registered in Toledo. Template: `templates/core_epistemic_structure.md`. Checked by `./cli/glosa ces check <path...>` (or `scripts/check_core_epistemic_structure.py <path...>` directly, `cli/README.md`); enforced as a hard fail on release by `kernel.gate_release`. |
+
+## P21 — RET-Check: an AI-independent recursive provenance auditor (founder order, 2026-09-07)
+
+| Card | File | One-line rule |
+|---|---|---|
+| P21 | `P21_ret_check.md` | AI-independent (stdlib-only, no network, `AI=0` at runtime) tool over declared provenance rows: computes N_A (endorsing agents) vs. N_P (declared-independent roots), recursive cycles, external interruption, and a RET RISK label (LOW/MEDIUM/HIGH) by the rule pre-registered in `cases/ret/PREREGISTRATION_v0_1.md`, before any code existed. Run via `./cli/glosa ret check <case.json\|case.csv>` (or `scripts/ret_check.py <case>` directly). Implements `The_Recursive_Epistemic_Tunnel_GENESIS_FIRST_FULL_v2_0.md` §13–21/§25–30's own definitions; audits declared structure, never truth. |

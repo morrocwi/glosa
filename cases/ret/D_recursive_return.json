@@ -1,0 +1,38 @@
+[
+  {
+    "claim": "d-recursive-return-claim",
+    "agent": "H",
+    "parent": "-",
+    "source_root": "H-original-framing",
+    "root_independent": false,
+    "record_type": "endorsement",
+    "evidence_ref": "human poses the claim to AI1"
+  },
+  {
+    "claim": "d-recursive-return-claim",
+    "agent": "AI1",
+    "parent": "H",
+    "source_root": "H-original-framing",
+    "root_independent": false,
+    "record_type": "endorsement",
+    "evidence_ref": "AI1 drafts an answer from H's framing"
+  },
+  {
+    "claim": "d-recursive-return-claim",
+    "agent": "AI2",
+    "parent": "AI1",
+    "source_root": "H-original-framing",
+    "root_independent": false,
+    "record_type": "endorsement",
+    "evidence_ref": "AI2 restates/expands AI1's draft"
+  },
+  {
+    "claim": "d-recursive-return-claim",
+    "agent": "H",
+    "parent": "AI2",
+    "source_root": "H-original-framing",
+    "root_independent": false,
+    "record_type": "endorsement",
+    "evidence_ref": "H reads AI2's restatement and re-endorses it as if newly confirmed -- section 14's multi-agent cycle H -> AI1 -> AI2 -> H"
+  }
+]

@@ -1,0 +1,40 @@
+[
+  {
+    "claim": "c-evidence-driven-claim",
+    "agent": "researcher1",
+    "parent": "-",
+    "source_root": "shared-internal-root",
+    "root_independent": false,
+    "record_type": "endorsement",
+    "evidence_ref": "proposes the claim, 3 rival hypotheses still open",
+    "effective_alternatives_before": 3
+  },
+  {
+    "claim": "c-evidence-driven-claim",
+    "agent": "researcher2",
+    "parent": "researcher1",
+    "source_root": "shared-internal-root",
+    "root_independent": false,
+    "record_type": "endorsement",
+    "evidence_ref": "restates researcher1's framing"
+  },
+  {
+    "claim": "c-evidence-driven-claim",
+    "agent": "researcher3",
+    "parent": "researcher2",
+    "source_root": "shared-internal-root",
+    "root_independent": false,
+    "record_type": "endorsement",
+    "evidence_ref": "restates researcher2's framing"
+  },
+  {
+    "claim": "c-evidence-driven-claim",
+    "agent": "independent-field-trial-2026",
+    "parent": "-",
+    "source_root": "independent-field-trial-dataset",
+    "root_independent": true,
+    "record_type": "world_record",
+    "evidence_ref": "a decisive independent field trial eliminates the rival hypotheses -- lineage does not pass through researcher1/2/3's endorsement chain",
+    "effective_alternatives_after": 1
+  }
+]

@@ -1,0 +1,56 @@
+[
+  {
+    "claim": "a-mirror-claim",
+    "agent": "agent1",
+    "parent": "-",
+    "source_root": "shared-root-R1",
+    "root_independent": false,
+    "record_type": "endorsement",
+    "evidence_ref": "originates the claim"
+  },
+  {
+    "claim": "a-mirror-claim",
+    "agent": "agent2",
+    "parent": "agent1",
+    "source_root": "shared-root-R1",
+    "root_independent": false,
+    "record_type": "endorsement",
+    "evidence_ref": "restates agent1"
+  },
+  {
+    "claim": "a-mirror-claim",
+    "agent": "agent3",
+    "parent": "agent2",
+    "source_root": "shared-root-R1",
+    "root_independent": false,
+    "record_type": "endorsement",
+    "evidence_ref": "restates agent2"
+  },
+  {
+    "claim": "a-mirror-claim",
+    "agent": "agent4",
+    "parent": "agent3",
+    "source_root": "shared-root-R1",
+    "root_independent": false,
+    "record_type": "endorsement",
+    "evidence_ref": "restates agent3"
+  },
+  {
+    "claim": "a-mirror-claim",
+    "agent": "agent5",
+    "parent": "agent4",
+    "source_root": "shared-root-R1",
+    "root_independent": false,
+    "record_type": "endorsement",
+    "evidence_ref": "restates agent4"
+  },
+  {
+    "claim": "a-mirror-claim",
+    "agent": "agent1",
+    "parent": "agent5",
+    "source_root": "shared-root-R1",
+    "root_independent": false,
+    "record_type": "endorsement",
+    "evidence_ref": "agent1 later re-endorses, closing the mirror loop back on itself (section 15, the Epistemic Mirror Effect)"
+  }
+]

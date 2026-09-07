@@ -69,6 +69,17 @@ except Exception as exc:  # pragma: no cover - only when the script truly is not
     _ces_script = None
     _CES_SCRIPT_IMPORT_ERROR = f"{type(exc).__name__}: {exc}"
 
+# `glosa ret check` (RET-Check v0.1, methodology/P21_ret_check.md) reuses scripts/ret_check.py's
+# run()/RetCheckInputError so the CLI and the standalone script never drift (same single source of
+# truth). Relative-path import, same convention as _ces_script above. Standard library only, no
+# network -- see ret_check.py's own module docstring.
+_RET_CHECK_IMPORT_ERROR = None
+try:
+    import ret_check as _ret_check  # noqa: E402
+except Exception as exc:  # pragma: no cover - only when the script truly is not importable
+    _ret_check = None
+    _RET_CHECK_IMPORT_ERROR = f"{type(exc).__name__}: {exc}"
+
 try:
     import yaml  # type: ignore
 
@@ -1118,6 +1129,22 @@ def cmd_ces_check(args):
     return exit_code, {"action": "ces_check", "paths": args.paths, "results": results}
 
 
+def cmd_ret_check(args):
+    """RET-Check v0.1 (methodology/P21_ret_check.md; cases/ret/PREREGISTRATION_v0_1.md). Delegates
+    to scripts/ret_check.py's run() -- one implementation, called from both places. Exit 0 = a
+    report was produced (regardless of the RET RISK label -- this is a diagnostic tool, not a
+    pass/fail gate on the claim's content); exit 2 = the input file was invalid."""
+    if _ret_check is None:
+        return 1, {"action": "ret_check", "error": f"ret_check script not importable: {_RET_CHECK_IMPORT_ERROR}"}
+    try:
+        result = _ret_check.run(args.case)
+    except _ret_check.RetCheckInputError as exc:
+        return 2, {"action": "ret_check", "case": args.case, "ok": False, "error": str(exc)}
+    result["action"] = "ret_check"
+    result["json_flag"] = bool(args.json)
+    return 0, result
+
+
 def cmd_lit_new(args):
     slug = _slugify(args.problem_slug)
     hyp_dir = _slugify(args.hypothesis_ref)
@@ -1712,6 +1739,13 @@ def build_parser():
     a = ces.add_parser("check", help="check one or more files for the mandatory P20 block (Markdown/LaTeX/YAML/JSON)")
     a.add_argument("paths", nargs="+", help="one or more file paths (.md/.tex/.txt/.yaml/.yml/.json)")
     a.set_defaults(func=cmd_ces_check)
+
+    # ret ----------------------------------------------------------------------------------------
+    ret = sub.add_parser("ret", help="RET-Check v0.1: AI-independent recursive provenance auditor (methodology/P21)").add_subparsers(dest="sub", required=True)
+    a = ret.add_parser("check", help="analyze a provenance-rows JSON/CSV case, print a RET SELF-AUDIT report")
+    a.add_argument("case", help="path to a .json or .csv provenance-rows file (see scripts/ret_check.py's own docstring for the row shape)")
+    a.add_argument("--json", action="store_true", help="included for shape parity with scripts/ret_check.py's own --json flag; this CLI's own output convention is always one JSON object either way (cli/README.md)")
+    a.set_defaults(func=cmd_ret_check)
 
     # lit ----------------------------------------------------------------------------------------
     lit = sub.add_parser("lit", help="Literature Review System (S14)").add_subparsers(dest="sub", required=True)

@@ -1,0 +1,47 @@
+[
+  {
+    "claim": "b-independent-claim",
+    "agent": "labA",
+    "parent": "-",
+    "source_root": "root-labA-dataset",
+    "root_independent": true,
+    "record_type": "endorsement",
+    "evidence_ref": "independent replication 1"
+  },
+  {
+    "claim": "b-independent-claim",
+    "agent": "labB",
+    "parent": "-",
+    "source_root": "root-labB-dataset",
+    "root_independent": true,
+    "record_type": "endorsement",
+    "evidence_ref": "independent replication 2"
+  },
+  {
+    "claim": "b-independent-claim",
+    "agent": "labC",
+    "parent": "-",
+    "source_root": "root-labC-dataset",
+    "root_independent": true,
+    "record_type": "endorsement",
+    "evidence_ref": "independent replication 3"
+  },
+  {
+    "claim": "b-independent-claim",
+    "agent": "labD",
+    "parent": "-",
+    "source_root": "root-labD-dataset",
+    "root_independent": true,
+    "record_type": "endorsement",
+    "evidence_ref": "independent replication 4"
+  },
+  {
+    "claim": "b-independent-claim",
+    "agent": "labE",
+    "parent": "-",
+    "source_root": "root-labE-dataset",
+    "root_independent": true,
+    "record_type": "endorsement",
+    "evidence_ref": "independent replication 5"
+  }
+]

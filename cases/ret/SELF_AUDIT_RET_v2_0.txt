@@ -1,0 +1,34 @@
+RET SELF-AUDIT
+==============
+Claim: ret-manuscript-self-audit
+Source: RET-Check v0.1 (scripts/ret_check.py; methodology/P21_ret_check.md; cites GENESIS FIRST v2.0 sections 13-21, 25-30)
+Readout, not truth: independence of a provenance root (root_independent) and the world-side
+status of a record (record_type: world_record, or an independent review) are INPUT
+DECLARATIONS supplied by the case author -- this program audits the DECLARED graph structure
+only. It never verifies that a declared-independent root truly is independent, or that a
+declared world_record truly occurred in the world outside the recursive network. See
+cases/ret/PREREGISTRATION_v0_1.md ('What the program can NOT verify').
+
+-- Agents / Provenance --
+N_A (distinct endorsing agents)            : 2 ['GPT-5.6-Sol', 'Yaoharee-Lahtee']
+N_P (distinct declared-independent roots)  : 0 []
+Flagship (N_A up does-not-imply N_P up, RET-N06): N_A(2) > N_P(0)
+
+-- Recursive structure (section 14, RET-N04) --
+Recursive cycle detected                   : YES
+Cycle path                                 : GPT-5.6-Sol -> Yaoharee-Lahtee -> GPT-5.6-Sol
+Return-to-origin path                       : YES
+
+-- External interruption (section 28 RET-N16; sections 29-30 AOWC RET-N17/N18) --
+External interruption present               : NO
+
+-- Effective alternatives (section 19, RET-N09/RET-N10; optional) --
+Effective alternatives supplied              : NO
+Regime                                       : not_computed (effective_alternatives not supplied)
+
+-- RET RISK --
+RET RISK: HIGH
+Reason: N_A(2) > N_P(0), a recursive cycle was detected, and no external interruption was found (rule 3).
+
+The RET manuscript itself remains at RET-risk until independent world-side or reviewer-side resistance is added.
+
