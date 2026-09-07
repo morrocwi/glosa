@@ -56,8 +56,20 @@ Ledger's one job is to show which *external* resistance step was actually exerci
 **Toledo mapping is a citation, never a copy** (`P19`/`P0` one-fact-one-home). A card naming a
 Toledo code is not duplicated into Toledo — `toledo_codes[]` may be empty only when
 `status: "pending_toledo_code"` is also set, and it is never populated by inventing a code.
-`glosa repro run --register-toledo` appends one row to Toledo's own
-`registry/reproduction_card_index.json`, a citation index, never the card's home of record.
+Correction (2026-09-08 — an earlier draft of this card, and of
+`design/RESISTANCE_LADDER_v0_1.md` §2/§3, specified a `glosa repro run --register-toledo` flag
+that was never implemented in `cli/glosa` — `glosa repro run`'s own options are only `--command`/
+`--input`/`--output`/`--reference`, confirmed live: `--register-toledo` is rejected as an
+unrecognized argument. Toledo's own `registry/SCHEMA.md` addendum already documented the actual
+mechanism on its side; this card is corrected here to match, rather than leaving glosa's own
+methodology describing a capability that does not exist): the citation index is instead populated
+from the **Toledo side**, by that repo's own `scripts/register_reproduction_evidence.py
+[--glosa-repo PATH]`, which reads glosa's `cases/repro/*.json` cards and `reviews/routes/**/
+review_report.{yaml,json}` files directly and regenerates
+`registry/reproduction_card_index.json` / `registry/review_report_index.json` wholesale (never
+appends — a full projection of glosa's current on-disk state, rerun whenever a card or review
+changes). There is no glosa-side flag or command that writes into Toledo's registry; a card is
+made citable simply by existing under `cases/repro/` with a real `toledo_codes[]` entry.
 
 ## Why / incident
 
@@ -77,8 +89,10 @@ always confirm.
   tolerance written before any run, and — once run — a command, its declared input/output files,
   and the identity that ran it.
 - **Outputs:** `cases/repro/<ID>.json`, self-checked against `schema/reproduction_card.schema.json`
-  on write; a `review_report.yaml` from `repro verify`; a Toledo `reproduction_card_index.json` row
-  when `--register-toledo` is passed; a RET-Check provenance row from `repro to-ret`.
+  on write; a `review_report.yaml` from `repro verify`; a Toledo `reproduction_card_index.json` /
+  `review_report_index.json` row, populated Toledo-side by that repo's own
+  `scripts/register_reproduction_evidence.py` (never a glosa-side flag — see the Rule section's
+  2026-09-08 correction); a RET-Check provenance row from `repro to-ret`.
 
 ## Gate
 

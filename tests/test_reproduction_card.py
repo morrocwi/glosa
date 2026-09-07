@@ -212,6 +212,44 @@ class TestHashing(unittest.TestCase):
             h2 = rc.sha256_of_files([str(p1)])
             self.assertNotEqual(h1, h2)
 
+    def test_compute_hashes_output_ignores_a_wrappers_own_inner_self_report(self):
+        """Regression, 2026-09-08: a runner that wraps an INNER pinned computation (its own
+        self-reported `output_sha256` describes only the inner computation's stdout, a narrower
+        byte range than THIS process's own full stdout) must never have that inner value read back
+        as if it were a report about the wrapper's own stdout -- exactly the shape
+        `cases/repro/run_EQ-068_higgs_pdg.py` prints, which produced a false MISMATCH on
+        independent re-execution before this fix (`output_hash` never matches on ANY re-run,
+        because the two values are hashes of two different byte ranges)."""
+        import hashlib
+        import json as _json
+        wrapper_stdout = _json.dumps({
+            "input_sha256": "aaaa",
+            "output_sha256": "bbbb",  # hash of the INNER computation's own stdout, not this one's
+            "computation_stdout": {"result": 1},
+        }, indent=2, sort_keys=True)
+        hashes = rc.compute_hashes(wrapper_stdout)
+        # input_hash: the self-reported value is legitimately what the runner considers its own
+        # input -- unaffected by this fix.
+        self.assertEqual(hashes["input_hash"], "aaaa")
+        # output_hash: MUST be a hash of the wrapper's own full stdout, never the inner
+        # self-reported "bbbb" -- re-running the identical wrapper stdout twice must always agree
+        # with a hash of that exact text, the same rule `glosa repro run`/`verify` both use.
+        self.assertNotEqual(hashes["output_hash"], "bbbb")
+        self.assertEqual(hashes["output_hash"], hashlib.sha256(wrapper_stdout.encode("utf-8")).hexdigest())
+
+    def test_compute_hashes_output_prefers_a_declared_output_file_over_stdout(self):
+        hashes = rc.compute_hashes('{"output_sha256": "bbbb"}', declared_output_hash="declared-hash")
+        self.assertEqual(hashes["output_hash"], "declared-hash")
+
+    def test_compute_hashes_is_stable_across_repeated_runs_of_identical_stdout(self):
+        """The actual bug-fix promise: two independent executions producing byte-identical stdout
+        (the paradigm case a Reproduction Card's own re-execution must satisfy) always compute the
+        SAME output_hash -- unaffected by an unrelated inner self-reported key."""
+        stdout_text = json.dumps({"output_sha256": "irrelevant-inner-value", "x": 1}, sort_keys=True)
+        first = rc.compute_hashes(stdout_text)
+        second = rc.compute_hashes(stdout_text)
+        self.assertEqual(first["output_hash"], second["output_hash"])
+
 
 class TestToleranceParsing(unittest.TestCase):
     def test_percent(self):

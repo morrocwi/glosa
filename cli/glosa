@@ -1443,6 +1443,89 @@ def _rung(held, evidence=None, reason=None):
     return row
 
 
+def _load_registry_entries(path: Path, list_keys) -> "tuple[list | None, str | None]":
+    """Load a Toledo registry JSON file at `path` and return its entries list. Tries each key in
+    `list_keys` in order against a top-level dict (registry/SCHEMA.md's documented shape for
+    CANONICAL.json is `{"canonical": [...]}`; `toledo/registry/genesis_root.json`'s is
+    `{"root_equations": [...]}`), falls back to a bare top-level list, and as a last resort
+    collects any dict values that look like entries (carry a `code` key) -- same defensive order
+    `cmd_score`'s R2 lookup already used for CANONICAL.json before this helper existed. Returns
+    `(entries, None)` on success (an empty list is a legal, honest success -- the file parsed but
+    named no entries) or `(None, reason)` when the file is missing or unparseable -- never guessed
+    as an empty registry."""
+    if not path.is_file():
+        return None, f"toledo registry not found at {path}"
+    try:
+        data = json.loads(path.read_text(encoding="utf-8"))
+    except (OSError, ValueError) as exc:
+        return None, f"toledo registry at {path} could not be parsed: {exc}"
+    if isinstance(data, list):
+        return data, None
+    if isinstance(data, dict):
+        for key in list_keys:
+            entries = data.get(key)
+            if isinstance(entries, list):
+                return entries, None
+        return [v for v in data.values() if isinstance(v, dict) and "code" in v], None
+    return [], None
+
+
+def _registry_statement_text(entry: dict) -> str:
+    """A registry entry's own statement, read honestly regardless of shape: CANONICAL.json's
+    `statement` field is `{"latest": str, "format": ...}` (registry/SCHEMA.md); a Toledo
+    `genesis_root.json` root row's `statement` is a bare string. Never guessed when absent."""
+    statement = entry.get("statement")
+    if isinstance(statement, dict):
+        return str(statement.get("latest") or "")
+    return str(statement or "")
+
+
+def _lookup_toledo_entry(toledo_code: str, canonical_path: Path, genesis_root_path: Path):
+    """Look up `toledo_code`, first in a Toledo `registry/CANONICAL.json`'s `canonical[]` array,
+    then -- only when not found there -- in a Toledo `registry/genesis_root.json`'s
+    `root_equations[]` array. Layer-0 root codes (e.g. `EQ-068`, `EQ-045`) are never stored in
+    CANONICAL.json at all (`toledo/scripts/compute_resistance.py`'s own module docstring: "these
+    are NOT stored in registry/CANONICAL.json"), so a lookup that only ever reads CANONICAL.json
+    is structurally incapable of resolving R0/R2 for an entire class of real Toledo codes --
+    verified live, 2026-09-08: `glosa score EQ-068` reported R2 'not found' for a code that exists,
+    with an already-computed resistance block, in genesis_root.json. Returns `(entry, source_path,
+    reason)`: `entry`/`source_path` are both `None` and `reason` is set (never fabricated) when the
+    code was not found in either file, or when neither registry file could even be read."""
+    canonical_entries, canonical_problem = _load_registry_entries(canonical_path, ["canonical", "entries"])
+    if canonical_entries:
+        entry = next((e for e in canonical_entries if isinstance(e, dict) and e.get("code") == toledo_code), None)
+        if entry is not None:
+            return entry, canonical_path, None
+
+    genesis_entries, genesis_problem = _load_registry_entries(genesis_root_path, ["root_equations"])
+    if genesis_entries:
+        entry = next((e for e in genesis_entries if isinstance(e, dict) and e.get("code") == toledo_code), None)
+        if entry is not None:
+            return entry, genesis_root_path, None
+
+    reason = canonical_problem or genesis_problem or (
+        f"code {toledo_code!r} not found in {canonical_path} or {genesis_root_path}"
+    )
+    return None, None, reason
+
+
+def _find_repro_verify_review_for_card(card: dict, matching_reviews: list) -> "tuple | None":
+    """Find the `glosa repro verify` review_report (route_id `repro-verify-<card id>`, `cli/glosa`'s
+    own `cmd_repro_verify` naming convention) that independently re-executed THIS card, among
+    `matching_reviews` -- distinct from an ordinary R5 review, which may back the same claim
+    without being a verify run at all. Matched by the card's own `id` occurring in the review's
+    `route_id` or its file path, never by claim/code alone (one claim/code can have several
+    cards). Returns `(path, report)` or `None` when no such review is linked."""
+    card_id = card.get("id")
+    if not card_id:
+        return None
+    for rp, report in matching_reviews:
+        route_id = str(report.get("route_id") or "")
+        if card_id in route_id or card_id in str(rp):
+            return rp, report
+    return None
+
+
 def cmd_score(args):
     """P23 (`glosa score`): print the R0-R6 Resistance Ladder table for one artifact -- a SET of
     rungs held, each with an evidence pointer, never a single number (design principle, restated
@@ -1485,10 +1568,48 @@ def cmd_score(args):
             review_identifiers.add(_card["claim"])
     matching_reviews = _score_matching_reviews(reviews_dir, review_identifiers)
 
+    # Toledo registry lookup (used by both R0 and R2 below -- one lookup, two rungs, never two
+    # independent read paths that could disagree about whether the artifact was actually found).
+    canonical_registry_path = Path(args.toledo_registry) if args.toledo_registry else (
+        REPO_ROOT.parent / "toledo" / "registry" / "CANONICAL.json"
+    )
+    genesis_root_path = Path(args.toledo_genesis_root) if args.toledo_genesis_root else (
+        canonical_registry_path.parent / "genesis_root.json"
+    )
+    registry_entry, registry_entry_path, registry_lookup_reason = (None, None, "no Toledo code given or reachable from this artifact")
+    if toledo_code:
+        registry_entry, registry_entry_path, registry_lookup_reason = _lookup_toledo_entry(
+            toledo_code, canonical_registry_path, genesis_root_path,
+        )
+
     rungs = {}
 
-    # R0 -- stated. Trivially held: this command was invoked with a real artifact identifier.
-    rungs["R0"] = _rung(True, evidence=[{"type": "artifact", "ref": artifact, "kind": kind}])
+    # R0 -- stated. Fixed 2026-09-08 (bug found live: `glosa score NONEXISTENT-CODE-999` reported
+    # R0 held:true unconditionally for ANY string, with 'evidence' merely echoing the CLI's own
+    # input argument back -- no file was ever checked, violating this Ladder's own binding
+    # principle, design/RESISTANCE_LADDER_v0_1.md §0: "a rung is held only by a file that exists").
+    # Held only when a real statement was actually found for the artifact: for kind=='toledo-code',
+    # the SAME registry lookup R2 performs, below, must have returned an entry with a non-empty
+    # statement; for claim_card/release_manifest, `instance` must have been successfully loaded
+    # from a real file on disk.
+    if kind == "toledo-code":
+        if registry_entry is not None:
+            statement_text = _registry_statement_text(registry_entry)
+            if statement_text.strip():
+                rungs["R0"] = _rung(True, evidence=[
+                    {"type": "toledo_registry", "path": str(registry_entry_path), "code": toledo_code}
+                ])
+            else:
+                rungs["R0"] = _rung(False, reason=f"code {toledo_code!r} found in {registry_entry_path} but its statement field is empty")
+        else:
+            rungs["R0"] = _rung(False, reason=registry_lookup_reason or "artifact not found in any registry/instance file")
+    elif kind in ("claim_card", "release_manifest"):
+        if p.is_file() and instance is not None:
+            rungs["R0"] = _rung(True, evidence=[{"type": kind, "path": str(p)}])
+        else:
+            rungs["R0"] = _rung(False, reason=f"{artifact!r} could not be loaded as a real {kind} file on disk")
+    else:
+        rungs["R0"] = _rung(False, reason=f"unrecognized kind {kind!r} -- no statement/instance lookup performed")
 
     # R1 -- pre-registered falsifier / claim boundary.
     r1_evidence = []
@@ -1511,51 +1632,50 @@ def cmd_score(args):
     rungs["R1"] = _rung(bool(r1_evidence), evidence=r1_evidence,
                          reason="no linked reproduction_card.preregistered_prediction or claim_card falsifier")
 
-    # R2 -- Coq-closed (kernel outside our loop). Read-only lookup against a Toledo registry file;
-    # never guessed when the registry is not reachable.
-    if toledo_code:
-        registry_path = Path(args.toledo_registry) if args.toledo_registry else (REPO_ROOT.parent / "toledo" / "registry" / "CANONICAL.json")
-        if not registry_path.is_file():
-            rungs["R2"] = _rung(False, reason=f"toledo registry not found at {registry_path} -- pass --toledo-registry")
+    # R2 -- Coq-closed (kernel outside our loop). Reuses the SAME registry lookup R0 already
+    # performed above (never a second, independently-drifting read path). Integration fix,
+    # 2026-09-08: this lookup now also checks `toledo/registry/genesis_root.json`'s
+    # `root_equations[]` when the code is not found in CANONICAL.json's `canonical[]` array --
+    # Layer-0 root codes (e.g. `EQ-068`, `EQ-045`, the two codes this Ladder's own first
+    # Reproduction Cards cite) are never stored in CANONICAL.json at all, so the old
+    # CANONICAL.json-only lookup could never resolve R2 for an entire class of real Toledo codes.
+    if toledo_code and registry_entry is not None:
+        coq = registry_entry.get("coq") or {}
+        coq_status = coq.get("coq_status") if isinstance(coq, dict) else registry_entry.get("coq_status")
+        if coq_status == "closed":
+            rungs["R2"] = _rung(True, evidence=[{"type": "toledo_registry", "path": str(registry_entry_path), "code": toledo_code, "coq_status": coq_status}])
         else:
-            try:
-                data = json.loads(registry_path.read_text(encoding="utf-8"))
-            except (OSError, ValueError) as exc:
-                rungs["R2"] = _rung(False, reason=f"toledo registry at {registry_path} could not be parsed: {exc}")
-            else:
-                # registry/SCHEMA.md's own documented top level is {"schema_version", ...,
-                # "canonical": [entries...]} -- try that key FIRST (integration fix, 2026-09-08:
-                # the previous `data.get("entries") or list(data.values())` fallback silently
-                # iterated the top-level dict's OWN values -- version strings, the commit hash,
-                # the raw_to_canonical map -- never the nested entry list, so R2 could never be
-                # held true against a real CANONICAL.json no matter what code was asked for).
-                if isinstance(data, list):
-                    entries = data
-                elif isinstance(data, dict):
-                    entries = data.get("canonical")
-                    if not isinstance(entries, list):
-                        entries = data.get("entries")
-                    if not isinstance(entries, list):
-                        entries = [v for v in data.values() if isinstance(v, dict) and "code" in v]
-                else:
-                    entries = []
-                entry = next((e for e in entries if isinstance(e, dict) and e.get("code") == toledo_code), None)
-                if entry is None:
-                    rungs["R2"] = _rung(False, reason=f"code {toledo_code!r} not found in {registry_path}")
-                else:
-                    coq = entry.get("coq") or {}
-                    coq_status = coq.get("coq_status") if isinstance(coq, dict) else entry.get("coq_status")
-                    if coq_status == "closed":
-                        rungs["R2"] = _rung(True, evidence=[{"type": "toledo_registry", "path": str(registry_path), "code": toledo_code, "coq_status": coq_status}])
-                    else:
-                        rungs["R2"] = _rung(False, reason=f"coq_status is {coq_status!r}, not 'closed'")
+            rungs["R2"] = _rung(False, reason=f"coq_status is {coq_status!r}, not 'closed'")
     else:
-        rungs["R2"] = _rung(False, reason="no Toledo code given or reachable from this artifact")
+        rungs["R2"] = _rung(False, reason=registry_lookup_reason)
 
-    # R3 -- reproducible run, hash-frozen, AI = 0.
-    r3_cards = [(cp, card) for cp, card in matching_cards if card.get("run") is not None]
-    rungs["R3"] = _rung(bool(r3_cards), evidence=[{"type": "reproduction_card", "path": _rel(cp)} for cp, _ in r3_cards],
-                         reason="no reproduction card references this artifact with a filled run{}")
+    # R3 -- reproducible run, hash-frozen, AI = 0. `methodology/P22_reproduction_ledger.md`'s own
+    # rule: an independent `glosa repro verify` review_report -- not this card's own first
+    # `repro run` -- is what actually HOLDS R3 for a reader other than the maker. Fixed
+    # 2026-09-08: when such a review is linked and its verdict records a hash MISMATCH, this card
+    # no longer counts toward R3 (and, since R4/R6 below are derived from R3-holding cards, they
+    # inherit the correction automatically) -- never held:true while a contradicting independent
+    # re-execution sits right next to it in this same artifact's own evidence.
+    r3_candidates = [(cp, card) for cp, card in matching_cards if card.get("run") is not None]
+    r3_cards = []
+    r3_mismatch_notes = []
+    for cp, card in r3_candidates:
+        verify_match = _find_repro_verify_review_for_card(card, matching_reviews)
+        if verify_match is not None:
+            rp, report = verify_match
+            verdict = str(report.get("verdict") or "")
+            if "mismatch" in verdict.lower():
+                r3_mismatch_notes.append(f"{_rel(cp)}: repro-verify review at {_rel(rp)} recorded a hash MISMATCH -- {verdict}")
+                continue
+        r3_cards.append((cp, card))
+    if r3_cards:
+        rungs["R3"] = _rung(True, evidence=[{"type": "reproduction_card", "path": _rel(cp)} for cp, _ in r3_cards])
+    else:
+        rungs["R3"] = _rung(
+            False,
+            reason="; ".join(r3_mismatch_notes) if r3_mismatch_notes else
+                   "no reproduction card references this artifact with a filled run{}",
+        )
 
     # R4 -- external oracle, PASS or FAIL both hold this rung (P0/P23 §0's own design principle).
     external_kinds = k._REPRO_EXTERNAL_ORACLE_KINDS if k is not None else (
@@ -2249,6 +2369,7 @@ def build_parser():
     a.add_argument("artifact", help="a Toledo code, or a claim_card/release_manifest file path")
     a.add_argument("--kind", default=None, choices=["toledo-code", "claim_card", "release_manifest"], help="override auto-detection")
     a.add_argument("--toledo-registry", default=None, help="path to a Toledo registry/CANONICAL.json (default: ../toledo/registry/CANONICAL.json next to this repo)")
+    a.add_argument("--toledo-genesis-root", default=None, help="path to a Toledo registry/genesis_root.json (default: alongside --toledo-registry); holds Layer-0 root codes (e.g. EQ-068) that CANONICAL.json never stores")
     a.add_argument("--repro-dir", default=None, help="default: cases/repro/")
     a.add_argument("--reviews-dir", default=None, help="default: reviews/routes/")
     a.set_defaults(func=cmd_score)

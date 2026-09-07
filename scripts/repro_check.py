@@ -93,16 +93,34 @@ def sha256_of_files(paths) -> "str | None":
 
 
 def _extract_self_reported_hashes(stdout_text: str) -> "tuple[str | None, str | None]":
-    """A runner script MAY compute its own `input_hash`/`output_hash` internally and print them
-    as top-level keys in its own JSON stdout (exactly the way `_extract_observed` already reads
-    an `observed` key back) -- e.g. a card whose real input is a pinned external byte string
-    (a git blob at a commit, not a static file sitting in this repo) fetched and hashed by the
-    runner itself, never a file this driver could hash by path. When present, these self-reported
-    values are read back verbatim, never recomputed a second, different way (P22's "computed by
-    the runner" is satisfied by the runner computing it; this driver's own job is to read that
-    computation back honestly). Returns `(None, None)` when stdout is not a JSON object or
-    carries neither key -- never guessed, never defaulted to a declared-file hash inferred from
-    context this function does not have."""
+    """A runner script MAY compute its own `input_hash` internally and print it as a top-level key
+    in its own JSON stdout (exactly the way `_extract_observed` already reads an `observed` key
+    back) -- e.g. a card whose real input is a pinned external byte string (a git blob at a
+    commit, not a static file sitting in this repo) fetched and hashed by the runner itself, never
+    a file this driver could hash by path. When present, this self-reported INPUT value is read
+    back verbatim, never recomputed a second, different way (P22's "computed by the runner" is
+    satisfied by the runner computing it; this driver's own job is to read that computation back
+    honestly).
+
+    OUTPUT is deliberately NOT read from a self-reported `output_hash`/`output_sha256` key here
+    (bug found live, 2026-09-08: `cases/repro/run_EQ-068_higgs_pdg.py` prints a diagnostic
+    top-level `output_sha256` that is the hash of only the PINNED INNER computation's own stdout --
+    a different, narrower byte range than THIS wrapper's own full stdout, which is what
+    `compute_hashes`'s `output_hash` result is defined to be (`schema/reproduction_card.schema.json`
+    line 136: "computed by scripts/repro_check.py") and what the card's own recorded
+    `run.output_hash` was actually computed from. Trusting that inner self-report as if it were a
+    report about THIS process's own stdout produced a value that could never match on re-execution
+    no matter how many times the pinned command was re-run byte-identically -- see
+    `reviews/routes/toledo-eq-068-.../repro-verify-REPRO-2026-09-08-0001/review_report.yaml`'s own
+    now-corrected false MISMATCH. `compute_hashes` below always derives `output_hash` from a
+    declared output FILE, or (the common case, matching how both first-batch real cards --
+    EQ-045 and EQ-068 -- are actually authored) a raw hash of this process's own full stdout bytes.
+    Returns `(None, None)` when stdout is not a JSON object or carries no `input_hash`/
+    `input_sha256` key -- never guessed, never defaulted to a declared-file hash inferred from
+    context this function does not have. The unused second slot is kept so this function's return
+    shape stays a stable `(input, output)` pair for any future self-reported-output distinctly-
+    named key added under `compute_hashes`'s own docstring option (a), never silently repurposed
+    for the removed, unsafe generic-key path."""
     text = (stdout_text or "").strip()
     try:
         data = json.loads(text)
@@ -111,35 +129,39 @@ def _extract_self_reported_hashes(stdout_text: str) -> "tuple[str | None, str | 
     if not isinstance(data, dict):
         return None, None
     input_hash = data.get("input_hash") or data.get("input_sha256")
-    output_hash = data.get("output_hash") or data.get("output_sha256")
-    return (str(input_hash) if input_hash else None), (str(output_hash) if output_hash else None)
+    return (str(input_hash) if input_hash else None), None
 
 
 def compute_hashes(stdout_text: str, declared_input_hash: "str | None" = None,
                     declared_output_hash: "str | None" = None) -> dict:
     """The ONE shared hash-computation rule `glosa repro run` (first execution) and `glosa repro
     verify` (independent re-execution) both call, so the two are always compared apples-to-apples
-    -- never two different formulas that happen to usually agree. Priority, applied independently
-    for input vs. output:
+    -- never two different formulas that happen to usually agree.
 
-    1. A self-reported `input_sha256`/`output_sha256` (or `input_hash`/`output_hash`) top-level
-       key in the command's own JSON stdout (`_extract_self_reported_hashes`) -- read back
-       verbatim, taking priority over a caller-supplied declared-file hash, because a runner that
-       bothers to self-report is naming the exact bytes IT considers its own input/output, which
-       may not be a file this driver could hash by path at all (`cases/repro/
-       run_EQ-068_higgs_pdg.py`'s pinned git-blob input is the paradigm case this exists for).
-    2. `declared_input_hash`/`declared_output_hash` -- the caller's own `sha256_of_files`/
-       `sha256_of_labeled_files` result over `--input`/`--output` file(s), when such files were
-       declared (unchanged from P22 §2's original convention).
-    3. (output only) SHA-256 of the command's own raw stdout bytes, when stdout is non-empty and
-       neither (1) nor (2) produced a value -- the bare "the output IS this run's stdout" case
-       (`cases/repro/EQ-045_gauge_dim.json`'s own shape: no declared output file, no self-report,
-       the printed JSON result itself is what a reader would compare).
-    4. `None` -- honestly absent, never fabricated to fill the field.
+    `input_hash` priority:
+    1. A self-reported `input_sha256`/`input_hash` top-level key in the command's own JSON stdout
+       (`_extract_self_reported_hashes`) -- read back verbatim, taking priority over a
+       caller-supplied declared-file hash, because a runner that bothers to self-report is naming
+       the exact bytes IT considers its own input, which may not be a file this driver could hash
+       by path at all (`cases/repro/run_EQ-068_higgs_pdg.py`'s pinned git-blob input is the
+       paradigm case this exists for).
+    2. `declared_input_hash` -- the caller's own `sha256_of_files`/`sha256_of_labeled_files` result
+       over `--input` file(s), when such files were declared (P22 §2's original convention).
+    3. `None` -- honestly absent, never fabricated to fill the field.
+
+    `output_hash` priority (fixed 2026-09-08 -- NEVER a self-reported top-level key; see
+    `_extract_self_reported_hashes`'s docstring for the false-MISMATCH bug this closes):
+    1. `declared_output_hash` -- the caller's own `sha256_of_files`/`sha256_of_labeled_files`
+       result over `--output` file(s), when such files were declared (unchanged from P22 §2's
+       original convention).
+    2. SHA-256 of the command's own raw, complete stdout bytes, when stdout is non-empty and (1)
+       produced no value -- the bare "the output IS this run's stdout" case, and the shape both
+       first-batch real cards (`EQ-045_gauge_dim.json`, `EQ-068_higgs_pdg.json`) actually use.
+    3. `None` -- honestly absent, never fabricated to fill the field.
     """
-    self_input_hash, self_output_hash = _extract_self_reported_hashes(stdout_text)
+    self_input_hash, _unused_self_output_hash = _extract_self_reported_hashes(stdout_text)
     input_hash = self_input_hash or declared_input_hash
-    output_hash = self_output_hash or declared_output_hash
+    output_hash = declared_output_hash
     if output_hash is None and (stdout_text or "").strip():
         output_hash = hashlib.sha256((stdout_text or "").encode("utf-8")).hexdigest()
     return {"input_hash": input_hash, "output_hash": output_hash}

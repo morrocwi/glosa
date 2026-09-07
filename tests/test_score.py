@@ -85,11 +85,61 @@ class TestScoreRungs(unittest.TestCase):
             args += [flag, value]
         return run_cli(args, self.cwd)
 
-    def test_r0_always_held(self):
-        code, payload = self._score("EQ-999/H.01.v1")
+    def test_r0_false_for_a_code_absent_from_every_registry(self):
+        """Bug found live, 2026-09-08: R0 used to hold `True` unconditionally for ANY string
+        (`glosa score NONEXISTENT-CODE-999` reported R0 held:true with 'evidence' merely echoing
+        the CLI's own input argument back -- no file was ever checked). Fixed: R0 requires a real
+        registry entry with a non-empty statement, exactly like every other rung."""
+        code, payload = self._score("NONEXISTENT-CODE-999", **{"--toledo-registry": str(self.cwd / "does-not-exist.json")})
         self.assertEqual(code, 0)
-        self.assertTrue(payload["rungs"]["R0"]["held"])
-        self.assertEqual(payload["rungs"]["R0"]["evidence"][0]["ref"], "EQ-999/H.01.v1")
+        self.assertFalse(payload["rungs"]["R0"]["held"], payload["rungs"]["R0"])
+        self.assertIn("reason", payload["rungs"]["R0"])
+
+    def test_r0_held_when_registry_entry_has_a_statement(self):
+        registry_dir = self.cwd / "toledo_registry_r0"
+        registry_dir.mkdir()
+        registry_path = registry_dir / "CANONICAL.json"
+        registry_path.write_text(json.dumps([
+            {"code": "EQ-999/H.01.v1", "statement": {"latest": "a real statement"}, "coq": {"coq_status": "closed"}},
+        ]), encoding="utf-8")
+        code, payload = self._score("EQ-999/H.01.v1", **{"--toledo-registry": str(registry_path)})
+        self.assertEqual(code, 0, payload)
+        self.assertTrue(payload["rungs"]["R0"]["held"], payload["rungs"]["R0"])
+        self.assertEqual(payload["rungs"]["R0"]["evidence"][0]["code"], "EQ-999/H.01.v1")
+
+    def test_r0_false_when_registry_entry_has_no_statement(self):
+        registry_dir = self.cwd / "toledo_registry_r0_empty"
+        registry_dir.mkdir()
+        registry_path = registry_dir / "CANONICAL.json"
+        registry_path.write_text(json.dumps([
+            {"code": "EQ-999/H.01.v1", "coq": {"coq_status": "closed"}},
+        ]), encoding="utf-8")
+        code, payload = self._score("EQ-999/H.01.v1", **{"--toledo-registry": str(registry_path)})
+        self.assertEqual(code, 0, payload)
+        self.assertFalse(payload["rungs"]["R0"]["held"], payload["rungs"]["R0"])
+        self.assertIn("statement field is empty", payload["rungs"]["R0"]["reason"])
+
+    def test_r0_r2_resolve_a_layer0_root_code_from_genesis_root_json(self):
+        """Integration fix, 2026-09-08: Layer-0 root codes (e.g. `EQ-068`) live only in Toledo's
+        `registry/genesis_root.json`, never in `CANONICAL.json` -- both must be checked."""
+        registry_dir = self.cwd / "toledo_registry_root"
+        registry_dir.mkdir()
+        canonical_path = registry_dir / "CANONICAL.json"
+        canonical_path.write_text(json.dumps({"canonical": []}), encoding="utf-8")
+        genesis_path = registry_dir / "genesis_root.json"
+        genesis_path.write_text(json.dumps({"root_equations": [
+            {"code": "EQ-068", "statement": "a root statement"},
+        ]}), encoding="utf-8")
+        code, payload = self._score(
+            "EQ-068", **{"--toledo-registry": str(canonical_path), "--toledo-genesis-root": str(genesis_path)}
+        )
+        self.assertEqual(code, 0, payload)
+        self.assertTrue(payload["rungs"]["R0"]["held"], payload["rungs"]["R0"])
+        self.assertEqual(payload["rungs"]["R0"]["evidence"][0]["path"], str(genesis_path))
+        # coq_status is absent on the root row -> R2 correctly reads not-held, but via a real
+        # lookup that actually found the code (never "not found").
+        self.assertFalse(payload["rungs"]["R2"]["held"])
+        self.assertNotIn("not found", payload["rungs"]["R2"]["reason"])
 
     def test_no_scalar_score_flag_exists(self):
         """P23's own design principle: the command is built to refuse collapsing the table --
@@ -155,8 +205,14 @@ class TestScoreRungs(unittest.TestCase):
         self.assertFalse(rungs["R6"]["held"], "R6 must refuse a vacuous, always-pass tolerance")
 
     def test_no_matching_card_leaves_every_rung_but_r0_unheld(self):
+        registry_dir = self.cwd / "toledo_registry"
+        registry_dir.mkdir()
+        registry_path = registry_dir / "CANONICAL.json"
+        registry_path.write_text(json.dumps([
+            {"code": "EQ-999/H.01.v1", "statement": {"latest": "a real statement"}},
+        ]), encoding="utf-8")
         self._write_card("unrelated.json", base_card(toledo_codes=["EQ-000/H.01.v1"], claim="unrelated-claim"))
-        code, payload = self._score("EQ-999/H.01.v1")
+        code, payload = self._score("EQ-999/H.01.v1", **{"--toledo-registry": str(registry_path)})
         self.assertEqual(code, 0)
         rungs = payload["rungs"]
         self.assertTrue(rungs["R0"]["held"])

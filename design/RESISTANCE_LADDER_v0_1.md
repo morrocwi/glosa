@@ -106,10 +106,16 @@ one job the founder asked for: showing which *external* resistance step was exer
 
 **Toledo mapping is a citation, never a copy (`P19`/`P0` one-fact-one-home).** A card that names a
 Toledo code is not duplicated into Toledo; Toledo's `resistance` block (§6) cites it by
-`{repo: "glosa", commit, path, id}` the same way `origin.repo_anchor` already cites external repos —
-`glosa repro run --register-toledo` appends exactly that one row to `registry/reproduction_card_index.json`
-in the Toledo checkout (a small, git-tracked index Toledo's build reads; not itself the card's home of
-record).
+`{repo: "glosa", commit, path, id}` the same way `origin.repo_anchor` already cites external repos.
+Correction (2026-09-08 — this section originally specified a `glosa repro run --register-toledo`
+flag; it was never implemented in `cli/glosa`, confirmed live, and Toledo's own `registry/
+SCHEMA.md` addendum already documents the mechanism actually built): the citation row is produced
+Toledo-side, not glosa-side. Toledo's own `scripts/register_reproduction_evidence.py
+[--glosa-repo PATH]` reads glosa's `cases/repro/*.json` cards and `reviews/routes/**/
+review_report.{yaml,json}` files directly and regenerates `registry/reproduction_card_index.json`
+(and `registry/review_report_index.json`) wholesale — a small, git-tracked index Toledo's own
+`scripts/compute_resistance.py` reads; not itself the card's home of record. glosa exposes no flag
+or command that writes into that Toledo file.
 
 ---
 
@@ -216,9 +222,12 @@ always.
 
 **Where it is computed, and by what.** A new script `scripts/compute_resistance.py` (owned by S3,
 sibling to `scripts/n4_merge.py`/`scripts/v12_S.py` in pattern) reads `registry/CANONICAL.json`, each
-entry's own `coq{}` block, and `registry/reproduction_card_index.json` (§2's citation index, populated
-by `glosa repro run --register-toledo` from the glosa repo) plus any `review_report.yaml` pointers
-registered the same way, and **writes one `resistance` block per entry back into `registry/
+entry's own `coq{}` block, and `registry/reproduction_card_index.json` (§2's citation index —
+corrected 2026-09-08: populated Toledo-side by that repo's own
+`scripts/register_reproduction_evidence.py`, which reads glosa's `cases/repro/*.json` directly;
+never by a `glosa repro run --register-toledo` flag, which was never implemented) plus any
+`review_report.yaml` pointers registered the same way, and **writes one `resistance` block per
+entry back into `registry/
 CANONICAL.json`** — this is the one narrow, explicitly-authorized exception to "do not edit
 `CANONICAL.json` content fields except adding a computed `resistance` block via the build (never by
 hand)": a dedicated script writes it, no editor ever hand-types it, and `LINEAGE.jsonl` is untouched
