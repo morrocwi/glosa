@@ -104,3 +104,9 @@ built under.
 - Every card is tier `Dr` until an independent I2+ check actually runs against it — none of this
   batch has been independently reviewed yet (`AGENTS.md` gate rule 8: no independent check ⇒ no
   release).
+
+## P19 — Registration: where new work goes (founder ruling, 2026-09-07)
+
+| Card | File | One-line rule |
+|---|---|---|
+| P19 | `P19_registration.md` | One kind of new work, one home of record: equations → Toledo first (code, parents, tier, Coq file); records → Zenodo versions under the existing concept DOI; rulings → Blackbox Log; decisions → DECISIONS; events → logbook; claims → claim cards. Fail-closed per kind. |

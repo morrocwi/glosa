@@ -1,5 +1,10 @@
 # CHANGELOG
 ## Unreleased
+
+- P19 registration card (founder ruling 2026-09-07, BBL-2026-09-07-205): every equation is checked against and registered in Toledo (10.5281/zenodo.22537318) before it is written or cited; the card lists the home of record for each kind of new work (equation, Coq check, Zenodo record, ruling, decision, event, claim, literature card, method change, skill).
+- `scripts/zenodo_publish_draft.py`: finish an existing unpublished draft (replace files, refresh metadata, publish) under the same founder-approval gate.
+
+## Unreleased
 - Non-collapse rows **NC-78** (Potential ≠ Exercised ≠ Observed) and **NC-79** (Diagnosis of compression ≠ Attribution of responsibility) added to `methodology/data/non_collapse_table.json` — sourced from the Society/Justice/Peace series (Causal Grammar, Causal Ethics, Violence as Instability, Causal Agency), the Agency Potential note, Genesis N2/N3/VI.6 and logic.md §9.11; kernel enforcement shipped the same day as warning-only rules 32 (`NC78-READOUT-UNNAMED`, field `five_questions.seen.capability_readout`) and 33 (`NC79-ATTRIBUTION-WITHOUT-CHOOSER`, field `scope.responsibility_attribution`). Founder rulings BBL-2026-09-05-130/132.
 
 ## 0.4.1 — 2026-09-05
