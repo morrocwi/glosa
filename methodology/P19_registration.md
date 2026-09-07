@@ -50,6 +50,8 @@ read per domain — the same one-fact-one-home discipline this methodology alrea
 
 ## Gate
 
+**Prohibition (founder ruling 2026-09-07, BBL-2026-09-07-209):** no AI agent in the programme's system — of any vendor — may use an equation that is not registered in Toledo, in any output (derivation, paper, textbook page, solver, skill, slide, or answer). Unregistered ⇒ register first, or mark the line "not yet in Toledo" and stop.
+
 Fail-closed, per kind: an equation with no Toledo lookup is not presented as new; a work with no DOI is not cited as
 deposited; a ruling with no Blackbox id is not cited as a ruling; a decision with no DECISIONS row is not "done". The
 publish gate (`P10`) checks that every equation on a public page carries a Toledo code or an honest "not yet coded".
