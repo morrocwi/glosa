@@ -73,3 +73,11 @@ It does not decide the claim's tier — a fully typed assumption list with hones
 independence class §3.3 requires (that gate is P6). It does not retroactively fix a contaminated
 concept already baked into an upstream Blackbox Note line — the note is never edited in place; a
 correction is a new line (P15).
+
+**2026-09-07 addendum:** this card's full-text scan runs against the *knowledge-legitimacy*
+contaminated-concept table (`methodology/data/contaminated_concept_table.json` — "consensus",
+"proven", "validated by experts", …). Mathematical-continuum phrasing (an angle, a limit, a zero, an
+operator) is a different smuggling class, scanned against a different table owned by `P24` — that
+card's citation table cites the corresponding information-discrete-math object by its Toledo code,
+never copies the treatise's table prose; this card is not re-run for that class and does not
+restate it (one-fact-one-home).
