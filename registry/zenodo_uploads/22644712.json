@@ -1,0 +1,12 @@
+{
+ "id": 22644712,
+ "doi": "10.5281/zenodo.22644712",
+ "conceptdoi": "10.5281/zenodo.22414411",
+ "version": "v1.6-english-2026-09-08",
+ "new_version_of": "22550491",
+ "files": [
+  "Master_Equation_River_Provenance_Audit_v1_6.pdf"
+ ],
+ "founder_instructed": "Founder 2026-09-08 (BBL-230): IDM as mathematical floor; Master River v1.6 with all equations coded and the CES block (TODO IDM-6); BBL-167",
+ "date": "2026-09-08"
+}
