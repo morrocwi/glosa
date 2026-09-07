@@ -1330,7 +1330,20 @@ def _repro_verify_one(path: Path, reviewer_identity, independence_class, input_p
     review_data["role"] = "SourceAuditor"
     review_data["verdict"] = verdict
     review_data["verdict_tier"] = "finite_diagnostic" if hashes_match else "Dr"
-    review_data["independence_class"] = independence_class or "I2"
+    # Bug found live, 2026-09-08 (review journal wf_3208069c-1c1, "R5 fabricated via repro verify
+    # default"): this used to default to "I2" whenever --independence-class was not passed --
+    # exactly R5's own threshold (P23 R5 row: "independence_class >= I2"). `glosa repro verify`
+    # is a MECHANICAL re-execution: passing a different --reviewer-identity string proves maker !=
+    # checker in NAME (P10 NC-28/29), never that the identity is a genuinely independent
+    # agent/session (P22's own disclaimer: "declared-independent root != independent root",
+    # inherited unchanged). Silently granting I2 by default let every ordinary `glosa repro
+    # verify` run manufacture R5 for free, with no human ever having confirmed the reviewer
+    # identity was real and independent (P22's own Human/AI split: "Human: ... confirms a repro
+    # verify identity is genuinely independent of the run's own maker"). The honest default is
+    # now I1 (same floor `scaffold_review_report` itself already defaults every OTHER review to)
+    # -- a caller must pass --independence-class I2 (or above) explicitly, as a deliberate human
+    # confirmation, before this review can count toward R5.
+    review_data["independence_class"] = independence_class or "I1"
     review_data["shared_dependency_disclosure"] = (
         "re-executed run.command fresh in a clean temporary directory (scripts/repro_check.py); "
         if isolated else
@@ -2348,7 +2361,8 @@ def build_parser():
     a = repro.add_parser("verify", help="maker != checker: a different identity re-executes run.command fresh and confirms the hashes match")
     a.add_argument("paths", nargs="+", help="one or more reproduction_card file paths (a shell glob expands to several)")
     a.add_argument("--reviewer-identity", default=None, help="must differ from the card's own lineage.run_by")
-    a.add_argument("--independence-class", default=None, choices=["I0", "I1", "I2", "I3", "I4", "I5"])
+    a.add_argument("--independence-class", default=None, choices=["I0", "I1", "I2", "I3", "I4", "I5"],
+                    help="defaults to I1 (a mechanical re-execution under a different identity string alone does not prove genuine independence); pass I2+ only after a human has confirmed the reviewer is a genuinely independent agent/session -- R5 (P23) requires I2+")
     a.add_argument("--input", nargs="*", default=[], help="the SAME declared input file(s) passed to `repro run`, for re-hashing")
     a.add_argument("--output", nargs="*", default=[], help="the SAME declared output basename(s) passed to `repro run`, for re-hashing")
     a.add_argument("--out-dir", default=None)

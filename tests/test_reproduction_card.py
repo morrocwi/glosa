@@ -432,6 +432,61 @@ class TestCliReproEndToEnd(unittest.TestCase):
         # PyYAML may or may not be installed in the test environment -- only assert on the JSON path.
         if review is not None:
             self.assertEqual(review["role"], "SourceAuditor")
+            # Regression (review journal wf_3208069c-1c1, "R5 fabricated via repro verify
+            # default"): a mechanical `glosa repro verify` run with no explicit
+            # --independence-class must default to I1, never the I2 that would silently satisfy
+            # R5's own threshold for free -- a different --reviewer-identity STRING proves maker
+            # != checker in name (P10 NC-28/29), never genuine independence (P22's own
+            # "declared-independent root != independent root").
+            self.assertEqual(review["independence_class"], "I1")
+
+    def test_repro_verify_independence_class_defaults_to_i1_not_i2(self):
+        """Same regression as above, isolated to the CLI flag surface: an explicit
+        --independence-class I3 is honored verbatim (a human's deliberate confirmation), while
+        omitting the flag never silently produces I2 or above."""
+        code, _ = run_cli(
+            ["repro", "new", "--id", "IC-DEFAULT", "--claim", "1+1=2",
+             "--toledo-codes", "EQ-999/H.01.v1",
+             "--oracle-kind", "independent_implementation", "--oracle-source", "stdlib arithmetic",
+             "--doi-or-url", "n/a", "--version", "1.0",
+             "--statement", "sum equals 2", "--tolerance", "exact integer match, 0 discrepancy",
+             "--human-owner", "tester", "--out-dir", "cards"],
+            self.cwd,
+        )
+        self.assertEqual(code, 0)
+        card_path = "cards/IC-DEFAULT.json"
+        code, _ = run_cli(
+            ["repro", "run", card_path, "--command", 'python3 -c "print(1+1)"', "--reference", "2"],
+            self.cwd,
+        )
+        self.assertEqual(code, 0)
+
+        def _load_written(payload):
+            path = self.cwd / payload["written"]["path"]
+            if path.suffix != ".json":
+                return None  # PyYAML-backed .yaml write -- only assert on the JSON path.
+            return json.loads(path.read_text(encoding="utf-8"))
+
+        # No --independence-class given: must default to I1.
+        code, payload = run_cli(
+            ["repro", "verify", card_path, "--reviewer-identity", "checker-default", "--out-dir", "reviews-default"],
+            self.cwd,
+        )
+        self.assertEqual(code, 0, payload)
+        review = _load_written(payload)
+        if review is not None:
+            self.assertEqual(review["independence_class"], "I1")
+
+        # Explicit --independence-class I3 (a human's own deliberate confirmation) is honored.
+        code, payload = run_cli(
+            ["repro", "verify", card_path, "--reviewer-identity", "checker-explicit",
+             "--independence-class", "I3", "--out-dir", "reviews-explicit"],
+            self.cwd,
+        )
+        self.assertEqual(code, 0, payload)
+        review2 = _load_written(payload)
+        if review2 is not None:
+            self.assertEqual(review2["independence_class"], "I3")
 
         # to-ret: coq_kernel oracle is refused elsewhere (TestToRetRows above); here the
         # independent_implementation oracle of this card must succeed and produce a world_record row.

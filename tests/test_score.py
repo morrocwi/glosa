@@ -220,6 +220,88 @@ class TestScoreRungs(unittest.TestCase):
             self.assertFalse(rungs[rung]["held"], rung)
             self.assertIn("reason", rungs[rung])
 
+    def test_r3_r4_r6_not_held_when_a_linked_repro_verify_review_records_a_hash_mismatch(self):
+        """Review journal wf_3208069c-1c1, "R3/R4/R6 ignore verify mismatch": a card whose latest
+        `glosa repro verify` outcome (its own repro-verify review_report) disclosed a hash
+        MISMATCH must not count toward R3 (and therefore not R4/R6), even though the maker's own
+        `run{}` looks complete -- this is the EQ-068 false-positive the review journal names."""
+        card = base_card()
+        self._write_card("c1.json", card)
+        review_dir = self.cwd / "reviews_dir" / "repro-verify-REPRO-SCORE-0001"
+        review_dir.mkdir(parents=True)
+        review = {
+            "$schema": "review_report.schema.json",
+            "claim_ref": "score-test-claim",
+            "route_id": f"repro-verify-{card['id']}",
+            "reviewer_identity": "checker1",
+            "independence_class": "I1",
+            "role": "SourceAuditor",
+            "verdict": "hash match on re-execution: input_hash MATCH ('a' vs 'a'), "
+                       "output_hash MISMATCH ('b' vs 'c').",
+            "verdict_tier": "Dr",
+            "date": "2026-09-08",
+        }
+        (review_dir / "review_report.json").write_text(json.dumps(review), encoding="utf-8")
+        code, payload = self._score("EQ-999/H.01.v1")
+        self.assertEqual(code, 0, payload)
+        rungs = payload["rungs"]
+        self.assertFalse(rungs["R3"]["held"], rungs["R3"])
+        self.assertIn("MISMATCH", rungs["R3"]["reason"])
+        self.assertFalse(rungs["R4"]["held"], "R4 must not hold once its own R3-holding card is withdrawn")
+        self.assertFalse(rungs["R6"]["held"], "R6 must not hold once R4 is withdrawn")
+
+    def test_r3_still_held_when_the_linked_verify_review_matches(self):
+        """Companion to the mismatch regression above: a MATCHING repro-verify review must not
+        accidentally withdraw R3 -- only a disclosed MISMATCH does."""
+        card = base_card()
+        self._write_card("c1.json", card)
+        review_dir = self.cwd / "reviews_dir" / "repro-verify-REPRO-SCORE-0001"
+        review_dir.mkdir(parents=True)
+        review = {
+            "$schema": "review_report.schema.json",
+            "claim_ref": "score-test-claim",
+            "route_id": f"repro-verify-{card['id']}",
+            "reviewer_identity": "checker1",
+            "independence_class": "I1",
+            "role": "SourceAuditor",
+            "verdict": "hash match on re-execution: input_hash MATCH ('a' vs 'a'), "
+                       "output_hash MATCH ('b' vs 'b').",
+            "verdict_tier": "finite_diagnostic",
+            "date": "2026-09-08",
+        }
+        (review_dir / "review_report.json").write_text(json.dumps(review), encoding="utf-8")
+        code, payload = self._score("EQ-999/H.01.v1")
+        self.assertEqual(code, 0, payload)
+        rungs = payload["rungs"]
+        self.assertTrue(rungs["R3"]["held"], rungs["R3"])
+        self.assertTrue(rungs["R4"]["held"], rungs["R4"])
+        self.assertTrue(rungs["R6"]["held"], rungs["R6"])
+
+    def test_r5_not_fabricated_by_a_default_independence_class_repro_verify_review(self):
+        """Review journal wf_3208069c-1c1, "R5 fabricated via repro verify default": a
+        repro-verify review_report scaffolded with the tool's own (pre-fix) default
+        independence_class must not, by itself, hold R5 -- R5 requires I2+, and a mechanical
+        re-execution under a different identity STRING alone (I1, the fixed default) is not
+        that. This exercises `glosa score`'s own R5 rung directly against such a review."""
+        self._write_card("c1.json", base_card())
+        review_dir = self.cwd / "reviews_dir" / "repro-verify-REPRO-SCORE-0001"
+        review_dir.mkdir(parents=True)
+        review = {
+            "$schema": "review_report.schema.json",
+            "claim_ref": "score-test-claim",
+            "route_id": "repro-verify-REPRO-SCORE-0001",
+            "reviewer_identity": "checker1",
+            "independence_class": "I1",
+            "role": "SourceAuditor",
+            "verdict": "hash match on re-execution: input_hash MATCH, output_hash MATCH.",
+            "verdict_tier": "finite_diagnostic",
+            "date": "2026-09-08",
+        }
+        (review_dir / "review_report.json").write_text(json.dumps(review), encoding="utf-8")
+        code, payload = self._score("EQ-999/H.01.v1")
+        self.assertEqual(code, 0, payload)
+        self.assertFalse(payload["rungs"]["R5"]["held"], payload["rungs"]["R5"])
+
     def test_r5_held_with_independent_review(self):
         self._write_card("c1.json", base_card())
         review_dir = self.cwd / "reviews_dir" / "route1"
