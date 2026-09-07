@@ -34,15 +34,14 @@ Three roles, never merged, because each contributes a different kind of knowledg
    hypothesis generation, formalisation, adversarial review, provenance audit, typesetting, …). Two models ⇒ two
    entries; never the summary "AI was used".
 
-Non-collapse rule of the system (registered in Toledo before use, per `P19`):
+Non-collapse rule of the system (Toledo code weld/H.33.v1, registered before use per `P19`):
 
     Experience-Based Expertise ≠ Interactional Expertise ≠ AI Model
 
 A model that connects and widens the candidate space does not thereby become an experience-based expert: it was not
 at the site of the problem. A person with real experience does not thereby hold interactional expertise across fields.
 
-Formal object (founder's [New Definition / Proposal], registered in Toledo as a coded reading; cite its code once
-assigned):
+Formal objects (founder's [New Definition / Proposal], registered in Toledo 2026-09-07 — cite these codes): E_p = weld/H.30.v1; M_p^AI = weld/H.31.v1; X_p^int = ∅ = weld/H.32.v1; the non-collapse rule = weld/H.33.v1 (tier Dr); X_p^exp = ⟨Exp, Sel, Int⟩ = weld/H.34.v1 (Toledo v1.4.0, concept DOI 10.5281/zenodo.22537318):
 
     E_p = ⟨ X_p^exp , X_p^int , M_p^AI ⟩ ,   M_p^AI = { M_1, …, M_k } ,   X_p^int = ∅ when no interactional expert holds the role.
 

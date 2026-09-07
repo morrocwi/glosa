@@ -4,5 +4,5 @@
 **Interactional Expert:** [name / role] or **None**
 **AI Model(s) Used:** [Model 1 — role]; [Model 2 — role]
 
-Non-collapse rule: Experience-Based Expertise ≠ Interactional Expertise ≠ AI Model  (Toledo code: [to be cited once assigned])
+Non-collapse rule: Experience-Based Expertise ≠ Interactional Expertise ≠ AI Model  (Toledo weld/H.33.v1; structure E_p weld/H.30.v1)
 Registration is an attribution device, not a certification of truth or expertise.

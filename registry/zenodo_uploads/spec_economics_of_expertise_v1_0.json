@@ -1,0 +1,36 @@
+{
+ "upload_type": "publication",
+ "publication_type": "preprint",
+ "language": "eng",
+ "file": "dist/economics-of-expertise/The_Economics_of_Expertise_in_the_Age_of_Generative_AI_v1_0.pdf",
+ "title": "The Economics of Expertise in the Age of Generative AI: From Constrained Scientific Creativity to Epistemic Scarcity (Final Journal Manuscript v1.0)",
+ "publication_date": "2026-09-07",
+ "version": "v1.0-2026-09-07",
+ "description_html": "<p><b>What this is.</b> A theory/perspective manuscript (Final Journal Manuscript v1.0, 7 September 2026; submission-ready, not peer reviewed) on the economics of expertise under generative AI: why candidate abundance shifts scarcity from generating knowledge-like output to validating it; why knowledge is not expertise; expertise as a context-bound human state (three ideal-type states, not a deterministic ladder); a formal economics of candidate abundance and validation scarcity (candidate sets, validation capacity, backlog, steady state, AI-induced epistemic scarcity shift, validated throughput and value, bottleneck revaluation); and why practitioners become epistemically central. It introduces a three-part Core Epistemic Registration for projects — core respondent / experience-based expert, interactional expert (or None), and the AI model(s) used with their roles — with the non-collapse rule that these three never merge.</p><p><b>Equation provenance.</b> Existing equations attributed to the Human–AI Readout Programme are taken from Toledo, the programme's equation library (concept DOI 10.5281/zenodo.22537318), and cited by lineage; every new definition, derivation, architecture and hypothesis is labelled as such in the paper's own Appendix A ledger (30 numbered equations) and is registered in Toledo as a coded reading with this record as its origin.</p><p><b>Status.</b> K0 theory manuscript with an explicit claim-boundary ledger; hypotheses H1–H9 carry falsifiers. Checked under the glosa methodology before deposit (assessment in the programme's research journal). The paper's own Core Epistemic Registration names the AI models used and their roles, by the author's decision; no AI system is an author or contributor.</p>",
+ "keywords": [
+  "economics of expertise",
+  "generative AI",
+  "economics of science",
+  "early-career researchers",
+  "scientific creativity",
+  "interactional expertise",
+  "contributory expertise",
+  "practitioner knowledge",
+  "validation bottleneck",
+  "research policy",
+  "Core Epistemic Registration",
+  "Toledo",
+  "Human-AI Readout Programme"
+ ],
+ "related": [
+  {
+   "identifier": "10.5281/zenodo.22308201",
+   "relation": "isPartOf"
+  },
+  {
+   "identifier": "10.5281/zenodo.22537318",
+   "relation": "references",
+   "resource_type": "software"
+  }
+ ]
+}

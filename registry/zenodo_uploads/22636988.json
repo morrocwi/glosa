@@ -1,0 +1,11 @@
+{
+ "deposition_id": 22636988,
+ "founder_instructed_bypass": {
+  "instruction": "Founder 2026-09-07: 'the_economics_of_expertise_ai_final_journal_manuscript_v1_0 อ่านงานนี้ เข้าระบบ glosa ลงทะเบียนสมการอื่นๆ และตรวจสอบเข้มพร้อมแล้ว เอาเข้า zenodo'; AI model names permitted per artifact (BBL-214) and the chair's model added (BBL-215); glosa review PASS (ASSESSMENT_2026-09-07_economics_of_expertise_v1_0_glosa.md); BBL-167",
+  "logged_at": "2026-09-07T13:39:54"
+ },
+ "doi": "10.5281/zenodo.22636988",
+ "conceptdoi": "10.5281/zenodo.22636987",
+ "url": "https://zenodo.org/record/22636988",
+ "title": "The Economics of Expertise in the Age of Generative AI: From Constrained Scientific Creativity to Epistemic Scarcity (Final Journal Manuscript v1.0)"
+}
