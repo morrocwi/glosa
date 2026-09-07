@@ -34,7 +34,13 @@ dimensions:
   (Appendix C) and this repo's priority-claim word list (the terms this repo's own gate excludes
   under `EPIS-KNOWLEDGE-VALIDATION`'s no-priority-contest stance, and the "we took/borrowed this
   from them" framing barred except where a human explicitly instructed adoption) — any hit is a
-  hard fail, not a style note.
+  hard fail, not a style note. (2026-09-07: `scripts/check_forbidden_words.sh`'s `[QUOTED-SOURCE]`
+  class carves out one narrow, counted-not-failing exception — a forbidden word occurring inside a
+  third-party record's own verbatim Zenodo abstract, quoted (never authored) into a generated
+  `docs/library/` knowledge-graph file under a `quoted_`-prefixed key or the guide's own labelled
+  "Quoted from the record's own abstract" block — because the word there is that record's own
+  wording being cited, not a glosa claim; the author's own voice, everywhere else, stays a hard
+  fail with no such exception.)
 - **R7 — Completeness.** Every `\claimref{}`/field the artifact points at actually resolves (no
   dangling reference, no promised appendix missing) — the same discipline `FOUNDATION_v0.5.md`
   §12 applies to its own document, applied here to the artifact being published.

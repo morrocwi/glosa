@@ -8,8 +8,25 @@
 # via scripts/forbidden_words_allowlist.txt (design/ and lineage/ ONLY);
 # every other path is a hard fail on any match.
 #
-# Exit 0 = no un-allowlisted forbidden word found in any tracked file.
-# Exit 1 = at least one un-allowlisted match found.
+# Three classes of hit, in priority order:
+#   [META-RULE-TEXT] — the hit is inside a sentence that states this very ban (e.g. this file's
+#     own docstring); never a finding.
+#   [QUOTED-SOURCE] (added 2026-09-07) — the hit sits inside a generated file under docs/library/
+#     (scripts/zenodo_library_kg.py's output) AND is either (a) a JSON line whose key starts with
+#     `quoted_` (e.g. `"quoted_abstract_head": ...`), verbatim third-party Zenodo-abstract text, or
+#     (b) a Markdown line that is itself, or immediately follows, the script's own
+#     "Quoted from the record's own abstract" label line. This class is COUNTED and PRINTED but
+#     NEVER fails the gate — the word is a record's own vocabulary, quoted, not a glosa claim.
+#     Scope is exactly docs/library/*.json and docs/library/*.md (recursively, incl. docs/library/
+#     jps/); every other file, including glosa's own authored prose anywhere else in docs/, stays
+#     strict. This does not touch or widen scripts/forbidden_words_allowlist.txt, which remains
+#     design/ and lineage/ (plus the pre-existing reviews//sources//registry//blackbox//
+#     methodology/data//records//knowledge//tests/sim//docs/kg_ prefixes) only.
+#   [ALLOWLISTED] — an exact (path-prefix, word) pair from scripts/forbidden_words_allowlist.txt.
+#   [FOUND] — none of the above: a real finding, fails the gate.
+#
+# Exit 0 = no un-allowlisted, non-quoted-source forbidden word found in any tracked file.
+# Exit 1 = at least one [FOUND] match.
 
 set -u
 cd "$(git rev-parse --show-toplevel 2>/dev/null || echo .)" || exit 1
@@ -58,10 +75,41 @@ is_allowlisted() {
   return 1
 }
 
+# [QUOTED-SOURCE]: a docs/library/*.json line whose key starts with quoted_, or a docs/library/*.md
+# line that is (or immediately follows) the "Quoted from the record's own abstract" label line.
+is_quoted_source() {
+  local file="$1" lineno="$2" linetext="$3"
+  case "$file" in
+    docs/library/*.json) ;;
+    docs/library/*.md) ;;
+    *) return 1 ;;
+  esac
+  case "$file" in
+    *.json)
+      printf '%s' "$linetext" | grep -qE '"quoted_[A-Za-z0-9_]*"[[:space:]]*:' && return 0
+      return 1
+      ;;
+    *.md)
+      if printf '%s' "$linetext" | grep -qi "Quoted from the record's own abstract"; then
+        return 0
+      fi
+      if printf '%s' "$linetext" | grep -qE '^> '; then
+        local prev=$((lineno - 1))
+        local prevtext
+        prevtext="$(sed -n "${prev}p" "$file" 2>/dev/null)"
+        printf '%s' "$prevtext" | grep -qi "Quoted from the record's own abstract" && return 0
+      fi
+      return 1
+      ;;
+  esac
+  return 1
+}
+
 mapfile -t TRACKED < <(git ls-files)
 
 META='forbidden|banned|never|do not|allowlist|check_forbidden_words|ห้าม|ไม่มีคำ|no novelty|novelty claim|no priority|priority claim|same */ *different|outside a clearly|"phrase"|wording_en|rank\)|metadata only|is not the realism'
 HITS=0
+QUOTED=0
 for f in "${TRACKED[@]}"; do
   case "$f" in
     scripts/check_forbidden_words.sh|scripts/forbidden_words_allowlist.txt|*.i3.json|*.i5.json) continue ;;  # route-verdict sidecars quote third-party text (data, not our claims)
@@ -81,6 +129,11 @@ for f in "${TRACKED[@]}"; do
       say "  [META-RULE-TEXT] $f:$lineno: $word"
       continue
     fi
+    if is_quoted_source "$f" "$lineno" "$linetext"; then
+      say "  [QUOTED-SOURCE] $f:$lineno: $word"
+      QUOTED=$((QUOTED + 1))
+      continue
+    fi
     if is_allowlisted "$f" "$word"; then
       say "  [ALLOWLISTED] $f:$lineno: $word"
     else
@@ -93,6 +146,7 @@ done
 
 say ""
 say "== summary =="
+say "quoted-source hits (docs/library/, never fail): $QUOTED"
 if [ "$FAIL" -eq 0 ]; then
   say "check_forbidden_words.sh: PASS (0 un-allowlisted hits)"
 else

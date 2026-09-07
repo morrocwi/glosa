@@ -11,6 +11,17 @@ Builds, from LIVE Zenodo metadata only (no invented relations), a graph that ano
 Every edge comes from a record's own related_identifiers (Zenodo metadata the author wrote), plus
 version edges (isVersionOf) from Zenodo's concept ids. Readout, not truth: the graph is a diagram of
 the metadata as fetched on the build date; it is not a claim about which paper is "better".
+
+Quoted-source handling (added 2026-09-07, methodology/P10 R6/scripts/check_forbidden_words.sh
+[QUOTED-SOURCE] class): a record's own Zenodo abstract is copied verbatim, not authored by this
+script or by glosa, so any of scripts/check_forbidden_words.sh's forbidden words appearing *inside
+that verbatim quote* (e.g. a record's abstract describing what it removed, in its own words) is
+third-party data, not a glosa claim. Every field derived from a record's abstract is therefore
+stored under a `quoted_` key (`quoted_abstract_head`, never bare `abstract_head`) so the scanner can
+tell a quote from an authored sentence by the JSON key alone, and the Markdown guide renders it
+inside an explicit "> Quoted from the record's own abstract (verbatim, not a glosa claim):" blockquote
+so the same holds for a human or AI reader of the .md file. Nothing else in this script (titles,
+dates, relation vocabulary, the guide's own prose) is exempt — those stay under the strict rule.
 tier: Dr (tool). usage: zenodo_library_kg.py [--hub 22308201] [--out docs/library]
 """
 import argparse
@@ -53,7 +64,10 @@ def rec_node(d):
         "creators": [c.get("name") for c in m.get("creators", [])],
         "url": f"https://zenodo.org/records/{rid}",
         "related": m.get("related_identifiers", []),
-        "abstract_head": re.sub(r"<[^>]+>", " ", m.get("description", ""))[:400].strip(),
+        # quoted_ prefix: verbatim from the record's own Zenodo abstract, not authored by this
+        # script — see the module docstring's "Quoted-source handling" note and
+        # scripts/check_forbidden_words.sh's [QUOTED-SOURCE] class.
+        "quoted_abstract_head": re.sub(r"<[^>]+>", " ", m.get("description", ""))[:400].strip(),
     }
 
 
@@ -173,6 +187,22 @@ def main():
         vo = [e["target"] for e in edges if e["source"] == r and e["relation"].startswith("isVersionOf")]
         outs = [e for e in edges if e["source"] == r and e["relation"] not in ("isPartOf",)]
         L.append(f"| {n.get('date')} | {n['title'][:90]} | [{n['@id'].split('/')[-1]}]({n['@id']}) | {('→ '+vo[0]) if vo else 'latest'} | {len(outs)} |")
+    L.append("\n## Abstracts (quoted from each record's own Zenodo metadata)\n")
+    L.append("Each block below is copied verbatim from that record's own Zenodo abstract "
+              "(truncated to 400 characters) — it is the record's own wording, not a glosa claim, "
+              "and is quoted here only so an AI reading this guide does not have to re-fetch Zenodo. "
+              "A forbidden word appearing inside one of these blocks (e.g. a record describing what "
+              "it removed, in its own words) is third-party data under "
+              "`scripts/check_forbidden_words.sh`'s `[QUOTED-SOURCE]` class, never a glosa-authored "
+              "overclaim.\n")
+    for r in [a.hub] + mem:
+        q = nodes[r].get("quoted_abstract_head")
+        if not q:
+            continue
+        L.append(f"**{T(r)[:90]}** ([{nodes[r]['@id'].split('/')[-1]}]({nodes[r]['@id']}))\n")
+        L.append("> Quoted from the record's own abstract (verbatim, not a glosa claim):")
+        L.append("> " + q.replace("\n", " ") + ("…" if len(q) >= 400 else ""))
+        L.append("")
     other = [r for r, n in nodes.items() if n["role"] not in ("member", "hub")]
     if other:
         L.append("\n## Referenced records outside the hub (one hop)\n")
