@@ -38,13 +38,13 @@
       }
     },
     "oracle": {
-      "description": "kind has exactly five values and no 'none' (P22's own rationale: even an R3-only card names the closest comparison target). source/doi_or_url/version are pinned once known -- null only pre-run, never left null once result is filled for an external-oracle kind (kernel-checked: schema alone cannot express 'null iff result is still PENDING').",
+      "description": "kind has exactly six values and no 'none' (P22's own rationale: even an R3-only card names the closest comparison target). source/doi_or_url/version are pinned once known -- null only pre-run, never left null once result is filled for an external-oracle kind (kernel-checked: schema alone cannot express 'null iff result is still PENDING'). 'twin_consistency' (added 2026-09-08, Toledo Executable Equations R1-1 integration fix) names a same-IR/same-source cross-implementation check -- e.g. a Python reference and a JavaScript twin walking the identical tree an identical extraction pipeline produced from the identical statement -- which is real, filed, hash-frozen evidence a run actually happened (it can hold R3) but is NOT independent of that extraction the way `published_value`/`independent_implementation`/`public_dataset` are, so `scripts/compute_resistance.py::EXTERNAL_ORACLE_KINDS` deliberately excludes it and it can never hold R4/R6 (P23_resistance_ladder.md).",
       "type": "object",
       "required": ["kind", "source"],
       "additionalProperties": true,
       "properties": {
         "kind": {
-          "enum": ["published_value", "independent_implementation", "public_dataset", "coq_kernel", "human_review"]
+          "enum": ["published_value", "independent_implementation", "public_dataset", "coq_kernel", "human_review", "twin_consistency"]
         },
         "source": { "type": "string", "minLength": 1 },
         "doi_or_url": { "type": ["string", "null"] },

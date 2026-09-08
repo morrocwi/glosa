@@ -2342,7 +2342,7 @@ def build_parser():
     a.add_argument("--claim", required=True)
     a.add_argument("--toledo-codes", default="", help="comma-separated Toledo codes this card backs; may be empty only with --pending-toledo-code")
     a.add_argument("--pending-toledo-code", action="store_true", help="license an empty --toledo-codes -- sets status: pending_toledo_code; never invent a code instead")
-    a.add_argument("--oracle-kind", required=True, choices=["published_value", "independent_implementation", "public_dataset", "coq_kernel", "human_review"])
+    a.add_argument("--oracle-kind", required=True, choices=["published_value", "independent_implementation", "public_dataset", "coq_kernel", "human_review", "twin_consistency"])
     a.add_argument("--oracle-source", required=True)
     a.add_argument("--doi-or-url", default=None)
     a.add_argument("--version", default=None)

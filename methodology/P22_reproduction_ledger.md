@@ -46,12 +46,25 @@ The binding order, enforced by the tooling, never by convention alone:
    `design/RESISTANCE_LADDER_v0_1.md` §4 — and **refuses** for `oracle.kind == "coq_kernel"`,
    because Coq closure is machine-side resistance (R2), never a world-side/reviewer-side row.
 
-**Why `oracle.kind` has exactly five values and no "none".** Every card in the Ledger names the
+**Why `oracle.kind` has exactly six values and no "none".** Every card in the Ledger names the
 closest thing its own run's output is being checked against, even when that comparison is trivial
-— `published_value`, `independent_implementation`, `public_dataset`, `coq_kernel`, `human_review`.
-A genuinely oracle-free run belongs in the project's own test suite, not this Ledger, because this
-Ledger's one job is to show which *external* resistance step was actually exercised, never merely
-"the script ran" (`design/RESISTANCE_LADDER_v0_1.md` §2).
+— `published_value`, `independent_implementation`, `public_dataset`, `coq_kernel`, `human_review`,
+`twin_consistency`. A genuinely oracle-free run belongs in the project's own test suite, not this
+Ledger, because this Ledger's one job is to show which *external* resistance step was actually
+exercised, never merely "the script ran" (`design/RESISTANCE_LADDER_v0_1.md` §2).
+
+**`twin_consistency` (added 2026-09-08, Toledo Executable Equations R1-1 integration fix) is
+deliberately weaker than the other five.** It names a same-IR/same-source cross-implementation
+check — two evaluators (e.g. a Python reference and a JavaScript twin) walking the IDENTICAL tree
+an identical extraction pipeline produced from the identical statement — so agreement between them
+is not evidence independent of that extraction; a mis-extraction bug would reproduce identically in
+both and still agree. It is real, filed, hash-frozen evidence that a reproducible,
+`ai_at_runtime == 0` run happened, and can HOLD R3 on that basis alone — but
+`scripts/compute_resistance.py::EXTERNAL_ORACLE_KINDS` (the toledo repo's own mirror of this list)
+deliberately omits it, so it can never hold R4 or R6 the way the first three, genuinely external
+kinds can (`design/RESISTANCE_LADDER_v0_1.md` §1's R4 row). Use it only for this narrow shape —
+never as a softer substitute for `independent_implementation` when a comparison target really is
+external to the thing being checked.
 
 **Toledo mapping is a citation, never a copy** (`P19`/`P0` one-fact-one-home). A card naming a
 Toledo code is not duplicated into Toledo — `toledo_codes[]` may be empty only when
