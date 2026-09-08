@@ -75,6 +75,30 @@ Two mechanical defects found in this plan file by a 40-concept sample check agai
 
 No other concept in the 40-sample was found misclassified. Total concept count (229) re-verified against the live public API on 2026-09-07.
 
+## Applied (2026-09-08, founder ruling BBL-2026-09-08-243, item 1)
+
+The follow-up flagged above is done. New script `scripts/zenodo_remove_relation.py` (same gates and
+register style as `scripts/zenodo_add_relation.py`: `--target`/`--relation`/`--records`/`--dry-run`,
+`--founder-instructed`/`--i-have-founder-approval`, GET-diff-before-write, refuses a record that is
+not the latest version of its concept unless `--allow-old-version`) removed the wrong `isPartOf`
+relations from both records (current version ids 22302410 / 22301886, concept ids 22302409 /
+22301885) to the islam hub (10.5281/zenodo.22301554) and the se hub (10.5281/zenodo.22301566).
+
+- Dry-run then apply, one target relation at a time, both records together, verified via the
+  public API (no token) afterward: neither record lists 22301554 or 22301566 any more; every other
+  related identifier (the genuine `aihp`/`ai`/`ep` hub `isPartOf` entries — 22301459, 22301552,
+  22308201 — plus all `references`/`isSupplementTo` anchors) survived byte-identical.
+- Checked the islam and se hub records' own `hasPart` lists via the public API before considering
+  `zenodo_cluster.py`: neither ever named 22302410 or 22301886 (the false membership lived only on
+  the member record's `isPartOf` side, from the 2026-09-04 linking pass on an older version — see
+  above), so `fetch`/`tag`/`hubs-refresh` was correctly **not** run for this fix (running
+  `hubs-refresh` without cause was the 2026-09-08 incident this plan already warns against).
+- Hub `hasPart` counts (public API, unchanged by this fix, recorded for the record): ep 74, he 17,
+  ph 115, ai 47, islam 13, tourism 6, se 6, aihp 37, jps 13.
+- Unit test for the removal script's pure function: `tests/test_zenodo_remove_relation.py`
+  (`compute_removal` — exact-pair removal, order/byte-identity preservation of kept entries,
+  duplicate-pair removal, no-match no-op).
+
 ## Not done
 
 - No write to Zenodo. This plan is a proposal only.
