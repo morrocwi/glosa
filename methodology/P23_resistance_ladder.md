@@ -111,3 +111,7 @@ command run while drafting it (reported, not asserted from memory) — the desig
 themselves await this build's own test suite before any part of it is `finite_diagnostic` in the
 fuller "tests executed" sense. `tests/test_score.py` gives that grounding for `glosa score`'s own
 rung-computation logic — run it and read the output.
+
+
+### Addendum 2026-09-08 — the Equation River codes in Toledo
+The strengthening model behind this ladder is registered in Toledo (v1.7): rung set S_n(q) = weld/M.33.v1; strengthening law S_{n+1} = (S_n ∪ A_n) \ W_n = weld/M.34.v1; strength readout σ(q) = S_n (the held set, never a scalar warrant) = weld/M.35.v1; return map q^{(v+1)} = Φ(q^{(v)}, δ) with a LINEAGE 'revised' event = EQ-015/H.50.v1; stage non-collapse (thought ≠ registered ≠ closed ≠ reproduced ≠ oracle-checked ≠ reviewed ≠ world-recorded; PASS ≠ proven) = weld/M.36.v1; stages 3–4 computed on ℚ with an oracle outside the loop = EQ-015/M.17.v1. Founder instruction BBL-2026-09-08-238.
