@@ -154,12 +154,12 @@ def main():
     pub = api('POST', f'https://zenodo.org/api/deposit/depositions/{did}/actions/publish')
     out = {'deposition_id': did, 'doi': pub.get('doi'), 'conceptdoi': pub.get('conceptdoi'), 'url': pub.get('links', {}).get('record_html'), 'title': spec['title']}
     print(json.dumps(out, ensure_ascii=False))
-    os.makedirs('registry/zenodo_uploads', exist_ok=True)
-    out_path = f'registry/zenodo_uploads/{did}.json'
+    ZENODO_UPLOADS_DIR.mkdir(parents=True, exist_ok=True)
+    out_path = ZENODO_UPLOADS_DIR / f'{did}.json'
     existing = {}
-    if os.path.exists(out_path):
+    if out_path.exists():
         try:
-            existing = json.load(open(out_path, encoding='utf-8'))
+            existing = json.loads(out_path.read_text(encoding='utf-8'))
         except (OSError, ValueError):
             existing = {}
     existing.update(out)
