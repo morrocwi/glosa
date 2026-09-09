@@ -112,3 +112,70 @@ large-dynamic-range observable tied to absolute error scale (not yet identified 
 different framing that reasons about the coarse initial estimate's own error distribution directly.
 
 Full accounting: `task-conditioned-6d-pose-stop/lab/results/real-bop-lmo-2026-09-09-run6/RESULT.md`.
+
+## Team meeting, 2026-09-09: PROP-NATIVE-04 registered as the run-7 candidate
+
+Founder instruction after run 6's refutation: convene an ultracode team meeting reading the six-run
+history through the Toledo, readout_genesis, readout_universe, and glosa-methodology lenses, and find
+the answer. Four independent lens agents converged, from four directions, on the same diagnosis:
+runs 4-6 (PROP-DECAY-01, PROP-NATIVE-01/02/03) each read only a LOCAL, single-instant or
+boolean-folded quantity (H_k's own eigenstructure or a streak of pass/fail checks) and never an
+absolute, calibrated SCALE term -- which is exactly the ingredient PROP-NATIVE-02's own honest_caveats
+and run 6's own diagnostic named as missing. The one already-registered, already-validated
+(CONTINUUM_AUDIT_20260909.md rates its marginal-coverage machinery LOW RISK) absolute-scale observable
+in the whole project is the split-conformal quantile from runs 1-3 (PROP-CONF-01/02/03) -- never once
+combined with a native/local check across six cycles (methodological gap #2 identified by the
+glosa-methodology lens read of this project's own ledger).
+
+**Registered candidate: `PROP-NATIVE-04`** (Toledo:
+`toledo/registry/proposals/native_retained_sensitivity.json`, tier Dr, status unverified -- design
+only, not yet run). Three concrete changes on top of PROP-NATIVE-02/03, one per diagnosed defect:
+1. Perturbation magnitude `eps_{k,j} := min(q_k/lambda_j, weld/M.40.v1 ceiling)`, where `q_k` is
+   PROP-CONF-03's per-checkpoint Bonferroni conformal quantile (calibrated OFFLINE on the n=40
+   calibration set only, never online) -- replaces run 5's undersized, TRAIN-population-borrowed CAP.
+2. Per-stage signal is `Gamma_k := sum_j lambda_j * eps_{k,j}^2`, Toledo's proven Keystone quadratic-form
+   energy (`Phi^T L_R Phi`, specialized `L_R -> H_k`) -- a real magnitude, not run 6's degenerate
+   boolean indicator.
+3. Accumulator is a DECAYED real-valued running sum `m_k := rho*m_{k-1} + iota_k*Gamma_k` (Toledo root
+   A2/FOLD, generalized to a real carrier) rather than run 6's hard reset-to-zero streak.
+   ACT iff `m_{k_m} >= theta` AND `q_{k_m} <= tau_i` (the calibrated envelope already fits the task
+   tolerance, C11).
+
+This is a design record only -- P08's full four-discipline diagnosis was not re-run for this entry
+(the standing methodological gaps it identified, same-split reuse and the either/or hypothesis-class
+gap, are carried forward as open risks in the Toledo entry's `honest_caveats`, not resolved here).
+Full reasoning, parents, and open risks: `toledo/registry/proposals/native_retained_sensitivity.json`
+entry `PROP-NATIVE-04`. Implementation and execution (run 7) is a separate, not-yet-authorized-by-this-
+document Execute-phase step.
+
+## Run 7 executed, 2026-09-09: PROP-NATIVE-04 refuted, over-conservative direction
+
+Execute-phase result: `task-conditioned-6d-pose-stop/lab/results/real-bop-lmo-2026-09-09-run7/RESULT.md`,
+Toledo status updated to `refuted_over_conservative`
+(`toledo/registry/proposals/native_retained_sensitivity.json`, entry `PROP-NATIVE-04`).
+
+A TRAIN+CALIBRATION-only diagnostic, disclosed BEFORE `test.jsonl` was opened, predicted the exact
+failure mode that FINAL TEST then confirmed: (1) `eps_{k,j}=min(q_k/lambda_j, CEILING)` saturates at
+the reused CEILING (byte-identical to runs 5-6's own CAP) on 100% of TRAIN stage-checkpoint pairs --
+`q_k` is uniformly larger than the ceiling on this backend, so the conformal-quantile term never
+actually influences the perturbation magnitude; (2) the checkpoint certificate gate (a disclosed
+reading of the registered `q_{k_m}<=tau_i` as PROP-CONF-03's own physically well-typed certificate
+condition, since the literal scalar comparison mixes a dimensionless log-quantile with a physical
+tolerance) is TRUE on 0/40 TRAIN episodes at every predeclared checkpoint -- reproducing run 3's
+already-known `certificate_rate=0.0` finding.
+
+**Test-time result: ACT rate 0% (100% HOLD) on all 40 test episodes, all three tasks. Unsafe-ACT
+rate 0% -- but only because ACT never fires at all.** Non-inferiority fails in the OPPOSITE
+direction from runs 5-6 (LCB -23.7% to -49.1%, vs the estimator's own 10.0-32.5% completion rate).
+Checkpoint diagnostics: the Keystone/decay accumulator alone (`m_k>=theta`) held on 45% of
+checkpoint readings per task -- not itself vacuous -- but the certificate gate held on 0/160
+readings per task throughout, making it the sole binding constraint.
+
+**Methodological note for this project's own ledger:** this is the THIRD independently-designed
+construction (after PROP-CONF-03's own standalone certificate in run 3, and now this conjunctive
+gate) to find the same per-checkpoint Bonferroni conformal envelope vacuous on this exact
+backend/dataset -- a within-project stability finding about that specific calibration construction
+itself, not an artifact of any one run's tuning. Standing methodological gaps (same-split reuse
+across all seven cycles; the honest_caveats' Open risk 3 second-calibration-split falsifier) remain
+open and were NOT closed by this run -- flagged here, not silently dropped, per this project's own
+predeclaration/disclosure discipline.
