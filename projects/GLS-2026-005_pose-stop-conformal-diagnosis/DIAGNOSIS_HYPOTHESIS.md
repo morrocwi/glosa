@@ -144,3 +144,58 @@ situation CMC was in before its founder ruling made it a standalone root-extensi
 founder: "FOUNDER: rule on whether split-conformal prediction becomes a new Toledo root" (workspace
 todolist). The proposal file and the Coq witness remain staged, correct, and ready to merge the moment
 this is settled — nothing was forced into the registry to work around the block.
+
+## P08 discipline 2 (test the prediction) — APPLIED, 2026-09-09, prediction REFUTED
+
+The third real-data cycle authorized above was run:
+`task-conditioned-6d-pose-stop/lab/results/real-bop-lmo-2026-09-09-run3/` (frozen predeclaration
+commit `681c710`, evaluator invocation 2026-09-09T14:32:49+07:00, result commit `a9a9a6a`). New
+code path `lab/multicheckpoint.py` + `cqts/safety.py`'s `safe_multi_checkpoint_quantiles` /
+`bonferroni_feasible_max_checkpoints` / `bonferroni_checkpoint_alpha`, additive alongside the
+unmodified whole-trajectory construction used by runs 1-2. Predeclared K'=4, checkpoints=
+`{4, 8, 12, 15}` (the largest feasible value per the arithmetic above), reusing run2's identical
+BOP-LMO data/split/ICP backend and TRAIN-derived tolerances unchanged, isolating the
+certificate-construction method as the only varied factor.
+
+**Outcome: the falsifiable prediction is REFUTED.** Per-checkpoint quantiles came out LARGER, not
+smaller, than the joint `q≈2.0008`:
+
+| checkpoint k | q_{alpha/K'} | vs joint q≈2.0008 |
+|---:|---:|---|
+| 4  | 2.0854 | +4.3% |
+| 8  | 2.1715 | +8.5% |
+| 12 | 2.1636 | +8.1% |
+| 15 | 2.2000 | +10.0% |
+
+Certificate rate stayed at exactly 0.0 for all three declared tasks (100% HOLD), identical in kind
+to runs 1-2. Held-out coverage did not miss its target — all-checkpoints-covered rate 97.5%
+(Wilson 95% CI 87.1-99.6%) against the 90% nominal target — so the union-bound argument's own
+guarantee was not violated; what is refuted is the more specific quantitative prediction that
+restricting aggregation to K'=4 checkpoints would be numerically CHEAPER than the joint
+whole-trajectory construction at this sample size (n=40).
+
+**Revised understanding (Dr tier, mechanically consistent with the observed numbers but not yet
+independently re-verified — discipline 4 below):** at n=40 calibration episodes, splitting `alpha`
+four ways (`alpha/K'=0.025` per checkpoint) forces every checkpoint's Bonferroni-corrected rank to
+`ceil(41*0.975)=40` — the single LARGEST of only 40 calibration scores, the most extreme order
+statistic short of the fail-closed `+infinity` boundary. The joint whole-trajectory construction's
+rank was comfortably inside the sample at `37/40`. The per-checkpoint Bonferroni penalty (needing
+the top-of-sample score at every one of 4 checkpoints) outweighed the stage-aggregation penalty it
+was designed to remove, at this specific sample size. This points to calibration sample size
+(n=40 is small relative to K'=4 checkpoints each needing near-extremal order statistics) as the
+more precisely located next lever, not the aggregation scheme's correctness.
+
+**Discipline 2 (test the prediction): now APPLIED.** The prediction from the revision above was
+tested on real data and refuted, not merely reasoned about analytically.
+
+**Discipline 4 (re-verification by a different identity): still NOT YET APPLIED** to this new
+result — same caveat as before; this record was authored by the same chair session that ran the
+evaluation. It may not back a claim card or advance any status until a materially separate pass
+re-derives the per-checkpoint rank arithmetic (`ceil(41*(1-0.025))=40`) and the reported q values
+independently, and checks whether the "sample-size-limited" reading above has an alternative
+explanation this session did not consider.
+
+**Tier for this revision: `Dr`** (plausible, numerically grounded in the run's own committed
+`lab_results.json`, mechanically consistent with the Bonferroni-rank arithmetic) — the underlying
+`q` values and rank=40/40 figures themselves are `finite_diagnostic` (reproduced directly from
+`task-conditioned-6d-pose-stop/lab/results/real-bop-lmo-2026-09-09-run3/lab_results.json`).
