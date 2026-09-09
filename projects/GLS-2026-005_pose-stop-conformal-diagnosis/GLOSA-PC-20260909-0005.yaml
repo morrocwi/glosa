@@ -1,0 +1,39 @@
+$schema: problem_card.schema.json
+problem_id: GLOSA-PC-20260909-0005
+project: GLS-2026-005
+intake:
+  q1_issue:
+    text_verbatim: >-
+      หลัง 4 รอบทดสอบข้อมูลจริง (BOP LineMOD-Occlusion, ICP backend จริง, calibration/tolerance/
+      aggregation/spectral-decay-predictor ปรับแล้วทั้งหมด) coverage-qualified certificate ของ
+      task-conditioned-6d-pose-stop ยังไม่เคยทำงานเลยสักครั้ง (k_C<k_E = 0/40 ทุกรอบ) ต้องหา
+      สมมติฐานใหม่ที่ไม่ใช่การปรับ calibration อีก เพราะพิสูจน์แล้วว่ากลุ่มนั้นหมดทางจริง
+    retained_difference_statement: >-
+      Four independent real-sensor cycles isolated three distinct calibration-side explanations
+      (task tolerances too tight; joint stage-aggregation too conservative; the observable-feature
+      error-scale predictor replaceable by a spectrally-derived decay law) and refuted all three
+      with real evidence, not assumption -- the third refutation was structural, not merely
+      empirical: ICP's own normal-equations Hessian H_k has no graph/vertex structure at all, so
+      the graph-Laplacian spectral-bound method (proven and registered in Toledo the same day) does
+      not even apply to it. The retained difference that survives four rounds: the bottleneck is
+      not in HOW the existing observable features are calibrated or combined, but in WHAT the
+      observable feature itself is -- classical point-to-point ICP's per-iteration residual/update
+      magnitude may carry too little information about the true remaining pose error to ever
+      support a tight, valid completion envelope, regardless of calibration method.
+    agency: >-
+      a standalone-scholar research programme (founder, Yaoharee Lahtee, Open Civil Science
+      Initiative) plus an external public repository (task-conditioned-6d-pose-stop) built by prior
+      AI sessions under the same programme's discipline, now diagnosed via glosa (GLS-2026-005)
+    context: >-
+      four real-data falsifying cycles on BOP LineMOD-Occlusion have exhausted the calibration-side
+      hypothesis space (tolerances, aggregation, spectral-decay predictor); deciding the next real
+      hypothesis before spending a fifth real-data cycle
+    query: >-
+      given that the observable-feature-to-error relationship itself, not its calibration, is now
+      the leading suspect, which of the two structurally different next moves -- (H1) build an
+      observable feature genuinely rooted in the correspondence graph's own structure (which DOES
+      have real vertex/edge structure, unlike H_k), reusing Toledo's L_R spectral-bound method on
+      the OBJECT it actually applies to; or (H2) replace classical point-to-point ICP with a
+      learned/neural iterative pose backend, whose internal representation may carry substantially
+      more information about remaining pose error than a closed-form residual -- is worth the next
+      real-data cycle, and why

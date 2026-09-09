@@ -199,3 +199,54 @@ explanation this session did not consider.
 `lab_results.json`, mechanically consistent with the Bonferroni-rank arithmetic) — the underlying
 `q` values and rank=40/40 figures themselves are `finite_diagnostic` (reproduced directly from
 `task-conditioned-6d-pose-stop/lab/results/real-bop-lmo-2026-09-09-run3/lab_results.json`).
+
+## Fourth cycle, 2026-09-09: spectrally-derived decay predictor (PROP-DECAY-01), refuted on two fronts
+
+A different lever was tried: instead of changing the certificate-CONSTRUCTION (C7-C9 vs C9b, the
+subject of the diagnosis above), this cycle replaced the error-SCALE PREDICTOR itself (C6, a fitted
+log-linear model) with a closed-form decay law derived from the ICP normal-equations Hessian
+`H_k=J^T J`'s own condition number, combined with the (unchanged) whole-trajectory C7-C9
+construction (chosen because run3 above found it gives a smaller `q` than the Bonferroni
+per-checkpoint construction). Toledo proposal `PROP-DECAY-01`
+(`~/ANSE.ASIA/toledo/registry/proposals/spectral_decay_predictor.json`) parented this to a proposed
+identification of `H_k` with the graph-Laplacian family `L_R`, so that `q_formal/M.07`'s diameter
+floor `lambda_2>=4/(nD)` could bound `H_k`'s conditioning.
+
+**Front 1 (structural): the H_k~L_R analogy is refuted, both by a companion Coq-proof attempt and
+by inspecting the real H_k.** The companion attempt (paired Toledo-repo task, `q_formal/M.07`
+itself) to Coq-prove `lambda_2>=4/(nD)` did not close: the classical Mohar 1991 proof needs the full
+min-max/Courant-Fischer characterization of `lambda_2` over the whole space orthogonal to the
+constant vector, materially stronger than the single-Rayleigh-pair idiom this workspace's existing
+spectral Coq files use, and was not completed in the time given. Independently, exposing the real
+`H_k` this backend computes (`task-conditioned-6d-pose-stop/lab/bop_icp_backend.py:normal_equations_H`)
+shows the analogy does not hold structurally regardless: `H_k` is a fixed 6x6 SPD matrix (one
+row/column per pose degree of freedom), with no vertex/edge structure and no dependence of its size
+on the correspondence count — a graph "diameter D" is undefined for it. Confirmed numerically: a
+real k-NN correspondence graph built separately from one ICP stage has `n=400`, `diameter=16`,
+`4/(nD)=0.000625` — an unrelated number to that same stage's `H_k` `lambda_min=0.1235`.
+
+**Front 2 (empirical): the closed-form predictor does not tighten calibration; it widens it.**
+Using the CORRECT quantity for `H_k` instead (ordinary matrix condition number
+`kappa=lambda_max/lambda_min`, feeding the classical cited Kantorovich contraction bound
+`rho<=(kappa-1)/(kappa+1)`, no graph object needed), the resulting predictor's calibrated `q=3.298`
+(~27x envelope inflation) is LARGER than both the original C6 joint `q≈2.0008` (runs 1-2) and every
+run3 Bonferroni per-checkpoint `q` (2.085-2.200). Certificate rate remains exactly 0.0 for all
+three tasks (100% HOLD) — the fourth cycle in a row landing on this same qualitative outcome, now
+under a materially different (non-regression) predictor family. Held-out coverage: 95.0% (Wilson
+83.5-98.6%).
+
+**Disclosed, not yet independently re-verified diagnosis for Front 2:** measured `rho_k` across the
+40 TRAIN episodes' stages clusters tightly near 1 (median 0.9991, range [0.9964, 0.9997]), likely
+because `H_k`'s rotation columns (`-skew(R p_i)`, scaled by point-coordinate magnitude, ~0.05-0.26m
+for these two objects) and translation columns (identity-scaled) mix units in the `[omega, t]`
+parameterization, so `kappa_k` is dominated by this coordinate-scaling artifact rather than by the
+correspondence set's true geometric conditioning. Not yet tested against an alternative
+parameterization (e.g. non-dimensionalizing the rotation columns by a characteristic length scale).
+
+Full accounting: `task-conditioned-6d-pose-stop/lab/results/real-bop-lmo-2026-09-09-run4/RESULT.md`.
+
+**Tier for this update: `Dr`** for the diagnosis narrative above (mechanically consistent with the
+committed `lab_results.json` and the separately-computed graph diagnostic, not yet independently
+re-verified — discipline 4 still not applied to this record, same caveat as the run3 entry above).
+The `q`, coverage, and n/D/kappa/lambda_min numbers themselves are `finite_diagnostic`, reproduced
+directly from that run's committed files.
