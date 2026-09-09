@@ -97,3 +97,68 @@ entries:
     stage: diagnosis
     by: joint
     stub: true
+- id: GLS-2026-006
+  title_th: "Fefferman Navier-Stokes readout problem — สองเอกสารรวมเป็นเปเปอร์เดียว + ลงทะเบียนสมการ"
+  title_en: 'A Readout Problem for Fefferman''s Existence and Smoothness of the
+    Navier-Stokes Equation — merged paper, Toledo registration, new public repo'
+  problem_ref: null
+  blackbox_ref: projects/GLS-2026-006_fefferman-readout-problem/blackbox_note.yaml
+  hypothesis_refs:
+  - projects/GLS-2026-006_fefferman-readout-problem/INTAKE.md
+  spine_stage: intake
+  k_state: K0
+  genre: math_note
+  venue_track: null
+  claim_card_count: 0
+  litreview_manifest_ref: null
+  doi_concept: null
+  doi_version: null
+  deposition_id: null
+  repo_path: https://github.com/morrocwi/readout-problem-navier-stokes   # new repo, not yet pushed
+  owner_role: human
+  created: '2026-09-09'
+  updated: '2026-09-09'
+  scope_note: >-
+    Lightweight registration (P02 intake only, disclosed in blackbox_note.yaml) -- the full glosa
+    spine was deliberately not run per founder instruction to keep the document simple/light,
+    arXiv-style. Toledo registration done first (registry/proposals/fefferman_readout_note.json).
+    NOT yet pushed to any remote, released, or deposited on Zenodo -- pending independent
+    adversarial review (PUB-ADVERSARIAL-REVIEW / maker-checker-gate), a separate phase.
+  history:
+  - date: '2026-09-09'
+    stage: intake
+    by: joint
+    stub: true
+- id: GLS-2026-007
+  title_en: 'Readout-Navier-Stokes Development Series, Volumes 1-6 (v0.1-v0.6) --
+    intake of a founder-authored response to OpenAI''s 2026-09-08 forced-breakdown
+    Navier-Stokes construction'
+  problem_ref: null
+  blackbox_ref: projects/GLS-2026-007_readout-ns-development-series/blackbox_note.yaml
+  hypothesis_refs:
+  - projects/GLS-2026-007_readout-ns-development-series/INTAKE.md
+  spine_stage: intake
+  k_state: K0
+  genre: math_note
+  venue_track: null
+  claim_card_count: 0
+  litreview_manifest_ref: null
+  doi_concept: null
+  doi_version: null
+  deposition_id: null
+  repo_path: null
+  owner_role: human
+  created: '2026-09-09'
+  updated: '2026-09-09'
+  scope_note: >-
+    P02 intake only, and only Volume 1 of 6 has actually been read -- disclosed explicitly in
+    blackbox_note.yaml's reading_status_disclosed field. Relation to GLS-2026-006 (published today,
+    morrocwi/readout-problem-navier-stokes) flagged but not resolved: Volume 2's title textually
+    matches a file GLS-2026-006 already processed; whether it is identical or revised is unchecked.
+    No Toledo lookup, no duplication check, no further processing done -- founder instruction was
+    explicitly to record this "first" (ก่อน), deferring next steps.
+  history:
+  - date: '2026-09-09'
+    stage: intake
+    by: joint
+    stub: true

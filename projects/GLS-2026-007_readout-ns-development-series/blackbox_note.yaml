@@ -1,0 +1,69 @@
+$schema: null
+id: bbn-readout-ns-development-series-001
+project_ref: GLS-2026-007
+recorded_by: chair (AI assistant), founder instruction verbatim below
+recorded_at: "2026-09-09"
+repo_path: null  # not yet assigned; source is an uploaded combined PDF, not yet a repo
+founder_instruction_verbatim: >-
+  "เอาอันนี้จดเข้า glosa ก่อน" (2026-09-09) -- record/intake this document into glosa first, before
+  any further processing (Toledo registration, paper drafting, release, etc. all explicitly
+  deferred to a later step by the word "ก่อน").
+source_document:
+  path: (session upload) Readout_NS_Development_Series_Volumes_1_to_6.pdf
+  title: "Readout-Navier-Stokes Development Series, Volumes 1-6 | Versions 0.1-0.6"
+  author: Yaoharee Lahtee, Open Civil Science Initiative, Bangkok, Thailand
+  date: September 2026, "Combined research-development edition"
+  pages: 49
+  structure: >-
+    Six manuscripts reproduced in sequence without internal content edits (stated verbatim on the
+    contents page): Vol.1/v0.1 "State Breakdown Is Not Readout Breakdown -- A Discrete-Native
+    Framework for Interpreting Forced Navier-Stokes Singularities" (pp.3-15); Vol.2/v0.2 "State
+    Breakdown Is Not Readout Breakdown -- A Finite Mathematical Separation for Navier-Stokes
+    Readouts" (pp.16-23); Vol.3/v0.3 "State Breakdown Is Not Readout Breakdown -- A Fourier-Mode
+    Separation for Navier-Stokes Readouts" (pp.24-29); Vol.4/v0.4 "Crossing the Breakdown Time --
+    Finite-Mode Traces and Weak Continuation for Navier-Stokes" (pp.30-37); Vol.5/v0.5 "At the
+    Constructed Breakdown Time -- Finite-Energy Trace, Defect Localization, and Weak Crossing for a
+    Periodic Navier-Stokes Candidate" (pp.38-44); Vol.6/v0.6 "Readout-Navier-Stokes Discrete
+    Crossing Theorem -- Exact Tape-Closed Finite Readouts Across a Continuum Regularity Breakdown"
+    (pp.45-49).
+reading_status_disclosed: >-
+  ONLY Volume 1 (pp.1-15, including its full reference list) has actually been read in this intake
+  pass. Volumes 2-6 (pp.16-49) have NOT been read yet -- their titles/scope above are taken from the
+  contents page only, not from reading their content. This is stated explicitly so this intake is
+  not mistaken for a full-document review.
+context: >-
+  Volume 1's abstract states it is a direct response to a NEW external event: "In September 2026,
+  OpenAI released a proposed smooth-forced finite-time breakdown construction [for 3D incompressible
+  Navier-Stokes] together with a Lean formalization" (cited as OpenAI, "Finite Time Blowup for
+  Navier-Stokes", preprint released 2026-09-08, and OpenAI's "NavierStokesAndEuler" Lean-certificate
+  GitHub repo). Volume 1 explicitly takes neither the truth nor falsity of that external proof as
+  its target; it asks the same discrete-native readout question this workspace already asked of
+  Fefferman's original Clay problem statement (see GLS-2026-006, released today as the public repo
+  morrocwi/readout-problem-navier-stokes, DOI 10.5281/zenodo.22673246) -- but now applied to a
+  concrete, newly-published forced-blowup CANDIDATE rather than only to the abstract Clay
+  alternatives (C)/(D). Volume 1 reuses the SAME Toledo root objects GLS-2026-006 already
+  registered/cited (CAN-002/003/006/007/008/009 under EQ-015 and weld/M.02-03.v1, A.5/M.01.v1,
+  A.8/M.01.v1) and proves a new finite non-entailment theorem (its own "NSR-01", an 8-state witness
+  of the same general shape as GLS-2026-006's Theorem 1/3.1, but not yet cross-checked here for
+  whether it is the identical construction or a distinct one -- a Toledo-first duplication check is
+  explicitly NOT yet done for Volume 1's NSR-01/NSR-02/NSR-03/NSR-04 proposals, nor for anything in
+  Volumes 2-6). Volume 1's own Appendix D explicitly refuses to use Toledo's weld/M.39.v1 (a
+  causal-history entry whose Coq source is only an open proposition) to claim a flux-closure result
+  -- the same source-discipline this workspace already practices, independently re-applied by the
+  founder to Toledo's own registry.
+relation_to_GLS-2026-006: >-
+  This is a LARGER, escalating series (6 volumes tracking versions v0.1 through v0.6) than
+  GLS-2026-006's two-document snapshot (only v0.1/v0.2-equivalent content). Volume 2's title
+  ("A Finite Mathematical Separation for Navier-Stokes Readouts") textually matches
+  ~/Downloads/State_Breakdown_Math_Only_v0_2.pdf, the same file GLS-2026-006 already processed --
+  this needs a careful diff before any further action, to determine whether Volume 2 here is
+  byte-identical to what GLS-2026-006 already registered/published, or a revised version. NOT YET
+  CHECKED. Volumes 3-6 appear to be genuinely new, more advanced content (Fourier-mode separation,
+  finite-mode traces, weak continuation, a "discrete crossing theorem") that GLS-2026-006 never saw.
+scope_decision_disclosed: >-
+  This is a P02-only intake, recording that the document exists, its structure, its relation to
+  GLS-2026-006, and an honest disclosure of what has and has not been read. Per the founder's own
+  instruction ("ก่อน" = first/before anything else), NO Toledo lookup, NO registration, NO
+  duplication check against GLS-2026-006, NO paper drafting, and NO reading of Volumes 2-6 has been
+  done yet -- all deferred to a follow-up step, to be done once the founder gives the next
+  instruction on how to proceed with this larger series.
