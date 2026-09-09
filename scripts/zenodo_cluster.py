@@ -13,11 +13,13 @@ Token: read ONLY from env ZENODO_TOKEN (source ~/.config/glosa/secrets.env). Nev
 Stops at the first HTTP error (no retry loops). State file: registry/zenodo_clusters.json (append-only outcomes).
 """
 import datetime
+import hashlib
 import os, sys, json, re, html, time, tempfile, subprocess, urllib.request, urllib.parse
 
 REG = 'registry'
 RECS = f'{REG}/zenodo_all_records.json'
 STATE = f'{REG}/zenodo_clusters.json'
+TAG_STATE = f'{REG}/zenodo_tag_state.json'
 AUTHOR = 'Lahtee, Yaoharee'
 CREATOR = {'name': AUTHOR, 'orcid': '0009-0005-3861-0626', 'affiliation': 'Open Civil Science Initiative'}
 
@@ -92,6 +94,49 @@ def load(p, default):
     return json.load(open(p, encoding='utf-8')) if os.path.exists(p) else default
 
 
+def _file_sha256(p):
+    return hashlib.sha256(open(p, 'rb').read()).hexdigest() if os.path.exists(p) else None
+
+
+def check_tag_ran(argv=None):
+    """Guard for `hubs-refresh`: refuse to run unless `tag` has run on the CURRENT `fetch` output.
+
+    Incident (2026-09-08): running `hubs-refresh` right after a bare `fetch` (no `tag` in between)
+    briefly wiped hasPart membership live on Zenodo, because member computation (`members_of`,
+    which `cmd_hubs_refresh` calls) depends on `cluster`/`tags` fields that ONLY `cmd_tag` sets on
+    each record. A freshly fetched `RECS` file has no `cluster`/`tags` yet, so `members_of` sees
+    every record as belonging to no cluster and every hub gets refreshed to (near-)empty membership.
+
+    Detection: `cmd_tag` records the sha256 of the `RECS` file it just tagged into `TAG_STATE`.
+    This function refuses to proceed unless that recorded hash matches the CURRENT `RECS` file's
+    hash exactly (i.e. no `fetch` has run since the last `tag`). Last-resort escape hatch:
+    `--i-confirm-tag-ran` on the command line bypasses the check for a human who has verified by
+    hand that `RECS` already carries tagged fields (e.g. hand-edited state recovery).
+    """
+    argv = sys.argv if argv is None else argv
+    if '--i-confirm-tag-ran' in argv:
+        print('WARNING: --i-confirm-tag-ran override used; skipping the tag-freshness check.', file=sys.stderr)
+        return
+    if not os.path.exists(RECS):
+        print(f'REFUSING hubs-refresh: {RECS} does not exist yet. Run `fetch` then `tag` first.', file=sys.stderr)
+        sys.exit(2)
+    cur_hash = _file_sha256(RECS)
+    tag_state = load(TAG_STATE, None)
+    if not tag_state or tag_state.get('recs_sha256') != cur_hash:
+        print(
+            'REFUSING hubs-refresh: no record that `tag` has run on the CURRENT `fetch` output.\n'
+            f'  {RECS} sha256 = {cur_hash}\n'
+            f'  last `tag` sha256 recorded in {TAG_STATE} = {(tag_state or {}).get("recs_sha256")}\n'
+            'This guards the 2026-09-08 incident: hubs-refresh computed on an untagged RECS file\n'
+            'wiped hasPart membership live on Zenodo (member computation needs cluster/tags fields\n'
+            'that only `tag` sets). Run `python scripts/zenodo_cluster.py tag` first, then retry.\n'
+            'Last resort override (only if you have manually verified RECS already carries tagged\n'
+            'fields): re-run with --i-confirm-tag-ran.',
+            file=sys.stderr,
+        )
+        sys.exit(2)
+
+
 def save(p, obj):
     os.makedirs(os.path.dirname(p), exist_ok=True)
     json.dump(obj, open(p, 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
@@ -131,7 +176,9 @@ def cmd_tag():
             if r['id'] in ids and t not in r['tags']: r['tags'].append(t)
         if r['title'] in hub_titles or 'programme index' in r['title'].lower():
             r['cluster'] = 'hub'; r['tags'] = []
-    save(RECS, recs); cmd_report()
+    save(RECS, recs)
+    save(TAG_STATE, {'recs_sha256': _file_sha256(RECS), 'tagged_at': datetime.datetime.now().isoformat()})
+    cmd_report()
 
 
 def _resolve_latest(rid):
@@ -200,6 +247,7 @@ def cmd_hubs():
 
 
 def cmd_hubs_refresh():
+    check_tag_ran()
     recs = load(RECS, []); state = load(STATE, {})
     for c, st in state.items():
         ms = members_of(recs, c); dois = [r['doi'] for r in ms]
