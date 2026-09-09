@@ -250,3 +250,51 @@ committed `lab_results.json` and the separately-computed graph diagnostic, not y
 re-verified — discipline 4 still not applied to this record, same caveat as the run3 entry above).
 The `q`, coverage, and n/D/kappa/lambda_min numbers themselves are `finite_diagnostic`, reproduced
 directly from that run's committed files.
+
+## Fifth cycle, 2026-09-09: H3 (native retained-sensitivity model, PROP-NATIVE-01/02) -- first ACT ever licensed, and it is unsafe
+
+Founder redirect this session ("ต้องตั้งคำถามก่อนว่า error คืออะไรในปรัชญาของเรา และวางโมเดลขึ้นมาใหม่จากรากของ
+Toledo เอง" -- first ask what error IS in our own philosophy, build a new model from Toledo's own
+roots) produced H3 in `HYPOTHESIS_CANDIDATES_20260909.md`, then "เราสร้างโมเดลมา แก้ปัญหาให้ certificate
+ทำงาน" authorized building and testing it. Unlike cycles 1-4, this is not a variant of the
+calibration-against-`T*` pattern: `PROP-NATIVE-01`/`PROP-NATIVE-02`
+(`~/ANSE.ASIA/toledo/registry/proposals/native_retained_sensitivity.json`) replace the classical
+error definition `e_k=Log(That_k^-1 T*)` (a distance to a non-readout `T*`) with an ACT rule using
+NO ground truth anywhere online: perturb `T_hat_k` along `H_k`'s own single smallest
+eigenvalue/eigenvector (reusing run4's own eigen-extraction, `H_k=J^T J`), by a magnitude
+`m=min(C/lambda_min, CAP)` (`lambda_ref`, `CAP` TRAIN-derived, frozen before test), and ACT iff the
+task verdict is invariant across the unperturbed pose and both perturbed candidates.
+
+**Result: this is the first of five real-data cycles to license ACT at all -- and it does so
+unsafely.** ACT fired on 100% of test episodes for all three declared tasks, always at the very
+first ICP stage (`k=0`, before any refinement), and was WRONG (unsafe ACT) on 92.5-100% of those
+episodes (114/120 task-episode pairs). Diagnosed cause: the perturbation magnitude this rule
+produces is bounded well below the real coarse-detector initial-pose error
+(`task-conditioned-6d-pose-stop/lab/bop_icp_backend.py:perturb_pose`: 15mm translation sigma,
+5-20deg rotation), so the invariance test answers "is a tiny wobble around the CURRENT estimate
+tolerable" rather than "is the current estimate close to correct" -- `H_k`'s spectral floor measures
+local geometric conditioning of the correspondence set, not the absolute scale of the estimate's own
+(unknown) residual error. This is exactly the empirical check PROP-NATIVE-02's own `honest_caveats`
+called for ("the relationship between 'small eigenvalue direction' and 'actual pose error along that
+direction' is itself an assumption ... must be checked empirically") -- **and this run refutes that
+assumption**, at least at this trajectory stage, on this backend.
+
+This is reported as a serious safety finding, not a success: cycles 1-4 all failed SAFE (100% HOLD,
+never an unsafe ACT); this is the first construction in the whole diagnostic line to fail UNSAFE
+instead. It does NOT establish that PROP-NATIVE-01's broader "error is a non-readout, use retained
+difference instead" critique is wrong -- only PROP-NATIVE-02's specific spectral-floor-only
+perturbation-magnitude construction was tested and refuted. A transferable lesson for any future
+construction reusing `H_k`'s eigenstructure: pair it with an absolute residual/noise-scale
+observable (as the fourth cycle's own decay predictor already did, for a different purpose), never
+use the spectral floor standalone as an uncertainty proxy.
+
+Full accounting: `task-conditioned-6d-pose-stop/lab/results/real-bop-lmo-2026-09-09-run5/RESULT.md`,
+`theory/FORMALIZATION_v1.md` C20b (task-conditioned-6d-pose-stop repo).
+
+**Tier for this update: `Dr`** for the root-cause diagnosis narrative (mechanically consistent with
+the committed `lab_results.json`, not yet independently re-verified by a materially separate pass --
+discipline 4 still not applied, same caveat as prior cycle entries; an independent adversarial
+review of this run is required before any push to origin per this repo's own culture, with a
+higher bar than prior cycles specifically because an unsafe-ACT finding was produced). The ACT
+rate, unsafe-ACT counts, and mean-k-at-ACT numbers themselves are `finite_diagnostic`, reproduced
+directly from that run's committed `lab_results.json`.

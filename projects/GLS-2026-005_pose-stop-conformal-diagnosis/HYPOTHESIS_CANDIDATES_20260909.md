@@ -59,3 +59,27 @@ rather than being one more variation on runs 1-4's calibration-against-T* patter
 legitimate independent options if the founder wants to keep the classical error definition and
 attack a different part of the pipeline instead. All three could also be run in sequence or
 combined (e.g. H3's native criterion tested on H1's graph-structured feature).
+
+## Outcome, 2026-09-09: H3 tested, refuted (unsafely, not safely)
+
+Founder selected and authorized H3 ("เราสร้างโมเดลมา แก้ปัญหาให้ certificate ทำงาน"). Executed as
+`task-conditioned-6d-pose-stop/lab/native_sensitivity.py` +
+`lab/run_native_sensitivity.py`, on the identical BOP-LMO data/split as cycles 1-4
+(`lab/results/real-bop-lmo-2026-09-09-run5/`).
+
+**This is the first of the five real-data cycles (H3's cycle plus cycles 1-4) to license ACT at
+all.** It is not the success this candidate's write-up hoped for: ACT fired on 100% of test
+episodes across all three tasks, always at the very first ICP stage, and was WRONG (unsafe) on
+92.5-100% of them. The exact risk this candidate's own write-up flagged in advance --
+"'small eigenvalue direction correlates with large true error' is itself an assumption to test" --
+is the assumption this run refutes. `H_k`'s spectral floor alone, without an absolute
+residual/noise-scale term, is not a safe proxy for pose uncertainty on this backend.
+
+H1 (graph-structured correspondence-residual feature) and H2 (learned/neural backend) remain
+untested, available candidates if a sixth real-data cycle is authorized. A natural next design
+(not yet built, not authorized) combining H3's ground-truth-free ACT framing with an absolute
+residual-scale term (as the fourth cycle's own decay predictor already carried, for a different
+purpose) would directly address this run's own diagnosed root cause, rather than abandoning the
+native-error framing PROP-NATIVE-01 argued for.
+
+Full accounting: `task-conditioned-6d-pose-stop/lab/results/real-bop-lmo-2026-09-09-run5/RESULT.md`.
