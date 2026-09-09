@@ -84,3 +84,63 @@ CALIBRATION/TEST split used in both prior runs, predeclare it the same way run 2
 config committed before final test is opened), and report the result — support, refutation, or a
 new failure mode — with the same honesty as both runs so far. This is scoped as a THIRD real-data
 cycle, not a retroactive edit of runs 1–2.
+
+## Revision, 2026-09-09 — discipline 2 applied analytically, naive fix refuted before running it
+
+Founder instruction: "ใช้ glosa หาปัญหาให้เจอแล้วออกแบบการแก้ปัญหา ด้วยสายธาร toledo สร้างนวัตกรรมให้สำเร็จ"
+(use glosa to find the problem, design the fix via the Toledo river, make the innovation succeed).
+
+Before spending a third real-data cycle on the naive "per-stage calibration instead of a joint max
+over 15 stages" idea proposed above, its validity was checked analytically first (P08 discipline 2,
+applied as a computed prediction, not a code run): a per-stage fix that still gives a valid
+whole-trajectory guarantee needs a Bonferroni correction (union bound) across the K checkpoint
+stages, i.e. each stage calibrated at level `alpha/K`, not `alpha`. With the SAME `n=40` calibration
+episodes used in both prior runs:
+
+```
+r_{alpha/K} = ceil((n+1)(1-alpha/K))   for n=40, alpha=0.1
+K=15 (every ICP iteration):  r = 41 > n=40  ->  q = +infinity at EVERY stage, immediately.
+K=4  (4 checkpoints):        r = 40 = n     ->  feasible (q = worst calibration score).
+K=5  (5 checkpoints):        r = 41 > n=40  ->  infeasible again.
+```
+
+**Finding: the original per-stage idea, applied naively at every one of the 15 ICP iterations, is
+provably infeasible with only 40 calibration episodes** — it does not need to be run to know it
+would fail-close to `+infinity` everywhere, which is a DIFFERENT and more mechanical failure mode
+than either prior run's, not a fix. This refutes the naive form of the hypothesis before spending a
+third real-data cycle on it — exactly what P08 discipline 2 is for.
+
+**Revised, feasible hypothesis:** restrict certificate checks to a small number of predeclared
+checkpoint stages (`K' <= 4` with this calibration sample size, e.g. stages `{4, 8, 12, 15}` or
+similar, chosen before seeing any final-test result), each independently calibrated at
+`alpha/K'` via the same split-conformal construction (C7–C9) but with the nonconformity score
+maxed over the 6 pose coordinates ONLY, not over stages. By the union bound (Boole's inequality),
+this keeps the same overall whole-trajectory coverage guarantee `>= 1-alpha`, while removing the
+15-way stage-aggregation term that produced the ~7.4x inflation on both prior runs. Whether the
+resulting `q_{alpha/K'}` values are actually smaller than the joint `q~2.0008` in practice is now a
+genuinely open, feasible, and worth-running empirical question — unlike the un-restricted version.
+
+This equation family (base split-conformal quantile C7-C9, and the new Bonferroni-corrected
+multi-checkpoint variant) is being registered in Toledo (`~/ANSE.ASIA/toledo`,
+`registry/proposals/conformal_stopping_family.json`) per the workspace's standing Toledo-first
+rule, before being implemented in the pose-stop repo's code — this closes a retroactive gap (the
+original C7-C9 machinery was implemented and used in that repo before ever being registered).
+
+## Toledo registration status, 2026-09-09
+
+`registry/proposals/conformal_stopping_family.json` (3 objects) written in Toledo, per the
+Toledo-first rule: PROP-CONF-01 (base split-conformal quantile, retroactive), PROP-CONF-02 (the
+whole-trajectory max-aggregated nonconformity score, retroactive), PROP-CONF-03 (the new
+Bonferroni-corrected multi-checkpoint variant). PROP-CONF-03's core union-bound argument is
+machine-checked: `coq/canonical/PROP_CONF_03_union_bound.v`, two theorems
+(`finite_union_bound`, `bonferroni_checkpoints`), both `Print Assumptions` = "Closed under the
+global context" (axiom-free, over Q).
+
+**Merge into CANONICAL.json blocked, correctly, by Toledo's own orphan check**: PROP-CONF-01 is a
+genuinely new mathematical primitive (split-conformal prediction) with no honest parent anywhere
+in Toledo's existing roots (D/Z/Q/R number ladder, L_R spectral family, A2 fold engine,
+causal-memory family, Theta/CMC) — forcing a parent link would be dishonest. This is the same
+situation CMC was in before its founder ruling made it a standalone root-extension. Filed for the
+founder: "FOUNDER: rule on whether split-conformal prediction becomes a new Toledo root" (workspace
+todolist). The proposal file and the Coq witness remain staged, correct, and ready to merge the moment
+this is settled — nothing was forced into the registry to work around the block.
