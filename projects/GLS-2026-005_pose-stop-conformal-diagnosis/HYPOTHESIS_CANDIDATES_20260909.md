@@ -83,3 +83,32 @@ purpose) would directly address this run's own diagnosed root cause, rather than
 native-error framing PROP-NATIVE-01 argued for.
 
 Full accounting: `task-conditioned-6d-pose-stop/lab/results/real-bop-lmo-2026-09-09-run5/RESULT.md`.
+
+## Outcome, 2026-09-09, sixth cycle: PROP-NATIVE-03 (memory/persistence) tested, refuted
+
+Founder authorized a sixth cycle ("เอาเลยรอบที่หก") to test whether Toledo's already-registered
+`PROP-NATIVE-03` (a persistence/memory streak gate on top of H3's own per-stage check) recovers
+safety. Executed as `task-conditioned-6d-pose-stop/lab/native_persistence.py` +
+`lab/run_native_persistence.py`, identical data/split as cycles 1-5
+(`lab/results/real-bop-lmo-2026-09-09-run6/`), two variants: (a) persistence gate only; (b) also a
+residual-scaled perturbation magnitude, directly targeting this document's own suggestion above
+("a natural next design ... combining H3's ground-truth-free ACT framing with an absolute
+residual-scale term").
+
+**Both variants refuted.** A TRAIN-only diagnostic disclosed before test.jsonl was opened predicted
+the outcome: H3's per-stage check never toggles on TRAIN (True at all 640 readings), so the streak
+accumulator has nothing to filter. Confirmed on test: ACT fires deterministically at the fixed
+stage `k=3` on 100% of test episodes, unsafe on 80.0-87.5% of them (a modest improvement over run5's
+92.5-100%, attributable only to 3 extra ICP iterations, not to persistence itself). Variant (b)'s
+residual-scale term (this document's own suggested next design) also did not help: its dynamic
+range (~1.15-1.8x) is roughly two orders of magnitude too small relative to the gap between the
+perturbation cap and the real coarse-detector initial-pose error.
+
+H1 (graph-structured correspondence-residual feature) and H2 (learned/neural backend) remain
+untested. The concrete lesson for any further iteration on this line: neither `H_k`'s eigenstructure
+nor the ICP correspondence residual RMSE carries the ABSOLUTE scale of the coarse detector's real
+initial-pose error on this backend -- a future construction needs either a genuinely
+large-dynamic-range observable tied to absolute error scale (not yet identified here), or a
+different framing that reasons about the coarse initial estimate's own error distribution directly.
+
+Full accounting: `task-conditioned-6d-pose-stop/lab/results/real-bop-lmo-2026-09-09-run6/RESULT.md`.

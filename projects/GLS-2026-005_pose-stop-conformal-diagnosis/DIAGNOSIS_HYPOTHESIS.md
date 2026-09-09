@@ -298,3 +298,54 @@ review of this run is required before any push to origin per this repo's own cul
 higher bar than prior cycles specifically because an unsafe-ACT finding was produced). The ACT
 rate, unsafe-ACT counts, and mean-k-at-ACT numbers themselves are `finite_diagnostic`, reproduced
 directly from that run's committed `lab_results.json`.
+
+## Sixth cycle, 2026-09-09: PROP-NATIVE-03 (memory/persistence accumulator) -- refuted, degenerates to a fixed-delay knob
+
+Founder authorization: "เอาเลยรอบที่หก" (proceed with the sixth cycle), following on the fifth cycle's
+unsafe-ACT finding. `PROP-NATIVE-03`
+(`~/ANSE.ASIA/toledo/registry/proposals/native_retained_sensitivity.json`, already registered
+before this cycle, status `unverified`) proposes gating H3's own per-stage invariance check
+(PROP-NATIVE-02) behind a persistence/memory requirement: a resetting streak `M_k` (`M_k=M_{k-1}+1`
+if the stage-k check passes, else `0`), `ACT <=> M_k >= theta`. Two variants were implemented and
+run: (a) `theta`-gate only, H3's own perturbation rule reused byte-identical; (b) additionally
+scales the perturbation magnitude by the current observable ICP correspondence residual RMSE, a
+direct disclosed attempt to fix run5's own diagnosed root cause (no absolute-residual-scale term).
+
+**A TRAIN-only diagnostic, disclosed BEFORE `test.jsonl` was opened, predicted the outcome.** H3's
+per-stage invariance check evaluates True at every one of 640 TRAIN stage readings (40 episodes x
+16 stages, all 3 tasks) -- there is no toggling on TRAIN for a streak counter to filter. This
+predicted variant (a) would degenerate into a deterministic fixed-stage rule, not a genuine noise
+filter, before the test-time numbers were ever seen.
+
+**Result: the prediction is confirmed, and both variants are refuted.** ACT fires deterministically
+at the fixed stage `k=theta-1=3` (`theta=4`) on 100% of test episodes for all three tasks, in both
+variants -- byte-identical ACT/HOLD/completion/unsafe outcomes, meaning variant (b)'s residual-scale
+multiplier never changed a single decision. Unsafe-ACT rate: 80.0% (top_suction), 80.0%
+(label_alignment), 87.5% (keyed_insertion) -- 99/120 task-episode pairs, a modest drop from run5's
+92.5-100% attributable only to the 3 extra ICP iterations run before commit, not to any
+noise-filtering property of the memory mechanism (the underlying check never toggles on this
+backend/data, so there is nothing for persistence to filter). Diagnosed cause for variant (b): the
+residual-scale multiplier reached only ~1.15-1.8x against a predeclared 2x cap, roughly two orders
+of magnitude too small relative to the gap between the perturbation cap and the real
+coarse-detector initial-pose error (15mm translation sigma, 5-20deg rotation) to matter.
+
+This is reported as a refuted-but-not-worse finding: unlike run5 (the first cycle to fail unsafe at
+all), run6 does not make the unsafe rate worse -- it modestly reduces it via extra ICP iterations,
+while still failing to establish safety. It does NOT establish that memory/persistence
+constructions are useless for this problem class in general -- only that gating a NON-NOISY
+(near-constant) single-instant signal behind persistence cannot recover safety by itself, and that
+the one residual-scaling variant tried here has far too little dynamic range to matter. On a SECOND
+independently-designed construction (after H3's own spectral-floor finding), neither `H_k`'s
+eigenstructure nor the ICP correspondence residual RMSE -- the two observable quantities exposed by
+this backend to date -- carries the ABSOLUTE scale of the coarse-detector's real initial-pose
+error; both are LOCAL statistics about the current correspondence set's conditioning/fit quality.
+
+Full accounting: `task-conditioned-6d-pose-stop/lab/results/real-bop-lmo-2026-09-09-run6/RESULT.md`,
+`theory/FORMALIZATION_v1.md` C20c (task-conditioned-6d-pose-stop repo).
+
+**Tier for this update: `Dr`** for the root-cause diagnosis narrative and the "degenerates to a
+fixed-delay knob" reading (mechanically consistent with the committed `lab_results_variant_{a,b}.json`,
+not yet independently re-verified by a materially separate pass -- discipline 4 still not applied,
+same caveat as prior entries; an independent adversarial review of this run is required before any
+push to origin per that repo's own culture). The ACT rate, unsafe-ACT counts, and mean-k-at-ACT
+numbers themselves are `finite_diagnostic`, reproduced directly from the committed result files.
