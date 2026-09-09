@@ -64,3 +64,36 @@ entries:
     source: registry/RELEASE_APPROVAL.txt (local, git-ignored; founder sign-off)
     summary: APPROVED 2026-09-05 Yaoharee Lahtee — glosa v0.2.0 (concept paper + cleaned
       tree)
+- id: GLS-2026-005
+  title_th: "task-conditioned-6d-pose-stop — วินิจฉัย conformal envelope กว้างเกินบนข้อมูลจริง"
+  title_en: 'Coverage-Qualified Task Stopping for 6D Pose Refinement — real-data
+    negative-result diagnosis and next hypothesis'
+  problem_ref: null
+  blackbox_ref: projects/GLS-2026-005_pose-stop-conformal-diagnosis/blackbox_note.yaml
+  hypothesis_refs:
+  - projects/GLS-2026-005_pose-stop-conformal-diagnosis/DIAGNOSIS_HYPOTHESIS.md
+  spine_stage: diagnosis
+  k_state: K0
+  genre: engineering_diagnostic
+  venue_track: null
+  claim_card_count: 0
+  litreview_manifest_ref: null
+  doi_concept: null
+  doi_version: null
+  deposition_id: null
+  repo_path: https://github.com/morrocwi/task-conditioned-6d-pose-stop   # external repo, not this tree
+  owner_role: human
+  created: '2026-09-09'
+  updated: '2026-09-09'
+  scope_note: >-
+    Lightweight registration (P02 intake + P08 diagnosis only, disclosed in blackbox_note.yaml) --
+    the full glosa spine (litreview, genre routing, claim card, dialogue table) was deliberately
+    not run for this external repo's engineering diagnostic; see scope_decision_disclosed there.
+  history:
+  - date: '2026-09-09'
+    stage: problem
+    by: joint
+  - date: '2026-09-09'
+    stage: diagnosis
+    by: joint
+    stub: true

@@ -1,0 +1,25 @@
+$schema: null
+id: bbn-pose-stop-conformal-diagnosis-001
+project_ref: GLS-2026-005
+recorded_by: chair (AI assistant), founder instruction verbatim below
+recorded_at: "2026-09-09"
+repo_path: https://github.com/morrocwi/task-conditioned-6d-pose-stop  # external repo, not under this glosa tree
+founder_instruction_verbatim: >-
+  "ใช้ glosa สร้างสมมติฐานและยกระดับงาน" (2026-09-09) -- register the task-conditioned-6d-pose-stop
+  real-data findings and the conformal-envelope diagnosis through glosa, and use glosa discipline
+  to build the next testable hypothesis, elevating the project past two negative real-data cycles.
+context: >-
+  Two real-sensor validation cycles (BOP LineMOD-Occlusion, in-repo numpy+scipy ICP/Kabsch backend,
+  no learned model), both adversarially reviewed and both released (v0.7.0 and the run2 commit
+  c9a1dc8, https://github.com/morrocwi/task-conditioned-6d-pose-stop). Both found certificate_rate
+  = 0.0 (k_C<k_E on 0/40 held-out episodes, all three declared tasks). Run 2 changed exactly the
+  task tolerances (re-derived from TRAIN-split achievable accuracy, never from calibration/test)
+  and ruled out "tolerances too tight" as the cause: loosening tolerances 2.6-2.8x raised the
+  estimator's own completion rate substantially (2.5%->32.5% etc.) but did not move the
+  certificate's completion rate at all (stayed at 0.0 in both runs).
+scope_decision_disclosed: >-
+  This registration runs glosa's P02 intake framing and P08's diagnosis discipline for the specific
+  observed problem below. It does NOT run the full glosa spine (no litreview_manifest, no
+  genre_decision, no claim_card, no dialogue_table) -- that apparatus is scoped for a full paper
+  going through S1-S13; this is a diagnostic note for an external engineering repo's own negative
+  result. Stated here explicitly rather than silently doing a partial job under a full-scope label.
