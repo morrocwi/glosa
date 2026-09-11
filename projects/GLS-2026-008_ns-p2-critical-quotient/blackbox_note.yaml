@@ -1,0 +1,68 @@
+$schema: null
+id: bbn-ns-p2-critical-quotient-001
+project_ref: GLS-2026-008
+recorded_by: chair (AI assistant), founder-supplied files with no accompanying instruction text
+recorded_at: "2026-09-11"
+repo_path: null  # not yet assigned; source is two local Downloads files, not yet a repo
+founder_instruction_verbatim: >-
+  Founder pasted two file paths with no accompanying instruction text in this turn:
+  '/home/yaoharee-lt/Downloads/NS_P2_STANDALONE_CRITICAL_QUOTIENT_T1_T3_vNext.md' and
+  '/home/yaoharee-lt/Downloads/NS_P2_STANDALONE.md'. Following this session's established
+  precedent (GLS-2026-007: "จดเข้า glosa ก่อน" -- record into glosa first, before further
+  processing), this intake records the document's existence and structure only, pending the
+  founder's next instruction on how to proceed (Toledo registration, Coq, reproduction system,
+  etc., all deliberately NOT done here).
+source_documents:
+  - path_1: ~/Downloads/NS_P2_STANDALONE_CRITICAL_QUOTIENT_T1_T3_vNext.md
+    path_2: ~/Downloads/NS_P2_STANDALONE.md
+    finding: >-
+      The two files are BYTE-IDENTICAL (diff confirmed: 0 lines of difference, both 3599 lines).
+      Two different filenames pointing to the exact same content -- treated as ONE document
+      throughout this intake, not two.
+  title: "P2 Standalone vNext — Critical Quotient Closure for 3D Navier–Stokes: Full Convolution →
+    Genesis Quotient → Local/Far/Ancestry Decomposition → T1–T3 Closure Program"
+  self_declared_status: >-
+    The document's own header states plainly: "Status: OPEN", "Clay Navier–Stokes regularity:
+    OPEN", "Primary target: P2 critical-normalized finite-observation escape contraction". Section
+    0 ("Claim Discipline") states explicitly: "This document is a research-program standalone,
+    not a proof of the Clay Millennium problem" and "No statement below should be read as a claim
+    that global 3D Navier-Stokes regularity has been proved." The document uses its own five-tier
+    status ladder throughout every section: DERIVED / SCRATCH-DERIVED / REFUTED / OPEN /
+    ARCHITECTURE-CLOSED.
+context: >-
+  This document is a DIFFERENT, independent research thread from the two prior Navier-Stokes
+  items already in this workspace's pipeline: GLS-2026-006 (the Fefferman readout-problem note,
+  published today as morrocwi/readout-problem-navier-stokes, DOI 10.5281/zenodo.22673246) and
+  GLS-2026-007 (the 6-volume "Readout-Navier-Stokes Development Series," Toledo-registered and
+  partially Coq-mechanized today). Those two use this workspace's OWN readout-native/discrete
+  framework (Toledo, readout_genesis, readout_universe) to ask what a continuum NS breakdown
+  implies about a FINITE READER -- they do not attempt the continuum PDE problem itself. This
+  document (P2 Standalone) is different in kind: it is a direct attack on the CONTINUUM Navier-
+  Stokes regularity problem itself (a critical-normalized finite-observation quotient/compactness
+  program, T1/T2/T3 theorem targets, aiming at the actual P2 contraction estimate), using
+  classical PDE/harmonic-analysis technique (Fourier-Galerkin triads, critical Sobolev norms,
+  compactness arguments) -- NOT this workspace's discrete/readout framework. It only touches
+  this workspace's own vocabulary in one place (Section 3, "Genesis Correction," which borrows
+  the domain-weld/quotient-gate language q_{j+1}∘F_NSE=F#_j∘q_j from the same Readout Genesis
+  CAN-006 schema already canonical at weld/M.02.v1) -- flagged as a genuine but currently
+  UNVERIFIED connection point, not yet checked against Toledo for equivalence/duplication.
+  Sections 1-45 are the original T1-T3 architecture (mixed DERIVED/OPEN/REFUTED per its own
+  ledger, Section 30); Sections 46-57+ are a stated "Canonical Architecture Upgrade" (Retain
+  -> Refine -> Trace / Q -> L -> A) that the document says SUPERSEDES the T1/T2/T3 separation,
+  reformulating the whole target as K_infinity = empty (Section 55, "the new canonical P2
+  obstruction statement"). The document continues past line 2874 (full length 3599 lines) --
+  NOT fully read in this intake pass; only the first ~2874 lines (through Section 57, "Far /
+  Lineage Elimination Module," itself truncated mid-section) have been read.
+reading_status_disclosed: >-
+  Approximately 80% of the document (lines 1-2874 of 3599) has been read in this intake pass.
+  The remaining ~20% (roughly the tail of Section 57 onward) has NOT been read. This is stated
+  explicitly so this intake is not mistaken for a full-document review.
+scope_decision_disclosed: >-
+  This is a P02-only intake: recording the document's existence, its self-declared OPEN status
+  on every headline target (P2, T1, T2, T3, and the Clay problem itself), the byte-identical-
+  duplicate-filename finding, and its relationship to (and difference in kind from) GLS-2026-006/
+  GLS-2026-007. NO Toledo lookup, NO registration, NO duplication check, NO Coq work, and NO
+  reading of the unread tail (lines 2875-3599) has been done yet. This mirrors GLS-2026-007's own
+  precedent of recording first and deferring substantive processing to an explicit follow-up
+  instruction -- appropriate here because, unlike GLS-2026-006/007, the founder gave no
+  accompanying instruction text this time, only the two file paths.

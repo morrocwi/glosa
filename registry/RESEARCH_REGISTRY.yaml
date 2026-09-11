@@ -162,3 +162,37 @@ entries:
     stage: intake
     by: joint
     stub: true
+- id: GLS-2026-008
+  title_en: 'NS P2 Standalone -- Critical Quotient Closure for 3D Navier-Stokes
+    (T1-T3 closure program, classical-PDE attack on the continuum problem itself,
+    self-declared OPEN)'
+  problem_ref: null
+  blackbox_ref: projects/GLS-2026-008_ns-p2-critical-quotient/blackbox_note.yaml
+  hypothesis_refs:
+  - projects/GLS-2026-008_ns-p2-critical-quotient/INTAKE.md
+  spine_stage: intake
+  k_state: K0
+  genre: math_note
+  venue_track: null
+  claim_card_count: 0
+  litreview_manifest_ref: null
+  doi_concept: null
+  doi_version: null
+  deposition_id: null
+  repo_path: null
+  owner_role: human
+  created: '2026-09-11'
+  updated: '2026-09-11'
+  scope_note: >-
+    P02 intake only; only ~80% of the 3599-line document has been read (through line 2874).
+    Two on-disk filenames confirmed byte-identical, treated as one document. Different in kind
+    from GLS-2026-006/007: a classical-PDE attack on the continuum Navier-Stokes problem itself,
+    self-declared OPEN throughout (P2, T1, T2, T3, and Clay regularity all marked OPEN by the
+    document's own status ledger). One possible connection to Toledo's weld/M.02.v1 schema
+    flagged but not verified. No Toledo lookup, no registration, no further processing done --
+    founder supplied the two file paths with no accompanying instruction text this turn.
+  history:
+  - date: '2026-09-11'
+    stage: intake
+    by: joint
+    stub: true
