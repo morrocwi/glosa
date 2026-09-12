@@ -1027,3 +1027,12 @@ U56. (founder 23:5x-24:0x, supersedes U54/U55's "seven Finite-X theories" framin
   as a declared domain reader, already following weld/M.02's admissible-domain-reading pattern, not claiming to
   be the universal root. No redirect needed. Finite-PNP (U55) and the other five readers stay logged, not
   activated, pending founder go and pending review of the current Workflow's results.
+
+RESULT-P4-PILOT (24:1x, finite_diagnostic, rg_p4_early_collapse_pilot_REPORT.md): P4 early-collapse search on
+  existing T0-02 ledger data (Nabs as implicit q_NS stand-in, Sabs as full retained readout). ONE weak candidate:
+  EXACT_CANCELLED addresses (real traffic, net cancels, Nabs~0) show stochastically larger next-step |Nabs| than
+  INERT addresses (p=2.9e-8 A_d2, p=3.4e-14 B_d2) but ONLY in the initial transient (t<=0.09 of T=16.05, zero
+  instances after), small non-independent samples (~50 addresses, 4-6 times). Explicitly NOT evidence of an NS
+  structural defect -- narrow, transient-only, honestly reported as such. Report states precisely what a full P3
+  (explicit q_NS map) needs to add to make this rigorous (address-level composition tracking Gnet uses only
+  pooled event-types, not per-address -- real per-address data lives in T02System.ledger()/rg_t0_02_*.npz).
