@@ -1115,3 +1115,46 @@ U58. (session, U54 P2/P3 build) Four Track A/B reports built in p3_attack_2026-0
   restriction) was caught before being reported as a finding -- flagged explicitly instead.
   Not independently adversarially reviewed this pass: cascade/dissipation, coherent-structure (only q_NS-map
   and vortex-stretching received a review verdict in this task).
+
+U59. (session, Phase 3 NAME+REGISTER of the "Finite Endogenous Laplacian Closure") Read both Formalize-phase
+  Coq files in full (not just the two agents' self-reported summaries) and independently re-verified them a
+  THIRD time: deleted all .vo/.vok/.vos/.glob/.aux artifacts, ran `coqc -q` from scratch on both, then
+  `coqchk -silent` (a separate kernel-level re-checker) on both -- all green, matching the agents' own reports
+  exactly. FiniteEndogenousLaplacian_MinimizerIdentity.v: `Print Assumptions complete_square_identity` and
+  `clipped_edge_weight_is_minimizer` both read "Closed under the global context". FiniteEndogenousLaplacian_
+  GeneralN.v: all 7 theorems (laplacian_symmetric, laplacian_rowsum_zero, endogenous_laplacian_symmetric,
+  endogenous_laplacian_zero_row_sum, endogenous_laplacian_quadratic_form_full, endogenous_laplacian_
+  quadratic_form, endogenous_laplacian_psd) read the same. Grepped both files for Admitted/Axiom/Classical/
+  excluded_middle: zero hits outside comments. Coq 8.20.1, Q (rational) throughout, both files axiom-free.
+  Re-checked the Phase 1 GROUND findings against the live registry (not re-trusted from the report alone):
+  weld/M.01.v1, L_R/M.20.v1, L_R/M.21.v1, Theta/P.69.v1, Theta/P.70.v1, weld/M.41.v1 all confirmed present,
+  current, Th_coqc, coq_status closed, exactly as cited; MQ08-stepper/M.01.v1 (causal derivative/FTCC)
+  confirmed status "unverified", coq_status "open_prop" (a bare Definition + one tautological A->A conjunct)
+  -- correctly NOT used as a parent anywhere. Also confirmed by keyword search: no existing Toledo/proposal
+  object duplicates any of the three new statements before registering.
+  REGISTERED in Toledo (branch research/finite-endogenous-laplacian-closure-2026-09-12 ->
+  registry/proposals/ns_p2_critical_quotient.json -> PR #34 -> CLAY_GOVERNANCE_ACK.json updated
+  [claim_effect: formal-proof-change] -> independent adversarial pass this same session [separate from the
+  Formalize agents: re-ran coqc+coqchk a third time, re-confirmed no duplicate object, re-confirmed tier
+  honesty, re-confirmed the scope clause survived into the final registered text] -> all CI green [test,
+  clay-governance, leak-scan, build-index, build-site] -> MERGED 4a180d5c, fast-forward): three NEW
+  DERIVATION / PROPOSAL entries --
+  (1) PROP-P3-LRS-MINIMIZER-IDENTITY-01, "Clipped Edge-Weight Minimizer Identity", tier Th_coqc, parents
+  Theta/P.69.v1 + Theta/P.70.v1 (unifies their two case theorems into one, plus the complete-square identity
+  neither states on its own);
+  (2) PROP-P3-LRS-LAPLACIAN-PSD-CLOSURE-01, "State-Dependent Laplacian PSD Closure" (general N), tier
+  Th_coqc, parents L_R/M.20.v1 + L_R/M.21.v1 (reused verbatim, not re-registered) + weld/M.41.v1 (bridges its
+  edge-list Dirichlet energy to the matrix quadratic form, a gap that entry's own registration note already
+  flagged);
+  (3) PROP-P3-FINITE-ENDOGENOUS-LAPLACIAN-CLOSURE-01, "Finite Endogenous Laplacian Closure" (the overall
+  S_n -> G[S_n] -> L_R[S_n] -> F(S_n) -> S_{n+1} loop, topology itself a state readout), tier Definition,
+  parents weld/M.01.v1 + Theta/P.69-70.v1 + the two entries above as children.
+  SCOPE (stated in every entry's honest_caveats, repeated here): at most an INSTANTANEOUS Gate-D /
+  state-readout closure of the operator L_R[S] for one frozen per-edge quadratic cost -- NOT a claim about
+  the full inertial transient of Theta (a separate, still-open object per THETA_ROOT_PROGRAM.md), closes NO
+  Clay Millennium question, and does NOT establish that iterating F* = F(S; L_R[S]) produces any specific
+  long-run behavior. Both .v files remain in this PRIVATE repo (coq_source_redistributed: false on both) --
+  not copied into the public toledo repo at this proposal stage, only cited by path/identifier/verbatim-
+  assumptions-output.
+  PR: https://github.com/morrocwi/toledo/pull/34 (MERGED). Matching HANDOFF_clay_solver_restructure.md entry
+  in the readout-problem-navier-stokes-internal repo.
