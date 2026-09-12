@@ -982,3 +982,48 @@ U55. (founder 23:5x) PARALLEL TRACK IDENTIFIED, NOT YET ACTIVATED: "Finite-PNP" 
   no NS/Clay machinery to reuse across the boundary except the shared Genesis no-early-collapse principle itself).
   If the founder wants Finite-PNP started in parallel immediately instead, say so explicitly and it will be
   dispatched as its own separate agent (does not conflict with the NS-side Workflow's files/repos).
+
+U56. (founder 23:5x-24:0x, supersedes U54/U55's "seven Finite-X theories" framing) ARCHITECTURE CORRECTED per a
+  stricter Genesis reading: NOT "build Finite-NS, Finite-PNP, Finite-RH... separately." That is still the
+  forbidden order (README: textbook-name -> stuff parameters -> declare derived). The correct Genesis order is:
+        ONE finite retained root  S_{n+1} = F(S_n)   [built with NO knowledge of which Clay question it will face]
+        -> SEVEN adversarial readers/domain-translations q_D (D in {PNP, NS, RH, YM, Hodge, BSD, Poincare})
+        each required to satisfy the weld/M.02 commuting square exactly OR log a defect:
+              q_D(F(s)) = F_D^#(q_D(s)) + D_{s,D}   [D_{s,D} = 0 is the goal; nonzero must be ledgered, never hidden]
+        and each observable required to factor:   O_D = O_D^# o q_D.
+  A reader NEVER gets to reach back and edit the root to make its own Clay answer come out well -- a nonzero
+  defect is DATA about that reader's domain adequacy (exactly Track B's "does q_NS collapse a future-relevant
+  distinction" question from U54, now generalized to all seven readers uniformly). Locked one-line form: "Finite-
+  Clay = one retained finite root, seven adversarial readouts, zero continuum assumptions at the root."
+  Per-problem readout mapping (root -> reader -> Clay's own classical object), recorded for reference, NOT as
+  seven separate research programmes:
+    q_PNP: finite computation state -> accept/reject; obstruction = necessary-distinction growth outpacing every
+      polynomial retention capacity (reuses the P vs NP RRR/semantic-ledger architecture already in
+      Semantic_Closure_Accounting_P_vs_NP_v0.1.pdf, U55).
+    q_NS: root state -> (u,p) velocity/pressure (exactly the P3 q_NS map already being built this turn).
+    q_RH: root -> finite arithmetic/prime record -> analytic zero structure as a LATER readout, not the starting
+      ontology; question becomes "what does the analytic-zero readout collapse of the arithmetic root retain/lose."
+    q_YM: root -> finite gauge graph/plaquette state -> continuum gauge field as adapter; mass gap read as "is
+      there a finite uniform minimum nonzero excitation cost in the root's own dynamics."
+    q_Hodge: root -> finite chain/cochain incidence -> two readers (cohomological distinction vs algebraically-
+      generated distinction), Hodge question = do they coincide.
+    q_BSD: root -> finite arithmetic/Selmer/descent record -> two readers (rank vs analytic L-readout), BSD
+      question = do the two readouts factor through the same retained structure consistently.
+    q_Poincare: root -> finite triangulation -> topology readout; POSITIVE CONTROL (answer already known) to
+      validate the whole root+reader methodology recovers a known-true classification honestly, not by construction.
+  HONEST GAP FLAGGED (do not silently paper over): the T0-02/M2/triad system actually built and used throughout
+  this session (rg_t0_02_stepper.py, the pair-sum triad coupling B_{p,q}, Leray projection, |k|^2 viscosity) is
+  NOT the domain-agnostic universal root above -- it already encodes Navier-Stokes-specific physics (divergence-
+  free constraint, viscous dissipation form) directly in its update rule F. It is honestly a READER-SPECIFIC
+  domain object (q_NS's own translation target), not an instance of a prior, NS-agnostic root. The programme has
+  NOT yet built or tested the actual domain-agnostic root (Genesis's own canonical weld/M.01: delta_R=(a#b) |-
+  L_R=D_W-W |- F, the MQ.08 graph-Laplacian stepper S_{n+1}=F(S_n,u_n,c_n,T_n)) against any of the seven readers
+  from scratch. Unifying all seven under one literal shared root object is a SEPARATE, larger undertaking, not
+  something already accomplished by the NS-specific work done so far -- state this precisely whenever citing this
+  session's NS results under the "Finite-Clay" name; they are reader-level (q_NS-domain) results, valid on their
+  own terms, not yet root-level unification evidence.
+  DECISION (no new compute opened this turn): the in-flight Workflow (wf_603bda8b-95e, P3 q_NS map + P2
+  phenomenon reconstructions) is COMPATIBLE with this corrected architecture as-is -- it explicitly builds "q_NS"
+  as a declared domain reader, already following weld/M.02's admissible-domain-reading pattern, not claiming to
+  be the universal root. No redirect needed. Finite-PNP (U55) and the other five readers stay logged, not
+  activated, pending founder go and pending review of the current Workflow's results.
