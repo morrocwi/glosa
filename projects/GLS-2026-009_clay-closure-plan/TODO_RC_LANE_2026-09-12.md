@@ -842,3 +842,24 @@ U51. (founder 23:0x) REUSE-PIPELINE MISS CAUGHT AND FIXED before more compute wa
   Toledo lookup happened AFTER two rounds of plan-then-correct instead of before the first dispatch. No irreversible
   damage (agent had written draft files, superseded not deleted, ~10 min of one subagent's compute); logging this
   as the actual root cause rather than treating U49/U50 as adequate corrections on their own.
+
+U52. (founder 23:1x) Founder pointed at 4 own prior manuscripts in ~/Downloads not yet cross-referenced: Semantic
+  Closure Accounting for Boolean Circuits (P vs NP, v0.1), Readout-Navier-Stokes Retained Computation Bridge (v0.7,
+  registers PROP-URCF-01/EQ-URCF-TURB-004 in Toledo -- the retained ODE tau_R dI_R/dt + L_R I_R = S_R + eta_R,
+  Definition/unverified), State Breakdown Is Not Readout Breakdown (v0.2), A Readout Problem for Fefferman-level
+  NS (short note). Read all four in full.
+  Findings: (1) PROP-URCF-01 IS the retained-state functional form -- if S2's work produces anything of this shape,
+  cite it, do not re-register. (2) State_Breakdown_Math_Only Sec.9 ("state-dependent restoration") explicitly names
+  the SAME open problem as S2/QSC-RIGIDITY (a priori bound preventing ||I_R||->infty when L_R depends on state) and
+  calls it "a separate mathematical problem" -- confirms S2 is genuinely open in the author's own prior work, not
+  secretly solved; useful as independent confirmation, not a shortcut. (3) Its Corollary 8.2 gives a sharper,
+  already-derived reframing of S2's pass criterion: a disjunction of 5 conditions {r_R undefined, L_R not fixed/
+  bounded, G_R leaves L^1_loc, tau_R<=0, model changes} -- at least one MUST fail under continuum blowup for any
+  blowup-transfer theorem; S2's actual job (for our S1->S2->S3 CONTRADICTION route) is to show NONE of the five
+  fail under the assumed blowup, giving Theorem 8.1's boundedness for free -> contradiction. Applied as a report
+  framing addition to the in-flight build agent (does not change TASK A/B computation, only the target statement).
+  (4) Semantic_Closure_Accounting (P vs NP) is a different problem but its negative-control Sec.8.1 ("exponential
+  future-readout width does not imply exponential circuit size") is the SAME failure-mode class the founder caught
+  twice already (finite-sample coverage != continuum coverage) -- confirms the correction pattern is a known,
+  general readout-first pitfall, not specific to this session; no new NS-specific object to reuse from it.
+  Status: framing sent to build agent; TASK A/B computation unchanged; still awaiting results, S2 not closed.
