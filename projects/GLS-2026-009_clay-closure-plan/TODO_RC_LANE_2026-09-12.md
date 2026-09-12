@@ -903,3 +903,52 @@ U53. (founder 23:2x) PROGRAMME GOAL RE-STATED — major pivot, applies going for
   "explain NS phenomena completely, finitely, without continuum" -- e.g. is there a specific finite predicate/
   invariant that would count as "the finite_clay closure condition" the way Bz=0+Farkas was for S2? If not yet
   fixed, this is the next thing to define precisely before more compute is spent aiming at a moving target.
+
+U54. (founder 23:3x, supersedes/sharpens U53) PROGRAMME LOCKED: "Finite-Clay" complete phenomenology, NOT Clay
+  closure. Navier-Stokes is now a COMPARISON/ADAPTER layer (q_NS), never the foundation. Two tracks:
+  TRACK A — Phenomenon Reconstruction: build finite retention + local interaction + lineage-preserving evolution
+    S_{n+1}=F(S_n) and ask whether it reproduces the phenomena NS is used to explain (advection, diffusion-like
+    spreading, vortex formation/stretching, cross-scale energy transfer, turbulence, coherent-structure merge/
+    split, boundary effects) WITHOUT ever positing a continuum field as foundational. Chain: finite state -> local
+    interaction -> retained lineage -> observable pattern (NOT PDE -> continuum field -> phenomenon).
+  TRACK B — Navier-Stokes Adequacy Audit: NS structural inadequacy is a HYPOTHESIS to be tested, not asserted.
+    Strongest possible finding (the actual target of P4/P5 below), stated in Genesis form:
+        exists retained physical distinction d with q_NS(S1)=q_NS(S2) but O(F^m S1) != O(F^m S2) for some future m
+    i.e. two finite states NS reads as identical are later distinguished by the finite system's own future-relevant
+    observable -- an EARLY COLLAPSE of the NS representation (weld/E.06 sufficiency violation, instantiated
+    concretely against q_NS). This is a sharper, falsifiable criterion than "NS has/lacks a singularity" -- it
+    is a finite, checkable mismatch-or-not question, decidable without ever resolving continuum well-posedness.
+  Six-phase plan (P0-P6), locked, do not deviate without founder go:
+    P0 define the finite-native fluid ontology (states, events, lineage -- much of this already exists: T0-02's
+       address/triad/lineage machinery, the forced-address ledger, O/E/C/T classification).
+    P1 local interaction law with NO continuum call (already have: the pair-sum triad coupling B_{p,q}, exact,
+       reused throughout p3_attack_2026-09-11/).
+    P2 reconstruct NS-described phenomena from P0+P1 alone (cascade/dissipation already partially demonstrated by
+       T0-02/M2's runs; vortex stretching/coherent structures NOT yet attempted -- new territory).
+    P3 construct an EXPLICIT q_NS map (finite state -> velocity/pressure/vorticity/spectrum readout) -- NOT yet
+       built; this is the genuinely new object needed before P4 can run.
+    P4 search for a lost distinction / false identification: q_NS(S1)=q_NS(S2) with Inv(S1)!=Inv(S2) on some
+       future-required invariant. CANDIDATE FIRST PROBE (reuses existing data, cheapest entry point): the
+       cancellation ledger already computed in M2/T0-02 tracks {g_{alpha,k}}_alpha (per-source contributions)
+       AND their sum g_k = sum_alpha g_{alpha,k} separately (Ccan = Gsrc - Gnet, C0_SCHEMA). NS-style reading uses
+       only g_k (the aggregate); our own ledger already retains the full {g_{alpha,k}} + lineage. Question to test
+       with EXISTING data, no new run needed: across T0-02's recorded windows, are there two moments/addresses
+       with g_k equal (or g_k=0, exact cancellation) but different {g_{alpha,k}} histories, AND does that
+       difference in retained history correlate with a later difference in observable state? This is checkable
+       directly from rg_m2_round1.json's columns_summary (Gsrc, Gnet, Ccan already recorded per type) without
+       building q_NS in full first -- a cheap PILOT for P4 before the full P3 map is built.
+    P5 design an observable experiment separating the finite model from NS on the found mismatch.
+    P6 only if P5's mismatch survives independent adversarial check: state NS representation has a documented
+       structural defect (a specific early-collapse instance), never a blanket "NS is wrong."
+  Status of prior S1/S2/S3 work under this lock: NOT discarded -- re-scoped per U53 as TRACK A / P0-P1-P2
+    machinery (finite local interaction, O/E/C/T exhaustion, forced-address accounting are literally P0/P1
+    content already built). QSC-gamma/EX/HULL-EDGE keep their exact status, now read as TRACK A structural
+    results, not continuum-contradiction machinery. In-flight agents (Toledo registration of these lemmas, S2
+    TASK A/B) continue unaffected -- their outputs are TRACK A material either way.
+  Success criterion restated (founder, verbatim import): "Finite-Clay ให้ครบ" measured by (i) finite ontology,
+  (ii) dynamic closure (no unaccounted influence, already our standing forced-address rule), (iii) exact finite
+  accounting of conserved/transferred quantities, (iv) phenomenology coverage (the list above), (v) scale
+  transport that connects resolutions without positing a completed continuum, (vi) observable correctness within
+  a declared tolerance against real data, (vii) NS comparison is OPTIONAL, never foundational. Millennium
+  Clay/regularity is now explicitly a benchmark/comparison layer only, not the finish line, until the founder
+  reopens it as a separate, explicitly stated goal.
