@@ -1253,3 +1253,38 @@ U61. (session, T1-T5 Phase 3 NAME+REGISTER) Registered PROP-P3-FINITE-PARTITION-
   there (coq/FinitePartitionRefinementClosure.v, coq/PrintAssumptions_T1T5.v, rg_t1t5_ground_check.md,
   HANDOFF edit, one commit 0900d57, no AI trailer) and logged there in HANDOFF_clay_solver_restructure.md.
   Did not touch rg_track_r_scan_v2.py (another in-flight agent's file, untracked in that repo).
+
+U62. (session, Phase 4 THE HONEST LEDGER, final deliverable of the U40-U61 arc) Read this file's own
+  U40-U61 in full plus HANDOFF_clay_solver_restructure.md's tail, both placement dossiers/master map,
+  rg_s2_progress_REPORT.md, rg_lrs_ground_check.md, rg_t1t5_ground_check.md, and independently
+  re-verified rather than trusted from any prior summary: re-ran coqc -q + coqchk -silent from scratch
+  on all four .v files (FinitePartitionRefinementClosure.v, PrintAssumptions_T1T5.v,
+  FiniteEndogenousLaplacian_MinimizerIdentity.v, FiniteEndogenousLaplacian_GeneralN.v) -- exit 0 on
+  all, every Print Assumptions line "Closed under the global context," grep (case-insensitive) for
+  Admitted/Axiom/Classical/excluded_middle hits only inside comments on both file pairs; re-checked all
+  ten new-this-arc Toledo IDs directly against the live registry/proposals/ns_p2_critical_quotient.json
+  and the toledo git log -- confirmed exact tiers and MERGED commits (PR #33: 0300004a/a70fc2b0; PR #34:
+  4a180d5c; PR #35's merge and follow-up commits) -- and surfaced one honesty point not previously logged
+  anywhere: all ten currently carry Toledo's own internal governance field `status: unverified`
+  (distinct from git merge status, which is genuinely MERGED for all three PRs) -- stated plainly in
+  the ledger, not glossed. Fetched and read Fefferman's official Clay problem statement directly
+  (claymath.org PDF, the (A)/(B)/(C)/(D) existence-smoothness-vs-breakdown statements on R^3 and the
+  periodic 3-torus) rather than relying on memory, confirming this session's own S1/S2/S3 route was
+  in (B)/(D)'s (periodic) territory before being retired at U53.
+  Wrote a private companion repository's internal handoff note (the project ledger): (1) Clay's
+  actual (A)-(D) statement + this programme's finite-discrete Finite-Clay pivot; (2) a 12-row
+  done-and-verified table (forced-address accounting, interface-novelty, EX, HULL-EDGE, one-sided
+  silent layer, isotropic-saturation invariant, S1 item 1 closed, M2 round-1 occupation/Farkas + TASK
+  A/B, the two endogenous-Laplacian Coq theorem families, T1-T5) with exact tiers/Toledo IDs/one-line
+  scope limits each; (3) the one-root-seven-readers architecture stated plainly as REUSED (Genesis
+  Part II.1/IV.5/V.0/V.4 + weld/M.01-M.03/E.08), not invented by this session; (4) a seven-lanes table
+  (PNP/NS/YM/RH/Hodge/BSD/Poincare) with every single lane marked **STATUS: OPEN** and its specific
+  missing theorem named (PNP's Open Problem 11.1; NS's QSC-RIGIDITY + phenomenology coverage; YM's
+  MG-G7/G8/G9; RH's arithmetic-spectral synchronization; Hodge's provenance-completeness; BSD's
+  common-kernel functional equality; Poincare's never-run calibration check); (5) a boxed
+  WHAT-THIS-PROJECT-DID-NOT-DO section covering all seven (Poincare correctly attributed to Perelman,
+  not re-derived); (6) the reuse-pipeline compliance record for PRs #33/#34/#35 with exact IDs/tiers/
+  merge commits; (7) an Open Next Steps list, every item marked "sketch, not commenced."
+  Committed (in a private companion repository, two commits: the ledger itself and
+  the matching HANDOFF pointer entry, no AI trailer in either). Did not touch rg_track_r_scan_v2.py
+  (another in-flight agent's file, untracked in that repo).
