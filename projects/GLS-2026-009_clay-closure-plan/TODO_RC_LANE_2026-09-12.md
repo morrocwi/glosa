@@ -791,3 +791,26 @@ U49. (founder 22:4x) CORRECTION ACCEPTED: closing S2 is NOT equivalent to solvin
   family -- this is the SAME standard that already closed M2, not a new escape hatch.
   Status: PLAN LOCKED, execution starting at S2.1/S2.2 this turn (agent launched to build the event language +
   outer cone construction script, reusing rg_m2_round1.py's LP/Farkas core unmodified).
+
+U50. (founder 22:5x) CORRECTION to U49 execution, applied BEFORE any LP was run (no wasted compute): the original
+  S2.1/S2.3 plan had two real flaws, caught in review: (1) a finite hand-picked triad list cannot cover the true
+  event CONTINUUM (productive mass can spread over unboundedly many modes; the P2 quotient's own use of a measure
+  mu_j exists exactly for this reason) -- must build a finite OUTER POLYTOPE per branch with a PROVEN (algebraic,
+  not sampled) coverage certificate Phi(E_sigma) subset P_sigma; (2) p_net as a norm-after-cancellation is NOT
+  linear and cannot legally be an LP row -- must linearize via a dual readout witness psi_j: p_psi(e)=<psi_j,g_e>,
+  making cancellation fall out of linearity automatically (never treated as physical loss).
+  Corrected execution order (S2.0-S2.6), sent to the running build agent before it reached the old S2.3:
+  S2.0 linear readout witness psi_j (reuse M2's canonical Farkas y_E direction) + verify p_psi additive by
+       construction. S2.1 QSC-GAMMA: exact/certified gamma(M,kappa)>0 on the compact normalized parameter set
+       K_{M,kappa} (finite-dim, genuinely licensed compactness -- this is the correct, narrow use of the retired
+       S2-F). S2.2 MASS-BOUND ||mu||<=L derived from M2's already-VERIFIED H_2 energy row (explicit link to why
+       P_1 alone failed and H_2 fixed it). S2.3 OUTER-POLYTOPES: algebraic (not sampled) coverage proof per branch
+       O/E/C/T/ACTIVE using ACN/EX/HULL-EDGE/SC-6; the 14/858 unresolved hull edges from rg_hull_edge_silence.py
+       must NOT be silently exempted as "near-degenerate" -- redo via affine-hull-restricted separation or mark
+       UNRESOLVED explicitly and carry that label downstream. S2.4 FARKAS: exact rational eta(kappa) via the SAME
+       simplex/certificate_check as M2. S2.5 GAP CHECK: delta = eta(kappa) - kappa*L; S2/QSC-RIGIDITY closes ONLY
+       if GAP (eta(kappa) > kappa*L) is exact-certified AND coverage is algebraically proven for every branch --
+       anything short is progress, must be reported as such, never as closure. S2.6 lift to the actual window
+       measure (no hypothetical web reconstruction, reuses the L1-retirement reasoning from U48).
+  Status: build agent redirected mid-flight (had not yet produced any file under the old spec -- zero wasted
+  compute); executing the corrected S2.0-S2.6 plan now.
