@@ -773,3 +773,21 @@ RESULT-HULL-EDGE (22:3x, exact + computational-geometry-checked, rg_hull_edge_si
   hard core). Next genuinely open task, unstarted: formalize and test the QSC floor gamma(M,kappa) on the interior,
   or find a concrete interior counterexample (a candidate BAD web with nontrivial interior productivity) to falsify
   QSC-RIGIDITY outright -- either outcome is real progress; declaring victory without one is not.
+
+U49. (founder 22:4x) CORRECTION ACCEPTED: closing S2 is NOT equivalent to solving the Clay Millennium Problem in
+  full generality -- it is a scoped, finite, checkable lemma in our OWN route architecture, of the exact same shape
+  as M2 (finite event catalogue -> exact rational LP -> Farkas certificate -> VERIFIED, conditional on a declared
+  inclusion certificate). Founder rejected treating "hard" as license to avoid a real plan. LOCKED PLAN (4 steps,
+  each reusing existing exact machinery, no new architecture):
+  S2.1 finite event language on the normalized cone (productive triad + O/E/C/T/ACTIVE label + net-post-cancellation
+       coefficient p_net + balance row b_e) -- same shape as C0_SCHEMA/M2 columns_summary.
+  S2.2 outer cone C_out built ONLY from already-proven constraints (EX, HULL-EDGE, SC-6 rank bound, forced-address
+       accounting, divergence-free) -- anti-oracle: never encode the thing being proved.
+  S2.3 primal {z>=0, Bz=0, p_net.z >= 1-theta} on C_out, exact rational simplex (reuse rg_m2_round1.py verbatim).
+  S2.4 UNSAT -> Farkas certificate via the SAME certificate_check already verified 4x in M2; SAT -> genuine first
+       BAD-web candidate, tested not discarded.
+  Honesty rule carried forward unchanged from M2 report Sec.4: any UNSAT/VERIFIED result is conditional on the
+  inclusion certificate E_NSE subset C_out, stated as scope, exactly as M2's H_2 cut was scoped to the observed run
+  family -- this is the SAME standard that already closed M2, not a new escape hatch.
+  Status: PLAN LOCKED, execution starting at S2.1/S2.2 this turn (agent launched to build the event language +
+  outer cone construction script, reusing rg_m2_round1.py's LP/Farkas core unmodified).
