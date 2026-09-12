@@ -814,3 +814,31 @@ U50. (founder 22:5x) CORRECTION to U49 execution, applied BEFORE any LP was run 
        measure (no hypothetical web reconstruction, reuses the L1-retirement reasoning from U48).
   Status: build agent redirected mid-flight (had not yet produced any file under the old spec -- zero wasted
   compute); executing the corrected S2.0-S2.6 plan now.
+
+U51. (founder 23:0x) REUSE-PIPELINE MISS CAUGHT AND FIXED before more compute wasted: the S2.0-S2.6 plan (U50) built
+  occupation-primal/Farkas-dual machinery essentially from scratch, duplicating THREE existing Toledo proposals
+  registered in an earlier commit: PROP-RG-OCCUPATION-PRIMAL-01 (the occupation primal itself, already instantiated
+  once as round-0 -- rg_occ_c0_w3.py/.json, PRIMAL_FEASIBLE_SPURIOUS_BY_CONSTRUCTION), PROP-RG-FARKAS-DUAL-
+  CERTIFICATE-01 (the exact Farkas dual, checker = "expand the identity only" -- ALREADY successfully run: M2
+  round 1's P_1+H_2 UNSAT/VERIFIED result IS an instance of this), PROP-RG-OCC-SOUND-01 (the soundness bridge,
+  status OPEN, EXPLICITLY conditional on G4 open/COMM/Suff=1/ZPR/outer-cone-closed, own caveat "does not prove NS
+  regularity; does not replace G4 or G7"). Also relevant, not previously cross-referenced here: PROP-P2-SELF-
+  CLOSURE-01 (tier Dr, "read but not independently re-derived" -- the exact self-closure lemma the S2.1 QSC-GAMMA
+  task needs, do not re-derive as if new), PROP-P3-WINDOW-BILINEAR-CONSTANT-01 (alpha_j, "the one open quantity" --
+  literally the S1/S2 recurrence's replenishment ratio, one finite data point exists: orthogonal-turn chain 7%
+  seed handoff, mirror forced at 17/25 forward rate), PROP-P2-TAX-SUMMABILITY-FROM-BALANCE-01 (telescoping
+  summability from a Lyapunov balance V(q')+D<=V(q)+eps_br => sum D_j<infty -- may directly discharge much of
+  S1/S2's summability obligation IF the balance (B) can be shown to hold; elementary, not machine-checked).
+  Corrected task, redirected to the build agent (already superseded the S2.0-3 v2 files, kept as history, not
+  deleted): TASK A (S2-COVERAGE) -- determine if M2's ALREADY-VERIFIED P_1+H_2 Farkas certificate is row-independent
+  (depends only on universal balance-row structure: divergence-free, Leray projection, energy conservation, LE>=0)
+  and therefore extends algebraically to a real outer cone C^(0) built from EX/HULL-EDGE/SC-6/silent-layer/ACN/
+  forced-address as inclusion-certificate rows, rather than staying scoped to "observed run family." TASK B
+  (S2-PRODUCTIVITY MAP) -- verify p_e = Gact (M2's existing column) is the correct quantity for the S1/S2 Duhamel
+  recursion's N_j, not a different one needing an adapter. DECISION -- use PROP-RG-OCC-SOUND-01 (caps result at G4
+  open) or the direct actual-window-measure route (per U48's L1 retirement, avoids needing G4) -- recommend direct
+  route, agent must justify explicitly if it disagrees.
+  Meta-lesson: the REUSE PIPELINE rule (EPIS-REUSE-PIPELINE) was not followed thoroughly at U49/U50 dispatch time --
+  Toledo lookup happened AFTER two rounds of plan-then-correct instead of before the first dispatch. No irreversible
+  damage (agent had written draft files, superseded not deleted, ~10 min of one subagent's compute); logging this
+  as the actual root cause rather than treating U49/U50 as adequate corrections on their own.
