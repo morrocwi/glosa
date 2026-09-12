@@ -752,3 +752,24 @@ RESULT-EXPOSED-PAIR-LEMMA (22:2x, exact, rg_exposed_pair_nullity.py): founder's 
   Next candidate step (not yet started): combine EX with the shell-conditioned span bound already in the repo
   (dim span{a_i : |p_i| != |q|} <= 2) to ask whether a nonplanar, off-shell, zero-exit O/E/C-only cycle can exist at
   all -- if no, that is real progress toward QSC-RIGIDITY; if yes, it is the first genuine BAD-web candidate to test.
+
+RESULT-HULL-EDGE (22:3x, exact + computational-geometry-checked, rg_hull_edge_silence.py): extended EX from the
+  single global (argmax,2nd-argmax) pair to EVERY convex-hull edge of a finite support S. Checked on 60 random
+  finite integer sets (858 hull edges total): 844/858 edges admit a strictly-separating generic linear functional
+  (making that edge a valid EX pair), 817 of those are off-shell (|p|!=|q|) and get EX's mutual-silence conclusion
+  for free (14 edges failed only on degenerate/near-coplanar configurations, not a counterexample to the logic).
+  CONCLUSION ATTEMPTED: "every off-shell convex-hull edge of any hypothetical zero-exit BAD web is forced mutually
+  silent (double-O)."
+  HONEST VERDICT: this does NOT close S2-CORE / QSC-RIGIDITY, and S2 is NOT closed by this session. The gap is
+  precise and structural, not a missing computation: HULL-EDGE constrains only the BOUNDARY (convex-hull) structure
+  of a hypothetical BAD web. A web's positive NET replenishment (the p^top z >= 1-theta condition BAD requires) can
+  live entirely on INTERIOR triads (non-hull points of the support), which this lemma says nothing about. Silencing
+  the boundary does not bound the interior's rank or productivity -- QSC-RIGIDITY needs an interior argument (the
+  quantitative self-closure floor gamma(M,kappa) sketched by the founder, itself unverified this session) or a
+  genuinely different mechanism, neither of which exists in checked form yet.
+  STATUS: S2-CORE / QSC-RIGIDITY remains OPEN. Founder asked to close S2 this turn; that request cannot be honestly
+  met -- reported the real incremental boundary lemma instead of claiming closure. This is consistent with
+  EPIS-KNOWLEDGE-VALIDATION (no overclaim) and the S1/S2/S3 route rule (advance the item honestly, do not skip the
+  hard core). Next genuinely open task, unstarted: formalize and test the QSC floor gamma(M,kappa) on the interior,
+  or find a concrete interior counterexample (a candidate BAD web with nontrivial interior productivity) to falsify
+  QSC-RIGIDITY outright -- either outcome is real progress; declaring victory without one is not.
