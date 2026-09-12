@@ -1158,3 +1158,52 @@ U59. (session, Phase 3 NAME+REGISTER of the "Finite Endogenous Laplacian Closure
   assumptions-output.
   PR: https://github.com/morrocwi/toledo/pull/34 (MERGED). Matching HANDOFF_clay_solver_restructure.md entry
   in the readout-problem-navier-stokes-internal repo.
+
+U60. (session, 5th ultracode workflow, Layer 2 synthesis of Track NS/YM/PNP) Three-track Layer-2
+  uniformity-attack workflow (files: p3_attack_2026-09-11/rg_l2_ns_interior_REPORT.md/.py,
+  rg_l2_ym_gate7_REPORT.md/.py/.json, rg_l2_pnp_calibration_attempt.md/rg_l2_pnp_dnf_parity_calibration.py
+  -- PNP files committed separately, commit 42468f2; NS/YM this session's commit) each independently
+  adversarially reviewed (a separate verify pass per track, not self-certified). All three: OUTCOME HONEST,
+  NO OVERCLAIM FOUND, no changes required to any report's wording.
+  Track NS (interior-productivity, HULL-EDGE interior analogue, using PROP-P2-SELF-CLOSURE-01 +
+  exposed-pair/hull-edge machinery): OPEN overall. Two PARTIAL PROGRESS results, both Dr/exact+
+  finite_diagnostic tier -- (1) independent re-derivation of the self-closure floor on 20 concrete
+  (p,q) cases (finite_diagnostic, not a symbolic proof over generic p,q, correctly flagged as such in
+  the report itself); (2) hull-silencing check on 3 convex-polytope examples (finite_diagnostic, high-
+  degree hull vertices) finding a "productive interior-pair" candidate direction with an exact rational
+  witness (B=(25/3,-25/3,-25/3) for a specific alpha/beta instance), independently hand-verified by
+  substitution -- explicitly labelled a candidate-counterexample DIRECTION, not a disproof. Forced-address
+  ledger over the rest of Z^3, dynamical self-sustenance, and the QSC-gamma floor remain unchecked.
+  QSC-RIGIDITY stays fully OPEN.
+  Track YM (extending the already-Coq-verified InfoFiniteTransferGap.v, EXACT_CONDITIONAL, toward gate
+  MG-G7 -- uniform-in-L refinement -- using PROP-P3-LRS-LAPLACIAN-PSD-CLOSURE-01 as a candidate spectral
+  tool): OPEN. One finite_diagnostic finding: a naive Laplacian-transfer-operator construction on gauge-
+  graph families (q=lambda1/Delta_max plateaued at 0.5 for complete graphs; exact N=4 cycle q=2/3 via
+  Fraction arithmetic) degrades toward q->1 on locally-coupled (cycle/path) graph families and stays
+  bounded away from 1 only on the non-physical all-to-all family. No SU(3)/real-gauge-action translation
+  attempted, no q<1 derived from an actual gauge action, no mass-gap relabeling, no MG-G8/G9 content, no
+  general theorem, no Toledo registration. MG-G7 (and MG-G8/G9) stay fully OPEN. Identifying MG-G7 with
+  weld/E.08 is an explicit interpretive framing choice by the agent, not a registered Toledo/Genesis
+  equivalence -- flagged as such, not overclaimed as settled.
+  Track PNP (calibrating the readout-first weld/M.03+weld/E.06 semantic-demand machinery against known
+  classical lower bounds, NOT attacking PROP-SCA-PNP-06 or SAT directly): GENUINE ADVANCE, narrowly
+  scoped, finite_diagnostic tier -- the framework's own weld/M.03 (no-early-collapse) + weld/E.06
+  (sufficiency) machinery, applied mechanically with zero external-theorem citation, exactly reconstructs
+  the classical minimum-DNF-size bound for PARITY_n (2^(n-1) terms) at depth 2, exhaustively for n=2..9,
+  with a negative control (OR_n/AND_n correctly show legal shortcut terms, ruling out a vacuous check).
+  Combined with an independent re-verification of the pre-existing AC0_BASELINE.md classical-reduction
+  calibration (IDM PR #117, reachable draft branch research/p-vs-np-readout) as a second, harder
+  calibration point (CNF-SAT not-in-AC0 via reduction + external Håstad theorem). Explicitly NOT
+  depth-general (depth-3+ is a named open next step), NOT an asymptotic theorem for general n (exhaustive
+  per-n only), and explicitly says NOTHING about SAT (PARITY_n's DNF is a fixed non-sharing family; the
+  existing rrr_circuit_audit.py negative control in IDM PR #117 already shows why a naive count fails
+  once sharing is allowed, e.g. Equality's O(m)-gate shared circuit vs 2^m residual functions).
+  PROP-SCA-PNP-06 status UNCHANGED (tier Open, status unverified).
+  ALL THREE TRACKS: this does NOT close QSC-RIGIDITY, MG-G7, or PROP-SCA-PNP-06 (the SAT semantic-demand
+  target) -- every one of these three uniformity gates remains exactly as OPEN as before this session.
+  Committed (this repo, NS/YM files together, no AI trailer; PNP files were already committed separately
+  at 42468f2) and logged here + matching HANDOFF_clay_solver_restructure.md entry in
+  readout-problem-navier-stokes-internal. FINITE_CLAY_PROJECT_LEDGER_2026-09-13.md does not exist yet in
+  that repo as of this entry (checked directly) -- per task instruction, not created by this session; a
+  future session landing that ledger should append a dated addendum recording these three attempts
+  instead of duplicating this entry.
