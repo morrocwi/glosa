@@ -1066,3 +1066,52 @@ U57. (24:2x, Dr, reuse-pipeline placement pass, readout-problem-navier-stokes-in
     framed here as the intended positive control once other readers exist.
   Process note: the pnp_rh_hodge_bsd_poincare placement dossier has not yet received an independent adversarial
   review (unlike its three siblings) -- recommend running one before treating its verdicts as settled.
+
+U58. (session, U54 P2/P3 build) Four Track A/B reports built in p3_attack_2026-09-11/ (files: rg_p2_
+  vortex_stretching_REPORT.md/.py/.json, rg_p2_cascade_dissipation_REPORT.md, rg_p2_coherent_structure_REPORT.md
+  + rg_p2_coherent_cluster_scan.py/.json, rg_p3_qns_map_REPORT.md/.py + rg_p3_qns_worked_example.json).
+  P3 q_NS MAP (Definition tier map, finite_diagnostic worked example, independently re-verified bit-for-bit,
+  no issues): explicit q_NS : FiniteState -> (u_samples, p_proxy, omega_k, E(|k|)) built as a declared weld/
+  M.02 adapter over T02System's retained state -- NOT asserted admissible or sufficient (that is P4's job).
+  Worked example on rg_t0_02_A_d2 snap_2 (N_half=289): pressure-Poisson self-consistency against the
+  stepper's own N_k matches to 2.79e-16; energy-spectrum partition sums to the system's own energy() exactly.
+  KEY INPUT TO P4 -- the discarded-information list (11 items, all finite_diagnostic-tier fields q_NS never
+  reads): per-source lineage {g_alpha,k}_alpha (only the aggregate sum_alpha g_alpha,k survives into q_NS --
+  this is the literal U54/P4 candidate lost distinction), cancellation ledger (Sabs/Nabs/aligned/cancelled/
+  D_acc), strongest-source-per-address + first-energisation time/pair, generation label gen(a), the exact
+  integer address triple, pair-table topology (which triads exist, npr), exit-layer forcing + exit ledger
+  (q_NS's domain excludes the exit layer entirely), cross-window Duhamel history (q_NS is instant-only, not
+  history-functional), higher enstrophy moments (H6cell), forced-address ledger classification (ACTIVE/
+  EXACT-CANCELLED/NULL-BY-GEOMETRY/TED/UNRESOLVED), seed/point identity + nu (metadata, not state).
+  P2 VORTEX STRETCHING (finite_diagnostic, one run point A d=2): seed-scale self-amplification REFUTED (all
+  7 seeds lose an order of magnitude of |omega_k| by window 1, never recover); forward transfer to descendant
+  scales observed but only in a 6.0% (17/282) minority of non-seed addresses showing strictly monotonic
+  growth across all 3 windows; NO single dominant triad found feeding any of the 17 traced addresses (79-173
+  simultaneously-active pairs each, rank-1 contributor never exceeds 6.0% of gross source sum, identity of
+  the top contributor changes at every step for all 17). Verdict: PARTIAL/SUGGESTIVE finite-native analogue
+  only, not a reconstruction of the stretching mechanism itself. Adversarial review caught one overclaim
+  (an "80-97% cancelled" figure presented as newly confirmed on these 51 rows was actually an unverified
+  carry-over from a different, earlier whole-run report; the script never computed a net/aligned-forcing
+  quantity for these rows) -- fixed in the report by this session (now labelled as an open, unmeasured
+  question, not a confirmed figure).
+  P2 CASCADE/DISSIPATION (finite_diagnostic, synthesis of already-computed T0-02/M2 numbers, no new compute):
+  cascade DIRECTION confirmed (low cell -> high cell, both points, both depths); dissipation CONCENTRATION at
+  high-|k| cells confirmed qualitatively (LE_v=2*nu*|k|^2*|u|^2 is a bare algebraic identity, R_m/LE_total
+  both track the cascade's advance); the 0.90-0.97 gross-vs-net cancellation fraction given a clean, purely-
+  combinatorial reading (D_acc=0 to machine precision, cancellation != loss). Explicit 8-item gap list of
+  what a real Kolmogorov/inertial-range claim needs and does not have anywhere in this repo: no spectral
+  exponent, no inertial subrange (structural gap -- would need d>=4, outside budget), no scale-uniform
+  cascade rate (T0-02's own d=2->3 test found INSUFFICIENT_RESOLUTION), no locality-of-interaction statement,
+  no structure-function relation, no isotropy/ensemble statement beyond a two-point A/B control, no cutoff-
+  scale fit.
+  P2 COHERENT STRUCTURE (finite_diagnostic + exploratory, point A, d=2/3): exact, general NO-SPLIT proof for
+  the k-space proximity graph of a monotonically-growing address set (a graph that only gains nodes/edges can
+  merge but never split components -- verified computationally at 3 radii, both depths, zero splits found).
+  One recurring geometric outlier (the self-doubling axial seed chain) identified and shown dynamically
+  irrelevant (exact zero net forcing, reuses RESULT-S1-ITEM1-CLOSED). A genuine MERGE signature IS observed
+  and dynamically explained (the one true two-cluster moment at generation 0 checked with real amplitudes:
+  cross-pair forcing is ~26% of within-group forcing, not near-zero, so the pieces merge by generation 1 as
+  observed). A vacuous automated cross-force check (tautologically zero by the pair table's own domain
+  restriction) was caught before being reported as a finding -- flagged explicitly instead.
+  Not independently adversarially reviewed this pass: cascade/dissipation, coherent-structure (only q_NS-map
+  and vortex-stretching received a review verdict in this task).
