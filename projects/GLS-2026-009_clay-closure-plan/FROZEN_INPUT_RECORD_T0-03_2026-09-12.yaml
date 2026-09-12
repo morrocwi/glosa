@@ -1,0 +1,27 @@
+# T0-03 — G4/RS lane probe (frozen 2026-09-12 ~23:45 under founder delegation "ทำได้เลย"). NOT started; queued after T0-02.
+frozen_record:
+  id: T0-2026-09-12-03
+  purpose: "RS (weld/E.06 sufficiency) readout outside the strongly dissipative regime of T0-01/T0-02: same W3 datum, nu = 1/2000 (10x smaller relaxation), so retained load survives beyond ~5 relaxation windows of cell 0"
+  seed: "identical to T0-02 (rg_t0_02_seed.json, point A only)"
+  grammar_A: "identical to T0-02 except nu = 1/2000"
+  reader_family_Pi: "identical to T0-02; cells, A_{N,eta} (eta=1/2), alpha split, D_acc residual, turnover balance"
+  horizon_H: "3 relaxation windows of the highest measured cell at the new nu (longer wall; cap 90 min per run)"
+  budget_K: "one process; ulimit -v 3000000; depth d in {2,3}; unfinished = UNRESOLVED"
+  question_Q:
+    i: "A_{N,eta} bounded by a functional of T0 and stable d=2->3 when the load is long-lived?"
+    ii: "does the cutoff sensitivity (d2 vs d3) stay below 10% per cell as in T0-01/T0-02?"
+    iii: "balanced turnover window with S>0, T certified, E=D=0 and inventory return? (PCR falsifier candidate)"
+  forbidden: "editing after start; comparing against T0-02 numbers except through the declared readouts"
+# Founder ruling (23:5x): GO-FREEZE / HOLD-RUN. Full freeze list, locked before any T0-02 result is read:
+freeze_list:
+  nu: "1/2000"
+  u0: "rg_t0_02_seed.json point A (14 modes, C = 1), amplitude vectors as recorded; no rescaling"
+  normalization: "critical normalization as in T0-01/T0-02 (|a_k|^2 ~ |k|^-1 in RD units); joint reanchor (amplitude lambda, address lambda^-1) declared as the only admissible rescale"
+  q: "cell quotient Z = (S, mu, C, A, B, Omega, I) of P2 Standalone vNext; cells Lambda_m = 5^(m/2) lambda_0 with lambda_0 fixed by |k| = 1 in cell 0"
+  reader: "A_{N,eta} eta = 1/2; alpha_sel/off/cancel/total; D_acc residual; turnover balance U A + S = A' + T + E + D"
+  M_ancestry_horizon: "M = 3 cells below the measured cell; ancestry weight 2^{-2 eta (m-i)}"
+  tau_0: "tau_0 = 1/(nu Lambda_1^2) (first relaxation window); horizon = 3 relaxation windows of the highest measured cell"
+  tolerances: "energy identity 1e-10 relative; classification threshold 1e-12 of seed load; exact rationals for every decision"
+  seed_file: "rg_t0_02_seed.json (sha256 to be recorded by the runner before start)"
+  code_commit: "NS repo origin/main f3716f39c0d65eeb89f60c4fa226624628ff2eb0 at freeze time; stepper rg_t0_02_stepper.py (internal repo, commit to be pinned at start)"
+status: "FROZEN / QUEUED — runs after T0-02 and after the A3 rectangle Groebner; nothing above may change after reading T0-02"

@@ -1,0 +1,15 @@
+# T0-04 — complex-phase clone of T0-02 (founder ruling 2026-09-13 ~01:30: GO-FREEZE / HOLD-RUN). FROZEN / NOT RUN.
+frozen_record:
+  id: T0-2026-09-13-04
+  definition: "T0-02 clone in EVERY respect except the field: amplitudes in C instead of R"
+  inherited_unchanged: [support, mode order, seed addresses, ancestry rule, normalization, joint reanchor, reader family, zero/nonzero predicates (exact), closure depth d in {2,3}, tolerances, cells, horizon, budget]
+  complex_specification:
+    reality: "X_{-k} = conj(X_k) (real field in physical space); the real T0-02 seed is the special case Im = 0"
+    seed_phases: "point A amplitudes multiplied by fixed unit phases e^{i theta_m} with theta drawn from the declared list theta_m = 2 pi m_index / 7 (m_index = mode index in rg_t0_02_seed.json order), frozen now; no phase is chosen after any T0-02 result"
+    gauge: "global phase fixed by requiring X_k (k = (0,0,1) mode) real positive at t = 0; no other gauge freedom is used"
+    predicates: "zero/nonzero tests on |X_t|^2 exactly as in T0-02; Type-P classification over CP^1 (both complex fixed lines counted), reported separately from the real classification"
+  question_Q:
+    i: "does the gen-1/gen-2 novelty count and D_acc change when phases are retained?"
+    ii: "Type-P loop monodromy over C: number of complex fixed lines per observed loop (1 or 2), never 0"
+    iii: "balanced-turnover / PCR falsifier candidate window as in T0-02"
+status: "FROZEN / NOT RUN — runs after T0-03; nothing here may change after reading T0-02"
