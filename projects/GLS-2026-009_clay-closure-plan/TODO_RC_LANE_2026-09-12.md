@@ -952,3 +952,33 @@ U54. (founder 23:3x, supersedes/sharpens U53) PROGRAMME LOCKED: "Finite-Clay" co
   a declared tolerance against real data, (vii) NS comparison is OPTIONAL, never foundational. Millennium
   Clay/regularity is now explicitly a benchmark/comparison layer only, not the finish line, until the founder
   reopens it as a separate, explicitly stated goal.
+
+U55. (founder 23:5x) PARALLEL TRACK IDENTIFIED, NOT YET ACTIVATED: "Finite-PNP" analogue to Finite-NS (U54), same
+  Readout Genesis architecture: Finite Instance -> Retention -> Computation -> Necessary Distinction ->
+  No-Early-Collapse -> Uniform Complexity Bound. Founder's own comparison table: Finite-NS drops continuum-as-
+  primitive; Finite-PNP drops asymptotic-infinity-as-primitive (the forall-n / T(n)<=n^k quantifier structure is
+  the only "infinite" part of P vs NP -- otherwise already finite-native: finite strings, finite algorithms,
+  finite computation steps). Founder's sharper target: not "prove P!=NP" but "what is the minimal distinction a
+  SAT verifier must retain so the future accept/reject answer cannot change" -- i.e. find a distinction-generation
+  rule whose retained-distinction count D_n is FORCED to grow faster than every admissible polynomial, via a
+  finite, checkable per-n certificate C(n) with forall k exists n_0(k) forall n>=n_0(k): L(n)>n^k (never stopping
+  at finite-n spot checks n=10,20,100 -- that is diagnostic only, not the theorem).
+  KEY REUSE FINDING: this is NOT a new invention -- ~/Downloads/Semantic_Closure_Accounting_P_vs_NP_v0.1.pdf
+  (read in full under U52) ALREADY builds most of this architecture: circuit-to-semantic-ledger compilation
+  (CGSL, size-preserving), the Retain-Recompute-Resolve (RRR) no-early-collapse theorem (the SAME weld/M.03
+  principle, independently instantiated for Boolean circuits), a resource-aware RRR capacity bound
+  (D <= s(kappa_R+kappa_Q+kappa_C)), and a ledger-to-circuit transfer theorem. Its own stated claim boundary:
+  "does NOT claim a proof of P != NP"; the ONE load-bearing open problem it names, verbatim, is exactly the
+  founder's C(n)/D_n target: "construct a non-circular, sharing-aware semantic demand H_n for SAT_n and prove a
+  capacity theorem valid for every small shared circuit, with H_n/K_n superpolynomial." Its own negative controls
+  (Sec 8: exponential future-readout width != exponential circuit size; raw retained bits != time; elimination
+  width != unrestricted circuit size) are exactly the failure-mode class already caught twice this session
+  (U50/U51) on the NS side -- same author, same discipline, independently converged.
+  STATUS: logged, NOT activated this session -- compute budget currently committed to the Finite-Clay P2/P3
+  Workflow (wf_603bda8b-95e) plus two other in-flight agents (Toledo registration, P4 early-collapse pilot).
+  Starting Finite-PNP work now would spread compute across three unrelated research threads at once, against
+  standing compute discipline. Recommend: let the current Workflow land, review its results, THEN decide whether
+  to open a Finite-PNP work order as a genuinely separate lane (it lives in a different repo/domain entirely --
+  no NS/Clay machinery to reuse across the boundary except the shared Genesis no-early-collapse principle itself).
+  If the founder wants Finite-PNP started in parallel immediately instead, say so explicitly and it will be
+  dispatched as its own separate agent (does not conflict with the NS-side Workflow's files/repos).
