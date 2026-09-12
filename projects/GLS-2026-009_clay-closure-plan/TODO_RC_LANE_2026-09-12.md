@@ -1207,3 +1207,49 @@ U60. (session, 5th ultracode workflow, Layer 2 synthesis of Track NS/YM/PNP) Thr
   that repo as of this entry (checked directly) -- per task instruction, not created by this session; a
   future session landing that ledger should append a dated addendum recording these three attempts
   instead of duplicating this entry.
+
+U61. (session, T1-T5 Phase 3 NAME+REGISTER) Registered PROP-P3-FINITE-PARTITION-REFINEMENT-CLOSURE-01
+  ("Finite Partition Refinement / Stabilization Closure") into Toledo, tier Th_coqc, domain M. Read the
+  actual Phase 2 output (FinitePartitionRefinementClosure.v, 543 lines; PrintAssumptions_T1T5.v) directly
+  rather than trusting the reported summary, and independently re-ran the verification: deleted all
+  .vo/.vok/.vos/.glob/.aux artifacts, `coqc -q` from scratch (Coq 8.20.1) on both files -- exit 0 both --
+  all five theorems (T1_monotone, T2_finite_termination, T3_quotient_well_defined, T4_minimality,
+  T5_finite_horizon_char) read verbatim "Closed under the global context"; `coqchk -silent` (separate
+  kernel-level re-checker) exit 0; grepped for Admitted/Axiom/Classical/excluded_middle -- 2 hits, both
+  inside comments, zero in proof scripts. T2's bound is explicitly WEAKENED (|S|^2 via a coarser
+  ordered-pair-count measure, not the tighter |S| via equivalence-class counting) and documented as such,
+  not silently dropped.
+  Registered as ONE entry (not split into five) with documented rationale (all five theorems share one
+  Fixpoint/Section, mutually dependent within a single file, unlike the prior PROP-P3-LRS-* precedent
+  which split two theorems about genuinely different mathematical objects). Parents cited at their exact
+  live tier/status: EQ-001/C.05.v1, EQ-001/C.07.v1, EQ-001/C.13.v1, EQ-001/C.16.v1 (untagged/current,
+  none promoted), weld/M.02.v1, weld/M.03.v1, weld/E.06.v1, A.8/M.01.v1 (Definition/Dr, coq_status
+  closed), plus Genesis A.13 Gate 5 / A.11 (not yet in Toledo, cited by name only).
+  INDEPENDENT ADVERSARIAL REVIEW CAUGHT A REAL ERROR before merge (this session's own registering pass,
+  a separate skeptical re-check of the Phase 1 ground_check's own claims -- not a re-confirmation of them):
+  rg_t1t5_ground_check.md read `coq_status: None` for both EQ-001/C.05.v1 and EQ-001/C.13.v1, but a fresh
+  direct read of the live registry/CANONICAL.json's `coq` sub-object (not just tier/status) found real
+  attached Coq content for both -- C.05 an UNPROVED Definition `EQ001_C05_hyp` (its own comment: "not
+  proved here"), C.13 an ALREADY-PROVED theorem `EQ001_C13_factorization_thm` ("Closed under the global
+  context", aliasing MRC_Prelude's mr_factorization_thm). Read both toledo/coq/canonical/*.v source files
+  directly to confirm neither is a literal duplicate of T1-T5 (different representation: explicit
+  list-of-lists refine_step / occupation-count multiset, vs. this file's recursive `eqv` relation) -- so
+  T1-T5 stands, but the parent-citation text for both was corrected (2nd commit on the PR, fbd7cded,
+  applied before merge) rather than left overclaiming ("no Coq-checked closure on record" for C.13, which
+  was false) or under-describing (C.05's real open_prop status, not merely "no coq attached"). Also
+  fresh-checked weld/M.02/M.03/E.06.v1 (Definition, closed, cited only as instance-of relationships, no
+  duplication risk) and A.8/M.01.v1 (closed; its proved theorem is an append-only-list nth_error fact, an
+  unrelated carrier to this file's Stable_forever lemma -- confirms "new content" claim, no correction
+  needed). Grepped Toledo CANONICAL.json + all proposals for partition-refinement/bisimulation/
+  Hopcroft/Moore phrasing: zero hits anywhere outside this entry -- no duplicate object anywhere.
+  Mandatory scope line carried verbatim in honest_caveats, confirmed present in the final merged text:
+  finite combinatorial/domain-theoretic lemma about ANY finite (S,F,O) system; resolves no Clay Millennium
+  Problem and no domain-specific uniformity question (PNP/NS/YM/RH/Hodge/BSD), all remain entirely OPEN.
+  Branch research/t1-t5-finite-partition-refinement-2026-09-12 -> PR
+  https://github.com/morrocwi/toledo/pull/35 -> independent adversarial pass (the coq_status finding
+  above) -> CI green (test, clay-governance, leak-scan, build-index, build-site all pass) -> MERGED
+  be859aae, fast-forward. Both .v files stay in the private readout-problem-navier-stokes-internal repo
+  (coq_source_redistributed: false) -- not copied into the public toledo repo at this stage. Committed
+  there (coq/FinitePartitionRefinementClosure.v, coq/PrintAssumptions_T1T5.v, rg_t1t5_ground_check.md,
+  HANDOFF edit, one commit 0900d57, no AI trailer) and logged there in HANDOFF_clay_solver_restructure.md.
+  Did not touch rg_track_r_scan_v2.py (another in-flight agent's file, untracked in that repo).
