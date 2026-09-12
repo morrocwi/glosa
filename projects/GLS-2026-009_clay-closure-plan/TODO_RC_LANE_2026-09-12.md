@@ -713,3 +713,42 @@ RESULT-S1-ITEM1-CLOSED (21:5x, exact + finite_diagnostic, rg_s1_ledger_completen
   the excluded self-pair resolves to ADMITTED (F(a)=0), never UNRESOLVED. S1 is now reduced to a SINGLE open item:
   the weld/E.08 cross-window bridge tolerance (item 2), which is the same object S2 needs (R_{j+1}<=qR_j+beta_j) --
   merge item 2 into S2's attack rather than treating it separately. S1_EXACT_STATEMENT_2026-09-12.md updated in place.
+
+U48. (founder 21:5x-22:2x) S2 re-sketched from scratch under Genesis + Toledo reuse discipline; multiple rounds of
+  self-correction by the founder, final state locked here (not the earlier drafts):
+  S2-A (retention/residual interface) = CLOSED as an exact identity (q_D F = F# q_D + R, reuses weld/M.02; R = 0 or
+  ledgered, reuses EQ-001/C.16) -- this IS S1, not a separate S2 gate; no new object.
+  S2-B1 (equation scale covariance k->rho k, u_k->rho u_k, B_{rho p,rho q}(rho a,rho b)=rho^3 B_{p,q}(a,b)) = exact,
+  DERIVED (elementary homogeneity of the existing coupling formula).
+  S2-B2 (reader/invariant transport across scales, weld/E.08 bridge tolerance) = OPEN, folds into S1 item 2 (already
+  logged) -- not duplicated as a separate S2 item.
+  S2-F (compactness route to a uniform delta) = RETIRED as the PRIMARY mechanism (avoids importing continuum
+  compactness prematurely); reused instead as a LOCAL, finite-dimensional tool inside QSC (below) -- not discarded
+  outright, narrowed to where it is actually licensed (a closed bounded normalized parameter set in R^n, not a
+  function-space compactness claim).
+  L1 (BAD occupation => actual recurrent web) = RETIRED/RETRACTED as an unnecessary step: the dual certificate can
+  be applied directly to the ACTUAL window occupation z_j (already retained by S1's ledger), transporting the bound
+  forward without ever reconstructing a hypothetical infinite web. No loss of rigor; strictly fewer objects.
+  Claim "E-only recurrence cannot carry cross-scale replenishment" = RETRACTED by the founder (false as stated --
+  counterexample p=(1,0,0),q=(0,1,0), |p|=|q|=1, |p+q|=sqrt2 > 1, equal-shell interactions plainly can exit shell).
+  NEVER logged as a result in this TODO before this correction -- no downstream record depends on it, nothing else
+  to retract.
+  QSC-RIGIDITY (quantitative self-closure floor forcing O/E/C/T exhaustion under normalized productivity >= kappa)
+  = the named S2-CORE hard target, status OPEN / Dr, NOT verified this session -- flagged as the honest remaining
+  wall, not claimed closed.
+RESULT-EXPOSED-PAIR-LEMMA (22:2x, exact, rg_exposed_pair_nullity.py): founder's "exposed-pair nullity lemma" (EX)
+  VERIFIED. Reuses PROP-P3-GENERAL-ANCHOR-CROSS-NULLITY-01 (ACN) + elementary linear algebra (nonzero kernel vector
+  of a square 2x2 map forces det=0) -- no new axiom. Two independent parts checked: (1) combinatorial extremal-pair
+  uniqueness (for finite S subset Z^3, generic linear functional ell, p=argmax, q=second-highest with ell(q)>0: p+q
+  is the unique target with source decomposition {p,q} -- verified on 2000 random finite integer sets, sizes 3-8);
+  (2) the ACN chart is a genuine square (2x2) map q_perp -> k_perp, confirmed symbolically (det formula matches the
+  canonical (a.q)^2(|q|^2-|p|^2)/|p+q|^2 form up to a positive chart constant on a worked example). CONCLUSION
+  (conditional on a hypothetical zero-exit web containing such an extremal pair -- not a claim such a web exists):
+  unequal shell |p|!=|q| forces BOTH a_p.q=0 AND a_q.p=0 -- the extremal/exposed pair of any zero-exit finite support
+  is automatically mutually silent (double-O) whenever off-shell. Status: NEW DERIVATION / PROPOSAL, not yet in
+  Toledo; parents ACN (PROP-P3-GENERAL-ANCHOR-CROSS-NULLITY-01), weld/M.03.v1 (no-collapse, already ACN's own parent).
+  This is a genuinely new, cheap, S2-CORE-relevant tool: it constrains the BOUNDARY of any hypothetical BAD web
+  (its highest-functional-value pair) independent of scan/fixture work.
+  Next candidate step (not yet started): combine EX with the shell-conditioned span bound already in the repo
+  (dim span{a_i : |p_i| != |q|} <= 2) to ask whether a nonplanar, off-shell, zero-exit O/E/C-only cycle can exist at
+  all -- if no, that is real progress toward QSC-RIGIDITY; if yes, it is the first genuine BAD-web candidate to test.
