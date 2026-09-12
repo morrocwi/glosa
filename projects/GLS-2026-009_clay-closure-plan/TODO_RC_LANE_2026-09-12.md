@@ -1036,3 +1036,33 @@ RESULT-P4-PILOT (24:1x, finite_diagnostic, rg_p4_early_collapse_pilot_REPORT.md)
   structural defect -- narrow, transient-only, honestly reported as such. Report states precisely what a full P3
   (explicit q_NS map) needs to add to make this rigorous (address-level composition tracking Gnet uses only
   pooled event-types, not per-address -- real per-address data lives in T02System.ledger()/rg_t0_02_*.npz).
+
+U57. (24:2x, Dr, reuse-pipeline placement pass, readout-problem-navier-stokes-internal/p3_attack_2026-09-11/
+  rg_placement_MASTER_MAP.md + four source dossiers rg_placement_{root_and_bridge,ns_turbulence,ym_massgap,
+  pnp_rh_hodge_bsd_poincare}.md, independently adversarial-reviewed for three of the four) placed U56's root +
+  seven-reader architecture against actual Genesis/Toledo content, per-question:
+  - Root+bridge: NOT new machinery -- a legitimate new instancing of already-registered weld/M.01.v1 (root),
+    weld/M.02.v1 (zero-defect commuting square), and weld/M.03.v1+weld/E.08.v1 (the additive defect term) onto
+    the seven Clay targets; cite those parents when registering any q_D, do not re-derive or register D_{s,D}
+    as new.
+  - q_PNP: PARTIALLY EXISTS outside both Genesis and Toledo -- Semantic_Closure_Accounting_P_vs_NP_v0.1.pdf
+    (information-discrete-math repo, PR #117, 6 Coq files) covers the architecture; entire remaining gap is its
+    own named Open Problem 11.1 (SAT Semantic Demand Theorem).
+  - q_NS: most-worked reader -- this session's triad pair-sum/M2 conservation check is the first executable
+    instance anywhere in the workspace of Genesis Face 7 + II.8a's quadratic-transfer conservative check;
+    rg_m2_round1_REPORT.md's citation "EQ-015/S.17-S.22" for the spine Lyapunov face is WRONG (unrelated
+    ethics-domain object) -- correct code is Face.4 (+Face.7.RootForce); QSC-RIGIDITY stays OPEN.
+  - q_RH: DOES NOT EXIST anywhere in Genesis or Toledo beyond this file's own one-line placeholder; Open,
+    unbuilt.
+  - q_YM: finite/conditional half (InfoFiniteTransferGap.v, EXACT_CONDITIONAL, re-verified axiom-free this
+    pass) already exists in domains/standard_model/; continuum "uniform under refinement" half (gates MG-G7/
+    G8/G9) is OPEN; no translation from the literal root has been attempted.
+  - q_Hodge: DOES NOT EXIST anywhere in Genesis or Toledo beyond this file's own one-line placeholder; Open,
+    unbuilt.
+  - q_BSD: DOES NOT EXIST anywhere in Genesis or Toledo beyond this file's own one-line placeholder; Open,
+    unbuilt.
+  - q_Poincare: DOES NOT EXIST as a Genesis object (V.3 Geometry is metric-only, no triangulation content);
+    the classical theorem itself is externally settled (Perelman 2002-2003, not re-litigated); correctly
+    framed here as the intended positive control once other readers exist.
+  Process note: the pnp_rh_hodge_bsd_poincare placement dossier has not yet received an independent adversarial
+  review (unlike its three siblings) -- recommend running one before treating its verdicts as settled.
