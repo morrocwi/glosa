@@ -863,3 +863,43 @@ U52. (founder 23:1x) Founder pointed at 4 own prior manuscripts in ~/Downloads n
   twice already (finite-sample coverage != continuum coverage) -- confirms the correction pattern is a known,
   general readout-first pitfall, not specific to this session; no new NS-specific object to reuse from it.
   Status: framing sent to build agent; TASK A/B computation unchanged; still awaiting results, S2 not closed.
+
+U53. (founder 23:2x) PROGRAMME GOAL RE-STATED — major pivot, applies going forward:
+  "เป้าหมายเราไม่ใช่ปิด Navier Stokes แต่อธิบายสิ่งที่เกิดตามปรากฏการณ์นาเวียร์สโตกส์ได้ครบโดยไม่ต้องอาศัยคอนตินิวอัม...
+  เราไม่จำเป็นต้องสนใจ Clay เรื่องปิด แค่ finite_clay ให้ได้หมดจดและดีกว่าและง่ายกว่าด้วยซ้ำ เพราะ NS มันเป็นสมการที่สร้างจาก
+  สิ่งสมมุติคือวัตถุอนันต์ตั้งแต่ต้น ซึ่งเราไม่ได้สนใจ" -- the goal is NOT to prove the Clay Millennium regularity
+  statement for the continuum PDE. The goal is a COMPLETE finite/discrete (readout-native) account of what actually
+  happens in the NSE-lattice system, on its own terms -- never needing a bridge back to a continuum object, because
+  the continuum itself is built on an infinite-object assumption the programme does not accept as a starting point
+  (consistent with the standing Genesis stance: continuum = non-readout injection, never silently used as ground
+  truth). Working name for the target: "finite_clay" -- a fully specified, self-contained finite/discrete problem
+  whose own closure does not require touching the continuum PDE at all.
+  CONCRETE CONSEQUENCES for the S1/S2/S3 route (U47-U52):
+  - S3 (H^3 continuum-bridge, "sup||u||_H3 < infty => extend past T") is RETIRED as a programme goal -- it was
+    ONLY needed to translate a finite result back into a continuum-regularity claim, which is no longer the target.
+  - S1 item 2 (weld/E.08 cross-window bridge tolerance as j->infty, "does the ledger stay exhaustive as the window
+    shrinks toward a hypothetical continuum blowup time T") is RETIRED for the same reason -- there is no
+    continuum T to shrink toward if we are not making a continuum claim.
+  - S1 item 1 (ledger-construction exhaustiveness, CLOSED already) and ALL of S2's actual mathematical content
+    (QSC-gamma floor, EX/HULL-EDGE lemmas, O/E/C/T exhaustion, forced-address accounting) are NOT retired -- they
+    are RE-SCOPED from "machinery to contradict an assumed continuum blowup" to "a complete classification of
+    replenishment/exhaustion structure in the finite discrete NSE-lattice system itself." Same math, honest new
+    framing: no longer building toward "extend past T => bot", now building toward "does this finite/discrete
+    system have a describable, exhaustive-by-construction account of every possible interaction outcome" -- a
+    finite completeness/classification target, not an existence-uniqueness proof about R^3/T^3 continuum fields.
+  - The "assume first blowup T" hypothesis throughout U47's S1/S2/S3 skeleton is DROPPED. There is no T. The
+    finite-window family {I_j} is re-read as simply "the discrete system's own scale hierarchy," not as windows
+    shrinking toward a continuum singularity.
+  - PROP-URCF-01 (Toledo, from U52) becomes MORE central under this reframe, not less -- it is precisely a
+    finite-retained-state equation that does not require continuum well-posedness to be meaningful on its own.
+  - The Toledo/vault registration work (U49-U52 lemmas: forced-address, EX, HULL-EDGE, interface-novelty,
+    silent-layer, isotropic invariant) is UNAFFECTED -- these are exact finite/discrete facts, valid independent
+    of which programme goal they ultimately serve. Registration in progress, unaffected by this pivot.
+  Redirected the in-flight S2 build agent (TASK A/B) to drop the Clay-continuum-contradiction framing (Corollary
+  8.2 / State_Breakdown_Math_Only reframe from U52 is now OFF -- that reframe was specifically for the
+  continuum-bridge target, which no longer exists) and report TASK A/B results as standalone finite-system
+  classification facts instead.
+  Open question for the founder, not yet answered: does "finite_clay" have a precise problem statement beyond
+  "explain NS phenomena completely, finitely, without continuum" -- e.g. is there a specific finite predicate/
+  invariant that would count as "the finite_clay closure condition" the way Bz=0+Farkas was for S2? If not yet
+  fixed, this is the next thing to define precisely before more compute is spent aiming at a moving target.
