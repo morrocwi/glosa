@@ -22,3 +22,11 @@
     (`scripts/check_findings_complete.py`). Hand-offs between AI workers pass file paths, never
     truncated slices. Founder ruling 2026-09-05 (Blackbox Log BBL-2026-09-05-121), after one
     proposal (SA-5) fell out of a re-anchoring pass through a truncated hand-off.
+
+## Programme map
+
+This repository is one node of the Human-AI Readout Programme. Which repository answers which kind of
+question, what to read first and which gate applies is kept in one place, the routing hub:
+<https://github.com/morrocwi/main.hub> (start at its `AGENTS.md`, then `ROUTES.md`).
+The hub holds pointers and pinned links only. It is a readout of one moment: when the hub and this
+repository disagree, this repository wins.
