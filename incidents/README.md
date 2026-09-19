@@ -11,8 +11,8 @@ the incident file that motivated it.
 
 ## What is and is not in scope
 
-Every incident below is documented **only** from `cpg_research_journal/research/rigour-without-
-infrastructure/surveys/SURVEY_2026-09-04.md`, the companion `HANDOFF_2026-09-04_ultracode-
+Every incident below is documented **only** from `research/rigour-without-
+infrastructure/surveys/SURVEY_2026-09-04.md` (the private parent project), the companion `HANDOFF_2026-09-04_ultracode-
 foundation-meeting.md`, and — where the survey/handoff cite a private-repo memory as their own
 source — the operator's own private incident memory named in that citation. No detail below is
 invented to fill a gap; where the source material does not carry a fact (an exact date, a

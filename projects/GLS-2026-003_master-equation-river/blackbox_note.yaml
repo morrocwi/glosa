@@ -1,6 +1,6 @@
 $schema: blackbox_note.schema.json
 # Blackbox Note for project GLS-2026-003 (master-equation-river) -- glosa run on the "Master Equation
-# River: A Provenance Audit" internal synthesis document (cpg_research_journal, society-justice-peace
+# River: A Provenance Audit" internal synthesis document (the private parent project, society-justice-peace
 # series), per founder ruling BBL-2026-09-06-140. Raw line below is verbatim, never edited in place (a
 # correction is a new line, chair ruling A1). Source: the public Blackbox Log entry BBL-2026-09-06-140
 # (blackbox/log/entries.jsonl), copied verbatim -- never invented, never paraphrased into a founder voice.
@@ -12,7 +12,7 @@ session_boundary:
   opened_at: "2026-09-06T05:21:37+07:00"
   closed_at: null
   ai_state_at_boundary: reset
-  human_retained_residue_ref: "Master_Equation_River_Provenance_Audit_v1_0.pdf (cpg_research_journal/research/society-justice-peace/master-river/) -- the document the founder's ruling below responds to"
+  human_retained_residue_ref: "Master_Equation_River_Provenance_Audit_v1_0.pdf (research/society-justice-peace/master-river/ (the private parent project)) -- the document the founder's ruling below responds to"
 entry_anchor: GLOSA-PC-20260906-0003
 participants:
   - role: founder

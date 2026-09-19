@@ -7,7 +7,7 @@ identifier:
 fetch_status: FETCHED
 fetched_at: '2026-09-05'
 metadata_verified: true
-metadata_verified_by: 'manual: reused already-fetched local copy at cpg_research_journal/research/society-justice-peace/paper/sources/galtung1990.pages.txt,
+metadata_verified_by: 'manual: reused already-fetched local copy at research/society-justice-peace/paper/sources/galtung1990.pages.txt (the private parent project),
   confirmed header "Cultural Violence", Johan Galtung, Journal of Peace Research,
   Vol. 27, No. 3 (Aug. 1990), pp. 291-305'
 metadata_verified_at: '2026-09-05'

@@ -1,6 +1,6 @@
 # LRS digest — Paper A: Before Meaning, Before Choice (GLS-2026-004)
 
-Source runs: `lit new before-meaning-before-choice h1/h2/h3 --search-mode TARGETED_SEARCH` (2026-09-06), cross-vendor check `--vendor claude` (route:claude, independence_class I1 — same vendor, fresh headless session, not yet a true third-party I3 pass). Hypothesis text and falsifiers per `QUESTIONS.md`, itself sourced from the novelty-boundary review BBL-144 (`cpg_research_journal/research/society-justice-peace/master-river/LITREVIEW_2026-09-06_novelty_boundary.md`). H4 has a citations/rows skeleton on disk but no `litreview_manifest.yaml` and an empty dialogue table — it was **not run** in this pass and is excluded below except where noted.
+Source runs: `lit new before-meaning-before-choice h1/h2/h3 --search-mode TARGETED_SEARCH` (2026-09-06), cross-vendor check `--vendor claude` (route:claude, independence_class I1 — same vendor, fresh headless session, not yet a true third-party I3 pass). Hypothesis text and falsifiers per `QUESTIONS.md`, itself sourced from the novelty-boundary review BBL-144 (`research/society-justice-peace/master-river/LITREVIEW_2026-09-06_novelty_boundary.md` (the private parent project)). H4 has a citations/rows skeleton on disk but no `litreview_manifest.yaml` and an empty dialogue table — it was **not run** in this pass and is excluded below except where noted.
 
 Hypothesis selection remains human-owned (founder, Yaoharee Lahtee) per QUESTIONS.md framing. Nothing below selects a hypothesis; it stocks the dialogue table for that decision.
 

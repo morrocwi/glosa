@@ -38,7 +38,7 @@ intake:
       set, kept apart from what was exercised and from what an evaluator observes, and kept apart
       from who is responsible for its compression) rather than as a declared, ungrounded quantity
       that changes meaning paper to paper?
-    blackbox_line_ref: "blackbox/log/entries.jsonl#BBL-2026-09-05-129 (the potential-choice-violence axis note itself); NOTE_2026-09-05_potential-choice-violence_axis.md (cpg_research_journal, society-justice-peace)"
+    blackbox_line_ref: "blackbox/log/entries.jsonl#BBL-2026-09-05-129 (the potential-choice-violence axis note itself); NOTE_2026-09-05_potential-choice-violence_axis.md (the private parent project, society-justice-peace)"
   q2_user_proposal:
     text: >-
       เรามีคำตอบทุกอย่างในเจเนซีสและรี้ดเอาท์อยู่แล้ว ที่ติดก็แก้ซะ ไม่ถอยข้อเคลม (BBL-2026-09-05-130)
@@ -89,7 +89,7 @@ standpoint:
     glosa methodology itself (claim cards answering the founder's five questions, tied to the
     Readout Condition's Existence-Attribution-Disclosure, gated through the independence ladder
     before public release) -- this project runs glosa on the Society/Justice/Peace/Violence series'
-    own "Potential as a Readout" paper (paper/main.tex, cpg_research_journal), per founder rulings
+    own "Potential as a Readout" paper (paper/main.tex, the private parent project), per founder rulings
     BBL-2026-09-05-130/132/134 ("raise the work to tier-one, never lower a claim").
 origin_blackbox_ref: "blackbox/log/entries.jsonl#BBL-2026-09-05-130"
 produced_by: joint
@@ -110,10 +110,10 @@ status: Draft
 human_owner: founder
 notes: >-
   This problem card exists because glosa is being run on the "Potential as a Readout" paper (society-
-  justice-peace series, cpg_research_journal), per founder ruling BBL-2026-09-05-134 to raise that
+  justice-peace series, the private parent project), per founder ruling BBL-2026-09-05-134 to raise that
   work to tier-one substance without lowering any claim. The "problem" here is the founder's own
   research problem (does "potential" name one readable quantity across five programme texts), not a
   problem about the glosa tool itself. Companion records live in
   records/lit/potential-as-readout/h{1,2,3}/ (literature search runs, owned by concurrent workers
-  lit-h1-h3 and lit-h2) and in cpg_research_journal/research/society-justice-peace/ (the paper and
+  lit-h1-h3 and lit-h2) and in research/society-justice-peace/ (the private parent project) (the paper and
   its sources, owned by a concurrent worker; not edited by this task).

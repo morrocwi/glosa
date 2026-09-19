@@ -11,7 +11,7 @@
 > abstract only.
 
 Background: `paper/main.tex` (Potential as a Readout,
-`cpg_research_journal/research/society-justice-peace/paper/main.tex`) already cites and quotes
+`research/society-justice-peace/paper/main.tex` (the private parent project)) already cites and quotes
 Galtung (1969/1990), Sen/Kabeer, Bandura, Emirbayer & Mische, Bazzani (2023), Klyubin & Polani
 (2005), Foucault (1982), and the programme's own four prior papers (Causal Grammar, Causal Ethics,
 Violence-as-Instability, Causal Agency) plus the Readout Genesis/Readout Universe core. Sources

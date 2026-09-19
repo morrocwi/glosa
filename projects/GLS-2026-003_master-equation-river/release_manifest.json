@@ -40,7 +40,7 @@
   },
   "r5_anchor_preservation_audit": {
    "result": "PASS",
-   "notes": "all ten Zenodo DOIs (10.5281/zenodo.<id>) resolve and were fetched directly; the document under check (Master_Equation_River_Provenance_Audit_v1_0.pdf) is read from cpg_research_journal, not modified by this project"
+   "notes": "all ten Zenodo DOIs (10.5281/zenodo.<id>) resolve and were fetched directly; the document under check (Master_Equation_River_Provenance_Audit_v1_0.pdf) is read from the private parent project, not modified by this project"
   },
   "r6_overclaim_register_scan": {
    "result": "PASS",

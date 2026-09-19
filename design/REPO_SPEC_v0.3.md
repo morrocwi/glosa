@@ -359,7 +359,7 @@ glosa/
 Two distinct working trees are in play, and this pass keeps them explicitly separate:
 
 1. **This design round's own working tree**, `research/rigour-without-infrastructure/` inside
-   `cpg_research_journal` — this directory keeps its original name; it is the design workspace, not
+   `the private parent project` — this directory keeps its original name; it is the design workspace, not
    the target repo, and is never renamed to `glosa`. `git status`/`ls -la` here as of this
    synthesis pass shows only `design/`, `reviews/`, `sources/`, `surveys/`, and this repo's own
    root `HANDOFF_*`/`PLAN_*` files.

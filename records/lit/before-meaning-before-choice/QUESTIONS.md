@@ -1,5 +1,5 @@
 # LRS questions — Paper A: Before Meaning, Before Choice (GLS-2026-004)
-Founder instruction 2026-09-06 (BBL-2026-09-06-146): prepare the literature. Hypotheses below are AI DRAFTS for the founder to select (hypothesis selection is the human-owned act; none is selected yet). Sources: novelty-boundary review BBL-144 (cpg_research_journal/research/society-justice-peace/master-river/LITREVIEW_2026-09-06_novelty_boundary.md).
+Founder instruction 2026-09-06 (BBL-2026-09-06-146): prepare the literature. Hypotheses below are AI DRAFTS for the founder to select (hypothesis selection is the human-owned act; none is selected yet). Sources: novelty-boundary review BBL-144 (research/society-justice-peace/master-river/LITREVIEW_2026-09-06_novelty_boundary.md (the private parent project)).
 
 ## H1 — Admission order (root gate)
 Human-semantic and agentic categories are admitted only after a non-semantic retained-state layer has passed explicit reader, translation, loss and dynamics-preservation gates; what distinguishes the architecture from its relatives is this admission order with provenance, not any single construct.

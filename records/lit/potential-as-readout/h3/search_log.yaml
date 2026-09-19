@@ -35,7 +35,7 @@ frozen_scope:
   language_strategy: "EN primary; Satha-Anand copy already in sources/ is EN-language scholarship
     on Thai Muslim nonviolence (Deep South), used as the local/SEA anchor for this axis."
   global_sources:
-    - "already-fetched copies in cpg_research_journal/research/society-justice-peace/paper/sources/
+    - "already-fetched copies in research/society-justice-peace/paper/sources/ (the private parent project)
       (Galtung 1969, Galtung 1990, Satha-Anand 2021)"
     - "journals.uchicago.edu (Farmer 2004)"
     - "OUP free sample chapter (Fricker 2007)"

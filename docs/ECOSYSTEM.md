@@ -43,7 +43,7 @@ flowchart TB
 
     subgraph PRIVATE["Private components (name + role only)"]
         CMDC["command center (private)"]
-        CPGRJ["cpg_research_journal — research journal"]
+        CPGRJ["the private parent project — research journal"]
         SALAMXP["salamxp — ops/documentation workspace"]
         SOLVER["solver arc (private) — equation-derivation repository"]
     end
@@ -173,7 +173,7 @@ publish rule for this document.
 | Name | Role |
 |---|---|
 | the command center (private) | Command center — governance, coordination, and operations hub for the programme. |
-| cpg_research_journal | Research journal / internal knowledge-development workspace for the Human-AI epistemic architecture programme. |
+| the private parent project | Research journal / internal knowledge-development workspace for the Human-AI epistemic architecture programme. |
 | salamxp | Documentation/ops workspace for a tourism-platform cluster. |
 | solver arc (private) | Equation-derivation repository; referred to only as "solver arc (private)" per policy, never by its own name. |
 
@@ -303,7 +303,7 @@ The ladder score reads three signals only: Toledo's coq_status (R2), Reproductio
    EQ-ID. No automated check was found confirming those EQ-IDs still resolve to live Toledo
    codes, so this copy can drift silently from the registry it is meant to defer to.
 3. **A private repo's own git remotes contradict its declared visibility.**
-   cpg_research_journal's README repeatedly declares itself private/internal/not for public
+   the private parent project's README repeatedly declares itself private/internal/not for public
    release, yet its git configuration lists a public GitHub remote alongside its internal
    one. Flagged by the inventory pass itself as needing founder verification before any
    public document makes a visibility claim about this repo.

@@ -59,7 +59,7 @@ standpoint:
   method_basis: glosa methodology itself (claim cards answering the founder's five questions, tied to
     the Readout Condition's Existence-Attribution-Disclosure, gated through the independence ladder before
     public release) -- this card is produced by running glosa on the "Potential as a Readout" paper (society-justice-peace
-    series, cpg_research_journal), per founder rulings BBL-2026-09-05-130/132/134.
+    series, the private parent project), per founder rulings BBL-2026-09-05-130/132/134.
 claim_type: EMPIRICAL
 claim_type_mapping_note: hypotheses.md/hypothesis_selection.yaml label H3 "EMPIRICAL, tested on a fixture",
   which matches `claim_card.schema.json`'s `claim_type` enum directly (EMPIRICAL is a listed value) --
@@ -127,7 +127,7 @@ five_questions:
     retrievable_original: true
     access_model: The founder's own Blackbox Note lines (BB-2026-09-05-02#1-3), NOTE_2026-09-05_potential-choice-violence_axis.md
       §9.3 (the fixture's own description and its first-attempt-failed-then-corrected control), and the
-      fixture's actual output files (cpg_research_journal/research/society-justice-peace/sim/nogo_fixture.py,
+      fixture's actual output files (research/society-justice-peace/sim/nogo_fixture.py (the private parent project),
       sim/nogo_fixture_result.json). Concurrent-worker literature records this card's placeholder evidence_relations
       point at (records/lit/potential-as-readout/h3/*) had not yet completed at the time this card was
       drafted.
@@ -195,7 +195,7 @@ five_questions:
       "operator-change leg is only a note''s summary table" defeater three review routes raised, and
       reworded statement/scope in response to those reports.'
     retrieved_tool_evidence: This revision read FORMAL_2026-09-05_bounded_suppression.md and
-      sim/battery_result.json directly (local files in cpg_research_journal, not a web fetch) to cite
+      sim/battery_result.json directly (local files in the private parent project, not a web fetch) to cite
       Lemmas 1-3 and the 60/60 battery result; the original task also read sim/nogo_fixture_result.json
       directly. No WebFetch/WebSearch calls were made by this task for H3's own wider (non-programme)
       literature falsifier; the seven literature citation_refs above were reconciled from concurrent lit
@@ -260,7 +260,7 @@ five_questions:
       bearing: SUPPORTS
       independence_class: I1
       strength: primary executed evidence; scoped "context" for rule 28 because it is an artifact, not a
-        citation card; cpg_research_journal/research/society-justice-peace/sim/battery_result.json
+        citation card; research/society-justice-peace/sim/battery_result.json (the private parent project)
       citation_ref: battery-random-graph-run-001
       review_mode: null
       route_id: null
@@ -282,7 +282,7 @@ five_questions:
       bearing: SUPPORTS
       independence_class: I1
       strength: primary executed evidence; scoped "context" for rule 28 because it is an artifact, not a
-        citation card; cpg_research_journal/research/society-justice-peace/FORMAL_2026-09-05_bounded_suppression.md
+        citation card; research/society-justice-peace/FORMAL_2026-09-05_bounded_suppression.md (the private parent project)
       citation_ref: formal-lemmas-L1-L4
       review_mode: null
       route_id: null
@@ -711,7 +711,7 @@ revision_history:
     fixture-nogo-2node-run-001 (strength unchanged, already contains "context"); ADDED
     battery-random-graph-run-001 and formal-lemmas-L1-L4 the same way (citation_ref = the same id string,
     strength containing "context", bearing SUPPORTS, I1), pointing at the journal files by relative path
-    (cpg_research_journal/research/society-justice-peace/..., no absolute /home paths). (c) in
+    (research/society-justice-peace/... (the private parent project), no absolute /home paths). (c) in
     records/lit/potential-as-readout/h3/citations/, set scope CONTEXT_ONLY_NOT_EVIDENCE on
     cite-galtung1969-potentialgap-001 and cite-galtung1969-negpospeace-002 (were DIRECT_QUOTATION) and
     rewrote their disclosures to remove "SUPPORTS H3 strongly"/"SUPPORTS H3"; made

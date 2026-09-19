@@ -1,6 +1,6 @@
 $schema: blackbox_note.schema.json
 # Blackbox Note for project GLS-2026-002 (potential-as-readout) -- glosa run on the "Potential as a
-# Readout" paper (society-justice-peace series, cpg_research_journal), per founder rulings
+# Readout" paper (society-justice-peace series, the private parent project), per founder rulings
 # BBL-2026-09-05-130/132/134. Raw lines below are verbatim, never edited in place (a correction is a
 # new line, chair ruling A1). Source: the public Blackbox Log entries BBL-2026-09-05-129/130/132/134
 # (blackbox/log/entries.jsonl), copied verbatim -- never invented, never paraphrased into a founder
@@ -13,7 +13,7 @@ session_boundary:
   opened_at: "2026-09-05T20:01:26+07:00"
   closed_at: null
   ai_state_at_boundary: reset
-  human_retained_residue_ref: "NOTE_2026-09-05_potential-choice-violence_axis.md (cpg_research_journal/research/society-justice-peace/) -- the analysis the founder's rulings below respond to"
+  human_retained_residue_ref: "NOTE_2026-09-05_potential-choice-violence_axis.md (research/society-justice-peace/ (the private parent project)) -- the analysis the founder's rulings below respond to"
 entry_anchor: GLOSA-PC-20260905-0002
 participants:
   - role: founder
