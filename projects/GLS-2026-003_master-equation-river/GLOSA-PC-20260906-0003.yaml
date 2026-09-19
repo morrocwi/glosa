@@ -92,7 +92,7 @@ standpoint:
     glosa methodology itself (claim cards answering the founder's five questions, tied to the Readout
     Condition's Existence-Attribution-Disclosure, gated through the independence ladder before public
     release) -- this project runs glosa on the "Master Equation River: A Provenance Audit" internal
-    synthesis document (cpg_research_journal/research/society-justice-peace/master-river), per founder
+    synthesis document (research/society-justice-peace/master-river (the private parent project)), per founder
     ruling BBL-2026-09-06-140.
 origin_blackbox_ref: "blackbox/log/entries.jsonl#BBL-2026-09-06-140"
 produced_by: joint
@@ -113,7 +113,7 @@ status: Draft
 human_owner: founder
 notes: >-
   This problem card exists because glosa is being run on the "Master Equation River: A Provenance Audit"
-  document (society-justice-peace series, cpg_research_journal/research/society-justice-peace/master-river/
+  document (society-justice-peace series, research/society-justice-peace/master-river/ (the private parent project)
   Master_Equation_River_Provenance_Audit_v1_0.pdf), per founder ruling BBL-2026-09-06-140 ("ใช้ glosa
   ตรวจไฟล์นี้ ผ่านแล้วเอาขึ้นระบบ"). The "problem" here is the founder's own research problem (does the
   audit's own citation chain hold up when its ten named sources are fetched and read directly), not a

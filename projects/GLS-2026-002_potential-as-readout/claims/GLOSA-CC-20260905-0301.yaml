@@ -47,7 +47,7 @@ standpoint:
   method_basis: glosa methodology itself (claim cards answering the founder's five questions, tied to
     the Readout Condition's Existence-Attribution-Disclosure, gated through the independence ladder before
     public release) -- this card is produced by running glosa on the "Potential as a Readout" paper (society-justice-peace
-    series, cpg_research_journal), per founder rulings BBL-2026-09-05-130/132/134.
+    series, the private parent project), per founder rulings BBL-2026-09-05-130/132/134.
 claim_type: INTERPRETIVE
 claim_type_mapping_note: 'REVISED 2026-09-05 after three-route review (reviews/GLOSA-CC-20260905-0301.R1/R2/R3.review_report.json):
   hypotheses.md/hypothesis_selection.yaml label H1 an operational-definition/DEFINITIONAL claim (a set-membership
@@ -122,7 +122,7 @@ five_questions:
     retrievable_original: true
     access_model: 'The founder''s own Blackbox Note lines (BB-2026-09-05-02#1-3, mirrored publicly at
       blackbox/log/entries.jsonl#BBL-2026-09-05-130/132/134), paper/main.tex''s own eq. 1 (Witness Rule)
-      and Table "One object, five names", and NOTE_2026-09-05_potential-choice-violence_axis.md (cpg_research_journal/research/society-justice-peace/).
+      and Table "One object, five names", and NOTE_2026-09-05_potential-choice-violence_axis.md (research/society-justice-peace/ (the private parent project)).
       Concurrent-worker records this card''s evidence_relations point at (records/lit/potential-as-readout/h1/*:
       search_log.yaml, litreview_manifest.yaml, dialogue_table.md, citation cards under `citations/`)
       had not yet completed at the time this card was drafted -- see `capability_readout` and `non_claims`.'

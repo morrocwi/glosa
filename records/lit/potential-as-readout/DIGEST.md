@@ -104,7 +104,7 @@ NOT RUN, not forced to PASS.
 ## 5. `sim/battery.py`
 
 Executed once this session. `sim/battery_result.json` exists
-(`~/ANSE.ASIA/cpg_research_journal/research/society-justice-peace/sim/battery_result.json`,
+(`~/ANSE.ASIA/research/society-justice-peace/sim/battery_result.json (the private parent project)`,
 44,652 bytes, written 2026-09-05). `overall_verdict`:
 ```
 all_N_all_seeds_pass_P1_P4: true

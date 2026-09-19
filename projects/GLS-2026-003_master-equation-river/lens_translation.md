@@ -3,7 +3,7 @@
 > tier: Dr (specified; independently unreviewed). Follows `methodology/P00_lens.md` (lens-in before
 > analysis, lens-out before the hypothesis is stated) and fills the field names owned by
 > `schema/claim_card.schema.json`'s `lens_translation` block, this project's own copy. Sourced from
-> `Master_Equation_River_Provenance_Audit_v1_0.pdf` (cpg_research_journal/research/
+> `Master_Equation_River_Provenance_Audit_v1_0.pdf` (research/ (the private parent project)
 > society-justice-peace/master-river/) and `blackbox/log/entries.jsonl#BBL-2026-09-06-140`.
 
 ## question_human

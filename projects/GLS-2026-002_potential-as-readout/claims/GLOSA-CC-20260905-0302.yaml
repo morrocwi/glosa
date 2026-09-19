@@ -46,7 +46,7 @@ standpoint:
   method_basis: glosa methodology itself (claim cards answering the founder's five questions, tied to
     the Readout Condition's Existence-Attribution-Disclosure, gated through the independence ladder before
     public release) -- this card is produced by running glosa on the "Potential as a Readout" paper (society-justice-peace
-    series, cpg_research_journal), per founder rulings BBL-2026-09-05-130/132/134.
+    series, the private parent project), per founder rulings BBL-2026-09-05-130/132/134.
 claim_type: INTERPRETIVE
 claim_type_mapping_note: 'hypotheses.md/hypothesis_selection.yaml label H2 "CONCEPTUAL" (a claim about
   how many distinct layers the word "potential" names). `claim_card.schema.json`''s `claim_type` enum

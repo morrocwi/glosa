@@ -61,7 +61,7 @@ frozen_scope:
   - Semantic Scholar Graph API (OA PDF location, abstract where not elided)
   - Wayback Machine (web.archive.org, for a bot-blocked live URL)
   - selfdeterminationtheory.org (author-hosted OA PDF)
-  - local pre-fetched copy: cpg_research_journal/.../paper/sources/klyubin2005.pages.txt
+  - local pre-fetched copy: .../paper/sources/klyubin2005.pages.txt (the private parent project)
   local_context_sources: []
   search_date: '2026-09-05'
   stopping_rule: Stop once every source named in the task brief has been attempted via its named route

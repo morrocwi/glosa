@@ -20,7 +20,7 @@ inside `trigger`/`enforced_by` expressions are never redefined here — they are
   floor), section list, and the Blackbox Note requirement. Also carries `venue_track` requirements
   (`international` / `thai_tci` / `none`) — the `thai_tci` block reproduces the บทความวิชาการ vs
   บทความวิจัย section/ethics requirements from
-  `cpg_research_journal/.../design/S11_research-structure-dags.md` §10, itself marked `Dr` there
+  `.../design/S11_research-structure-dags.md` (the private parent project) §10, itself marked `Dr` there
   and unverified against any live TCI journal — and the `companion_of` requirement.
 - **`non_collapse_table.json`** — NC-01 through NC-64 (Families A-H), reproduced from
   `design/S9_non-collapse-table.md` (NC-01..NC-61) plus `design/FOUNDATION_v0.5.md` Appendix A

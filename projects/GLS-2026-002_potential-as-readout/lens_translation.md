@@ -3,7 +3,7 @@
 > tier: Dr (specified; independently unreviewed). Follows `methodology/P00_lens.md` (lens-in before
 > analysis, lens-out before the hypothesis is stated) and fills the field names owned by
 > `schema/claim_card.schema.json`'s `lens_translation` block, this project's own copy. Sourced from
-> `NOTE_2026-09-05_potential-choice-violence_axis.md` (cpg_research_journal/research/
+> `NOTE_2026-09-05_potential-choice-violence_axis.md` (research/ (the private parent project)
 > society-justice-peace/) and `paper/main.tex`'s own problem section.
 
 ## question_human
