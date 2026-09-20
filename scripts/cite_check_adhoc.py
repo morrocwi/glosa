@@ -219,6 +219,14 @@ def main():
     winning_meta = (best or {}).get("metadata") or {}
     venue = compute_venue_tier(winning_meta, reference_text=a.reference, tci_csv=a.tci_csv, quartile_csv=a.quartile_csv)
 
+    # Download signal: surfaced from the winning candidate's own metadata only (is_oa/oa_url from
+    # fetch_openalex, pdf_url from fetch_arxiv) -- never fabricated, never fetched here.
+    download_url = None
+    if winning_meta.get("is_oa") or winning_meta.get("oa_url"):
+        download_url = winning_meta.get("oa_url")
+    if not download_url and winning_meta.get("pdf_url"):
+        download_url = winning_meta.get("pdf_url")
+
     out = {
         "reference": a.reference,
         "identifiers_tried": _identifier_variants(a.reference, a.doi, a.pmid),
@@ -235,6 +243,16 @@ def main():
         ],
         "backend_errors": errors,
         "venue_tier": venue,
+        "download_available": bool(download_url),
+        "download_url": download_url,
+        # UNCONDITIONAL, regardless of download_available: this script only ever reads metadata
+        # from the fetch backends above -- it never downloads a single byte itself. "obtained" is
+        # a fact about a file existing on disk, which only scripts/cite_fetch_source.py (a
+        # separate, explicitly-invoked mechanical fetch step) can produce, and only a caller that
+        # actually runs that script and checks its result JSON is in a position to know whether
+        # that happened. A stateless per-invocation checker like this one has no way to know that
+        # and must never guess "obtained" just because a download_url happens to be present.
+        "acquisition_status": "not_obtained",
         "disclosure": DISCLOSURE,
     }
     if a.claim:
