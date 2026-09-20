@@ -50,13 +50,14 @@ never re-derived here):
 coverage_readout (global; distinct from existence_tier -- this describes SEARCH COMPLETENESS,
 not what was found, per the glosa rule LOCAL_EVIDENCE_NOT_FOUND != NO_LOCAL_EVIDENCE_EXISTS):
 
-  SEARCHED_OK     every backend that was applicable to this identifier completed without
-                  error (existence_tier itself may still be NOT_FOUND -- that is a real,
-                  clean "not found," not a gap in the search).
-  UNAVAILABLE     existence_tier == CHECK_ERROR, or backend_errors is non-empty AND the
-                  winning candidate (if any) came from a backend other than the one(s)
-                  that errored -- i.e. some backend that should have had a say did not
-                  get to. A "not found" verdict is untrustworthy until this clears.
+  SEARCHED_OK     existence_tier != CHECK_ERROR -- cite_check_adhoc.py's own _classify()
+                  already sets CHECK_ERROR exactly when a backend errored AND no
+                  applicable backend completed a clean check, so this field reads that
+                  one authoritative signal rather than re-deriving it. NOT_FOUND under
+                  SEARCHED_OK is a real, clean "not found," not a gap in the search.
+  UNAVAILABLE     existence_tier == CHECK_ERROR -- some backend that should have had a
+                  say did not get to; a "not found" verdict would be untrustworthy here,
+                  which is why _classify() never produces NOT_FOUND in this situation.
   NOT_ATTEMPTED   the claim axis only: no --claim was given, so claim_match coverage is
                   NOT_ATTEMPTED, independent of the existence axis's own coverage.
 
@@ -90,15 +91,16 @@ def gate(check_result, existence_only_ok=False):
     has_claim = "claim" in check_result
 
     # -- coverage_readout: search completeness, independent of what was found --
-    if existence_tier == "CHECK_ERROR":
-        existence_coverage = "UNAVAILABLE"
-    elif backend_errors and not check_result.get("best_match"):
-        # a backend errored and no other backend produced a usable candidate either --
-        # the same condition _classify() itself treats as CHECK_ERROR upstream, kept here
-        # as a defensive second read rather than trusting one string field alone.
-        existence_coverage = "UNAVAILABLE"
-    else:
-        existence_coverage = "SEARCHED_OK"
+    # existence_tier == "CHECK_ERROR" is itself already the authoritative signal:
+    # _classify() in cite_check_adhoc.py sets it exactly when (errors and not
+    # had_clean_applicable_check) -- i.e. some backend errored AND no applicable backend
+    # completed a clean check. Re-deriving that condition from backend_errors/best_match
+    # here (an earlier version of this function did) risks disagreeing with _classify()'s
+    # own rule -- e.g. an inapplicable backend erroring while an applicable one cleanly
+    # found nothing is a genuine SEARCHED_OK NOT_FOUND, not UNAVAILABLE. Read the one
+    # field _classify() already computed correctly instead of re-deriving a second,
+    # possibly-inconsistent version of the same fact.
+    existence_coverage = "UNAVAILABLE" if existence_tier == "CHECK_ERROR" else "SEARCHED_OK"
 
     claim_coverage = "NOT_ATTEMPTED" if not has_claim else "SEARCHED_OK"
 
