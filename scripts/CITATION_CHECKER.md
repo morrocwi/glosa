@@ -153,8 +153,16 @@ checks above — it never changes `existence_tier`, `claim_match`, or the `discl
 **What `cite_check_adhoc.py` derives from that, on the winning candidate only:**
 
 - `download_url` — `winning_meta.get("oa_url")` if `is_oa` or `oa_url` is truthy, else
-  `winning_meta.get("pdf_url")` if present, else `None`. This is read straight off the winning
-  backend's own metadata dict; the ad-hoc checker does not construct or guess a URL itself.
+  `winning_meta.get("pdf_url")` if present, else a rescue lookup (below), else `None`. Read
+  straight off a backend's own metadata dict; never constructed or guessed.
+- **Cross-candidate rescue (adversarial-review finding, 2026-09-20):** the winning candidate is
+  picked by title-similarity tie-break across `FETCH_BACKENDS`' order, which can pick a backend
+  (e.g. `crossref`) carrying no OA field even when a DIFFERENT backend independently found the
+  SAME work (identical normalized title — corroboration, not a different work) with a real
+  `oa_url`/`pdf_url`. If the winning candidate itself has no download signal, `cite_check_adhoc.py`
+  now scans the other candidates sharing the winner's normalized title and uses the first one that
+  does — so a genuinely open-access paper doesn't silently report `download_available: false` just
+  because a non-signal-bearing backend happened to win the tie.
 - `download_available` — `bool(download_url)`.
 - `acquisition_status` — **always the literal string `"not_obtained"`, unconditionally, no matter
   what `download_available` says.** This is deliberate, not a placeholder to fill in later:
@@ -189,14 +197,19 @@ python3 scripts/cite_fetch_source.py --url <url> --dest <dir> [--filename <name>
   `<dest>/<filename>` already exists, the script fails loud (`refusing to overwrite existing
   file: ... (pass --force to overwrite)`, stderr, exit code 1) and writes nothing — no silent
   overwrite is possible.
-- **Content-type mismatch flagging** — if the URL's path ends in `.pdf` but the response
-  `Content-Type` is `text/html` (not `application/pdf`), the script still saves the bytes (never
-  silently discards them — a paywall/CAPTCHA/error page is often exactly what such a mismatch
-  means, and the caller may want to inspect it) and adds `"content_type_mismatch": true` to the
-  result JSON, plus a stderr warning naming the URL and the destination path. Any other
-  `Content-Type` outside `("application/pdf", "text/html", "application/octet-stream")` also
-  prints a plain stderr warning (but is not tagged `content_type_mismatch` — that flag is
-  specifically the PDF-URL-but-HTML-body case).
+- **Content-type mismatch flagging** — if the response `Content-Type` is `text/html`, the script
+  still saves the bytes (never silently discards them — a paywall/CAPTCHA/error/withdrawn page is
+  often exactly what such a response means, and the caller may want to inspect it) and adds
+  `"content_type_mismatch": true` to the result JSON, plus a stderr warning. **This fires for ANY
+  `text/html` response, not only when the URL's path ends in `.pdf`** (adversarial-review finding,
+  2026-09-20: the original check only looked for a literal `.pdf` suffix, which silently missed
+  real PDF-serving URL shapes with no extension — e.g. arXiv's own `https://arxiv.org/pdf/<id>`,
+  exactly the shape `fetch_arxiv()`'s `pdf_url` field produces. A `/pdf/`-shaped URL now also
+  counts as "looks like a PDF" for the more specific wording in the warning message, but the
+  mismatch flag itself no longer depends on that detection at all — `text/html` is simply never an
+  acceptable content-type for this tool's purpose). Any other `Content-Type` outside
+  `("application/pdf", "application/octet-stream")` prints a plain, separate stderr warning (not
+  tagged `content_type_mismatch` — that flag is reserved for the `text/html` case specifically).
 - **50MB size cap (`MAX_BYTES = 50 * 1024 * 1024`)** — enforced two ways: (1) if the response's
   `Content-Length` header is present and already exceeds the cap, the fetch aborts immediately
   before writing anything; (2) if `Content-Length` is absent or unreliable, the script streams

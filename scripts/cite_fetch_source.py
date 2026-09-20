@@ -31,8 +31,11 @@ import urllib.request
 MAX_BYTES = 50 * 1024 * 1024  # 50MB
 CHUNK = 64 * 1024
 
-# Content-Types considered "a real document" for the fallback check.
-ACCEPTABLE_CONTENT_TYPES = ("application/pdf", "text/html", "application/octet-stream")
+# Content-Types considered "a real document" for the fallback check. text/html deliberately
+# excluded (adversarial-review finding, 2026-09-20): this tool exists to fetch a paper's actual
+# source file, and a text/html response is almost always a paywall/CAPTCHA/withdrawn/error page,
+# never a legitimate target -- it must always warn, never pass silently.
+ACCEPTABLE_CONTENT_TYPES = ("application/pdf", "application/octet-stream")
 
 
 def _default_filename(url):
@@ -42,7 +45,13 @@ def _default_filename(url):
 
 
 def _looks_like_pdf_url(url):
-    return urllib.parse.urlparse(url).path.lower().endswith(".pdf")
+    """A URL shape that implies the target is a PDF -- checked BEFORE fetching, used only to
+    label a text/html response as an expected-PDF mismatch (see fetch()). Covers both the
+    literal '.pdf' suffix and the '/pdf/' path segment several real sources use with no
+    extension (e.g. arXiv's own https://arxiv.org/pdf/<id> -- adversarial-review finding,
+    2026-09-20: the original suffix-only check silently missed exactly this real shape)."""
+    path = urllib.parse.urlparse(url).path.lower()
+    return path.endswith(".pdf") or "/pdf/" in path
 
 
 def _fail(msg, code=1):
@@ -76,8 +85,13 @@ def fetch(url, dest_dir, filename=None, force=False):
             f"aborting: Content-Length {content_length} bytes exceeds max {MAX_BYTES} bytes"
         )
 
-    content_type_mismatch = _looks_like_pdf_url(url) and content_type not in ("application/pdf",) \
-        and content_type.startswith("text/html")
+    # Flag ANY text/html response as a mismatch, not only when the URL also looks PDF-shaped
+    # (adversarial-review finding, 2026-09-20): a URL like arxiv.org/pdf/<id> has no ".pdf"
+    # suffix, so the old suffix-only _looks_like_pdf_url() check silently missed exactly this
+    # real shape -- text/html is essentially never the real target of this tool regardless of
+    # URL shape, so it always warns now, and still additionally names the "looks like a PDF URL"
+    # case explicitly when that's also true (the more specific, more actionable message).
+    content_type_mismatch = content_type.startswith("text/html")
 
     tmp_path = dest_path + ".partial"
     total = 0
@@ -103,16 +117,18 @@ def fetch(url, dest_dir, filename=None, force=False):
         os.remove(dest_path)
     os.replace(tmp_path, dest_path)
 
-    if not content_type or not any(content_type.startswith(ct) for ct in ACCEPTABLE_CONTENT_TYPES):
+    if content_type_mismatch:
+        pdf_shaped = _looks_like_pdf_url(url)
         print(
-            f"warning: unexpected Content-Type {content_type!r} for {url}",
+            (f"warning: URL looks like a PDF ({url}) but " if pdf_shaped else f"warning: ")
+            + f"Content-Type was {content_type!r} -- this often means a paywall/CAPTCHA/"
+            f"error/withdrawn page was saved instead of the real document; file was still "
+            f"saved for inspection at {dest_path}",
             file=sys.stderr,
         )
-    if content_type_mismatch:
+    elif not content_type or not any(content_type.startswith(ct) for ct in ACCEPTABLE_CONTENT_TYPES):
         print(
-            f"warning: URL looks like a PDF ({url}) but Content-Type was {content_type!r} "
-            f"-- this often means a paywall/CAPTCHA/error page was saved instead of the real "
-            f"document; file was still saved for inspection at {dest_path}",
+            f"warning: unexpected Content-Type {content_type!r} for {url}",
             file=sys.stderr,
         )
 

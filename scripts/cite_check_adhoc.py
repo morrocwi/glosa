@@ -219,13 +219,29 @@ def main():
     winning_meta = (best or {}).get("metadata") or {}
     venue = compute_venue_tier(winning_meta, reference_text=a.reference, tci_csv=a.tci_csv, quartile_csv=a.quartile_csv)
 
-    # Download signal: surfaced from the winning candidate's own metadata only (is_oa/oa_url from
+    # Download signal: surfaced from the winning candidate's own metadata (is_oa/oa_url from
     # fetch_openalex, pdf_url from fetch_arxiv) -- never fabricated, never fetched here.
+    # Fallback (adversarial-review finding, 2026-09-20): the winning candidate is picked by
+    # title-similarity tie-break among FETCH_BACKENDS order, which can pick a backend (e.g.
+    # crossref) that carries no OA field even when a DIFFERENT backend independently found the
+    # SAME work (same normalized title) with a real oa_url/pdf_url -- corroboration, not a
+    # different work. Rescue that signal instead of silently reporting download_available: false
+    # for a paper that genuinely is open access.
     download_url = None
     if winning_meta.get("is_oa") or winning_meta.get("oa_url"):
         download_url = winning_meta.get("oa_url")
     if not download_url and winning_meta.get("pdf_url"):
         download_url = winning_meta.get("pdf_url")
+    if not download_url and best:
+        best_key = _norm(best["title"])
+        for c in candidates:
+            if _norm(c["title"]) != best_key:
+                continue
+            m = c.get("metadata") or {}
+            if m.get("oa_url"):
+                download_url = m["oa_url"]; break
+            if m.get("pdf_url"):
+                download_url = m["pdf_url"]; break
 
     out = {
         "reference": a.reference,
