@@ -285,6 +285,17 @@ Items 1, 2, 6, 7 are the parts a mechanical lookup can do alone and should alway
 (cheapest, catches the most common and least ambiguous errors). Items 3–5, 8–9 require a reading
 act and are where the human/AI division of labour (§6, §8) actually matters.
 
+> **2026-09-20:** items 1 (identifier resolves), 2 (metadata matches), and the preprint/tier part
+> of item 7 (version status as *metadata*, not as claim support) now have a real, working
+> mechanical implementation slice — `scripts/lit_crossvendor_check.py` (`FETCH_BACKENDS` registry:
+> Crossref/Zenodo/Europe PMC/arXiv/URL/OpenAlex/PubMed/Semantic Scholar), `scripts/lit_venue_tier.py`
+> (preprint/TCI-tier/Scimago-quartile classification), `scripts/lit_sources_thai.py` (TCI tier +
+> ThaiJO backends for Thai-language sources), and `scripts/cite_check_adhoc.py` (lightweight
+> single-reference ad-hoc mode). See `scripts/CITATION_CHECKER.md` for what each piece actually
+> does and its real, honest ceiling. **This does not mean the rest of the S14/LRS pipeline is
+> built** — the manifest, gate, dialogue table, diversity audit, and spot-check machinery in the
+> rest of this file remain Dr-tier design only, not implemented.
+
 ### 5.3 SCRAM and Xenon — unchanged from S8, restated for completeness
 
 A citation found to reference a non-existent source, or whose `exact_passage` does not appear
