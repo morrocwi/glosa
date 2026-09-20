@@ -226,3 +226,47 @@ and read-only (metadata lookups only); `cite_fetch_source.py` is the one script 
 writes to disk, and it only runs when a caller explicitly invokes it with a specific URL and
 destination — per the founder's own requirement that a download is offered and confirmed, never
 silent or automatic.
+
+## 5. The citation-use gate (`cite_use_gate.py`) — ADMIT / HOLD / REJECT, global
+
+Added 2026-09-20 while evaluating whether to absorb `~/ANSE.ASIA/thai-cite-engine` (a Thai-first
+citation prototype whose own concept-validation run came back NO-GO the same day — see its
+`docs/HANDOFF_2026-09-20.md`). GLOSA already had every ontology piece a machine-readable
+existence/claim gate needs (`existence_tier`, `venue_tier`, `claim_match` from
+`cite_check_adhoc.py`; `bearing`/`independence_class` in `evidence_relation.schema.json`) but not
+wired together into one runtime verdict. Founder ruling that day: GLOSA is not Thai-scoped, it is
+global — so this gate reads only the vendor-neutral fields `cite_check_adhoc.py` already produces
+identically for every source worldwide; it does not special-case Thai or any other country.
+
+`cite_use_gate.py` imports `check_reference()` from `cite_check_adhoc.py` (refactored out of that
+script's `main()` so this module reuses it by import, exactly the "reused, not duplicated"
+convention §1–3 above already follow) and layers two things on top:
+
+- **`verdict`: `ADMIT` / `HOLD` / `REJECT`** — `REJECT` only on a clean `NOT_FOUND`; `HOLD` on
+  `AMBIGUOUS`/`CHECK_ERROR`, on a verified source whose `claim_match_verified` is false or absent
+  (glosa's `SourceExistence != ClaimSupport` non-collapse rule — a real source that doesn't back
+  the stated claim is never silently admitted), and on a bare existence match with no `--claim`
+  given (unless the caller passes `--existence-only-ok`, since ADMIT with no claim checked would
+  overstate what was actually verified). Any future `existence_tier` value this module doesn't yet
+  recognize fails closed to `HOLD`, never to a silent `ADMIT`.
+- **`coverage_readout`** (`existence`, `claim_match` axes) — `SEARCHED_OK` / `UNAVAILABLE` /
+  `NOT_ATTEMPTED`, describing search completeness separately from what was found, per
+  `LOCAL_EVIDENCE_NOT_FOUND != NO_LOCAL_EVIDENCE_EXISTS`: a rate-limited backend that leaves
+  `NOT_FOUND` unconfirmed reads `UNAVAILABLE`, not the same as a clean `NOT_FOUND` with
+  `SEARCHED_OK`.
+
+Like `cite_check_adhoc.py`, every result carries a mandatory `disclosure` — this is a mechanical
+gate only, not an independent check or release approval; a real `citation_card.yaml` plus a
+`glosa-independent-check` review is still required before `status: VERIFIED`.
+
+```bash
+python3 scripts/cite_use_gate.py --reference "<text>" [--doi <doi>] [--pmid <pmid>] \
+  [--claim "<sentence>"] [--existence-only-ok] [--vendor claude|codex|gemini] \
+  [--tci-csv <path>] [--quartile-csv <path>]
+```
+
+Real smoke test (2026-09-20): a fabricated reference → `REJECT` (`NOT_FOUND`, with
+`coverage_readout.existence: UNAVAILABLE` because a backend was rate-limited mid-search — the
+honest read, not conflated with a clean not-found); "Attention Is All You Need" by real DOI, no
+`--claim` → `HOLD` (`EXISTENCE_ONLY`, correctly refusing to overstate an unchecked claim); same
+call with `--existence-only-ok` → `ADMIT`.
