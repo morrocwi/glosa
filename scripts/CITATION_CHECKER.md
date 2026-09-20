@@ -229,10 +229,9 @@ silent or automatic.
 
 ## 5. The citation-use gate (`cite_use_gate.py`) — ADMIT / HOLD / REJECT, global
 
-Added 2026-09-20 while evaluating whether to absorb `~/ANSE.ASIA/thai-cite-engine` (a Thai-first
-citation prototype whose own concept-validation run came back NO-GO the same day — see its
-`docs/HANDOFF_2026-09-20.md`). GLOSA already had every ontology piece a machine-readable
-existence/claim gate needs (`existence_tier`, `venue_tier`, `claim_match` from
+Added 2026-09-20 while evaluating whether to absorb an external Thai-first citation prototype
+(its own concept-validation run reportedly came back NO-GO the same day). GLOSA already had every
+ontology piece a machine-readable existence/claim gate needs (`existence_tier`, `venue_tier`, `claim_match` from
 `cite_check_adhoc.py`; `bearing`/`independence_class` in `evidence_relation.schema.json`) but not
 wired together into one runtime verdict. Founder ruling that day: GLOSA is not Thai-scoped, it is
 global — so this gate reads only the vendor-neutral fields `cite_check_adhoc.py` already produces

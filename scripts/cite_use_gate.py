@@ -11,15 +11,14 @@ claim_match / backend_errors, fields cite_check_adhoc.py already produces the sa
 for every source worldwide (Crossref, OpenAlex, PubMed, Semantic Scholar, arXiv, Zenodo,
 EuropePMC, url-fetch, and the optional TCI/ThaiJO venue-tier readings). No branch in this
 file special-cases a country or language -- a Thai-language source and any other source
-flow through the identical rule set. This closes the gap the founder named on 2026-09-20
-while reviewing a pasted proposal to absorb `thai-cite-engine`: GLOSA already had every
-axis below as *ontology* (evidence_relation.schema.json's `bearing`, claim_card's
-`claim_match`, venue_tier's honest-ceiling tiers) but not wired together as one runtime
-verdict + coverage readout. thai-cite-engine's own concept-validation run (2026-09-20,
-see ~/ANSE.ASIA/thai-cite-engine/docs/HANDOFF_2026-09-20.md) came back NO-GO on exactly
-this kind of gate (its G6 compared loose context instead of candidate identity) -- this
-module is a fresh implementation reusing GLOSA's own already-scored existence_tier and
-claim_match fields, not a port of that broken code.
+flow through the identical rule set. This closes a gap named while evaluating a proposal
+to absorb an external Thai-first citation prototype: GLOSA already had every axis below
+as *ontology* (evidence_relation.schema.json's `bearing`, claim_card's `claim_match`,
+venue_tier's honest-ceiling tiers) but not wired together as one runtime verdict +
+coverage readout. That external prototype's own validation run reportedly returned
+NO-GO on exactly this kind of gate (comparing loose context instead of candidate
+identity) -- this module is a fresh implementation reusing GLOSA's own already-scored
+existence_tier and claim_match fields, not a port of external code.
 
 WHAT THIS IS NOT: an independent check, a release approval, or a substitute for a real
 citation_card.yaml + §5.4 human spot-check. See maker-checker-gate / glosa-independent-check
