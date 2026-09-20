@@ -1,0 +1,77 @@
+# Blackbox Note — GLS-2026-009 Clay closure plan (NS lane). Raw founder lines, verbatim, typos kept. Tier: positional / Dr.
+blackbox_note:
+  id: BB-2026-09-12-01
+  project: GLS-2026-009
+  session_ref: "claude-code session d58da6f4 (private); durable trail: readout-problem-navier-stokes-internal/HANDOFF_clay_solver_restructure.md"
+  participants:
+    - role: founder
+    - role: AI-assistant (orchestrating session; drafted R1 lens-in fields, disclosed under P7)
+  language: mixed
+  privacy_scan: pending
+  public_lines_selected_by: founder
+  lines:
+    - n: 1
+      ts: "2026-09-12T01:15:00+07:00"
+      speaker: founder
+      kind: proposal
+      text_verbatim: |
+        ถ้าจะบีบงาน Navier–Stokes ตอนนี้ให้เหลือ "สมการม้วนเดียวจบ" ... T_j^full ≤ (1−δ) D_j + ε_j uniformly in j, δ>0, Σε_j<∞ ... Uniform Full-Convolution Scale-Loss Theorem ... ทำเรื่องนี้
+      distinction_introduced: one single inequality proposed as the whole Clay route; audited same day (universal constants REFUTED at T/D=20; solution-dependent REGULARITY-EQUIVALENT/HOLD)
+      became:
+        - claim_card: CC-2026-09-12-SL (pending)
+      public: false
+      ai_proposed: false
+    - n: 2
+      ts: "2026-09-12T08:10:00+07:00"
+      speaker: founder
+      kind: proposal
+      text_verbatim: |
+        ยังพิสูจน์ไม่ได้ว่า การส่งต่อ distinction ข้ามสเกลต้องสูญเสียบางส่วนเสมอ ... Uniform Retention Gap ... "ช่องว่างการรักษาข้อมูลข้ามสเกล"
+      distinction_introduced: the hole named in lens language (retention gap), not in singularity language
+      became: []
+      public: false
+      ai_proposed: false
+    - n: 3
+      ts: "2026-09-12T08:28:00+07:00"
+      speaker: founder
+      kind: ruling
+      text_verbatim: |
+        Datum = retained starting distinction supplied before the readout dynamics begins. ... B=B(𝔡₀) ... future ↛ datum
+      distinction_introduced: datum defined in lens terms; provenance rule (no future information in the premise)
+      became: []
+      public: false
+      ai_proposed: false
+    - n: 4
+      ts: "2026-09-12T08:58:00+07:00"
+      speaker: founder
+      kind: proposal
+      text_verbatim: |
+        เหลือ สี่สะพานที่ต้องปิดจริง: Witness Soundness + OCSR + UBRR + Finite Recurrence Exclusion
+      distinction_introduced: gate list proposal (later corrected to Q/G4 + G6 + G7 conditions; FRE = Sec.17-18/59-61 occurrence)
+      became: []
+      public: false
+      ai_proposed: false
+    - n: 5
+      ts: "2026-09-12T09:2x:00+07:00"
+      speaker: founder
+      kind: ruling
+      text_verbatim: |
+        Clay OPEN ... final equivalence audited ... active load-bearing work = G4 (datum tightness) + G6 (geometric rigidity) + G7 (homogeneous quantitative exit) ... ไม่ลง Toledo เพิ่ม
+      distinction_introduced: canonical chain locked; hidden-target watch points fixed at three places
+      became: []
+      public: false
+      ai_proposed: false
+    - n: 6
+      ts: "2026-09-12T09:4x:00+07:00"
+      speaker: founder
+      kind: question
+      text_verbatim: |
+        จากข้อมูลที่มี วางแผนปิด Clay ต้องทำยังไง ... เอาปัญหาทั้งหมด อ่านเข้า เลนส์ readout genesisi ติดตั้ง git skillme และสร้าง สมมุติฐานขึ้นมาก่อน ... และอ่านปัญหาด้วย glosa ด้วย
+      distinction_introduced: request to run the SkillMe intake + glosa lens round trip and stop at a hypothesis portfolio (STOP_AT_HYPOTHESIS), before any decision
+      became: []
+      public: false
+      ai_proposed: false
+  lens_used:
+    display: "Readout Universe — Yaoharee Lahtee"
+    description: "readout-not-truth; retained distinction; Readout Condition E–A–D (Readout Universe / Readout Genesis)"
+    author: "Yaoharee Lahtee"
