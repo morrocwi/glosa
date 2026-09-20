@@ -202,26 +202,47 @@ def _claim_match_verdict(reference, claim, best, vendor):
     }
 
 
-def main():
-    ap = argparse.ArgumentParser(description=__doc__.splitlines()[0])
-    ap.add_argument("--reference", required=True)
-    ap.add_argument("--doi", default=None)
-    ap.add_argument("--pmid", default=None)
-    ap.add_argument("--claim", default=None)
-    ap.add_argument("--vendor", default="claude", choices=["claude", "codex", "gemini"])
-    ap.add_argument("--tci-csv", default=None)
-    ap.add_argument("--quartile-csv", default=None)
-    a = ap.parse_args()
+def check_reference(reference, doi=None, pmid=None, claim=None, vendor="claude",
+                     tci_csv=None, quartile_csv=None):
+    """Library entry point -- the same logic main() prints, returned as a dict instead.
 
-    candidates, errors, had_clean_applicable_check = _gather_candidates(a.reference, a.doi, a.pmid)
+    Extracted so other tools (e.g. cite_use_gate.py) reuse this exact check by import,
+    not by re-deriving it or shelling out to this script. Global/vendor-neutral: nothing
+    here is Thai-specific -- tci_csv/quartile_csv are just two of the optional metadata
+    inputs a caller may or may not supply, same as any other backend's optional args."""
+    candidates, errors, had_clean_applicable_check = _gather_candidates(reference, doi, pmid)
     existence_tier, best = _classify(candidates, errors, had_clean_applicable_check)
 
     winning_meta = (best or {}).get("metadata") or {}
-    venue = compute_venue_tier(winning_meta, reference_text=a.reference, tci_csv=a.tci_csv, quartile_csv=a.quartile_csv)
+    venue = compute_venue_tier(winning_meta, reference_text=reference, tci_csv=tci_csv, quartile_csv=quartile_csv)
+
+    # Download signal: surfaced from the winning candidate's own metadata (is_oa/oa_url from
+    # fetch_openalex, pdf_url from fetch_arxiv) -- never fabricated, never fetched here.
+    # Fallback (adversarial-review finding, 2026-09-20): the winning candidate is picked by
+    # title-similarity tie-break among FETCH_BACKENDS order, which can pick a backend (e.g.
+    # crossref) that carries no OA field even when a DIFFERENT backend independently found the
+    # SAME work (same normalized title) with a real oa_url/pdf_url -- corroboration, not a
+    # different work. Rescue that signal instead of silently reporting download_available: false
+    # for a paper that genuinely is open access.
+    download_url = None
+    if winning_meta.get("is_oa") or winning_meta.get("oa_url"):
+        download_url = winning_meta.get("oa_url")
+    if not download_url and winning_meta.get("pdf_url"):
+        download_url = winning_meta.get("pdf_url")
+    if not download_url and best:
+        best_key = _norm(best["title"])
+        for c in candidates:
+            if _norm(c["title"]) != best_key:
+                continue
+            m = c.get("metadata") or {}
+            if m.get("oa_url"):
+                download_url = m["oa_url"]; break
+            if m.get("pdf_url"):
+                download_url = m["pdf_url"]; break
 
     out = {
-        "reference": a.reference,
-        "identifiers_tried": _identifier_variants(a.reference, a.doi, a.pmid),
+        "reference": reference,
+        "identifiers_tried": _identifier_variants(reference, doi, pmid),
         "existence_tier": existence_tier,
         "best_match": ({
             "backend": best["backend"],
@@ -235,12 +256,38 @@ def main():
         ],
         "backend_errors": errors,
         "venue_tier": venue,
+        "download_available": bool(download_url),
+        "download_url": download_url,
+        # UNCONDITIONAL, regardless of download_available: this script only ever reads metadata
+        # from the fetch backends above -- it never downloads a single byte itself. "obtained" is
+        # a fact about a file existing on disk, which only scripts/cite_fetch_source.py (a
+        # separate, explicitly-invoked mechanical fetch step) can produce, and only a caller that
+        # actually runs that script and checks its result JSON is in a position to know whether
+        # that happened. A stateless per-invocation checker like this one has no way to know that
+        # and must never guess "obtained" just because a download_url happens to be present.
+        "acquisition_status": "not_obtained",
         "disclosure": DISCLOSURE,
     }
-    if a.claim:
-        out["claim"] = a.claim
-        out["claim_match"] = _claim_match_verdict(a.reference, a.claim, best, a.vendor)
+    if claim:
+        out["claim"] = claim
+        out["claim_match"] = _claim_match_verdict(reference, claim, best, vendor)
 
+    return out
+
+
+def main():
+    ap = argparse.ArgumentParser(description=__doc__.splitlines()[0])
+    ap.add_argument("--reference", required=True)
+    ap.add_argument("--doi", default=None)
+    ap.add_argument("--pmid", default=None)
+    ap.add_argument("--claim", default=None)
+    ap.add_argument("--vendor", default="claude", choices=["claude", "codex", "gemini"])
+    ap.add_argument("--tci-csv", default=None)
+    ap.add_argument("--quartile-csv", default=None)
+    a = ap.parse_args()
+
+    out = check_reference(a.reference, doi=a.doi, pmid=a.pmid, claim=a.claim, vendor=a.vendor,
+                           tci_csv=a.tci_csv, quartile_csv=a.quartile_csv)
     print(json.dumps(out, ensure_ascii=False, indent=1))
 
 

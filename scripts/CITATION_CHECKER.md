@@ -130,3 +130,142 @@ real reference by DOI (→ `VERIFIED_EXACT`, `venue_tier: PREPRINT`), an obvious
 reference (→ `NOT_FOUND`), and the two literal Thai placeholder reference lines in
 `thai_doc/org-templates/AICK/examples/example_paper.data.yaml` (→ both `NOT_FOUND`, confirming no
 false positive on template filler text).
+
+## 4. Download signal — `is_oa`/`oa_url`/`pdf_url`, `download_available`/`download_url`,
+   `acquisition_status`, and `cite_fetch_source.py`
+
+Read from the real committed code (`lit_crossvendor_check.py` and `cite_check_adhoc.py`), not
+guessed. This layer adds "is there a full text we could fetch" on top of the existence/venue
+checks above — it never changes `existence_tier`, `claim_match`, or the `disclosure` field.
+
+**Where the raw signal comes from (per-backend metadata, never fabricated):**
+
+- `fetch_openalex(identifier)` now also returns `is_oa` (bool, from OpenAlex's own
+  `open_access.is_oa`) and `oa_url` (str or `None`, from `open_access.oa_url`) alongside the
+  existing `source`/`title`/`authors`/`year`/`container`/`abstract`/`type` fields.
+- `fetch_arxiv(identifier)` now also returns `pdf_url`, always built as
+  `f"https://arxiv.org/pdf/{aid}"` for any arXiv id it resolved — arXiv's PDF path is
+  deterministic from the id, so this is not fetched separately, just constructed.
+- No other backend (`zenodo`, `crossref`, `europepmc`, `url-fetch`, `pubmed`,
+  `semanticscholar`) currently returns a download field — a reference resolved only by one of
+  those backends will have `download_available: false`.
+
+**What `cite_check_adhoc.py` derives from that, on the winning candidate only:**
+
+- `download_url` — `winning_meta.get("oa_url")` if `is_oa` or `oa_url` is truthy, else
+  `winning_meta.get("pdf_url")` if present, else a rescue lookup (below), else `None`. Read
+  straight off a backend's own metadata dict; never constructed or guessed.
+- **Cross-candidate rescue (adversarial-review finding, 2026-09-20):** the winning candidate is
+  picked by title-similarity tie-break across `FETCH_BACKENDS`' order, which can pick a backend
+  (e.g. `crossref`) carrying no OA field even when a DIFFERENT backend independently found the
+  SAME work (identical normalized title — corroboration, not a different work) with a real
+  `oa_url`/`pdf_url`. If the winning candidate itself has no download signal, `cite_check_adhoc.py`
+  now scans the other candidates sharing the winner's normalized title and uses the first one that
+  does — so a genuinely open-access paper doesn't silently report `download_available: false` just
+  because a non-signal-bearing backend happened to win the tie.
+- `download_available` — `bool(download_url)`.
+- `acquisition_status` — **always the literal string `"not_obtained"`, unconditionally, no matter
+  what `download_available` says.** This is deliberate, not a placeholder to fill in later:
+  `cite_check_adhoc.py` only ever reads metadata from the fetch backends — it never downloads a
+  single byte itself, so "obtained" is a fact about a file existing on disk, which only
+  `cite_fetch_source.py` (a separate, explicitly-invoked mechanical fetch, §below) can produce,
+  and only a caller that actually ran it and checked its result JSON is in a position to know
+  whether that happened. **There is no persistent state tracking across invocations** — running
+  `cite_check_adhoc.py` twice on the same reference, even after a file was successfully
+  downloaded in between, still prints `acquisition_status: "not_obtained"`, because this script
+  has no record of, and does not look for, anything `cite_fetch_source.py` may have done. Never
+  read `download_available: true` as "the file exists" or `acquisition_status` as anything other
+  than this checker's own honest ignorance of what happened outside it.
+
+**`scripts/cite_fetch_source.py` — the separate, explicit fetch step:**
+
+A standalone script, not a mode of `cite_check_adhoc.py` and not auto-invoked by it. It does no
+existence/venue/claim checking at all — a dumb, one-shot HTTP fetch of one `--url` with real
+safety rails:
+
+```bash
+python3 scripts/cite_fetch_source.py --url <url> --dest <dir> [--filename <name>] [--force]
+```
+
+- `--url` (required) — the URL to fetch, typically a `download_url` from a `cite_check_adhoc.py`
+  result.
+- `--dest` (required) — destination directory; created with `os.makedirs(..., exist_ok=True)` if
+  missing.
+- `--filename` (optional) — override the saved filename; default is the URL path's basename (or
+  literally `"download"` if the path has none).
+- `--force` (optional flag) — **required to overwrite an existing file.** Without it, if
+  `<dest>/<filename>` already exists, the script fails loud (`refusing to overwrite existing
+  file: ... (pass --force to overwrite)`, stderr, exit code 1) and writes nothing — no silent
+  overwrite is possible.
+- **Content-type mismatch flagging** — if the response `Content-Type` is `text/html`, the script
+  still saves the bytes (never silently discards them — a paywall/CAPTCHA/error/withdrawn page is
+  often exactly what such a response means, and the caller may want to inspect it) and adds
+  `"content_type_mismatch": true` to the result JSON, plus a stderr warning. **This fires for ANY
+  `text/html` response, not only when the URL's path ends in `.pdf`** (adversarial-review finding,
+  2026-09-20: the original check only looked for a literal `.pdf` suffix, which silently missed
+  real PDF-serving URL shapes with no extension — e.g. arXiv's own `https://arxiv.org/pdf/<id>`,
+  exactly the shape `fetch_arxiv()`'s `pdf_url` field produces. A `/pdf/`-shaped URL now also
+  counts as "looks like a PDF" for the more specific wording in the warning message, but the
+  mismatch flag itself no longer depends on that detection at all — `text/html` is simply never an
+  acceptable content-type for this tool's purpose). Any other `Content-Type` outside
+  `("application/pdf", "application/octet-stream")` prints a plain, separate stderr warning (not
+  tagged `content_type_mismatch` — that flag is reserved for the `text/html` case specifically).
+- **50MB size cap (`MAX_BYTES = 50 * 1024 * 1024`)** — enforced two ways: (1) if the response's
+  `Content-Length` header is present and already exceeds the cap, the fetch aborts immediately
+  before writing anything; (2) if `Content-Length` is absent or unreliable, the script streams
+  the body in 64KB chunks and aborts mid-download the moment the running byte count exceeds the
+  cap, deleting the partial `.partial` file it was writing to. Either way the caller gets a
+  stderr message and a non-zero exit, never a silently-truncated file.
+- On success it downloads to a `<dest_path>.partial` temp file first, then `os.replace()`s it
+  into place atomically, and prints one JSON object to stdout:
+  `{"saved_to": ..., "bytes": ..., "content_type": ...}` (plus `"content_type_mismatch": true`
+  when that warning fired).
+
+**The two scripts stay deliberately separate.** `cite_check_adhoc.py` is safe to run repeatedly
+and read-only (metadata lookups only); `cite_fetch_source.py` is the one script in this pair that
+writes to disk, and it only runs when a caller explicitly invokes it with a specific URL and
+destination — per the founder's own requirement that a download is offered and confirmed, never
+silent or automatic.
+
+## 5. The citation-use gate (`cite_use_gate.py`) — ADMIT / HOLD / REJECT, global
+
+Added 2026-09-20 while evaluating whether to absorb an external Thai-first citation prototype
+(its own concept-validation run reportedly came back NO-GO the same day). GLOSA already had every
+ontology piece a machine-readable existence/claim gate needs (`existence_tier`, `venue_tier`, `claim_match` from
+`cite_check_adhoc.py`; `bearing`/`independence_class` in `evidence_relation.schema.json`) but not
+wired together into one runtime verdict. Founder ruling that day: GLOSA is not Thai-scoped, it is
+global — so this gate reads only the vendor-neutral fields `cite_check_adhoc.py` already produces
+identically for every source worldwide; it does not special-case Thai or any other country.
+
+`cite_use_gate.py` imports `check_reference()` from `cite_check_adhoc.py` (refactored out of that
+script's `main()` so this module reuses it by import, exactly the "reused, not duplicated"
+convention §1–3 above already follow) and layers two things on top:
+
+- **`verdict`: `ADMIT` / `HOLD` / `REJECT`** — `REJECT` only on a clean `NOT_FOUND`; `HOLD` on
+  `AMBIGUOUS`/`CHECK_ERROR`, on a verified source whose `claim_match_verified` is false or absent
+  (glosa's `SourceExistence != ClaimSupport` non-collapse rule — a real source that doesn't back
+  the stated claim is never silently admitted), and on a bare existence match with no `--claim`
+  given (unless the caller passes `--existence-only-ok`, since ADMIT with no claim checked would
+  overstate what was actually verified). Any future `existence_tier` value this module doesn't yet
+  recognize fails closed to `HOLD`, never to a silent `ADMIT`.
+- **`coverage_readout`** (`existence`, `claim_match` axes) — `SEARCHED_OK` / `UNAVAILABLE` /
+  `NOT_ATTEMPTED`, describing search completeness separately from what was found, per
+  `LOCAL_EVIDENCE_NOT_FOUND != NO_LOCAL_EVIDENCE_EXISTS`: a rate-limited backend that leaves
+  `NOT_FOUND` unconfirmed reads `UNAVAILABLE`, not the same as a clean `NOT_FOUND` with
+  `SEARCHED_OK`.
+
+Like `cite_check_adhoc.py`, every result carries a mandatory `disclosure` — this is a mechanical
+gate only, not an independent check or release approval; a real `citation_card.yaml` plus a
+`glosa-independent-check` review is still required before `status: VERIFIED`.
+
+```bash
+python3 scripts/cite_use_gate.py --reference "<text>" [--doi <doi>] [--pmid <pmid>] \
+  [--claim "<sentence>"] [--existence-only-ok] [--vendor claude|codex|gemini] \
+  [--tci-csv <path>] [--quartile-csv <path>]
+```
+
+Real smoke test (2026-09-20): a fabricated reference → `REJECT` (`NOT_FOUND`, with
+`coverage_readout.existence: UNAVAILABLE` because a backend was rate-limited mid-search — the
+honest read, not conflated with a clean not-found); "Attention Is All You Need" by real DOI, no
+`--claim` → `HOLD` (`EXISTENCE_ONLY`, correctly refusing to overstate an unchecked claim); same
+call with `--existence-only-ok` → `ADMIT`.

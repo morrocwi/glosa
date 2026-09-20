@@ -79,7 +79,8 @@ def fetch_arxiv(identifier):
     xml = urllib.request.urlopen("https://export.arxiv.org/api/query?id_list=" + urllib.parse.quote(aid), timeout=30).read().decode("utf-8", "replace")
     t = re.search(r"<entry>.*?<title>(.*?)</title>", xml, re.S); ab = re.search(r"<summary>(.*?)</summary>", xml, re.S)
     au = re.findall(r"<name>(.*?)</name>", xml); yr = re.search(r"<published>(\d{4})", xml)
-    return {"source": "arxiv", "title": re.sub(r"\s+", " ", t.group(1)).strip() if t else "", "authors": au, "year": yr.group(1) if yr else None, "abstract": re.sub(r"\s+", " ", ab.group(1)).strip()[:1500] if ab else ""}
+    return {"source": "arxiv", "title": re.sub(r"\s+", " ", t.group(1)).strip() if t else "", "authors": au, "year": yr.group(1) if yr else None, "abstract": re.sub(r"\s+", " ", ab.group(1)).strip()[:1500] if ab else "",
+            "pdf_url": f"https://arxiv.org/pdf/{aid}"}
 
 
 def fetch_urlpage(identifier):
@@ -124,8 +125,10 @@ def fetch_openalex(identifier):
             for i in idxs:
                 positions[i] = word
         abstract = " ".join(positions[i] for i in sorted(positions))[:2500]
+    oa = j.get("open_access", {})
     return {"source": "openalex", "title": j.get("title", ""), "authors": authors, "year": year,
-            "container": container, "abstract": abstract, "type": j.get("type", "")}
+            "container": container, "abstract": abstract, "type": j.get("type", ""),
+            "is_oa": bool(oa.get("is_oa")), "oa_url": oa.get("oa_url")}
 
 
 def fetch_pubmed(identifier):
