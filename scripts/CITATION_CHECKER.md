@@ -130,3 +130,86 @@ real reference by DOI (→ `VERIFIED_EXACT`, `venue_tier: PREPRINT`), an obvious
 reference (→ `NOT_FOUND`), and the two literal Thai placeholder reference lines in
 `thai_doc/org-templates/AICK/examples/example_paper.data.yaml` (→ both `NOT_FOUND`, confirming no
 false positive on template filler text).
+
+## 4. Download signal — `is_oa`/`oa_url`/`pdf_url`, `download_available`/`download_url`,
+   `acquisition_status`, and `cite_fetch_source.py`
+
+Read from the real committed code (`lit_crossvendor_check.py` and `cite_check_adhoc.py`), not
+guessed. This layer adds "is there a full text we could fetch" on top of the existence/venue
+checks above — it never changes `existence_tier`, `claim_match`, or the `disclosure` field.
+
+**Where the raw signal comes from (per-backend metadata, never fabricated):**
+
+- `fetch_openalex(identifier)` now also returns `is_oa` (bool, from OpenAlex's own
+  `open_access.is_oa`) and `oa_url` (str or `None`, from `open_access.oa_url`) alongside the
+  existing `source`/`title`/`authors`/`year`/`container`/`abstract`/`type` fields.
+- `fetch_arxiv(identifier)` now also returns `pdf_url`, always built as
+  `f"https://arxiv.org/pdf/{aid}"` for any arXiv id it resolved — arXiv's PDF path is
+  deterministic from the id, so this is not fetched separately, just constructed.
+- No other backend (`zenodo`, `crossref`, `europepmc`, `url-fetch`, `pubmed`,
+  `semanticscholar`) currently returns a download field — a reference resolved only by one of
+  those backends will have `download_available: false`.
+
+**What `cite_check_adhoc.py` derives from that, on the winning candidate only:**
+
+- `download_url` — `winning_meta.get("oa_url")` if `is_oa` or `oa_url` is truthy, else
+  `winning_meta.get("pdf_url")` if present, else `None`. This is read straight off the winning
+  backend's own metadata dict; the ad-hoc checker does not construct or guess a URL itself.
+- `download_available` — `bool(download_url)`.
+- `acquisition_status` — **always the literal string `"not_obtained"`, unconditionally, no matter
+  what `download_available` says.** This is deliberate, not a placeholder to fill in later:
+  `cite_check_adhoc.py` only ever reads metadata from the fetch backends — it never downloads a
+  single byte itself, so "obtained" is a fact about a file existing on disk, which only
+  `cite_fetch_source.py` (a separate, explicitly-invoked mechanical fetch, §below) can produce,
+  and only a caller that actually ran it and checked its result JSON is in a position to know
+  whether that happened. **There is no persistent state tracking across invocations** — running
+  `cite_check_adhoc.py` twice on the same reference, even after a file was successfully
+  downloaded in between, still prints `acquisition_status: "not_obtained"`, because this script
+  has no record of, and does not look for, anything `cite_fetch_source.py` may have done. Never
+  read `download_available: true` as "the file exists" or `acquisition_status` as anything other
+  than this checker's own honest ignorance of what happened outside it.
+
+**`scripts/cite_fetch_source.py` — the separate, explicit fetch step:**
+
+A standalone script, not a mode of `cite_check_adhoc.py` and not auto-invoked by it. It does no
+existence/venue/claim checking at all — a dumb, one-shot HTTP fetch of one `--url` with real
+safety rails:
+
+```bash
+python3 scripts/cite_fetch_source.py --url <url> --dest <dir> [--filename <name>] [--force]
+```
+
+- `--url` (required) — the URL to fetch, typically a `download_url` from a `cite_check_adhoc.py`
+  result.
+- `--dest` (required) — destination directory; created with `os.makedirs(..., exist_ok=True)` if
+  missing.
+- `--filename` (optional) — override the saved filename; default is the URL path's basename (or
+  literally `"download"` if the path has none).
+- `--force` (optional flag) — **required to overwrite an existing file.** Without it, if
+  `<dest>/<filename>` already exists, the script fails loud (`refusing to overwrite existing
+  file: ... (pass --force to overwrite)`, stderr, exit code 1) and writes nothing — no silent
+  overwrite is possible.
+- **Content-type mismatch flagging** — if the URL's path ends in `.pdf` but the response
+  `Content-Type` is `text/html` (not `application/pdf`), the script still saves the bytes (never
+  silently discards them — a paywall/CAPTCHA/error page is often exactly what such a mismatch
+  means, and the caller may want to inspect it) and adds `"content_type_mismatch": true` to the
+  result JSON, plus a stderr warning naming the URL and the destination path. Any other
+  `Content-Type` outside `("application/pdf", "text/html", "application/octet-stream")` also
+  prints a plain stderr warning (but is not tagged `content_type_mismatch` — that flag is
+  specifically the PDF-URL-but-HTML-body case).
+- **50MB size cap (`MAX_BYTES = 50 * 1024 * 1024`)** — enforced two ways: (1) if the response's
+  `Content-Length` header is present and already exceeds the cap, the fetch aborts immediately
+  before writing anything; (2) if `Content-Length` is absent or unreliable, the script streams
+  the body in 64KB chunks and aborts mid-download the moment the running byte count exceeds the
+  cap, deleting the partial `.partial` file it was writing to. Either way the caller gets a
+  stderr message and a non-zero exit, never a silently-truncated file.
+- On success it downloads to a `<dest_path>.partial` temp file first, then `os.replace()`s it
+  into place atomically, and prints one JSON object to stdout:
+  `{"saved_to": ..., "bytes": ..., "content_type": ...}` (plus `"content_type_mismatch": true`
+  when that warning fired).
+
+**The two scripts stay deliberately separate.** `cite_check_adhoc.py` is safe to run repeatedly
+and read-only (metadata lookups only); `cite_fetch_source.py` is the one script in this pair that
+writes to disk, and it only runs when a caller explicitly invokes it with a specific URL and
+destination — per the founder's own requirement that a download is offered and confirmed, never
+silent or automatic.
