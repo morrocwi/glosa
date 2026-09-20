@@ -23,6 +23,8 @@ import json
 import re
 import subprocess
 import sys
+import time
+import urllib.error
 import urllib.parse
 import urllib.request
 from pathlib import Path
@@ -32,45 +34,182 @@ import yaml
 ROOT = Path(__file__).resolve().parent.parent
 
 
+def fetch_zenodo(identifier):
+    kind = (identifier or {}).get("kind", ""); val = (identifier or {}).get("value", "")
+    if not (kind == "DOI" and val.lower().startswith("10.5281/zenodo.")):
+        return None
+    rid = val.rsplit(".", 1)[1]
+    z = json.load(urllib.request.urlopen(f"https://zenodo.org/api/records/{rid}", timeout=30))["metadata"]
+    return {"source": "zenodo", "title": z.get("title", ""), "authors": [c.get("name", "") for c in z.get("creators", [])],
+            "year": (z.get("publication_date") or "")[:4], "container": "Zenodo", "abstract": re.sub(r"<[^>]+>", " ", z.get("description", ""))[:1500]}
+
+
+def fetch_crossref(identifier):
+    kind = (identifier or {}).get("kind", ""); val = (identifier or {}).get("value", "")
+    if not (kind == "DOI" and val):
+        return None
+    j = json.load(urllib.request.urlopen("https://api.crossref.org/works/" + urllib.parse.quote(val), timeout=30))["message"]
+    ab = re.sub(r"<[^>]+>", " ", j.get("abstract", ""))
+    if not ab.strip():
+        try:  # Europe PMC often has the abstract Crossref lacks
+            q = json.load(urllib.request.urlopen("https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI:" + urllib.parse.quote(val) + "&format=json&resultType=core", timeout=30))
+            ab = ((q.get("resultList", {}).get("result") or [{}])[0].get("abstractText") or "")
+        except Exception:  # noqa: BLE001
+            pass
+    return {"source": "crossref", "title": " ".join(j.get("title", [])), "authors": [a.get("family", "") for a in j.get("author", [])],
+            "year": (j.get("issued", {}).get("date-parts") or [[None]])[0][0], "container": " ".join(j.get("container-title", [])),
+            "abstract": ab[:2500]}
+
+
+def fetch_europepmc(identifier):
+    kind = (identifier or {}).get("kind", ""); val = (identifier or {}).get("value", "")
+    if not (kind in ("PMCID", "PMC") and val):
+        return None
+    pmc = val if val.upper().startswith("PMC") else "PMC" + val
+    q = json.load(urllib.request.urlopen(f"https://www.ebi.ac.uk/europepmc/webservices/rest/search?query={pmc}&format=json&resultType=core", timeout=30))
+    r = (q.get("resultList", {}).get("result") or [{}])[0]
+    return {"source": "europepmc", "title": r.get("title", ""), "authors": [a.get("fullName", "") for a in (r.get("authorList", {}).get("author") or [])], "year": r.get("pubYear"), "container": r.get("journalTitle", ""), "abstract": (r.get("abstractText") or "")[:2500]}
+
+
+def fetch_arxiv(identifier):
+    kind = (identifier or {}).get("kind", ""); val = (identifier or {}).get("value", "")
+    if not (kind == "ARXIV" and val):
+        return None
+    aid = re.sub(r"^(arxiv:|https?://arxiv\.org/abs/)", "", val, flags=re.I)
+    xml = urllib.request.urlopen("https://export.arxiv.org/api/query?id_list=" + urllib.parse.quote(aid), timeout=30).read().decode("utf-8", "replace")
+    t = re.search(r"<entry>.*?<title>(.*?)</title>", xml, re.S); ab = re.search(r"<summary>(.*?)</summary>", xml, re.S)
+    au = re.findall(r"<name>(.*?)</name>", xml); yr = re.search(r"<published>(\d{4})", xml)
+    return {"source": "arxiv", "title": re.sub(r"\s+", " ", t.group(1)).strip() if t else "", "authors": au, "year": yr.group(1) if yr else None, "abstract": re.sub(r"\s+", " ", ab.group(1)).strip()[:1500] if ab else ""}
+
+
+def fetch_urlpage(identifier):
+    kind = (identifier or {}).get("kind", ""); val = (identifier or {}).get("value", "")
+    if not (kind in ("URL", "OFFICIAL_URL", "WEB", "WEBPAGE") and val):
+        return None
+    html = urllib.request.urlopen(urllib.request.Request(val, headers={"User-Agent": "glosa/0.1"}), timeout=30).read(200000).decode("utf-8", "replace")
+    title = re.search(r"<title[^>]*>(.*?)</title>", html, re.S | re.I)
+    desc = re.search(r'<meta[^>]+(?:name|property)=["\'](?:description|og:description)["\'][^>]+content=["\']([^"\']+)', html, re.I)
+    return {"source": "url-fetch", "title": (title.group(1).strip() if title else "")[:300], "abstract": (desc.group(1) if desc else "")[:1500]}
+
+
+def fetch_openalex(identifier):
+    """api.openalex.org/works — by DOI when identifier.kind==DOI, else a title-search fallback
+    for a bare-text reference with no identifier yet. Returns the real OpenAlex "type" field
+    (e.g. "preprint", "article") for later preprint detection."""
+    kind = (identifier or {}).get("kind", ""); val = (identifier or {}).get("value", "")
+    if not val:
+        return None
+    if kind == "DOI":
+        url = "https://api.openalex.org/works/https://doi.org/" + urllib.parse.quote(val, safe="")
+        j = json.load(urllib.request.urlopen(url, timeout=30))
+    elif kind in ("", "OTHER_STABLE", "TITLE"):
+        # title-search fallback: only for a bare-text reference with no real identifier yet,
+        # never for a different identifier kind (PMID/PMCID/ISBN/ARXIV/URL) already owned by
+        # an earlier or later backend in the registry.
+        url = "https://api.openalex.org/works?search=" + urllib.parse.quote(val) + "&per_page=1"
+        res = json.load(urllib.request.urlopen(url, timeout=30)).get("results") or []
+        if not res:
+            return None
+        j = res[0]
+    else:
+        return None
+    authors = [a.get("author", {}).get("display_name", "") for a in (j.get("authorships") or [])]
+    year = j.get("publication_year")
+    container = ((j.get("primary_location") or {}).get("source") or {}).get("display_name", "")
+    ab_idx = j.get("abstract_inverted_index")
+    abstract = ""
+    if ab_idx:
+        positions = {}
+        for word, idxs in ab_idx.items():
+            for i in idxs:
+                positions[i] = word
+        abstract = " ".join(positions[i] for i in sorted(positions))[:2500]
+    return {"source": "openalex", "title": j.get("title", ""), "authors": authors, "year": year,
+            "container": container, "abstract": abstract, "type": j.get("type", "")}
+
+
+def fetch_pubmed(identifier):
+    """NCBI E-utilities: esearch.fcgi (PMID lookup or biomedical title search) then esummary.fcgi."""
+    kind = (identifier or {}).get("kind", ""); val = (identifier or {}).get("value", "")
+    if not val:
+        return None
+    if kind == "PMID":
+        pmid = val
+    else:
+        if kind not in ("", "OTHER_STABLE"):
+            return None
+        q = urllib.parse.quote(val)
+        es = json.load(urllib.request.urlopen(f"https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&retmode=json&retmax=1&term={q}", timeout=30))
+        ids = (es.get("esearchresult") or {}).get("idlist") or []
+        if not ids:
+            return None
+        pmid = ids[0]
+    su = json.load(urllib.request.urlopen(f"https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&retmode=json&id={pmid}", timeout=30))
+    r = (su.get("result") or {}).get(str(pmid))
+    if not r:
+        return None
+    authors = [a.get("name", "") for a in (r.get("authors") or [])]
+    year = (r.get("pubdate") or "")[:4]
+    return {"source": "pubmed", "title": r.get("title", ""), "authors": authors, "year": year,
+            "container": r.get("fulljournalname") or r.get("source") or "", "abstract": "", "pmid": pmid}
+
+
+def fetch_semanticscholar(identifier):
+    """api.semanticscholar.org/graph/v1/paper/search. On HTTP 429, retry once after a short
+    backoff, then degrade to a distinguishable {"error": "rate_limited"} marker rather than
+    silently returning None (a rate-limit is not the same fact as "does not exist")."""
+    kind = (identifier or {}).get("kind", ""); val = (identifier or {}).get("value", "")
+    if not val or kind not in ("", "OTHER_STABLE", "DOI", "ARXIV"):
+        return None
+    q = urllib.parse.quote(val)
+    url = f"https://api.semanticscholar.org/graph/v1/paper/search?query={q}&fields=title,abstract,year,authors,venue,externalIds&limit=1"
+    for attempt in range(2):
+        try:
+            j = json.load(urllib.request.urlopen(url, timeout=30))
+            break
+        except urllib.error.HTTPError as e:  # noqa: BLE001
+            if e.code == 429 and attempt == 0:
+                time.sleep(2)
+                continue
+            if e.code == 429:
+                return {"error": "rate_limited", "source": "semanticscholar"}
+            raise
+    else:
+        return {"error": "rate_limited", "source": "semanticscholar"}
+    papers = j.get("data") or []
+    if not papers:
+        return None
+    p = papers[0]
+    authors = [a.get("name", "") for a in (p.get("authors") or [])]
+    return {"source": "semanticscholar", "title": p.get("title", ""), "authors": authors, "year": p.get("year"),
+            "container": p.get("venue", ""), "abstract": (p.get("abstract") or "")[:2500]}
+
+
+# Ordered registry of backend functions: (name, metadata_verified_by, fn).
+# fn(identifier: dict) -> dict|None -- None means "not applicable / no match", so the next
+# backend in the list is tried. A future backend is "append one entry here," never "edit
+# core dispatch logic" (existing Crossref/Zenodo/EuropePMC/arXiv/URL behavior preserved
+# byte-for-byte; order preserved so existing cards keep resolving to the same source).
+FETCH_BACKENDS = [
+    ("zenodo", "mechanical:zenodo", fetch_zenodo),
+    ("crossref", "mechanical:crossref", fetch_crossref),
+    ("europepmc", "mechanical:europepmc", fetch_europepmc),
+    ("arxiv", "mechanical:arxiv", fetch_arxiv),
+    ("url-fetch", "mechanical:url-fetch", fetch_urlpage),
+    ("openalex", "mechanical:openalex", fetch_openalex),
+    ("pubmed", "mechanical:pubmed", fetch_pubmed),
+    ("semanticscholar", "mechanical:semanticscholar", fetch_semanticscholar),
+]
+
+
 def fetch_meta(identifier):
-    kind = (identifier or {}).get("kind", "")
-    val = (identifier or {}).get("value", "")
-    try:
-        if kind == "DOI" and val.lower().startswith("10.5281/zenodo."):
-            rid = val.rsplit(".", 1)[1]
-            z = json.load(urllib.request.urlopen(f"https://zenodo.org/api/records/{rid}", timeout=30))["metadata"]
-            return {"source": "zenodo", "title": z.get("title", ""), "authors": [c.get("name", "") for c in z.get("creators", [])],
-                    "year": (z.get("publication_date") or "")[:4], "container": "Zenodo", "abstract": re.sub(r"<[^>]+>", " ", z.get("description", ""))[:1500]}
-        if kind == "DOI" and val:
-            j = json.load(urllib.request.urlopen("https://api.crossref.org/works/" + urllib.parse.quote(val), timeout=30))["message"]
-            ab = re.sub(r"<[^>]+>", " ", j.get("abstract", ""))
-            if not ab.strip():
-                try:  # Europe PMC often has the abstract Crossref lacks
-                    q = json.load(urllib.request.urlopen("https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI:" + urllib.parse.quote(val) + "&format=json&resultType=core", timeout=30))
-                    ab = ((q.get("resultList", {}).get("result") or [{}])[0].get("abstractText") or "")
-                except Exception:  # noqa: BLE001
-                    pass
-            return {"source": "crossref", "title": " ".join(j.get("title", [])), "authors": [a.get("family", "") for a in j.get("author", [])],
-                    "year": (j.get("issued", {}).get("date-parts") or [[None]])[0][0], "container": " ".join(j.get("container-title", [])),
-                    "abstract": ab[:2500]}
-        if kind in ("PMCID", "PMC") and val:
-            pmc = val if val.upper().startswith("PMC") else "PMC" + val
-            q = json.load(urllib.request.urlopen(f"https://www.ebi.ac.uk/europepmc/webservices/rest/search?query={pmc}&format=json&resultType=core", timeout=30))
-            r = (q.get("resultList", {}).get("result") or [{}])[0]
-            return {"source": "europepmc", "title": r.get("title", ""), "authors": [a.get("fullName", "") for a in (r.get("authorList", {}).get("author") or [])], "year": r.get("pubYear"), "container": r.get("journalTitle", ""), "abstract": (r.get("abstractText") or "")[:2500]}
-        if kind == "ARXIV" and val:
-            aid = re.sub(r"^(arxiv:|https?://arxiv\.org/abs/)", "", val, flags=re.I)
-            xml = urllib.request.urlopen("https://export.arxiv.org/api/query?id_list=" + urllib.parse.quote(aid), timeout=30).read().decode("utf-8", "replace")
-            t = re.search(r"<entry>.*?<title>(.*?)</title>", xml, re.S); ab = re.search(r"<summary>(.*?)</summary>", xml, re.S)
-            au = re.findall(r"<name>(.*?)</name>", xml); yr = re.search(r"<published>(\d{4})", xml)
-            return {"source": "arxiv", "title": re.sub(r"\s+", " ", t.group(1)).strip() if t else "", "authors": au, "year": yr.group(1) if yr else None, "abstract": re.sub(r"\s+", " ", ab.group(1)).strip()[:1500] if ab else ""}
-        if kind in ("URL", "OFFICIAL_URL", "WEB", "WEBPAGE") and val:
-            html = urllib.request.urlopen(urllib.request.Request(val, headers={"User-Agent": "glosa/0.1"}), timeout=30).read(200000).decode("utf-8", "replace")
-            title = re.search(r"<title[^>]*>(.*?)</title>", html, re.S | re.I)
-            desc = re.search(r'<meta[^>]+(?:name|property)=["\'](?:description|og:description)["\'][^>]+content=["\']([^"\']+)', html, re.I)
-            return {"source": "url-fetch", "title": (title.group(1).strip() if title else "")[:300], "abstract": (desc.group(1) if desc else "")[:1500]}
-    except Exception as e:  # noqa: BLE001
-        return {"source": "fetch-failed", "error": str(e)[:200]}
+    for _name, _by, fn in FETCH_BACKENDS:
+        try:
+            r = fn(identifier)
+        except Exception as e:  # noqa: BLE001
+            return {"source": "fetch-failed", "error": str(e)[:200]}
+        if r is not None:
+            return r
     return {"source": "no-identifier"}
 
 
@@ -251,6 +390,10 @@ def main():
         card["verification_method"] = "MECHANICAL_LOOKUP_PLUS_MANUAL_READ"
         card["claim_match_verified"] = bool(v.get("claim_match"))
         card["claim_match_verified_by"] = f"route:{a.vendor}"
+        card["metadata_verified"] = bool(v.get("metadata_matches"))
+        mech_by = dict((n, by) for n, by, _fn in FETCH_BACKENDS).get(meta.get("source"))
+        if mech_by and card["metadata_verified"]:
+            card["metadata_verified_by"] = mech_by
         card["status"] = "VERIFIED" if ok else "METADATA_OK"
         card["disclosure"] = (card.get("disclosure") or "") + f" | {route_class(a.vendor)} route ({a.vendor}) judged from fetched metadata/abstract + the card's quoted passage, not full text: {v.get('reason','')}"
         cp.write_text(yaml.safe_dump(card, allow_unicode=True, sort_keys=False), encoding="utf-8")
