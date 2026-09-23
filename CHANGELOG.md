@@ -1,6 +1,21 @@
 # CHANGELOG
 ## Unreleased
 
+- Architecture-first comparative review, ratified (founder ruling 2026-09-23): the
+  `design/ARCHITECTURE_FIRST_REVIEW_PROPOSAL_v0.2.md` framework — architecture map frozen as L2
+  scope, node-grain `SUPPORTS/CHALLENGES/EXTENDS` relations (separate from `dialogue_table.md`'s
+  whole-hypothesis stance enum), a WARN-only non-collapse guard (`scripts/check_non_collapse.py`,
+  unchanged), a mandatory CHALLENGES pass with `node_status`/`n_open_nodes` disclosure, and a
+  six-criteria qualitative yardstick — is integrated into the binding methodology:
+  `design/S14_literature-review-system.md` §3.5, `methodology/P13_literature_review.md`,
+  `plugins/glosa/skills/glosa-literature-review/SKILL.md`, two new templates
+  (`templates/knowledge/architecture_map.md`, `templates/knowledge/architecture_dialogue_table.md`),
+  and additive optional fields on `templates/knowledge/neighbour_table.md` +
+  `schema/neighbour_table_row.schema.json` (`node_refs:`) and
+  `templates/knowledge/litreview_manifest.yaml` + `schema/litreview_manifest.schema.json`
+  (`architecture_review.node_status`/`n_open_nodes`). Optional and additive throughout — a
+  single-claim hypothesis uses L1–L6 unchanged with no architecture map at all.
+
 - P24 Mathematical Floor card (2026-09-07): `methodology/P24_mathematical_floor.md` requires the information-discrete-math lens before any mathematics enters a draft — a contaminated continuum concept (angle, zero, infinity, "smooth" function, operator) is replaced by its discrete readout, citing the IDM object by Toledo code (a citation table, never copied treatise prose); a computed quantity carries its own ℚ tier per the ℚ-computability law instead of a blanket `+ℝ-Open` fence; every claim is tiered; a new equation registers in Toledo first (`P19`). Publish-gate failing/not-failing controls stated in the card. `methodology/P04_assumption_check.md` cross-references P24 and states the contaminated-concept table there is cited by Toledo code, not copied; `methodology/README.md` index updated.
 
 - RET-Check v0.2 (2026-09-08): Toledo registrar assigned codes to the RET equations the program implements (`methodology/P19`; Toledo v1.5.0 pending, concept DOI 10.5281/zenodo.22537318; full table Toledo repo's `registry/proposals/recursive_epistemic_tunnel_v2_0.merged.json`, all 23 RET equations coded) — `RET-N04 = EQ-015/H.41.v1`, `RET-N05 = weld/H.35.v1`, `RET-N06 = weld/H.36.v1`, `RET-N07 = A.8/M.20.v1`, `RET-N09 = weld/H.37.v1`, `RET-N10 = EQ-015/H.43.v1`, `RET-N16 = A.8/M.21.v1`, `RET-N17 = A.8/M.22.v1`, `RET-N18 = A.8/M.23.v1` (N05/N07 corrected into this same entry after an initial pass omitted them as "pending" — they were already coded, just missing from the first code list handed to this session). `scripts/ret_check.py` version string bumped to v0.2 and every relevant docstring/report line now cites the Toledo code next to its `RET-Nxx` alias; `methodology/P21_ret_check.md`, `cli/README.md` updated to match; `cases/ret/PREREGISTRATION_v0_1.md` carries a dated "codes added; operator unchanged" note. No computed quantity, RET RISK rule, or pre-registered scenario's expected output changed; `cases/ret/SELF_AUDIT_RET_v2_0.txt` regenerated with the new report text (same HIGH verdict).

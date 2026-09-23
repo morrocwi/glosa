@@ -57,6 +57,16 @@ before adding a second source to any populated one; an empty stratum is recorded
 `selected: null`, never omitted. A `venue_quality_index` (e.g. Scopus/SJR quartile) is metadata
 only — it is never a substitute for `claim_match_verified` (Legitimacy ≠ Truth).
 
+**Optional architecture-first companion (ratified 2026-09-23, `S14` §3.5,
+`design/ARCHITECTURE_FIRST_REVIEW_PROPOSAL_v0.2.md`):** for a hypothesis whose own work is an
+*architecture* — multiple named nodes/transitions, not a single claim — the frozen architecture
+map (`templates/knowledge/architecture_map.md`) **is** how L2's `frozen_scope` locks, and a
+node-grain relation `node_relation ∈ {SUPPORTS, CHALLENGES, EXTENDS}`
+(`templates/knowledge/architecture_dialogue_table.md`) records how each literature strand relates
+to each node, separately from `dialogue_table.md`'s whole-hypothesis stance. A single-claim
+hypothesis with no multi-node architecture worth mapping skips this entirely and uses L1–L6
+unchanged. This is additive and optional, never a required replacement for L1–L6.
+
 **Never cite what was not opened (`FC-S14-1`, secondary-citation ban):** a passage quoted from a
 paper that itself quotes the real source, without this pipeline opening the real source directly,
 is forbidden from backing a claim or a dialogue-table stance.

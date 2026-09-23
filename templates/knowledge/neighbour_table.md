@@ -3,11 +3,19 @@
 # Descriptive comparison, no priority/novelty contest. Every row needs a citation_card id (S8) with metadata_verified + claim_match_verified.
 # Tier of each row: finite_diagnostic if fetched & verified; Open if not fetched. Never write "no tool does X".
 
-| neighbour | problem they solve | their method | same as ours | different from ours | related work we cite | citation_card | fetched/verified |
-|---|---|---|---|---|---|---|---|
-|  |  |  |  |  |  |  |  |
+| neighbour | problem they solve | their method | same as ours | different from ours | related work we cite | citation_card | fetched/verified | node_refs |
+|---|---|---|---|---|---|---|---|---|
+|  |  |  |  |  |  |  |  |  |
 
 ## Our own row (fill first, so neighbours are compared against something explicit)
 - problem (Blackbox Note human words → lens formulation):
 - method (spine stage / artifact):
 - what would make us wrong (falsifier):
+
+## node_refs (optional, S14 §3.5, architecture-first comparative review, ratified 2026-09-23)
+
+`node_refs` on a row points at zero or more node-grain rows in this run's
+`architecture_dialogue_table.md` that bear on that neighbour — a pointer only, never a copy of a
+node-relation row's own fields. This table stays exactly what it already is: the whole-work
+same/different/cited comparison. A neighbour row with no matching node-level table (a single-claim
+hypothesis) simply carries no `node_refs`.

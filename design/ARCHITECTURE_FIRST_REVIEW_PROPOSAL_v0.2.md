@@ -1,20 +1,24 @@
 # Architecture-First Comparative Review — Proposal v0.2
 
 > tier: Dr (specified; one independent adversarial review pass and a partial cross-vendor pass
-> completed on v0.2; not ratified). Readout-not-truth applies to this file.
-> **Status: v0.2 — resolutions chosen by delegation (founder delegated the choice 2026-09-23);
-> S14/P13/SKILL.md integration pending a separate pass.** PROPOSAL ONLY, PENDING FOUNDER
-> RATIFICATION of the underlying framework — not adopted, not built, not part of the binding
-> methodology. v0.1's five open conflicts (§8) are now resolutions (R1–R5), chosen on the founder's
+> completed on v0.2; framework ratified, checker stays WARN-only). Readout-not-truth applies to
+> this file.
+> **Status: RATIFIED by the founder 2026-09-23 and integrated into the binding methodology this
+> same pass.** v0.1's five open conflicts (§8) were resolutions (R1–R5) chosen on the founder's
 > behalf under an explicit founder delegation ("choose for me — world-class but actually
-> practical", 2026-09-23) — this is a choice among the options v0.1 already laid out, not a new
-> ratification of the framework itself; ratifying the framework into S14/P13/SKILL.md remains the
-> founder's own separate call (§8, "What ratification would change"). Mirrors the decision-pending
-> pattern already used in `design/IES_INTEGRATION_PROPOSAL_v0.1.md`. Does not edit
-> `design/S14_literature-review-system.md`,
-> `design/S13_neighbour-table.md`, `methodology/P13_literature_review.md`,
-> `plugins/glosa/skills/glosa-literature-review/SKILL.md`, any `schema/*.json`, or any
-> `templates/knowledge/*` — those remain the founder's call after reviewing this proposal.
+> practical", 2026-09-23); the framework itself — architecture map as frozen L2 scope,
+> node-grain `SUPPORTS/CHALLENGES/EXTENDS` relations, the WARN-only non-collapse guard, the
+> mandatory CHALLENGES pass with `node_status`/`n_open_nodes`, and the six-criteria qualitative
+> yardstick — was separately ratified by the founder the same day and is now integrated into:
+> `design/S14_literature-review-system.md` §3.5 (binding summary), `methodology/
+> P13_literature_review.md` (additive note), `plugins/glosa/skills/glosa-literature-review/
+> SKILL.md` (drives the mode), `templates/knowledge/architecture_map.md` and
+> `templates/knowledge/architecture_dialogue_table.md` (new), and an optional `node_refs:` /
+> `node_status`+`n_open_nodes` addition to `templates/knowledge/neighbour_table.md` +
+> `schema/neighbour_table_row.schema.json` and `templates/knowledge/litreview_manifest.yaml` +
+> `schema/litreview_manifest.schema.json`. Tier stays honest: the *framework* is ratified and
+> binding; `scripts/check_non_collapse.py` remains WARN-only per R4 — it was never proposed as an
+> auto-failing gate and ratification does not change that.
 >
 > **Provenance:** the founder reviewed a general-purpose "world-class literature review" of one of
 > their own works and withdrew its framing. That review had asked, component by component,
@@ -400,42 +404,51 @@ pointer, never a copy of a node-relation row's own fields. This is additive and 
 neighbour row with no matching node-level table (a single-claim hypothesis, R2) simply carries no
 `node_refs:`.
 
-**What ratification would change, if the founder approves (not done by this proposal):**
-- `design/S14_literature-review-system.md` — a new §3.x section describing the architecture-map
-  freeze step and the node-relation companion table, cross-referencing this proposal.
-- `methodology/P13_literature_review.md` — an additive row or note in the L1–L6 table naming the
-  optional architecture-map prerequisite.
-- `plugins/glosa/skills/glosa-literature-review/SKILL.md` — a "New this pass" pointer, matching the
-  existing pattern for other pending-founder-decision extensions.
-- `templates/knowledge/` — two new template files for §5.1/§5.2's tables (or an additive section
-  appended to the existing `dialogue_table.md` template — founder's call per point 1 above).
-- Possibly `schema/dialogue_table_row.schema.json` if the node-relation table is formalized as a
-  schema-validated artifact rather than a free-form markdown table.
+**What ratification changed (done, 2026-09-23, this same pass):**
+- `design/S14_literature-review-system.md` — new §3.5 describing the architecture-map freeze step
+  and the node-relation companion table, cross-referencing this proposal.
+- `methodology/P13_literature_review.md` — an additive note in the L1–L6 text naming the optional
+  architecture-map prerequisite.
+- `plugins/glosa/skills/glosa-literature-review/SKILL.md` — a full "Architecture-first comparative
+  review" section (when to use, steps, the three relations, forbidden phrasings → rewrites, the
+  `check_non_collapse.py` run before publish), triggers added to its `description`, and its "New
+  this pass" note updated from pending to ratified.
+- `templates/knowledge/architecture_map.md` and `templates/knowledge/architecture_dialogue_table.md`
+  — the two new template files for §5.1/§5.2's tables (kept as separate markdown templates, not
+  merged into `dialogue_table.md`, matching this repo's one-fact-one-home convention for a
+  genuinely different grain of table).
 - `templates/knowledge/neighbour_table.md` and `schema/neighbour_table_row.schema.json` — per R5,
   an optional `node_refs:` field on S13's neighbour-table row, wiring it to the node-relation table.
 - `templates/knowledge/litreview_manifest.yaml` and `schema/litreview_manifest.schema.json` — per
-  R3, a `node_status` field per node and a run-level `n_open_nodes` count.
+  R3, an optional `architecture_review` block carrying `node_status` per node and a run-level
+  `n_open_nodes` count, absent/empty on an ordinary single-claim run.
 
-None of these files are touched by this proposal itself. `scripts/check_non_collapse.py` (R4) is
-the one exception: it is a new, standalone, WARN-only script, not an edit to any binding file
-listed above — it exists and is runnable independently of whether the founder ratifies the rest of
-the framework.
+`scripts/check_non_collapse.py` (R4) remains what it always was: a standalone, WARN-only script,
+not a hard gate — this pass did not change its behavior, only added the binding-methodology text
+that points to it.
 
 ---
 
-## 9. What this proposal explicitly does not do
+## 9. What this proposal explicitly did and did not do
 
-- Does not touch any binding file (`S14_literature-review-system.md`, `S13_neighbour-table.md`,
-  `P13_literature_review.md`, `SKILL.md`, any `schema/*.json`, any `templates/knowledge/*`).
-- Does not build any kernel rule, lint check, validator, or CLI verb wired into the binding
-  methodology or its gates — v0.2 update: R4 (§8) DOES build one standalone, WARN-only,
-  never-auto-failing script (`scripts/check_non_collapse.py`, plus its pytest tests), since a
-  WARN-only human-facing aid is not itself a binding gate rule and it was chosen under the
-  founder's delegation (R4); nothing else in the "what would need building" list under §8's "what
-  ratification would change" has been built.
+**Status as of 2026-09-23 (integration pass):** the framework is now ratified and integrated —
+§8's "What ratification changed" list above states exactly which files this pass touched. What
+follows is this section's original scope statement, corrected in place rather than silently
+rewritten, since it described a prior, pre-ratification state:
+
+- Originally: "does not touch any binding file." Corrected: this integration pass DOES touch
+  `S14_literature-review-system.md` (§3.5), `P13_literature_review.md`, `plugins/glosa/skills/
+  glosa-literature-review/SKILL.md`, `schema/neighbour_table_row.schema.json`,
+  `schema/litreview_manifest.schema.json`, `templates/knowledge/neighbour_table.md`, and
+  `templates/knowledge/litreview_manifest.yaml`, additively, per the ratified R1–R5 resolutions
+  and §8's list. `S13_neighbour-table.md` itself remains untouched — only its sibling schema/
+  template gained the optional `node_refs:` field per R5; S13's own text is unchanged.
+- Kernel rules, CLI verbs, and validators wired into the binding methodology's own gate machinery
+  remain out of scope for this pass — only `scripts/check_non_collapse.py` (R4, standalone,
+  WARN-only, unchanged by this pass) exists as runnable code; no hard-gate check was added.
 - Does not apply this framework to any real, in-progress review — §7's worked example is a
-  deliberately neutral, fictional toy architecture, not any founder-private work.
-- v0.2 update: the five v0.1 open conflicts are now resolved by delegation (§8, R1–R5) — this
-  proposal no longer leaves them open — but ratifying the underlying framework into S14/P13/
-  SKILL.md (the binding files listed above) remains a separate, still-pending founder decision,
-  not done by this proposal or by the R1–R5 resolutions themselves.
+  deliberately neutral, fictional toy architecture, not any founder-private work; this remains
+  true after integration.
+- The five v0.1 open conflicts are resolved by delegation (§8, R1–R5) and the framework itself is
+  now ratified into the binding methodology (S14/P13/SKILL.md/templates) — no part of this
+  proposal's original scope remains pending.

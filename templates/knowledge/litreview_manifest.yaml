@@ -154,4 +154,28 @@ discovery_routing:
                                             # one row per candidate_questions entry before that
                                             # candidate may enter L1, whenever used == true
 
+# --- architecture-first comparative review roll-up (NEW, S14 §3.5, design/
+# ARCHITECTURE_FIRST_REVIEW_PROPOSAL_v0.2.md §8 R3, ratified 2026-09-23) -----------------------
+# Optional. Populated only when this run used the architecture-first companion mode
+# (architecture_map.md + architecture_dialogue_table.md exist for this hypothesis). Absent/empty
+# on an ordinary single-claim L1-L6 run.
+architecture_review:
+  used: false                              # default false. true = this run's hypothesis has a
+                                            # frozen architecture_map.md and an
+                                            # architecture_dialogue_table.md.
+  architecture_map_ref: null               # path to templates/knowledge/architecture_map.md for
+                                            # this hypothesis, when used == true
+  architecture_dialogue_table_ref: null    # path to architecture_dialogue_table.md, when used == true
+  node_status: []                          # [{node_id, status: OPEN | CLOSED, reason}] -- one
+                                            # entry per node with an unanswered CHALLENGES row
+                                            # (OPEN, reason required) or an explicitly closed one
+                                            # (CLOSED). A node never mentioned here is assumed to
+                                            # have no unanswered CHALLENGES row.
+  n_open_nodes: 0                          # count of node_status entries with status == OPEN --
+                                            # this run's manifest may still freeze with open nodes
+                                            # present (not a whole-run fail), but an open node is
+                                            # never silently absorbed into an otherwise-green
+                                            # manifest. An OPEN node's claim may not be cited as
+                                            # settled by anything downstream until it is closed.
+
 human_owner: string, minLength 1
