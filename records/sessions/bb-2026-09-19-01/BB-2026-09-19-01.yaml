@@ -1,0 +1,52 @@
+$schema: blackbox_note.schema.json
+id: BB-2026-09-19-01
+project: dleh-fail-closed-open-imagination
+session_ref: BB-2026-09-19-01
+participants:
+- role: founder
+- role: AI assistant
+language: mixed
+privacy_scan: pending
+public_lines_selected_by: founder
+lines:
+- n: 1
+  ts: '2026-09-19T01:35:55.732062+00:00'
+  speaker: founder
+  kind: proposal
+  text_verbatim: |
+    '~/Downloads/DLEH_Fail_Closed_Open_Imagination_arXiv_v3_toledo_fixed.pdf'
+    ่เอาเข้า glosa หน่อย ตรวจ และอัพเดก่อนลงจริง  /model fable
+  distinction_introduced: >
+    a specific preprint file (DLEH, grounded in the Toledo Readout Bridge this session built) is
+    a candidate for real publication; before that happens it must be brought under glosa's own
+    process (claim card, independent check) rather than shipped on the author's own say-so.
+  became:
+    - claim_card: GLOSA-CC-20260919-0001
+  public: false
+  ai_proposed: false
+cooking:
+  - step: lens_in
+    by: AI assistant
+    ts: '2026-09-19T01:40:00+00:00'
+    input_lines: [1]
+    what_changed: >
+      Read as: bring the paper into glosa's process; run an honest check against primary sources
+      (the actual Coq/closure record the paper cites); update the paper's own factual claims
+      (citations, reproducibility of its printed numbers) before the founder submits it anywhere
+      public. Not a request to ghost-write or silently patch the PDF.
+r1_readout_ref: null
+r2_hypothesis_ref: null
+translation_status: missing
+disclaimers:
+- D-BLACKBOX-NOTE
+- D-STANDPOINT
+session_id: BB-2026-09-19-01
+session_boundary:
+  opened_at: '2026-09-19T01:35:55.732062+00:00'
+  closed_at: null
+  ai_state_at_boundary: reset
+  human_retained_residue_ref: null
+entry_anchor: GLOSA-PC-20260919-0001
+question_trace: []
+retained_direction_ref: null
+retention_note: null

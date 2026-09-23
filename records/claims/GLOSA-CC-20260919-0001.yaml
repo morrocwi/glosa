@@ -1,0 +1,233 @@
+$schema: claim_card.schema.json
+schema_version: 0.4.0
+claim_id: GLOSA-CC-20260919-0001
+shape: full
+statement:
+  language: en
+  text: >
+    The preprint "Fail Closed for Truth, Open for Imagination — A Dual-Lane Epistemic Control
+    Harness for Generative AI Under Evidence Gaps" (Y. Lahtee, v3, 18 Sep 2026) defines a control
+    architecture (DLEH) that separates verification status from generation class, grounds its lens
+    layer in this workspace's own Toledo Readout Bridge (Eq. 2-11, citing the closure record and
+    Coq source in morrocwi/toledo and morrocwi/information-discrete-math), and proves an
+    architectural noninterference property (Theorem 1) for a reference transition system, backed
+    by an executable finite-state conformance checker.
+  is_verbatim_quote: false
+standpoint:
+  declared_basis: >
+    the founder is the sole author and the concept-line owner (DLEH, the Toledo-grounded lens);
+    AI assistance drafted prose/proofs/checker and this check under the founder's direction.
+  disciplines_not_claimed: [formal verification of Theorem 1 in a proof assistant, an LLM benchmark
+    of real hallucination reduction]
+  method_basis: readout-not-truth; glosa maker != checker != approver; EPIS-TOLEDO-FIRST
+claim_type: FORMAL
+produced_by: ai
+responsible: human
+origin_blackbox_ref: BB-2026-09-19-01#1
+five_questions:
+  tested:
+    evidence_relations:
+      - evidence_id: EV-2026-09-19-independent-pass
+        bearing: CHALLENGES
+        independence_class: I2
+        citation_ref: 'an in-session reviewer (id not recorded publicly) (in-session subagent,
+          read-only against primary git objects in toledo/information-discrete-math, pdftotext
+          extraction of the actual PDF, and a live re-run of dleh_model_check.py + pytest)'
+        review_mode: null
+        route_id: null
+        asserted_by: ai
+        date: '2026-09-19'
+        notes: >
+          VERDICT: NOT YET SAFE. Confirmed: (1) ref [20] blob-hash-as-commit error is STILL
+          PRESENT in the actual delivered PDF (line ~1190), despite the filename saying
+          "toledo_fixed" and despite a companion-repo doc proposing the fix -- the fix was never
+          applied to the submission artifact itself. (2) Table 3 counts (22/44/0, 24/48/3, 24/46/1)
+          confirmed NOT reproducible from any script on this machine; the "ancillary file
+          dleh_model_check.py" Section 15 claims will be supplied does not exist as the original --
+          only a post-hoc reconstruction (29/38/0, 32/46/4, 32/44/4) exists, found system-wide
+          search. Section 15's own reproducibility claim is therefore false as things stand: a real
+          prose/evidence mismatch, not previously logged. (3) The companion repo's own "pass
+          2/pass 3 independent review" was NOT genuinely independent -- both commits are 12 minutes
+          apart, one git identity, one continuous session, no external reviewer artifact exists;
+          self-narrated independence does not satisfy this workspace's own maker-checker rule, and
+          the repo was already pushed public before any check from outside that session occurred.
+          (4) Eq. 2-11 Coq-source attribution (Alg_Q/S4/NEVER in information-discrete-math,
+          S1/S3/S5 split correctly) reproduced independently by reading the actual .v files --
+          this part checks out. (5) No AI attribution and no leak found, confirmed independently.
+          (6) the paper carries no Core Epistemic Structure disclosure block; flagged as a judgment
+          call for the founder, not resolved by this check. independence_class I2 (a fresh
+          in-session agent, same model family) -- a cross-vendor or human check is still stronger
+          and has not run; this check does not itself license removing D-INDEPENDENCE.
+      - evidence_id: EV-2026-09-19-v4-authored-and-rechecked
+        bearing: SUPPORTS
+        independence_class: I2
+        citation_ref: 'a second in-session reviewer (id not recorded publicly) (second, separate
+          in-session agent, checked the newly-authored v4 draft against v3 page-by-page and
+          re-derived the fixes independently)'
+        review_mode: null
+        route_id: null
+        asserted_by: ai
+        date: '2026-09-19'
+        notes: >
+          No LaTeX source for v3 existed anywhere in the workspace, so a full v4 was authored
+          (not patched) applying the two blocking fixes above plus an AI-assistance disclosure.
+          This second agent independently re-verified both fixes (git blob-vs-commit object
+          types; exact re-execution of the shipped checker matching v4's printed numbers) and
+          confirmed v4 is a faithful, unaltered reproduction of v3's scientific content -- but
+          returned VERDICT: NEEDS FIXES for two mechanical defects in that first v4 draft (empty
+          PDF metadata; a duplicated QED mark) plus restoring seven dropped DOIs. All three were
+          applied directly afterward by this session (not by a further independent agent), then
+          recompiled and re-inspected page-by-page. Pushed to the public
+          morrocwi/dual-lane-epistemic-harness repository as `paper/main_v4.pdf` (commit
+          `995c141`), superseding v3 (kept, unedited, for the record). **The final, post-fix
+          state of v4 has itself NOT been re-examined by any independent pass** --
+          independent_check.status stays FAILED rather than PASSED for exactly this reason: the
+          last round of edits was self-applied and self-verified only. Independence class of
+          everything in this card: I2 throughout. No cross-vendor or human check has run.
+    falsifier: >
+      any one of: reference [20] resolving to a real commit and matching content when checked
+      fresh; the paper's printed Table 3 counts (22/44/0, 24/48/3, 24/46/1) reproducing from a
+      correctly-modelled checker; or Eq. 4-7 (Alg_Q, S4, NEVER) failing to appear as Th_coqc-tier,
+      closed objects in the cited repositories' own current default branches -- would each defeat
+      the corresponding sub-claim of this card.
+    dissent_records: []
+  ai_filled:
+    current_evidence: >
+      a companion public repository (github.com/morrocwi/dual-lane-epistemic-harness, public
+      since 2026-09-18T15:06 UTC) already carries a self-conducted three-pass correction log
+      (docs/CORRECTIONS.md) claiming: (C1) reference [20] cited a git blob hash as a commit hash;
+      (C2) the paper's printed Table 3 counts do not reproduce from an independent reconstruction
+      of the checker (29/38/0 vs 22/44/0, etc.); (C3) Eq. 2-11's Toledo/IDM source attribution
+      needed correcting to name both repositories, not one file. NOT YET treated as established
+      here -- self-conducted, not independent per this workspace's own standard.
+    retrieved_tool_evidence: "git objects (blob/commit type, reachability) in toledo and
+      information-discrete-math; a live execution of dleh_model_check.py"
+    retained_record_route: this session's own bridge-programme work (merged 2026-09-18 to both
+      repositories' main branches) is the primary source [20] cites
+    model_calibration_assumption: none identified
+    prompt_system_constraint: none identified
+    decision_policy: "no independent check => no release (AGENTS.md gate rule 8); do not certify
+      what the same continuity produced"
+  seen:
+    record_ref: ~/Downloads/DLEH_Fail_Closed_Open_Imagination_arXiv_v3_toledo_fixed.pdf
+    as_of: '2026-09-19'
+    retrievable_original: true
+    access_model: local file, read in full
+    citation_refs: ['ref-20-toledo-closure-record']
+  separates:
+    value_z0: ''
+    licensing_test:
+      regime: Toledo tier discipline (Th_coqc / finite_diagnostic / Dr)
+      result: pending independent re-check
+      notes: >
+        the paper itself is honest about its own tiers where it discusses them (Theorem 1 is a
+        pen-and-paper proof, not Coq-checked; no LLM benchmark is reported) -- the open question is
+        whether its CITATIONS of the Toledo/IDM bridge are accurate and current, not whether the
+        paper overclaims its own new apparatus
+    zero_vs_bottom: unresolved_bottom
+  assumed:
+    - id: A1
+      type: inferential_commitment
+      description: >
+        the cited Toledo/information-discrete-math repositories' public main branches are the
+        ground truth for Eq. 2-11 (this session built and merged that work earlier the same day)
+      identification_level: I5
+    - id: A2
+      type: inferential_commitment
+      description: >
+        the paper's own new formal apparatus (Theorem 1, invariants I1-I6, the declaration/
+        verifier object model) is a first-party contribution of this preprint, not a Toledo lookup
+        miss
+      identification_level: I3
+non_claims:
+  - this card does not claim DLEH reduces real-world hallucination or improves creative utility on
+    any actual LLM system -- the paper itself says no such benchmark has been run
+  - this card does not claim Theorem 1 or invariants I1-I6 are Toledo theorems; they are the
+    paper's own new, un-registered formal objects (PROPOSAL / not yet in Toledo if ever cited
+    elsewhere)
+  - this card does not certify the companion code repository's already-public self-review as an
+    independent check -- confirmed NOT genuinely independent (same session, 12 minutes apart)
+  - this card does not claim v3 (the originally delivered PDF) is safe to submit -- it is not (ref
+    [20] uncorrected; Section 15's availability claim false as written); v3 is superseded and kept
+    only as the historical record
+  - this card does not claim v4 (`paper/main_v4.pdf`) has passed an independent check -- it has
+    not; two independent passes found real defects across two rounds, both were fixed by this
+    session itself, and the final fixed state was not itself independently re-examined before
+    being pushed to the public repository
+human_owner: Yaoharee Lahtee
+tier: Dr
+status: Draft
+genre: null
+venue_track: none
+companion_of: null
+lens_translation: null
+hypothesis_world: null
+identification_ladder:
+  layers: []
+  per_rival: []
+provenance_dag:
+  nodes: []
+  edges: []
+  essential_dependency_set: []
+  defeater_log: []
+  status: not_run
+silent_lift_check:
+  represented_dependency_set: []
+  actual_dependency_set: []
+  flags: []
+  status: not_run
+scope:
+  generalization_claimed: none
+  evidence_scope: >
+    this preprint's own text (paper/main.pdf as delivered) plus the companion GitHub repository's
+    already-public claims about it
+  claim_scope: >
+    factual accuracy of citations/equations against primary sources, and reproducibility of the
+    paper's own printed numeric result (Table 3) -- not a claim about DLEH's real-world efficacy
+k_state: K0
+ledger:
+  forced: []
+  borrowed: []
+  open: []
+legal_epistemic_separation:
+  applicable: false
+  notes: ''
+independent_check:
+  status: FAILED
+  maker_id: Yaoharee Lahtee
+  checker_id: 'an in-session reviewer (id not recorded publicly), a second in-session reviewer (id not recorded publicly)'
+  approver_id: null
+  independence_class: I2
+  mc_level: L2
+  date: '2026-09-19'
+  expires_at: null
+disclaimers_emitted:
+- id: D-STANDPOINT
+- id: D-NONEXPERT
+- id: D-NONCLAIM
+- id: D-AUTHORSHIP
+- id: D-REVISION-LIVE
+- id: D-NO-EPISTEMIC-VETO
+- id: D-TIER
+  params:
+    tier: Dr
+- id: D-K-STATE
+  params:
+    k_state: K0
+- id: D-BLACKBOX-NOTE
+  params:
+    origin_blackbox_ref: BB-2026-09-19-01#1
+- id: D-CANDIDATE-STATUS
+- id: D-INDEPENDENCE
+lineage:
+  derives_from: []
+  supersedes: []
+  superseded_by: null
+related_source_cards: []
+related_observation_cards: []
+related_citation_cards: []
+revision_history:
+- rev: '1'
+  date: '2026-09-19'
+  by: Yaoharee Lahtee
+  note: initial scaffold via `glosa claim new`
