@@ -238,7 +238,7 @@ architecture map at all (proposal §4/R2).
   architecture-shaped hypothesis; a map changed after search begins is an L2 exit-gate violation
   of the same kind S14 already treats as hard.
 - **Node-grain relation, separate from the hypothesis-grain stance (R1).** A new field
-  `node_relation ∈ {SUPPORTS, CHALLENGES, EXTENDS}` records how one literature strand relates to
+  `relation ∈ {SUPPORTS, CHALLENGES, EXTENDS}` records how one literature strand relates to
   one architecture node — finer-grained than, and never merged into,
   `dialogue_table.md`'s own whole-hypothesis `agrees|disagrees|orthogonal|undetermined` enum.
   Cross-grain reading when needed: SUPPORTS → agrees, CHALLENGES → disagrees, EXTENDS → no

@@ -61,7 +61,7 @@ only — it is never a substitute for `claim_match_verified` (Legitimacy ≠ Tru
 `design/ARCHITECTURE_FIRST_REVIEW_PROPOSAL_v0.2.md`):** for a hypothesis whose own work is an
 *architecture* — multiple named nodes/transitions, not a single claim — the frozen architecture
 map (`templates/knowledge/architecture_map.md`) **is** how L2's `frozen_scope` locks, and a
-node-grain relation `node_relation ∈ {SUPPORTS, CHALLENGES, EXTENDS}`
+node-grain relation `relation ∈ {SUPPORTS, CHALLENGES, EXTENDS}`
 (`templates/knowledge/architecture_dialogue_table.md`) records how each literature strand relates
 to each node, separately from `dialogue_table.md`'s whole-hypothesis stance. A single-claim
 hypothesis with no multi-node architecture worth mapping skips this entirely and uses L1–L6

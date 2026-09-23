@@ -1,8 +1,8 @@
 # Architecture-First Comparative Review — Proposal v0.2
 
-> tier: Dr (specified; one independent adversarial review pass and a partial cross-vendor pass
-> completed on v0.2; framework ratified, checker stays WARN-only). Readout-not-truth applies to
-> this file.
+> tier: Dr (specified; reviewed during drafting — review notes are not part of this repository;
+> not independently re-verified here; framework ratified, checker stays WARN-only). Readout-not-truth
+> applies to this file.
 > **Status: RATIFIED by the founder 2026-09-23 and integrated into the binding methodology this
 > same pass.** v0.1's five open conflicts (§8) were resolutions (R1–R5) chosen on the founder's
 > behalf under an explicit founder delegation ("choose for me — world-class but actually
@@ -356,7 +356,7 @@ section).
 
 **R1 — EXTENDS (was open conflict 1).** Do NOT alter S14's hypothesis-grain
 `agrees/disagrees/undetermined` enum. Add a separate node-grain field
-`node_relation ∈ {SUPPORTS, CHALLENGES, EXTENDS}`, used only in the architecture×literature table (§5.2), never merged into
+`relation ∈ {SUPPORTS, CHALLENGES, EXTENDS}`, used only in the architecture×literature table (§5.2), never merged into
 `dialogue_table.md`'s own whole-hypothesis stance column. Cross-grain reading, when a node-relation
 row needs to be read against the hypothesis-grain enum: SUPPORTS → agrees, CHALLENGES → disagrees,
 EXTENDS → no hypothesis-grain analogue (recorded as such — "no S14 stance analogue" — never coerced
