@@ -158,11 +158,31 @@
               "node_id": { "type": "string", "minLength": 1 },
               "status": { "enum": ["OPEN", "CLOSED"] },
               "reason": { "type": ["string", "null"] }
-            }
+            },
+            "allOf": [
+              {
+                "description": "an OPEN node must state why -- silently-open nodes are not allowed.",
+                "if": { "properties": { "status": { "const": "OPEN" } }, "required": ["status"] },
+                "then": { "required": ["reason"], "properties": { "reason": { "type": "string", "minLength": 1 } } }
+              }
+            ]
           }
         },
         "n_open_nodes": { "type": "integer", "minimum": 0, "default": 0 }
-      }
+      },
+      "allOf": [
+        {
+          "description": "used:true requires the artifact refs -- a claimed architecture-first review run must point at its own map and dialogue table.",
+          "if": { "properties": { "used": { "const": true } }, "required": ["used"] },
+          "then": {
+            "required": ["architecture_map_ref", "architecture_dialogue_table_ref"],
+            "properties": {
+              "architecture_map_ref": { "type": "string", "minLength": 1 },
+              "architecture_dialogue_table_ref": { "type": "string", "minLength": 1 }
+            }
+          }
+        }
+      ]
     },
     "human_owner": { "type": "string", "minLength": 1 }
   },

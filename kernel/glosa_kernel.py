@@ -2882,6 +2882,23 @@ def lit_gate(manifest, search_log=None):
             f"lit_gate: gate.overall ({overall}) is looser than the worse of accuracy_gate/diversity_gate ({worst}) -- never silently upgraded."
         )
 
+    arch = manifest.get("architecture_review") or {}
+    if arch.get("used"):
+        node_status = arch.get("node_status") or []
+        ids = [n.get("node_id") for n in node_status if isinstance(n, dict)]
+        dupes = sorted({i for i in ids if i is not None and ids.count(i) > 1})
+        if dupes:
+            errors.append(
+                f"lit_gate: architecture_review.node_status has duplicate node_id value(s) {dupes} -- node IDs must be unique."
+            )
+        actual_open = sum(1 for n in node_status if isinstance(n, dict) and n.get("status") == "OPEN")
+        declared_open = arch.get("n_open_nodes", 0)
+        if declared_open != actual_open:
+            errors.append(
+                f"lit_gate: architecture_review.n_open_nodes={declared_open!r} does not match the count of OPEN "
+                f"node_status entries ({actual_open}) -- never silently drifted."
+            )
+
     return _result(ok=not errors, verdict=(overall if not errors else "FAIL"), errors=errors, warnings=warnings)
 
 

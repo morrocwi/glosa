@@ -14,8 +14,10 @@
 
 ## node_refs (optional, S14 §3.5, architecture-first comparative review, ratified 2026-09-23)
 
-`node_refs` on a row points at zero or more node-grain rows in this run's
-`architecture_dialogue_table.md` that bear on that neighbour — a pointer only, never a copy of a
-node-relation row's own fields. This table stays exactly what it already is: the whole-work
-same/different/cited comparison. A neighbour row with no matching node-level table (a single-claim
-hypothesis) simply carries no `node_refs`.
+`node_refs` on a row points at zero or more architecture-map node IDs (the `node_id` values frozen
+on this run's `architecture_map.md`, e.g. `N1`/`N2`) that bear on that neighbour — never a row id
+into `architecture_dialogue_table.md`, whose relation rows have no stable id of their own
+(multiple rows can share one `node_id`). A pointer only, never a copy of a node-relation row's own
+fields. This table stays exactly what it already is: the whole-work same/different/cited
+comparison. A neighbour row with no matching node-level table (a single-claim hypothesis) simply
+carries no `node_refs`.

@@ -56,10 +56,13 @@ detail: `design/ARCHITECTURE_FIRST_REVIEW_PROPOSAL_v0.2.md`; binding summary:
 3. Write one per-node synthesis sentence: what the architecture's own arrangement reveals that no
    single strand reveals alone, and what each strand still sees that the others miss — naming the
    strands drawn on.
-4. Run the mandatory CHALLENGES pass: a node with every populated relation as SUPPORTS and no
-   disclosed attempt to find a challenging strand is a flag. An unanswered CHALLENGES row marks
-   that node `node_status: OPEN` with a stated reason; its claim may not be cited as settled
-   downstream until closed.
+4. Run the mandatory CHALLENGES pass: a node with every populated relation as SUPPORTS is a flag
+   either way — distinguish, never conflate, (a) no challenge search attempted for this node at
+   all, from (b) a challenge search was attempted and genuinely returned zero results (still
+   flagged/disclosed, per S14 §3.5 R3 and §5.6's "zero `disagrees` despite a real challenge-family
+   search having run is a flag, not a quiet success"). Either way marks that node `node_status:
+   OPEN` with a stated reason naming which of the two applies; its claim may not be cited as
+   settled downstream until closed.
 5. Judge the whole, in prose, against the six-criteria yardstick: coherence, coverage,
    non-collapse, composability, explanatory reach, testability — never a summed score.
 6. Before publish, run `python3 scripts/check_non_collapse.py <file>` on every file this mode
@@ -75,6 +78,9 @@ detail: `design/ARCHITECTURE_FIRST_REVIEW_PROPOSAL_v0.2.md`; binding summary:
   condition the node does not itself specify, without contradicting it. No hypothesis-grain
   analogue in `dialogue_table.md`'s enum — never coerced to `orthogonal`.
 
+A row not yet read to this depth, or genuinely ambiguous, is recorded with `row_status: PENDING`
+and `relation` left blank — never a fourth relation value (resolved, proposal §4/§8 R1).
+
 #### Forbidden phrasings → rewrites (full table: proposal §6) <!-- non-collapse:meta -->
 | Forbidden | Rewrite |
 |---|---|
@@ -83,9 +89,15 @@ detail: `design/ARCHITECTURE_FIRST_REVIEW_PROPOSAL_v0.2.md`; binding summary:
 | "not novel" / "novelty constraint" | State the specific relation (SUPPORTS/CHALLENGES/EXTENDS) instead — already banned repo-wide (`AGENTS.md` rule 6). |
 | "reduces to X" | "N and X are same/different in [specific respect]; N does not reduce to X because [specific transition X's framework does not cover]." |
 
+This table bans *ascription by the reviewer* only — it does not reach a documented,
+human-authorised "adopted from" per S13 (a Blackbox Note line or `DECISIONS.yaml` row names the
+adoption); that case is written as such, citing S13, not as an unattributed ownership claim.
+
 **Related to S13:** each whole-work `neighbour_table.md` row may carry an optional `node_refs:`
-pointing at zero or more node-grain rows that bear on that neighbour — a pointer only, S13 stays
-the whole-work same/different/cited comparison it already is.
+pointing at zero or more architecture-map node IDs (`node_id` values frozen on
+`architecture_map.md`, e.g. `N1`/`N2`) that bear on that neighbour — never a row id into
+`architecture_dialogue_table.md`, whose relation rows have no stable id of their own. A pointer
+only, S13 stays the whole-work same/different/cited comparison it already is.
 
 ## Related
 

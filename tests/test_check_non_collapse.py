@@ -104,6 +104,59 @@ class TestNewPatterns(unittest.TestCase):
         self.assertIn("must shift the claim", labels)
 
 
+class TestArrowAndIsAPatterns(unittest.TestCase):
+    """Patterns added to close C4/finding-9 (2026-09-23 cross-vendor review, PR #9): the original
+    arrow pattern required the literal word 'theory' immediately after the arrow, so it missed
+    'N2 <- PID theory.' (a named strand between the arrow and 'theory'); and no pattern at all
+    caught the 'N2 is a PID controller.' ownership shape."""
+
+    def test_arrow_named_strand_then_theory_is_flagged(self):
+        text = "N2 <- PID theory."
+        hits = list(ncc.scan_text("t.md", text))
+        labels = {h[2] for h in hits}
+        self.assertIn("<- named strand (arrow ownership)", labels)
+
+    def test_arrow_named_strand_unicode_then_theory_is_flagged(self):
+        text = "N2 ← PID theory."
+        hits = list(ncc.scan_text("t.md", text))
+        labels = {h[2] for h in hits}
+        self.assertIn("<- named strand (arrow ownership)", labels)
+
+    def test_arrow_named_strand_then_controller_is_flagged(self):
+        text = "N2 <- PID controller."
+        hits = list(ncc.scan_text("t.md", text))
+        labels = {h[2] for h in hits}
+        self.assertIn("<- named strand (arrow ownership)", labels)
+
+    def test_is_a_named_controller_is_flagged(self):
+        text = "N2 is a PID controller."
+        hits = list(ncc.scan_text("t.md", text))
+        labels = {h[2] for h in hits}
+        self.assertIn("is a <name> controller/model/theory (ownership)", labels)
+
+    def test_is_a_named_model_is_flagged(self):
+        text = "The node is a Bayesian model."
+        hits = list(ncc.scan_text("t.md", text))
+        labels = {h[2] for h in hits}
+        self.assertIn("is a <name> controller/model/theory (ownership)", labels)
+
+    def test_is_a_named_theory_is_flagged(self):
+        text = "N2 is a classical control theory."
+        hits = list(ncc.scan_text("t.md", text))
+        labels = {h[2] for h in hits}
+        self.assertIn("is a <name> controller/model/theory (ownership)", labels)
+
+    def test_unrelated_is_a_sentence_is_not_flagged_by_new_patterns(self):
+        # ally phrasing ("X is a mature, well-studied instance of Y") must not trip the new
+        # ownership pattern just because the word "instance" is nearby -- no controller/model/
+        # theory keyword falls inside the sentence's own scoping window here.
+        text = "A proportional-integral-derivative controller is a mature, well-studied instance of exactly this update-rule pattern."
+        hits = list(ncc.scan_text("t.md", text))
+        labels = {h[2] for h in hits}
+        self.assertNotIn("is a <name> controller/model/theory (ownership)", labels)
+        self.assertNotIn("<- named strand (arrow ownership)", labels)
+
+
 class TestFencedCodeBlocks(unittest.TestCase):
     """C1 (2026-09-23 cross-vendor review): a `#` line inside a fenced code block must never be
     treated as a heading, so it can never open or close a meta-skip region — only a real

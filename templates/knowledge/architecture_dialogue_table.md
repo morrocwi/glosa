@@ -18,9 +18,9 @@
 
 ## Relation rows (one per node x strand x relation triple actually found)
 
-| node_id | strand (citation) | relation | what the strand sees | what the strand does not see | citation_card | verified |
-|---|---|---|---|---|---|---|
-|  |  | SUPPORTS \| CHALLENGES \| EXTENDS |  |  |  |  |
+| node_id | strand (citation) | relation | row_status | what the strand sees | what the strand does not see | what it would say against us | defeater_class | legitimate_defeater | citation_card | verified |
+|---|---|---|---|---|---|---|---|---|---|---|
+|  |  | SUPPORTS \| CHALLENGES \| EXTENDS |  |  |  |  |  |  |  |  |
 
 Column notes:
 - **node_id** — must match a `node_id` already frozen on `architecture_map.md`; a row may never
@@ -37,11 +37,24 @@ Column notes:
     hypothesis-grain analogue in `dialogue_table.md`'s `agrees/disagrees/orthogonal/undetermined`
     enum — never coerced to `orthogonal`, which means the strand addresses a different question
     entirely, not that it elaborates the same one.
+- **row_status** — `RECORDED | PENDING`. `relation` stays exactly the three values above, never a
+  fourth "undetermined" relation (resolved, proposal §4/§8 R1): a row not yet read to this depth,
+  or genuinely ambiguous, is `row_status: PENDING` with `relation` left blank, instead of picking
+  a relation early or inventing a fourth relation value. Defaults to `RECORDED` once a relation is
+  actually populated.
 - **what the strand sees** — the strand's own framing, pointed at this node, in the strand's own
   terms (structurally identical to `dialogue_table.md`'s "how it sees the problem" column, applied
   at node grain).
 - **what the strand does not see** — what the node's architecture specifies that this strand's own
   method/scope cannot reach (node-level analogue of "what it assumes").
+- **what it would say against us** — the strand's strongest available objection to this node, in
+  its own logic, populated when `relation == CHALLENGES` (proposal §4's "reuses the *existing*
+  'what it would say against us' column directly"; same field/meaning as `dialogue_table.md`,
+  applied at node grain instead of whole-hypothesis grain).
+- **defeater_class / legitimate_defeater** — reused unchanged from `dialogue_table.md` (proposal
+  §8 R1: "already source-grain, not hypothesis-grain, so they transfer cleanly"). Same enum/style
+  as `dialogue_table.md`'s own column notes; required whenever a row's relation is populated as
+  CHALLENGES (SUPPORTS/EXTENDS rows may leave both blank).
 - **citation_card / verified** — same fields as `dialogue_table.md`; a stance may only be recorded
   once `claim_match_verified == true` on that card.
 

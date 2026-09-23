@@ -98,17 +98,28 @@ def scan_text(path_label: str, text: str):
     scanned for phrase matches like any other line."""
     skip_level = None  # None = not skipping; int = skipping until a heading of this level or shallower
     in_fence = False
-    fence_marker = None  # the exact fence-opening string ("```" / "~~~~" / ...), for matching close
+    fence_char = None  # the fence character ("`" or "~") a closing fence must match
+    fence_len = None  # the opening fence's run length -- a closing fence must be >= this long
     for lineno, line in enumerate(text.splitlines(), start=1):
-        fence_m = _FENCE_RE.match(line.strip())
+        stripped = line.strip()
+        fence_m = _FENCE_RE.match(stripped)
         if fence_m:
             marker = fence_m.group(1)
             if not in_fence:
                 in_fence = True
-                fence_marker = marker[0]  # remember the fence character only (``` closes ~~~-free)
-            elif marker[0] == fence_marker:
+                fence_char = marker[0]
+                fence_len = len(marker)
+            elif (
+                marker[0] == fence_char
+                and len(marker) >= fence_len
+                and stripped[len(marker):].strip() == ""
+                # a closing fence must be the same character, at least as long as the opening
+                # fence, and followed only by whitespace (no trailing info-string/text) -- a
+                # shorter run, or a marker with trailing text, does not close the fence.
+            ):
                 in_fence = False
-                fence_marker = None
+                fence_char = None
+                fence_len = None
             # a fence delimiter line itself is not a heading; fall through to phrase scanning below
 
         level = None if in_fence else _heading_level(line)

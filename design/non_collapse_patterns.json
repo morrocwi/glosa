@@ -23,6 +23,8 @@
     ["isn't new / is not new", "is(?:n't|\\s+not)\\s+new\\b"],
     ["is ...'s concept", "\\bis\\s+[\\w][\\w\\s\\-]{0,40}?'s\\s+concept\\b"],
     ["<- theory (arrow ownership)", "(?:←|<-)\\s*theory"],
+    ["<- named strand (arrow ownership)", "(?:←|<-)\\s*[\\w][\\w\\s\\-]{0,40}?\\b(?:theory|controller|model)\\b"],
+    ["is a <name> controller/model/theory (ownership)", "\\bis\\s+an?\\s+[\\w][\\w\\s\\-]{0,30}?\\b(?:controller|model|theory)\\b"],
     ["ไม่ใหม่", "ไม่ใหม่"],
     ["ทำไปแล้ว", "ทำไปแล้ว"],
     ["ลดรูปเป็น", "ลดรูปเป็น"],

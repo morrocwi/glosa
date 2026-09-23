@@ -240,8 +240,14 @@ duplicate them.
     condition without contradicting it. Collapsing EXTENDS into ORTHOGONAL would misclassify every
     ally-elaboration case the founder's ruling is specifically about (CSC on semantic cognition,
     Capability Approach on the capability node).
-  - `UNDETERMINED` carries over unchanged at node grain (a row not yet read to this depth, or
-    ambiguous) — this proposal adds no new value here.
+  - `UNDETERMINED` (a row not yet read to this depth, or ambiguous) does **not** become a fourth
+    `relation` value at node grain — `relation` stays exactly the three values
+    `SUPPORTS | CHALLENGES | EXTENDS` (this was left open in v0.1/early v0.2 drafts and is
+    resolved here, consistently with the template and schema, neither of which ever carried a
+    fourth relation value). An unread/ambiguous row is instead recorded with a separate
+    `row_status: PENDING` on the same row (relation left blank until read), never coerced into
+    picking one of the three relations early and never smuggled in as a fourth relation value.
+    `row_status` defaults to `RECORDED` once a relation is actually populated.
 - **Resolved by R1 (§8):** reuse `dialogue_table.md`'s existing
   `defeater_class`/`legitimate_defeater`/`citation_card`/`verified` columns unchanged on the new
   node-relation rows (they are already source-grain, not hypothesis-grain, so they transfer
@@ -250,9 +256,10 @@ duplicate them.
   **whole-hypothesis** record it already is, and treat architecture-node rows as an **additive,
   finer-grained companion table** for reviews that name an explicit architecture map (§3a) — never
   a required replacement for hypotheses too small to have a multi-node architecture worth mapping.
-  This is the option this proposal recommended in v0.1 (option (a) below); R1 chooses it, subject
-  to the founder's separate ratification of the framework as a whole (§8's "what ratification
-  would change" list is unaffected — S14's own files are still untouched by this proposal itself).
+  This is the option this proposal recommended in v0.1 (option (a) below); R1 chooses it. The
+  framework as a whole has since been ratified into the binding methodology in this same pass —
+  §8's "What ratification changed" list states exactly which files, including S14 itself (§3.5),
+  were touched.
 
 ---
 
@@ -311,37 +318,51 @@ the observed signal) → `N3 Act` (the updated state selects the next action, fe
 | node_id | node_name | mechanism | upstream | downstream |
 |---|---|---|---|---|
 | N1 | Observe | Captures a raw signal from the environment before any interpretation is applied | N3 | N2 |
-| N2 | Adjust | A fixed update rule maps the observed signal plus current internal state to a new internal state | N1 | N3 |
+| N2 | Adjust | An update rule maps the observed signal plus current internal state to a new internal state; the rule's own parameters may themselves adapt over time in response to observed signal statistics (the specific adaptation mechanism is left unspecified at freeze time — this map states only that the capacity exists, not how it is realized) | N1 | N3 |
 | N3 | Act | The updated internal state selects the next action, which changes what N1 will observe next | N2 | N1 |
 
 | node_id | strand | relation | what the strand sees | what the strand does not see | citation_card | verified |
 |---|---|---|---|---|---|---|
-| N2 | Classical control theory (PID-controller literature) | SUPPORTS | A proportional-integral-derivative controller is a mature, well-studied instance of exactly this update-rule pattern: error signal in, corrected control variable out | PID literature treats the update rule as fixed and hand-tuned; it does not address a `N2` that itself changes its own update rule over time | (illustrative — not a real citation) | — |
-| N2 | Online/adaptive-learning-rate literature (e.g. stochastic-gradient adaptive-rate methods) | EXTENDS | Gives a detailed mechanism for how an update rule's own parameters can themselves change over time in response to observed signal statistics | Does not address the `N3`→`N1` action-changes-observation feedback path — it is typically studied with a fixed, externally supplied data stream, not a closed action loop | (illustrative) | — |
-| N1–N3 loop | Situated-cognition literature (embodied/enactive cognition) | CHALLENGES | Argues that splitting "observe" from "act" as two distinct stages misdescribes real embodied systems, where perception and action are constitutively coupled, not sequential stages | Does not offer a formal update-rule mechanism comparable to `N2`'s — its critique is at the level of framing, not an alternative mechanism for the same job | (illustrative) | — |
+| N2 | Classical control theory (PID-controller literature) | SUPPORTS | A proportional-integral-derivative controller is a mature, well-studied instance of exactly this update-rule pattern: error signal in, corrected control variable out | PID literature treats the update rule as fixed and hand-tuned; it does not address the parameter-adaptation capacity N2's own frozen mechanism already names | (illustrative — not a real citation) | — |
+| N2 | Online/adaptive-learning-rate literature (e.g. stochastic-gradient adaptive-rate methods) | EXTENDS | Gives a detailed mechanism for how the parameter-adaptation capacity N2's frozen mechanism already names could concretely work, in response to observed signal statistics | Does not address the `N3`→`N1` action-changes-observation feedback path — it is typically studied with a fixed, externally supplied data stream, not a closed action loop | (illustrative) | — |
+| N1 | Situated-cognition literature (embodied/enactive cognition) | CHALLENGES | Argues that splitting "observe" from "act" as two distinct stages misdescribes real embodied systems, where perception and action are constitutively coupled, not sequential stages | Does not offer a formal update-rule mechanism comparable to `N2`'s — its critique is at the level of framing, not an alternative mechanism for the same job | (illustrative) | — |
+| N3 | Situated-cognition literature (embodied/enactive cognition) | CHALLENGES | Argues that a discrete "act" stage that merely selects among pre-given actions misdescribes real embodied systems, where action and perception co-constitute each other rather than one stage handing off to the next | Does not offer a formal action-selection mechanism comparable to `N3`'s — its critique is at the level of framing, not an alternative mechanism for the same job | (illustrative) | — |
 
-**Synthesis (N2):** PID theory and adaptive-learning-rate theory each supply a different, real
-piece of N2's mechanism — a stable baseline update law and a way that law's own parameters can
-move — but neither, alone, is written for a closed loop where N3's action changes what N1 next
-observes. The architecture's contribution at N2 is exactly that closure: an update rule whose
-adaptation is read as an internal readout of the whole loop's own history, not an externally
-supplied training signal. PID theory alone would not predict this closure; adaptive-rate theory
-alone would not predict it either — together, read through the architecture's own transitions,
-the loop's self-referential update behavior becomes visible, which is what "sees together, not
-partially" means here.
+**Synthesis (N2):** PID theory and adaptive-learning-rate theory each speak to a different, real
+part of N2's mechanism *as the map already states it* — a stable baseline update law, and a way
+the parameter-adaptation capacity the frozen map already names could concretely work — but neither,
+alone, is written for a closed loop where N3's action changes what N1 next observes. The
+architecture's own contribution at N2 is that closure, stated in the map before either strand was
+consulted: an update rule whose already-named adaptation capacity is read as an internal readout
+of the whole loop's own history, not an externally supplied training signal. Neither strand
+supplies the adaptation capacity itself — both are read against a mechanism N2 already had; what
+neither, alone, would predict is the loop's self-referential update behavior, which becomes
+visible only through the architecture's own N3→N1→N2 transitions, which is what "sees together,
+not partially" means here.
 
 **Non-collapse check:** it would be a gate failure to write "N2 is a PID controller" (ownership
-move) or "N2 is just online learning" (ownership move). The correct phrasing: "N2's update
-mechanism is SUPPORTED by classical control theory's baseline stability results and EXTENDED by
-adaptive-learning-rate theory's parameter-adaptation mechanism; the architecture's own contribution
-is placing that update inside a closed observe-adjust-act loop neither tradition specifies on its
-own."
+move), "N2 is just online learning" (ownership move), or "N2's adaptation comes from
+adaptive-learning-rate theory" (crediting a strand with a capacity the frozen map already named
+before that strand was consulted). The correct phrasing: "N2's update mechanism is SUPPORTED by
+classical control theory's baseline stability results and EXTENDED by adaptive-learning-rate
+theory's account of how the map's own already-stated parameter-adaptation capacity could work;
+the architecture's own contribution is placing that update inside a closed observe-adjust-act loop
+neither tradition specifies on its own."
 
-**CHALLENGES pass:** the situated-cognition row above is the required challenge-family result —
-found by deliberately searching for a framework that objects to the loop's own staging, not only
-frameworks that supply mechanism detail. The architecture's answer to it (not shown in full here,
-since this is an illustrative sketch, not a real review) would need to state whether `N1`/`N3`'s
-formal separation is defended as a modeling convenience or revised in response.
+**CHALLENGES pass, per node:**
+- **N1** — found: the situated-cognition row above is the required challenge-family result for
+  N1, found by deliberately searching for a framework that objects to `N1`'s own staging as a
+  distinct stage. `node_status: OPEN` — the architecture's answer to it (not shown in full here,
+  since this is an illustrative sketch, not a real review) would need to state whether `N1`'s
+  formal separation from `N3` is defended as a modeling convenience or revised in response.
+- **N2** — searched-zero: a challenge-family search for a framework that disputes the
+  update-rule-with-adaptive-parameters pattern itself (not merely a competing mechanism for it)
+  was run and returned nothing that disputed the pattern at that level; `node_status: OPEN`,
+  reason: "challenge search attempted, zero results" (§3.5 R3) — disclosed, not treated as a
+  quiet CLOSED.
+- **N3** — found: the situated-cognition row above also supplies N3's required challenge-family
+  result (framing objection to a discrete "act" stage). `node_status: OPEN` for the same reason as
+  N1 — the architecture's answer to it is not worked out in this illustrative sketch.
 
 ---
 
@@ -349,10 +370,10 @@ formal separation is defended as a modeling convenience or revised in response.
 
 v0.1 listed five open conflicts for the founder to rule on. The founder delegated the choice
 ("choose for me — world-class but actually practical", 2026-09-23); the choice below was made
-on the founder's behalf. These are choices among the options v0.1 already laid out — they resolve how the
-framework would work, not whether it is ratified into S14/P13/SKILL.md, which stays a separate,
-still-pending founder decision (see "What ratification would change" below, unchanged by this
-section).
+on the founder's behalf. These were originally choices among the options v0.1 already laid out,
+separate from ratification into S14/P13/SKILL.md — that ratification has since happened, in this
+same pass (see "What ratification changed" below, historical framing preserved above for record,
+corrected in place rather than silently rewritten).
 
 **R1 — EXTENDS (was open conflict 1).** Do NOT alter S14's hypothesis-grain
 `agrees/disagrees/undetermined` enum. Add a separate node-grain field
@@ -397,12 +418,14 @@ false-positive) is recorded wherever that human records it, not by the script it
 wires it in by default.
 
 **R5 — S13 link (was open conflict 5).** Each whole-work neighbour row in `S13_neighbour-table.md`
-may carry an optional `node_refs:` field pointing at zero or more node-grain rows (§5.2) that bear
-on that neighbour. S13 stays exactly what it already is — the **whole-work** comparison
-(same/different/cited) — and no content is duplicated between the two tables; `node_refs:` is a
-pointer, never a copy of a node-relation row's own fields. This is additive and optional: a
-neighbour row with no matching node-level table (a single-claim hypothesis, R2) simply carries no
-`node_refs:`.
+may carry an optional `node_refs:` field pointing at zero or more architecture-map node IDs (the
+`node_id` values frozen on §5.1's `architecture_map.md`, e.g. `N1`/`N2`) that bear on that
+neighbour — never a row id into §5.2's `architecture_dialogue_table.md`, whose relation rows carry
+no stable id of their own (a node can have several relation rows, one per strand/relation pair).
+S13 stays exactly what it already is — the **whole-work** comparison (same/different/cited) — and
+no content is duplicated between the two tables; `node_refs:` is a pointer, never a copy of a
+node-relation row's own fields. This is additive and optional: a neighbour row with no matching
+node-level table (a single-claim hypothesis, R2) simply carries no `node_refs:`.
 
 **What ratification changed (done, 2026-09-23, this same pass):**
 - `design/S14_literature-review-system.md` — new §3.5 describing the architecture-map freeze step
@@ -443,9 +466,13 @@ rewritten, since it described a prior, pre-ratification state:
   `templates/knowledge/litreview_manifest.yaml`, additively, per the ratified R1–R5 resolutions
   and §8's list. `S13_neighbour-table.md` itself remains untouched — only its sibling schema/
   template gained the optional `node_refs:` field per R5; S13's own text is unchanged.
-- Kernel rules, CLI verbs, and validators wired into the binding methodology's own gate machinery
-  remain out of scope for this pass — only `scripts/check_non_collapse.py` (R4, standalone,
-  WARN-only, unchanged by this pass) exists as runnable code; no hard-gate check was added.
+- Corrected: a later fix pass on this same PR (cross-vendor review findings, 2026-09-23) added
+  runnable enforcement beyond the standalone `check_non_collapse.py` — `kernel/glosa_kernel.py`'s
+  `lit_gate()` now hard-fails an `architecture_review` block with duplicate `node_id` values or a
+  drifted `n_open_nodes` count, and `cli/glosa`'s `lit manifest`/`--freeze` path preserves the
+  `architecture_review` block across a rebuild (previously silently dropped it) and refuses to
+  freeze an internally-inconsistent block. `check_non_collapse.py` itself (R4) remains standalone
+  and WARN-only, unchanged.
 - Does not apply this framework to any real, in-progress review — §7's worked example is a
   deliberately neutral, fictional toy architecture, not any founder-private work; this remains
   true after integration.

@@ -963,6 +963,61 @@ class LitGateTest(unittest.TestCase):
         self.assertFalse(res["ok"])
 
 
+class LitGateArchitectureReviewTest(unittest.TestCase):
+    """architecture_review consistency checks added for the PR #9 cross-vendor review finding
+    (schema allowed contradictory records: used:true with no artifact refs, an OPEN node with no
+    reason, duplicate node_id values, or n_open_nodes drifted from the actual OPEN count)."""
+
+    def setUp(self):
+        self.manifest = load_example("litreview_manifest.example.json")
+
+    def test_absent_block_is_silent(self):
+        res = k.lit_gate(self.manifest)
+        self.assertTrue(res["ok"], res["errors"])
+
+    def test_used_true_with_consistent_block_passes(self):
+        manifest = copy.deepcopy(self.manifest)
+        manifest["architecture_review"] = {
+            "used": True,
+            "architecture_map_ref": "records/lit/x/h1/architecture_map.md",
+            "architecture_dialogue_table_ref": "records/lit/x/h1/architecture_dialogue_table.md",
+            "node_status": [
+                {"node_id": "N1", "status": "OPEN", "reason": "unanswered CHALLENGES row"},
+                {"node_id": "N2", "status": "CLOSED", "reason": None},
+            ],
+            "n_open_nodes": 1,
+        }
+        res = k.lit_gate(manifest)
+        self.assertTrue(res["ok"], res["errors"])
+
+    def test_duplicate_node_ids_is_hard_error(self):
+        manifest = copy.deepcopy(self.manifest)
+        manifest["architecture_review"] = {
+            "used": True,
+            "architecture_map_ref": "m", "architecture_dialogue_table_ref": "d",
+            "node_status": [
+                {"node_id": "N1", "status": "OPEN", "reason": "r"},
+                {"node_id": "N1", "status": "CLOSED", "reason": None},
+            ],
+            "n_open_nodes": 1,
+        }
+        res = k.lit_gate(manifest)
+        self.assertFalse(res["ok"])
+        self.assertTrue(any("duplicate node_id" in e for e in res["errors"]), res["errors"])
+
+    def test_n_open_nodes_drift_is_hard_error(self):
+        manifest = copy.deepcopy(self.manifest)
+        manifest["architecture_review"] = {
+            "used": True,
+            "architecture_map_ref": "m", "architecture_dialogue_table_ref": "d",
+            "node_status": [{"node_id": "N1", "status": "OPEN", "reason": "r"}],
+            "n_open_nodes": 0,
+        }
+        res = k.lit_gate(manifest)
+        self.assertFalse(res["ok"])
+        self.assertTrue(any("n_open_nodes" in e for e in res["errors"]), res["errors"])
+
+
 class GateReleaseTest(unittest.TestCase):
     def setUp(self):
         self.manifest = load_example("release_manifest.example.json")
