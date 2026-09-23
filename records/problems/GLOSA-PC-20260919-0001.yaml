@@ -1,0 +1,71 @@
+$schema: problem_card.schema.json
+problem_id: GLOSA-PC-20260919-0001
+project: dleh-fail-closed-open-imagination
+intake:
+  q1_issue:
+    text_verbatim: |
+      '~/Downloads/DLEH_Fail_Closed_Open_Imagination_arXiv_v3_toledo_fixed.pdf'
+      ่เอาเข้า glosa หน่อย ตรวจ และอัพเดก่อนลงจริง  /model fable
+    retained_difference_statement: >
+      Whether the preprint "Fail Closed for Truth, Open for Imagination" (DLEH), which grounds its
+      lens layer in this workspace's own Toledo Readout Bridge (Eq. 2-11, ref [20]), is safe to
+      submit publicly as-is, under the declared agency of this workspace's own standing rules
+      (AGENTS.md gate: maker != checker != approver; no independent check, no release), the context
+      of a companion code repository already pushed public before this check ran, and the query
+      "does every factual claim the paper makes about Toledo/IDM match the actual Coq source and
+      commit history, and are the paper's own printed numbers (Table 3) reproducible."
+    agency: this workspace (glosa gate rules; readout-not-truth; EPIS-TOLEDO-FIRST)
+    context: >
+      A public preprint citing a public Coq-backed closure record this same session produced
+      earlier today; a companion GitHub repository (morrocwi/dual-lane-epistemic-harness) already
+      public since 2026-09-18T15:06 UTC, containing a self-conducted three-pass correction log.
+    query: is the paper's factual content (citations, equations, reproducibility claims) accurate
+      and complete enough to submit, and has it had a genuinely independent check.
+    blackbox_line_ref: 'BB-2026-09-19-01#1'
+  q2_user_proposal:
+    text: "bring it into glosa's process; check it; update before real publication"
+    stated_by: founder
+    blackbox_line_ref: 'BB-2026-09-19-01#1'
+  entry_anchor:
+    unresolved: >
+      whether reference [20]'s citation, the Eq. 2-11 source attribution, and the printed Table 3
+      counts are accurate and reproducible
+    existing_evidence: >
+      dual-lane-epistemic-harness repo's own CLAIMS.md/CORRECTIONS.md/CONFORMANCE.md (self-conducted,
+      not yet independently checked per this session's own standard for the Toledo bridge work)
+    change_condition: an independent (fresh, not self-conducted) adversarial pass confirms or
+      overturns each finding, checked against primary sources (git objects, the .v files, a live
+      run of the checker) rather than against the prior pass's own narrative
+    verification_intent: independent glosa-style check before the founder submits the PDF anywhere
+      public (arXiv/Zenodo); the companion code repo is already public and is checked retroactively
+    resistance_route: a reader who clones toledo/information-discrete-math and re-runs
+      dleh_model_check.py should get the same verdicts this check reports
+standpoint:
+  declared_basis: >
+    the founder is the sole author of the preprint and the concept line it formalizes (DLEH,
+    Toledo-grounded lens); AI assistance drafted the paper's prose/proofs/checker and this
+    workspace's tier-honest review discipline, under the founder's direction (glosa gate rule 5:
+    AI is never an author).
+  disciplines_not_claimed: [formal verification of Theorem 1 in a proof assistant, an LLM benchmark]
+  method_basis: readout-not-truth; EPIS-REUSE-PIPELINE / EPIS-TOLEDO-FIRST; glosa's maker != checker
+    != approver discipline
+origin_blackbox_ref: 'BB-2026-09-19-01'
+produced_by: ai
+responsible: human
+readiness:
+  verdict: NOT_READY
+  reason: >
+    Session closed 2026-09-19. Two independent passes (in-session reviewers, ids not recorded publicly) each found real
+    defects; a full v4 was authored (no v3 LaTeX source existed) applying every fix found, pushed
+    public as morrocwi/dual-lane-epistemic-harness commit 995c141 (paper/main_v4.pdf), superseding
+    v3 (kept for the record). The FINAL fixed state of v4 was self-verified only, not independently
+    re-examined -- so this problem stays NOT_READY (claim card GLOSA-CC-20260919-0001 likewise
+    stays independent_check.status=FAILED) until a fresh pass confirms the current v4. Founder
+    decision still open: whether the workspace's Core Epistemic Structure block belongs on an
+    external arXiv-bound preprint (v4 carries a shorter, standard AI-disclosure paragraph instead).
+  checked_by: AI assistant
+  checked_at: '2026-09-19'
+k_state: K0
+status: Draft
+human_owner: Yaoharee Lahtee
+notes: ''

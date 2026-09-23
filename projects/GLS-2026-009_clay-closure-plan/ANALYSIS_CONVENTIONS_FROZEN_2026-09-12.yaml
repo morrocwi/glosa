@@ -1,0 +1,8 @@
+# Analysis-side conventions frozen 2026-09-12 ~16:40 ("ทำให้เลย ขอมาตรฐานระดับโลกเท่านั้น" = adopt the recommended defaults).
+# Separate from FROZEN_INPUT_RECORD_T0-02 (which must not be edited once the run starts); these bind the READERS of the run.
+lp_round_1_scope: "event types from T0-02 generation 2 only; generation 3 enters only as a later round with its own inclusion certificates"
+reanchor_edge: "transport edge I->I under weld/E.08.v1 with a declared payable d_e (the cross-cell loss registered in the joint-normalized units); never a free reset (audit §8 case 3)"
+degenerate_class_D_independent_definition: "Z ∈ 𝒟 iff every productive pair is rank-1-locked (|p|=|q| direction lock, cross-scalar zero) or all active addresses are collinear (rg_imr_structural.py); this makes ZPR a checkable lemma instead of a definition"
+tau_res: "1e-12 of the seed retained load (same as the frozen record tolerance); load below tau_res in a cell = DIFF vertex, never silently dropped"
+status_ontology: "weld/E.05.v1: ADMITTED / OBSTRUCTED / UNRESOLVED (PASS/FAIL codes of earlier files map onto these)"
+reuse_rule: "REUSE PIPELINE (CLAUDE.md EPIS-REUSE-PIPELINE; founder TG-RFG-01 in Toledo) applies to every new row/cut/card"

@@ -1,0 +1,54 @@
+$schema: null
+id: bbn-fefferman-readout-problem-001
+project_ref: GLS-2026-006
+recorded_by: chair (AI assistant), founder instruction verbatim below
+recorded_at: "2026-09-09"
+repo_path: https://github.com/morrocwi/readout-problem-navier-stokes  # new repo, created this session, not yet pushed
+founder_instruction_verbatim: >-
+  "เอาสามเอกสารนี้ เข้ากระบวนการ glosa ยกระดับงาน ลงทะเบียนสมการ พับลิกใน git ออก release และ
+  zenodo หัวข้อหลักๆคือการคุยกับ 'A READOUT PROBLEM FOR FEFFERMAN'S EXISTENCE AND SMOOTHNESS OF THE
+  NAVIER-STOKES EQUATION' รักษาความเรียบง่ายและเบาของเอกสาร แบบ Arxiv หนึ่งคอลัมไม่ต้องบรรยายมาก
+  คณิตศาสตร์ล้วนอ้างอิงเปเปอร์นอกเปเปอร์เดียว" (2026-09-09) -- bring three founder-authored PDFs
+  into the glosa process, elevate/register the equations in Toledo, publish publicly on git, cut a
+  release, and deposit on Zenodo. Keep the document simple/light, arXiv single-column, math-heavy,
+  minimal prose, exactly one external citation (Fefferman's own Clay Millennium Problem statement).
+source_documents:
+  - path: ~/Downloads/readout_problem_fefferman_level.pdf
+    title: "A Readout Problem for Fefferman's Existence and Smoothness of the Navier-Stokes Equation"
+    role: short arXiv-style note; states the admissible-domain-reading framework, proves the
+      8-state finite-witness Theorem 1, poses (does not answer) the Navier-Stokes readout
+      dichotomy (R)/(N). Explicit non-claim on the Clay problem itself (Remark 2).
+  - path: ~/Downloads/State_Breakdown_Math_Only_v0_2.pdf
+    title: "State Breakdown Is Not Readout Breakdown (v0.2, mathematical rewrite)"
+    role: fuller math-only companion; same finite-witness theorem (Theorem 3.1/Corollary 3.2) plus
+      the NEW retained-turbulence continuation result (Theorem 6.1, Corollary 6.2, Proposition
+      6.3, Theorem 8.1, Corollary 8.2) not present in the short note.
+  - path: ~/Downloads/verify_state_breakdown_math.py
+    title: verification script for the finite-witness theorem and the Euler-stepper convergence
+      check (Theorem 7.1)
+    role: independently re-run by this session on 2026-09-09, python3, exit clean, all stated
+      numbers reproduced (8/8 weld checks, F^2=Id, witness through k=9999, O(h) Euler convergence
+      ratios ~2.0). This IS the independent machine check for the finite-witness theorem; it is
+      NOT a Coq proof -- tiered finite_diagnostic in Toledo, not Th_coqc.
+context: >-
+  Standalone founder-authored mathematical notes, not connected to any prior glosa project or
+  negative-result cycle. This is a fresh external-document intake: two related PDFs plus their
+  verification script are brought into the ecosystem (Toledo registration, a merged single paper,
+  a new public repo, a CC BY 4.0 release, a Zenodo deposit) rather than a diagnosis of an existing
+  finding. Toledo already held the exact retained-turbulence equation (tau_R dI_R/dt + L_R I_R =
+  S_R + eta_R) as weld/P.05.v1 (URCF turbulence relaxation-inertia law, registered 2026-09-08) and
+  an independent Dr-tier reading of Fefferman's Clay problem statement through this workspace's own
+  discrete/readout lens (docs/NAVIER_STOKES_THROUGH_OUR_LENS.md, 2026-09-09) -- both found and
+  cited, not duplicated; see registry/proposals/fefferman_readout_note.json for the two NEW Toledo
+  proposals this intake registered (the 8-state witness, tier finite_diagnostic; the continuation
+  theorem, tier Dr, parented to weld/P.05.v1 and EQ-008).
+scope_decision_disclosed: >-
+  This registration runs glosa's P02 intake framing only (this note) plus the P20 Core Epistemic
+  Structure block (included directly in the paper, per P20's binding rule that every deposited
+  record carries it). It does NOT run the full glosa spine (no litreview_manifest, no genre_decision
+  document, no claim_card, no dialogue_table) -- the founder's own instruction was explicit that
+  this should stay light and arXiv-style, and the source documents are already complete,
+  self-contained mathematical notes with their own stated non-claim boundary (Remark 2 of the short
+  note: does not prove global regularity, does not prove blowup, does not identify a continuum
+  singularity with an artefact). Stated here explicitly rather than silently doing a partial spine
+  job under a full-scope label.

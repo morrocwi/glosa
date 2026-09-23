@@ -60,8 +60,13 @@ is_allowlisted() {
     # Honored prefixes: design/ and lineage/ (historical discussion), plus the quoted/data classes
     # below (see allowlist header): reviews/ (audit reports quoting hits), sources/ (third-party or
     # founder papers reproduced verbatim), registry/ (Zenodo metadata as data), blackbox/ (verbatim voice).
+    # projects/GLS-2026-009_clay-closure-plan/ (reviewed 2026-09-23): that programme's own formalism
+    # defines "novelty"/"novel" as a technical object (e.g. Block-Joint Novelty/BJN, GNG novelty
+    # generation, zero-novelty extension) distinct from a priority/originality claim about the work
+    # itself — see allowlist file for the exact (word) rows honored under this prefix. No other
+    # GLS-2026-* project directory is exempted; a genuine priority claim there is still a real finding.
     case "$prefix" in
-      design/*|lineage/*|reviews/*|sources/*|registry/*|blackbox/*|methodology/data/*|records/*|knowledge/*|tests/sim/*|docs/kg_*) : ;;  # records/knowledge = verbatim third-party passages; tests/sim = adversarial fixtures that must contain the words
+      design/*|lineage/*|reviews/*|sources/*|registry/*|blackbox/*|methodology/data/*|records/*|knowledge/*|tests/sim/*|docs/kg_*|projects/GLS-2026-009_clay-closure-plan/*) : ;;  # records/knowledge = verbatim third-party passages; tests/sim = adversarial fixtures that must contain the words
       *) continue ;;
     esac
     case "$file" in
