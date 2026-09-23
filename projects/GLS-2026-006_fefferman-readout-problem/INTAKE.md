@@ -24,7 +24,7 @@ no external co-author, no institutional gate). No third party's interests are af
 registering or publishing this note — it names, but does not claim to resolve, the Clay Millennium
 Problem, and cites only Fefferman's own official problem statement.
 
-`zero_vs_bottom`: Toledo was checked (not skipped) for prior art on both the finite-witness
+`zero_vs_bottom`: Toledo was checked (not skipped) for existing related work on both the finite-witness
 theorem and the continuation theorem before either was registered as new — see
 `toledo/registry/proposals/fefferman_readout_note.json`'s `origin`/`honest_caveats` fields. The
 retained-turbulence equation itself was found already registered (`weld/P.05.v1`) and is cited

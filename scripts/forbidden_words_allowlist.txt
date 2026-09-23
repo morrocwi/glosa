@@ -108,3 +108,10 @@ knowledge/	prior-art
 tests/sim/	prior-art
 docs/kg_	novelty
 docs/kg_	novel
+
+# GLS-2026-009_clay-closure-plan (added 2026-09-23, reviewed same day): "novelty"/"novel" are a
+# defined technical object in this programme's own formalism (e.g. Block-Joint Novelty/BJN, GNG
+# novelty generation, zero-novelty extension), not priority/originality language about the work.
+# Narrow to exactly this one project directory — no other projects/ path is covered.
+projects/GLS-2026-009_clay-closure-plan/	novelty
+projects/GLS-2026-009_clay-closure-plan/	novel
