@@ -204,6 +204,8 @@ frozen. Freezing is the event the checklist (§7) and every downstream gate look
 | `design/templates/knowledge/search_log.yaml` | Reused, unchanged | S8's frozen search episode object. |
 | `design/templates/knowledge/sr_protocol_prisma_lite.md` | Reused, unchanged | S8's PRISMA-2020-lite fill-in form. |
 | `design/templates/knowledge/neighbour_table.md` | Reused, unchanged | S13's descriptive comparison table — LRS's dialogue tables feed it, per rule 31e. |
+| `templates/knowledge/architecture_map.md` | **New** (§3.5, ratified 2026-09-23) | Frozen node/transition map for an architecture-shaped hypothesis — optional, additive companion to L1/L2. |
+| `templates/knowledge/architecture_dialogue_table.md` | **New** (§3.5, ratified 2026-09-23) | Per-node, per-strand `SUPPORTS/CHALLENGES/EXTENDS` relation rows — optional, additive companion to `dialogue_table.md`. |
 
 ### 3.4 `dialogue_table.md` — the distinctive form (request 35c)
 
@@ -214,6 +216,78 @@ ordered by date, "who came first," or "seminal/pioneering" language — date is 
 recorded once the row's `citation_card.claim_match_verified == true`; before that, the legal
 values are `undetermined` (not yet read at that depth) or the row does not yet exist. Full
 template body: `design/templates/knowledge/dialogue_table.md`.
+
+### 3.5 Architecture-first comparative review (node grain) — ratified 2026-09-23
+
+**Provenance and status:** `design/ARCHITECTURE_FIRST_REVIEW_PROPOSAL_v0.2.md`, ratified by the
+founder 2026-09-23. This is a summary cross-referencing that document for the full procedure,
+worked example, and forbidden-phrasing table — S14 does not duplicate its text (one fact, one
+home). Tier stays honest: the *framework* is ratified into this binding methodology; the checker
+built for it (`scripts/check_non_collapse.py`) remains WARN-only, never an auto-failing gate.
+
+**When it applies:** an optional, additive companion mode for a hypothesis whose own work is
+itself an *architecture* — multiple named mechanisms/stages/constructs (nodes) with transitions
+between them — as opposed to a single-claim hypothesis, which uses L1–L6 unchanged with no
+architecture map at all (proposal §4/R2).
+
+**What it adds, on top of L1–L6, never replacing them:**
+
+- **Architecture map frozen as L2 scope (R2).** Before search opens, the work's own nodes and
+  transitions are frozen in the work's own vocabulary (`templates/knowledge/architecture_map.md`,
+  §5.1 of the proposal) — this frozen map **is** how L2's `frozen_scope` gets locked for an
+  architecture-shaped hypothesis; a map changed after search begins is an L2 exit-gate violation
+  of the same kind S14 already treats as hard.
+- **Node-grain relation, separate from the hypothesis-grain stance (R1).** A new field
+  `relation ∈ {SUPPORTS, CHALLENGES, EXTENDS}` records how one literature strand relates to
+  one architecture node — finer-grained than, and never merged into,
+  `dialogue_table.md`'s own whole-hypothesis `agrees|disagrees|orthogonal|undetermined` enum.
+  Cross-grain reading when needed: SUPPORTS → agrees, CHALLENGES → disagrees, EXTENDS → no
+  hypothesis-grain analogue (recorded as such, never coerced to `orthogonal`, which means a
+  different thing — the strand addresses a different question entirely, not that it elaborates
+  the same one). `relation` stays exactly these three values — a row not yet read to this depth,
+  or genuinely ambiguous, is a separate `row_status: PENDING` (relation left blank), never a
+  fourth relation value. Recorded in `templates/knowledge/architecture_dialogue_table.md` (§5.2 of
+  the proposal), reusing the same citation-card backing L4 already requires.
+- **Per-node synthesis.** After a node's relation rows are filled (or honestly marked
+  `no strand found`), one synthesis sentence states what the architecture's own arrangement of
+  that node reveals that no single strand reveals alone, and what each strand still sees that the
+  others miss — a qualitative statement naming which strands it draws the contrast from, never an
+  unattributed claim (proposal §3c).
+- **Non-collapse guard (WARN-only, R4).** A row or sentence that makes a literature strand the
+  owner or source of a node's mechanism (`<node> ← <strand>` shapes, `"<node> is <strand>'s
+  concept"`) is a finding for a human to read and dispose of — `scripts/check_non_collapse.py`
+  flags candidate constructions for review; it never auto-fails, unlike
+  `scripts/check_forbidden_words.sh`'s hard gate on banned vocabulary.
+- **Mandatory CHALLENGES pass + open-node disclosure (R3).** Carrying `D-LIT-CONCENTRATED`'s
+  logic to node grain: a node whose every populated relation is SUPPORTS is flagged in one of two
+  distinct ways, never conflated — (a) **no challenge search attempted**: no disclosed attempt was
+  made to search a challenging strand for this node at all, or (b) **challenge search attempted,
+  zero results**: a challenge search genuinely ran for this node and found nothing that
+  CHALLENGES it, mirroring §5.6's "zero `disagrees` despite a real challenge-family search having
+  run is a flag, not a quiet success." Both (a) and (b) mark the node `node_status: OPEN` with a
+  stated reason that names which of the two it is — the run-level manifest may still freeze with
+  open nodes present, but its `n_open_nodes` count makes an open node visible rather than silently
+  absorbed into an otherwise-green manifest, and an OPEN node's claim may not be cited as settled
+  downstream until closed. Neither case is ever silently upgraded to CLOSED.
+- **Six-criteria qualitative yardstick.** The architecture, holding all relation rows together, is
+  judged in prose against coherence, coverage, non-collapse, composability, explanatory reach, and
+  testability (proposal §3f/§5.4) — never summed into a score, never reported as "N unprecedented
+  components."
+
+**What this is not:** a novelty-subtraction review. No row or sentence may name a literature
+strand as the *owner* of a node's mechanism; a strand may be cited as the historical/terminological
+origin of a *word* the work also uses (same/different/cited, per S13), but never as the supplier
+of the node's actual chain of transitions. Full forbidden-phrasing table and worked example:
+`design/ARCHITECTURE_FIRST_REVIEW_PROPOSAL_v0.2.md` §6–§7.
+
+**Scope of the ban, made explicit:** the ban above is on *ascription by the reviewer* — a
+reviewer (human or AI) may not, on its own initiative, declare a strand the owner/supplier of a
+node's mechanism. It does not reach a documented, human-authorised adoption recorded per S13
+(`design/S13_neighbour-table.md` — "adopted from" language is used only when a human explicitly
+instructed taking something from a named source, a Blackbox Note line or `DECISIONS.yaml` row
+exists naming it). That documented case remains allowed here exactly as S13 already allows it,
+and is written the same way: "adopted from `<source>` per `<Blackbox Note line / DECISIONS.yaml
+row>`," citing S13, never as an unattributed ownership claim the reviewer invented.
 
 ---
 

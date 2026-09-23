@@ -26,6 +26,11 @@
     },
     "related_work_we_cite": { "type": "string" },
     "citation_card": { "type": "string", "minLength": 1 },
+    "node_refs": {
+      "description": "Optional (S14 §3.5, architecture-first comparative review, ratified 2026-09-23): zero or more architecture-map node IDs (the `node_id` values frozen on architecture_map.md, e.g. N1/N2) that bear on this neighbour -- never a row id into architecture_dialogue_table.md, whose relation rows have no stable id of their own (multiple rows can share one node_id). A pointer only, never a copy of a node-relation row's own fields. Absent on a row with no matching node-level table (a single-claim hypothesis).",
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 }
+    },
     "tier": {
       "description": "finite_diagnostic if fetched & verified; Open if not fetched (template's own rule) -- schema restricts to those two, since a neighbour-table row is never asserted at a higher tier than that.",
       "enum": ["finite_diagnostic", "Open"]

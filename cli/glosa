@@ -1902,9 +1902,37 @@ def cmd_lit_manifest(args):
                 citations.append(_manifest_row_from_card(inst))
 
     existing_path = next(iter(sorted(out_dir.glob("litreview_manifest.*"))), None)
-    manifest_id = load_instance(existing_path).get("id") if existing_path else _next_numbered_id(out_dir, lambda n: f"litrev-{slug}-{n:03d}")
+    existing_data = load_instance(existing_path) if existing_path else None
+    manifest_id = existing_data.get("id") if existing_data else _next_numbered_id(out_dir, lambda n: f"litrev-{slug}-{n:03d}")
     data = scaffold_litreview_manifest(manifest_id, args.hypothesis_ref, search_log.get("id"), args.human_owner, citations)
     data["dialogue_table_ref"] = _rel(out_dir / "dialogue_table.md")
+
+    # L6 freeze/rebuild must not silently drop the optional architecture_review block (S14 §3.5,
+    # ARCHITECTURE_FIRST_REVIEW_PROPOSAL_v0.2.md §8 R3) -- scaffold_litreview_manifest() builds a
+    # fresh dict every call and never carries it forward. Carry it through here, recomputing
+    # n_open_nodes from the node list rather than trusting the previously-written count, and
+    # refuse the freeze/rebuild outright (never silently drop or silently "fix") if the block
+    # itself is internally inconsistent.
+    existing_arch = (existing_data or {}).get("architecture_review") or {}
+    if existing_arch.get("used"):
+        node_status = existing_arch.get("node_status") or []
+        ids = [n.get("node_id") for n in node_status if isinstance(n, dict)]
+        dupes = sorted({i for i in ids if i is not None and ids.count(i) > 1})
+        if dupes:
+            return 1, {"action": "lit_manifest", "error": f"existing architecture_review.node_status has duplicate "
+                                                            f"node_id value(s) {dupes} -- refusing to freeze/rebuild "
+                                                            f"an inconsistent architecture_review block. Fix "
+                                                            f"{_rel(existing_path)} by hand first."}
+        missing_reason = [n.get("node_id") for n in node_status if isinstance(n, dict) and n.get("status") == "OPEN" and not (n.get("reason") or "").strip()]
+        if missing_reason:
+            return 1, {"action": "lit_manifest", "error": f"existing architecture_review has OPEN node(s) "
+                                                            f"{missing_reason} with no reason -- refusing to "
+                                                            f"freeze/rebuild an inconsistent architecture_review "
+                                                            f"block. Fix {_rel(existing_path)} by hand first."}
+        preserved = dict(existing_arch)
+        preserved["node_status"] = node_status
+        preserved["n_open_nodes"] = sum(1 for n in node_status if isinstance(n, dict) and n.get("status") == "OPEN")
+        data["architecture_review"] = preserved
 
     if args.freeze:
         data["status"] = "FROZEN"

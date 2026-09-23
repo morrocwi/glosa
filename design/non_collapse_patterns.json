@@ -1,0 +1,33 @@
+{
+  "_meta": {
+    "tier": "finite_diagnostic",
+    "purpose": "Literal pattern-string data for scripts/check_non_collapse.py (ownership/subtraction phrasing WARN-only checker). Lives here, not in scripts/check_non_collapse.py, so that the checker's own source does not itself trip scripts/check_forbidden_words.sh (which bans the bare words 'novel'/'novelty' etc. repo-wide except under a fixed set of meta/rule-text path prefixes that already includes design/, per scripts/forbidden_words_allowlist.txt's existing design/ rows for novel/novelty/unprecedented/prior-art/concession/seminal/pioneering). This file is itself meta/rule text (it documents the phrase families the ownership-phrasing gate looks for), not a claim, so it belongs in the same allowlisted category as `design/ARCHITECTURE_FIRST_REVIEW_PROPOSAL_v0.2.md`'s own §6 forbidden-phrases table.",
+    "provenance": "design/ARCHITECTURE_FIRST_REVIEW_PROPOSAL_v0.2.md §3d/§6/§8-R4",
+    "format": "each entry is [label, python-regex-string]; compiled with re.IGNORECASE by scripts/check_non_collapse.py"
+  },
+  "patterns": [
+    ["not novel", "not\\s+(?:particularly\\s+|especially\\s+|really\\s+)?novel"],
+    ["no novelty", "no\\s+novelty"],
+    ["novelty constraint", "novelty\\s+constraint"],
+    ["already did", "already\\s+did"],
+    ["already done", "already\\s+done"],
+    ["already has 'X' (quoted-term ownership)", "already\\s+has\\s+['\\\"‘“]"],
+    ["reduces to", "reduces?\\s+to"],
+    ["is just", "\\bis\\s+just\\b"],
+    ["merely", "\\bmerely\\b"],
+    ["borrowed from", "borrowed\\s+from"],
+    ["comes from", "\\bcomes\\s+from\\b"],
+    ["based on the theory of", "based\\s+on\\s+the\\s+theory\\s+of"],
+    ["must shift novelty", "must\\s+shift\\s+novelty"],
+    ["must shift the claim", "must\\s+shift\\s+the\\s+claim"],
+    ["isn't new / is not new", "is(?:n't|\\s+not)\\s+new\\b"],
+    ["is ...'s concept", "\\bis\\s+[\\w][\\w\\s\\-]{0,40}?'s\\s+concept\\b"],
+    ["<- theory (arrow ownership)", "(?:←|<-)\\s*theory"],
+    ["<- named strand (arrow ownership)", "(?:←|<-)\\s*[\\w][\\w\\s\\-]{0,40}?\\b(?:theory|controller|model)\\b"],
+    ["is a <name> controller/model/theory (ownership)", "\\bis\\s+an?\\s+[\\w][\\w\\s\\-]{0,30}?\\b(?:controller|model|theory)\\b"],
+    ["ไม่ใหม่", "ไม่ใหม่"],
+    ["ทำไปแล้ว", "ทำไปแล้ว"],
+    ["ลดรูปเป็น", "ลดรูปเป็น"],
+    ["เป็นแค่", "เป็นแค่"]
+  ]
+}

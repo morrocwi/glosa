@@ -142,6 +142,48 @@
       }
     },
     "disclaimers_emitted": { "type": "array", "items": { "$ref": "common.defs.json#/definitions/disclaimer_ref" } },
+    "architecture_review": {
+      "description": "Optional (S14 §3.5, design/ARCHITECTURE_FIRST_REVIEW_PROPOSAL_v0.2.md §8 R3, ratified 2026-09-23): populated only when this run used the architecture-first comparative review companion mode. Absent/empty on an ordinary single-claim L1-L6 run.",
+      "type": "object",
+      "properties": {
+        "used": { "type": "boolean", "default": false },
+        "architecture_map_ref": { "type": ["string", "null"] },
+        "architecture_dialogue_table_ref": { "type": ["string", "null"] },
+        "node_status": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["node_id", "status"],
+            "properties": {
+              "node_id": { "type": "string", "minLength": 1 },
+              "status": { "enum": ["OPEN", "CLOSED"] },
+              "reason": { "type": ["string", "null"] }
+            },
+            "allOf": [
+              {
+                "description": "an OPEN node must state why -- silently-open nodes are not allowed.",
+                "if": { "properties": { "status": { "const": "OPEN" } }, "required": ["status"] },
+                "then": { "required": ["reason"], "properties": { "reason": { "type": "string", "minLength": 1 } } }
+              }
+            ]
+          }
+        },
+        "n_open_nodes": { "type": "integer", "minimum": 0, "default": 0 }
+      },
+      "allOf": [
+        {
+          "description": "used:true requires the artifact refs -- a claimed architecture-first review run must point at its own map and dialogue table.",
+          "if": { "properties": { "used": { "const": true } }, "required": ["used"] },
+          "then": {
+            "required": ["architecture_map_ref", "architecture_dialogue_table_ref"],
+            "properties": {
+              "architecture_map_ref": { "type": "string", "minLength": 1 },
+              "architecture_dialogue_table_ref": { "type": "string", "minLength": 1 }
+            }
+          }
+        }
+      ]
+    },
     "human_owner": { "type": "string", "minLength": 1 }
   },
   "allOf": [
