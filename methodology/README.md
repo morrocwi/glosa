@@ -138,3 +138,11 @@ is the reference for `CANONICAL.json`): `design/RESISTANCE_LADDER_v0_1.md`.
 | Card | File | One-line rule |
 |---|---|---|
 | P24 | `P24_mathematical_floor.md` | Before any mathematics enters a draft, apply the information-discrete-math lens: replace a contaminated continuum concept with its discrete readout, citing the IDM object by Toledo code (a citation table, not copied treatise prose); compute on ℚ and carry a ℚ tier + witness (the ℚ-computability law); tier every claim; register any new equation in Toledo first (`P19`). Gate: a left-column concept used without its discrete replacement or Toledo code fails the publish gate (`P10`). |
+
+## Paper templates
+
+`templates/paper/glosa-7ssa/` — the GLOSA-7SSA (Seven-Section Scholarly Architecture) template:
+a Q1-world/Thai-journal-crosswalk LaTeX manuscript template + its schema doc, for academic
+conceptual/theoretical/philosophical/doctrinal-legal/integrative-review/formal-conceptual/SoK/
+policy articles (`templates/paper/glosa-7ssa/README.md`). Alongside `templates/paper/arxiv-onecol/`
+and `templates/paper/arxiv-twocol/`.
