@@ -72,7 +72,7 @@ redeclares a shape.
   integrative review: named databases, a frozen search string, inclusion/exclusion rules, screening
   with an independent screener, and a flow diagram. Then `search_mode: SYSTEMATIC_REVIEW` with
   fully populated `prisma_counts`, and `templates/knowledge/sr_protocol_prisma_lite.md` is filled in
-  full. The genre router's `systematic_review` row (`FOUNDATION_v0.6.md` §6) governs the manuscript
+  full. The genre router's `systematic_review` row (`design/FOUNDATION_v0.6.md` §6) governs the manuscript
   structure in that case, not this card.
 - **Relayed, not verified.** The founder's notes relay a reading of how particular journals and
   reporting guidelines treat review typologies and citation practice (management-theory and
@@ -264,7 +264,7 @@ Review ≠ Rapid/Scoping/Targeted evidence challenge · `NC-57` Claim scope ≤ 
 - Do not cite a construct's originating source through a review of it.
 - Do not let the maker of a sentence audit it, or the maker of a proposition sign its falsifier check.
 - Do not present a journal's editorial policy, or a venue, as the standard that makes the paper
-  right — the founder's relayed reading of venue policy stays `NEEDS_VERIFICATION`.
+  right — see the relayed-venue caveat under item (b) above.
 
 ## Tier
 
@@ -279,5 +279,4 @@ Dr (specified; independently unreviewed). Schema examples and one fail fixture v
 3. `search_mode` has no value for a declared *integrative* review article; such a paper currently
    uses `SCOPING_SEARCH` or `SYSTEMATIC_REVIEW` according to its protocol. Adding a value is a
    schema decision left to the founder.
-4. The founder's relayed reading of venue and reporting-guideline policy is `NEEDS_VERIFICATION`
-   and is not carried into any rule here.
+4. The relayed-venue caveat (item (b) above) is not carried into any rule here.
