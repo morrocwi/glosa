@@ -222,3 +222,9 @@ by design), not a completed real run.
 ## Source-first citation (kernel rule 17, 2026-09-04)
 
 Never cite from memory. Open the source, record the link you read it from, the page/section, the line/paragraph, and one continuous verbatim passage — all four on the card — or leave the card at CANDIDATE. See FOUNDATION §7.8.
+
+## Pointer (2026-09-25)
+
+For a theory-building or conceptual paper, the manuscript-facing citation records built on top of
+this pipeline — claim×source matrix, citation chaining, sentence-level citation audit, and the
+Theory–Evidence–Falsifier matrix — are narrated in `methodology/P26_claim_evidence_theory_matrix.md`.

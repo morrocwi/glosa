@@ -1,0 +1,44 @@
+{
+  "$schema": "theory_evidence_falsifier_row.schema.json",
+  "row_id": "tef-assisted-perf-001",
+  "proposition_id": "P1",
+  "claim_ref": "GLOSA-CC-20260925-0001",
+  "claim_label": "Assisted Performance is not Retained Human Capability.",
+  "constructs": ["Assisted Performance", "Retained Human Capability"],
+  "logical_basis": {
+    "mechanism": "A score taken while the assistant is present measures the coupled person-plus-tool system. Retained capability is a property of the person alone and can only be read after the tool is removed. The two readouts are taken of different systems, so a change in the first does not fix the sign of a change in the second.",
+    "premises": [
+      {
+        "text": "An assisted score is a readout of the coupled system, not of the person alone.",
+        "cem_refs": [],
+        "kind": "definition"
+      },
+      {
+        "text": "Unaided post-withdrawal performance can differ in sign from the assisted gain in at least one declared setting.",
+        "cem_refs": ["cem-assisted-perf-001"],
+        "kind": "cited_premise"
+      }
+    ]
+  },
+  "supporting_literature": ["cem-assisted-perf-001"],
+  "contradictory_literature": [],
+  "contradictory_search_ref": "search-assisted-perf-001",
+  "boundary_conditions": [
+    "Tasks where the assistant is never withdrawn in practice, so retained unaided capability is not the quantity of interest.",
+    "Settings where assisted practice is followed by a structured withdrawal phase designed to transfer the skill."
+  ],
+  "observable_implication": "In a design with an unaided post-withdrawal measurement, assisted gains and unaided gains are recorded as two separate readouts and can diverge.",
+  "falsifier_on_card": false,
+  "falsifier_check": null,
+  "rival_explanations": [
+    {
+      "rival": "Assisted gains are a leading indicator that later appears as unaided gain once practice accumulates.",
+      "distinguishing_observation": "A delayed unaided measurement after a longer practice window: the rival predicts the gap closes; P1 makes no such prediction."
+    }
+  ],
+  "tier": "Dr",
+  "status": "Draft",
+  "human_owner": "founder",
+  "produced_by": "joint",
+  "notes": "Schema example only; illustrative ids. The registered relation this proposition restates is Toledo A.5/H.08.v1 (assisted-performance gain does not entail Human Return gain). falsifier_on_card is false because the illustrative claim card has not been checked, so status must stay Draft."
+}

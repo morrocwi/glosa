@@ -139,6 +139,12 @@ is the reference for `CANONICAL.json`): `design/RESISTANCE_LADDER_v0_1.md`.
 |---|---|---|
 | P24 | `P24_mathematical_floor.md` | Before any mathematics enters a draft, apply the information-discrete-math lens: replace a contaminated continuum concept with its discrete readout, citing the IDM object by Toledo code (a citation table, not copied treatise prose); compute on ℚ and carry a ℚ tier + witness (the ℚ-computability law); tier every claim; register any new equation in Toledo first (`P19`). Gate: a left-column concept used without its discrete replacement or Toledo code fails the publish gate (`P10`). |
 
+## P26 — Claim–Evidence–Theory matrix (founder instruction, 2026-09-25)
+
+| Card | File | One-line rule |
+|---|---|---|
+| P26 | `P26_claim_evidence_theory_matrix.md` | Citation record for theory-building papers, layered on P13: search log → integrative synthesis (not a declared systematic review unless the review is the contribution) → claim×source matrix (`schema/claim_evidence_matrix_row.schema.json`) → backward/forward chaining and sentence-level audit on citation cards (`citation_card.chaining`, `citation_card.audit`) → per-proposition Theory–Evidence–Falsifier rows (`schema/theory_evidence_falsifier_row.schema.json`); three-tier citation per construct; mechanism first, then cite its parts. |
+
 ## Paper templates
 
 `templates/paper/glosa-7ssa/` — the GLOSA-7SSA (Seven-Section Scholarly Architecture) template:

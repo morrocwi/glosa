@@ -1,6 +1,18 @@
 # CHANGELOG
 ## Unreleased
 
+- P26 Claim–Evidence–Theory matrix (founder instruction 2026-09-25): a citation record for
+  theory-building and conceptual papers, layered on P13 — `methodology/P26_claim_evidence_theory_matrix.md`;
+  two new schemas `schema/claim_evidence_matrix_row.schema.json` and
+  `schema/theory_evidence_falsifier_row.schema.json` (+ examples); optional, backward-compatible
+  `chaining` and `audit` blocks on `schema/citation_card.schema.json` (+ example and one fail
+  fixture); templates `templates/knowledge/claim_evidence_matrix.csv` (+ `.md`) and
+  `templates/knowledge/theory_evidence_falsifier_matrix.yaml`; commented optional blocks in
+  `templates/knowledge/citation_card.yaml`; pointer lines in P03/P13; index rows in
+  `methodology/README.md` and `schema/README.md`. Kernel/gate consumption is specified, not built
+  (P26 open items). Founder lineage note `design/PROGRAMME_POSITIONING_2026-09-25.md` (tier Dr;
+  venue statements RELAYED, NEEDS_VERIFICATION).
+
 - Architecture-first comparative review, ratified (founder ruling 2026-09-23): the
   `design/ARCHITECTURE_FIRST_REVIEW_PROPOSAL_v0.2.md` framework — architecture map frozen as L2
   scope, node-grain `SUPPORTS/CHALLENGES/EXTENDS` relations (separate from `dialogue_table.md`'s

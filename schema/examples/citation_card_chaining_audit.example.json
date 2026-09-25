@@ -1,0 +1,51 @@
+{
+  "$schema": "citation_card.schema.json",
+  "id": "cite-example-ext-001",
+  "claim_ref": "GLOSA-CC-20260925-0001",
+  "identifier": {
+    "kind": "OFFICIAL_URL",
+    "value": "https://example.org/synthetic-example-source"
+  },
+  "fetch_status": "NOT_FETCHED",
+  "fetched_at": null,
+  "metadata_verified": false,
+  "metadata_verified_by": null,
+  "metadata_verified_at": null,
+  "claim_match_verified": false,
+  "claim_match_verified_by": null,
+  "claim_match_verified_at": null,
+  "exact_passage": "",
+  "page_or_locator": "",
+  "scope": "SUPPORTS_GENERAL_CLAIM_ONLY",
+  "evidence_tier": "Open",
+  "independence_class": "I0",
+  "who_verified": null,
+  "verification_method": "MANUAL_READ",
+  "status": "CANDIDATE",
+  "xenon_ledger_ref": null,
+  "disclosure": "This citation has not been opened. Treat as candidate evidence.",
+  "superseded_by": null,
+  "fetched_from_url": null,
+  "line_or_paragraph": null,
+  "chaining": {
+    "as_of": "2026-09-25",
+    "route": "not yet run: placeholder rows show the shape only",
+    "backward": [
+      {
+        "identifier": { "kind": "OFFICIAL_URL", "value": "https://example.org/synthetic-backward-link" },
+        "citation_card_ref": null,
+        "decision": "NOT_SCREENED",
+        "reason": "synthetic example"
+      }
+    ],
+    "forward": []
+  },
+  "audit": {
+    "status": "RELAYED",
+    "checked_by": "independent reviewer (role)",
+    "date": "2026-09-25",
+    "sentence_refs": ["sec-3.2 para 2 sentence 1"],
+    "note": "The source was never opened, so the sentence citing it can only be RELAYED; it may not back a published claim until the card is VERIFIED and the audit is re-run."
+  },
+  "notes": "SYNTHETIC example of the optional chaining + audit blocks (methodology/P26). No real publication is described."
+}

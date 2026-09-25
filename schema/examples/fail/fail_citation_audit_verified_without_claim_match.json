@@ -1,0 +1,21 @@
+{
+  "_fail_reason": "citation_card audit.status VERIFIED while claim_match_verified is false (P26 item e; citation_card.schema.json allOf: a sentence cannot be audited as supported by a passage whose claim match is unverified).",
+  "$schema": "citation_card.schema.json",
+  "id": "cite-example-ext-002",
+  "claim_ref": "GLOSA-CC-20260925-0001",
+  "identifier": {
+    "kind": "OFFICIAL_URL",
+    "value": "https://example.org/synthetic-example-source"
+  },
+  "fetch_status": "NOT_FETCHED",
+  "metadata_verified": false,
+  "claim_match_verified": false,
+  "scope": "SUPPORTS_GENERAL_CLAIM_ONLY",
+  "independence_class": "I0",
+  "status": "CANDIDATE",
+  "audit": {
+    "status": "VERIFIED",
+    "checked_by": "independent reviewer (role)",
+    "date": "2026-09-25"
+  }
+}

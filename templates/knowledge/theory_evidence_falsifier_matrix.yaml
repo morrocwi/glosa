@@ -1,0 +1,42 @@
+# theory_evidence_falsifier_matrix.yaml — P26 item (f) template (Dr, unreviewed)
+# One entry in `rows` per theoretical proposition. Each entry is validated on its own against
+# schema/theory_evidence_falsifier_row.schema.json (field names defined there, not here).
+# One-fact-one-home: the proposition's wording AND its falsifier live on the claim card named by
+# claim_ref (claim_card.statement.text, claim_card.five_questions.tested.falsifier). Literature is
+# referenced through claim_evidence_matrix rows (cem-...), never re-described here.
+# Order of filling = order of the chain: mechanism first, then cite its parts (no argument by citation).
+
+matrix:
+  paper_ref: <manuscript or project id>
+  human_owner: <role or founder>
+  cem_matrix_ref: <path to the claim_evidence_matrix.csv this matrix points into>
+
+rows:
+  - row_id: tef-<slug>-001
+    proposition_id: P1
+    claim_ref: GLOSA-CC-<YYYYMMDD>-<NNNN>        # the proposition IS a claim card
+    claim_label: <short display handle; the claim card wins>
+    constructs: [<construct name>, <construct name>]
+    logical_basis:
+      mechanism: <why the proposition should hold, in your own words; not a citation>
+      premises:
+        - text: <one part of the mechanism>
+          cem_refs: [cem-<slug>-<nnn>]            # empty only for a definition or own reasoning step
+          kind: cited_premise                     # cited_premise | definition | own_reasoning_step | assumption
+    supporting_literature: [cem-<slug>-<nnn>]
+    contradictory_literature: []                  # empty only with contradictory_search_ref
+    contradictory_search_ref: search-<slug>-<nnn>
+    boundary_conditions:
+      - <a condition under which the proposition is NOT expected to hold>
+    observable_implication: <what should be observable, by what readout, if it holds>
+    falsifier_on_card: false                      # true only after a checker confirms the claim card's tested.falsifier
+    falsifier_check: null                         # {checked_by: <role>, date: <YYYY-MM-DD>} once checked
+    rival_explanations:
+      - rival: <a rival mechanism or theory giving the same observable implication>
+        distinguishing_observation: <the observation that tells the two apart>
+    rival_search_ref: null
+    tier: Dr
+    status: Draft                                 # must stay Draft while falsifier_on_card is false
+    human_owner: <role or founder>
+    produced_by: joint
+    notes: ""

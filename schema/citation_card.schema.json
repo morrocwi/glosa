@@ -2,7 +2,7 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://glosa.example/schema/citation_card.schema.json",
   "title": "glosa citation card",
-  "description": "tier: Dr (specified; independently unreviewed). Implements FOUNDATION_v0.5.md §7.8 (Citation Integrity subsystem, generalized to distinction-grain): the Integrity Firewall's two independently-flaggable booleans (metadata_verified != claim_match_verified, NC-18 'source existence != claim support'), `identifier.kind` including BLACKBOX_NOTE (chair ruling C8), `fetch_status` as the ONE enum (chair ruling C3), and the six-value `status` enum. One card per citation USE (one source backing one exact claim at one exact passage), not one card per source document -- templates/knowledge/citation_card.yaml's own header rule. Namespace https://glosa.example/ is a placeholder.",
+  "description": "tier: Dr (specified; independently unreviewed). Implements FOUNDATION_v0.5.md §7.8 (Citation Integrity subsystem, generalized to distinction-grain): the Integrity Firewall's two independently-flaggable booleans (metadata_verified != claim_match_verified, NC-18 'source existence != claim support'), `identifier.kind` including BLACKBOX_NOTE (chair ruling C8), `fetch_status` as the ONE enum (chair ruling C3), and the six-value `status` enum. One card per citation USE (one source backing one exact claim at one exact passage), not one card per source document -- templates/knowledge/citation_card.yaml's own header rule. Namespace https://glosa.example/ is a placeholder. Optional, backward-compatible additions (methodology/P26_claim_evidence_theory_matrix.md, founder instruction 2026-09-25): `chaining` (backward + forward citation chaining for the source, recorded once per source on one card) and `audit` (claim-level citation audit of the manuscript sentence(s) that use this card: VERIFIED | RELAYED | OVERREACH).",
   "type": "object",
   "required": [
     "id",
@@ -144,6 +144,121 @@
         "null"
       ],
       "description": "Line number / paragraph index / section anchor within the fetched text where exact_passage starts (kernel rule 17). Together with page_or_locator this is the 'page and line'."
+    },
+    "chaining": {
+      "description": "P26 item (d): backward chaining (this source's own reference list) and forward chaining (works citing this source), each link screened. Optional. Recorded ONCE per source document -- on the lowest-id card for that source; other cards for the same source leave it absent (one-fact-one-home; a citation card is per USE, chaining is per SOURCE). Forward chaining is a readout of one moment: `as_of` + `route` say which index was asked and when.",
+      "type": "object",
+      "required": [
+        "backward",
+        "forward"
+      ],
+      "properties": {
+        "as_of": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "route": {
+          "description": "How the links were obtained, e.g. 'reference list read in full' (backward) or the name of a public citation index queried (forward). Never a private-shelf identifier (P13 research-stack boundary).",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "backward": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/chain_link"
+          }
+        },
+        "forward": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/chain_link"
+          }
+        }
+      }
+    },
+    "audit": {
+      "description": "P26 item (e): claim-level citation audit, sentence by sentence. Distinct from claim_match_verified: claim_match_verified asks whether exact_passage supports claim_ref as carded; audit asks whether the manuscript sentence(s) citing this card stay within that support. VERIFIED = checker read the source passage and the sentence claims no more than it supports; RELAYED = the sentence rests on a source the checker has not read directly (secondary or remembered; FC-S14-1 forbids this from backing a published claim); OVERREACH = the passage was read and the sentence claims more than it supports. Absent = not yet audited. checked_by must not be the sentence's maker (AGENTS.md rule 3).",
+      "type": "object",
+      "required": [
+        "status",
+        "checked_by",
+        "date"
+      ],
+      "properties": {
+        "status": {
+          "enum": [
+            "VERIFIED",
+            "RELAYED",
+            "OVERREACH"
+          ]
+        },
+        "checked_by": {
+          "$ref": "common.defs.json#/definitions/role_or_human"
+        },
+        "date": {
+          "type": "string",
+          "minLength": 1
+        },
+        "sentence_refs": {
+          "description": "Manuscript locators (section/paragraph/sentence) of the audited sentence(s).",
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "note": {
+          "type": "string"
+        }
+      }
+    }
+  },
+  "definitions": {
+    "chain_link": {
+      "type": "object",
+      "required": [
+        "identifier",
+        "decision"
+      ],
+      "properties": {
+        "identifier": {
+          "type": "object",
+          "required": [
+            "kind",
+            "value"
+          ],
+          "properties": {
+            "kind": {
+              "$ref": "common.defs.json#/definitions/identifier_kind"
+            },
+            "value": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        },
+        "citation_card_ref": {
+          "description": "id of the citation card opened for this linked work, if it was carried into the review.",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "decision": {
+          "enum": [
+            "INCLUDED",
+            "EXCLUDED",
+            "NOT_SCREENED"
+          ]
+        },
+        "reason": {
+          "type": "string"
+        }
+      }
     }
   },
   "allOf": [
@@ -182,6 +297,34 @@
           "metadata_verified": {
             "const": true
           },
+          "claim_match_verified": {
+            "const": true
+          }
+        }
+      }
+    },
+    {
+      "description": "audit.status VERIFIED requires claim_match_verified true: a sentence cannot be audited as supported by a passage whose claim match is itself unverified.",
+      "if": {
+        "required": [
+          "audit"
+        ],
+        "properties": {
+          "audit": {
+            "type": "object",
+            "required": [
+              "status"
+            ],
+            "properties": {
+              "status": {
+                "const": "VERIFIED"
+              }
+            }
+          }
+        }
+      },
+      "then": {
+        "properties": {
           "claim_match_verified": {
             "const": true
           }

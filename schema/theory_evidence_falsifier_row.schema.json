@@ -1,0 +1,261 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://glosa.example/schema/theory_evidence_falsifier_row.schema.json",
+  "title": "glosa theory-evidence-falsifier matrix row",
+  "description": "tier: Dr (specified; independently unreviewed). One row per theoretical proposition of a theory-building or conceptual paper, narrated by methodology/P26_claim_evidence_theory_matrix.md item (f) (founder instruction 2026-09-25). Chain per row: claim -> logical basis (mechanism in the author's own words, then its premises, each premise cited through claim_evidence_matrix rows) -> supporting literature -> contradictory literature -> boundary conditions -> observable implication -> falsifier. One-fact-one-home: the proposition's canonical text and its falsifier live on the claim card (claim_ref -> claim_card.claim_id; claim_card.five_questions.tested.falsifier), never restated here; literature is referenced through claim_evidence_matrix_row ids (cem-...), never re-described here. What this row is the only home of: the mechanism statement, its premises, boundary conditions, the observable implication, and rival explanations. Namespace https://glosa.example/ is a placeholder.",
+  "type": "object",
+  "required": [
+    "row_id",
+    "proposition_id",
+    "claim_ref",
+    "logical_basis",
+    "supporting_literature",
+    "contradictory_literature",
+    "boundary_conditions",
+    "observable_implication",
+    "falsifier_on_card",
+    "rival_explanations",
+    "tier"
+  ],
+  "additionalProperties": true,
+  "properties": {
+    "row_id": {
+      "type": "string",
+      "pattern": "^tef-[a-z0-9-]+-[0-9]{3}$"
+    },
+    "proposition_id": {
+      "description": "The proposition's label inside the manuscript (P1, P2, P2a, ...).",
+      "type": "string",
+      "pattern": "^P[0-9]+[a-z]?$"
+    },
+    "claim_ref": {
+      "description": "Pointer to claim_card.claim_id: the proposition IS a claim card. Its canonical wording (statement.text) and its falsifier (five_questions.tested.falsifier) live there.",
+      "type": "string",
+      "pattern": "^GLOSA-CC-[0-9]{8}-[0-9]{4}$"
+    },
+    "claim_label": {
+      "description": "Optional short display handle; the claim card wins on any disagreement.",
+      "type": "string",
+      "maxLength": 200
+    },
+    "constructs": {
+      "description": "Construct names this proposition relates (same vocabulary as claim_evidence_matrix_row.construct).",
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "logical_basis": {
+      "description": "The 'no argument by citation' rule (P26 item h), made structural: the mechanism is stated in the author's own words FIRST; citations attach only to its parts (premises), never stand in for the mechanism itself.",
+      "type": "object",
+      "required": [
+        "mechanism",
+        "premises"
+      ],
+      "properties": {
+        "mechanism": {
+          "description": "Why the proposition should hold, in the author's own words. A sentence that is only a citation ('as X showed') is not a mechanism.",
+          "type": "string",
+          "minLength": 1
+        },
+        "premises": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "required": [
+              "text",
+              "cem_refs"
+            ],
+            "properties": {
+              "text": {
+                "type": "string",
+                "minLength": 1
+              },
+              "cem_refs": {
+                "description": "claim_evidence_matrix_row ids backing this premise. Empty = the premise is the author's own reasoning step or a definition (legal; say so in `kind`).",
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "pattern": "^cem-[a-z0-9-]+-[0-9]{3}$"
+                }
+              },
+              "kind": {
+                "enum": [
+                  "cited_premise",
+                  "definition",
+                  "own_reasoning_step",
+                  "assumption"
+                ]
+              }
+            }
+          }
+        }
+      }
+    },
+    "supporting_literature": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^cem-[a-z0-9-]+-[0-9]{3}$"
+      }
+    },
+    "contradictory_literature": {
+      "description": "cem row ids carrying evidence or argument against the proposition. May be empty only with contradictory_search_ref (NC-27: LOCAL_EVIDENCE_NOT_FOUND != NO_LOCAL_EVIDENCE_EXISTS, generalised: not found != does not exist).",
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^cem-[a-z0-9-]+-[0-9]{3}$"
+      }
+    },
+    "contradictory_search_ref": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^search-[a-z0-9-]+-[0-9]{3}$"
+    },
+    "boundary_conditions": {
+      "description": "Conditions under which the proposition is NOT expected to hold (non-occurrence conditions, scope limits). At least one.",
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "observable_implication": {
+      "description": "What should be observable, and by what readout, if the proposition holds.",
+      "type": "string",
+      "minLength": 1
+    },
+    "falsifier_on_card": {
+      "description": "true iff the checker confirmed that claim_card(claim_ref).five_questions.tested.falsifier states an observation at this proposition's grain (not a TODO placeholder, not a strength-of-claim sentence -- kernel rule29). The falsifier text itself is never copied into this row.",
+      "type": "boolean"
+    },
+    "falsifier_check": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "properties": {
+        "checked_by": {
+          "$ref": "common.defs.json#/definitions/role_or_human"
+        },
+        "date": {
+          "type": "string"
+        }
+      }
+    },
+    "rival_explanations": {
+      "description": "Rival theories or mechanisms that would produce the same observable implication, each with the observation that would tell them apart. May be empty only with rival_search_ref.",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "rival",
+          "distinguishing_observation"
+        ],
+        "properties": {
+          "rival": {
+            "type": "string",
+            "minLength": 1
+          },
+          "distinguishing_observation": {
+            "type": "string",
+            "minLength": 1
+          },
+          "cem_refs": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^cem-[a-z0-9-]+-[0-9]{3}$"
+            }
+          }
+        }
+      }
+    },
+    "rival_search_ref": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^search-[a-z0-9-]+-[0-9]{3}$"
+    },
+    "tier": {
+      "$ref": "common.defs.json#/definitions/tier"
+    },
+    "status": {
+      "$ref": "common.defs.json#/definitions/release_status"
+    },
+    "human_owner": {
+      "$ref": "common.defs.json#/definitions/role_or_human"
+    },
+    "produced_by": {
+      "$ref": "common.defs.json#/definitions/produced_by"
+    },
+    "notes": {
+      "type": "string"
+    }
+  },
+  "allOf": [
+    {
+      "description": "Empty contradictory_literature requires a named challenge search.",
+      "if": {
+        "properties": {
+          "contradictory_literature": {
+            "maxItems": 0
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "contradictory_search_ref"
+        ],
+        "properties": {
+          "contradictory_search_ref": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    {
+      "description": "Empty rival_explanations requires a named search for rivals.",
+      "if": {
+        "properties": {
+          "rival_explanations": {
+            "maxItems": 0
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "rival_search_ref"
+        ],
+        "properties": {
+          "rival_search_ref": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    {
+      "description": "A row may not advance past Draft while its falsifier is unconfirmed on the claim card.",
+      "if": {
+        "properties": {
+          "falsifier_on_card": {
+            "const": false
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "status": {
+            "const": "Draft"
+          }
+        }
+      }
+    }
+  ]
+}
