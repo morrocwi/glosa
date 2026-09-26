@@ -26,5 +26,25 @@
  "superseded_by": null,
  "notes": "backs the raw question itself, not the hypothesis",
  "fetched_from_url": "blackbox/BLACKBOX_NOTE_glosa-paper_2026-09-04.md",
- "line_or_paragraph": "line 1"
+ "line_or_paragraph": "line 1",
+ "chaining": {
+  "as_of": "2026-09-25",
+  "route": "not yet run: placeholder rows show the shape only",
+  "backward": [
+   {
+    "identifier": { "kind": "OFFICIAL_URL", "value": "https://example.org/synthetic-backward-link" },
+    "citation_card_ref": null,
+    "decision": "NOT_SCREENED",
+    "reason": "synthetic example"
+   }
+  ],
+  "forward": []
+ },
+ "audit": {
+  "status": "RELAYED",
+  "checked_by": "independent reviewer (role)",
+  "date": "2026-09-25",
+  "sentence_refs": ["sec-3.2 para 2 sentence 1"],
+  "note": "SYNTHETIC example of the optional chaining + audit blocks (methodology/P26). No real publication is described. This card's own claim_match_verified is true, but the audit block here illustrates the RELAYED case: a downstream sentence that has not itself been checked against the passage yet."
+ }
 }

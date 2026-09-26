@@ -62,3 +62,23 @@ disclosure: ""
 
 superseded_by: null                # id of the card that replaces this one, if the source was retracted/updated
 notes: ""                          # free-text working notes, non-normative
+
+# --- Optional blocks (methodology/P26_claim_evidence_theory_matrix.md, 2026-09-25; shapes in
+# --- schema/citation_card.schema.json). Uncomment only when used; absence is legal.
+#
+# chaining:                        # P26 (d): record ONCE per source document, on its lowest-id card
+#   as_of: <YYYY-MM-DD>            # forward chaining is a readout of one moment
+#   route: <"reference list read in full" | name of the public citation index queried>
+#   backward:                      # this source's own reference list
+#     - identifier: {kind: DOI, value: "10.xxxx/xxxxx"}
+#       citation_card_ref: null    # cite-... id if the linked work was carded
+#       decision: NOT_SCREENED     # INCLUDED | EXCLUDED | NOT_SCREENED
+#       reason: ""
+#   forward: []                    # works citing this source, same item shape
+#
+# audit:                           # P26 (e): claim-level audit of the manuscript sentence(s) citing this card
+#   status: RELAYED                # VERIFIED | RELAYED | OVERREACH  (VERIFIED requires claim_match_verified: true)
+#   checked_by: <role>             # never the sentence's own maker
+#   date: <YYYY-MM-DD>
+#   sentence_refs: [<section / paragraph / sentence locator>]
+#   note: ""

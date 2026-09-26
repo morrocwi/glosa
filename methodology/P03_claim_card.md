@@ -68,3 +68,9 @@ K0 working object, never a published claim (§3.2a). It does not run the indepen
 genre (P13 reads the completed card to route it) and does not resolve the licensing test's
 *correctness* (`separates.licensing_test.result`) — the card only records the result someone
 else's method produced, honestly, at whatever independence level backs it.
+
+## Pointer (2026-09-25)
+
+A claim card is the target of `claim_evidence_matrix_row.claim_id` and
+`theory_evidence_falsifier_row.claim_ref`; its `five_questions.tested.falsifier` stays the single
+home of a proposition's falsifier (`methodology/P26_claim_evidence_theory_matrix.md`, item f).

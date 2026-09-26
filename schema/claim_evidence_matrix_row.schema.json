@@ -1,0 +1,153 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://glosa.example/schema/claim_evidence_matrix_row.schema.json",
+  "title": "glosa claim-evidence-theory matrix row",
+  "description": "tier: Dr (specified; independently unreviewed). One row per (claim x source use) of the Claim-Evidence-Theory matrix narrated by methodology/P26_claim_evidence_theory_matrix.md (founder instruction 2026-09-25). A row is a JOIN, never a second home: the claim's canonical text lives on claim_card (claim_id -> claim_card.claim_id, statement.text), the passage/verification lives on citation_card (source -> citation_card.id, exact_passage, claim_match_verified, audit), and the search that produced the source lives on search_log. What this row adds, and is the only home of: the construct the source is used for, the source's genre, its role in the three-tier citation rule, what the passage supports, what it does NOT support, rival evidence, and where in the manuscript it is used. Namespace https://glosa.example/ is a placeholder.",
+  "type": "object",
+  "required": [
+    "row_id",
+    "claim_id",
+    "claim_label",
+    "construct",
+    "source",
+    "source_type",
+    "construct_tier_role",
+    "supports",
+    "does_not_support",
+    "rival_evidence",
+    "used_in_section",
+    "tier"
+  ],
+  "additionalProperties": true,
+  "properties": {
+    "row_id": {
+      "type": "string",
+      "pattern": "^cem-[a-z0-9-]+-[0-9]{3}$"
+    },
+    "claim_id": {
+      "description": "Pointer to claim_card.claim_id (schema/claim_card.schema.json). The claim's canonical wording lives there, not here.",
+      "type": "string",
+      "pattern": "^GLOSA-CC-[0-9]{8}-[0-9]{4}$"
+    },
+    "claim_label": {
+      "description": "Short display handle so a human can read the matrix without a join. NOT the claim's canonical text (that is claim_card.statement.text); when the two disagree, the claim card wins and this label is stale.",
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 200
+    },
+    "construct": {
+      "description": "The construct (named concept) this source is being used for. The three-tier citation rule (P26 item g) is evaluated per distinct construct value across the matrix.",
+      "type": "string",
+      "minLength": 1
+    },
+    "source": {
+      "description": "Pointer to citation_card.id (schema/citation_card.schema.json). One citation card = one citation USE, so the row grain (claim x source) and the card grain coincide.",
+      "type": "string",
+      "pattern": "^cite-[a-z0-9-]+-[0-9]{3}$"
+    },
+    "source_type": {
+      "description": "Genre of the cited source itself (what kind of object it is), independent of its role for this construct.",
+      "enum": [
+        "empirical_study",
+        "review_or_synthesis",
+        "theoretical_or_conceptual",
+        "formal_or_mathematical",
+        "methodological",
+        "dataset_or_record",
+        "grey_or_policy",
+        "blackbox_note",
+        "other"
+      ]
+    },
+    "construct_tier_role": {
+      "description": "Role in the three-tier citation rule per construct (P26 item g): originating_source (where the construct was first stated, read directly -- never through a review), current_synthesis (a recent integrating account), critical_or_contradictory (evidence or argument against, or a documented limit), supporting_only (backs a premise without filling one of the three tiers).",
+      "enum": [
+        "originating_source",
+        "current_synthesis",
+        "critical_or_contradictory",
+        "supporting_only"
+      ]
+    },
+    "supports": {
+      "description": "What the cited passage supports, stated no wider than citation_card.exact_passage allows.",
+      "type": "string",
+      "minLength": 1
+    },
+    "does_not_support": {
+      "description": "What the passage does NOT support, even though a reader might assume it does. Required and non-empty: stating the boundary is the point of the row (NC-18 source existence != claim support; NC-57 claim scope <= evidence scope).",
+      "type": "string",
+      "minLength": 1
+    },
+    "rival_evidence": {
+      "description": "Pointers to citation cards (cite-...) or other matrix rows (cem-...) carrying evidence that cuts against this row's use. May be empty only with rival_search_ref naming the search whose challenge query family returned nothing (NC-27: not found != does not exist).",
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^(cite|cem)-[a-z0-9-]+-[0-9]{3}$"
+      }
+    },
+    "rival_search_ref": {
+      "description": "search_log.id whose queries.challenge family was run for this claim/construct.",
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^search-[a-z0-9-]+-[0-9]{3}$"
+    },
+    "used_in_section": {
+      "description": "Manuscript section anchors where this source is cited for this claim. Empty = carded but not used in the draft (legal; a row with no use is still a record of what was read).",
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "mechanism_ref": {
+      "description": "Optional pointer to the theory_evidence_falsifier_row (tef-...) whose logical_basis states the mechanism this row's citation supports a part of (P26 item h: mechanism first, cite parts).",
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^tef-[a-z0-9-]+-[0-9]{3}$"
+    },
+    "search_log_ref": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^search-[a-z0-9-]+-[0-9]{3}$"
+    },
+    "tier": {
+      "description": "Tier of this row as a readout (normally Dr until the linked citation_card.audit.status is VERIFIED by a checker who is not the maker).",
+      "$ref": "common.defs.json#/definitions/tier"
+    },
+    "produced_by": {
+      "$ref": "common.defs.json#/definitions/produced_by"
+    },
+    "notes": {
+      "type": "string"
+    }
+  },
+  "allOf": [
+    {
+      "description": "Empty rival_evidence requires a named challenge search (P05, NC-27).",
+      "if": {
+        "properties": {
+          "rival_evidence": {
+            "maxItems": 0
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "rival_search_ref"
+        ],
+        "properties": {
+          "rival_search_ref": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  ]
+}

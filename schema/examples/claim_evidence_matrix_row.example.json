@@ -1,0 +1,20 @@
+{
+  "$schema": "claim_evidence_matrix_row.schema.json",
+  "row_id": "cem-assisted-perf-001",
+  "claim_id": "GLOSA-CC-20260925-0001",
+  "claim_label": "A gain in AI-assisted performance does not by itself show a gain in retained unaided capability.",
+  "construct": "Retained Human Capability",
+  "source": "cite-example-ext-001",
+  "source_type": "empirical_study",
+  "construct_tier_role": "critical_or_contradictory",
+  "supports": "SYNTHETIC PLACEHOLDER: the kind of statement such a source could support is a measured difference between assisted and unaided task scores in one declared population.",
+  "does_not_support": "Any claim about durable capability after the assistance is withdrawn, any population outside the one studied, or any causal mechanism for the difference.",
+  "rival_evidence": [],
+  "rival_search_ref": "search-assisted-perf-001",
+  "used_in_section": ["sec-3.2"],
+  "mechanism_ref": "tef-assisted-perf-001",
+  "search_log_ref": "search-assisted-perf-001",
+  "tier": "Dr",
+  "produced_by": "joint",
+  "notes": "Schema example only. cite-example-ext-001 is the repo's labelled SYNTHETIC placeholder source (schema/README.md, Examples); no real publication is described or implied, and GLOSA-CC-20260925-0001 is an illustrative id, not a deposited claim card."
+}
